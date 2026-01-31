@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var4 = function(arg0) { // Original name: isTermsFormField, environment: var3
+    var4 = function arg0() {
         _fun27711: for (var _fun27711_ip = 0;;) switch (_fun27711_ip) {
             case 0:
                 var1 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildJoinRequestSortOrders = var6;
     var2.GuildJoinRequestApplicationStatuses = var5;
     var2.isTermsFormField = var4;
-    var3 = function(arg0) { // Original name: hasNonTermsFormField, environment: var3
+    var3 = function arg0() {
         _fun27712: for (var _fun27712_ip = 0;;) switch (_fun27712_ip) {
             case 0:
                 var3 = arg0;

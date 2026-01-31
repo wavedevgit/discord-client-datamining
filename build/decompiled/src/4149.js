@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: readTag, environment: var3
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun38022: for (var _fun38022_ip = 0;;) switch (_fun38022_ip) {
             case 0:
                 var14 = arg0;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 602:
                 var3 = var10;
-                var8 = function(arg0) { // Original name: decodeAsciiValue, environment: var8
+                var8 = function arg0() {
                     _fun38023: for (var _fun38023_ip = 0;;) switch (_fun38023_ip) {
                         case 0:
                             var0 = arg0;
@@ -374,7 +374,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getTagValue, environment: var3
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38025: for (var _fun38025_ip = 0;;) switch (_fun38025_ip) {
             case 0:
                 var9 = arg0;
@@ -483,7 +483,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getDescriptionFromTagValue, environment: var3
+    var0 = function arg0() {
         _fun38026: for (var _fun38026_ip = 0;;) switch (_fun38026_ip) {
             case 0:
                 var3 = arg0;
@@ -552,7 +552,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.getIfdPointerAt;
     var1[13] = var4;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: get0thIfdOffset, environment: var3
+    var1 = function arg0, arg1, arg2() {
         var1 = arg1;
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -570,7 +570,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.get0thIfdOffset = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: readIfd, environment: var3
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun38028: for (var _fun38028_ip = 0;;) switch (_fun38028_ip) {
             case 0:
                 var8 = arg0;

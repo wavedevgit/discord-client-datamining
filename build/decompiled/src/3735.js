@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: tryGetAnimationConfig, environment: var0
+    var2 = function arg0, arg1() {
         _fun33635: for (var _fun33635_ip = 0;;) switch (_fun33635_ip) {
             case 0:
                 var2 = arg0;
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: startWebLayoutAnimation, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun33636: for (var _fun33636_ip = 0;;) switch (_fun33636_ip) {
             case 0:
                 var2 = arg0;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var8[var2];
                 var9 = var2.style;
                 var8 = var5.style;
-                var2 = function(arg0, arg1) { // Original name: maybeReportOverwrittenProperties, environment: var2
+                var2 = function arg0, arg1() {
                     _fun33637: for (var _fun33637_ip = 0;;) switch (_fun33637_ip) {
                         case 0:
                             var5 = arg0;
@@ -472,7 +472,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.startWebLayoutAnimation = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: tryActivateLayoutTransition, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun33639: for (var _fun33639_ip = 0;;) switch (_fun33639_ip) {
             case 0:
                 var5 = arg0;

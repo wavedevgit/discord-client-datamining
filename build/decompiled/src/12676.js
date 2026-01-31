@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'enumerable': true,
         'configurable': true
     };
-    var10 = function() { // Original name: next, environment: var3
+    var10 = function() {
         _fun97101: for (var _fun97101_ip = 0;;) switch (_fun97101_ip) {
             case 0:
                 var10 = _closure1_slot0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var4 = new Array(0);
     var1._mixedIntoPredicates = var4;
-    var4 = function(arg0) { // Original name: is, environment: var3
+    var4 = function arg0() {
         _fun97102: for (var _fun97102_ip = 0;;) switch (_fun97102_ip) {
             case 0:
                 var0 = arg0;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.is = var4;
-    var4 = function(arg0) { // Original name: isImpl, environment: var3
+    var4 = function arg0() {
         _fun97103: for (var _fun97103_ip = 0;;) switch (_fun97103_ip) {
             case 0:
                 var5 = arg0;
@@ -296,7 +296,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isImpl = var4;
-    var4 = function(arg0) { // Original name: convert, environment: var3
+    var4 = function arg0() {
         _fun97104: for (var _fun97104_ip = 0;;) switch (_fun97104_ip) {
             case 0:
                 var2 = arg0;
@@ -368,7 +368,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.convert = var4;
-    var4 = function(arg0, arg1) { // Original name: createDefaultIterator, environment: var3
+    var4 = function arg0, arg1() {
         var2 = global;
         var4 = var2.Object;
         var3 = var4.create;
@@ -398,7 +398,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.createDefaultIterator = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: create, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun97106: for (var _fun97106_ip = 0;;) switch (_fun97106_ip) {
             case 0:
                 var5 = arg0;
@@ -471,7 +471,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.create = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: createImpl, environment: var3
+    var4 = function arg0, arg1, arg2() {
         var5 = _closure1_slot8;
         var4 = var5.create;
         var3 = arg0;
@@ -489,12 +489,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.createImpl = var4;
-    var4 = function(arg0) { // Original name: _internalSetup, environment: var3
+    var4 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1._internalSetup = var4;
-    var4 = function(arg0, arg1) { // Original name: setup, environment: var3
+    var4 = function arg0, arg1() {
         _fun97109: for (var _fun97109_ip = 0;;) switch (_fun97109_ip) {
             case 0:
                 var0 = arg0;
@@ -603,14 +603,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.setup = var4;
-    var4 = function(arg0) { // Original name: install, environment: var3
+    var4 = function arg0() {
         _fun97110: for (var _fun97110_ip = 0;;) switch (_fun97110_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
                 var1 = function() { // Environment: var0
                     var3 = _closure1_slot4;
-                    var2 = function() { // Original name: URLSearchParams, environment: var4
+                    var2 = function() {
                         _fun97112: for (var _fun97112_ip = 0;;) switch (_fun97112_ip) {
                             case 0:
                                 var0 = this;
@@ -903,7 +903,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var1 = 'append';
                     var0.key = var1;
-                    var1 = function(arg0, arg1) { // Original name: append, environment: var4
+                    var1 = function arg0, arg1() {
                         _fun97113: for (var _fun97113_ip = 0;;) switch (_fun97113_ip) {
                             case 0:
                                 var2 = this;
@@ -1005,7 +1005,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'delete';
                     var0.key = var5;
-                    var5 = function(arg0) { // Original name: _delete, environment: var4
+                    var5 = function arg0() {
                         _fun97114: for (var _fun97114_ip = 0;;) switch (_fun97114_ip) {
                             case 0:
                                 var2 = this;
@@ -1095,7 +1095,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'get';
                     var0.key = var5;
-                    var5 = function(arg0) { // Original name: get, environment: var4
+                    var5 = function arg0() {
                         _fun97115: for (var _fun97115_ip = 0;;) switch (_fun97115_ip) {
                             case 0:
                                 var2 = this;
@@ -1185,7 +1185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'getAll';
                     var0.key = var5;
-                    var5 = function(arg0) { // Original name: getAll, environment: var4
+                    var5 = function arg0() {
                         _fun97116: for (var _fun97116_ip = 0;;) switch (_fun97116_ip) {
                             case 0:
                                 var4 = this;
@@ -1279,7 +1279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'has';
                     var0.key = var5;
-                    var5 = function(arg0) { // Original name: has, environment: var4
+                    var5 = function arg0() {
                         _fun97117: for (var _fun97117_ip = 0;;) switch (_fun97117_ip) {
                             case 0:
                                 var2 = this;
@@ -1369,7 +1369,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'set';
                     var0.key = var5;
-                    var5 = function(arg0, arg1) { // Original name: set, environment: var4
+                    var5 = function arg0, arg1() {
                         _fun97118: for (var _fun97118_ip = 0;;) switch (_fun97118_ip) {
                             case 0:
                                 var2 = this;
@@ -1470,7 +1470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'sort';
                     var0.key = var5;
-                    var5 = function() { // Original name: sort, environment: var4
+                    var5 = function() {
                         _fun97119: for (var _fun97119_ip = 0;;) switch (_fun97119_ip) {
                             case 0:
                                 var1 = this;
@@ -1520,7 +1520,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'toString';
                     var0.key = var5;
-                    var5 = function() { // Original name: toString, environment: var4
+                    var5 = function() {
                         _fun97120: for (var _fun97120_ip = 0;;) switch (_fun97120_ip) {
                             case 0:
                                 var1 = this;
@@ -1570,7 +1570,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'keys';
                     var0.key = var5;
-                    var5 = function() { // Original name: keys, environment: var4
+                    var5 = function() {
                         _fun97121: for (var _fun97121_ip = 0;;) switch (_fun97121_ip) {
                             case 0:
                                 var3 = this;
@@ -1615,7 +1615,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'values';
                     var0.key = var5;
-                    var5 = function() { // Original name: values, environment: var4
+                    var5 = function() {
                         _fun97122: for (var _fun97122_ip = 0;;) switch (_fun97122_ip) {
                             case 0:
                                 var3 = this;
@@ -1660,7 +1660,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'entries';
                     var0.key = var5;
-                    var5 = function() { // Original name: entries, environment: var4
+                    var5 = function() {
                         _fun97123: for (var _fun97123_ip = 0;;) switch (_fun97123_ip) {
                             case 0:
                                 var3 = this;
@@ -1705,7 +1705,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = 'forEach';
                     var0.key = var5;
-                    var4 = function(arg0) { // Original name: forEach, environment: var4
+                    var4 = function arg0() {
                         _fun97124: for (var _fun97124_ip = 0;;) switch (_fun97124_ip) {
                             case 0:
                                 var12 = arg0;

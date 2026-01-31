@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _shouldSkipContactSyncStep, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: lastStepComplete, environment: var3
+    var0 = function arg0() {
         _fun113894: for (var _fun113894_ip = 0;;) switch (_fun113894_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var1 = function() { // Original name: getNextOnboardingStep, environment: var3
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var1;
-    var0 = function() { // Original name: _getNextOnboardingStep, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var4 = 'choose-avatar';
     var7.key = var4;
-    var4 = function() { // Original name: shouldShowStep, environment: var3
+    var4 = function() {
         _fun113899: for (var _fun113899_ip = 0;;) switch (_fun113899_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun113904
                     }
                 case 53:
-                    var3 = function() { // Original name: shouldSkipContactSyncStep, environment: var2
+                    var3 = function() {
                         var0 = undefined;
                         var3 = _closure1_slot14;
                         var2 = var3.apply;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var9 = 'discoverability';
     var8.key = var9;
-    var9 = function() { // Original name: shouldShowStep, environment: var3
+    var9 = function() {
         var0 = true;
         return var0;
     };
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var5.bind(var0)(var8);
     var8 = var8.hasDeferredInvite;
     var7.shouldShowStep = var8;
-    var8 = function() { // Original name: transitionStep, environment: var3
+    var8 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/nuf/native/NewUserUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getKeyForOnboardingStep, environment: var3
+    var4 = function arg0() {
         _fun113909: for (var _fun113909_ip = 0;;) switch (_fun113909_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getKeyForOnboardingStep = var4;
-    var3 = function(arg0, arg1) { // Original name: continueToNextStep, environment: var3
+    var3 = function arg0, arg1() {
         _fun113910: for (var _fun113910_ip = 0;;) switch (_fun113910_ip) {
             case 0:
                 var5 = arg1;

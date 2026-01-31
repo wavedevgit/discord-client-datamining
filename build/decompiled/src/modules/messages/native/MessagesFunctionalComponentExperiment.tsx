@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/MessagesFunctionalComponentExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isMessagesFunctionalComponentEnabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = var2.getCurrentConfig;
         var0 = {};
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isMessagesFunctionalComponentEnabled = var3;
-    var1 = function() { // Original name: useIsMessagesFunctionalComponentEnabled, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = var2.useExperiment;
         var0 = {};

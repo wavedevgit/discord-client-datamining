@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: getUniqueListFromMetadata, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot1;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.sampleAnimationId = var3;
-    var3 = function(arg0) { // Original name: getEffectUrl, environment: var1
+    var3 = function arg0() {
         _fun50643: for (var _fun50643_ip = 0;;) switch (_fun50643_ip) {
             case 0:
                 var5 = arg0;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEffectUrl = var3;
-    var1 = function(arg0) { // Original name: getEffectAnnouncement, environment: var1
+    var1 = function arg0() {
         _fun50644: for (var _fun50644_ip = 0;;) switch (_fun50644_ip) {
             case 0:
                 var2 = arg0;

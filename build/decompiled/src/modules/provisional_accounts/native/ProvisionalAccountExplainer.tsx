@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useNativeProvisionalAccountExplainerText, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.userId;
         var7 = var0.iconSize;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/provisional_accounts/native/ProvisionalAccountExplainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ChatProvisionalAccountExplainerCard, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.style;
         var4 = var0.userId;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ChatProvisionalAccountExplainerCard = var3;
-    var1 = function(arg0) { // Original name: UserProfileProvisionalAccountExplainerCard, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.style;
         var3 = var0.userId;

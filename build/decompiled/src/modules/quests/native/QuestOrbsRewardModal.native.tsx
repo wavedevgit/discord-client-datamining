@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AnimatedOrbContainer, environment: var1
+    var0 = function arg0() {
         _fun78484: for (var _fun78484_ip = 0;;) switch (_fun78484_ip) {
             case 0:
                 var1 = arg0;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var6 = var7.bind(var9)(var6);
     var _closure1_slot17 = var6;
-    var6 = function() { // Original name: CancelButton, environment: var1
+    var6 = function() {
         var1 = _closure1_slot16;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var8.bind(var3)(var0);
         var1 = var0.HeaderBackButton;
         var0 = {};
-        var6 = function() { // Original name: onPress, environment: var5
+        var6 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 10;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onPress = var6;
-        var5 = function() { // Original name: backImage, environment: var5
+        var5 = function() {
             var3 = _closure1_slot14;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestOrbsRewardModal.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: _default, environment: var1
+    var3 = function arg0() {
         _fun78500: for (var _fun78500_ip = 0;;) switch (_fun78500_ip) {
             case 0:
                 var0 = arg0;
@@ -1144,7 +1144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 889:
                 var14.initialRenderedBalance = var24;
                 var14.balance = var23;
-                var23 = function() { // Original name: onPress, environment: var26
+                var23 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -1254,7 +1254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var22.t;
                 var23 = var22.Heldhm;
                 var22 = {};
-                var26 = function() { // Original name: profileDecoHook, environment: var26
+                var26 = function() {
                     var3 = _closure1_slot14;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;

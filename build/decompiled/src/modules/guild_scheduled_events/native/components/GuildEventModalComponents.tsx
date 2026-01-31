@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventModalComponents.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: GuildEventTopic, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.topic;
         var8 = var0.onChange;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GuildEventTopic = var3;
-    var3 = function(arg0) { // Original name: GuildEventLocation, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.location;
         var7 = var0.onChange;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GuildEventLocation = var3;
-    var3 = function(arg0) { // Original name: GuildEventRecurrence, environment: var1
+    var3 = function arg0() {
         _fun65333: for (var _fun65333_ip = 0;;) switch (_fun65333_ip) {
             case 0:
                 var1 = arg0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var12.bind(var3)(var5);
                 var6 = var5.InputButton;
                 var5 = {};
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var3 = _closure1_slot2;
                     var9 = _closure1_slot3;
                     var0 = 11;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.title = var1;
                     var6 = _closure2_slot4;
                     var2.items = var6;
-                    var6 = function(arg0) { // Original name: onItemSelect, environment: var6
+                    var6 = function arg0() {
                         var2 = _closure2_slot2;
                         var0 = undefined;
                         var1 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventRecurrence = var3;
-    var3 = function(arg0) { // Original name: GuildEventEntityTypeSelection, environment: var1
+    var3 = function arg0() {
         _fun65338: for (var _fun65338_ip = 0;;) switch (_fun65338_ip) {
             case 0:
                 var0 = arg0;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventEntityTypeSelection = var3;
-    var3 = function(arg0) { // Original name: GuildEventDescription, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.description;
         var8 = var0.onChange;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var10.bind(var11)(var9);
         var4.placeholder = var9;
         var4.onChange = var8;
-        var7 = function() { // Original name: onFocus, environment: var7
+        var7 = function() {
             _fun65341: for (var _fun65341_ip = 0;;) switch (_fun65341_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -688,7 +688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GuildEventDescription = var3;
-    var1 = function(arg0) { // Original name: GuildEventDatetime, environment: var1
+    var1 = function arg0() {
         _fun65342: for (var _fun65342_ip = 0;;) switch (_fun65342_ip) {
             case 0:
                 var1 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun65342
                 }
             case 171:
-                var1 = function() { // Original name: p, environment: var0
+                var1 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -750,7 +750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot6 = var1;
                 var1 = _closure1_slot13;
                 var18 = var1.bind(var3)();
-                var14 = function(arg0) { // Original name: handleOpenDatePicker, environment: var0
+                var14 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = function() { // Environment: var0
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.paths;
                                 var2 = var7.bind(var8)(var2, var1);
                                 var1 = {};
-                                var7 = function(arg0) { // Original name: onSubmit, environment: var7
+                                var7 = function arg0() {
                                     _fun65346: for (var _fun65346_ip = 0;;) switch (_fun65346_ip) {
                                         case 0:
                                             var2 = arg0;

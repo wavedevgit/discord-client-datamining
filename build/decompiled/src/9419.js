@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_ScrollViewGestureTsx16(e){const{updateContainerSize}=this.__closure;updateContainerSize({width:e.nativeEvent.layout.width,height:e.nativeEvent.layout.height});}';
     var3.code = var4;
     var _closure1_slot21 = var3;
-    var1 = function(arg0) { // Original name: IScrollViewGesture, environment: var1
+    var1 = function arg0() {
         _fun74925: for (var _fun74925_ip = 0;;) switch (_fun74925_ip) {
             case 0:
                 var6 = arg0;
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var13[var4];
                 var14 = var1.bind(var3)(var2);
                 var12 = var14.useDerivedValue;
-                var7 = function() { // Original name: pnpm_ScrollViewGestureTsx1, environment: var0
+                var7 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     return var0;
@@ -222,7 +222,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot26 = var36;
                 var15 = _closure1_slot3;
                 var14 = var15.useCallback;
-                var7 = function() { // Original name: pnpm_ScrollViewGestureTsx2, environment: var0
+                var7 = function() {
                     _fun74927: for (var _fun74927_ip = 0;;) switch (_fun74927_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -308,7 +308,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var40 = var14.bind(var15)(var7, var2);
                 var _closure2_slot27 = var40;
                 var14 = var15.useCallback;
-                var7 = function(arg0, arg1) { // Original name: pnpm_ScrollViewGestureTsx3, environment: var0
+                var7 = function arg0, arg1() {
                     _fun74928: for (var _fun74928_ip = 0;;) switch (_fun74928_ip) {
                         case 0:
                             var5 = arg1;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = _closure2_slot5;
                         case 117:
                             var2 = var2.bind(var4)(var6);
-                            var1 = function(arg0) { // Original name: pnpm_ScrollViewGestureTsx4, environment: var1
+                            var1 = function arg0() {
                                 _fun74929: for (var _fun74929_ip = 0;;) switch (_fun74929_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -423,13 +423,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var22 = var14.bind(var15)(var7, var2);
                 var _closure2_slot28 = var22;
                 var14 = var15.useCallback;
-                var7 = function(arg0, arg1, arg2) { // Original name: pnpm_ScrollViewGestureTsx5, environment: var0
+                var7 = function arg0, arg1, arg2() {
                     _fun74930: for (var _fun74930_ip = 0;;) switch (_fun74930_ip) {
                         case 0:
                             var8 = arg0;
                             var12 = arg1;
                             var5 = arg2;
-                            var6 = function(arg0) { // Original name: withProcessTranslation, environment: var0
+                            var6 = function arg0() {
                                 _fun74931: for (var _fun74931_ip = 0;;) switch (_fun74931_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -660,7 +660,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var23 = var14.bind(var15)(var7, var2);
                 var _closure2_slot29 = var23;
                 var14 = var15.useCallback;
-                var7 = function(arg0) { // Original name: pnpm_ScrollViewGestureTsx6, environment: var0
+                var7 = function arg0() {
                     _fun74932: for (var _fun74932_ip = 0;;) switch (_fun74932_ip) {
                         case 0:
                             var0 = arg0;
@@ -711,7 +711,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var37 = var14.bind(var15)(var7, var2);
                 var _closure2_slot30 = var37;
                 var14 = var15.useCallback;
-                var7 = function() { // Original name: pnpm_ScrollViewGestureTsx7, environment: var0
+                var7 = function() {
                     var1 = _closure2_slot20;
                     var0 = true;
                     var1.value = var0;
@@ -727,7 +727,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = _closure2_slot23;
                     var1 = var1.value;
                     var3.velocity = var1;
-                    var1 = function(arg0) { // Original name: pnpm_ScrollViewGestureTsx8, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure2_slot30;
                         var1 = undefined;
                         var0 = arg0;
@@ -768,7 +768,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var37 = var14.bind(var15)(var7, var2);
                 var _closure2_slot31 = var37;
                 var14 = var15.useCallback;
-                var7 = function() { // Original name: pnpm_ScrollViewGestureTsx9, environment: var0
+                var7 = function() {
                     _fun74935: for (var _fun74935_ip = 0;;) switch (_fun74935_ip) {
                         case 0:
                             var1 = _closure2_slot20;
@@ -890,7 +890,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var13[var4];
                 var42 = var1.bind(var3)(var2);
                 var37 = var42.useAnimatedReaction;
-                var14 = function() { // Original name: pnpm_ScrollViewGestureTsx10, environment: var0
+                var14 = function() {
                     var0 = _closure2_slot13;
                     var0 = var0.value;
                     return var0;
@@ -902,7 +902,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14.__workletHash = var2;
                 var2 = _closure1_slot15;
                 var14.__initData = var2;
-                var7 = function() { // Original name: pnpm_ScrollViewGestureTsx11, environment: var0
+                var7 = function() {
                     _fun74937: for (var _fun74937_ip = 0;;) switch (_fun74937_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -932,7 +932,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[1] = var43;
                 var2 = var37.bind(var42)(var14, var7, var2);
                 var2 = function() { // Environment: var0
-                    var0 = function(arg0) { // Original name: withProcessTranslation, environment: var0
+                    var0 = function arg0() {
                         _fun74939: for (var _fun74939_ip = 0;;) switch (_fun74939_ip) {
                             case 0:
                                 var0 = arg0;
@@ -988,7 +988,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var37 = var2.bind(var3)();
                 var _closure2_slot33 = var37;
                 var14 = _closure1_slot4;
-                var7 = function(arg0) { // Original name: pnpm_ScrollViewGestureTsx13, environment: var0
+                var7 = function arg0() {
                     _fun74940: for (var _fun74940_ip = 0;;) switch (_fun74940_ip) {
                         case 0:
                             var1 = _closure2_slot20;
@@ -1081,7 +1081,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[9] = var40;
                 var2[10] = var20;
                 var20 = var14.bind(var3)(var7, var2);
-                var7 = function(arg0) { // Original name: pnpm_ScrollViewGestureTsx14, environment: var0
+                var7 = function arg0() {
                     _fun74941: for (var _fun74941_ip = 0;;) switch (_fun74941_ip) {
                         case 0:
                             var3 = arg0;
@@ -1242,7 +1242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[7] = var19;
                 var2[8] = var33;
                 var19 = var14.bind(var3)(var7, var2);
-                var7 = function(arg0, arg1) { // Original name: pnpm_ScrollViewGestureTsx15, environment: var0
+                var7 = function arg0, arg1() {
                     _fun74942: for (var _fun74942_ip = 0;;) switch (_fun74942_ip) {
                         case 0:
                             var4 = arg0;
@@ -1465,7 +1465,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2.options = var17;
                 var14 = var7.bind(var14)(var2);
                 var7 = var15.useCallback;
-                var2 = function(arg0) { // Original name: pnpm_ScrollViewGestureTsx16, environment: var0
+                var2 = function arg0() {
                     var0 = arg0;
                     var2 = _closure2_slot12;
                     var1 = {};

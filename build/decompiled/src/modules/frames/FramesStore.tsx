@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun62976: for (var _fun62976_ip = 0;;) switch (_fun62976_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: FramesStoreClass, environment: var5
+        var3 = function() {
             _fun62980: for (var _fun62980_ip = 0;;) switch (_fun62980_ip) {
                 case 0:
                     var3 = this;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getConnectedFrame';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFrameLayoutMode';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun62982: for (var _fun62982_ip = 0;;) switch (_fun62982_ip) {
                 case 0:
                     var1 = _closure1_slot9;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActivityPanelMode';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun62983: for (var _fun62983_ip = 0;;) switch (_fun62983_ip) {
                 case 0:
                     var3 = _closure1_slot9;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFrameActive';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot9;
             var0 = null;
             var0 = var0 != var1;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLaunchingFrame';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun62985: for (var _fun62985_ip = 0;;) switch (_fun62985_ip) {
                 case 0:
                     var4 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isProxyTicketRefreshing';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot11;
             var1 = var2.has;
             var0 = arg0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOrientationLockStateForApp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.get;
             var0 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPipOrientationLockStateForApp';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun62988: for (var _fun62988_ip = 0;;) switch (_fun62988_ip) {
                 case 0:
                     var3 = arg0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleFrameLaunchStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.applicationId;
         var2 = _closure1_slot10;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.FRAME_LAUNCH_START = var8;
-    var8 = function(arg0) { // Original name: handleFrameLaunch, environment: var3
+    var8 = function arg0() {
         _fun62990: for (var _fun62990_ip = 0;;) switch (_fun62990_ip) {
             case 0:
                 var0 = arg0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FRAME_LAUNCH = var8;
-    var8 = function(arg0) { // Original name: handleFrameLaunchFail, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.applicationId;
         var1 = _closure1_slot10;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.FRAME_LAUNCH_FAIL = var8;
-    var8 = function(arg0) { // Original name: handleFrameStop, environment: var3
+    var8 = function arg0() {
         _fun62992: for (var _fun62992_ip = 0;;) switch (_fun62992_ip) {
             case 0:
                 var0 = arg0;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FRAME_STOP = var8;
-    var8 = function(arg0) { // Original name: handleFrameUpdateLayoutMode, environment: var3
+    var8 = function arg0() {
         _fun62993: for (var _fun62993_ip = 0;;) switch (_fun62993_ip) {
             case 0:
                 var0 = arg0;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FRAME_UPDATE_LAYOUT_MODE = var8;
-    var8 = function(arg0) { // Original name: handleSetPanelMode, environment: var3
+    var8 = function arg0() {
         _fun62994: for (var _fun62994_ip = 0;;) switch (_fun62994_ip) {
             case 0:
                 var0 = arg0;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FRAME_SET_PANEL_MODE = var8;
-    var8 = function(arg0) { // Original name: handleOrientationLockState, environment: var3
+    var8 = function arg0() {
         _fun62995: for (var _fun62995_ip = 0;;) switch (_fun62995_ip) {
             case 0:
                 var0 = arg0;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FRAME_SET_ORIENTATION_LOCK_STATE = var8;
-    var8 = function(arg0) { // Original name: handleSetProxyTicketRefreshing, environment: var3
+    var8 = function arg0() {
         _fun62996: for (var _fun62996_ip = 0;;) switch (_fun62996_ip) {
             case 0:
                 var0 = arg0;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FRAME_SET_PROXY_TICKET_REFRESHING = var8;
-    var3 = function(arg0) { // Original name: handleUpdateProxyTicket, environment: var3
+    var3 = function arg0() {
         _fun62997: for (var _fun62997_ip = 0;;) switch (_fun62997_ip) {
             case 0:
                 var0 = arg0;

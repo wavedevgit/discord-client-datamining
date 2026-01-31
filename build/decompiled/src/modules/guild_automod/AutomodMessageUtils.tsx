@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function(arg0, arg1) { // Original name: getEmbedFieldFromMessage, environment: var2
+    var0 = function arg0, arg1() {
         _fun40740: for (var _fun40740_ip = 0;;) switch (_fun40740_ip) {
             case 0:
                 var0 = arg1;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getMessageContentFromEmbed, environment: var2
+    var0 = function arg0() {
         _fun40743: for (var _fun40743_ip = 0;;) switch (_fun40743_ip) {
             case 0:
                 var0 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getDecisionOutcomeFromMessage, environment: var2
+    var0 = function arg0() {
         _fun40744: for (var _fun40744_ip = 0;;) switch (_fun40744_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: getQuarantineTypeFromMessage, environment: var2
+    var0 = function arg0() {
         _fun40745: for (var _fun40745_ip = 0;;) switch (_fun40745_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getQuarantineActionFromMessage, environment: var2
+    var0 = function arg0() {
         _fun40746: for (var _fun40746_ip = 0;;) switch (_fun40746_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getProfileUpdateTypeFromMessage, environment: var2
+    var0 = function arg0() {
         _fun40747: for (var _fun40747_ip = 0;;) switch (_fun40747_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: getQuarantineEventFromMessage, environment: var2
+    var0 = function arg0() {
         _fun40748: for (var _fun40748_ip = 0;;) switch (_fun40748_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _getUserProfileRuleHeaderText, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun40749: for (var _fun40749_ip = 0;;) switch (_fun40749_ip) {
             case 0:
                 var3 = arg0;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var4 = function(arg0, arg1) { // Original name: getChannelName, environment: var2
+    var4 = function arg0, arg1() {
         _fun40750: for (var _fun40750_ip = 0;;) switch (_fun40750_ip) {
             case 0:
                 var3 = arg0;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var4;
-    var3 = function(arg0) { // Original name: extractAutomodMessageFields, environment: var2
+    var3 = function arg0() {
         _fun40751: for (var _fun40751_ip = 0;;) switch (_fun40751_ip) {
             case 0:
                 var7 = arg0;
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_automod/AutomodMessageUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: useAutomodMessageFields, environment: var2
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot3;
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.default = var5;
-    var5 = function(arg0) { // Original name: isAutomodMessageRecord, environment: var2
+    var5 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot8;
@@ -795,7 +795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isAutomodMessageRecord = var5;
-    var5 = function(arg0) { // Original name: isAutomodNotification, environment: var2
+    var5 = function arg0() {
         _fun40756: for (var _fun40756_ip = 0;;) switch (_fun40756_ip) {
             case 0:
                 var0 = arg0;
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isAutomodNotification = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: getActionHeaderTextMobile, environment: var2
+    var5 = function arg0, arg1, arg2() {
         _fun40758: for (var _fun40758_ip = 0;;) switch (_fun40758_ip) {
             case 0:
                 var8 = arg0;
@@ -1046,7 +1046,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getActionHeaderTextMobile = var5;
     var1.getChannelName = var4;
-    var4 = function(arg0, arg1) { // Original name: getActionHeaderText, environment: var2
+    var4 = function arg0, arg1() {
         _fun40759: for (var _fun40759_ip = 0;;) switch (_fun40759_ip) {
             case 0:
                 var4 = arg0;
@@ -1359,7 +1359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getActionHeaderText = var4;
-    var4 = function(arg0) { // Original name: getQuarantineReasonString, environment: var2
+    var4 = function arg0() {
         _fun40760: for (var _fun40760_ip = 0;;) switch (_fun40760_ip) {
             case 0:
                 var2 = arg0;
@@ -1481,7 +1481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getQuarantineReasonString = var4;
-    var4 = function(arg0) { // Original name: extractAutomodNotificationFields, environment: var2
+    var4 = function arg0() {
         _fun40761: for (var _fun40761_ip = 0;;) switch (_fun40761_ip) {
             case 0:
                 var4 = arg0;
@@ -1652,7 +1652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.extractAutomodNotificationFields = var4;
     var1.extractAutomodMessageFields = var3;
-    var3 = function(arg0) { // Original name: useAutomodAlertActions, environment: var2
+    var3 = function arg0() {
         _fun40762: for (var _fun40762_ip = 0;;) switch (_fun40762_ip) {
             case 0:
                 var3 = arg0;
@@ -1681,7 +1681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useAutomodAlertActions = var3;
-    var3 = function(arg0) { // Original name: getRaidAlertResolveCTAText, environment: var2
+    var3 = function arg0() {
         _fun40763: for (var _fun40763_ip = 0;;) switch (_fun40763_ip) {
             case 0:
                 var2 = arg0;
@@ -1799,7 +1799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getRaidAlertResolveCTAText = var3;
-    var2 = function(arg0) { // Original name: getUserIdOfAutomodAction, environment: var2
+    var2 = function arg0() {
         var3 = _closure1_slot11;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

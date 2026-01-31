@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: AnimatedRenderItem, environment: var1
+    var0 = function arg0() {
         _fun44502: for (var _fun44502_ip = 0;;) switch (_fun44502_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var13];
                 var8 = var12.bind(var3)(var2);
                 var4 = var8.useAnimatedStyle;
-                var2 = function() { // Original name: T, environment: var1
+                var2 = function() {
                     _fun44504: for (var _fun44504_ip = 0;;) switch (_fun44504_ip) {
                         case 0:
                             var0 = _closure2_slot5;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var13];
                 var8 = var12.bind(var3)(var2);
                 var7 = var8.useAnimatedReaction;
-                var2 = function() { // Original name: I, environment: var1
+                var2 = function() {
                     _fun44506: for (var _fun44506_ip = 0;;) switch (_fun44506_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.__workletHash = var9;
                 var9 = _closure1_slot7;
                 var2.__initData = var9;
-                var1 = function(arg0, arg1) { // Original name: v, environment: var1
+                var1 = function arg0, arg1() {
                     _fun44507: for (var _fun44507_ip = 0;;) switch (_fun44507_ip) {
                         case 0:
                             var2 = arg0;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderAnimatedItem, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var3 = _closure1_slot5;
         var2 = _closure1_slot9;
         var1 = {};
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/AnimatedEnterExitItem/native/AnimatedEnterExitItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AnimatedEnterExitItem, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.useReducedMotion;
         var _closure2_slot0 = var5;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var10;
-    var3 = function(arg0) { // Original name: isContactSyncEnabled, environment: var1
+    var3 = function arg0() {
         _fun80590: for (var _fun80590_ip = 0;;) switch (_fun80590_ip) {
             case 0:
                 var1 = arg0;
@@ -544,7 +544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getContacts = var4;
-    var4 = function() { // Original name: getStoredContacts, environment: var1
+    var4 = function() {
         _fun80607: for (var _fun80607_ip = 0;;) switch (_fun80607_ip) {
             case 0:
                 var4 = undefined;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStoredContacts = var4;
-    var4 = function() { // Original name: useContactSyncAccount, environment: var1
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 12;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useContactSyncAccount = var4;
-    var4 = function() { // Original name: useContactSyncEnabled, environment: var1
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 12;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useContactSyncEnabled = var4;
-    var4 = function() { // Original name: useContactSyncUserIsDiscoverable, environment: var1
+    var4 = function() {
         _fun80612: for (var _fun80612_ip = 0;;) switch (_fun80612_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useContactSyncUserIsDiscoverable = var4;
     var2.isContactSyncEnabled = var3;
-    var3 = function() { // Original name: handleOpenLearnMoreLink, environment: var1
+    var3 = function() {
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
         var0 = 14;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleOpenLearnMoreLink = var3;
-    var1 = function() { // Original name: transitionToAddFriendsLandingPage, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 16;

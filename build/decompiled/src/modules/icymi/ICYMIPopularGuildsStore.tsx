@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun103851: for (var _fun103851_ip = 0;;) switch (_fun103851_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ICYMIPopularGuildsStore, environment: var5
+        var3 = function() {
             _fun103855: for (var _fun103855_ip = 0;;) switch (_fun103855_ip) {
                 case 0:
                     var3 = this;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot7;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOnboardingCategoryIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOnboardingGuilds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentOnboardingGuildOffset';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: loadOnboardingPopularGuilds, environment: var3
+    var8 = function arg0() {
         _fun103860: for (var _fun103860_ip = 0;;) switch (_fun103860_ip) {
             case 0:
                 var0 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LOAD_ICYMI_POPULAR_GUILDS = var8;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = new Array(0);
         _closure1_slot8 = var0;
         var0 = new Array(0);

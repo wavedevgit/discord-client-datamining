@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CreateThreadViewInner, environment: var1
+    var0 = function arg0() {
         _fun104965: for (var _fun104965_ip = 0;;) switch (_fun104965_ip) {
             case 0:
                 var0 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.threadSettingsDraft = var34;
                 var1.privateThreadMode = var40;
                 var1.setNameError = var0;
-                var0 = function(arg0) { // Original name: useSubmitForm, environment: var37
+                var0 = function arg0() {
                     _fun104968: for (var _fun104968_ip = 0;;) switch (_fun104968_ip) {
                         case 0:
                             var1 = arg0;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var38 = var39.getIsPrivate;
                 var38 = var38.bind(var39)(var34, var40);
                 var33.value = var38;
-                var37 = function(arg0) { // Original name: onValueChange, environment: var37
+                var37 = function arg0() {
                     _fun104974: for (var _fun104974_ip = 0;;) switch (_fun104974_ip) {
                         case 0:
                             var0 = _closure2_slot0;

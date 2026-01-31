@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun93278: for (var _fun93278_ip = 0;;) switch (_fun93278_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun93279: for (var _fun93279_ip = 0;;) switch (_fun93279_ip) {
             case 0:
             case 2: // try_start_0
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot7;
-        var2 = function(arg0) { // Original name: LibdiscoreCachedExperiment, environment: var4
+        var2 = function arg0() {
             var3 = this;
             var4 = _closure1_slot6;
             var2 = _closure2_slot0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getEnabledFeatureName';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun93284: for (var _fun93284_ip = 0;;) switch (_fun93284_ip) {
                 case 0:
                     var2 = this;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCachedConfig';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun93285: for (var _fun93285_ip = 0;;) switch (_fun93285_ip) {
                 case 0:
                     var0 = this;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setExperiment';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.inner = var1;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCurrentConfig';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun93287: for (var _fun93287_ip = 0;;) switch (_fun93287_ip) {
                 case 0:
                     var1 = this;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5 = var3.bind(var0)();
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: LibdiscoreWrapperSimpleExperiment, environment: var5
+        var3 = function arg0, arg1() {
             var4 = this;
             var1 = _closure1_slot6;
             var3 = _closure2_slot0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getLabel';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0.label;
             return var0;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTreatments';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = {};
             var0 = 0;
             var1.treatmentId = var0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCachedEnabled';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun93292: for (var _fun93292_ip = 0;;) switch (_fun93292_ip) {
                 case 0:
                     var1 = this;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var3.bind(var0)(var5);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: LibdiscoreTelemetryExperiment, environment: var5
+        var3 = function arg0() {
             var5 = this;
             var1 = 0;
             var9 = 0;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getLabel';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = 'libdiscore Telemetry';
             return var0;
         };
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTreatments';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = {};
             var0 = 0;
             var1.treatmentId = var0;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMetricsSampleRate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun93297: for (var _fun93297_ip = 0;;) switch (_fun93297_ip) {
                 case 0:
                     var1 = this;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'didEmit';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.emissionsCount;
             var0 = var0 + 1;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldCollectMetrics';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun93299: for (var _fun93299_ip = 0;;) switch (_fun93299_ip) {
                 case 0:
                     var2 = this;

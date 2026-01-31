@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: getIsSocialLayerParentApplication, environment: var3
+    var1 = function arg0() {
         _fun47827: for (var _fun47827_ip = 0;;) switch (_fun47827_ip) {
             case 0:
                 var2 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/applications/useIsSocialLayerParentApplication.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useIsSocialLayerParentApplication, environment: var3
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot2;

@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Menu/native/MenuPopout.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MenuPopout, environment: var1
+    var1 = function arg0() {
         _fun44481: for (var _fun44481_ip = 0;;) switch (_fun44481_ip) {
             case 0:
                 var0 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.expanded = var7;
                 var5.accessibilityState = var9;
                 var5.accessibilityActions = var8;
-                var4 = function(arg0) { // Original name: onAccessibilityAction, environment: var4
+                var4 = function arg0() {
                     _fun44488: for (var _fun44488_ip = 0;;) switch (_fun44488_ip) {
                         case 0:
                             var1 = arg0;

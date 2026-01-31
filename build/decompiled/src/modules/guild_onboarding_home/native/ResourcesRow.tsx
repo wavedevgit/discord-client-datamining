@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/ResourcesRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ResourcesRow, environment: var1
+    var1 = function arg0() {
         _fun104794: for (var _fun104794_ip = 0;;) switch (_fun104794_ip) {
             case 0:
                 var0 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = _closure2_slot1;
                     var8 = var8.channelItem;
                     var1.style = var8;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var0 = _closure3_slot0;
                         var3 = var0.channelId;
                         var2 = _closure1_slot0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var10 = var10.channelItem;
                 var6.style = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var4 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 8;

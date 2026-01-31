@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun13009: for (var _fun13009_ip = 0;;) switch (_fun13009_ip) {
             case 0:
                 var3 = arg0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun13010: for (var _fun13010_ip = 0;;) switch (_fun13010_ip) {
             case 0:
             case 2: // try_start_0
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -117,14 +117,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot6 = var3;
-    var3 = function() { // Original name: NOOP_SET_VISIBILITY, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
         var4 = _closure1_slot6;
-        var3 = function() { // Original name: FeedbackManager, environment: var1
+        var3 = function() {
             var3 = _closure1_slot5;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = '_feedbackComponentName';
         var0.key = var2;
-        var2 = function() { // Original name: get, environment: var1
+        var2 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'initialize';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: initialize, environment: var1
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._setVisibility = var1;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'reset';
         var0.key = var5;
-        var5 = function() { // Original name: reset, environment: var1
+        var5 = function() {
             var1 = this;
             var0 = false;
             var1._isVisible = var0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'show';
         var0.key = var5;
-        var5 = function() { // Original name: show, environment: var1
+        var5 = function() {
             _fun13019: for (var _fun13019_ip = 0;;) switch (_fun13019_ip) {
                 case 0:
                     var2 = this;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'hide';
         var0.key = var5;
-        var5 = function() { // Original name: hide, environment: var1
+        var5 = function() {
             _fun13020: for (var _fun13020_ip = 0;;) switch (_fun13020_ip) {
                 case 0:
                     var2 = this;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'isFormVisible';
         var0.key = var5;
-        var1 = function() { // Original name: isFormVisible, environment: var1
+        var1 = function() {
             var0 = this;
             var0 = var0._isVisible;
             return var0;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = false;
     var6._isVisible = var3;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: FeedbackWidgetManager, environment: var1
+        var4 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_feedbackComponentName';
         var0.key = var5;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             var0 = 'FeedbackWidget';
             return var0;
         };
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var3.bind(var0)(var6);
     var _closure1_slot8 = var5;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: FeedbackButtonManager, environment: var1
+        var4 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -333,7 +333,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_feedbackComponentName';
         var0.key = var5;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             var0 = 'FeedbackButton';
             return var0;
         };
@@ -347,7 +347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.bind(var0)(var6);
     var _closure1_slot9 = var4;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: ScreenshotButtonManager, environment: var1
+        var4 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -368,7 +368,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_feedbackComponentName';
         var0.key = var5;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             var0 = 'ScreenshotButton';
             return var0;
         };
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.FeedbackWidgetManager = var5;
     var2.FeedbackButtonManager = var4;
     var2.ScreenshotButtonManager = var3;
-    var3 = function() { // Original name: showFeedbackButton, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 5;
@@ -403,7 +403,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.showFeedbackButton = var3;
-    var3 = function() { // Original name: hideFeedbackButton, environment: var1
+    var3 = function() {
         var1 = _closure1_slot9;
         var0 = var1.hide;
         var0 = var0.bind(var1)();
@@ -411,7 +411,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.hideFeedbackButton = var3;
-    var3 = function() { // Original name: showFeedbackWidget, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 5;
@@ -426,7 +426,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.showFeedbackWidget = var3;
-    var3 = function() { // Original name: showScreenshotButton, environment: var1
+    var3 = function() {
         _fun13034: for (var _fun13034_ip = 0;;) switch (_fun13034_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.showScreenshotButton = var3;
-    var3 = function() { // Original name: hideScreenshotButton, environment: var1
+    var3 = function() {
         var1 = _closure1_slot10;
         var0 = var1.hide;
         var0 = var0.bind(var1)();
@@ -475,7 +475,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.hideScreenshotButton = var3;
-    var3 = function() { // Original name: resetFeedbackButtonManager, environment: var1
+    var3 = function() {
         var1 = _closure1_slot9;
         var0 = var1.reset;
         var0 = var0.bind(var1)();
@@ -483,7 +483,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.resetFeedbackButtonManager = var3;
-    var3 = function() { // Original name: resetFeedbackWidgetManager, environment: var1
+    var3 = function() {
         var1 = _closure1_slot8;
         var0 = var1.reset;
         var0 = var0.bind(var1)();
@@ -491,7 +491,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.resetFeedbackWidgetManager = var3;
-    var1 = function() { // Original name: resetScreenshotButtonManager, environment: var1
+    var1 = function() {
         var1 = _closure1_slot10;
         var0 = var1.reset;
         var0 = var0.bind(var1)();

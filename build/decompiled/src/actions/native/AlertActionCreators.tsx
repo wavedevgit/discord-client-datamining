@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: openLazy, environment: var3
+    var6 = function arg0() {
         _fun35287: for (var _fun35287_ip = 0;;) switch (_fun35287_ip) {
             case 0:
                 var3 = arg0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openLazy = var6;
-    var6 = function() { // Original name: close, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.close = var6;
-    var6 = function(arg0) { // Original name: show, environment: var3
+    var6 = function arg0() {
         _fun35290: for (var _fun35290_ip = 0;;) switch (_fun35290_ip) {
             case 0:
                 var7 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var2 = var3.openLazy;
                 var1 = {};
-                var6 = function() { // Original name: importer, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot2;
                     var1 = 6;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.show = var6;
-    var3 = function(arg0) { // Original name: confirm, environment: var3
+    var3 = function arg0() {
         var1 = this;
         var _closure2_slot0 = var1;
         var1 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = _closure2_slot0;
             var2 = var3.show;
             var1 = {};
-            var0 = function() { // Original name: onConfirm, environment: var5
+            var0 = function() {
                 var2 = _closure3_slot0;
                 var0 = undefined;
                 var1 = true;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var6["ETE/oC"];
             var6 = var7.bind(var8)(var6);
             var1.cancelText = var6;
-            var5 = function() { // Original name: onCancel, environment: var5
+            var5 = function() {
                 var2 = _closure3_slot0;
                 var0 = undefined;
                 var1 = false;

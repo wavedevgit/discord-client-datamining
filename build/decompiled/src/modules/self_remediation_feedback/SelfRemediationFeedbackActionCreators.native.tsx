@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AGE_VERIFICATION_SURVEY_DISMISSIBLE_CONTENT;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: maybeOpenBlockUserFeedback, environment: var3
+    var6 = function arg0() {
         _fun52099: for (var _fun52099_ip = 0;;) switch (_fun52099_ip) {
             case 0:
                 var0 = arg0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.maybeOpenBlockUserFeedback = var6;
-    var3 = function(arg0) { // Original name: maybeOpenAgeVerificationUserFeedback, environment: var3
+    var3 = function arg0() {
         _fun52100: for (var _fun52100_ip = 0;;) switch (_fun52100_ip) {
             case 0:
                 var0 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: ContentHeader, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.count;
         var5 = var0.title;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: Separator, environment: var1
+    var0 = function() {
         var1 = _closure1_slot11;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: EmojiGallery, environment: var1
+    var0 = function arg0() {
         _fun104733: for (var _fun104733_ip = 0;;) switch (_fun104733_ip) {
             case 0:
                 var2 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: BenefitShowCase, environment: var1
+    var0 = function arg0() {
         _fun104735: for (var _fun104735_ip = 0;;) switch (_fun104735_ip) {
             case 0:
                 var0 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: ChannelBenefitShowCase, environment: var1
+    var0 = function arg0() {
         _fun104736: for (var _fun104736_ip = 0;;) switch (_fun104736_ip) {
             case 0:
                 var0 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: ShowAllButton, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.onPress;
         var0 = _closure1_slot11;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePreviewCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionPurchasePreviewCard, environment: var1
+    var1 = function arg0() {
         _fun104739: for (var _fun104739_ip = 0;;) switch (_fun104739_ip) {
             case 0:
                 var0 = arg0;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var16.bind(var3)(var15);
                 var16 = var15.GappedList;
                 var15 = {};
-                var18 = function() { // Original name: renderGap, environment: var13
+                var18 = function() {
                     var3 = _closure1_slot8;
                     var2 = _closure1_slot13;
                     var1 = undefined;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = _closure1_slot8;
                 var11 = _closure1_slot17;
                 var10 = {};
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var7 = _closure2_slot0;
                     var6 = _closure2_slot1;
                     var4 = _closure1_slot1;

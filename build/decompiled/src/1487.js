@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: createNavigationContainerRef, environment: var1
+    var1 = function() {
         var5 = new Array(0);
         var4 = var5.concat;
         var6 = _closure1_slot3;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = var4.bind(var5)(var3, var2);
         var2 = {};
         var _closure2_slot0 = var2;
-        var2 = function(arg0, arg1) { // Original name: removeListener, environment: var0
+        var2 = function arg0, arg1() {
             _fun17102: for (var _fun17102_ip = 0;;) switch (_fun17102_ip) {
                 case 0:
                     var2 = arg0;
@@ -78,11 +78,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var1.Object;
         var2 = var3.assign;
         var1 = {};
-        var7 = function() { // Original name: get current, environment: var0
+        var7 = function() {
             var0 = _closure2_slot2;
             return var0;
         };
-        var5 = function(arg0) { // Original name: set current, environment: var0
+        var5 = function arg0() {
             _fun17105: for (var _fun17105_ip = 0;;) switch (_fun17105_ip) {
                 case 0:
                     var3 = arg0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             set: var5,
             enumerable: true
         });
-        var4 = function() { // Original name: isReady, environment: var0
+        var4 = function() {
             _fun17108: for (var _fun17108_ip = 0;;) switch (_fun17108_ip) {
                 case 0:
                     var2 = _closure2_slot2;

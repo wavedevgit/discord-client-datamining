@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ChannelSettingsEditForumTag.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelSettingsEditForumTag, environment: var1
+    var1 = function arg0() {
         _fun109338: for (var _fun109338_ip = 0;;) switch (_fun109338_ip) {
             case 0:
                 var1 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot4;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerTitle, environment: var3
+                    var3 = function() {
                         _fun109343: for (var _fun109343_ip = 0;;) switch (_fun109343_ip) {
                             case 0:
                                 var3 = _closure1_slot10;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var2.bind(var4)(var0, var1);
                 _closure2_slot13 = var0;
-                var0 = function(arg0) { // Original name: handlePressEmoji, environment: var14
+                var0 = function arg0() {
                     _fun109345: for (var _fun109345_ip = 0;;) switch (_fun109345_ip) {
                         case 0:
                             var0 = arg0;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot4;
                             var2 = var3.setOptions;
                             var1 = {};
-                            var4 = function() { // Original name: headerRight, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot10;
                                 var7 = _closure1_slot0;
                                 var8 = _closure1_slot2;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23.style = var22;
                 var22 = 'button';
                 var23.accessibilityRole = var22;
-                var25 = function() { // Original name: onPress, environment: var14
+                var25 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 18;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.nameInput;
                 var23.style = var27;
                 var23.value = var18;
-                var27 = function(arg0) { // Original name: onChangeText, environment: var14
+                var27 = function arg0() {
                     _fun109348: for (var _fun109348_ip = 0;;) switch (_fun109348_ip) {
                         case 0:
                             var3 = arg0;
@@ -750,7 +750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot4;
                             var2 = var3.setOptions;
                             var1 = {};
-                            var4 = function() { // Original name: headerRight, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot10;
                                 var7 = _closure1_slot0;
                                 var8 = _closure1_slot2;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17.PressableOpacity;
                 var17 = {};
                 var17.accessibilityRole = var22;
-                var22 = function() { // Original name: onPress, environment: var14
+                var22 = function() {
                     var3 = _closure2_slot6;
                     var0 = undefined;
                     var2 = null;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var20;
             case 1419:
                 var16.value = var18;
-                var18 = function() { // Original name: onValueChange, environment: var14
+                var18 = function() {
                     _fun109351: for (var _fun109351_ip = 0;;) switch (_fun109351_ip) {
                         case 0:
                             var1 = _closure2_slot9;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot4;
                             var1 = var2.setOptions;
                             var0 = {};
-                            var3 = function() { // Original name: headerRight, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot10;
                                 var7 = _closure1_slot0;
                                 var8 = _closure1_slot2;
@@ -1004,7 +1004,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.huYSMr;
                 var15 = var16.bind(var17)(var15);
                 var12.label = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 25;
@@ -1055,7 +1055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.p89ACt;
                     var4 = var5.bind(var6)(var4);
                     var1.confirmText = var4;
-                    var4 = function() { // Original name: onConfirm, environment: var4
+                    var4 = function() {
                         _fun109354: for (var _fun109354_ip = 0;;) switch (_fun109354_ip) {
                             case 0:
                                 var1 = _closure2_slot3;

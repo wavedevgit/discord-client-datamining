@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_ItemLayoutTsx2(){const{animationStyle,x,size,index}=this.__closure;return animationStyle(x.value/size,index);}';
     var3.code = var4;
     var _closure1_slot5 = var3;
-    var1 = function(arg0) { // Original name: ItemLayout, environment: var1
+    var1 = function arg0() {
         _fun74973: for (var _fun74973_ip = 0;;) switch (_fun74973_ip) {
             case 0:
                 var0 = arg0;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var10[var0];
                 var17 = var12.bind(var3)(var6);
                 var13 = var17.useDerivedValue;
-                var8 = function() { // Original name: pnpm_ItemLayoutTsx1, environment: var2
+                var8 = function() {
                     var1 = _closure2_slot3;
                     var1 = var1.value;
                     var0 = _closure2_slot2;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var10[var0];
                 var13 = var12.bind(var3)(var8);
                 var12 = var13.useAnimatedStyle;
-                var8 = function() { // Original name: pnpm_ItemLayoutTsx2, environment: var2
+                var8 = function() {
                     var3 = _closure2_slot1;
                     var1 = _closure2_slot3;
                     var2 = var1.value;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var11;
-    var0 = function() { // Original name: getMonths, environment: var1
+    var0 = function() {
         var0 = global;
         var2 = var0.Set;
         var3 = _closure1_slot1;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: getWeekdays, environment: var1
+    var0 = function() {
         var0 = global;
         var2 = var0.Set;
         var3 = _closure1_slot1;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: getYears, environment: var1
+    var0 = function() {
         var0 = global;
         var1 = var0.Date;
         var2 = var1.prototype;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1) { // Original name: makeDateRange, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var0 = new Array(2);
         var0[0] = var2;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: makeDate, environment: var1
+    var0 = function arg0() {
         _fun71666: for (var _fun71666_ip = 0;;) switch (_fun71666_ip) {
             case 0:
                 var3 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: parseDate, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var3 = _closure1_slot29;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: getShortcuts, environment: var1
+    var0 = function() {
         var0 = {};
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: buildKey, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: buildFilterRegex, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var3 = var0.RegExp;
         var2 = _closure1_slot33;
@@ -303,14 +303,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var7 = function(arg0) { // Original name: isValidUserAutocomplete, environment: var1
+    var7 = function arg0() {
         _fun71676: for (var _fun71676_ip = 0;;) switch (_fun71676_ip) {
             case 0:
                 var4 = arg0;
                 var1 = var4.getMatch;
                 var0 = 1;
                 var2 = var1.bind(var4)(var0);
-                var5 = function(arg0) { // Original name: extractId, environment: var0
+                var5 = function arg0() {
                     _fun71677: for (var _fun71677_ip = 0;;) switch (_fun71677_ip) {
                         case 0:
                             var2 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var7;
-    var0 = function(arg0, arg1) { // Original name: dateValidator, environment: var1
+    var0 = function arg0, arg1() {
         _fun71678: for (var _fun71678_ip = 0;;) switch (_fun71678_ip) {
             case 0:
                 var4 = arg0;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var6 = function(arg0, arg1) { // Original name: isValidChannelAutocomplete, environment: var1
+    var6 = function arg0, arg1() {
         _fun71679: for (var _fun71679_ip = 0;;) switch (_fun71679_ip) {
             case 0:
                 var4 = arg0;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun71679
                 }
             case 208:
-                var7 = function(arg0, arg1) { // Original name: isValidPrivateChannelAutocomplete, environment: var2
+                var7 = function arg0, arg1() {
                     _fun71685: for (var _fun71685_ip = 0;;) switch (_fun71685_ip) {
                         case 0:
                             var4 = arg0;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun71679;
             case 223:
                 var3 = var3.guildId;
-                var2 = function(arg0, arg1, arg2) { // Original name: isValidGuildChannelAutocomplete, environment: var2
+                var2 = function arg0, arg1, arg2() {
                     _fun71681: for (var _fun71681_ip = 0;;) switch (_fun71681_ip) {
                         case 0:
                             var4 = arg0;
@@ -916,7 +916,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var6;
-    var0 = function(arg0) { // Original name: hasValidator, environment: var1
+    var0 = function arg0() {
         _fun71688: for (var _fun71688_ip = 0;;) switch (_fun71688_ip) {
             case 0:
                 var4 = arg0;
@@ -1052,7 +1052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0) { // Original name: authorTypeValidator, environment: var1
+    var0 = function arg0() {
         _fun71689: for (var _fun71689_ip = 0;;) switch (_fun71689_ip) {
             case 0:
                 var4 = arg0;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var0;
-    var0 = function() { // Original name: generateDateAutocompletions, environment: var1
+    var0 = function() {
         var3 = global;
         var4 = var3.Array;
         var2 = var4.from;
@@ -1158,7 +1158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getDateAutocompletions, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var1 = arg2;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot42;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot41 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: genericSearch, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var2 = arg0;
         var1 = var2.toLocaleLowerCase;
         var1 = var1.bind(var2)();
@@ -1238,7 +1238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot42 = var0;
-    var5 = function(arg0) { // Original name: getUserAutocompletions, environment: var1
+    var5 = function arg0() {
         _fun71696: for (var _fun71696_ip = 0;;) switch (_fun71696_ip) {
             case 0:
                 var1 = arg0;
@@ -1331,7 +1331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 268:
                 var8 = new Array(0);
             case 272:
-                var7 = function(arg0) { // Original name: getPrivateChannelRecipients, environment: var0
+                var7 = function arg0() {
                     _fun71700: for (var _fun71700_ip = 0;;) switch (_fun71700_ip) {
                         case 0:
                             var4 = arg0;
@@ -1384,7 +1384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var0 = var2.bind(var4)(var0);
-                            var0 = function(arg0) { // Original name: maybeAddUser, environment: var1
+                            var0 = function arg0() {
                                 _fun71703: for (var _fun71703_ip = 0;;) switch (_fun71703_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -1736,7 +1736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new var21[var6](var20);
                 var6 = var6 instanceof Object ? var6 : var7;
                 _closure2_slot1 = var6;
-                var6 = function(arg0) { // Original name: maybeAddUser, environment: var0
+                var6 = function arg0() {
                     _fun71697: for (var _fun71697_ip = 0;;) switch (_fun71697_ip) {
                         case 0:
                             var0 = arg0;
@@ -1833,14 +1833,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot43 = var5;
-    var0 = function() { // Original name: streamerModeValidator, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var0 = var0.hidePersonalInformation;
         var0 = !var0;
         return var0;
     };
     var _closure1_slot44 = var0;
-    var0 = function(arg0) { // Original name: getChannelAutocompletions, environment: var1
+    var0 = function arg0() {
         _fun71709: for (var _fun71709_ip = 0;;) switch (_fun71709_ip) {
             case 0:
                 var0 = arg0;
@@ -1939,7 +1939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun71709
                 }
             case 290:
-                var6 = function(arg0, arg1, arg2) { // Original name: getPrivateChannelAutocompletions, environment: var1
+                var6 = function arg0, arg1, arg2() {
                     var0 = arg0;
                     var3 = arg1;
                     var5 = _closure1_slot1;
@@ -2065,7 +2065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun71709;
             case 314:
                 var2 = var2.guildId;
-                var1 = function(arg0, arg1, arg2) { // Original name: getGuildChannelAutocompletions, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun71712: for (var _fun71712_ip = 0;;) switch (_fun71712_ip) {
                         case 0:
                             var4 = arg0;
@@ -2258,7 +2258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot45 = var0;
-    var0 = function(arg0) { // Original name: makeSearchTokenConfigs, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var15 = _closure1_slot0;
@@ -2552,7 +2552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.CqCvir;
         var4 = var7.bind(var8)(var4);
         var1.plainText = var4;
-        var4 = function(arg0) { // Original name: getAutocompletions, environment: var5
+        var4 = function arg0() {
             var0 = arg0;
             var4 = var0.query;
             var3 = var0.maxResults;
@@ -2766,7 +2766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18["qZ+7BA"];
         var18 = var19.bind(var20)(var18);
         var1.plainText = var18;
-        var18 = function(arg0) { // Original name: getAutocompletions, environment: var5
+        var18 = function arg0() {
             var0 = arg0;
             var4 = var0.query;
             var3 = var0.maxResults;
@@ -2833,7 +2833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.h2NzSd;
         var18 = var19.bind(var20)(var18);
         var1.plainText = var18;
-        var18 = function(arg0) { // Original name: getAutocompletions, environment: var5
+        var18 = function arg0() {
             var0 = arg0;
             var4 = var0.query;
             var3 = var0.maxResults;
@@ -2884,7 +2884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.KSDx7M;
         var18 = var19.bind(var20)(var18);
         var1.plainText = var18;
-        var18 = function(arg0) { // Original name: getAutocompletions, environment: var5
+        var18 = function arg0() {
             var0 = arg0;
             var4 = var0.query;
             var3 = var0.maxResults;
@@ -2911,7 +2911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.ANSWER;
         var1.componentType = var18;
         var1.mutable = var10;
-        var18 = function(arg0) { // Original name: validator, environment: var5
+        var18 = function arg0() {
             var3 = _closure1_slot36;
             var2 = undefined;
             var1 = arg0;
@@ -2935,7 +2935,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.ANSWER;
         var1.componentType = var18;
         var1.mutable = var10;
-        var18 = function(arg0) { // Original name: validator, environment: var5
+        var18 = function arg0() {
             var3 = _closure1_slot36;
             var2 = undefined;
             var1 = arg0;
@@ -2959,7 +2959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.ANSWER;
         var1.componentType = var18;
         var1.mutable = var10;
-        var18 = function(arg0) { // Original name: validator, environment: var5
+        var18 = function arg0() {
             var3 = _closure1_slot36;
             var2 = undefined;
             var1 = arg0;
@@ -3007,7 +3007,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.WNpFHa;
         var18 = var19.bind(var20)(var18);
         var1.plainText = var18;
-        var18 = function() { // Original name: validator, environment: var5
+        var18 = function() {
             _fun71729: for (var _fun71729_ip = 0;;) switch (_fun71729_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -3061,7 +3061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = _closure1_slot24;
         var10 = var10.ANSWER;
         var1.componentType = var10;
-        var10 = function(arg0) { // Original name: validator, environment: var5
+        var10 = function arg0() {
             _fun71730: for (var _fun71730_ip = 0;;) switch (_fun71730_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -3135,7 +3135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10["0B74eY"];
         var10 = var18.bind(var19)(var10);
         var1.plainText = var10;
-        var10 = function() { // Original name: getAutocompletions, environment: var5
+        var10 = function() {
             var1 = {};
             var0 = 'true';
             var1.text = var0;
@@ -3164,7 +3164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.follows = var10;
         var10 = 'pinned';
         var1.queryKey = var10;
-        var10 = function(arg0) { // Original name: validator, environment: var5
+        var10 = function arg0() {
             _fun71732: for (var _fun71732_ip = 0;;) switch (_fun71732_ip) {
                 case 0:
                     var4 = arg0;
@@ -3242,7 +3242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.us8IQi;
         var6 = var10.bind(var13)(var6);
         var1.plainText = var6;
-        var6 = function(arg0) { // Original name: getAutocompletions, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var4 = var0.query;
             var3 = var0.maxResults;
@@ -3304,7 +3304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot46 = var0;
-    var3 = function(arg0) { // Original name: isSearchFilterTokenType, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot19;
         var1 = var2.test;
         var0 = arg0;
@@ -3428,7 +3428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var8;
     var2.isValidUserAutocomplete = var7;
     var2.isValidChannelAutocomplete = var6;
-    var6 = function() { // Original name: getRandomDateShortcut, environment: var1
+    var6 = function() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var1 = 12;
@@ -3444,7 +3444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getRandomDateShortcut = var6;
     var2.getUserAutocompletions = var5;
     var2.ComponentTypes = var4;
-    var4 = function() { // Original name: buildCrossDMSearchTokensConfig, environment: var1
+    var4 = function() {
         var2 = _closure1_slot46;
         var1 = {};
         var0 = _closure1_slot18;
@@ -3455,7 +3455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.buildCrossDMSearchTokensConfig = var4;
-    var4 = function() { // Original name: rebuildSearchTokenConfigs, environment: var1
+    var4 = function() {
         var0 = global;
         var4 = var0.Object;
         var3 = var4.assign;
@@ -3468,7 +3468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.rebuildSearchTokenConfigs = var4;
     var2.isSearchFilterTokenType = var3;
-    var3 = function(arg0) { // Original name: getSearchTokenFilterAutocompletions, environment: var1
+    var3 = function arg0() {
         _fun71739: for (var _fun71739_ip = 0;;) switch (_fun71739_ip) {
             case 0:
                 var9 = arg0;
@@ -3556,7 +3556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchTokenFilterAutocompletions = var3;
-    var1 = function(arg0) { // Original name: isMeAutcompleteAnswer, environment: var1
+    var1 = function arg0() {
         _fun71740: for (var _fun71740_ip = 0;;) switch (_fun71740_ip) {
             case 0:
                 var1 = arg0;

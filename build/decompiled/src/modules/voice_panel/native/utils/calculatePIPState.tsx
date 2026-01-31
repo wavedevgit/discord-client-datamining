@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/utils/calculatePIPState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: calculatePIPState, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun110761: for (var _fun110761_ip = 0;;) switch (_fun110761_ip) {
             case 0:
                 var5 = arg0;

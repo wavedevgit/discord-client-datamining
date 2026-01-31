@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = {};
     var3 = 'ShotInfo';
     var2.name = var3;
-    var3 = function(arg0) { // Original name: description, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };

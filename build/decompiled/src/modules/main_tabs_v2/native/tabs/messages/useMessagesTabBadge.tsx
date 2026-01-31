@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/messages/useMessagesTabBadge.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useMessagesTabBadge, environment: var1
+    var1 = function() {
         var0 = {};
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;

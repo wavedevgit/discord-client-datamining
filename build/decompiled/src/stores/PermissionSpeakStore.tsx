@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun96003: for (var _fun96003_ip = 0;;) switch (_fun96003_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PermissionSpeakStore, environment: var5
+        var3 = function() {
             _fun96007: for (var _fun96007_ip = 0;;) switch (_fun96007_ip) {
                 case 0:
                     var3 = this;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun96008: for (var _fun96008_ip = 0;;) switch (_fun96008_ip) {
                 case 0:
                     var4 = this;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isAFKChannel';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun96009: for (var _fun96009_ip = 0;;) switch (_fun96009_ip) {
                 case 0:
                     var3 = _closure1_slot7;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldShowWarning';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun96010: for (var _fun96010_ip = 0;;) switch (_fun96010_ip) {
                 case 0:
                     var3 = _closure1_slot7;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.sessionId;
         var _closure1_slot9 = var0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function() { // Original name: handleConnectionClosed, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot9 = var0;
         var _closure1_slot10 = var0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_CLOSED = var8;
-    var8 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.voiceStates;
         var2 = var3.reduce;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.VOICE_STATE_UPDATES = var8;
-    var3 = function(arg0) { // Original name: handleClearWarning, environment: var3
+    var3 = function arg0() {
         _fun96015: for (var _fun96015_ip = 0;;) switch (_fun96015_ip) {
             case 0:
                 var0 = arg0;

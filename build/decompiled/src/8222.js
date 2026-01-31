@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun66662: for (var _fun66662_ip = 0;;) switch (_fun66662_ip) {
         case 0:
             var2 = exports;
-            var0 = function(arg0) { // Original name: getLens, environment: var1
+            var0 = function arg0() {
                 _fun66663: for (var _fun66663_ip = 0;;) switch (_fun66663_ip) {
                     case 0:
                         var5 = arg0;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot3 = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: encodeChunk, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun66664: for (var _fun66664_ip = 0;;) switch (_fun66664_ip) {
                     case 0:
                         var16 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot4 = var0;
-            var0 = function(arg0) { // Original name: byteLength, environment: var1
+            var0 = function arg0() {
                 var2 = _closure1_slot3;
                 var1 = undefined;
                 var0 = arg0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.byteLength = var0;
-            var0 = function(arg0) { // Original name: toByteArray, environment: var1
+            var0 = function arg0() {
                 _fun66666: for (var _fun66666_ip = 0;;) switch (_fun66666_ip) {
                     case 0:
                         var10 = arg0;
@@ -304,7 +304,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.toByteArray = var0;
-            var0 = function(arg0) { // Original name: fromByteArray, environment: var1
+            var0 = function arg0() {
                 _fun66667: for (var _fun66667_ip = 0;;) switch (_fun66667_ip) {
                     case 0:
                         var3 = arg0;

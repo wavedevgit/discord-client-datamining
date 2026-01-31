@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EditGuildProfileBanner, environment: var1
+    var0 = function arg0() {
         _fun80704: for (var _fun80704_ip = 0;;) switch (_fun80704_ip) {
             case 0:
                 var0 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11 != var12;
             case 235:
                 var4.showEditButton = var10;
-                var9 = function() { // Original name: onPressEdit, environment: var9
+                var9 = function() {
                     _fun80705: for (var _fun80705_ip = 0;;) switch (_fun80705_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/GuildProfileEditForm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildProfileEditForm, environment: var1
+    var1 = function arg0() {
         _fun80706: for (var _fun80706_ip = 0;;) switch (_fun80706_ip) {
             case 0:
                 var0 = arg0;
@@ -1032,7 +1032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 2286:
                 var37.value = var58;
                 var37.onFocus = var46;
-                var58 = function(arg0) { // Original name: onChange, environment: var14
+                var58 = function arg0() {
                     _fun80709: for (var _fun80709_ip = 0;;) switch (_fun80709_ip) {
                         case 0:
                             var0 = arg0;
@@ -1171,7 +1171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 2575:
                 var31.value = var52;
                 var31.onFocus = var46;
-                var52 = function(arg0) { // Original name: onChange, environment: var14
+                var52 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 34;
@@ -1234,7 +1234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 2769:
                 var32.value = var47;
                 var32.onFocus = var46;
-                var46 = function(arg0) { // Original name: onChange, environment: var14
+                var46 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 34;
@@ -1269,7 +1269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var31.user = var36;
                 var43 = var34.id;
                 var31.guildId = var43;
-                var43 = function(arg0) { // Original name: onProfileThemeColorsChanged, environment: var14
+                var43 = function arg0() {
                     _fun80712: for (var _fun80712_ip = 0;;) switch (_fun80712_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -1386,7 +1386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.pj0XBN;
                 var15 = var17.bind(var18)(var15);
                 var10.ctaText = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 51;

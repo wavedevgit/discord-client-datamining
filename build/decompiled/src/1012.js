@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = 'info';
     var1.DEFAULT_BREADCRUMB_LEVEL = var2;
-    var0 = function(arg0) { // Original name: breadcrumbFromObject, environment: var0
+    var0 = function arg0() {
         _fun10349: for (var _fun10349_ip = 0;;) switch (_fun10349_ip) {
             case 0:
                 var1 = arg0;

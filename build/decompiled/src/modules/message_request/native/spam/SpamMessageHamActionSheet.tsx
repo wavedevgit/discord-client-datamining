@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/native/spam/SpamMessageHamActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SpamMessageRequestHamActionSheet, environment: var1
+    var1 = function arg0() {
         _fun90594: for (var _fun90594_ip = 0;;) switch (_fun90594_ip) {
             case 0:
                 var0 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var0 = var0.onCancel;
                 var _closure2_slot2 = var0;
-                var9 = function() { // Original name: handleClose, environment: var16
+                var9 = function() {
                     var1 = _closure2_slot2;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useMessageRequestActions;
                 var0 = {};
                 var0.user = var4;
-                var4 = function() { // Original name: onError, environment: var16
+                var4 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 9;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onError = var4;
-                var4 = function() { // Original name: onAcceptSuccess, environment: var16
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = true;
                 var17.renderIosBackground = var20;
                 var7.switchProps = var17;
-                var17 = function(arg0) { // Original name: onValueChange, environment: var16
+                var17 = function arg0() {
                     var2 = _closure2_slot4;
                     var1 = undefined;
                     var0 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.Colors;
                 var17 = var17.BRAND;
                 var8.color = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot3;
                     var0 = undefined;

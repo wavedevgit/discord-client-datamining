@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function(arg0, arg1) { // Original name: _OverloadYield, environment: var1
+    var1 = function arg0, arg1() {
         var1 = this;
         var0 = arg0;
         var1.v = var0;

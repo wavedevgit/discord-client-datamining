@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: parseErrorStack, environment: var0
+    var0 = function arg0() {
         _fun2631: for (var _fun2631_ip = 0;;) switch (_fun2631_ip) {
             case 0:
                 var4 = arg0;

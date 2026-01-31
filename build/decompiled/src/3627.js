@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = /\w*$/;
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: cloneRegExp, environment: var0
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.constructor;
         var3 = var1.source;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function() { // Original name: _trackINP, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'input': 'press'
     };
     var _closure1_slot6 = var4;
-    var4 = function(arg0) { // Original name: _onInp, environment: var1
+    var4 = function arg0() {
         _fun10936: for (var _fun10936_ip = 0;;) switch (_fun10936_ip) {
             case 0:
                 var1 = arg0;
@@ -310,10 +310,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var4;
     var2._onInp = var4;
     var2._trackINP = var3;
-    var3 = function() { // Original name: registerInpInteractionListener, environment: var1
+    var3 = function() {
         _fun10938: for (var _fun10938_ip = 0;;) switch (_fun10938_ip) {
             case 0:
-                var0 = function(arg0) { // Original name: captureElementFromEvent, environment: var2
+                var0 = function arg0() {
                     _fun10939: for (var _fun10939_ip = 0;;) switch (_fun10939_ip) {
                         case 0:
                             var2 = arg0;
@@ -405,7 +405,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var3 = var4.bind(var5)(var3);
             case 86:
-                var4 = function(arg0) { // Original name: handleEntries, environment: var2
+                var4 = function arg0() {
                     _fun10941: for (var _fun10941_ip = 0;;) switch (_fun10941_ip) {
                         case 0:
                             var0 = arg0;
@@ -572,7 +572,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.registerInpInteractionListener = var3;
-    var1 = function() { // Original name: startTrackingINP, environment: var1
+    var1 = function() {
         _fun10943: for (var _fun10943_ip = 0;;) switch (_fun10943_ip) {
             case 0:
                 var4 = _closure1_slot0;

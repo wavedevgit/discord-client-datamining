@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var12;
             var _closure1_slot1 = var6;
             var _closure1_slot2 = var13;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun6445: for (var _fun6445_ip = 0;;) switch (_fun6445_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: sendRequest, environment: var3
+            var0 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun6448: for (var _fun6448_ip = 0;;) switch (_fun6448_ip) {
                     case 0:
                         var2 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var7 = var9.bind(var2)(var8, var7);
                     case 581:
-                        var7 = function() { // Original name: retry, environment: var1
+                        var7 = function() {
                             _fun6453: for (var _fun6453_ip = 0;;) switch (_fun6453_ip) {
                                 case 0:
                                     var2 = _closure2_slot1;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var5 = var5.bind(var1)(var7, var4);
                                     var5 = false;
                                     var _closure3_slot0 = var5;
-                                    var12 = function(arg0, arg1) { // Original name: interceptRetry, environment: var8
+                                    var12 = function arg0, arg1() {
                                         var6 = {};
                                         var1 = _closure2_slot1;
                                         var11 = var6;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = var12[var5](var11, var10, var9, var8, var7, var6);
                                         return var0;
                                     };
-                                    var11 = function(arg0) { // Original name: interceptCancel, environment: var8
+                                    var11 = function arg0() {
                                         _fun6459: for (var _fun6459_ip = 0;;) switch (_fun6459_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot15 = var0;
-            var0 = function(arg0) { // Original name: rateLimitExpirationHandler, environment: var3
+            var0 = function arg0() {
                 _fun6462: for (var _fun6462_ip = 0;;) switch (_fun6462_ip) {
                     case 0:
                         var2 = arg0;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot16 = var0;
-            var0 = function(arg0, arg1) { // Original name: cleanupRequestEntry, environment: var3
+            var0 = function arg0, arg1() {
                 _fun6463: for (var _fun6463_ip = 0;;) switch (_fun6463_ip) {
                     case 0:
                         var0 = arg0;
@@ -1038,7 +1038,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot17 = var0;
-            var14 = function(arg0, arg1, arg2) { // Original name: makeRequest, environment: var3
+            var14 = function arg0, arg1, arg2() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -1181,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 instanceof Object ? var0 : var1;
                 return var0;
             };
-            var1 = function(arg0) { // Original name: encodeProperties, environment: var3
+            var1 = function arg0() {
                 _fun6467: for (var _fun6467_ip = 0;;) switch (_fun6467_ip) {
                     case 0:
                         var0 = arg0;
@@ -1267,7 +1267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var4.Error;
             var6 = var6.bind(var0)(var5);
             var5 = function(arg0) { // Environment: var3
-                var2 = function(arg0, arg1) { // Original name: HTTPResponseError, environment: var0
+                var2 = function arg0, arg1() {
                     _fun6469: for (var _fun6469_ip = 0;;) switch (_fun6469_ip) {
                         case 0:
                             var0 = arg0;
@@ -1393,7 +1393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun6444
             }
         case 459:
-            var9 = function() { // Original name: noop, environment: var3
+            var9 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var1 = var2.resolve;
@@ -1415,7 +1415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6;
         case 476:
             var _closure1_slot12 = var11;
-            var11 = function() { // Original name: awaitOnline, environment: var3
+            var11 = function() {
                 var0 = global;
                 var1 = var0.Promise;
                 var0 = var1.resolve;
@@ -1460,7 +1460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.patch = var6;
             var2.del = var5;
             var2.HTTP = var4;
-            var4 = function() { // Original name: getAPIBaseURL, environment: var3
+            var4 = function() {
                 _fun6472: for (var _fun6472_ip = 0;;) switch (_fun6472_ip) {
                     case 0:
                         var3 = arguments[0];
@@ -1497,14 +1497,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getAPIBaseURL = var4;
-            var4 = function(arg0) { // Original name: setRequestPatch, environment: var3
+            var4 = function arg0() {
                 var0 = arg0;
                 _closure1_slot12 = var0;
                 var0 = undefined;
                 return var0;
             };
             var2.setRequestPatch = var4;
-            var3 = function(arg0) { // Original name: setAwaitOnline, environment: var3
+            var3 = function arg0() {
                 var0 = arg0;
                 _closure1_slot13 = var0;
                 var0 = undefined;

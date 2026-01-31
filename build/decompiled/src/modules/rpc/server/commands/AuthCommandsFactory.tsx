@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: authorizeWithPrompt, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _authorizeWithPrompt, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun98290
                         }
                     case 383:
-                        var32 = function(arg0) { // Original name: isUserInstallable, environment: var3
+                        var32 = function arg0() {
                             _fun98292: for (var _fun98292_ip = 0;;) switch (_fun98292_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -785,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: authenticate, environment: var3
+    var0 = function arg0, arg1() {
         _fun98293: for (var _fun98293_ip = 0;;) switch (_fun98293_ip) {
             case 0:
                 var2 = arg0;
@@ -1147,7 +1147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/rpc/server/commands/AuthCommandsFactory.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: createAuthCommandHandlers, environment: var3
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -1164,7 +1164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.createRPCCommand;
         var5 = var1.AUTHENTICATE;
         var2 = {};
-        var8 = function(arg0) { // Original name: handler, environment: var3
+        var8 = function arg0() {
             _fun98298: for (var _fun98298_ip = 0;;) switch (_fun98298_ip) {
                 case 0:
                     var0 = arg0;
@@ -1239,7 +1239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.OAuth2Scopes;
                     var13 = var1.IDENTIFY;
                     _closure3_slot3 = var13;
-                    var1 = function() { // Original name: _authorize, environment: var2
+                    var1 = function() {
                         var4 = _closure1_slot17;
                         var3 = {};
                         var1 = _closure3_slot2;
@@ -1529,7 +1529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0[var4] = var2;
         var2 = var1.AUTHORIZE;
         var1 = {};
-        var3 = function(arg0) { // Original name: handler, environment: var3
+        var3 = function arg0() {
             _fun98302: for (var _fun98302_ip = 0;;) switch (_fun98302_ip) {
                 case 0:
                     var2 = arg0;

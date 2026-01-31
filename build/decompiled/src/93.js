@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = new Array(0);
     var _closure1_slot0 = var1;
     var1 = {};
-    var2 = function(arg0) { // Original name: registerAsset, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.push;
         var0 = arg0;
@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.registerAsset = var2;
-    var0 = function(arg0) { // Original name: getAssetByID, environment: var0
+    var0 = function arg0() {
         var1 = _closure1_slot0;
         var2 = arg0;
         var0 = 1;

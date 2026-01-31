@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getGradientThemeFromFlags, environment: var1
+    var1 = function arg0() {
         _fun27240: for (var _fun27240_ip = 0;;) switch (_fun27240_ip) {
             case 0:
                 var4 = arg0;

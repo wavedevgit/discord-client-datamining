@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun45104: for (var _fun45104_ip = 0;;) switch (_fun45104_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var7.jsx;
     var _closure1_slot14 = var7;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: TouchableOpacity, environment: var0
+        var3 = function() {
             _fun45108: for (var _fun45108_ip = 0;;) switch (_fun45108_ip) {
                 case 0:
                     var5 = this;
@@ -340,7 +340,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             _fun45112: for (var _fun45112_ip = 0;;) switch (_fun45112_ip) {
                 case 0:
                     var8 = this;

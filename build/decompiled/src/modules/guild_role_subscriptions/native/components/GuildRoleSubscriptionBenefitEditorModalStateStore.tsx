@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot2;
         var5 = var0;
         var2 = copyDataProperties(var5, var4);
-        var3 = function(arg0) { // Original name: setEmojiId, environment: var1
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = 'setEmojiId';
         var0[var2] = var3;
-        var3 = function(arg0) { // Original name: setEmojiName, environment: var1
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = 'setEmojiName';
         var0[var2] = var3;
-        var3 = function(arg0) { // Original name: setName, environment: var1
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = 'setName';
         var0[var2] = var3;
-        var3 = function(arg0) { // Original name: setDescription, environment: var1
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = 'setDescription';
         var0[var2] = var3;
-        var3 = function(arg0) { // Original name: setRefId, environment: var1
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = 'setRefId';
         var0[var2] = var3;
-        var2 = function() { // Original name: reset, environment: var1
+        var2 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 1;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: resetImperatively, environment: var1
+    var3 = function() {
         var1 = _closure1_slot3;
         var0 = var1.getState;
         var1 = var0.bind(var1)();
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetImperatively = var3;
-    var3 = function(arg0) { // Original name: initializeImperatively, environment: var1
+    var3 = function arg0() {
         _fun116803: for (var _fun116803_ip = 0;;) switch (_fun116803_ip) {
             case 0:
                 var1 = arg0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.initializeImperatively = var3;
-    var3 = function() { // Original name: useDescriptionState, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useDescriptionState = var3;
-    var3 = function() { // Original name: useEmojiIdState, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEmojiIdState = var3;
-    var3 = function() { // Original name: useEmojiNameState, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEmojiNameState = var3;
-    var3 = function() { // Original name: useNameState, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useNameState = var3;
-    var1 = function() { // Original name: useRefIdState, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

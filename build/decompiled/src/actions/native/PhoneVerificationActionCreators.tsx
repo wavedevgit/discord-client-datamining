@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var5.bind(var6)(var2, var1, var4);
     var1 = {};
-    var4 = function() { // Original name: openCountrySelector, environment: var0
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openCountrySelector = var4;
-    var0 = function() { // Original name: setCountrySelectorClosed, environment: var0
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

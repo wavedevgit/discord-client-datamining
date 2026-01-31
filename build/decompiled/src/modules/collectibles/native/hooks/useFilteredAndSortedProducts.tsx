@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.CollectiblesMobileShopScreen;
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: usePriceFilter, environment: var1
+    var3 = function arg0() {
         _fun88086: for (var _fun88086_ip = 0;;) switch (_fun88086_ip) {
             case 0:
                 var2 = _closure1_slot5;

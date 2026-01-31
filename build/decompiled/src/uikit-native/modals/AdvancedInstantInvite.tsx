@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/modals/AdvancedInstantInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AdvancedInstantInvite, environment: var1
+    var1 = function arg0() {
         _fun117135: for (var _fun117135_ip = 0;;) switch (_fun117135_ip) {
             case 0:
                 var1 = arg0;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var22.IS_APPLICATION_BYPASS;
                 var22 = var23.bind(var24)(var25, var22);
                 var17.value = var22;
-                var21 = function(arg0) { // Original name: onValueChange, environment: var21
+                var21 = function arg0() {
                     var2 = _closure2_slot2;
                     var3 = _closure1_slot0;
                     var7 = _closure1_slot2;

@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var16.bind(var3)(var5);
                 var6 = var5.TextInput;
                 var5 = {};
-                var9 = function(arg0) { // Original name: onChange, environment: var9
+                var9 = function arg0() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = arg0;

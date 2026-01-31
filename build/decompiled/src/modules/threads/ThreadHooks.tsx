@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var11;
-    var7 = function(arg0, arg1) { // Original name: useCanStartPublicThread, environment: var1
+    var7 = function arg0, arg1() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot16;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var7;
-    var6 = function(arg0) { // Original name: useCanStartPrivateThread, environment: var1
+    var6 = function arg0() {
         _fun55445: for (var _fun55445_ip = 0;;) switch (_fun55445_ip) {
             case 0:
                 var4 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var6;
-    var0 = function(arg0, arg1, arg2) { // Original name: canStartThread, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun55447: for (var _fun55447_ip = 0;;) switch (_fun55447_ip) {
             case 0:
                 var2 = arg2;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: hasSendPermission, environment: var1
+    var0 = function arg0, arg1() {
         _fun55448: for (var _fun55448_ip = 0;;) switch (_fun55448_ip) {
             case 0:
                 var4 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _canUnarchiveThread, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun55449: for (var _fun55449_ip = 0;;) switch (_fun55449_ip) {
             case 0:
                 var1 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var5 = function(arg0) { // Original name: useIsActiveChannelOrUnarchivableThread, environment: var1
+    var5 = function arg0() {
         _fun55450: for (var _fun55450_ip = 0;;) switch (_fun55450_ip) {
             case 0:
                 var4 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var5;
-    var4 = function(arg0) { // Original name: useIsThreadModerator, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var4;
-    var3 = function(arg0) { // Original name: isThreadModerator, environment: var1
+    var3 = function arg0() {
         _fun55454: for (var _fun55454_ip = 0;;) switch (_fun55454_ip) {
             case 0:
                 var4 = arg0;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.bind(var11)(var9);
     var2.VoiceInThreadsExperiment = var8;
     var2.useCanStartPublicThread = var7;
-    var7 = function(arg0, arg1) { // Original name: computeCanStartPublicThread, environment: var1
+    var7 = function arg0, arg1() {
         _fun55455: for (var _fun55455_ip = 0;;) switch (_fun55455_ip) {
             case 0:
                 var4 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.computeCanStartPublicThread = var7;
     var2.useCanStartPrivateThread = var6;
-    var6 = function(arg0, arg1) { // Original name: computeCanStartPrivateThread, environment: var1
+    var6 = function arg0, arg1() {
         var4 = arg0;
         var3 = _closure1_slot16;
         var2 = _closure1_slot8;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.computeCanStartPrivateThread = var6;
-    var6 = function(arg0) { // Original name: useCanStartThread, environment: var1
+    var6 = function arg0() {
         _fun55457: for (var _fun55457_ip = 0;;) switch (_fun55457_ip) {
             case 0:
                 var3 = arg0;
@@ -558,7 +558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanStartThread = var6;
-    var6 = function(arg0) { // Original name: useCanViewThreadForMessage, environment: var1
+    var6 = function arg0() {
         _fun55458: for (var _fun55458_ip = 0;;) switch (_fun55458_ip) {
             case 0:
                 var4 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanViewThreadForMessage = var6;
-    var6 = function(arg0) { // Original name: useHasActiveThreads, environment: var1
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -764,7 +764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasActiveThreads = var6;
-    var6 = function(arg0) { // Original name: useCanManageThread, environment: var1
+    var6 = function arg0() {
         _fun55466: for (var _fun55466_ip = 0;;) switch (_fun55466_ip) {
             case 0:
                 var4 = arg0;
@@ -896,7 +896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanManageThread = var6;
-    var6 = function(arg0) { // Original name: useCanUnarchiveThread, environment: var1
+    var6 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanUnarchiveThread = var6;
-    var6 = function(arg0) { // Original name: canUnarchiveThread, environment: var1
+    var6 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot18;
         var5 = _closure1_slot17;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canUnarchiveThread = var6;
     var2.useIsActiveChannelOrUnarchivableThread = var5;
-    var5 = function(arg0) { // Original name: getIsActiveChannelOrUnarchivableThread, environment: var1
+    var5 = function arg0() {
         _fun55473: for (var _fun55473_ip = 0;;) switch (_fun55473_ip) {
             case 0:
                 var6 = arg0;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getIsActiveChannelOrUnarchivableThread = var5;
-    var5 = function(arg0) { // Original name: computeIsReadOnlyThread, environment: var1
+    var5 = function arg0() {
         _fun55474: for (var _fun55474_ip = 0;;) switch (_fun55474_ip) {
             case 0:
                 var2 = arg0;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.computeIsReadOnlyThread = var5;
     var2.useIsThreadModerator = var4;
     var2.isThreadModerator = var3;
-    var3 = function(arg0) { // Original name: useCanRemoveThreadMember, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanRemoveThreadMember = var3;
-    var3 = function(arg0) { // Original name: useCanJoinThreadVoice, environment: var1
+    var3 = function arg0() {
         _fun55477: for (var _fun55477_ip = 0;;) switch (_fun55477_ip) {
             case 0:
                 var6 = arg0;
@@ -1199,7 +1199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanJoinThreadVoice = var3;
-    var3 = function(arg0) { // Original name: useIsNonModInLockedThread, environment: var1
+    var3 = function arg0() {
         _fun55479: for (var _fun55479_ip = 0;;) switch (_fun55479_ip) {
             case 0:
                 var2 = arg0;
@@ -1219,7 +1219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsNonModInLockedThread = var3;
-    var1 = function(arg0) { // Original name: isNonModInLockedThread, environment: var1
+    var1 = function arg0() {
         _fun55480: for (var _fun55480_ip = 0;;) switch (_fun55480_ip) {
             case 0:
                 var2 = arg0;

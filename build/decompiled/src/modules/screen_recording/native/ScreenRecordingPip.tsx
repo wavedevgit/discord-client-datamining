@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ScreenRecordingPip, environment: var1
+    var0 = function arg0() {
         _fun100012: for (var _fun100012_ip = 0;;) switch (_fun100012_ip) {
             case 0:
                 var0 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'loading': true,
                     'text': ''
                 };
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function ScreenRecordingPipTsx5(){const{getClampedPosition,x,y,withSpring,springUnclamped}=this.__closure;const{x:translateX,y:translateY}=getClampedPosition(x.get(),y.get());return{transform:[{translateX:withSpring(translateX,springUnclamped)},{translateY:withSpring(translateY,springUnclamped)}]};}';
     var3.code = var6;
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: DraggableContainer, environment: var1
+    var3 = function arg0() {
         _fun100020: for (var _fun100020_ip = 0;;) switch (_fun100020_ip) {
             case 0:
                 var0 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot9 = var13;
                 var12 = _closure1_slot4;
                 var11 = var12.useCallback;
-                var9 = function(arg0, arg1) { // Original name: C, environment: var2
+                var9 = function arg0, arg1() {
                     var2 = _closure2_slot9;
                     var0 = var2.get;
                     var0 = var0.bind(var2)();
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var11.Pan;
                 var12 = var9.bind(var11)();
                 var11 = var12.onStart;
-                var9 = function() { // Original name: X, environment: var2
+                var9 = function() {
                     var3 = _closure2_slot6;
                     var2 = var3.set;
                     var4 = _closure2_slot0;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.__initData = var13;
                 var12 = var11.bind(var12)(var9);
                 var11 = var12.onUpdate;
-                var9 = function(arg0) { // Original name: v, environment: var2
+                var9 = function arg0() {
                     var0 = arg0;
                     var4 = _closure2_slot10;
                     var3 = _closure2_slot6;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.__initData = var13;
                 var12 = var11.bind(var12)(var9);
                 var11 = var12.onEnd;
-                var9 = function() { // Original name: f, environment: var2
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 7;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10[var4];
                 var12 = var1.bind(var3)(var9);
                 var9 = var12.useAnimatedStyle;
-                var2 = function() { // Original name: R, environment: var2
+                var2 = function() {
                     var2 = _closure2_slot10;
                     var3 = _closure2_slot0;
                     var1 = var3.get;
@@ -793,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/screen_recording/native/ScreenRecordingPip.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ScreenRecordingPipConnected, environment: var1
+    var1 = function() {
         _fun100026: for (var _fun100026_ip = 0;;) switch (_fun100026_ip) {
             case 0:
                 var2 = _closure1_slot6;

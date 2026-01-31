@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_update/native/GameUpdateFeedbackModule.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GameUpdateFeedbackModule, environment: var1
+    var1 = function arg0() {
         _fun118063: for (var _fun118063_ip = 0;;) switch (_fun118063_ip) {
             case 0:
                 var0 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var23.DlcqlU;
                 var23 = var24.bind(var25)(var23);
                 var10.text = var23;
-                var23 = function() { // Original name: onPress, environment: var14
+                var23 = function() {
                     var2 = _closure2_slot2;
                     var0 = undefined;
                     var1 = 'interested';
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.f3Pet9;
                 var15 = var16.bind(var17)(var15);
                 var12.text = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure2_slot2;
                     var0 = undefined;
                     var1 = 'not_interested';

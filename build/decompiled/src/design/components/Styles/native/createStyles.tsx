@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: createCacheKey, environment: var1
+    var0 = function arg0() {
         var3 = 0;
         var2 = copyRestArgs(var3);
         var1 = var2.join;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0) { // Original name: processColorOrThrow, environment: var1
+    var3 = function arg0() {
         _fun14042: for (var _fun14042_ip = 0;;) switch (_fun14042_ip) {
             case 0:
                 var4 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var0 = function(arg0, arg1) { // Original name: parseThemedStyles, environment: var1
+    var0 = function arg0, arg1() {
         _fun14043: for (var _fun14043_ip = 0;;) switch (_fun14043_ip) {
             case 0:
                 var31 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'design/components/Styles/native/createStyles.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: experimental_createToken, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.experimental_createToken = var4;
-    var4 = function(arg0) { // Original name: createStyles, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = global;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             'configurable': true,
                             'enumerable': true
                         };
-                        var2 = function() { // Original name: get, environment: var2
+                        var2 = function() {
                             _fun14049: for (var _fun14049_ip = 0;;) switch (_fun14049_ip) {
                                 case 0:
                                     var4 = _closure1_slot10;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createStyles = var4;
-    var4 = function(arg0) { // Original name: createLegacyClassComponentStyles, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             'configurable': true,
                             'enumerable': true
                         };
-                        var2 = function() { // Original name: get, environment: var2
+                        var2 = function() {
                             var4 = _closure1_slot10;
                             var0 = _closure2_slot0;
                             var5 = _closure4_slot0;
@@ -558,7 +558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createLegacyClassComponentStyles = var4;
-    var4 = function(arg0) { // Original name: useLegacyClassComponentStyles, environment: var1
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 3;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useLegacyClassComponentStyles = var4;
-    var4 = function(arg0) { // Original name: createStyleProperties, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createStyleProperties = var4;
     var2.processColorOrThrow = var3;
-    var3 = function(arg0) { // Original name: createNativeStyleProperties, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createNativeStyleProperties = var3;
-    var1 = function(arg0) { // Original name: createAnimatedThemedStyles, environment: var1
+    var1 = function arg0() {
         _fun14059: for (var _fun14059_ip = 0;;) switch (_fun14059_ip) {
             case 0:
                 var13 = arg0;
@@ -899,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = undefined;
                     var2 = var7.bind(var6)(var1);
                     var1 = var2.useAnimatedStyle;
-                    var0 = function() { // Original name: n, environment: var0
+                    var0 = function() {
                         _fun14061: for (var _fun14061_ip = 0;;) switch (_fun14061_ip) {
                             case 0:
                                 var0 = {};

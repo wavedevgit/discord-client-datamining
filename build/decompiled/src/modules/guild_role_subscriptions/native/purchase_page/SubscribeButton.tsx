@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: emphasisHook, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot12;
         var1 = _closure1_slot0;
         var2 = _closure1_slot3;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: SwitchTiersButton, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = var1.activeSubscription;
         var _closure2_slot0 = var0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.SACegK;
         var9 = var10.bind(var11)(var9);
         var5.text = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot3;
             var0 = 21;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/purchase_page/SubscribeButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SubscribeButton, environment: var1
+    var1 = function arg0() {
         _fun104748: for (var _fun104748_ip = 0;;) switch (_fun104748_ip) {
             case 0:
                 var0 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 157:
                 var1 = var7.id;
             case 162:
-                var3 = function(arg0) { // Original name: useCreateRoleSubscription, environment: var2
+                var3 = function arg0() {
                     _fun104750: for (var _fun104750_ip = 0;;) switch (_fun104750_ip) {
                         case 0:
                             var9 = arg0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun104754;
                         case 32:
                             var2 = _closure2_slot2;
-                            var1 = function(arg0) { // Original name: showCompleteOnboardingDialog, environment: var0
+                            var1 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var2 = _closure1_slot1;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var6 = var6.PYrJGS;
                                 var6 = var9.bind(var10)(var6);
                                 var1.body = var6;
-                                var5 = function() { // Original name: onConfirm, environment: var5
+                                var5 = function() {
                                     var2 = _closure1_slot0;
                                     var1 = _closure1_slot3;
                                     var0 = 17;

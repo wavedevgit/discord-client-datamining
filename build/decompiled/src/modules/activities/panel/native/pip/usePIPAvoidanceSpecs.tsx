@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/panel/native/pip/usePIPAvoidanceSpecs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: usePIPAvoidanceSpecs, environment: var1
+    var1 = function arg0() {
         var12 = arg0;
         var _closure2_slot0 = var12;
         var11 = _closure1_slot0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var10[var2];
         var4 = var11.bind(var9)(var2);
         var3 = var4.useAnimatedReaction;
-        var2 = function() { // Original name: f, environment: var1
+        var2 = function() {
             var0 = {};
             var3 = _closure2_slot2;
             var2 = var3.get;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.__workletHash = var6;
         var6 = _closure1_slot3;
         var2.__initData = var6;
-        var1 = function(arg0, arg1) { // Original name: n, environment: var1
+        var1 = function arg0, arg1() {
             _fun110288: for (var _fun110288_ip = 0;;) switch (_fun110288_ip) {
                 case 0:
                     var2 = arg0;

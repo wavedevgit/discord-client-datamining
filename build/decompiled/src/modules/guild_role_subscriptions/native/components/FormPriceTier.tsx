@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/FormPriceTier.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormPriceTier, environment: var1
+    var1 = function arg0() {
         _fun116914: for (var _fun116914_ip = 0;;) switch (_fun116914_ip) {
             case 0:
                 var0 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 168:
                 var0.label = var8;
                 var0.disabled = var5;
-                var5 = function() { // Original name: onPress, environment: var4
+                var5 = function() {
                     _fun116916: for (var _fun116916_ip = 0;;) switch (_fun116916_ip) {
                         case 0:
                             var4 = _closure1_slot1;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var8 = var9.bind(var10)(var8);
                             var2.items = var8;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 _fun116918: for (var _fun116918_ip = 0;;) switch (_fun116918_ip) {
                                     case 0:
                                         var2 = _closure2_slot2;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7 === var6;
                 var0.disabled = var6;
                 var0.placeholder = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot4;
                     var1 = _closure2_slot0;
                     var0 = undefined;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: PasswordlessUpsell, environment: var3
+    var0 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var16 = var0.bind(var3)();
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var25 = var25.piGf5c;
         var25 = var26.bind(var27)(var25);
         var20.text = var25;
-        var24 = function() { // Original name: onPress, environment: var24
+        var24 = function() {
             var3 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 18;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: AccountTwoFALabel, environment: var3
+    var0 = function() {
         _fun79577: for (var _fun79577_ip = 0;;) switch (_fun79577_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: AccountSecurityPage, environment: var3
+    var0 = function() {
         var4 = _closure1_slot4;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: AccountStandingPage, environment: var3
+    var0 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 28;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6;
             case 390:
                 var0.defaultIndex = var5;
-                var4 = function(arg0) { // Original name: onSetActiveIndex, environment: var4
+                var4 = function arg0() {
                     _fun79587: for (var _fun79587_ip = 0;;) switch (_fun79587_ip) {
                         case 0:
                             var2 = _closure1_slot1;

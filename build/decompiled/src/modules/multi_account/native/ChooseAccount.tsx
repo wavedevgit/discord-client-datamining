@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/multi_account/native/ChooseAccount.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ChooseAccount, environment: var1
+    var1 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var11 = var0.bind(var3)();
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.bind(var1)();
         var9 = var0.multiAccountUsers;
         var _closure2_slot1 = var9;
-        var0 = function(arg0) { // Original name: handlePressUser, environment: var10
+        var0 = function arg0() {
             _fun100239: for (var _fun100239_ip = 0;;) switch (_fun100239_ip) {
                 case 0:
                     var2 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var10.bind(var3)(var1);
             var1 = {};
             var1.user = var0;
-            var6 = function() { // Original name: onPressUser, environment: var7
+            var6 = function() {
                 var2 = _closure2_slot2;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = {};
             var8 = 'button';
             var5.accessibilityRole = var8;
-            var7 = function() { // Original name: onPress, environment: var7
+            var7 = function() {
                 var2 = _closure3_slot0;
                 var1 = function(arg0) { // Environment: var0
                     var0 = arg0;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4["DSN+hw"];
                     var4 = var8.bind(var9)(var4);
                     var5.label = var4;
-                    var4 = function() { // Original name: onPress, environment: var6
+                    var4 = function() {
                         var2 = _closure2_slot2;
                         var1 = _closure5_slot0;
                         var0 = undefined;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.lSLMaU;
                     var7 = var8.bind(var9)(var7);
                     var5.label = var7;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var2 = _closure2_slot3;
                         var1 = _closure5_slot0;
                         var0 = undefined;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.label = var12;
         var11 = var11.addAccountLabel;
         var8.labelStyle = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             _fun100250: for (var _fun100250_ip = 0;;) switch (_fun100250_ip) {
                 case 0:
                     var1 = _closure2_slot1;

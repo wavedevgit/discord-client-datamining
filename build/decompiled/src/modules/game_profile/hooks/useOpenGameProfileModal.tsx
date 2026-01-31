@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_profile/hooks/useOpenGameProfileModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useOpenGameProfileModal, environment: var1
+    var1 = function arg0() {
         _fun78432: for (var _fun78432_ip = 0;;) switch (_fun78432_ip) {
             case 0:
                 var5 = arg0;

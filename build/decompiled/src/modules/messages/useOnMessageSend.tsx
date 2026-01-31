@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/useOnMessageSend.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useOnMessageSend, environment: var1
+    var1 = function arg0() {
         _fun107206: for (var _fun107206_ip = 0;;) switch (_fun107206_ip) {
             case 0:
                 var6 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    var4 = function(arg0) { // Original name: handleMessage, environment: var0
+                    var4 = function arg0() {
                         _fun107208: for (var _fun107208_ip = 0;;) switch (_fun107208_ip) {
                             case 0:
                                 var2 = _closure2_slot1;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot0 = var4;
-                    var9 = function(arg0) { // Original name: handleMessageCreate, environment: var0
+                    var9 = function arg0() {
                         _fun107209: for (var _fun107209_ip = 0;;) switch (_fun107209_ip) {
                             case 0:
                                 var2 = arg0;

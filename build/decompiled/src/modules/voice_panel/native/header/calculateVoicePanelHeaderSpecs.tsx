@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = {};
     var7 = 'function calculateVoicePanelHeaderSpecs_calculateVoicePanelHeaderSpecsTsx1(safeArea){const{EDGE_GUTTER,BASE_VOICE_PANEL_HEADER_HEIGHT}=this.__closure;const paddingTop=Math.max(EDGE_GUTTER,safeArea.top);const paddingLeft=Math.max(EDGE_GUTTER,safeArea.left);const paddingRight=Math.max(EDGE_GUTTER,safeArea.right);const height=BASE_VOICE_PANEL_HEADER_HEIGHT+paddingTop;return{height:height,paddingTop:paddingTop,paddingLeft:paddingLeft,paddingRight:paddingRight};}';
     var4.code = var7;
-    var3 = function(arg0) { // Original name: t, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var2 = global;
         var5 = var2.Math;

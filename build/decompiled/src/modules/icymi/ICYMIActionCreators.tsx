@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: fetchPopularGuildsFromCategories, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchPopularGuildsFromCategories = var6;
-    var6 = function() { // Original name: fetchDehydrated, environment: var3
+    var6 = function() {
         _fun70738: for (var _fun70738_ip = 0;;) switch (_fun70738_ip) {
             case 0:
                 var2 = arguments[0];
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.fetchDehydrated = var6;
-    var6 = function(arg0, arg1) { // Original name: gravityJoinGuild, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.gravityJoinGuild = var6;
-    var6 = function(arg0, arg1) { // Original name: fetchForNotification, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchForNotification = var6;
-    var6 = function(arg0) { // Original name: fetchForStatusNotification, environment: var3
+    var6 = function arg0() {
         _fun70747: for (var _fun70747_ip = 0;;) switch (_fun70747_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.fetchForStatusNotification = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: fetchHydrated, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchHydrated = var6;
-    var6 = function() { // Original name: getGuildChannelScores, environment: var3
+    var6 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -837,7 +837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getGuildChannelScores = var6;
-    var6 = function() { // Original name: getRecommendedGuilds, environment: var3
+    var6 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -929,7 +929,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getRecommendedGuilds = var6;
-    var6 = function() { // Original name: getMediaForCurrentStatus, environment: var3
+    var6 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -1049,7 +1049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getMediaForCurrentStatus = var6;
-    var6 = function() { // Original name: reloadICYMITab, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1064,7 +1064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.reloadICYMITab = var6;
-    var6 = function(arg0) { // Original name: loadHydratedAttempt, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.loadHydratedAttempt = var6;
-    var6 = function() { // Original name: openICYMITab, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openICYMITab = var6;
-    var6 = function() { // Original name: closeICYMITab, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1111,7 +1111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.closeICYMITab = var6;
-    var6 = function(arg0) { // Original name: startItemsDwell, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1128,7 +1128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.startItemsDwell = var6;
-    var6 = function(arg0) { // Original name: triggerItemsLongImpression, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1145,7 +1145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.triggerItemsLongImpression = var6;
-    var6 = function(arg0, arg1) { // Original name: ackGravityItems, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1164,7 +1164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ackGravityItems = var6;
-    var6 = function(arg0) { // Original name: gravityScrollEvent, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1181,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.gravityScrollEvent = var6;
-    var6 = function(arg0) { // Original name: setFilters, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1198,7 +1198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setFilters = var6;
-    var6 = function() { // Original name: giveFeedback, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1213,7 +1213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.giveFeedback = var6;
-    var6 = function() { // Original name: clearReadStates, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1228,7 +1228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearReadStates = var6;
-    var6 = function() { // Original name: addedRecommendedGuild, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1243,7 +1243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addedRecommendedGuild = var6;
-    var6 = function(arg0) { // Original name: setVideosMuted, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1260,7 +1260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setVideosMuted = var6;
-    var6 = function(arg0) { // Original name: setTabFocused, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setTabFocused = var6;
-    var6 = function(arg0, arg1) { // Original name: setCardHeight, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1296,7 +1296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setCardHeight = var6;
-    var6 = function() { // Original name: takeSurvey, environment: var3
+    var6 = function() {
         _fun70775: for (var _fun70775_ip = 0;;) switch (_fun70775_ip) {
             case 0:
                 var4 = arguments[0];
@@ -1326,7 +1326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.takeSurvey = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: itemInteracted, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1347,7 +1347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.itemInteracted = var6;
-    var6 = function(arg0) { // Original name: feedItemActioned, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1365,7 +1365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.feedItemActioned = var6;
-    var6 = function(arg0) { // Original name: feedFilterActioned, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -1383,7 +1383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.feedFilterActioned = var6;
-    var3 = function(arg0) { // Original name: feedPageActioned, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

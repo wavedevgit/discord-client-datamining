@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useMemberListAction, environment: var1
+    var1 = function arg0() {
         _fun105787: for (var _fun105787_ip = 0;;) switch (_fun105787_ip) {
             case 0:
                 var1 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0["Ab/6S0"];
                             var0 = var5.bind(var8)(var0);
                             var3.label = var0;
-                            var0 = function() { // Original name: handlePress, environment: var2
+                            var0 = function() {
                                 _fun105793: for (var _fun105793_ip = 0;;) switch (_fun105793_ip) {
                                     case 0:
                                         var2 = _closure1_slot5;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.z9Mqln;
                             var5 = var7.bind(var8)(var5);
                             var3.label = var5;
-                            var5 = function() { // Original name: handlePress, environment: var2
+                            var5 = function() {
                                 _fun105792: for (var _fun105792_ip = 0;;) switch (_fun105792_ip) {
                                     case 0:
                                         var3 = _closure1_slot5;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4["LR+Ptf"];
                             var4 = var5.bind(var7)(var4);
                             var3.label = var4;
-                            var4 = function() { // Original name: handlePress, environment: var2
+                            var4 = function() {
                                 _fun105791: for (var _fun105791_ip = 0;;) switch (_fun105791_ip) {
                                     case 0:
                                         var4 = _closure1_slot5;
@@ -664,7 +664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var5.bind(var0)(var4, var3);
                             var _closure3_slot0 = var0;
                             var0 = {};
-                            var2 = function() { // Original name: listActionRenderer, environment: var2
+                            var2 = function() {
                                 var0 = _closure3_slot0;
                                 return var0;
                             };

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+    var0 = function() {
         _fun73371: for (var _fun73371_ip = 0;;) switch (_fun73371_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var1.Component;
     var1 = function(arg0) { // Environment: var6
-        var3 = function(arg0) { // Original name: SwipeableFastList, environment: var5
+        var3 = function arg0() {
             _fun73375: for (var _fun73375_ip = 0;;) switch (_fun73375_ip) {
                 case 0:
                     var4 = this;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = undefined;
                                 var1 = var1.bind(var2)(var0);
                                 var0 = {};
-                                var8 = function() { // Original name: renderRightActions, environment: var4
+                                var8 = function() {
                                     var3 = _closure4_slot2;
                                     var2 = _closure4_slot0;
                                     var1 = _closure4_slot1;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.renderRightActions = var8;
-                                var8 = function(arg0) { // Original name: ref, environment: var4
+                                var8 = function arg0() {
                                     _fun73378: for (var _fun73378_ip = 0;;) switch (_fun73378_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.ref = var8;
                                 var8 = 8;
                                 var0.overshootFriction = var8;
-                                var8 = function() { // Original name: onSwipeableWillOpen, environment: var4
+                                var8 = function() {
                                     var2 = _closure3_slot0;
                                     var1 = var2.handleOpen;
                                     var0 = _closure4_slot3;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.onSwipeableWillOpen = var8;
-                                var4 = function() { // Original name: onSwipeableClose, environment: var4
+                                var4 = function() {
                                     var2 = _closure3_slot0;
                                     var1 = var2.handleClose;
                                     var0 = _closure4_slot3;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentWillUnmount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun73382: for (var _fun73382_ip = 0;;) switch (_fun73382_ip) {
                 case 0:
                     var0 = this;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'bounceSwipeable';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun73383: for (var _fun73383_ip = 0;;) switch (_fun73383_ip) {
                 case 0:
                     var2 = this;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'closeOpenRow';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun73386: for (var _fun73386_ip = 0;;) switch (_fun73386_ip) {
                 case 0:
                     var1 = this;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOpen';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var0 = var1.closeOpenRow;
             var0 = var0.bind(var1)();
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleClose';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun73388: for (var _fun73388_ip = 0;;) switch (_fun73388_ip) {
                 case 0:
                     var1 = this;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var4 = this;
             var3 = _closure1_slot7;
             var1 = _closure1_slot0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.bind(var0)(var3);
     var3 = {};
     var3.bounceFirstRowOnMount = var7;
-    var6 = function() { // Original name: renderQuickActions, environment: var6
+    var6 = function() {
         var0 = null;
         return var0;
     };

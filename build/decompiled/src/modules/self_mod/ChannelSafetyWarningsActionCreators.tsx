@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/ChannelSafetyWarningsActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: dismissChannelSafetyWarnings, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var4 = arg1;
         var1 = _closure1_slot1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.dismissChannelSafetyWarnings = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setChannelSafetyWarningFeedback, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setChannelSafetyWarningFeedback = var3;
-    var3 = function(arg0) { // Original name: clearChannelSafetyWarnings, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearChannelSafetyWarnings = var3;
-    var3 = function(arg0) { // Original name: acknowledgeChannelSafetyWarningTooltip, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acknowledgeChannelSafetyWarningTooltip = var3;
-    var3 = function(arg0) { // Original name: reportFalsePositive, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.reportFalsePositive = var3;
-    var1 = function(arg0) { // Original name: markAsStrangerDanger, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;

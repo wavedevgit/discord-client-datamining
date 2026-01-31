@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/UpdateAppScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UpdateAppScreen, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var11.bind(var3)(var7);
         var8 = var7.Button;
         var7 = {};
-        var14 = function() { // Original name: onPress, environment: var14
+        var14 = function() {
             var0 = _closure1_slot3;
             var1 = var0.BundleUpdaterManager;
             var0 = var1.reload;

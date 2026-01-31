@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Sheet/native/BottomSheetHandle.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useBottomSheetImperativeHandle, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = arg0;
         var0 = function() { // Environment: var0
             var0 = {};
-            var2 = function() { // Original name: expandActionSheet, environment: var1
+            var2 = function() {
                 _fun46266: for (var _fun46266_ip = 0;;) switch (_fun46266_ip) {
                     case 0:
                         var0 = _closure2_slot0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.expandActionSheet = var2;
-            var2 = function(arg0) { // Original name: closeActionSheet, environment: var1
+            var2 = function arg0() {
                 _fun46267: for (var _fun46267_ip = 0;;) switch (_fun46267_ip) {
                     case 0:
                         var2 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.closeActionSheet = var2;
-            var2 = function() { // Original name: collapseActionSheet, environment: var1
+            var2 = function() {
                 _fun46268: for (var _fun46268_ip = 0;;) switch (_fun46268_ip) {
                     case 0:
                         var0 = _closure2_slot0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.collapseActionSheet = var2;
-            var1 = function(arg0) { // Original name: snapToIndex, environment: var1
+            var1 = function arg0() {
                 _fun46269: for (var _fun46269_ip = 0;;) switch (_fun46269_ip) {
                     case 0:
                         var0 = _closure2_slot0;

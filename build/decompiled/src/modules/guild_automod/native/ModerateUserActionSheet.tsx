@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.IconComponent = var17;
                 var15 = var14.bind(var4)(var16, var15);
                 var7.icon = var15;
-                var15 = function() { // Original name: onPress, environment: var9
+                var15 = function() {
                     var1 = _closure2_slot3;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot1;
                     var6 = var6.id;
                     var1.guildId = var6;
-                    var6 = function() { // Original name: onClose, environment: var5
+                    var6 = function() {
                         var2 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 16;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onClose = var6;
-                    var5 = function() { // Original name: onRemove, environment: var5
+                    var5 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 16;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.IconComponent = var17;
                 var14 = var16.bind(var4)(var15, var14);
                 var3.icon = var14;
-                var14 = function() { // Original name: onPress, environment: var9
+                var14 = function() {
                     _fun78938: for (var _fun78938_ip = 0;;) switch (_fun78938_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.icon = var10;
                 var10 = 'danger';
                 var3.variant = var10;
-                var10 = function() { // Original name: onPress, environment: var9
+                var10 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 24;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var3 = var3.id;
                     var1.userId = var3;
-                    var3 = function() { // Original name: cancelButtonCallback, environment: var3
+                    var3 = function() {
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
                         var0 = 19;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.icon = var7;
                 var7 = 'danger';
                 var1.variant = var7;
-                var7 = function() { // Original name: onPress, environment: var9
+                var7 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 26;
@@ -672,7 +672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var3 = var3.id;
                     var1.userId = var3;
-                    var3 = function() { // Original name: cancelButtonCallback, environment: var3
+                    var3 = function() {
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
                         var0 = 19;

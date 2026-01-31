@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun55605: for (var _fun55605_ip = 0;;) switch (_fun55605_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var3];
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: AppliedGuildBoostRecord, environment: var1
+        var4 = function arg0() {
             _fun55609: for (var _fun55609_ip = 0;;) switch (_fun55609_ip) {
                 case 0:
                     var2 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'createFromServer';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun55610: for (var _fun55610_ip = 0;;) switch (_fun55610_ip) {
                 case 0:
                     var3 = arg0;

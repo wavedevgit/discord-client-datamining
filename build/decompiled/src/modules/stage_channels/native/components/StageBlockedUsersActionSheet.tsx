@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: StageBlockedUsersActionSheetHeader, environment: var1
+    var0 = function arg0() {
         _fun52976: for (var _fun52976_ip = 0;;) switch (_fun52976_ip) {
             case 0:
                 var0 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.ignored = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: RestrictedUser, environment: var1
+    var3 = function arg0() {
         _fun52977: for (var _fun52977_ip = 0;;) switch (_fun52977_ip) {
             case 0:
                 var0 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/StageBlockedUsersActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageBlockedUsersActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.channel;
         var _closure2_slot0 = var1;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 1;
         var0 = var4[var0];
         var _closure2_slot2 = var0;
-        var22 = function() { // Original name: handleDismiss, environment: var8
+        var22 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 16;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var21 = var21.mbD50D;
         var21 = var24.bind(var25)(var21);
         var16.text = var21;
-        var21 = function() { // Original name: onPress, environment: var8
+        var21 = function() {
             var3 = _closure2_slot1;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = new Array(1);
         var10[0] = var11;
         var4.sections = var10;
-        var10 = function(arg0, arg1) { // Original name: renderItem, environment: var8
+        var10 = function arg0, arg1() {
             var3 = _closure1_slot9;
             var2 = _closure1_slot12;
             var1 = {};
@@ -878,7 +878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.renderItem = var10;
-        var8 = function() { // Original name: itemSize, environment: var8
+        var8 = function() {
             var0 = 48;
             return var0;
         };

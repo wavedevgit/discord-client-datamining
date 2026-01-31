@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.getNitroButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: sharedClientThemeToThemeSettings, environment: var1
+    var3 = function arg0() {
         _fun88769: for (var _fun88769_ip = 0;;) switch (_fun88769_ip) {
             case 0:
                 var1 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: PrimaryActionButton, environment: var1
+    var3 = function arg0() {
         _fun88771: for (var _fun88771_ip = 0;;) switch (_fun88771_ip) {
             case 0:
                 var0 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.pj0XBN;
                 var7 = var8.bind(var9)(var7);
                 var1.text = var7;
-                var7 = function() { // Original name: onPress, environment: var6
+                var7 = function() {
                     var4 = _closure1_slot1;
                     var5 = _closure1_slot2;
                     var0 = 21;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onPress = var7;
-                var6 = function() { // Original name: renderIcon, environment: var6
+                var6 = function() {
                     var3 = _closure1_slot12;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: getBaseThemeFromSharedClientTheme, environment: var1
+    var3 = function arg0() {
         _fun88775: for (var _fun88775_ip = 0;;) switch (_fun88775_ip) {
             case 0:
                 var0 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/client_themes/native/chat/SharedCustomThemeActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.message;
         var9 = var0.sharedClientTheme;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.style = var8;
         var8 = _closure1_slot16;
         var7 = {};
-        var9 = function() { // Original name: onPressApply, environment: var11
+        var9 = function() {
             _fun88782: for (var _fun88782_ip = 0;;) switch (_fun88782_ip) {
                 case 0:
                     var2 = _closure2_slot2;
@@ -611,7 +611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12["13/7kX"];
         var12 = var13.bind(var14)(var12);
         var8.text = var12;
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             _fun88783: for (var _fun88783_ip = 0;;) switch (_fun88783_ip) {
                 case 0:
                     var1 = _closure2_slot1;

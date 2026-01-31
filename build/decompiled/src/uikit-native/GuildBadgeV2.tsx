@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/GuildBadgeV2.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: GuildBadgeV2, environment: var1
+    var3 = function arg0() {
         _fun59722: for (var _fun59722_ip = 0;;) switch (_fun59722_ip) {
             case 0:
                 var3 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: hasGuildBadge, environment: var1
+    var1 = function arg0, arg1() {
         _fun59723: for (var _fun59723_ip = 0;;) switch (_fun59723_ip) {
             case 0:
                 var3 = _closure1_slot0;

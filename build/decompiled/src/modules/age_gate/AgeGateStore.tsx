@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun100229: for (var _fun100229_ip = 0;;) switch (_fun100229_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: AgeGateStore, environment: var0
+        var3 = function() {
             _fun100233: for (var _fun100233_ip = 0;;) switch (_fun100233_ip) {
                 case 0:
                     var3 = this;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'isUnderageAnonymous';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleMarkUnderageAnonymous, environment: var3
+    var8 = function() {
         var0 = true;
         _closure1_slot5 = var0;
         var0 = global;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION = var8;
-    var3 = function() { // Original name: handleLogin, environment: var3
+    var3 = function() {
         var0 = false;
         _closure1_slot5 = var0;
         var0 = undefined;

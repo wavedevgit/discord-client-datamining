@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var5.bind(var6)(var2, var1, var4);
     var1 = {};
-    var4 = function(arg0) { // Original name: popFirstFile, environment: var0
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.popFirstFile = var4;
-    var4 = function(arg0) { // Original name: addFiles, environment: var0
+    var4 = function arg0() {
         var0 = arg0;
         var5 = var0.files;
         var6 = var0.channelId;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addFiles = var4;
-    var4 = function(arg0) { // Original name: addFile, environment: var0
+    var4 = function arg0() {
         var0 = arg0;
         var7 = var0.file;
         var6 = var0.channelId;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addFile = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: remove, environment: var0
+    var4 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.remove = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: removeFiles, environment: var0
+    var4 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeFiles = var4;
-    var4 = function(arg0, arg1) { // Original name: clearAll, environment: var0
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearAll = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: update, environment: var0
+    var4 = function arg0, arg1, arg2, arg3() {
         var0 = arg3;
         var6 = var0.description;
         var7 = var0.filename;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.update = var4;
-    var4 = function(arg0) { // Original name: setUploads, environment: var0
+    var4 = function arg0() {
         _fun61342: for (var _fun61342_ip = 0;;) switch (_fun61342_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setUploads = var4;
-    var0 = function(arg0) { // Original name: setFile, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.file;
         var8 = var0.channelId;

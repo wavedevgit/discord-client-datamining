@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var9 = function(arg0) { // Original name: createSoundRowPadding, environment: var0
+    var9 = function arg0() {
         var1 = arg0;
         var0 = 1;
         var2 = var1 - var0;

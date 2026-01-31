@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0, arg1) { // Original name: Entry, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'actions';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.definition;
             var0 = var0.actions;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'load';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun93018: for (var _fun93018_ip = 0;;) switch (_fun93018_ip) {
                 case 0:
                     var1 = this;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'reset';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun93019: for (var _fun93019_ip = 0;;) switch (_fun93019_ip) {
                 case 0:
                     var0 = this;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'execute';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun93020: for (var _fun93020_ip = 0;;) switch (_fun93020_ip) {
                 case 0:
                     var4 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'validateInDev';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = undefined;
             return var0;
         };

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: buildBaseEmbedProps, environment: var1
+    var0 = function arg0() {
         _fun92387: for (var _fun92387_ip = 0;;) switch (_fun92387_ip) {
             case 0:
                 var1 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: buildSupportedOnMobileEmbedBodyText, environment: var1
+    var0 = function arg0() {
         _fun92388: for (var _fun92388_ip = 0;;) switch (_fun92388_ip) {
             case 0:
                 var0 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.QuestContent;
                 var6 = var6.QUEST_EMBED_MOBILE;
                 var0.sourceQuestContent = var6;
-                var6 = function() { // Original name: connectedConsoleLinkOnClick, environment: var6
+                var6 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: buildQuestsEmbedProps, environment: var1
+    var0 = function arg0() {
         _fun92390: for (var _fun92390_ip = 0;;) switch (_fun92390_ip) {
             case 0:
                 var1 = arg0;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestEmbed.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createQuestsEmbed, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.questId;
         var4 = var1.theme;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun92720: for (var _fun92720_ip = 0;;) switch (_fun92720_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getUserKey, environment: var3
+    var0 = function arg0() {
         _fun92723: for (var _fun92723_ip = 0;;) switch (_fun92723_ip) {
             case 0:
                 var2 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: handleUserSettingsStoreUpdate, environment: var3
+    var0 = function() {
         _fun92724: for (var _fun92724_ip = 0;;) switch (_fun92724_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SocialLayerStorefrontStore, environment: var5
+        var3 = function() {
             _fun92726: for (var _fun92726_ip = 0;;) switch (_fun92726_ip) {
                 case 0:
                     var3 = this;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot7;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStorefrontData';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot9;
             var0 = arg0;
             var0 = var1[var0];
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStorefrontState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot8;
             var0 = arg0;
             var0 = var1[var0];
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'recommendationsByApplicationsAndUsers';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun92730: for (var _fun92730_ip = 0;;) switch (_fun92730_ip) {
                 case 0:
                     var4 = arg1;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAnnouncement';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot11;
             var0 = arg0;
             var0 = var1[var0];
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSKUEligibility';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var0 = var1[var0];
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNormalizedSKUEligibility';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var1 = var1[var0];
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: handleLogout, environment: var3
+    var7 = function() {
         var0 = {};
         _closure1_slot10 = var0;
         var0 = {};
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function() { // Original name: handlePostConnectionOpen, environment: var3
+    var7 = function() {
         var0 = {};
         _closure1_slot12 = var0;
         var0 = {};
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.POST_CONNECTION_OPEN = var7;
-    var7 = function(arg0) { // Original name: handleEntitlementCreate, environment: var3
+    var7 = function arg0() {
         _fun92736: for (var _fun92736_ip = 0;;) switch (_fun92736_ip) {
             case 0:
                 var0 = arg0;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.ENTITLEMENT_CREATE = var7;
-    var7 = function(arg0) { // Original name: handleInteractionFailure, environment: var3
+    var7 = function arg0() {
         _fun92737: for (var _fun92737_ip = 0;;) switch (_fun92737_ip) {
             case 0:
                 var0 = arg0;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.INTERACTION_FAILURE = var7;
-    var7 = function(arg0) { // Original name: handleInteractionSuccess, environment: var3
+    var7 = function arg0() {
         _fun92738: for (var _fun92738_ip = 0;;) switch (_fun92738_ip) {
             case 0:
                 var0 = arg0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.INTERACTION_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontLoad, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var0 = _closure1_slot9;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SOCIAL_LAYER_STOREFRONT_LOAD = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontLoadSuccess, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var4 = var0.storefront;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontPartialLoadSuccess, environment: var3
+    var7 = function arg0() {
         _fun92741: for (var _fun92741_ip = 0;;) switch (_fun92741_ip) {
             case 0:
                 var0 = arg0;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontLoadFailure, environment: var3
+    var7 = function arg0() {
         _fun92742: for (var _fun92742_ip = 0;;) switch (_fun92742_ip) {
             case 0:
                 var0 = arg0;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE = var7;
-    var7 = function(arg0) { // Original name: handleSetSocialLayerStorefrontState, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var5 = var0.pageIndex;
@@ -677,7 +677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SET_SOCIAL_LAYER_STOREFRONT_STATE = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontRecommendationsFetchSuccess, environment: var3
+    var7 = function arg0() {
         _fun92744: for (var _fun92744_ip = 0;;) switch (_fun92744_ip) {
             case 0:
                 var1 = arg0;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontRecommendationsFetchFailure, environment: var3
+    var7 = function arg0() {
         _fun92745: for (var _fun92745_ip = 0;;) switch (_fun92745_ip) {
             case 0:
                 var0 = arg0;
@@ -789,7 +789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontRecommendationsFetchStart, environment: var3
+    var7 = function arg0() {
         _fun92746: for (var _fun92746_ip = 0;;) switch (_fun92746_ip) {
             case 0:
                 var0 = arg0;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontAnnouncementFetchSuccess, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = var0.announcement;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleSKUPurchaseEligibilityCheckStart, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.skuId;
         var1 = {};
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_START = var7;
-    var7 = function(arg0) { // Original name: handleSKUPurchaseEligibilityCheckCreate, environment: var3
+    var7 = function arg0() {
         _fun92749: for (var _fun92749_ip = 0;;) switch (_fun92749_ip) {
             case 0:
                 var0 = arg0;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_CREATE = var7;
-    var7 = function(arg0) { // Original name: handleSKUPurchaseEligibilityCheckFailure, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.skuId;
         var1 = {};
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_FAILURE = var7;
-    var3 = function(arg0) { // Original name: handleSKUPurchaseEligibilityResponse, environment: var3
+    var3 = function arg0() {
         _fun92751: for (var _fun92751_ip = 0;;) switch (_fun92751_ip) {
             case 0:
                 var0 = arg0;

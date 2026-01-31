@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun10341: for (var _fun10341_ip = 0;;) switch (_fun10341_ip) {
         case 0:
             var1 = exports;
-            var2 = function(arg0, arg1, arg2) { // Original name: encodeChunk, environment: var0
+            var2 = function arg0, arg1, arg2() {
                 _fun10342: for (var _fun10342_ip = 0;;) switch (_fun10342_ip) {
                     case 0:
                         var16 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun10341
             }
         case 80:
-            var0 = function(arg0) { // Original name: base64StringFromByteArray, environment: var0
+            var0 = function arg0() {
                 _fun10343: for (var _fun10343_ip = 0;;) switch (_fun10343_ip) {
                     case 0:
                         var3 = arg0;

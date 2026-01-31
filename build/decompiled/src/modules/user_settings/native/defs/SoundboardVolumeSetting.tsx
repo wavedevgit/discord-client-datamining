@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createVolumeSlider;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.getAmplitudinalSoundboardVolume;
     var1.useValue = var8;
-    var7 = function(arg0) { // Original name: onValueChange, environment: var7
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 4;

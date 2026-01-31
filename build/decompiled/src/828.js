@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: _htmlElementAsString, environment: var0
+    var2 = function arg0, arg1() {
         _fun8794: for (var _fun8794_ip = 0;;) switch (_fun8794_ip) {
             case 0:
                 var0 = arg0;
@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0) { // Original name: getComponentName, environment: var0
+    var2 = function arg0() {
         _fun8798: for (var _fun8798_ip = 0;;) switch (_fun8798_ip) {
             case 0:
                 var5 = arg0;
@@ -360,7 +360,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getComponentName = var2;
-    var2 = function() { // Original name: getLocationHref, environment: var0
+    var2 = function() {
         _fun8799: for (var _fun8799_ip = 0;;) switch (_fun8799_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot0;
@@ -382,7 +382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getLocationHref = var2;
-    var0 = function(arg0) { // Original name: htmlTreeAsString, environment: var0
+    var0 = function arg0() {
         _fun8800: for (var _fun8800_ip = 0;;) switch (_fun8800_ip) {
             case 0:
                 var8 = undefined;

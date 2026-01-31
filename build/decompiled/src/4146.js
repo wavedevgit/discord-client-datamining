@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var7 = function(arg0, arg1) { // Original name: getByteAt, environment: var2
+    var7 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.getUint8;
         var0 = arg1;
@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var7;
-    var6 = function(arg0, arg1, arg2) { // Original name: getLongAt, environment: var2
+    var6 = function arg0, arg1, arg2() {
         var3 = arg0;
         var2 = var3.getUint32;
         var4 = _closure1_slot0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: getSlongAt, environment: var2
+    var5 = function arg0, arg1, arg2() {
         var3 = arg0;
         var2 = var3.getInt32;
         var4 = _closure1_slot0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var3;
     var0 = {};
-    var8 = function(arg0) { // Original name: getAsciiValue, environment: var2
+    var8 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.getAsciiValue = var8;
     var0.getByteAt = var7;
-    var7 = function(arg0, arg1) { // Original name: getAsciiAt, environment: var2
+    var7 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.getUint8;
         var0 = arg1;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.getAsciiAt = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: getShortAt, environment: var2
+    var7 = function arg0, arg1, arg2() {
         var3 = arg0;
         var2 = var3.getUint16;
         var4 = _closure1_slot0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.getShortAt = var7;
     var0.getLongAt = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: getRationalAt, environment: var2
+    var6 = function arg0, arg1, arg2() {
         var5 = arg0;
         var6 = arg1;
         var4 = arg2;
@@ -138,7 +138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.getRationalAt = var6;
-    var6 = function(arg0, arg1) { // Original name: getUndefinedAt, environment: var2
+    var6 = function arg0, arg1() {
         var3 = _closure1_slot4;
         var2 = undefined;
         var1 = arg0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.getUndefinedAt = var6;
     var0.getSlongAt = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: getSrationalAt, environment: var2
+    var5 = function arg0, arg1, arg2() {
         var5 = arg0;
         var6 = arg1;
         var4 = arg2;
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.getSrationalAt = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: getIfdPointerAt, environment: var2
+    var5 = function arg0, arg1, arg2() {
         var4 = _closure1_slot5;
         var3 = undefined;
         var2 = arg0;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.getIfdPointerAt = var5;
     var0.typeSizes = var4;
     var0.tagTypes = var3;
-    var2 = function(arg0) { // Original name: getTypeSize, environment: var2
+    var2 = function arg0() {
         _fun38008: for (var _fun38008_ip = 0;;) switch (_fun38008_ip) {
             case 0:
                 var2 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: addTracingHeadersToFetchRequest, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun99722: for (var _fun99722_ip = 0;;) switch (_fun99722_ip) {
             case 0:
                 var8 = arg0;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var2.addTracingHeadersToFetchRequest = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: instrumentFetchRequest, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun99723: for (var _fun99723_ip = 0;;) switch (_fun99723_ip) {
             case 0:
                 var3 = arg0;

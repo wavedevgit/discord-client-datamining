@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.iconContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
-    var3 = function() { // Original name: getAllServersSearchableSelectOption, environment: var1
+    var3 = function() {
         var0 = {};
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/privacy_and_safety/SettingsPrivacyAndSafetyGuildSelectActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun88336: for (var _fun88336_ip = 0;;) switch (_fun88336_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -206,11 +206,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot4;
                 var6 = var9.useCallback;
                 var2 = function(arg0) { // Environment: var4
-                    var2 = function(arg0) { // Original name: queryGuilds, environment: var0
+                    var2 = function arg0() {
                         _fun88339: for (var _fun88339_ip = 0;;) switch (_fun88339_ip) {
                             case 0:
                                 var6 = arg0;
-                                var1 = function(arg0) { // Original name: guildRecordToGuildSearchableSelectOption, environment: var0
+                                var1 = function arg0() {
                                     var1 = arg0;
                                     var0 = {};
                                     var4 = _closure1_slot0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var9 = var6.bind(var9)(var1, var2);
-                var6 = function() { // Original name: submitSelection, environment: var4
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var12 = function(arg0, arg1) { // Original name: onPressOptionItem, environment: var4
+                var12 = function arg0, arg1() {
                     var2 = _closure1_slot8;
                     var0 = arg1;
                     var0 = var0.guild;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onPressOptionItem = var12;
-                var12 = function(arg0) { // Original name: renderHeaderIcon, environment: var4
+                var12 = function arg0() {
                     _fun88346: for (var _fun88346_ip = 0;;) switch (_fun88346_ip) {
                         case 0:
                             var6 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.renderHeaderIcon = var12;
-                var12 = function(arg0) { // Original name: renderIcon, environment: var4
+                var12 = function arg0() {
                     _fun88347: for (var _fun88347_ip = 0;;) switch (_fun88347_ip) {
                         case 0:
                             var6 = arg0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(1);
                 var7[0] = var8;
                 var0.selectedOptions = var7;
-                var7 = function(arg0) { // Original name: isSelected, environment: var4
+                var7 = function arg0() {
                     var0 = arg0;
                     var1 = var0.value;
                     var0 = _closure2_slot2;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isSelected = var7;
                 var0.submitSelection = var6;
                 var0.onQueryChange = var5;
-                var4 = function(arg0) { // Original name: itemAccessibilityLabel, environment: var4
+                var4 = function arg0() {
                     var0 = arg0;
                     var0 = var0.label;
                     return var0;

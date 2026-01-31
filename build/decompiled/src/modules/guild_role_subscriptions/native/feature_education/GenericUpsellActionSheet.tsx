@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/feature_education/GenericUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GenericUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.markAsDismissed;
         var _closure2_slot0 = var1;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.ref = var6;
         var6 = true;
         var4.startExpanded = var6;
-        var7 = function() { // Original name: onDismiss, environment: var7
+        var7 = function() {
             var2 = _closure2_slot0;
             var0 = _closure1_slot4;
             var1 = var0.UNKNOWN;

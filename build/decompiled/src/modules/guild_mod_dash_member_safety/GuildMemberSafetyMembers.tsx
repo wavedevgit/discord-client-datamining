@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: getGuildMemberSecondaryIndexes, environment: var1
+    var0 = function arg0() {
         _fun40385: for (var _fun40385_ip = 0;;) switch (_fun40385_ip) {
             case 0:
                 var2 = arg0;
@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getGuildMemberSecondarySortBy, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.sort;
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: createMembersMap, environment: var1
+    var0 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 3;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var3 = function(arg0) { // Original name: hasUnusualDmActivity, environment: var1
+    var3 = function arg0() {
         _fun40388: for (var _fun40388_ip = 0;;) switch (_fun40388_ip) {
             case 0:
                 var3 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var4;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: GuildMemberSafetyMembers, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var4 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'reset';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var2 = this;
             var1 = var2._membersMap;
             var0 = var1.clear;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resetNewMemberTimestamp';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = global;
             var1 = var0.Date;
             var0 = var1.now;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'enhanceNewMember';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40393: for (var _fun40393_ip = 0;;) switch (_fun40393_ip) {
                 case 0:
                     var6 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_computeMemberSupplementals';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40394: for (var _fun40394_ip = 0;;) switch (_fun40394_ip) {
                 case 0:
                     var3 = arg0;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'createMember';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var3 = arg0;
             var0 = this;
             var2 = var0._membersMap;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateMember';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40396: for (var _fun40396_ip = 0;;) switch (_fun40396_ip) {
                 case 0:
                     var3 = arg0;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeMember';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0._membersMap;
             var1 = var2.delete;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMemberByUserId';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0._membersMap;
             var1 = var2.get;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'values';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0._membersMap;
             var2 = var3.values;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'count';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0._membersMap;
             var1 = var2.size;
@@ -627,7 +627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'version';
         var0.key = var5;
-        var4 = function() { // Original name: get, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0._membersMap;
             var0 = var0.version;

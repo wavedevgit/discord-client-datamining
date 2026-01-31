@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arg2;
                 var _closure2_slot1 = var1;
                 var _closure2_slot2 = var7;
-                var5 = function(arg0) { // Original name: increaseSequence, environment: var0
+                var5 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = function() { // Environment: var0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                     return var0;
                 };
-                var4 = function(arg0) { // Original name: callbackAndReset, environment: var0
+                var4 = function arg0() {
                     _fun94374: for (var _fun94374_ip = 0;;) switch (_fun94374_ip) {
                         case 0:
                             var3 = arg0;

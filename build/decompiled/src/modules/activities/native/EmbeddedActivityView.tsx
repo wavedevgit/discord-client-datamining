@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: useBaseActivityView, environment: var1
+    var5 = function arg0() {
         _fun64609: for (var _fun64609_ip = 0;;) switch (_fun64609_ip) {
             case 0:
                 var1 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var5;
-    var4 = function() { // Original name: ActivityViewLoadingIndicator, environment: var1
+    var4 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0) { // Original name: BaseActivityView, environment: var1
+    var3 = function arg0() {
         _fun64616: for (var _fun64616_ip = 0;;) switch (_fun64616_ip) {
             case 0:
                 var1 = arg0;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var10.bind(var11)(var6);
     var _closure1_slot15 = var6;
     var6 = var9.memo;
-    var1 = function(arg0) { // Original name: EmbeddedActivityViewInner, environment: var1
+    var1 = function arg0() {
         _fun64617: for (var _fun64617_ip = 0;;) switch (_fun64617_ip) {
             case 0:
                 var0 = arg0;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var21[var5];
                 var6 = var6.bind(var4)(var5);
                 var5 = {};
-                var19 = function() { // Original name: onActivityCrash, environment: var19
+                var19 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = true;

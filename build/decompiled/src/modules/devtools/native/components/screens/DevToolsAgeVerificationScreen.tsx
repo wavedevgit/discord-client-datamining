@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var6 = var1.verification_webview_url;
                         var2.webviewUrl = var6;
-                        var6 = function() { // Original name: onComplete, environment: var6
+                        var6 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 9;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsAgeVerificationScreen, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = {};
         var20 = 'Launch Age Verification Modal';
         var8.label = var20;
-        var20 = function() { // Original name: onPress, environment: var11
+        var20 = function() {
             var1 = _closure1_slot1;
             var6 = _closure1_slot2;
             var0 = 10;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'subLabel': 'Use actual pilot template (skips age override screen) for Persona age verification testing'
         };
         var7.value = var15;
-        var15 = function(arg0) { // Original name: onValueChange, environment: var11
+        var15 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 20;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'subLabel': 'Force Facial Age Estimation to fail for Persona age verification testing'
         };
         var14.value = var16;
-        var16 = function(arg0) { // Original name: onValueChange, environment: var11
+        var16 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 20;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'subLabel': 'Force ID verification to fail for Persona age verification testing'
         };
         var8.value = var12;
-        var11 = function(arg0) { // Original name: onValueChange, environment: var11
+        var11 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 20;

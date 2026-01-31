@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: useGuildTagBaseCoachmark, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot9;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var3.bind(var0)(var2);
         var3 = var4.useCoachmark;
         var2 = {};
-        var1 = function() { // Original name: renderImgComponent, environment: var1
+        var1 = function() {
             _fun104535: for (var _fun104535_ip = 0;;) switch (_fun104535_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_tag/native/useGuildTagCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useGuildTagUpdatedCoachmark, environment: var1
+    var3 = function arg0, arg1() {
         _fun104536: for (var _fun104536_ip = 0;;) switch (_fun104536_ip) {
             case 0:
                 var9 = arg1;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 1;
                 var2 = var3[var2];
                 var _closure2_slot3 = var2;
-                var2 = function(arg0) { // Original name: handleDismiss, environment: var1
+                var2 = function arg0() {
                     _fun104538: for (var _fun104538_ip = 0;;) switch (_fun104538_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.onButtonPress = var5;
-                var1 = function() { // Original name: onDismiss, environment: var1
+                var1 = function() {
                     var2 = _closure2_slot4;
                     var0 = _closure1_slot7;
                     var1 = var0.DISMISS;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildTagUpdatedCoachmark = var3;
-    var1 = function(arg0, arg1) { // Original name: useGuildTagAvailableCoachmark, environment: var1
+    var1 = function arg0, arg1() {
         _fun104543: for (var _fun104543_ip = 0;;) switch (_fun104543_ip) {
             case 0:
                 var9 = arg1;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.onButtonPress = var5;
-                var1 = function() { // Original name: onDismiss, environment: var1
+                var1 = function() {
                     var2 = _closure2_slot2;
                     var0 = _closure1_slot7;
                     var1 = var0.DISMISS;

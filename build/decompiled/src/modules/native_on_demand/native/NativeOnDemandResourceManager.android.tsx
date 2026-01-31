@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113798: for (var _fun113798_ip = 0;;) switch (_fun113798_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: NativeOnDemandResourceManager, environment: var0
+        var2 = function arg0() {
             _fun113802: for (var _fun113802_ip = 0;;) switch (_fun113802_ip) {
                 case 0:
                     var4 = this;
@@ -134,14 +134,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var2 = {};
-                    var3 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handlePostConnectionOpen;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.POST_CONNECTION_OPEN = var3;
-                    var3 = function() { // Original name: APP_STATE_UPDATE, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleAppStateUpdate;
                         var0 = var0.bind(var1)();

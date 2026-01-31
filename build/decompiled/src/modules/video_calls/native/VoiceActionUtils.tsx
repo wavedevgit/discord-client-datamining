@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: NOOP, environment: var1
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/video_calls/native/VoiceActionUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.DominantMuteState = var3;
-    var3 = function(arg0) { // Original name: createMuteHandler, environment: var1
+    var3 = function arg0() {
         _fun68040: for (var _fun68040_ip = 0;;) switch (_fun68040_ip) {
             case 0:
                 var4 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createMuteHandler = var3;
-    var1 = function(arg0) { // Original name: createDeafHandler, environment: var1
+    var1 = function arg0() {
         _fun68041: for (var _fun68041_ip = 0;;) switch (_fun68041_ip) {
             case 0:
                 var3 = arg0;

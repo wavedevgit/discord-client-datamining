@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
-    var1 = function(arg0) { // Original name: UnreadIndicator, environment: var4
+    var1 = function arg0() {
         _fun100894: for (var _fun100894_ip = 0;;) switch (_fun100894_ip) {
             case 0:
                 var0 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var2, var4);
                 var8 = _closure1_slot3;
                 var6 = var8.useCallback;
-                var5 = function(arg0) { // Original name: S, environment: var1
+                var5 = function arg0() {
                     _fun100896: for (var _fun100896_ip = 0;;) switch (_fun100896_ip) {
                         case 0:
                             var3 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var8)(var5, var2);
                 var8 = _closure1_slot3;
                 var5 = var8.useCallback;
-                var2 = function(arg0) { // Original name: u, environment: var1
+                var2 = function arg0() {
                     var2 = arg0;
                     var0 = {};
                     var1 = {};
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.currentOriginX;
                     var1.originX = var2;
                     var0.initialValues = var1;
-                    var1 = function(arg0) { // Original name: callback, environment: var1
+                    var1 = function arg0() {
                         _fun100898: for (var _fun100898_ip = 0;;) switch (_fun100898_ip) {
                             case 0:
                                 var4 = arg0;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var1;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderUnreadIndicator, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         var1 = arg1;
         var0 = var1.selected;
         var5 = var1.sharedId;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guilds_bar/native/GuildsBarAnimatedItemWrapper.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: GuildsBarAnimatedItemWrapper, environment: var4
+    var4 = function arg0() {
         _fun100901: for (var _fun100901_ip = 0;;) switch (_fun100901_ip) {
             case 0:
                 var6 = arg0;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var34[var7];
                 var24 = var33.bind(var3)(var15);
                 var23 = var24.useAnimatedStyle;
-                var15 = function() { // Original name: Z, environment: var1
+                var15 = function() {
                     _fun100902: for (var _fun100902_ip = 0;;) switch (_fun100902_ip) {
                         case 0:
                             var0 = {};
@@ -942,7 +942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var34[var7];
                 var15 = var33.bind(var3)(var7);
                 var13 = var15.useAnimatedStyle;
-                var7 = function() { // Original name: j, environment: var1
+                var7 = function() {
                     var0 = {};
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;

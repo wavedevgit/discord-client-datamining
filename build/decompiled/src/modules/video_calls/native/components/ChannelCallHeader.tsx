@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: UsersButton, environment: var5
+    var0 = function arg0() {
         _fun69035: for (var _fun69035_ip = 0;;) switch (_fun69035_ip) {
             case 0:
                 var0 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7[var5];
                 var5 = var6.bind(var3)(var5);
                 var0.source = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 24;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var1 = function(arg0) { // Original name: ChannelCallHeaderBase, environment: var5
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.channel;
         var5 = var0.children;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.liveTag = var9;
     var3 = var4.bind(var6)(var3);
     var _closure1_slot17 = var3;
-    var3 = function(arg0) { // Original name: HideChannelCallIcon, environment: var5
+    var3 = function arg0() {
         _fun69039: for (var _fun69039_ip = 0;;) switch (_fun69039_ip) {
             case 0:
                 var0 = arg0;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.cpT0Cq;
                 var9 = var10.bind(var11)(var9);
                 var0.accessibilityLabel = var9;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var3 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 20;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: ChannelCallNavigatorTitle, environment: var5
+    var3 = function arg0() {
         _fun69042: for (var _fun69042_ip = 0;;) switch (_fun69042_ip) {
             case 0:
                 var1 = arg0;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var4 = function() { // Original name: CameraButton, environment: var5
+    var4 = function() {
         _fun69046: for (var _fun69046_ip = 0;;) switch (_fun69046_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8[var6];
                 var6 = var7.bind(var4)(var6);
                 var1.source = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun69048: for (var _fun69048_ip = 0;;) switch (_fun69048_ip) {
                         case 0:
                             var0 = global;
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var3 = function(arg0) { // Original name: GridButton, environment: var5
+    var3 = function arg0() {
         _fun69050: for (var _fun69050_ip = 0;;) switch (_fun69050_ip) {
             case 0:
                 var0 = arg0;
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8[var6];
                 var6 = var7.bind(var4)(var6);
                 var1.source = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 41;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var3;
-    var6 = function() { // Original name: ChannelCallHeaderChatButtonPlaceholder, environment: var5
+    var6 = function() {
         var1 = _closure1_slot17;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/video_calls/native/components/ChannelCallHeader.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: _default, environment: var5
+    var5 = function arg0() {
         _fun69053: for (var _fun69053_ip = 0;;) switch (_fun69053_ip) {
             case 0:
                 var0 = arg0;

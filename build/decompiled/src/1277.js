@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var _closure1_slot0 = var2;
-    var0 = function(arg0) { // Original name: hydrateArray, environment: var3
+    var0 = function arg0() {
         _fun13769: for (var _fun13769_ip = 0;;) switch (_fun13769_ip) {
             case 0:
                 var4 = arg0;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: hydrateSingle, environment: var3
+    var0 = function arg0() {
         _fun13770: for (var _fun13770_ip = 0;;) switch (_fun13770_ip) {
             case 0:
                 var1 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var7.bind(var8)(var2, var5, var6);
     var2.FormatJsNodeType = var0;
     var2.FORMAT_JS_POUND = var0;
-    var5 = function(arg0) { // Original name: hydrateFormatJsAst, environment: var3
+    var5 = function arg0() {
         _fun13771: for (var _fun13771_ip = 0;;) switch (_fun13771_ip) {
             case 0:
                 var2 = arg0;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.hydrateFormatJsAst = var5;
-    var5 = function(arg0) { // Original name: compressFormatJsToAst, environment: var3
+    var5 = function arg0() {
         _fun13772: for (var _fun13772_ip = 0;;) switch (_fun13772_ip) {
             case 0:
                 var2 = arg0;
@@ -528,7 +528,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot5 = var5;
     var2.compressFormatJsToAst = var5;
-    var5 = function(arg0) { // Original name: isCompressedAst, environment: var3
+    var5 = function arg0() {
         _fun13774: for (var _fun13774_ip = 0;;) switch (_fun13774_ip) {
             case 0:
                 var5 = arg0;

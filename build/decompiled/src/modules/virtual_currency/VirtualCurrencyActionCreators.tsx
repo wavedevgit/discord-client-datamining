@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function() { // Original name: fetchVirtualCurrencyBalance, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var3;
-    var0 = function() { // Original name: _fetchVirtualCurrencyBalance, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _redeemVirtualCurrencyForSKU, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/virtual_currency/VirtualCurrencyActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.fetchVirtualCurrencyBalance = var3;
-    var3 = function() { // Original name: redeemVirtualCurrencyForSKU, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.redeemVirtualCurrencyForSKU = var3;
-    var1 = function(arg0) { // Original name: setBalancePillOverlay, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

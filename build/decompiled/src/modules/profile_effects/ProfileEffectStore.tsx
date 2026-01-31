@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun50758: for (var _fun50758_ip = 0;;) switch (_fun50758_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun50761: for (var _fun50761_ip = 0;;) switch (_fun50761_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun50763: for (var _fun50763_ip = 0;;) switch (_fun50763_ip) {
             case 0:
                 var3 = arg0;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var1;
     var1 = {};
     var _closure1_slot8 = var1;
-    var1 = function(arg0, arg1) { // Original name: handleProfileEffectUpdate, environment: var3
+    var1 = function arg0, arg1() {
         _fun50764: for (var _fun50764_ip = 0;;) switch (_fun50764_ip) {
             case 0:
                 var3 = arg0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var1;
-    var1 = function(arg0) { // Original name: handleProductOrPurchaseUpdate, environment: var3
+    var1 = function arg0() {
         _fun50765: for (var _fun50765_ip = 0;;) switch (_fun50765_ip) {
             case 0:
                 var0 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var1;
-    var1 = function(arg0) { // Original name: handleCategoriesUpdate, environment: var3
+    var1 = function arg0() {
         var3 = arg0;
         var1 = false;
         var _closure2_slot0 = var1;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var1;
-    var1 = function(arg0) { // Original name: handlePurchasesUpdate, environment: var3
+    var1 = function arg0() {
         var3 = arg0;
         var1 = false;
         var _closure2_slot0 = var1;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ProfileEffectStore, environment: var5
+        var3 = function() {
             _fun50773: for (var _fun50773_ip = 0;;) switch (_fun50773_ip) {
                 case 0:
                     var3 = this;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getAllProfileEffects';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProfileEffect';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun50775: for (var _fun50775_ip = 0;;) switch (_fun50775_ip) {
                 case 0:
                     var2 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: COLLECTIBLES_PRODUCT_FETCH_SUCCESS, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.product;
         var1 = _closure1_slot10;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_PRODUCT_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: COLLECTIBLES_CATEGORIES_FETCH_SUCCESS, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.categories;
         var2 = _closure1_slot11;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_CATEGORIES_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.shopHome;
         var2 = _closure1_slot11;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: COLLECTIBLES_PURCHASES_FETCH_SUCCESS, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.purchases;
         var1 = _closure1_slot12;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_PURCHASES_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: COLLECTIBLES_CLAIM_SUCCESS, environment: var3
+    var8 = function arg0() {
         _fun50780: for (var _fun50780_ip = 0;;) switch (_fun50780_ip) {
             case 0:
                 var0 = arg0;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.COLLECTIBLES_CLAIM_SUCCESS = var8;
-    var3 = function() { // Original name: LOGOUT, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot8 = var0;
         var0 = undefined;

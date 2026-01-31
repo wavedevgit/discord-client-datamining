@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun88944: for (var _fun88944_ip = 0;;) switch (_fun88944_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: startActivityLaunchTimeout, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun88947: for (var _fun88947_ip = 0;;) switch (_fun88947_ip) {
             case 0:
                 var3 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: handleActivityStateChanged, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun88949: for (var _fun88949_ip = 0;;) switch (_fun88949_ip) {
             case 0:
                 var6 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var8 = function(arg0) { // Original name: handleActivityComplete, environment: var3
+    var8 = function arg0() {
         var4 = _closure1_slot16;
         var1 = _closure1_slot10;
         var3 = var1.COMPLETE;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var4.bind(var1)(var3, var2, var0);
         return var0;
     };
-    var0 = function() { // Original name: handleActivityUpdate, environment: var3
+    var0 = function() {
         var1 = global;
         var3 = var1.Object;
         var2 = var3.entries;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ActivityLauncherStore, environment: var5
+        var3 = function() {
             _fun88956: for (var _fun88956_ip = 0;;) switch (_fun88956_ip) {
                 case 0:
                     var3 = this;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.syncWith;
             var4 = _closure1_slot8;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun88958: for (var _fun88958_ip = 0;;) switch (_fun88958_ip) {
                 case 0:
                     var1 = _closure1_slot12;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStates';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: handleOverlayInitialize, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.activityLauncherStates;
         var1 = {};
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.OVERLAY_INITIALIZE = var9;
-    var9 = function(arg0) { // Original name: ACTIVITY_JOIN_LOADING, environment: var3
+    var9 = function arg0() {
         var4 = _closure1_slot16;
         var1 = _closure1_slot10;
         var3 = var1.LOADING;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ACTIVITY_JOIN_LOADING = var9;
-    var9 = function(arg0) { // Original name: ACTIVITY_JOIN_FAILED, environment: var3
+    var9 = function arg0() {
         var4 = _closure1_slot16;
         var1 = _closure1_slot10;
         var3 = var1.FAILED;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.ACTIVITY_JOIN_FAILED = var9;
     var1.ACTIVITY_JOIN = var8;
     var1.EMBEDDED_ACTIVITY_CLOSE = var8;
-    var3 = function(arg0) { // Original name: handleActivityLaunchFail, environment: var3
+    var3 = function arg0() {
         _fun88963: for (var _fun88963_ip = 0;;) switch (_fun88963_ip) {
             case 0:
                 var0 = arg0;

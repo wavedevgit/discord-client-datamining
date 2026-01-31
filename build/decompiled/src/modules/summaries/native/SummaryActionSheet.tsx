@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/summaries/native/SummaryActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: SummaryActionSheet, environment: var1
+    var3 = function arg0() {
         _fun77813: for (var _fun77813_ip = 0;;) switch (_fun77813_ip) {
             case 0:
                 var1 = arg0;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: openSummaryDividerActionSheet, environment: var1
+    var1 = function arg0, arg1() {
         _fun77818: for (var _fun77818_ip = 0;;) switch (_fun77818_ip) {
             case 0:
                 var6 = arg1;

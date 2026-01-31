@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0.code = var1;
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1) { // Original name: setGestureStateNative, environment: var0
+                var0 = function arg0, arg1() {
                     _fun34977: for (var _fun34977_ip = 0;;) switch (_fun34977_ip) {
                         case 0:
                             var0 = global;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun34975
             }
         case 154:
-            var3 = function() { // Original name: setGestureStateDefault, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 0;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34975_ip = 166;
             continue _fun34975;
         case 161:
-            var3 = function() { // Original name: setGestureStateChromeDebugger, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 0;
@@ -134,7 +134,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34975_ip = 173;
             continue _fun34975;
         case 168:
-            var3 = function() { // Original name: setGestureStateJest, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 0;

@@ -70,11 +70,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7;
             case 85:
                 var0.initialRouteName = var4;
-                var4 = function(arg0) { // Original name: screenOptions, environment: var5
+                var4 = function arg0() {
                     var0 = arg0;
                     var3 = var0.navigation;
                     var0 = {};
-                    var1 = function(arg0) { // Original name: headerTitle, environment: var1
+                    var1 = function arg0() {
                         var2 = arg0;
                         var5 = var2.children;
                         var0 = null;
@@ -129,9 +129,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10[var9];
                 var9 = var11.bind(var3)(var9);
                 var4.component = var9;
-                var9 = function() { // Original name: options, environment: var5
+                var9 = function() {
                     var0 = {};
-                    var1 = function() { // Original name: headerTitle, environment: var1
+                    var1 = function() {
                         var3 = _closure1_slot5;
                         var2 = _closure1_slot3;
                         var1 = {};
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var4.name = var3;
                             var4.children = var9;
-                            var8 = function() { // Original name: options, environment: var8
+                            var8 = function() {
                                 var0 = {};
                                 var1 = _closure3_slot0;
                                 var0.title = var1;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/DevToolsNavigator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: navigateToDevTools, environment: var1
+    var1 = function() {
         _fun87519: for (var _fun87519_ip = 0;;) switch (_fun87519_ip) {
             case 0:
                 var1 = arguments[0];

@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/user_profile/native/ProfileGIFSelectActionSheet.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: ProfileGIFSelectActionSheet, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.user;
         var _closure2_slot0 = var1;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var1;
         var0 = var0.selectionContext;
         var _closure2_slot2 = var0;
-        var0 = function() { // Original name: _onPressGIF, environment: var10
+        var0 = function() {
             var3 = undefined;
             var0 = undefined;
             var2 = _closure1_slot3;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun79848
                             }
                         case 82:
-                            var3 = function(arg0) { // Original name: blobToDataURI, environment: var3
+                            var3 = function arg0() {
                                 var1 = arg0;
                                 var _closure6_slot0 = var1;
                                 var1 = global;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.bind(var3)(var8);
         var8 = {};
         var8.bottomSheetRef = var11;
-        var10 = function(arg0) { // Original name: onPressGIF, environment: var10
+        var10 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot3;
             var2 = var3.apply;

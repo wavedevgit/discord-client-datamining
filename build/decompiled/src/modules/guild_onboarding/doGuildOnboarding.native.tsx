@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _doGuildOnboarding, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 245:
                         var7 = _closure1_slot12;
-                        var4 = function() { // Original name: fetchLandingAsset, environment: var4
+                        var4 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot14;
                             var2 = var3.apply;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _fetchLandingAsset, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -289,10 +289,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var3 = function(arg0) { // Original name: openAndWaitForOnboarding, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
-        var2 = function(arg0) { // Original name: waitForOnboardingCompleted, environment: var0
+        var2 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.guildId = var9;
                     var7 = true;
                     var3.backShouldLeaveGuild = var7;
-                    var8 = function() { // Original name: onFinish, environment: var1
+                    var8 = function() {
                         var0 = undefined;
                         return var0;
                     };
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var7;
     var4 = var4.Routes;
     var _closure1_slot9 = var4;
-    var4 = function() { // Original name: getBaseAnimationData, environment: var1
+    var4 = function() {
         var0 = global;
         var2 = var0.JSON;
         var1 = var2.parse;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_onboarding/doGuildOnboarding.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: doGuildOnboarding, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.openAndWaitForOnboarding = var3;
-    var3 = function(arg0) { // Original name: discardOnboardingPromise, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot11;
         var0 = arg0;
         var0 = delete var1[var0];
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.discardOnboardingPromise = var3;
-    var1 = function(arg0) { // Original name: isOnboardingActiveForGuild, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot11;
         var0 = arg0;
         var1 = var1[var0];

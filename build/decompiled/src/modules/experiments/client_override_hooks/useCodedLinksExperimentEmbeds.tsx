@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function() { // Original name: canSeeExperimentEmbeds, environment: var1
+    var4 = function() {
         _fun77062: for (var _fun77062_ip = 0;;) switch (_fun77062_ip) {
             case 0:
                 var3 = arguments[0];
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var4;
-    var3 = function() { // Original name: useCanSeeExperimentEmbeds, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 5;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.canSeeExperimentEmbeds = var4;
     var2.useCanSeeExperimentEmbeds = var3;
-    var1 = function() { // Original name: useCodedLinksExperimentEmbeds, environment: var1
+    var1 = function() {
         var2 = _closure1_slot14;
         var10 = undefined;
         var9 = var2.bind(var10)();

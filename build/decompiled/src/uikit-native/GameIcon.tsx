@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: GameIcon, environment: var8
+    var4 = function arg0() {
         _fun56649: for (var _fun56649_ip = 0;;) switch (_fun56649_ip) {
             case 0:
                 var0 = arg0;

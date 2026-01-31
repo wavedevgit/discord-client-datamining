@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: trackTryOutFeature, environment: var4
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _saveProfileChanges, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var5 = function(arg0) { // Original name: setPendingBanner, environment: var4
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var5;
-    var3 = function() { // Original name: fetchApplicationWidgetConfigs, environment: var4
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var3;
-    var0 = function() { // Original name: _fetchApplicationWidgetConfigs, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -453,13 +453,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var11 = var11.APPLICATION_WIDGET_APPLICATION_CONFIGS;
     var1.getQueryId = var11;
-    var11 = function() { // Original name: get, environment: var4
+    var11 = function() {
         var0 = _closure1_slot5;
         var0 = var0.applicationWidgetConfigs;
         return var0;
     };
     var1.get = var11;
-    var11 = function() { // Original name: load, environment: var4
+    var11 = function() {
         var1 = _closure1_slot14;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/user_profile/UserProfileActionCreators.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function() { // Original name: saveProfileChanges, environment: var4
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.saveProfileChanges = var6;
-    var6 = function(arg0, arg1) { // Original name: pinUserProfileBadgesOnClient, environment: var4
+    var6 = function arg0, arg1() {
         _fun49124: for (var _fun49124_ip = 0;;) switch (_fun49124_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.pinUserProfileBadgesOnClient = var6;
-    var6 = function() { // Original name: resetPendingProfileChanges, environment: var4
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetPendingProfileChanges = var6;
-    var6 = function(arg0) { // Original name: setPendingBannerUrl, environment: var4
+    var6 = function arg0() {
         _fun49126: for (var _fun49126_ip = 0;;) switch (_fun49126_ip) {
             case 0:
                 var3 = arg0;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setPendingBannerUrl = var6;
     var2.setPendingBanner = var5;
-    var5 = function(arg0) { // Original name: setPendingBio, environment: var4
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingBio = var5;
-    var5 = function(arg0) { // Original name: setPendingPronouns, environment: var4
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingPronouns = var5;
-    var5 = function(arg0) { // Original name: setPendingAccentColor, environment: var4
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingAccentColor = var5;
-    var5 = function(arg0) { // Original name: setPendingThemeColors, environment: var4
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingThemeColors = var5;
-    var5 = function(arg0) { // Original name: setTryItOutAvatar, environment: var4
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setTryItOutAvatar = var5;
-    var5 = function(arg0) { // Original name: setTryItOutAvatarDecoration, environment: var4
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setTryItOutAvatarDecoration = var5;
-    var5 = function(arg0) { // Original name: setTryItOutProfileEffect, environment: var4
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -745,7 +745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setTryItOutProfileEffect = var5;
-    var5 = function(arg0) { // Original name: setTryItOutBanner, environment: var4
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setTryItOutBanner = var5;
-    var5 = function(arg0) { // Original name: setTryItOutThemeColors, environment: var4
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setTryItOutThemeColors = var5;
-    var5 = function(arg0) { // Original name: setTryItOutDisplayNameStyles, environment: var4
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setTryItOutDisplayNameStyles = var5;
-    var4 = function(arg0) { // Original name: setTryItOutPreset, environment: var4
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;

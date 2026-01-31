@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/ResetPasswordNudgeAlertModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ResetPasswordNudgeAlertModal, environment: var1
+    var1 = function arg0() {
         _fun60532: for (var _fun60532_ip = 0;;) switch (_fun60532_ip) {
             case 0:
                 var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var13.bind(var3)(var7);
                 var12 = var7.AlertActionButton;
                 var10 = {};
-                var7 = function() { // Original name: onPress, environment: var11
+                var7 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var12 = 'secondary';
                 var9.variant = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 7;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function() { // Original name: _asyncOptionalChain2, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot0;
@@ -206,7 +206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var1 = function(arg0) { // Original name: _asyncOptionalChain, environment: var1
+    var1 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot1;
         var2 = var3.apply;

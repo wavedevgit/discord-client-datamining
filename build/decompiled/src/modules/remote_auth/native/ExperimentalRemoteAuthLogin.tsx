@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/remote_auth/native/ExperimentalRemoteAuthLogin.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DelayedRemoteAuthLogin, environment: var1
+    var1 = function arg0() {
         _fun81851: for (var _fun81851_ip = 0;;) switch (_fun81851_ip) {
             case 0:
                 var0 = arg0;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9["ETE/oC"];
                 var9 = var10.bind(var11)(var9);
                 var5.text = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 8;

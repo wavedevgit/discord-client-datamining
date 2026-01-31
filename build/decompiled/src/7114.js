@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function() { // Original name: getPendingPurchasesIOS, environment: var0
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: getReceiptIOS, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function() { // Original name: presentCodeRedemptionSheetIOS, environment: var0
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0, arg1) { // Original name: fetchJsonOrThrow, environment: var0
+        var0 = function arg0, arg1() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -355,7 +355,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: requestAgnosticReceiptValidationIos, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -441,7 +441,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: validateReceiptIos, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -457,7 +457,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.getPendingPurchasesIOS = var6;
     var2.getReceiptIOS = var5;
     var2.presentCodeRedemptionSheetIOS = var4;
-    var4 = function() { // Original name: getPromotedProductIOS, environment: var1
+    var4 = function() {
         _fun58377: for (var _fun58377_ip = 0;;) switch (_fun58377_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getPromotedProductIOS = var4;
-    var4 = function() { // Original name: buyPromotedProductIOS, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -504,7 +504,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.buyPromotedProductIOS = var4;
     var2.validateReceiptIos = var3;
-    var3 = function() { // Original name: clearTransactionIOS, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -518,7 +518,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.clearTransactionIOS = var3;
-    var3 = function() { // Original name: clearProductsIOS, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.clearProductsIOS = var3;
-    var1 = function() { // Original name: deepLinkToSubscriptionsIos, environment: var1
+    var1 = function() {
         var2 = _closure1_slot3;
         var1 = var2.openURL;
         var0 = 'https://apps.apple.com/account/subscriptions';

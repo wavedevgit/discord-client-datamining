@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ExpressionPickerKeyboard, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.channel;
         var20 = var0.chatInputRef;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var17[var0];
         var18 = var3.bind(var4)(var2);
         var7 = var18.useDerivedValue;
-        var2 = function() { // Original name: b, environment: var1
+        var2 = function() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.max;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var17[var0];
         var7 = var3.bind(var4)(var2);
         var3 = var7.useAnimatedStyle;
-        var2 = function() { // Original name: S, environment: var1
+        var2 = function() {
             _fun108495: for (var _fun108495_ip = 0;;) switch (_fun108495_ip) {
                 case 0:
                     var0 = {};

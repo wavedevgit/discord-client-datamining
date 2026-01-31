@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0) { // Original name: mockAnimationStart, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -77,33 +77,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = false;
     var _closure1_slot0 = var0;
     var0 = {};
-    var1 = function() { // Original name: start, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var0.start = var1;
-    var1 = function() { // Original name: stop, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var0.stop = var1;
-    var1 = function() { // Original name: reset, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var0.reset = var1;
-    var1 = function() { // Original name: _startNativeLoop, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var0._startNativeLoop = var1;
-    var1 = function() { // Original name: _isUsingNativeDriver, environment: var3
+    var1 = function() {
         var0 = false;
         return var0;
     };
     var0._isUsingNativeDriver = var1;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: mockCompositeAnimation, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -171,12 +171,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var5[var6];
     var6 = var7.bind(var0)(var6);
     var1.Node = var6;
-    var6 = function(arg0, arg1) { // Original name: decay, environment: var3
+    var6 = function arg0, arg1() {
         var0 = _closure1_slot1;
         return var0;
     };
     var1.decay = var6;
-    var6 = function(arg0, arg1) { // Original name: timing, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg0;
@@ -220,7 +220,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.timing = var6;
-    var6 = function(arg0, arg1) { // Original name: spring, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg0;
@@ -289,12 +289,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = var7.bind(var0)(var8);
     var8 = var8.diffClamp;
     var1.diffClamp = var8;
-    var8 = function(arg0) { // Original name: delay, environment: var3
+    var8 = function arg0() {
         var0 = _closure1_slot1;
         return var0;
     };
     var1.delay = var8;
-    var8 = function(arg0) { // Original name: sequence, environment: var3
+    var8 = function arg0() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg0;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.sequence = var8;
-    var8 = function(arg0, arg1) { // Original name: parallel, environment: var3
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg0;
@@ -310,7 +310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.parallel = var8;
-    var8 = function(arg0, arg1) { // Original name: stagger, environment: var3
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg1;
@@ -318,7 +318,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.stagger = var8;
-    var3 = function(arg0) { // Original name: loop, environment: var3
+    var3 = function arg0() {
         _fun5756: for (var _fun5756_ip = 0;;) switch (_fun5756_ip) {
             case 0:
                 var3 = undefined;

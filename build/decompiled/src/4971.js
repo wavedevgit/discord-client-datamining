@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot2 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: getHandler, environment: var0
+        var0 = function arg0, arg1() {
             _fun44869: for (var _fun44869_ip = 0;;) switch (_fun44869_ip) {
                 case 0:
                     var3 = arg0;
@@ -192,7 +192,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: touchEventTypeToCallbackType, environment: var0
+        var0 = function arg0() {
             _fun44871: for (var _fun44871_ip = 0;;) switch (_fun44871_ip) {
                 case 0:
                     var3 = arg0;
@@ -316,7 +316,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: runWorklet, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun44873: for (var _fun44873_ip = 0;;) switch (_fun44873_ip) {
                 case 0:
                     var4 = arg0;
@@ -433,7 +433,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot8 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: isStateChangeEvent, environment: var0
+        var0 = function arg0() {
             var0 = arg0;
             var1 = var0.oldState;
             var0 = null;
@@ -455,7 +455,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: isTouchEvent, environment: var0
+        var0 = function arg0() {
             var0 = arg0;
             var1 = var0.eventType;
             var0 = null;
@@ -476,7 +476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useAnimatedGestureTs6(event){const{sharedHandlersCallbacks,isStateChangeEvent,State,runWorklet,CALLBACK_TYPE,lastUpdateEvent,isTouchEvent,stateControllers,GestureStateManager,TouchEventType,touchEventTypeToCallbackType}=this.__closure;const currentCallback=sharedHandlersCallbacks.value;if(!currentCallback){return;}for(let i=0;i<currentCallback.length;i++){const gesture=currentCallback[i];if(event.handlerTag!==gesture.handlerTag){continue;}if(isStateChangeEvent(event)){if(event.oldState===State.UNDETERMINED&&event.state===State.BEGAN){runWorklet(CALLBACK_TYPE.BEGAN,gesture,event);}else if((event.oldState===State.BEGAN||event.oldState===State.UNDETERMINED)&&event.state===State.ACTIVE){runWorklet(CALLBACK_TYPE.START,gesture,event);lastUpdateEvent.value[gesture.handlerTag]=undefined;}else if(event.oldState!==event.state&&event.state===State.END){if(event.oldState===State.ACTIVE){runWorklet(CALLBACK_TYPE.END,gesture,event,true);}runWorklet(CALLBACK_TYPE.FINALIZE,gesture,event,true);}else if((event.state===State.FAILED||event.state===State.CANCELLED)&&event.state!==event.oldState){if(event.oldState===State.ACTIVE){runWorklet(CALLBACK_TYPE.END,gesture,event,false);}runWorklet(CALLBACK_TYPE.FINALIZE,gesture,event,false);}}else if(isTouchEvent(event)){if(!stateControllers[i]||stateControllers[i].handlerTag!==event.handlerTag){stateControllers[i]=GestureStateManager.create(event.handlerTag);}if(event.eventType!==TouchEventType.UNDETERMINED){runWorklet(touchEventTypeToCallbackType(event.eventType),gesture,event,stateControllers[i]);}}else{runWorklet(CALLBACK_TYPE.UPDATE,gesture,event);if(gesture.onChange&&gesture.changeEventCalculator){var _gesture$changeEventC;runWorklet(CALLBACK_TYPE.CHANGE,gesture,(_gesture$changeEventC=gesture.changeEventCalculator)===null||_gesture$changeEventC===void 0?void 0:_gesture$changeEventC.call(gesture,event,lastUpdateEvent.value[gesture.handlerTag]));lastUpdateEvent.value[gesture.handlerTag]=event;}}}}';
     var3.code = var4;
     var _closure1_slot12 = var3;
-    var1 = function(arg0, arg1) { // Original name: useAnimatedGesture, environment: var1
+    var1 = function arg0, arg1() {
         _fun44878: for (var _fun44878_ip = 0;;) switch (_fun44878_ip) {
             case 0:
                 var2 = arg0;
@@ -510,7 +510,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot1 = var10;
                 var9 = new Array(0);
                 var _closure2_slot2 = var9;
-                var7 = function(arg0) { // Original name: pnpm_useAnimatedGestureTs6, environment: var7
+                var7 = function arg0() {
                     _fun44879: for (var _fun44879_ip = 0;;) switch (_fun44879_ip) {
                         case 0:
                             var13 = arg0;

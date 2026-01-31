@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createEmbeddedActivityInviteEmbed, environment: var1
+    var1 = function arg0() {
         _fun92325: for (var _fun92325_ip = 0;;) switch (_fun92325_ip) {
             case 0:
                 var0 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5480: for (var _fun5480_ip = 0;;) switch (_fun5480_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun5483: for (var _fun5483_ip = 0;;) switch (_fun5483_ip) {
             case 0:
                 var4 = arg0;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: AnimatedTracking, environment: var5
+        var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun5486: for (var _fun5486_ip = 0;;) switch (_fun5486_ip) {
                 case 0:
                     var3 = arg3;
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '__makeNative';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: __makeNative, environment: var5
+        var0 = function arg0() {
             var3 = arg0;
             var1 = this;
             var0 = true;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getValue';
         var4.key = var6;
-        var6 = function() { // Original name: __getValue, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0._parent;
             var0 = var1.__getValue;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__attach';
         var4.key = var6;
-        var6 = function() { // Original name: __attach, environment: var5
+        var6 = function() {
             _fun5489: for (var _fun5489_ip = 0;;) switch (_fun5489_ip) {
                 case 0:
                     var5 = this;
@@ -280,7 +280,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__detach';
         var4.key = var6;
-        var6 = function() { // Original name: __detach, environment: var5
+        var6 = function() {
             var5 = this;
             var1 = var5._parent;
             var0 = var1.__removeChild;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'update';
         var4.key = var6;
-        var6 = function() { // Original name: update, environment: var5
+        var6 = function() {
             var0 = this;
             var3 = var0._value;
             var2 = var3.animate;
@@ -338,7 +338,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getNativeConfig';
         var4.key = var6;
-        var5 = function() { // Original name: __getNativeConfig, environment: var5
+        var5 = function() {
             var2 = this;
             var3 = var2._animationClass;
             var0 = global;

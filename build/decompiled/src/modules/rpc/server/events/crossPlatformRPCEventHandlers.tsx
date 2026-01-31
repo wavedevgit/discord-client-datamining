@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var14 = function(arg0) { // Original name: messageEvents, environment: var7
+    var14 = function arg0() {
         _fun98312: for (var _fun98312_ip = 0;;) switch (_fun98312_ip) {
             case 0:
                 var0 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 throw var0;
         }
     };
-    var9 = function(arg0) { // Original name: speakingEvents, environment: var7
+    var9 = function arg0() {
         _fun98313: for (var _fun98313_ip = 0;;) switch (_fun98313_ip) {
             case 0:
                 var0 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var1.RPCErrors;
     var _closure1_slot16 = var3;
     var3 = var1.RPCEvents;
-    var16 = function(arg0) { // Original name: messageEventsValidation, environment: var7
+    var16 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var11 = function(arg0) { // Original name: speakingEventsValidation, environment: var7
+    var11 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17 = var17.OAuth2Scopes;
     var17 = var17.RPC;
     var6.scope = var17;
-    var17 = function(arg0) { // Original name: validation, environment: var7
+    var17 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var17;
-    var17 = function(arg0) { // Original name: handler, environment: var7
+    var17 = function arg0() {
         _fun98317: for (var _fun98317_ip = 0;;) switch (_fun98317_ip) {
             case 0:
                 var0 = arg0;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18[1] = var20;
     var17[var19] = var18;
     var6.scope = var17;
-    var17 = function(arg0) { // Original name: validation, environment: var7
+    var17 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var17;
-    var17 = function(arg0) { // Original name: handler, environment: var7
+    var17 = function arg0() {
         _fun98320: for (var _fun98320_ip = 0;;) switch (_fun98320_ip) {
             case 0:
                 var0 = arg0;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18[1] = var20;
     var17[var19] = var18;
     var6.scope = var17;
-    var17 = function(arg0) { // Original name: validation, environment: var7
+    var17 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var17;
-    var17 = function(arg0) { // Original name: handler, environment: var7
+    var17 = function arg0() {
         _fun98325: for (var _fun98325_ip = 0;;) switch (_fun98325_ip) {
             case 0:
                 var0 = arg0;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18[1] = var20;
     var17[var19] = var18;
     var6.scope = var17;
-    var17 = function(arg0) { // Original name: validation, environment: var7
+    var17 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var17;
-    var17 = function(arg0) { // Original name: handler, environment: var7
+    var17 = function arg0() {
         _fun98330: for (var _fun98330_ip = 0;;) switch (_fun98330_ip) {
             case 0:
                 var0 = arg0;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18[1] = var20;
     var17[var19] = var18;
     var6.scope = var17;
-    var17 = function() { // Original name: handler, environment: var7
+    var17 = function() {
         var0 = function(arg0) { // Environment: var0
             _fun98335: for (var _fun98335_ip = 0;;) switch (_fun98335_ip) {
                 case 0:
@@ -1031,7 +1031,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.OAuth2Scopes;
     var9 = var9.RPC;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1044,7 +1044,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.OAuth2Scopes;
     var9 = var9.RPC;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1063,7 +1063,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var13;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1082,7 +1082,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var13;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[2] = var13;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var13;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1141,7 +1141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[2] = var13;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1160,7 +1160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var13;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1169,7 +1169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.ACTIVITY_PIP_MODE_UPDATE;
     var6 = {};
     var6.scope = var0;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1178,7 +1178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.ACTIVITY_LAYOUT_MODE_UPDATE;
     var6 = {};
     var6.scope = var0;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1187,7 +1187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.FRAME_LAYOUT_MODE_UPDATE;
     var6 = {};
     var6.scope = var0;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1207,7 +1207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[0] = var15;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1221,7 +1221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[0] = var15;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1234,7 +1234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.OAuth2Scopes;
     var9 = var9.RPC;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1257,7 +1257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var16;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1270,7 +1270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.OAuth2Scopes;
     var9 = var9.RELATIONSHIPS_READ;
     var6.scope = var9;
-    var9 = function(arg0) { // Original name: handler, environment: var7
+    var9 = function arg0() {
         _fun98351: for (var _fun98351_ip = 0;;) switch (_fun98351_ip) {
             case 0:
                 var0 = arg0;
@@ -1352,7 +1352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var16;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = function(arg0) { // Environment: var0
             _fun98353: for (var _fun98353_ip = 0;;) switch (_fun98353_ip) {
                 case 0:
@@ -1427,7 +1427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var16;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function(arg0) { // Original name: handler, environment: var7
+    var9 = function arg0() {
         var1 = arg0;
         var1 = var1.args;
         var1 = var1.guild_id;
@@ -1499,7 +1499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var15;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1514,7 +1514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var15;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -1533,7 +1533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var15;
     var9[var14] = var11;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = function(arg0) { // Environment: var0
             _fun98359: for (var _fun98359_ip = 0;;) switch (_fun98359_ip) {
                 case 0:
@@ -1685,7 +1685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10[1] = var12;
     var9[var11] = var10;
     var6.scope = var9;
-    var9 = function() { // Original name: handler, environment: var7
+    var9 = function() {
         var0 = function(arg0) { // Environment: var0
             _fun98361: for (var _fun98361_ip = 0;;) switch (_fun98361_ip) {
                 case 0:
@@ -1722,7 +1722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.AUTHORIZE_REQUEST;
     var3 = {};
     var3.scope = var0;
-    var7 = function() { // Original name: handler, environment: var7
+    var7 = function() {
         var0 = undefined;
         return var0;
     };

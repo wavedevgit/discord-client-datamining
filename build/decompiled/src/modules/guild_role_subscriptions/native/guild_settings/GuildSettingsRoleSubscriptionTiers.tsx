@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: DraftBadge, environment: var1
+    var0 = function() {
         var0 = _closure1_slot18;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: ArchivedBadge, environment: var1
+    var0 = function() {
         var0 = _closure1_slot18;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: UnsavedBadge, environment: var1
+    var0 = function() {
         var0 = _closure1_slot18;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: Row, environment: var1
+    var0 = function arg0() {
         _fun116651: for (var _fun116651_ip = 0;;) switch (_fun116651_ip) {
             case 0:
                 var0 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: EditListingButton, environment: var1
+    var0 = function arg0() {
         _fun116652: for (var _fun116652_ip = 0;;) switch (_fun116652_ip) {
             case 0:
                 var0 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot22;
                 var4 = {};
                 var4.onPress = var12;
-                var10 = function() { // Original name: onLongPress, environment: var10
+                var10 = function() {
                     var7 = _closure2_slot0;
                     var6 = _closure2_slot1;
                     var1 = _closure2_slot2;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionsTiersInner, environment: var1
+    var0 = function arg0() {
         _fun116655: for (var _fun116655_ip = 0;;) switch (_fun116655_ip) {
             case 0:
                 var1 = arg0;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot1;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerTitle, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot16;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot3;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.id;
                         case 149:
                             var0.groupListingId = var3;
-                            var3 = function() { // Original name: onAfterTierCreation, environment: var3
+                            var3 = function() {
                                 var2 = _closure2_slot1;
                                 var1 = var2.navigate;
                                 var0 = _closure1_slot13;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6.bind(var3)(var5, var4);
                 return var4;
             case 649:
-                var4 = function(arg0) { // Original name: handleEditListing, environment: var0
+                var4 = function arg0() {
                     _fun116665: for (var _fun116665_ip = 0;;) switch (_fun116665_ip) {
                         case 0:
                             var6 = arg0;
@@ -927,7 +927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 123:
                             var1.groupListingId = var7;
                             var1.initialEditStateId = var6;
-                            var5 = function(arg0) { // Original name: onBeforeDispatchNewListing, environment: var5
+                            var5 = function arg0() {
                                 var0 = arg0;
                                 var3 = var0.id;
                                 var2 = _closure3_slot0;
@@ -980,7 +980,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.guildId = var6;
                     var5 = _closure2_slot5;
                     var1.groupListingId = var5;
-                    var0 = function() { // Original name: onPress, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot11;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -1363,7 +1363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTiers.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionsTiers, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var3 = _closure1_slot16;

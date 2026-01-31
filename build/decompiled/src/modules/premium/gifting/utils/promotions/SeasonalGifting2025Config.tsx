@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.CollectiblesItemType;
     var4 = var4.AVATAR_DECORATION;
     var15.type = var4;
-    var4 = function() { // Original name: name, environment: var8
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15.name = var4;
-    var4 = function() { // Original name: a11yLabel, environment: var8
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14.type = var4;
     var4 = 'sky';
     var14.palette = var4;
-    var4 = function() { // Original name: name, environment: var8
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var14.name = var4;
-    var4 = function() { // Original name: a11yLabel, environment: var8
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.CollectiblesItemType;
     var1 = var1.AVATAR_DECORATION;
     var13.type = var1;
-    var1 = function() { // Original name: name, environment: var8
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var13.name = var1;
-    var1 = function() { // Original name: a11yLabel, environment: var8
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.rewardAssetIdMap = var5;
     var5 = {};
     var10 = {};
-    var12 = function() { // Original name: getAnimationData, environment: var8
+    var12 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 6;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.getAnimationData = var12;
-    var12 = function() { // Original name: getGlowAnimationData, environment: var8
+    var12 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.gradientConfig = var10;
     var1.chatGiftIcon = var5;
     var5 = {};
-    var10 = function(arg0, arg1) { // Original name: getImageUrl, environment: var8
+    var10 = function arg0, arg1() {
         _fun74736: for (var _fun74736_ip = 0;;) switch (_fun74736_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getImageUrl = var10;
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.title = var10;
-    var10 = function() { // Original name: description, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.description = var10;
-    var10 = function() { // Original name: cta, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.analyticsPage = var12;
     var1.firstTimeNotice = var5;
     var5 = {};
-    var12 = function() { // Original name: description, environment: var8
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.description = var12;
-    var12 = function() { // Original name: cta, environment: var8
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.analyticsPage = var12;
     var1.reminderNagbar = var5;
     var5 = {};
-    var12 = function(arg0, arg1) { // Original name: getImageUrl, environment: var8
+    var12 = function arg0, arg1() {
         _fun74742: for (var _fun74742_ip = 0;;) switch (_fun74742_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getImageUrl = var12;
-    var12 = function() { // Original name: title, environment: var8
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.title = var12;
-    var12 = function() { // Original name: description, environment: var8
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.description = var12;
-    var12 = function() { // Original name: cta, environment: var8
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.analyticsPage = var9;
     var1.reminderNotice = var5;
     var5 = {};
-    var9 = function() { // Original name: heading, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.heading = var9;
-    var9 = function() { // Original name: subheading, environment: var8
+    var9 = function() {
         _fun74747: for (var _fun74747_ip = 0;;) switch (_fun74747_ip) {
             case 0:
                 var4 = arguments[0];
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.subheading = var9;
-    var9 = function(arg0) { // Original name: mobileSubheading, environment: var8
+    var9 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5.mobileSubheading = var9;
     var5.gradientConfig = var4;
-    var9 = function(arg0, arg1) { // Original name: getImageUrl, environment: var8
+    var9 = function arg0, arg1() {
         _fun74749: for (var _fun74749_ip = 0;;) switch (_fun74749_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -544,7 +544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getImageUrl = var9;
-    var9 = function() { // Original name: getBannerImageUrl, environment: var8
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.getBannerImageUrl = var9;
-    var9 = function() { // Original name: getBackgroundImageUrl, environment: var8
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 13;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.getBackgroundImageUrl = var9;
     var1.planSelection = var5;
     var5 = {};
-    var9 = function() { // Original name: desktopBannerText, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.desktopBannerText = var9;
-    var9 = function() { // Original name: mobileBannerText, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.mobileBannerText = var9;
-    var9 = function() { // Original name: getImageUrl, environment: var8
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -610,12 +610,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.getImageUrl = var9;
-    var9 = function() { // Original name: gradientConfig, environment: var8
+    var9 = function() {
         var0 = _closure1_slot3;
         return var0;
     };
     var5.gradientConfig = var9;
-    var9 = function() { // Original name: getBackgroundImageUrl, environment: var8
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -627,7 +627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.getBackgroundImageUrl = var9;
     var1.planSelectionBanner = var5;
     var5 = {};
-    var9 = function(arg0) { // Original name: getImageUrl, environment: var8
+    var9 = function arg0() {
         _fun74757: for (var _fun74757_ip = 0;;) switch (_fun74757_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getImageUrl = var9;
-    var9 = function() { // Original name: title, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.title = var9;
-    var9 = function() { // Original name: body, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.body = var9;
-    var9 = function() { // Original name: getBackgroundImageUrl, environment: var8
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 15;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.t;
     var9 = var9.qyhlUP;
     var5.monthGiftText = var9;
-    var9 = function() { // Original name: collectRewardButtonText, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.collectRewardButtonText = var9;
-    var9 = function() { // Original name: rewardCollectedText, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.rewardCollectedText = var9;
     var1.giftPurchaseConfirmation = var5;
     var5 = {};
-    var9 = function() { // Original name: heading, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.heading = var9;
-    var9 = function() { // Original name: primarySubtitle, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.primarySubtitle = var9;
-    var8 = function() { // Original name: secondarySubtitle, environment: var8
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;

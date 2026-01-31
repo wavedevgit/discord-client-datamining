@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notification_center/native/ForYouSuggestedFriendRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForYouSuggestedFriendRow, environment: var1
+    var1 = function arg0() {
         _fun103297: for (var _fun103297_ip = 0;;) switch (_fun103297_ip) {
             case 0:
                 var0 = arg0;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = 'md';
             case 1327:
                 var15.size = var20;
-                var20 = function(arg0) { // Original name: onAddSuggestion, environment: var19
+                var20 = function arg0() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 26;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var15.onAddSuggestion = var20;
-                var19 = function() { // Original name: onFinishAnimation, environment: var19
+                var19 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;

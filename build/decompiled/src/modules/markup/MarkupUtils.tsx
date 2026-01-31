@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var20;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var4;
-    var21 = function(arg0, arg1) { // Original name: combineAndInjectMentionRule, environment: var7
+    var21 = function arg0, arg1() {
         var3 = arg0;
         var0 = var3.mention;
         var1 = _closure1_slot0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var18.reactParserFor;
     var8 = var8.bind(var18)(var13);
     var1.parse = var8;
-    var7 = function(arg0, arg1, arg2, arg3) { // Original name: parseTopic, environment: var7
+    var7 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var1 = 4;

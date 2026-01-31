@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/CaughtUpRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExploreServersRow, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var1 = var1.visible;
         var _closure2_slot0 = var1;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var13[var6];
         var4 = var9.bind(var3)(var1);
         var2 = var4.useAnimatedStyle;
-        var1 = function() { // Original name: E, environment: var0
+        var1 = function() {
             _fun104317: for (var _fun104317_ip = 0;;) switch (_fun104317_ip) {
                 case 0:
                     var0 = {};
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var13[var6];
         var4 = var9.bind(var3)(var1);
         var2 = var4.useAnimatedStyle;
-        var1 = function() { // Original name: b, environment: var0
+        var1 = function() {
             _fun104318: for (var _fun104318_ip = 0;;) switch (_fun104318_ip) {
                 case 0:
                     var0 = {};
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var13[var6];
         var2 = var9.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: x, environment: var0
+        var0 = function() {
             _fun104319: for (var _fun104319_ip = 0;;) switch (_fun104319_ip) {
                 case 0:
                     var0 = {};

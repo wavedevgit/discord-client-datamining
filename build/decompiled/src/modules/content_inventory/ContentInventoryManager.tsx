@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117332: for (var _fun117332_ip = 0;;) switch (_fun117332_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: getBackoffJitter, environment: var1
+    var0 = function() {
         _fun117335: for (var _fun117335_ip = 0;;) switch (_fun117335_ip) {
             case 0:
                 var2 = arguments[0];
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: setFeedState, environment: var1
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 17;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: canFetch, environment: var1
+    var0 = function arg0() {
         _fun117337: for (var _fun117337_ip = 0;;) switch (_fun117337_ip) {
             case 0:
                 var3 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: cancelScheduledFetch, environment: var1
+    var0 = function arg0() {
         _fun117338: for (var _fun117338_ip = 0;;) switch (_fun117338_ip) {
             case 0:
                 var3 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: scheduleNextFetch, environment: var1
+    var0 = function() {
         _fun117339: for (var _fun117339_ip = 0;;) switch (_fun117339_ip) {
             case 0:
                 var3 = _closure1_slot21;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: fetchInventory, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot31;
         var2 = var3.apply;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _fetchInventory, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -703,21 +703,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: handleUpdatePollingState, environment: var1
+    var0 = function() {
         var1 = _closure1_slot29;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: handlePostConnectionOpen, environment: var1
+    var0 = function() {
         var1 = _closure1_slot32;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: handleConnectionClosed, environment: var1
+    var0 = function() {
         var2 = _closure1_slot28;
         var1 = _closure1_slot17;
         var0 = undefined;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: handleManualRefresh, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.feedId;
         var3 = var0.feature;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: handleInboxStale, environment: var1
+    var0 = function arg0() {
         _fun117350: for (var _fun117350_ip = 0;;) switch (_fun117350_ip) {
             case 0:
                 var0 = arg0;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: handleSpotifyNewTrack, environment: var1
+    var0 = function arg0() {
         _fun117351: for (var _fun117351_ip = 0;;) switch (_fun117351_ip) {
             case 0:
                 var0 = arg0;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: handleFetchGameProfileFeed, environment: var1
+    var0 = function() {
         var2 = _closure1_slot30;
         var1 = {};
         var3 = _closure1_slot14;
@@ -991,7 +991,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: ContentInventoryManager, environment: var0
+        var2 = function arg0() {
             _fun117354: for (var _fun117354_ip = 0;;) switch (_fun117354_ip) {
                 case 0:
                     var4 = this;

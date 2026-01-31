@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.int64toString = var0;
     var2.varint32write = var0;
     var2.varint32read = var0;
-    var3 = function() { // Original name: varint64read, environment: var1
+    var3 = function() {
         _fun14821: for (var _fun14821_ip = 0;;) switch (_fun14821_ip) {
             case 0:
                 var7 = this;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.varint64read = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: varint64write, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun14822: for (var _fun14822_ip = 0;;) switch (_fun14822_ip) {
             case 0:
                 var1 = arg0;
@@ -244,12 +244,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.varint64write = var3;
-    var3 = function(arg0) { // Original name: int64fromString, environment: var1
+    var3 = function arg0() {
         _fun14823: for (var _fun14823_ip = 0;;) switch (_fun14823_ip) {
             case 0:
                 var6 = arg0;
                 var _closure2_slot0 = var6;
-                var4 = function(arg0, arg1) { // Original name: add1e6digit, environment: var1
+                var4 = function arg0, arg1() {
                     _fun14824: for (var _fun14824_ip = 0;;) switch (_fun14824_ip) {
                         case 0:
                             var0 = global;
@@ -325,12 +325,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.int64fromString = var3;
-    var3 = function(arg0, arg1) { // Original name: int64toString, environment: var1
+    var3 = function arg0, arg1() {
         _fun14825: for (var _fun14825_ip = 0;;) switch (_fun14825_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
-                var6 = function(arg0, arg1) { // Original name: decimalFrom1e7, environment: var0
+                var6 = function arg0, arg1() {
                     _fun14826: for (var _fun14826_ip = 0;;) switch (_fun14826_ip) {
                         case 0:
                             var3 = arg0;
@@ -442,7 +442,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.int64toString = var3;
-    var3 = function(arg0, arg1) { // Original name: varint32write, environment: var1
+    var3 = function arg0, arg1() {
         _fun14827: for (var _fun14827_ip = 0;;) switch (_fun14827_ip) {
             case 0:
                 var1 = arg0;
@@ -502,7 +502,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.varint32write = var3;
-    var1 = function() { // Original name: varint32read, environment: var1
+    var1 = function() {
         _fun14828: for (var _fun14828_ip = 0;;) switch (_fun14828_ip) {
             case 0:
                 var3 = this;

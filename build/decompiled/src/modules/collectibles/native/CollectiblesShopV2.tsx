@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun87992: for (var _fun87992_ip = 0;;) switch (_fun87992_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun87994: for (var _fun87994_ip = 0;;) switch (_fun87994_ip) {
             case 0:
                 var3 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.spinner = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: CollectiblesShopInternal, environment: var1
+    var3 = function arg0() {
         _fun87995: for (var _fun87995_ip = 0;;) switch (_fun87995_ip) {
             case 0:
                 var0 = arg0;
@@ -1105,7 +1105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.bind(var6)(var16);
                 var16 = {};
                 var16.data = var23;
-                var19 = function(arg0) { // Original name: renderItem, environment: var20
+                var19 = function arg0() {
                     _fun88006: for (var _fun88006_ip = 0;;) switch (_fun88006_ip) {
                         case 0:
                             var0 = arg0;
@@ -1205,7 +1205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var24;
             case 1775:
                 var17.fetchShopHomeError = var23;
-                var23 = function() { // Original name: onRenderFirstOrbsItem, environment: var20
+                var23 = function() {
                     _fun88005: for (var _fun88005_ip = 0;;) switch (_fun88005_ip) {
                         case 0:
                             var0 = _closure2_slot10;
@@ -1265,7 +1265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.bind(var6)(var17);
                 var17 = {};
                 var17.data = var22;
-                var20 = function(arg0) { // Original name: renderItem, environment: var20
+                var20 = function arg0() {
                     _fun88004: for (var _fun88004_ip = 0;;) switch (_fun88004_ip) {
                         case 0:
                             var0 = arg0;
@@ -1386,7 +1386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var1 = function(arg0) { // Original name: CollectiblesShopV2, environment: var1
+    var1 = function arg0() {
         _fun88007: for (var _fun88007_ip = 0;;) switch (_fun88007_ip) {
             case 0:
                 var5 = arg0;

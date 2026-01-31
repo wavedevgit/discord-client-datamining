@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: is, environment: var0
+    var1 = function arg0, arg1() {
         _fun75089: for (var _fun75089_ip = 0;;) switch (_fun75089_ip) {
             case 0:
                 var3 = arg0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.hasOwnProperty;
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1) { // Original name: shallowEqual, environment: var0
+    var1 = function arg0, arg1() {
         _fun75090: for (var _fun75090_ip = 0;;) switch (_fun75090_ip) {
             case 0:
                 var6 = arg0;

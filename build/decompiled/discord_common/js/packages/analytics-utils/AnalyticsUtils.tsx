@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var3 = function(arg0) { // Original name: isThrottled, environment: var1
+    var3 = function arg0() {
         _fun6183: for (var _fun6183_ip = 0;;) switch (_fun6183_ip) {
             case 0:
                 var2 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.queueTrackingEventMaker;
         var1 = var1.bind(var2)(var4, var3);
         var _closure2_slot1 = var1;
-        var0 = function(arg0, arg1) { // Original name: track, environment: var0
+        var0 = function arg0, arg1() {
             _fun6185: for (var _fun6185_ip = 0;;) switch (_fun6185_ip) {
                 case 0:
                     var5 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Row, environment: var1
+    var0 = function arg0() {
         _fun116876: for (var _fun116876_ip = 0;;) switch (_fun116876_ip) {
             case 0:
                 var0 = arg0;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AllChannelsSwitch, environment: var1
+    var1 = function arg0() {
         _fun116877: for (var _fun116877_ip = 0;;) switch (_fun116877_ip) {
             case 0:
                 var0 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var10.SOME_CHANNELS_ACCESS;
                 var13 = var11 === var13;
                 var4.selected = var13;
-                var13 = function() { // Original name: onPress, environment: var9
+                var13 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot4;
                     var1 = var0.SOME_CHANNELS_ACCESS;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.ALL_CHANNELS_ACCESS;
                 var10 = var11 === var10;
                 var5.selected = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot4;
                     var1 = var0.ALL_CHANNELS_ACCESS;

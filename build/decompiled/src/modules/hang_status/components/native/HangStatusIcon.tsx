@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hang_status/components/native/HangStatusIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun61964: for (var _fun61964_ip = 0;;) switch (_fun61964_ip) {
             case 0:
                 var2 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var4[var14];
                 var15 = var3.bind(var5)(var11);
                 var13 = var15.useAnimatedStyle;
-                var11 = function() { // Original name: O, environment: var1
+                var11 = function() {
                     _fun61965: for (var _fun61965_ip = 0;;) switch (_fun61965_ip) {
                         case 0:
                             var0 = {};
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var4[var14];
                 var13 = var3.bind(var5)(var11);
                 var11 = var13.useAnimatedStyle;
-                var1 = function() { // Original name: w, environment: var1
+                var1 = function() {
                     _fun61966: for (var _fun61966_ip = 0;;) switch (_fun61966_ip) {
                         case 0:
                             var0 = {};

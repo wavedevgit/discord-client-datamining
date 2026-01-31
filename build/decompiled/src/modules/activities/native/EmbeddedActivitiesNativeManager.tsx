@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var6;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun63798: for (var _fun63798_ip = 0;;) switch (_fun63798_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var0;
-            var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var3
+            var0 = function arg0, arg1, arg2, arg3() {
                 _fun63801: for (var _fun63801_ip = 0;;) switch (_fun63801_ip) {
                     case 0:
                         var4 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot19 = var0;
-            var0 = function() { // Original name: postMessageToWebView, environment: var3
+            var0 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot21;
                 var2 = var3.apply;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot20 = var0;
-            var0 = function() { // Original name: _postMessageToWebView, environment: var3
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot9;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var6[var4];
             var4 = var7.bind(var0)(var4);
             var3 = function(arg0) { // Environment: var3
-                var3 = function(arg0) { // Original name: EmbeddedActivitiesNativeManager, environment: var5
+                var3 = function arg0() {
                     _fun63808: for (var _fun63808_ip = 0;;) switch (_fun63808_ip) {
                         case 0:
                             var4 = this;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = '_initialize';
                 var4.key = var0;
-                var0 = function() { // Original name: value, environment: var5
+                var0 = function() {
                     _fun63810: for (var _fun63810_ip = 0;;) switch (_fun63810_ip) {
                         case 0:
                             var2 = this;
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = '_terminate';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun63814: for (var _fun63814_ip = 0;;) switch (_fun63814_ip) {
                         case 0:
                             var2 = this;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'showErrorModal';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var0 = arg0;
                     var9 = var0.code;
                     var4 = var0.message;
@@ -891,7 +891,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'showLaunchErrorModal';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 19;
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'showDevShelfOverrideEnabled';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 27;
@@ -959,7 +959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'releaseWebView';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun63818: for (var _fun63818_ip = 0;;) switch (_fun63818_ip) {
                         case 0:
                             var1 = this;
@@ -996,7 +996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'leaveActivity';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun63819: for (var _fun63819_ip = 0;;) switch (_fun63819_ip) {
                         case 0:
                             var0 = arg0;
@@ -1047,7 +1047,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hidePIPEmbed';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun63820: for (var _fun63820_ip = 0;;) switch (_fun63820_ip) {
                         case 0:
                             var1 = arg0;
@@ -1072,7 +1072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'clearEmbeddedActivityState';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     var4 = arg1;
                     var5 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -1108,7 +1108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'releaseFrameId';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var2 = this;
                     var0 = var2.frameId;
                     var1 = undefined;
@@ -1120,7 +1120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hasFrameId';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = this;
                     var1 = var0.frameId;
                     var0 = null;
@@ -1132,7 +1132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getOrCreateFrameId';
                 var4.key = var6;
-                var5 = function() { // Original name: value, environment: var5
+                var5 = function() {
                     _fun63824: for (var _fun63824_ip = 0;;) switch (_fun63824_ip) {
                         case 0:
                             var2 = this;

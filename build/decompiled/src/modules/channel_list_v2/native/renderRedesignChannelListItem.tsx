@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: renderThreads, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = arg1;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: calculateVoiceChannelHeaderInfo, environment: var1
+    var0 = function arg0() {
         _fun101982: for (var _fun101982_ip = 0;;) switch (_fun101982_ip) {
             case 0:
                 var2 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: calculateVoiceChannelButtonInfo, environment: var1
+    var0 = function arg0, arg1() {
         _fun101983: for (var _fun101983_ip = 0;;) switch (_fun101983_ip) {
             case 0:
                 var2 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_list_v2/native/renderRedesignChannelListItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getFastListRecyclerKey, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun101984: for (var _fun101984_ip = 0;;) switch (_fun101984_ip) {
             case 0:
                 var1 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFastListRecyclerKey = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: renderChannelListSectionHeader, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun101985: for (var _fun101985_ip = 0;;) switch (_fun101985_ip) {
             case 0:
                 var6 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderChannelListSectionHeader = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getChannelListSectionHeaderSize, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun101986: for (var _fun101986_ip = 0;;) switch (_fun101986_ip) {
             case 0:
                 var4 = arg0;
@@ -705,7 +705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelListSectionHeaderSize = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: renderChannelListSectionFooter, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun101987: for (var _fun101987_ip = 0;;) switch (_fun101987_ip) {
             case 0:
                 var14 = arg0;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderChannelListSectionFooter = var3;
-    var3 = function(arg0, arg1) { // Original name: getChannelListSectionHasFooterDivider, environment: var1
+    var3 = function arg0, arg1() {
         _fun101988: for (var _fun101988_ip = 0;;) switch (_fun101988_ip) {
             case 0:
                 var0 = arg0;
@@ -905,7 +905,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelListSectionHasFooterDivider = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getChannelListSectionFooterSize, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun101989: for (var _fun101989_ip = 0;;) switch (_fun101989_ip) {
             case 0:
                 var5 = arg0;
@@ -1032,7 +1032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelListSectionFooterSize = var3;
-    var3 = function(arg0) { // Original name: renderChannelListItem, environment: var1
+    var3 = function arg0() {
         _fun101990: for (var _fun101990_ip = 0;;) switch (_fun101990_ip) {
             case 0:
                 var0 = arg0;
@@ -1687,7 +1687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderChannelListItem = var3;
-    var3 = function(arg0) { // Original name: getChannelListItemSize, environment: var1
+    var3 = function arg0() {
         _fun101991: for (var _fun101991_ip = 0;;) switch (_fun101991_ip) {
             case 0:
                 var0 = arg0;
@@ -2217,7 +2217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelListItemSize = var3;
-    var1 = function(arg0) { // Original name: calculateVoiceSummary, environment: var1
+    var1 = function arg0() {
         _fun101992: for (var _fun101992_ip = 0;;) switch (_fun101992_ip) {
             case 0:
                 var0 = arg0;

@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot5;
                     var0.optionValueParser = var3;
                     var3 = {};
-                    var7 = function() { // Original name: commandOption, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot3;
                         var0 = 13;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.commandOption = var7;
-                    var7 = function() { // Original name: commandErrorOption, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot3;
                         var0 = 13;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.commandErrorOption = var7;
-                    var6 = function(arg0) { // Original name: autocomplete, environment: var6
+                    var6 = function arg0() {
                         _fun90148: for (var _fun90148_ip = 0;;) switch (_fun90148_ip) {
                             case 0:
                                 var4 = arg0;
@@ -389,13 +389,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = arg1;
         var0 = function() { // Environment: var0
             var0 = {};
-            var2 = function() { // Original name: getApplicationCommandManager, environment: var1
+            var2 = function() {
                 var0 = _closure2_slot11;
                 var0 = var0.current;
                 return var0;
             };
             var0.getApplicationCommandManager = var2;
-            var1 = function() { // Original name: updateState, environment: var1
+            var1 = function() {
                 var1 = _closure2_slot12;
                 var0 = undefined;
                 var0 = var1.bind(var0)();

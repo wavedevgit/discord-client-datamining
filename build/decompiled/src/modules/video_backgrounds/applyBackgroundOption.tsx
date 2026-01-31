@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _getFilterBlob, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: applyBackgroundMediaFilterSettings, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun66322: for (var _fun66322_ip = 0;;) switch (_fun66322_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: applyBackgroundOption, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _applyBackgroundOption, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 288:
                         var11 = var7;
-                        var10 = function(arg0) { // Original name: getFilterImage, environment: var5
+                        var10 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun66326
                         }
                     case 327:
-                        var5 = function() { // Original name: getFilterBlob, environment: var5
+                        var5 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot9;
                             var2 = var3.apply;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var3 = function() { // Original name: applyBackgroundOptionLive, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var3;
-    var0 = function() { // Original name: _applyBackgroundOptionLive, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _applyBackgroundOptionPreview, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -764,7 +764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/video_backgrounds/applyBackgroundOption.tsx';
     var4 = var5.bind(var6)(var4);
     var2.applyBackgroundOptionLive = var3;
-    var3 = function() { // Original name: applyBackgroundOptionPreview, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.applyBackgroundOptionPreview = var3;
-    var1 = function() { // Original name: applyInitialVideoBackgroundOption, environment: var1
+    var1 = function() {
         _fun66340: for (var _fun66340_ip = 0;;) switch (_fun66340_ip) {
             case 0:
                 var2 = _closure1_slot4;

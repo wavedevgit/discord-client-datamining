@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: setCurrentClient, environment: var2
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = function(arg0, arg1) { // Original name: initAndBind, environment: var2
+    var2 = function arg0, arg1() {
         _fun99479: for (var _fun99479_ip = 0;;) switch (_fun99479_ip) {
             case 0:
                 var4 = arg0;

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Object;
     var1 = var1.prototype;
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: isPrototype, environment: var0
+    var1 = function arg0() {
         _fun7047: for (var _fun7047_ip = 0;;) switch (_fun7047_ip) {
             case 0:
                 var1 = arg0;

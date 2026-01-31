@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun45434: for (var _fun45434_ip = 0;;) switch (_fun45434_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot15 = var5;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: FlashList, environment: var6
+        var4 = function arg0() {
             _fun45438: for (var _fun45438_ip = 0;;) switch (_fun45438_ip) {
                 case 0:
                     var7 = arg0;
@@ -1414,7 +1414,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'validateProps';
         var0.key = var1;
-        var1 = function() { // Original name: validateProps, environment: var6
+        var1 = function() {
             _fun45468: for (var _fun45468_ip = 0;;) switch (_fun45468_ip) {
                 case 0:
                     var2 = this;
@@ -1574,7 +1574,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'componentDidMount';
         var0.key = var5;
-        var5 = function() { // Original name: componentDidMount, environment: var6
+        var5 = function() {
             _fun45469: for (var _fun45469_ip = 0;;) switch (_fun45469_ip) {
                 case 0:
                     var2 = this;
@@ -1608,7 +1608,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'componentWillUnmount';
         var0.key = var5;
-        var5 = function() { // Original name: componentWillUnmount, environment: var6
+        var5 = function() {
             _fun45470: for (var _fun45470_ip = 0;;) switch (_fun45470_ip) {
                 case 0:
                     var1 = this;
@@ -1639,7 +1639,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'render';
         var0.key = var5;
-        var5 = function() { // Original name: render, environment: var6
+        var5 = function() {
             _fun45471: for (var _fun45471_ip = 0;;) switch (_fun45471_ip) {
                 case 0:
                     var12 = this;
@@ -1913,7 +1913,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getUpdatedWindowCorrectionConfig';
         var0.key = var5;
-        var5 = function() { // Original name: getUpdatedWindowCorrectionConfig, environment: var6
+        var5 = function() {
             _fun45472: for (var _fun45472_ip = 0;;) switch (_fun45472_ip) {
                 case 0:
                     var0 = this;
@@ -1947,7 +1947,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'isInitialScrollIndexInFirstRow';
         var0.key = var5;
-        var5 = function() { // Original name: isInitialScrollIndexInFirstRow, environment: var6
+        var5 = function() {
             _fun45473: for (var _fun45473_ip = 0;;) switch (_fun45473_ip) {
                 case 0:
                     var0 = this;
@@ -1973,7 +1973,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'validateListSize';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: validateListSize, environment: var6
+        var5 = function arg0() {
             _fun45474: for (var _fun45474_ip = 0;;) switch (_fun45474_ip) {
                 case 0:
                     var1 = this;
@@ -2034,7 +2034,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getTransform';
         var0.key = var5;
-        var5 = function() { // Original name: getTransform, environment: var6
+        var5 = function() {
             _fun45476: for (var _fun45476_ip = 0;;) switch (_fun45476_ip) {
                 case 0:
                     var0 = this;
@@ -2075,7 +2075,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getValidComponent';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: getValidComponent, environment: var6
+        var5 = function arg0() {
             _fun45477: for (var _fun45477_ip = 0;;) switch (_fun45477_ip) {
                 case 0:
                     var5 = arg0;
@@ -2109,7 +2109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'isStickyEnabled';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var6
+        var5 = function() {
             _fun45478: for (var _fun45478_ip = 0;;) switch (_fun45478_ip) {
                 case 0:
                     var0 = this;
@@ -2142,7 +2142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'prepareForLayoutAnimationRender';
         var0.key = var5;
-        var5 = function() { // Original name: prepareForLayoutAnimationRender, environment: var6
+        var5 = function() {
             _fun45479: for (var _fun45479_ip = 0;;) switch (_fun45479_ip) {
                 case 0:
                     var1 = this;
@@ -2194,7 +2194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'updateViewableItems';
         var0.key = var5;
-        var5 = function() { // Original name: updateViewableItems, environment: var6
+        var5 = function() {
             var0 = this;
             var1 = var0.viewabilityManager;
             var0 = var1.updateViewableItems;
@@ -2207,7 +2207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scrollToEnd';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: scrollToEnd, environment: var6
+        var5 = function arg0() {
             _fun45481: for (var _fun45481_ip = 0;;) switch (_fun45481_ip) {
                 case 0:
                     var5 = arg0;
@@ -2244,7 +2244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scrollToIndex';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: scrollToIndex, environment: var6
+        var5 = function arg0() {
             _fun45482: for (var _fun45482_ip = 0;;) switch (_fun45482_ip) {
                 case 0:
                     var1 = arg0;
@@ -2376,7 +2376,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scrollToItem';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: scrollToItem, environment: var6
+        var5 = function arg0() {
             _fun45483: for (var _fun45483_ip = 0;;) switch (_fun45483_ip) {
                 case 0:
                     var7 = arg0;
@@ -2429,7 +2429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scrollToOffset';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: scrollToOffset, environment: var6
+        var5 = function arg0() {
             _fun45484: for (var _fun45484_ip = 0;;) switch (_fun45484_ip) {
                 case 0:
                     var0 = arg0;
@@ -2478,7 +2478,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getScrollableNode';
         var0.key = var5;
-        var5 = function() { // Original name: getScrollableNode, environment: var6
+        var5 = function() {
             _fun45485: for (var _fun45485_ip = 0;;) switch (_fun45485_ip) {
                 case 0:
                     var0 = this;
@@ -2517,7 +2517,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'recyclerlistview_unsafe';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var6
+        var5 = function() {
             var0 = this;
             var0 = var0.rlvRef;
             return var0;
@@ -2527,7 +2527,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'firstItemOffset';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var6
+        var5 = function() {
             var0 = this;
             var0 = var0.distanceFromWindow;
             return var0;
@@ -2537,7 +2537,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'clearLayoutCacheOnUpdate';
         var0.key = var5;
-        var5 = function() { // Original name: clearLayoutCacheOnUpdate, environment: var6
+        var5 = function() {
             var0 = this;
             var0 = var0.state;
             var1 = var0.layoutProvider;
@@ -2551,7 +2551,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'getDerivedStateFromProps';
         var5.key = var0;
-        var0 = function(arg0, arg1) { // Original name: getDerivedStateFromProps, environment: var6
+        var0 = function arg0, arg1() {
             _fun45489: for (var _fun45489_ip = 0;;) switch (_fun45489_ip) {
                 case 0:
                     var1 = arg0;
@@ -2676,7 +2676,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var7 = 'getInitialMutableState';
         var5.key = var7;
-        var7 = function(arg0) { // Original name: getInitialMutableState, environment: var6
+        var7 = function arg0() {
             _fun45490: for (var _fun45490_ip = 0;;) switch (_fun45490_ip) {
                 case 0:
                     var2 = arg0;
@@ -2702,7 +2702,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         continue _fun45490
                     }
                 case 53:
-                    var4 = function(arg0) { // Original name: getStableId, environment: var1
+                    var4 = function arg0() {
                         var3 = arg0;
                         var0 = _closure3_slot0;
                         var2 = var0.props;
@@ -2820,7 +2820,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var7 = 'getLayoutProvider';
         var5.key = var7;
-        var6 = function(arg0, arg1) { // Original name: getLayoutProvider, environment: var6
+        var6 = function arg0, arg1() {
             var6 = arg0;
             var _closure3_slot0 = var6;
             var3 = _closure1_slot1;

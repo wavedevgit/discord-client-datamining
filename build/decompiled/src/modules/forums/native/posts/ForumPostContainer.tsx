@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/posts/ForumPostContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useForumPostContainerPressedIn, environment: var1
+    var3 = function() {
         var2 = _closure1_slot3;
         var1 = var2.useContext;
         var0 = _closure1_slot7;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useForumPostContainerPressedIn = var3;
-    var3 = function(arg0) { // Original name: ForumPostPressableContainer, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.threadId;
         var8 = var0.children;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var5;
         var1 = function() { // Environment: var1
             var0 = {};
-            var2 = function() { // Original name: onPressIn, environment: var1
+            var2 = function() {
                 var2 = _closure2_slot0;
                 var1 = var2.set;
                 var0 = true;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.onPressIn = var2;
-            var1 = function() { // Original name: onPressOut, environment: var1
+            var1 = function() {
                 var2 = _closure2_slot0;
                 var1 = var2.set;
                 var0 = false;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ForumPostPressableContainer = var3;
-    var1 = function(arg0) { // Original name: ForumPostDisabledContainer, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var6 = var0.style;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun54181: for (var _fun54181_ip = 0;;) switch (_fun54181_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun54184: for (var _fun54184_ip = 0;;) switch (_fun54184_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun54186: for (var _fun54186_ip = 0;;) switch (_fun54186_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: setCooldown, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun54187: for (var _fun54187_ip = 0;;) switch (_fun54187_ip) {
             case 0:
                 var2 = arg0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: resetCooldown, environment: var4
+    var0 = function arg0, arg1() {
         _fun54189: for (var _fun54189_ip = 0;;) switch (_fun54189_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var9 = function(arg0) { // Original name: handleUploadCancel, environment: var4
+    var9 = function arg0() {
         _fun54190: for (var _fun54190_ip = 0;;) switch (_fun54190_ip) {
             case 0:
                 var0 = arg0;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: SlowmodeStore, environment: var5
+        var3 = function() {
             _fun54192: for (var _fun54192_ip = 0;;) switch (_fun54192_ip) {
                 case 0:
                     var3 = this;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot8;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSlowmodeCooldownGuess';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun54194: for (var _fun54194_ip = 0;;) switch (_fun54194_ip) {
                 case 0:
                     var2 = arg1;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isChannelOnCooldown';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun54195: for (var _fun54195_ip = 0;;) switch (_fun54195_ip) {
                 case 0:
                     var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var10 = function(arg0) { // Original name: handleSlowmodeResetCooldown, environment: var4
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var2 = var0.slowmodeType;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SLOWMODE_RESET_COOLDOWN = var10;
-    var10 = function(arg0) { // Original name: handleSlowmodeSetCooldown, environment: var4
+    var10 = function arg0() {
         _fun54197: for (var _fun54197_ip = 0;;) switch (_fun54197_ip) {
             case 0:
                 var0 = arg0;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.SLOWMODE_SET_COOLDOWN = var10;
-    var10 = function(arg0) { // Original name: handleUploadStart, environment: var4
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var2 = _closure1_slot16;
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.UPLOAD_START = var10;
     var3.UPLOAD_FAIL = var9;
     var3.UPLOAD_CANCEL_REQUEST = var9;
-    var9 = function(arg0) { // Original name: handleUpdateCooldown, environment: var4
+    var9 = function arg0() {
         var1 = arg0;
         var1 = var1.channels;
         var _closure2_slot0 = var1;
@@ -829,7 +829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CHANNEL_UPDATES = var9;
-    var4 = function() { // Original name: clear, environment: var4
+    var4 = function() {
         var1 = _closure1_slot10;
         var1 = var1.SendMessage;
         var2 = new Array(2);

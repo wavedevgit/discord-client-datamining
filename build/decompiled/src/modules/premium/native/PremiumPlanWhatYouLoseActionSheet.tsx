@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = new var21[var9](var20, var19);
     var1 = var1 instanceof Object ? var1 : var4;
     var _closure1_slot10 = var1;
-    var1 = function(arg0) { // Original name: WhatYouLoseItem, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.imageSource;
         var8 = var0.text;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/native/PremiumPlanWhatYouLoseActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun59079: for (var _fun59079_ip = 0;;) switch (_fun59079_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var5;
                 var3 = undefined;
                 var _closure2_slot5 = var3;
-                var0 = function() { // Original name: onClose, environment: var13
+                var0 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 19;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot6 = var0;
-                var0 = function(arg0) { // Original name: onContinueDowngradeOrCancellation, environment: var13
+                var0 = function arg0() {
                     var3 = _closure2_slot0;
                     var0 = undefined;
                     var2 = arg0;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.Colors;
                 var17 = var17.BRAND;
                 var8.color = var17;
-                var17 = function() { // Original name: onPress, environment: var13
+                var17 = function() {
                     _fun59084: for (var _fun59084_ip = 0;;) switch (_fun59084_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun59084;
                         case 146:
                             var2 = _closure2_slot2;
-                            var1 = function(arg0) { // Original name: showTier0DowngradeModal, environment: var1
+                            var1 = function arg0() {
                                 var7 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var9 = 20;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1.analyticsLocations = var5;
                                 var5 = arg0;
                                 var1.currentPremiumType = var5;
-                                var5 = function() { // Original name: continueToCancel, environment: var5
+                                var5 = function() {
                                     var3 = _closure1_slot1;
                                     var5 = _closure1_slot2;
                                     var0 = 21;
@@ -831,7 +831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.variant = var17;
                 var14 = var14.keepText;
                 var9.style = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
                     var5 = 20;

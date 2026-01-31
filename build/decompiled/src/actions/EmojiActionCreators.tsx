@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _updateEmoji, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: dedupeFavoriteEmojis, environment: var1
+    var0 = function arg0() {
         _fun73334: for (var _fun73334_ip = 0;;) switch (_fun73334_ip) {
             case 0:
                 var0 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getFavoriteEmojiNameOrId, environment: var1
+    var0 = function arg0() {
         _fun73336: for (var _fun73336_ip = 0;;) switch (_fun73336_ip) {
             case 0:
                 var2 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/EmojiActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: setDiversityColor, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setDiversityColor = var3;
-    var3 = function(arg0) { // Original name: fetchEmoji, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot1;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchEmoji = var3;
-    var3 = function(arg0) { // Original name: uploadEmoji, environment: var1
+    var3 = function arg0() {
         _fun73342: for (var _fun73342_ip = 0;;) switch (_fun73342_ip) {
             case 0:
                 var1 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.uploadEmoji = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: deleteEmoji, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73345: for (var _fun73345_ip = 0;;) switch (_fun73345_ip) {
             case 0:
                 var8 = arg0;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.deleteEmoji = var3;
-    var3 = function() { // Original name: updateEmoji, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateEmoji = var3;
-    var3 = function(arg0) { // Original name: favoriteEmoji, environment: var1
+    var3 = function arg0() {
         _fun73348: for (var _fun73348_ip = 0;;) switch (_fun73348_ip) {
             case 0:
                 var4 = _closure1_slot12;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.favoriteEmoji = var3;
-    var1 = function(arg0) { // Original name: unfavoriteEmoji, environment: var1
+    var1 = function arg0() {
         _fun73350: for (var _fun73350_ip = 0;;) switch (_fun73350_ip) {
             case 0:
                 var4 = _closure1_slot12;

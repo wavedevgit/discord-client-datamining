@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun39205: for (var _fun39205_ip = 0;;) switch (_fun39205_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: createCompositeKey, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.channel_id;
         var3 = var0.id;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var8 = function(arg0) { // Original name: handleSearchMessagesSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.data;
         var0 = {};
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var0 = function() { // Original name: reset, environment: var3
+    var0 = function() {
         var0 = {};
         _closure1_slot7 = var0;
         var0 = undefined;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ExplicitMediaSearchStore, environment: var0
+        var3 = function() {
             _fun39215: for (var _fun39215_ip = 0;;) switch (_fun39215_ip) {
                 case 0:
                     var3 = this;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'getMessage';
         var4.key = var5;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             var1 = _closure1_slot7;
             var3 = _closure1_slot9;
             var2 = {};
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var1.SEARCH_MESSAGES_SUCCESS = var8;
     var1.MOD_VIEW_SEARCH_MESSAGES_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleMessageUpdate, environment: var3
+    var8 = function arg0() {
         _fun39217: for (var _fun39217_ip = 0;;) switch (_fun39217_ip) {
             case 0:
                 var0 = arg0;
@@ -272,21 +272,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_UPDATE = var8;
-    var8 = function() { // Original name: handleLogout, environment: var3
+    var8 = function() {
         var1 = _closure1_slot10;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function() { // Original name: handleConnectionOpen, environment: var3
+    var8 = function() {
         var1 = _closure1_slot10;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var3 = function(arg0) { // Original name: handleScanTimeout, environment: var3
+    var3 = function arg0() {
         _fun39220: for (var _fun39220_ip = 0;;) switch (_fun39220_ip) {
             case 0:
                 var0 = arg0;

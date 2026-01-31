@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.url = var8;
                 var1.speaking = var7;
                 var1.size = var6;
-                var5 = function() { // Original name: renderVideoDetails, environment: var5
+                var5 = function() {
                     _fun64548: for (var _fun64548_ip = 0;;) switch (_fun64548_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/UserTile.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun64551: for (var _fun64551_ip = 0;;) switch (_fun64551_ip) {
             case 0:
                 var5 = arg0;
@@ -1069,7 +1069,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.bind(var3)(var10);
                 var10 = {};
                 var10.voiceChannelEffect = var20;
-                var19 = function() { // Original name: onComplete, environment: var19
+                var19 = function() {
                     var2 = _closure1_slot7;
                     var1 = _closure2_slot5;
                     var0 = undefined;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun10689: for (var _fun10689_ip = 0;;) switch (_fun10689_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var1 = function(arg0) { // Original name: applyDefaultOptions, environment: var3
+    var1 = function arg0() {
         _fun10692: for (var _fun10692_ip = 0;;) switch (_fun10692_ip) {
             case 0:
                 var4 = global;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.Client;
     var3 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: BrowserClient, environment: var5
+        var3 = function arg0() {
             _fun10694: for (var _fun10694_ip = 0;;) switch (_fun10694_ip) {
                 case 0:
                     var6 = this;
@@ -402,7 +402,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'eventFromException';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: eventFromException, environment: var5
+        var0 = function arg0, arg1() {
             var0 = this;
             var3 = _closure1_slot0;
             var2 = _closure1_slot1;
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'eventFromMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: eventFromMessage, environment: var5
+        var6 = function arg0() {
             _fun10697: for (var _fun10697_ip = 0;;) switch (_fun10697_ip) {
                 case 0:
                     var0 = this;
@@ -486,7 +486,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_prepareEvent';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: _prepareEvent, environment: var5
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun10698: for (var _fun10698_ip = 0;;) switch (_fun10698_ip) {
                 case 0:
                     var3 = arg0;
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 16:
                     var3.platform = var0;
                     var10 = _closure2_slot0;
-                    var5 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
+                    var5 = function arg0, arg1, arg2, arg3() {
                         _fun10699: for (var _fun10699_ip = 0;;) switch (_fun10699_ip) {
                             case 0:
                                 var4 = arg0;

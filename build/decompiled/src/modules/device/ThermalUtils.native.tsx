@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 0:
                         var1 = arg0;
                         var _closure2_slot0 = var1;
-                        var5 = function(arg0) { // Original name: updateThermalState, environment: var0
+                        var5 = function arg0() {
                             var0 = arg0;
                             var _closure3_slot0 = var0;
                             var3 = _closure1_slot0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.bind(var7)(var1);
             var _closure1_slot5 = var1;
             var1 = {};
-            var6 = function() { // Original name: getRawThermalState, environment: var3
+            var6 = function() {
                 var1 = _closure1_slot5;
                 var0 = var1.getState;
                 var0 = var0.bind(var1)();
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.getRawThermalState = var6;
-            var6 = function() { // Original name: useRawThermalState, environment: var3
+            var6 = function() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = function(arg0) { // Environment: var0
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.useRawThermalState = var6;
-            var3 = function(arg0) { // Original name: addListener, environment: var3
+            var3 = function arg0() {
                 var0 = {};
                 var3 = _closure1_slot5;
                 var2 = var3.subscribe;

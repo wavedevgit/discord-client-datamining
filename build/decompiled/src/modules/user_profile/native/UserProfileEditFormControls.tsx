@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: FormControlText, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.text;
         var1 = _closure1_slot8;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: FormControlSubtext, environment: var1
+    var0 = function arg0() {
         _fun79870: for (var _fun79870_ip = 0;;) switch (_fun79870_ip) {
             case 0:
                 var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileEditFormControls.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: UserProfileEditFormButton, environment: var1
+    var3 = function arg0() {
         _fun79871: for (var _fun79871_ip = 0;;) switch (_fun79871_ip) {
             case 0:
                 var0 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.UserProfileEditFormButton = var3;
-    var1 = function(arg0) { // Original name: UserProfileEditFormSwitch, environment: var1
+    var1 = function arg0() {
         _fun79872: for (var _fun79872_ip = 0;;) switch (_fun79872_ip) {
             case 0:
                 var0 = arg0;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 1;
                 var0 = var1[var0];
                 _closure2_slot2 = var0;
-                var12 = function() { // Original name: handleOnPress, environment: var16
+                var12 = function() {
                     _fun79873: for (var _fun79873_ip = 0;;) switch (_fun79873_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var12;
             case 266:
                 var4.onPress = var17;
-                var16 = function() { // Original name: onAccessibilityTap, environment: var16
+                var16 = function() {
                     var2 = _closure2_slot2;
                     var0 = _closure2_slot0;
                     var1 = !var0;

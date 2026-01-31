@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun7057: for (var _fun7057_ip = 0;;) switch (_fun7057_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: areStatesEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun7060: for (var _fun7060_ip = 0;;) switch (_fun7060_ip) {
             case 0:
                 var4 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: defaultRetryableErrors, environment: var1
+    var0 = function arg0() {
         _fun7061: for (var _fun7061_ip = 0;;) switch (_fun7061_ip) {
             case 0:
                 var2 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: defaultBackoff, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Error;
     var6 = var6.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: HTTPResponseError, environment: var0
+        var3 = function arg0() {
             _fun7064: for (var _fun7064_ip = 0;;) switch (_fun7064_ip) {
                 case 0:
                     var4 = this;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'setStatus';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.status = var1;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/flux/createFetchStore.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createFetchStore, environment: var1
+    var1 = function arg0, arg1() {
         _fun7067: for (var _fun7067_ip = 0;;) switch (_fun7067_ip) {
             case 0:
                 var0 = arg1;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 130:
                 var _closure2_slot8 = var0;
                 var _closure2_slot9 = var3;
-                var0 = function(arg0) { // Original name: getUseStoreState, environment: var1
+                var0 = function arg0() {
                     _fun7068: for (var _fun7068_ip = 0;;) switch (_fun7068_ip) {
                         case 0:
                             var4 = arg0;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot10 = var0;
-                var0 = function() { // Original name: loader, environment: var1
+                var0 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot12;
                     var2 = var3.apply;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot11 = var0;
-                var0 = function() { // Original name: _loader, environment: var1
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var7;
                                 case 365: // catch_target0
                                     CatchBlockStart(arg_register = 8);
-                                    var7 = function(arg0) { // Original name: makeError, environment: var3
+                                    var7 = function arg0() {
                                         _fun7074: for (var _fun7074_ip = 0;;) switch (_fun7074_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot12 = var0;
-                var0 = function(arg0) { // Original name: useCfsHook, environment: var1
+                var0 = function arg0() {
                     _fun7078: for (var _fun7078_ip = 0;;) switch (_fun7078_ip) {
                         case 0:
                             var7 = 0;

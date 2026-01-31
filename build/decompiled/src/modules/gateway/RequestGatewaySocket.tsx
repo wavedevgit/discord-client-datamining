@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: addToken, environment: var1
+    var0 = function arg0() {
         _fun7376: for (var _fun7376_ip = 0;;) switch (_fun7376_ip) {
             case 0:
                 var3 = arg0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: deleteToken, environment: var1
+    var0 = function arg0() {
         _fun7377: for (var _fun7377_ip = 0;;) switch (_fun7377_ip) {
             case 0:
                 var2 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: makeBridgeToken, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var5 = function() { // Original name: isRequested, environment: var1
+    var5 = function() {
         _fun7379: for (var _fun7379_ip = 0;;) switch (_fun7379_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0) { // Original name: setRequestedBy, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot15;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0) { // Original name: stopRequest, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot15;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var3;
-    var0 = function() { // Original name: _withRequest, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: withStateTransitions, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot11;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -255,14 +255,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/gateway/RequestGatewaySocket.tsx';
     var6 = var7.bind(var8)(var6);
     var2.isRequested = var5;
-    var5 = function() { // Original name: recordStartHeadlessTask, environment: var1
+    var5 = function() {
         var0 = false;
         _closure1_slot6 = var0;
         var0 = undefined;
         return var0;
     };
     var2.recordStartHeadlessTask = var5;
-    var5 = function() { // Original name: describeConnectionReasons, environment: var1
+    var5 = function() {
         _fun7389: for (var _fun7389_ip = 0;;) switch (_fun7389_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.describeConnectionReasons = var5;
     var2.setRequestedBy = var4;
-    var4 = function(arg0) { // Original name: startBridgeTo, environment: var1
+    var4 = function arg0() {
         var4 = _closure1_slot10;
         var0 = undefined;
         var3 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.startBridgeTo = var4;
     var2.stopRequest = var3;
-    var1 = function() { // Original name: withRequest, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;

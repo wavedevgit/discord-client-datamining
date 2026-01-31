@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun96532: for (var _fun96532_ip = 0;;) switch (_fun96532_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildPopoutStore, environment: var5
+        var3 = function() {
             _fun96536: for (var _fun96536_ip = 0;;) switch (_fun96536_ip) {
                 case 0:
                     var3 = this;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot7;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun96538: for (var _fun96538_ip = 0;;) switch (_fun96538_ip) {
                 case 0:
                     var0 = _closure1_slot9;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun96539: for (var _fun96539_ip = 0;;) switch (_fun96539_ip) {
                 case 0:
                     var0 = _closure1_slot9;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchFailed';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun96540: for (var _fun96540_ip = 0;;) switch (_fun96540_ip) {
                 case 0:
                     var0 = _closure1_slot9;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleFetchStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var4 = _closure1_slot9;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_POPOUT_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var5 = var0.guild;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_POPOUT_FETCH_SUCCESS = var8;
-    var3 = function(arg0) { // Original name: handleFetchFailure, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var4 = _closure1_slot9;

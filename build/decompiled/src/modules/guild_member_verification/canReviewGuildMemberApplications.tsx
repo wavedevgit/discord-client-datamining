@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/canReviewGuildMemberApplications.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: canReviewGuildMemberApplications, environment: var1
+    var3 = function arg0() {
         _fun49863: for (var _fun49863_ip = 0;;) switch (_fun49863_ip) {
             case 0:
                 var3 = _closure1_slot2;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canReviewGuildMemberApplications = var3;
-    var1 = function(arg0) { // Original name: useCanReviewGuildMemberApplications, environment: var1
+    var1 = function arg0() {
         _fun49864: for (var _fun49864_ip = 0;;) switch (_fun49864_ip) {
             case 0:
                 var1 = arg0;

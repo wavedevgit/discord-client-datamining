@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: asyncGeneratorStep, environment: var1
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         _fun14194: for (var _fun14194_ip = 0;;) switch (_fun14194_ip) {
             case 0:
                 var9 = arg0;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var2;
-    var1 = function(arg0) { // Original name: _asyncToGenerator, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure4_slot0 = var0;
                 var0 = arg1;
                 var _closure4_slot1 = var0;
-                var1 = function(arg0) { // Original name: _next, environment: var2
+                var1 = function arg0() {
                     var8 = _closure1_slot0;
                     var15 = _closure4_slot2;
                     var14 = _closure4_slot0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure4_slot3 = var1;
-                var0 = function(arg0) { // Original name: _throw, environment: var2
+                var0 = function arg0() {
                     var8 = _closure1_slot0;
                     var15 = _closure4_slot2;
                     var14 = _closure4_slot0;

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = '../discord_common/js/packages/libdiscore/js_shim/js/shim.native.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: isBlockedDomain, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isBlockedDomain = var5;
-    var5 = function(arg0) { // Original name: startFetchingBlockedDomains, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.startFetchingBlockedDomains = var5;
-    var5 = function() { // Original name: consumeLogs, environment: var1
+    var5 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -61,12 +61,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.consumeLogs = var5;
-    var5 = function() { // Original name: isUnsupportedBrowser, environment: var1
+    var5 = function() {
         var0 = false;
         return var0;
     };
     var2.isUnsupportedBrowser = var5;
-    var5 = function() { // Original name: getExperimentCacher, environment: var1
+    var5 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getExperimentCacher = var5;
-    var1 = function() { // Original name: getHttpClientAPI, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

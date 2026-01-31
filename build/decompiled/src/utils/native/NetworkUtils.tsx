@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: ensureChangeListenerCreated, environment: var3
+    var0 = function() {
         _fun16695: for (var _fun16695_ip = 0;;) switch (_fun16695_ip) {
             case 0:
                 var2 = _closure1_slot7;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: cleanupChangeListener, environment: var3
+    var0 = function() {
         _fun16696: for (var _fun16696_ip = 0;;) switch (_fun16696_ip) {
             case 0:
                 var2 = _closure1_slot7;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: convertNetInfo, environment: var3
+    var0 = function arg0() {
         _fun16697: for (var _fun16697_ip = 0;;) switch (_fun16697_ip) {
             case 0:
                 var0 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: notifyListeners, environment: var3
+    var0 = function arg0() {
         _fun16698: for (var _fun16698_ip = 0;;) switch (_fun16698_ip) {
             case 0:
                 var7 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: addCallback, environment: var3
+    var0 = function arg0, arg1() {
         _fun16701: for (var _fun16701_ip = 0;;) switch (_fun16701_ip) {
             case 0:
                 var1 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: removeCallback, environment: var3
+    var0 = function arg0, arg1() {
         _fun16702: for (var _fun16702_ip = 0;;) switch (_fun16702_ip) {
             case 0:
                 var1 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1 = var6.bind(var7)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: addOnlineCallback, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot13;
         var0 = undefined;
         var2 = true;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addOnlineCallback = var6;
-    var6 = function(arg0) { // Original name: removeOnlineCallback, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot14;
         var0 = undefined;
         var2 = true;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeOnlineCallback = var6;
-    var6 = function(arg0) { // Original name: addOfflineCallback, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot13;
         var0 = undefined;
         var2 = false;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addOfflineCallback = var6;
-    var6 = function(arg0) { // Original name: removeOfflineCallback, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot14;
         var0 = undefined;
         var2 = false;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeOfflineCallback = var6;
-    var6 = function(arg0) { // Original name: addChangeCallback, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot6;
         var2 = var3.push;
         var1 = arg0;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addChangeCallback = var6;
-    var6 = function(arg0) { // Original name: removeChangeCallback, environment: var3
+    var6 = function arg0() {
         _fun16709: for (var _fun16709_ip = 0;;) switch (_fun16709_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.removeChangeCallback = var6;
-    var6 = function() { // Original name: getNetworkInformation, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getNetworkInformation = var6;
-    var3 = function() { // Original name: isOnline, environment: var3
+    var3 = function() {
         var0 = _closure1_slot8;
         return var0;
     };

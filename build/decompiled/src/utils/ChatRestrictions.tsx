@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.TOKEN_REGEX;
     var _closure1_slot3 = var1;
     var3 = {};
-    var1 = function(arg0, arg1, arg2) { // Original name: check, environment: var6
+    var1 = function arg0, arg1, arg2() {
         _fun73726: for (var _fun73726_ip = 0;;) switch (_fun73726_ip) {
             case 0:
                 var2 = arg1;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = new Array(2);
     var1[0] = var3;
     var3 = {};
-    var6 = function(arg0) { // Original name: check, environment: var6
+    var6 = function arg0() {
         _fun73727: for (var _fun73727_ip = 0;;) switch (_fun73727_ip) {
             case 0:
                 var3 = _closure1_slot3;

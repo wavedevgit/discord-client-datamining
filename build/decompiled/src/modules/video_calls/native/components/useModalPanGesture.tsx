@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/useModalPanGesture.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useModalPanGesture, environment: var1
+    var1 = function arg0() {
         _fun91489: for (var _fun91489_ip = 0;;) switch (_fun91489_ip) {
             case 0:
                 var1 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.enabled;
                 var4 = var1.bind(var2)(var4);
                 var2 = var4.onStart;
-                var1 = function() { // Original name: J, environment: var0
+                var1 = function() {
                     _fun91490: for (var _fun91490_ip = 0;;) switch (_fun91490_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.__initData = var15;
                 var4 = var2.bind(var4)(var1);
                 var2 = var4.onUpdate;
-                var1 = function(arg0) { // Original name: x, environment: var0
+                var1 = function arg0() {
                     var0 = arg0;
                     var6 = var0.translationY;
                     var3 = _closure2_slot4;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.__initData = var15;
                 var2 = var2.bind(var4)(var1);
                 var1 = var2.onEnd;
-                var0 = function(arg0) { // Original name: O, environment: var0
+                var0 = function arg0() {
                     _fun91492: for (var _fun91492_ip = 0;;) switch (_fun91492_ip) {
                         case 0:
                             var0 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var13.bind(var2)(var3);
                             var9 = var10.withSpring;
                             var8 = _closure2_slot3;
-                            var7 = function() { // Original name: n, environment: var3
+                            var7 = function() {
                                 var3 = _closure1_slot0;
                                 var5 = _closure1_slot2;
                                 var0 = 0;

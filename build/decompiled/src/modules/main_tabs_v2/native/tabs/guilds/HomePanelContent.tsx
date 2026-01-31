@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var0
                     _fun100718: for (var _fun100718_ip = 0;;) switch (_fun100718_ip) {
                         case 0:
-                            var4 = function(arg0) { // Original name: handleStateChange, environment: var0
+                            var4 = function arg0() {
                                 _fun100719: for (var _fun100719_ip = 0;;) switch (_fun100719_ip) {
                                     case 0:
                                         var0 = arg0;

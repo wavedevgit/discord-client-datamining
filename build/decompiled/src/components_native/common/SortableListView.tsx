@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun102993: for (var _fun102993_ip = 0;;) switch (_fun102993_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot17 = var6;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: SortableListView, environment: var5
+        var3 = function arg0() {
             _fun103005: for (var _fun103005_ip = 0;;) switch (_fun103005_ip) {
                 case 0:
                     var5 = this;
@@ -1238,12 +1238,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot10;
                     var2 = var3.create;
                     var1 = {};
-                    var5 = function() { // Original name: onStartShouldSetPanResponder, environment: var4
+                    var5 = function() {
                         var0 = true;
                         return var0;
                     };
                     var1.onStartShouldSetPanResponder = var5;
-                    var5 = function(arg0, arg1) { // Original name: onMoveShouldSetPanResponderCapture, environment: var4
+                    var5 = function arg0, arg1() {
                         _fun103022: for (var _fun103022_ip = 0;;) switch (_fun103022_ip) {
                             case 0:
                                 var0 = arg1;
@@ -1272,7 +1272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.onMoveShouldSetPanResponderCapture = var5;
-                    var5 = function(arg0, arg1) { // Original name: onPanResponderMove, environment: var4
+                    var5 = function arg0, arg1() {
                         var3 = arg1;
                         var0 = 0;
                         var3.dx = var0;
@@ -1286,7 +1286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPanResponderMove = var5;
-                    var5 = function() { // Original name: onPanResponderGrant, environment: var4
+                    var5 = function() {
                         _fun103024: for (var _fun103024_ip = 0;;) switch (_fun103024_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
@@ -1319,7 +1319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.onPanResponderGrant = var5;
-                    var5 = function() { // Original name: onPanResponderTerminate, environment: var4
+                    var5 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.setState;
                         var0 = {
@@ -1332,7 +1332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPanResponderTerminate = var5;
-                    var4 = function() { // Original name: onPanResponderRelease, environment: var4
+                    var4 = function() {
                         _fun103026: for (var _fun103026_ip = 0;;) switch (_fun103026_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
@@ -1495,7 +1495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var0 = true;
@@ -1566,7 +1566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.clearTimeout;
             var0 = this;
@@ -1580,7 +1580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMemoedRowData';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun103031: for (var _fun103031_ip = 0;;) switch (_fun103031_ip) {
                 case 0:
                     var2 = arg0;
@@ -1626,7 +1626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun103032: for (var _fun103032_ip = 0;;) switch (_fun103032_ip) {
                 case 0:
                     var6 = this;

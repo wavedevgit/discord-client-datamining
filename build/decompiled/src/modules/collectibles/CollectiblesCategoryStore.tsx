@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var8
+    var0 = function() {
         _fun41899: for (var _fun41899_ip = 0;;) switch (_fun41899_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var _closure1_slot27 = var3;
     var _closure1_slot28 = var1;
-    var1 = function(arg0, arg1) { // Original name: setRecommendedGiftSkuIds, environment: var8
+    var1 = function arg0, arg1() {
         _fun41902: for (var _fun41902_ip = 0;;) switch (_fun41902_ip) {
             case 0:
                 var4 = arg0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var1;
-    var3 = function() { // Original name: reset, environment: var8
+    var3 = function() {
         var0 = _closure1_slot10;
         _closure1_slot13 = var0;
         var0 = _closure1_slot11;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var3;
-    var1 = function() { // Original name: handleExperimentChange, environment: var8
+    var1 = function() {
         _fun41904: for (var _fun41904_ip = 0;;) switch (_fun41904_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var8
-        var3 = function() { // Original name: CollectiblesCategoryStore, environment: var5
+        var3 = function() {
             _fun41906: for (var _fun41906_ip = 0;;) switch (_fun41906_ip) {
                 case 0:
                     var3 = this;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var4 = var3.syncWith;
             var1 = _closure1_slot8;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingCategories';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingProduct';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41909: for (var _fun41909_ip = 0;;) switch (_fun41909_ip) {
                 case 0:
                     var3 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'error';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastErrorTimestamp';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot26;
             return var0;
         };
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastSuccessfulFetch';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot25;
             return var0;
         };
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastFetchOptions';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot27;
             return var0;
         };
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'categories';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'products';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'productsWithVariantsAsGroup';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'recommendedGiftSkuIds';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'skipNumCategories';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot28;
             return var0;
         };
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCategory';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41919: for (var _fun41919_ip = 0;;) switch (_fun41919_ip) {
                 case 0:
                     var3 = arg0;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProduct';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41920: for (var _fun41920_ip = 0;;) switch (_fun41920_ip) {
                 case 0:
                     var3 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProductsBySkus';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = arg0;
             var2 = var3.map;
             var1 = function(arg0) { // Environment: var0
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProductFetchError';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41924: for (var _fun41924_ip = 0;;) switch (_fun41924_ip) {
                 case 0:
                     var3 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProductFetchErrorTimestamp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41925: for (var _fun41925_ip = 0;;) switch (_fun41925_ip) {
                 case 0:
                     var3 = arg0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProductByStoreListingId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41926: for (var _fun41926_ip = 0;;) switch (_fun41926_ip) {
                 case 0:
                     var3 = arg0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCategoryByStoreListingId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41927: for (var _fun41927_ip = 0;;) switch (_fun41927_ip) {
                 case 0:
                     var3 = arg0;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCategoryForProduct';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun41928: for (var _fun41928_ip = 0;;) switch (_fun41928_ip) {
                 case 0:
                     var2 = this;
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var16 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: COLLECTIBLES_CATEGORIES_FETCH, environment: var8
+    var9 = function arg0() {
         var0 = true;
         _closure1_slot20 = var0;
         var0 = undefined;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_CATEGORIES_FETCH = var9;
-    var9 = function(arg0) { // Original name: COLLECTIBLES_CATEGORIES_FETCH_SUCCESS, environment: var8
+    var9 = function arg0() {
         _fun41930: for (var _fun41930_ip = 0;;) switch (_fun41930_ip) {
             case 0:
                 var2 = arg0;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.COLLECTIBLES_CATEGORIES_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: COLLECTIBLES_CATEGORIES_FETCH_FAILURE, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.error;
         var0 = _closure1_slot10;
@@ -998,7 +998,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_CATEGORIES_FETCH_FAILURE = var9;
-    var9 = function(arg0) { // Original name: COLLECTIBLES_PRODUCT_FETCH, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.skuId;
         var1 = global;
@@ -1048,7 +1048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_PRODUCT_FETCH = var9;
-    var9 = function(arg0) { // Original name: COLLECTIBLES_PRODUCT_FETCH_SUCCESS, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.skuId;
         var4 = var0.product;
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_PRODUCT_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: COLLECTIBLES_PRODUCT_FETCH_FAILURE, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.skuId;
         var5 = var0.error;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.COLLECTIBLES_PRODUCT_FETCH_FAILURE = var9;
-    var9 = function(arg0) { // Original name: COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS, environment: var8
+    var9 = function arg0() {
         _fun41940: for (var _fun41940_ip = 0;;) switch (_fun41940_ip) {
             case 0:
                 var1 = arg0;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS = var9;
-    var8 = function(arg0) { // Original name: COLLECTIBLES_SKIP_NUM_CATEGORIES, environment: var8
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.skipNumCategories;
         _closure1_slot28 = var1;

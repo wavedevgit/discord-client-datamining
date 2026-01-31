@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: parseContentLengthHeader, environment: var0
+    var2 = function arg0() {
         _fun12332: for (var _fun12332_ip = 0;;) switch (_fun12332_ip) {
             case 0:
                 var4 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.parseContentLengthHeader = var2;
-    var0 = function(arg0) { // Original name: getBodySize, environment: var0
+    var0 = function arg0() {
         _fun12333: for (var _fun12333_ip = 0;;) switch (_fun12333_ip) {
             case 0:
                 var1 = arg0;

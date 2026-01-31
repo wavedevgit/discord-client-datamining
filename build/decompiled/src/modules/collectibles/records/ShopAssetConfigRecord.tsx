@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0) { // Original name: AssetDisplayConfigRecord, environment: var1
+        var4 = function arg0() {
             var1 = arg0;
             var2 = this;
             var4 = _closure1_slot0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'toDesktopStyles';
         var0.key = var2;
-        var2 = function() { // Original name: value, environment: var1
+        var2 = function() {
             _fun42072: for (var _fun42072_ip = 0;;) switch (_fun42072_ip) {
                 case 0:
                     var0 = this;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toMobileStyles';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             _fun42073: for (var _fun42073_ip = 0;;) switch (_fun42073_ip) {
                 case 0:
                     var0 = this;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fromServer';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var2 = _closure2_slot0;
             var0 = var2.prototype;
             var1 = Object.create(var0, {

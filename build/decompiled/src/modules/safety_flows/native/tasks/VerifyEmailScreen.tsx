@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/tasks/VerifyEmailScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun117806: for (var _fun117806_ip = 0;;) switch (_fun117806_ip) {
             case 0:
                 var20 = _closure1_slot0;

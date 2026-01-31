@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: assignBillingSessionId, environment: var1
+    var0 = function arg0, arg1() {
         _fun46859: for (var _fun46859_ip = 0;;) switch (_fun46859_ip) {
             case 0:
                 var1 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getCommonProperties, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var4 = arg1;
         var3 = _closure1_slot0;
         var5 = _closure1_slot2;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getCommonQuestProperties, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun46861: for (var _fun46861_ip = 0;;) switch (_fun46861_ip) {
             case 0:
                 var1 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getCommonAdContentProperties, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var5 = arg0;
         var0 = {};
         var0.ad_content_id = var5;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: trackEvent, environment: var1
+    var0 = function arg0, arg1() {
         _fun46863: for (var _fun46863_ip = 0;;) switch (_fun46863_ip) {
             case 0:
                 var5 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var4 = function(arg0) { // Original name: trackQuestEvent, environment: var1
+    var4 = function arg0() {
         _fun46864: for (var _fun46864_ip = 0;;) switch (_fun46864_ip) {
             case 0:
                 var1 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var3 = function(arg0) { // Original name: trackAdContentEvent, environment: var1
+    var3 = function arg0() {
         _fun46865: for (var _fun46865_ip = 0;;) switch (_fun46865_ip) {
             case 0:
                 var2 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var0 = function() { // Original name: _getAdUserMetadata, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: getCommonClickEventProperties, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _getCommonClickEventProperties, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun46872
                         }
                     case 58:
-                        var2 = function() { // Original name: getAdUserMetadata, environment: var2
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot18;
                             var2 = var3.apply;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _trackQuestContentClicked, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _trackAdContentClicked, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.trackQuestEvent = var4;
     var2.trackAdContentEvent = var3;
-    var3 = function() { // Original name: trackQuestContentClicked, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackQuestContentClicked = var3;
-    var3 = function() { // Original name: trackAdContentClicked, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;
@@ -963,7 +963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAdContentClicked = var3;
-    var3 = function(arg0) { // Original name: trackQuestBarOrDockModeChange, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.questContent;
         var3 = var0.sourceQuestContent;
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackQuestBarOrDockModeChange = var3;
-    var1 = function(arg0, arg1) { // Original name: trackQuestEmbedFallbackViewed, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 13;

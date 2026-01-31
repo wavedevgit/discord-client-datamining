@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/YouBarExperiment.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useYouBarEnabled, environment: var3
+    var4 = function arg0() {
         var3 = _closure1_slot0;
         var2 = var3.useExperiment;
         var1 = {};
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useYouBarEnabled = var4;
-    var3 = function(arg0) { // Original name: useYouBarBackButtonBadgeEnabled, environment: var3
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = var3.useExperiment;
         var1 = {};

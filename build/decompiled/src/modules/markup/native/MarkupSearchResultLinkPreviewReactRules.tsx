@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/markup/native/MarkupSearchResultLinkPreviewReactRules.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: createSearchResultLinkPreviewReactRules, environment: var1
+    var1 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var0 = 0;

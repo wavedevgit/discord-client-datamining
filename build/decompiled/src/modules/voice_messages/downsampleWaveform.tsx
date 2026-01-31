@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_messages/downsampleWaveform.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: downsampleWaveform, environment: var1
+    var1 = function arg0, arg1() {
         _fun90493: for (var _fun90493_ip = 0;;) switch (_fun90493_ip) {
             case 0:
                 var0 = arg0;

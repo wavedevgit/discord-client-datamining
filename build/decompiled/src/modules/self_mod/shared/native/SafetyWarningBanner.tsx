@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: SafetyWarningBanner, environment: var6
+    var1 = function arg0() {
         var1 = arg0;
         var11 = var1.channelId;
         var _closure2_slot0 = var11;

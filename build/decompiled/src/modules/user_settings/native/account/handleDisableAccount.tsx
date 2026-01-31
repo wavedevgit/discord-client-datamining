@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/handleDisableAccount.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: handleDisableAccount, environment: var1
+    var1 = function() {
         _fun81206: for (var _fun81206_ip = 0;;) switch (_fun81206_ip) {
             case 0:
                 var2 = arguments[0];
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 11:
                 var2 = false;
             case 13:
-                var3 = function() { // Original name: hasOwnedGuilds, environment: var1
+                var3 = function() {
                     _fun81207: for (var _fun81207_ip = 0;;) switch (_fun81207_ip) {
                         case 0:
                             var3 = _closure1_slot4;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun81206
                 }
             case 30:
-                var2 = function() { // Original name: getDisableAlertProps, environment: var1
+                var2 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var2 = 2;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.toUpperCase;
                     var1 = var0.bind(var1)();
                     var0 = {};
-                    var3 = function(arg0) { // Original name: onSubmit, environment: var3
+                    var3 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 3;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun81206_ip = 54;
                 continue _fun81206;
             case 43:
-                var1 = function() { // Original name: getDeleteAlertProps, environment: var1
+                var1 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var2 = 2;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.toUpperCase;
                     var1 = var0.bind(var1)();
                     var0 = {};
-                    var3 = function(arg0) { // Original name: onSubmit, environment: var3
+                    var3 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 3;

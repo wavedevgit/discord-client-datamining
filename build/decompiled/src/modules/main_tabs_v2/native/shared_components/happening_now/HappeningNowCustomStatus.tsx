@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CustomStatusActivityCard, environment: var1
+    var1 = function arg0() {
         _fun101637: for (var _fun101637_ip = 0;;) switch (_fun101637_ip) {
             case 0:
                 var0 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var1;
                 var1 = function() { // Environment: var14
-                    var1 = function() { // Original name: _loadEmoji, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var1;
-                    var1 = function() { // Original name: loadEmoji, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;

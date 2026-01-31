@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Item, environment: var1
+    var0 = function arg0() {
         _fun108130: for (var _fun108130_ip = 0;;) switch (_fun108130_ip) {
             case 0:
                 var1 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(0);
                 var1 = var6.bind(var7)(var2, var1);
                 _closure2_slot4 = var1;
-                var1 = function(arg0) { // Original name: ListItem, environment: var0
+                var1 = function arg0() {
                     var0 = arg0;
                     var5 = var0.label;
                     var4 = var0.onPress;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.children = var7;
                     var5 = var3.bind(var0)(var6, var5);
                     var1.label = var5;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         _fun108134: for (var _fun108134_ip = 0;;) switch (_fun108134_ip) {
                             case 0:
                                 var2 = _closure2_slot2;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.children = var8;
                     var5 = var7.bind(var0)(var6, var5);
                     var1.label = var5;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         _fun108136: for (var _fun108136_ip = 0;;) switch (_fun108136_ip) {
                             case 0:
                                 var2 = _closure2_slot2;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: AutocompleteFailedEmptyState, environment: var1
+    var0 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherAutocompleteActionSheet, environment: var1
+    var1 = function arg0() {
         _fun108139: for (var _fun108139_ip = 0;;) switch (_fun108139_ip) {
             case 0:
                 var1 = arg0;
@@ -803,7 +803,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.AppLauncherList;
                 var7 = {};
                 var7.ref = var14;
-                var13 = function(arg0, arg1) { // Original name: keyExtractor, environment: var13
+                var13 = function arg0, arg1() {
                     _fun108146: for (var _fun108146_ip = 0;;) switch (_fun108146_ip) {
                         case 0:
                             var0 = arg0;

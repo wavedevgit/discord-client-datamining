@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0, arg1) { // Original name: APIError, environment: var1
+        var2 = function arg0, arg1() {
             _fun6803: for (var _fun6803_ip = 0;;) switch (_fun6803_ip) {
                 case 0:
                     var4 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'getFieldMessage';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun6804: for (var _fun6804_ip = 0;;) switch (_fun6804_ip) {
                 case 0:
                     var2 = arg0;

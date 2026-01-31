@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: percentToFloat, environment: var1
+    var0 = function arg0() {
         _fun48732: for (var _fun48732_ip = 0;;) switch (_fun48732_ip) {
             case 0:
                 var0 = arg0;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var3;
     var3 = /^([+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)(%?)$/;
     var _closure1_slot5 = var3;
-    var3 = function(arg0, arg1) { // Original name: offsetComparator, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var2 = 0;
         var1 = var0[var2];
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var3;
-    var1 = function(arg0, arg1) { // Original name: extractGradient, environment: var1
+    var1 = function arg0, arg1() {
         _fun48734: for (var _fun48734_ip = 0;;) switch (_fun48734_ip) {
             case 0:
                 var4 = arg0;

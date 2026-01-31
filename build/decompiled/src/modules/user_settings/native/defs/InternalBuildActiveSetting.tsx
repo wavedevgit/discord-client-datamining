@@ -33,12 +33,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.MobilePhoneSettingsIcon;
     var1.IconComponent = var8;
-    var8 = function() { // Original name: useInternalBuildActiveDescription, environment: var7
+    var8 = function() {
         var0 = 'Build installed from builds.discord.tools';
         return var0;
     };
     var1.useDescription = var8;
-    var7 = function() { // Original name: useHasCheckNativeUpdateSetting, environment: var7
+    var7 = function() {
         _fun87560: for (var _fun87560_ip = 0;;) switch (_fun87560_ip) {
             case 0:
                 var3 = _closure1_slot0;

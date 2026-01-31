@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = "function pnpm_BottomSheetBodyTsx1(){const{Platform,animatedIndex,animatedPosition}=this.__closure;return{opacity:Platform.OS==='android'&&animatedIndex.get()===-1?0:1,transform:[{translateY:animatedPosition.get()}]};}";
     var4.code = var5;
     var _closure1_slot6 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetBodyComponent, environment: var1
+    var1 = function arg0() {
         _fun45309: for (var _fun45309_ip = 0;;) switch (_fun45309_ip) {
             case 0:
                 var0 = arg0;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var7[var5];
                 var9 = var6.bind(var2)(var5);
                 var7 = var9.useAnimatedStyle;
-                var6 = function() { // Original name: pnpm_BottomSheetBodyTsx1, environment: var1
+                var6 = function() {
                     _fun45310: for (var _fun45310_ip = 0;;) switch (_fun45310_ip) {
                         case 0:
                             var0 = {};

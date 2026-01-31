@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var8;
-            var13 = function(arg0, arg1) { // Original name: updatePropsOnReactJS, environment: var1
+            var13 = function arg0, arg1() {
                 _fun33948: for (var _fun33948_ip = 0;;) switch (_fun33948_ip) {
                     case 0:
                         var2 = _closure1_slot1;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun33947
             }
         case 117:
-            var3 = function(arg0, arg1) { // Original name: pnpm_updatePropsTs2, environment: var1
+            var3 = function arg0, arg1() {
                 _fun33951: for (var _fun33951_ip = 0;;) switch (_fun33951_ip) {
                     case 0:
                         var4 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun33947_ip = 269;
             continue _fun33947;
         case 204:
-            var9 = function(arg0, arg1, arg2) { // Original name: pnpm_updatePropsTs1, environment: var1
+            var9 = function arg0, arg1, arg2() {
                 _fun33949: for (var _fun33949_ip = 0;;) switch (_fun33949_ip) {
                     case 0:
                         var1 = arg1;
@@ -227,11 +227,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun33947
             }
         case 347:
-            var11 = function() { // Original name: pnpm_updatePropsTs6, environment: var1
+            var11 = function() {
                 var0 = new Array(0);
                 var _closure2_slot0 = var0;
                 var0 = {};
-                var2 = function(arg0, arg1) { // Original name: update, environment: var1
+                var2 = function arg0, arg1() {
                     var1 = arg1;
                     var _closure3_slot0 = var1;
                     var1 = this;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.update = var2;
-                var1 = function() { // Original name: flush, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var0 = var2._updatePropsPaper;
                     var1 = _closure2_slot0;
@@ -305,12 +305,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun33947_ip = 448;
             continue _fun33947;
         case 384:
-            var9 = function() { // Original name: pnpm_updatePropsTs3, environment: var1
+            var9 = function() {
                 var0 = new Array(0);
                 var _closure2_slot1 = var0;
                 var4 = {};
                 var _closure2_slot2 = var4;
-                var0 = function(arg0) { // Original name: checkUpdate, environment: var1
+                var0 = function arg0() {
                     _fun33954: for (var _fun33954_ip = 0;;) switch (_fun33954_ip) {
                         case 0:
                             var2 = arg0;
@@ -346,7 +346,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = _closure2_slot2;
                             var4 = global;
                             var5 = var4.requestAnimationFrame;
-                            var4 = function() { // Original name: pnpm_updatePropsTs5, environment: var0
+                            var4 = function() {
                                 var3 = _closure2_slot2;
                                 var2 = _closure3_slot0;
                                 var0 = undefined;
@@ -410,7 +410,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.__initData = var2;
                 var _closure2_slot3 = var0;
                 var0 = {};
-                var2 = function(arg0, arg1) { // Original name: update, environment: var1
+                var2 = function arg0, arg1() {
                     var1 = arg1;
                     var _closure3_slot0 = var1;
                     var1 = this;
@@ -455,7 +455,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.update = var2;
-                var1 = function() { // Original name: flush, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var0 = var2._updatePropsFabric;
                     var1 = _closure2_slot1;
@@ -508,7 +508,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var8[var4];
             var8 = var7.bind(var0)(var4);
             var7 = var8.runOnUIImmediately;
-            var4 = function() { // Original name: pnpm_updatePropsTs7, environment: var1
+            var4 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot6;
                 var0 = undefined;
@@ -527,7 +527,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun33947_ip = 618;
             continue _fun33947;
         case 557:
-            var4 = function() { // Original name: maybeThrowError, environment: var1
+            var4 = function() {
                 _fun33964: for (var _fun33964_ip = 0;;) switch (_fun33964_ip) {
                     case 0:
                         var3 = _closure1_slot1;
@@ -568,7 +568,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var6.Proxy;
             var7 = {};
             var7.get = var4;
-            var4 = function() { // Original name: set, environment: var1
+            var4 = function() {
                 var1 = _closure1_slot7;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
@@ -590,7 +590,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5.UpdatePropsManager = var4;
         case 618:
             var2.default = var3;
-            var1 = function(arg0, arg1, arg2, arg3) { // Original name: updatePropsJestWrapper, environment: var1
+            var1 = function arg0, arg1, arg2, arg3() {
                 var3 = arg1;
                 var0 = arg2;
                 var4 = arg3;

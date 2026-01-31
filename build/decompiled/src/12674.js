@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = function(arg0) { // Original name: isASCIIDigit, environment: var0
+    var3 = function arg0() {
         _fun97088: for (var _fun97088_ip = 0;;) switch (_fun97088_ip) {
             case 0:
                 var2 = arg0;
@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var3;
-    var2 = function(arg0) { // Original name: isASCIIAlpha, environment: var0
+    var2 = function arg0() {
         _fun97089: for (var _fun97089_ip = 0;;) switch (_fun97089_ip) {
             case 0:
                 var3 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var1.isASCIIDigit = var3;
     var1.isASCIIAlpha = var2;
-    var2 = function(arg0) { // Original name: isASCIIAlphanumeric, environment: var0
+    var2 = function arg0() {
         _fun97090: for (var _fun97090_ip = 0;;) switch (_fun97090_ip) {
             case 0:
                 var3 = arg0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isASCIIAlphanumeric = var2;
-    var0 = function(arg0) { // Original name: isASCIIHex, environment: var0
+    var0 = function arg0() {
         _fun97091: for (var _fun97091_ip = 0;;) switch (_fun97091_ip) {
             case 0:
                 var3 = arg0;

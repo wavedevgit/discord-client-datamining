@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var6;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: WorkSchedulerTelemetry, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'reset';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var2 = this;
             var4 = _closure1_slot0;
             var5 = _closure1_slot1;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearTime';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0._timeTracking;
             var1 = null;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_storeTimeValue';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var3 = arg0;
             var2 = this;
             var5 = _closure1_slot2;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'time';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94629: for (var _fun94629_ip = 0;;) switch (_fun94629_ip) {
                 case 0:
                     var0 = this;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'timeEnd';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94630: for (var _fun94630_ip = 0;;) switch (_fun94630_ip) {
                 case 0:
                     var2 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'timeTrack';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun94631: for (var _fun94631_ip = 0;;) switch (_fun94631_ip) {
                 case 0:
                     var3 = this;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'measure';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun94632: for (var _fun94632_ip = 0;;) switch (_fun94632_ip) {
                 case 0:
                     var2 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'track';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94633: for (var _fun94633_ip = 0;;) switch (_fun94633_ip) {
                 case 0:
                     var2 = arg0;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toggleTelemetry';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._enabled = var1;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isTelemetryEnabled';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._enabled;
             return var0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'generateTelemetry';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var4 = this;
             var5 = global;
             var2 = var5.Object;

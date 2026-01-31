@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Pile/native/GuildIconPile.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildIconPile, environment: var1
+    var1 = function arg0() {
         _fun62062: for (var _fun62062_ip = 0;;) switch (_fun62062_ip) {
             case 0:
                 var0 = arg0;

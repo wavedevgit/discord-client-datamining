@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 221:
             var _closure1_slot12 = var3;
-            var3 = function(arg0) { // Original name: originWhitelistToRegex, environment: var1
+            var3 = function arg0() {
                 var2 = '^';
                 var1 = var2.concat;
                 var3 = _closure1_slot0;
@@ -171,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot13 = var3;
-            var3 = function(arg0, arg1, arg2) { // Original name: createOnShouldStartLoadWithRequest, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var9 = var10.map;
                             var8 = _closure1_slot13;
                             var9 = var9.bind(var10)(var8);
-                            var8 = function(arg0, arg1) { // Original name: passesWhitelist, environment: var2
+                            var8 = function arg0, arg1() {
                                 _fun52050: for (var _fun52050_ip = 0;;) switch (_fun52050_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -319,7 +319,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = ['http://*', 'https://*'];
             var2.defaultOriginWhitelist = var4;
             var2.createOnShouldStartLoadWithRequest = var3;
-            var3 = function() { // Original name: defaultRenderLoading, environment: var1
+            var3 = function() {
                 var3 = _closure1_slot10;
                 var2 = _closure1_slot7;
                 var1 = {};
@@ -339,7 +339,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.defaultRenderLoading = var3;
-            var3 = function(arg0, arg1, arg2) { // Original name: defaultRenderError, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 var3 = _closure1_slot11;
                 var2 = _closure1_slot7;
                 var1 = {};
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.defaultRenderError = var3;
-            var1 = function(arg0) { // Original name: useWebWiewLogic, environment: var1
+            var1 = function arg0() {
                 _fun52056: for (var _fun52056_ip = 0;;) switch (_fun52056_ip) {
                     case 0:
                         var1 = arg0;

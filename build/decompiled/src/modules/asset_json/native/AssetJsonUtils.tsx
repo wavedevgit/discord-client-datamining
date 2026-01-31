@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: loadJsonAsset, environment: var7
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var1;
-    var0 = function() { // Original name: _loadJsonAsset, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.NativeModules;
     var _closure1_slot5 = var3;
     var3 = {};
-    var4 = function() { // Original name: i18n_bg, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_bg = var4;
-    var4 = function() { // Original name: i18n_cs, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_cs = var4;
-    var4 = function() { // Original name: i18n_da, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_da = var4;
-    var4 = function() { // Original name: i18n_de, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_de = var4;
-    var4 = function() { // Original name: i18n_el, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_el = var4;
-    var4 = function() { // Original name: i18n_enGB, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_enGB = var4;
-    var4 = function() { // Original name: i18n_esES, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_esES = var4;
-    var4 = function() { // Original name: i18n_es419, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_es419 = var4;
-    var4 = function() { // Original name: i18n_fi, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_fi = var4;
-    var4 = function() { // Original name: i18n_fr, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_fr = var4;
-    var4 = function() { // Original name: i18n_hr, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_hr = var4;
-    var4 = function() { // Original name: i18n_hu, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_hu = var4;
-    var4 = function() { // Original name: i18n_it, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_it = var4;
-    var4 = function() { // Original name: i18n_ja, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_ja = var4;
-    var4 = function() { // Original name: i18n_ko, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_ko = var4;
-    var4 = function() { // Original name: i18n_lt, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_lt = var4;
-    var4 = function() { // Original name: i18n_nl, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_nl = var4;
-    var4 = function() { // Original name: i18n_no, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_no = var4;
-    var4 = function() { // Original name: i18n_pl, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_pl = var4;
-    var4 = function() { // Original name: i18n_ptBR, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_ptBR = var4;
-    var4 = function() { // Original name: i18n_ro, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_ro = var4;
-    var4 = function() { // Original name: i18n_ru, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_ru = var4;
-    var4 = function() { // Original name: i18n_svSE, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_svSE = var4;
-    var4 = function() { // Original name: i18n_th, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_th = var4;
-    var4 = function() { // Original name: i18n_tr, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_tr = var4;
-    var4 = function() { // Original name: i18n_uk, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_uk = var4;
-    var4 = function() { // Original name: i18n_vi, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_vi = var4;
-    var4 = function() { // Original name: i18n_zhCN, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_zhCN = var4;
-    var4 = function() { // Original name: i18n_zhTW, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.i18n_zhTW = var4;
-    var4 = function() { // Original name: i18n_hi, environment: var7
+    var4 = function() {
         var2 = _closure1_slot7;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;

@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useSelectStage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useSelectStage, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 5;

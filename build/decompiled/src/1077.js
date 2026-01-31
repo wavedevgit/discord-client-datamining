@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'BrowserSession';
         var0.name = var1;
-        var1 = function() { // Original name: setupOnce, environment: var1
+        var1 = function() {
             _fun11016: for (var _fun11016_ip = 0;;) switch (_fun11016_ip) {
                 case 0:
                     var3 = _closure1_slot0;

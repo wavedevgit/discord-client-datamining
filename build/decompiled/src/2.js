@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var2](var9);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot0 = var2;
-    var2 = function() { // Original name: clear, environment: var0
+    var2 = function() {
         var1 = _closure1_slot0;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
@@ -28,13 +28,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.clear = var2;
-    var2 = function() { // Original name: size, environment: var0
+    var2 = function() {
         var0 = _closure1_slot0;
         var0 = var0.size;
         return var0;
     };
     var1.size = var2;
-    var0 = function(arg0) { // Original name: fileFinishedImporting, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.add;
         var0 = arg0;

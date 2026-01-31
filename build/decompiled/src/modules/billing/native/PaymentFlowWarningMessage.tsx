@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/billing/native/PaymentFlowWarningMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PaymentFlowWarningMessage, environment: var1
+    var1 = function arg0() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var8 = var0.bind(var3)();

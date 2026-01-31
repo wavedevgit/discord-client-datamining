@@ -9,14 +9,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: goBack, environment: var0
+    var2 = function() {
         var0 = {};
         var1 = 'GO_BACK';
         var0.type = var1;
         return var0;
     };
     var1.goBack = var2;
-    var2 = function() { // Original name: navigate, environment: var0
+    var2 = function() {
         _fun16968: for (var _fun16968_ip = 0;;) switch (_fun16968_ip) {
             case 0:
                 var4 = undefined;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.navigate = var2;
-    var2 = function(arg0) { // Original name: reset, environment: var0
+    var2 = function arg0() {
         var0 = {};
         var1 = 'RESET';
         var0.type = var1;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.reset = var2;
-    var0 = function(arg0) { // Original name: setParams, environment: var0
+    var0 = function arg0() {
         var0 = {};
         var1 = 'SET_PARAMS';
         var0.type = var1;

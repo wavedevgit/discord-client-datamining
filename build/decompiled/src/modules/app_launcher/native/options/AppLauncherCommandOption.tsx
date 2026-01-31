@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/AppLauncherCommandOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherCommandOption, environment: var1
+    var1 = function arg0() {
         _fun108083: for (var _fun108083_ip = 0;;) switch (_fun108083_ip) {
             case 0:
                 var4 = arg0;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var18[var17];
             case 523:
                 var10.initialValue = var7;
-                var7 = function(arg0) { // Original name: onChannelPress, environment: var9
+                var7 = function arg0() {
                     _fun108100: for (var _fun108100_ip = 0;;) switch (_fun108100_ip) {
                         case 0:
                             var0 = arg0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var10.onChannelPress = var7;
-                var7 = function() { // Original name: onActionSheetDismiss, environment: var9
+                var7 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var20[var18];
             case 673:
                 var14.initialValue = var10;
-                var10 = function(arg0) { // Original name: onUserPress, environment: var9
+                var10 = function arg0() {
                     _fun108098: for (var _fun108098_ip = 0;;) switch (_fun108098_ip) {
                         case 0:
                             var0 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var14.onUserPress = var10;
-                var10 = function() { // Original name: onActionSheetDismiss, environment: var9
+                var10 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var20[var18];
             case 823:
                 var14.initialValue = var10;
-                var10 = function(arg0) { // Original name: onRolePress, environment: var9
+                var10 = function arg0() {
                     _fun108096: for (var _fun108096_ip = 0;;) switch (_fun108096_ip) {
                         case 0:
                             var0 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var14.onRolePress = var10;
-                var10 = function() { // Original name: onActionSheetDismiss, environment: var9
+                var10 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var20[var18];
             case 963:
                 var10.initialValue = var17;
-                var17 = function(arg0) { // Original name: onMentionablePress, environment: var9
+                var17 = function arg0() {
                     _fun108094: for (var _fun108094_ip = 0;;) switch (_fun108094_ip) {
                         case 0:
                             var0 = arg0;
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var10.onMentionablePress = var17;
-                var17 = function() { // Original name: onActionSheetDismiss, environment: var9
+                var17 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var20[var18];
             case 1107:
                 var14.initialValue = var10;
-                var10 = function(arg0) { // Original name: onPress, environment: var9
+                var10 = function arg0() {
                     var5 = arg0;
                     var2 = _closure2_slot4;
                     var0 = undefined;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var12.option;
                 var10.style = var17;
                 var10.option = var0;
-                var17 = function(arg0) { // Original name: onSelectAttachment, environment: var9
+                var17 = function arg0() {
                     _fun108092: for (var _fun108092_ip = 0;;) switch (_fun108092_ip) {
                         case 0:
                             var4 = arg0;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var22[var21];
             case 1353:
                 var17.initialValue = var20;
-                var20 = function() { // Original name: onEndEditing, environment: var9
+                var20 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var17.onEndEditing = var20;
-                var20 = function(arg0) { // Original name: onChangeText, environment: var9
+                var20 = function arg0() {
                     var2 = _closure2_slot1;
                     var3 = _closure2_slot0;
                     var0 = undefined;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.OPTIONAL_OPTION_ADDED;
                 var1 = var11 === var1;
                 var3.autoFocus = var1;
-                var1 = function(arg0) { // Original name: onSelect, environment: var9
+                var1 = function arg0() {
                     _fun108087: for (var _fun108087_ip = 0;;) switch (_fun108087_ip) {
                         case 0:
                             var6 = arg0;
@@ -872,7 +872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var3.onSelect = var1;
-                var1 = function() { // Original name: onOpenAutocompleteSheet, environment: var9
+                var1 = function() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var3.onOpenAutocompleteSheet = var1;
-                var1 = function() { // Original name: onDismissAutocompleteSheet, environment: var9
+                var1 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -920,7 +920,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var14[var13];
             case 1681:
                 var1.initialValue = var10;
-                var10 = function(arg0) { // Original name: onSelect, environment: var9
+                var10 = function arg0() {
                     _fun108084: for (var _fun108084_ip = 0;;) switch (_fun108084_ip) {
                         case 0:
                             var6 = arg0;
@@ -959,7 +959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.onSelect = var10;
-                var10 = function() { // Original name: onOpenChoicesSheet, environment: var9
+                var10 = function() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -969,7 +969,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onOpenChoicesSheet = var10;
-                var10 = function() { // Original name: onDismissChoicesSheet, environment: var9
+                var10 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -1014,7 +1014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var12 = var12.dismissButton;
                 var6.style = var12;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure2_slot5;
                     var1 = _closure2_slot0;
                     var0 = undefined;

@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
     var2.utf8read = var0;
-    var3 = function(arg0) { // Original name: fromCharCodes, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var1 = var0.String;
         var3 = var1.fromCharCode;
@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: utf8read, environment: var1
+    var1 = function arg0() {
         _fun14788: for (var _fun14788_ip = 0;;) switch (_fun14788_ip) {
             case 0:
                 var27 = arg0;

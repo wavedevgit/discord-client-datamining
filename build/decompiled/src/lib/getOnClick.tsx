@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: openInviteModal, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _openInviteModal, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _handleInviteCodedLink, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'lib/getOnClick.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getOnClick, environment: var1
+    var1 = function arg0() {
         _fun51590: for (var _fun51590_ip = 0;;) switch (_fun51590_ip) {
             case 0:
                 var8 = arg0;
@@ -1676,7 +1676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var1)();
                         case 19:
                             var2 = _closure2_slot2;
-                            var1 = function() { // Original name: handleInviteCodedLink, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot20;
                                 var2 = var3.apply;

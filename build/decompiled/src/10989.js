@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'getPlaybackRateScript': "\nwindow.ReactNativeWebView.postMessage(JSON.stringify({eventType: 'getPlaybackRate', data: player.getPlaybackRate()}));\ntrue;\n",
         'getAvailablePlaybackRatesScript': "\nwindow.ReactNativeWebView.postMessage(JSON.stringify({eventType: 'getAvailablePlaybackRates', data: player.getAvailablePlaybackRates()}));\ntrue;\n"
     };
-    var3 = function(arg0) { // Original name: setVolume, environment: var1
+    var3 = function arg0() {
         var1 = 'player.setVolume(';
         var0 = arg0;
         var1 = var1 + var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.setVolume = var3;
-    var3 = function(arg0, arg1) { // Original name: seekToScript, environment: var1
+    var3 = function arg0, arg1() {
         var1 = 'player.seekTo(';
         var0 = arg0;
         var1 = var1 + var0;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.seekToScript = var3;
-    var3 = function(arg0) { // Original name: setPlaybackRate, environment: var1
+    var3 = function arg0() {
         var1 = 'player.setPlaybackRate(';
         var0 = arg0;
         var1 = var1 + var0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.setPlaybackRate = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: loadPlaylist, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun85555: for (var _fun85555_ip = 0;;) switch (_fun85555_ip) {
             case 0:
                 var7 = arg0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var4.loadPlaylist = var3;
-    var3 = function(arg0, arg1) { // Original name: loadVideoById, environment: var1
+    var3 = function arg0, arg1() {
         _fun85556: for (var _fun85556_ip = 0;;) switch (_fun85556_ip) {
             case 0:
                 var2 = 'cueVideoById';
@@ -204,7 +204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.unMuteVideo;
     var4 = var6.bind(var0)(var3, var5, var4);
     var2.soundMode = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: MAIN_SCRIPT, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun85557: for (var _fun85557_ip = 0;;) switch (_fun85557_ip) {
             case 0:
                 var18 = arg0;

@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun155: for (var _fun155_ip = 0;;) switch (_fun155_ip) {
             case 0:
                 var2 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun157: for (var _fun157_ip = 0;;) switch (_fun157_ip) {
             case 0:
                 var3 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/debug/LogAggregator.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: report, environment: var1
+    var3 = function arg0, arg1() {
         _fun158: for (var _fun158_ip = 0;;) switch (_fun158_ip) {
             case 0:
                 var6 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.report = var3;
-    var3 = function() { // Original name: clear, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clear = var3;
-    var3 = function(arg0) { // Original name: stringify, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot0;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.stringify = var3;
-    var1 = function() { // Original name: getAllForDebugPanel, environment: var1
+    var1 = function() {
         _fun163: for (var _fun163_ip = 0;;) switch (_fun163_ip) {
             case 0:
                 var0 = arguments[0];

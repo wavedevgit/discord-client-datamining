@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NotificationNudgeAnalyticsAction = var5;
     var2.NotificationNudgeUI = var4;
     var2.NotificationNudgeTimingVariant = var3;
-    var3 = function(arg0) { // Original name: getNotificationNudgeCooldownMs, environment: var1
+    var3 = function arg0() {
         _fun85189: for (var _fun85189_ip = 0;;) switch (_fun85189_ip) {
             case 0:
                 var0 = _closure1_slot2;

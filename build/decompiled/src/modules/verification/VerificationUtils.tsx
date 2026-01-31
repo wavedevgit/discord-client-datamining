@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[var7] = var6;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: isPhoneReverification, environment: var3
+    var6 = function arg0, arg1() {
         _fun60427: for (var _fun60427_ip = 0;;) switch (_fun60427_ip) {
             case 0:
                 var2 = arg0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isPhoneReverification = var6;
-    var6 = function(arg0) { // Original name: isEmailReverification, environment: var3
+    var6 = function arg0() {
         _fun60428: for (var _fun60428_ip = 0;;) switch (_fun60428_ip) {
             case 0:
                 var2 = arg0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isEmailReverification = var6;
-    var6 = function(arg0) { // Original name: isFullScreenVerification, environment: var3
+    var6 = function arg0() {
         _fun60429: for (var _fun60429_ip = 0;;) switch (_fun60429_ip) {
             case 0:
                 var3 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isFullScreenVerification = var6;
-    var6 = function(arg0) { // Original name: getVerificationTypes, environment: var3
+    var6 = function arg0() {
         _fun60430: for (var _fun60430_ip = 0;;) switch (_fun60430_ip) {
             case 0:
                 var1 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getVerificationTypes = var6;
-    var6 = function(arg0) { // Original name: getButtonTitle, environment: var3
+    var6 = function arg0() {
         _fun60431: for (var _fun60431_ip = 0;;) switch (_fun60431_ip) {
             case 0:
                 var2 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getButtonTitle = var6;
-    var3 = function(arg0, arg1) { // Original name: areVerificationTypesEqual, environment: var3
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;

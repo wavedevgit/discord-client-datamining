@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var6 = 'function getAdjustedBottomOffsets_getAdjustedBottomOffsetsTsx1({screenBottomOffset:screenBottomOffset,safeAreaBottom:safeAreaBottom,keyboardHeight:keyboardHeight}){const{IS_ANDROID}=this.__closure;let bottomOffset=screenBottomOffset;if(keyboardHeight>0){bottomOffset+=(IS_ANDROID?0:keyboardHeight)-safeAreaBottom;}return{bottomOffset:bottomOffset};}';
     var3.code = var6;
-    var1 = function(arg0) { // Original name: t, environment: var1
+    var1 = function arg0() {
         _fun110295: for (var _fun110295_ip = 0;;) switch (_fun110295_ip) {
             case 0:
                 var0 = arg0;

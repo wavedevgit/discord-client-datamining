@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: captureMetric, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun9827: for (var _fun9827_ip = 0;;) switch (_fun9827_ip) {
             case 0:
                 var6 = arg3;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0) { // Original name: count, environment: var0
+    var2 = function arg0() {
         _fun9828: for (var _fun9828_ip = 0;;) switch (_fun9828_ip) {
             case 0:
                 var0 = undefined;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.count = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: distribution, environment: var0
+    var2 = function arg0, arg1, arg2() {
         var5 = _closure1_slot2;
         var0 = undefined;
         var9 = 'distribution';
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.distribution = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: gauge, environment: var0
+    var0 = function arg0, arg1, arg2() {
         var5 = _closure1_slot2;
         var0 = undefined;
         var9 = 'gauge';

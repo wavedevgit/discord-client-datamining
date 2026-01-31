@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/profile_customization/useOpenProfileSettings.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useOpenProfileSettings, environment: var1
+    var1 = function() {
         _fun59800: for (var _fun59800_ip = 0;;) switch (_fun59800_ip) {
             case 0:
                 var1 = arguments[0];

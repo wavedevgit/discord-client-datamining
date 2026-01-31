@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var1;
-    var0 = function(arg0, arg1) { // Original name: getTagName, environment: var4
+    var0 = function arg0, arg1() {
         _fun38263: for (var _fun38263_ip = 0;;) switch (_fun38263_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var3.bind(var0)(var1);
     var _closure1_slot3 = var1;
     var1 = {};
-    var3 = function(arg0, arg1) { // Original name: read, environment: var4
+    var3 = function arg0, arg1() {
         _fun38264: for (var _fun38264_ip = 0;;) switch (_fun38264_ip) {
             case 0:
                 var18 = arg0;

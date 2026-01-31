@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: stopAnalyticsHeartbeat, environment: var1
+    var0 = function() {
         _fun39650: for (var _fun39650_ip = 0;;) switch (_fun39650_ip) {
             case 0:
                 var1 = _closure1_slot16;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: trackHeartbeat, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _trackHeartbeat, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: buildHeartbeatQOSPayload, environment: var1
+    var0 = function() {
         _fun39655: for (var _fun39655_ip = 0;;) switch (_fun39655_ip) {
             case 0:
                 var1 = new Array(0);
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: isActive, environment: var1
+    var0 = function() {
         var1 = _closure1_slot27;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: scheduleHeartbeatTracking, environment: var1
+    var0 = function() {
         _fun39657: for (var _fun39657_ip = 0;;) switch (_fun39657_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun39657_ip = 106;
                 continue _fun39657;
             case 95:
-                var2 = function() { // Original name: startAnalyticsHeartbeat, environment: var2
+                var2 = function() {
                     _fun39658: for (var _fun39658_ip = 0;;) switch (_fun39658_ip) {
                         case 0:
                             var2 = _closure1_slot16;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: scheduleHeartbeatSkippedTracking, environment: var1
+    var0 = function() {
         _fun39661: for (var _fun39661_ip = 0;;) switch (_fun39661_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: validateClientSession, environment: var1
+    var0 = function arg0() {
         _fun39663: for (var _fun39663_ip = 0;;) switch (_fun39663_ip) {
             case 0:
                 var6 = arg0;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: forceDispatchSessionIdUpdate, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot33;
         var2 = var3.apply;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: _forceDispatchSessionIdUpdate, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: handleAuthenticationChange, environment: var1
+    var0 = function() {
         _fun39668: for (var _fun39668_ip = 0;;) switch (_fun39668_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: handleRTCStateChange, environment: var1
+    var0 = function() {
         _fun39669: for (var _fun39669_ip = 0;;) switch (_fun39669_ip) {
             case 0:
                 var2 = _closure1_slot7;
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: handleWindowFocus, environment: var1
+    var0 = function arg0() {
         _fun39670: for (var _fun39670_ip = 0;;) switch (_fun39670_ip) {
             case 0:
                 var0 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: handleAppStateUpdate, environment: var1
+    var0 = function arg0() {
         _fun39671: for (var _fun39671_ip = 0;;) switch (_fun39671_ip) {
             case 0:
                 var0 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: handleFluxInitialized, environment: var1
+    var0 = function() {
         var2 = _closure1_slot7;
         var0 = var2.getState;
         var0 = var0.bind(var2)();
@@ -785,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot38 = var0;
-    var3 = function() { // Original name: getSession, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot40;
         var2 = var3.apply;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var3;
-    var0 = function() { // Original name: _getSession, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1204,7 +1204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/analytics_sessions/SessionHeartbeatScheduler.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: initSessionHeartbeatScheduler, environment: var1
+    var4 = function() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var0 = 9;
@@ -1258,7 +1258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.initSessionHeartbeatScheduler = var4;
     var2.getSession = var3;
-    var1 = function() { // Original name: getActiveSessionUnsafe, environment: var1
+    var1 = function() {
         _fun39679: for (var _fun39679_ip = 0;;) switch (_fun39679_ip) {
             case 0:
                 var0 = _closure1_slot20;

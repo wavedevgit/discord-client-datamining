@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _getEmbedApplication, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var3 instanceof Object ? var3 : var7;
                         var9 = var3;
                         _closure4_slot0 = var3;
-                        var3 = function(arg0, arg1) { // Original name: interceptResponse, environment: var6
+                        var3 = function arg0, arg1() {
                             _fun107447: for (var _fun107447_ip = 0;;) switch (_fun107447_ip) {
                                 case 0:
                                     var0 = arg1;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _getApplication, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _getCategories, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: _getSimilarApplications, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: _search, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: _fetchCollections, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1303,7 +1303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _fetchIntegrationApplicationIdsForMyGuilds, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1575,7 +1575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/global_discovery_apps/ApplicationDirectoryActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getEmbedApplication, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -1586,7 +1586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getEmbedApplication = var3;
-    var3 = function() { // Original name: getApplication, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -1597,7 +1597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getApplication = var3;
-    var3 = function() { // Original name: getCategories, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;
@@ -1608,7 +1608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getCategories = var3;
-    var3 = function() { // Original name: getSimilarApplications, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;
@@ -1619,7 +1619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSimilarApplications = var3;
-    var3 = function() { // Original name: search, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot24;
         var2 = var3.apply;
@@ -1630,7 +1630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.search = var3;
-    var3 = function() { // Original name: fetchCollections, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot25;
         var2 = var3.apply;
@@ -1641,7 +1641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchCollections = var3;
-    var1 = function() { // Original name: fetchIntegrationApplicationIdsForMyGuilds, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;

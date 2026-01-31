@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/multi_account/MultiAccountActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: validateMultiAccountTokens, environment: var1
+    var3 = function() {
         var3 = _closure1_slot5;
         var2 = var3.getId;
         var2 = var2.bind(var3)();
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.validateMultiAccountTokens = var3;
-    var3 = function(arg0, arg1) { // Original name: switchAccount, environment: var1
+    var3 = function arg0, arg1() {
         _fun80298: for (var _fun80298_ip = 0;;) switch (_fun80298_ip) {
             case 0:
                 var5 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.switchAccount = var3;
-    var3 = function(arg0, arg1) { // Original name: moveAccount, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 6;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.moveAccount = var3;
-    var3 = function(arg0) { // Original name: removeAccount, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 6;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeAccount = var3;
-    var3 = function(arg0) { // Original name: multiAccountMobileExperimentUpdate, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 6;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.multiAccountMobileExperimentUpdate = var3;
-    var3 = function(arg0, arg1) { // Original name: updatePushSyncToken, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 6;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updatePushSyncToken = var3;
-    var1 = function(arg0) { // Original name: invalidatePushSyncTokens, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 6;

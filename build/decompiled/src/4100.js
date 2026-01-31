@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
     var2.detectFile = var0;
-    var1 = function(arg0, arg1) { // Original name: detectFile, environment: var1
+    var1 = function arg0, arg1() {
         _fun37688: for (var _fun37688_ip = 0;;) switch (_fun37688_ip) {
             case 0:
                 var1 = arg1;

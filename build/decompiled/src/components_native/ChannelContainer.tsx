@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: NotificationsContainer, environment: var1
+    var0 = function() {
         _fun69503: for (var _fun69503_ip = 0;;) switch (_fun69503_ip) {
             case 0:
                 var1 = _closure1_slot1;

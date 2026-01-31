@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = {};
                         var6 = true;
                         var2.enumerable = var6;
-                        var3 = function() { // Original name: get, environment: var3
+                        var3 = function() {
                             var1 = _closure2_slot0;
                             var0 = _closure2_slot1;
                             var0 = var1[var0];
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var6[var3];
             var3 = var5.bind(var0)(var3);
             var3 = var4.bind(var0)(var3, var2);
-            var1 = function(arg0, arg1, arg2) { // Original name: validateFileType, environment: var1
+            var1 = function arg0, arg1, arg2() {
                 _fun37731: for (var _fun37731_ip = 0;;) switch (_fun37731_ip) {
                     case 0:
                         var14 = arg1;
@@ -393,7 +393,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     case 357:
                         var10 = var3;
-                        var9 = function(arg0) { // Original name: addSimilarTypes, environment: var2
+                        var9 = function arg0() {
                             _fun37733: for (var _fun37733_ip = 0;;) switch (_fun37733_ip) {
                                 case 0:
                                     var2 = arg0;

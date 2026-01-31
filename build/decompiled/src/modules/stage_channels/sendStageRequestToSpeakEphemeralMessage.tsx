@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: createRequestToSpeakMessage, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.channelId;
         var1 = var0.requesterUser;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/sendStageRequestToSpeakEphemeralMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: sendStageRequestToSpeakEphemeralMessage, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var6 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;

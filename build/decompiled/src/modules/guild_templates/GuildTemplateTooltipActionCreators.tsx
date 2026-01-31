@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Permissions;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: checkGuildTemplateDirty, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot2;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.checkGuildTemplateDirty = var6;
-    var6 = function(arg0) { // Original name: hideGuildTemplateDirtyTooltip, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.hideGuildTemplateDirtyTooltip = var6;
-    var3 = function() { // Original name: hideGuildTemplatePromotionTooltip, environment: var3
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;

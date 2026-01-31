@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Sheet/native/PromoSheet.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PromoSheet, environment: var1
+    var1 = function arg0() {
         _fun46302: for (var _fun46302_ip = 0;;) switch (_fun46302_ip) {
             case 0:
                 var2 = arg0;

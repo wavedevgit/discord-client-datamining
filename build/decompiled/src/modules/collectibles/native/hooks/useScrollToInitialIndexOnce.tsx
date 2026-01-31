@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 100;
     var2.INITIAL_SCROLL_DELAY_MS = var3;
-    var1 = function(arg0) { // Original name: useScrollToInitialIndexOnce, environment: var1
+    var1 = function arg0() {
         _fun88074: for (var _fun88074_ip = 0;;) switch (_fun88074_ip) {
             case 0:
                 var0 = arg0;

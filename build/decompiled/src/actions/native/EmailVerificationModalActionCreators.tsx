@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AnalyticEvents;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function() { // Original name: open, environment: var3
+    var6 = function() {
         _fun60370: for (var _fun60370_ip = 0;;) switch (_fun60370_ip) {
             case 0:
                 var1 = arguments[0];
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.open = var6;
-    var3 = function() { // Original name: close, environment: var3
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;

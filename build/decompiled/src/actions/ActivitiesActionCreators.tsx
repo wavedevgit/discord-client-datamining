@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.MessageSendLocation;
     var _closure1_slot9 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: updateActivity, environment: var3
+    var6 = function arg0() {
         _fun77043: for (var _fun77043_ip = 0;;) switch (_fun77043_ip) {
             case 0:
                 var2 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateActivity = var6;
-    var6 = function(arg0) { // Original name: sendActivityInvite, environment: var3
+    var6 = function arg0() {
         _fun77047: for (var _fun77047_ip = 0;;) switch (_fun77047_ip) {
             case 0:
                 var1 = arg0;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.sendActivityInvite = var6;
-    var6 = function(arg0) { // Original name: sendActivityInviteUser, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var2 = this;
         var _closure2_slot0 = var2;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.sendActivityInviteUser = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getJoinSecret, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getJoinSecret = var6;
-    var3 = function(arg0) { // Original name: subscribeActivities, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;

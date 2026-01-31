@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun45536: for (var _fun45536_ip = 0;;) switch (_fun45536_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot9 = var4;
     var4 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: AutoLayoutView, environment: var5
+        var3 = function() {
             _fun45540: for (var _fun45540_ip = 0;;) switch (_fun45540_ip) {
                 case 0:
                     var4 = this;
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'broadcastBlankEvent';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: broadcastBlankEvent, environment: var5
+        var0 = function arg0() {
             _fun45542: for (var _fun45542_ip = 0;;) switch (_fun45542_ip) {
                 case 0:
                     var3 = arg0;
@@ -245,7 +245,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun45543: for (var _fun45543_ip = 0;;) switch (_fun45543_ip) {
                 case 0:
                     var0 = this;
@@ -297,7 +297,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = var3.bind(var0)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useOnNativeBlankAreaEvents, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot7;

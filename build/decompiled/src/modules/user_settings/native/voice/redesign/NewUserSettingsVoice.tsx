@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoice.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: NewUserSettingsVoice, environment: var1
+    var3 = function() {
         _fun67938: for (var _fun67938_ip = 0;;) switch (_fun67938_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: NewUserSettingsTableRowGroup, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot6;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

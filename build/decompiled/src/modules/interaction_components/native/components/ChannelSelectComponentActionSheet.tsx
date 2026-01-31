@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.selectionActionComponent;
         var10 = var0.labelComponent;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var3)(var0);
         var0 = {};
         var0.onPressOptionItem = var12;
-        var12 = function(arg0) { // Original name: renderIcon, environment: var5
+        var12 = function arg0() {
             _fun78871: for (var _fun78871_ip = 0;;) switch (_fun78871_ip) {
                 case 0:
                     var3 = _closure1_slot4;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.selectedCount = var9;
         var0.selectedOptions = var8;
         var0.isSelected = var7;
-        var7 = function() { // Original name: submitSelection, environment: var5
+        var7 = function() {
             var1 = _closure2_slot3;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.submitSelection = var7;
         var0.onQueryChange = var6;
-        var5 = function(arg0) { // Original name: itemAccessibilityLabel, environment: var5
+        var5 = function arg0() {
             _fun78873: for (var _fun78873_ip = 0;;) switch (_fun78873_ip) {
                 case 0:
                     var3 = _closure1_slot4;

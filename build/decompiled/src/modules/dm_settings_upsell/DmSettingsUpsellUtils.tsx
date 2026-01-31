@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/dm_settings_upsell/DmSettingsUpsellUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: trackEvent, environment: var3
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

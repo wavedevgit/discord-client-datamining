@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/hooks/useGetJoinRequestAndGuildForInterviewChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGetJoinRequestAndGuildForInterviewChannel, environment: var1
+    var1 = function arg0() {
         var6 = _closure1_slot4;
         var2 = var6.useState;
         var10 = false;

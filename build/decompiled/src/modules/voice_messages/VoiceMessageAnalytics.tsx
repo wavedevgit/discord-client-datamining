@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_messages/VoiceMessageAnalytics.tsx';
     var4 = var5.bind(var6)(var4);
     var2.VoiceMessageRecordingResult = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: logVoiceMessagePlaybackStarted, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun79228: for (var _fun79228_ip = 0;;) switch (_fun79228_ip) {
             case 0:
                 var9 = arg1;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.logVoiceMessagePlaybackStarted = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: logVoiceMessagePlaybackEnded, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun79229: for (var _fun79229_ip = 0;;) switch (_fun79229_ip) {
             case 0:
                 var9 = arg1;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.logVoiceMessagePlaybackEnded = var3;
-    var1 = function(arg0, arg1) { // Original name: logVoiceMessagePlaybackFailed, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

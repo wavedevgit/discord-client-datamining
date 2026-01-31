@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun45068: for (var _fun45068_ip = 0;;) switch (_fun45068_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.jsx;
     var _closure1_slot10 = var1;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: TouchableNativeFeedback, environment: var5
+        var3 = function() {
             _fun45072: for (var _fun45072_ip = 0;;) switch (_fun45072_ip) {
                 case 0:
                     var3 = this;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'getExtraButtonProps';
         var4.key = var0;
-        var0 = function() { // Original name: getExtraButtonProps, environment: var5
+        var0 = function() {
             _fun45073: for (var _fun45073_ip = 0;;) switch (_fun45073_ip) {
                 case 0:
                     var1 = this;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun45074: for (var _fun45074_ip = 0;;) switch (_fun45074_ip) {
                 case 0:
                     var8 = this;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/system_messages/SystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createSystemMessageContent, environment: var1
+    var1 = function arg0() {
         _fun55362: for (var _fun55362_ip = 0;;) switch (_fun55362_ip) {
             case 0:
                 var2 = arg0;

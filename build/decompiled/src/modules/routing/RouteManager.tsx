@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun98632: for (var _fun98632_ip = 0;;) switch (_fun98632_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun98634: for (var _fun98634_ip = 0;;) switch (_fun98634_ip) {
             case 0:
                 var3 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: RouteManager, environment: var4
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot2;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'initialize';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = var1.cleanup;
             var0 = var0.bind(var1)();
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'executeRouteRewrites';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun98642: for (var _fun98642_ip = 0;;) switch (_fun98642_ip) {
                 case 0:
                     var10 = arg0;
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'cleanup';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun98643: for (var _fun98643_ip = 0;;) switch (_fun98643_ip) {
                 case 0:
                     var1 = this;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'addRouteChangeListener';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun98644: for (var _fun98644_ip = 0;;) switch (_fun98644_ip) {
                 case 0:
                     var3 = arg0;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'addRouteRewriter';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun98646: for (var _fun98646_ip = 0;;) switch (_fun98646_ip) {
                 case 0:
                     var3 = arg0;
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeRouteChangeListener';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.listeners;
             var1 = var2.delete;
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeRouteRewriter';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.rewrites;
             var1 = var2.delete;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getHistory';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;

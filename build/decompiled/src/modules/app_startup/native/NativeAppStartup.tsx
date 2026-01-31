@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun111930: for (var _fun111930_ip = 0;;) switch (_fun111930_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun111932: for (var _fun111932_ip = 0;;) switch (_fun111932_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: linkFromAppsFlyer, environment: var1
+    var0 = function arg0() {
         _fun111933: for (var _fun111933_ip = 0;;) switch (_fun111933_ip) {
             case 0:
                 var4 = arg0;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: getInitialURLs, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _getInitialURLs, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1) { // Original name: handleURL, environment: var1
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 15;
@@ -472,10 +472,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: sharedInit, environment: var1
+    var0 = function() {
         _fun111940: for (var _fun111940_ip = 0;;) switch (_fun111940_ip) {
             case 0:
-                var0 = function(arg0) { // Original name: handleNotification, environment: var1
+                var0 = function arg0() {
                     _fun111941: for (var _fun111941_ip = 0;;) switch (_fun111941_ip) {
                         case 0:
                             var4 = arg0;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot3 = var0;
-                var4 = function(arg0) { // Original name: handleLocalNotification, environment: var1
+                var4 = function arg0() {
                     _fun111943: for (var _fun111943_ip = 0;;) switch (_fun111943_ip) {
                         case 0:
                             var2 = arg0;
@@ -1032,7 +1032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'localNotification';
                 var0 = var2.bind(var3)(var0, var4);
                 var0 = {};
-                var1 = function() { // Original name: onStorageInitialize, environment: var1
+                var1 = function() {
                     var1 = true;
                     _closure2_slot0 = var1;
                     var3 = _closure2_slot1;
@@ -1056,7 +1056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: _trackFirstLaunched, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1171,7 +1171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: loadStorage, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot35;
         var2 = var3.apply;
@@ -1182,7 +1182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: _loadStorage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1282,7 +1282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: loadKvStorage, environment: var1
+    var0 = function() {
         _fun111965: for (var _fun111965_ip = 0;;) switch (_fun111965_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot1;
@@ -1319,7 +1319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function() { // Original name: initializeIntl, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot38;
         var2 = var3.apply;
@@ -1330,7 +1330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: _initializeIntl, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1478,7 +1478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot38 = var0;
-    var0 = function() { // Original name: _init, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1730,7 +1730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var15.bind(var23)();
                         var15 = var20.bind(var22)(var17, var15);
                     case 789:
-                        var15 = function() { // Original name: trackFirstLaunched, environment: var7
+                        var15 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot33;
                             var2 = var3.apply;
@@ -2146,7 +2146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var0;
-    var0 = function() { // Original name: _initHeadlessTask, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -2304,7 +2304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot40 = var0;
-    var0 = function() { // Original name: initializeTokenStorage, environment: var1
+    var0 = function() {
         _fun111991: for (var _fun111991_ip = 0;;) switch (_fun111991_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -2564,7 +2564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_startup/native/NativeAppStartup.tsx';
     var4 = var5.bind(var6)(var4);
     var2.applicationReady = var3;
-    var3 = function() { // Original name: init, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot39;
         var2 = var3.apply;
@@ -2575,7 +2575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.init = var3;
-    var1 = function() { // Original name: initHeadlessTask, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot40;
         var2 = var3.apply;

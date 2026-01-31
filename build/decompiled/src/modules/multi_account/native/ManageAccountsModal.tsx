@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: RemoveMultiAccountUserButton, environment: var1
+    var0 = function arg0() {
         _fun102961: for (var _fun102961_ip = 0;;) switch (_fun102961_ip) {
             case 0:
                 var0 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: ManageAccounts, environment: var1
+    var0 = function arg0() {
         _fun102968: for (var _fun102968_ip = 0;;) switch (_fun102968_ip) {
             case 0:
                 var0 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var11[var0];
                 var2 = var8.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: c, environment: var17
+                var0 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot3;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var3)(var4);
                 var4 = {};
                 var4.data = var9;
-                var9 = function(arg0) { // Original name: onRowMoved, environment: var17
+                var9 = function arg0() {
                     var0 = arg0;
                     var4 = var0.from;
                     var3 = var0.to;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.disableSorting = var9;
                 var9 = var21.sortableListView;
                 var4.wrapperStyles = var9;
-                var9 = function(arg0, arg1) { // Original name: renderRow, environment: var17
+                var9 = function arg0, arg1() {
                     _fun102973: for (var _fun102973_ip = 0;;) switch (_fun102973_ip) {
                         case 0:
                             var16 = arg0;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.text = var21;
                 var18 = var20.bind(var3)(var19, var18);
                 var14.label = var18;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     _fun102975: for (var _fun102975_ip = 0;;) switch (_fun102975_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot21 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ManageAccountsModal, environment: var1
+    var1 = function arg0() {
         _fun102976: for (var _fun102976_ip = 0;;) switch (_fun102976_ip) {
             case 0:
                 var0 = arg0;
@@ -976,13 +976,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5.Navigator;
                 var0 = {};
                 var0.initialRouteName = var4;
-                var4 = function(arg0) { // Original name: screenOptions, environment: var8
+                var4 = function arg0() {
                     _fun102977: for (var _fun102977_ip = 0;;) switch (_fun102977_ip) {
                         case 0:
                             var0 = arg0;
                             var6 = var0.navigation;
                             var0 = {};
-                            var1 = function(arg0) { // Original name: headerTitle, environment: var1
+                            var1 = function arg0() {
                                 var2 = arg0;
                                 var5 = var2.children;
                                 var0 = null;
@@ -1049,7 +1049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot14;
                 var11 = var9.MANAGE_ACCOUNTS;
                 var4.name = var11;
-                var11 = function() { // Original name: options, environment: var8
+                var11 = function() {
                     _fun102979: for (var _fun102979_ip = 0;;) switch (_fun102979_ip) {
                         case 0:
                             var0 = {};
@@ -1115,7 +1115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var4.options = var11;
-                var11 = function(arg0) { // Original name: children, environment: var8
+                var11 = function arg0() {
                     var0 = arg0;
                     var0 = var0.navigation;
                     var3 = _closure1_slot17;
@@ -1137,7 +1137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var12 = var9.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED;
                 var7.name = var12;
-                var12 = function() { // Original name: options, environment: var8
+                var12 = function() {
                     var0 = {};
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot3;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var7.options = var12;
-                var12 = function() { // Original name: children, environment: var8
+                var12 = function() {
                     var3 = _closure1_slot17;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot3;
@@ -1165,7 +1165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = var1.bind(var2)(var0);
                     var0 = {};
-                    var5 = function(arg0, arg1, arg2) { // Original name: handleLogin, environment: var4
+                    var5 = function arg0, arg1, arg2() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 40;
@@ -1184,7 +1184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLogin = var5;
-                    var4 = function() { // Original name: onReset, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 40;
@@ -1208,14 +1208,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var12 = var9.LOGIN;
                 var7.name = var12;
-                var12 = function() { // Original name: options, environment: var8
+                var12 = function() {
                     var0 = {};
                     var1 = false;
                     var0.headerShown = var1;
                     return var0;
                 };
                 var7.options = var12;
-                var12 = function() { // Original name: children, environment: var8
+                var12 = function() {
                     var3 = _closure1_slot17;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot3;
@@ -1237,14 +1237,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var9 = var9.MFA;
                 var5.name = var9;
-                var9 = function() { // Original name: options, environment: var8
+                var9 = function() {
                     var0 = {};
                     var1 = false;
                     var0.headerShown = var1;
                     return var0;
                 };
                 var5.options = var9;
-                var8 = function() { // Original name: children, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot17;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot3;

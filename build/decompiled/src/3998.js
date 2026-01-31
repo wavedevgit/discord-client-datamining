@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0, arg1, arg2) { // Original name: isIndexInClosedRange, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun37213: for (var _fun37213_ip = 0;;) switch (_fun37213_ip) {
             case 0:
                 var2 = arg0;
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.SHEET_COMPAT_MEDIUM = var5;
     var2.SHEET_COMPAT_ALL = var4;
     var2.SHEET_DIMMED_ALWAYS = var3;
-    var3 = function(arg0) { // Original name: assertDetentsArrayIsSorted, environment: var1
+    var3 = function arg0() {
         _fun37214: for (var _fun37214_ip = 0;;) switch (_fun37214_ip) {
             case 0:
                 var3 = arg0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.assertDetentsArrayIsSorted = var3;
-    var3 = function(arg0) { // Original name: resolveSheetAllowedDetents, environment: var1
+    var3 = function arg0() {
         _fun37215: for (var _fun37215_ip = 0;;) switch (_fun37215_ip) {
             case 0:
                 var5 = arg0;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.resolveSheetAllowedDetents = var3;
-    var3 = function(arg0, arg1) { // Original name: resolveSheetLargestUndimmedDetent, environment: var1
+    var3 = function arg0, arg1() {
         _fun37216: for (var _fun37216_ip = 0;;) switch (_fun37216_ip) {
             case 0:
                 var2 = arg0;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.resolveSheetLargestUndimmedDetent = var3;
-    var1 = function(arg0, arg1) { // Original name: resolveSheetInitialDetentIndex, environment: var1
+    var1 = function arg0, arg1() {
         _fun37217: for (var _fun37217_ip = 0;;) switch (_fun37217_ip) {
             case 0:
                 var2 = arg0;

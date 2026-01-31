@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var4)(var2);
         var0.scrollPosition = var3;
         var0.windowSize = var2;
-        var2 = function(arg0) { // Original name: setStateShallow, environment: var1
+        var2 = function arg0() {
             _fun100771: for (var _fun100771_ip = 0;;) switch (_fun100771_ip) {
                 case 0:
                     var10 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.setStateShallow = var2;
-        var2 = function(arg0) { // Original name: dropStart, environment: var1
+        var2 = function arg0() {
             _fun100773: for (var _fun100773_ip = 0;;) switch (_fun100773_ip) {
                 case 0:
                     var8 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.dropStart = var2;
-        var1 = function() { // Original name: dropComplete, environment: var1
+        var1 = function() {
             _fun100776: for (var _fun100776_ip = 0;;) switch (_fun100776_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.INITIAL_GESTURE_STATE = var3;
-    var3 = function(arg0, arg1) { // Original name: useItemDragState, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useItemDragState = var3;
-    var1 = function(arg0) { // Original name: useFolderBGHeightOffset, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot6;

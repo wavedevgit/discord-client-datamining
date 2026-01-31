@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'utils/callOnce.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: callOnce, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = false;

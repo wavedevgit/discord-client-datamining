@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: onChange, environment: var8
+    var1 = function arg0() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var0 = 1;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5.bind(var0)(var3);
     var4 = var7.createRadio;
     var3 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.useSetting;
     var3.useValue = var9;
     var3.onValueChange = var1;
-    var8 = function() { // Original name: useOptions, environment: var8
+    var8 = function() {
         var1 = {};
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;

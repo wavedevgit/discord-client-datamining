@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: UserVoiceSettings, environment: var1
+    var0 = function arg0() {
         _fun91706: for (var _fun91706_ip = 0;;) switch (_fun91706_ip) {
             case 0:
                 var1 = arg0;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var10.volumeSlider;
                 var11.style = var19;
                 var11.value = var8;
-                var8 = function(arg0) { // Original name: onValueChange, environment: var0
+                var8 = function arg0() {
                     var3 = _closure2_slot2;
                     var2 = {};
                     var0 = 'SET_VOLUME';
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var16.MicrophoneSlashIcon;
             case 593:
                 var11.icon = var6;
-                var6 = function() { // Original name: onPress, environment: var0
+                var6 = function() {
                     var3 = _closure2_slot2;
                     var2 = {};
                     var0 = 'MUTE';
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var17.SoundboardSlashIcon;
             case 789:
                 var13.icon = var5;
-                var5 = function() { // Original name: onPress, environment: var0
+                var5 = function() {
                     var3 = _closure2_slot2;
                     var2 = {};
                     var0 = 'MUTE_SOUNDBOARD';
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16.bind(var4)(var15, var14);
             case 1178:
                 var5.sublabel = var2;
-                var2 = function() { // Original name: onPress, environment: var0
+                var2 = function() {
                     _fun91713: for (var _fun91713_ip = 0;;) switch (_fun91713_ip) {
                         case 0:
                             var3 = _closure2_slot2;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var13.bind(var4)(var6);
                 var6 = var6.FormArrow;
                 var2.hint = var6;
-                var0 = function() { // Original name: onPress, environment: var0
+                var0 = function() {
                     var3 = _closure2_slot2;
                     var2 = {};
                     var0 = 'VIEW_SECURE_FRAMES_VERIFICATION_CODE';
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: CurrentUserVoiceSettings, environment: var1
+    var0 = function arg0() {
         _fun91717: for (var _fun91717_ip = 0;;) switch (_fun91717_ip) {
             case 0:
                 var1 = arg0;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var13.MicrophoneSlashIcon;
             case 526:
                 var9.icon = var12;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure2_slot1;
                     var1 = {};
                     var0 = 'MUTE';
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileVoiceSettings.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileVoiceSettings, environment: var1
+    var1 = function arg0() {
         _fun91721: for (var _fun91721_ip = 0;;) switch (_fun91721_ip) {
             case 0:
                 var1 = arg0;

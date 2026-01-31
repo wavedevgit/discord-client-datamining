@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: TransferFooter, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.onPress;
         var8 = var0.transferring;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: DeviceOption, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.name;
         var0 = var0.platform;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: EmptyState, environment: var1
+    var0 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/GameConsoleDeviceListActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GameConsoleListActionSheet, environment: var1
+    var1 = function arg0() {
         _fun66930: for (var _fun66930_ip = 0;;) switch (_fun66930_ip) {
             case 0:
                 var0 = arg0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var3;
                 var _closure2_slot4 = var3;
                 var _closure2_slot6 = var3;
-                var0 = function() { // Original name: _handleTransferVoice, environment: var5
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = true;
                 var4.withSpacing = var15;
                 var4.disabled = var16;
-                var15 = function(arg0) { // Original name: onChange, environment: var5
+                var15 = function arg0() {
                     var0 = arg0;
                     var4 = var0.value;
                     var2 = _closure2_slot5;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun66930
                 }
             case 611:
-                var12 = function() { // Original name: handleTransferVoice, environment: var5
+                var12 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot7;
                     var2 = var3.apply;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var16;
             case 737:
                 var13.disabled = var10;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 16;

@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.code = var3;
     var _closure1_slot0 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: normalizeValue, environment: var0
+        var0 = function arg0() {
             _fun79787: for (var _fun79787_ip = 0;;) switch (_fun79787_ip) {
                 case 0:
                     var2 = arg0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var5;
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: hsvToRgbWorklet, environment: var0
+        var0 = function arg0() {
             _fun79789: for (var _fun79789_ip = 0;;) switch (_fun79789_ip) {
                 case 0:
                     var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.code = var6;
     var _closure1_slot2 = var5;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: hslToRgbWorklet, environment: var0
+        var0 = function arg0() {
             _fun79791: for (var _fun79791_ip = 0;;) switch (_fun79791_ip) {
                 case 0:
                     var0 = arg0;

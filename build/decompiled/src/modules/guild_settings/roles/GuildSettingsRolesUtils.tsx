@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun115830: for (var _fun115830_ip = 0;;) switch (_fun115830_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun115832: for (var _fun115832_ip = 0;;) switch (_fun115832_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0, arg1) { // Original name: useGuildMembers, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var4;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 1000;
     var2.MAX_PREFETCH_MEMBER_COUNT = var4;
     var2.useGuildMembers = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useGuildRoleMembers, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var3 = arg0;
         var6 = arg1;
         var5 = arg2;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGuildRoleMembers = var3;
-    var3 = function(arg0, arg1) { // Original name: useQueryGuildMembers, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var5;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQueryGuildMembers = var3;
-    var3 = function(arg0, arg1) { // Original name: filterFullMembersByQuery, environment: var1
+    var3 = function arg0, arg1() {
         _fun115844: for (var _fun115844_ip = 0;;) switch (_fun115844_ip) {
             case 0:
                 var2 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterFullMembersByQuery = var3;
-    var3 = function(arg0) { // Original name: getSectionAnalyticsName, environment: var1
+    var3 = function arg0() {
         _fun115845: for (var _fun115845_ip = 0;;) switch (_fun115845_ip) {
             case 0:
                 var3 = arg0;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSectionAnalyticsName = var3;
-    var1 = function(arg0, arg1) { // Original name: filterRole, environment: var1
+    var1 = function arg0, arg1() {
         _fun115846: for (var _fun115846_ip = 0;;) switch (_fun115846_ip) {
             case 0:
                 var4 = arg1;

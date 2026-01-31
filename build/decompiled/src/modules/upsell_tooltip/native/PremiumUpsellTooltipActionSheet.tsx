@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/upsell_tooltip/native/PremiumUpsellTooltipActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumUpsellTooltipActionSheet, environment: var1
+    var1 = function arg0() {
         _fun92232: for (var _fun92232_ip = 0;;) switch (_fun92232_ip) {
             case 0:
                 var0 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot8;
                 var3 = undefined;
                 var19 = var0.bind(var3)();
-                var5 = function(arg0) { // Original name: handleDismiss, environment: var17
+                var5 = function arg0() {
                     _fun92233: for (var _fun92233_ip = 0;;) switch (_fun92233_ip) {
                         case 0:
                             var5 = arg0;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = 'active';
                 var11.variant = var21;
                 var11.text = var16;
-                var16 = function() { // Original name: onPress, environment: var17
+                var16 = function() {
                     var1 = _closure2_slot2;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = 'secondary';
                 var13.variant = var19;
                 var13.text = var18;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     _fun92235: for (var _fun92235_ip = 0;;) switch (_fun92235_ip) {
                         case 0:
                             var1 = _closure2_slot3;

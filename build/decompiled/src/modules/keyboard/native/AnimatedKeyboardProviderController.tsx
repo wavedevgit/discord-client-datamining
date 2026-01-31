@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var12.bind(var9)(var2);
         var4 = var5.useKeyboardHandler;
         var3 = {};
-        var2 = function(arg0) { // Original name: b, environment: var0
+        var2 = function arg0() {
             _fun99914: for (var _fun99914_ip = 0;;) switch (_fun99914_ip) {
                 case 0:
                     var1 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot9;
         var2.__initData = var6;
         var3.onStart = var2;
-        var2 = function(arg0) { // Original name: n, environment: var0
+        var2 = function arg0() {
             var2 = _closure1_slot7;
             var1 = var2.set;
             var0 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot10;
         var2.__initData = var6;
         var3.onMove = var2;
-        var2 = function(arg0) { // Original name: o, environment: var0
+        var2 = function arg0() {
             _fun99916: for (var _fun99916_ip = 0;;) switch (_fun99916_ip) {
                 case 0:
                     var1 = arg0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var8.bind(var9)(var1);
     var _closure1_slot12 = var1;
     var1 = {};
-    var7 = function(arg0) { // Original name: Component, environment: var7
+    var7 = function arg0() {
         var0 = arg0;
         var6 = var0.children;
         var3 = _closure1_slot6;

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.ClipboardListIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 3;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.RefreshIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 5;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.BeakerIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 7;
@@ -102,12 +102,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.PaperIcon;
     var3.Icon = var8;
-    var8 = function() { // Original name: predicate, environment: var6
+    var8 = function() {
         var0 = false;
         return var0;
     };
     var3.predicate = var8;
-    var8 = function() { // Original name: render, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 9;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.UserIcon;
     var3.Icon = var8;
-    var8 = function() { // Original name: render, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 11;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.FileUpIcon;
     var3.Icon = var8;
-    var8 = function() { // Original name: render, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 13;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.PaintPaletteIcon;
     var3.Icon = var8;
-    var8 = function() { // Original name: render, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 15;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.PaperIcon;
     var3.Icon = var8;
-    var8 = function() { // Original name: render, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 16;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.PaperIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 17;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.LanguageIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 19;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.DownloadIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 21;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.TimerIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 23;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.MagicWandIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 25;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.PiggyBankIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 27;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.PencilIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 29;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.EyeDropperIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 31;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.ShieldIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 33;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.RobotIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 35;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.ShopIcon;
     var3.Icon = var7;
-    var7 = function() { // Original name: render, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 37;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.CompassIcon;
     var3.Icon = var7;
-    var6 = function() { // Original name: render, environment: var6
+    var6 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 39;

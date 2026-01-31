@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var19;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var20;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun41843: for (var _fun41843_ip = 0;;) switch (_fun41843_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun41845: for (var _fun41845_ip = 0;;) switch (_fun41845_ip) {
             case 0:
                 var3 = arg0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var20[var4];
     var4 = var19.bind(var0)(var4);
     var _closure1_slot17 = var1;
-    var16 = function(arg0) { // Original name: openCollectiblesShop, environment: var3
+    var16 = function arg0() {
         var2 = arg0;
         var0 = var2.tab;
         var0 = null;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var0)(var2);
         return var0;
     };
-    var15 = function(arg0) { // Original name: openCollectiblesShopMobile, environment: var3
+    var15 = function arg0() {
         _fun41847: for (var _fun41847_ip = 0;;) switch (_fun41847_ip) {
             case 0:
                 var5 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var15;
-    var1 = function(arg0, arg1) { // Original name: findExistingCollectiblesShopRoute, environment: var3
+    var1 = function arg0, arg1() {
         _fun41848: for (var _fun41848_ip = 0;;) switch (_fun41848_ip) {
             case 0:
                 var1 = arg0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun41848
                 }
             case 37:
-                var3 = function(arg0) { // Original name: isCollectiblesShopRoute, environment: var2
+                var3 = function arg0() {
                     _fun41849: for (var _fun41849_ip = 0;;) switch (_fun41849_ip) {
                         case 0:
                             var1 = arg0;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot1 = var3;
-                var3 = function(arg0) { // Original name: searchRoutes, environment: var2
+                var3 = function arg0() {
                     _fun41850: for (var _fun41850_ip = 0;;) switch (_fun41850_ip) {
                         case 0:
                             var1 = _closure1_slot23;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var1;
-    var14 = function(arg0) { // Original name: dispatchOpenCollectiblesShop, environment: var3
+    var14 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 17;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var14;
-    var13 = function() { // Original name: closeCollectiblesShop, environment: var3
+    var13 = function() {
         var4 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 17;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var2)();
         return var0;
     };
-    var1 = function(arg0, arg1) { // Original name: areOptionalBooleansEqual, environment: var3
+    var1 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Boolean;
         var3 = undefined;

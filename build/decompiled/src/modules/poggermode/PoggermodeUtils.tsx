@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var6;
     var3 = var3.SHAKE_STEP_DIVIDER;
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1) { // Original name: getStepwiseValue, environment: var1
+    var3 = function arg0, arg1() {
         _fun54567: for (var _fun54567_ip = 0;;) switch (_fun54567_ip) {
             case 0:
                 var0 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getComboStyles = var3;
-    var1 = function(arg0) { // Original name: getComboScore, environment: var1
+    var1 = function arg0() {
         _fun54574: for (var _fun54574_ip = 0;;) switch (_fun54574_ip) {
             case 0:
                 var0 = arg0;

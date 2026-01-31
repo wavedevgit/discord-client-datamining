@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var11.bind(var0)(var3);
     var6.icon = var3;
-    var3 = function() { // Original name: description, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 7;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5[var7];
     var7 = var11.bind(var0)(var7);
     var6.icon = var7;
-    var7 = function() { // Original name: description, environment: var1
+    var7 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 7;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5[var7];
     var7 = var11.bind(var0)(var7);
     var6.icon = var7;
-    var7 = function() { // Original name: description, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 7;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.imageHeader = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: PerkRow, environment: var1
+    var3 = function arg0() {
         _fun74393: for (var _fun74393_ip = 0;;) switch (_fun74393_ip) {
             case 0:
                 var0 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stickers/native/premium/StickersPremiumUpsellAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun74394: for (var _fun74394_ip = 0;;) switch (_fun74394_ip) {
             case 0:
                 var0 = arg0;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.o3Tnif;
                 var4 = var5.bind(var7)(var4);
                 var0.confirmText = var4;
-                var4 = function() { // Original name: onConfirm, environment: var15
+                var4 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 22;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var11 = var17.content;
                 var8.style = var11;
-                var11 = function() { // Original name: onStartShouldSetResponder, environment: var15
+                var11 = function() {
                     var0 = true;
                     return var0;
                 };

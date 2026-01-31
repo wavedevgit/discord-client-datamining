@@ -13,17 +13,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: createReactNativeDocumentInstanceHandle, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var1.createReactNativeDocumentInstanceHandle = var2;
-    var2 = function(arg0) { // Original name: getNativeNodeReferenceFromReactNativeDocumentInstanceHandle, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var1.getNativeNodeReferenceFromReactNativeDocumentInstanceHandle = var2;
-    var2 = function(arg0) { // Original name: getPublicInstanceFromReactNativeDocumentInstanceHandle, environment: var0
+    var2 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 0;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getPublicInstanceFromReactNativeDocumentInstanceHandle = var2;
-    var0 = function(arg0) { // Original name: isReactNativeDocumentInstanceHandle, environment: var0
+    var0 = function arg0() {
         _fun2220: for (var _fun2220_ip = 0;;) switch (_fun2220_ip) {
             case 0:
                 var2 = arg0;

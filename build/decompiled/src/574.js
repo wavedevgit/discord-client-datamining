@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Math;
     var1 = var1.min;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: debounce, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun6927: for (var _fun6927_ip = 0;;) switch (_fun6927_ip) {
             case 0:
                 var4 = arg0;
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = arg2;
                 var _closure2_slot0 = var4;
                 var _closure2_slot1 = var6;
-                var0 = function(arg0) { // Original name: invokeFunc, environment: var1
+                var0 = function arg0() {
                     var4 = _closure2_slot2;
                     var3 = _closure2_slot3;
                     var0 = undefined;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot12 = var0;
-                var0 = function(arg0) { // Original name: shouldInvoke, environment: var1
+                var0 = function arg0() {
                     _fun6929: for (var _fun6929_ip = 0;;) switch (_fun6929_ip) {
                         case 0:
                             var4 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot13 = var0;
-                var0 = function() { // Original name: timerExpired, environment: var1
+                var0 = function() {
                     _fun6930: for (var _fun6930_ip = 0;;) switch (_fun6930_ip) {
                         case 0:
                             var1 = _closure1_slot0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot14 = var0;
-                var0 = function(arg0) { // Original name: trailingEdge, environment: var1
+                var0 = function arg0() {
                     _fun6931: for (var _fun6931_ip = 0;;) switch (_fun6931_ip) {
                         case 0:
                             var3 = undefined;
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot15 = var0;
-                var0 = function() { // Original name: debounced, environment: var1
+                var0 = function() {
                     _fun6932: for (var _fun6932_ip = 0;;) switch (_fun6932_ip) {
                         case 0:
                             var3 = undefined;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 265:
                 _closure2_slot11 = var2;
             case 269:
-                var2 = function() { // Original name: cancel, environment: var1
+                var2 = function() {
                     _fun6933: for (var _fun6933_ip = 0;;) switch (_fun6933_ip) {
                         case 0:
                             var2 = _closure2_slot6;
@@ -357,7 +357,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.cancel = var2;
-                var1 = function() { // Original name: flush, environment: var1
+                var1 = function() {
                     _fun6934: for (var _fun6934_ip = 0;;) switch (_fun6934_ip) {
                         case 0:
                             var0 = _closure2_slot6;

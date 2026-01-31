@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function() { // Original name: useQuestImpression, environment: var1
+    var3 = function() {
         _fun47190: for (var _fun47190_ip = 0;;) switch (_fun47190_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/quests/lib/analytics/ContentImpressionTrackerHooks.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useAdContentImpressionTrackerProps, environment: var1
+    var4 = function arg0() {
         _fun47191: for (var _fun47191_ip = 0;;) switch (_fun47191_ip) {
             case 0:
                 var5 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 43:
                 var4 = var5.adContentId;
             case 49:
-                var2 = function(arg0, arg1) { // Original name: useAdContentIds, environment: var0
+                var2 = function arg0, arg1() {
                     var5 = arg0;
                     var4 = arg1;
                     var _closure3_slot0 = var5;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useAdContentImpressionTrackerProps = var4;
-    var4 = function(arg0) { // Original name: useQuestStatusChanged, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var9 = var0.adContentIds;
         var _closure2_slot0 = var9;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useQuestStatusChanged = var4;
     var2.useQuestImpression = var3;
-    var1 = function() { // Original name: useQuestImpressionId, environment: var1
+    var1 = function() {
         _fun47199: for (var _fun47199_ip = 0;;) switch (_fun47199_ip) {
             case 0:
                 var1 = _closure1_slot5;

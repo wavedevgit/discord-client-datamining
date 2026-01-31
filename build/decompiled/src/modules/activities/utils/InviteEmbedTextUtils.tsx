@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1, arg2) { // Original name: getRequestToStreamText, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun92458: for (var _fun92458_ip = 0;;) switch (_fun92458_ip) {
             case 0:
                 var4 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getAskToJoinText, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun92459: for (var _fun92459_ip = 0;;) switch (_fun92459_ip) {
             case 0:
                 var8 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/activities/utils/InviteEmbedTextUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1, arg2) { // Original name: getHeaderText, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun92460: for (var _fun92460_ip = 0;;) switch (_fun92460_ip) {
             case 0:
                 var4 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getHeaderText = var5;
     var2.getRequestToStreamText = var4;
     var2.getAskToJoinText = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getDeadGameInviteText, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun92461: for (var _fun92461_ip = 0;;) switch (_fun92461_ip) {
             case 0:
                 var5 = arg0;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDeadGameInviteText = var3;
-    var1 = function(arg0) { // Original name: getPartyText, environment: var1
+    var1 = function arg0() {
         _fun92462: for (var _fun92462_ip = 0;;) switch (_fun92462_ip) {
             case 0:
                 var0 = arg0;

@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var11[var2](var10);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: cleanupSessionDataForTransport, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.delete;
         var0 = arg0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.cleanupSessionDataForTransport = var2;
-    var2 = function(arg0) { // Original name: getClientInfoForTransport, environment: var0
+    var2 = function arg0() {
         _fun9756: for (var _fun9756_ip = 0;;) switch (_fun9756_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getClientInfoForTransport = var2;
-    var2 = function(arg0) { // Original name: getProtocolVersionForTransport, environment: var0
+    var2 = function arg0() {
         _fun9757: for (var _fun9757_ip = 0;;) switch (_fun9757_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getProtocolVersionForTransport = var2;
-    var2 = function(arg0) { // Original name: getSessionDataForTransport, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.get;
         var0 = arg0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getSessionDataForTransport = var2;
-    var2 = function(arg0, arg1) { // Original name: storeSessionDataForTransport, environment: var0
+    var2 = function arg0, arg1() {
         _fun9759: for (var _fun9759_ip = 0;;) switch (_fun9759_ip) {
             case 0:
                 var3 = arg0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.storeSessionDataForTransport = var2;
-    var0 = function(arg0, arg1) { // Original name: updateSessionDataForTransport, environment: var0
+    var0 = function arg0, arg1() {
         _fun9760: for (var _fun9760_ip = 0;;) switch (_fun9760_ip) {
             case 0:
                 var3 = arg0;

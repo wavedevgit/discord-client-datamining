@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun94868: for (var _fun94868_ip = 0;;) switch (_fun94868_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var3];
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: LocalPresenceStateManager, environment: var5
+        var3 = function arg0() {
             _fun94872: for (var _fun94872_ip = 0;;) switch (_fun94872_ip) {
                 case 0:
                     var4 = this;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getInitialState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getLocalPresence;
             var0 = var0.bind(var1)();
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNextState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getLocalPresence;
             var0 = var0.bind(var1)();
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldCommit';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0.socket;
             var0 = var1.isSessionEstablished;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'emitPresenceUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var9 = var0.status;
             var8 = var0.since;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.switchingAccounts;
             var3 = !var0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleAccountSwitch';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var2 = this;
             var0 = true;
             var2.switchingAccounts = var0;

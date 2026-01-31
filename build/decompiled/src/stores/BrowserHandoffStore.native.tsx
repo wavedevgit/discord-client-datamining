@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun13372: for (var _fun13372_ip = 0;;) switch (_fun13372_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var3.bind(var0)(var5);
     var5 = var5.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: BrowserHandoffStore, environment: var5
+        var3 = function() {
             _fun13376: for (var _fun13376_ip = 0;;) switch (_fun13376_ip) {
                 case 0:
                     var3 = this;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isHandoffAvailable';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'user';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'key';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = null;
             return var0;
         };

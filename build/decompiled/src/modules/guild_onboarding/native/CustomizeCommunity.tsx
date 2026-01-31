@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EmptyCustomizeCommunity, environment: var1
+    var0 = function arg0() {
         _fun77404: for (var _fun77404_ip = 0;;) switch (_fun77404_ip) {
             case 0:
                 var0 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.t;
                 var9 = var8["jH+ktB"];
                 var8 = {};
-                var12 = function() { // Original name: onBrowseChannels, environment: var12
+                var12 = function() {
                     _fun77406: for (var _fun77406_ip = 0;;) switch (_fun77406_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: PromptTitle, environment: var1
+    var0 = function arg0() {
         _fun77407: for (var _fun77407_ip = 0;;) switch (_fun77407_ip) {
             case 0:
                 var0 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: PromptHelpText, environment: var1
+    var0 = function arg0() {
         _fun77408: for (var _fun77408_ip = 0;;) switch (_fun77408_ip) {
             case 0:
                 var0 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.prompt = var9;
                 var2.selectedRoleIds = var8;
                 var2.selectedChannelIds = var7;
-                var6 = function(arg0, arg1) { // Original name: itemHook, environment: var6
+                var6 = function arg0, arg1() {
                     var4 = _closure1_slot16;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ConnectionsPrompt, environment: var1
+    var0 = function arg0() {
         _fun77414: for (var _fun77414_ip = 0;;) switch (_fun77414_ip) {
             case 0:
                 var0 = arg0;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: DropdownOption, environment: var1
+    var0 = function arg0() {
         _fun77417: for (var _fun77417_ip = 0;;) switch (_fun77417_ip) {
             case 0:
                 var1 = arg0;
@@ -723,7 +723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: DropdownPrompt, environment: var1
+    var0 = function arg0() {
         _fun77419: for (var _fun77419_ip = 0;;) switch (_fun77419_ip) {
             case 0:
                 var0 = arg0;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var7 = var14.bind(var3)(var2);
                 var6 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: c, environment: var13
+                var2 = function() {
                     _fun77423: for (var _fun77423_ip = 0;;) switch (_fun77423_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot1;
                     var6 = var1.id;
                     var2.promptId = var6;
-                    var6 = function(arg0, arg1) { // Original name: onSelect, environment: var6
+                    var6 = function arg0, arg1() {
                         _fun77425: for (var _fun77425_ip = 0;;) switch (_fun77425_ip) {
                             case 0:
                                 var0 = arg1;
@@ -1149,7 +1149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: MultipleChoicePrompt, environment: var1
+    var0 = function arg0() {
         _fun77427: for (var _fun77427_ip = 0;;) switch (_fun77427_ip) {
             case 0:
                 var0 = arg0;
@@ -1204,7 +1204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var11 = var15.bind(var3)(var2);
                 var7 = var11.useAnimatedStyle;
-                var2 = function() { // Original name: o, environment: var6
+                var2 = function() {
                     _fun77429: for (var _fun77429_ip = 0;;) switch (_fun77429_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var0.id;
                     var7 = var8.bind(var9)(var7);
                     var1.selected = var7;
-                    var6 = function(arg0) { // Original name: onSelect, environment: var6
+                    var6 = function arg0() {
                         _fun77431: for (var _fun77431_ip = 0;;) switch (_fun77431_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1842,7 +1842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/CustomizeCommunity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CustomizeCommunity, environment: var1
+    var1 = function arg0() {
         _fun77432: for (var _fun77432_ip = 0;;) switch (_fun77432_ip) {
             case 0:
                 var0 = arg0;

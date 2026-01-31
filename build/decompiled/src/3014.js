@@ -3,9 +3,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24366: for (var _fun24366_ip = 0;;) switch (_fun24366_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
-                var4 = function(arg0, arg1, arg2, arg3) { // Original name: translate, environment: var5
+                var4 = function arg0, arg1, arg2, arg3() {
                     _fun24368: for (var _fun24368_ip = 0;;) switch (_fun24368_ip) {
                         case 0:
                             var3 = arg0;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                var0 = function(arg0) { // Original name: week, environment: var5
+                var0 = function arg0() {
                     _fun24369: for (var _fun24369_ip = 0;;) switch (_fun24369_ip) {
                         case 0:
                             var3 = this;
@@ -352,7 +352,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.longDateFormat = var0;
                 var0 = /de|du/i;
                 var1.meridiemParse = var0;
-                var0 = function(arg0) { // Original name: isPM, environment: var5
+                var0 = function arg0() {
                     var2 = arg0;
                     var1 = var2.charAt;
                     var0 = 1;
@@ -364,7 +364,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.isPM = var0;
-                var0 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var5
+                var0 = function arg0, arg1, arg2() {
                     _fun24371: for (var _fun24371_ip = 0;;) switch (_fun24371_ip) {
                         case 0:
                             var3 = arg2;
@@ -410,7 +410,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'lastWeek': null,
                     'sameElse': 'L'
                 };
-                var6 = function() { // Original name: nextWeek, environment: var5
+                var6 = function() {
                     var3 = _closure2_slot1;
                     var2 = var3.call;
                     var1 = this;
@@ -419,7 +419,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.nextWeek = var6;
-                var5 = function() { // Original name: lastWeek, environment: var5
+                var5 = function() {
                     var3 = _closure2_slot1;
                     var2 = var3.call;
                     var1 = this;

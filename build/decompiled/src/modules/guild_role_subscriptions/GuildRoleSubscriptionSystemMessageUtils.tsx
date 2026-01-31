@@ -8,12 +8,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: identityHook, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: getRoleSubscriptionPurchaseContentCommonData, environment: var1
+    var0 = function arg0, arg1() {
         _fun55418: for (var _fun55418_ip = 0;;) switch (_fun55418_ip) {
             case 0:
                 var3 = arg1;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getRoleSubscriptionPurchaseSystemMessageContent, environment: var1
+    var0 = function arg0() {
         _fun55419: for (var _fun55419_ip = 0;;) switch (_fun55419_ip) {
             case 0:
                 var0 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: pickRoleSubscriptionPurchaseSticker, environment: var1
+    var3 = function arg0() {
         _fun55420: for (var _fun55420_ip = 0;;) switch (_fun55420_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.pickRoleSubscriptionPurchaseSticker = var3;
-    var3 = function(arg0, arg1) { // Original name: getRoleSubscriptionPurchaseStickerCTA, environment: var1
+    var3 = function arg0, arg1() {
         _fun55421: for (var _fun55421_ip = 0;;) switch (_fun55421_ip) {
             case 0:
                 var1 = arg1;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRoleSubscriptionPurchaseStickerCTA = var3;
-    var3 = function(arg0) { // Original name: getRoleSubscriptionPurchaseSystemMessageFormattedContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.username;
         var6 = var0.usernameOnClickHandler;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getRoleSubscriptionPurchaseSystemMessageFormattedContent = var3;
-    var3 = function(arg0) { // Original name: getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.username;
         var6 = var0.usernameOnClickHandler;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getRoleSubscriptionPurchaseSystemMessageAstFormattedContent = var3;
-    var3 = function(arg0) { // Original name: getRoleSubscriptionPurchaseSystemMessageContentMobile, environment: var1
+    var3 = function arg0() {
         _fun55424: for (var _fun55424_ip = 0;;) switch (_fun55424_ip) {
             case 0:
                 var0 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRoleSubscriptionPurchaseSystemMessageContentMobile = var3;
-    var3 = function(arg0) { // Original name: isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isEligibleForRoleSubscriptionPurchaseSystemMessageSettings = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: trackRoleSubscriptionPurchaseMessageTierClick, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun55426: for (var _fun55426_ip = 0;;) switch (_fun55426_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackRoleSubscriptionPurchaseMessageTierClick = var3;
-    var1 = function(arg0, arg1) { // Original name: getRoleSubscriptionPurchaseSystemMessageEventProperties, environment: var1
+    var1 = function arg0, arg1() {
         _fun55427: for (var _fun55427_ip = 0;;) switch (_fun55427_ip) {
             case 0:
                 var2 = arg0;

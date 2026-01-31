@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun98231: for (var _fun98231_ip = 0;;) switch (_fun98231_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var0)(var6);
     var _closure1_slot7 = var6;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: StoreListingRecord, environment: var0
+        var4 = function arg0() {
             _fun98235: for (var _fun98235_ip = 0;;) switch (_fun98235_ip) {
                 case 0:
                     var1 = arg0;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'isSlimDirectoryVersion';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = this;
             var1 = var0.description;
             var0 = null;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'createFromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun98237: for (var _fun98237_ip = 0;;) switch (_fun98237_ip) {
                 case 0:
                     var1 = arg0;

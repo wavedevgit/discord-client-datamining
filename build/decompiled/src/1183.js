@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: createReleaseFromGlobalReleaseConstants, environment: var0
+    var2 = function() {
         _fun12892: for (var _fun12892_ip = 0;;) switch (_fun12892_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.createReleaseFromGlobalReleaseConstants = var2;
-    var0 = function() { // Original name: getDefaultRelease, environment: var0
+    var0 = function() {
         _fun12893: for (var _fun12893_ip = 0;;) switch (_fun12893_ip) {
             case 0:
                 var3 = _closure1_slot0;

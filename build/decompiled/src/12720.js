@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = require;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot0 = var3;
-    var3 = function() { // Original name: getDevMenu, environment: var1
-        var0 = function(arg0) { // Original name: notAvailable, environment: var1
+    var3 = function() {
+        var0 = function arg0() {
             var0 = global;
             var2 = var0.console;
             var1 = var2.warn;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var _closure2_slot0 = var0;
         var0 = {};
-        var2 = function() { // Original name: reload, environment: var1
+        var2 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = 'reload';
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.reload = var2;
-        var2 = function() { // Original name: show, environment: var1
+        var2 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = 'show';
@@ -50,12 +50,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.show = var2;
-        var2 = function() { // Original name: getConstants, environment: var1
+        var2 = function() {
             var0 = {};
             return var0;
         };
         var0.getConstants = var2;
-        var2 = function() { // Original name: debugRemotely, environment: var1
+        var2 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = 'debugRemotely';
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.debugRemotely = var2;
-        var2 = function() { // Original name: setHotLoadingEnabled, environment: var1
+        var2 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = 'setHotLoadingEnabled';
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.setHotLoadingEnabled = var2;
-        var1 = function() { // Original name: setProfilingEnabled, environment: var1
+        var1 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = 'setProfilingEnabled';
@@ -85,10 +85,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot1 = var3;
-    var1 = function() { // Original name: devTools, environment: var1
+    var1 = function() {
         var0 = function() { // Environment: var0
             var0 = {};
-            var1 = function(arg0) { // Original name: onCommand, environment: var1
+            var1 = function arg0() {
                 _fun97694: for (var _fun97694_ip = 0;;) switch (_fun97694_ip) {
                     case 0:
                         var0 = arg0;

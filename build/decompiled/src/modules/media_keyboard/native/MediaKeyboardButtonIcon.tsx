@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8[var0];
                 var10 = var6.bind(var4)(var9);
                 var9 = var10.useAnimatedStyle;
-                var5 = function() { // Original name: s, environment: var5
+                var5 = function() {
                     _fun90256: for (var _fun90256_ip = 0;;) switch (_fun90256_ip) {
                         case 0:
                             var0 = {};

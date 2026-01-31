@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: canSeeDevLinks, environment: var1
+    var0 = function() {
         _fun92297: for (var _fun92297_ip = 0;;) switch (_fun92297_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: createCodedLinkEmbeds, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun92298: for (var _fun92298_ip = 0;;) switch (_fun92298_ip) {
             case 0:
                 var2 = arg0;

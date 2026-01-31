@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.getDeviceState;
     var2.getDeviceState = var3;
-    var1 = function(arg0) { // Original name: logDeviceState, environment: var1
+    var1 = function arg0() {
         _fun93774: for (var _fun93774_ip = 0;;) switch (_fun93774_ip) {
             case 0:
                 var0 = arg0;

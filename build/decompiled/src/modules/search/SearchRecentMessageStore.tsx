@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var8
+    var0 = function() {
         _fun71778: for (var _fun71778_ip = 0;;) switch (_fun71778_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var3 = function() { // Original name: handleReset, environment: var8
+    var3 = function() {
         var0 = global;
         var0 = var0.Map;
         var1 = var0.prototype;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var8
-        var3 = function() { // Original name: SearchRecentMessageStore, environment: var0
+        var3 = function() {
             _fun71783: for (var _fun71783_ip = 0;;) switch (_fun71783_ip) {
                 case 0:
                     var3 = this;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'getRecentMessageAuthorIds';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun71784: for (var _fun71784_ip = 0;;) switch (_fun71784_ip) {
                 case 0:
                     var3 = _closure1_slot7;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleSearchMessagesSuccess, environment: var8
+    var8 = function arg0() {
         _fun71785: for (var _fun71785_ip = 0;;) switch (_fun71785_ip) {
             case 0:
                 var1 = arg0;

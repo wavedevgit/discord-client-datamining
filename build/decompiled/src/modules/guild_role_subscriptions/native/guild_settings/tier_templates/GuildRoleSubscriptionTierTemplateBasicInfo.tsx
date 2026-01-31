@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierTemplateBasicInfo, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.template;
         var _closure2_slot0 = var0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.style = var10;
         var9 = var9.templateCTAText;
         var5.textStyle = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var3 = _closure2_slot1;
             var2 = _closure2_slot0;
             var1 = _closure2_slot2;

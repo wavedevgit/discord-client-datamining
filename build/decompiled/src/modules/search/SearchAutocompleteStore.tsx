@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun71742: for (var _fun71742_ip = 0;;) switch (_fun71742_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun71745: for (var _fun71745_ip = 0;;) switch (_fun71745_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun71747: for (var _fun71747_ip = 0;;) switch (_fun71747_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: getOrCreateUserSearchContext, environment: var3
+    var0 = function arg0() {
         _fun71748: for (var _fun71748_ip = 0;;) switch (_fun71748_ip) {
             case 0:
                 var9 = arg0;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: stateFactory, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.searchContext;
         var5 = var0.query;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: isUserAutocompleteFilter, environment: var3
+    var0 = function arg0() {
         _fun71750: for (var _fun71750_ip = 0;;) switch (_fun71750_ip) {
             case 0:
                 var3 = arg0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: isUserAutocompleteMode, environment: var3
+    var0 = function arg0() {
         _fun71751: for (var _fun71751_ip = 0;;) switch (_fun71751_ip) {
             case 0:
                 var3 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1) { // Original name: handleUserSearchResults, environment: var3
+    var0 = function arg0, arg1() {
         _fun71752: for (var _fun71752_ip = 0;;) switch (_fun71752_ip) {
             case 0:
                 var8 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: setSelectedSearchContext, environment: var3
+    var0 = function arg0() {
         _fun71753: for (var _fun71753_ip = 0;;) switch (_fun71753_ip) {
             case 0:
                 var2 = arg0;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: generateFilterResults, environment: var3
+    var0 = function arg0() {
         _fun71754: for (var _fun71754_ip = 0;;) switch (_fun71754_ip) {
             case 0:
                 var0 = arg0;
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0, arg1) { // Original name: generateSearchOptions, environment: var3
+    var0 = function arg0, arg1() {
         _fun71756: for (var _fun71756_ip = 0;;) switch (_fun71756_ip) {
             case 0:
                 var3 = arg0;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: generateGlobalResults, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun71758: for (var _fun71758_ip = 0;;) switch (_fun71758_ip) {
             case 0:
                 var5 = arg1;
@@ -1262,7 +1262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getAutocompleteList, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun71760: for (var _fun71760_ip = 0;;) switch (_fun71760_ip) {
             case 0:
                 var4 = arg0;
@@ -1337,7 +1337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var6 = function() { // Original name: handleChannelCreateOrDelete, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 13;
@@ -1348,7 +1348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var2)();
         return var0;
     };
-    var0 = function(arg0) { // Original name: removeHistoryFromResults, environment: var3
+    var0 = function arg0() {
         _fun71762: for (var _fun71762_ip = 0;;) switch (_fun71762_ip) {
             case 0:
                 var3 = arg0;
@@ -1410,7 +1410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var0 = function(arg0) { // Original name: rebuildAutocompleteResults, environment: var3
+    var0 = function arg0() {
         _fun71764: for (var _fun71764_ip = 0;;) switch (_fun71764_ip) {
             case 0:
                 var8 = arg0;
@@ -1556,7 +1556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var0)(var1);
     var8 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SearchAutocompleteStoreClass, environment: var5
+        var3 = function() {
             _fun71766: for (var _fun71766_ip = 0;;) switch (_fun71766_ip) {
                 case 0:
                     var3 = this;
@@ -1604,7 +1604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var7 = this;
             var6 = var7.waitFor;
             var13 = _closure1_slot8;
@@ -1624,7 +1624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun71768: for (var _fun71768_ip = 0;;) switch (_fun71768_ip) {
                 case 0:
                     var3 = arg0;
@@ -1673,7 +1673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSelectedSearchContext';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -1689,7 +1689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var7.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: handleSearchAutocompleteInitialize, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.searchContext;
         var3 = _closure1_slot32;
@@ -1700,7 +1700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SEARCH_AUTOCOMPLETE_INITIALIZE = var9;
-    var9 = function(arg0) { // Original name: handleSearchAutocompleteQueryUpdate, environment: var3
+    var9 = function arg0() {
         _fun71771: for (var _fun71771_ip = 0;;) switch (_fun71771_ip) {
             case 0:
                 var0 = arg0;
@@ -1911,7 +1911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SEARCH_AUTOCOMPLETE_QUERY_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleSearchEditorStateClear, environment: var3
+    var9 = function arg0() {
         _fun71772: for (var _fun71772_ip = 0;;) switch (_fun71772_ip) {
             case 0:
                 var0 = arg0;
@@ -1945,7 +1945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.SEARCH_EDITOR_STATE_CLEAR = var9;
     var1.CHANNEL_CREATE = var6;
     var1.CHANNEL_DELETE = var6;
-    var6 = function() { // Original name: handleStreamerModeUpdate, environment: var3
+    var6 = function() {
         _fun71773: for (var _fun71773_ip = 0;;) switch (_fun71773_ip) {
             case 0:
                 var2 = _closure1_slot19;
@@ -1965,7 +1965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STREAMER_MODE_UPDATE = var6;
-    var6 = function() { // Original name: handleChannelSelect, environment: var3
+    var6 = function() {
         _fun71774: for (var _fun71774_ip = 0;;) switch (_fun71774_ip) {
             case 0:
                 var2 = _closure1_slot19;
@@ -1985,7 +1985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANNEL_SELECT = var6;
-    var6 = function() { // Original name: handleLogOut, environment: var3
+    var6 = function() {
         _fun71775: for (var _fun71775_ip = 0;;) switch (_fun71775_ip) {
             case 0:
                 var2 = _closure1_slot25;
@@ -2016,7 +2016,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LOGOUT = var6;
-    var6 = function(arg0) { // Original name: handleSearchHistoryWebClearItems, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.autocompleteStateId;
         var1 = _closure1_slot37;

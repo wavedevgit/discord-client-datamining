@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: isNearBottom, environment: var1
+    var0 = function arg0() {
         _fun62170: for (var _fun62170_ip = 0;;) switch (_fun62170_ip) {
             case 0:
                 var0 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/native/OAuth2AuthorizeContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OAuth2AuthorizeContent, environment: var1
+    var1 = function arg0() {
         _fun62171: for (var _fun62171_ip = 0;;) switch (_fun62171_ip) {
             case 0:
                 var1 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14[0] = var15;
                 var4.contentContainerStyle = var14;
                 var4.ref = var12;
-                var12 = function(arg0, arg1) { // Original name: onContentSizeChange, environment: var11
+                var12 = function arg0, arg1() {
                     _fun62173: for (var _fun62173_ip = 0;;) switch (_fun62173_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.onContentSizeChange = var12;
                 var12 = 16;
                 var4.scrollEventThrottle = var12;
-                var12 = function(arg0) { // Original name: onLayout, environment: var11
+                var12 = function arg0() {
                     var2 = _closure2_slot6;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var4.onLayout = var12;
-                var12 = function(arg0) { // Original name: onScroll, environment: var11
+                var12 = function arg0() {
                     _fun62175: for (var _fun62175_ip = 0;;) switch (_fun62175_ip) {
                         case 0:
                             var2 = arg0;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot7;
                 var7 = _closure1_slot5;
                 var6 = {};
-                var11 = function(arg0) { // Original name: onLayout, environment: var11
+                var11 = function arg0() {
                     var2 = _closure2_slot7;
                     var0 = arg0;
                     var0 = var0.nativeEvent;

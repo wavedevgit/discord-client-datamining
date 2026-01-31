@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var3 = function(arg0) { // Original name: getStateFromParams, environment: var1
+    var3 = function arg0() {
         _fun17483: for (var _fun17483_ip = 0;;) switch (_fun17483_ip) {
             case 0:
                 var1 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var1 = function(arg0) { // Original name: useLinkProps, environment: var1
+    var1 = function arg0() {
         _fun17484: for (var _fun17484_ip = 0;;) switch (_fun17484_ip) {
             case 0:
                 var0 = arg0;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.href = var2;
                 var2 = 'link';
                 var0.accessibilityRole = var2;
-                var1 = function(arg0) { // Original name: onPress, environment: var1
+                var1 = function arg0() {
                     _fun17485: for (var _fun17485_ip = 0;;) switch (_fun17485_ip) {
                         case 0:
                             var0 = arg0;

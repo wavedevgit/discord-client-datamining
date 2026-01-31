@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var4 = function(arg0) { // Original name: useFloatingCTAProps, environment: var5
+    var4 = function arg0() {
         _fun110644: for (var _fun110644_ip = 0;;) switch (_fun110644_ip) {
             case 0:
                 var4 = arg0;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var1];
                 var1 = var5.bind(var2)(var1);
                 var3 = var1.bind(var2)(var3);
-                var1 = function(arg0) { // Original name: useOverrideFloatingCTAProps, environment: var0
+                var1 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var5 = _closure1_slot4;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var3 = var1.bind(var2)(var3);
-                var1 = function(arg0) { // Original name: useGuildEventControlsProps, environment: var0
+                var1 = function arg0() {
                     _fun110648: for (var _fun110648_ip = 0;;) switch (_fun110648_ip) {
                         case 0:
                             var3 = arg0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1 = var1.bind(var2)(var4);
-                var0 = function(arg0) { // Original name: useCallInviteProps, environment: var0
+                var0 = function arg0() {
                     _fun110653: for (var _fun110653_ip = 0;;) switch (_fun110653_ip) {
                         case 0:
                             var4 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var4;
-    var3 = function(arg0) { // Original name: getBadConnectionCTAProps, environment: var5
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.variant = var8;
         var1 = var3.bind(var4)(var2, var1);
         var0.icon = var1;
-        var1 = function() { // Original name: onPress, environment: var6
+        var1 = function() {
             _fun110656: for (var _fun110656_ip = 0;;) switch (_fun110656_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -651,7 +651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.cpT0Cq;
         var7 = var8.bind(var11)(var7);
         var1.accessibilityLabel = var7;
-        var6 = function() { // Original name: onPress, environment: var6
+        var6 = function() {
             _fun110657: for (var _fun110657_ip = 0;;) switch (_fun110657_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var3;
-    var0 = function() { // Original name: handleSoundboardMobileFloatingCtaClose, environment: var5
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 34;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var1 = function(arg0) { // Original name: getDismissableCTAProps, environment: var5
+    var1 = function arg0() {
         _fun110659: for (var _fun110659_ip = 0;;) switch (_fun110659_ip) {
             case 0:
                 var0 = arg0;
@@ -768,7 +768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.source = var8;
                 var4 = var6.bind(var1)(var5, var4);
                 var2.icon = var4;
-                var3 = function() { // Original name: onPress, environment: var3
+                var3 = function() {
                     _fun110660: for (var _fun110660_ip = 0;;) switch (_fun110660_ip) {
                         case 0:
                             var3 = _closure2_slot0;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'BAD_CONNECTION';
     var6.BAD_CONNECTION = var7;
     var _closure1_slot12 = var6;
-    var7 = function() { // Original name: CloseSoundboardMobileFloatingCtaIcon, environment: var5
+    var7 = function() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot5;
         var1 = {};
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 5000;
     var2.FLOATING_CTA_HIDE_TIMEOUT = var7;
     var2.OverrideFloatingCTA = var6;
-    var5 = function(arg0) { // Original name: useShouldShowFloatingCTA, environment: var5
+    var5 = function arg0() {
         _fun110662: for (var _fun110662_ip = 0;;) switch (_fun110662_ip) {
             case 0:
                 var5 = arg0;

@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gift_code_modal/GiftCodeRedeemSuccess.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GiftCodeRedeemSuccess, environment: var1
+    var1 = function arg0() {
         _fun56805: for (var _fun56805_ip = 0;;) switch (_fun56805_ip) {
             case 0:
                 var0 = arg0;
@@ -970,7 +970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = !var14;
             case 2324:
                 var8.disabled = var13;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     _fun56811: for (var _fun56811_ip = 0;;) switch (_fun56811_ip) {
                         case 0:
                             var1 = _closure2_slot5;

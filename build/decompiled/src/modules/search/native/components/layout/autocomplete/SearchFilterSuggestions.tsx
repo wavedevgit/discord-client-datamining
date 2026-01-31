@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SearchFilterPrefixRow, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var9 = var4.text;
         var _closure2_slot0 = var9;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getSuggestionsKey, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: AnimatedEnterExitContainer, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var10 = var0.state;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6[var0];
         var8 = var14.bind(var3)(var5);
         var7 = var8.useAnimatedStyle;
-        var5 = function() { // Original name: u, environment: var2
+        var5 = function() {
             _fun105126: for (var _fun105126_ip = 0;;) switch (_fun105126_ip) {
                 case 0:
                     var0 = {};
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var5[var8];
                     var2 = var4.bind(var7)(var2);
                     var18 = var2.springStandard;
-                    var9 = function(arg0) { // Original name: t, environment: var2
+                    var9 = function arg0() {
                         _fun105127: for (var _fun105127_ip = 0;;) switch (_fun105127_ip) {
                             case 0:
                                 var0 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: SearchFilterSuggestions, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var8 = var1.searchContext;
         var _closure2_slot0 = var8;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var7[var15];
         var12 = var1.bind(var3)(var8);
         var10 = var12.useAnimatedReaction;
-        var9 = function() { // Original name: x, environment: var0
+        var9 = function() {
             var1 = _closure2_slot3;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9.__workletHash = var8;
         var8 = _closure1_slot13;
         var9.__initData = var8;
-        var8 = function(arg0) { // Original name: b, environment: var0
+        var8 = function arg0() {
             _fun105136: for (var _fun105136_ip = 0;;) switch (_fun105136_ip) {
                 case 0:
                     var0 = arg0;

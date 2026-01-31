@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useAutoTrackSearchTabCountsViewedAnalytics, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.searchContext;
         var _closure2_slot0 = var5;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun106945
                     }
                 case 18:
-                    var5 = function(arg0) { // Original name: getSearchTabCount, environment: var0
+                    var5 = function arg0() {
                         _fun106946: for (var _fun106946_ip = 0;;) switch (_fun106946_ip) {
                             case 0:
                                 var2 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: updateGuildRole, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function() { // Original name: _updateGuildRole, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: startReordering, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.startReordering = var6;
-    var6 = function() { // Original name: stopReordering, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.stopReordering = var6;
-    var6 = function(arg0, arg1) { // Original name: updateRoleOrder, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateRoleOrder = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: toggleRoleSetting, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var0 = arg1;
         var2 = _closure1_slot5;
         var1 = {};
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.toggleRoleSetting = var6;
-    var6 = function(arg0, arg1) { // Original name: startEditingPermissions, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.startEditingPermissions = var6;
-    var6 = function() { // Original name: stopEditingPermissions, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.stopEditingPermissions = var6;
-    var6 = function(arg0) { // Original name: allowPermission, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.allowPermission = var6;
-    var6 = function(arg0) { // Original name: denyPermission, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.denyPermission = var6;
-    var6 = function() { // Original name: cancelPermissionChanges, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.cancelPermissionChanges = var6;
-    var3 = function(arg0) { // Original name: savePermissionChanges, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.guildId;
         var9 = var0.roleId;

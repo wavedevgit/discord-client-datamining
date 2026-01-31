@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: useBlockedPaymentsConfig, environment: var1
+    var1 = function() {
         _fun56483: for (var _fun56483_ip = 0;;) switch (_fun56483_ip) {
             case 0:
                 var4 = _closure1_slot2;

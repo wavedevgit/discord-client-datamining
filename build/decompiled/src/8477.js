@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 88:
             var11 = var7.Proxy;
             var10 = {};
-            var7 = function() { // Original name: get, environment: var1
+            var7 = function() {
                 var0 = global;
                 var2 = var0.Error;
                 var0 = var2.prototype;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var5 instanceof Object ? var5 : var6;
             var _closure1_slot1 = var5;
             var7 = {};
-            var5 = function(arg0, arg1) { // Original name: addListener, environment: var1
+            var5 = function arg0, arg1() {
                 var3 = _closure1_slot1;
                 var2 = var3.addListener;
                 var1 = _closure1_slot0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var7.addListener = var5;
             var6 = {};
-            var5 = function(arg0, arg1) { // Original name: addListener, environment: var1
+            var5 = function arg0, arg1() {
                 var3 = _closure1_slot1;
                 var2 = var3.addListener;
                 var1 = _closure1_slot0;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var6.addListener = var5;
             var5 = {};
-            var10 = function(arg0, arg1) { // Original name: addListener, environment: var1
+            var10 = function arg0, arg1() {
                 var3 = _closure1_slot1;
                 var2 = var3.addListener;
                 var1 = _closure1_slot0;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun3069: for (var _fun3069_ip = 0;;) switch (_fun3069_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2) { // Original name: File, environment: var5
+        var3 = function arg0, arg1, arg2() {
             _fun3073: for (var _fun3073_ip = 0;;) switch (_fun3073_ip) {
                 case 0:
                     var0 = arg0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'name';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = this;
             var2 = _closure1_slot0;
             var3 = _closure1_slot1;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'lastModified';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             _fun3075: for (var _fun3075_ip = 0;;) switch (_fun3075_ip) {
                 case 0:
                     var0 = this;

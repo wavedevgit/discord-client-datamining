@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.bind(var7)(var5);
     var5 = 'requiredFirstCharacters';
     var1[var5] = var6;
-    var6 = function(arg0, arg1) { // Original name: match, environment: var3
+    var6 = function arg0, arg1() {
         _fun44100: for (var _fun44100_ip = 0;;) switch (_fun44100_ip) {
             case 0:
                 var0 = arg1;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5 = 'match';
     var1[var5] = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: parse, environment: var3
+    var5 = function arg0, arg1, arg2() {
         _fun44101: for (var _fun44101_ip = 0;;) switch (_fun44101_ip) {
             case 0:
                 var0 = arg0;

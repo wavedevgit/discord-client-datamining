@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: FocusedControlsHeader, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.header;
         var13 = var0.reveal;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var12[var0];
         var6 = var5.bind(var3)(var1);
         var4 = var6.useDerivedValue;
-        var1 = function() { // Original name: l, environment: var2
+        var1 = function() {
             _fun68631: for (var _fun68631_ip = 0;;) switch (_fun68631_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var12[var0];
         var6 = var5.bind(var3)(var4);
         var4 = var6.useAnimatedStyle;
-        var2 = function() { // Original name: c, environment: var2
+        var2 = function() {
             var0 = {};
             var2 = {};
             var5 = _closure1_slot0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: FocusedControlsHeaderGradient, environment: var3
+    var0 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5[var0];
                 var7 = var23.bind(var3)(var1);
                 var2 = var7.useDerivedValue;
-                var1 = function() { // Original name: D, environment: var16
+                var1 = function() {
                     _fun68635: for (var _fun68635_ip = 0;;) switch (_fun68635_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5[var0];
                 var7 = var23.bind(var3)(var1);
                 var2 = var7.useDerivedValue;
-                var1 = function() { // Original name: F, environment: var16
+                var1 = function() {
                     _fun68636: for (var _fun68636_ip = 0;;) switch (_fun68636_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5[var0];
                 var7 = var23.bind(var3)(var1);
                 var2 = var7.useAnimatedStyle;
-                var1 = function() { // Original name: y, environment: var16
+                var1 = function() {
                     var0 = {};
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var17[var6];
                 var7 = var7.bind(var3)(var6);
                 var6 = {};
-                var16 = function() { // Original name: onDrawerOpen, environment: var16
+                var16 = function() {
                     _fun68638: for (var _fun68638_ip = 0;;) switch (_fun68638_ip) {
                         case 0:
                             var3 = _closure1_slot1;

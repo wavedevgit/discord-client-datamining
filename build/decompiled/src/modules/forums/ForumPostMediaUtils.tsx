@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var12;
-    var9 = function(arg0) { // Original name: isValidImageAttachment, environment: var1
+    var9 = function arg0() {
         _fun70782: for (var _fun70782_ip = 0;;) switch (_fun70782_ip) {
             case 0:
                 var0 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var9;
-    var8 = function(arg0) { // Original name: isValidVideoAttachment, environment: var1
+    var8 = function arg0() {
         _fun70783: for (var _fun70783_ip = 0;;) switch (_fun70783_ip) {
             case 0:
                 var2 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var8;
-    var7 = function(arg0) { // Original name: isMediaAttachment, environment: var1
+    var7 = function arg0() {
         _fun70784: for (var _fun70784_ip = 0;;) switch (_fun70784_ip) {
             case 0:
                 var3 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var7;
-    var5 = function(arg0) { // Original name: getForumPostMedia, environment: var1
+    var5 = function arg0() {
         _fun70785: for (var _fun70785_ip = 0;;) switch (_fun70785_ip) {
             case 0:
                 var1 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var5;
-    var0 = function(arg0) { // Original name: useForumPostMedia, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot14;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: useForumPostEmbeds, environment: var1
+    var0 = function arg0, arg1() {
         _fun70788: for (var _fun70788_ip = 0;;) switch (_fun70788_ip) {
             case 0:
                 var7 = arg0;
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var4 = function(arg0) { // Original name: useForumPostComponentsMedia, environment: var1
+    var4 = function arg0() {
         _fun70790: for (var _fun70790_ip = 0;;) switch (_fun70790_ip) {
             case 0:
                 var3 = arg0;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var0 = function(arg0, arg1) { // Original name: unfurledMediaToForumPostMediaAttachment, environment: var1
+    var0 = function arg0, arg1() {
         _fun70793: for (var _fun70793_ip = 0;;) switch (_fun70793_ip) {
             case 0:
                 var2 = arg0;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var3 = function(arg0, arg1) { // Original name: useForumPostMediaProperties, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg0;
         var0 = _closure1_slot15;
         var3 = undefined;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var12.fileFinishedImporting;
     var10 = 'modules/forums/ForumPostMediaUtils.tsx';
     var10 = var11.bind(var12)(var10);
-    var10 = function(arg0, arg1) { // Original name: getEmbedColor, environment: var1
+    var10 = function arg0, arg1() {
         _fun70795: for (var _fun70795_ip = 0;;) switch (_fun70795_ip) {
             case 0:
                 var1 = arg0;
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ForumPostMediaTypes = var6;
     var2.getForumPostMedia = var5;
     var2.useForumPostComponentsMedia = var4;
-    var4 = function(arg0, arg1) { // Original name: useForumPostMediaThumbnail, environment: var1
+    var4 = function arg0, arg1() {
         _fun70796: for (var _fun70796_ip = 0;;) switch (_fun70796_ip) {
             case 0:
                 var5 = arg1;
@@ -1042,7 +1042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useForumPostMediaThumbnail = var4;
     var2.useForumPostMediaProperties = var3;
-    var3 = function(arg0, arg1) { // Original name: useFindFirstMediaProperties, environment: var1
+    var3 = function arg0, arg1() {
         _fun70799: for (var _fun70799_ip = 0;;) switch (_fun70799_ip) {
             case 0:
                 var3 = arg0;
@@ -1084,7 +1084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFindFirstMediaProperties = var3;
-    var3 = function(arg0, arg1) { // Original name: useFirstMediaIsEmbed, environment: var1
+    var3 = function arg0, arg1() {
         _fun70800: for (var _fun70800_ip = 0;;) switch (_fun70800_ip) {
             case 0:
                 var4 = arg0;
@@ -1120,7 +1120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFirstMediaIsEmbed = var3;
-    var3 = function(arg0, arg1) { // Original name: shouldShowAddMediaToOriginalPostModal, environment: var1
+    var3 = function arg0, arg1() {
         _fun70801: for (var _fun70801_ip = 0;;) switch (_fun70801_ip) {
             case 0:
                 var11 = arg0;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShowAddMediaToOriginalPostModal = var3;
-    var1 = function(arg0) { // Original name: messageContainsGifOrVideo, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.reduce;
         var1 = function(arg0, arg1) { // Environment: var0

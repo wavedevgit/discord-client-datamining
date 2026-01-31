@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: messageHasCheckpoint, environment: var1
+    var0 = function arg0() {
         _fun54727: for (var _fun54727_ip = 0;;) switch (_fun54727_ip) {
             case 0:
                 var1 = arg0;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var3 = function(arg0, arg1) { // Original name: isRatelimitedInChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun54728: for (var _fun54728_ip = 0;;) switch (_fun54728_ip) {
             case 0:
                 var5 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/forwarding/ForwardDestinationUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useSelectedDestinationChannel, environment: var1
+    var4 = function arg0() {
         var7 = arg0;
         var3 = var7.map;
         var5 = _closure1_slot0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSelectedDestinationChannel = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: getDestinationIsUnavailable, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun54732: for (var _fun54732_ip = 0;;) switch (_fun54732_ip) {
             case 0:
                 var3 = arg0;
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDestinationIsUnavailable = var4;
     var2.isRatelimitedInChannel = var3;
-    var1 = function(arg0) { // Original name: useDestinationNamesWithSlowmode, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

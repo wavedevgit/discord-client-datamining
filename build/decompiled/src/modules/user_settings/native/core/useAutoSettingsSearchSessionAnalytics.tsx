@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/core/useAutoSettingsSearchSessionAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useAutoSettingsSearchSessionAnalytics, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 3;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = _closure1_slot5;
             var3 = var4.subscribe;
             var2 = {};
-            var1 = function(arg0, arg1) { // Original name: equalityFn, environment: var0
+            var1 = function arg0, arg1() {
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var1 === var0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = _closure1_slot5;
             var3 = var4.subscribe;
             var2 = {};
-            var1 = function(arg0, arg1) { // Original name: equalityFn, environment: var0
+            var1 = function arg0, arg1() {
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var1 === var0;

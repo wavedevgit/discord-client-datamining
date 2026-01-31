@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var2;
             var2 = dependencyMap;
             var _closure1_slot1 = var2;
-            var2 = function(arg0, arg1, arg2) { // Original name: createGetter, environment: var0
+            var2 = function arg0, arg1, arg2() {
                 var1 = arg1;
                 var _closure2_slot0 = var1;
                 var1 = arg2;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3 != var4;
         case 148:
             var _closure1_slot5 = var2;
-            var2 = function(arg0, arg1) { // Original name: createJavaScriptFlagGetter, environment: var0
+            var2 = function arg0, arg1() {
                 var3 = arg1;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.createJavaScriptFlagGetter = var2;
-            var2 = function(arg0, arg1) { // Original name: createNativeFlagGetter, environment: var0
+            var2 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var3 = _closure1_slot6;
@@ -217,12 +217,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.createNativeFlagGetter = var2;
-            var2 = function() { // Original name: getOverrides, environment: var0
+            var2 = function() {
                 var0 = _closure1_slot2;
                 return var0;
             };
             var1.getOverrides = var2;
-            var0 = function(arg0) { // Original name: setOverrides, environment: var0
+            var0 = function arg0() {
                 _fun1478: for (var _fun1478_ip = 0;;) switch (_fun1478_ip) {
                     case 0:
                         var2 = _closure1_slot2;

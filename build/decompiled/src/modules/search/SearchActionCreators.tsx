@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getGuildIdForSearchMessageSuccessDispatch, environment: var3
+    var0 = function arg0() {
         _fun71814: for (var _fun71814_ip = 0;;) switch (_fun71814_ip) {
             case 0:
                 var1 = arg0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.FAVORITES;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: fetchTabMessages, environment: var3
+    var6 = function arg0() {
         _fun71815: for (var _fun71815_ip = 0;;) switch (_fun71815_ip) {
             case 0:
                 var1 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var4.bind(var3)(var7);
                 var7 = var10.getSearchQueryFromTokens;
                 var11 = var7.bind(var10)(var11);
-                var7 = function(arg0) { // Original name: fixSearchQueryPinned, environment: var0
+                var7 = function arg0() {
                     _fun71816: for (var _fun71816_ip = 0;;) switch (_fun71816_ip) {
                         case 0:
                             var1 = arg0;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.fetchTabMessages = var6;
-    var6 = function(arg0) { // Original name: fetchMessages, environment: var3
+    var6 = function arg0() {
         _fun71824: for (var _fun71824_ip = 0;;) switch (_fun71824_ip) {
             case 0:
                 var0 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.fetchMessages = var6;
-    var6 = function() { // Original name: clearSearchRecentMessages, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearSearchRecentMessages = var6;
-    var6 = function() { // Original name: clearAllSearchMesssages, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearAllSearchMesssages = var6;
-    var6 = function(arg0) { // Original name: clearSearchMessages, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearSearchMessages = var6;
-    var6 = function(arg0) { // Original name: initializeAutocomplete, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.initializeAutocomplete = var6;
-    var6 = function(arg0) { // Original name: updateAutocompleteQuery, environment: var3
+    var6 = function arg0() {
         _fun71833: for (var _fun71833_ip = 0;;) switch (_fun71833_ip) {
             case 0:
                 var0 = arg0;
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateAutocompleteQuery = var6;
-    var3 = function() { // Original name: markSearchTokensRefreshed, environment: var3
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

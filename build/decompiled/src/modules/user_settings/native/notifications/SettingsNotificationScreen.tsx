@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: SystemNotificationsSubLabel, environment: var1
+    var0 = function() {
         _fun85095: for (var _fun85095_ip = 0;;) switch (_fun85095_ip) {
             case 0:
                 var0 = _closure1_slot10;

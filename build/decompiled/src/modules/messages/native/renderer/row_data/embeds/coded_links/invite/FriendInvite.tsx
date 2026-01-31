@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: createFriendInvite, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun92316: for (var _fun92316_ip = 0;;) switch (_fun92316_ip) {
             case 0:
                 var2 = arg0;

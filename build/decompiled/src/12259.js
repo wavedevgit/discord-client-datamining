@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = /^[0-9]+$/;
     var _closure1_slot0 = var1;
-    var2 = function(arg0, arg1) { // Original name: compareIdentifiers, environment: var0
+    var2 = function arg0, arg1() {
         _fun94027: for (var _fun94027_ip = 0;;) switch (_fun94027_ip) {
             case 0:
                 var1 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var1 = {};
     var1.compareIdentifiers = var2;
-    var0 = function(arg0, arg1) { // Original name: rcompareIdentifiers, environment: var0
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg1;

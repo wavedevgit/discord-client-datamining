@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var3 = var4.bind(var0)(var3);
             var _closure1_slot3 = var3;
-            var5 = function(arg0, arg1) { // Original name: urlMatchesFileExtension, environment: var1
+            var5 = function arg0, arg1() {
                 _fun36485: for (var _fun36485_ip = 0;;) switch (_fun36485_ip) {
                     case 0:
                         var4 = arg0;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot4 = var5;
-            var3 = function(arg0, arg1) { // Original name: contentTypeMatches, environment: var1
+            var3 = function arg0, arg1() {
                 _fun36486: for (var _fun36486_ip = 0;;) switch (_fun36486_ip) {
                     case 0:
                         var2 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = /\.(mp4|mov|qt)$/i;
         case 333:
             var _closure1_slot11 = var3;
-            var4 = function(arg0) { // Original name: isWebPlayerVideoUrl, environment: var1
+            var4 = function arg0() {
                 _fun36487: for (var _fun36487_ip = 0;;) switch (_fun36487_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var4;
-            var3 = function(arg0) { // Original name: isWebPlayerVideoFile, environment: var1
+            var3 = function arg0() {
                 _fun36488: for (var _fun36488_ip = 0;;) switch (_fun36488_ip) {
                     case 0:
                         var3 = arg0;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/TableRow/native/TableSwitchRow.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TableSwitchRow, environment: var1
+    var1 = function arg0() {
         _fun48049: for (var _fun48049_ip = 0;;) switch (_fun48049_ip) {
             case 0:
                 var4 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.bind(var3)(var2);
                 var2 = var6.isAndroid;
                 var6 = var2.bind(var6)();
-                var8 = function() { // Original name: handleOnPress, environment: var5
+                var8 = function() {
                     _fun48050: for (var _fun48050_ip = 0;;) switch (_fun48050_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 429:
                 var6 = 'onPress';
                 var0[var6] = var11;
-                var6 = function() { // Original name: onAccessibilityTap, environment: var5
+                var6 = function() {
                     var2 = _closure2_slot2;
                     var0 = _closure2_slot0;
                     var1 = !var0;

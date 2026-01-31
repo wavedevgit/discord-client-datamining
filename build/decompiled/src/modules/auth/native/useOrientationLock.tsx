@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: shouldLockPortraitOrientation, environment: var1
+    var0 = function() {
         _fun100531: for (var _fun100531_ip = 0;;) switch (_fun100531_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/useOrientationLock.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: usePortraitOrientationOnly, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0

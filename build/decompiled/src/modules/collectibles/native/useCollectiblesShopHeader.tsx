@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.discordLogo = var9;
     var4 = var7.bind(var8)(var4);
     var _closure1_slot11 = var4;
-    var4 = function(arg0) { // Original name: CollectiblesShopHeader, environment: var3
+    var4 = function arg0() {
         _fun88043: for (var _fun88043_ip = 0;;) switch (_fun88043_ip) {
             case 0:
                 var0 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.zMqLH9;
                             var0 = var1.bind(var3)(var0);
                             var2.accessibilityLabel = var0;
-                            var0 = function() { // Original name: action, environment: var5
+                            var0 = function() {
                                 var2 = _closure1_slot0;
                                 var7 = _closure1_slot2;
                                 var0 = 12;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3["bG3n/t"];
                             var3 = var7.bind(var8)(var3);
                             var2.accessibilityLabel = var3;
-                            var3 = function() { // Original name: action, environment: var5
+                            var3 = function() {
                                 var2 = _closure1_slot0;
                                 var7 = _closure1_slot2;
                                 var0 = 12;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7["rSfoC+"];
                             var7 = var8.bind(var9)(var7);
                             var3.accessibilityLabel = var7;
-                            var5 = function() { // Original name: action, environment: var5
+                            var5 = function() {
                                 var2 = _closure1_slot0;
                                 var7 = _closure1_slot2;
                                 var0 = 12;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var10.BalanceWidgetPill;
                 var10 = {};
                 var10.balance = var19;
-                var19 = function() { // Original name: onPress, environment: var15
+                var19 = function() {
                     var6 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 23;
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = var9.SymzJC;
                     var9 = var10.bind(var12)(var9);
                     var2.buttonText = var9;
-                    var9 = function() { // Original name: onButtonPress, environment: var1
+                    var9 = function() {
                         var2 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 26;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var8["/g10LC"];
                     var8 = var9.bind(var10)(var8);
                     var2.buttonText = var8;
-                    var8 = function() { // Original name: onButtonPress, environment: var1
+                    var8 = function() {
                         var2 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 26;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.size = var21;
                 var19 = var18.bind(var3)(var20, var19);
                 var13.icon = var19;
-                var19 = function() { // Original name: onPress, environment: var15
+                var19 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 30;
@@ -745,7 +745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.title = var16;
                 var16 = 'handled';
                 var11.keyboardShouldPersistTaps = var16;
-                var15 = function(arg0) { // Original name: children, environment: var15
+                var15 = function arg0() {
                     var2 = arg0;
                     var7 = var2.ref;
                     var0 = null;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/collectibles/native/useCollectiblesShopHeader.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: _default, environment: var3
+    var3 = function() {
         _fun88055: for (var _fun88055_ip = 0;;) switch (_fun88055_ip) {
             case 0:
                 var2 = arguments[0];
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot2;
                     var2 = var3.setOptions;
                     var1 = {};
-                    var4 = function() { // Original name: header, environment: var0
+                    var4 = function() {
                         var3 = _closure1_slot9;
                         var2 = _closure1_slot12;
                         var1 = {};

@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/favorites/useGuildIdForChannelRoute.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGuildIdForChannelRoute, environment: var1
+    var3 = function arg0() {
         _fun35407: for (var _fun35407_ip = 0;;) switch (_fun35407_ip) {
             case 0:
                 var2 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getGuildIdForGenericRedirect, environment: var1
+    var1 = function arg0() {
         _fun35409: for (var _fun35409_ip = 0;;) switch (_fun35409_ip) {
             case 0:
                 var2 = arg0;

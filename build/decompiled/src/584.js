@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var1;
     var1 = /^\s+/;
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: baseTrim, environment: var0
+    var1 = function arg0() {
         _fun6951: for (var _fun6951_ip = 0;;) switch (_fun6951_ip) {
             case 0:
                 var5 = arg0;

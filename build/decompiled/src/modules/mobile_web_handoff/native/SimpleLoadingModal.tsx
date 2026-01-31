@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mobile_web_handoff/native/SimpleLoadingModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: showSimpleLoadingModal, environment: var1
+    var1 = function arg0, arg1() {
         var6 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var6;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var2;
         var11 = var7;
         var7 = copyDataProperties(var12, var11);
-        var7 = function() { // Original name: onDismissed, environment: var1
+        var7 = function() {
             _fun50549: for (var _fun50549_ip = 0;;) switch (_fun50549_ip) {
                 case 0:
                     var2 = _closure1_slot1;

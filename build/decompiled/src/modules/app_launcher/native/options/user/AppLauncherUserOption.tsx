@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/user/AppLauncherUserOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherUserOption, environment: var1
+    var1 = function arg0() {
         _fun108214: for (var _fun108214_ip = 0;;) switch (_fun108214_ip) {
             case 0:
                 var1 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var5 != var12;
             case 276:
                 var0.selected = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     _fun108217: for (var _fun108217_ip = 0;;) switch (_fun108217_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.option = var7;
                             var7 = _closure2_slot4;
                             var1.channel = var7;
-                            var7 = function(arg0) { // Original name: onUserPress, environment: var7
+                            var7 = function arg0() {
                                 _fun108218: for (var _fun108218_ip = 0;;) switch (_fun108218_ip) {
                                     case 0:
                                         var0 = arg0;

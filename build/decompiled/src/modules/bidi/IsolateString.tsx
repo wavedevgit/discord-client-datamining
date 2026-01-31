@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FSI = var1;
     var1 = '\u2069';
     var2.PDI = var1;
-    var1 = function(arg0) { // Original name: isolate, environment: var1
+    var1 = function arg0() {
         _fun49208: for (var _fun49208_ip = 0;;) switch (_fun49208_ip) {
             case 0:
                 var2 = arg0;

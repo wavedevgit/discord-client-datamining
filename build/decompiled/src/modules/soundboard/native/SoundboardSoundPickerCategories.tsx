@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SoundCategoryItem, environment: var1
+    var0 = function arg0() {
         _fun68515: for (var _fun68515_ip = 0;;) switch (_fun68515_ip) {
             case 0:
                 var1 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var4)(var0);
                 var1 = var0.PressableOpacity;
                 var0 = {};
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: getItemLayout, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg1;
         var0 = {};
         var3 = _closure1_slot9;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: SoundboardSoundPickerCategories, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var8 = var1.guildId;
         var _closure2_slot0 = var8;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.keyboardShouldPersistTaps = var13;
         var13 = true;
         var8.horizontal = var13;
-        var12 = function(arg0) { // Original name: keyExtractor, environment: var12
+        var12 = function arg0() {
             var0 = global;
             var2 = var0.String;
             var0 = arg0;

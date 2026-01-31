@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 225:
             var1.binds = var7;
             var1.comboKeysBindGlobal = var4;
-            var3 = function(arg0, arg1) { // Original name: action, environment: var3
+            var3 = function arg0, arg1() {
                 _fun94385: for (var _fun94385_ip = 0;;) switch (_fun94385_ip) {
                     case 0:
                         var2 = arg1;

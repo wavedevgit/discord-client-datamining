@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function() { // Original name: getBrowserManagerIsChromeInstalled, environment: var1
+    var4 = function() {
         var1 = _closure1_slot5;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var4;
-    var3 = function() { // Original name: getBrowserManagerSelectedBrowser, environment: var1
+    var3 = function() {
         var1 = _closure1_slot5;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/links/native/BrowserManager.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function() { // Original name: useBrowserManagerIsChromeInstalled, environment: var1
+    var5 = function() {
         var2 = _closure1_slot5;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useBrowserManagerIsChromeInstalled = var5;
     var2.getBrowserManagerIsChromeInstalled = var4;
-    var4 = function() { // Original name: useBrowserManagerSelectedBrowser, environment: var1
+    var4 = function() {
         var2 = _closure1_slot5;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useBrowserManagerSelectedBrowser = var4;
     var2.getBrowserManagerSelectedBrowser = var3;
-    var3 = function(arg0) { // Original name: browserManagerOpenUrl, environment: var1
+    var3 = function arg0() {
         _fun28086: for (var _fun28086_ip = 0;;) switch (_fun28086_ip) {
             case 0:
                 var2 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.browserManagerOpenUrl = var3;
-    var3 = function(arg0) { // Original name: browserManagerSelectBrowser, environment: var1
+    var3 = function arg0() {
         _fun28087: for (var _fun28087_ip = 0;;) switch (_fun28087_ip) {
             case 0:
                 var4 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.browserManagerSelectBrowser = var3;
-    var1 = function() { // Original name: browserManagerCloseBrowser, environment: var1
+    var1 = function() {
         _fun28088: for (var _fun28088_ip = 0;;) switch (_fun28088_ip) {
             case 0:
                 var3 = _closure1_slot0;

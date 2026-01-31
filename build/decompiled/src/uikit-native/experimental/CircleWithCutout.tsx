@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var3 = function(arg0, arg1) { // Original name: getCutoutCenterX, environment: var4
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var0 = global;
         var3 = var0.Math;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var3;
-    var1 = function(arg0, arg1) { // Original name: getCutoutCenterY, environment: var4
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var0 = global;
         var3 = var0.Math;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'uikit-native/experimental/CircleWithCutout.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: CircleWithCutout, environment: var4
+    var5 = function arg0() {
         _fun62869: for (var _fun62869_ip = 0;;) switch (_fun62869_ip) {
             case 0:
                 var0 = arg0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: getBadgeTop, environment: var4
+    var5 = function arg0, arg1, arg2() {
         var3 = _closure1_slot7;
         var2 = undefined;
         var1 = arg1;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getBadgeTop = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: getBadgeLeft, environment: var4
+    var4 = function arg0, arg1, arg2() {
         var3 = _closure1_slot6;
         var2 = undefined;
         var1 = arg1;

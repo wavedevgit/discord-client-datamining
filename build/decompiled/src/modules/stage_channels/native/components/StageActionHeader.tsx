@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var12;
-    var8 = function(arg0) { // Original name: closeStageModal, environment: var5
+    var8 = function arg0() {
         var1 = arg0;
         var3 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var8;
-    var4 = function(arg0) { // Original name: StageSettingsButton, environment: var5
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         var _closure2_slot0 = var1;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7[var5];
         var5 = var6.bind(var3)(var5);
         var0.source = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 34;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var4;
-    var3 = function(arg0) { // Original name: StageInviteButton, environment: var5
+    var3 = function arg0() {
         _fun68855: for (var _fun68855_ip = 0;;) switch (_fun68855_ip) {
             case 0:
                 var0 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.bind(var4)(var6);
                 var6 = var6.GroupPlusIcon;
                 var1.IconComponent = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun68858: for (var _fun68858_ip = 0;;) switch (_fun68858_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var1 = function(arg0) { // Original name: MusicMuteButton, environment: var5
+    var1 = function arg0() {
         _fun68859: for (var _fun68859_ip = 0;;) switch (_fun68859_ip) {
             case 0:
                 var0 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 247:
                 var6 = var7.bind(var4)(var6);
                 var1.source = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 42;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.icon = var10;
     var6 = var7.bind(var9)(var6);
     var _closure1_slot14 = var6;
-    var7 = function(arg0) { // Original name: HideStageChannelCallIcon, environment: var5
+    var7 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var _closure2_slot0 = var0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10.cpT0Cq;
         var10 = var11.bind(var12)(var10);
         var0.accessibilityLabel = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot17;
             var1 = _closure2_slot0;
             var0 = undefined;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var7;
-    var6 = function(arg0) { // Original name: StageChannelCallHeader, environment: var5
+    var6 = function arg0() {
         _fun68865: for (var _fun68865_ip = 0;;) switch (_fun68865_ip) {
             case 0:
                 var1 = arg0;
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.closeStageModal = var8;
     var2.HideStageChannelCallIcon = var7;
     var2.StageChannelCallHeader = var6;
-    var5 = function(arg0) { // Original name: HideChannelCallButton, environment: var5
+    var5 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var _closure2_slot0 = var0;
@@ -1079,7 +1079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10.cpT0Cq;
         var10 = var11.bind(var12)(var10);
         var0.accessibilityLabel = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot17;
             var1 = _closure2_slot0;
             var0 = undefined;

@@ -436,7 +436,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = new var9[var4](var8, var7, var6);
     var1 = var1 instanceof Object ? var1 : var3;
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: removeAccents, environment: var2
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = _closure1_slot1;
@@ -451,7 +451,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.exports = var1;
     var3 = var0.exports;
-    var2 = function(arg0) { // Original name: hasAccents, environment: var2
+    var2 = function arg0() {
         var2 = arg0;
         var1 = var2.match;
         var0 = _closure1_slot2;

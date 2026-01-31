@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: hasNotSetUpChannelOptIn, environment: var1
+    var4 = function arg0() {
         _fun77514: for (var _fun77514_ip = 0;;) switch (_fun77514_ip) {
             case 0:
                 var5 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function(arg0) { // Original name: optIntoAllChannelsForExistingMember, environment: var1
+    var3 = function arg0() {
         _fun77515: for (var _fun77515_ip = 0;;) switch (_fun77515_ip) {
             case 0:
                 var4 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/opt_in_channels/OptInOnboardingUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.hasNotSetUpChannelOptIn = var4;
-    var4 = function(arg0) { // Original name: toggleShowAllChannels, environment: var1
+    var4 = function arg0() {
         _fun77519: for (var _fun77519_ip = 0;;) switch (_fun77519_ip) {
             case 0:
                 var2 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.toggleShowAllChannels = var4;
     var2.optIntoAllChannelsForExistingMember = var3;
-    var1 = function(arg0) { // Original name: hasClearedGuildOnboardingNotice, environment: var1
+    var1 = function arg0() {
         _fun77520: for (var _fun77520_ip = 0;;) switch (_fun77520_ip) {
             case 0:
                 var8 = arg0;

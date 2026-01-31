@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ignoreAndroidSystemSettings': false
     };
     var _closure1_slot2 = var1;
-    var1 = function() { // Original name: RNReactNativeHapticFeedback, environment: var4
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot4;
         var0 = undefined;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.trigger = var3;
-    var3 = function(arg0) { // Original name: createTriggerOptions, environment: var4
+    var3 = function arg0() {
         _fun28105: for (var _fun28105_ip = 0;;) switch (_fun28105_ip) {
             case 0:
                 var1 = arg0;

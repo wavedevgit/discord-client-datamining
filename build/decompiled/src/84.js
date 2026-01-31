@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: processColorStops, environment: var1
+    var0 = function arg0() {
         _fun1492: for (var _fun1492_ip = 0;;) switch (_fun1492_ip) {
             case 0:
                 var16 = arg0;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: parseRadialGradientCSSString, environment: var1
+    var0 = function arg0() {
         _fun1493: for (var _fun1493_ip = 0;;) switch (_fun1493_ip) {
             case 0:
                 var3 = arg0;
@@ -1157,7 +1157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: parseLinearGradientCSSString, environment: var1
+    var0 = function arg0() {
         _fun1494: for (var _fun1494_ip = 0;;) switch (_fun1494_ip) {
             case 0:
                 var2 = arg0;
@@ -1244,7 +1244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: parseColorStopsCSSString, environment: var1
+    var0 = function arg0() {
         _fun1495: for (var _fun1495_ip = 0;;) switch (_fun1495_ip) {
             case 0:
                 var3 = arg0;
@@ -1503,7 +1503,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: getDirectionForKeyword, environment: var1
+    var0 = function arg0() {
         _fun1496: for (var _fun1496_ip = 0;;) switch (_fun1496_ip) {
             case 0:
                 var4 = arg0;
@@ -1645,7 +1645,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getAngleInDegrees, environment: var1
+    var0 = function arg0() {
         _fun1497: for (var _fun1497_ip = 0;;) switch (_fun1497_ip) {
             case 0:
                 var4 = arg0;
@@ -1723,7 +1723,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getPositionFromCSSValue, environment: var1
+    var0 = function arg0() {
         _fun1498: for (var _fun1498_ip = 0;;) switch (_fun1498_ip) {
             case 0:
                 var3 = arg0;
@@ -1793,7 +1793,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'left': '50%'
     };
     var _closure1_slot9 = var3;
-    var1 = function(arg0) { // Original name: processBackgroundImage, environment: var1
+    var1 = function arg0() {
         _fun1499: for (var _fun1499_ip = 0;;) switch (_fun1499_ip) {
             case 0:
                 var5 = arg0;
@@ -2125,7 +2125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = /\n/g;
                 var1 = ' ';
                 var2 = var4.bind(var5)(var2, var1);
-                var1 = function(arg0) { // Original name: parseBackgroundImageCSSString, environment: var1
+                var1 = function arg0() {
                     _fun1500: for (var _fun1500_ip = 0;;) switch (_fun1500_ip) {
                         case 0:
                             var16 = arg0;

@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/avatar/native/components/RedesignAddAvatarModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RedesignAddAvatarModal, environment: var1
+    var1 = function arg0() {
         _fun113934: for (var _fun113934_ip = 0;;) switch (_fun113934_ip) {
             case 0:
                 var0 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var3;
                 var _closure2_slot3 = var3;
                 var _closure2_slot4 = var3;
-                var0 = function() { // Original name: _handleSelectAvatar, environment: var12
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.avatarSource = var20;
                 var20 = var11 != var10;
                 var7.showPendingAvatar = var20;
-                var20 = function() { // Original name: handleSelectAvatar, environment: var12
+                var20 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot5;
                     var2 = var3.apply;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.PDTjLN;
                 var13 = var14.bind(var15)(var13);
                 var8.text = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     _fun113940: for (var _fun113940_ip = 0;;) switch (_fun113940_ip) {
                         case 0:
                             var2 = _closure1_slot0;

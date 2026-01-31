@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = require;
     var2 = exports;
     var6 = dependencyMap;
-    var1 = function() { // Original name: getDefaultActions, environment: var3
+    var1 = function() {
         var0 = {};
         var1 = _closure1_slot0;
         var2 = var1.BLOCK_MESSAGE;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_automod/AutomodActionUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getRuleDefaultActionsFromConfig, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = undefined;
         var1 = var2.bind(var1)();
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getRuleDefaultActionsFromConfig = var4;
-    var4 = function(arg0) { // Original name: isActionFlagToChannel, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isActionFlagToChannel = var4;
-    var4 = function(arg0) { // Original name: isActionUserCommunicationDisabled, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isActionUserCommunicationDisabled = var4;
-    var4 = function(arg0) { // Original name: isActionBlockMessage, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isActionBlockMessage = var4;
-    var3 = function(arg0) { // Original name: isActionQuarantineUser, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot0;

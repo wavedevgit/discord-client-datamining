@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildEventsNoContent, environment: var1
+    var1 = function arg0() {
         _fun66974: for (var _fun66974_ip = 0;;) switch (_fun66974_ip) {
             case 0:
                 var1 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.t;
                 var10 = var9["K+DH2o"];
                 var9 = {};
-                var13 = function() { // Original name: onClick, environment: var13
+                var13 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var1 = var1.bind(var0)();

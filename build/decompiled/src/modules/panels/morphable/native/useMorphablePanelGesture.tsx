@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/panels/morphable/native/useMorphablePanelGesture.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useMorphablePanelGesture, environment: var3
+    var3 = function arg0() {
         _fun110365: for (var _fun110365_ip = 0;;) switch (_fun110365_ip) {
             case 0:
                 var1 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure1_slot7;
                     var5 = var4.bind(var5)(var1);
                     var4 = var5.onStart;
-                    var1 = function() { // Original name: x, environment: var0
+                    var1 = function() {
                         _fun110367: for (var _fun110367_ip = 0;;) switch (_fun110367_ip) {
                             case 0:
                                 var2 = _closure2_slot2;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = false;
                     var7 = var5.bind(var7)(var4);
                     var5 = var7.onBegin;
-                    var4 = function(arg0) { // Original name: V, environment: var0
+                    var4 = function arg0() {
                         var5 = arg0;
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.__initData = var13;
                     var7 = var5.bind(var7)(var4);
                     var5 = var7.onTouchesMove;
-                    var4 = function(arg0, arg1) { // Original name: C, environment: var0
+                    var4 = function arg0, arg1() {
                         _fun110369: for (var _fun110369_ip = 0;;) switch (_fun110369_ip) {
                             case 0:
                                 var6 = arg0;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.__initData = var13;
                     var7 = var5.bind(var7)(var4);
                     var5 = var7.onChange;
-                    var4 = function(arg0) { // Original name: H, environment: var0
+                    var4 = function arg0() {
                         _fun110370: for (var _fun110370_ip = 0;;) switch (_fun110370_ip) {
                             case 0:
                                 var2 = arg0;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.__initData = var13;
                     var7 = var5.bind(var7)(var4);
                     var5 = var7.onTouchesCancelled;
-                    var4 = function() { // Original name: D, environment: var0
+                    var4 = function() {
                         var3 = _closure1_slot1;
                         var5 = _closure1_slot2;
                         var2 = 6;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.__initData = var13;
                     var7 = var5.bind(var7)(var4);
                     var5 = var7.onEnd;
-                    var4 = function(arg0) { // Original name: X, environment: var0
+                    var4 = function arg0() {
                         _fun110372: for (var _fun110372_ip = 0;;) switch (_fun110372_ip) {
                             case 0:
                                 var1 = arg0;
@@ -895,7 +895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.__initData = var13;
                     var5 = var5.bind(var7)(var4);
                     var4 = var5.onFinalize;
-                    var0 = function() { // Original name: t, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 6;

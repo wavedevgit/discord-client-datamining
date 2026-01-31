@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun28795: for (var _fun28795_ip = 0;;) switch (_fun28795_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7[var4];
     var11 = var11.bind(var0)(var4);
     var4 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: BillingError, environment: var5
+        var3 = function arg0, arg1() {
             _fun28799: for (var _fun28799_ip = 0;;) switch (_fun28799_ip) {
                 case 0:
                     var1 = arg0;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = '_isInFieldSet';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun28800: for (var _fun28800_ip = 0;;) switch (_fun28800_ip) {
                 case 0:
                     var6 = arg0;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasCardError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = this;
             var1 = var2._isInFieldSet;
             var0 = _closure1_slot10;
@@ -829,7 +829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasAddressError';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var2 = this;
             var1 = var2._isInFieldSet;
             var0 = _closure1_slot11;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.ErrorCodes = var3;
-    var1 = function(arg0) { // Original name: parseV8BillingAddressSkemaErrorToBillingError, environment: var1
+    var1 = function arg0() {
         _fun28803: for (var _fun28803_ip = 0;;) switch (_fun28803_ip) {
             case 0:
                 var2 = arg0;

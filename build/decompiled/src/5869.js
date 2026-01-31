@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: baseSortBy, environment: var0
+    var1 = function arg0, arg1() {
         _fun51728: for (var _fun51728_ip = 0;;) switch (_fun51728_ip) {
             case 0:
                 var0 = arg0;

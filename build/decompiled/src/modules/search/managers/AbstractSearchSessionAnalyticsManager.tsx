@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: createDefaultSessionState, environment: var1
+    var0 = function() {
         var0 = {};
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: AbstractSearchSessionAnalyticsManager, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getSession';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun71896: for (var _fun71896_ip = 0;;) switch (_fun71896_ip) {
                 case 0:
                     var0 = this;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setSession';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun71897: for (var _fun71897_ip = 0;;) switch (_fun71897_ip) {
                 case 0:
                     var1 = this;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'deleteSession';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0.sessions;
             var2 = var3.delete;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSessionId';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun71899: for (var _fun71899_ip = 0;;) switch (_fun71899_ip) {
                 case 0:
                     var2 = this;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getQueryId';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun71900: for (var _fun71900_ip = 0;;) switch (_fun71900_ip) {
                 case 0:
                     var2 = this;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'refreshQueryId';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var4 = this;
             var3 = var4.setSession;
             var2 = {};
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'initialize';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var4 = arg0;
             var3 = this;
             var5 = 1;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'terminate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var2 = arg0;
             var1 = this;
             var0 = var1._terminate;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'transferSession';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun71904: for (var _fun71904_ip = 0;;) switch (_fun71904_ip) {
                 case 0:
                     var3 = arg0;

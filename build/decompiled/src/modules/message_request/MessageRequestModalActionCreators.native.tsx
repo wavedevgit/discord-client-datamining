@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/MessageRequestModalActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: openAcceptMessageRequestConfirmModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.channelId;
         var7 = var0.onConfirm;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openAcceptMessageRequestConfirmModal = var3;
-    var1 = function(arg0) { // Original name: onMarkAsNotSpamConfirmationModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.onConfirm;
         var1 = var0.onCancel;

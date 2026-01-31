@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: minVersion, environment: var0
+    var1 = function arg0, arg1() {
         _fun94145: for (var _fun94145_ip = 0;;) switch (_fun94145_ip) {
             case 0:
                 var7 = _closure1_slot0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 178:
                 var3 = null;
                 _closure2_slot1 = var3;
-                var2 = function() { // Original name: _loop, environment: var0
+                var2 = function() {
                     _fun94146: for (var _fun94146_ip = 0;;) switch (_fun94146_ip) {
                         case 0:
                             var2 = _closure2_slot0;

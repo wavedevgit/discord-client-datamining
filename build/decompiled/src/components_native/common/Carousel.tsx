@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun61523: for (var _fun61523_ip = 0;;) switch (_fun61523_ip) {
             case 0:
                 var3 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun61524: for (var _fun61524_ip = 0;;) switch (_fun61524_ip) {
             case 0:
             case 2: // try_start_0
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var3;
     var7 = var6.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: PageIndicator, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun61529: for (var _fun61529_ip = 0;;) switch (_fun61529_ip) {
                 case 0:
                     var1 = this;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.defaultProps = var7;
     var6 = var6.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: Carousel, environment: var0
+        var3 = function arg0() {
             var6 = this;
             var3 = 0;
             var10 = 0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun61533: for (var _fun61533_ip = 0;;) switch (_fun61533_ip) {
                 case 0:
                     var9 = this;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = {};
                     var10 = var10.carouselContentWrapper;
                     var8.style = var10;
-                    var10 = function() { // Original name: onStartShouldSetResponder, environment: var10
+                    var10 = function() {
                         var0 = true;
                         return var0;
                     };

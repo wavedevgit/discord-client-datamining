@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: logSpanEnd, environment: var0
+    var2 = function arg0() {
         _fun99268: for (var _fun99268_ip = 0;;) switch (_fun99268_ip) {
             case 0:
                 var3 = arg0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.logSpanEnd = var2;
-    var0 = function(arg0) { // Original name: logSpanStart, environment: var0
+    var0 = function arg0() {
         _fun99269: for (var _fun99269_ip = 0;;) switch (_fun99269_ip) {
             case 0:
                 var3 = arg0;

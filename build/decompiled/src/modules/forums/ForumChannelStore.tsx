@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.MATCH_SOME;
     var3.tagSetting = var7;
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1) { // Original name: ForumChannelStoreState, environment: var1
+    var3 = function arg0, arg1() {
         var2 = this;
         var _closure2_slot0 = var2;
         var4 = _closure1_slot3;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/burst_reactions/BurstReactionAnimationPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BurstReactionAnimationPreview, environment: var1
+    var1 = function arg0() {
         _fun54479: for (var _fun54479_ip = 0;;) switch (_fun54479_ip) {
             case 0:
                 var0 = arg0;

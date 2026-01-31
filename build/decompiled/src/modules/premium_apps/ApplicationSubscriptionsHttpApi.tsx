@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: _fetchEligibleApplicationSubscriptionGuilds, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getApplicationSubscriptionGroupListingsForApplication = var5;
     var2.getEntitlementsForGuild = var4;
     var2.getSubscriptionGroupForSubscriptionPlan = var3;
-    var3 = function(arg0, arg1) { // Original name: fetchApplication, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var2 = _closure1_slot1;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchApplication = var3;
-    var1 = function() { // Original name: fetchEligibleApplicationSubscriptionGuilds, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

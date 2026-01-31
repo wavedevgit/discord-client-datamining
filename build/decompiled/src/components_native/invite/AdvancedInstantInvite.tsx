@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117109: for (var _fun117109_ip = 0;;) switch (_fun117109_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: AdvancedInstantInviteContainer, environment: var0
+        var4 = function arg0() {
             _fun117113: for (var _fun117113_ip = 0;;) switch (_fun117113_ip) {
                 case 0:
                     var4 = this;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0.navigation;
                         var1 = var2.setOptions;
                         var0 = {};
-                        var4 = function(arg0) { // Original name: headerLeft, environment: var3
+                        var4 = function arg0() {
                             _fun117122: for (var _fun117122_ip = 0;;) switch (_fun117122_ip) {
                                 case 0:
                                     var0 = _closure3_slot0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.headerLeft = var4;
-                        var3 = function() { // Original name: headerRight, environment: var3
+                        var3 = function() {
                             _fun117123: for (var _fun117123_ip = 0;;) switch (_fun117123_ip) {
                                 case 0:
                                     var0 = _closure3_slot0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'componentDidMount';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             _fun117124: for (var _fun117124_ip = 0;;) switch (_fun117124_ip) {
                 case 0:
                     var1 = this;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentDidUpdate';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun117125: for (var _fun117125_ip = 0;;) switch (_fun117125_ip) {
                 case 0:
                     var1 = this;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentWillUnmount';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var4 = _closure1_slot1;
             var5 = _closure1_slot2;
             var0 = 18;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'render';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var4 = this;
             var3 = _closure1_slot13;
             var5 = _closure1_slot1;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getDerivedStateFromProps';
         var5.key = var6;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun117128: for (var _fun117128_ip = 0;;) switch (_fun117128_ip) {
                 case 0:
                     var2 = arg0;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/invite/AdvancedInstantInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 21;

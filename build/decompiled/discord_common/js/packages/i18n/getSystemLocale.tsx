@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/i18n/getSystemLocale.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getSystemLocale, environment: var1
+    var1 = function() {
         _fun7338: for (var _fun7338_ip = 0;;) switch (_fun7338_ip) {
             case 0:
                 var3 = _closure1_slot0;

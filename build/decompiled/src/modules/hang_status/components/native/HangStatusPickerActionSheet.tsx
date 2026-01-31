@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/hang_status/components/native/HangStatusPickerActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: HangStatusPickerActionSheet, environment: var1
+            var1 = function arg0() {
                 _fun111035: for (var _fun111035_ip = 0;;) switch (_fun111035_ip) {
                     case 0:
                         var0 = arg0;
@@ -1307,7 +1307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 469:
                                     var1['aria-label'] = var11;
                                     var1.label = var10;
-                                    var10 = function() { // Original name: onPress, environment: var8
+                                    var10 = function() {
                                         var2 = _closure2_slot18;
                                         var1 = _closure3_slot0;
                                         var0 = undefined;
@@ -1315,7 +1315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var1.onPress = var10;
-                                    var8 = function() { // Original name: onLongPress, environment: var8
+                                    var8 = function() {
                                         var4 = _closure1_slot1;
                                         var2 = _closure1_slot2;
                                         var0 = 21;

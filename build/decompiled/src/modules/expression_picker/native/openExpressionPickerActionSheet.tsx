@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 'ExpressionPickerActionSheet';
     var2.EXPRESSION_PICKER_ACTION_SHEET_KEY = var3;
-    var1 = function(arg0) { // Original name: openExpressionPickerActionSheet, environment: var1
+    var1 = function arg0() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;

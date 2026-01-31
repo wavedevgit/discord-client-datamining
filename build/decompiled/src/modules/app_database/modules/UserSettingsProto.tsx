@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40213: for (var _fun40213_ip = 0;;) switch (_fun40213_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40215: for (var _fun40215_ip = 0;;) switch (_fun40215_ip) {
             case 0:
                 var3 = arg0;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: UserSettingsProto, environment: var5
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot3;
@@ -299,28 +299,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var4 = var5.bind(var0)(var2, var4);
             var4 = {};
-            var5 = function() { // Original name: CONNECTION_OPEN, environment: var3
+            var5 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.throttledOnChange;
                 var0 = var0.bind(var1)();
                 return var0;
             };
             var4.CONNECTION_OPEN = var5;
-            var5 = function() { // Original name: USER_SETTINGS_PROTO_UPDATE, environment: var3
+            var5 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.throttledOnChange;
                 var0 = var0.bind(var1)();
                 return var0;
             };
             var4.USER_SETTINGS_PROTO_UPDATE = var5;
-            var5 = function() { // Original name: USER_SETTINGS_PROTO_ENQUEUE_UPDATE, environment: var3
+            var5 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.throttledOnChange;
                 var0 = var0.bind(var1)();
                 return var0;
             };
             var4.USER_SETTINGS_PROTO_ENQUEUE_UPDATE = var5;
-            var5 = function() { // Original name: USER_SETTINGS_PROTO_UPDATE_EDIT_INFO, environment: var3
+            var5 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.throttledOnChange;
                 var0 = var0.bind(var1)();
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var6.bind(var1)(var0);
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: getAll, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetInMemoryState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = undefined;
             return var0;
         };

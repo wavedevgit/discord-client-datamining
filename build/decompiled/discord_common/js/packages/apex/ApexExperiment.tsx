@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/apex/ApexExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: createApexExperimentCommon, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var2 = arg0;
         var3 = arg1;
         var _closure2_slot0 = var3;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.bind(var3)(var2);
         var0 = {};
         var0.definition = var2;
-        var2 = function(arg0) { // Original name: useConfig, environment: var1
+        var2 = function arg0() {
             _fun14167: for (var _fun14167_ip = 0;;) switch (_fun14167_ip) {
                 case 0:
                     var9 = arg0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.useConfig = var2;
-        var1 = function(arg0) { // Original name: getConfig, environment: var1
+        var1 = function arg0() {
             _fun14170: for (var _fun14170_ip = 0;;) switch (_fun14170_ip) {
                 case 0:
                     var1 = arg0;

@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var4;
     var3 = var3.useContext;
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: usePortal, environment: var1
+    var1 = function() {
         _fun35258: for (var _fun35258_ip = 0;;) switch (_fun35258_ip) {
             case 0:
                 var4 = undefined;

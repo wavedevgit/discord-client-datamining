@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = !var5;
     var6 = !var4;
     var _closure1_slot6 = var4;
-    var5 = function() { // Original name: checkNativeAndroidAvailable, environment: var1
+    var5 = function() {
         _fun58311: for (var _fun58311_ip = 0;;) switch (_fun58311_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var5;
-    var4 = function() { // Original name: getAndroidModule, environment: var1
+    var4 = function() {
         _fun58312: for (var _fun58312_ip = 0;;) switch (_fun58312_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot8 = var4;
     var _closure1_slot9 = var3;
-    var3 = function() { // Original name: isStorekit2Available, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isAmazon = var7;
     var6 = !var6;
     var2.isPlay = var6;
-    var6 = function(arg0) { // Original name: setAndroidNativeModule, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         _closure1_slot6 = var0;
         var0 = undefined;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.setAndroidNativeModule = var6;
     var2.checkNativeAndroidAvailable = var5;
     var2.getAndroidModule = var4;
-    var4 = function() { // Original name: getAndroidModuleType, environment: var1
+    var4 = function() {
         _fun58315: for (var _fun58315_ip = 0;;) switch (_fun58315_ip) {
             case 0:
                 var2 = _closure1_slot8;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getAndroidModuleType = var4;
-    var4 = function() { // Original name: getNativeModule, environment: var1
+    var4 = function() {
         var1 = _closure1_slot8;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -156,19 +156,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.getNativeModule = var4;
     var2.isStorekit2Available = var3;
-    var3 = function() { // Original name: isIosStorekit2, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isIosStorekit2 = var3;
-    var3 = function(arg0) { // Original name: setIosNativeModule, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         _closure1_slot9 = var0;
         var0 = undefined;
         return var0;
     };
     var2.setIosNativeModule = var3;
-    var3 = function() { // Original name: storekit2Mode, environment: var1
+    var3 = function() {
         var1 = _closure1_slot3;
         _closure1_slot9 = var1;
         var1 = _closure1_slot10;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.storekit2Mode = var3;
-    var3 = function() { // Original name: storekit1Mode, environment: var1
+    var3 = function() {
         var1 = _closure1_slot2;
         _closure1_slot9 = var1;
         var1 = _closure1_slot10;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.storekit1Mode = var3;
-    var3 = function() { // Original name: storekitHybridMode, environment: var1
+    var3 = function() {
         var2 = _closure1_slot10;
         var0 = undefined;
         var0 = var2.bind(var0)();
@@ -203,7 +203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.storekitHybridMode = var3;
-    var1 = function() { // Original name: getIosModule, environment: var1
+    var1 = function() {
         _fun58322: for (var _fun58322_ip = 0;;) switch (_fun58322_ip) {
             case 0:
                 var0 = _closure1_slot2;

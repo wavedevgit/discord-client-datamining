@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1) { // Original name: isSOF0Marker, environment: var3
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.getUint16;
         var0 = arg1;
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function(arg0, arg1) { // Original name: isSOF2Marker, environment: var3
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.getUint16;
         var0 = arg1;
@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp2ICCMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37918: for (var _fun37918_ip = 0;;) switch (_fun37918_ip) {
             case 0:
                 var6 = arg0;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot39 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp2MPFMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37919: for (var _fun37919_ip = 0;;) switch (_fun37919_ip) {
             case 0:
                 var6 = arg0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp0JfifMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37920: for (var _fun37920_ip = 0;;) switch (_fun37920_ip) {
             case 0:
                 var3 = arg0;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot41 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp1ExifMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37921: for (var _fun37921_ip = 0;;) switch (_fun37921_ip) {
             case 0:
                 var3 = arg0;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot42 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp1XmpMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37922: for (var _fun37922_ip = 0;;) switch (_fun37922_ip) {
             case 0:
                 var6 = arg0;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot43 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp1ExtendedXmpMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37923: for (var _fun37923_ip = 0;;) switch (_fun37923_ip) {
             case 0:
                 var6 = arg0;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot44 = var0;
-    var0 = function(arg0, arg1) { // Original name: getXmpChunkDetails, environment: var3
+    var0 = function arg0, arg1() {
         var0 = {};
         var2 = _closure1_slot11;
         var1 = arg0;
@@ -264,7 +264,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot45 = var0;
-    var0 = function(arg0, arg1) { // Original name: getExtendedXmpChunkDetails, environment: var3
+    var0 = function arg0, arg1() {
         var0 = {};
         var2 = _closure1_slot12;
         var1 = arg0;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot46 = var0;
-    var0 = function(arg0, arg1) { // Original name: isApp13PhotoshopMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37926: for (var _fun37926_ip = 0;;) switch (_fun37926_ip) {
             case 0:
                 var3 = arg0;
@@ -323,7 +323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot47 = var0;
-    var0 = function(arg0, arg1) { // Original name: isAppMarker, environment: var3
+    var0 = function arg0, arg1() {
         _fun37927: for (var _fun37927_ip = 0;;) switch (_fun37927_ip) {
             case 0:
                 var2 = arg0;
@@ -400,7 +400,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot48 = var0;
-    var0 = function(arg0, arg1) { // Original name: isFillByte, environment: var3
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.getUint16;
         var0 = arg1;
@@ -419,7 +419,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function(arg0) { // Original name: isJpegFile, environment: var3
+    var2 = function arg0() {
         _fun37929: for (var _fun37929_ip = 0;;) switch (_fun37929_ip) {
             case 0:
                 var3 = arg0;
@@ -449,7 +449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isJpegFile = var2;
-    var2 = function(arg0) { // Original name: findJpegOffsets, environment: var3
+    var2 = function arg0() {
         _fun37930: for (var _fun37930_ip = 0;;) switch (_fun37930_ip) {
             case 0:
                 var30 = arg0;

@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMICustomScoresModal, environment: var1
+    var1 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var0 = var0.bind(var3)();
@@ -72,12 +72,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot5;
         var1 = var5.Navigator;
         var0 = {};
-        var6 = function() { // Original name: screenOptions, environment: var8
+        var6 = function() {
             var0 = {};
             var2 = _closure2_slot0;
             var2 = var2.header;
             var0.headerStyle = var2;
-            var2 = function(arg0) { // Original name: headerTitle, environment: var2
+            var2 = function arg0() {
                 var2 = arg0;
                 var5 = var2.children;
                 var0 = null;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5.Screen;
         var4 = {};
         var4.name = var9;
-        var9 = function(arg0) { // Original name: options, environment: var8
+        var9 = function arg0() {
             var0 = arg0;
             var6 = var0.navigation;
             var0 = {};
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.options = var9;
-        var9 = function() { // Original name: getComponent, environment: var8
+        var9 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 9;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var9 = 'guild';
         var5.name = var9;
-        var9 = function(arg0) { // Original name: options, environment: var8
+        var9 = function arg0() {
             var0 = arg0;
             var3 = var0.navigation;
             var0 = {};
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var5.options = var9;
-        var8 = function() { // Original name: getComponent, environment: var8
+        var8 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 10;

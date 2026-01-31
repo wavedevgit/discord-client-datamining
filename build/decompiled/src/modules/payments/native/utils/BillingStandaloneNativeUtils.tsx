@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: emitAPLSentryErrorOnFailure, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun58211: for (var _fun58211_ip = 0;;) switch (_fun58211_ip) {
             case 0:
                 var8 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/payments/native/utils/BillingStandaloneNativeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: goToStandalonePremiumCheckoutFromMobileApp, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var4 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.goToStandalonePremiumCheckoutFromMobileApp = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: goToStandaloneNitroManagementFromMobileApp, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.goToStandaloneNitroManagementFromMobileApp = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: goToStandaloneGuildBoostCheckoutFromMobileApp, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         var7 = arg2;
         var1 = arg0;
         var _closure2_slot0 = var1;

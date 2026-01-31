@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var8)(var9, var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: refreshEmojis, environment: var5
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.refreshEmojis = var8;
-    var8 = function(arg0, arg1) { // Original name: scrollingEnabled, environment: var5
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.scrollingEnabled = var8;
-    var5 = function(arg0, arg1, arg2) { // Original name: scrollToHeaderIndex, environment: var5
+    var5 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

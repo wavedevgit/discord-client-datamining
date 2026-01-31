@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1, arg2) { // Original name: goToBillingStandalonePageWithHandoff, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var10 = arg0;
         var _closure2_slot0 = var10;
         var1 = arg1;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: goToStandalonePremiumCheckout, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = arg0;
         var14 = var0.planId;
         var13 = var0.isGift;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.goToBillingStandalonePageWithHandoff = var4;
     var2.goToStandalonePremiumCheckout = var3;
-    var1 = function(arg0, arg1) { // Original name: goToStandalonePremiumCheckoutWeb, environment: var1
+    var1 = function arg0, arg1() {
         var4 = _closure1_slot6;
         var3 = undefined;
         var2 = arg0;

@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var0)(var7);
     var2.APP_LAUNCHER_BUILT_IN_SECTION_ICON = var7;
     var2.AppLauncherRouteName = var6;
-    var5 = function() { // Original name: useAppLauncherNavigation, environment: var5
+    var5 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

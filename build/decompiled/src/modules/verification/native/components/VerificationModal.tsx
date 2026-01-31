@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/VerificationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: VerificationModal, environment: var1
+    var1 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var1 = 29;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var9 = var10.useMemo;
         var6 = function() { // Environment: var5
-            var1 = function() { // Original name: getScreens, environment: var0
-                var9 = function(arg0) { // Original name: impressionProperties, environment: var3
+            var1 = function() {
+                var9 = function arg0() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.impressionProperties = var11;
                 var11 = false;
                 var1.gestureEnabled = var11;
-                var11 = function() { // Original name: headerLeft, environment: var3
+                var11 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: headerRight, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.PdRCRg;
                     var4 = var5.bind(var6)(var4);
                     var0.accessibilityLabel = var4;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         var8 = _closure1_slot0;
                         var9 = _closure1_slot2;
                         var0 = 13;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5.label = var4;
                         var4 = true;
                         var5.isDestructive = var4;
-                        var4 = function() { // Original name: onPress, environment: var4
+                        var4 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 14;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.headerRight = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function(arg0, arg1) { // Original name: render, environment: var3
+                var11 = function arg0, arg1() {
                     var0 = arg1;
                     var _closure5_slot0 = var0;
                     var3 = _closure1_slot11;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var5.USER_ACTION_REQUIRED;
                     var5 = 'reason';
                     var0[var5] = var6;
-                    var5 = function(arg0) { // Original name: onComplete, environment: var4
+                    var5 = function arg0() {
                         var3 = _closure5_slot0;
                         var2 = var3.push;
                         var0 = _closure1_slot10;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var4 = arg0;
                         var0.phone = var4;
-                        var4 = function(arg0) { // Original name: onVerified, environment: var4
+                        var4 = function arg0() {
                             var0 = arg0;
                             var _closure7_slot0 = var0;
                             var4 = _closure5_slot0;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function(arg0) { // Original name: render, environment: var3
+                var11 = function arg0() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.getHeaderNoTitle;
                 var11 = var11.bind(var12)();
                 var1.headerTitle = var11;
-                var11 = function(arg0) { // Original name: render, environment: var3
+                var11 = function arg0() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -797,7 +797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.getHeaderNoTitle;
                 var4 = var4.bind(var5)();
                 var1.headerTitle = var4;
-                var3 = function(arg0, arg1) { // Original name: render, environment: var3
+                var3 = function arg0, arg1() {
                     var0 = arg1;
                     var _closure5_slot0 = var0;
                     var2 = _closure1_slot5;
@@ -862,7 +862,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7["3oK4qw"];
                     var7 = var8.bind(var9)(var7);
                     var4.text = var7;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         _fun114410: for (var _fun114410_ip = 0;;) switch (_fun114410_ip) {
                             case 0:
                                 var2 = _closure1_slot8;

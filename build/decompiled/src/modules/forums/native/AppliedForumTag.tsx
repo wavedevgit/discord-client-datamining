@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: AppliedForumTag, environment: var3
+    var1 = function arg0() {
         _fun74539: for (var _fun74539_ip = 0;;) switch (_fun74539_ip) {
             case 0:
                 var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = var5.id;
                 var0.tagId = var5;
-                var4 = function(arg0) { // Original name: children, environment: var4
+                var4 = function arg0() {
                     _fun74541: for (var _fun74541_ip = 0;;) switch (_fun74541_ip) {
                         case 0:
                             var2 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/forums/native/AppliedForumTag.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AppliedForumTagPill, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.tag;
         var6 = var0.hasUnreads;

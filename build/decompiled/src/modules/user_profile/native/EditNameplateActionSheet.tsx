@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.avatarDisplayContainer = var9;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot18 = var1;
-    var1 = function(arg0) { // Original name: EditNameplateInner, environment: var3
+    var1 = function arg0() {
         _fun79907: for (var _fun79907_ip = 0;;) switch (_fun79907_ip) {
             case 0:
                 var0 = arg0;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var14[var4];
                 var13 = var22.bind(var3)(var5);
                 var6 = var13.useAnimatedStyle;
-                var5 = function() { // Original name: x, environment: var0
+                var5 = function() {
                     _fun79914: for (var _fun79914_ip = 0;;) switch (_fun79914_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var14[var4];
                 var13 = var22.bind(var3)(var5);
                 var6 = var13.useAnimatedProps;
-                var5 = function() { // Original name: v, environment: var0
+                var5 = function() {
                     _fun79915: for (var _fun79915_ip = 0;;) switch (_fun79915_ip) {
                         case 0:
                             var0 = {};
@@ -1090,7 +1090,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var14[var4];
                 var17 = var22.bind(var3)(var6);
                 var13 = var17.useAnimatedStyle;
-                var6 = function() { // Original name: B, environment: var0
+                var6 = function() {
                     _fun79916: for (var _fun79916_ip = 0;;) switch (_fun79916_ip) {
                         case 0:
                             var2 = _closure2_slot6;
@@ -1479,7 +1479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_profile/native/EditNameplateActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: EditNameplateActionSheet, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var17 = var0.user;
         var16 = var0.currentNameplate;

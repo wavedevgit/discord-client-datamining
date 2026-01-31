@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun40614: for (var _fun40614_ip = 0;;) switch (_fun40614_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var1;
     var1 = {};
     var _closure1_slot16 = var1;
-    var1 = function(arg0) { // Original name: updateAccounts, environment: var3
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.filter;
         var1 = function(arg0) { // Environment: var0
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ConnectedAccountsStore, environment: var5
+        var3 = function() {
             _fun40621: for (var _fun40621_ip = 0;;) switch (_fun40621_ip) {
                 case 0:
                     var3 = this;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isJoining';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun40622: for (var _fun40622_ip = 0;;) switch (_fun40622_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'joinErrorMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot16;
             var0 = arg0;
             var0 = var1[var0];
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetching';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAccounts';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLocalAccounts';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAccount';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = arg1;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLocalAccount';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var2 = _closure1_slot12;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSuggestedAccountType';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun40631: for (var _fun40631_ip = 0;;) switch (_fun40631_ip) {
                 case 0:
                     var1 = _closure1_slot15;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'addPendingAuthorizedState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot14;
             var1 = var2.add;
             var0 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'deletePendingAuthorizedState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot14;
             var1 = var2.delete;
             var0 = arg0;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPendingAuthorizedState';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot14;
             var1 = var2.has;
             var0 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.connectedAccounts;
         var1 = var2.map;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleConnectionsUpdate, environment: var3
+    var8 = function arg0() {
         _fun40637: for (var _fun40637_ip = 0;;) switch (_fun40637_ip) {
             case 0:
                 var0 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_CONNECTIONS_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleJoining, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = _closure1_slot13;
         var1 = var0.integrationId;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_CONNECTIONS_INTEGRATION_JOINING = var8;
-    var8 = function(arg0) { // Original name: handleUserConnectionUpdate, environment: var3
+    var8 = function arg0() {
         _fun40641: for (var _fun40641_ip = 0;;) switch (_fun40641_ip) {
             case 0:
                 var1 = arg0;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_CONNECTION_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleJoiningError, environment: var3
+    var8 = function arg0() {
         _fun40643: for (var _fun40643_ip = 0;;) switch (_fun40643_ip) {
             case 0:
                 var4 = arg0;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_CONNECTIONS_INTEGRATION_JOINING_ERROR = var8;
-    var3 = function(arg0) { // Original name: handleUserConnectionsCallback, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.code;
         var6 = var0.state;

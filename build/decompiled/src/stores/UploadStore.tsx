@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun54595: for (var _fun54595_ip = 0;;) switch (_fun54595_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: storeLocalUriForUpload, environment: var3
+    var0 = function arg0, arg1() {
         _fun54598: for (var _fun54598_ip = 0;;) switch (_fun54598_ip) {
             case 0:
                 var0 = arg1;
@@ -154,14 +154,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: clearLocalUriForUpload, environment: var3
+    var0 = function() {
         var0 = {};
         _closure1_slot13 = var0;
         var0 = undefined;
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: clearFile, environment: var3
+    var0 = function arg0, arg1() {
         _fun54601: for (var _fun54601_ip = 0;;) switch (_fun54601_ip) {
             case 0:
                 var3 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateFile, environment: var3
+    var0 = function arg0, arg1() {
         _fun54603: for (var _fun54603_ip = 0;;) switch (_fun54603_ip) {
             case 0:
                 var4 = arg0;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: UploadStore, environment: var5
+        var3 = function() {
             _fun54606: for (var _fun54606_ip = 0;;) switch (_fun54606_ip) {
                 case 0:
                     var3 = this;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot5;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFiles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun54608: for (var _fun54608_ip = 0;;) switch (_fun54608_ip) {
                 case 0:
                     var2 = _closure1_slot9;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMessageForFile';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot11;
             var0 = arg0;
             var0 = var1[var0];
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUploaderFileForMessageId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var0 = var1[var0];
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUploadAttachments';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun54611: for (var _fun54611_ip = 0;;) switch (_fun54611_ip) {
                 case 0:
                     var1 = arg0;
@@ -477,21 +477,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: handleConnectionOpen, environment: var3
+    var7 = function() {
         var1 = _closure1_slot16;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function() { // Original name: handleLogout, environment: var3
+    var7 = function() {
         var1 = _closure1_slot16;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function(arg0) { // Original name: handleUploadStart, environment: var3
+    var7 = function arg0() {
         _fun54614: for (var _fun54614_ip = 0;;) switch (_fun54614_ip) {
             case 0:
                 var0 = arg0;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPLOAD_START = var7;
-    var7 = function(arg0) { // Original name: handleUploadCompressionProgress, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var2 = var0.file;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPLOAD_COMPRESSION_PROGRESS = var7;
-    var7 = function(arg0) { // Original name: handleUploadProgress, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var2 = var0.file;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPLOAD_PROGRESS = var7;
-    var7 = function(arg0) { // Original name: handleUploadComplete, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var0 = var0.file;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPLOAD_COMPLETE = var7;
-    var7 = function(arg0) { // Original name: handleUploadFail, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var0 = var0.file;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPLOAD_FAIL = var7;
-    var7 = function(arg0) { // Original name: handleUploadCancel, environment: var3
+    var7 = function arg0() {
         _fun54619: for (var _fun54619_ip = 0;;) switch (_fun54619_ip) {
             case 0:
                 var0 = arg0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPLOAD_CANCEL_REQUEST = var7;
-    var7 = function(arg0) { // Original name: handleUploadItemCancel, environment: var3
+    var7 = function arg0() {
         _fun54621: for (var _fun54621_ip = 0;;) switch (_fun54621_ip) {
             case 0:
                 var2 = arg0;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPLOAD_ITEM_CANCEL_REQUEST = var7;
-    var7 = function(arg0) { // Original name: handleUploadFileUpdate, environment: var3
+    var7 = function arg0() {
         _fun54623: for (var _fun54623_ip = 0;;) switch (_fun54623_ip) {
             case 0:
                 var0 = arg0;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPLOAD_FILE_UPDATE = var7;
-    var3 = function(arg0) { // Original name: restoreFailedUpload, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.file;
         var1 = var0.messageId;

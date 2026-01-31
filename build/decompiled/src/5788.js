@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.I18nManager;
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: getInvertedMultiplier, environment: var1
+    var1 = function arg0() {
         _fun51197: for (var _fun51197_ip = 0;;) switch (_fun51197_ip) {
             case 0:
                 var1 = arg0;

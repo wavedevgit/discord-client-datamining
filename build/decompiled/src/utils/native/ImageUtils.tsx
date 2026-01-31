@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var10;
-    var0 = function(arg0) { // Original name: clampDimension, environment: var7
+    var0 = function arg0() {
         _fun16913: for (var _fun16913_ip = 0;;) switch (_fun16913_ip) {
             case 0:
                 var0 = arg0;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var4 = function(arg0) { // Original name: getSrcWithWidthAndHeight, environment: var7
+    var4 = function arg0() {
         _fun16914: for (var _fun16914_ip = 0;;) switch (_fun16914_ip) {
             case 0:
                 var0 = arg0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: getMobileOptimizedSrc, environment: var7
+    var3 = function arg0, arg1, arg2() {
         _fun16915: for (var _fun16915_ip = 0;;) switch (_fun16915_ip) {
             case 0:
                 var8 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function(arg0) { // Original name: getPaletteForAvatarMobile, environment: var7
+    var1 = function arg0() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var1 = 6;

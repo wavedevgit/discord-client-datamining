@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun71836: for (var _fun71836_ip = 0;;) switch (_fun71836_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.AbstractSearchFetchManager;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: SearchTabsFetchManager, environment: var5
+        var3 = function() {
             _fun71840: for (var _fun71840_ip = 0;;) switch (_fun71840_ip) {
                 case 0:
                     var3 = this;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'createRequestPayload';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var0 = arg0;
             var8 = var0.searchQuery;
             var3 = var0.searchTabs;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'createWithPayload';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun71843: for (var _fun71843_ip = 0;;) switch (_fun71843_ip) {
                 case 0:
                     var1 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'create';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = arg0;
             var3 = this;
             var2 = var0.id;

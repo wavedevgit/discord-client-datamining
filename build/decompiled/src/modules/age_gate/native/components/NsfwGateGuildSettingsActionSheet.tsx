@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/native/components/NsfwGateGuildSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NsfwGateGuildSettingsActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var16 = var0.guild;
         var _closure2_slot0 = var16;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.h850Ss;
         var13 = var17.bind(var18)(var13);
         var7.label = var13;
-        var13 = function() { // Original name: onPress, environment: var10
+        var13 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
             var0 = 7;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.J2TBi3;
         var11 = var12.bind(var13)(var11);
         var8.label = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 9;

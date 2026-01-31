@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: isPrimitive, environment: var0
+    var1 = function arg0() {
         _fun28910: for (var _fun28910_ip = 0;;) switch (_fun28910_ip) {
             case 0:
                 var1 = arg0;

@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: defaultStatesAreEqual, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1 === var0;
         return var0;
     };
     var _closure1_slot8 = var0;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: subscribeState, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun71539: for (var _fun71539_ip = 0;;) switch (_fun71539_ip) {
             case 0:
                 var6 = arg3;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var1 = var1.EMPTY_SEARCH_QUERY_STRING;
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: SearchQueryStateManager, environment: var3
+    var1 = function arg0() {
         var2 = this;
         var _closure2_slot0 = var2;
         var5 = _closure1_slot3;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var0)(var1);
     var _closure1_slot7 = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: useState, environment: var3
+    var7 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useState = var7;
-    var7 = function(arg0, arg1) { // Original name: getState, environment: var3
+    var7 = function arg0, arg1() {
         _fun71565: for (var _fun71565_ip = 0;;) switch (_fun71565_ip) {
             case 0:
                 var4 = arg0;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getState = var7;
-    var7 = function(arg0, arg1) { // Original name: setState, environment: var3
+    var7 = function arg0, arg1() {
         _fun71567: for (var _fun71567_ip = 0;;) switch (_fun71567_ip) {
             case 0:
                 var7 = arg0;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setState = var7;
-    var7 = function(arg0) { // Original name: deleteState, environment: var3
+    var7 = function arg0() {
         _fun71569: for (var _fun71569_ip = 0;;) switch (_fun71569_ip) {
             case 0:
                 var3 = _closure1_slot7;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.deleteState = var7;
     var1.subscribeState = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: subscribeTextInputValue, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot9;

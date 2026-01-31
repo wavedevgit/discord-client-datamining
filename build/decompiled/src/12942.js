@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: isProfilingIntegrationWithProfiler, environment: var2
+    var0 = function arg0() {
         _fun99657: for (var _fun99657_ip = 0;;) switch (_fun99657_ip) {
             case 0:
                 var1 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function() { // Original name: startProfiler, environment: var2
+    var3 = function() {
         _fun99658: for (var _fun99658_ip = 0;;) switch (_fun99658_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.startProfiler = var3;
-    var2 = function() { // Original name: stopProfiler, environment: var2
+    var2 = function() {
         _fun99659: for (var _fun99659_ip = 0;;) switch (_fun99659_ip) {
             case 0:
                 var3 = _closure1_slot0;

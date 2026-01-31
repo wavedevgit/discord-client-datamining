@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _tryLoadAsync, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: _tryLoadOrResetCacheGatewayAsync, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_database/app/TryLoad.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: tryLoad, environment: var1
+    var3 = function arg0() {
         _fun18766: for (var _fun18766_ip = 0;;) switch (_fun18766_ip) {
             case 0:
                 var0 = arg0;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.tryLoad = var3;
-    var3 = function() { // Original name: tryLoadAsync, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.tryLoadAsync = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: tryLoadOrResetCacheGateway, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun18768: for (var _fun18768_ip = 0;;) switch (_fun18768_ip) {
             case 0:
                 var6 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.tryLoadOrResetCacheGateway = var3;
-    var1 = function() { // Original name: tryLoadOrResetCacheGatewayAsync, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

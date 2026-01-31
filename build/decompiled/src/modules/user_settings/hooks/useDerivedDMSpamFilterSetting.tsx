@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/hooks/useDerivedDMSpamFilterSetting.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useDerivedDmSpamFilterSettingValue, environment: var1
+    var1 = function() {
         _fun81372: for (var _fun81372_ip = 0;;) switch (_fun81372_ip) {
             case 0:
                 var8 = _closure1_slot0;

@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/components/MentionableSelectComponentActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun78849: for (var _fun78849_ip = 0;;) switch (_fun78849_ip) {
             case 0:
                 var0 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.onPressOptionItem = var14;
                 var0.renderIcon = var13;
-                var13 = function(arg0) { // Original name: renderDescription, environment: var5
+                var13 = function arg0() {
                     _fun78852: for (var _fun78852_ip = 0;;) switch (_fun78852_ip) {
                         case 0:
                             var1 = arg0;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.renderDescription = var13;
-                var13 = function(arg0) { // Original name: renderOptionSuffix, environment: var5
+                var13 = function arg0() {
                     _fun78853: for (var _fun78853_ip = 0;;) switch (_fun78853_ip) {
                         case 0:
                             var2 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isSelected = var8;
                 var0.submitSelection = var7;
                 var0.onQueryChange = var6;
-                var5 = function(arg0) { // Original name: itemAccessibilityLabel, environment: var5
+                var5 = function arg0() {
                     _fun78854: for (var _fun78854_ip = 0;;) switch (_fun78854_ip) {
                         case 0:
                             var8 = arg0;

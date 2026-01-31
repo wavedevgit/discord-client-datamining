@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GroupDMInviteManagement, environment: var1
+    var0 = function arg0() {
         _fun72749: for (var _fun72749_ip = 0;;) switch (_fun72749_ip) {
             case 0:
                 var0 = arg0;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.bind(var0)(var4);
                     var4 = {};
                     var4.invite = var7;
-                    var7 = function(arg0) { // Original name: onInviteRevoked, environment: var7
+                    var7 = function arg0() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var2 = _closure2_slot2;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var3 = _closure2_slot0;
             var2 = _closure2_slot1;
-            var1 = function(arg0, arg1) { // Original name: getScreens, environment: var0
+            var1 = function arg0, arg1() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = {};
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = arg1;
                 var7 = var8.bind(var9)(var7);
                 var1.headerLeft = var7;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot11;
                     var2 = _closure1_slot13;
                     var1 = {};

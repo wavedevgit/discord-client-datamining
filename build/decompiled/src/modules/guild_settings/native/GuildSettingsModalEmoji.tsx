@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var1 = function(arg0) { // Original name: ManageEmojisModal, environment: var5
+    var1 = function arg0() {
         _fun115234: for (var _fun115234_ip = 0;;) switch (_fun115234_ip) {
             case 0:
                 var0 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.titleContainer = var11;
     var3 = var4.bind(var10)(var3);
     var _closure1_slot14 = var3;
-    var4 = function(arg0, arg1, arg2) { // Original name: computeSectionItem, environment: var5
+    var4 = function arg0, arg1, arg2() {
         var0 = global;
         var4 = var0.Math;
         var3 = var4.max;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var4;
-    var3 = function(arg0) { // Original name: computeEmojiItem, environment: var5
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = 'EMOJI';
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/guild_settings/native/GuildSettingsModalEmoji.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: GuildSettingsModalEmoji, environment: var5
+    var5 = function arg0() {
         _fun115247: for (var _fun115247_ip = 0;;) switch (_fun115247_ip) {
             case 0:
                 var1 = arg0;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot3;
                             var1 = var2.setOptions;
                             var0 = {};
-                            var3 = function() { // Original name: headerTitle, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot10;
                                 var2 = _closure1_slot5;
                                 var1 = {};

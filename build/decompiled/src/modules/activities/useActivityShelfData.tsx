@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/useActivityShelfData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useActivityShelfData, environment: var1
+    var1 = function arg0() {
         _fun90330: for (var _fun90330_ip = 0;;) switch (_fun90330_ip) {
             case 0:
                 var1 = arg0;

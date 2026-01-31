@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.NativeModules;
     var _closure1_slot4 = var1;
     var1 = {};
-    var4 = function() { // Original name: minimize, environment: var3
+    var4 = function() {
         var0 = _closure1_slot4;
         var1 = var0.MinimizeApp;
         var0 = var1.minimizeApp;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/routing/native/useBackPressHandler.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useBackPressHandler, environment: var3
+    var3 = function arg0() {
         _fun37367: for (var _fun37367_ip = 0;;) switch (_fun37367_ip) {
             case 0:
                 var3 = arg0;

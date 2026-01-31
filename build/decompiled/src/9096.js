@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Original name: baseDelay, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun72818: for (var _fun72818_ip = 0;;) switch (_fun72818_ip) {
             case 0:
                 var1 = arg0;

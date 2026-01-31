@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun45210: for (var _fun45210_ip = 0;;) switch (_fun45210_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.jsxs;
     var _closure1_slot15 = var1;
     var1 = function(arg0) { // Environment: var4
-        var3 = function(arg0) { // Original name: DrawerLayout, environment: var5
+        var3 = function arg0() {
             _fun45214: for (var _fun45214_ip = 0;;) switch (_fun45214_ip) {
                 case 0:
                     var3 = arg0;
@@ -1465,7 +1465,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'shouldComponentUpdate';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: shouldComponentUpdate, environment: var5
+        var0 = function arg0, arg1() {
             _fun45230: for (var _fun45230_ip = 0;;) switch (_fun45230_ip) {
                 case 0:
                     var3 = arg0;
@@ -1523,7 +1523,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun45231: for (var _fun45231_ip = 0;;) switch (_fun45231_ip) {
                 case 0:
                     var5 = this;

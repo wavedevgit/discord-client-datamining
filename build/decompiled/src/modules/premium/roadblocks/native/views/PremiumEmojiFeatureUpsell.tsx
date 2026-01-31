@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/roadblocks/native/views/PremiumEmojiFeatureUpsell.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumEmojiFeatureUpsell, environment: var1
+    var1 = function arg0() {
         _fun73976: for (var _fun73976_ip = 0;;) switch (_fun73976_ip) {
             case 0:
                 var1 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6[var2];
                 var3 = var3.bind(var4)(var2);
                 var2 = var3.useDerivedValue;
-                var0 = function() { // Original name: c, environment: var0
+                var0 = function() {
                     _fun73977: for (var _fun73977_ip = 0;;) switch (_fun73977_ip) {
                         case 0:
                             var1 = _closure2_slot2;

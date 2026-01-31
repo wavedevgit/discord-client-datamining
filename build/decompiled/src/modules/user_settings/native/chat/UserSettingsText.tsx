@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: trackSettingsUpdated, environment: var5
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 10;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var4 = function(arg0) { // Original name: setDataSavingMode, environment: var5
+    var4 = function arg0() {
         var0 = arg0;
         var11 = var0.videoUploadQuality;
         var10 = var0.viewImageDescriptions;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var4;
-    var3 = function(arg0) { // Original name: setVideoUploadQuality, environment: var5
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.videoUploadQuality;
         var10 = var0.viewImageDescriptions;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var3;
-    var1 = function(arg0) { // Original name: setImageDescriptions, environment: var5
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.videoUploadQuality;
         var3 = var0.viewImageDescriptions;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/user_settings/native/chat/UserSettingsText.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function() { // Original name: UserSettingsText, environment: var5
+    var6 = function() {
         _fun85022: for (var _fun85022_ip = 0;;) switch (_fun85022_ip) {
             case 0:
                 var14 = _closure1_slot0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.useSetting;
                 var27 = var0.bind(var1)();
                 var _closure2_slot3 = var27;
-                var0 = function(arg0) { // Original name: updateVideoUploadQuality, environment: var20
+                var0 = function arg0() {
                     var2 = _closure1_slot20;
                     var1 = {};
                     var0 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.useNavigation;
                 var0 = var0.bind(var1)();
                 var _closure2_slot5 = var0;
-                var28 = function(arg0) { // Original name: isVideoQualitySelected, environment: var20
+                var28 = function arg0() {
                     var3 = _closure1_slot14;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = var30.bind(var31)(var29);
                 var24.label = var29;
                 var24.value = var27;
-                var27 = function(arg0) { // Original name: updateImageDescriptions, environment: var20
+                var27 = function arg0() {
                     var2 = _closure1_slot21;
                     var1 = {};
                     var3 = _closure2_slot1;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25.cWGW5d;
                 var25 = var27.bind(var29)(var25);
                 var18.label = var25;
-                var25 = function() { // Original name: onPress, environment: var20
+                var25 = function() {
                     var2 = _closure2_slot4;
                     var0 = _closure1_slot9;
                     var1 = var0.BEST;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = var29["5hKnyC"];
                 var29 = var30.bind(var31)(var29);
                 var24.label = var29;
-                var29 = function() { // Original name: onPress, environment: var20
+                var29 = function() {
                     var2 = _closure2_slot4;
                     var0 = _closure1_slot9;
                     var1 = var0.STANDARD;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = var29.y5k4ZJ;
                 var29 = var30.bind(var31)(var29);
                 var24.label = var29;
-                var29 = function() { // Original name: onPress, environment: var20
+                var29 = function() {
                     var2 = _closure2_slot4;
                     var0 = _closure1_slot9;
                     var1 = var0.DATA_SAVER;
@@ -677,7 +677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun85022
                 }
             case 1685:
-                var16 = function() { // Original name: renderNitroUpsellText, environment: var20
+                var16 = function() {
                     _fun85032: for (var _fun85032_ip = 0;;) switch (_fun85032_ip) {
                         case 0:
                             var6 = _closure1_slot14;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var9.t;
                             var10 = var9.uW1zul;
                             var9 = {};
-                            var13 = function() { // Original name: onClick, environment: var13
+                            var13 = function() {
                                 var3 = _closure1_slot1;
                                 var2 = _closure1_slot2;
                                 var1 = 16;
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var28.bind(var29)(var27);
                 var24.label = var27;
                 var24.value = var26;
-                var26 = function(arg0) { // Original name: toggleDataSavingMode, environment: var20
+                var26 = function arg0() {
                     var2 = _closure1_slot19;
                     var1 = {};
                     var3 = _closure2_slot1;
@@ -995,7 +995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = false;
                 var21 = var21 !== var22;
                 var16.value = var21;
-                var20 = function(arg0) { // Original name: handleSync, environment: var20
+                var20 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var6;
-    var6 = function(arg0) { // Original name: setStickerAutocomplete, environment: var5
+    var6 = function arg0() {
         var3 = arg0;
         var5 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -1069,7 +1069,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setStickerAutocomplete = var6;
-    var5 = function(arg0) { // Original name: setLowQualityImageMode, environment: var5
+    var5 = function arg0() {
         var0 = arg0;
         var11 = var0.videoUploadQuality;
         var10 = var0.viewImageDescriptions;

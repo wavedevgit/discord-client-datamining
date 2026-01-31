@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun58939: for (var _fun58939_ip = 0;;) switch (_fun58939_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: DeveloperActivityShelfStore, environment: var5
+        var3 = function() {
             _fun58943: for (var _fun58943_ip = 0;;) switch (_fun58943_ip) {
                 case 0:
                     var3 = this;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun58944: for (var _fun58944_ip = 0;;) switch (_fun58944_ip) {
                 case 0:
                     var0 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun58946: for (var _fun58946_ip = 0;;) switch (_fun58946_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastUsedObject';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var0 = var0.lastUsedObject;
             return var0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUseActivityUrlOverride';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun58948: for (var _fun58948_ip = 0;;) switch (_fun58948_ip) {
                 case 0:
                     var1 = this;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActivityUrlOverride';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun58949: for (var _fun58949_ip = 0;;) switch (_fun58949_ip) {
                 case 0:
                     var1 = this;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFilter';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun58951: for (var _fun58951_ip = 0;;) switch (_fun58951_ip) {
                 case 0:
                     var1 = this;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDeveloperShelfItems';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun58952: for (var _fun58952_ip = 0;;) switch (_fun58952_ip) {
                 case 0:
                     var1 = this;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'inDevModeForApplication';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun58953: for (var _fun58953_ip = 0;;) switch (_fun58953_ip) {
                 case 0:
                     var2 = this;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var12 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function() { // Original name: reset, environment: var4
+    var9 = function() {
         var0 = {
             'lastUsedObject': null,
             'useActivityUrlOverride': false,
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.LOGOUT = var9;
-    var9 = function() { // Original name: handleToggleUseActivityUrlOverride, environment: var4
+    var9 = function() {
         var1 = _closure1_slot8;
         var0 = var1.useActivityUrlOverride;
         var0 = !var0;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE = var9;
-    var9 = function(arg0) { // Original name: handleSetActivityUrlOverride, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.activityUrlOverride;
         var0 = _closure1_slot8;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE = var9;
-    var9 = function(arg0) { // Original name: handleMarkActivityUsed, environment: var4
+    var9 = function arg0() {
         _fun58959: for (var _fun58959_ip = 0;;) switch (_fun58959_ip) {
             case 0:
                 var0 = arg0;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED = var9;
-    var9 = function() { // Original name: DEVELOPER_ACTIVITY_SHELF_FETCH_START, environment: var4
+    var9 = function() {
         var0 = _closure1_slot9;
         var0 = var0.LOADING;
         _closure1_slot10 = var0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEVELOPER_ACTIVITY_SHELF_FETCH_START = var9;
-    var9 = function(arg0) { // Original name: handleEmbeddedActivitiesFetchDeveloperApplicationsSuccess, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.applications;
         var0 = _closure1_slot9;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleEmbeddedActivitiesFetchDeveloperApplicationsFail, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var0 = var0.type;
         var0 = _closure1_slot9;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL = var9;
-    var9 = function(arg0) { // Original name: handleUpdateFilter, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.filter;
         var0 = _closure1_slot8;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER = var9;
-    var4 = function() { // Original name: USER_SETTINGS_PROTO_UPDATE, environment: var4
+    var4 = function() {
         var0 = undefined;
         return var0;
     };

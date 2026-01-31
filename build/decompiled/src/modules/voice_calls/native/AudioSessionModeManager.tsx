@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun112645: for (var _fun112645_ip = 0;;) switch (_fun112645_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: handleAVAudioSessionMode, environment: var1
+    var0 = function() {
         _fun112648: for (var _fun112648_ip = 0;;) switch (_fun112648_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.AppStates;
     var _closure1_slot16 = var3;
-    var3 = function() { // Original name: VoiceEngine_setAVAudioSessionMode, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: AudioSessionModeManager, environment: var0
+        var2 = function arg0() {
             _fun112651: for (var _fun112651_ip = 0;;) switch (_fun112651_ip) {
                 case 0:
                     var4 = this;

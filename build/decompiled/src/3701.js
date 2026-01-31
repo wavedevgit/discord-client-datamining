@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot1 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: valueUnpacker, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun33138: for (var _fun33138_ip = 0;;) switch (_fun33138_ip) {
                 case 0:
                     var1 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3 instanceof Object ? var3 : var7;
                     throw var3;
                 case 227:
-                    var2 = function() { // Original name: fun, environment: var2
+                    var2 = function() {
                         _fun33139: for (var _fun33139_ip = 0;;) switch (_fun33139_ip) {
                             case 0:
                                 var0 = global;
@@ -235,7 +235,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_valueUnpackerTs2(){}';
     var3 = {};
     var3.code = var4;
-    var1 = function() { // Original name: getValueUnpackerCode, environment: var1
+    var1 = function() {
         var0 = _closure1_slot2;
         var0 = var0.__initData;
         var0 = var0.code;

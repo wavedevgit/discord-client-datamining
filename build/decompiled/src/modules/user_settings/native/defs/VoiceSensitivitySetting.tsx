@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createStatic;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.VOICE;
     var1.parent = var8;
-    var8 = function() { // Original name: useVoiceSensitivitySettingDescription, environment: var7
+    var8 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var4.auto = var8;
         var4.threshold = var7;
-        var6 = function(arg0) { // Original name: onThresholdChange, environment: var6
+        var6 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 7;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useDescription = var8;
-    var7 = function() { // Original name: additionalSearchTerms, environment: var7
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;

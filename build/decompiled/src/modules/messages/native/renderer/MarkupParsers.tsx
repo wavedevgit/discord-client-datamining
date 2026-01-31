@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/MarkupParsers.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: parseEmbedTitleMarkup, environment: var1
+    var3 = function arg0, arg1() {
         _fun55827: for (var _fun55827_ip = 0;;) switch (_fun55827_ip) {
             case 0:
                 var7 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseEmbedTitleMarkup = var3;
-    var3 = function(arg0, arg1) { // Original name: parseEmbedTitleMarkupWithoutLinks, environment: var1
+    var3 = function arg0, arg1() {
         _fun55828: for (var _fun55828_ip = 0;;) switch (_fun55828_ip) {
             case 0:
                 var7 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseEmbedTitleMarkupWithoutLinks = var3;
-    var3 = function(arg0) { // Original name: parseEmbedDescriptionMarkup, environment: var1
+    var3 = function arg0() {
         _fun55829: for (var _fun55829_ip = 0;;) switch (_fun55829_ip) {
             case 0:
                 var1 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseEmbedDescriptionMarkup = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: parseMessageMarkup, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun55830: for (var _fun55830_ip = 0;;) switch (_fun55830_ip) {
             case 0:
                 var4 = arg0;

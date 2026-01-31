@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: GZheader, environment: var0
+    var1 = function() {
         var1 = this;
         var0 = 0;
         var1.text = var0;

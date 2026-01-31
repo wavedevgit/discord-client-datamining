@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.jsx;
     var _closure1_slot5 = var4;
-    var1 = function(arg0, arg1) { // Original name: ScrollableContainer, environment: var1
+    var1 = function arg0, arg1() {
         _fun45414: for (var _fun45414_ip = 0;;) switch (_fun45414_ip) {
             case 0:
                 var2 = arg0;

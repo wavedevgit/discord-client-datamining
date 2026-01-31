@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: addOriginToSpan, environment: var0
+    var2 = function arg0, arg1() {
         var4 = arg0;
         var3 = var4.setAttribute;
         var2 = _closure1_slot0;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0) { // Original name: onVercelAiSpanStart, environment: var0
+    var2 = function arg0() {
         _fun9836: for (var _fun9836_ip = 0;;) switch (_fun9836_ip) {
             case 0:
                 var3 = arg0;
@@ -590,7 +590,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: vercelAiEventProcessor, environment: var0
+    var2 = function arg0() {
         _fun9837: for (var _fun9837_ip = 0;;) switch (_fun9837_ip) {
             case 0:
                 var0 = arg0;
@@ -723,7 +723,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0) { // Original name: processEndedVercelAiSpan, environment: var0
+    var2 = function arg0() {
         _fun9838: for (var _fun9838_ip = 0;;) switch (_fun9838_ip) {
             case 0:
                 var1 = arg0;
@@ -1141,7 +1141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: renameAttributeKey, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun9839: for (var _fun9839_ip = 0;;) switch (_fun9839_ip) {
             case 0:
                 var1 = arg0;
@@ -1163,7 +1163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: setAttributeIfDefined, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun9840: for (var _fun9840_ip = 0;;) switch (_fun9840_ip) {
             case 0:
                 var2 = arg2;
@@ -1191,7 +1191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0) { // Original name: addVercelAiProcessors, environment: var0
+    var0 = function arg0() {
         var2 = arg0;
         var4 = var2.on;
         var3 = _closure1_slot3;

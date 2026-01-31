@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: LifecycleManager, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'initialize';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun37055: for (var _fun37055_ip = 0;;) switch (_fun37055_ip) {
                 case 0:
                     var2 = this;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'terminate';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun37056: for (var _fun37056_ip = 0;;) switch (_fun37056_ip) {
                 case 0:
                     var1 = this;

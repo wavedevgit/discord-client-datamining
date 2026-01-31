@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0) { // Original name: wrapTransportError, environment: var1
+    var3 = function arg0() {
         _fun9728: for (var _fun9728_ip = 0;;) switch (_fun9728_ip) {
             case 0:
                 var4 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.wrapTransportError = var3;
-    var3 = function(arg0) { // Original name: wrapTransportOnClose, environment: var1
+    var3 = function arg0() {
         _fun9731: for (var _fun9731_ip = 0;;) switch (_fun9731_ip) {
             case 0:
                 var4 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.wrapTransportOnClose = var3;
-    var3 = function(arg0) { // Original name: wrapTransportOnMessage, environment: var1
+    var3 = function arg0() {
         _fun9734: for (var _fun9734_ip = 0;;) switch (_fun9734_ip) {
             case 0:
                 var4 = arg0;
@@ -344,7 +344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.wrapTransportOnMessage = var3;
-    var1 = function(arg0) { // Original name: wrapTransportSend, environment: var1
+    var1 = function arg0() {
         _fun9740: for (var _fun9740_ip = 0;;) switch (_fun9740_ip) {
             case 0:
                 var4 = arg0;

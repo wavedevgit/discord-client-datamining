@@ -7,13 +7,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var2;
             var2 = dependencyMap;
             var _closure1_slot1 = var2;
-            var2 = function(arg0) { // Original name: AsyncGenerator, environment: var1
+            var2 = function arg0() {
                 _fun9931: for (var _fun9931_ip = 0;;) switch (_fun9931_ip) {
                     case 0:
                         var0 = arg0;
                         var1 = this;
                         var _closure2_slot0 = var0;
-                        var3 = function(arg0, arg1) { // Original name: resume, environment: var2
+                        var3 = function arg0, arg1() {
                             _fun9932: for (var _fun9932_ip = 0;;) switch (_fun9932_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot3 = var3;
-                        var3 = function(arg0, arg1) { // Original name: settle, environment: var2
+                        var3 = function arg0, arg1() {
                             _fun9935: for (var _fun9935_ip = 0;;) switch (_fun9935_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.return = var2;
-            var1 = function(arg0) { // Original name: _wrapAsyncGenerator, environment: var1
+            var1 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var0 = function() { // Environment: var0

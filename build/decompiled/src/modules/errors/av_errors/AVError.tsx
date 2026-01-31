@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.NoiseCancellerFailed = var7;
     var7 = 'NoiseCancellerError.VAD_CPU_OVERUSE';
     var3.NoiseCancellerVadCpuOveruse = var7;
-    var7 = function() { // Original name: validateUniqueErrorCodes, environment: var1
+    var7 = function() {
         _fun64283: for (var _fun64283_ip = 0;;) switch (_fun64283_ip) {
             case 0:
                 var0 = global;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AVErrorCategory = var5;
     var2.AVErrorSeverity = var4;
     var2.AVUnderlyingError = var3;
-    var3 = function(arg0) { // Original name: reportAVError, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var6 = var4.type;
         var3 = _closure1_slot3;
@@ -578,7 +578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.reportAVError = var3;
-    var1 = function(arg0) { // Original name: getErrorInfo, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot5;
         var0 = arg0;
         var0 = var1[var0];

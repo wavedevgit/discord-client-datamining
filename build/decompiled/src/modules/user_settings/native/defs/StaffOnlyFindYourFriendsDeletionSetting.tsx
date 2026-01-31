@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: setFindYourFriendsDeletionIsLoading, environment: var7
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: useFindYourFriendsDeletionIsLoading, environment: var7
+    var0 = function() {
         var3 = _closure1_slot6;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _onFindYourFriendsDeletionPress, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -219,14 +219,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useIsFindYourFriendsDeletionDisabled, environment: var7
+    var8 = function() {
         var1 = _closure1_slot8;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var1.useIsDisabled = var8;
-    var8 = function() { // Original name: onFindYourFriendsDeletionPress, environment: var7
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.useStaffOrDeveloperSettingPredicate;
     var1.usePredicate = var8;
-    var7 = function() { // Original name: useIsFindYourFriendsDeletionTrailing, environment: var7
+    var7 = function() {
         _fun81391: for (var _fun81391_ip = 0;;) switch (_fun81391_ip) {
             case 0:
                 var0 = _closure1_slot8;

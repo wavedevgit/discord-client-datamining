@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var2;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var3;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun118154: for (var _fun118154_ip = 0;;) switch (_fun118154_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun118156: for (var _fun118156_ip = 0;;) switch (_fun118156_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: sendReply, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var0 = _closure1_slot4;
         var2 = var0.TTIManager;
         var1 = var2.logToDevice;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: sendStatus, environment: var1
+    var0 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot12;
         var1 = var2.log;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: getErrorDetails, environment: var1
+    var0 = function arg0() {
         _fun118159: for (var _fun118159_ip = 0;;) switch (_fun118159_ip) {
             case 0:
                 var0 = arg0;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var5 = function() { // Original name: setupTTITest, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var5;
-    var0 = function() { // Original name: _setupTTITest, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var _closure5_slot0 = var0;
                                     var0 = arg1;
                                     var _closure5_slot1 = var0;
-                                    var3 = function(arg0, arg1) { // Original name: subscribeOnce, environment: var1
+                                    var3 = function arg0, arg1() {
                                         var4 = arg0;
                                         var _closure6_slot0 = var4;
                                         var0 = arg1;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0 = undefined;
                                         var3 = var2.bind(var0)(var1);
                                         var2 = var3.subscribe;
-                                        var1 = function() { // Original name: handler, environment: var5
+                                        var1 = function() {
                                             var2 = _closure6_slot1;
                                             var4 = _closure6_slot0;
                                             var0 = undefined;
@@ -1136,7 +1136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: apiLogin, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;
@@ -1147,7 +1147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _apiLogin, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var _closure5_slot0 = var0;
                                     var0 = arg1;
                                     var _closure5_slot1 = var0;
-                                    var5 = function(arg0) { // Original name: _loop, environment: var1
+                                    var5 = function arg0() {
                                         var4 = arg0;
                                         var _closure6_slot0 = var4;
                                         var3 = _closure1_slot23;
@@ -1508,7 +1508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: subscribeOnce, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var3 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var3;
@@ -1516,7 +1516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = arg2;
         var _closure2_slot2 = var0;
         var1 = var3.subscribe;
-        var0 = function(arg0) { // Original name: handler, environment: var4
+        var0 = function arg0() {
             var4 = _closure2_slot0;
             var3 = var4.unsubscribe;
             var2 = _closure2_slot1;
@@ -1585,7 +1585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var4;
     var4 = {};
     var4['setup-test'] = var5;
-    var5 = function() { // Original name: ping, environment: var1
+    var5 = function() {
         var0 = _closure1_slot4;
         var2 = var0.TTIManager;
         var1 = var2.logToDevice;
@@ -1600,7 +1600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.ping = var5;
-    var5 = function() { // Original name: reset-component-profiler, environment: var1
+    var5 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -1616,7 +1616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4['reset-component-profiler'] = var5;
-    var5 = function() { // Original name: pause-component-profiler, environment: var1
+    var5 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -1632,7 +1632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4['pause-component-profiler'] = var5;
-    var5 = function() { // Original name: resume-component-profiler, environment: var1
+    var5 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -1648,7 +1648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4['resume-component-profiler'] = var5;
-    var5 = function() { // Original name: dump-component-profiler-stats, environment: var1
+    var5 = function() {
         var4 = _closure1_slot16;
         var3 = {};
         var2 = _closure1_slot0;
@@ -1666,7 +1666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4['dump-component-profiler-stats'] = var5;
-    var5 = function() { // Original name: dump-jank-stats, environment: var1
+    var5 = function() {
         _fun118193: for (var _fun118193_ip = 0;;) switch (_fun118193_ip) {
             case 0:
                 var4 = _closure1_slot16;
@@ -1700,7 +1700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4['dump-jank-stats'] = var5;
-    var5 = function(arg0) { // Original name: set-jank-multiplier, environment: var1
+    var5 = function arg0() {
         _fun118194: for (var _fun118194_ip = 0;;) switch (_fun118194_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -1732,7 +1732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4['set-jank-multiplier'] = var5;
-    var5 = function() { // Original name: start-jank-stats, environment: var1
+    var5 = function() {
         _fun118195: for (var _fun118195_ip = 0;;) switch (_fun118195_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -1762,7 +1762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4['start-jank-stats'] = var5;
-    var5 = function(arg0) { // Original name: flux-dispatch, environment: var1
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 11;
@@ -1780,7 +1780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4['flux-dispatch'] = var5;
-    var5 = function() { // Original name: get-token, environment: var1
+    var5 = function() {
         var4 = _closure1_slot16;
         var3 = {};
         var1 = _closure1_slot8;
@@ -1794,7 +1794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4['get-token'] = var5;
-    var5 = function() { // Original name: get-resource-usage, environment: var1
+    var5 = function() {
         var4 = _closure1_slot16;
         var3 = {};
         var2 = _closure1_slot1;

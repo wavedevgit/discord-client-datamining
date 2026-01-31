@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot0 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: omitZero, environment: var0
+        var0 = function arg0, arg1() {
             _fun74838: for (var _fun74838_ip = 0;;) switch (_fun74838_ip) {
                 case 0:
                     var1 = arg1;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot2 = var4;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: computeOffsetIfDataChanged, environment: var0
+        var0 = function arg0() {
             _fun74840: for (var _fun74840_ip = 0;;) switch (_fun74840_ip) {
                 case 0:
                     var1 = arg0;

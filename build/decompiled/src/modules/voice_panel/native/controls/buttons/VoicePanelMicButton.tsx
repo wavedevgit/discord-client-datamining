@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useMuteHandlers, environment: var1
+    var0 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot4;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: AnimatedMicrophoneIcon, environment: var1
+    var0 = function arg0() {
         _fun111531: for (var _fun111531_ip = 0;;) switch (_fun111531_ip) {
             case 0:
                 var0 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelMicButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: PTTButton, environment: var1
+    var3 = function arg0() {
         _fun111533: for (var _fun111533_ip = 0;;) switch (_fun111533_ip) {
             case 0:
                 var1 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var4);
                 var8 = var1.mute;
                 var6 = var1.onPress;
-                var1 = function(arg0) { // Original name: useDeafHandlers, environment: var0
+                var1 = function arg0() {
                     var5 = arg0;
                     var _closure3_slot0 = var5;
                     var4 = _closure1_slot0;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = true;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onTouchesMove;
-                    var1 = function(arg0, arg1) { // Original name: n, environment: var0
+                    var1 = function arg0, arg1() {
                         _fun111541: for (var _fun111541_ip = 0;;) switch (_fun111541_ip) {
                             case 0:
                                 var3 = arg1;
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var10;
                     var2 = var2.bind(var4)(var1);
                     var1 = var2.onFinalize;
-                    var0 = function() { // Original name: t, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 18;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.PTTButton = var3;
-    var1 = function(arg0) { // Original name: MicButton, environment: var1
+    var1 = function arg0() {
         _fun111545: for (var _fun111545_ip = 0;;) switch (_fun111545_ip) {
             case 0:
                 var1 = arg0;

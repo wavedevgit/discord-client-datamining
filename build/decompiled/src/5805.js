@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 178: // catch_target0
             CatchBlockStart(arg_register = 3);
         case 180:
-            var3 = function(arg0) { // Original name: MaybeScreenContainer, environment: var1
+            var3 = function arg0() {
                 _fun51347: for (var _fun51347_ip = 0;;) switch (_fun51347_ip) {
                     case 0:
                         var3 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.MaybeScreenContainer = var3;
-            var1 = function(arg0) { // Original name: MaybeScreen, environment: var1
+            var1 = function arg0() {
                 _fun51348: for (var _fun51348_ip = 0;;) switch (_fun51348_ip) {
                     case 0:
                         var3 = arg0;

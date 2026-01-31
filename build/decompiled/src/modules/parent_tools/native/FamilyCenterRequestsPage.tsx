@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FamilyCenterMaxConnectionsBlurb, environment: var1
+    var0 = function() {
         _fun81979: for (var _fun81979_ip = 0;;) switch (_fun81979_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.supportHeader = var11;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot10 = var6;
-    var6 = function() { // Original name: FamilyCenterHelpLineInfo, environment: var1
+    var6 = function() {
         _fun81980: for (var _fun81980_ip = 0;;) switch (_fun81980_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterRequestsPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterRequestsPage, environment: var1
+    var1 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var4 = var0.bind(var3)();

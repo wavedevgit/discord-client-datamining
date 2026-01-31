@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getPageMarker, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.keys;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/mfa_modal_flow/TwoFASetupModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: TwoFASetupModal, environment: var1
+    var3 = function arg0() {
         _fun81050: for (var _fun81050_ip = 0;;) switch (_fun81050_ip) {
             case 0:
                 var0 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var2)(var0);
                     var0 = var1.generateTotpSecret;
                     var1 = var0.bind(var1)();
-                    var0 = function(arg0) { // Original name: getScreens, environment: var0
+                    var0 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var0 = {};
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var11.close;
                         var11 = var12.bind(var13)(var11);
                         var2.headerLeft = var11;
-                        var11 = function() { // Original name: headerTitle, environment: var3
+                        var11 = function() {
                             var2 = _closure1_slot10;
                             var0 = _closure1_slot5;
                             var1 = var0.LANDING;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var2.headerTitle = var11;
-                        var11 = function() { // Original name: render, environment: var3
+                        var11 = function() {
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0[var10] = var2;
                         var10 = var1.SCAN;
                         var2 = {};
-                        var11 = function() { // Original name: headerTitle, environment: var3
+                        var11 = function() {
                             var2 = _closure1_slot10;
                             var0 = _closure1_slot5;
                             var1 = var0.SCAN;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var2.headerTitle = var11;
-                        var11 = function() { // Original name: render, environment: var3
+                        var11 = function() {
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0[var10] = var2;
                         var10 = var1.ENTER_CODE;
                         var2 = {};
-                        var11 = function() { // Original name: headerTitle, environment: var3
+                        var11 = function() {
                             var2 = _closure1_slot10;
                             var0 = _closure1_slot5;
                             var1 = var0.ENTER_CODE;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var2.headerTitle = var11;
-                        var11 = function() { // Original name: render, environment: var3
+                        var11 = function() {
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -249,12 +249,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.close;
                         var4 = var5.bind(var6)(var4);
                         var1.headerLeft = var4;
-                        var4 = function() { // Original name: headerTitle, environment: var3
+                        var4 = function() {
                             var0 = null;
                             return var0;
                         };
                         var1.headerTitle = var4;
-                        var3 = function() { // Original name: render, environment: var3
+                        var3 = function() {
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: TwoFASetupModalScreen, environment: var1
+    var1 = function arg0() {
         _fun81061: for (var _fun81061_ip = 0;;) switch (_fun81061_ip) {
             case 0:
                 var1 = arg0;

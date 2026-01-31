@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelUnreadBadge, environment: var1
+    var1 = function arg0() {
         _fun101334: for (var _fun101334_ip = 0;;) switch (_fun101334_ip) {
             case 0:
                 var0 = arg0;

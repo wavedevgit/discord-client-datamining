@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var1);
     var1 = {};
-    var7 = function() { // Original name: get webauthn, environment: var3
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get totp, environment: var3
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get sms, environment: var3
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get password, environment: var3
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var6 = function() { // Original name: get backup, environment: var3
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;

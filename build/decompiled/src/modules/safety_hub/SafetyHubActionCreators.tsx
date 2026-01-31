@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _getSafetyHubData, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _getSafetyHubDataForClassification, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: _setClassificationFlaggedContent, environment: var3
+    var0 = function arg0() {
         _fun79414: for (var _fun79414_ip = 0;;) switch (_fun79414_ip) {
             case 0:
                 var1 = arg0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _requestReview, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _requestSuspendedUserAgeVerification, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var1 = function() { // Original name: checkSuspendedUserAgeVerification, environment: var3
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var1;
-    var0 = function() { // Original name: _checkSuspendedUserAgeVerification, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1093,7 +1093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/safety_hub/SafetyHubActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: getSafetyHubData, environment: var3
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -1104,7 +1104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSafetyHubData = var4;
-    var4 = function() { // Original name: getSafetyHubDataForClassification, environment: var3
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -1115,7 +1115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSafetyHubDataForClassification = var4;
-    var4 = function() { // Original name: requestReview, environment: var3
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -1126,7 +1126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.requestReview = var4;
-    var3 = function() { // Original name: requestSuspendedUserAgeVerification, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;

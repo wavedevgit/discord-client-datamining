@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/SegmentedControl/native/SegmentedControlState.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSegmentedControlState, environment: var1
+    var1 = function arg0() {
         _fun61980: for (var _fun61980_ip = 0;;) switch (_fun61980_ip) {
             case 0:
                 var1 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = false;
                         case 29:
                             var _closure3_slot1 = var4;
-                            var4 = function(arg0) { // Original name: updateIndex, environment: var1
+                            var4 = function arg0() {
                                 _fun61983: for (var _fun61983_ip = 0;;) switch (_fun61983_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var11.length;
                 _closure2_slot16 = var17;
                 var5 = var3.useCallback;
-                var2 = function(arg0, arg1) { // Original name: M, environment: var0
+                var2 = function arg0, arg1() {
                     var2 = _closure2_slot7;
                     var1 = var2.get;
                     var3 = var1.bind(var2)();

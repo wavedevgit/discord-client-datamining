@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun35873: for (var _fun35873_ip = 0;;) switch (_fun35873_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: makeTimeoutKey, environment: var3
+    var0 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: clearUser, environment: var3
+    var0 = function arg0, arg1() {
         _fun35877: for (var _fun35877_ip = 0;;) switch (_fun35877_ip) {
             case 0:
                 var6 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: VideoStreamStore, environment: var5
+        var3 = function() {
             _fun35879: for (var _fun35879_ip = 0;;) switch (_fun35879_ip) {
                 case 0:
                     var3 = this;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getStreamId';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var5
+        var0 = function arg0, arg1() {
             _fun35880: for (var _fun35880_ip = 0;;) switch (_fun35880_ip) {
                 case 0:
                     var5 = arg1;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserStreamData';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun35881: for (var _fun35881_ip = 0;;) switch (_fun35881_ip) {
                 case 0:
                     var5 = arg1;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTimedoutVideos';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTimedoutVideo';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             var1 = _closure1_slot10;
             var4 = _closure1_slot12;
             var3 = undefined;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var8 = function arg0() {
         var1 = arg0;
         var0 = var1.user;
         var1 = var1.sessionId;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleOverlayInitialize, environment: var3
+    var8 = function arg0() {
         var1 = arg0;
         var0 = var1.user;
         var1 = var1.sessionId;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.OVERLAY_INITIALIZE = var8;
-    var8 = function(arg0) { // Original name: handleVideo, environment: var3
+    var8 = function arg0() {
         _fun35886: for (var _fun35886_ip = 0;;) switch (_fun35886_ip) {
             case 0:
                 var0 = arg0;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.RTC_CONNECTION_VIDEO = var8;
-    var8 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.voiceStates;
         var2 = var3.reduce;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.VOICE_STATE_UPDATES = var8;
-    var8 = function(arg0) { // Original name: handleVideoStreamReadyTimeout, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var7 = var0.videoStreamId;
         var6 = var0.userId;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.VIDEO_STREAM_READY_TIMEOUT = var8;
-    var3 = function(arg0) { // Original name: handleClearVideoStreamTimeout, environment: var3
+    var3 = function arg0() {
         _fun35890: for (var _fun35890_ip = 0;;) switch (_fun35890_ip) {
             case 0:
                 var0 = arg0;

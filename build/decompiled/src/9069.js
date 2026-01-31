@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: NativeStackViewInner, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.state;
         var _closure2_slot0 = var5;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.descriptor = var8;
                     var1.previousDescriptor = var7;
                     var1.nextDescriptor = var6;
-                    var6 = function() { // Original name: onWillDisappear, environment: var5
+                    var6 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.emit;
                         var0 = {};
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onWillDisappear = var6;
-                    var6 = function() { // Original name: onWillAppear, environment: var5
+                    var6 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.emit;
                         var0 = {};
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onWillAppear = var6;
-                    var6 = function() { // Original name: onAppear, environment: var5
+                    var6 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.emit;
                         var0 = {};
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onAppear = var6;
-                    var6 = function() { // Original name: onDisappear, environment: var5
+                    var6 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.emit;
                         var0 = {};
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onDisappear = var6;
-                    var6 = function(arg0) { // Original name: onDismissed, environment: var5
+                    var6 = function arg0() {
                         var5 = _closure2_slot1;
                         var4 = var5.dispatch;
                         var0 = global;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onDismissed = var6;
-                    var6 = function() { // Original name: onHeaderBackButtonClicked, environment: var5
+                    var6 = function() {
                         var3 = _closure2_slot1;
                         var2 = var3.dispatch;
                         var0 = global;
@@ -240,7 +240,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onHeaderBackButtonClicked = var6;
-                    var6 = function(arg0) { // Original name: onNativeDismissCancelled, environment: var5
+                    var6 = function arg0() {
                         var3 = _closure2_slot1;
                         var2 = var3.dispatch;
                         var0 = global;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var1.onNativeDismissCancelled = var6;
-                    var5 = function() { // Original name: onGestureCancel, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.emit;
                         var0 = {};
@@ -329,7 +329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var4;
     var3 = var3.jsxs;
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: MaybeNestedStack, environment: var1
+    var3 = function arg0() {
         _fun72689: for (var _fun72689_ip = 0;;) switch (_fun72689_ip) {
             case 0:
                 var2 = arg0;
@@ -444,7 +444,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: SceneView, environment: var1
+    var3 = function arg0() {
         _fun72691: for (var _fun72691_ip = 0;;) switch (_fun72691_ip) {
             case 0:
                 var0 = arg0;
@@ -939,7 +939,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var34 = _closure1_slot7;
                 var33 = _closure1_slot6;
                 var32 = {};
-                var38 = function(arg0) { // Original name: onLayout, environment: var38
+                var38 = function arg0() {
                     var2 = _closure2_slot0;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -1066,7 +1066,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.background = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot11 = var3;
-    var1 = function(arg0) { // Original name: NativeStackView, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

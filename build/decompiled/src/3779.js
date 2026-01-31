@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_ViewDescriptorsSetTs2(descriptors){const{viewTag}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===viewTag;});if(index!==-1){descriptors.splice(index,1);}return descriptors;}';
     var2.code = var3;
     var _closure1_slot3 = var2;
-    var0 = function() { // Original name: makeViewDescriptorsSet, environment: var0
+    var0 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var _closure2_slot1 = var0;
         var0 = {};
         var0.shareableViewDescriptors = var2;
-        var2 = function(arg0) { // Original name: add, environment: var1
+        var2 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var5 = _closure2_slot1;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3.bind(var5)(var2);
             var3 = _closure2_slot0;
             var2 = var3.modify;
-            var1 = function(arg0) { // Original name: pnpm_ViewDescriptorsSetTs1, environment: var0
+            var1 = function arg0() {
                 _fun33933: for (var _fun33933_ip = 0;;) switch (_fun33933_ip) {
                     case 0:
                         var0 = arg0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.add = var2;
-        var2 = function(arg0) { // Original name: remove, environment: var1
+        var2 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure2_slot1;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var2.bind(var3)(var4);
             var3 = _closure2_slot0;
             var2 = var3.modify;
-            var1 = function(arg0) { // Original name: pnpm_ViewDescriptorsSetTs2, environment: var0
+            var1 = function arg0() {
                 _fun33936: for (var _fun33936_ip = 0;;) switch (_fun33936_ip) {
                     case 0:
                         var0 = arg0;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.remove = var2;
-        var1 = function(arg0) { // Original name: has, environment: var1
+        var1 = function arg0() {
             var2 = _closure2_slot1;
             var1 = var2.has;
             var0 = arg0;

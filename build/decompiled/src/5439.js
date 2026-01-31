@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var3.payload = var4;
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: extractFill, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun48361: for (var _fun48361_ip = 0;;) switch (_fun48361_ip) {
             case 0:
                 var1 = arg0;

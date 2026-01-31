@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/profile_customization/ProfileCustomizationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useAvatarsWithGuilds, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAvatarsWithGuilds = var3;
-    var3 = function(arg0, arg1) { // Original name: useGuildMemberAndUserPendingNameplate, environment: var1
+    var3 = function arg0, arg1() {
         _fun49084: for (var _fun49084_ip = 0;;) switch (_fun49084_ip) {
             case 0:
                 var1 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildMemberAndUserPendingNameplate = var3;
-    var3 = function(arg0, arg1) { // Original name: useGuildMemberOrUserPendingDisplayNameStyles, environment: var1
+    var3 = function arg0, arg1() {
         _fun49088: for (var _fun49088_ip = 0;;) switch (_fun49088_ip) {
             case 0:
                 var11 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildMemberOrUserPendingDisplayNameStyles = var3;
-    var3 = function(arg0) { // Original name: useUserAvatarDecoration, environment: var1
+    var3 = function arg0() {
         _fun49092: for (var _fun49092_ip = 0;;) switch (_fun49092_ip) {
             case 0:
                 var1 = arg0;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useUserAvatarDecoration = var3;
-    var3 = function(arg0) { // Original name: useUserProfileEffect, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.user;
         var _closure2_slot0 = var2;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useUserProfileEffect = var3;
-    var3 = function(arg0) { // Original name: useAvatarDecorationSettings, environment: var1
+    var3 = function arg0() {
         _fun49096: for (var _fun49096_ip = 0;;) switch (_fun49096_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useAvatarDecorationSettings = var3;
-    var3 = function(arg0) { // Original name: useProfileEffectSettings, environment: var1
+    var3 = function arg0() {
         _fun49099: for (var _fun49099_ip = 0;;) switch (_fun49099_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useProfileEffectSettings = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingUserBio, environment: var1
+    var3 = function arg0, arg1() {
         _fun49102: for (var _fun49102_ip = 0;;) switch (_fun49102_ip) {
             case 0:
                 var4 = arg0;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingUserBio = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingUserPronouns, environment: var1
+    var3 = function arg0, arg1() {
         _fun49103: for (var _fun49103_ip = 0;;) switch (_fun49103_ip) {
             case 0:
                 var4 = arg0;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingUserPronouns = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingAvatar, environment: var1
+    var3 = function arg0, arg1() {
         _fun49104: for (var _fun49104_ip = 0;;) switch (_fun49104_ip) {
             case 0:
                 var4 = arg0;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingAvatar = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingAvatarDecoration, environment: var1
+    var3 = function arg0, arg1() {
         _fun49105: for (var _fun49105_ip = 0;;) switch (_fun49105_ip) {
             case 0:
                 var5 = arg0;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingAvatarDecoration = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingProfileEffect, environment: var1
+    var3 = function arg0, arg1() {
         _fun49106: for (var _fun49106_ip = 0;;) switch (_fun49106_ip) {
             case 0:
                 var5 = arg0;
@@ -980,7 +980,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingProfileEffect = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingNameplate, environment: var1
+    var3 = function arg0, arg1() {
         _fun49107: for (var _fun49107_ip = 0;;) switch (_fun49107_ip) {
             case 0:
                 var5 = arg0;
@@ -1124,7 +1124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingNameplate = var3;
-    var3 = function(arg0) { // Original name: getProfilePreviewValue, environment: var1
+    var3 = function arg0() {
         _fun49108: for (var _fun49108_ip = 0;;) switch (_fun49108_ip) {
             case 0:
                 var1 = arg0;
@@ -1194,7 +1194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getProfilePreviewValue = var3;
-    var3 = function(arg0, arg1) { // Original name: showRemoveAvatar, environment: var1
+    var3 = function arg0, arg1() {
         _fun49109: for (var _fun49109_ip = 0;;) switch (_fun49109_ip) {
             case 0:
                 var1 = arg0;
@@ -1217,7 +1217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showRemoveAvatar = var3;
-    var1 = function(arg0, arg1) { // Original name: showRemoveBanner, environment: var1
+    var1 = function arg0, arg1() {
         _fun49110: for (var _fun49110_ip = 0;;) switch (_fun49110_ip) {
             case 0:
                 var1 = arg0;

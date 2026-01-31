@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var4;
-    var6 = function(arg0) { // Original name: valuePromise, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var6;
-    var0 = function(arg0) { // Original name: onSettledFulfill, environment: var1
+    var0 = function arg0() {
         var0 = {};
         var1 = 'fulfilled';
         var0.status = var1;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: onSettledReject, environment: var1
+    var0 = function arg0() {
         var0 = {};
         var1 = 'rejected';
         var0.status = var1;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: mapAllSettled, environment: var1
+    var0 = function arg0() {
         _fun2536: for (var _fun2536_ip = 0;;) switch (_fun2536_ip) {
             case 0:
                 var3 = arg0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getAggregateError, environment: var1
+    var0 = function arg0() {
         _fun2537: for (var _fun2537_ip = 0;;) switch (_fun2537_ip) {
             case 0:
                 var3 = arg0;
@@ -359,7 +359,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var6.resolve = var5;
-    var5 = function(arg0) { // Original name: iterableToArray, environment: var1
+    var5 = function arg0() {
         _fun2540: for (var _fun2540_ip = 0;;) switch (_fun2540_ip) {
             case 0:
                 var3 = arg0;
@@ -373,7 +373,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun2540
                 }
             case 27:
-                var0 = function(arg0) { // Original name: iterableToArray, environment: var0
+                var0 = function arg0() {
                     var0 = global;
                     var0 = var0.Array;
                     var0 = var0.prototype;
@@ -429,7 +429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot0 = var2;
                     var0 = arg1;
                     var _closure3_slot1 = var0;
-                    var5 = function(arg0, arg1) { // Original name: res, environment: var6
+                    var5 = function arg0, arg1() {
                         _fun2544: for (var _fun2544_ip = 0;;) switch (_fun2544_ip) {
                             case 0:
                                 var4 = arg0;
@@ -752,7 +752,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.catch = var5;
     var2 = var4[var2];
     var2 = var3.bind(var0)(var2);
-    var1 = function(arg0) { // Original name: promiseAny, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -774,7 +774,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var _closure3_slot1 = var2;
-                    var0 = function(arg0) { // Original name: resolveOnce, environment: var4
+                    var0 = function arg0() {
                         _fun2556: for (var _fun2556_ip = 0;;) switch (_fun2556_ip) {
                             case 0:
                                 var1 = _closure3_slot3;
@@ -795,7 +795,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var _closure3_slot5 = var0;
-                    var0 = function(arg0) { // Original name: rejectionCheck, environment: var4
+                    var0 = function arg0() {
                         _fun2557: for (var _fun2557_ip = 0;;) switch (_fun2557_ip) {
                             case 0:
                                 var3 = _closure3_slot4;

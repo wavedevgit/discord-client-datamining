@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/premium/game_server/utils/productToGameServerGame.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: productToGameServerGame, environment: var1
+    var1 = function arg0() {
         _fun102230: for (var _fun102230_ip = 0;;) switch (_fun102230_ip) {
             case 0:
                 var1 = arg0;

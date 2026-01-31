@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: createSquare, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var0 = {};
         var0.bottom = var1;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.createSquare = var2;
-    var0 = function(arg0) { // Original name: normalizeRect, environment: var0
+    var0 = function arg0() {
         _fun4462: for (var _fun4462_ip = 0;;) switch (_fun4462_ip) {
             case 0:
                 var3 = arg0;

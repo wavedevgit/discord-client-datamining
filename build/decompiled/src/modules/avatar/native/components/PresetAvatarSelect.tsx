@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: DefaultAvatarButton, environment: var4
+    var0 = function arg0() {
         _fun113854: for (var _fun113854_ip = 0;;) switch (_fun113854_ip) {
             case 0:
                 var0 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7[var1];
     var1 = var12.bind(var0)(var1);
     var5.avatar = var1;
-    var1 = function() { // Original name: label, environment: var4
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var7[var15];
     var15 = var12.bind(var0)(var15);
     var5.avatar = var15;
-    var15 = function() { // Original name: label, environment: var4
+    var15 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var7[var14];
     var14 = var12.bind(var0)(var14);
     var5.avatar = var14;
-    var14 = function() { // Original name: label, environment: var4
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var7[var13];
     var13 = var12.bind(var0)(var13);
     var5.avatar = var13;
-    var13 = function() { // Original name: label, environment: var4
+    var13 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var7[var11];
     var11 = var12.bind(var0)(var11);
     var5.avatar = var11;
-    var11 = function() { // Original name: label, environment: var4
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var7[var10];
     var10 = var12.bind(var0)(var10);
     var5.avatar = var10;
-    var10 = function() { // Original name: label, environment: var4
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var7[var9];
     var9 = var12.bind(var0)(var9);
     var5.avatar = var9;
-    var9 = function() { // Original name: label, environment: var4
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7[var8];
     var8 = var12.bind(var0)(var8);
     var5.avatar = var8;
-    var8 = function() { // Original name: label, environment: var4
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/avatar/native/components/PresetAvatarSelect.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: PresetAvatarSelect, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.onAvatarSelect;
         var _closure2_slot0 = var1;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot8;
             var1 = {};
             var1.source = var6;
-            var5 = function() { // Original name: onSelect, environment: var5
+            var5 = function() {
                 var2 = _closure2_slot0;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot8;
             var1 = {};
             var1.source = var6;
-            var5 = function() { // Original name: onSelect, environment: var5
+            var5 = function() {
                 var2 = _closure2_slot0;
                 var1 = _closure3_slot0;
                 var0 = undefined;

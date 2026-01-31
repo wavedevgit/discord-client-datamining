@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.Image;
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: parsePossibleSources, environment: var1
+    var1 = function arg0() {
         _fun54526: for (var _fun54526_ip = 0;;) switch (_fun54526_ip) {
             case 0:
                 var2 = arg0;

@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var4](var9, var8);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot1 = var2;
-    var0 = function() { // Original name: rng, environment: var0
+    var0 = function() {
         _fun6411: for (var _fun6411_ip = 0;;) switch (_fun6411_ip) {
             case 0:
                 var1 = _closure1_slot0;

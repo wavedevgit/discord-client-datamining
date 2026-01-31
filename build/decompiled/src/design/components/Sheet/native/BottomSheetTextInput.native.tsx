@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Sheet/native/BottomSheetTextInput.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BottomSheetTextInput, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var6 = var2.onFocus;
         var5 = var2.onBlur;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var3)(var0);
         var1 = var0.TextInput;
         var0 = {};
-        var7 = function(arg0) { // Original name: ref, environment: var7
+        var7 = function arg0() {
             _fun48022: for (var _fun48022_ip = 0;;) switch (_fun48022_ip) {
                 case 0:
                     var2 = arg0;

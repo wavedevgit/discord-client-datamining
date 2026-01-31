@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var4;
     var3 = var3.useRef;
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1) { // Original name: useHandler, environment: var1
+    var1 = function arg0, arg1() {
         _fun34686: for (var _fun34686_ip = 0;;) switch (_fun34686_ip) {
             case 0:
                 var11 = arg0;

@@ -1,11 +1,11 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = function() { // Original name: noop, environment: var0
+    var2 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot2 = var2;
-    var1 = function(arg0) { // Original name: Promise, environment: var0
+    var1 = function arg0() {
         _fun2518: for (var _fun2518_ip = 0;;) switch (_fun2518_ip) {
             case 0:
                 var3 = arg0;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var1;
-    var3 = function(arg0, arg1) { // Original name: handle, environment: var0
+    var3 = function arg0, arg1() {
         _fun2519: for (var _fun2519_ip = 0;;) switch (_fun2519_ip) {
             case 0:
                 var2 = arg0;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun2519
                 }
             case 90:
-                var4 = function(arg0, arg1) { // Original name: handleResolved, environment: var0
+                var4 = function arg0, arg1() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var0 = arg1;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1) { // Original name: resolve, environment: var0
+    var3 = function arg0, arg1() {
         _fun2522: for (var _fun2522_ip = 0;;) switch (_fun2522_ip) {
             case 0:
                 var3 = arg0;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var3 = function(arg0, arg1) { // Original name: reject, environment: var0
+    var3 = function arg0, arg1() {
         _fun2523: for (var _fun2523_ip = 0;;) switch (_fun2523_ip) {
             case 0:
                 var2 = arg0;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: finale, environment: var0
+    var3 = function arg0() {
         _fun2524: for (var _fun2524_ip = 0;;) switch (_fun2524_ip) {
             case 0:
                 var1 = arg0;
@@ -459,7 +459,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: Handler, environment: var0
+    var3 = function arg0, arg1, arg2() {
         _fun2525: for (var _fun2525_ip = 0;;) switch (_fun2525_ip) {
             case 0:
                 var5 = arg0;
@@ -493,7 +493,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0, arg1) { // Original name: doResolve, environment: var0
+    var3 = function arg0, arg1() {
         _fun2526: for (var _fun2526_ip = 0;;) switch (_fun2526_ip) {
             case 0:
                 var3 = arg1;
@@ -636,7 +636,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var6.bind(var1)(var2, var5);
                 return var0;
             case 100:
-                var1 = function(arg0, arg1, arg2) { // Original name: safeThen, environment: var0
+                var1 = function arg0, arg1, arg2() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var2 = arg1;

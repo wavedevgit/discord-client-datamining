@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/action_sheet/native/components/showLongPressForumPostActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: showLongPressForumPostActionSheet, environment: var1
+    var1 = function arg0, arg1() {
         _fun76507: for (var _fun76507_ip = 0;;) switch (_fun76507_ip) {
             case 0:
                 var1 = arguments[2];

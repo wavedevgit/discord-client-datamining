@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: DemoActionSheet, environment: var1
+    var0 = function() {
         _fun87925: for (var _fun87925_ip = 0;;) switch (_fun87925_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.value = var23;
                 var20.onChange = var12;
                 var12 = true;
-                var23 = function() { // Original name: onClear, environment: var11
+                var23 = function() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = '';
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = !var13;
                 var8.isDisabled = var13;
                 var8.isClearable = var12;
-                var11 = function() { // Original name: onClear, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = '';
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: DemoPromoSheet, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var10 = _closure1_slot0;
         var11 = _closure1_slot2;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'lg';
         var4.size = var7;
-        var7 = function() { // Original name: onPress, environment: var7
+        var7 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 13;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.container = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function() { // Original name: showDemoPromoSheet, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 13;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemSheets.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemSheets, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var21 = var16.bind(var3)(var21);
         var22 = var21.Button;
         var21 = {};
-        var24 = function() { // Original name: onPress, environment: var24
+        var24 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 13;

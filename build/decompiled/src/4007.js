@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4 = var4.bind(var6)(var7, var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: blur, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.blur = var6;
-    var6 = function(arg0) { // Original name: focus, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.focus = var6;
-    var6 = function(arg0) { // Original name: clearText, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.clearText = var6;
-    var6 = function(arg0, arg1) { // Original name: toggleCancelButton, environment: var5
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -184,7 +184,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.toggleCancelButton = var6;
-    var6 = function(arg0, arg1) { // Original name: setText, environment: var5
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setText = var6;
-    var5 = function(arg0) { // Original name: cancelSearch, environment: var5
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;

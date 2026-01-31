@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = function(arg0) { // Original name: PseudoMap, environment: var0
+    var3 = function arg0() {
         _fun16245: for (var _fun16245_ip = 0;;) switch (_fun16245_ip) {
             case 0:
                 var3 = arg0;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var3;
-    var1 = function(arg0, arg1) { // Original name: same, environment: var0
+    var1 = function arg0, arg1() {
         _fun16248: for (var _fun16248_ip = 0;;) switch (_fun16248_ip) {
             case 0:
                 var1 = arg0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: Entry, environment: var0
+    var1 = function arg0, arg1, arg2() {
         var1 = this;
         var0 = arg0;
         var1.key = var0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1) { // Original name: find, environment: var0
+    var1 = function arg0, arg1() {
         _fun16250: for (var _fun16250_ip = 0;;) switch (_fun16250_ip) {
             case 0:
                 var1 = arg0;
@@ -420,14 +420,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var6.defineProperty;
     var4 = var3.prototype;
     var2 = {};
-    var1 = function() { // Original name: get, environment: var0
+    var1 = function() {
         var0 = this;
         var0 = var0._data;
         var0 = var0.size;
         return var0;
     };
     var2.get = var1;
-    var1 = function(arg0) { // Original name: set, environment: var0
+    var1 = function arg0() {
         var0 = undefined;
         return var0;
     };

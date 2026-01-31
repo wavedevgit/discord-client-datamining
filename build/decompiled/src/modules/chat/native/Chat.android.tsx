@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: DCDChatList, environment: var1
+    var0 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0

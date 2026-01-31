@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot3 = var3;
-    var3 = function(arg0, arg1) { // Original name: getRootStateForNavigate, environment: var1
+    var3 = function arg0, arg1() {
         _fun17547: for (var _fun17547_ip = 0;;) switch (_fun17547_ip) {
             case 0:
                 var2 = arg0;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var1 = function() { // Original name: useLinkBuilder, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var4 = var3.useContext;
         var5 = _closure1_slot0;

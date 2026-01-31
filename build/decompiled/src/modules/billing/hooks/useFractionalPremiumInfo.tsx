@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: shouldFetchEntitlements, environment: var1
+    var0 = function arg0, arg1() {
         _fun42519: for (var _fun42519_ip = 0;;) switch (_fun42519_ip) {
             case 0:
                 var2 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.FractionalPremiumStates;
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: calculateFractionalPremiumInfo, environment: var1
+    var3 = function arg0() {
         _fun42520: for (var _fun42520_ip = 0;;) switch (_fun42520_ip) {
             case 0:
                 var1 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/billing/hooks/useFractionalPremiumInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useFractionalPremiumInfo, environment: var1
+    var1 = function() {
         _fun42524: for (var _fun42524_ip = 0;;) switch (_fun42524_ip) {
             case 0:
                 var0 = arguments[0];

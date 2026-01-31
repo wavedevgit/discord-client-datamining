@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AppLauncherActionSheet, environment: var1
+    var0 = function arg0() {
         _fun108297: for (var _fun108297_ip = 0;;) switch (_fun108297_ip) {
             case 0:
                 var0 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot4;
                 var1 = var2.useRef;
                 var0 = {};
-                var6 = function() { // Original name: getApplicationCommandManager, environment: var5
+                var6 = function() {
                     _fun108299: for (var _fun108299_ip = 0;;) switch (_fun108299_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.getApplicationCommandManager = var6;
-                var6 = function() { // Original name: closeCustomKeyboard, environment: var5
+                var6 = function() {
                     _fun108300: for (var _fun108300_ip = 0;;) switch (_fun108300_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.closeCustomKeyboard = var6;
-                var5 = function() { // Original name: openCustomKeyboard, environment: var5
+                var5 = function() {
                     _fun108301: for (var _fun108301_ip = 0;;) switch (_fun108301_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/AppLauncherActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useAppLauncherActionSheet, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var4 = _closure1_slot4;
@@ -262,12 +262,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = {};
                     var9 = 'visible';
                     var6.transitionState = var9;
-                    var9 = function() { // Original name: close, environment: var7
+                    var9 = function() {
                         var0 = undefined;
                         return var0;
                     };
                     var6.close = var9;
-                    var9 = function() { // Original name: onLeave, environment: var7
+                    var9 = function() {
                         var2 = _closure2_slot2;
                         var0 = undefined;
                         var1 = false;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.onLeave = var9;
-                    var7 = function() { // Original name: registerDismissHandler, environment: var7
+                    var7 = function() {
                         var0 = undefined;
                         return var0;
                     };

@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubEmailConnectionSubmitSchool.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubEmailConnectionSubmitSchool, environment: var1
+    var1 = function arg0() {
         _fun80387: for (var _fun80387_ip = 0;;) switch (_fun80387_ip) {
             case 0:
                 var0 = arg0;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var19.bind(var20)();
             case 744:
                 var10.error = var17;
-                var17 = function() { // Original name: onFocus, environment: var16
+                var17 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var10.onFocus = var17;
-                var16 = function() { // Original name: onBlur, environment: var16
+                var16 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;

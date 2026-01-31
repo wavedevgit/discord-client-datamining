@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var5 = function(arg0) { // Original name: isScreenIndexFrozen, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot3;
         var1 = var2.has;
         var0 = arg0;
@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0) { // Original name: addFrozenScreenIndexesChangedListener, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot4;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: removeFrozenScreenIndexesChangedListener, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.delete;
         var0 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/channel/native/ScreenIndexFrozen.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0, arg1) { // Original name: freezeScreenIndex, environment: var1
+    var6 = function arg0, arg1() {
         _fun32976: for (var _fun32976_ip = 0;;) switch (_fun32976_ip) {
             case 0:
                 var3 = arg1;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isScreenIndexFrozen = var5;
     var2.addFrozenScreenIndexesChangedListener = var4;
     var2.removeFrozenScreenIndexesChangedListener = var3;
-    var1 = function(arg0) { // Original name: useIsScreenIndexFrozenSharedValue, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot0;

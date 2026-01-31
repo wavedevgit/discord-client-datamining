@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot1 = var3;
-    var3 = function(arg0, arg1) { // Original name: updateContentStyle, environment: var1
+    var3 = function arg0, arg1() {
         _fun45618: for (var _fun45618_ip = 0;;) switch (_fun45618_ip) {
             case 0:
                 var0 = arg0;
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var3;
     var2.updateContentStyle = var3;
-    var3 = function(arg0) { // Original name: hasUnsupportedKeysInContentContainerStyle, environment: var1
+    var3 = function arg0() {
         _fun45619: for (var _fun45619_ip = 0;;) switch (_fun45619_ip) {
             case 0:
                 var3 = arg0;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.hasUnsupportedKeysInContentContainerStyle = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: applyContentContainerInsetForLayoutManager, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun45620: for (var _fun45620_ip = 0;;) switch (_fun45620_ip) {
             case 0:
                 var0 = arg0;
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.applyContentContainerInsetForLayoutManager = var3;
-    var1 = function(arg0, arg1) { // Original name: getContentContainerPadding, environment: var1
+    var1 = function arg0, arg1() {
         _fun45621: for (var _fun45621_ip = 0;;) switch (_fun45621_ip) {
             case 0:
                 var2 = arg0;

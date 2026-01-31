@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var7;
-    var0 = function(arg0) { // Original name: getRoleColor, environment: var4
+    var0 = function arg0() {
         _fun108191: for (var _fun108191_ip = 0;;) switch (_fun108191_ip) {
             case 0:
                 var1 = arg0;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var3 = function(arg0) { // Original name: RoleIcon, environment: var4
+    var3 = function arg0() {
         _fun108192: for (var _fun108192_ip = 0;;) switch (_fun108192_ip) {
             case 0:
                 var0 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var5;
     var1 = var1.jsxs;
     var _closure1_slot11 = var1;
-    var1 = function(arg0) { // Original name: RoleRow, environment: var4
+    var1 = function arg0() {
         _fun108193: for (var _fun108193_ip = 0;;) switch (_fun108193_ip) {
             case 0:
                 var4 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/app_launcher/native/options/role/AppLauncherRoleListActionSheet.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: AppLauncherRoleListActionSheet, environment: var4
+    var4 = function arg0() {
         _fun108196: for (var _fun108196_ip = 0;;) switch (_fun108196_ip) {
             case 0:
                 var1 = arg0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var2.bind(var5)(var0, var1);
                 var _closure2_slot7 = var11;
                 var5 = var11.length;
-                var0 = function(arg0) { // Original name: handleRolePress, environment: var10
+                var0 = function arg0() {
                     var0 = arg0;
                     var0 = var0.role;
                     var3 = _closure2_slot0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var3)(var4);
                 var8 = var4.AppLauncherListSearchBar;
                 var4 = {};
-                var14 = function(arg0) { // Original name: onChange, environment: var10
+                var14 = function arg0() {
                     _fun108201: for (var _fun108201_ip = 0;;) switch (_fun108201_ip) {
                         case 0:
                             var2 = arg0;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.ref = var12;
                 var5.data = var11;
-                var10 = function(arg0) { // Original name: renderItem, environment: var10
+                var10 = function arg0() {
                     var0 = arg0;
                     var6 = var0.item;
                     var _closure3_slot0 = var6;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot2;
                     var1.guildId = var7;
                     var1.guildRole = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot8;
                         var1 = {};
                         var0 = _closure3_slot0;

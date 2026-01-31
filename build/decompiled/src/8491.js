@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: dismiss, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -184,13 +184,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var5.setFocusTo;
     var1.setFocusTo = var5;
     var1.dismiss = var4;
-    var4 = function() { // Original name: isVisible, environment: var3
+    var4 = function() {
         var0 = _closure1_slot3;
         var0 = !var0;
         return var0;
     };
     var1.isVisible = var4;
-    var3 = function() { // Original name: state, environment: var3
+    var3 = function() {
         var0 = _closure1_slot4;
         return var0;
     };

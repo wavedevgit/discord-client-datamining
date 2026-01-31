@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var5 = dependencyMap;
-    var3 = function(arg0) { // Original name: isPurchasableRoleSubscriptionEmoji, environment: var1
+    var3 = function arg0() {
         _fun43799: for (var _fun43799_ip = 0;;) switch (_fun43799_ip) {
             case 0:
                 var1 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: isRoleSubscriptionEmoji, environment: var1
+    var4 = function arg0, arg1() {
         _fun43801: for (var _fun43801_ip = 0;;) switch (_fun43801_ip) {
             case 0:
                 var1 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isRoleSubscriptionEmoji = var4;
     var2.isPurchasableRoleSubscriptionEmoji = var3;
-    var1 = function(arg0, arg1) { // Original name: isUnusableRoleSubscriptionEmoji, environment: var1
+    var1 = function arg0, arg1() {
         _fun43803: for (var _fun43803_ip = 0;;) switch (_fun43803_ip) {
             case 0:
                 var2 = arg0;

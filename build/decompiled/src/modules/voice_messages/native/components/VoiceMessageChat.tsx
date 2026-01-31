@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var14;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: WaveformBar, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var7 = var0.value;
                 var _closure2_slot0 = var7;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6[var0];
                 var9 = var8.bind(var3)(var5);
                 var8 = var9.useAnimatedStyle;
-                var5 = function() { // Original name: o, environment: var2
+                var5 = function() {
                     var0 = {};
                     var3 = _closure2_slot1;
                     var2 = var3.get;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot25 = var0;
-            var0 = function() { // Original name: Waveform, environment: var1
+            var0 = function() {
                 var1 = _closure1_slot17;
                 var3 = undefined;
                 var7 = var1.bind(var3)();
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot26 = var0;
-            var0 = function(arg0) { // Original name: Duration, environment: var1
+            var0 = function arg0() {
                 _fun91043: for (var _fun91043_ip = 0;;) switch (_fun91043_ip) {
                     case 0:
                         var1 = arg0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = var2;
                                 case 117:
                                     var _closure3_slot1 = var1;
-                                    var2 = function() { // Original name: flash, environment: var0
+                                    var2 = function() {
                                         var2 = _closure2_slot7;
                                         var0 = undefined;
                                         var1 = function(arg0) { // Environment: var1
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var7[var4];
                         var5 = var1.bind(var3)(var2);
                         var2 = var5.useAnimatedStyle;
-                        var0 = function() { // Original name: U, environment: var0
+                        var0 = function() {
                             var0 = {};
                             var2 = _closure2_slot0;
                             var1 = var2.get;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var6[var0];
                         var13 = var8.bind(var3)(var2);
                         var11 = var13.useAnimatedReaction;
-                        var7 = function() { // Original name: _, environment: var1
+                        var7 = function() {
                             _fun91060: for (var _fun91060_ip = 0;;) switch (_fun91060_ip) {
                                 case 0:
                                     var2 = _closure2_slot1;
@@ -964,7 +964,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7.__workletHash = var2;
                         var2 = _closure1_slot21;
                         var7.__initData = var2;
-                        var2 = function(arg0, arg1) { // Original name: c, environment: var1
+                        var2 = function arg0, arg1() {
                             _fun91061: for (var _fun91061_ip = 0;;) switch (_fun91061_ip) {
                                 case 0:
                                     var2 = arg0;
@@ -1033,7 +1033,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var6[var0];
                         var11 = var8.bind(var3)(var2);
                         var7 = var11.useAnimatedStyle;
-                        var2 = function() { // Original name: f, environment: var1
+                        var2 = function() {
                             var0 = {};
                             var3 = _closure2_slot1;
                             var2 = var3.get;
@@ -1063,7 +1063,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var6[var0];
                         var8 = var8.bind(var3)(var2);
                         var2 = var8.useAnimatedStyle;
-                        var1 = function() { // Original name: v, environment: var1
+                        var1 = function() {
                             var0 = {};
                             var2 = _closure2_slot3;
                             var1 = var2.get;

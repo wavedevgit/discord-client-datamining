@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RPC_EMBEDDED_APP_SCOPE = var7;
     var2.RPCDeepLinks = var6;
     var2.DynamicLinkType = var5;
-    var4 = function(arg0) { // Original name: getDynamicLinkType, environment: var4
+    var4 = function arg0() {
         _fun28816: for (var _fun28816_ip = 0;;) switch (_fun28816_ip) {
             case 0:
                 var1 = arg0;

@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
     var5 = dependencyMap;
-    var2 = function(arg0) { // Original name: ListCache, environment: var0
+    var2 = function arg0() {
         _fun8296: for (var _fun8296_ip = 0;;) switch (_fun8296_ip) {
             case 0:
                 var5 = arg0;

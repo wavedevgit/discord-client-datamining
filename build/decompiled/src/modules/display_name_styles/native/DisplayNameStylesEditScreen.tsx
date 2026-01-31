@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ApplyButton, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var10 = var1.onPress;
         var _closure2_slot0 = var10;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var14[var4];
         var6 = var13.bind(var3)(var1);
         var2 = var6.useAnimatedProps;
-        var1 = function() { // Original name: o, environment: var0
+        var1 = function() {
             _fun84832: for (var _fun84832_ip = 0;;) switch (_fun84832_ip) {
                 case 0:
                     var0 = {};
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var14[var4];
         var6 = var13.bind(var3)(var1);
         var2 = var6.useAnimatedStyle;
-        var1 = function() { // Original name: s, environment: var0
+        var1 = function() {
             _fun84833: for (var _fun84833_ip = 0;;) switch (_fun84833_ip) {
                 case 0:
                     var2 = _closure2_slot1;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/DisplayNameStylesEditScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DisplayNameStylesEditScreen, environment: var1
+    var1 = function() {
         _fun84835: for (var _fun84835_ip = 0;;) switch (_fun84835_ip) {
             case 0:
                 var0 = _closure1_slot14;
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.defaultColor = var9;
                 var3.guildId = var21;
                 var3.isTryItOut = var2;
-                var9 = function() { // Original name: onClose, environment: var45
+                var9 = function() {
                     var1 = _closure2_slot0;
                     var0 = var1.goBack;
                     var0 = var0.bind(var1)();

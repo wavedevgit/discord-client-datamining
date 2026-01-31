@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: useGetTrialOffer, environment: var1
+    var0 = function arg0, arg1() {
         _fun55255: for (var _fun55255_ip = 0;;) switch (_fun55255_ip) {
             case 0:
                 var5 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/hooks/usePremiumTrialOffer.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: usePremiumTrialOffer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var1 = 4;

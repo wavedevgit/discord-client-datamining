@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = new Array(0);
         var0.logs = var2;
-        var2 = function(arg0) { // Original name: addLog, environment: var1
+        var2 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var2 = _closure2_slot0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.addLog = var2;
-        var1 = function() { // Original name: clearLogs, environment: var1
+        var1 = function() {
             var2 = _closure2_slot0;
             var1 = {};
             var0 = new Array(0);

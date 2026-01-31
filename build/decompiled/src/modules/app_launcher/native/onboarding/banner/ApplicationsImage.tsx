@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/onboarding/banner/ApplicationsImage.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ApplicationsImage, environment: var3
+    var3 = function arg0() {
         _fun107247: for (var _fun107247_ip = 0;;) switch (_fun107247_ip) {
             case 0:
                 var0 = arg0;

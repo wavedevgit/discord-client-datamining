@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.featureDescription = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: FeatureCard, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.icon;
         var13 = var0.header;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsModalCommunityIntro, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.guildId;
         var _closure2_slot0 = var0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var18.Colors;
         var18 = var18.BRAND;
         var14.color = var18;
-        var18 = function() { // Original name: onPress, environment: var12
+        var18 = function() {
             _fun116242: for (var _fun116242_ip = 0;;) switch (_fun116242_ip) {
                 case 0:
                     var1 = _closure2_slot4;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.features;
         var10.style = var13;
         var13 = {};
-        var14 = function() { // Original name: icon, environment: var12
+        var14 = function() {
             var3 = _closure1_slot13;
             var1 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var14.t;
         var16 = var14.A6G7ak;
         var14 = {};
-        var19 = function(arg0) { // Original name: featureHook, environment: var12
+        var19 = function arg0() {
             var3 = _closure1_slot13;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = new Array(3);
         var14[0] = var13;
         var13 = {};
-        var16 = function() { // Original name: icon, environment: var12
+        var16 = function() {
             var3 = _closure1_slot13;
             var1 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -609,12 +609,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16 = var16.t;
         var17 = var16.XsCNky;
         var16 = {};
-        var20 = function() { // Original name: infoHook, environment: var12
+        var20 = function() {
             var0 = null;
             return var0;
         };
         var16.infoHook = var20;
-        var20 = function(arg0) { // Original name: featureHook, environment: var12
+        var20 = function arg0() {
             var3 = _closure1_slot13;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13.body = var16;
         var14[1] = var13;
         var13 = {};
-        var16 = function() { // Original name: icon, environment: var12
+        var16 = function() {
             var3 = _closure1_slot13;
             var1 = _closure1_slot0;
             var6 = _closure1_slot2;

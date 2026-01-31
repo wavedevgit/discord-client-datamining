@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/native/renderer/EmbedUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getAssetUriForEmbed, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.resolveAssetSource;
         var0 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAssetUriForEmbed = var4;
     var2.SUPPORTED_VIDEO_PARTNERS = var3;
-    var1 = function(arg0) { // Original name: shouldPlayVideoInline, environment: var1
+    var1 = function arg0() {
         _fun55208: for (var _fun55208_ip = 0;;) switch (_fun55208_ip) {
             case 0:
                 var3 = arg0;

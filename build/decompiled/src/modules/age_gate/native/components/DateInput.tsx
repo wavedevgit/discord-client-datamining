@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: subtractYearsFromToday, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: initialDate, environment: var1
+    var0 = function() {
         var2 = _closure1_slot6;
         var1 = undefined;
         var0 = 10;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.error;
                 var3 = undefined;
                 var _closure2_slot3 = var3;
-                var1 = function(arg0) { // Original name: updateDate, environment: var0
+                var1 = function arg0() {
                     _fun112581: for (var _fun112581_ip = 0;;) switch (_fun112581_ip) {
                         case 0:
                             var3 = _closure2_slot1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot4 = var1;
-                var6 = function() { // Original name: openDatePicker, environment: var0
+                var6 = function() {
                     _fun112582: for (var _fun112582_ip = 0;;) switch (_fun112582_ip) {
                         case 0:
                             var2 = _closure1_slot4;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg1;
                 var0 = function() { // Environment: var0
                     var0 = {};
-                    var1 = function() { // Original name: focus, environment: var1
+                    var1 = function() {
                         var1 = _closure2_slot5;
                         var0 = undefined;
                         var1 = var1.bind(var0)();

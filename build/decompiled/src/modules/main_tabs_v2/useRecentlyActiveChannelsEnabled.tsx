@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/useRecentlyActiveChannelsEnabled.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isRecentlyActiveChannelsEnabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot2;
         var1 = var2.get;
         var0 = 'enable_recently_active';
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isRecentlyActiveChannelsEnabled = var3;
-    var1 = function() { // Original name: useRecentlyActiveChannelsEnabled, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

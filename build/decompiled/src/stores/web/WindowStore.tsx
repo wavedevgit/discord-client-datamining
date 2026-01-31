@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun93382: for (var _fun93382_ip = 0;;) switch (_fun93382_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: getWindowIdState, environment: var3
+    var0 = function arg0() {
         _fun93385: for (var _fun93385_ip = 0;;) switch (_fun93385_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: WindowStore, environment: var5
+        var3 = function() {
             _fun93387: for (var _fun93387_ip = 0;;) switch (_fun93387_ip) {
                 case 0:
                     var3 = this;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isFocused';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun93388: for (var _fun93388_ip = 0;;) switch (_fun93388_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isAppFocused';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.getFocusedWindowId;
             var1 = var0.bind(var1)();
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVisible';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun93390: for (var _fun93390_ip = 0;;) switch (_fun93390_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFocusedWindowId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = null;
             var _closure3_slot0 = var1;
             var3 = _closure1_slot9;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastFocusedWindowId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isElementFullScreen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun93394: for (var _fun93394_ip = 0;;) switch (_fun93394_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'windowSize';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun93395: for (var _fun93395_ip = 0;;) switch (_fun93395_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: handleWindowInit, environment: var3
+    var6 = function arg0() {
         _fun93396: for (var _fun93396_ip = 0;;) switch (_fun93396_ip) {
             case 0:
                 var0 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WINDOW_INIT = var6;
-    var6 = function(arg0) { // Original name: handleWindowFullscreenChange, environment: var3
+    var6 = function arg0() {
         _fun93397: for (var _fun93397_ip = 0;;) switch (_fun93397_ip) {
             case 0:
                 var5 = arg0;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WINDOW_FULLSCREEN_CHANGE = var6;
-    var6 = function(arg0) { // Original name: handleWindowFocus, environment: var3
+    var6 = function arg0() {
         _fun93398: for (var _fun93398_ip = 0;;) switch (_fun93398_ip) {
             case 0:
                 var5 = arg0;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WINDOW_FOCUS = var6;
-    var6 = function(arg0) { // Original name: handleWindowResize, environment: var3
+    var6 = function arg0() {
         _fun93399: for (var _fun93399_ip = 0;;) switch (_fun93399_ip) {
             case 0:
                 var5 = arg0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WINDOW_RESIZED = var6;
-    var6 = function(arg0) { // Original name: handleWindowUnload, environment: var3
+    var6 = function arg0() {
         _fun93400: for (var _fun93400_ip = 0;;) switch (_fun93400_ip) {
             case 0:
                 var0 = arg0;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WINDOW_UNLOAD = var6;
-    var6 = function(arg0) { // Original name: handleWindowVisibilityChange, environment: var3
+    var6 = function arg0() {
         _fun93401: for (var _fun93401_ip = 0;;) switch (_fun93401_ip) {
             case 0:
                 var5 = arg0;

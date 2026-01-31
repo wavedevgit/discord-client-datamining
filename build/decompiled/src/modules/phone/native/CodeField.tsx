@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: SingleCodeInput, environment: var1
+    var0 = function arg0() {
         _fun61034: for (var _fun61034_ip = 0;;) switch (_fun61034_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'number-pad';
             case 274:
                 var4.keyboardType = var7;
-                var7 = function(arg0) { // Original name: onChange, environment: var14
+                var7 = function arg0() {
                     _fun61035: for (var _fun61035_ip = 0;;) switch (_fun61035_ip) {
                         case 0:
                             var4 = arg0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15["13ofGu"];
                 var15 = var16.bind(var17)(var15);
                 var8.text = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot2;
                     var0 = undefined;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: CodeFieldInner, environment: var1
+    var0 = function arg0() {
         _fun61037: for (var _fun61037_ip = 0;;) switch (_fun61037_ip) {
             case 0:
                 var0 = arg0;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/phone/native/CodeField.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: CodeField, environment: var1
+    var4 = function arg0() {
         _fun61038: for (var _fun61038_ip = 0;;) switch (_fun61038_ip) {
             case 0:
                 var5 = arg0;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.CodeType = var3;
-    var1 = function(arg0) { // Original name: CodeBlocks, environment: var1
+    var1 = function arg0() {
         _fun61039: for (var _fun61039_ip = 0;;) switch (_fun61039_ip) {
             case 0:
                 var0 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     _fun61041: for (var _fun61041_ip = 0;;) switch (_fun61041_ip) {
                         case 0:
                             var3 = _closure2_slot5;
-                            var2 = function(arg0) { // Original name: isCodeEntered, environment: var0
+                            var2 = function arg0() {
                                 var2 = arg0;
                                 var1 = var2.every;
                                 var0 = function(arg0) { // Environment: var0
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var9)(var4, var7);
                 var4 = new Array(0);
                 _closure2_slot9 = var4;
-                var1 = function(arg0) { // Original name: _loop, environment: var1
+                var1 = function arg0() {
                     _fun61044: for (var _fun61044_ip = 0;;) switch (_fun61044_ip) {
                         case 0:
                             var6 = arg0;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var8.bind(var0)(var7);
                             var8 = var7.TextInput;
                             var7 = {};
-                            var13 = function(arg0) { // Original name: ref, environment: var10
+                            var13 = function arg0() {
                                 var0 = _closure2_slot7;
                                 var2 = var0.current;
                                 var1 = _closure3_slot0;
@@ -766,9 +766,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = _closure2_slot5;
                             var12 = var12[var6];
                             var7.value = var12;
-                            var12 = function(arg0) { // Original name: onKeyPress, environment: var10
+                            var12 = function arg0() {
                                 var3 = _closure3_slot0;
-                                var2 = function(arg0, arg1) { // Original name: onKeyPress, environment: var0
+                                var2 = function arg0, arg1() {
                                     _fun61047: for (var _fun61047_ip = 0;;) switch (_fun61047_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var7.onKeyPress = var12;
-                            var10 = function(arg0) { // Original name: onChangeText, environment: var10
+                            var10 = function arg0() {
                                 _fun61048: for (var _fun61048_ip = 0;;) switch (_fun61048_ip) {
                                     case 0:
                                         var3 = arg0;

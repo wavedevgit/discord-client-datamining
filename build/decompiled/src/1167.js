@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var3 = 'ReactNavigation';
     var2.INTEGRATION_NAME = var3;
-    var3 = function() { // Original name: reactNavigationIntegration, environment: var1
+    var3 = function() {
         _fun12738: for (var _fun12738_ip = 0;;) switch (_fun12738_ip) {
             case 0:
                 var8 = undefined;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var0 = var7.bind(var8)(var0);
             case 232:
-                var0 = function(arg0) { // Original name: startIdleNavigationSpan, environment: var1
+                var0 = function arg0() {
                     _fun12740: for (var _fun12740_ip = 0;;) switch (_fun12740_ip) {
                         case 0:
                             var3 = arg0;
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot13 = var0;
-                var0 = function() { // Original name: updateLatestNavigationSpanWithCurrentRoute, environment: var1
+                var0 = function() {
                     _fun12742: for (var _fun12742_ip = 0;;) switch (_fun12742_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -787,7 +787,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot14 = var0;
-                var0 = function(arg0) { // Original name: pushRecentRouteKey, environment: var1
+                var0 = function arg0() {
                     _fun12743: for (var _fun12743_ip = 0;;) switch (_fun12743_ip) {
                         case 0:
                             var3 = _closure2_slot12;
@@ -815,7 +815,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot15 = var0;
-                var0 = function() { // Original name: _discardLatestTransaction, environment: var1
+                var0 = function() {
                     _fun12744: for (var _fun12744_ip = 0;;) switch (_fun12744_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -861,7 +861,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot16 = var0;
-                var0 = function() { // Original name: clearStateChangeTimeout, environment: var1
+                var0 = function() {
                     _fun12745: for (var _fun12745_ip = 0;;) switch (_fun12745_ip) {
                         case 0:
                             var2 = _closure2_slot5;
@@ -884,7 +884,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var7 = 'ReactNavigation';
                 var0.name = var7;
-                var7 = function(arg0) { // Original name: afterAllSetup, environment: var1
+                var7 = function arg0() {
                     _fun12746: for (var _fun12746_ip = 0;;) switch (_fun12746_ip) {
                         case 0:
                             var4 = arg0;
@@ -987,7 +987,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.afterAllSetup = var7;
-                var1 = function(arg0) { // Original name: registerNavigationContainer, environment: var1
+                var1 = function arg0() {
                     _fun12748: for (var _fun12748_ip = 0;;) switch (_fun12748_ip) {
                         case 0:
                             var2 = arg0;
@@ -1154,7 +1154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.reactNavigationIntegration = var3;
-    var1 = function(arg0) { // Original name: getReactNavigationIntegration, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.getIntegrationByName;
         var0 = 'ReactNavigation';

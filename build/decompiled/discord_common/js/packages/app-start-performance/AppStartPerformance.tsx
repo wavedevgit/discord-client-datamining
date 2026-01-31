@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot4 = var3;
             var1 = function() { // Environment: var1
                 var3 = _closure1_slot2;
-                var2 = function() { // Original name: AppStartPerformance, environment: var5
+                var2 = function() {
                     var2 = this;
                     var3 = _closure1_slot1;
                     var1 = _closure2_slot1;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var1 = 'isTracing';
                 var4.key = var1;
-                var1 = function() { // Original name: get, environment: var5
+                var1 = function() {
                     _fun264: for (var _fun264_ip = 0;;) switch (_fun264_ip) {
                         case 0:
                             var3 = this;
@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'endTime';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = this;
                     var0 = var0.endTime_;
                     return var0;
                 };
                 var4.get = var6;
-                var6 = function(arg0) { // Original name: set, environment: var5
+                var6 = function arg0() {
                     var1 = this;
                     var0 = arg0;
                     var1.endTime_ = var0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'resumeTracing';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun267: for (var _fun267_ip = 0;;) switch (_fun267_ip) {
                         case 0:
                             var1 = this;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'mark';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun268: for (var _fun268_ip = 0;;) switch (_fun268_ip) {
                         case 0:
                             var1 = this;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'markAndLog';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2, arg3() {
                     _fun269: for (var _fun269_ip = 0;;) switch (_fun269_ip) {
                         case 0:
                             var2 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'addImportLogDetail';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun270: for (var _fun270_ip = 0;;) switch (_fun270_ip) {
                         case 0:
                             var2 = this;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'markWithDelta';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     _fun271: for (var _fun271_ip = 0;;) switch (_fun271_ip) {
                         case 0:
                             var5 = this;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'markAt';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun272: for (var _fun272_ip = 0;;) switch (_fun272_ip) {
                         case 0:
                             var7 = arg2;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'addDetail';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     _fun273: for (var _fun273_ip = 0;;) switch (_fun273_ip) {
                         case 0:
                             var3 = this;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'time';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun274: for (var _fun274_ip = 0;;) switch (_fun274_ip) {
                         case 0:
                             var5 = arg0;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var6 = var7.bind(var0)(var6);
                 var _closure2_slot0 = var6;
-                var6 = function() { // Original name: timeAsync, environment: var5
+                var6 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'setServerTrace';
                 var4.key = var6;
-                var5 = function(arg0) { // Original name: value, environment: var5
+                var5 = function arg0() {
                     var0 = this;
                     var1 = var0.logGroups;
                     var0 = 0;

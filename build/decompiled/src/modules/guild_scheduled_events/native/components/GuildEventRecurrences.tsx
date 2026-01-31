@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventRecurrences.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildEventRecurrences, environment: var1
+    var1 = function arg0() {
         _fun66146: for (var _fun66146_ip = 0;;) switch (_fun66146_ip) {
             case 0:
                 var0 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["8O7Hpy"];
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function(arg0) { // Original name: onPress, environment: var9
+                var9 = function arg0() {
                     _fun66148: for (var _fun66148_ip = 0;;) switch (_fun66148_ip) {
                         case 0:
                             var1 = arg0;

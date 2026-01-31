@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMISettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMISettingsActionSheet, environment: var1
+    var1 = function() {
         _fun103525: for (var _fun103525_ip = 0;;) switch (_fun103525_ip) {
             case 0:
                 var14 = _closure1_slot0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var19;
             case 365:
                 var9.value = var18;
-                var18 = function() { // Original name: onValueChange, environment: var12
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 16;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var18;
             case 463:
                 var13.value = var16;
-                var16 = function() { // Original name: onValueChange, environment: var12
+                var16 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 16;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = {};
                 var21 = 'Clear read states';
                 var14.label = var21;
-                var21 = function() { // Original name: onPress, environment: var12
+                var21 = function() {
                     var2 = _closure1_slot7;
                     var1 = var2.getDehydratedItems;
                     var3 = var1.bind(var2)();
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.Eorjmy;
                 var13 = var14.bind(var15)(var13);
                 var10.label = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var4 = 16;

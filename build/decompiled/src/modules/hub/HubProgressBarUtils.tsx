@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun91221: for (var _fun91221_ip = 0;;) switch (_fun91221_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun91223: for (var _fun91223_ip = 0;;) switch (_fun91223_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: useCompletedStepsFromSettings, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/HubProgressBarUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getHubProgressTitleForStep, environment: var1
+    var3 = function arg0() {
         _fun91227: for (var _fun91227_ip = 0;;) switch (_fun91227_ip) {
             case 0:
                 var3 = arg0;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHubProgressTitleForStep = var3;
-    var3 = function(arg0) { // Original name: useHubProgressBarCompletedSteps, environment: var1
+    var3 = function arg0() {
         _fun91228: for (var _fun91228_ip = 0;;) switch (_fun91228_ip) {
             case 0:
                 var5 = arg0;
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 30:
                 var5 = var4.bind(var3)(var2);
                 var _closure2_slot0 = var5;
-                var2 = function() { // Original name: useContactSyncEverEnabled, environment: var0
+                var2 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
                     var1 = 5;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useHubProgressBarCompletedSteps = var3;
-    var1 = function(arg0) { // Original name: getNextHubProgressStep, environment: var1
+    var1 = function arg0() {
         _fun91232: for (var _fun91232_ip = 0;;) switch (_fun91232_ip) {
             case 0:
                 var4 = arg0;

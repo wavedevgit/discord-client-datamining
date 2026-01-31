@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun14143: for (var _fun14143_ip = 0;;) switch (_fun14143_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LowPerformanceModeStore, environment: var5
+        var3 = function() {
             _fun14147: for (var _fun14147_ip = 0;;) switch (_fun14147_ip) {
                 case 0:
                     var3 = this;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun14148: for (var _fun14148_ip = 0;;) switch (_fun14148_ip) {
                 case 0:
                     var5 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getState';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'optedOut';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             var0 = _closure1_slot8;
             var0 = var0.optedOut;
             return var0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'enabled';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             var0 = _closure1_slot8;
             var0 = var0.enabled;
             return var0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'visible';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             _fun14152: for (var _fun14152_ip = 0;;) switch (_fun14152_ip) {
                 case 0:
                     var0 = _closure1_slot8;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'active';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             var0 = _closure1_slot8;
             var0 = var0.enabled;
             return var0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: evaluate, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var3 = function(arg0) { // Original name: handleSetEnabled, environment: var3
+    var3 = function arg0() {
         _fun14157: for (var _fun14157_ip = 0;;) switch (_fun14157_ip) {
             case 0:
                 var0 = arg0;

@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
     var5 = dependencyMap;
-    var2 = function(arg0) { // Original name: Hash, environment: var0
+    var2 = function arg0() {
         _fun31515: for (var _fun31515_ip = 0;;) switch (_fun31515_ip) {
             case 0:
                 var5 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: FamilyCenterActivityCardPrefaceText, environment: var5
+    var0 = function() {
         _fun81878: for (var _fun81878_ip = 0;;) switch (_fun81878_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var14[var5];
                 var6 = var13.bind(var3)(var5);
                 var5 = {};
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 17;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: FamilyCenterHeaderSubText, environment: var5
+    var0 = function() {
         _fun81880: for (var _fun81880_ip = 0;;) switch (_fun81880_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var3 = function() { // Original name: FamilyCenterActivityCardHeader, environment: var5
+    var3 = function() {
         _fun81881: for (var _fun81881_ip = 0;;) switch (_fun81881_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var1 = function() { // Original name: FamilyCenterActivityCardAccountSelect, environment: var5
+    var1 = function() {
         _fun81882: for (var _fun81882_ip = 0;;) switch (_fun81882_ip) {
             case 0:
                 var0 = _closure1_slot13;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var4)(var1);
                 var2 = var3.useFamilyCenterActions;
                 var1 = {};
-                var5 = function() { // Original name: onSuccess, environment: var8
+                var5 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 27;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onSuccess = var5;
-                var5 = function() { // Original name: onError, environment: var8
+                var5 = function() {
                     var4 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var1 = 28;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.style = var10;
                 var10 = 'spinbutton';
                 var5.accessibilityRole = var10;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var9 = _closure1_slot1;
                     var10 = _closure1_slot2;
                     var0 = 27;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.title = var6;
                     var7 = _closure2_slot3;
                     var1.items = var7;
-                    var7 = function(arg0) { // Original name: onItemSelect, environment: var7
+                    var7 = function arg0() {
                         _fun81888: for (var _fun81888_ip = 0;;) switch (_fun81888_ip) {
                             case 0:
                                 var1 = arg0;
@@ -991,7 +991,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/parent_tools/native/FamilyCenterActivityCard.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function() { // Original name: FamilyCenterActivityCard, environment: var5
+    var5 = function() {
         _fun81891: for (var _fun81891_ip = 0;;) switch (_fun81891_ip) {
             case 0:
                 var0 = _closure1_slot14;

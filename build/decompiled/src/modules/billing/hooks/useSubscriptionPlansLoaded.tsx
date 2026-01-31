@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun59365: for (var _fun59365_ip = 0;;) switch (_fun59365_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun59367: for (var _fun59367_ip = 0;;) switch (_fun59367_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var1 = function() { // Original name: getSubscriptionPlansLoaded, environment: var3
+    var1 = function() {
         _fun59368: for (var _fun59368_ip = 0;;) switch (_fun59368_ip) {
             case 0:
                 var6 = arguments[0];
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/billing/hooks/useSubscriptionPlansLoaded.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useSubscriptionPlansLoaded, environment: var3
+    var3 = function() {
         _fun59369: for (var _fun59369_ip = 0;;) switch (_fun59369_ip) {
             case 0:
                 var5 = arguments[0];

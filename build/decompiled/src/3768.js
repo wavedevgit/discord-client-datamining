@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: addPxToTransform, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: generateNextCustomKeyframeName, environment: var1
+    var0 = function() {
         var0 = _closure1_slot6;
         var1 = parseFloat(var0);
         var0 = var1 + 1;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var _closure1_slot5 = var4;
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: createCustomKeyFrameAnimation, environment: var1
+    var3 = function arg0() {
         _fun33865: for (var _fun33865_ip = 0;;) switch (_fun33865_ip) {
             case 0:
                 var7 = arg0;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createCustomKeyFrameAnimation = var3;
-    var3 = function(arg0, arg1) { // Original name: createAnimationWithInitialValues, environment: var1
+    var3 = function arg0, arg1() {
         _fun33866: for (var _fun33866_ip = 0;;) switch (_fun33866_ip) {
             case 0:
                 var3 = arg0;
@@ -434,7 +434,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createAnimationWithInitialValues = var3;
-    var1 = function(arg0, arg1) { // Original name: TransitionGenerator, environment: var1
+    var1 = function arg0, arg1() {
         _fun33868: for (var _fun33868_ip = 0;;) switch (_fun33868_ip) {
             case 0:
                 var4 = arg0;

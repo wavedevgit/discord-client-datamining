@@ -28,19 +28,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6[var1];
     var1 = var4.bind(var0)(var1);
     var _closure1_slot4 = var1;
-    var1 = function() { // Original name: log, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot5 = var1;
-    var1 = function() { // Original name: nativeLog, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot6 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: Logger, environment: var1
+        var2 = function() {
             _fun113: for (var _fun113_ip = 0;;) switch (_fun113_ip) {
                 case 0:
                     var1 = arguments[0];
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'enableNativeLogger';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.nativeLoggerEnabled = var1;
@@ -767,21 +767,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = '../discord_common/js/packages/logger/Logger.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: setLogFn, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         _closure1_slot5 = var0;
         var0 = undefined;
         return var0;
     };
     var2.setLogFn = var4;
-    var4 = function(arg0) { // Original name: setNativeLogFn, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         _closure1_slot6 = var0;
         var0 = undefined;
         return var0;
     };
     var2.setNativeLogFn = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: defaultLogFn, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         var1 = 3;
         var0 = copyRestArgs(var1);
         var0 = undefined;

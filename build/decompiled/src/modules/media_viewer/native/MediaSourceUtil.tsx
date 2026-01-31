@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var21;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun70255: for (var _fun70255_ip = 0;;) switch (_fun70255_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun70257: for (var _fun70257_ip = 0;;) switch (_fun70257_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var18 = function(arg0, arg1) { // Original name: flattenSource, environment: var1
+    var18 = function arg0, arg1() {
         _fun70258: for (var _fun70258_ip = 0;;) switch (_fun70258_ip) {
             case 0:
                 var3 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var18;
-    var17 = function(arg0) { // Original name: isValidImageAttachment, environment: var1
+    var17 = function arg0() {
         _fun70259: for (var _fun70259_ip = 0;;) switch (_fun70259_ip) {
             case 0:
                 var3 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var17;
-    var16 = function(arg0) { // Original name: isValidVideoAttachment, environment: var1
+    var16 = function arg0() {
         _fun70260: for (var _fun70260_ip = 0;;) switch (_fun70260_ip) {
             case 0:
                 var2 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var16;
-    var15 = function(arg0) { // Original name: isValidImageEmbed, environment: var1
+    var15 = function arg0() {
         _fun70261: for (var _fun70261_ip = 0;;) switch (_fun70261_ip) {
             case 0:
                 var1 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var15;
-    var14 = function(arg0) { // Original name: isValidVideoEmbed, environment: var1
+    var14 = function arg0() {
         var0 = arg0;
         var1 = var0.video;
         var0 = null;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var14;
-    var13 = function(arg0) { // Original name: isThumbnailAttachment, environment: var1
+    var13 = function arg0() {
         _fun70263: for (var _fun70263_ip = 0;;) switch (_fun70263_ip) {
             case 0:
                 var3 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var13;
-    var12 = function(arg0) { // Original name: getAttachmentUrl, environment: var1
+    var12 = function arg0() {
         _fun70264: for (var _fun70264_ip = 0;;) switch (_fun70264_ip) {
             case 0:
                 var1 = arg0;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var12;
-    var11 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: extractMediaFromAttachment, environment: var1
+    var11 = function arg0, arg1, arg2, arg3, arg4() {
         _fun70265: for (var _fun70265_ip = 0;;) switch (_fun70265_ip) {
             case 0:
                 var1 = arg0;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var11;
-    var10 = function(arg0) { // Original name: getEmbedUrl, environment: var1
+    var10 = function arg0() {
         _fun70266: for (var _fun70266_ip = 0;;) switch (_fun70266_ip) {
             case 0:
                 var1 = arg0;
@@ -892,7 +892,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var10;
-    var0 = function(arg0) { // Original name: getEmbedContentScanVersion, environment: var1
+    var0 = function arg0() {
         _fun70267: for (var _fun70267_ip = 0;;) switch (_fun70267_ip) {
             case 0:
                 var1 = arg0;
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: getMediaContentType, environment: var1
+    var0 = function arg0() {
         _fun70268: for (var _fun70268_ip = 0;;) switch (_fun70268_ip) {
             case 0:
                 var1 = arg0;
@@ -961,7 +961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var9 = function(arg0) { // Original name: getEmbedMedia, environment: var1
+    var9 = function arg0() {
         _fun70269: for (var _fun70269_ip = 0;;) switch (_fun70269_ip) {
             case 0:
                 var1 = arg0;
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var9;
-    var8 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: extractMediaFromEmbed, environment: var1
+    var8 = function arg0, arg1, arg2, arg3, arg4() {
         _fun70270: for (var _fun70270_ip = 0;;) switch (_fun70270_ip) {
             case 0:
                 var8 = arg0;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var8;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: toMediaSourceFromUnfurledMedia, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun70271: for (var _fun70271_ip = 0;;) switch (_fun70271_ip) {
             case 0:
                 var8 = arg0;
@@ -1568,7 +1568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: handleDownloadError, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 21;
@@ -1605,7 +1605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var7 = function(arg0, arg1, arg2) { // Original name: downloadMediaAssetWithContentType, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun70273: for (var _fun70273_ip = 0;;) switch (_fun70273_ip) {
             case 0:
                 var6 = arg0;
@@ -1715,7 +1715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var7;
-    var5 = function(arg0) { // Original name: isAnimatedWebpSource, environment: var1
+    var5 = function arg0() {
         _fun70275: for (var _fun70275_ip = 0;;) switch (_fun70275_ip) {
             case 0:
                 var1 = arg0;
@@ -1774,7 +1774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var5;
-    var4 = function(arg0) { // Original name: isAnimatedAvifSource, environment: var1
+    var4 = function arg0() {
         _fun70276: for (var _fun70276_ip = 0;;) switch (_fun70276_ip) {
             case 0:
                 var1 = arg0;
@@ -1833,7 +1833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var4;
-    var3 = function(arg0) { // Original name: isGIFSource, environment: var1
+    var3 = function arg0() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 3;
@@ -1911,7 +1911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getEmbedUrl = var10;
     var2.getEmbedMedia = var9;
     var2.extractMediaFromEmbed = var8;
-    var8 = function(arg0, arg1) { // Original name: extractMediaFromMessageComponents, environment: var1
+    var8 = function arg0, arg1() {
         _fun70278: for (var _fun70278_ip = 0;;) switch (_fun70278_ip) {
             case 0:
                 var14 = arg0;
@@ -2085,7 +2085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractMediaFromMessageComponents = var8;
-    var8 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: extractMediaSourcesFromEmbed, environment: var1
+    var8 = function arg0, arg1, arg2, arg3, arg4() {
         _fun70279: for (var _fun70279_ip = 0;;) switch (_fun70279_ip) {
             case 0:
                 var5 = arg0;
@@ -2221,7 +2221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractMediaSourcesFromEmbed = var8;
-    var8 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: extractMediaSourcesFromComponent, environment: var1
+    var8 = function arg0, arg1, arg2, arg3, arg4() {
         _fun70281: for (var _fun70281_ip = 0;;) switch (_fun70281_ip) {
             case 0:
                 var11 = arg0;
@@ -2374,7 +2374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractMediaSourcesFromComponent = var8;
-    var8 = function(arg0, arg1, arg2, arg3) { // Original name: extractMediaSourcesFromMessage, environment: var1
+    var8 = function arg0, arg1, arg2, arg3() {
         _fun70283: for (var _fun70283_ip = 0;;) switch (_fun70283_ip) {
             case 0:
                 var10 = arg0;
@@ -2522,7 +2522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractMediaSourcesFromMessage = var8;
-    var8 = function(arg0, arg1) { // Original name: setMediaSourcePortal, environment: var1
+    var8 = function arg0, arg1() {
         _fun70284: for (var _fun70284_ip = 0;;) switch (_fun70284_ip) {
             case 0:
                 var3 = arg0;
@@ -2565,7 +2565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setMediaSourcePortal = var8;
-    var8 = function(arg0) { // Original name: getSelectedMediaSource, environment: var1
+    var8 = function arg0() {
         _fun70285: for (var _fun70285_ip = 0;;) switch (_fun70285_ip) {
             case 0:
                 var0 = arg0;
@@ -2618,7 +2618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSelectedMediaSource = var8;
-    var8 = function(arg0) { // Original name: useSelectedMediaSource, environment: var1
+    var8 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot1;
@@ -2696,7 +2696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSelectedMediaSource = var8;
-    var8 = function(arg0, arg1) { // Original name: downloadMediaAsset, environment: var1
+    var8 = function arg0, arg1() {
         var3 = _closure1_slot26;
         var2 = undefined;
         var1 = arg0;
@@ -2706,7 +2706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.downloadMediaAsset = var8;
     var2.downloadMediaAssetWithContentType = var7;
-    var7 = function(arg0) { // Original name: getYoutubeClipVideoIdFromURI, environment: var1
+    var7 = function arg0() {
         _fun70289: for (var _fun70289_ip = 0;;) switch (_fun70289_ip) {
             case 0:
                 var2 = arg0;
@@ -2765,7 +2765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getYoutubeClipVideoIdFromURI = var7;
-    var7 = function(arg0) { // Original name: getYoutubeVideoIdFromURI, environment: var1
+    var7 = function arg0() {
         _fun70290: for (var _fun70290_ip = 0;;) switch (_fun70290_ip) {
             case 0:
                 var2 = arg0;
@@ -2836,7 +2836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getYoutubeVideoIdFromURI = var7;
     var2.VideoSourceType = var6;
-    var6 = function(arg0) { // Original name: getVideoSourceType, environment: var1
+    var6 = function arg0() {
         _fun70291: for (var _fun70291_ip = 0;;) switch (_fun70291_ip) {
             case 0:
                 var2 = arg0;
@@ -2919,7 +2919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVideoSourceType = var6;
-    var6 = function(arg0) { // Original name: supportOverlayVideoControls, environment: var1
+    var6 = function arg0() {
         _fun70292: for (var _fun70292_ip = 0;;) switch (_fun70292_ip) {
             case 0:
                 var2 = arg0;
@@ -2960,7 +2960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isAnimatedWebpSource = var5;
     var2.isAnimatedAvifSource = var4;
     var2.isGIFSource = var3;
-    var1 = function(arg0) { // Original name: isAnimatedImageSource, environment: var1
+    var1 = function arg0() {
         _fun70293: for (var _fun70293_ip = 0;;) switch (_fun70293_ip) {
             case 0:
                 var3 = arg0;

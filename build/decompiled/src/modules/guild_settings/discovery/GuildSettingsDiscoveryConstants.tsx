@@ -2569,7 +2569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.GuildPrimaryCategory = var4;
     var2.SUGGESTED_TAGS_FOR_CATEGORIES = var3;
-    var1 = function() { // Original name: calculateLocaleOptions, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 0;

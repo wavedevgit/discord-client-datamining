@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: _toPropertyKey, environment: var1
+    var0 = function arg0() {
         _fun80907: for (var _fun80907_ip = 0;;) switch (_fun80907_ip) {
             case 0:
                 var6 = arg0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun80908: for (var _fun80908_ip = 0;;) switch (_fun80908_ip) {
             case 0:
             case 2: // try_start_0
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var3;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: TransitionGroup, environment: var0
+        var4 = function arg0() {
             _fun80912: for (var _fun80912_ip = 0;;) switch (_fun80912_ip) {
                 case 0:
                     var2 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'componentDidMount';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             _fun80914: for (var _fun80914_ip = 0;;) switch (_fun80914_ip) {
                 case 0:
                     var6 = this;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentWillUnmount';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = this;
             var1 = false;
             var0._isMounted = var1;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentDidUpdate';
         var5.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var0
+        var6 = function arg0, arg1() {
             _fun80916: for (var _fun80916_ip = 0;;) switch (_fun80916_ip) {
                 case 0:
                     var0 = arg0;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = '_enqueueTransitions';
         var5.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var0
+        var6 = function arg0, arg1, arg2() {
             _fun80917: for (var _fun80917_ip = 0;;) switch (_fun80917_ip) {
                 case 0:
                     var8 = arg0;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = '_perform';
         var5.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var0
+        var6 = function arg0, arg1, arg2() {
             _fun80918: for (var _fun80918_ip = 0;;) switch (_fun80918_ip) {
                 case 0:
                     var4 = arg0;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var2._currentlyTransitioningKeys;
                     var5 = var6.add;
                     var5 = var5.bind(var6)(var4);
-                    var3 = function() { // Original name: callback, environment: var3
+                    var3 = function() {
                         var4 = _closure3_slot0;
                         var3 = var4._handleDonePerform;
                         var2 = _closure3_slot1;
@@ -579,7 +579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = '_handleDonePerform';
         var5.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var0
+        var6 = function arg0, arg1() {
             _fun80920: for (var _fun80920_ip = 0;;) switch (_fun80920_ip) {
                 case 0:
                     var3 = arg0;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'performAppear';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var4 = this;
             var3 = var4._perform;
             var2 = arg0;
@@ -711,7 +711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'performEnter';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var4 = this;
             var3 = var4._perform;
             var2 = arg0;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'performLeave';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var5 = this;
             var4 = var5._perform;
             var9 = arg0;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'render';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun80925: for (var _fun80925_ip = 0;;) switch (_fun80925_ip) {
                 case 0:
                     var1 = this;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot2 = var2;
                     var3 = new Array(0);
                     var _closure3_slot3 = var3;
-                    var10 = function(arg0) { // Original name: _loop, environment: var0
+                    var10 = function arg0() {
                         _fun80926: for (var _fun80926_ip = 0;;) switch (_fun80926_ip) {
                             case 0:
                                 var6 = arg0;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var8.bind(var0)(var9);
                             case 94:
                                 var0 = {};
-                                var7 = function(arg0) { // Original name: ref, environment: var7
+                                var7 = function arg0() {
                                     var3 = _closure3_slot0;
                                     var2 = var3.addChildRef;
                                     var1 = _closure4_slot0;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getDerivedStateFromProps';
         var5.key = var6;
-        var0 = function(arg0, arg1) { // Original name: getDerivedStateFromProps, environment: var0
+        var0 = function arg0, arg1() {
             _fun80929: for (var _fun80929_ip = 0;;) switch (_fun80929_ip) {
                 case 0:
                     var0 = arg1;

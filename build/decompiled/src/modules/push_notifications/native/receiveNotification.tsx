@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: onStageConnectionError, environment: var1
+    var0 = function() {
         var5 = _closure1_slot1;
         var6 = _closure1_slot3;
         var0 = 9;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: waitForConnection, environment: var1
+    var0 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _connectToStage, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _connectToStage2, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _handleStageNotification, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _handleGuildEventNotification, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _maybeAckNotificationCenter, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: receiveNotification_, environment: var1
+    var0 = function arg0() {
         _fun117959: for (var _fun117959_ip = 0;;) switch (_fun117959_ip) {
             case 0:
                 var3 = arg0;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1007:
                 return var0;
             case 1009:
-                var2 = function() { // Original name: dispatch, environment: var1
+                var2 = function() {
                     _fun117960: for (var _fun117960_ip = 0;;) switch (_fun117960_ip) {
                         case 0:
                             var5 = _closure1_slot1;
@@ -1148,7 +1148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3.mention_type = var10;
                             var3 = var8.bind(var9)(var7, var3);
                             var3 = _closure2_slot0;
-                            var7 = function() { // Original name: maybeAckNotificationCenter, environment: var2
+                            var7 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot21;
                                 var2 = var3.apply;
@@ -1272,7 +1272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var3.bind(var0)();
                             var7 = var8.then;
                             var3 = function() { // Environment: var2
-                                var1 = function() { // Original name: waitForNavigationReady, environment: var0
+                                var1 = function() {
                                     var0 = global;
                                     var2 = var0.Promise;
                                     var0 = var2.prototype;
@@ -1286,7 +1286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var _closure6_slot0 = var1;
                                         var1 = 0;
                                         var _closure6_slot1 = var1;
-                                        var1 = function() { // Original name: checkNavigation, environment: var0
+                                        var1 = function() {
                                             _fun117972: for (var _fun117972_ip = 0;;) switch (_fun117972_ip) {
                                                 case 0:
                                                     var3 = _closure1_slot0;
@@ -1406,7 +1406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun117960;
                         case 931:
                             var7 = _closure2_slot0;
-                            var3 = function() { // Original name: handleStageNotification, environment: var2
+                            var3 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot19;
                                 var2 = var3.apply;
@@ -1422,7 +1422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun117960;
                         case 955:
                             var7 = _closure2_slot0;
-                            var3 = function() { // Original name: handleGuildEventNotification, environment: var2
+                            var3 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot20;
                                 var2 = var3.apply;
@@ -1975,7 +1975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/push_notifications/native/receiveNotification.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: receiveNotification, environment: var1
+    var1 = function arg0() {
         _fun117974: for (var _fun117974_ip = 0;;) switch (_fun117974_ip) {
             case 0:
                 var2 = arg0;

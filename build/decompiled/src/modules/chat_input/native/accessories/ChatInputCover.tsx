@@ -60,9 +60,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[2] = var9;
                 var0 = function() { // Environment: var0
                     var0 = {};
-                    var2 = function() { // Original name: imperativeHandle, environment: var1
+                    var2 = function() {
                         var0 = {};
-                        var1 = function(arg0) { // Original name: focused, environment: var1
+                        var1 = function arg0() {
                             _fun90414: for (var _fun90414_ip = 0;;) switch (_fun90414_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.imperativeHandle = var2;
-                    var1 = function() { // Original name: openSystemKeyboard, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot1;
                         var1 = {};
                         var4 = _closure1_slot0;

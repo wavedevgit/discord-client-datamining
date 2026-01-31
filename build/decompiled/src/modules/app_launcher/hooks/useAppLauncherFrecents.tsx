@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: useFrecentApps, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var6 = var1.sectionDescriptors;
         var5 = var1.context;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/hooks/useAppLauncherFrecents.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useAppLauncherFrecentCommandsAndApps, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.context;
         var6 = var0.onlyActivityApps;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useAppLauncherFrecentApps, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.context;
         var5 = var0.onlyActivityApps;

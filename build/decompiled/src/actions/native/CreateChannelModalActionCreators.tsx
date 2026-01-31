@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var6 = 'CREATE_CHANNEL_MODAL_KEY';
     var1.CREATE_CHANNEL_MODAL_KEY = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: open, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun65514: for (var _fun65514_ip = 0;;) switch (_fun65514_ip) {
             case 0:
                 var11 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6;
             case 147:
                 var1.cloneChannelId = var5;
-                var0 = function(arg0, arg1) { // Original name: onChannelCreated, environment: var0
+                var0 = function arg0, arg1() {
                     _fun65515: for (var _fun65515_ip = 0;;) switch (_fun65515_ip) {
                         case 0:
                             var2 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.open = var6;
-    var3 = function() { // Original name: close, environment: var3
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

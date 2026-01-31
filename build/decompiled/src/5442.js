@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'uri': 3
     };
     var _closure1_slot4 = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: extractStroke, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun48369: for (var _fun48369_ip = 0;;) switch (_fun48369_ip) {
             case 0:
                 var1 = arg0;

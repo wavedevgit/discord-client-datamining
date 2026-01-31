@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var5 = function(arg0) { // Original name: getCollectiblesQuestReward, environment: var1
+    var5 = function arg0() {
         _fun47072: for (var _fun47072_ip = 0;;) switch (_fun47072_ip) {
             case 0:
                 var0 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var5;
-    var4 = function(arg0) { // Original name: hasFractionalPremiumQuestReward, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.rewardsConfig;
         var2 = var0.rewards;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: isCollectibleQuestRewardPremiumExtendable, environment: var1
+    var3 = function arg0() {
         _fun47076: for (var _fun47076_ip = 0;;) switch (_fun47076_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var0 = function(arg0, arg1) { // Original name: _getDefaultRewardName, environment: var1
+    var0 = function arg0, arg1() {
         _fun47077: for (var _fun47077_ip = 0;;) switch (_fun47077_ip) {
             case 0:
                 var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/quests/utils/QuestRewardUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.getCollectiblesQuestReward = var5;
-    var5 = function(arg0) { // Original name: getCollectibleQuestRewardExtendableExpirationDate, environment: var1
+    var5 = function arg0() {
         _fun47078: for (var _fun47078_ip = 0;;) switch (_fun47078_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCollectibleQuestRewardExtendableExpirationDate = var5;
-    var5 = function(arg0) { // Original name: getCollectibleQuestRewardDuration, environment: var1
+    var5 = function arg0() {
         _fun47079: for (var _fun47079_ip = 0;;) switch (_fun47079_ip) {
             case 0:
                 var4 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCollectibleQuestRewardDuration = var5;
     var2.hasFractionalPremiumQuestReward = var4;
-    var4 = function(arg0) { // Original name: hasVirtualCurrencyReward, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.rewardsConfig;
         var2 = var0.rewards;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hasVirtualCurrencyReward = var4;
-    var4 = function(arg0) { // Original name: hasCollectiblesQuestReward, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot4;
         var1 = undefined;
         var0 = arg0;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hasCollectiblesQuestReward = var4;
-    var4 = function(arg0) { // Original name: hasInGameQuestReward, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.rewardsConfig;
         var2 = var0.rewards;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hasInGameQuestReward = var4;
-    var4 = function(arg0) { // Original name: hasQuestRewardCode, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.rewardsConfig;
         var2 = var0.rewards;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hasQuestRewardCode = var4;
-    var4 = function(arg0) { // Original name: getInGameQuestReward, environment: var1
+    var4 = function arg0() {
         _fun47087: for (var _fun47087_ip = 0;;) switch (_fun47087_ip) {
             case 0:
                 var0 = arg0;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getInGameQuestReward = var4;
-    var4 = function(arg0) { // Original name: getCollectiblesQuestRewardItem, environment: var1
+    var4 = function arg0() {
         _fun47089: for (var _fun47089_ip = 0;;) switch (_fun47089_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCollectiblesQuestRewardItem = var4;
-    var4 = function(arg0) { // Original name: getVirtualCurrencyRewardOrbQuantity, environment: var1
+    var4 = function arg0() {
         _fun47090: for (var _fun47090_ip = 0;;) switch (_fun47090_ip) {
             case 0:
                 var0 = arg0;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVirtualCurrencyRewardOrbQuantity = var4;
     var2.isCollectibleQuestRewardPremiumExtendable = var3;
-    var3 = function(arg0) { // Original name: isCollectibleQuestRewardPermanentWithPremiumSubscription, environment: var1
+    var3 = function arg0() {
         _fun47092: for (var _fun47092_ip = 0;;) switch (_fun47092_ip) {
             case 0:
                 var3 = arg0;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isCollectibleQuestRewardPermanentWithPremiumSubscription = var3;
-    var3 = function(arg0) { // Original name: getQuestPrimaryReward, environment: var1
+    var3 = function arg0() {
         _fun47093: for (var _fun47093_ip = 0;;) switch (_fun47093_ip) {
             case 0:
                 var1 = arg0;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getQuestPrimaryReward = var3;
-    var3 = function(arg0) { // Original name: getDefaultRewardName, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot7;
         var2 = undefined;
         var1 = arg0;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getDefaultRewardName = var3;
-    var3 = function(arg0) { // Original name: getDefaultRewardNameWithArticle, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot7;
         var2 = undefined;
         var1 = arg0;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getDefaultRewardNameWithArticle = var3;
-    var3 = function(arg0) { // Original name: getRewardCodeQuestReward, environment: var1
+    var3 = function arg0() {
         _fun47096: for (var _fun47096_ip = 0;;) switch (_fun47096_ip) {
             case 0:
                 var0 = arg0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRewardCodeQuestReward = var3;
-    var3 = function(arg0) { // Original name: isTieredRewardCodeQuest, environment: var1
+    var3 = function arg0() {
         _fun47097: for (var _fun47097_ip = 0;;) switch (_fun47097_ip) {
             case 0:
                 var0 = arg0;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isTieredRewardCodeQuest = var3;
-    var3 = function(arg0) { // Original name: getDefaultPlatform, environment: var1
+    var3 = function arg0() {
         _fun47099: for (var _fun47099_ip = 0;;) switch (_fun47099_ip) {
             case 0:
                 var0 = arg0;

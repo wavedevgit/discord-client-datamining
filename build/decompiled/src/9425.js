@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useOffsetXTs1(){const{visibleRanges,index,loop,TOTAL_WIDTH,MIN,HALF_WIDTH,startPos,MAX,interpolate,handlerOffset,Extrapolation,size}=this.__closure;const{negativeRange:negativeRange,positiveRange:positiveRange}=visibleRanges.value;if(index>=negativeRange[0]&&index<=negativeRange[1]||index>=positiveRange[0]&&index<=positiveRange[1]){if(loop){const inputRange=[-TOTAL_WIDTH,MIN-HALF_WIDTH-startPos-Number.MIN_VALUE,MIN-HALF_WIDTH-startPos,0,MAX+HALF_WIDTH-startPos,MAX+HALF_WIDTH-startPos+Number.MIN_VALUE,TOTAL_WIDTH];const outputRange=[startPos,MAX+HALF_WIDTH-Number.MIN_VALUE,MIN-HALF_WIDTH,startPos,MAX+HALF_WIDTH,MIN-HALF_WIDTH+Number.MIN_VALUE,startPos];return interpolate(handlerOffset.value,inputRange,outputRange,Extrapolation.CLAMP);}return handlerOffset.value+size*index;}return Number.MAX_SAFE_INTEGER;}';
     var2.code = var3;
     var _closure1_slot2 = var2;
-    var0 = function(arg0, arg1) { // Original name: useOffsetX, environment: var0
+    var0 = function arg0, arg1() {
         _fun74977: for (var _fun74977_ip = 0;;) switch (_fun74977_ip) {
             case 0:
                 var0 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var15[var12];
                 var3 = var13.bind(var14)(var2);
                 var2 = var3.useDerivedValue;
-                var1 = function() { // Original name: pnpm_useOffsetXTs1, environment: var1
+                var1 = function() {
                     _fun74978: for (var _fun74978_ip = 0;;) switch (_fun74978_ip) {
                         case 0:
                             var0 = _closure2_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _getEventSchedule, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun65165: for (var _fun65165_ip = 0;;) switch (_fun65165_ip) {
             case 0:
                 var2 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useEventSchedule.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useEventSchedule, environment: var1
+    var3 = function arg0, arg1() {
         _fun65166: for (var _fun65166_ip = 0;;) switch (_fun65166_ip) {
             case 0:
                 var4 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0, arg1) { // Original name: useEventScheduleById, environment: var1
+    var3 = function arg0, arg1() {
         _fun65167: for (var _fun65167_ip = 0;;) switch (_fun65167_ip) {
             case 0:
                 var5 = arg1;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useEventScheduleById = var3;
-    var1 = function(arg0, arg1) { // Original name: getEventSchedule, environment: var1
+    var1 = function arg0, arg1() {
         var4 = arg0;
         var3 = arg1;
         var2 = _closure1_slot4;

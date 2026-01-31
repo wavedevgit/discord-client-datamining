@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot4 = var1;
     var1 = {};
-    var3 = function(arg0) { // Original name: customScoreGuild, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.guildId;
         var _closure2_slot0 = var2;

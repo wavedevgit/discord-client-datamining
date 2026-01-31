@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: NoSearchResultsScreen, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var5 = var1.searchContext;
         var _closure2_slot0 = var5;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var6.searchTabs = var3;
                 var6.setActiveIndex = var8;
-                var3 = function(arg0) { // Original name: useSelectMediaTab, environment: var0
+                var3 = function arg0() {
                     var1 = arg0;
                     var6 = var1.searchTabs;
                     var _closure3_slot0 = var6;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot11 = var12;
                 var7 = _closure1_slot3;
                 var6 = var7.useCallback;
-                var3 = function(arg0) { // Original name: G, environment: var0
+                var3 = function arg0() {
                     _fun105199: for (var _fun105199_ip = 0;;) switch (_fun105199_ip) {
                         case 0:
                             var0 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var6.bind(var7)(var3, var2);
                 var7 = _closure1_slot3;
                 var6 = var7.useCallback;
-                var3 = function() { // Original name: E, environment: var0
+                var3 = function() {
                     _fun105200: for (var _fun105200_ip = 0;;) switch (_fun105200_ip) {
                         case 0:
                             var3 = _closure2_slot11;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var6.bind(var7)(var3, var2);
                 var7 = _closure1_slot3;
                 var6 = var7.useCallback;
-                var3 = function(arg0) { // Original name: I, environment: var0
+                var3 = function arg0() {
                     _fun105201: for (var _fun105201_ip = 0;;) switch (_fun105201_ip) {
                         case 0:
                             var0 = arg0;
@@ -672,7 +672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var0
                     _fun105205: for (var _fun105205_ip = 0;;) switch (_fun105205_ip) {
                         case 0:
-                            var4 = function(arg0) { // Original name: handleChannelDetailsHidden, environment: var0
+                            var4 = function arg0() {
                                 _fun105206: for (var _fun105206_ip = 0;;) switch (_fun105206_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/tabs/SearchTabsLayout.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedSearchTabsLayout, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.searchContext;
         var4 = var0.width;

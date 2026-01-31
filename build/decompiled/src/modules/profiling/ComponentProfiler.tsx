@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: formatString, environment: var1
+    var0 = function arg0, arg1() {
         _fun70168: for (var _fun70168_ip = 0;;) switch (_fun70168_ip) {
             case 0:
                 var4 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: StatCollector, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'addValue';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun70171: for (var _fun70171_ip = 0;;) switch (_fun70171_ip) {
                 case 0:
                     var1 = this;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'mean';
         var0.key = var5;
-        var4 = function() { // Original name: get, environment: var4
+        var4 = function() {
             var0 = this;
             var1 = var0.totalMicroseconds;
             var0 = var0.count;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/profiling/ComponentProfiler.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: ComponentProfiler, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var5 = var0.id;
         var0 = var0.children;
@@ -272,19 +272,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.StatCollector = var3;
-    var3 = function() { // Original name: clearComponentRenderStats, environment: var1
+    var3 = function() {
         var0 = {};
         _closure1_slot5 = var0;
         var0 = undefined;
         return var0;
     };
     var2.clearComponentRenderStats = var3;
-    var3 = function() { // Original name: getComponentRenderStats, environment: var1
+    var3 = function() {
         var0 = _closure1_slot5;
         return var0;
     };
     var2.getComponentRenderStats = var3;
-    var3 = function() { // Original name: serializeComponentRenderAverages, environment: var1
+    var3 = function() {
         _fun70177: for (var _fun70177_ip = 0;;) switch (_fun70177_ip) {
             case 0:
                 var3 = global;
@@ -440,28 +440,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.serializeComponentRenderAverages = var3;
-    var3 = function() { // Original name: resetComponentProfiler, environment: var1
+    var3 = function() {
         var0 = {};
         _closure1_slot5 = var0;
         var0 = undefined;
         return var0;
     };
     var2.resetComponentProfiler = var3;
-    var3 = function() { // Original name: pauseComponentProfiler, environment: var1
+    var3 = function() {
         var0 = false;
         _closure1_slot6 = var0;
         var0 = undefined;
         return var0;
     };
     var2.pauseComponentProfiler = var3;
-    var3 = function() { // Original name: resumeComponentProfiler, environment: var1
+    var3 = function() {
         var0 = true;
         _closure1_slot6 = var0;
         var0 = undefined;
         return var0;
     };
     var2.resumeComponentProfiler = var3;
-    var1 = function() { // Original name: dumpStats, environment: var1
+    var1 = function() {
         var0 = _closure1_slot5;
         return var0;
     };

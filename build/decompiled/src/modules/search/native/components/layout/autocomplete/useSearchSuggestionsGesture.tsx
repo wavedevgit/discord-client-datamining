@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: inBoundingBox, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun105056: for (var _fun105056_ip = 0;;) switch (_fun105056_ip) {
                 case 0:
                     var2 = arg1;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/layout/autocomplete/useSearchSuggestionsGesture.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSearchSuggestionsGesture, environment: var1
+    var1 = function arg0() {
         _fun105057: for (var _fun105057_ip = 0;;) switch (_fun105057_ip) {
             case 0:
                 var11 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = true;
                     var2 = var1.bind(var2)(var0);
                     var1 = var2.onTouchesDown;
-                    var0 = function(arg0, arg1) { // Original name: e, environment: var0
+                    var0 = function arg0, arg1() {
                         _fun105061: for (var _fun105061_ip = 0;;) switch (_fun105061_ip) {
                             case 0:
                                 var1 = arg1;

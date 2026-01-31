@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var12;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var13;
-    var10 = function(arg0, arg1) { // Original name: getNextBucketedTime, environment: var1
+    var10 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var0 = var2.minutes;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var10;
-    var9 = function(arg0) { // Original name: convertJSDayToRRuleDay, environment: var1
+    var9 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 3;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var9;
-    var0 = function(arg0, arg1) { // Original name: _getSchedule, environment: var1
+    var0 = function arg0, arg1() {
         _fun64861: for (var _fun64861_ip = 0;;) switch (_fun64861_ip) {
             case 0:
                 var8 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var8 = function(arg0) { // Original name: getScheduleFromEvent, environment: var1
+    var8 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot19;
         var2 = var0.scheduled_start_time;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var8;
-    var7 = function(arg0, arg1) { // Original name: areDatesIdentical, environment: var1
+    var7 = function arg0, arg1() {
         _fun64863: for (var _fun64863_ip = 0;;) switch (_fun64863_ip) {
             case 0:
                 var1 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var7;
-    var6 = function(arg0) { // Original name: getRRule, environment: var1
+    var6 = function arg0() {
         _fun64864: for (var _fun64864_ip = 0;;) switch (_fun64864_ip) {
             case 0:
                 var1 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var6;
-    var5 = function(arg0) { // Original name: getNextRecurrenceInEvent, environment: var1
+    var5 = function arg0() {
         _fun64866: for (var _fun64866_ip = 0;;) switch (_fun64866_ip) {
             case 0:
                 var1 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var5;
-    var4 = function(arg0) { // Original name: getValidWeekdays, environment: var1
+    var4 = function arg0() {
         _fun64867: for (var _fun64867_ip = 0;;) switch (_fun64867_ip) {
             case 0:
                 var5 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var4;
-    var3 = function(arg0) { // Original name: getValidWeekends, environment: var1
+    var3 = function arg0() {
         _fun64868: for (var _fun64868_ip = 0;;) switch (_fun64868_ip) {
             case 0:
                 var5 = arg0;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = new var21[var15](var20, var19);
     var11 = var11 instanceof Object ? var11 : var14;
     var _closure1_slot14 = var11;
-    var11 = function(arg0, arg1) { // Original name: formatDatePreferShorter, environment: var1
+    var11 = function arg0, arg1() {
         _fun64869: for (var _fun64869_ip = 0;;) switch (_fun64869_ip) {
             case 0:
                 var3 = arg0;
@@ -689,7 +689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var11;
-    var11 = function(arg0, arg1) { // Original name: formatDatePrefersRelativeTime, environment: var1
+    var11 = function arg0, arg1() {
         _fun64870: for (var _fun64870_ip = 0;;) switch (_fun64870_ip) {
             case 0:
                 var4 = arg0;
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MAX_DAYS_AHEAD_AN_EVENT_CAN_END = var11;
     var11 = 4;
     var2.MAX_YEARS_AHEAD_RECURRING_EVENT = var11;
-    var11 = function(arg0) { // Original name: getRecurrenceOptions, environment: var1
+    var11 = function arg0() {
         _fun64871: for (var _fun64871_ip = 0;;) switch (_fun64871_ip) {
             case 0:
                 var2 = arg0;
@@ -995,7 +995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getInitialEventStartDate = var11;
-    var11 = function(arg0) { // Original name: getInitialEventEndDate, environment: var1
+    var11 = function arg0() {
         _fun64873: for (var _fun64873_ip = 0;;) switch (_fun64873_ip) {
             case 0:
                 var2 = arg0;
@@ -1036,7 +1036,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInitialEventEndDate = var11;
     var2.getNextBucketedTime = var10;
-    var10 = function(arg0, arg1, arg2) { // Original name: getEventTimeData, environment: var1
+    var10 = function arg0, arg1, arg2() {
         _fun64874: for (var _fun64874_ip = 0;;) switch (_fun64874_ip) {
             case 0:
                 var0 = arg1;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEventTimeData = var10;
     var2.convertJSDayToRRuleDay = var9;
-    var9 = function(arg0, arg1) { // Original name: getBaseScheduleForRecurrence, environment: var1
+    var9 = function arg0, arg1() {
         _fun64875: for (var _fun64875_ip = 0;;) switch (_fun64875_ip) {
             case 0:
                 var3 = _closure1_slot20;
@@ -1204,7 +1204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getBaseScheduleForRecurrence = var9;
-    var9 = function(arg0, arg1) { // Original name: getScheduleForRecurrenceWithException, environment: var1
+    var9 = function arg0, arg1() {
         _fun64876: for (var _fun64876_ip = 0;;) switch (_fun64876_ip) {
             case 0:
                 var0 = arg0;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getScheduleForRecurrenceWithException = var9;
-    var9 = function(arg0) { // Original name: getScheduleFromEventData, environment: var1
+    var9 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot19;
         var2 = var0.scheduledStartTime;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getScheduleFromEventData = var9;
     var2.getScheduleFromEvent = var8;
-    var8 = function(arg0, arg1) { // Original name: hasValidSchedule, environment: var1
+    var8 = function arg0, arg1() {
         _fun64878: for (var _fun64878_ip = 0;;) switch (_fun64878_ip) {
             case 0:
                 var0 = arg0;
@@ -1340,7 +1340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasValidSchedule = var8;
     var2.areDatesIdentical = var7;
-    var7 = function(arg0, arg1) { // Original name: areSchedulesIdentical, environment: var1
+    var7 = function arg0, arg1() {
         _fun64879: for (var _fun64879_ip = 0;;) switch (_fun64879_ip) {
             case 0:
                 var1 = arg0;
@@ -1389,7 +1389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.areSchedulesIdentical = var7;
     var2.getRRule = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: generateNextRecurrences, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun64880: for (var _fun64880_ip = 0;;) switch (_fun64880_ip) {
             case 0:
                 var2 = arg0;
@@ -1500,7 +1500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateNextRecurrences = var6;
     var2.getNextRecurrenceInEvent = var5;
-    var5 = function(arg0) { // Original name: getNextRecurrenceIdInEvent, environment: var1
+    var5 = function arg0() {
         _fun64882: for (var _fun64882_ip = 0;;) switch (_fun64882_ip) {
             case 0:
                 var3 = arg0;
@@ -1551,7 +1551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getNextRecurrenceIdInEvent = var5;
-    var5 = function(arg0, arg1) { // Original name: isValidRecurrence, environment: var1
+    var5 = function arg0, arg1() {
         _fun64883: for (var _fun64883_ip = 0;;) switch (_fun64883_ip) {
             case 0:
                 var3 = arg0;
@@ -1675,7 +1675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isValidRecurrence = var5;
     var2.getValidWeekdays = var4;
     var2.getValidWeekends = var3;
-    var3 = function(arg0, arg1) { // Original name: recurrenceOptionToRecurrenceRule, environment: var1
+    var3 = function arg0, arg1() {
         _fun64884: for (var _fun64884_ip = 0;;) switch (_fun64884_ip) {
             case 0:
                 var9 = arg0;
@@ -1987,7 +1987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.recurrenceOptionToRecurrenceRule = var3;
-    var3 = function(arg0, arg1) { // Original name: recurrenceRuleToOption, environment: var1
+    var3 = function arg0, arg1() {
         _fun64886: for (var _fun64886_ip = 0;;) switch (_fun64886_ip) {
             case 0:
                 var7 = arg0;
@@ -2151,7 +2151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.recurrenceRuleToOption = var3;
-    var3 = function(arg0, arg1) { // Original name: hasScheduleChanges, environment: var1
+    var3 = function arg0, arg1() {
         _fun64887: for (var _fun64887_ip = 0;;) switch (_fun64887_ip) {
             case 0:
                 var2 = arg0;
@@ -2198,7 +2198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasScheduleChanges = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: getRecurrenceStatus, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun64888: for (var _fun64888_ip = 0;;) switch (_fun64888_ip) {
             case 0:
                 var1 = arg0;

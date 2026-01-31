@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: makeAutocompleterSearchParams, environment: var1
+    var3 = function arg0() {
         _fun72416: for (var _fun72416_ip = 0;;) switch (_fun72416_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/share/useShareSearchResults.tsx';
     var4 = var5.bind(var6)(var4);
     var2.makeAutocompleterSearchParams = var3;
-    var1 = function(arg0) { // Original name: useShareSearchResults, environment: var1
+    var1 = function arg0() {
         _fun72417: for (var _fun72417_ip = 0;;) switch (_fun72417_ip) {
             case 0:
                 var0 = arg0;

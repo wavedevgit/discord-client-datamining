@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var14;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var15;
-    var11 = function() { // Original name: shouldAgeVerifyForAgeGate, environment: var1
+    var11 = function() {
         _fun40979: for (var _fun40979_ip = 0;;) switch (_fun40979_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var11;
-    var10 = function() { // Original name: useShouldAgeVerifyForAgeGate, environment: var1
+    var10 = function() {
         _fun40980: for (var _fun40980_ip = 0;;) switch (_fun40980_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var10;
-    var4 = function(arg0) { // Original name: isChannelContentGated, environment: var1
+    var4 = function arg0() {
         _fun40981: for (var _fun40981_ip = 0;;) switch (_fun40981_ip) {
             case 0:
                 var3 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var3 = function() { // Original name: isCurrentUserMissingDateOfBirth, environment: var1
+    var3 = function() {
         _fun40982: for (var _fun40982_ip = 0;;) switch (_fun40982_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = new var19[var7](var18, var17);
     var12 = var5 instanceof Object ? var5 : var6;
     var _closure1_slot12 = var12;
-    var9 = function() { // Original name: shouldShowAgeGateForCurrentUser, environment: var1
+    var9 = function() {
         _fun40983: for (var _fun40983_ip = 0;;) switch (_fun40983_ip) {
             case 0:
                 var2 = _closure1_slot7;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var9;
-    var8 = function(arg0) { // Original name: shouldShowAgeGateForGuildContentLevel, environment: var1
+    var8 = function arg0() {
         _fun40984: for (var _fun40984_ip = 0;;) switch (_fun40984_ip) {
             case 0:
                 var5 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var8;
-    var7 = function(arg0) { // Original name: shouldShowAgeGateForChannelId, environment: var1
+    var7 = function arg0() {
         _fun40985: for (var _fun40985_ip = 0;;) switch (_fun40985_ip) {
             case 0:
                 var5 = arg0;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var7;
-    var6 = function(arg0) { // Original name: shouldShowAgeGateForVoiceChannel, environment: var1
+    var6 = function arg0() {
         _fun40986: for (var _fun40986_ip = 0;;) switch (_fun40986_ip) {
             case 0:
                 var0 = _closure1_slot18;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var6;
-    var5 = function(arg0) { // Original name: isChannelOrGuildNSFW, environment: var1
+    var5 = function arg0() {
         _fun40987: for (var _fun40987_ip = 0;;) switch (_fun40987_ip) {
             case 0:
                 var2 = arg0;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = 'modules/age_gate/AgeGateUtils.tsx';
     var13 = var14.bind(var15)(var13);
     var2.SERVER_AGE_GATE_SOURCES = var12;
-    var12 = function() { // Original name: userNeedsAgeGate, environment: var1
+    var12 = function() {
         _fun40988: for (var _fun40988_ip = 0;;) switch (_fun40988_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.userNeedsAgeGate = var12;
-    var12 = function(arg0) { // Original name: guildNeedsAgeGate, environment: var1
+    var12 = function arg0() {
         var2 = _closure1_slot11;
         var1 = var2.includes;
         var0 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.guildNeedsAgeGate = var12;
     var2.shouldAgeVerifyForAgeGate = var11;
     var2.useShouldAgeVerifyForAgeGate = var10;
-    var10 = function(arg0) { // Original name: useAgeGateVerifyContentForGuild, environment: var1
+    var10 = function arg0() {
         _fun40990: for (var _fun40990_ip = 0;;) switch (_fun40990_ip) {
             case 0:
                 var11 = _closure1_slot0;
@@ -919,7 +919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useAgeGateVerifyContentForGuild = var10;
-    var10 = function(arg0) { // Original name: useAgeGateVerifyContent, environment: var1
+    var10 = function arg0() {
         _fun40992: for (var _fun40992_ip = 0;;) switch (_fun40992_ip) {
             case 0:
                 var3 = arg0;
@@ -1483,7 +1483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.maybeOpenAgeGateForVoiceChannel = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: maybeShowAgeGate, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun40995: for (var _fun40995_ip = 0;;) switch (_fun40995_ip) {
             case 0:
                 var3 = arg2;
@@ -1638,7 +1638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.userCannotSeeNSFWContent = var5;
     var2.isChannelContentGated = var4;
-    var4 = function(arg0) { // Original name: useIsChannelContentGated, environment: var1
+    var4 = function arg0() {
         _fun40998: for (var _fun40998_ip = 0;;) switch (_fun40998_ip) {
             case 0:
                 var7 = arg0;
@@ -1831,7 +1831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsChannelContentGated = var4;
     var2.isCurrentUserMissingDateOfBirth = var3;
-    var3 = function() { // Original name: shouldAgeVerifyForSettingsToggles, environment: var1
+    var3 = function() {
         _fun41002: for (var _fun41002_ip = 0;;) switch (_fun41002_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -1876,7 +1876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldAgeVerifyForSettingsToggles = var3;
-    var1 = function() { // Original name: useShouldAgeVerifyForSettingsToggles, environment: var1
+    var1 = function() {
         _fun41003: for (var _fun41003_ip = 0;;) switch (_fun41003_ip) {
             case 0:
                 var4 = _closure1_slot0;

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/utils/native/openEditNoteModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openEditNoteModal, environment: var1
+    var1 = function arg0() {
         _fun91808: for (var _fun91808_ip = 0;;) switch (_fun91808_ip) {
             case 0:
                 var3 = _closure1_slot1;

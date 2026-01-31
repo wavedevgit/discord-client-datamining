@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function(arg0) { // Original name: getSelectedSpecialNavigationPath, environment: var1
+    var3 = function arg0() {
         _fun91406: for (var _fun91406_ip = 0;;) switch (_fun91406_ip) {
             case 0:
                 var0 = arg0;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.SpecialNavigationPath = var4;
     var2.getSelectedSpecialNavigationPath = var3;
-    var1 = function() { // Original name: useSelectedSpecialNavigationPath, environment: var1
+    var1 = function() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun70685: for (var _fun70685_ip = 0;;) switch (_fun70685_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun70687: for (var _fun70687_ip = 0;;) switch (_fun70687_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var5 = function(arg0, arg1) { // Original name: generateHydrationId, environment: var1
+    var5 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var5;
-    var3 = function() { // Original name: hydrateItems, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var3;
-    var0 = function() { // Original name: _hydrateItems, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _hydrateNextPage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _regenerateFeedAndClearReadStates, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.generateHydrationId = var5;
     var2.ICYMICustomScore = var4;
-    var4 = function(arg0) { // Original name: isGuildItem, environment: var1
+    var4 = function arg0() {
         _fun70708: for (var _fun70708_ip = 0;;) switch (_fun70708_ip) {
             case 0:
                 var2 = arg0;
@@ -1021,7 +1021,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isGuildItem = var4;
-    var4 = function(arg0) { // Original name: isChannelCustomScoreEligible, environment: var1
+    var4 = function arg0() {
         _fun70709: for (var _fun70709_ip = 0;;) switch (_fun70709_ip) {
             case 0:
                 var3 = arg0;
@@ -1054,7 +1054,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isChannelCustomScoreEligible = var4;
-    var4 = function(arg0) { // Original name: numberToCustomScore, environment: var1
+    var4 = function arg0() {
         _fun70710: for (var _fun70710_ip = 0;;) switch (_fun70710_ip) {
             case 0:
                 var1 = arg0;
@@ -1099,7 +1099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.numberToCustomScore = var4;
-    var4 = function(arg0) { // Original name: customScoreToNumber, environment: var1
+    var4 = function arg0() {
         _fun70711: for (var _fun70711_ip = 0;;) switch (_fun70711_ip) {
             case 0:
                 var1 = arg0;
@@ -1139,7 +1139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.customScoreToNumber = var4;
     var2.hydrateItems = var3;
-    var3 = function() { // Original name: hydrateNextPage, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -1150,7 +1150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hydrateNextPage = var3;
-    var3 = function(arg0) { // Original name: createGravityGeneratedCandidateFromServer, environment: var1
+    var3 = function arg0() {
         _fun70713: for (var _fun70713_ip = 0;;) switch (_fun70713_ip) {
             case 0:
                 var2 = arg0;
@@ -1241,7 +1241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createGravityGeneratedCandidateFromServer = var3;
-    var3 = function(arg0, arg1) { // Original name: createGravityMessageFromServer, environment: var1
+    var3 = function arg0, arg1() {
         _fun70714: for (var _fun70714_ip = 0;;) switch (_fun70714_ip) {
             case 0:
                 var1 = arg0;
@@ -1280,7 +1280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createGravityMessageFromServer = var3;
-    var3 = function(arg0, arg1) { // Original name: isItemUnreadInChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun70715: for (var _fun70715_ip = 0;;) switch (_fun70715_ip) {
             case 0:
                 var3 = _closure1_slot10;
@@ -1313,7 +1313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isItemUnreadInChannel = var3;
-    var3 = function(arg0) { // Original name: useGravityMessage, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -1376,7 +1376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGravityMessage = var3;
-    var3 = function(arg0) { // Original name: useGravityMessageItem, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot0;
@@ -1404,7 +1404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGravityMessageItem = var3;
-    var3 = function(arg0, arg1) { // Original name: useICYMIMessage, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;
@@ -1470,7 +1470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useICYMIMessage = var3;
-    var3 = function(arg0) { // Original name: icymiEnabled, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 16;
@@ -1483,7 +1483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.icymiEnabled = var3;
-    var3 = function(arg0) { // Original name: customStatusToContentInventoryEntry, environment: var1
+    var3 = function arg0() {
         _fun70723: for (var _fun70723_ip = 0;;) switch (_fun70723_ip) {
             case 0:
                 var1 = arg0;
@@ -1559,7 +1559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.customStatusToContentInventoryEntry = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: compareGravityUnreadIds, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun70724: for (var _fun70724_ip = 0;;) switch (_fun70724_ip) {
             case 0:
                 var6 = arg0;
@@ -1640,7 +1640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.compareGravityUnreadIds = var3;
-    var3 = function(arg0) { // Original name: getViewableFeedItemsArray, environment: var1
+    var3 = function arg0() {
         _fun70725: for (var _fun70725_ip = 0;;) switch (_fun70725_ip) {
             case 0:
                 var10 = arg0;
@@ -1739,7 +1739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getViewableFeedItemsArray = var3;
-    var3 = function(arg0) { // Original name: isItemNSFW, environment: var1
+    var3 = function arg0() {
         _fun70727: for (var _fun70727_ip = 0;;) switch (_fun70727_ip) {
             case 0:
                 var0 = arg0;
@@ -1889,7 +1889,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isItemNSFW = var3;
-    var3 = function(arg0) { // Original name: itemToType, environment: var1
+    var3 = function arg0() {
         _fun70728: for (var _fun70728_ip = 0;;) switch (_fun70728_ip) {
             case 0:
                 var5 = arg0;
@@ -2035,7 +2035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.itemToType = var3;
-    var3 = function(arg0, arg1) { // Original name: determineContentType, environment: var1
+    var3 = function arg0, arg1() {
         _fun70729: for (var _fun70729_ip = 0;;) switch (_fun70729_ip) {
             case 0:
                 var3 = arg0;
@@ -2250,7 +2250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.determineContentType = var3;
-    var3 = function(arg0) { // Original name: contentTypeToText, environment: var1
+    var3 = function arg0() {
         _fun70732: for (var _fun70732_ip = 0;;) switch (_fun70732_ip) {
             case 0:
                 var3 = arg0;
@@ -2579,7 +2579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.contentTypeToText = var3;
-    var1 = function() { // Original name: regenerateFeedAndClearReadStates, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;

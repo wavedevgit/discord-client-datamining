@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: getCurrentScope, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = function() { // Original name: getClient, environment: var0
+    var3 = function() {
         var1 = _closure1_slot2;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getClient = var3;
     var1.getCurrentScope = var2;
-    var2 = function() { // Original name: getGlobalScope, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getGlobalScope = var2;
-    var2 = function() { // Original name: getIsolationScope, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getIsolationScope = var2;
-    var2 = function(arg0) { // Original name: getTraceContextFromScope, environment: var0
+    var2 = function arg0() {
         _fun8963: for (var _fun8963_ip = 0;;) switch (_fun8963_ip) {
             case 0:
                 var1 = arg0;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getTraceContextFromScope = var2;
-    var2 = function() { // Original name: withIsolationScope, environment: var0
+    var2 = function() {
         _fun8964: for (var _fun8964_ip = 0;;) switch (_fun8964_ip) {
             case 0:
                 var5 = undefined;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.withIsolationScope = var2;
-    var0 = function() { // Original name: withScope, environment: var0
+    var0 = function() {
         _fun8965: for (var _fun8965_ip = 0;;) switch (_fun8965_ip) {
             case 0:
                 var5 = undefined;

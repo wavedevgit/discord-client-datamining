@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.overflowComponent = var11;
                 var5.items = var10;
                 var5.max = var9;
-                var8 = function(arg0, arg1) { // Original name: renderItem, environment: var8
+                var8 = function arg0, arg1() {
                     _fun102104: for (var _fun102104_ip = 0;;) switch (_fun102104_ip) {
                         case 0:
                             var3 = _closure1_slot4;

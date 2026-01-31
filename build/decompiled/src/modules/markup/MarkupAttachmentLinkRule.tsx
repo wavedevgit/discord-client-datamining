@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.order = var6;
     var6 = ['h'];
     var3.requiredFirstCharacters = var6;
-    var6 = function(arg0) { // Original name: match, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.exec;
         var0 = arg0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.match = var6;
-    var5 = function(arg0) { // Original name: parse, environment: var5
+    var5 = function arg0() {
         var1 = arg0;
         var0 = 0;
         var2 = var1[var0];

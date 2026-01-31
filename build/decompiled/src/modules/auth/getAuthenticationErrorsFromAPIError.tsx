@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/getAuthenticationErrorsFromAPIError.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getAuthenticationErrorsFromAPIError, environment: var1
+    var3 = function arg0() {
         _fun60529: for (var _fun60529_ip = 0;;) switch (_fun60529_ip) {
             case 0:
                 var4 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAuthenticationErrorsFromAPIError = var3;
-    var1 = function(arg0) { // Original name: getAuthenticationErrorsFromV6OrEarlierAPIError, environment: var1
+    var1 = function arg0() {
         _fun60530: for (var _fun60530_ip = 0;;) switch (_fun60530_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CodeRow, environment: var1
+    var0 = function arg0() {
         _fun60716: for (var _fun60716_ip = 0;;) switch (_fun60716_ip) {
             case 0:
                 var1 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/UserSettingsAccountBackupCodes.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserSettingsAccountBackupCodes, environment: var1
+    var1 = function arg0() {
         _fun60718: for (var _fun60718_ip = 0;;) switch (_fun60718_ip) {
             case 0:
                 var0 = arg0;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.children = var22;
                 var19 = var21.bind(var3)(var20, var19);
                 var15.label = var19;
-                var18 = function() { // Original name: onPress, environment: var18
+                var18 = function() {
                     var2 = _closure1_slot6;
                     var1 = var2.getVerificationKey;
                     var4 = var1.bind(var2)();

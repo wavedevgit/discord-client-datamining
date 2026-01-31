@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun16561: for (var _fun16561_ip = 0;;) switch (_fun16561_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun16563: for (var _fun16563_ip = 0;;) switch (_fun16563_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: deepEqualImpl, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun16564: for (var _fun16564_ip = 0;;) switch (_fun16564_ip) {
             case 0:
                 var3 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: deepEqual, environment: var4
+    var0 = function arg0, arg1() {
         var5 = _closure1_slot8;
         var0 = global;
         var0 = var0.Map;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: doDualReadValidation, environment: var4
+    var3 = function arg0, arg1, arg2() {
         _fun16566: for (var _fun16566_ip = 0;;) switch (_fun16566_ip) {
             case 0:
                 var7 = arg0;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: validateRecord, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun16567: for (var _fun16567_ip = 0;;) switch (_fun16567_ip) {
             case 0:
                 var3 = arg1;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: isPlainObject, environment: var4
+    var0 = function arg0() {
         _fun16568: for (var _fun16568_ip = 0;;) switch (_fun16568_ip) {
             case 0:
                 var2 = arg0;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var1 = function(arg0, arg1) { // Original name: logErrorsToAnalytics, environment: var4
+    var1 = function arg0, arg1() {
         _fun16569: for (var _fun16569_ip = 0;;) switch (_fun16569_ip) {
             case 0:
                 var6 = arg0;
@@ -899,12 +899,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun16569
                 }
             case 256:
-                var4 = function(arg0, arg1) { // Original name: generateErrorReport, environment: var4
+                var4 = function arg0, arg1() {
                     _fun16570: for (var _fun16570_ip = 0;;) switch (_fun16570_ip) {
                         case 0:
                             var23 = arg0;
                             var _closure3_slot0 = var23;
-                            var22 = function(arg0) { // Original name: appendMismatch, environment: var0
+                            var22 = function arg0() {
                                 _fun16571: for (var _fun16571_ip = 0;;) switch (_fun16571_ip) {
                                     case 0:
                                         var1 = 0;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var _closure3_slot2 = var22;
-                            var21 = function(arg0, arg1, arg2) { // Original name: appendDeepMismatches, environment: var0
+                            var21 = function arg0, arg1, arg2() {
                                 _fun16572: for (var _fun16572_ip = 0;;) switch (_fun16572_ip) {
                                     case 0:
                                         var16 = arg0;
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var _closure3_slot3 = var21;
-                            var20 = function(arg0, arg1, arg2) { // Original name: appendArrayMismatches, environment: var0
+                            var20 = function arg0, arg1, arg2() {
                                 _fun16573: for (var _fun16573_ip = 0;;) switch (_fun16573_ip) {
                                     case 0:
                                         var4 = arg1;
@@ -1448,7 +1448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var1;
-    var0 = function(arg0) { // Original name: getType, environment: var4
+    var0 = function arg0() {
         _fun16574: for (var _fun16574_ip = 0;;) switch (_fun16574_ip) {
             case 0:
                 var5 = arg0;
@@ -1516,7 +1516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/libdiscore/stores/DualReadUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0, arg1, arg2) { // Original name: runDualReadValidation, environment: var4
+    var4 = function arg0, arg1, arg2() {
         var3 = new Array(0);
         var _closure2_slot0 = var3;
         var4 = arg2;
@@ -1531,7 +1531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2 = var4.bind(var0)(var2);
-        var1 = function(arg0, arg1, arg2) { // Original name: logErrors, environment: var1
+        var1 = function arg0, arg1, arg2() {
             _fun16577: for (var _fun16577_ip = 0;;) switch (_fun16577_ip) {
                 case 0:
                     var4 = arg2;
@@ -1591,8 +1591,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         case 18:
                                             var3 = var0.primaryValue;
                                             var2 = var0.shadowValue;
-                                            var1 = function(arg0, arg1) { // Original name: logDiff, environment: var0
-                                                var3 = function(arg0, arg1) { // Original name: impl, environment: var1
+                                            var1 = function arg0, arg1() {
+                                                var3 = function arg0, arg1() {
                                                     _fun16581: for (var _fun16581_ip = 0;;) switch (_fun16581_ip) {
                                                         case 0:
                                                             var3 = arg0;

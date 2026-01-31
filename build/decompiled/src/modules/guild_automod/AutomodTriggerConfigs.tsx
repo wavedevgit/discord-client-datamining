@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = {};
     var4 = var11.SPAM_LINK;
     var3 = {};
-    var15 = function() { // Original name: getDefaultRuleName, environment: var1
+    var15 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5[var4] = var3;
     var4 = var11.KEYWORD;
     var3 = {};
-    var14 = function() { // Original name: getDefaultRuleName, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5[var4] = var3;
     var4 = var11.ML_SPAM;
     var3 = {};
-    var14 = function() { // Original name: getDefaultRuleName, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5[var4] = var3;
     var4 = var11.DEFAULT_KEYWORD_LIST;
     var3 = {};
-    var14 = function() { // Original name: getDefaultRuleName, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5[var4] = var3;
     var4 = var11.MENTION_SPAM;
     var3 = {};
-    var14 = function() { // Original name: getDefaultRuleName, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5[var4] = var3;
     var4 = var11.USER_PROFILE;
     var3 = {};
-    var14 = function() { // Original name: getDefaultRuleName, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5[var4] = var3;
     var4 = var11.SERVER_POLICY;
     var3 = {};
-    var14 = function() { // Original name: getDefaultRuleName, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.checkTriggerTypeForFlag = var3;
-    var3 = function(arg0) { // Original name: getAvailableActionTypes, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var2 = var0.Array;
         var1 = var2.from;
@@ -578,7 +578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAvailableActionTypes = var3;
-    var3 = function(arg0, arg1) { // Original name: validateRuleByTriggerConfigOrThrow, environment: var1
+    var3 = function arg0, arg1() {
         _fun115117: for (var _fun115117_ip = 0;;) switch (_fun115117_ip) {
             case 0:
                 var0 = arg0;
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.validateRuleByTriggerConfigOrThrow = var3;
-    var3 = function(arg0) { // Original name: useAvailableTriggerTypes, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
         var2 = 3;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAvailableTriggerTypes = var3;
-    var1 = function(arg0, arg1) { // Original name: getDefaultTriggerMetadataForTriggerType, environment: var1
+    var1 = function arg0, arg1() {
         _fun115125: for (var _fun115125_ip = 0;;) switch (_fun115125_ip) {
             case 0:
                 var4 = arg0;

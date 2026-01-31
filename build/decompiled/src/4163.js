@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {};
-    var2 = function() { // Original name: get, environment: var2
+    var2 = function() {
         _fun38187: for (var _fun38187_ip = 0;;) switch (_fun38187_ip) {
             case 0:
                 var0 = global;

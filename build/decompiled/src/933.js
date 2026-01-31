@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0) { // Original name: isJsonRpcNotification, environment: var0
+    var2 = function arg0() {
         _fun9722: for (var _fun9722_ip = 0;;) switch (_fun9722_ip) {
             case 0:
                 var2 = arg0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isJsonRpcNotification = var2;
-    var2 = function(arg0) { // Original name: isJsonRpcRequest, environment: var0
+    var2 = function arg0() {
         _fun9723: for (var _fun9723_ip = 0;;) switch (_fun9723_ip) {
             case 0:
                 var2 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isJsonRpcRequest = var2;
-    var2 = function(arg0) { // Original name: isJsonRpcResponse, environment: var0
+    var2 = function arg0() {
         _fun9724: for (var _fun9724_ip = 0;;) switch (_fun9724_ip) {
             case 0:
                 var3 = arg0;
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isJsonRpcResponse = var2;
-    var2 = function(arg0) { // Original name: isValidContentItem, environment: var0
+    var2 = function arg0() {
         _fun9725: for (var _fun9725_ip = 0;;) switch (_fun9725_ip) {
             case 0:
                 var1 = arg0;
@@ -199,7 +199,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isValidContentItem = var2;
-    var0 = function(arg0) { // Original name: validateMcpServerInstance, environment: var0
+    var0 = function arg0() {
         _fun9726: for (var _fun9726_ip = 0;;) switch (_fun9726_ip) {
             case 0:
                 var2 = arg0;

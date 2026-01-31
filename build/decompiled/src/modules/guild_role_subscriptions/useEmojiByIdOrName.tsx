@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var1 = function(arg0, arg1) { // Original name: useEmojiByIdOrName, environment: var6
+    var1 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;

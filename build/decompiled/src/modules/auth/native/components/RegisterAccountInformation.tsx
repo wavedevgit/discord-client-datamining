@@ -166,10 +166,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/RegisterAccountInformation.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: RegisterAccountInformation, environment: var1
+    var1 = function() {
         _fun100363: for (var _fun100363_ip = 0;;) switch (_fun100363_ip) {
             case 0:
-                var23 = function() { // Original name: handleSubmit, environment: var0
+                var23 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot9;
                     var2 = var3.apply;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var0, var1);
                     return var0;
                 };
-                var1 = function() { // Original name: _handleSubmit, environment: var0
+                var1 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun95719: for (var _fun95719_ip = 0;;) switch (_fun95719_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: getFetchState, environment: var3
+    var0 = function arg0() {
         _fun95722: for (var _fun95722_ip = 0;;) switch (_fun95722_ip) {
             case 0:
                 var2 = _closure1_slot8;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var7 = function() { // Original name: resetStates, environment: var3
+    var7 = function() {
         var0 = {};
         _closure1_slot8 = var0;
         var0 = undefined;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildFriendshipStore, environment: var5
+        var3 = function() {
             _fun95725: for (var _fun95725_ip = 0;;) switch (_fun95725_ip) {
                 case 0:
                     var3 = this;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isFetchingFriendsForGuild';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var3 = _closure1_slot11;
             var2 = undefined;
             var1 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fetchFriendMembersIfNotFetched';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun95727: for (var _fun95727_ip = 0;;) switch (_fun95727_ip) {
                 case 0:
                     var5 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.LOGOUT = var7;
     var1.RELATIONSHIP_ADD = var7;
     var1.RELATIONSHIP_REMOVE = var7;
-    var3 = function(arg0) { // Original name: onMemberChunk, environment: var3
+    var3 = function arg0() {
         _fun95728: for (var _fun95728_ip = 0;;) switch (_fun95728_ip) {
             case 0:
                 var0 = arg0;

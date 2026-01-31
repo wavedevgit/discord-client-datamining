@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var7 = 100;
     var3.priority = var7;
-    var7 = function() { // Original name: tooltipHeader, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.tooltipHeader = var7;
-    var7 = function(arg0) { // Original name: tooltipDescription, environment: var1
+    var7 = function arg0() {
         _fun41735: for (var _fun41735_ip = 0;;) switch (_fun41735_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.tooltipDescription = var7;
-    var7 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.sectionHeader = var7;
-    var7 = function(arg0) { // Original name: sectionDescription, environment: var1
+    var7 = function arg0() {
         _fun41737: for (var _fun41737_ip = 0;;) switch (_fun41737_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.sectionDescription = var7;
-    var7 = function() { // Original name: timestampFormatter, environment: var1
+    var7 = function() {
         var0 = {};
         var6 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var27 = 200;
     var7.priority = var27;
-    var27 = function() { // Original name: tooltipHeader, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipHeader = var27;
-    var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
+    var27 = function arg0() {
         _fun41740: for (var _fun41740_ip = 0;;) switch (_fun41740_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.tooltipDescription = var27;
-    var27 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var27 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.sectionHeader = var27;
-    var27 = function(arg0) { // Original name: sectionDescription, environment: var1
+    var27 = function arg0() {
         _fun41742: for (var _fun41742_ip = 0;;) switch (_fun41742_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.sectionDescription = var27;
-    var27 = function() { // Original name: timestampFormatter, environment: var1
+    var27 = function() {
         var0 = {};
         var6 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var27 = 300;
     var7.priority = var27;
-    var27 = function() { // Original name: tooltipHeader, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipHeader = var27;
-    var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
+    var27 = function arg0() {
         _fun41745: for (var _fun41745_ip = 0;;) switch (_fun41745_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.tooltipDescription = var27;
-    var27 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var27 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.sectionHeader = var27;
-    var27 = function(arg0) { // Original name: sectionDescription, environment: var1
+    var27 = function arg0() {
         _fun41747: for (var _fun41747_ip = 0;;) switch (_fun41747_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.sectionDescription = var27;
-    var27 = function() { // Original name: timestampFormatter, environment: var1
+    var27 = function() {
         var0 = {};
         var6 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -641,7 +641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var27 = 400;
     var7.priority = var27;
-    var27 = function() { // Original name: tooltipHeader, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipHeader = var27;
-    var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
+    var27 = function arg0() {
         _fun41750: for (var _fun41750_ip = 0;;) switch (_fun41750_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -692,7 +692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.tooltipDescription = var27;
-    var27 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var27 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.sectionHeader = var27;
-    var27 = function(arg0) { // Original name: sectionDescription, environment: var1
+    var27 = function arg0() {
         _fun41752: for (var _fun41752_ip = 0;;) switch (_fun41752_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -754,7 +754,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var27 = 500;
     var7.priority = var27;
-    var27 = function() { // Original name: tooltipHeader, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipHeader = var27;
-    var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
+    var27 = function arg0() {
         _fun41754: for (var _fun41754_ip = 0;;) switch (_fun41754_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.tooltipDescription = var27;
-    var27 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var27 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.sectionHeader = var27;
-    var27 = function(arg0) { // Original name: sectionDescription, environment: var1
+    var27 = function arg0() {
         _fun41756: for (var _fun41756_ip = 0;;) switch (_fun41756_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -867,7 +867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var27 = 175;
     var7.priority = var27;
-    var27 = function() { // Original name: tooltipHeader, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipHeader = var27;
-    var27 = function() { // Original name: tooltipDescription, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -903,7 +903,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipDescription = var27;
-    var27 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var27 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.sectionHeader = var27;
-    var27 = function() { // Original name: sectionDescription, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -950,7 +950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var27 = 150;
     var7.priority = var27;
-    var27 = function() { // Original name: tooltipHeader, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -968,7 +968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.tooltipHeader = var27;
-    var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
+    var27 = function arg0() {
         _fun41762: for (var _fun41762_ip = 0;;) switch (_fun41762_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -1001,7 +1001,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.tooltipDescription = var27;
-    var27 = function(arg0) { // Original name: sectionHeader, environment: var1
+    var27 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.sectionHeader = var27;
-    var27 = function(arg0) { // Original name: sectionDescription, environment: var1
+    var27 = function arg0() {
         _fun41764: for (var _fun41764_ip = 0;;) switch (_fun41764_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -1097,7 +1097,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var26 = var5.GENERIC_ERROR;
     var25 = {};
-    var27 = function() { // Original name: header, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -1115,7 +1115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var25.header = var27;
-    var27 = function() { // Original name: description, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -1138,7 +1138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var26] = var25;
     var26 = var5.PENDING_REQUEST_EXISTS;
     var25 = {};
-    var27 = function() { // Original name: header, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var25.header = var27;
-    var27 = function(arg0) { // Original name: description, environment: var1
+    var27 = function arg0() {
         _fun41768: for (var _fun41768_ip = 0;;) switch (_fun41768_ip) {
             case 0:
                 var0 = arg0;
@@ -1210,7 +1210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var26] = var25;
     var26 = var5.MAX_CONNECTIONS_REACHED;
     var25 = {};
-    var27 = function(arg0) { // Original name: header, environment: var1
+    var27 = function arg0() {
         _fun41769: for (var _fun41769_ip = 0;;) switch (_fun41769_ip) {
             case 0:
                 var0 = arg0;
@@ -1244,7 +1244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var25.header = var27;
-    var27 = function(arg0) { // Original name: description, environment: var1
+    var27 = function arg0() {
         _fun41770: for (var _fun41770_ip = 0;;) switch (_fun41770_ip) {
             case 0:
                 var0 = arg0;
@@ -1289,7 +1289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var26] = var25;
     var26 = var5.INELIGIBLE_FOR_FAMILY_CENTER;
     var25 = {};
-    var27 = function() { // Original name: header, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;
@@ -1307,7 +1307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var25.header = var27;
-    var27 = function() { // Original name: description, environment: var1
+    var27 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;

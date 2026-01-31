@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(1);
     var3[0] = var6;
     var _closure1_slot8 = var3;
-    var3 = function() { // Original name: trackOpen, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_remediation_feedback/native/BlockUserFeedbackActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: BlockUserFeedbackActionSheet, environment: var1
+    var1 = function() {
         var1 = _closure1_slot1;
         var7 = _closure1_slot2;
         var0 = 5;

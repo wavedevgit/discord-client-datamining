@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useCanReapplyToRejectedMemberVerificationApplication, environment: var1
+    var1 = function arg0() {
         _fun59908: for (var _fun59908_ip = 0;;) switch (_fun59908_ip) {
             case 0:
                 var8 = arg0;

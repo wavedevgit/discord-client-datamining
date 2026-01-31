@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/AnalyticsFeedItemSeenActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: markAnalyticsFeedItemSeen, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.markAnalyticsFeedItemSeen = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: markAnalyticsFeedItemUnseen, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.markAnalyticsFeedItemUnseen = var3;
-    var1 = function(arg0, arg1) { // Original name: flushAnalyticsFeedItems, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

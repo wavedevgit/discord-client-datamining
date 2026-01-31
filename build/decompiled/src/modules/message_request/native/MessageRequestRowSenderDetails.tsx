@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/native/MessageRequestRowSenderDetails.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MessageRequestRowSenderDetails, environment: var1
+    var1 = function arg0() {
         _fun109477: for (var _fun109477_ip = 0;;) switch (_fun109477_ip) {
             case 0:
                 var1 = arg0;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun34659: for (var _fun34659_ip = 0;;) switch (_fun34659_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: SkipEntering, environment: var1
+    var0 = function arg0() {
         _fun34662: for (var _fun34662_ip = 0;;) switch (_fun34662_ip) {
             case 0:
                 var4 = arg0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var _closure1_slot12 = var3;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: LayoutAnimationConfig, environment: var5
+        var3 = function() {
             _fun34665: for (var _fun34665_ip = 0;;) switch (_fun34665_ip) {
                 case 0:
                     var3 = this;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'getMaybeWrappedChildren';
         var4.key = var0;
-        var0 = function() { // Original name: getMaybeWrappedChildren, environment: var5
+        var0 = function() {
             _fun34666: for (var _fun34666_ip = 0;;) switch (_fun34666_ip) {
                 case 0:
                     var2 = this;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'setShouldAnimateExiting';
         var4.key = var6;
-        var6 = function() { // Original name: setShouldAnimateExiting, environment: var5
+        var6 = function() {
             _fun34668: for (var _fun34668_ip = 0;;) switch (_fun34668_ip) {
                 case 0:
                     var0 = this;
@@ -318,7 +318,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: componentWillUnmount, environment: var5
+        var6 = function() {
             _fun34669: for (var _fun34669_ip = 0;;) switch (_fun34669_ip) {
                 case 0:
                     var2 = this;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun34670: for (var _fun34670_ip = 0;;) switch (_fun34670_ip) {
                 case 0:
                     var6 = this;

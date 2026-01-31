@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isTTF = var0;
     var2.isDOC = var0;
     var2.isPCAP = var0;
-    var3 = function(arg0) { // Original name: isBLEND, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isBLEND = var3;
-    var3 = function(arg0) { // Original name: isELF, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isELF = var3;
-    var3 = function(arg0) { // Original name: isEXE, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isEXE = var3;
-    var3 = function(arg0) { // Original name: isMACHO, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isMACHO = var3;
-    var3 = function(arg0) { // Original name: isINDD, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isINDD = var3;
-    var3 = function(arg0) { // Original name: isORC, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isORC = var3;
-    var3 = function(arg0) { // Original name: isPARQUET, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPARQUET = var3;
-    var3 = function(arg0) { // Original name: isPDF, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPDF = var3;
-    var3 = function(arg0) { // Original name: isPS, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPS = var3;
-    var3 = function(arg0) { // Original name: isRTF, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isRTF = var3;
-    var3 = function(arg0) { // Original name: isSQLITE, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -249,7 +249,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isSQLITE = var3;
-    var3 = function(arg0) { // Original name: isSTL, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isSTL = var3;
-    var3 = function(arg0) { // Original name: isTTF, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isTTF = var3;
-    var3 = function(arg0) { // Original name: isDOC, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isDOC = var3;
-    var1 = function(arg0) { // Original name: isPCAP, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;

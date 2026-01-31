@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useDmSpamFilterSettingOptions, environment: var7
+    var8 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.useDerivedDmSpamFilterSettingValue;
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onDmSpamFilterSettingValueChange, environment: var7
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: additionalSearchTerms, environment: var7
+    var7 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var1 = 5;

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/preloadUserBannerImage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: preloadUserBannerImage, environment: var1
+    var1 = function arg0, arg1() {
         _fun56911: for (var _fun56911_ip = 0;;) switch (_fun56911_ip) {
             case 0:
                 var6 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.key;
         return var0;
@@ -57,12 +57,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = new Array(0);
     var _closure1_slot8 = var3;
-    var3 = function() { // Original name: EMPTY_CALLBACK, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: renderItem, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot6;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/ContextMenu/native/ContextMenuContainer.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ContextMenuContainer, environment: var1
+    var1 = function() {
         _fun46362: for (var _fun46362_ip = 0;;) switch (_fun46362_ip) {
             case 0:
                 var2 = _closure1_slot0;

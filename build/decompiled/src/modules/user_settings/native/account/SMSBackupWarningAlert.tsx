@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/SMSBackupWarningAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SMSBackupWarningAlert, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.onConfirm;
         var _closure2_slot0 = var0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.N86XcP;
         var6 = var7.bind(var10)(var6);
         var0.confirmText = var6;
-        var6 = function() { // Original name: onConfirm, environment: var5
+        var6 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onConfirm = var6;
-        var5 = function() { // Original name: onCancel, environment: var5
+        var5 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 5;

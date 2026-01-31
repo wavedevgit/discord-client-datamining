@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Routes;
     var _closure1_slot9 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: selectChannel, environment: var3
+    var6 = function arg0() {
         _fun38580: for (var _fun38580_ip = 0;;) switch (_fun38580_ip) {
             case 0:
                 var0 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.selectChannel = var6;
-    var6 = function(arg0) { // Original name: selectPrivateChannel, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var0 = 5;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.selectPrivateChannel = var6;
-    var6 = function(arg0) { // Original name: selectVoiceChannel, environment: var3
+    var6 = function arg0() {
         _fun38582: for (var _fun38582_ip = 0;;) switch (_fun38582_ip) {
             case 0:
                 var7 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.selectVoiceChannel = var6;
-    var3 = function() { // Original name: disconnect, environment: var3
+    var3 = function() {
         _fun38583: for (var _fun38583_ip = 0;;) switch (_fun38583_ip) {
             case 0:
                 var5 = this;

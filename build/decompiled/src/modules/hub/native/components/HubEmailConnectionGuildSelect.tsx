@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.error = var8;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot11 = var1;
-    var1 = function(arg0) { // Original name: HubEmailConnectionGuildSelectRow, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.guildInfo;
         var10 = var0.signup;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var1;
-    var4 = function() { // Original name: HubEmailConnectionGuildSelectHeader, environment: var3
+    var4 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var6 = var0.bind(var3)();
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var4;
-    var4 = function(arg0) { // Original name: HubEmailConnectionGuildSelectFooter, environment: var3
+    var4 = function arg0() {
         _fun80399: for (var _fun80399_ip = 0;;) switch (_fun80399_ip) {
             case 0:
                 var0 = arg0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/hub/native/components/HubEmailConnectionGuildSelect.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: HubEmailConnectionGuildSelect, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.onClose;
         var _closure2_slot0 = var0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure2_slot4;
             var1 = var2.setOptions;
             var0 = {};
-            var3 = function() { // Original name: headerRight, environment: var3
+            var3 = function() {
                 var3 = _closure1_slot9;
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var2)(var4);
                 var4 = var4.MagnifyingGlassIcon;
                 var0.IconComponent = var4;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var3 = _closure2_slot4;
                     var2 = var3.push;
                     var0 = _closure1_slot8;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot7;
         var4 = {};
         var4.data = var12;
-        var12 = function() { // Original name: ListHeaderComponent, environment: var11
+        var12 = function() {
             var3 = _closure1_slot9;
             var2 = _closure1_slot13;
             var1 = undefined;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.ListHeaderComponent = var12;
-        var12 = function(arg0) { // Original name: renderItem, environment: var11
+        var12 = function arg0() {
             var0 = arg0;
             var5 = var0.item;
             var3 = _closure1_slot9;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.renderItem = var12;
-        var11 = function() { // Original name: ItemSeparatorComponent, environment: var11
+        var11 = function() {
             var3 = _closure1_slot9;
             var2 = _closure1_slot6;
             var1 = {};

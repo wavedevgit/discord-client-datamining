@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = function(arg0) { // Original name: Node, environment: var1
+    var0 = function arg0() {
         var1 = this;
         var0 = arg0;
         var1.data = var0;
@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var0;
-    var2 = function(arg0) { // Original name: RBTree, environment: var1
+    var2 = function arg0() {
         var1 = this;
         var0 = null;
         var1._root = var0;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         return var0;
     };
-    var3 = function(arg0) { // Original name: is_red, environment: var1
+    var3 = function arg0() {
         _fun93741: for (var _fun93741_ip = 0;;) switch (_fun93741_ip) {
             case 0:
                 var1 = arg0;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var3;
-    var3 = function(arg0, arg1) { // Original name: single_rotate, environment: var1
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var3 = arg1;
         var1 = var2.get_child;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var3;
-    var3 = function(arg0, arg1) { // Original name: double_rotate, environment: var1
+    var3 = function arg0, arg1() {
         var3 = arg0;
         var2 = arg1;
         var6 = var3.set_child;

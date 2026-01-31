@@ -13,13 +13,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.assertHasStateResponsePlugin = var0;
     var2.default = var0;
     var2.hasStateResponsePlugin = var0;
-    var3 = function() { // Original name: stateResponse, environment: var1
+    var3 = function() {
         var0 = function(arg0) { // Environment: var0
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
             var1 = {};
-            var3 = function(arg0, arg1) { // Original name: stateActionComplete, environment: var2
+            var3 = function arg0, arg1() {
                 _fun97613: for (var _fun97613_ip = 0;;) switch (_fun97613_ip) {
                     case 0:
                         var4 = undefined;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.stateActionComplete = var3;
-            var3 = function(arg0, arg1) { // Original name: stateValuesResponse, environment: var2
+            var3 = function arg0, arg1() {
                 _fun97614: for (var _fun97614_ip = 0;;) switch (_fun97614_ip) {
                     case 0:
                         var4 = undefined;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.stateValuesResponse = var3;
-            var3 = function(arg0, arg1) { // Original name: stateKeysResponse, environment: var2
+            var3 = function arg0, arg1() {
                 _fun97615: for (var _fun97615_ip = 0;;) switch (_fun97615_ip) {
                     case 0:
                         var4 = undefined;
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.stateKeysResponse = var3;
-            var3 = function(arg0) { // Original name: stateValuesChange, environment: var2
+            var3 = function arg0() {
                 _fun97616: for (var _fun97616_ip = 0;;) switch (_fun97616_ip) {
                     case 0:
                         var1 = arg0;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.stateValuesChange = var3;
-            var2 = function(arg0) { // Original name: stateBackupResponse, environment: var2
+            var2 = function arg0() {
                 var3 = _closure3_slot0;
                 var2 = var3.send;
                 var1 = {};
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: hasStateResponsePlugin, environment: var1
+    var3 = function arg0() {
         _fun97618: for (var _fun97618_ip = 0;;) switch (_fun97618_ip) {
             case 0:
                 var1 = arg0;
@@ -273,7 +273,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot0 = var3;
     var2.hasStateResponsePlugin = var3;
-    var1 = function(arg0) { // Original name: assertHasStateResponsePlugin, environment: var1
+    var1 = function arg0() {
         _fun97619: for (var _fun97619_ip = 0;;) switch (_fun97619_ip) {
             case 0:
                 var2 = _closure1_slot0;

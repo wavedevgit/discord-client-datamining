@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_notifications/native/ReactionNotification.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun76461: for (var _fun76461_ip = 0;;) switch (_fun76461_ip) {
             case 0:
                 var0 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var20.type;
             case 217:
                 var0 = var6.bind(var7)(var5, var0);
-                var23 = function() { // Original name: emojiHook, environment: var2
+                var23 = function() {
                     _fun76462: for (var _fun76462_ip = 0;;) switch (_fun76462_ip) {
                         case 0:
                             var2 = _closure2_slot5;

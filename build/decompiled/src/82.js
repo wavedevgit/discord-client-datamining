@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1) { // Original name: _getFilterAmount, environment: var1
+    var0 = function arg0, arg1() {
         _fun1481: for (var _fun1481_ip = 0;;) switch (_fun1481_ip) {
             case 0:
                 var1 = arg0;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: parseDropShadow, environment: var1
+    var0 = function arg0() {
         _fun1482: for (var _fun1482_ip = 0;;) switch (_fun1482_ip) {
             case 0:
                 var5 = arg0;
@@ -541,7 +541,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: parseLength, environment: var1
+    var0 = function arg0() {
         _fun1483: for (var _fun1483_ip = 0;;) switch (_fun1483_ip) {
             case 0:
                 var2 = /([+-]?\d*(\.\d+)?)([\w\W]+)?/g;
@@ -618,7 +618,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: processFilter, environment: var1
+    var1 = function arg0() {
         _fun1484: for (var _fun1484_ip = 0;;) switch (_fun1484_ip) {
             case 0:
                 var4 = arg0;

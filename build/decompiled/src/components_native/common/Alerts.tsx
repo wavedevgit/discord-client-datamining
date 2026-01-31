@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun109623: for (var _fun109623_ip = 0;;) switch (_fun109623_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -128,14 +128,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7[0] = var13;
     var8.stores = var7;
     var8.center = var10;
-    var7 = function() { // Original name: isOpen, environment: var1
+    var7 = function() {
         var1 = _closure1_slot14;
         var0 = var1.shouldShowWarning;
         var0 = var0.bind(var1)();
         return var0;
     };
     var8.isOpen = var7;
-    var7 = function() { // Original name: getComponent, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -153,14 +153,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13[0] = var15;
     var8.stores = var13;
     var8.center = var10;
-    var13 = function() { // Original name: isOpen, environment: var1
+    var13 = function() {
         var1 = _closure1_slot15;
         var0 = var1.shouldShowWarning;
         var0 = var0.bind(var1)();
         return var0;
     };
     var8.isOpen = var13;
-    var13 = function() { // Original name: getComponent, environment: var1
+    var13 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 15;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13[0] = var14;
     var8.stores = var13;
     var8.center = var10;
-    var10 = function() { // Original name: isOpen, environment: var1
+    var10 = function() {
         var1 = _closure1_slot16;
         var0 = var1.getCurrentSurvey;
         var1 = var0.bind(var1)();
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var8.isOpen = var10;
-    var10 = function() { // Original name: getComponent, environment: var1
+    var10 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 16;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot21 = var7;
     var8 = var6.PureComponent;
     var7 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: AlertWrapper, environment: var0
+        var3 = function arg0() {
             _fun109633: for (var _fun109633_ip = 0;;) switch (_fun109633_ip) {
                 case 0:
                     var6 = this;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun109638: for (var _fun109638_ip = 0;;) switch (_fun109638_ip) {
                 case 0:
                     var15 = this;
@@ -604,7 +604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot23 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: Alerts, environment: var1
+    var1 = function() {
         _fun109639: for (var _fun109639_ip = 0;;) switch (_fun109639_ip) {
             case 0:
                 var10 = _closure1_slot8;

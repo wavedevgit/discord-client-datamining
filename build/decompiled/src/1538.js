@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: useCurrentRender, environment: var1
+    var1 = function arg0() {
         _fun17454: for (var _fun17454_ip = 0;;) switch (_fun17454_ip) {
             case 0:
                 var0 = arg0;

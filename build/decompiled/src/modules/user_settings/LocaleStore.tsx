@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun19144: for (var _fun19144_ip = 0;;) switch (_fun19144_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _getSystemLocale, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var8 = function() { // Original name: handleUpdate, environment: var3
+    var8 = function() {
         _fun19151: for (var _fun19151_ip = 0;;) switch (_fun19151_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var1 = var1.systemLocale;
     var _closure1_slot12 = var1;
-    var1 = function() { // Original name: getSystemLocale, environment: var3
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LocaleStore, environment: var5
+        var3 = function() {
             _fun19155: for (var _fun19155_ip = 0;;) switch (_fun19155_ip) {
                 case 0:
                     var3 = this;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var0 = _closure1_slot10;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'locale';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'systemLocale';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CACHE_LOADED = var8;
     var1.CONNECTION_OPEN = var8;
     var1.USER_SETTINGS_PROTO_UPDATE = var8;
-    var3 = function(arg0) { // Original name: handleLocaleOverride, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.locale;
         _closure1_slot11 = var2;

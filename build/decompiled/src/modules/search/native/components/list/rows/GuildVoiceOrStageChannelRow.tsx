@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildVoiceChannelSubtitle, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.channel;
         var _closure2_slot0 = var2;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 13:
                     var4 = _closure2_slot1;
                     var2 = _closure1_slot6;
-                    var1 = function(arg0, arg1) { // Original name: getVoiceChannelSubtitle, environment: var0
+                    var1 = function arg0, arg1() {
                         _fun105445: for (var _fun105445_ip = 0;;) switch (_fun105445_ip) {
                             case 0:
                                 var9 = arg0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     continue _fun105445
                                 }
                             case 54:
-                                var5 = function(arg0) { // Original name: getName, environment: var1
+                                var5 = function arg0() {
                                     _fun105446: for (var _fun105446_ip = 0;;) switch (_fun105446_ip) {
                                         case 0:
                                             var6 = arg0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: GuildVoiceChannelExtras, environment: var1
+    var0 = function arg0() {
         _fun105447: for (var _fun105447_ip = 0;;) switch (_fun105447_ip) {
             case 0:
                 var0 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.bind(var9)(var6);
     var _closure1_slot8 = var6;
     var6 = var7.memo;
-    var1 = function(arg0) { // Original name: GuildVoiceChannelRow, environment: var1
+    var1 = function arg0() {
         _fun105448: for (var _fun105448_ip = 0;;) switch (_fun105448_ip) {
             case 0:
                 var2 = arg0;

@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/captcha/native/CaptchaModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CaptchaModal, environment: var1
+    var1 = function arg0() {
         _fun112326: for (var _fun112326_ip = 0;;) switch (_fun112326_ip) {
             case 0:
                 var0 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.Button;
                 var8 = {};
                 var8.grow = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var3 = _closure2_slot9;
                     var0 = undefined;
                     var3 = var3.bind(var0)();

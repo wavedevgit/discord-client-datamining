@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var7;
     var3 = var3.UserNotificationSettings;
     var _closure1_slot10 = var3;
-    var3 = function() { // Original name: getAccessibilityLabelFormatter, environment: var1
+    var3 = function() {
         var0 = {};
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getTimestampAccessibilityLabel = var3;
-    var3 = function() { // Original name: trackThreadBrowserTab, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackThreadBrowserTab = var3;
-    var3 = function() { // Original name: trackThreadBrowserOpened, environment: var1
+    var3 = function() {
         _fun53552: for (var _fun53552_ip = 0;;) switch (_fun53552_ip) {
             case 0:
                 var5 = arguments[0];
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackThreadBrowserOpened = var3;
-    var3 = function() { // Original name: trackActiveThreadsPopoutOpened, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackActiveThreadsPopoutOpened = var3;
-    var3 = function(arg0, arg1) { // Original name: trackThreadNotificationSettingsUpdated, environment: var1
+    var3 = function arg0, arg1() {
         _fun53554: for (var _fun53554_ip = 0;;) switch (_fun53554_ip) {
             case 0:
                 var9 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var0)(var3);
                 var3 = var4.getCurrentChannelSettings;
                 var5 = var3.bind(var4)(var14, var13);
-                var11 = function(arg0) { // Original name: getNotificationAnalyticsString, environment: var3
+                var11 = function arg0() {
                     _fun53555: for (var _fun53555_ip = 0;;) switch (_fun53555_ip) {
                         case 0:
                             var9 = arg0;

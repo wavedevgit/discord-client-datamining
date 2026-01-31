@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/onboarding/hooks/useCanShowAppLauncherOnboarding.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useCanShowAppLauncherOnboarding, environment: var3
+    var3 = function arg0() {
         _fun90263: for (var _fun90263_ip = 0;;) switch (_fun90263_ip) {
             case 0:
                 var0 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 97:
                 var0 = var14.guild_id;
             case 102:
-                var1 = function() { // Original name: useIsNewUser, environment: var2
+                var1 = function() {
                     _fun90265: for (var _fun90265_ip = 0;;) switch (_fun90265_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.bind(var19)();
                 var1 = {};
                 var1.guildId = var0;
-                var0 = function(arg0) { // Original name: useIsInSmallContext, environment: var2
+                var0 = function arg0() {
                     _fun90267: for (var _fun90267_ip = 0;;) switch (_fun90267_ip) {
                         case 0:
                             var1 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.bind(var19)(var1);
                 var1 = {};
                 var1.currentTimeMs = var16;
-                var0 = function(arg0) { // Original name: useIsInCooldown, environment: var2
+                var0 = function arg0() {
                     _fun90269: for (var _fun90269_ip = 0;;) switch (_fun90269_ip) {
                         case 0:
                             var0 = arg0;

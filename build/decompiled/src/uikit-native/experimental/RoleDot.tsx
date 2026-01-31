@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/experimental/RoleDot.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RoleDot, environment: var1
+    var1 = function arg0() {
         _fun66144: for (var _fun66144_ip = 0;;) switch (_fun66144_ip) {
             case 0:
                 var0 = arg0;

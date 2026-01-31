@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: createAsyncHandlerProxy, environment: var4
+    var2 = function arg0, arg1, arg2, arg3() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg2;
@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = global;
         var3 = var1.Proxy;
         var2 = {};
-        var0 = function(arg0, arg1, arg2) { // Original name: apply, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var3 = arg0;
             var2 = var3.apply;
             var1 = arg1;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var2;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: handleAsyncHandlerResult, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun12515: for (var _fun12515_ip = 0;;) switch (_fun12515_ip) {
             case 0:
                 var4 = arg0;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'Module';
     var3.value = var8;
     var3 = var6.bind(var7)(var1, var5, var3);
-    var3 = function(arg0, arg1) { // Original name: checkRouteForAsyncHandler, environment: var4
+    var3 = function arg0, arg1() {
         _fun12518: for (var _fun12518_ip = 0;;) switch (_fun12518_ip) {
             case 0:
                 var2 = arg0;

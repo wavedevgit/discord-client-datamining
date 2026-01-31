@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: NitroHomeHeader, environment: var3
+    var0 = function arg0() {
         _fun59329: for (var _fun59329_ip = 0;;) switch (_fun59329_ip) {
             case 0:
                 var1 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = {};
                 var17 = var10.backButtonWrapper;
                 var12.style = var17;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 18;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: NewTab, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var13 = var1.extraBottomHeight;
         var1 = _closure1_slot24;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: PerksTab, environment: var3
+    var0 = function arg0() {
         _fun59334: for (var _fun59334_ip = 0;;) switch (_fun59334_ip) {
             case 0:
                 var0 = arg0;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var14;
             case 388:
                 var4.perks = var13;
-                var13 = function(arg0) { // Original name: onItemChange, environment: var8
+                var13 = function arg0() {
                     var3 = _closure2_slot0;
                     var0 = _closure1_slot20;
                     var2 = var0.CAROUSEL_SECTION_NAME_1;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var11.sticker;
                 var18[3] = var19;
                 var7.perks = var18;
-                var18 = function(arg0) { // Original name: onItemChange, environment: var8
+                var18 = function arg0() {
                     var3 = _closure2_slot0;
                     var0 = _closure1_slot20;
                     var2 = var0.CAROUSEL_SECTION_NAME_2;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var11.superReactions;
                 var18[4] = var19;
                 var7.perks = var18;
-                var18 = function(arg0) { // Original name: onItemChange, environment: var8
+                var18 = function arg0() {
                     var3 = _closure2_slot0;
                     var0 = _closure1_slot20;
                     var2 = var0.CAROUSEL_SECTION_NAME_3;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 855:
                 var5.perks = var9;
-                var8 = function(arg0) { // Original name: onItemChange, environment: var8
+                var8 = function arg0() {
                     var3 = _closure2_slot0;
                     var0 = _closure1_slot20;
                     var2 = var0.CAROUSEL_SECTION_NAME_4;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_settings/native/premium_marketing/PremiumNitroHome.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: PremiumNitroHome, environment: var3
+    var3 = function arg0() {
         _fun59341: for (var _fun59341_ip = 0;;) switch (_fun59341_ip) {
             case 0:
                 var1 = arg0;
@@ -1163,7 +1163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var27[var5];
                 var9 = var11.bind(var3)(var2);
                 var4 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: Q, environment: var0
+                var2 = function() {
                     var0 = {};
                     var2 = _closure2_slot6;
                     var1 = var2.get;

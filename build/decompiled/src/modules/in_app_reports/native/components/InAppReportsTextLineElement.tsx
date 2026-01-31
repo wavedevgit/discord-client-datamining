@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsTextLineElement.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TextLineElement, environment: var1
+    var1 = function arg0() {
         _fun53820: for (var _fun53820_ip = 0;;) switch (_fun53820_ip) {
             case 0:
                 var0 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.size = var19;
                 var19 = var13.trailingButton;
                 var8.style = var19;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot3;
                     var0 = 16;

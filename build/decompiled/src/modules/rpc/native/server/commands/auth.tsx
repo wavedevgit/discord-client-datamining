@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.disableGuildSelect = var3;
                     var3 = false;
                     var4.showLogout = var3;
-                    var2 = function(arg0) { // Original name: callback, environment: var2
+                    var2 = function arg0() {
                         _fun98284: for (var _fun98284_ip = 0;;) switch (_fun98284_ip) {
                             case 0:
                                 var0 = arg0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0 instanceof Object ? var0 : var1;
         return var0;
     };
-    var1 = function() { // Original name: onAuthorizeValidationPassed, environment: var1
+    var1 = function() {
         var0 = undefined;
         return var0;
     };

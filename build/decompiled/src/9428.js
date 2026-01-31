@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_PaginationItemTsx1(){const{horizontal,height,width,index,animValue,count,interpolate,Extrapolation}=this.__closure;var _animValue,_animValue2;const size=horizontal?height:width;let inputRange=[index-1,index,index+1];let outputRange=[-size,0,size];if(index===0&&((_animValue=animValue)===null||_animValue===void 0?void 0:_animValue.value)>count-1){inputRange=[count-1,count,count+1];outputRange=[-size,0,size];}return{transform:[{translateX:interpolate((_animValue2=animValue)===null||_animValue2===void 0?void 0:_animValue2.value,inputRange,outputRange,Extrapolation.CLAMP)}]};}';
     var3.code = var4;
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: PaginationItem, environment: var1
+    var1 = function arg0() {
         _fun74985: for (var _fun74985_ip = 0;;) switch (_fun74985_ip) {
             case 0:
                 var1 = arg0;
@@ -116,7 +116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = undefined;
                 var13 = var19.bind(var3)(var1);
                 var2 = var13.useAnimatedStyle;
-                var1 = function() { // Original name: pnpm_PaginationItemTsx1, environment: var0
+                var1 = function() {
                     _fun74986: for (var _fun74986_ip = 0;;) switch (_fun74986_ip) {
                         case 0:
                             var0 = _closure2_slot3;

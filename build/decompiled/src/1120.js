@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var3 = function(arg0) { // Original name: mapSamples, environment: var4
+    var3 = function arg0() {
         _fun12263: for (var _fun12263_ip = 0;;) switch (_fun12263_ip) {
             case 0:
                 var5 = arg0;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: parseHermesJSStackFrame, environment: var4
+    var1 = function arg0() {
         _fun12264: for (var _fun12264_ip = 0;;) switch (_fun12264_ip) {
             case 0:
                 var2 = arg0;
@@ -322,7 +322,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 1000000;
     var5 = var5 * var6;
     var _closure1_slot2 = var5;
-    var4 = function(arg0) { // Original name: convertToSentryProfile, environment: var4
+    var4 = function arg0() {
         _fun12265: for (var _fun12265_ip = 0;;) switch (_fun12265_ip) {
             case 0:
                 var5 = arg0;

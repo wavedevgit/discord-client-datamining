@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: parsePercentageRGBColor, environment: var0
+    var2 = function arg0() {
         _fun48365: for (var _fun48365_ip = 0;;) switch (_fun48365_ip) {
             case 0:
                 var1 = arg0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = /^rgba?\(\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*(?:,\s*(1|0(\.\d+)?|100%|\d{1,2}(\.\d+)?%)\s*)?\)$/;
     var _closure1_slot0 = var2;
-    var3 = function(arg0) { // Original name: percentTo255, environment: var0
+    var3 = function arg0() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.round;
@@ -116,7 +116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot1 = var3;
     var1.RGB_RGBA_PATTERN = var2;
-    var0 = function(arg0) { // Original name: convertPercentageColor, environment: var0
+    var0 = function arg0() {
         _fun48367: for (var _fun48367_ip = 0;;) switch (_fun48367_ip) {
             case 0:
                 var0 = arg0;

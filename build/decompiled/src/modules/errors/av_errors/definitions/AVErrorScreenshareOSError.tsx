@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function(arg0) { // Original name: getActiveErrors, environment: var0
+    var5 = function arg0() {
         var1 = arg0;
         var3 = var1.activeStreams;
         var2 = var3.filter;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getActiveErrors = var5;
-    var0 = function(arg0) { // Original name: makeErrorContextKey, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.streamKey;
         var3 = var0.mediaSessionId;

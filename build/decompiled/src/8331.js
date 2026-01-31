@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var1 = function(arg0) { // Original name: QR8bitByte, environment: var2
+    var1 = function arg0() {
         var2 = this;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -19,14 +19,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0 = {};
-    var3 = function(arg0) { // Original name: getLength, environment: var2
+    var3 = function arg0() {
         var0 = this;
         var0 = var0.data;
         var0 = var0.length;
         return var0;
     };
     var0.getLength = var3;
-    var2 = function(arg0) { // Original name: write, environment: var2
+    var2 = function arg0() {
         _fun67466: for (var _fun67466_ip = 0;;) switch (_fun67466_ip) {
             case 0:
                 var4 = arg0;

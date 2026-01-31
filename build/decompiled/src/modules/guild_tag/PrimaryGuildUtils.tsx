@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_tag/PrimaryGuildUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: isUserPrimaryGuildEqual, environment: var1
+    var3 = function arg0, arg1() {
         _fun18086: for (var _fun18086_ip = 0;;) switch (_fun18086_ip) {
             case 0:
                 var2 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isUserPrimaryGuildEqual = var3;
-    var1 = function(arg0) { // Original name: ensureUserPrimaryGuild, environment: var1
+    var1 = function arg0() {
         _fun18087: for (var _fun18087_ip = 0;;) switch (_fun18087_ip) {
             case 0:
                 var1 = arg0;

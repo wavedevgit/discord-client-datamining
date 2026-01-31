@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun50386: for (var _fun50386_ip = 0;;) switch (_fun50386_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: makeTwitchRequest, environment: var3
+    var0 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: _getTwitchGame, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: streamerModeUpdate, environment: var3
+    var0 = function() {
         _fun50393: for (var _fun50393_ip = 0;;) switch (_fun50393_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot19 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot7;
-        var2 = function() { // Original name: StreamingPoller, environment: var5
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot6;
             var1 = _closure2_slot2;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'start';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun50396: for (var _fun50396_ip = 0;;) switch (_fun50396_ip) {
                 case 0:
                     var2 = this;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'stop';
         var0.key = var4;
-        var4 = function() { // Original name: value, environment: var5
+        var4 = function() {
             _fun50397: for (var _fun50397_ip = 0;;) switch (_fun50397_ip) {
                 case 0:
                     var1 = this;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var21;
                         var22 = var7;
                         var21 = var6;
-                        var7 = function() { // Original name: getTwitchGame, environment: var4
+                        var7 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot23;
                             var2 = var3.apply;
@@ -722,7 +722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var7 = var8.bind(var0)(var7);
         var _closure2_slot1 = var7;
-        var7 = function() { // Original name: _checkTwitch, environment: var5
+        var7 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var0)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: _checkYouTube, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -1037,7 +1037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_check';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun50409: for (var _fun50409_ip = 0;;) switch (_fun50409_ip) {
                 case 0:
                     var1 = this;
@@ -1222,7 +1222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_scheduleCheck';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun50414: for (var _fun50414_ip = 0;;) switch (_fun50414_ip) {
                 case 0:
                     var1 = this;
@@ -1271,7 +1271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ExternalStreamingStore, environment: var5
+        var3 = function() {
             _fun50417: for (var _fun50417_ip = 0;;) switch (_fun50417_ip) {
                 case 0:
                     var3 = this;
@@ -1319,7 +1319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = _closure1_slot24;
             var0 = undefined;
@@ -1341,7 +1341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStream';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -1357,7 +1357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var14 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: streamUpdate, environment: var3
+    var8 = function arg0() {
         _fun50420: for (var _fun50420_ip = 0;;) switch (_fun50420_ip) {
             case 0:
                 var1 = arg0;
@@ -1393,7 +1393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STREAMING_UPDATE = var8;
-    var3 = function() { // Original name: USER_CONNECTIONS_UPDATE, environment: var3
+    var3 = function() {
         var1 = _closure1_slot20;
         var0 = var1._check;
         var0 = var0.bind(var1)();

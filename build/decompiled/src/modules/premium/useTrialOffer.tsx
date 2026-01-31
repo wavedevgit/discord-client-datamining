@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: hasUserTrialOfferExpired, environment: var1
+    var3 = function arg0() {
         _fun55212: for (var _fun55212_ip = 0;;) switch (_fun55212_ip) {
             case 0:
                 var1 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/useTrialOffer.tsx';
     var4 = var5.bind(var6)(var4);
     var2.hasUserTrialOfferExpired = var3;
-    var1 = function(arg0) { // Original name: useTrialOffer, environment: var1
+    var1 = function arg0() {
         _fun55213: for (var _fun55213_ip = 0;;) switch (_fun55213_ip) {
             case 0:
                 var1 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = new var5[var1](var4);
                             var1 = var1 instanceof Object ? var1 : var3;
                             var _closure3_slot0 = var1;
-                            var1 = function() { // Original name: startTimer, environment: var0
+                            var1 = function() {
                                 _fun55217: for (var _fun55217_ip = 0;;) switch (_fun55217_ip) {
                                     case 0:
                                         var0 = _closure2_slot1;

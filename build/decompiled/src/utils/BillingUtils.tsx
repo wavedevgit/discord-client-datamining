@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _createGatewayCheckoutContext, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/BillingUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getLocalizedDisplayMonth, environment: var1
+    var3 = function arg0, arg1() {
         var0 = global;
         var0 = var0.Date;
         var1 = var0.prototype;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLocalizedDisplayMonth = var3;
-    var3 = function() { // Original name: createGatewayCheckoutContext, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGatewayCheckoutContext = var3;
-    var3 = function(arg0, arg1) { // Original name: captureBillingException, environment: var1
+    var3 = function arg0, arg1() {
         _fun25400: for (var _fun25400_ip = 0;;) switch (_fun25400_ip) {
             case 0:
                 var6 = arg1;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.captureBillingException = var3;
-    var3 = function(arg0, arg1) { // Original name: captureBillingMessage, environment: var1
+    var3 = function arg0, arg1() {
         _fun25401: for (var _fun25401_ip = 0;;) switch (_fun25401_ip) {
             case 0:
                 var6 = arg1;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.captureBillingMessage = var3;
-    var1 = function(arg0, arg1) { // Original name: calculateStandardizedUnits, environment: var1
+    var1 = function arg0, arg1() {
         _fun25402: for (var _fun25402_ip = 0;;) switch (_fun25402_ip) {
             case 0:
                 var2 = arg0;

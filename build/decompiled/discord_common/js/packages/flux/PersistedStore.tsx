@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun6810: for (var _fun6810_ip = 0;;) switch (_fun6810_ip) {
             case 0:
                 var4 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun6812: for (var _fun6812_ip = 0;;) switch (_fun6812_ip) {
             case 0:
                 var3 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun6813: for (var _fun6813_ip = 0;;) switch (_fun6813_ip) {
             case 0:
             case 2: // try_start_0
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = null;
     var _closure1_slot13 = var4;
     var4 = function(arg0) { // Environment: var1
-        var4 = function(arg0, arg1, arg2) { // Original name: PersistedStore, environment: var6
+        var4 = function arg0, arg1, arg2() {
             _fun6817: for (var _fun6817_ip = 0;;) switch (_fun6817_ip) {
                 case 0:
                     var5 = this;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getClass';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var6
+        var1 = function() {
             var0 = this;
             var0 = var0.constructor;
             return var0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'initializeFromState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var6
+        var5 = function arg0() {
             _fun6822: for (var _fun6822_ip = 0;;) switch (_fun6822_ip) {
                 case 0:
                     var1 = this;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'initializeIfNeeded';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             _fun6823: for (var _fun6823_ip = 0;;) switch (_fun6823_ip) {
                 case 0:
                     var1 = this;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'asyncPersist';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             _fun6824: for (var _fun6824_ip = 0;;) switch (_fun6824_ip) {
                 case 0:
                     var2 = this;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'persist';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var0 = this;
             var1 = var0.getClass;
             var1 = var1.bind(var0)();
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var1 = this;
             var0 = var1.getClass;
             var0 = var0.bind(var1)();
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var0 = 'clearAll';
         var5.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var6
+        var0 = function arg0() {
             _fun6830: for (var _fun6830_ip = 0;;) switch (_fun6830_ip) {
                 case 0:
                     var2 = arg0;
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'shouldClear';
         var5.key = var7;
-        var7 = function(arg0, arg1) { // Original name: value, environment: var6
+        var7 = function arg0, arg1() {
             _fun6835: for (var _fun6835_ip = 0;;) switch (_fun6835_ip) {
                 case 0:
                     var2 = arg0;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'clearPersistQueue';
         var5.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var6
+        var7 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = _closure2_slot0;
@@ -957,7 +957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'getAllStates';
         var5.key = var7;
-        var7 = function() { // Original name: value, environment: var6
+        var7 = function() {
             var0 = global;
             var2 = var0.Promise;
             var1 = var2.all;
@@ -1014,7 +1014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'initializeAll';
         var5.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var6
+        var7 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var2 = _closure1_slot11;
@@ -1064,7 +1064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'destroy';
         var5.key = var7;
-        var7 = function() { // Original name: value, environment: var6
+        var7 = function() {
             var1 = null;
             _closure1_slot13 = var1;
             var1 = _closure1_slot11;
@@ -1090,7 +1090,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'migrateAndReadStoreState';
         var5.key = var7;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var6
+        var6 = function arg0, arg1() {
             _fun6844: for (var _fun6844_ip = 0;;) switch (_fun6844_ip) {
                 case 0:
                     var3 = arg0;
@@ -1303,7 +1303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.disableWrite = var5;
     var4.throttleDelay = var3;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: UserAgnosticStore, environment: var5
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -1324,7 +1324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initializeFromState';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var5 = this;
             var1 = _closure1_slot14;
             var3 = var1.userAgnosticPersistKeys;
@@ -1353,7 +1353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initializeIfNeeded';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var5 = this;
             var1 = _closure1_slot14;
             var3 = var1.userAgnosticPersistKeys;
@@ -1379,7 +1379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = this;
             var0 = var1.getUserAgnosticState;
             var0 = var0.bind(var1)();
@@ -1392,7 +1392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5 = var3.bind(var0)(var4);
     var3 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: DeviceSettingsStore, environment: var0
+        var2 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -1415,7 +1415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var3.bind(var0)(var5);
     var1 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: OfflineCacheStore, environment: var0
+        var2 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;

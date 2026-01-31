@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5.ref = var4;
                 var4 = var0;
                 var0 = {};
-                var8 = function(arg0) { // Original name: renderScrollComponent, environment: var8
+                var8 = function arg0() {
                     _fun45128: for (var _fun45128_ip = 0;;) switch (_fun45128_ip) {
                         case 0:
                             var3 = _closure1_slot9;

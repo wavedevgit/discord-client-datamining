@@ -33,10 +33,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/tabs/SearchTabsGradient.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SearchTabsGradient, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.state;
-        var0 = function() { // Original name: useGradientColors, environment: var0
+        var0 = function() {
             var3 = _closure1_slot0;
             var7 = _closure1_slot2;
             var2 = 2;

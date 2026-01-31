@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun29011
             }
         case 71:
-            var2 = function(arg0) { // Original name: IsExtensible, environment: var1
+            var2 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 1;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun29011_ip = 83;
             continue _fun29011;
         case 78:
-            var2 = function(arg0) { // Original name: IsExtensible, environment: var1
+            var2 = function arg0() {
                 _fun29012: for (var _fun29012_ip = 0;;) switch (_fun29012_ip) {
                     case 0:
                         var3 = arg0;

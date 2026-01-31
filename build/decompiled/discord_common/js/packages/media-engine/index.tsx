@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var0 = function(arg0) { // Original name: getMediaEngineImpl, environment: var1
+    var0 = function arg0() {
         _fun32027: for (var _fun32027_ip = 0;;) switch (_fun32027_ip) {
             case 0:
                 var2 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FilterTargetType = var5;
     var2.FilterSettingsGraph = var4;
     var2.FilterSettingsKey = var3;
-    var3 = function() { // Original name: determineMediaEngine, environment: var1
+    var3 = function() {
         _fun32028: for (var _fun32028_ip = 0;;) switch (_fun32028_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.determineMediaEngine = var3;
-    var1 = function(arg0) { // Original name: initializeMediaEngine, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun110940: for (var _fun110940_ip = 0;;) switch (_fun110940_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun110942: for (var _fun110942_ip = 0;;) switch (_fun110942_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var1 = function(arg0, arg1, arg2) { // Original name: useVoicePanelHeaderUserStateIcons, environment: var3
+    var1 = function arg0, arg1, arg2() {
         _fun110943: for (var _fun110943_ip = 0;;) switch (_fun110943_ip) {
             case 0:
                 var1 = arg0;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var8;
     var _closure1_slot9 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: VoicePanelHeaderUserState, environment: var3
+    var3 = function arg0() {
         _fun110944: for (var _fun110944_ip = 0;;) switch (_fun110944_ip) {
             case 0:
                 var1 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var2];
                 var3 = var10.bind(var4)(var2);
                 var2 = var3.useAnimatedStyle;
-                var0 = function() { // Original name: s, environment: var0
+                var0 = function() {
                     _fun110946: for (var _fun110946_ip = 0;;) switch (_fun110946_ip) {
                         case 0:
                             var0 = {};

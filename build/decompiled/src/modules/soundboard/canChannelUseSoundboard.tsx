@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function(arg0) { // Original name: canChannelUseSoundboard, environment: var1
+    var3 = function arg0() {
         _fun50677: for (var _fun50677_ip = 0;;) switch (_fun50677_ip) {
             case 0:
                 var3 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/soundboard/canChannelUseSoundboard.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: canSelectedVoiceChannelUseSoundboard, environment: var1
+    var1 = function() {
         var2 = _closure1_slot2;
         var1 = var2.getVoiceChannelId;
         var3 = var1.bind(var2)();

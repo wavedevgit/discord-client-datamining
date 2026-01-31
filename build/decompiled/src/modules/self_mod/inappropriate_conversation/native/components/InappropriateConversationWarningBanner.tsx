@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: InappropriateConversationWarningBanner, environment: var6
+    var1 = function arg0() {
         _fun89104: for (var _fun89104_ip = 0;;) switch (_fun89104_ip) {
             case 0:
                 var1 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var0)(var1);
                     var2 = var3.openLazy;
                     var1 = {};
-                    var4 = function() { // Original name: importer, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot0;
                         var0 = _closure1_slot2;
                         var1 = 9;

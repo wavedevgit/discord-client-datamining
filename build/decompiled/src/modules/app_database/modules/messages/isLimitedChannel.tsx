@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function(arg0) { // Original name: isLimitedChannel, environment: var1
+    var3 = function arg0() {
         _fun40087: for (var _fun40087_ip = 0;;) switch (_fun40087_ip) {
             case 0:
                 var3 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 10000;
     var2.LIMITED_GUILD_MEMBER_THRESHOLD = var4;
     var2.isLimitedChannel = var3;
-    var1 = function(arg0) { // Original name: isLimitedChannelId, environment: var1
+    var1 = function arg0() {
         _fun40088: for (var _fun40088_ip = 0;;) switch (_fun40088_ip) {
             case 0:
                 var4 = arg0;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useNativeAndroidEmojiPickerEnabled, environment: var1
+    var1 = function() {
         _fun73851: for (var _fun73851_ip = 0;;) switch (_fun73851_ip) {
             case 0:
                 var2 = _closure1_slot0;

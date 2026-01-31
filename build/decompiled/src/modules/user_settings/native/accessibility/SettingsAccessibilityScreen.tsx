@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getAccessibilitySettingScreen, environment: var1
+    var0 = function arg0() {
         _fun84775: for (var _fun84775_ip = 0;;) switch (_fun84775_ip) {
             case 0:
                 var1 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var12.bind(var5)(var3);
                 var12 = var3.L8U56h;
                 var3 = {};
-                var16 = function() { // Original name: onClickOpenModal, environment: var0
+                var16 = function() {
                     _fun84776: for (var _fun84776_ip = 0;;) switch (_fun84776_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var12 = var11.u6UjrL;
                 var11 = {};
-                var17 = function() { // Original name: onThemeClick, environment: var0
+                var17 = function() {
                     var2 = _closure2_slot0;
                     var1 = var2.push;
                     var0 = _closure1_slot7;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/accessibility/SettingsAccessibilityScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SettingsAccessibilityScreen, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 12;

@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot2 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: validateConfig, environment: var0
+        var0 = function arg0() {
             _fun33714: for (var _fun33714_ip = 0;;) switch (_fun33714_ip) {
                 case 0:
                     var1 = arg0;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'function pnpm_decayTs3(){const{userConfig,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,callback,getReduceMotionForAnimation}=this.__closure;var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}';
     var4.code = var5;
     var _closure1_slot4 = var4;
-    var1 = function(arg0, arg1) { // Original name: pnpm_decayTs2, environment: var1
+    var1 = function arg0, arg1() {
         var10 = arg0;
         var9 = arg1;
         var _closure2_slot0 = var10;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = undefined;
         var3 = var7.bind(var6)(var2);
         var2 = var3.defineAnimation;
-        var1 = function() { // Original name: pnpm_decayTs3, environment: var1
+        var1 = function() {
             _fun33716: for (var _fun33716_ip = 0;;) switch (_fun33716_ip) {
                 case 0:
                     var1 = {
@@ -272,7 +272,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                 case 125:
                     var0.onFrame = var8;
-                    var7 = function(arg0, arg1, arg2) { // Original name: onStart, environment: var7
+                    var7 = function arg0, arg1, arg2() {
                         _fun33720: for (var _fun33720_ip = 0;;) switch (_fun33720_ip) {
                             case 0:
                                 var2 = arg0;

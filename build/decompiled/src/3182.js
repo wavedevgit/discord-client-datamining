@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = global;
             var5 = require;
             var6 = dependencyMap;
-            var7 = function(arg0) { // Original name: _interopDefaultLegacy, environment: var1
+            var7 = function arg0() {
                 _fun27804: for (var _fun27804_ip = 0;;) switch (_fun27804_ip) {
                     case 0:
                         var2 = arg0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun27803
             }
         case 163:
-            var2 = function(arg0, arg1) { // Original name: createReactContext, environment: var1
+            var2 = function arg0, arg1() {
                 _fun27805: for (var _fun27805_ip = 0;;) switch (_fun27805_ip) {
                     case 0:
                         var1 = arg0;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = function(arg0) { // Environment: var0
                             var4 = arg0;
                             var _closure3_slot0 = var4;
-                            var0 = function() { // Original name: Provider, environment: var1
+                            var0 = function() {
                                 _fun27807: for (var _fun27807_ip = 0;;) switch (_fun27807_ip) {
                                     case 0:
                                         var1 = this;
@@ -144,13 +144,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     case 33:
                                         var1 = var0.props;
                                         var2 = var1.value;
-                                        var1 = function(arg0) { // Original name: createEventEmitter, environment: var1
+                                        var1 = function arg0() {
                                             var0 = arg0;
                                             var _closure5_slot0 = var0;
                                             var0 = new Array(0);
                                             var _closure5_slot1 = var0;
                                             var0 = {};
-                                            var2 = function(arg0) { // Original name: on, environment: var1
+                                            var2 = function arg0() {
                                                 var2 = _closure5_slot1;
                                                 var1 = var2.push;
                                                 var0 = arg0;
@@ -159,7 +159,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 return var0;
                                             };
                                             var0.on = var2;
-                                            var2 = function(arg0) { // Original name: off, environment: var1
+                                            var2 = function arg0() {
                                                 var1 = arg0;
                                                 var _closure6_slot0 = var1;
                                                 var3 = _closure5_slot1;
@@ -176,12 +176,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 return var0;
                                             };
                                             var0.off = var2;
-                                            var2 = function() { // Original name: get, environment: var1
+                                            var2 = function() {
                                                 var0 = _closure5_slot0;
                                                 return var0;
                                             };
                                             var0.get = var2;
-                                            var1 = function(arg0, arg1) { // Original name: set, environment: var1
+                                            var1 = function arg0, arg1() {
                                                 var1 = arg1;
                                                 var _closure6_slot0 = var1;
                                                 var2 = arg0;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.default;
                             var2 = var2.bind(var3)(var0, var4);
                             var2 = var0.prototype;
-                            var3 = function() { // Original name: getChildContext, environment: var1
+                            var3 = function() {
                                 var0 = {};
                                 var2 = _closure2_slot2;
                                 var1 = this;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var2.getChildContext = var3;
-                            var3 = function(arg0) { // Original name: componentWillReceiveProps, environment: var1
+                            var3 = function arg0() {
                                 _fun27816: for (var _fun27816_ip = 0;;) switch (_fun27816_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var2.componentWillReceiveProps = var3;
-                            var1 = function() { // Original name: render, environment: var1
+                            var1 = function() {
                                 var0 = this;
                                 var0 = var0.props;
                                 var0 = var0.children;
@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = function(arg0) { // Environment: var0
                             var4 = arg0;
                             var _closure3_slot0 = var4;
-                            var0 = function() { // Original name: Consumer, environment: var1
+                            var0 = function() {
                                 _fun27819: for (var _fun27819_ip = 0;;) switch (_fun27819_ip) {
                                     case 0:
                                         var2 = this;
@@ -380,7 +380,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.default;
                             var2 = var2.bind(var3)(var0, var4);
                             var2 = var0.prototype;
-                            var3 = function(arg0) { // Original name: componentWillReceiveProps, environment: var1
+                            var3 = function arg0() {
                                 _fun27821: for (var _fun27821_ip = 0;;) switch (_fun27821_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -400,7 +400,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var2.componentWillReceiveProps = var3;
-                            var3 = function() { // Original name: componentDidMount, environment: var1
+                            var3 = function() {
                                 _fun27822: for (var _fun27822_ip = 0;;) switch (_fun27822_ip) {
                                     case 0:
                                         var1 = this;
@@ -435,7 +435,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var2.componentDidMount = var3;
-                            var3 = function() { // Original name: componentWillUnmount, environment: var1
+                            var3 = function() {
                                 _fun27823: for (var _fun27823_ip = 0;;) switch (_fun27823_ip) {
                                     case 0:
                                         var0 = this;
@@ -459,7 +459,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var2.componentWillUnmount = var3;
-                            var3 = function() { // Original name: getValue, environment: var1
+                            var3 = function() {
                                 _fun27824: for (var _fun27824_ip = 0;;) switch (_fun27824_ip) {
                                     case 0:
                                         var2 = this;
@@ -485,7 +485,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var2.getValue = var3;
-                            var1 = function() { // Original name: render, environment: var1
+                            var1 = function() {
                                 _fun27825: for (var _fun27825_ip = 0;;) switch (_fun27825_ip) {
                                     case 0:
                                         var0 = this;

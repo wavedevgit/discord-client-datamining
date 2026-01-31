@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var1;
     var1 = '__esModule';
     var1 = var3.bind(var4)(var0, var1, var2);
-    var1 = function(arg0, arg1) { // Original name: assign, environment: var1
+    var1 = function arg0, arg1() {
         _fun22764: for (var _fun22764_ip = 0;;) switch (_fun22764_ip) {
             case 0:
                 var0 = arg0;

@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = [2500, 4000];
     var _closure1_slot2 = var2;
     var1.LCPThresholds = var2;
-    var0 = function(arg0) { // Original name: onLCP, environment: var0
+    var0 = function arg0() {
         _fun10793: for (var _fun10793_ip = 0;;) switch (_fun10793_ip) {
             case 0:
                 var0 = undefined;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var3.LCPEntryManager;
                             var3 = var9.bind(var10)(var8, var3);
                             var _closure3_slot3 = var3;
-                            var8 = function(arg0) { // Original name: handleEntries, environment: var2
+                            var8 = function arg0() {
                                 _fun10795: for (var _fun10795_ip = 0;;) switch (_fun10795_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             };
                             var1 = var3.bind(var4)(var1);
                             var _closure3_slot6 = var1;
-                            var1 = function(arg0) { // Original name: stopListeningWrapper, environment: var2
+                            var1 = function arg0() {
                                 _fun10797: for (var _fun10797_ip = 0;;) switch (_fun10797_ip) {
                                     case 0:
                                         var1 = arg0;

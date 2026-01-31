@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun67313: for (var _fun67313_ip = 0;;) switch (_fun67313_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun67315: for (var _fun67315_ip = 0;;) switch (_fun67315_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: changeHubProgressUserSetting, environment: var1
+    var0 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/HubProgressActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: setHubProgressActionComplete, environment: var1
+    var3 = function arg0, arg1() {
         _fun67318: for (var _fun67318_ip = 0;;) switch (_fun67318_ip) {
             case 0:
                 var3 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setHubProgressActionComplete = var3;
-    var1 = function(arg0) { // Original name: skipHubProgress, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot3;
         var0 = undefined;

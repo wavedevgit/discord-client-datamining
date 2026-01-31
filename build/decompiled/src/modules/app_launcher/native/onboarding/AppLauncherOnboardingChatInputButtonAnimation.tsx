@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: EnteringAnimation, environment: var0
+        var0 = function() {
             var0 = {};
             var1 = {};
             var2 = 0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: ExitingAnimation, environment: var0
+        var0 = function() {
             var0 = {};
             var1 = {};
             var2 = 1;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 7000;
     var2.APP_LAUNCHER_ONBOARDING_CHAT_INPUT_BUTTON_ANIMATION_DURATION_MS = var3;
-    var1 = function(arg0) { // Original name: AppLauncherOnboardingChatInputButtonAnimation, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var0 = _closure1_slot9;

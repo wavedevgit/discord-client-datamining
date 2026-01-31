@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ToastIcon, environment: var1
+    var0 = function arg0() {
         _fun92826: for (var _fun92826_ip = 0;;) switch (_fun92826_ip) {
             case 0:
                 var0 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: ToastContent, environment: var1
+    var0 = function arg0() {
         _fun92827: for (var _fun92827_ip = 0;;) switch (_fun92827_ip) {
             case 0:
                 var0 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/toast/native/Toast.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Toast, environment: var1
+    var1 = function arg0() {
         _fun92828: for (var _fun92828_ip = 0;;) switch (_fun92828_ip) {
             case 0:
                 var0 = arg0;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot11;
                 var5 = {};
                 var5.content = var9;
-                var8 = function(arg0) { // Original name: onTextLayout, environment: var8
+                var8 = function arg0() {
                     var2 = _closure2_slot0;
                     var0 = arg0;
                     var0 = var0.nativeEvent;

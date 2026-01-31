@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _createCreatorMonetizationEnableRequest, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: _getCreatorMonetizationEligibility, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _acceptCreatorMonetizationTerms, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _acceptCreatorMonetizationTermsV, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _getCreatorMonetizationOnboardingMarketing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _fetchCreatorMonetizationNagActivateEligibility, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _ownershipTransferOnboard, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _requestRemoveMonetization, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _removeMonetization, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun116395
                         }
                     case 10:
-                        var1 = function() { // Original name: requestRemoveMonetization, environment: var1
+                        var1 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot13;
                             var2 = var3.apply;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: createCreatorMonetizationEnableRequest, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createCreatorMonetizationEnableRequest = var3;
-    var3 = function() { // Original name: getCreatorMonetizationEligibility, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getCreatorMonetizationEligibility = var3;
-    var3 = function() { // Original name: acceptCreatorMonetizationTerms, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acceptCreatorMonetizationTerms = var3;
-    var3 = function() { // Original name: acceptCreatorMonetizationTermsV2, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acceptCreatorMonetizationTermsV2 = var3;
-    var3 = function() { // Original name: getCreatorMonetizationOnboardingMarketing, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getCreatorMonetizationOnboardingMarketing = var3;
-    var3 = function() { // Original name: fetchCreatorMonetizationNagActivateEligibility, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchCreatorMonetizationNagActivateEligibility = var3;
-    var3 = function() { // Original name: ownershipTransferOnboard, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ownershipTransferOnboard = var3;
-    var3 = function(arg0) { // Original name: acceptNewTerms, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acceptNewTerms = var3;
-    var3 = function(arg0) { // Original name: acceptNewTermsDemonetized, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acceptNewTermsDemonetized = var3;
-    var1 = function() { // Original name: removeMonetization, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;

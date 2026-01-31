@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/guildHasOnboardingHome.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: guildHasOnboardingHome, environment: var1
+    var1 = function arg0() {
         _fun39607: for (var _fun39607_ip = 0;;) switch (_fun39607_ip) {
             case 0:
                 var1 = arg0;

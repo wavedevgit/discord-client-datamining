@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getExperimentDescriptor, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun17629: for (var _fun17629_ip = 0;;) switch (_fun17629_ip) {
             case 0:
                 var4 = arg1;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getConfig, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun17630: for (var _fun17630_ip = 0;;) switch (_fun17630_ip) {
             case 0:
                 var1 = arg0;
@@ -122,12 +122,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/experiments/createExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createExperiment, environment: var1
+    var1 = function arg0() {
         _fun17631: for (var _fun17631_ip = 0;;) switch (_fun17631_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
-                var0 = function(arg0) { // Original name: trackAutoExposure, environment: var1
+                var0 = function arg0() {
                     _fun17632: for (var _fun17632_ip = 0;;) switch (_fun17632_ip) {
                         case 0:
                             var4 = arg0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot3 = var0;
-                var3 = function(arg0) { // Original name: trackExposure, environment: var1
+                var3 = function arg0() {
                     _fun17633: for (var _fun17633_ip = 0;;) switch (_fun17633_ip) {
                         case 0:
                             var4 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot4 = var3;
-                var0 = function(arg0, arg1, arg2) { // Original name: trackExposureWithDescriptor, environment: var1
+                var0 = function arg0, arg1, arg2() {
                     _fun17634: for (var _fun17634_ip = 0;;) switch (_fun17634_ip) {
                         case 0:
                             var10 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot5 = var0;
-                var4 = function(arg0, arg1) { // Original name: subscribe, environment: var1
+                var4 = function arg0, arg1() {
                     _fun17635: for (var _fun17635_ip = 0;;) switch (_fun17635_ip) {
                         case 0:
                             var11 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot2 = var6;
                             var _closure3_slot3 = var6;
                             var _closure3_slot4 = var6;
-                            var3 = function() { // Original name: onStoreChange, environment: var0
+                            var3 = function() {
                                 _fun17636: for (var _fun17636_ip = 0;;) switch (_fun17636_ip) {
                                     case 0:
                                         var7 = _closure1_slot10;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 408:
                 var _closure2_slot2 = var0;
                 var0 = {};
-                var5 = function(arg0) { // Original name: useExperiment, environment: var1
+                var5 = function arg0() {
                     _fun17640: for (var _fun17640_ip = 0;;) switch (_fun17640_ip) {
                         case 0:
                             var7 = arg0;
@@ -912,7 +912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.useExperiment = var5;
                 var0.subscribe = var4;
                 var0.trackExposure = var3;
-                var3 = function(arg0) { // Original name: getCurrentConfig, environment: var1
+                var3 = function arg0() {
                     _fun17646: for (var _fun17646_ip = 0;;) switch (_fun17646_ip) {
                         case 0:
                             var7 = arg0;
@@ -996,7 +996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.getCurrentConfig = var3;
                 var0.definition = var2;
-                var1 = function(arg0) { // Original name: isAAMode, environment: var1
+                var1 = function arg0() {
                     _fun17647: for (var _fun17647_ip = 0;;) switch (_fun17647_ip) {
                         case 0:
                             var4 = _closure1_slot10;

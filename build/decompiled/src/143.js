@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var4 = function(arg0) { // Original name: focusInput, environment: var2
+    var4 = function arg0() {
         _fun2324: for (var _fun2324_ip = 0;;) switch (_fun2324_ip) {
             case 0:
                 var1 = arg0;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: blurInput, environment: var2
+    var3 = function arg0() {
         _fun2325: for (var _fun2325_ip = 0;;) switch (_fun2325_ip) {
             case 0:
                 var3 = arg0;
@@ -80,14 +80,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var0 instanceof Object ? var0 : var5;
     var _closure1_slot3 = var0;
     var0 = {};
-    var5 = function() { // Original name: currentlyFocusedInput, environment: var2
+    var5 = function() {
         var0 = _closure1_slot2;
         return var0;
     };
     var0.currentlyFocusedInput = var5;
     var0.focusInput = var4;
     var0.blurInput = var3;
-    var3 = function() { // Original name: currentlyFocusedField, environment: var2
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 0;
@@ -100,17 +100,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.currentlyFocusedField = var3;
-    var3 = function(arg0) { // Original name: focusField, environment: var2
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var0.focusField = var3;
-    var3 = function(arg0) { // Original name: blurField, environment: var2
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var0.blurField = var3;
-    var3 = function(arg0) { // Original name: focusTextInput, environment: var2
+    var3 = function arg0() {
         _fun2330: for (var _fun2330_ip = 0;;) switch (_fun2330_ip) {
             case 0:
                 var2 = arg0;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.focusTextInput = var3;
-    var3 = function(arg0) { // Original name: blurTextInput, environment: var2
+    var3 = function arg0() {
         _fun2331: for (var _fun2331_ip = 0;;) switch (_fun2331_ip) {
             case 0:
                 var2 = arg0;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.blurTextInput = var3;
-    var3 = function(arg0) { // Original name: registerInput, environment: var2
+    var3 = function arg0() {
         _fun2332: for (var _fun2332_ip = 0;;) switch (_fun2332_ip) {
             case 0:
                 var2 = arg0;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.registerInput = var3;
-    var3 = function(arg0) { // Original name: unregisterInput, environment: var2
+    var3 = function arg0() {
         _fun2333: for (var _fun2333_ip = 0;;) switch (_fun2333_ip) {
             case 0:
                 var2 = arg0;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.unregisterInput = var3;
-    var2 = function(arg0) { // Original name: isTextInput, environment: var2
+    var2 = function arg0() {
         _fun2334: for (var _fun2334_ip = 0;;) switch (_fun2334_ip) {
             case 0:
                 var3 = arg0;

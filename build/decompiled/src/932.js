@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = new var12[var3](var11);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: wrapMcpServerWithSentry, environment: var1
+    var1 = function arg0() {
         _fun9715: for (var _fun9715_ip = 0;;) switch (_fun9715_ip) {
             case 0:
                 var0 = arg0;

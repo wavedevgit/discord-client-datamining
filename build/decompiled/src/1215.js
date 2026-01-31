@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         _fun13297: for (var _fun13297_ip = 0;;) switch (_fun13297_ip) {
             case 0:
                 var3 = this;
-                var2 = function(arg0, arg1) { // Original name: MurmurHashV3, environment: var4
+                var2 = function arg0, arg1() {
                     _fun13298: for (var _fun13298_ip = 0;;) switch (_fun13298_ip) {
                         case 0:
                             var2 = arg0;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot0 = var3;
-                var0 = function(arg0) { // Original name: createBuffer, environment: var4
+                var0 = function arg0() {
                     var0 = global;
                     var0 = var0.TextEncoder;
                     var1 = var0.prototype;
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var _closure2_slot1 = var0;
                 var _closure2_slot2 = var2;
-                var0 = function(arg0, arg1) { // Original name: MurmurHashV2, environment: var4
+                var0 = function arg0, arg1() {
                     _fun13300: for (var _fun13300_ip = 0;;) switch (_fun13300_ip) {
                         case 0:
                             var2 = arg0;

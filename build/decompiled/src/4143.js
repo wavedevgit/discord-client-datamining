@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function(arg0) { // Original name: isGifFile, environment: var3
+    var2 = function arg0() {
         _fun37982: for (var _fun37982_ip = 0;;) switch (_fun37982_ip) {
             case 0:
                 var7 = arg0;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isGifFile = var2;
-    var2 = function() { // Original name: findOffsets, environment: var3
+    var2 = function() {
         var0 = {};
         var1 = 0;
         var0.gifHeaderOffset = var1;

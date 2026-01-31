@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/forums/native/composer/hooks/useFocusHandlers.tsx';
     var4 = var5.bind(var6)(var4);
     var2.PostComposerInputs = var3;
-    var1 = function(arg0) { // Original name: useFocusHandlers, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.titleInput;
         var _closure2_slot0 = var1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = 1;
         var3 = var4[var3];
         var0.setFocusedInput = var3;
-        var3 = function() { // Original name: focusLastInput, environment: var2
+        var3 = function() {
             _fun73739: for (var _fun73739_ip = 0;;) switch (_fun73739_ip) {
                 case 0:
                     var3 = _closure2_slot2;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.focusLastInput = var3;
-        var2 = function() { // Original name: blurLastInput, environment: var2
+        var2 = function() {
             _fun73740: for (var _fun73740_ip = 0;;) switch (_fun73740_ip) {
                 case 0:
                     var3 = _closure2_slot2;

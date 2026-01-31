@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: closeModal, environment: var1
+    var0 = function() {
         var2 = _closure1_slot6;
         var0 = undefined;
         var2 = var2.bind(var0)();
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/EmailVerificationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EmailVerificationModal, environment: var1
+    var1 = function arg0() {
         _fun60375: for (var _fun60375_ip = 0;;) switch (_fun60375_ip) {
             case 0:
                 var0 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.changeEmailReason = var1;
                     var0 = _closure2_slot3;
                     var2.setChangeEmailReason = var0;
-                    var1 = function(arg0) { // Original name: getScreens, environment: var0
+                    var1 = function arg0() {
                         var0 = arg0;
                         var14 = var0.initiallyVerified;
                         var1 = var0.isChangeEmail;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_COLLECT_REASONS;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
-                        var12 = function() { // Original name: render, environment: var3
+                        var12 = function() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_WARNING;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
-                        var12 = function() { // Original name: render, environment: var3
+                        var12 = function() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var12.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
-                        var12 = function() { // Original name: render, environment: var3
+                        var12 = function() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
-                        var12 = function() { // Original name: render, environment: var3
+                        var12 = function() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
-                        var12 = function() { // Original name: render, environment: var3
+                        var12 = function() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var13 = 'email_verified';
                         var12[var13] = var14;
                         var2.impressionProperties = var12;
-                        var12 = function() { // Original name: render, environment: var3
+                        var12 = function() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var12.USER_ACCOUNT_PASSWORD_VERIFY;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
-                        var12 = function(arg0) { // Original name: render, environment: var3
+                        var12 = function arg0() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE;
                         var1.impressionName = var5;
                         var1.impressionProperties = var4;
-                        var3 = function(arg0) { // Original name: render, environment: var3
+                        var3 = function arg0() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;

@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5 instanceof Object ? var5 : var6;
         case 105:
             var4.__react_navigation__elements_contexts = var3;
-            var1 = function(arg0, arg1) { // Original name: getNamedContext, environment: var1
+            var1 = function arg0, arg1() {
                 _fun51083: for (var _fun51083_ip = 0;;) switch (_fun51083_ip) {
                     case 0:
                         var4 = arg0;

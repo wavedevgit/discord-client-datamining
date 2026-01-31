@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DirectoryEntryCategories = var3;
     var3 = '883060064561299456';
     var2.HQ_CHANNEL_ID = var3;
-    var3 = function(arg0) { // Original name: getHubCategories, environment: var1
+    var3 = function arg0() {
         _fun71246: for (var _fun71246_ip = 0;;) switch (_fun71246_ip) {
             case 0:
                 var1 = arg0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHubCategories = var3;
-    var1 = function() { // Original name: getHubGuildTemplatesMap, environment: var1
+    var1 = function() {
         var0 = {};
         var4 = _closure1_slot5;
         var2 = var4.CREATE;

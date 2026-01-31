@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/components/MediaViewerItemPresenter.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaViewerItemPresenter, environment: var1
+    var1 = function arg0() {
         _fun76396: for (var _fun76396_ip = 0;;) switch (_fun76396_ip) {
             case 0:
                 var1 = arg0;
@@ -302,12 +302,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var18];
                 var4 = var19.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: O, environment: var0
+                var1 = function() {
                     var3 = _closure2_slot2;
                     var2 = var3.get;
                     var2 = var2.bind(var3)();
                     var _closure3_slot0 = var2;
-                    var5 = function(arg0, arg1) { // Original name: interpolateProxy, environment: var0
+                    var5 = function arg0, arg1() {
                         var2 = _closure1_slot0;
                         var6 = _closure1_slot2;
                         var0 = 6;

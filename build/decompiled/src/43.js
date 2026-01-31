@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot5 = var4;
     var1.customBubblingEventTypes = var3;
     var1.customDirectEventTypes = var2;
-    var2 = function(arg0, arg1) { // Original name: register, environment: var0
+    var2 = function arg0, arg1() {
         _fun1296: for (var _fun1296_ip = 0;;) switch (_fun1296_ip) {
             case 0:
                 var0 = arg0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.register = var2;
-    var0 = function(arg0) { // Original name: get, environment: var0
+    var0 = function arg0() {
         _fun1297: for (var _fun1297_ip = 0;;) switch (_fun1297_ip) {
             case 0:
                 var5 = arg0;

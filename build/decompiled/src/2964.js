@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var1 = exports;
     var6 = dependencyMap;
-    var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
+    var4 = function arg0() {
         _fun23878: for (var _fun23878_ip = 0;;) switch (_fun23878_ip) {
             case 0:
                 var2 = arg0;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: _typeof, environment: var3
+    var0 = function arg0() {
         _fun23879: for (var _fun23879_ip = 0;;) switch (_fun23879_ip) {
             case 0:
                 var1 = global;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun23879
                 }
             case 43:
-                var2 = function(arg0) { // Original name: _typeof, environment: var0
+                var2 = function arg0() {
                     _fun23881: for (var _fun23881_ip = 0;;) switch (_fun23881_ip) {
                         case 0:
                             var1 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun23879_ip = 55;
                 continue _fun23879;
             case 50:
-                var2 = function(arg0) { // Original name: _typeof, environment: var0
+                var2 = function arg0() {
                     var0 = arg0;
                     var0 = typeof var0;
                     return var0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function(arg0, arg1) { // Original name: sub, environment: var3
+    var0 = function arg0, arg1() {
         _fun23882: for (var _fun23882_ip = 0;;) switch (_fun23882_ip) {
             case 0:
                 var3 = arg1;

@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function() { // Original name: openPasskeyUpsell, environment: var0
+    var5 = function() {
         _fun60614: for (var _fun60614_ip = 0;;) switch (_fun60614_ip) {
             case 0:
                 var2 = this;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openPasskeyUpsell = var5;
-    var5 = function() { // Original name: openPasskeyUpsellModal, environment: var0
+    var5 = function() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openPasskeyUpsellModal = var5;
-    var5 = function() { // Original name: closePasskeyUpsellModal, environment: var0
+    var5 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.closePasskeyUpsellModal = var5;
-    var5 = function() { // Original name: openPasskeyUpsellPromoSheet, environment: var0
+    var5 = function() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openPasskeyUpsellPromoSheet = var5;
-    var5 = function() { // Original name: closePasskeyUpsellPromoSheet, environment: var0
+    var5 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.closePasskeyUpsellPromoSheet = var5;
-    var0 = function(arg0) { // Original name: openPasskeyUpsellPromoModal, environment: var0
+    var0 = function arg0() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;

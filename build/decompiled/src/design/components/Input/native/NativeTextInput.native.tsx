@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: useKeyboardBlurring, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7[var2];
                 var2 = var5.bind(var3)(var2);
                 var13 = var2.bind(var3)(var0);
-                var2 = function(arg0, arg1) { // Original name: useControlledValueProps, environment: var1
+                var2 = function arg0, arg1() {
                     var1 = arg0;
                     var7 = arg1;
                     var _closure3_slot0 = var7;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var12 = var2.bind(var3)(var0, var9);
-                var1 = function(arg0) { // Original name: usePanGestureWrapper, environment: var1
+                var1 = function arg0() {
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     var5 = _closure1_slot0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.bind(var4)(var0, var2);
                     var _closure3_slot3 = var0;
                     var0 = {};
-                    var1 = function(arg0) { // Original name: panGestureWrapper, environment: var1
+                    var1 = function arg0() {
                         _fun47957: for (var _fun47957_ip = 0;;) switch (_fun47957_ip) {
                             case 0:
                                 var3 = _closure1_slot11;

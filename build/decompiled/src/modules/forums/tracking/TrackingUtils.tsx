@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: getForumChannelSessionId, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var5;
-    var0 = function(arg0) { // Original name: getForumPostFirstMessage, environment: var1
+    var0 = function arg0() {
         _fun53324: for (var _fun53324_ip = 0;;) switch (_fun53324_ip) {
             case 0:
                 var2 = _closure1_slot12;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: getForumPostUniqueReactionCount, environment: var1
+    var0 = function arg0() {
         _fun53325: for (var _fun53325_ip = 0;;) switch (_fun53325_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: getForumPostReactionCount, environment: var1
+    var0 = function arg0() {
         _fun53326: for (var _fun53326_ip = 0;;) switch (_fun53326_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: getForumPostAppliedTagIds, environment: var1
+    var0 = function arg0() {
         _fun53328: for (var _fun53328_ip = 0;;) switch (_fun53328_ip) {
             case 0:
                 var4 = _closure1_slot7;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var4 = function(arg0) { // Original name: getForumPostAttachmentMimetypes, environment: var1
+    var4 = function arg0() {
         _fun53331: for (var _fun53331_ip = 0;;) switch (_fun53331_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var4;
-    var3 = function(arg0) { // Original name: collectForumAnalyticsMetadata, environment: var1
+    var3 = function arg0() {
         _fun53333: for (var _fun53333_ip = 0;;) switch (_fun53333_ip) {
             case 0:
                 var0 = arg0;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/forums/tracking/TrackingUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.getForumChannelSessionId = var5;
-    var5 = function(arg0) { // Original name: convertSortOrderToReadableString, environment: var1
+    var5 = function arg0() {
         _fun53335: for (var _fun53335_ip = 0;;) switch (_fun53335_ip) {
             case 0:
                 var4 = arg0;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.convertSortOrderToReadableString = var5;
-    var5 = function(arg0) { // Original name: getForumPostDraftNumAttachments, environment: var1
+    var5 = function arg0() {
         var3 = _closure1_slot11;
         var2 = var3.getUploads;
         var0 = _closure1_slot9;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getForumPostDraftNumAttachments = var5;
-    var5 = function(arg0) { // Original name: getForumPostDraftAppliedTagIds, environment: var1
+    var5 = function arg0() {
         _fun53337: for (var _fun53337_ip = 0;;) switch (_fun53337_ip) {
             case 0:
                 var5 = arg0;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getForumPostDraftAppliedTagIds = var5;
-    var5 = function(arg0, arg1) { // Original name: getNumActiveThreads, environment: var1
+    var5 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.keys;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getNumActiveThreads = var5;
     var2.getForumPostAttachmentMimetypes = var4;
     var2.collectForumAnalyticsMetadata = var3;
-    var1 = function(arg0) { // Original name: collectForumPostAnalyticsMetadata, environment: var1
+    var1 = function arg0() {
         _fun53341: for (var _fun53341_ip = 0;;) switch (_fun53341_ip) {
             case 0:
                 var0 = arg0;

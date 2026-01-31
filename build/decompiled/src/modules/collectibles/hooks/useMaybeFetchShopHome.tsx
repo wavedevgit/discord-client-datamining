@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 600000;
     var2.COLLECTIBLES_SHOP_HOME_CACHE_DURATION = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useMaybeFetchCollectiblesShopHome, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun88018: for (var _fun88018_ip = 0;;) switch (_fun88018_ip) {
             case 0:
                 var9 = arg0;

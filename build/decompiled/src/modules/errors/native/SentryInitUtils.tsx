@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: _maybeBackfillMissingBreadcrumbsFromTelemetryRing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: filterError, environment: var1
+    var0 = function arg0, arg1() {
         _fun13175: for (var _fun13175_ip = 0;;) switch (_fun13175_ip) {
             case 0:
                 var1 = arg0;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             case 125:
                                 var3 = _closure2_slot0;
-                                var2 = function() { // Original name: maybeBackfillMissingBreadcrumbsFromTelemetryRing, environment: var2
+                                var2 = function() {
                                     var0 = undefined;
                                     var3 = _closure1_slot15;
                                     var2 = var3.apply;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: getCrashErrorMessage, environment: var1
+    var0 = function arg0() {
         _fun13180: for (var _fun13180_ip = 0;;) switch (_fun13180_ip) {
             case 0:
                 var1 = arg0;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: getErrorStackTrace, environment: var1
+    var0 = function arg0() {
         _fun13181: for (var _fun13181_ip = 0;;) switch (_fun13181_ip) {
             case 0:
                 var0 = arg0;
@@ -790,7 +790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: trackCrash, environment: var1
+    var0 = function arg0, arg1() {
         _fun13183: for (var _fun13183_ip = 0;;) switch (_fun13183_ip) {
             case 0:
                 var0 = arg0;
@@ -1143,7 +1143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: sample, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var1 = var0.Math;
         var0 = var1.random;
@@ -1153,7 +1153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: markCrashHandled, environment: var1
+    var0 = function arg0() {
         _fun13185: for (var _fun13185_ip = 0;;) switch (_fun13185_ip) {
             case 0:
                 var2 = arg0;
@@ -1188,7 +1188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: getStringExtra, environment: var1
+    var0 = function arg0() {
         _fun13186: for (var _fun13186_ip = 0;;) switch (_fun13186_ip) {
             case 0:
                 var1 = arg0;
@@ -1348,7 +1348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/errors/native/SentryInitUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.routingInstrumentation = var3;
-    var1 = function() { // Original name: initSentry, environment: var1
+    var1 = function() {
         _fun13187: for (var _fun13187_ip = 0;;) switch (_fun13187_ip) {
             case 0:
                 var0 = _closure1_slot5;
@@ -1455,7 +1455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = 1;
                             _closure1_slot12 = var4;
                         case 296:
-                            var3 = function() { // Original name: replayPendingCrashReportIfNeeded, environment: var9
+                            var3 = function() {
                                 var3 = _closure1_slot1;
                                 var2 = _closure1_slot3;
                                 var0 = 13;
@@ -1552,7 +1552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var13 = var2.bind(var0)(var11);
                             var12 = var13.reactNativeTracingIntegration;
                             var11 = {};
-                            var14 = function(arg0) { // Original name: shouldCreateSpanForRequest, environment: var9
+                            var14 = function arg0() {
                                 var2 = _closure1_slot9;
                                 var1 = var2.some;
                                 var0 = arg0;
@@ -1565,7 +1565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var12.bind(var13)(var11);
                             var10[1] = var11;
                             var4.integrations = var10;
-                            var9 = function(arg0) { // Original name: beforeBreadcrumb, environment: var9
+                            var9 = function arg0() {
                                 _fun13193: for (var _fun13193_ip = 0;;) switch (_fun13193_ip) {
                                     case 0:
                                         var0 = arg0;

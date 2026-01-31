@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun49317: for (var _fun49317_ip = 0;;) switch (_fun49317_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: handleUserSettingsProtoStoreChange, environment: var4
+    var0 = function() {
         _fun49320: for (var _fun49320_ip = 0;;) switch (_fun49320_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -166,12 +166,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var9 = var7.bind(var0)(var3);
     var3 = {};
-    var8 = function() { // Original name: computeBonus, environment: var4
+    var8 = function() {
         var0 = 100;
         return var0;
     };
     var3.computeBonus = var8;
-    var8 = function(arg0) { // Original name: lookupKey, environment: var4
+    var8 = function arg0() {
         var2 = _closure1_slot8;
         var1 = var2.getStickerById;
         var0 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.lookupKey = var8;
-    var8 = function() { // Original name: afterCompute, environment: var4
+    var8 = function() {
         var0 = undefined;
         return var0;
     };
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var13[var9](var12, var11);
     var3 = var3 instanceof Object ? var3 : var8;
     var _closure1_slot11 = var3;
-    var3 = function() { // Original name: recomputeStickerFrecency, environment: var4
+    var3 = function() {
         _fun49326: for (var _fun49326_ip = 0;;) switch (_fun49326_ip) {
             case 0:
                 var1 = _closure1_slot8;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var3 = function() { // Original name: handleStickersStoreUpdate, environment: var4
+    var3 = function() {
         var1 = _closure1_slot12;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: StickersPersistedStore, environment: var5
+        var3 = function() {
             _fun49329: for (var _fun49329_ip = 0;;) switch (_fun49329_ip) {
                 case 0:
                     var3 = this;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun49330: for (var _fun49330_ip = 0;;) switch (_fun49330_ip) {
                 case 0:
                     var1 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPendingUsage';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             var0 = var0.pendingUsages;
             var1 = var0.length;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'stickerFrecencyWithoutFetchingLatest';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var12 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: STICKER_TRACK_USAGE, environment: var4
+    var9 = function arg0() {
         _fun49334: for (var _fun49334_ip = 0;;) switch (_fun49334_ip) {
             case 0:
                 var0 = arg0;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.STICKER_TRACK_USAGE = var9;
-    var4 = function(arg0) { // Original name: handleUserSettingsProtoUpdate, environment: var4
+    var4 = function arg0() {
         _fun49336: for (var _fun49336_ip = 0;;) switch (_fun49336_ip) {
             case 0:
                 var0 = arg0;

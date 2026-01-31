@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Linking;
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: openURL, environment: var3
+    var6 = function arg0, arg1() {
         _fun27028: for (var _fun27028_ip = 0;;) switch (_fun27028_ip) {
             case 0:
                 var1 = arguments[2];
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openURL = var6;
-    var6 = function(arg0, arg1) { // Original name: openURLExternally, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openURLExternally = var6;
-    var3 = function(arg0) { // Original name: performURLNavigation, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.openURL;
         var0 = arg0;

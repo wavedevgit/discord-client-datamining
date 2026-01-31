@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useAccessibilityViewIsModalToggle, environment: var1
+    var1 = function arg0() {
         _fun37309: for (var _fun37309_ip = 0;;) switch (_fun37309_ip) {
             case 0:
                 var2 = arg0;

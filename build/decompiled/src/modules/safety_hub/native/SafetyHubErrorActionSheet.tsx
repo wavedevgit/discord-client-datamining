@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/SafetyHubErrorActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SafetyHubErrorActionSheet, environment: var1
+    var1 = function arg0() {
         _fun88652: for (var _fun88652_ip = 0;;) switch (_fun88652_ip) {
             case 0:
                 var1 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var14[var6];
                 var7 = var7.bind(var4)(var6);
                 var6 = {};
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot2;
                     var1 = _closure1_slot3;
                     var0 = 11;

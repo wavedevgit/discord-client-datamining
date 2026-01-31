@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/TableRow/native/TableRadioRow.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TableRadioRow, environment: var1
+    var1 = function arg0() {
         _fun48070: for (var _fun48070_ip = 0;;) switch (_fun48070_ip) {
             case 0:
                 var4 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var6] = var9;
                 var6 = 'accessibilityHint';
                 var0[var6] = var8;
-                var6 = function(arg0) { // Original name: onPress, environment: var5
+                var6 = function arg0() {
                     _fun48071: for (var _fun48071_ip = 0;;) switch (_fun48071_ip) {
                         case 0:
                             var2 = _closure2_slot1;

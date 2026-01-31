@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var5;
     var4 = var4.jsxs;
     var _closure1_slot5 = var4;
-    var1 = function(arg0) { // Original name: PortalProviderComponent, environment: var1
+    var1 = function arg0() {
         _fun35273: for (var _fun35273_ip = 0;;) switch (_fun35273_ip) {
             case 0:
                 var0 = arg0;

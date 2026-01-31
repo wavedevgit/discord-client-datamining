@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             _fun90848_ip = 349;
             continue _fun90848;
         case 342:
-            var3 = function() { // Original name: useKeyboardAdjustmentIOS, environment: var1
+            var3 = function() {
                 _fun90849: for (var _fun90849_ip = 0;;) switch (_fun90849_ip) {
                     case 0:
                         var3 = _closure1_slot1;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'components_native/chat/JumpToPresentButton.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: JumpToPresentButton, environment: var1
+            var1 = function arg0() {
                 _fun90852: for (var _fun90852_ip = 0;;) switch (_fun90852_ip) {
                     case 0:
                         var0 = arg0;

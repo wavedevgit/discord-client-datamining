@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var3;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun4552: for (var _fun4552_ip = 0;;) switch (_fun4552_ip) {
             case 0:
             case 2: // try_start_0
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: numColumnsOrDefault, environment: var4
+    var0 = function arg0() {
         _fun4555: for (var _fun4555_ip = 0;;) switch (_fun4555_ip) {
             case 0:
                 var1 = arg0;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot12 = var3;
     var3 = var1.PureComponent;
     var1 = function(arg0) { // Environment: var4
-        var3 = function(arg0) { // Original name: FlatList, environment: var5
+        var3 = function arg0() {
             _fun4557: for (var _fun4557_ip = 0;;) switch (_fun4557_ip) {
                 case 0:
                     var5 = this;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = arg3;
                                 var2 = var4.bind(var3)(var2);
                                 var _closure4_slot3 = var2;
-                                var2 = function(arg0) { // Original name: render, environment: var1
+                                var2 = function arg0() {
                                     _fun4564: for (var _fun4564_ip = 0;;) switch (_fun4564_ip) {
                                         case 0:
                                             var6 = arg0;
@@ -383,7 +383,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure4_slot4 = var2;
-                                var2 = function(arg0) { // Original name: renderProp, environment: var1
+                                var2 = function arg0() {
                                     _fun4565: for (var _fun4565_ip = 0;;) switch (_fun4565_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -578,7 +578,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'scrollToEnd';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: scrollToEnd, environment: var5
+        var0 = function arg0() {
             _fun4569: for (var _fun4569_ip = 0;;) switch (_fun4569_ip) {
                 case 0:
                     var0 = this;
@@ -603,7 +603,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'scrollToIndex';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: scrollToIndex, environment: var5
+        var6 = function arg0() {
             _fun4570: for (var _fun4570_ip = 0;;) switch (_fun4570_ip) {
                 case 0:
                     var0 = this;
@@ -627,7 +627,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'scrollToItem';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: scrollToItem, environment: var5
+        var6 = function arg0() {
             _fun4571: for (var _fun4571_ip = 0;;) switch (_fun4571_ip) {
                 case 0:
                     var0 = this;
@@ -651,7 +651,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'scrollToOffset';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: scrollToOffset, environment: var5
+        var6 = function arg0() {
             _fun4572: for (var _fun4572_ip = 0;;) switch (_fun4572_ip) {
                 case 0:
                     var0 = this;
@@ -675,7 +675,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'recordInteraction';
         var4.key = var6;
-        var6 = function() { // Original name: recordInteraction, environment: var5
+        var6 = function() {
             _fun4573: for (var _fun4573_ip = 0;;) switch (_fun4573_ip) {
                 case 0:
                     var0 = this;
@@ -698,7 +698,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'flashScrollIndicators';
         var4.key = var6;
-        var6 = function() { // Original name: flashScrollIndicators, environment: var5
+        var6 = function() {
             _fun4574: for (var _fun4574_ip = 0;;) switch (_fun4574_ip) {
                 case 0:
                     var0 = this;
@@ -721,7 +721,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getScrollResponder';
         var4.key = var6;
-        var6 = function() { // Original name: getScrollResponder, environment: var5
+        var6 = function() {
             _fun4575: for (var _fun4575_ip = 0;;) switch (_fun4575_ip) {
                 case 0:
                     var0 = this;
@@ -745,7 +745,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getNativeScrollRef';
         var4.key = var6;
-        var6 = function() { // Original name: getNativeScrollRef, environment: var5
+        var6 = function() {
             _fun4576: for (var _fun4576_ip = 0;;) switch (_fun4576_ip) {
                 case 0:
                     var0 = this;
@@ -769,7 +769,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getScrollableNode';
         var4.key = var6;
-        var6 = function() { // Original name: getScrollableNode, environment: var5
+        var6 = function() {
             _fun4577: for (var _fun4577_ip = 0;;) switch (_fun4577_ip) {
                 case 0:
                     var0 = this;
@@ -793,7 +793,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'setNativeProps';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: setNativeProps, environment: var5
+        var6 = function arg0() {
             _fun4578: for (var _fun4578_ip = 0;;) switch (_fun4578_ip) {
                 case 0:
                     var0 = this;
@@ -817,7 +817,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var3 = this;
             var4 = _closure1_slot0;
@@ -874,7 +874,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_checkProps';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _checkProps, environment: var5
+        var6 = function arg0() {
             _fun4580: for (var _fun4580_ip = 0;;) switch (_fun4580_ip) {
                 case 0:
                     var0 = arg0;
@@ -951,7 +951,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_pushMultiColumnViewable';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: _pushMultiColumnViewable, environment: var5
+        var6 = function arg0, arg1() {
             _fun4581: for (var _fun4581_ip = 0;;) switch (_fun4581_ip) {
                 case 0:
                     var2 = arg1;
@@ -1027,7 +1027,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_createOnViewableItemsChanged';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _createOnViewableItemsChanged, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = this;
@@ -1101,7 +1101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun4587: for (var _fun4587_ip = 0;;) switch (_fun4587_ip) {
                 case 0:
                     var0 = this;

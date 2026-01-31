@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: computeWindowDimensions, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun16923: for (var _fun16923_ip = 0;;) switch (_fun16923_ip) {
             case 0:
                 var0 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getDimensionsStoreState, environment: var3
+    var0 = function arg0() {
         _fun16924: for (var _fun16924_ip = 0;;) switch (_fun16924_ip) {
             case 0:
                 var0 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: updateDimensionsStoreState, environment: var3
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;

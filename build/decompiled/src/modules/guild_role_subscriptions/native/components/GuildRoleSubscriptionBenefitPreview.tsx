@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: BaseBenefitRow, environment: var1
+    var0 = function arg0() {
         _fun116869: for (var _fun116869_ip = 0;;) switch (_fun116869_ip) {
             case 0:
                 var0 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: DescriptiveBenefitRow, environment: var1
+    var0 = function arg0() {
         _fun116870: for (var _fun116870_ip = 0;;) switch (_fun116870_ip) {
             case 0:
                 var0 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: ChannelBenefitRow, environment: var1
+    var0 = function arg0() {
         _fun116871: for (var _fun116871_ip = 0;;) switch (_fun116871_ip) {
             case 0:
                 var0 = arg0;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: IntangibleBenefitRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.benefit;
         var5 = var0.guildId;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: EmojiBenefitRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.benefit;
         var5 = var0.guildId;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionBenefitPreview, environment: var1
+    var1 = function arg0() {
         _fun116874: for (var _fun116874_ip = 0;;) switch (_fun116874_ip) {
             case 0:
                 var0 = arg0;

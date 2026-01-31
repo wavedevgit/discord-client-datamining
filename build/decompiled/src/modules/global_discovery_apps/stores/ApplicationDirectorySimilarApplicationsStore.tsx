@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun107500: for (var _fun107500_ip = 0;;) switch (_fun107500_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getCacheKey, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.applicationId;
         var9 = var0.guildId;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: ApplicationDirectorySimilarApplicationsStore, environment: var5
+        var3 = function() {
             _fun107505: for (var _fun107505_ip = 0;;) switch (_fun107505_ip) {
                 case 0:
                     var3 = this;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getSimilarApplications';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun107506: for (var _fun107506_ip = 0;;) switch (_fun107506_ip) {
                 case 0:
                     var0 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun107507: for (var _fun107507_ip = 0;;) switch (_fun107507_ip) {
                 case 0:
                     var0 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var13 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function(arg0) { // Original name: handleFetchSimilarApplications, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var5 = var0.applicationId;
         var4 = var0.guildId;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS = var8;
-    var8 = function(arg0) { // Original name: handleFetchSimilarApplicationsSuccess, environment: var4
+    var8 = function arg0() {
         var1 = arg0;
         var4 = var1.applicationId;
         var0 = var1.guildId;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS = var8;
-    var4 = function(arg0) { // Original name: handleFetchSimilarApplicationsFailure, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var5 = var0.applicationId;
         var4 = var0.guildId;

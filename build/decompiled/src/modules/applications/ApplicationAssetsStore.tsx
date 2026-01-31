@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var8
+    var0 = function() {
         _fun50156: for (var _fun50156_ip = 0;;) switch (_fun50156_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var4 = function(arg0) { // Original name: handleFetchEmbeddedActivityShelfSuccess, environment: var8
+    var4 = function arg0() {
         _fun50159: for (var _fun50159_ip = 0;;) switch (_fun50159_ip) {
             case 0:
                 var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var8
-        var3 = function() { // Original name: ApplicationAssetsStore, environment: var5
+        var3 = function() {
             _fun50161: for (var _fun50161_ip = 0;;) switch (_fun50161_ip) {
                 case 0:
                     var3 = this;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getApplicationAssetFetchState';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun50162: for (var _fun50162_ip = 0;;) switch (_fun50162_ip) {
                 case 0:
                     var2 = _closure1_slot8;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchingIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = global;
             var3 = var1.Object;
             var2 = var3.entries;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getApplicationAssets';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot9;
             var0 = arg0;
             var0 = var1[var0];
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var13 = var6.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleFetchApplicationAssets, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.applicationId;
         var1 = {};
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_ASSETS_FETCH = var9;
-    var9 = function(arg0) { // Original name: handleFetchApplicationAssetsSuccess, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.applicationId;
         var1 = {};
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_ASSETS_FETCH_SUCCESS = var9;
-    var8 = function(arg0) { // Original name: handleUpdateApplicationAssets, environment: var8
+    var8 = function arg0() {
         _fun50169: for (var _fun50169_ip = 0;;) switch (_fun50169_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.items;
         var1 = var2.map;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: AnimatedTabs, environment: var1
+    var0 = function arg0() {
         _fun106873: for (var _fun106873_ip = 0;;) switch (_fun106873_ip) {
             case 0:
                 var0 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var11[var0];
                 var8 = var5.bind(var3)(var6);
                 var7 = var8.useAnimatedStyle;
-                var6 = function() { // Original name: f, environment: var1
+                var6 = function() {
                     _fun106874: for (var _fun106874_ip = 0;;) switch (_fun106874_ip) {
                         case 0:
                             var0 = {};
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var12[var3];
                             var3 = var11.bind(var10)(var3);
                             var15 = var3.springStandard;
-                            var3 = function(arg0) { // Original name: t, environment: var3
+                            var3 = function arg0() {
                                 _fun106875: for (var _fun106875_ip = 0;;) switch (_fun106875_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2 = var8.bind(var9)(var2, var7);
-                var2 = function() { // Original name: useCountFormatter, environment: var1
+                var2 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var2 = 2;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot4 = var9;
                 var13 = _closure1_slot3;
                 var12 = var13.useCallback;
-                var8 = function() { // Original name: h, environment: var1
+                var8 = function() {
                     _fun106879: for (var _fun106879_ip = 0;;) switch (_fun106879_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var0];
                 var13 = var5.bind(var3)(var2);
                 var12 = var13.useAnimatedReaction;
-                var2 = function() { // Original name: F, environment: var1
+                var2 = function() {
                     var0 = _closure2_slot0;
                     var1 = var0.scrollOffset;
                     var0 = var1.get;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.__workletHash = var14;
                 var14 = _closure1_slot8;
                 var2.__initData = var14;
-                var1 = function(arg0, arg1) { // Original name: w, environment: var1
+                var1 = function arg0, arg1() {
                     _fun106881: for (var _fun106881_ip = 0;;) switch (_fun106881_ip) {
                         case 0:
                             var2 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderItem, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot4;
         var3 = _closure1_slot11;
         var2 = {};
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/tabs/SearchTabsTransitionGroup.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SearchTabsTransitionGroup, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.state;
         var3 = _closure1_slot4;

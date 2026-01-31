@@ -12,7 +12,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = metroImportAll;
             var _closure1_slot2 = var0;
             var _closure1_slot3 = var9;
-            var5 = function(arg0) { // Original name: getAPIEndpoint, environment: var1
+            var5 = function arg0() {
                 var0 = global;
                 var1 = var0.location;
                 var9 = var1.protocol;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot10 = var5;
-            var4 = function(arg0) { // Original name: isManualBuildOverrideLink, environment: var1
+            var4 = function arg0() {
                 _fun17718: for (var _fun17718_ip = 0;;) switch (_fun17718_ip) {
                     case 0:
                         var3 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot11 = var4;
-            var3 = function(arg0) { // Original name: manualOverrideLinkMeta, environment: var1
+            var3 = function arg0() {
                 _fun17719: for (var _fun17719_ip = 0;;) switch (_fun17719_ip) {
                     case 0:
                         var3 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.bind(var9)(var7);
             var2.APP_VERSION = var6;
             var2.getAPIEndpoint = var5;
-            var5 = function() { // Original name: getBuildOverride, environment: var1
+            var5 = function() {
                 _fun17720: for (var _fun17720_ip = 0;;) switch (_fun17720_ip) {
                     case 0:
                         var2 = _closure1_slot1;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getBuildOverride = var5;
-            var5 = function(arg0) { // Original name: getBuildOverrideMeta, environment: var1
+            var5 = function arg0() {
                 _fun17723: for (var _fun17723_ip = 0;;) switch (_fun17723_ip) {
                     case 0:
                         var4 = arg0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getBuildOverrideMeta = var5;
-            var5 = function() { // Original name: probablyHasBuildOverride, environment: var1
+            var5 = function() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.document;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.probablyHasBuildOverride = var5;
-            var5 = function() { // Original name: getBuildOverrideExperiments, environment: var1
+            var5 = function() {
                 _fun17727: for (var _fun17727_ip = 0;;) switch (_fun17727_ip) {
                     case 0:
                         var6 = undefined;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getBuildOverrideExperiments = var5;
-            var5 = function(arg0) { // Original name: isBuildOverrideLink, environment: var1
+            var5 = function arg0() {
                 _fun17728: for (var _fun17728_ip = 0;;) switch (_fun17728_ip) {
                     case 0:
                         var3 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.isBuildOverrideLink = var5;
             var2.isManualBuildOverrideLink = var4;
             var2.manualOverrideLinkMeta = var3;
-            var1 = function(arg0) { // Original name: validateURL, environment: var1
+            var1 = function arg0() {
                 _fun17729: for (var _fun17729_ip = 0;;) switch (_fun17729_ip) {
                     case 0:
                         var1 = arg0;

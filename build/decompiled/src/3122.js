@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: createStoreImpl, environment: var0
+    var1 = function arg0() {
         var0 = global;
         var0 = var0.Set;
         var1 = var0.prototype;
@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = new var9[var0](var8);
         var0 = var0 instanceof Object ? var0 : var1;
         var _closure2_slot1 = var0;
-        var5 = function(arg0, arg1) { // Original name: setState, environment: var2
+        var5 = function arg0, arg1() {
             _fun27257: for (var _fun27257_ip = 0;;) switch (_fun27257_ip) {
                 case 0:
                     var3 = arg0;
@@ -90,19 +90,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
             }
         };
-        var4 = function() { // Original name: getState, environment: var2
+        var4 = function() {
             var0 = _closure2_slot0;
             return var0;
         };
         var0 = {};
         var0.setState = var5;
         var0.getState = var4;
-        var1 = function() { // Original name: getInitialState, environment: var2
+        var1 = function() {
             var0 = _closure2_slot2;
             return var0;
         };
         var0.getInitialState = var1;
-        var1 = function(arg0) { // Original name: subscribe, environment: var2
+        var1 = function arg0() {
             var3 = arg0;
             var _closure3_slot0 = var3;
             var2 = _closure2_slot1;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: createStore, environment: var0
+    var1 = function arg0() {
         _fun27263: for (var _fun27263_ip = 0;;) switch (_fun27263_ip) {
             case 0:
                 var3 = arg0;

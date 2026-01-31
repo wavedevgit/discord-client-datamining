@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ensureImageSource, environment: var1
+    var0 = function arg0() {
         _fun27294: for (var _fun27294_ip = 0;;) switch (_fun27294_ip) {
             case 0:
                 var3 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/design/components/Rive/native/BaseRive.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BaseRive, environment: var1
+    var1 = function arg0() {
         _fun27295: for (var _fun27295_ip = 0;;) switch (_fun27295_ip) {
             case 0:
                 var1 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var1.referencedAssets;
                 var2 = var1.onDataBindingChange;
                 var18 = var1.stateMachine;
-                var1 = function() { // Original name: useDefaultRenderer, environment: var0
+                var1 = function() {
                     _fun27296: for (var _fun27296_ip = 0;;) switch (_fun27296_ip) {
                         case 0:
                             var4 = _closure1_slot0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot5;
                 var5 = var7.useRef;
                 var7 = var5.bind(var7)(var10);
-                var5 = function(arg0, arg1, arg2, arg3) { // Original name: useDataBinding, environment: var0
+                var5 = function arg0, arg1, arg2, arg3() {
                     _fun27298: for (var _fun27298_ip = 0;;) switch (_fun27298_ip) {
                         case 0:
                             var13 = arg0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var4.dataBinding = var10;
                             var4.riveRef = var13;
-                            var1 = function(arg0) { // Original name: useIsReadyToDisplay, environment: var0
+                            var1 = function arg0() {
                                 var2 = arg0;
                                 var1 = var2.dataBinding;
                                 var _closure4_slot0 = var1;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var6.useManaContext;
                             var4 = var4.bind(var6)();
                             var15 = var4.experiments;
-                            var4 = function() { // Original name: useRiveImageLoading, environment: var0
+                            var4 = function() {
                                 var3 = _closure1_slot5;
                                 var2 = var3.useRef;
                                 var1 = {};
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var23[var5](var22, var21, var20, var19, var18);
                 var14 = var5.onStateUpdated;
                 var6 = var5.isReadyToDisplay;
-                var0 = function(arg0, arg1, arg2, arg3) { // Original name: useDataBindingCallbacks, environment: var0
+                var0 = function arg0, arg1, arg2, arg3() {
                     var7 = arg0;
                     var6 = arg1;
                     var5 = arg2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: _positionUnavailableSoundsAtEnd, environment: var1
+    var0 = function arg0() {
         var2 = new Array(0);
         var4 = arg0;
         var3 = 0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var3 = function(arg0) { // Original name: sortSoundsOldestToNewestCreationDate, environment: var1
+    var3 = function arg0() {
         _fun68211: for (var _fun68211_ip = 0;;) switch (_fun68211_ip) {
             case 0:
                 var1 = arguments[1];
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var0 = function(arg0) { // Original name: sortSoundsNewestToOldestCreationDate, environment: var1
+    var0 = function arg0() {
         _fun68213: for (var _fun68213_ip = 0;;) switch (_fun68213_ip) {
             case 0:
                 var1 = arguments[1];
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _sortSoundsBySoundIdSequence, environment: var1
+    var0 = function arg0, arg1() {
         _fun68215: for (var _fun68215_ip = 0;;) switch (_fun68215_ip) {
             case 0:
                 var8 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/soundboard/useSoundOrganizer.tsx';
     var4 = var5.bind(var6)(var4);
     var2.sortSoundsOldestToNewestCreationDate = var3;
-    var1 = function() { // Original name: useSoundOrganizer, environment: var1
+    var1 = function() {
         _fun68218: for (var _fun68218_ip = 0;;) switch (_fun68218_ip) {
             case 0:
                 var5 = _closure1_slot0;

@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/native/MessageAccessibilityActions.tsx';
     var4 = var5.bind(var6)(var4);
     var2.MessageAccessibilityAction = var3;
-    var3 = function(arg0) { // Original name: getMessageAccessibilityActionFromLabel, environment: var1
+    var3 = function arg0() {
         var1 = {};
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getMessageAccessibilityActionFromLabel = var3;
-    var1 = function(arg0, arg1) { // Original name: createMessageAccessibilityActions, environment: var1
+    var1 = function arg0, arg1() {
         _fun88700: for (var _fun88700_ip = 0;;) switch (_fun88700_ip) {
             case 0:
                 var5 = arg1;

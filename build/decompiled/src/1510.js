@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: decodeComponents, environment: var0
+    var1 = function arg0, arg1() {
         _fun17244: for (var _fun17244_ip = 0;;) switch (_fun17244_ip) {
             case 0:
                 var0 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: decode, environment: var0
+    var1 = function arg0() {
         _fun17245: for (var _fun17245_ip = 0;;) switch (_fun17245_ip) {
             case 0:
                 var0 = arg0;

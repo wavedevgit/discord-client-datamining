@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var5.bind(var6)(var2, var1, var4);
     var1 = {};
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: updateChannelDimensions, environment: var0
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateChannelDimensions = var4;
-    var4 = function(arg0, arg1) { // Original name: updateChannelListScroll, environment: var0
+    var4 = function arg0, arg1() {
         _fun72441: for (var _fun72441_ip = 0;;) switch (_fun72441_ip) {
             case 0:
                 var4 = arguments[2];
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateChannelListScroll = var4;
-    var4 = function(arg0, arg1) { // Original name: channelListScrollTo, environment: var0
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.channelListScrollTo = var4;
-    var4 = function(arg0) { // Original name: clearChannelListScrollTo, environment: var0
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearChannelListScrollTo = var4;
-    var4 = function(arg0, arg1) { // Original name: clearChannelDimensions, environment: var0
+    var4 = function arg0, arg1() {
         var4 = this;
         var3 = var4.updateChannelDimensions;
         var9 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearChannelDimensions = var4;
-    var0 = function(arg0) { // Original name: updateGuildListScrollTo, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

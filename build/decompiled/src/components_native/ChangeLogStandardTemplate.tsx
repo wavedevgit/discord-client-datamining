@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var6
+    var0 = function arg0, arg1, arg2() {
         _fun55832: for (var _fun55832_ip = 0;;) switch (_fun55832_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+    var0 = function() {
         _fun55833: for (var _fun55833_ip = 0;;) switch (_fun55833_ip) {
             case 0:
             case 2: // try_start_0
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: LinkInner, environment: var6
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.changelogId;
         var1 = var0.target;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = 'link';
         var0.accessibilityRole = var7;
         var0.style = var6;
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             _fun55838: for (var _fun55838_ip = 0;;) switch (_fun55838_ip) {
                 case 0:
                     var3 = _closure1_slot1;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: getLinkComponent, environment: var6
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var3 = function(arg0) { // Original name: changelogRules, environment: var6
+    var3 = function arg0() {
         _fun55841: for (var _fun55841_ip = 0;;) switch (_fun55841_ip) {
             case 0:
                 var8 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var3;
-    var1 = function(arg0) { // Original name: getRenderChangelog, environment: var6
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var1 = 20;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot18 = var5;
     var7 = var10.PureComponent;
     var5 = function(arg0) { // Environment: var6
-        var3 = function() { // Original name: LHeading, environment: var5
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getStyles';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var5
+        var0 = function arg0, arg1() {
             _fun55845: for (var _fun55845_ip = 0;;) switch (_fun55845_ip) {
                 case 0:
                     var1 = arg1;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var10 = this;
             var0 = var10.props;
             var9 = var0.children;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var4;
     var11 = var10.PureComponent;
     var4 = function(arg0) { // Environment: var6
-        var3 = function() { // Original name: ListItem, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun55850: for (var _fun55850_ip = 0;;) switch (_fun55850_ip) {
                 case 0:
                     var0 = this;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.contextType = var11;
     var10 = var10.PureComponent;
     var6 = function(arg0) { // Environment: var6
-        var3 = function(arg0) { // Original name: ChangeLogStandardModal, environment: var5
+        var3 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'renderFooter';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var1 = _closure1_slot16;
             var0 = this;
             var0 = var0.context;
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var20 = var18[var20];
             var20 = var16.bind(var3)(var20);
             var9.source = var20;
-            var20 = function() { // Original name: onPress, environment: var13
+            var20 = function() {
                 var5 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var0 = 17;
@@ -895,7 +895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var21 = var21["h0or/l"];
             var21 = var22.bind(var23)(var21);
             var12.accessibilityLabel = var21;
-            var21 = function() { // Original name: onPress, environment: var13
+            var21 = function() {
                 var3 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 var0 = 17;
@@ -930,7 +930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = var14["5uVPyf"];
             var14 = var15.bind(var16)(var14);
             var10.accessibilityLabel = var14;
-            var13 = function() { // Original name: onPress, environment: var13
+            var13 = function() {
                 var3 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 var0 = 17;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var6 = this;
             var0 = var6.props;
             var8 = var0.changeLog;

@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var3.ignoreUnknownFields = var4;
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: jsonReadOptions, environment: var1
+    var3 = function arg0() {
         _fun14883: for (var _fun14883_ip = 0;;) switch (_fun14883_ip) {
             case 0:
                 var4 = arg0;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.jsonReadOptions = var3;
-    var3 = function(arg0) { // Original name: jsonWriteOptions, environment: var1
+    var3 = function arg0() {
         _fun14884: for (var _fun14884_ip = 0;;) switch (_fun14884_ip) {
             case 0:
                 var4 = arg0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.jsonWriteOptions = var3;
-    var1 = function(arg0, arg1) { // Original name: mergeJsonOptions, environment: var1
+    var1 = function arg0, arg1() {
         _fun14885: for (var _fun14885_ip = 0;;) switch (_fun14885_ip) {
             case 0:
                 var9 = arg0;

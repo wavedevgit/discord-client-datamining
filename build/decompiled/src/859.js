@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0) { // Original name: logSpanEnd, environment: var0
+    var2 = function arg0() {
         _fun9056: for (var _fun9056_ip = 0;;) switch (_fun9056_ip) {
             case 0:
                 var3 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.logSpanEnd = var2;
-    var0 = function(arg0) { // Original name: logSpanStart, environment: var0
+    var0 = function arg0() {
         _fun9057: for (var _fun9057_ip = 0;;) switch (_fun9057_ip) {
             case 0:
                 var3 = arg0;

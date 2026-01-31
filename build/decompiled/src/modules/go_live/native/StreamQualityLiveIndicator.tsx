@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/go_live/native/StreamQualityLiveIndicator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun64526: for (var _fun64526_ip = 0;;) switch (_fun64526_ip) {
             case 0:
                 var4 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var23[var7];
                 var26 = var25.bind(var4)(var16);
                 var18 = var26.useAnimatedStyle;
-                var16 = function() { // Original name: f, environment: var0
+                var16 = function() {
                     _fun64527: for (var _fun64527_ip = 0;;) switch (_fun64527_ip) {
                         case 0:
                             var0 = {};

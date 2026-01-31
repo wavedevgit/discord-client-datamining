@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.unsafe_rawColors;
             var3 = var3.BRAND_500;
             var8.backgroundColor = var3;
-            var3 = function() { // Original name: getLabel, environment: var9
+            var3 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var3;
-            var3 = function(arg0) { // Original name: onPress, environment: var9
+            var3 = function arg0() {
                 var0 = arg0;
                 var9 = var0.channel;
                 var4 = var0.code;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var15 = var7[var15];
             var15 = var13.bind(var0)(var15);
             var8.IconComponent = var15;
-            var15 = function() { // Original name: getLabel, environment: var9
+            var15 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var15;
-            var15 = function(arg0) { // Original name: onPress, environment: var9
+            var15 = function arg0() {
                 var0 = arg0;
                 var4 = var0.channel;
                 var3 = var0.code;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var7[var12];
             var12 = var13.bind(var0)(var12);
             var8.IconComponent = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 var0 = arg0;
                 var9 = var0.code;
                 var1 = var0.channel;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var15 = var16.canSendSMS;
             var15 = var15.bind(var16)();
             var8.isAvailable = var15;
-            var15 = function() { // Original name: getLabel, environment: var9
+            var15 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var15;
-            var15 = function(arg0) { // Original name: onPress, environment: var9
+            var15 = function arg0() {
                 _fun67399: for (var _fun67399_ip = 0;;) switch (_fun67399_ip) {
                     case 0:
                         var0 = arg0;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var14.canSendMail;
             var12 = var12.bind(var14)();
             var8.isAvailable = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 _fun67402: for (var _fun67402_ip = 0;;) switch (_fun67402_ip) {
                     case 0:
                         var0 = arg0;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var10.MESSENGER;
             var12 = var14.bind(var15)(var12);
             var8.isAvailable = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channel;
                 var7 = var0.code;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var10.GMAIL;
             var12 = var14.bind(var15)(var12);
             var8.isAvailable = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -764,7 +764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channel;
                 var7 = var0.code;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var10.TELEGRAM;
             var12 = var14.bind(var15)(var12);
             var8.isAvailable = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 var0 = arg0;
                 var12 = var0.channel;
                 var8 = var0.code;
@@ -873,7 +873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var10.TWITTER;
             var12 = var14.bind(var15)(var12);
             var8.isAvailable = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -890,7 +890,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channel;
                 var7 = var0.code;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var10.WHATSAPP;
             var12 = var14.bind(var15)(var12);
             var8.isAvailable = var12;
-            var12 = function() { // Original name: getLabel, environment: var9
+            var12 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -950,7 +950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var12;
-            var12 = function(arg0) { // Original name: onPress, environment: var9
+            var12 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channel;
                 var7 = var0.code;
@@ -993,7 +993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var10.LINE;
             var10 = var11.bind(var12)(var10);
             var8.isAvailable = var10;
-            var10 = function() { // Original name: getLabel, environment: var9
+            var10 = function() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var0 = 6;
@@ -1010,7 +1010,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var8.getLabel = var10;
-            var9 = function(arg0) { // Original name: onPress, environment: var9
+            var9 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channel;
                 var7 = var0.code;

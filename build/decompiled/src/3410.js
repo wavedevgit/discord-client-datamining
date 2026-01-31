@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0) { // Original name: _typeof, environment: var2
+    var0 = function arg0() {
         _fun29399: for (var _fun29399_ip = 0;;) switch (_fun29399_ip) {
             case 0:
                 var1 = global;
@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun29399
                 }
             case 43:
-                var2 = function(arg0) { // Original name: _typeof, environment: var0
+                var2 = function arg0() {
                     _fun29401: for (var _fun29401_ip = 0;;) switch (_fun29401_ip) {
                         case 0:
                             var1 = arg0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun29399_ip = 55;
                 continue _fun29399;
             case 50:
-                var2 = function(arg0) { // Original name: _typeof, environment: var0
+                var2 = function arg0() {
                     var0 = arg0;
                     var0 = typeof var0;
                     return var0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var0;
     var0 = /^https:\\/\\ / js\.stripe\.com\\ / (v3 | [a - z] + )\\ / stripe\.js(\?.*) ? $ / ;
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: isStripeJSURL, environment: var2
+    var0 = function arg0() {
         _fun29402: for (var _fun29402_ip = 0;;) switch (_fun29402_ip) {
             case 0:
                 var3 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: injectScript, environment: var2
+    var0 = function arg0() {
         _fun29403: for (var _fun29403_ip = 0;;) switch (_fun29403_ip) {
             case 0:
                 var0 = arg0;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var0;
     var _closure1_slot7 = var0;
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: loadScript, environment: var2
+    var0 = function arg0() {
         _fun29404: for (var _fun29404_ip = 0;;) switch (_fun29404_ip) {
             case 0:
                 var1 = arg0;
@@ -387,7 +387,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 440:
                             var9 = var2;
                             var7 = var3;
-                            var8 = function(arg0, arg1) { // Original name: onLoad, environment: var6
+                            var8 = function arg0, arg1() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
                                 var1 = arg1;
@@ -434,7 +434,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             };
                             var8 = var8.bind(var0)(var9, var7);
                             _closure1_slot8 = var8;
-                            var6 = function(arg0) { // Original name: onError, environment: var6
+                            var6 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
                                 var0 = function(arg0) { // Environment: var0
@@ -513,7 +513,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: validateLoadParams, environment: var2
+    var0 = function arg0() {
         _fun29411: for (var _fun29411_ip = 0;;) switch (_fun29411_ip) {
             case 0:
                 var1 = arg0;
@@ -590,7 +590,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var0;
     var0 = false;
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: loadStripe, environment: var2
+    var0 = function() {
         _fun29412: for (var _fun29412_ip = 0;;) switch (_fun29412_ip) {
             case 0:
                 var3 = undefined;
@@ -637,7 +637,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = function(arg0) { // Environment: var0
                     var4 = _closure2_slot0;
                     var3 = _closure2_slot1;
-                    var2 = function(arg0, arg1, arg2) { // Original name: initStripe, environment: var0
+                    var2 = function arg0, arg1, arg2() {
                         _fun29414: for (var _fun29414_ip = 0;;) switch (_fun29414_ip) {
                             case 0:
                                 var4 = arg0;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: createChannelFollower, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.createChannelFollower = var6;
-    var6 = function(arg0) { // Original name: fetchChannelFollowerStats, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchChannelFollowerStats = var6;
-    var6 = function(arg0) { // Original name: dismissPublishBump, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.dismissPublishBump = var6;
-    var3 = function(arg0) { // Original name: permanentlyHidePublishBump, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

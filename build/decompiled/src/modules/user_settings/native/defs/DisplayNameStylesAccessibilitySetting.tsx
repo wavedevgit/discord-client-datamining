@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var3 = function() { // Original name: useValue, environment: var9
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 2;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var1 = function(arg0) { // Original name: onValueChange, environment: var9
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var6.bind(var0)(var4);
     var5 = var8.createToggle;
     var4 = {};
-    var11 = function() { // Original name: title, environment: var9
+    var11 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 6;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.parent = var10;
     var4.useValue = var3;
     var4.onValueChange = var1;
-    var9 = function() { // Original name: usePredicate, environment: var9
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;

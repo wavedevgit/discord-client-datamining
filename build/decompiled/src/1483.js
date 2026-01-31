@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.createContext;
     var1 = {};
     var1.isDefault = var6;
-    var7 = function() { // Original name: get getKey, environment: var5
+    var7 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get setKey, environment: var5
+    var7 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get getState, environment: var5
+    var7 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get setState, environment: var5
+    var7 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var6 = function() { // Original name: get getIsInitial, environment: var5
+    var6 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;

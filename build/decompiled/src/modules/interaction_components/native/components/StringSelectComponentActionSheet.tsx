@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun78818: for (var _fun78818_ip = 0;;) switch (_fun78818_ip) {
             case 0:
                 var0 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
                 var0.onPressOptionItem = var12;
-                var12 = function(arg0) { // Original name: renderIcon, environment: var5
+                var12 = function arg0() {
                     _fun78827: for (var _fun78827_ip = 0;;) switch (_fun78827_ip) {
                         case 0:
                             var5 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.renderIcon = var12;
                 var11 = !var11;
                 var0.skipIcon = var11;
-                var11 = function(arg0) { // Original name: renderDescription, environment: var5
+                var11 = function arg0() {
                     _fun78828: for (var _fun78828_ip = 0;;) switch (_fun78828_ip) {
                         case 0:
                             var5 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.itemStyle = var7;
                 var6 = var6.size;
                 var0.selectedCount = var6;
-                var6 = function(arg0) { // Original name: isSelected, environment: var5
+                var6 = function arg0() {
                     var2 = _closure2_slot3;
                     var1 = var2.has;
                     var0 = arg0;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.isSelected = var6;
-                var6 = function() { // Original name: submitSelection, environment: var5
+                var6 = function() {
                     var2 = _closure2_slot6;
                     var5 = _closure2_slot3;
                     var1 = new Array(0);
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.submitSelection = var6;
-                var5 = function(arg0) { // Original name: itemAccessibilityLabel, environment: var5
+                var5 = function arg0() {
                     _fun78831: for (var _fun78831_ip = 0;;) switch (_fun78831_ip) {
                         case 0:
                             var4 = arg0;

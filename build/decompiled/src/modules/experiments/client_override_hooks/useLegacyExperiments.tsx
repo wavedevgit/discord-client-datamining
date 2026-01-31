@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: bucketVariantType, environment: var1
+    var0 = function arg0() {
         _fun77073: for (var _fun77073_ip = 0;;) switch (_fun77073_ip) {
             case 0:
                 var2 = arg0;
@@ -62,12 +62,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var4 = function(arg0) { // Original name: parseRegisteredExperiments, environment: var1
+    var4 = function arg0() {
         _fun77074: for (var _fun77074_ip = 0;;) switch (_fun77074_ip) {
             case 0:
                 var0 = {};
                 var _closure2_slot0 = var0;
-                var9 = function(arg0) { // Original name: _loop, environment: var10
+                var9 = function arg0() {
                     _fun77075: for (var _fun77075_ip = 0;;) switch (_fun77075_ip) {
                         case 0:
                             var5 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: getLegacyOverridesInfo, environment: var1
+    var3 = function arg0() {
         _fun77077: for (var _fun77077_ip = 0;;) switch (_fun77077_ip) {
             case 0:
                 var0 = {};
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.parseRegisteredExperiments = var4;
     var2.getLegacyOverridesInfo = var3;
-    var3 = function() { // Original name: getLegacyExperiments, environment: var1
+    var3 = function() {
         var2 = _closure1_slot5;
         var0 = var2.getRegisteredExperiments;
         var5 = var0.bind(var2)();
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLegacyExperiments = var3;
-    var1 = function() { // Original name: useLegacyExperiments, environment: var1
+    var1 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var5 = 7;

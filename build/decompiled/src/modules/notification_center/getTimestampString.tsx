@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var1 = function(arg0) { // Original name: getDurationString, environment: var3
+    var1 = function arg0() {
         _fun38399: for (var _fun38399_ip = 0;;) switch (_fun38399_ip) {
             case 0:
                 var0 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/notification_center/getTimestampString.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getTimestampString, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var5 = var0.since;
         var3 = var0.getFormatter;

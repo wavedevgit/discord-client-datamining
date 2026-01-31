@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/calls/stream/StreamFullAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StreamFullAlert, environment: var1
+    var1 = function arg0() {
         _fun117637: for (var _fun117637_ip = 0;;) switch (_fun117637_ip) {
             case 0:
                 var5 = _closure1_slot0;

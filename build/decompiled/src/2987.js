@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun23939: for (var _fun23939_ip = 0;;) switch (_fun23939_ip) {
         case 0:
             var1 = exports;
-            var4 = function(arg0, arg1, arg2) { // Original name: checkWeek, environment: var2
+            var4 = function arg0, arg1, arg2() {
                 _fun23940: for (var _fun23940_ip = 0;;) switch (_fun23940_ip) {
                     case 0:
                         var2 = arg0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.lastWeek = var4;
             var3.nextWeek = var4;
             var _closure1_slot1 = var3;
-            var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
+            var2 = function arg0, arg1, arg2, arg3() {
                 _fun23941: for (var _fun23941_ip = 0;;) switch (_fun23941_ip) {
                     case 0:
                         var1 = _closure1_slot1;

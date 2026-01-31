@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun114783: for (var _fun114783_ip = 0;;) switch (_fun114783_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var4 = function(arg0) { // Original name: getTargetType, environment: var5
+    var4 = function arg0() {
         _fun114786: for (var _fun114786_ip = 0;;) switch (_fun114786_ip) {
             case 0:
                 var5 = arg0;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0) { // Original name: getActionType, environment: var5
+    var3 = function arg0() {
         _fun114787: for (var _fun114787_ip = 0;;) switch (_fun114787_ip) {
             case 0:
                 var2 = arg0;
@@ -1105,7 +1105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var10;
     var1 = var1.AuditLogActionTypes;
     var _closure1_slot9 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: AuditLogChange, environment: var5
+    var1 = function arg0, arg1, arg2() {
         var2 = this;
         var3 = _closure1_slot6;
         var1 = _closure1_slot13;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var1;
     var1 = var9.bind(var0)(var1);
     var5 = function(arg0) { // Environment: var5
-        var2 = function(arg0) { // Original name: AuditLogRecord, environment: var0
+        var2 = function arg0() {
             _fun114790: for (var _fun114790_ip = 0;;) switch (_fun114790_ip) {
                 case 0:
                     var2 = arg0;

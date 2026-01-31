@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getGuildId, environment: var1
+    var0 = function arg0() {
         _fun66775: for (var _fun66775_ip = 0;;) switch (_fun66775_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rtc/SecureFramesTracking.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: trackRTCPanelViewed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.channelId;
         var5 = var0.selectedTab;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackRTCPanelViewed = var3;
-    var3 = function(arg0) { // Original name: trackE2EEUserVerificationViewed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.channelId;
         var8 = var0.userId;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEUserVerificationViewed = var3;
-    var3 = function(arg0) { // Original name: trackE2EEUserVerified, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.channelId;
         var8 = var0.userId;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEUserVerified = var3;
-    var3 = function(arg0) { // Original name: trackE2EEUserVerificationFailed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.channelId;
         var8 = var0.userId;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEUserVerificationFailed = var3;
-    var3 = function(arg0) { // Original name: trackE2EEUserVerificationShareClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.channelId;
         var8 = var0.userId;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEUserVerificationShareClicked = var3;
-    var3 = function(arg0) { // Original name: trackE2EEUserVerificationCopied, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.channelId;
         var8 = var0.userId;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEUserVerificationCopied = var3;
-    var3 = function(arg0) { // Original name: trackE2EECallVerificationShareClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.channelId;
         var2 = _closure1_slot1;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EECallVerificationShareClicked = var3;
-    var3 = function(arg0) { // Original name: trackE2EECallVerificationCopied, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.channelId;
         var2 = _closure1_slot1;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EECallVerificationCopied = var3;
-    var3 = function(arg0) { // Original name: trackE2EEStreamVerificationShareClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.channelId;
         var2 = _closure1_slot1;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEStreamVerificationShareClicked = var3;
-    var3 = function(arg0) { // Original name: trackE2EEStreamVerificationCopied, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.channelId;
         var2 = _closure1_slot1;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EEStreamVerificationCopied = var3;
-    var3 = function() { // Original name: trackE2EESettingsUserDelete, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EESettingsUserDelete = var3;
-    var3 = function() { // Original name: trackE2EESettingsDeviceDelete, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackE2EESettingsDeviceDelete = var3;
-    var1 = function(arg0) { // Original name: trackE2EEPublicKeyMismatch, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;

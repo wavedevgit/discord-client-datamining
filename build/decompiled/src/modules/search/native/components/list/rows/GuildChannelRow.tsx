@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildChannelLabel, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.channel;
         var0 = _closure1_slot7;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildChannelRow, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var11 = var2.channel;
         var8 = var2.subtitle;

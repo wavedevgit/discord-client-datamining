@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1) { // Original name: getChannelIconData, environment: var3
+    var1 = function arg0, arg1() {
         _fun56259: for (var _fun56259_ip = 0;;) switch (_fun56259_ip) {
             case 0:
                 var4 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/interaction_components/native/NativeSearchableSelectActionComponentUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: transformSearchableSelectOptions, environment: var3
+    var3 = function arg0, arg1() {
         var3 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var5;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useBoostCountAnimatedStyles, environment: var1
+    var0 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var8 = _closure1_slot0;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = undefined;
         var2 = var8.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: o, environment: var0
+        var0 = function() {
             _fun78012: for (var _fun78012_ip = 0;;) switch (_fun78012_ip) {
                 case 0:
                     var0 = {};
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingCtaBar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildBoostingMarketingCtaBar, environment: var1
+    var1 = function arg0() {
         _fun78013: for (var _fun78013_ip = 0;;) switch (_fun78013_ip) {
             case 0:
                 var8 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var36.bind(var3)(var20);
                 var27 = var20.PressableOpacity;
                 var20 = {};
-                var28 = function() { // Original name: onPress, environment: var9
+                var28 = function() {
                     var0 = global;
                     var3 = var0.window;
                     var2 = var3.clearTimeout;
@@ -874,7 +874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.Colors;
                 var8 = var8.GREY;
                 var5.color = var8;
-                var8 = function() { // Original name: onPress, environment: var9
+                var8 = function() {
                     var3 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 39;
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.Colors;
                 var10 = var10.GREY;
                 var8.color = var10;
-                var10 = function() { // Original name: onPress, environment: var9
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 36;
@@ -972,7 +972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var8.onPress = var10;
-                var9 = function() { // Original name: renderIcon, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot12;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;

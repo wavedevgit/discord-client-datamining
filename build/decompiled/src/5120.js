@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun45916: for (var _fun45916_ip = 0;;) switch (_fun45916_ip) {
         case 0:
             var3 = global;
-            var1 = function(arg0) { // Original name: isObject, environment: var0
+            var1 = function arg0() {
                 _fun45917: for (var _fun45917_ip = 0;;) switch (_fun45917_ip) {
                     case 0:
                         var0 = arg0;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot10 = var1;
-            var1 = function(arg0) { // Original name: toNumber, environment: var0
+            var1 = function arg0() {
                 _fun45918: for (var _fun45918_ip = 0;;) switch (_fun45918_ip) {
                     case 0:
                         var0 = arg0;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun45918
                         }
                     case 17:
-                        var1 = function(arg0) { // Original name: isSymbol, environment: var1
+                        var1 = function arg0() {
                             _fun45919: for (var _fun45919_ip = 0;;) switch (_fun45919_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var1.Math;
             var1 = var1.min;
             var _closure1_slot8 = var1;
-            var1 = function() { // Original name: now, environment: var0
+            var1 = function() {
                 var0 = _closure1_slot5;
                 var1 = var0.Date;
                 var0 = var1.now;
@@ -301,7 +301,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot9 = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: debounce, environment: var0
+            var1 = function arg0, arg1, arg2() {
                 _fun45921: for (var _fun45921_ip = 0;;) switch (_fun45921_ip) {
                     case 0:
                         var4 = arg0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = arg2;
                         var _closure2_slot0 = var4;
                         var _closure2_slot1 = var6;
-                        var0 = function(arg0) { // Original name: invokeFunc, environment: var1
+                        var0 = function arg0() {
                             var4 = _closure2_slot2;
                             var3 = _closure2_slot3;
                             var0 = undefined;
@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var _closure2_slot12 = var0;
-                        var0 = function(arg0) { // Original name: shouldInvoke, environment: var1
+                        var0 = function arg0() {
                             _fun45923: for (var _fun45923_ip = 0;;) switch (_fun45923_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -371,7 +371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot13 = var0;
-                        var0 = function() { // Original name: timerExpired, environment: var1
+                        var0 = function() {
                             _fun45924: for (var _fun45924_ip = 0;;) switch (_fun45924_ip) {
                                 case 0:
                                     var0 = _closure1_slot9;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot14 = var0;
-                        var0 = function(arg0) { // Original name: trailingEdge, environment: var1
+                        var0 = function arg0() {
                             _fun45925: for (var _fun45925_ip = 0;;) switch (_fun45925_ip) {
                                 case 0:
                                     var3 = undefined;
@@ -446,7 +446,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot15 = var0;
-                        var0 = function() { // Original name: debounced, environment: var1
+                        var0 = function() {
                             _fun45926: for (var _fun45926_ip = 0;;) switch (_fun45926_ip) {
                                 case 0:
                                     var3 = undefined;
@@ -601,7 +601,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 223:
                         _closure2_slot11 = var2;
                     case 227:
-                        var2 = function() { // Original name: cancel, environment: var1
+                        var2 = function() {
                             _fun45927: for (var _fun45927_ip = 0;;) switch (_fun45927_ip) {
                                 case 0:
                                     var2 = _closure2_slot6;
@@ -626,7 +626,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.cancel = var2;
-                        var1 = function() { // Original name: flush, environment: var1
+                        var1 = function() {
                             _fun45928: for (var _fun45928_ip = 0;;) switch (_fun45928_ip) {
                                 case 0:
                                     var0 = _closure2_slot6;

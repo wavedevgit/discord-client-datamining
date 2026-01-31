@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/soundboard/useSortedGuildIdsForSoundboard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useSortedGuildIdsForSoundboard, environment: var1
+    var1 = function arg0, arg1() {
         _fun68227: for (var _fun68227_ip = 0;;) switch (_fun68227_ip) {
             case 0:
                 var3 = arg0;

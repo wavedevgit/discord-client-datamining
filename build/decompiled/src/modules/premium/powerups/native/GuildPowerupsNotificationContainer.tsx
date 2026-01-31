@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Tier3OverrideNotice, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.text;
         var0 = _closure1_slot6;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/GuildPowerupsNotificationContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPowerupsNotificationContainer, environment: var1
+    var1 = function arg0() {
         _fun102338: for (var _fun102338_ip = 0;;) switch (_fun102338_ip) {
             case 0:
                 var0 = arg0;

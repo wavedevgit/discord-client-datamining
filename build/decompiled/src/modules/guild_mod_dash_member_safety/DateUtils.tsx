@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var3 = function(arg0) { // Original name: getMembersTableTimestampFormatter, environment: var1
+    var3 = function arg0() {
         _fun40405: for (var _fun40405_ip = 0;;) switch (_fun40405_ip) {
             case 0:
                 var3 = arg0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 'ACCOUNT_AGE';
     var4[var7] = var0;
     var _closure1_slot3 = var4;
-    var0 = function() { // Original name: getJoinedAtDateFormatter, environment: var1
+    var0 = function() {
         var0 = {};
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: getAccountAgeDateFormatter, environment: var1
+    var0 = function() {
         var0 = {};
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;

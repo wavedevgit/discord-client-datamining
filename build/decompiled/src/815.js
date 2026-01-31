@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = 4;
     var1.XHR_READYSTATE_DONE = var2;
-    var0 = function() { // Original name: createStealthXhr, environment: var0
+    var0 = function() {
         _fun8708: for (var _fun8708_ip = 0;;) switch (_fun8708_ip) {
             case 0:
                 var4 = undefined;

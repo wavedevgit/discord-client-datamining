@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot3 = var1;
     var1 = {};
-    var3 = function(arg0) { // Original name: show, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.url;
         var9 = var0.trustUrl;

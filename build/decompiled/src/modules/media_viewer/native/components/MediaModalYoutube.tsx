@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'https:';
     var3 = var7.bind(var3)(var8);
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: HTML, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot8;
         var1 = undefined;
         var0 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: getJavascriptFromVideoID, environment: var1
+    var3 = function arg0() {
         _fun76322: for (var _fun76322_ip = 0;;) switch (_fun76322_ip) {
             case 0:
                 var0 = arg0;

@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var8)(var1);
     var _closure1_slot6 = var1;
     var1 = {};
-    var7 = function(arg0) { // Original name: markSessionStarted, environment: var4
+    var7 = function arg0() {
         _fun70297: for (var _fun70297_ip = 0;;) switch (_fun70297_ip) {
             case 0:
                 var6 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.markSessionStarted = var7;
-    var7 = function() { // Original name: markSessionCompleted, environment: var4
+    var7 = function() {
         var3 = _closure1_slot6;
         var0 = var3.getState;
         var7 = var0.bind(var3)();
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.markSessionCompleted = var7;
-    var7 = function(arg0) { // Original name: markActionPerformed, environment: var4
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot6;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.markActionPerformed = var7;
-    var7 = function(arg0) { // Original name: trackMediaViewerImageSaved, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var7 = var0.url;
         var6 = var0.success;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackMediaViewerImageSaved = var7;
-    var7 = function(arg0) { // Original name: trackMediaViewerImageCopied, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var7 = var0.url;
         var6 = var0.success;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackMediaViewerImageCopied = var7;
-    var7 = function(arg0) { // Original name: trackMediaViewerLinkCopied, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var7 = var0.href;
         var6 = var0.success;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackMediaViewerLinkCopied = var7;
-    var7 = function(arg0) { // Original name: trackMediaViewerLinkOpened, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var6 = var0.href;
         var2 = _closure1_slot6;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackMediaViewerLinkOpened = var7;
-    var7 = function() { // Original name: trackMediaViewerDownloadButtonTapped, environment: var4
+    var7 = function() {
         var2 = _closure1_slot6;
         var0 = var2.getState;
         var5 = var0.bind(var2)();
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackMediaViewerDownloadButtonTapped = var7;
-    var7 = function() { // Original name: trackMediaViewerShareButtonTapped, environment: var4
+    var7 = function() {
         var2 = _closure1_slot6;
         var0 = var2.getState;
         var5 = var0.bind(var2)();
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackMediaViewerShareButtonTapped = var7;
-    var4 = function(arg0) { // Original name: trackMessageEmbedsActionCompleted, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var7 = var0.platform;
         var5 = var0.action;

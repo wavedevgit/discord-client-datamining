@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/GuildPowerupsDeactivateAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPowerupsDeactivateAlert, environment: var1
+    var1 = function arg0() {
         _fun102475: for (var _fun102475_ip = 0;;) switch (_fun102475_ip) {
             case 0:
                 var0 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = {};
                 var22 = 'destructive';
                 var20.variant = var22;
-                var22 = function(arg0) { // Original name: onPress, environment: var19
+                var22 = function arg0() {
                     var1 = arg0;
                     var0 = var1.stopPropagation;
                     var0 = var0.bind(var1)();
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var10.bind(var3)(var17);
                 var18 = var17.AlertActionButton;
                 var17 = {};
-                var19 = function() { // Original name: onPress, environment: var19
+                var19 = function() {
                     var0 = undefined;
                     return var0;
                 };

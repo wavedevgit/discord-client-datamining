@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _fetchPremiumGroupMembership, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _fetchEligibleUsers, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _inviteUsersToSubscriptionGroup, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _removeUserFromSubscriptionGroup, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _fetchSubscriptionGroupMembers, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _acceptSubscriptionGroupInvite, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -748,7 +748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _removeSubscriptionGroupInvite, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -868,7 +868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _fetchPremiumGroupInvites, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -964,7 +964,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _fetchPremiumGroupInvite, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1123,7 +1123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/premium_group/PremiumGroupActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: fetchPremiumGroupMembership, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -1134,7 +1134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchPremiumGroupMembership = var3;
-    var3 = function() { // Original name: fetchEligibleUsers, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -1145,7 +1145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchEligibleUsers = var3;
-    var3 = function() { // Original name: inviteUsersToSubscriptionGroup, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.inviteUsersToSubscriptionGroup = var3;
-    var3 = function() { // Original name: removeUserFromSubscriptionGroup, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -1167,7 +1167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeUserFromSubscriptionGroup = var3;
-    var3 = function() { // Original name: fetchSubscriptionGroupMembers, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -1178,7 +1178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSubscriptionGroupMembers = var3;
-    var3 = function() { // Original name: acceptSubscriptionGroupInvite, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -1189,7 +1189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acceptSubscriptionGroupInvite = var3;
-    var3 = function() { // Original name: removeSubscriptionGroupInvite, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -1200,7 +1200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeSubscriptionGroupInvite = var3;
-    var3 = function() { // Original name: fetchPremiumGroupInvites, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchPremiumGroupInvites = var3;
-    var1 = function() { // Original name: fetchPremiumGroupInvite, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;

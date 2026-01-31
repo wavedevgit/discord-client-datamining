@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var3;
     var6 = 180;
     var1.angle = var6;
-    var3 = function() { // Original name: getName, environment: var12
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4[1] = var5;
     var1.colors = var4;
     var1.angle = var6;
-    var4 = function() { // Original name: getName, environment: var12
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var4;
     var4 = 148.71;
     var1.angle = var4;
-    var5 = function() { // Original name: getName, environment: var12
+    var5 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var7;
     var7 = 38.08;
     var1.angle = var7;
-    var7 = function() { // Original name: getName, environment: var12
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var7;
     var7 = 154.19;
     var1.angle = var7;
-    var7 = function() { // Original name: getName, environment: var12
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var7;
     var7 = 180.14;
     var1.angle = var7;
-    var7 = function() { // Original name: getName, environment: var12
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var7;
     var7 = 179.52;
     var1.angle = var7;
-    var7 = function() { // Original name: getName, environment: var12
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var3;
     var3 = 38.99;
     var1.angle = var3;
-    var3 = function() { // Original name: getName, environment: var12
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var7;
     var7 = 141.68;
     var1.angle = var7;
-    var7 = function() { // Original name: getName, environment: var12
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var9;
     var9 = 128.92;
     var1.angle = var9;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var9;
     var9 = 162.27;
     var1.angle = var9;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var9;
     var9 = 64.92;
     var1.angle = var9;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -672,7 +672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var9;
     var9 = 48.17;
     var1.angle = var9;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var9;
     var9 = 170.82;
     var1.angle = var9;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[1] = var17;
     var1.colors = var9;
     var1.angle = var6;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var9;
     var9 = 179.14;
     var1.angle = var9;
-    var9 = function() { // Original name: getName, environment: var12
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[3] = var17;
     var1.colors = var9;
     var1.angle = var4;
-    var4 = function() { // Original name: getName, environment: var12
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -916,7 +916,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4[2] = var9;
     var1.colors = var4;
     var1.angle = var6;
-    var4 = function() { // Original name: getName, environment: var12
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var4;
     var4 = 161.03;
     var1.angle = var4;
-    var4 = function() { // Original name: getName, environment: var12
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var4;
     var4 = 239.16;
     var1.angle = var4;
-    var4 = function() { // Original name: getName, environment: var12
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1073,7 +1073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.colors = var4;
     var4 = 69.98;
     var1.angle = var4;
-    var4 = function() { // Original name: getName, environment: var12
+    var4 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.colors = var1;
     var1 = 47.61;
     var4.angle = var1;
-    var1 = function() { // Original name: getName, environment: var12
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1163,7 +1163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17[1] = var18;
     var9.colors = var17;
     var9.angle = var6;
-    var6 = function() { // Original name: getName, environment: var12
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var15.STANDARD_BACKGROUND_THEME;
     var9.type = var15;
     var9.theme = var3;
-    var3 = function() { // Original name: getName, environment: var12
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1247,7 +1247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.type = var15;
     var15 = var14.LIGHT;
     var9.theme = var15;
-    var15 = function() { // Original name: getName, environment: var12
+    var15 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1273,7 +1273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.type = var15;
     var14 = var14.MIDNIGHT;
     var9.theme = var14;
-    var14 = function() { // Original name: getName, environment: var12
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -1299,7 +1299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.type = var13;
     var13 = 'system';
     var9.theme = var13;
-    var12 = function() { // Original name: getName, environment: var12
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;

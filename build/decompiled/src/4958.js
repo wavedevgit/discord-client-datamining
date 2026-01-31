@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = ['onGestureHandlerEvent', 'onGestureHandlerStateChange'];
     var3 = var5.bind(var6)(var4, var3);
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: createNativeWrapper, environment: var1
+    var1 = function arg0() {
         _fun44767: for (var _fun44767_ip = 0;;) switch (_fun44767_ip) {
             case 0:
                 var3 = arg0;

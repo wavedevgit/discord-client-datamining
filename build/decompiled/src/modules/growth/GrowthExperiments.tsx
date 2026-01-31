@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = require;
     var2 = exports;
     var14 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun60513: for (var _fun60513_ip = 0;;) switch (_fun60513_ip) {
             case 0:
                 var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun60515: for (var _fun60515_ip = 0;;) switch (_fun60515_ip) {
             case 0:
                 var3 = arg0;
@@ -244,10 +244,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var0;
-    var3 = function(arg0) { // Original name: makeHoldoutWrappers, environment: var4
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
-        var0 = function(arg0, arg1) { // Original name: checkHoldouts, environment: var1
+        var0 = function arg0, arg1() {
             _fun60517: for (var _fun60517_ip = 0;;) switch (_fun60517_ip) {
                 case 0:
                     var9 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var _closure2_slot1 = var0;
         var0 = {};
-        var2 = function(arg0, arg1) { // Original name: useHoldoutExperiment, environment: var1
+        var2 = function arg0, arg1() {
             _fun60518: for (var _fun60518_ip = 0;;) switch (_fun60518_ip) {
                 case 0:
                     var3 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.useHoldoutExperiment = var2;
-        var1 = function(arg0, arg1) { // Original name: getHoldoutExperiment, environment: var1
+        var1 = function arg0, arg1() {
             _fun60519: for (var _fun60519_ip = 0;;) switch (_fun60519_ip) {
                 case 0:
                     var3 = arg0;

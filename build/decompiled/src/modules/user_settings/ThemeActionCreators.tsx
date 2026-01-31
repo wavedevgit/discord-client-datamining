@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: setSystemTheme, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/ThemeActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.setSystemTheme = var3;
-    var3 = function() { // Original name: setSystemThemeIfNeeded, environment: var1
+    var3 = function() {
         _fun27917: for (var _fun27917_ip = 0;;) switch (_fun27917_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setSystemThemeIfNeeded = var3;
-    var3 = function(arg0) { // Original name: setUseSystemTheme, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setUseSystemTheme = var3;
-    var3 = function(arg0) { // Original name: updateThemePreferences, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateThemePreferences = var3;
-    var3 = function(arg0) { // Original name: setThemeOverride, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setThemeOverride = var3;
-    var3 = function() { // Original name: clearThemeOverride, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearThemeOverride = var3;
-    var1 = function() { // Original name: refreshTheme, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: arrayFilter, environment: var0
+    var1 = function arg0, arg1() {
         _fun28152: for (var _fun28152_ip = 0;;) switch (_fun28152_ip) {
             case 0:
                 var6 = arg0;

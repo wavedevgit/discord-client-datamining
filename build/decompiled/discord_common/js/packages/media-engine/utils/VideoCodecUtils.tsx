@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getExperimentCodecs, environment: var1
+    var3 = function arg0() {
         _fun32505: for (var _fun32505_ip = 0;;) switch (_fun32505_ip) {
             case 0:
                 var7 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExperimentCodecs = var3;
-    var3 = function(arg0, arg1) { // Original name: filterVideoCodecs, environment: var1
+    var3 = function arg0, arg1() {
         var1 = global;
         var3 = var1.JSON;
         var2 = var3.parse;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var3 = var2.bind(var3)(var1);
-        var2 = function(arg0, arg1) { // Original name: filterVideoCodecsInternal, environment: var0
+        var2 = function arg0, arg1() {
             var3 = arg1;
             var0 = arg0;
             var _closure3_slot0 = var0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.filterVideoCodecs = var3;
-    var1 = function(arg0) { // Original name: codecNameToPayloadName, environment: var1
+    var1 = function arg0() {
         _fun32511: for (var _fun32511_ip = 0;;) switch (_fun32511_ip) {
             case 0:
                 var1 = arg0;

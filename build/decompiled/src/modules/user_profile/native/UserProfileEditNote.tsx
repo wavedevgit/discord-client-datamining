@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileEditNote.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileEditNote, environment: var1
+    var1 = function arg0() {
         _fun91815: for (var _fun91815_ip = 0;;) switch (_fun91815_ip) {
             case 0:
                 var1 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var5.bind(var0)(var4);
                                     var4 = var4.dismissKeyboard;
                                     var1.onHasEdits = var4;
-                                    var4 = function() { // Original name: resetPending, environment: var3
+                                    var4 = function() {
                                         _fun91819: for (var _fun91819_ip = 0;;) switch (_fun91819_ip) {
                                             case 0:
                                                 var2 = _closure2_slot6;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         }
                                     };
                                     var1.resetPending = var4;
-                                    var3 = function() { // Original name: onConfirm, environment: var3
+                                    var3 = function() {
                                         _fun91820: for (var _fun91820_ip = 0;;) switch (_fun91820_ip) {
                                             case 0:
                                                 var2 = _closure5_slot0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var5 = var6.bind(var7)(var5);
                     var1.headerLeft = var5;
-                    var4 = function(arg0) { // Original name: headerRight, environment: var4
+                    var4 = function arg0() {
                         _fun91821: for (var _fun91821_ip = 0;;) switch (_fun91821_ip) {
                             case 0:
                                 var3 = _closure1_slot7;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var5 = var5 === var4;
                                 var4 = 'disabled';
                                 var0[var4] = var5;
-                                var5 = function() { // Original name: onPress, environment: var4
+                                var5 = function() {
                                     _fun91822: for (var _fun91822_ip = 0;;) switch (_fun91822_ip) {
                                         case 0:
                                             var2 = _closure1_slot1;

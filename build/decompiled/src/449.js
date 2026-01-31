@@ -10,17 +10,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0, arg1) { // Original name: addMenuItem, environment: var2
+    var3 = function arg0, arg1() {
         var0 = undefined;
         return var0;
     };
     var0.addMenuItem = var3;
-    var3 = function(arg0) { // Original name: reload, environment: var2
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var0.reload = var3;
-    var2 = function() { // Original name: onFastRefresh, environment: var2
+    var2 = function() {
         var0 = undefined;
         return var0;
     };

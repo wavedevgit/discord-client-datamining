@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: SettingsWebBrowserScreen, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1

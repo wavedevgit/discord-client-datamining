@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: isValidBaggageString, environment: var3
+    var1 = function arg0() {
         _fun99542: for (var _fun99542_ip = 0;;) switch (_fun99542_ip) {
             case 0:
                 var2 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 1;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
-    var3 = function() { // Original name: getTraceData, environment: var3
+    var3 = function() {
         _fun99543: for (var _fun99543_ip = 0;;) switch (_fun99543_ip) {
             case 0:
                 var1 = _closure1_slot0;

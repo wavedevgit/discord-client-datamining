@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var8;
-    var4 = function(arg0) { // Original name: DisplayName, environment: var5
+    var4 = function arg0() {
         _fun59536: for (var _fun59536_ip = 0;;) switch (_fun59536_ip) {
             case 0:
                 var1 = arg0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var4)(var3);
                 var2 = var2.headingVariant;
                 _closure2_slot5 = var2;
-                var5 = function() { // Original name: renderDisplayName, environment: var0
+                var5 = function() {
                     var3 = _closure1_slot12;
                     var1 = _closure1_slot1;
                     var7 = _closure1_slot2;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.bind(var2)(var1, var0);
                     return var0;
                 };
-                var6 = function() { // Original name: renderBotTag, environment: var0
+                var6 = function() {
                     _fun59538: for (var _fun59538_ip = 0;;) switch (_fun59538_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var4;
-    var3 = function(arg0) { // Original name: UserTagAndPronouns, environment: var5
+    var3 = function arg0() {
         _fun59539: for (var _fun59539_ip = 0;;) switch (_fun59539_ip) {
             case 0:
                 var2 = arg0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var4 = var4.bind(var7)(var1, var2);
-                var14 = function() { // Original name: renderPronouns, environment: var0
+                var14 = function() {
                     var3 = _closure1_slot12;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var3;
-    var0 = function(arg0) { // Original name: ProfileBadge, environment: var5
+    var0 = function arg0() {
         _fun59542: for (var _fun59542_ip = 0;;) switch (_fun59542_ip) {
             case 0:
                 var0 = arg0;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'image';
                 var5.accessibilityRole = var17;
                 var5.accessibilityLabel = var16;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     _fun59543: for (var _fun59543_ip = 0;;) switch (_fun59543_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var1 = function(arg0) { // Original name: ProfileBadgeRows, environment: var5
+    var1 = function arg0() {
         _fun59544: for (var _fun59544_ip = 0;;) switch (_fun59544_ip) {
             case 0:
                 var1 = arg0;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var1;
-    var0 = function(arg0) { // Original name: GuildTag, environment: var5
+    var0 = function arg0() {
         _fun59550: for (var _fun59550_ip = 0;;) switch (_fun59550_ip) {
             case 0:
                 var0 = arg0;
@@ -1305,7 +1305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.guildTagBadgeSize = var11;
     var6[var10] = var9;
     var _closure1_slot17 = var6;
-    var6 = function(arg0) { // Original name: getStyleConfig, environment: var5
+    var6 = function arg0() {
         _fun59551: for (var _fun59551_ip = 0;;) switch (_fun59551_ip) {
             case 0:
                 var2 = arg0;
@@ -1336,7 +1336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/user_profile/native/UserProfilePrimaryInfo.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: UserProfilePrimaryInfo, environment: var5
+    var5 = function arg0() {
         _fun59552: for (var _fun59552_ip = 0;;) switch (_fun59552_ip) {
             case 0:
                 var1 = arg0;

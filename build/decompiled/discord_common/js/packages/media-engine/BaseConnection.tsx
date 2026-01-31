@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun32668: for (var _fun32668_ip = 0;;) switch (_fun32668_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var4[var5];
     var5 = var6.bind(var0)(var5);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: BaseConnection, environment: var5
+        var3 = function arg0, arg1() {
             _fun32672: for (var _fun32672_ip = 0;;) switch (_fun32672_ip) {
                 case 0:
                     var6 = arg0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'destroy';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var0 = true;
             var2.destroyed = var0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getLocalMute';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32675: for (var _fun32675_ip = 0;;) switch (_fun32675_ip) {
                 case 0:
                     var0 = this;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getLocalVideoDisabled';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32676: for (var _fun32676_ip = 0;;) switch (_fun32676_ip) {
                 case 0:
                     var0 = this;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setLocalVideoDisabled';
         var4.key = var7;
-        var7 = function(arg0, arg1) { // Original name: value, environment: var5
+        var7 = function arg0, arg1() {
             var5 = arg0;
             var4 = arg1;
             var3 = this;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getHasActiveVideoOutputSink';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32678: for (var _fun32678_ip = 0;;) switch (_fun32678_ip) {
                 case 0:
                     var3 = arg0;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setHasActiveVideoOutputSink';
         var4.key = var7;
-        var7 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var7 = function arg0, arg1, arg2() {
             _fun32679: for (var _fun32679_ip = 0;;) switch (_fun32679_ip) {
                 case 0:
                     var4 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getActiveOutputSinkTrackingEnabled';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = this;
             var0 = var0.isActiveOutputSinksEnabled;
             return var0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setUseElectronVideo';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.useElectronVideo = var1;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setClipRecordUser';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setViewerSideClip';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setRemoteAudioHistory';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setClipsKeyFrameInterval';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setQualityDecoupling';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'presentDesktopSourcePicker';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getStreamParameters';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 10;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setExperimentFlag';
         var4.key = var7;
-        var7 = function(arg0, arg1) { // Original name: value, environment: var5
+        var7 = function arg0, arg1() {
             _fun32689: for (var _fun32689_ip = 0;;) switch (_fun32689_ip) {
                 case 0:
                     var2 = arg0;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'setConnectionState';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var0 = arg0;
             var4 = this;
             var3 = var4.logger;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'updateVideoQuality';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32691: for (var _fun32691_ip = 0;;) switch (_fun32691_ip) {
                 case 0:
                     var7 = arg0;
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'applyVideoQualityMode';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32694: for (var _fun32694_ip = 0;;) switch (_fun32694_ip) {
                 case 0:
                     var1 = this;
@@ -929,7 +929,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'overwriteQualityForTesting';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var1 = this;
             var3 = var1.videoQualityManager;
             var2 = var3.setQualityOverwrite;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'configureGoLiveSimulcast';
         var4.key = var7;
-        var7 = function(arg0, arg1) { // Original name: value, environment: var5
+        var7 = function arg0, arg1() {
             var0 = this;
             var3 = var0.videoQualityManager;
             var2 = var3.configGoLiveSimulcast;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'applyQualityConstraints';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun32697: for (var _fun32697_ip = 0;;) switch (_fun32697_ip) {
                 case 0:
                     var3 = arguments[0];
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'initializeStreamParameters';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var4 = arg0;
             var1 = this;
             var _closure3_slot0 = var1;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getLocalWant';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32701: for (var _fun32701_ip = 0;;) switch (_fun32701_ip) {
                 case 0:
                     var6 = arg0;
@@ -1248,7 +1248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getRemoteVideoSinkWants';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var0 = this;
             var1 = var0.remoteVideoSinkWants;
             var0 = arg0;
@@ -1260,7 +1260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getRemoteVideoSinkPixelCount';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun32704: for (var _fun32704_ip = 0;;) switch (_fun32704_ip) {
                 case 0:
                     var5 = arg0;
@@ -1356,7 +1356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: emitStats, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

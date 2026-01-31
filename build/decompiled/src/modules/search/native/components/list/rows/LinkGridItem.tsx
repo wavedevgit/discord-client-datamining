@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getLinkNodeAtIndex, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun105581: for (var _fun105581_ip = 0;;) switch (_fun105581_ip) {
             case 0:
                 var0 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: LinkParsedGridItem, environment: var1
+    var0 = function arg0() {
         _fun105583: for (var _fun105583_ip = 0;;) switch (_fun105583_ip) {
             case 0:
                 var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: LinkEmbedGridItem, environment: var1
+    var0 = function arg0() {
         _fun105593: for (var _fun105593_ip = 0;;) switch (_fun105593_ip) {
             case 0:
                 var2 = arg0;
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.embed = var5;
                     var5 = _closure2_slot7;
                     var0.containerStyle = var5;
-                    var7 = function() { // Original name: renderFallback, environment: var7
+                    var7 = function() {
                         var3 = _closure1_slot11;
                         var2 = _closure1_slot5;
                         var1 = {};
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: LinkGridItem, environment: var1
+    var1 = function arg0() {
         _fun105601: for (var _fun105601_ip = 0;;) switch (_fun105601_ip) {
             case 0:
                 var0 = arg0;

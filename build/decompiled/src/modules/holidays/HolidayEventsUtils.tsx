@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = metroImportDefault;
     var _closure1_slot0 = var1;
     var _closure1_slot1 = var3;
-    var5 = function() { // Original name: isEligible, environment: var0
+    var5 = function() {
         _fun113339: for (var _fun113339_ip = 0;;) switch (_fun113339_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var5;
-    var4 = function() { // Original name: useIsEligible, environment: var0
+    var4 = function() {
         _fun113340: for (var _fun113340_ip = 0;;) switch (_fun113340_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var4;
-    var1 = function() { // Original name: isHolidayHappening, environment: var0
+    var1 = function() {
         _fun113341: for (var _fun113341_ip = 0;;) switch (_fun113341_ip) {
             case 0:
                 var0 = global;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var7.bind(var8)(var2, var1, var6);
     var1 = {};
-    var6 = function(arg0) { // Original name: subscribe, environment: var0
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.subscribe = var6;
     var1.isEligible = var5;
-    var5 = function() { // Original name: useHolidaySoundpack, environment: var0
+    var5 = function() {
         _fun113343: for (var _fun113343_ip = 0;;) switch (_fun113343_ip) {
             case 0:
                 var0 = _closure1_slot3;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useHolidaySoundpack = var5;
     var1.useIsEligible = var4;
-    var4 = function() { // Original name: getAppSpinnerSources, environment: var0
+    var4 = function() {
         _fun113344: for (var _fun113344_ip = 0;;) switch (_fun113344_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getAppSpinnerSources = var4;
-    var4 = function() { // Original name: getLoadingTips, environment: var0
+    var4 = function() {
         _fun113345: for (var _fun113345_ip = 0;;) switch (_fun113345_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getLoadingTips = var4;
-    var0 = function() { // Original name: getHolidaySoundpack, environment: var0
+    var0 = function() {
         _fun113346: for (var _fun113346_ip = 0;;) switch (_fun113346_ip) {
             case 0:
                 var0 = _closure1_slot2;

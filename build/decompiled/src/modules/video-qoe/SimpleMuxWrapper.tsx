@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: SimpleMuxWrapper, environment: var4
+        var2 = function arg0() {
             var1 = arg0;
             var2 = this;
             var5 = _closure1_slot3;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'initialize';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun83020: for (var _fun83020_ip = 0;;) switch (_fun83020_ip) {
                 case 0:
                     var2 = this;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'endSession';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun83021: for (var _fun83021_ip = 0;;) switch (_fun83021_ip) {
                 case 0:
                     var1 = this;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'destroy';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun83022: for (var _fun83022_ip = 0;;) switch (_fun83022_ip) {
                 case 0:
                     var1 = this;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSessionId';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0.sessionId;
             return var0;

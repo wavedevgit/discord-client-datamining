@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun88528: for (var _fun88528_ip = 0;;) switch (_fun88528_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun88530: for (var _fun88530_ip = 0;;) switch (_fun88530_ip) {
             case 0:
                 var3 = arg0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: SettingTreeManagerCache, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'get';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var0 = this;
             var1 = var0.cache;
             var0 = arg0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'set';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var0 = this;
             var2 = var0.cache;
             var1 = arg1;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var1 = {};
             var0 = this;
             var0.cache = var1;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: SettingTreeManager, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot2;
             var3 = _closure2_slot0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'transformParent';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun88538: for (var _fun88538_ip = 0;;) switch (_fun88538_ip) {
                 case 0:
                     var3 = arg0;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'validate';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getAncestors';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun88540: for (var _fun88540_ip = 0;;) switch (_fun88540_ip) {
                 case 0:
                     var6 = this;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isBlocked';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var3 = arg0;
             var2 = this;
             var1 = arg1;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getHighestLevelAncestor';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun88543: for (var _fun88543_ip = 0;;) switch (_fun88543_ip) {
                 case 0:
                     var4 = arg0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getNearestRouteAncestorDataOrSelf';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun88544: for (var _fun88544_ip = 0;;) switch (_fun88544_ip) {
                 case 0:
                     var4 = arg0;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBreadcrumbs';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun88545: for (var _fun88545_ip = 0;;) switch (_fun88545_ip) {
                 case 0:
                     var5 = arg0;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearCaches';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var2 = var0.breadcrumbCache;
             var1 = var2.clear;

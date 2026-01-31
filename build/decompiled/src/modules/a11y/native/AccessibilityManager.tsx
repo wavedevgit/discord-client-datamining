@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.SystemTheme;
     var _closure1_slot8 = var1;
     var1 = {};
-    var6 = function() { // Original name: init, environment: var3
+    var6 = function() {
         var2 = this;
         var _closure2_slot0 = var2;
         var4 = _closure1_slot1;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.init = var6;
-    var6 = function() { // Original name: updateNativeColors, environment: var3
+    var6 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateNativeColors = var6;
-    var6 = function() { // Original name: updateMotionSettings, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateMotionSettings = var6;
-    var6 = function() { // Original name: checkScreenreaderEnabled, environment: var3
+    var6 = function() {
         var1 = this;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.checkScreenreaderEnabled = var6;
-    var6 = function(arg0) { // Original name: updateScreenReaderEnabled, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var0 = 9;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateScreenReaderEnabled = var6;
-    var6 = function(arg0) { // Original name: updateSystemAppearance, environment: var3
+    var6 = function arg0() {
         _fun97716: for (var _fun97716_ip = 0;;) switch (_fun97716_ip) {
             case 0:
                 var1 = _closure1_slot8;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateSystemAppearance = var6;
-    var3 = function() { // Original name: startAnnouncementQueue, environment: var3
+    var3 = function() {
         var1 = global;
         var1 = var1.Set;
         var2 = var1.prototype;

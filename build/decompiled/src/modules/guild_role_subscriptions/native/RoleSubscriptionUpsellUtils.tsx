@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot3 = var1;
     var1 = {};
-    var3 = function(arg0) { // Original name: handleShowEmojiUpsellAlert, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.guildId;
         var _closure2_slot0 = var0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot2;
             var1 = 4;

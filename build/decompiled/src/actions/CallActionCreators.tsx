@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ChannelTypes;
     var _closure1_slot9 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: call, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         _fun64376: for (var _fun64376_ip = 0;;) switch (_fun64376_ip) {
             case 0:
                 var6 = arg0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot4 = var3;
                 var1 = arg4;
                 var _closure2_slot5 = var1;
-                var2 = function(arg0) { // Original name: doCall, environment: var0
+                var2 = function arg0() {
                     _fun64377: for (var _fun64377_ip = 0;;) switch (_fun64377_ip) {
                         case 0:
                             var2 = _closure1_slot1;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4.BddRzS;
                             var4 = var5.bind(var6)(var4);
                             var1.cancelText = var4;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 9;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.call = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: ring, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun64381: for (var _fun64381_ip = 0;;) switch (_fun64381_ip) {
             case 0:
                 var10 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.ring = var6;
-    var3 = function(arg0, arg1) { // Original name: stopRinging, environment: var3
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;

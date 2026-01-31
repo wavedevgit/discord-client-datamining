@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/game_profile/experiments/GameProfileExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.GameProfileRolloutExperiment = var3;
-    var3 = function(arg0) { // Original name: canSeeGameProfile, environment: var1
+    var3 = function arg0() {
         _fun78459: for (var _fun78459_ip = 0;;) switch (_fun78459_ip) {
             case 0:
                 var4 = arguments[1];
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canSeeGameProfile = var3;
-    var1 = function(arg0) { // Original name: useCanSeeGameProfile, environment: var1
+    var1 = function arg0() {
         _fun78460: for (var _fun78460_ip = 0;;) switch (_fun78460_ip) {
             case 0:
                 var4 = arguments[1];

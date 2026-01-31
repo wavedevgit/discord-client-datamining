@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/virtual_currency/hooks/useRedeemVirtualCurrency.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useRedeemVirtualCurrency, environment: var1
+    var1 = function() {
         _fun78520: for (var _fun78520_ip = 0;;) switch (_fun78520_ip) {
             case 0:
                 var12 = _closure1_slot5;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.skuId = var5;
                             var5 = arg1;
                             var0.loadId = var5;
-                            var5 = function() { // Original name: onRedeemStart, environment: var4
+                            var5 = function() {
                                 var3 = _closure2_slot5;
                                 var0 = undefined;
                                 var2 = true;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.onRedeemStart = var5;
-                            var5 = function(arg0) { // Original name: onRedeemSucceed, environment: var4
+                            var5 = function arg0() {
                                 _fun78535: for (var _fun78535_ip = 0;;) switch (_fun78535_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var0.onRedeemSucceed = var5;
-                            var4 = function(arg0) { // Original name: onRedeemFail, environment: var4
+                            var4 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var0 = undefined;
                                 var2 = arg0;

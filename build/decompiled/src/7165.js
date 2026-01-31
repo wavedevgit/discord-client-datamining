@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: parseRetryAfterHeader, environment: var1
+    var3 = function arg0() {
         _fun58833: for (var _fun58833_ip = 0;;) switch (_fun58833_ip) {
             case 0:
                 var7 = arg0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var3;
-    var4 = function(arg0, arg1) { // Original name: disabledUntil, environment: var1
+    var4 = function arg0, arg1() {
         _fun58834: for (var _fun58834_ip = 0;;) switch (_fun58834_ip) {
             case 0:
                 var1 = arg0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 60000;
     var2.DEFAULT_RETRY_AFTER = var5;
     var2.disabledUntil = var4;
-    var4 = function(arg0, arg1) { // Original name: isRateLimited, environment: var1
+    var4 = function arg0, arg1() {
         _fun58835: for (var _fun58835_ip = 0;;) switch (_fun58835_ip) {
             case 0:
                 var4 = undefined;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isRateLimited = var4;
     var2.parseRetryAfterHeader = var3;
-    var1 = function(arg0, arg1) { // Original name: updateRateLimits, environment: var1
+    var1 = function arg0, arg1() {
         _fun58836: for (var _fun58836_ip = 0;;) switch (_fun58836_ip) {
             case 0:
                 var1 = arg1;

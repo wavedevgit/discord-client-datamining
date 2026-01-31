@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var3 = var3.HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN;
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: cardSize, environment: var1
+    var3 = function arg0() {
         _fun101568: for (var _fun101568_ip = 0;;) switch (_fun101568_ip) {
             case 0:
                 var3 = arg0;
@@ -164,10 +164,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.HappeningNowWeights = var3;
     var3 = -1000;
     var2.HAPPENING_NOW_OFFLINE_PENALTY = var3;
-    var3 = function(arg0) { // Original name: filterHappeningNowCards, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
-        var1 = function(arg0) { // Original name: hasNoDiscoverableVoiceStates, environment: var0
-            var2 = function(arg0) { // Original name: cardHasNoDiscoverableVoiceStates, environment: var0
+        var1 = function arg0() {
+            var2 = function arg0() {
                 _fun101571: for (var _fun101571_ip = 0;;) switch (_fun101571_ip) {
                     case 0:
                         var1 = arg0;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var _closure2_slot0 = var1;
-        var1 = function(arg0) { // Original name: hasBlockedOrIgnoredUserInChannel, environment: var0
-            var2 = function(arg0) { // Original name: cardHasBlockedOrIgnoredUserInVoiceChannel, environment: var0
+        var1 = function arg0() {
+            var2 = function arg0() {
                 _fun101574: for (var _fun101574_ip = 0;;) switch (_fun101574_ip) {
                     case 0:
                         var2 = arg0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.filterHappeningNowCards = var3;
-    var1 = function(arg0) { // Original name: sortHappeningNowCards, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 4;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2[0] = var1;
         var0 = function(arg0) { // Environment: var0
-            var2 = function(arg0) { // Original name: cardHasNonDiscoverableVoiceStates, environment: var0
+            var2 = function arg0() {
                 _fun101581: for (var _fun101581_ip = 0;;) switch (_fun101581_ip) {
                     case 0:
                         var1 = arg0;

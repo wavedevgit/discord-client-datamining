@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.x = var0;
     var3.y = var0;
     var _closure1_slot0 = var3;
-    var1 = function(arg0, arg1) { // Original name: pointsDiffer, environment: var1
+    var1 = function arg0, arg1() {
         _fun1506: for (var _fun1506_ip = 0;;) switch (_fun1506_ip) {
             case 0:
                 var3 = arg0;

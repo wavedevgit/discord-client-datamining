@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useRoleIcon = var3;
-    var1 = function(arg0) { // Original name: getRoleIcon, environment: var1
+    var1 = function arg0() {
         _fun55735: for (var _fun55735_ip = 0;;) switch (_fun55735_ip) {
             case 0:
                 var0 = arg0;

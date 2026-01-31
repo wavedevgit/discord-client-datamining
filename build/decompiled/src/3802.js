@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun34299: for (var _fun34299_ip = 0;;) switch (_fun34299_ip) {
             case 0:
                 var3 = arg0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun34300: for (var _fun34300_ip = 0;;) switch (_fun34300_ip) {
             case 0:
             case 2: // try_start_0
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -128,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var7 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: PinwheelIn, environment: var1
+        var4 = function() {
             _fun34304: for (var _fun34304_ip = 0;;) switch (_fun34304_ip) {
                 case 0:
                     var5 = this;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
-                        var0 = function() { // Original name: pnpm_PinwheelTs1, environment: var0
+                        var0 = function() {
                             var0 = {};
                             var2 = {};
                             var8 = _closure4_slot0;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'createInstance';
         var0.key = var5;
-        var1 = function() { // Original name: createInstance, environment: var1
+        var1 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.ComplexAnimationBuilder;
     var1 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: PinwheelOut, environment: var1
+        var4 = function() {
             _fun34309: for (var _fun34309_ip = 0;;) switch (_fun34309_ip) {
                 case 0:
                     var5 = this;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
-                        var0 = function() { // Original name: pnpm_PinwheelTs2, environment: var0
+                        var0 = function() {
                             var0 = {};
                             var2 = {};
                             var8 = _closure4_slot0;
@@ -453,7 +453,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'createInstance';
         var0.key = var5;
-        var1 = function() { // Original name: createInstance, environment: var1
+        var1 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {

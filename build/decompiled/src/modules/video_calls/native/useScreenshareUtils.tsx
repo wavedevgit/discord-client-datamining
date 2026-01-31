@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var4 = function() { // Original name: getOSRequirement, environment: var1
+    var4 = function() {
         var1 = _closure1_slot5;
         var0 = 12;
         var0 = var1 >= var0;
         return var0;
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getStreamPressHandler, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun67893: for (var _fun67893_ip = 0;;) switch (_fun67893_ip) {
             case 0:
                 var1 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun67893
                 }
             case 74:
-                var0 = function() { // Original name: S, environment: var0
+                var0 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var6 = 14;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var6;
     var5 = var5.BroadcastUploadManager;
     var _closure1_slot6 = var5;
-    var5 = function() { // Original name: startAndroidScreenshare, environment: var1
+    var5 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var5;
-    var5 = function() { // Original name: showScreensharePicker, environment: var1
+    var5 = function() {
         var1 = _closure1_slot6;
         var0 = var1.showPicker;
         var0 = var0.bind(var1)();
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var5;
-    var7 = function() { // Original name: handleCloseScreenshare, environment: var1
+    var7 = function() {
         _fun67898: for (var _fun67898_ip = 0;;) switch (_fun67898_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var7;
-    var6 = function() { // Original name: stopScreenshare, environment: var1
+    var6 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var6;
-    var5 = function(arg0) { // Original name: handleOnboard, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var6 = _closure1_slot0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.paths;
         var3 = var6.bind(var0)(var3, var2);
         var2 = {};
-        var6 = function() { // Original name: onScreensharePress, environment: var1
+        var6 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.onScreensharePress = var6;
-        var1 = function() { // Original name: onSkip, environment: var1
+        var1 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.fileFinishedImporting;
     var8 = 'modules/video_calls/native/useScreenshareUtils.tsx';
     var8 = var9.bind(var10)(var8);
-    var8 = function(arg0) { // Original name: _default, environment: var1
+    var8 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var6 = _closure1_slot1;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleCloseScreenshare = var7;
     var2.stopScreenshare = var6;
     var2.handleOnboard = var5;
-    var5 = function() { // Original name: startStream, environment: var1
+    var5 = function() {
         _fun67905: for (var _fun67905_ip = 0;;) switch (_fun67905_ip) {
             case 0:
                 var3 = _closure1_slot0;

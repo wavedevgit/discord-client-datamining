@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var8;
-    var5 = function(arg0) { // Original name: connectToStage, environment: var1
+    var5 = function arg0() {
         _fun51735: for (var _fun51735_ip = 0;;) switch (_fun51735_ip) {
             case 0:
                 var0 = arg0;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun51735
                 }
             case 34:
-                var1 = function(arg0, arg1) { // Original name: canJoinImmediately, environment: var1
+                var1 = function arg0, arg1() {
                     _fun51736: for (var _fun51736_ip = 0;;) switch (_fun51736_ip) {
                         case 0:
                             var5 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0) { // Original name: connectAndOpen, environment: var1
+    var4 = function arg0() {
         _fun51738: for (var _fun51738_ip = 0;;) switch (_fun51738_ip) {
             case 0:
                 var3 = arg0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0, arg1) { // Original name: navigateToStage, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot2;
         var1 = _closure1_slot3;
         var0 = 7;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/stage_channels/StageChannelModalActionCreators.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0, arg1) { // Original name: connectOrLurkStage, environment: var1
+    var6 = function arg0, arg1() {
         _fun51741: for (var _fun51741_ip = 0;;) switch (_fun51741_ip) {
             case 0:
                 var2 = arguments[2];
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.connectToStage = var5;
     var2.connectAndOpen = var4;
     var2.navigateToStage = var3;
-    var1 = function(arg0) { // Original name: showUserProfile, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot2;
         var1 = _closure1_slot3;
         var0 = 7;

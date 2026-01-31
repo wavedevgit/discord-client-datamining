@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: waitSafelyForPostTTI, environment: var1
+    var1 = function() {
         _fun93301: for (var _fun93301_ip = 0;;) switch (_fun93301_ip) {
             case 0:
                 var1 = arguments[0];

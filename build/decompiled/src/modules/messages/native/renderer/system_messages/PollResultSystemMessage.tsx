@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: castHook, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createPollResultSystemMessage, environment: var1
+    var1 = function arg0() {
         _fun55792: for (var _fun55792_ip = 0;;) switch (_fun55792_ip) {
             case 0:
                 var5 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getMaxMessageLength_, environment: var1
+    var0 = function arg0() {
         _fun61512: for (var _fun61512_ip = 0;;) switch (_fun61512_ip) {
             case 0:
                 var4 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/useMessageMaxLength.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useMessageMaxLength, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 3;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: getMaxMessageLength, environment: var1
+    var1 = function() {
         var2 = _closure1_slot6;
         var1 = _closure1_slot3;
         var0 = undefined;

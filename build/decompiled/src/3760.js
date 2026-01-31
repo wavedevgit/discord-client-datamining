@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = "function pnpm_repeatTs2(){const{_nextAnimation,numberOfReps,reverse,callback,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function repeat(animation,now){const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;if(finished){animation.reps+=1;if(nextAnimation.callback){nextAnimation.callback(true,animation.current);}if(animation.reduceMotion||numberOfReps>0&&animation.reps>=numberOfReps){return true;}const startValue=reverse?nextAnimation.current:animation.startValue;if(reverse){nextAnimation.toValue=animation.startValue;animation.startValue=startValue;}nextAnimation.onStart(nextAnimation,startValue,now,nextAnimation.previousAnimation);return false;}return false;}const repCallback=function(finished){if(callback){callback(finished);}if(!finished&&nextAnimation.callback){nextAnimation.callback(false);}};function onStart(animation,value,now,previousAnimation){animation.startValue=value;animation.reps=0;if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}if(animation.reduceMotion&&reverse&&(numberOfReps<=0||numberOfReps%2===0)){animation.current=animation.startValue;animation.onFrame=function(){return true;};}else{nextAnimation.onStart(nextAnimation,value,now,previousAnimation);}}return{isHigherOrder:true,onFrame:repeat,onStart:onStart,reps:0,current:nextAnimation.current,callback:repCallback,startValue:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}";
     var1.code = var4;
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: pnpm_repeatTs1, environment: var0
+    var1 = function arg0() {
         _fun33737: for (var _fun33737_ip = 0;;) switch (_fun33737_ip) {
             case 0:
                 var3 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var10[var7];
                 var2 = var8.bind(var9)(var1);
                 var1 = var2.defineAnimation;
-                var0 = function() { // Original name: pnpm_repeatTs2, environment: var0
+                var0 = function() {
                     _fun33738: for (var _fun33738_ip = 0;;) switch (_fun33738_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = {};
                             var3 = true;
                             var0.isHigherOrder = var3;
-                            var3 = function(arg0, arg1) { // Original name: repeat, environment: var2
+                            var3 = function arg0, arg1() {
                                 _fun33739: for (var _fun33739_ip = 0;;) switch (_fun33739_ip) {
                                     case 0:
                                         var1 = arg0;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var0.onFrame = var3;
-                            var3 = function(arg0, arg1, arg2, arg3) { // Original name: onStart, environment: var2
+                            var3 = function arg0, arg1, arg2, arg3() {
                                 _fun33740: for (var _fun33740_ip = 0;;) switch (_fun33740_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0.reps = var3;
                             var4 = var4.current;
                             var0.current = var4;
-                            var2 = function(arg0) { // Original name: repCallback, environment: var2
+                            var2 = function arg0() {
                                 _fun33742: for (var _fun33742_ip = 0;;) switch (_fun33742_ip) {
                                     case 0:
                                         var0 = arg0;

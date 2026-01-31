@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var0;
             var0 = dependencyMap;
             var _closure1_slot1 = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: setLogAttribute, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun12774: for (var _fun12774_ip = 0;;) switch (_fun12774_ip) {
                     case 0:
                         var3 = arg0;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun12777: for (var _fun12777_ip = 0;;) switch (_fun12777_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun12778: for (var _fun12778_ip = 0;;) switch (_fun12778_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun12779: for (var _fun12779_ip = 0;;) switch (_fun12779_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun12780: for (var _fun12780_ip = 0;;) switch (_fun12780_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -260,17 +260,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot2 = var0;
             var0 = undefined;
             var _closure1_slot3 = var0;
-            var1 = function() { // Original name: logEnricherIntegration, environment: var1
+            var1 = function() {
                 var0 = {};
                 var1 = 'LogEnricher';
                 var0.name = var1;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     var2 = var3.on;
                     var1 = 'afterInit';
                     var0 = function() { // Environment: var0
-                        var2 = function() { // Original name: cacheLogContext, environment: var1
+                        var2 = function() {
                             var3 = _closure1_slot2;
                             var7 = this;
                             var4 = function*() { // Environment: var0

@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var3;
     var _closure1_slot2 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0, arg1, arg2) { // Original name: rubberBandDecay, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun33726: for (var _fun33726_ip = 0;;) switch (_fun33726_ip) {
                 case 0:
                     var1 = arg0;

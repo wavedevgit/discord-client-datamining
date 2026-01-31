@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun69743: for (var _fun69743_ip = 0;;) switch (_fun69743_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: getScreens, environment: var1
+    var0 = function arg0, arg1() {
         var4 = _closure1_slot10;
         var1 = var4.getChannel;
         var0 = arg0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var0;
         var0 = {};
         var1 = {};
-        var4 = function() { // Original name: headerTitle, environment: var2
+        var4 = function() {
             _fun69747: for (var _fun69747_ip = 0;;) switch (_fun69747_ip) {
                 case 0:
                     var10 = _closure2_slot0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = arg1;
         var3 = var4.bind(var5)(var3);
         var1.headerLeft = var3;
-        var2 = function() { // Original name: render, environment: var2
+        var2 = function() {
             var3 = _closure1_slot16;
             var2 = _closure1_slot19;
             var1 = {};
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot17 = var3;
     var7 = var6.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: InAppNotificationSettingsScreen, environment: var5
+        var3 = function arg0() {
             _fun69750: for (var _fun69750_ip = 0;;) switch (_fun69750_ip) {
                 case 0:
                     var4 = this;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'renderGroupDMNotificationSettings';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun69753: for (var _fun69753_ip = 0;;) switch (_fun69753_ip) {
                 case 0:
                     var8 = this;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderTextChannelNotificationSettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun69754: for (var _fun69754_ip = 0;;) switch (_fun69754_ip) {
                 case 0:
                     var0 = this;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderChannelNotificationSettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun69755: for (var _fun69755_ip = 0;;) switch (_fun69755_ip) {
                 case 0:
                     var2 = this;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var16 = this;
             var3 = _closure1_slot17;
             var11 = _closure1_slot0;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var3.bind(var0)(var7);
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: ConnectedInAppNotificationSettingsScreen, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.channel;
         var _closure2_slot0 = var5;

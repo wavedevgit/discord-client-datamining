@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0, arg1) { // Original name: createUserFeedbackEnvelope, environment: var0
+    var0 = function arg0, arg1() {
         _fun10955: for (var _fun10955_ip = 0;;) switch (_fun10955_ip) {
             case 0:
                 var0 = arg0;

@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 4;
     var2.CATEGORY_MARGIN_BOTTOM = var4;
     var2.CATEGORY_VERTICAL_PADDING = var4;
-    var4 = function(arg0) { // Original name: getScaledChannelSubtitleHeight, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getScaledChannelSubtitleHeight = var4;
-    var4 = function(arg0) { // Original name: getScaledCategoryRowHeight, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getScaledCategoryRowHeight = var4;
-    var4 = function(arg0) { // Original name: getScaledChannelRowHeight, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot2;
         var1 = 8;
         var2 = var1 + var2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getScaledChannelRowHeight = var4;
-    var3 = function(arg0) { // Original name: getScaledSearchBarHeight, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

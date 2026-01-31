@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: Animation, environment: var4
+        var2 = function arg0() {
             _fun5518: for (var _fun5518_ip = 0;;) switch (_fun5518_ip) {
                 case 0:
                     var3 = arg0;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'start';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: start, environment: var4
+        var1 = function arg0, arg1, arg2, arg3, arg4() {
             _fun5519: for (var _fun5519_ip = 0;;) switch (_fun5519_ip) {
                 case 0:
                     var2 = this;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'stop';
         var0.key = var5;
-        var5 = function() { // Original name: stop, environment: var4
+        var5 = function() {
             _fun5520: for (var _fun5520_ip = 0;;) switch (_fun5520_ip) {
                 case 0:
                     var3 = this;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__getNativeAnimationConfig';
         var0.key = var5;
-        var5 = function() { // Original name: __getNativeAnimationConfig, environment: var4
+        var5 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__findAnimatedPropsNodes';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: __findAnimatedPropsNodes, environment: var4
+        var5 = function arg0() {
             _fun5522: for (var _fun5522_ip = 0;;) switch (_fun5522_ip) {
                 case 0:
                     var2 = arg0;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__startAnimationIfNative';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: __startAnimationIfNative, environment: var4
+        var5 = function arg0() {
             _fun5523: for (var _fun5523_ip = 0;;) switch (_fun5523_ip) {
                 case 0:
                     var2 = arg0;
@@ -501,7 +501,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__notifyAnimationEnd';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: __notifyAnimationEnd, environment: var4
+        var5 = function arg0() {
             _fun5526: for (var _fun5526_ip = 0;;) switch (_fun5526_ip) {
                 case 0:
                     var5 = this;
@@ -531,7 +531,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__getDebugID';
         var0.key = var5;
-        var4 = function() { // Original name: __getDebugID, environment: var4
+        var4 = function() {
             var0 = undefined;
             return var0;
         };

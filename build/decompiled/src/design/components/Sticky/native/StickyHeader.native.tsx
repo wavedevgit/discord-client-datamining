@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: useStickyHeaderStyles, environment: var3
+    var1 = function arg0() {
         _fun89017: for (var _fun89017_ip = 0;;) switch (_fun89017_ip) {
             case 0:
                 var6 = arg0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9[var1];
                 var2 = var7.bind(var8)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: l, environment: var0
+                var0 = function() {
                     _fun89018: for (var _fun89018_ip = 0;;) switch (_fun89018_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'design/components/Sticky/native/StickyHeader.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: StickyHeader, environment: var3
+    var3 = function arg0() {
         _fun89019: for (var _fun89019_ip = 0;;) switch (_fun89019_ip) {
             case 0:
                 var0 = arg0;

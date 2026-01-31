@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var7
+    var0 = function arg0, arg1() {
         _fun78729: for (var _fun78729_ip = 0;;) switch (_fun78729_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var7
+    var0 = function arg0, arg1() {
         _fun78731: for (var _fun78731_ip = 0;;) switch (_fun78731_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: UserExperimentDebugView, environment: var7
+    var0 = function arg0() {
         _fun78732: for (var _fun78732_ip = 0;;) switch (_fun78732_ip) {
             case 0:
                 var0 = arg0;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: GuildExperimentDebugView, environment: var7
+    var0 = function arg0() {
         _fun78735: for (var _fun78735_ip = 0;;) switch (_fun78735_ip) {
             case 0:
                 var0 = arg0;
@@ -1056,7 +1056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var1 = function(arg0) { // Original name: ExperimentDetails, environment: var7
+    var1 = function arg0() {
         _fun78741: for (var _fun78741_ip = 0;;) switch (_fun78741_ip) {
             case 0:
                 var0 = arg0;
@@ -1248,7 +1248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var1;
-    var0 = function(arg0) { // Original name: ExperimentActionSheet, environment: var7
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.id;
         var11 = var0.experiment;
@@ -1705,7 +1705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var4 = var4.label;
                         var0.label = var4;
-                        var3 = function() { // Original name: onPress, environment: var3
+                        var3 = function() {
                             var4 = _closure1_slot0;
                             var3 = _closure1_slot2;
                             var0 = 21;
@@ -1739,7 +1739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'label': 'Clear Override',
                         'isDestructive': true
                     };
-                    var4 = function() { // Original name: onPress, environment: var1
+                    var4 = function() {
                         var4 = _closure1_slot0;
                         var3 = _closure1_slot2;
                         var0 = 21;
@@ -1784,7 +1784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot1;
                     var2.override = var7;
                     var2.options = var6;
-                    var1 = function() { // Original name: onCopyLink, environment: var1
+                    var1 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 22;
@@ -1813,7 +1813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 136:
                 var1 = var5.variantId;
             case 142:
-                var0 = function(arg0, arg1) { // Original name: getVariantLabel, environment: var0
+                var0 = function arg0, arg1() {
                     _fun78759: for (var _fun78759_ip = 0;;) switch (_fun78759_ip) {
                         case 0:
                             var3 = arg0;

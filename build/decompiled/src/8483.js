@@ -35,19 +35,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_internalTs1(event){const{functionToCall}=this.__closure;var _functionToCall;(_functionToCall=functionToCall)===null||_functionToCall===void 0||_functionToCall(event);}';
     var3.code = var4;
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1) { // Original name: useEventHandlerRegistration, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
         var _closure2_slot1 = var1;
-        var0 = function(arg0) { // Original name: onRegisterHandler, environment: var0
+        var0 = function arg0() {
             _fun68265: for (var _fun68265_ip = 0;;) switch (_fun68265_ip) {
                 case 0:
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = new Array(0);
                     var _closure3_slot1 = var1;
-                    var2 = function() { // Original name: attachWorkletHandlers, environment: var0
+                    var2 = function() {
                         var3 = _closure1_slot5;
                         var0 = _closure2_slot1;
                         var2 = var0.current;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var3 = undefined;
                                     var4 = var7.bind(var3)(var4);
                                     var3 = var4.registerEventHandler;
-                                    var2 = function(arg0) { // Original name: pnpm_internalTs1, environment: var2
+                                    var2 = function arg0() {
                                         _fun68268: for (var _fun68268_ip = 0;;) switch (_fun68268_ip) {
                                             case 0:
                                                 var2 = _closure5_slot0;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useEventHandlerRegistration = var3;
-    var1 = function(arg0, arg1) { // Original name: useAnimatedValue, environment: var1
+    var1 = function arg0, arg1() {
         _fun68271: for (var _fun68271_ip = 0;;) switch (_fun68271_ip) {
             case 0:
                 var2 = _closure1_slot3;

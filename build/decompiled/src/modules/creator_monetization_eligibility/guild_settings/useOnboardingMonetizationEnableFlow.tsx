@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useOnboardingMonetizationEnableFlow, environment: var1
+    var1 = function arg0() {
         _fun116481: for (var _fun116481_ip = 0;;) switch (_fun116481_ip) {
             case 0:
                 var21 = arg0;

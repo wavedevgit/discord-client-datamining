@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun64171: for (var _fun64171_ip = 0;;) switch (_fun64171_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun64173: for (var _fun64173_ip = 0;;) switch (_fun64173_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: resolvePlaintextInlineVoid, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun64174: for (var _fun64174_ip = 0;;) switch (_fun64174_ip) {
             case 0:
                 var6 = arg0;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1104:
                 return var0;
             case 1106:
-                var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: resolveUserOrRole, environment: var0
+                var1 = function arg0, arg1, arg2, arg3, arg4() {
                     _fun64175: for (var _fun64175_ip = 0;;) switch (_fun64175_ip) {
                         case 0:
                             var1 = arg0;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: matchesUser, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun64179: for (var _fun64179_ip = 0;;) switch (_fun64179_ip) {
             case 0:
                 var6 = arg0;
@@ -1007,7 +1007,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/channel_text_area/PlaintextResolvers.tsx';
     var4 = var5.bind(var6)(var4);
     var2.resolvePlaintextInlineVoid = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: resolveApplicationCommandOption, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun64180: for (var _fun64180_ip = 0;;) switch (_fun64180_ip) {
             case 0:
                 var6 = _closure1_slot15;

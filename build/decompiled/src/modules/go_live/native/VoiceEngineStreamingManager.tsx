@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun32863: for (var _fun32863_ip = 0;;) switch (_fun32863_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: VoiceEngineStreamingManager, environment: var5
+        var3 = function arg0() {
             _fun32872: for (var _fun32872_ip = 0;;) switch (_fun32872_ip) {
                 case 0:
                     var4 = this;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = true;
                     var1.writable = var5;
-                    var5 = function(arg0) { // Original name: value, environment: var5
+                    var5 = function arg0() {
                         _fun32873: for (var _fun32873_ip = 0;;) switch (_fun32873_ip) {
                             case 0:
                                 var0 = arg0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = '_initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var5 = _closure1_slot0;
             var4 = _closure1_slot2;
             var0 = 21;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_terminate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun32882: for (var _fun32882_ip = 0;;) switch (_fun32882_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getApplicationNames';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot25;
             return var0;
         };

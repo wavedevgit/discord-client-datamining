@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun74181: for (var _fun74181_ip = 0;;) switch (_fun74181_ip) {
             case 0:
                 var2 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun74183: for (var _fun74183_ip = 0;;) switch (_fun74183_ip) {
             case 0:
                 var3 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var6 = function() { // Original name: useFavoriteStickerIds, environment: var1
+    var6 = function() {
         _fun74184: for (var _fun74184_ip = 0;;) switch (_fun74184_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var6;
-    var5 = function() { // Original name: useFavoriteStickers, environment: var1
+    var5 = function() {
         var2 = _closure1_slot18;
         var4 = undefined;
         var5 = var2.bind(var4)();
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var5;
-    var4 = function() { // Original name: useLatestFrecentStickerIds, environment: var1
+    var4 = function() {
         _fun74189: for (var _fun74189_ip = 0;;) switch (_fun74189_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var9.bind(var0)(var3);
     var3 = var3.Permissions;
     var _closure1_slot12 = var3;
-    var7 = function() { // Original name: useFetchStickerPacks, environment: var1
+    var7 = function() {
         var3 = _closure1_slot5;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var7;
     var3 = new Array(0);
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: useStickerPackCategories, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var2 = _closure1_slot19;
@@ -1194,7 +1194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun74211
                             }
                         case 162:
-                            var13 = function(arg0, arg1) { // Original name: addGridSection, environment: var5
+                            var13 = function arg0, arg1() {
                                 _fun74212: for (var _fun74212_ip = 0;;) switch (_fun74212_ip) {
                                     case 0:
                                         var13 = arg0;
@@ -1627,7 +1627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useFavoriteStickerIds = var6;
     var2.useFavoriteStickers = var5;
     var2.useLatestFrecentStickerIds = var4;
-    var4 = function() { // Original name: useLatestFrecentStickers, environment: var1
+    var4 = function() {
         var2 = _closure1_slot20;
         var4 = undefined;
         var5 = var2.bind(var4)();

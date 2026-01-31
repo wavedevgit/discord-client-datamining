@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: shouldShowTakeoverForWarnings, environment: var3
+    var1 = function arg0() {
         _fun72252: for (var _fun72252_ip = 0;;) switch (_fun72252_ip) {
             case 0:
                 var3 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/self_mod/inappropriate_conversation/InappropriateConversationUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: getSafetyAlertsSettingOrDefault, environment: var3
+    var4 = function() {
         _fun72255: for (var _fun72255_ip = 0;;) switch (_fun72255_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -147,10 +147,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSafetyAlertsSettingOrDefault = var4;
-    var4 = function(arg0) { // Original name: getInappropriateConversationTakeoverForChannel, environment: var3
+    var4 = function arg0() {
         _fun72256: for (var _fun72256_ip = 0;;) switch (_fun72256_ip) {
             case 0:
-                var3 = function(arg0) { // Original name: getTier1WarningsForChannel, environment: var0
+                var3 = function arg0() {
                     var2 = _closure1_slot4;
                     var1 = var2.getChannelSafetyWarnings;
                     var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getInappropriateConversationTakeoverForChannel = var4;
-    var3 = function(arg0) { // Original name: shouldShowInappropriateConversationTakeoverForChannelRecord, environment: var3
+    var3 = function arg0() {
         _fun72261: for (var _fun72261_ip = 0;;) switch (_fun72261_ip) {
             case 0:
                 var1 = arg0;

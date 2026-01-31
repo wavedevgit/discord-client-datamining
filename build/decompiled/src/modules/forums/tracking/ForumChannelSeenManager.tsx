@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun71142: for (var _fun71142_ip = 0;;) switch (_fun71142_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0) { // Original name: getForumPostSeenManagerId, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6.bind(var0)(var4);
     var5 = var4.AnalyticsFeedItemSeenManager;
     var4 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: ForumChannelSeenManager, environment: var0
+        var2 = function arg0() {
             _fun71147: for (var _fun71147_ip = 0;;) switch (_fun71147_ip) {
                 case 0:
                     var0 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.getForumPostSeenManagerId = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: markForumPostItemAsSeen, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 6;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.markForumPostItemAsSeen = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: markForumPostItemAsUnseen, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 6;

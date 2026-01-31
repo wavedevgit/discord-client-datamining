@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var3 = ['accessibilityActions', 'accessibilityElementsHidden', 'accessibilityHint', 'accessibilityLanguage', 'accessibilityIgnoresInvertColors', 'accessibilityLabel', 'accessibilityLiveRegion', 'accessibilityRole', 'accessibilityValue', 'aria-valuemax', 'aria-valuemin', 'aria-valuenow', 'aria-valuetext', 'accessibilityViewIsModal', 'aria-modal', 'hitSlop', 'importantForAccessibility', 'nativeID', 'onAccessibilityAction', 'onBlur', 'onFocus', 'onLayout', 'testID'];
     var _closure1_slot7 = var3;
-    var1 = function(arg0) { // Original name: TouchableWithoutFeedback, environment: var1
+    var1 = function arg0() {
         _fun5937: for (var _fun5937_ip = 0;;) switch (_fun5937_ip) {
             case 0:
                 var1 = arg0;

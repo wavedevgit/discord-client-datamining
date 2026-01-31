@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useSyncExternalStore;
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: subscribe, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: useColorScheme, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = _closure1_slot3;
         var4 = _closure1_slot0;

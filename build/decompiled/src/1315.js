@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = '/';
             var3 = var6.bind(var7)(var3);
             var5[var4] = var3;
-            var3 = function(arg0) { // Original name: base64decode, environment: var1
+            var3 = function arg0() {
                 _fun14784: for (var _fun14784_ip = 0;;) switch (_fun14784_ip) {
                     case 0:
                         var25 = arg0;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.base64decode = var3;
-            var1 = function(arg0) { // Original name: base64encode, environment: var1
+            var1 = function arg0() {
                 _fun14785: for (var _fun14785_ip = 0;;) switch (_fun14785_ip) {
                     case 0:
                         var17 = arg0;

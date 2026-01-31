@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
-    var4 = function(arg0) { // Original name: PremiumFeaturesCardBackground, environment: var5
+    var4 = function arg0() {
         var0 = arg0;
         var8 = var0.style;
         var4 = var0.children;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var4;
-    var3 = function(arg0, arg1) { // Original name: usePremiumFeatureCardData, environment: var5
+    var3 = function arg0, arg1() {
         var5 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.emojiImage = var10;
     var1 = var6.bind(var9)(var1);
     var _closure1_slot13 = var1;
-    var1 = function(arg0) { // Original name: CarouselCard, environment: var5
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.style;
         var12 = var0.title;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var1;
-    var1 = function(arg0) { // Original name: PremiumFeaturesCarousel, environment: var5
+    var1 = function arg0() {
         var1 = arg0;
         var15 = var1.width;
         var0 = var1.onEndReached;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16[1] = var17;
         var4.style = var16;
         var4.data = var9;
-        var16 = function(arg0) { // Original name: renderItem, environment: var14
+        var16 = function arg0() {
             var0 = arg0;
             var0 = var0.item;
             return var0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.width = var15;
         var15 = false;
         var4.loop = var15;
-        var14 = function(arg0) { // Original name: onConfigurePanGesture, environment: var14
+        var14 = function arg0() {
             var2 = arg0;
             var1 = var2.activeOffsetX;
             var0 = new Array(2);
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/user_settings/native/premium_marketing/PremiumFeaturesCarouselSection.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: _default, environment: var5
+    var5 = function arg0() {
         var1 = arg0;
         var6 = var1.style;
         var1 = _closure1_slot11;

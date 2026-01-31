@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/chat/isAlertOrActionSheetOpen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isAlertOrActionSheetOpen, environment: var1
+    var1 = function arg0() {
         _fun76155: for (var _fun76155_ip = 0;;) switch (_fun76155_ip) {
             case 0:
                 var1 = arguments[1];

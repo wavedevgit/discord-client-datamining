@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getInitialPosition, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun101790: for (var _fun101790_ip = 0;;) switch (_fun101790_ip) {
             case 0:
                 var2 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: GuildChannels, environment: var1
+    var0 = function arg0() {
         _fun101791: for (var _fun101791_ip = 0;;) switch (_fun101791_ip) {
             case 0:
                 var5 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: FavoriteChannels, environment: var1
+    var0 = function arg0() {
         _fun101793: for (var _fun101793_ip = 0;;) switch (_fun101793_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -579,7 +579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var11.getScaledLiveChannelNoticeHeight;
                 var11 = var6.bind(var11)(var7, var16);
                 var _closure2_slot19 = var11;
-                var6 = function(arg0) { // Original name: useDrawerAwareScrollToTop, environment: var0
+                var6 = function arg0() {
                     var5 = arg0;
                     var _closure3_slot0 = var5;
                     var4 = _closure1_slot0;
@@ -1176,7 +1176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_list_v2/native/RedesignChannelList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelsWrapper, environment: var1
+    var1 = function arg0() {
         _fun101817: for (var _fun101817_ip = 0;;) switch (_fun101817_ip) {
             case 0:
                 var4 = arg0;

@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1) { // Original name: LanguageDetector, environment: var4
+        var2 = function arg0, arg1() {
             var2 = arg0;
             var1 = arg1;
             var3 = this;
@@ -48,13 +48,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'language';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0._language;
             return var0;
         };
         var0.get = var1;
-        var1 = function(arg0) { // Original name: set, environment: var4
+        var1 = function arg0() {
             _fun60036: for (var _fun60036_ip = 0;;) switch (_fun60036_ip) {
                 case 0:
                     var2 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'languageHint';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: set, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._languageHint = var1;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'process';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun60038: for (var _fun60038_ip = 0;;) switch (_fun60038_ip) {
                 case 0:
                     var2 = this;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var5 = _closure3_slot1;
                                 var2 = _closure3_slot0;
                                 var4 = var2._languageHint;
-                                var3 = function(arg0, arg1) { // Original name: detectLanguage, environment: var1
+                                var3 = function arg0, arg1() {
                                     var1 = arg0;
                                     var _closure5_slot0 = var1;
                                     var1 = arg1;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_processEnd';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun60046: for (var _fun60046_ip = 0;;) switch (_fun60046_ip) {
                 case 0:
                     var1 = arguments[0];

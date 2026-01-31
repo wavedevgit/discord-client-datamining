@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: lazyLoadFeedbackIntegration, environment: var0
+    var2 = function() {
         _fun13040: for (var _fun13040_ip = 0;;) switch (_fun13040_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.lazyLoadFeedbackIntegration = var2;
     var2 = 'AutoInjectMobileFeedback';
     var1.AUTO_INJECT_FEEDBACK_INTEGRATION_NAME = var2;
-    var2 = function() { // Original name: lazyLoadAutoInjectFeedbackIntegration, environment: var0
+    var2 = function() {
         _fun13041: for (var _fun13041_ip = 0;;) switch (_fun13041_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.lazyLoadAutoInjectFeedbackIntegration = var2;
     var2 = 'AutoInjectMobileFeedbackButton';
     var1.AUTO_INJECT_FEEDBACK_BUTTON_INTEGRATION_NAME = var2;
-    var2 = function() { // Original name: lazyLoadAutoInjectFeedbackButtonIntegration, environment: var0
+    var2 = function() {
         _fun13042: for (var _fun13042_ip = 0;;) switch (_fun13042_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.lazyLoadAutoInjectFeedbackButtonIntegration = var2;
     var2 = 'AutoInjectMobileScreenshotButton';
     var1.AUTO_INJECT_SCREENSHOT_BUTTON_INTEGRATION_NAME = var2;
-    var0 = function() { // Original name: lazyLoadAutoInjectScreenshotButtonIntegration, environment: var0
+    var0 = function() {
         _fun13043: for (var _fun13043_ip = 0;;) switch (_fun13043_ip) {
             case 0:
                 var3 = _closure1_slot0;

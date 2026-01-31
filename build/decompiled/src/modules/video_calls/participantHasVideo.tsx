@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: participantHasVideo, environment: var1
+    var4 = function arg0() {
         _fun64539: for (var _fun64539_ip = 0;;) switch (_fun64539_ip) {
             case 0:
                 var2 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: canRenderParticipantVideo, environment: var1
+    var3 = function arg0() {
         _fun64540: for (var _fun64540_ip = 0;;) switch (_fun64540_ip) {
             case 0:
                 var4 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.canRenderParticipantVideo = var3;
-    var1 = function(arg0) { // Original name: useCanRenderParticipantVideo, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;

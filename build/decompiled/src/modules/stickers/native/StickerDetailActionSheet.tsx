@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.starIconUnselected = var9;
             var3 = var7.bind(var8)(var3);
             var _closure1_slot24 = var3;
-            var3 = function(arg0) { // Original name: StandardStickerDetail, environment: var1
+            var3 = function arg0() {
                 _fun74341: for (var _fun74341_ip = 0;;) switch (_fun74341_ip) {
                     case 0:
                         var1 = arg0;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var10 = var10.GPy3Ar;
                                     var10 = var11.bind(var12)(var10);
                                     var6.text = var10;
-                                    var9 = function() { // Original name: onPress, environment: var9
+                                    var9 = function() {
                                         _fun74347: for (var _fun74347_ip = 0;;) switch (_fun74347_ip) {
                                             case 0:
                                                 var3 = _closure1_slot0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot25 = var3;
-            var3 = function(arg0) { // Original name: GuildStickerDetail, environment: var1
+            var3 = function arg0() {
                 _fun74348: for (var _fun74348_ip = 0;;) switch (_fun74348_ip) {
                     case 0:
                         var0 = arg0;
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var3 = var3.bind(var0)(var2);
                                         var2 = var3.hideActionSheet;
                                         var2 = var2.bind(var3)();
-                                        var4 = function() { // Original name: content, environment: var5
+                                        var4 = function() {
                                             _fun74353: for (var _fun74353_ip = 0;;) switch (_fun74353_ip) {
                                                 case 0:
                                                     var3 = _closure1_slot21;
@@ -830,7 +830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var6 = {};
                                         var10 = 'STICKER_FAVORITED';
                                         var6.key = var10;
-                                        var10 = function() { // Original name: icon, environment: var5
+                                        var10 = function() {
                                             var2 = _closure3_slot3;
                                             var1 = undefined;
                                             var0 = true;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = {};
                                         var6 = 'STICKER_UNFAVORITED';
                                         var1.key = var6;
-                                        var5 = function() { // Original name: icon, environment: var5
+                                        var5 = function() {
                                             var2 = _closure3_slot3;
                                             var1 = undefined;
                                             var0 = false;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         };
                                         var1 = var3.bind(var2)(var1);
                                         var _closure4_slot0 = var1;
-                                        var0 = function() { // Original name: fetchDiscoverableGuild, environment: var0
+                                        var0 = function() {
                                             var0 = undefined;
                                             var3 = _closure4_slot0;
                                             var2 = var3.apply;
@@ -1098,7 +1098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var0.t;
                         var8 = var0.hGWuxU;
                         var0 = {};
-                        var20 = function() { // Original name: openPremiumSettings, environment: var15
+                        var20 = function() {
                             var2 = _closure1_slot1;
                             var3 = _closure1_slot2;
                             var0 = 17;
@@ -1435,7 +1435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var19 = var19["gl/XHJ"];
                         var19 = var26.bind(var27)(var19);
                         var12.text = var19;
-                        var19 = function() { // Original name: onPress, environment: var15
+                        var19 = function() {
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
                             var0 = 43;
@@ -1494,7 +1494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var25 = var25.riu2R5;
                         var25 = var26.bind(var27)(var25);
                         var12.text = var25;
-                        var15 = function() { // Original name: onPress, environment: var15
+                        var15 = function() {
                             _fun74367: for (var _fun74367_ip = 0;;) switch (_fun74367_ip) {
                                 case 0:
                                     var3 = _closure2_slot2;
@@ -1715,7 +1715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var3;
-            var3 = function(arg0) { // Original name: UnavailableStickerDetail, environment: var1
+            var3 = function arg0() {
                 _fun74369: for (var _fun74369_ip = 0;;) switch (_fun74369_ip) {
                     case 0:
                         var0 = arg0;
@@ -1906,7 +1906,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var16 = var16.t;
                         var18 = var16.hGWuxU;
                         var16 = {};
-                        var22 = function() { // Original name: openPremiumSettings, environment: var22
+                        var22 = function() {
                             var2 = _closure1_slot1;
                             var3 = _closure1_slot2;
                             var0 = 17;
@@ -2014,7 +2014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var _closure1_slot27 = var3;
             var3 = var6.memo;
-            var1 = function(arg0) { // Original name: StickerDetailActionSheet, environment: var1
+            var1 = function arg0() {
                 _fun74373: for (var _fun74373_ip = 0;;) switch (_fun74373_ip) {
                     case 0:
                         var0 = arg0;

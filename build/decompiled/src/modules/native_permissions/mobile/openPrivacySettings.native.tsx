@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/native_permissions/mobile/openPrivacySettings.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: openPrivacySettings, environment: var1
+    var1 = function() {
         _fun37121: for (var _fun37121_ip = 0;;) switch (_fun37121_ip) {
             case 0:
                 var3 = _closure1_slot0;

@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileMutualGuilds.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileMutualGuilds, environment: var1
+    var1 = function arg0() {
         _fun61841: for (var _fun61841_ip = 0;;) switch (_fun61841_ip) {
             case 0:
                 var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var7;
                 var7 = 'button';
                 var4.accessibilityRole = var7;
-                var7 = function() { // Original name: onPress, environment: var12
+                var7 = function() {
                     var0 = _closure1_slot4;
                     var4 = var0.MUTUAL_GUILDS;
                     var3 = _closure2_slot1;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var0 = _closure2_slot0;
                     var2.user = var0;
-                    var0 = function(arg0) { // Original name: onPressMutualGuild, environment: var0
+                    var0 = function arg0() {
                         var2 = _closure2_slot1;
                         var1 = {};
                         var0 = 'PRESS_MUTUAL_GUILD';

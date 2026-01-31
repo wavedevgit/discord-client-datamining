@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getCardKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.type;
         var3 = var0.id;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderCard, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot13;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -41,11 +41,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: CardContentFreezer, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var4 = var1.children;
         var _closure2_slot0 = var4;
-        var1 = function() { // Original name: useLazyContentFreeze, environment: var0
+        var1 = function() {
             _fun111138: for (var _fun111138_ip = 0;;) switch (_fun111138_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = undefined;
         var5 = var1.bind(var2)();
         var _closure2_slot1 = var5;
-        var1 = function(arg0) { // Original name: useSpacerStyles, environment: var0
+        var1 = function arg0() {
             var5 = arg0;
             var _closure3_slot0 = var5;
             var4 = _closure1_slot4;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var10[var1];
             var2 = var8.bind(var9)(var1);
             var1 = var2.useAnimatedStyle;
-            var0 = function() { // Original name: o, environment: var0
+            var0 = function() {
                 _fun111143: for (var _fun111143_ip = 0;;) switch (_fun111143_ip) {
                     case 0:
                         var1 = _closure3_slot2;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot18 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelCardView, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.viewableChunks;
         var5 = _closure1_slot4;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.bind(var5)(var2);
         var2 = var2.channelId;
         var _closure2_slot0 = var2;
-        var3 = function(arg0) { // Original name: useViewableChunkState, environment: var0
+        var3 = function arg0() {
             var12 = arg0;
             var _closure3_slot0 = var12;
             var3 = _closure1_slot4;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var11[var8];
             var4 = var9.bind(var10)(var2);
             var3 = var4.useAnimatedReaction;
-            var2 = function() { // Original name: h, environment: var1
+            var2 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.get;
                 var0 = var0.bind(var1)();
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.__workletHash = var6;
             var6 = _closure1_slot16;
             var2.__initData = var6;
-            var1 = function(arg0, arg1) { // Original name: s, environment: var1
+            var1 = function arg0, arg1() {
                 _fun111150: for (var _fun111150_ip = 0;;) switch (_fun111150_ip) {
                     case 0:
                         var2 = arg0;

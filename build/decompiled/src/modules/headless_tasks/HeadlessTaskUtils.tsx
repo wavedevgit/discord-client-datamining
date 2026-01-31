@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.TOKEN_KEY;
     var _closure1_slot2 = var1;
     var1 = {};
-    var3 = function(arg0) { // Original name: awaitStorage, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;

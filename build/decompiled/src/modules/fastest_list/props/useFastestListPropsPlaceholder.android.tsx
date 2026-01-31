@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: createNativePlaceholderConfig, environment: var1
+    var0 = function arg0() {
         _fun60973: for (var _fun60973_ip = 0;;) switch (_fun60973_ip) {
             case 0:
                 var2 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useFastestListPropsPlaceholder, environment: var1
+    var1 = function() {
         _fun60974: for (var _fun60974_ip = 0;;) switch (_fun60974_ip) {
             case 0:
                 var4 = arguments[0];

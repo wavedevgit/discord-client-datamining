@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var10;
     var _closure1_slot3 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun84088: for (var _fun84088_ip = 0;;) switch (_fun84088_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun84090: for (var _fun84090_ip = 0;;) switch (_fun84090_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var4 = function(arg0, arg1, arg2) { // Original name: useListingEditState, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun84091: for (var _fun84091_ip = 0;;) switch (_fun84091_ip) {
             case 0:
                 var8 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var0 = function(arg0, arg1) { // Original name: useListingValue, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: getRoleEmojis, environment: var1
+    var0 = function arg0, arg1() {
         _fun84100: for (var _fun84100_ip = 0;;) switch (_fun84100_ip) {
             case 0:
                 var3 = arg0;
@@ -469,8 +469,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var3 = function(arg0) { // Original name: clearEditState, environment: var1
-        var3 = function(arg0, arg1) { // Original name: copyEditState, environment: var0
+    var3 = function arg0() {
+        var3 = function arg0, arg1() {
             var0 = 'nonexistantEditStateId';
             var _closure3_slot0 = var0;
             var0 = arg1;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var3;
-    var0 = function() { // Original name: _updateListingPeripheralsFromEditState, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -872,7 +872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: _createListingFromEditState, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1154,7 +1154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/guild_role_subscriptions/edit_state/GuildRoleSubscriptionListingEditStateUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.useListingEditState = var4;
-    var4 = function(arg0) { // Original name: useClearEditStateOnUnmount, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot6;
@@ -1176,7 +1176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useClearEditStateOnUnmount = var4;
-    var4 = function(arg0) { // Original name: useName, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot20;
         var1 = _closure1_slot21;
@@ -1213,7 +1213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useName = var4;
-    var4 = function(arg0) { // Original name: usePriceTier, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot20;
         var1 = _closure1_slot21;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.usePriceTier = var4;
-    var4 = function(arg0) { // Original name: useDescription, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot20;
         var1 = _closure1_slot21;
@@ -1288,7 +1288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useDescription = var4;
-    var4 = function(arg0, arg1) { // Original name: useImage, environment: var1
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -1336,7 +1336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useImage = var4;
-    var4 = function(arg0) { // Original name: useApplicationId, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot21;
         var2 = undefined;
         var1 = arg0;
@@ -1361,7 +1361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useApplicationId = var4;
-    var4 = function(arg0, arg1) { // Original name: useRoleIcon, environment: var1
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var5 = _closure1_slot1;
         var3 = _closure1_slot3;
@@ -1433,7 +1433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useRoleIcon = var4;
-    var4 = function(arg0, arg1) { // Original name: useRole, environment: var1
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot1;
@@ -1579,7 +1579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useRole = var4;
-    var4 = function(arg0, arg1) { // Original name: useRoleColor, environment: var1
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var5 = _closure1_slot1;
         var3 = _closure1_slot3;
@@ -1626,7 +1626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useRoleColor = var4;
-    var4 = function(arg0, arg1) { // Original name: useChannelAccessFormat, environment: var1
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var5 = _closure1_slot1;
         var3 = _closure1_slot3;
@@ -1688,7 +1688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChannelAccessFormat = var4;
-    var4 = function(arg0) { // Original name: useChannelBenefits, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot20;
         var1 = _closure1_slot21;
@@ -1728,7 +1728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChannelBenefits = var4;
-    var4 = function(arg0) { // Original name: useIntangibleBenefits, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot20;
         var1 = _closure1_slot21;
@@ -1768,7 +1768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIntangibleBenefits = var4;
-    var4 = function(arg0, arg1) { // Original name: useTierEmojiIds, environment: var1
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var2;
@@ -1835,7 +1835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useTierEmojiIds = var4;
-    var4 = function(arg0) { // Original name: useTrialInterval, environment: var1
+    var4 = function arg0() {
         _fun84146: for (var _fun84146_ip = 0;;) switch (_fun84146_ip) {
             case 0:
                 var4 = arg0;
@@ -1888,7 +1888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useTrialInterval = var4;
-    var4 = function(arg0) { // Original name: useTrialLimit, environment: var1
+    var4 = function arg0() {
         _fun84147: for (var _fun84147_ip = 0;;) switch (_fun84147_ip) {
             case 0:
                 var4 = arg0;
@@ -1926,7 +1926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useTrialLimit = var4;
-    var4 = function(arg0) { // Original name: useHasChanges, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot10;
@@ -1944,7 +1944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasChanges = var4;
-    var4 = function(arg0) { // Original name: useHasChangesForEditStateIds, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot10;
@@ -1994,7 +1994,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasChangesForEditStateIds = var4;
-    var4 = function(arg0) { // Original name: useSubscriptionPlan, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot21;
         var6 = undefined;
@@ -2162,7 +2162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSubscriptionPlan = var4;
     var2.clearEditState = var3;
-    var3 = function() { // Original name: useCreateOrUpdateListingFromEditState, environment: var1
+    var3 = function() {
         var3 = _closure1_slot6;
         var2 = var3.useState;
         var1 = false;
@@ -2244,7 +2244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var16 = var2;
                             var15.groupListingId = var16;
                             var15.onBeforeDispatchNewListing = var10;
-                            var10 = function() { // Original name: createListingFromEditState, environment: var6
+                            var10 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot25;
                                 var2 = var3.apply;
@@ -2269,7 +2269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var16 = var14;
                             var15 = var10.id;
                             var8 = var15;
-                            var14 = function(arg0, arg1) { // Original name: moveEditState, environment: var6
+                            var14 = function arg0, arg1() {
                                 var0 = arg0;
                                 var _closure6_slot0 = var0;
                                 var0 = arg1;
@@ -2511,7 +2511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10.guildId = var11;
                             var11 = var8;
                             var10.editStateId = var11;
-                            var6 = function() { // Original name: updateListingPeripheralsFromEditState, environment: var6
+                            var6 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot24;
                                 var2 = var3.apply;
@@ -2609,7 +2609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCreateOrUpdateListingFromEditState = var3;
-    var1 = function(arg0, arg1) { // Original name: useEditStateIds, environment: var1
+    var1 = function arg0, arg1() {
         _fun84165: for (var _fun84165_ip = 0;;) switch (_fun84165_ip) {
             case 0:
                 var6 = arg1;

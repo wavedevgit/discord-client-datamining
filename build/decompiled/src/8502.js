@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.doneButtonContainer = var8;
     var5 = var6.bind(var7)(var5);
     var _closure1_slot19 = var5;
-    var1 = function(arg0) { // Original name: KeyboardToolbar, environment: var1
+    var1 = function arg0() {
         _fun68383: for (var _fun68383_ip = 0;;) switch (_fun68383_ip) {
             case 0:
                 var10 = arg0;

@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _generateKeyFingerprint, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/libdave/package/src/KeyFingerprint.ts';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: generateKeyFingerprint, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot1;
         var2 = var3.apply;

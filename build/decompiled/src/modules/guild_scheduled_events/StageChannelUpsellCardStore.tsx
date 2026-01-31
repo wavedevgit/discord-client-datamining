@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = true;
         var2 = var2 === var3;
         var0.hasSeenUpsellCard = var2;
-        var1 = function() { // Original name: markAsSeen, environment: var1
+        var1 = function() {
             var2 = _closure1_slot0;
             var3 = _closure1_slot1;
             var0 = 2;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useStageChannelUpsellCardStore, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

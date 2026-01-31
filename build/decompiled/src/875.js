@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var1 = function(arg0) { // Original name: logAttributeToSerializedLogAttribute, environment: var6
+    var1 = function arg0() {
         _fun9311: for (var _fun9311_ip = 0;;) switch (_fun9311_ip) {
             case 0:
                 var0 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0, arg1, arg2) { // Original name: setLogAttribute, environment: var6
+    var0 = function arg0, arg1, arg2() {
         _fun9312: for (var _fun9312_ip = 0;;) switch (_fun9312_ip) {
             case 0:
                 var3 = arg0;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var5 = function(arg0, arg1) { // Original name: _INTERNAL_captureSerializedLog, environment: var6
+    var5 = function arg0, arg1() {
         _fun9313: for (var _fun9313_ip = 0;;) switch (_fun9313_ip) {
             case 0:
                 var4 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0, arg1) { // Original name: _INTERNAL_flushLogsBuffer, environment: var6
+    var4 = function arg0, arg1() {
         _fun9314: for (var _fun9314_ip = 0;;) switch (_fun9314_ip) {
             case 0:
                 var2 = arg0;
@@ -266,7 +266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: _INTERNAL_getLogBuffer, environment: var6
+    var3 = function arg0() {
         var1 = _closure1_slot9;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot8 = var3;
-    var0 = function() { // Original name: _getBufferMap, environment: var6
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 12;
@@ -321,7 +321,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = 'Module';
     var7.value = var11;
     var7 = var9.bind(var10)(var2, var8, var7);
-    var6 = function(arg0) { // Original name: _INTERNAL_captureLog, environment: var6
+    var6 = function arg0() {
         _fun9318: for (var _fun9318_ip = 0;;) switch (_fun9318_ip) {
             case 0:
                 var14 = arg0;

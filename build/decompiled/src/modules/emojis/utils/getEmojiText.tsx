@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/emojis/utils/getEmojiText.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: getEmojiText, environment: var1
+    var1 = function arg0() {
         _fun108499: for (var _fun108499_ip = 0;;) switch (_fun108499_ip) {
             case 0:
                 var1 = arg0;

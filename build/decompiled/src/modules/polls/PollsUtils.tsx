@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun54274: for (var _fun54274_ip = 0;;) switch (_fun54274_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun54276: for (var _fun54276_ip = 0;;) switch (_fun54276_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var7 = function() { // Original name: generateLocalCreationAnswerId, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var7;
-    var6 = function(arg0) { // Original name: isAnswerFilled, environment: var1
+    var6 = function arg0() {
         _fun54278: for (var _fun54278_ip = 0;;) switch (_fun54278_ip) {
             case 0:
                 var0 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var6;
-    var5 = function(arg0) { // Original name: createPollExpiryTimestamp, environment: var1
+    var5 = function arg0() {
         var0 = global;
         var2 = var0.Date;
         var1 = var0.Date;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var5;
-    var0 = function(arg0, arg1) { // Original name: getPollResultsPollName, environment: var1
+    var0 = function arg0, arg1() {
         _fun54280: for (var _fun54280_ip = 0;;) switch (_fun54280_ip) {
             case 0:
                 var4 = arg1;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var4 = function(arg0, arg1) { // Original name: getSampleOfVoterUsernamesForAnswer, environment: var1
+    var4 = function arg0, arg1() {
         _fun54282: for (var _fun54282_ip = 0;;) switch (_fun54282_ip) {
             case 0:
                 var2 = arg0;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var3 = function(arg0, arg1) { // Original name: formatVoterTooltipText, environment: var1
+    var3 = function arg0, arg1() {
         _fun54285: for (var _fun54285_ip = 0;;) switch (_fun54285_ip) {
             case 0:
                 var8 = arg0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.fileFinishedImporting;
     var8 = 'modules/polls/PollsUtils.tsx';
     var8 = var9.bind(var10)(var8);
-    var8 = function() { // Original name: generateEmptyPollAnswer, environment: var1
+    var8 = function() {
         var0 = {};
         var2 = undefined;
         var0.text = var2;
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateEmptyPollAnswer = var8;
     var2.generateLocalCreationAnswerId = var7;
-    var7 = function(arg0) { // Original name: filterOutUUID, environment: var1
+    var7 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.filterOutUUID = var7;
-    var7 = function(arg0) { // Original name: hasNonVoteReactions, environment: var1
+    var7 = function arg0() {
         _fun54288: for (var _fun54288_ip = 0;;) switch (_fun54288_ip) {
             case 0:
                 var1 = _closure1_slot12;
@@ -821,7 +821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasNonVoteReactions = var7;
-    var7 = function(arg0) { // Original name: useCanPostPollsInChannel, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanPostPollsInChannel = var7;
-    var7 = function(arg0, arg1) { // Original name: isPollCreationEmpty, environment: var1
+    var7 = function arg0, arg1() {
         _fun54291: for (var _fun54291_ip = 0;;) switch (_fun54291_ip) {
             case 0:
                 var3 = arg1;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isPollCreationEmpty = var7;
     var2.isAnswerFilled = var6;
-    var6 = function(arg0) { // Original name: isIncompleteAnswer, environment: var1
+    var6 = function arg0() {
         _fun54293: for (var _fun54293_ip = 0;;) switch (_fun54293_ip) {
             case 0:
                 var0 = arg0;
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isIncompleteAnswer = var6;
     var2.createPollExpiryTimestamp = var5;
-    var5 = function(arg0) { // Original name: createPollServerDataFromCreateRequest, environment: var1
+    var5 = function arg0() {
         _fun54294: for (var _fun54294_ip = 0;;) switch (_fun54294_ip) {
             case 0:
                 var1 = arg0;
@@ -1107,7 +1107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createPollServerDataFromCreateRequest = var5;
-    var5 = function(arg0) { // Original name: getPollReplyPreview, environment: var1
+    var5 = function arg0() {
         _fun54296: for (var _fun54296_ip = 0;;) switch (_fun54296_ip) {
             case 0:
                 var0 = arg0;
@@ -1143,7 +1143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPollReplyPreview = var5;
-    var5 = function(arg0) { // Original name: getPollResultsReplyPreview, environment: var1
+    var5 = function arg0() {
         var3 = arg0;
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
@@ -1173,7 +1173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getPollResultsReplyPreview = var5;
-    var5 = function(arg0) { // Original name: getPollResultsReplyPreviewMobile, environment: var1
+    var5 = function arg0() {
         _fun54298: for (var _fun54298_ip = 0;;) switch (_fun54298_ip) {
             case 0:
                 var3 = arg0;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPollResultsReplyPreviewMobile = var5;
-    var5 = function(arg0) { // Original name: getTotalVotes, environment: var1
+    var5 = function arg0() {
         var3 = arg0;
         var2 = var3.reduce;
         var1 = function(arg0, arg1) { // Environment: var0
@@ -1255,7 +1255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getTotalVotes = var5;
     var2.getSampleOfVoterUsernamesForAnswer = var4;
     var2.formatVoterTooltipText = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getPollAnswerVotesTooltipText, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun54301: for (var _fun54301_ip = 0;;) switch (_fun54301_ip) {
             case 0:
                 var7 = arg2;
@@ -1325,7 +1325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPollAnswerVotesTooltipText = var3;
-    var1 = function(arg0) { // Original name: formatPollResultNotificationCenterText, environment: var1
+    var1 = function arg0() {
         _fun54302: for (var _fun54302_ip = 0;;) switch (_fun54302_ip) {
             case 0:
                 var0 = arg0;

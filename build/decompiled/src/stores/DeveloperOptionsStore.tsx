@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun8592: for (var _fun8592_ip = 0;;) switch (_fun8592_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: setOptions, environment: var3
+    var0 = function arg0() {
         var0 = {};
         var5 = _closure1_slot16;
         var6 = var0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = new var19[var9](var18, var17, var16, var15);
     var1 = var1 instanceof Object ? var1 : var7;
     var _closure1_slot12 = var1;
-    var1 = function() { // Original name: f, environment: var3
+    var1 = function() {
         var3 = _closure1_slot0;
         var8 = _closure1_slot3;
         var0 = 8;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var1;
     var1 = {};
-    var7 = function(arg0) { // Original name: set, environment: var3
+    var7 = function arg0() {
         _fun8599: for (var _fun8599_ip = 0;;) switch (_fun8599_ip) {
             case 0:
                 var3 = arg0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.bind(var0)(var7);
     var8 = var7.Store;
     var7 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: DeveloperOptionsStore, environment: var5
+        var3 = function() {
             _fun8601: for (var _fun8601_ip = 0;;) switch (_fun8601_ip) {
                 case 0:
                     var3 = this;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: initialize, environment: var5
+        var0 = function() {
             _fun8602: for (var _fun8602_ip = 0;;) switch (_fun8602_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isTracingRequests';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.trace;
             return var0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isForcedCanary';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.canary;
             return var0;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLoggingGatewayEvents';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.logGatewayEvents;
             return var0;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLoggingOverlayEvents';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.logOverlayEvents;
             return var0;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLoggingAnalyticsEvents';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.logAnalyticsEvents;
             return var0;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isAxeEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.axeEnabled;
             return var0;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'cssDebuggingEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.cssDebuggingEnabled;
             return var0;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'layoutDebuggingEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.layoutDebuggingEnabled;
             return var0;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'sourceMapsEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.sourceMapsEnabled;
             return var0;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isBugReporterEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.bugReporterEnabled;
             return var0;
@@ -558,7 +558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isIdleStatusIndicatorEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.idleStatusIndicatorEnabled;
             return var0;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'onlyShowPreviewAppCollections';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.onlyShowPreviewAppCollections;
             return var0;
@@ -578,7 +578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'disableAppCollectionsCache';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.disableAppCollectionsCache;
             return var0;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isStreamInfoOverlayEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.isStreamInfoOverlayEnabled;
             return var0;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'preventPopoutClose';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.preventPopoutClose;
             return var0;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'logKeyboardMismatches';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.logKeyboardMismatches;
             return var0;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'alertStartupMetrics';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.alertStartupMetrics;
             return var0;
@@ -628,7 +628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'personaForceFaeFail';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.personaForceFaeFail;
             return var0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'personaForceIdVerificationFail';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.personaForceIdVerificationFail;
             return var0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'personaDisableModularPilotTestTemplate';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             var0 = var0.personaDisableModularPilotTestTemplate;
             return var0;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDebugOptionsHeaderValue';
         var4.key = var6;
-        var5 = function() { // Original name: getDebugOptionsHeaderValue, environment: var5
+        var5 = function() {
             var2 = global;
             var5 = var2.Object;
             var4 = var5.keys;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var18 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleLogout, environment: var3
+    var8 = function arg0() {
         var2 = _closure1_slot19;
         var1 = _closure1_slot16;
         var0 = undefined;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var8 = function arg0() {
         _fun8627: for (var _fun8627_ip = 0;;) switch (_fun8627_ip) {
             case 0:
                 var2 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONNECTION_OPEN = var8;
-    var3 = function(arg0) { // Original name: handleUpdateSettings, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.settings;
         var1 = _closure1_slot19;

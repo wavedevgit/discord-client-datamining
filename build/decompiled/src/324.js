@@ -34,19 +34,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = new var11[var3](var10);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: unstable_setImageComponentDecorator, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure1_slot2 = var0;
         var0 = undefined;
         return var0;
     };
     var2.unstable_setImageComponentDecorator = var3;
-    var3 = function() { // Original name: unstable_getImageComponentDecorator, environment: var1
+    var3 = function() {
         var0 = _closure1_slot2;
         return var0;
     };
     var2.unstable_getImageComponentDecorator = var3;
-    var3 = function(arg0) { // Original name: unstable_registerImageAttachedCallback, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.add;
         var0 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unstable_registerImageAttachedCallback = var3;
-    var3 = function(arg0) { // Original name: unstable_unregisterImageAttachedCallback, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.delete;
         var0 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unstable_unregisterImageAttachedCallback = var3;
-    var1 = function(arg0) { // Original name: useWrapRefWithImageAttachedCallbacks, environment: var1
+    var1 = function arg0() {
         _fun4885: for (var _fun4885_ip = 0;;) switch (_fun4885_ip) {
             case 0:
                 var0 = _closure1_slot3;

@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/form_fields/ParagraphField.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ParagraphField, environment: var1
+    var1 = function arg0() {
         _fun61054: for (var _fun61054_ip = 0;;) switch (_fun61054_ip) {
             case 0:
                 var1 = arg0;

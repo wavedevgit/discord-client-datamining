@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _fetchVideoFilterAssets, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _uploadVideoFilterAsset, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _deleteVideoFilterAsset, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var3 = function() { // Original name: saveLastUsedBackgroundOption, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: _saveLastUsedBackgroundOption, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/video_backgrounds/VideoBackgroundActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: fetchVideoFilterAssets, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchVideoFilterAssets = var4;
-    var4 = function() { // Original name: uploadVideoFilterAsset, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.uploadVideoFilterAsset = var4;
-    var4 = function() { // Original name: deleteVideoFilterAsset, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.deleteVideoFilterAsset = var4;
     var2.saveLastUsedBackgroundOption = var3;
-    var3 = function(arg0) { // Original name: applyMediaFilterSettings, environment: var1
+    var3 = function arg0() {
         _fun66393: for (var _fun66393_ip = 0;;) switch (_fun66393_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.applyMediaFilterSettings = var3;
-    var3 = function() { // Original name: startApplyMediaFilterSettings, environment: var1
+    var3 = function() {
         _fun66394: for (var _fun66394_ip = 0;;) switch (_fun66394_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.startApplyMediaFilterSettings = var3;
-    var1 = function() { // Original name: errorApplyingMediaFilterSettings, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;

@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     _fun4851: for (var _fun4851_ip = 0;;) switch (_fun4851_ip) {
         case 0:
-            var1 = function(arg0, arg1) { // Original name: areInputsEqual, environment: var0
+            var1 = function arg0, arg1() {
                 _fun4852: for (var _fun4852_ip = 0;;) switch (_fun4852_ip) {
                     case 0:
                         var5 = arg0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun4851
             }
         case 28:
-            var1 = function(arg0) { // Original name: ponyfill, environment: var0
+            var1 = function arg0() {
                 _fun4853: for (var _fun4853_ip = 0;;) switch (_fun4853_ip) {
                     case 0:
                         var1 = arg0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 33:
             var _closure1_slot0 = var1;
-            var1 = function(arg0, arg1) { // Original name: memoizeOne, environment: var0
+            var1 = function arg0, arg1() {
                 _fun4854: for (var _fun4854_ip = 0;;) switch (_fun4854_ip) {
                     case 0:
                         var2 = arg1;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var _closure2_slot4 = var1;
                         var1 = false;
                         var _closure2_slot5 = var1;
-                        var0 = function() { // Original name: memoized, environment: var0
+                        var0 = function() {
                             _fun4855: for (var _fun4855_ip = 0;;) switch (_fun4855_ip) {
                                 case 0:
                                     var2 = this;

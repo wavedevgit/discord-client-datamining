@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/emojis/SelectEmojiRolesActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelectEmojiRolesActionSheet, environment: var1
+    var1 = function arg0() {
         _fun116993: for (var _fun116993_ip = 0;;) switch (_fun116993_ip) {
             case 0:
                 var0 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var11.bind(var3)(var0);
                 var1 = var0.PressableOpacity;
                 var0 = {};
-                var5 = function() { // Original name: onPress, environment: var6
+                var5 = function() {
                     var2 = _closure2_slot0;
                     var1 = global;
                     var3 = var1.Array;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(1);
                 var7[0] = var8;
                 var4.sections = var7;
-                var6 = function(arg0, arg1) { // Original name: renderItem, environment: var6
+                var6 = function arg0, arg1() {
                     _fun116996: for (var _fun116996_ip = 0;;) switch (_fun116996_ip) {
                         case 0:
                             var1 = arg1;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12.children = var15;
                             var12 = var3.bind(var0)(var13, var12);
                             var4.label = var12;
-                            var11 = function() { // Original name: onPress, environment: var11
+                            var11 = function() {
                                 var1 = _closure3_slot0;
                                 var1 = var1.role_id;
                                 var _closure4_slot0 = var1;

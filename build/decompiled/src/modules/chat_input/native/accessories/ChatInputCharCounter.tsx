@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = arg1;
                 var2 = function() { // Environment: var1
                     var0 = {};
-                    var1 = function(arg0) { // Original name: onMessageLengthChanged, environment: var1
+                    var1 = function arg0() {
                         var0 = global;
                         var4 = var0.Math;
                         var3 = var4.max;

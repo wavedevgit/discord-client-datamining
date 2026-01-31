@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var4;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: Content, environment: var3
+    var0 = function() {
         _fun116909: for (var _fun116909_ip = 0;;) switch (_fun116909_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.PreviewShape;
                 var27 = var27.CIRCLE;
                 var15.previewShape = var27;
-                var23 = function(arg0) { // Original name: setImage, environment: var23
+                var23 = function arg0() {
                     var0 = arg0;
                     var2 = var0.uri;
                     var1 = _closure2_slot0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDetailsModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildRoleSubscriptionTierDetailsModal, environment: var3
+    var3 = function arg0() {
         _fun116912: for (var _fun116912_ip = 0;;) switch (_fun116912_ip) {
             case 0:
                 var1 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun62243: for (var _fun62243_ip = 0;;) switch (_fun62243_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun62246: for (var _fun62246_ip = 0;;) switch (_fun62246_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun62248: for (var _fun62248_ip = 0;;) switch (_fun62248_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var1 = function(arg0) { // Original name: entryToKey, environment: var4
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.author_id;
         var3 = var0.id;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var1;
-    var0 = function(arg0) { // Original name: getMatchingActivity, environment: var4
+    var0 = function arg0() {
         _fun62250: for (var _fun62250_ip = 0;;) switch (_fun62250_ip) {
             case 0:
                 var3 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: detectMatchingActivityForEntries, environment: var4
+    var0 = function arg0() {
         _fun62252: for (var _fun62252_ip = 0;;) switch (_fun62252_ip) {
             case 0:
                 var0 = global;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: handlePresenceUpdates, environment: var4
+    var0 = function() {
         _fun62253: for (var _fun62253_ip = 0;;) switch (_fun62253_ip) {
             case 0:
                 var0 = global;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function(arg0) { // Original name: ContentInventoryActivityStore, environment: var5
+        var3 = function arg0() {
             _fun62256: for (var _fun62256_ip = 0;;) switch (_fun62256_ip) {
                 case 0:
                     var4 = this;
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var4 = var3.waitFor;
             var2 = _closure1_slot9;
@@ -884,7 +884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMatchingActivity';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun62259: for (var _fun62259_ip = 0;;) switch (_fun62259_ip) {
                 case 0:
                     var5 = arg0;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function() { // Original name: handleConnectionOpen, environment: var4
+    var9 = function() {
         var1 = _closure1_slot12;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
@@ -931,7 +931,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CONNECTION_OPEN = var9;
-    var4 = function(arg0) { // Original name: handleSetContentInventoryFeed, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.feed;
         var2 = _closure1_slot18;

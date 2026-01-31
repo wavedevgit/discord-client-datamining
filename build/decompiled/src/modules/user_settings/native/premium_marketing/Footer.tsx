@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/Footer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun92224: for (var _fun92224_ip = 0;;) switch (_fun92224_ip) {
             case 0:
                 var0 = arg0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.color = var15;
                 var14 = var14.buttonText;
                 var10.textStyle = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     _fun92225: for (var _fun92225_ip = 0;;) switch (_fun92225_ip) {
                         case 0:
                             var2 = _closure1_slot1;

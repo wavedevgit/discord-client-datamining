@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: GuildLevelPowerupHeader, environment: var3
+    var0 = function arg0() {
         _fun102374: for (var _fun102374_ip = 0;;) switch (_fun102374_ip) {
             case 0:
                 var0 = arg0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var1 = function(arg0) { // Original name: GuildPowerupLevelBody, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var2 = var1.isActive;
         var6 = var1.index;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/powerups/native/GuildPowerupsLevelCard.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildPowerupsLevelCard, environment: var3
+    var3 = function arg0() {
         _fun102378: for (var _fun102378_ip = 0;;) switch (_fun102378_ip) {
             case 0:
                 var1 = arg0;

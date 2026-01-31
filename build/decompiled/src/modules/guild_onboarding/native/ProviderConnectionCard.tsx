@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/ProviderConnectionCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ProviderConnectionCard, environment: var1
+    var1 = function arg0() {
         _fun77468: for (var _fun77468_ip = 0;;) switch (_fun77468_ip) {
             case 0:
                 var0 = arg0;

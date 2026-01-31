@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.externalProductDisabled = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot8 = var3;
-    var3 = function() { // Original name: PurchasedAssetOverlay, environment: var1
+    var3 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var6 = var0.bind(var3)();
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var3;
-    var3 = function() { // Original name: DisabledAssetOverlay, environment: var1
+    var3 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var6 = var0.bind(var3)();
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: Asset, environment: var1
+    var3 = function arg0() {
         _fun87046: for (var _fun87046_ip = 0;;) switch (_fun87046_ip) {
             case 0:
                 var0 = arg0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: AssetTileInternal, environment: var1
+    var3 = function arg0() {
         _fun87047: for (var _fun87047_ip = 0;;) switch (_fun87047_ip) {
             case 0:
                 var0 = arg0;

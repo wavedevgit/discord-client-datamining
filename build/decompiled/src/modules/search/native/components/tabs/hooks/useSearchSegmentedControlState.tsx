@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/tabs/hooks/useSearchSegmentedControlState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSearchSegmentedControlState, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var7 = var1.items;
         var15 = var1.visibleTabs;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var10];
         var4 = var12.bind(var11)(var2);
         var3 = var4.useDerivedValue;
-        var2 = function() { // Original name: T, environment: var0
+        var2 = function() {
             var0 = _closure2_slot0;
             return var0;
         };
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var10];
         var4 = var12.bind(var11)(var2);
         var3 = var4.useDerivedValue;
-        var2 = function() { // Original name: x, environment: var0
+        var2 = function() {
             var2 = _closure2_slot3;
             var1 = var2.get;
             var1 = var1.bind(var2)();
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var10];
         var7 = var12.bind(var11)(var2);
         var6 = var7.useAnimatedReaction;
-        var3 = function() { // Original name: f, environment: var0
+        var3 = function() {
             var1 = _closure2_slot3;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3.__workletHash = var2;
         var2 = _closure1_slot5;
         var3.__initData = var2;
-        var2 = function(arg0) { // Original name: v, environment: var0
+        var2 = function arg0() {
             _fun106866: for (var _fun106866_ip = 0;;) switch (_fun106866_ip) {
                 case 0:
                     var2 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var10];
         var7 = var12.bind(var11)(var2);
         var6 = var7.useAnimatedReaction;
-        var3 = function() { // Original name: C, environment: var0
+        var3 = function() {
             var1 = _closure2_slot7;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3.__workletHash = var2;
         var2 = _closure1_slot7;
         var3.__initData = var2;
-        var2 = function(arg0) { // Original name: I, environment: var0
+        var2 = function arg0() {
             _fun106868: for (var _fun106868_ip = 0;;) switch (_fun106868_ip) {
                 case 0:
                     var2 = arg0;

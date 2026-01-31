@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: DataView, environment: var4
+        var2 = function arg0() {
             _fun37901: for (var _fun37901_ip = 0;;) switch (_fun37901_ip) {
                 case 0:
                     var1 = arg0;
@@ -128,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'getUint8';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: getUint8, environment: var4
+        var1 = function arg0() {
             var0 = this;
             var2 = var0.buffer;
             var1 = var2.readUInt8;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getUint16';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: getUint16, environment: var4
+        var5 = function arg0, arg1() {
             _fun37903: for (var _fun37903_ip = 0;;) switch (_fun37903_ip) {
                 case 0:
                     var3 = arg0;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getUint32';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: getUint32, environment: var4
+        var5 = function arg0, arg1() {
             _fun37904: for (var _fun37904_ip = 0;;) switch (_fun37904_ip) {
                 case 0:
                     var3 = arg0;
@@ -198,7 +198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getInt32';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: getInt32, environment: var4
+        var4 = function arg0, arg1() {
             _fun37905: for (var _fun37905_ip = 0;;) switch (_fun37905_ip) {
                 case 0:
                     var3 = arg0;

@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = "function pnpm_useAnimatedSnapPointsTs2(){const{enableDynamicSizing,snapPoints}=this.__closure;if(enableDynamicSizing){return true;}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];if(_snapPoints.length&&_snapPoints.find(function(snapPoint){return typeof snapPoint==='string';})){return true;}return false;}";
     var2.code = var3;
     var _closure1_slot3 = var2;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: useAnimatedSnapPoints, environment: var0
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var7 = arg0;
         var16 = arg1;
         var14 = arg2;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var9[var1];
         var12 = var6.bind(var4)(var3);
         var11 = var12.useDerivedValue;
-        var10 = function() { // Original name: pnpm_useAnimatedSnapPointsTs1, environment: var0
+        var10 = function() {
             _fun45279: for (var _fun45279_ip = 0;;) switch (_fun45279_ip) {
                 case 0:
                     var0 = _closure2_slot1;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var9[var1];
         var4 = var6.bind(var4)(var1);
         var1 = var4.useDerivedValue;
-        var0 = function() { // Original name: pnpm_useAnimatedSnapPointsTs2, environment: var0
+        var0 = function() {
             _fun45282: for (var _fun45282_ip = 0;;) switch (_fun45282_ip) {
                 case 0:
                     var0 = _closure2_slot4;

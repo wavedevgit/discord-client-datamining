@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: GuildBoostSlotCooldown, environment: var1
+    var0 = function arg0() {
         _fun82487: for (var _fun82487_ip = 0;;) switch (_fun82487_ip) {
             case 0:
                 var1 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: GuildBoostSlotsInventoryRow, environment: var1
+    var0 = function arg0() {
         _fun82489: for (var _fun82489_ip = 0;;) switch (_fun82489_ip) {
             case 0:
                 var0 = arg0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: GuildBoostSlot, environment: var1
+    var0 = function arg0() {
         _fun82490: for (var _fun82490_ip = 0;;) switch (_fun82490_ip) {
             case 0:
                 var0 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var12 = 'button';
                 var7.accessibilityRole = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 16;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: UnusedGuildBoostSlots, environment: var1
+    var0 = function arg0() {
         _fun82492: for (var _fun82492_ip = 0;;) switch (_fun82492_ip) {
             case 0:
                 var0 = arg0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var15 = 'button';
                 var10.accessibilityRole = var15;
-                var15 = function() { // Original name: onPress, environment: var5
+                var15 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 16;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: BoostedGuildInfo, environment: var1
+    var0 = function arg0() {
         _fun82497: for (var _fun82497_ip = 0;;) switch (_fun82497_ip) {
             case 0:
                 var0 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: BoostedGuild, environment: var1
+    var0 = function arg0() {
         _fun82498: for (var _fun82498_ip = 0;;) switch (_fun82498_ip) {
             case 0:
                 var0 = arg0;
@@ -1099,7 +1099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/GuildBoostSlotsInventory.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildBoostSlotsInventory, environment: var1
+    var1 = function() {
         _fun82502: for (var _fun82502_ip = 0;;) switch (_fun82502_ip) {
             case 0:
                 var0 = _closure1_slot14;

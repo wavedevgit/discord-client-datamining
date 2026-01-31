@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1, arg2) { // Original name: v35, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun6420: for (var _fun6420_ip = 0;;) switch (_fun6420_ip) {
             case 0:
                 var1 = arg0;
@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var3;
                 var3 = arg2;
                 var _closure2_slot1 = var3;
-                var0 = function(arg0, arg1, arg2, arg3) { // Original name: generateUUID, environment: var2
+                var0 = function arg0, arg1, arg2, arg3() {
                     _fun6421: for (var _fun6421_ip = 0;;) switch (_fun6421_ip) {
                         case 0:
                             var8 = arg0;

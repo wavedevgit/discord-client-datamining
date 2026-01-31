@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/inappropriate_conversation/native/components/TakeActionScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TakeActionButtons, environment: var1
+    var1 = function arg0() {
         _fun87498: for (var _fun87498_ip = 0;;) switch (_fun87498_ip) {
             case 0:
                 var0 = arg0;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 722:
                 var8.text = var15;
                 var8.grow = var13;
-                var13 = function() { // Original name: onPress, environment: var9
+                var13 = function() {
                     var1 = _closure2_slot8;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var15["65XQar"];
                 var5 = var19.bind(var21)(var5);
                 var12.text = var5;
-                var5 = function() { // Original name: onPress, environment: var9
+                var5 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 27;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.HQ2nKl;
                 var15 = var19.bind(var21)(var15);
                 var12.text = var15;
-                var15 = function() { // Original name: onPress, environment: var9
+                var15 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 27;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.sZf6cz;
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var3 = _closure2_slot7;
                     var2 = var3.push;
                     var1 = 'CRISIS_TEXT_LINE';

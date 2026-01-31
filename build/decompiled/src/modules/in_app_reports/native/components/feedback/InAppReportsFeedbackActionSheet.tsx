@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/feedback/InAppReportsFeedbackActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InAppReportsFeedbackActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.reportId;
         var _closure2_slot0 = var1;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6[0] = var5;
         var0.feedbackReasons = var6;
         var0.otherKey = var5;
-        var5 = function() { // Original name: trackOpen, environment: var4
+        var5 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 8;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.trackOpen = var5;
-        var4 = function(arg0) { // Original name: trackReport, environment: var4
+        var4 = function arg0() {
             _fun113057: for (var _fun113057_ip = 0;;) switch (_fun113057_ip) {
                 case 0:
                     var1 = arg0;

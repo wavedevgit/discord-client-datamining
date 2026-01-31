@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var1;
     var1 = /^\w*$/;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1) { // Original name: isKey, environment: var0
+    var1 = function arg0, arg1() {
         _fun31487: for (var _fun31487_ip = 0;;) switch (_fun31487_ip) {
             case 0:
                 var4 = arg0;

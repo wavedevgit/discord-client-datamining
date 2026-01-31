@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/StageChannelAnimationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useStageActionBarAnimation, environment: var1
+    var1 = function arg0, arg1() {
         var10 = arg1;
         var _closure2_slot0 = var10;
         var2 = _closure1_slot1;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9[var1];
         var5 = var7.bind(var8)(var2);
         var4 = var5.useDerivedValue;
-        var2 = function() { // Original name: A, environment: var0
+        var2 = function() {
             _fun69163: for (var _fun69163_ip = 0;;) switch (_fun69163_ip) {
                 case 0:
                     var0 = _closure2_slot1;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var9[var1];
         var2 = var7.bind(var8)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: c, environment: var0
+        var0 = function() {
             var0 = {};
             var4 = _closure1_slot0;
             var3 = _closure1_slot2;

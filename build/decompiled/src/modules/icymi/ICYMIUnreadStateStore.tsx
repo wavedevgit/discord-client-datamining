@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun70667: for (var _fun70667_ip = 0;;) switch (_fun70667_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun70670: for (var _fun70670_ip = 0;;) switch (_fun70670_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun70672: for (var _fun70672_ip = 0;;) switch (_fun70672_ip) {
             case 0:
                 var3 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.DeviceSettingsStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ICYMIUnreadStateStore, environment: var5
+        var3 = function() {
             _fun70674: for (var _fun70674_ip = 0;;) switch (_fun70674_ip) {
                 case 0:
                     var3 = this;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun70675: for (var _fun70675_ip = 0;;) switch (_fun70675_ip) {
                 case 0:
                     var3 = arg0;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getReadTimestamp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = _closure1_slot8;
             var1 = var0.readIdToTimestampMap;
             var0 = arg0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleTabAck, environment: var3
+    var8 = function arg0() {
         var1 = arg0;
         var2 = var1.items;
         var1 = var1.override;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ICYMI_ACK_ITEMS = var8;
-    var8 = function(arg0) { // Original name: handleLoadDehydrated, environment: var3
+    var8 = function arg0() {
         _fun70682: for (var _fun70682_ip = 0;;) switch (_fun70682_ip) {
             case 0:
                 var0 = arg0;
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LOAD_ICYMI_DEHYDRATED = var8;
-    var3 = function() { // Original name: handleClearReadStates, environment: var3
+    var3 = function() {
         var1 = _closure1_slot8;
         var0 = {};
         var1.readIdToTimestampMap = var0;

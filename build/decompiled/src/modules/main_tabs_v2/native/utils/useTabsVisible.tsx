@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/utils/useTabsVisible.tsx';
     var4 = var5.bind(var6)(var4);
     var2.TabsVisibleStore = var3;
-    var3 = function(arg0) { // Original name: useTabsVisible, environment: var1
+    var3 = function arg0() {
         _fun46436: for (var _fun46436_ip = 0;;) switch (_fun46436_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useTabsVisible = var3;
-    var3 = function(arg0) { // Original name: setTabsHeight, environment: var1
+    var3 = function arg0() {
         _fun46437: for (var _fun46437_ip = 0;;) switch (_fun46437_ip) {
             case 0:
                 var2 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setTabsHeight = var3;
-    var3 = function() { // Original name: useMainTabsHeight, environment: var1
+    var3 = function() {
         _fun46440: for (var _fun46440_ip = 0;;) switch (_fun46440_ip) {
             case 0:
                 var1 = arguments[0];
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMainTabsHeight = var3;
-    var1 = function() { // Original name: useMainTabsWidth, environment: var1
+    var1 = function() {
         _fun46442: for (var _fun46442_ip = 0;;) switch (_fun46442_ip) {
             case 0:
                 var4 = _closure1_slot1;

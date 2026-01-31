@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1) { // Original name: getInitialParserStateFromMessage, environment: var1
+    var4 = function arg0, arg1() {
         _fun55927: for (var _fun55927_ip = 0;;) switch (_fun55927_ip) {
             case 0:
                 var2 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: getInitialParserState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var2 = var0.messageId;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: render, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun55929: for (var _fun55929_ip = 0;;) switch (_fun55929_ip) {
             case 0:
                 var3 = arg1;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun55930
                             }
                         case 428:
-                            var6 = function(arg0) { // Original name: removeBuildOverrideLinks, environment: var2
+                            var6 = function arg0() {
                                 var2 = arg0;
                                 var1 = var2.filter;
                                 var0 = function(arg0) { // Environment: var0
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var8 = var6.bind(var3)(var8);
-                            var6 = function(arg0) { // Original name: removeExperimentLinks, environment: var2
+                            var6 = function arg0() {
                                 var2 = arg0;
                                 var1 = var2.filter;
                                 var0 = function(arg0) { // Environment: var0
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var5 = var6.bind(var3)(var8);
                         case 448:
-                            var2 = function(arg0) { // Original name: removeQuestsEmbedLinks, environment: var2
+                            var2 = function arg0() {
                                 var2 = arg0;
                                 var3 = var2.some;
                                 var1 = function(arg0) { // Environment: var0
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderAutomodMessageMarkupWithParser, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var5 = {
             'allowLinks': false,
             'allowDevLinks': false,
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: checkForJumboEmoji, environment: var1
+    var0 = function arg0() {
         _fun55940: for (var _fun55940_ip = 0;;) switch (_fun55940_ip) {
             case 0:
                 var0 = arg0;
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: containsMatchingNode, environment: var1
+    var0 = function arg0, arg1() {
         _fun55944: for (var _fun55944_ip = 0;;) switch (_fun55944_ip) {
             case 0:
                 var2 = arg0;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: hasAnySpoilerEmbeds, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot10;
         var2 = undefined;
         var1 = arg0;
@@ -887,7 +887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: convertNewlinesInContent, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.forEach;
         var1 = function(arg0) { // Environment: var1
@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/messages/renderMessageMarkup.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: renderMessageMarkup, environment: var1
+    var5 = function arg0() {
         _fun55952: for (var _fun55952_ip = 0;;) switch (_fun55952_ip) {
             case 0:
                 var4 = arguments[1];
@@ -1062,7 +1062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.getInitialParserStateFromMessage = var4;
     var2.getInitialParserState = var3;
-    var3 = function(arg0, arg1) { // Original name: renderMessageMarkupWithParser, environment: var1
+    var3 = function arg0, arg1() {
         _fun55953: for (var _fun55953_ip = 0;;) switch (_fun55953_ip) {
             case 0:
                 var4 = arguments[2];
@@ -1082,7 +1082,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderMessageMarkupWithParser = var3;
-    var3 = function(arg0) { // Original name: renderMessageMarkupToAST, environment: var1
+    var3 = function arg0() {
         _fun55954: for (var _fun55954_ip = 0;;) switch (_fun55954_ip) {
             case 0:
                 var0 = arguments[1];
@@ -1125,7 +1125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderMessageMarkupToAST = var3;
-    var3 = function(arg0, arg1) { // Original name: renderMessageContentMarkup, environment: var1
+    var3 = function arg0, arg1() {
         _fun55955: for (var _fun55955_ip = 0;;) switch (_fun55955_ip) {
             case 0:
                 var4 = arguments[2];
@@ -1137,7 +1137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 9:
                 var4 = {};
             case 11:
-                var2 = function(arg0, arg1) { // Original name: renderMessageContentMarkupWithParser, environment: var0
+                var2 = function arg0, arg1() {
                     var1 = arg1;
                     var9 = var1.content;
                     var4 = {
@@ -1203,7 +1203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderMessageContentMarkup = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: renderAutomodMessageMarkup, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var5 = _closure1_slot8;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.renderAutomodMessageMarkup = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: renderAutomodMessageMarkupToAST, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var5 = _closure1_slot8;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;

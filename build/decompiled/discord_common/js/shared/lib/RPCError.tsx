@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun63063: for (var _fun63063_ip = 0;;) switch (_fun63063_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Error;
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0, arg1) { // Original name: RPCError, environment: var0
+        var2 = function arg0, arg1() {
             _fun63067: for (var _fun63067_ip = 0;;) switch (_fun63067_ip) {
                 case 0:
                     var2 = arg0;

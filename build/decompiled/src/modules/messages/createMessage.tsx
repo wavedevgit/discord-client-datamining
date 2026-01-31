@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: userRecordToServer, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.id;
         var5 = var0.username;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/createMessage.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: createMessage, environment: var1
+    var4 = function arg0() {
         _fun54229: for (var _fun54229_ip = 0;;) switch (_fun54229_ip) {
             case 0:
                 var9 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.userRecordToServer = var3;
-    var1 = function(arg0) { // Original name: createBotMessage, environment: var1
+    var1 = function arg0() {
         _fun54230: for (var _fun54230_ip = 0;;) switch (_fun54230_ip) {
             case 0:
                 var0 = arg0;

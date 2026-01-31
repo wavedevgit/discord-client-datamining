@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var1 = function(arg0, arg1) { // Original name: withActiveSpan, environment: var3
+    var1 = function arg0, arg1() {
         _fun9099: for (var _fun9099_ip = 0;;) switch (_fun9099_ip) {
             case 0:
                 var4 = arg0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var1;
-    var4 = function(arg0) { // Original name: startNewTrace, environment: var3
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var4;
-    var0 = function(arg0) { // Original name: createChildOrRootSpan, environment: var3
+    var0 = function arg0() {
         _fun9103: for (var _fun9103_ip = 0;;) switch (_fun9103_ip) {
             case 0:
                 var1 = arg0;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: parseSentrySpanArguments, environment: var3
+    var0 = function arg0() {
         _fun9104: for (var _fun9104_ip = 0;;) switch (_fun9104_ip) {
             case 0:
                 var1 = arg0;
@@ -461,7 +461,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: getAcs, environment: var3
+    var0 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 8;
@@ -478,7 +478,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _startRootSpan, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun9106: for (var _fun9106_ip = 0;;) switch (_fun9106_ip) {
             case 0:
                 var9 = arg0;
@@ -709,7 +709,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: getParentSpan, environment: var3
+    var0 = function arg0, arg1() {
         _fun9107: for (var _fun9107_ip = 0;;) switch (_fun9107_ip) {
             case 0:
                 var0 = arg1;
@@ -781,7 +781,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getActiveSpanWrapper, environment: var3
+    var0 = function arg0() {
         _fun9108: for (var _fun9108_ip = 0;;) switch (_fun9108_ip) {
             case 0:
                 var2 = arg0;
@@ -834,7 +834,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var7.bind(var8)(var2, var6, var5);
     var5 = '__SENTRY_SUPPRESS_TRACING__';
     var _closure1_slot4 = var5;
-    var5 = function(arg0, arg1) { // Original name: continueTrace, environment: var3
+    var5 = function arg0, arg1() {
         _fun9111: for (var _fun9111_ip = 0;;) switch (_fun9111_ip) {
             case 0:
                 var3 = arg0;
@@ -940,7 +940,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.continueTrace = var5;
-    var5 = function(arg0) { // Original name: startInactiveSpan, environment: var3
+    var5 = function arg0() {
         _fun9113: for (var _fun9113_ip = 0;;) switch (_fun9113_ip) {
             case 0:
                 var2 = arg0;
@@ -1075,7 +1075,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.startInactiveSpan = var5;
     var2.startNewTrace = var4;
-    var4 = function(arg0, arg1) { // Original name: startSpan, environment: var3
+    var4 = function arg0, arg1() {
         _fun9118: for (var _fun9118_ip = 0;;) switch (_fun9118_ip) {
             case 0:
                 var3 = arg0;
@@ -1272,7 +1272,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.startSpan = var4;
-    var4 = function(arg0, arg1) { // Original name: startSpanManual, environment: var3
+    var4 = function arg0, arg1() {
         _fun9124: for (var _fun9124_ip = 0;;) switch (_fun9124_ip) {
             case 0:
                 var3 = arg0;
@@ -1468,7 +1468,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.startSpanManual = var4;
-    var3 = function(arg0) { // Original name: suppressTracing, environment: var3
+    var3 = function arg0() {
         _fun9130: for (var _fun9130_ip = 0;;) switch (_fun9130_ip) {
             case 0:
                 var3 = arg0;

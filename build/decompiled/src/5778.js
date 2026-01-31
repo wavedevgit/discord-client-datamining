@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var7;
-            var1 = function(arg0) { // Original name: SafeAreaProviderCompat, environment: var4
+            var1 = function arg0() {
                 _fun51111: for (var _fun51111_ip = 0;;) switch (_fun51111_ip) {
                     case 0:
                         var0 = arg0;

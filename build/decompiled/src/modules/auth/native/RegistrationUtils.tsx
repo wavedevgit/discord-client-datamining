@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: trackRegTransition, environment: var1
+    var3 = function arg0() {
         _fun100265: for (var _fun100265_ip = 0;;) switch (_fun100265_ip) {
             case 0:
                 var0 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/auth/native/RegistrationUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: hasAllRegistrationFieldsCompleted, environment: var1
+    var4 = function arg0, arg1() {
         _fun100266: for (var _fun100266_ip = 0;;) switch (_fun100266_ip) {
             case 0:
                 var6 = arg0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasAllRegistrationFieldsCompleted = var4;
     var2.trackRegTransition = var3;
-    var3 = function(arg0) { // Original name: getTrackRegTransition, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var0;
         var9 = var5;
         var5 = copyDataProperties(var10, var9);
-        var5 = function() { // Original name: onPress, environment: var4
+        var5 = function() {
             _fun100270: for (var _fun100270_ip = 0;;) switch (_fun100270_ip) {
                 case 0:
                     var2 = _closure2_slot2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var8 = function(arg0) { // Original name: receiveNetworkInfoformation, environment: var1
+    var8 = function arg0() {
         _fun39611: for (var _fun39611_ip = 0;;) switch (_fun39611_ip) {
             case 0:
                 var1 = arg0;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function() { // Original name: updateNetworkUsage, environment: var1
+    var0 = function() {
         _fun39612: for (var _fun39612_ip = 0;;) switch (_fun39612_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var7)(var8);
     var3 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function() { // Original name: EventTracker, environment: var5
+        var2 = function() {
             _fun39615: for (var _fun39615_ip = 0;;) switch (_fun39615_ip) {
                 case 0:
                     var2 = this;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var1 = 'handleAppStateChange';
         var4.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun39621: for (var _fun39621_ip = 0;;) switch (_fun39621_ip) {
                 case 0:
                     var1 = this;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var0)(var6);
         var _closure2_slot1 = var6;
-        var6 = function() { // Original name: writeExistingEventStorage, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -674,7 +674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var0)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: track, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -689,7 +689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getQueuedEvent';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var2 = _closure1_slot22;
             var3 = undefined;
             var2 = var2.bind(var3)();
@@ -1095,7 +1095,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/network/NetStats.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isSlowNetwork, environment: var1
+    var3 = function() {
         _fun39637: for (var _fun39637_ip = 0;;) switch (_fun39637_ip) {
             case 0:
                 var0 = _closure1_slot14;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSlowNetwork = var3;
-    var1 = function() { // Original name: getSignalStrength, environment: var1
+    var1 = function() {
         var0 = _closure1_slot12;
         var0 = var0.signalStrengthLevel;
         return var0;

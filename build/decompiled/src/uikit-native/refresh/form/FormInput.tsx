@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = arg1;
                 var2 = function() { // Environment: var2
                     var0 = {};
-                    var2 = function() { // Original name: isFocused, environment: var1
+                    var2 = function() {
                         _fun47903: for (var _fun47903_ip = 0;;) switch (_fun47903_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.isFocused = var2;
-                    var2 = function() { // Original name: focus, environment: var1
+                    var2 = function() {
                         _fun47904: for (var _fun47904_ip = 0;;) switch (_fun47904_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.focus = var2;
-                    var2 = function() { // Original name: blur, environment: var1
+                    var2 = function() {
                         _fun47905: for (var _fun47905_ip = 0;;) switch (_fun47905_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.blur = var2;
-                    var2 = function(arg0) { // Original name: setText, environment: var1
+                    var2 = function arg0() {
                         _fun47906: for (var _fun47906_ip = 0;;) switch (_fun47906_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.setText = var2;
-                    var2 = function() { // Original name: getText, environment: var1
+                    var2 = function() {
                         _fun47907: for (var _fun47907_ip = 0;;) switch (_fun47907_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.getText = var2;
-                    var2 = function(arg0) { // Original name: measure, environment: var1
+                    var2 = function arg0() {
                         _fun47908: for (var _fun47908_ip = 0;;) switch (_fun47908_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.measure = var2;
-                    var2 = function(arg0) { // Original name: measureInWindow, environment: var1
+                    var2 = function arg0() {
                         _fun47909: for (var _fun47909_ip = 0;;) switch (_fun47909_ip) {
                             case 0:
                                 var0 = _closure2_slot0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.measureInWindow = var2;
-                    var1 = function(arg0, arg1, arg2) { // Original name: measureLayout, environment: var1
+                    var1 = function arg0, arg1, arg2() {
                         _fun47910: for (var _fun47910_ip = 0;;) switch (_fun47910_ip) {
                             case 0:
                                 var0 = _closure2_slot0;

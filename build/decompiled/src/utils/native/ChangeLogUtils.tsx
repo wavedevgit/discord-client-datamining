@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: ChangeLogLink, environment: var4
+    var0 = function arg0() {
         var1 = arg0;
         var5 = var1.node;
         var7 = var1.output;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: ChangeLogList, environment: var4
+    var0 = function arg0() {
         _fun55894: for (var _fun55894_ip = 0;;) switch (_fun55894_ip) {
             case 0:
                 var1 = arg0;
@@ -78,11 +78,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.components;
                     var3 = var1.ListItem;
                     var2 = {};
-                    var0 = function(arg0) { // Original name: children, environment: var0
+                    var0 = function arg0() {
                         var9 = _closure3_slot0;
                         var8 = _closure2_slot0;
                         var7 = _closure2_slot1;
-                        var2 = function(arg0, arg1, arg2, arg3) { // Original name: processListItem, environment: var0
+                        var2 = function arg0, arg1, arg2, arg3() {
                             var4 = arg0;
                             var0 = arg1;
                             var _closure5_slot0 = var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure5_slot1 = var0;
                             var0 = arg3;
                             var _closure5_slot2 = var0;
-                            var2 = function() { // Original name: renderText, environment: var1
+                            var2 = function() {
                                 _fun55898: for (var _fun55898_ip = 0;;) switch (_fun55898_ip) {
                                     case 0:
                                         var0 = _closure5_slot4;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: ChangeLogParagraph, environment: var4
+    var0 = function arg0() {
         _fun55900: for (var _fun55900_ip = 0;;) switch (_fun55900_ip) {
             case 0:
                 var1 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: ChangeLogImage, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.node;
         var0 = var0.state;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: ChangeLogBlockQuote, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.node;
         var9 = var0.output;
@@ -382,11 +382,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var3 = var3.bind(var7)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: link, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
-        var1 = function(arg0, arg1, arg2) { // Original name: react, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var1 = {};
@@ -406,11 +406,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.link = var7;
-    var7 = function(arg0) { // Original name: lheading, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
-        var1 = function(arg0, arg1, arg2) { // Original name: react, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var1 = arg0;
             var0 = arg2;
             var4 = _closure1_slot5;
@@ -433,11 +433,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.lheading = var7;
-    var7 = function(arg0) { // Original name: heading, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
-        var1 = function(arg0, arg1, arg2) { // Original name: react, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var1 = arg0;
             var0 = arg2;
             var4 = _closure1_slot5;
@@ -462,11 +462,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.heading = var7;
-    var7 = function(arg0) { // Original name: list, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
-        var1 = function(arg0, arg1, arg2) { // Original name: react, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot8;
             var1 = {};
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.list = var7;
     var7 = {};
-    var8 = function(arg0, arg1, arg2) { // Original name: react, environment: var4
+    var8 = function arg0, arg1, arg2() {
         var3 = _closure1_slot5;
         var2 = _closure1_slot10;
         var1 = {};
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.react = var8;
     var1.image = var7;
     var7 = {};
-    var8 = function(arg0, arg1, arg2) { // Original name: react, environment: var4
+    var8 = function arg0, arg1, arg2() {
         var3 = _closure1_slot5;
         var2 = _closure1_slot11;
         var1 = {};
@@ -520,11 +520,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.react = var8;
     var1.blockQuote = var7;
-    var4 = function(arg0) { // Original name: paragraph, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
-        var1 = function(arg0, arg1, arg2) { // Original name: react, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot9;
             var1 = {};

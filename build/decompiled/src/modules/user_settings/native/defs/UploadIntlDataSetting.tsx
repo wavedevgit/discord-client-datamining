@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _serializeIntlData, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _handleUploadIntlDataSettingPress, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 12:
                         var3 = undefined;
                         var4 = undefined;
-                        var1 = function() { // Original name: onUploadIntlDataRequestStart, environment: var2
+                        var1 = function() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 5;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 81:
                         var4 = var1;
                     case 84: // try_start_0 // try_start_1
-                        var1 = function() { // Original name: serializeIntlData, environment: var2
+                        var1 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot10;
                             var2 = var3.apply;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         _fun85441_ip = 400;
                         continue _fun85441;
                     case 297: // try_end1
-                        var5 = function() { // Original name: onUploadIntlDataRequestFinish, environment: var2
+                        var5 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot3;
                             var0 = 5;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.bind(var3)();
                         return var4;
                     case 311:
-                        var4 = function() { // Original name: onUploadIntlDataRequestFinish, environment: var2
+                        var4 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot3;
                             var0 = 5;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1.IconComponent = var6;
                         var1 = var4.bind(var5)(var1);
                     case 400: // try_end2
-                        var1 = function() { // Original name: onUploadIntlDataRequestFinish, environment: var2
+                        var1 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot3;
                             var0 = 5;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var3;
                     case 414: // catch_target1 // catch_target2
                         CatchBlockStart(arg_register = 1);
-                        var2 = function() { // Original name: onUploadIntlDataRequestFinish, environment: var2
+                        var2 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot3;
                             var0 = 5;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var8 = function() { // Original name: title, environment: var7
+    var8 = function() {
         var0 = 'Upload i18n data';
         return var0;
     };
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.FileUpIcon;
     var1.IconComponent = var8;
-    var8 = function() { // Original name: handleUploadIntlDataSettingPress, environment: var7
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.useStaffOrDeveloperSettingPredicate;
     var1.usePredicate = var8;
-    var8 = function() { // Original name: useUploadIntlDataTrailing, environment: var7
+    var8 = function() {
         _fun85464: for (var _fun85464_ip = 0;;) switch (_fun85464_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -688,7 +688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTrailing = var8;
-    var7 = function() { // Original name: useIsUploadIntlDataDisabled, environment: var7
+    var7 = function() {
         var1 = _closure1_slot9;
         var0 = undefined;
         var0 = var1.bind(var0)();

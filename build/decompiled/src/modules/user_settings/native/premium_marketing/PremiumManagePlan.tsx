@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: ManagePlanHeader, environment: var3
+    var0 = function() {
         var0 = _closure1_slot30;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var10 = var8.backButtonWrapper;
         var4.style = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var1 = _closure2_slot0;
             var0 = var1.pop;
             var0 = var0.bind(var1)();
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: SubscriptionAndBillingInfo, environment: var3
+    var0 = function arg0() {
         _fun82377: for (var _fun82377_ip = 0;;) switch (_fun82377_ip) {
             case 0:
                 var0 = arg0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var6 = _closure2_slot7;
                             var0.loadId = var6;
-                            var6 = function() { // Original name: onSuccessCallback, environment: var6
+                            var6 = function() {
                                 var2 = _closure1_slot28;
                                 var1 = var2.log;
                                 var0 = 'Successfully opened mobile web Nitro Management page';
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var32 = var32.t;
                 var33 = var32.fvk30i;
                 var32 = {};
-                var37 = function() { // Original name: onSwitchPlans, environment: var21
+                var37 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 47;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var32.onSwitchPlans = var37;
-                var37 = function() { // Original name: onCancel, environment: var21
+                var37 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 47;
@@ -1243,7 +1243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var23.lTCb0c;
                 var23 = var26.bind(var27)(var23);
                 var16.text = var23;
-                var21 = function() { // Original name: onPress, environment: var21
+                var21 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 47;
@@ -1368,7 +1368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: FractionalPremiumCredits, environment: var3
+    var0 = function arg0() {
         _fun82389: for (var _fun82389_ip = 0;;) switch (_fun82389_ip) {
             case 0:
                 var0 = arg0;
@@ -2278,7 +2278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_settings/native/premium_marketing/PremiumManagePlan.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: PremiumManagePlan, environment: var3
+    var3 = function() {
         _fun82390: for (var _fun82390_ip = 0;;) switch (_fun82390_ip) {
             case 0:
                 var0 = _closure1_slot29;
@@ -2771,7 +2771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = {};
                 var31 = var21.subscriptionHeader;
                 var25.style = var31;
-                var30 = function() { // Original name: onClickManagePremiumGuild, environment: var30
+                var30 = function() {
                     _fun82397: for (var _fun82397_ip = 0;;) switch (_fun82397_ip) {
                         case 0:
                             var2 = _closure2_slot0;

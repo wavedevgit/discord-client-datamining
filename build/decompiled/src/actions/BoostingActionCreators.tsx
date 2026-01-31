@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _fetchAppliedGuildBoostsForGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _fetchAppliedGuildBoostsForUser, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var3 = function() { // Original name: fetchGuildBoostSlots, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: _fetchGuildBoostSlots, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _fetchAppliedBoostsCooldown, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _applyToGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _unapplyFromGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -711,7 +711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _cancelGuildBoostSlot, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _uncancelGuildBoostSlot, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'actions/BoostingActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: fetchAppliedGuildBoostsForGuild, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchAppliedGuildBoostsForGuild = var4;
-    var4 = function() { // Original name: fetchAppliedGuildBoostsForUser, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -936,7 +936,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchAppliedGuildBoostsForUser = var4;
     var2.fetchGuildBoostSlots = var3;
-    var3 = function() { // Original name: fetchAppliedBoostsCooldown, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchAppliedBoostsCooldown = var3;
-    var3 = function() { // Original name: applyToGuild, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -958,7 +958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.applyToGuild = var3;
-    var3 = function() { // Original name: unapplyFromGuild, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -969,7 +969,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.unapplyFromGuild = var3;
-    var3 = function() { // Original name: cancelGuildBoostSlot, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -980,7 +980,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.cancelGuildBoostSlot = var3;
-    var1 = function() { // Original name: uncancelGuildBoostSlot, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;

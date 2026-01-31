@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var10.bind(var3)(var1);
                             var2 = var1.PressableOpacity;
                             var1 = {};
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 23;

@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GIFPickerSearchSuggestions, environment: var1
+    var1 = function arg0() {
         _fun74120: for (var _fun74120_ip = 0;;) switch (_fun74120_ip) {
             case 0:
                 var0 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.PX_8;
                     var0.hitSlop = var6;
                     var0.text = var4;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot0;
                         var1 = _closure3_slot0;
                         var0 = undefined;

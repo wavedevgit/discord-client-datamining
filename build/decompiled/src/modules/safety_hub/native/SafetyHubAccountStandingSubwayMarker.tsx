@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/safety_hub/native/SafetyHubAccountStandingSubwayMarker.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: SafetyHubAccountStandingSubwayMarker, environment: var3
+    var3 = function arg0() {
         _fun88663: for (var _fun88663_ip = 0;;) switch (_fun88663_ip) {
             case 0:
                 var0 = arg0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5.intl;
                 var6 = var7.format;
                 var5 = {};
-                var9 = function(arg0, arg1) { // Original name: hook, environment: var9
+                var9 = function arg0, arg1() {
                     _fun88664: for (var _fun88664_ip = 0;;) switch (_fun88664_ip) {
                         case 0:
                             var5 = arg0;

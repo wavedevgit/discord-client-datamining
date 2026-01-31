@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun96941;
                 }
         case 173:
-            var1 = function() { // Original name: setupURLPolyfill, environment: var1
+            var1 = function() {
                 var1 = global;
                 var5 = var1.globalThis;
                 var6 = _closure1_slot1;

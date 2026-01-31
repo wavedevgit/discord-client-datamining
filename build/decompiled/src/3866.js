@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot2 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: computeEasingProgress, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun35016: for (var _fun35016_ip = 0;;) switch (_fun35016_ip) {
                 case 0:
                     var2 = arg1;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: easing, environment: var0
+        var0 = function arg0() {
             var0 = global;
             var4 = var0.Math;
             var3 = var4.pow;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: computeProgress, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun35020: for (var _fun35020_ip = 0;;) switch (_fun35020_ip) {
                 case 0:
                     var5 = arg1;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot8 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: maybeScheduleNextFrame, environment: var0
+        var0 = function arg0, arg1, arg2, arg3, arg4() {
             _fun35022: for (var _fun35022_ip = 0;;) switch (_fun35022_ip) {
                 case 0:
                     var1 = arg2;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot10 = var3;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getSwipeSimulator, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun35024: for (var _fun35024_ip = 0;;) switch (_fun35024_ip) {
                 case 0:
                     var3 = arg0;
@@ -390,7 +390,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         continue _fun35024
                     }
                 case 662:
-                    var0 = function() { // Original name: computeFrame, environment: var1
+                    var0 = function() {
                         _fun35026: for (var _fun35026_ip = 0;;) switch (_fun35026_ip) {
                             case 0:
                                 var4 = {};
@@ -554,7 +554,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot13 = var0;
                     return var0;
                 case 673:
-                    var0 = function() { // Original name: computeFrame, environment: var1
+                    var0 = function() {
                         _fun35025: for (var _fun35025_ip = 0;;) switch (_fun35025_ip) {
                             case 0:
                                 var4 = {};

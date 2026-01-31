@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun96093: for (var _fun96093_ip = 0;;) switch (_fun96093_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: upsert, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun96096: for (var _fun96096_ip = 0;;) switch (_fun96096_ip) {
             case 0:
                 var1 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: deleteUserDesyncData, environment: var3
+    var0 = function arg0() {
         _fun96097: for (var _fun96097_ip = 0;;) switch (_fun96097_ip) {
             case 0:
                 var4 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: retryFailedUsers, environment: var3
+    var0 = function() {
         _fun96098: for (var _fun96098_ip = 0;;) switch (_fun96098_ip) {
             case 0:
                 var3 = _closure1_slot10;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var8 = function() { // Original name: handleReset, environment: var3
+    var8 = function() {
         var2 = _closure1_slot17;
         var1 = var2.clear;
         var1 = var1.bind(var2)();
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: RTCConnectionDesyncStore, environment: var5
+        var3 = function() {
             _fun96102: for (var _fun96102_ip = 0;;) switch (_fun96102_ip) {
                 case 0:
                     var3 = this;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var6 = var3.waitFor;
             var10 = _closure1_slot12;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'desyncedVoiceStatesCount';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot17;
             var0 = var1.size;
             var0 = var0.bind(var1)();
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDesyncedUserIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot17;
             var0 = var1.keys;
             var0 = var0.bind(var1)();
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDesyncedVoiceStates';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot17;
             var0 = var1.values;
             var0 = var0.bind(var1)();
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDesyncedParticipants';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = _closure1_slot18;
             var0 = var1.values;
             var0 = var0.bind(var1)();
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function() { // Original name: handleConnectionOpen, environment: var3
+    var9 = function() {
         var1 = _closure1_slot24;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.CONNECTION_OPEN = var9;
     var1.VOICE_CHANNEL_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleRTCConnectionState, environment: var3
+    var8 = function arg0() {
         _fun96109: for (var _fun96109_ip = 0;;) switch (_fun96109_ip) {
             case 0:
                 var0 = arg0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.RTC_CONNECTION_STATE = var8;
-    var8 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var3
+    var8 = function arg0() {
         _fun96110: for (var _fun96110_ip = 0;;) switch (_fun96110_ip) {
             case 0:
                 var0 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.VOICE_STATE_UPDATES = var8;
-    var8 = function(arg0) { // Original name: handleRTCConnectionClientConnect, environment: var3
+    var8 = function arg0() {
         _fun96112: for (var _fun96112_ip = 0;;) switch (_fun96112_ip) {
             case 0:
                 var0 = arg0;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.RTC_CONNECTION_CLIENT_CONNECT = var8;
-    var3 = function(arg0) { // Original name: handleRTCConnectionClientDisconnect, environment: var3
+    var3 = function arg0() {
         _fun96114: for (var _fun96114_ip = 0;;) switch (_fun96114_ip) {
             case 0:
                 var0 = arg0;

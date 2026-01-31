@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var2, var3, var4);
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: SentryNonRecordingSpan, environment: var4
+        var2 = function() {
             _fun99209: for (var _fun99209_ip = 0;;) switch (_fun99209_ip) {
                 case 0:
                     var2 = this;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'spanContext';
         var0.key = var1;
-        var1 = function() { // Original name: spanContext, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = {};
             var2 = var1._spanId;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'end';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: end, environment: var4
+        var5 = function arg0() {
             var0 = undefined;
             return var0;
         };
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setAttribute';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: setAttribute, environment: var4
+        var5 = function arg0, arg1() {
             var0 = this;
             return var0;
         };
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setAttributes';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: setAttributes, environment: var4
+        var5 = function arg0() {
             var0 = this;
             return var0;
         };
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setStatus';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: setStatus, environment: var4
+        var5 = function arg0() {
             var0 = this;
             return var0;
         };
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'updateName';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: updateName, environment: var4
+        var5 = function arg0() {
             var0 = this;
             return var0;
         };
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'isRecording';
         var0.key = var5;
-        var5 = function() { // Original name: isRecording, environment: var4
+        var5 = function() {
             var0 = false;
             return var0;
         };
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'addEvent';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: addEvent, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var0 = this;
             return var0;
         };
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'addLink';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: addLink, environment: var4
+        var5 = function arg0() {
             var0 = this;
             return var0;
         };
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'addLinks';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: addLinks, environment: var4
+        var5 = function arg0() {
             var0 = this;
             return var0;
         };
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'recordException';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: recordException, environment: var4
+        var4 = function arg0, arg1() {
             var0 = undefined;
             return var0;
         };

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: setupIntegration, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun99444: for (var _fun99444_ip = 0;;) switch (_fun99444_ip) {
             case 0:
                 var4 = arg0;
@@ -203,7 +203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6.bind(var7)(var2, var4, var5);
     var4 = new Array(0);
     var _closure1_slot4 = var4;
-    var5 = function(arg0) { // Original name: addIntegration, environment: var1
+    var5 = function arg0() {
         _fun99447: for (var _fun99447_ip = 0;;) switch (_fun99447_ip) {
             case 0:
                 var3 = arg0;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.addIntegration = var5;
-    var5 = function(arg0, arg1) { // Original name: afterSetupIntegrations, environment: var1
+    var5 = function arg0, arg1() {
         _fun99448: for (var _fun99448_ip = 0;;) switch (_fun99448_ip) {
             case 0:
                 var3 = arg0;
@@ -304,12 +304,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.afterSetupIntegrations = var5;
-    var5 = function(arg0) { // Original name: defineIntegration, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var2.defineIntegration = var5;
-    var5 = function(arg0) { // Original name: getIntegrationsToSetup, environment: var1
+    var5 = function arg0() {
         _fun99450: for (var _fun99450_ip = 0;;) switch (_fun99450_ip) {
             case 0:
                 var0 = arg0;
@@ -370,7 +370,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var6.bind(var0)(var7);
                 var2 = var4.bind(var5)(var3, var0);
             case 156:
-                var0 = function(arg0) { // Original name: filterDuplicates, environment: var1
+                var0 = function arg0() {
                     var3 = arg0;
                     var2 = {};
                     var _closure3_slot0 = var2;
@@ -450,7 +450,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.getIntegrationsToSetup = var5;
     var2.installedIntegrations = var4;
     var2.setupIntegration = var3;
-    var1 = function(arg0, arg1) { // Original name: setupIntegrations, environment: var1
+    var1 = function arg0, arg1() {
         var3 = arg1;
         var0 = arg0;
         var _closure2_slot0 = var0;

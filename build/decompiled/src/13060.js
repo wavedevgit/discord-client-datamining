@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.button = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot10 = var3;
-    var1 = function(arg0) { // Original name: BottomTabBarItem, environment: var1
+    var1 = function arg0() {
         _fun100576: for (var _fun100576_ip = 0;;) switch (_fun100576_ip) {
             case 0:
                 var4 = arg0;

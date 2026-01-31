@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingProgressBar.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ProgressBar, environment: var3
+    var3 = function arg0() {
         _fun78090: for (var _fun78090_ip = 0;;) switch (_fun78090_ip) {
             case 0:
                 var0 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var17[var9];
                 var10 = var15.bind(var3)(var2);
                 var6 = var10.useAnimatedStyle;
-                var2 = function() { // Original name: I, environment: var7
+                var2 = function() {
                     var0 = {};
                     var2 = _closure2_slot2;
                     var1 = var2.get;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var17[var9];
                 var11 = var15.bind(var3)(var2);
                 var10 = var11.useAnimatedReaction;
-                var6 = function() { // Original name: p, environment: var7
+                var6 = function() {
                     var1 = _closure2_slot2;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.__workletHash = var2;
                 var2 = _closure1_slot14;
                 var6.__initData = var2;
-                var2 = function(arg0) { // Original name: w, environment: var7
+                var2 = function arg0() {
                     _fun78094: for (var _fun78094_ip = 0;;) switch (_fun78094_ip) {
                         case 0:
                             var3 = arg0;

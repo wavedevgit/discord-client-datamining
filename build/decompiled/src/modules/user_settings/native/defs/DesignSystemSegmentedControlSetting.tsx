@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.DESIGN_SYSTEM_SEGMENTED_CONTROL;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;

@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.contentContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = function() { // Original name: ListHeader, environment: var1
+    var3 = function() {
         var1 = _closure1_slot6;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var3;
-    var3 = function() { // Original name: ShopEmptyState, environment: var1
+    var3 = function() {
         var3 = _closure1_slot5;
         var1 = _closure1_slot1;
         var8 = _closure1_slot2;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ShopFlashList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun88072: for (var _fun88072_ip = 0;;) switch (_fun88072_ip) {
             case 0:
                 var0 = arg0;

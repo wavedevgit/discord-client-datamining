@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     _fun7315: for (var _fun7315_ip = 0;;) switch (_fun7315_ip) {
         case 0:
-            var3 = function(arg0) { // Original name: supported, environment: var0
+            var3 = function arg0() {
                 var0 = global;
                 var0 = var0.Object;
                 var0 = var0.prototype;
@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0 == var1;
                 return var0;
             };
-            var2 = function(arg0) { // Original name: unsupported, environment: var0
+            var2 = function arg0() {
                 _fun7317: for (var _fun7317_ip = 0;;) switch (_fun7317_ip) {
                     case 0:
                         var4 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: FloatingCTA, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var8 = var2.trailing;
         var9 = null;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var4 = function(arg0) { // Original name: VoicePanelFloatingCTAContainer, environment: var1
+    var4 = function arg0() {
         _fun111489: for (var _fun111489_ip = 0;;) switch (_fun111489_ip) {
             case 0:
                 var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var18];
                 var7 = var19.bind(var3)(var0);
                 var2 = var7.useAnimatedStyle;
-                var0 = function() { // Original name: A, environment: var8
+                var0 = function() {
                     _fun111492: for (var _fun111492_ip = 0;;) switch (_fun111492_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var5.bind(var6)(var1);
                             var10 = var11.withSpring;
                             var17 = _closure1_slot11;
-                            var2 = function(arg0) { // Original name: t, environment: var1
+                            var2 = function arg0() {
                                 _fun111493: for (var _fun111493_ip = 0;;) switch (_fun111493_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var3)(var5);
                 var5 = {};
                 var5.contentTypes = var9;
-                var8 = function() { // Original name: children, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot9;
                     var2 = _closure1_slot14;
                     var1 = {};
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.FLOATING_CTA_TOTAL_VIEW_HEIGHT = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: renderVoicePanelFloatingCTA, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot9;
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;

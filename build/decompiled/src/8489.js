@@ -22,16 +22,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var6[var3];
     var3 = var5.bind(var0)(var3);
     var10 = var3.Animated;
-    var5 = function() { // Original name: NOOP, environment: var1
+    var5 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot1 = var5;
-    var6 = function() { // Original name: NESTED_NOOP, environment: var1
+    var6 = function() {
         var0 = _closure1_slot1;
         return var0;
     };
-    var7 = function(arg0) { // Original name: withSharedValue, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = {};
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0.addListener = var1;
         var0.removeListener = var1;
         var0.modify = var1;
-        var2 = function() { // Original name: get, environment: var2
+        var2 = function() {
             var0 = _closure2_slot0;
             return var0;
         };
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var _closure1_slot2 = var3;
     var2.KeyboardContext = var3;
-    var1 = function() { // Original name: useKeyboardContext, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = undefined;

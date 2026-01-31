@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ApplicationCommandLoadingItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         var0 = _closure1_slot3;
         var3 = undefined;
         var7 = var0.bind(var3)();

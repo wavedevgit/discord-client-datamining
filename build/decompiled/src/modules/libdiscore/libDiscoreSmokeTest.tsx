@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var8;
-    var5 = function() { // Original name: libDiscoreSmokeTest, environment: var9
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _libDiscoreSmokeTest, environment: var9
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var4 = function() { // Original name: trackLibdiscoreSuccess, environment: var9
+    var4 = function() {
         var5 = new Array(0);
         var _closure2_slot0 = var5;
         var6 = _closure1_slot0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0) { // Original name: formatErrorMessage, environment: var9
+    var3 = function arg0() {
         _fun118124: for (var _fun118124_ip = 0;;) switch (_fun118124_ip) {
             case 0:
                 var0 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var1 = function(arg0) { // Original name: trackLibdiscoreFailure, environment: var9
+    var1 = function arg0() {
         var3 = arg0;
         var4 = _closure1_slot5;
         var2 = var4.error;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: orderByTotalMemberCount, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0) { // Original name: orderByDateAdded, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/directory_channels/GuildDirectoryUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: guildDirectoryEntryFromServer, environment: var1
+    var5 = function arg0() {
         _fun71241: for (var _fun71241_ip = 0;;) switch (_fun71241_ip) {
             case 0:
                 var2 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MAX_CATEGORY_SERVERS = var5;
     var2.orderByTotalMemberCount = var4;
     var2.orderByDateAdded = var3;
-    var3 = function(arg0) { // Original name: rankByDateAdded, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot4;
         var1 = var3.filter;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.rankByDateAdded = var3;
-    var1 = function(arg0) { // Original name: rankGuildEntries, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;

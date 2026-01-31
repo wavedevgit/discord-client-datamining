@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0, arg1, arg2) { // Original name: useTooltipHelper, environment: var3
+    var1 = function arg0, arg1, arg2() {
         var5 = arg0;
         var9 = arg1;
         var0 = arg2;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var5.v4;
         var1 = var1.bind(var5)();
         var3 = var2.bind(var3)(var1);
-        var2 = function(arg0) { // Original name: useAddTooltip, environment: var1
+        var2 = function arg0() {
             _fun57337: for (var _fun57337_ip = 0;;) switch (_fun57337_ip) {
                 case 0:
                     var4 = arg0;

@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: Custom, environment: var1
+    var1 = function arg0() {
         _fun74988: for (var _fun74988_ip = 0;;) switch (_fun74988_ip) {
             case 0:
                 var1 = arg0;
@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0.activeDotStyle = var7;
                             var7 = _closure2_slot8;
                             var0.customReanimatedStyle = var7;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 _fun74990: for (var _fun74990_ip = 0;;) switch (_fun74990_ip) {
                                     case 0:
                                         var2 = _closure2_slot7;

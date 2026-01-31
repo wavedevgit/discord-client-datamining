@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun33019
             }
         case 100:
-            var1 = function() { // Original name: noop, environment: var3
+            var1 = function() {
                 var0 = undefined;
                 return var0;
             };

@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var1 = function(arg0) { // Original name: ProgressBarAndroid, environment: var1
+    var1 = function arg0() {
         _fun1263: for (var _fun1263_ip = 0;;) switch (_fun1263_ip) {
             case 0:
                 var5 = arg0;

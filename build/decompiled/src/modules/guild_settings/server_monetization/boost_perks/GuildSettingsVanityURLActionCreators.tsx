@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: fetchVanityUrl, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchVanityUrl = var3;
-    var3 = function() { // Original name: resetCode, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetCode = var3;
-    var3 = function(arg0) { // Original name: setCode, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setCode = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: saveCode, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var1 = arg2;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;

@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun4508: for (var _fun4508_ip = 0;;) switch (_fun4508_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot8 = var0;
-            var9 = function(arg0) { // Original name: createStackEntry, environment: var3
+            var9 = function arg0() {
                 _fun4511: for (var _fun4511_ip = 0;;) switch (_fun4511_ip) {
                     case 0:
                         var1 = arg0;
@@ -161,7 +161,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var1.bind(var0)(var4);
             var4 = var1.Component;
             var1 = function(arg0) { // Environment: var3
-                var4 = function() { // Original name: StatusBar, environment: var6
+                var4 = function() {
                     _fun4513: for (var _fun4513_ip = 0;;) switch (_fun4513_ip) {
                         case 0:
                             var3 = this;
@@ -246,7 +246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'componentDidMount';
                 var0.key = var1;
-                var1 = function() { // Original name: componentDidMount, environment: var6
+                var1 = function() {
                     var1 = this;
                     var3 = _closure2_slot0;
                     var2 = var3.pushStackEntry;
@@ -262,7 +262,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'componentWillUnmount';
                 var0.key = var5;
-                var5 = function() { // Original name: componentWillUnmount, environment: var6
+                var5 = function() {
                     _fun4515: for (var _fun4515_ip = 0;;) switch (_fun4515_ip) {
                         case 0:
                             var0 = this;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'componentDidUpdate';
                 var0.key = var5;
-                var5 = function() { // Original name: componentDidUpdate, environment: var6
+                var5 = function() {
                     _fun4516: for (var _fun4516_ip = 0;;) switch (_fun4516_ip) {
                         case 0:
                             var1 = this;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'render';
                 var0.key = var5;
-                var5 = function() { // Original name: render, environment: var6
+                var5 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -323,7 +323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var0 = 'setHidden';
                 var5.key = var0;
-                var0 = function(arg0, arg1) { // Original name: setHidden, environment: var6
+                var0 = function arg0, arg1() {
                     var3 = arg0;
                     var0 = _closure2_slot0;
                     var0 = var0._defaultProps;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'setBarStyle';
                 var5.key = var7;
-                var7 = function(arg0, arg1) { // Original name: setBarStyle, environment: var6
+                var7 = function arg0, arg1() {
                     var3 = arg0;
                     var0 = _closure2_slot0;
                     var0 = var0._defaultProps;
@@ -366,7 +366,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'setNetworkActivityIndicatorVisible';
                 var5.key = var7;
-                var7 = function(arg0) { // Original name: setNetworkActivityIndicatorVisible, environment: var6
+                var7 = function arg0() {
                     var0 = global;
                     var2 = var0.console;
                     var1 = var2.warn;
@@ -380,7 +380,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'setBackgroundColor';
                 var5.key = var7;
-                var7 = function(arg0, arg1) { // Original name: setBackgroundColor, environment: var6
+                var7 = function arg0, arg1() {
                     _fun4521: for (var _fun4521_ip = 0;;) switch (_fun4521_ip) {
                         case 0:
                             var8 = arg0;
@@ -447,7 +447,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'setTranslucent';
                 var5.key = var7;
-                var7 = function(arg0) { // Original name: setTranslucent, environment: var6
+                var7 = function arg0() {
                     var3 = arg0;
                     var0 = _closure2_slot0;
                     var0 = var0._defaultProps;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'pushStackEntry';
                 var5.key = var7;
-                var7 = function(arg0) { // Original name: pushStackEntry, environment: var6
+                var7 = function arg0() {
                     var2 = _closure1_slot9;
                     var1 = undefined;
                     var0 = arg0;
@@ -485,7 +485,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'popStackEntry';
                 var5.key = var7;
-                var7 = function(arg0) { // Original name: popStackEntry, environment: var6
+                var7 = function arg0() {
                     _fun4524: for (var _fun4524_ip = 0;;) switch (_fun4524_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -517,7 +517,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var7 = 'replaceStackEntry';
                 var5.key = var7;
-                var6 = function(arg0, arg1) { // Original name: replaceStackEntry, environment: var6
+                var6 = function arg0, arg1() {
                     _fun4525: for (var _fun4525_ip = 0;;) switch (_fun4525_ip) {
                         case 0:
                             var2 = _closure1_slot9;
@@ -603,7 +603,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var0._currentValues;
                             var5 = var0._propsStack;
                             var3 = var0._defaultProps;
-                            var2 = function(arg0, arg1) { // Original name: mergePropsStack, environment: var0
+                            var2 = function arg0, arg1() {
                                 var3 = arg0;
                                 var2 = var3.reduce;
                                 var0 = global;

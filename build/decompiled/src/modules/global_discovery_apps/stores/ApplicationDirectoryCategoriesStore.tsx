@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun107475: for (var _fun107475_ip = 0;;) switch (_fun107475_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ApplicationDirectoryCategoriesStore, environment: var5
+        var3 = function() {
             _fun107479: for (var _fun107479_ip = 0;;) switch (_fun107479_ip) {
                 case 0:
                     var3 = this;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getLastFetchTimeMs';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCategory';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var2 = _closure1_slot5;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var3 = function(arg0) { // Original name: handleFetchAppDirectoryCategoriesSuccess, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.categories;
         _closure1_slot5 = var0;

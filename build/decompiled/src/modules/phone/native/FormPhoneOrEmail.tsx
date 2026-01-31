@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CountryCodeSelector, environment: var1
+    var0 = function arg0() {
         _fun60917: for (var _fun60917_ip = 0;;) switch (_fun60917_ip) {
             case 0:
                 var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var3;
                 var22 = var2;
                 var21 = copyDataProperties(var24, var23, var22);
-                var18 = function(arg0) { // Original name: handleChangeText, environment: var19
+                var18 = function arg0() {
                     _fun60919: for (var _fun60919_ip = 0;;) switch (_fun60919_ip) {
                         case 0:
                             var3 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var7;
                 var23 = var21;
                 var21 = copyDataProperties(var24, var23);
-                var21 = function() { // Original name: renderLeadingComponent, environment: var19
+                var21 = function() {
                     var3 = _closure1_slot5;
                     var2 = _closure1_slot8;
                     var1 = {};

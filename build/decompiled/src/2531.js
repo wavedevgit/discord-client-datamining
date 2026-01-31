@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var1 = exports;
     var6 = dependencyMap;
-    var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var2
+    var4 = function arg0() {
         _fun21772: for (var _fun21772_ip = 0;;) switch (_fun21772_ip) {
             case 0:
                 var2 = arg0;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: thisWeek, environment: var2
+    var0 = function arg0() {
         _fun21773: for (var _fun21773_ip = 0;;) switch (_fun21773_ip) {
             case 0:
                 var1 = arg0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'nextWeek': null,
         'other': 'P'
     };
-    var4 = function(arg0, arg1, arg2) { // Original name: lastWeekFormatToken, environment: var2
+    var4 = function arg0, arg1, arg2() {
         _fun21774: for (var _fun21774_ip = 0;;) switch (_fun21774_ip) {
             case 0:
                 var0 = _closure1_slot0;
@@ -171,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var3.lastWeek = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: nextWeekFormatToken, environment: var2
+    var4 = function arg0, arg1, arg2() {
         _fun21775: for (var _fun21775_ip = 0;;) switch (_fun21775_ip) {
             case 0:
                 var0 = _closure1_slot0;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.nextWeek = var4;
     var _closure1_slot3 = var3;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun21776: for (var _fun21776_ip = 0;;) switch (_fun21776_ip) {
             case 0:
                 var1 = _closure1_slot3;

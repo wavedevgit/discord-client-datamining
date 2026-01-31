@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var7;
-    var4 = function() { // Original name: activityInstanceConnectedParticipants, environment: var5
+    var4 = function() {
         _fun97944: for (var _fun97944_ip = 0;;) switch (_fun97944_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var8] = var1;
     var1 = {};
     var1.scope = var3;
-    var5 = function() { // Original name: handler, environment: var5
+    var5 = function() {
         var0 = function(arg0) { // Environment: var0
             _fun97947: for (var _fun97947_ip = 0;;) switch (_fun97947_ip) {
                 case 0:

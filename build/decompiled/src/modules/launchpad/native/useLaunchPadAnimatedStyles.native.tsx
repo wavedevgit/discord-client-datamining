@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/useLaunchPadAnimatedStyles.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useLaunchpadAnimatedStyles, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var8 = var1.launchPadSharedState;
         var _closure2_slot0 = var8;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var12[var9];
         var5 = var10.bind(var11)(var2);
         var4 = var5.useAnimatedStyle;
-        var2 = function() { // Original name: _, environment: var0
+        var2 = function() {
             _fun109922: for (var _fun109922_ip = 0;;) switch (_fun109922_ip) {
                 case 0:
                     var0 = {};
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = [0, 1];
                     var16 = var8.bind(var12)(var7, var4, var6);
                     var15 = _closure1_slot3;
-                    var6 = function(arg0) { // Original name: o, environment: var4
+                    var6 = function arg0() {
                         _fun109923: for (var _fun109923_ip = 0;;) switch (_fun109923_ip) {
                             case 0:
                                 var0 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var12[var9];
         var5 = var10.bind(var11)(var4);
         var4 = var5.useAnimatedStyle;
-        var0 = function() { // Original name: P, environment: var0
+        var0 = function() {
             var0 = {};
             var6 = _closure1_slot0;
             var7 = _closure1_slot2;

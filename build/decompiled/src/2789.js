@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun22784: for (var _fun22784_ip = 0;;) switch (_fun22784_ip) {
         case 0:
             var1 = exports;
-            var0 = function(arg0) { // Original name: _typeof, environment: var3
+            var0 = function arg0() {
                 _fun22785: for (var _fun22785_ip = 0;;) switch (_fun22785_ip) {
                     case 0:
                         var1 = global;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun22785
                         }
                     case 43:
-                        var2 = function(arg0) { // Original name: _typeof, environment: var0
+                        var2 = function arg0() {
                             _fun22787: for (var _fun22787_ip = 0;;) switch (_fun22787_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun22785_ip = 55;
                         continue _fun22785;
                     case 50:
-                        var2 = function(arg0) { // Original name: _typeof, environment: var0
+                        var2 = function arg0() {
                             var0 = arg0;
                             var0 = typeof var0;
                             return var0;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.value = var0;
             var0 = '__esModule';
             var0 = var4.bind(var5)(var1, var0, var2);
-            var0 = function(arg0) { // Original name: formatISODuration, environment: var3
+            var0 = function arg0() {
                 _fun22788: for (var _fun22788_ip = 0;;) switch (_fun22788_ip) {
                     case 0:
                         var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SharedUser, environment: var1
+    var0 = function arg0() {
         _fun92167: for (var _fun92167_ip = 0;;) switch (_fun92167_ip) {
             case 0:
                 var0 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/referral_program/native/ReferralProgramShareConfirmationActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ReferralProgramShareConfirmationActionSheet, environment: var1
+    var1 = function arg0() {
         _fun92168: for (var _fun92168_ip = 0;;) switch (_fun92168_ip) {
             case 0:
                 var0 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var5.bind(var3)(var15);
                 var19 = var15.ActionSheetCloseButton;
                 var15 = {};
-                var21 = function() { // Original name: onPress, environment: var11
+                var21 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 18;

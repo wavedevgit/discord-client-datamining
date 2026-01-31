@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/analytics_sessions/SkippedClientHeartbeatExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: shouldLogClientHeartbeatSkipped, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = var2.getCurrentConfig;
         var0 = {};

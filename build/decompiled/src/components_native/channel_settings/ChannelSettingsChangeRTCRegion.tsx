@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun109321: for (var _fun109321_ip = 0;;) switch (_fun109321_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ChannelSettingsChangeRTCRegion, environment: var5
+        var3 = function arg0() {
             _fun109325: for (var _fun109325_ip = 0;;) switch (_fun109325_ip) {
                 case 0:
                     var4 = this;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleSetRegion';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun109329: for (var _fun109329_ip = 0;;) switch (_fun109329_ip) {
                 case 0:
                     var6 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderRegion';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var4 = _closure1_slot11;
             var2 = _closure1_slot0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderRegions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var6 = this;
             var _closure3_slot0 = var6;
             var2 = _closure1_slot3;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var6.state;
             var6 = var6.selectedRegionId;
             var0.defaultValue = var6;
-            var5 = function(arg0) { // Original name: onChange, environment: var5
+            var5 = function arg0() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleSetRegion;
                 var0 = arg0;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var5 = this;
             var2 = _closure1_slot12;
             var1 = var5.context;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/channel_settings/ChannelSettingsChangeRTCRegion.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedChannelSettingsChangeRTCRegion, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.channelId;
         var _closure2_slot0 = var0;

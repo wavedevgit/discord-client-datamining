@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: closeActionSheet, environment: var1
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 11;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: VoicePanelAudioPhoneOutputSection, environment: var1
+    var0 = function() {
         _fun66421: for (var _fun66421_ip = 0;;) switch (_fun66421_ip) {
             case 0:
                 var0 = _closure1_slot13;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var9 = var9.deviceId;
                 var5.defaultValue = var9;
-                var9 = function(arg0) { // Original name: onChange, environment: var8
+                var9 = function arg0() {
                     _fun66424: for (var _fun66424_ip = 0;;) switch (_fun66424_ip) {
                         case 0:
                             var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: VoicePanelAudioConsoleSection, environment: var1
+    var0 = function arg0() {
         _fun66427: for (var _fun66427_ip = 0;;) switch (_fun66427_ip) {
             case 0:
                 var0 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelAudioOutputActionSheet, environment: var1
+    var1 = function arg0() {
         _fun66435: for (var _fun66435_ip = 0;;) switch (_fun66435_ip) {
             case 0:
                 var1 = arg0;

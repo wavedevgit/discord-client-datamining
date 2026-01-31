@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/VoicePanelUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isVoicePanelEnabled, environment: var1
+    var3 = function arg0() {
         _fun62600: for (var _fun62600_ip = 0;;) switch (_fun62600_ip) {
             case 0:
                 var3 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isVoicePanelEnabled = var3;
-    var3 = function() { // Original name: useIsVoicePanelShowing, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsVoicePanelShowing = var3;
-    var3 = function() { // Original name: useIsVoicePanelFullscreen, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsVoicePanelFullscreen = var3;
-    var3 = function(arg0) { // Original name: useIsVoicePanelOpen, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsVoicePanelOpen = var3;
-    var3 = function() { // Original name: useIsAnyVoicePanelOpen, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsAnyVoicePanelOpen = var3;
-    var1 = function(arg0) { // Original name: useIsVoicePanelMounted, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;

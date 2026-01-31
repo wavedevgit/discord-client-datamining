@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = arg1;
         var1 = function() { // Environment: var1
             var0 = {};
-            var2 = function(arg0) { // Original name: zoomTo, environment: var1
+            var2 = function arg0() {
                 _fun64516: for (var _fun64516_ip = 0;;) switch (_fun64516_ip) {
                     case 0:
                         var1 = arg0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.zoomTo = var2;
-            var1 = function() { // Original name: unzoom, environment: var1
+            var1 = function() {
                 _fun64517: for (var _fun64517_ip = 0;;) switch (_fun64517_ip) {
                     case 0:
                         var1 = arguments[0];

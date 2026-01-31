@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun39397: for (var _fun39397_ip = 0;;) switch (_fun39397_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'SEND_ANNOUNCEMENT';
     var5[var4] = var3;
     var _closure1_slot18 = var5;
-    var4 = function(arg0) { // Original name: isMessageDataSend, environment: var1
+    var4 = function arg0() {
         _fun39400: for (var _fun39400_ip = 0;;) switch (_fun39400_ip) {
             case 0:
                 var2 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var4;
-    var3 = function(arg0) { // Original name: isMessageDataEdit, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot18;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var9[var6];
     var7 = var7.bind(var0)(var6);
     var6 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: MessageQueue, environment: var5
+        var3 = function() {
             _fun39403: for (var _fun39403_ip = 0;;) switch (_fun39403_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = true;
                                 var6 = var6.signal;
                                 var3.signal = var6;
-                                var5 = function() { // Original name: onRequestCreated, environment: var5
+                                var5 = function() {
                                     var0 = _closure3_slot0;
                                     var3 = var0.requests;
                                     var2 = var3.set;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isFull';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = this;
             var1 = var0.queue;
             var1 = var1.length;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'drain';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun39407: for (var _fun39407_ip = 0;;) switch (_fun39407_ip) {
                 case 0:
                     var0 = arg0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'cancelRequest';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun39408: for (var _fun39408_ip = 0;;) switch (_fun39408_ip) {
                 case 0:
                     var2 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'cancelPendingSendRequests';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun39409: for (var _fun39409_ip = 0;;) switch (_fun39409_ip) {
                 case 0:
                     var4 = arg0;
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'startQueueMetricTimers';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot21;
             var1 = var2.map;
             var0 = function(arg0) { // Environment: var0
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'cancelQueueMetricTimers';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun39413: for (var _fun39413_ip = 0;;) switch (_fun39413_ip) {
                 case 0:
                     var2 = arg0;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'createResponseHandler';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var1 = this;
             var _closure3_slot0 = var1;
             var1 = arg0;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleSend';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun39416: for (var _fun39416_ip = 0;;) switch (_fun39416_ip) {
                 case 0:
                     var4 = arg0;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4[var9] = var11;
                     var9 = 'rejectWithError';
                     var4[var9] = var10;
-                    var9 = function() { // Original name: onRequestCreated, environment: var8
+                    var9 = function() {
                         _fun39417: for (var _fun39417_ip = 0;;) switch (_fun39417_ip) {
                             case 0:
                                 var1 = _closure3_slot1;
@@ -911,7 +911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleSendAnnouncement';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun39418: for (var _fun39418_ip = 0;;) switch (_fun39418_ip) {
                 case 0:
                     var4 = arg0;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4[var9] = var11;
                     var9 = 'rejectWithError';
                     var4[var9] = var10;
-                    var9 = function() { // Original name: onRequestCreated, environment: var8
+                    var9 = function() {
                         _fun39419: for (var _fun39419_ip = 0;;) switch (_fun39419_ip) {
                             case 0:
                                 var1 = _closure3_slot1;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleCommand';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun39420: for (var _fun39420_ip = 0;;) switch (_fun39420_ip) {
                 case 0:
                     var0 = arg0;
@@ -1188,7 +1188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.signal = var5;
                     var5 = true;
                     var2.rejectWithError = var5;
-                    var1 = function(arg0) { // Original name: onRequestCreated, environment: var1
+                    var1 = function arg0() {
                         var3 = arg0;
                         var1 = _closure3_slot0;
                         var4 = var1.requests;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun73853: for (var _fun73853_ip = 0;;) switch (_fun73853_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun73855: for (var _fun73855_ip = 0;;) switch (_fun73855_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: _computeCategories, environment: var1
+    var0 = function arg0() {
         _fun73856: for (var _fun73856_ip = 0;;) switch (_fun73856_ip) {
             case 0:
                 var0 = arg0;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: _computeSearchResults, environment: var1
+    var0 = function arg0() {
         _fun73857: for (var _fun73857_ip = 0;;) switch (_fun73857_ip) {
             case 0:
                 var0 = arg0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: pushCategory, environment: var1
+    var0 = function arg0() {
         _fun73858: for (var _fun73858_ip = 0;;) switch (_fun73858_ip) {
             case 0:
                 var0 = arg0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: pushNativeCategory, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.emojiSections;
         var1 = var2.push;
@@ -851,7 +851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/useComputeEmojiPickerFunctions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useComputeEmojiPickerFunctions, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var2 = var3.useState;
         var1 = function() { // Environment: var1

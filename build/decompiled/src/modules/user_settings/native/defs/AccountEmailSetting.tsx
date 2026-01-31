@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 5;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.ACCOUNT;
     var1.parent = var9;
-    var9 = function() { // Original name: useAccountEmailSettingTrailing, environment: var8
+    var9 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 2;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useTrailing = var9;
-    var8 = function() { // Original name: onAccountEmailSettingPress, environment: var8
+    var8 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

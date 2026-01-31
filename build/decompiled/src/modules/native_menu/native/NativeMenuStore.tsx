@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun68667: for (var _fun68667_ip = 0;;) switch (_fun68667_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: NativeMenuStore, environment: var0
+        var3 = function arg0() {
             _fun68671: for (var _fun68671_ip = 0;;) switch (_fun68671_ip) {
                 case 0:
                     var4 = this;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'initialize';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleShowNativeMenu, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.menu;
         _closure1_slot5 = var2;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SHOW_NATIVE_MENU = var7;
-    var3 = function(arg0) { // Original name: handleHideNativeMenu, environment: var3
+    var3 = function arg0() {
         _fun68677: for (var _fun68677_ip = 0;;) switch (_fun68677_ip) {
             case 0:
                 var0 = arg0;

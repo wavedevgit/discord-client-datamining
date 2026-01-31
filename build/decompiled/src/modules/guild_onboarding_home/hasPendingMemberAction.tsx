@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/hasPendingMemberAction.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: hasPendingMemberAction, environment: var1
+    var1 = function arg0, arg1() {
         _fun39560: for (var _fun39560_ip = 0;;) switch (_fun39560_ip) {
             case 0:
                 var2 = _closure1_slot5;

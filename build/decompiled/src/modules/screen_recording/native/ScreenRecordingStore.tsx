@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'currentSurveyId': null,
             'currentSurveyConfig': null
         };
-        var2 = function() { // Original name: startRecording, environment: var1
+        var2 = function() {
             _fun100030: for (var _fun100030_ip = 0;;) switch (_fun100030_ip) {
                 case 0:
                     var5 = arguments[0];
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.startRecording = var2;
-        var2 = function() { // Original name: stopRecording, environment: var1
+        var2 = function() {
             var2 = _closure2_slot0;
             var1 = undefined;
             var0 = {
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.stopRecording = var2;
-        var2 = function(arg0) { // Original name: setIsUploading, environment: var1
+        var2 = function arg0() {
             var2 = _closure2_slot0;
             var1 = {};
             var0 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setIsUploading = var2;
-        var2 = function() { // Original name: nextStep, environment: var1
+        var2 = function() {
             _fun100033: for (var _fun100033_ip = 0;;) switch (_fun100033_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.nextStep = var2;
-        var2 = function() { // Original name: resetActionSheet, environment: var1
+        var2 = function() {
             var2 = _closure2_slot0;
             var1 = {
                 'currentStep': 0,
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.resetActionSheet = var2;
-        var1 = function() { // Original name: completeActionSheet, environment: var1
+        var1 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ContactButton, environment: var1
+    var0 = function arg0() {
         _fun91993: for (var _fun91993_ip = 0;;) switch (_fun91993_ip) {
             case 0:
                 var3 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: FlatFriendButton, environment: var1
+    var0 = function arg0() {
         _fun91994: for (var _fun91994_ip = 0;;) switch (_fun91994_ip) {
             case 0:
                 var4 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: FriendRequestButton, environment: var1
+    var0 = function arg0() {
         _fun91995: for (var _fun91995_ip = 0;;) switch (_fun91995_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.icon = var10;
                 var1.label = var9;
                 var1.accessibilityHint = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     _fun91997: for (var _fun91997_ip = 0;;) switch (_fun91997_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var5 = _closure2_slot4;
                             var1.userDisplayName = var5;
-                            var5 = function() { // Original name: onConfirm, environment: var5
+                            var5 = function() {
                                 var3 = _closure2_slot1;
                                 var2 = {};
                                 var0 = 'CANCEL_FRIEND_REQUEST';
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileContactButtons.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileContactButtons, environment: var1
+    var1 = function arg0() {
         _fun91999: for (var _fun91999_ip = 0;;) switch (_fun91999_ip) {
             case 0:
                 var0 = arg0;
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.useGameFriendsForUser;
                 var1 = var34.id;
                 var1 = var2.bind(var5)(var1);
-                var2 = function() { // Original name: closeUserProfile, environment: var17
+                var2 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 22;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot2 = var2;
-                var24 = function() { // Original name: handleMessage, environment: var17
+                var24 = function() {
                     _fun92002: for (var _fun92002_ip = 0;;) switch (_fun92002_ip) {
                         case 0:
                             var2 = _closure2_slot1;

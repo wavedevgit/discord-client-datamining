@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var13 = function(arg0, arg1) { // Original name: isOriginalContentTypeDifferent, environment: var3
+    var13 = function arg0, arg1() {
         _fun16783: for (var _fun16783_ip = 0;;) switch (_fun16783_ip) {
             case 0:
                 var2 = arg0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var13;
-    var12 = function(arg0) { // Original name: isDiscordHostname, environment: var3
+    var12 = function arg0() {
         _fun16784: for (var _fun16784_ip = 0;;) switch (_fun16784_ip) {
             case 0:
                 var6 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var12;
-    var11 = function(arg0) { // Original name: isDiscordProtocol, environment: var3
+    var11 = function arg0() {
         _fun16785: for (var _fun16785_ip = 0;;) switch (_fun16785_ip) {
             case 0:
                 var2 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var11;
-    var8 = function(arg0) { // Original name: isDiscordDirectAssetUrl, environment: var3
+    var8 = function arg0() {
         _fun16786: for (var _fun16786_ip = 0;;) switch (_fun16786_ip) {
             case 0:
                 var3 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var8;
-    var7 = function(arg0, arg1, arg2) { // Original name: isDiscordProxiedAssetUrl, environment: var3
+    var7 = function arg0, arg1, arg2() {
         _fun16787: for (var _fun16787_ip = 0;;) switch (_fun16787_ip) {
             case 0:
                 var4 = arg0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var7;
-    var6 = function(arg0) { // Original name: isAllowedGifProviderUrl, environment: var3
+    var6 = function arg0() {
         _fun16788: for (var _fun16788_ip = 0;;) switch (_fun16788_ip) {
             case 0:
                 var4 = arg0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var6;
-    var10 = function(arg0) { // Original name: isDiscordUrl, environment: var3
+    var10 = function arg0() {
         _fun16789: for (var _fun16789_ip = 0;;) switch (_fun16789_ip) {
             case 0:
                 var6 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var10;
-    var9 = function(arg0) { // Original name: isDiscordUri, environment: var3
+    var9 = function arg0() {
         _fun16790: for (var _fun16790_ip = 0;;) switch (_fun16790_ip) {
             case 0:
                 var5 = arg0;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var1;
     var1 = {};
     var1.URL_REGEX = var14;
-    var14 = function(arg0, arg1) { // Original name: makeUrl, environment: var3
+    var14 = function arg0, arg1() {
         _fun16791: for (var _fun16791_ip = 0;;) switch (_fun16791_ip) {
             case 0:
                 var1 = arg1;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.makeUrl = var14;
     var1.isOriginalContentTypeDifferent = var13;
     var1.isDiscordHostname = var12;
-    var12 = function(arg0, arg1) { // Original name: isDiscordLocalhost, environment: var3
+    var12 = function arg0, arg1() {
         _fun16792: for (var _fun16792_ip = 0;;) switch (_fun16792_ip) {
             case 0:
                 var2 = arg0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.isDiscordProtocol = var11;
     var1.isDiscordUrl = var10;
     var1.isDiscordUri = var9;
-    var9 = function(arg0) { // Original name: isDiscordCdnUrl, environment: var3
+    var9 = function arg0() {
         _fun16793: for (var _fun16793_ip = 0;;) switch (_fun16793_ip) {
             case 0:
                 var3 = arg0;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.isDiscordDirectAssetUrl = var8;
     var1.isDiscordProxiedAssetUrl = var7;
     var1.isAllowedGifProviderUrl = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: isDiscordAssetUrl, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun16794: for (var _fun16794_ip = 0;;) switch (_fun16794_ip) {
             case 0:
                 var4 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isDiscordAssetUrl = var6;
-    var6 = function(arg0) { // Original name: isDiscordUrlOrUri, environment: var3
+    var6 = function arg0() {
         _fun16795: for (var _fun16795_ip = 0;;) switch (_fun16795_ip) {
             case 0:
                 var3 = arg0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isDiscordUrlOrUri = var6;
-    var6 = function(arg0) { // Original name: isAppRoute, environment: var3
+    var6 = function arg0() {
         _fun16796: for (var _fun16796_ip = 0;;) switch (_fun16796_ip) {
             case 0:
                 var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.isAppRoute = var6;
-    var6 = function(arg0) { // Original name: format, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot2;
         var1 = _closure1_slot3;
         var0 = 2;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.format = var6;
-    var6 = function(arg0, arg1) { // Original name: formatPathWithQuery, environment: var3
+    var6 = function arg0, arg1() {
         var1 = _closure1_slot2;
         var6 = _closure1_slot3;
         var0 = 2;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.formatPathWithQuery = var6;
-    var6 = function(arg0) { // Original name: formatSearch, environment: var3
+    var6 = function arg0() {
         var1 = _closure1_slot2;
         var6 = _closure1_slot3;
         var0 = 2;
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.formatSearch = var6;
-    var6 = function(arg0) { // Original name: safeParseWithQuery, environment: var3
+    var6 = function arg0() {
         _fun16800: for (var _fun16800_ip = 0;;) switch (_fun16800_ip) {
             case 0:
                 var0 = arg0;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.safeParseWithQuery = var6;
-    var6 = function(arg0, arg1) { // Original name: toURLSafe, environment: var3
+    var6 = function arg0, arg1() {
         _fun16801: for (var _fun16801_ip = 0;;) switch (_fun16801_ip) {
             case 0:
                 var1 = arg0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.toURLSafe = var6;
-    var3 = function(arg0) { // Original name: safeDecodeURIComponent, environment: var3
+    var3 = function arg0() {
         _fun16802: for (var _fun16802_ip = 0;;) switch (_fun16802_ip) {
             case 0:
                 var0 = arg0;

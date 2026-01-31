@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forwarding/native/ForwardModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForwardModal, environment: var1
+    var1 = function arg0() {
         _fun70877: for (var _fun70877_ip = 0;;) switch (_fun70877_ip) {
             case 0:
                 var0 = arg0;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = var7[var1];
                                         var2 = var2.bind(var0)(var1);
                                         var1 = {};
-                                        var7 = function() { // Original name: onConfirm, environment: var6
+                                        var7 = function() {
                                             var2 = _closure6_slot0;
                                             var1 = undefined;
                                             var0 = true;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             return var0;
                                         };
                                         var1.onConfirm = var7;
-                                        var6 = function() { // Original name: onBack, environment: var6
+                                        var6 = function() {
                                             var2 = _closure6_slot0;
                                             var1 = undefined;
                                             var0 = false;
@@ -1125,7 +1125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var24["+SkRRj"];
                 var24 = var33.bind(var35)(var24);
                 var6.title = var24;
-                var24 = function(arg0) { // Original name: headerTitle, environment: var8
+                var24 = function arg0() {
                     _fun70899: for (var _fun70899_ip = 0;;) switch (_fun70899_ip) {
                         case 0:
                             var0 = arg0;
@@ -1181,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var33.getHeaderCloseButton;
                 var24 = var24.bind(var33)(var34);
                 var6.headerLeft = var24;
-                var8 = function(arg0) { // Original name: headerRight, environment: var8
+                var8 = function arg0() {
                     _fun70900: for (var _fun70900_ip = 0;;) switch (_fun70900_ip) {
                         case 0:
                             var1 = _closure2_slot10;

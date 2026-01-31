@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ModalType = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useLogPowerupModalOpened, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var5 = arg0;
         var4 = arg1;
         var6 = arg2;

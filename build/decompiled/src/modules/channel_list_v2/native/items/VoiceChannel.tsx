@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _handleVoiceChannelPress, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -437,9 +437,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var23 = function() { // Original name: onPress, environment: var22
+                var23 = function() {
                     var2 = _closure2_slot0;
-                    var1 = function() { // Original name: handleVoiceChannelPress, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure1_slot16;
                         var2 = var3.apply;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onPress = var23;
-                var22 = function() { // Original name: onLongPress, environment: var22
+                var22 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;

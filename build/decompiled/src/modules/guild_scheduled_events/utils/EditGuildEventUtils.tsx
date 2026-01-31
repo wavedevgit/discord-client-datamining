@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var5 = function(arg0) { // Original name: recurrenceRuleToServer, environment: var1
+    var5 = function arg0() {
         _fun65301: for (var _fun65301_ip = 0;;) switch (_fun65301_ip) {
             case 0:
                 var2 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var5;
-    var4 = function(arg0) { // Original name: recurrenceRuleFromServer, environment: var1
+    var4 = function arg0() {
         _fun65302: for (var _fun65302_ip = 0;;) switch (_fun65302_ip) {
             case 0:
                 var2 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var0 = function(arg0) { // Original name: eventExceptionsToServer, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0) { // Original name: isExistingGuildEvent, environment: var1
+    var3 = function arg0() {
         _fun65305: for (var _fun65305_ip = 0;;) switch (_fun65305_ip) {
             case 0:
                 var2 = arg0;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'modules/guild_scheduled_events/utils/EditGuildEventUtils.tsx';
     var7 = var8.bind(var9)(var7);
     var2.EditGuildEventScreens = var6;
-    var6 = function(arg0) { // Original name: isEditingEvent, environment: var1
+    var6 = function arg0() {
         _fun65306: for (var _fun65306_ip = 0;;) switch (_fun65306_ip) {
             case 0:
                 var3 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.recurrenceRuleToServer = var5;
     var2.recurrenceRuleFromServer = var4;
     var2.isExistingGuildEvent = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: convertToFakeGuildEvent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun65307: for (var _fun65307_ip = 0;;) switch (_fun65307_ip) {
             case 0:
                 var0 = arg0;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.convertToFakeGuildEvent = var3;
-    var1 = function(arg0, arg1) { // Original name: getInitialGuildEventData, environment: var1
+    var1 = function arg0, arg1() {
         _fun65308: for (var _fun65308_ip = 0;;) switch (_fun65308_ip) {
             case 0:
                 var4 = arg0;

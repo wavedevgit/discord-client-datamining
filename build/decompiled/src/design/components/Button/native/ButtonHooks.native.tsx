@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var11;
-    var7 = function(arg0) { // Original name: useProfileThemedButtonStyles, environment: var1
+    var7 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var7;
-    var4 = function(arg0) { // Original name: useButtonTextColorStyles, environment: var1
+    var4 = function arg0() {
         _fun37407: for (var _fun37407_ip = 0;;) switch (_fun37407_ip) {
             case 0:
                 var1 = arg0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: useButtonScaleStyles, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var5 = arg0;
         var11 = arg1;
         var10 = arg2;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = undefined;
         var2 = var7.bind(var6)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: n, environment: var0
+        var0 = function() {
             _fun37409: for (var _fun37409_ip = 0;;) switch (_fun37409_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.BRAND_500;
     var6['experimental_premium-secondary'] = var9;
     var _closure1_slot7 = var6;
-    var6 = function(arg0) { // Original name: useForegroundColor, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot7;
         var1 = arg0;
         var2 = var2[var1];
@@ -754,7 +754,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useForegroundColor = var6;
     var2.useButtonColorStyles = var5;
     var2.useButtonTextColorStyles = var4;
-    var4 = function(arg0) { // Original name: useIconTintStyles, environment: var1
+    var4 = function arg0() {
         var0 = {};
         var3 = _closure1_slot13;
         var2 = undefined;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIconTintStyles = var4;
-    var4 = function(arg0) { // Original name: useGradientPillStyles, environment: var1
+    var4 = function arg0() {
         var0 = {};
         var3 = _closure1_slot9;
         var2 = undefined;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGradientPillStyles = var4;
-    var4 = function(arg0, arg1) { // Original name: useButtonPillStyles, environment: var1
+    var4 = function arg0, arg1() {
         var2 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var5;
@@ -793,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var9[var6];
         var2 = var7.bind(var8)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: s, environment: var0
+        var0 = function() {
             _fun37417: for (var _fun37417_ip = 0;;) switch (_fun37417_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useButtonPillStyles = var4;
     var2.useButtonScaleStyles = var3;
-    var3 = function(arg0) { // Original name: useButtonPressAnimationProps, environment: var1
+    var3 = function arg0() {
         _fun37418: for (var _fun37418_ip = 0;;) switch (_fun37418_ip) {
             case 0:
                 var0 = arg0;

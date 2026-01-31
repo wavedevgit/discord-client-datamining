@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = function(arg0, arg1) { // Original name: calculateTotalGaps, environment: var1
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: calculateCardWidth, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var1 = arg0;
         var3 = _closure1_slot3;
         var2 = undefined;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/hooks/useCardLayout.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useCardLayout, environment: var1
+    var1 = function() {
         _fun88130: for (var _fun88130_ip = 0;;) switch (_fun88130_ip) {
             case 0:
                 var2 = _closure1_slot1;

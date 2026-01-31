@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var2;
     var2 = '__esModule';
     var2 = var5.bind(var6)(var1, var2, var4);
-    var2 = function() { // Original name: print, environment: var0
+    var2 = function() {
         var0 = undefined;
         return var0;
     };
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.freeze;
     var3 = var3.bind(var4)(var2);
     var1.print = var2;
-    var0 = function(arg0) { // Original name: enableLogging, environment: var0
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.console;
         var1 = var2.warn;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var7;
-    var4 = function(arg0) { // Original name: SectionTitle, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var1 = _closure1_slot9;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var4;
-    var3 = function() { // Original name: Separator, environment: var1
+    var3 = function() {
         var1 = _closure1_slot9;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.SectionTitle = var4;
     var2.Separator = var3;
-    var1 = function(arg0) { // Original name: Content, environment: var1
+    var1 = function arg0() {
         _fun84260: for (var _fun84260_ip = 0;;) switch (_fun84260_ip) {
             case 0:
                 var0 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10.bind(var3)(var0);
                 var1 = var0.GappedList;
                 var0 = {};
-                var4 = function() { // Original name: renderGap, environment: var13
+                var4 = function() {
                     var3 = _closure1_slot6;
                     var2 = _closure1_slot11;
                     var1 = undefined;

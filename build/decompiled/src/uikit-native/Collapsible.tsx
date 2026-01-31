@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/Collapsible.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Collapsible, environment: var1
+    var1 = function arg0() {
         _fun58246: for (var _fun58246_ip = 0;;) switch (_fun58246_ip) {
             case 0:
                 var2 = arg0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9[var4];
                 var6 = var21.bind(var3)(var1);
                 var2 = var6.useAnimatedStyle;
-                var1 = function() { // Original name: f, environment: var0
+                var1 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;

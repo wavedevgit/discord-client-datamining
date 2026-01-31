@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: attachNativeEventImpl, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun5616: for (var _fun5616_ip = 0;;) switch (_fun5616_ip) {
             case 0:
                 var5 = arg2;
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot1 = var0;
                 var3 = new Array(0);
                 var _closure2_slot2 = var3;
-                var6 = function(arg0, arg1) { // Original name: traverse, environment: var1
+                var6 = function arg0, arg1() {
                     _fun5617: for (var _fun5617_ip = 0;;) switch (_fun5617_ip) {
                         case 0:
                             var5 = arg0;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var0);
             case 171:
                 var0 = {};
-                var1 = function() { // Original name: detach, environment: var1
+                var1 = function() {
                     _fun5619: for (var _fun5619_ip = 0;;) switch (_fun5619_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var4;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: AnimatedEvent, environment: var4
+        var2 = function arg0, arg1() {
             _fun5622: for (var _fun5622_ip = 0;;) switch (_fun5622_ip) {
                 case 0:
                     var1 = arg1;
@@ -315,7 +315,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = '__addListener';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: __addListener, environment: var4
+        var1 = function arg0() {
             var0 = this;
             var2 = var0._listeners;
             var1 = var2.push;
@@ -330,7 +330,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__removeListener';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: __removeListener, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var2 = arg0;
             var _closure3_slot0 = var2;
@@ -352,7 +352,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__attach';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: __attach, environment: var4
+        var5 = function arg0, arg1() {
             var2 = this;
             var4 = _closure1_slot1;
             var3 = _closure1_slot2;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__detach';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: __detach, environment: var4
+        var5 = function arg0, arg1() {
             _fun5629: for (var _fun5629_ip = 0;;) switch (_fun5629_ip) {
                 case 0:
                     var1 = this;
@@ -409,7 +409,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '__getHandler';
         var0.key = var5;
-        var4 = function() { // Original name: __getHandler, environment: var4
+        var4 = function() {
             _fun5630: for (var _fun5630_ip = 0;;) switch (_fun5630_ip) {
                 case 0:
                     var0 = this;
@@ -454,7 +454,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     continue _fun5631
                                 }
                             case 68:
-                                var2 = function(arg0, arg1) { // Original name: traverse, environment: var1
+                                var2 = function arg0, arg1() {
                                     _fun5632: for (var _fun5632_ip = 0;;) switch (_fun5632_ip) {
                                         case 0:
                                             var3 = arg0;

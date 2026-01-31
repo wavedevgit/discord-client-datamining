@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _fetchSocialLayerStorefront, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _fetchSocialLayerStorefrontSku, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _fetchSocialLayerStorefrontRecommendations, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -672,7 +672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _fetchSocialLayerStorefrontAnnouncement, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 5;
     var2.MAX_USERS_PER_RECOMMENDATION = var3;
-    var3 = function() { // Original name: fetchSocialLayerStorefront, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSocialLayerStorefront = var3;
-    var3 = function() { // Original name: fetchSocialLayerStorefrontSku, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -845,7 +845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSocialLayerStorefrontSku = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setSocialLayerStorefrontState, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setSocialLayerStorefrontState = var3;
-    var3 = function() { // Original name: fetchSocialLayerStorefrontRecommendations, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSocialLayerStorefrontRecommendations = var3;
-    var3 = function() { // Original name: fetchSocialLayerStorefrontAnnouncement, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSocialLayerStorefrontAnnouncement = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: fetchSocialLayerSKUPurchaseEligibility, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun92716: for (var _fun92716_ip = 0;;) switch (_fun92716_ip) {
             case 0:
                 var8 = arg1;

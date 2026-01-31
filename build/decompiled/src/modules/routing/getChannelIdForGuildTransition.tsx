@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/routing/getChannelIdForGuildTransition.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getChannelIdForGuildTransition, environment: var1
+    var1 = function arg0() {
         _fun49616: for (var _fun49616_ip = 0;;) switch (_fun49616_ip) {
             case 0:
                 var7 = arg0;

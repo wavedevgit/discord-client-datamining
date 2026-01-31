@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var13[var7](var12, var11);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot7 = var3;
-    var3 = function() { // Original name: useShouldShowHelplineLink, environment: var1
+    var3 = function() {
         _fun72309: for (var _fun72309_ip = 0;;) switch (_fun72309_ip) {
             case 0:
                 var2 = _closure1_slot1;

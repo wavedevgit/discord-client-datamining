@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: LowDiskTrim, environment: var4
+        var2 = function() {
             var4 = this;
             var _closure3_slot0 = var4;
             var5 = _closure1_slot2;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = false;
             var4.isLowDisk = var3;
             var3 = {};
-            var5 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+            var5 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.handlePostConnectionOpen;
                 var0 = var0.bind(var1)();
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'handlePostConnectionOpen';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = false;
             var1.isLowDisk = var0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleFileSystemStoreChanged';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun93260: for (var _fun93260_ip = 0;;) switch (_fun93260_ip) {
                 case 0:
                     var1 = this;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resetInMemoryState';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = undefined;
             return var0;
         };

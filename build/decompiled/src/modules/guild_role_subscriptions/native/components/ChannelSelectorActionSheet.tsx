@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun116833: for (var _fun116833_ip = 0;;) switch (_fun116833_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun116835: for (var _fun116835_ip = 0;;) switch (_fun116835_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: ChannelRow, environment: var1
+    var0 = function arg0() {
         _fun116836: for (var _fun116836_ip = 0;;) switch (_fun116836_ip) {
             case 0:
                 var1 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/ChannelSelectorActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelSelectorActionSheet, environment: var1
+    var1 = function arg0() {
         _fun116838: for (var _fun116838_ip = 0;;) switch (_fun116838_ip) {
             case 0:
                 var0 = arg0;
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var23.bind(var25)(var22);
                 var16.placeholder = var22;
                 var16.onChange = var21;
-                var21 = function() { // Original name: onFocus, environment: var7
+                var21 = function() {
                     _fun116840: for (var _fun116840_ip = 0;;) switch (_fun116840_ip) {
                         case 0:
                             var0 = _closure2_slot4;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.style = var16;
                 var16 = 'button';
                 var13.accessibilityRole = var16;
-                var16 = function() { // Original name: onPress, environment: var7
+                var16 = function() {
                     var6 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 12;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.CreateChannelMode;
                     var1 = var1.PREMIUM_CHANNEL;
                     var2.createMode = var1;
-                    var1 = function(arg0) { // Original name: onChannelCreated, environment: var1
+                    var1 = function arg0() {
                         _fun116842: for (var _fun116842_ip = 0;;) switch (_fun116842_ip) {
                             case 0:
                                 var3 = _closure1_slot1;
@@ -873,13 +873,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.bodyContainer;
                 var4.style = var9;
                 var4.data = var8;
-                var8 = function(arg0) { // Original name: keyExtractor, environment: var7
+                var8 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
                 };
                 var4.keyExtractor = var8;
-                var7 = function(arg0) { // Original name: renderItem, environment: var7
+                var7 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = _closure1_slot11;

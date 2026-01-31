@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: getStringValue, environment: var0
+    var2 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.getStringValue = var2;
-    var2 = function(arg0) { // Original name: getEncodedString, environment: var0
+    var2 = function arg0() {
         _fun38117: for (var _fun38117_ip = 0;;) switch (_fun38117_ip) {
             case 0:
                 var4 = arg0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getEncodedString = var2;
-    var0 = function(arg0) { // Original name: getCalculatedGpsValue, environment: var0
+    var0 = function arg0() {
         var4 = arg0;
         var5 = 0;
         var0 = var4[var5];

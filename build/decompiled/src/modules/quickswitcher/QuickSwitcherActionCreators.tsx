@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var10;
-    var7 = function(arg0) { // Original name: getQuickSwitcherOptions, environment: var1
+    var7 = function arg0() {
         _fun72427: for (var _fun72427_ip = 0;;) switch (_fun72427_ip) {
             case 0:
                 var7 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var7;
-    var6 = function(arg0) { // Original name: trackOpen, environment: var1
+    var6 = function arg0() {
         _fun72428: for (var _fun72428_ip = 0;;) switch (_fun72428_ip) {
             case 0:
                 var2 = _closure1_slot10;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var6;
-    var5 = function(arg0, arg1) { // Original name: trackClose, environment: var1
+    var5 = function arg0, arg1() {
         _fun72429: for (var _fun72429_ip = 0;;) switch (_fun72429_ip) {
             case 0:
                 var9 = arg1;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot15;
                 var18 = var4.bind(var0)(var6);
             case 224:
-                var10 = function(arg0) { // Original name: getResultType, environment: var4
+                var10 = function arg0() {
                     _fun72430: for (var _fun72430_ip = 0;;) switch (_fun72430_ip) {
                         case 0:
                             var2 = arg0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var5;
-    var0 = function() { // Original name: hideQuickSwitcher, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var4 = function() { // Original name: show, environment: var1
+    var4 = function() {
         _fun72432: for (var _fun72432_ip = 0;;) switch (_fun72432_ip) {
             case 0:
                 var2 = arguments[0];
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var4;
-    var3 = function() { // Original name: hide, environment: var1
+    var3 = function() {
         var3 = _closure1_slot21;
         var0 = _closure1_slot12;
         var2 = var0.QUICKSWITCHER_CLOSED;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.trackClose = var5;
     var2.show = var4;
     var2.hide = var3;
-    var3 = function() { // Original name: toggle, environment: var1
+    var3 = function() {
         _fun72434: for (var _fun72434_ip = 0;;) switch (_fun72434_ip) {
             case 0:
                 var3 = arguments[0];
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.toggle = var3;
-    var3 = function(arg0) { // Original name: search, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.search = var3;
-    var3 = function(arg0) { // Original name: selectResult, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.selectResult = var3;
-    var1 = function(arg0) { // Original name: switchToResult, environment: var1
+    var1 = function arg0() {
         _fun72437: for (var _fun72437_ip = 0;;) switch (_fun72437_ip) {
             case 0:
                 var4 = arg0;

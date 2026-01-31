@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot7 = var3;
-    var1 = function(arg0) { // Original name: ScreenStack, environment: var1
+    var1 = function arg0() {
         _fun37272: for (var _fun37272_ip = 0;;) switch (_fun37272_ip) {
             case 0:
                 var4 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.bind(var19)(var5);
                 var17 = var19.useRef;
                 var6 = {};
-                var18 = function(arg0) { // Original name: stackUseEffectCallback, environment: var2
+                var18 = function arg0() {
                     var0 = undefined;
                     return var0;
                 };

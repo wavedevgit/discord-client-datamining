@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/actions/SearchableSelectActionComponent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SearchableSelectActionComponent, environment: var1
+    var1 = function arg0() {
         _fun86807: for (var _fun86807_ip = 0;;) switch (_fun86807_ip) {
             case 0:
                 var7 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'selectedOptions';
                 var5[var6] = var7;
                 var0.model = var5;
-                var4 = function() { // Original name: onTap, environment: var4
+                var4 = function() {
                     _fun86809: for (var _fun86809_ip = 0;;) switch (_fun86809_ip) {
                         case 0:
                             var0 = _closure2_slot0;

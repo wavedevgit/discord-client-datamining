@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.width = var0;
     var3.height = var0;
     var _closure1_slot0 = var3;
-    var1 = function(arg0, arg1) { // Original name: sizesDiffer, environment: var1
+    var1 = function arg0, arg1() {
         _fun1461: for (var _fun1461_ip = 0;;) switch (_fun1461_ip) {
             case 0:
                 var3 = arg0;

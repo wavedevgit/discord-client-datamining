@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(1);
                 var6[0] = var7;
                 var2.stores = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: queryResults, environment: var3
+                var6 = function arg0, arg1, arg2() {
                     _fun74497: for (var _fun74497_ip = 0;;) switch (_fun74497_ip) {
                         case 0:
                             var7 = arg1;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2.queryResults = var6;
-                var6 = function(arg0, arg1) { // Original name: matches, environment: var3
+                var6 = function arg0, arg1() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 13;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var4] = var2;
                 var4 = var1.CHANNELS;
                 var2 = {};
-                var6 = function(arg0, arg1) { // Original name: queryResults, environment: var3
+                var6 = function arg0, arg1() {
                     _fun74502: for (var _fun74502_ip = 0;;) switch (_fun74502_ip) {
                         case 0:
                             var5 = arg0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2.queryResults = var6;
-                var6 = function(arg0, arg1) { // Original name: matches, environment: var3
+                var6 = function arg0, arg1() {
                     _fun74504: for (var _fun74504_ip = 0;;) switch (_fun74504_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var4] = var2;
                 var4 = var1.EMOJIS_AND_STICKERS;
                 var2 = {};
-                var6 = function(arg0, arg1) { // Original name: queryResults, environment: var3
+                var6 = function arg0, arg1() {
                     _fun74505: for (var _fun74505_ip = 0;;) switch (_fun74505_ip) {
                         case 0:
                             var3 = arg0;
@@ -611,7 +611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2.queryResults = var6;
-                var6 = function(arg0, arg1) { // Original name: matches, environment: var3
+                var6 = function arg0, arg1() {
                     _fun74509: for (var _fun74509_ip = 0;;) switch (_fun74509_ip) {
                         case 0:
                             var4 = arg1;
@@ -655,12 +655,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var4] = var2;
                 var4 = var1.SLASHES;
                 var2 = {};
-                var6 = function() { // Original name: queryResults, environment: var3
+                var6 = function() {
                     var0 = new Array(0);
                     return var0;
                 };
                 var2.queryResults = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: matches, environment: var3
+                var6 = function arg0, arg1, arg2() {
                     _fun74511: for (var _fun74511_ip = 0;;) switch (_fun74511_ip) {
                         case 0:
                             var3 = 0;
@@ -699,12 +699,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var4] = var2;
                 var4 = var1.SLASHES_DISCOVERY;
                 var2 = {};
-                var6 = function() { // Original name: queryResults, environment: var3
+                var6 = function() {
                     var0 = new Array(0);
                     return var0;
                 };
                 var2.queryResults = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: matches, environment: var3
+                var6 = function arg0, arg1, arg2() {
                     _fun74513: for (var _fun74513_ip = 0;;) switch (_fun74513_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot3;
                 var4[1] = var5;
                 var1.stores = var4;
-                var4 = function(arg0, arg1) { // Original name: queryResults, environment: var3
+                var4 = function arg0, arg1() {
                     _fun74514: for (var _fun74514_ip = 0;;) switch (_fun74514_ip) {
                         case 0:
                             var8 = arg0;
@@ -946,7 +946,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.queryResults = var4;
-                var3 = function() { // Original name: matches, environment: var3
+                var3 = function() {
                     var0 = false;
                     return var0;
                 };

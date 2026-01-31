@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: baseFindIndex, environment: var0
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun31632: for (var _fun31632_ip = 0;;) switch (_fun31632_ip) {
             case 0:
                 var8 = arg0;

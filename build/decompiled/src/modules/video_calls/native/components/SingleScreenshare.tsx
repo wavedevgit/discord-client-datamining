@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/SingleScreenshare.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun68612: for (var _fun68612_ip = 0;;) switch (_fun68612_ip) {
             case 0:
                 var0 = arg0;
@@ -81,14 +81,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
                 var0.participant = var7;
-                var7 = function() { // Original name: onSingleTap, environment: var4
+                var7 = function() {
                     var1 = _closure1_slot3;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
                     return var0;
                 };
                 var0.onSingleTap = var7;
-                var4 = function() { // Original name: onDoubleTap, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot2;
                     var0 = undefined;
                     var2 = var2.bind(var0)();

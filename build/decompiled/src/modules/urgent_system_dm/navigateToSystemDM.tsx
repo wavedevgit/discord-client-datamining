@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/urgent_system_dm/navigateToSystemDM.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: navigateToSystemDM, environment: var1
+    var1 = function() {
         _fun114284: for (var _fun114284_ip = 0;;) switch (_fun114284_ip) {
             case 0:
                 var3 = _closure1_slot2;

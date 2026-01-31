@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun82679: for (var _fun82679_ip = 0;;) switch (_fun82679_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var6;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: GiftCodeRow, environment: var5
+        var3 = function arg0() {
             _fun82683: for (var _fun82683_ip = 0;;) switch (_fun82683_ip) {
                 case 0:
                     var4 = this;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleRevoke';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 13;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun82686: for (var _fun82686_ip = 0;;) switch (_fun82686_ip) {
                 case 0:
                     var19 = this;
@@ -430,13 +430,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var17 = 'h';
                     var17 = var19.bind(var20)(var18, var17);
                     var12.hours = var17;
-                    var16 = function(arg0, arg1) { // Original name: revokeHook, environment: var16
+                    var16 = function arg0, arg1() {
                         var4 = _closure1_slot11;
                         var3 = _closure1_slot9;
                         var2 = {};
                         var1 = 'button';
                         var2.accessibilityRole = var1;
-                        var1 = function() { // Original name: onPress, environment: var1
+                        var1 = function() {
                             var2 = _closure3_slot0;
                             var1 = var2.handleRevoke;
                             var0 = _closure3_slot2;

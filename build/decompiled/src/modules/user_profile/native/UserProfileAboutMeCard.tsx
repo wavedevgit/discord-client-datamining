@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: Heading, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var2 = var0.themeType;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: TextWithIcon, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.icon;
         var8 = var0.children;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: Bio, environment: var1
+    var0 = function arg0() {
         _fun61076: for (var _fun61076_ip = 0;;) switch (_fun61076_ip) {
             case 0:
                 var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: MemberJoinDates, environment: var1
+    var0 = function arg0() {
         _fun61077: for (var _fun61077_ip = 0;;) switch (_fun61077_ip) {
             case 0:
                 var1 = arg0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: BotSlashCommands, environment: var1
+    var0 = function arg0() {
         _fun61081: for (var _fun61081_ip = 0;;) switch (_fun61081_ip) {
             case 0:
                 var0 = arg0;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.initiallyExpanded = var7;
                             var6 = _closure2_slot4;
                             var5.application = var6;
-                            var6 = function() { // Original name: onPressBack, environment: var0
+                            var6 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot3;
                                 var0 = 23;
@@ -884,7 +884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3[var7] = var6;
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: getStyleConfig, environment: var1
+    var3 = function arg0() {
         _fun61089: for (var _fun61089_ip = 0;;) switch (_fun61089_ip) {
             case 0:
                 var2 = arg0;
@@ -943,7 +943,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileAboutMeCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileAboutMeCard, environment: var1
+    var1 = function arg0() {
         _fun61090: for (var _fun61090_ip = 0;;) switch (_fun61090_ip) {
             case 0:
                 var0 = arg0;

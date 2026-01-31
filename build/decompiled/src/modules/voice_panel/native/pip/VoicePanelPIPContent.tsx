@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun111750: for (var _fun111750_ip = 0;;) switch (_fun111750_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun111752: for (var _fun111752_ip = 0;;) switch (_fun111752_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: VideoStream, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var8 = _closure1_slot4;
         var7 = var8.useContext;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: markContentReady, environment: var1
+    var0 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 21;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: useTransitionStyles, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun111757: for (var _fun111757_ip = 0;;) switch (_fun111757_ip) {
             case 0:
                 var1 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = function() { // Environment: var3
                     _fun111758: for (var _fun111758_ip = 0;;) switch (_fun111758_ip) {
                         case 0:
-                            var4 = function() { // Original name: handleVideoReady, environment: var0
+                            var4 = function() {
                                 var1 = global;
                                 var3 = var1.clearTimeout;
                                 var2 = _closure3_slot0;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: InnerStroke, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.style;
         var _closure2_slot0 = var8;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function(arg0) { // Original name: ActivityInVoice, environment: var1
+    var0 = function arg0() {
         _fun111765: for (var _fun111765_ip = 0;;) switch (_fun111765_ip) {
             case 0:
                 var1 = arg0;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var15[var13];
                 var8 = var14.bind(var5)(var0);
                 var4 = var8.useAnimatedReaction;
-                var1 = function() { // Original name: c, environment: var3
+                var1 = function() {
                     var1 = _closure2_slot3;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.__workletHash = var0;
                 var0 = _closure1_slot24;
                 var1.__initData = var0;
-                var0 = function(arg0, arg1) { // Original name: u, environment: var3
+                var0 = function arg0, arg1() {
                     _fun111772: for (var _fun111772_ip = 0;;) switch (_fun111772_ip) {
                         case 0:
                             var2 = arg0;
@@ -949,7 +949,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0) { // Original name: User, environment: var1
+    var0 = function arg0() {
         _fun111776: for (var _fun111776_ip = 0;;) switch (_fun111776_ip) {
             case 0:
                 var0 = arg0;
@@ -1159,7 +1159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7[var21];
                 var17 = var5.bind(var3)(var8);
                 var16 = var17.useAnimatedReaction;
-                var12 = function() { // Original name: l, environment: var1
+                var12 = function() {
                     _fun111780: for (var _fun111780_ip = 0;;) switch (_fun111780_ip) {
                         case 0:
                             var1 = _closure2_slot4;
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.__workletHash = var8;
                 var8 = _closure1_slot26;
                 var12.__initData = var8;
-                var8 = function(arg0, arg1) { // Original name: c, environment: var1
+                var8 = function arg0, arg1() {
                     _fun111781: for (var _fun111781_ip = 0;;) switch (_fun111781_ip) {
                         case 0:
                             var3 = arg0;
@@ -1229,7 +1229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7[var21];
                 var17 = var5.bind(var3)(var8);
                 var16 = var17.useAnimatedReaction;
-                var12 = function() { // Original name: S, environment: var1
+                var12 = function() {
                     var1 = _closure2_slot5;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -1242,7 +1242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.__workletHash = var8;
                 var8 = _closure1_slot28;
                 var12.__initData = var8;
-                var8 = function(arg0, arg1) { // Original name: p, environment: var1
+                var8 = function arg0, arg1() {
                     _fun111783: for (var _fun111783_ip = 0;;) switch (_fun111783_ip) {
                         case 0:
                             var3 = arg0;
@@ -1545,7 +1545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var0;
-    var0 = function(arg0) { // Original name: AnimatedVideoWrapper, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.participantId;
         var7 = var0.style;
@@ -1571,7 +1571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5[var6];
         var8 = var8.bind(var3)(var6);
         var6 = var8.useAnimatedStyle;
-        var2 = function() { // Original name: a, environment: var2
+        var2 = function() {
             _fun111788: for (var _fun111788_ip = 0;;) switch (_fun111788_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -1624,7 +1624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0) { // Original name: Stream, environment: var1
+    var0 = function arg0() {
         _fun111789: for (var _fun111789_ip = 0;;) switch (_fun111789_ip) {
             case 0:
                 var0 = arg0;
@@ -2030,13 +2030,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot41 = var0;
-    var0 = function(arg0) { // Original name: getFocusedKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.id;
         return var0;
     };
     var _closure1_slot42 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderFocusedParticipant, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun111799: for (var _fun111799_ip = 0;;) switch (_fun111799_ip) {
             case 0:
                 var4 = arg0;
@@ -2121,7 +2121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot43 = var0;
-    var0 = function(arg0, arg1) { // Original name: areParticipantsEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun111800: for (var _fun111800_ip = 0;;) switch (_fun111800_ip) {
             case 0:
                 var1 = arg0;
@@ -2441,7 +2441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot30 = var3;
     var7 = var6.memo;
-    var3 = function(arg0) { // Original name: EmptyPIP, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.transitionState;
         var _closure2_slot0 = var8;
@@ -2494,7 +2494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot31 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VoicePanelPIPContent, environment: var1
+    var1 = function() {
         var5 = _closure1_slot4;
         var4 = var5.useContext;
         var1 = _closure1_slot1;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var6;
-    var1 = function(arg0) { // Original name: openAddModeratorsActionSheet, environment: var3
+    var1 = function arg0() {
         _fun109008: for (var _fun109008_ip = 0;;) switch (_fun109008_ip) {
             case 0:
                 var7 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/native/channel_permissions/ViewModerators.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ViewModerators, environment: var3
+    var3 = function arg0() {
         _fun109009: for (var _fun109009_ip = 0;;) switch (_fun109009_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = undefined;
                 var _closure2_slot2 = var5;
                 var _closure2_slot3 = var5;
-                var0 = function(arg0) { // Original name: renderRowItem, environment: var10
+                var0 = function arg0() {
                     var0 = arg0;
                     var4 = _closure1_slot10;
                     var2 = _closure1_slot1;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.bind(var3)();
                 var3 = var4.setOptions;
                 var0 = {};
-                var7 = function() { // Original name: headerRight, environment: var10
+                var7 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var8;
                 var23 = var11;
                 var18 = var26[var3](var25, var24, var23, var22, var21);
-                var2 = function(arg0) { // Original name: handleRemovePermission, environment: var10
+                var2 = function arg0() {
                     _fun109013: for (var _fun109013_ip = 0;;) switch (_fun109013_ip) {
                         case 0:
                             var13 = arg0;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.n3bcy8;
                 var19 = var20.bind(var21)(var19);
                 var13.label = var19;
-                var19 = function() { // Original name: onPress, environment: var10
+                var19 = function() {
                     _fun109017: for (var _fun109017_ip = 0;;) switch (_fun109017_ip) {
                         case 0:
                             var2 = _closure2_slot0;

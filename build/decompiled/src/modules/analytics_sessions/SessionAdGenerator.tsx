@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: isAdSessionExpired, environment: var3
+    var1 = function arg0() {
         _fun46897: for (var _fun46897_ip = 0;;) switch (_fun46897_ip) {
             case 0:
                 var4 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/analytics_sessions/SessionAdGenerator.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: getOrRefreshAdSession, environment: var3
+    var4 = function() {
         _fun46898: for (var _fun46898_ip = 0;;) switch (_fun46898_ip) {
             case 0:
                 var0 = arguments[0];
@@ -159,14 +159,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getOrRefreshAdSession = var4;
-    var4 = function() { // Original name: clearAdSession, environment: var3
+    var4 = function() {
         var0 = null;
         _closure1_slot4 = var0;
         var0 = undefined;
         return var0;
     };
     var2.clearAdSession = var4;
-    var3 = function() { // Original name: getCurrentAdSession, environment: var3
+    var3 = function() {
         var0 = _closure1_slot4;
         return var0;
     };

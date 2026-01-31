@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/SafetyHubAccountStanding.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SafetyHubAccountStanding, environment: var1
+    var1 = function() {
         _fun88655: for (var _fun88655_ip = 0;;) switch (_fun88655_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var9 = var10 === var9;
                                 var5.isSelected = var9;
                                 var5.index = var4;
-                                var9 = function(arg0) { // Original name: onLayout, environment: var9
+                                var9 = function arg0() {
                                     _fun88659: for (var _fun88659_ip = 0;;) switch (_fun88659_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -755,7 +755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var20.intl;
                 var21 = var22.format;
                 var20 = {};
-                var24 = function(arg0, arg1) { // Original name: hook, environment: var24
+                var24 = function arg0, arg1() {
                     var4 = _closure1_slot9;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

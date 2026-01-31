@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = dependencyMap;
             var _closure1_slot0 = var7;
             var _closure1_slot1 = var8;
-            var0 = function(arg0) { // Original name: fromEntries, environment: var3
+            var0 = function arg0() {
                 var3 = new Array(0);
                 var5 = arg0;
                 var4 = 0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot13 = var0;
-            var0 = function() { // Original name: storeTokens, environment: var3
+            var0 = function() {
                 _fun8632: for (var _fun8632_ip = 0;;) switch (_fun8632_ip) {
                     case 0:
                         var1 = _closure1_slot11;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var0 = function(arg0) { // Original name: maybeDecryptToken, environment: var3
+            var0 = function arg0() {
                 _fun8633: for (var _fun8633_ip = 0;;) switch (_fun8633_ip) {
                     case 0:
                         var6 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot15 = var0;
-            var0 = function(arg0) { // Original name: maybeEncryptToken, environment: var3
+            var0 = function arg0() {
                 _fun8634: for (var _fun8634_ip = 0;;) switch (_fun8634_ip) {
                     case 0:
                         var3 = arg0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot16 = var0;
-            var5 = function(arg0) { // Original name: getToken, environment: var3
+            var5 = function arg0() {
                 _fun8635: for (var _fun8635_ip = 0;;) switch (_fun8635_ip) {
                     case 0:
                         var2 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot17 = var5;
-            var0 = function(arg0, arg1) { // Original name: setSecondaryToken, environment: var3
+            var0 = function arg0, arg1() {
                 _fun8636: for (var _fun8636_ip = 0;;) switch (_fun8636_ip) {
                     case 0:
                         var2 = arg1;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var0;
-            var4 = function(arg0) { // Original name: removeToken, environment: var3
+            var4 = function arg0() {
                 _fun8637: for (var _fun8637_ip = 0;;) switch (_fun8637_ip) {
                     case 0:
                         var5 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot19 = var4;
-            var1 = function() { // Original name: encryptAndStoreTokens, environment: var3
+            var1 = function() {
                 _fun8638: for (var _fun8638_ip = 0;;) switch (_fun8638_ip) {
                     case 0:
                         var3 = _closure1_slot5;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.fileFinishedImporting;
             var6 = '../discord_common/js/shared/lib/TokenManager.tsx';
             var6 = var7.bind(var8)(var6);
-            var6 = function() { // Original name: init, environment: var3
+            var6 = function() {
                 _fun8640: for (var _fun8640_ip = 0;;) switch (_fun8640_ip) {
                     case 0:
                         var2 = _closure1_slot12;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.init = var6;
-            var6 = function() { // Original name: getAnalyticsToken, environment: var3
+            var6 = function() {
                 var2 = _closure1_slot17;
                 var1 = undefined;
                 var0 = '__analytics__';
@@ -677,7 +677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getAnalyticsToken = var6;
             var2.getToken = var5;
-            var5 = function(arg0) { // Original name: setAnalyticsToken, environment: var3
+            var5 = function arg0() {
                 _fun8644: for (var _fun8644_ip = 0;;) switch (_fun8644_ip) {
                     case 0:
                         var3 = arg0;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.setAnalyticsToken = var5;
-            var5 = function(arg0, arg1) { // Original name: setToken, environment: var3
+            var5 = function arg0, arg1() {
                 _fun8645: for (var _fun8645_ip = 0;;) switch (_fun8645_ip) {
                     case 0:
                         var3 = arg0;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.setToken = var5;
-            var5 = function() { // Original name: hideToken, environment: var3
+            var5 = function() {
                 _fun8646: for (var _fun8646_ip = 0;;) switch (_fun8646_ip) {
                     case 0:
                         var1 = _closure1_slot11;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.hideToken = var5;
-            var5 = function() { // Original name: showToken, environment: var3
+            var5 = function() {
                 _fun8647: for (var _fun8647_ip = 0;;) switch (_fun8647_ip) {
                     case 0:
                         var1 = _closure1_slot11;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.showToken = var5;
             var2.removeToken = var4;
-            var3 = function() { // Original name: removeAnalyticsToken, environment: var3
+            var3 = function() {
                 var2 = _closure1_slot19;
                 var1 = undefined;
                 var0 = '__analytics__';

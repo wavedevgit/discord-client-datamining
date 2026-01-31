@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useHasEnhancedRoleColors, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: getHasEnhancedRoleColors, environment: var1
+    var3 = function arg0() {
         _fun44018: for (var _fun44018_ip = 0;;) switch (_fun44018_ip) {
             case 0:
                 var4 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHasEnhancedRoleColors = var3;
-    var3 = function(arg0) { // Original name: useHasEnhancedRoleColorsForRole, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasEnhancedRoleColorsForRole = var3;
-    var1 = function(arg0) { // Original name: getHasEnhancedRoleColorsForRole, environment: var1
+    var1 = function arg0() {
         _fun44021: for (var _fun44021_ip = 0;;) switch (_fun44021_ip) {
             case 0:
                 var3 = _closure1_slot2;

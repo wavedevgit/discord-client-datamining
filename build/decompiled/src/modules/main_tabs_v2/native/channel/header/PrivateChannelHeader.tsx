@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GroupDmMemberCount, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var _closure2_slot0 = var0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PrivateChannelHeader, environment: var1
+    var1 = function arg0() {
         _fun72117: for (var _fun72117_ip = 0;;) switch (_fun72117_ip) {
             case 0:
                 var1 = arg0;

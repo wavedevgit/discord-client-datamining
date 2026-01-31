@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: MessageRowContent, environment: var3
+    var1 = function arg0() {
         _fun104001: for (var _fun104001_ip = 0;;) switch (_fun104001_ip) {
             case 0:
                 var2 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var1;
-    var0 = function(arg0) { // Original name: ReplyMessageContent, environment: var3
+    var0 = function arg0() {
         _fun104005: for (var _fun104005_ip = 0;;) switch (_fun104005_ip) {
             case 0:
                 var1 = arg0;
@@ -1178,7 +1178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/icymi/native/ICYMIMessageRow.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: MessageRowWrapper, environment: var3
+    var3 = function arg0() {
         _fun104015: for (var _fun104015_ip = 0;;) switch (_fun104015_ip) {
             case 0:
                 var1 = arg0;

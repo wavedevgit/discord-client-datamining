@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: discardEmptyNavigationSpan, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun12621: for (var _fun12621_ip = 0;;) switch (_fun12621_ip) {
             case 0:
                 var3 = arg0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         case 32:
                             var3 = _closure2_slot0;
-                            var0 = function(arg0) { // Original name: getMeaningfulChildSpans, environment: var0
+                            var0 = function arg0() {
                                 var3 = arg0;
                                 var _closure4_slot0 = var3;
                                 var4 = _closure1_slot0;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.AppState;
     var _closure1_slot2 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: onThisSpanEnd, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var3 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.onThisSpanEnd = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: adjustTransactionDuration, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun12627: for (var _fun12627_ip = 0;;) switch (_fun12627_ip) {
             case 0:
                 var4 = arg0;
@@ -359,7 +359,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.adjustTransactionDuration = var3;
-    var3 = function(arg0, arg1) { // Original name: ignoreEmptyBackNavigation, environment: var1
+    var3 = function arg0, arg1() {
         var5 = _closure1_slot3;
         var0 = undefined;
         var9 = arg0;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ignoreEmptyBackNavigation = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: ignoreEmptyRouteChangeTransactions, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var0 = arg2;
@@ -515,7 +515,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ignoreEmptyRouteChangeTransactions = var3;
-    var3 = function(arg0, arg1) { // Original name: onlySampleIfChildSpans, environment: var1
+    var3 = function arg0, arg1() {
         _fun12635: for (var _fun12635_ip = 0;;) switch (_fun12635_ip) {
             case 0:
                 var4 = arg0;
@@ -617,7 +617,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.onlySampleIfChildSpans = var3;
-    var1 = function(arg0, arg1) { // Original name: cancelInBackground, environment: var1
+    var1 = function arg0, arg1() {
         _fun12637: for (var _fun12637_ip = 0;;) switch (_fun12637_ip) {
             case 0:
                 var3 = arg0;

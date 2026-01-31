@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var9
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;

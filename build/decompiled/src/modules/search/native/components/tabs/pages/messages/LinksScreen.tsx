@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: LinksScreen, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var13 = var0.searchContext;
         var _closure2_slot0 = var13;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var5 = arg0;
                             var4.data = var5;
-                            var5 = function(arg0) { // Original name: onPress, environment: var0
+                            var5 = function arg0() {
                                 var3 = _closure2_slot6;
                                 var2 = _closure5_slot0;
                                 var1 = undefined;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var4.onPress = var5;
-                            var0 = function(arg0) { // Original name: onPressSearchLink, environment: var0
+                            var0 = function arg0() {
                                 var3 = _closure2_slot7;
                                 var2 = _closure5_slot0;
                                 var1 = undefined;

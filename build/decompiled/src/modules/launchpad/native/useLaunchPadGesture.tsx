@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/useLaunchPadGesture.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useLaunchPadGesture, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.launchPadType;
         var _closure2_slot0 = var7;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.right = var6;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onTouchesDown;
-                    var1 = function(arg0) { // Original name: w, environment: var0
+                    var1 = function arg0() {
                         var0 = arg0;
                         var0 = var0.changedTouches;
                         var4 = 0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var8;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onTouchesMove;
-                    var1 = function(arg0, arg1) { // Original name: b, environment: var0
+                    var1 = function arg0, arg1() {
                         _fun109898: for (var _fun109898_ip = 0;;) switch (_fun109898_ip) {
                             case 0:
                                 var4 = arg0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var11;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onChange;
-                    var1 = function(arg0) { // Original name: X, environment: var0
+                    var1 = function arg0() {
                         _fun109899: for (var _fun109899_ip = 0;;) switch (_fun109899_ip) {
                             case 0:
                                 var0 = arg0;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var11;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onEnd;
-                    var1 = function(arg0) { // Original name: v, environment: var0
+                    var1 = function arg0() {
                         _fun109900: for (var _fun109900_ip = 0;;) switch (_fun109900_ip) {
                             case 0:
                                 var0 = arg0;
@@ -821,7 +821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var11;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onTouchesCancelled;
-                    var1 = function() { // Original name: O, environment: var0
+                    var1 = function() {
                         _fun109901: for (var _fun109901_ip = 0;;) switch (_fun109901_ip) {
                             case 0:
                                 var2 = _closure2_slot3;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var11;
                     var2 = var2.bind(var4)(var1);
                     var1 = var2.onFinalize;
-                    var0 = function() { // Original name: t, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 7;

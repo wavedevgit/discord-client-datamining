@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsMessageNotificationChannelActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationSettingsMessageNotificationChannelActionSheet, environment: var1
+    var1 = function arg0() {
         _fun69899: for (var _fun69899_ip = 0;;) switch (_fun69899_ip) {
             case 0:
                 var0 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.bind(var8)(var6);
             case 187:
                 var0.allMessagesSubLabel = var5;
-                var4 = function(arg0) { // Original name: onChange, environment: var4
+                var4 = function arg0() {
                     _fun69900: for (var _fun69900_ip = 0;;) switch (_fun69900_ip) {
                         case 0:
                             var8 = arg0;

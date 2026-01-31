@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var1);
     var1 = {};
-    var0 = function() { // Original name: getTitle, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getTitle = var0;
-    var0 = function() { // Original name: getDisabledTitle, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getDisabledTitle = var0;
-    var0 = function() { // Original name: getDescription, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.SUB_UNSOLICITED_PORN;
     var6[4] = var7;
     var1.eligibleReportSubtypes = var6;
-    var6 = function() { // Original name: onApply, environment: var3
+    var6 = function() {
         _fun53764: for (var _fun53764_ip = 0;;) switch (_fun53764_ip) {
             case 0:
                 var10 = _closure1_slot0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onApply = var6;
-    var3 = function() { // Original name: predicate, environment: var3
+    var3 = function() {
         _fun53765: for (var _fun53765_ip = 0;;) switch (_fun53765_ip) {
             case 0:
                 var7 = _closure1_slot0;

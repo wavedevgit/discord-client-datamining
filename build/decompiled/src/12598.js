@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var0.Object;
         var3 = var4.defineProperty;
         var2 = {};
-        var0 = function() { // Original name: get, environment: var0
+        var0 = function() {
             var0 = 7;
             return var0;
         };

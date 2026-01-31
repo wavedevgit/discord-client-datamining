@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _handleEnableSystemNotification, environment: var8
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.NOTIFICATIONS;
     var1.parent = var9;
-    var8 = function() { // Original name: handleEnableSystemNotification, environment: var8
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;

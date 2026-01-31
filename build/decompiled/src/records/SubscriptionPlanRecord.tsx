@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var7 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun25090: for (var _fun25090_ip = 0;;) switch (_fun25090_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0, arg1) { // Original name: getPriceFromServer, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var0 = {};
         var2 = var1.amount;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.SubscriptionPlans;
     var _closure1_slot7 = var4;
     var4 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: SubscriptionPlanRecord, environment: var0
+        var4 = function arg0() {
             _fun25095: for (var _fun25095_ip = 0;;) switch (_fun25095_ip) {
                 case 0:
                     var1 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'premiumSubscriptionType';
         var5.key = var1;
-        var1 = function() { // Original name: get, environment: var0
+        var1 = function() {
             _fun25096: for (var _fun25096_ip = 0;;) switch (_fun25096_ip) {
                 case 0:
                     var0 = this;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'toServerData';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var2 = {};
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'createFromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun25099: for (var _fun25099_ip = 0;;) switch (_fun25099_ip) {
                 case 0:
                     var3 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.getPriceFromServer = var3;
-    var1 = function(arg0) { // Original name: isNoneSubscription, environment: var1
+    var1 = function arg0() {
         var0 = _closure1_slot7;
         var1 = var0.NONE_MONTH;
         var2 = new Array(4);

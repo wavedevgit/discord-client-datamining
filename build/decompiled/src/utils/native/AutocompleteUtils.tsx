@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AutoCompleteResultTypes;
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function() { // Original name: MENTION_EVERYONE, environment: var3
+    var6 = function() {
         var0 = {
             'type': null,
             'test': 'everyone',
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MENTION_EVERYONE = var6;
-    var6 = function() { // Original name: MENTION_HERE, environment: var3
+    var6 = function() {
         var0 = {
             'type': null,
             'test': 'here',
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MENTION_HERE = var6;
-    var3 = function() { // Original name: LAUNCHABLE_APPLICATIONS, environment: var3
+    var3 = function() {
         var0 = new Array(0);
         return var0;
     };

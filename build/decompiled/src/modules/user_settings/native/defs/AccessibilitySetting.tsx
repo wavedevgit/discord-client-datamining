@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: useDismissibleContentTypes, environment: var8
+    var0 = function() {
         _fun84764: for (var _fun84764_ip = 0;;) switch (_fun84764_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var7 = function() { // Original name: title, environment: var8
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.AccessibilityIcon;
     var1.IconComponent = var7;
-    var7 = function() { // Original name: useTrailing, environment: var8
+    var7 = function() {
         _fun84766: for (var _fun84766_ip = 0;;) switch (_fun84766_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTrailing = var7;
-    var7 = function() { // Original name: usePreNavigationAction, environment: var8
+    var7 = function() {
         var2 = _closure1_slot7;
         var5 = undefined;
         var6 = var2.bind(var5)();
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.ACCESSIBILITY;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 12;

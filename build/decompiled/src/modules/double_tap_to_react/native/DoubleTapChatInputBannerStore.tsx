@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun89240: for (var _fun89240_ip = 0;;) switch (_fun89240_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var1 = function(arg0) { // Original name: handleShowBanner, environment: var4
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.emoji;
         var1 = var0.channelId;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var9 = function() { // Original name: handleHideBanner, environment: var4
+    var9 = function() {
         var0 = false;
         _closure1_slot8 = var0;
         var0 = undefined;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: DoubleTapChatInputBannerStore, environment: var5
+        var3 = function() {
             _fun89246: for (var _fun89246_ip = 0;;) switch (_fun89246_ip) {
                 case 0:
                     var3 = this;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'shouldShow';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'bannerEmoji';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'bannerHeight';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var3.SHOW_DOUBLE_TAP_TO_REACT_BANNER = var1;
     var3.HIDE_DOUBLE_TAP_TO_REACT_BANNER = var9;
-    var9 = function(arg0) { // Original name: handleAutoHideBanner, environment: var4
+    var9 = function arg0() {
         _fun89250: for (var _fun89250_ip = 0;;) switch (_fun89250_ip) {
             case 0:
                 var0 = arg0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_SELECT = var9;
-    var4 = function(arg0) { // Original name: handleUpdateBannerHeight, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.height;
         _closure1_slot11 = var1;

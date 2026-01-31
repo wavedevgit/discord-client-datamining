@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/modals/GuildStageChannelSelection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildStageChannelSelection, environment: var1
+    var1 = function arg0() {
         _fun67077: for (var _fun67077_ip = 0;;) switch (_fun67077_ip) {
             case 0:
                 var0 = arg0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var0;
                 var3 = undefined;
                 var _closure2_slot2 = var3;
-                var0 = function() { // Original name: handleSelectChannel, environment: var9
+                var0 = function() {
                     _fun67078: for (var _fun67078_ip = 0;;) switch (_fun67078_ip) {
                         case 0:
                             var4 = _closure1_slot2;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var9.bind(var10)(var8);
                             var2.title = var8;
                             var2.items = var6;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 _fun67080: for (var _fun67080_ip = 0;;) switch (_fun67080_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot3 = var0;
-                var10 = function(arg0, arg1) { // Original name: renderChannelHook, environment: var9
+                var10 = function arg0, arg1() {
                     var4 = _closure1_slot6;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot3;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.stageName = var11;
                 var5.stageHook = var10;
-                var9 = function(arg0, arg1) { // Original name: changeHook, environment: var9
+                var9 = function arg0, arg1() {
                     var4 = _closure1_slot6;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot3;

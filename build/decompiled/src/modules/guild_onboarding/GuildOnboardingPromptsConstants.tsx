@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var14;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var15;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun41581: for (var _fun41581_ip = 0;;) switch (_fun41581_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun41583: for (var _fun41583_ip = 0;;) switch (_fun41583_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var7 = function() { // Original name: getDefaultPrompt, environment: var1
+    var7 = function() {
         var0 = {
             'id': null,
             'title': null,
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var7;
-    var6 = function(arg0) { // Original name: serverPromptToClientPrompt, environment: var1
+    var6 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var6;
-    var4 = function(arg0) { // Original name: getConnectionIdentifier, environment: var1
+    var4 = function arg0() {
         _fun41587: for (var _fun41587_ip = 0;;) switch (_fun41587_ip) {
             case 0:
                 var1 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var4;
-    var3 = function(arg0) { // Original name: validateOnboardingConnection, environment: var1
+    var3 = function arg0() {
         _fun41588: for (var _fun41588_ip = 0;;) switch (_fun41588_ip) {
             case 0:
                 var2 = arg0;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.OnboardingPromptType = var10;
     var2.GuildOnboardingMode = var9;
     var2.OnboardingConnectionType = var8;
-    var8 = function(arg0) { // Original name: isDefaultPrompt, environment: var1
+    var8 = function arg0() {
         _fun41590: for (var _fun41590_ip = 0;;) switch (_fun41590_ip) {
             case 0:
                 var5 = arg0;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isDefaultPrompt = var8;
     var2.getDefaultPrompt = var7;
-    var7 = function(arg0) { // Original name: getEmptyPrompt, environment: var1
+    var7 = function arg0() {
         var0 = {
             'id': null,
             'title': '',
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getEmptyPrompt = var7;
-    var7 = function(arg0) { // Original name: clientPromptToServerPrompt, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -795,7 +795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clientPromptToServerPrompt = var7;
     var2.serverPromptToClientPrompt = var6;
-    var6 = function(arg0) { // Original name: serverApiResponseToClientState, environment: var1
+    var6 = function arg0() {
         _fun41594: for (var _fun41594_ip = 0;;) switch (_fun41594_ip) {
             case 0:
                 var1 = arg0;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.serverApiResponseToClientState = var6;
-    var6 = function(arg0) { // Original name: isEmojiEmpty, environment: var1
+    var6 = function arg0() {
         _fun41595: for (var _fun41595_ip = 0;;) switch (_fun41595_ip) {
             case 0:
                 var2 = arg0;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isEmojiEmpty = var6;
     var2.EXCLUDED_ONBOARDING_PLATFORM_TYPES = var5;
     var2.getConnectionIdentifier = var4;
-    var4 = function(arg0) { // Original name: parseConnectionIdentifier, environment: var1
+    var4 = function arg0() {
         _fun41596: for (var _fun41596_ip = 0;;) switch (_fun41596_ip) {
             case 0:
                 var2 = arg0;
@@ -957,7 +957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseConnectionIdentifier = var4;
     var2.validateOnboardingConnection = var3;
-    var1 = function(arg0) { // Original name: validateOnboardingConnections, environment: var1
+    var1 = function arg0() {
         _fun41597: for (var _fun41597_ip = 0;;) switch (_fun41597_ip) {
             case 0:
                 var3 = arg0;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new var14[var1](var13);
                 var1 = var1 instanceof Object ? var1 : var2;
                 var _closure2_slot1 = var1;
-                var9 = function(arg0) { // Original name: _loop, environment: var10
+                var9 = function arg0() {
                     _fun41598: for (var _fun41598_ip = 0;;) switch (_fun41598_ip) {
                         case 0:
                             var0 = arg0;

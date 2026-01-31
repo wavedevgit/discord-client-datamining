@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0.code = var1;
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1, arg2, arg3) { // Original name: scrollToFabric, environment: var0
+                var0 = function arg0, arg1, arg2, arg3() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.code = var3;
             var _closure1_slot4 = var1;
             var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1, arg2, arg3) { // Original name: scrollToPaper, environment: var0
+                var0 = function arg0, arg1, arg2, arg3() {
                     _fun34971: for (var _fun34971_ip = 0;;) switch (_fun34971_ip) {
                         case 0:
                             var0 = global;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun34967
             }
         case 197:
-            var3 = function() { // Original name: scrollToDefault, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 1;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34967_ip = 209;
             continue _fun34967;
         case 204:
-            var3 = function() { // Original name: scrollToChromeDebugger, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 1;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34967_ip = 216;
             continue _fun34967;
         case 211:
-            var3 = function() { // Original name: scrollToJest, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 1;

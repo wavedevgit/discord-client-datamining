@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun39854: for (var _fun39854_ip = 0;;) switch (_fun39854_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var9 = function(arg0) { // Original name: handleClearCaches, environment: var4
+    var9 = function arg0() {
         _fun39857: for (var _fun39857_ip = 0;;) switch (_fun39857_ip) {
             case 0:
                 var3 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function() { // Original name: _loadChannelHistory, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot9;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _loadEarlyCache, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot9;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure4_slot0;
                             var3 = _closure4_slot3;
                             var2 = _closure4_slot4;
-                            var1 = function() { // Original name: loadChannelHistory, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot27;
                                 var2 = var3.apply;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = function() { // Environment: var8
                             var3 = _closure4_slot0;
                             var2 = _closure4_slot1;
-                            var1 = function() { // Original name: loadInitialGuilds, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot29;
                                 var2 = var3.apply;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = function() { // Environment: var8
                             var3 = _closure4_slot0;
                             var2 = _closure4_slot1;
-                            var1 = function() { // Original name: loadInitialGuildChannels, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot30;
                                 var2 = var3.apply;
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: _loadInitialGuilds, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot9;
@@ -1151,7 +1151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _loadInitialGuildChannels, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot9;
@@ -1308,7 +1308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _loadLateLazyCache, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot9;
@@ -1592,7 +1592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var3 = _closure4_slot0;
                                         var0 = _closure4_slot6;
                                         var2 = var0.stale;
-                                        var1 = function(arg0, arg1) { // Original name: loadGuildChannels, environment: var0
+                                        var1 = function arg0, arg1() {
                                             var4 = arg1;
                                             var1 = arg0;
                                             var _closure7_slot0 = var1;
@@ -2290,7 +2290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: resumeFluxAndSocket, environment: var4
+    var0 = function arg0() {
         _fun39911: for (var _fun39911_ip = 0;;) switch (_fun39911_ip) {
             case 0:
                 var0 = arg0;
@@ -2524,7 +2524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.bind(var0)(var8);
     var10 = var8.Store;
     var8 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: CacheStoreClass, environment: var5
+        var3 = function() {
             _fun39915: for (var _fun39915_ip = 0;;) switch (_fun39915_ip) {
                 case 0:
                     var3 = this;
@@ -2572,7 +2572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var5 = this;
             var4 = var5.waitFor;
             var9 = _closure1_slot11;
@@ -2590,7 +2590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'hasCache';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -2599,7 +2599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getLazyCacheStatus';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -2608,7 +2608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'lastWriteTime';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -2617,7 +2617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'canWriteCaches';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun39920: for (var _fun39920_ip = 0;;) switch (_fun39920_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -2748,7 +2748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure4_slot2;
                             var3 = _closure4_slot1;
                             var2 = _closure4_slot0;
-                            var1 = function() { // Original name: loadEarlyCache, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot28;
                                 var2 = var3.apply;
@@ -2789,7 +2789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun39922
                         }
                     case 239:
-                        var10 = function() { // Original name: dontLoadLateLazyCache, environment: var1
+                        var10 = function() {
                             var2 = _closure1_slot32;
                             var1 = undefined;
                             var0 = function() { // Environment: var0
@@ -2830,7 +2830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var16 = var8;
                         var15 = var7;
                         var14 = var6;
-                        var6 = function() { // Original name: loadLateLazyCache, environment: var1
+                        var6 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot31;
                             var2 = var3.apply;
@@ -2940,7 +2940,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: loadCacheAsync, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -2961,7 +2961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var14 = var7.bind(var0)(var3);
     var3 = {};
-    var10 = function() { // Original name: handleConnectionOpen, environment: var4
+    var10 = function() {
         var0 = true;
         _closure1_slot23 = var0;
         _closure1_slot24 = var0;
@@ -2970,7 +2970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.CONNECTION_OPEN = var10;
     var3.LOGOUT = var9;
-    var10 = function() { // Original name: handleConnectionClose, environment: var4
+    var10 = function() {
         var0 = false;
         _closure1_slot23 = var0;
         var1 = true;
@@ -2978,14 +2978,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CONNECTION_CLOSED = var10;
-    var10 = function() { // Original name: handleCacheLoaded, environment: var4
+    var10 = function() {
         var0 = true;
         _closure1_slot22 = var0;
         var0 = undefined;
         return var0;
     };
     var3.CACHE_LOADED = var10;
-    var10 = function() { // Original name: handleCacheLoadedLazy, environment: var4
+    var10 = function() {
         var0 = true;
         _closure1_slot22 = var0;
         var0 = 'cache-loaded';
@@ -2994,7 +2994,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CACHE_LOADED_LAZY = var10;
-    var10 = function() { // Original name: handleCacheLoadedLazyNoCache, environment: var4
+    var10 = function() {
         var0 = 'no-cache';
         _closure1_slot20 = var0;
         var0 = undefined;
@@ -3002,7 +3002,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.CACHE_LOADED_LAZY_NO_CACHE = var10;
     var3.CLEAR_CACHES = var9;
-    var4 = function() { // Original name: saveCaches, environment: var4
+    var4 = function() {
         var3 = _closure1_slot18;
         var2 = var3.verbose;
         var0 = 'Writing cache now';

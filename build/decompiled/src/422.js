@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5895: for (var _fun5895_ip = 0;;) switch (_fun5895_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot13 = var4;
     var4 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: TouchableHighlightImpl, environment: var5
+        var3 = function() {
             _fun5899: for (var _fun5899_ip = 0;;) switch (_fun5899_ip) {
                 case 0:
                     var3 = this;
@@ -219,7 +219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '_createPressabilityConfig';
         var4.key = var0;
-        var0 = function() { // Original name: _createPressabilityConfig, environment: var5
+        var0 = function() {
             _fun5900: for (var _fun5900_ip = 0;;) switch (_fun5900_ip) {
                 case 0:
                     var2 = this;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var2.props;
                     var3 = var3.touchSoundDisabled;
                     var0.android_disableSound = var3;
-                    var3 = function(arg0) { // Original name: onBlur, environment: var1
+                    var3 = function arg0() {
                         _fun5901: for (var _fun5901_ip = 0;;) switch (_fun5901_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -313,7 +313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onBlur = var3;
-                    var3 = function(arg0) { // Original name: onFocus, environment: var1
+                    var3 = function arg0() {
                         _fun5902: for (var _fun5902_ip = 0;;) switch (_fun5902_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -354,7 +354,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.props;
                     var2 = var2.onLongPress;
                     var0.onLongPress = var2;
-                    var2 = function(arg0) { // Original name: onPress, environment: var1
+                    var2 = function arg0() {
                         _fun5903: for (var _fun5903_ip = 0;;) switch (_fun5903_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -428,7 +428,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onPress = var2;
-                    var2 = function(arg0) { // Original name: onPressIn, environment: var1
+                    var2 = function arg0() {
                         _fun5905: for (var _fun5905_ip = 0;;) switch (_fun5905_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
@@ -468,7 +468,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onPressIn = var2;
-                    var1 = function(arg0) { // Original name: onPressOut, environment: var1
+                    var1 = function arg0() {
                         _fun5906: for (var _fun5906_ip = 0;;) switch (_fun5906_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
@@ -511,7 +511,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_createExtraStyles';
         var4.key = var6;
-        var6 = function() { // Original name: _createExtraStyles, environment: var5
+        var6 = function() {
             _fun5907: for (var _fun5907_ip = 0;;) switch (_fun5907_ip) {
                 case 0:
                     var3 = this;
@@ -554,7 +554,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_showUnderlay';
         var4.key = var6;
-        var6 = function() { // Original name: _showUnderlay, environment: var5
+        var6 = function() {
             _fun5908: for (var _fun5908_ip = 0;;) switch (_fun5908_ip) {
                 case 0:
                     var0 = this;
@@ -599,7 +599,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_hideUnderlay';
         var4.key = var6;
-        var6 = function() { // Original name: _hideUnderlay, environment: var5
+        var6 = function() {
             _fun5909: for (var _fun5909_ip = 0;;) switch (_fun5909_ip) {
                 case 0:
                     var0 = this;
@@ -658,7 +658,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_hasPressHandler';
         var4.key = var6;
-        var6 = function() { // Original name: _hasPressHandler, environment: var5
+        var6 = function() {
             _fun5910: for (var _fun5910_ip = 0;;) switch (_fun5910_ip) {
                 case 0:
                     var1 = this;
@@ -701,7 +701,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var6 = function() { // Original name: render, environment: var5
+        var6 = function() {
             _fun5911: for (var _fun5911_ip = 0;;) switch (_fun5911_ip) {
                 case 0:
                     var12 = this;
@@ -1053,7 +1053,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidMount';
         var4.key = var6;
-        var6 = function() { // Original name: componentDidMount, environment: var5
+        var6 = function() {
             var3 = this;
             var0 = true;
             var3._isMounted = var0;
@@ -1071,7 +1071,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0, arg1() {
             var3 = this;
             var0 = var3.state;
             var2 = var0.pressability;
@@ -1087,7 +1087,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var5 = function() { // Original name: componentWillUnmount, environment: var5
+        var5 = function() {
             _fun5914: for (var _fun5914_ip = 0;;) switch (_fun5914_ip) {
                 case 0:
                     var0 = this;
@@ -1121,7 +1121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = var3.bind(var0)(var4);
     var _closure1_slot14 = var3;
-    var1 = function(arg0) { // Original name: TouchableHighlight, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var0 = var5.ref;
         var4 = _closure1_slot4;

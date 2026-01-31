@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun2352: for (var _fun2352_ip = 0;;) switch (_fun2352_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ReadOnlyCharacterData, environment: var5
+        var3 = function() {
             _fun2356: for (var _fun2356_ip = 0;;) switch (_fun2356_ip) {
                 case 0:
                     var3 = this;
@@ -128,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'nextElementSibling';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 5;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'previousElementSibling';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 5;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'data';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun2359: for (var _fun2359_ip = 0;;) switch (_fun2359_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'length';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.data;
             var0 = var0.length;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'textContent';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.data;
             return var0;
@@ -222,7 +222,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'nodeValue';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.data;
             return var0;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'substringData';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: substringData, environment: var5
+        var5 = function arg0, arg1() {
             _fun2363: for (var _fun2363_ip = 0;;) switch (_fun2363_ip) {
                 case 0:
                     var4 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var5 = function(arg0, arg1) { // Original name: applyClientOptions, environment: var1
+    var5 = function arg0, arg1() {
         _fun9175: for (var _fun9175_ip = 0;;) switch (_fun9175_ip) {
             case 0:
                 var0 = arg0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0, arg1) { // Original name: applyDebugIds, environment: var1
+    var4 = function arg0, arg1() {
         _fun9176: for (var _fun9176_ip = 0;;) switch (_fun9176_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: applyDebugMeta, environment: var1
+    var3 = function arg0() {
         _fun9179: for (var _fun9179_ip = 0;;) switch (_fun9179_ip) {
             case 0:
                 var2 = arg0;
@@ -380,7 +380,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.applyClientOptions = var5;
     var2.applyDebugIds = var4;
     var2.applyDebugMeta = var3;
-    var3 = function(arg0) { // Original name: parseEventHintOrCaptureContext, environment: var1
+    var3 = function arg0() {
         _fun9183: for (var _fun9183_ip = 0;;) switch (_fun9183_ip) {
             case 0:
                 var2 = arg0;
@@ -414,7 +414,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun9183
                 }
             case 62:
-                var0 = function(arg0) { // Original name: hintIsScopeContext, environment: var0
+                var0 = function arg0() {
                     var0 = global;
                     var2 = var0.Object;
                     var1 = var2.keys;
@@ -446,7 +446,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.parseEventHintOrCaptureContext = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: prepareEvent, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun9186: for (var _fun9186_ip = 0;;) switch (_fun9186_ip) {
             case 0:
                 var1 = arg0;
@@ -769,7 +769,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 54:
                             var4 = _closure2_slot0;
                             var3 = _closure2_slot1;
-                            var2 = function(arg0, arg1, arg2) { // Original name: normalizeEvent, environment: var1
+                            var2 = function arg0, arg1, arg2() {
                                 _fun9189: for (var _fun9189_ip = 0;;) switch (_fun9189_ip) {
                                     case 0:
                                         var1 = arg0;

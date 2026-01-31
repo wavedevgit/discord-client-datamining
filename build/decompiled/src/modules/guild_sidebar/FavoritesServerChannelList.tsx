@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun102801: for (var _fun102801_ip = 0;;) switch (_fun102801_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun102803: for (var _fun102803_ip = 0;;) switch (_fun102803_ip) {
             case 0:
                 var3 = arg0;
@@ -248,10 +248,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var1 = function() { // Original name: computeFavoritesState, environment: var3
+    var1 = function() {
         _fun102804: for (var _fun102804_ip = 0;;) switch (_fun102804_ip) {
             case 0:
-                var0 = function(arg0, arg1) { // Original name: makeChannelList, environment: var1
+                var0 = function arg0, arg1() {
                     var1 = arg1;
                     var _closure3_slot0 = var1;
                     var2 = var1.isCollapsed;
@@ -650,12 +650,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'isCollapsed': false,
                     'position': 0
                 };
-                var6 = function() { // Original name: getChannelRecords, environment: var1
+                var6 = function() {
                     var0 = _closure2_slot4;
                     return var0;
                 };
                 var0.getChannelRecords = var6;
-                var6 = function() { // Original name: getShownChannelIds, environment: var1
+                var6 = function() {
                     var2 = _closure2_slot4;
                     var1 = var2.map;
                     var0 = function(arg0) { // Environment: var0
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.getShownChannelIds = var6;
-                var6 = function() { // Original name: getShownChannelAndThreadIds, environment: var1
+                var6 = function() {
                     var2 = _closure2_slot4;
                     var1 = var2.map;
                     var0 = function(arg0) { // Environment: var0
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.getShownChannelAndThreadIds = var6;
-                var6 = function() { // Original name: isEmpty, environment: var1
+                var6 = function() {
                     var0 = _closure2_slot4;
                     var1 = var0.length;
                     var0 = 0;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.isEmpty = var6;
-                var7 = function() { // Original name: get channelList, environment: var1
+                var7 = function() {
                     _fun102814: for (var _fun102814_ip = 0;;) switch (_fun102814_ip) {
                         case 0:
                             var2 = _closure2_slot6;
@@ -784,12 +784,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.record = var5;
                             var0.id = var4;
                             var0.position = var2;
-                            var2 = function() { // Original name: getChannelRecords, environment: var1
+                            var2 = function() {
                                 var0 = _closure3_slot0;
                                 return var0;
                             };
                             var0.getChannelRecords = var2;
-                            var2 = function() { // Original name: getShownChannelIds, environment: var1
+                            var2 = function() {
                                 var2 = _closure3_slot0;
                                 var1 = var2.map;
                                 var0 = function(arg0) { // Environment: var0
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.getShownChannelIds = var2;
-                            var2 = function() { // Original name: getShownChannelAndThreadIds, environment: var1
+                            var2 = function() {
                                 var2 = _closure3_slot0;
                                 var1 = var2.map;
                                 var0 = function(arg0) { // Environment: var0
@@ -813,7 +813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.getShownChannelAndThreadIds = var2;
-                            var2 = function() { // Original name: isEmpty, environment: var1
+                            var2 = function() {
                                 var0 = _closure3_slot0;
                                 var1 = var0.length;
                                 var0 = 0;
@@ -821,7 +821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.isEmpty = var2;
-                            var2 = function() { // Original name: get channelList, environment: var1
+                            var2 = function() {
                                 _fun102824: for (var _fun102824_ip = 0;;) switch (_fun102824_ip) {
                                     case 0:
                                         var2 = _closure3_slot1;
@@ -856,34 +856,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var4)();
                 var _closure2_slot8 = var0;
                 var0 = {};
-                var4 = function() { // Original name: isEmpty, environment: var1
+                var4 = function() {
                     var0 = true;
                     return var0;
                 };
                 var0.isEmpty = var4;
-                var4 = function() { // Original name: getRows, environment: var1
+                var4 = function() {
                     var0 = new Array(0);
                     return var0;
                 };
                 var0.getRows = var4;
-                var4 = function() { // Original name: getRow, environment: var1
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var0.getRow = var4;
                 var _closure2_slot9 = var0;
                 var0 = {};
-                var4 = function() { // Original name: isEmpty, environment: var1
+                var4 = function() {
                     var0 = true;
                     return var0;
                 };
                 var0.isEmpty = var4;
-                var4 = function() { // Original name: getRows, environment: var1
+                var4 = function() {
                     var0 = new Array(0);
                     return var0;
                 };
                 var0.getRows = var4;
-                var4 = function() { // Original name: getRow, environment: var1
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -899,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot17;
                 var0.id = var3;
                 var0.hideMutedChannels = var2;
-                var2 = function() { // Original name: getSections, environment: var1
+                var2 = function() {
                     _fun102831: for (var _fun102831_ip = 0;;) switch (_fun102831_ip) {
                         case 0:
                             var0 = new Array(0);
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.getSections = var2;
-                var2 = function(arg0, arg1) { // Original name: isPlaceholderRow, environment: var1
+                var2 = function arg0, arg1() {
                     _fun102832: for (var _fun102832_ip = 0;;) switch (_fun102832_ip) {
                         case 0:
                             var3 = arg0;
@@ -1011,7 +1011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.isPlaceholderRow = var2;
-                var2 = function(arg0) { // Original name: getCategoryFromSection, environment: var1
+                var2 = function arg0() {
                     _fun102833: for (var _fun102833_ip = 0;;) switch (_fun102833_ip) {
                         case 0:
                             var2 = arg0;
@@ -1044,7 +1044,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.getCategoryFromSection = var2;
-                var2 = function(arg0) { // Original name: getNamedCategoryFromSection, environment: var1
+                var2 = function arg0() {
                     var1 = _closure2_slot8;
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -1059,7 +1059,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.getNamedCategoryFromSection = var2;
-                var2 = function(arg0, arg1) { // Original name: getChannelFromSectionRow, environment: var1
+                var2 = function arg0, arg1() {
                     _fun102835: for (var _fun102835_ip = 0;;) switch (_fun102835_ip) {
                         case 0:
                             var3 = arg1;
@@ -1095,22 +1095,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.getChannelFromSectionRow = var2;
-                var2 = function() { // Original name: getGuildActionSection, environment: var1
+                var2 = function() {
                     var0 = _closure2_slot9;
                     return var0;
                 };
                 var0.getGuildActionSection = var2;
-                var2 = function() { // Original name: getChannelNoticeSection, environment: var1
+                var2 = function() {
                     var0 = _closure2_slot10;
                     return var0;
                 };
                 var0.getChannelNoticeSection = var2;
-                var2 = function() { // Original name: getFirstVoiceChannel, environment: var1
+                var2 = function() {
                     var0 = null;
                     return var0;
                 };
                 var0.getFirstVoiceChannel = var2;
-                var2 = function(arg0) { // Original name: getSectionRowsFromChannel, environment: var1
+                var2 = function arg0() {
                     _fun102839: for (var _fun102839_ip = 0;;) switch (_fun102839_ip) {
                         case 0:
                             var6 = arg0;
@@ -1187,7 +1187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.getSectionRowsFromChannel = var2;
-                var2 = function(arg0) { // Original name: forEachShownChannel, environment: var1
+                var2 = function arg0() {
                     _fun102840: for (var _fun102840_ip = 0;;) switch (_fun102840_ip) {
                         case 0:
                             var9 = arg0;
@@ -1283,7 +1283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.forEachShownChannel = var2;
-                var2 = function(arg0) { // Original name: forEachChannel, environment: var1
+                var2 = function arg0() {
                     _fun102841: for (var _fun102841_ip = 0;;) switch (_fun102841_ip) {
                         case 0:
                             var5 = arg0;
@@ -1336,7 +1336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.forEachChannel = var2;
-                var2 = function(arg0) { // Original name: getSlicedChannels, environment: var1
+                var2 = function arg0() {
                     var0 = new Array(3);
                     var1 = new Array(0);
                     var0[0] = var1;
@@ -1347,7 +1347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.getSlicedChannels = var2;
-                var1 = function() { // Original name: getChannels, environment: var1
+                var1 = function() {
                     var0 = new Array(0);
                     return var0;
                 };
@@ -1464,7 +1464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_sidebar/FavoritesServerChannelList.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useFavoritesServerChannelList, environment: var3
+    var3 = function() {
         var4 = _closure1_slot4;
         var3 = var4.useState;
         var2 = function() { // Environment: var1

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: useScreens, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var10.pop;
             var10 = var11.bind(var13)(var10);
             var2.headerLeft = var10;
-            var10 = function() { // Original name: headerRight, environment: var3
+            var10 = function() {
                 var3 = _closure1_slot7;
                 var9 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.headerRight = var10;
-            var10 = function() { // Original name: headerTitle, environment: var3
+            var10 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.headerTitle = var10;
-            var10 = function(arg0, arg1) { // Original name: render, environment: var3
+            var10 = function arg0, arg1() {
                 var0 = arg1;
                 var _closure4_slot0 = var0;
                 var3 = _closure1_slot7;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'onSecondaryAction': null,
                     'disclaimer': 'I said come on fhqwhgads.'
                 };
-                var4 = function() { // Original name: onAction, environment: var4
+                var4 = function() {
                     var2 = _closure4_slot0;
                     var1 = var2.push;
                     var0 = _closure1_slot10;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var10.pop;
             var10 = var11.bind(var13)(var10);
             var2.headerRight = var10;
-            var10 = function() { // Original name: headerTitle, environment: var3
+            var10 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.headerTitle = var10;
-            var10 = function(arg0, arg1) { // Original name: render, environment: var3
+            var10 = function arg0, arg1() {
                 var0 = arg1;
                 var _closure4_slot0 = var0;
                 var3 = _closure1_slot7;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'emoji': '💿',
                     'action': "It's to the limit"
                 };
-                var4 = function() { // Original name: onAction, environment: var4
+                var4 = function() {
                     var2 = _closure4_slot0;
                     var1 = var2.push;
                     var0 = _closure1_slot10;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var10.pop;
             var10 = var11.bind(var13)(var10);
             var2.headerRight = var10;
-            var10 = function() { // Original name: headerTitle, environment: var3
+            var10 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -224,13 +224,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.headerTitle = var10;
-            var10 = function(arg0, arg1) { // Original name: render, environment: var3
+            var10 = function arg0, arg1() {
                 var1 = arg1;
                 var _closure4_slot0 = var1;
                 var3 = _closure1_slot7;
                 var2 = _closure1_slot15;
                 var1 = {};
-                var0 = function() { // Original name: onAction, environment: var0
+                var0 = function() {
                     var2 = _closure4_slot0;
                     var1 = var2.push;
                     var0 = _closure1_slot10;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var9.pop;
             var9 = var10.bind(var11)(var9);
             var2.headerRight = var9;
-            var9 = function() { // Original name: headerTitle, environment: var3
+            var9 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.headerTitle = var9;
-            var9 = function(arg0, arg1) { // Original name: render, environment: var3
+            var9 = function arg0, arg1() {
                 var1 = arg1;
                 var _closure4_slot0 = var1;
                 var3 = _closure1_slot7;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'onAction': null,
                     'disclaimer': "Tryin' to play like, you know me."
                 };
-                var0 = function() { // Original name: onAction, environment: var0
+                var0 = function() {
                     var2 = _closure4_slot0;
                     var1 = var2.push;
                     var0 = _closure1_slot10;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.getHeaderBackButton;
             var4 = var4.bind(var5)();
             var1.headerLeft = var4;
-            var4 = function() { // Original name: headerRight, environment: var3
+            var4 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.headerRight = var4;
-            var4 = function() { // Original name: headerTitle, environment: var3
+            var4 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.headerTitle = var4;
-            var3 = function() { // Original name: render, environment: var3
+            var3 = function() {
                 var3 = _closure1_slot7;
                 var2 = _closure1_slot14;
                 var1 = {
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var0)(var4);
                 var4 = var4.pop;
                 var1.onAction = var4;
-                var4 = function() { // Original name: onSecondaryAction, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: DemoModal, environment: var1
+    var0 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: DemoStepModal, environment: var1
+    var0 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var6 = var0.bind(var3)();
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: DemoScreen, environment: var1
+    var0 = function arg0() {
         _fun87879: for (var _fun87879_ip = 0;;) switch (_fun87879_ip) {
             case 0:
                 var0 = arg0;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: SwitchesScreen, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.onAction;
         var0 = _closure1_slot9;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.label = var6;
             var6 = arg0;
             var0.value = var6;
-            var5 = function(arg0) { // Original name: onValueChange, environment: var5
+            var5 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var2 = _closure2_slot1;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: openDemoModal, environment: var1
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: openDemoStepModal, environment: var1
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -894,7 +894,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemModal, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var7 = var0.bind(var3)();

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun102096: for (var _fun102096_ip = 0;;) switch (_fun102096_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var7;
     var6 = var6.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: VoiceUsersItem, environment: var0
+        var3 = function() {
             _fun102100: for (var _fun102100_ip = 0;;) switch (_fun102100_ip) {
                 case 0:
                     var3 = this;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun102101: for (var _fun102101_ip = 0;;) switch (_fun102101_ip) {
                 case 0:
                     var0 = this;

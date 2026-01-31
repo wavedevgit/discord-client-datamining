@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getDataPrecision, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun37988: for (var _fun37988_ip = 0;;) switch (_fun37988_ip) {
             case 0:
                 var1 = 3;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getImageHeight, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun37989: for (var _fun37989_ip = 0;;) switch (_fun37989_ip) {
             case 0:
                 var1 = 5;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getImageWidth, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun37990: for (var _fun37990_ip = 0;;) switch (_fun37990_ip) {
             case 0:
                 var1 = 7;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getSubsampling, environment: var2
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun37991: for (var _fun37991_ip = 0;;) switch (_fun37991_ip) {
             case 0:
                 var11 = arg0;
@@ -197,7 +197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getComponentIds, environment: var2
+    var0 = function arg0() {
         var2 = arg0;
         var1 = {
             1: 'Y',
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getSamplingType, environment: var2
+    var0 = function arg0() {
         _fun37994: for (var _fun37994_ip = 0;;) switch (_fun37994_ip) {
             case 0:
                 var4 = arg0;
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0, arg1) { // Original name: read, environment: var2
+    var2 = function arg0, arg1() {
         _fun37995: for (var _fun37995_ip = 0;;) switch (_fun37995_ip) {
             case 0:
                 var7 = arg0;

@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var2, var4, var3);
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: LCPEntryManager, environment: var1
+        var2 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var4 = '_processEntry';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: _processEntry, environment: var1
+        var1 = function arg0() {
             _fun10801: for (var _fun10801_ip = 0;;) switch (_fun10801_ip) {
                 case 0:
                     var3 = this;

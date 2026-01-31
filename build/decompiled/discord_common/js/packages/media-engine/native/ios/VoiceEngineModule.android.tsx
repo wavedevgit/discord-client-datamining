@@ -32,13 +32,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var3;
     var17 = var9;
     var9 = copyDataProperties(var18, var17);
-    var10 = function() { // Original name: getConstants, environment: var8
+    var10 = function() {
         var0 = _closure1_slot2;
         return var0;
     };
     var9 = 'getConstants';
     var3[var9] = var10;
-    var10 = function(arg0) { // Original name: setInputDevice, environment: var8
+    var10 = function arg0() {
         _fun30387: for (var _fun30387_ip = 0;;) switch (_fun30387_ip) {
             case 0:
                 var3 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var9 = 'setInputDevice';
     var3[var9] = var10;
-    var10 = function(arg0) { // Original name: setOutputDevice, environment: var8
+    var10 = function arg0() {
         _fun30388: for (var _fun30388_ip = 0;;) switch (_fun30388_ip) {
             case 0:
                 var3 = arg0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var9 = 'setOutputDevice';
     var3[var9] = var10;
-    var10 = function(arg0) { // Original name: setVideoInputDevice, environment: var8
+    var10 = function arg0() {
         _fun30389: for (var _fun30389_ip = 0;;) switch (_fun30389_ip) {
             case 0:
                 var3 = arg0;

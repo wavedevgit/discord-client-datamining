@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: getAlpha, environment: var3
+    var0 = function arg0() {
         _fun38356: for (var _fun38356_ip = 0;;) switch (_fun38356_ip) {
             case 0:
                 var1 = 16;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: getAnimation, environment: var3
+    var0 = function arg0() {
         _fun38357: for (var _fun38357_ip = 0;;) switch (_fun38357_ip) {
             case 0:
                 var1 = 2;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: getThreeByteValue, environment: var3
+    var0 = function arg0, arg1() {
         var5 = arg0;
         var6 = arg1;
         var4 = _closure1_slot0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function(arg0, arg1) { // Original name: read, environment: var3
+    var2 = function arg0, arg1() {
         var4 = arg0;
         var5 = arg1;
         var0 = {};

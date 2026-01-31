@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ThreadListSection, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.title;
         var1 = _closure1_slot7;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: renderItem, environment: var1
+    var0 = function arg0() {
         _fun105924: for (var _fun105924_ip = 0;;) switch (_fun105924_ip) {
             case 0:
                 var0 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0() {
         _fun105925: for (var _fun105925_ip = 0;;) switch (_fun105925_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: EnterExitCrossFadeContainer, environment: var1
+    var0 = function arg0() {
         _fun105926: for (var _fun105926_ip = 0;;) switch (_fun105926_ip) {
             case 0:
                 var0 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0[var5];
                 var9 = var15.bind(var3)(var2);
                 var6 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: p, environment: var1
+                var2 = function() {
                     var0 = {};
                     var11 = _closure1_slot0;
                     var12 = _closure1_slot2;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var12[var2];
                     var2 = var11.bind(var10)(var2);
                     var15 = var2.springStandard;
-                    var2 = function(arg0) { // Original name: t, environment: var2
+                    var2 = function arg0() {
                         _fun105928: for (var _fun105928_ip = 0;;) switch (_fun105928_ip) {
                             case 0:
                                 var0 = arg0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getThreadListStateKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/native/components/redesign/ThreadList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ThreadList, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var16 = var1.channel;
         var9 = var1.onThreadPress;

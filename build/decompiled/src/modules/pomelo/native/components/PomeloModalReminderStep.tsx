@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/pomelo/native/components/PomeloModalReminderStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PomeloModalReminderStep, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.onCloseModal;
         var _closure2_slot0 = var6;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.auGQLV;
         var4 = var11.bind(var14)(var4);
         var1.text = var4;
-        var4 = function() { // Original name: onPress, environment: var12
+        var4 = function() {
             var1 = _closure2_slot1;
             var0 = var1.pop;
             var0 = var0.bind(var1)();
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var8.t;
         var9 = var8.bWE0ZD;
         var8 = {};
-        var12 = function() { // Original name: onClick, environment: var12
+        var12 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();

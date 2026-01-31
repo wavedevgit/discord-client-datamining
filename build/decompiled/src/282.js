@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: normalizeDelay, environment: var4
+    var0 = function arg0() {
         _fun4403: for (var _fun4403_ip = 0;;) switch (_fun4403_ip) {
             case 0:
                 var4 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: convertPointerEventToMouseEvent, environment: var4
+    var0 = function arg0() {
         var4 = arg0;
         var0 = var4.nativeEvent;
         var6 = var0.clientX;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.ERROR = var6;
     var1 = var3.bind(var5)(var1);
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: isActiveSignal, environment: var4
+    var1 = function arg0() {
         _fun4405: for (var _fun4405_ip = 0;;) switch (_fun4405_ip) {
             case 0:
                 var2 = arg0;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var1;
-    var1 = function(arg0) { // Original name: isActivationSignal, environment: var4
+    var1 = function arg0() {
         _fun4406: for (var _fun4406_ip = 0;;) switch (_fun4406_ip) {
             case 0:
                 var2 = arg0;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var1;
-    var1 = function(arg0) { // Original name: isPressInSignal, environment: var4
+    var1 = function arg0() {
         _fun4407: for (var _fun4407_ip = 0;;) switch (_fun4407_ip) {
             case 0:
                 var2 = arg0;
@@ -255,7 +255,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot9 = var1;
     var1 = function() { // Environment: var4
         var4 = _closure1_slot4;
-        var3 = function(arg0) { // Original name: Pressability, environment: var1
+        var3 = function arg0() {
             var3 = this;
             var _closure3_slot0 = var3;
             var4 = _closure1_slot3;
@@ -348,7 +348,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'configure';
         var0.key = var2;
-        var2 = function(arg0) { // Original name: configure, environment: var1
+        var2 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._config = var1;
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'reset';
         var0.key = var5;
-        var5 = function() { // Original name: reset, environment: var1
+        var5 = function() {
             var1 = this;
             var0 = var1._cancelHoverInDelayTimeout;
             var0 = var0.bind(var1)();
@@ -387,7 +387,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getEventHandlers';
         var0.key = var5;
-        var5 = function() { // Original name: getEventHandlers, environment: var1
+        var5 = function() {
             _fun4413: for (var _fun4413_ip = 0;;) switch (_fun4413_ip) {
                 case 0:
                     var0 = this;
@@ -411,13 +411,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_createEventHandlers';
         var0.key = var5;
-        var5 = function() { // Original name: _createEventHandlers, environment: var1
+        var5 = function() {
             _fun4414: for (var _fun4414_ip = 0;;) switch (_fun4414_ip) {
                 case 0:
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var5 = {};
-                    var2 = function(arg0) { // Original name: onBlur, environment: var0
+                    var2 = function arg0() {
                         _fun4415: for (var _fun4415_ip = 0;;) switch (_fun4415_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -438,7 +438,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var5.onBlur = var2;
-                    var2 = function(arg0) { // Original name: onFocus, environment: var0
+                    var2 = function arg0() {
                         _fun4416: for (var _fun4416_ip = 0;;) switch (_fun4416_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -460,7 +460,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                     var5.onFocus = var2;
                     var4 = {};
-                    var2 = function() { // Original name: onStartShouldSetResponder, environment: var0
+                    var2 = function() {
                         _fun4417: for (var _fun4417_ip = 0;;) switch (_fun4417_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -480,7 +480,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onStartShouldSetResponder = var2;
-                    var2 = function(arg0) { // Original name: onResponderGrant, environment: var0
+                    var2 = function arg0() {
                         _fun4418: for (var _fun4418_ip = 0;;) switch (_fun4418_ip) {
                             case 0:
                                 var8 = arg0;
@@ -559,7 +559,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onResponderGrant = var2;
-                    var2 = function(arg0) { // Original name: onResponderMove, environment: var0
+                    var2 = function arg0() {
                         _fun4421: for (var _fun4421_ip = 0;;) switch (_fun4421_ip) {
                             case 0:
                                 var3 = arg0;
@@ -655,7 +655,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onResponderMove = var2;
-                    var2 = function(arg0) { // Original name: onResponderRelease, environment: var0
+                    var2 = function arg0() {
                         var3 = _closure3_slot0;
                         var2 = var3._receiveSignal;
                         var1 = 'RESPONDER_RELEASE';
@@ -665,7 +665,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var4.onResponderRelease = var2;
-                    var2 = function(arg0) { // Original name: onResponderTerminate, environment: var0
+                    var2 = function arg0() {
                         var3 = _closure3_slot0;
                         var2 = var3._receiveSignal;
                         var1 = 'RESPONDER_TERMINATED';
@@ -675,7 +675,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var4.onResponderTerminate = var2;
-                    var2 = function() { // Original name: onResponderTerminationRequest, environment: var0
+                    var2 = function() {
                         _fun4424: for (var _fun4424_ip = 0;;) switch (_fun4424_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -694,7 +694,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onResponderTerminationRequest = var2;
-                    var2 = function(arg0) { // Original name: onClick, environment: var0
+                    var2 = function arg0() {
                         _fun4425: for (var _fun4425_ip = 0;;) switch (_fun4425_ip) {
                             case 0:
                                 var2 = arg0;
@@ -968,7 +968,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_receiveSignal';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: _receiveSignal, environment: var1
+        var5 = function arg0, arg1() {
             _fun4430: for (var _fun4430_ip = 0;;) switch (_fun4430_ip) {
                 case 0:
                     var6 = arg0;
@@ -1085,7 +1085,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_performTransitionSideEffects';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: _performTransitionSideEffects, environment: var1
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun4432: for (var _fun4432_ip = 0;;) switch (_fun4432_ip) {
                 case 0:
                     var8 = arg0;
@@ -1287,7 +1287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_activate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: _activate, environment: var1
+        var5 = function arg0() {
             _fun4433: for (var _fun4433_ip = 0;;) switch (_fun4433_ip) {
                 case 0:
                     var2 = arg0;
@@ -1324,7 +1324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_deactivate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: _deactivate, environment: var1
+        var5 = function arg0() {
             _fun4434: for (var _fun4434_ip = 0;;) switch (_fun4434_ip) {
                 case 0:
                     var7 = arg0;
@@ -1401,7 +1401,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_measureResponderRegion';
         var0.key = var5;
-        var5 = function() { // Original name: _measureResponderRegion, environment: var1
+        var5 = function() {
             _fun4436: for (var _fun4436_ip = 0;;) switch (_fun4436_ip) {
                 case 0:
                     var0 = this;
@@ -1448,7 +1448,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_isTouchWithinResponderRegion';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: _isTouchWithinResponderRegion, environment: var1
+        var5 = function arg0, arg1() {
             _fun4437: for (var _fun4437_ip = 0;;) switch (_fun4437_ip) {
                 case 0:
                     var1 = arg0;
@@ -1639,7 +1639,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_handleLongPress';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: _handleLongPress, environment: var1
+        var5 = function arg0() {
             _fun4438: for (var _fun4438_ip = 0;;) switch (_fun4438_ip) {
                 case 0:
                     var3 = this;
@@ -1674,7 +1674,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_cancelHoverInDelayTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: _cancelHoverInDelayTimeout, environment: var1
+        var5 = function() {
             _fun4439: for (var _fun4439_ip = 0;;) switch (_fun4439_ip) {
                 case 0:
                     var1 = this;
@@ -1701,7 +1701,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_cancelHoverOutDelayTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: _cancelHoverOutDelayTimeout, environment: var1
+        var5 = function() {
             _fun4440: for (var _fun4440_ip = 0;;) switch (_fun4440_ip) {
                 case 0:
                     var1 = this;
@@ -1728,7 +1728,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_cancelLongPressDelayTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: _cancelLongPressDelayTimeout, environment: var1
+        var5 = function() {
             _fun4441: for (var _fun4441_ip = 0;;) switch (_fun4441_ip) {
                 case 0:
                     var1 = this;
@@ -1755,7 +1755,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_cancelPressDelayTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: _cancelPressDelayTimeout, environment: var1
+        var5 = function() {
             _fun4442: for (var _fun4442_ip = 0;;) switch (_fun4442_ip) {
                 case 0:
                     var1 = this;
@@ -1782,7 +1782,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_cancelPressOutDelayTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: _cancelPressOutDelayTimeout, environment: var1
+        var5 = function() {
             _fun4443: for (var _fun4443_ip = 0;;) switch (_fun4443_ip) {
                 case 0:
                     var1 = this;
@@ -1809,7 +1809,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setLongPressDeactivationDistance';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: setLongPressDeactivationDistance, environment: var1
+        var1 = function arg0() {
             var0 = arg0;
             _closure1_slot9 = var0;
             var0 = undefined;
@@ -1823,7 +1823,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)();
-    var3 = function(arg0) { // Original name: getTouchFromPressEvent, environment: var4
+    var3 = function arg0() {
         _fun4445: for (var _fun4445_ip = 0;;) switch (_fun4445_ip) {
             case 0:
                 var0 = arg0;

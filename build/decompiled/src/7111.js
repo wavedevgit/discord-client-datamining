@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.AndroidConsumptionState = var3;
     var1.AndroidAcknowledgementState = var2;
     var1.FeatureType = var0;
-    var0 = function(arg0) { // Original name: singleProductAndroidMap, environment: var0
+    var0 = function arg0() {
         _fun58326: for (var _fun58326_ip = 0;;) switch (_fun58326_ip) {
             case 0:
                 var4 = arg0;

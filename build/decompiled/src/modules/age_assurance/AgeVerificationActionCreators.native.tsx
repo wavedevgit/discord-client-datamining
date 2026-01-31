@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot8 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: showAgeVerification, environment: var3
+    var6 = function arg0() {
         _fun51888: for (var _fun51888_ip = 0;;) switch (_fun51888_ip) {
             case 0:
                 var8 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun51888
                 }
             case 17:
-                var1 = function() { // Original name: o, environment: var2
+                var1 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.showAgeVerification = var6;
-    var6 = function(arg0) { // Original name: showAgeVerificationGetStartedModal, environment: var3
+    var6 = function arg0() {
         _fun51896: for (var _fun51896_ip = 0;;) switch (_fun51896_ip) {
             case 0:
                 var0 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.showAgeVerificationGetStartedModal = var6;
-    var3 = function(arg0) { // Original name: openUrl, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 14;

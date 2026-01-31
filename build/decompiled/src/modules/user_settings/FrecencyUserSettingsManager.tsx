@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113145: for (var _fun113145_ip = 0;;) switch (_fun113145_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: handleConnectionOpen, environment: var1
+    var0 = function() {
         var3 = true;
         _closure1_slot22 = var3;
         var2 = _closure1_slot29;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: handleAppStateUpdate, environment: var1
+    var0 = function arg0() {
         _fun113149: for (var _fun113149_ip = 0;;) switch (_fun113149_ip) {
             case 0:
                 var1 = _closure1_slot22;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: handleConnectionClosed, environment: var1
+    var0 = function() {
         _fun113150: for (var _fun113150_ip = 0;;) switch (_fun113150_ip) {
             case 0:
                 var1 = _closure1_slot22;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: saveProtos, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _saveProtos, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1) { // Original name: resetTimer, environment: var1
+    var0 = function arg0, arg1() {
         _fun113156: for (var _fun113156_ip = 0;;) switch (_fun113156_ip) {
             case 0:
                 var0 = arg1;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: FrecencyUserSettingsManager, environment: var0
+        var3 = function arg0() {
             _fun113159: for (var _fun113159_ip = 0;;) switch (_fun113159_ip) {
                 case 0:
                     var4 = this;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = '_initialize';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var2 = _closure1_slot0;
             var3 = _closure1_slot2;
             var1 = 16;
@@ -492,12 +492,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var5.beforeSendCallbacks;
             var6 = var7.push;
             var5 = {};
-            var8 = function() { // Original name: hasChanges, environment: var4
+            var8 = function() {
                 var0 = false;
                 return var0;
             };
             var5.hasChanges = var8;
-            var8 = function() { // Original name: processProto, environment: var4
+            var8 = function() {
                 var3 = _closure1_slot29;
                 var2 = _closure1_slot20;
                 var0 = undefined;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var5.beforeSendCallbacks;
             var6 = var7.push;
             var5 = {};
-            var8 = function() { // Original name: hasChanges, environment: var4
+            var8 = function() {
                 _fun113163: for (var _fun113163_ip = 0;;) switch (_fun113163_ip) {
                     case 0:
                         var2 = _closure1_slot13;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var5.hasChanges = var8;
-            var8 = function(arg0) { // Original name: processProto, environment: var4
+            var8 = function arg0() {
                 _fun113164: for (var _fun113164_ip = 0;;) switch (_fun113164_ip) {
                     case 0:
                         var1 = arg0;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var5.beforeSendCallbacks;
             var6 = var7.push;
             var5 = {};
-            var8 = function() { // Original name: hasChanges, environment: var4
+            var8 = function() {
                 _fun113165: for (var _fun113165_ip = 0;;) switch (_fun113165_ip) {
                     case 0:
                         var2 = _closure1_slot11;
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var5.hasChanges = var8;
-            var8 = function(arg0) { // Original name: processProto, environment: var4
+            var8 = function arg0() {
                 _fun113166: for (var _fun113166_ip = 0;;) switch (_fun113166_ip) {
                     case 0:
                         var1 = arg0;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var5.beforeSendCallbacks;
             var6 = var7.push;
             var5 = {};
-            var8 = function() { // Original name: hasChanges, environment: var4
+            var8 = function() {
                 _fun113167: for (var _fun113167_ip = 0;;) switch (_fun113167_ip) {
                     case 0:
                         var2 = _closure1_slot12;
@@ -705,7 +705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var5.hasChanges = var8;
-            var8 = function(arg0) { // Original name: processProto, environment: var4
+            var8 = function arg0() {
                 _fun113168: for (var _fun113168_ip = 0;;) switch (_fun113168_ip) {
                     case 0:
                         var1 = arg0;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var5.beforeSendCallbacks;
             var6 = var7.push;
             var5 = {};
-            var8 = function() { // Original name: hasChanges, environment: var4
+            var8 = function() {
                 _fun113169: for (var _fun113169_ip = 0;;) switch (_fun113169_ip) {
                     case 0:
                         var2 = _closure1_slot9;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var5.hasChanges = var8;
-            var8 = function(arg0) { // Original name: processProto, environment: var4
+            var8 = function arg0() {
                 _fun113170: for (var _fun113170_ip = 0;;) switch (_fun113170_ip) {
                     case 0:
                         var1 = arg0;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var5.beforeSendCallbacks;
             var6 = var7.push;
             var5 = {};
-            var8 = function() { // Original name: hasChanges, environment: var4
+            var8 = function() {
                 _fun113171: for (var _fun113171_ip = 0;;) switch (_fun113171_ip) {
                     case 0:
                         var2 = _closure1_slot10;
@@ -875,7 +875,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var5.hasChanges = var8;
-            var8 = function(arg0) { // Original name: processProto, environment: var4
+            var8 = function arg0() {
                 _fun113172: for (var _fun113172_ip = 0;;) switch (_fun113172_ip) {
                     case 0:
                         var1 = arg0;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var1.beforeSendCallbacks;
             var2 = var3.push;
             var1 = {};
-            var5 = function() { // Original name: hasChanges, environment: var4
+            var5 = function() {
                 _fun113173: for (var _fun113173_ip = 0;;) switch (_fun113173_ip) {
                     case 0:
                         var2 = _closure1_slot14;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.hasChanges = var5;
-            var4 = function(arg0) { // Original name: processProto, environment: var4
+            var4 = function arg0() {
                 _fun113174: for (var _fun113174_ip = 0;;) switch (_fun113174_ip) {
                     case 0:
                         var1 = arg0;

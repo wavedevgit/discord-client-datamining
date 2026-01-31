@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 0:
             var1 = exports;
             var _closure1_slot0 = var1;
-            var2 = function(arg0, arg1) { // Original name: _createForOfIteratorHelper, environment: var0
+            var2 = function arg0, arg1() {
                 _fun6527: for (var _fun6527_ip = 0;;) switch (_fun6527_ip) {
                     case 0:
                         var5 = arg0;
@@ -156,13 +156,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 346:
                         var0 = 0;
                         var _closure2_slot2 = var0;
-                        var2 = function() { // Original name: F, environment: var1
+                        var2 = function() {
                             var0 = undefined;
                             return var0;
                         };
                         var0 = {};
                         var0.s = var2;
-                        var3 = function() { // Original name: n, environment: var1
+                        var3 = function() {
                             _fun6529: for (var _fun6529_ip = 0;;) switch (_fun6529_ip) {
                                 case 0:
                                     var1 = _closure2_slot2;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.n = var3;
-                        var3 = function(arg0) { // Original name: e, environment: var1
+                        var3 = function arg0() {
                             var0 = arg0;
                             throw var0;
                         };
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = false;
                         var _closure2_slot5 = var0;
                         var0 = {};
-                        var2 = function() { // Original name: s, environment: var1
+                        var2 = function() {
                             var3 = _closure2_slot1;
                             var2 = var3.call;
                             var0 = _closure2_slot0;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var0.s = var2;
-                        var2 = function() { // Original name: n, environment: var1
+                        var2 = function() {
                             var1 = _closure2_slot1;
                             var0 = var1.next;
                             var0 = var0.bind(var1)();
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var0.n = var2;
-                        var2 = function(arg0) { // Original name: e, environment: var1
+                        var2 = function arg0() {
                             var0 = true;
                             _closure2_slot5 = var0;
                             var0 = arg0;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var0.e = var2;
-                        var1 = function() { // Original name: f, environment: var1
+                        var1 = function() {
                             _fun6534: for (var _fun6534_ip = 0;;) switch (_fun6534_ip) {
                                 case 0: // try_start_0
                                     var2 = _closure2_slot4;
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot1 = var2;
-            var2 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var0
+            var2 = function arg0, arg1() {
                 _fun6535: for (var _fun6535_ip = 0;;) switch (_fun6535_ip) {
                     case 0:
                         var3 = arg0;

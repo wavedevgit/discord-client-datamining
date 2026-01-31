@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = null;
     var _closure1_slot1 = var1;
     var1 = {};
-    var4 = function() { // Original name: getConstants, environment: var3
+    var4 = function() {
         _fun4532: for (var _fun4532_ip = 0;;) switch (_fun4532_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getConstants = var4;
-    var4 = function(arg0, arg1) { // Original name: setColor, environment: var3
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = var3.setColor;
         var1 = arg0;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setColor = var4;
-    var4 = function(arg0) { // Original name: setTranslucent, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setTranslucent;
         var0 = arg0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setTranslucent = var4;
-    var4 = function(arg0) { // Original name: setStyle, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setStyle;
         var0 = arg0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setStyle = var4;
-    var3 = function(arg0) { // Original name: setHidden, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setHidden;
         var0 = arg0;

@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5808: for (var _fun5808_ip = 0;;) switch (_fun5808_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var4;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: RefreshControl, environment: var5
+        var3 = function() {
             _fun5812: for (var _fun5812_ip = 0;;) switch (_fun5812_ip) {
                 case 0:
                     var4 = this;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             var1 = this;
             var0 = var1.props;
             var0 = var0.refreshing;
@@ -228,7 +228,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0() {
             _fun5816: for (var _fun5816_ip = 0;;) switch (_fun5816_ip) {
                 case 0:
                     var1 = this;
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             var0 = this;
             var5 = var0.props;
             var1 = var5.tintColor;

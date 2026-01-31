@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun67110: for (var _fun67110_ip = 0;;) switch (_fun67110_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateWithLatestInvite, environment: var3
+    var0 = function arg0, arg1() {
         _fun67113: for (var _fun67113_ip = 0;;) switch (_fun67113_ip) {
             case 0:
                 var8 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: init, environment: var3
+    var0 = function arg0() {
         _fun67115: for (var _fun67115_ip = 0;;) switch (_fun67115_ip) {
             case 0:
                 var1 = arg0;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: CreateInviteModalStore, environment: var5
+        var3 = function() {
             _fun67117: for (var _fun67117_ip = 0;;) switch (_fun67117_ip) {
                 case 0:
                     var3 = this;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot8;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'init';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot10;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isOpen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot19;
             var0 = _closure1_slot11;
             var0 = var0.CLOSED;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSubmitting';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getInvite';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getInviteSettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingSettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProps';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             return var0;
         };
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'onClose';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleInit, environment: var3
+    var8 = function arg0() {
         var2 = _closure1_slot23;
         var0 = undefined;
         var1 = arg0;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CREATE_INVITE_MODAL_INIT = var8;
-    var8 = function(arg0) { // Original name: handleModalOpen, environment: var3
+    var8 = function arg0() {
         _fun67130: for (var _fun67130_ip = 0;;) switch (_fun67130_ip) {
             case 0:
                 var2 = arg0;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CREATE_INVITE_MODAL_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleUpdateSettings, environment: var3
+    var8 = function arg0() {
         _fun67131: for (var _fun67131_ip = 0;;) switch (_fun67131_ip) {
             case 0:
                 var0 = arg0;
@@ -519,14 +519,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CREATE_INVITE_MODAL_UPDATE_SETTINGS = var8;
-    var8 = function() { // Original name: handleResetSettings, environment: var3
+    var8 = function() {
         var0 = _closure1_slot15;
         _closure1_slot16 = var0;
         var0 = undefined;
         return var0;
     };
     var1.CREATE_INVITE_MODAL_RESET_SETTINGS = var8;
-    var8 = function() { // Original name: handleGenerateInvite, environment: var3
+    var8 = function() {
         var0 = _closure1_slot16;
         _closure1_slot15 = var0;
         var0 = true;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CREATE_INVITE_MODAL_GENERATE_INVITE = var8;
-    var8 = function(arg0) { // Original name: handleGenerateInviteSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var4 = null;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CREATE_INVITE_MODAL_GENERATE_INVITE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleGenerateInviteFailure, environment: var3
+    var8 = function arg0() {
         var0 = null;
         _closure1_slot14 = var0;
         var0 = false;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CREATE_INVITE_MODAL_GENERATE_INVITE_FAILURE = var8;
-    var3 = function() { // Original name: handleModalClose, environment: var3
+    var3 = function() {
         var0 = _closure1_slot11;
         var0 = var0.CLOSED;
         _closure1_slot19 = var0;

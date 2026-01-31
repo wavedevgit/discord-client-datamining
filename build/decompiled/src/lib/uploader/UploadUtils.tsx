@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: DefaultHttpClient, environment: var4
+        var2 = function() {
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'sliceBody';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun36920: for (var _fun36920_ip = 0;;) switch (_fun36920_ip) {
                 case 0:
                     var3 = arg0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'doUpload';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun36921: for (var _fun36921_ip = 0;;) switch (_fun36921_ip) {
                 case 0:
                     var2 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var1.bind(var0)();
     var1 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: LibdiscoreHttpClient, environment: var1
+        var2 = function() {
             _fun36923: for (var _fun36923_ip = 0;;) switch (_fun36923_ip) {
                 case 0:
                     var4 = _closure1_slot2;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'doUpload';
         var0.key = var4;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var1
+        var1 = function arg0, arg1() {
             _fun36924: for (var _fun36924_ip = 0;;) switch (_fun36924_ip) {
                 case 0:
                     var5 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var _closure4_slot0 = var1;
                         var1 = arg1;
                         var _closure4_slot1 = var1;
-                        var1 = function() { // Original name: pollStatus, environment: var0
+                        var1 = function() {
                             _fun36926: for (var _fun36926_ip = 0;;) switch (_fun36926_ip) {
                                 case 0:
                                     var1 = _closure3_slot0;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'lib/uploader/UploadUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1) { // Original name: doesImageMatchUpload, environment: var3
+    var5 = function arg0, arg1() {
         _fun36927: for (var _fun36927_ip = 0;;) switch (_fun36927_ip) {
             case 0:
                 var3 = arg0;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.doesImageMatchUpload = var5;
-    var5 = function(arg0, arg1) { // Original name: calculateProgress, environment: var3
+    var5 = function arg0, arg1() {
         _fun36928: for (var _fun36928_ip = 0;;) switch (_fun36928_ip) {
             case 0:
                 var2 = arg1;
@@ -662,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.calculateProgress = var5;
     var2.DefaultHttpClient = var4;
-    var3 = function(arg0) { // Original name: canUploadNatively, environment: var3
+    var3 = function arg0() {
         _fun36929: for (var _fun36929_ip = 0;;) switch (_fun36929_ip) {
             case 0:
                 var2 = arg0;

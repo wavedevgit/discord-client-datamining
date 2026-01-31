@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hang_status/useHangStatusActivity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useHangStatusActivity, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

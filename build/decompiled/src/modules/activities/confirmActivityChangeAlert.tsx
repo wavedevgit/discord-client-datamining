@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/confirmActivityChangeAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: confirmActivityChangeModal, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun64031: for (var _fun64031_ip = 0;;) switch (_fun64031_ip) {
             case 0:
                 var12 = arg0;

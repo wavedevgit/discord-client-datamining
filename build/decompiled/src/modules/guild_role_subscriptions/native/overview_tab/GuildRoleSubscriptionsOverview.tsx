@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: serverNameHook, environment: var4
+    var3 = function arg0() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var3;
-    var1 = function(arg0) { // Original name: RoleSubscriptionsUnavailableNotice, environment: var4
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.serverName;
         var3 = _closure1_slot7;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var1;
-    var0 = function(arg0) { // Original name: PurchasePage, environment: var4
+    var0 = function arg0() {
         _fun104677: for (var _fun104677_ip = 0;;) switch (_fun104677_ip) {
             case 0:
                 var0 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: GuildRoleSubscriptionsOverview, environment: var4
+    var4 = function arg0() {
         _fun104678: for (var _fun104678_ip = 0;;) switch (_fun104678_ip) {
             case 0:
                 var0 = arg0;

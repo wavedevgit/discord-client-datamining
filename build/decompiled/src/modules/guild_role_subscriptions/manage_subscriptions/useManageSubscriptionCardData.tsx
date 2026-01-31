@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/manage_subscriptions/useManageSubscriptionCardData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useManageSubscriptionCardData, environment: var1
+    var1 = function arg0() {
         _fun84067: for (var _fun84067_ip = 0;;) switch (_fun84067_ip) {
             case 0:
                 var7 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.guild = var6;
                 var0.expanded = var5;
-                var4 = function() { // Original name: handleToggleExpanded, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot5;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0

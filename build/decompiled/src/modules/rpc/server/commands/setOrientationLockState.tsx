@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var6 = var3.SET_ORIENTATION_LOCK_STATE;
     var3 = {};
-    var8 = function(arg0) { // Original name: validation, environment: var7
+    var8 = function arg0() {
         var6 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.validation = var8;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         _fun98129: for (var _fun98129_ip = 0;;) switch (_fun98129_ip) {
             case 0:
                 var1 = arg0;

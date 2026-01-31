@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = 'function DoubleTapToReactActionSheetTsx1(){const{sizeValue,left,rotationValue,top,positionValue,opacityValue}=this.__closure;return{position:\'absolute\',transform:[{scale:sizeValue.get()},{rotate:(left===true?-1:1)*rotationValue.get()+"deg"}],top:top===true?-positionValue.get():positionValue.get(),left:left===true?-positionValue.get()*1.5:positionValue.get()*1.5,opacity:opacityValue.get()};}';
             var3.code = var6;
             var _closure1_slot15 = var3;
-            var3 = function(arg0) { // Original name: EmojiConfetti, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var4 = var0.emojiComponent;
                 var11 = var0.top;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6[var0];
                 var7 = var7.bind(var3)(var5);
                 var5 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: S, environment: var2
+                var2 = function() {
                     _fun89726: for (var _fun89726_ip = 0;;) switch (_fun89726_ip) {
                         case 0:
                             var0 = {};
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var3;
-            var3 = function(arg0) { // Original name: EmojiBurstAnimation, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var8 = var0.emojiComponent;
                 var0 = _closure1_slot14;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/double_tap_to_react/native/DoubleTapToReactActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: DoubleTapToReactActionSheet, environment: var1
+            var1 = function arg0() {
                 _fun89728: for (var _fun89728_ip = 0;;) switch (_fun89728_ip) {
                     case 0:
                         var1 = arg0;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var9[var10];
                         var8 = var5.bind(var3)(var2);
                         var4 = var8.useAnimatedStyle;
-                        var2 = function() { // Original name: w, environment: var0
+                        var2 = function() {
                             var0 = {};
                             var2 = {};
                             var6 = _closure1_slot0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var9[var10];
                         var12 = var5.bind(var3)(var4);
                         var5 = var12.useAnimatedStyle;
-                        var4 = function() { // Original name: y, environment: var0
+                        var4 = function() {
                             var0 = {};
                             var3 = {};
                             var4 = _closure2_slot10;
@@ -1215,7 +1215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var14 = var15.withTiming;
                                     var6 = {};
                                     var6.duration = var2;
-                                    var2 = function() { // Original name: t, environment: var1
+                                    var2 = function() {
                                         var1 = _closure1_slot0;
                                         var2 = _closure1_slot2;
                                         var0 = 13;

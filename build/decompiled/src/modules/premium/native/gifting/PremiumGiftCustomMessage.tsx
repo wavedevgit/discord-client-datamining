@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: GiftCustomMessage, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.onFocusMessage;
         var1 = var0.setMessagePosition;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = var5.container;
         var0.style = var5;
-        var4 = function(arg0) { // Original name: onLayout, environment: var4
+        var4 = function arg0() {
             var2 = _closure2_slot0;
             var0 = arg0;
             var0 = var0.nativeEvent;

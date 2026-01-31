@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun82255: for (var _fun82255_ip = 0;;) switch (_fun82255_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: RowSwitch, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var6 = var2.label;
         var0 = null;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.relinkText = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot22 = var6;
-    var6 = function(arg0) { // Original name: Integration, environment: var1
+    var6 = function arg0() {
         _fun82259: for (var _fun82259_ip = 0;;) switch (_fun82259_ip) {
             case 0:
                 var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.ButtonLooks;
                 var8 = var8.FILLED;
                 var0.look = var8;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var0 = _closure2_slot0;
                     var4 = var0.id;
                     var2 = _closure1_slot1;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var3 = var2.bind(var0)(var1);
                     var2 = var3.joinServer;
-                    var1 = function() { // Original name: n, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot1;
                         var0 = _closure2_slot0;
                         var1 = var0.id;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot23 = var6;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ConnectedAccount, environment: var5
+        var3 = function arg0() {
             _fun82265: for (var _fun82265_ip = 0;;) switch (_fun82265_ip) {
                 case 0:
                     var4 = this;
@@ -1322,7 +1322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidUpdate';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun82284: for (var _fun82284_ip = 0;;) switch (_fun82284_ip) {
                 case 0:
                     var2 = this;
@@ -1415,7 +1415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderUpsell';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun82285: for (var _fun82285_ip = 0;;) switch (_fun82285_ip) {
                 case 0:
                     var0 = this;
@@ -1480,7 +1480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderVisibilityCheckRow';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var5 = this;
             var0 = arg0;
             var4 = var0.isLastRow;
@@ -1515,7 +1515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderMetadataVisibilityCheckRow';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun82287: for (var _fun82287_ip = 0;;) switch (_fun82287_ip) {
                 case 0:
                     var6 = this;
@@ -1584,7 +1584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderMetadata';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun82288: for (var _fun82288_ip = 0;;) switch (_fun82288_ip) {
                 case 0:
                     var17 = this;
@@ -1802,7 +1802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'left': 8
                     };
                     var2.hitSlop = var7;
-                    var7 = function() { // Original name: onPress, environment: var9
+                    var7 = function() {
                         var3 = _closure3_slot0;
                         var2 = var3.setState;
                         var0 = {};
@@ -1983,7 +1983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var18 = var18.ButtonSizes;
                     var18 = var18.SMALL;
                     var8.size = var18;
-                    var18 = function() { // Original name: onPress, environment: var9
+                    var18 = function() {
                         var3 = _closure3_slot0;
                         var2 = var3.setState;
                         var0 = {};
@@ -2051,7 +2051,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6.size = var11;
                     var10 = var10.learnMoreButton;
                     var6.style = var10;
-                    var9 = function() { // Original name: onPress, environment: var9
+                    var9 = function() {
                         var5 = _closure1_slot1;
                         var6 = _closure1_slot2;
                         var1 = 35;
@@ -2083,7 +2083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderFriendSyncCheckRow';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun82294: for (var _fun82294_ip = 0;;) switch (_fun82294_ip) {
                 case 0:
                     var6 = this;
@@ -2142,7 +2142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderActivityCheckRow';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun82295: for (var _fun82295_ip = 0;;) switch (_fun82295_ip) {
                 case 0:
                     var6 = this;
@@ -2204,7 +2204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderIntegrationsRow';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun82296: for (var _fun82296_ip = 0;;) switch (_fun82296_ip) {
                 case 0:
                     var0 = this;
@@ -2313,7 +2313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun82298: for (var _fun82298_ip = 0;;) switch (_fun82298_ip) {
                 case 0:
                     var19 = this;

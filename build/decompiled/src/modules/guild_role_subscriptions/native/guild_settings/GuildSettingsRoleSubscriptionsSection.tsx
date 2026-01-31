@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: HasCreatedListingsSection, environment: var1
+    var0 = function arg0() {
         _fun114602: for (var _fun114602_ip = 0;;) switch (_fun114602_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.source = var17;
                 var4 = var16.bind(var3)(var14, var4);
                 var7.leading = var4;
-                var4 = function() { // Original name: onPress, environment: var5
+                var4 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot6;
                     var1 = var0.ROLE_SUBSCRIPTIONS_BASIC;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.source = var17;
                 var7 = var16.bind(var3)(var15, var7);
                 var8.leading = var7;
-                var7 = function() { // Original name: onPress, environment: var5
+                var7 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot6;
                     var1 = var0.ROLE_SUBSCRIPTIONS_TIERS;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.source = var17;
                 var7 = var16.bind(var3)(var15, var7);
                 var8.leading = var7;
-                var7 = function() { // Original name: onPress, environment: var5
+                var7 = function() {
                     var3 = _closure2_slot1;
                     var1 = _closure1_slot6;
                     var2 = var1.ROLE_SUBSCRIPTIONS_PAYMENTS;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.source = var12;
                 var9 = var11.bind(var3)(var10, var9);
                 var6.leading = var9;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot6;
                     var1 = var0.ROLE_SUBSCRIPTIONS_EMOJIS;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionsSection, environment: var1
+    var1 = function arg0() {
         _fun114608: for (var _fun114608_ip = 0;;) switch (_fun114608_ip) {
             case 0:
                 var0 = arg0;

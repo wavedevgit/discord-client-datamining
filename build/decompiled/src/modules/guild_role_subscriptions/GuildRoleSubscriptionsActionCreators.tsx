@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun49661: for (var _fun49661_ip = 0;;) switch (_fun49661_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun49663: for (var _fun49663_ip = 0;;) switch (_fun49663_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _fetchSubscriptionsSettings, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _updateSubscriptionsSettings, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _fetchAllSubscriptionListingsDataForGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _createSubscriptionGroupListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _updateSubscriptionGroupListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -753,7 +753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _deleteSubscriptionGroupListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -819,7 +819,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _fetchSubscriptionListingForPlan, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -956,7 +956,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _deleteSubscriptionListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _archiveSubscriptionListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1088,7 +1088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _updateSubscriptionTrial, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1154,7 +1154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var3 = function() { // Original name: fetchGuildRoleSubscriptionGroupListing, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -1165,7 +1165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var3;
-    var0 = function() { // Original name: _fetchGuildRoleSubscriptionGroupListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1252,7 +1252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _createSubscriptionListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _updateSubscriptionListing, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1489,7 +1489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: _fetchMonetizationRestrictions, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1728,7 +1728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/GuildRoleSubscriptionsActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: fetchSubscriptionsSettings, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -1739,7 +1739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSubscriptionsSettings = var4;
-    var4 = function() { // Original name: updateSubscriptionsSettings, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -1750,7 +1750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateSubscriptionsSettings = var4;
-    var4 = function() { // Original name: fetchAllSubscriptionListingsDataForGuild, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -1761,7 +1761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchAllSubscriptionListingsDataForGuild = var4;
-    var4 = function() { // Original name: createSubscriptionGroupListing, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -1772,7 +1772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createSubscriptionGroupListing = var4;
-    var4 = function() { // Original name: updateSubscriptionGroupListing, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -1783,7 +1783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateSubscriptionGroupListing = var4;
-    var4 = function() { // Original name: deleteSubscriptionGroupListing, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -1794,7 +1794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.deleteSubscriptionGroupListing = var4;
-    var4 = function() { // Original name: fetchSubscriptionListingForPlan, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -1805,7 +1805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSubscriptionListingForPlan = var4;
-    var4 = function() { // Original name: deleteSubscriptionListing, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;
@@ -1816,7 +1816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.deleteSubscriptionListing = var4;
-    var4 = function() { // Original name: archiveSubscriptionListing, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -1827,7 +1827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.archiveSubscriptionListing = var4;
-    var4 = function() { // Original name: updateSubscriptionTrial, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -1839,7 +1839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateSubscriptionTrial = var4;
     var2.fetchGuildRoleSubscriptionGroupListing = var3;
-    var3 = function() { // Original name: createSubscriptionListing, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -1850,7 +1850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createSubscriptionListing = var3;
-    var3 = function() { // Original name: updateSubscriptionListing, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;
@@ -1861,7 +1861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateSubscriptionListing = var3;
-    var1 = function() { // Original name: fetchMonetizationRestrictions, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: getMatchData, environment: var1
+    var0 = function arg0() {
         _fun98652: for (var _fun98652_ip = 0;;) switch (_fun98652_ip) {
             case 0:
                 var2 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'guildId': null,
             'channelId': null
         };
-        var2 = function(arg0) { // Original name: updatePath, environment: var1
+        var2 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot4;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.updatePath = var2;
-        var1 = function(arg0) { // Original name: resetPath, environment: var1
+        var1 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot4;

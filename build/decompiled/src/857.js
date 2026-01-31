@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: logIgnoredSpan, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0, arg1) { // Original name: reparentChildSpans, environment: var0
+    var2 = function arg0, arg1() {
         _fun9026: for (var _fun9026_ip = 0;;) switch (_fun9026_ip) {
             case 0:
                 var2 = arg1;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.reparentChildSpans = var2;
-    var0 = function(arg0, arg1) { // Original name: shouldIgnoreSpan, environment: var0
+    var0 = function arg0, arg1() {
         _fun9027: for (var _fun9027_ip = 0;;) switch (_fun9027_ip) {
             case 0:
                 var2 = arg1;

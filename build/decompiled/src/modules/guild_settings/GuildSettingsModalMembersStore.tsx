@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun79018: for (var _fun79018_ip = 0;;) switch (_fun79018_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var9 = function() { // Original name: handleStopEditingRoles, environment: var3
+    var9 = function() {
         var0 = null;
         _closure1_slot7 = var0;
         var2 = false;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var8 = function() { // Original name: handleChangeNicknameSuccess, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot9 = var0;
         var0 = undefined;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildSettingsModalMembersStore, environment: var5
+        var3 = function() {
             _fun79024: for (var _fun79024_ip = 0;;) switch (_fun79024_ip) {
                 case 0:
                     var3 = this;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot5;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSubmitting';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot7;
             var0 = _closure1_slot6;
             var0 = var0.SUBMITTING;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isEditing';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'roles';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'memberId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'nicknameError';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var10 = function(arg0) { // Original name: handleStartEditingRoles, environment: var3
+    var10 = function arg0() {
         _fun79031: for (var _fun79031_ip = 0;;) switch (_fun79031_ip) {
             case 0:
                 var0 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING = var10;
     var1.GUILD_SETTINGS_MODAL_MEMBERS_STOP_EDITING = var9;
     var1.GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE_COMPLETE = var9;
-    var9 = function(arg0) { // Original name: handleToggleRole, environment: var3
+    var9 = function arg0() {
         _fun79032: for (var _fun79032_ip = 0;;) switch (_fun79032_ip) {
             case 0:
                 var1 = arg0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_SETTINGS_MODAL_MEMBERS_TOGGLE_ROLE = var9;
-    var9 = function() { // Original name: handleSaveRoles, environment: var3
+    var9 = function() {
         var0 = _closure1_slot6;
         var0 = var0.SUBMITTING;
         _closure1_slot7 = var0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE = var9;
     var1.GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING_NICKNAME = var8;
     var1.GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_SUCCESS = var8;
-    var3 = function(arg0) { // Original name: handleChangeNicknameFailure, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         _closure1_slot9 = var1;

@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_icons/native/SettingsItemAppIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SettingsItemAppIcon, environment: var1
+    var1 = function() {
         _fun85322: for (var _fun85322_ip = 0;;) switch (_fun85322_ip) {
             case 0:
                 var0 = _closure1_slot5;

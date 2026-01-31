@@ -110,14 +110,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var7 = var6.memo;
-    var3 = function() { // Original name: LeftMenuTabsInner, environment: var1
+    var3 = function() {
         _fun100706: for (var _fun100706_ip = 0;;) switch (_fun100706_ip) {
             case 0:
                 var1 = _closure1_slot11;
                 var3 = undefined;
                 var15 = var1.bind(var3)();
                 var _closure2_slot0 = var15;
-                var1 = function() { // Original name: useMainChannelsRouteInfo, environment: var0
+                var1 = function() {
                     _fun100707: for (var _fun100707_ip = 0;;) switch (_fun100707_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: MainChannelsRedesignInner, environment: var1
+    var1 = function() {
         var3 = _closure1_slot9;
         var1 = _closure1_slot1;
         var7 = _closure1_slot2;

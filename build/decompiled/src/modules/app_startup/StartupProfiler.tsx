@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.Messages = var4;
     var4 = {};
     var _closure1_slot4 = var4;
-    var8 = function(arg0, arg1) { // Original name: setLevels, environment: var3
+    var8 = function arg0, arg1() {
         _fun88965: for (var _fun88965_ip = 0;;) switch (_fun88965_ip) {
             case 0:
                 var9 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_startup/StartupProfiler.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: StartupProfiler, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var6 = var0.profile;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.Profiler;
         var0 = {};
         var0.id = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: onRender, environment: var5
+        var5 = function arg0, arg1, arg2() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot1;
             var0 = 2;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var2 = {};
-    var4 = function() { // Original name: get ColorPropType, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get EdgeInsetsPropType, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ImagePropTypes, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get PointPropType, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TextInputPropTypes, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TextPropTypes, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var3 = function() { // Original name: get ViewPropTypes, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;

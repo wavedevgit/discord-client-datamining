@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: addConsoleBreadcrumb, environment: var1
+    var3 = function arg0, arg1() {
         _fun9666: for (var _fun9666_ip = 0;;) switch (_fun9666_ip) {
             case 0:
                 var5 = arg0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var0 = function(arg0) { // Original name: formatConsoleArgs, environment: var1
+    var0 = function arg0() {
         _fun9667: for (var _fun9667_ip = 0;;) switch (_fun9667_ip) {
             case 0:
                 var6 = arg0;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'Console';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var3 = _closure1_slot0;

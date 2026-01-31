@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FriendsScreen, environment: var1
+    var1 = function() {
         var6 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 7;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.outgoing = var7;
                     var3 = var5.bind(var6)(var4, var3);
                     var1.subLabel = var3;
-                    var3 = function() { // Original name: onPress, environment: var3
+                    var3 = function() {
                         var3 = _closure2_slot0;
                         var2 = var3.navigate;
                         var1 = {};
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = var16.bind(var17)(var14, var12);
                 case 419:
                     var9.subLabel = var11;
-                    var11 = function() { // Original name: onPress, environment: var13
+                    var11 = function() {
                         _fun107137: for (var _fun107137_ip = 0;;) switch (_fun107137_ip) {
                             case 0:
                                 var2 = _closure2_slot4;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10.text = var14;
                     var14 = 'lg';
                     var10.size = var14;
-                    var13 = function() { // Original name: onPress, environment: var13
+                    var13 = function() {
                         var3 = _closure2_slot0;
                         var2 = var3.navigate;
                         var1 = {};

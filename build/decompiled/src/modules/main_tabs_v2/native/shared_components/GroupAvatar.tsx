@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AnimatedContainer, environment: var1
+    var0 = function arg0() {
         _fun91670: for (var _fun91670_ip = 0;;) switch (_fun91670_ip) {
             case 0:
                 var1 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0[var5];
                 var9 = var14.bind(var3)(var6);
                 var6 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: b, environment: var2
+                var2 = function() {
                     _fun91673: for (var _fun91673_ip = 0;;) switch (_fun91673_ip) {
                         case 0:
                             var0 = {};
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: GroupMemberCount, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.count;
         var0 = _closure1_slot11;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: GroupMemberAvatar, environment: var1
+    var0 = function arg0() {
         _fun91675: for (var _fun91675_ip = 0;;) switch (_fun91675_ip) {
             case 0:
                 var1 = arg0;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/GroupAvatar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GroupAvatar, environment: var1
+    var1 = function arg0() {
         _fun91677: for (var _fun91677_ip = 0;;) switch (_fun91677_ip) {
             case 0:
                 var2 = arg0;

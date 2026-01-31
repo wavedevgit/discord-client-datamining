@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: getIcon, environment: var3
+    var0 = function arg0() {
         _fun52955: for (var _fun52955_ip = 0;;) switch (_fun52955_ip) {
             case 0:
                 var1 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: useContainerStyle, environment: var3
+    var0 = function arg0, arg1() {
         _fun52956: for (var _fun52956_ip = 0;;) switch (_fun52956_ip) {
             case 0:
                 var2 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'uikit-native/HelpMessage.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: HelpMessage, environment: var3
+    var3 = function arg0() {
         _fun52957: for (var _fun52957_ip = 0;;) switch (_fun52957_ip) {
             case 0:
                 var0 = arg0;

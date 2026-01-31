@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/transformUploaderAttachments.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createUploaderAttachments, environment: var1
+    var1 = function arg0() {
         _fun56014: for (var _fun56014_ip = 0;;) switch (_fun56014_ip) {
             case 0:
                 var1 = arg0;

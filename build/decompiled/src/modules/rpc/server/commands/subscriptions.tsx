@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var8 = var3.SUBSCRIBE;
     var6 = {};
-    var9 = function(arg0) { // Original name: handler, environment: var7
+    var9 = function arg0() {
         var1 = arg0;
         var2 = var1.server;
         var _closure2_slot0 = var2;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[var8] = var6;
     var6 = var3.UNSUBSCRIBE;
     var3 = {};
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         _fun98250: for (var _fun98250_ip = 0;;) switch (_fun98250_ip) {
             case 0:
                 var0 = arg0;

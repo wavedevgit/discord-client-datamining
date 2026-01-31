@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ReplyRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ContentInventoryReplyRow, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var13 = var0.reactText;
         var7 = var0.onReply;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ContentInventoryReplyRow = var3;
-    var1 = function(arg0) { // Original name: GeneratedCandidateReplyRow, environment: var1
+    var1 = function arg0() {
         _fun104200: for (var _fun104200_ip = 0;;) switch (_fun104200_ip) {
             case 0:
                 var1 = arg0;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = var4.bind(var0)(var3);
                     var3 = {};
                     var3.item = var2;
-                    var1 = function() { // Original name: onShare, environment: var1
+                    var1 = function() {
                         _fun104208: for (var _fun104208_ip = 0;;) switch (_fun104208_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var6.bind(var7)(var5);
                             case 203:
                                 var1.content = var4;
-                                var4 = function() { // Original name: icon, environment: var4
+                                var4 = function() {
                                     _fun104209: for (var _fun104209_ip = 0;;) switch (_fun104209_ip) {
                                         case 0:
                                             var0 = _closure2_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun105988: for (var _fun105988_ip = 0;;) switch (_fun105988_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun105990: for (var _fun105990_ip = 0;;) switch (_fun105990_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: stripPossessive, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /('|\u2019|\uFF07)(s|S)$/;
@@ -257,14 +257,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: lowercase, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = var1.toLowerCase;
         var0 = var0.bind(var1)();
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: isStopWord, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot3;
         var1 = var2.has;
         var0 = arg0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: isBlank, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.length;
         var0 = 0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var5 = function(arg0) { // Original name: analyze, environment: var1
+    var5 = function arg0() {
         var6 = arg0;
         var2 = _closure1_slot1;
         var5 = _closure1_slot2;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0, arg1) { // Original name: shouldHighlight, environment: var1
+    var4 = function arg0, arg1() {
         _fun105996: for (var _fun105996_ip = 0;;) switch (_fun105996_ip) {
             case 0:
                 var2 = arg1;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: highlightAST, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun105997: for (var _fun105997_ip = 0;;) switch (_fun105997_ip) {
             case 0:
                 var0 = arg0;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.analyze = var5;
     var2.shouldHighlight = var4;
     var2.highlightAST = var3;
-    var1 = function(arg0) { // Original name: createASTHighlighter, environment: var1
+    var1 = function arg0() {
         _fun106001: for (var _fun106001_ip = 0;;) switch (_fun106001_ip) {
             case 0:
                 var4 = arg0;

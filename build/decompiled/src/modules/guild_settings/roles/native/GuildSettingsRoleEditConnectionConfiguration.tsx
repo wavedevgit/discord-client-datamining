@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Header, environment: var1
+    var0 = function arg0() {
         _fun116081: for (var _fun116081_ip = 0;;) switch (_fun116081_ip) {
             case 0:
                 var0 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: BooleanConfigRule, environment: var1
+    var0 = function arg0() {
         _fun116082: for (var _fun116082_ip = 0;;) switch (_fun116082_ip) {
             case 0:
                 var0 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.disabled = var9;
                 var9 = true;
                 var5.renderIosBackground = var9;
-                var8 = function(arg0) { // Original name: onValueChange, environment: var8
+                var8 = function arg0() {
                     _fun116083: for (var _fun116083_ip = 0;;) switch (_fun116083_ip) {
                         case 0:
                             var1 = null;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: NumericalConfigRule, environment: var1
+    var0 = function arg0() {
         _fun116084: for (var _fun116084_ip = 0;;) switch (_fun116084_ip) {
             case 0:
                 var0 = arg0;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 1;
                 var0 = var5[var0];
                 _closure2_slot11 = var0;
-                var21 = function(arg0) { // Original name: onInputValueChange, environment: var8
+                var21 = function arg0() {
                     _fun116085: for (var _fun116085_ip = 0;;) switch (_fun116085_ip) {
                         case 0:
                             var2 = arg0;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.intl;
                 var2 = var5.format;
                 var0 = {};
-                var14 = function() { // Original name: metadataHook, environment: var8
+                var14 = function() {
                     var4 = _closure1_slot11;
                     var3 = _closure1_slot5;
                     var2 = {};
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.disabled = var9;
                 var9 = true;
                 var5.renderIosBackground = var9;
-                var8 = function(arg0) { // Original name: onValueChange, environment: var8
+                var8 = function arg0() {
                     _fun116087: for (var _fun116087_ip = 0;;) switch (_fun116087_ip) {
                         case 0:
                             var1 = null;
@@ -898,7 +898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: BlueskyMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1006,7 +1006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: SteamMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1143,7 +1143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: TwitterMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1286,7 +1286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: RedditMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1434,7 +1434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: PaypalMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1519,7 +1519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: EbayMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1694,7 +1694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: TikTokMetadataRules, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.configMetadataMap;
         var9 = var0.onConfigurationChange;
@@ -1807,7 +1807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ApplicationMetadataRules, environment: var1
+    var0 = function arg0() {
         _fun116095: for (var _fun116095_ip = 0;;) switch (_fun116095_ip) {
             case 0:
                 var0 = arg0;
@@ -2198,7 +2198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionConfiguration.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleEditConnectionConfiguration, environment: var1
+    var1 = function arg0() {
         _fun116097: for (var _fun116097_ip = 0;;) switch (_fun116097_ip) {
             case 0:
                 var4 = arg0;
@@ -2541,7 +2541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.theme = var16;
                 var5.platform = var15;
                 var5.integration = var14;
-                var13 = function() { // Original name: onRemove, environment: var13
+                var13 = function() {
                     var3 = _closure2_slot0;
                     var0 = _closure2_slot2;
                     var2 = var0.index;

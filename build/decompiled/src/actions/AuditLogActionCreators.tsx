@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: isLoading, environment: var1
+    var0 = function() {
         _fun115153: for (var _fun115153_ip = 0;;) switch (_fun115153_ip) {
             case 0:
                 var0 = _closure1_slot3;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: makeRequest, environment: var1
+    var0 = function arg0, arg1() {
         _fun115154: for (var _fun115154_ip = 0;;) switch (_fun115154_ip) {
             case 0:
                 var1 = arg1;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: fetchLogs, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun115155: for (var _fun115155_ip = 0;;) switch (_fun115155_ip) {
             case 0:
                 var4 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'actions/AuditLogActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.fetchLogs = var3;
-    var3 = function(arg0) { // Original name: fetchNextLogPage, environment: var1
+    var3 = function arg0() {
         _fun115158: for (var _fun115158_ip = 0;;) switch (_fun115158_ip) {
             case 0:
                 var4 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchNextLogPage = var3;
-    var3 = function(arg0, arg1) { // Original name: filterByAction, environment: var1
+    var3 = function arg0, arg1() {
         _fun115161: for (var _fun115161_ip = 0;;) switch (_fun115161_ip) {
             case 0:
                 var4 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterByAction = var3;
-    var3 = function(arg0, arg1) { // Original name: filterByUserId, environment: var1
+    var3 = function arg0, arg1() {
         _fun115162: for (var _fun115162_ip = 0;;) switch (_fun115162_ip) {
             case 0:
                 var3 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterByUserId = var3;
-    var1 = function(arg0, arg1) { // Original name: filterByTargetId, environment: var1
+    var1 = function arg0, arg1() {
         _fun115163: for (var _fun115163_ip = 0;;) switch (_fun115163_ip) {
             case 0:
                 var4 = arg0;

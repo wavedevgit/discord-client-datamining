@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var8;
-    var0 = function(arg0) { // Original name: generateAcceptInviteOptions, environment: var3
+    var0 = function arg0() {
         _fun51616: for (var _fun51616_ip = 0;;) switch (_fun51616_ip) {
             case 0:
                 var3 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0) { // Original name: transitionToInviteChannel, environment: var3
+    var0 = function arg0() {
         _fun51617: for (var _fun51617_ip = 0;;) switch (_fun51617_ip) {
             case 0:
                 var0 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = arg0;
                                 var1 = var1.default;
                                 var _closure4_slot0 = var1;
-                                var1 = function() { // Original name: connect, environment: var0
+                                var1 = function() {
                                     _fun51620: for (var _fun51620_ip = 0;;) switch (_fun51620_ip) {
                                         case 0:
                                             var1 = _closure2_slot9;
@@ -764,7 +764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var5 = var6.bind(var0)(var5);
             case 754:
-                var1 = function(arg0, arg1) { // Original name: getTransition, environment: var1
+                var1 = function arg0, arg1() {
                     _fun51621: for (var _fun51621_ip = 0;;) switch (_fun51621_ip) {
                         case 0:
                             var1 = arg1;
@@ -862,7 +862,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var0;
-    var1 = function(arg0, arg1, arg2) { // Original name: trackInviteServerClicked, environment: var3
+    var1 = function arg0, arg1, arg2() {
         _fun51623: for (var _fun51623_ip = 0;;) switch (_fun51623_ip) {
             case 0:
                 var6 = arg2;
@@ -1017,7 +1017,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot35 = var4;
     var4 = null;
     var _closure1_slot36 = var4;
-    var6 = function(arg0, arg1) { // Original name: transitionToInviteChannelSync, environment: var3
+    var6 = function arg0, arg1() {
         _fun51624: for (var _fun51624_ip = 0;;) switch (_fun51624_ip) {
             case 0:
                 var2 = arguments[2];
@@ -1139,7 +1139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun51625;
                         case 223:
                             var3 = _closure2_slot1;
-                            var2 = function(arg0) { // Original name: transitionToInviteEvent, environment: var2
+                            var2 = function arg0() {
                                 _fun51626: for (var _fun51626_ip = 0;;) switch (_fun51626_ip) {
                                     case 0:
                                         var1 = arg0;
@@ -1279,7 +1279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var0)();
     var5 = {};
-    var9 = function(arg0, arg1, arg2) { // Original name: resolveInvite, environment: var3
+    var9 = function arg0, arg1, arg2() {
         _fun51632: for (var _fun51632_ip = 0;;) switch (_fun51632_ip) {
             case 0:
                 var5 = arg0;
@@ -1390,7 +1390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot40 = var9;
     var5.resolveInvite = var9;
-    var9 = function(arg0, arg1) { // Original name: getInviteContext, environment: var3
+    var9 = function arg0, arg1() {
         _fun51635: for (var _fun51635_ip = 0;;) switch (_fun51635_ip) {
             case 0:
                 var2 = arg1;
@@ -1438,7 +1438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getInviteContext = var9;
-    var9 = function(arg0) { // Original name: createInvite, environment: var3
+    var9 = function arg0() {
         _fun51636: for (var _fun51636_ip = 0;;) switch (_fun51636_ip) {
             case 0:
                 var2 = arguments[1];
@@ -1586,7 +1586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.createInvite = var9;
-    var9 = function(arg0, arg1) { // Original name: mobileCreateInvite, environment: var3
+    var9 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1692,7 +1692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.mobileCreateInvite = var9;
-    var9 = function(arg0) { // Original name: getAllFriendInvites, environment: var3
+    var9 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;
@@ -1883,7 +1883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.getAllFriendInvites = var9;
-    var9 = function(arg0, arg1) { // Original name: createFriendInvite, environment: var3
+    var9 = function arg0, arg1() {
         _fun51649: for (var _fun51649_ip = 0;;) switch (_fun51649_ip) {
             case 0:
                 var4 = arg0;
@@ -1963,7 +1963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.createFriendInvite = var9;
-    var9 = function() { // Original name: revokeFriendInvites, environment: var3
+    var9 = function() {
         var1 = _closure1_slot1;
         var4 = _closure1_slot3;
         var0 = 36;
@@ -2015,7 +2015,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.revokeFriendInvites = var9;
-    var9 = function(arg0) { // Original name: revokeFriendInvite, environment: var3
+    var9 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot3;
         var0 = 41;
@@ -2036,7 +2036,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.revokeFriendInvite = var9;
-    var9 = function(arg0) { // Original name: fetchFriendMembers, environment: var3
+    var9 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;
@@ -2073,7 +2073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var8.NetworkActionNames;
                         var8 = var8.INVITE_FRIEND_MEMBERS_FETCH;
                         var7.event = var8;
-                        var8 = function(arg0) { // Original name: properties, environment: var8
+                        var8 = function arg0() {
                             _fun51658: for (var _fun51658_ip = 0;;) switch (_fun51658_ip) {
                                 case 0:
                                     var5 = arg0;
@@ -2191,7 +2191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.fetchFriendMembers = var9;
-    var9 = function(arg0) { // Original name: clearInviteFromStore, environment: var3
+    var9 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 36;
@@ -2208,7 +2208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.clearInviteFromStore = var9;
-    var9 = function(arg0) { // Original name: revokeInvite, environment: var3
+    var9 = function arg0() {
         var6 = arg0;
         var10 = var6.code;
         var _closure2_slot0 = var10;
@@ -2274,7 +2274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.revokeInvite = var9;
-    var9 = function(arg0) { // Original name: acceptInvite, environment: var3
+    var9 = function arg0() {
         _fun51662: for (var _fun51662_ip = 0;;) switch (_fun51662_ip) {
             case 0:
                 var0 = arg0;
@@ -2659,7 +2659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.acceptInvite = var9;
-    var9 = function(arg0) { // Original name: acceptInviteAndTransitionToInviteChannel, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = this;
         var6 = var0.inviteKey;
@@ -2674,7 +2674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.inviteKey = var6;
         var0.context = var5;
         var0.skipOnboarding = var4;
-        var3 = function(arg0) { // Original name: callback, environment: var3
+        var3 = function arg0() {
             _fun51670: for (var _fun51670_ip = 0;;) switch (_fun51670_ip) {
                 case 0:
                     var2 = arg0;
@@ -2724,7 +2724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.acceptInviteAndTransitionToInviteChannel = var9;
-    var9 = function(arg0, arg1, arg2) { // Original name: transitionToInvite, environment: var3
+    var9 = function arg0, arg1, arg2() {
         _fun51671: for (var _fun51671_ip = 0;;) switch (_fun51671_ip) {
             case 0:
                 var2 = arg0;
@@ -2871,7 +2871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.transitionToInvite = var9;
-    var9 = function(arg0, arg1, arg2) { // Original name: transitionToInviteSync, environment: var3
+    var9 = function arg0, arg1, arg2() {
         _fun51672: for (var _fun51672_ip = 0;;) switch (_fun51672_ip) {
             case 0:
                 var0 = arg0;
@@ -2908,7 +2908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.transitionToInviteSync = var9;
-    var9 = function(arg0) { // Original name: openNativeAppModal, environment: var3
+    var9 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot3;
         var0 = 54;
@@ -2923,7 +2923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.openNativeAppModal = var9;
-    var9 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: openApp, environment: var3
+    var9 = function arg0, arg1, arg2, arg3, arg4() {
         _fun51674: for (var _fun51674_ip = 0;;) switch (_fun51674_ip) {
             case 0:
                 var4 = arg0;
@@ -3223,7 +3223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.default = var5;
     var2.transitionToGuildFromEventInvite = var4;
-    var3 = function(arg0, arg1) { // Original name: trackInviteEmbedActioned, environment: var3
+    var3 = function arg0, arg1() {
         _fun51676: for (var _fun51676_ip = 0;;) switch (_fun51676_ip) {
             case 0:
                 var0 = arg0;

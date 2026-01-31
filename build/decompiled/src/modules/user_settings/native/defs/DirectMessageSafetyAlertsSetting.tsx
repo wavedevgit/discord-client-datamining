@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var8 = function() { // Original name: title, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 5;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var8;
-    var8 = function() { // Original name: parent, environment: var7
+    var8 = function() {
         var0 = _closure1_slot3;
         var0 = var0.CONTENT_AND_SOCIAL;
         return var0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.updateDmSafetyAlertsSetting;
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useHasDmSafetyAlertsSetting, environment: var7
+    var7 = function() {
         _fun81351: for (var _fun81351_ip = 0;;) switch (_fun81351_ip) {
             case 0:
                 var2 = _closure1_slot1;

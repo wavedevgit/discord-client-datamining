@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113360: for (var _fun113360_ip = 0;;) switch (_fun113360_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _handleInteractionModalCreate, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: InteractionModalManager, environment: var0
+        var2 = function arg0() {
             _fun113367: for (var _fun113367_ip = 0;;) switch (_fun113367_ip) {
                 case 0:
                     var4 = this;
@@ -208,8 +208,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot0 = var0;
                     var0.iframeModalOpenTimeMs = var1;
                     var1 = {};
-                    var3 = function(arg0) { // Original name: INTERACTION_MODAL_CREATE, environment: var2
-                        var2 = function() { // Original name: handleInteractionModalCreate, environment: var0
+                    var3 = function arg0() {
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot12;
                             var2 = var3.apply;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.INTERACTION_MODAL_CREATE = var3;
-                    var3 = function(arg0) { // Original name: INTERACTION_IFRAME_MODAL_CREATE, environment: var2
+                    var3 = function arg0() {
                         var5 = arg0;
                         var1 = _closure3_slot0;
                         var0 = global;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.INTERACTION_IFRAME_MODAL_CREATE = var3;
-                    var3 = function(arg0) { // Original name: INTERACTION_IFRAME_MODAL_CLOSE, environment: var2
+                    var3 = function arg0() {
                         _fun113371: for (var _fun113371_ip = 0;;) switch (_fun113371_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.INTERACTION_IFRAME_MODAL_CLOSE = var3;
-                    var2 = function(arg0) { // Original name: RPC_APP_DISCONNECTED, environment: var2
+                    var2 = function arg0() {
                         _fun113372: for (var _fun113372_ip = 0;;) switch (_fun113372_ip) {
                             case 0:
                                 var0 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun30478: for (var _fun30478_ip = 0;;) switch (_fun30478_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: RunningGameStore, environment: var5
+        var3 = function() {
             _fun30482: for (var _fun30482_ip = 0;;) switch (_fun30482_ip) {
                 case 0:
                     var3 = this;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getVisibleGame';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentGameForAnalytics';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentNonGameForAnalytics';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getVisibleRunningGames';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRunningGames';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRunningNonGames';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRunningDiscordApplicationIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRunningVerifiedApplicationIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameForPID';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameForName';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameOrTransformedSubgameForPID';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLauncherForPID';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverlayOptionsForPID';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldElevateProcessForPID';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldContinueWithoutElevatedProcessForPID';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCandidateGames';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isGamesSeenLoaded';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = true;
             return var0;
         };
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGamesSeen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSeenGameByName';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isObservedAppRunning';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverlayEnabledForGame';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverrides';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverrideForGame';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameOverlayStatus';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getObservedAppNameForWindow';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canShowAdminWarning';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isDetectionEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'addExecutableTrackedByAnalytics';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSystemServiceStatus';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = 'unknown';
             var0.state = var1;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSystemServiceInitialized';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = false;
             return var0;
         };
@@ -442,12 +442,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/game_detection/RunningGameStore.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function() { // Original name: gameKey, environment: var1
+    var3 = function() {
         var0 = '';
         return var0;
     };
     var2.gameKey = var3;
-    var3 = function() { // Original name: getRawOverlayGameStatus, environment: var1
+    var3 = function() {
         _fun30515: for (var _fun30515_ip = 0;;) switch (_fun30515_ip) {
             case 0:
                 var0 = arguments[1];
@@ -487,17 +487,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRawOverlayGameStatus = var3;
-    var3 = function() { // Original name: isDetectionEnabled, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isDetectionEnabled = var3;
-    var3 = function(arg0) { // Original name: maybeTransformSubgame, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var2.maybeTransformSubgame = var3;
-    var1 = function(arg0) { // Original name: transformForGameSettings, environment: var1
+    var1 = function arg0() {
         var0 = {};
         var3 = arg0;
         var4 = var0;

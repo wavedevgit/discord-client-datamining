@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+    var0 = function() {
         _fun54541: for (var _fun54541_ip = 0;;) switch (_fun54541_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var4 = function(arg0) { // Original name: _isComboing, environment: var6
+    var4 = function arg0() {
         _fun54544: for (var _fun54544_ip = 0;;) switch (_fun54544_ip) {
             case 0:
                 var2 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var4;
-    var0 = function(arg0) { // Original name: updateCombo, environment: var6
+    var0 = function arg0() {
         _fun54545: for (var _fun54545_ip = 0;;) switch (_fun54545_ip) {
             case 0:
                 var8 = arg0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: shouldTrackMessage, environment: var6
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun54547: for (var _fun54547_ip = 0;;) switch (_fun54547_ip) {
             case 0:
                 var4 = arg2;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var16[var11](var15, var14, var13);
     var3 = var3 instanceof Object ? var3 : var5;
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: getComboId, environment: var6
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.userId;
         var3 = var0.channelId;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var9.bind(var0)(var5);
     var10 = var5.Store;
     var5 = function(arg0) { // Environment: var6
-        var3 = function() { // Original name: PoggermodeStore, environment: var5
+        var3 = function() {
             _fun54554: for (var _fun54554_ip = 0;;) switch (_fun54554_ip) {
                 case 0:
                     var3 = this;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot7;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getComboScore';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun54556: for (var _fun54556_ip = 0;;) switch (_fun54556_ip) {
                 case 0:
                     var3 = _closure1_slot14;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserCombo';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var2 = _closure1_slot14;
             var1 = var2.get;
             var4 = _closure1_slot16;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isComboing';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun54558: for (var _fun54558_ip = 0;;) switch (_fun54558_ip) {
                 case 0:
                     var3 = this;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMessageCombo';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun54559: for (var _fun54559_ip = 0;;) switch (_fun54559_ip) {
                 case 0:
                     var2 = _closure1_slot15;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMostRecentMessageCombo';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot15;
             var1 = var2.values;
             var0 = arg0;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserComboShakeIntensity';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun54561: for (var _fun54561_ip = 0;;) switch (_fun54561_ip) {
                 case 0:
                     var3 = this;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var8[var5];
     var15 = var9.bind(var0)(var5);
     var5 = {};
-    var9 = function(arg0) { // Original name: handleComboing, environment: var6
+    var9 = function arg0() {
         _fun54562: for (var _fun54562_ip = 0;;) switch (_fun54562_ip) {
             case 0:
                 var2 = arg0;
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.POGGERMODE_UPDATE_COMBO = var9;
-    var9 = function(arg0) { // Original name: handleUpdateMessageCombo, environment: var6
+    var9 = function arg0() {
         _fun54563: for (var _fun54563_ip = 0;;) switch (_fun54563_ip) {
             case 0:
                 var0 = arg0;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.POGGERMODE_UPDATE_MESSAGE_COMBO = var9;
-    var9 = function(arg0) { // Original name: handleIncomingMessage, environment: var6
+    var9 = function arg0() {
         _fun54564: for (var _fun54564_ip = 0;;) switch (_fun54564_ip) {
             case 0:
                 var0 = arg0;

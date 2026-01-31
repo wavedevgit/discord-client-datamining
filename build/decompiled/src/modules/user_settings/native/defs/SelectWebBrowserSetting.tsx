@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRadio;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.WEB_BROWSER;
     var1.parent = var8;
-    var8 = function() { // Original name: useWebBrowserSettingValue, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onWebBrowserSettingValueChange, environment: var7
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useWebBrowserSettingOptions, environment: var7
+    var7 = function() {
         _fun85090: for (var _fun85090_ip = 0;;) switch (_fun85090_ip) {
             case 0:
                 var4 = _closure1_slot0;

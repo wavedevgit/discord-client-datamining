@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[1] = var13;
     var8[var11] = var9;
     var6.scope = var8;
-    var8 = function(arg0) { // Original name: validation, environment: var10
+    var8 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var8;
-    var8 = function(arg0) { // Original name: handler, environment: var10
+    var8 = function arg0() {
         var1 = arg0;
         var2 = var1.socket;
         var _closure2_slot0 = var2;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.href = var8;
                             var8 = true;
                             var1.shouldConfirm = var8;
-                            var8 = function() { // Original name: onConfirm, environment: var0
+                            var8 = function() {
                                 _fun98045: for (var _fun98045_ip = 0;;) switch (_fun98045_ip) {
                                     case 0:
                                         var4 = _closure1_slot1;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var1.onConfirm = var8;
-                            var0 = function() { // Original name: onCancel, environment: var0
+                            var0 = function() {
                                 _fun98046: for (var _fun98046_ip = 0;;) switch (_fun98046_ip) {
                                     case 0:
                                         var3 = _closure1_slot1;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[var7] = var6;
     var7 = var3.NAVIGATE_TO_CONNECTIONS;
     var6 = {};
-    var8 = function(arg0) { // Original name: validation, environment: var10
+    var8 = function arg0() {
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 7;
@@ -673,7 +673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[0] = var14;
     var8[var11] = var9;
     var6.scope = var8;
-    var8 = function(arg0) { // Original name: handler, environment: var10
+    var8 = function arg0() {
         _fun98048: for (var _fun98048_ip = 0;;) switch (_fun98048_ip) {
             case 0:
                 var0 = arg0;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[0] = var14;
     var11[var13] = var12;
     var3.scope = var11;
-    var10 = function(arg0) { // Original name: handler, environment: var10
+    var10 = function arg0() {
         _fun98049: for (var _fun98049_ip = 0;;) switch (_fun98049_ip) {
             case 0:
                 var0 = arg0;
@@ -858,7 +858,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.linkId = var6;
                     var5 = _closure2_slot1;
                     var1.message = var5;
-                    var4 = function(arg0, arg1) { // Original name: onShare, environment: var4
+                    var4 = function arg0, arg1() {
                         _fun98051: for (var _fun98051_ip = 0;;) switch (_fun98051_ip) {
                             case 0:
                                 var0 = arg0;

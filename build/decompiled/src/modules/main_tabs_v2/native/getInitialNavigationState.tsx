@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: wrapRouteForRootNavigator, environment: var1
+    var4 = function arg0() {
         var2 = arg0;
         var1 = {};
         var0 = 'main';
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: getInitialGuildState, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun35226: for (var _fun35226_ip = 0;;) switch (_fun35226_ip) {
             case 0:
                 var12 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: computeInitialNavigationStateWithoutLogging, environment: var1
+    var0 = function() {
         _fun35227: for (var _fun35227_ip = 0;;) switch (_fun35227_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/main_tabs_v2/native/getInitialNavigationState.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: getInitialNavigationState, environment: var1
+    var5 = function arg0() {
         _fun35228: for (var _fun35228_ip = 0;;) switch (_fun35228_ip) {
             case 0:
                 var3 = arg0;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var5;
     var2.wrapRouteForRootNavigator = var4;
-    var4 = function() { // Original name: getInitialAuthState, environment: var1
+    var4 = function() {
         var0 = {};
         var2 = {};
         var1 = 'auth';
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInitialAuthState = var4;
     var2.getInitialGuildState = var3;
-    var1 = function() { // Original name: computeInitialNavigationState, environment: var1
+    var1 = function() {
         var2 = _closure1_slot11;
         var0 = undefined;
         var0 = var2.bind(var0)();

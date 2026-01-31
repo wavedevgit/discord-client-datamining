@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun81125: for (var _fun81125_ip = 0;;) switch (_fun81125_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var6;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: UserSettingsInputAlert, environment: var5
+        var3 = function arg0() {
             _fun81129: for (var _fun81129_ip = 0;;) switch (_fun81129_ip) {
                 case 0:
                     var5 = this;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'renderContent';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun81134: for (var _fun81134_ip = 0;;) switch (_fun81134_ip) {
                 case 0:
                     var9 = this;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.errorMessage = var10;
                     var9 = var9.handleSubmit;
                     var5.onSubmitEditing = var9;
-                    var8 = function(arg0) { // Original name: onChange, environment: var8
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.setState;
                         var0 = {};
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun81136: for (var _fun81136_ip = 0;;) switch (_fun81136_ip) {
                 case 0:
                     var7 = this;

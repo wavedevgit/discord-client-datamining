@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var3 = function(arg0, arg1) { // Original name: setChangeEmailError, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ChangeEmailFields = var5;
     var2.useChangeEmailStore = var4;
     var2.setChangeEmailError = var3;
-    var3 = function(arg0) { // Original name: useChangeEmailError, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot3;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChangeEmailError = var3;
-    var3 = function(arg0) { // Original name: setEmailToken, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setEmailToken = var3;
-    var1 = function() { // Original name: resetChangeEmailStore, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

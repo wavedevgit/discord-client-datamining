@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.tooltip = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot9 = var6;
-    var6 = function() { // Original name: handlePress, environment: var1
+    var6 = function() {
         var2 = _closure1_slot6;
         var0 = undefined;
         var2 = var2.bind(var0)();
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/ChangeEmailComplete.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChangeEmailComplete, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var24 = var0.email;
         var0 = _closure1_slot9;

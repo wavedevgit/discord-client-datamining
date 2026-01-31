@@ -19,11 +19,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _browserProfilingIntegration, environment: var1
+    var1 = function() {
         var0 = {};
         var2 = 'BrowserProfiling';
         var0.name = var2;
-        var2 = function(arg0) { // Original name: setup, environment: var1
+        var2 = function arg0() {
             _fun12049: for (var _fun12049_ip = 0;;) switch (_fun12049_ip) {
                 case 0:
                     var4 = arg0;
@@ -655,7 +655,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.setup = var2;
-        var1 = function(arg0) { // Original name: processEvent, environment: var1
+        var1 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 0;

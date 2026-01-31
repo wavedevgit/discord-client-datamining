@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun41415: for (var _fun41415_ip = 0;;) switch (_fun41415_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: RecentlyActiveCollapseStore, environment: var5
+        var3 = function() {
             _fun41419: for (var _fun41419_ip = 0;;) switch (_fun41419_ip) {
                 case 0:
                     var3 = this;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun41420: for (var _fun41420_ip = 0;;) switch (_fun41420_ip) {
                 case 0:
                     var0 = arg0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isCollapsed';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot5;
             var1 = var2.has;
             var0 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = {};
             var1 = _closure1_slot5;
             var0.guilds = var1;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var3 = function(arg0) { // Original name: handleSetRecentlyActiveCollapsed, environment: var3
+    var3 = function arg0() {
         _fun41424: for (var _fun41424_ip = 0;;) switch (_fun41424_ip) {
             case 0:
                 var0 = arg0;

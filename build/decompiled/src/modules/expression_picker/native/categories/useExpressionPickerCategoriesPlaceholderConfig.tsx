@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/expression_picker/native/categories/useExpressionPickerCategoriesPlaceholderConfig.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useExpressionPickerCategoriesPlaceholderConfig, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var2 = undefined;
         var4 = var3.bind(var2)();

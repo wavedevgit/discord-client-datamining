@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PortalKeyboardRendererComponent, environment: var1
+    var1 = function arg0() {
         _fun107223: for (var _fun107223_ip = 0;;) switch (_fun107223_ip) {
             case 0:
                 var3 = arg0;

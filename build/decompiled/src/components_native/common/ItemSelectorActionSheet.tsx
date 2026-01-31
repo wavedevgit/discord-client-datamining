@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/ItemSelectorActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ItemSelectorActionSheet, environment: var1
+    var1 = function arg0() {
         _fun47860: for (var _fun47860_ip = 0;;) switch (_fun47860_ip) {
             case 0:
                 var0 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.align = var8;
                     var8 = var6.label;
                     var0.label = var8;
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         var2 = _closure2_slot1;
                         var0 = _closure3_slot0;
                         var1 = var0.value;

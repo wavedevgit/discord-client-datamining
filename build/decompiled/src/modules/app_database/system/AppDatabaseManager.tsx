@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun92995: for (var _fun92995_ip = 0;;) switch (_fun92995_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun92997: for (var _fun92997_ip = 0;;) switch (_fun92997_ip) {
             case 0:
                 var3 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot8 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0, arg1, arg2) { // Original name: AppDatabaseManager, environment: var5
+        var4 = function arg0, arg1, arg2() {
             var10 = arg0;
             var4 = arg2;
             var1 = this;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'handleAction';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             var3 = arg0;
             var2 = this;
             var1 = var2.validateInDev;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'resetModules';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var5
+        var1 = function arg0, arg1() {
             _fun93002: for (var _fun93002_ip = 0;;) switch (_fun93002_ip) {
                 case 0:
                     var1 = arg1;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'executeModules';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var5
+        var1 = function arg0, arg1() {
             _fun93003: for (var _fun93003_ip = 0;;) switch (_fun93003_ip) {
                 case 0:
                     var1 = arg0;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'validateInDev';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var0 = undefined;
             return var0;
         };
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'handleException';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var1 = function arg0, arg1, arg2() {
             var5 = arg2;
             var4 = _closure1_slot7;
             var3 = var4.info;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'computeEntries';
         var0.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun93009: for (var _fun93009_ip = 0;;) switch (_fun93009_ip) {
                 case 0:
                     var3 = arg1;
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'register';
         var0.key = var6;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2, arg3() {
             var12 = arg1;
             var1 = arg3;
             var _closure3_slot0 = var1;

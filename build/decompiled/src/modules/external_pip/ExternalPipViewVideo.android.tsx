@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ExternalPipViewVideoUnavailable, environment: var1
+    var0 = function arg0() {
         _fun110222: for (var _fun110222_ip = 0;;) switch (_fun110222_ip) {
             case 0:
                 var0 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: ExternalPipViewVideoUser, environment: var1
+    var0 = function arg0() {
         _fun110223: for (var _fun110223_ip = 0;;) switch (_fun110223_ip) {
             case 0:
                 var1 = arg0;
@@ -195,13 +195,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: ExternalPipViewVideoStream, environment: var1
+    var0 = function arg0() {
         _fun110226: for (var _fun110226_ip = 0;;) switch (_fun110226_ip) {
             case 0:
                 var1 = arg0;
                 var14 = var1.streamId;
                 var _closure2_slot0 = var14;
-                var1 = function(arg0) { // Original name: useStreamReady, environment: var0
+                var1 = function arg0() {
                     _fun110227: for (var _fun110227_ip = 0;;) switch (_fun110227_ip) {
                         case 0:
                             var1 = arg0;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: ExternalPipViewVideo, environment: var1
+    var1 = function() {
         _fun110234: for (var _fun110234_ip = 0;;) switch (_fun110234_ip) {
             case 0:
                 var0 = _closure1_slot14;

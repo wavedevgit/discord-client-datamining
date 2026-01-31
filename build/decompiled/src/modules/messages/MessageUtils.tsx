@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/MessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: canViewPotentiallyNSFWChannel, environment: var1
+    var3 = function arg0() {
         _fun69599: for (var _fun69599_ip = 0;;) switch (_fun69599_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canViewPotentiallyNSFWChannel = var3;
-    var1 = function(arg0) { // Original name: getGuildIdFromMessage, environment: var1
+    var1 = function arg0() {
         _fun69600: for (var _fun69600_ip = 0;;) switch (_fun69600_ip) {
             case 0:
                 var2 = _closure1_slot2;

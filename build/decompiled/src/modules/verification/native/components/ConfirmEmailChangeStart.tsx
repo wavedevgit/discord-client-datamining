@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/ConfirmEmailChangeStart.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ConfirmEmailChangeStart, environment: var1
+    var1 = function() {
         _fun60435: for (var _fun60435_ip = 0;;) switch (_fun60435_ip) {
             case 0:
                 var0 = _closure1_slot12;

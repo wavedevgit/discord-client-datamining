@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var7 = dependencyMap;
-    var3 = function(arg0) { // Original name: getSoundboardXP3Experiment, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = var2.getConfig;
         var0 = {};
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.SoundboardSortingStrategy = var4;
     var2.getSoundboardXP3Experiment = var3;
-    var3 = function(arg0) { // Original name: useSoundboardXP3Experiment, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = var2.useConfig;
         var0 = {};
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSoundboardXP3Experiment = var3;
-    var3 = function(arg0) { // Original name: isInTopSoundsForGuildsVariant, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot2;
         var2 = undefined;
         var1 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isInTopSoundsForGuildsVariant = var3;
-    var3 = function(arg0) { // Original name: isInMetricsCaptureVariant, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot2;
         var2 = undefined;
         var1 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isInMetricsCaptureVariant = var3;
-    var1 = function(arg0) { // Original name: isInRecentlyUsedByUserVariant, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot2;
         var2 = undefined;
         var1 = arg0;

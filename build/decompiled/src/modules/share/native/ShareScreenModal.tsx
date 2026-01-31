@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot10 = var3;
-    var3 = function() { // Original name: onClose, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/share/native/ShareScreenModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ShareScreenModal, environment: var1
+    var1 = function arg0() {
         _fun96364: for (var _fun96364_ip = 0;;) switch (_fun96364_ip) {
             case 0:
                 var1 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var15;
                 var5[1] = var1;
                 var1 = function() { // Environment: var0
-                    var1 = function() { // Original name: _fetchAttachments, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var1;
-                    var1 = function() { // Original name: fetchAttachments, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10[0] = var7;
                 var10[1] = var1;
                 var5 = function() { // Environment: var0
-                    var1 = function() { // Original name: _fetchChannel, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var1;
-                    var1 = function() { // Original name: fetchChannel, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;

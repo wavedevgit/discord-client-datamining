@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GiftCodeRedeemError, environment: var1
+    var1 = function arg0() {
         _fun92287: for (var _fun92287_ip = 0;;) switch (_fun92287_ip) {
             case 0:
                 var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.Colors;
                 var10 = var10.BRAND;
                 var8.color = var10;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 12;

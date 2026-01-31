@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0, arg1) { // Original name: deepDiffer, environment: var2
+    var0 = function arg0, arg1() {
         _fun2347: for (var _fun2347_ip = 0;;) switch (_fun2347_ip) {
             case 0:
                 var3 = arg0;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = function(arg0) { // Original name: unstable_setLogListeners, environment: var2
+    var2 = function arg0() {
         var0 = arg0;
         var _closure1_slot0 = var0;
         var0 = undefined;

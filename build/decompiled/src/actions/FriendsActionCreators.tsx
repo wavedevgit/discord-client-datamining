@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var6 = function(arg0) { // Original name: setSection, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Routes;
     var _closure1_slot3 = var1;
     var1 = {};
-    var7 = function(arg0) { // Original name: transitionToSection, environment: var3
+    var7 = function arg0() {
         _fun114094: for (var _fun114094_ip = 0;;) switch (_fun114094_ip) {
             case 0:
                 var3 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.transitionToSection = var7;
     var1.setSection = var6;
-    var3 = function(arg0) { // Original name: setInitialSection, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;

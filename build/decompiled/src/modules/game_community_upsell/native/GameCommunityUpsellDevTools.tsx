@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: notifyListeners, environment: var3
+    var0 = function() {
         _fun85922: for (var _fun85922_ip = 0;;) switch (_fun85922_ip) {
             case 0:
                 var0 = _closure1_slot13;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: addLog, environment: var3
+    var0 = function arg0, arg1() {
         _fun85925: for (var _fun85925_ip = 0;;) switch (_fun85925_ip) {
             case 0:
                 var0 = global;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = false;
     var _closure1_slot13 = var1;
     var1 = {};
-    var4 = function(arg0, arg1) { // Original name: log, environment: var3
+    var4 = function arg0, arg1() {
         var3 = arg0;
         var2 = arg1;
         var4 = _closure1_slot10;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.log = var4;
-    var4 = function(arg0, arg1) { // Original name: error, environment: var3
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var3 = arg1;
         var2 = _closure1_slot10;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.error = var4;
-    var4 = function(arg0, arg1) { // Original name: warn, environment: var3
+    var4 = function arg0, arg1() {
         var4 = arg0;
         var3 = arg1;
         var2 = _closure1_slot10;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/game_community_upsell/native/GameCommunityUpsellDevTools.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: GameCommunityUpsellDevTools, environment: var3
+    var3 = function() {
         _fun85929: for (var _fun85929_ip = 0;;) switch (_fun85929_ip) {
             case 0:
                 var0 = _closure1_slot14;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var36 = var2.bind(var5)(var1, var0);
                 var2 = var4.useEffect;
                 var1 = function() { // Environment: var13
-                    var3 = function() { // Original name: listener, environment: var0
+                    var3 = function() {
                         var2 = _closure2_slot4;
                         var5 = _closure1_slot11;
                         var1 = new Array(0);

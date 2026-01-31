@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/base_components/ExpandableList.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ExpandableList, environment: var3
+    var3 = function arg0() {
         _fun107758: for (var _fun107758_ip = 0;;) switch (_fun107758_ip) {
             case 0:
                 var1 = arg0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7[var4];
                 var6 = var10.bind(var3)(var1);
                 var2 = var6.useDerivedValue;
-                var1 = function() { // Original name: C, environment: var11
+                var1 = function() {
                     _fun107761: for (var _fun107761_ip = 0;;) switch (_fun107761_ip) {
                         case 0:
                             var0 = _closure2_slot5;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7[var4];
                 var2 = var10.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: A, environment: var11
+                var0 = function() {
                     _fun107764: for (var _fun107764_ip = 0;;) switch (_fun107764_ip) {
                         case 0:
                             var1 = _closure2_slot9;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot11;
                 var0.__initData = var6;
                 var8 = var1.bind(var2)(var0);
-                var17 = function(arg0) { // Original name: renderItems, environment: var11
+                var17 = function arg0() {
                     _fun107765: for (var _fun107765_ip = 0;;) switch (_fun107765_ip) {
                         case 0:
                             var1 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot6;
                 var8 = _closure1_slot5;
                 var7 = {};
-                var12 = function(arg0) { // Original name: onLayout, environment: var11
+                var12 = function arg0() {
                     var2 = _closure2_slot9;
                     var1 = var2.set;
                     var0 = arg0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = _closure1_slot6;
                 var10 = _closure1_slot5;
                 var9 = {};
-                var14 = function(arg0) { // Original name: onLayout, environment: var11
+                var14 = function arg0() {
                     var2 = _closure2_slot10;
                     var1 = var2.set;
                     var0 = arg0;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.children = var13;
                 var12 = var8.bind(var3)(var7, var12);
                 var9.label = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     _fun107769: for (var _fun107769_ip = 0;;) switch (_fun107769_ip) {
                         case 0:
                             var2 = _closure2_slot4;

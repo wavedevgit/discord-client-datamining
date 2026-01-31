@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var3;
     var _closure1_slot1 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0, arg1) { // Original name: valueSetter, environment: var0
+        var0 = function arg0, arg1() {
             _fun33331: for (var _fun33331_ip = 0;;) switch (_fun33331_ip) {
                 case 0:
                     var4 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var10 = var2;
                     var9 = var7;
                     var1 = var13[var6](var12, var11, var10, var9, var8);
-                    var1 = function(arg0) { // Original name: step, environment: var5
+                    var1 = function arg0() {
                         _fun33332: for (var _fun33332_ip = 0;;) switch (_fun33332_ip) {
                             case 0:
                                 var5 = arg0;

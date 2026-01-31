@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useTieredTenureBadgeClickHandler, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun59557: for (var _fun59557_ip = 0;;) switch (_fun59557_ip) {
             case 0:
                 var6 = arg0;

@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/LaunchPadContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: LaunchPadContainer, environment: var1
+    var1 = function arg0() {
         _fun109872: for (var _fun109872_ip = 0;;) switch (_fun109872_ip) {
             case 0:
                 var1 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var21[var9];
                 var20 = var5.bind(var3)(var1);
                 var7 = var20.useAnimatedReaction;
-                var2 = function() { // Original name: s, environment: var0
+                var2 = function() {
                     var1 = _closure2_slot2;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.__workletHash = var1;
                 var1 = _closure1_slot9;
                 var2.__initData = var1;
-                var1 = function(arg0, arg1) { // Original name: l, environment: var0
+                var1 = function arg0, arg1() {
                     _fun109874: for (var _fun109874_ip = 0;;) switch (_fun109874_ip) {
                         case 0:
                             var1 = arg1;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var21[var9];
                 var2 = var5.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: v, environment: var0
+                var0 = function() {
                     var0 = {};
                     var10 = _closure1_slot0;
                     var11 = _closure1_slot2;

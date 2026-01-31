@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: LeaveActivityButton, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.frame;
         var _closure2_slot0 = var1;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         var1 = var0.BaseLeaveActivityButton;
         var0 = {};
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure2_slot1;
             var0 = _closure1_slot3;
             var1 = var0.DISCONNECTED;

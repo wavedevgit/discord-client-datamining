@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var3 = var3.useRef;
     var _closure1_slot1 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useBlankAreaTracker, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun46168: for (var _fun46168_ip = 0;;) switch (_fun46168_ip) {
             case 0:
                 var5 = arg0;

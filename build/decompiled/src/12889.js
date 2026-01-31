@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: getCurrentScope, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var3 = function() { // Original name: getClient, environment: var0
+    var3 = function() {
         var1 = _closure1_slot2;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getClient = var3;
     var1.getCurrentScope = var2;
-    var2 = function() { // Original name: getGlobalScope, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getGlobalScope = var2;
-    var2 = function() { // Original name: getIsolationScope, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getIsolationScope = var2;
-    var2 = function() { // Original name: withIsolationScope, environment: var0
+    var2 = function() {
         _fun99178: for (var _fun99178_ip = 0;;) switch (_fun99178_ip) {
             case 0:
                 var5 = undefined;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.withIsolationScope = var2;
-    var0 = function() { // Original name: withScope, environment: var0
+    var0 = function() {
         _fun99179: for (var _fun99179_ip = 0;;) switch (_fun99179_ip) {
             case 0:
                 var5 = undefined;

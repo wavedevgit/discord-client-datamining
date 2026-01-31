@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function(arg0) { // Original name: _assertThisInitialized, environment: var1
+    var1 = function arg0() {
         _fun251: for (var _fun251_ip = 0;;) switch (_fun251_ip) {
             case 0:
                 var0 = arg0;

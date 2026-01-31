@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hang_status/components/native/HangStatusFavoriteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HangStatusFavoriteActionSheet, environment: var1
+    var1 = function arg0() {
         _fun111077: for (var _fun111077_ip = 0;;) switch (_fun111077_ip) {
             case 0:
                 var2 = arg0;

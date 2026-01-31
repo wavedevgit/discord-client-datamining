@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = var1.jsxs;
     var _closure1_slot7 = var1;
-    var1 = function(arg0) { // Original name: OrbOnboardingPill, environment: var6
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.onPress;
         var _closure2_slot0 = var5;

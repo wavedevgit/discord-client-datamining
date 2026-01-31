@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.mechanism = var4;
     var _closure1_slot4 = var3;
-    var1 = function() { // Original name: trpcMiddleware, environment: var1
+    var1 = function() {
         _fun9704: for (var _fun9704_ip = 0;;) switch (_fun9704_ip) {
             case 0:
                 var1 = undefined;

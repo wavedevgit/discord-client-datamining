@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/native/AppInteractionInfoActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppInteractionInfoActionSheet, environment: var1
+    var1 = function arg0() {
         _fun76079: for (var _fun76079_ip = 0;;) switch (_fun76079_ip) {
             case 0:
                 var0 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var24.bind(var3)(var0);
                 var1 = var0.PressableOpacity;
                 var0 = {};
-                var8 = function() { // Original name: onPress, environment: var9
+                var8 = function() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 16;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var20.bind(var3)(var6);
                 var7 = var6.PressableOpacity;
                 var6 = {};
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 16;

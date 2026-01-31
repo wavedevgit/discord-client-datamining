@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: useActiveThreadIds, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var5 = _closure1_slot0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/threads/ThreadBrowserHooks.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: useTrackThreadBrowserTab, environment: var1
+    var4 = function() {
         var3 = _closure1_slot4;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackThreadBrowserTab = var4;
     var2.useActiveThreadIds = var3;
-    var3 = function(arg0) { // Original name: useActiveThreads, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot13;
         var3 = undefined;
         var2 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useActiveThreads = var3;
-    var3 = function(arg0) { // Original name: useActiveGuildThreads, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var5 = _closure1_slot0;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useActiveGuildThreads = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useArchivedThreads, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun91330: for (var _fun91330_ip = 0;;) switch (_fun91330_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: handlePressPasswordManagerHint, environment: var3
+    var0 = function() {
         var2 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 14;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4["ETE/oC"];
         var4 = var5.bind(var6)(var4);
         var1.cancelText = var4;
-        var4 = function() { // Original name: onConfirm, environment: var4
+        var4 = function() {
             _fun60464: for (var _fun60464_ip = 0;;) switch (_fun60464_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.separator = var8;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot13 = var1;
-    var1 = function(arg0) { // Original name: LinkButton, environment: var3
+    var1 = function arg0() {
         _fun60465: for (var _fun60465_ip = 0;;) switch (_fun60465_ip) {
             case 0:
                 var0 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var1;
-    var4 = function(arg0) { // Original name: ErrorBanner, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var12 = var0.onPress;
         var0 = _closure1_slot13;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/auth/native/components/Login.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: Login, environment: var3
+    var3 = function arg0() {
         _fun60467: for (var _fun60467_ip = 0;;) switch (_fun60467_ip) {
             case 0:
                 var0 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot17 = var3;
                 var _closure2_slot18 = var3;
                 var _closure2_slot19 = var3;
-                var20 = function() { // Original name: handlePasskeyLogin, environment: var28
+                var20 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot20;
                     var2 = var3.apply;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var0, var1);
                     return var0;
                 };
-                var0 = function() { // Original name: _handlePasskeyLogin, environment: var28
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -1302,7 +1302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = _closure1_slot11;
                 var12 = _closure1_slot15;
                 var4 = {};
-                var15 = function() { // Original name: onPress, environment: var28
+                var15 = function() {
                     var1 = _closure2_slot16;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -1331,7 +1331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var23.alpha2;
                 var5.alpha2 = var23;
                 var5.countryCode = var18;
-                var18 = function(arg0, arg1) { // Original name: onChange, environment: var28
+                var18 = function arg0, arg1() {
                     var3 = _closure2_slot11;
                     var0 = undefined;
                     var2 = 0;
@@ -1344,7 +1344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.onChange = var18;
-                var18 = function() { // Original name: onSubmitEditing, environment: var28
+                var18 = function() {
                     _fun60490: for (var _fun60490_ip = 0;;) switch (_fun60490_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -1382,7 +1382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.errorMessage = var17;
                 var17 = 'login_login_input';
                 var5.testID = var17;
-                var17 = function() { // Original name: onPressCountrySelector, environment: var28
+                var17 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var0 = _closure1_slot10;
@@ -1410,7 +1410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.secureTextEntry = var27;
                 var5.onChange = var19;
                 var5.autoCapitalize = var18;
-                var18 = function() { // Original name: onSubmitEditing, environment: var28
+                var18 = function() {
                     var3 = _closure2_slot19;
                     var2 = _closure2_slot7;
                     var1 = _closure2_slot9;
@@ -1473,7 +1473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var19.bind(var23)(var18);
             case 1725:
                 var15.accessibilityLabel = var16;
-                var16 = function() { // Original name: onPress, environment: var28
+                var16 = function() {
                     var2 = _closure2_slot3;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -1511,7 +1511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = {};
                 var15 = var10.link;
                 var12.containerStyle = var15;
-                var15 = function() { // Original name: onPress, environment: var28
+                var15 = function() {
                     var1 = _closure2_slot16;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -1678,7 +1678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.dKhVQN;
                 var19 = var23.bind(var24)(var19);
                 var14.text = var19;
-                var19 = function() { // Original name: onPress, environment: var28
+                var19 = function() {
                     var3 = _closure2_slot19;
                     var2 = _closure2_slot7;
                     var1 = _closure2_slot9;
@@ -1756,7 +1756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.style = var23;
                 var27 = _closure1_slot14;
                 var23 = {};
-                var28 = function() { // Original name: onPress, environment: var28
+                var28 = function() {
                     var1 = _closure2_slot16;
                     var0 = undefined;
                     var0 = var1.bind(var0)();

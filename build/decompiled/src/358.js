@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5284: for (var _fun5284_ip = 0;;) switch (_fun5284_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun5287: for (var _fun5287_ip = 0;;) switch (_fun5287_ip) {
             case 0:
                 var4 = arg0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: AnimatedWithChildren, environment: var5
+        var3 = function() {
             _fun5290: for (var _fun5290_ip = 0;;) switch (_fun5290_ip) {
                 case 0:
                     var3 = this;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '__makeNative';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: __makeNative, environment: var5
+        var0 = function arg0() {
             _fun5291: for (var _fun5291_ip = 0;;) switch (_fun5291_ip) {
                 case 0:
                     var3 = arg0;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__addChild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: __addChild, environment: var5
+        var6 = function arg0() {
             _fun5292: for (var _fun5292_ip = 0;;) switch (_fun5292_ip) {
                 case 0:
                     var1 = arg0;
@@ -339,7 +339,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__removeChild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: __removeChild, environment: var5
+        var6 = function arg0() {
             _fun5293: for (var _fun5293_ip = 0;;) switch (_fun5293_ip) {
                 case 0:
                     var2 = arg0;
@@ -406,7 +406,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getChildren';
         var4.key = var6;
-        var6 = function() { // Original name: __getChildren, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._children;
             return var0;
@@ -416,7 +416,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__callListeners';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: __callListeners, environment: var5
+        var5 = function arg0() {
             _fun5295: for (var _fun5295_ip = 0;;) switch (_fun5295_ip) {
                 case 0:
                     var1 = this;

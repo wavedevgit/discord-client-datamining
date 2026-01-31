@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: triggerHandlers, environment: var0
+    var2 = function arg0, arg1() {
         _fun10722: for (var _fun10722_ip = 0;;) switch (_fun10722_ip) {
             case 0:
                 var2 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var2;
-    var2 = function() { // Original name: instrumentCls, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var2;
-    var2 = function() { // Original name: instrumentLcp, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot10 = var2;
-    var2 = function() { // Original name: instrumentTtfb, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot11 = var2;
-    var2 = function() { // Original name: instrumentInp, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot12 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: addMetricObserver, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun10731: for (var _fun10731_ip = 0;;) switch (_fun10731_ip) {
             case 0:
                 var4 = arg0;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var2;
-    var2 = function(arg0, arg1) { // Original name: addHandler, environment: var0
+    var2 = function arg0, arg1() {
         _fun10732: for (var _fun10732_ip = 0;;) switch (_fun10732_ip) {
             case 0:
                 var1 = arg0;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: getCleanupCallback, environment: var0
+    var2 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var2;
     var2 = {};
     var _closure1_slot7 = var2;
-    var2 = function(arg0) { // Original name: addClsInstrumentationHandler, environment: var0
+    var2 = function arg0() {
         _fun10735: for (var _fun10735_ip = 0;;) switch (_fun10735_ip) {
             case 0:
                 var6 = undefined;
@@ -382,7 +382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addClsInstrumentationHandler = var2;
-    var2 = function(arg0) { // Original name: addInpInstrumentationHandler, environment: var0
+    var2 = function arg0() {
         var5 = _closure1_slot13;
         var7 = _closure1_slot12;
         var6 = _closure1_slot5;
@@ -393,7 +393,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.addInpInstrumentationHandler = var2;
-    var2 = function(arg0) { // Original name: addLcpInstrumentationHandler, environment: var0
+    var2 = function arg0() {
         _fun10737: for (var _fun10737_ip = 0;;) switch (_fun10737_ip) {
             case 0:
                 var6 = undefined;
@@ -430,7 +430,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addLcpInstrumentationHandler = var2;
-    var2 = function(arg0, arg1) { // Original name: addPerformanceInstrumentationHandler, environment: var0
+    var2 = function arg0, arg1() {
         _fun10738: for (var _fun10738_ip = 0;;) switch (_fun10738_ip) {
             case 0:
                 var3 = arg0;
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun10738
                 }
             case 32:
-                var4 = function(arg0) { // Original name: instrumentPerformanceObserver, environment: var4
+                var4 = function arg0() {
                     _fun10739: for (var _fun10739_ip = 0;;) switch (_fun10739_ip) {
                         case 0:
                             var5 = arg0;
@@ -492,7 +492,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addPerformanceInstrumentationHandler = var2;
-    var2 = function(arg0) { // Original name: addTtfbInstrumentationHandler, environment: var0
+    var2 = function arg0() {
         var5 = _closure1_slot13;
         var7 = _closure1_slot11;
         var6 = _closure1_slot4;
@@ -503,7 +503,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.addTtfbInstrumentationHandler = var2;
-    var0 = function(arg0) { // Original name: isPerformanceEventTiming, environment: var0
+    var0 = function arg0() {
         var1 = 'duration';
         var0 = arg0;
         var0 = var1 in var0;

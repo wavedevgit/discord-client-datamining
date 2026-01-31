@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: ContentTimestamp, environment: var1
+    var0 = function arg0() {
         _fun62412: for (var _fun62412_ip = 0;;) switch (_fun62412_ip) {
             case 0:
                 var0 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: BaseBadge, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.Icon;
         var10 = var0.iconColor;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.text = var8;
     var3 = var4.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: ActiveTimestamp, environment: var1
+    var3 = function arg0() {
         _fun62415: for (var _fun62415_ip = 0;;) switch (_fun62415_ip) {
             case 0:
                 var0 = arg0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/icymi/native/content_inventory/Badges.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ActiveTimestamp = var3;
-    var3 = function(arg0) { // Original name: GameTimestampBadge, environment: var1
+    var3 = function arg0() {
         _fun62417: for (var _fun62417_ip = 0;;) switch (_fun62417_ip) {
             case 0:
                 var0 = arg0;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GameTimestampBadge = var3;
-    var3 = function(arg0) { // Original name: MarathonBadge, environment: var1
+    var3 = function arg0() {
         _fun62418: for (var _fun62418_ip = 0;;) switch (_fun62418_ip) {
             case 0:
                 var0 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.MarathonBadge = var3;
-    var3 = function(arg0) { // Original name: NewGameBadge, environment: var1
+    var3 = function arg0() {
         _fun62419: for (var _fun62419_ip = 0;;) switch (_fun62419_ip) {
             case 0:
                 var0 = arg0;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.NewGameBadge = var3;
-    var3 = function(arg0) { // Original name: StreakBadge, environment: var1
+    var3 = function arg0() {
         _fun62420: for (var _fun62420_ip = 0;;) switch (_fun62420_ip) {
             case 0:
                 var0 = arg0;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.StreakBadge = var3;
-    var3 = function(arg0) { // Original name: TrendingBadge, environment: var1
+    var3 = function arg0() {
         _fun62421: for (var _fun62421_ip = 0;;) switch (_fun62421_ip) {
             case 0:
                 var0 = arg0;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.TrendingBadge = var3;
-    var3 = function(arg0) { // Original name: ResurrectedBadge, environment: var1
+    var3 = function arg0() {
         _fun62422: for (var _fun62422_ip = 0;;) switch (_fun62422_ip) {
             case 0:
                 var0 = arg0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ResurrectedBadge = var3;
-    var3 = function(arg0) { // Original name: TopGameBadge, environment: var1
+    var3 = function arg0() {
         _fun62423: for (var _fun62423_ip = 0;;) switch (_fun62423_ip) {
             case 0:
                 var0 = arg0;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.TopGameBadge = var3;
-    var1 = function(arg0) { // Original name: CustomStatusTimestampBadge, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.entry;
         var0 = _closure1_slot9;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun84205: for (var _fun84205_ip = 0;;) switch (_fun84205_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun84207: for (var _fun84207_ip = 0;;) switch (_fun84207_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getUsedTemplateChannelsForGuild, environment: var1
+    var0 = function arg0() {
         _fun84208: for (var _fun84208_ip = 0;;) switch (_fun84208_ip) {
             case 0:
                 var8 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _createChannelsFromTemplateTierBenefits, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useChannelWithTemplateFallback, environment: var1
+    var3 = function arg0() {
         _fun84219: for (var _fun84219_ip = 0;;) switch (_fun84219_ip) {
             case 0:
                 var1 = arg0;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useChannelWithTemplateFallback = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useSuggestedUnusedPrices, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun84222: for (var _fun84222_ip = 0;;) switch (_fun84222_ip) {
             case 0:
                 var5 = arg1;
@@ -905,7 +905,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSuggestedUnusedPrices = var3;
-    var3 = function(arg0) { // Original name: announceCreateTemplateChannels, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var3 = _closure1_slot13;
         var0 = undefined;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.announceCreateTemplateChannels = var3;
-    var3 = function(arg0) { // Original name: announceDeleteTemplateChannels, environment: var1
+    var3 = function arg0() {
         _fun84231: for (var _fun84231_ip = 0;;) switch (_fun84231_ip) {
             case 0:
                 var3 = arg0;
@@ -977,7 +977,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.announceDeleteTemplateChannels = var3;
-    var3 = function() { // Original name: createChannelsFromTemplateTierBenefits, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -988,7 +988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createChannelsFromTemplateTierBenefits = var3;
-    var3 = function(arg0, arg1) { // Original name: getTemplateTierCreationAnalyticsContext, environment: var1
+    var3 = function arg0, arg1() {
         _fun84234: for (var _fun84234_ip = 0;;) switch (_fun84234_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -1280,7 +1280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getTemplateTierCreationAnalyticsContext = var3;
-    var1 = function(arg0) { // Original name: isEligibleForNewBadge, environment: var1
+    var1 = function arg0() {
         _fun84235: for (var _fun84235_ip = 0;;) switch (_fun84235_ip) {
             case 0:
                 var1 = arg0;

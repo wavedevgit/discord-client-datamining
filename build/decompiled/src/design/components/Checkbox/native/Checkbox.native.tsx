@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Checkbox/native/Checkbox.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Checkbox, environment: var1
+    var1 = function arg0() {
         _fun48149: for (var _fun48149_ip = 0;;) switch (_fun48149_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.checked = var9;
                 var0.accessibilityState = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = !var0;

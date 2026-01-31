@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSubmittedGuildJoinRequestTotal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.guildId;
         var _closure2_slot0 = var5;

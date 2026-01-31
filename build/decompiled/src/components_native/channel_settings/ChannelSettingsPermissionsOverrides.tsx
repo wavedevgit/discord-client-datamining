@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/channel_settings/ChannelSettingsPermissionsOverrides.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelSettingsPermissionsOverrides, environment: var1
+    var1 = function arg0() {
         _fun109090: for (var _fun109090_ip = 0;;) switch (_fun109090_ip) {
             case 0:
                 var0 = arg0;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var8 = var8.psXQHP;
                                     var8 = var9.bind(var10)(var8);
                                     var4.confirmText = var8;
-                                    var8 = function() { // Original name: onConfirm, environment: var8
+                                    var8 = function() {
                                         var5 = _closure1_slot1;
                                         var6 = _closure1_slot3;
                                         var0 = 26;
@@ -862,7 +862,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot4;
                             var1 = var2.setOptions;
                             var0 = {};
-                            var3 = function() { // Original name: headerRight, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot19;
                                 var7 = _closure1_slot0;
                                 var8 = _closure1_slot3;
@@ -872,7 +872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = var7.bind(var2)(var0);
                                 var1 = var0.HeaderTextButton;
                                 var0 = {};
-                                var4 = function() { // Original name: onPress, environment: var4
+                                var4 = function() {
                                     var1 = _closure2_slot4;
                                     var0 = var1.pop;
                                     var0 = var0.bind(var1)();
@@ -1186,7 +1186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var8 = var8.bind(var4)(var9);
                                         var0.value = var8;
                                         var0.disabled = var7;
-                                        var6 = function(arg0) { // Original name: onValueChange, environment: var6
+                                        var6 = function arg0() {
                                             var3 = _closure2_slot6;
                                             var2 = _closure4_slot0;
                                             var0 = undefined;

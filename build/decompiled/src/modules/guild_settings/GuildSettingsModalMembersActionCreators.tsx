@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ME;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: startEditingRoles, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.startEditingRoles = var6;
-    var6 = function() { // Original name: stopEditingRoles, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.stopEditingRoles = var6;
-    var6 = function(arg0, arg1) { // Original name: toggleRole, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.toggleRole = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: updateMemberRoles, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var4 = _closure1_slot2;
         var0 = 1;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE';
         var1.type = var6;
         var1 = var2.bind(var3)(var1);
-        var3 = function() { // Original name: onEnd, environment: var1
+        var3 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateMemberRoles = var6;
-    var6 = function() { // Original name: startEditingNickname, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.startEditingNickname = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: changeNickname, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun79043: for (var _fun79043_ip = 0;;) switch (_fun79043_ip) {
             case 0:
                 var4 = arg0;

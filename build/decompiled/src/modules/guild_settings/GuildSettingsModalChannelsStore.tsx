@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun114555: for (var _fun114555_ip = 0;;) switch (_fun114555_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: sortCategoryList, environment: var3
+    var0 = function arg0, arg1() {
         _fun114558: for (var _fun114558_ip = 0;;) switch (_fun114558_ip) {
             case 0:
                 var0 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: setIndex, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg1;
         var0 = arg0;
         var0.index = var1;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: buildSortedChannels, environment: var3
+    var0 = function() {
         var2 = {};
         var1 = new Array(0);
         var2._categories = var1;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: rebuildChannels, environment: var3
+    var0 = function() {
         _fun114563: for (var _fun114563_ip = 0;;) switch (_fun114563_ip) {
             case 0:
                 var4 = _closure1_slot13;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: setupSortLists, environment: var3
+    var0 = function() {
         _fun114567: for (var _fun114567_ip = 0;;) switch (_fun114567_ip) {
             case 0:
                 var3 = _closure1_slot19;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildSettingsModalChannelsStoreClass, environment: var5
+        var3 = function() {
             _fun114572: for (var _fun114572_ip = 0;;) switch (_fun114572_ip) {
                 case 0:
                     var3 = this;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var4 = var3.waitFor;
             var2 = _closure1_slot13;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             _closure1_slot17 = var1;
             var1 = _closure1_slot30;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'channels';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'order';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'sortingType';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'channelList';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLocalChannel';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot23;
             var0 = arg0;
             var0 = var1[var0];
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function() { // Original name: handleTerminate, environment: var3
+    var6 = function() {
         var0 = null;
         _closure1_slot17 = var0;
         _closure1_slot18 = var0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE = var6;
-    var6 = function(arg0) { // Original name: handleStartReorder, environment: var3
+    var6 = function arg0() {
         _fun114582: for (var _fun114582_ip = 0;;) switch (_fun114582_ip) {
             case 0:
                 var0 = arg0;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER = var6;
-    var6 = function() { // Original name: handleStopReorder, environment: var3
+    var6 = function() {
         var1 = null;
         _closure1_slot21 = var1;
         var1 = _closure1_slot31;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER = var6;
-    var6 = function(arg0) { // Original name: handleLocalSortChange, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.updates;
         var1 = var2.forEach;

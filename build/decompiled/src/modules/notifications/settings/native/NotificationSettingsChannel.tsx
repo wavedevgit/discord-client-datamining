@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationSettingsChannel, environment: var1
+    var1 = function arg0() {
         _fun69831: for (var _fun69831_ip = 0;;) switch (_fun69831_ip) {
             case 0:
                 var13 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = ')';
                             var5 = var15[var8](var14, var13, var12, var11, var10);
                             var1.title = var5;
-                            var5 = function() { // Original name: headerTitle, environment: var3
+                            var5 = function() {
                                 var3 = _closure1_slot6;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;

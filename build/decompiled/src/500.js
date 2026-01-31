@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: getOutputLength, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var0 = 64;
         var2 = var1 + var0;
@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var2;
-    var2 = function(arg0, arg1) { // Original name: safeAdd, environment: var0
+    var2 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var2 = 65535;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: md5cmn, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         var5 = arg4;
         var3 = _closure1_slot1;
         var2 = undefined;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: md5ff, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var7 = arg1;
         var6 = _closure1_slot2;
         var0 = arg2;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: md5gg, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var7 = arg1;
         var0 = arg3;
         var6 = _closure1_slot2;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: md5hh, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var7 = arg1;
         var6 = _closure1_slot2;
         var0 = arg2;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: md5ii, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var7 = arg1;
         var6 = _closure1_slot2;
         var0 = arg3;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: md5, environment: var0
+    var0 = function arg0() {
         _fun6432: for (var _fun6432_ip = 0;;) switch (_fun6432_ip) {
             case 0:
                 var5 = arg0;

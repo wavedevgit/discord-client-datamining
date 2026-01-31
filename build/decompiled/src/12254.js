@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
     var1 = function() { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: SemVer, environment: var4
+        var3 = function arg0, arg1() {
             _fun94009: for (var _fun94009_ip = 0;;) switch (_fun94009_ip) {
                 case 0:
                     var0 = arg0;
@@ -370,7 +370,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'format';
         var0.key = var1;
-        var1 = function() { // Original name: format, environment: var4
+        var1 = function() {
             _fun94011: for (var _fun94011_ip = 0;;) switch (_fun94011_ip) {
                 case 0:
                     var0 = this;
@@ -414,7 +414,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'toString';
         var0.key = var5;
-        var5 = function() { // Original name: toString, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.version;
             return var0;
@@ -424,7 +424,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'compare';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: compare, environment: var4
+        var5 = function arg0() {
             _fun94013: for (var _fun94013_ip = 0;;) switch (_fun94013_ip) {
                 case 0:
                     var5 = arg0;
@@ -508,7 +508,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'compareMain';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: compareMain, environment: var4
+        var5 = function arg0() {
             _fun94014: for (var _fun94014_ip = 0;;) switch (_fun94014_ip) {
                 case 0:
                     var5 = arg0;
@@ -580,7 +580,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'comparePre';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: comparePre, environment: var4
+        var5 = function arg0() {
             _fun94015: for (var _fun94015_ip = 0;;) switch (_fun94015_ip) {
                 case 0:
                     var3 = arg0;
@@ -733,7 +733,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'compareBuild';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: compareBuild, environment: var4
+        var5 = function arg0() {
             _fun94016: for (var _fun94016_ip = 0;;) switch (_fun94016_ip) {
                 case 0:
                     var3 = arg0;
@@ -837,7 +837,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'inc';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: inc, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun94017: for (var _fun94017_ip = 0;;) switch (_fun94017_ip) {
                 case 0:
                     var6 = arg0;

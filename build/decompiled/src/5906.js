@@ -429,7 +429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var26 = arg1;
                         var8 = function() { // Environment: var5
                             var0 = {};
-                            var2 = function() { // Original name: goForward, environment: var1
+                            var2 = function() {
                                 var2 = _closure1_slot13;
                                 var1 = var2.goForward;
                                 var0 = _closure2_slot1;
@@ -438,7 +438,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.goForward = var2;
-                            var2 = function() { // Original name: goBack, environment: var1
+                            var2 = function() {
                                 var2 = _closure1_slot13;
                                 var1 = var2.goBack;
                                 var0 = _closure2_slot1;
@@ -447,7 +447,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.goBack = var2;
-                            var2 = function() { // Original name: reload, environment: var1
+                            var2 = function() {
                                 var3 = _closure2_slot4;
                                 var0 = undefined;
                                 var2 = 'LOADING';
@@ -460,7 +460,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.reload = var2;
-                            var2 = function() { // Original name: stopLoading, environment: var1
+                            var2 = function() {
                                 var2 = _closure1_slot13;
                                 var1 = var2.stopLoading;
                                 var0 = _closure2_slot1;
@@ -469,7 +469,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.stopLoading = var2;
-                            var2 = function(arg0) { // Original name: postMessage, environment: var1
+                            var2 = function arg0() {
                                 var3 = _closure1_slot13;
                                 var2 = var3.postMessage;
                                 var0 = _closure2_slot1;
@@ -479,7 +479,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.postMessage = var2;
-                            var2 = function(arg0) { // Original name: injectJavaScript, environment: var1
+                            var2 = function arg0() {
                                 var3 = _closure1_slot13;
                                 var2 = var3.injectJavaScript;
                                 var0 = _closure2_slot1;
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.injectJavaScript = var2;
-                            var2 = function() { // Original name: requestFocus, environment: var1
+                            var2 = function() {
                                 var2 = _closure1_slot13;
                                 var1 = var2.requestFocus;
                                 var0 = _closure2_slot1;
@@ -498,7 +498,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.requestFocus = var2;
-                            var2 = function() { // Original name: clearFormData, environment: var1
+                            var2 = function() {
                                 var2 = _closure1_slot13;
                                 var1 = var2.clearFormData;
                                 var0 = _closure2_slot1;
@@ -507,7 +507,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.clearFormData = var2;
-                            var2 = function(arg0) { // Original name: clearCache, environment: var1
+                            var2 = function arg0() {
                                 var3 = _closure1_slot13;
                                 var2 = var3.clearCache;
                                 var0 = _closure2_slot1;
@@ -517,7 +517,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.clearCache = var2;
-                            var1 = function() { // Original name: clearHistory, environment: var1
+                            var1 = function() {
                                 var2 = _closure1_slot13;
                                 var1 = var2.clearHistory;
                                 var0 = _closure2_slot1;

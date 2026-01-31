@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var1 = "function pnpm_getKeyboardAnimationConfigsTs1(easing,duration){const{Easing}=this.__closure;switch(easing){case'easeIn':return{easing:Easing.in(Easing.ease),duration:duration};case'easeOut':return{easing:Easing.out(Easing.ease),duration:duration};case'easeInEaseOut':return{easing:Easing.inOut(Easing.ease),duration:duration};case'linear':return{easing:Easing.linear,duration:duration};case'keyboard':return{damping:500,stiffness:1000,mass:3,overshootClamping:true,restDisplacementThreshold:10,restSpeedThreshold:10};}}";
     var3.code = var1;
-    var1 = function(arg0, arg1) { // Original name: pnpm_getKeyboardAnimationConfigsTs1, environment: var0
+    var1 = function arg0, arg1() {
         _fun44613: for (var _fun44613_ip = 0;;) switch (_fun44613_ip) {
             case 0:
                 var2 = arg0;

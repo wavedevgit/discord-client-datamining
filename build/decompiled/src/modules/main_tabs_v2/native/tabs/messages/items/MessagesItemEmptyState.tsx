@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot8 = var4;
     var4 = var7.memo;
-    var3 = function() { // Original name: MessagesItemEmptyState, environment: var3
+    var3 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var10 = var0.bind(var3)();

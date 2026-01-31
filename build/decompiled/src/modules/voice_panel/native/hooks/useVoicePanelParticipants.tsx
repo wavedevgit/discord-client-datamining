@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun110719: for (var _fun110719_ip = 0;;) switch (_fun110719_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun110721: for (var _fun110721_ip = 0;;) switch (_fun110721_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: getMemoizedParticipant, environment: var1
+    var0 = function arg0, arg1() {
         _fun110722: for (var _fun110722_ip = 0;;) switch (_fun110722_ip) {
             case 0:
                 var1 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/hooks/useVoicePanelParticipants.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useVoicePanelCards, environment: var1
+    var3 = function arg0, arg1() {
         _fun110723: for (var _fun110723_ip = 0;;) switch (_fun110723_ip) {
             case 0:
                 var12 = arg0;
@@ -705,7 +705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: useChunkedParticipants, environment: var1
+    var1 = function arg0, arg1() {
         var10 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var10;

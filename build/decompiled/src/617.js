@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: baseUnary, environment: var0
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0

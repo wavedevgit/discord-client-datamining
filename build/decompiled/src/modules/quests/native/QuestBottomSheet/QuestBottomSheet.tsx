@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var9;
-    var0 = function(arg0) { // Original name: QuestBottomSheet, environment: var6
+    var0 = function arg0() {
         _fun82832: for (var _fun82832_ip = 0;;) switch (_fun82832_ip) {
             case 0:
                 var0 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = _closure1_slot8;
                 var23 = var23.QUEST_HOME_MOBILE;
                 var8.location = var23;
-                var22 = function(arg0) { // Original name: onLayout, environment: var22
+                var22 = function arg0() {
                     var2 = _closure2_slot0;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var4 = function(arg0) { // Original name: useEnrolledQuestContentProps, environment: var6
+    var4 = function arg0() {
         _fun82835: for (var _fun82835_ip = 0;;) switch (_fun82835_ip) {
             case 0:
                 var0 = arg0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.quest = var6;
                 var4.initialStep = var12;
                 var4.location = var3;
-                var3 = function(arg0) { // Original name: useSteps, environment: var1
+                var3 = function arg0() {
                     _fun82836: for (var _fun82836_ip = 0;;) switch (_fun82836_ip) {
                         case 0:
                             var1 = arg0;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var5 = var7.bind(var8)(var5, var6);
                             _closure3_slot8 = var5;
-                            var6 = function() { // Original name: showConsoleSelect, environment: var0
+                            var6 = function() {
                                 var2 = _closure3_slot6;
                                 var1 = undefined;
                                 var0 = true;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             _closure3_slot9 = var6;
-                            var6 = function() { // Original name: hideConsoleSelect, environment: var0
+                            var6 = function() {
                                 var2 = _closure3_slot6;
                                 var1 = undefined;
                                 var0 = false;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3[var2];
                 var2 = 1;
                 var3 = var3[var2];
-                var2 = function(arg0) { // Original name: useDefibrillator, environment: var1
+                var2 = function arg0() {
                     var9 = arg0;
                     var _closure3_slot0 = var9;
                     var3 = _closure1_slot0;
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.step = var4;
                 var0.stepActions = var3;
                 var0.showMicrophone = var2;
-                var1 = function(arg0) { // Original name: handleTaskSelect, environment: var1
+                var1 = function arg0() {
                     _fun82853: for (var _fun82853_ip = 0;;) switch (_fun82853_ip) {
                         case 0:
                             var2 = arg0;
@@ -1016,7 +1016,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0) { // Original name: QuestBottomSheetContent, environment: var6
+    var3 = function arg0() {
         _fun82854: for (var _fun82854_ip = 0;;) switch (_fun82854_ip) {
             case 0:
                 var1 = arg0;
@@ -1218,7 +1218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var3;
-    var0 = function(arg0) { // Original name: MicrophoneUnit, environment: var6
+    var0 = function arg0() {
         _fun82856: for (var _fun82856_ip = 0;;) switch (_fun82856_ip) {
             case 0:
                 var0 = arg0;
@@ -1583,7 +1583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/quests/native/QuestBottomSheet/QuestBottomSheet.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function(arg0) { // Original name: QuestBottomSheetConnected, environment: var6
+    var6 = function arg0() {
         _fun82859: for (var _fun82859_ip = 0;;) switch (_fun82859_ip) {
             case 0:
                 var0 = arg0;
@@ -1638,7 +1638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.questContent = var8;
                 var1.questContentPosition = var7;
                 var1.sourceQuestContent = var6;
-                var5 = function() { // Original name: children, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot16;
                     var1 = {};

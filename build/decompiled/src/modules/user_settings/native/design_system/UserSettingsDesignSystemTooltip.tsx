@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function() { // Original name: useCanRotate, environment: var4
+    var3 = function() {
         var4 = _closure1_slot3;
         var2 = var4.useState;
         var1 = false;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: Content, environment: var4
+    var0 = function() {
         _fun87825: for (var _fun87825_ip = 0;;) switch (_fun87825_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.position = var2;
                             var1 = _closure2_slot0;
                             var0.visible = var1;
-                            var1 = function() { // Original name: onPress, environment: var1
+                            var1 = function() {
                                 var2 = _closure2_slot1;
                                 var1 = undefined;
                                 var0 = false;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12.Button;
                 var12 = {};
                 var12.ref = var19;
-                var18 = function() { // Original name: onPress, environment: var18
+                var18 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = !var0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.flex = var9;
     var1 = var5.bind(var8)(var1);
     var _closure1_slot8 = var1;
-    var1 = function() { // Original name: TooltipNote, environment: var4
+    var1 = function() {
         var3 = _closure1_slot7;
         var5 = _closure1_slot0;
         var7 = _closure1_slot1;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemTooltip.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function() { // Original name: UserSettingsDesignSystemTooltip, environment: var4
+    var4 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var4 = var0.bind(var3)();

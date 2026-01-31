@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.collectiblePreview = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: ProfileEffectPreview, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.product;
         var6 = var0.width;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: AvatarDecorationPreview, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.handlePreviewPress;
         var0 = _closure1_slot9;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var3;
-    var3 = function() { // Original name: NameplatePreview, environment: var1
+    var3 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: BundlePreview, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var7 = var1.product;
         var _closure2_slot0 = var7;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: IndividualProductPreview, environment: var1
+    var3 = function arg0() {
         _fun87097: for (var _fun87097_ip = 0;;) switch (_fun87097_ip) {
             case 0:
                 var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ProductDetailsActionSheetPreviewShort.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun87098: for (var _fun87098_ip = 0;;) switch (_fun87098_ip) {
             case 0:
                 var0 = arg0;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/global_discovery_apps/utils/getCollectionItemAssetUrl.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getCollectionItemAssetUrl, environment: var1
+    var1 = function arg0() {
         _fun107861: for (var _fun107861_ip = 0;;) switch (_fun107861_ip) {
             case 0:
                 var0 = arg0;

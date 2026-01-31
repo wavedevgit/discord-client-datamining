@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = '../discord_common/js/packages/http-utils/convertSkemaError.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: convertSkemaError, environment: var1
+    var1 = function arg0() {
         _fun6794: for (var _fun6794_ip = 0;;) switch (_fun6794_ip) {
             case 0:
                 var11 = arg0;

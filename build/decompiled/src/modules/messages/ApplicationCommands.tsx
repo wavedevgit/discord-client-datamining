@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/ApplicationCommands.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getApplicationCommand, environment: var1
+    var1 = function arg0() {
         _fun55706: for (var _fun55706_ip = 0;;) switch (_fun55706_ip) {
             case 0:
                 var3 = _closure1_slot1;

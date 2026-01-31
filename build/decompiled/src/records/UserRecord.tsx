@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun18024: for (var _fun18024_ip = 0;;) switch (_fun18024_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.PurchasedFlags;
     var _closure1_slot15 = var4;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: UserRecord, environment: var5
+        var3 = function arg0() {
             _fun18028: for (var _fun18028_ip = 0;;) switch (_fun18028_ip) {
                 case 0:
                     var4 = arg0;
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'configurable': false,
                         'enumerable': false
                     };
-                    var9 = function(arg0) { // Original name: value, environment: var8
+                    var9 = function arg0() {
                         _fun18033: for (var _fun18033_ip = 0;;) switch (_fun18033_ip) {
                             case 0:
                                 var1 = arg0;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'configurable': false,
                         'enumerable': false
                     };
-                    var9 = function() { // Original name: value, environment: var8
+                    var9 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.hasFlag;
                         var0 = _closure1_slot12;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'configurable': false,
                         'enumerable': false
                     };
-                    var9 = function() { // Original name: value, environment: var8
+                    var9 = function() {
                         _fun18035: for (var _fun18035_ip = 0;;) switch (_fun18035_ip) {
                             case 0:
                                 var3 = _closure3_slot0;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'configurable': false,
                         'enumerable': false
                     };
-                    var8 = function() { // Original name: value, environment: var8
+                    var8 = function() {
                         _fun18036: for (var _fun18036_ip = 0;;) switch (_fun18036_ip) {
                             case 0:
                                 var4 = _closure3_slot0;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'createdAt';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = global;
             var2 = var0.Date;
             var3 = _closure1_slot1;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasVerifiedEmailOrPhone';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18038: for (var _fun18038_ip = 0;;) switch (_fun18038_ip) {
                 case 0:
                     var1 = this;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAvatarURL';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun18039: for (var _fun18039_ip = 0;;) switch (_fun18039_ip) {
                 case 0:
                     var8 = arg0;
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'addGuildAvatarHash';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun18040: for (var _fun18040_ip = 0;;) switch (_fun18040_ip) {
                 case 0:
                     var2 = arg0;
@@ -870,7 +870,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'removeGuildAvatarHash';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18041: for (var _fun18041_ip = 0;;) switch (_fun18041_ip) {
                 case 0:
                     var2 = arg0;
@@ -902,7 +902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAvatarSource';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18042: for (var _fun18042_ip = 0;;) switch (_fun18042_ip) {
                 case 0:
                     var5 = arg0;
@@ -1000,7 +1000,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isClaimed';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18045: for (var _fun18045_ip = 0;;) switch (_fun18045_ip) {
                 case 0:
                     var1 = this;
@@ -1023,7 +1023,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPhoneVerified';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0.phone;
             var0 = null;
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'toString';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18047: for (var _fun18047_ip = 0;;) switch (_fun18047_ip) {
                 case 0:
                     var1 = this;
@@ -1057,7 +1057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'tag';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var4 = var0.username;
             var2 = var0.discriminator;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPurchasedFlag';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot3;
             var0 = 14;
@@ -1100,7 +1100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPremiumUsageFlag';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot3;
             var0 = 14;
@@ -1119,7 +1119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasHadSKU';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18051: for (var _fun18051_ip = 0;;) switch (_fun18051_ip) {
                 case 0:
                     var3 = this;
@@ -1144,7 +1144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasHadPremium';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18052: for (var _fun18052_ip = 0;;) switch (_fun18052_ip) {
                 case 0:
                     var4 = arguments[0];
@@ -1217,7 +1217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hadPremiumSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18053: for (var _fun18053_ip = 0;;) switch (_fun18053_ip) {
                 case 0:
                     var3 = arguments[0];
@@ -1254,7 +1254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFreePremium';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18054: for (var _fun18054_ip = 0;;) switch (_fun18054_ip) {
                 case 0:
                     var2 = this;
@@ -1286,7 +1286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPremiumWithPremiumGroup';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18055: for (var _fun18055_ip = 0;;) switch (_fun18055_ip) {
                 case 0:
                     var2 = this;
@@ -1333,7 +1333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPremiumWithFractionalPremiumOnly';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18056: for (var _fun18056_ip = 0;;) switch (_fun18056_ip) {
                 case 0:
                     var2 = this;
@@ -1429,7 +1429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFractionalPremiumWithNoStandardSub';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18057: for (var _fun18057_ip = 0;;) switch (_fun18057_ip) {
                 case 0:
                     var2 = this;
@@ -1492,7 +1492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasUrgentMessages';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = this;
             var1 = var2.hasFlag;
             var0 = _closure1_slot12;
@@ -1505,7 +1505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isNonUserBot';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18059: for (var _fun18059_ip = 0;;) switch (_fun18059_ip) {
                 case 0:
                     var2 = this;
@@ -1536,7 +1536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLocalBot';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18060: for (var _fun18060_ip = 0;;) switch (_fun18060_ip) {
                 case 0:
                     var1 = this;
@@ -1558,7 +1558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVerifiedBot';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18061: for (var _fun18061_ip = 0;;) switch (_fun18061_ip) {
                 case 0:
                     var3 = this;
@@ -1590,7 +1590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSystemUser';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0.system;
             var0 = true;
@@ -1602,7 +1602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasAvatarForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18063: for (var _fun18063_ip = 0;;) switch (_fun18063_ip) {
                 case 0:
                     var3 = arg0;
@@ -1626,7 +1626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasUniqueUsername';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0.discriminator;
             var0 = '0';
@@ -1638,7 +1638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPremiumGroupMember';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18065: for (var _fun18065_ip = 0;;) switch (_fun18065_ip) {
                 case 0:
                     var1 = this;
@@ -1668,7 +1668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPremiumGroupPrimary';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun18066: for (var _fun18066_ip = 0;;) switch (_fun18066_ip) {
                 case 0:
                     var1 = this;
@@ -1698,7 +1698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isProvisional';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var2 = this;
             var1 = var2.hasFlag;
             var0 = _closure1_slot12;
@@ -1711,13 +1711,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'avatarDecoration';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.avatarDecorationData;
             return var0;
         };
         var4.get = var6;
-        var6 = function(arg0) { // Original name: set, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot3;
             var0 = 17;
@@ -1736,7 +1736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'nameplate';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun18070: for (var _fun18070_ip = 0;;) switch (_fun18070_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -1766,7 +1766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'premiumGroupRole';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             _fun18071: for (var _fun18071_ip = 0;;) switch (_fun18071_ip) {
                 case 0:
                     var0 = this;

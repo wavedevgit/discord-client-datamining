@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/client_themes/SavedCustomThemeActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: fetchUserCustomThemes, environment: var1
+    var1 = function() {
         _fun84442: for (var _fun84442_ip = 0;;) switch (_fun84442_ip) {
             case 0:
                 var2 = _closure1_slot3;

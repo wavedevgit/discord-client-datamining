@@ -12,7 +12,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var9;
             var _closure1_slot2 = var15;
             var _closure1_slot3 = var10;
-            var0 = function(arg0) { // Original name: maybePlusConversion, environment: var1
+            var0 = function arg0() {
                 _fun94173: for (var _fun94173_ip = 0;;) switch (_fun94173_ip) {
                     case 0:
                         var1 = arg0;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var0;
-            var7 = function(arg0, arg1, arg2) { // Original name: getCodeToKeyLanguageCorrection, environment: var1
+            var7 = function arg0, arg1, arg2() {
                 _fun94174: for (var _fun94174_ip = 0;;) switch (_fun94174_ip) {
                     case 0:
                         var6 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot19 = var7;
-            var6 = function() { // Original name: getEnv, environment: var1
+            var6 = function() {
                 _fun94175: for (var _fun94175_ip = 0;;) switch (_fun94175_ip) {
                     case 0:
                         var2 = _closure1_slot1;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot20 = var6;
-            var5 = function(arg0) { // Original name: codeToKey, environment: var1
+            var5 = function arg0() {
                 _fun94176: for (var _fun94176_ip = 0;;) switch (_fun94176_ip) {
                     case 0:
                         var0 = arg0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot21 = var5;
-            var4 = function(arg0) { // Original name: keyToCode, environment: var1
+            var4 = function arg0() {
                 _fun94177: for (var _fun94177_ip = 0;;) switch (_fun94177_ip) {
                     case 0:
                         var4 = arg0;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot22 = var4;
-            var3 = function(arg0) { // Original name: getKeyConversionForBrowser, environment: var1
+            var3 = function arg0() {
                 _fun94178: for (var _fun94178_ip = 0;;) switch (_fun94178_ip) {
                     case 0:
                         var3 = arg0;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot23 = var3;
-            var0 = function(arg0) { // Original name: toMetaKeyIndexKey, environment: var1
+            var0 = function arg0() {
                 var1 = arg0;
                 var0 = 'Key';
                 var0 = var1 + var0;
@@ -868,7 +868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = ['SPACE', '␣'];
             var8[23] = var11;
             var _closure1_slot15 = var8;
-            var8 = function(arg0) { // Original name: toPrettyKey, environment: var1
+            var8 = function arg0() {
                 _fun94180: for (var _fun94180_ip = 0;;) switch (_fun94180_ip) {
                     case 0:
                         var1 = arg0;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var10.fileFinishedImporting;
             var8 = 'utils/web/KeyboardUtils.tsx';
             var8 = var9.bind(var10)(var8);
-            var8 = function(arg0) { // Original name: getRawCodeFromKey, environment: var1
+            var8 = function arg0() {
                 _fun94181: for (var _fun94181_ip = 0;;) switch (_fun94181_ip) {
                     case 0:
                         var3 = arg0;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.codeToKey = var5;
             var2.keyToCode = var4;
             var2.getKeyConversionForBrowser = var3;
-            var3 = function(arg0) { // Original name: toBrowserEvents, environment: var1
+            var3 = function arg0() {
                 _fun94182: for (var _fun94182_ip = 0;;) switch (_fun94182_ip) {
                     case 0:
                         var3 = arg0;
@@ -1095,7 +1095,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.toBrowserEvents = var3;
-            var3 = function(arg0) { // Original name: toCombo, environment: var1
+            var3 = function arg0() {
                 _fun94185: for (var _fun94185_ip = 0;;) switch (_fun94185_ip) {
                     case 0:
                         var4 = arg0;
@@ -1226,7 +1226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.toCombo = var3;
-            var3 = function(arg0) { // Original name: toString, environment: var1
+            var3 = function arg0() {
                 _fun94188: for (var _fun94188_ip = 0;;) switch (_fun94188_ip) {
                     case 0:
                         var3 = arg0;
@@ -1451,7 +1451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.toString = var3;
-            var3 = function(arg0, arg1) { // Original name: areKeyCombosEqual, environment: var1
+            var3 = function arg0, arg1() {
                 _fun94190: for (var _fun94190_ip = 0;;) switch (_fun94190_ip) {
                     case 0:
                         var3 = arg0;
@@ -1584,7 +1584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.areKeyCombosEqual = var3;
-            var1 = function(arg0) { // Original name: isKeyboardActivatedMouseEvent, environment: var1
+            var1 = function arg0() {
                 _fun94192: for (var _fun94192_ip = 0;;) switch (_fun94192_ip) {
                     case 0:
                         var1 = arg0;

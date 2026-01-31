@@ -8,12 +8,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var10;
-    var0 = function() { // Original name: headerTitle, environment: var3
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _handleNextOrSubmitRegistration, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var1 = function() { // Original name: handleRegistrationSubmit, environment: var3
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot24;
         var2 = var3.apply;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var1;
-    var0 = function() { // Original name: _handleRegistrationSubmit, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -350,12 +350,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var5.AGE_GATE;
     var4[4] = var5;
     var _closure1_slot16 = var4;
-    var7 = function() { // Original name: getRegistrationSteps, environment: var3
+    var7 = function() {
         var0 = _closure1_slot16;
         return var0;
     };
     var _closure1_slot17 = var7;
-    var6 = function(arg0) { // Original name: getNextAuthState, environment: var3
+    var6 = function arg0() {
         _fun100170: for (var _fun100170_ip = 0;;) switch (_fun100170_ip) {
             case 0:
                 var0 = _closure1_slot17;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var6;
-    var5 = function(arg0) { // Original name: getPreviousAuthState, environment: var3
+    var5 = function arg0() {
         _fun100171: for (var _fun100171_ip = 0;;) switch (_fun100171_ip) {
             case 0:
                 var1 = _closure1_slot17;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var5;
-    var4 = function(arg0) { // Original name: getPreviousRegistrationTransitionStep, environment: var3
+    var4 = function arg0() {
         _fun100172: for (var _fun100172_ip = 0;;) switch (_fun100172_ip) {
             case 0:
                 var3 = _closure1_slot19;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = 'modules/auth/native/RegistrationStepsUtils.tsx';
     var8 = var9.bind(var10)(var8);
     var2.getRegistrationSteps = var7;
-    var7 = function() { // Original name: getAllAuthScreens, environment: var3
+    var7 = function() {
         var0 = {};
         var1 = _closure1_slot14;
         var9 = var1.WELCOME;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.impressionName = var4;
         var4 = _closure1_slot21;
         var2.headerTitle = var4;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.step = var13;
         var2.impressionProperties = var11;
         var2.headerTitle = var4;
-        var11 = function(arg0) { // Original name: headerLeft, environment: var3
+        var11 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.headerLeft = var11;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.step = var13;
         var2.impressionProperties = var11;
         var2.headerTitle = var4;
-        var11 = function(arg0) { // Original name: headerLeft, environment: var3
+        var11 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.headerLeft = var11;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.step = var12;
         var2.impressionProperties = var11;
         var2.headerTitle = var4;
-        var11 = function(arg0) { // Original name: headerLeft, environment: var3
+        var11 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.headerLeft = var11;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.impression_group = var12;
         var2.impressionProperties = var11;
         var2.headerTitle = var4;
-        var11 = function(arg0) { // Original name: headerLeft, environment: var3
+        var11 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.headerLeft = var11;
-        var11 = function(arg0) { // Original name: render, environment: var3
+        var11 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.impression_group = var12;
         var2.impressionProperties = var11;
         var2.headerTitle = var4;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -748,7 +748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'headerShown': false
         };
         var2.headerTitle = var4;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -768,7 +768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'fullscreen': true
         };
         var2.headerTitle = var4;
-        var11 = function(arg0) { // Original name: render, environment: var3
+        var11 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -789,7 +789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = {};
         var2.ignoreKeyboard = var10;
         var2.headerTitle = var4;
-        var11 = function(arg0, arg1) { // Original name: render, environment: var3
+        var11 = function arg0, arg1() {
             var0 = arg1;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot15;
@@ -800,14 +800,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = var1.bind(var2)(var0);
             var0 = {};
-            var5 = function() { // Original name: onClose, environment: var4
+            var5 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.pop;
                 var0 = var0.bind(var1)();
                 return var0;
             };
             var0.onClose = var5;
-            var4 = function(arg0) { // Original name: onCountrySelected, environment: var4
+            var4 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 19;
@@ -829,7 +829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = {};
         var2.ignoreKeyboard = var10;
         var2.headerTitle = var4;
-        var10 = function(arg0) { // Original name: render, environment: var3
+        var10 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -857,7 +857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10.USER_AGE_GATE;
         var2.impressionName = var10;
         var2.headerTitle = var4;
-        var10 = function(arg0) { // Original name: headerLeft, environment: var3
+        var10 = function arg0() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.headerLeft = var10;
-        var10 = function() { // Original name: render, environment: var3
+        var10 = function() {
             var3 = _closure1_slot15;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.ImpressionNames;
         var5 = var5.USER_AGE_GATE_UNDERAGE;
         var1.impressionName = var5;
-        var5 = function(arg0) { // Original name: impressionProperties, environment: var3
+        var5 = function arg0() {
             var0 = arg0;
             var1 = var0.existingUser;
             var0 = {};
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1.impressionProperties = var5;
         var1.headerTitle = var4;
-        var3 = function(arg0, arg1) { // Original name: render, environment: var3
+        var3 = function arg0, arg1() {
             var0 = arg1;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot15;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = var1.bind(var2)(var0);
             var0 = {};
-            var4 = function() { // Original name: onClose, environment: var4
+            var4 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.popToTop;
                 var0 = var0.bind(var1)();
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getNextRegistrationTransitionStep = var4;
-    var3 = function() { // Original name: handleNextOrSubmitRegistration, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;

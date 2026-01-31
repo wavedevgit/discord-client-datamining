@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gifting/PremiumGiftSuccess.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PremiumGiftSuccess, environment: var1
+    var1 = function() {
         _fun75270: for (var _fun75270_ip = 0;;) switch (_fun75270_ip) {
             case 0:
                 var12 = _closure1_slot1;

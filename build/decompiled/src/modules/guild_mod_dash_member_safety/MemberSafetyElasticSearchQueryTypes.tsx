@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx';
     var4 = var5.bind(var6)(var4);
     var2.UNUSUAL_DM_COMPARISON_DELTA = var3;
-    var3 = function(arg0) { // Original name: createMemberSearchCursor, environment: var3
+    var3 = function arg0() {
         _fun40403: for (var _fun40403_ip = 0;;) switch (_fun40403_ip) {
             case 0:
                 var0 = arg0;

@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = 'function pnpm_useGestureEventsHandlersDefaultTsx1(context){Object.keys(context).map(function(key){context[key]=undefined;});}';
     var4.code = var3;
-    var3 = function(arg0) { // Original name: pnpm_useGestureEventsHandlersDefaultTsx1, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var1 = global;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function handleOnFinalize_Pnpm_useGestureEventsHandlersDefaultTsx5(){const{resetContext,context}=this.__closure;resetContext(context);}';
     var3.code = var4;
     var _closure1_slot9 = var3;
-    var1 = function() { // Original name: useGestureEventsHandlersDefault, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var6 = _closure1_slot1;
         var2 = 2;
@@ -138,7 +138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var10 = var4.bind(var2)(var7);
         var9 = var10.useWorkletCallback;
         var7 = function() { // Environment: var1
-            var0 = function(arg0, arg1) { // Original name: handleOnStart, environment: var0
+            var0 = function arg0, arg1() {
                 _fun45243: for (var _fun45243_ip = 0;;) switch (_fun45243_ip) {
                     case 0:
                         var1 = _closure2_slot16;
@@ -266,7 +266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var10 = var4.bind(var2)(var7);
         var9 = var10.useWorkletCallback;
         var7 = function() { // Environment: var1
-            var0 = function(arg0, arg1) { // Original name: handleOnChange, environment: var0
+            var0 = function arg0, arg1() {
                 _fun45245: for (var _fun45245_ip = 0;;) switch (_fun45245_ip) {
                     case 0:
                         var9 = arg0;
@@ -642,7 +642,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var10 = var4.bind(var2)(var7);
         var9 = var10.useWorkletCallback;
         var7 = function() { // Environment: var1
-            var0 = function(arg0, arg1) { // Original name: handleOnEnd, environment: var0
+            var0 = function arg0, arg1() {
                 _fun45247: for (var _fun45247_ip = 0;;) switch (_fun45247_ip) {
                     case 0:
                         var7 = arg0;
@@ -958,7 +958,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var4.bind(var2)(var3);
         var3 = var4.useWorkletCallback;
         var1 = function() { // Environment: var1
-            var0 = function() { // Original name: handleOnFinalize, environment: var0
+            var0 = function() {
                 var2 = _closure1_slot5;
                 var1 = _closure2_slot17;
                 var0 = undefined;

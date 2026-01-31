@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var3;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var8;
-            var1 = function(arg0, arg1) { // Original name: genModule, environment: var4
+            var1 = function arg0, arg1() {
                 _fun1381: for (var _fun1381_ip = 0;;) switch (_fun1381_ip) {
                     case 0:
                         var4 = arg0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 case 135:
                                     var3 = _closure2_slot4;
                                     var2 = _closure2_slot0;
-                                    var1 = function(arg0, arg1, arg2) { // Original name: genMethod, environment: var1
+                                    var1 = function arg0, arg1, arg2() {
                                         _fun1383: for (var _fun1383_ip = 0;;) switch (_fun1383_ip) {
                                             case 0:
                                                 var1 = arg2;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     continue _fun1383
                                                 }
                                             case 31:
-                                                var0 = function() { // Original name: nonPromiseMethodWrapper, environment: var2
+                                                var0 = function() {
                                                     _fun1388: for (var _fun1388_ip = 0;;) switch (_fun1388_ip) {
                                                         case 0:
                                                             var3 = undefined;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 _fun1383_ip = 43;
                                                 continue _fun1383;
                                             case 38:
-                                                var0 = function() { // Original name: promiseMethodWrapper, environment: var2
+                                                var0 = function() {
                                                     _fun1384: for (var _fun1384_ip = 0;;) switch (_fun1384_ip) {
                                                         case 0:
                                                             var5 = undefined;
@@ -485,7 +485,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot6 = var1;
-            var0 = function(arg0, arg1) { // Original name: arrayContains, environment: var4
+            var0 = function arg0, arg1() {
                 var2 = arg0;
                 var1 = var2.indexOf;
                 var0 = arg1;
@@ -563,7 +563,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = _closure1_slot4;
                         var4 = var1.name;
                         var3 = {};
-                        var7 = function() { // Original name: get, environment: var7
+                        var7 = function() {
                             _fun1392: for (var _fun1392_ip = 0;;) switch (_fun1392_ip) {
                                 case 0:
                                     var1 = _closure2_slot1;

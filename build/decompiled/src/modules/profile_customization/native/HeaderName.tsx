@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/profile_customization/native/HeaderName.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HeaderName, environment: var1
+    var1 = function arg0() {
         _fun87108: for (var _fun87108_ip = 0;;) switch (_fun87108_ip) {
             case 0:
                 var1 = arg0;

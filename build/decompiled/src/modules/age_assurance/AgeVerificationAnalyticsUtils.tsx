@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AgeVerificationDmCta = var6;
     var2.NsfwSpaceWarningModalType = var5;
     var2.NsfwSpaceWarningModalCta = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: trackAgeVerificationModalViewed, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAgeVerificationModalViewed = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: trackAgeVerificationModalClicked, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAgeVerificationModalClicked = var4;
-    var4 = function(arg0, arg1) { // Original name: trackAgeVerificationDmClicked, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAgeVerificationDmClicked = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: trackNsfwSpaceWarningModalViewed, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackNsfwSpaceWarningModalViewed = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: trackNsfwSpaceWarningModalClicked, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackNsfwSpaceWarningModalClicked = var4;
     var2.AgeVerificationToastType = var3;
-    var1 = function(arg0) { // Original name: trackAgeVerificationToastViewed, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

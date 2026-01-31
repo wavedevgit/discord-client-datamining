@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stickers/native/openStickerPackDetailActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: openStickerPackDetailActionSheet, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.analyticsLocation;
         var1 = var0.analyticsPopoutType;

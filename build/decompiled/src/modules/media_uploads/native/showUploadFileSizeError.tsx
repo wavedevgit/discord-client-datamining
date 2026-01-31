@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_uploads/native/showUploadFileSizeError.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: showUploadFileSizeError, environment: var1
+    var1 = function arg0() {
         _fun61348: for (var _fun61348_ip = 0;;) switch (_fun61348_ip) {
             case 0:
                 var0 = arg0;

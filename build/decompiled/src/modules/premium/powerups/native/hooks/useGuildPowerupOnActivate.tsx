@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/hooks/useGuildPowerupOnActivate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useGuildPowerupOnActivate, environment: var1
+    var1 = function arg0, arg1() {
         var8 = arg0;
         var12 = arg1;
         var _closure2_slot0 = var8;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun102450
                     }
                 case 29:
-                    var1 = function() { // Original name: activatePowerup, environment: var4
+                    var1 = function() {
                         var2 = _closure2_slot2;
                         var0 = undefined;
                         var1 = true;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1.guildId = var5;
                                 var4 = _closure3_slot2;
                                 var1.intent = var4;
-                                var4 = function(arg0) { // Original name: onResult, environment: var4
+                                var4 = function arg0() {
                                     _fun102455: for (var _fun102455_ip = 0;;) switch (_fun102455_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.id;
                     var0.guildId = var6;
                     var0.intent = var5;
-                    var4 = function(arg0) { // Original name: onResult, environment: var4
+                    var4 = function arg0() {
                         _fun102452: for (var _fun102452_ip = 0;;) switch (_fun102452_ip) {
                             case 0:
                                 var0 = arg0;

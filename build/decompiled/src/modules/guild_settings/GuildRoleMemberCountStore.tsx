@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun77550: for (var _fun77550_ip = 0;;) switch (_fun77550_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildRoleMemberCountStore, environment: var5
+        var3 = function() {
             _fun77554: for (var _fun77554_ip = 0;;) switch (_fun77554_ip) {
                 case 0:
                     var3 = this;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getRoleMemberCount';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun77555: for (var _fun77555_ip = 0;;) switch (_fun77555_ip) {
                 case 0:
                     var2 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetch';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun77556: for (var _fun77556_ip = 0;;) switch (_fun77556_ip) {
                 case 0:
                     var2 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleGuildRoleMemberCountFetchSuccess, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var3 = var0.roleMemberCount;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleGuildRoleMemberCountUpdate, environment: var3
+    var7 = function arg0() {
         _fun77558: for (var _fun77558_ip = 0;;) switch (_fun77558_ip) {
             case 0:
                 var0 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ROLE_MEMBER_COUNT_UPDATE = var7;
-    var7 = function(arg0) { // Original name: handleGuildRoleMemberBulkAdd, environment: var3
+    var7 = function arg0() {
         _fun77559: for (var _fun77559_ip = 0;;) switch (_fun77559_ip) {
             case 0:
                 var0 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ROLE_MEMBER_BULK_ADD = var7;
-    var7 = function(arg0) { // Original name: handleGuildRoleMemberAdd, environment: var3
+    var7 = function arg0() {
         _fun77560: for (var _fun77560_ip = 0;;) switch (_fun77560_ip) {
             case 0:
                 var0 = arg0;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ROLE_MEMBER_ADD = var7;
-    var7 = function(arg0) { // Original name: handleGuildRoleMemberRemove, environment: var3
+    var7 = function arg0() {
         _fun77561: for (var _fun77561_ip = 0;;) switch (_fun77561_ip) {
             case 0:
                 var0 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ROLE_MEMBER_REMOVE = var7;
-    var7 = function(arg0) { // Original name: handleGuildRoleCreate, environment: var3
+    var7 = function arg0() {
         _fun77562: for (var _fun77562_ip = 0;;) switch (_fun77562_ip) {
             case 0:
                 var0 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ROLE_CREATE = var7;
-    var3 = function(arg0) { // Original name: handleGuildDelete, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         var3 = _closure1_slot5;

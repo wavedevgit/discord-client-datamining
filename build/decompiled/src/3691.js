@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var0 = global;
     var _closure1_slot0 = var0;
-    var0 = function(arg0) { // Original name: processStack, environment: var1
+    var0 = function arg0() {
         _fun33080: for (var _fun33080_ip = 0;;) switch (_fun33080_ip) {
             case 0:
                 var1 = arg0;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var4 = 'function ReanimatedError_Pnpm_errorsTs1(message){const prefix=\'[Reanimated]\';const errorInstance=new Error(message?prefix+" "+message:prefix);errorInstance.name=\'ReanimatedError\';return errorInstance;}';
     var3.code = var4;
-    var4 = function(arg0) { // Original name: ReanimatedError, environment: var1
+    var4 = function arg0() {
         _fun33082: for (var _fun33082_ip = 0;;) switch (_fun33082_ip) {
             case 0:
                 var6 = arg0;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var6;
     var _closure1_slot3 = var3;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: registerReanimatedError, environment: var0
+        var0 = function() {
             _fun33084: for (var _fun33084_ip = 0;;) switch (_fun33084_ip) {
                 case 0:
                     var0 = global;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var5;
     var2.ReanimatedError = var4;
     var2.registerReanimatedError = var3;
-    var3 = function(arg0, arg1) { // Original name: registerWorkletStackDetails, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot4;
         var2 = var3.set;
         var1 = arg0;
@@ -264,7 +264,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.registerWorkletStackDetails = var3;
-    var1 = function(arg0) { // Original name: reportFatalErrorOnJS, environment: var1
+    var1 = function arg0() {
         _fun33086: for (var _fun33086_ip = 0;;) switch (_fun33086_ip) {
             case 0:
                 var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: EducationCoachmarkImg, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reactions/native/useBurstToggleCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useBurstToggleCoachmark, environment: var1
+    var1 = function arg0() {
         _fun57314: for (var _fun57314_ip = 0;;) switch (_fun57314_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.nyYohm;
                     var4 = var8.bind(var9)(var4);
                     var0.description = var4;
-                    var4 = function() { // Original name: onDismiss, environment: var3
+                    var4 = function() {
                         var2 = _closure2_slot1;
                         var0 = _closure1_slot7;
                         var1 = var0.UNKNOWN;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.onDismiss = var4;
                     var4 = 'bottom';
                     var0.position = var4;
-                    var3 = function() { // Original name: renderImgComponent, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot8;
                         var2 = _closure1_slot11;
                         var1 = undefined;

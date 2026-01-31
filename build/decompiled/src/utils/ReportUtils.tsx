@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = metroImportDefault;
     var2 = exports;
     var8 = dependencyMap;
-    var5 = function(arg0) { // Original name: canReportUser, environment: var1
+    var5 = function arg0() {
         _fun50511: for (var _fun50511_ip = 0;;) switch (_fun50511_ip) {
             case 0:
                 var2 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0) { // Original name: canReportMessage, environment: var1
+    var4 = function arg0() {
         _fun50512: for (var _fun50512_ip = 0;;) switch (_fun50512_ip) {
             case 0:
                 var1 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: canReportAndDeleteInChannel, environment: var1
+    var3 = function arg0() {
         _fun50513: for (var _fun50513_ip = 0;;) switch (_fun50513_ip) {
             case 0:
                 var7 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.canReportUser = var5;
     var2.canReportMessage = var4;
     var2.canReportAndDeleteInChannel = var3;
-    var1 = function(arg0) { // Original name: canDeleteAndReportMessage, environment: var1
+    var1 = function arg0() {
         _fun50514: for (var _fun50514_ip = 0;;) switch (_fun50514_ip) {
             case 0:
                 var2 = arg0;

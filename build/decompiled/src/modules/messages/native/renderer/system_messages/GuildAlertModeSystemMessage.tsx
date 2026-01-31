@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/native/renderer/system_messages/GuildAlertModeSystemMessage.tsx';
     var4 = var5.bind(var6)(var4);
     var2.resolveAlertModeColors = var3;
-    var3 = function(arg0) { // Original name: createGuildAlertModeEnabledSystemMessage, environment: var1
+    var3 = function arg0() {
         _fun55768: for (var _fun55768_ip = 0;;) switch (_fun55768_ip) {
             case 0:
                 var7 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createGuildAlertModeEnabledSystemMessage = var3;
-    var1 = function(arg0) { // Original name: createGuildAlertModeDisabledSystemMessage, environment: var1
+    var1 = function arg0() {
         _fun55769: for (var _fun55769_ip = 0;;) switch (_fun55769_ip) {
             case 0:
                 var7 = arg0;

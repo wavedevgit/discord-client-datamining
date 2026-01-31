@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun105218: for (var _fun105218_ip = 0;;) switch (_fun105218_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun105220: for (var _fun105220_ip = 0;;) switch (_fun105220_ip) {
             case 0:
                 var3 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot17 = var3;
-    var3 = function(arg0) { // Original name: ClearAllHistory, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.searchContext;
         var _closure2_slot0 = var0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'accessibilityRole': 'button',
             'unstable_pressDelay': 130
         };
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 12;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: ViewAll, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.onJumpToMedia;
         var3 = _closure1_slot17;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var5.bind(var3)(var1);
         var1 = var4.getSearchContextId;
         var4 = var1.bind(var4)(var12);
-        var1 = function(arg0) { // Original name: useSearchHistory, environment: var0
+        var1 = function arg0() {
             var7 = arg0;
             var _closure3_slot0 = var7;
             var6 = _closure1_slot5;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = new Array(1);
             var4[0] = var7;
             var1 = function() { // Environment: var1
-                var3 = function() { // Original name: handleChange, environment: var0
+                var3 = function() {
                     var2 = _closure3_slot1;
                     var3 = _closure1_slot8;
                     var1 = var3.getSearchHistory;
@@ -994,7 +994,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = {};
         var0 = var4.searchContext;
         var1.searchContext = var0;
-        var0 = function(arg0) { // Original name: useSuggestedUsersData, environment: var0
+        var0 = function arg0() {
             var1 = arg0;
             var6 = var1.searchContext;
             var _closure3_slot0 = var6;
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = {};
         var0 = var4.searchContext;
         var1.searchContext = var0;
-        var0 = function(arg0) { // Original name: useSuggestedChannelsData, environment: var0
+        var0 = function arg0() {
             var1 = arg0;
             var1 = var1.searchContext;
             var _closure3_slot0 = var1;
@@ -1371,7 +1371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot22 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: RecentScreenContainer, environment: var1
+    var1 = function arg0() {
         _fun105259: for (var _fun105259_ip = 0;;) switch (_fun105259_ip) {
             case 0:
                 var0 = arg0;

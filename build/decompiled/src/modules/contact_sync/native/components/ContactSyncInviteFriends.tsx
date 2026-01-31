@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/ContactSyncInviteFriends.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11["6Qgrev"];
         var11 = var12.bind(var13)(var11);
         var8.text = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             _fun81570: for (var _fun81570_ip = 0;;) switch (_fun81570_ip) {
                 case 0:
                     var3 = _closure1_slot1;

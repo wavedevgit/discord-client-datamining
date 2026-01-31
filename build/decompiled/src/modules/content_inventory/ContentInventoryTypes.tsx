@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = dependencyMap;
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var12;
-    var11 = function(arg0) { // Original name: isPlayedGameEntry, environment: var1
+    var11 = function arg0() {
         _fun62224: for (var _fun62224_ip = 0;;) switch (_fun62224_ip) {
             case 0:
                 var0 = arg0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var11;
-    var10 = function(arg0) { // Original name: isTopGameEntry, environment: var1
+    var10 = function arg0() {
         _fun62225: for (var _fun62225_ip = 0;;) switch (_fun62225_ip) {
             case 0:
                 var0 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var10;
-    var9 = function(arg0) { // Original name: isGamingLikeEntry, environment: var1
+    var9 = function arg0() {
         _fun62226: for (var _fun62226_ip = 0;;) switch (_fun62226_ip) {
             case 0:
                 var3 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var9;
-    var8 = function(arg0) { // Original name: isApplicationEntry, environment: var1
+    var8 = function arg0() {
         _fun62227: for (var _fun62227_ip = 0;;) switch (_fun62227_ip) {
             case 0:
                 var1 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var8;
-    var7 = function(arg0) { // Original name: isListenedSessionEntry, environment: var1
+    var7 = function arg0() {
         _fun62228: for (var _fun62228_ip = 0;;) switch (_fun62228_ip) {
             case 0:
                 var0 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var7;
-    var6 = function(arg0) { // Original name: isTopArtistEntry, environment: var1
+    var6 = function arg0() {
         _fun62229: for (var _fun62229_ip = 0;;) switch (_fun62229_ip) {
             case 0:
                 var0 = arg0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var6;
-    var5 = function(arg0) { // Original name: isWatchedMediaEntry, environment: var1
+    var5 = function arg0() {
         _fun62230: for (var _fun62230_ip = 0;;) switch (_fun62230_ip) {
             case 0:
                 var0 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0) { // Original name: isXboxEntry, environment: var1
+    var4 = function arg0() {
         _fun62231: for (var _fun62231_ip = 0;;) switch (_fun62231_ip) {
             case 0:
                 var2 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: isPlaystationEntry, environment: var1
+    var3 = function arg0() {
         _fun62232: for (var _fun62232_ip = 0;;) switch (_fun62232_ip) {
             case 0:
                 var2 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isApplicationEntry = var8;
     var2.isListenedSessionEntry = var7;
     var2.isTopArtistEntry = var6;
-    var6 = function(arg0) { // Original name: isListeningLikeEntry, environment: var1
+    var6 = function arg0() {
         _fun62233: for (var _fun62233_ip = 0;;) switch (_fun62233_ip) {
             case 0:
                 var3 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isWatchedMediaEntry = var5;
     var2.isXboxEntry = var4;
     var2.isPlaystationEntry = var3;
-    var3 = function(arg0) { // Original name: isConsoleEntry, environment: var1
+    var3 = function arg0() {
         _fun62234: for (var _fun62234_ip = 0;;) switch (_fun62234_ip) {
             case 0:
                 var3 = arg0;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isConsoleEntry = var3;
-    var3 = function(arg0) { // Original name: isLaunchedActivityEntry, environment: var1
+    var3 = function arg0() {
         _fun62235: for (var _fun62235_ip = 0;;) switch (_fun62235_ip) {
             case 0:
                 var0 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isLaunchedActivityEntry = var3;
-    var1 = function(arg0) { // Original name: isRecentActivityEntry, environment: var1
+    var1 = function arg0() {
         _fun62236: for (var _fun62236_ip = 0;;) switch (_fun62236_ip) {
             case 0:
                 var3 = arg0;

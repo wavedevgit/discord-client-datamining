@@ -8,13 +8,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: getAlertModalItemKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.key;
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: dismissTopAlert, environment: var1
+    var0 = function() {
         _fun37127: for (var _fun37127_ip = 0;;) switch (_fun37127_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: AlertModalBackdrop, environment: var1
+    var0 = function() {
         var3 = _closure1_slot6;
         var2 = var3.useContext;
         var1 = _closure1_slot16;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var9];
         var2 = var7.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: t, environment: var0
+        var0 = function() {
             var0 = {};
             var4 = _closure1_slot23;
             var2 = _closure2_slot2;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: useSharedAnimationState, environment: var1
+    var0 = function() {
         _fun37132: for (var _fun37132_ip = 0;;) switch (_fun37132_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var9[var12];
                 var5 = var10.bind(var11)(var3);
                 var4 = var5.useAnimatedReaction;
-                var3 = function() { // Original name: n, environment: var0
+                var3 = function() {
                     var1 = _closure2_slot3;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var7;
                 var7 = _closure1_slot24;
                 var3.__initData = var7;
-                var0 = function(arg0) { // Original name: t, environment: var0
+                var0 = function arg0() {
                     _fun37135: for (var _fun37135_ip = 0;;) switch (_fun37135_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var3 = function(arg0) { // Original name: AlertActions, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var3 = _closure1_slot11;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 0;
         var10 = var7.bind(var9)(var5);
         var _closure2_slot1 = var10;
-        var5 = function(arg0) { // Original name: createTransitionGroupItems, environment: var0
+        var5 = function arg0() {
             _fun37139: for (var _fun37139_ip = 0;;) switch (_fun37139_ip) {
                 case 0:
                     var5 = arg0;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.code = var8;
     var _closure1_slot22 = var5;
     var5 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: withAlertModalSpring, environment: var0
+        var0 = function arg0, arg1() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
             var1 = 23;
@@ -828,7 +828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'design/components/AlertModal/native/AlertModal.native.tsx';
     var5 = var6.bind(var7)(var5);
     var2.AlertModalContainer = var4;
-    var4 = function() { // Original name: useDismissModalCallback, environment: var1
+    var4 = function() {
         var4 = _closure1_slot6;
         var3 = var4.useContext;
         var2 = _closure1_slot18;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useDismissModalCallback = var4;
-    var4 = function(arg0) { // Original name: AlertModal, environment: var1
+    var4 = function arg0() {
         _fun37148: for (var _fun37148_ip = 0;;) switch (_fun37148_ip) {
             case 0:
                 var0 = arg0;
@@ -928,7 +928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8[var0];
                 var10 = var25.bind(var3)(var6);
                 var9 = var10.useAnimatedStyle;
-                var6 = function() { // Original name: p, environment: var4
+                var6 = function() {
                     _fun37149: for (var _fun37149_ip = 0;;) switch (_fun37149_ip) {
                         case 0:
                             var1 = _closure2_slot9;
@@ -1188,7 +1188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var7;
                 var5[1] = var6;
                 var0.style = var5;
-                var4 = function(arg0) { // Original name: onLayout, environment: var4
+                var4 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = var2.set;
                     var0 = arg0;
@@ -1290,7 +1290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AlertModal = var4;
     var2.AlertActions = var3;
-    var1 = function(arg0) { // Original name: AlertActionButton, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var0 = var3.onPress;
         var _closure2_slot0 = var0;

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = metroImportAll;
         var _closure1_slot2 = var0;
         var _closure1_slot3 = var3;
-        var0 = function(arg0) { // Original name: isAnalyticsEndpoint, environment: var1
+        var0 = function arg0() {
             _fun112290: for (var _fun112290_ip = 0;;) switch (_fun112290_ip) {
                 case 0:
                     var0 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4 instanceof Object ? var4 : var5;
         var _closure1_slot7 = var4;
         var4 = /\\/api(\\/v\d+)?\\/science / ;
-            var _closure1_slot8 = var4; var4 = 5; var5 = var3[var4]; var7 = var2.bind(var0)(var5); var6 = var7.setRequestPatch; var5 = {}; var8 = function(arg0) { // Original name: prepareRequest, environment: var1
+            var _closure1_slot8 = var4; var4 = 5; var5 = var3[var4]; var7 = var2.bind(var0)(var5); var6 = var7.setRequestPatch; var5 = {}; var8 = function arg0() {
                 _fun112291: for (var _fun112291_ip = 0;;) switch (_fun112291_ip) {
                     case 0:
                         var4 = arg0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 536:
                         var10 = var9;
                     case 539:
-                        var9 = function(arg0) { // Original name: populateQValues, environment: var1
+                        var9 = function arg0() {
                             var3 = arg0;
                             var1 = 10;
                             var _closure3_slot0 = var1;
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var3.bind(var4)(var2, var1);
                         return var0;
                 }
-            }; var5.prepareRequest = var8; var8 = function(arg0, arg1, arg2) { // Original name: interceptResponse, environment: var1
+            }; var5.prepareRequest = var8; var8 = function arg0, arg1, arg2() {
                 _fun112296: for (var _fun112296_ip = 0;;) switch (_fun112296_ip) {
                     case 0:
                         var12 = arg0;

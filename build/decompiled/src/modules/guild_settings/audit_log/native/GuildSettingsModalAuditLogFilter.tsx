@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/audit_log/native/GuildSettingsModalAuditLogFilter.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: GuildSettingsModalAuditLogFilter, environment: var1
+    var3 = function arg0() {
         _fun115135: for (var _fun115135_ip = 0;;) switch (_fun115135_ip) {
             case 0:
                 var1 = arg0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var2 = var3.bind(var4)(var2);
                     var0.data = var2;
-                    var1 = function(arg0) { // Original name: keyExtractor, environment: var1
+                    var1 = function arg0() {
                         _fun115138: for (var _fun115138_ip = 0;;) switch (_fun115138_ip) {
                             case 0:
                                 var1 = arg0;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 299:
                             var0.icon = var8;
                             var0.label = var4;
-                            var4 = function() { // Original name: onPress, environment: var6
+                            var4 = function() {
                                 var3 = _closure2_slot6;
                                 var1 = _closure3_slot1;
                                 var2 = !var1;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.userId = var10;
                             var9 = _closure2_slot2;
                             var1.guildId = var9;
-                            var6 = function() { // Original name: onPress, environment: var6
+                            var6 = function() {
                                 var3 = _closure2_slot6;
                                 var1 = _closure3_slot1;
                                 var2 = !var1;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: createAuditLogFilterUserData, environment: var1
+    var3 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var0 = new Array(0);
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = new var13[var3](var12);
         var3 = var3 instanceof Object ? var3 : var4;
         var _closure2_slot2 = var3;
-        var3 = function(arg0) { // Original name: userIdResolver, environment: var1
+        var3 = function arg0() {
             _fun115145: for (var _fun115145_ip = 0;;) switch (_fun115145_ip) {
                 case 0:
                     var2 = arg0;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createAuditLogFilterUserData = var3;
-    var1 = function(arg0) { // Original name: createAuditLogFilterActionData, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;

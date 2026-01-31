@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handlePress, environment: var1
+    var0 = function() {
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
         var0 = 6;

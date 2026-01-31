@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun3375: for (var _fun3375_ip = 0;;) switch (_fun3375_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: CustomEvent, environment: var0
+        var3 = function arg0, arg1() {
             _fun3379: for (var _fun3379_ip = 0;;) switch (_fun3379_ip) {
                 case 0:
                     var2 = arg1;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'detail';
         var4.key = var5;
-        var0 = function() { // Original name: get, environment: var0
+        var0 = function() {
             var0 = this;
             var0 = var0._detail;
             return var0;

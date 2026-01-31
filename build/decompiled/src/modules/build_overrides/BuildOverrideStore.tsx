@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun76925: for (var _fun76925_ip = 0;;) switch (_fun76925_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: BuildOverrideStore, environment: var5
+        var3 = function() {
             _fun76929: for (var _fun76929_ip = 0;;) switch (_fun76929_ip) {
                 case 0:
                     var3 = this;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getCurrentBuildOverride';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
-            var1 = function() { // Original name: resolveCurrentOverrideIfNecessary, environment: var0
+        var0 = function() {
+            var1 = function() {
                 _fun76931: for (var _fun76931_ip = 0;;) switch (_fun76931_ip) {
                     case 0:
                         var2 = _closure1_slot9;
@@ -211,9 +211,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getBuildOverride';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
-            var2 = function(arg0) { // Original name: resolveBuildOverrideIfNecessary, environment: var0
+            var2 = function arg0() {
                 _fun76934: for (var _fun76934_ip = 0;;) switch (_fun76934_ip) {
                     case 0:
                         var7 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getBuildOverrides';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var14 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleBuildOverrideResolved, environment: var4
+    var9 = function arg0() {
         _fun76937: for (var _fun76937_ip = 0;;) switch (_fun76937_ip) {
             case 0:
                 var0 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.BUILD_OVERRIDE_RESOLVED = var9;
-    var4 = function(arg0) { // Original name: handleCurrentBuildOverrideResolved, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.overrides;
         var2 = _closure1_slot8;

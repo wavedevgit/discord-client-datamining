@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun107051: for (var _fun107051_ip = 0;;) switch (_fun107051_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot27 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: AutoAnalytics, environment: var5
+        var3 = function() {
             _fun107055: for (var _fun107055_ip = 0;;) switch (_fun107055_ip) {
                 case 0:
                     var3 = this;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun107056: for (var _fun107056_ip = 0;;) switch (_fun107056_ip) {
                 case 0:
                     var6 = this;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun107057: for (var _fun107057_ip = 0;;) switch (_fun107057_ip) {
                 case 0:
                     var0 = arg0;
@@ -828,7 +828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameMetadata';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0.props;
             var0 = {};
@@ -845,7 +845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_trackWithMetadata';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun107059: for (var _fun107059_ip = 0;;) switch (_fun107059_ip) {
                 case 0:
                     var4 = arg0;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'collectDefaultAnalyticsMetadata';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun107060: for (var _fun107060_ip = 0;;) switch (_fun107060_ip) {
                 case 0:
                     var1 = arg1;
@@ -970,7 +970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = null;
             return var0;
         };
@@ -987,7 +987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/AutoAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ConnectedAutoAnalytics, environment: var1
+    var1 = function() {
         _fun107062: for (var _fun107062_ip = 0;;) switch (_fun107062_ip) {
             case 0:
                 var6 = _closure1_slot0;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun46111: for (var _fun46111_ip = 0;;) switch (_fun46111_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.GridLayoutProvider;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: GridLayoutProviderWithProps, environment: var5
+        var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun46115: for (var _fun46115_ip = 0;;) switch (_fun46115_ip) {
                 case 0:
                     var1 = arg4;
@@ -240,7 +240,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'updateProps';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: updateProps, environment: var5
+        var0 = function arg0() {
             _fun46119: for (var _fun46119_ip = 0;;) switch (_fun46119_ip) {
                 case 0:
                     var1 = arg0;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'hasExpired';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._hasExpired;
             return var0;
@@ -315,7 +315,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'markExpired';
         var4.key = var6;
-        var6 = function() { // Original name: markExpired, environment: var5
+        var6 = function() {
             var1 = true;
             var0 = this;
             var0._hasExpired = var1;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'reportItemLayout';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: reportItemLayout, environment: var5
+        var6 = function arg0() {
             _fun46122: for (var _fun46122_ip = 0;;) switch (_fun46122_ip) {
                 case 0:
                     var1 = this;
@@ -379,7 +379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'averageItemSize';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.averageWindow;
             var0 = var0.currentValue;
@@ -390,7 +390,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'newLayoutManager';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: newLayoutManager, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun46124: for (var _fun46124_ip = 0;;) switch (_fun46124_ip) {
                 case 0:
                     var5 = arg0;
@@ -460,7 +460,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0 instanceof Object ? var0 : var1;
                     var2.averageWindow = var0;
                     var13 = _closure2_slot0;
-                    var1 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
+                    var1 = function arg0, arg1, arg2, arg3() {
                         _fun46125: for (var _fun46125_ip = 0;;) switch (_fun46125_ip) {
                             case 0:
                                 var4 = arg0;
@@ -541,7 +541,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'updateCachedDimensions';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: updateCachedDimensions, environment: var5
+        var6 = function arg0, arg1() {
             _fun46127: for (var _fun46127_ip = 0;;) switch (_fun46127_ip) {
                 case 0:
                     var4 = arg0;
@@ -578,7 +578,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getCleanLayoutObj';
         var4.key = var6;
-        var6 = function() { // Original name: getCleanLayoutObj, environment: var5
+        var6 = function() {
             var0 = this;
             var1 = var0.layoutObject;
             var2 = undefined;
@@ -593,7 +593,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getAdjustedRenderWindowSize';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: getAdjustedRenderWindowSize, environment: var5
+        var5 = function arg0() {
             var0 = this;
             var2 = _closure1_slot0;
             var3 = _closure1_slot1;

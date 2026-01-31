@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24402: for (var _fun24402_ip = 0;;) switch (_fun24402_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};

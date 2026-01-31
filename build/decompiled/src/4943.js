@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var6;
             var _closure1_slot2 = var7;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun44694: for (var _fun44694_ip = 0;;) switch (_fun44694_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -49,11 +49,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0) { // Original name: hasUnresolvedRefs, environment: var1
+            var0 = function arg0() {
                 _fun44697: for (var _fun44697_ip = 0;;) switch (_fun44697_ip) {
                     case 0:
                         var1 = arg0;
-                        var3 = function(arg0) { // Original name: extract, environment: var0
+                        var3 = function arg0() {
                             _fun44698: for (var _fun44698_ip = 0;;) switch (_fun44698_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -329,7 +329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = 'onEnded';
             var3 = var6.bind(var0)(var5, var4, var3);
             var _closure1_slot12 = var3;
-            var1 = function(arg0) { // Original name: createHandler, environment: var1
+            var1 = function arg0() {
                 _fun44704: for (var _fun44704_ip = 0;;) switch (_fun44704_ip) {
                     case 0:
                         var1 = arg0;
@@ -368,7 +368,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = _closure1_slot9;
                         var4 = var4.Component;
                         var0 = function(arg0) { // Environment: var0
-                            var3 = function(arg0) { // Original name: Handler, environment: var5
+                            var3 = function arg0() {
                                 _fun44706: for (var _fun44706_ip = 0;;) switch (_fun44706_ip) {
                                     case 0:
                                         var1 = arg0;
@@ -905,7 +905,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var0 = 'componentDidMount';
                             var4.key = var0;
-                            var0 = function() { // Original name: componentDidMount, environment: var5
+                            var0 = function() {
                                 _fun44714: for (var _fun44714_ip = 0;;) switch (_fun44714_ip) {
                                     case 0:
                                         var3 = this;
@@ -1014,7 +1014,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'componentDidUpdate';
                             var4.key = var6;
-                            var6 = function() { // Original name: componentDidUpdate, environment: var5
+                            var6 = function() {
                                 _fun44716: for (var _fun44716_ip = 0;;) switch (_fun44716_ip) {
                                     case 0:
                                         var3 = this;
@@ -1046,7 +1046,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'componentWillUnmount';
                             var4.key = var6;
-                            var6 = function() { // Original name: componentWillUnmount, environment: var5
+                            var6 = function() {
                                 _fun44717: for (var _fun44717_ip = 0;;) switch (_fun44717_ip) {
                                     case 0:
                                         var3 = this;
@@ -1114,7 +1114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'update';
                             var4.key = var6;
-                            var6 = function(arg0) { // Original name: update, environment: var5
+                            var6 = function arg0() {
                                 _fun44718: for (var _fun44718_ip = 0;;) switch (_fun44718_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -1218,7 +1218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'setNativeProps';
                             var4.key = var6;
-                            var6 = function(arg0) { // Original name: setNativeProps, environment: var5
+                            var6 = function arg0() {
                                 _fun44720: for (var _fun44720_ip = 0;;) switch (_fun44720_ip) {
                                     case 0:
                                         var3 = this;
@@ -1266,7 +1266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'render';
                             var4.key = var6;
-                            var5 = function() { // Original name: render, environment: var5
+                            var5 = function() {
                                 _fun44721: for (var _fun44721_ip = 0;;) switch (_fun44721_ip) {
                                     case 0:
                                         var13 = this;

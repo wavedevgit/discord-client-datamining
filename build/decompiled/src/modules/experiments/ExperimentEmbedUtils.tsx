@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/experiments/ExperimentEmbedUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.EXPERIMENT_EMBED_URL_REGEX = var3;
-    var3 = function(arg0) { // Original name: isExperimentEmbedURL, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot3;
         var1 = var2.test;
         var0 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isExperimentEmbedURL = var3;
-    var3 = function(arg0) { // Original name: getExperimentFromEmbedURL, environment: var1
+    var3 = function arg0() {
         _fun28256: for (var _fun28256_ip = 0;;) switch (_fun28256_ip) {
             case 0:
                 var2 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExperimentFromEmbedURL = var3;
-    var3 = function(arg0) { // Original name: getExperimentTreatmentFromEmbedURL, environment: var1
+    var3 = function arg0() {
         _fun28257: for (var _fun28257_ip = 0;;) switch (_fun28257_ip) {
             case 0:
                 var2 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExperimentTreatmentFromEmbedURL = var3;
-    var3 = function(arg0, arg1) { // Original name: getURLForExperiment, environment: var1
+    var3 = function arg0, arg1() {
         _fun28258: for (var _fun28258_ip = 0;;) switch (_fun28258_ip) {
             case 0:
                 var5 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getURLForExperiment = var3;
-    var3 = function(arg0, arg1) { // Original name: getExperimentServerAssignmentLabel, environment: var1
+    var3 = function arg0, arg1() {
         _fun28259: for (var _fun28259_ip = 0;;) switch (_fun28259_ip) {
             case 0:
                 var4 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExperimentServerAssignmentLabel = var3;
-    var1 = function(arg0) { // Original name: getExperimentBuckets, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;

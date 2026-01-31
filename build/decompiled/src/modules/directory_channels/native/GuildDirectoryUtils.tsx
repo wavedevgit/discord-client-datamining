@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var5.bind(var3)(var4);
                         var5 = var6.openLazy;
                         var4 = {};
-                        var7 = function() { // Original name: importer, environment: var7
+                        var7 = function() {
                             var2 = _closure1_slot0;
                             var0 = _closure1_slot3;
                             var1 = 6;

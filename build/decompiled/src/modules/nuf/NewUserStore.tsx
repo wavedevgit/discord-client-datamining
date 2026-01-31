@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun29856: for (var _fun29856_ip = 0;;) switch (_fun29856_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: NewUserStore, environment: var5
+        var3 = function() {
             _fun29860: for (var _fun29860_ip = 0;;) switch (_fun29860_ip) {
                 case 0:
                     var3 = this;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun29861: for (var _fun29861_ip = 0;;) switch (_fun29861_ip) {
                 case 0:
                     var3 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getType';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = {};
             var1 = _closure1_slot5;
             var0.type = var1;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var5 = function(arg0) { // Original name: handleNewUser, environment: var3
+    var5 = function arg0() {
         var0 = arg0;
         var1 = var0.newUserType;
         _closure1_slot5 = var1;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.NUF_NEW_USER = var5;
-    var5 = function() { // Original name: handleNUFCompleted, environment: var3
+    var5 = function() {
         var1 = null;
         _closure1_slot5 = var1;
         var1 = _closure1_slot6;

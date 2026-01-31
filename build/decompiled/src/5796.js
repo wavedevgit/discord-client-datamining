@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.slice;
     var _closure1_slot3 = var1;
-    var1 = function(arg0) { // Original name: swizzle, environment: var0
+    var1 = function arg0() {
         _fun51318: for (var _fun51318_ip = 0;;) switch (_fun51318_ip) {
             case 0:
                 var7 = arg0;

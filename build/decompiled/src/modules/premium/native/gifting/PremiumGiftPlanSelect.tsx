@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gifting/PremiumGiftPlanSelect.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PremiumGiftPlanSelect, environment: var1
+    var1 = function() {
         _fun74644: for (var _fun74644_ip = 0;;) switch (_fun74644_ip) {
             case 0:
                 var9 = _closure1_slot0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var10 * var11;
                             var9.width = var10;
                             var4.style = var9;
-                            var8 = function(arg0) { // Original name: onLayout, environment: var8
+                            var8 = function arg0() {
                                 _fun74653: for (var _fun74653_ip = 0;;) switch (_fun74653_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10[var0];
                 var2 = var9.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: W, environment: var24
+                var0 = function() {
                     _fun74655: for (var _fun74655_ip = 0;;) switch (_fun74655_ip) {
                         case 0:
                             var5 = {};
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var26;
             case 1551:
                 var16.height = var25;
-                var24 = function(arg0) { // Original name: onConfigurePanGesture, environment: var24
+                var24 = function arg0() {
                     var2 = arg0;
                     var1 = var2.activeOffsetX;
                     var0 = new Array(2);

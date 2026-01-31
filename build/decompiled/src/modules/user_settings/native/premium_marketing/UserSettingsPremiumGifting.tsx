@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot17 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: UserSettingsPremiumGifting, environment: var1
+    var1 = function arg0, arg1() {
         _fun82603: for (var _fun82603_ip = 0;;) switch (_fun82603_ip) {
             case 0:
                 var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot6 = var4;
                 var _closure2_slot7 = var4;
                 var _closure2_slot8 = var4;
-                var36 = function() { // Original name: handleLearnMorePremiumClick, environment: var16
+                var36 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 22;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun82603_ip = 700;
                 continue _fun82603;
             case 689:
-                var16 = function() { // Original name: renderInventory, environment: var16
+                var16 = function() {
                     _fun82605: for (var _fun82605_ip = 0;;) switch (_fun82605_ip) {
                         case 0:
                             var0 = global;

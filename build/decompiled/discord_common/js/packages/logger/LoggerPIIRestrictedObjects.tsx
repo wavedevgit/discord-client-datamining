@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = '../discord_common/js/packages/logger/LoggerPIIRestrictedObjects.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: checkLogForPII, environment: var1
+    var1 = function arg0, arg1() {
         var1 = 1;
         var0 = copyRestArgs(var1);
         var0 = undefined;

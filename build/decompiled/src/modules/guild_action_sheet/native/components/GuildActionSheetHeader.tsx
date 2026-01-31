@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CommunityPill, environment: var1
+    var0 = function arg0() {
         _fun96522: for (var _fun96522_ip = 0;;) switch (_fun96522_ip) {
             case 0:
                 var0 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var6 = 'button';
                 var0.accessibilityRole = var6;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 16;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_action_sheet/native/components/GuildActionSheetHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildActionSheetHeader, environment: var1
+    var1 = function arg0() {
         _fun96524: for (var _fun96524_ip = 0;;) switch (_fun96524_ip) {
             case 0:
                 var0 = arg0;
@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.style = var20;
                 var20 = 'button';
                 var14.accessibilityRole = var20;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 16;

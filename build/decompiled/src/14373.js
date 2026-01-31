@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var5 = 'pt';
     var1.locale = var5;
-    var5 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var5 = function arg0, arg1() {
         _fun112173: for (var _fun112173_ip = 0;;) switch (_fun112173_ip) {
             case 0:
                 var4 = arg0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'locale': 'pt-PT',
         'parentLocale': 'pt'
     };
-    var4 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var4 = function arg0, arg1() {
         _fun112174: for (var _fun112174_ip = 0;;) switch (_fun112174_ip) {
             case 0:
                 var4 = arg0;

@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/channel/VoiceChannelHoistingExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.VoiceChannelHoistingExperiment = var3;
-    var1 = function(arg0, arg1) { // Original name: useVoiceChannelHoistingExperiment, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = var3.useExperiment;
         var1 = {};

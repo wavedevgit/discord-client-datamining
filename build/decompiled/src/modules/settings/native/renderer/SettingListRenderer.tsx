@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: SearchListSectionLabel, environment: var1
+    var0 = function arg0() {
         _fun79616: for (var _fun79616_ip = 0;;) switch (_fun79616_ip) {
             case 0:
                 var0 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: SearchListSectionSubLabel, environment: var1
+    var0 = function arg0() {
         _fun79617: for (var _fun79617_ip = 0;;) switch (_fun79617_ip) {
             case 0:
                 var0 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getItemType, environment: var1
+    var0 = function arg0() {
         _fun79618: for (var _fun79618_ip = 0;;) switch (_fun79618_ip) {
             case 0:
                 var0 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: renderItem, environment: var1
+    var0 = function arg0() {
         _fun79619: for (var _fun79619_ip = 0;;) switch (_fun79619_ip) {
             case 0:
                 var0 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0, arg1() {
         _fun79620: for (var _fun79620_ip = 0;;) switch (_fun79620_ip) {
             case 0:
                 var0 = arg0;

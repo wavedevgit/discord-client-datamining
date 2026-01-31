@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventRecurrenceModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditGuildEventRecurrenceModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.guildEvent;
         var _closure2_slot0 = var11;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var11 = var5.bind(var3)();
-        var5 = function(arg0) { // Original name: handleScheduleChange, environment: var9
+        var5 = function arg0() {
             _fun65251: for (var _fun65251_ip = 0;;) switch (_fun65251_ip) {
                 case 0:
                     var0 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var10 = '';
         var0.title = var10;
-        var10 = function() { // Original name: customNavbar, environment: var9
+        var10 = function() {
             var3 = _closure1_slot7;
             var1 = _closure1_slot1;
             var6 = _closure1_slot3;
@@ -359,12 +359,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.customNavbar = var10;
-        var10 = function() { // Original name: headerLeft, environment: var9
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var0.headerLeft = var10;
-        var9 = function() { // Original name: render, environment: var9
+        var9 = function() {
             _fun65255: for (var _fun65255_ip = 0;;) switch (_fun65255_ip) {
                 case 0:
                     var3 = _closure1_slot8;

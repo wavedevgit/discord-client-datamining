@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var3 = function(arg0, arg1) { // Original name: getDynamicSamplingContextFromClient, environment: var0
+    var3 = function arg0, arg1() {
         _fun99262: for (var _fun99262_ip = 0;;) switch (_fun99262_ip) {
             case 0:
                 var3 = arg1;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var2 = function(arg0) { // Original name: getDynamicSamplingContextFromSpan, environment: var0
+    var2 = function arg0() {
         _fun99263: for (var _fun99263_ip = 0;;) switch (_fun99263_ip) {
             case 0:
                 var4 = arg0;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6.bind(var7)(var1, var4, var5);
     var4 = '_frozenDsc';
     var _closure1_slot2 = var4;
-    var4 = function(arg0, arg1) { // Original name: freezeDscOnSpan, environment: var0
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.freezeDscOnSpan = var4;
     var1.getDynamicSamplingContextFromClient = var3;
     var1.getDynamicSamplingContextFromSpan = var2;
-    var0 = function(arg0) { // Original name: spanToBaggageHeader, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot4;
         var3 = undefined;
         var1 = arg0;

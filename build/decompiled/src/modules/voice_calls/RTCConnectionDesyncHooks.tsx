@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun102655: for (var _fun102655_ip = 0;;) switch (_fun102655_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun102657: for (var _fun102657_ip = 0;;) switch (_fun102657_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var3 = function(arg0) { // Original name: useDesyncedChannelParticipants, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_calls/RTCConnectionDesyncHooks.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: useEnsureSyncedChannelVoiceStates, environment: var1
+    var4 = function arg0, arg1() {
         _fun102660: for (var _fun102660_ip = 0;;) switch (_fun102660_ip) {
             case 0:
                 var5 = arg1;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot2;
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot6;
-                    var1 = function(arg0, arg1, arg2) { // Original name: syncChannelVoiceStates, environment: var0
+                    var1 = function arg0, arg1, arg2() {
                         _fun102669: for (var _fun102669_ip = 0;;) switch (_fun102669_ip) {
                             case 0:
                                 var6 = arg0;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useEnsureSyncedChannelVoiceStates = var4;
     var2.useDesyncedChannelParticipants = var3;
-    var3 = function(arg0, arg1) { // Original name: useEnsureSyncedChannelParticipants, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg1;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot15;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var3 = _closure2_slot1;
             var2 = _closure2_slot0;
-            var1 = function(arg0, arg1) { // Original name: syncChannelParticipants, environment: var0
+            var1 = function arg0, arg1() {
                 _fun102676: for (var _fun102676_ip = 0;;) switch (_fun102676_ip) {
                     case 0:
                         var4 = arg0;
@@ -802,7 +802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEnsureSyncedChannelParticipants = var3;
-    var1 = function(arg0, arg1) { // Original name: useIsRTCDisconnectedUIVisible, environment: var1
+    var1 = function arg0, arg1() {
         _fun102679: for (var _fun102679_ip = 0;;) switch (_fun102679_ip) {
             case 0:
                 var9 = arg0;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = function(arg0) { // Original name: error, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.RangeError;
         var1 = _closure1_slot4;
@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         throw var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: mapDomain, environment: var1
+    var0 = function arg0, arg1() {
         _fun44001: for (var _fun44001_ip = 0;;) switch (_fun44001_ip) {
             case 0:
                 var4 = arg0;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var0;
-    var6 = function(arg0) { // Original name: ucs2decode, environment: var1
+    var6 = function arg0() {
         _fun44002: for (var _fun44002_ip = 0;;) switch (_fun44002_ip) {
             case 0:
                 var11 = arg0;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.String;
     var2 = var2.fromCharCode;
     var _closure1_slot6 = var2;
-    var2 = function(arg0) { // Original name: basicToDigit, environment: var1
+    var2 = function arg0() {
         _fun44003: for (var _fun44003_ip = 0;;) switch (_fun44003_ip) {
             case 0:
                 var2 = arg0;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var2;
-    var2 = function(arg0, arg1) { // Original name: digitToBasic, environment: var1
+    var2 = function arg0, arg1() {
         var2 = arg0;
         var0 = 22;
         var1 = var2 + var0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot8 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: adapt, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun44005: for (var _fun44005_ip = 0;;) switch (_fun44005_ip) {
             case 0:
                 var1 = arg0;
@@ -303,7 +303,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var2;
-    var4 = function(arg0) { // Original name: decode, environment: var1
+    var4 = function arg0() {
         _fun44006: for (var _fun44006_ip = 0;;) switch (_fun44006_ip) {
             case 0:
                 var17 = arg0;
@@ -503,7 +503,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function(arg0) { // Original name: encode, environment: var1
+    var3 = function arg0() {
         _fun44007: for (var _fun44007_ip = 0;;) switch (_fun44007_ip) {
             case 0:
                 var11 = undefined;
@@ -795,7 +795,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.version = var5;
     var5 = {};
     var5.decode = var6;
-    var6 = function(arg0) { // Original name: ucs2encode, environment: var1
+    var6 = function arg0() {
         var0 = global;
         var1 = var0.String;
         var3 = var1.fromCodePoint;
@@ -812,7 +812,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.ucs2 = var5;
     var2.decode = var4;
     var2.encode = var3;
-    var3 = function(arg0) { // Original name: toASCII, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot13;
         var2 = undefined;
         var1 = arg0;
@@ -842,7 +842,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.toASCII = var3;
-    var1 = function(arg0) { // Original name: toUnicode, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot13;
         var2 = undefined;
         var1 = arg0;

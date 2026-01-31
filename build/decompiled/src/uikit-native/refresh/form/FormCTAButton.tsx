@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: getCTAButtonColor, environment: var4
+    var0 = function arg0, arg1() {
         _fun47890: for (var _fun47890_ip = 0;;) switch (_fun47890_ip) {
             case 0:
                 var2 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var3 = function(arg0) { // Original name: FormCTAButton, environment: var4
+    var3 = function arg0() {
         _fun47891: for (var _fun47891_ip = 0;;) switch (_fun47891_ip) {
             case 0:
                 var0 = arg0;

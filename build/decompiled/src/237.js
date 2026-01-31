@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = null;
     var _closure1_slot4 = var0;
     var0 = {};
-    var3 = function(arg0) { // Original name: logIfNoNativeHook, environment: var2
+    var3 = function arg0() {
         _fun3247: for (var _fun3247_ip = 0;;) switch (_fun3247_ip) {
             case 0:
                 var1 = arg0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.logIfNoNativeHook = var3;
-    var3 = function(arg0) { // Original name: logToConsole, environment: var2
+    var3 = function arg0() {
         _fun3248: for (var _fun3248_ip = 0;;) switch (_fun3248_ip) {
             case 0:
                 var3 = arg0;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.logToConsole = var3;
-    var3 = function(arg0) { // Original name: setWarningHandler, environment: var2
+    var3 = function arg0() {
         var0 = arg0;
         _closure1_slot4 = var0;
         var0 = undefined;

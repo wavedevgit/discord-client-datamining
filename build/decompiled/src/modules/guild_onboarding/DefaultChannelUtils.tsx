@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getDefaultPermissionsForChannel, environment: var1
+    var0 = function arg0() {
         _fun41603: for (var _fun41603_ip = 0;;) switch (_fun41603_ip) {
             case 0:
                 var0 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/DefaultChannelUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useCanChannelBeDefault, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanChannelBeDefault = var3;
-    var1 = function(arg0, arg1) { // Original name: canChannelBeDefault, environment: var1
+    var1 = function arg0, arg1() {
         _fun41606: for (var _fun41606_ip = 0;;) switch (_fun41606_ip) {
             case 0:
                 var6 = arg1;

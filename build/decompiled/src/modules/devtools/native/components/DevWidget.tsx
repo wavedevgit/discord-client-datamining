@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function DevWidgetTsx5(){const{getClampedPosition,x,y,withSpring,springUnclamped}=this.__closure;const{x:translateX,y:translateY}=getClampedPosition(x.get(),y.get());return{transform:[{translateX:withSpring(translateX,springUnclamped)},{translateY:withSpring(translateY,springUnclamped)}]};}';
     var3.code = var6;
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: DraggableContainer, environment: var1
+    var3 = function arg0() {
         _fun99967: for (var _fun99967_ip = 0;;) switch (_fun99967_ip) {
             case 0:
                 var0 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot9 = var13;
                 var12 = _closure1_slot3;
                 var11 = var12.useCallback;
-                var10 = function(arg0, arg1) { // Original name: v, environment: var8
+                var10 = function arg0, arg1() {
                     var2 = _closure2_slot9;
                     var0 = var2.get;
                     var0 = var0.bind(var2)();
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.Pan;
                 var12 = var10.bind(var11)();
                 var11 = var12.onStart;
-                var10 = function() { // Original name: D, environment: var8
+                var10 = function() {
                     var3 = _closure2_slot6;
                     var2 = var3.set;
                     var4 = _closure2_slot0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.__initData = var13;
                 var12 = var11.bind(var12)(var10);
                 var11 = var12.onUpdate;
-                var10 = function(arg0) { // Original name: C, environment: var8
+                var10 = function arg0() {
                     var0 = arg0;
                     var4 = _closure2_slot10;
                     var3 = _closure2_slot6;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.__initData = var13;
                 var12 = var11.bind(var12)(var10);
                 var11 = var12.onEnd;
-                var10 = function() { // Original name: P, environment: var8
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 6;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9[var4];
                 var12 = var1.bind(var3)(var11);
                 var11 = var12.useAnimatedStyle;
-                var8 = function() { // Original name: W, environment: var8
+                var8 = function() {
                     var2 = _closure2_slot10;
                     var3 = _closure2_slot0;
                     var1 = var3.get;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.style = var4;
         var4 = 'button';
         var0.accessibilityRole = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 13;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/DevWidget.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevWidget, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var11 = _closure1_slot2;
         var1 = 6;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.spacing;
         var9 = var9.PX_4;
         var5.dragBoundsPadding = var9;
-        var9 = function(arg0) { // Original name: onChangePosition, environment: var9
+        var9 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 16;

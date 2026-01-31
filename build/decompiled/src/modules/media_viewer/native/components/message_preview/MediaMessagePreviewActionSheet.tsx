@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaMessagePreviewActionSheet, environment: var1
+    var1 = function arg0() {
         _fun73191: for (var _fun73191_ip = 0;;) switch (_fun73191_ip) {
             case 0:
                 var2 = arg0;

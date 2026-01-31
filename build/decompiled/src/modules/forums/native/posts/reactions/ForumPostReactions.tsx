@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/posts/reactions/ForumPostReactions.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: MaxForumPostReactions, environment: var1
+    var3 = function arg0() {
         _fun89149: for (var _fun89149_ip = 0;;) switch (_fun89149_ip) {
             case 0:
                 var0 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.MaxForumPostReactions = var3;
-    var3 = function(arg0) { // Original name: ForumPostActionBarReactions, environment: var1
+    var3 = function arg0() {
         _fun89151: for (var _fun89151_ip = 0;;) switch (_fun89151_ip) {
             case 0:
                 var0 = arg0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ForumPostActionBarReactions = var3;
-    var1 = function(arg0) { // Original name: MostCommonForumPostReaction, environment: var1
+    var1 = function arg0() {
         _fun89153: for (var _fun89153_ip = 0;;) switch (_fun89153_ip) {
             case 0:
                 var0 = arg0;

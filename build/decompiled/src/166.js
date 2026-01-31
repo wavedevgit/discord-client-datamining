@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: rawToPerformanceEntryType, environment: var0
+    var2 = function arg0() {
         _fun2475: for (var _fun2475_ip = 0;;) switch (_fun2475_ip) {
             case 0:
                 var3 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var3;
     var1.RawPerformanceEntryTypeValues = var3;
-    var3 = function(arg0) { // Original name: rawToPerformanceEntry, environment: var0
+    var3 = function arg0() {
         _fun2476: for (var _fun2476_ip = 0;;) switch (_fun2476_ip) {
             case 0:
                 var1 = arg0;
@@ -373,7 +373,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.rawToPerformanceEntry = var3;
     var1.rawToPerformanceEntryType = var2;
-    var0 = function(arg0) { // Original name: performanceEntryTypeToRaw, environment: var0
+    var0 = function arg0() {
         _fun2477: for (var _fun2477_ip = 0;;) switch (_fun2477_ip) {
             case 0:
                 var3 = arg0;

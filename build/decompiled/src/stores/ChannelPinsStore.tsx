@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun75720: for (var _fun75720_ip = 0;;) switch (_fun75720_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var10 = function(arg0) { // Original name: handleChannelDelete, environment: var4
+    var10 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var1 = _closure1_slot16;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var9 = function() { // Original name: handleRelationshipUpdate, environment: var4
+    var9 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 13;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: ChannelPinsStore, environment: var5
+        var3 = function() {
             _fun75728: for (var _fun75728_ip = 0;;) switch (_fun75728_ip) {
                 case 0:
                     var3 = this;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var8 = this;
             var7 = var8.waitFor;
             var15 = _closure1_slot9;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPins';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot16;
             var0 = arg0;
             var0 = var1[var0];
@@ -260,14 +260,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var14 = var7.bind(var0)(var3);
     var3 = {};
-    var11 = function() { // Original name: handleConnectionOpen, environment: var4
+    var11 = function() {
         var0 = {};
         _closure1_slot16 = var0;
         var0 = undefined;
         return var0;
     };
     var3.CONNECTION_OPEN = var11;
-    var11 = function(arg0) { // Original name: handleLoadStart, environment: var4
+    var11 = function arg0() {
         _fun75732: for (var _fun75732_ip = 0;;) switch (_fun75732_ip) {
             case 0:
                 var0 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.LOAD_PINNED_MESSAGES = var11;
-    var11 = function(arg0) { // Original name: handleLoadSuccess, environment: var4
+    var11 = function arg0() {
         _fun75733: for (var _fun75733_ip = 0;;) switch (_fun75733_ip) {
             case 0:
                 var0 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.LOAD_PINNED_MESSAGES_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleLoadFail, environment: var4
+    var11 = function arg0() {
         _fun75735: for (var _fun75735_ip = 0;;) switch (_fun75735_ip) {
             case 0:
                 var0 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.LOAD_PINNED_MESSAGES_FAILURE = var11;
     var3.CHANNEL_DELETE = var10;
     var3.THREAD_DELETE = var10;
-    var10 = function(arg0) { // Original name: handleGuildDelete, environment: var4
+    var10 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         var _closure2_slot0 = var0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_DELETE = var10;
-    var10 = function(arg0) { // Original name: handleMessageDelete, environment: var4
+    var10 = function arg0() {
         _fun75738: for (var _fun75738_ip = 0;;) switch (_fun75738_ip) {
             case 0:
                 var0 = arg0;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.MESSAGE_DELETE = var10;
-    var10 = function(arg0) { // Original name: handleMessageDeleteBulk, environment: var4
+    var10 = function arg0() {
         _fun75740: for (var _fun75740_ip = 0;;) switch (_fun75740_ip) {
             case 0:
                 var1 = arg0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.MESSAGE_DELETE_BULK = var10;
-    var10 = function(arg0) { // Original name: handleMessageUpdate, environment: var4
+    var10 = function arg0() {
         _fun75742: for (var _fun75742_ip = 0;;) switch (_fun75742_ip) {
             case 0:
                 var3 = arg0;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.RELATIONSHIP_ADD = var9;
     var3.RELATIONSHIP_REMOVE = var9;
     var3.RELATIONSHIP_UPDATE = var9;
-    var4 = function(arg0) { // Original name: handleScanTimeout, environment: var4
+    var4 = function arg0() {
         _fun75746: for (var _fun75746_ip = 0;;) switch (_fun75746_ip) {
             case 0:
                 var0 = arg0;

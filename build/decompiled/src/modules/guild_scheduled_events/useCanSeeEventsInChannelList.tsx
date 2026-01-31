@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useCanSeeEventsInChannelList, environment: var1
+    var1 = function arg0() {
         _fun89839: for (var _fun89839_ip = 0;;) switch (_fun89839_ip) {
             case 0:
                 var5 = arg0;

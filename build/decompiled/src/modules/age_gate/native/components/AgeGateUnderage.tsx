@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/native/components/AgeGateUnderage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AgeGateUnderage, environment: var1
+    var1 = function arg0() {
         _fun100486: for (var _fun100486_ip = 0;;) switch (_fun100486_ip) {
             case 0:
                 var1 = arg0;

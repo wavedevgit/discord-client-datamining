@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var9;
             var _closure1_slot2 = var7;
-            var4 = function() { // Original name: fetchCurrentAppIcon, environment: var1
+            var4 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot15;
                 var2 = var3.apply;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot14 = var4;
-            var0 = function() { // Original name: _fetchCurrentAppIcon, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot4;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot15 = var0;
-            var3 = function() { // Original name: useCurrentAppIcon, environment: var1
+            var3 = function() {
                 var6 = _closure1_slot5;
                 var4 = var6.useState;
                 var7 = _closure1_slot0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var3;
-            var0 = function() { // Original name: _setAppIcon, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot4;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.bind(var7)(var5);
             var2.fetchCurrentAppIcon = var4;
             var2.useCurrentAppIcon = var3;
-            var3 = function() { // Original name: setAppIcon, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot17;
                 var2 = var3.apply;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.setAppIcon = var3;
-            var3 = function() { // Original name: useAppIcons, environment: var1
+            var3 = function() {
                 var1 = _closure1_slot16;
                 var5 = undefined;
                 var1 = var1.bind(var5)();
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.navigateToAppIconSettings = var3;
-            var1 = function() { // Original name: isAppIconsSupported, environment: var1
+            var1 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 17;

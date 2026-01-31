@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var6 = var3.GET_PLATFORM_BEHAVIORS;
     var3 = {};
-    var7 = function() { // Original name: handler, environment: var7
+    var7 = function() {
         var0 = {};
         var1 = true;
         var0.iosKeyboardResizesView = var1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun87562: for (var _fun87562_ip = 0;;) switch (_fun87562_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.bind(var0)(var7);
     var8 = var7.Store;
     var7 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: MobileNativeUpdateStore, environment: var5
+        var3 = function arg0() {
             _fun87566: for (var _fun87566_ip = 0;;) switch (_fun87566_ip) {
                 case 0:
                     var4 = this;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'checkForNewerBuild';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun87567: for (var _fun87567_ip = 0;;) switch (_fun87567_ip) {
                 case 0:
                     var2 = _closure1_slot11;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ensureInitialized';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun87570: for (var _fun87570_ip = 0;;) switch (_fun87570_ip) {
                 case 0:
                     var1 = this;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun87570
                     }
                 case 31:
-                    var3 = function() { // Original name: backgroundUpdateCheck, environment: var0
+                    var3 = function() {
                         var2 = _closure1_slot10;
                         var1 = var2.info;
                         var0 = 'Checking for new native builds in the background';
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'latestFetchedBuild';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = this;
             var0 = var1.ensureInitialized;
             var0 = var0.bind(var1)();
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleCheckStarted, environment: var3
+    var8 = function() {
         var1 = {};
         var4 = _closure1_slot11;
         var5 = var1;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MOBILE_NATIVE_UPDATE_CHECK_STARTED = var8;
-    var8 = function() { // Original name: handleCheckFailed, environment: var3
+    var8 = function() {
         var1 = {};
         var4 = _closure1_slot11;
         var5 = var1;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MOBILE_NATIVE_UPDATE_CHECK_FAILED = var8;
-    var3 = function(arg0) { // Original name: handleCheckFinished, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.newBuild;
         var1 = {};

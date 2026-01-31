@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: onConnectToConsole, environment: var1
+    var3 = function arg0, arg1() {
         _fun66865: for (var _fun66865_ip = 0;;) switch (_fun66865_ip) {
             case 0:
                 var1 = arg1;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/video_calls/native/useOnConnectToConsole.tsx';
     var4 = var5.bind(var6)(var4);
     var2.onConnectToConsole = var3;
-    var1 = function(arg0, arg1) { // Original name: useOnConnectToConsole, environment: var1
+    var1 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var5;

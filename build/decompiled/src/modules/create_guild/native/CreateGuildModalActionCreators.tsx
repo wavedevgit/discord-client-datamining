@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.IN_APP_GUILD_TEMPLATES_MODAL_KEY;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: openCreateGuildModal, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 1;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openCreateGuildModal = var6;
-    var6 = function() { // Original name: closeCreateGuildModal, environment: var3
+    var6 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 1;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.closeCreateGuildModal = var6;
-    var6 = function() { // Original name: closeCreateGuildOnboardingModal, environment: var3
+    var6 = function() {
         var4 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.closeCreateGuildOnboardingModal = var6;
-    var6 = function(arg0) { // Original name: openGuildInviteScreen, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 1;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openGuildInviteScreen = var6;
-    var3 = function() { // Original name: openGuildJoinServerScreen, environment: var3
+    var3 = function() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 1;

@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var7;
             var _closure1_slot1 = var5;
             var _closure1_slot2 = var6;
-            var3 = function(arg0, arg1) { // Original name: prefetch, environment: var4
+            var3 = function arg0, arg1() {
                 _fun4857: for (var _fun4857_ip = 0;;) switch (_fun4857_ip) {
                     case 0:
                         var2 = arg1;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot9 = var3;
-            var0 = function() { // Original name: _queryCache, environment: var4
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot5;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var8.jsx;
             var _closure1_slot6 = var8;
             var _closure1_slot7 = var1;
-            var8 = function(arg0) { // Original name: BaseImage, environment: var4
+            var8 = function arg0() {
                 _fun4861: for (var _fun4861_ip = 0;;) switch (_fun4861_ip) {
                     case 0:
                         var5 = arg0;
@@ -536,7 +536,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var1.bind(var3)(var0);
                         var1 = var0.Consumer;
                         var0 = {};
-                        var4 = function(arg0) { // Original name: children, environment: var4
+                        var4 = function arg0() {
                             _fun4862: for (var _fun4862_ip = 0;;) switch (_fun4862_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -569,7 +569,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var0 = var1.bind(var2)(var0);
                                     var1 = var0.Consumer;
                                     var0 = {};
-                                    var4 = function(arg0) { // Original name: children, environment: var4
+                                    var4 = function arg0() {
                                         _fun4863: for (var _fun4863_ip = 0;;) switch (_fun4863_ip) {
                                             case 0:
                                                 var4 = _closure1_slot6;
@@ -675,7 +675,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 204:
             var7 = 'Image';
             var1.displayName = var7;
-            var7 = function(arg0, arg1, arg2) { // Original name: getSize, environment: var4
+            var7 = function arg0, arg1, arg2() {
                 _fun4864: for (var _fun4864_ip = 0;;) switch (_fun4864_ip) {
                     case 0:
                         var6 = arg0;
@@ -734,7 +734,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getSize = var7;
-            var7 = function(arg0, arg1, arg2, arg3) { // Original name: getSizeWithHeaders, environment: var4
+            var7 = function arg0, arg1, arg2, arg3() {
                 _fun4867: for (var _fun4867_ip = 0;;) switch (_fun4867_ip) {
                     case 0:
                         var7 = arg0;
@@ -795,7 +795,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1.getSizeWithHeaders = var7;
             var1.prefetch = var3;
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: prefetchWithMetadata, environment: var4
+            var3 = function arg0, arg1, arg2, arg3() {
                 var3 = _closure1_slot9;
                 var2 = undefined;
                 var1 = arg0;
@@ -804,7 +804,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.prefetchWithMetadata = var3;
-            var3 = function(arg0) { // Original name: abortPrefetch, environment: var4
+            var3 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 4;
@@ -817,7 +817,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.abortPrefetch = var3;
-            var3 = function(arg0) { // Original name: queryCache, environment: var4
+            var3 = function arg0() {
                 var0 = undefined;
                 var3 = _closure1_slot10;
                 var2 = var3.apply;

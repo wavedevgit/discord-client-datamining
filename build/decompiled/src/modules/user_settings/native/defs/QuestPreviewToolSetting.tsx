@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var7 = function() { // Original name: title, environment: var8
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var7;
-    var7 = function() { // Original name: usePredicate, environment: var8
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.QUEST_PREVIEW_TOOL_2;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;

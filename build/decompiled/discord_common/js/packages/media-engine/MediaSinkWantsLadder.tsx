@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun32654: for (var _fun32654_ip = 0;;) switch (_fun32654_ip) {
             case 0:
                 var2 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun32656: for (var _fun32656_ip = 0;;) switch (_fun32656_ip) {
             case 0:
                 var3 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.VIDEO_QUALITY_FRAMERATE_MUTED;
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
-        var4 = function() { // Original name: MediaSinkWantsLadder, environment: var5
+        var4 = function() {
             _fun32658: for (var _fun32658_ip = 0;;) switch (_fun32658_ip) {
                 case 0:
                     var3 = arguments[0];
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getMaxSinkValue';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun32659: for (var _fun32659_ip = 0;;) switch (_fun32659_ip) {
                 case 0:
                     var1 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getResolution';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun32660: for (var _fun32660_ip = 0;;) switch (_fun32660_ip) {
                 case 0:
                     var8 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'calculateLadder';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun32661: for (var _fun32661_ip = 0;;) switch (_fun32661_ip) {
                 case 0:
                     var12 = arg0;
@@ -641,7 +641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'getMutedFramerate';
         var0.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun32662: for (var _fun32662_ip = 0;;) switch (_fun32662_ip) {
                 case 0:
                     var1 = arg0;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'calculateOrderedLadder';
         var0.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun32663: for (var _fun32663_ip = 0;;) switch (_fun32663_ip) {
                 case 0:
                     var6 = arg0;

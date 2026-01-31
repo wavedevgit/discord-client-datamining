@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var0 = 'function pnpm_interpolateColorTs1(value,inputRange,colors,options){const{interpolate,Extrapolation,hsvToColor}=this.__closure;let h=0;const{useCorrectedHSVInterpolation=true}=options;if(useCorrectedHSVInterpolation){const correctedInputRange=[inputRange[0]];const originalH=colors.h;const correctedH=[originalH[0]];for(let i=1;i<originalH.length;++i){const d=originalH[i]-originalH[i-1];if(originalH[i]>originalH[i-1]&&d>0.5){correctedInputRange.push(inputRange[i]);correctedInputRange.push(inputRange[i]+0.00001);correctedH.push(originalH[i]-1);correctedH.push(originalH[i]);}else if(originalH[i]<originalH[i-1]&&d<-0.5){correctedInputRange.push(inputRange[i]);correctedInputRange.push(inputRange[i]+0.00001);correctedH.push(originalH[i]+1);correctedH.push(originalH[i]);}else{correctedInputRange.push(inputRange[i]);correctedH.push(originalH[i]);}}h=(interpolate(value,correctedInputRange,correctedH,Extrapolation.CLAMP)+1)%1;}else{h=interpolate(value,inputRange,colors.h,Extrapolation.CLAMP);}const s=interpolate(value,inputRange,colors.s,Extrapolation.CLAMP);const v=interpolate(value,inputRange,colors.v,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);return hsvToColor(h,s,v,a);}';
     var4.code = var0;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: pnpm_interpolateColorTs1, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun34880: for (var _fun34880_ip = 0;;) switch (_fun34880_ip) {
             case 0:
                 var11 = arg0;
@@ -245,7 +245,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var4 = 'function pnpm_interpolateColorTs2(x,gamma){return x.map(function(v){return Math.pow(v/255,gamma);});}';
     var3.code = var4;
-    var11 = function(arg0, arg1) { // Original name: pnpm_interpolateColorTs2, environment: var1
+    var11 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -273,7 +273,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var4 = 'function pnpm_interpolateColorTs3(x,gamma){return Math.round(Math.pow(x,1/gamma)*255);}';
     var3.code = var4;
-    var9 = function(arg0, arg1) { // Original name: pnpm_interpolateColorTs3, environment: var1
+    var9 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.round;
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = 'function pnpm_interpolateColorTs4(value,inputRange,colors,options){const{toLinearSpace,interpolate,Extrapolation,rgbaColor,toGammaSpace}=this.__closure;const{gamma=2.2}=options;let{r:outputR,g:outputG,b:outputB}=colors;if(gamma!==1){outputR=toLinearSpace(outputR,gamma);outputG=toLinearSpace(outputG,gamma);outputB=toLinearSpace(outputB,gamma);}const r=interpolate(value,inputRange,outputR,Extrapolation.CLAMP);const g=interpolate(value,inputRange,outputG,Extrapolation.CLAMP);const b=interpolate(value,inputRange,outputB,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);if(gamma===1){return rgbaColor(r,g,b,a);}return rgbaColor(toGammaSpace(r,gamma),toGammaSpace(g,gamma),toGammaSpace(b,gamma),a);}';
     var4.code = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: pnpm_interpolateColorTs4, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun34884: for (var _fun34884_ip = 0;;) switch (_fun34884_ip) {
             case 0:
                 var11 = arg0;
@@ -443,7 +443,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = 'function pnpm_interpolateColorTs5(value,inputRange,colors,_options){const{interpolate,Extrapolation,culori,rgbaColor}=this.__closure;const l=interpolate(value,inputRange,colors.l,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);const b=interpolate(value,inputRange,colors.b,Extrapolation.CLAMP);const alpha=interpolate(value,inputRange,colors.alpha,Extrapolation.CLAMP);const{r:_r,g:_g,b:_b,alpha:_alpha}=culori.oklab.convert.toRgb({l:l,a:a,b:b,alpha:alpha});return rgbaColor(_r,_g,_b,_alpha);}';
     var4.code = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: pnpm_interpolateColorTs5, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var12 = arg0;
         var11 = arg1;
         var3 = arg2;
@@ -550,7 +550,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var4 = "function pnpm_interpolateColorTs6(colors,convFromRgb){const{processColor,red,green,blue,opacity}=this.__closure;const ch1=[];const ch2=[];const ch3=[];const alpha=[];for(let i=0;i<colors.length;i++){const color=colors[i];const processedColor=processColor(color);if(typeof processedColor==='number'){const convertedColor=convFromRgb({r:red(processedColor),g:green(processedColor),b:blue(processedColor)});ch1.push(convertedColor.ch1);ch2.push(convertedColor.ch2);ch3.push(convertedColor.ch3);alpha.push(opacity(processedColor));}}return{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha};}";
     var3.code = var4;
-    var11 = function(arg0, arg1) { // Original name: pnpm_interpolateColorTs6, environment: var1
+    var11 = function arg0, arg1() {
         _fun34886: for (var _fun34886_ip = 0;;) switch (_fun34886_ip) {
             case 0:
                 var11 = arg0;
@@ -662,7 +662,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = 'function pnpm_interpolateColorTs7(colors){const{_splitColorsIntoChannels}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){return{ch1:color.r,ch2:color.g,ch3:color.b};});return{r:ch1,g:ch2,b:ch3,a:alpha};}';
     var4.code = var3;
-    var3 = function(arg0) { // Original name: pnpm_interpolateColorTs7, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot8;
         var2 = undefined;
         var1 = arg0;
@@ -699,7 +699,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = 'function pnpm_interpolateColorTs8(colors){const{_splitColorsIntoChannels,RGBtoHSV}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){const hsvColor=RGBtoHSV(color.r,color.g,color.b);return{ch1:hsvColor.h,ch2:hsvColor.s,ch3:hsvColor.v};});return{h:ch1,s:ch2,v:ch3,a:alpha};}';
     var4.code = var3;
-    var3 = function(arg0) { // Original name: pnpm_interpolateColorTs8, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot8;
         var2 = undefined;
         var1 = arg0;
@@ -751,7 +751,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = 'function pnpm_interpolateColorTs9(colors){const{_splitColorsIntoChannels,culori}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){const labColor=culori.oklab.convert.fromRgb(color);return{ch1:labColor.l,ch2:labColor.a,ch3:labColor.b};});return{l:ch1,a:ch2,b:ch3,alpha:alpha};}';
     var4.code = var3;
-    var3 = function(arg0) { // Original name: pnpm_interpolateColorTs9, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot8;
         var2 = undefined;
         var1 = arg0;
@@ -803,7 +803,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: interpolateColor, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun34894: for (var _fun34894_ip = 0;;) switch (_fun34894_ip) {
                 case 0:
                     var5 = arg0;
@@ -957,7 +957,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.Extrapolate = var5;
     var2.interpolateColor = var4;
     var2.ColorSpace = var3;
-    var1 = function(arg0, arg1) { // Original name: useInterpolateConfig, environment: var1
+    var1 = function arg0, arg1() {
         _fun34895: for (var _fun34895_ip = 0;;) switch (_fun34895_ip) {
             case 0:
                 var6 = undefined;

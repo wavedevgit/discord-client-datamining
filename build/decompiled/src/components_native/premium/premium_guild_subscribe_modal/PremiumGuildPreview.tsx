@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getThemedImageSource, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun78288: for (var _fun78288_ip = 0;;) switch (_fun78288_ip) {
             case 0:
                 var1 = arg1;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: getTierIcon, environment: var1
+    var0 = function arg0, arg1() {
         _fun78289: for (var _fun78289_ip = 0;;) switch (_fun78289_ip) {
             case 0:
                 var4 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.tierPillText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: PremiumGuildTierPill, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.tier;
         var11 = var0.theme;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/premium_guild_subscribe_modal/PremiumGuildPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.guild;
         var5 = var0.style;

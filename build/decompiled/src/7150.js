@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function() { // Original name: memoBuilder, environment: var0
+    var0 = function() {
         _fun58689: for (var _fun58689_ip = 0;;) switch (_fun58689_ip) {
             case 0:
                 var2 = global;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 60:
                 var _closure2_slot1 = var0;
                 var0 = new Array(2);
-                var2 = function(arg0) { // Original name: memoize, environment: var1
+                var2 = function arg0() {
                     _fun58690: for (var _fun58690_ip = 0;;) switch (_fun58690_ip) {
                         case 0:
                             var3 = arg0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0[0] = var2;
-                var1 = function(arg0) { // Original name: unmemoize, environment: var1
+                var1 = function arg0() {
                     _fun58691: for (var _fun58691_ip = 0;;) switch (_fun58691_ip) {
                         case 0:
                             var2 = arg0;

@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun112061: for (var _fun112061_ip = 0;;) switch (_fun112061_ip) {
                     case 0:
                         var9 = arg1;
-                        var0 = function() { // Original name: F, environment: var0
+                        var0 = function() {
                             var0 = undefined;
                             return var0;
                         };

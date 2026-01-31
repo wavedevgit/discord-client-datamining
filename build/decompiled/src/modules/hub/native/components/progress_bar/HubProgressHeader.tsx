@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/progress_bar/HubProgressHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubProgressHeader, environment: var1
+    var1 = function arg0() {
         _fun91242: for (var _fun91242_ip = 0;;) switch (_fun91242_ip) {
             case 0:
                 var0 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.style = var14;
                 var12 = var12.icon;
                 var5.iconStyle = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     _fun91243: for (var _fun91243_ip = 0;;) switch (_fun91243_ip) {
                         case 0:
                             var0 = _closure2_slot1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CutoutGuildBanner, environment: var1
+    var0 = function arg0() {
         _fun104331: for (var _fun104331_ip = 0;;) switch (_fun104331_ip) {
             case 0:
                 var1 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: FeaturedServer, environment: var1
+    var0 = function arg0() {
         _fun104335: for (var _fun104335_ip = 0;;) switch (_fun104335_ip) {
             case 0:
                 var0 = arg0;
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: RecommendedGuildsRow, environment: var1
+    var0 = function arg0() {
         _fun104341: for (var _fun104341_ip = 0;;) switch (_fun104341_ip) {
             case 0:
                 var1 = arg0;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMIServerRecommendationRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMIServerRecommendationRow, environment: var1
+    var1 = function() {
         _fun104344: for (var _fun104344_ip = 0;;) switch (_fun104344_ip) {
             case 0:
                 var1 = _closure1_slot0;

@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_ItemRendererTsx2(ranges){const{runOnJS,setDisplayedItems}=this.__closure;return runOnJS(setDisplayedItems)(ranges);}';
     var3.code = var4;
     var _closure1_slot7 = var3;
-    var1 = function(arg0) { // Original name: ItemRenderer, environment: var1
+    var1 = function arg0() {
         _fun74961: for (var _fun74961_ip = 0;;) switch (_fun74961_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var15[var13];
                 var10 = var14.bind(var4)(var3);
                 var9 = var10.useAnimatedReaction;
-                var8 = function() { // Original name: pnpm_ItemRendererTsx1, environment: var5
+                var8 = function() {
                     var0 = _closure2_slot7;
                     var0 = var0.value;
                     return var0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8.__workletHash = var3;
                 var3 = _closure1_slot6;
                 var8.__initData = var3;
-                var6 = function(arg0) { // Original name: pnpm_ItemRendererTsx2, environment: var5
+                var6 = function arg0() {
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot1;
                     var0 = 4;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7 = _closure2_slot4;
                         case 219:
                             var1.animationStyle = var7;
-                            var6 = function(arg0) { // Original name: children, environment: var6
+                            var6 = function arg0() {
                                 var0 = arg0;
                                 var0 = var0.animationValue;
                                 var2 = _closure2_slot5;

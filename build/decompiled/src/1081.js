@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _parseCookieHeaders, environment: var1
+    var0 = function arg0, arg1() {
         _fun11034: for (var _fun11034_ip = 0;;) switch (_fun11034_ip) {
             case 0:
                 var6 = arg0;
@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = undefined;
                 var3 = arg1;
                 var5 = var3.headers;
-                var3 = function(arg0) { // Original name: _extractFetchHeaders, environment: var3
+                var3 = function arg0() {
                     var3 = arg0;
                     var0 = {};
                     var _closure3_slot0 = var0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: _getResponseSizeFromHeaders, environment: var1
+    var0 = function arg0() {
         _fun11037: for (var _fun11037_ip = 0;;) switch (_fun11037_ip) {
             case 0:
                 var0 = arg0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: _parseCookieString, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = '; ';
@@ -157,13 +157,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _shouldCaptureResponse, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun11040: for (var _fun11040_ip = 0;;) switch (_fun11040_ip) {
             case 0:
                 var2 = arg0;
                 var4 = arg2;
                 var5 = var2.failedRequestStatusCodes;
-                var3 = function(arg0, arg1) { // Original name: _isInGivenStatusRanges, environment: var1
+                var3 = function arg0, arg1() {
                     var2 = arg0;
                     var1 = arg1;
                     var _closure3_slot0 = var1;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 33:
                 var2 = var2.failedRequestTargets;
-                var1 = function(arg0, arg1) { // Original name: _isInGivenRequestTargets, environment: var1
+                var1 = function arg0, arg1() {
                     var2 = arg0;
                     var1 = arg1;
                     var _closure3_slot0 = var1;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: _createEvent, environment: var1
+    var0 = function arg0() {
         _fun11045: for (var _fun11045_ip = 0;;) switch (_fun11045_ip) {
             case 0:
                 var5 = arg0;
@@ -397,7 +397,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _shouldSendDefaultPii, environment: var1
+    var0 = function() {
         _fun11046: for (var _fun11046_ip = 0;;) switch (_fun11046_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -444,7 +444,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _httpClientIntegration, environment: var1
+    var1 = function() {
         _fun11047: for (var _fun11047_ip = 0;;) switch (_fun11047_ip) {
             case 0:
                 var4 = undefined;
@@ -485,10 +485,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'HttpClient';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     var3 = arg0;
                     var5 = _closure2_slot0;
-                    var4 = function(arg0, arg1) { // Original name: _wrapFetch, environment: var1
+                    var4 = function arg0, arg1() {
                         _fun11049: for (var _fun11049_ip = 0;;) switch (_fun11049_ip) {
                             case 0:
                                 var0 = arg0;
@@ -556,7 +556,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         case 105:
                                             var5 = var1;
                                         case 108:
-                                            var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: _fetchResponseHandler, environment: var1
+                                            var1 = function arg0, arg1, arg2, arg3, arg4() {
                                                 _fun11051: for (var _fun11051_ip = 0;;) switch (_fun11051_ip) {
                                                     case 0:
                                                         var5 = arg1;
@@ -690,7 +690,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = undefined;
                     var4 = var4.bind(var0)(var3, var5);
                     var2 = _closure2_slot0;
-                    var1 = function(arg0, arg1) { // Original name: _wrapXHR, environment: var1
+                    var1 = function arg0, arg1() {
                         _fun11052: for (var _fun11052_ip = 0;;) switch (_fun11052_ip) {
                             case 0:
                                 var0 = arg0;
@@ -776,7 +776,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var5;
                                         case 157:
                                             var15 = var3;
-                                            var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: _xhrResponseHandler, environment: var3
+                                            var3 = function arg0, arg1, arg2, arg3, arg4() {
                                                 _fun11054: for (var _fun11054_ip = 0;;) switch (_fun11054_ip) {
                                                     case 0:
                                                         var8 = arg1;
@@ -842,7 +842,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         CatchBlockStart(arg_register = 3);
                                                     case 135: // try_start_1
                                                         var8 = var7;
-                                                        var3 = function(arg0) { // Original name: _getXHRResponseHeaders, environment: var3
+                                                        var3 = function arg0() {
                                                             _fun11055: for (var _fun11055_ip = 0;;) switch (_fun11055_ip) {
                                                                 case 0:
                                                                     var1 = arg0;

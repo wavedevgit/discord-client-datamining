@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var3 = function(arg0) { // Original name: Deflate, environment: var0
+    var3 = function arg0() {
         _fun94733: for (var _fun94733_ip = 0;;) switch (_fun94733_ip) {
             case 0:
                 var3 = arg0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var2 = function(arg0, arg1) { // Original name: deflate, environment: var0
+    var2 = function arg0, arg1() {
         _fun94734: for (var _fun94734_ip = 0;;) switch (_fun94734_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -645,7 +645,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.onEnd = var4;
     var1.Deflate = var3;
     var1.deflate = var2;
-    var2 = function(arg0, arg1) { // Original name: deflateRaw, environment: var0
+    var2 = function arg0, arg1() {
         _fun94738: for (var _fun94738_ip = 0;;) switch (_fun94738_ip) {
             case 0:
                 var3 = arg1;
@@ -666,7 +666,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.deflateRaw = var2;
-    var0 = function(arg0, arg1) { // Original name: gzip, environment: var0
+    var0 = function arg0, arg1() {
         _fun94739: for (var _fun94739_ip = 0;;) switch (_fun94739_ip) {
             case 0:
                 var3 = arg1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: LockedIcon, environment: var3
+    var0 = function() {
         var3 = _closure1_slot3;
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: DropdownIcon, environment: var3
+    var0 = function() {
         var3 = _closure1_slot3;
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/native/components/FormDropdown.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: FormDropdown, environment: var3
+    var3 = function arg0() {
         _fun96359: for (var _fun96359_ip = 0;;) switch (_fun96359_ip) {
             case 0:
                 var0 = arg0;

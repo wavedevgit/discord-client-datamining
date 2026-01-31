@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = {};
                         var6 = true;
                         var2.enumerable = var6;
-                        var1 = function() { // Original name: get, environment: var1
+                        var1 = function() {
                             var1 = _closure2_slot0;
                             var0 = _closure2_slot1;
                             var0 = var1[var0];
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var4.bind(var0)(var1);
             var _closure1_slot3 = var1;
             var1 = {};
-            var4 = function() { // Original name: getString, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.getString;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.getString = var4;
-            var4 = function() { // Original name: getStrings, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.getStrings;
@@ -245,7 +245,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.getStrings = var4;
-            var4 = function() { // Original name: getImagePNG, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.getImagePNG;
@@ -253,7 +253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.getImagePNG = var4;
-            var4 = function() { // Original name: getImageJPG, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.getImageJPG;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.getImageJPG = var4;
-            var4 = function(arg0) { // Original name: setImage, environment: var3
+            var4 = function arg0() {
                 _fun47147: for (var _fun47147_ip = 0;;) switch (_fun47147_ip) {
                     case 0:
                         var1 = _closure1_slot2;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.setImage = var4;
-            var4 = function() { // Original name: getImage, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.getImage;
@@ -292,7 +292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.getImage = var4;
-            var4 = function(arg0) { // Original name: setString, environment: var3
+            var4 = function arg0() {
                 var0 = _closure1_slot3;
                 var2 = var0.default;
                 var1 = var2.setString;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.setString = var4;
-            var4 = function(arg0) { // Original name: setStrings, environment: var3
+            var4 = function arg0() {
                 var0 = _closure1_slot3;
                 var2 = var0.default;
                 var1 = var2.setStrings;
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.setStrings = var4;
-            var4 = function() { // Original name: hasString, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.hasString;
@@ -320,7 +320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.hasString = var4;
-            var4 = function() { // Original name: hasImage, environment: var3
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.default;
                 var0 = var1.hasImage;
@@ -328,7 +328,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.hasImage = var4;
-            var4 = function() { // Original name: hasURL, environment: var3
+            var4 = function() {
                 _fun47153: for (var _fun47153_ip = 0;;) switch (_fun47153_ip) {
                     case 0:
                         var1 = _closure1_slot2;
@@ -351,7 +351,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.hasURL = var4;
-            var4 = function() { // Original name: hasNumber, environment: var3
+            var4 = function() {
                 _fun47154: for (var _fun47154_ip = 0;;) switch (_fun47154_ip) {
                     case 0:
                         var1 = _closure1_slot2;
@@ -374,7 +374,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.hasNumber = var4;
-            var4 = function() { // Original name: hasWebURL, environment: var3
+            var4 = function() {
                 _fun47155: for (var _fun47155_ip = 0;;) switch (_fun47155_ip) {
                     case 0:
                         var1 = _closure1_slot2;
@@ -397,7 +397,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.hasWebURL = var4;
-            var4 = function(arg0) { // Original name: addListener, environment: var3
+            var4 = function arg0() {
                 var0 = _closure1_slot3;
                 var2 = var0.addListener;
                 var1 = undefined;
@@ -406,7 +406,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.addListener = var4;
-            var3 = function() { // Original name: removeAllListeners, environment: var3
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.removeAllListeners;
                 var0 = undefined;

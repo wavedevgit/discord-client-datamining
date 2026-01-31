@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildPowerupsBottomSheetHeader, environment: var1
+    var0 = function arg0() {
         _fun102407: for (var _fun102407_ip = 0;;) switch (_fun102407_ip) {
             case 0:
                 var0 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: GuildPowerupsBottomSheetLevelBody, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.powerup;
         var1 = _closure1_slot9;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: GuildPowerupsBottomSheetBody, environment: var1
+    var0 = function arg0() {
         _fun102411: for (var _fun102411_ip = 0;;) switch (_fun102411_ip) {
             case 0:
                 var0 = arg0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: GuildPowerupsBottomSheetFooter, environment: var1
+    var0 = function arg0() {
         _fun102412: for (var _fun102412_ip = 0;;) switch (_fun102412_ip) {
             case 0:
                 var0 = arg0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.text = var12;
                 var6.loading = var11;
                 var6.disabled = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     _fun102413: for (var _fun102413_ip = 0;;) switch (_fun102413_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/GuildPowerupsBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPowerupsBottomSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.guildId;
         var11 = var0.powerup;

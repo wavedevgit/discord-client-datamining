@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: routeMatchToParamSpanAttributes, environment: var1
+    var0 = function arg0() {
         _fun12446: for (var _fun12446_ip = 0;;) switch (_fun12446_ip) {
             case 0:
                 var2 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0) { // Original name: tanstackRouterBrowserTracingIntegration, environment: var1
+    var1 = function arg0() {
         _fun12448: for (var _fun12448_ip = 0;;) switch (_fun12448_ip) {
             case 0:
                 var2 = undefined;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.Object;
                 var2 = var3.assign;
                 var1 = {};
-                var0 = function(arg0) { // Original name: afterAllSetup, environment: var0
+                var0 = function arg0() {
                     _fun12449: for (var _fun12449_ip = 0;;) switch (_fun12449_ip) {
                         case 0:
                             var6 = arg0;

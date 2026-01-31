@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun90218: for (var _fun90218_ip = 0;;) switch (_fun90218_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun90220: for (var _fun90220_ip = 0;;) switch (_fun90220_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var1 = function(arg0) { // Original name: validateOptionContent, environment: var3
+    var1 = function arg0() {
         _fun90221: for (var _fun90221_ip = 0;;) switch (_fun90221_ip) {
             case 0:
                 var0 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/application_commands/ApplicationCommandValidationUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getValidationResults, environment: var3
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun90222: for (var _fun90222_ip = 0;;) switch (_fun90222_ip) {
             case 0:
                 var9 = arg1;

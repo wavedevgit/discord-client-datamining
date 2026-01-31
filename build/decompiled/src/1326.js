@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.UNPACKED = var5;
             var3 = 'UNPACKED';
             var4[var5] = var3;
-            var3 = function(arg0) { // Original name: normalizeFieldInfo, environment: var1
+            var3 = function arg0() {
                 _fun14907: for (var _fun14907_ip = 0;;) switch (_fun14907_ip) {
                     case 0:
                         var0 = arg0;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.normalizeFieldInfo = var3;
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: readFieldOptions, environment: var1
+            var3 = function arg0, arg1, arg2, arg3() {
                 _fun14908: for (var _fun14908_ip = 0;;) switch (_fun14908_ip) {
                     case 0:
                         var4 = arg2;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.readFieldOptions = var3;
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: readFieldOption, environment: var1
+            var3 = function arg0, arg1, arg2, arg3() {
                 _fun14910: for (var _fun14910_ip = 0;;) switch (_fun14910_ip) {
                     case 0:
                         var4 = arg3;
@@ -380,7 +380,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.readFieldOption = var3;
-            var1 = function(arg0, arg1, arg2) { // Original name: readMessageOption, environment: var1
+            var1 = function arg0, arg1, arg2() {
                 _fun14912: for (var _fun14912_ip = 0;;) switch (_fun14912_ip) {
                     case 0:
                         var4 = arg2;

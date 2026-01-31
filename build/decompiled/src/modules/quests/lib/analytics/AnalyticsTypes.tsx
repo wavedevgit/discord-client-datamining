@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: getQuestContentName, environment: var3
+    var4 = function arg0() {
         _fun47009: for (var _fun47009_ip = 0;;) switch (_fun47009_ip) {
             case 0:
                 var1 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/quests/lib/analytics/AnalyticsTypes.tsx';
     var5 = var6.bind(var7)(var5);
     var2.getQuestContentName = var4;
-    var4 = function(arg0) { // Original name: getQuestStatus, environment: var3
+    var4 = function arg0() {
         _fun47011: for (var _fun47011_ip = 0;;) switch (_fun47011_ip) {
             case 0:
                 var4 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getQuestStatus = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: getContentProperties, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var3 = arg0;
         var0 = {};
         var0.content_id = var3;

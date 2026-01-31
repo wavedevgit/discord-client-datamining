@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var8;
-    var4 = function() { // Original name: fetchApplication, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var4;
-    var0 = function() { // Original name: _fetchApplication, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var5;
     var11 = var3.QueryIds;
     var5 = {};
-    var3 = function(arg0) { // Original name: createApplication, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.name;
         var _closure2_slot0 = var2;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.createApplication = var3;
-    var3 = function(arg0) { // Original name: getApplicationsForGuild, environment: var1
+    var3 = function arg0() {
         _fun47609: for (var _fun47609_ip = 0;;) switch (_fun47609_ip) {
             case 0:
                 var4 = arguments[1];
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getApplicationsForGuild = var3;
-    var3 = function(arg0) { // Original name: transferApplication, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.applicationId;
         var _closure2_slot0 = var2;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.transferApplication = var3;
-    var3 = function(arg0) { // Original name: fetchApplications, environment: var1
+    var3 = function arg0() {
         _fun47615: for (var _fun47615_ip = 0;;) switch (_fun47615_ip) {
             case 0:
                 var2 = arguments[1];
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var11 = var11.APPLICATIONS;
     var3.getQueryId = var11;
-    var11 = function(arg0) { // Original name: get, environment: var1
+    var11 = function arg0() {
         _fun47622: for (var _fun47622_ip = 0;;) switch (_fun47622_ip) {
             case 0:
                 var4 = arg0;
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.get = var11;
-    var11 = function(arg0) { // Original name: load, environment: var1
+    var11 = function arg0() {
         _fun47623: for (var _fun47623_ip = 0;;) switch (_fun47623_ip) {
             case 0:
                 var5 = arg0;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.load = var11;
-    var11 = function(arg0) { // Original name: getIsLoading, environment: var1
+    var11 = function arg0() {
         _fun47624: for (var _fun47624_ip = 0;;) switch (_fun47624_ip) {
             case 0:
                 var3 = arg0;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.fetchApplication = var4;
     var2.useApplication = var3;
-    var1 = function(arg0) { // Original name: useApplicationWithLoggedOutContext, environment: var1
+    var1 = function arg0() {
         _fun47625: for (var _fun47625_ip = 0;;) switch (_fun47625_ip) {
             case 0:
                 var10 = arg0;

@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var7;
     var _closure1_slot9 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: FastestList, environment: var1
+    var1 = function arg0, arg1() {
         _fun60950: for (var _fun60950_ip = 0;;) switch (_fun60950_ip) {
             case 0:
                 var5 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var31 = arg1;
                 var11 = function() { // Environment: var8
                     var0 = {};
-                    var2 = function() { // Original name: scrollToTop, environment: var1
+                    var2 = function() {
                         _fun60953: for (var _fun60953_ip = 0;;) switch (_fun60953_ip) {
                             case 0:
                                 var4 = arguments[0];
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.scrollToTop = var2;
-                    var1 = function(arg0) { // Original name: scrollToLocation, environment: var1
+                    var1 = function arg0() {
                         _fun60954: for (var _fun60954_ip = 0;;) switch (_fun60954_ip) {
                             case 0:
                                 var1 = arg0;

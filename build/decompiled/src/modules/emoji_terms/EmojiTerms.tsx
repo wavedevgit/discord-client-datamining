@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             value: var7
         }
     });
-    var11 = function(arg0) { // Original name: loadEmoji, environment: var3
+    var11 = function arg0() {
         _fun43838: for (var _fun43838_ip = 0;;) switch (_fun43838_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1 instanceof Object ? var1 : var6;
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: setEmojiLocale, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.setParams;
         var0 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setEmojiLocale = var6;
-    var3 = function(arg0) { // Original name: getTermsForEmoji, environment: var3
+    var3 = function arg0() {
         _fun43841: for (var _fun43841_ip = 0;;) switch (_fun43841_ip) {
             case 0:
                 var1 = _closure1_slot2;

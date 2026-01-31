@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterActivityPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterActivityPage, environment: var1
+    var1 = function() {
         _fun81721: for (var _fun81721_ip = 0;;) switch (_fun81721_ip) {
             case 0:
                 var0 = _closure1_slot7;

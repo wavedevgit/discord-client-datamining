@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.Image;
     var _closure1_slot0 = var3;
-    var3 = function(arg0) { // Original name: parsePossibleSources, environment: var1
+    var3 = function arg0() {
         _fun27414: for (var _fun27414_ip = 0;;) switch (_fun27414_ip) {
             case 0:
                 var2 = arg0;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.parsePossibleSources = var3;
-    var3 = function(arg0) { // Original name: parseColor, environment: var1
+    var3 = function arg0() {
         _fun27415: for (var _fun27415_ip = 0;;) switch (_fun27415_ip) {
             case 0:
                 var5 = arg0;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.parseColor = var3;
-    var3 = function(arg0) { // Original name: intToRiveRGBA, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var0 = {};
         var1 = 16;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.intToRiveRGBA = var3;
-    var1 = function(arg0) { // Original name: getPropertyTypeString, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         return var0;
     };

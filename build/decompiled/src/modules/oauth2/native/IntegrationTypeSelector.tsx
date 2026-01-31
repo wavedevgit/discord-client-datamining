@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/oauth2/native/IntegrationTypeSelector.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: IntegrationTypeSelector, environment: var3
+    var3 = function arg0() {
         _fun47791: for (var _fun47791_ip = 0;;) switch (_fun47791_ip) {
             case 0:
                 var0 = arg0;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.label = var8;
                             var8 = var0.subLabel;
                             var1.subLabel = var8;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot1;
                                 var0 = _closure3_slot0;
                                 var1 = var0.type;

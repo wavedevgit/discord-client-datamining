@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: Radio, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot8;
         var1 = {};
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: Switch, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var19 = var0.bind(var3)();
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: InlineCheckbox, environment: var1
+    var0 = function arg0() {
         _fun87958: for (var _fun87958_ip = 0;;) switch (_fun87958_ip) {
             case 0:
                 var0 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: InlineCheckboxDemo, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot8;
         var1 = {};
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: CheckboxRowDemo, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot8;
         var1 = {};
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: SliderDemo, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot8;
         var1 = {};
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.sample = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function() { // Original name: useSwitchState, environment: var1
+    var3 = function() {
         _fun87964: for (var _fun87964_ip = 0;;) switch (_fun87964_ip) {
             case 0:
                 var4 = arguments[0];
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemFormPrimitives.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemFormPrimitives, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var7 = var0.bind(var3)();

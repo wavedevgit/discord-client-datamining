@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/feature_education/IAPUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: IAPUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.RzWDqY;
         var6 = var7.bind(var8)(var6);
         var0.cta = var6;
-        var5 = function() { // Original name: onCTAPress, environment: var5
+        var5 = function() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
             var0 = 8;

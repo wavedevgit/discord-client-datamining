@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.getDevicePushProvider;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function() { // Original name: open, environment: var3
+    var6 = function() {
         _fun59002: for (var _fun59002_ip = 0;;) switch (_fun59002_ip) {
             case 0:
                 var6 = arguments[0];
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.open = var6;
-    var6 = function() { // Original name: close, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.close = var6;
-    var6 = function(arg0) { // Original name: setSection, environment: var3
+    var6 = function arg0() {
         _fun59004: for (var _fun59004_ip = 0;;) switch (_fun59004_ip) {
             case 0:
                 var5 = arguments[1];
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setSection = var6;
-    var6 = function(arg0) { // Original name: clearSubsection, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearSubsection = var6;
-    var6 = function(arg0) { // Original name: clearScrollPosition, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearScrollPosition = var6;
-    var6 = function(arg0) { // Original name: updateAccount, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateAccount = var6;
-    var6 = function() { // Original name: submitComplete, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.submitComplete = var6;
-    var6 = function() { // Original name: reset, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.reset = var6;
-    var3 = function(arg0, arg1) { // Original name: saveAccountChanges, environment: var3
+    var3 = function arg0, arg1() {
         _fun59010: for (var _fun59010_ip = 0;;) switch (_fun59010_ip) {
             case 0:
                 var2 = arg0;

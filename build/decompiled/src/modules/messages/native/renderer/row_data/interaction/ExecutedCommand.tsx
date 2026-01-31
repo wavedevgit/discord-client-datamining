@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: getCommandUserAvatar, environment: var1
+    var0 = function arg0, arg1() {
         _fun56140: for (var _fun56140_ip = 0;;) switch (_fun56140_ip) {
             case 0:
                 var9 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/interaction/ExecutedCommand.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createExecutedCommand, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun56141: for (var _fun56141_ip = 0;;) switch (_fun56141_ip) {
             case 0:
                 var11 = arg0;

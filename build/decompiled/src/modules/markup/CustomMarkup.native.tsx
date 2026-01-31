@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var5 = function(arg0) { // Original name: createRules, environment: var1
+    var5 = function arg0() {
         _fun35318: for (var _fun35318_ip = 0;;) switch (_fun35318_ip) {
             case 0:
                 var3 = arguments[1];
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: createNotifCenterV2MessagePreviewRules, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var3 = _closure1_slot1;
         var10 = _closure1_slot2;
         var0 = 0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var4;
-    var3 = function() { // Original name: createWidgetMessageRules, environment: var1
+    var3 = function() {
         var11 = _closure1_slot1;
         var9 = _closure1_slot2;
         var0 = 1;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/markup/CustomMarkup.native.tsx';
     var6 = var7.bind(var8)(var6);
     var2.createRules = var5;
-    var5 = function() { // Original name: getParser, environment: var1
+    var5 = function() {
         _fun35321: for (var _fun35321_ip = 0;;) switch (_fun35321_ip) {
             case 0:
                 var5 = arguments[0];
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getParser = var5;
     var2.createNotifCenterV2MessagePreviewRules = var4;
-    var4 = function() { // Original name: getNotifCenterV2MessagePreviewParser, environment: var1
+    var4 = function() {
         _fun35322: for (var _fun35322_ip = 0;;) switch (_fun35322_ip) {
             case 0:
                 var6 = arguments[0];
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getNotifCenterV2MessagePreviewParser = var4;
     var2.createWidgetMessageRules = var3;
-    var1 = function() { // Original name: getWidgetMessageRules, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var1 = 2;

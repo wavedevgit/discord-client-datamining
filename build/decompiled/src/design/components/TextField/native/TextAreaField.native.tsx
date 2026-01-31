@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: getLengthRemainingTextColor, environment: var1
+    var0 = function arg0, arg1() {
         _fun47923: for (var _fun47923_ip = 0;;) switch (_fun47923_ip) {
             case 0:
                 var5 = arg0;

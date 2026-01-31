@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildEventsListHeader, environment: var1
+    var0 = function arg0() {
         _fun66049: for (var _fun66049_ip = 0;;) switch (_fun66049_ip) {
             case 0:
                 var0 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.NzROFF;
                 var9 = var10.bind(var11)(var9);
                 var5.text = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     _fun66050: for (var _fun66050_ip = 0;;) switch (_fun66050_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.openCreateOrEditGuildEventModal;
                             var1 = _closure2_slot0;
                             var0 = {};
-                            var4 = function() { // Original name: onClose, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 15;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventsListActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildEventsListActionSheet, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var10 = var1.guild;
         var _closure2_slot0 = var10;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.event = var4;
             var4 = arg1;
             var1.recurrenceId = var4;
-            var4 = function() { // Original name: onClose, environment: var4
+            var4 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 15;

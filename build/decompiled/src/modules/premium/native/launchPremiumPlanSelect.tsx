@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/launchPremiumPlanSelect.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: launchPremiumPlanSelect, environment: var1
+    var1 = function arg0() {
         _fun59264: for (var _fun59264_ip = 0;;) switch (_fun59264_ip) {
             case 0:
                 var3 = arg0;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.onBack;
                 var7 = var3.onPaymentSuccess;
                 var6 = var3.onPaymentDismiss;
-                var13 = function(arg0) { // Original name: wrappedPredicate, environment: var1
+                var13 = function arg0() {
                     _fun59265: for (var _fun59265_ip = 0;;) switch (_fun59265_ip) {
                         case 0:
                             var5 = arg0;

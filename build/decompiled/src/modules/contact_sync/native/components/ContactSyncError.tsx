@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/ContactSyncError.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ContactSyncError, environment: var1
+    var1 = function arg0() {
         _fun80670: for (var _fun80670_ip = 0;;) switch (_fun80670_ip) {
             case 0:
                 var0 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8[var0];
                 var9 = var5.bind(var3)(var4);
                 var4 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: l, environment: var2
+                var2 = function() {
                     _fun80671: for (var _fun80671_ip = 0;;) switch (_fun80671_ip) {
                         case 0:
                             var0 = {};

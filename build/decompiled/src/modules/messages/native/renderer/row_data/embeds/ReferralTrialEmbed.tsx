@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/ReferralTrialEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: createReferralTrialEmbedRedeemable, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun55078: for (var _fun55078_ip = 0;;) switch (_fun55078_ip) {
             case 0:
                 var3 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var16.getUserTrialOffer;
                 var13 = _closure1_slot10;
                 var17 = var15.bind(var16)(var13);
-                var13 = function() { // Original name: isReferralTrialProductOfferIdEnabled, environment: var13
+                var13 = function() {
                     var3 = _closure1_slot8;
                     var2 = var3.getOfferIds;
                     var2 = var2.bind(var3)();

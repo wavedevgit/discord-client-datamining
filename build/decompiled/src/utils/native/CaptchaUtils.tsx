@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot12 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: trackCaptchaEvent, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var8 = arg0;
         var7 = arg3;
         var2 = _closure1_slot1;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var3;
     var3 = {};
-    var4 = function() { // Original name: showCaptcha, environment: var1
+    var4 = function() {
         _fun112342: for (var _fun112342_ip = 0;;) switch (_fun112342_ip) {
             case 0:
                 var1 = arguments[0];
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.showCaptcha = var4;
-    var4 = function() { // Original name: closeCaptcha, environment: var1
+    var4 = function() {
         var1 = _closure1_slot11;
         var0 = var1.closeCaptcha;
         var0 = var0.bind(var1)();
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.closeCaptcha = var4;
-    var4 = function(arg0, arg1) { // Original name: showHcaptcha, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var8.bind(var0)(var3, var2);
             var2 = {};
             var2.siteKey = var7;
-            var6 = function(arg0) { // Original name: onMessage, environment: var6
+            var6 = function arg0() {
                 _fun112346: for (var _fun112346_ip = 0;;) switch (_fun112346_ip) {
                     case 0:
                         var1 = arg0;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.showHcaptcha = var4;
-    var4 = function() { // Original name: showRecaptcha, environment: var1
+    var4 = function() {
         var1 = this;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/native/CaptchaUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: InlineHcaptcha, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var7 = var2.siteKey;
         var _closure2_slot0 = var7;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var3)(var0);
         var0 = {};
         var0.siteKey = var7;
-        var6 = function(arg0) { // Original name: onMessage, environment: var6
+        var6 = function arg0() {
             _fun112354: for (var _fun112354_ip = 0;;) switch (_fun112354_ip) {
                 case 0:
                     var0 = arg0;

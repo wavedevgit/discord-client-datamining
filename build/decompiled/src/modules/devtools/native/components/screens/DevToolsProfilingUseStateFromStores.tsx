@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsProfilingUseStateFromStores.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsProfilingUseStateFromStores, environment: var1
+    var1 = function() {
         _fun86222: for (var _fun86222_ip = 0;;) switch (_fun86222_ip) {
             case 0:
                 var1 = _closure1_slot3;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var22 = var0.bind(var1)(var5);
                 var _closure2_slot9 = var22;
-                var17 = function(arg0) { // Original name: renderLabel, environment: var18
+                var17 = function arg0() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var0 = _closure1_slot1;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var27.toString;
                 var25 = var25.bind(var27)();
                 var20.defaultValue = var25;
-                var25 = function(arg0) { // Original name: onChange, environment: var18
+                var25 = function arg0() {
                     _fun86229: for (var _fun86229_ip = 0;;) switch (_fun86229_ip) {
                         case 0:
                             var1 = global;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var23.bind(var3)(var25);
                 var25 = var25.TimerIcon;
                 var21.leadingIcon = var25;
-                var25 = function(arg0) { // Original name: onChange, environment: var18
+                var25 = function arg0() {
                     var2 = _closure2_slot4;
                     var0 = global;
                     var3 = var0.Number;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var23.bind(var3)(var25);
                 var25 = var25.AnalyticsIcon;
                 var21.leadingIcon = var25;
-                var25 = function(arg0) { // Original name: onChange, environment: var18
+                var25 = function arg0() {
                     var2 = _closure2_slot6;
                     var0 = global;
                     var3 = var0.Number;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var20.VkKicb;
                 var20 = var21.bind(var22)(var20);
                 var19.accessibilityLabel = var20;
-                var20 = function() { // Original name: onPress, environment: var18
+                var20 = function() {
                     var2 = _closure2_slot8;
                     var0 = undefined;
                     var1 = '';
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var19.onPress = var20;
                 var16.trailingPressableProps = var19;
-                var18 = function(arg0) { // Original name: onChange, environment: var18
+                var18 = function arg0() {
                     var2 = _closure2_slot8;
                     var0 = undefined;
                     var1 = arg0;

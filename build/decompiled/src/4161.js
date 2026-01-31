@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var6 = function(arg0) { // Original name: getCreationDate, environment: var4
+    var6 = function arg0() {
         _fun38157: for (var _fun38157_ip = 0;;) switch (_fun38157_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var5 = function(arg0) { // Original name: getCreationTime, environment: var4
+    var5 = function arg0() {
         _fun38158: for (var _fun38158_ip = 0;;) switch (_fun38158_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var7 = function(arg0) { // Original name: getEncodingName, environment: var4
+    var7 = function arg0() {
         _fun38159: for (var _fun38159_ip = 0;;) switch (_fun38159_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -286,7 +286,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var8 = 'Model Version';
     var3.name = var8;
-    var8 = function(arg0) { // Original name: description, environment: var4
+    var8 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var8 = 'File Format';
     var3.name = var8;
-    var8 = function(arg0) { // Original name: description, environment: var4
+    var8 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var8 = 'File Format Version';
     var3.name = var8;
-    var8 = function(arg0) { // Original name: description, environment: var4
+    var8 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var7 = 'ARM Identifier';
     var3.name = var7;
-    var7 = function(arg0) { // Original name: description, environment: var4
+    var7 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -379,7 +379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var7 = 'ARM Version';
     var3.name = var7;
-    var7 = function(arg0) { // Original name: description, environment: var4
+    var7 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -397,7 +397,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var7 = 'Record Version';
     var3.name = var7;
-    var7 = function(arg0) { // Original name: description, environment: var4
+    var7 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var7 = 'Editorial Update';
     var3.name = var7;
-    var7 = function(arg0) { // Original name: description, environment: var4
+    var7 = function arg0() {
         _fun38166: for (var _fun38166_ip = 0;;) switch (_fun38166_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'name': 'Subject Reference',
         'repeatable': true
     };
-    var7 = function(arg0) { // Original name: description, environment: var4
+    var7 = function arg0() {
         _fun38167: for (var _fun38167_ip = 0;;) switch (_fun38167_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -516,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var7 = 'Action Advised';
     var3.name = var7;
-    var7 = function(arg0) { // Original name: description, environment: var4
+    var7 = function arg0() {
         _fun38168: for (var _fun38168_ip = 0;;) switch (_fun38168_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -607,7 +607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Object Cycle';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38169: for (var _fun38169_ip = 0;;) switch (_fun38169_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -674,7 +674,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Rasterized Caption';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -683,7 +683,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Image Orientation';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38171: for (var _fun38171_ip = 0;;) switch (_fun38171_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -730,7 +730,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Audio Type';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38172: for (var _fun38172_ip = 0;;) switch (_fun38172_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -866,7 +866,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Audio Sampling Rate';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         var0 = global;
         var3 = var0.parseInt;
         var1 = _closure1_slot0;
@@ -889,7 +889,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Audio Sampling Resolution';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38174: for (var _fun38174_ip = 0;;) switch (_fun38174_ip) {
             case 0:
                 var0 = global;
@@ -923,7 +923,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Audio Duration';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38175: for (var _fun38175_ip = 0;;) switch (_fun38175_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -963,7 +963,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.description = var5;
     var2[665] = var3;
     var3 = {};
-    var5 = function(arg0) { // Original name: name, environment: var4
+    var5 = function arg0() {
         _fun38176: for (var _fun38176_ip = 0;;) switch (_fun38176_ip) {
             case 0:
                 var0 = arg0;
@@ -981,7 +981,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38177: for (var _fun38177_ip = 0;;) switch (_fun38177_ip) {
             case 0:
                 var0 = arg0;
@@ -1287,7 +1287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'ObjectData Preview File Format Version';
     var3.name = var5;
-    var5 = function(arg0, arg1) { // Original name: description, environment: var4
+    var5 = function arg0, arg1() {
         _fun38178: for (var _fun38178_ip = 0;;) switch (_fun38178_ip) {
             case 0:
                 var0 = arg1;
@@ -1386,7 +1386,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Size Mode';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         var1 = arg0;
         var0 = 0;
         var1 = var1[var0];
@@ -1399,7 +1399,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Max Subfile Size';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38180: for (var _fun38180_ip = 0;;) switch (_fun38180_ip) {
             case 0:
                 var5 = arg0;
@@ -1435,7 +1435,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'ObjectData Size Announced';
     var3.name = var5;
-    var5 = function(arg0) { // Original name: description, environment: var4
+    var5 = function arg0() {
         _fun38181: for (var _fun38181_ip = 0;;) switch (_fun38181_ip) {
             case 0:
                 var5 = arg0;
@@ -1471,7 +1471,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var5 = 'Maximum ObjectData Size';
     var3.name = var5;
-    var4 = function(arg0) { // Original name: description, environment: var4
+    var4 = function arg0() {
         _fun38182: for (var _fun38182_ip = 0;;) switch (_fun38182_ip) {
             case 0:
                 var5 = arg0;

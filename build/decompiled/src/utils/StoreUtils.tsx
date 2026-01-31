@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var8;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var9;
-            var0 = function() { // Original name: _httpGetWithCountryCodeQuery, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var4.bind(var11)(var2);
                             case 198:
                                 var4 = var11.push;
-                                var2 = function() { // Original name: waitForSubscriptionsToBeFetched, environment: var7
+                                var2 = function() {
                                     var0 = global;
                                     var2 = var0.Promise;
                                     var1 = function() { // Environment: var0
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                     case 101:
                                                         return var3;
                                                     case 104:
-                                                        var3 = function() { // Original name: wait, environment: var4
+                                                        var3 = function() {
                                                             _fun28840: for (var _fun28840_ip = 0;;) switch (_fun28840_ip) {
                                                                 case 0:
                                                                     var0 = _closure1_slot5;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot17 = var0;
-            var4 = function(arg0, arg1, arg2) { // Original name: getNowPlayingReason, environment: var1
+            var4 = function arg0, arg1, arg2() {
                 _fun28843: for (var _fun28843_ip = 0;;) switch (_fun28843_ip) {
                     case 0:
                         var3 = arg2;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var4;
-            var3 = function(arg0, arg1, arg2) { // Original name: getEverPlayedReason, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 _fun28846: for (var _fun28846_ip = 0;;) switch (_fun28846_ip) {
                     case 0:
                         var3 = arg2;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.bind(var9)(var7);
             var2.SUPPORTS_WEBP = var6;
             var2.RECENTLY_RELEASED_MONTHS_THRESHOLD = var5;
-            var5 = function(arg0, arg1) { // Original name: getStoreListingLocation, environment: var1
+            var5 = function arg0, arg1() {
                 _fun28849: for (var _fun28849_ip = 0;;) switch (_fun28849_ip) {
                     case 0:
                         var7 = arg0;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getStoreListingLocation = var5;
-            var5 = function(arg0, arg1) { // Original name: getApplicationStoreListingLocation, environment: var1
+            var5 = function arg0, arg1() {
                 var0 = arg1;
                 var3 = var0.analyticsSource;
                 var2 = var0.analyticsProperties;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.getApplicationStoreListingLocation = var5;
-            var5 = function(arg0, arg1, arg2, arg3) { // Original name: getAssetURL, environment: var1
+            var5 = function arg0, arg1, arg2, arg3() {
                 _fun28851: for (var _fun28851_ip = 0;;) switch (_fun28851_ip) {
                     case 0:
                         var14 = arg0;
@@ -919,7 +919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getAssetURL = var5;
-            var5 = function() { // Original name: httpGetWithCountryCodeQuery, environment: var1
+            var5 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot17;
                 var2 = var3.apply;
@@ -930,7 +930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.httpGetWithCountryCodeQuery = var5;
-            var5 = function(arg0) { // Original name: nativePlatformTypeToSKUOperatingSystem, environment: var1
+            var5 = function arg0() {
                 _fun28853: for (var _fun28853_ip = 0;;) switch (_fun28853_ip) {
                     case 0:
                         var2 = arg0;
@@ -986,7 +986,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.nativePlatformTypeToSKUOperatingSystem = var5;
-            var5 = function(arg0) { // Original name: skuOperatingSystemToText, environment: var1
+            var5 = function arg0() {
                 _fun28854: for (var _fun28854_ip = 0;;) switch (_fun28854_ip) {
                     case 0:
                         var4 = arg0;
@@ -1075,7 +1075,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.skuOperatingSystemToText = var5;
-            var5 = function(arg0, arg1, arg2) { // Original name: getPrimarySKUForApplication, environment: var1
+            var5 = function arg0, arg1, arg2() {
                 _fun28855: for (var _fun28855_ip = 0;;) switch (_fun28855_ip) {
                     case 0:
                         var2 = arg1;
@@ -1109,7 +1109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getPrimarySKUForApplication = var5;
             var2.getNowPlayingReason = var4;
             var2.getEverPlayedReason = var3;
-            var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getSocialRecommendationReasons, environment: var1
+            var3 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun28856: for (var _fun28856_ip = 0;;) switch (_fun28856_ip) {
                     case 0:
                         var2 = arg1;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getSocialRecommendationReasons = var3;
-            var1 = function(arg0, arg1, arg2) { // Original name: getNonSocialRecommendationReasons, environment: var1
+            var1 = function arg0, arg1, arg2() {
                 _fun28859: for (var _fun28859_ip = 0;;) switch (_fun28859_ip) {
                     case 0:
                         var3 = arg0;

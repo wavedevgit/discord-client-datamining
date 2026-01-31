@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun73653: for (var _fun73653_ip = 0;;) switch (_fun73653_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun73655: for (var _fun73655_ip = 0;;) switch (_fun73655_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: Tags, environment: var1
+    var0 = function arg0() {
         _fun73656: for (var _fun73656_ip = 0;;) switch (_fun73656_ip) {
             case 0:
                 var0 = arg0;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: ActionBar, environment: var1
+    var0 = function arg0() {
         _fun73658: for (var _fun73658_ip = 0;;) switch (_fun73658_ip) {
             case 0:
                 var0 = arg0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var9 = var1 > var0;
             case 369:
-                var0 = function() { // Original name: maybeFocus, environment: var15
+                var0 = function() {
                     _fun73661: for (var _fun73661_ip = 0;;) switch (_fun73661_ip) {
                         case 0:
                             var4 = _closure2_slot7;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var23.KeyboardIcon;
             case 679:
                 var8.IconComponent = var22;
-                var22 = function() { // Original name: onPress, environment: var15
+                var22 = function() {
                     _fun73662: for (var _fun73662_ip = 0;;) switch (_fun73662_ip) {
                         case 0:
                             var1 = _closure2_slot8;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var23.bind(var3)(var22);
                 var22 = var22.TagIcon;
                 var11.IconComponent = var22;
-                var22 = function() { // Original name: onPress, environment: var15
+                var22 = function() {
                     var3 = _closure1_slot6;
                     var0 = var3.dismiss;
                     var0 = var0.bind(var3)();
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var7 = _closure2_slot0;
                     var2.parentChannel = var7;
-                    var7 = function(arg0) { // Original name: onSave, environment: var1
+                    var7 = function arg0() {
                         var3 = _closure2_slot2;
                         var0 = undefined;
                         var2 = arg0;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.title = var7;
                     var6 = _closure2_slot1;
                     var2.tags = var6;
-                    var1 = function() { // Original name: onClose, environment: var1
+                    var1 = function() {
                         var1 = _closure2_slot9;
                         var0 = undefined;
                         var1 = var1.bind(var0)();
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.color = var19;
                 var16 = var18.bind(var3)(var17, var16);
                 var12.icon = var16;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     _fun73666: for (var _fun73666_ip = 0;;) switch (_fun73666_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -1233,7 +1233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/composer/ForumComposer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumComposer, environment: var1
+    var1 = function arg0() {
         _fun73667: for (var _fun73667_ip = 0;;) switch (_fun73667_ip) {
             case 0:
                 var0 = arg0;
@@ -1729,7 +1729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12[var9];
                 var17 = var14.bind(var4)(var12);
                 var14 = var17.useAnimatedScrollHandler;
-                var12 = function(arg0) { // Original name: G, environment: var13
+                var12 = function arg0() {
                     var0 = arg0;
                     var0 = var0.contentOffset;
                     var2 = var0.y;
@@ -2594,7 +2594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var8.KJnHq3;
                             var8 = var11.bind(var12)(var8);
                             var0.confirmText = var8;
-                            var6 = function() { // Original name: onConfirm, environment: var6
+                            var6 = function() {
                                 var2 = _closure2_slot28;
                                 var1 = {};
                                 var0 = _closure3_slot0;
@@ -2921,7 +2921,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var2;
                 var14 = var1;
             case 2590:
-                var1 = function() { // Original name: MediaPostMultipleThumbnailActionSheetImporter, environment: var13
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot2;
                     var1 = 49;
@@ -2959,7 +2959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.channel = var32;
                 var5.height = var16;
                 var5.onClose = var15;
-                var15 = function() { // Original name: onGuidelinesPress, environment: var13
+                var15 = function() {
                     var1 = _closure2_slot31;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -2972,7 +2972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var4 = _closure2_slot0;
                     var1.channel = var4;
-                    var4 = function() { // Original name: onClose, environment: var4
+                    var4 = function() {
                         var1 = _closure2_slot30;
                         var0 = undefined;
                         var1 = var1.bind(var0)();
@@ -3042,7 +3042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var36 = _closure1_slot20;
                 var12.maxLength = var36;
                 var12.onChange = var34;
-                var34 = function() { // Original name: onBlur, environment: var13
+                var34 = function() {
                     _fun73700: for (var _fun73700_ip = 0;;) switch (_fun73700_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -3122,7 +3122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var12.onBlur = var34;
-                var34 = function() { // Original name: onFocus, environment: var13
+                var34 = function() {
                     _fun73701: for (var _fun73701_ip = 0;;) switch (_fun73701_ip) {
                         case 0:
                             var4 = _closure2_slot10;
@@ -3231,7 +3231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var35 = {};
                 var38 = var22.avatarContainer;
                 var35.style = var38;
-                var38 = function() { // Original name: onPress, environment: var13
+                var38 = function() {
                     _fun73702: for (var _fun73702_ip = 0;;) switch (_fun73702_ip) {
                         case 0:
                             var1 = _closure1_slot1;
@@ -3439,7 +3439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var40.value = var20;
                 var40.onChangeText = var46;
                 var40.onSelectionChange = var43;
-                var43 = function() { // Original name: onFocus, environment: var13
+                var43 = function() {
                     _fun73703: for (var _fun73703_ip = 0;;) switch (_fun73703_ip) {
                         case 0:
                             var4 = _closure2_slot10;
@@ -3521,7 +3521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.canPost = var29;
                 var11.submitting = var28;
                 var11.onSubmit = var27;
-                var27 = function() { // Original name: onShowExpressionPicker, environment: var13
+                var27 = function() {
                     var1 = _closure1_slot6;
                     var0 = var1.dismiss;
                     var0 = var0.bind(var1)();
@@ -3587,7 +3587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.bind(var4)(var10);
                 var10 = {};
                 var10.contentTypes = var14;
-                var13 = function(arg0) { // Original name: children, environment: var13
+                var13 = function arg0() {
                     _fun73705: for (var _fun73705_ip = 0;;) switch (_fun73705_ip) {
                         case 0:
                             var0 = arg0;
@@ -3616,7 +3616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.bind(var4)(var1);
                             var2 = var1.DismissibleActionSheet;
                             var1 = {};
-                            var5 = function() { // Original name: markAsDismissed, environment: var5
+                            var5 = function() {
                                 var2 = _closure3_slot0;
                                 var0 = _closure1_slot23;
                                 var1 = var0.UNKNOWN;

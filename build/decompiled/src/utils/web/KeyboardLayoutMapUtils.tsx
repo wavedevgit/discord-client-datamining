@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = dependencyMap;
             var _closure1_slot0 = var11;
             var _closure1_slot1 = var12;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun94197: for (var _fun94197_ip = 0;;) switch (_fun94197_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot19 = var0;
-            var0 = function(arg0) { // Original name: normalizeKey, environment: var1
+            var0 = function arg0() {
                 _fun94200: for (var _fun94200_ip = 0;;) switch (_fun94200_ip) {
                     case 0:
                         var2 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot20 = var0;
-            var0 = function() { // Original name: syncKeyboardLayoutMap, environment: var1
+            var0 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot22;
                 var2 = var3.apply;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot21 = var0;
-            var0 = function() { // Original name: _syncKeyboardLayoutMap, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot6;
@@ -178,12 +178,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot22 = var0;
-            var0 = function() { // Original name: getKeyboardLayoutMap, environment: var1
+            var0 = function() {
                 var0 = _closure1_slot14;
                 return var0;
             };
             var _closure1_slot23 = var0;
-            var7 = function(arg0) { // Original name: normalizeKeyMap, environment: var1
+            var7 = function arg0() {
                 _fun94206: for (var _fun94206_ip = 0;;) switch (_fun94206_ip) {
                     case 0:
                         var12 = global;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot24 = var7;
-            var0 = function(arg0) { // Original name: getNormalizedEvent, environment: var1
+            var0 = function arg0() {
                 _fun94207: for (var _fun94207_ip = 0;;) switch (_fun94207_ip) {
                     case 0:
                         var1 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot25 = var0;
-            var6 = function() { // Original name: initializeKeyboardMapper, environment: var1
+            var6 = function() {
                 _fun94208: for (var _fun94208_ip = 0;;) switch (_fun94208_ip) {
                     case 0:
                         var2 = _closure1_slot18;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var6;
-            var5 = function() { // Original name: getKeyboardMapper, environment: var1
+            var5 = function() {
                 _fun94214: for (var _fun94214_ip = 0;;) switch (_fun94214_ip) {
                     case 0:
                         var0 = _closure1_slot17;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot27 = var5;
-            var0 = function() { // Original name: _resetKeyboardMapper, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot6;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot28 = var0;
-            var4 = function(arg0) { // Original name: reverseLookupCodeFromKey, environment: var1
+            var4 = function arg0() {
                 _fun94218: for (var _fun94218_ip = 0;;) switch (_fun94218_ip) {
                     case 0:
                         var3 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var4;
-            var3 = function(arg0) { // Original name: getExactKeyboardEventMatchFromAny, environment: var1
+            var3 = function arg0() {
                 _fun94219: for (var _fun94219_ip = 0;;) switch (_fun94219_ip) {
                     case 0:
                         var2 = _closure1_slot25;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot12 = var8;
             var10 = function() { // Environment: var1
                 var3 = _closure1_slot8;
-                var2 = function() { // Original name: DiscordKeyboardLayoutMap, environment: var4
+                var2 = function() {
                     _fun94221: for (var _fun94221_ip = 0;;) switch (_fun94221_ip) {
                         case 0:
                             var5 = arguments[0];
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'get';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var4
+                var1 = function arg0() {
                     var0 = this;
                     var2 = var0.map;
                     var1 = var2.get;
@@ -873,7 +873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'has';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     var0 = this;
                     var2 = var0.map;
                     var1 = var2.has;
@@ -886,7 +886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'keys';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var0 = this;
                     var1 = var0.map;
                     var0 = var1.keys;
@@ -898,7 +898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'values';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var0 = this;
                     var1 = var0.map;
                     var0 = var1.values;
@@ -910,7 +910,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'entries';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var0 = this;
                     var1 = var0.map;
                     var0 = var1.entries;
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'forEach';
                 var0.key = var5;
-                var5 = function(arg0, arg1) { // Original name: value, environment: var4
+                var5 = function arg0, arg1() {
                     var0 = this;
                     var3 = var0.map;
                     var2 = var3.forEach;
@@ -936,7 +936,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'size';
                 var0.key = var5;
-                var5 = function() { // Original name: get, environment: var4
+                var5 = function() {
                     var0 = this;
                     var0 = var0.map;
                     var0 = var0.size;
@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = '_set';
                 var0.key = var5;
-                var4 = function(arg0, arg1) { // Original name: value, environment: var4
+                var4 = function arg0, arg1() {
                     var0 = this;
                     var3 = var0.map;
                     var2 = var3.set;
@@ -979,7 +979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot15 = var10;
             var10 = function() { // Environment: var1
                 var3 = _closure1_slot8;
-                var2 = function() { // Original name: BaseKeyboardMapper, environment: var4
+                var2 = function() {
                     _fun94232: for (var _fun94232_ip = 0;;) switch (_fun94232_ip) {
                         case 0:
                             var5 = arguments[0];
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = '_setCachedKeyCodeMapEntries';
                 var0.key = var1;
-                var1 = function() { // Original name: value, environment: var4
+                var1 = function() {
                     var1 = this;
                     var2 = global;
                     var4 = var2.Object;
@@ -1168,7 +1168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = '_setCachedKeyMapEntries';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var1 = this;
                     var0 = global;
                     var3 = var0.Object;
@@ -1184,7 +1184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = '_setCachedKeyLayoutMapEntries';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var1 = this;
                     var0 = global;
                     var3 = var0.Array;
@@ -1203,7 +1203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'cachedKeyCodeMapEntries';
                 var0.key = var5;
-                var5 = function() { // Original name: get, environment: var4
+                var5 = function() {
                     _fun94238: for (var _fun94238_ip = 0;;) switch (_fun94238_ip) {
                         case 0:
                             var0 = this;
@@ -1227,7 +1227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'cachedKeyMapEntries';
                 var0.key = var5;
-                var5 = function() { // Original name: get, environment: var4
+                var5 = function() {
                     _fun94239: for (var _fun94239_ip = 0;;) switch (_fun94239_ip) {
                         case 0:
                             var0 = this;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'cachedKeyLayoutMapEntries';
                 var0.key = var5;
-                var5 = function() { // Original name: get, environment: var4
+                var5 = function() {
                     _fun94240: for (var _fun94240_ip = 0;;) switch (_fun94240_ip) {
                         case 0:
                             var0 = this;
@@ -1275,7 +1275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'cachedAllEvents';
                 var0.key = var5;
-                var5 = function() { // Original name: get, environment: var4
+                var5 = function() {
                     _fun94241: for (var _fun94241_ip = 0;;) switch (_fun94241_ip) {
                         case 0:
                             var0 = this;
@@ -1299,7 +1299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getKeyCodeMapItem';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun94242: for (var _fun94242_ip = 0;;) switch (_fun94242_ip) {
                         case 0:
                             var1 = arg0;
@@ -1326,7 +1326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = '_buildKeyCodeMapFromKeyMap';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     _fun94243: for (var _fun94243_ip = 0;;) switch (_fun94243_ip) {
                         case 0:
                             var11 = this;
@@ -1388,7 +1388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = '_initializeInternalLayoutMap';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var2 = this;
                     var1 = _closure1_slot23;
                     var0 = undefined;
@@ -1419,7 +1419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = '_hasExactMatch';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun94245: for (var _fun94245_ip = 0;;) switch (_fun94245_ip) {
                         case 0:
                             var2 = arg0;
@@ -1486,7 +1486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'addEvent';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun94247: for (var _fun94247_ip = 0;;) switch (_fun94247_ip) {
                         case 0:
                             var2 = this;
@@ -1616,7 +1616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'updateCaches';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var1 = this;
                     var0 = var1._setCachedKeyCodeMapEntries;
                     var0 = var0.bind(var1)();
@@ -1632,7 +1632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'reset';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var2 = this;
                     var0 = null;
                     var2._internalKeyLayoutMap = var0;
@@ -1660,7 +1660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'save';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var0 = this;
                     var4 = var0.keyMap;
                     var3 = _closure1_slot0;
@@ -1680,7 +1680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getLayoutMap';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     _fun94251: for (var _fun94251_ip = 0;;) switch (_fun94251_ip) {
                         case 0:
                             var0 = this;
@@ -1707,7 +1707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getKeyCode';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     var0 = this;
                     var1 = var0.keyMap;
                     var0 = arg0;
@@ -1719,7 +1719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'findCodeFromKeyboardLayoutMap';
                 var0.key = var5;
-                var4 = function(arg0) { // Original name: value, environment: var4
+                var4 = function arg0() {
                     _fun94253: for (var _fun94253_ip = 0;;) switch (_fun94253_ip) {
                         case 0:
                             var0 = arg0;
@@ -1824,7 +1824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var13 = var10.bind(var0)();
             var10 = function(arg0) { // Environment: var1
-                var3 = function() { // Original name: KeyboardMapper, environment: var5
+                var3 = function() {
                     _fun94256: for (var _fun94256_ip = 0;;) switch (_fun94256_ip) {
                         case 0:
                             var3 = this;
@@ -1872,7 +1872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'getKeyString';
                 var4.key = var0;
-                var0 = function(arg0, arg1) { // Original name: value, environment: var5
+                var0 = function arg0, arg1() {
                     _fun94257: for (var _fun94257_ip = 0;;) switch (_fun94257_ip) {
                         case 0:
                             var3 = arg0;
@@ -2053,7 +2053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'findExactKeyboardEventMatch';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun94261: for (var _fun94261_ip = 0;;) switch (_fun94261_ip) {
                         case 0:
                             var5 = arg1;
@@ -2176,7 +2176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getWeightedPossibleKeyStringMatches';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = arg1;
@@ -2240,7 +2240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.bind(var3)(var1);
                     var1 = var2.sort;
                     var0 = function(arg0, arg1) { // Environment: var0
-                        var3 = function(arg0) { // Original name: calculateScore, environment: var0
+                        var3 = function arg0() {
                             _fun94267: for (var _fun94267_ip = 0;;) switch (_fun94267_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -2318,7 +2318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'findKeyboardEventByKey';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun94268: for (var _fun94268_ip = 0;;) switch (_fun94268_ip) {
                         case 0:
                             var7 = arg0;
@@ -2399,7 +2399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'findKeyboardEventByKeyCode';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     _fun94270: for (var _fun94270_ip = 0;;) switch (_fun94270_ip) {
                         case 0:
                             var5 = arg0;
@@ -2500,7 +2500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getDefaultKeyboardEventShape';
                 var4.key = var6;
-                var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var5 = function arg0, arg1, arg2() {
                     _fun94272: for (var _fun94272_ip = 0;;) switch (_fun94272_ip) {
                         case 0:
                             var8 = arg0;
@@ -2656,7 +2656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.DefaultKeyboardLayout = var8;
             var2.normalizeKeyMap = var7;
             var2.initializeKeyboardMapper = var6;
-            var6 = function(arg0, arg1) { // Original name: __DEV_overrideLayoutMapKey, environment: var1
+            var6 = function arg0, arg1() {
                 _fun94274: for (var _fun94274_ip = 0;;) switch (_fun94274_ip) {
                     case 0:
                         var4 = _closure1_slot14;
@@ -2689,7 +2689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.__DEV_overrideLayoutMapKey = var6;
             var2.getKeyboardMapper = var5;
-            var5 = function() { // Original name: resetKeyboardMapper, environment: var1
+            var5 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot28;
                 var2 = var3.apply;
@@ -2700,7 +2700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.resetKeyboardMapper = var5;
-            var5 = function() { // Original name: getLayoutMap, environment: var1
+            var5 = function() {
                 _fun94276: for (var _fun94276_ip = 0;;) switch (_fun94276_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -2750,7 +2750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getLayoutMap = var5;
             var2.reverseLookupCodeFromKey = var4;
             var2.getExactKeyboardEventMatchFromAny = var3;
-            var3 = function(arg0) { // Original name: getKeyboardEventShapeFromAny, environment: var1
+            var3 = function arg0() {
                 _fun94277: for (var _fun94277_ip = 0;;) switch (_fun94277_ip) {
                     case 0:
                         var4 = arg0;
@@ -2815,7 +2815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getKeyboardEventShapeFromAny = var3;
-            var3 = function(arg0) { // Original name: getKeyboardEventShapeFromKey, environment: var1
+            var3 = function arg0() {
                 _fun94278: for (var _fun94278_ip = 0;;) switch (_fun94278_ip) {
                     case 0:
                         var5 = arg0;
@@ -2939,7 +2939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getKeyboardEventShapeFromKey = var3;
-            var1 = function(arg0) { // Original name: getKeyboardEventShapeFromKeycode, environment: var1
+            var1 = function arg0() {
                 _fun94279: for (var _fun94279_ip = 0;;) switch (_fun94279_ip) {
                     case 0:
                         var7 = arg0;

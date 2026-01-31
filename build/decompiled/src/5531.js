@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _fetchText, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun48933
                         }
                     case 61:
-                        var3 = function(arg0) { // Original name: fetchUriData, environment: var2
+                        var3 = function arg0() {
                             var0 = undefined;
                             var3 = _closure1_slot5;
                             var2 = var3.apply;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: _fetchUriData, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var3 = function(arg0) { // Original name: decodeBase64Image, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var1 = var0.decodeURIComponent;
         var4 = undefined;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: fetchText, environment: var1
+    var1 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;

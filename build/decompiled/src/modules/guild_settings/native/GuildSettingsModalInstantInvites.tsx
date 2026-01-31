@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: InvitesDisabledRow, environment: var3
+    var1 = function arg0() {
         _fun116159: for (var _fun116159_ip = 0;;) switch (_fun116159_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var1;
-    var0 = function(arg0) { // Original name: GuildSettingsModalInstantInvites, environment: var3
+    var0 = function arg0() {
         _fun116160: for (var _fun116160_ip = 0;;) switch (_fun116160_ip) {
             case 0:
                 var1 = arg0;
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_settings/native/GuildSettingsModalInstantInvites.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ConnectedGuildSettingsModalInstantInvites, environment: var3
+    var3 = function arg0() {
         _fun116172: for (var _fun116172_ip = 0;;) switch (_fun116172_ip) {
             case 0:
                 var1 = arg0;

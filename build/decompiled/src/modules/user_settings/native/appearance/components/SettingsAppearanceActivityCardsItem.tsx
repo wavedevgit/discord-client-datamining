@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/appearance/components/SettingsAppearanceActivityCardsItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityCardsItem, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.cards;
         var0 = var0.animatedStyles;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6.paddingHorizontal = var7;
         var0.contentContainerStyle = var6;
         var0.data = var5;
-        var5 = function(arg0) { // Original name: renderItem, environment: var4
+        var5 = function arg0() {
             var0 = arg0;
             var6 = var0.item;
             var3 = _closure1_slot3;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.renderItem = var5;
-        var4 = function(arg0) { // Original name: keyExtractor, environment: var4
+        var4 = function arg0() {
             var0 = arg0;
             var0 = var0.title;
             return var0;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_products/GuildProductSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getGuildProductPurchaseSystemMessageContentMobile, environment: var1
+    var1 = function arg0() {
         _fun55432: for (var _fun55432_ip = 0;;) switch (_fun55432_ip) {
             case 0:
                 var0 = arg0;

@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isLZH = var0;
     var2.isRAR = var0;
     var2.isZIP = var0;
-    var3 = function(arg0) { // Original name: is7Z, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.is7Z = var3;
-    var3 = function(arg0) { // Original name: isLZH, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isLZH = var3;
-    var3 = function(arg0) { // Original name: isRAR, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isRAR = var3;
-    var1 = function(arg0, arg1) { // Original name: isZIP, environment: var1
+    var1 = function arg0, arg1() {
         _fun37749: for (var _fun37749_ip = 0;;) switch (_fun37749_ip) {
             case 0:
                 var1 = arg1;

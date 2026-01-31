@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rpc/helpers/getCurrentEmbeddedActivityChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getCurrentEmbeddedActivityChannel, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = var2.getConnectedActivityChannelId;
         var2 = var1.bind(var2)();

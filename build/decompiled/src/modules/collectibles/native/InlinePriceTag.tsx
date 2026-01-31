@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.disabled = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot10 = var6;
-    var6 = function(arg0) { // Original name: PriceTag, environment: var1
+    var6 = function arg0() {
         _fun87153: for (var _fun87153_ip = 0;;) switch (_fun87153_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var6;
-    var6 = function(arg0) { // Original name: OrbsPriceTag, environment: var1
+    var6 = function arg0() {
         _fun87154: for (var _fun87154_ip = 0;;) switch (_fun87154_ip) {
             case 0:
                 var0 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var6.bind(var7)(var3);
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: BundleDiscountV2, environment: var1
+    var3 = function arg0() {
         _fun87156: for (var _fun87156_ip = 0;;) switch (_fun87156_ip) {
             case 0:
                 var0 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/InlinePriceTag.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InlinePriceTag, environment: var1
+    var1 = function arg0() {
         _fun87157: for (var _fun87157_ip = 0;;) switch (_fun87157_ip) {
             case 0:
                 var0 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var25.Kxw2LT;
                 var25 = {};
                 var25.price = var30;
-                var29 = function(arg0, arg1) { // Original name: subscribeNowHook, environment: var29
+                var29 = function arg0, arg1() {
                     var4 = _closure1_slot7;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

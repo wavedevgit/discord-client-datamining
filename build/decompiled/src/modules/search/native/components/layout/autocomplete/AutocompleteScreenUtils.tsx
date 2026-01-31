@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getSearchQueryChannelIds, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot6;
         var2 = var3.getState;
         var1 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSearchQueryChannelIds = var3;
-    var3 = function(arg0) { // Original name: getSearchQueryUserIds, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot6;
         var2 = var3.getState;
         var1 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSearchQueryUserIds = var3;
-    var3 = function(arg0) { // Original name: getSearchFilterHasIcon, environment: var1
+    var3 = function arg0() {
         _fun106977: for (var _fun106977_ip = 0;;) switch (_fun106977_ip) {
             case 0:
                 var3 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchFilterHasIcon = var3;
-    var3 = function(arg0) { // Original name: getSearchFilterAuthorTypeIcon, environment: var1
+    var3 = function arg0() {
         _fun106978: for (var _fun106978_ip = 0;;) switch (_fun106978_ip) {
             case 0:
                 var3 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchFilterAuthorTypeIcon = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: toSearchListUserItem, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun106979: for (var _fun106979_ip = 0;;) switch (_fun106979_ip) {
             case 0:
                 var4 = arg1;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.toSearchListUserItem = var3;
-    var1 = function(arg0, arg1) { // Original name: toSearchListChannelItem, environment: var1
+    var1 = function arg0, arg1() {
         _fun106980: for (var _fun106980_ip = 0;;) switch (_fun106980_ip) {
             case 0:
                 var2 = arg0;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var7)(var8);
             case 248:
                 var3.nickname = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = var0.id;

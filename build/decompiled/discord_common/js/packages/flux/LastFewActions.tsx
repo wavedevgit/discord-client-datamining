@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/flux/LastFewActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: add, environment: var1
+    var3 = function arg0() {
         _fun6918: for (var _fun6918_ip = 0;;) switch (_fun6918_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -51,14 +51,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.add = var3;
-    var3 = function() { // Original name: clear, environment: var1
+    var3 = function() {
         var0 = _closure1_slot0;
         var1 = new Array(0);
         _closure1_slot0 = var1;
         return var0;
     };
     var2.clear = var3;
-    var3 = function() { // Original name: serialize, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = var2.join;
         var0 = ' -> ';
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.serialize = var3;
-    var1 = function() { // Original name: last, environment: var1
+    var1 = function() {
         _fun6921: for (var _fun6921_ip = 0;;) switch (_fun6921_ip) {
             case 0:
                 var0 = _closure1_slot0;

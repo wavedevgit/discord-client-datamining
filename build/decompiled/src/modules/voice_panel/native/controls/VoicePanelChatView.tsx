@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: updateChatOpen, environment: var3
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var8)(var1);
     var _closure1_slot8 = var1;
     var4 = var7.memo;
-    var1 = function() { // Original name: VoicePanelDismissChatButton, environment: var3
+    var1 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useCallback;
         var1 = function() { // Environment: var0
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var6[var2];
         var7 = var7.bind(var3)(var2);
         var2 = var7.useAnimatedStyle;
-        var1 = function() { // Original name: n, environment: var1
+        var1 = function() {
             var0 = {};
             var2 = _closure2_slot0;
             var1 = var2.get;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var7)(var4);
     var _closure1_slot10 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: VoicePanelChatView, environment: var3
+    var3 = function arg0() {
         _fun90864: for (var _fun90864_ip = 0;;) switch (_fun90864_ip) {
             case 0:
                 var1 = arg0;

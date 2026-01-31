@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function(arg0) { // Original name: makeFifoCache, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = new Array(0);
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var _closure2_slot2 = var0;
         var0 = {};
-        var2 = function(arg0, arg1) { // Original name: add, environment: var1
+        var2 = function arg0, arg1() {
             _fun99010: for (var _fun99010_ip = 0;;) switch (_fun99010_ip) {
                 case 0:
                     var3 = arg0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.add = var2;
-        var2 = function() { // Original name: clear, environment: var1
+        var2 = function() {
             var0 = {};
             _closure2_slot2 = var0;
             var0 = new Array(0);
@@ -79,20 +79,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.clear = var2;
-        var2 = function(arg0) { // Original name: get, environment: var1
+        var2 = function arg0() {
             var1 = _closure2_slot2;
             var0 = arg0;
             var0 = var1[var0];
             return var0;
         };
         var0.get = var2;
-        var2 = function() { // Original name: size, environment: var1
+        var2 = function() {
             var0 = _closure2_slot1;
             var0 = var0.length;
             return var0;
         };
         var0.size = var2;
-        var1 = function(arg0) { // Original name: _delete, environment: var1
+        var1 = function arg0() {
             _fun99014: for (var _fun99014_ip = 0;;) switch (_fun99014_ip) {
                 case 0:
                     var4 = arg0;

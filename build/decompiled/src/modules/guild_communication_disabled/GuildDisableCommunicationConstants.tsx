@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var4 = function(arg0) { // Original name: getFriendlyDurationString, environment: var3
+    var4 = function arg0() {
         _fun19127: for (var _fun19127_ip = 0;;) switch (_fun19127_ip) {
             case 0:
                 var2 = arg0;

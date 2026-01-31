@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat_input/native/guard/ChatInputGuard.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ChatInputGuard, environment: var1
+    var3 = function arg0() {
         _fun90603: for (var _fun90603_ip = 0;;) switch (_fun90603_ip) {
             case 0:
                 var0 = arg0;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: ChatInputGuardContainer, environment: var1
+    var1 = function arg0() {
         _fun90604: for (var _fun90604_ip = 0;;) switch (_fun90604_ip) {
             case 0:
                 var1 = arg0;

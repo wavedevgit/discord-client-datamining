@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var5 = function(arg0) { // Original name: extractPathForTransaction, environment: var1
+    var5 = function arg0() {
         _fun98932: for (var _fun98932_ip = 0;;) switch (_fun98932_ip) {
             case 0:
                 var4 = arg0;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0) { // Original name: extractRequestData, environment: var1
+    var4 = function arg0() {
         _fun98933: for (var _fun98933_ip = 0;;) switch (_fun98933_ip) {
             case 0:
                 var4 = arg0;
@@ -622,7 +622,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: winterCGHeadersToDict, environment: var1
+    var3 = function arg0() {
         _fun98936: for (var _fun98936_ip = 0;;) switch (_fun98936_ip) {
             case 0:
                 var2 = arg0;
@@ -708,7 +708,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = ['id', 'username', 'email'];
     var _closure1_slot5 = var6;
     var2.DEFAULT_USER_INCLUDES = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: addRequestDataToEvent, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun98938: for (var _fun98938_ip = 0;;) switch (_fun98938_ip) {
             case 0:
                 var0 = arg0;
@@ -809,7 +809,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 261:
                 var8 = var5.user;
                 var7 = var1.user;
-                var3 = function(arg0, arg1) { // Original name: extractUserData, environment: var3
+                var3 = function arg0, arg1() {
                     _fun98939: for (var _fun98939_ip = 0;;) switch (_fun98939_ip) {
                         case 0:
                             var3 = arg1;
@@ -1055,7 +1055,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.extractPathForTransaction = var5;
     var2.extractRequestData = var4;
     var2.winterCGHeadersToDict = var3;
-    var1 = function(arg0) { // Original name: winterCGRequestToRequestData, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var3 = _closure1_slot8;
         var1 = var2.headers;

@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf/native/components/notification/NotificationReactivationActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationReactivationActionSheet, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.location;
         var _closure2_slot0 = var5;

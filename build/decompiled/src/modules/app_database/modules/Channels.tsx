@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun93023: for (var _fun93023_ip = 0;;) switch (_fun93023_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun93025: for (var _fun93025_ip = 0;;) switch (_fun93025_ip) {
             case 0:
                 var3 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: Channels, environment: var4
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot2;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = new Array(0);
             var2.privateChannels = var1;
             var1 = {};
-            var4 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleBackgroundSync;
                 var1 = arg0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.BACKGROUND_SYNC = var4;
-            var4 = function(arg0, arg1) { // Original name: CHANNEL_CREATE, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.putOne;
                 var0 = arg0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_CREATE = var4;
-            var4 = function(arg0, arg1) { // Original name: CHANNEL_DELETE, environment: var3
+            var4 = function arg0, arg1() {
                 var0 = arg0;
                 var4 = _closure3_slot0;
                 var3 = var4.deleteOne;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_DELETE = var4;
-            var4 = function(arg0, arg1) { // Original name: CHANNEL_RECIPIENT_ADD, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleChannelRecipientAdd;
                 var1 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_RECIPIENT_ADD = var4;
-            var4 = function(arg0, arg1) { // Original name: CHANNEL_RECIPIENT_REMOVE, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleChannelRecipientRemove;
                 var1 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_RECIPIENT_REMOVE = var4;
-            var4 = function(arg0, arg1) { // Original name: CHANNEL_UPDATES, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.putMany;
                 var0 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_UPDATES = var4;
-            var4 = function(arg0, arg1) { // Original name: CONNECTION_OPEN_SUPPLEMENTAL, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleConnectionOpenSupplemental;
                 var1 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CONNECTION_OPEN_SUPPLEMENTAL = var4;
-            var4 = function(arg0, arg1) { // Original name: CONNECTION_OPEN, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleConnectionOpen;
                 var1 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CONNECTION_OPEN = var4;
-            var4 = function(arg0, arg1) { // Original name: GUILD_CREATE, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleGuildCreate;
                 var1 = arg0;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.GUILD_CREATE = var4;
-            var3 = function(arg0, arg1) { // Original name: GUILD_DELETE, environment: var3
+            var3 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleGuildDelete;
                 var1 = arg0;
@@ -392,19 +392,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'handleBackgroundSync';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun93038: for (var _fun93038_ip = 0;;) switch (_fun93038_ip) {
                 case 0:
                     var1 = arg1;
                     var _closure3_slot0 = var1;
                     var1 = this;
                     var _closure3_slot1 = var1;
-                    var4 = function(arg0) { // Original name: _loop, environment: var0
+                    var4 = function arg0() {
                         _fun93039: for (var _fun93039_ip = 0;;) switch (_fun93039_ip) {
                             case 0:
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var6 = function(arg0) { // Original name: asRecord, environment: var0
+                                var6 = function arg0() {
                                     var3 = _closure1_slot4;
                                     var0 = _closure4_slot0;
                                     var2 = var0.id;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleConnectionOpen';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: handleConnectionOpen, environment: var4
+        var5 = function arg0, arg1() {
             _fun93041: for (var _fun93041_ip = 0;;) switch (_fun93041_ip) {
                 case 0:
                     var1 = arg0;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleConnectionOpenSupplemental';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: handleConnectionOpenSupplemental, environment: var4
+        var5 = function arg0, arg1() {
             var1 = this;
             var4 = var1.replace;
             var6 = var1.privateChannels;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleChannelRecipientAdd';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: handleChannelRecipientAdd, environment: var4
+        var5 = function arg0, arg1() {
             _fun93043: for (var _fun93043_ip = 0;;) switch (_fun93043_ip) {
                 case 0:
                     var0 = arg0;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleChannelRecipientRemove';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: handleChannelRecipientRemove, environment: var4
+        var5 = function arg0, arg1() {
             _fun93044: for (var _fun93044_ip = 0;;) switch (_fun93044_ip) {
                 case 0:
                     var0 = arg0;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleGuildCreate';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: handleGuildCreate, environment: var4
+        var5 = function arg0, arg1() {
             var0 = arg0;
             var4 = this;
             var3 = var4.handleGuildSynchronize;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleGuildDelete';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: handleGuildDelete, environment: var4
+        var5 = function arg0, arg1() {
             var3 = this;
             var2 = var3.deleteMany;
             var0 = arg0;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resetInMemoryState';
         var0.key = var5;
-        var5 = function() { // Original name: resetInMemoryState, environment: var4
+        var5 = function() {
             var1 = new Array(0);
             var0 = this;
             var0.privateChannels = var1;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleGuildSynchronize';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: handleGuildSynchronize, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun93048: for (var _fun93048_ip = 0;;) switch (_fun93048_ip) {
                 case 0:
                     var5 = arg0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'putOne';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: putOne, environment: var4
+        var5 = function arg0, arg1() {
             var4 = arg0;
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'putMany';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: putMany, environment: var4
+        var5 = function arg0, arg1() {
             _fun93050: for (var _fun93050_ip = 0;;) switch (_fun93050_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'replace';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: replace, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;
@@ -864,7 +864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'deleteOne';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: deleteOne, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'deleteMany';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: deleteMany, environment: var4
+        var4 = function arg0, arg1() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;

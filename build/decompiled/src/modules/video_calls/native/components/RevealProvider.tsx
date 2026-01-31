@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var1 = function(arg0, arg1) { // Original name: useRevealProviderValue, environment: var4
+    var1 = function arg0, arg1() {
         _fun62677: for (var _fun62677_ip = 0;;) switch (_fun62677_ip) {
             case 0:
                 var5 = arg0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/video_calls/native/components/RevealProvider.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: RevealProvider, environment: var4
+    var4 = function arg0() {
         _fun62681: for (var _fun62681_ip = 0;;) switch (_fun62681_ip) {
             case 0:
                 var0 = arg0;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: setCacheAdd, environment: var0
+    var1 = function arg0() {
         var0 = this;
         var4 = var0.__data__;
         var3 = var4.set;

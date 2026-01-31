@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/SingleStream.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.participant;
         var0 = var0.channel;
@@ -61,14 +61,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.ResizeMode;
         var6 = var6.CONTAIN;
         var0.resizeMode = var6;
-        var6 = function() { // Original name: onSingleTap, environment: var5
+        var6 = function() {
             var1 = _closure1_slot3;
             var0 = undefined;
             var1 = var1.bind(var0)();
             return var0;
         };
         var0.onSingleTap = var6;
-        var5 = function() { // Original name: onDoubleTap, environment: var5
+        var5 = function() {
             var2 = _closure1_slot4;
             var0 = undefined;
             var2 = var2.bind(var0)();

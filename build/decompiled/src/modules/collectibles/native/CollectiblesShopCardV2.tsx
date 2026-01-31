@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5.wishlistButton = var11;
             var5 = var9.bind(var10)(var5);
             var _closure1_slot8 = var5;
-            var5 = function(arg0) { // Original name: CollectiblesShopCardInternalV2, environment: var4
+            var5 = function arg0() {
                 _fun86829: for (var _fun86829_ip = 0;;) switch (_fun86829_ip) {
                     case 0:
                         var1 = arg0;

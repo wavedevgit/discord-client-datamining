@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     _fun8582: for (var _fun8582_ip = 0;;) switch (_fun8582_ip) {
         case 0:
-            var0 = function(arg0) { // Original name: checkIfSnapshotChanged, environment: var2
+            var0 = function arg0() {
                 _fun8583: for (var _fun8583_ip = 0;;) switch (_fun8583_ip) {
                     case 0:
                         var2 = arg0;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun8582
             }
         case 55:
-            var3 = function(arg0, arg1) { // Original name: is, environment: var2
+            var3 = function arg0, arg1() {
                 _fun8584: for (var _fun8584_ip = 0;;) switch (_fun8584_ip) {
                     case 0:
                         var1 = arg0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun8582
             }
         case 126:
-            var2 = function(arg0, arg1) { // Original name: useSyncExternalStore$1, environment: var2
+            var2 = function arg0, arg1() {
                 var6 = arg0;
                 var4 = arg1;
                 var _closure2_slot0 = var6;

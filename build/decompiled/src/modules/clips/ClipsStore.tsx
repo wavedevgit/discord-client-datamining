@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun30395: for (var _fun30395_ip = 0;;) switch (_fun30395_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun30398: for (var _fun30398_ip = 0;;) switch (_fun30398_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun30400: for (var _fun30400_ip = 0;;) switch (_fun30400_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: _migrateDefaultStorage, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot9;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: parseAndTrackClipMetadata, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun30404: for (var _fun30404_ip = 0;;) switch (_fun30404_ip) {
             case 0:
                 var2 = arg0;
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.DeviceSettingsStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ClipsStoreClass, environment: var5
+        var3 = function() {
             _fun30406: for (var _fun30406_ip = 0;;) switch (_fun30406_ip) {
                 case 0:
                     var3 = this;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun30407: for (var _fun30407_ip = 0;;) switch (_fun30407_ip) {
                 case 0:
                     var1 = arg0;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 12:
                     _closure1_slot31 = var1;
                 case 19:
-                    var1 = function() { // Original name: migrateDefaultStorage, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure1_slot36;
                         var2 = var3.apply;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getClips';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -750,7 +750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingClips';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             return var0;
         };
@@ -768,7 +768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.clipsSettings;
             return var0;
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastClipsSession';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot23;
             return var0;
         };
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getClipsWarningShown';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot22;
             var0 = arg0;
             var0 = var1 === var0;
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveAnimation';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot27;
             return var0;
         };
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStreamClipAnimations';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun30416: for (var _fun30416_ip = 0;;) switch (_fun30416_ip) {
                 case 0:
                     var2 = _closure1_slot28;
@@ -829,7 +829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasAnyClipAnimations';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -851,7 +851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHardwareClassification';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.hardwareClassification;
             return var0;
@@ -861,7 +861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHardwareClassificationForDecoupled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.hardwareClassificationForDecoupled;
             return var0;
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHardwareClassificationVersion';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.hardwareClassificationVersion;
             return var0;
@@ -881,7 +881,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsAtMaxSaveClipOperations';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot21;
             var0 = _closure1_slot15;
             var0 = var1 >= var0;
@@ -892,7 +892,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastClipsError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot25;
             return var0;
         };
@@ -901,7 +901,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isClipsEnabledForUser';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun30424: for (var _fun30424_ip = 0;;) switch (_fun30424_ip) {
                 case 0:
                     var1 = _closure1_slot24;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVoiceRecordingAllowedForUser';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun30425: for (var _fun30425_ip = 0;;) switch (_fun30425_ip) {
                 case 0:
                     var1 = _closure1_slot24;
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isViewerClippingAllowedForUser';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun30426: for (var _fun30426_ip = 0;;) switch (_fun30426_ip) {
                 case 0:
                     var1 = _closure1_slot24;
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasClips';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.hasClips;
             return var0;
@@ -1007,7 +1007,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasTakenDecoupledClip';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.hasTakenDecoupledClip;
             return var0;
@@ -1017,7 +1017,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNewClipIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             var0 = var0.newClipIds;
             return var0;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isClipExporting';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot26;
             var1 = var2.includes;
             var0 = arg0;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getExportingClipIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot26;
             return var0;
         };
@@ -1048,7 +1048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMatchingGroupClip';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun30432: for (var _fun30432_ip = 0;;) switch (_fun30432_ip) {
                 case 0:
                     var11 = arg0;
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'wasClipSharedInChannel';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun30433: for (var _fun30433_ip = 0;;) switch (_fun30433_ip) {
                 case 0:
                     var2 = _closure1_slot29;
@@ -1678,7 +1678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var16 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: handleSettingsUpdate, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.settings;
         var1 = {};
@@ -1700,7 +1700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_SETTINGS_UPDATE = var6;
-    var6 = function(arg0) { // Original name: handleSaveClip, environment: var3
+    var6 = function arg0() {
         _fun30449: for (var _fun30449_ip = 0;;) switch (_fun30449_ip) {
             case 0:
                 var0 = arg0;
@@ -1802,7 +1802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_SAVE_CLIP = var6;
-    var6 = function(arg0) { // Original name: handleSaveClipPlaceholder, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var0 = var0.clip;
         var1 = new Array(1);
@@ -1816,7 +1816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_SAVE_CLIP_PLACEHOLDER = var6;
-    var6 = function(arg0) { // Original name: handleSaveClipPlaceholderError, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var1 = var1.clipId;
         var _closure2_slot0 = var1;
@@ -1835,7 +1835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR = var6;
-    var6 = function(arg0) { // Original name: handleSaveClipStart, environment: var3
+    var6 = function arg0() {
         _fun30454: for (var _fun30454_ip = 0;;) switch (_fun30454_ip) {
             case 0:
                 var0 = arg0;
@@ -1909,7 +1909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_SAVE_CLIP_START = var6;
-    var6 = function() { // Original name: handleSaveClipError, environment: var3
+    var6 = function() {
         var0 = global;
         var4 = var0.Math;
         var3 = var4.max;
@@ -1923,7 +1923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_SAVE_CLIP_ERROR = var6;
-    var6 = function(arg0) { // Original name: handleStreamClipAnimationEnd, environment: var3
+    var6 = function arg0() {
         _fun30456: for (var _fun30456_ip = 0;;) switch (_fun30456_ip) {
             case 0:
                 var1 = arg0;
@@ -1968,7 +1968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_SAVE_ANIMATION_END = var6;
-    var6 = function(arg0) { // Original name: handleStreamStart, environment: var3
+    var6 = function arg0() {
         _fun30458: for (var _fun30458_ip = 0;;) switch (_fun30458_ip) {
             case 0:
                 var0 = arg0;
@@ -2039,7 +2039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STREAM_START = var6;
-    var6 = function(arg0) { // Original name: handleStreamStop, environment: var3
+    var6 = function arg0() {
         _fun30459: for (var _fun30459_ip = 0;;) switch (_fun30459_ip) {
             case 0:
                 var0 = arg0;
@@ -2102,7 +2102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STREAM_STOP = var6;
-    var6 = function() { // Original name: handleClearClipsSession, environment: var3
+    var6 = function() {
         _fun30460: for (var _fun30460_ip = 0;;) switch (_fun30460_ip) {
             case 0:
                 var2 = _closure1_slot23;
@@ -2121,7 +2121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_CLEAR_CLIPS_SESSION = var6;
-    var6 = function() { // Original name: clearNewClipIds, environment: var3
+    var6 = function() {
         var1 = _closure1_slot31;
         var0 = new Array(0);
         var1.newClipIds = var0;
@@ -2129,7 +2129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_CLEAR_NEW_CLIP_IDS = var6;
-    var6 = function(arg0) { // Original name: handleClipsDirectoryLoaded, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot31;
         var2 = var0.clips;
@@ -2143,7 +2143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_LOAD_DIRECTORY_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleClipsDelete, environment: var3
+    var6 = function arg0() {
         _fun30463: for (var _fun30463_ip = 0;;) switch (_fun30463_ip) {
             case 0:
                 var0 = arg0;
@@ -2176,7 +2176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_DELETE_CLIP = var6;
-    var6 = function(arg0) { // Original name: handleClipMetadataUpdate, environment: var3
+    var6 = function arg0() {
         _fun30465: for (var _fun30465_ip = 0;;) switch (_fun30465_ip) {
             case 0:
                 var0 = arg0;
@@ -2236,7 +2236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_UPDATE_METADATA = var6;
-    var6 = function(arg0) { // Original name: handleRTCConnectionFlagsUpdate, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var3 = _closure1_slot24;
         var2 = var5.userId;
@@ -2271,7 +2271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.RTC_CONNECTION_FLAGS = var6;
-    var6 = function(arg0) { // Original name: handleShowCallWarning, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         _closure1_slot22 = var1;
@@ -2279,7 +2279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_SHOW_CALL_WARNING = var6;
-    var6 = function(arg0) { // Original name: handleVoiceChannelSelect, environment: var3
+    var6 = function arg0() {
         _fun30468: for (var _fun30468_ip = 0;;) switch (_fun30468_ip) {
             case 0:
                 var0 = arg0;
@@ -2298,7 +2298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.VOICE_CHANNEL_SELECT = var6;
-    var6 = function(arg0) { // Original name: handleClassifyHardware, environment: var3
+    var6 = function arg0() {
         _fun30469: for (var _fun30469_ip = 0;;) switch (_fun30469_ip) {
             case 0:
                 var0 = arg0;
@@ -2393,7 +2393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_CLASSIFY_HARDWARE = var6;
-    var6 = function(arg0) { // Original name: handleClipsInit, environment: var3
+    var6 = function arg0() {
         _fun30470: for (var _fun30470_ip = 0;;) switch (_fun30470_ip) {
             case 0:
                 var0 = arg0;
@@ -2422,7 +2422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_INIT = var6;
-    var6 = function(arg0) { // Original name: handleClipsInitFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var1 = var0.errMsg;
         _closure1_slot25 = var1;
@@ -2430,7 +2430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CLIPS_INIT_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleDismissClipsEducation, environment: var3
+    var6 = function arg0() {
         _fun30472: for (var _fun30472_ip = 0;;) switch (_fun30472_ip) {
             case 0:
                 var0 = arg0;
@@ -2484,7 +2484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_DISMISS_EDUCATION = var6;
-    var6 = function(arg0) { // Original name: handleRunningGamesChange, environment: var3
+    var6 = function arg0() {
         _fun30473: for (var _fun30473_ip = 0;;) switch (_fun30473_ip) {
             case 0:
                 var0 = arg0;
@@ -2508,7 +2508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.RUNNING_GAMES_CHANGE = var6;
-    var6 = function(arg0) { // Original name: handleSetExporting, environment: var3
+    var6 = function arg0() {
         _fun30474: for (var _fun30474_ip = 0;;) switch (_fun30474_ip) {
             case 0:
                 var0 = arg0;
@@ -2527,7 +2527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLIPS_SET_EXPORTING = var6;
-    var6 = function(arg0) { // Original name: handleMessageCreate, environment: var3
+    var6 = function arg0() {
         _fun30475: for (var _fun30475_ip = 0;;) switch (_fun30475_ip) {
             case 0:
                 var0 = arg0;
@@ -2553,7 +2553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_CREATE = var6;
-    var6 = function(arg0) { // Original name: handleLoadMessagesSuccess, environment: var3
+    var6 = function arg0() {
         _fun30476: for (var _fun30476_ip = 0;;) switch (_fun30476_ip) {
             case 0:
                 var9 = arg0;

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_backgrounds/isVideoBackgroundSupported.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: isVideoBackgroundSupported, environment: var1
+    var1 = function() {
         _fun66412: for (var _fun66412_ip = 0;;) switch (_fun66412_ip) {
             case 0:
                 var1 = arguments[0];

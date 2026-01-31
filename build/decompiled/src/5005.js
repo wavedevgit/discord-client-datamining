@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useGestureHandlerTs4(event){const{gestureSource,source,state,GESTURE_SOURCE,onFinalize}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onFinalize(source,event);}';
     var2.code = var3;
     var _closure1_slot5 = var2;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: useGestureHandler, environment: var0
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var6 = arg0;
         var8 = arg1;
         var7 = arg2;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var11 = undefined;
         var14 = var12.bind(var11)(var4);
         var10 = var14.useWorkletCallback;
-        var9 = function(arg0) { // Original name: pnpm_useGestureHandlerTs1, environment: var2
+        var9 = function arg0() {
             var3 = _closure2_slot1;
             var4 = _closure1_slot0;
             var2 = _closure1_slot1;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var13[var3];
         var14 = var12.bind(var11)(var4);
         var10 = var14.useWorkletCallback;
-        var9 = function(arg0) { // Original name: pnpm_useGestureHandlerTs2, environment: var2
+        var9 = function arg0() {
             _fun45235: for (var _fun45235_ip = 0;;) switch (_fun45235_ip) {
                 case 0:
                     var3 = arg0;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var13[var3];
         var15 = var12.bind(var11)(var4);
         var14 = var15.useWorkletCallback;
-        var9 = function(arg0) { // Original name: pnpm_useGestureHandlerTs3, environment: var2
+        var9 = function arg0() {
             _fun45236: for (var _fun45236_ip = 0;;) switch (_fun45236_ip) {
                 case 0:
                     var3 = arg0;
@@ -198,7 +198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var13[var3];
         var4 = var12.bind(var11)(var3);
         var3 = var4.useWorkletCallback;
-        var2 = function(arg0) { // Original name: pnpm_useGestureHandlerTs4, environment: var2
+        var2 = function arg0() {
             _fun45237: for (var _fun45237_ip = 0;;) switch (_fun45237_ip) {
                 case 0:
                     var3 = arg0;

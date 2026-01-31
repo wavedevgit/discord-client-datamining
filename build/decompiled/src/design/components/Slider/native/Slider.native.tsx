@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Slider/native/Slider.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Slider, environment: var1
+    var1 = function arg0() {
         _fun87968: for (var _fun87968_ip = 0;;) switch (_fun87968_ip) {
             case 0:
                 var3 = arg0;

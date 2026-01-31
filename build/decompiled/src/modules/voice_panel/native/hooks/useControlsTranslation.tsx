@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/hooks/useControlsTranslation.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useControlsTranslation, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var7 = arg1;
         var5 = arg2;
         var _closure2_slot0 = var7;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var11[var1];
         var2 = var9.bind(var10)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: S, environment: var0
+        var0 = function() {
             _fun111509: for (var _fun111509_ip = 0;;) switch (_fun111509_ip) {
                 case 0:
                     var0 = {};

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/actions/StringSelectActionComponent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StringSelectActionComponent, environment: var1
+    var1 = function arg0() {
         _fun86792: for (var _fun86792_ip = 0;;) switch (_fun86792_ip) {
             case 0:
                 var6 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'selectedOptions';
                 var5[var6] = var7;
                 var0.model = var5;
-                var4 = function() { // Original name: onTap, environment: var4
+                var4 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 7;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/hang_status/isSystemStatus.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: isSystemStatus, environment: var1
+    var1 = function arg0() {
         var1 = 'string';
         var0 = arg0;
         var0 = typeof var0;

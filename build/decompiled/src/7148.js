@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var2 = dependencyMap;
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1) { // Original name: dynamicRequire, environment: var0
+    var2 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.require;
         var0 = arg1;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.dynamicRequire = var2;
-    var2 = function() { // Original name: isNodeEnv, environment: var0
+    var2 = function() {
         _fun58683: for (var _fun58683_ip = 0;;) switch (_fun58683_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isNodeEnv = var2;
-    var0 = function(arg0) { // Original name: loadModule, environment: var0
+    var0 = function arg0() {
         _fun58684: for (var _fun58684_ip = 0;;) switch (_fun58684_ip) {
             case 0:
                 var1 = arg0;

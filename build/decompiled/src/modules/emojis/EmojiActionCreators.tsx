@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.toggleGuildExpandedState = var3;
-    var1 = function(arg0) { // Original name: initiateEmojiInteraction, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

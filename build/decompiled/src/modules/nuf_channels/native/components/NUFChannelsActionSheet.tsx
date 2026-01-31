@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf_channels/native/components/NUFChannelsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NUFChannelsActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.markAsDismissed;
         var _closure2_slot0 = var0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var10.bind(var2)(var0);
         var1 = var0.BottomSheet;
         var0 = {};
-        var5 = function() { // Original name: onDismiss, environment: var5
+        var5 = function() {
             _fun91526: for (var _fun91526_ip = 0;;) switch (_fun91526_ip) {
                 case 0:
                     var2 = _closure2_slot0;

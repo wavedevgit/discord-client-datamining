@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0, arg1, arg2) { // Original name: safeJoinConsoleArgs, environment: var3
+    var1 = function arg0, arg1, arg2() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'Module';
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
-    var4 = function(arg0, arg1) { // Original name: createConsoleTemplateAttributes, environment: var3
+    var4 = function arg0, arg1() {
         var3 = arg1;
         var0 = {};
         var _closure2_slot0 = var0;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.createConsoleTemplateAttributes = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: formatConsoleArgs, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun9824: for (var _fun9824_ip = 0;;) switch (_fun9824_ip) {
             case 0:
                 var6 = arg0;
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.formatConsoleArgs = var4;
-    var3 = function(arg0) { // Original name: hasConsoleSubstitutions, environment: var3
+    var3 = function arg0() {
         var2 = /%[sdifocO]/;
         var1 = var2.test;
         var0 = arg0;

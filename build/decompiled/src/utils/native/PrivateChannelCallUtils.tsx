@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var12;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var13;
-    var3 = function(arg0) { // Original name: openGuildVoiceModal, environment: var1
+    var3 = function arg0() {
         _fun62518: for (var _fun62518_ip = 0;;) switch (_fun62518_ip) {
             case 0:
                 var2 = arg0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var12.bind(var0)(var4);
     var4 = var4.jsx;
     var _closure1_slot16 = var4;
-    var10 = function(arg0) { // Original name: getVoiceChannelKeyByChannelId, environment: var1
+    var10 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var10;
-    var9 = function(arg0) { // Original name: getVoiceChannelKey, environment: var1
+    var9 = function arg0() {
         var2 = _closure1_slot17;
         var1 = undefined;
         var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var9;
-    var8 = function(arg0) { // Original name: openChannelCallModal, environment: var1
+    var8 = function arg0() {
         _fun62521: for (var _fun62521_ip = 0;;) switch (_fun62521_ip) {
             case 0:
                 var5 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var8;
-    var7 = function(arg0, arg1) { // Original name: dismissVoiceChannelScreens, environment: var1
+    var7 = function arg0, arg1() {
         _fun62522: for (var _fun62522_ip = 0;;) switch (_fun62522_ip) {
             case 0:
                 var3 = _closure1_slot18;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var7;
-    var6 = function() { // Original name: monkeyPatchCall, environment: var1
+    var6 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var6;
-    var5 = function(arg0) { // Original name: showGuardCallAlert, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot1;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6["ETE/oC"];
         var6 = var7.bind(var8)(var6);
         var1.cancelText = var6;
-        var5 = function() { // Original name: onConfirm, environment: var5
+        var5 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var5;
-    var4 = function(arg0, arg1) { // Original name: guardPrivateCallForChannel, environment: var1
+    var4 = function arg0, arg1() {
         _fun62527: for (var _fun62527_ip = 0;;) switch (_fun62527_ip) {
             case 0:
                 var4 = arg0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var12.bind(var13)(var11);
     var2.getVoiceChannelKeyByChannelId = var10;
     var2.getVoiceChannelKey = var9;
-    var9 = function(arg0) { // Original name: isVoiceChannelModalKey, environment: var1
+    var9 = function arg0() {
         var2 = arg0;
         var1 = var2.startsWith;
         var0 = 'voice-channel';
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isVoiceChannelModalKey = var9;
     var2.openChannelCallModal = var8;
-    var8 = function(arg0) { // Original name: maybeShowAgeGateModal, environment: var1
+    var8 = function arg0() {
         _fun62531: for (var _fun62531_ip = 0;;) switch (_fun62531_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = false;
             case 20:
                 var _closure2_slot1 = var2;
-                var2 = function(arg0) { // Original name: guardAgainstCallingProvisionalAccount, environment: var1
+                var2 = function arg0() {
                     _fun62541: for (var _fun62541_ip = 0;;) switch (_fun62541_ip) {
                         case 0:
                             var4 = arg0;
@@ -1130,7 +1130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleRedesignJoinCall = var4;
     var2.openGuildVoiceModal = var3;
-    var1 = function(arg0, arg1) { // Original name: navigateToVoiceChannel, environment: var1
+    var1 = function arg0, arg1() {
         _fun62558: for (var _fun62558_ip = 0;;) switch (_fun62558_ip) {
             case 0:
                 var2 = arg0;

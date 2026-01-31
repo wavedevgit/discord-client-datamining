@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: validateSize, environment: var1
+    var0 = function arg0() {
         _fun36587: for (var _fun36587_ip = 0;;) switch (_fun36587_ip) {
             case 0:
                 var1 = arg0;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: sanitizeMedia, environment: var1
+    var0 = function arg0() {
         _fun36588: for (var _fun36588_ip = 0;;) switch (_fun36588_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: appendQueryParams, environment: var1
+    var0 = function arg0, arg1() {
         var4 = arg1;
         var _closure2_slot0 = var4;
         var2 = global;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/EmbedUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: sanitizeEmbed, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun36591: for (var _fun36591_ip = 0;;) switch (_fun36591_ip) {
             case 0:
                 var12 = arg1;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.sanitizeEmbed = var3;
-    var3 = function(arg0) { // Original name: mergeEmbedsOnURL, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var0 = global;
         var0 = var0.Map;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.mergeEmbedsOnURL = var3;
-    var3 = function(arg0) { // Original name: isEmbedInline, environment: var1
+    var3 = function arg0() {
         _fun36595: for (var _fun36595_ip = 0;;) switch (_fun36595_ip) {
             case 0:
                 var2 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEmbedInline = var3;
-    var3 = function(arg0) { // Original name: isServerShopArticleEmbed, environment: var1
+    var3 = function arg0() {
         _fun36596: for (var _fun36596_ip = 0;;) switch (_fun36596_ip) {
             case 0:
                 var2 = arg0;
@@ -784,7 +784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isServerShopArticleEmbed = var3;
-    var3 = function(arg0) { // Original name: isCollectiblesShopArticleEmbed, environment: var1
+    var3 = function arg0() {
         _fun36597: for (var _fun36597_ip = 0;;) switch (_fun36597_ip) {
             case 0:
                 var1 = arg0;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isCollectiblesShopArticleEmbed = var3;
-    var3 = function(arg0) { // Original name: isSocialLayerStorefrontArticleEmbed, environment: var1
+    var3 = function arg0() {
         _fun36598: for (var _fun36598_ip = 0;;) switch (_fun36598_ip) {
             case 0:
                 var2 = arg0;
@@ -857,7 +857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSocialLayerStorefrontArticleEmbed = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getMaxEmbedMediaSize, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun36599: for (var _fun36599_ip = 0;;) switch (_fun36599_ip) {
             case 0:
                 var3 = arg1;
@@ -914,7 +914,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMaxEmbedMediaSize = var3;
-    var3 = function(arg0, arg1) { // Original name: canEmbedLinks, environment: var1
+    var3 = function arg0, arg1() {
         _fun36600: for (var _fun36600_ip = 0;;) switch (_fun36600_ip) {
             case 0:
                 var2 = arg0;
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canEmbedLinks = var3;
-    var1 = function(arg0) { // Original name: shouldStripEmbeds, environment: var1
+    var1 = function arg0() {
         _fun36601: for (var _fun36601_ip = 0;;) switch (_fun36601_ip) {
             case 0:
                 var1 = arg0;

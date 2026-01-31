@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function(arg0) { // Original name: _toPropertyKey, environment: var1
+    var0 = function arg0() {
         _fun46563: for (var _fun46563_ip = 0;;) switch (_fun46563_ip) {
             case 0:
                 var6 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var14.createJSONStorage;
     var12 = function() { // Environment: var1
         var0 = {};
-        var2 = function(arg0) { // Original name: getItem, environment: var1
+        var2 = function arg0() {
             _fun46584: for (var _fun46584_ip = 0;;) switch (_fun46584_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.getItem = var2;
-        var2 = function(arg0, arg1) { // Original name: setItem, environment: var1
+        var2 = function arg0, arg1() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 4;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setItem = var2;
-        var1 = function(arg0) { // Original name: removeItem, environment: var1
+        var1 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 4;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var12 = var13.bind(var14)(var12);
     var8.storage = var12;
-    var12 = function(arg0) { // Original name: partialize, environment: var1
+    var12 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.volume;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = {};
         var0.videoProgress = var2;
-        var2 = function(arg0) { // Original name: setVolume, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setVolume = var2;
-        var2 = function(arg0) { // Original name: setMuted, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setMuted = var2;
-        var2 = function(arg0, arg1, arg2) { // Original name: setVideoProgress, environment: var1
+        var2 = function arg0, arg1, arg2() {
             _fun46569: for (var _fun46569_ip = 0;;) switch (_fun46569_ip) {
                 case 0:
                     var3 = arg0;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.setVideoProgress = var2;
-        var2 = function(arg0) { // Original name: setTranscriptEnabled, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setTranscriptEnabled = var2;
-        var2 = function(arg0) { // Original name: setCaptionEnabled, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setCaptionEnabled = var2;
-        var2 = function(arg0) { // Original name: setFullScreenEnabled, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setFullScreenEnabled = var2;
-        var2 = function(arg0) { // Original name: getVideoProgress, environment: var1
+        var2 = function arg0() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.getVideoProgress = var2;
-        var2 = function(arg0) { // Original name: getVideoProgressState, environment: var1
+        var2 = function arg0() {
             _fun46578: for (var _fun46578_ip = 0;;) switch (_fun46578_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.getVideoProgressState = var2;
-        var2 = function(arg0) { // Original name: resetQuest, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.resetQuest = var2;
-        var1 = function(arg0) { // Original name: setTranscriptAsset, environment: var1
+        var1 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;

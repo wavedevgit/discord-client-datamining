@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: InternalTextInput, environment: var4
+    var0 = function arg0() {
         _fun5834: for (var _fun5834_ip = 0;;) switch (_fun5834_ip) {
             case 0:
                 var11 = arg0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9.selection = var6;
                 var9.text = var12;
                 var9.viewCommands = var1;
-                var6 = function(arg0) { // Original name: useTextInputStateSynchronization, environment: var15
+                var6 = function arg0() {
                     var1 = arg0;
                     var11 = var1.props;
                     var _closure3_slot0 = var11;
@@ -412,7 +412,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var0.Object;
                             var1 = var2.assign;
                             var0 = {};
-                            var5 = function() { // Original name: clear, environment: var4
+                            var5 = function() {
                                 _fun5840: for (var _fun5840_ip = 0;;) switch (_fun5840_ip) {
                                     case 0:
                                         var1 = _closure2_slot1;
@@ -439,7 +439,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var0.clear = var5;
-                            var5 = function() { // Original name: isFocused, environment: var4
+                            var5 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot1;
                                 var0 = 5;
@@ -454,13 +454,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.isFocused = var5;
-                            var5 = function() { // Original name: getNativeRef, environment: var4
+                            var5 = function() {
                                 var0 = _closure2_slot1;
                                 var0 = var0.current;
                                 return var0;
                             };
                             var0.getNativeRef = var5;
-                            var4 = function(arg0, arg1) { // Original name: setSelection, environment: var4
+                            var4 = function arg0, arg1() {
                                 _fun5843: for (var _fun5843_ip = 0;;) switch (_fun5843_ip) {
                                     case 0:
                                         var1 = _closure2_slot1;
@@ -592,7 +592,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var2 = _closure2_slot8;
                     var0.hitSlop = var2;
-                    var2 = function(arg0) { // Original name: onPress, environment: var2
+                    var2 = function arg0() {
                         _fun5845: for (var _fun5845_ip = 0;;) switch (_fun5845_ip) {
                             case 0:
                                 var1 = _closure2_slot9;
@@ -1040,7 +1040,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var16 = var11.numberOfLines;
             case 1462:
                 var1.numberOfLines = var16;
-                var16 = function(arg0) { // Original name: _onBlur, environment: var15
+                var16 = function arg0() {
                     _fun5846: for (var _fun5846_ip = 0;;) switch (_fun5846_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -1069,7 +1069,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.onBlur = var16;
-                var16 = function(arg0) { // Original name: _onChange, environment: var15
+                var16 = function arg0() {
                     _fun5847: for (var _fun5847_ip = 0;;) switch (_fun5847_ip) {
                         case 0:
                             var0 = arg0;
@@ -1118,7 +1118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.onChange = var16;
-                var16 = function(arg0) { // Original name: _onFocus, environment: var15
+                var16 = function arg0() {
                     _fun5848: for (var _fun5848_ip = 0;;) switch (_fun5848_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -1147,7 +1147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.onFocus = var16;
-                var16 = function(arg0) { // Original name: _onScroll, environment: var15
+                var16 = function arg0() {
                     _fun5849: for (var _fun5849_ip = 0;;) switch (_fun5849_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -1167,7 +1167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.onScroll = var16;
-                var15 = function(arg0) { // Original name: _onSelectionChange, environment: var15
+                var15 = function arg0() {
                     _fun5850: for (var _fun5850_ip = 0;;) switch (_fun5850_ip) {
                         case 0:
                             var3 = arg0;
@@ -1341,7 +1341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'username': 'username'
     };
     var _closure1_slot18 = var1;
-    var1 = function(arg0) { // Original name: TextInput, environment: var4
+    var1 = function arg0() {
         _fun5851: for (var _fun5851_ip = 0;;) switch (_fun5851_ip) {
             case 0:
                 var4 = arg0;

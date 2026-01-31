@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getSourceFromURI, environment: var1
+    var0 = function arg0() {
         _fun111288: for (var _fun111288_ip = 0;;) switch (_fun111288_ip) {
             case 0:
                 var2 = arg0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VoicePanelCTACardCallerDisconnected, environment: var1
+    var1 = function() {
         _fun111289: for (var _fun111289_ip = 0;;) switch (_fun111289_ip) {
             case 0:
                 var4 = _closure1_slot4;

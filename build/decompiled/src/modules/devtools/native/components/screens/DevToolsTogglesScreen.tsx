@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: fuzzySearchToggle, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun86748: for (var _fun86748_ip = 0;;) switch (_fun86748_ip) {
             case 0:
                 var3 = arg0;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: ToggleTableRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.toggleName;
         var _closure2_slot0 = var4;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.labelLineClamp = var11;
         var0.subLabel = var4;
         var0.subLabelLineClamp = var11;
-        var7 = function() { // Original name: onPress, environment: var7
+        var7 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 10;
@@ -107,14 +107,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: DevTogglesForCategory, environment: var1
+    var0 = function arg0() {
         _fun86751: for (var _fun86751_ip = 0;;) switch (_fun86751_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.category;
                 var6 = var0.title;
                 var1 = var0.query;
-                var0 = function(arg0, arg1) { // Original name: useFilteredDevTogglesForCategory, environment: var5
+                var0 = function arg0, arg1() {
                     var9 = arg0;
                     var10 = arg1;
                     var _closure3_slot0 = var9;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.toggleName = var3;
                             var4.description = var10;
                             var4.value = var9;
-                            var8 = function(arg0) { // Original name: onValueChange, environment: var8
+                            var8 = function arg0() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 14;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsTogglesScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsTogglesScreen, environment: var1
+    var1 = function() {
         _fun86757: for (var _fun86757_ip = 0;;) switch (_fun86757_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'onPress': null,
                     'arrow': true
                 };
-                var18 = function() { // Original name: onPress, environment: var8
+                var18 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 17;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.toggleName = var3;
                             var0.description = var7;
                             var0.value = var6;
-                            var5 = function(arg0) { // Original name: onValueChange, environment: var5
+                            var5 = function arg0() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 17;

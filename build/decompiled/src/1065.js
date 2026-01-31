@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function() { // Original name: instrumentXHR, environment: var3
+    var1 = function() {
         _fun10921: for (var _fun10921_ip = 0;;) switch (_fun10921_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var1.Proxy;
                 var9 = var2.open;
                 var4 = {};
-                var5 = function(arg0, arg1, arg2) { // Original name: apply, environment: var3
+                var5 = function arg0, arg1, arg2() {
                     _fun10922: for (var _fun10922_ip = 0;;) switch (_fun10922_ip) {
                         case 0:
                             var3 = arg0;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var5 = true;
                             var2.__sentry_own_request__ = var5;
                         case 296:
-                            var7 = function() { // Original name: onreadystatechangeHandler, environment: var4
+                            var7 = function() {
                                 _fun10923: for (var _fun10923_ip = 0;;) switch (_fun10923_ip) {
                                     case 0:
                                         var0 = undefined;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var8 = var0.Proxy;
                             var14 = var2.onreadystatechange;
                             var5 = {};
-                            var6 = function(arg0, arg1, arg2) { // Original name: apply, environment: var4
+                            var6 = function arg0, arg1, arg2() {
                                 var3 = arg0;
                                 var1 = _closure3_slot3;
                                 var0 = undefined;
@@ -250,7 +250,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var0.Proxy;
                             var14 = var2.setRequestHeader;
                             var0 = {};
-                            var4 = function(arg0, arg1, arg2) { // Original name: apply, environment: var4
+                            var4 = function arg0, arg1, arg2() {
                                 _fun10925: for (var _fun10925_ip = 0;;) switch (_fun10925_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -338,7 +338,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var1.Proxy;
                 var9 = var2.send;
                 var1 = {};
-                var3 = function(arg0, arg1, arg2) { // Original name: apply, environment: var3
+                var3 = function arg0, arg1, arg2() {
                     _fun10926: for (var _fun10926_ip = 0;;) switch (_fun10926_ip) {
                         case 0:
                             var3 = arg0;
@@ -422,7 +422,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = '__sentry_xhr_v3__';
     var _closure1_slot3 = var4;
     var2.SENTRY_XHR_DATA_KEY = var4;
-    var3 = function(arg0) { // Original name: addXhrInstrumentationHandler, environment: var3
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var5 = _closure1_slot1;
         var2 = 1;

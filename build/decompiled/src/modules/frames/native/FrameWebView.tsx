@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/frames/native/FrameWebView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FrameWebView, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var5 = var2.applicationId;
         var _closure2_slot0 = var5;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var3)(var0);
         var1 = var0.BaseActivityWebView;
         var0 = {};
-        var10 = function() { // Original name: hasFrameId, environment: var9
+        var10 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 3;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.hasFrameId = var10;
-        var10 = function() { // Original name: getOrCreateFrameId, environment: var9
+        var10 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 3;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.getOrCreateFrameId = var10;
-        var9 = function() { // Original name: releaseFrameId, environment: var9
+        var9 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 3;

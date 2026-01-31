@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/ApplicationInteractionInfoUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: canViewInteractionInfo, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.interactionMetadata;
         var0 = null;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.canViewInteractionInfo = var3;
-    var1 = function(arg0) { // Original name: isPrimaryEntryPointCommandMessage, environment: var1
+    var1 = function arg0() {
         _fun56144: for (var _fun56144_ip = 0;;) switch (_fun56144_ip) {
             case 0:
                 var3 = arg0;

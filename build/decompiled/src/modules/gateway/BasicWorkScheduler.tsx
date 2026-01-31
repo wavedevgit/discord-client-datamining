@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: BasicWorkScheduler, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_trackAppBackgrounded';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun94610: for (var _fun94610_ip = 0;;) switch (_fun94610_ip) {
                 case 0:
                     var0 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_queueIdleCallback';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_clearIdleCallback';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_hasExceededMaxConsecutiveFlushes';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0._consecutiveFlushesBeforeQueueEmpty;
             var0 = _closure1_slot5;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_processWorkCallback';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94614: for (var _fun94614_ip = 0;;) switch (_fun94614_ip) {
                 case 0:
                     var1 = this;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'markCriticalWorkScheduled';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun94615: for (var _fun94615_ip = 0;;) switch (_fun94615_ip) {
                 case 0:
                     var1 = this;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toggleRequestIdleCallback';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94616: for (var _fun94616_ip = 0;;) switch (_fun94616_ip) {
                 case 0:
                     var0 = arg0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isBackgrounded';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._isBackgrounded;
             return var0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasWorkScheduled';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun94618: for (var _fun94618_ip = 0;;) switch (_fun94618_ip) {
                 case 0:
                     var1 = this;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isRequestIdleCallbackEnabled';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._enableRequestIdleCallback;
             return var0;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearWorkTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun94620: for (var _fun94620_ip = 0;;) switch (_fun94620_ip) {
                 case 0:
                     var1 = this;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'requestWorkTimeout';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun94621: for (var _fun94621_ip = 0;;) switch (_fun94621_ip) {
                 case 0:
                     var3 = arguments[1];

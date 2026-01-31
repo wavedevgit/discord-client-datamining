@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: getMemberSupplementalByGuildId, environment: var1
+    var3 = function arg0() {
         _fun40417: for (var _fun40417_ip = 0;;) switch (_fun40417_ip) {
             case 0:
                 var1 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: hasMemberSupplemental, environment: var1
+    var4 = function arg0, arg1() {
         _fun40418: for (var _fun40418_ip = 0;;) switch (_fun40418_ip) {
             case 0:
                 var3 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasMemberSupplemental = var4;
     var2.getMemberSupplementalByGuildId = var3;
-    var1 = function(arg0, arg1) { // Original name: syncMemberSupplemental, environment: var1
+    var1 = function arg0, arg1() {
         _fun40419: for (var _fun40419_ip = 0;;) switch (_fun40419_ip) {
             case 0:
                 var2 = arg1;

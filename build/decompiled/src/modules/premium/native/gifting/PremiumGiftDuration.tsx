@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PremiumGiftDurationButton, environment: var1
+    var0 = function arg0() {
         _fun75243: for (var _fun75243_ip = 0;;) switch (_fun75243_ip) {
             case 0:
                 var0 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.children = var11;
                 var8 = var10.bind(var3)(var9, var8);
                 var4.trailing = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gifting/PremiumGiftDuration.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PremiumGiftDuration, environment: var1
+    var1 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var9 = var0.bind(var3)();

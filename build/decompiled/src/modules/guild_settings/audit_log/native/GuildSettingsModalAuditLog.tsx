@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/audit_log/native/GuildSettingsModalAuditLog.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedGuildSettingsModalAuditLog, environment: var1
+    var1 = function arg0() {
         _fun114721: for (var _fun114721_ip = 0;;) switch (_fun114721_ip) {
             case 0:
                 var1 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4["hxnY/q"];
                     var4 = var8.bind(var9)(var4);
                     var5.label = var4;
-                    var4 = function() { // Original name: onPress, environment: var6
+                    var4 = function() {
                         _fun114728: for (var _fun114728_ip = 0;;) switch (_fun114728_ip) {
                             case 0:
                                 var4 = _closure2_slot2;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.rautds;
                     var7 = var8.bind(var9)(var7);
                     var5.label = var7;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var4 = _closure2_slot2;
                         var3 = var4.push;
                         var1 = _closure1_slot14;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 132:
                             var10[1] = var11;
                             var1.containerStyle = var10;
-                            var10 = function(arg0) { // Original name: onHeaderClick, environment: var10
+                            var10 = function arg0() {
                                 _fun114731: for (var _fun114731_ip = 0;;) switch (_fun114731_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot2;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot16;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot3;
@@ -779,14 +779,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.contentContainerStyle = var22;
                 var14.data = var21;
                 var14.extraData = var20;
-                var20 = function(arg0) { // Original name: keyExtractor, environment: var17
+                var20 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
                 };
                 var14.keyExtractor = var20;
                 var14.renderItem = var19;
-                var17 = function() { // Original name: onEndReached, environment: var17
+                var17 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 20;

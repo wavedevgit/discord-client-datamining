@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun41498: for (var _fun41498_ip = 0;;) switch (_fun41498_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var3 = function(arg0) { // Original name: handleChange, environment: var1
+    var3 = function arg0() {
         _fun41501: for (var _fun41501_ip = 0;;) switch (_fun41501_ip) {
             case 0:
                 var0 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var5.bind(var0)(var6);
     var6 = var6.PersistedStore;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ChannelListVoiceCategoryStore, environment: var5
+        var3 = function() {
             _fun41503: for (var _fun41503_ip = 0;;) switch (_fun41503_ip) {
                 case 0:
                     var3 = this;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun41504: for (var _fun41504_ip = 0;;) switch (_fun41504_ip) {
                 case 0:
                     var1 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVoiceCategoryExpanded';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41505: for (var _fun41505_ip = 0;;) switch (_fun41505_ip) {
                 case 0:
                     var3 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVoiceCategoryCollapsed';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var1 = var2.isVoiceCategoryExpanded;
             var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot5;
             return var0;
         };

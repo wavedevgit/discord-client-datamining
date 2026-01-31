@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/emoji/CustomEmojiContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun74013: for (var _fun74013_ip = 0;;) switch (_fun74013_ip) {
             case 0:
                 var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot14 = var3;
                 var _closure2_slot15 = var3;
                 var _closure2_slot16 = var3;
-                var0 = function() { // Original name: closeActionSheet, environment: var10
+                var0 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot3;
                     var0 = 14;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.shouldHideRoleSubscriptionCTA = var19;
                 var1.emojiComesFromCurrentGuild = var15;
                 var1.isDiscoverable = var9;
-                var15 = function() { // Original name: onOpenPremiumSettings, environment: var10
+                var15 = function() {
                     var1 = _closure2_slot4;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var35 = var1.emojiDescription;
                 var11 = var1.type;
                 _closure2_slot12 = var11;
-                var1 = function(arg0) { // Original name: renderStarIcon, environment: var10
+                var1 = function arg0() {
                     _fun74019: for (var _fun74019_ip = 0;;) switch (_fun74019_ip) {
                         case 0:
                             var0 = arg0;
@@ -610,13 +610,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 _closure2_slot13 = var1;
-                var15 = function() { // Original name: handleAddRemoveFavorite, environment: var10
+                var15 = function() {
                     _fun74020: for (var _fun74020_ip = 0;;) switch (_fun74020_ip) {
                         case 0:
                             var1 = _closure2_slot4;
                             var0 = undefined;
                             var1 = var1.bind(var0)();
-                            var4 = function() { // Original name: content, environment: var5
+                            var4 = function() {
                                 _fun74021: for (var _fun74021_ip = 0;;) switch (_fun74021_ip) {
                                     case 0:
                                         var3 = _closure1_slot14;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = {};
                             var10 = 'EMOJI_FAVORITED';
                             var6.key = var10;
-                            var10 = function() { // Original name: icon, environment: var5
+                            var10 = function() {
                                 var2 = _closure2_slot13;
                                 var1 = {};
                                 var0 = true;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var6 = 'EMOJI_UNFAVORITED';
                             var1.key = var6;
-                            var5 = function() { // Original name: icon, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot13;
                                 var1 = {};
                                 var0 = false;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EmojiPopoutType;
                 var1 = var1.JOIN_GUILD;
                 var24 = var11 === var1;
-                var1 = function() { // Original name: renderNitroWheel, environment: var10
+                var1 = function() {
                     _fun74025: for (var _fun74025_ip = 0;;) switch (_fun74025_ip) {
                         case 0:
                             var0 = arguments[0];
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var30.accessibilityLabel = var33;
                 var33 = var13.moreMenuIcon;
                 var30.style = var33;
-                var33 = function() { // Original name: handleOpenEmojiOptionsMenu, environment: var10
+                var33 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var20.BRAND;
                 var11.color = var20;
                 var11.size = var19;
-                var19 = function() { // Original name: onPress, environment: var10
+                var19 = function() {
                     _fun74028: for (var _fun74028_ip = 0;;) switch (_fun74028_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -1184,7 +1184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun74013_ip = 2141;
                 continue _fun74013;
             case 2130:
-                var10 = function() { // Original name: renderPremiumUpsellButton, environment: var10
+                var10 = function() {
                     _fun74026: for (var _fun74026_ip = 0;;) switch (_fun74026_ip) {
                         case 0:
                             var3 = _closure2_slot12;
@@ -1223,7 +1223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.color = var6;
                             var5 = _closure2_slot16;
                             var1.size = var5;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 _fun74027: for (var _fun74027_ip = 0;;) switch (_fun74027_ip) {
                                     case 0:
                                         var6 = _closure2_slot6;

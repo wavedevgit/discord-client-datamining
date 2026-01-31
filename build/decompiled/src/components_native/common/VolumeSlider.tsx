@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'components_native/common/VolumeSlider.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: _default, environment: var1
+            var1 = function arg0() {
                 _fun67982: for (var _fun67982_ip = 0;;) switch (_fun67982_ip) {
                     case 0:
                         var0 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var10.xPHVBs;
                         var10 = var12.bind(var13)(var10);
                         var5.accessibilityLabel = var10;
-                        var10 = function(arg0) { // Original name: onValueChange, environment: var11
+                        var10 = function arg0() {
                             var2 = _closure2_slot0;
                             var3 = _closure1_slot0;
                             var1 = _closure1_slot2;

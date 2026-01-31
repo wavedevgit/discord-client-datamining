@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/CreationIntent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CreationIntent, environment: var1
+    var1 = function arg0() {
         _fun80147: for (var _fun80147_ip = 0;;) switch (_fun80147_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var0;
                 var3 = undefined;
                 var _closure2_slot2 = var3;
-                var1 = function(arg0) { // Original name: onPress, environment: var15
+                var1 = function arg0() {
                     _fun80148: for (var _fun80148_ip = 0;;) switch (_fun80148_ip) {
                         case 0:
                             var9 = arg0;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.h9Q1lG;
                 var9 = var24.bind(var25)(var9);
                 var12.message = var9;
-                var9 = function() { // Original name: onPress, environment: var15
+                var9 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = true;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var26.uE7zcu;
                 var26 = var27.bind(var28)(var26);
                 var24.message = var26;
-                var26 = function() { // Original name: onPress, environment: var15
+                var26 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = false;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var23.uE7zcu;
                 var23 = var24.bind(var25)(var23);
                 var12.message = var23;
-                var23 = function() { // Original name: onPress, environment: var15
+                var23 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = false;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.h9Q1lG;
                 var19 = var20.bind(var21)(var19);
                 var14.message = var19;
-                var19 = function() { // Original name: onPress, environment: var15
+                var19 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = true;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var12 = var11["SMc+Gz"];
                 var11 = {};
-                var15 = function() { // Original name: onSkip, environment: var15
+                var15 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = null;

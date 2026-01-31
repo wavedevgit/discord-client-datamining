@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun86960: for (var _fun86960_ip = 0;;) switch (_fun86960_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.SKUProductLines;
     var _closure1_slot9 = var6;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: WishlistRecord, environment: var0
+        var4 = function arg0() {
             _fun86964: for (var _fun86964_ip = 0;;) switch (_fun86964_ip) {
                 case 0:
                     var2 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'getSkuIds';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = this;
             var2 = var0.items;
             var1 = var2.map;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'hasSkuId';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = this;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getProductLines';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = global;
             var2 = var0.Set;
             var0 = this;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'fromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun86971: for (var _fun86971_ip = 0;;) switch (_fun86971_ip) {
                 case 0:
                     var2 = arg0;

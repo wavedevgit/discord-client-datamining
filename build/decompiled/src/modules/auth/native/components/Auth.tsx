@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: NavigatorWithCaptchaHook, environment: var3
+    var0 = function() {
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;
         var0 = 5;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var7)(var1);
     var _closure1_slot8 = var1;
     var4 = var7.memo;
-    var3 = function() { // Original name: Auth, environment: var3
+    var3 = function() {
         var5 = _closure1_slot3;
         var3 = var5.useEffect;
         var2 = function() { // Environment: var0

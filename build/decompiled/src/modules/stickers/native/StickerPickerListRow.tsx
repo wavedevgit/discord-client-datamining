@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stickers/native/StickerPickerListRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StickerPickerListRow, environment: var1
+    var1 = function arg0() {
         _fun74319: for (var _fun74319_ip = 0;;) switch (_fun74319_ip) {
             case 0:
                 var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.useSetting;
                 var0 = var0.bind(var4)();
                 _closure2_slot7 = var0;
-                var0 = function(arg0) { // Original name: handleOnPressSticker, environment: var5
+                var0 = function arg0() {
                     _fun74320: for (var _fun74320_ip = 0;;) switch (_fun74320_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 _closure2_slot8 = var0;
-                var0 = function(arg0) { // Original name: handleOnLongPressSticker, environment: var5
+                var0 = function arg0() {
                     _fun74321: for (var _fun74321_ip = 0;;) switch (_fun74321_ip) {
                         case 0:
                             var2 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 _closure2_slot9 = var0;
-                var13 = function(arg0) { // Original name: rowTraits, environment: var5
+                var13 = function arg0() {
                     _fun74322: for (var _fun74322_ip = 0;;) switch (_fun74322_ip) {
                         case 0:
                             var8 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 251:
                 _closure2_slot11 = var0;
-                var4 = function() { // Original name: _loop, environment: var5
+                var4 = function() {
                     _fun74323: for (var _fun74323_ip = 0;;) switch (_fun74323_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var14.stickerImage;
                             var4.style = var14;
                             var4.disabled = var10;
-                            var10 = function() { // Original name: onPress, environment: var9
+                            var10 = function() {
                                 var2 = _closure2_slot8;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var4.onPress = var10;
-                            var9 = function() { // Original name: onLongPress, environment: var9
+                            var9 = function() {
                                 var2 = _closure2_slot9;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6;
                 var7.items = var8;
                 var0.rowData = var7;
-                var7 = function(arg0) { // Original name: onPressSticker, environment: var5
+                var7 = function arg0() {
                     _fun74326: for (var _fun74326_ip = 0;;) switch (_fun74326_ip) {
                         case 0:
                             var0 = arg0;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.onPressSticker = var7;
-                var7 = function(arg0) { // Original name: onLongPressSticker, environment: var5
+                var7 = function arg0() {
                     _fun74328: for (var _fun74328_ip = 0;;) switch (_fun74328_ip) {
                         case 0:
                             var0 = arg0;

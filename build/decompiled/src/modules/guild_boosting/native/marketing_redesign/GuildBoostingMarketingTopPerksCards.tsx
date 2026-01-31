@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var3 = {};
-    var6 = function() { // Original name: getHeadingCopy, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getHeadingCopy = var6;
-    var6 = function() { // Original name: getBodyCopy, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getBodyCopy = var6;
-    var6 = function(arg0) { // Original name: getGraphic, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot3;
         var1 = {};
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = new Array(3);
     var7[0] = var3;
     var3 = {};
-    var6 = function() { // Original name: getHeadingCopy, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getHeadingCopy = var6;
-    var6 = function() { // Original name: getBodyCopy, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getBodyCopy = var6;
-    var6 = function(arg0) { // Original name: getGraphic, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot1;
         var7 = _closure1_slot2;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.getGraphic = var6;
     var7[1] = var3;
     var3 = {};
-    var6 = function() { // Original name: getHeadingCopy, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getHeadingCopy = var6;
-    var6 = function() { // Original name: getBodyCopy, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getBodyCopy = var6;
-    var6 = function(arg0) { // Original name: getGraphic, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot3;
         var1 = {};
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildBoostingMarketingTopPerksCards, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var10 = var0.bind(var3)();

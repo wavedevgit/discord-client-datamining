@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun60300: for (var _fun60300_ip = 0;;) switch (_fun60300_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.Store;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: InitialMemberVerificationStore, environment: var0
+        var3 = function() {
             _fun60304: for (var _fun60304_ip = 0;;) switch (_fun60304_ip) {
                 case 0:
                     var3 = this;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'getInitialVerificationState';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun60305: for (var _fun60305_ip = 0;;) switch (_fun60305_ip) {
                 case 0:
                     var4 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var4.bind(var0)(var3);
     var3 = {};
-    var4 = function(arg0) { // Original name: handleSetInitialState, environment: var1
+    var4 = function arg0() {
         _fun60306: for (var _fun60306_ip = 0;;) switch (_fun60306_ip) {
             case 0:
                 var0 = arg0;

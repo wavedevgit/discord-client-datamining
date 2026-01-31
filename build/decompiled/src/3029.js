@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24445: for (var _fun24445_ip = 0;;) switch (_fun24445_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.weekdaysParseExact = var4;
                 var4 = /sa|ch/i;
                 var1.meridiemParse = var4;
-                var4 = function(arg0) { // Original name: isPM, environment: var0
+                var4 = function arg0() {
                     var2 = /^ch$/i;
                     var1 = var2.test;
                     var0 = arg0;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.isPM = var4;
-                var4 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var0
+                var4 = function arg0, arg1, arg2() {
                     _fun24448: for (var _fun24448_ip = 0;;) switch (_fun24448_ip) {
                         case 0:
                             var2 = arg2;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.relativeTime = var4;
                 var4 = /\d{1,2}/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function(arg0) { // Original name: ordinal, environment: var0
+                var0 = function arg0() {
                     var0 = arg0;
                     return var0;
                 };

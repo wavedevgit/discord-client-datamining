@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/calls/stream/StreamReportProblemActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ReportProblem, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.stream;
         var _closure2_slot0 = var2;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.label = var5;
             var5 = true;
             var1.arrow = var5;
-            var0 = function() { // Original name: onPress, environment: var0
+            var0 = function() {
                 var1 = _closure3_slot0;
                 var4 = _closure1_slot1;
                 var3 = _closure1_slot2;

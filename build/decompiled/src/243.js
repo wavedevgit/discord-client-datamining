@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = var9.registerComponent;
     var7 = 'LogBox';
     var5 = function() { // Environment: var5
-        var0 = function() { // Original name: NoOp, environment: var0
+        var0 = function() {
             var0 = null;
             return var0;
         };

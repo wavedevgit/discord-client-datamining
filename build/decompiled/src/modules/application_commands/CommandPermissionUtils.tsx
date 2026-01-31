@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun92927: for (var _fun92927_ip = 0;;) switch (_fun92927_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun92929: for (var _fun92929_ip = 0;;) switch (_fun92929_ip) {
             case 0:
                 var3 = arg0;
@@ -250,21 +250,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: isExplicitAllow, environment: var4
+    var0 = function arg0() {
         var1 = true;
         var0 = arg0;
         var0 = var1 === var0;
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: isExplicitDeny, environment: var4
+    var0 = function arg0() {
         var1 = false;
         var0 = arg0;
         var0 = var1 === var0;
         return var0;
     };
     var _closure1_slot12 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: computeAllowedForChannel, environment: var4
+    var3 = function arg0, arg1, arg2() {
         _fun92932: for (var _fun92932_ip = 0;;) switch (_fun92932_ip) {
             case 0:
                 var3 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: computeAllowedForUser, environment: var4
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun92933: for (var _fun92933_ip = 0;;) switch (_fun92933_ip) {
             case 0:
                 var4 = arg0;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/application_commands/CommandPermissionUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.HasAccessResult = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: hasAccess, environment: var4
+    var4 = function arg0, arg1, arg2() {
         _fun92934: for (var _fun92934_ip = 0;;) switch (_fun92934_ip) {
             case 0:
                 var2 = arg0;

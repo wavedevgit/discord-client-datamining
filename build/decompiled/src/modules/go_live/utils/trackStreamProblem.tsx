@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/go_live/utils/trackStreamProblem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: trackStreamProblem, environment: var1
+    var1 = function arg0() {
         _fun68571: for (var _fun68571_ip = 0;;) switch (_fun68571_ip) {
             case 0:
                 var1 = arg0;

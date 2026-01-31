@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = arg1;
                 var1 = function() { // Environment: var0
                     var0 = {};
-                    var1 = function() { // Original name: play, environment: var1
+                    var1 = function() {
                         var1 = _closure2_slot10;
                         var0 = undefined;
                         var0 = var1.bind(var0)();

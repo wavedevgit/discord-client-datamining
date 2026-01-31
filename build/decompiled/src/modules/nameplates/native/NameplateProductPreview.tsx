@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.memberListGradient = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: NameplateUser, environment: var1
+    var3 = function arg0() {
         _fun87124: for (var _fun87124_ip = 0;;) switch (_fun87124_ip) {
             case 0:
                 var0 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: PlaceholderUser, environment: var1
+    var3 = function arg0() {
         _fun87127: for (var _fun87127_ip = 0;;) switch (_fun87127_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nameplates/native/NameplateProductPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun87128: for (var _fun87128_ip = 0;;) switch (_fun87128_ip) {
             case 0:
                 var0 = _closure1_slot9;

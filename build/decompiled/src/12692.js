@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var5[var1];
     var1 = require;
     var5 = var1.bind(var0)(var5);
-    var1 = function(arg0, arg1) { // Original name: _interopRequireWildcard, environment: var3
+    var1 = function arg0, arg1() {
         _fun97431: for (var _fun97431_ip = 0;;) switch (_fun97431_ip) {
             case 0:
                 var3 = arg0;
@@ -230,7 +230,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var6 = true;
                 var0.enumerable = var6;
-                var5 = function() { // Original name: get, environment: var5
+                var5 = function() {
                     var1 = _closure1_slot2;
                     var0 = _closure2_slot0;
                     var0 = var1[var0];

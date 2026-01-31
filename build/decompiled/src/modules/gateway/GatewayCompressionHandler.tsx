@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun94667: for (var _fun94667_ip = 0;;) switch (_fun94667_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun94669: for (var _fun94669_ip = 0;;) switch (_fun94669_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun94670: for (var _fun94670_ip = 0;;) switch (_fun94670_ip) {
             case 0:
                 var3 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun94671: for (var _fun94671_ip = 0;;) switch (_fun94671_ip) {
             case 0:
             case 2: // try_start_0
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var7;
     var3 = function() { // Environment: var1
         var4 = _closure1_slot7;
-        var3 = function(arg0) { // Original name: BaseGatewayCompressionHandler, environment: var1
+        var3 = function arg0() {
             var2 = this;
             var3 = _closure1_slot6;
             var1 = _closure2_slot0;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'bindWebSocket';
         var0.key = var2;
-        var2 = function() { // Original name: value, environment: var1
+        var2 = function() {
             var0 = undefined;
             return var0;
         };
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'feed';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'dataReady';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var1
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._onDataReady = var1;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'canUse';
         var0.key = var5;
-        var1 = function() { // Original name: value, environment: var1
+        var1 = function() {
             var0 = false;
             return var0;
         };
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.bind(var0)();
     var8 = var7.push;
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: DesktopZstdGatewayCompressionHandler, environment: var0
+        var4 = function arg0() {
             _fun94681: for (var _fun94681_ip = 0;;) switch (_fun94681_ip) {
                 case 0:
                     var5 = this;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'getAlgorithm';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = 'zstd-stream';
             return var0;
         };
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'usesLegacyCompression';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'feed';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun94684: for (var _fun94684_ip = 0;;) switch (_fun94684_ip) {
                 case 0:
                     var4 = arg0;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'close';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'canUse';
         var5.key = var6;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = false;
             return var0;
         };
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var8.bind(var7)(var3);
     var8 = var7.push;
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: PakoStreamGatewayCompressionHandler, environment: var0
+        var4 = function arg0() {
             _fun94688: for (var _fun94688_ip = 0;;) switch (_fun94688_ip) {
                 case 0:
                     var5 = this;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'getAlgorithm';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = 'zlib-stream';
             return var0;
         };
@@ -692,7 +692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'usesLegacyCompression';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'feed';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun94691: for (var _fun94691_ip = 0;;) switch (_fun94691_ip) {
                 case 0:
                     var3 = arg0;
@@ -819,7 +819,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'close';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun94692: for (var _fun94692_ip = 0;;) switch (_fun94692_ip) {
                 case 0:
                     var1 = this;
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'handleFlushEnd';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun94693: for (var _fun94693_ip = 0;;) switch (_fun94693_ip) {
                 case 0:
                     var5 = arg0;
@@ -1020,7 +1020,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'canUse';
         var5.key = var6;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = false;
             return var0;
         };
@@ -1034,7 +1034,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var8.bind(var7)(var3);
     var8 = var7.push;
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: PakoGatewayCompressionHandler, environment: var0
+        var4 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -1066,7 +1066,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'getAlgorithm';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = null;
             return var0;
         };
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'usesLegacyCompression';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = true;
             return var0;
         };
@@ -1085,7 +1085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'feed';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun94699: for (var _fun94699_ip = 0;;) switch (_fun94699_ip) {
                 case 0:
                     var6 = arg0;
@@ -1146,7 +1146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'close';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -1155,7 +1155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'canUse';
         var5.key = var6;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = false;
             return var0;
         };
@@ -1169,7 +1169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var8.bind(var7)(var3);
     var8 = var7.push;
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: MobileGatewayCompressionHandler, environment: var0
+        var4 = function arg0() {
             var4 = this;
             var1 = _closure1_slot6;
             var3 = _closure2_slot0;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'bindWebSocket';
         var5.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var0
+        var1 = function arg0() {
             _fun94704: for (var _fun94704_ip = 0;;) switch (_fun94704_ip) {
                 case 0:
                     var1 = this;
@@ -1302,7 +1302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getAlgorithm';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun94705: for (var _fun94705_ip = 0;;) switch (_fun94705_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -1329,7 +1329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'usesLegacyCompression';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -1338,7 +1338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'feed';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun94707: for (var _fun94707_ip = 0;;) switch (_fun94707_ip) {
                 case 0:
                     var2 = arg0;
@@ -1381,7 +1381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'close';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun94708: for (var _fun94708_ip = 0;;) switch (_fun94708_ip) {
                 case 0:
                     var0 = this;
@@ -1441,7 +1441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'canUse';
         var5.key = var6;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun94709: for (var _fun94709_ip = 0;;) switch (_fun94709_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -1485,7 +1485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var0)(var6);
     var3 = var8.bind(var7)(var3);
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: NullGatewayCompressionHandler, environment: var0
+        var4 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -1506,7 +1506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'getAlgorithm';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = null;
             return var0;
         };
@@ -1516,7 +1516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'usesLegacyCompression';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = false;
             return var0;
         };
@@ -1525,7 +1525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'feed';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun94714: for (var _fun94714_ip = 0;;) switch (_fun94714_ip) {
                 case 0:
                     var2 = this;
@@ -1562,7 +1562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'close';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -1571,7 +1571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'canUse';
         var5.key = var6;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = true;
             return var0;
         };
@@ -1591,7 +1591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gateway/GatewayCompressionHandler.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getCompressionHandler, environment: var1
+    var1 = function arg0() {
         _fun94717: for (var _fun94717_ip = 0;;) switch (_fun94717_ip) {
             case 0:
                 var2 = arg0;

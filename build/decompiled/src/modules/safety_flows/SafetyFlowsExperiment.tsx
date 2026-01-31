@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
     var2.SafetyFlowsExperiment = var3;
-    var3 = function(arg0) { // Original name: isEligibleForSafetyFlowsExperiment, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.location;
         var3 = _closure1_slot0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isEligibleForSafetyFlowsExperiment = var3;
-    var1 = function(arg0) { // Original name: useIsEligibleForSafetyFlowsExperiment, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.location;
         var3 = _closure1_slot0;

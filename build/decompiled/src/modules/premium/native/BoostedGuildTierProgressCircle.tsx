@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.guildTierName = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1) { // Original name: getTierIcon, environment: var1
+    var3 = function arg0, arg1() {
         _fun82520: for (var _fun82520_ip = 0;;) switch (_fun82520_ip) {
             case 0:
                 var1 = arg1;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/BoostedGuildTierProgressCircle.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun82521: for (var _fun82521_ip = 0;;) switch (_fun82521_ip) {
             case 0:
                 var0 = arg0;

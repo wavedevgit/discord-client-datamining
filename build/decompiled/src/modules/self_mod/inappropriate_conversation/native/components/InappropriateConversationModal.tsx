@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: IntroScreen, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.warningId;
         var _closure2_slot0 = var1;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15 = var15["+o4Q7e"];
         var15 = var18.bind(var19)(var15);
         var8.text = var15;
-        var15 = function() { // Original name: onPress, environment: var12
+        var15 = function() {
             var4 = _closure2_slot3;
             var3 = var4.push;
             var2 = {};
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.xLkGzP;
         var13 = var14.bind(var15)(var13);
         var9.text = var13;
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var3 = _closure2_slot3;
             var2 = var3.push;
             var1 = 'SAFETY_TIPS';
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: TakeActionScreen, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.senderId;
         var10 = var0.isReported;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: SafetyTipsScreen, environment: var1
+    var0 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: CrisisTextLineScreen, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.trackAnalyticsEvent;
         var _closure2_slot0 = var0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15 = var15.lkUb4S;
         var15 = var18.bind(var19)(var15);
         var8.text = var15;
-        var15 = function() { // Original name: onPress, environment: var12
+        var15 = function() {
             var3 = _closure1_slot6;
             var2 = var3.openURL;
             var1 = _closure1_slot9;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.ogLlvy;
         var13 = var14.bind(var15)(var13);
         var9.text = var13;
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var3 = _closure1_slot6;
             var2 = var3.openURL;
             var1 = _closure1_slot10;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.safetyTips = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: getScreens, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.warningId;
         var _closure2_slot0 = var1;
@@ -712,13 +712,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var1;
         var9 = var4;
         var3 = copyDataProperties(var10, var9);
-        var5 = function() { // Original name: headerLeft, environment: var2
+        var5 = function() {
             var0 = null;
             return var0;
         };
         var3 = 'headerLeft';
         var1[var3] = var5;
-        var5 = function() { // Original name: render, environment: var2
+        var5 = function() {
             var3 = _closure1_slot13;
             var2 = _closure1_slot17;
             var1 = {};
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var1;
         var9 = var4;
         var5 = copyDataProperties(var10, var9);
-        var5 = function() { // Original name: render, environment: var2
+        var5 = function() {
             var3 = _closure1_slot13;
             var2 = _closure1_slot18;
             var1 = {};
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var1;
         var9 = var4;
         var5 = copyDataProperties(var10, var9);
-        var5 = function() { // Original name: render, environment: var2
+        var5 = function() {
             var3 = _closure1_slot13;
             var2 = _closure1_slot19;
             var1 = undefined;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var1;
         var9 = var4;
         var4 = copyDataProperties(var10, var9);
-        var2 = function() { // Original name: render, environment: var2
+        var2 = function() {
             var3 = _closure1_slot13;
             var2 = _closure1_slot20;
             var1 = {};
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/inappropriate_conversation/native/components/InappropriateConversationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InappropriateConversationModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var12 = var1.channelId;
         var _closure2_slot0 = var12;

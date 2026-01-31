@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: getFirstException, environment: var0
+    var2 = function arg0() {
         _fun98857: for (var _fun98857_ip = 0;;) switch (_fun98857_ip) {
             case 0:
                 var1 = arg0;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: _parseInt, environment: var0
+    var2 = function arg0() {
         _fun98858: for (var _fun98858_ip = 0;;) switch (_fun98858_ip) {
             case 0:
                 var3 = arg0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1) { // Original name: addContextToFrame, environment: var0
+    var2 = function arg0, arg1() {
         _fun98859: for (var _fun98859_ip = 0;;) switch (_fun98859_ip) {
             case 0:
                 var6 = arg0;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addContextToFrame = var2;
-    var2 = function(arg0, arg1) { // Original name: addExceptionMechanism, environment: var0
+    var2 = function arg0, arg1() {
         _fun98862: for (var _fun98862_ip = 0;;) switch (_fun98862_ip) {
             case 0:
                 var2 = arg1;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addExceptionMechanism = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: addExceptionTypeValue, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun98863: for (var _fun98863_ip = 0;;) switch (_fun98863_ip) {
             case 0:
                 var3 = arg0;
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addExceptionTypeValue = var2;
-    var2 = function(arg0) { // Original name: arrayify, environment: var0
+    var2 = function arg0() {
         _fun98864: for (var _fun98864_ip = 0;;) switch (_fun98864_ip) {
             case 0:
                 var2 = arg0;
@@ -329,7 +329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.arrayify = var2;
-    var2 = function(arg0) { // Original name: checkOrSetAlreadyCaught, environment: var0
+    var2 = function arg0() {
         _fun98865: for (var _fun98865_ip = 0;;) switch (_fun98865_ip) {
             case 0:
                 var1 = arg0;
@@ -371,7 +371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.checkOrSetAlreadyCaught = var2;
-    var2 = function(arg0) { // Original name: getEventDescription, environment: var0
+    var2 = function arg0() {
         _fun98866: for (var _fun98866_ip = 0;;) switch (_fun98866_ip) {
             case 0:
                 var3 = arg0;
@@ -455,7 +455,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getEventDescription = var2;
-    var2 = function(arg0) { // Original name: parseSemver, environment: var0
+    var2 = function arg0() {
         _fun98867: for (var _fun98867_ip = 0;;) switch (_fun98867_ip) {
             case 0:
                 var3 = arg0;
@@ -525,7 +525,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.parseSemver = var2;
-    var0 = function() { // Original name: uuid4, environment: var0
+    var0 = function() {
         _fun98868: for (var _fun98868_ip = 0;;) switch (_fun98868_ip) {
             case 0:
                 var4 = undefined;
@@ -547,7 +547,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 52:
                 var1 = var2;
                 var _closure2_slot0 = var2;
-                var2 = function() { // Original name: getRandomByte, environment: var0
+                var2 = function() {
                     var0 = global;
                     var1 = var0.Math;
                     var0 = var1.random;
@@ -586,7 +586,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun98868
                 }
             case 109:
-                var2 = function() { // Original name: getRandomByte, environment: var0
+                var2 = function() {
                     var0 = global;
                     var2 = var0.Uint8Array;
                     var0 = var2.prototype;

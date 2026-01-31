@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var3;
             var _closure1_slot2 = var5;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var6
+            var0 = function arg0, arg1() {
                 _fun37095: for (var _fun37095_ip = 0;;) switch (_fun37095_ip) {
                     case 0:
                         var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var6
+            var0 = function arg0, arg1() {
                 _fun37097: for (var _fun37097_ip = 0;;) switch (_fun37097_ip) {
                     case 0:
                         var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+            var0 = function() {
                 _fun37098: for (var _fun37098_ip = 0;;) switch (_fun37098_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot15 = var0;
-            var0 = function() { // Original name: combineStatuses, environment: var6
+            var0 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot17;
                 var2 = var3.apply;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var0;
-            var0 = function() { // Original name: _combineStatuses, environment: var6
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot8;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var4.bind(var0)(var1);
             var3 = var1.NativePermissionBaseUtils;
             var1 = function(arg0) { // Environment: var6
-                var3 = function() { // Original name: NativePermissionIOSUtils, environment: var5
+                var3 = function() {
                     _fun37106: for (var _fun37106_ip = 0;;) switch (_fun37106_ip) {
                         case 0:
                             var3 = this;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'requestPermissionCore';
                 var4.key = var0;
-                var0 = function(arg0, arg1) { // Original name: value, environment: var5
+                var0 = function arg0, arg1() {
                     var4 = this;
                     var3 = var4.performRequest;
                     var0 = _closure2_slot0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hasPermissionCore';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     var4 = this;
                     var3 = var4.performRequest;
                     var0 = _closure2_slot0;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'performRequest';
                 var4.key = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun37109: for (var _fun37109_ip = 0;;) switch (_fun37109_ip) {
                         case 0:
                             var6 = arg1;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'didHavePermission';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var0 = this;
                     var2 = var0.storage;
                     var1 = var2.hasPermission;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'openSettings';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'openAlertModal';
                 var4.key = var6;
-                var5 = function(arg0) { // Original name: value, environment: var5
+                var5 = function arg0() {
                     var0 = arg0;
                     var7 = var0.body;
                     var6 = var0.onConfirm;

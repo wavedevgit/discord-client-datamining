@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 87:
             var3 = {};
-            var5 = function() { // Original name: getConstants, environment: var4
+            var5 = function() {
                 _fun2812: for (var _fun2812_ip = 0;;) switch (_fun2812_ip) {
                     case 0:
                         var2 = _closure1_slot1;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.getConstants = var5;
-            var5 = function() { // Original name: addNetworkingHandler, environment: var4
+            var5 = function() {
                 var1 = _closure1_slot0;
                 var0 = var1.addNetworkingHandler;
                 var0 = var0.bind(var1)();
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.addNetworkingHandler = var5;
-            var5 = function(arg0) { // Original name: addWebSocketHandler, environment: var4
+            var5 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = var2.addWebSocketHandler;
                 var0 = arg0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.addWebSocketHandler = var5;
-            var5 = function(arg0) { // Original name: removeWebSocketHandler, environment: var4
+            var5 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = var2.removeWebSocketHandler;
                 var0 = arg0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.removeWebSocketHandler = var5;
-            var5 = function(arg0, arg1) { // Original name: sendOverSocket, environment: var4
+            var5 = function arg0, arg1() {
                 var3 = _closure1_slot0;
                 var2 = var3.sendOverSocket;
                 var1 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.sendOverSocket = var5;
-            var5 = function(arg0, arg1) { // Original name: createFromParts, environment: var4
+            var5 = function arg0, arg1() {
                 var3 = _closure1_slot0;
                 var2 = var3.createFromParts;
                 var1 = arg0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.createFromParts = var5;
-            var4 = function(arg0) { // Original name: release, environment: var4
+            var4 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = var2.release;
                 var0 = arg0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: interpolate, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun8455: for (var _fun8455_ip = 0;;) switch (_fun8455_ip) {
             case 0:
                 var5 = arg2;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/tokens/transforms.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: transformColorForReducedContrast, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun8456: for (var _fun8456_ip = 0;;) switch (_fun8456_ip) {
             case 0:
                 var4 = arg0;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transformColorForReducedContrast = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: transformColorForIncreasedContrast, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun8457: for (var _fun8457_ip = 0;;) switch (_fun8457_ip) {
             case 0:
                 var2 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transformColorForIncreasedContrast = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: transformColorForReducedSaturation, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun8458: for (var _fun8458_ip = 0;;) switch (_fun8458_ip) {
             case 0:
                 var4 = arg2;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transformColorForReducedSaturation = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: transformColorContrast, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun8459: for (var _fun8459_ip = 0;;) switch (_fun8459_ip) {
             case 0:
                 var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var0 = function(arg0) { // Original name: contentTypeToIcon, environment: var1
+    var0 = function arg0() {
         _fun103950: for (var _fun103950_ip = 0;;) switch (_fun103950_ip) {
             case 0:
                 var3 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var7 = function(arg0, arg1, arg2) { // Original name: navigateToPost, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun103951: for (var _fun103951_ip = 0;;) switch (_fun103951_ip) {
             case 0:
                 var8 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var7;
-    var6 = function() { // Original name: Separator, environment: var1
+    var6 = function() {
         var1 = _closure1_slot21;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var6;
-    var5 = function(arg0) { // Original name: truncateUsername, environment: var1
+    var5 = function arg0() {
         _fun103955: for (var _fun103955_ip = 0;;) switch (_fun103955_ip) {
             case 0:
                 var4 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var5;
-    var0 = function(arg0) { // Original name: CutoutGuildIconWithUser, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.guild;
         var10 = var0.author;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var4 = function(arg0) { // Original name: CutoutGuildIcon, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var14 = var0.guild;
         var5 = var0.icon;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var4;
-    var3 = function(arg0) { // Original name: GuildContentPost, environment: var1
+    var3 = function arg0() {
         _fun103958: for (var _fun103958_ip = 0;;) switch (_fun103958_ip) {
             case 0:
                 var0 = arg0;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var30.bind(var3)(var24);
                 var27 = var24.PressableOpacity;
                 var24 = {};
-                var29 = function() { // Original name: onPress, environment: var29
+                var29 = function() {
                     _fun103959: for (var _fun103959_ip = 0;;) switch (_fun103959_ip) {
                         case 0:
                             var1 = _closure1_slot0;
@@ -909,7 +909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.truncateUsername = var5;
     var2.CutoutGuildIcon = var4;
     var2.GuildContentPost = var3;
-    var3 = function(arg0) { // Original name: AnnouncementContentPost, environment: var1
+    var3 = function arg0() {
         _fun103961: for (var _fun103961_ip = 0;;) switch (_fun103961_ip) {
             case 0:
                 var1 = arg0;
@@ -1129,7 +1129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.AnnouncementContentPost = var3;
-    var3 = function(arg0) { // Original name: GuildEventPost, environment: var1
+    var3 = function arg0() {
         _fun103964: for (var _fun103964_ip = 0;;) switch (_fun103964_ip) {
             case 0:
                 var0 = arg0;
@@ -1549,7 +1549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventPost = var3;
-    var3 = function(arg0) { // Original name: MessageContentPost, environment: var1
+    var3 = function arg0() {
         _fun103968: for (var _fun103968_ip = 0;;) switch (_fun103968_ip) {
             case 0:
                 var2 = arg0;
@@ -1791,7 +1791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.MessageContentPost = var3;
-    var3 = function(arg0) { // Original name: GeneratedCandidateContentPost, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var8 = var2.guild;
         var _closure2_slot0 = var8;
@@ -2037,7 +2037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GeneratedCandidateContentPost = var3;
-    var3 = function(arg0) { // Original name: SimplePost, environment: var1
+    var3 = function arg0() {
         _fun103975: for (var _fun103975_ip = 0;;) switch (_fun103975_ip) {
             case 0:
                 var0 = arg0;
@@ -2097,7 +2097,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var15[var13];
                 var5 = var16.bind(var3)(var2);
                 var4 = var5.useAnimatedStyle;
-                var2 = function() { // Original name: c, environment: var1
+                var2 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -2254,7 +2254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.SimplePost = var3;
-    var1 = function(arg0) { // Original name: ThreadAsComments, environment: var1
+    var1 = function arg0() {
         _fun103978: for (var _fun103978_ip = 0;;) switch (_fun103978_ip) {
             case 0:
                 var0 = arg0;
@@ -2276,7 +2276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 58:
                 var2 = var0;
             case 61:
-                var0 = function(arg0, arg1, arg2) { // Original name: useThread, environment: var1
+                var0 = function arg0, arg1, arg2() {
                     var4 = arg0;
                     var7 = arg1;
                     var8 = arg2;

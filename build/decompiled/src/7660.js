@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var9
+    var0 = function() {
         _fun61619: for (var _fun61619_ip = 0;;) switch (_fun61619_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var7.bind(var8)(var5);
     var _closure1_slot16 = var5;
     var5 = function(arg0) { // Environment: var9
-        var3 = function(arg0) { // Original name: Video, environment: var5
+        var3 = function arg0() {
             _fun61623: for (var _fun61623_ip = 0;;) switch (_fun61623_ip) {
                 case 0:
                     var2 = arg0;
@@ -1013,7 +1013,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'setNativeProps';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: setNativeProps, environment: var5
+        var0 = function arg0() {
             _fun61660: for (var _fun61660_ip = 0;;) switch (_fun61660_ip) {
                 case 0:
                     var0 = this;
@@ -1053,7 +1053,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'toTypeString';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: toTypeString, environment: var5
+        var6 = function arg0() {
             _fun61661: for (var _fun61661_ip = 0;;) switch (_fun61661_ip) {
                 case 0:
                     var2 = arg0;
@@ -1102,7 +1102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'stringsOnlyObject';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: stringsOnlyObject, environment: var5
+        var6 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var0 = this;
@@ -1134,7 +1134,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun61664: for (var _fun61664_ip = 0;;) switch (_fun61664_ip) {
                 case 0:
                     var10 = this;

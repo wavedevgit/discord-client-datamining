@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_startup/awaitExperiments.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: beginLoadedExperimentsTimeout, environment: var1
+    var3 = function() {
         var0 = global;
         var3 = var0.setTimeout;
         var0 = undefined;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.beginLoadedExperimentsTimeout = var3;
-    var3 = function() { // Original name: onExperimentsLoaded, environment: var1
+    var3 = function() {
         _fun96665: for (var _fun96665_ip = 0;;) switch (_fun96665_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.onExperimentsLoaded = var3;
-    var1 = function() { // Original name: getPromise, environment: var1
+    var1 = function() {
         var0 = _closure1_slot0;
         var0 = var0.promise;
         return var0;

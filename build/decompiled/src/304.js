@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: elementsThatOverlapOffsets, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun4595: for (var _fun4595_ip = 0;;) switch (_fun4595_ip) {
             case 0:
                 var14 = arg0;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0, arg1) { // Original name: newRangeCount, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var5 = arg1;
         var2 = var5.last;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var5;
     var2.elementsThatOverlapOffsets = var4;
     var2.newRangeCount = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: computeWindowedRenderLimits, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun4597: for (var _fun4597_ip = 0;;) switch (_fun4597_ip) {
             case 0:
                 var11 = arg0;
@@ -613,7 +613,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.computeWindowedRenderLimits = var3;
-    var1 = function(arg0, arg1) { // Original name: keyExtractor, environment: var1
+    var1 = function arg0, arg1() {
         _fun4598: for (var _fun4598_ip = 0;;) switch (_fun4598_ip) {
             case 0:
                 var1 = arg0;

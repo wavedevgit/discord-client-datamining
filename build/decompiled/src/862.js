@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: forEachEnvelopeItem, environment: var1
+    var3 = function arg0, arg1() {
         _fun9070: for (var _fun9070_ip = 0;;) switch (_fun9070_ip) {
             case 0:
                 var4 = arg1;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function(arg0) { // Original name: encodeUTF8, environment: var1
+    var0 = function arg0() {
         _fun9071: for (var _fun9071_ip = 0;;) switch (_fun9071_ip) {
             case 0:
                 var3 = arg0;
@@ -134,7 +134,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'trace_metric': 'metric'
     };
     var _closure1_slot4 = var4;
-    var4 = function(arg0, arg1) { // Original name: addItemToEnvelope, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot3;
         var5 = undefined;
         var2 = arg0;
@@ -158,7 +158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.addItemToEnvelope = var4;
-    var4 = function(arg0) { // Original name: createAttachmentEnvelopeItem, environment: var1
+    var4 = function arg0() {
         _fun9073: for (var _fun9073_ip = 0;;) switch (_fun9073_ip) {
             case 0:
                 var0 = arg0;
@@ -197,7 +197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createAttachmentEnvelopeItem = var4;
-    var4 = function(arg0) { // Original name: createEnvelope, environment: var1
+    var4 = function arg0() {
         _fun9074: for (var _fun9074_ip = 0;;) switch (_fun9074_ip) {
             case 0:
                 var4 = undefined;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createEnvelope = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: createEventEnvelopeHeaders, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun9075: for (var _fun9075_ip = 0;;) switch (_fun9075_ip) {
             case 0:
                 var2 = arg0;
@@ -322,7 +322,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createEventEnvelopeHeaders = var4;
-    var4 = function(arg0) { // Original name: createSpanEnvelopeItem, environment: var1
+    var4 = function arg0() {
         var1 = {};
         var0 = 'span';
         var1.type = var0;
@@ -333,7 +333,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.createSpanEnvelopeItem = var4;
-    var4 = function(arg0, arg1) { // Original name: envelopeContainsItemType, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot5;
@@ -350,7 +350,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.envelopeContainsItemType = var4;
-    var4 = function(arg0) { // Original name: envelopeItemTypeToDataCategory, environment: var1
+    var4 = function arg0() {
         var1 = _closure1_slot4;
         var0 = arg0;
         var0 = var1[var0];
@@ -358,7 +358,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.envelopeItemTypeToDataCategory = var4;
     var2.forEachEnvelopeItem = var3;
-    var3 = function(arg0) { // Original name: getSdkMetadataForEnvelopeHeader, environment: var1
+    var3 = function arg0() {
         _fun9080: for (var _fun9080_ip = 0;;) switch (_fun9080_ip) {
             case 0:
                 var0 = arg0;
@@ -387,11 +387,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getSdkMetadataForEnvelopeHeader = var3;
-    var3 = function(arg0) { // Original name: parseEnvelope, environment: var1
+    var3 = function arg0() {
         _fun9081: for (var _fun9081_ip = 0;;) switch (_fun9081_ip) {
             case 0:
                 var3 = arg0;
-                var6 = function(arg0) { // Original name: readBinary, environment: var7
+                var6 = function arg0() {
                     var5 = arg0;
                     var3 = _closure2_slot0;
                     var1 = var3.subarray;
@@ -406,7 +406,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot1 = var6;
-                var5 = function() { // Original name: readJson, environment: var7
+                var5 = function() {
                     _fun9083: for (var _fun9083_ip = 0;;) switch (_fun9083_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -532,13 +532,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.parseEnvelope = var3;
-    var1 = function(arg0) { // Original name: serializeEnvelope, environment: var1
+    var1 = function arg0() {
         _fun9084: for (var _fun9084_ip = 0;;) switch (_fun9084_ip) {
             case 0:
                 var3 = undefined;
                 var12 = undefined;
                 var13 = undefined;
-                var14 = function(arg0) { // Original name: append, environment: var1
+                var14 = function arg0() {
                     _fun9085: for (var _fun9085_ip = 0;;) switch (_fun9085_ip) {
                         case 0:
                             var3 = arg0;
@@ -693,7 +693,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 306:
                 var2 = _closure2_slot0;
-                var0 = function(arg0) { // Original name: concatBuffers, environment: var1
+                var0 = function arg0() {
                     _fun9086: for (var _fun9086_ip = 0;;) switch (_fun9086_ip) {
                         case 0:
                             var5 = arg0;

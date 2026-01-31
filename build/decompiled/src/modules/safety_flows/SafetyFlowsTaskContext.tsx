@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/safety_flows/SafetyFlowsTaskContext.tsx';
     var4 = var5.bind(var6)(var4);
     var2.SafetyFlowTaskContext = var3;
-    var1 = function() { // Original name: useSafetyFlowTask, environment: var1
+    var1 = function() {
         _fun117783: for (var _fun117783_ip = 0;;) switch (_fun117783_ip) {
             case 0:
                 var2 = _closure1_slot0;

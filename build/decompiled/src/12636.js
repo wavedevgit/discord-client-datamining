@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96875
             }
         case 76:
-            var2 = function(arg0) { // Original name: ownKeys, environment: var1
+            var2 = function arg0() {
                 _fun96876: for (var _fun96876_ip = 0;;) switch (_fun96876_ip) {
                     case 0:
                         var5 = arg0;

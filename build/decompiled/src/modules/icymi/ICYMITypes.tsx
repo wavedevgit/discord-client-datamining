@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = '1312632705086787756';
     var2.GAME_CONTENT_GUILD_ID = var9;
     var2.ICYMIItemTypes = var8;
-    var7 = function(arg0) { // Original name: typeToString, environment: var7
+    var7 = function arg0() {
         _fun54725: for (var _fun54725_ip = 0;;) switch (_fun54725_ip) {
             case 0:
                 var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var10;
-    var0 = function() { // Original name: _addDirectoryGuildEntry, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.bind(var10)(var8);
     var2.fetchDirectoryEntries = var7;
     var2.fetchDirectoryCounts = var6;
-    var6 = function() { // Original name: addDirectoryGuildEntry, environment: var3
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.addDirectoryGuildEntry = var6;
-    var6 = function(arg0, arg1) { // Original name: removeDirectoryGuildEntry, environment: var3
+    var6 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var2 = _closure1_slot1;

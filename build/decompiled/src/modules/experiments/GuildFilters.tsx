@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun17739: for (var _fun17739_ip = 0;;) switch (_fun17739_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun17741: for (var _fun17741_ip = 0;;) switch (_fun17741_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: isInRange, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun17742: for (var _fun17742_ip = 0;;) switch (_fun17742_ip) {
             case 0:
                 var0 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getRangeData, environment: var3
+    var0 = function arg0() {
         _fun17743: for (var _fun17743_ip = 0;;) switch (_fun17743_ip) {
             case 0:
                 var1 = _closure1_slot6;

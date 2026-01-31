@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: renderDefaultButton, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var6 = var2.ref;
         var1 = _closure1_slot4;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var0 = 'Set Random Quest Progress';
                     var1.label = var0;
-                    var0 = function() { // Original name: action, environment: var3
+                    var0 = function() {
                         var2 = _closure2_slot4;
                         var0 = global;
                         var1 = var0.Math;
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var4 = 'Copy Quest ID';
                     var1.label = var4;
-                    var3 = function() { // Original name: action, environment: var3
+                    var3 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 22;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputGuardSpamMessageRequest, environment: var1
+    var1 = function arg0() {
         _fun90607: for (var _fun90607_ip = 0;;) switch (_fun90607_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useMessageRequestActions;
                 var0 = {};
                 var0.user = var5;
-                var5 = function() { // Original name: onError, environment: var6
+                var5 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 7;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.cpT0Cq;
                 var10 = var12.bind(var13)(var10);
                 var0.buttonPrimaryText = var10;
-                var10 = function(arg0) { // Original name: buttonPrimaryOnPress, environment: var6
+                var10 = function arg0() {
                     var1 = arg0;
                     var0 = var1.stopPropagation;
                     var0 = var0.bind(var1)();
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.olZgw5;
                 var7 = var8.bind(var9)(var7);
                 var0.buttonSecondaryText = var7;
-                var6 = function(arg0) { // Original name: buttonSecondaryOnPress, environment: var6
+                var6 = function arg0() {
                     var1 = arg0;
                     var0 = var1.stopPropagation;
                     var0 = var0.bind(var1)();

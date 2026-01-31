@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
     var2.reflectionScalarDefault = var0;
-    var1 = function(arg0) { // Original name: reflectionScalarDefault, environment: var1
+    var1 = function arg0() {
         _fun14966: for (var _fun14966_ip = 0;;) switch (_fun14966_ip) {
             case 0:
                 var6 = arg0;

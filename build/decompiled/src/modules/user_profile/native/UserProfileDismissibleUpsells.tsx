@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileDismissibleUpsells.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileDismissibleUpsells, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.navigateToShop;
         var _closure2_slot0 = var2;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = new Array(1);
         var5[0] = var6;
         var0.contentTypes = var5;
-        var4 = function(arg0) { // Original name: children, environment: var4
+        var4 = function arg0() {
             _fun91926: for (var _fun91926_ip = 0;;) switch (_fun91926_ip) {
                 case 0:
                     var0 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var21 = var21["6Xcq+Y"];
                     var21 = var22.bind(var23)(var21);
                     var12.accessibilityLabel = var21;
-                    var19 = function() { // Original name: onPress, environment: var19
+                    var19 = function() {
                         var2 = _closure3_slot0;
                         var0 = _closure1_slot7;
                         var1 = var0.USER_DISMISS;

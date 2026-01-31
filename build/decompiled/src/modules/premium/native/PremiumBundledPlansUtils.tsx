@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var6 = function(arg0) { // Original name: getPremiumBundleWithPredicate, environment: var1
+    var6 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var6;
-    var5 = function(arg0) { // Original name: getPremiumBundledItemsFromProductId, environment: var1
+    var5 = function arg0() {
         _fun58184: for (var _fun58184_ip = 0;;) switch (_fun58184_ip) {
             case 0:
                 var1 = arg0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0) { // Original name: getToggledIntervalProduct, environment: var1
+    var4 = function arg0() {
         _fun58185: for (var _fun58185_ip = 0;;) switch (_fun58185_ip) {
             case 0:
                 var3 = _closure1_slot5;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: isValidBundleProductId, environment: var1
+    var3 = function arg0() {
         _fun58187: for (var _fun58187_ip = 0;;) switch (_fun58187_ip) {
             case 0:
                 var2 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/premium/native/PremiumBundledPlansUtils.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0) { // Original name: getPremiumBundlesWithPredicate, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getPremiumBundleWithPredicate = var6;
     var2.getPremiumBundledItemsFromProductId = var5;
     var2.getToggledIntervalProduct = var4;
-    var4 = function(arg0) { // Original name: getProductIdsForBothIntervals, environment: var1
+    var4 = function arg0() {
         _fun58189: for (var _fun58189_ip = 0;;) switch (_fun58189_ip) {
             case 0:
                 var3 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getProductIdsForBothIntervals = var4;
-    var4 = function(arg0, arg1) { // Original name: productsHaveSamePerks, environment: var1
+    var4 = function arg0, arg1() {
         _fun58190: for (var _fun58190_ip = 0;;) switch (_fun58190_ip) {
             case 0:
                 var1 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.productsHaveSamePerks = var4;
     var2.isValidBundleProductId = var3;
-    var3 = function(arg0) { // Original name: shouldAlwaysExcludeFromPlanSelect, environment: var1
+    var3 = function arg0() {
         _fun58191: for (var _fun58191_ip = 0;;) switch (_fun58191_ip) {
             case 0:
                 var1 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldAlwaysExcludeFromPlanSelect = var3;
-    var1 = function(arg0) { // Original name: makeExternalPaymentGatewayPlanIdOrThrow, environment: var1
+    var1 = function arg0() {
         _fun58192: for (var _fun58192_ip = 0;;) switch (_fun58192_ip) {
             case 0:
                 var0 = arg0;

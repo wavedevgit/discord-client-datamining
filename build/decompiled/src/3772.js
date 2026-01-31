@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1) { // Original name: JumpingTransition, environment: var0
+    var0 = function arg0, arg1() {
         _fun33876: for (var _fun33876_ip = 0;;) switch (_fun33876_ip) {
             case 0:
                 var0 = arg1;

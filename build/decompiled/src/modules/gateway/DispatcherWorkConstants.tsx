@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var4;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: WorkIdleDeadline, environment: var4
+        var2 = function arg0() {
             _fun94591: for (var _fun94591_ip = 0;;) switch (_fun94591_ip) {
                 case 0:
                     var4 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'timeRemaining';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var2 = global;
             var3 = var2.performance;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'didTimeout';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._firedDueToMaxTimeout;
             return var0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'timeSinceExpiration';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = global;
             var2 = var1.performance;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'generateDeadlineMetrics';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var1 = this;
             var0 = {};
             var3 = var1._browserDeadlineMs;

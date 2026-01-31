@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun102273: for (var _fun102273_ip = 0;;) switch (_fun102273_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildPowerupsNotificationStore, environment: var5
+        var3 = function() {
             _fun102277: for (var _fun102277_ip = 0;;) switch (_fun102277_ip) {
                 case 0:
                     var3 = this;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initialize';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun102279: for (var _fun102279_ip = 0;;) switch (_fun102279_ip) {
                 case 0:
                     var1 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNotificationStateForGuild';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot10;
             var0 = arg0;
             var0 = var1[var0];
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleAckNotification, environment: var3
+    var8 = function arg0() {
         _fun102283: for (var _fun102283_ip = 0;;) switch (_fun102283_ip) {
             case 0:
                 var0 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_POWERUPS_ACK_NOTIFICATION = var8;
-    var3 = function() { // Original name: handleResetNotifications, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot10 = var0;
         var0 = undefined;

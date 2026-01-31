@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ProductDetailsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ProductDetailsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun87082: for (var _fun87082_ip = 0;;) switch (_fun87082_ip) {
             case 0:
                 var0 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.variantIndex = var25;
                 var20.analyticsLocations = var16;
                 var20.setShouldReset = var1;
-                var18 = function(arg0) { // Original name: useHandlePreviewPress, environment: var28
+                var18 = function arg0() {
                     _fun87083: for (var _fun87083_ip = 0;;) switch (_fun87083_ip) {
                         case 0:
                             var1 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1.isPreviewingChanges = var4;
                                 var3 = _closure3_slot2;
                                 var1.sourceAnalyticsLocations = var3;
-                                var3 = function() { // Original name: onClose, environment: var3
+                                var3 = function() {
                                     var2 = _closure1_slot0;
                                     var1 = _closure1_slot2;
                                     var0 = 8;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'scrollable': true,
                     'startExpanded': true
                 };
-                var28 = function() { // Original name: onExpand, environment: var28
+                var28 = function() {
                     _fun87089: for (var _fun87089_ip = 0;;) switch (_fun87089_ip) {
                         case 0:
                             var0 = _closure2_slot2;

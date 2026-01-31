@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = {};
     var2 = 'function pnpm_lrgbTs1(c=0){const abs=Math.abs(c);if(abs>0.0031308){return(Math.sign(c)||1)*(1.055*Math.pow(abs,1/2.4)-0.055);}return c*12.92;}';
     var0.code = var2;
-    var5 = function() { // Original name: pnpm_lrgbTs1, environment: var4
+    var5 = function() {
         _fun34921: for (var _fun34921_ip = 0;;) switch (_fun34921_ip) {
             case 0:
                 var4 = undefined;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = {};
     var2 = 'function pnpm_lrgbTs2({r:r,g:g,b:b,alpha:alpha}){const{channelFromLrgb}=this.__closure;return{r:channelFromLrgb(r),g:channelFromLrgb(g),b:channelFromLrgb(b),alpha:alpha};}';
     var0.code = var2;
-    var3 = function(arg0) { // Original name: pnpm_lrgbTs2, environment: var4
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.r;
         var5 = var0.g;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = {};
     var2 = 'function pnpm_lrgbTs3(c=0){const abs=Math.abs(c);if(abs<=0.04045){return c/12.92;}return(Math.sign(c)||1)*Math.pow((abs+0.055)/1.055,2.4);}';
     var0.code = var2;
-    var7 = function() { // Original name: pnpm_lrgbTs3, environment: var4
+    var7 = function() {
         _fun34923: for (var _fun34923_ip = 0;;) switch (_fun34923_ip) {
             case 0:
                 var4 = undefined;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.code = var0;
     var0 = {};
     var2 = {};
-    var4 = function(arg0) { // Original name: pnpm_lrgbTs4, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var6 = var0.r;
         var5 = var0.g;

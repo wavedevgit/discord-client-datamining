@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AnalyticEvents;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: openMemberVerificationModal, environment: var3
+    var6 = function arg0, arg1() {
         var6 = arg0;
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openMemberVerificationModal = var6;
-    var3 = function() { // Original name: closeMemberVerificationModal, environment: var3
+    var3 = function() {
         _fun60273: for (var _fun60273_ip = 0;;) switch (_fun60273_ip) {
             case 0:
                 var1 = arguments[0];

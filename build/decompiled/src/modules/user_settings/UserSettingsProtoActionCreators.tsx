@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var11;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var12;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+            var0 = function arg0, arg1() {
                 _fun15502: for (var _fun15502_ip = 0;;) switch (_fun15502_ip) {
                     case 0:
                         var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+            var0 = function arg0, arg1() {
                 _fun15504: for (var _fun15504_ip = 0;;) switch (_fun15504_ip) {
                     case 0:
                         var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var4 = function(arg0, arg1, arg2) { // Original name: updateUserGuildSettings, environment: var1
+            var4 = function arg0, arg1, arg2() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot15 = var4;
-            var3 = function() { // Original name: updateRecurringDismissibleContentState, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot17;
                 var2 = var3.apply;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var3;
-            var0 = function() { // Original name: _updateRecurringDismissibleContentState, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot17 = var0;
-            var0 = function() { // Original name: _updateGuildDismissedContent, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 414:
             var5 = function() { // Environment: var1
                 var3 = _closure1_slot5;
-                var2 = function(arg0, arg1) { // Original name: UserSettingsProtoActionCreators, environment: var5
+                var2 = function arg0, arg1() {
                     var2 = this;
                     var _closure3_slot0 = var2;
                     var5 = _closure1_slot4;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'getEditInfo';
                 var0.key = var1;
-                var1 = function() { // Original name: value, environment: var5
+                var1 = function() {
                     var1 = _closure1_slot6;
                     var0 = var1.getFullState;
                     var1 = var0.bind(var1)();
@@ -895,7 +895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = 'getCurrentValue';
                 var0.key = var4;
-                var4 = function() { // Original name: value, environment: var5
+                var4 = function() {
                     var1 = this;
                     var0 = var1.getEditInfo;
                     var0 = var0.bind(var1)();
@@ -1002,7 +1002,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var7 = var8.bind(var0)(var7);
                 var _closure2_slot1 = var7;
-                var7 = function() { // Original name: updateAsync, environment: var5
+                var7 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot1;
                     var2 = var3.apply;
@@ -1017,7 +1017,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var7 = 'markDirty';
                 var4.key = var7;
-                var7 = function(arg0, arg1) { // Original name: value, environment: var5
+                var7 = function arg0, arg1() {
                     _fun15531: for (var _fun15531_ip = 0;;) switch (_fun15531_ip) {
                         case 0:
                             var1 = arg0;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var7 = 'dispatchChanges';
                 var4.key = var7;
-                var7 = function(arg0) { // Original name: value, environment: var5
+                var7 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 6;
@@ -1242,7 +1242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var7 = 'saveLastSendTime';
                 var4.key = var7;
-                var7 = function() { // Original name: value, environment: var5
+                var7 = function() {
                     _fun15533: for (var _fun15533_ip = 0;;) switch (_fun15533_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -1285,7 +1285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var7 = 'loadIfUncached';
                 var4.key = var7;
-                var7 = function(arg0, arg1) { // Original name: value, environment: var5
+                var7 = function arg0, arg1() {
                     _fun15534: for (var _fun15534_ip = 0;;) switch (_fun15534_ip) {
                         case 0:
                             var2 = arg1;
@@ -1503,7 +1503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var6 = var7.bind(var0)(var6);
                 var _closure2_slot0 = var6;
-                var6 = function() { // Original name: loadIfNecessary, environment: var5
+                var6 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -1518,7 +1518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'markDirtyFromMigration';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     var4 = this;
                     var3 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -1562,7 +1562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'markDirtyIfHasPendingChange';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun15539: for (var _fun15539_ip = 0;;) switch (_fun15539_ip) {
                         case 0:
                             var3 = this;
@@ -1602,7 +1602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'scheduleSaveFromOfflineEdit';
                 var4.key = var6;
-                var5 = function() { // Original name: value, environment: var5
+                var5 = function() {
                     var3 = this;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -1706,7 +1706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = 'modules/user_settings/UserSettingsProtoActionCreators.tsx';
             var10 = var11.bind(var12)(var10);
             var2.UserSettingsDelay = var9;
-            var9 = function() { // Original name: markUserSettingsLoadOkayForDevelopment, environment: var1
+            var9 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -1715,7 +1715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.PreloadedUserSettingsActionCreators = var7;
             var2.FrecencyUserSettingsActionCreators = var6;
             var2.UserSettingsActionCreatorsByType = var5;
-            var5 = function(arg0, arg1) { // Original name: updateUserAllGuildSettings, environment: var1
+            var5 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var4 = _closure1_slot12;
@@ -1734,7 +1734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.updateUserAllGuildSettings = var5;
             var2.updateUserGuildSettings = var4;
-            var4 = function(arg0, arg1, arg2, arg3) { // Original name: updateUserChannelSettings, environment: var1
+            var4 = function arg0, arg1, arg2, arg3() {
                 var1 = arg1;
                 var _closure2_slot0 = var1;
                 var1 = arg2;
@@ -1761,10 +1761,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.updateUserChannelSettings = var4;
-            var4 = function(arg0) { // Original name: addDismissedContent, environment: var1
+            var4 = function arg0() {
                 var3 = arg0;
                 var _closure2_slot0 = var3;
-                var2 = function(arg0) { // Original name: trackDismissibleContentDismissedBeforeConnectionOpen, environment: var0
+                var2 = function arg0() {
                     _fun15548: for (var _fun15548_ip = 0;;) switch (_fun15548_ip) {
                         case 0:
                             var6 = arg0;
@@ -1882,7 +1882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.addDismissedContent = var4;
             var2.updateRecurringDismissibleContentState = var3;
-            var3 = function() { // Original name: updateGuildDismissedContent, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot18;
                 var2 = var3.apply;
@@ -1893,7 +1893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.updateGuildDismissedContent = var3;
-            var3 = function(arg0) { // Original name: removeDismissedContent, environment: var1
+            var3 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var4 = _closure1_slot12;
@@ -1939,7 +1939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.removeDismissedContent = var3;
-            var3 = function(arg0) { // Original name: removeDismissedRecurringContent, environment: var1
+            var3 = function arg0() {
                 var3 = _closure1_slot16;
                 var2 = undefined;
                 var1 = arg0;
@@ -1953,7 +1953,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.removeDismissedRecurringContent = var3;
-            var3 = function() { // Original name: clearDismissedContents, environment: var1
+            var3 = function() {
                 var4 = _closure1_slot12;
                 var3 = var4.updateAsync;
                 var0 = _closure1_slot8;
@@ -1982,7 +1982,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.clearDismissedContents = var3;
-            var1 = function() { // Original name: checkAllDismissedContents, environment: var1
+            var1 = function() {
                 var4 = _closure1_slot12;
                 var3 = var4.updateAsync;
                 var0 = _closure1_slot8;

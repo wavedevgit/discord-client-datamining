@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.bind(var9)(var6);
     var _closure1_slot7 = var6;
     var6 = var7.memo;
-    var1 = function(arg0) { // Original name: ContactSyncUpsellCTA, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.style;
         var0 = var0.location;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var7.bind(var3)(var0);
         var1 = var0.FormCTA;
         var0 = {};
-        var10 = function() { // Original name: onPress, environment: var9
+        var10 = function() {
             _fun96199: for (var _fun96199_ip = 0;;) switch (_fun96199_ip) {
                 case 0:
                     var3 = _closure1_slot1;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.onPress = var10;
-        var9 = function() { // Original name: onLongPress, environment: var9
+        var9 = function() {
             var8 = _closure1_slot0;
             var9 = _closure1_slot2;
             var0 = 9;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4.WAI6xu;
             var4 = var6.bind(var7)(var4);
             var5.label = var4;
-            var4 = function() { // Original name: onPress, environment: var4
+            var4 = function() {
                 var1 = _closure1_slot3;
                 var0 = undefined;
                 var1 = var1.bind(var0)();

@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var7;
             var _closure1_slot1 = var3;
             var _closure1_slot2 = var8;
-            var0 = function(arg0) { // Original name: asciiToBase16, environment: var2
+            var0 = function arg0() {
                 _fun66560: for (var _fun66560_ip = 0;;) switch (_fun66560_ip) {
                     case 0:
                         var2 = arg0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot9 = var0;
-            var0 = function() { // Original name: _asyncLoop, environment: var2
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot5;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot10 = var0;
-            var6 = function(arg0) { // Original name: utf8ToBytes, environment: var2
+            var6 = function arg0() {
                 _fun66564: for (var _fun66564_ip = 0;;) switch (_fun66564_ip) {
                     case 0:
                         var4 = arg0;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot11 = var6;
-            var4 = function(arg0) { // Original name: toBytes, environment: var2
+            var4 = function arg0() {
                 _fun66565: for (var _fun66565_ip = 0;;) switch (_fun66565_ip) {
                     case 0:
                         var3 = arg0;
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.byteSwapIfBE = var0;
             var3.nextTick = var0;
             var3.Hash = var0;
-            var7 = function(arg0) { // Original name: isBytes, environment: var2
+            var7 = function arg0() {
                 _fun66566: for (var _fun66566_ip = 0;;) switch (_fun66566_ip) {
                     case 0:
                         var2 = arg0;
@@ -329,7 +329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.isBytes = var7;
-            var7 = function(arg0) { // Original name: byteSwap32, environment: var2
+            var7 = function arg0() {
                 _fun66567: for (var _fun66567_ip = 0;;) switch (_fun66567_ip) {
                     case 0:
                         var4 = arg0;
@@ -358,7 +358,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.byteSwap32 = var7;
-            var7 = function(arg0) { // Original name: bytesToHex, environment: var2
+            var7 = function arg0() {
                 _fun66568: for (var _fun66568_ip = 0;;) switch (_fun66568_ip) {
                     case 0:
                         var5 = arg0;
@@ -396,7 +396,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.bytesToHex = var7;
-            var7 = function(arg0) { // Original name: hexToBytes, environment: var2
+            var7 = function arg0() {
                 _fun66569: for (var _fun66569_ip = 0;;) switch (_fun66569_ip) {
                     case 0:
                         var5 = arg0;
@@ -520,7 +520,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.hexToBytes = var7;
-            var7 = function(arg0, arg1, arg2) { // Original name: asyncLoop, environment: var2
+            var7 = function arg0, arg1, arg2() {
                 var0 = undefined;
                 var3 = _closure1_slot10;
                 var2 = var3.apply;
@@ -533,7 +533,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.asyncLoop = var7;
             var3.utf8ToBytes = var6;
             var3.toBytes = var4;
-            var4 = function() { // Original name: concatBytes, environment: var2
+            var4 = function() {
                 _fun66571: for (var _fun66571_ip = 0;;) switch (_fun66571_ip) {
                     case 0:
                         var5 = undefined;
@@ -634,7 +634,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.concatBytes = var4;
-            var4 = function(arg0, arg1) { // Original name: checkOpts, environment: var2
+            var4 = function arg0, arg1() {
                 _fun66572: for (var _fun66572_ip = 0;;) switch (_fun66572_ip) {
                     case 0:
                         var3 = arg1;
@@ -676,10 +676,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.checkOpts = var4;
-            var4 = function(arg0) { // Original name: wrapConstructor, environment: var2
+            var4 = function arg0() {
                 var3 = arg0;
                 var _closure2_slot0 = var3;
-                var0 = function(arg0) { // Original name: hashC, environment: var1
+                var0 = function arg0() {
                     var0 = _closure2_slot0;
                     var4 = undefined;
                     var2 = var0.bind(var4)();
@@ -708,10 +708,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.wrapConstructor = var4;
-            var4 = function(arg0) { // Original name: wrapConstructorWithOpts, environment: var2
+            var4 = function arg0() {
                 var4 = arg0;
                 var _closure2_slot0 = var4;
-                var0 = function(arg0, arg1) { // Original name: hashC, environment: var1
+                var0 = function arg0, arg1() {
                     var1 = _closure2_slot0;
                     var4 = undefined;
                     var0 = arg1;
@@ -743,10 +743,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.wrapConstructorWithOpts = var4;
-            var4 = function(arg0) { // Original name: wrapXOFConstructorWithOpts, environment: var2
+            var4 = function arg0() {
                 var4 = arg0;
                 var _closure2_slot0 = var4;
-                var0 = function(arg0, arg1) { // Original name: hashC, environment: var1
+                var0 = function arg0, arg1() {
                     var1 = _closure2_slot0;
                     var4 = undefined;
                     var0 = arg1;
@@ -778,7 +778,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.wrapXOFConstructorWithOpts = var4;
-            var4 = function() { // Original name: randomBytes, environment: var2
+            var4 = function() {
                 _fun66582: for (var _fun66582_ip = 0;;) switch (_fun66582_ip) {
                     case 0:
                         var2 = undefined;
@@ -895,7 +895,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.randomBytes = var4;
-            var4 = function(arg0) { // Original name: u8, environment: var2
+            var4 = function arg0() {
                 var0 = arg0;
                 var1 = global;
                 var4 = var1.Uint8Array;
@@ -914,7 +914,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.u8 = var4;
-            var4 = function(arg0) { // Original name: u32, environment: var2
+            var4 = function arg0() {
                 var0 = arg0;
                 var1 = global;
                 var4 = var1.Uint32Array;
@@ -939,7 +939,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.u32 = var4;
-            var4 = function(arg0) { // Original name: createView, environment: var2
+            var4 = function arg0() {
                 var0 = arg0;
                 var1 = global;
                 var4 = var1.DataView;
@@ -958,7 +958,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.createView = var4;
-            var4 = function(arg0, arg1) { // Original name: rotr, environment: var2
+            var4 = function arg0, arg1() {
                 var2 = arg0;
                 var0 = arg1;
                 var1 = 32;
@@ -969,7 +969,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.rotr = var4;
-            var4 = function(arg0, arg1) { // Original name: rotl, environment: var2
+            var4 = function arg0, arg1() {
                 var2 = arg0;
                 var3 = arg1;
                 var1 = var2 << var3;
@@ -1008,7 +1008,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = 68;
             var4 = var4 === var5;
             var3.isLE = var4;
-            var4 = function(arg0) { // Original name: byteSwap, environment: var2
+            var4 = function arg0() {
                 var2 = arg0;
                 var0 = 24;
                 var1 = var2 << var0;
@@ -1104,7 +1104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1 = var3.bind(var2)(var1);
                 var _closure2_slot0 = var1;
-                var0 = function() { // Original name: nextTick, environment: var0
+                var0 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -1120,7 +1120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.nextTick = var1;
             var1 = function() { // Environment: var2
                 var3 = _closure1_slot4;
-                var2 = function() { // Original name: Hash, environment: var1
+                var2 = function() {
                     var3 = _closure1_slot3;
                     var2 = _closure2_slot0;
                     var0 = undefined;
@@ -1132,7 +1132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var4 = 'clone';
                 var0.key = var4;
-                var1 = function() { // Original name: clone, environment: var1
+                var1 = function() {
                     var1 = this;
                     var0 = var1._cloneInto;
                     var0 = var0.bind(var1)();

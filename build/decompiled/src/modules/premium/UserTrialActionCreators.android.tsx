@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.PaymentGateways;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function() { // Original name: fetchUserTrialOffer, environment: var3
+    var6 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchUserTrialOffer = var6;
-    var3 = function(arg0) { // Original name: acknowledgeUserTrialOffer, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/system_messages/StageTopicSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createStageTopicSystemMessage, environment: var1
+    var1 = function arg0() {
         _fun55757: for (var _fun55757_ip = 0;;) switch (_fun55757_ip) {
             case 0:
                 var3 = arg0;

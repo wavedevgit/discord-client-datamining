@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function() { // Original name: logError, environment: var0
+    var0 = function() {
         _fun6005: for (var _fun6005_ip = 0;;) switch (_fun6005_ip) {
             case 0:
                 var0 = undefined;

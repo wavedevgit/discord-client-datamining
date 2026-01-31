@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: BadgeContent, environment: var1
+    var0 = function arg0() {
         _fun104512: for (var _fun104512_ip = 0;;) switch (_fun104512_ip) {
             case 0:
                 var0 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: useIconContentStyle, environment: var1
+    var0 = function arg0() {
         _fun104513: for (var _fun104513_ip = 0;;) switch (_fun104513_ip) {
             case 0:
                 var2 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: useIconBadgeCutout, environment: var1
+    var0 = function arg0() {
         _fun104515: for (var _fun104515_ip = 0;;) switch (_fun104515_ip) {
             case 0:
                 var1 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/BadgableTabBarIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: BadgableTabBarIcon, environment: var1
+    var3 = function arg0() {
         _fun104518: for (var _fun104518_ip = 0;;) switch (_fun104518_ip) {
             case 0:
                 var0 = arg0;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.BadgableTabBarIcon = var3;
-    var1 = function(arg0) { // Original name: YouIcon, environment: var1
+    var1 = function arg0() {
         _fun104521: for (var _fun104521_ip = 0;;) switch (_fun104521_ip) {
             case 0:
                 var1 = arg0;
@@ -1337,7 +1337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2[var24];
                 var17 = var11.bind(var3)(var8);
                 var15 = var17.useAnimatedStyle;
-                var8 = function() { // Original name: Y, environment: var4
+                var8 = function() {
                     var0 = {};
                     var2 = {};
                     var4 = _closure2_slot3;

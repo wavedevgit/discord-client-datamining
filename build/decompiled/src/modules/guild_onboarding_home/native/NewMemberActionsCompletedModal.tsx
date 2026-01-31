@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/NewMemberActionsCompletedModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NewMemberActionsCompleted, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.initialPercent;
         var16 = var1.numActions;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var11[var7];
         var5 = var13.bind(var3)(var1);
         var2 = var5.useAnimatedStyle;
-        var1 = function() { // Original name: b, environment: var0
+        var1 = function() {
             var0 = {};
             var5 = _closure1_slot0;
             var6 = _closure1_slot2;

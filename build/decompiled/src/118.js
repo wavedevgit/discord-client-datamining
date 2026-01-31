@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
-    var3 = function(arg0) { // Original name: renderElement, environment: var1
+    var3 = function arg0() {
         _fun1619: for (var _fun1619_ip = 0;;) switch (_fun1619_ip) {
             case 0:
                 var1 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.renderElement = var3;
-    var3 = function(arg0) { // Original name: findHostInstance_DEPRECATED, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.findHostInstance_DEPRECATED = var3;
-    var3 = function(arg0) { // Original name: findNodeHandle, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.findNodeHandle = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: dispatchCommand, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun1622: for (var _fun1622_ip = 0;;) switch (_fun1622_ip) {
             case 0:
                 var5 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.dispatchCommand = var3;
-    var3 = function(arg0, arg1) { // Original name: sendAccessibilityEvent, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.sendAccessibilityEvent = var3;
-    var3 = function(arg0) { // Original name: unmountComponentAtNodeAndRemoveContainer, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unmountComponentAtNodeAndRemoveContainer = var3;
-    var3 = function(arg0, arg1) { // Original name: unstable_batchedUpdates, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unstable_batchedUpdates = var3;
-    var3 = function() { // Original name: isProfilingRenderer, environment: var1
+    var3 = function() {
         var0 = global;
         var2 = var0.Boolean;
         var1 = undefined;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isProfilingRenderer = var3;
-    var3 = function(arg0, arg1) { // Original name: isChildPublicInstance, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -233,7 +233,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isChildPublicInstance = var3;
-    var3 = function(arg0) { // Original name: getNodeFromInternalInstanceHandle, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getNodeFromInternalInstanceHandle = var3;
-    var3 = function(arg0) { // Original name: getPublicInstanceFromInternalInstanceHandle, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getPublicInstanceFromInternalInstanceHandle = var3;
-    var1 = function(arg0) { // Original name: getPublicInstanceFromRootTag, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;

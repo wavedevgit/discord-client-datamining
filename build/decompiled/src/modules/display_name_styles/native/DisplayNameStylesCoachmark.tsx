@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: CoachmarkImage, environment: var1
+    var0 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/DisplayNameStylesCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DisplayNameStylesCoachmark, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var3 = var0.targetRef;
         var6 = var0.visible;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.position = var2;
             var1 = _closure2_slot2;
             var0.onDismiss = var1;
-            var1 = function() { // Original name: renderImgComponent, environment: var1
+            var1 = function() {
                 var3 = _closure1_slot6;
                 var2 = _closure1_slot8;
                 var1 = undefined;

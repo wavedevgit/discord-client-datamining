@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: PomeloEditableUserCard, environment: var1
+    var1 = function arg0, arg1() {
         _fun80895: for (var _fun80895_ip = 0;;) switch (_fun80895_ip) {
             case 0:
                 var17 = arg0;
@@ -673,7 +673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = var30.bind(var3)(var29);
                 var30 = var29.PressableOpacity;
                 var29 = {};
-                var38 = function() { // Original name: onPress, environment: var38
+                var38 = function() {
                     _fun80897: for (var _fun80897_ip = 0;;) switch (_fun80897_ip) {
                         case 0:
                             var1 = _closure1_slot1;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun42472: for (var _fun42472_ip = 0;;) switch (_fun42472_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: CollectiblesMarketingsStore, environment: var5
+        var3 = function() {
             _fun42476: for (var _fun42476_ip = 0;;) switch (_fun42476_ip) {
                 case 0:
                     var3 = this;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getMarketingBySurface';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var1 = _closure1_slot6;
             var0 = arg0;
             var0 = var1[var0];
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fetchState';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function() { // Original name: COLLECTIBLES_MARKETING_FETCH, environment: var4
+    var8 = function() {
         var0 = _closure1_slot5;
         var0 = var0.FETCHING;
         _closure1_slot7 = var0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.COLLECTIBLES_MARKETING_FETCH = var8;
-    var8 = function(arg0) { // Original name: COLLECTIBLES_MARKETING_FETCH_SUCCESS, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.marketings;
         var0 = var0.marketingsBySurfaces;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.COLLECTIBLES_MARKETING_FETCH_SUCCESS = var8;
-    var4 = function() { // Original name: LOGOUT, environment: var4
+    var4 = function() {
         var0 = {};
         _closure1_slot6 = var0;
         var0 = _closure1_slot5;

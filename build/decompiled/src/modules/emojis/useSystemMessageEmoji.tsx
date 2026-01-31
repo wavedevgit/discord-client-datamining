@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/emojis/useSystemMessageEmoji.tsx';
     var4 = var5.bind(var6)(var4);
     var2.CUSTOM_EMOJI_REGEX = var3;
-    var3 = function(arg0) { // Original name: getSystemMessageEmoji, environment: var1
+    var3 = function arg0() {
         _fun55808: for (var _fun55808_ip = 0;;) switch (_fun55808_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSystemMessageEmoji = var3;
-    var1 = function(arg0) { // Original name: useSystemMessageEmoji, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var5 = _closure1_slot2;

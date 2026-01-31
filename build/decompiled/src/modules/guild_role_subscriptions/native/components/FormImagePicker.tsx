@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: pickImage, environment: var4
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _pickImage, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var1 = function(arg0) { // Original name: ImagePickerIcon, environment: var4
+    var1 = function arg0() {
         _fun116630: for (var _fun116630_ip = 0;;) switch (_fun116630_ip) {
             case 0:
                 var1 = arg0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.disabled = var6;
                 var0.accessibilityState = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot2;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_role_subscriptions/native/components/FormImagePicker.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: FormImagePicker, environment: var4
+    var4 = function arg0() {
         _fun116633: for (var _fun116633_ip = 0;;) switch (_fun116633_ip) {
             case 0:
                 var3 = arg0;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.Looks;
                 var21 = var21.FILLED;
                 var14.look = var21;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0) { // Original name: useStore, environment: var3
+    var1 = function arg0() {
         _fun7107: for (var _fun7107_ip = 0;;) switch (_fun7107_ip) {
             case 0:
                 var10 = arg0;
@@ -78,12 +78,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var5.bind(var0)(var4);
     var _closure1_slot2 = var4;
-    var4 = function(arg0) { // Original name: identity, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot3 = var4;
-    var4 = function(arg0) { // Original name: createImpl, environment: var3
+    var4 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = arg0;
         var3 = var2.bind(var3)(var1);
         var _closure2_slot0 = var3;
-        var0 = function(arg0) { // Original name: useBoundStore, environment: var0
+        var0 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure2_slot0;
             var1 = undefined;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: create, environment: var3
+    var3 = function arg0() {
         _fun7113: for (var _fun7113_ip = 0;;) switch (_fun7113_ip) {
             case 0:
                 var3 = arg0;

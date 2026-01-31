@@ -433,7 +433,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var11.height;
             case 699:
                 var0.estimatedItemSize = var8;
-                var8 = function(arg0) { // Original name: renderItem, environment: var9
+                var8 = function arg0() {
                     _fun46209: for (var _fun46209_ip = 0;;) switch (_fun46209_ip) {
                         case 0:
                             var10 = arg0;
@@ -464,7 +464,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = _closure2_slot10;
                         case 93:
                             var0.onLoad = var6;
-                            var6 = function(arg0) { // Original name: renderItem, environment: var5
+                            var6 = function arg0() {
                                 _fun46210: for (var _fun46210_ip = 0;;) switch (_fun46210_ip) {
                                     case 0:
                                         var8 = arg0;
@@ -748,7 +748,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1 = var3.bind(var5)(var1);
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: useDataSet, environment: var4
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var5 = arg0;
         var4 = arg1;
         var6 = arg2;
@@ -930,7 +930,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0, arg1) { // Original name: useTotalColumnFlex, environment: var4
+    var3 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var4;
@@ -999,7 +999,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: useRefWithForwardRef, environment: var4
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot8;
@@ -1050,7 +1050,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot17 = var3;
-    var3 = function(arg0, arg1) { // Original name: getFlashListScrollView, environment: var4
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1187,7 +1187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: updateViewTokens, environment: var4
+    var3 = function arg0() {
         _fun46227: for (var _fun46227_ip = 0;;) switch (_fun46227_ip) {
             case 0:
                 var4 = arg0;
@@ -1245,7 +1245,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot19 = var3;
-    var3 = function() { // Original name: getEmptyScrollEvent, environment: var4
+    var3 = function() {
         var0 = {};
         var1 = {};
         var2 = {
@@ -1257,7 +1257,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot20 = var3;
-    var3 = function(arg0) { // Original name: getListRenderedSize, environment: var4
+    var3 = function arg0() {
         _fun46229: for (var _fun46229_ip = 0;;) switch (_fun46229_ip) {
             case 0:
                 var2 = arg0;

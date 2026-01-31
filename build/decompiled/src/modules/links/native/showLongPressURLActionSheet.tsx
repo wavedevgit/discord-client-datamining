@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/links/native/showLongPressURLActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: showLongPressURLActionSheet, environment: var1
+    var1 = function arg0() {
         _fun73457: for (var _fun73457_ip = 0;;) switch (_fun73457_ip) {
             case 0:
                 var0 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 275:
                 var10 = var11.bind(var13)(var10);
                 var4.label = var10;
-                var10 = function() { // Original name: onPress, environment: var5
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var4 = 2;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7["+wbjMW"];
                 var7 = var9.bind(var10)(var7);
                 var1.label = var7;
-                var7 = function() { // Original name: onPress, environment: var5
+                var7 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 4;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.wuRE8M;
                 var4 = var10.bind(var12)(var4);
                 var7.label = var4;
-                var4 = function() { // Original name: onPress, environment: var5
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 4;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.WqhZss;
                 var10 = var12.bind(var14)(var10);
                 var7.label = var10;
-                var10 = function() { // Original name: onPress, environment: var5
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 2;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.Ej3B3Y;
                 var9 = var10.bind(var12)(var9);
                 var8.label = var9;
-                var9 = function() { // Original name: onPress, environment: var5
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 5;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.aW2YlJ;
                 var7 = var8.bind(var9)(var7);
                 var2.label = var7;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 6;

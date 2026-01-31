@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = false;
     var _closure1_slot2 = var2;
-    var0 = function() { // Original name: setUpDOM, environment: var0
+    var0 = function() {
         _fun2092: for (var _fun2092_ip = 0;;) switch (_fun2092_ip) {
             case 0:
                 var2 = _closure1_slot2;

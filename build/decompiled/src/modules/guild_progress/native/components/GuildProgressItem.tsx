@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_progress/native/components/GuildProgressItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildProgressItem, environment: var1
+    var1 = function arg0() {
         _fun90772: for (var _fun90772_ip = 0;;) switch (_fun90772_ip) {
             case 0:
                 var0 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var0];
                 var1 = var9.bind(var3)(var0);
                 var0 = {};
-                var8 = function() { // Original name: onPress, environment: var5
+                var8 = function() {
                     _fun90773: for (var _fun90773_ip = 0;;) switch (_fun90773_ip) {
                         case 0:
                             var0 = _closure2_slot2;

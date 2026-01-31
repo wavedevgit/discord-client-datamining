@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: ThreadListTableRow, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var13 = var1.thread;
         var _closure2_slot0 = var13;

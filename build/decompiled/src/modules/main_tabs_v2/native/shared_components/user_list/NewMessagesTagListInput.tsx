@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var7.bind(var8)(var3);
             var _closure1_slot7 = var3;
             var3 = var6.memo;
-            var1 = function(arg0) { // Original name: NewMessagesTagListInput, environment: var1
+            var1 = function arg0() {
                 _fun105695: for (var _fun105695_ip = 0;;) switch (_fun105695_ip) {
                     case 0:
                         var1 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4.icon = var14;
                         var4.onChangeText = var13;
                         var4.onFocus = var10;
-                        var9 = function(arg0) { // Original name: onRemove, environment: var9
+                        var9 = function arg0() {
                             _fun105697: for (var _fun105697_ip = 0;;) switch (_fun105697_ip) {
                                 case 0:
                                     var2 = _closure2_slot2;

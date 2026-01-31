@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         throw var0;
     };
     var6._scheduleOnRuntime = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setNativeProps, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun33073: for (var _fun33073_ip = 0;;) switch (_fun33073_ip) {
             case 0:
                 var2 = arg0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: updatePropsDOM, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun33074: for (var _fun33074_ip = 0;;) switch (_fun33074_ip) {
             case 0:
                 var10 = arg0;
@@ -317,7 +317,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.createJSReanimatedModule;
     var2.createJSReanimatedModule = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: _updatePropsJS, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun33075: for (var _fun33075_ip = 0;;) switch (_fun33075_ip) {
             case 0:
                 var2 = arg0;

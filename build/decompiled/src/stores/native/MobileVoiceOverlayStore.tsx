@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun67941: for (var _fun67941_ip = 0;;) switch (_fun67941_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var1 = function() { // Original name: isMobileOverlaySupported, environment: var4
+    var1 = function() {
         _fun67944: for (var _fun67944_ip = 0;;) switch (_fun67944_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.DeviceSettingsStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: MobileVoiceOverlayStore, environment: var5
+        var3 = function() {
             _fun67946: for (var _fun67946_ip = 0;;) switch (_fun67946_ip) {
                 case 0:
                     var3 = this;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getUserAgnosticState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = {};
             var1 = _closure1_slot9;
             var0.enabled = var1;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initialize';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun67948: for (var _fun67948_ip = 0;;) switch (_fun67948_ip) {
                 case 0:
                     var3 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEnabled';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun67949: for (var _fun67949_ip = 0;;) switch (_fun67949_ip) {
                 case 0:
                     var2 = _closure1_slot11;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var12 = var7.bind(var0)(var3);
     var3 = {};
-    var4 = function(arg0) { // Original name: handleMobileVoiceOverlayStateChanged, environment: var4
+    var4 = function arg0() {
         var1 = arg0;
         var4 = _closure1_slot1;
         var3 = _closure1_slot2;

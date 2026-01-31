@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: deepLinkToSubscriptionsAndroid, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -199,7 +199,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: validateReceiptAndroid, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = var3.bind(var0)();
     var2.AndroidModule = var5;
-    var5 = function() { // Original name: getInstallSourceAndroid, environment: var1
+    var5 = function() {
         _fun58349: for (var _fun58349_ip = 0;;) switch (_fun58349_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.getInstallSourceAndroid = var5;
     var2.deepLinkToSubscriptionsAndroid = var4;
     var2.validateReceiptAndroid = var3;
-    var3 = function(arg0) { // Original name: acknowledgePurchaseAndroid, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.token;
         var2 = var0.developerPayload;
@@ -258,7 +258,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.acknowledgePurchaseAndroid = var3;
-    var1 = function(arg0) { // Original name: isFeatureSupported, environment: var1
+    var1 = function arg0() {
         _fun58351: for (var _fun58351_ip = 0;;) switch (_fun58351_ip) {
             case 0:
                 var3 = _closure1_slot0;

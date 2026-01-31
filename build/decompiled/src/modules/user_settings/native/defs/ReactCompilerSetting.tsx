@@ -26,12 +26,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.WrenchIcon;
     var1.IconComponent = var8;
-    var8 = function() { // Original name: useTrailing, environment: var7
+    var8 = function() {
         var0 = 'Enabled';
         return var0;
     };
     var1.useTrailing = var8;
-    var7 = function() { // Original name: usePredicate, environment: var7
+    var7 = function() {
         var0 = false;
         return var0;
     };

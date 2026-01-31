@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/ProfileUpdateRequestUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getProfileChangesForUpdateRequest, environment: var1
+    var3 = function arg0() {
         _fun56825: for (var _fun56825_ip = 0;;) switch (_fun56825_ip) {
             case 0:
                 var1 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getProfileChangesForUpdateRequest = var3;
-    var3 = function(arg0) { // Original name: getAccountUpdateForUpdateRequest, environment: var1
+    var3 = function arg0() {
         _fun56826: for (var _fun56826_ip = 0;;) switch (_fun56826_ip) {
             case 0:
                 var1 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAccountUpdateForUpdateRequest = var3;
-    var3 = function(arg0) { // Original name: getGuildMemberChangesForUpdateRequest, environment: var1
+    var3 = function arg0() {
         _fun56827: for (var _fun56827_ip = 0;;) switch (_fun56827_ip) {
             case 0:
                 var1 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildMemberChangesForUpdateRequest = var3;
-    var1 = function(arg0) { // Original name: getPrimaryGuildChangesForUpdateRequest, environment: var1
+    var1 = function arg0() {
         _fun56828: for (var _fun56828_ip = 0;;) switch (_fun56828_ip) {
             case 0:
                 var1 = arg0;

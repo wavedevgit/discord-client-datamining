@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun56445: for (var _fun56445_ip = 0;;) switch (_fun56445_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.PromotionFlags;
     var _closure1_slot7 = var6;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: PromotionRecord, environment: var0
+        var4 = function arg0() {
             _fun56449: for (var _fun56449_ip = 0;;) switch (_fun56449_ip) {
                 case 0:
                     var1 = arg0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'isBogo';
         var5.key = var1;
-        var1 = function() { // Original name: get, environment: var0
+        var1 = function() {
             var0 = this;
             var1 = var0.promotionType;
             var3 = _closure1_slot0;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isMarketingMoment';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             var0 = this;
             var1 = var0.promotionType;
             var3 = _closure1_slot0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'hasFlag';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 8;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isCountryRestricted';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun56453: for (var _fun56453_ip = 0;;) switch (_fun56453_ip) {
                 case 0:
                     var2 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isRedeemableByTrialUsers';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var2 = this;
             var1 = var2.hasFlag;
             var0 = _closure1_slot7;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'createFromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun56455: for (var _fun56455_ip = 0;;) switch (_fun56455_ip) {
                 case 0:
                     var1 = arg0;

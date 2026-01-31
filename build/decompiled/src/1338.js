@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: primitiveEq, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun14983: for (var _fun14983_ip = 0;;) switch (_fun14983_ip) {
             case 0:
                 var3 = arg1;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: repeatedPrimitiveEq, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun14984: for (var _fun14984_ip = 0;;) switch (_fun14984_ip) {
             case 0:
                 var6 = arg0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: repeatedMsgEq, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun14985: for (var _fun14985_ip = 0;;) switch (_fun14985_ip) {
             case 0:
                 var4 = arg0;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var5.bind(var6)(var4, var0, var3);
     var0 = undefined;
     var4.reflectionEquals = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: reflectionEquals, environment: var2
+    var3 = function arg0, arg1, arg2() {
         _fun14986: for (var _fun14986_ip = 0;;) switch (_fun14986_ip) {
             case 0:
                 var1 = arg1;

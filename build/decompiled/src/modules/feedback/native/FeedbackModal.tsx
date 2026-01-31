@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FeedbackForm, environment: var1
+    var0 = function arg0() {
         _fun76310: for (var _fun76310_ip = 0;;) switch (_fun76310_ip) {
             case 0:
                 var1 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.geKm7t;
                 var13 = var14.bind(var15)(var13);
                 var9.text = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/feedback/native/FeedbackModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FeedbackModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var5 = var0.result;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var8.getHeaderCloseButton;
         var7 = var7.bind(var8)(var9);
         var5.headerLeft = var7;
-        var6 = function() { // Original name: render, environment: var6
+        var6 = function() {
             var3 = _closure1_slot7;
             var2 = _closure1_slot10;
             var1 = {};

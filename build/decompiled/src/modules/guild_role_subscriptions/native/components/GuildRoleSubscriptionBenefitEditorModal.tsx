@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: DeleteButton, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.onDelete;
         var0 = _closure1_slot13;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.channelId = var4;
                 var4 = var11.guildId;
                 var0.guildId = var4;
-                var4 = function(arg0) { // Original name: onChange, environment: var25
+                var4 = function arg0() {
                     var1 = arg0;
                     var4 = _closure2_slot9;
                     var3 = var1.id;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21.emoji = var26;
                 var26 = var11.guildId;
                 var21.guildId = var26;
-                var25 = function(arg0) { // Original name: onChange, environment: var25
+                var25 = function arg0() {
                     var1 = arg0;
                     var4 = _closure2_slot4;
                     var3 = var1.emojiId;

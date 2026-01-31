@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: useActiveThemeType, environment: var3
+    var1 = function() {
         _fun69496: for (var _fun69496_ip = 0;;) switch (_fun69496_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/client_themes/native/useActiveTheme.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: useIsCustomThemeActive, environment: var3
+    var4 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var1 = var2.bind(var1)();
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsCustomThemeActive = var4;
-    var3 = function() { // Original name: useIsClientThemeOrCustomThemeActive, environment: var3
+    var3 = function() {
         _fun69501: for (var _fun69501_ip = 0;;) switch (_fun69501_ip) {
             case 0:
                 var2 = _closure1_slot7;

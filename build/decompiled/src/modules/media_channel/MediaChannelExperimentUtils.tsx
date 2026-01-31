@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/media_channel/MediaChannelExperimentUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.GuildMediaExperiment = var4;
-    var4 = function(arg0) { // Original name: useGuildEligibleForMediaChannels, environment: var1
+    var4 = function arg0() {
         _fun65497: for (var _fun65497_ip = 0;;) switch (_fun65497_ip) {
             case 0:
                 var3 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForMediaChannels = var4;
     var2.GuildMediaPostPreviewEmbedUsersExperiments = var3;
-    var3 = function() { // Original name: useEligibleForGuildMediaChannelPostPreviewEmbed, environment: var1
+    var3 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useExperiment;
         var1 = {};
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEligibleForGuildMediaChannelPostPreviewEmbed = var3;
-    var1 = function() { // Original name: isEligibleForGuildMediaChannelPostPreviewEmbed, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = var3.getCurrentConfig;
         var1 = {};

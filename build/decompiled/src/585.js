@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = /\s/;
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: trimmedEndIndex, environment: var0
+    var1 = function arg0() {
         _fun6953: for (var _fun6953_ip = 0;;) switch (_fun6953_ip) {
             case 0:
                 var4 = arg0;

@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'components_native/calls/stream/VideoEmptyState.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: VideoEmptyState, environment: var3
+    var3 = function arg0() {
         _fun64291: for (var _fun64291_ip = 0;;) switch (_fun64291_ip) {
             case 0:
                 var7 = arg0;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["4EGMWL"];
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 13;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/avatar_decorations/native/AvatarDecorationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getDecorationSizeForAvatarSize, environment: var1
+    var3 = function arg0() {
         _fun48951: for (var _fun48951_ip = 0;;) switch (_fun48951_ip) {
             case 0:
                 var3 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDecorationSizeForAvatarSize = var3;
-    var3 = function(arg0, arg1) { // Original name: getDecorationCutoutForAvatarCutout, environment: var1
+    var3 = function arg0, arg1() {
         _fun48952: for (var _fun48952_ip = 0;;) switch (_fun48952_ip) {
             case 0:
                 var5 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDecorationCutoutForAvatarCutout = var3;
-    var1 = function(arg0) { // Original name: openAvatarDecorationActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.user;
         var8 = var0.guildId;

@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: VariantOption, environment: var1
+    var3 = function arg0() {
         _fun87171: for (var _fun87171_ip = 0;;) switch (_fun87171_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: VariantCheckmark, environment: var1
+    var3 = function arg0() {
         _fun87172: for (var _fun87172_ip = 0;;) switch (_fun87172_ip) {
             case 0:
                 var0 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ProductDetailsActionSheetVariants.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun87173: for (var _fun87173_ip = 0;;) switch (_fun87173_ip) {
             case 0:
                 var0 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot0;
                     var5 = var5 === var6;
                     var2.isSelected = var5;
-                    var1 = function() { // Original name: onSelect, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot1;
                         var1 = _closure3_slot0;
                         var0 = undefined;

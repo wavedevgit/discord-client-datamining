@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ParticipantSelectionTypes = var9;
     var2.VoicePlatforms = var8;
     var2.CallMenuEntrypoint = var7;
-    var7 = function(arg0) { // Original name: isStreamParticipant, environment: var6
+    var7 = function arg0() {
         _fun31087: for (var _fun31087_ip = 0;;) switch (_fun31087_ip) {
             case 0:
                 var3 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStreamParticipant = var7;
-    var7 = function(arg0) { // Original name: isUserParticipant, environment: var6
+    var7 = function arg0() {
         _fun31088: for (var _fun31088_ip = 0;;) switch (_fun31088_ip) {
             case 0:
                 var0 = arg0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isUserParticipant = var7;
-    var6 = function(arg0) { // Original name: isActivityParticipant, environment: var6
+    var6 = function arg0() {
         _fun31089: for (var _fun31089_ip = 0;;) switch (_fun31089_ip) {
             case 0:
                 var0 = arg0;

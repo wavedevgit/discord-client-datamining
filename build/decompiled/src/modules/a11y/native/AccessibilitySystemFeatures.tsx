@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: toggleFeature, environment: var3
+    var0 = function arg0, arg1() {
         _fun97721: for (var _fun97721_ip = 0;;) switch (_fun97721_ip) {
             case 0:
                 var3 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.NONE;
     var _closure1_slot8 = var1;
     var1 = {};
-    var6 = function() { // Original name: init, environment: var3
+    var6 = function() {
         var1 = this;
         var4 = _closure1_slot6;
         var3 = var4.addChangeListener;
@@ -168,12 +168,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.init = var6;
-    var6 = function() { // Original name: getActiveFeatures, environment: var3
+    var6 = function() {
         var0 = _closure1_slot8;
         return var0;
     };
     var1.getActiveFeatures = var6;
-    var6 = function(arg0) { // Original name: handleReduceMotionChanged, environment: var3
+    var6 = function arg0() {
         _fun97724: for (var _fun97724_ip = 0;;) switch (_fun97724_ip) {
             case 0:
                 var4 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.handleReduceMotionChanged = var6;
-    var6 = function(arg0) { // Original name: handleReduceTransparencyChanged, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot9;
         var0 = _closure1_slot7;
         var2 = var0.REDUCED_TRANSPARENCY;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.handleReduceTransparencyChanged = var6;
-    var6 = function(arg0) { // Original name: handleBoldTextChanged, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot9;
         var0 = _closure1_slot7;
         var2 = var0.BOLD_TEXT;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.handleBoldTextChanged = var6;
-    var6 = function(arg0) { // Original name: handleGrayscaleChanged, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot9;
         var0 = _closure1_slot7;
         var2 = var0.GRAYSCALE;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.handleGrayscaleChanged = var6;
-    var6 = function(arg0) { // Original name: handleInvertColorsChanged, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot9;
         var0 = _closure1_slot7;
         var2 = var0.INVERT_COLORS;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.handleInvertColorsChanged = var6;
-    var6 = function(arg0) { // Original name: handlePreferredColorSchemeChanged, environment: var3
+    var6 = function arg0() {
         _fun97729: for (var _fun97729_ip = 0;;) switch (_fun97729_ip) {
             case 0:
                 var0 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.handlePreferredColorSchemeChanged = var6;
-    var6 = function() { // Original name: handleAccessibilityStoreChanged, environment: var3
+    var6 = function() {
         var3 = _closure1_slot9;
         var2 = _closure1_slot7;
         var5 = var2.REDUCED_MOTION;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.handleAccessibilityStoreChanged = var6;
-    var3 = function(arg0) { // Original name: handleAppStateChange, environment: var3
+    var3 = function arg0() {
         _fun97731: for (var _fun97731_ip = 0;;) switch (_fun97731_ip) {
             case 0:
                 var2 = 'active';

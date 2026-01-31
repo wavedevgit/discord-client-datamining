@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = dependencyMap;
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var14;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun35168: for (var _fun35168_ip = 0;;) switch (_fun35168_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun35170: for (var _fun35170_ip = 0;;) switch (_fun35170_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: navigationToRootTabHelper, environment: var1
+    var0 = function arg0, arg1() {
         _fun35171: for (var _fun35171_ip = 0;;) switch (_fun35171_ip) {
             case 0:
                 var1 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var11 = function(arg0) { // Original name: coerceMainRoute, environment: var1
+    var11 = function arg0() {
         _fun35173: for (var _fun35173_ip = 0;;) switch (_fun35173_ip) {
             case 0:
                 var0 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var11;
-    var10 = function(arg0) { // Original name: coerceChannelRoute, environment: var1
+    var10 = function arg0() {
         _fun35174: for (var _fun35174_ip = 0;;) switch (_fun35174_ip) {
             case 0:
                 var0 = arg0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var10;
-    var9 = function(arg0) { // Original name: coerceTabsRoute, environment: var1
+    var9 = function arg0() {
         _fun35175: for (var _fun35175_ip = 0;;) switch (_fun35175_ip) {
             case 0:
                 var0 = arg0;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var9;
-    var8 = function(arg0) { // Original name: coerceGuildsRoute, environment: var1
+    var8 = function arg0() {
         _fun35176: for (var _fun35176_ip = 0;;) switch (_fun35176_ip) {
             case 0:
                 var0 = arg0;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var8;
-    var7 = function(arg0) { // Original name: coerceICYMIRoute, environment: var1
+    var7 = function arg0() {
         _fun35177: for (var _fun35177_ip = 0;;) switch (_fun35177_ip) {
             case 0:
                 var0 = arg0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var7;
-    var6 = function(arg0) { // Original name: coerceModalRoute, environment: var1
+    var6 = function arg0() {
         _fun35178: for (var _fun35178_ip = 0;;) switch (_fun35178_ip) {
             case 0:
                 var0 = arg0;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var6;
-    var5 = function(arg0) { // Original name: isModalOpen, environment: var1
+    var5 = function arg0() {
         _fun35179: for (var _fun35179_ip = 0;;) switch (_fun35179_ip) {
             case 0:
                 var4 = arg0;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var5;
-    var4 = function() { // Original name: getOpenModalKey, environment: var1
+    var4 = function() {
         _fun35180: for (var _fun35180_ip = 0;;) switch (_fun35180_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var3 = function() { // Original name: getCurrentNavigationRouteName, environment: var1
+    var3 = function() {
         _fun35181: for (var _fun35181_ip = 0;;) switch (_fun35181_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var14.fileFinishedImporting;
     var12 = 'modules/main_tabs_v2/helpers/NavigationRouteUtils.native.tsx';
     var12 = var13.bind(var14)(var12);
-    var12 = function(arg0) { // Original name: navigateToChannel, environment: var1
+    var12 = function arg0() {
         _fun35182: for (var _fun35182_ip = 0;;) switch (_fun35182_ip) {
             case 0:
                 var0 = arg0;
@@ -1124,7 +1124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToChannel = var12;
-    var12 = function(arg0, arg1) { // Original name: navigateToMemberVerification, environment: var1
+    var12 = function arg0, arg1() {
         _fun35183: for (var _fun35183_ip = 0;;) switch (_fun35183_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -1182,7 +1182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToMemberVerification = var12;
-    var12 = function(arg0) { // Original name: navigateToRootTab, environment: var1
+    var12 = function arg0() {
         _fun35184: for (var _fun35184_ip = 0;;) switch (_fun35184_ip) {
             case 0:
                 var5 = arg0;
@@ -1373,7 +1373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToRootTab = var12;
-    var12 = function() { // Original name: resetToAuthRoute, environment: var1
+    var12 = function() {
         _fun35186: for (var _fun35186_ip = 0;;) switch (_fun35186_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -1426,7 +1426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.resetToAuthRoute = var12;
-    var12 = function() { // Original name: resetToPanelsUI, environment: var1
+    var12 = function() {
         _fun35188: for (var _fun35188_ip = 0;;) switch (_fun35188_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -1509,7 +1509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.resetToPanelsUI = var12;
-    var12 = function(arg0) { // Original name: pushModal, environment: var1
+    var12 = function arg0() {
         _fun35189: for (var _fun35189_ip = 0;;) switch (_fun35189_ip) {
             case 0:
                 var2 = arg0;
@@ -1605,7 +1605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.pushModal = var12;
-    var12 = function(arg0, arg1) { // Original name: popModal, environment: var1
+    var12 = function arg0, arg1() {
         _fun35190: for (var _fun35190_ip = 0;;) switch (_fun35190_ip) {
             case 0:
                 var14 = arg0;
@@ -1865,7 +1865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot20 = var12;
     var2.popModal = var12;
-    var12 = function(arg0) { // Original name: popModalsAboveKey, environment: var1
+    var12 = function arg0() {
         _fun35194: for (var _fun35194_ip = 0;;) switch (_fun35194_ip) {
             case 0:
                 var11 = arg0;
@@ -1986,7 +1986,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.popModalsAboveKey = var12;
-    var12 = function() { // Original name: popAllModals, environment: var1
+    var12 = function() {
         _fun35195: for (var _fun35195_ip = 0;;) switch (_fun35195_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -2082,7 +2082,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.popAllModals = var12;
-    var12 = function() { // Original name: getSelectedGuildFromRoute, environment: var1
+    var12 = function() {
         _fun35196: for (var _fun35196_ip = 0;;) switch (_fun35196_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -2192,7 +2192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSelectedGuildFromRoute = var12;
-    var12 = function() { // Original name: getSelectedChannelFromRoute, environment: var1
+    var12 = function() {
         _fun35197: for (var _fun35197_ip = 0;;) switch (_fun35197_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -2253,7 +2253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSelectedChannelFromRoute = var12;
-    var12 = function(arg0, arg1) { // Original name: navigateToNewGroupDM, environment: var1
+    var12 = function arg0, arg1() {
         _fun35198: for (var _fun35198_ip = 0;;) switch (_fun35198_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -2289,7 +2289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToNewGroupDM = var12;
-    var12 = function(arg0, arg1) { // Original name: navigateToCreateThread, environment: var1
+    var12 = function arg0, arg1() {
         _fun35199: for (var _fun35199_ip = 0;;) switch (_fun35199_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -2334,7 +2334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToCreateThread = var12;
-    var12 = function(arg0) { // Original name: navigateToContextMenuCommands, environment: var1
+    var12 = function arg0() {
         _fun35200: for (var _fun35200_ip = 0;;) switch (_fun35200_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -2366,7 +2366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToContextMenuCommands = var12;
-    var12 = function(arg0) { // Original name: popScreens, environment: var1
+    var12 = function arg0() {
         _fun35201: for (var _fun35201_ip = 0;;) switch (_fun35201_ip) {
             case 0:
                 var0 = arg0;
@@ -2443,7 +2443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.popScreens = var12;
     var2.coerceMainRoute = var11;
     var2.coerceChannelRoute = var10;
-    var10 = function(arg0) { // Original name: coerceSidebarRoute, environment: var1
+    var10 = function arg0() {
         _fun35203: for (var _fun35203_ip = 0;;) switch (_fun35203_ip) {
             case 0:
                 var0 = arg0;
@@ -2469,7 +2469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.coerceSidebarRoute = var10;
     var2.coerceTabsRoute = var9;
     var2.coerceGuildsRoute = var8;
-    var8 = function(arg0) { // Original name: coerceMessagesRoute, environment: var1
+    var8 = function arg0() {
         _fun35204: for (var _fun35204_ip = 0;;) switch (_fun35204_ip) {
             case 0:
                 var0 = arg0;
@@ -2496,7 +2496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.coerceICYMIRoute = var7;
     var2.coerceModalRoute = var6;
     var2.isModalOpen = var5;
-    var5 = function(arg0) { // Original name: useIsModalOpen, environment: var1
+    var5 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -2559,7 +2559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsModalOpen = var5;
     var2.getOpenModalKey = var4;
-    var4 = function() { // Original name: useOpenModalKey, environment: var1
+    var4 = function() {
         var3 = _closure1_slot4;
         var4 = undefined;
         var0 = function() { // Environment: var1
@@ -2617,7 +2617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOpenModalKey = var4;
     var2.getCurrentNavigationRouteName = var3;
-    var3 = function() { // Original name: useCurrentNavigationRouteName, environment: var1
+    var3 = function() {
         var3 = _closure1_slot4;
         var4 = undefined;
         var0 = function() { // Environment: var1
@@ -2674,7 +2674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCurrentNavigationRouteName = var3;
-    var3 = function() { // Original name: getCurrentRouteParents, environment: var1
+    var3 = function() {
         _fun35217: for (var _fun35217_ip = 0;;) switch (_fun35217_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -2790,7 +2790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCurrentRouteParents = var3;
-    var3 = function(arg0) { // Original name: getTabsRouteIfActive, environment: var1
+    var3 = function arg0() {
         _fun35218: for (var _fun35218_ip = 0;;) switch (_fun35218_ip) {
             case 0:
                 var0 = arg0;
@@ -2837,7 +2837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getTabsRouteIfActive = var3;
-    var3 = function(arg0) { // Original name: getICYMIRouteIfActive, environment: var1
+    var3 = function arg0() {
         _fun35219: for (var _fun35219_ip = 0;;) switch (_fun35219_ip) {
             case 0:
                 var7 = arg0;
@@ -2911,7 +2911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getICYMIRouteIfActive = var3;
-    var1 = function(arg0) { // Original name: setHomeDrawerState, environment: var1
+    var1 = function arg0() {
         _fun35220: for (var _fun35220_ip = 0;;) switch (_fun35220_ip) {
             case 0:
                 var3 = _closure1_slot0;

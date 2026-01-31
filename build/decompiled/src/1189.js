@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var3 = 'ReactNativeNavigation';
     var2.INTEGRATION_NAME = var3;
-    var1 = function(arg0) { // Original name: reactNativeNavigationIntegration, environment: var1
+    var1 = function arg0() {
         _fun12929: for (var _fun12929_ip = 0;;) switch (_fun12929_ip) {
             case 0:
                 var3 = arg0;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot6 = var3;
                 var3 = null;
                 var _closure2_slot7 = var3;
-                var4 = function() { // Original name: startIdleNavigationSpan, environment: var1
+                var4 = function() {
                     _fun12930: for (var _fun12930_ip = 0;;) switch (_fun12930_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.events;
                 var3 = var0.bind(var2)();
                 var2 = var3.registerComponentWillAppearListener;
-                var0 = function(arg0) { // Original name: updateLatestNavigationSpanWithCurrentComponent, environment: var1
+                var0 = function arg0() {
                     _fun12932: for (var _fun12932_ip = 0;;) switch (_fun12932_ip) {
                         case 0:
                             var2 = arg0;
@@ -400,7 +400,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0 = var2.bind(var3)(var0);
-                var0 = function(arg0) { // Original name: pushRecentComponentId, environment: var1
+                var0 = function arg0() {
                     _fun12933: for (var _fun12933_ip = 0;;) switch (_fun12933_ip) {
                         case 0:
                             var3 = _closure2_slot5;
@@ -428,7 +428,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot8 = var0;
-                var0 = function() { // Original name: discardLatestNavigationSpan, environment: var1
+                var0 = function() {
                     _fun12934: for (var _fun12934_ip = 0;;) switch (_fun12934_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot9 = var0;
-                var0 = function() { // Original name: clearStateChangeTimeout, environment: var1
+                var0 = function() {
                     _fun12935: for (var _fun12935_ip = 0;;) switch (_fun12935_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -490,7 +490,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ReactNativeNavigation';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: afterAllSetup, environment: var1
+                var1 = function arg0() {
                     _fun12936: for (var _fun12936_ip = 0;;) switch (_fun12936_ip) {
                         case 0:
                             var2 = _closure1_slot0;

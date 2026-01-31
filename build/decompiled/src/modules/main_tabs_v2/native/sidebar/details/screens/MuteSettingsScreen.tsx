@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: UnmuteOptions, environment: var1
+    var0 = function arg0() {
         _fun109375: for (var _fun109375_ip = 0;;) switch (_fun109375_ip) {
             case 0:
                 var1 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: MuteOptions, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.channel;
         var _closure2_slot0 = var10;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.channelId = var5;
             var4 = var4.guild_id;
             var1.guildId = var4;
-            var4 = function(arg0) { // Original name: onOptionPress, environment: var4
+            var4 = function arg0() {
                 _fun109380: for (var _fun109380_ip = 0;;) switch (_fun109380_ip) {
                     case 0:
                         var0 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var0.TableRow;
             var0 = {};
             var0.label = var4;
-            var5 = function() { // Original name: onPress, environment: var5
+            var5 = function() {
                 var2 = _closure2_slot4;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: NotificationSettingsButton, environment: var1
+    var0 = function arg0() {
         _fun109383: for (var _fun109383_ip = 0;;) switch (_fun109383_ip) {
             case 0:
                 var1 = arg0;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = ')';
                     var3 = var13[var6](var12, var11, var10, var9, var8);
                     var0.title = var3;
-                    var3 = function() { // Original name: headerTitle, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot10;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;

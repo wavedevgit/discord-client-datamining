@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun38438: for (var _fun38438_ip = 0;;) switch (_fun38438_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: parseChannelId, environment: var1
+    var0 = function arg0() {
         _fun38441: for (var _fun38441_ip = 0;;) switch (_fun38441_ip) {
             case 0:
                 var5 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: toggleSection, environment: var1
+    var0 = function arg0() {
         _fun38442: for (var _fun38442_ip = 0;;) switch (_fun38442_ip) {
             case 0:
                 var1 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: handlePermissionsChange, environment: var1
+    var0 = function() {
         _fun38443: for (var _fun38443_ip = 0;;) switch (_fun38443_ip) {
             case 0:
                 var11 = _closure1_slot24;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: setIsSearchSidebarOpen, environment: var1
+    var0 = function() {
         _fun38444: for (var _fun38444_ip = 0;;) switch (_fun38444_ip) {
             case 0:
                 var2 = _closure1_slot27;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var7 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ChannelSectionStore, environment: var5
+        var3 = function() {
             _fun38446: for (var _fun38446_ip = 0;;) switch (_fun38446_ip) {
                 case 0:
                     var3 = this;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun38447: for (var _fun38447_ip = 0;;) switch (_fun38447_ip) {
                 case 0:
                     var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot21;
             var0.isMembersOpen = var2;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSection';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun38449: for (var _fun38449_ip = 0;;) switch (_fun38449_ip) {
                 case 0:
                     var1 = _closure1_slot26;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSidebarState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun38450: for (var _fun38450_ip = 0;;) switch (_fun38450_ip) {
                 case 0:
                     var3 = _closure1_slot29;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildSidebarState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun38451: for (var _fun38451_ip = 0;;) switch (_fun38451_ip) {
                 case 0:
                     var2 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentSidebarChannelId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun38452: for (var _fun38452_ip = 0;;) switch (_fun38452_ip) {
                 case 0:
                     var1 = _closure1_slot29;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentSidebarMessageId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun38453: for (var _fun38453_ip = 0;;) switch (_fun38453_ip) {
                 case 0:
                     var1 = _closure1_slot29;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentSearchContextId';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot27;
             return var0;
         };
@@ -830,7 +830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var12 = var4.bind(var0)(var3);
     var3 = {};
-    var4 = function(arg0) { // Original name: handleSetSelectedSearchContext, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.searchContextId;
         _closure1_slot27 = var1;
@@ -840,7 +840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SIDEBAR_SET_SELECTED_SEARCH_CONTEXT = var4;
-    var4 = function() { // Original name: handleChannelToggleMembersSection, environment: var1
+    var4 = function() {
         _fun38456: for (var _fun38456_ip = 0;;) switch (_fun38456_ip) {
             case 0:
                 var0 = _closure1_slot26;
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_TOGGLE_MEMBERS_SECTION = var4;
-    var4 = function() { // Original name: handleUserProfileSidebarToggleSection, environment: var1
+    var4 = function() {
         _fun38457: for (var _fun38457_ip = 0;;) switch (_fun38457_ip) {
             case 0:
                 var0 = _closure1_slot23;
@@ -912,7 +912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.USER_PROFILE_SIDEBAR_TOGGLE_SECTION = var4;
-    var4 = function() { // Original name: handleChannelToggleSummariesSection, environment: var1
+    var4 = function() {
         _fun38458: for (var _fun38458_ip = 0;;) switch (_fun38458_ip) {
             case 0:
                 var0 = _closure1_slot21;
@@ -936,7 +936,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_TOGGLE_SUMMARIES_SECTION = var4;
-    var4 = function(arg0) { // Original name: handleSidebarViewChannel, environment: var1
+    var4 = function arg0() {
         _fun38459: for (var _fun38459_ip = 0;;) switch (_fun38459_ip) {
             case 0:
                 var0 = arg0;
@@ -989,7 +989,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.SIDEBAR_VIEW_CHANNEL = var4;
-    var4 = function(arg0) { // Original name: handleSidebarViewGuild, environment: var1
+    var4 = function arg0() {
         _fun38460: for (var _fun38460_ip = 0;;) switch (_fun38460_ip) {
             case 0:
                 var0 = arg0;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.SIDEBAR_VIEW_GUILD = var4;
-    var4 = function(arg0) { // Original name: handleCreateThread, environment: var1
+    var4 = function arg0() {
         _fun38461: for (var _fun38461_ip = 0;;) switch (_fun38461_ip) {
             case 0:
                 var0 = arg0;
@@ -1059,7 +1059,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.SIDEBAR_CREATE_THREAD = var4;
-    var4 = function(arg0) { // Original name: handleCloseSidebar, environment: var1
+    var4 = function arg0() {
         _fun38462: for (var _fun38462_ip = 0;;) switch (_fun38462_ip) {
             case 0:
                 var0 = arg0;
@@ -1080,7 +1080,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.SIDEBAR_CLOSE = var4;
-    var4 = function(arg0) { // Original name: handleGuildCloseSidebar, environment: var1
+    var4 = function arg0() {
         _fun38463: for (var _fun38463_ip = 0;;) switch (_fun38463_ip) {
             case 0:
                 var0 = arg0;
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.SIDEBAR_CLOSE_GUILD = var4;
-    var4 = function(arg0) { // Original name: handleChannelDelete, environment: var1
+    var4 = function arg0() {
         _fun38464: for (var _fun38464_ip = 0;;) switch (_fun38464_ip) {
             case 0:
                 var0 = arg0;
@@ -1168,7 +1168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_DELETE = var4;
-    var4 = function() { // Original name: handleChannelSelect, environment: var1
+    var4 = function() {
         _fun38465: for (var _fun38465_ip = 0;;) switch (_fun38465_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -1198,7 +1198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_SELECT = var4;
-    var4 = function(arg0) { // Original name: handleThreadCreate, environment: var1
+    var4 = function arg0() {
         _fun38466: for (var _fun38466_ip = 0;;) switch (_fun38466_ip) {
             case 0:
                 var0 = arg0;
@@ -1285,7 +1285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.THREAD_CREATE = var4;
-    var4 = function(arg0) { // Original name: handleThreadDelete, environment: var1
+    var4 = function arg0() {
         _fun38467: for (var _fun38467_ip = 0;;) switch (_fun38467_ip) {
             case 0:
                 var0 = arg0;
@@ -1349,7 +1349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var3 = 'message_requests';
     var2.MESSAGE_REQUESTS_BASE_CHANNEL_ID = var3;
-    var1 = function(arg0) { // Original name: isViewChannelSidebar, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
         var0 = 16;

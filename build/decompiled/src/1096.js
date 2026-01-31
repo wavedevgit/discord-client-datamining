@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var13 = dependencyMap;
             var _closure1_slot0 = var12;
             var _closure1_slot1 = var13;
-            var4 = function(arg0) { // Original name: enrichWithThreadInformation, environment: var1
+            var4 = function arg0() {
                 _fun12055: for (var _fun12055_ip = 0;;) switch (_fun12055_ip) {
                     case 0:
                         var3 = arg0;
@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot14 = var4;
-            var5 = function(arg0, arg1, arg2, arg3) { // Original name: createProfilePayload, environment: var1
+            var5 = function arg0, arg1, arg2, arg3() {
                 _fun12056: for (var _fun12056_ip = 0;;) switch (_fun12056_ip) {
                     case 0:
                         var3 = arg1;
@@ -335,7 +335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot15 = var5;
-            var6 = function(arg0) { // Original name: convertJSSelfProfileToSampledFormat, environment: var1
+            var6 = function arg0() {
                 _fun12057: for (var _fun12057_ip = 0;;) switch (_fun12057_ip) {
                     case 0:
                         var2 = arg0;
@@ -575,7 +575,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot16 = var6;
-            var7 = function(arg0) { // Original name: applyDebugMetadata, environment: var1
+            var7 = function arg0() {
                 _fun12059: for (var _fun12059_ip = 0;;) switch (_fun12059_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -627,7 +627,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot17 = var7;
-            var3 = function(arg0) { // Original name: isValidSampleRate, environment: var1
+            var3 = function arg0() {
                 _fun12060: for (var _fun12060_ip = 0;;) switch (_fun12060_ip) {
                     case 0:
                         var8 = arg0;
@@ -1025,7 +1025,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.MAX_PROFILE_DURATION_MS = var10;
             var2.PROFILER_THREAD_ID_STRING = var9;
             var2.PROFILER_THREAD_NAME = var8;
-            var8 = function(arg0, arg1) { // Original name: addProfileToGlobalCache, environment: var1
+            var8 = function arg0, arg1() {
                 _fun12063: for (var _fun12063_ip = 0;;) switch (_fun12063_ip) {
                     case 0:
                         var4 = _closure1_slot13;
@@ -1062,7 +1062,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.addProfileToGlobalCache = var8;
-            var8 = function(arg0, arg1) { // Original name: addProfilesToEnvelope, environment: var1
+            var8 = function arg0, arg1() {
                 _fun12064: for (var _fun12064_ip = 0;;) switch (_fun12064_ip) {
                     case 0:
                         var1 = arg1;
@@ -1112,7 +1112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.addProfilesToEnvelope = var8;
             var2.applyDebugMetadata = var7;
-            var7 = function(arg0) { // Original name: attachProfiledThreadToEvent, environment: var1
+            var7 = function arg0() {
                 _fun12065: for (var _fun12065_ip = 0;;) switch (_fun12065_ip) {
                     case 0:
                         var0 = arg0;
@@ -1248,7 +1248,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.attachProfiledThreadToEvent = var7;
             var2.convertJSSelfProfileToSampledFormat = var6;
-            var6 = function(arg0, arg1, arg2) { // Original name: createProfileChunkPayload, environment: var1
+            var6 = function arg0, arg1, arg2() {
                 _fun12067: for (var _fun12067_ip = 0;;) switch (_fun12067_ip) {
                     case 0:
                         var4 = arg0;
@@ -1609,7 +1609,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.createProfileChunkPayload = var6;
             var2.createProfilePayload = var5;
-            var5 = function(arg0, arg1, arg2, arg3) { // Original name: createProfilingEvent, environment: var1
+            var5 = function arg0, arg1, arg2, arg3() {
                 _fun12068: for (var _fun12068_ip = 0;;) switch (_fun12068_ip) {
                     case 0:
                         var6 = arg2;
@@ -1700,7 +1700,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.createProfilingEvent = var5;
             var2.enrichWithThreadInformation = var4;
-            var4 = function(arg0) { // Original name: findProfiledTransactionsFromEnvelope, environment: var1
+            var4 = function arg0() {
                 var0 = new Array(0);
                 var _closure2_slot0 = var0;
                 var4 = _closure1_slot0;
@@ -1786,13 +1786,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.findProfiledTransactionsFromEnvelope = var4;
-            var4 = function() { // Original name: getActiveProfilesCount, environment: var1
+            var4 = function() {
                 var0 = _closure1_slot13;
                 var0 = var0.size;
                 return var0;
             };
             var2.getActiveProfilesCount = var4;
-            var4 = function(arg0) { // Original name: hasLegacyProfiling, environment: var1
+            var4 = function arg0() {
                 var0 = arg0;
                 var1 = var0.profilesSampleRate;
                 var0 = undefined;
@@ -1800,7 +1800,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.hasLegacyProfiling = var4;
-            var4 = function(arg0) { // Original name: isAutomatedPageLoadSpan, environment: var1
+            var4 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 1;
@@ -1817,7 +1817,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.isAutomatedPageLoadSpan = var4;
             var2.isValidSampleRate = var3;
-            var3 = function(arg0) { // Original name: shouldProfileSession, environment: var1
+            var3 = function arg0() {
                 _fun12074: for (var _fun12074_ip = 0;;) switch (_fun12074_ip) {
                     case 0:
                         var1 = arg0;
@@ -1938,7 +1938,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.shouldProfileSession = var3;
-            var3 = function(arg0) { // Original name: shouldProfileSpanLegacy, environment: var1
+            var3 = function arg0() {
                 _fun12075: for (var _fun12075_ip = 0;;) switch (_fun12075_ip) {
                     case 0:
                         var2 = arg0;
@@ -2168,7 +2168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.shouldProfileSpanLegacy = var3;
-            var3 = function() { // Original name: startJSSelfProfile, environment: var1
+            var3 = function() {
                 _fun12076: for (var _fun12076_ip = 0;;) switch (_fun12076_ip) {
                     case 0:
                         var0 = undefined;
@@ -2271,7 +2271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.startJSSelfProfile = var3;
-            var3 = function(arg0) { // Original name: takeProfileFromGlobalCache, environment: var1
+            var3 = function arg0() {
                 _fun12077: for (var _fun12077_ip = 0;;) switch (_fun12077_ip) {
                     case 0:
                         var3 = arg0;
@@ -2291,7 +2291,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.takeProfileFromGlobalCache = var3;
-            var1 = function(arg0) { // Original name: validateProfileChunk, environment: var1
+            var1 = function arg0() {
                 _fun12078: for (var _fun12078_ip = 0;;) switch (_fun12078_ip) {
                     case 0:
                         var0 = arg0;
@@ -2313,7 +2313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun12078
                         }
                     case 35:
-                        var5 = function(arg0) { // Original name: isHex32, environment: var2
+                        var5 = function arg0() {
                             _fun12079: for (var _fun12079_ip = 0;;) switch (_fun12079_ip) {
                                 case 0:
                                     var3 = arg0;

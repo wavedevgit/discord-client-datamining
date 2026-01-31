@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: computeCanEveryoneInGuildSeeRoleSubscriptions, environment: var1
+    var0 = function arg0() {
         _fun49628: for (var _fun49628_ip = 0;;) switch (_fun49628_ip) {
             case 0:
                 var3 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var3 = function(arg0) { // Original name: useRoleSubscriptionsVisibleInGuild, environment: var1
+    var3 = function arg0() {
         _fun49629: for (var _fun49629_ip = 0;;) switch (_fun49629_ip) {
             case 0:
                 var4 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/useRoleSubscriptionsVisibleInGuild.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: areRoleSubscriptionsVisibleInGuild, environment: var1
+    var4 = function arg0, arg1() {
         _fun49631: for (var _fun49631_ip = 0;;) switch (_fun49631_ip) {
             case 0:
                 var4 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.areRoleSubscriptionsVisibleInGuild = var4;
     var2.useRoleSubscriptionsVisibleInGuild = var3;
-    var1 = function(arg0) { // Original name: useShowRoleSubscriptionsInChannelList, environment: var1
+    var1 = function arg0() {
         _fun49632: for (var _fun49632_ip = 0;;) switch (_fun49632_ip) {
             case 0:
                 var4 = arg0;

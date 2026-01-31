@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/MobileTrialUserSettingsAvatarBadge.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: MobileTrialUserSettingsAvatarBadge, environment: var1
+    var1 = function() {
         _fun104583: for (var _fun104583_ip = 0;;) switch (_fun104583_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var6;
                 var0.contentTypes = var5;
-                var4 = function(arg0) { // Original name: children, environment: var4
+                var4 = function arg0() {
                     _fun104585: for (var _fun104585_ip = 0;;) switch (_fun104585_ip) {
                         case 0:
                             var0 = arg0;

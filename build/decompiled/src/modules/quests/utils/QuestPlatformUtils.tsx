@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: supportedConsoles, environment: var1
+    var4 = function arg0() {
         _fun47450: for (var _fun47450_ip = 0;;) switch (_fun47450_ip) {
             case 0:
                 var0 = new Array(0);
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: getPlatformTypeForHintMessage, environment: var1
+    var3 = function arg0() {
         _fun47451: for (var _fun47451_ip = 0;;) switch (_fun47451_ip) {
             case 0:
                 var0 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/quests/utils/QuestPlatformUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: supportedTaskPlatforms, environment: var1
+    var5 = function arg0() {
         _fun47452: for (var _fun47452_ip = 0;;) switch (_fun47452_ip) {
             case 0:
                 var4 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.supportedTaskPlatforms = var5;
     var2.supportedConsoles = var4;
-    var4 = function(arg0) { // Original name: isQuestSupportedOnWeb, environment: var1
+    var4 = function arg0() {
         _fun47453: for (var _fun47453_ip = 0;;) switch (_fun47453_ip) {
             case 0:
                 var3 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isQuestSupportedOnWeb = var4;
     var2.getPlatformTypeForHintMessage = var3;
-    var3 = function(arg0, arg1) { // Original name: openAuthorizationConnectionModal, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var3 = arg1;
         var4 = var0.platformType;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openAuthorizationConnectionModal = var3;
-    var3 = function(arg0) { // Original name: getExpiredCredentialsHintMessage, environment: var1
+    var3 = function arg0() {
         _fun47455: for (var _fun47455_ip = 0;;) switch (_fun47455_ip) {
             case 0:
                 var2 = _closure1_slot8;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExpiredCredentialsHintMessage = var3;
-    var3 = function(arg0, arg1) { // Original name: openGameLinkDirectly, environment: var1
+    var3 = function arg0, arg1() {
         _fun47456: for (var _fun47456_ip = 0;;) switch (_fun47456_ip) {
             case 0:
                 var9 = arg0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.openGameLinkDirectly = var3;
-    var3 = function(arg0, arg1) { // Original name: openConsoleConnectionSettings, environment: var1
+    var3 = function arg0, arg1() {
         var7 = arg1;
         var0 = arg0;
         var8 = var0.quest;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openConsoleConnectionSettings = var3;
-    var1 = function(arg0, arg1) { // Original name: openAddConsoleConnectionModal, environment: var1
+    var1 = function arg0, arg1() {
         _fun47458: for (var _fun47458_ip = 0;;) switch (_fun47458_ip) {
             case 0:
                 var6 = arg1;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var6 = 'CONNECTIONS_GRID_MODAL_SHOW';
                 var1.type = var6;
-                var6 = function(arg0) { // Original name: onComplete, environment: var6
+                var6 = function arg0() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 5;

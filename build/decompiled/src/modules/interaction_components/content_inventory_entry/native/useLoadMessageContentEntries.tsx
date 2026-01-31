@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun77138: for (var _fun77138_ip = 0;;) switch (_fun77138_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun77140: for (var _fun77140_ip = 0;;) switch (_fun77140_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: fetchOrGetExistingFetch, environment: var1
+    var0 = function arg0, arg1() {
         _fun77141: for (var _fun77141_ip = 0;;) switch (_fun77141_ip) {
             case 0:
                 var2 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: fetchColors, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot11;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _fetchApplicationParts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 33:
                         var1 = var1.extra;
                         var6 = var1.application_id;
-                        var1 = function(arg0) { // Original name: fetchApplication, environment: var1
+                        var1 = function arg0() {
                             var3 = arg0;
                             var _closure5_slot0 = var3;
                             var2 = _closure1_slot11;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _fetchUserParts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 7:
                         var1 = arg0;
                         var3 = var1.author_id;
-                        var1 = function(arg0) { // Original name: fetchUser, environment: var1
+                        var1 = function arg0() {
                             var3 = arg0;
                             var _closure5_slot0 = var3;
                             var2 = _closure1_slot11;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _fetchWatchedContentParts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _fetchListenedContentParts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _fetchTopArtistContentParts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _loadContentEntryParts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     case 12:
                                         var1 = undefined;
                                         var _closure6_slot0 = var1;
-                                        var3 = function() { // Original name: _fetchEntryParts, environment: var2
+                                        var3 = function() {
                                             var3 = undefined;
                                             var0 = undefined;
                                             var2 = _closure1_slot4;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var6 = new Array(0);
                                         _closure6_slot0 = var6;
                                         var5 = var6.push;
-                                        var4 = function() { // Original name: fetchApplicationParts, environment: var2
+                                        var4 = function() {
                                             var0 = undefined;
                                             var3 = _closure1_slot13;
                                             var2 = var3.apply;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var4.bind(var1)(var7);
                                         var4 = var5.bind(var6)(var4);
                                         var5 = var6.push;
-                                        var4 = function() { // Original name: fetchUserParts, environment: var2
+                                        var4 = function() {
                                             var0 = undefined;
                                             var3 = _closure1_slot14;
                                             var2 = var3.apply;
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var4.bind(var1)(var7);
                                         var4 = var5.bind(var6)(var4);
                                         var5 = var6.push;
-                                        var4 = function() { // Original name: fetchWatchedContentParts, environment: var2
+                                        var4 = function() {
                                             var0 = undefined;
                                             var3 = _closure1_slot15;
                                             var2 = var3.apply;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var4.bind(var1)(var7);
                                         var4 = var5.bind(var6)(var4);
                                         var5 = var6.push;
-                                        var4 = function() { // Original name: fetchListenedContentParts, environment: var2
+                                        var4 = function() {
                                             var0 = undefined;
                                             var3 = _closure1_slot16;
                                             var2 = var3.apply;
@@ -872,7 +872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var4.bind(var1)(var7);
                                         var4 = var5.bind(var6)(var4);
                                         var5 = var6.push;
-                                        var4 = function() { // Original name: fetchTopArtistContentParts, environment: var2
+                                        var4 = function() {
                                             var0 = undefined;
                                             var3 = _closure1_slot17;
                                             var2 = var3.apply;
@@ -886,7 +886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var5.bind(var6)(var4);
                                         var4 = _closure4_slot0;
                                         var3 = var4.push;
-                                        var2 = function() { // Original name: fetchEntryParts, environment: var2
+                                        var2 = function() {
                                             var0 = undefined;
                                             var3 = _closure6_slot1;
                                             var2 = var3.apply;
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: isMessageRenderable, environment: var1
+    var0 = function arg0() {
         _fun77178: for (var _fun77178_ip = 0;;) switch (_fun77178_ip) {
             case 0:
                 var8 = arg0;
@@ -1191,7 +1191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useLoadMessageContentEntries, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot5;
@@ -1358,7 +1358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var7.bind(var8)(var9, var5);
                         case 147: // try_start_0
                             var7 = var6;
-                            var5 = function() { // Original name: loadContentEntryParts, environment: var1
+                            var5 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot18;
                                 var2 = var3.apply;

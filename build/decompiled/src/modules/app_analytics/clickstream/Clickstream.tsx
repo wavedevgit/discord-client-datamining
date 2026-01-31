@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun39683: for (var _fun39683_ip = 0;;) switch (_fun39683_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun39685: for (var _fun39685_ip = 0;;) switch (_fun39685_ip) {
             case 0:
                 var3 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_analytics/clickstream/Clickstream.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: trackClickstream, environment: var1
+    var3 = function arg0, arg1() {
         _fun39686: for (var _fun39686_ip = 0;;) switch (_fun39686_ip) {
             case 0:
                 var5 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackClickstream = var3;
-    var1 = function() { // Original name: drainClickstream, environment: var1
+    var1 = function() {
         _fun39687: for (var _fun39687_ip = 0;;) switch (_fun39687_ip) {
             case 0:
                 var3 = _closure1_slot0;

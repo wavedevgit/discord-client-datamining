@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: useGuildUpcomingEvents, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_scheduled_events/useGuildScheduledEvents.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: useGuildEvents, environment: var1
+    var4 = function arg0, arg1() {
         var5 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var5;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var4;
-    var4 = function(arg0) { // Original name: useActiveEvent, environment: var1
+    var4 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useActiveEvent = var4;
-    var4 = function(arg0) { // Original name: useActiveEventsByChannel, environment: var1
+    var4 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var5 = _closure1_slot0;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActiveEventsByChannel = var4;
     var2.useGuildUpcomingEvents = var3;
-    var3 = function(arg0) { // Original name: useGuildUpcomingEventsNotice, environment: var1
+    var3 = function arg0() {
         _fun64816: for (var _fun64816_ip = 0;;) switch (_fun64816_ip) {
             case 0:
                 var3 = arg0;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildUpcomingEventsNotice = var3;
-    var3 = function(arg0) { // Original name: useGuildActiveEvent, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGuildActiveEvent = var3;
-    var3 = function(arg0) { // Original name: useGuildChannelScheduledEvents, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGuildChannelScheduledEvents = var3;
-    var3 = function(arg0) { // Original name: useFirstActiveEventChannel, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useFirstActiveEventChannel = var3;
-    var1 = function(arg0) { // Original name: useImminentUpcomingGuildEvents, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot3;

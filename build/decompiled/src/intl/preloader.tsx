@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _preloadAllIntlMessageFiles, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'intl/preloader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: preloadAllIntlMessageFiles, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot3;
         var2 = var3.apply;

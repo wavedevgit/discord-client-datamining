@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: getAttachmentMimeTypes, environment: var3
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/logMessageSendFailure.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: logMessageSendFailure, environment: var3
+    var3 = function arg0() {
         _fun54717: for (var _fun54717_ip = 0;;) switch (_fun54717_ip) {
             case 0:
                 var1 = arg0;

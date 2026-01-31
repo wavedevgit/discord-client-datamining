@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleOneRecipientInDM, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _handleOneRecipientInDM, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _handleInviteUsers, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/screens/NewGroupDMScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NewGroupDMScreen, environment: var1
+    var1 = function arg0() {
         _fun108510: for (var _fun108510_ip = 0;;) switch (_fun108510_ip) {
             case 0:
                 var0 = arg0;
@@ -795,7 +795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var12 = _closure2_slot11;
                                 var13 = var6;
                                 var5 = arraySpread(var13, var12, var11);
-                                var5 = function() { // Original name: handleInviteUsers, environment: var2
+                                var5 = function() {
                                     var0 = undefined;
                                     var3 = _closure1_slot22;
                                     var2 = var3.apply;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = var9;
                             var5 = var15[var8](var14, var13, var12, var11, var10);
                             var1.title = var5;
-                            var5 = function(arg0) { // Original name: headerTitle, environment: var4
+                            var5 = function arg0() {
                                 _fun108520: for (var _fun108520_ip = 0;;) switch (_fun108520_ip) {
                                     case 0:
                                         var1 = arg0;
@@ -1092,7 +1092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var1.headerTitle = var5;
-                            var4 = function(arg0) { // Original name: headerRight, environment: var4
+                            var4 = function arg0() {
                                 _fun108521: for (var _fun108521_ip = 0;;) switch (_fun108521_ip) {
                                     case 0:
                                         var5 = arg0;

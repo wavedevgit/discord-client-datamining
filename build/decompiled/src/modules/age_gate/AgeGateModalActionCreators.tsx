@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/AgeGateModalActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: openAgeGateModal, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openAgeGateModal = var3;
-    var3 = function(arg0) { // Original name: closeAgeGateModal, environment: var1
+    var3 = function arg0() {
         _fun41026: for (var _fun41026_ip = 0;;) switch (_fun41026_ip) {
             case 0:
                 var6 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.closeAgeGateModal = var3;
-    var3 = function(arg0) { // Original name: openSuccessAgeGateModal, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 3;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openSuccessAgeGateModal = var3;
-    var3 = function(arg0, arg1) { // Original name: openFailureAgeGateModal, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot1;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openFailureAgeGateModal = var3;
-    var1 = function() { // Original name: closeFailedAgeGate, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var0 = 4;

@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var7)(var1);
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: getNextAssetPage, environment: var3
+    var6 = function arg0() {
         _fun75575: for (var _fun75575_ip = 0;;) switch (_fun75575_ip) {
             case 0:
                 var0 = arg0;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.lastAssetIndex = var5;
                 var4 = var4.uri;
                 var1.lastNodeImageUri = var4;
-                var3 = function(arg0) { // Original name: onFetched, environment: var3
-                    var2 = function(arg0) { // Original name: applyStateUpdate, environment: var0
+                var3 = function arg0() {
+                    var2 = function arg0() {
                         _fun75577: for (var _fun75577_ip = 0;;) switch (_fun75577_ip) {
                             case 0:
                                 var3 = arg0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getNextAssetPage = var6;
-    var6 = function(arg0) { // Original name: refreshAssets, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var4 = var0.batchSize;
         var _closure2_slot0 = var4;
@@ -331,8 +331,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var0)(var1);
         var1 = {};
         var1.batchSize = var4;
-        var3 = function(arg0) { // Original name: onFetched, environment: var3
-            var2 = function(arg0) { // Original name: applyStateUpdate, environment: var0
+        var3 = function arg0() {
+            var2 = function arg0() {
                 _fun75582: for (var _fun75582_ip = 0;;) switch (_fun75582_ip) {
                     case 0:
                         var7 = arg0;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.refreshAssets = var6;
-    var6 = function() { // Original name: useAssets, environment: var3
+    var6 = function() {
         var2 = _closure1_slot4;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useAssets = var6;
-    var3 = function() { // Original name: useHasReachedEnd, environment: var3
+    var3 = function() {
         var2 = _closure1_slot4;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0

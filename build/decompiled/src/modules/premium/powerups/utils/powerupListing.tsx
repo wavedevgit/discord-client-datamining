@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun102318: for (var _fun102318_ip = 0;;) switch (_fun102318_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun102320: for (var _fun102320_ip = 0;;) switch (_fun102320_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: buildPowerupListings, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun102321: for (var _fun102321_ip = 0;;) switch (_fun102321_ip) {
             case 0:
                 var6 = arg1;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.type = var5;
                 var3 = var4.bind(var2)(var3);
             case 300:
-                var0 = function(arg0) { // Original name: orderPowerupListings, environment: var0
+                var0 = function arg0() {
                     _fun102323: for (var _fun102323_ip = 0;;) switch (_fun102323_ip) {
                         case 0:
                             var2 = arg0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.POWERUP_GROUP_TO_SKU_IDS = var4;
     var2.buildPowerupListings = var3;
-    var1 = function(arg0, arg1) { // Original name: useBuildGuildPowerupsSections, environment: var1
+    var1 = function arg0, arg1() {
         _fun102328: for (var _fun102328_ip = 0;;) switch (_fun102328_ip) {
             case 0:
                 var4 = arg1;

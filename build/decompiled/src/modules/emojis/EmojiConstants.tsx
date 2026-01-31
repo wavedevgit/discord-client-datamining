@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.EmojiDisabledReasons = var5;
     var2.EmojiIntention = var4;
     var2.EmojiInteractionPoint = var3;
-    var1 = function(arg0) { // Original name: isExternalEmojiAllowedForIntention, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.has;
         var0 = arg0;

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 4;
@@ -61,14 +61,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.useIs2FAEnabled;
     var1.usePredicate = var7;
-    var7 = function() { // Original name: useOnViewBackups, environment: var8
+    var7 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useCallback;
         var1 = function(arg0) { // Environment: var0
             var1 = arg0;
             var _closure3_slot0 = var1;
             var3 = {};
-            var0 = function(arg0) { // Original name: onSubmit, environment: var0
+            var0 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 3;
@@ -81,9 +81,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.then;
                 var0 = function() { // Environment: var0
                     var2 = _closure3_slot0;
-                    var1 = function(arg0) { // Original name: onConfirmBackups, environment: var0
+                    var1 = function arg0() {
                         var2 = {};
-                        var0 = function(arg0) { // Original name: onSubmit, environment: var0
+                        var0 = function arg0() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 3;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 9;

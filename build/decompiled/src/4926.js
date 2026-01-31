@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: isStateChangeEvent, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.oldState;
         var0 = null;
@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var0;
-    var4 = function(arg0) { // Original name: onGestureHandlerEvent, environment: var3
+    var4 = function arg0() {
         _fun44646: for (var _fun44646_ip = 0;;) switch (_fun44646_ip) {
             case 0:
                 var3 = arg0;
@@ -536,7 +536,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var4;
-    var1 = function() { // Original name: stopListening, environment: var3
+    var1 = function() {
         _fun44647: for (var _fun44647_ip = 0;;) switch (_fun44647_ip) {
             case 0:
                 var0 = _closure1_slot3;
@@ -599,7 +599,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = new Array(0);
     var _closure1_slot6 = var5;
     var2.onGestureHandlerEvent = var4;
-    var3 = function() { // Original name: startListening, environment: var3
+    var3 = function() {
         var1 = _closure1_slot9;
         var0 = undefined;
         var1 = var1.bind(var0)();

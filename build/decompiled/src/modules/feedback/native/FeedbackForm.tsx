@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/feedback/native/FeedbackForm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FeedbackForm, environment: var1
+    var1 = function arg0() {
         _fun76229: for (var _fun76229_ip = 0;;) switch (_fun76229_ip) {
             case 0:
                 var2 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10.numberOfLines = var12;
                             var10 = var8.bind(var0)(var11, var10);
                             var6.label = var10;
-                            var9 = function() { // Original name: onPress, environment: var9
+                            var9 = function() {
                                 var3 = _closure3_slot0;
                                 var2 = {};
                                 var4 = _closure2_slot7;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var17;
             case 675:
                 var7.selectedRating = var13;
-                var12 = function(arg0) { // Original name: onChangeRating, environment: var12
+                var12 = function arg0() {
                     _fun76236: for (var _fun76236_ip = 0;;) switch (_fun76236_ip) {
                         case 0:
                             var4 = arg0;

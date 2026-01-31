@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var4 = function() { // Original name: createStackParser, environment: var3
+    var4 = function() {
         _fun8825: for (var _fun8825_ip = 0;;) switch (_fun8825_ip) {
             case 0:
                 var4 = undefined;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var1 = function(arg0) { // Original name: stripSentryFramesAndReverse, environment: var3
+    var1 = function arg0() {
         _fun8829: for (var _fun8829_ip = 0;;) switch (_fun8829_ip) {
             case 0:
                 var3 = arg0;
@@ -337,7 +337,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0) { // Original name: getLastStackFrame, environment: var3
+    var0 = function arg0() {
         _fun8831: for (var _fun8831_ip = 0;;) switch (_fun8831_ip) {
             case 0:
                 var1 = arg0;
@@ -379,7 +379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = '?';
     var2.UNKNOWN_FUNCTION = var5;
     var2.createStackParser = var4;
-    var4 = function(arg0) { // Original name: getFramesFromEvent, environment: var3
+    var4 = function arg0() {
         _fun8832: for (var _fun8832_ip = 0;;) switch (_fun8832_ip) {
             case 0:
                 var0 = undefined;
@@ -436,7 +436,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getFramesFromEvent = var4;
-    var4 = function(arg0) { // Original name: getFunctionName, environment: var3
+    var4 = function arg0() {
         _fun8834: for (var _fun8834_ip = 0;;) switch (_fun8834_ip) {
             case 0:
                 var2 = arg0;
@@ -477,7 +477,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getFunctionName = var4;
-    var4 = function(arg0) { // Original name: getVueInternalName, environment: var3
+    var4 = function arg0() {
         _fun8835: for (var _fun8835_ip = 0;;) switch (_fun8835_ip) {
             case 0:
                 var1 = arg0;
@@ -503,7 +503,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getVueInternalName = var4;
-    var3 = function(arg0) { // Original name: stackParserFromStackParserOptions, environment: var3
+    var3 = function arg0() {
         _fun8836: for (var _fun8836_ip = 0;;) switch (_fun8836_ip) {
             case 0:
                 var5 = arg0;

@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.RIPPLE_LIGHT_COLOR = var5;
             var2.ANDROID_FOREGROUND_RIPPLE = var4;
             var2.TitleStyleType = var3;
-            var1 = function(arg0) { // Original name: getThemedRippleConfig, environment: var1
+            var1 = function arg0() {
                 _fun44337: for (var _fun44337_ip = 0;;) switch (_fun44337_ip) {
                     case 0:
                         var1 = arg0;

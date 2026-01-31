@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/getTimestampString.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: _default, environment: var1
+    var1 = function arg0, arg1() {
         _fun40411: for (var _fun40411_ip = 0;;) switch (_fun40411_ip) {
             case 0:
                 var8 = arg0;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.KjKr2P;
                 var1.years = var2;
                 _closure2_slot2 = var1;
-                var12 = function(arg0, arg1) { // Original name: formatString, environment: var0
+                var12 = function arg0, arg1() {
                     _fun40412: for (var _fun40412_ip = 0;;) switch (_fun40412_ip) {
                         case 0:
                             var3 = _closure2_slot1;

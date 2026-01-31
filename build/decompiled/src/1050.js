@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0) { // Original name: whenIdleOrHidden, environment: var0
+    var0 = function arg0() {
         _fun10803: for (var _fun10803_ip = 0;;) switch (_fun10803_ip) {
             case 0:
                 var1 = arg0;

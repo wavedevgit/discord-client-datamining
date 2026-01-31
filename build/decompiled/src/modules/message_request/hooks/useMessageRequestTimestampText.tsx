@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getMessageTimestampForChannel, environment: var1
+    var0 = function arg0() {
         _fun109480: for (var _fun109480_ip = 0;;) switch (_fun109480_ip) {
             case 0:
                 var0 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/hooks/useMessageRequestTimestampText.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useMessageRequestTimestampText, environment: var1
+    var3 = function arg0() {
         _fun109481: for (var _fun109481_ip = 0;;) switch (_fun109481_ip) {
             case 0:
                 var4 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMessageRequestTimestampText = var3;
-    var1 = function(arg0) { // Original name: useMessageRequestRelativeTimestampText, environment: var1
+    var1 = function arg0() {
         _fun109483: for (var _fun109483_ip = 0;;) switch (_fun109483_ip) {
             case 0:
                 var3 = arg0;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun76940: for (var _fun76940_ip = 0;;) switch (_fun76940_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: MediaPostEmbedStore, environment: var5
+        var3 = function() {
             _fun76944: for (var _fun76944_ip = 0;;) switch (_fun76944_ip) {
                 case 0:
                     var3 = this;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getMediaPostEmbed';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun76945: for (var _fun76945_ip = 0;;) switch (_fun76945_ip) {
                 case 0:
                     var1 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEmbedFetchState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun76946: for (var _fun76946_ip = 0;;) switch (_fun76946_ip) {
                 case 0:
                     var2 = _closure1_slot7;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMediaPostEmbeds';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var13 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function() { // Original name: handleConnectionOpen, environment: var4
+    var8 = function() {
         var0 = {};
         _closure1_slot6 = var0;
         var0 = {};
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleFetchMediaPostEmbed, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.threadId;
         var1 = _closure1_slot7;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MEDIA_POST_EMBED_FETCH = var8;
-    var8 = function(arg0) { // Original name: handleFetchMediaPostEmbedSuccess, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.threadId;
         var3 = var0.mediaPostEmbed;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MEDIA_POST_EMBED_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchMediaPostFailure, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.threadId;
         var1 = _closure1_slot7;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MEDIA_POST_EMBED_FETCH_FAILURE = var8;
-    var4 = function(arg0) { // Original name: handleLogout, environment: var4
+    var4 = function arg0() {
         _fun76952: for (var _fun76952_ip = 0;;) switch (_fun76952_ip) {
             case 0:
                 var0 = arg0;

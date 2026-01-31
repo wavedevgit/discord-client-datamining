@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: placeholderRowWidth, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var1 = arg1;
         var0 = global;
         var4 = var0.Math;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: ICYMILoadingItem, environment: var1
+    var0 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var14 = var0.bind(var3)();
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMILoading.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMILoading, environment: var1
+    var1 = function() {
         var3 = _closure1_slot6;
         var2 = _closure1_slot7;
         var1 = {};

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun1570: for (var _fun1570_ip = 0;;) switch (_fun1570_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var7[var5];
     var5 = var6.bind(var0)(var5);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: RCTDeviceEventEmitterImpl, environment: var0
+        var3 = function() {
             _fun1574: for (var _fun1574_ip = 0;;) switch (_fun1574_ip) {
                 case 0:
                     var3 = this;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'emit';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: emit, environment: var0
+        var0 = function arg0() {
             _fun1575: for (var _fun1575_ip = 0;;) switch (_fun1575_ip) {
                 case 0:
                     var2 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 131:
                     var15 = _closure2_slot0;
-                    var8 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var4
+                    var8 = function arg0, arg1, arg2, arg3() {
                         _fun1577: for (var _fun1577_ip = 0;;) switch (_fun1577_ip) {
                             case 0:
                                 var4 = arg0;

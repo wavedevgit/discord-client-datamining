@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0.code = var1;
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1) { // Original name: setNativePropsFabric, environment: var0
+                var0 = function arg0, arg1() {
                     _fun34983: for (var _fun34983_ip = 0;;) switch (_fun34983_ip) {
                         case 0:
                             var0 = arg1;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.code = var3;
             var _closure1_slot4 = var1;
             var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1) { // Original name: setNativePropsPaper, environment: var0
+                var0 = function arg0, arg1() {
                     _fun34985: for (var _fun34985_ip = 0;;) switch (_fun34985_ip) {
                         case 0:
                             var1 = arg0;
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun34981
             }
         case 197:
-            var3 = function() { // Original name: setNativePropsDefault, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34981_ip = 209;
             continue _fun34981;
         case 204:
-            var3 = function() { // Original name: setNativePropsChromeDebugger, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 0;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34981_ip = 216;
             continue _fun34981;
         case 211:
-            var3 = function() { // Original name: setNativePropsJest, environment: var4
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 0;

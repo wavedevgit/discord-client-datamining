@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.ClipsExperiment = var4;
     var2.ClipsPremiumEarlyAccessExperiment = var3;
-    var3 = function() { // Original name: areClipsAvailable, environment: var1
+    var3 = function() {
         _fun30810: for (var _fun30810_ip = 0;;) switch (_fun30810_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.areClipsAvailable = var3;
-    var3 = function() { // Original name: useIsClipsAvailable, environment: var1
+    var3 = function() {
         _fun30811: for (var _fun30811_ip = 0;;) switch (_fun30811_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldSeeClipsPremiumEarlyAccessAnnouncementCoachmark = var3;
-    var3 = function(arg0) { // Original name: isUserPremiumTypeForClipsEarlyAccess, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 5;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isUserPremiumTypeForClipsEarlyAccess = var3;
-    var3 = function() { // Original name: isScreenshotKeybindEnabled, environment: var1
+    var3 = function() {
         var3 = _closure1_slot4;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isScreenshotKeybindEnabled = var3;
-    var3 = function() { // Original name: useScreenshotKeybindEnabled, environment: var1
+    var3 = function() {
         var3 = _closure1_slot4;
         var2 = var3.useExperiment;
         var1 = {};
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useScreenshotKeybindEnabled = var3;
-    var3 = function() { // Original name: areVoiceOnlyClipsEnabled, environment: var1
+    var3 = function() {
         var3 = _closure1_slot4;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.areVoiceOnlyClipsEnabled = var3;
-    var1 = function() { // Original name: areAdvancedSignalsEnabled, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var2 = var3.getCurrentConfig;
         var1 = {};

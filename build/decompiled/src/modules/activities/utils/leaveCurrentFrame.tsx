@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/leaveCurrentFrame.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: leaveCurrentFrame, environment: var1
+    var1 = function() {
         _fun62974: for (var _fun62974_ip = 0;;) switch (_fun62974_ip) {
             case 0:
                 var2 = _closure1_slot2;

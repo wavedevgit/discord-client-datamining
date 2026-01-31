@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ActionSheetSelector, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.selectedType;
         var _closure2_slot0 = var1;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var8;
                     var8 = var0.description;
                     var1.subLabel = var8;
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         var2 = _closure2_slot2;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'label': 'Blocked Domain',
         'description': 'Shows a warning for potentially malicious domains'
     };
-    var3 = function() { // Original name: show, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'label': 'Suspicious Download',
         'description': 'Warns users about potentially dangerous file downloads'
     };
-    var7 = function() { // Original name: show, environment: var1
+    var7 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'label': 'Link Not Discord',
         'description': 'Warns when clicking external links that leave Discord'
     };
-    var7 = function() { // Original name: show, environment: var1
+    var7 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'label': 'Inappropriate Conversation',
         'description': 'Shows safety warning for inappropriate conversations'
     };
-    var7 = function() { // Original name: show, environment: var1
+    var7 = function() {
         var3 = _closure1_slot1;
         var0 = _closure1_slot2;
         var2 = 9;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsActionSheetsScreen, environment: var1
+    var1 = function() {
         var1 = _closure1_slot9;
         var3 = undefined;
         var4 = var1.bind(var3)();

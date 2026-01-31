@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun112984: for (var _fun112984_ip = 0;;) switch (_fun112984_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: FeedbackManager, environment: var0
+        var2 = function arg0() {
             _fun112988: for (var _fun112988_ip = 0;;) switch (_fun112988_ip) {
                 case 0:
                     var4 = this;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var2 = {};
-                    var3 = function(arg0) { // Original name: VOICE_CHANNEL_SHOW_FEEDBACK, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleShowVoiceFeedback;
                         var0 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.VOICE_CHANNEL_SHOW_FEEDBACK = var3;
-                    var3 = function(arg0) { // Original name: STREAM_CLOSE, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleShowStreamFeedback;
                         var0 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.STREAM_CLOSE = var3;
-                    var3 = function(arg0) { // Original name: EMBEDDED_ACTIVITY_CLOSE, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleShowActivityFeedback;
                         var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.EMBEDDED_ACTIVITY_CLOSE = var3;
-                    var3 = function(arg0) { // Original name: IN_APP_REPORTS_SHOW_FEEDBACK, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleInAppReportsFeedback;
                         var0 = arg0;
@@ -175,14 +175,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.IN_APP_REPORTS_SHOW_FEEDBACK = var3;
-                    var3 = function() { // Original name: BLOCK_USER_SHOW_FEEDBACK, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleBlockUserFeedback;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.BLOCK_USER_SHOW_FEEDBACK = var3;
-                    var3 = function(arg0) { // Original name: AGE_VERIFICATION_SHOW_FEEDBACK, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAgeVerificationFeedback;
                         var0 = arg0;

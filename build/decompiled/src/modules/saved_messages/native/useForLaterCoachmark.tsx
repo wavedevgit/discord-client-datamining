@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: CoachmarkImg, environment: var1
+    var0 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/saved_messages/native/useForLaterCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useForLaterCoachmark, environment: var1
+    var1 = function arg0() {
         _fun103057: for (var _fun103057_ip = 0;;) switch (_fun103057_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot8;
                     var2 = var3 === var2;
                     var0.visible = var2;
-                    var2 = function() { // Original name: onDismiss, environment: var1
+                    var2 = function() {
                         var2 = _closure2_slot1;
                         var0 = _closure1_slot6;
                         var1 = var0.USER_DISMISS;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onDismiss = var2;
-                    var1 = function() { // Original name: renderImgComponent, environment: var1
+                    var1 = function() {
                         var3 = _closure1_slot7;
                         var2 = _closure1_slot10;
                         var1 = undefined;

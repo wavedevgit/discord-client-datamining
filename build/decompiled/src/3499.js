@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: baseGet, environment: var0
+    var1 = function arg0, arg1() {
         _fun31498: for (var _fun31498_ip = 0;;) switch (_fun31498_ip) {
             case 0:
                 var12 = arg0;

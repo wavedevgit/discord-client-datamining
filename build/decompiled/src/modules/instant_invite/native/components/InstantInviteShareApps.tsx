@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: InstantInviteShareApps, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.onItemPressed;
         var _closure2_slot0 = var1;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.icon = var12;
                     var12 = var10.bind(var7)();
                     var0.label = var12;
-                    var12 = function() { // Original name: onPress, environment: var9
+                    var12 = function() {
                         var2 = _closure2_slot0;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.image = var11;
                     var10 = var10.bind(var7)();
                     var5.label = var10;
-                    var9 = function() { // Original name: onPress, environment: var9
+                    var9 = function() {
                         var2 = _closure2_slot0;
                         var1 = _closure3_slot0;
                         var0 = undefined;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _maybeOpenPremiumUpsellActionSheet, environment: var1
+    var0 = function arg0, arg1() {
         _fun61367: for (var _fun61367_ip = 0;;) switch (_fun61367_ip) {
             case 0:
                 var5 = arg1;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: maybeOpenPremiumUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         _fun61368: for (var _fun61368_ip = 0;;) switch (_fun61368_ip) {
             case 0:
                 var0 = arg0;

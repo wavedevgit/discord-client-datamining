@@ -8,17 +8,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: headerTitle, environment: var1
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: headerLeft, environment: var1
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: OnboardingTrailingLanding, environment: var1
+    var0 = function() {
         var1 = _closure1_slot19;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.t;
         var5 = var4.cGQmNL;
         var4 = {};
-        var8 = function(arg0, arg1) { // Original name: learnMoreHook, environment: var8
+        var8 = function arg0, arg1() {
             var4 = _closure1_slot16;
             var5 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: OnboardingTrailing, environment: var1
+    var0 = function arg0() {
         _fun81478: for (var _fun81478_ip = 0;;) switch (_fun81478_ip) {
             case 0:
                 var1 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: ContactSyncLandingScreen, environment: var1
+    var0 = function arg0() {
         _fun81479: for (var _fun81479_ip = 0;;) switch (_fun81479_ip) {
             case 0:
                 var1 = arg0;
@@ -628,7 +628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.loading = var15;
                 var9.showSkip = var14;
                 var9.onAllow = var13;
-                var12 = function() { // Original name: onDontAllow, environment: var12
+                var12 = function() {
                     var4 = _closure2_slot2;
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ContactSyncNameInputScreen, environment: var1
+    var0 = function arg0() {
         _fun81491: for (var _fun81491_ip = 0;;) switch (_fun81491_ip) {
             case 0:
                 var1 = arg0;
@@ -785,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot16;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.insideNavigator = var4;
                         var4 = _closure2_slot1;
                         var0.disabled = var4;
-                        var4 = function() { // Original name: onPress, environment: var4
+                        var4 = function() {
                             var2 = _closure2_slot3;
                             var0 = undefined;
                             var1 = '';
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: ContactSyncSuggestionScreen, environment: var1
+    var0 = function arg0() {
         _fun81500: for (var _fun81500_ip = 0;;) switch (_fun81500_ip) {
             case 0:
                 var0 = arg0;
@@ -930,7 +930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot1;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot16;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var4 = true;
                         var0.insideNavigator = var4;
-                        var4 = function() { // Original name: onPress, environment: var4
+                        var4 = function() {
                             var3 = _closure2_slot3;
                             var2 = undefined;
                             var1 = true;
@@ -992,7 +992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var4)(var1);
                 var1 = {};
                 var1.friendSuggestions = var6;
-                var5 = function(arg0) { // Original name: onSubmit, environment: var5
+                var5 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 14;
@@ -1012,7 +1012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var3 = function(arg0) { // Original name: ContactSyncModal, environment: var1
+    var3 = function arg0() {
         _fun81506: for (var _fun81506_ip = 0;;) switch (_fun81506_ip) {
             case 0:
                 var1 = arg0;
@@ -1112,7 +1112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.openSettingsSheet = var1;
                     var0 = _closure2_slot5;
                     var2.onComplete = var0;
-                    var1 = function(arg0) { // Original name: getScreens, environment: var0
+                    var1 = function arg0() {
                         _fun81511: for (var _fun81511_ip = 0;;) switch (_fun81511_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1186,7 +1186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var6 = _closure1_slot21;
                             case 218:
                                 var2.headerLeft = var6;
-                                var6 = function() { // Original name: render, environment: var3
+                                var6 = function() {
                                     var3 = _closure1_slot16;
                                     var2 = _closure1_slot24;
                                     var1 = {};
@@ -1227,7 +1227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.headerTitle = var4;
                                 var11 = _closure1_slot21;
                                 var2.headerLeft = var11;
-                                var12 = function() { // Original name: render, environment: var3
+                                var12 = function() {
                                     var3 = _closure1_slot16;
                                     var2 = _closure1_slot25;
                                     var1 = {};
@@ -1258,7 +1258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.fullscreen = var5;
                                 var2.headerTitle = var4;
                                 var2.headerLeft = var11;
-                                var11 = function() { // Original name: render, environment: var3
+                                var11 = function() {
                                     var3 = _closure1_slot16;
                                     var2 = _closure1_slot26;
                                     var1 = {};
@@ -1287,7 +1287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.impressionProperties = var11;
                                 var2.fullscreen = var5;
                                 var2.headerTitle = var4;
-                                var11 = function(arg0) { // Original name: headerLeft, environment: var3
+                                var11 = function arg0() {
                                     var3 = _closure1_slot16;
                                     var1 = _closure1_slot1;
                                     var2 = _closure1_slot2;
@@ -1306,7 +1306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var2.headerLeft = var11;
-                                var11 = function() { // Original name: render, environment: var3
+                                var11 = function() {
                                     var3 = _closure1_slot16;
                                     var1 = _closure1_slot0;
                                     var2 = _closure1_slot2;
@@ -1338,7 +1338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.impressionProperties = var11;
                                 var2.fullscreen = var5;
                                 var2.headerTitle = var4;
-                                var11 = function(arg0) { // Original name: headerLeft, environment: var3
+                                var11 = function arg0() {
                                     var3 = _closure1_slot16;
                                     var1 = _closure1_slot1;
                                     var2 = _closure1_slot2;
@@ -1357,7 +1357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var2.headerLeft = var11;
-                                var11 = function() { // Original name: render, environment: var3
+                                var11 = function() {
                                     var3 = _closure1_slot16;
                                     var1 = _closure1_slot0;
                                     var2 = _closure1_slot2;
@@ -1388,7 +1388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var6.impression_group = var7;
                                 var1.impressionProperties = var6;
                                 var1.fullscreen = var5;
-                                var5 = function(arg0) { // Original name: headerLeft, environment: var3
+                                var5 = function arg0() {
                                     var3 = _closure1_slot16;
                                     var1 = _closure1_slot1;
                                     var2 = _closure1_slot2;
@@ -1408,7 +1408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 };
                                 var1.headerLeft = var5;
                                 var1.headerTitle = var4;
-                                var3 = function() { // Original name: render, environment: var3
+                                var3 = function() {
                                     var3 = _closure1_slot16;
                                     var1 = _closure1_slot0;
                                     var2 = _closure1_slot2;
@@ -1615,7 +1615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/contact_sync/native/components/RedesignContactSyncModal.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: ContactSyncOnboardingModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.route;
         var1 = var1.params;

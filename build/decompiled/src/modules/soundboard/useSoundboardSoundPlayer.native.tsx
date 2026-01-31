@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/soundboard/useSoundboardSoundPlayer.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useSoundboardSoundPlayer, environment: var1
+    var1 = function arg0, arg1() {
         _fun68469: for (var _fun68469_ip = 0;;) switch (_fun68469_ip) {
             case 0:
                 var8 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var6)(var3, var4);
                 var0.playSoundboardSound = var3;
                 var0.isPlayingSound = var2;
-                var1 = function() { // Original name: previewSound, environment: var1
+                var1 = function() {
                     var0 = global;
                     var1 = var0.Promise;
                     var0 = var1.resolve;

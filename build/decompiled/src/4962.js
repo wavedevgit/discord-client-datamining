@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun44792: for (var _fun44792_ip = 0;;) switch (_fun44792_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var6;
     var _closure1_slot6 = var4;
     var4 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: changeEventCalculator, environment: var0
+        var0 = function arg0, arg1() {
             _fun44796: for (var _fun44796_ip = 0;;) switch (_fun44796_ip) {
                 case 0:
                     var4 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.bind(var0)(var5);
     var4 = var4.ContinousBaseGesture;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: HoverGesture, environment: var5
+        var3 = function() {
             _fun44798: for (var _fun44798_ip = 0;;) switch (_fun44798_ip) {
                 case 0:
                     var3 = this;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'effect';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: effect, environment: var5
+        var0 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
@@ -207,13 +207,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'onChange';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: onChange, environment: var5
+        var5 = function arg0() {
             var5 = this;
             var1 = var5.handlers;
             var0 = _closure1_slot7;
             var1.changeEventCalculator = var0;
             var9 = _closure2_slot0;
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
+            var3 = function arg0, arg1, arg2, arg3() {
                 _fun44801: for (var _fun44801_ip = 0;;) switch (_fun44801_ip) {
                     case 0:
                         var4 = arg0;

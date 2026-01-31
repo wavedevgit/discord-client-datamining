@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: ChannelPermissionSettingsBasicView, environment: var1
+    var0 = function arg0() {
         _fun108947: for (var _fun108947_ip = 0;;) switch (_fun108947_ip) {
             case 0:
                 var0 = arg0;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var _closure2_slot6 = var4;
                 var _closure2_slot7 = var4;
-                var0 = function(arg0) { // Original name: renderRowItem, environment: var9
+                var0 = function arg0() {
                     var0 = arg0;
                     var4 = _closure1_slot22;
                     var2 = _closure1_slot1;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2.onConfirm = var5;
                                     var5 = false;
                                     var2.hideActionSheet = var5;
-                                    var5 = function() { // Original name: onCancel, environment: var5
+                                    var5 = function() {
                                         var2 = _closure2_slot2;
                                         var4 = _closure1_slot2;
                                         var3 = _closure1_slot3;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var20.dMJ3Y6;
                 var20 = var21.bind(var22)(var20);
                 var16.label = var20;
-                var20 = function() { // Original name: onPress, environment: var9
+                var20 = function() {
                     _fun108961: for (var _fun108961_ip = 0;;) switch (_fun108961_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -850,7 +850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: onBack, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 22;
@@ -991,7 +991,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_permissions/native/components/EasyChannelPermissionSettings.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EasyChannelPermissionSettings, environment: var1
+    var1 = function arg0() {
         _fun108965: for (var _fun108965_ip = 0;;) switch (_fun108965_ip) {
             case 0:
                 var0 = arg0;

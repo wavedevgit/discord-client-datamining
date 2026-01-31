@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = metroImportDefault;
             var2 = exports;
             var4 = dependencyMap;
-            var6 = function(arg0, arg1) { // Original name: launchFirefox, environment: var0
+            var6 = function arg0, arg1() {
                 _fun92678: for (var _fun92678_ip = 0;;) switch (_fun92678_ip) {
                     case 0:
                         var7 = arg0;
@@ -161,10 +161,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var3 = function(arg0, arg1) { // Original name: launchChrome, environment: var0
+            var3 = function arg0, arg1() {
                 var0 = arg1;
                 var _closure2_slot0 = var0;
-                var5 = function() { // Original name: handleBlur, environment: var1
+                var5 = function() {
                     var0 = true;
                     _closure2_slot1 = var0;
                     var0 = undefined;
@@ -200,14 +200,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var2, var1);
                 return var0;
             };
-            var7 = function(arg0, arg1) { // Original name: launchSteam, environment: var0
+            var7 = function arg0, arg1() {
                 var2 = arg1;
                 var0 = undefined;
                 var1 = false;
                 var1 = var2.bind(var0)(var1);
                 return var0;
             };
-            var5 = function(arg0, arg1) { // Original name: launchMobile, environment: var0
+            var5 = function arg0, arg1() {
                 var1 = arg1;
                 var _closure2_slot0 = var1;
                 var1 = global;

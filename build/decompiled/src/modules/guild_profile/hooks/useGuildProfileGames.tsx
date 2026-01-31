@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: useAllGuildProfileGames, environment: var3
+    var1 = function arg0() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var2 = 1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_profile/hooks/useGuildProfileGames.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useGuildProfileGames, environment: var3
+    var3 = function arg0() {
         var5 = arg0;
         var0 = var5.gameActivity;
         var _closure2_slot0 = var0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3[1] = var0;
         var0 = function() { // Environment: var1
             var3 = _closure2_slot0;
-            var2 = function(arg0) { // Original name: gameActivitySorter, environment: var1
+            var2 = function arg0() {
                 var1 = arg0;
                 var _closure4_slot0 = var1;
                 var0 = function(arg0, arg1) { // Environment: var0

@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/TextInput/native/GhostInput.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GhostInput, environment: var1
+    var1 = function arg0() {
         _fun87817: for (var _fun87817_ip = 0;;) switch (_fun87817_ip) {
             case 0:
                 var5 = arg0;

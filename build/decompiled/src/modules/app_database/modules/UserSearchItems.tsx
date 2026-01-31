@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun87344: for (var _fun87344_ip = 0;;) switch (_fun87344_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun87346: for (var _fun87346_ip = 0;;) switch (_fun87346_ip) {
             case 0:
                 var3 = arg0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function() { // Original name: UserSearchItems, environment: var5
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot4;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = {};
             var4 = var2.handlePostConnectionOpen;
             var1.POST_CONNECTION_OPEN = var4;
-            var3 = function(arg0, arg1) { // Original name: WRITE_CACHES, environment: var3
+            var3 = function arg0, arg1() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleWriteCaches;
                 var0 = arg1;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var6.bind(var1)(var0);
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: getAll, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetInMemoryState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldUseCache';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = !var0;
             return var0;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handlePostConnectionOpen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = true;
             _closure1_slot12 = var0;
             var0 = undefined;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleWriteCaches';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun87356: for (var _fun87356_ip = 0;;) switch (_fun87356_ip) {
                 case 0:
                     var4 = {};

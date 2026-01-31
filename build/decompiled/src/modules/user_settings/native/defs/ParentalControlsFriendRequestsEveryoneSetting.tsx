@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 8;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS;
     var1.parent = var9;
-    var9 = function() { // Original name: useFriendRequestsEveryoneSettingValue, environment: var8
+    var9 = function() {
         _fun88463: for (var _fun88463_ip = 0;;) switch (_fun88463_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useValue = var9;
-    var8 = function(arg0) { // Original name: onFriendRequestsEveryoneSettingValueChange, environment: var8
+    var8 = function arg0() {
         _fun88465: for (var _fun88465_ip = 0;;) switch (_fun88465_ip) {
             case 0:
                 var2 = _closure1_slot3;

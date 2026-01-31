@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun46091
             }
         case 37:
-            var6 = function(arg0, arg1) { // Original name: extendStatics, environment: var1
+            var6 = function arg0, arg1() {
                 _fun46092: for (var _fun46092_ip = 0;;) switch (_fun46092_ip) {
                     case 0:
                         var1 = global;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = arg0;
                         var3 = arg1;
                         var _closure2_slot0 = var2;
-                        var1 = function() { // Original name: __, environment: var0
+                        var1 = function() {
                             var1 = _closure2_slot0;
                             var0 = this;
                             var0.constructor = var1;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = function(arg0) { // Environment: var1
                 var5 = arg0;
                 var _closure2_slot0 = var5;
-                var0 = function() { // Original name: ProgressiveListView, environment: var2
+                var0 = function() {
                     _fun46100: for (var _fun46100_ip = 0;;) switch (_fun46100_ip) {
                         case 0:
                             var1 = this;

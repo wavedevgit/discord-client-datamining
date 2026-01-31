@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot2 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: Badge, environment: var3
+    var3 = function arg0() {
         _fun70954: for (var _fun70954_ip = 0;;) switch (_fun70954_ip) {
             case 0:
                 var0 = arg0;

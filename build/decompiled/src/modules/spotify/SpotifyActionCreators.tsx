@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var10 = function(arg0, arg1, arg2, arg3) { // Original name: apiRequest, environment: var1
+    var10 = function arg0, arg1, arg2, arg3() {
         _fun50068: for (var _fun50068_ip = 0;;) switch (_fun50068_ip) {
             case 0:
                 var3 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var10;
-    var3 = function(arg0) { // Original name: getAccessToken, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.SpotifyAPI = var4;
     var2.getAccessToken = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: subscribePlayerStateNotifications, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun50080: for (var _fun50080_ip = 0;;) switch (_fun50080_ip) {
             case 0:
                 var5 = arg0;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot12 = var3;
     var2.subscribePlayerStateNotifications = var3;
-    var3 = function(arg0, arg1) { // Original name: getProfile, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot9;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getProfile = var3;
-    var3 = function(arg0, arg1) { // Original name: getDevices, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot9;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getDevices = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: play, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun50087: for (var _fun50087_ip = 0;;) switch (_fun50087_ip) {
             case 0:
                 var5 = arg0;
@@ -736,7 +736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.play = var3;
-    var3 = function(arg0, arg1) { // Original name: pause, environment: var1
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot9;
         var3 = var4.put;
         var2 = {};
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.pause = var3;
-    var3 = function() { // Original name: fetchIsSpotifyProtocolRegistered, environment: var1
+    var3 = function() {
         _fun50092: for (var _fun50092_ip = 0;;) switch (_fun50092_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -822,7 +822,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchIsSpotifyProtocolRegistered = var3;
-    var1 = function(arg0, arg1) { // Original name: setActiveDevice, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;

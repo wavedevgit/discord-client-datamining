@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf/native/components/notification/NotificationNudgeBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationNudgeBottomSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = _closure1_slot12;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.APP_LOAD_PROMPT;
         var0 = var1.bind(var2)(var0);
         var _closure2_slot1 = var0;
-        var13 = function() { // Original name: onDismiss, environment: var16
+        var13 = function() {
             _fun109814: for (var _fun109814_ip = 0;;) switch (_fun109814_ip) {
                 case 0:
                     var3 = _closure1_slot1;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.BottomSheet;
         var0 = {};
         var0.onDismiss = var13;
-        var4 = function() { // Original name: onExpand, environment: var16
+        var4 = function() {
             var2 = _closure1_slot1;
             var7 = _closure1_slot2;
             var0 = 10;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19 = var19["5xWOXv"];
         var19 = var20.bind(var21)(var19);
         var10.text = var19;
-        var16 = function() { // Original name: onPress, environment: var16
+        var16 = function() {
             var3 = _closure1_slot1;
             var4 = _closure1_slot2;
             var0 = 10;

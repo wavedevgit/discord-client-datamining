@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/oauth2/native/GuildSelector.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildSelector, environment: var3
+    var3 = function arg0() {
         _fun47853: for (var _fun47853_ip = 0;;) switch (_fun47853_ip) {
             case 0:
                 var3 = arg0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var7 = var8.bind(var9)(var7);
                             var2.items = var7;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure2_slot1;
                                 var0 = undefined;
                                 var1 = arg0;

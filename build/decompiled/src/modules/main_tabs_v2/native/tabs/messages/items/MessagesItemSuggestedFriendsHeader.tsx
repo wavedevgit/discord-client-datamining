@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var8;
     var _closure1_slot9 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: MessagesItemSuggestedFriendsHeader, environment: var3
+    var3 = function arg0() {
         _fun101444: for (var _fun101444_ip = 0;;) switch (_fun101444_ip) {
             case 0:
                 var1 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var1];
                 var4 = var2.bind(var3)(var1);
                 var2 = var4.useDerivedValue;
-                var1 = function() { // Original name: x, environment: var0
+                var1 = function() {
                     _fun101445: for (var _fun101445_ip = 0;;) switch (_fun101445_ip) {
                         case 0:
                             var2 = _closure2_slot0;

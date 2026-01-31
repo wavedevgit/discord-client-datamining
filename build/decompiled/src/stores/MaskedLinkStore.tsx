@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var6;
             var _closure1_slot2 = var5;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun51545: for (var _fun51545_ip = 0;;) switch (_fun51545_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var0;
-            var0 = function(arg0) { // Original name: _isTrustedDomain, environment: var3
+            var0 = function arg0() {
                 _fun51548: for (var _fun51548_ip = 0;;) switch (_fun51548_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0) { // Original name: _isTrustedProtocol, environment: var3
+            var0 = function arg0() {
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var1 = 6;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.bind(var0)(var1);
             var7 = var1.Store;
             var1 = function(arg0) { // Environment: var3
-                var3 = function() { // Original name: MaskedLinkStore, environment: var5
+                var3 = function() {
                     _fun51551: for (var _fun51551_ip = 0;;) switch (_fun51551_ip) {
                         case 0:
                             var3 = this;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'initialize';
                 var4.key = var0;
-                var0 = function() { // Original name: value, environment: var5
+                var0 = function() {
                     _fun51552: for (var _fun51552_ip = 0;;) switch (_fun51552_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'isTrustedDomain';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var2 = _closure1_slot13;
                     var1 = undefined;
                     var0 = arg0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'isTrustedProtocol';
                 var4.key = var6;
-                var5 = function(arg0) { // Original name: value, environment: var5
+                var5 = function arg0() {
                     var2 = _closure1_slot14;
                     var1 = undefined;
                     var0 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var5[var1];
             var13 = var6.bind(var0)(var1);
             var1 = {};
-            var8 = function(arg0) { // Original name: handleAddTrustedDomain, environment: var3
+            var8 = function arg0() {
                 _fun51555: for (var _fun51555_ip = 0;;) switch (_fun51555_ip) {
                     case 0:
                         var0 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.MASKED_LINK_ADD_TRUSTED_DOMAIN = var8;
-            var3 = function(arg0) { // Original name: handleAddTrustedProtocol, environment: var3
+            var3 = function arg0() {
                 _fun51556: for (var _fun51556_ip = 0;;) switch (_fun51556_ip) {
                     case 0:
                         var0 = arg0;

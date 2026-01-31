@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40782: for (var _fun40782_ip = 0;;) switch (_fun40782_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40784: for (var _fun40784_ip = 0;;) switch (_fun40784_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var3 = function() { // Original name: getDefaultSearchState, environment: var1
+    var3 = function() {
         var0 = {
             'query': '',
             'requireUnusualDmActivity': false,
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var3;
-    var0 = function(arg0, arg1) { // Original name: hasStringMatch, environment: var1
+    var0 = function arg0, arg1() {
         _fun40786: for (var _fun40786_ip = 0;;) switch (_fun40786_ip) {
             case 0:
                 var2 = arg0;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: GuildMemberSafetySearch, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var4 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'requiresUsernameMatch';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0._searchState;
             var1 = var0.query;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'reset';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var1 = _closure1_slot9;
             var0 = undefined;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSearchState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var0 = {};
             var5 = var1._searchState;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resetSearchState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40792: for (var _fun40792_ip = 0;;) switch (_fun40792_ip) {
                 case 0:
                     var2 = this;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSearchState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._searchState;
             return var0;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isMemberIncludedInSearchResults';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun40794: for (var _fun40794_ip = 0;;) switch (_fun40794_ip) {
                 case 0:
                     var15 = arg0;
@@ -636,7 +636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun40794
                     }
                 case 467:
-                    var4 = function(arg0, arg1) { // Original name: hasSelectedRole, environment: var1
+                    var4 = function arg0, arg1() {
                         _fun40795: for (var _fun40795_ip = 0;;) switch (_fun40795_ip) {
                             case 0:
                                 var4 = arg1;

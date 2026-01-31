@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: transitionGuildsBarToGuildOrOpenSelectedChannel, environment: var1
+    var1 = function arg0() {
         _fun100948: for (var _fun100948_ip = 0;;) switch (_fun100948_ip) {
             case 0:
                 var5 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ExperimentOverrideActionSheet, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var9 = var1.id;
         var _closure2_slot0 = var9;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var4 = var4.label;
                         var0.label = var4;
-                        var3 = function() { // Original name: onPress, environment: var3
+                        var3 = function() {
                             var4 = _closure1_slot1;
                             var3 = _closure1_slot2;
                             var0 = 17;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'label': 'Clear Override',
                         'isDestructive': true
                     };
-                    var3 = function() { // Original name: onPress, environment: var3
+                    var3 = function() {
                         var4 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 17;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ConnectedExperimentOverrideActionSheet, environment: var1
+    var3 = function arg0() {
         _fun78700: for (var _fun78700_ip = 0;;) switch (_fun78700_ip) {
             case 0:
                 var1 = arg0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: createExperimentEmbed, environment: var1
+    var1 = function arg0, arg1() {
         _fun78703: for (var _fun78703_ip = 0;;) switch (_fun78703_ip) {
             case 0:
                 var10 = arg0;

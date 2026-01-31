@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0) { // Original name: thumbHashToRGBA, environment: var3
+    var1 = function arg0() {
         _fun104072: for (var _fun104072_ip = 0;;) switch (_fun104072_ip) {
             case 0:
                 var4 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 286:
                 _closure2_slot1 = var5;
                 _closure2_slot2 = var46;
-                var3 = function(arg0, arg1, arg2) { // Original name: decodeChannel, environment: var3
+                var3 = function arg0, arg1, arg2() {
                     _fun104073: for (var _fun104073_ip = 0;;) switch (_fun104073_ip) {
                         case 0:
                             var10 = arg0;
@@ -694,7 +694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/thumbhash/ThumbhashUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: createThumbhashImageFromPlaceholder, environment: var3
+    var3 = function arg0() {
         var4 = _closure1_slot2;
         var0 = global;
         var6 = var0.Uint8Array;

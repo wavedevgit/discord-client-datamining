@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/instant_invite/getInviteURL.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function() { // Original name: getInviteURL, environment: var1
+    var1 = function() {
         _fun54268: for (var _fun54268_ip = 0;;) switch (_fun54268_ip) {
             case 0:
                 var3 = arguments[0];

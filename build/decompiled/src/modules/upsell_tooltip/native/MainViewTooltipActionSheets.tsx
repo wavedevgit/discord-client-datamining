@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot12 = var3;
-    var3 = function() { // Original name: AppIconsCoachMarkImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var3;
-    var3 = function() { // Original name: GiftingPromotionCoachmarkImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var3;
-    var3 = function() { // Original name: RobloxConnectionCoachmarkImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var3;
-    var3 = function() { // Original name: BogoPromotionActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var3;
-    var3 = function() { // Original name: GooglePlayPriceChangeActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var3;
-    var3 = function() { // Original name: NotificationNudgeActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var3;
-    var3 = function() { // Original name: PremiumMarketingMomentActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var3;
-    var3 = function() { // Original name: PremiumDiscountOfferActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var3;
-    var3 = function() { // Original name: DisplayNameStylesMobileActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var3;
-    var3 = function() { // Original name: GameCommunityUpsellActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 12;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/upsell_tooltip/native/MainViewTooltipActionSheets.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: MainViewTooltipActionSheets, environment: var1
+    var1 = function() {
         _fun109754: for (var _fun109754_ip = 0;;) switch (_fun109754_ip) {
             case 0:
                 var7 = _closure1_slot0;
@@ -831,7 +831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = _closure1_slot10;
                 var17 = var17.MAIN_VIEW_TOOLTIPS;
                 var0.groupName = var17;
-                var17 = function(arg0) { // Original name: children, environment: var4
+                var17 = function arg0() {
                     _fun109764: for (var _fun109764_ip = 0;;) switch (_fun109764_ip) {
                         case 0:
                             var0 = arg0;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.groupName = var19;
                 var19 = false;
                 var1.bypassAutoDismiss = var19;
-                var19 = function(arg0) { // Original name: children, environment: var4
+                var19 = function arg0() {
                     _fun109763: for (var _fun109763_ip = 0;;) switch (_fun109763_ip) {
                         case 0:
                             var0 = arg0;
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = _closure1_slot10;
                 var18 = var18.MAIN_VIEW_TOOLTIPS;
                 var1.groupName = var18;
-                var18 = function(arg0) { // Original name: children, environment: var4
+                var18 = function arg0() {
                     _fun109762: for (var _fun109762_ip = 0;;) switch (_fun109762_ip) {
                         case 0:
                             var0 = arg0;
@@ -1183,7 +1183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot10;
                 var5 = var5.MAIN_VIEW_TOOLTIPS;
                 var0.groupName = var5;
-                var4 = function(arg0) { // Original name: children, environment: var4
+                var4 = function arg0() {
                     var0 = arg0;
                     var4 = var0.markAsDismissed;
                     var3 = _closure1_slot12;

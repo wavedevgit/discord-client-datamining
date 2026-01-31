@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.SET_CONFIG;
     var3 = {};
     var3.scope = var8;
-    var8 = function(arg0) { // Original name: validation, environment: var7
+    var8 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.validation = var8;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         _fun97990: for (var _fun97990_ip = 0;;) switch (_fun97990_ip) {
             case 0:
                 var1 = arg0;

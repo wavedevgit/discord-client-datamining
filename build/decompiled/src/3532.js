@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun31564
             }
         case 502:
-            var2 = function(arg0) { // Original name: getTag, environment: var1
+            var2 = function arg0() {
                 _fun31565: for (var _fun31565_ip = 0;;) switch (_fun31565_ip) {
                     case 0:
                         var2 = arg0;

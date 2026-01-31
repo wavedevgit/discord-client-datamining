@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/chat/native/placeholder/getChatPlaceholderRowHeight.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function(arg0) { // Original name: getChatPlaceholderRowHeight, environment: var6
+    var6 = function arg0() {
         var1 = _closure1_slot0;
         var2 = global;
         var4 = var2.Math;

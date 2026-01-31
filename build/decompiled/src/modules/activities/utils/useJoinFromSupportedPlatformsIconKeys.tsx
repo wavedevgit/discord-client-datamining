@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = require;
     var2 = exports;
     var8 = dependencyMap;
-    var3 = function(arg0) { // Original name: getJoinFromSupportedPlatformsIconKeys, environment: var1
+    var3 = function arg0() {
         _fun92482: for (var _fun92482_ip = 0;;) switch (_fun92482_ip) {
             case 0:
                 var0 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.IconKey = var5;
     var2.ACTIVITY_GAME_PLATFORM_TO_ICON_KEY = var4;
     var2.getJoinFromSupportedPlatformsIconKeys = var3;
-    var1 = function(arg0) { // Original name: useJoinFromSupportedPlatformsIconKeys, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.platforms;
         var _closure2_slot0 = var4;

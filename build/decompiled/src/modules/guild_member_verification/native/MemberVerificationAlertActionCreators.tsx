@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
-    var4 = function(arg0) { // Original name: openMemberVerificationCancelPendingAlert, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot3;
             var1 = 5;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: closeMemberVerificationAlert, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot3;
             var1 = 5;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot3;
             var1 = 5;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.text = var7;
                 var7 = 'destructive';
                 var6.variant = var7;
-                var7 = function() { // Original name: onPress, environment: var4
+                var7 = function() {
                     var1 = _closure2_slot2;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var0)(var1);
                 var2 = var3.openLazy;
                 var1 = {};
-                var4 = function() { // Original name: importer, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot3;
                     var1 = 5;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot3;
             var1 = 5;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot3;
             var1 = 5;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1, arg2) { // Original name: formatWithOrWithoutMarkdown, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun78406: for (var _fun78406_ip = 0;;) switch (_fun78406_ip) {
             case 0:
                 var4 = arg0;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getQuestInstructionsToWinRewardSponsored, environment: var1
+    var0 = function arg0() {
         _fun78407: for (var _fun78407_ip = 0;;) switch (_fun78407_ip) {
             case 0:
                 var1 = arg0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.onGameSheetClosed = var8;
                 var0 = var3.bind(var4)(var0);
                 var2.gameSheetHook = var0;
-                var0 = function(arg0) { // Original name: _getQuestInstructionsToWinRewardArenaPackage, environment: var0
+                var0 = function arg0() {
                     _fun78408: for (var _fun78408_ip = 0;;) switch (_fun78408_ip) {
                         case 0:
                             var0 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: _getQuestsInstructionsToWinReward, environment: var1
+    var0 = function arg0() {
         _fun78410: for (var _fun78410_ip = 0;;) switch (_fun78410_ip) {
             case 0:
                 var0 = arg0;
@@ -1389,7 +1389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var4 = function(arg0) { // Original name: getQuestsInstructionsToWinReward, environment: var1
+    var4 = function arg0() {
         _fun78411: for (var _fun78411_ip = 0;;) switch (_fun78411_ip) {
             case 0:
                 var0 = arg0;
@@ -1429,7 +1429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0) { // Original name: useQuestsInstructionsToWinReward, environment: var1
+    var3 = function arg0() {
         _fun78412: for (var _fun78412_ip = 0;;) switch (_fun78412_ip) {
             case 0:
                 var5 = arg0;
@@ -1551,7 +1551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var3;
-    var0 = function(arg0) { // Original name: getSimplifiedQuestTaskType, environment: var1
+    var0 = function arg0() {
         _fun78414: for (var _fun78414_ip = 0;;) switch (_fun78414_ip) {
             case 0:
                 var3 = arg0;
@@ -1643,7 +1643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: canLaunchOnCurrentPlatform, environment: var1
+    var0 = function arg0, arg1() {
         _fun78415: for (var _fun78415_ip = 0;;) switch (_fun78415_ip) {
             case 0:
                 var5 = arg1;
@@ -1766,7 +1766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/quests/hooks/QuestCopyHooks.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: useQuestInstructionTitle, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun78416: for (var _fun78416_ip = 0;;) switch (_fun78416_ip) {
             case 0:
                 var7 = arg0;
@@ -2089,7 +2089,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useQuestInstructionTitle = var5;
     var2.getQuestsInstructionsToWinReward = var4;
     var2.useQuestsInstructionsToWinReward = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: useQuestTileDescription, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun78417: for (var _fun78417_ip = 0;;) switch (_fun78417_ip) {
             case 0:
                 var5 = arg0;
@@ -2200,7 +2200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuestTileDescription = var3;
-    var3 = function(arg0) { // Original name: useQuestBarSubtitle, environment: var1
+    var3 = function arg0() {
         _fun78418: for (var _fun78418_ip = 0;;) switch (_fun78418_ip) {
             case 0:
                 var0 = arg0;
@@ -2485,7 +2485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuestBarSubtitle = var3;
-    var3 = function(arg0) { // Original name: useQuestBarTitle, environment: var1
+    var3 = function arg0() {
         _fun78419: for (var _fun78419_ip = 0;;) switch (_fun78419_ip) {
             case 0:
                 var3 = arg0;
@@ -2671,7 +2671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuestBarTitle = var3;
-    var3 = function(arg0) { // Original name: usePrimaryCtaCopy, environment: var1
+    var3 = function arg0() {
         _fun78421: for (var _fun78421_ip = 0;;) switch (_fun78421_ip) {
             case 0:
                 var0 = arg0;
@@ -2686,7 +2686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 28:
                 var1 = false;
             case 30:
-                var0 = function(arg0) { // Original name: useSimplifiedQuestTaskType, environment: var0
+                var0 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot4;
@@ -2902,7 +2902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.usePrimaryCtaCopy = var3;
-    var3 = function(arg0) { // Original name: usePremiumExtendableCopy, environment: var1
+    var3 = function arg0() {
         _fun78424: for (var _fun78424_ip = 0;;) switch (_fun78424_ip) {
             case 0:
                 var6 = arg0;
@@ -2976,7 +2976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.usePremiumExtendableCopy = var3;
-    var1 = function(arg0) { // Original name: getRewardCodeRedemptionInstructions, environment: var1
+    var1 = function arg0() {
         _fun78427: for (var _fun78427_ip = 0;;) switch (_fun78427_ip) {
             case 0:
                 var0 = arg0;

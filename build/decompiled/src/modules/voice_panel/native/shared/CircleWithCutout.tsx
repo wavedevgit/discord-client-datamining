@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var5.bind(var7)();
     var _closure1_slot5 = var5;
     var5 = var6.memo;
-    var1 = function(arg0) { // Original name: CircleWithCutout, environment: var1
+    var1 = function arg0() {
         _fun111585: for (var _fun111585_ip = 0;;) switch (_fun111585_ip) {
             case 0:
                 var4 = arg0;

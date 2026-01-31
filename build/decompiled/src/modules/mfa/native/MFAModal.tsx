@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: MFAModal, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var7 = var1.mfaChallenge;
         var _closure2_slot0 = var7;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             _fun86303: for (var _fun86303_ip = 0;;) switch (_fun86303_ip) {
                 case 0:
-                    var5 = function() { // Original name: headerRight, environment: var3
+                    var5 = function() {
                         var3 = _closure1_slot6;
                         var9 = _closure1_slot0;
                         var6 = _closure1_slot2;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = var9.bind(var10)();
                     var6.headerLeft = var9;
                     var6.headerRight = var5;
-                    var9 = function(arg0) { // Original name: render, environment: var3
+                    var9 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var5;
                 case 292:
                     var1.headerRight = var10;
-                    var10 = function(arg0) { // Original name: render, environment: var3
+                    var10 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var5;
                 case 496:
                     var1.headerRight = var10;
-                    var10 = function(arg0) { // Original name: render, environment: var3
+                    var10 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var5;
                 case 700:
                     var1.headerRight = var10;
-                    var10 = function(arg0) { // Original name: render, environment: var3
+                    var10 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -636,7 +636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var5;
                 case 904:
                     var1.headerRight = var10;
-                    var10 = function(arg0) { // Original name: render, environment: var3
+                    var10 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5;
                 case 1108:
                     var1.headerRight = var4;
-                    var3 = function(arg0) { // Original name: render, environment: var3
+                    var3 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/mfa/native/MFAModal.tsx';
     var4 = var5.bind(var6)(var4);
     var2.MFAModal = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: openMFAModal, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 4;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = require;
     var1 = exports;
     var4 = dependencyMap;
-    var5 = function(arg0) { // Original name: _interopRequireDefault, environment: var2
+    var5 = function arg0() {
         _fun97501: for (var _fun97501_ip = 0;;) switch (_fun97501_ip) {
             case 0:
                 var2 = arg0;
@@ -34,15 +34,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var6);
-    var0 = function() { // Original name: OverlayCreator, environment: var2
-        var0 = function() { // Original name: overlay, environment: var0
+    var0 = function() {
+        var0 = function() {
             var0 = _closure1_slot1;
             var1 = var0.default;
             var0 = undefined;
             var0 = var1.bind(var0)();
             var _closure3_slot0 = var0;
             var0 = {};
-            var1 = function(arg0) { // Original name: onCommand, environment: var2
+            var1 = function arg0() {
                 _fun97504: for (var _fun97504_ip = 0;;) switch (_fun97504_ip) {
                     case 0:
                         var0 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var0.onCommand = var1;
             var1 = {};
-            var2 = function(arg0) { // Original name: overlay, environment: var2
+            var2 = function arg0() {
                 var1 = arg0;
                 var _closure4_slot0 = var1;
                 var0 = function() { // Environment: var0

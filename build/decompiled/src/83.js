@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: parseLength, environment: var0
+    var2 = function arg0() {
         _fun1486: for (var _fun1486_ip = 0;;) switch (_fun1486_ip) {
             case 0:
                 var2 = /([+-]?\d*(\.\d+)?)([\w\W]+)?/g;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: processBoxShadow, environment: var0
+    var0 = function arg0() {
         _fun1487: for (var _fun1487_ip = 0;;) switch (_fun1487_ip) {
             case 0:
                 var5 = arg0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = /\n/g;
                 var2 = ' ';
                 var3 = var4.bind(var5)(var3, var2);
-                var2 = function(arg0) { // Original name: parseBoxShadowString, environment: var2
+                var2 = function arg0() {
                     _fun1488: for (var _fun1488_ip = 0;;) switch (_fun1488_ip) {
                         case 0:
                             var4 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var6 = function(arg0) { // Original name: TimeToInitialDisplay, environment: var1
+    var6 = function arg0() {
         _fun12900: for (var _fun12900_ip = 0;;) switch (_fun12900_ip) {
             case 0:
                 var0 = arg0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var6;
-    var5 = function(arg0) { // Original name: TimeToFullDisplay, environment: var1
+    var5 = function arg0() {
         _fun12901: for (var _fun12901_ip = 0;;) switch (_fun12901_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var5;
-    var0 = function(arg0) { // Original name: TimeToDisplay, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var0;
-    var4 = function(arg0) { // Original name: startTimeToInitialDisplaySpan, environment: var1
+    var4 = function arg0() {
         _fun12903: for (var _fun12903_ip = 0;;) switch (_fun12903_ip) {
             case 0:
                 var6 = arg0;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function() { // Original name: startTimeToFullDisplaySpan, environment: var1
+    var3 = function() {
         _fun12905: for (var _fun12905_ip = 0;;) switch (_fun12905_ip) {
             case 0:
                 var8 = undefined;
@@ -521,13 +521,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var3;
-    var0 = function(arg0) { // Original name: createTimeToDisplay, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var2 = var1.useFocusEffect;
         var _closure2_slot0 = var2;
         var1 = var1.Component;
         var _closure2_slot1 = var1;
-        var0 = function(arg0) { // Original name: TimeToDisplayWrapper, environment: var0
+        var0 = function arg0() {
             _fun12912: for (var _fun12912_ip = 0;;) switch (_fun12912_ip) {
                 case 0:
                     var7 = arg0;
@@ -635,7 +635,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.TimeToFullDisplay = var5;
     var2.startTimeToInitialDisplaySpan = var4;
     var2.startTimeToFullDisplaySpan = var3;
-    var3 = function(arg0) { // Original name: updateInitialDisplaySpan, environment: var1
+    var3 = function arg0() {
         _fun12915: for (var _fun12915_ip = 0;;) switch (_fun12915_ip) {
             case 0:
                 var3 = arg0;
@@ -801,7 +801,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = ') end.';
                 var2 = var10.bind(var9)(var11, var2);
                 var2 = var4.bind(var8)(var2);
-                var2 = function(arg0, arg1) { // Original name: updateFullDisplaySpan, environment: var2
+                var2 = function arg0, arg1() {
                     _fun12916: for (var _fun12916_ip = 0;;) switch (_fun12916_ip) {
                         case 0:
                             var6 = arg0;
@@ -1038,7 +1038,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.updateInitialDisplaySpan = var3;
-    var3 = function(arg0) { // Original name: createTimeToFullDisplay, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot12;
         var1 = {};
         var3 = arg0;
@@ -1051,7 +1051,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.createTimeToFullDisplay = var3;
-    var1 = function(arg0) { // Original name: createTimeToInitialDisplay, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot12;
         var1 = {};
         var3 = arg0;

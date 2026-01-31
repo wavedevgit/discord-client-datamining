@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: BackdropCard, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.buttonLabel;
         var17 = var0.title;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var8.Button;
         var8 = {};
         var8.text = var12;
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             var3 = _closure2_slot2;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -150,10 +150,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemBackdrop.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemBackdrop, environment: var1
+    var1 = function() {
         _fun87851: for (var _fun87851_ip = 0;;) switch (_fun87851_ip) {
             case 0:
-                var12 = function() { // Original name: handleClose, environment: var0
+                var12 = function() {
                     var2 = _closure2_slot1;
                     var0 = undefined;
                     var1 = false;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var8[var1];
                 var2 = var6.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: n, environment: var0
+                var0 = function() {
                     _fun87853: for (var _fun87853_ip = 0;;) switch (_fun87853_ip) {
                         case 0:
                             var0 = {};

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/native/DisplayedInviteActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: showInvite, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun96204: for (var _fun96204_ip = 0;;) switch (_fun96204_ip) {
             case 0:
                 var4 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showInvite = var3;
-    var1 = function() { // Original name: clearDisplayedInvite, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;

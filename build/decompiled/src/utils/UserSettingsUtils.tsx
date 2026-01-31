@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'utils/UserSettingsUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function() { // Original name: getSanitizedRestrictedGuilds, environment: var1
+    var5 = function() {
         _fun59014: for (var _fun59014_ip = 0;;) switch (_fun59014_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSanitizedRestrictedGuilds = var5;
-    var5 = function() { // Original name: getSanitizedMessageRequestRestrictedGuilds, environment: var1
+    var5 = function() {
         _fun59016: for (var _fun59016_ip = 0;;) switch (_fun59016_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSanitizedMessageRequestRestrictedGuilds = var5;
-    var5 = function() { // Original name: getSanitizedActivityRestrictedGuilds, environment: var1
+    var5 = function() {
         _fun59018: for (var _fun59018_ip = 0;;) switch (_fun59018_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSanitizedActivityRestrictedGuilds = var5;
-    var5 = function() { // Original name: getSanitizedActivityJoiningRestrictedGuilds, environment: var1
+    var5 = function() {
         _fun59020: for (var _fun59020_ip = 0;;) switch (_fun59020_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSanitizedActivityJoiningRestrictedGuilds = var5;
-    var5 = function(arg0) { // Original name: computeFlags, environment: var1
+    var5 = function arg0() {
         _fun59022: for (var _fun59022_ip = 0;;) switch (_fun59022_ip) {
             case 0:
                 var3 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.computeFlags = var5;
-    var5 = function(arg0, arg1) { // Original name: harvestDisabled, environment: var1
+    var5 = function arg0, arg1() {
         _fun59023: for (var _fun59023_ip = 0;;) switch (_fun59023_ip) {
             case 0:
                 var3 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.harvestDisabled = var5;
-    var5 = function(arg0) { // Original name: trackUserSettingsPaneViewed, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var9 = var0.destinationPane;
         var10 = var0.originPane;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.trackUserSettingsPaneViewed = var5;
     var2.NonSpamRetrainingOptInOptions = var4;
     var2.NonSpamRetrainingOptInOptionsToValue = var3;
-    var3 = function() { // Original name: generateNonSpamRetrainingOptInSettingOptions, environment: var1
+    var3 = function() {
         var1 = {};
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.generateNonSpamRetrainingOptInSettingOptions = var3;
-    var1 = function(arg0) { // Original name: shakeUserSettings, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 6;

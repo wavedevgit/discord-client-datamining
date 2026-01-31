@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: resetStoreState, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/useBatchUpdateSelectOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useBatchUpdateSelectOption, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = var3.getOnboardingResponses;
             var5 = _closure2_slot0;
             var6 = var0.bind(var3)(var5);
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: getRoles, environment: var2
+            var3 = function arg0, arg1, arg2, arg3() {
                 _fun77499: for (var _fun77499_ip = 0;;) switch (_fun77499_ip) {
                     case 0:
                         var4 = arg0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9.option = var7;
             var9.selected = var12;
             var9.responses = var6;
-            var6 = function(arg0) { // Original name: getChannels, environment: var2
+            var6 = function arg0() {
                 _fun77505: for (var _fun77505_ip = 0;;) switch (_fun77505_ip) {
                     case 0:
                         var2 = arg0;

@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.bind(var8)(var6);
                 var0.accessibilityLabel = var6;
                 var0.isSmallSize = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     _fun68060: for (var _fun68060_ip = 0;;) switch (_fun68060_ip) {
                         case 0:
                             var2 = _closure2_slot1;

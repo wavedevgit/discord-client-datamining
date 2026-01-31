@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/payments/native/NativePaymentContext.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: NativePaymentContextProvider, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var12 = var0.skuIDs;

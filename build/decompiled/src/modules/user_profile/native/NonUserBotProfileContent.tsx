@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Fragment;
     var _closure1_slot9 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: NonUserBotProfileContent, environment: var1
+    var1 = function arg0() {
         _fun59530: for (var _fun59530_ip = 0;;) switch (_fun59530_ip) {
             case 0:
                 var0 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun59530
                 }
             case 354:
-                var26 = function() { // Original name: handleCopyUsername, environment: var25
+                var26 = function() {
                     var3 = _closure2_slot0;
                     var2 = {};
                     var0 = 'COPY_USERNAME';
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.displayNameAccessibilityHint = var27;
                 var15.onPressDisplayName = var26;
                 var15.onPressUserTag = var26;
-                var25 = function() { // Original name: onPressPronouns, environment: var25
+                var25 = function() {
                     var2 = _closure2_slot0;
                     var1 = {};
                     var0 = 'PRESS_PRONOUNS';

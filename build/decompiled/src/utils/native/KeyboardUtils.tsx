@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/native/KeyboardUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: dismissKeyboard, environment: var1
+    var1 = function() {
         _fun73809: for (var _fun73809_ip = 0;;) switch (_fun73809_ip) {
             case 0:
                 var1 = arguments[0];

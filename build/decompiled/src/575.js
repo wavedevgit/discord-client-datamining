@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = global;
     var1 = var1.parseInt;
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: toNumber, environment: var0
+    var1 = function arg0() {
         _fun6936: for (var _fun6936_ip = 0;;) switch (_fun6936_ip) {
             case 0:
                 var0 = arg0;

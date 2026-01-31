@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = dependencyMap;
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var11;
-    var7 = function(arg0) { // Original name: canSeeGuildRoleSubscriptionSettingsContent, environment: var4
+    var7 = function arg0() {
         _fun49817: for (var _fun49817_ip = 0;;) switch (_fun49817_ip) {
             case 0:
                 var1 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var7;
-    var6 = function(arg0) { // Original name: computeGuildRoleSubscriptionSettingsVisibility, environment: var4
+    var6 = function arg0() {
         _fun49818: for (var _fun49818_ip = 0;;) switch (_fun49818_ip) {
             case 0:
                 var3 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var6;
-    var5 = function(arg0) { // Original name: useGuildRoleSubscriptionSettingsVisibility, environment: var4
+    var5 = function arg0() {
         _fun49819: for (var _fun49819_ip = 0;;) switch (_fun49819_ip) {
             case 0:
                 var11 = arg0;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var3 = function(arg0) { // Original name: useCanManageGuildRoleSubscriptions, environment: var4
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var3;
-    var1 = function(arg0) { // Original name: canManageGuildRoleSubscriptions, environment: var4
+    var1 = function arg0() {
         _fun49823: for (var _fun49823_ip = 0;;) switch (_fun49823_ip) {
             case 0:
                 var4 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildRoleSubscriptionSettingsVisibility = var8;
     var2.canSeeGuildRoleSubscriptionSettingsContent = var7;
     var2.computeGuildRoleSubscriptionSettingsVisibility = var6;
-    var6 = function(arg0) { // Original name: canSeeGuildRoleSubscriptionSettings, environment: var4
+    var6 = function arg0() {
         var3 = _closure1_slot9;
         var2 = undefined;
         var1 = arg0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canSeeGuildRoleSubscriptionSettings = var6;
     var2.useGuildRoleSubscriptionSettingsVisibility = var5;
-    var5 = function(arg0) { // Original name: getGuildRoleSubscriptionSettingsVisibility, environment: var4
+    var5 = function arg0() {
         _fun49825: for (var _fun49825_ip = 0;;) switch (_fun49825_ip) {
             case 0:
                 var4 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildRoleSubscriptionSettingsVisibility = var5;
-    var4 = function(arg0) { // Original name: useCanSeeGuildRoleSubscriptionSettings, environment: var4
+    var4 = function arg0() {
         var3 = _closure1_slot10;
         var2 = undefined;
         var1 = arg0;

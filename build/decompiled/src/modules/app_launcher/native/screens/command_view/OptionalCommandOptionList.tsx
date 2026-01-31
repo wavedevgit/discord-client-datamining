@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: OptionList, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.options;
         var _closure2_slot0 = var6;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var10.bind(var3)(var1);
             var2 = var1.TableRow;
             var1 = {};
-            var6 = function() { // Original name: onPress, environment: var8
+            var6 = function() {
                 var2 = _closure2_slot1;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var9.ButtonSizes;
             var9 = var9.SMALL;
             var5.size = var9;
-            var8 = function() { // Original name: onPress, environment: var8
+            var8 = function() {
                 var2 = _closure2_slot1;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/command_view/OptionalCommandOptionList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OptionalCommandOptionList, environment: var1
+    var1 = function arg0() {
         _fun108239: for (var _fun108239_ip = 0;;) switch (_fun108239_ip) {
             case 0:
                 var0 = arg0;

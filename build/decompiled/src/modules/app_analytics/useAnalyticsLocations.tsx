@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: mergeLocations, environment: var1
+    var0 = function arg0, arg1() {
         _fun50739: for (var _fun50739_ip = 0;;) switch (_fun50739_ip) {
             case 0:
                 var0 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_analytics/useAnalyticsLocations.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useAnalyticsLocations, environment: var1
+    var4 = function arg0() {
         var3 = 0;
         var11 = 0;
         var8 = copyRestArgs(var11);
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.LocationContext = var3;
-    var1 = function(arg0) { // Original name: AnalyticsLocationProvider, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.children;
         var4 = var1.value;

@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/custom_scores/ICYMICustomScoresOverviewScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMICustomScoresOverviewScreen, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.navigation;
         var _closure2_slot0 = var1;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.bind(var3)(var1);
                     var2 = var1.TableRow;
                     var1 = {};
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot4;
                         var0 = _closure3_slot0;
                         var1 = var0.id;

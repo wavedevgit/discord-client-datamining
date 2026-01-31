@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var12;
             var _closure1_slot2 = var5;
-            var0 = function(arg0, arg1) { // Original name: getEmojiItemUrl, environment: var1
+            var0 = function arg0, arg1() {
                 _fun73895: for (var _fun73895_ip = 0;;) switch (_fun73895_ip) {
                     case 0:
                         var2 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var0;
-            var0 = function() { // Original name: EmojiItemLockedOverlay, environment: var1
+            var0 = function() {
                 var0 = _closure1_slot9;
                 var3 = undefined;
                 var7 = var0.bind(var3)();
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0) { // Original name: EmojiItem, environment: var1
+            var0 = function arg0() {
                 _fun73897: for (var _fun73897_ip = 0;;) switch (_fun73897_ip) {
                     case 0:
                         var0 = arg0;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 166:
                         var7[1] = var8;
                         var0.style = var7;
-                        var7 = function() { // Original name: onPress, environment: var4
+                        var7 = function() {
                             var3 = _closure2_slot2;
                             var2 = _closure2_slot0;
                             var1 = _closure2_slot1;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var0.onPress = var7;
-                        var4 = function() { // Original name: onLongPress, environment: var4
+                        var4 = function() {
                             var2 = _closure2_slot3;
                             var1 = _closure2_slot0;
                             var0 = undefined;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5.items = var7;
                         var5.isSectionNitroLocked = var6;
                         var0.rowData = var5;
-                        var5 = function(arg0) { // Original name: onPressEmoji, environment: var4
+                        var5 = function arg0() {
                             _fun73901: for (var _fun73901_ip = 0;;) switch (_fun73901_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.onPressEmoji = var5;
-                        var4 = function(arg0) { // Original name: onLongPressEmoji, environment: var4
+                        var4 = function arg0() {
                             _fun73903: for (var _fun73903_ip = 0;;) switch (_fun73903_ip) {
                                 case 0:
                                     var0 = arg0;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun48609: for (var _fun48609_ip = 0;;) switch (_fun48609_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: FeMergeNode, environment: var0
+        var3 = function() {
             _fun48613: for (var _fun48613_ip = 0;;) switch (_fun48613_ip) {
                 case 0:
                     var4 = this;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             var0 = null;
             return var0;
         };

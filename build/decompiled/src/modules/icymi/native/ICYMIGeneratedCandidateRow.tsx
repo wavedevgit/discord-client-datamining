@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun104168: for (var _fun104168_ip = 0;;) switch (_fun104168_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun104170: for (var _fun104170_ip = 0;;) switch (_fun104170_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: FacePile, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var13 = var1.authors;
         var5 = var1.guildId;
@@ -544,7 +544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMIGeneratedCandidateRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMIGeneratedCandidateRow, environment: var1
+    var1 = function arg0() {
         _fun104174: for (var _fun104174_ip = 0;;) switch (_fun104174_ip) {
             case 0:
                 var0 = arg0;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot0 = var3;
                             var1 = 0;
                             var _closure3_slot1 = var1;
-                            var6 = function() { // Original name: _loop, environment: var0
+                            var6 = function() {
                                 var1 = _closure2_slot0;
                                 var4 = var1.message_ids;
                                 var3 = _closure3_slot1;

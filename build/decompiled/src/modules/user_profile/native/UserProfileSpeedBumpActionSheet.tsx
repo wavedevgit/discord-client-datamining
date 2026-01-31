@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: InformationTable, environment: var1
+    var0 = function arg0() {
         _fun59470: for (var _fun59470_ip = 0;;) switch (_fun59470_ip) {
             case 0:
                 var0 = arg0;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: UserProfileSpeedBumpActionSheet, environment: var1
+    var1 = function arg0() {
         _fun59472: for (var _fun59472_ip = 0;;) switch (_fun59472_ip) {
             case 0:
                 var0 = arg0;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun59472
                 }
             case 750:
-                var22 = function() { // Original name: handleShowProfileActionSheet, environment: var25
+                var22 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 26;
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.style = var27;
                 var27 = 'button';
                 var20.accessibilityRole = var27;
-                var25 = function() { // Original name: onPress, environment: var25
+                var25 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 36;

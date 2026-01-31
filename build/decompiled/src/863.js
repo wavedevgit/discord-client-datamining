@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var4;
-    var3 = function(arg0) { // Original name: normalize, environment: var1
+    var3 = function arg0() {
         _fun9089: for (var _fun9089_ip = 0;;) switch (_fun9089_ip) {
             case 0:
                 var5 = undefined;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var0 = function(arg0, arg1) { // Original name: visit, environment: var1
+    var0 = function arg0, arg1() {
         _fun9090: for (var _fun9090_ip = 0;;) switch (_fun9090_ip) {
             case 0:
                 var0 = arg1;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun9090
                 }
             case 110:
-                var5 = function() { // Original name: memoBuilder, environment: var4
+                var5 = function() {
                     var0 = global;
                     var0 = var0.WeakSet;
                     var2 = var0.prototype;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0 instanceof Object ? var0 : var2;
                     var _closure3_slot0 = var0;
                     var0 = new Array(2);
-                    var2 = function(arg0) { // Original name: memoize, environment: var1
+                    var2 = function arg0() {
                         _fun9092: for (var _fun9092_ip = 0;;) switch (_fun9092_ip) {
                             case 0:
                                 var3 = arg0;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0[0] = var2;
-                    var1 = function(arg0) { // Original name: unmemoize, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.delete;
                         var0 = arg0;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun9090
                 }
             case 225:
-                var7 = function(arg0, arg1) { // Original name: stringifyValue, environment: var4
+                var7 = function arg0, arg1() {
                     _fun9094: for (var _fun9094_ip = 0;;) switch (_fun9094_ip) {
                         case 0:
                             var1 = arg0;
@@ -675,7 +675,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
     var2.normalize = var3;
-    var3 = function(arg0) { // Original name: normalizeToSize, environment: var1
+    var3 = function arg0() {
         _fun9095: for (var _fun9095_ip = 0;;) switch (_fun9095_ip) {
             case 0:
                 var5 = arg0;
@@ -721,7 +721,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 78:
                 var0 = _closure1_slot4;
                 var0 = var0.bind(var4)(var5, var1);
-                var7 = function(arg0) { // Original name: jsonSize, environment: var7
+                var7 = function arg0() {
                     var0 = global;
                     var3 = var0.JSON;
                     var2 = var3.stringify;
@@ -753,7 +753,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var3;
     var2.normalizeToSize = var3;
-    var1 = function(arg0, arg1) { // Original name: normalizeUrlToBase, environment: var1
+    var1 = function arg0, arg1() {
         _fun9097: for (var _fun9097_ip = 0;;) switch (_fun9097_ip) {
             case 0:
                 var3 = arg0;

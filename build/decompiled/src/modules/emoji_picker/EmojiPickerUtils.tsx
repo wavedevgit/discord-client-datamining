@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun57175: for (var _fun57175_ip = 0;;) switch (_fun57175_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun57177: for (var _fun57177_ip = 0;;) switch (_fun57177_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var5 = function(arg0) { // Original name: useFrequentlyUsedEmojis, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot3;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var5;
-    var4 = function(arg0) { // Original name: useFrequentlyUsedReactionEmojis, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot3;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var4;
-    var3 = function(arg0) { // Original name: useFavoriteEmojis, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot3;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.id = var6;
                             var6 = false;
                             var5.isNitroLocked = var6;
-                            var15 = function(arg0) { // Original name: getEmojiUnavailableReasons, environment: var0
+                            var15 = function arg0() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 17;
@@ -2064,7 +2064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStringForEmojiCategory = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: useEmojiSearchResults, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         var13 = arg0;
         var12 = arg1;
         var11 = arg2;
@@ -2157,7 +2157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useFrequentlyUsedEmojis = var5;
     var2.useFrequentlyUsedReactionEmojis = var4;
     var2.useFavoriteEmojis = var3;
-    var3 = function(arg0, arg1) { // Original name: useIsFavoriteEmoji, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -2214,7 +2214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsFavoriteEmoji = var3;
-    var3 = function(arg0) { // Original name: useEmojiInPriorityOrder, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot3;
@@ -2256,7 +2256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEmojiInPriorityOrder = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getEmojiSubCategory, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun57223: for (var _fun57223_ip = 0;;) switch (_fun57223_ip) {
             case 0:
                 var5 = arg0;
@@ -2335,7 +2335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEmojiSubCategory = var3;
-    var1 = function(arg0, arg1) { // Original name: getSearchPlaceholder, environment: var1
+    var1 = function arg0, arg1() {
         _fun57226: for (var _fun57226_ip = 0;;) switch (_fun57226_ip) {
             case 0:
                 var0 = _closure1_slot17;

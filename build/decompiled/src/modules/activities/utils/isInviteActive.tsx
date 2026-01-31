@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/activities/utils/isInviteActive.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1, arg2) { // Original name: isInviteActive, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun92454: for (var _fun92454_ip = 0;;) switch (_fun92454_ip) {
             case 0:
                 var0 = arg0;

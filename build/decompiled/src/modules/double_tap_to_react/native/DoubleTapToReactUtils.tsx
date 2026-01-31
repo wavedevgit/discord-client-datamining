@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: reactionEmojiFromProtoValue, environment: var1
+    var4 = function arg0() {
         _fun57255: for (var _fun57255_ip = 0;;) switch (_fun57255_ip) {
             case 0:
                 var1 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0) { // Original name: disambiguatedEmojiFromProtoValue, environment: var1
+    var3 = function arg0() {
         _fun57256: for (var _fun57256_ip = 0;;) switch (_fun57256_ip) {
             case 0:
                 var1 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var3;
-    var0 = function() { // Original name: _initializeDoubleTapEmojiAndUpsell, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.reactionEmojiFromProtoValue = var4;
     var2.disambiguatedEmojiFromProtoValue = var3;
-    var3 = function(arg0, arg1) { // Original name: handleAddDefaultDoubleTapReaction, environment: var1
+    var3 = function arg0, arg1() {
         _fun57260: for (var _fun57260_ip = 0;;) switch (_fun57260_ip) {
             case 0:
                 var8 = arg0;
@@ -919,7 +919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleAddDefaultDoubleTapReaction = var3;
-    var3 = function(arg0, arg1) { // Original name: areEmojisEqual, environment: var1
+    var3 = function arg0, arg1() {
         _fun57263: for (var _fun57263_ip = 0;;) switch (_fun57263_ip) {
             case 0:
                 var2 = arg0;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.areEmojisEqual = var3;
-    var3 = function(arg0) { // Original name: markDoubleTapDismissed, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 23;
@@ -982,7 +982,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.markDoubleTapDismissed = var3;
-    var3 = function() { // Original name: initializeDoubleTapEmojiAndUpsell, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -993,7 +993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.initializeDoubleTapEmojiAndUpsell = var3;
-    var1 = function(arg0, arg1) { // Original name: canUpsellDoubleTapForEmoji, environment: var1
+    var1 = function arg0, arg1() {
         _fun57266: for (var _fun57266_ip = 0;;) switch (_fun57266_ip) {
             case 0:
                 var3 = arg1;

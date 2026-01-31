@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun41171: for (var _fun41171_ip = 0;;) switch (_fun41171_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun41174: for (var _fun41174_ip = 0;;) switch (_fun41174_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun41176: for (var _fun41176_ip = 0;;) switch (_fun41176_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: incrementVersion, environment: var3
+    var0 = function() {
         var2 = _closure1_slot12;
         var0 = 1;
         var0 = var2 + var0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: deleteCategory, environment: var3
+    var0 = function arg0() {
         _fun41178: for (var _fun41178_ip = 0;;) switch (_fun41178_ip) {
             case 0:
                 var1 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: CategoryCollapseStore, environment: var5
+        var3 = function() {
             _fun41180: for (var _fun41180_ip = 0;;) switch (_fun41180_ip) {
                 case 0:
                     var3 = this;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun41181: for (var _fun41181_ip = 0;;) switch (_fun41181_ip) {
                 case 0:
                     var1 = arg0;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isCollapsed';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41183: for (var _fun41183_ip = 0;;) switch (_fun41183_ip) {
                 case 0:
                     var2 = arg0;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCollapsedCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'version';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var8 = function arg0() {
         _fun41186: for (var _fun41186_ip = 0;;) switch (_fun41186_ip) {
             case 0:
                 var0 = arg0;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleUserGuildSettingsFullUpdate, environment: var3
+    var8 = function arg0() {
         _fun41187: for (var _fun41187_ip = 0;;) switch (_fun41187_ip) {
             case 0:
                 var0 = arg0;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_GUILD_SETTINGS_FULL_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleCategoryCollapse, environment: var3
+    var8 = function arg0() {
         _fun41189: for (var _fun41189_ip = 0;;) switch (_fun41189_ip) {
             case 0:
                 var0 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CATEGORY_COLLAPSE = var8;
-    var8 = function(arg0) { // Original name: handleCategoryExpand, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.id;
         var1 = _closure1_slot17;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CATEGORY_EXPAND = var8;
-    var8 = function(arg0) { // Original name: handleCategoryCollapseAll, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = _closure1_slot9;
@@ -811,7 +811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CATEGORY_COLLAPSE_ALL = var8;
-    var8 = function(arg0) { // Original name: handleCategoryExpandAll, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = _closure1_slot9;
@@ -835,7 +835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CATEGORY_EXPAND_ALL = var8;
-    var3 = function(arg0) { // Original name: handleChannelDelete, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var2 = var0.id;

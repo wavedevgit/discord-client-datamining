@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 4;
     var3.type = var4;
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: extractBrush, environment: var1
+    var1 = function arg0() {
         _fun48363: for (var _fun48363_ip = 0;;) switch (_fun48363_ip) {
             case 0:
                 var7 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PortalKeyboardPlaceholderInner, environment: var6
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.keyboardType;
         var8 = _closure1_slot1;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var7 = var1.jsx;
     var _closure1_slot5 = var7;
-    var3 = function() { // Original name: PortalKeyboardPlaceholder, environment: var6
+    var3 = function() {
         _fun90408: for (var _fun90408_ip = 0;;) switch (_fun90408_ip) {
             case 0:
                 var2 = _closure1_slot1;

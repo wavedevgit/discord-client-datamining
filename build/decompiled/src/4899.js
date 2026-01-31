@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = "function pnpm_BottomSheetTsx27({_animatedIndex:_animatedIndex,_animatedPosition:_animatedPosition,_animationState:_animationState,_contentGestureState:_contentGestureState,_handleGestureState:_handleGestureState}){const{ANIMATION_STATE,animatedNextPosition,INITIAL_VALUE,animatedNextPositionIndex,State,reduceMotion,animatedCurrentIndex,animatedSnapPoints,__DEV__,runOnJS,print,BottomSheet,handleOnChange,_providedOnClose}=this.__closure;if(_animationState!==ANIMATION_STATE.STOPPED){return;}if(animatedNextPosition.value!==INITIAL_VALUE&&animatedNextPositionIndex.value!==INITIAL_VALUE&&(_animatedPosition!==animatedNextPosition.value||_animatedIndex!==animatedNextPositionIndex.value)){return;}if(_animatedIndex%1!==0){return;}const hasNoActiveGesture=(_contentGestureState===State.END||_contentGestureState===State.UNDETERMINED||_contentGestureState===State.CANCELLED)&&(_handleGestureState===State.END||_handleGestureState===State.UNDETERMINED||_handleGestureState===State.CANCELLED);if(!hasNoActiveGesture){return;}if(reduceMotion&&_animatedIndex===animatedCurrentIndex.value&&animatedSnapPoints.value[_animatedIndex]!==_animatedPosition){return;}if(_animatedIndex!==animatedCurrentIndex.value){if(__DEV__){runOnJS(print)({component:BottomSheet.name,method:'useAnimatedReaction::OnChange',category:'effect',params:{animatedCurrentIndex:animatedCurrentIndex.value,animatedIndex:_animatedIndex}});}animatedCurrentIndex.value=_animatedIndex;runOnJS(handleOnChange)(_animatedIndex,_animatedPosition);}if(_animatedIndex===-1&&_providedOnClose){if(__DEV__){runOnJS(print)({component:BottomSheet.name,method:'useAnimatedReaction::onClose',category:'effect',params:{animatedCurrentIndex:animatedCurrentIndex.value,animatedIndex:_animatedIndex}});}runOnJS(_providedOnClose)();}}";
     var1.code = var6;
     var _closure1_slot38 = var1;
-    var1 = function(arg0, arg1) { // Original name: BottomSheet, environment: var5
+    var1 = function arg0, arg1() {
         _fun44542: for (var _fun44542_ip = 0;;) switch (_fun44542_ip) {
             case 0:
                 var1 = arg0;
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var31 = var2[var51];
                 var49 = var5.bind(var3)(var31);
                 var41 = var49.useDerivedValue;
-                var32 = function() { // Original name: pnpm_BottomSheetTsx1, environment: var0
+                var32 = function() {
                     _fun44543: for (var _fun44543_ip = 0;;) switch (_fun44543_ip) {
                         case 0:
                             var2 = _closure2_slot14;
@@ -625,7 +625,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var2[var51];
                 var31 = var5.bind(var3)(var7);
                 var11 = var31.useDerivedValue;
-                var8 = function() { // Original name: pnpm_BottomSheetTsx2, environment: var0
+                var8 = function() {
                     var1 = _closure2_slot36;
                     var1 = var1.value;
                     var0 = _closure2_slot36;
@@ -650,7 +650,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var2[var51];
                 var31 = var5.bind(var3)(var7);
                 var11 = var31.useDerivedValue;
-                var8 = function() { // Original name: pnpm_BottomSheetTsx3, environment: var0
+                var8 = function() {
                     _fun44545: for (var _fun44545_ip = 0;;) switch (_fun44545_ip) {
                         case 0:
                             var0 = _closure2_slot31;
@@ -696,7 +696,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var2[var51];
                 var31 = var5.bind(var3)(var7);
                 var11 = var31.useDerivedValue;
-                var8 = function() { // Original name: pnpm_BottomSheetTsx4, environment: var0
+                var8 = function() {
                     var1 = _closure2_slot31;
                     var1 = var1.value;
                     var0 = _closure2_slot38;
@@ -779,7 +779,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var11[var51];
                 var32 = var5.bind(var3)(var2);
                 var31 = var32.useDerivedValue;
-                var7 = function() { // Original name: pnpm_BottomSheetTsx5, environment: var0
+                var7 = function() {
                     _fun44547: for (var _fun44547_ip = 0;;) switch (_fun44547_ip) {
                         case 0:
                             var0 = _closure2_slot13;
@@ -1052,7 +1052,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var31 = var11[var51];
                 var50 = var5.bind(var3)(var31);
                 var49 = var50.useDerivedValue;
-                var45 = function() { // Original name: pnpm_BottomSheetTsx6, environment: var0
+                var45 = function() {
                     _fun44549: for (var _fun44549_ip = 0;;) switch (_fun44549_ip) {
                         case 0:
                             var1 = _closure2_slot42;
@@ -1224,7 +1224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var31 = var11[var51];
                 var50 = var5.bind(var3)(var31);
                 var49 = var50.useDerivedValue;
-                var45 = function() { // Original name: pnpm_BottomSheetTsx7, environment: var0
+                var45 = function() {
                     _fun44550: for (var _fun44550_ip = 0;;) switch (_fun44550_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -1376,7 +1376,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var31 = var11[var51];
                 var50 = var5.bind(var3)(var31);
                 var49 = var50.useDerivedValue;
-                var45 = function() { // Original name: pnpm_BottomSheetTsx8, environment: var0
+                var45 = function() {
                     _fun44551: for (var _fun44551_ip = 0;;) switch (_fun44551_ip) {
                         case 0:
                             var0 = _closure2_slot36;
@@ -1576,7 +1576,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var45[0] = var47;
                 var45[1] = var54;
                 var45[2] = var6;
-                var6 = function(arg0, arg1) { // Original name: handleOnChange, environment: var0
+                var6 = function arg0, arg1() {
                     _fun44553: for (var _fun44553_ip = 0;;) switch (_fun44553_ip) {
                         case 0:
                             var4 = arg0;
@@ -1628,7 +1628,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6[0] = var4;
                 var6[1] = var54;
                 var6[2] = var30;
-                var4 = function(arg0, arg1, arg2) { // Original name: handleOnAnimate, environment: var0
+                var4 = function arg0, arg1, arg2() {
                     _fun44554: for (var _fun44554_ip = 0;;) switch (_fun44554_ip) {
                         case 0:
                             var6 = arg0;
@@ -1674,7 +1674,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var11[var51];
                 var49 = var5.bind(var3)(var4);
                 var45 = var49.useWorkletCallback;
-                var6 = function() { // Original name: pnpm_BottomSheetTsx9, environment: var0
+                var6 = function() {
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot2;
                     var0 = 4;
@@ -1730,7 +1730,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var49 = var5.bind(var3)(var4);
                 var45 = var49.useWorkletCallback;
                 var4 = function() { // Environment: var0
-                    var0 = function(arg0) { // Original name: animateToPositionCompleted, environment: var0
+                    var0 = function arg0() {
                         _fun44557: for (var _fun44557_ip = 0;;) switch (_fun44557_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1853,7 +1853,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var50 = var5.bind(var3)(var4);
                 var49 = var50.useWorkletCallback;
                 var4 = function() { // Environment: var0
-                    var0 = function(arg0, arg1) { // Original name: animateToPosition, environment: var0
+                    var0 = function arg0, arg1() {
                         _fun44559: for (var _fun44559_ip = 0;;) switch (_fun44559_ip) {
                             case 0:
                                 var8 = arg0;
@@ -2112,7 +2112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var11[var51];
                 var65 = var5.bind(var3)(var4);
                 var62 = var65.useWorkletCallback;
-                var45 = function(arg0) { // Original name: setToPosition, environment: var0
+                var45 = function arg0() {
                     _fun44560: for (var _fun44560_ip = 0;;) switch (_fun44560_ip) {
                         case 0:
                             var2 = arg0;
@@ -2216,7 +2216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var65 = var5.bind(var3)(var4);
                 var62 = var65.useWorkletCallback;
                 var4 = function() { // Environment: var0
-                    var0 = function(arg0) { // Original name: getEvaluatedPosition, environment: var0
+                    var0 = function arg0() {
                         _fun44562: for (var _fun44562_ip = 0;;) switch (_fun44562_ip) {
                             case 0:
                                 var0 = _closure2_slot41;
@@ -2523,7 +2523,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var68 = var5.bind(var3)(var4);
                 var62 = var68.useWorkletCallback;
                 var4 = function() { // Environment: var0
-                    var0 = function(arg0, arg1) { // Original name: evaluatePosition, environment: var0
+                    var0 = function arg0, arg1() {
                         _fun44564: for (var _fun44564_ip = 0;;) switch (_fun44564_ip) {
                             case 0:
                                 var4 = arg0;
@@ -2791,7 +2791,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var1];
                 var45 = var5.bind(var3)(var1);
                 var4 = var45.useStableCallback;
-                var1 = function(arg0, arg1) { // Original name: handleSnapToIndex, environment: var0
+                var1 = function arg0, arg1() {
                     _fun44565: for (var _fun44565_ip = 0;;) switch (_fun44565_ip) {
                         case 0:
                             var6 = arg0;
@@ -2896,7 +2896,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var79 = var5.bind(var3)(var1);
                 var62 = var79.useWorkletCallback;
-                var45 = function(arg0, arg1) { // Original name: handleSnapToPosition, environment: var0
+                var45 = function arg0, arg1() {
                     _fun44566: for (var _fun44566_ip = 0;;) switch (_fun44566_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -3006,7 +3006,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var45[3] = var92;
                 var45[4] = var58;
                 var45[5] = var76;
-                var1 = function(arg0) { // Original name: handleClose, environment: var0
+                var1 = function arg0() {
                     _fun44567: for (var _fun44567_ip = 0;;) switch (_fun44567_ip) {
                         case 0:
                             var1 = _closure2_slot39;
@@ -3071,7 +3071,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var62[2] = var92;
                 var62[3] = var58;
                 var62[4] = var76;
-                var1 = function(arg0) { // Original name: handleForceClose, environment: var0
+                var1 = function arg0() {
                     _fun44568: for (var _fun44568_ip = 0;;) switch (_fun44568_ip) {
                         case 0:
                             var1 = _closure2_slot39;
@@ -3132,7 +3132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var79[4] = var53;
                 var79[5] = var58;
                 var79[6] = var56;
-                var62 = function(arg0) { // Original name: handleExpand, environment: var0
+                var62 = function arg0() {
                     _fun44569: for (var _fun44569_ip = 0;;) switch (_fun44569_ip) {
                         case 0:
                             var1 = _closure2_slot36;
@@ -3214,7 +3214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var62[4] = var53;
                 var62[5] = var58;
                 var62[6] = var56;
-                var7 = function(arg0) { // Original name: handleCollapse, environment: var0
+                var7 = function arg0() {
                     _fun44570: for (var _fun44570_ip = 0;;) switch (_fun44570_ip) {
                         case 0:
                             var1 = _closure2_slot36;
@@ -3464,7 +3464,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var62 = var5.bind(var3)(var1);
                 var45 = var62.useAnimatedReaction;
-                var44 = function() { // Original name: pnpm_BottomSheetTsx16, environment: var0
+                var44 = function() {
                     var0 = _closure2_slot31;
                     var0 = var0.value;
                     return var0;
@@ -3476,7 +3476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var44.__workletHash = var1;
                 var1 = _closure1_slot27;
                 var44.__initData = var1;
-                var1 = function(arg0, arg1) { // Original name: pnpm_BottomSheetTsx17, environment: var0
+                var1 = function arg0, arg1() {
                     _fun44575: for (var _fun44575_ip = 0;;) switch (_fun44575_ip) {
                         case 0:
                             var5 = arg0;
@@ -3578,7 +3578,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var74 = var5.bind(var3)(var1);
                 var62 = var74.useAnimatedReaction;
-                var45 = function() { // Original name: pnpm_BottomSheetTsx18, environment: var0
+                var45 = function() {
                     var0 = _closure2_slot36;
                     var0 = var0.value;
                     return var0;
@@ -3590,7 +3590,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var45.__workletHash = var1;
                 var1 = _closure1_slot29;
                 var45.__initData = var1;
-                var44 = function(arg0, arg1) { // Original name: pnpm_BottomSheetTsx19, environment: var0
+                var44 = function arg0, arg1() {
                     _fun44577: for (var _fun44577_ip = 0;;) switch (_fun44577_ip) {
                         case 0:
                             var0 = global;
@@ -3667,7 +3667,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var62 = var5.bind(var3)(var1);
                 var45 = var62.useAnimatedReaction;
-                var44 = function() { // Original name: pnpm_BottomSheetTsx20, environment: var0
+                var44 = function() {
                     var0 = {};
                     var2 = _closure2_slot59;
                     var2 = var2.value;
@@ -3685,7 +3685,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var44.__workletHash = var1;
                 var1 = _closure1_slot31;
                 var44.__initData = var1;
-                var32 = function(arg0, arg1) { // Original name: pnpm_BottomSheetTsx21, environment: var0
+                var32 = function arg0, arg1() {
                     _fun44579: for (var _fun44579_ip = 0;;) switch (_fun44579_ip) {
                         case 0:
                             var0 = arg0;
@@ -4009,7 +4009,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var62 = var5.bind(var3)(var1);
                 var45 = var62.useAnimatedReaction;
-                var44 = function() { // Original name: pnpm_BottomSheetTsx22, environment: var0
+                var44 = function() {
                     var0 = _closure2_slot42;
                     var0 = var0.value;
                     return var0;
@@ -4021,7 +4021,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var44.__workletHash = var1;
                 var1 = _closure1_slot33;
                 var44.__initData = var1;
-                var32 = function(arg0) { // Original name: pnpm_BottomSheetTsx23, environment: var0
+                var32 = function arg0() {
                     _fun44581: for (var _fun44581_ip = 0;;) switch (_fun44581_ip) {
                         case 0:
                             var1 = _closure2_slot16;
@@ -4053,7 +4053,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var62 = var5.bind(var3)(var1);
                 var45 = var62.useAnimatedReaction;
-                var44 = function() { // Original name: pnpm_BottomSheetTsx24, environment: var0
+                var44 = function() {
                     var0 = _closure2_slot71;
                     var0 = var0.value;
                     return var0;
@@ -4065,7 +4065,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var44.__workletHash = var1;
                 var1 = _closure1_slot35;
                 var44.__initData = var1;
-                var32 = function(arg0) { // Original name: pnpm_BottomSheetTsx25, environment: var0
+                var32 = function arg0() {
                     _fun44583: for (var _fun44583_ip = 0;;) switch (_fun44583_ip) {
                         case 0:
                             var1 = _closure2_slot17;
@@ -4094,7 +4094,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var51];
                 var45 = var5.bind(var3)(var1);
                 var44 = var45.useAnimatedReaction;
-                var32 = function() { // Original name: pnpm_BottomSheetTsx26, environment: var0
+                var32 = function() {
                     var0 = {};
                     var2 = _closure2_slot71;
                     var2 = var2.value;
@@ -4124,7 +4124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var32.__workletHash = var1;
                 var1 = _closure1_slot37;
                 var32.__initData = var1;
-                var2 = function(arg0) { // Original name: pnpm_BottomSheetTsx27, environment: var0
+                var2 = function arg0() {
                     _fun44585: for (var _fun44585_ip = 0;;) switch (_fun44585_ip) {
                         case 0:
                             var0 = arg0;

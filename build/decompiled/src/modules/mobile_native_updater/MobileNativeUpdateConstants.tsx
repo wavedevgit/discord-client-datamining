@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 6;
     var3 = 'hours';
     var3 = var7.bind(var8)(var4, var3);
-    var1 = function() { // Original name: currentUpdateConfig, environment: var1
+    var1 = function() {
         _fun28184: for (var _fun28184_ip = 0;;) switch (_fun28184_ip) {
             case 0:
                 var3 = global;

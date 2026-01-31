@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/panels/ChannelScreenAnimatedFrame.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelScreenAnimatedFrame, environment: var1
+    var1 = function arg0() {
         _fun100652: for (var _fun100652_ip = 0;;) switch (_fun100652_ip) {
             case 0:
                 var0 = arg0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4[var0];
                 var9 = var7.bind(var3)(var6);
                 var6 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: S, environment: var2
+                var2 = function() {
                     _fun100653: for (var _fun100653_ip = 0;;) switch (_fun100653_ip) {
                         case 0:
                             var2 = _closure2_slot0;

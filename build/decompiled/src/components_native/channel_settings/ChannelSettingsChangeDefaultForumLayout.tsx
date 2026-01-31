@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: ChannelSettingsChangeDefaultForumLayout, environment: var3
+    var1 = function arg0() {
         _fun109356: for (var _fun109356_ip = 0;;) switch (_fun109356_ip) {
             case 0:
                 var1 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ConnectedChannelSettingsChangeDefaultForumLayout, environment: var3
+    var3 = function arg0() {
         _fun109358: for (var _fun109358_ip = 0;;) switch (_fun109358_ip) {
             case 0:
                 var1 = arg0;

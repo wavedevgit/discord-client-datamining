@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: CustomThemesGradient, environment: var1
+    var0 = function arg0() {
         _fun69477: for (var _fun69477_ip = 0;;) switch (_fun69477_ip) {
             case 0:
                 var1 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.mixColorOverride = var14;
                 var5.theme = var13;
                 var5.baseMix = var2;
-                var2 = function(arg0) { // Original name: getGradientColorsForCustomThemesGradient, environment: var0
+                var2 = function arg0() {
                     _fun69478: for (var _fun69478_ip = 0;;) switch (_fun69478_ip) {
                         case 0:
                             var3 = arg0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot10;
                 var15 = var2.bind(var4)(var17);
                 _closure2_slot1 = var15;
-                var2 = function(arg0) { // Original name: getGradientLocationsForCustomThemesGradient, environment: var0
+                var2 = function arg0() {
                     _fun69480: for (var _fun69480_ip = 0;;) switch (_fun69480_ip) {
                         case 0:
                             var2 = arg0;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.absolute = var8;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot8 = var3;
-    var4 = function(arg0) { // Original name: Gradient, environment: var1
+    var4 = function arg0() {
         _fun69483: for (var _fun69483_ip = 0;;) switch (_fun69483_ip) {
             case 0:
                 var0 = arg0;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: validateColors, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
@@ -914,7 +914,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: wrapWithOverlayIfNeeded, environment: var1
+    var5 = function arg0, arg1, arg2, arg3, arg4() {
         _fun69488: for (var _fun69488_ip = 0;;) switch (_fun69488_ip) {
             case 0:
                 var6 = arg0;
@@ -961,7 +961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var5;
-    var5 = function() { // Original name: useThemedGradientCommon, environment: var1
+    var5 = function() {
         _fun69489: for (var _fun69489_ip = 0;;) switch (_fun69489_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -1009,7 +1009,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/client_themes/native/ThemedGradient.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: _default, environment: var1
+    var5 = function arg0() {
         _fun69490: for (var _fun69490_ip = 0;;) switch (_fun69490_ip) {
             case 0:
                 var3 = arg0;

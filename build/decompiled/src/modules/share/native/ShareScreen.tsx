@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: getAttachmentsRestriction, environment: var1
+            var0 = function arg0() {
                 _fun96378: for (var _fun96378_ip = 0;;) switch (_fun96378_ip) {
                     case 0:
                         var4 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/share/native/ShareScreen.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: ShareScreen, environment: var1
+            var1 = function arg0() {
                 _fun96379: for (var _fun96379_ip = 0;;) switch (_fun96379_ip) {
                     case 0:
                         var0 = arg0;
@@ -955,7 +955,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var26 = var26["MR7/kg"];
                         var26 = var28.bind(var29)(var26);
                         var6.title = var26;
-                        var10 = function(arg0) { // Original name: headerTitle, environment: var10
+                        var10 = function arg0() {
                             _fun96394: for (var _fun96394_ip = 0;;) switch (_fun96394_ip) {
                                 case 0:
                                     var0 = arg0;

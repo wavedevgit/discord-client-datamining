@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/UserVideoFailed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserVideoFailed, environment: var1
+    var1 = function arg0() {
         _fun111292: for (var _fun111292_ip = 0;;) switch (_fun111292_ip) {
             case 0:
                 var3 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13["hxmQ/e"];
                 var13 = var14.bind(var15)(var13);
                 var9.text = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var0 = 10;

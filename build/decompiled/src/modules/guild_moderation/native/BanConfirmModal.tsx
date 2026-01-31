@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_moderation/native/BanConfirmModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BanConfirmModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.cancelButtonCallback;
         var1 = var0.guildId;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.R3QeLQ;
         var5 = var6.bind(var7)(var5);
         var0.title = var5;
-        var4 = function() { // Original name: render, environment: var4
+        var4 = function() {
             var3 = _closure1_slot3;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;

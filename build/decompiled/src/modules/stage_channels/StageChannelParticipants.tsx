@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: sortKey, environment: var5
+    var0 = function arg0() {
         _fun50309: for (var _fun50309_ip = 0;;) switch (_fun50309_ip) {
             case 0:
                 var1 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: requestToSpeakSortKey, environment: var5
+    var0 = function arg0() {
         _fun50310: for (var _fun50310_ip = 0;;) switch (_fun50310_ip) {
             case 0:
                 var0 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var1 = function(arg0) { // Original name: isRequestedToSpeakAll, environment: var5
+    var1 = function arg0() {
         _fun50311: for (var _fun50311_ip = 0;;) switch (_fun50311_ip) {
             case 0:
                 var2 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var1;
-    var0 = function(arg0) { // Original name: getParticipantIndex, environment: var5
+    var0 = function arg0() {
         _fun50312: for (var _fun50312_ip = 0;;) switch (_fun50312_ip) {
             case 0:
                 var0 = arg0;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot16 = var3;
     var5 = function() { // Environment: var5
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: StageChannelParticipants, environment: var4
+        var2 = function arg0() {
             _fun50314: for (var _fun50314_ip = 0;;) switch (_fun50314_ip) {
                 case 0:
                     var4 = arg0;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_getParticipantsForUser';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun50316: for (var _fun50316_ip = 0;;) switch (_fun50316_ip) {
                 case 0:
                     var4 = arg0;
@@ -677,7 +677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateParticipant';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun50317: for (var _fun50317_ip = 0;;) switch (_fun50317_ip) {
                 case 0:
                     var3 = arg0;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'rebuild';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun50320: for (var _fun50320_ip = 0;;) switch (_fun50320_ip) {
                 case 0:
                     var3 = this;
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'version';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._participantsIndex;
             var0 = var0.version;
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'size';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0._participantsIndex;
             var1 = var2.size;
@@ -876,7 +876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toArray';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0._participantsIndex;
             var2 = var3.values;
@@ -890,7 +890,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getParticipant';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun50325: for (var _fun50325_ip = 0;;) switch (_fun50325_ip) {
                 case 0:
                     var0 = this;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'requestToSpeakVersion';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._requestToSpeakIndex;
             var0 = var0.version;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRequestToSpeakParticipants';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var3 = var0._requestToSpeakIndex;
             var2 = var3.values;

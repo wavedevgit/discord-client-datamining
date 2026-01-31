@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: dateTimestampInSeconds, environment: var0
+    var2 = function() {
         var0 = global;
         var1 = var0.Date;
         var0 = var1.now;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = function() { // Original name: browserPerformanceTimeOrigin, environment: var0
+    var3 = function() {
         _fun8871: for (var _fun8871_ip = 0;;) switch (_fun8871_ip) {
             case 0:
                 var1 = _closure1_slot3;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.browserPerformanceTimeOrigin = var3;
     var1.dateTimestampInSeconds = var2;
-    var0 = function() { // Original name: timestampInSeconds, environment: var0
+    var0 = function() {
         _fun8872: for (var _fun8872_ip = 0;;) switch (_fun8872_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun8872
                 }
             case 13:
-                var2 = function() { // Original name: createUnixTimestampInSecondsFunc, environment: var1
+                var2 = function() {
                     _fun8873: for (var _fun8873_ip = 0;;) switch (_fun8873_ip) {
                         case 0:
                             var4 = _closure1_slot0;

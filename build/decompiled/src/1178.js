@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot0 = var3;
-    var1 = function() { // Original name: mergeOutcomes, environment: var1
+    var1 = function() {
         _fun12830: for (var _fun12830_ip = 0;;) switch (_fun12830_ip) {
             case 0:
                 var2 = undefined;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = new var9[var3](var8);
                 var3 = var3 instanceof Object ? var3 : var4;
                 var _closure2_slot0 = var3;
-                var4 = function(arg0) { // Original name: process, environment: var0
+                var4 = function arg0() {
                     _fun12831: for (var _fun12831_ip = 0;;) switch (_fun12831_ip) {
                         case 0:
                             var0 = arg0;

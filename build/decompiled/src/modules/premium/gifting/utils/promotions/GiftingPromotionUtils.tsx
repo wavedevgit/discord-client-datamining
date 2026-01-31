@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: useIsPlanEligibleForGiftingPromotion, environment: var1
+    var3 = function arg0() {
         _fun74701: for (var _fun74701_ip = 0;;) switch (_fun74701_ip) {
             case 0:
                 var3 = arg0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: useFetchClaimableGiftingPromotionRewards, environment: var1
+    var4 = function() {
         _fun74702: for (var _fun74702_ip = 0;;) switch (_fun74702_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFetchClaimableGiftingPromotionRewards = var4;
-    var4 = function() { // Original name: useFetchClaimableGiftingPromotionRewardSkuIds, environment: var1
+    var4 = function() {
         var4 = _closure1_slot4;
         var0 = var4.useState;
         var6 = var0.bind(var4)();
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useFetchClaimableGiftingPromotionRewardSkuIds = var4;
-    var4 = function() { // Original name: useClaimableGiftingPromotionVariantsRewards, environment: var1
+    var4 = function() {
         _fun74710: for (var _fun74710_ip = 0;;) switch (_fun74710_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useClaimableGiftingPromotionVariantsRewards = var4;
-    var4 = function() { // Original name: useAllGiftingPromotionRewards, environment: var1
+    var4 = function() {
         _fun74711: for (var _fun74711_ip = 0;;) switch (_fun74711_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useAllGiftingPromotionRewards = var4;
-    var4 = function(arg0) { // Original name: getRewardAssetIdMap, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var0 = global;
         var0 = var0.Map;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getRewardAssetIdMap = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: useShouldShowSelectFreeSkuStep, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun74715: for (var _fun74715_ip = 0;;) switch (_fun74715_ip) {
             case 0:
                 var0 = arg1;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldShowSelectFreeSkuStep = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: useShouldAutoSelectGiftingPromotionReward, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun74716: for (var _fun74716_ip = 0;;) switch (_fun74716_ip) {
             case 0:
                 var1 = arg1;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldAutoSelectGiftingPromotionReward = var4;
     var2.useIsPlanEligibleForGiftingPromotion = var3;
-    var3 = function(arg0, arg1) { // Original name: createGradientStyle, environment: var1
+    var3 = function arg0, arg1() {
         _fun74717: for (var _fun74717_ip = 0;;) switch (_fun74717_ip) {
             case 0:
                 var6 = arg0;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createGradientStyle = var3;
-    var3 = function(arg0) { // Original name: createBackgroundStyle, environment: var1
+    var3 = function arg0() {
         _fun74719: for (var _fun74719_ip = 0;;) switch (_fun74719_ip) {
             case 0:
                 var4 = arg0;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createBackgroundStyle = var3;
-    var1 = function(arg0, arg1) { // Original name: combinePromotionStyles, environment: var1
+    var1 = function arg0, arg1() {
         _fun74720: for (var _fun74720_ip = 0;;) switch (_fun74720_ip) {
             case 0:
                 var0 = arg0;

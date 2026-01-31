@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = require;
             var _closure1_slot0 = var0;
             var _closure1_slot1 = var4;
-            var1 = function() { // Original name: getDefaultSidecarUrl, environment: var3
+            var1 = function() {
                 _fun12301: for (var _fun12301_ip = 0;;) switch (_fun12301_ip) {
                     case 0:
                         var1 = undefined;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var _closure1_slot2 = var4;
                         var4 = 'http://localhost:8969/stream';
                         var _closure1_slot3 = var4;
-                        var3 = function() { // Original name: spotlightIntegration, environment: var3
+                        var3 = function() {
                             _fun12302: for (var _fun12302_ip = 0;;) switch (_fun12302_ip) {
                                 case 0:
                                     var3 = undefined;
@@ -168,15 +168,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var0 = {};
                                     var2 = 'Spotlight';
                                     var0.name = var2;
-                                    var2 = function() { // Original name: setupOnce, environment: var1
+                                    var2 = function() {
                                         var0 = undefined;
                                         return var0;
                                     };
                                     var0.setupOnce = var2;
-                                    var1 = function(arg0) { // Original name: setup, environment: var1
+                                    var1 = function arg0() {
                                         var3 = _closure2_slot0;
-                                        var2 = function(arg0, arg1) { // Original name: _setup, environment: var0
-                                            var3 = function(arg0, arg1) { // Original name: sendEnvelopesToSidecar, environment: var0
+                                        var2 = function arg0, arg1() {
+                                            var3 = function arg0, arg1() {
                                                 _fun12306: for (var _fun12306_ip = 0;;) switch (_fun12306_ip) {
                                                     case 0:
                                                         var4 = arg0;

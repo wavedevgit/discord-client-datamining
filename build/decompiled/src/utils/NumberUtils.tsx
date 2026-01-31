@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/NumberUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: shortenAndLocalizeNumber, environment: var1
+    var3 = function arg0() {
         _fun17821: for (var _fun17821_ip = 0;;) switch (_fun17821_ip) {
             case 0:
                 var4 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shortenAndLocalizeNumber = var3;
-    var3 = function(arg0, arg1) { // Original name: humanizeValue, environment: var1
+    var3 = function arg0, arg1() {
         _fun17822: for (var _fun17822_ip = 0;;) switch (_fun17822_ip) {
             case 0:
                 var6 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.humanizeValue = var3;
-    var3 = function(arg0) { // Original name: parseInteger, environment: var1
+    var3 = function arg0() {
         _fun17823: for (var _fun17823_ip = 0;;) switch (_fun17823_ip) {
             case 0:
                 var4 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseInteger = var3;
-    var1 = function(arg0, arg1) { // Original name: formatPercent, environment: var1
+    var1 = function arg0, arg1() {
         _fun17824: for (var _fun17824_ip = 0;;) switch (_fun17824_ip) {
             case 0:
                 var0 = arguments[2];

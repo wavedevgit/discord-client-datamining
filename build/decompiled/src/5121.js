@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.BaseItemAnimator = var0;
     var1 = function() { // Environment: var1
-        var0 = function() { // Original name: BaseItemAnimator, environment: var1
+        var0 = function() {
             var0 = undefined;
             return var0;
         };

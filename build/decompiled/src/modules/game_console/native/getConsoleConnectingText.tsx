@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/getConsoleConnectingText.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: getConsoleConnectingText, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun69418: for (var _fun69418_ip = 0;;) switch (_fun69418_ip) {
             case 0:
                 var4 = arg0;

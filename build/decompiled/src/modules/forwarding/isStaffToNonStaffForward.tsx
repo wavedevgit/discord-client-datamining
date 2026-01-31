@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0) { // Original name: isStaffChannel, environment: var1
+    var0 = function arg0() {
         _fun70904: for (var _fun70904_ip = 0;;) switch (_fun70904_ip) {
             case 0:
                 var0 = arg0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forwarding/isStaffToNonStaffForward.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: isStaffToNonStaffForward, environment: var1
+    var1 = function arg0, arg1() {
         _fun70906: for (var _fun70906_ip = 0;;) switch (_fun70906_ip) {
             case 0:
                 var4 = arg1;

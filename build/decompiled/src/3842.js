@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.isReducedMotionEnabledInSystem;
     var3 = var3.bind(var4)();
     var _closure1_slot0 = var3;
-    var1 = function() { // Original name: useReducedMotion, environment: var1
+    var1 = function() {
         var0 = _closure1_slot0;
         return var0;
     };

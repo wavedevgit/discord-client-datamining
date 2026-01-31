@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/DisplayNameStylesGradientPickerSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DisplayNameStylesColorPickerSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.selectedColors;
         var0 = var0.onSelectColors;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var4;
                 case 52:
                     var2.color = var1;
-                    var1 = function(arg0) { // Original name: onSelect, environment: var1
+                    var1 = function arg0() {
                         _fun84871: for (var _fun84871_ip = 0;;) switch (_fun84871_ip) {
                             case 0:
                                 var4 = _closure1_slot0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var4;
                 case 55:
                     var2.color = var1;
-                    var1 = function(arg0) { // Original name: onSelect, environment: var1
+                    var1 = function arg0() {
                         _fun84873: for (var _fun84873_ip = 0;;) switch (_fun84873_ip) {
                             case 0:
                                 var4 = _closure1_slot0;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 138:
                     var7[1] = var8;
                     var0.style = var7;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var3 = _closure2_slot4;
                         var0 = _closure3_slot0;
                         var2 = var0.start;

@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.create;
     var _closure1_slot2 = var1;
     var1 = function() { // Environment: var0
-        var1 = function() { // Original name: object, environment: var0
+        var1 = function() {
             var0 = undefined;
             return var0;
         };

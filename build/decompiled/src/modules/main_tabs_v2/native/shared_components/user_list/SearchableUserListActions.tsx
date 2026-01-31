@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: UserFlashListActions, environment: var3
+    var1 = function arg0() {
         _fun87361: for (var _fun87361_ip = 0;;) switch (_fun87361_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/native/shared_components/user_list/SearchableUserListActions.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useUserListActionsProps, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var6 = var1.actions;
         var _closure2_slot0 = var6;

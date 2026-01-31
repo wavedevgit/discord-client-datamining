@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun55659: for (var _fun55659_ip = 0;;) switch (_fun55659_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: calculateAppliedBoosts, environment: var3
+    var0 = function arg0() {
         _fun55662: for (var _fun55662_ip = 0;;) switch (_fun55662_ip) {
             case 0:
                 var14 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: getStateForGuild, environment: var3
+    var0 = function arg0() {
         _fun55663: for (var _fun55663_ip = 0;;) switch (_fun55663_ip) {
             case 0:
                 var1 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: recalculateState, environment: var3
+    var0 = function arg0, arg1() {
         var0 = arg0;
         var4 = var0.guildId;
         var6 = var0.entitlements;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildPowerupsStore, environment: var5
+        var3 = function() {
             _fun55667: for (var _fun55667_ip = 0;;) switch (_fun55667_ip) {
                 case 0:
                     var3 = this;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun55668: for (var _fun55668_ip = 0;;) switch (_fun55668_ip) {
                 case 0:
                     var1 = arg0;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStateForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55670: for (var _fun55670_ip = 0;;) switch (_fun55670_ip) {
                 case 0:
                     var2 = arg0;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetchCatalogForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55671: for (var _fun55671_ip = 0;;) switch (_fun55671_ip) {
                 case 0:
                     var1 = _closure1_slot11;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetchPowerupsForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55672: for (var _fun55672_ip = 0;;) switch (_fun55672_ip) {
                 case 0:
                     var1 = _closure1_slot11;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedPowerupCatalog';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55673: for (var _fun55673_ip = 0;;) switch (_fun55673_ip) {
                 case 0:
                     var3 = arg0;
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedUnlockedPowerups';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun55674: for (var _fun55674_ip = 0;;) switch (_fun55674_ip) {
                 case 0:
                     var3 = arg0;
@@ -767,14 +767,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleReset, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot11 = var0;
         var0 = undefined;
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleGuildPowerupCatalogFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var7 = var0.allPowerups;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_POWERUP_CATALOG_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleGuildBoostEntitlementsFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var7 = var0.unlockedPowerups;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleGuildPowerupCreated, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot15;
         var0 = undefined;
         var2 = arg0;
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_POWERUP_ENTITLEMENTS_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleGuildPowerupDeleted, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot15;
         var0 = undefined;
         var2 = arg0;
@@ -861,7 +861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_POWERUP_ENTITLEMENTS_DELETE = var8;
-    var8 = function(arg0) { // Original name: handleGuildUpdated, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         var3 = var0.id;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_UPDATE = var8;
-    var3 = function(arg0) { // Original name: handleGameServerInstanceFetched, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = _closure1_slot11;

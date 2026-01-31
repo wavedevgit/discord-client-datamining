@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: OverflowSquircle, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.overflow;
         var5 = var0.style;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/SummarizedIconRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: SummarizedIconRow, environment: var1
+    var3 = function arg0() {
         _fun64714: for (var _fun64714_ip = 0;;) switch (_fun64714_ip) {
             case 0:
                 var0 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: OverflowText, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.overflow;
         var6 = var0.style;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.OverflowText = var3;
-    var3 = function(arg0) { // Original name: OverflowTextSmall, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.overflow;
         var6 = var0.style;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.OverflowTextSmall = var3;
-    var1 = function(arg0) { // Original name: OverflowCircle, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.overflow;
         var5 = var0.style;

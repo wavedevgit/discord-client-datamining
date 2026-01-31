@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.MAX_MENTIONS_PER_FETCH;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: setGuildFilter, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var6 = var0.guildFilter;
         var5 = var0.roleFilter;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setGuildFilter = var6;
-    var6 = function() { // Original name: clearMentions, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearMentions = var6;
-    var6 = function(arg0) { // Original name: truncateMentions, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.truncateMentions = var6;
-    var6 = function(arg0) { // Original name: fetchRecentMentions, environment: var3
+    var6 = function arg0() {
         _fun103092: for (var _fun103092_ip = 0;;) switch (_fun103092_ip) {
             case 0:
                 var1 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.fetchRecentMentions = var6;
-    var6 = function(arg0) { // Original name: deleteRecentMention, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var5 = _closure1_slot0;
         var3 = _closure1_slot2;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.deleteRecentMention = var6;
-    var3 = function() { // Original name: setRecentMentionsStale, environment: var3
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;

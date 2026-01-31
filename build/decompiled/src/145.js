@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: defaultDiffer, environment: var0
+    var2 = function arg0, arg1() {
         _fun2338: for (var _fun2338_ip = 0;;) switch (_fun2338_ip) {
             case 0:
                 var5 = arg1;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: restoreDeletedValuesInNestedArray, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun2339: for (var _fun2339_ip = 0;;) switch (_fun2339_ip) {
             case 0:
                 var7 = arg0;
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: diffNestedProperty, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun2340: for (var _fun2340_ip = 0;;) switch (_fun2340_ip) {
             case 0:
                 var4 = arg0;
@@ -410,7 +410,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: clearNestedProperty, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun2341: for (var _fun2341_ip = 0;;) switch (_fun2341_ip) {
             case 0:
                 var0 = arg0;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: diffProperties, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun2342: for (var _fun2342_ip = 0;;) switch (_fun2342_ip) {
             case 0:
                 var5 = arg0;
@@ -846,7 +846,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: addNestedProperty, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun2343: for (var _fun2343_ip = 0;;) switch (_fun2343_ip) {
             case 0:
                 var0 = arg0;
@@ -999,7 +999,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = {};
     var2.unsafelyIgnoreFunctions = var3;
     var _closure1_slot5 = var2;
-    var2 = function(arg0, arg1) { // Original name: create, environment: var0
+    var2 = function arg0, arg1() {
         var4 = _closure1_slot11;
         var3 = undefined;
         var2 = null;
@@ -1009,7 +1009,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.create = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: diff, environment: var0
+    var0 = function arg0, arg1, arg2() {
         var5 = _closure1_slot10;
         var10 = undefined;
         var9 = null;

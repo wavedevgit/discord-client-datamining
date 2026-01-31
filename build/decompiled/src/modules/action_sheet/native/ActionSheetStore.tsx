@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun27001: for (var _fun27001_ip = 0;;) switch (_fun27001_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = new var12[var1](var11);
     var1 = var1 instanceof Object ? var1 : var6;
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: setContent, environment: var3
+    var1 = function arg0() {
         _fun27004: for (var _fun27004_ip = 0;;) switch (_fun27004_ip) {
             case 0:
                 var0 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var1;
-    var1 = function(arg0) { // Original name: clearContent, environment: var3
+    var1 = function arg0() {
         _fun27005: for (var _fun27005_ip = 0;;) switch (_fun27005_ip) {
             case 0:
                 var2 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: ActionSheetStore, environment: var5
+        var3 = function arg0() {
             _fun27008: for (var _fun27008_ip = 0;;) switch (_fun27008_ip) {
                 case 0:
                     var4 = this;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'impressionName';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun27014: for (var _fun27014_ip = 0;;) switch (_fun27014_ip) {
                 case 0:
                     var2 = _closure1_slot5;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'impressionProperties';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun27015: for (var _fun27015_ip = 0;;) switch (_fun27015_ip) {
                 case 0:
                     var2 = _closure1_slot5;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'backdropKind';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             _fun27016: for (var _fun27016_ip = 0;;) switch (_fun27016_ip) {
                 case 0:
                     var2 = _closure1_slot5;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleShowActionSheet, environment: var3
+    var7 = function arg0() {
         var2 = _closure1_slot6;
         var0 = undefined;
         var1 = arg0;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SHOW_ACTION_SHEET = var7;
-    var7 = function(arg0) { // Original name: handleShowActionSheetQuickSwitcher, environment: var3
+    var7 = function arg0() {
         var2 = _closure1_slot6;
         var1 = {};
         var0 = 'QuickSwitcher';
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SHOW_ACTION_SHEET_QUICK_SWITCHER = var7;
-    var7 = function(arg0) { // Original name: handleHideActionSheet, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.key;
         var1 = _closure1_slot7;
@@ -428,14 +428,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.HIDE_ACTION_SHEET = var7;
-    var7 = function() { // Original name: handleHideAllActionSheets, environment: var3
+    var7 = function() {
         var0 = new Array(0);
         _closure1_slot5 = var0;
         var0 = undefined;
         return var0;
     };
     var1.HIDE_ALL_ACTION_SHEETS = var7;
-    var3 = function() { // Original name: handleHideActionSheetQuickSwitcher, environment: var3
+    var3 = function() {
         var2 = _closure1_slot7;
         var0 = undefined;
         var1 = 'QuickSwitcher';

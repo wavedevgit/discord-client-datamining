@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/family_center/UserSettingsFamilyCenterParentalControls.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterParentalControlsSettings, environment: var1
+    var1 = function() {
         _fun82060: for (var _fun82060_ip = 0;;) switch (_fun82060_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.useSegmentedControlState;
                 var1 = {};
                 var1.items = var11;
-                var12 = function(arg0) { // Original name: onPageChange, environment: var8
+                var12 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 14;

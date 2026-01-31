@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: isSentrySpan, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isSentrySpan = var2;
-    var2 = function(arg0) { // Original name: isRootSpan, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isRootSpan = var2;
-    var2 = function(arg0, arg1) { // Original name: setEndTimeValue, environment: var0
+    var2 = function arg0, arg1() {
         var1 = arg1;
         var0 = arg0;
         var0._endTime = var1;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setEndTimeValue = var2;
-    var0 = function(arg0) { // Original name: convertSpanToTransaction, environment: var0
+    var0 = function arg0() {
         _fun12260: for (var _fun12260_ip = 0;;) switch (_fun12260_ip) {
             case 0:
                 var3 = arg0;

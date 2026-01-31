@@ -14,10 +14,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function() { // Original name: checkAndWarnIfIsEmbeddedBrowserExtension, environment: var0
+    var0 = function() {
         _fun11019: for (var _fun11019_ip = 0;;) switch (_fun11019_ip) {
             case 0:
-                var0 = function() { // Original name: _isEmbeddedBrowserExtension, environment: var2
+                var0 = function() {
                     _fun11020: for (var _fun11020_ip = 0;;) switch (_fun11020_ip) {
                         case 0:
                             var3 = _closure1_slot0;

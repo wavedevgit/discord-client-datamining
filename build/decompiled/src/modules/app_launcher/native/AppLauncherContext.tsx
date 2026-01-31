@@ -6,14 +6,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var3 = function(arg0) { // Original name: useAppLauncherChatInputRefDummy, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.noop;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot2;
         var1 = var2.useRef;
         var0 = {};
-        var4 = function() { // Original name: getApplicationCommandManager, environment: var3
+        var4 = function() {
             _fun61760: for (var _fun61760_ip = 0;;) switch (_fun61760_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.getApplicationCommandManager = var4;
-        var4 = function() { // Original name: openCustomKeyboard, environment: var3
+        var4 = function() {
             _fun61761: for (var _fun61761_ip = 0;;) switch (_fun61761_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.openCustomKeyboard = var4;
-        var3 = function() { // Original name: closeCustomKeyboard, environment: var3
+        var3 = function() {
             _fun61762: for (var _fun61762_ip = 0;;) switch (_fun61762_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AppLauncherBottomSheetExpandReason = var5;
     var2.AppLauncherContext = var4;
     var2.useAppLauncherChatInputRefDummy = var3;
-    var3 = function() { // Original name: useRequiredAppLauncherContext, environment: var1
+    var3 = function() {
         _fun61763: for (var _fun61763_ip = 0;;) switch (_fun61763_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useRequiredAppLauncherContext = var3;
-    var1 = function() { // Original name: useAppLauncherContext, environment: var1
+    var1 = function() {
         _fun61764: for (var _fun61764_ip = 0;;) switch (_fun61764_ip) {
             case 0:
                 var4 = _closure1_slot2;

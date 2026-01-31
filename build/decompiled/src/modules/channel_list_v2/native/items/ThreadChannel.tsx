@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ThreadChannel, environment: var1
+    var0 = function arg0() {
         _fun102009: for (var _fun102009_ip = 0;;) switch (_fun102009_ip) {
             case 0:
                 var1 = arg0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_list_v2/native/items/ThreadChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedThreadChannel, environment: var1
+    var1 = function arg0() {
         _fun102015: for (var _fun102015_ip = 0;;) switch (_fun102015_ip) {
             case 0:
                 var1 = arg0;

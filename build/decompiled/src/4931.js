@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 160:
             var4 = var1;
-            var3 = function() { // Original name: pnpm_reanimatedWrapperTs1, environment: var3
+            var3 = function() {
                 var0 = global;
                 var3 = var0.console;
                 var2 = var3.warn;

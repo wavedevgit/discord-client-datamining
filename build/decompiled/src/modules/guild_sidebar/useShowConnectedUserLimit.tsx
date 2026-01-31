@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: formatNumber, environment: var1
+    var0 = function arg0() {
         _fun89754: for (var _fun89754_ip = 0;;) switch (_fun89754_ip) {
             case 0:
                 var3 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var3 = function(arg0) { // Original name: useConnectedUserLimit, environment: var1
+    var3 = function arg0() {
         _fun89755: for (var _fun89755_ip = 0;;) switch (_fun89755_ip) {
             case 0:
                 var0 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_sidebar/useShowConnectedUserLimit.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useShowConnectedUserLimit, environment: var1
+    var4 = function arg0() {
         _fun89756: for (var _fun89756_ip = 0;;) switch (_fun89756_ip) {
             case 0:
                 var1 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.useConnectedUserLimit = var3;
-    var1 = function(arg0) { // Original name: useConnectedUserLimitFormatted, environment: var1
+    var1 = function arg0() {
         _fun89757: for (var _fun89757_ip = 0;;) switch (_fun89757_ip) {
             case 0:
                 var0 = arg0;

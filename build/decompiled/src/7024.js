@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var3 = new Array(0);
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1) { // Original name: useStableMemo, environment: var1
+    var1 = function arg0, arg1() {
         _fun57629: for (var _fun57629_ip = 0;;) switch (_fun57629_ip) {
             case 0:
                 var4 = arg0;

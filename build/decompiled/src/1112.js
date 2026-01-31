@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = dependencyMap;
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var11;
-    var6 = function(arg0) { // Original name: startProfiling, environment: var7
+    var6 = function arg0() {
         _fun12215: for (var _fun12215_ip = 0;;) switch (_fun12215_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var6;
-    var5 = function(arg0) { // Original name: stopProfiling, environment: var7
+    var5 = function arg0() {
         _fun12216: for (var _fun12216_ip = 0;;) switch (_fun12216_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: createAndroidWithHermesProfile, environment: var7
+    var4 = function arg0, arg1, arg2() {
         var4 = arg0;
         var7 = arg2;
         var0 = global;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0, arg1) { // Original name: addNativeProfileToHermesProfile, environment: var7
+    var3 = function arg0, arg1() {
         _fun12218: for (var _fun12218_ip = 0;;) switch (_fun12218_ip) {
             case 0:
                 var8 = arg0;
@@ -215,7 +215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: addNativeThreadCpuProfileToHermes, environment: var7
+    var1 = function arg0, arg1, arg2() {
         _fun12219: for (var _fun12219_ip = 0;;) switch (_fun12219_ip) {
             case 0:
                 var2 = arg0;
@@ -407,7 +407,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = {};
     var8.platformProfilers = var9;
     var _closure1_slot4 = var8;
-    var7 = function() { // Original name: hermesProfilingIntegration, environment: var7
+    var7 = function() {
         _fun12224: for (var _fun12224_ip = 0;;) switch (_fun12224_ip) {
             case 0:
                 var3 = undefined;
@@ -451,7 +451,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot2 = var0;
                 var0 = false;
                 var _closure2_slot3 = var0;
-                var0 = function() { // Original name: _startCurrentProfileForActiveTransaction, environment: var1
+                var0 = function() {
                     _fun12225: for (var _fun12225_ip = 0;;) switch (_fun12225_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -481,7 +481,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot4 = var0;
-                var0 = function(arg0) { // Original name: _startCurrentProfile, environment: var1
+                var0 = function arg0() {
                     _fun12226: for (var _fun12226_ip = 0;;) switch (_fun12226_ip) {
                         case 0:
                             var2 = arg0;
@@ -525,7 +525,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot5 = var0;
-                var0 = function(arg0) { // Original name: _shouldStartProfiling, environment: var1
+                var0 = function arg0() {
                     _fun12227: for (var _fun12227_ip = 0;;) switch (_fun12227_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -640,7 +640,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot6 = var0;
-                var0 = function(arg0) { // Original name: _startNewProfile, environment: var1
+                var0 = function arg0() {
                     _fun12228: for (var _fun12228_ip = 0;;) switch (_fun12228_ip) {
                         case 0:
                             var8 = arg0;
@@ -686,7 +686,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot7 = var0;
-                var0 = function(arg0) { // Original name: _finishCurrentProfileForSpan, environment: var1
+                var0 = function arg0() {
                     _fun12229: for (var _fun12229_ip = 0;;) switch (_fun12229_ip) {
                         case 0:
                             var6 = arg0;
@@ -764,7 +764,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot8 = var0;
-                var0 = function() { // Original name: _finishCurrentProfile, environment: var1
+                var0 = function() {
                     _fun12230: for (var _fun12230_ip = 0;;) switch (_fun12230_ip) {
                         case 0:
                             var2 = _closure2_slot11;
@@ -820,7 +820,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot9 = var0;
-                var0 = function(arg0) { // Original name: _createProfileEventFor, environment: var1
+                var0 = function arg0() {
                     _fun12231: for (var _fun12231_ip = 0;;) switch (_fun12231_ip) {
                         case 0:
                             var2 = arg0;
@@ -1013,7 +1013,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot10 = var0;
-                var0 = function() { // Original name: _clearCurrentProfileTimeout, environment: var1
+                var0 = function() {
                     _fun12232: for (var _fun12232_ip = 0;;) switch (_fun12232_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -1036,7 +1036,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'HermesProfiling';
                 var0.name = var2;
-                var1 = function() { // Original name: setupOnce, environment: var1
+                var1 = function() {
                     _fun12233: for (var _fun12233_ip = 0;;) switch (_fun12233_ip) {
                         case 0:
                             var1 = _closure2_slot3;

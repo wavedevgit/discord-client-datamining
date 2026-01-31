@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96937
             }
         case 32:
-            var1 = function(arg0) { // Original name: keys, environment: var0
+            var1 = function arg0() {
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var0 = 0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: MobileQuestPreviewControlBar, environment: var6
+    var1 = function arg0() {
         _fun83728: for (var _fun83728_ip = 0;;) switch (_fun83728_ip) {
             case 0:
                 var2 = arg0;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.rNGQfD;
                     var6 = var7.bind(var8)(var6);
                     var5.label = var6;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         _fun83742: for (var _fun83742_ip = 0;;) switch (_fun83742_ip) {
                             case 0:
                                 var2 = _closure2_slot0;

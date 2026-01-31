@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/google_play_price_changes/GooglePlayPriceChangeActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GooglePlayPriceChangeActionSheet, environment: var1
+    var1 = function arg0() {
         _fun109808: for (var _fun109808_ip = 0;;) switch (_fun109808_ip) {
             case 0:
                 var0 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.BddRzS;
                 var11 = var12.bind(var13)(var11);
                 var8.text = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot7;
                     var1 = var0.USER_DISMISS;

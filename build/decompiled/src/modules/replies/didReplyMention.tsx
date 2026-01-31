@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/replies/didReplyMention.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: didReplyMention, environment: var1
+    var1 = function arg0, arg1() {
         _fun55978: for (var _fun55978_ip = 0;;) switch (_fun55978_ip) {
             case 0:
                 var1 = arg1;

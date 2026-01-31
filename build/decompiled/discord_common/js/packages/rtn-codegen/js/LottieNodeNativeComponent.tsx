@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var8)(var9, var1);
     var1 = {};
-    var5 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: setup, environment: var5
+    var5 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

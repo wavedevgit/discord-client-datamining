@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot15 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: EmojiPickerList, environment: var1
+    var1 = function arg0() {
         _fun73842: for (var _fun73842_ip = 0;;) switch (_fun73842_ip) {
             case 0:
                 var0 = arg0;

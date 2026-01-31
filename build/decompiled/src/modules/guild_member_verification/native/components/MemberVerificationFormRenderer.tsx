@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/MemberVerificationFormRenderer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberVerificationFormRenderer, environment: var1
+    var1 = function arg0() {
         _fun60348: for (var _fun60348_ip = 0;;) switch (_fun60348_ip) {
             case 0:
                 var0 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2.bind(var3)(var1);
                                 var1 = {};
                                 var1.field = var6;
-                                var8 = function(arg0) { // Original name: onChange, environment: var5
+                                var8 = function arg0() {
                                     var3 = _closure2_slot1;
                                     var2 = _closure4_slot0;
                                     var0 = undefined;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2.bind(var3)(var1);
                                 var1 = {};
                                 var1.field = var6;
-                                var8 = function(arg0) { // Original name: onChange, environment: var5
+                                var8 = function arg0() {
                                     var3 = _closure2_slot1;
                                     var2 = _closure4_slot0;
                                     var1 = undefined;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2.bind(var3)(var1);
                                 var1 = {};
                                 var1.field = var6;
-                                var8 = function(arg0) { // Original name: onChange, environment: var5
+                                var8 = function arg0() {
                                     var3 = _closure2_slot1;
                                     var2 = _closure4_slot0;
                                     var1 = undefined;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.field = var6;
                                 var6 = _closure2_slot0;
                                 var0.rulesChannelId = var6;
-                                var5 = function(arg0) { // Original name: onChange, environment: var5
+                                var5 = function arg0() {
                                     var3 = _closure2_slot1;
                                     var2 = _closure4_slot0;
                                     var0 = undefined;

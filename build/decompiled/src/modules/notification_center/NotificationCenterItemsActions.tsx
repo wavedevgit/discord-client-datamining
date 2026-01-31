@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: _fetchNotificationCenterItems, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var13 = var13.NetworkActionNames;
                         var13 = var13.NOTIFICATION_CENTER_PAGE_FETCH;
                         var9.event = var13;
-                        var12 = function(arg0) { // Original name: properties, environment: var12
+                        var12 = function arg0() {
                             _fun103163: for (var _fun103163_ip = 0;;) switch (_fun103163_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var5 = function(arg0) { // Original name: markNotificationCenterLocalItemsAcked, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var5;
-    var4 = function() { // Original name: markNotificationCenterRemoteItemAcked, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var0 = function() { // Original name: _markNotificationCenterRemoteItemAcked, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0) { // Original name: markNotificationCenterMentionAcked, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: _bulkMarkNotificationCenterItemsAcked, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _deleteNotificationCenterItem, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/notification_center/NotificationCenterItemsActions.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: setNotificationCenterActive, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setNotificationCenterActive = var6;
-    var6 = function(arg0) { // Original name: setNotificationCenterTabFocused, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setNotificationCenterTabFocused = var6;
-    var6 = function() { // Original name: resetNotificationCenter, environment: var1
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetNotificationCenter = var6;
-    var6 = function() { // Original name: fetchNotificationCenterItems, environment: var1
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchNotificationCenterItems = var6;
-    var6 = function(arg0) { // Original name: markNotificationCenterItemAcked, environment: var1
+    var6 = function arg0() {
         _fun103184: for (var _fun103184_ip = 0;;) switch (_fun103184_ip) {
             case 0:
                 var0 = arg0;
@@ -802,7 +802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.markNotificationCenterLocalItemsAcked = var5;
     var2.markNotificationCenterRemoteItemAcked = var4;
     var2.markNotificationCenterMentionAcked = var3;
-    var3 = function() { // Original name: bulkMarkNotificationCenterItemsAcked, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -813,7 +813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.bulkMarkNotificationCenterItemsAcked = var3;
-    var1 = function() { // Original name: deleteNotificationCenterItem, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;

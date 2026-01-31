@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var17;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var6;
-    var0 = function(arg0) { // Original name: PlaceholderCommandRow, environment: var3
+    var0 = function arg0() {
         _fun107876: for (var _fun107876_ip = 0;;) switch (_fun107876_ip) {
             case 0:
                 var0 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var1 = function(arg0) { // Original name: CommandRow, environment: var3
+    var1 = function arg0() {
         _fun107877: for (var _fun107877_ip = 0;;) switch (_fun107877_ip) {
             case 0:
                 var0 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.subLabel = var14;
                 var0.subLabelLineClamp = var6;
                 var0.icon = var5;
-                var5 = function() { // Original name: onPress, environment: var9
+                var5 = function() {
                     var4 = _closure2_slot1;
                     var3 = _closure2_slot0;
                     var2 = _closure2_slot3;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var4.command = var12;
                 var4.context = var11;
-                var11 = function() { // Original name: beforeExecuteCommand, environment: var9
+                var11 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot3;
                     var4 = 15;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/screens/application_view/app/AppDetailContent.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AppDetailContent, environment: var3
+    var3 = function arg0() {
         _fun107884: for (var _fun107884_ip = 0;;) switch (_fun107884_ip) {
             case 0:
                 var1 = arg0;
@@ -1434,7 +1434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var31 = var31.bind(var3)(var30);
                 var30 = {};
                 var30.sortOrder = var33;
-                var33 = function(arg0) { // Original name: onSortOptionPress, environment: var8
+                var33 = function arg0() {
                     var2 = _closure2_slot13;
                     var0 = undefined;
                     var1 = arg0;
@@ -1494,7 +1494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.onPressBack = var11;
                 var5.scrollOffsetY = var10;
                 var5.showsAddCTA = var9;
-                var8 = function(arg0) { // Original name: onAddAppMenuClick, environment: var8
+                var8 = function arg0() {
                     _fun107897: for (var _fun107897_ip = 0;;) switch (_fun107897_ip) {
                         case 0:
                             var0 = arg0;
@@ -1573,7 +1573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = 'app_launcher_app_details';
                             var5 = 'source';
                             var1[var5] = var6;
-                            var5 = function(arg0) { // Original name: oauth2Callback, environment: var4
+                            var5 = function arg0() {
                                 _fun107898: for (var _fun107898_ip = 0;;) switch (_fun107898_ip) {
                                     case 0:
                                         var0 = arg0;

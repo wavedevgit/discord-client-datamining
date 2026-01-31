@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: MuteSettings, environment: var1
+    var3 = function arg0() {
         _fun69797: for (var _fun69797_ip = 0;;) switch (_fun69797_ip) {
             case 0:
                 var0 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.TableRow;
                     var0 = {};
                     var0.label = var4;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot5;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: MuteSettingsHint, environment: var1
+    var1 = function arg0() {
         _fun69805: for (var _fun69805_ip = 0;;) switch (_fun69805_ip) {
             case 0:
                 var0 = arg0;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.t;
                 var6 = var5.nRwUIL;
                 var5 = {};
-                var10 = function(arg0, arg1) { // Original name: notificationHook, environment: var9
+                var10 = function arg0, arg1() {
                     var4 = _closure1_slot9;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.t;
                 var6 = var5.O34r15;
                 var5 = {};
-                var9 = function(arg0, arg1) { // Original name: mutedHook, environment: var9
+                var9 = function arg0, arg1() {
                     var4 = _closure1_slot9;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot8 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2) { // Original name: fetchWishlist, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchWishlist = var6;
-    var6 = function(arg0, arg1) { // Original name: addSkuToWishlist, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addSkuToWishlist = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: removeSkuFromWishlist, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeSkuFromWishlist = var6;
-    var6 = function(arg0, arg1) { // Original name: updateWishlistVisibility, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateWishlistVisibility = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: reorderWishlistItem, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var1 = arg2;
         var2 = arg0;
         var _closure2_slot0 = var2;

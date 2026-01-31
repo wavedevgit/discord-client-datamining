@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'stores/MaskedLinkStoreMethodsAdditional.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getHostname, environment: var1
+    var3 = function arg0() {
         _fun51558: for (var _fun51558_ip = 0;;) switch (_fun51558_ip) {
             case 0:
                 var0 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHostname = var3;
-    var1 = function(arg0) { // Original name: getProtocol, environment: var1
+    var1 = function arg0() {
         _fun51559: for (var _fun51559_ip = 0;;) switch (_fun51559_ip) {
             case 0:
                 var0 = arg0;

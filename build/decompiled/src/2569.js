@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'other': 'P'
     };
     var _closure1_slot1 = var3;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun21870: for (var _fun21870_ip = 0;;) switch (_fun21870_ip) {
             case 0:
                 var2 = arg0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun40022: for (var _fun40022_ip = 0;;) switch (_fun40022_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: FileSystemStore, environment: var5
+        var3 = function() {
             _fun40026: for (var _fun40026_ip = 0;;) switch (_fun40026_ip) {
                 case 0:
                     var5 = this;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = new Array(2);
                     var12[0] = var0;
                     var0 = {};
-                    var8 = function(arg0) { // Original name: APP_STATE_UPDATE, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAppStateUpdate;
                         var0 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.APP_STATE_UPDATE = var8;
-                    var8 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var8 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handlePostConnectionOpen;
                         var0 = var0.bind(var1)();
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handlePostConnectionOpen';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var1 = this;
             var0 = var1.refresh;
             var0 = var0.bind(var1)();
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleAppStateUpdate';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun40031: for (var _fun40031_ip = 0;;) switch (_fun40031_ip) {
                 case 0:
                     var1 = this;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: refresh, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

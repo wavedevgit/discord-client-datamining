@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var14;
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var15;
-    var11 = function(arg0, arg1, arg2) { // Original name: init, environment: var13
+    var11 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var11;
-    var10 = function(arg0, arg1, arg2) { // Original name: open, environment: var13
+    var10 = function arg0, arg1, arg2() {
         _fun53126: for (var _fun53126_ip = 0;;) switch (_fun53126_ip) {
             case 0:
                 var5 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9 = function() { // Original name: close, environment: var13
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var9;
-    var8 = function(arg0) { // Original name: setSection, environment: var13
+    var8 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var3)(var1);
         return var0;
     };
-    var7 = function(arg0) { // Original name: selectPermissionOverwrite, environment: var13
+    var7 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var3)(var1);
         return var0;
     };
-    var6 = function(arg0) { // Original name: updateChannel, environment: var13
+    var6 = function arg0() {
         var0 = arg0;
         var26 = var0.name;
         var25 = var0.type;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var3)(var1);
         return var0;
     };
-    var5 = function() { // Original name: saveChannel, environment: var13
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _saveChannel, environment: var13
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var4 = function() { // Original name: deleteChannel, environment: var13
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _deleteChannel, environment: var13
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -641,7 +641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var3 = function(arg0, arg1) { // Original name: updateVoiceChannelStatus, environment: var13
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var1 = function(arg0) { // Original name: removeLinkedLobby, environment: var13
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;

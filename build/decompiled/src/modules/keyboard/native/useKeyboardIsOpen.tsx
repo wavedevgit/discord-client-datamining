@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: getKeyboardIsOpen, environment: var3
+    var1 = function() {
         _fun47959: for (var _fun47959_ip = 0;;) switch (_fun47959_ip) {
             case 0:
                 var0 = arguments[0];
@@ -84,13 +84,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var4;
     var4 = {};
     var _closure1_slot4 = var4;
-    var4 = function(arg0) { // Original name: KEYBOARD_OPEN_GETTER, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.systemKeyboardOpen;
         return var0;
     };
     var _closure1_slot5 = var4;
-    var4 = function(arg0) { // Original name: KEYBOARD_OPEN_OR_CUSTOM_KEYBOARD_OPEN_GETTER, environment: var3
+    var4 = function arg0() {
         _fun47961: for (var _fun47961_ip = 0;;) switch (_fun47961_ip) {
             case 0:
                 var1 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/keyboard/native/useKeyboardIsOpen.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: useKeyboardIsOpen, environment: var3
+    var4 = function() {
         _fun47962: for (var _fun47962_ip = 0;;) switch (_fun47962_ip) {
             case 0:
                 var0 = arguments[0];
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var4;
-    var3 = function(arg0) { // Original name: subscribeToKeyboardIsOpen, environment: var3
+    var3 = function arg0() {
         _fun47963: for (var _fun47963_ip = 0;;) switch (_fun47963_ip) {
             case 0:
                 var1 = arguments[1];

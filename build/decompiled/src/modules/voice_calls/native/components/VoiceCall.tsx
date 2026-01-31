@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function VoiceCallTsx1(){const{isME,ringing,disconnected,DISCONNECTED_OPACITY,ringingOpacity}=this.__closure;let opacity;if(isME||!ringing&&!disconnected){opacity=1;}else if(disconnected){opacity=DISCONNECTED_OPACITY;}else{ringingOpacity.set(ringingOpacity.get());}return{opacity:opacity};}';
     var3.code = var6;
     var _closure1_slot21 = var3;
-    var3 = function(arg0) { // Original name: WrappedAvatar, environment: var1
+    var3 = function arg0() {
         _fun69357: for (var _fun69357_ip = 0;;) switch (_fun69357_ip) {
             case 0:
                 var0 = arg0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot5 = var13;
                 var16 = var6.mute;
                 var15 = var6.deaf;
-                var6 = function(arg0) { // Original name: useRingingOpacity, environment: var5
+                var6 = function arg0() {
                     var5 = arg0;
                     var _closure3_slot0 = var5;
                     var4 = _closure1_slot0;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var12];
                 var6 = var3.bind(var4)(var2);
                 var3 = var6.useAnimatedStyle;
-                var2 = function() { // Original name: s, environment: var5
+                var2 = function() {
                     _fun69361: for (var _fun69361_ip = 0;;) switch (_fun69361_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var18.username;
             case 494:
                 var1.accessibilityLabel = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 22;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var3;
-    var3 = function(arg0) { // Original name: AvatarGrid, environment: var1
+    var3 = function arg0() {
         _fun69363: for (var _fun69363_ip = 0;;) switch (_fun69363_ip) {
             case 0:
                 var0 = arg0;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun69363
                 }
             case 289:
-                var3 = function(arg0) { // Original name: createWrappedAvatar, environment: var2
+                var3 = function arg0() {
                     var4 = arg0;
                     var3 = _closure1_slot17;
                     var2 = _closure1_slot22;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var3;
-    var3 = function(arg0) { // Original name: ExcessLengthAvatar, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.excessLength;
         var0 = var0.channel;
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'button';
         var0.accessibilityRole = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 25;
@@ -1077,7 +1077,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var3;
-    var3 = function() { // Original name: ThreeDotsAvatar, environment: var1
+    var3 = function() {
         var0 = _closure1_slot19;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -1108,7 +1108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var3;
-    var3 = function(arg0) { // Original name: CallStatus, environment: var1
+    var3 = function arg0() {
         _fun69372: for (var _fun69372_ip = 0;;) switch (_fun69372_ip) {
             case 0:
                 var0 = arg0;
@@ -1175,7 +1175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_calls/native/components/VoiceCall.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.channel;
         var0 = _closure1_slot19;

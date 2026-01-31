@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.SMALL;
             case 373:
                 var0.size = var8;
-                var7 = function() { // Original name: renderIcon, environment: var7
+                var7 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun12978: for (var _fun12978_ip = 0;;) switch (_fun12978_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot16 = var4;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: FeedbackWidgetProvider, environment: var5
+        var3 = function arg0() {
             _fun12982: for (var _fun12982_ip = 0;;) switch (_fun12982_ip) {
                 case 0:
                     var5 = this;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = _closure1_slot13;
                     var5 = var6.create;
                     var4 = {};
-                    var7 = function(arg0, arg1) { // Original name: onStartShouldSetPanResponder, environment: var2
+                    var7 = function arg0, arg1() {
                         _fun12983: for (var _fun12983_ip = 0;;) switch (_fun12983_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -219,7 +219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onStartShouldSetPanResponder = var7;
-                    var7 = function(arg0, arg1) { // Original name: onMoveShouldSetPanResponder, environment: var2
+                    var7 = function arg0, arg1() {
                         _fun12984: for (var _fun12984_ip = 0;;) switch (_fun12984_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -253,7 +253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onMoveShouldSetPanResponder = var7;
-                    var7 = function(arg0, arg1) { // Original name: onPanResponderMove, environment: var2
+                    var7 = function arg0, arg1() {
                         _fun12985: for (var _fun12985_ip = 0;;) switch (_fun12985_ip) {
                             case 0:
                                 var0 = arg1;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var4.onPanResponderMove = var7;
-                    var7 = function(arg0, arg1) { // Original name: onPanResponderRelease, environment: var2
+                    var7 = function arg0, arg1() {
                         _fun12986: for (var _fun12986_ip = 0;;) switch (_fun12986_ip) {
                             case 0:
                                 var0 = arg1;
@@ -366,7 +366,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             case 0:
                                 var2 = arg0;
                                 var _closure4_slot0 = var2;
-                                var1 = function() { // Original name: updateState, environment: var0
+                                var1 = function() {
                                     var2 = _closure3_slot0;
                                     var1 = var2.setState;
                                     var0 = {};
@@ -519,7 +519,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var3 = _closure1_slot9;
@@ -542,7 +542,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: componentWillUnmount, environment: var5
+        var6 = function() {
             _fun12997: for (var _fun12997_ip = 0;;) switch (_fun12997_ip) {
                 case 0:
                     var0 = this;
@@ -565,7 +565,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0, arg1() {
             _fun12998: for (var _fun12998_ip = 0;;) switch (_fun12998_ip) {
                 case 0:
                     var1 = arg1;
@@ -676,7 +676,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun13000: for (var _fun13000_ip = 0;;) switch (_fun13000_ip) {
                 case 0:
                     var0 = this;

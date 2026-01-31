@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var0 = global;
     var _closure1_slot0 = var0;
-    var4 = function() { // Original name: isJest, environment: var1
+    var4 = function() {
         var0 = global;
         var0 = var0.process;
         var0 = var0.env;
@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var4;
-    var3 = function() { // Original name: isChromeDebugger, environment: var1
+    var3 = function() {
         _fun33009: for (var _fun33009_ip = 0;;) switch (_fun33009_ip) {
             case 0:
                 var0 = _closure1_slot0;
@@ -62,27 +62,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var5.Platform;
     var2.isJest = var4;
     var2.isChromeDebugger = var3;
-    var3 = function() { // Original name: isWeb, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isWeb = var3;
-    var3 = function() { // Original name: isAndroid, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var2.isAndroid = var3;
-    var3 = function() { // Original name: isIOS, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isIOS = var3;
-    var3 = function() { // Original name: isMacOS, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isMacOS = var3;
-    var3 = function() { // Original name: shouldBeUseWeb, environment: var1
+    var3 = function() {
         _fun33014: for (var _fun33014_ip = 0;;) switch (_fun33014_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.shouldBeUseWeb = var3;
-    var3 = function() { // Original name: isFabric, environment: var1
+    var3 = function() {
         var0 = _closure1_slot0;
         var0 = var0._IS_FABRIC;
         var0 = !var0;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isFabric = var3;
-    var3 = function() { // Original name: isReact19, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = var2.startsWith;
         var0 = '19.';
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isReact19 = var3;
-    var1 = function() { // Original name: isWindowAvailable, environment: var1
+    var1 = function() {
         var0 = global;
         var0 = var0.window;
         var1 = 'undefined';

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/info_modal/ICYMIInfoModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMIInfoModal, environment: var1
+    var1 = function arg0() {
         _fun103600: for (var _fun103600_ip = 0;;) switch (_fun103600_ip) {
             case 0:
                 var2 = arg0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = {};
                 var3.extendedOnboarding = var0;
                 var3.skipIntro = var5;
-                var2 = function(arg0) { // Original name: useScreens, environment: var1
+                var2 = function arg0() {
                     var1 = arg0;
                     var5 = var1.extendedOnboarding;
                     var _closure3_slot0 = var5;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var6.getHeaderCloseButton;
                                 var4 = var4.bind(var6)();
                                 var10.headerLeft = var4;
-                                var4 = function() { // Original name: render, environment: var7
+                                var4 = function() {
                                     var3 = _closure1_slot4;
                                     var1 = _closure1_slot1;
                                     var2 = _closure1_slot2;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var11.bind(var12)(var10);
                             case 214:
                                 var2.headerLeft = var4;
-                                var4 = function() { // Original name: headerRight, environment: var7
+                                var4 = function() {
                                     _fun103605: for (var _fun103605_ip = 0;;) switch (_fun103605_ip) {
                                         case 0:
                                             var1 = _closure3_slot1;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             var5 = var5["5Wxrcd"];
                                             var5 = var6.bind(var7)(var5);
                                             var1.text = var5;
-                                            var5 = function() { // Original name: onPress, environment: var5
+                                            var5 = function() {
                                                 var4 = _closure1_slot0;
                                                 var3 = _closure1_slot2;
                                                 var0 = 10;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     }
                                 };
                                 var2.headerRight = var4;
-                                var4 = function() { // Original name: render, environment: var7
+                                var4 = function() {
                                     var3 = _closure1_slot4;
                                     var1 = _closure1_slot1;
                                     var2 = _closure1_slot2;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var8 = var9.getHeaderBackButton;
                                 var8 = var8.bind(var9)();
                                 var1.headerLeft = var8;
-                                var8 = function() { // Original name: headerRight, environment: var7
+                                var8 = function() {
                                     var3 = _closure1_slot4;
                                     var7 = _closure1_slot0;
                                     var8 = _closure1_slot2;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var4["5Wxrcd"];
                                     var4 = var5.bind(var6)(var4);
                                     var0.text = var4;
-                                    var4 = function() { // Original name: onPress, environment: var4
+                                    var4 = function() {
                                         var4 = _closure1_slot0;
                                         var3 = _closure1_slot2;
                                         var0 = 10;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var1.headerRight = var8;
-                                var7 = function() { // Original name: render, environment: var7
+                                var7 = function() {
                                     var3 = _closure1_slot4;
                                     var1 = _closure1_slot1;
                                     var2 = _closure1_slot2;

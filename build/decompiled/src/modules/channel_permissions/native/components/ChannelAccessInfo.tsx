@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_permissions/native/components/ChannelAccessInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelAccessInfo, environment: var1
+    var1 = function arg0() {
         _fun90767: for (var _fun90767_ip = 0;;) switch (_fun90767_ip) {
             case 0:
                 var0 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var5;
                 var3 = undefined;
                 var _closure2_slot2 = var3;
-                var19 = function(arg0, arg1, arg2, arg3) { // Original name: renderCounts, environment: var7
+                var19 = function arg0, arg1, arg2, arg3() {
                     _fun90768: for (var _fun90768_ip = 0;;) switch (_fun90768_ip) {
                         case 0:
                             var3 = arg0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.accessibilityLabel = var9;
                 var9 = 'button';
                 var5.accessibilityRole = var9;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 14;

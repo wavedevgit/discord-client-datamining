@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: append, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun48233: for (var _fun48233_ip = 0;;) switch (_fun48233_ip) {
             case 0:
                 var6 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var5;
     var _closure1_slot8 = var4;
     var1.identity = var3;
-    var3 = function() { // Original name: reset, environment: var0
+    var3 = function() {
         _fun48234: for (var _fun48234_ip = 0;;) switch (_fun48234_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.reset = var3;
-    var3 = function() { // Original name: toArray, environment: var0
+    var3 = function() {
         _fun48235: for (var _fun48235_ip = 0;;) switch (_fun48235_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.toArray = var3;
     var1.append = var2;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) { // Original name: appendTransform, environment: var0
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8() {
         _fun48236: for (var _fun48236_ip = 0;;) switch (_fun48236_ip) {
             case 0:
                 var9 = arg0;

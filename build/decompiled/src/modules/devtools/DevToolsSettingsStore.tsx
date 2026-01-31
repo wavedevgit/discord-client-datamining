@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun85681: for (var _fun85681_ip = 0;;) switch (_fun85681_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.DeviceSettingsStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: DevToolsSettingsStore, environment: var5
+        var3 = function() {
             _fun85685: for (var _fun85685_ip = 0;;) switch (_fun85685_ip) {
                 case 0:
                     var3 = this;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun85686: for (var _fun85686_ip = 0;;) switch (_fun85686_ip) {
                 case 0:
                     var2 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'sidebarWidth';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun85688: for (var _fun85688_ip = 0;;) switch (_fun85688_ip) {
                 case 0:
                     var0 = this;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastOpenTabId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun85689: for (var _fun85689_ip = 0;;) switch (_fun85689_ip) {
                 case 0:
                     var0 = _closure1_slot8;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'displayTools';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun85690: for (var _fun85690_ip = 0;;) switch (_fun85690_ip) {
                 case 0:
                     var0 = _closure1_slot7;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'showDevWidget';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun85691: for (var _fun85691_ip = 0;;) switch (_fun85691_ip) {
                 case 0:
                     var0 = _closure1_slot7;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'devWidgetPosition';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var0 = var0.devWidgetPosition;
             return var0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'sortedScreenKeys';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot8;
             var0 = var0.sortedScreenKeys;
             return var0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var6.bind(var0)(var3);
     var3 = {};
-    var4 = function(arg0) { // Original name: handleDevToolsSettingsUpdate, environment: var4
+    var4 = function arg0() {
         _fun85694: for (var _fun85694_ip = 0;;) switch (_fun85694_ip) {
             case 0:
                 var0 = _closure1_slot7;

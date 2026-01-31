@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/applications/message_embed/web/appMessageEmbedTracking.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ClickArea = var3;
-    var3 = function(arg0) { // Original name: trackAppEmbedClick, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.applicationId;
         var9 = var0.linkType;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAppEmbedClick = var3;
-    var3 = function(arg0) { // Original name: trackAppEmbedViewed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.appId;
         var10 = var0.linkType;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAppEmbedViewed = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: trackAppEmbedLinkSent, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

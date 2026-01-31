@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/native/AuthorizeFormSeparator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: AuthorizeFormSeparator, environment: var1
+    var1 = function() {
         var1 = _closure1_slot2;
         var3 = undefined;
         var4 = var1.bind(var3)();

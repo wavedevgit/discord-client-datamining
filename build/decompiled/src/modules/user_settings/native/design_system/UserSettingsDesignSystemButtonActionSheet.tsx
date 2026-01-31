@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemButtonActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemButtonActionSheet, environment: var1
+    var1 = function() {
         var1 = _closure1_slot1;
         var14 = _closure1_slot2;
         var0 = 2;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var13 === var4;
             var5.selected = var13;
             var5.label = var12;
-            var11 = function() { // Original name: onPress, environment: var11
+            var11 = function() {
                 var2 = _closure2_slot1;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var13 === var4;
             var5.selected = var13;
             var5.label = var12;
-            var11 = function() { // Original name: onPress, environment: var11
+            var11 = function() {
                 var2 = _closure2_slot2;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15.label = var18;
         var18 = var17.showDisabled;
         var15.value = var18;
-        var18 = function(arg0) { // Original name: onValueChange, environment: var11
+        var18 = function arg0() {
             var2 = _closure2_slot3;
             var1 = undefined;
             var0 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15.label = var18;
         var17 = var17.showIcon;
         var15.value = var17;
-        var17 = function(arg0) { // Original name: onValueChange, environment: var11
+        var17 = function arg0() {
             var2 = _closure2_slot4;
             var1 = undefined;
             var0 = arg0;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var13 === var4;
             var5.selected = var13;
             var5.label = var4;
-            var11 = function() { // Original name: onPress, environment: var11
+            var11 = function() {
                 var2 = _closure2_slot5;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13 = 'Enabled';
                 case 110:
                     var0.label = var13;
-                    var10 = function() { // Original name: onPress, environment: var10
+                    var10 = function() {
                         var2 = _closure2_slot6;
                         var1 = _closure3_slot0;
                         var0 = undefined;

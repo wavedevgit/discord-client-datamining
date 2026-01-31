@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var5 = function(arg0) { // Original name: handleAutomaticGainControlChange, environment: var6
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0) { // Original name: handleEchoCancellationChange, environment: var6
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0) { // Original name: handleNoiseSuppressionChange, environment: var6
+    var3 = function arg0() {
         var5 = arg0;
         var0 = _closure1_slot10;
         var7 = var0.KRISP;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var3;
-    var0 = function(arg0) { // Original name: NoiseSuppressionOption, environment: var6
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.option;
         var _closure2_slot0 = var1;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.option;
         var0.style = var11;
         var0.label = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var2 = _closure1_slot13;
             var1 = _closure2_slot0;
             var0 = undefined;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: VoiceProcessingOptions, environment: var6
+    var0 = function() {
         _fun84386: for (var _fun84386_ip = 0;;) switch (_fun84386_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.bind(var8)(var5);
                 var0.subLabel = var5;
                 var0.value = var12;
-                var3 = function(arg0) { // Original name: onValueChange, environment: var3
+                var3 = function arg0() {
                     _fun84388: for (var _fun84388_ip = 0;;) switch (_fun84388_ip) {
                         case 0:
                             var2 = _closure1_slot13;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/user_settings/native/voice/UserSettingsVoiceProcessing.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function() { // Original name: UserSettingsVoiceProcessing, environment: var6
+    var6 = function() {
         _fun84389: for (var _fun84389_ip = 0;;) switch (_fun84389_ip) {
             case 0:
                 var11 = _closure1_slot0;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.bind(var13)(var11);
                 var6.subLabel = var11;
                 var6.value = var10;
-                var9 = function(arg0) { // Original name: onValueChange, environment: var9
+                var9 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 4;

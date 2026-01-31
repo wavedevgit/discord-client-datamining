@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/command_view/CommandOptionView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CommandOptionView, environment: var1
+    var1 = function arg0() {
         _fun108058: for (var _fun108058_ip = 0;;) switch (_fun108058_ip) {
             case 0:
                 var0 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.bind(var3)(var8);
                 var8 = var8.LayoutAnimation;
                 var6.layout = var8;
-                var8 = function(arg0) { // Original name: onLayout, environment: var29
+                var8 = function arg0() {
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot0;
                     var0 = undefined;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.onEndEditing = var32;
                 var15.onDismiss = var31;
                 var15.onOptionValueChange = var30;
-                var30 = function() { // Original name: onFocus, environment: var29
+                var30 = function() {
                     var2 = _closure2_slot4;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var15.onFocus = var30;
-                var30 = function() { // Original name: onPress, environment: var29
+                var30 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var15.onPress = var30;
-                var29 = function() { // Original name: onPressAttachmentOption, environment: var29
+                var29 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot0;
                     var0 = undefined;

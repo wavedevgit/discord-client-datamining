@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var8;
-    var4 = function() { // Original name: goBack, environment: var1
+    var4 = function() {
         _fun103046: for (var _fun103046_ip = 0;;) switch (_fun103046_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var5 = function(arg0) { // Original name: Notifications, environment: var1
+    var5 = function arg0() {
         _fun103047: for (var _fun103047_ip = 0;;) switch (_fun103047_ip) {
             case 0:
                 var1 = arg0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var5;
-    var3 = function(arg0) { // Original name: ThemedNotifications, environment: var1
+    var3 = function arg0() {
         _fun103050: for (var _fun103050_ip = 0;;) switch (_fun103050_ip) {
             case 0:
                 var11 = arg0;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var9.bind(var11)(var6);
     var _closure1_slot9 = var6;
     var9 = var10.memo;
-    var6 = function(arg0) { // Original name: HeaderInner, environment: var1
+    var6 = function arg0() {
         _fun103052: for (var _fun103052_ip = 0;;) switch (_fun103052_ip) {
             case 0:
                 var1 = arg0;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.goBack = var4;
     var2.ThemedNotifications = var3;
-    var1 = function() { // Original name: ThemedNotificationsModal, environment: var1
+    var1 = function() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot13;
         var1 = {};

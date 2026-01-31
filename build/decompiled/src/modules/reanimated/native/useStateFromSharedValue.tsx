@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun66112: for (var _fun66112_ip = 0;;) switch (_fun66112_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun66114: for (var _fun66114_ip = 0;;) switch (_fun66114_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: useListenerSubscription, environment: var1
+    var0 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var5;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 case 32:
                     var5 = _closure2_slot0;
-                    var3 = function(arg0) { // Original name: createListenerState, environment: var0
+                    var3 = function arg0() {
                         var0 = global;
                         var0 = var0.Set;
                         var2 = var0.prototype;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = arg0;
                         var0.sharedValue = var3;
                         var0.listeners = var2;
-                        var1 = function(arg0) { // Original name: valueListener, environment: var1
+                        var1 = function arg0() {
                             var0 = arg0;
                             var _closure5_slot0 = var0;
                             var3 = _closure1_slot0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = undefined;
                     var6 = var10.bind(var4)(var2);
                     var3 = var6.runOnUI;
-                    var2 = function(arg0, arg1, arg2) { // Original name: s, environment: var0
+                    var2 = function arg0, arg1, arg2() {
                         var3 = arg2;
                         var1 = arg1;
                         var _closure4_slot0 = var1;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = undefined;
                                 var6 = var5.bind(var4)(var3);
                                 var5 = var6.runOnUI;
-                                var3 = function(arg0, arg1) { // Original name: r, environment: var3
+                                var3 = function arg0, arg1() {
                                     var2 = arg1;
                                     var1 = var2.removeListener;
                                     var0 = arg0;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reanimated/native/useStateFromSharedValue.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useStateFromSharedValue, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: useDerivedStateFromSharedValue, environment: var1
+    var1 = function arg0, arg1() {
         var4 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var4;

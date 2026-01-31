@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: extractModel, environment: var1
+    var3 = function arg0, arg1() {
         _fun9989: for (var _fun9989_ip = 0;;) switch (_fun9989_ip) {
             case 0:
                 var0 = arg0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: extractRequestAttributes, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun9990: for (var _fun9990_ip = 0;;) switch (_fun9990_ip) {
             case 0:
                 var1 = arg1;
@@ -349,7 +349,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: addPrivateRequestAttributes, environment: var1
+    var0 = function arg0, arg1() {
         _fun9992: for (var _fun9992_ip = 0;;) switch (_fun9992_ip) {
             case 0:
                 var2 = arg0;
@@ -437,7 +437,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: instrumentMethod, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var2 = arg1;
         var _closure2_slot0 = var2;
         var1 = arg2;
@@ -456,7 +456,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = global;
         var3 = var1.Proxy;
         var2 = {};
-        var0 = function(arg0, arg1, arg2) { // Original name: apply, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun9994: for (var _fun9994_ip = 0;;) switch (_fun9994_ip) {
                 case 0:
                     var2 = arg2;
@@ -622,7 +622,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = _closure4_slot0;
                                             var0 = _closure2_slot2;
                                             var3 = var0.recordOutputs;
-                                            var2 = function(arg0, arg1, arg2) { // Original name: addResponseAttributes, environment: var0
+                                            var2 = function arg0, arg1, arg2() {
                                                 _fun10004: for (var _fun10004_ip = 0;;) switch (_fun10004_ip) {
                                                     case 0:
                                                         var2 = arg0;
@@ -1076,7 +1076,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: createDeepProxy, environment: var1
+    var0 = function arg0() {
         _fun10009: for (var _fun10009_ip = 0;;) switch (_fun10009_ip) {
             case 0:
                 var1 = undefined;
@@ -1116,7 +1116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = global;
                 var3 = var1.Proxy;
                 var2 = {};
-                var0 = function(arg0, arg1, arg2) { // Original name: get, environment: var0
+                var0 = function arg0, arg1, arg2() {
                     _fun10010: for (var _fun10010_ip = 0;;) switch (_fun10010_ip) {
                         case 0:
                             var6 = arg0;
@@ -1215,7 +1215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var13 = var6;
                             var1 = var16[var2](var15, var14, var13, var12, var11);
                             var _closure3_slot0 = var1;
-                            var0 = function() { // Original name: instrumentedAndProxiedCreate, environment: var0
+                            var0 = function() {
                                 _fun10011: for (var _fun10011_ip = 0;;) switch (_fun10011_ip) {
                                     case 0:
                                         var5 = undefined;
@@ -1289,7 +1289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
     var2.extractModel = var3;
-    var1 = function(arg0, arg1) { // Original name: instrumentGoogleGenAIClient, environment: var1
+    var1 = function arg0, arg1() {
         _fun10012: for (var _fun10012_ip = 0;;) switch (_fun10012_ip) {
             case 0:
                 var1 = global;

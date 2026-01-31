@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherBooleanOption, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.style;
         var6 = var0.option;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.displayName;
         var0.label = var6;
         var0.selected = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var4 = _closure2_slot3;
             var1 = _closure2_slot2;
             var3 = !var1;

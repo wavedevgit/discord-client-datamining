@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/panels/useMainTabsChannelScreenStyles.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useMainTabsChannelScreenStyles, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var10 = arg0;
         var9 = arg1;
         var8 = arg2;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var6[var2];
         var4 = var3.bind(var4)(var2);
         var3 = var4.useAnimatedStyle;
-        var2 = function() { // Original name: h, environment: var0
+        var2 = function() {
             _fun104660: for (var _fun104660_ip = 0;;) switch (_fun104660_ip) {
                 case 0:
                     var1 = _closure2_slot3;

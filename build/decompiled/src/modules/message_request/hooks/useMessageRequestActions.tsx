@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun90552: for (var _fun90552_ip = 0;;) switch (_fun90552_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun90554: for (var _fun90554_ip = 0;;) switch (_fun90554_ip) {
             case 0:
                 var3 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/hooks/useMessageRequestActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useMessageRequestActions, environment: var1
+    var1 = function arg0() {
         _fun90555: for (var _fun90555_ip = 0;;) switch (_fun90555_ip) {
             case 0:
                 var1 = arg0;
@@ -1011,7 +1011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = {};
                                     var1.channelId = var8;
                                     var1.onConfirm = var7;
-                                    var6 = function() { // Original name: onCancel, environment: var6
+                                    var6 = function() {
                                         _fun90576: for (var _fun90576_ip = 0;;) switch (_fun90576_ip) {
                                             case 0:
                                                 var0 = _closure2_slot0;
@@ -1138,7 +1138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot1 = var0;
                             var0 = arg2;
                             var _closure3_slot2 = var0;
-                            var5 = function(arg0, arg1) { // Original name: onConfirm, environment: var4
+                            var5 = function arg0, arg1() {
                                 _fun90580: for (var _fun90580_ip = 0;;) switch (_fun90580_ip) {
                                     case 0:
                                         var6 = arg0;
@@ -1246,7 +1246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var1.channel = var6;
                             var1.onConfirm = var5;
-                            var4 = function() { // Original name: onCancel, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 11;

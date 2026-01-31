@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: eligible, environment: var1
+    var0 = function arg0, arg1() {
         _fun80739: for (var _fun80739_ip = 0;;) switch (_fun80739_ip) {
             case 0:
                 var2 = arg0;

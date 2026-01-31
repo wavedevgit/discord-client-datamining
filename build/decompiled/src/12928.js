@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _linkedErrorsIntegration, environment: var1
+    var1 = function() {
         _fun99567: for (var _fun99567_ip = 0;;) switch (_fun99567_ip) {
             case 0:
                 var4 = undefined;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'LinkedErrors';
                 var0.name = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: preprocessEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     var1 = arg2;
                     var0 = var1.getOptions;
                     var1 = var0.bind(var1)();

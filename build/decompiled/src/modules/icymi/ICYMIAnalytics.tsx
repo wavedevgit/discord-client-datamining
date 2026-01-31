@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var6;
     var1 = var1.AnalyticEvents;
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: listItemToType, environment: var3
+    var1 = function arg0() {
         _fun70808: for (var _fun70808_ip = 0;;) switch (_fun70808_ip) {
             case 0:
                 var3 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var1;
-    var1 = function(arg0) { // Original name: dehydratedItemToType, environment: var3
+    var1 = function arg0() {
         _fun70809: for (var _fun70809_ip = 0;;) switch (_fun70809_ip) {
             case 0:
                 var1 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: trackItemInteraction, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackItemInteraction = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: trackItemShortImpression, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var6 = arg0;
         var7 = arg1;
         var2 = _closure1_slot1;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackItemShortImpression = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: trackItemLongImpression, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var6 = arg0;
         var7 = arg1;
         var2 = _closure1_slot1;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackItemLongImpression = var6;
-    var6 = function(arg0) { // Original name: trackFeedLoaded, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var9 = new Array(0);
         var _closure2_slot0 = var9;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedLoaded = var6;
-    var6 = function(arg0) { // Original name: trackFeedShown, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedShown = var6;
-    var6 = function() { // Original name: trackFeedFirstScrollStarted, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedFirstScrollStarted = var6;
-    var6 = function() { // Original name: trackFeedFeedbackPromptViewed, environment: var3
+    var6 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedFeedbackPromptViewed = var6;
-    var6 = function(arg0) { // Original name: trackFeedFeedbackSubmitted, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedFeedbackSubmitted = var6;
-    var6 = function(arg0) { // Original name: trackGeneratedCandidateFeedback, environment: var3
+    var6 = function arg0() {
         _fun70830: for (var _fun70830_ip = 0;;) switch (_fun70830_ip) {
             case 0:
                 var5 = arg0;
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackGeneratedCandidateFeedback = var6;
-    var6 = function(arg0) { // Original name: trackFeedOnboardingScreenSkipped, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedOnboardingScreenSkipped = var6;
-    var6 = function(arg0) { // Original name: trackFeedOnboardingGuildToggled, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedOnboardingGuildToggled = var6;
-    var6 = function(arg0) { // Original name: trackFeedOnboardingCategoryToggled, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedOnboardingCategoryToggled = var6;
-    var6 = function() { // Original name: trackFeedEmptyLoadingSeen, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -789,7 +789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedEmptyLoadingSeen = var6;
-    var6 = function(arg0) { // Original name: trackFeedEmptyLoadingComplete, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -814,7 +814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedEmptyLoadingComplete = var6;
-    var6 = function(arg0) { // Original name: trackFeedEmptyLoadingAbandoned, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedEmptyLoadingAbandoned = var6;
-    var6 = function(arg0) { // Original name: trackFeedSessionStarted, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -870,7 +870,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedSessionStarted = var6;
-    var6 = function(arg0) { // Original name: trackFeedSessionCompleted, environment: var3
+    var6 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackFeedSessionCompleted = var6;
-    var6 = function(arg0) { // Original name: trackFeedItemDwell1s, environment: var3
+    var6 = function arg0() {
         _fun70839: for (var _fun70839_ip = 0;;) switch (_fun70839_ip) {
             case 0:
                 var5 = arg0;
@@ -994,7 +994,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackFeedItemDwell1s = var6;
-    var6 = function(arg0) { // Original name: trackFeedItemDwelled, environment: var3
+    var6 = function arg0() {
         _fun70840: for (var _fun70840_ip = 0;;) switch (_fun70840_ip) {
             case 0:
                 var5 = arg0;
@@ -1065,7 +1065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackFeedItemDwelled = var6;
-    var6 = function(arg0) { // Original name: trackFeedItemActioned, environment: var3
+    var6 = function arg0() {
         _fun70841: for (var _fun70841_ip = 0;;) switch (_fun70841_ip) {
             case 0:
                 var5 = arg0;
@@ -1124,7 +1124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackFeedItemActioned = var6;
-    var6 = function(arg0) { // Original name: trackFeedFilterActioned, environment: var3
+    var6 = function arg0() {
         _fun70842: for (var _fun70842_ip = 0;;) switch (_fun70842_ip) {
             case 0:
                 var6 = arg0;
@@ -1268,7 +1268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackFeedFilterActioned = var6;
-    var3 = function(arg0) { // Original name: trackFeedPageActioned, environment: var3
+    var3 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;

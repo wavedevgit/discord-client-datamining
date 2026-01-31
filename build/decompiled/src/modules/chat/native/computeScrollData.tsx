@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0, arg1) { // Original name: findMessageRowIndex, environment: var3
+    var1 = function arg0, arg1() {
         _fun73398: for (var _fun73398_ip = 0;;) switch (_fun73398_ip) {
             case 0:
                 var2 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/chat/native/computeScrollData.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: computeScrollData, environment: var3
+    var3 = function arg0() {
         _fun73400: for (var _fun73400_ip = 0;;) switch (_fun73400_ip) {
             case 0:
                 var0 = arg0;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun73400
                 }
             case 66:
-                var4 = function(arg0) { // Original name: findUnreadSeperatorRowIndex, environment: var3
+                var4 = function arg0() {
                     _fun73401: for (var _fun73401_ip = 0;;) switch (_fun73401_ip) {
                         case 0:
                             var2 = arg0;

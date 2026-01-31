@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.bitmask = var14;
     var14 = 'obscure_blur_effect_explicit_content_enabled';
     var5.devSettingKey = var14;
-    var14 = function(arg0) { // Original name: getProtoUserSettings, environment: var9
+    var14 = function arg0() {
         _fun39271: for (var _fun39271_ip = 0;;) switch (_fun39271_ip) {
             case 0:
                 var0 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getProtoUserSettings = var14;
-    var14 = function(arg0) { // Original name: getUserSettingsWithDefaults, environment: var9
+    var14 = function arg0() {
         _fun39272: for (var _fun39272_ip = 0;;) switch (_fun39272_ip) {
             case 0:
                 var8 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.bitmask = var14;
     var14 = 'obscure_blur_effect_gore_content_enabled';
     var5.devSettingKey = var14;
-    var14 = function(arg0) { // Original name: getProtoUserSettings, environment: var9
+    var14 = function arg0() {
         _fun39273: for (var _fun39273_ip = 0;;) switch (_fun39273_ip) {
             case 0:
                 var0 = arg0;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getProtoUserSettings = var14;
-    var14 = function(arg0) { // Original name: getUserSettingsWithDefaults, environment: var9
+    var14 = function arg0() {
         _fun39274: for (var _fun39274_ip = 0;;) switch (_fun39274_ip) {
             case 0:
                 var8 = arg0;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.bitmask = var10;
     var10 = 'obscure_blur_effect_self_harm_content_enabled';
     var5.devSettingKey = var10;
-    var10 = function(arg0) { // Original name: getProtoUserSettings, environment: var9
+    var10 = function arg0() {
         _fun39275: for (var _fun39275_ip = 0;;) switch (_fun39275_ip) {
             case 0:
                 var0 = arg0;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getProtoUserSettings = var10;
-    var9 = function() { // Original name: getUserSettingsWithDefaults, environment: var9
+    var9 = function() {
         var0 = {};
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;

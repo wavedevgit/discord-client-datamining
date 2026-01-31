@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: patchThread, environment: var3
+    var0 = function arg0, arg1() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: dispatchThreadMemberLocalUpdate, environment: var3
+    var0 = function arg0, arg1() {
         var6 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ChannelFlags;
     var _closure1_slot16 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: archiveThread, environment: var3
+    var6 = function arg0, arg1() {
         _fun53189: for (var _fun53189_ip = 0;;) switch (_fun53189_ip) {
             case 0:
                 var3 = {};
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.archiveThread = var6;
-    var6 = function(arg0) { // Original name: lockThread, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = this;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.lockThread = var6;
-    var6 = function(arg0) { // Original name: unlockThread, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = this;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.unlockThread = var6;
-    var6 = function(arg0, arg1) { // Original name: unarchiveThread, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.unarchiveThread = var6;
-    var6 = function(arg0) { // Original name: unarchiveThreadIfNecessary, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = this;
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.unarchiveThreadIfNecessary = var6;
-    var6 = function(arg0, arg1) { // Original name: setInvitable, environment: var3
+    var6 = function arg0, arg1() {
         var3 = _closure1_slot17;
         var2 = {};
         var0 = arg1;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setInvitable = var6;
-    var6 = function(arg0, arg1) { // Original name: joinThread, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -927,7 +927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.joinThread = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: addMember, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1112,7 +1112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addMember = var6;
-    var6 = function(arg0, arg1) { // Original name: leaveThread, environment: var3
+    var6 = function arg0, arg1() {
         _fun53209: for (var _fun53209_ip = 0;;) switch (_fun53209_ip) {
             case 0:
                 var3 = arg0;
@@ -1153,7 +1153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.leaveThread = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: removeMember, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -1179,7 +1179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeMember = var6;
-    var6 = function(arg0, arg1) { // Original name: setAutoArchiveDuration, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -1205,7 +1205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setAutoArchiveDuration = var6;
-    var6 = function(arg0) { // Original name: pin, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var3 = this;
         var1 = var4.flags;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.pin = var6;
-    var6 = function(arg0) { // Original name: unpin, environment: var3
+    var6 = function arg0() {
         var3 = arg0;
         var2 = this;
         var1 = var3.flags;
@@ -1234,7 +1234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.unpin = var6;
-    var6 = function(arg0, arg1) { // Original name: updateFlags, environment: var3
+    var6 = function arg0, arg1() {
         _fun53214: for (var _fun53214_ip = 0;;) switch (_fun53214_ip) {
             case 0:
                 var2 = arguments[2];
@@ -1353,7 +1353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateFlags = var6;
-    var6 = function(arg0, arg1) { // Original name: replacePin, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1563,7 +1563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.replacePin = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: openThreadCreationForMobile, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun53220: for (var _fun53220_ip = 0;;) switch (_fun53220_ip) {
             case 0:
                 var4 = arg0;
@@ -1622,7 +1622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openThreadCreationForMobile = var6;
-    var6 = function(arg0, arg1) { // Original name: setNotificationSettings, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1709,7 +1709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setNotificationSettings = var6;
-    var6 = function(arg0) { // Original name: loadArchivedThreads, environment: var3
+    var6 = function arg0() {
         _fun53224: for (var _fun53224_ip = 0;;) switch (_fun53224_ip) {
             case 0:
                 var1 = arg0;
@@ -1933,7 +1933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.loadArchivedThreads = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: searchThreads, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun53229: for (var _fun53229_ip = 0;;) switch (_fun53229_ip) {
             case 0:
                 var2 = arguments[4];
@@ -2077,7 +2077,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.searchThreads = var6;
-    var3 = function(arg0, arg1) { // Original name: summarizeThread, environment: var3
+    var3 = function arg0, arg1() {
         _fun53233: for (var _fun53233_ip = 0;;) switch (_fun53233_ip) {
             case 0:
                 var4 = arg0;

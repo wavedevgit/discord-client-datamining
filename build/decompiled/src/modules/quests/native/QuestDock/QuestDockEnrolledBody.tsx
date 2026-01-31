@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EnrolledBodyWatchTask, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var17 = var1.quest;
         var _closure2_slot0 = var17;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             _fun83870: for (var _fun83870_ip = 0;;) switch (_fun83870_ip) {
                 case 0:
-                    var1 = function() { // Original name: _maybeOpenVideoQuestModal, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun83870
                     }
                 case 23:
-                    var1 = function() { // Original name: maybeOpenVideoQuestModal, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: EnrolledBodyPlayStreamTask, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var19 = var0.quest;
         var0 = _closure1_slot13;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: QuestDockEnrolledBody, environment: var1
+    var1 = function arg0() {
         _fun83876: for (var _fun83876_ip = 0;;) switch (_fun83876_ip) {
             case 0:
                 var1 = arg0;

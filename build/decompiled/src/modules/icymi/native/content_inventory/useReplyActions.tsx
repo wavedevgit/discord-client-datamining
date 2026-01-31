@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var6 = var6.fjcCk5;
                                     var6 = var7.bind(var8)(var6);
                                     var3.content = var6;
-                                    var6 = function() { // Original name: icon, environment: var6
+                                    var6 = function() {
                                         var3 = _closure1_slot10;
                                         var1 = _closure1_slot0;
                                         var2 = _closure1_slot2;

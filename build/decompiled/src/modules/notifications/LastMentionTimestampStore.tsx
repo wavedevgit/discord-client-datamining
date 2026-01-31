@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun43364: for (var _fun43364_ip = 0;;) switch (_fun43364_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.Store;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: LastMentionTimestampStore, environment: var5
+        var3 = function() {
             _fun43368: for (var _fun43368_ip = 0;;) switch (_fun43368_ip) {
                 case 0:
                     var3 = this;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot7;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGlobalStats';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
-            var3 = function(arg0) { // Original name: age, environment: var0
+        var6 = function() {
+            var3 = function arg0() {
                 _fun43371: for (var _fun43371_ip = 0;;) switch (_fun43371_ip) {
                     case 0:
                         var4 = arg0;
@@ -216,11 +216,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStats';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun43372: for (var _fun43372_ip = 0;;) switch (_fun43372_ip) {
                 case 0:
                     var5 = arg0;
-                    var4 = function(arg0) { // Original name: age, environment: var0
+                    var4 = function arg0() {
                         _fun43373: for (var _fun43373_ip = 0;;) switch (_fun43373_ip) {
                             case 0:
                                 var4 = arg0;
@@ -321,10 +321,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var10 = var4.bind(var0)(var3);
     var3 = {};
-    var4 = function() { // Original name: handleConnectionOpen, environment: var1
+    var4 = function() {
         _fun43374: for (var _fun43374_ip = 0;;) switch (_fun43374_ip) {
             case 0:
-                var7 = function(arg0) { // Original name: isRecent, environment: var0
+                var7 = function arg0() {
                     _fun43375: for (var _fun43375_ip = 0;;) switch (_fun43375_ip) {
                         case 0:
                             var2 = arg0;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CONNECTION_OPEN = var4;
-    var4 = function(arg0) { // Original name: handleMessageNotificationShown, environment: var1
+    var4 = function arg0() {
         _fun43376: for (var _fun43376_ip = 0;;) switch (_fun43376_ip) {
             case 0:
                 var0 = arg0;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/notifications/LastMentionTimestampStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: trackMessageNotificationTimestamps, environment: var1
+    var1 = function arg0, arg1() {
         _fun43377: for (var _fun43377_ip = 0;;) switch (_fun43377_ip) {
             case 0:
                 var4 = arg0;

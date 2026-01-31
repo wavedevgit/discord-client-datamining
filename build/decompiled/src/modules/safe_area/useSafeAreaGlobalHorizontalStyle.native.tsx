@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safe_area/useSafeAreaGlobalHorizontalStyle.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useSafeAreaGlobalHorizontalStyle, environment: var1
+    var1 = function() {
         _fun99953: for (var _fun99953_ip = 0;;) switch (_fun99953_ip) {
             case 0:
                 var4 = _closure1_slot4;

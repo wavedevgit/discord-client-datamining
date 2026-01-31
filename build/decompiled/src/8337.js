@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var1 = function(arg0, arg1) { // Original name: QRPolynomial, environment: var2
+    var1 = function arg0, arg1() {
         _fun67489: for (var _fun67489_ip = 0;;) switch (_fun67489_ip) {
             case 0:
                 var0 = arg0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var1;
     var0 = {};
-    var3 = function(arg0) { // Original name: get, environment: var2
+    var3 = function arg0() {
         var0 = this;
         var1 = var0.num;
         var0 = arg0;
@@ -117,14 +117,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.get = var3;
-    var3 = function() { // Original name: getLength, environment: var2
+    var3 = function() {
         var0 = this;
         var0 = var0.num;
         var0 = var0.length;
         return var0;
     };
     var0.getLength = var3;
-    var3 = function(arg0) { // Original name: multiply, environment: var2
+    var3 = function arg0() {
         _fun67492: for (var _fun67492_ip = 0;;) switch (_fun67492_ip) {
             case 0:
                 var7 = arg0;
@@ -222,7 +222,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.multiply = var3;
-    var2 = function(arg0) { // Original name: mod, environment: var2
+    var2 = function arg0() {
         _fun67493: for (var _fun67493_ip = 0;;) switch (_fun67493_ip) {
             case 0:
                 var3 = arg0;

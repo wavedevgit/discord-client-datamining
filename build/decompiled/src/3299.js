@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: encode, environment: var0
+    var2 = function arg0, arg1() {
         _fun28679: for (var _fun28679_ip = 0;;) switch (_fun28679_ip) {
             case 0:
                 var4 = arg0;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0) { // Original name: keysSorter, environment: var0
+    var2 = function arg0() {
         _fun28680: for (var _fun28680_ip = 0;;) switch (_fun28680_ip) {
             case 0:
                 var2 = arg0;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.arrayFormat = var0;
                 var0 = arg1;
                 var1 = var5.bind(var3)(var1, var0);
-                var0 = function(arg0) { // Original name: parserForArrayFormat, environment: var2
+                var0 = function arg0() {
                     _fun28685: for (var _fun28685_ip = 0;;) switch (_fun28685_ip) {
                         case 0:
                             var1 = arg0;
@@ -443,7 +443,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg1;
                 var2 = var5.bind(var3)(var2, var0);
                 var _closure2_slot1 = var2;
-                var0 = function(arg0) { // Original name: encoderForArrayFormat, environment: var1
+                var0 = function arg0() {
                     _fun28692: for (var _fun28692_ip = 0;;) switch (_fun28692_ip) {
                         case 0:
                             var1 = arg0;

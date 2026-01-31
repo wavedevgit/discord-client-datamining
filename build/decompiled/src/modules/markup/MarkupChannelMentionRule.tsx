@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: makeGuild, environment: var6
+    var0 = function arg0() {
         var4 = arg0;
         var0 = {};
         var1 = 'guild';
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: makeChannel, environment: var6
+    var0 = function arg0, arg1() {
         _fun44024: for (var _fun44024_ip = 0;;) switch (_fun44024_ip) {
             case 0:
                 var1 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: makeMessage, environment: var6
+    var0 = function arg0() {
         _fun44025: for (var _fun44025_ip = 0;;) switch (_fun44025_ip) {
             case 0:
                 var0 = {};
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: getChannel, environment: var6
+    var0 = function arg0, arg1() {
         _fun44026: for (var _fun44026_ip = 0;;) switch (_fun44026_ip) {
             case 0:
                 var12 = arg0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: makeLink, environment: var6
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = 'link';
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: makeText, environment: var6
+    var0 = function arg0() {
         var0 = {};
         var1 = 'text';
         var0.type = var1;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: handleUnknownChannel, environment: var6
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun44030: for (var _fun44030_ip = 0;;) switch (_fun44030_ip) {
             case 0:
                 var2 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: formatChannelMentionContent, environment: var6
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun44031: for (var _fun44031_ip = 0;;) switch (_fun44031_ip) {
             case 0:
                 var0 = arg1;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: parseChannel, environment: var6
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun44032: for (var _fun44032_ip = 0;;) switch (_fun44032_ip) {
             case 0:
                 var5 = arg0;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var1 = var1.ME;
     var _closure1_slot10 = var1;
-    var1 = function(arg0) { // Original name: getGuildIdFromChannelId, environment: var6
+    var1 = function arg0() {
         _fun44033: for (var _fun44033_ip = 0;;) switch (_fun44033_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.order = var7;
     var7 = ['<'];
     var3.requiredFirstCharacters = var7;
-    var7 = function(arg0) { // Original name: match, environment: var6
+    var7 = function arg0() {
         var2 = /^<#(\d+)>/;
         var1 = var2.exec;
         var0 = arg0;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.match = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var7 = function arg0, arg1, arg2() {
         _fun44035: for (var _fun44035_ip = 0;;) switch (_fun44035_ip) {
             case 0:
                 var2 = arg2;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.order = var10;
     var10 = ['h'];
     var3.requiredFirstCharacters = var10;
-    var10 = function(arg0) { // Original name: match, environment: var6
+    var10 = function arg0() {
         _fun44036: for (var _fun44036_ip = 0;;) switch (_fun44036_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.match = var10;
-    var10 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var10 = function arg0, arg1, arg2() {
         _fun44037: for (var _fun44037_ip = 0;;) switch (_fun44037_ip) {
             case 0:
                 var3 = arg0;
@@ -1008,7 +1008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.order = var7;
     var7 = ['h'];
     var3.requiredFirstCharacters = var7;
-    var7 = function(arg0) { // Original name: match, environment: var6
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.match = var7;
-    var6 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var6 = function arg0, arg1, arg2() {
         _fun44039: for (var _fun44039_ip = 0;;) switch (_fun44039_ip) {
             case 0:
                 var3 = arg0;

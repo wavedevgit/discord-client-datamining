@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Sheet/native/ActionSheetHeaderBar.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ActionSheetHeaderBarVariants = var3;
-    var1 = function(arg0) { // Original name: ActionSheetHeaderBar, environment: var1
+    var1 = function arg0() {
         _fun46272: for (var _fun46272_ip = 0;;) switch (_fun46272_ip) {
             case 0:
                 var0 = arg0;

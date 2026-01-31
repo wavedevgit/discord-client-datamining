@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var8.bind(var0)(var9);
     var9 = var9.StreakBadge;
     var6.Badge = var9;
-    var9 = function(arg0) { // Original name: predicate, environment: var1
+    var9 = function arg0() {
         _fun104120: for (var _fun104120_ip = 0;;) switch (_fun104120_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var8.bind(var0)(var9);
     var9 = var9.TrendingBadge;
     var6.Badge = var9;
-    var9 = function(arg0) { // Original name: predicate, environment: var1
+    var9 = function arg0() {
         _fun104121: for (var _fun104121_ip = 0;;) switch (_fun104121_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var8.bind(var0)(var9);
     var9 = var9.ResurrectedBadge;
     var6.Badge = var9;
-    var9 = function() { // Original name: predicate, environment: var1
+    var9 = function() {
         var0 = true;
         return var0;
     };
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var0)(var7);
     var7 = var7.MarathonBadge;
     var6.Badge = var7;
-    var7 = function(arg0) { // Original name: predicate, environment: var1
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot3;
         var0 = 5;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/content_inventory/GamingLikeEntryRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GamingLikeEntryRow, environment: var1
+    var1 = function arg0() {
         _fun104125: for (var _fun104125_ip = 0;;) switch (_fun104125_ip) {
             case 0:
                 var0 = arg0;

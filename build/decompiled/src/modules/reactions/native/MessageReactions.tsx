@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reactions/native/MessageReactions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun73256: for (var _fun73256_ip = 0;;) switch (_fun73256_ip) {
             case 0:
                 var7 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.MESSAGE_REACTIONS;
                 var4 = var10.bind(var3)(var4);
                 var4 = var4.analyticsLocations;
-                var10 = function(arg0, arg1) { // Original name: useMessageReactions, environment: var0
+                var10 = function arg0, arg1() {
                     var7 = arg0;
                     var2 = arg1;
                     var _closure3_slot0 = var7;

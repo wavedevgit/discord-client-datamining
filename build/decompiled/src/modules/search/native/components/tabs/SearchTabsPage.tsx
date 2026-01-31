@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: SearchTabsPage, environment: var3
+    var0 = function arg0() {
         _fun105213: for (var _fun105213_ip = 0;;) switch (_fun105213_ip) {
             case 0:
                 var0 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/search/native/components/tabs/SearchTabsPage.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ConnectedSearchTabsPage, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.tab;
         var7 = var0.searchContext;

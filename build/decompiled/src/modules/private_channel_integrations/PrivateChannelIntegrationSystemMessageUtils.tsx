@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/private_channel_integrations/PrivateChannelIntegrationSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getPrivateChannelIntegrationAddedSystemMessageContent, environment: var1
+    var3 = function arg0() {
         _fun55436: for (var _fun55436_ip = 0;;) switch (_fun55436_ip) {
             case 0:
                 var0 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPrivateChannelIntegrationAddedSystemMessageContent = var3;
-    var3 = function(arg0) { // Original name: getPrivateChannelIntegrationRemovedSystemMessageContent, environment: var1
+    var3 = function arg0() {
         _fun55437: for (var _fun55437_ip = 0;;) switch (_fun55437_ip) {
             case 0:
                 var0 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPrivateChannelIntegrationRemovedSystemMessageContent = var3;
-    var3 = function(arg0) { // Original name: getPrivateChannelIntegrationAddedSystemMessageASTContent, environment: var1
+    var3 = function arg0() {
         _fun55438: for (var _fun55438_ip = 0;;) switch (_fun55438_ip) {
             case 0:
                 var0 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPrivateChannelIntegrationAddedSystemMessageASTContent = var3;
-    var1 = function(arg0) { // Original name: getPrivateChannelIntegrationRemovedSystemMessageASTContent, environment: var1
+    var1 = function arg0() {
         _fun55439: for (var _fun55439_ip = 0;;) switch (_fun55439_ip) {
             case 0:
                 var0 = arg0;

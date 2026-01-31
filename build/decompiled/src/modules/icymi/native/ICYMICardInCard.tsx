@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: truncateUsername, environment: var1
+    var0 = function arg0() {
         _fun103986: for (var _fun103986_ip = 0;;) switch (_fun103986_ip) {
             case 0:
                 var4 = arg0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: CutoutGuildIconWithUserCustom, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.guild;
         var11 = var0.author;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMICardInCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMICardInCard, environment: var1
+    var1 = function arg0() {
         _fun103989: for (var _fun103989_ip = 0;;) switch (_fun103989_ip) {
             case 0:
                 var4 = arg0;

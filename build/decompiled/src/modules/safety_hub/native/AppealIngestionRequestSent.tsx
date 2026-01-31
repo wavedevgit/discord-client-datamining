@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionRequestSent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: AppealIngestionRequestSent, environment: var1
+    var1 = function() {
         var15 = _closure1_slot0;
         var16 = _closure1_slot2;
         var0 = 5;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = _closure1_slot6;
         var17 = var11.COMMUNITY_GUIDELINES;
         var13.url = var17;
-        var17 = function() { // Original name: onPress, environment: var10
+        var17 = function() {
             var2 = _closure2_slot0;
             var0 = _closure1_slot5;
             var1 = var0.ClickCommunityGuidelinesLink;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.text = var12;
         var11 = var11.WARNING_SYSTEM_HELPCENTER_LINK;
         var8.url = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure2_slot0;
             var0 = _closure1_slot5;
             var1 = var0.ClickWarningSystemHelpcenterLink;

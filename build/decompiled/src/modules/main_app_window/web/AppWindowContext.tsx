@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var4 = function(arg0) { // Original name: getWindowDispatchForElement, environment: var1
+    var4 = function arg0() {
         _fun59949: for (var _fun59949_ip = 0;;) switch (_fun59949_ip) {
             case 0:
                 var0 = arg0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function() { // Original name: getCurrentlyInteractingAppWindowContext, environment: var1
+    var3 = function() {
         _fun59950: for (var _fun59950_ip = 0;;) switch (_fun59950_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var6;
     var2.MainWindowDispatch = var5;
     var2.getWindowDispatchForElement = var4;
-    var4 = function(arg0) { // Original name: getWindowDispatchForEvent, environment: var1
+    var4 = function arg0() {
         _fun59951: for (var _fun59951_ip = 0;;) switch (_fun59951_ip) {
             case 0:
                 var1 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getWindowDispatchForEvent = var4;
     var2.getCurrentlyInteractingAppWindowContext = var3;
-    var3 = function(arg0) { // Original name: getAppWindowContextValue, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot6;
         var1 = var2.get;
         var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAppWindowContextValue = var3;
-    var3 = function() { // Original name: getCurrentlyInteractingAppContext, environment: var1
+    var3 = function() {
         _fun59953: for (var _fun59953_ip = 0;;) switch (_fun59953_ip) {
             case 0:
                 var1 = _closure1_slot8;
@@ -229,12 +229,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCurrentlyInteractingAppContext = var3;
-    var3 = function(arg0) { // Original name: AppWindowContextProvider, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.appContext;
         var1 = var0.renderWindow;
         var4 = var0.children;
-        var0 = function(arg0, arg1) { // Original name: useWindowContextValue, environment: var0
+        var0 = function arg0, arg1() {
             var7 = arg0;
             var6 = arg1;
             var _closure3_slot0 = var7;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure3_slot2;
                 var2 = _closure3_slot5;
                 var2 = var4.bind(var5)(var3, var2);
-                var4 = function() { // Original name: handleUnload, environment: var0
+                var4 = function() {
                     var2 = _closure1_slot6;
                     var1 = var2.delete;
                     var0 = _closure3_slot2;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.AppWindowContextProvider = var3;
-    var3 = function() { // Original name: useAppContext, environment: var1
+    var3 = function() {
         var2 = _closure1_slot3;
         var1 = var2.useContext;
         var0 = _closure1_slot5;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAppContext = var3;
-    var1 = function() { // Original name: useWindowDispatch, environment: var1
+    var1 = function() {
         var2 = _closure1_slot3;
         var1 = var2.useContext;
         var0 = _closure1_slot5;

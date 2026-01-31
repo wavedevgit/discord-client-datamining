@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot1 = var0;
             var _closure1_slot2 = var8;
             var _closure1_slot3 = var9;
-            var4 = function() { // Original name: _getConstants, environment: var3
+            var4 = function() {
                 _fun1359: for (var _fun1359_ip = 0;;) switch (_fun1359_ip) {
                     case 0:
                         var1 = _closure1_slot7;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot9 = var4;
-            var0 = function(arg0) { // Original name: _getViewManagerConfig, environment: var3
+            var0 = function arg0() {
                 _fun1360: for (var _fun1360_ip = 0;;) switch (_fun1360_ip) {
                     case 0:
                         var3 = arg0;
@@ -159,7 +159,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var1;
                         var3 = var3.viewConfig;
                         var6[var4] = var3;
-                        var3 = function(arg0) { // Original name: lazifyViewManagerConfig, environment: var3
+                        var3 = function arg0() {
                             _fun1361: for (var _fun1361_ip = 0;;) switch (_fun1361_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var9 = var3.bind(var0)(var6);
                                     var8 = var9.default;
                                     var7 = {};
-                                    var6 = function() { // Original name: get, environment: var1
+                                    var6 = function() {
                                         _fun1362: for (var _fun1362_ip = 0;;) switch (_fun1362_ip) {
                                             case 0:
                                                 var3 = _closure1_slot1;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4 = var3.bind(var0)(var2);
                                     var3 = var4.default;
                                     var2 = {};
-                                    var1 = function() { // Original name: get, environment: var1
+                                    var1 = function() {
                                         _fun1364: for (var _fun1364_ip = 0;;) switch (_fun1364_ip) {
                                             case 0:
                                                 var3 = _closure1_slot1;
@@ -347,7 +347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var11 = var8.bind(var0)(var1);
             var10 = {};
-            var1 = function(arg0, arg1, arg2, arg3) { // Original name: createView, environment: var3
+            var1 = function arg0, arg1, arg2, arg3() {
                 var2 = _closure1_slot2;
                 var1 = _closure1_slot3;
                 var0 = 0;
@@ -364,14 +364,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var10.createView = var1;
-            var1 = function() { // Original name: getConstants, environment: var3
+            var1 = function() {
                 var1 = _closure1_slot9;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
             };
             var10.getConstants = var1;
-            var1 = function(arg0) { // Original name: getViewManagerConfig, environment: var3
+            var1 = function arg0() {
                 var2 = _closure1_slot10;
                 var1 = undefined;
                 var0 = arg0;
@@ -379,7 +379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var10.getViewManagerConfig = var1;
-            var1 = function(arg0) { // Original name: hasViewManagerConfig, environment: var3
+            var1 = function arg0() {
                 var2 = _closure1_slot10;
                 var1 = undefined;
                 var0 = arg0;
@@ -424,7 +424,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var7[var1];
                 var2 = var2.bind(var0)(var1);
                 var1 = {};
-                var6 = function() { // Original name: get, environment: var6
+                var6 = function() {
                     var3 = _closure1_slot2;
                     var4 = _closure1_slot3;
                     var0 = 1;
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var7[var1];
                         var2 = var2.bind(var0)(var1);
                         var1 = {};
-                        var6 = function() { // Original name: get, environment: var6
+                        var6 = function() {
                             var0 = global;
                             var3 = var0.console;
                             var1 = var3.warn;

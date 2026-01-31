@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: EmptyDisplay, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.children;
         var7 = var0.style;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: FetchErrorDisplay, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.style;
         var0 = _closure1_slot10;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: NoUsersDisplay, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.style;
         var0 = _closure1_slot10;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: RemainingUsersRow, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.remainingUsersGroup;
         var0 = _closure1_slot10;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: keyExtractor, environment: var4
+    var0 = function arg0() {
         _fun66170: for (var _fun66170_ip = 0;;) switch (_fun66170_ip) {
             case 0:
                 var1 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var3 = function(arg0) { // Original name: EventDetailRsvpSheet, environment: var4
+    var3 = function arg0() {
         _fun66171: for (var _fun66171_ip = 0;;) switch (_fun66171_ip) {
             case 0:
                 var4 = arg0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var5 = var6.bind(var10)(var3, var5);
-                var3 = function(arg0) { // Original name: StaticMessageContainer, environment: var2
+                var3 = function arg0() {
                     var0 = arg0;
                     var7 = var0.children;
                     var0 = _closure1_slot10;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.nicknameStyle = var9;
                 var6 = var8.bind(var4)(var7, var6);
                 var1.label = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 20;

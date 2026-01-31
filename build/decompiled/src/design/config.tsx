@@ -11,12 +11,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
     var3 = {};
-    var0 = function() { // Original name: getDefaultLinkInterceptor, environment: var1
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
     var3.getDefaultLinkInterceptor = var0;
-    var0 = function() { // Original name: useTrackNavigatorScreenImpression, environment: var1
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/config.tsx';
     var4 = var5.bind(var6)(var4);
     var2.designConfig = var3;
-    var1 = function(arg0) { // Original name: setDesignConfig, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.assign;

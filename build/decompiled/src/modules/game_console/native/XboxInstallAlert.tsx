@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/XboxInstallAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: XboxInstallAlert, environment: var1
+    var1 = function arg0() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var0 = var0.bind(var3)();
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = true;
         var5 = 'fillCancelText';
         var0[var5] = var6;
-        var6 = function() { // Original name: renderConfirmRightIcon, environment: var4
+        var6 = function() {
             var3 = _closure1_slot5;
             var5 = _closure1_slot1;
             var6 = _closure1_slot2;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var5 = 'renderConfirmRightIcon';
         var0[var5] = var6;
-        var5 = function() { // Original name: onConfirm, environment: var4
+        var5 = function() {
             _fun66958: for (var _fun66958_ip = 0;;) switch (_fun66958_ip) {
                 case 0:
                     var3 = _closure1_slot0;

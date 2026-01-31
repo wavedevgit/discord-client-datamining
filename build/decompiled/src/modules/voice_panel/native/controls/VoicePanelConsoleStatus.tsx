@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: VoicePanelConsoleStatus, environment: var1
+    var4 = function arg0() {
         _fun111501: for (var _fun111501_ip = 0;;) switch (_fun111501_ip) {
             case 0:
                 var2 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var5];
                 var4 = var20.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: R, environment: var0
+                var1 = function() {
                     _fun111503: for (var _fun111503_ip = 0;;) switch (_fun111503_ip) {
                         case 0:
                             var0 = {};
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = 0;
                         case 125:
                             var16 = _closure1_slot9;
-                            var3 = function(arg0) { // Original name: n, environment: var3
+                            var3 = function arg0() {
                                 _fun111504: for (var _fun111504_ip = 0;;) switch (_fun111504_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var5];
                 var2 = var20.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: V, environment: var0
+                var0 = function() {
                     var0 = {};
                     var2 = _closure2_slot2;
                     var1 = var2.get;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.CONSOLE_STATUS_HEIGHT = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: renderVoicePanelConsoleStatus, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot6;
         var3 = _closure1_slot13;
         var2 = {};

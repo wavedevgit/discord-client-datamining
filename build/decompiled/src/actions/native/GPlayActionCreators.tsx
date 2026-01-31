@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var12;
-    var0 = function() { // Original name: _loadUserCountry, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var13 = function(arg0) { // Original name: withGPlayBillingErrorHandling, environment: var3
+    var13 = function arg0() {
         _fun58089: for (var _fun58089_ip = 0;;) switch (_fun58089_ip) {
             case 0:
                 var1 = arguments[1];
@@ -1204,7 +1204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.loadSubscriptionSkus = var9;
     var2.loadInAppSkus = var8;
     var2.loadSkus = var7;
-    var7 = function() { // Original name: loadUserCountry, environment: var3
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -1218,7 +1218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.purchase = var6;
     var2.subscribe = var5;
     var2.verifyPurchase = var4;
-    var4 = function(arg0) { // Original name: sendPaymentCompleteAnalytics, environment: var3
+    var4 = function arg0() {
         _fun58113: for (var _fun58113_ip = 0;;) switch (_fun58113_ip) {
             case 0:
                 var0 = arg0;
@@ -1253,7 +1253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.sendPaymentCompleteAnalytics = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: updatePendingDowngrade, environment: var3
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun58114: for (var _fun58114_ip = 0;;) switch (_fun58114_ip) {
             case 0:
                 var4 = _closure1_slot7;
@@ -1348,7 +1348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updatePendingDowngrade = var4;
-    var3 = function(arg0) { // Original name: downgradeSubscription, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.purchaseToken;
         var5 = var0.subscriptionId;

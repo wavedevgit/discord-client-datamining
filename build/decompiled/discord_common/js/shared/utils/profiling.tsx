@@ -21,22 +21,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/shared/utils/profiling.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: mark, environment: var1
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var2.mark = var3;
-    var3 = function(arg0, arg1) { // Original name: measure, environment: var1
+    var3 = function arg0, arg1() {
         var0 = undefined;
         return var0;
     };
     var2.measure = var3;
-    var3 = function(arg0) { // Original name: clearMarks, environment: var1
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var2.clearMarks = var3;
-    var1 = function(arg0) { // Original name: clearMeasures, environment: var1
+    var1 = function arg0() {
         var0 = undefined;
         return var0;
     };

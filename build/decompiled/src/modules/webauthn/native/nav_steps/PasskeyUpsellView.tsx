@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/webauthn/native/nav_steps/PasskeyUpsellView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PasskeyUpsellView, environment: var1
+    var1 = function() {
         _fun60566: for (var _fun60566_ip = 0;;) switch (_fun60566_ip) {
             case 0:
                 var14 = _closure1_slot0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var1[var5];
                 var1 = var1[var2];
                 var _closure2_slot2 = var1;
-                var1 = function(arg0) { // Original name: onRegisterSuccess, environment: var20
+                var1 = function arg0() {
                     var4 = _closure2_slot0;
                     var3 = var4.push;
                     var1 = _closure1_slot8;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot3 = var1;
-                var15 = function() { // Original name: onCancel, environment: var20
+                var15 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 11;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var24.bind(var25)(var23);
             case 1208:
                 var12.text = var22;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 11;

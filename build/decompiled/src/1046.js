@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var11[var2](var10);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot0 = var2;
-    var0 = function(arg0, arg1) { // Original name: initUnique, environment: var0
+    var0 = function arg0, arg1() {
         _fun10785: for (var _fun10785_ip = 0;;) switch (_fun10785_ip) {
             case 0:
                 var2 = arg0;

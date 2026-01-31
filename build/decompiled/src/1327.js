@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var0 = undefined;
     var2.lowerCamelCase = var0;
-    var1 = function(arg0) { // Original name: lowerCamelCase, environment: var1
+    var1 = function arg0() {
         _fun14914: for (var _fun14914_ip = 0;;) switch (_fun14914_ip) {
             case 0:
                 var8 = arg0;

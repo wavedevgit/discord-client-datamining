@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114273: for (var _fun114273_ip = 0;;) switch (_fun114273_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: maybeShowUrgentMessageModal, environment: var1
+    var0 = function arg0() {
         _fun114276: for (var _fun114276_ip = 0;;) switch (_fun114276_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: maybeClearUrgentMessage, environment: var1
+    var0 = function arg0() {
         _fun114277: for (var _fun114277_ip = 0;;) switch (_fun114277_ip) {
             case 0:
                 var0 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: UrgentSystemDMManagerBase, environment: var0
+        var2 = function arg0() {
             _fun114279: for (var _fun114279_ip = 0;;) switch (_fun114279_ip) {
                 case 0:
                     var5 = this;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = arg0;
                     var0.handleShowUrgentMessageAlert = var1;
                     var1 = {};
-                    var4 = function() { // Original name: POST_CONNECTION_OPEN, environment: var3
+                    var4 = function() {
                         var2 = _closure1_slot14;
                         var0 = _closure3_slot0;
                         var1 = var0.handleShowUrgentMessageAlert;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.POST_CONNECTION_OPEN = var4;
-                    var3 = function() { // Original name: MESSAGE_CREATE, environment: var3
+                    var3 = function() {
                         var2 = _closure1_slot14;
                         var0 = _closure3_slot0;
                         var1 = var0.handleShowUrgentMessageAlert;

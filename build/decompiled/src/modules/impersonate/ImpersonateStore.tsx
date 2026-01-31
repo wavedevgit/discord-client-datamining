@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun18914: for (var _fun18914_ip = 0;;) switch (_fun18914_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ImpersonateStore, environment: var5
+        var3 = function() {
             _fun18918: for (var _fun18918_ip = 0;;) switch (_fun18918_ip) {
                 case 0:
                     var3 = this;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot10;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasViewingRoles';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot3;
             var1 = 12;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isViewingRoles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18921: for (var _fun18921_ip = 0;;) switch (_fun18921_ip) {
                 case 0:
                     var3 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getViewingRoles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18922: for (var _fun18922_ip = 0;;) switch (_fun18922_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getViewingRolesTimestamp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18923: for (var _fun18923_ip = 0;;) switch (_fun18923_ip) {
                 case 0:
                     var3 = arg0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getData';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot13;
             var0 = arg0;
             var0 = var1[var0];
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFullServerPreview';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18925: for (var _fun18925_ip = 0;;) switch (_fun18925_ip) {
                 case 0:
                     var2 = _closure1_slot13;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isOptInEnabled';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18926: for (var _fun18926_ip = 0;;) switch (_fun18926_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isOnboardingEnabled';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18927: for (var _fun18927_ip = 0;;) switch (_fun18927_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getViewingChannels';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18928: for (var _fun18928_ip = 0;;) switch (_fun18928_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOnboardingResponses';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18929: for (var _fun18929_ip = 0;;) switch (_fun18929_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMemberOptions';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18930: for (var _fun18930_ip = 0;;) switch (_fun18930_ip) {
                 case 0:
                     var1 = _closure1_slot13;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isChannelOptedIn';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun18931: for (var _fun18931_ip = 0;;) switch (_fun18931_ip) {
                 case 0:
                     var2 = this;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isViewingServerShop';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18932: for (var _fun18932_ip = 0;;) switch (_fun18932_ip) {
                 case 0:
                     var4 = arg0;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getImpersonateType';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun18933: for (var _fun18933_ip = 0;;) switch (_fun18933_ip) {
                 case 0:
                     var2 = arg0;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getBackNavigationSection';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun18934: for (var _fun18934_ip = 0;;) switch (_fun18934_ip) {
                 case 0:
                     var3 = arg0;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleImpersonateUpdate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var4 = var0.data;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.IMPERSONATE_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleImpersonateStop, environment: var3
+    var8 = function arg0() {
         _fun18936: for (var _fun18936_ip = 0;;) switch (_fun18936_ip) {
             case 0:
                 var0 = arg0;
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.IMPERSONATE_STOP = var8;
-    var8 = function(arg0) { // Original name: handleGuildRoleDelete, environment: var3
+    var8 = function arg0() {
         _fun18937: for (var _fun18937_ip = 0;;) switch (_fun18937_ip) {
             case 0:
                 var0 = arg0;
@@ -764,7 +764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ROLE_DELETE = var8;
-    var8 = function(arg0) { // Original name: handleUserGuildSettingsChannelUpdateBulk, environment: var3
+    var8 = function arg0() {
         _fun18938: for (var _fun18938_ip = 0;;) switch (_fun18938_ip) {
             case 0:
                 var0 = arg0;
@@ -890,7 +890,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK = var8;
-    var8 = function(arg0) { // Original name: handleOptionSelect, environment: var3
+    var8 = function arg0() {
         _fun18940: for (var _fun18940_ip = 0;;) switch (_fun18940_ip) {
             case 0:
                 var0 = arg0;
@@ -1002,7 +1002,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_ONBOARDING_SELECT_OPTION = var8;
-    var3 = function(arg0) { // Original name: handleGuildMemberUpdateLocal, environment: var3
+    var3 = function arg0() {
         _fun18942: for (var _fun18942_ip = 0;;) switch (_fun18942_ip) {
             case 0:
                 var0 = arg0;

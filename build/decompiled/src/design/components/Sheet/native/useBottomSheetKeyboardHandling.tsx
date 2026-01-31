@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Sheet/native/useBottomSheetKeyboardHandling.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useBottomSheetKeyboardHandling, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.onFocus;
         var _closure2_slot0 = var4;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 case 15:
                     var0 = {};
-                    var3 = function(arg0) { // Original name: onFocus, environment: var1
+                    var3 = function arg0() {
                         _fun47968: for (var _fun47968_ip = 0;;) switch (_fun47968_ip) {
                             case 0:
                                 var1 = _closure2_slot2;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onFocus = var3;
-                    var1 = function(arg0) { // Original name: onBlur, environment: var1
+                    var1 = function arg0() {
                         _fun47969: for (var _fun47969_ip = 0;;) switch (_fun47969_ip) {
                             case 0:
                                 var1 = _closure2_slot2;

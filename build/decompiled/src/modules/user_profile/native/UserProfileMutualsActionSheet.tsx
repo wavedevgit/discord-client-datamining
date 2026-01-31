@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: MutualFriendRow, environment: var3
+    var0 = function arg0() {
         var2 = arg0;
         var0 = var2.mutualFriend;
         var0 = var0.user;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var1 = function(arg0) { // Original name: MutualGuildRow, environment: var3
+    var1 = function arg0() {
         _fun61885: for (var _fun61885_ip = 0;;) switch (_fun61885_ip) {
             case 0:
                 var1 = arg0;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_profile/native/UserProfileMutualsActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: UserProfileMutualsActionSheet, environment: var3
+    var3 = function arg0() {
         _fun61886: for (var _fun61886_ip = 0;;) switch (_fun61886_ip) {
             case 0:
                 var1 = arg0;
@@ -433,14 +433,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var5.UserProfileStackedActionSheetList;
                 var5 = {};
                 var5.data = var14;
-                var14 = function(arg0) { // Original name: keyExtractor, environment: var0
+                var14 = function arg0() {
                     var0 = arg0;
                     var0 = var0.user;
                     var0 = var0.id;
                     return var0;
                 };
                 var5.keyExtractor = var14;
-                var14 = function(arg0) { // Original name: renderItem, environment: var0
+                var14 = function arg0() {
                     var0 = arg0;
                     var6 = var0.item;
                     var _closure3_slot0 = var6;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.mutualFriend = var6;
                     var6 = _closure2_slot1;
                     var1.guildId = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot2;
                         var0 = _closure3_slot0;
                         var0 = var0.user;
@@ -547,14 +547,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7.UserProfileStackedActionSheetList;
                 var7 = {};
                 var7.data = var12;
-                var12 = function(arg0) { // Original name: keyExtractor, environment: var0
+                var12 = function arg0() {
                     var0 = arg0;
                     var0 = var0.guild;
                     var0 = var0.id;
                     return var0;
                 };
                 var7.keyExtractor = var12;
-                var12 = function(arg0) { // Original name: renderItem, environment: var0
+                var12 = function arg0() {
                     var0 = arg0;
                     var6 = var0.item;
                     var _closure3_slot0 = var6;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot0;
                     var1.user = var7;
                     var1.mutualGuild = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot3;
                         var0 = _closure3_slot0;
                         var0 = var0.guild;

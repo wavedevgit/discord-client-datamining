@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = dependencyMap;
             var _closure1_slot0 = var9;
             var _closure1_slot1 = var10;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+            var0 = function arg0, arg1() {
                 _fun86235: for (var _fun86235_ip = 0;;) switch (_fun86235_ip) {
                     case 0:
                         var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+            var0 = function arg0, arg1() {
                 _fun86237: for (var _fun86237_ip = 0;;) switch (_fun86237_ip) {
                     case 0:
                         var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var0;
-            var7 = function() { // Original name: getUseStateFromStoresExecutionWindowThresholdMs, environment: var1
+            var7 = function() {
                 _fun86238: for (var _fun86238_ip = 0;;) switch (_fun86238_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var6 = function() { // Original name: getUseStateFromStoresExecutionTimeWarningThresholdMs, environment: var1
+            var6 = function() {
                 _fun86239: for (var _fun86239_ip = 0;;) switch (_fun86239_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var5 = function() { // Original name: getUseStateFromStoresExecutionCountWarningThreshold, environment: var1
+            var5 = function() {
                 _fun86240: for (var _fun86240_ip = 0;;) switch (_fun86240_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var4 = function() { // Original name: getUseStateFromStoresSpecificHookFilter, environment: var1
+            var4 = function() {
                 _fun86241: for (var _fun86241_ip = 0;;) switch (_fun86241_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var3 = function() { // Original name: getUseStateFromStoresDebuggingEnabled, environment: var1
+            var3 = function() {
                 _fun86242: for (var _fun86242_ip = 0;;) switch (_fun86242_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var0 = function(arg0) { // Original name: hasExceededThreshold, environment: var1
+            var0 = function arg0() {
                 _fun86243: for (var _fun86243_ip = 0;;) switch (_fun86243_ip) {
                     case 0:
                         var4 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var13 = function() { // Original name: flushViolators, environment: var1
+            var13 = function() {
                 _fun86244: for (var _fun86244_ip = 0;;) switch (_fun86244_ip) {
                     case 0:
                         var2 = _closure1_slot12;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = new var18[var8](var17);
             var8 = var8 instanceof Object ? var8 : var11;
             var _closure1_slot10 = var8;
-            var8 = function() { // Original name: printViolators, environment: var1
+            var8 = function() {
                 _fun86245: for (var _fun86245_ip = 0;;) switch (_fun86245_ip) {
                     case 0:
                         var18 = arguments[0];
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = '../discord_common/js/packages/flux/useStateFromStoresPerformanceDebugging.tsx';
             var8 = var9.bind(var10)(var8);
             var2.getUseStateFromStoresExecutionWindowThresholdMs = var7;
-            var7 = function(arg0) { // Original name: setUseStateFromStoresExecutionWindowThresholdMs, environment: var1
+            var7 = function arg0() {
                 _fun86246: for (var _fun86246_ip = 0;;) switch (_fun86246_ip) {
                     case 0:
                         var5 = arg0;
@@ -745,7 +745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.setUseStateFromStoresExecutionWindowThresholdMs = var7;
             var2.getUseStateFromStoresExecutionTimeWarningThresholdMs = var6;
-            var6 = function(arg0) { // Original name: setUseStateFromStoresExecutionTimeWarningThresholdMs, environment: var1
+            var6 = function arg0() {
                 var4 = arg0;
                 _closure1_slot5 = var4;
                 var2 = _closure1_slot0;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.setUseStateFromStoresExecutionTimeWarningThresholdMs = var6;
             var2.getUseStateFromStoresExecutionCountWarningThreshold = var5;
-            var5 = function(arg0) { // Original name: setUseStateFromStoresExecutionCountWarningThreshold, environment: var1
+            var5 = function arg0() {
                 var4 = arg0;
                 _closure1_slot6 = var4;
                 var2 = _closure1_slot0;
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.setUseStateFromStoresExecutionCountWarningThreshold = var5;
-            var5 = function(arg0) { // Original name: setUseStateFromStoresSpecificHookFilter, environment: var1
+            var5 = function arg0() {
                 var4 = arg0;
                 _closure1_slot7 = var4;
                 var2 = _closure1_slot0;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.setUseStateFromStoresSpecificHookFilter = var5;
             var2.getUseStateFromStoresSpecificHookFilter = var4;
             var2.getUseStateFromStoresDebuggingEnabled = var3;
-            var3 = function(arg0) { // Original name: setUseStateFromStoresDebuggingEnabled, environment: var1
+            var3 = function arg0() {
                 _fun86250: for (var _fun86250_ip = 0;;) switch (_fun86250_ip) {
                     case 0:
                         var5 = arg0;
@@ -835,7 +835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.setUseStateFromStoresDebuggingEnabled = var3;
-            var3 = function() { // Original name: getUseStateFromStoresHookInfo, environment: var1
+            var3 = function() {
                 _fun86251: for (var _fun86251_ip = 0;;) switch (_fun86251_ip) {
                     case 0:
                         var0 = _closure1_slot8;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getUseStateFromStoresHookInfo = var3;
-            var1 = function(arg0, arg1) { // Original name: trackGetStateFromStoresPerformance, environment: var1
+            var1 = function arg0, arg1() {
                 _fun86252: for (var _fun86252_ip = 0;;) switch (_fun86252_ip) {
                     case 0:
                         var4 = arg0;

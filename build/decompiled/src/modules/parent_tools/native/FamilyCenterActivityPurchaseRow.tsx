@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.textContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: AvatarDecorationPreviewImage, environment: var1
+    var3 = function arg0() {
         _fun81954: for (var _fun81954_ip = 0;;) switch (_fun81954_ip) {
             case 0:
                 var0 = arg0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: NameplatePreviewImage, environment: var1
+    var3 = function arg0() {
         _fun81955: for (var _fun81955_ip = 0;;) switch (_fun81955_ip) {
             case 0:
                 var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: ProfileEffectPreviewImage, environment: var1
+    var3 = function arg0() {
         _fun81956: for (var _fun81956_ip = 0;;) switch (_fun81956_ip) {
             case 0:
                 var0 = arg0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: SubscriptionPreview, environment: var1
+    var3 = function arg0() {
         _fun81957: for (var _fun81957_ip = 0;;) switch (_fun81957_ip) {
             case 0:
                 var0 = arg0;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: CollectiblePreview, environment: var1
+    var3 = function arg0() {
         _fun81958: for (var _fun81958_ip = 0;;) switch (_fun81958_ip) {
             case 0:
                 var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterActivityPurchaseRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FamilyCenterActivityPurchaseRow, environment: var1
+    var1 = function arg0() {
         _fun81959: for (var _fun81959_ip = 0;;) switch (_fun81959_ip) {
             case 0:
                 var0 = arg0;

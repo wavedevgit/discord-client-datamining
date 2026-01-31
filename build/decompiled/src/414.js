@@ -47,17 +47,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot11 = var3;
-    var3 = function() { // Original name: returnsFalse, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var _closure1_slot12 = var3;
-    var3 = function() { // Original name: returnsTrue, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var _closure1_slot13 = var3;
-    var1 = function(arg0) { // Original name: Switch, environment: var1
+    var1 = function arg0() {
         _fun5826: for (var _fun5826_ip = 0;;) switch (_fun5826_ip) {
             case 0:
                 var1 = arg0;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var12;
             case 459:
                 var4.accessibilityRole = var11;
-                var10 = function(arg0) { // Original name: handleChange, environment: var10
+                var10 = function arg0() {
                     _fun5828: for (var _fun5828_ip = 0;;) switch (_fun5828_ip) {
                         case 0:
                             var0 = arg0;

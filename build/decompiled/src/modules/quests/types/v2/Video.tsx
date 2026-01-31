@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: videoAssetFromServer, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.url;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/quests/types/v2/Video.tsx';
     var4 = var5.bind(var6)(var4);
     var2.videoAssetFromServer = var3;
-    var3 = function(arg0) { // Original name: desktopVideoAssetsFromServer, environment: var1
+    var3 = function arg0() {
         _fun46663: for (var _fun46663_ip = 0;;) switch (_fun46663_ip) {
             case 0:
                 var1 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.desktopVideoAssetsFromServer = var3;
-    var3 = function(arg0) { // Original name: desktopVideoMessagesFromServer, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = arg0;
         var1 = var1.video_title;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.desktopVideoMessagesFromServer = var3;
-    var3 = function(arg0) { // Original name: mobileVideoAssetsFromServer, environment: var1
+    var3 = function arg0() {
         _fun46665: for (var _fun46665_ip = 0;;) switch (_fun46665_ip) {
             case 0:
                 var1 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.mobileVideoAssetsFromServer = var3;
-    var1 = function(arg0) { // Original name: mobileVideoMessagesFromServer, environment: var1
+    var1 = function arg0() {
         var0 = {};
         var1 = arg0;
         var1 = var1.video_title;

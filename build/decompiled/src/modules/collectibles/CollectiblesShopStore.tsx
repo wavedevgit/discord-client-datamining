@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var7
+    var0 = function() {
         _fun42459: for (var _fun42459_ip = 0;;) switch (_fun42459_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var1;
     var1 = null;
     var _closure1_slot8 = var1;
-    var3 = function() { // Original name: handleClose, environment: var7
+    var3 = function() {
         var0 = _closure1_slot6;
         _closure1_slot7 = var0;
         var0 = null;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var7
-        var3 = function() { // Original name: CollectiblesShopStore, environment: var5
+        var3 = function() {
             _fun42464: for (var _fun42464_ip = 0;;) switch (_fun42464_ip) {
                 case 0:
                     var3 = this;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'analyticsLocations';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'analyticsSource';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initialProductSkuId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAnalytics';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = {};
             var2 = _closure1_slot7;
             var0.analyticsLocations = var2;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: COLLECTIBLES_SHOP_OPEN, environment: var7
+    var8 = function arg0() {
         _fun42469: for (var _fun42469_ip = 0;;) switch (_fun42469_ip) {
             case 0:
                 var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.COLLECTIBLES_SHOP_OPEN = var8;
     var1.COLLECTIBLES_SHOP_CLOSE = var3;
-    var7 = function(arg0) { // Original name: COLLECTIBLES_PRODUCT_DETAILS_OPEN, environment: var7
+    var7 = function arg0() {
         _fun42470: for (var _fun42470_ip = 0;;) switch (_fun42470_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MigrationForm, environment: var1
+    var0 = function arg0() {
         _fun115675: for (var _fun115675_ip = 0;;) switch (_fun115675_ip) {
             case 0:
                 var0 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var16.bind(var17)(var15);
                 var6.text = var15;
                 var6.loading = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     _fun115677: for (var _fun115677_ip = 0;;) switch (_fun115677_ip) {
                         case 0:
                             var3 = _closure2_slot5;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: MigrationCheckboxRow, environment: var1
+    var0 = function arg0() {
         _fun115681: for (var _fun115681_ip = 0;;) switch (_fun115681_ip) {
             case 0:
                 var0 = arg0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/action_sheet/MigratePermissionsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MigratePermissionsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun115682: for (var _fun115682_ip = 0;;) switch (_fun115682_ip) {
             case 0:
                 var0 = arg0;

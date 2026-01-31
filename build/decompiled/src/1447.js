@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = {};
     var0.reachabilityHeaders = var3;
-    var3 = function(arg0) { // Original name: reachabilityTest, environment: var2
+    var3 = function arg0() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.reachabilityTest = var3;
-    var2 = function() { // Original name: reachabilityShouldRun, environment: var2
+    var2 = function() {
         var0 = true;
         return var0;
     };

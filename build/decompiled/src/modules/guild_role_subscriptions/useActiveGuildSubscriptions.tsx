@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/useActiveGuildSubscriptions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useActiveGuildSubscriptions, environment: var1
+    var1 = function() {
         _fun83923: for (var _fun83923_ip = 0;;) switch (_fun83923_ip) {
             case 0:
                 var0 = arguments[0];

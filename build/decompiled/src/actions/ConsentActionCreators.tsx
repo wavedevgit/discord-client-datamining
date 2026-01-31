@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: handleRequestSuccess, environment: var1
+    var0 = function arg0() {
         _fun81645: for (var _fun81645_ip = 0;;) switch (_fun81645_ip) {
             case 0:
                 var0 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: handleRequestFailure, environment: var1
+    var0 = function arg0() {
         _fun81646: for (var _fun81646_ip = 0;;) switch (_fun81646_ip) {
             case 0:
                 var0 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/ConsentActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: fetchConsents, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 3;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchConsents = var3;
-    var1 = function(arg0, arg1) { // Original name: setConsents, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 3;

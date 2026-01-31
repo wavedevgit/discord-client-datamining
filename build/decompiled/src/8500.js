@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_utilsTs2(...args){const{value,wait,worklet}=this.__closure;const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);}';
     var2.code = var4;
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: pnpm_utilsTs1, environment: var0
+    var2 = function arg0() {
         _fun68371: for (var _fun68371_ip = 0;;) switch (_fun68371_ip) {
             case 0:
                 var2 = arg0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var4.time = var1;
                 var _closure2_slot2 = var4;
-                var0 = function() { // Original name: pnpm_utilsTs2, environment: var0
+                var0 = function() {
                     _fun68372: for (var _fun68372_ip = 0;;) switch (_fun68372_ip) {
                         case 0:
                             var0 = undefined;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var4 = 'function pnpm_utilsTs3(defaultScrollValue,snapPoints){let snapPoint;if(snapPoints){snapPoint=snapPoints.find(function(offset){return offset>=defaultScrollValue;});}return snapPoint!==null&&snapPoint!==void 0?snapPoint:defaultScrollValue;}';
     var3.code = var4;
-    var0 = function(arg0, arg1) { // Original name: pnpm_utilsTs3, environment: var0
+    var0 = function arg0, arg1() {
         _fun68373: for (var _fun68373_ip = 0;;) switch (_fun68373_ip) {
             case 0:
                 var0 = arg0;

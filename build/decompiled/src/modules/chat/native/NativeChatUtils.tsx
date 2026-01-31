@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: logMissingView, environment: var5
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'FOCUS_ONLY';
     var1[var8] = var4;
     var4 = {};
-    var8 = function(arg0, arg1, arg2) { // Original name: scrollTo, environment: var5
+    var8 = function arg0, arg1, arg2() {
         _fun73405: for (var _fun73405_ip = 0;;) switch (_fun73405_ip) {
             case 0:
                 var8 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.scrollTo = var8;
-    var8 = function(arg0, arg1) { // Original name: scrollToBottom, environment: var5
+    var8 = function arg0, arg1() {
         _fun73406: for (var _fun73406_ip = 0;;) switch (_fun73406_ip) {
             case 0:
                 var5 = arg0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.scrollToBottom = var8;
-    var8 = function(arg0, arg1) { // Original name: scrollToTop, environment: var5
+    var8 = function arg0, arg1() {
         _fun73407: for (var _fun73407_ip = 0;;) switch (_fun73407_ip) {
             case 0:
                 var4 = arg0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.scrollToTop = var8;
-    var8 = function(arg0, arg1, arg2) { // Original name: scrollToRelativeOffset, environment: var5
+    var8 = function arg0, arg1, arg2() {
         _fun73408: for (var _fun73408_ip = 0;;) switch (_fun73408_ip) {
             case 0:
                 var4 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.scrollToRelativeOffset = var8;
-    var8 = function(arg0, arg1, arg2) { // Original name: scrollIntoView, environment: var5
+    var8 = function arg0, arg1, arg2() {
         _fun73409: for (var _fun73409_ip = 0;;) switch (_fun73409_ip) {
             case 0:
                 var7 = arg0;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.scrollIntoView = var8;
-    var8 = function(arg0, arg1) { // Original name: updateRows, environment: var5
+    var8 = function arg0, arg1() {
         _fun73410: for (var _fun73410_ip = 0;;) switch (_fun73410_ip) {
             case 0:
                 var10 = arg0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.updateRows = var8;
-    var8 = function(arg0) { // Original name: clearRows, environment: var5
+    var8 = function arg0() {
         _fun73411: for (var _fun73411_ip = 0;;) switch (_fun73411_ip) {
             case 0:
                 var5 = arg0;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.clearRows = var8;
-    var8 = function(arg0) { // Original name: fadeIn, environment: var5
+    var8 = function arg0() {
         _fun73412: for (var _fun73412_ip = 0;;) switch (_fun73412_ip) {
             case 0:
                 var4 = arg0;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.fadeIn = var8;
-    var5 = function(arg0, arg1) { // Original name: focus, environment: var5
+    var5 = function arg0, arg1() {
         _fun73413: for (var _fun73413_ip = 0;;) switch (_fun73413_ip) {
             case 0:
                 var4 = arg0;

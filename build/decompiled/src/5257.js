@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun47158
             }
         case 147:
-            var3 = function(arg0) { // Original name: listenerCount, environment: var1
+            var3 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = var2.listeners;
                 var0 = arg0;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var4.bind(var5)(var6);
         case 170:
             _closure1_slot2 = var3;
-            var3 = function(arg0) { // Original name: addListener, environment: var1
+            var3 = function arg0() {
                 _fun47160: for (var _fun47160_ip = 0;;) switch (_fun47160_ip) {
                     case 0:
                         var2 = _closure1_slot2;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.addListener = var3;
-            var1 = function() { // Original name: removeAllListeners, environment: var1
+            var1 = function() {
                 var3 = _closure1_slot1;
                 var2 = var3.removeAllListeners;
                 var1 = 'RNCClipboard_TEXT_CHANGED';

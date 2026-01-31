@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var3;
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0) { // Original name: isTimingConfig, environment: var0
+        var0 = function arg0() {
             _fun100650: for (var _fun100650_ip = 0;;) switch (_fun100650_ip) {
                 case 0:
                     var1 = arg0;

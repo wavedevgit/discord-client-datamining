@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileGradientContext.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: UserProfileGradientContextProvider, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var0 = var3.children;
         var1 = null;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.UserProfileGradientContextProvider = var3;
-    var1 = function() { // Original name: useUserProfileGradientContext, environment: var1
+    var1 = function() {
         _fun56995: for (var _fun56995_ip = 0;;) switch (_fun56995_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[1] = var14;
     var11[var13] = var12;
     var3.scope = var11;
-    var10 = function(arg0) { // Original name: handler, environment: var10
+    var10 = function arg0() {
         _fun98258: for (var _fun98258_ip = 0;;) switch (_fun98258_ip) {
             case 0:
                 var0 = arg0;

@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: defaultAreStatesEqual, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1 === var0;
         return var0;
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: useStateFromStores, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun7116: for (var _fun7116_ip = 0;;) switch (_fun7116_ip) {
             case 0:
                 var7 = arg0;
@@ -208,13 +208,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = '../discord_common/js/packages/flux/useStateFromStores.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: statesWillNeverBeEqual, environment: var1
+    var4 = function() {
         var0 = false;
         return var0;
     };
     var2.statesWillNeverBeEqual = var4;
     var2.useStateFromStores = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useStateFromStoresObject, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var5 = _closure1_slot8;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useStateFromStoresObject = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useStateFromStoresArray, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var5 = _closure1_slot8;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

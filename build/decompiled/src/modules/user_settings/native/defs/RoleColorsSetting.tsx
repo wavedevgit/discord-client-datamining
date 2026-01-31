@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var4 = function() { // Original name: useRoleColorSettingValue, environment: var11
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var3 = function(arg0) { // Original name: onRoleColorSettingValueChange, environment: var11
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var3)(var1);
         return var0;
     };
-    var1 = function() { // Original name: useRoleColorSettingOptions, environment: var11
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var7.bind(var0)(var5);
     var6 = var9.createRadio;
     var5 = {};
-    var11 = function() { // Original name: title, environment: var11
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;

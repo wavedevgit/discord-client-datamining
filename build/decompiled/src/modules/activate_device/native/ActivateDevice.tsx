@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.clientId = var6;
                     var5 = var5.scopes;
                     var1.scopes = var5;
-                    var4 = function(arg0) { // Original name: callbackWithoutPost, environment: var4
+                    var4 = function arg0() {
                         var3 = _closure2_slot4;
                         var2 = _closure3_slot0;
                         var1 = undefined;

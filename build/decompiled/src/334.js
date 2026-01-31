@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportDefault;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var1;
-    var7 = function(arg0, arg1, arg2) { // Original name: configureNext, environment: var3
+    var7 = function arg0, arg1, arg2() {
         _fun4945: for (var _fun4945_ip = 0;;) switch (_fun4945_ip) {
             case 0:
                 var5 = arg0;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 62:
                 var2 = false;
                 var _closure2_slot1 = var2;
-                var3 = function() { // Original name: onAnimationComplete, environment: var6
+                var3 = function() {
                     _fun4946: for (var _fun4946_ip = 0;;) switch (_fun4946_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var6 = function(arg0, arg1, arg2) { // Original name: createLayoutAnimation, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var3 = arg1;
         var2 = arg2;
         var0 = {};
@@ -279,7 +279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5 = var6.bind(var8)(var5);
     var1.Properties = var5;
-    var5 = function() { // Original name: checkConfig, environment: var3
+    var5 = function() {
         var0 = global;
         var2 = var0.console;
         var1 = var2.error;
@@ -303,7 +303,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.spring;
     var4 = var5.bind(var7)(var6, var4);
     var1.spring = var4;
-    var3 = function(arg0) { // Original name: setLayoutAnimationEnabled, environment: var3
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };

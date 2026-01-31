@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0, arg1, arg2) { // Original name: insertionIndex, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun39012: for (var _fun39012_ip = 0;;) switch (_fun39012_ip) {
             case 0:
                 var8 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/SortedArrayUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.insertionIndex = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: insert, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var5 = arg0;
         var4 = arg1;
         var2 = _closure1_slot0;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/search/native/components/tabs/pages/placeholders/PlaceholderUtils.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: getAdjustedPlaceholderCount, environment: var1
+    var1 = function arg0() {
         _fun105894: for (var _fun105894_ip = 0;;) switch (_fun105894_ip) {
             case 0:
                 var0 = arg0;

@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = inf;
     var _closure1_slot4 = var3;
     var _closure1_slot5 = var2;
-    var2 = function(arg0) { // Original name: updateEstimate, environment: var0
+    var2 = function arg0() {
         var2 = arg0;
         var1 = var2.forEach;
         var0 = function(arg0) { // Environment: var0
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var2;
-    var2 = function() { // Original name: getInteractionCount, environment: var0
+    var2 = function() {
         _fun10823: for (var _fun10823_ip = 0;;) switch (_fun10823_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getInteractionCount = var2;
-    var0 = function() { // Original name: initInteractionCountPolyfill, environment: var0
+    var0 = function() {
         _fun10824: for (var _fun10824_ip = 0;;) switch (_fun10824_ip) {
             case 0:
                 var0 = global;

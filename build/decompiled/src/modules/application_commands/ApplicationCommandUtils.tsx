@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var _closure1_slot3 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40802: for (var _fun40802_ip = 0;;) switch (_fun40802_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40804: for (var _fun40804_ip = 0;;) switch (_fun40804_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var4 = function(arg0) { // Original name: buildCommand, environment: var1
+    var4 = function arg0() {
         _fun40805: for (var _fun40805_ip = 0;;) switch (_fun40805_ip) {
             case 0:
                 var2 = arg0;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var4;
-    var0 = function(arg0) { // Original name: mapOptions, environment: var1
+    var0 = function arg0() {
         _fun40809: for (var _fun40809_ip = 0;;) switch (_fun40809_ip) {
             case 0:
                 var3 = arg0;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: buildSubCommands, environment: var1
+    var0 = function arg0() {
         _fun40812: for (var _fun40812_ip = 0;;) switch (_fun40812_ip) {
             case 0:
                 var0 = arg0;
@@ -988,7 +988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: hasAccessGivenPerms, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun40815: for (var _fun40815_ip = 0;;) switch (_fun40815_ip) {
             case 0:
                 var1 = arg0;
@@ -1153,7 +1153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/application_commands/ApplicationCommandUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.buildCommand = var4;
-    var4 = function(arg0, arg1) { // Original name: buildApplicationCommands, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot1;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.buildApplicationCommands = var4;
-    var4 = function(arg0) { // Original name: applicationPermissionsList, environment: var1
+    var4 = function arg0() {
         _fun40818: for (var _fun40818_ip = 0;;) switch (_fun40818_ip) {
             case 0:
                 var4 = arg0;
@@ -1236,7 +1236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.applicationPermissionsList = var4;
-    var4 = function(arg0) { // Original name: isSnowflake, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot9;
         var1 = var2.test;
@@ -1246,7 +1246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isSnowflake = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: getMatchingGroupCommands, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg2;
@@ -1310,7 +1310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getMatchingGroupCommands = var4;
-    var4 = function(arg0) { // Original name: getApplicationCommandOptionQueryOptions, environment: var1
+    var4 = function arg0() {
         _fun40823: for (var _fun40823_ip = 0;;) switch (_fun40823_ip) {
             case 0:
                 var4 = arg0;
@@ -1417,7 +1417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getApplicationCommandOptionQueryOptions = var4;
-    var4 = function(arg0) { // Original name: allChannelsSentinel, environment: var1
+    var4 = function arg0() {
         var1 = _closure1_slot1;
         var2 = _closure1_slot3;
         var0 = 11;
@@ -1434,7 +1434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.allChannelsSentinel = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: canUseApplicationCommands, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun40825: for (var _fun40825_ip = 0;;) switch (_fun40825_ip) {
             case 0:
                 var6 = arg0;
@@ -1526,7 +1526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canUseApplicationCommands = var4;
     var2.DISABLED_BY_DEFAULT_PERMISSION_FLAG = var3;
-    var3 = function(arg0) { // Original name: hasAccess, environment: var1
+    var3 = function arg0() {
         _fun40826: for (var _fun40826_ip = 0;;) switch (_fun40826_ip) {
             case 0:
                 var0 = arg0;
@@ -1624,7 +1624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasAccess = var3;
-    var3 = function(arg0) { // Original name: getCommandAttachmentDraftType, environment: var1
+    var3 = function arg0() {
         _fun40827: for (var _fun40827_ip = 0;;) switch (_fun40827_ip) {
             case 0:
                 var3 = arg0;
@@ -1829,7 +1829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCommandAttachmentDraftType = var3;
-    var3 = function(arg0) { // Original name: getCommandTriggerSection, environment: var1
+    var3 = function arg0() {
         _fun40828: for (var _fun40828_ip = 0;;) switch (_fun40828_ip) {
             case 0:
                 var0 = arg0;
@@ -1894,7 +1894,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCommandTriggerSection = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getApplicationCommandSection, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun40829: for (var _fun40829_ip = 0;;) switch (_fun40829_ip) {
             case 0:
                 var3 = arg0;
@@ -1961,7 +1961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getApplicationCommandSection = var3;
-    var3 = function(arg0) { // Original name: extractInteractionDataProps, environment: var1
+    var3 = function arg0() {
         _fun40830: for (var _fun40830_ip = 0;;) switch (_fun40830_ip) {
             case 0:
                 var0 = arg0;
@@ -2055,7 +2055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractInteractionDataProps = var3;
-    var3 = function(arg0) { // Original name: trackCommandSelected, environment: var1
+    var3 = function arg0() {
         _fun40833: for (var _fun40833_ip = 0;;) switch (_fun40833_ip) {
             case 0:
                 var0 = arg0;
@@ -2113,7 +2113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackCommandSelected = var3;
-    var3 = function(arg0) { // Original name: getInitialInteractionMetadata, environment: var1
+    var3 = function arg0() {
         _fun40834: for (var _fun40834_ip = 0;;) switch (_fun40834_ip) {
             case 0:
                 var0 = arg0;
@@ -2141,7 +2141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getInitialInteractionMetadata = var3;
-    var1 = function(arg0, arg1) { // Original name: hasCommandIndexForApp, environment: var1
+    var1 = function arg0, arg1() {
         _fun40835: for (var _fun40835_ip = 0;;) switch (_fun40835_ip) {
             case 0:
                 var0 = arg1;

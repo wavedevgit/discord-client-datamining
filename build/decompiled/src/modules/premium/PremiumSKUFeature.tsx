@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var1 = var6.bind(var0)(var1);
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: PremiumSKUFeature, environment: var5
+    var1 = function arg0, arg1, arg2() {
         var1 = arg1;
         var5 = this;
         var3 = _closure1_slot0;

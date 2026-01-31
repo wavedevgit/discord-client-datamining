@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildDirectoryNicknameUpsell, environment: var1
+    var0 = function arg0() {
         _fun91157: for (var _fun91157_ip = 0;;) switch (_fun91157_ip) {
             case 0:
                 var0 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var14.bind(var15)(var13);
             case 868:
                 var5.error = var12;
-                var12 = function() { // Original name: onFocus, environment: var10
+                var12 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.onFocus = var12;
-                var10 = function() { // Original name: onBlur, environment: var10
+                var10 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryNicknameUpsellModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildDirectoryNicknameUpsellModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot10;
@@ -554,13 +554,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var2)(var5);
         var4 = function() { // Environment: var4
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var2 = var0.guildId;
                 var _closure4_slot0 = var2;
                 var0 = var0.onHide;
                 var _closure4_slot1 = var0;
-                var5 = function() { // Original name: handleClose, environment: var1
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 20;
@@ -595,12 +595,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.getHeaderCloseButton;
                 var3 = var3.bind(var4)(var5);
                 var2.headerLeft = var3;
-                var3 = function() { // Original name: headerTitle, environment: var1
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var3;
-                var1 = function() { // Original name: render, environment: var1
+                var1 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot13;
                     var1 = {};

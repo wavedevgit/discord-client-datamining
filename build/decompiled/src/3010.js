@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24347: for (var _fun24347_ip = 0;;) switch (_fun24347_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var1 = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.';
                 var0 = var1.split;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var8.split;
                 var7 = var7.bind(var8)(var6);
                 var1.months = var7;
-                var7 = function(arg0, arg1) { // Original name: monthsShort, environment: var4
+                var7 = function arg0, arg1() {
                     _fun24349: for (var _fun24349_ip = 0;;) switch (_fun24349_ip) {
                         case 0:
                             var4 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1.longDateFormat = var0;
                 var0 = {};
-                var5 = function() { // Original name: sameDay, environment: var4
+                var5 = function() {
                     _fun24350: for (var _fun24350_ip = 0;;) switch (_fun24350_ip) {
                         case 0:
                             var1 = this;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.sameDay = var5;
-                var5 = function() { // Original name: nextDay, environment: var4
+                var5 = function() {
                     _fun24351: for (var _fun24351_ip = 0;;) switch (_fun24351_ip) {
                         case 0:
                             var1 = this;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.nextDay = var5;
-                var5 = function() { // Original name: nextWeek, environment: var4
+                var5 = function() {
                     _fun24352: for (var _fun24352_ip = 0;;) switch (_fun24352_ip) {
                         case 0:
                             var1 = this;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.nextWeek = var5;
-                var5 = function() { // Original name: lastDay, environment: var4
+                var5 = function() {
                     _fun24353: for (var _fun24353_ip = 0;;) switch (_fun24353_ip) {
                         case 0:
                             var1 = this;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.lastDay = var5;
-                var4 = function() { // Original name: lastWeek, environment: var4
+                var4 = function() {
                     _fun24354: for (var _fun24354_ip = 0;;) switch (_fun24354_ip) {
                         case 0:
                             var1 = this;

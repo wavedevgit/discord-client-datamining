@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildFolderSettingsScene, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var18 = var0.name;
         var17 = var0.onNameChange;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildFolderSettingsModal, environment: var1
+    var1 = function arg0() {
         _fun100807: for (var _fun100807_ip = 0;;) switch (_fun100807_ip) {
             case 0:
                 var0 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot0;
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot3;
-                    var1 = function(arg0, arg1, arg2) { // Original name: updateFolder, environment: var0
+                    var1 = function arg0, arg1, arg2() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var0 = arg1;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = {};
                     var2 = _closure2_slot1;
                     var5.name = var2;
-                    var2 = function(arg0) { // Original name: onNameChange, environment: var0
+                    var2 = function arg0() {
                         var2 = _closure2_slot2;
                         var1 = undefined;
                         var0 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.onNameChange = var2;
                     var2 = _closure2_slot3;
                     var5.color = var2;
-                    var2 = function(arg0) { // Original name: onColorChange, environment: var0
+                    var2 = function arg0() {
                         var2 = _closure2_slot4;
                         var1 = undefined;
                         var0 = arg0;
@@ -369,14 +369,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = _closure2_slot5;
                     var7 = _closure2_slot6;
                     var6 = _closure2_slot7;
-                    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getScreens, environment: var0
+                    var1 = function arg0, arg1, arg2, arg3() {
                         _fun100814: for (var _fun100814_ip = 0;;) switch (_fun100814_ip) {
                             case 0:
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var0 = {};
                                 var2 = {};
-                                var3 = function() { // Original name: render, environment: var1
+                                var3 = function() {
                                     var3 = _closure1_slot7;
                                     var2 = _closure1_slot9;
                                     var1 = {};

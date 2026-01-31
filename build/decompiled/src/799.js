@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun8573
             }
         case 54:
-            var3 = function(arg0, arg1) { // Original name: is, environment: var1
+            var3 = function arg0, arg1() {
                 _fun8574: for (var _fun8574_ip = 0;;) switch (_fun8574_ip) {
                     case 0:
                         var1 = arg0;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = function() { // Environment: var3
                             _fun8576: for (var _fun8576_ip = 0;;) switch (_fun8576_ip) {
                                 case 0:
-                                    var0 = function(arg0) { // Original name: memoizedSelector, environment: var2
+                                    var0 = function arg0() {
                                         _fun8577: for (var _fun8577_ip = 0;;) switch (_fun8577_ip) {
                                             case 0:
                                                 var3 = arg0;

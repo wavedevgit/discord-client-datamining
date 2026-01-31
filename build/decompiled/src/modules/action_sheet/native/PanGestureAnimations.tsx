@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var3;
     var _closure1_slot5 = var1;
     var1 = function() { // Environment: var6
-        var0 = function(arg0, arg1) { // Original name: getNearestValue, environment: var0
+        var0 = function arg0, arg1() {
             _fun91417: for (var _fun91417_ip = 0;;) switch (_fun91417_ip) {
                 case 0:
                     var6 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 57:
                     _closure3_slot1 = var4;
                     var2 = function() { // Environment: var1
-                        var0 = function(arg0, arg1) { // Original name: getSortedByMeasure, environment: var0
+                        var0 = function arg0, arg1() {
                             var1 = arg1;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var3;
     var _closure1_slot7 = var1;
     var1 = function() { // Environment: var6
-        var0 = function(arg0, arg1, arg2) { // Original name: withPanGestureSpring, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun91423: for (var _fun91423_ip = 0;;) switch (_fun91423_ip) {
                 case 0:
                     var0 = arg2;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var7;
     var _closure1_slot9 = var1;
     var1 = function() { // Environment: var6
-        var0 = function(arg0, arg1) { // Original name: withPanGestureTiming, environment: var0
+        var0 = function arg0, arg1() {
             _fun91425: for (var _fun91425_ip = 0;;) switch (_fun91425_ip) {
                 case 0:
                     var3 = arg1;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/action_sheet/native/PanGestureAnimations.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function(arg0) { // Original name: usePanGesture, environment: var6
+    var6 = function arg0() {
         _fun91426: for (var _fun91426_ip = 0;;) switch (_fun91426_ip) {
             case 0:
                 var1 = arg0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.Pan;
                 var4 = var1.bind(var2)();
                 var2 = var4.onStart;
-                var1 = function(arg0) { // Original name: N, environment: var0
+                var1 = function arg0() {
                     _fun91427: for (var _fun91427_ip = 0;;) switch (_fun91427_ip) {
                         case 0:
                             var3 = _closure2_slot10;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.__initData = var6;
                 var4 = var2.bind(var4)(var1);
                 var2 = var4.onChange;
-                var1 = function(arg0) { // Original name: C, environment: var0
+                var1 = function arg0() {
                     _fun91428: for (var _fun91428_ip = 0;;) switch (_fun91428_ip) {
                         case 0:
                             var3 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.__initData = var6;
                 var4 = var2.bind(var4)(var1);
                 var2 = var4.onEnd;
-                var1 = function(arg0, arg1) { // Original name: T, environment: var0
+                var1 = function arg0, arg1() {
                     _fun91429: for (var _fun91429_ip = 0;;) switch (_fun91429_ip) {
                         case 0:
                             var3 = _closure2_slot10;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.__initData = var6;
                 var2 = var2.bind(var4)(var1);
                 var1 = var2.onFinalize;
-                var0 = function() { // Original name: S, environment: var0
+                var0 = function() {
                     _fun91430: for (var _fun91430_ip = 0;;) switch (_fun91430_ip) {
                         case 0:
                             var2 = _closure2_slot9;

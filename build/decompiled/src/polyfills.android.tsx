@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var4 = var4.String;
     var4 = var4.prototype;
-    var1 = function() { // Original name: toLocaleLowerCase, environment: var1
+    var1 = function() {
         _fun96783: for (var _fun96783_ip = 0;;) switch (_fun96783_ip) {
             case 0:
                 var3 = this;

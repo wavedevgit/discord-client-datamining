@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun66649: for (var _fun66649_ip = 0;;) switch (_fun66649_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.Chi = var0;
     var2.Maj = var0;
     var2.HashMD = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: Chi, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = arg0;
         var1 = arg1;
         var1 = var0 & var1;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.Chi = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: Maj, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var2 = arg1;
         var0 = arg2;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.Hash;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: HashMD, environment: var5
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun66655: for (var _fun66655_ip = 0;;) switch (_fun66655_ip) {
                 case 0:
                     var5 = arg0;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'update';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: update, environment: var5
+        var0 = function arg0() {
             _fun66656: for (var _fun66656_ip = 0;;) switch (_fun66656_ip) {
                 case 0:
                     var0 = this;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'digestInto';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: digestInto, environment: var5
+        var6 = function arg0() {
             _fun66657: for (var _fun66657_ip = 0;;) switch (_fun66657_ip) {
                 case 0:
                     var4 = arg0;
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'digest';
         var4.key = var6;
-        var6 = function() { // Original name: digest, environment: var5
+        var6 = function() {
             var2 = this;
             var4 = var2.buffer;
             var3 = var2.outputLen;
@@ -518,7 +518,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_cloneInto';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: _cloneInto, environment: var5
+        var5 = function arg0() {
             _fun66659: for (var _fun66659_ip = 0;;) switch (_fun66659_ip) {
                 case 0:
                     var0 = arg0;

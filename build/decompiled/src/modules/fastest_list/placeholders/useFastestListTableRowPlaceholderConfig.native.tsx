@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/fastest_list/placeholders/useFastestListTableRowPlaceholderConfig.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useFastestListTableRowPlaceholderConfig, environment: var3
+    var3 = function() {
         var3 = _closure1_slot4;
         var2 = undefined;
         var4 = var3.bind(var2)();

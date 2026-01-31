@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var12;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var13;
-    var6 = function() { // Original name: useYouBarBottomMargin, environment: var5
+    var6 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.YOU_BAR_MARGIN = var8;
     var2.YOU_BAR_FLOATING_OFFSET_MINIMUM = var7;
     var2.useYouBarBottomMargin = var6;
-    var5 = function() { // Original name: useYouBarTotalHeight, environment: var5
+    var5 = function() {
         _fun100723: for (var _fun100723_ip = 0;;) switch (_fun100723_ip) {
             case 0:
                 var2 = arguments[0];

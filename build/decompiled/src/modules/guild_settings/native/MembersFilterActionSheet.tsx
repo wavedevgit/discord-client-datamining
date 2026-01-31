@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/native/MembersFilterActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MembersFilterActionSheet, environment: var1
+    var1 = function arg0() {
         _fun104900: for (var _fun104900_ip = 0;;) switch (_fun104900_ip) {
             case 0:
                 var0 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7.children = var11;
                             var7 = var3.bind(var0)(var2, var7);
                             var4.label = var7;
-                            var6 = function() { // Original name: onPress, environment: var6
+                            var6 = function() {
                                 var2 = _closure2_slot4;
                                 var0 = _closure3_slot0;
                                 var1 = var0.id;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.BottomSheetFlatList;
                 var6 = {};
                 var6.data = var12;
-                var9 = function(arg0) { // Original name: keyExtractor, environment: var9
+                var9 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: stiffnessFromOrigamiValue, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var0 = 30;
         var1 = var1 - var0;
@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: dampingFromOrigamiValue, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var0 = 8;
         var1 = var1 - var0;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0, arg1) { // Original name: fromOrigamiTensionAndFriction, environment: var0
+    var2 = function arg0, arg1() {
         var0 = {};
         var4 = _closure1_slot0;
         var3 = undefined;
@@ -45,8 +45,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.fromOrigamiTensionAndFriction = var2;
-    var0 = function(arg0, arg1) { // Original name: fromBouncinessAndSpeed, environment: var0
-        var7 = function(arg0, arg1, arg2) { // Original name: normalize, environment: var0
+    var0 = function arg0, arg1() {
+        var7 = function arg0, arg1, arg2() {
             var0 = arg0;
             var2 = 0;
             var1 = var0 - var2;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var1 / var0;
             return var0;
         };
-        var6 = function(arg0, arg1, arg2) { // Original name: projectNormal, environment: var0
+        var6 = function arg0, arg1, arg2() {
             var1 = arg1;
             var0 = arg2;
             var2 = var0 - var1;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = 0.5;
         var1 = 200;
         var5 = var6.bind(var3)(var5, var2, var1);
-        var1 = function(arg0) { // Original name: b3Nobounce, environment: var0
+        var1 = function arg0() {
             _fun5515: for (var _fun5515_ip = 0;;) switch (_fun5515_ip) {
                 case 0:
                     var4 = arg0;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2 = var1.bind(var3)(var5);
-        var1 = function(arg0, arg1, arg2) { // Original name: quadraticOutInterpolation, environment: var0
+        var1 = function arg0, arg1, arg2() {
             var0 = arg0;
             var1 = 2;
             var1 = var1 * var0;

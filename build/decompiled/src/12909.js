@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = function(arg0, arg1, arg2) { // Original name: notifyEventProcessors, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun99367: for (var _fun99367_ip = 0;;) switch (_fun99367_ip) {
             case 0:
                 var3 = undefined;

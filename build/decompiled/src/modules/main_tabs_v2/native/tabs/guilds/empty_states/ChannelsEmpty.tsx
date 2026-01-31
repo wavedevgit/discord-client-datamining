@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.bind(var9)(var6);
     var _closure1_slot11 = var6;
     var6 = var7.memo;
-    var1 = function(arg0) { // Original name: ChannelsEmpty, environment: var1
+    var1 = function arg0() {
         _fun102778: for (var _fun102778_ip = 0;;) switch (_fun102778_ip) {
             case 0:
                 var1 = arg0;

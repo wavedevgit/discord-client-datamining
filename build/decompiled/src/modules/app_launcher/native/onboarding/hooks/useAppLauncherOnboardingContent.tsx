@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun90309: for (var _fun90309_ip = 0;;) switch (_fun90309_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun90311: for (var _fun90311_ip = 0;;) switch (_fun90311_ip) {
             case 0:
                 var3 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useAppLauncherOnboardingContent, environment: var1
+    var1 = function arg0() {
         _fun90312: for (var _fun90312_ip = 0;;) switch (_fun90312_ip) {
             case 0:
                 var0 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4 = var9.bind(var10)(var8, var4);
                 var2.channel = var4;
-                var1 = function(arg0) { // Original name: useHasUsedActivities, environment: var1
+                var1 = function arg0() {
                     _fun90313: for (var _fun90313_ip = 0;;) switch (_fun90313_ip) {
                         case 0:
                             var0 = arg0;

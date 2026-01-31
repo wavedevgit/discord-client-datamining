@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useMemo;
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1) { // Original name: useAndroidRippleForView, environment: var1
+    var1 = function arg0, arg1() {
         _fun5802: for (var _fun5802_ip = 0;;) switch (_fun5802_ip) {
             case 0:
                 var2 = arg0;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3;
                         case 187:
                             var0.viewProps = var2;
-                            var2 = function(arg0) { // Original name: onPressIn, environment: var1
+                            var2 = function arg0() {
                                 _fun5804: for (var _fun5804_ip = 0;;) switch (_fun5804_ip) {
                                     case 0:
                                         var8 = arg0;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var0.onPressIn = var2;
-                            var2 = function(arg0) { // Original name: onPressMove, environment: var1
+                            var2 = function arg0() {
                                 _fun5805: for (var _fun5805_ip = 0;;) switch (_fun5805_ip) {
                                     case 0:
                                         var5 = arg0;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var0.onPressMove = var2;
-                            var1 = function(arg0) { // Original name: onPressOut, environment: var1
+                            var1 = function arg0() {
                                 _fun5806: for (var _fun5806_ip = 0;;) switch (_fun5806_ip) {
                                     case 0:
                                         var0 = _closure2_slot0;

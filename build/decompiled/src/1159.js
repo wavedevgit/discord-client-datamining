@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var4;
-    var6 = function() { // Original name: getDefaultIdleNavigationSpanOptions, environment: var1
+    var6 = function() {
         var0 = {
             'name': null,
             'op': 'navigation',
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var6;
-    var5 = function(arg0) { // Original name: isSentryInteractionSpan, environment: var1
+    var5 = function arg0() {
         _fun12611: for (var _fun12611_ip = 0;;) switch (_fun12611_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var5;
-    var3 = function(arg0) { // Original name: clearActiveSpanFromScope, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot6;
         var0 = arg0;
         var0 = delete var0[var1];
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'finalTimeout': 600000
     };
     var _closure1_slot4 = var8;
-    var7 = function(arg0, arg1) { // Original name: startIdleSpan, environment: var1
+    var7 = function arg0, arg1() {
         _fun12613: for (var _fun12613_ip = 0;;) switch (_fun12613_ip) {
             case 0:
                 var4 = arg0;
@@ -206,7 +206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var4;
     var2.DEFAULT_NAVIGATION_SPAN_NAME = var9;
     var2.defaultIdleOptions = var8;
-    var8 = function(arg0) { // Original name: startIdleNavigationSpan, environment: var1
+    var8 = function arg0() {
         _fun12614: for (var _fun12614_ip = 0;;) switch (_fun12614_ip) {
             case 0:
                 var5 = undefined;
@@ -440,7 +440,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isSentryInteractionSpan = var5;
     var2.SCOPE_SPAN_FIELD = var4;
     var2.clearActiveSpanFromScope = var3;
-    var3 = function(arg0) { // Original name: addDefaultOpForSpanFrom, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.on;
         var1 = 'spanStart';
@@ -485,7 +485,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.SPAN_THREAD_NAME_MAIN = var3;
     var3 = 'javascript';
     var2.SPAN_THREAD_NAME_JAVASCRIPT = var3;
-    var3 = function(arg0) { // Original name: addThreadInfoToSpan, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.on;
         var1 = 'spanStart';
@@ -535,7 +535,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.addThreadInfoToSpan = var3;
-    var1 = function(arg0) { // Original name: setMainThreadInfo, environment: var1
+    var1 = function arg0() {
         _fun12619: for (var _fun12619_ip = 0;;) switch (_fun12619_ip) {
             case 0:
                 var0 = arg0;

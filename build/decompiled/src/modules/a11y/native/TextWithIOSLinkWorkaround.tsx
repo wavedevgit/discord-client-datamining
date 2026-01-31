@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: findLinks, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot2;
         var3 = var1.Children;
         var2 = var3.toArray;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/a11y/native/TextWithIOSLinkWorkaround.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TextWithIOSLinkWorkaround, environment: var1
+    var1 = function arg0() {
         _fun47509: for (var _fun47509_ip = 0;;) switch (_fun47509_ip) {
             case 0:
                 var3 = arg0;

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationSafetyToolsWarningForChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useInappropriateConversationSafetyToolsWarningForChannel, environment: var1
+    var1 = function arg0() {
         _fun71969: for (var _fun71969_ip = 0;;) switch (_fun71969_ip) {
             case 0:
                 var6 = _closure1_slot0;

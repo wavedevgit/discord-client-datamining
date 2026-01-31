@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0) { // Original name: _onElementTiming, environment: var1
+    var3 = function arg0() {
         _fun10893: for (var _fun10893_ip = 0;;) switch (_fun10893_ip) {
             case 0:
                 var0 = arg0;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var3;
     var2._onElementTiming = var3;
-    var1 = function() { // Original name: startTrackingElementTiming, environment: var1
+    var1 = function() {
         _fun10896: for (var _fun10896_ip = 0;;) switch (_fun10896_ip) {
             case 0:
                 var2 = _closure1_slot0;

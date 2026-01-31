@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot2 = var2;
             var2 = 'MobileFeedback';
             var _closure1_slot3 = var2;
-            var3 = function() { // Original name: _getClientIntegration, environment: var0
+            var3 = function() {
                 _fun12336: for (var _fun12336_ip = 0;;) switch (_fun12336_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var _closure1_slot4 = var3;
             var1.MOBILE_FEEDBACK_INTEGRATION_NAME = var2;
-            var2 = function() { // Original name: feedbackIntegration, environment: var0
+            var2 = function() {
                 _fun12337: for (var _fun12337_ip = 0;;) switch (_fun12337_ip) {
                     case 0:
                         var9 = undefined;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.feedbackIntegration = var2;
-            var2 = function() { // Original name: getFeedbackOptions, environment: var0
+            var2 = function() {
                 _fun12338: for (var _fun12338_ip = 0;;) switch (_fun12338_ip) {
                     case 0:
                         var1 = _closure1_slot4;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getFeedbackOptions = var2;
-            var2 = function() { // Original name: getFeedbackButtonOptions, environment: var0
+            var2 = function() {
                 _fun12339: for (var _fun12339_ip = 0;;) switch (_fun12339_ip) {
                     case 0:
                         var1 = _closure1_slot4;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getFeedbackButtonOptions = var2;
-            var2 = function() { // Original name: getScreenshotButtonOptions, environment: var0
+            var2 = function() {
                 _fun12340: for (var _fun12340_ip = 0;;) switch (_fun12340_ip) {
                     case 0:
                         var1 = _closure1_slot4;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getScreenshotButtonOptions = var2;
-            var2 = function() { // Original name: getColorScheme, environment: var0
+            var2 = function() {
                 _fun12341: for (var _fun12341_ip = 0;;) switch (_fun12341_ip) {
                     case 0:
                         var0 = _closure1_slot4;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getColorScheme = var2;
-            var2 = function() { // Original name: getFeedbackLightTheme, environment: var0
+            var2 = function() {
                 _fun12342: for (var _fun12342_ip = 0;;) switch (_fun12342_ip) {
                     case 0:
                         var1 = _closure1_slot4;
@@ -353,7 +353,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getFeedbackLightTheme = var2;
-            var0 = function() { // Original name: getFeedbackDarkTheme, environment: var0
+            var0 = function() {
                 _fun12343: for (var _fun12343_ip = 0;;) switch (_fun12343_ip) {
                     case 0:
                         var1 = _closure1_slot4;

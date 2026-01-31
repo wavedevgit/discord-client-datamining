@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: getDefaultTextState, environment: var1
+    var0 = function() {
         var0 = {};
         var1 = '';
         var0.validatedText = var1;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: ErrorMessage, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.errorMessage;
         var1 = _closure1_slot13;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.t;
                 var11 = var10["x++KN9"];
                 var10 = {};
-                var14 = function(arg0, arg1) { // Original name: usernameHook, environment: var14
+                var14 = function arg0, arg1() {
                     _fun96185: for (var _fun96185_ip = 0;;) switch (_fun96185_ip) {
                         case 0:
                             var4 = _closure1_slot11;
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var5 = new Array(0);
                 var25 = var10.bind(var7)(var6, var5);
-                var10 = function() { // Original name: handleSubmitEditing, environment: var24
+                var10 = function() {
                     _fun96190: for (var _fun96190_ip = 0;;) switch (_fun96190_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -1068,7 +1068,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var7.textState = var26;
                 var7.onChangeText = var25;
-                var25 = function(arg0) { // Original name: onSelectionChange, environment: var24
+                var25 = function arg0() {
                     _fun96195: for (var _fun96195_ip = 0;;) switch (_fun96195_ip) {
                         case 0:
                             var0 = arg0;
@@ -1090,7 +1090,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var7.onSelectionChange = var25;
-                var24 = function(arg0) { // Original name: onKeyPress, environment: var24
+                var24 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var1 = var0.key;

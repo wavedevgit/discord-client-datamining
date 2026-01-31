@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: _getRequireWildcardCache, environment: var1
+    var2 = function arg0() {
         _fun85545: for (var _fun85545_ip = 0;;) switch (_fun85545_ip) {
             case 0:
                 var1 = global;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = new var5[var1](var4);
                 var1 = var1 instanceof Object ? var1 : var2;
                 var _closure2_slot1 = var1;
-                var2 = function(arg0) { // Original name: _getRequireWildcardCache, environment: var0
+                var2 = function arg0() {
                     _fun85546: for (var _fun85546_ip = 0;;) switch (_fun85546_ip) {
                         case 0:
                             var0 = arg0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var1 = function(arg0, arg1) { // Original name: _interopRequireWildcard, environment: var1
+    var1 = function arg0, arg1() {
         _fun85547: for (var _fun85547_ip = 0;;) switch (_fun85547_ip) {
             case 0:
                 var1 = arg0;

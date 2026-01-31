@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1, arg2, arg3) { // Original name: RNSound, environment: var4
+        var2 = function arg0, arg1, arg2, arg3() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_createSound';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var1 = function arg0, arg1, arg2() {
             var1 = this;
             var _closure3_slot0 = var1;
             var2 = arg2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'play';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun67666: for (var _fun67666_ip = 0;;) switch (_fun67666_ip) {
                 case 0:
                     var0 = this;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'pause';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun67667: for (var _fun67667_ip = 0;;) switch (_fun67667_ip) {
                 case 0:
                     var0 = this;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'stop';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun67668: for (var _fun67668_ip = 0;;) switch (_fun67668_ip) {
                 case 0:
                     var0 = this;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'release';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun67669: for (var _fun67669_ip = 0;;) switch (_fun67669_ip) {
                 case 0:
                     var1 = this;
@@ -231,13 +231,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'volume';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._volume;
             return var0;
         };
         var0.get = var5;
-        var5 = function(arg0) { // Original name: set, environment: var4
+        var5 = function arg0() {
             _fun67671: for (var _fun67671_ip = 0;;) switch (_fun67671_ip) {
                 case 0:
                     var3 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'duration';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._duration;
             return var0;
@@ -274,13 +274,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'numberOfLoops';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._numberOfLoops;
             return var0;
         };
         var0.get = var5;
-        var4 = function(arg0) { // Original name: set, environment: var4
+        var4 = function arg0() {
             _fun67674: for (var _fun67674_ip = 0;;) switch (_fun67674_ip) {
                 case 0:
                     var3 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1, arg2, arg3) { // Original name: MobileAudioSound, environment: var4
+        var2 = function arg0, arg1, arg2, arg3() {
             var2 = this;
             var4 = _closure1_slot2;
             var3 = _closure2_slot0;
@@ -413,13 +413,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'volume';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0._volume;
             return var0;
         };
         var0.get = var1;
-        var1 = function(arg0) { // Original name: set, environment: var4
+        var1 = function arg0() {
             var1 = arg0;
             var2 = this;
             var _closure3_slot0 = var1;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'loop';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.ensureSound;
             var2 = var0.bind(var1)();
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'play';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.ensureSound;
             var2 = var0.bind(var1)();
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'playWithListener';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var1 = global;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'pause';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun67689: for (var _fun67689_ip = 0;;) switch (_fun67689_ip) {
                 case 0:
                     var0 = this;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'stop';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.destroyAudio;
             var0 = var0.bind(var1)();
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'destroyAudio';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun67692: for (var _fun67692_ip = 0;;) switch (_fun67692_ip) {
                 case 0:
                     var1 = this;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'ensureSound';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun67694: for (var _fun67694_ip = 0;;) switch (_fun67694_ip) {
                 case 0:
                     var0 = this;

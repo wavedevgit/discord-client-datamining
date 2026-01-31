@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: getBaseApiEndpoint, environment: var0
+    var2 = function arg0() {
         _fun9229: for (var _fun9229_ip = 0;;) switch (_fun9229_ip) {
             case 0:
                 var0 = arg0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0, arg1, arg2) { // Original name: getEnvelopeEndpointWithUrlEncodedAuth, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun9230: for (var _fun9230_ip = 0;;) switch (_fun9230_ip) {
             case 0:
                 var3 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getEnvelopeEndpointWithUrlEncodedAuth = var2;
-    var0 = function(arg0, arg1) { // Original name: getReportDialogEndpoint, environment: var0
+    var0 = function arg0, arg1() {
         _fun9231: for (var _fun9231_ip = 0;;) switch (_fun9231_ip) {
             case 0:
                 var19 = arg1;

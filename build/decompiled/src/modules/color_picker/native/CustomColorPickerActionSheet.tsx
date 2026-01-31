@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SuggestedColors, environment: var1
+    var0 = function arg0() {
         _fun79773: for (var _fun79773_ip = 0;;) switch (_fun79773_ip) {
             case 0:
                 var0 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot1;
                     var5 = var8 === var5;
                     var1.selected = var5;
-                    var0 = function() { // Original name: onSelect, environment: var0
+                    var0 = function() {
                         _fun79775: for (var _fun79775_ip = 0;;) switch (_fun79775_ip) {
                             case 0:
                                 var2 = _closure2_slot0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/color_picker/native/CustomColorPickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CustomColorPickerActionSheet, environment: var1
+    var1 = function arg0() {
         _fun79776: for (var _fun79776_ip = 0;;) switch (_fun79776_ip) {
             case 0:
                 var1 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.concat;
                 var22 = var1.bind(var2)(var4);
             case 342:
-                var1 = function(arg0) { // Original name: updateInputHexValueFromHsv, environment: var11
+                var1 = function arg0() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 9;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var20.bind(var21)(var15);
                 var7.accessibilityLabel = var15;
                 var7.value = var18;
-                var15 = function(arg0) { // Original name: onChange, environment: var11
+                var15 = function arg0() {
                     _fun79782: for (var _fun79782_ip = 0;;) switch (_fun79782_ip) {
                         case 0:
                             var1 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var21.uniq;
                 var20 = var20.bind(var21)(var22);
                 var9.suggestedColors = var20;
-                var20 = function(arg0) { // Original name: onSelect, environment: var11
+                var20 = function arg0() {
                     var4 = arg0;
                     var7 = _closure2_slot2;
                     var3 = _closure1_slot0;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.hue = var14;
                 var8.saturation = var13;
                 var8.value = var12;
-                var11 = function() { // Original name: onPanFinalize, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 8;

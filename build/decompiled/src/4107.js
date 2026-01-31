@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isPPM = var0;
     var2.isPSD = var0;
     var2.isWEBP = var0;
-    var3 = function(arg0) { // Original name: isAVIF, environment: var1
+    var3 = function arg0() {
         _fun37751: for (var _fun37751_ip = 0;;) switch (_fun37751_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isAVIF = var3;
-    var3 = function(arg0) { // Original name: isBMP, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isBMP = var3;
-    var3 = function(arg0) { // Original name: isBPG, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isBPG = var3;
-    var3 = function(arg0) { // Original name: isCR2, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isCR2 = var3;
-    var3 = function(arg0) { // Original name: isEXR, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isEXR = var3;
-    var3 = function(arg0) { // Original name: isGIF, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isGIF = var3;
-    var3 = function(arg0) { // Original name: isHEIC, environment: var1
+    var3 = function arg0() {
         _fun37757: for (var _fun37757_ip = 0;;) switch (_fun37757_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -203,7 +203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isHEIC = var3;
-    var3 = function(arg0) { // Original name: isICO, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isICO = var3;
-    var3 = function(arg0) { // Original name: isJPEG, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isJPEG = var3;
-    var3 = function(arg0) { // Original name: isPBM, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPBM = var3;
-    var3 = function(arg0) { // Original name: isPGM, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPGM = var3;
-    var3 = function(arg0) { // Original name: isPNG, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -303,7 +303,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPNG = var3;
-    var3 = function(arg0) { // Original name: isPPM, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -323,7 +323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPPM = var3;
-    var3 = function(arg0) { // Original name: isPSD, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -343,7 +343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isPSD = var3;
-    var1 = function(arg0) { // Original name: isWEBP, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;

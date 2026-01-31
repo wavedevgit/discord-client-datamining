@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.ToastContainer = var3;
-    var3 = function() { // Original name: PictureInPictureGlobalContainer, environment: var1
+    var3 = function() {
         _fun109575: for (var _fun109575_ip = 0;;) switch (_fun109575_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.PictureInPictureGlobalContainer = var3;
-    var3 = function() { // Original name: useAppKeyCommands, environment: var1
+    var3 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.yYsRlD;
                     var0 = var2.bind(var3)(var0);
                     var1.discoverabilityTitle = var0;
-                    var0 = function() { // Original name: onKeyCommand, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 13;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAppKeyCommands = var3;
-    var3 = function() { // Original name: useUpsellManager, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useUpsellManager = var3;
-    var1 = function() { // Original name: useScreenReaderEnabled, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0

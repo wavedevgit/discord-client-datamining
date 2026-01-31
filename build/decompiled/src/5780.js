@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var3 = var3.add;
     var _closure1_slot1 = var3;
-    var3 = function(arg0) { // Original name: forUIKit, environment: var1
+    var3 = function arg0() {
         _fun51117: for (var _fun51117_ip = 0;;) switch (_fun51117_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forUIKit = var3;
-    var3 = function(arg0) { // Original name: forFade, environment: var1
+    var3 = function arg0() {
         _fun51118: for (var _fun51118_ip = 0;;) switch (_fun51118_ip) {
             case 0:
                 var0 = arg0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forFade = var3;
-    var3 = function(arg0) { // Original name: forSlideLeft, environment: var1
+    var3 = function arg0() {
         _fun51119: for (var _fun51119_ip = 0;;) switch (_fun51119_ip) {
             case 0:
                 var0 = arg0;
@@ -401,7 +401,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forSlideLeft = var3;
-    var3 = function(arg0) { // Original name: forSlideRight, environment: var1
+    var3 = function arg0() {
         _fun51120: for (var _fun51120_ip = 0;;) switch (_fun51120_ip) {
             case 0:
                 var0 = arg0;
@@ -493,7 +493,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forSlideRight = var3;
-    var3 = function(arg0) { // Original name: forSlideUp, environment: var1
+    var3 = function arg0() {
         _fun51121: for (var _fun51121_ip = 0;;) switch (_fun51121_ip) {
             case 0:
                 var0 = arg0;
@@ -566,7 +566,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forSlideUp = var3;
-    var1 = function() { // Original name: forNoAnimation, environment: var1
+    var1 = function() {
         var0 = {};
         return var0;
     };

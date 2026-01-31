@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/FormEmojiPicker.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormEmojiPicker, environment: var1
+    var1 = function arg0() {
         _fun116848: for (var _fun116848_ip = 0;;) switch (_fun116848_ip) {
             case 0:
                 var2 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var7;
                 var7 = 'link';
                 var0.accessibilityRole = var7;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 14;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = _closure2_slot0;
                     var1.guildId = var5;
-                    var5 = function(arg0) { // Original name: onPressEmoji, environment: var5
+                    var5 = function arg0() {
                         _fun116850: for (var _fun116850_ip = 0;;) switch (_fun116850_ip) {
                             case 0:
                                 var0 = arg0;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: inflate_fast, environment: var0
+    var1 = function arg0, arg1() {
         _fun94824: for (var _fun94824_ip = 0;;) switch (_fun94824_ip) {
             case 0:
                 var6 = arg0;

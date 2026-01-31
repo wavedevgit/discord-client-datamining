@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: handleCreateJoinGuildPress, environment: var3
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var1;
-    var0 = function() { // Original name: _handleCreateJoinGuildPress, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot9 = var4;
     var4 = var7.memo;
-    var3 = function() { // Original name: GuildsBarCreateJoinButton, environment: var3
+    var3 = function() {
         var3 = _closure1_slot8;
         var6 = _closure1_slot1;
         var9 = _closure1_slot2;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var3];
     var3 = var6.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var3 = function() { // Original name: SearchFetchPendingManager, environment: var1
+    var3 = function() {
         var2 = this;
         var _closure2_slot0 = var2;
         var4 = _closure1_slot2;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSearchFetchPendingManager, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 4;

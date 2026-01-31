@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var6[var4];
             var4 = var5.bind(var0)(var4);
             var1.flatten = var4;
-            var4 = function(arg0, arg1) { // Original name: setStyleAttributePreprocessor, environment: var3
+            var4 = function arg0, arg1() {
                 _fun3311: for (var _fun3311_ip = 0;;) switch (_fun3311_ip) {
                     case 0:
                         var3 = arg0;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.setStyleAttributePreprocessor = var4;
-            var3 = function(arg0) { // Original name: create, environment: var3
+            var3 = function arg0() {
                 var0 = arg0;
                 return var0;
             };

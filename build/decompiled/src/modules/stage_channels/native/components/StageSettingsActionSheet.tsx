@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: close, environment: var1
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 11;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/StageSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageSettingsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun53110: for (var _fun53110_ip = 0;;) switch (_fun53110_ip) {
             case 0:
                 var0 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.color = var20;
                 var16 = var19.bind(var4)(var17, var16);
                 var8.leading = var16;
-                var16 = function() { // Original name: onPress, environment: var12
+                var16 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 20;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.color = var22;
                 var20 = var17.bind(var4)(var21, var20);
                 var11.leading = var20;
-                var20 = function() { // Original name: onPress, environment: var12
+                var20 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 22;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.color = var22;
                 var20 = var17.bind(var4)(var21, var20);
                 var11.leading = var20;
-                var20 = function() { // Original name: onPress, environment: var12
+                var20 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var2 = 24;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.color = var21;
                 var17 = var16.bind(var4)(var20, var17);
                 var10.leading = var17;
-                var17 = function() { // Original name: onPress, environment: var12
+                var17 = function() {
                     _fun53119: for (var _fun53119_ip = 0;;) switch (_fun53119_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.source = var15;
                 var13 = var11.bind(var4)(var14, var13);
                 var9.leading = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 27;

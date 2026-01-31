@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot3 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: validateTransformOrigin, environment: var0
+        var0 = function arg0() {
             _fun33971: for (var _fun33971_ip = 0;;) switch (_fun33971_ip) {
                 case 0:
                     var4 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: processTransformOrigin, environment: var0
+        var0 = function arg0() {
             _fun33973: for (var _fun33973_ip = 0;;) switch (_fun33973_ip) {
                 case 0:
                     var7 = arg0;

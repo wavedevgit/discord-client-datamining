@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/read_states/trackAckMessages.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: trackAckMessages, environment: var1
+    var1 = function arg0, arg1() {
         _fun93416: for (var _fun93416_ip = 0;;) switch (_fun93416_ip) {
             case 0:
                 var6 = arg0;

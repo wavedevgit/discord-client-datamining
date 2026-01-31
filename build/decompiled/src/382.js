@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: reduceAnimatedProps, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var0 = global;
         var4 = var0.Object;
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: addListenersToPropsValue, environment: var1
+    var0 = function arg0, arg1() {
         _fun5668: for (var _fun5668_ip = 0;;) switch (_fun5668_ip) {
             case 0:
                 var5 = arg0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: useAnimatedPropsLifecycleWithPrevNodeRef, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot9;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: useAnimatedPropsLifecycleWithCleanupInMicrotask, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot9;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot8 = var4;
     var3 = var3.useRef;
     var _closure1_slot9 = var3;
-    var1 = function(arg0) { // Original name: createAnimatedPropsHook, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var5 = _closure1_slot0;
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var2.shouldUseSetNativePropsInFabric;
         var1 = var1.bind(var2)();
         var _closure2_slot2 = var1;
-        var0 = function(arg0) { // Original name: useAnimatedProps, environment: var0
+        var0 = function arg0() {
             _fun5680: for (var _fun5680_ip = 0;;) switch (_fun5680_ip) {
                 case 0:
                     var4 = arg0;

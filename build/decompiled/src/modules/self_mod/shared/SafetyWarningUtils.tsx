@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/self_mod/shared/SafetyWarningUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1) { // Original name: trackViewedEvent, environment: var1
+    var5 = function arg0, arg1() {
         _fun72263: for (var _fun72263_ip = 0;;) switch (_fun72263_ip) {
             case 0:
                 var0 = arg1;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackViewedEvent = var5;
     var2.ViewNameTypes = var4;
-    var4 = function(arg0) { // Original name: trackNamedViewEvent, environment: var1
+    var4 = function arg0() {
         _fun72264: for (var _fun72264_ip = 0;;) switch (_fun72264_ip) {
             case 0:
                 var0 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackNamedViewEvent = var4;
     var2.CtaEventTypes = var3;
-    var3 = function(arg0) { // Original name: trackCtaEvent, environment: var1
+    var3 = function arg0() {
         _fun72265: for (var _fun72265_ip = 0;;) switch (_fun72265_ip) {
             case 0:
                 var0 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackCtaEvent = var3;
-    var1 = function() { // Original name: getUserIsTeen, environment: var1
+    var1 = function() {
         _fun72266: for (var _fun72266_ip = 0;;) switch (_fun72266_ip) {
             case 0:
                 var1 = _closure1_slot2;

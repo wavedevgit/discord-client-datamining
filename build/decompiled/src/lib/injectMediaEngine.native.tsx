@@ -11,12 +11,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var2.bind(var0)(var1);
     var4 = var5.inject;
     var1 = {};
-    var7 = function() { // Original name: supported, environment: var6
+    var7 = function() {
         var0 = true;
         return var0;
     };
     var1.supported = var7;
-    var7 = function(arg0) { // Original name: supportsFeature, environment: var6
+    var7 = function arg0() {
         var1 = this;
         var0 = var1.getVoiceEngine;
         var2 = var0.bind(var1)();
@@ -26,12 +26,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.supportsFeature = var7;
-    var7 = function() { // Original name: setProcessPriority, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.setProcessPriority = var7;
-    var7 = function() { // Original name: getVoiceEngine, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getVoiceEngine = var7;
-    var6 = function() { // Original name: getVoiceFilters, environment: var6
+    var6 = function() {
         var0 = {};
         return var0;
     };

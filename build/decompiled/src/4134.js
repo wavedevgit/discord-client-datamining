@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'BIG_ENDIAN': 19789,
         'LITTLE_ENDIAN': 18761
     };
-    var2 = function(arg0, arg1) { // Original name: getByteOrder, environment: var2
+    var2 = function arg0, arg1() {
         _fun37914: for (var _fun37914_ip = 0;;) switch (_fun37914_ip) {
             case 0:
                 var3 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildList, environment: var1
+    var0 = function arg0() {
         _fun92065: for (var _fun92065_ip = 0;;) switch (_fun92065_ip) {
             case 0:
                 var0 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var1 = var0.UserProfileStackedActionSheetSectionList;
                 var0 = {};
-                var7 = function(arg0) { // Original name: renderItem, environment: var5
+                var7 = function arg0() {
                     var0 = arg0;
                     var6 = var0.item;
                     var5 = var0.start;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.paddingBottom = var8;
                 var0.contentContainerStyle = var7;
                 var0.sections = var6;
-                var6 = function(arg0) { // Original name: renderSectionHeader, environment: var5
+                var6 = function arg0() {
                     _fun92067: for (var _fun92067_ip = 0;;) switch (_fun92067_ip) {
                         case 0:
                             var0 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.renderSectionHeader = var6;
                 var6 = true;
                 var0.stickySectionHeadersEnabled = var6;
-                var5 = function(arg0) { // Original name: keyExtractor, environment: var5
+                var5 = function arg0() {
                     var0 = arg0;
                     var0 = var0.guild;
                     var0 = var0.id;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.emptyStateContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
-    var3 = function() { // Original name: EmptyGuildList, environment: var1
+    var3 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/native/action_sheet/invite_to_guilds/GuildInviteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.recipientId;
         var8 = var0.source;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var15.bind(var3)(var7);
         var11 = var7.SearchField;
         var7 = {};
-        var13 = function(arg0) { // Original name: onChange, environment: var13
+        var13 = function arg0() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = arg0;

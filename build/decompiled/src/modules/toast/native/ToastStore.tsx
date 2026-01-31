@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun46426: for (var _fun46426_ip = 0;;) switch (_fun46426_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var2 = function(arg0) { // Original name: ToastStore, environment: var0
+        var2 = function arg0() {
             _fun46430: for (var _fun46430_ip = 0;;) switch (_fun46430_ip) {
                 case 0:
                     var3 = this;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: TOAST_OPEN, environment: var3
+    var7 = function arg0() {
         _fun46432: for (var _fun46432_ip = 0;;) switch (_fun46432_ip) {
             case 0:
                 var0 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.TOAST_OPEN = var7;
-    var3 = function() { // Original name: TOAST_CLOSE, environment: var3
+    var3 = function() {
         var0 = null;
         _closure1_slot5 = var0;
         var0 = undefined;

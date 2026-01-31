@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionFreeTextAppealReasonActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppealIngestionFreeTextAppealReasonActionSheet, environment: var1
+    var1 = function arg0() {
         _fun79550: for (var _fun79550_ip = 0;;) switch (_fun79550_ip) {
             case 0:
                 var0 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var14[var8];
                 var9 = var9.bind(var3)(var8);
                 var8 = {};
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;

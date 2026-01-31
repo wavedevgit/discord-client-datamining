@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var4 = _closure1_slot4;
-        var3 = function() { // Original name: ChannelReader, environment: var5
+        var3 = function() {
             var3 = _closure1_slot3;
             var2 = _closure2_slot2;
             var0 = undefined;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'getSync';
         var0.key = var2;
-        var2 = function(arg0, arg1) { // Original name: value, environment: var5
+        var2 = function arg0, arg1() {
             var10 = arg1;
             var0 = global;
             var2 = var0.performance;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var1)(var6);
         var _closure2_slot1 = var6;
-        var6 = function() { // Original name: getAsync, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var1)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: getGuildIds, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: instrumentReactRouter, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun12453: for (var _fun12453_ip = 0;;) switch (_fun12453_ip) {
             case 0:
                 var7 = arg0;
@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = undefined;
                 var _closure2_slot0 = var7;
                 var _closure2_slot1 = var17;
-                var5 = function(arg0) { // Original name: normalizeTransactionName, environment: var1
+                var5 = function arg0() {
                     _fun12454: for (var _fun12454_ip = 0;;) switch (_fun12454_ip) {
                         case 0:
                             var1 = arg0;
@@ -296,7 +296,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: matchRoutes, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun12456: for (var _fun12456_ip = 0;;) switch (_fun12456_ip) {
             case 0:
                 var3 = arg0;
@@ -429,7 +429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: reactRouterV4BrowserTracingIntegration, environment: var1
+    var3 = function arg0() {
         _fun12458: for (var _fun12458_ip = 0;;) switch (_fun12458_ip) {
             case 0:
                 var3 = arg0;
@@ -480,7 +480,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.Object;
                 var2 = var3.assign;
                 var1 = {};
-                var0 = function(arg0) { // Original name: afterAllSetup, environment: var0
+                var0 = function arg0() {
                     var8 = arg0;
                     var2 = _closure2_slot0;
                     var1 = var2.afterAllSetup;
@@ -505,7 +505,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.reactRouterV4BrowserTracingIntegration = var3;
-    var3 = function(arg0) { // Original name: reactRouterV5BrowserTracingIntegration, environment: var1
+    var3 = function arg0() {
         _fun12460: for (var _fun12460_ip = 0;;) switch (_fun12460_ip) {
             case 0:
                 var3 = arg0;
@@ -556,7 +556,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.Object;
                 var2 = var3.assign;
                 var1 = {};
-                var0 = function(arg0) { // Original name: afterAllSetup, environment: var0
+                var0 = function arg0() {
                     var8 = arg0;
                     var2 = _closure2_slot0;
                     var1 = var2.afterAllSetup;
@@ -581,7 +581,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.reactRouterV5BrowserTracingIntegration = var3;
-    var1 = function(arg0) { // Original name: withSentryRouting, environment: var1
+    var1 = function arg0() {
         _fun12462: for (var _fun12462_ip = 0;;) switch (_fun12462_ip) {
             case 0:
                 var3 = arg0;
@@ -594,7 +594,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 17:
                 var5 = var3.name;
             case 22:
-                var0 = function(arg0) { // Original name: WrappedRoute, environment: var0
+                var0 = function arg0() {
                     _fun12463: for (var _fun12463_ip = 0;;) switch (_fun12463_ip) {
                         case 0:
                             var6 = arg0;

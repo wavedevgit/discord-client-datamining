@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = /^(?:0|[1-9]\d*)$/;
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1) { // Original name: isIndex, environment: var0
+    var1 = function arg0, arg1() {
         _fun8336: for (var _fun8336_ip = 0;;) switch (_fun8336_ip) {
             case 0:
                 var2 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var13;
-    var7 = function(arg0, arg1) { // Original name: getTrait, environment: var1
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg0;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var7;
-    var6 = function(arg0) { // Original name: isEntryActive, environment: var1
+    var6 = function arg0() {
         _fun56311: for (var _fun56311_ip = 0;;) switch (_fun56311_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var6;
-    var5 = function(arg0) { // Original name: isEntryExpired, environment: var1
+    var5 = function arg0() {
         _fun56312: for (var _fun56312_ip = 0;;) switch (_fun56312_ip) {
             case 0:
                 var2 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0) { // Original name: getEntryDuration, environment: var1
+    var4 = function arg0() {
         _fun56313: for (var _fun56313_ip = 0;;) switch (_fun56313_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0) { // Original name: getStreakCount, environment: var1
+    var3 = function arg0() {
         _fun56314: for (var _fun56314_ip = 0;;) switch (_fun56314_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.value = var0;
     var0 = '__esModule';
     var0 = var9.bind(var10)(var2, var0, var8);
-    var12 = function(arg0, arg1) { // Original name: calculateTimestampDurations, environment: var1
+    var12 = function arg0, arg1() {
         var2 = global;
         var3 = var2.Math;
         var1 = var3.max;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var12;
-    var11 = function(arg0, arg1) { // Original name: calculateActiveTimestampDurations, environment: var1
+    var11 = function arg0, arg1() {
         _fun56316: for (var _fun56316_ip = 0;;) switch (_fun56316_ip) {
             case 0:
                 var4 = arg0;
@@ -322,10 +322,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var11;
-    var10 = function(arg0, arg1) { // Original name: formatActiveTimestamp, environment: var1
+    var10 = function arg0, arg1() {
         _fun56317: for (var _fun56317_ip = 0;;) switch (_fun56317_ip) {
             case 0:
-                var3 = function(arg0) { // Original name: padNumber, environment: var0
+                var3 = function arg0() {
                     var0 = global;
                     var2 = var0.String;
                     var1 = undefined;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var10;
     var0 = {};
-    var8 = function(arg0) { // Original name: secondsAgo, environment: var1
+    var8 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.secondsAgo = var8;
-    var8 = function(arg0) { // Original name: minutesAgo, environment: var1
+    var8 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.minutesAgo = var8;
-    var8 = function(arg0) { // Original name: hoursAgo, environment: var1
+    var8 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.hoursAgo = var8;
-    var8 = function(arg0) { // Original name: daysAgo, environment: var1
+    var8 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.daysAgo = var8;
-    var8 = function(arg0) { // Original name: weeksAgo, environment: var1
+    var8 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.weeksAgo = var8;
-    var8 = function(arg0) { // Original name: monthsAgo, environment: var1
+    var8 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.monthsAgo = var8;
     var _closure1_slot6 = var0;
     var9 = {};
-    var0 = function(arg0) { // Original name: secondsAgo, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.secondsAgo = var0;
-    var0 = function(arg0) { // Original name: minutesAgo, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.minutesAgo = var0;
-    var0 = function(arg0) { // Original name: hoursAgo, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.hoursAgo = var0;
-    var0 = function(arg0) { // Original name: daysAgo, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.daysAgo = var0;
-    var0 = function(arg0) { // Original name: weeksAgo, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.weeksAgo = var0;
-    var0 = function(arg0) { // Original name: monthsAgo, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -628,7 +628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.monthsAgo = var0;
-    var8 = function(arg0, arg1, arg2) { // Original name: formatEndedTimestamp, environment: var1
+    var8 = function arg0, arg1, arg2() {
         _fun56331: for (var _fun56331_ip = 0;;) switch (_fun56331_ip) {
             case 0:
                 var0 = arguments[3];
@@ -872,7 +872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.formatEntryTimestamp = var8;
     var2.getTrait = var7;
     var2.isEntryActive = var6;
-    var6 = function(arg0) { // Original name: isEntryNew, environment: var1
+    var6 = function arg0() {
         _fun56333: for (var _fun56333_ip = 0;;) switch (_fun56333_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEntryNew = var6;
-    var6 = function(arg0) { // Original name: isEntryRecent, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var0 = 1;
@@ -930,7 +930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEntryRecent = var6;
     var2.isEntryExpired = var5;
-    var5 = function(arg0) { // Original name: isEntryLive, environment: var1
+    var5 = function arg0() {
         _fun56335: for (var _fun56335_ip = 0;;) switch (_fun56335_ip) {
             case 0:
                 var3 = arg0;
@@ -951,7 +951,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEntryLive = var5;
     var2.getEntryDuration = var4;
-    var4 = function(arg0) { // Original name: getAggregateRange, environment: var1
+    var4 = function arg0() {
         _fun56336: for (var _fun56336_ip = 0;;) switch (_fun56336_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -978,7 +978,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAggregateRange = var4;
-    var4 = function(arg0) { // Original name: isEntryMarathon, environment: var1
+    var4 = function arg0() {
         _fun56337: for (var _fun56337_ip = 0;;) switch (_fun56337_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEntryMarathon = var4;
-    var4 = function(arg0) { // Original name: getResurrectedEntryLastPlayTime, environment: var1
+    var4 = function arg0() {
         _fun56338: for (var _fun56338_ip = 0;;) switch (_fun56338_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getResurrectedEntryLastPlayTime = var4;
-    var4 = function(arg0) { // Original name: getFullResurrectedBadgeText, environment: var1
+    var4 = function arg0() {
         _fun56339: for (var _fun56339_ip = 0;;) switch (_fun56339_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFullResurrectedBadgeText = var4;
-    var4 = function(arg0) { // Original name: getEpisodeBadgeText, environment: var1
+    var4 = function arg0() {
         _fun56340: for (var _fun56340_ip = 0;;) switch (_fun56340_ip) {
             case 0:
                 var3 = arg0;
@@ -1204,7 +1204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEpisodeBadgeText = var4;
-    var4 = function(arg0, arg1) { // Original name: getRichGameStateBadgeText, environment: var1
+    var4 = function arg0, arg1() {
         _fun56341: for (var _fun56341_ip = 0;;) switch (_fun56341_ip) {
             case 0:
                 var6 = arg0;
@@ -1369,7 +1369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRichGameStateBadgeText = var4;
-    var4 = function(arg0) { // Original name: isEntryTopGame, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.content_type;
         var3 = _closure1_slot0;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEntryTopGame = var4;
     var2.getStreakCount = var3;
-    var3 = function(arg0) { // Original name: isValidStreak, environment: var1
+    var3 = function arg0() {
         _fun56343: for (var _fun56343_ip = 0;;) switch (_fun56343_ip) {
             case 0:
                 var0 = arg0;
@@ -1436,7 +1436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isValidStreak = var3;
-    var3 = function(arg0) { // Original name: getMarathonDescription, environment: var1
+    var3 = function arg0() {
         _fun56344: for (var _fun56344_ip = 0;;) switch (_fun56344_ip) {
             case 0:
                 var2 = _closure1_slot11;
@@ -1512,7 +1512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMarathonDescription = var3;
-    var1 = function(arg0) { // Original name: getTrendingType, environment: var1
+    var1 = function arg0() {
         _fun56345: for (var _fun56345_ip = 0;;) switch (_fun56345_ip) {
             case 0:
                 var3 = _closure1_slot8;

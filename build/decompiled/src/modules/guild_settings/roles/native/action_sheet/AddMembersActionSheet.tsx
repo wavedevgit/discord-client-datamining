@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: _toPropertyKey, environment: var3
+    var0 = function arg0() {
         _fun115848: for (var _fun115848_ip = 0;;) switch (_fun115848_ip) {
             case 0:
                 var6 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var1 = function(arg0) { // Original name: AddMembersBody, environment: var3
+    var1 = function arg0() {
         _fun115849: for (var _fun115849_ip = 0;;) switch (_fun115849_ip) {
             case 0:
                 var1 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var0;
                 var1[1] = var14;
                 var0 = function() { // Environment: var13
-                    var1 = function(arg0) { // Original name: filterByQuery, environment: var0
+                    var1 = function arg0() {
                         var0 = global;
                         var3 = var0.RegExp;
                         var2 = _closure1_slot1;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var23 = var24.bind(var25)(var23);
                 var16.tags = var23;
-                var23 = function(arg0) { // Original name: onChangeText, environment: var13
+                var23 = function arg0() {
                     var1 = arg0;
                     var0 = var1.trim;
                     var1 = var0.bind(var1)();
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var16.onChangeText = var23;
-                var23 = function(arg0) { // Original name: onRemove, environment: var13
+                var23 = function arg0() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 18;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17 + var18;
                 var16.paddingBottom = var17;
                 var5.contentContainerStyle = var16;
-                var13 = function(arg0) { // Original name: renderItem, environment: var13
+                var13 = function arg0() {
                     _fun115857: for (var _fun115857_ip = 0;;) switch (_fun115857_ip) {
                         case 0:
                             var0 = arg0;
@@ -412,9 +412,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.guildId = var11;
                             var10 = var10.id;
                             var0.userId = var10;
-                            var9 = function() { // Original name: onPress, environment: var9
+                            var9 = function() {
                                 var2 = _closure3_slot0;
-                                var1 = function(arg0) { // Original name: updatePendingAdditions, environment: var0
+                                var1 = function arg0() {
                                     _fun115859: for (var _fun115859_ip = 0;;) switch (_fun115859_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_settings/roles/native/action_sheet/AddMembersActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AddMembersActionSheet, environment: var3
+    var3 = function arg0() {
         _fun115861: for (var _fun115861_ip = 0;;) switch (_fun115861_ip) {
             case 0:
                 var0 = arg0;
@@ -829,7 +829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.OYkgVk;
                 var21 = var22.bind(var23)(var21);
                 var7.text = var21;
-                var18 = function() { // Original name: onPress, environment: var18
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 25;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: isActivityInTextSupportedForChannel, environment: var1
+    var4 = function arg0() {
         _fun56146: for (var _fun56146_ip = 0;;) switch (_fun56146_ip) {
             case 0:
                 var2 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var0 = function(arg0, arg1) { // Original name: isActivitiesInTextEnabledForChannelWithPermissions, environment: var1
+    var0 = function arg0, arg1() {
         _fun56147: for (var _fun56147_ip = 0;;) switch (_fun56147_ip) {
             case 0:
                 var3 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var3 = function(arg0) { // Original name: getIsAppLauncherEnabled, environment: var1
+    var3 = function arg0() {
         _fun56148: for (var _fun56148_ip = 0;;) switch (_fun56148_ip) {
             case 0:
                 var3 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/activities/ActivitiesInTextUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.isActivityInTextSupportedForChannel = var4;
-    var4 = function(arg0) { // Original name: isActivitiesInTextEnabled, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot6;
         var2 = _closure1_slot3;
         var1 = undefined;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isActivitiesInTextEnabled = var4;
-    var4 = function(arg0) { // Original name: useIsActivitiesInTextEnabled, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsActivitiesInTextEnabled = var4;
     var2.getIsAppLauncherEnabled = var3;
-    var1 = function(arg0) { // Original name: useIsAppLauncherEnabled, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;

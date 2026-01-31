@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0) { // Original name: passthrough, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/guild_settings/useEnableMFAHook.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useEnableMFAHook, environment: var1
+    var1 = function() {
         var0 = _closure1_slot0;
         return var0;
     };

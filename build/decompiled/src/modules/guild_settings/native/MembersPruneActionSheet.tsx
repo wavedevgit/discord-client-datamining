@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/native/MembersPruneActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MembersPruneActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.guild;
         var _closure2_slot0 = var6;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var10.bind(var13)(var6);
         var4.title = var6;
         var4.defaultValue = var16;
-        var6 = function(arg0) { // Original name: onChange, environment: var9
+        var6 = function arg0() {
             _fun104913: for (var _fun104913_ip = 0;;) switch (_fun104913_ip) {
                 case 0:
                     var2 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var10 = 'destructive';
         var5.variant = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             _fun104914: for (var _fun104914_ip = 0;;) switch (_fun104914_ip) {
                 case 0:
                     var1 = _closure2_slot1;

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun101924: for (var _fun101924_ip = 0;;) switch (_fun101924_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LiveChannelNoticesStore, environment: var5
+        var3 = function() {
             _fun101928: for (var _fun101928_ip = 0;;) switch (_fun101928_ip) {
                 case 0:
                     var3 = this;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun101929: for (var _fun101929_ip = 0;;) switch (_fun101929_ip) {
                 case 0:
                     var1 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLiveChannelNoticeHidden';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun101930: for (var _fun101930_ip = 0;;) switch (_fun101930_ip) {
                 case 0:
                     var0 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleHideNotice, environment: var3
+    var8 = function arg0() {
         _fun101932: for (var _fun101932_ip = 0;;) switch (_fun101932_ip) {
             case 0:
                 var0 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LIVE_CHANNEL_NOTICE_HIDE = var8;
-    var8 = function(arg0) { // Original name: handleEventUpdate, environment: var3
+    var8 = function arg0() {
         _fun101933: for (var _fun101933_ip = 0;;) switch (_fun101933_ip) {
             case 0:
                 var1 = arg0;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_SCHEDULED_EVENT_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleEventDelete, environment: var3
+    var8 = function arg0() {
         _fun101935: for (var _fun101935_ip = 0;;) switch (_fun101935_ip) {
             case 0:
                 var1 = arg0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_SCHEDULED_EVENT_DELETE = var8;
-    var3 = function(arg0) { // Original name: handleStageUpdate, environment: var3
+    var3 = function arg0() {
         _fun101937: for (var _fun101937_ip = 0;;) switch (_fun101937_ip) {
             case 0:
                 var1 = arg0;

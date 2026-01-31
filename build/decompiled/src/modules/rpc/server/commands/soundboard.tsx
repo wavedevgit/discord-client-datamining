@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[1] = var14;
     var10[var13] = var12;
     var6.scope = var10;
-    var10 = function() { // Original name: handler, environment: var7
+    var10 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[1] = var11;
     var8[var10] = var9;
     var3.scope = var8;
-    var8 = function(arg0) { // Original name: validation, environment: var7
+    var8 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.validation = var8;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         var1 = arg0;
         var1 = var1.args;
         var2 = var1.guild_id;

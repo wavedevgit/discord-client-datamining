@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/native/components/ExistingUserAgeGateConfirm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExistingUserAgeGateConfirm, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var17 = var0.age;
         var0 = var0.onConfirm;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = undefined;
         var _closure2_slot1 = var3;
         var _closure2_slot2 = var3;
-        var0 = function() { // Original name: _handleConfirm, environment: var8
+        var0 = function() {
             var3 = undefined;
             var0 = undefined;
             var2 = _closure1_slot3;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9["6tahin"];
         var9 = var10.bind(var11)(var9);
         var5.text = var9;
-        var8 = function() { // Original name: handleConfirm, environment: var8
+        var8 = function() {
             var0 = undefined;
             var3 = _closure2_slot3;
             var2 = var3.apply;

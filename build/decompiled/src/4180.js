@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getTagValue, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun38369: for (var _fun38369_ip = 0;;) switch (_fun38369_ip) {
             case 0:
                 var3 = arg0;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var0;
     var2 = {};
-    var3 = function(arg0, arg1) { // Original name: get, environment: var3
+    var3 = function arg0, arg1() {
         _fun38370: for (var _fun38370_ip = 0;;) switch (_fun38370_ip) {
             case 0:
                 var9 = arg0;

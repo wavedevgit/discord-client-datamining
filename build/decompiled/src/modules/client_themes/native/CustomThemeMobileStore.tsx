@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var8
+    var0 = function() {
         _fun27541: for (var _fun27541_ip = 0;;) switch (_fun27541_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: validate, environment: var8
+    var0 = function() {
         _fun27544: for (var _fun27544_ip = 0;;) switch (_fun27544_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -124,14 +124,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var1 = var1.UserSettingsTypes;
     var _closure1_slot13 = var1;
-    var3 = function() { // Original name: reset, environment: var8
+    var3 = function() {
         var0 = undefined;
         var _closure1_slot2 = var0;
         var _closure1_slot3 = var0;
         var _closure1_slot4 = var0;
         return var0;
     };
-    var9 = function() { // Original name: loadFromProtoSettings, environment: var8
+    var9 = function() {
         _fun27546: for (var _fun27546_ip = 0;;) switch (_fun27546_ip) {
             case 0:
                 var2 = _closure1_slot15;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function() { // Original name: handleSelectivelySyncedUserSettingsUpdate, environment: var8
+    var1 = function() {
         _fun27547: for (var _fun27547_ip = 0;;) switch (_fun27547_ip) {
             case 0:
                 var2 = _closure1_slot15;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var1;
-    var1 = function() { // Original name: syncThemesEnabled, environment: var8
+    var1 = function() {
         var2 = _closure1_slot10;
         var1 = var2.shouldSync;
         var0 = 'appearance';
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var1;
-    var1 = function(arg0) { // Original name: getAppearanceSettings, environment: var8
+    var1 = function arg0() {
         _fun27549: for (var _fun27549_ip = 0;;) switch (_fun27549_ip) {
             case 0:
                 var2 = arg0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var1;
-    var1 = function(arg0) { // Original name: updateThemeSettings, environment: var8
+    var1 = function arg0() {
         _fun27550: for (var _fun27550_ip = 0;;) switch (_fun27550_ip) {
             case 0:
                 var1 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var8
-        var3 = function() { // Original name: CustomThemeMobileStore, environment: var5
+        var3 = function() {
             _fun27552: for (var _fun27552_ip = 0;;) switch (_fun27552_ip) {
                 case 0:
                     var3 = this;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun27553: for (var _fun27553_ip = 0;;) switch (_fun27553_ip) {
                 case 0:
                     var0 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun27554: for (var _fun27554_ip = 0;;) switch (_fun27554_ip) {
                 case 0:
                     var1 = _closure1_slot19;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCustomTheme';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun27555: for (var _fun27555_ip = 0;;) switch (_fun27555_ip) {
                 case 0:
                     var2 = _closure1_slot19;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getBaseTheme';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun27556: for (var _fun27556_ip = 0;;) switch (_fun27556_ip) {
                 case 0:
                     var2 = _closure1_slot19;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPreviewTheme';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot4;
             return var0;
         };
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCustomThemeDisplaySettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun27558: for (var _fun27558_ip = 0;;) switch (_fun27558_ip) {
                 case 0:
                     var2 = _closure1_slot4;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasCustomTheme';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = _closure1_slot19;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var10 = function(arg0) { // Original name: UPDATE_CUSTOM_THEME, environment: var8
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.customTheme;
         var1 = var0.theme;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPDATE_CUSTOM_THEME = var10;
-    var10 = function(arg0) { // Original name: PREVIEW_CUSTOM_THEME, environment: var8
+    var10 = function arg0() {
         var0 = arg0;
         var1 = var0.previewCustomTheme;
         _closure1_slot4 = var1;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREVIEW_CUSTOM_THEME = var10;
-    var10 = function() { // Original name: CLEAR_PREVIEW_CUSTOM_THEME, environment: var8
+    var10 = function() {
         var0 = undefined;
         _closure1_slot4 = var0;
         return var0;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.RESET_CUSTOM_THEME = var3;
     var1.CACHE_LOADED = var9;
     var1.POST_CONNECTION_OPEN = var9;
-    var8 = function(arg0) { // Original name: USER_SETTINGS_PROTO_UPDATE, environment: var8
+    var8 = function arg0() {
         _fun27563: for (var _fun27563_ip = 0;;) switch (_fun27563_ip) {
             case 0:
                 var0 = arg0;

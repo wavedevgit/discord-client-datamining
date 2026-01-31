@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var8] = var7;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaModalLoader, environment: var1
+    var1 = function arg0() {
         _fun76331: for (var _fun76331_ip = 0;;) switch (_fun76331_ip) {
             case 0:
                 var5 = arg0;

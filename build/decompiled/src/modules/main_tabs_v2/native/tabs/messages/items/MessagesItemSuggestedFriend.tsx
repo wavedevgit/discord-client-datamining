@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: MessagesItemSuggestedFriend, environment: var1
+    var3 = function arg0() {
         _fun101369: for (var _fun101369_ip = 0;;) switch (_fun101369_ip) {
             case 0:
                 var2 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriend.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getMessagesItemSuggestedFriendHeight, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var5 = _closure1_slot0;
         var4 = _closure1_slot2;

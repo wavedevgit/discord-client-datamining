@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: getThreadLastActivityTime, environment: var3
+    var1 = function arg0() {
         _fun41168: for (var _fun41168_ip = 0;;) switch (_fun41168_ip) {
             case 0:
                 var0 = arg0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/threads/getThreadAutoArchiveTimeOnce.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: getThreadAutoArchiveTimeOnce, environment: var3
+    var3 = function arg0() {
         _fun41169: for (var _fun41169_ip = 0;;) switch (_fun41169_ip) {
             case 0:
                 var3 = arg0;

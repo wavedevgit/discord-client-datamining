@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var7.bind(var8)(var3);
             var _closure1_slot8 = var3;
             var3 = var6.memo;
-            var1 = function(arg0) { // Original name: MediaModalSpoilerOverlay, environment: var1
+            var1 = function arg0() {
                 _fun76342: for (var _fun76342_ip = 0;;) switch (_fun76342_ip) {
                     case 0:
                         var0 = arg0;

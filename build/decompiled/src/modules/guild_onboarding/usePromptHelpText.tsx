@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: formatRoleString, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun77442: for (var _fun77442_ip = 0;;) switch (_fun77442_ip) {
             case 0:
                 var6 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/usePromptHelpText.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: usePromptHelpText, environment: var1
+    var3 = function arg0() {
         _fun77443: for (var _fun77443_ip = 0;;) switch (_fun77443_ip) {
             case 0:
                 var2 = arg0;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useCustomizeCommunityPromptHelpText, environment: var1
+    var1 = function arg0() {
         _fun77450: for (var _fun77450_ip = 0;;) switch (_fun77450_ip) {
             case 0:
                 var2 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117479: for (var _fun117479_ip = 0;;) switch (_fun117479_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: GlobalDiscoveryServersFeaturedSearchManager, environment: var0
+        var2 = function arg0() {
             _fun117483: for (var _fun117483_ip = 0;;) switch (_fun117483_ip) {
                 case 0:
                     var4 = this;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.bind(var2)(var4, var0);
                     var _closure3_slot0 = var0;
                     var3 = {};
-                    var4 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var4 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleConnectionOpen;
                         var0 = var0.bind(var1)();

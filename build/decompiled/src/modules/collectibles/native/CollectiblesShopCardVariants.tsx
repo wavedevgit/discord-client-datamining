@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: VariantOption, environment: var1
+    var3 = function arg0() {
         _fun87071: for (var _fun87071_ip = 0;;) switch (_fun87071_ip) {
             case 0:
                 var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: VariantCheckmark, environment: var1
+    var3 = function arg0() {
         _fun87072: for (var _fun87072_ip = 0;;) switch (_fun87072_ip) {
             case 0:
                 var0 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: VariantOverflowOption, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.zIndex;
         var1 = var0.isSelected;

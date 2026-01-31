@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot2 = var4;
     var4 = var7.memo;
-    var3 = function() { // Original name: MessagesItemSeperator, environment: var3
+    var3 = function() {
         var1 = _closure1_slot2;
         var3 = undefined;
         var5 = var1.bind(var3)();

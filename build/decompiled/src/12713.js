@@ -11,14 +11,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var0 = undefined;
     var2.default = var0;
-    var1 = function() { // Original name: repl, environment: var1
+    var1 = function() {
         var0 = function(arg0) { // Environment: var0
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
             var _closure3_slot1 = var0;
             var0 = {};
-            var1 = function(arg0) { // Original name: onCommand, environment: var2
+            var1 = function arg0() {
                 _fun97631: for (var _fun97631_ip = 0;;) switch (_fun97631_ip) {
                     case 0:
                         var0 = arg0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var0.onCommand = var1;
             var1 = {};
-            var2 = function(arg0, arg1) { // Original name: repl, environment: var2
+            var2 = function arg0, arg1() {
                 _fun97633: for (var _fun97633_ip = 0;;) switch (_fun97633_ip) {
                     case 0:
                         var2 = arg0;

@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.jsx;
     var _closure1_slot7 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetHandleContainerComponent, environment: var1
+    var1 = function arg0() {
         _fun45350: for (var _fun45350_ip = 0;;) switch (_fun45350_ip) {
             case 0:
                 var0 = arg0;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var16 = _closure1_slot4;
                 var15 = new Array(1);
                 var15[0] = var17;
-                var4 = function(arg0) { // Original name: handleContainerLayout, environment: var13
+                var4 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var0 = var0.layout;

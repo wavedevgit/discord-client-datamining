@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = 'RegExp.prototype.exec';
     var2 = var3.bind(var0)(var2);
     var _closure1_slot2 = var2;
-    var2 = function(arg0) { // Original name: regexTester, environment: var1
+    var2 = function arg0() {
         _fun16394: for (var _fun16394_ip = 0;;) switch (_fun16394_ip) {
             case 0:
                 var4 = arg0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1 instanceof Object ? var1 : var2;
                 throw var1;
             case 90:
-                var0 = function(arg0) { // Original name: test, environment: var0
+                var0 = function arg0() {
                     var3 = _closure1_slot2;
                     var2 = _closure2_slot0;
                     var1 = undefined;

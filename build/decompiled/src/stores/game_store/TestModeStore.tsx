@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var9
+    var0 = function() {
         _fun58968: for (var _fun58968_ip = 0;;) switch (_fun58968_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var8 = function() { // Original name: resetError, environment: var9
+    var8 = function() {
         var0 = null;
         var _closure1_slot12 = var0;
         var0 = undefined;
         return var0;
     };
     var _closure1_slot18 = var8;
-    var3 = function() { // Original name: reset, environment: var9
+    var3 = function() {
         var2 = null;
         var _closure1_slot10 = var2;
         var _closure1_slot11 = var2;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var9
-        var3 = function() { // Original name: TestModeStore, environment: var5
+        var3 = function() {
             _fun58974: for (var _fun58974_ip = 0;;) switch (_fun58974_ip) {
                 case 0:
                     var3 = this;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun58975: for (var _fun58975_ip = 0;;) switch (_fun58975_ip) {
                 case 0:
                     var2 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'inTestModeForApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot10;
             var0 = arg0;
             var0 = var1 === var0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'inTestModeForEmbeddedApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun58979: for (var _fun58979_ip = 0;;) switch (_fun58979_ip) {
                 case 0:
                     var2 = _closure1_slot10;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldDisplayTestMode';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun58980: for (var _fun58980_ip = 0;;) switch (_fun58980_ip) {
                 case 0:
                     var3 = this;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isTestMode';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot10;
             var0 = null;
             var0 = var0 != var1;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingAuthorization';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             var1 = var0.size;
             var0 = 0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'testModeEmbeddedApplicationId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun58984: for (var _fun58984_ip = 0;;) switch (_fun58984_ip) {
                 case 0:
                     var2 = _closure1_slot11;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'testModeApplicationId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'testModeOriginURL';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'error';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'whenInitialized';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = this;
             var1 = arg0;
             var _closure3_slot0 = var1;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var14 = var6.bind(var0)(var1);
     var1 = {};
-    var10 = function(arg0) { // Original name: handleDeveloperTestModeAuthorizationStart, environment: var9
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.applicationId;
         var2 = _closure1_slot15;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DEVELOPER_TEST_MODE_AUTHORIZATION_START = var10;
-    var10 = function(arg0) { // Original name: handleDeveloperTestModeAuthorizationSuccess, environment: var9
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.applicationId;
         var1 = var0.originURL;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS = var10;
-    var10 = function(arg0) { // Original name: handleDeveloperTestModeAuthorizationFail, environment: var9
+    var10 = function arg0() {
         var0 = arg0;
         var4 = var0.applicationId;
         var1 = var0.error;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL = var10;
-    var9 = function(arg0) { // Original name: handleOverlayInitialize, environment: var9
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.testModeApplicationId;
         _closure1_slot10 = var1;

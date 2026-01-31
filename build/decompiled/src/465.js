@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var4 = _closure1_slot4;
-        var3 = function() { // Original name: Share, environment: var1
+        var3 = function() {
             var3 = _closure1_slot3;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'share';
         var0.key = var2;
-        var1 = function(arg0) { // Original name: share, environment: var1
+        var1 = function arg0() {
             _fun6139: for (var _fun6139_ip = 0;;) switch (_fun6139_ip) {
                 case 0:
                     var6 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MessagePreview, environment: var1
+    var0 = function arg0() {
         _fun72897: for (var _fun72897_ip = 0;;) switch (_fun72897_ip) {
             case 0:
                 var0 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forwarding/native/ForwardPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForwardPreview, environment: var1
+    var1 = function arg0() {
         _fun72900: for (var _fun72900_ip = 0;;) switch (_fun72900_ip) {
             case 0:
                 var0 = arg0;

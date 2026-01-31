@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var3 = function(arg0, arg1, arg2) { // Original name: setMeasurement, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun99303: for (var _fun99303_ip = 0;;) switch (_fun99303_ip) {
             case 0:
                 var0 = undefined;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.setMeasurement = var3;
-    var1 = function(arg0) { // Original name: timedEventsToMeasurements, environment: var1
+    var1 = function arg0() {
         _fun99304: for (var _fun99304_ip = 0;;) switch (_fun99304_ip) {
             case 0:
                 var3 = arg0;

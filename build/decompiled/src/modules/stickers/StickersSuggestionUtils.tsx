@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var0 = /(\n|\t|\s)/g;
     var _closure1_slot1 = var0;
-    var3 = function(arg0) { // Original name: removePunctuation, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var3 = var4.replace;
         var2 = _closure1_slot0;

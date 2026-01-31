@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MoreButton, environment: var1
+    var1 = function arg0() {
         _fun107008: for (var _fun107008_ip = 0;;) switch (_fun107008_ip) {
             case 0:
                 var1 = arg0;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/hooks/useDisplayNameStyles.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useDisplayNameStyles, environment: var1
+    var1 = function() {
         _fun36520: for (var _fun36520_ip = 0;;) switch (_fun36520_ip) {
             case 0:
                 var1 = arguments[0];

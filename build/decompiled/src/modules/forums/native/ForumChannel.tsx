@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var12;
             var _closure1_slot2 = var5;
-            var0 = function() { // Original name: ArchivedSection, environment: var1
+            var0 = function() {
                 var0 = _closure1_slot21;
                 var3 = undefined;
                 var7 = var0.bind(var3)();
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot25 = var0;
-            var0 = function(arg0) { // Original name: SearchSection, environment: var1
+            var0 = function arg0() {
                 _fun91278: for (var _fun91278_ip = 0;;) switch (_fun91278_ip) {
                     case 0:
                         var0 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var0;
-            var0 = function(arg0) { // Original name: ArchivedMissingReadHistoryPermission, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channelName;
                 var0 = _closure1_slot21;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot27 = var0;
-            var0 = function(arg0) { // Original name: SearchMissingReadHistoryPermission, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var11 = var0.channelName;
                 var0 = _closure1_slot21;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot28 = var0;
-            var0 = function(arg0) { // Original name: SortAndViewOptions, environment: var1
+            var0 = function arg0() {
                 _fun91281: for (var _fun91281_ip = 0;;) switch (_fun91281_ip) {
                     case 0:
                         var1 = arg0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var8.bind(var0)(var2, var1);
                             var1 = {};
                             var1.channelId = var7;
-                            var6 = function() { // Original name: onClose, environment: var6
+                            var6 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 23;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var0;
-            var0 = function(arg0) { // Original name: TagFilter, environment: var1
+            var0 = function arg0() {
                 _fun91284: for (var _fun91284_ip = 0;;) switch (_fun91284_ip) {
                     case 0:
                         var0 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.accessibilityLabel = var5;
                         var5 = var15.optionsContainer;
                         var0.style = var5;
-                        var4 = function() { // Original name: onPress, environment: var4
+                        var4 = function() {
                             var4 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 23;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot30 = var0;
-            var0 = function(arg0) { // Original name: onForumViewableItemsChanged, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var2 = var0.changed;
                 var1 = var2.forEach;
@@ -944,7 +944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var6.id;
                         var0.channelId = var11;
                         var0 = var7.bind(var8)(var0);
-                        var0 = function(arg0, arg1, arg2, arg3) { // Original name: useForumData, environment: var13
+                        var0 = function arg0, arg1, arg2, arg3() {
                             _fun91289: for (var _fun91289_ip = 0;;) switch (_fun91289_ip) {
                                 case 0:
                                     var17 = arg0;
@@ -1686,7 +1686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9.contentContainerStyle = var16;
                         var9.renderItem = var15;
                         var9.data = var14;
-                        var13 = function(arg0) { // Original name: onScroll, environment: var13
+                        var13 = function arg0() {
                             _fun91296: for (var _fun91296_ip = 0;;) switch (_fun91296_ip) {
                                 case 0:
                                     var2 = arg0;
@@ -1754,7 +1754,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var3 = var6.bind(var7)(var3);
             var _closure1_slot23 = var3;
-            var3 = function() { // Original name: onCreatePostWithoutPermission, environment: var1
+            var3 = function() {
                 var5 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var0 = 38;
@@ -1791,7 +1791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/forums/native/ForumChannel.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: ForumChannel, environment: var1
+            var1 = function arg0() {
                 _fun91298: for (var _fun91298_ip = 0;;) switch (_fun91298_ip) {
                     case 0:
                         var1 = arg0;
@@ -2136,7 +2136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = function() { // Environment: var0
                             _fun91305: for (var _fun91305_ip = 0;;) switch (_fun91305_ip) {
                                 case 0:
-                                    var4 = function() { // Original name: startCreateForumPostFlow, environment: var0
+                                    var4 = function() {
                                         _fun91306: for (var _fun91306_ip = 0;;) switch (_fun91306_ip) {
                                             case 0:
                                                 var1 = _closure2_slot3;
@@ -2169,7 +2169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                 var1 = {};
                                                 var4 = _closure2_slot0;
                                                 var1.channel = var4;
-                                                var4 = function() { // Original name: onPress, environment: var4
+                                                var4 = function() {
                                                     var2 = _closure2_slot10;
                                                     var1 = {};
                                                     var3 = _closure1_slot14;

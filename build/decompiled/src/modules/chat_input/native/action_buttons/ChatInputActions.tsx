@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var19.useMemo;
                 var13 = function() { // Environment: var6
                     var0 = {};
-                    var2 = function(arg0) { // Original name: onDismissActions, environment: var1
+                    var2 = function arg0() {
                         var3 = _closure2_slot7;
                         var0 = undefined;
                         var2 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onDismissActions = var2;
-                    var2 = function(arg0) { // Original name: onShowActions, environment: var1
+                    var2 = function arg0() {
                         var3 = _closure2_slot7;
                         var0 = undefined;
                         var2 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onShowActions = var2;
-                    var2 = function() { // Original name: focusPhotosButton, environment: var1
+                    var2 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 11;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.focusPhotosButton = var2;
                     var _closure3_slot0 = var0;
                     var0 = {};
-                    var1 = function() { // Original name: showActionsImperativeApi, environment: var1
+                    var1 = function() {
                         var0 = _closure3_slot0;
                         return var0;
                     };
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var11[var4];
                 var2 = var15.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: F, environment: var6
+                var0 = function() {
                     _fun90248: for (var _fun90248_ip = 0;;) switch (_fun90248_ip) {
                         case 0:
                             var0 = {
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var10.bind(var2)(var9);
                             var9 = var9.ImageIcon;
                             var0.IconComponent = var9;
-                            var9 = function(arg0) { // Original name: onPress, environment: var6
+                            var9 = function arg0() {
                                 var3 = _closure2_slot2;
                                 var0 = _closure1_slot6;
                                 var2 = var0.ALL_PHOTOS;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var8.bind(var2)(var7);
                             var7 = var7.MediaKeyboardButtonIcon;
                             var0.IconComponent = var7;
-                            var6 = function(arg0) { // Original name: onPress, environment: var6
+                            var6 = function arg0() {
                                 var3 = _closure2_slot2;
                                 var0 = _closure1_slot6;
                                 var2 = var0.PHOTOS;

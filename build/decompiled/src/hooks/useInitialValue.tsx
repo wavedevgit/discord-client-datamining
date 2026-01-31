@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'hooks/useInitialValue.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useInitialValue, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.useState;
         var0 = arg0;

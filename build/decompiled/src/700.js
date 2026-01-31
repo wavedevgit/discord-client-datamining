@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3 + var4;
         case 110:
             var _closure1_slot0 = var2;
-            var2 = function(arg0) { // Original name: isMasked, environment: var1
+            var2 = function arg0() {
                 _fun8280: for (var _fun8280_ip = 0;;) switch (_fun8280_ip) {
                     case 0:
                         var2 = _closure1_slot0;

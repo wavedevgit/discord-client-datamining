@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.sparklingIcon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: AddReactionButton, environment: var1
+    var3 = function arg0() {
         _fun77886: for (var _fun77886_ip = 0;;) switch (_fun77886_ip) {
             case 0:
                 var0 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var14.bind(var15)(var13);
             case 374:
                 var4.accessibilityLabel = var9;
-                var9 = function() { // Original name: onPress, environment: var10
+                var9 = function() {
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
                     var0 = 16;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot6;
                 var11 = var11.SUPER_REACTIONS_SPARKLES;
                 var7.groupName = var11;
-                var10 = function(arg0) { // Original name: children, environment: var10
+                var10 = function arg0() {
                     _fun77888: for (var _fun77888_ip = 0;;) switch (_fun77888_ip) {
                         case 0:
                             var0 = arg0;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: AddEmojiButton, environment: var1
+    var3 = function arg0() {
         _fun77890: for (var _fun77890_ip = 0;;) switch (_fun77890_ip) {
             case 0:
                 var0 = arg0;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.accessibilityLabel = var7;
                 var7 = var11 == var15;
                 var4.disabled = var7;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     _fun77891: for (var _fun77891_ip = 0;;) switch (_fun77891_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/action_sheet/native/components/EmojiRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun77892: for (var _fun77892_ip = 0;;) switch (_fun77892_ip) {
             case 0:
                 var0 = arg0;

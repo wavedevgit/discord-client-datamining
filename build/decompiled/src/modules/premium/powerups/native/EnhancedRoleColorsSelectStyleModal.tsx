@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/EnhancedRoleColorsSelectStyleModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EnhancedRoleColorsSelectStyleModal, environment: var1
+    var1 = function arg0() {
         _fun115996: for (var _fun115996_ip = 0;;) switch (_fun115996_ip) {
             case 0:
                 var0 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5[2] = var7;
                             var2.style = var5;
                             var2.disabled = var1;
-                            var1 = function() { // Original name: onPress, environment: var10
+                            var1 = function() {
                                 var2 = _closure2_slot1;
                                 var0 = _closure3_slot0;
                                 var1 = var0.id;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.message = var13;
                             var12 = _closure2_slot5;
                             var5.rowGenerator = var12;
-                            var10 = function(arg0) { // Original name: modifyRow, environment: var10
+                            var10 = function arg0() {
                                 var2 = arg0;
                                 var6 = _closure1_slot0;
                                 var4 = _closure1_slot2;

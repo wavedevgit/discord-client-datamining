@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var10;
-    var5 = function(arg0, arg1) { // Original name: constructInPlace, environment: var4
+    var5 = function arg0, arg1() {
         var0 = arg1;
         var2 = _closure1_slot3;
         var1 = arg0;
@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var5;
-    var3 = function(arg0, arg1) { // Original name: isValueEqual, environment: var4
+    var3 = function arg0, arg1() {
         _fun16469: for (var _fun16469_ip = 0;;) switch (_fun16469_ip) {
             case 0:
                 var2 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var3;
-    var1 = function(arg0, arg1) { // Original name: isPlainRecordDataEqual, environment: var4
+    var1 = function arg0, arg1() {
         _fun16470: for (var _fun16470_ip = 0;;) switch (_fun16470_ip) {
             case 0:
                 var6 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.bind(var10)(var8);
     var2.default = var7;
     var2.TypeTag = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: set, environment: var4
+    var6 = function arg0, arg1, arg2() {
         _fun16471: for (var _fun16471_ip = 0;;) switch (_fun16471_ip) {
             case 0:
                 var4 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.set = var6;
-    var6 = function(arg0, arg1) { // Original name: merge, environment: var4
+    var6 = function arg0, arg1() {
         _fun16472: for (var _fun16472_ip = 0;;) switch (_fun16472_ip) {
             case 0:
                 var0 = arg0;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.merge = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: tryReuseExistingInPlacePlainRecord, environment: var4
+    var6 = function arg0, arg1, arg2() {
         _fun16473: for (var _fun16473_ip = 0;;) switch (_fun16473_ip) {
             case 0:
                 var4 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.tryReuseExistingInPlacePlainRecord = var6;
-    var6 = function(arg0, arg1) { // Original name: objectIsPlainRecordOfType, environment: var4
+    var6 = function arg0, arg1() {
         _fun16474: for (var _fun16474_ip = 0;;) switch (_fun16474_ip) {
             case 0:
                 var3 = arg1;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.objectIsPlainRecordOfType = var6;
     var2.constructInPlace = var5;
-    var4 = function(arg0, arg1) { // Original name: copyConstruct, environment: var4
+    var4 = function arg0, arg1() {
         var0 = {};
         var3 = arg1;
         var4 = var0;

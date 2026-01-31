@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun117250: for (var _fun117250_ip = 0;;) switch (_fun117250_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun117252: for (var _fun117252_ip = 0;;) switch (_fun117252_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117253: for (var _fun117253_ip = 0;;) switch (_fun117253_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: getDeliveredNotifications, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _getDeliveredNotifications, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: updateAndClearStaleNotifications, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _updateAndClearStaleNotifications, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun117263
                         }
                     case 30:
-                        var3 = function() { // Original name: clearStaleNotifications, environment: var3
+                        var3 = function() {
                             _fun117264: for (var _fun117264_ip = 0;;) switch (_fun117264_ip) {
                                 case 0:
                                     var4 = _closure1_slot0;
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: NativeNotificationsManager, environment: var0
+        var2 = function arg0() {
             _fun117268: for (var _fun117268_ip = 0;;) switch (_fun117268_ip) {
                 case 0:
                     var5 = this;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     };
                                     var10 = var21.bind(var22)(var10);
                                 case 369:
-                                    var16 = function(arg0) { // Original name: normalizeTimestampToMs, environment: var9
+                                    var16 = function arg0() {
                                         _fun117277: for (var _fun117277_ip = 0;;) switch (_fun117277_ip) {
                                             case 0:
                                                 var4 = arg0;

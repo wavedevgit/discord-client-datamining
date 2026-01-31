@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: ReportAppProfile, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.user;
         var _closure2_slot0 = var1;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.children = var8;
         var5 = var7.bind(var2)(var6, var5);
         var0.subLabel = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var3 = _closure1_slot2;
             var0 = 7;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: ReportAppBehavior, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.user;
         var _closure2_slot0 = var1;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6.children = var9;
         var6 = var8.bind(var3)(var7, var6);
         var0.subLabel = var6;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             _fun91851: for (var _fun91851_ip = 0;;) switch (_fun91851_ip) {
                 case 0:
                     var1 = _closure2_slot6;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/in_app_reports/native/BotReportChooser.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: BotReportChooser, environment: var3
+    var3 = function arg0() {
         var11 = arg0;
         var3 = _closure1_slot4;
         var5 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun55056: for (var _fun55056_ip = 0;;) switch (_fun55056_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: MediaPostSharePromptStore, environment: var5
+        var3 = function() {
             _fun55060: for (var _fun55060_ip = 0;;) switch (_fun55060_ip) {
                 case 0:
                     var3 = this;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot9;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldDisplayPrompt';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot11;
             var1 = var2.has;
             var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleConnectionOpen, environment: var3
+    var8 = function() {
         var0 = global;
         var0 = var0.Set;
         var1 = var0.prototype;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleMessageCreate, environment: var3
+    var8 = function arg0() {
         _fun55064: for (var _fun55064_ip = 0;;) switch (_fun55064_ip) {
             case 0:
                 var0 = arg0;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleDismissMediaPostSharePrompt, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.threadId;
         var1 = _closure1_slot11;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DISMISS_MEDIA_POST_SHARE_PROMPT = var8;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var1 = _closure1_slot11;
         var0 = var1.clear;
         var0 = var0.bind(var1)();

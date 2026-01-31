@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0, arg1) { // Original name: ChatUpdatesQueue, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'hasUpdates';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.queue;
             var1 = var0.length;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isBlocking';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun77003: for (var _fun77003_ip = 0;;) switch (_fun77003_ip) {
                 case 0:
                     var1 = this;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'addBlocker';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77004: for (var _fun77004_ip = 0;;) switch (_fun77004_ip) {
                 case 0:
                     var2 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeBlocker';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77005: for (var _fun77005_ip = 0;;) switch (_fun77005_ip) {
                 case 0:
                     var3 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'add';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77006: for (var _fun77006_ip = 0;;) switch (_fun77006_ip) {
                 case 0:
                     var1 = this;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'tryFlush';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun77007: for (var _fun77007_ip = 0;;) switch (_fun77007_ip) {
                 case 0:
                     var1 = this;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'flush';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var2 = null;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'cleanup';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var2 = var0.addBlockerSubscription;
             var1 = var2.remove;

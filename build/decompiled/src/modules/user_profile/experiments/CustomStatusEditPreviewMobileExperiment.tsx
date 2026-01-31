@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_profile/experiments/CustomStatusEditPreviewMobileExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.CustomStatusEditPreviewMobileExperiment = var3;
-    var1 = function(arg0) { // Original name: useIsEligibleForCustomStatusEditPreviewMobileExperiment, environment: var1
+    var1 = function arg0() {
         _fun92265: for (var _fun92265_ip = 0;;) switch (_fun92265_ip) {
             case 0:
                 var1 = arg0;

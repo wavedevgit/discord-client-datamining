@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: isVoiceChannelFull, environment: var1
+    var0 = function arg0, arg1() {
         _fun64312: for (var _fun64312_ip = 0;;) switch (_fun64312_ip) {
             case 0:
                 var3 = arg1;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var6 = function(arg0, arg1) { // Original name: watchStream, environment: var1
+    var6 = function arg0, arg1() {
         _fun64313: for (var _fun64313_ip = 0;;) switch (_fun64313_ip) {
             case 0:
                 var1 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var6;
-    var5 = function(arg0, arg1) { // Original name: watchStreamAndTransitionToStream, environment: var1
+    var5 = function arg0, arg1() {
         _fun64315: for (var _fun64315_ip = 0;;) switch (_fun64315_ip) {
             case 0:
                 var2 = arg0;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var5;
-    var4 = function(arg0) { // Original name: stopStream, environment: var1
+    var4 = function arg0() {
         _fun64316: for (var _fun64316_ip = 0;;) switch (_fun64316_ip) {
             case 0:
                 var5 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var4;
-    var3 = function(arg0) { // Original name: closeStream, environment: var1
+    var3 = function arg0() {
         _fun64317: for (var _fun64317_ip = 0;;) switch (_fun64317_ip) {
             case 0:
                 var4 = arguments[1];
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var3;
-    var0 = function() { // Original name: _fetchStreamPreview, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: _notifyStreamStart, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'actions/StreamActionCreators.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0, arg1, arg2) { // Original name: startStream, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun64324: for (var _fun64324_ip = 0;;) switch (_fun64324_ip) {
             case 0:
                 var5 = arg0;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.startStream = var7;
-    var7 = function(arg0, arg1) { // Original name: setStreamPaused, environment: var1
+    var7 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 13;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setStreamPaused = var7;
     var2.watchStream = var6;
-    var6 = function(arg0, arg1) { // Original name: toggleSelfStreamHidden, environment: var1
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.watchStreamAndTransitionToStream = var5;
     var2.stopStream = var4;
     var2.closeStream = var3;
-    var3 = function() { // Original name: fetchStreamPreview, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchStreamPreview = var3;
-    var3 = function(arg0) { // Original name: setLayout, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setLayout = var3;
-    var3 = function(arg0) { // Original name: setHackyMacMode, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setHackyMacMode = var3;
-    var3 = function() { // Original name: notifyStreamStart, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot24;
         var2 = var3.apply;
@@ -802,7 +802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.notifyStreamStart = var3;
-    var3 = function(arg0) { // Original name: updateStreamSettings, environment: var1
+    var3 = function arg0() {
         _fun64331: for (var _fun64331_ip = 0;;) switch (_fun64331_ip) {
             case 0:
                 var4 = arg0;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateStreamSettings = var3;
-    var3 = function(arg0, arg1) { // Original name: changeStreamRegion, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 19;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.changeStreamRegion = var3;
-    var3 = function() { // Original name: stopOwnStream, environment: var1
+    var3 = function() {
         _fun64333: for (var _fun64333_ip = 0;;) switch (_fun64333_ip) {
             case 0:
                 var3 = arguments[0];
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.stopOwnStream = var3;
-    var1 = function(arg0, arg1) { // Original name: joinPrivateChannelAndWatchStream, environment: var1
+    var1 = function arg0, arg1() {
         _fun64334: for (var _fun64334_ip = 0;;) switch (_fun64334_ip) {
             case 0:
                 var5 = arg0;

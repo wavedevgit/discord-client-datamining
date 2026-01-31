@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function() { // Original name: reportPageLoaded, environment: var0
+    var0 = function() {
         _fun12004: for (var _fun12004_ip = 0;;) switch (_fun12004_ip) {
             case 0:
                 var0 = undefined;

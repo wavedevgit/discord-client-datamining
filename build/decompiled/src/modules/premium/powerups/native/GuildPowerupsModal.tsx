@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/GuildPowerupsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPowerupsModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.guildId;
         var _closure2_slot0 = var11;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15 = var15.hjvcLO;
         var15 = var18.bind(var21)(var15);
         var8.title = var15;
-        var15 = function() { // Original name: headerTitle, environment: var16
+        var15 = function() {
             var3 = _closure1_slot8;
             var6 = _closure1_slot0;
             var8 = _closure1_slot2;

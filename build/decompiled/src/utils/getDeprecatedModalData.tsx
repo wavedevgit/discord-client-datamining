@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/getDeprecatedModalData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: getDeprecatedModalData, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun41128: for (var _fun41128_ip = 0;;) switch (_fun41128_ip) {
             case 0:
                 var2 = arg1;

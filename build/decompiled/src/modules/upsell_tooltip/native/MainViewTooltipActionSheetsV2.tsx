@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: getActionSheetType, environment: var4
+    var0 = function arg0() {
         _fun110167: for (var _fun110167_ip = 0;;) switch (_fun110167_ip) {
             case 0:
                 var4 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var1 = function(arg0) { // Original name: trackActionSheetImpression, environment: var4
+    var1 = function arg0() {
         var6 = arg0;
         var1 = _closure1_slot8;
         var0 = var1.getContent;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot11 = var3;
-    var11 = function() { // Original name: GiftingPromotionCoachmarkImporter, environment: var4
+    var11 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var5.DismissibleContent;
     var5 = var5.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET;
     var3.id = var5;
-    var5 = function() { // Original name: importer, environment: var4
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var12.DismissibleContent;
     var12 = var12.DISCOUNT_OFFER_ACTION_SHEET;
     var3.id = var12;
-    var12 = function() { // Original name: importer, environment: var4
+    var12 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var12.DismissibleContent;
     var12 = var12.MOBILE_BOGO_PROMOTION_ACTION_SHEET;
     var3.id = var12;
-    var12 = function() { // Original name: importer, environment: var4
+    var12 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var12.DismissibleContent;
     var12 = var12.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
     var8.id = var12;
-    var12 = function() { // Original name: importer, environment: var4
+    var12 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.DismissibleContent;
     var11 = var11.NOTIFICATION_NUDGE_APP_START_BOTTOM_SHEET;
     var8.id = var11;
-    var11 = function() { // Original name: importer, environment: var4
+    var11 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.DismissibleContent;
     var11 = var11.CUSTOM_APP_ICONS_COACHMARK;
     var8.id = var11;
-    var11 = function() { // Original name: importer, environment: var4
+    var11 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.DismissibleContent;
     var11 = var11.ROBLOX_CONNECTION_COACHMARK;
     var8.id = var11;
-    var11 = function() { // Original name: importer, environment: var4
+    var11 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.DismissibleContent;
     var11 = var11.DISPLAY_NAME_STYLES_MOBILE_ANNOUNCEMENT_MODAL;
     var8.id = var11;
-    var11 = function() { // Original name: importer, environment: var4
+    var11 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.DismissibleContent;
     var10 = var10.INSTALLED_GAME_COMMUNITY_UPSELL;
     var8.id = var10;
-    var10 = function() { // Original name: importer, environment: var4
+    var10 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/upsell_tooltip/native/MainViewTooltipActionSheetsV2.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function() { // Original name: MainViewTooltipActionSheetsV2, environment: var4
+    var4 = function() {
         _fun110179: for (var _fun110179_ip = 0;;) switch (_fun110179_ip) {
             case 0:
                 var7 = _closure1_slot0;
@@ -768,7 +768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot10;
                 var11 = var11.MAIN_VIEW_TOOLTIPS;
                 var1.groupName = var11;
-                var11 = function(arg0) { // Original name: children, environment: var5
+                var11 = function arg0() {
                     _fun110190: for (var _fun110190_ip = 0;;) switch (_fun110190_ip) {
                         case 0:
                             var0 = arg0;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.MAIN_VIEW_TOOLTIPS;
                 var1.groupName = var11;
                 var1.bypassAutoDismiss = var10;
-                var10 = function(arg0) { // Original name: children, environment: var5
+                var10 = function arg0() {
                     _fun110189: for (var _fun110189_ip = 0;;) switch (_fun110189_ip) {
                         case 0:
                             var0 = arg0;
@@ -892,7 +892,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot10;
                 var9 = var9.MAIN_VIEW_TOOLTIPS;
                 var1.groupName = var9;
-                var9 = function(arg0) { // Original name: children, environment: var5
+                var9 = function arg0() {
                     _fun110188: for (var _fun110188_ip = 0;;) switch (_fun110188_ip) {
                         case 0:
                             var0 = arg0;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot10;
                 var6 = var6.MAIN_VIEW_TOOLTIPS;
                 var1.groupName = var6;
-                var5 = function(arg0) { // Original name: children, environment: var5
+                var5 = function arg0() {
                     _fun110187: for (var _fun110187_ip = 0;;) switch (_fun110187_ip) {
                         case 0:
                             var0 = arg0;

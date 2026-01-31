@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/share/native/ShareEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ShareEmbed, environment: var1
+    var1 = function arg0() {
         _fun96425: for (var _fun96425_ip = 0;;) switch (_fun96425_ip) {
             case 0:
                 var2 = arg0;

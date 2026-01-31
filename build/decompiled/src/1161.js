@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var0;
             var0 = dependencyMap;
             var _closure1_slot1 = var0;
-            var0 = function() { // Original name: fetchNativeFrames, environment: var2
+            var0 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var0 = var2.prototype;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot5 = var0;
-            var0 = function(arg0, arg1) { // Original name: isClose, environment: var2
+            var0 = function arg0, arg1() {
                 var0 = global;
                 var2 = var0.Math;
                 var1 = var2.abs;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun12649: for (var _fun12649_ip = 0;;) switch (_fun12649_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun12650: for (var _fun12650_ip = 0;;) switch (_fun12650_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -203,7 +203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun12651: for (var _fun12651_ip = 0;;) switch (_fun12651_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun12652: for (var _fun12652_ip = 0;;) switch (_fun12652_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -296,7 +296,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot2 = var0;
             var0 = 'NativeFrames';
             var _closure1_slot3 = var0;
-            var0 = function() { // Original name: nativeFramesIntegration, environment: var2
+            var0 = function() {
                 var0 = null;
                 var _closure2_slot0 = var0;
                 var4 = _closure1_slot0;
@@ -337,7 +337,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = new var10[var4](var9, var8);
                 var0 = var0 instanceof Object ? var0 : var3;
                 var _closure2_slot2 = var0;
-                var0 = function(arg0) { // Original name: fetchStartFramesForSpan, environment: var1
+                var0 = function arg0() {
                     _fun12655: for (var _fun12655_ip = 0;;) switch (_fun12655_ip) {
                         case 0:
                             var3 = arg0;
@@ -434,7 +434,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot3 = var0;
-                var0 = function(arg0) { // Original name: fetchEndFramesForSpan, environment: var1
+                var0 = function arg0() {
                     _fun12659: for (var _fun12659_ip = 0;;) switch (_fun12659_ip) {
                         case 0:
                             var5 = arg0;
@@ -607,7 +607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = _closure1_slot3;
                 var0.name = var2;
-                var2 = function(arg0) { // Original name: setup, environment: var1
+                var2 = function arg0() {
                     _fun12665: for (var _fun12665_ip = 0;;) switch (_fun12665_ip) {
                         case 0:
                             var4 = arg0;
@@ -660,7 +660,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.setup = var2;
-                var1 = function(arg0) { // Original name: processEvent, environment: var1
+                var1 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var2 = _closure1_slot2;
@@ -1019,7 +1019,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot4 = var0;
-            var2 = function(arg0) { // Original name: createNativeFramesIntegrations, environment: var2
+            var2 = function arg0() {
                 _fun12669: for (var _fun12669_ip = 0;;) switch (_fun12669_ip) {
                     case 0:
                         var0 = arg0;

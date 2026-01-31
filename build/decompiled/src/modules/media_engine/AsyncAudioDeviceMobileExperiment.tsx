@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/media_engine/AsyncAudioDeviceMobileExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.AsyncAudioDeviceMobileExperiment = var3;
-    var1 = function(arg0) { // Original name: getAsyncAudioDeviceMobileExperimentConfig, environment: var1
+    var1 = function arg0() {
         _fun94402: for (var _fun94402_ip = 0;;) switch (_fun94402_ip) {
             case 0:
                 var1 = arg0;

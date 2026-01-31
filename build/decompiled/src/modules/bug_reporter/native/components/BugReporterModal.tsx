@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: handleClose, environment: var3
+    var0 = function() {
         var3 = _closure1_slot9;
         var2 = var3.setState;
         var1 = {};
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var1 = function(arg0) { // Original name: BugCreateScreen, environment: var3
+    var1 = function arg0() {
         _fun70072: for (var _fun70072_ip = 0;;) switch (_fun70072_ip) {
             case 0:
                 var0 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[9] = var9;
                 var1[10] = var0;
                 var0 = function() { // Environment: var6
-                    var0 = function() { // Original name: handleSubmit, environment: var3
+                    var0 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot1;
                         var2 = var3.apply;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var0;
-                    var0 = function() { // Original name: _handleSubmit, environment: var3
+                    var0 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = undefined;
                                         var9 = undefined;
                                         var5 = undefined;
-                                        var2 = function() { // Original name: _submitReportWithNotifications, environment: var4
+                                        var2 = function() {
                                             var3 = undefined;
                                             var0 = undefined;
                                             var2 = _closure1_slot3;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var12.url = var11;
                                         var11 = {};
                                         var11.overridePlatformInformation = var8;
-                                        var4 = function(arg0, arg1, arg2) { // Original name: submitReportWithNotifications, environment: var4
+                                        var4 = function arg0, arg1, arg2() {
                                             var0 = undefined;
                                             var3 = _closure6_slot0;
                                             var2 = var3.apply;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot21;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         _fun70089: for (var _fun70089_ip = 0;;) switch (_fun70089_ip) {
                             case 0:
                                 var3 = _closure1_slot10;
@@ -912,7 +912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var6
                     _fun70090: for (var _fun70090_ip = 0;;) switch (_fun70090_ip) {
                         case 0:
-                            var1 = function() { // Original name: _fetchConfig, environment: var0
+                            var1 = function() {
                                 var3 = undefined;
                                 var0 = undefined;
                                 var2 = _closure1_slot3;
@@ -972,7 +972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun70090
                             }
                         case 23:
-                            var1 = function() { // Original name: fetchConfig, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure3_slot0;
                                 var2 = var3.apply;
@@ -1137,7 +1137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var1 = var3.bind(var2)(var1);
                     var _closure3_slot0 = var1;
-                    var0 = function() { // Original name: handleAttachmentSelect, environment: var0
+                    var0 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;
@@ -1392,7 +1392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = {};
                 var30 = var5 == var30;
                 var27.disabled = var30;
-                var30 = function() { // Original name: onPress, environment: var6
+                var30 = function() {
                     _fun70105: for (var _fun70105_ip = 0;;) switch (_fun70105_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -1646,7 +1646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.Colors;
                 var17 = var17.TRANSPARENT;
                 var14.color = var17;
-                var17 = function() { // Original name: onPress, environment: var6
+                var17 = function() {
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
                     var0 = 44;
@@ -1708,7 +1708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 2262:
                 var8 = _closure1_slot10;
-                var7 = function() { // Original name: Submitting, environment: var6
+                var7 = function() {
                     var0 = _closure1_slot14;
                     var3 = undefined;
                     var8 = var0.bind(var3)();
@@ -1943,7 +1943,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/bug_reporter/native/components/BugReporterModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: BugReportModal, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.screenshotUri;
         var _closure2_slot0 = var6;
@@ -1960,7 +1960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.screenshotUri = var1;
             var0 = _closure2_slot1;
             var2.screenshot = var0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = {};
                 var1 = {};
                 var6 = _closure1_slot0;
@@ -1979,7 +1979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.title = var2;
                 var2 = arg0;
                 var1.initialParams = var2;
-                var2 = function(arg0) { // Original name: render, environment: var2
+                var2 = function arg0() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot20;
                     var1 = {};

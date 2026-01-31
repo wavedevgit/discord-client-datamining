@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: getDeafStates, environment: var3
+    var1 = function arg0() {
         _fun68530: for (var _fun68530_ip = 0;;) switch (_fun68530_ip) {
             case 0:
                 var4 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/video_calls/useDeafStates.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useDeafStates, environment: var3
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

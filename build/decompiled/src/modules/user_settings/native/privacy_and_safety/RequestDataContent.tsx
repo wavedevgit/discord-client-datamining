@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10.NYgNg9;
         var10 = var11.bind(var12)(var10);
         var5.text = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             _fun81688: for (var _fun81688_ip = 0;;) switch (_fun81688_ip) {
                 case 0:
                     var1 = global;

@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.rating = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot8 = var6;
-    var6 = function() { // Original name: onClose, environment: var1
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/native/NotificationSurveyResponseActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationSurveyResponseActionSheet, environment: var1
+    var1 = function arg0() {
         _fun76318: for (var _fun76318_ip = 0;;) switch (_fun76318_ip) {
             case 0:
                 var0 = arg0;

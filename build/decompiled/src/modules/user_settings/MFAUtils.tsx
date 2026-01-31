@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/MFAUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getSMSBackupDisabledMessage, environment: var1
+    var3 = function arg0() {
         _fun81106: for (var _fun81106_ip = 0;;) switch (_fun81106_ip) {
             case 0:
                 var0 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSMSBackupDisabledMessage = var3;
-    var1 = function() { // Original name: use2FARemoveDisableReason, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 5;

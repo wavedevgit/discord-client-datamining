@@ -5,8 +5,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: AsyncFromSyncIterator, environment: var1
-        var0 = function(arg0) { // Original name: AsyncFromSyncIteratorContinuation, environment: var3
+    var0 = function arg0() {
+        var0 = function arg0() {
             _fun9973: for (var _fun9973_ip = 0;;) switch (_fun9973_ip) {
                 case 0:
                     var3 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var _closure2_slot0 = var0;
-        var2 = function(arg0) { // Original name: AsyncFromSyncIterator, environment: var3
+        var2 = function arg0() {
             var0 = arg0;
             var1 = this;
             var1.s = var0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             's': null,
             'n': null
         };
-        var4 = function() { // Original name: next, environment: var3
+        var4 = function() {
             var3 = this;
             var2 = undefined;
             var0 = undefined;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var1.next = var4;
-        var4 = function(arg0) { // Original name: _return, environment: var3
+        var4 = function arg0() {
             _fun9977: for (var _fun9977_ip = 0;;) switch (_fun9977_ip) {
                 case 0:
                     var3 = this;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var1.return = var4;
-        var3 = function(arg0) { // Original name: _throw, environment: var3
+        var3 = function arg0() {
             _fun9978: for (var _fun9978_ip = 0;;) switch (_fun9978_ip) {
                 case 0:
                     var3 = this;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: processEvent, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun9979: for (var _fun9979_ip = 0;;) switch (_fun9979_ip) {
             case 0:
                 var2 = arg0;
@@ -598,7 +598,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: _instrumentAsyncIterableStream, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -2817,7 +2817,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: instrumentAsyncIterableStream, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -2828,7 +2828,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.instrumentAsyncIterableStream = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: instrumentMessageStream, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var0 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var2;

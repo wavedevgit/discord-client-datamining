@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun36849: for (var _fun36849_ip = 0;;) switch (_fun36849_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun36851: for (var _fun36851_ip = 0;;) switch (_fun36851_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var7 = function(arg0, arg1, arg2) { // Original name: makeFile, environment: var1
+    var7 = function arg0, arg1, arg2() {
         var0 = global;
         var4 = var0.File;
         var3 = new Array(1);
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var7;
-    var6 = function(arg0, arg1) { // Original name: classifyFileName, environment: var1
+    var6 = function arg0, arg1() {
         _fun36853: for (var _fun36853_ip = 0;;) switch (_fun36853_ip) {
             case 0:
                 var4 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var6;
-    var5 = function(arg0) { // Original name: maxFileSize, environment: var1
+    var5 = function arg0() {
         _fun36855: for (var _fun36855_ip = 0;;) switch (_fun36855_ip) {
             case 0:
                 var5 = arg0;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var5;
-    var4 = function(arg0) { // Original name: getUploadFileSizeSum, environment: var1
+    var4 = function arg0() {
         _fun36856: for (var _fun36856_ip = 0;;) switch (_fun36856_ip) {
             case 0:
                 var1 = _closure1_slot9;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var4;
-    var3 = function() { // Original name: getMaxRequestSize, environment: var1
+    var3 = function() {
         _fun36857: for (var _fun36857_ip = 0;;) switch (_fun36857_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.fileFinishedImporting;
     var8 = 'utils/FileUtils.tsx';
     var8 = var9.bind(var10)(var8);
-    var8 = function(arg0, arg1) { // Original name: transformNativeFile, environment: var1
+    var8 = function arg0, arg1() {
         _fun36858: for (var _fun36858_ip = 0;;) switch (_fun36858_ip) {
             case 0:
                 var2 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transformNativeFile = var8;
     var2.makeFile = var7;
-    var7 = function(arg0) { // Original name: classifyFile, environment: var1
+    var7 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot12;
         var2 = var0.name;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.classifyFile = var7;
     var2.classifyFileName = var6;
-    var6 = function(arg0) { // Original name: sizeString, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sizeString = var6;
     var2.maxFileSize = var5;
-    var5 = function(arg0, arg1) { // Original name: anyFileTooLarge, environment: var1
+    var5 = function arg0, arg1() {
         var3 = _closure1_slot13;
         var2 = undefined;
         var1 = arg1;
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.anyFileTooLarge = var5;
     var2.getUploadFileSizeSum = var4;
-    var4 = function(arg0) { // Original name: uploadSumTooLarge, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot14;
         var2 = undefined;
         var1 = arg0;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.uploadSumTooLarge = var4;
     var2.getMaxRequestSize = var3;
-    var1 = function(arg0) { // Original name: fileUploadLimitRoadblockDescription, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.guildId;
         var4 = var0.onClick;

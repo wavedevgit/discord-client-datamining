@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.stripUrlQueryAndFragment;
     var2.stripUrlQueryAndFragment = var3;
-    var3 = function(arg0) { // Original name: getCapturedScopesOnSpan, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1._sentryScope;
@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getCapturedScopesOnSpan = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: setCapturedScopesOnSpan, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun99183: for (var _fun99183_ip = 0;;) switch (_fun99183_ip) {
             case 0:
                 var4 = arg0;

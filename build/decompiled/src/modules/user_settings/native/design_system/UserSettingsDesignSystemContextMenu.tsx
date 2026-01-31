@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: contextMenuItems, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 'destructive';
                 case 82:
                     var0.variant = var1;
-                    var1 = function() { // Original name: action, environment: var1
+                    var1 = function() {
                         var0 = undefined;
                         return var0;
                     };
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: DemoContextMenu, environment: var1
+    var0 = function arg0() {
         _fun87784: for (var _fun87784_ip = 0;;) switch (_fun87784_ip) {
             case 0:
                 var1 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.align = var8;
                 var8 = 'Sample title';
                 var4.title = var8;
-                var7 = function(arg0) { // Original name: children, environment: var7
+                var7 = function arg0() {
                     var2 = arg0;
                     var5 = var2.ref;
                     var0 = null;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemContextMenu.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemAlertModal, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var10 = var0.bind(var3)();

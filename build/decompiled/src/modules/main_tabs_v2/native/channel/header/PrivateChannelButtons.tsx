@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot21 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PrivateChannelButtons, environment: var1
+    var1 = function arg0() {
         _fun71951: for (var _fun71951_ip = 0;;) switch (_fun71951_ip) {
             case 0:
                 var0 = arg0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun71958
                             }
                         case 47:
-                            var3 = function() { // Original name: startCall, environment: var2
+                            var3 = function() {
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
                                 var0 = 21;
@@ -971,7 +971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1143:
                 var22[2] = var23;
                 var9.style = var22;
-                var22 = function() { // Original name: onPress, environment: var4
+                var22 = function() {
                     _fun71966: for (var _fun71966_ip = 0;;) switch (_fun71966_ip) {
                         case 0:
                             var1 = _closure2_slot10;
@@ -1386,7 +1386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var7 = var7.button;
                 var0.style = var7;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 35;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: usePlatformAllowed, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var1 = var1.forUserProfile;
         var _closure2_slot0 = var1;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/connections/ConnectionsHooks.tsx';
     var4 = var5.bind(var6)(var4);
     var2.usePlatformAllowed = var3;
-    var3 = function() { // Original name: usePlatforms, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
         var1 = 7;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.usePlatforms = var3;
-    var3 = function() { // Original name: useEmptyStatePlatforms, environment: var1
+    var3 = function() {
         var4 = _closure1_slot14;
         var3 = {};
         var2 = false;
@@ -458,11 +458,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEmptyStatePlatforms = var3;
-    var1 = function(arg0) { // Original name: useLegacyPlatformType, environment: var1
+    var1 = function arg0() {
         _fun40608: for (var _fun40608_ip = 0;;) switch (_fun40608_ip) {
             case 0:
                 var3 = arg0;
-                var1 = function(arg0) { // Original name: handleKeyDown, environment: var0
+                var1 = function arg0() {
                     _fun40609: for (var _fun40609_ip = 0;;) switch (_fun40609_ip) {
                         case 0:
                             var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot1 = var1;
-                var1 = function(arg0) { // Original name: handleKeyUp, environment: var0
+                var1 = function arg0() {
                     _fun40610: for (var _fun40610_ip = 0;;) switch (_fun40610_ip) {
                         case 0:
                             var0 = arg0;

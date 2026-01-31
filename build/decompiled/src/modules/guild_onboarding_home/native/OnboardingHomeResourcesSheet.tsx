@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/OnboardingHomeResourcesSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OnboardingHomeResourcesSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var _closure2_slot0 = var2;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var9.bind(var4)(var8, var7);
                 case 169:
                     var1.icon = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var0 = _closure3_slot0;
                         var6 = var0.channelId;
                         var2 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var3 = function() { // Original name: getToken, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/AuthenticationUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getToken = var3;
-    var3 = function() { // Original name: isAuthenticated, environment: var1
+    var3 = function() {
         var1 = _closure1_slot3;
         var0 = undefined;
         var1 = var1.bind(var0)();

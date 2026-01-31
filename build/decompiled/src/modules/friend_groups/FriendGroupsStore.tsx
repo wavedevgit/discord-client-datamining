@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun95374: for (var _fun95374_ip = 0;;) switch (_fun95374_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun95377: for (var _fun95377_ip = 0;;) switch (_fun95377_ip) {
             case 0:
                 var2 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun95379: for (var _fun95379_ip = 0;;) switch (_fun95379_ip) {
             case 0:
                 var3 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: FriendGroupsStore, environment: var5
+        var3 = function() {
             _fun95381: for (var _fun95381_ip = 0;;) switch (_fun95381_ip) {
                 case 0:
                     var3 = this;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun95382: for (var _fun95382_ip = 0;;) switch (_fun95382_ip) {
                 case 0:
                     var2 = arg0;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGroups';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGroup';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95384: for (var _fun95384_ip = 0;;) switch (_fun95384_ip) {
                 case 0:
                     var1 = arg0;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGroupIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot10;
             var1 = var2.map;
             var0 = function(arg0) { // Environment: var0
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserGroups';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var2 = _closure1_slot10;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isGroupEmpty';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95390: for (var _fun95390_ip = 0;;) switch (_fun95390_ip) {
                 case 0:
                     var2 = this;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isInitialized';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = {};
             var2 = _closure1_slot10;
             var0.groups = var2;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleInitializeFriendGroups, environment: var3
+    var8 = function() {
         _fun95393: for (var _fun95393_ip = 0;;) switch (_fun95393_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun95393
                 }
             case 25:
-                var1 = function() { // Original name: getFrequentFriendUserIds, environment: var0
+                var1 = function() {
                     _fun95394: for (var _fun95394_ip = 0;;) switch (_fun95394_ip) {
                         case 0:
                             var2 = _closure1_slot6;
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.POST_CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleCreateFriendGroup, environment: var3
+    var8 = function arg0() {
         _fun95396: for (var _fun95396_ip = 0;;) switch (_fun95396_ip) {
             case 0:
                 var1 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CREATE_FRIEND_GROUP = var8;
-    var8 = function(arg0) { // Original name: handleUpdateFriendGroup, environment: var3
+    var8 = function arg0() {
         _fun95398: for (var _fun95398_ip = 0;;) switch (_fun95398_ip) {
             case 0:
                 var1 = arg0;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPDATE_FRIEND_GROUP = var8;
-    var8 = function(arg0) { // Original name: handleDeleteFriendGroup, environment: var3
+    var8 = function arg0() {
         var1 = arg0;
         var1 = var1.groupId;
         var _closure2_slot0 = var1;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DELETE_FRIEND_GROUP = var8;
-    var8 = function(arg0) { // Original name: handleReorderFriendGroups, environment: var3
+    var8 = function arg0() {
         _fun95402: for (var _fun95402_ip = 0;;) switch (_fun95402_ip) {
             case 0:
                 var0 = arg0;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.REORDER_FRIEND_GROUPS = var8;
-    var8 = function(arg0) { // Original name: handleAddUsersToGroup, environment: var3
+    var8 = function arg0() {
         _fun95404: for (var _fun95404_ip = 0;;) switch (_fun95404_ip) {
             case 0:
                 var1 = arg0;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.ADD_USERS_TO_GROUP = var8;
-    var3 = function(arg0) { // Original name: handleRemoveUsersFromGroup, environment: var3
+    var3 = function arg0() {
         _fun95407: for (var _fun95407_ip = 0;;) switch (_fun95407_ip) {
             case 0:
                 var1 = arg0;

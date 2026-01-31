@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun64559: for (var _fun64559_ip = 0;;) switch (_fun64559_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: VoiceChannelEffectsStore, environment: var5
+        var3 = function() {
             _fun64564: for (var _fun64564_ip = 0;;) switch (_fun64564_ip) {
                 case 0:
                     var3 = this;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'recentlyUsedEmojis';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isOnCooldown';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun64566: for (var _fun64566_ip = 0;;) switch (_fun64566_ip) {
                 case 0:
                     var2 = _closure1_slot3;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'effectCooldownEndTime';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot3;
             return var0;
         };
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEffectForUserId';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot11;
             var0 = arg0;
             var0 = var1[var0];
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var12 = var4.bind(var0)(var3);
     var3 = {};
-    var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_CLEAR, environment: var1
+    var4 = function arg0() {
         _fun64569: for (var _fun64569_ip = 0;;) switch (_fun64569_ip) {
             case 0:
                 var0 = arg0;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.VOICE_CHANNEL_EFFECT_CLEAR = var4;
-    var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_RECENT_EMOJI, environment: var1
+    var4 = function arg0() {
         _fun64570: for (var _fun64570_ip = 0;;) switch (_fun64570_ip) {
             case 0:
                 var0 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.VOICE_CHANNEL_EFFECT_RECENT_EMOJI = var4;
-    var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_SEND, environment: var1
+    var4 = function arg0() {
         _fun64571: for (var _fun64571_ip = 0;;) switch (_fun64571_ip) {
             case 0:
                 var0 = arg0;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.VOICE_CHANNEL_EFFECT_SEND = var4;
-    var4 = function() { // Original name: VOICE_CHANNEL_EFFECT_SENT_LOCAL, environment: var1
+    var4 = function() {
         _fun64572: for (var _fun64572_ip = 0;;) switch (_fun64572_ip) {
             case 0:
                 var0 = global;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.VOICE_CHANNEL_EFFECT_SENT_LOCAL = var4;
-    var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.cooldownEndsAtMs;
         var0 = global;

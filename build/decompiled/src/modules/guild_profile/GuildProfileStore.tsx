@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var9
+    var0 = function() {
         _fun59595: for (var _fun59595_ip = 0;;) switch (_fun59595_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var10 = function(arg0) { // Original name: handleUpdateStart, environment: var9
+    var10 = function arg0() {
         _fun59598: for (var _fun59598_ip = 0;;) switch (_fun59598_ip) {
             case 0:
                 var0 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var4 = function(arg0) { // Original name: handleUpdateFailure, environment: var9
+    var4 = function arg0() {
         _fun59599: for (var _fun59599_ip = 0;;) switch (_fun59599_ip) {
             case 0:
                 var0 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var11 = function(arg0) { // Original name: handleInviteResolveOrCreate, environment: var9
+    var11 = function arg0() {
         _fun59600: for (var _fun59600_ip = 0;;) switch (_fun59600_ip) {
             case 0:
                 var0 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var9
-        var3 = function() { // Original name: GuildProfileStore, environment: var5
+        var3 = function() {
             _fun59602: for (var _fun59602_ip = 0;;) switch (_fun59602_ip) {
                 case 0:
                     var3 = this;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getProfile';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun59603: for (var _fun59603_ip = 0;;) switch (_fun59603_ip) {
                 case 0:
                     var4 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchStatus';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun59604: for (var _fun59604_ip = 0;;) switch (_fun59604_ip) {
                 case 0:
                     var4 = arg0;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastSyncTimestamp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun59605: for (var _fun59605_ip = 0;;) switch (_fun59605_ip) {
                 case 0:
                     var4 = arg0;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsUpdating';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun59606: for (var _fun59606_ip = 0;;) switch (_fun59606_ip) {
                 case 0:
                     var4 = arg0;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getErrorCode';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun59607: for (var _fun59607_ip = 0;;) switch (_fun59607_ip) {
                 case 0:
                     var4 = arg0;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var15 = var7.bind(var0)(var3);
     var3 = {};
-    var12 = function(arg0) { // Original name: handleFetchStart, environment: var9
+    var12 = function arg0() {
         _fun59608: for (var _fun59608_ip = 0;;) switch (_fun59608_ip) {
             case 0:
                 var0 = arg0;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_PROFILE_FETCH = var12;
-    var12 = function(arg0) { // Original name: handleFetchSuccess, environment: var9
+    var12 = function arg0() {
         _fun59609: for (var _fun59609_ip = 0;;) switch (_fun59609_ip) {
             case 0:
                 var0 = arg0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_PROFILE_FETCH_SUCCESS = var12;
-    var12 = function(arg0) { // Original name: handleFetchFailure, environment: var9
+    var12 = function arg0() {
         _fun59610: for (var _fun59610_ip = 0;;) switch (_fun59610_ip) {
             case 0:
                 var0 = arg0;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.GUILD_PROFILE_FETCH_FAILURE = var12;
     var3.GUILD_PROFILE_UPDATE = var10;
-    var12 = function(arg0) { // Original name: handleUpdateSuccess, environment: var9
+    var12 = function arg0() {
         _fun59611: for (var _fun59611_ip = 0;;) switch (_fun59611_ip) {
             case 0:
                 var0 = arg0;
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.GUILD_PROFILE_UPDATE_SUCCESS = var12;
     var3.GUILD_PROFILE_UPDATE_FAILURE = var4;
-    var12 = function(arg0) { // Original name: handleMemberVerificationFormFetch, environment: var9
+    var12 = function arg0() {
         _fun59612: for (var _fun59612_ip = 0;;) switch (_fun59612_ip) {
             case 0:
                 var0 = arg0;
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.MEMBER_VERIFICATION_FORM_UPDATE = var12;
     var3.INVITE_RESOLVE_SUCCESS = var11;
     var3.INSTANT_INVITE_CREATE_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleCreateChannel, environment: var9
+    var11 = function arg0() {
         _fun59613: for (var _fun59613_ip = 0;;) switch (_fun59613_ip) {
             case 0:
                 var0 = arg0;
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_CREATE = var11;
-    var11 = function(arg0) { // Original name: handleSetWidget, environment: var9
+    var11 = function arg0() {
         _fun59614: for (var _fun59614_ip = 0;;) switch (_fun59614_ip) {
             case 0:
                 var0 = arg0;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_SET_WIDGET = var11;
-    var11 = function(arg0) { // Original name: handleGuildUpdate, environment: var9
+    var11 = function arg0() {
         _fun59615: for (var _fun59615_ip = 0;;) switch (_fun59615_ip) {
             case 0:
                 var0 = arg0;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.GUILD_UPDATE = var11;
     var3.GUILD_PROFILE_UPDATE_VISIBILITY = var10;
-    var9 = function(arg0) { // Original name: handleUpdateVisibilitySuccess, environment: var9
+    var9 = function arg0() {
         _fun59616: for (var _fun59616_ip = 0;;) switch (_fun59616_ip) {
             case 0:
                 var0 = arg0;

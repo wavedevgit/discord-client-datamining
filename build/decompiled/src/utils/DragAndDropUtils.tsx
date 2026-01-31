@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: calculatePositionDeltas, environment: var6
+    var4 = function arg0() {
         _fun80288: for (var _fun80288_ip = 0;;) switch (_fun80288_ip) {
             case 0:
                 var0 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: moveItemFromTo, environment: var6
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var5 = arg1;
         var4 = var1[var5];
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var3;
-    var1 = function(arg0) { // Original name: getPositionUpdates, environment: var6
+    var1 = function arg0() {
         _fun80290: for (var _fun80290_ip = 0;;) switch (_fun80290_ip) {
             case 0:
                 var0 = arg0;

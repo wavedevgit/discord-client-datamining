@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.text = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: AnnouncementChannelLurkerBar, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var _closure2_slot0 = var0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var10[var8];
         var6 = var9.bind(var3)(var5);
         var5 = {};
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             _fun76611: for (var _fun76611_ip = 0;;) switch (_fun76611_ip) {
                 case 0:
                     var1 = _closure2_slot0;

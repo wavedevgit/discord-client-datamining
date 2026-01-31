@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun101180: for (var _fun101180_ip = 0;;) switch (_fun101180_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun101182: for (var _fun101182_ip = 0;;) switch (_fun101182_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: checkNodeAndIterate, environment: var1
+    var0 = function arg0() {
         _fun101183: for (var _fun101183_ip = 0;;) switch (_fun101183_ip) {
             case 0:
                 var0 = arg0;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: findFirstOrLastMentionedItem, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun101184: for (var _fun101184_ip = 0;;) switch (_fun101184_ip) {
             case 0:
                 var4 = arg0;
@@ -1026,7 +1026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot20 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildsBarUnreadBars, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var13 = var0.fastList;
         var _closure2_slot0 = var13;
@@ -1230,7 +1230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9[var15];
         var11 = var16.bind(var3)(var2);
         var6 = var11.useAnimatedReaction;
-        var4 = function() { // Original name: h, environment: var1
+        var4 = function() {
             var1 = _closure2_slot4;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -1243,7 +1243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.__workletHash = var2;
         var2 = _closure1_slot19;
         var4.__initData = var2;
-        var2 = function(arg0, arg1) { // Original name: _, environment: var1
+        var2 = function arg0, arg1() {
             _fun101193: for (var _fun101193_ip = 0;;) switch (_fun101193_ip) {
                 case 0:
                     var1 = arg0;
@@ -1280,7 +1280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = _closure1_slot20;
         var2.__initData = var12;
         var2 = var6.bind(var11)(var4, var2);
-        var2 = function() { // Original name: useUnreadBarWrapperStyles, environment: var1
+        var2 = function() {
             var3 = _closure1_slot1;
             var5 = _closure1_slot2;
             var2 = 11;

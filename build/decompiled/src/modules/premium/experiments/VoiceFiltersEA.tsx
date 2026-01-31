@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/experiments/VoiceFiltersEA.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useVoiceFiltersEA, environment: var3
+    var3 = function arg0() {
         _fun95344: for (var _fun95344_ip = 0;;) switch (_fun95344_ip) {
             case 0:
                 var0 = arg0;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/PremiumSettingScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PremiumScreen, environment: var1
+    var1 = function() {
         _fun82368: for (var _fun82368_ip = 0;;) switch (_fun82368_ip) {
             case 0:
                 var2 = _closure1_slot0;

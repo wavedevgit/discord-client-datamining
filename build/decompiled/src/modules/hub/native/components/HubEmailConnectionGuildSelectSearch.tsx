@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.error = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot13 = var3;
-    var3 = function() { // Original name: EmptyState, environment: var1
+    var3 = function() {
         var0 = _closure1_slot13;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubEmailConnectionGuildSelectSearch, environment: var1
+    var1 = function arg0() {
         _fun80434: for (var _fun80434_ip = 0;;) switch (_fun80434_ip) {
             case 0:
                 var0 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var16.bind(var17)(var15);
                 var12.placeholder = var15;
                 var12.onChange = var14;
-                var14 = function() { // Original name: onClose, environment: var9
+                var14 = function() {
                     var1 = _closure2_slot3;
                     var0 = var1.pop;
                     var0 = var0.bind(var1)();
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'always';
                 var5.keyboardShouldPersistTaps = var12;
                 var5.data = var11;
-                var11 = function() { // Original name: ListHeaderComponent, environment: var9
+                var11 = function() {
                     _fun80437: for (var _fun80437_ip = 0;;) switch (_fun80437_ip) {
                         case 0:
                             var0 = _closure2_slot8;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var5.ListHeaderComponent = var11;
-                var11 = function(arg0) { // Original name: renderItem, environment: var9
+                var11 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = _closure1_slot10;
@@ -490,13 +490,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.renderItem = var11;
-                var11 = function(arg0) { // Original name: keyExtractor, environment: var9
+                var11 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
                 };
                 var5.keyExtractor = var11;
-                var11 = function() { // Original name: ListEmptyComponent, environment: var9
+                var11 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot14;
                     var1 = undefined;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.ListEmptyComponent = var11;
-                var9 = function() { // Original name: ItemSeparatorComponent, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot6;
                     var1 = {};

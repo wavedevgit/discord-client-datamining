@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun95570: for (var _fun95570_ip = 0;;) switch (_fun95570_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: handleSchedule, environment: var3
+    var0 = function arg0() {
         var2 = _closure1_slot13;
         var1 = var2.add;
         var0 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: handleCancel, environment: var3
+    var0 = function arg0() {
         var3 = arg0;
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LocalPushNotificationStore, environment: var5
+        var3 = function() {
             _fun95576: for (var _fun95576_ip = 0;;) switch (_fun95576_ip) {
                 case 0:
                     var3 = this;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot8;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isScheduled';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot13;
             var1 = var2.has;
             var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleCheckScheduledNotifs, environment: var3
+    var8 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 9;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleGuildVerificationChecked, environment: var3
+    var8 = function arg0() {
         _fun95583: for (var _fun95583_ip = 0;;) switch (_fun95583_ip) {
             case 0:
                 var0 = arg0;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleGuildDelete, environment: var3
+    var8 = function arg0() {
         _fun95584: for (var _fun95584_ip = 0;;) switch (_fun95584_ip) {
             case 0:
                 var0 = arg0;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_DELETE = var8;
-    var3 = function() { // Original name: handleCancelAll, environment: var3
+    var3 = function() {
         var2 = _closure1_slot13;
         var1 = var2.clear;
         var1 = var1.bind(var2)();

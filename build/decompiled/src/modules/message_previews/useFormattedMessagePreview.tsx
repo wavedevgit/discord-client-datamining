@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: isMessageContentPreviewable, environment: var3
+    var4 = function arg0() {
         _fun70033: for (var _fun70033_ip = 0;;) switch (_fun70033_ip) {
             case 0:
                 var0 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var1 = function(arg0, arg1) { // Original name: formatMessagePreview, environment: var3
+    var1 = function arg0, arg1() {
         _fun70034: for (var _fun70034_ip = 0;;) switch (_fun70034_ip) {
             case 0:
                 var7 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun70034
                 }
             case 53:
-                var2 = function(arg0) { // Original name: formatMessageContentPreview, environment: var2
+                var2 = function arg0() {
                     _fun70035: for (var _fun70035_ip = 0;;) switch (_fun70035_ip) {
                         case 0:
                             var1 = arg0;
@@ -1381,7 +1381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/message_previews/useFormattedMessagePreview.tsx';
     var5 = var6.bind(var7)(var5);
     var2.isMessageContentPreviewable = var4;
-    var3 = function(arg0, arg1) { // Original name: useFormattedMessagePreview, environment: var3
+    var3 = function arg0, arg1() {
         _fun70042: for (var _fun70042_ip = 0;;) switch (_fun70042_ip) {
             case 0:
                 var3 = arg0;

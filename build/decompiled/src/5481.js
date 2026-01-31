@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun48617: for (var _fun48617_ip = 0;;) switch (_fun48617_ip) {
             case 0:
                 var3 = arg0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun48618: for (var _fun48618_ip = 0;;) switch (_fun48618_ip) {
             case 0:
             case 2: // try_start_0
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: FeComponentTransferFunction, environment: var0
+        var3 = function() {
             _fun48622: for (var _fun48622_ip = 0;;) switch (_fun48622_ip) {
                 case 0:
                     var4 = this;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.tableValues = var4;
     var6.defaultProps = var3;
     var3 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: FeFuncR, environment: var0
+        var2 = function() {
             _fun48625: for (var _fun48625_ip = 0;;) switch (_fun48625_ip) {
                 case 0:
                     var4 = this;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'FeFuncR';
     var5.displayName = var3;
     var3 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: FeFuncG, environment: var0
+        var2 = function() {
             _fun48627: for (var _fun48627_ip = 0;;) switch (_fun48627_ip) {
                 case 0:
                     var4 = this;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'FeFuncG';
     var4.displayName = var3;
     var3 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: FeFuncB, environment: var0
+        var2 = function() {
             _fun48629: for (var _fun48629_ip = 0;;) switch (_fun48629_ip) {
                 case 0:
                     var4 = this;
@@ -393,7 +393,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'FeFuncB';
     var3.displayName = var7;
     var1 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: FeFuncA, environment: var0
+        var2 = function() {
             _fun48631: for (var _fun48631_ip = 0;;) switch (_fun48631_ip) {
                 case 0:
                     var4 = this;

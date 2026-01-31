@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
-    var15 = function(arg0) { // Original name: makeSizeStyle, environment: var4
+    var15 = function arg0() {
         var2 = arg0;
         var0 = {};
         var0.width = var2;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.borderRadius = var1;
         return var0;
     };
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getGuildIconSource, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun59684: for (var _fun59684_ip = 0;;) switch (_fun59684_ip) {
             case 0:
                 var5 = arg0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: coerceStableAsset, environment: var4
+    var0 = function arg0() {
         _fun59685: for (var _fun59685_ip = 0;;) switch (_fun59685_ip) {
             case 0:
                 var3 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var9.bind(var10)(var5);
     var _closure1_slot12 = var5;
     var5 = var8.memo;
-    var4 = function(arg0) { // Original name: GuildIconInner, environment: var4
+    var4 = function arg0() {
         _fun59686: for (var _fun59686_ip = 0;;) switch (_fun59686_ip) {
             case 0:
                 var0 = arg0;
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var2.bind(var1)(var0);
                         case 121:
                             var0 = {};
-                            var2 = function() { // Original name: handleLoaded, environment: var2
+                            var2 = function() {
                                 var2 = _closure2_slot11;
                                 var1 = undefined;
                                 var0 = true;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: addGestureBreadcrumb, environment: var0
+    var2 = function arg0, arg1() {
         _fun12952: for (var _fun12952_ip = 0;;) switch (_fun12952_ip) {
             case 0:
                 var1 = arg1;
@@ -128,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 14;
     var1.GESTURE_POSTFIX_LENGTH = var3;
     var1.ACTION_GESTURE_FALLBACK = var2;
-    var0 = function(arg0, arg1) { // Original name: sentryTraceGesture, environment: var0
+    var0 = function arg0, arg1() {
         _fun12953: for (var _fun12953_ip = 0;;) switch (_fun12953_ip) {
             case 0:
                 var2 = arg0;

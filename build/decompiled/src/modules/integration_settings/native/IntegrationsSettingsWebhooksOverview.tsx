@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun109183: for (var _fun109183_ip = 0;;) switch (_fun109183_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: WebhookItem, environment: var1
+    var0 = function arg0() {
         _fun109186: for (var _fun109186_ip = 0;;) switch (_fun109186_ip) {
             case 0:
                 var1 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ConnectedWebhookItem, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var0 = var3.channelId;
         var _closure2_slot0 = var0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: WebhooksOverview, environment: var5
+        var3 = function() {
             _fun109193: for (var _fun109193_ip = 0;;) switch (_fun109193_ip) {
                 case 0:
                     var3 = this;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getHelpText';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun109194: for (var _fun109194_ip = 0;;) switch (_fun109194_ip) {
                 case 0:
                     var0 = this;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderWebhooks';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun109195: for (var _fun109195_ip = 0;;) switch (_fun109195_ip) {
                 case 0:
                     var1 = this;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var11 = this;
             var1 = _closure1_slot20;
             var0 = var11.context;
@@ -790,7 +790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/integration_settings/native/IntegrationsSettingsWebhooksOverview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedWebhooksOverview, environment: var1
+    var1 = function arg0() {
         _fun109199: for (var _fun109199_ip = 0;;) switch (_fun109199_ip) {
             case 0:
                 var0 = arg0;

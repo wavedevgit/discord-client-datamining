@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: setUseEntranceAnimationState, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/media_viewer/native/useEntranceAnimation.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useEntranceAnimationState = var3;
-    var1 = function(arg0) { // Original name: useEntranceAnimation, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var5 = _closure1_slot3;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var10.bind(var0)(var5);
             var7 = var8.withTiming;
             var14 = _closure1_slot4;
-            var5 = function() { // Original name: t, environment: var4
+            var5 = function() {
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 6;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var12.bind(var11)(var4);
                     var5 = var6.withTiming;
                     var16 = _closure1_slot4;
-                    var3 = function() { // Original name: t, environment: var3
+                    var3 = function() {
                         var2 = _closure1_slot0;
                         var3 = _closure1_slot1;
                         var1 = 6;

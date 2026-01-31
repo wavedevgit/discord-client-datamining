@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guild_settings/urlPartToSettingsEnum.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: urlPartToSettingsEnum, environment: var1
+    var1 = function arg0, arg1() {
         _fun29803: for (var _fun29803_ip = 0;;) switch (_fun29803_ip) {
             case 0:
                 var1 = arg0;

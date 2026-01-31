@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_update/native/TruncatedText.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TruncatedText, environment: var1
+    var1 = function arg0() {
         _fun118047: for (var _fun118047_ip = 0;;) switch (_fun118047_ip) {
             case 0:
                 var2 = arg0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var1 = _closure1_slot4;
                 var0 = {};
-                var6 = function() { // Original name: onPress, environment: var8
+                var6 = function() {
                     _fun118048: for (var _fun118048_ip = 0;;) switch (_fun118048_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 291:
                 var10 = 'lineClamp';
                 var4[var10] = var14;
-                var10 = function(arg0) { // Original name: onTextLayout, environment: var8
+                var10 = function arg0() {
                     _fun118050: for (var _fun118050_ip = 0;;) switch (_fun118050_ip) {
                         case 0:
                             var1 = _closure2_slot6;

@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/link_not_discord_warning/native/LinkNotDiscordActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.url;
         var _closure2_slot0 = var11;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15 = var15["xl8R+2"];
         var15 = var16.bind(var19)(var15);
         var10.text = var15;
-        var15 = function() { // Original name: onPress, environment: var13
+        var15 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var14.gQrLtr;
         var14 = var15.bind(var16)(var14);
         var11.text = var14;
-        var13 = function() { // Original name: onPress, environment: var13
+        var13 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
             var0 = 11;

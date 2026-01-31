@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function(arg0) { // Original name: age, environment: var0
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.age = var5;
-    var5 = function(arg0) { // Original name: extractTimestamp, environment: var0
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.extractTimestamp = var5;
-    var5 = function(arg0, arg1) { // Original name: compare, environment: var0
+    var5 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.compare = var5;
-    var5 = function(arg0) { // Original name: atPreviousMillisecond, environment: var0
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.atPreviousMillisecond = var5;
-    var5 = function(arg0) { // Original name: atNextMillisecond, environment: var0
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.atNextMillisecond = var5;
-    var5 = function(arg0) { // Original name: fromTimestamp, environment: var0
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fromTimestamp = var5;
-    var5 = function(arg0, arg1) { // Original name: fromTimestampWithSequence, environment: var0
+    var5 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fromTimestampWithSequence = var5;
-    var5 = function(arg0) { // Original name: keys, environment: var0
+    var5 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.keys;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.keys = var5;
-    var5 = function(arg0, arg1) { // Original name: forEach, environment: var0
+    var5 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.forEach = var5;
-    var5 = function(arg0, arg1) { // Original name: forEachKey, environment: var0
+    var5 = function arg0, arg1() {
         _fun291: for (var _fun291_ip = 0;;) switch (_fun291_ip) {
             case 0:
                 var6 = arg1;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.forEachKey = var5;
-    var5 = function(arg0) { // Original name: entries, environment: var0
+    var5 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.entries;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.entries = var5;
-    var5 = function(arg0) { // Original name: isProbablyAValidSnowflake, environment: var0
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -183,22 +183,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isProbablyAValidSnowflake = var5;
-    var5 = function(arg0) { // Original name: castChannelIdAsMessageId, environment: var0
+    var5 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var1.castChannelIdAsMessageId = var5;
-    var5 = function(arg0) { // Original name: castMessageIdAsChannelId, environment: var0
+    var5 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var1.castMessageIdAsChannelId = var5;
-    var5 = function(arg0) { // Original name: castGuildIdAsEveryoneGuildRoleId, environment: var0
+    var5 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var1.castGuildIdAsEveryoneGuildRoleId = var5;
-    var0 = function(arg0) { // Original name: cast, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };

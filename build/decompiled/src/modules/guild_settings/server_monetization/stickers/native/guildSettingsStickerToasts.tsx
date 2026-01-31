@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: showGuildSettingsStickerError, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showGuildSettingsStickerError = var3;
-    var1 = function() { // Original name: showGuildSettingsStickerSuccess, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 0;

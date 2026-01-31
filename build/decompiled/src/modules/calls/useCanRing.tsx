@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/calls/useCanRing.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useCanRing, environment: var1
+    var3 = function arg0() {
         _fun64444: for (var _fun64444_ip = 0;;) switch (_fun64444_ip) {
             case 0:
                 var3 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.has;
                 var2 = var8.bind(var9)(var10);
             case 197:
-                var1 = function(arg0) { // Original name: useCanRingToGuildVoiceChannel, environment: var1
+                var1 = function arg0() {
                     _fun64448: for (var _fun64448_ip = 0;;) switch (_fun64448_ip) {
                         case 0:
                             var10 = arguments[1];
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanRing = var3;
-    var1 = function(arg0) { // Original name: canRingUsersInChannel, environment: var1
+    var1 = function arg0() {
         _fun64451: for (var _fun64451_ip = 0;;) switch (_fun64451_ip) {
             case 0:
                 var1 = arg0;

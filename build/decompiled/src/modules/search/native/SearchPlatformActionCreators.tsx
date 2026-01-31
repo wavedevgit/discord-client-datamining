@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.SearchTypes;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: searchPeopleTab, environment: var3
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.searchPeopleTab = var6;
-    var6 = function(arg0) { // Original name: cleanupPeopleTab, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.cleanupPeopleTab = var6;
-    var6 = function(arg0) { // Original name: searchGuildMemberTab, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var9 = var0.searchContext;
         var7 = var0.searchQueryString;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.searchGuildMemberTab = var6;
-    var6 = function(arg0) { // Original name: cleanupGuildMemberTab, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.cleanupGuildMemberTab = var6;
-    var6 = function(arg0) { // Original name: searchGuildChannelTab, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var7 = var0.searchContext;
         var5 = var0.searchQueryString;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.searchGuildChannelTab = var6;
-    var6 = function(arg0) { // Original name: cleanupGuildChannelTab, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.cleanupGuildChannelTab = var6;
-    var6 = function(arg0, arg1) { // Original name: addSearchHistoryItem, environment: var3
+    var6 = function arg0, arg1() {
         _fun105313: for (var _fun105313_ip = 0;;) switch (_fun105313_ip) {
             case 0:
                 var5 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.addSearchHistoryItem = var6;
-    var6 = function(arg0, arg1) { // Original name: removeSearchHistoryItem, environment: var3
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeSearchHistoryItem = var6;
-    var3 = function(arg0) { // Original name: clearSearchHistory, environment: var3
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;

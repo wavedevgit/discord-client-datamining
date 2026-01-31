@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ClearInputButton, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.onPress;
         var0 = _closure1_slot15;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/custom_status/native/EditCustomStatusWithPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditCustomStatusWithPreview, environment: var1
+    var1 = function arg0() {
         _fun57087: for (var _fun57087_ip = 0;;) switch (_fun57087_ip) {
             case 0:
                 var0 = arg0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var2 = var3.setOptions;
                     var1 = {};
-                    var0 = function() { // Original name: headerRight, environment: var4
+                    var0 = function() {
                         var3 = _closure1_slot13;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.onHasEdits = var5;
                             var4 = _closure1_slot11;
                             var1.resetPending = var4;
-                            var3 = function() { // Original name: onConfirm, environment: var3
+                            var3 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 30;
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1833:
                 var17.label = var25;
                 var17.arrow = var24;
-                var22 = function() { // Original name: onPress, environment: var22
+                var22 = function() {
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 29;

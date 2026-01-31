@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: canReportRaid, environment: var1
+    var4 = function arg0() {
         _fun69682: for (var _fun69682_ip = 0;;) switch (_fun69682_ip) {
             case 0:
                 var4 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: canEnableRaidAlerts, environment: var1
+    var3 = function arg0() {
         _fun69683: for (var _fun69683_ip = 0;;) switch (_fun69683_ip) {
             case 0:
                 var3 = arguments[1];
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/guild_antiraid/GuildAntiRaidPermissionsUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.canReportRaid = var4;
-    var4 = function(arg0) { // Original name: useCanReportRaid, environment: var1
+    var4 = function arg0() {
         _fun69684: for (var _fun69684_ip = 0;;) switch (_fun69684_ip) {
             case 0:
                 var8 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanReportRaid = var4;
     var2.canEnableRaidAlerts = var3;
-    var3 = function(arg0) { // Original name: useCanEnableRaidAlerts, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanEnableRaidAlerts = var3;
-    var1 = function(arg0) { // Original name: useShowMentionRaidLimitUpsell, environment: var1
+    var1 = function arg0() {
         _fun69689: for (var _fun69689_ip = 0;;) switch (_fun69689_ip) {
             case 0:
                 var6 = arg0;

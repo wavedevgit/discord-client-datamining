@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/utils/openGuildPowerupsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openGuildPowerupsModal, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var8 = var3.navigationParams;
         var0 = null;

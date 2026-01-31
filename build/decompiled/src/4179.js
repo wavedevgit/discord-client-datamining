@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: getGifVersion, environment: var2
+    var0 = function arg0() {
         _fun38361: for (var _fun38361_ip = 0;;) switch (_fun38361_ip) {
             case 0:
                 var3 = arg0;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: getImageWidth, environment: var2
+    var0 = function arg0() {
         _fun38362: for (var _fun38362_ip = 0;;) switch (_fun38362_ip) {
             case 0:
                 var3 = arg0;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: getImageHeight, environment: var2
+    var0 = function arg0() {
         _fun38363: for (var _fun38363_ip = 0;;) switch (_fun38363_ip) {
             case 0:
                 var3 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: getGlobalColorMap, environment: var2
+    var0 = function arg0() {
         _fun38364: for (var _fun38364_ip = 0;;) switch (_fun38364_ip) {
             case 0:
                 var2 = arg0;
@@ -134,7 +134,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getColorResolution, environment: var2
+    var0 = function arg0() {
         _fun38365: for (var _fun38365_ip = 0;;) switch (_fun38365_ip) {
             case 0:
                 var2 = arg0;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getBitDepth, environment: var2
+    var0 = function arg0() {
         _fun38366: for (var _fun38366_ip = 0;;) switch (_fun38366_ip) {
             case 0:
                 var2 = arg0;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0) { // Original name: read, environment: var2
+    var2 = function arg0() {
         var3 = arg0;
         var0 = {};
         var4 = _closure1_slot2;

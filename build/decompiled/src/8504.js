@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.useColorScheme;
     var _closure1_slot0 = var3;
-    var1 = function() { // Original name: useColorScheme, environment: var1
+    var1 = function() {
         _fun68394: for (var _fun68394_ip = 0;;) switch (_fun68394_ip) {
             case 0:
                 var1 = _closure1_slot0;

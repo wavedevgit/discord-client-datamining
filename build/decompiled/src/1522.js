@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.useState;
     var _closure1_slot4 = var3;
-    var1 = function() { // Original name: useIsFocused, environment: var1
+    var1 = function() {
         _fun17321: for (var _fun17321_ip = 0;;) switch (_fun17321_ip) {
             case 0:
                 var3 = _closure1_slot0;

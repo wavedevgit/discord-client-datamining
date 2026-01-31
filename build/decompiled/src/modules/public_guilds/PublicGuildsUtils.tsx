@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/PublicGuildsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isPublicSystemMessage, environment: var1
+    var3 = function arg0() {
         _fun55773: for (var _fun55773_ip = 0;;) switch (_fun55773_ip) {
             case 0:
                 var3 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isPublicSystemMessage = var3;
-    var3 = function() { // Original name: getPublicSystemMessageAvatar, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var2](var9);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot2 = var2;
-    var2 = function(arg0) { // Original name: setImmediate, environment: var0
+    var2 = function arg0() {
         _fun2572: for (var _fun2572_ip = 0;;) switch (_fun2572_ip) {
             case 0:
                 var1 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.setImmediate = var2;
-    var0 = function(arg0) { // Original name: clearImmediate, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.add;
         var0 = arg0;

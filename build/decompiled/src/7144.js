@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var3 = function() { // Original name: dateTimestampInSeconds, environment: var0
+            var3 = function() {
                 var0 = global;
                 var1 = var0.Date;
                 var0 = var1.now;
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.value = var1;
             var1 = '__esModule';
             var1 = var7.bind(var8)(var2, var1, var4);
-            var1 = function() { // Original name: createUnixTimestampInSecondsFunc, environment: var0
+            var1 = function() {
                 _fun58669: for (var _fun58669_ip = 0;;) switch (_fun58669_ip) {
                     case 0:
                         var4 = _closure1_slot0;

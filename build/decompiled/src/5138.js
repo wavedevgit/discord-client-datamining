@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0, arg1) { // Original name: AverageWindow, environment: var4
+        var2 = function arg0, arg1() {
             _fun46139: for (var _fun46139_ip = 0;;) switch (_fun46139_ip) {
                 case 0:
                     var3 = arg1;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'currentValue';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.currentAverage;
             return var0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'addValue';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: addValue, environment: var4
+        var5 = function arg0() {
             _fun46141: for (var _fun46141_ip = 0;;) switch (_fun46141_ip) {
                 case 0:
                     var5 = arg0;
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getNextIndex';
         var0.key = var5;
-        var4 = function() { // Original name: getNextIndex, environment: var4
+        var4 = function() {
             var2 = this;
             var0 = var2.nextIndex;
             var3 = var2.nextIndex;

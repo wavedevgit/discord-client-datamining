@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun95242: for (var _fun95242_ip = 0;;) switch (_fun95242_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun95245: for (var _fun95245_ip = 0;;) switch (_fun95245_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun95247: for (var _fun95247_ip = 0;;) switch (_fun95247_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: _toTimestampMs, environment: var3
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.Date;
         var3 = _closure1_slot1;
@@ -315,14 +315,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var8 = function() { // Original name: handleConnectionReset, environment: var3
+    var8 = function() {
         var1 = _closure1_slot9;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         var0 = undefined;
         return var0;
     };
-    var9 = function(arg0) { // Original name: handleGuildReset, environment: var3
+    var9 = function arg0() {
         var2 = _closure1_slot9;
         var1 = var2.delete;
         var0 = arg0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: VoiceChannelStartTimeStore, environment: var5
+        var3 = function() {
             _fun95252: for (var _fun95252_ip = 0;;) switch (_fun95252_ip) {
                 case 0:
                     var3 = this;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot8;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStartTime';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95254: for (var _fun95254_ip = 0;;) switch (_fun95254_ip) {
                 case 0:
                     var1 = arg0;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasRequestedStartTimes';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot9;
             var1 = var2.has;
             var0 = arg0;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_DELETE = var9;
     var1.CONNECTION_RESUMED = var8;
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleVoiceChannelStartTimeUpdate, environment: var3
+    var8 = function arg0() {
         _fun95256: for (var _fun95256_ip = 0;;) switch (_fun95256_ip) {
             case 0:
                 var0 = arg0;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.VOICE_CHANNEL_START_TIME_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleStartTimes, environment: var3
+    var8 = function arg0() {
         _fun95257: for (var _fun95257_ip = 0;;) switch (_fun95257_ip) {
             case 0:
                 var0 = arg0;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANNEL_INFO = var8;
-    var3 = function(arg0) { // Original name: handleFetchChannelInfo, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = _closure1_slot9;

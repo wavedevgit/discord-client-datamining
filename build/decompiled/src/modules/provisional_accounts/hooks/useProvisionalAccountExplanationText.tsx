@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useProvisionalAccountExplanationText, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.userId;
         var4 = var1.renderApplicationName;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.SLAYER_PROVISIONAL_ACCOUNTS;
                     var5 = var6.bind(var7)(var5);
                     var1.helpdeskArticle = var5;
-                    var5 = function() { // Original name: applicationName, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot0;
                         var1 = _closure2_slot1;
                         var0 = undefined;

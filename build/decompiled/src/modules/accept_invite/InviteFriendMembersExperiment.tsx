@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function(arg0) { // Original name: isGuildEligibleForFriendsInServer, environment: var1
+    var3 = function arg0() {
         _fun80202: for (var _fun80202_ip = 0;;) switch (_fun80202_ip) {
             case 0:
                 var0 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInviteFriendMembersExperiment = var4;
     var2.isGuildEligibleForFriendsInServer = var3;
-    var3 = function(arg0) { // Original name: useEligibleInviteFriendMembersExperiment, environment: var1
+    var3 = function arg0() {
         _fun80205: for (var _fun80205_ip = 0;;) switch (_fun80205_ip) {
             case 0:
                 var6 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useEligibleInviteFriendMembersExperiment = var3;
-    var1 = function(arg0) { // Original name: getEligibleInviteFriendMembersExperiment, environment: var1
+    var1 = function arg0() {
         _fun80208: for (var _fun80208_ip = 0;;) switch (_fun80208_ip) {
             case 0:
                 var4 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var9
+    var0 = function() {
         _fun27580: for (var _fun27580_ip = 0;;) switch (_fun27580_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var8 = function() { // Original name: reset, environment: var9
+    var8 = function() {
         _fun27583: for (var _fun27583_ip = 0;;) switch (_fun27583_ip) {
             case 0:
                 var0 = _closure1_slot19;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot19 = var1;
     var1 = false;
     var _closure1_slot20 = var1;
-    var1 = function() { // Original name: handleUserStoreChange, environment: var9
+    var1 = function() {
         _fun27584: for (var _fun27584_ip = 0;;) switch (_fun27584_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var1;
-    var1 = function() { // Original name: handleSelectivelySyncedStoreChange, environment: var9
+    var1 = function() {
         _fun27585: for (var _fun27585_ip = 0;;) switch (_fun27585_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var1;
-    var3 = function() { // Original name: handleUserSettingsProtoStoreUpdate, environment: var9
+    var3 = function() {
         _fun27586: for (var _fun27586_ip = 0;;) switch (_fun27586_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var9
-        var3 = function(arg0) { // Original name: ClientThemesBackgroundStore, environment: var5
+        var3 = function arg0() {
             _fun27588: for (var _fun27588_ip = 0;;) switch (_fun27588_ip) {
                 case 0:
                     var3 = this;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun27590: for (var _fun27590_ip = 0;;) switch (_fun27590_ip) {
                 case 0:
                     var0 = arg0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun27591: for (var _fun27591_ip = 0;;) switch (_fun27591_ip) {
                 case 0:
                     var0 = _closure1_slot19;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'gradientPreset';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLinearGradient';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun27593: for (var _fun27593_ip = 0;;) switch (_fun27593_ip) {
                 case 0:
                     var1 = this;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPreview';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isCoachmark';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -578,7 +578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'mobilePendingThemeIndex';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var10 = function(arg0) { // Original name: UPDATE_BACKGROUND_GRADIENT_PRESET, environment: var9
+    var10 = function arg0() {
         _fun27597: for (var _fun27597_ip = 0;;) switch (_fun27597_ip) {
             case 0:
                 var0 = arg0;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPDATE_BACKGROUND_GRADIENT_PRESET = var10;
-    var10 = function(arg0) { // Original name: UPDATE_MOBILE_PENDING_THEME_INDEX, environment: var9
+    var10 = function arg0() {
         _fun27598: for (var _fun27598_ip = 0;;) switch (_fun27598_ip) {
             case 0:
                 var0 = arg0;
@@ -638,14 +638,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPDATE_MOBILE_PENDING_THEME_INDEX = var10;
-    var10 = function() { // Original name: RESET_PREVIEW_CLIENT_THEME, environment: var9
+    var10 = function() {
         var0 = undefined;
         _closure1_slot17 = var0;
         return var0;
     };
     var1.RESET_PREVIEW_CLIENT_THEME = var10;
     var1.CLIENT_THEMES_EDITOR_CLOSE = var8;
-    var9 = function(arg0) { // Original name: CHANNEL_SELECT, environment: var9
+    var9 = function arg0() {
         _fun27600: for (var _fun27600_ip = 0;;) switch (_fun27600_ip) {
             case 0:
                 var0 = arg0;

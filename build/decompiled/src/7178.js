@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function() { // Original name: supportsHistory, environment: var0
+    var0 = function() {
         _fun58896: for (var _fun58896_ip = 0;;) switch (_fun58896_ip) {
             case 0:
                 var1 = _closure1_slot0;

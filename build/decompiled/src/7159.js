@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = ['fatal', 'error', 'warning', 'log', 'info', 'debug'];
     var _closure1_slot0 = var0;
-    var2 = function(arg0) { // Original name: severityLevelFromString, environment: var2
+    var2 = function arg0() {
         _fun58786: for (var _fun58786_ip = 0;;) switch (_fun58786_ip) {
             case 0:
                 var2 = arg0;

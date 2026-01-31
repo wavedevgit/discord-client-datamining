@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DOMAIN_MIGRATION_SUCCESS_KEY = var3;
     var3 = 'domainMigrationFailed';
     var2.DOMAIN_MIGRATION_FAILED_KEY = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: sendPostMessage, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun60268: for (var _fun60268_ip = 0;;) switch (_fun60268_ip) {
             case 0:
                 var3 = arg1;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.sendPostMessage = var3;
-    var1 = function(arg0, arg1) { // Original name: extractMessage, environment: var1
+    var1 = function arg0, arg1() {
         _fun60269: for (var _fun60269_ip = 0;;) switch (_fun60269_ip) {
             case 0:
                 var2 = arg0;

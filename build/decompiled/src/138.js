@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var5)(var3);
     var _closure1_slot3 = var3;
     var3 = {};
-    var4 = function(arg0, arg1) { // Original name: compareDocumentPosition, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.compareDocumentPosition = var4;
-    var4 = function(arg0) { // Original name: getChildNodes, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getChildNodes = var4;
-    var4 = function(arg0) { // Original name: getParentNode, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getParentNode = var4;
-    var4 = function(arg0) { // Original name: isConnected, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.isConnected = var4;
-    var4 = function(arg0) { // Original name: getBorderWidth, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getBorderWidth = var4;
-    var4 = function(arg0, arg1) { // Original name: getBoundingClientRect, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getBoundingClientRect = var4;
-    var4 = function(arg0) { // Original name: getInnerSize, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getInnerSize = var4;
-    var4 = function(arg0) { // Original name: getScrollPosition, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getScrollPosition = var4;
-    var4 = function(arg0) { // Original name: getScrollSize, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getScrollSize = var4;
-    var4 = function(arg0) { // Original name: getTagName, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getTagName = var4;
-    var4 = function(arg0) { // Original name: getTextContent, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -192,7 +192,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getTextContent = var4;
-    var4 = function(arg0, arg1) { // Original name: hasPointerCapture, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.hasPointerCapture = var4;
-    var4 = function(arg0, arg1) { // Original name: releasePointerCapture, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.releasePointerCapture = var4;
-    var4 = function(arg0, arg1) { // Original name: setPointerCapture, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -240,7 +240,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.setPointerCapture = var4;
-    var4 = function(arg0) { // Original name: getOffset, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -255,7 +255,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.getOffset = var4;
-    var4 = function(arg0, arg1) { // Original name: linkRootNode, environment: var1
+    var4 = function arg0, arg1() {
         _fun2245: for (var _fun2245_ip = 0;;) switch (_fun2245_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var3.linkRootNode = var4;
-    var4 = function(arg0, arg1) { // Original name: measure, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -300,7 +300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.measure = var4;
-    var4 = function(arg0, arg1) { // Original name: measureInWindow, environment: var1
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -316,7 +316,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.measureInWindow = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: measureLayout, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -335,7 +335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.measureLayout = var4;
-    var4 = function(arg0, arg1) { // Original name: setNativeProps, environment: var1
+    var4 = function arg0, arg1() {
         _fun2249: for (var _fun2249_ip = 0;;) switch (_fun2249_ip) {
             case 0:
                 var3 = arg0;
@@ -382,7 +382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.setNativeProps = var4;
     var2.default = var3;
-    var1 = function() { // Original name: getRawNativeDOMForTests, environment: var1
+    var1 = function() {
         var0 = _closure1_slot3;
         return var0;
     };

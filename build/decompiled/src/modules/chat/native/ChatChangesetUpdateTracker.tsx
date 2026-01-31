@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/native/ChatChangesetUpdateTracker.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getAndIncrementChangesetIdForChat, environment: var1
+    var3 = function arg0() {
         _fun73421: for (var _fun73421_ip = 0;;) switch (_fun73421_ip) {
             case 0:
                 var3 = arg0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAndIncrementChangesetIdForChat = var3;
-    var1 = function(arg0) { // Original name: getChangesetIdForChat, environment: var1
+    var1 = function arg0() {
         _fun73422: for (var _fun73422_ip = 0;;) switch (_fun73422_ip) {
             case 0:
                 var5 = arg0;

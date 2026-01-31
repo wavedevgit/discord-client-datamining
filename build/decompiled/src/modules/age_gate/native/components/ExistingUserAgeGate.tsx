@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/native/components/ExistingUserAgeGate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExistingUserAgeGate, environment: var1
+    var1 = function arg0() {
         _fun112562: for (var _fun112562_ip = 0;;) switch (_fun112562_ip) {
             case 0:
                 var0 = arg0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot7 = var3;
                 var _closure2_slot8 = var3;
                 var _closure2_slot9 = var3;
-                var0 = function(arg0) { // Original name: submitBirthday, environment: var8
+                var0 = function arg0() {
                     var0 = undefined;
                     var3 = _closure2_slot11;
                     var2 = var3.apply;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot10 = var0;
-                var0 = function() { // Original name: _submitBirthday, environment: var8
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot11 = var0;
-                var0 = function() { // Original name: _submitBirthdayWithAgeConfirmation, environment: var8
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = {};
                                     var7 = _closure2_slot2;
                                     var2.source = var7;
-                                    var7 = function() { // Original name: onConfirm, environment: var7
+                                    var7 = function() {
                                         var2 = _closure2_slot10;
                                         var1 = _closure2_slot6;
                                         var0 = undefined;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.PDTjLN;
                 var9 = var10.bind(var11)(var9);
                 var5.text = var9;
-                var8 = function() { // Original name: submitBirthdayWithAgeConfirmation, environment: var8
+                var8 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot12;
                     var2 = var3.apply;

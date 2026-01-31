@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun69258: for (var _fun69258_ip = 0;;) switch (_fun69258_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun69259: for (var _fun69259_ip = 0;;) switch (_fun69259_ip) {
             case 0:
             case 2: // try_start_0
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var8;
     var9 = var6.PureComponent;
     var8 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: DefaultFallback, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun69264: for (var _fun69264_ip = 0;;) switch (_fun69264_ip) {
                 case 0:
                     var0 = this;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var7;
     var7 = var6.PureComponent;
     var6 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: StreamPreview, environment: var0
+        var3 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun69270: for (var _fun69270_ip = 0;;) switch (_fun69270_ip) {
                 case 0:
                     var16 = this;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.ThemeContext;
     var6.contextType = var3;
     var3 = {};
-    var7 = function(arg0, arg1) { // Original name: renderFallback, environment: var1
+    var7 = function arg0, arg1() {
         _fun69271: for (var _fun69271_ip = 0;;) switch (_fun69271_ip) {
             case 0:
                 var3 = _closure1_slot11;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/StreamPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedStreamPreview, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var0 = var4.stream;
         var7 = var0.guildId;

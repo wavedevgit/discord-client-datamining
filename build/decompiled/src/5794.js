@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Original name: deriveBFS, environment: var0
+    var1 = function arg0() {
         _fun51299: for (var _fun51299_ip = 0;;) switch (_fun51299_ip) {
             case 0:
                 var1 = arg0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1) { // Original name: link, environment: var0
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1) { // Original name: wrapConversion, environment: var0
+    var1 = function arg0, arg1() {
         _fun51302: for (var _fun51302_ip = 0;;) switch (_fun51302_ip) {
             case 0:
                 var2 = arg0;

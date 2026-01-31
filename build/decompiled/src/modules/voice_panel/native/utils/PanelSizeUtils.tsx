@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: getMaxPanelWidth, environment: var0
+        var0 = function arg0() {
             _fun110693: for (var _fun110693_ip = 0;;) switch (_fun110693_ip) {
                 case 0:
                     var0 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var7;
     var _closure1_slot2 = var4;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: getPanelX, environment: var0
+        var0 = function arg0, arg1() {
             var1 = arg0;
             var0 = arg1;
             var1 = var1 - var0;

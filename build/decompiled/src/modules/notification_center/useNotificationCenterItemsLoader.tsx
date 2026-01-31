@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var3 = var3.ReadStateTypes;
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: useNotificationCenterItemsLoader, environment: var1
+    var3 = function arg0() {
         _fun103141: for (var _fun103141_ip = 0;;) switch (_fun103141_ip) {
             case 0:
                 var0 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.hasMore = var5;
                 var0.loadMore = var4;
                 var0.loadingMore = var3;
-                var2 = function(arg0) { // Original name: setReadNotifItemToAcked, environment: var2
+                var2 = function arg0() {
                     _fun103156: for (var _fun103156_ip = 0;;) switch (_fun103156_ip) {
                         case 0:
                             var1 = arg0;

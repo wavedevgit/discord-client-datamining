@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_engine/GlobalFramePoolLockExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getGlobalFramePoolLockExperimentConfig, environment: var1
+    var1 = function arg0() {
         _fun93972: for (var _fun93972_ip = 0;;) switch (_fun93972_ip) {
             case 0:
                 var0 = arg0;

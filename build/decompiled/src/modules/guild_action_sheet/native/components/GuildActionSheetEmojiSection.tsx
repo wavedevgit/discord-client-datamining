@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_action_sheet/native/components/GuildActionSheetEmojiSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun96610: for (var _fun96610_ip = 0;;) switch (_fun96610_ip) {
             case 0:
                 var0 = arg0;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = {};
                 var24 = 'button';
                 var21.accessibilityRole = var24;
-                var24 = function() { // Original name: onPress, environment: var10
+                var24 = function() {
                     var3 = _closure2_slot7;
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot4;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.accessibilityRole = var6;
                             var6 = var0.name;
                             var1.accessibilityLabel = var6;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 _fun96616: for (var _fun96616_ip = 0;;) switch (_fun96616_ip) {
                                     case 0:
                                         var2 = _closure1_slot0;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var20["UKOtz+"];
                 var20 = var21.bind(var22)(var20);
                 var11.accessibilityLabel = var20;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var3 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 25;

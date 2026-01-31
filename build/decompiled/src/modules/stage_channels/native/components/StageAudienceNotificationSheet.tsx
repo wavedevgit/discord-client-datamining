@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleDismiss, environment: var1
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: BulletIcon, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.source;
         var0 = _closure1_slot9;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageAudienceNotificationSheet, environment: var1
+    var1 = function arg0() {
         _fun52966: for (var _fun52966_ip = 0;;) switch (_fun52966_ip) {
             case 0:
                 var1 = arg0;

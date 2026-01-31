@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/application_view/app/sort/CommandListSortActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CommandListSortActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.onClose;
         var _closure2_slot0 = var1;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = 'right';
             var0.align = var7;
             var0.label = var6;
-            var5 = function() { // Original name: onPress, environment: var5
+            var5 = function() {
                 var3 = _closure3_slot0;
                 var2 = _closure2_slot2;
                 var0 = undefined;

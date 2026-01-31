@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0) { // Original name: extractNetworkProtocol, environment: var1
+    var3 = function arg0() {
         _fun10863: for (var _fun10863_ip = 0;;) switch (_fun10863_ip) {
             case 0:
                 var4 = arg0;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractNetworkProtocol = var3;
-    var3 = function() { // Original name: getBrowserPerformanceAPI, environment: var1
+    var3 = function() {
         _fun10864: for (var _fun10864_ip = 0;;) switch (_fun10864_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getBrowserPerformanceAPI = var3;
-    var3 = function(arg0) { // Original name: isMeasurementValue, environment: var1
+    var3 = function arg0() {
         _fun10865: for (var _fun10865_ip = 0;;) switch (_fun10865_ip) {
             case 0:
                 var3 = arg0;
@@ -173,11 +173,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isMeasurementValue = var3;
-    var3 = function(arg0, arg1) { // Original name: listenForWebVitalReportEvents, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var0 = arg1;
         var _closure2_slot0 = var0;
-        var0 = function(arg0) { // Original name: _runCollectorCallbackOnce, environment: var2
+        var0 = function arg0() {
             _fun10867: for (var _fun10867_ip = 0;;) switch (_fun10867_ip) {
                 case 0:
                     var2 = _closure2_slot2;
@@ -277,14 +277,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.listenForWebVitalReportEvents = var3;
-    var3 = function(arg0) { // Original name: msToSec, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = 1000;
         var0 = var1 / var0;
         return var0;
     };
     var2.msToSec = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: startAndEndSpan, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun10872: for (var _fun10872_ip = 0;;) switch (_fun10872_ip) {
             case 0:
                 var3 = arg0;
@@ -377,7 +377,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.startAndEndSpan = var3;
-    var3 = function(arg0) { // Original name: startStandaloneWebVitalSpan, environment: var1
+    var3 = function arg0() {
         _fun10874: for (var _fun10874_ip = 0;;) switch (_fun10874_ip) {
             case 0:
                 var7 = arg0;
@@ -559,7 +559,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.startStandaloneWebVitalSpan = var3;
-    var1 = function(arg0) { // Original name: supportsWebVital, environment: var1
+    var1 = function arg0() {
         _fun10875: for (var _fun10875_ip = 0;;) switch (_fun10875_ip) {
             case 0:
                 var0 = arg0;

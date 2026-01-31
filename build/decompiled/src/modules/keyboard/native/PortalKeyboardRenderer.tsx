@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = new Array(0);
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: transitionGroupGetItemKey, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.id;
         return var0;
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: transitionGroupRenderItem, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun107215: for (var _fun107215_ip = 0;;) switch (_fun107215_ip) {
             case 0:
                 var1 = arg2;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/keyboard/native/PortalKeyboardRenderer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PortalKeyboardRenderer, environment: var1
+    var1 = function arg0() {
         _fun107216: for (var _fun107216_ip = 0;;) switch (_fun107216_ip) {
             case 0:
                 var0 = arg0;

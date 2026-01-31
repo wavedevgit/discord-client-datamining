@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ActivityShelfItemBackground, environment: var1
+    var1 = function arg0() {
         _fun111333: for (var _fun111333_ip = 0;;) switch (_fun111333_ip) {
             case 0:
                 var0 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var7 = _closure1_slot4;
                 var6 = {};
-                var10 = function() { // Original name: onError, environment: var10
+                var10 = function() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = true;

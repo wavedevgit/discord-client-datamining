@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0) { // Original name: initMetric, environment: var0
+    var0 = function arg0() {
         _fun10771: for (var _fun10771_ip = 0;;) switch (_fun10771_ip) {
             case 0:
                 var4 = undefined;

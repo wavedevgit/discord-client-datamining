@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var9 = function() { // Original name: getTitle, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 7;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.SENSITIVE_CONTENT_FILTERS;
     var1.parent = var8;
-    var8 = function() { // Original name: useGoreContentGuildsSettingValue, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 3;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useTrailing = var8;
-    var8 = function() { // Original name: onGoreContentGuildsOnPress, environment: var7
+    var8 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 5;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot2;
         var5 = var5.bind(var0)();
         var1.subtitle = var5;
-        var5 = function(arg0) { // Original name: handlePress, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onPress = var8;
-    var8 = function() { // Original name: useIsDisabled, environment: var7
+    var8 = function() {
         _fun81346: for (var _fun81346_ip = 0;;) switch (_fun81346_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useIsDisabled = var8;
-    var7 = function() { // Original name: additionalSearchTerms, environment: var7
+    var7 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var1 = 7;

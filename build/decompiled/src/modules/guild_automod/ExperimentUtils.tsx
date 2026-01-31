@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_automod/ExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isInMentionRaidExperiment, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isInMentionRaidExperiment = var3;
-    var1 = function(arg0) { // Original name: useIsMentionRaidExperimentEnabled, environment: var1
+    var1 = function arg0() {
         _fun69693: for (var _fun69693_ip = 0;;) switch (_fun69693_ip) {
             case 0:
                 var4 = arguments[1];

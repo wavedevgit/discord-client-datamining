@@ -80,12 +80,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot9 = var1;
             var1 = {};
             var3 = function() { // Environment: var3
-                var0 = function(arg0) { // Original name: create, environment: var0
+                var0 = function arg0() {
                     var9 = arg0;
                     var _closure3_slot0 = var9;
                     var0 = {};
                     var0.handlerTag = var9;
-                    var3 = function() { // Original name: pnpm_gestureStateManagerTs2, environment: var1
+                    var3 = function() {
                         _fun44672: for (var _fun44672_ip = 0;;) switch (_fun44672_ip) {
                             case 0:
                                 var1 = _closure1_slot3;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var10 = _closure1_slot6;
                     var3.__initData = var10;
                     var0.begin = var3;
-                    var3 = function() { // Original name: pnpm_gestureStateManagerTs3, environment: var1
+                    var3 = function() {
                         _fun44673: for (var _fun44673_ip = 0;;) switch (_fun44673_ip) {
                             case 0:
                                 var1 = _closure1_slot3;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var10 = _closure1_slot7;
                     var3.__initData = var10;
                     var0.activate = var3;
-                    var3 = function() { // Original name: pnpm_gestureStateManagerTs4, environment: var1
+                    var3 = function() {
                         _fun44674: for (var _fun44674_ip = 0;;) switch (_fun44674_ip) {
                             case 0:
                                 var1 = _closure1_slot3;
@@ -240,7 +240,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var10 = _closure1_slot8;
                     var3.__initData = var10;
                     var0.fail = var3;
-                    var1 = function() { // Original name: pnpm_gestureStateManagerTs5, environment: var1
+                    var1 = function() {
                         _fun44675: for (var _fun44675_ip = 0;;) switch (_fun44675_ip) {
                             case 0:
                                 var1 = _closure1_slot3;

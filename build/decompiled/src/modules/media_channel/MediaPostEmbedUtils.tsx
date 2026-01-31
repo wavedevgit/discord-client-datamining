@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: getMediaPostEmbedChannelPath, environment: var1
+    var3 = function arg0() {
         _fun38652: for (var _fun38652_ip = 0;;) switch (_fun38652_ip) {
             case 0:
                 var5 = arg0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/media_channel/MediaPostEmbedUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getMediaPostEmbedCommonData, environment: var1
+    var4 = function arg0() {
         _fun38653: for (var _fun38653_ip = 0;;) switch (_fun38653_ip) {
             case 0:
                 var0 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMediaPostEmbedCommonData = var4;
-    var4 = function(arg0) { // Original name: getMediaPostEmbedChannelId, environment: var1
+    var4 = function arg0() {
         _fun38654: for (var _fun38654_ip = 0;;) switch (_fun38654_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMediaPostEmbedChannelId = var4;
     var2.getMediaPostEmbedChannelPath = var3;
-    var1 = function(arg0, arg1) { // Original name: canUseMediaPostEmbed, environment: var1
+    var1 = function arg0, arg1() {
         _fun38655: for (var _fun38655_ip = 0;;) switch (_fun38655_ip) {
             case 0:
                 var2 = arg1;

@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.informationContentDescription = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: generateListData, environment: var1
+    var3 = function arg0() {
         _fun74314: for (var _fun74314_ip = 0;;) switch (_fun74314_ip) {
             case 0:
                 var0 = new Array(0);
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stickers/native/StickerPackInformationPopout.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: _default, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var20 = var0.stickerPack;
         var12 = var0.onClose;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot3;
         var5 = {};
         var5.data = var9;
-        var8 = function(arg0) { // Original name: renderItem, environment: var8
+        var8 = function arg0() {
             var0 = arg0;
             var8 = var0.item;
             var3 = _closure1_slot5;

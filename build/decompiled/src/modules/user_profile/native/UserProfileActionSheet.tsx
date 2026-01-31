@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot16 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: UserProfileActionSheet, environment: var1
+    var1 = function arg0() {
         _fun59491: for (var _fun59491_ip = 0;;) switch (_fun59491_ip) {
             case 0:
                 var1 = arg0;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.useNavigation;
                 var0 = var0.bind(var2)();
                 _closure2_slot23 = var0;
-                var0 = function() { // Original name: showUserProfileActionSheetWithParams, environment: var29
+                var0 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 32;
@@ -894,7 +894,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 _closure2_slot24 = var0;
-                var0 = function() { // Original name: handleUserSettingsClose, environment: var29
+                var0 = function() {
                     var2 = _closure2_slot23;
                     var1 = var2.goBack;
                     var1 = var1.bind(var2)();
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.scrollViewRef = var3;
                             var3 = _closure2_slot7;
                             var5.isPreviewingChanges = var3;
-                            var3 = function() { // Original name: navigateToShop, environment: var2
+                            var3 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 40;
@@ -1101,7 +1101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var5.navigateToShop = var3;
-                            var2 = function() { // Original name: navigateToPremium, environment: var2
+                            var2 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 40;

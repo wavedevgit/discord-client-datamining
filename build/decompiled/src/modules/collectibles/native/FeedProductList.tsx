@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.titleContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: SkeletonGrid, environment: var1
+    var3 = function arg0() {
         _fun88159: for (var _fun88159_ip = 0;;) switch (_fun88159_ip) {
             case 0:
                 var0 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot4 = var2;
                 var4 = new Array(0);
                 var _closure2_slot5 = var4;
-                var2 = function(arg0) { // Original name: _loop, environment: var1
+                var2 = function arg0() {
                     var7 = arg0;
                     var _closure3_slot0 = var7;
                     var0 = global;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/FeedProductList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FeedProductList, environment: var1
+    var1 = function arg0() {
         _fun88162: for (var _fun88162_ip = 0;;) switch (_fun88162_ip) {
             case 0:
                 var0 = arg0;

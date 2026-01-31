@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: _getPresenceActivityInviteCoverImageURL, environment: var1
+    var3 = function arg0() {
         _fun92486: for (var _fun92486_ip = 0;;) switch (_fun92486_ip) {
             case 0:
                 var0 = arg0;

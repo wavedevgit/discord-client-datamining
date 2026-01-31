@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun67494: for (var _fun67494_ip = 0;;) switch (_fun67494_ip) {
         case 0:
             var1 = {};
-            var2 = function(arg0) { // Original name: glog, environment: var0
+            var2 = function arg0() {
                 _fun67495: for (var _fun67495_ip = 0;;) switch (_fun67495_ip) {
                     case 0:
                         var1 = arg0;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.glog = var2;
-            var2 = function(arg0) { // Original name: gexp, environment: var0
+            var2 = function arg0() {
                 _fun67496: for (var _fun67496_ip = 0;;) switch (_fun67496_ip) {
                     case 0:
                         var0 = arg0;

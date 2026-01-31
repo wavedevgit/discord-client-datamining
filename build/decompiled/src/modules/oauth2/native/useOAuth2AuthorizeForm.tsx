@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/native/useOAuth2AuthorizeForm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useOAuth2AuthorizeForm, environment: var1
+    var1 = function arg0() {
         _fun47544: for (var _fun47544_ip = 0;;) switch (_fun47544_ip) {
             case 0:
                 var1 = arg0;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var31[var24];
                 var25 = var33.bind(var4)(var10);
                 var21 = var25.useAnimatedStyle;
-                var10 = function() { // Original name: X, environment: var5
+                var10 = function() {
                     _fun47549: for (var _fun47549_ip = 0;;) switch (_fun47549_ip) {
                         case 0:
                             var0 = _closure2_slot39;
@@ -1625,7 +1625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = {};
                         var3 = _closure3_slot0;
                         var1.isAuthorized = var3;
-                        var0 = function(arg0) { // Original name: overrideSuccessCallback, environment: var0
+                        var0 = function arg0() {
                             var2 = _closure4_slot0;
                             var0 = undefined;
                             var1 = arg0;
@@ -2768,7 +2768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun47544
                 }
             case 2624:
-                var7 = function() { // Original name: Spinner, environment: var5
+                var7 = function() {
                     var3 = _closure1_slot18;
                     var2 = _closure1_slot7;
                     var1 = {};
@@ -3221,7 +3221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var46 = {};
                 var48 = var55.switchContainer;
                 var46.style = var48;
-                var48 = function() { // Original name: onPress, environment: var5
+                var48 = function() {
                     var2 = _closure2_slot33;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -3590,7 +3590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var25;
             case 4823:
                 var17.text = var23;
-                var23 = function() { // Original name: onPress, environment: var5
+                var23 = function() {
                     var2 = _closure2_slot56;
                     var0 = undefined;
                     var1 = true;
@@ -3729,7 +3729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.icon = var23;
                 var23 = 'end';
                 var20.iconPosition = var23;
-                var23 = function() { // Original name: onPress, environment: var5
+                var23 = function() {
                     var2 = _closure2_slot21;
                     var1 = _closure2_slot63;
                     var0 = undefined;
@@ -3821,7 +3821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.cpT0Cq;
                 var6 = var7.bind(var8)(var6);
                 var1.text = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var1 = _closure2_slot62;
                     var0 = undefined;
                     var0 = var1.bind(var0)();

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = dependencyMap;
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun69574: for (var _fun69574_ip = 0;;) switch (_fun69574_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var0;
-            var8 = function(arg0) { // Original name: handleSetDesktopType, environment: var3
+            var8 = function arg0() {
                 var0 = arg0;
                 var1 = var0.desktopType;
                 var0 = _closure1_slot11;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.bind(var0)(var1);
             var7 = var1.DeviceSettingsStore;
             var1 = function(arg0) { // Environment: var3
-                var3 = function() { // Original name: NotificationSettingsStore, environment: var5
+                var3 = function() {
                     _fun69579: for (var _fun69579_ip = 0;;) switch (_fun69579_ip) {
                         case 0:
                             var3 = this;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'initialize';
                 var4.key = var0;
-                var0 = function(arg0) { // Original name: value, environment: var5
+                var0 = function arg0() {
                     var1 = {};
                     var3 = _closure1_slot10;
                     var4 = var1;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getUserAgnosticState';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     return var0;
                 };
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getDesktopType';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.desktopType;
                     return var0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getTTSType';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.ttsType;
                     return var0;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getDisabledSounds';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.disabledSounds;
                     return var0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getDisableAllSounds';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.disableAllSounds;
                     return var0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getDisableUnreadBadge';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.disableUnreadBadge;
                     return var0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getNotifyMessagesInSelectedChannel';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.notifyMessagesInSelectedChannel;
                     return var0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'taskbarFlash';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot11;
                     var0 = var0.taskbarFlash;
                     return var0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'isSoundDisabled';
                 var4.key = var6;
-                var5 = function(arg0) { // Original name: value, environment: var5
+                var5 = function arg0() {
                     _fun69589: for (var _fun69589_ip = 0;;) switch (_fun69589_ip) {
                         case 0:
                             var0 = _closure1_slot11;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = var6.bind(var0)(var1);
             var1 = {};
             var1.NOTIFICATIONS_SET_DESKTOP_TYPE = var8;
-            var8 = function(arg0) { // Original name: handleSetTTSType, environment: var3
+            var8 = function arg0() {
                 var0 = arg0;
                 var1 = var0.ttsType;
                 var0 = _closure1_slot11;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.NOTIFICATIONS_SET_TTS_TYPE = var8;
-            var8 = function(arg0) { // Original name: handleSetDisabledSounds, environment: var3
+            var8 = function arg0() {
                 var0 = arg0;
                 var1 = var0.sounds;
                 var0 = _closure1_slot11;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.NOTIFICATIONS_SET_DISABLED_SOUNDS = var8;
-            var8 = function() { // Original name: handleToggleAllDisabled, environment: var3
+            var8 = function() {
                 var1 = _closure1_slot11;
                 var0 = var1.disableAllSounds;
                 var0 = !var0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.NOTIFICATIONS_TOGGLE_ALL_DISABLED = var8;
-            var8 = function(arg0) { // Original name: handleSetHavePermission, environment: var3
+            var8 = function arg0() {
                 _fun69594: for (var _fun69594_ip = 0;;) switch (_fun69594_ip) {
                     case 0:
                         var0 = arg0;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.NOTIFICATIONS_SET_PERMISSION_STATE = var8;
-            var8 = function(arg0) { // Original name: handleSetDisableUnreadBadge, environment: var3
+            var8 = function arg0() {
                 var0 = arg0;
                 var1 = var0.disableUnreadBadge;
                 var0 = _closure1_slot11;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE = var8;
-            var8 = function(arg0) { // Original name: handleSetTaskbarFlash, environment: var3
+            var8 = function arg0() {
                 var0 = arg0;
                 var1 = var0.taskbarFlash;
                 var0 = _closure1_slot11;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.NOTIFICATIONS_SET_TASKBAR_FLASH = var8;
-            var3 = function(arg0) { // Original name: handleSetNotifyMessagesInSelectedChannel, environment: var3
+            var3 = function arg0() {
                 var0 = arg0;
                 var1 = var0.notify;
                 var0 = _closure1_slot11;

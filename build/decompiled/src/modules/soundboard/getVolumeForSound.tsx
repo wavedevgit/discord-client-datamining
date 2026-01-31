@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/soundboard/getVolumeForSound.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getVolumeForSound, environment: var1
+    var3 = function arg0() {
         _fun98534: for (var _fun98534_ip = 0;;) switch (_fun98534_ip) {
             case 0:
                 var4 = arguments[1];
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getPerceptualSoundboardVolume, environment: var1
+    var1 = function arg0() {
         _fun98535: for (var _fun98535_ip = 0;;) switch (_fun98535_ip) {
             case 0:
                 var4 = arg0;

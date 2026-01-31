@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _createStripeSetupIntent, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/billing/actions/StripeActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: createStripeSetupIntent, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

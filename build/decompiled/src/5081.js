@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: ViewabilityManager, environment: var1
+        var2 = function arg0() {
             _fun45554: for (var _fun45554_ip = 0;;) switch (_fun45554_ip) {
                 case 0:
                     var3 = arg0;
@@ -292,7 +292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = function(arg0, arg1) { // Environment: var1
                         var1 = arg1;
                         var _closure4_slot0 = var1;
-                        var1 = function(arg0, arg1) { // Original name: mapViewToken, environment: var0
+                        var1 = function arg0, arg1() {
                             _fun45566: for (var _fun45566_ip = 0;;) switch (_fun45566_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -490,7 +490,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var4 = 'shouldListenToVisibleIndices';
         var0.key = var4;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             var0 = this;
             var0 = var0.viewabilityHelpers;
             var1 = var0.length;

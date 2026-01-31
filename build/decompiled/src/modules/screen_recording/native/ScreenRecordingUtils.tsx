@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _getLatestVideo, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _checkAndRequestPermissions, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _startRecordingProcess, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _stopRecordingProcess, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _submitBugReportWithScreenRecording, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var13 = var15.bind(var19)(var4);
                         var6 = new Array(0);
-                        var4 = function() { // Original name: getLatestVideo, environment: var5
+                        var4 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot7;
                             var2 = var3.apply;
@@ -822,7 +822,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun100051
                         }
                     case 867:
-                        var5 = function(arg0) { // Original name: formatTranscription, environment: var5
+                        var5 = function arg0() {
                             var3 = arg0;
                             var4 = {};
                             var0 = global;
@@ -1136,7 +1136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _handleStopAndSend, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1226,7 +1226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                     var1 = _closure5_slot0;
                                                     var4 = var1.timestampedTranscription;
                                                     var3 = var1.audioFilePath;
-                                                    var1 = function() { // Original name: submitBugReportWithScreenRecording, environment: var1
+                                                    var1 = function() {
                                                         var0 = undefined;
                                                         var3 = _closure1_slot11;
                                                         var2 = var3.apply;
@@ -1284,7 +1284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.setIsUploading;
                         var3 = true;
                         var3 = var4.bind(var5)(var3);
-                        var1 = function() { // Original name: stopRecordingProcess, environment: var1
+                        var1 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot10;
                             var2 = var3.apply;
@@ -1324,7 +1324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _handleRecordingPhase, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1339,7 +1339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun100066
                         }
                     case 12:
-                        var1 = function() { // Original name: checkAndRequestPermissions, environment: var3
+                        var1 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot8;
                             var2 = var3.apply;
@@ -1398,7 +1398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun100066
                         }
                     case 153:
-                        var5 = function() { // Original name: startRecordingProcess, environment: var3
+                        var5 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot9;
                             var2 = var3.apply;
@@ -1487,7 +1487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/screen_recording/native/ScreenRecordingUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: handleStopAndSend, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -1498,7 +1498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleStopAndSend = var3;
-    var1 = function() { // Original name: handleRecordingPhase, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;

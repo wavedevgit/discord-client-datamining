@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Routes;
     var _closure1_slot9 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: openSecureFramesStreamVerification, environment: var3
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 7;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openSecureFramesStreamVerification = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: openSecureFramesUserVerificationModal, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun66733: for (var _fun66733_ip = 0;;) switch (_fun66733_ip) {
             case 0:
                 var1 = arg2;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openSecureFramesUserVerificationModal = var6;
-    var6 = function(arg0) { // Original name: openSecureFramesUpdateConfirmation, environment: var3
+    var6 = function arg0() {
         _fun66734: for (var _fun66734_ip = 0;;) switch (_fun66734_ip) {
             case 0:
                 var2 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openSecureFramesUpdateConfirmation = var6;
-    var3 = function(arg0) { // Original name: handleSecureFramesUserVerificationLink, environment: var3
+    var3 = function arg0() {
         _fun66736: for (var _fun66736_ip = 0;;) switch (_fun66736_ip) {
             case 0:
                 var0 = arg0;

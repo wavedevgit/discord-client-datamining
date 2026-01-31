@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useInterestedEventUsers.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useInterestedEventUsers, environment: var1
+    var1 = function arg0, arg1() {
         var9 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var9;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot1 = var0;
             var0 = new Array(0);
             var _closure3_slot2 = var0;
-            var2 = function(arg0) { // Original name: addUserToAllInterested, environment: var1
+            var2 = function arg0() {
                 _fun66085: for (var _fun66085_ip = 0;;) switch (_fun66085_ip) {
                     case 0:
                         var0 = arg0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: ForumOriginalPoster, environment: var1
+    var3 = function() {
         var0 = _closure1_slot5;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/forums/native/ForumOriginalPoster.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: getForumOriginalPoster, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var2 = _closure1_slot6;
         var1 = undefined;

@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InstantInviteQRCodeActionSheet, environment: var1
+    var1 = function arg0() {
         _fun67424: for (var _fun67424_ip = 0;;) switch (_fun67424_ip) {
             case 0:
                 var0 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.VUNqoc;
                 var6 = var2.bind(var4)(var1);
             case 157:
-                var1 = function(arg0) { // Original name: useDescription, environment: var1
+                var1 = function arg0() {
                     _fun67425: for (var _fun67425_ip = 0;;) switch (_fun67425_ip) {
                         case 0:
                             var0 = arg0;

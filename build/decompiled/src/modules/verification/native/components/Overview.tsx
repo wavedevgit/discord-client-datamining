@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/Overview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: Overview, environment: var1
+    var1 = function() {
         var1 = _closure1_slot13;
         var3 = undefined;
         var13 = var1.bind(var3)();
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var8.getButtonTitle;
                         var7 = var7.bind(var8)(var4);
                         var0.text = var7;
-                        var7 = function() { // Original name: onPress, environment: var5
+                        var7 = function() {
                             _fun114427: for (var _fun114427_ip = 0;;) switch (_fun114427_ip) {
                                 case 0:
                                     var0 = _closure1_slot8;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var6["3413d0"];
                         var6 = var7.bind(var8)(var6);
                         var1.text = var6;
-                        var5 = function() { // Original name: onPress, environment: var5
+                        var5 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 15;

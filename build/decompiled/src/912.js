@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _requestDataIntegration, environment: var1
+    var1 = function() {
         _fun9555: for (var _fun9555_ip = 0;;) switch (_fun9555_ip) {
             case 0:
                 var4 = undefined;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'RequestData';
                 var0.name = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun9556: for (var _fun9556_ip = 0;;) switch (_fun9556_ip) {
                         case 0:
                             var0 = arg0;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 97:
                             var2 = {};
                             var2.ipAddress = var1;
-                            var1 = function(arg0, arg1, arg2, arg3) { // Original name: addNormalizedRequestDataToEvent, environment: var1
+                            var1 = function arg0, arg1, arg2, arg3() {
                                 _fun9557: for (var _fun9557_ip = 0;;) switch (_fun9557_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = var3.Object;
                                         var8 = var9.assign;
                                         var7 = var2.request;
-                                        var5 = function(arg0, arg1) { // Original name: extractNormalizedRequestData, environment: var0
+                                        var5 = function arg0, arg1() {
                                             _fun9558: for (var _fun9558_ip = 0;;) switch (_fun9558_ip) {
                                                 case 0:
                                                     var1 = arg0;

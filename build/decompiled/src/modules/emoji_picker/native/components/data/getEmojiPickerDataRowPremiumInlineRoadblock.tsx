@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/data/getEmojiPickerDataRowPremiumInlineRoadblock.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getEmojiPickerDataRowPremiumInlineRoadblock, environment: var1
+    var1 = function arg0() {
         var0 = {};
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;

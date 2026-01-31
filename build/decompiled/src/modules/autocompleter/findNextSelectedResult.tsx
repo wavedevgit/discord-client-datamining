@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var1 = 'modules/autocompleter/findNextSelectedResult.tsx';
     var1 = var4.bind(var5)(var1);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: findNextSelectedResult, environment: var3
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun55041: for (var _fun55041_ip = 0;;) switch (_fun55041_ip) {
             case 0:
                 var7 = arg0;

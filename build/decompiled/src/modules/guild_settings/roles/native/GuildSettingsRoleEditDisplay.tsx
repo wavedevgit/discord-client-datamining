@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleEditDisplay.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleEditDisplay, environment: var1
+    var1 = function arg0() {
         _fun115973: for (var _fun115973_ip = 0;;) switch (_fun115973_ip) {
             case 0:
                 var3 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = {};
                             var1 = _closure2_slot6;
                             var3.colors = var1;
-                            var1 = function(arg0) { // Original name: onSelect, environment: var0
+                            var1 = function arg0() {
                                 var3 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 20;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var5 = _closure2_slot5;
                             var1.color = var5;
-                            var0 = function(arg0) { // Original name: onSelect, environment: var0
+                            var0 = function arg0() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 20;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.role = var6;
                     var1 = _closure2_slot4;
                     var2.roleStyle = var1;
-                    var1 = function(arg0) { // Original name: onStyleChanged, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 20;

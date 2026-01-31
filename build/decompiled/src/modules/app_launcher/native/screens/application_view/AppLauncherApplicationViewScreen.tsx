@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AppLauncherApplicationViewScreenInner, environment: var1
+    var0 = function arg0() {
         _fun107865: for (var _fun107865_ip = 0;;) switch (_fun107865_ip) {
             case 0:
                 var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/application_view/AppLauncherApplicationViewScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherApplicationViewScreen, environment: var1
+    var1 = function arg0() {
         _fun107868: for (var _fun107868_ip = 0;;) switch (_fun107868_ip) {
             case 0:
                 var1 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.initiallyExpanded = var15;
                 var5.installOnDemand = var14;
                 var5.sectionName = var13;
-                var12 = function() { // Original name: onPressBack, environment: var12
+                var12 = function() {
                     _fun107870: for (var _fun107870_ip = 0;;) switch (_fun107870_ip) {
                         case 0:
                             var2 = _closure2_slot0;

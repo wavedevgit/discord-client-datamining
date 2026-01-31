@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function() { // Original name: useUserVerificationState, environment: var4
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: useInitialVerification, environment: var4
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_member_verification/native/MemberVerificationModalHooks.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: useSetInitialVerificationEffect, environment: var4
+    var4 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var0 = {};

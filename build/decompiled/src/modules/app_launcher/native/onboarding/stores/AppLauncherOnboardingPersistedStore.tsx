@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun90274: for (var _fun90274_ip = 0;;) switch (_fun90274_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: AppLauncherOnboardingPersistedStore, environment: var5
+        var3 = function() {
             _fun90278: for (var _fun90278_ip = 0;;) switch (_fun90278_ip) {
                 case 0:
                     var3 = this;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun90279: for (var _fun90279_ip = 0;;) switch (_fun90279_ip) {
                 case 0:
                     var0 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastSeenTimeMs';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             var0 = var0.lastSeenTimeMs;
             return var0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTriggeredOnboardingContentMetadata';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot6;
             var0 = var0.triggeredOnboardingContentMetadata;
             return var0;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: handleSetLastSeenTimeMs, environment: var3
+    var7 = function() {
         var1 = _closure1_slot6;
         var0 = global;
         var2 = var0.Date;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS = var7;
-    var3 = function(arg0) { // Original name: handleSetTriggeredOnboardingContentMetadata, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.triggeredOnboardingContentMetadata;
         var0 = _closure1_slot6;

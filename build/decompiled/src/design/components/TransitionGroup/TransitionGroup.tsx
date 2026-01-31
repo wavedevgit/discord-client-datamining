@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = require;
     var2 = exports;
     var7 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun37160: for (var _fun37160_ip = 0;;) switch (_fun37160_ip) {
             case 0:
                 var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun37162: for (var _fun37162_ip = 0;;) switch (_fun37162_ip) {
             case 0:
                 var3 = arg0;
@@ -244,12 +244,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: wrapChildrenDefault, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0) { // Original name: TransitionGroup, environment: var1
+    var3 = function arg0() {
         _fun37164: for (var _fun37164_ip = 0;;) switch (_fun37164_ip) {
             case 0:
                 var0 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = new var18[var3](var17, var16);
                             var0 = var0 instanceof Object ? var0 : var1;
                             var _closure3_slot1 = var0;
-                            var9 = function() { // Original name: _loop, environment: var10
+                            var9 = function() {
                                 _fun37167: for (var _fun37167_ip = 0;;) switch (_fun37167_ip) {
                                     case 0:
                                         var5 = _closure2_slot2;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var6 = _closure1_slot3;
                                         var7 = var6.ENTERED;
                                     case 250:
-                                        var6 = function() { // Original name: _cleanUp, environment: var4
+                                        var6 = function() {
                                             _fun37168: for (var _fun37168_ip = 0;;) switch (_fun37168_ip) {
                                                 case 0:
                                                     var0 = _closure2_slot6;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var0 = function() { // Original name: getSingleItemKey, environment: var1
+    var0 = function() {
         var0 = 'key';
         return var0;
     };
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.TransitionStates = var4;
     var2.TransitionGroup = var3;
-    var1 = function(arg0) { // Original name: TransitionItem, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.item;
         var _closure2_slot0 = var6;

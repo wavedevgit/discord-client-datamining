@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var7 = function() { // Original name: title, environment: var8
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5[var7];
     var7 = var10.bind(var0)(var7);
     var1.IconComponent = var7;
-    var7 = function() { // Original name: useAppIconSettingTrailing, environment: var8
+    var7 = function() {
         var3 = _closure1_slot6;
         var1 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useTrailing = var7;
-    var7 = function() { // Original name: useAppIconSettingPreNavigationAction, environment: var8
+    var7 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var2 = 7;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.usePreNavigationAction = var7;
-    var7 = function() { // Original name: usePredicate, environment: var8
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.APP_ICONS;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 12;

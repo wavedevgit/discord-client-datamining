@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun53501: for (var _fun53501_ip = 0;;) switch (_fun53501_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: getOrCreateChannelState, environment: var3
+    var0 = function arg0() {
         _fun53504: for (var _fun53504_ip = 0;;) switch (_fun53504_ip) {
             case 0:
                 var2 = arg0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var9 = function() { // Original name: handleInit, environment: var3
+    var9 = function() {
         var2 = _closure1_slot9;
         var1 = var2.clear;
         var1 = var1.bind(var2)();
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = true;
         return var0;
     };
-    var8 = function(arg0) { // Original name: handleSetActiveCommand, environment: var3
+    var8 = function arg0() {
         _fun53506: for (var _fun53506_ip = 0;;) switch (_fun53506_ip) {
             case 0:
                 var0 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0, arg1) { // Original name: handleCommandChange, environment: var3
+    var0 = function arg0, arg1() {
         _fun53507: for (var _fun53507_ip = 0;;) switch (_fun53507_ip) {
             case 0:
                 var4 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ApplicationCommandAutocompleteStore, environment: var5
+        var3 = function() {
             _fun53509: for (var _fun53509_ip = 0;;) switch (_fun53509_ip) {
                 case 0:
                     var3 = this;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot7;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastErrored';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot14;
             var1 = undefined;
             var0 = arg0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAutocompleteChoices';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun53512: for (var _fun53512_ip = 0;;) switch (_fun53512_ip) {
                 case 0:
                     var2 = _closure1_slot14;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAutocompleteLastChoices';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var2 = _closure1_slot14;
             var1 = undefined;
             var0 = arg0;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastResponseNonce';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot14;
             var1 = undefined;
             var0 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CONNECTION_OPEN = var9;
     var1.LOGOUT = var9;
     var1.CHANNEL_SELECT = var9;
-    var9 = function(arg0) { // Original name: handleApplicationCommandAutocompleteRequest, environment: var3
+    var9 = function arg0() {
         _fun53515: for (var _fun53515_ip = 0;;) switch (_fun53515_ip) {
             case 0:
                 var0 = arg0;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST = var9;
-    var9 = function(arg0) { // Original name: handleApplicationCommandAutocompleteResponse, environment: var3
+    var9 = function arg0() {
         _fun53516: for (var _fun53516_ip = 0;;) switch (_fun53516_ip) {
             case 0:
                 var0 = arg0;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE = var9;
-    var9 = function(arg0) { // Original name: handleInteractionFailure, environment: var3
+    var9 = function arg0() {
         _fun53518: for (var _fun53518_ip = 0;;) switch (_fun53518_ip) {
             case 0:
                 var0 = arg0;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.INTERACTION_FAILURE = var9;
     var1.APPLICATION_COMMAND_SET_ACTIVE_COMMAND = var8;
     var1.APP_LAUNCHER_SET_ACTIVE_COMMAND = var8;
-    var3 = function(arg0) { // Original name: handleUpdateChannelState, environment: var3
+    var3 = function arg0() {
         _fun53519: for (var _fun53519_ip = 0;;) switch (_fun53519_ip) {
             case 0:
                 var0 = arg0;

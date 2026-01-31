@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0) { // Original name: RewardHeroBlockRecord, environment: var1
+        var4 = function arg0() {
             _fun42448: for (var _fun42448_ip = 0;;) switch (_fun42448_ip) {
                 case 0:
                     var1 = arg0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'fromServer';
         var0.key = var2;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var2 = _closure2_slot0;
             var0 = var2.prototype;
             var1 = Object.create(var0, {

@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/interaction_components/native/display/TextDisplayComponent.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: TextDisplayComponent, environment: var1
+            var1 = function arg0() {
                 _fun86811: for (var _fun86811_ip = 0;;) switch (_fun86811_ip) {
                     case 0:
                         var15 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var11 === var12;
                         var10.shouldShowRoleOnName = var11;
                         var0.markdownTextRenderOptions = var10;
-                        var8 = function(arg0) { // Original name: onTapLink, environment: var8
+                        var8 = function arg0() {
                             var0 = arg0;
                             var0 = var0.nativeEvent;
                             var4 = var0.data;

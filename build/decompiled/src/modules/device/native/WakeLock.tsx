@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: useWakeLock, environment: var3
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/device/native/WakeLock.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: WakeLock, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.wakeLockKey;
         var1 = _closure1_slot5;

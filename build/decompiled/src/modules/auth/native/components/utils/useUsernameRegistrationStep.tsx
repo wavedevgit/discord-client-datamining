@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/utils/useUsernameRegistrationStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useUsernameRegistrationStep, environment: var1
+    var1 = function arg0() {
         _fun100393: for (var _fun100393_ip = 0;;) switch (_fun100393_ip) {
             case 0:
                 var1 = arg0;

@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/TableRow/native/TableRowDivider.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TableRowDivider, environment: var1
+    var1 = function arg0() {
         _fun44251: for (var _fun44251_ip = 0;;) switch (_fun44251_ip) {
             case 0:
                 var0 = arg0;

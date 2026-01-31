@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getComponentPropsForScreen, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun116701: for (var _fun116701_ip = 0;;) switch (_fun116701_ip) {
             case 0:
                 var7 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: getScreenPropsForScene, environment: var1
+    var0 = function arg0, arg1() {
         _fun116702: for (var _fun116702_ip = 0;;) switch (_fun116702_ip) {
             case 0:
                 var2 = arg1;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: getHeaderRight, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var8[var4];
             var4 = var5.bind(var2)(var4);
             var0.source = var4;
-            var4 = function() { // Original name: onPress, environment: var4
+            var4 = function() {
                 var2 = _closure2_slot1;
                 var1 = _closure2_slot0;
                 var0 = undefined;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: buildInitialRouteStack, environment: var1
+    var0 = function arg0, arg1() {
         _fun116706: for (var _fun116706_ip = 0;;) switch (_fun116706_ip) {
             case 0:
                 var2 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: orderify, environment: var1
+    var0 = function arg0, arg1() {
         _fun116707: for (var _fun116707_ip = 0;;) switch (_fun116707_ip) {
             case 0:
                 var2 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: buildScreenMap, environment: var1
+    var0 = function arg0, arg1() {
         _fun116708: for (var _fun116708_ip = 0;;) switch (_fun116708_ip) {
             case 0:
                 var3 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun116708
                 }
             case 230:
-                var1 = function(arg0, arg1, arg2, arg3) { // Original name: getScreens, environment: var0
+                var1 = function arg0, arg1, arg2, arg3() {
                     var12 = arg2;
                     var8 = arg3;
                     var0 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = {};
                     var0 = true;
                     var9.fullscreen = var0;
-                    var0 = function() { // Original name: headerTitle, environment: var3
+                    var0 = function() {
                         var0 = null;
                         return var0;
                     };
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var4, var8);
                     var15 = var1;
                     var4 = copyDataProperties(var15, var14);
-                    var13 = function() { // Original name: render, environment: var3
+                    var13 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.GATING;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var13, var8);
                     var15 = var1;
                     var13 = copyDataProperties(var15, var14);
-                    var13 = function() { // Original name: render, environment: var3
+                    var13 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.GROUP;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var13, var8);
                     var15 = var1;
                     var13 = copyDataProperties(var15, var14);
-                    var13 = function() { // Original name: render, environment: var3
+                    var13 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.CHANNEL_BENEFITS;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var13, var8);
                     var15 = var1;
                     var13 = copyDataProperties(var15, var14);
-                    var13 = function() { // Original name: render, environment: var3
+                    var13 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.INTANGIBLE_BENEFITS;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var13, var8);
                     var15 = var1;
                     var13 = copyDataProperties(var15, var14);
-                    var13 = function() { // Original name: render, environment: var3
+                    var13 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.CONFIRMATION;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var13, var8);
                     var15 = var1;
                     var13 = copyDataProperties(var15, var14);
-                    var13 = function() { // Original name: render, environment: var3
+                    var13 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.DESIGN;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var6.bind(var7)(var5, var8);
                     var15 = var1;
                     var5 = copyDataProperties(var15, var14);
-                    var3 = function() { // Original name: render, environment: var3
+                    var3 = function() {
                         var5 = _closure1_slot12;
                         var1 = _closure1_slot7;
                         var4 = var1.DETAILS;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/RoleTierEditScenesModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RoleTierEditScenesModal, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var0 = _closure1_slot11;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = var7.bind(var4)(var1, var2);
         var _closure2_slot8 = var1;
-        var1 = function(arg0) { // Original name: handleClose, environment: var15
+        var1 = function arg0() {
             _fun116721: for (var _fun116721_ip = 0;;) switch (_fun116721_ip) {
                 case 0:
                     var2 = _closure2_slot3;
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var4.screens = var17;
         var4.initialRouteStack = var16;
-        var15 = function(arg0) { // Original name: onWillFocus, environment: var15
+        var15 = function arg0() {
             _fun116725: for (var _fun116725_ip = 0;;) switch (_fun116725_ip) {
                 case 0:
                     var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MentionableIcon, environment: var1
+    var0 = function arg0() {
         _fun108173: for (var _fun108173_ip = 0;;) switch (_fun108173_ip) {
             case 0:
                 var0 = arg0;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/mentionable/AppLauncherMentionableOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherMentionableOption, environment: var1
+    var1 = function arg0() {
         _fun108175: for (var _fun108175_ip = 0;;) switch (_fun108175_ip) {
             case 0:
                 var2 = arg0;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.guildId = var9;
                 var6 = var8.bind(var3)(var7, var6);
                 var0.leading = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun108179: for (var _fun108179_ip = 0;;) switch (_fun108179_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.option = var7;
                             var7 = _closure2_slot4;
                             var1.channel = var7;
-                            var7 = function(arg0) { // Original name: onMentionablePress, environment: var7
+                            var7 = function arg0() {
                                 var0 = arg0;
                                 var3 = var0.mentionable;
                                 var2 = _closure2_slot8;

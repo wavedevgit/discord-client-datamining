@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DeleteEventAlert, environment: var1
+    var1 = function arg0() {
         _fun67085: for (var _fun67085_ip = 0;;) switch (_fun67085_ip) {
             case 0:
                 var1 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var1;
                 var3 = undefined;
                 var _closure2_slot4 = var3;
-                var1 = function() { // Original name: _handleConfirmClick, environment: var11
+                var1 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var13 = 'destructive';
                 var7.variant = var13;
-                var11 = function() { // Original name: handleConfirmClick, environment: var11
+                var11 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot5;
                     var2 = var3.apply;

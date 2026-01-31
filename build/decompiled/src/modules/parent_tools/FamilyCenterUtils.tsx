@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var4;
     var3 = var3.UserLinkType;
     var _closure1_slot9 = var3;
-    var4 = function() { // Original name: getActivityTypeTextConfigs, environment: var1
+    var4 = function() {
         var0 = global;
         var2 = var0.Map;
         var3 = _closure1_slot4;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var4;
-    var3 = function() { // Original name: hasActiveParentLinks, environment: var1
+    var3 = function() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;

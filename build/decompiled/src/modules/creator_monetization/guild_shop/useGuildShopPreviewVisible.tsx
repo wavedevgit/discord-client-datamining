@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization/guild_shop/useGuildShopPreviewVisible.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useGuildShopPreviewVisible, environment: var1
+    var1 = function arg0, arg1() {
         _fun49859: for (var _fun49859_ip = 0;;) switch (_fun49859_ip) {
             case 0:
                 var7 = arg0;

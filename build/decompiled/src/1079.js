@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function() { // Original name: showReportDialog, environment: var0
+    var0 = function() {
         _fun11024: for (var _fun11024_ip = 0;;) switch (_fun11024_ip) {
             case 0:
                 var0 = undefined;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun11024
                 }
             case 544:
-                var6 = function(arg0) { // Original name: reportDialogClosedMessageHandler, environment: var4
+                var6 = function arg0() {
                     _fun11025: for (var _fun11025_ip = 0;;) switch (_fun11025_ip) {
                         case 0:
                             var0 = arg0;

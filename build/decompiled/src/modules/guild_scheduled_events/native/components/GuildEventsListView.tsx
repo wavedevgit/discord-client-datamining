@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: FormSeparator, environment: var3
+    var0 = function() {
         var3 = _closure1_slot5;
         var2 = _closure1_slot3;
         var1 = {};
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_scheduled_events/native/components/GuildEventsListView.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildEventsListView, environment: var3
+    var3 = function arg0() {
         _fun66969: for (var _fun66969_ip = 0;;) switch (_fun66969_ip) {
             case 0:
                 var0 = arg0;
@@ -121,13 +121,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot6;
                 var6 = var6.container;
                 var0.style = var6;
-                var6 = function(arg0) { // Original name: keyExtractor, environment: var5
+                var6 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
                 };
                 var0.keyExtractor = var6;
-                var6 = function(arg0) { // Original name: renderItem, environment: var5
+                var6 = function arg0() {
                     _fun66971: for (var _fun66971_ip = 0;;) switch (_fun66971_ip) {
                         case 0:
                             var0 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.ItemSeparatorComponent = var6;
                 var6 = 5;
                 var0.initialNumToRender = var6;
-                var5 = function() { // Original name: ListEmptyComponent, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

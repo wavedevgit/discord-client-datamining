@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function() { // Original name: initialize, environment: var1
+    var3 = function() {
         var1 = _closure1_slot1;
         var0 = var1.initialize;
         var0 = var0.bind(var1)();
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.bind(var0)(var9);
     var8.connectStores = var9;
     var8.initialize = var3;
-    var10 = function() { // Original name: get initialized, environment: var1
+    var10 = function() {
         var0 = _closure1_slot1;
         var0 = var0.initialized;
         return var0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.useStateFromStoresArray;
     var2.useStateFromStoresArray = var4;
     var2.initialize = var3;
-    var1 = function() { // Original name: destroy, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var0 = var1.destroy;
         var0 = var0.bind(var1)();

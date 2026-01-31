@@ -19,11 +19,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/reanimated/ReanimatedHelperTypes.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: createFakeSharedValue, environment: var1
+    var1 = function arg0() {
         var0 = {};
         var2 = arg0;
         var0.value = var2;
-        var2 = function() { // Original name: get, environment: var1
+        var2 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             throw var0;
         };
         var0.get = var2;
-        var2 = function() { // Original name: set, environment: var1
+        var2 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             throw var0;
         };
         var0.set = var2;
-        var2 = function() { // Original name: addListener, environment: var1
+        var2 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             throw var0;
         };
         var0.addListener = var2;
-        var2 = function() { // Original name: removeListener, environment: var1
+        var2 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             throw var0;
         };
         var0.removeListener = var2;
-        var1 = function() { // Original name: modify, environment: var1
+        var1 = function() {
             var0 = global;
             var2 = var0.Error;
             var0 = var2.prototype;

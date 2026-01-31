@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/errors/av_errors/AVErrorUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getReportInboundErrors, environment: var1
+    var3 = function() {
         _fun117549: for (var _fun117549_ip = 0;;) switch (_fun117549_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getReportInboundErrors = var3;
-    var3 = function(arg0, arg1) { // Original name: getAccumulatedStatsWithMinDatapoints, environment: var1
+    var3 = function arg0, arg1() {
         _fun117550: for (var _fun117550_ip = 0;;) switch (_fun117550_ip) {
             case 0:
                 var6 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAccumulatedStatsWithMinDatapoints = var3;
-    var1 = function() { // Original name: getWarningFrameRate, environment: var1
+    var1 = function() {
         _fun117551: for (var _fun117551_ip = 0;;) switch (_fun117551_ip) {
             case 0:
                 var4 = arguments[0];

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _mergeOptions, environment: var1
+    var0 = function() {
         _fun9518: for (var _fun9518_ip = 0;;) switch (_fun9518_ip) {
             case 0:
                 var6 = undefined;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: _getEventFilterUrl, environment: var1
+    var0 = function arg0() {
         _fun9519: for (var _fun9519_ip = 0;;) switch (_fun9519_ip) {
             case 0:
                 var0 = arg0;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun9519
                 }
             case 142:
-                var2 = function() { // Original name: _getLastValidUrl, environment: var2
+                var2 = function() {
                     _fun9521: for (var _fun9521_ip = 0;;) switch (_fun9521_ip) {
                         case 0:
                             var2 = undefined;
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'EventFilters';
                 var0.name = var2;
-                var2 = function(arg0) { // Original name: setup, environment: var1
+                var2 = function arg0() {
                     var1 = arg0;
                     var0 = var1.getOptions;
                     var4 = var0.bind(var1)();
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.setup = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun9524: for (var _fun9524_ip = 0;;) switch (_fun9524_ip) {
                         case 0:
                             var1 = arg0;
@@ -490,7 +490,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             _closure2_slot0 = var2;
                         case 49:
                             var3 = _closure2_slot0;
-                            var2 = function(arg0, arg1) { // Original name: _shouldDropEvent, environment: var0
+                            var2 = function arg0, arg1() {
                                 _fun9525: for (var _fun9525_ip = 0;;) switch (_fun9525_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -502,7 +502,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     case 19:
                                         var3 = var0.ignoreErrors;
-                                        var2 = function(arg0, arg1) { // Original name: _isIgnoredError, environment: var1
+                                        var2 = function arg0, arg1() {
                                             _fun9526: for (var _fun9526_ip = 0;;) switch (_fun9526_ip) {
                                                 case 0:
                                                     var1 = arg1;
@@ -556,7 +556,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             continue _fun9525
                                         }
                                     case 44:
-                                        var1 = function(arg0) { // Original name: _isUselessError, environment: var1
+                                        var1 = function arg0() {
                                             _fun9528: for (var _fun9528_ip = 0;;) switch (_fun9528_ip) {
                                                 case 0:
                                                     var1 = arg0;

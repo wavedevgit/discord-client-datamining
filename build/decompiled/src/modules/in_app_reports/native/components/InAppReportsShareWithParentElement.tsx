@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsShareWithParentElement.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun92555: for (var _fun92555_ip = 0;;) switch (_fun92555_ip) {
             case 0:
                 var1 = arg0;

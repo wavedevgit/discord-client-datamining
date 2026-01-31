@@ -33,21 +33,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/visual_effect_view/native/overrides/VEVOOStore.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useVisualEffectViewOverrides, environment: var1
+    var3 = function() {
         var1 = _closure1_slot3;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var2.useVisualEffectViewOverrides = var3;
-    var3 = function() { // Original name: getVisualEffectViewOverrides, environment: var1
+    var3 = function() {
         var1 = _closure1_slot3;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
         return var0;
     };
     var2.getVisualEffectViewOverrides = var3;
-    var3 = function(arg0) { // Original name: setVisualEffectViewOverides, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVisualEffectViewOverides = var3;
-    var1 = function() { // Original name: clearVisualEffectViewOverrides, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

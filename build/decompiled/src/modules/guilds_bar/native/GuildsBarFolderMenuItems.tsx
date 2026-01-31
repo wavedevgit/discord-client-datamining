@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getGuildFolderMenuItems, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var1 = {};
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.e6RscS;
         var0 = var4.bind(var5)(var0);
         var1.label = var0;
-        var0 = function() { // Original name: action, environment: var2
+        var0 = function() {
             var2 = _closure1_slot2;
             var1 = undefined;
             var0 = function*() { // Environment: var0
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.Dx7im5;
         var3 = var4.bind(var5)(var3);
         var1.label = var3;
-        var2 = function() { // Original name: action, environment: var2
+        var2 = function() {
             var2 = _closure1_slot2;
             var1 = undefined;
             var0 = function*() { // Environment: var0

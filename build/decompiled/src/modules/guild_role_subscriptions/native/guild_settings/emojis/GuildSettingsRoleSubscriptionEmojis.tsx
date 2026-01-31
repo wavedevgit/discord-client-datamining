@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionEmojisInner, environment: var1
+    var0 = function arg0() {
         _fun116981: for (var _fun116981_ip = 0;;) switch (_fun116981_ip) {
             case 0:
                 var0 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.headerDescription = var8;
                 var7 = _closure1_slot5;
                 var1.computeEmojiItems = var7;
-                var6 = function(arg0) { // Original name: onSelectRolesForEmoji, environment: var6
+                var6 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = global;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1.guildId = var7;
                         var7 = _closure3_slot0;
                         var1.emoji = var7;
-                        var7 = function(arg0) { // Original name: onSave, environment: var6
+                        var7 = function arg0() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 10;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var1.onSave = var7;
-                        var6 = function() { // Original name: onCancel, environment: var6
+                        var6 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 10;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/emojis/GuildSettingsRoleSubscriptionEmojis.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionEmojis, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var3 = _closure1_slot4;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var11;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var12;
-            var0 = function(arg0) { // Original name: recurseReplaceContentTree, environment: var1
+            var0 = function arg0() {
                 _fun63712: for (var _fun63712_ip = 0;;) switch (_fun63712_ip) {
                     case 0:
                         var0 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot27 = var0;
-            var6 = function(arg0) { // Original name: getRemoteIconURL, environment: var1
+            var6 = function arg0() {
                 _fun63713: for (var _fun63713_ip = 0;;) switch (_fun63713_ip) {
                     case 0:
                         var7 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot28 = var6;
-            var5 = function(arg0) { // Original name: validateOrigin, environment: var1
+            var5 = function arg0() {
                 _fun63714: for (var _fun63714_ip = 0;;) switch (_fun63714_ip) {
                     case 0:
                         var2 = arguments[1];
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var5;
-            var4 = function(arg0) { // Original name: transformInternalTextMessage, environment: var1
+            var4 = function arg0() {
                 _fun63715: for (var _fun63715_ip = 0;;) switch (_fun63715_ip) {
                     case 0:
                         var1 = arg0;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot30 = var4;
-            var3 = function(arg0, arg1, arg2) { // Original name: transformVoiceState, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 _fun63716: for (var _fun63716_ip = 0;;) switch (_fun63716_ip) {
                     case 0:
                         var0 = arg2;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot31 = var3;
-            var0 = function(arg0) { // Original name: fetchApplicationRPC, environment: var1
+            var0 = function arg0() {
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var1 = 25;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot32 = var0;
-            var0 = function() { // Original name: _validateSocketApplication, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot33 = var0;
-            var0 = function() { // Original name: _processSocketThrottlers, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -886,7 +886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.VALIDATE_SOCKET_PERIOD_MS = var8;
             var2.VALIDATE_SOCKET_THROTTLERS = var7;
             var2.getRemoteIconURL = var6;
-            var6 = function(arg0, arg1) { // Original name: containsSameValues, environment: var1
+            var6 = function arg0, arg1() {
                 var3 = arg0;
                 var5 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -909,7 +909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.containsSameValues = var6;
             var2.validateOrigin = var5;
-            var5 = function(arg0, arg1) { // Original name: transformChannel, environment: var1
+            var5 = function arg0, arg1() {
                 _fun63727: for (var _fun63727_ip = 0;;) switch (_fun63727_ip) {
                     case 0:
                         var1 = arg0;
@@ -1085,7 +1085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.transformChannel = var5;
             var2.transformInternalTextMessage = var4;
             var2.transformVoiceState = var3;
-            var3 = function(arg0, arg1) { // Original name: transformBaseRelationship, environment: var1
+            var3 = function arg0, arg1() {
                 var2 = arg1;
                 var0 = {};
                 var1 = arg0;
@@ -1110,7 +1110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.transformBaseRelationship = var3;
-            var3 = function(arg0, arg1) { // Original name: transformApplicationRelationship, environment: var1
+            var3 = function arg0, arg1() {
                 _fun63733: for (var _fun63733_ip = 0;;) switch (_fun63733_ip) {
                     case 0:
                         var2 = arg0;
@@ -1154,7 +1154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.transformApplicationRelationship = var3;
-            var3 = function(arg0) { // Original name: isMatchingOrigin, environment: var1
+            var3 = function arg0() {
                 _fun63734: for (var _fun63734_ip = 0;;) switch (_fun63734_ip) {
                     case 0:
                         var0 = arg0;
@@ -1254,7 +1254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.isMatchingOrigin = var3;
-            var3 = function(arg0, arg1, arg2) { // Original name: hasMessageReadPermission, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 _fun63735: for (var _fun63735_ip = 0;;) switch (_fun63735_ip) {
                     case 0:
                         var4 = arg0;
@@ -1301,7 +1301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.hasMessageReadPermission = var3;
-            var3 = function(arg0) { // Original name: getVoiceConnectionState, environment: var1
+            var3 = function arg0() {
                 _fun63736: for (var _fun63736_ip = 0;;) switch (_fun63736_ip) {
                     case 0:
                         var3 = arg0;
@@ -1336,7 +1336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getVoiceConnectionState = var3;
-            var3 = function(arg0, arg1, arg2) { // Original name: validateActivityInvite, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 _fun63737: for (var _fun63737_ip = 0;;) switch (_fun63737_ip) {
                     case 0:
                         var2 = arg1;
@@ -1374,7 +1374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.validateActivityInvite = var3;
-            var3 = function() { // Original name: validateSocketApplication, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot33;
                 var2 = var3.apply;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.validateSocketApplication = var3;
-            var3 = function() { // Original name: processSocketThrottlers, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot34;
                 var2 = var3.apply;
@@ -1396,7 +1396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.processSocketThrottlers = var3;
-            var3 = function(arg0, arg1) { // Original name: validateOriginAndUpdateSocket, environment: var1
+            var3 = function arg0, arg1() {
                 _fun63740: for (var _fun63740_ip = 0;;) switch (_fun63740_ip) {
                     case 0:
                         var1 = null;
@@ -1418,11 +1418,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.validateOriginAndUpdateSocket = var3;
-            var3 = function(arg0) { // Original name: getDeprecatedVoiceSettingsWithShortcut, environment: var1
+            var3 = function arg0() {
                 var1 = _closure1_slot10;
                 var0 = var1.getSettings;
                 var1 = var0.bind(var1)();
-                var6 = function(arg0) { // Original name: formatDevices, environment: var0
+                var6 = function arg0() {
                     var1 = global;
                     var3 = var1.Object;
                     var2 = var3.values;
@@ -1508,7 +1508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.getDeprecatedVoiceSettingsWithShortcut = var3;
-            var3 = function(arg0, arg1) { // Original name: getVoiceSettingsWithShortcut, environment: var1
+            var3 = function arg0, arg1() {
                 var2 = _closure1_slot10;
                 var1 = var2.getSettings;
                 var0 = arg0;
@@ -1537,7 +1537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.getVoiceSettingsWithShortcut = var3;
-            var3 = function(arg0) { // Original name: validatePostMessageTransport, environment: var1
+            var3 = function arg0() {
                 _fun63746: for (var _fun63746_ip = 0;;) switch (_fun63746_ip) {
                     case 0:
                         var5 = arg0;
@@ -1581,7 +1581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.validatePostMessageTransport = var3;
-            var1 = function(arg0) { // Original name: validateApplication, environment: var1
+            var1 = function arg0() {
                 _fun63747: for (var _fun63747_ip = 0;;) switch (_fun63747_ip) {
                     case 0:
                         var0 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: getItems, environment: var0
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
         _fun37968: for (var _fun37968_ip = 0;;) switch (_fun37968_ip) {
             case 0:
                 var15 = arg0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: getItemId, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun37969: for (var _fun37969_ip = 0;;) switch (_fun37969_ip) {
             case 0:
                 var3 = arg0;
@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: getExtentIndex, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun37970: for (var _fun37970_ip = 0;;) switch (_fun37970_ip) {
             case 0:
                 var1 = arg1;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: getVariableSizedValue, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun37971: for (var _fun37971_ip = 0;;) switch (_fun37971_ip) {
             case 0:
                 var3 = arg0;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: parseItemLocationBox, environment: var0
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun37972: for (var _fun37972_ip = 0;;) switch (_fun37972_ip) {
             case 0:
                 var10 = arg0;

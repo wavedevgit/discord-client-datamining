@@ -26,47 +26,47 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = false;
     var _closure1_slot8 = var1;
     var1 = {};
-    var4 = function(arg0) { // Original name: setOpenCallback, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure1_slot0 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setOpenCallback = var4;
-    var4 = function(arg0) { // Original name: setSendCallback, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure1_slot1 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setSendCallback = var4;
-    var4 = function(arg0) { // Original name: setHeaderReceivedCallback, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure1_slot3 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setHeaderReceivedCallback = var4;
-    var4 = function(arg0) { // Original name: setResponseCallback, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure1_slot4 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setResponseCallback = var4;
-    var4 = function(arg0) { // Original name: setRequestHeaderCallback, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure1_slot2 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setRequestHeaderCallback = var4;
-    var4 = function() { // Original name: isInterceptorEnabled, environment: var3
+    var4 = function() {
         var0 = _closure1_slot8;
         return var0;
     };
     var1.isInterceptorEnabled = var4;
-    var4 = function() { // Original name: enableInterception, environment: var3
+    var4 = function() {
         _fun97660: for (var _fun97660_ip = 0;;) switch (_fun97660_ip) {
             case 0:
                 var2 = _closure1_slot8;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.enableInterception = var4;
-    var3 = function() { // Original name: disableInterception, environment: var3
+    var3 = function() {
         _fun97665: for (var _fun97665_ip = 0;;) switch (_fun97665_ip) {
             case 0:
                 var0 = _closure1_slot8;

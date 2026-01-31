@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var6)(var4);
     var _closure1_slot7 = var4;
     var3 = var3.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: YoutubeIframe, environment: var1
+    var1 = function arg0, arg1() {
         _fun85515: for (var _fun85515_ip = 0;;) switch (_fun85515_ip) {
             case 0:
                 var0 = arg0;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var33 = arg1;
                 var30 = function() { // Environment: var1
                     var0 = {};
-                    var2 = function() { // Original name: getVideoUrl, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -315,7 +315,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.getVideoUrl = var2;
-                    var2 = function() { // Original name: getDuration, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -352,7 +352,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.getDuration = var2;
-                    var2 = function() { // Original name: getCurrentTime, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -389,7 +389,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.getCurrentTime = var2;
-                    var2 = function() { // Original name: isMuted, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -426,7 +426,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.isMuted = var2;
-                    var2 = function() { // Original name: getVolume, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -463,7 +463,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.getVolume = var2;
-                    var2 = function() { // Original name: getPlaybackRate, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.getPlaybackRate = var2;
-                    var2 = function() { // Original name: getAvailablePlaybackRates, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot22;
                         var2 = var0.current;
                         var1 = var2.injectJavaScript;
@@ -537,7 +537,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.getAvailablePlaybackRates = var2;
-                    var1 = function(arg0, arg1) { // Original name: seekTo, environment: var1
+                    var1 = function arg0, arg1() {
                         var0 = _closure2_slot22;
                         var3 = var0.current;
                         var2 = var3.injectJavaScript;

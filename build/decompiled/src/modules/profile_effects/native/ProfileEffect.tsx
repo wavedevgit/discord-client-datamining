@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.effect = var8;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot11 = var1;
-    var1 = function(arg0) { // Original name: usePreloadProfileEffect, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot4;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var1;
-    var4 = function() { // Original name: useProfileDimensions, environment: var3
+    var4 = function() {
         var5 = _closure1_slot4;
         var3 = var5.useState;
         var2 = 0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var4;
-    var4 = function(arg0) { // Original name: ProfileEffect, environment: var3
+    var4 = function arg0() {
         _fun56670: for (var _fun56670_ip = 0;;) switch (_fun56670_ip) {
             case 0:
                 var0 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var4;
-    var4 = function(arg0) { // Original name: StaticEffect, environment: var3
+    var4 = function arg0() {
         _fun56679: for (var _fun56679_ip = 0;;) switch (_fun56679_ip) {
             case 0:
                 var1 = arg0;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/profile_effects/native/ProfileEffect.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun56683: for (var _fun56683_ip = 0;;) switch (_fun56683_ip) {
             case 0:
                 var6 = arg0;

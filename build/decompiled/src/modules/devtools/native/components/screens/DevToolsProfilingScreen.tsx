@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: TableRowGroupReactProfiling, environment: var1
+    var0 = function() {
         var5 = _closure1_slot4;
         var2 = var5.useState;
         var6 = _closure1_slot1;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsProfilingScreen, environment: var1
+    var1 = function() {
         _fun86217: for (var _fun86217_ip = 0;;) switch (_fun86217_ip) {
             case 0:
                 var2 = _closure1_slot4;

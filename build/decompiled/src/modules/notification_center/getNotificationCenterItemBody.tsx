@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getFriendRequestItemBody, environment: var1
+    var0 = function arg0() {
         _fun103268: for (var _fun103268_ip = 0;;) switch (_fun103268_ip) {
             case 0:
                 var0 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.format;
                 var1 = {};
                 var1.username = var6;
-                var5 = function() { // Original name: applicationName, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notification_center/getNotificationCenterItemBody.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getNotificationCenterItemBody, environment: var1
+    var1 = function arg0() {
         _fun103270: for (var _fun103270_ip = 0;;) switch (_fun103270_ip) {
             case 0:
                 var0 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.Wi64vN;
                 var3 = {};
                 var3.username = var10;
-                var14 = function() { // Original name: applicationName, environment: var13
+                var14 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3["7cqOLI"];
                 var3 = {};
                 var3.username = var10;
-                var14 = function() { // Original name: applicationName, environment: var13
+                var14 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3["BB/0vn"];
                 var3 = {};
                 var3.username = var10;
-                var13 = function() { // Original name: applicationName, environment: var13
+                var13 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;

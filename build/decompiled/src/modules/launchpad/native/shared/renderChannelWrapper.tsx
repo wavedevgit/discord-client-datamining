@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: getStyles, environment: var1
+    var0 = function arg0, arg1() {
         _fun110072: for (var _fun110072_ip = 0;;) switch (_fun110072_ip) {
             case 0:
                 var5 = arg1;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/shared/renderChannelWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: renderChannelWrapper, environment: var1
+    var1 = function arg0, arg1() {
         _fun110073: for (var _fun110073_ip = 0;;) switch (_fun110073_ip) {
             case 0:
                 var0 = arg1;

@@ -19,12 +19,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0) { // Original name: startProfileForSpan, environment: var1
+    var1 = function arg0() {
         _fun12108: for (var _fun12108_ip = 0;;) switch (_fun12108_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
-                var0 = function() { // Original name: onProfileHandler, environment: var1
+                var0 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot7;
                     var2 = var3.apply;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot6 = var0;
-                var0 = function() { // Original name: _onProfileHandler, environment: var1
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot2;
@@ -394,7 +394,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind;
                 var3 = var3.bind(var4)(var2);
                 var _closure2_slot5 = var3;
-                var1 = function() { // Original name: profilingWrappedSpanEnd, environment: var1
+                var1 = function() {
                     _fun12116: for (var _fun12116_ip = 0;;) switch (_fun12116_ip) {
                         case 0:
                             var0 = _closure2_slot0;

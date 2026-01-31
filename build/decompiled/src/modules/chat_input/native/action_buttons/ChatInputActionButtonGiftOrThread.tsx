@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderChatInputActionButtonGiftAndThread, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun90367: for (var _fun90367_ip = 0;;) switch (_fun90367_ip) {
             case 0:
                 var1 = arg1;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.bind(var3)(var10);
                 var10 = var10.ThreadPlusIcon;
                 var5.IconComponent = var10;
-                var9 = function(arg0) { // Original name: onPress, environment: var9
+                var9 = function arg0() {
                     var3 = _closure2_slot0;
                     var0 = _closure1_slot5;
                     var2 = var0.THREAD;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getChatInputActionButtonGiftAndThreadKey, environment: var1
+    var0 = function arg0() {
         _fun90369: for (var _fun90369_ip = 0;;) switch (_fun90369_ip) {
             case 0:
                 var0 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputActionButtonGiftOrThread, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var1 = _closure1_slot7;

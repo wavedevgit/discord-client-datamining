@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = var1.nodeMap;
         var _closure2_slot0 = var0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = _closure1_slot6;
         var1 = {};
-        var4 = function() { // Original name: headerRight, environment: var3
+        var4 = function() {
             var3 = _closure1_slot7;
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;
@@ -66,14 +66,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.headerRight = var4;
-        var4 = function() { // Original name: headerTitle, environment: var3
+        var4 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var4;
         var4 = true;
         var1.fullscreen = var4;
-        var3 = function(arg0) { // Original name: render, environment: var3
+        var3 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot7;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = _closure2_slot4;
             var6 = 'failNodeId';
             var0[var6] = var7;
-            var6 = function(arg0) { // Original name: onSubmit, environment: var5
+            var6 = function arg0() {
                 var2 = _closure2_slot8;
                 var0 = _closure3_slot0;
                 var5 = var0.history;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InAppReportModal, environment: var1
+    var1 = function arg0() {
         _fun53687: for (var _fun53687_ip = 0;;) switch (_fun53687_ip) {
             case 0:
                 var2 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2 = var3.bind(var4)(var2);
-                var2 = function(arg0) { // Original name: addOnCloseCallback, environment: var0
+                var2 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var2 = _closure2_slot15;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot16 = var2;
-                var7 = function() { // Original name: closeModal, environment: var0
+                var7 = function() {
                     _fun53691: for (var _fun53691_ip = 0;;) switch (_fun53691_ip) {
                         case 0:
                             var5 = _closure1_slot0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.closeModal = var7;
                             var7 = _closure2_slot16;
                             var5.addOnCloseCallback = var7;
-                            var6 = function(arg0) { // Original name: onNavigate, environment: var6
+                            var6 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var2 = _closure2_slot13;

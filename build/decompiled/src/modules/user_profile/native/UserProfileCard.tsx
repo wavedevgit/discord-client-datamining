@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: Divider, environment: var1
+    var0 = function() {
         var1 = _closure1_slot9;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: UserProfileCard, environment: var1
+    var3 = function arg0() {
         _fun61778: for (var _fun61778_ip = 0;;) switch (_fun61778_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: UserProfileFormRow, environment: var1
+    var3 = function arg0() {
         _fun61779: for (var _fun61779_ip = 0;;) switch (_fun61779_ip) {
             case 0:
                 var1 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.UserProfileFormRow = var3;
-    var1 = function(arg0) { // Original name: UserProfileCardRows, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.children;
         var3 = _closure1_slot6;

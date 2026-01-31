@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun37504;
                 }
         case 135:
-            var3 = function(arg0, arg1) { // Original name: launchCamera, environment: var1
+            var3 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.launchCamera = var3;
-            var1 = function(arg0, arg1) { // Original name: launchImageLibrary, environment: var1
+            var1 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;

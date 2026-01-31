@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var11;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: UnsavedChangesAlertModal, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var7 = var0.onConfirm;
                 var3 = _closure1_slot9;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot14 = var0;
-            var0 = function(arg0) { // Original name: AddAnswerButton, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var7 = var0.onPress;
                 var0 = _closure1_slot12;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot15 = var0;
-            var0 = function(arg0) { // Original name: PollDurationSelectionRow, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var1 = var0.selectedDuration;
                 var _closure2_slot0 = var1;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.A4PJ1o;
                 var9 = var10.bind(var11)(var9);
                 var0.accessibilityHint = var9;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var6 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 18;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/polls/native/PollCreation.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: PollCreation, environment: var1
+            var1 = function arg0() {
                 _fun108322: for (var _fun108322_ip = 0;;) switch (_fun108322_ip) {
                     case 0:
                         var0 = arg0;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1.bind(var2)(var26, var16);
                         var1 = var1.trackPollCreationCancelled;
                         var _closure2_slot16 = var1;
-                        var1 = function() { // Original name: handleCancelClose, environment: var15
+                        var1 = function() {
                             var1 = _closure2_slot16;
                             var0 = undefined;
                             var1 = var1.bind(var0)();
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var20[var1];
                         var2 = var29.bind(var3)(var1);
                         var1 = {};
-                        var7 = function() { // Original name: onAddAnswer, environment: var15
+                        var7 = function() {
                             var1 = _closure2_slot10;
                             var0 = undefined;
                             var1 = var1.bind(var0)();
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var22 = var22["ETE/oC"];
                         var22 = var32.bind(var33)(var22);
                         var8.accessibilityLabel = var22;
-                        var22 = function() { // Original name: onPress, environment: var15
+                        var22 = function() {
                             _fun108331: for (var _fun108331_ip = 0;;) switch (_fun108331_ip) {
                                 case 0:
                                     var3 = _closure1_slot0;
@@ -1257,7 +1257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var18.bind(var19)(var17);
                         var12.label = var17;
                         var12.checked = var16;
-                        var15 = function() { // Original name: onPress, environment: var15
+                        var15 = function() {
                             var2 = _closure2_slot6;
                             var0 = _closure2_slot5;
                             var1 = !var0;

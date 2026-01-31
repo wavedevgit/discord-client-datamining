@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: TermsAndConditionsActionSheet, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.termsAndConditions;
         var0 = _closure1_slot9;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/OutboundPromotionCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OutboundPromotionCard, environment: var1
+    var1 = function arg0() {
         _fun82618: for (var _fun82618_ip = 0;;) switch (_fun82618_ip) {
             case 0:
                 var1 = arg0;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.bind(var0)(var1);
                             var1 = var2.openLazy;
                             var0 = {};
-                            var3 = function() { // Original name: importer, environment: var3
+                            var3 = function() {
                                 var2 = _closure1_slot0;
                                 var0 = _closure1_slot2;
                                 var1 = 18;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var6 = arg0;
                                         var7 = var1;
                                         var0 = copyDataProperties(var7, var6);
-                                        var4 = function() { // Original name: onCancel, environment: var0
+                                        var4 = function() {
                                             var2 = _closure1_slot1;
                                             var1 = _closure1_slot2;
                                             var0 = 16;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.shrink = var18;
                 var18 = var12.claimButton;
                 var15.style = var18;
-                var18 = function() { // Original name: onPress, environment: var13
+                var18 = function() {
                     var2 = _closure2_slot4;
                     var1 = undefined;
                     var0 = true;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.t;
                 var10 = var9.sCm3Zb;
                 var9 = {};
-                var13 = function() { // Original name: onClick, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 21;

@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelAnimatedButtonWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AnimatedButtonWrapper, environment: var1
+    var1 = function arg0() {
         _fun111552: for (var _fun111552_ip = 0;;) switch (_fun111552_ip) {
             case 0:
                 var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun111556
                             }
                         case 38:
-                            var1 = function(arg0) { // Original name: t, environment: var1
+                            var1 = function arg0() {
                                 var3 = arg0;
                                 var4 = _closure2_slot8;
                                 var1 = var4.set;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun111558
                             }
                         case 38:
-                            var1 = function(arg0) { // Original name: t, environment: var1
+                            var1 = function arg0() {
                                 var3 = arg0;
                                 var0 = {};
                                 var1 = {};

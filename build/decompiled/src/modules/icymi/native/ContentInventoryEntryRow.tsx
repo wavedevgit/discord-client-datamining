@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ContentInventoryEntryRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ContentInventoryEntryRow, environment: var1
+    var1 = function arg0() {
         _fun104117: for (var _fun104117_ip = 0;;) switch (_fun104117_ip) {
             case 0:
                 var0 = arg0;

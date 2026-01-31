@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: getGreenTextStyle, environment: var1
+    var0 = function arg0, arg1() {
         _fun116441: for (var _fun116441_ip = 0;;) switch (_fun116441_ip) {
             case 0:
                 var1 = arg0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: EarningPreview, environment: var1
+    var0 = function() {
         _fun116442: for (var _fun116442_ip = 0;;) switch (_fun116442_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: ConsistentEarningBenefit, environment: var1
+    var0 = function() {
         _fun116443: for (var _fun116443_ip = 0;;) switch (_fun116443_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: FollowerAwardBenefit, environment: var1
+    var0 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: RevenueShareBenefit, environment: var1
+    var0 = function() {
         var9 = _closure1_slot1;
         var10 = _closure1_slot2;
         var0 = 7;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: BenefitAvatar, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.avatarSource;
         var0 = _closure1_slot7;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/welcome/CreatorBenefitsSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: CreatorBenefitsSection, environment: var1
+    var1 = function() {
         var3 = _closure1_slot6;
         var2 = _closure1_slot3;
         var1 = {};

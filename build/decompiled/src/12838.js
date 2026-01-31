@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var4 = function() { // Original name: createStackParser, environment: var3
+    var4 = function() {
         _fun98758: for (var _fun98758_ip = 0;;) switch (_fun98758_ip) {
             case 0:
                 var4 = undefined;
@@ -203,7 +203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var1 = function(arg0) { // Original name: stripSentryFramesAndReverse, environment: var3
+    var1 = function arg0() {
         _fun98762: for (var _fun98762_ip = 0;;) switch (_fun98762_ip) {
             case 0:
                 var3 = arg0;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0) { // Original name: getLastStackFrame, environment: var3
+    var0 = function arg0() {
         _fun98764: for (var _fun98764_ip = 0;;) switch (_fun98764_ip) {
             case 0:
                 var1 = arg0;
@@ -372,7 +372,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = '?';
     var2.UNKNOWN_FUNCTION = var5;
     var2.createStackParser = var4;
-    var4 = function(arg0) { // Original name: getFramesFromEvent, environment: var3
+    var4 = function arg0() {
         _fun98765: for (var _fun98765_ip = 0;;) switch (_fun98765_ip) {
             case 0:
                 var0 = undefined;
@@ -429,7 +429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getFramesFromEvent = var4;
-    var4 = function(arg0) { // Original name: getFunctionName, environment: var3
+    var4 = function arg0() {
         _fun98767: for (var _fun98767_ip = 0;;) switch (_fun98767_ip) {
             case 0:
                 var2 = arg0;
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getFunctionName = var4;
-    var3 = function(arg0) { // Original name: stackParserFromStackParserOptions, environment: var3
+    var3 = function arg0() {
         _fun98768: for (var _fun98768_ip = 0;;) switch (_fun98768_ip) {
             case 0:
                 var5 = arg0;

@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfilePrimaryGuildEditButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfilePrimaryGuildEditButton, environment: var1
+    var1 = function arg0() {
         _fun79937: for (var _fun79937_ip = 0;;) switch (_fun79937_ip) {
             case 0:
                 var0 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.length;
                 var0 = 0;
                 var8 = var2 > var0;
-                var0 = function(arg0) { // Original name: handleSelectPrimaryGuild, environment: var6
+                var0 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 8;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.Xz9c91;
                 var8 = var9.bind(var17)(var8);
                 var1.accessibilityHint = var8;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     _fun79940: for (var _fun79940_ip = 0;;) switch (_fun79940_ip) {
                         case 0:
                             var4 = _closure1_slot1;

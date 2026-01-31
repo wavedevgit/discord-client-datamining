@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: NotificationSettingsPresets, environment: var1
+    var0 = function arg0() {
         _fun69858: for (var _fun69858_ip = 0;;) switch (_fun69858_ip) {
             case 0:
                 var1 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.useSegmentedControlState;
                 var3 = {};
                 var3.pageWidth = var12;
-                var12 = function(arg0) { // Original name: onSetActiveIndex, environment: var9
+                var12 = function arg0() {
                     _fun69859: for (var _fun69859_ip = 0;;) switch (_fun69859_ip) {
                         case 0:
                             var1 = arg0;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["ztO+l+"];
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var3 = _closure2_slot0;
                     var2 = var3.updatePreset;
                     var4 = _closure1_slot0;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsPresets.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: NotificationSettingsGuildPresets, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var5 = var5.preset;
         var1.preset = var5;
-        var4 = function(arg0) { // Original name: updatePreset, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 14;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.NotificationSettingsGuildPresets = var3;
-    var1 = function(arg0) { // Original name: NotificationSettingsChannelPresets, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var5 = var5.preset;
         var1.preset = var5;
-        var4 = function(arg0) { // Original name: updatePreset, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 15;

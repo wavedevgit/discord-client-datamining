@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var11.bind(var12)(var10);
     var2.IGNORE_USER_FEEDBACK_COOLDOWN_MS = var9;
     var2.MuteFeedbackReasons = var8;
-    var8 = function() { // Original name: getMuteFeedbackOptions, environment: var4
+    var8 = function() {
         var1 = {};
         var3 = _closure1_slot3;
         var2 = var3.TOO_MANY_NOTIFICATIONS;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMuteFeedbackOptions = var8;
     var2.BlockUserFeedbackReasons = var7;
-    var7 = function() { // Original name: getBlockUserFeedbackOptions, environment: var4
+    var7 = function() {
         var1 = {};
         var3 = _closure1_slot4;
         var2 = var3.CONFUSION;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBlockUserFeedbackOptions = var7;
     var2.IgnoreUserFeedbackReasons = var6;
-    var6 = function() { // Original name: getIgnoreUserFeedbackOptions, environment: var4
+    var6 = function() {
         var1 = {};
         var3 = _closure1_slot5;
         var2 = var3.CONFUSION;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIgnoreUserFeedbackOptions = var6;
     var2.AgeVerificationFeedbackReasons = var5;
-    var4 = function(arg0) { // Original name: getAgeVerificationFeedbackOptions, environment: var4
+    var4 = function arg0() {
         _fun52105: for (var _fun52105_ip = 0;;) switch (_fun52105_ip) {
             case 0:
                 var0 = {};

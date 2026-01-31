@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: isTiffFile, environment: var2
+    var3 = function arg0() {
         _fun37911: for (var _fun37911_ip = 0;;) switch (_fun37911_ip) {
             case 0:
                 var4 = arg0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isTiffFile = var3;
-    var2 = function() { // Original name: findTiffOffsets, environment: var2
+    var2 = function() {
         _fun37912: for (var _fun37912_ip = 0;;) switch (_fun37912_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/calls/getParticipantUserKey.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: getParticipantUserKey, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var0 = var1.toLowerCase;
         var3 = var0.bind(var1)();

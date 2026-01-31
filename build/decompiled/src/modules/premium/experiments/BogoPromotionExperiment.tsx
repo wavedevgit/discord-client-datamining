@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/experiments/BogoPromotionExperiment.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: _default, environment: var1
+    var4 = function() {
         _fun58023: for (var _fun58023_ip = 0;;) switch (_fun58023_ip) {
             case 0:
                 var4 = arguments[0];

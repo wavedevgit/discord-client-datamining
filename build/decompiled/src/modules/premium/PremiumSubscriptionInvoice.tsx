@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var6 = function() { // Original name: createSubscriptionInvoicePreview, environment: var1
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var6;
-    var0 = function() { // Original name: _createSubscriptionInvoicePreview, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var5 = function() { // Original name: updateSubscriptionInvoicePreview, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var5;
-    var0 = function() { // Original name: _updateSubscriptionInvoicePreview, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var4 = function() { // Original name: createOneTimePurchaseInvoicePreview, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var4;
-    var0 = function() { // Original name: _createOneTimePurchaseInvoicePreview, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var3 = function() { // Original name: getSubscriptionInvoice, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var3;
-    var0 = function() { // Original name: _getSubscriptionInvoice, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: useGenericSubscriptionInvoicePreview, environment: var1
+    var0 = function arg0, arg1() {
         _fun59285: for (var _fun59285_ip = 0;;) switch (_fun59285_ip) {
             case 0:
                 var6 = arg1;
@@ -641,7 +641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var0
                     _fun59286: for (var _fun59286_ip = 0;;) switch (_fun59286_ip) {
                         case 0:
-                            var1 = function() { // Original name: _loadPreview, environment: var0
+                            var1 = function() {
                                 var3 = undefined;
                                 var0 = undefined;
                                 var2 = _closure1_slot6;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun59286
                             }
                         case 27:
-                            var2 = function() { // Original name: loadPreview, environment: var0
+                            var2 = function() {
                                 var0 = undefined;
                                 var3 = _closure3_slot1;
                                 var2 = var3.apply;
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.updateSubscriptionInvoicePreview = var5;
     var2.createOneTimePurchaseInvoicePreview = var4;
     var2.getSubscriptionInvoice = var3;
-    var3 = function(arg0) { // Original name: useOneTimePurchaseInvoicePreview, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var4 = _closure1_slot10;
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOneTimePurchaseInvoicePreview = var3;
-    var3 = function(arg0) { // Original name: useSubscriptionInvoicePreview, environment: var1
+    var3 = function arg0() {
         _fun59295: for (var _fun59295_ip = 0;;) switch (_fun59295_ip) {
             case 0:
                 var5 = arg0;
@@ -936,7 +936,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSubscriptionInvoicePreview = var3;
-    var3 = function(arg0) { // Original name: useGetSubscriptionInvoice, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var4 = _closure1_slot10;
@@ -973,7 +973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGetSubscriptionInvoice = var3;
-    var1 = function(arg0) { // Original name: getItemUnitPriceWithDiscount, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = var1.subscriptionPlanPrice;

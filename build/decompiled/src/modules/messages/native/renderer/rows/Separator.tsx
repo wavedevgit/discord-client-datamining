@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/rows/Separator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: generateSeparatorRowData, environment: var1
+    var1 = function arg0, arg1() {
         _fun92523: for (var _fun92523_ip = 0;;) switch (_fun92523_ip) {
             case 0:
                 var0 = arg0;

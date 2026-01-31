@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var1 = 'design/utils/shared/getNodeText.tsx';
     var1 = var4.bind(var5)(var1);
-    var1 = function(arg0) { // Original name: getNodeText, environment: var3
+    var1 = function arg0() {
         _fun27224: for (var _fun27224_ip = 0;;) switch (_fun27224_ip) {
             case 0:
                 var4 = arg0;

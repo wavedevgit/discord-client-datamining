@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var4 = function(arg0) { // Original name: isEnumObject, environment: var1
+    var4 = function arg0() {
         _fun14990: for (var _fun14990_ip = 0;;) switch (_fun14990_ip) {
             case 0:
                 var0 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: listEnumValues, environment: var1
+    var3 = function arg0() {
         _fun14991: for (var _fun14991_ip = 0;;) switch (_fun14991_ip) {
             case 0:
                 var3 = arg0;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.listEnumNumbers = var0;
     var2.isEnumObject = var4;
     var2.listEnumValues = var3;
-    var3 = function(arg0) { // Original name: listEnumNames, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg0;
@@ -257,7 +257,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.listEnumNames = var3;
-    var1 = function(arg0) { // Original name: listEnumNumbers, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot2;
         var2 = undefined;
         var1 = arg0;

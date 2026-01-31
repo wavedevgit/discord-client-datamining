@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: RemoteAuthBody, environment: var3
+    var0 = function arg0() {
         _fun81829: for (var _fun81829_ip = 0;;) switch (_fun81829_ip) {
             case 0:
                 var0 = arg0;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5[var7];
                 var5 = var5[var6];
                 var _closure2_slot2 = var5;
-                var6 = function(arg0) { // Original name: transitionStep, environment: var2
+                var6 = function arg0() {
                     var2 = _closure2_slot1;
                     var0 = undefined;
                     var1 = arg0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: ExperimentConnectedRemoteAuthLogin, environment: var3
+    var0 = function arg0() {
         _fun81834: for (var _fun81834_ip = 0;;) switch (_fun81834_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: RemoteAuthLogin, environment: var3
+    var0 = function arg0() {
         _fun81835: for (var _fun81835_ip = 0;;) switch (_fun81835_ip) {
             case 0:
                 var0 = arg0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9["ETE/oC"];
                 var9 = var10.bind(var11)(var9);
                 var5.text = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 11;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: RemoteAuthLoginSucceeded, environment: var3
+    var0 = function() {
         var0 = _closure1_slot13;
         var3 = undefined;
         var11 = var0.bind(var3)();
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: RemoteAuthNotFound, environment: var3
+    var0 = function() {
         var0 = _closure1_slot13;
         var3 = undefined;
         var11 = var0.bind(var3)();
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: RemoteAuthLoading, environment: var3
+    var0 = function() {
         var0 = _closure1_slot13;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'components_native/RemoteAuthModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: RemoteAuth, environment: var3
+    var3 = function arg0() {
         var0 = _closure1_slot13;
         var3 = undefined;
         var12 = var0.bind(var3)();

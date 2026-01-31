@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useBlurTheme, environment: var1
+    var0 = function arg0() {
         _fun47878: for (var _fun47878_ip = 0;;) switch (_fun47878_ip) {
             case 0:
                 var1 = arg0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: useBlurStyle, environment: var1
+    var0 = function arg0, arg1() {
         _fun47879: for (var _fun47879_ip = 0;;) switch (_fun47879_ip) {
             case 0:
                 var5 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: useBlurTintRgba, environment: var1
+    var0 = function arg0, arg1() {
         _fun47881: for (var _fun47881_ip = 0;;) switch (_fun47881_ip) {
             case 0:
                 var5 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: useBlurFallback, environment: var1
+    var0 = function arg0, arg1() {
         _fun47883: for (var _fun47883_ip = 0;;) switch (_fun47883_ip) {
             case 0:
                 var1 = arg1;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.BlurStyle;
     var2.BlurStyle = var3;
-    var3 = function(arg0) { // Original name: BackgroundBlurFill, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.style;
         var10 = var0.blurTheme;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.BackgroundBlurFill = var3;
-    var3 = function(arg0) { // Original name: BackgroundBlurFillAnimated, environment: var1
+    var3 = function arg0() {
         _fun47885: for (var _fun47885_ip = 0;;) switch (_fun47885_ip) {
             case 0:
                 var0 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.BackgroundBlurFillAnimated = var3;
-    var1 = function(arg0) { // Original name: BackgroundBlurFillWithPress, environment: var1
+    var1 = function arg0() {
         _fun47886: for (var _fun47886_ip = 0;;) switch (_fun47886_ip) {
             case 0:
                 var4 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var18];
                 var7 = var14.bind(var3)(var2);
                 var6 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: T, environment: var0
+                var2 = function() {
                     var0 = {};
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var18];
                 var6 = var14.bind(var3)(var2);
                 var2 = var6.useAnimatedProps;
-                var0 = function() { // Original name: p, environment: var0
+                var0 = function() {
                     _fun47888: for (var _fun47888_ip = 0;;) switch (_fun47888_ip) {
                         case 0:
                             var0 = {};

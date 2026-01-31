@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activate_device/native/ActivateDeviceModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivateDeviceModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.userCode;
         var _closure2_slot0 = var5;
@@ -47,10 +47,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var0 = function() { // Environment: var0
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
-                var0 = function() { // Original name: onClose, environment: var3
+                var0 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 2;
@@ -68,12 +68,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var4 = true;
                 var1.fullscreen = var4;
-                var4 = function() { // Original name: headerTitle, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var4;
-                var4 = function() { // Original name: headerLeft, environment: var3
+                var4 = function() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
@@ -105,12 +105,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.headerLeft = var4;
-                var4 = function() { // Original name: headerRight, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerRight = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

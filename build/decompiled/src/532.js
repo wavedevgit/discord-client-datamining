@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Math;
     var1 = var1.max;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: concatty, environment: var0
+    var1 = function arg0, arg1() {
         _fun6624: for (var _fun6624_ip = 0;;) switch (_fun6624_ip) {
             case 0:
                 var5 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: bind, environment: var0
+    var1 = function arg0() {
         _fun6625: for (var _fun6625_ip = 0;;) switch (_fun6625_ip) {
             case 0:
                 var1 = this;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = '){ return binder.apply(this,arguments); }';
                 var0 = var6 + var0;
                 var3 = var5.bind(var4)(var3, var0);
-                var0 = function() { // Original name: binder, environment: var2
+                var0 = function() {
                     _fun6626: for (var _fun6626_ip = 0;;) switch (_fun6626_ip) {
                         case 0:
                             var0 = this;
@@ -215,7 +215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun6625
                 }
             case 299:
-                var3 = function() { // Original name: Empty, environment: var2
+                var3 = function() {
                     var0 = undefined;
                     return var0;
                 };

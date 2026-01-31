@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.imageEmoji = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: Emoji, environment: var1
+    var3 = function arg0() {
         _fun64579: for (var _fun64579_ip = 0;;) switch (_fun64579_ip) {
             case 0:
                 var0 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_channel_effects/native/AnimatedEffectEmoji.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AnimatedEffectEmoji, environment: var1
+    var1 = function arg0() {
         _fun64580: for (var _fun64580_ip = 0;;) switch (_fun64580_ip) {
             case 0:
                 var1 = arg0;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var12[var1];
                 var3 = var9.bind(var4)(var2);
                 var2 = var3.useAnimatedStyle;
-                var0 = function() { // Original name: N, environment: var0
+                var0 = function() {
                     _fun64585: for (var _fun64585_ip = 0;;) switch (_fun64585_ip) {
                         case 0:
                             var8 = _closure1_slot0;

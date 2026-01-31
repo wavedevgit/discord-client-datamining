@@ -19,12 +19,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/ActivityPopoutUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: shouldOpenActivityInPopoutWindow, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.shouldOpenActivityInPopoutWindow = var3;
-    var1 = function(arg0, arg1) { // Original name: wrapPreemptiveActivityPopout, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg1;
         var0 = undefined;
         var0 = var1.bind(var0)();

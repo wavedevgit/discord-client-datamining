@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/components/ContactSuggestionRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ContactSuggestionRow, environment: var1
+    var1 = function arg0() {
         _fun108625: for (var _fun108625_ip = 0;;) switch (_fun108625_ip) {
             case 0:
                 var5 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.user;
                 var4.user = var10;
                 var4.added = var9;
-                var8 = function(arg0) { // Original name: onAddSuggestion, environment: var8
+                var8 = function arg0() {
                     _fun108630: for (var _fun108630_ip = 0;;) switch (_fun108630_ip) {
                         case 0:
                             var2 = arg0;

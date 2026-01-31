@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'function EditProfileEffectActionSheetTsx3(){const{shouldShowCtaButton,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=shouldShowCtaButton.get()?1:0;return{opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,{...MEDIA_PICKER_SEND_BUTTON_SPRING,overshootClamping:true})};}';
     var1.code = var4;
     var _closure1_slot19 = var1;
-    var1 = function(arg0) { // Original name: EditProfileEffectInner, environment: var3
+    var1 = function arg0() {
         _fun56866: for (var _fun56866_ip = 0;;) switch (_fun56866_ip) {
             case 0:
                 var1 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_profile/native/EditProfileEffectActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: EditProfileEffectActionSheet, environment: var3
+    var3 = function arg0() {
         _fun56871: for (var _fun56871_ip = 0;;) switch (_fun56871_ip) {
             case 0:
                 var0 = arg0;
@@ -991,7 +991,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16[var12];
                 var15 = var14.bind(var3)(var2);
                 var5 = var15.useAnimatedStyle;
-                var2 = function() { // Original name: k, environment: var1
+                var2 = function() {
                     _fun56877: for (var _fun56877_ip = 0;;) switch (_fun56877_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16[var12];
                 var15 = var14.bind(var3)(var2);
                 var5 = var15.useAnimatedProps;
-                var2 = function() { // Original name: G, environment: var1
+                var2 = function() {
                     _fun56878: for (var _fun56878_ip = 0;;) switch (_fun56878_ip) {
                         case 0:
                             var0 = {};
@@ -1111,7 +1111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16[var12];
                 var19 = var14.bind(var3)(var2);
                 var5 = var19.useAnimatedStyle;
-                var2 = function() { // Original name: H, environment: var1
+                var2 = function() {
                     _fun56879: for (var _fun56879_ip = 0;;) switch (_fun56879_ip) {
                         case 0:
                             var2 = _closure2_slot6;

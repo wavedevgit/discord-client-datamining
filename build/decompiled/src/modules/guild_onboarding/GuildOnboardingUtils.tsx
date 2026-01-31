@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun41527: for (var _fun41527_ip = 0;;) switch (_fun41527_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun41529: for (var _fun41529_ip = 0;;) switch (_fun41529_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getChannelCoverage, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var5 = arg0;
         var4 = arg1;
         var3 = arg2;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var3 = function(arg0) { // Original name: isChattableChannel, environment: var1
+    var3 = function arg0() {
         _fun41538: for (var _fun41538_ip = 0;;) switch (_fun41538_ip) {
             case 0:
                 var6 = arg0;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var3;
-    var0 = function(arg0, arg1) { // Original name: getFlattenedDefaultChannels, environment: var1
+    var0 = function arg0, arg1() {
         _fun41539: for (var _fun41539_ip = 0;;) switch (_fun41539_ip) {
             case 0:
                 var11 = arg1;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun41539
                 }
             case 17:
-                var10 = function(arg0) { // Original name: r, environment: var0
+                var10 = function arg0() {
                     var0 = arg0;
                     return var0;
                 };
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun41539
                 }
             case 26:
-                var9 = function() { // Original name: l, environment: var0
+                var9 = function() {
                     var0 = true;
                     return var0;
                 };
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: areStatesEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun41542: for (var _fun41542_ip = 0;;) switch (_fun41542_ip) {
             case 0:
                 var3 = arg0;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/guild_onboarding/GuildOnboardingUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.ONBOARDING_EPOCH = var4;
-    var4 = function(arg0) { // Original name: useGuildOnboardingSettingsAvailable, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGuildOnboardingSettingsAvailable = var4;
-    var4 = function(arg0) { // Original name: isGuildOnboardingSettingsAvailable, environment: var1
+    var4 = function arg0() {
         _fun41545: for (var _fun41545_ip = 0;;) switch (_fun41545_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isGuildOnboardingSettingsAvailable = var4;
-    var4 = function(arg0, arg1) { // Original name: isBlockedByOnboarding, environment: var1
+    var4 = function arg0, arg1() {
         _fun41546: for (var _fun41546_ip = 0;;) switch (_fun41546_ip) {
             case 0:
                 var1 = arg0;
@@ -955,7 +955,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isBlockedByOnboarding = var4;
-    var4 = function(arg0, arg1) { // Original name: showRulesInOnboarding, environment: var1
+    var4 = function arg0, arg1() {
         _fun41547: for (var _fun41547_ip = 0;;) switch (_fun41547_ip) {
             case 0:
                 var1 = arg0;
@@ -996,7 +996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showRulesInOnboarding = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: getChannelCoverageForOnboarding, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var4 = _closure1_slot17;
         var3 = _closure1_slot6;
         var2 = var3.getChannels;
@@ -1018,7 +1018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getChannelCoverageForOnboarding = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: useChannelCoverageForOnboarding, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot17;
@@ -1055,7 +1055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChannelCoverageForOnboarding = var4;
-    var4 = function(arg0) { // Original name: isChattableChannelId, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot18;
         var3 = _closure1_slot4;
         var1 = var3.getChannel;
@@ -1067,7 +1067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isChattableChannelId = var4;
     var2.isChattableChannel = var3;
-    var3 = function(arg0) { // Original name: useIsChattableChannel, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -1110,7 +1110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsChattableChannel = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getMinimumSetOfDefaultChannelIds, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun41556: for (var _fun41556_ip = 0;;) switch (_fun41556_ip) {
             case 0:
                 var7 = arg0;
@@ -1123,7 +1123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun41556
                 }
             case 21:
-                var6 = function() { // Original name: a, environment: var1
+                var6 = function() {
                     var0 = true;
                     return var0;
                 };
@@ -1262,7 +1262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMinimumSetOfDefaultChannelIds = var3;
-    var3 = function(arg0, arg1) { // Original name: getChattableDefaultChannels, environment: var1
+    var3 = function arg0, arg1() {
         _fun41564: for (var _fun41564_ip = 0;;) switch (_fun41564_ip) {
             case 0:
                 var8 = arg0;
@@ -1304,7 +1304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2 = var5.bind(var1)(var2);
-                var0 = function(arg0, arg1) { // Original name: filterChattableChannels, environment: var0
+                var0 = function arg0, arg1() {
                     var2 = arg0;
                     var1 = arg1;
                     var _closure3_slot0 = var1;
@@ -1342,7 +1342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChattableDefaultChannels = var3;
-    var3 = function(arg0, arg1) { // Original name: useChattableDefaultChannels, environment: var1
+    var3 = function arg0, arg1() {
         var7 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var7;
@@ -1494,7 +1494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChattableDefaultChannels = var3;
-    var3 = function(arg0) { // Original name: getSelectedRoleIds, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var0 = global;
         var2 = var0.Set;
@@ -1528,7 +1528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSelectedRoleIds = var3;
-    var3 = function(arg0) { // Original name: getSelectedChannelIds, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var0 = global;
         var2 = var0.Set;
@@ -1562,7 +1562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSelectedChannelIds = var3;
-    var3 = function(arg0) { // Original name: getProviderConnectionState, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.filter;
         var1 = function(arg0) { // Environment: var0
@@ -1642,7 +1642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getProviderConnectionState = var3;
-    var1 = function(arg0) { // Original name: getApplicationConnectionState, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.filter;
         var1 = function(arg0) { // Environment: var0

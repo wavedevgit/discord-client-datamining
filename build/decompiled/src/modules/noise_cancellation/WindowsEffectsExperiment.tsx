@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: getWindowsAudioEffectsExperimentConfig, environment: var1
+    var3 = function arg0() {
         _fun93977: for (var _fun93977_ip = 0;;) switch (_fun93977_ip) {
             case 0:
                 var0 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/noise_cancellation/WindowsEffectsExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getWindowsAudioEffectsExperimentConfig = var3;
-    var1 = function(arg0) { // Original name: useWindowsAudioEffectsExperimentConfig, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var1 = var1.location;
         var _closure2_slot0 = var1;

@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: GlobalStatusIndicatorWrapper, environment: var1
+    var3 = function arg0() {
         _fun68652: for (var _fun68652_ip = 0;;) switch (_fun68652_ip) {
             case 0:
                 var1 = arg0;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/connectivity/native/components/GlobalStatusIndicator.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: _default, environment: var1
+    var3 = function arg0() {
         _fun68660: for (var _fun68660_ip = 0;;) switch (_fun68660_ip) {
             case 0:
                 var1 = arg0;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useGlobalStatusIndicatorHeightSharedValue, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var5 = _closure1_slot0;

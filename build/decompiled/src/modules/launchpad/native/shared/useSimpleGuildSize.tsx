@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/shared/useSimpleGuildSize.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSimpleGuildSize, environment: var1
+    var1 = function arg0() {
         _fun110044: for (var _fun110044_ip = 0;;) switch (_fun110044_ip) {
             case 0:
                 var1 = arg0;

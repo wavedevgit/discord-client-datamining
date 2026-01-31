@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: countSymbols, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: at, environment: var1
+    var0 = function arg0, arg1() {
         _fun97024: for (var _fun97024_ip = 0;;) switch (_fun97024_ip) {
             case 0:
                 var1 = arg0;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: isSingleDot, environment: var1
+    var0 = function arg0() {
         _fun97025: for (var _fun97025_ip = 0;;) switch (_fun97025_ip) {
             case 0:
                 var2 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: isWindowsDriveLetterString, environment: var1
+    var0 = function arg0() {
         _fun97026: for (var _fun97026_ip = 0;;) switch (_fun97026_ip) {
             case 0:
                 var3 = arg0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: isSpecialScheme, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot3;
         var0 = arg0;
         var1 = var1[var0];
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: isSpecial, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot13;
         var0 = arg0;
         var1 = var0.scheme;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: isNotSpecial, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot13;
         var0 = arg0;
         var1 = var0.scheme;
@@ -140,14 +140,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: defaultPort, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot3;
         var0 = arg0;
         var0 = var1[var0];
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: isC0ControlPercentEncode, environment: var1
+    var0 = function arg0() {
         _fun97031: for (var _fun97031_ip = 0;;) switch (_fun97031_ip) {
             case 0:
                 var2 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: isUserinfoPercentEncode, environment: var1
+    var0 = function arg0() {
         _fun97032: for (var _fun97032_ip = 0;;) switch (_fun97032_ip) {
             case 0:
                 var3 = arg0;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: isFragmentPercentEncode, environment: var1
+    var0 = function arg0() {
         _fun97033: for (var _fun97033_ip = 0;;) switch (_fun97033_ip) {
             case 0:
                 var3 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: isPathPercentEncode, environment: var1
+    var0 = function arg0() {
         _fun97034: for (var _fun97034_ip = 0;;) switch (_fun97034_ip) {
             case 0:
                 var3 = arg0;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: percentEncodeChar, environment: var1
+    var0 = function arg0, arg1() {
         _fun97035: for (var _fun97035_ip = 0;;) switch (_fun97035_ip) {
             case 0:
                 var1 = arg0;
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: parseIPv4Number, environment: var1
+    var0 = function arg0() {
         _fun97036: for (var _fun97036_ip = 0;;) switch (_fun97036_ip) {
             case 0:
                 var4 = arg0;
@@ -391,7 +391,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: parseHost, environment: var1
+    var0 = function arg0() {
         _fun97037: for (var _fun97037_ip = 0;;) switch (_fun97037_ip) {
             case 0:
                 var2 = arg0;
@@ -668,7 +668,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot4;
                 return var0;
             case 625:
-                var0 = function(arg0) { // Original name: parseOpaqueHost, environment: var0
+                var0 = function arg0() {
                     _fun97038: for (var _fun97038_ip = 0;;) switch (_fun97038_ip) {
                         case 0:
                             var2 = arg0;
@@ -1169,7 +1169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot23 = var0;
-    var4 = function(arg0) { // Original name: serializeHost, environment: var1
+    var4 = function arg0() {
         _fun97039: for (var _fun97039_ip = 0;;) switch (_fun97039_ip) {
             case 0:
                 var10 = arg0;
@@ -1196,7 +1196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun97039
                 }
             case 57:
-                var9 = function(arg0) { // Original name: serializeIPv6, environment: var9
+                var9 = function arg0() {
                     _fun97040: for (var _fun97040_ip = 0;;) switch (_fun97040_ip) {
                         case 0:
                             var12 = arg0;
@@ -1395,7 +1395,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot24 = var4;
-    var0 = function(arg0) { // Original name: shortenPath, environment: var1
+    var0 = function arg0() {
         _fun97041: for (var _fun97041_ip = 0;;) switch (_fun97041_ip) {
             case 0:
                 var0 = arg0;
@@ -1442,7 +1442,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: includesCredentials, environment: var1
+    var0 = function arg0() {
         _fun97042: for (var _fun97042_ip = 0;;) switch (_fun97042_ip) {
             case 0:
                 var1 = arg0;
@@ -1461,7 +1461,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot26 = var0;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: URLStateMachine, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun97043: for (var _fun97043_ip = 0;;) switch (_fun97043_ip) {
             case 0:
                 var3 = arg1;
@@ -1628,7 +1628,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot27 = var3;
-    var0 = function(arg0, arg1) { // Original name: startsWithWindowsDriveLetter, environment: var1
+    var0 = function arg0, arg1() {
         _fun97044: for (var _fun97044_ip = 0;;) switch (_fun97044_ip) {
             case 0:
                 var5 = arg0;
@@ -1747,7 +1747,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var6 instanceof Object ? var6 : var7;
     var _closure1_slot7 = var6;
     var7 = var3.prototype;
-    var6 = function(arg0, arg1) { // Original name: parseSchemeStart, environment: var1
+    var6 = function arg0, arg1() {
         _fun97045: for (var _fun97045_ip = 0;;) switch (_fun97045_ip) {
             case 0:
                 var3 = arg1;
@@ -1799,7 +1799,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse scheme start'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0, arg1) { // Original name: parseScheme, environment: var1
+    var6 = function arg0, arg1() {
         _fun97046: for (var _fun97046_ip = 0;;) switch (_fun97046_ip) {
             case 0:
                 var4 = arg0;
@@ -2110,7 +2110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse scheme'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parseNoScheme, environment: var1
+    var6 = function arg0() {
         _fun97047: for (var _fun97047_ip = 0;;) switch (_fun97047_ip) {
             case 0:
                 var1 = arg0;
@@ -2206,7 +2206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse no scheme'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parseSpecialRelativeOrAuthority, environment: var1
+    var6 = function arg0() {
         _fun97048: for (var _fun97048_ip = 0;;) switch (_fun97048_ip) {
             case 0:
                 var1 = this;
@@ -2249,7 +2249,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse special relative or authority'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parsePathOrAuthority, environment: var1
+    var6 = function arg0() {
         _fun97049: for (var _fun97049_ip = 0;;) switch (_fun97049_ip) {
             case 0:
                 var1 = this;
@@ -2277,7 +2277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse path or authority'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parseRelative, environment: var1
+    var6 = function arg0() {
         _fun97050: for (var _fun97050_ip = 0;;) switch (_fun97050_ip) {
             case 0:
                 var2 = arg0;
@@ -2472,7 +2472,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse relative'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parseRelativeSlash, environment: var1
+    var6 = function arg0() {
         _fun97051: for (var _fun97051_ip = 0;;) switch (_fun97051_ip) {
             case 0:
                 var2 = arg0;
@@ -2551,7 +2551,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse relative slash'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parseSpecialAuthoritySlashes, environment: var1
+    var6 = function arg0() {
         _fun97052: for (var _fun97052_ip = 0;;) switch (_fun97052_ip) {
             case 0:
                 var1 = this;
@@ -2594,7 +2594,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse special authority slashes'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0) { // Original name: parseSpecialAuthorityIgnoreSlashes, environment: var1
+    var6 = function arg0() {
         _fun97053: for (var _fun97053_ip = 0;;) switch (_fun97053_ip) {
             case 0:
                 var2 = arg0;
@@ -2628,7 +2628,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7['parse special authority ignore slashes'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0, arg1) { // Original name: parseAuthority, environment: var1
+    var6 = function arg0, arg1() {
         _fun97054: for (var _fun97054_ip = 0;;) switch (_fun97054_ip) {
             case 0:
                 var2 = arg0;
@@ -2804,7 +2804,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7['parse authority'] = var6;
     var7 = var3.prototype;
     var8 = var3.prototype;
-    var6 = function(arg0, arg1) { // Original name: parseHostName, environment: var1
+    var6 = function arg0, arg1() {
         _fun97055: for (var _fun97055_ip = 0;;) switch (_fun97055_ip) {
             case 0:
                 var2 = arg0;
@@ -3046,7 +3046,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8['parse host'] = var6;
     var7['parse hostname'] = var6;
     var7 = var3.prototype;
-    var6 = function(arg0, arg1) { // Original name: parsePort, environment: var1
+    var6 = function arg0, arg1() {
         _fun97056: for (var _fun97056_ip = 0;;) switch (_fun97056_ip) {
             case 0:
                 var5 = arg0;
@@ -3197,7 +3197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var5 instanceof Object ? var5 : var6;
     var _closure1_slot8 = var5;
     var6 = var3.prototype;
-    var5 = function(arg0) { // Original name: parseFile, environment: var1
+    var5 = function arg0() {
         _fun97057: for (var _fun97057_ip = 0;;) switch (_fun97057_ip) {
             case 0:
                 var2 = arg0;
@@ -3371,7 +3371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse file'] = var5;
     var6 = var3.prototype;
-    var5 = function(arg0) { // Original name: parseFileSlash, environment: var1
+    var5 = function arg0() {
         _fun97058: for (var _fun97058_ip = 0;;) switch (_fun97058_ip) {
             case 0:
                 var2 = arg0;
@@ -3495,7 +3495,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse file slash'] = var5;
     var6 = var3.prototype;
-    var5 = function(arg0, arg1) { // Original name: parseFileHost, environment: var1
+    var5 = function arg0, arg1() {
         _fun97059: for (var _fun97059_ip = 0;;) switch (_fun97059_ip) {
             case 0:
                 var2 = arg0;
@@ -3631,7 +3631,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse file host'] = var5;
     var6 = var3.prototype;
-    var5 = function(arg0) { // Original name: parsePathStart, environment: var1
+    var5 = function arg0() {
         _fun97060: for (var _fun97060_ip = 0;;) switch (_fun97060_ip) {
             case 0:
                 var3 = arg0;
@@ -3739,7 +3739,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse path start'] = var5;
     var6 = var3.prototype;
-    var5 = function(arg0) { // Original name: parsePath, environment: var1
+    var5 = function arg0() {
         _fun97061: for (var _fun97061_ip = 0;;) switch (_fun97061_ip) {
             case 0:
                 var3 = arg0;
@@ -4139,7 +4139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse path'] = var5;
     var6 = var3.prototype;
-    var5 = function(arg0) { // Original name: parseCannotBeABaseURLPath, environment: var1
+    var5 = function arg0() {
         _fun97062: for (var _fun97062_ip = 0;;) switch (_fun97062_ip) {
             case 0:
                 var7 = arg0;
@@ -4260,7 +4260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse cannot-be-a-base-URL path'] = var5;
     var6 = var3.prototype;
-    var5 = function(arg0, arg1) { // Original name: parseQuery, environment: var1
+    var5 = function arg0, arg1() {
         _fun97063: for (var _fun97063_ip = 0;;) switch (_fun97063_ip) {
             case 0:
                 var3 = arg0;
@@ -4492,7 +4492,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var6['parse query'] = var5;
     var5 = var3.prototype;
-    var3 = function(arg0) { // Original name: parseFragment, environment: var1
+    var3 = function arg0() {
         _fun97064: for (var _fun97064_ip = 0;;) switch (_fun97064_ip) {
             case 0:
                 var6 = arg0;
@@ -4576,7 +4576,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5['parse fragment'] = var3;
     var5 = var2.exports;
-    var3 = function(arg0, arg1) { // Original name: serializeURL, environment: var1
+    var3 = function arg0, arg1() {
         _fun97065: for (var _fun97065_ip = 0;;) switch (_fun97065_ip) {
             case 0:
                 var1 = arg0;
@@ -4963,7 +4963,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var2.exports;
     var3.serializeHost = var4;
     var4 = var2.exports;
-    var3 = function(arg0) { // Original name: cannotHaveAUsernamePasswordPort, environment: var1
+    var3 = function arg0() {
         _fun97070: for (var _fun97070_ip = 0;;) switch (_fun97070_ip) {
             case 0:
                 var1 = arg0;

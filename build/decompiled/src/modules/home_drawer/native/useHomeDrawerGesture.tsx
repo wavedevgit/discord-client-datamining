@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.POP_PHYSICS = var6;
     var2.transitionSpringPhysics = var5;
     var2.transitionSpringPhysicsClamped = var4;
-    var3 = function() { // Original name: useHomeGesture, environment: var3
+    var3 = function() {
         _fun100683: for (var _fun100683_ip = 0;;) switch (_fun100683_ip) {
             case 0:
                 var7 = _closure1_slot0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[1] = var2;
                 var4[2] = var8;
                 var2 = function() { // Environment: var1
-                    var4 = function(arg0) { // Original name: handleStateChange, environment: var0
+                    var4 = function arg0() {
                         _fun100686: for (var _fun100686_ip = 0;;) switch (_fun100686_ip) {
                             case 0:
                                 var0 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var14[var2];
                 var7 = var13.bind(var5)(var2);
                 var4 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: A, environment: var1
+                var2 = function() {
                     _fun100688: for (var _fun100688_ip = 0;;) switch (_fun100688_ip) {
                         case 0:
                             var0 = {};
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 1;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onBegin;
-                    var1 = function(arg0) { // Original name: u, environment: var0
+                    var1 = function arg0() {
                         var4 = arg0;
                         var2 = _closure2_slot1;
                         var1 = var2.set;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var6;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onTouchesMove;
-                    var1 = function(arg0, arg1) { // Original name: n, environment: var0
+                    var1 = function arg0, arg1() {
                         _fun100691: for (var _fun100691_ip = 0;;) switch (_fun100691_ip) {
                             case 0:
                                 var0 = arg0;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var6;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onChange;
-                    var1 = function(arg0) { // Original name: s, environment: var0
+                    var1 = function arg0() {
                         _fun100692: for (var _fun100692_ip = 0;;) switch (_fun100692_ip) {
                             case 0:
                                 var2 = _closure2_slot1;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var6;
                     var4 = var2.bind(var4)(var1);
                     var2 = var4.onEnd;
-                    var1 = function(arg0) { // Original name: t, environment: var0
+                    var1 = function arg0() {
                         _fun100693: for (var _fun100693_ip = 0;;) switch (_fun100693_ip) {
                             case 0:
                                 var2 = arg0;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var6;
                     var2 = var2.bind(var4)(var1);
                     var1 = var2.onFinalize;
-                    var0 = function() { // Original name: e, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.set;
                         var0 = {

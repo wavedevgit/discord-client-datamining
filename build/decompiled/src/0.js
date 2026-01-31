@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var9;
             var _closure1_slot1 = var5;
             var _closure1_slot2 = var10;
-            var7 = function(arg0) { // Original name: getProfileTheme, environment: var1
+            var7 = function arg0() {
                 _fun56955: for (var _fun56955_ip = 0;;) switch (_fun56955_ip) {
                     case 0:
                         var4 = arg0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot5 = var7;
-            var6 = function(arg0, arg1, arg2) { // Original name: getValueInColorGradientByPercentage, environment: var1
+            var6 = function arg0, arg1, arg2() {
                 var4 = arg0;
                 var6 = arg1;
                 var1 = arg2;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot6 = var6;
-            var3 = function(arg0, arg1, arg2) { // Original name: getGradientPercentageColorInRgb, environment: var1
+            var3 = function arg0, arg1, arg2() {
                 var4 = _closure1_slot6;
                 var3 = undefined;
                 var2 = arg0;

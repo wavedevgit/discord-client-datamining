@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/OutboundPromotionClaimAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OutboundPromotionClaimAlert, environment: var1
+    var1 = function arg0() {
         _fun82631: for (var _fun82631_ip = 0;;) switch (_fun82631_ip) {
             case 0:
                 var0 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.style = var20;
                 var20 = _closure1_slot6;
                 var23 = {};
-                var22 = function() { // Original name: onStartShouldSetResponderCapture, environment: var8
+                var22 = function() {
                     var0 = true;
                     return var0;
                 };
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22.size = var24;
                 var24 = var18.copyButton;
                 var22.style = var24;
-                var24 = function() { // Original name: onPress, environment: var8
+                var24 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 16;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var13.bind(var15)(var12);
             case 1482:
                 var0.confirmText = var11;
-                var8 = function() { // Original name: onConfirm, environment: var8
+                var8 = function() {
                     _fun82637: for (var _fun82637_ip = 0;;) switch (_fun82637_ip) {
                         case 0:
                             var2 = _closure2_slot2;

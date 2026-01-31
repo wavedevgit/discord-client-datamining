@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/app_launcher/native/screens/application_view/Header.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: Header, environment: var4
+    var4 = function arg0() {
         _fun107900: for (var _fun107900_ip = 0;;) switch (_fun107900_ip) {
             case 0:
                 var1 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = undefined;
                     var3 = var9.bind(var8)(var2);
                     var2 = var3.useAnimatedStyle;
-                    var1 = function() { // Original name: n, environment: var1
+                    var1 = function() {
                         var0 = {};
                         var2 = {};
                         var4 = _closure1_slot0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = undefined;
                     var5 = var10.bind(var9)(var2);
                     var3 = var5.useAnimatedStyle;
-                    var2 = function() { // Original name: n, environment: var1
+                    var2 = function() {
                         var0 = {};
                         var2 = {};
                         var4 = _closure1_slot0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var11[var8];
                     var3 = var10.bind(var9)(var2);
                     var2 = var3.useAnimatedStyle;
-                    var1 = function() { // Original name: l, environment: var1
+                    var1 = function() {
                         var0 = {};
                         var9 = {};
                         var5 = _closure1_slot0;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = undefined;
                     var3 = var9.bind(var8)(var2);
                     var2 = var3.useAnimatedStyle;
-                    var1 = function() { // Original name: n, environment: var1
+                    var1 = function() {
                         var0 = {};
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var15[var17];
                 var17 = var11.bind(var3)(var17);
                 var9.icon = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     _fun107909: for (var _fun107909_ip = 0;;) switch (_fun107909_ip) {
                         case 0:
                             var3 = _closure1_slot1;

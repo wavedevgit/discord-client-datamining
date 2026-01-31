@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = null;
                         var5 = var11 == var16;
                         var0.disabled = var5;
-                        var4 = function() { // Original name: onPress, environment: var4
+                        var4 = function() {
                             var2 = _closure2_slot1;
                             var1 = _closure2_slot0;
                             var0 = undefined;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = {};
                         var9 = 'button';
                         var5.accessibilityRole = var9;
-                        var8 = function() { // Original name: onPress, environment: var8
+                        var8 = function() {
                             var5 = _closure1_slot0;
                             var6 = _closure1_slot2;
                             var0 = 17;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: SimpleActionSheet, environment: var6
+    var1 = function arg0() {
         _fun61750: for (var _fun61750_ip = 0;;) switch (_fun61750_ip) {
             case 0:
                 var0 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 128:
                             var1.variant = var6;
                             var1.label = var5;
-                            var0 = function() { // Original name: onPress, environment: var0
+                            var0 = function() {
                                 var1 = _closure2_slot0;
                                 var0 = undefined;
                                 var1 = var1.bind(var0)();

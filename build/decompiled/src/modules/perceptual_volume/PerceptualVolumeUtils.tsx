@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/perceptual_volume/PerceptualVolumeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: perceptualToAmplitude, environment: var1
+    var3 = function arg0() {
         _fun35995: for (var _fun35995_ip = 0;;) switch (_fun35995_ip) {
             case 0:
                 var1 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.perceptualToAmplitude = var3;
-    var1 = function(arg0) { // Original name: amplitudeToPerceptual, environment: var1
+    var1 = function arg0() {
         _fun35996: for (var _fun35996_ip = 0;;) switch (_fun35996_ip) {
             case 0:
                 var1 = arg0;

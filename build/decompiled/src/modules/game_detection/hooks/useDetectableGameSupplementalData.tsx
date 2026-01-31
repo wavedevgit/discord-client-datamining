@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: useRequestDetectableGameSupplementalData, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot5;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var4 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: DetectableGameSupplementalFetchManager, environment: var4
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot3;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'request';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun62304: for (var _fun62304_ip = 0;;) switch (_fun62304_ip) {
                 case 0:
                     var3 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_flush';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var5 = new Array(0);
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/game_detection/hooks/useDetectableGameSupplementalData.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useRequestDetectableGameSupplementalData = var3;
-    var1 = function(arg0, arg1) { // Original name: useDetectableGameSupplementalData, environment: var1
+    var1 = function arg0, arg1() {
         var5 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var5;

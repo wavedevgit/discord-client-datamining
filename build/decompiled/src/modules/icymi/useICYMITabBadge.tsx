@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/useICYMITabBadge.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useICYMITabBadge, environment: var1
+    var3 = function() {
         var0 = {};
         var1 = 0;
         var0.value = var1;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: icymiTabBadgeShown, environment: var1
+    var1 = function() {
         var1 = _closure1_slot2;
         var0 = var1.hasNewContent;
         var0 = var0.bind(var1)();

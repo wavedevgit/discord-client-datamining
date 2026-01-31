@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun73729: for (var _fun73729_ip = 0;;) switch (_fun73729_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun73731: for (var _fun73731_ip = 0;;) switch (_fun73731_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var6 = function(arg0, arg1) { // Original name: everyoneMemberCount, environment: var3
+    var6 = function arg0, arg1() {
         _fun73732: for (var _fun73732_ip = 0;;) switch (_fun73732_ip) {
             case 0:
                 var2 = arg1;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var6;
-    var0 = function(arg0) { // Original name: parsedItemUsesEveryoneRole, environment: var3
+    var0 = function arg0() {
         _fun73734: for (var _fun73734_ip = 0;;) switch (_fun73734_ip) {
             case 0:
                 var0 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1 instanceof Object ? var1 : var7;
     var _closure1_slot7 = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: shouldShowEveryoneGuard, environment: var3
+    var7 = function arg0, arg1() {
         _fun73735: for (var _fun73735_ip = 0;;) switch (_fun73735_ip) {
             case 0:
                 var4 = arg1;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.shouldShowEveryoneGuard = var7;
     var1.everyoneMemberCount = var6;
-    var3 = function(arg0, arg1) { // Original name: extractEveryoneRole, environment: var3
+    var3 = function arg0, arg1() {
         _fun73736: for (var _fun73736_ip = 0;;) switch (_fun73736_ip) {
             case 0:
                 var1 = _closure1_slot8;

@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/changelog/utils/isChangelogUser.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isChangelogUser, environment: var1
+    var1 = function arg0() {
         _fun18789: for (var _fun18789_ip = 0;;) switch (_fun18789_ip) {
             case 0:
                 var2 = arg0;

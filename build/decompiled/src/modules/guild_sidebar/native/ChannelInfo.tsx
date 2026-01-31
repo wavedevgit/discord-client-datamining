@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChannelConnectedUserLimit, environment: var1
+    var0 = function arg0() {
         _fun102601: for (var _fun102601_ip = 0;;) switch (_fun102601_ip) {
             case 0:
                 var0 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_sidebar/native/ChannelInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelInfo, environment: var1
+    var1 = function arg0() {
         _fun102602: for (var _fun102602_ip = 0;;) switch (_fun102602_ip) {
             case 0:
                 var0 = arg0;

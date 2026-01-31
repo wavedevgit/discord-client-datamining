@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot2 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MessagesItemPlaceholder, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.row;
         var4 = var0.height;

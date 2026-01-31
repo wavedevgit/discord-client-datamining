@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun7207: for (var _fun7207_ip = 0;;) switch (_fun7207_ip) {
             case 0:
                 var2 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun7209: for (var _fun7209_ip = 0;;) switch (_fun7209_ip) {
             case 0:
                 var3 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun7210: for (var _fun7210_ip = 0;;) switch (_fun7210_ip) {
             case 0:
             case 2: // try_start_0
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var7 = var3.EventEmitter;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: ActionLogger, environment: var5
+        var3 = function() {
             _fun7214: for (var _fun7214_ip = 0;;) switch (_fun7214_ip) {
                 case 0:
                     var0 = arguments[0];
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'log';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var5
+        var0 = function arg0, arg1() {
             _fun7215: for (var _fun7215_ip = 0;;) switch (_fun7215_ip) {
                 case 0:
                     var9 = arg0;
@@ -651,7 +651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSlowestActions';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun7217: for (var _fun7217_ip = 0;;) switch (_fun7217_ip) {
                 case 0:
                     var12 = arg0;
@@ -1012,7 +1012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastActionMetrics';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun7221: for (var _fun7221_ip = 0;;) switch (_fun7221_ip) {
                 case 0:
                     var3 = arguments[1];
@@ -1299,7 +1299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var1;
     var1 = function() { // Environment: var4
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: ActionLog, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -1335,7 +1335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'name';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.action;
             var0 = var0.type;
@@ -1347,7 +1347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toJSON';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun7228: for (var _fun7228_ip = 0;;) switch (_fun7228_ip) {
                 case 0:
                     var1 = this;

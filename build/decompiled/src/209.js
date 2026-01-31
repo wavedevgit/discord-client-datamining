@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0) { // Original name: NativeEventEmitter, environment: var4
+        var2 = function arg0() {
             _fun2935: for (var _fun2935_ip = 0;;) switch (_fun2935_ip) {
                 case 0:
                     var2 = arg0;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'addListener';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: addListener, environment: var4
+        var1 = function arg0, arg1, arg2() {
             _fun2936: for (var _fun2936_ip = 0;;) switch (_fun2936_ip) {
                 case 0:
                     var5 = arg0;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var3.bind(var4)(var5, var2, var0);
                     var _closure3_slot1 = var0;
                     var0 = {};
-                    var1 = function() { // Original name: remove, environment: var1
+                    var1 = function() {
                         _fun2937: for (var _fun2937_ip = 0;;) switch (_fun2937_ip) {
                             case 0:
                                 var2 = _closure3_slot1;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'emit';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: emit, environment: var4
+        var5 = function arg0() {
             _fun2938: for (var _fun2938_ip = 0;;) switch (_fun2938_ip) {
                 case 0:
                     var0 = undefined;
@@ -246,7 +246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'removeAllListeners';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: removeAllListeners, environment: var4
+        var5 = function arg0() {
             _fun2939: for (var _fun2939_ip = 0;;) switch (_fun2939_ip) {
                 case 0:
                     var3 = arg0;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'listenerCount';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: listenerCount, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 2;

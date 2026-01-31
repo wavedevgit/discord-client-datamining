@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
     var1 = {};
-    var3 = function() { // Original name: waitSubscribed, environment: var0
+    var3 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.waitSubscribed = var3;
-    var3 = function() { // Original name: waitConnected, environment: var0
+    var3 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.waitConnected = var3;
-    var3 = function() { // Original name: isLaunchable, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isLaunchable = var3;
-    var3 = function() { // Original name: launch, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.reject;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.launch = var3;
-    var3 = function() { // Original name: launchDispatchApplication, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.reject;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.launchDispatchApplication = var3;
-    var3 = function() { // Original name: removeShortcuts, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeShortcuts = var3;
-    var3 = function() { // Original name: createShortcuts, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.createShortcuts = var3;
-    var3 = function() { // Original name: isGameLaunchable, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isGameLaunchable = var3;
-    var3 = function() { // Original name: launchGame, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.reject;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.launchGame = var3;
-    var3 = function() { // Original name: isProtocolRegistered, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isProtocolRegistered = var3;
-    var0 = function() { // Original name: setRecentGames, environment: var0
+    var0 = function() {
         var0 = undefined;
         return var0;
     };

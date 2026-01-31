@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useSafeAreaInsetsKeyboardAware, environment: var1
+    var1 = function() {
         _fun44393: for (var _fun44393_ip = 0;;) switch (_fun44393_ip) {
             case 0:
                 var0 = arguments[0];
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var9)();
             case 298:
                 var4.disabled = var7;
-                var1 = function(arg0) { // Original name: useAnimateChanges, environment: var1
+                var1 = function arg0() {
                     var1 = arg0;
                     var5 = var1.keyboardHeight;
                     var4 = var1.disabled;

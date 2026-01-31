@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun69602: for (var _fun69602_ip = 0;;) switch (_fun69602_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun69604: for (var _fun69604_ip = 0;;) switch (_fun69604_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var4 = function(arg0, arg1, arg2) { // Original name: shouldNotifyBase, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun69605: for (var _fun69605_ip = 0;;) switch (_fun69605_ip) {
             case 0:
                 var2 = arg1;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var4;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getInviteEmbedFormatString, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun69606: for (var _fun69606_ip = 0;;) switch (_fun69606_ip) {
             case 0:
                 var0 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.ThreadMemberFlags;
     var _closure1_slot27 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: renderTitle, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun69607: for (var _fun69607_ip = 0;;) switch (_fun69607_ip) {
             case 0:
                 var10 = arg2;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/notifications/NotificationTextUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.shouldNotifyBase = var4;
-    var4 = function(arg0, arg1) { // Original name: shouldNotify, environment: var1
+    var4 = function arg0, arg1() {
         _fun69608: for (var _fun69608_ip = 0;;) switch (_fun69608_ip) {
             case 0:
                 var6 = arg0;
@@ -1011,7 +1011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldNotify = var4;
-    var4 = function(arg0, arg1) { // Original name: shouldNotifyForSelectedChannel, environment: var1
+    var4 = function arg0, arg1() {
         _fun69609: for (var _fun69609_ip = 0;;) switch (_fun69609_ip) {
             case 0:
                 var8 = arg0;
@@ -1174,7 +1174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldNotifyForSelectedChannel = var4;
-    var4 = function(arg0, arg1) { // Original name: shouldNotifyForForumThreadCreation, environment: var1
+    var4 = function arg0, arg1() {
         _fun69610: for (var _fun69610_ip = 0;;) switch (_fun69610_ip) {
             case 0:
                 var6 = arg1;
@@ -1287,7 +1287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldNotifyForForumThreadCreation = var4;
-    var4 = function(arg0, arg1) { // Original name: shouldNotifyVoiceStatus, environment: var1
+    var4 = function arg0, arg1() {
         _fun69611: for (var _fun69611_ip = 0;;) switch (_fun69611_ip) {
             case 0:
                 var2 = _closure1_slot18;
@@ -1311,7 +1311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldNotifyVoiceStatus = var4;
     var2.renderTitle = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: makeTextChatNotification, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun69612: for (var _fun69612_ip = 0;;) switch (_fun69612_ip) {
             case 0:
                 var7 = arg0;
@@ -2285,7 +2285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.makeTextChatNotification = var3;
-    var3 = function() { // Original name: allowInAppNotifications, environment: var1
+    var3 = function() {
         _fun69614: for (var _fun69614_ip = 0;;) switch (_fun69614_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -2313,7 +2313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.allowInAppNotifications = var3;
-    var1 = function() { // Original name: useAllowInAppNotifications, environment: var1
+    var1 = function() {
         _fun69615: for (var _fun69615_ip = 0;;) switch (_fun69615_ip) {
             case 0:
                 var3 = _closure1_slot0;

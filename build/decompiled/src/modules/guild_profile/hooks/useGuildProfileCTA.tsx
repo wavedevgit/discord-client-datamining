@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_profile/hooks/useGuildProfileCTA.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1, arg2) { // Original name: useGuildProfileCTA, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var11 = arg0;
         var9 = arg1;
         var1 = arg2;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.CTATypes = var4;
     var2.GuildProfileCTAContext = var3;
-    var1 = function(arg0, arg1) { // Original name: getGuildProfileCTAType, environment: var1
+    var1 = function arg0, arg1() {
         _fun59792: for (var _fun59792_ip = 0;;) switch (_fun59792_ip) {
             case 0:
                 var9 = arg0;

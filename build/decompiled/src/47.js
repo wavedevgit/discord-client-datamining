@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot1 = var1;
             var1 = dependencyMap;
             var _closure1_slot2 = var1;
-            var1 = function(arg0, arg1) { // Original name: raiseSoftError, environment: var3
+            var1 = function arg0, arg1() {
                 _fun1315: for (var _fun1315_ip = 0;;) switch (_fun1315_ip) {
                     case 0:
                         var6 = arg1;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var1.bind(var0)();
             var _closure1_slot9 = var1;
             var13 = {};
-            var1 = function(arg0, arg1) { // Original name: measure, environment: var3
+            var1 = function arg0, arg1() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'measure';
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var13.measure = var1;
-            var1 = function(arg0, arg1) { // Original name: measureInWindow, environment: var3
+            var1 = function arg0, arg1() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'measureInWindow';
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var13.measureInWindow = var1;
-            var1 = function(arg0, arg1, arg2, arg3) { // Original name: measureLayout, environment: var3
+            var1 = function arg0, arg1, arg2, arg3() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'measureLayout';
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var13.measureLayout = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: measureLayoutRelativeToParent, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'measureLayoutRelativeToParent';
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var13.measureLayoutRelativeToParent = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: dispatchViewManagerCommand, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'dispatchViewManagerCommand';
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var13.dispatchViewManagerCommand = var1;
             var12 = {};
-            var1 = function(arg0, arg1, arg2, arg3) { // Original name: createView, environment: var3
+            var1 = function arg0, arg1, arg2, arg3() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'createView';
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.createView = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: updateView, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'updateView';
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.updateView = var1;
-            var1 = function(arg0, arg1) { // Original name: setChildren, environment: var3
+            var1 = function arg0, arg1() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'setChildren';
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.setChildren = var1;
-            var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: manageChildren, environment: var3
+            var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'manageChildren';
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.manageChildren = var1;
-            var1 = function(arg0, arg1) { // Original name: setJSResponder, environment: var3
+            var1 = function arg0, arg1() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'setJSResponder';
@@ -204,7 +204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.setJSResponder = var1;
-            var1 = function() { // Original name: clearJSResponder, environment: var3
+            var1 = function() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var1 = 'clearJSResponder';
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var12.clearJSResponder = var1;
             var11 = {};
-            var1 = function(arg0) { // Original name: getConstantsForViewManager, environment: var3
+            var1 = function arg0() {
                 _fun1330: for (var _fun1330_ip = 0;;) switch (_fun1330_ip) {
                     case 0:
                         var0 = _closure1_slot7;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var11.getConstantsForViewManager = var1;
-            var1 = function() { // Original name: getDefaultEventTypes, environment: var3
+            var1 = function() {
                 _fun1331: for (var _fun1331_ip = 0;;) switch (_fun1331_ip) {
                     case 0:
                         var0 = _closure1_slot8;
@@ -264,12 +264,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var11.getDefaultEventTypes = var1;
-            var1 = function(arg0) { // Original name: setLayoutAnimationEnabledExperimental, environment: var3
+            var1 = function arg0() {
                 var0 = undefined;
                 return var0;
             };
             var11.setLayoutAnimationEnabledExperimental = var1;
-            var1 = function(arg0, arg1) { // Original name: sendAccessibilityEvent, environment: var3
+            var1 = function arg0, arg1() {
                 _fun1333: for (var _fun1333_ip = 0;;) switch (_fun1333_ip) {
                     case 0:
                         var8 = arg0;
@@ -354,7 +354,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var10 = var5.Object;
             var9 = var10.assign;
             var8 = {};
-            var1 = function(arg0) { // Original name: getViewManagerConfig, environment: var3
+            var1 = function arg0() {
                 _fun1334: for (var _fun1334_ip = 0;;) switch (_fun1334_ip) {
                     case 0:
                         var1 = arg0;
@@ -412,7 +412,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var8.getViewManagerConfig = var1;
-            var1 = function(arg0) { // Original name: hasViewManagerConfig, environment: var3
+            var1 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 2;
@@ -425,7 +425,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var8.hasViewManagerConfig = var1;
-            var1 = function() { // Original name: getConstants, environment: var3
+            var1 = function() {
                 _fun1336: for (var _fun1336_ip = 0;;) switch (_fun1336_ip) {
                     case 0:
                         var0 = _closure1_slot5;
@@ -450,7 +450,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var8.getConstants = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: findSubviewIn, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 _fun1337: for (var _fun1337_ip = 0;;) switch (_fun1337_ip) {
                     case 0:
                         var11 = arg0;
@@ -557,7 +557,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var8.findSubviewIn = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: viewIsDescendantOf, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 _fun1340: for (var _fun1340_ip = 0;;) switch (_fun1340_ip) {
                     case 0:
                         var7 = arg0;
@@ -626,7 +626,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var8.viewIsDescendantOf = var1;
-            var1 = function(arg0, arg1, arg2) { // Original name: configureNextLayoutAnimation, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 var3 = _closure1_slot1;
                 var4 = _closure1_slot2;
                 var0 = 0;
@@ -701,7 +701,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var0)(var2);
                 var2 = _closure1_slot10;
                 var1 = {};
-                var5 = function() { // Original name: get, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 0;

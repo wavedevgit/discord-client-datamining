@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: renderChannelPressableWrapper, environment: var1
+    var1 = function arg0, arg1() {
         _fun103306: for (var _fun103306_ip = 0;;) switch (_fun103306_ip) {
             case 0:
                 var0 = arg1;

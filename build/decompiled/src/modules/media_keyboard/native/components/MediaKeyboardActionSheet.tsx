@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaKeyboardActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var22 = var0.title;
         var _closure2_slot0 = var22;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = var4.bind(var3)(var0);
             var0 = var0.PollsIcon;
             var1.IconComponent = var0;
-            var0 = function() { // Original name: onPress, environment: var0
+            var0 = function() {
                 var0 = undefined;
                 return var0;
             };

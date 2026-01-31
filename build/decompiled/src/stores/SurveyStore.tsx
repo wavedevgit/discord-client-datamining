@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun86710: for (var _fun86710_ip = 0;;) switch (_fun86710_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun86713: for (var _fun86713_ip = 0;;) switch (_fun86713_ip) {
             case 0:
                 var2 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun86715: for (var _fun86715_ip = 0;;) switch (_fun86715_ip) {
             case 0:
                 var3 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: isSurveyDataStale, environment: var5
+    var0 = function() {
         _fun86716: for (var _fun86716_ip = 0;;) switch (_fun86716_ip) {
             case 0:
                 var0 = _closure1_slot18;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var11 = function() { // Original name: fetchSurveyIfNeeded, environment: var5
+    var11 = function() {
         _fun86717: for (var _fun86717_ip = 0;;) switch (_fun86717_ip) {
             case 0:
                 var1 = _closure1_slot23;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: meetsSurveyRequirements, environment: var5
+    var0 = function arg0() {
         _fun86718: for (var _fun86718_ip = 0;;) switch (_fun86718_ip) {
             case 0:
                 var29 = arg0;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var10 = function(arg0) { // Original name: setSurvey, environment: var5
+    var10 = function arg0() {
         _fun86719: for (var _fun86719_ip = 0;;) switch (_fun86719_ip) {
             case 0:
                 var0 = arg0;
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var10;
-    var0 = function() { // Original name: handleSelectedGuildChange, environment: var5
+    var0 = function() {
         _fun86720: for (var _fun86720_ip = 0;;) switch (_fun86720_ip) {
             case 0:
                 var2 = _closure1_slot22;
@@ -1180,7 +1180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var0)(var4);
     var9 = var4.PersistedStore;
     var4 = function(arg0) { // Environment: var5
-        var3 = function() { // Original name: SurveyStore, environment: var5
+        var3 = function() {
             _fun86722: for (var _fun86722_ip = 0;;) switch (_fun86722_ip) {
                 case 0:
                     var3 = this;
@@ -1228,7 +1228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun86723: for (var _fun86723_ip = 0;;) switch (_fun86723_ip) {
                 case 0:
                     var1 = arg0;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -1275,7 +1275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentSurvey';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun86725: for (var _fun86725_ip = 0;;) switch (_fun86725_ip) {
                 case 0:
                     var2 = _closure1_slot31;
@@ -1297,7 +1297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSurveyOverride';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.surveyOverride;
             return var0;
@@ -1307,7 +1307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastSeenTimestamp';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.lastSeen;
             return var0;
@@ -1317,7 +1317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldAllowSurveyAction';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun86728: for (var _fun86728_ip = 0;;) switch (_fun86728_ip) {
                 case 0:
                     var0 = global;
@@ -1420,7 +1420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.CONNECTION_OPEN = var11;
     var4.CONNECTION_RESUMED = var11;
     var4.SURVEY_FETCHED = var10;
-    var10 = function(arg0) { // Original name: handleSurveyHide, environment: var5
+    var10 = function arg0() {
         _fun86732: for (var _fun86732_ip = 0;;) switch (_fun86732_ip) {
             case 0:
                 var0 = arg0;
@@ -1450,7 +1450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.SURVEY_HIDE = var10;
-    var10 = function(arg0) { // Original name: handleSurveyOverride, environment: var5
+    var10 = function arg0() {
         _fun86733: for (var _fun86733_ip = 0;;) switch (_fun86733_ip) {
             case 0:
                 var0 = arg0;
@@ -1482,21 +1482,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.SURVEY_OVERRIDE = var10;
-    var10 = function() { // Original name: handlePushNotificationClick, environment: var5
+    var10 = function() {
         var0 = true;
         _closure1_slot19 = var0;
         var0 = undefined;
         return var0;
     };
     var4.PUSH_NOTIFICATION_CLICK = var10;
-    var10 = function() { // Original name: handleInviteShow, environment: var5
+    var10 = function() {
         var0 = true;
         _closure1_slot20 = var0;
         var0 = undefined;
         return var0;
     };
     var4.DISPLAYED_INVITE_SHOW = var10;
-    var10 = function() { // Original name: handleLogout, environment: var5
+    var10 = function() {
         var1 = _closure1_slot18;
         var0 = {};
         var1.hiddenSurveys = var0;
@@ -1504,7 +1504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.LOGOUT = var10;
-    var5 = function() { // Original name: handleSurveySeen, environment: var5
+    var5 = function() {
         var1 = _closure1_slot18;
         var0 = global;
         var2 = var0.Date;

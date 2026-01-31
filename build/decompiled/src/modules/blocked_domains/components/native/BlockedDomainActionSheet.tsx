@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.url;
         var0 = _closure1_slot5;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10["/g10LC"];
         var10 = var11.bind(var12)(var10);
         var8.text = var10;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;

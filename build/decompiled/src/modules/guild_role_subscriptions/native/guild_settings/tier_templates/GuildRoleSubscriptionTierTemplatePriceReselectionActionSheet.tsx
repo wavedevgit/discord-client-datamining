@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PriceOptionRow, environment: var1
+    var0 = function arg0() {
         _fun117041: for (var _fun117041_ip = 0;;) switch (_fun117041_ip) {
             case 0:
                 var0 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var28 = var0.selectedTemplate;
         var _closure2_slot0 = var28;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = _closure2_slot3;
             var5 = var6 === var5;
             var1.selected = var5;
-            var0 = function() { // Original name: onPress, environment: var0
+            var0 = function() {
                 var2 = _closure2_slot4;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13.text = var24;
         var24 = var16.confirmButton;
         var13.style = var24;
-        var24 = function() { // Original name: onPress, environment: var18
+        var24 = function() {
             var3 = _closure2_slot1;
             var2 = {};
             var4 = _closure2_slot0;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = _closure1_slot9;
         var12 = _closure1_slot5;
         var11 = {};
-        var18 = function() { // Original name: onPress, environment: var18
+        var18 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 21;

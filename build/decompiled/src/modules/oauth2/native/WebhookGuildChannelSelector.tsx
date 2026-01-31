@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/oauth2/native/WebhookGuildChannelSelector.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: WebhookGuildChannelSelector, environment: var3
+    var3 = function arg0() {
         _fun48126: for (var _fun48126_ip = 0;;) switch (_fun48126_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var8 = var9.bind(var10)(var8);
                             var1.items = var8;
-                            var6 = function(arg0) { // Original name: onItemSelect, environment: var6
+                            var6 = function arg0() {
                                 var2 = _closure2_slot2;
                                 var0 = undefined;
                                 var1 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = function() { // Environment: var1
                     _fun48130: for (var _fun48130_ip = 0;;) switch (_fun48130_ip) {
                         case 0:
-                            var0 = function() { // Original name: _updateChannels, environment: var3
+                            var0 = function() {
                                 var3 = undefined;
                                 var0 = undefined;
                                 var2 = _closure1_slot3;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         case 35:
                             var4 = _closure2_slot0;
-                            var3 = function(arg0) { // Original name: updateChannels, environment: var3
+                            var3 = function arg0() {
                                 var0 = undefined;
                                 var3 = _closure3_slot0;
                                 var2 = var3.apply;

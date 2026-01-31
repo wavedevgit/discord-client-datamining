@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24460: for (var _fun24460_ip = 0;;) switch (_fun24460_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: _, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var1 = {
                     1: '१',
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'yy': '%d वर्ष'
                 };
                 var1.relativeTime = var4;
-                var4 = function(arg0) { // Original name: preparse, environment: var0
+                var4 = function arg0() {
                     var3 = arg0;
                     var2 = var3.replace;
                     var1 = /[१२३४५६७८९०]/g;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.preparse = var4;
-                var4 = function(arg0) { // Original name: postformat, environment: var0
+                var4 = function arg0() {
                     var3 = arg0;
                     var2 = var3.replace;
                     var1 = /\d/g;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.postformat = var4;
                 var4 = /रात|सुबह|दोपहर|शाम/;
                 var1.meridiemParse = var4;
-                var4 = function(arg0, arg1) { // Original name: meridiemHour, environment: var0
+                var4 = function arg0, arg1() {
                     _fun24466: for (var _fun24466_ip = 0;;) switch (_fun24466_ip) {
                         case 0:
                             var3 = arg0;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.meridiemHour = var4;
-                var0 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var0
+                var0 = function arg0, arg1, arg2() {
                     _fun24467: for (var _fun24467_ip = 0;;) switch (_fun24467_ip) {
                         case 0:
                             var5 = arg0;

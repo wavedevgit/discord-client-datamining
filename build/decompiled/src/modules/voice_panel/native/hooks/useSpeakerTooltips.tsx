@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: useCoachmarkHelper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var4 = arg1;
         var7 = arg2;
         var _closure2_slot0 = var4;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/hooks/useSpeakerTooltips.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useSpeakerTooltips, environment: var1
+    var1 = function arg0, arg1() {
         _fun111110: for (var _fun111110_ip = 0;;) switch (_fun111110_ip) {
             case 0:
                 var4 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var21[var19];
                 var16 = var20.bind(var0)(var13);
                 var15 = var16.useAnimatedReaction;
-                var14 = function() { // Original name: b, environment: var6
+                var14 = function() {
                     var1 = _closure2_slot4;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.__workletHash = var13;
                 var13 = _closure1_slot10;
                 var14.__initData = var13;
-                var13 = function(arg0, arg1) { // Original name: S, environment: var6
+                var13 = function arg0, arg1() {
                     _fun111112: for (var _fun111112_ip = 0;;) switch (_fun111112_ip) {
                         case 0:
                             var3 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var4 === var3;
                         case 176:
                             var0.visible = var2;
-                            var2 = function() { // Original name: renderImgComponent, environment: var1
+                            var2 = function() {
                                 var3 = _closure1_slot9;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.renderImgComponent = var2;
                             var2 = true;
                             var0.withBlurBackground = var2;
-                            var1 = function() { // Original name: onDismiss, environment: var1
+                            var1 = function() {
                                 var2 = _closure2_slot7;
                                 var0 = _closure1_slot8;
                                 var1 = var0.UNKNOWN;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.imgSource = var1;
                             var1 = true;
                             var0.withBlurBackground = var1;
-                            var1 = function() { // Original name: onDismiss, environment: var1
+                            var1 = function() {
                                 var2 = _closure1_slot5;
                                 var0 = undefined;
                                 var1 = true;

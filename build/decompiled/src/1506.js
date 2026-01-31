@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1 = var1.bind(var0)(var4);
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: formatToList, environment: var3
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Original name: validatePathConfig, environment: var3
+    var1 = function arg0() {
         _fun17192: for (var _fun17192_ip = 0;;) switch (_fun17192_ip) {
             case 0:
                 var2 = arg0;

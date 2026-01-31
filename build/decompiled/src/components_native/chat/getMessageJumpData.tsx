@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/chat/getMessageJumpData.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: getMessageJumpData, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun77122: for (var _fun77122_ip = 0;;) switch (_fun77122_ip) {
             case 0:
                 var10 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function() { // Original name: useMessageJumpAndroidKeyboardHeight, environment: var1
+    var1 = function() {
         _fun77123: for (var _fun77123_ip = 0;;) switch (_fun77123_ip) {
             case 0:
                 var5 = _closure1_slot4;

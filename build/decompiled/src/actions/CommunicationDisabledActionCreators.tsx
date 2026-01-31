@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var _closure1_slot2 = var1;
     var1 = {};
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: setCommunicationDisabledDuration, environment: var3
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

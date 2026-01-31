@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/manage_subscriptions/CancelSubscriptionModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CancelSubscriptionModal, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var0 = var3.onClose;
         var _closure2_slot0 = var0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = _closure1_slot5;
             var4 = var3.CANCEL_SUBSCRIPTION;
             var0 = {};
-            var5 = function(arg0) { // Original name: render, environment: var5
+            var5 = function arg0() {
                 var3 = _closure1_slot4;
                 var2 = _closure1_slot3;
                 var1 = {};

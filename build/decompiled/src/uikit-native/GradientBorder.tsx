@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: GradientBorder, environment: var6
+    var1 = function arg0() {
         _fun59254: for (var _fun59254_ip = 0;;) switch (_fun59254_ip) {
             case 0:
                 var5 = arg0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var5;
                 var16 = var3;
                 var6 = copyDataProperties(var18, var17, var16);
-                var0 = function(arg0) { // Original name: getStartEnd, environment: var0
+                var0 = function arg0() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var2 = 4;

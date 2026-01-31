@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/dev_tools/UserSettingsDebugLogs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDebugLogs, environment: var1
+    var1 = function() {
         _fun85604: for (var _fun85604_ip = 0;;) switch (_fun85604_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17["+1H47t"];
                 var17 = var18.bind(var19)(var17);
                 var15.accessibilityLabel = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = _closure2_slot3;
                     var1.sortOrder = var5;
-                    var5 = function() { // Original name: onRefresh, environment: var4
+                    var5 = function() {
                         var1 = _closure2_slot2;
                         var0 = undefined;
                         var1 = var1.bind(var0)();
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onRefresh = var5;
-                    var4 = function(arg0) { // Original name: onSortOrderChanged, environment: var4
+                    var4 = function arg0() {
                         var2 = _closure2_slot5;
                         var0 = undefined;
                         var1 = arg0;

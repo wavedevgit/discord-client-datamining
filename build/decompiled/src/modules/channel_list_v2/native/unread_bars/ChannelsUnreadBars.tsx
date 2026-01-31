@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun101869: for (var _fun101869_ip = 0;;) switch (_fun101869_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun101871: for (var _fun101871_ip = 0;;) switch (_fun101871_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: shouldSkipSection, environment: var1
+    var0 = function arg0() {
         _fun101872: for (var _fun101872_ip = 0;;) switch (_fun101872_ip) {
             case 0:
                 var1 = arg0;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: checkHasMentionOrUnread, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun101873: for (var _fun101873_ip = 0;;) switch (_fun101873_ip) {
             case 0:
                 var4 = arg0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: findFirstOrLastUnreadItem, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun101874: for (var _fun101874_ip = 0;;) switch (_fun101874_ip) {
             case 0:
                 var1 = arg0;
@@ -1042,7 +1042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot20 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelUnreadBarsComponent, environment: var1
+    var1 = function arg0() {
         _fun101875: for (var _fun101875_ip = 0;;) switch (_fun101875_ip) {
             case 0:
                 var1 = arg0;
@@ -1292,7 +1292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4[var19];
                 var15 = var2.bind(var3)(var1);
                 var7 = var15.useAnimatedReaction;
-                var6 = function() { // Original name: A, environment: var0
+                var6 = function() {
                     var1 = _closure2_slot11;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -1305,7 +1305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.__workletHash = var1;
                 var1 = _closure1_slot19;
                 var6.__initData = var1;
-                var1 = function(arg0, arg1) { // Original name: N, environment: var0
+                var1 = function arg0, arg1() {
                     _fun101884: for (var _fun101884_ip = 0;;) switch (_fun101884_ip) {
                         case 0:
                             var1 = arg0;

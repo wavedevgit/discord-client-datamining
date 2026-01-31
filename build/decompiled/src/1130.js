@@ -19,21 +19,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
-    var3 = function() { // Original name: browserReplayIntegrationNoop, environment: var1
+    var3 = function() {
         var0 = {};
         var2 = 'Replay';
         var0.name = var2;
-        var2 = function() { // Original name: start, environment: var1
+        var2 = function() {
             var0 = undefined;
             return var0;
         };
         var0.start = var2;
-        var2 = function() { // Original name: startBuffering, environment: var1
+        var2 = function() {
             var0 = undefined;
             return var0;
         };
         var0.startBuffering = var2;
-        var2 = function() { // Original name: stop, environment: var1
+        var2 = function() {
             var0 = global;
             var1 = var0.Promise;
             var0 = var1.resolve;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.stop = var2;
-        var2 = function() { // Original name: flush, environment: var1
+        var2 = function() {
             var0 = global;
             var1 = var0.Promise;
             var0 = var1.resolve;
@@ -49,12 +49,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.flush = var2;
-        var2 = function() { // Original name: getReplayId, environment: var1
+        var2 = function() {
             var0 = undefined;
             return var0;
         };
         var0.getReplayId = var2;
-        var1 = function() { // Original name: getRecordingMode, environment: var1
+        var1 = function() {
             var0 = undefined;
             return var0;
         };
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: browserReplayIntegration, environment: var1
+    var1 = function() {
         _fun12352: for (var _fun12352_ip = 0;;) switch (_fun12352_ip) {
             case 0:
                 var2 = undefined;

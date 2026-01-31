@@ -8,14 +8,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var22;
             var _closure1_slot1 = var3;
             var _closure1_slot2 = var23;
-            var17 = function(arg0) { // Original name: uncurryThis, environment: var1
+            var17 = function arg0() {
                 var2 = arg0;
                 var1 = var2.call;
                 var0 = var1.bind;
                 var0 = var0.bind(var1)(var2);
                 return var0;
             };
-            var0 = function(arg0, arg1) { // Original name: checkBoxedPrimitive, environment: var1
+            var0 = function arg0, arg1() {
                 _fun16343: for (var _fun16343_ip = 0;;) switch (_fun16343_ip) {
                     case 0:
                         var2 = arg0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot12 = var0;
-            var21 = function(arg0) { // Original name: isMapToString, environment: var1
+            var21 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot13 = var21;
-            var20 = function(arg0) { // Original name: isSetToString, environment: var1
+            var20 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot14 = var20;
-            var19 = function(arg0) { // Original name: isWeakMapToString, environment: var1
+            var19 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot15 = var19;
-            var16 = function(arg0) { // Original name: isWeakSetToString, environment: var1
+            var16 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot16 = var16;
-            var15 = function(arg0) { // Original name: isArrayBufferToString, environment: var1
+            var15 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot17 = var15;
-            var11 = function(arg0) { // Original name: isArrayBuffer, environment: var1
+            var11 = function arg0() {
                 _fun16349: for (var _fun16349_ip = 0;;) switch (_fun16349_ip) {
                     case 0:
                         var4 = arg0;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot18 = var11;
-            var13 = function(arg0) { // Original name: isDataViewToString, environment: var1
+            var13 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot19 = var13;
-            var9 = function(arg0) { // Original name: isDataView, environment: var1
+            var9 = function arg0() {
                 _fun16351: for (var _fun16351_ip = 0;;) switch (_fun16351_ip) {
                     case 0:
                         var4 = arg0;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot20 = var9;
-            var0 = function(arg0) { // Original name: isSharedArrayBufferToString, environment: var1
+            var0 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot21 = var0;
-            var8 = function(arg0) { // Original name: isSharedArrayBuffer, environment: var1
+            var8 = function arg0() {
                 _fun16353: for (var _fun16353_ip = 0;;) switch (_fun16353_ip) {
                     case 0:
                         var4 = arg0;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot22 = var8;
-            var7 = function(arg0) { // Original name: isNumberObject, environment: var1
+            var7 = function arg0() {
                 var3 = _closure1_slot12;
                 var2 = _closure1_slot6;
                 var1 = undefined;
@@ -250,7 +250,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot23 = var7;
-            var6 = function(arg0) { // Original name: isStringObject, environment: var1
+            var6 = function arg0() {
                 var3 = _closure1_slot12;
                 var2 = _closure1_slot7;
                 var1 = undefined;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot24 = var6;
-            var5 = function(arg0) { // Original name: isBooleanObject, environment: var1
+            var5 = function arg0() {
                 var3 = _closure1_slot12;
                 var2 = _closure1_slot8;
                 var1 = undefined;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot25 = var5;
-            var4 = function(arg0) { // Original name: isBigIntObject, environment: var1
+            var4 = function arg0() {
                 _fun16357: for (var _fun16357_ip = 0;;) switch (_fun16357_ip) {
                     case 0:
                         var0 = _closure1_slot3;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot26 = var4;
-            var2 = function(arg0) { // Original name: isSymbolObject, environment: var1
+            var2 = function arg0() {
                 _fun16358: for (var _fun16358_ip = 0;;) switch (_fun16358_ip) {
                     case 0:
                         var0 = _closure1_slot4;
@@ -371,7 +371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var14 = var23[var14];
             var14 = var22.bind(var0)(var14);
             var3.isTypedArray = var14;
-            var14 = function(arg0) { // Original name: isPromise, environment: var1
+            var14 = function arg0() {
                 _fun16359: for (var _fun16359_ip = 0;;) switch (_fun16359_ip) {
                     case 0:
                         var2 = arg0;
@@ -430,7 +430,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.isPromise = var14;
-            var14 = function(arg0) { // Original name: isArrayBufferView, environment: var1
+            var14 = function arg0() {
                 _fun16360: for (var _fun16360_ip = 0;;) switch (_fun16360_ip) {
                     case 0:
                         var3 = arg0;
@@ -476,7 +476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.isArrayBufferView = var14;
-            var14 = function(arg0) { // Original name: isUint8Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -490,7 +490,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isUint8Array = var14;
-            var14 = function(arg0) { // Original name: isUint8ClampedArray, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -504,7 +504,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isUint8ClampedArray = var14;
-            var14 = function(arg0) { // Original name: isUint16Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -518,7 +518,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isUint16Array = var14;
-            var14 = function(arg0) { // Original name: isUint32Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isUint32Array = var14;
-            var14 = function(arg0) { // Original name: isInt8Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -546,7 +546,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isInt8Array = var14;
-            var14 = function(arg0) { // Original name: isInt16Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -560,7 +560,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isInt16Array = var14;
-            var14 = function(arg0) { // Original name: isInt32Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -574,7 +574,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isInt32Array = var14;
-            var14 = function(arg0) { // Original name: isFloat32Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -588,7 +588,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isFloat32Array = var14;
-            var14 = function(arg0) { // Original name: isFloat64Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -602,7 +602,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isFloat64Array = var14;
-            var14 = function(arg0) { // Original name: isBigInt64Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -616,7 +616,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isBigInt64Array = var14;
-            var14 = function(arg0) { // Original name: isBigUint64Array, environment: var1
+            var14 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 3;
@@ -651,7 +651,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var14 = var21.bind(var0)(var22);
         case 611:
             var21.working = var14;
-            var14 = function(arg0) { // Original name: isMap, environment: var1
+            var14 = function arg0() {
                 _fun16372: for (var _fun16372_ip = 0;;) switch (_fun16372_ip) {
                     case 0:
                         var4 = arg0;
@@ -708,7 +708,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var14 = var20.bind(var0)(var21);
         case 674:
             var20.working = var14;
-            var14 = function(arg0) { // Original name: isSet, environment: var1
+            var14 = function arg0() {
                 _fun16373: for (var _fun16373_ip = 0;;) switch (_fun16373_ip) {
                     case 0:
                         var4 = arg0;
@@ -765,7 +765,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var14 = var19.bind(var0)(var20);
         case 738:
             var19.working = var14;
-            var14 = function(arg0) { // Original name: isWeakMap, environment: var1
+            var14 = function arg0() {
                 _fun16374: for (var _fun16374_ip = 0;;) switch (_fun16374_ip) {
                     case 0:
                         var4 = arg0;
@@ -822,7 +822,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var14 = var16.bind(var0)(var19);
         case 802:
             var16.working = var14;
-            var14 = function(arg0) { // Original name: isWeakSet, environment: var1
+            var14 = function arg0() {
                 var2 = _closure1_slot16;
                 var1 = undefined;
                 var0 = arg0;
@@ -908,7 +908,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 1008:
             var _closure1_slot11 = var9;
             var3.isSharedArrayBuffer = var8;
-            var8 = function(arg0) { // Original name: isAsyncFunction, environment: var1
+            var8 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -918,7 +918,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isAsyncFunction = var8;
-            var8 = function(arg0) { // Original name: isMapIterator, environment: var1
+            var8 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -928,7 +928,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isMapIterator = var8;
-            var8 = function(arg0) { // Original name: isSetIterator, environment: var1
+            var8 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -938,7 +938,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isSetIterator = var8;
-            var8 = function(arg0) { // Original name: isGeneratorObject, environment: var1
+            var8 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -948,7 +948,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.isGeneratorObject = var8;
-            var8 = function(arg0) { // Original name: isWebAssemblyCompiledModule, environment: var1
+            var8 = function arg0() {
                 var2 = _closure1_slot5;
                 var1 = undefined;
                 var0 = arg0;
@@ -963,7 +963,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.isBooleanObject = var5;
             var3.isBigIntObject = var4;
             var3.isSymbolObject = var2;
-            var2 = function(arg0) { // Original name: isBoxedPrimitive, environment: var1
+            var2 = function arg0() {
                 _fun16381: for (var _fun16381_ip = 0;;) switch (_fun16381_ip) {
                     case 0:
                         var3 = arg0;
@@ -1006,7 +1006,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.isBoxedPrimitive = var2;
-            var2 = function(arg0) { // Original name: isAnyArrayBuffer, environment: var1
+            var2 = function arg0() {
                 _fun16382: for (var _fun16382_ip = 0;;) switch (_fun16382_ip) {
                     case 0:
                         var4 = arg0;
@@ -1049,7 +1049,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var6 = false;
                 var0.enumerable = var6;
-                var5 = function() { // Original name: value, environment: var5
+                var5 = function() {
                     var0 = global;
                     var2 = var0.Error;
                     var1 = _closure2_slot0;

@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0, arg1) { // Original name: isNewLayoutBetter, environment: var1
+    var0 = function arg0, arg1() {
         _fun90936: for (var _fun90936_ip = 0;;) switch (_fun90936_ip) {
             case 0:
                 var1 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/utils/fitCardsInGrid.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: fitCardsInGrid, environment: var1
+    var1 = function arg0() {
         _fun90937: for (var _fun90937_ip = 0;;) switch (_fun90937_ip) {
             case 0:
                 var0 = arg0;

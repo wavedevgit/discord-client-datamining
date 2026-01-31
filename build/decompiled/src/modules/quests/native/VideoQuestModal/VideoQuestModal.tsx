@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var8];
                 var4 = var9.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: k, environment: var0
+                var1 = function() {
                     var0 = {};
                     var9 = _closure1_slot0;
                     var10 = _closure1_slot2;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var8];
                 var4 = var9.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: U, environment: var0
+                var1 = function() {
                     var0 = {};
                     var8 = {};
                     var5 = _closure1_slot0;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var7)(var4);
     var _closure1_slot14 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: VideoQuestModal, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.questId;
         var10 = var0.questContentPosition;
@@ -704,12 +704,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = {};
             var3 = true;
             var2.fullscreen = var3;
-            var3 = function() { // Original name: headerLeft, environment: var1
+            var3 = function() {
                 var0 = null;
                 return var0;
             };
             var2.headerLeft = var3;
-            var1 = function() { // Original name: render, environment: var1
+            var1 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot1;
                 var12 = _closure1_slot2;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.questContentPosition = var9;
                 var8 = _closure2_slot4;
                 var6.sourceQuestContent = var8;
-                var8 = function() { // Original name: children, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot14;
                     var1 = {};

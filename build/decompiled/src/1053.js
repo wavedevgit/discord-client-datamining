@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = [200, 500];
     var _closure1_slot2 = var2;
     var1.INPThresholds = var2;
-    var0 = function(arg0) { // Original name: onINP, environment: var0
+    var0 = function arg0() {
         _fun10815: for (var _fun10815_ip = 0;;) switch (_fun10815_ip) {
             case 0:
                 var0 = undefined;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var4.InteractionManager;
                             var4 = var8.bind(var10)(var7, var4);
                             var _closure3_slot2 = var4;
-                            var8 = function(arg0) { // Original name: handleEntries, environment: var1
+                            var8 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var3 = _closure1_slot0;

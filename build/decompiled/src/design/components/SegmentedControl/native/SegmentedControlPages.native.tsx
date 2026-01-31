@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SegmentedControlPage, environment: var1
+    var0 = function arg0() {
         var5 = arg0;
         var14 = var5.pageIndex;
         var _closure2_slot0 = var14;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = undefined;
         var12 = var6.bind(var3)(var9);
         var11 = var12.useAnimatedProps;
-        var9 = function() { // Original name: x, environment: var1
+        var9 = function() {
             _fun62031: for (var _fun62031_ip = 0;;) switch (_fun62031_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var10[var0];
         var13 = var6.bind(var3)(var2);
         var12 = var13.useAnimatedReaction;
-        var2 = function() { // Original name: h, environment: var1
+        var2 = function() {
             var2 = _closure2_slot2;
             var0 = var2.get;
             var2 = var0.bind(var2)();
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.__workletHash = var14;
         var14 = _closure1_slot17;
         var2.__initData = var14;
-        var1 = function(arg0) { // Original name: v, environment: var1
+        var1 = function arg0() {
             _fun62034: for (var _fun62034_ip = 0;;) switch (_fun62034_ip) {
                 case 0:
                     var3 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/SegmentedControl/native/SegmentedControlPages.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SegmentedControlPages, environment: var1
+    var1 = function arg0() {
         _fun62035: for (var _fun62035_ip = 0;;) switch (_fun62035_ip) {
             case 0:
                 var1 = arg0;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var20[var24];
                 var17 = var19.bind(var4)(var9);
                 var15 = var17.useAnimatedReaction;
-                var14 = function() { // Original name: b, environment: var5
+                var14 = function() {
                     var1 = _closure2_slot3;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.__workletHash = var9;
                 var9 = _closure1_slot7;
                 var14.__initData = var9;
-                var9 = function(arg0) { // Original name: D, environment: var5
+                var9 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 4;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var20[var24];
                 var17 = var19.bind(var4)(var9);
                 var15 = var17.useAnimatedReaction;
-                var14 = function() { // Original name: J, environment: var5
+                var14 = function() {
                     var1 = _closure2_slot9;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.__workletHash = var9;
                 var9 = _closure1_slot9;
                 var14.__initData = var9;
-                var9 = function(arg0) { // Original name: E, environment: var5
+                var9 = function arg0() {
                     var2 = _closure2_slot3;
                     var1 = var2.set;
                     var0 = arg0;
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var14.bind(var15)(var7, var9);
                 var15 = _closure1_slot4;
                 var14 = var15.useCallback;
-                var9 = function(arg0, arg1) { // Original name: Y, environment: var5
+                var9 = function arg0, arg1() {
                     _fun62044: for (var _fun62044_ip = 0;;) switch (_fun62044_ip) {
                         case 0:
                             var6 = _closure2_slot9;
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var19.bind(var4)(var7);
                 var9 = var14.useAnimatedScrollHandler;
                 var7 = {};
-                var15 = function(arg0) { // Original name: te, environment: var5
+                var15 = function arg0() {
                     _fun62045: for (var _fun62045_ip = 0;;) switch (_fun62045_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -755,7 +755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = _closure1_slot12;
                 var15.__initData = var16;
                 var7.onBeginDrag = var15;
-                var15 = function(arg0) { // Original name: ee, environment: var5
+                var15 = function arg0() {
                     _fun62046: for (var _fun62046_ip = 0;;) switch (_fun62046_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = _closure1_slot13;
                 var15.__initData = var16;
                 var7.onEndDrag = var15;
-                var15 = function(arg0) { // Original name: $, environment: var5
+                var15 = function arg0() {
                     _fun62047: for (var _fun62047_ip = 0;;) switch (_fun62047_ip) {
                         case 0:
                             var0 = arg0;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = _closure1_slot14;
                 var15.__initData = var16;
                 var7.onMomentumEnd = var15;
-                var15 = function(arg0) { // Original name: Z, environment: var5
+                var15 = function arg0() {
                     _fun62048: for (var _fun62048_ip = 0;;) switch (_fun62048_ip) {
                         case 0:
                             var6 = arg0;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var7 = var15.bind(var16)(var0, var7);
-                var0 = function(arg0, arg1) { // Original name: useFrozenPageIndices, environment: var5
+                var0 = function arg0, arg1() {
                     var10 = arg0;
                     var _closure3_slot0 = var10;
                     var1 = arg1;
@@ -1106,7 +1106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot3 = var1;
                     var10 = _closure1_slot4;
                     var9 = var10.useCallback;
-                    var8 = function(arg0, arg1) { // Original name: u, environment: var0
+                    var8 = function arg0, arg1() {
                         var4 = _closure3_slot2;
                         var3 = var4.set;
                         var0 = global;
@@ -1146,7 +1146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var4.bind(var6)(var3);
                     var4 = var5.useAnimatedReaction;
                     var3 = function() { // Environment: var0
-                        var0 = function() { // Original name: SegmentedControlPagesNativeTsx14, environment: var0
+                        var0 = function() {
                             var0 = {};
                             var3 = _closure3_slot0;
                             var2 = var3.get;
@@ -1172,7 +1172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var3 = var3.bind(var6)();
                     var0 = function() { // Environment: var0
-                        var0 = function(arg0) { // Original name: SegmentedControlPagesNativeTsx15, environment: var0
+                        var0 = function arg0() {
                             _fun62056: for (var _fun62056_ip = 0;;) switch (_fun62056_ip) {
                                 case 0:
                                     var0 = arg0;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var1 = function(arg0) { // Original name: isMentioned, environment: var3
+    var1 = function arg0() {
         _fun36534: for (var _fun36534_ip = 0;;) switch (_fun36534_ip) {
             case 0:
                 var0 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/isMessageMentioned.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: isMessageMentioned, environment: var3
+    var4 = function arg0() {
         _fun36537: for (var _fun36537_ip = 0;;) switch (_fun36537_ip) {
             case 0:
                 var0 = arg0;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var4;
-    var3 = function(arg0) { // Original name: isRawMessageMentioned, environment: var3
+    var3 = function arg0() {
         _fun36539: for (var _fun36539_ip = 0;;) switch (_fun36539_ip) {
             case 0:
                 var0 = arg0;

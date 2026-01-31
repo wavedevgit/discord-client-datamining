@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = metroImportAll;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot1 = var3;
-    var1 = function(arg0) { // Original name: useEventEmitter, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var3 = _closure1_slot1;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = function(arg0) { // Environment: var0
             var0 = arg0;
             var _closure3_slot0 = var0;
-            var1 = function(arg0, arg1) { // Original name: removeListener, environment: var2
+            var1 = function arg0, arg1() {
                 _fun17118: for (var _fun17118_ip = 0;;) switch (_fun17118_ip) {
                     case 0:
                         var2 = arg0;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var _closure3_slot1 = var1;
             var0 = {};
-            var2 = function(arg0, arg1) { // Original name: addListener, environment: var2
+            var2 = function arg0, arg1() {
                 _fun17119: for (var _fun17119_ip = 0;;) switch (_fun17119_ip) {
                     case 0:
                         var4 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var0;
                 case 182:
                     var0 = {};
-                    var9 = function() { // Original name: get type, environment: var1
+                    var9 = function() {
                         var0 = _closure3_slot0;
                         return var0;
                     };
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var8 = {};
                     var7 = true;
                     var8.enumerable = var7;
-                    var7 = function() { // Original name: get, environment: var1
+                    var7 = function() {
                         var0 = _closure3_slot2;
                         return var0;
                     };
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = {};
                     var5 = true;
                     var6.enumerable = var5;
-                    var5 = function() { // Original name: get, environment: var1
+                    var5 = function() {
                         var0 = _closure3_slot1;
                         return var0;
                     };
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = {};
                     var8 = true;
                     var7.enumerable = var8;
-                    var9 = function() { // Original name: get, environment: var1
+                    var9 = function() {
                         var0 = _closure3_slot5;
                         return var0;
                     };
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2.defaultPrevented = var7;
                     var7 = {};
                     var7.enumerable = var8;
-                    var8 = function() { // Original name: value, environment: var1
+                    var8 = function() {
                         var0 = true;
                         _closure3_slot5 = var0;
                         var0 = undefined;

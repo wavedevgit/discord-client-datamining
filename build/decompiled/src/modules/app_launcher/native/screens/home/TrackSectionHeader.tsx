@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/home/TrackSectionHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TrackSectionHeader, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.sectionName;
         var8 = var0.numItems;

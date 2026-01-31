@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/you/tracking/Tracking.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: trackYouTabAvatarPress, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackYouTabAvatarPress = var3;
-    var3 = function() { // Original name: trackYouTabCustomStatusPress, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackYouTabCustomStatusPress = var3;
-    var3 = function() { // Original name: trackYouTabEditProfilePress, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackYouTabEditProfilePress = var3;
-    var3 = function() { // Original name: trackYouTabNitroIconPress, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackYouTabNitroIconPress = var3;
-    var1 = function(arg0) { // Original name: trackYouTabSettingsIconPress, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.isBadged;
         var3 = _closure1_slot0;

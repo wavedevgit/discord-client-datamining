@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/polls/chat/usePollMessageContextItemTypes.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: usePollMessageContextItemTypes, environment: var3
+    var3 = function arg0() {
         _fun77866: for (var _fun77866_ip = 0;;) switch (_fun77866_ip) {
             case 0:
                 var3 = arg0;

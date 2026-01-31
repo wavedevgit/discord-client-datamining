@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var6;
     var3 = var3.jsxs;
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: ObscuredView, environment: var1
+    var3 = function arg0() {
         _fun72998: for (var _fun72998_ip = 0;;) switch (_fun72998_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/components/MediaViewerThumbnails.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaViewerThumbnails, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var26 = var0.syncer;
         var2 = _closure1_slot12;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var17[var4];
         var17 = var10.bind(var3)(var4);
         var10 = var17.useAnimatedProps;
-        var4 = function() { // Original name: i, environment: var1
+        var4 = function() {
             var0 = {};
             var2 = _closure2_slot6;
             var1 = var2.get;

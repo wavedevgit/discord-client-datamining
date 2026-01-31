@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun38375: for (var _fun38375_ip = 0;;) switch (_fun38375_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: StickerMessagePreviewStore, environment: var0
+        var3 = function() {
             _fun38379: for (var _fun38379_ip = 0;;) switch (_fun38379_ip) {
                 case 0:
                     var3 = this;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'getStickerPreview';
         var4.key = var5;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun38380: for (var _fun38380_ip = 0;;) switch (_fun38380_ip) {
                 case 0:
                     var1 = _closure1_slot5;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleAddStickerPreview, environment: var3
+    var8 = function arg0() {
         _fun38381: for (var _fun38381_ip = 0;;) switch (_fun38381_ip) {
             case 0:
                 var0 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.ADD_STICKER_PREVIEW = var8;
-    var8 = function(arg0) { // Original name: handleClearStickerPreview, environment: var3
+    var8 = function arg0() {
         _fun38382: for (var _fun38382_ip = 0;;) switch (_fun38382_ip) {
             case 0:
                 var0 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CLEAR_STICKER_PREVIEW = var8;
-    var3 = function() { // Original name: resetState, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot6 = var0;
         var0 = {};

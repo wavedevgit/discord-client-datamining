@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: getAvatarSpecs, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot0;
         var0 = arg0;
         var0 = var1[var0];
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.StatusBackdropOpacity = var5;
     var2.AvatarSizeSpecs = var4;
     var2.getAvatarSpecs = var3;
-    var3 = function(arg0) { // Original name: getAvatarSize, environment: var1
+    var3 = function arg0() {
         _fun48958: for (var _fun48958_ip = 0;;) switch (_fun48958_ip) {
             case 0:
                 var3 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAvatarSize = var3;
-    var1 = function(arg0) { // Original name: getStatusSize, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = undefined;
         var0 = arg0;

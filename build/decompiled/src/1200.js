@@ -10,32 +10,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var5.bind(var6)(var1, var0, var4);
     var0 = {};
-    var4 = function() { // Original name: onFormOpen, environment: var2
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var0.onFormOpen = var4;
-    var4 = function() { // Original name: onFormClose, environment: var2
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var0.onFormClose = var4;
-    var4 = function(arg0) { // Original name: onAddScreenshot, environment: var2
+    var4 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var0.onAddScreenshot = var4;
-    var4 = function() { // Original name: onSubmitSuccess, environment: var2
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var0.onSubmitSuccess = var4;
-    var4 = function() { // Original name: onSubmitError, environment: var2
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var0.onSubmitError = var4;
-    var2 = function() { // Original name: onFormSubmitted, environment: var2
+    var2 = function() {
         var0 = undefined;
         return var0;
     };

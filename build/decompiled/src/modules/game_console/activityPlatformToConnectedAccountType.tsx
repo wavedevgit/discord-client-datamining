@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/activityPlatformToConnectedAccountType.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: activityPlatformToConnectedAccountType, environment: var1
+    var1 = function arg0() {
         _fun69454: for (var _fun69454_ip = 0;;) switch (_fun69454_ip) {
             case 0:
                 var2 = arg0;

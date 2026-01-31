@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/themes/resolveTheme.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: resolveTheme, environment: var1
+    var1 = function arg0, arg1() {
         _fun27539: for (var _fun27539_ip = 0;;) switch (_fun27539_ip) {
             case 0:
                 var2 = arg0;

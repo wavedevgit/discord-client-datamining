@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopOrbsPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun88119: for (var _fun88119_ip = 0;;) switch (_fun88119_ip) {
             case 0:
                 var0 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = {};
                 var0.data = var6;
-                var3 = function(arg0) { // Original name: renderItem, environment: var3
+                var3 = function arg0() {
                     _fun88120: for (var _fun88120_ip = 0;;) switch (_fun88120_ip) {
                         case 0:
                             var0 = arg0;

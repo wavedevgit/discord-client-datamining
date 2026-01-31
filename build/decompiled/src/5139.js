@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: getFormattedString, environment: var3
+    var1 = function arg0() {
         _fun46144: for (var _fun46144_ip = 0;;) switch (_fun46144_ip) {
             case 0:
                 var3 = arg0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var1;
-    var0 = function(arg0, arg1, arg2) { // Original name: runScrollBenchmark, environment: var3
+    var0 = function arg0, arg1, arg2() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: _runScrollBenchmark, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var4.height;
                         var2 = var2.height;
                         var7 = var4 - var2;
-                        var6 = function(arg0, arg1) { // Original name: scrollNow, environment: var1
+                        var6 = function arg0, arg1() {
                             _fun46150: for (var _fun46150_ip = 0;;) switch (_fun46150_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.useEffect;
     var _closure1_slot4 = var4;
-    var3 = function(arg0, arg1) { // Original name: useBenchmark, environment: var3
+    var3 = function arg0, arg1() {
         _fun46151: for (var _fun46151_ip = 0;;) switch (_fun46151_ip) {
             case 0:
                 var8 = arg0;
@@ -529,7 +529,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         case 221:
                                             var9 = _closure2_slot0;
                                             var6 = _closure3_slot1;
-                                            var7 = function(arg0, arg1) { // Original name: computeSuggestions, environment: var7
+                                            var7 = function arg0, arg1() {
                                                 _fun46155: for (var _fun46155_ip = 0;;) switch (_fun46155_ip) {
                                                     case 0:
                                                         var6 = arg0;

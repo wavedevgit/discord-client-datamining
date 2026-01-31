@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(1);
     var3[0] = var6;
     var1.transports = var3;
-    var3 = function() { // Original name: registerTransportsForEmbeddedPlatform, environment: var3
+    var3 = function() {
         var0 = undefined;
         return var0;
     };

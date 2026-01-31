@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/native/gifting/PremiumGiftModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: PremiumGiftModal, environment: var3
+    var3 = function arg0() {
         _fun74631: for (var _fun74631_ip = 0;;) switch (_fun74631_ip) {
             case 0:
                 var0 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = new Array(0);
                 var17 = var8.bind(var5)(var2, var1);
-                var1 = function(arg0, arg1) { // Original name: useGetScreens, environment: var10
+                var1 = function arg0, arg1() {
                     _fun74635: for (var _fun74635_ip = 0;;) switch (_fun74635_ip) {
                         case 0:
                             var10 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                         case 74:
                             var1.headerLeft = var9;
-                            var9 = function() { // Original name: render, environment: var3
+                            var9 = function() {
                                 var3 = _closure1_slot5;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.headerLeft = var9;
                             var9 = var4.header;
                             var1.headerStyle = var9;
-                            var9 = function(arg0) { // Original name: render, environment: var3
+                            var9 = function arg0() {
                                 var0 = arg0;
                                 var7 = var0.defaultHighlightedReward;
                                 var6 = var0.allRewards;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.headerLeft = var9;
                             var9 = var4.header;
                             var1.headerStyle = var9;
-                            var9 = function() { // Original name: render, environment: var3
+                            var9 = function() {
                                 var3 = _closure1_slot5;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.headerLeft = var5;
                             var4 = var4.header;
                             var1.headerStyle = var4;
-                            var3 = function() { // Original name: render, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot5;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var8.initialRouteName = var12;
                 var8.screens = var11;
-                var10 = function(arg0) { // Original name: onStateChange, environment: var10
+                var10 = function arg0() {
                     _fun74641: for (var _fun74641_ip = 0;;) switch (_fun74641_ip) {
                         case 0:
                             var0 = arg0;

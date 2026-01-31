@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useCommonVariablesTs4({shouldComputed:shouldComputed,previousSize:previousSize,size:size}){const{handlerOffset,computeOffsetIfSizeChanged}=this.__closure;if(shouldComputed){handlerOffset.value=computeOffsetIfSizeChanged({handlerOffset:handlerOffset.value,prevSize:previousSize,size:size});}}';
     var2.code = var3;
     var _closure1_slot5 = var2;
-    var0 = function(arg0) { // Original name: useCommonVariables, environment: var0
+    var0 = function arg0() {
         _fun74828: for (var _fun74828_ip = 0;;) switch (_fun74828_ip) {
             case 0:
                 var7 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var13[var6];
                 var15 = var11.bind(var12)(var2);
                 var14 = var15.useAnimatedReaction;
-                var9 = function() { // Original name: pnpm_useCommonVariablesTs1, environment: var5
+                var9 = function() {
                     _fun74829: for (var _fun74829_ip = 0;;) switch (_fun74829_ip) {
                         case 0:
                             var1 = _closure2_slot4;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9.__workletHash = var2;
                 var2 = _closure1_slot2;
                 var9.__initData = var2;
-                var8 = function(arg0) { // Original name: pnpm_useCommonVariablesTs2, environment: var5
+                var8 = function arg0() {
                     _fun74830: for (var _fun74830_ip = 0;;) switch (_fun74830_ip) {
                         case 0:
                             var1 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var13[var6];
                 var8 = var11.bind(var12)(var6);
                 var7 = var8.useAnimatedReaction;
-                var6 = function() { // Original name: pnpm_useCommonVariablesTs3, environment: var5
+                var6 = function() {
                     _fun74831: for (var _fun74831_ip = 0;;) switch (_fun74831_ip) {
                         case 0:
                             var0 = _closure2_slot5;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6.__workletHash = var9;
                 var9 = _closure1_slot4;
                 var6.__initData = var9;
-                var5 = function(arg0) { // Original name: pnpm_useCommonVariablesTs4, environment: var5
+                var5 = function arg0() {
                     _fun74832: for (var _fun74832_ip = 0;;) switch (_fun74832_ip) {
                         case 0:
                             var1 = arg0;

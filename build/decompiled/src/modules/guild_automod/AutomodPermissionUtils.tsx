@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var4 = function(arg0) { // Original name: getAutomodQuarantinedProfileFlags, environment: var1
+    var4 = function arg0() {
         _fun24728: for (var _fun24728_ip = 0;;) switch (_fun24728_ip) {
             case 0:
                 var2 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: hasAutomodQuarantinedProfile, environment: var1
+    var3 = function arg0() {
         _fun24730: for (var _fun24730_ip = 0;;) switch (_fun24730_ip) {
             case 0:
                 var1 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.AUTOMOD_QUARANTINED_PROFILE_FLAGS = var5;
     var2.getAutomodQuarantinedProfileFlags = var4;
-    var4 = function(arg0) { // Original name: getAutomodQuarantinedGuildMemberFlags, environment: var1
+    var4 = function arg0() {
         _fun24732: for (var _fun24732_ip = 0;;) switch (_fun24732_ip) {
             case 0:
                 var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAutomodQuarantinedGuildMemberFlags = var4;
-    var4 = function(arg0) { // Original name: getAutomodReason, environment: var1
+    var4 = function arg0() {
         _fun24733: for (var _fun24733_ip = 0;;) switch (_fun24733_ip) {
             case 0:
                 var3 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAutomodReason = var4;
     var2.hasAutomodQuarantinedProfile = var3;
-    var1 = function(arg0) { // Original name: useCurrentUserAutomodQuaratinedProfile, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

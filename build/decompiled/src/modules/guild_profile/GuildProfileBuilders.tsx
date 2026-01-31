@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun59618: for (var _fun59618_ip = 0;;) switch (_fun59618_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun59620: for (var _fun59620_ip = 0;;) switch (_fun59620_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getEmoji, environment: var1
+    var0 = function arg0() {
         _fun59621: for (var _fun59621_ip = 0;;) switch (_fun59621_ip) {
             case 0:
                 var0 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: buildGuildProfileTraitsFromServer, environment: var1
+    var0 = function arg0, arg1() {
         _fun59622: for (var _fun59622_ip = 0;;) switch (_fun59622_ip) {
             case 0:
                 var10 = arg0;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0) { // Original name: buildGuildProfileFromServer, environment: var1
+    var3 = function arg0() {
         _fun59623: for (var _fun59623_ip = 0;;) switch (_fun59623_ip) {
             case 0:
                 var1 = arg0;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_profile/GuildProfileBuilders.tsx';
     var4 = var5.bind(var6)(var4);
     var2.buildGuildProfileFromServer = var3;
-    var3 = function(arg0) { // Original name: buildGuildProfileUpdateForServer, environment: var1
+    var3 = function arg0() {
         _fun59625: for (var _fun59625_ip = 0;;) switch (_fun59625_ip) {
             case 0:
                 var1 = arg0;
@@ -811,7 +811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.buildGuildProfileUpdateForServer = var3;
-    var3 = function(arg0) { // Original name: buildTopGamesFromServer, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.reduce;
         var1 = function(arg0, arg1) { // Environment: var0
@@ -831,7 +831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.buildTopGamesFromServer = var3;
-    var1 = function(arg0) { // Original name: buildGuildProfileFromInvite, environment: var1
+    var1 = function arg0() {
         _fun59629: for (var _fun59629_ip = 0;;) switch (_fun59629_ip) {
             case 0:
                 var7 = arg0;

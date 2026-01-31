@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun117054: for (var _fun117054_ip = 0;;) switch (_fun117054_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot34 = var4;
     var4 = var1.PureComponent;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: NotificationSettings, environment: var5
+        var3 = function arg0() {
             _fun117058: for (var _fun117058_ip = 0;;) switch (_fun117058_ip) {
                 case 0:
                     var4 = this;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 26;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderServerSettings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun117065: for (var _fun117065_ip = 0;;) switch (_fun117065_ip) {
                 case 0:
                     var12 = this;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = var10.ALL_MESSAGES;
                     var15 = var11 === var15;
                     var2.selected = var15;
-                    var15 = function() { // Original name: onPress, environment: var13
+                    var15 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleTypeChange;
                         var0 = _closure1_slot22;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var20 = var10.ONLY_MENTIONS;
                     var7.value = var20;
                     var7.disabled = var14;
-                    var20 = function() { // Original name: onPress, environment: var13
+                    var20 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleTypeChange;
                         var0 = _closure1_slot22;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = var10.NO_MESSAGES;
                     var5.value = var15;
                     var5.disabled = var14;
-                    var13 = function() { // Original name: onPress, environment: var13
+                    var13 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleTypeChange;
                         var0 = _closure1_slot22;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderNotificationOptions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun117069: for (var _fun117069_ip = 0;;) switch (_fun117069_ip) {
                 case 0:
                     var0 = this;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var20.style = var23;
                     var23 = 'link';
                     var20.accessibilityRole = var23;
-                    var23 = function() { // Original name: onPress, environment: var12
+                    var23 = function() {
                         var5 = _closure1_slot1;
                         var6 = _closure1_slot2;
                         var1 = 33;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var20 = var23.bind(var24)(var22, var20);
                     var6.label = var20;
                     var6.value = var10;
-                    var10 = function(arg0) { // Original name: onValueChange, environment: var12
+                    var10 = function arg0() {
                         var5 = arg0;
                         var4 = _closure3_slot0;
                         var3 = var4.handleToggleChange;
@@ -830,7 +830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var20 = var22.bind(var23)(var20);
                     var7.label = var20;
                     var7.value = var17;
-                    var17 = function(arg0) { // Original name: onValueChange, environment: var12
+                    var17 = function arg0() {
                         var5 = arg0;
                         var4 = _closure3_slot0;
                         var3 = var4.handleToggleChange;
@@ -876,7 +876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = var18 === var17;
                 case 612:
                     var7.value = var15;
-                    var15 = function(arg0) { // Original name: onValueChange, environment: var12
+                    var15 = function arg0() {
                         _fun117073: for (var _fun117073_ip = 0;;) switch (_fun117073_ip) {
                             case 0:
                                 var1 = arg0;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var17 = var20.bind(var21)(var17);
                     var8.label = var17;
                     var8.value = var16;
-                    var16 = function(arg0) { // Original name: onValueChange, environment: var12
+                    var16 = function arg0() {
                         var5 = arg0;
                         var4 = _closure3_slot0;
                         var3 = var4.handleToggleChange;
@@ -996,7 +996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13 = var14;
                 case 891:
                     var9.value = var13;
-                    var12 = function(arg0) { // Original name: onValueChange, environment: var12
+                    var12 = function arg0() {
                         var5 = arg0;
                         var4 = _closure3_slot0;
                         var3 = var4.handleToggleChange;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderMuteSection';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun117076: for (var _fun117076_ip = 0;;) switch (_fun117076_ip) {
                 case 0:
                     var5 = this;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderChannels';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var7 = this;
             var _closure3_slot0 = var7;
             var5 = _closure1_slot31;
@@ -1302,7 +1302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderChannel';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun117079: for (var _fun117079_ip = 0;;) switch (_fun117079_ip) {
                 case 0:
                     var0 = arg0;
@@ -1494,7 +1494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure1_slot18;
                     var7 = var13.bind(var16)(var0, var10, var7);
                     var1.label = var7;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleChannelSelect;
                         var0 = _closure3_slot1;
@@ -1563,7 +1563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun117081: for (var _fun117081_ip = 0;;) switch (_fun117081_ip) {
                 case 0:
                     var6 = this;
@@ -1634,7 +1634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverriddenChannels';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var7 = this;
             var1 = var7.props;
             var3 = var1.channels;
@@ -1711,7 +1711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var0)(var4);
     var4 = var4.ThemeContext;
     var1.contextType = var4;
-    var4 = function(arg0) { // Original name: ConnectedNotificationSettings, environment: var3
+    var4 = function arg0() {
         var1 = arg0;
         var13 = var1.guildId;
         var _closure2_slot0 = var13;
@@ -1868,7 +1868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/notification_settings/native/NotificationSettingsModal.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: NotificationSettingsModal, environment: var3
+    var3 = function() {
         _fun117089: for (var _fun117089_ip = 0;;) switch (_fun117089_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -1892,7 +1892,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot10;
                 var4 = var8.useMemo;
                 var2 = function() { // Environment: var0
-                    var1 = function() { // Original name: getScreens, environment: var0
+                    var1 = function() {
                         var0 = {};
                         var1 = _closure1_slot24;
                         var6 = var1.OVERVIEW;
@@ -1922,7 +1922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var10.h850Ss;
                         var10 = var11.bind(var12)(var10);
                         var2.title = var10;
-                        var10 = function(arg0) { // Original name: render, environment: var3
+                        var10 = function arg0() {
                             var0 = arg0;
                             var0 = var0.guildId;
                             var3 = _closure1_slot31;
@@ -1952,7 +1952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var11.getHeaderBackButton;
                         var10 = var10.bind(var11)();
                         var2.headerLeft = var10;
-                        var10 = function(arg0, arg1) { // Original name: render, environment: var3
+                        var10 = function arg0, arg1() {
                             var0 = arg0;
                             var4 = var0.guildId;
                             var3 = _closure1_slot31;
@@ -1988,7 +1988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.h850Ss;
                         var4 = var5.bind(var6)(var4);
                         var1.title = var4;
-                        var3 = function(arg0) { // Original name: render, environment: var3
+                        var3 = function arg0() {
                             var0 = arg0;
                             var4 = var0.channelId;
                             var3 = _closure1_slot31;

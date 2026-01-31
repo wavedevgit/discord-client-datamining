@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: mapToArray, environment: var0
+    var1 = function arg0() {
         var3 = arg0;
         var0 = -1;
         var _closure2_slot0 = var0;

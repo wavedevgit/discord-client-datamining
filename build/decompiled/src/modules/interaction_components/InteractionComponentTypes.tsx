@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/interaction_components/InteractionComponentTypes.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ActionComponentState = var3;
-    var3 = function(arg0) { // Original name: asComponentId, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };

@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ContextMenuCommandNavigator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ContextMenuCommandNavigator, environment: var1
+    var1 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var0 = var0.bind(var3)();
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot5;
         var1 = var5.Navigator;
         var0 = {};
-        var6 = function(arg0) { // Original name: screenOptions, environment: var8
+        var6 = function arg0() {
             _fun109412: for (var _fun109412_ip = 0;;) switch (_fun109412_ip) {
                 case 0:
                     var0 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.contentStyle = var3;
                     var3 = false;
                     var0.headerShadowVisible = var3;
-                    var3 = function(arg0) { // Original name: headerTitle, environment: var3
+                    var3 = function arg0() {
                         var2 = arg0;
                         var5 = var2.children;
                         var0 = null;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var11.bind(var12)(var10);
         var9.title = var10;
         var4.options = var9;
-        var9 = function() { // Original name: getComponent, environment: var8
+        var9 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 9;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var9 = 'app';
         var5.name = var9;
-        var9 = function(arg0) { // Original name: options, environment: var8
+        var9 = function arg0() {
             _fun109415: for (var _fun109415_ip = 0;;) switch (_fun109415_ip) {
                 case 0:
                     var0 = arg0;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var5.options = var9;
-        var8 = function() { // Original name: getComponent, environment: var8
+        var8 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 10;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Original name: baseSlice, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun68439: for (var _fun68439_ip = 0;;) switch (_fun68439_ip) {
             case 0:
                 var4 = arg0;

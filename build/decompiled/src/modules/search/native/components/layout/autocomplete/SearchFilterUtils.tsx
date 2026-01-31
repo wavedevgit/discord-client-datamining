@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getSearchTokenText, environment: var1
+    var0 = function arg0() {
         _fun105145: for (var _fun105145_ip = 0;;) switch (_fun105145_ip) {
             case 0:
                 var2 = arg0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/layout/autocomplete/SearchFilterUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getSearchTokenLabel, environment: var1
+    var3 = function arg0, arg1() {
         _fun105146: for (var _fun105146_ip = 0;;) switch (_fun105146_ip) {
             case 0:
                 var4 = arg1;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchTokenLabel = var3;
-    var3 = function(arg0) { // Original name: getSearchTokenSubLabel, environment: var1
+    var3 = function arg0() {
         _fun105147: for (var _fun105147_ip = 0;;) switch (_fun105147_ip) {
             case 0:
                 var4 = arg0;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchTokenSubLabel = var3;
-    var3 = function(arg0) { // Original name: getSearchTokenIcon, environment: var1
+    var3 = function arg0() {
         _fun105148: for (var _fun105148_ip = 0;;) switch (_fun105148_ip) {
             case 0:
                 var4 = arg0;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchTokenIcon = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getSearchTokenPressHandler, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun105149: for (var _fun105149_ip = 0;;) switch (_fun105149_ip) {
             case 0:
                 var4 = arg1;
@@ -753,7 +753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot0;
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot2;
-                    var1 = function(arg0, arg1, arg2) { // Original name: handleSearchDateTokenPress, environment: var0
+                    var1 = function arg0, arg1, arg2() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var0 = arg1;
@@ -784,7 +784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.paths;
                             var3 = var3.bind(var0)(var2, var1);
                             var2 = {};
-                            var1 = function(arg0) { // Original name: onSubmit, environment: var1
+                            var1 = function arg0() {
                                 var4 = arg0;
                                 var3 = var4.format;
                                 var2 = _closure1_slot6;
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot0;
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot2;
-                    var1 = function(arg0, arg1, arg2) { // Original name: handleSearchTokenPress, environment: var0
+                    var1 = function arg0, arg1, arg2() {
                         var3 = arg0;
                         var0 = arg1;
                         var _closure4_slot0 = var0;
@@ -911,7 +911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSearchTokenPressHandler = var3;
-    var1 = function(arg0) { // Original name: getSearchFilterSuggestions, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = new Array(0);

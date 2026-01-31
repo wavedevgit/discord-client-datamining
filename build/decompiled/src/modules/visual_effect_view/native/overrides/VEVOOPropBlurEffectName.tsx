@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot9 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VEVOOPropBlurEffectName, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var0 = var0.bind(var3)();
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5.FormSwitch;
         var5 = {};
         var5.value = var14;
-        var9 = function(arg0) { // Original name: onValueChange, environment: var8
+        var9 = function arg0() {
             _fun100006: for (var _fun100006_ip = 0;;) switch (_fun100006_ip) {
                 case 0:
                     var4 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.disabled = var14;
         var12 = var13 === var12;
         var7.value = var12;
-        var12 = function() { // Original name: onValueChange, environment: var8
+        var12 = function() {
             _fun100007: for (var _fun100007_ip = 0;;) switch (_fun100007_ip) {
                 case 0:
                     var2 = _closure2_slot3;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = _closure2_slot4;
             var5 = !var5;
             var1.disabled = var5;
-            var0 = function() { // Original name: onPress, environment: var0
+            var0 = function() {
                 var2 = _closure2_slot8;
                 var1 = _closure3_slot0;
                 var0 = undefined;

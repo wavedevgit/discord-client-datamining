@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.title = var5;
         var5 = 'handled';
         var0.keyboardShouldPersistTaps = var5;
-        var4 = function(arg0) { // Original name: children, environment: var4
+        var4 = function arg0() {
             var2 = arg0;
             var7 = var2.ref;
             var0 = null;

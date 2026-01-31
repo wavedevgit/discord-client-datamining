@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = 'VISITED_ROUTE_KEYS';
     var1 = var4.bind(var0)(var1);
     var _closure1_slot4 = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: shouldPreventRemove, environment: var3
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun17386: for (var _fun17386_ip = 0;;) switch (_fun17386_ip) {
             case 0:
                 var2 = arg2;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var1;
-    var3 = function(arg0) { // Original name: useOnPreventRemove, environment: var3
+    var3 = function arg0() {
         _fun17389: for (var _fun17389_ip = 0;;) switch (_fun17389_ip) {
             case 0:
                 var0 = arg0;

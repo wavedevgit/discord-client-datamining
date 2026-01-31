@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var8)(var1);
     var _closure1_slot0 = var1;
     var1 = {};
-    var7 = function() { // Original name: getConfig, environment: var6
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getConfig = var7;
-    var7 = function() { // Original name: simulcastEnabled, environment: var6
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.simulcastEnabled = var7;
-    var6 = function() { // Original name: workerExperimentString, environment: var6
+    var6 = function() {
         var3 = _closure1_slot0;
         var2 = var3.getCurrentConfig;
         var1 = {};

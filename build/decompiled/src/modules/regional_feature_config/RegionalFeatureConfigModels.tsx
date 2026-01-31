@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: SettingsConfig, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'isFeatureTeenByDefault';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var0 = this;
             var1 = var0.teenByDefault;
             var0 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasTeenDefaults';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun39319: for (var _fun39319_ip = 0;;) switch (_fun39319_ip) {
                 case 0:
                     var0 = this;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var4;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: AgeVerificationConfig, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'isFeatureAgeGated';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var0 = this;
             var1 = var0.gatedFeatures;
             var0 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasAgeGatedFeatures';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun39323: for (var _fun39323_ip = 0;;) switch (_fun39323_ip) {
                 case 0:
                     var0 = this;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var0)();
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0, arg1) { // Original name: RegionalFeatureConfig, environment: var1
+        var4 = function arg0, arg1() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'isFeatureAgeGated';
         var0.key = var2;
-        var2 = function(arg0) { // Original name: value, environment: var1
+        var2 = function arg0() {
             var0 = this;
             var2 = var0.ageVerification;
             var1 = var2.isFeatureAgeGated;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isFeatureTeenByDefault';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var1
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.settings;
             var1 = var2.isFeatureTeenByDefault;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasAgeGatedFeatures';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var0 = this;
             var1 = var0.ageVerification;
             var0 = var1.hasAgeGatedFeatures;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasTeenDefaults';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var0 = this;
             var1 = var0.settings;
             var0 = var1.hasTeenDefaults;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fromConnectionOpen';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var0 = arg0;
             var3 = _closure2_slot0;
             var5 = _closure1_slot2;

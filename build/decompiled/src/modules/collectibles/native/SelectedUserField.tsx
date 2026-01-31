@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/SelectedUserField.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelectedUserField, environment: var1
+    var1 = function arg0() {
         _fun87216: for (var _fun87216_ip = 0;;) switch (_fun87216_ip) {
             case 0:
                 var0 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[0] = var11;
                 var11 = _closure1_slot3;
                 var10 = {};
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var0 = var1.bind(var0)(var0);

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var14 = dependencyMap;
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var14;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun34079: for (var _fun34079_ip = 0;;) switch (_fun34079_ip) {
             case 0:
                 var3 = arg0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun34080: for (var _fun34080_ip = 0;;) switch (_fun34080_ip) {
             case 0:
             case 2: // try_start_0
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceIn, environment: var6
+        var4 = function() {
             _fun34084: for (var _fun34084_ip = 0;;) switch (_fun34084_ip) {
                 case 0:
                     var5 = this;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function() { // Original name: pnpm_BounceTs1, environment: var0
+                        var0 = function() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34087: for (var _fun34087_ip = 0;;) switch (_fun34087_ip) {
                 case 0:
                     var0 = this;
@@ -326,7 +326,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -344,7 +344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -364,7 +364,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceInDown, environment: var6
+        var4 = function() {
             _fun34091: for (var _fun34091_ip = 0;;) switch (_fun34091_ip) {
                 case 0:
                     var5 = this;
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs2, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -541,7 +541,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34094: for (var _fun34094_ip = 0;;) switch (_fun34094_ip) {
                 case 0:
                     var0 = this;
@@ -565,7 +565,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -583,7 +583,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -603,7 +603,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceInUp, environment: var6
+        var4 = function() {
             _fun34098: for (var _fun34098_ip = 0;;) switch (_fun34098_ip) {
                 case 0:
                     var5 = this;
@@ -666,7 +666,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs3, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -781,7 +781,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34101: for (var _fun34101_ip = 0;;) switch (_fun34101_ip) {
                 case 0:
                     var0 = this;
@@ -805,7 +805,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -823,7 +823,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -843,7 +843,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceInLeft, environment: var6
+        var4 = function() {
             _fun34105: for (var _fun34105_ip = 0;;) switch (_fun34105_ip) {
                 case 0:
                     var5 = this;
@@ -906,7 +906,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs4, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -1021,7 +1021,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34108: for (var _fun34108_ip = 0;;) switch (_fun34108_ip) {
                 case 0:
                     var0 = this;
@@ -1045,7 +1045,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -1063,7 +1063,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -1083,7 +1083,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceInRight, environment: var6
+        var4 = function() {
             _fun34112: for (var _fun34112_ip = 0;;) switch (_fun34112_ip) {
                 case 0:
                     var5 = this;
@@ -1146,7 +1146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs5, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -1260,7 +1260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34115: for (var _fun34115_ip = 0;;) switch (_fun34115_ip) {
                 case 0:
                     var0 = this;
@@ -1284,7 +1284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -1302,7 +1302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -1322,7 +1322,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceOut, environment: var6
+        var4 = function() {
             _fun34119: for (var _fun34119_ip = 0;;) switch (_fun34119_ip) {
                 case 0:
                     var5 = this;
@@ -1385,7 +1385,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function() { // Original name: pnpm_BounceTs6, environment: var0
+                        var0 = function() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -1498,7 +1498,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34122: for (var _fun34122_ip = 0;;) switch (_fun34122_ip) {
                 case 0:
                     var0 = this;
@@ -1522,7 +1522,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -1540,7 +1540,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -1560,7 +1560,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceOutDown, environment: var6
+        var4 = function() {
             _fun34126: for (var _fun34126_ip = 0;;) switch (_fun34126_ip) {
                 case 0:
                     var5 = this;
@@ -1623,7 +1623,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs7, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -1737,7 +1737,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34129: for (var _fun34129_ip = 0;;) switch (_fun34129_ip) {
                 case 0:
                     var0 = this;
@@ -1761,7 +1761,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -1779,7 +1779,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -1799,7 +1799,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceOutUp, environment: var6
+        var4 = function() {
             _fun34133: for (var _fun34133_ip = 0;;) switch (_fun34133_ip) {
                 case 0:
                     var5 = this;
@@ -1862,7 +1862,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs8, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -1977,7 +1977,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34136: for (var _fun34136_ip = 0;;) switch (_fun34136_ip) {
                 case 0:
                     var0 = this;
@@ -2001,7 +2001,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -2019,7 +2019,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -2039,7 +2039,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var13.bind(var0)(var3);
     var15 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceOutLeft, environment: var6
+        var4 = function() {
             _fun34140: for (var _fun34140_ip = 0;;) switch (_fun34140_ip) {
                 case 0:
                     var5 = this;
@@ -2102,7 +2102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs9, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -2217,7 +2217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34143: for (var _fun34143_ip = 0;;) switch (_fun34143_ip) {
                 case 0:
                     var0 = this;
@@ -2241,7 +2241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -2259,7 +2259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };
@@ -2279,7 +2279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var12 = var13.bind(var0)(var12);
     var12 = var12.ComplexAnimationBuilder;
     var1 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: BounceOutRight, environment: var6
+        var4 = function() {
             _fun34147: for (var _fun34147_ip = 0;;) switch (_fun34147_ip) {
                 case 0:
                     var5 = this;
@@ -2342,7 +2342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure3_slot0;
                         var4 = var2.initialValues;
                         var _closure4_slot4 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_BounceTs10, environment: var0
+                        var0 = function arg0() {
                             var0 = {};
                             var2 = {};
                             var4 = {};
@@ -2456,7 +2456,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var7 = 'getDuration';
         var0.key = var7;
-        var1 = function() { // Original name: getDuration, environment: var6
+        var1 = function() {
             _fun34150: for (var _fun34150_ip = 0;;) switch (_fun34150_ip) {
                 case 0:
                     var0 = this;
@@ -2480,7 +2480,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var0 = 'createInstance';
         var5.key = var0;
-        var0 = function() { // Original name: createInstance, environment: var6
+        var0 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -2498,7 +2498,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0[0] = var5;
         var5 = {};
         var5.key = var7;
-        var6 = function() { // Original name: getDuration, environment: var6
+        var6 = function() {
             var0 = 600;
             return var0;
         };

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var6;
-            var0 = function(arg0) { // Original name: normalizeLocale, environment: var1
+            var0 = function arg0() {
                 _fun60005: for (var _fun60005_ip = 0;;) switch (_fun60005_ip) {
                     case 0:
                         var3 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var0;
-            var0 = function() { // Original name: _install, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var9 = var3;
                                 var2 = new var9[var2](var8, var7);
                                 var2 = var2 instanceof Object ? var2 : var3;
-                                var3 = function(arg0) { // Original name: attachToInput, environment: var3
+                                var3 = function arg0() {
                                     _fun60009: for (var _fun60009_ip = 0;;) switch (_fun60009_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot9 = var3;
             var3 = function() { // Environment: var1
                 var3 = _closure1_slot6;
-                var2 = function(arg0) { // Original name: Spellchecker, environment: var4
+                var2 = function arg0() {
                     var5 = arg0;
                     var4 = this;
                     var _closure3_slot0 = var4;
@@ -407,13 +407,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'enabled';
                 var0.key = var1;
-                var1 = function() { // Original name: get, environment: var4
+                var1 = function() {
                     var0 = this;
                     var0 = var0._enabled;
                     return var0;
                 };
                 var0.get = var1;
-                var1 = function(arg0) { // Original name: set, environment: var4
+                var1 = function arg0() {
                     var1 = arg0;
                     var0 = this;
                     var0._enabled = var1;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'setLearnedWords';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     var2 = _closure1_slot9;
                     var1 = var2.setLearnedWords;
                     var0 = arg0;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'setLocale';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun60018: for (var _fun60018_ip = 0;;) switch (_fun60018_ip) {
                         case 0:
                             var3 = arg0;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'setAppLocale';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     var2 = arg0;
                     var1 = var2.split;
                     var0 = '-';
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'detectLanguage';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun60021: for (var _fun60021_ip = 0;;) switch (_fun60021_ip) {
                         case 0:
                             var0 = this;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getAvailableLanguages';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     var3 = arg0;
                     var0 = {};
                     var _closure3_slot0 = var0;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'isMisspelled';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun60024: for (var _fun60024_ip = 0;;) switch (_fun60024_ip) {
                         case 0:
                             var1 = this;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getCorrectionsForMisspelling';
                 var0.key = var5;
-                var5 = function(arg0, arg1) { // Original name: value, environment: var4
+                var5 = function arg0, arg1() {
                     _fun60025: for (var _fun60025_ip = 0;;) switch (_fun60025_ip) {
                         case 0:
                             var1 = this;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'replaceMisspelling';
                 var0.key = var5;
-                var4 = function(arg0) { // Original name: value, environment: var4
+                var4 = function arg0() {
                     var2 = _closure1_slot9;
                     var1 = var2.replaceMisspelling;
                     var0 = arg0;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'lib/spellcheck/Spellchecker.tsx';
             var4 = var5.bind(var6)(var4);
             var2.Spellchecker = var3;
-            var1 = function() { // Original name: install, environment: var1
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot13;
                 var2 = var3.apply;

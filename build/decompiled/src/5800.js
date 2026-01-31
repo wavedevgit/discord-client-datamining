@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var4;
     var3 = var3.multiply;
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: forHorizontalIOS, environment: var1
+    var3 = function arg0() {
         _fun51329: for (var _fun51329_ip = 0;;) switch (_fun51329_ip) {
             case 0:
                 var0 = arg0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forHorizontalIOS = var3;
-    var3 = function(arg0) { // Original name: forVerticalIOS, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.current;
         var6 = var0.inverted;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.forVerticalIOS = var3;
-    var3 = function(arg0) { // Original name: forModalPresentationIOS, environment: var1
+    var3 = function arg0() {
         _fun51331: for (var _fun51331_ip = 0;;) switch (_fun51331_ip) {
             case 0:
                 var0 = arg0;
@@ -334,7 +334,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forModalPresentationIOS = var3;
-    var3 = function(arg0) { // Original name: forFadeFromBottomAndroid, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.current;
         var2 = var0.inverted;
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.forFadeFromBottomAndroid = var3;
-    var3 = function(arg0) { // Original name: forRevealFromBottomAndroid, environment: var1
+    var3 = function arg0() {
         _fun51333: for (var _fun51333_ip = 0;;) switch (_fun51333_ip) {
             case 0:
                 var0 = arg0;
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forRevealFromBottomAndroid = var3;
-    var3 = function(arg0) { // Original name: forScaleFromCenterAndroid, environment: var1
+    var3 = function arg0() {
         _fun51334: for (var _fun51334_ip = 0;;) switch (_fun51334_ip) {
             case 0:
                 var0 = arg0;
@@ -567,7 +567,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.forScaleFromCenterAndroid = var3;
-    var3 = function(arg0) { // Original name: forBottomSheetAndroid, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.current;
         var3 = var0.inverted;
@@ -633,7 +633,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.forBottomSheetAndroid = var3;
-    var3 = function(arg0) { // Original name: forFadeFromCenter, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.current;
         var4 = var0.progress;
@@ -663,7 +663,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.forFadeFromCenter = var3;
-    var1 = function() { // Original name: forNoAnimation, environment: var1
+    var1 = function() {
         var0 = {};
         return var0;
     };

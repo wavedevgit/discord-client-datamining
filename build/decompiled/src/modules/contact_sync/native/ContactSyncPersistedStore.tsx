@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var4 = function(arg0) { // Original name: setStoredContacts, environment: var1
+    var4 = function arg0() {
         var8 = arg0;
         var _closure2_slot0 = var8;
         var5 = _closure1_slot0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.deleteStoredContacts = var4;
     var2.useContactSyncStore = var3;
-    var3 = function() { // Original name: dismissUpsellCTA, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.dismissUpsellCTA = var3;
-    var3 = function() { // Original name: dismissDMListCTA, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.dismissDMListCTA = var3;
-    var3 = function() { // Original name: setDMListCTAFirstSeenDate, environment: var1
+    var3 = function() {
         _fun80635: for (var _fun80635_ip = 0;;) switch (_fun80635_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setDMListCTAFirstSeenDate = var3;
-    var1 = function() { // Original name: clearDismissState, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
         var2 = 0;

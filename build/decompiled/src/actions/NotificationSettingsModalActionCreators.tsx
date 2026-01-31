@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ChannelNotificationSettingsFlags;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: open, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.open = var6;
-    var6 = function() { // Original name: close, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.close = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: updateGuildNotificationSettings, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var7 = arg0;
         var6 = arg1;
         var2 = _closure1_slot0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateGuildNotificationSettings = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: updateGuildAndChannelNotificationSettings, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var11 = arg0;
         var2 = arg1;
         var10 = arg2;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateGuildAndChannelNotificationSettings = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: updateChannelOverrideSettings, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg2;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateChannelOverrideSettings = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: updateChannelOverrideSettingsBulk, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var9 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var9;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateChannelOverrideSettingsBulk = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: updateAppDMOverrideSettings, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg3;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateAppDMOverrideSettings = var6;
-    var6 = function(arg0, arg1) { // Original name: setForumThreadsCreated, environment: var3
+    var6 = function arg0, arg1() {
         _fun43408: for (var _fun43408_ip = 0;;) switch (_fun43408_ip) {
             case 0:
                 var2 = arg0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setForumThreadsCreated = var6;
-    var3 = function(arg0, arg1) { // Original name: setAccountFlag, environment: var3
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

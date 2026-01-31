@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_identity/GuildIdentitySettingsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: setNewPendingGuildIdentityBio, environment: var1
+    var3 = function arg0, arg1() {
         _fun80718: for (var _fun80718_ip = 0;;) switch (_fun80718_ip) {
             case 0:
                 var4 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingGuildIdentityBio = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingGuildIdentityPronouns, environment: var1
+    var3 = function arg0, arg1() {
         _fun80719: for (var _fun80719_ip = 0;;) switch (_fun80719_ip) {
             case 0:
                 var4 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingGuildIdentityPronouns = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingNickname, environment: var1
+    var3 = function arg0, arg1() {
         _fun80720: for (var _fun80720_ip = 0;;) switch (_fun80720_ip) {
             case 0:
                 var4 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingNickname = var3;
-    var3 = function(arg0, arg1) { // Original name: setNewPendingGuildIdentityThemeColors, environment: var1
+    var3 = function arg0, arg1() {
         _fun80721: for (var _fun80721_ip = 0;;) switch (_fun80721_ip) {
             case 0:
                 var4 = arg0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setNewPendingGuildIdentityThemeColors = var3;
-    var1 = function(arg0, arg1) { // Original name: canResetThemeColors, environment: var1
+    var1 = function arg0, arg1() {
         _fun80722: for (var _fun80722_ip = 0;;) switch (_fun80722_ip) {
             case 0:
                 var4 = arg0;

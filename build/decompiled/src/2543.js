@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'nextWeek': null,
         'other': 'P'
     };
-    var4 = function(arg0) { // Original name: nextWeek, environment: var2
+    var4 = function arg0() {
         var1 = arg0;
         var0 = var1.getUTCDay;
         var1 = var0.bind(var1)();
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.nextWeek = var4;
     var _closure1_slot1 = var3;
-    var2 = function(arg0, arg1) { // Original name: formatRelative, environment: var2
+    var2 = function arg0, arg1() {
         _fun21810: for (var _fun21810_ip = 0;;) switch (_fun21810_ip) {
             case 0:
                 var1 = _closure1_slot1;

@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useDefaultGuildsRestricted = var3;
-    var3 = function() { // Original name: useAllowFriendsFromMutualGuildsOnlyForTeen, environment: var1
+    var3 = function() {
         _fun81268: for (var _fun81268_ip = 0;;) switch (_fun81268_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useAllowFriendsFromMutualGuildsOnlyForTeen = var3;
-    var3 = function() { // Original name: useIsParentallyControlled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -385,9 +385,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsParentallyControlled = var3;
-    var1 = function(arg0) { // Original name: useParentalControlledConsent, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
-        var2 = function(arg0) { // Original name: useParentalControlledHasConsented, environment: var0
+        var2 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var4 = _closure1_slot0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = undefined;
         var2 = var2.bind(var1)(var3);
-        var0 = function(arg0) { // Original name: useUpdateParentalControlledConsent, environment: var0
+        var0 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var5 = _closure1_slot0;

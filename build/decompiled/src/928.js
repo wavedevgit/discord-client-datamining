@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: _wrapAndCaptureBooleanResult, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'GrowthBook';
         var0.name = var2;
-        var2 = function() { // Original name: setupOnce, environment: var1
+        var2 = function() {
             _fun9686: for (var _fun9686_ip = 0;;) switch (_fun9686_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.setupOnce = var2;
-        var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 2;

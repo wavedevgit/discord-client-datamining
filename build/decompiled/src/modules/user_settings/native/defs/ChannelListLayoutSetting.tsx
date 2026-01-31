@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: useChannelListLayoutPredicate, environment: var8
+    var1 = function() {
         var0 = false;
         return var0;
     };
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5.bind(var0)(var3);
     var4 = var7.createRadio;
     var3 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.ChannelListLayoutSetting;
     var9 = var9.useSetting;
     var3.useValue = var9;
-    var9 = function(arg0) { // Original name: onChannelListLayoutValueChange, environment: var8
+    var9 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.onValueChange = var9;
-    var8 = function() { // Original name: useChannelListLayoutOptions, environment: var8
+    var8 = function() {
         var1 = {};
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;

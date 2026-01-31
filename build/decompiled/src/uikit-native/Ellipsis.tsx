@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EllipsisDot, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.dotStyle;
         var11 = var0.disableScale;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = function() { // Environment: var2
             _fun50924: for (var _fun50924_ip = 0;;) switch (_fun50924_ip) {
                 case 0:
-                    var5 = function(arg0, arg1, arg2) { // Original name: i, environment: var0
+                    var5 = function arg0, arg1, arg2() {
                         var3 = arg0;
                         var15 = arg1;
                         var2 = var3.set;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7[var0];
         var8 = var8.bind(var3)(var5);
         var5 = var8.useAnimatedStyle;
-        var2 = function() { // Original name: p, environment: var2
+        var2 = function() {
             _fun50927: for (var _fun50927_ip = 0;;) switch (_fun50927_ip) {
                 case 0:
                     var0 = {};
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: Ellipsis, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.dotStyle;
         var _closure2_slot0 = var1;

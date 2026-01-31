@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun14063: for (var _fun14063_ip = 0;;) switch (_fun14063_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.DeviceSettingsStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: AccessibilityStore, environment: var5
+        var3 = function() {
             _fun14067: for (var _fun14067_ip = 0;;) switch (_fun14067_ip) {
                 case 0:
                     var3 = this;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun14068: for (var _fun14068_ip = 0;;) switch (_fun14068_ip) {
                 case 0:
                     var4 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fontScale';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var1 = var1.fontSize;
             var0 = _closure1_slot12;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fontSize';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.fontSize;
             return var0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFontScaledUp';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var1 = var1.fontSize;
             var0 = _closure1_slot12;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFontScaledDown';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var1 = var1.fontSize;
             var0 = _closure1_slot12;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fontScaleClass';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun14073: for (var _fun14073_ip = 0;;) switch (_fun14073_ip) {
                 case 0:
                     var2 = this;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'zoom';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.zoom;
             return var0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isZoomedIn';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var1 = var1.zoom;
             var0 = _closure1_slot12;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isZoomedOut';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var1 = var1.zoom;
             var0 = _closure1_slot12;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'keyboardModeEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.keyboardModeEnabled;
             return var0;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'colorblindMode';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.colorblindMode;
             return var0;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lowContrastMode';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.lowContrastMode;
             return var0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'saturation';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.saturation;
             return var0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'contrast';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.contrast;
             return var0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'desaturateUserColors';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.desaturateUserColors;
             return var0;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'forcedColorsModalSeen';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.forcedColorsModalSeen;
             return var0;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'keyboardNavigationExplainerModalSeen';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.keyboardNavigationExplainerModalSeen;
             return var0;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'messageGroupSpacing';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun14085: for (var _fun14085_ip = 0;;) switch (_fun14085_ip) {
                 case 0:
                     var0 = _closure1_slot18;
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isMessageGroupSpacingIncreased';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun14086: for (var _fun14086_ip = 0;;) switch (_fun14086_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isMessageGroupSpacingDecreased';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun14087: for (var _fun14087_ip = 0;;) switch (_fun14087_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSubmitButtonEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.submitButtonEnabled;
             return var0;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'syncProfileThemeWithUserTheme';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.syncProfileThemeWithUserTheme;
             return var0;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'systemPrefersReducedMotion';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.systemPrefersReducedMotion;
             return var0;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'rawPrefersReducedMotion';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.prefersReducedMotion;
             return var0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'useReducedMotion';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun14092: for (var _fun14092_ip = 0;;) switch (_fun14092_ip) {
                 case 0:
                     var1 = _closure1_slot10;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'systemForcedColors';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.systemForcedColors;
             return var0;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'syncForcedColors';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.syncForcedColors;
             return var0;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'useForcedColors';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun14095: for (var _fun14095_ip = 0;;) switch (_fun14095_ip) {
                 case 0:
                     var0 = _closure1_slot18;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'systemPrefersContrast';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.systemPrefersContrast;
             return var0;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'systemPrefersCrossfades';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.systemPrefersCrossfades;
             return var0;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'alwaysShowLinkDecorations';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.alwaysShowLinkDecorations;
             return var0;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'enableCustomCursor';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.enableCustomCursor;
             return var0;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'roleStyle';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.roleStyle;
             return var0;
@@ -802,7 +802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'displayNameStylesEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.displayNameStylesEnabled;
             return var0;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isHighContrastModeEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var1 = var1.contrastMode;
             var0 = _closure1_slot16;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSwitchIconsEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = var0.switchIconsEnabled;
             return var0;
@@ -835,7 +835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -1120,7 +1120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var12 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleFontScaleTo, environment: var4
+    var9 = function arg0() {
         _fun14115: for (var _fun14115_ip = 0;;) switch (_fun14115_ip) {
             case 0:
                 var0 = arg0;
@@ -1173,7 +1173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SET_FONT_SIZE = var9;
-    var9 = function(arg0) { // Original name: handleZoomTo, environment: var4
+    var9 = function arg0() {
         _fun14116: for (var _fun14116_ip = 0;;) switch (_fun14116_ip) {
             case 0:
                 var0 = arg0;
@@ -1225,7 +1225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SET_ZOOM = var9;
-    var9 = function() { // Original name: handleResetToDefault, environment: var4
+    var9 = function() {
         _fun14117: for (var _fun14117_ip = 0;;) switch (_fun14117_ip) {
             case 0:
                 var1 = _closure1_slot18;
@@ -1295,7 +1295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_RESET_TO_DEFAULT = var9;
-    var9 = function() { // Original name: handleEnableKeyboardMode, environment: var4
+    var9 = function() {
         _fun14118: for (var _fun14118_ip = 0;;) switch (_fun14118_ip) {
             case 0:
                 var1 = _closure1_slot18;
@@ -1320,7 +1320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_KEYBOARD_MODE_ENABLE = var9;
-    var9 = function() { // Original name: handleDisableKeyboardMode, environment: var4
+    var9 = function() {
         _fun14119: for (var _fun14119_ip = 0;;) switch (_fun14119_ip) {
             case 0:
                 var1 = _closure1_slot18;
@@ -1345,7 +1345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_KEYBOARD_MODE_DISABLE = var9;
-    var9 = function() { // Original name: handleToggleColorblindMode, environment: var4
+    var9 = function() {
         var1 = {};
         var3 = _closure1_slot18;
         var4 = var1;
@@ -1358,7 +1358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_COLORBLIND_TOGGLE = var9;
-    var9 = function() { // Original name: handleToggleLowContrastMode, environment: var4
+    var9 = function() {
         var1 = {};
         var3 = _closure1_slot18;
         var4 = var1;
@@ -1371,7 +1371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_LOW_CONTRAST_TOGGLE = var9;
-    var9 = function(arg0) { // Original name: handleSetSaturation, environment: var4
+    var9 = function arg0() {
         var1 = {};
         var3 = _closure1_slot18;
         var4 = var1;
@@ -1384,7 +1384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_SATURATION = var9;
-    var9 = function() { // Original name: handledesaturateUserColorsToggle, environment: var4
+    var9 = function() {
         var1 = {};
         var3 = _closure1_slot18;
         var4 = var1;
@@ -1397,7 +1397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_DESATURATE_ROLES_TOGGLE = var9;
-    var9 = function(arg0) { // Original name: handleSystemColorPreferencesChanged, environment: var4
+    var9 = function arg0() {
         _fun14124: for (var _fun14124_ip = 0;;) switch (_fun14124_ip) {
             case 0:
                 var1 = {};
@@ -1424,7 +1424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED = var9;
-    var9 = function(arg0) { // Original name: handleSystemPrefersContrastChanged, environment: var4
+    var9 = function arg0() {
         _fun14125: for (var _fun14125_ip = 0;;) switch (_fun14125_ip) {
             case 0:
                 var2 = arg0;
@@ -1452,7 +1452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED = var9;
-    var9 = function(arg0) { // Original name: handleSystemPrefersReducedMotionChanged, environment: var4
+    var9 = function arg0() {
         _fun14126: for (var _fun14126_ip = 0;;) switch (_fun14126_ip) {
             case 0:
                 var2 = arg0;
@@ -1480,7 +1480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED = var9;
-    var9 = function(arg0) { // Original name: handleSystemPrefersCrossfadesChanged, environment: var4
+    var9 = function arg0() {
         _fun14127: for (var _fun14127_ip = 0;;) switch (_fun14127_ip) {
             case 0:
                 var2 = arg0;
@@ -1508,7 +1508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED = var9;
-    var9 = function(arg0) { // Original name: handleSetPrefersReducedMotion, environment: var4
+    var9 = function arg0() {
         _fun14128: for (var _fun14128_ip = 0;;) switch (_fun14128_ip) {
             case 0:
                 var2 = arg0;
@@ -1536,7 +1536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION = var9;
-    var9 = function(arg0) { // Original name: handleSetSyncForcedColors, environment: var4
+    var9 = function arg0() {
         var1 = _closure1_slot18;
         var0 = arg0;
         var0 = var0.syncForcedColors;
@@ -1545,7 +1545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_SYNC_FORCED_COLORS = var9;
-    var9 = function(arg0) { // Original name: handleSetAlwaysShowLinkDecorations, environment: var4
+    var9 = function arg0() {
         var1 = {};
         var4 = _closure1_slot18;
         var5 = var1;
@@ -1559,7 +1559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS = var9;
-    var9 = function(arg0) { // Original name: handleSetEnableCustomCursor, environment: var4
+    var9 = function arg0() {
         var1 = {};
         var4 = _closure1_slot18;
         var5 = var1;
@@ -1573,7 +1573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR = var9;
-    var9 = function(arg0) { // Original name: handleSetRoleStyle, environment: var4
+    var9 = function arg0() {
         var1 = _closure1_slot18;
         var0 = arg0;
         var0 = var0.roleStyle;
@@ -1582,7 +1582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_ROLE_STYLE = var9;
-    var9 = function(arg0) { // Original name: handleSetDisplayNameStylesEnabled, environment: var4
+    var9 = function arg0() {
         var1 = _closure1_slot18;
         var0 = arg0;
         var0 = var0.enabled;
@@ -1591,7 +1591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED = var9;
-    var9 = function() { // Original name: handleForcedColorsModalSeen, environment: var4
+    var9 = function() {
         var1 = _closure1_slot18;
         var0 = true;
         var1.forcedColorsModalSeen = var0;
@@ -1599,7 +1599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN = var9;
-    var9 = function() { // Original name: handleKeyboardNavigationExplainerModalSeen, environment: var4
+    var9 = function() {
         var1 = {};
         var4 = _closure1_slot18;
         var5 = var1;
@@ -1612,7 +1612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN = var9;
-    var9 = function(arg0) { // Original name: handleMessageGroupSpacingChange, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.messageGroupSpacing;
         var1 = {};
@@ -1626,7 +1626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING = var9;
-    var9 = function() { // Original name: handleSubmitButtonToggle, environment: var4
+    var9 = function() {
         var1 = {};
         var3 = _closure1_slot18;
         var4 = var1;
@@ -1639,7 +1639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE = var9;
-    var9 = function() { // Original name: handleSyncProfileThemeWithUserThemeToggle, environment: var4
+    var9 = function() {
         var1 = {};
         var3 = _closure1_slot18;
         var4 = var1;
@@ -1652,7 +1652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE = var9;
-    var9 = function(arg0) { // Original name: handleSetContrast, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.contrast;
         var1 = {};
@@ -1666,7 +1666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_CONTRAST = var9;
-    var9 = function(arg0) { // Original name: handleSetContrastMode, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.contrastMode;
         var1 = {};
@@ -1680,7 +1680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACCESSIBILITY_SET_CONTRAST_MODE = var9;
-    var4 = function(arg0) { // Original name: handleSetSwitchIconsEnabled, environment: var4
+    var4 = function arg0() {
         var1 = {};
         var4 = _closure1_slot18;
         var5 = var1;

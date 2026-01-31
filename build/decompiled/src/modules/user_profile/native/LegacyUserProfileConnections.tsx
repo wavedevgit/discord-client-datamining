@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var9;
-    var5 = function(arg0) { // Original name: ConnectedUserAccount, environment: var6
+    var5 = function arg0() {
         _fun77723: for (var _fun77723_ip = 0;;) switch (_fun77723_ip) {
             case 0:
                 var3 = arg0;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.DOMAIN;
                             var3 = var4 !== var3;
                             var0.trusted = var3;
-                            var3 = function() { // Original name: onConfirm, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot0;
                                 var4 = _closure1_slot2;
                                 var0 = 28;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var4 = function(arg0) { // Original name: ConnectedApplicationUserRoleAccount, environment: var6
+    var4 = function arg0() {
         _fun77728: for (var _fun77728_ip = 0;;) switch (_fun77728_ip) {
             case 0:
                 var0 = arg0;
@@ -917,7 +917,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.t;
                 var16 = var15.zIT9YA;
                 var15 = {};
-                var19 = function() { // Original name: applicationHook, environment: var19
+                var19 = function() {
                     _fun77729: for (var _fun77729_ip = 0;;) switch (_fun77729_ip) {
                         case 0:
                             var3 = _closure1_slot15;
@@ -1020,7 +1020,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var3 = function(arg0, arg1) { // Original name: useAppplicationRoleConnectionItems, environment: var6
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useConnectedAccountItems, environment: var6
+    var1 = function arg0, arg1, arg2() {
         var3 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -1439,7 +1439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/user_profile/native/LegacyUserProfileConnections.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function(arg0) { // Original name: LegacyUserProfileConnections, environment: var6
+    var6 = function arg0() {
         _fun77737: for (var _fun77737_ip = 0;;) switch (_fun77737_ip) {
             case 0:
                 var0 = arg0;

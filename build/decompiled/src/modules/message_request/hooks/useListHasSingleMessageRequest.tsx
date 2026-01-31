@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/hooks/useListHasSingleMessageRequest.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useListHasSingleMessageRequest, environment: var1
+    var3 = function() {
         _fun109518: for (var _fun109518_ip = 0;;) switch (_fun109518_ip) {
             case 0:
                 var7 = _closure1_slot0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useListHasSingleMessageRequest = var3;
-    var1 = function() { // Original name: useListHasSingleSpamMessageRequest, environment: var1
+    var1 = function() {
         _fun109521: for (var _fun109521_ip = 0;;) switch (_fun109521_ip) {
             case 0:
                 var7 = _closure1_slot0;

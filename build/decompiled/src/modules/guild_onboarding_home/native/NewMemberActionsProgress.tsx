@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ProgressBar, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.percent;
         var0 = _closure1_slot12;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/NewMemberActionsProgress.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NewMemberActionsProgress, environment: var1
+    var1 = function arg0() {
         _fun102155: for (var _fun102155_ip = 0;;) switch (_fun102155_ip) {
             case 0:
                 var0 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var7 = var13.container;
                 var1.style = var7;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 14;

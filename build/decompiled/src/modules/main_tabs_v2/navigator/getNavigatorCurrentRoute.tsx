@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/navigator/getNavigatorCurrentRoute.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getNavigatorCurrentRoute, environment: var1
+    var1 = function() {
         _fun61772: for (var _fun61772_ip = 0;;) switch (_fun61772_ip) {
             case 0:
                 var3 = arguments[0];

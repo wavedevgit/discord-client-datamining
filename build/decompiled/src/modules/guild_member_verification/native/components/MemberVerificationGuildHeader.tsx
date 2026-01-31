@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/MemberVerificationGuildHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberVerificationGuildHeader, environment: var1
+    var1 = function arg0() {
         _fun60314: for (var _fun60314_ip = 0;;) switch (_fun60314_ip) {
             case 0:
                 var1 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7[var6];
                 var4 = var8.bind(var3)(var1);
                 var2 = var4.useDerivedValue;
-                var1 = function() { // Original name: N, environment: var0
+                var1 = function() {
                     var1 = _closure2_slot0;
                     var0 = var1.get;
                     var1 = var0.bind(var1)();
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7[var6];
                 var4 = var8.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: I, environment: var0
+                var1 = function() {
                     var0 = {};
                     var1 = '100%';
                     var0.width = var1;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7[var6];
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: b, environment: var0
+                var0 = function() {
                     var0 = {};
                     var2 = {};
                     var7 = _closure1_slot0;

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterSettingsControls.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterSettingsControls, environment: var1
+    var1 = function() {
         _fun81971: for (var _fun81971_ip = 0;;) switch (_fun81971_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun81971
                 }
             case 103:
-                var0 = function(arg0) { // Original name: handleSettingsClick, environment: var12
+                var0 = function arg0() {
                     var3 = _closure2_slot1;
                     var2 = var3.navigate;
                     var0 = _closure1_slot5;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot2 = var0;
-                var0 = function() { // Original name: handleOpenSettings, environment: var12
+                var0 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.navigate;
                     var0 = _closure1_slot5;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21["+o1pDZ"];
                 var21 = var23.bind(var24)(var21);
                 var16.label = var21;
-                var21 = function() { // Original name: onPress, environment: var12
+                var21 = function() {
                     var2 = _closure2_slot2;
                     var0 = _closure1_slot4;
                     var1 = var0.CONTENT_AND_SOCIAL;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var22.OAuOHD;
                 var22 = var23.bind(var24)(var22);
                 var18.label = var22;
-                var22 = function() { // Original name: onPress, environment: var12
+                var22 = function() {
                     var2 = _closure2_slot2;
                     var0 = _closure1_slot4;
                     var1 = var0.DATA_AND_PRIVACY;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var14.bind(var3)(var22);
                 var23 = var22.X9rW0j;
                 var22 = {};
-                var26 = function(arg0, arg1) { // Original name: openSettingsHook, environment: var12
+                var26 = function arg0, arg1() {
                     var4 = _closure1_slot6;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.count = var17;
                 var13 = var15.bind(var16)(var14, var13);
                 var9.text = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 12;

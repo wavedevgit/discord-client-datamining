@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: requestFreezeLock, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot5;
         var0 = var1.getState;
         var2 = var0.bind(var1)();
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/external_pip/ExternalPipView.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ExternalPipView, environment: var1
+    var1 = function() {
         _fun110201: for (var _fun110201_ip = 0;;) switch (_fun110201_ip) {
             case 0:
                 var6 = _closure1_slot1;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var3 = var2.externalPipEnabled;
                 var _closure2_slot0 = var3;
-                var2 = function() { // Original name: useExternalPipActive, environment: var0
+                var2 = function() {
                     var5 = _closure1_slot4;
                     var3 = var5.useState;
                     var2 = false;

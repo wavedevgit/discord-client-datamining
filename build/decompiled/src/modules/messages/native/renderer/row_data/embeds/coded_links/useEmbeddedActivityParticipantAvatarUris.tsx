@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useEmbeddedActivityParticipantAvatarUris, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.activity;
         var _closure2_slot0 = var1;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getEmbeddedActivityParticipantAvatarUris, environment: var1
+    var1 = function arg0() {
         _fun92334: for (var _fun92334_ip = 0;;) switch (_fun92334_ip) {
             case 0:
                 var1 = arg0;

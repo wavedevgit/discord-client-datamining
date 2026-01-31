@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var2 = dependencyMap;
     var _closure1_slot2 = var2;
-    var5 = function(arg0, arg1, arg2) { // Original name: registerComponent, environment: var0
+    var5 = function arg0, arg1, arg2() {
         _fun3266: for (var _fun3266_ip = 0;;) switch (_fun3266_ip) {
             case 0:
                 var0 = arg0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0, arg1) { // Original name: registerRunnable, environment: var0
+    var4 = function arg0, arg1() {
         var0 = arg0;
         var2 = _closure1_slot5;
         var1 = arg1;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot11 = var4;
-    var3 = function() { // Original name: getSectionKeys, environment: var0
+    var3 = function() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.keys;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot12 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: registerCancellableHeadlessTask, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun3270: for (var _fun3270_ip = 0;;) switch (_fun3270_ip) {
             case 0:
                 var3 = arg0;
@@ -176,28 +176,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = new var14[var6](var13);
     var6 = var6 instanceof Object ? var6 : var7;
     var _closure1_slot8 = var6;
-    var6 = function(arg0) { // Original name: componentProviderInstrumentationHook, environment: var0
+    var6 = function arg0() {
         var1 = arg0;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var _closure1_slot9 = var6;
-    var6 = function(arg0) { // Original name: setWrapperComponentProvider, environment: var0
+    var6 = function arg0() {
         var0 = arg0;
         var _closure1_slot3 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setWrapperComponentProvider = var6;
-    var6 = function(arg0) { // Original name: setRootViewStyleProvider, environment: var0
+    var6 = function arg0() {
         var0 = arg0;
         var _closure1_slot4 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setRootViewStyleProvider = var6;
-    var6 = function(arg0) { // Original name: registerConfig, environment: var0
+    var6 = function arg0() {
         var2 = arg0;
         var1 = var2.forEach;
         var0 = function(arg0) { // Environment: var0
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.registerConfig = var6;
     var1.registerComponent = var5;
     var1.registerRunnable = var4;
-    var4 = function(arg0, arg1) { // Original name: registerSection, environment: var0
+    var4 = function arg0, arg1() {
         var4 = _closure1_slot10;
         var0 = undefined;
         var3 = arg0;
@@ -257,7 +257,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.registerSection = var4;
-    var4 = function() { // Original name: getAppKeys, environment: var0
+    var4 = function() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.keys;
@@ -267,7 +267,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getAppKeys = var4;
     var1.getSectionKeys = var3;
-    var3 = function() { // Original name: getSections, environment: var0
+    var3 = function() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.assign;
@@ -277,14 +277,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getSections = var3;
-    var3 = function(arg0) { // Original name: getRunnable, environment: var0
+    var3 = function arg0() {
         var1 = _closure1_slot5;
         var0 = arg0;
         var0 = var1[var0];
         return var0;
     };
     var1.getRunnable = var3;
-    var3 = function() { // Original name: getRegistry, environment: var0
+    var3 = function() {
         var0 = {};
         var3 = _closure1_slot12;
         var2 = undefined;
@@ -300,14 +300,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getRegistry = var3;
-    var3 = function(arg0) { // Original name: setComponentProviderInstrumentationHook, environment: var0
+    var3 = function arg0() {
         var0 = arg0;
         _closure1_slot9 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setComponentProviderInstrumentationHook = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: runApplication, environment: var0
+    var3 = function arg0, arg1, arg2() {
         _fun3282: for (var _fun3282_ip = 0;;) switch (_fun3282_ip) {
             case 0:
                 var2 = arg0;
@@ -364,7 +364,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.runApplication = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setSurfaceProps, environment: var0
+    var3 = function arg0, arg1, arg2() {
         _fun3283: for (var _fun3283_ip = 0;;) switch (_fun3283_ip) {
             case 0:
                 var2 = arg0;
@@ -417,7 +417,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.setSurfaceProps = var3;
-    var3 = function(arg0) { // Original name: unmountApplicationComponentAtRootTag, environment: var0
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -430,7 +430,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.unmountApplicationComponentAtRootTag = var3;
-    var3 = function(arg0, arg1) { // Original name: registerHeadlessTask, environment: var0
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot13;
         var0 = undefined;
         var3 = arg0;
@@ -447,7 +447,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.registerHeadlessTask = var3;
     var1.registerCancellableHeadlessTask = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: startHeadlessTask, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun3288: for (var _fun3288_ip = 0;;) switch (_fun3288_ip) {
             case 0:
                 var5 = arg0;
@@ -594,7 +594,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.startHeadlessTask = var2;
-    var0 = function(arg0, arg1) { // Original name: cancelHeadlessTask, environment: var0
+    var0 = function arg0, arg1() {
         _fun3292: for (var _fun3292_ip = 0;;) switch (_fun3292_ip) {
             case 0:
                 var5 = arg1;

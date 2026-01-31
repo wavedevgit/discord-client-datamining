@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/a11y/native/markAccessibilityFocus.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: markAccessibilityFocus, environment: var1
+    var1 = function() {
         _fun92881: for (var _fun92881_ip = 0;;) switch (_fun92881_ip) {
             case 0:
                 var3 = _closure1_slot0;

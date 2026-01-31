@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/native/GuildHighlightsNotificationsActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: openGuildHighlightNotificationForPush, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = arg1;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.label = var9;
         var7[4] = var8;
         var1.reasons = var7;
-        var7 = function() { // Original name: onFeedbackShown, environment: var6
+        var7 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 6;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.onFeedbackShown = var7;
-        var6 = function(arg0) { // Original name: onFeedbackCompleted, environment: var6
+        var6 = function arg0() {
             _fun76207: for (var _fun76207_ip = 0;;) switch (_fun76207_ip) {
                 case 0:
                     var0 = arg0;

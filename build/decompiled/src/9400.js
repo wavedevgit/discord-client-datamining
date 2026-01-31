@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot2 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: isAutoFillData, environment: var0
+        var0 = function arg0() {
             _fun74819: for (var _fun74819_ip = 0;;) switch (_fun74819_ip) {
                 case 0:
                     var1 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: convertToSharedIndex, environment: var0
+        var0 = function arg0() {
             _fun74821: for (var _fun74821_ip = 0;;) switch (_fun74821_ip) {
                 case 0:
                     var0 = arg0;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var5;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: computedOffsetXValueWithAutoFillData, environment: var0
+        var0 = function arg0() {
             _fun74823: for (var _fun74823_ip = 0;;) switch (_fun74823_ip) {
                 case 0:
                     var2 = arg0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)();
     var2.convertToSharedIndex = var4;
     var2.computedOffsetXValueWithAutoFillData = var3;
-    var3 = function(arg0) { // Original name: computedRealIndexWithAutoFillData, environment: var1
+    var3 = function arg0() {
         _fun74824: for (var _fun74824_ip = 0;;) switch (_fun74824_ip) {
             case 0:
                 var0 = arg0;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.computedRealIndexWithAutoFillData = var3;
-    var1 = function(arg0) { // Original name: computedFillDataWithAutoFillData, environment: var1
+    var1 = function arg0() {
         _fun74825: for (var _fun74825_ip = 0;;) switch (_fun74825_ip) {
             case 0:
                 var0 = arg0;

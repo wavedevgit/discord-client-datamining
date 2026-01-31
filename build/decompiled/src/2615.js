@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0) { // Original name: special, environment: var2
+    var0 = function arg0() {
         _fun21994: for (var _fun21994_ip = 0;;) switch (_fun21994_ip) {
             case 0:
                 var3 = arg0;
@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: forms, environment: var2
+    var0 = function arg0() {
         var1 = _closure1_slot0;
         var0 = arg0;
         var2 = var1[var0];
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'lessthan': 'mažiau nei'
     };
     var _closure1_slot0 = var3;
-    var7 = function(arg0, arg1, arg2, arg3) { // Original name: translateSeconds, environment: var2
+    var7 = function arg0, arg1, arg2, arg3() {
         _fun21996: for (var _fun21996_ip = 0;;) switch (_fun21996_ip) {
             case 0:
                 var0 = 'kelios sekundės';
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: translateSingular, environment: var2
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun21997: for (var _fun21997_ip = 0;;) switch (_fun21997_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var6;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: translate, environment: var2
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun21998: for (var _fun21998_ip = 0;;) switch (_fun21998_ip) {
             case 0:
                 var8 = arg0;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.other = var5;
     var3.almostXYears = var4;
     var _closure1_slot2 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun21999: for (var _fun21999_ip = 0;;) switch (_fun21999_ip) {
             case 0:
                 var4 = arg0;

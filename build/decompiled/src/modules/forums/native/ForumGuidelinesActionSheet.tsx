@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ForumGuidelinesActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ForumGuidelinesActionSheet, environment: var1
+    var3 = function arg0() {
         _fun73774: for (var _fun73774_ip = 0;;) switch (_fun73774_ip) {
             case 0:
                 var1 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1 = var4.bind(var6)(var1, var2);
-                var9 = function() { // Original name: handlePress, environment: var0
+                var9 = function() {
                     _fun73778: for (var _fun73778_ip = 0;;) switch (_fun73778_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: openForumGuidelinesActionSheet, environment: var1
+    var1 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 12;

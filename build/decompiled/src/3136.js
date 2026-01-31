@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1, arg2) { // Original name: useRivePropertyListener, environment: var4
+    var0 = function arg0, arg1, arg2() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg2;
@@ -398,7 +398,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot17 = var3;
     var3 = function() { // Environment: var4
         var3 = _closure1_slot6;
-        var2 = function(arg0, arg1) { // Original name: RiveNativeEventEmitter, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var3 = _closure1_slot5;
             var1 = _closure2_slot0;
@@ -418,7 +418,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'addListener';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2, arg3) { // Original name: addListener, environment: var4
+        var1 = function arg0, arg1, arg2, arg3() {
             _fun27336: for (var _fun27336_ip = 0;;) switch (_fun27336_ip) {
                 case 0:
                     var8 = arg0;
@@ -537,7 +537,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'generatePropertyKey';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: generatePropertyKey, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 7;
@@ -564,7 +564,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'removeListener';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2, arg3) { // Original name: removeListener, environment: var4
+        var4 = function arg0, arg1, arg2, arg3() {
             _fun27340: for (var _fun27340_ip = 0;;) switch (_fun27340_ip) {
                 case 0:
                     var5 = arg2;
@@ -2463,7 +2463,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var2 = var11.bind(var3)(var6, var2, var7);
-                var0 = function(arg0) { // Original name: transformFilesHandledMapping, environment: var0
+                var0 = function arg0() {
                     _fun27396: for (var _fun27396_ip = 0;;) switch (_fun27396_ip) {
                         case 0:
                             var4 = arg0;
@@ -2584,7 +2584,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot22 = var7;
     var2.default = var6;
     var2.RiveNativeEventEmitter = var5;
-    var5 = function() { // Original name: useRive, environment: var4
+    var5 = function() {
         var3 = _closure1_slot12;
         var4 = undefined;
         var1 = null;
@@ -2676,7 +2676,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useRive = var5;
-    var5 = function(arg0, arg1) { // Original name: useRiveBoolean, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot23;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -2692,7 +2692,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useRiveBoolean = var5;
-    var5 = function(arg0, arg1) { // Original name: useRiveString, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot23;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -2708,7 +2708,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useRiveString = var5;
-    var5 = function(arg0, arg1) { // Original name: useRiveNumber, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot23;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -2724,7 +2724,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useRiveNumber = var5;
-    var5 = function(arg0, arg1) { // Original name: useRiveEnum, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot23;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -2740,7 +2740,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useRiveEnum = var5;
-    var5 = function(arg0, arg1) { // Original name: useRiveColor, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot23;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -2756,7 +2756,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useRiveColor = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: useRiveTrigger, environment: var4
+    var4 = function arg0, arg1, arg2() {
         _fun27406: for (var _fun27406_ip = 0;;) switch (_fun27406_ip) {
             case 0:
                 var2 = arg0;

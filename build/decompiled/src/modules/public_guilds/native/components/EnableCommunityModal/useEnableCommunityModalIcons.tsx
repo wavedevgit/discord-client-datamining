@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: EnableCommunityModalIcons, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var4 = _closure1_slot4;
             var3 = _closure2_slot0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'safetyCheck';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             _fun116288: for (var _fun116288_ip = 0;;) switch (_fun116288_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'channelSetup';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 8;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'finishingTouches';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun116290: for (var _fun116290_ip = 0;;) switch (_fun116290_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'close';
         var0.key = var5;
-        var4 = function() { // Original name: get, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 11;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useEnableCommunityModalIcons, environment: var1
+    var1 = function() {
         var4 = _closure1_slot1;
         var3 = _closure1_slot2;
         var2 = 12;

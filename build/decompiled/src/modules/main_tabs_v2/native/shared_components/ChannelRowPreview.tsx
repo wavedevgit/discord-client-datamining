@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: PreviewIcon, environment: var1
+    var0 = function arg0() {
         _fun69940: for (var _fun69940_ip = 0;;) switch (_fun69940_ip) {
             case 0:
                 var3 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var3 = function(arg0) { // Original name: ChannelRowPreview, environment: var1
+    var3 = function arg0() {
         _fun69941: for (var _fun69941_ip = 0;;) switch (_fun69941_ip) {
             case 0:
                 var1 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var0 = function(arg0) { // Original name: DefaultNative, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.message;
         var1 = var0.lineClamp;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'pointerEvents': 'none',
             'horizontalOffset': 0
         };
-        var8 = function(arg0) { // Original name: modifyRow, environment: var8
+        var8 = function arg0() {
             _fun69945: for (var _fun69945_ip = 0;;) switch (_fun69945_ip) {
                 case 0:
                     var2 = arg0;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: baseIsNaN, environment: var0
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0 != var0;
         return var0;

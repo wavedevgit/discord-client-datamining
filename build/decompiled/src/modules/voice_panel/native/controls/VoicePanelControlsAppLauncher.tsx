@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelControlsAppLauncher, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var26 = var1.gestureSpecs;
         var _closure2_slot0 = var26;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var15[var4];
         var6 = var14.bind(var3)(var1);
         var2 = var6.useDerivedValue;
-        var1 = function() { // Original name: y, environment: var0
+        var1 = function() {
             var1 = _closure2_slot0;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var15[var4];
         var6 = var14.bind(var3)(var1);
         var2 = var6.useDerivedValue;
-        var1 = function() { // Original name: E, environment: var0
+        var1 = function() {
             var1 = _closure2_slot0;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var15[var4];
         var2 = var14.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: L, environment: var0
+        var0 = function() {
             _fun111707: for (var _fun111707_ip = 0;;) switch (_fun111707_ip) {
                 case 0:
                     var0 = {};

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var1;
-    var0 = function(arg0, arg1) { // Original name: fraction, environment: var3
+    var0 = function arg0, arg1() {
         _fun38236: for (var _fun38236_ip = 0;;) switch (_fun38236_ip) {
             case 0:
                 var4 = arg1;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: isFraction, environment: var3
+    var0 = function arg0() {
         var2 = /^-?\d+\\/ - ? \d + $ / ;
         var1 = var2.test;
         var0 = arg0;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var0;
-    var4 = function(arg0) { // Original name: calculateGPSValue, environment: var3
+    var4 = function arg0() {
         _fun38238: for (var _fun38238_ip = 0;;) switch (_fun38238_ip) {
             case 0:
                 var0 = arg0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var5.bind(var0)(var1);
     var _closure1_slot2 = var1;
     var1 = {};
-    var5 = function(arg0) { // Original name: tiffOrientation, environment: var3
+    var5 = function arg0() {
         _fun38239: for (var _fun38239_ip = 0;;) switch (_fun38239_ip) {
             case 0:
                 var8 = arg0;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1['tiff:Orientation'] = var5;
-    var5 = function(arg0) { // Original name: tiffResolutionUnit, environment: var3
+    var5 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['tiff:ResolutionUnit'] = var5;
-    var5 = function(arg0) { // Original name: tiffXResolution, environment: var3
+    var5 = function arg0() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['tiff:XResolution'] = var5;
-    var5 = function(arg0) { // Original name: tiffYResolution, environment: var3
+    var5 = function arg0() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -235,7 +235,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['tiff:YResolution'] = var5;
-    var5 = function(arg0) { // Original name: exifApertureValue, environment: var3
+    var5 = function arg0() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1['exif:ApertureValue'] = var5;
     var1['exif:GPSLatitude'] = var4;
     var1['exif:GPSLongitude'] = var4;
-    var4 = function(arg0) { // Original name: exifFNumber, environment: var3
+    var4 = function arg0() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:FNumber'] = var4;
-    var4 = function(arg0) { // Original name: exifFocalLength, environment: var3
+    var4 = function arg0() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -279,7 +279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:FocalLength'] = var4;
-    var4 = function(arg0) { // Original name: exifFocalPlaneResolutionUnit, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -296,7 +296,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:FocalPlaneResolutionUnit'] = var4;
-    var4 = function(arg0) { // Original name: exifColorSpace, environment: var3
+    var4 = function arg0() {
         _fun38247: for (var _fun38247_ip = 0;;) switch (_fun38247_ip) {
             case 0:
                 var7 = arg0;
@@ -336,7 +336,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1['exif:ColorSpace'] = var4;
-    var4 = function(arg0, arg1) { // Original name: exifComponentsConfiguration, environment: var3
+    var4 = function arg0, arg1() {
         _fun38248: for (var _fun38248_ip = 0;;) switch (_fun38248_ip) {
             case 0:
                 var2 = arg1;
@@ -374,7 +374,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1['exif:ComponentsConfiguration'] = var4;
-    var4 = function(arg0) { // Original name: exifContrast, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -391,7 +391,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:Contrast'] = var4;
-    var4 = function(arg0) { // Original name: exifCustomRendered, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -408,7 +408,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:CustomRendered'] = var4;
-    var4 = function(arg0) { // Original name: exifExposureMode, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -425,7 +425,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:ExposureMode'] = var4;
-    var4 = function(arg0) { // Original name: exifExposureProgram, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -442,7 +442,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:ExposureProgram'] = var4;
-    var4 = function(arg0) { // Original name: exifExposureTime, environment: var3
+    var4 = function arg0() {
         _fun38254: for (var _fun38254_ip = 0;;) switch (_fun38254_ip) {
             case 0:
                 var5 = arg0;
@@ -481,7 +481,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1['exif:ExposureTime'] = var4;
-    var4 = function(arg0) { // Original name: exifMeteringMode, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -498,7 +498,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:MeteringMode'] = var4;
-    var4 = function(arg0) { // Original name: exifSaturation, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -515,7 +515,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:Saturation'] = var4;
-    var4 = function(arg0) { // Original name: exifSceneCaptureType, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:SceneCaptureType'] = var4;
-    var4 = function(arg0) { // Original name: exifSharpness, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -549,7 +549,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:Sharpness'] = var4;
-    var4 = function(arg0) { // Original name: exifShutterSpeedValue, environment: var3
+    var4 = function arg0() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -563,7 +563,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1['exif:ShutterSpeedValue'] = var4;
-    var3 = function(arg0) { // Original name: exifWhiteBalance, environment: var3
+    var3 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

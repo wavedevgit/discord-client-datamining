@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VoicePanelNoVideoParticipantsCard, environment: var1
+    var1 = function() {
         var6 = _closure1_slot3;
         var4 = var6.useContext;
         var1 = _closure1_slot1;

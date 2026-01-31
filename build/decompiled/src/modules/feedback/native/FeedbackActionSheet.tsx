@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: closeActionSheet, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/feedback/native/FeedbackActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FeedbackActionSheet, environment: var1
+    var1 = function arg0() {
         _fun76300: for (var _fun76300_ip = 0;;) switch (_fun76300_ip) {
             case 0:
                 var0 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.label = var6;
                             var6 = 2;
                             var2.labelLineClamp = var6;
-                            var1 = function() { // Original name: onPress, environment: var1
+                            var1 = function() {
                                 var2 = _closure2_slot17;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13["5E9SB9"];
                 var13 = var14.bind(var15)(var13);
                 var9.label = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure2_slot16;
                     var0 = _closure2_slot15;
                     var1 = !var0;

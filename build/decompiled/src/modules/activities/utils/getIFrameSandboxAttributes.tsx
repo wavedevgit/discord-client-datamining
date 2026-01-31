@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/getIFrameSandboxAttributes.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getIFrameSandboxAttributes, environment: var1
+    var1 = function arg0() {
         _fun64690: for (var _fun64690_ip = 0;;) switch (_fun64690_ip) {
             case 0:
                 var0 = arg0;

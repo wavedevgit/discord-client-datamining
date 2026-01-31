@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: shouldTrackViewedEvent, environment: var7
+    var0 = function arg0() {
         _fun101450: for (var _fun101450_ip = 0;;) switch (_fun101450_ip) {
             case 0:
                 var1 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.data = var6;
                 var11.isFocused = var1;
                 var11.loading = var9;
-                var2 = function(arg0, arg1) { // Original name: useTrackActivityCardsView, environment: var0
+                var2 = function arg0, arg1() {
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     var0 = arg1;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3 = var4.bind(var8)(var3);
-    var4 = function(arg0, arg1) { // Original name: renderCard, environment: var7
+    var4 = function arg0, arg1() {
         _fun101468: for (var _fun101468_ip = 0;;) switch (_fun101468_ip) {
             case 0:
                 var5 = arg0;
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var4 = function(arg0) { // Original name: keyExtractor, environment: var7
+    var4 = function arg0() {
         _fun101469: for (var _fun101469_ip = 0;;) switch (_fun101469_ip) {
             case 0:
                 var0 = arg0;
@@ -1295,7 +1295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var4 = function(arg0, arg1) { // Original name: overrideItemLayout, environment: var7
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 19;
@@ -1310,7 +1310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var4;
-    var4 = function(arg0) { // Original name: getItemType, environment: var7
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.kind;
         return var0;

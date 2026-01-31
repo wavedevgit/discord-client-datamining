@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.whiteSVG = var8;
     var1.icon = var7;
     var1.enabled = var10;
-    var7 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.whiteSVG = var12;
     var1.icon = var8;
     var1.enabled = var10;
-    var8 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var8.whiteSVG = var12;
     var1.icon = var8;
-    var8 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.icon = var8;
     var8 = false;
     var1.enabled = var8;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12.whiteSVG = var13;
     var1.icon = var12;
     var1.enabled = var10;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.enabled = var10;
     var12 = ['reddit.com'];
     var1.domains = var12;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12.whiteSVG = var13;
     var1.icon = var12;
     var1.enabled = var8;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12.whiteSVG = var13;
     var1.icon = var12;
     var1.enabled = var10;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12.whiteSVG = var13;
     var1.icon = var12;
     var1.enabled = var10;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12.whiteSVG = var13;
     var1.icon = var12;
     var1.enabled = var10;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12.whiteSVG = var13;
     var1.icon = var12;
     var1.enabled = var10;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -1030,7 +1030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var4.bind(var0)(var13);
     var12.whiteSVG = var13;
     var1.icon = var12;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -1080,7 +1080,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.icon = var12;
     var12 = ['tiktok.com'];
     var1.domains = var12;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.enabled = var8;
     var12 = ['instagram.com'];
     var1.domains = var12;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var3 = var0.name;
         var0 = global;
@@ -1177,7 +1177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var4.bind(var0)(var13);
     var12.whiteSVG = var13;
     var1.icon = var12;
-    var12 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var0 = var0.id;
         return var0;
@@ -1249,7 +1249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var11.whiteSVG = var12;
     var1.icon = var11;
-    var11 = function(arg0) { // Original name: getPlatformUserUrl, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var3 = var0.id;
         var0 = global;
@@ -1365,7 +1365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1 = var6.bind(var7)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: get, environment: var3
+    var6 = function arg0() {
         _fun40461: for (var _fun40461_ip = 0;;) switch (_fun40461_ip) {
             case 0:
                 var1 = _closure1_slot3;
@@ -1384,7 +1384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.get = var6;
-    var6 = function(arg0) { // Original name: getByUrl, environment: var3
+    var6 = function arg0() {
         _fun40462: for (var _fun40462_ip = 0;;) switch (_fun40462_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -1424,7 +1424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getByUrl = var6;
-    var6 = function(arg0) { // Original name: isSupported, environment: var3
+    var6 = function arg0() {
         var0 = global;
         var0 = var0.Object;
         var0 = var0.prototype;
@@ -1436,7 +1436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isSupported = var6;
-    var6 = function(arg0) { // Original name: map, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.map;
         var0 = arg0;
@@ -1444,7 +1444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.map = var6;
-    var6 = function(arg0) { // Original name: filter, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.filter;
         var0 = arg0;
@@ -1463,7 +1463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.filter = var6;
-    var3 = function(arg0) { // Original name: find, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.find;
         var0 = arg0;

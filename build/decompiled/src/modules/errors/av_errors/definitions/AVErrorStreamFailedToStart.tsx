@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ApplicationStreamStates;
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: getActiveErrors, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var3 = var1.activeStreams;
         var2 = var3.filter;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getActiveErrors = var6;
-    var3 = function(arg0) { // Original name: makeErrorContextKey, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.streamKey;
         var3 = var0.mediaSessionId;

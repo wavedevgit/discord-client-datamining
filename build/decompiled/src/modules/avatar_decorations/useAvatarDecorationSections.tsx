@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/avatar_decorations/useAvatarDecorationSections.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function() { // Original name: _default, environment: var5
+    var5 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var2 = 4;

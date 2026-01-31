@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/status/StatusUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getAnimatedTypingTranslateX, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = 2;
         var1 = var1 / var0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAnimatedTypingTranslateX = var3;
-    var3 = function(arg0) { // Original name: getMobileStatusContainerRect, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var2 = _closure1_slot0;
         var1 = 2;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getMobileStatusContainerRect = var3;
-    var1 = function(arg0) { // Original name: getStatusTypingDimensions, environment: var1
+    var1 = function arg0() {
         _fun48946: for (var _fun48946_ip = 0;;) switch (_fun48946_ip) {
             case 0:
                 var2 = arg0;

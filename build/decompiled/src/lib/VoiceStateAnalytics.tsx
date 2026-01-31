@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1) { // Original name: VoiceStateAnalytics, environment: var4
+        var2 = function arg0, arg1() {
             var3 = this;
             var4 = _closure1_slot2;
             var2 = _closure2_slot0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'updateVoiceStates';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun93941: for (var _fun93941_ip = 0;;) switch (_fun93941_ip) {
                 case 0:
                     var3 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getStats';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = {};
             var2 = var1.maxVoiceStateCount;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getUserVoiceSettingsStats';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var4 = _closure1_slot4;
             var3 = var4.getSettings;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setSpeaking';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun93944: for (var _fun93944_ip = 0;;) switch (_fun93944_ip) {
                 case 0:
                     var5 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setChannelId';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun93948: for (var _fun93948_ip = 0;;) switch (_fun93948_ip) {
                 case 0:
                     var0 = arg0;

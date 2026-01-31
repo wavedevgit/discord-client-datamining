@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun54065: for (var _fun54065_ip = 0;;) switch (_fun54065_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun54067: for (var _fun54067_ip = 0;;) switch (_fun54067_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun54068: for (var _fun54068_ip = 0;;) switch (_fun54068_ip) {
             case 0:
             case 2: // try_start_0
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateGuildTemplate, environment: var3
+    var0 = function arg0, arg1() {
         _fun54071: for (var _fun54071_ip = 0;;) switch (_fun54071_ip) {
             case 0:
                 var3 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var9 = function(arg0) { // Original name: handleGuildTemplateResolveSuccess, environment: var3
+    var9 = function arg0() {
         var2 = _closure1_slot14;
         var0 = arg0;
         var1 = var0.guildTemplate;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var0)(var1);
         return var0;
     };
-    var0 = function(arg0) { // Original name: resolveGuildTemplate, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot13;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var8 = function(arg0) { // Original name: handleGuildTemplateResolveFailure, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot13;
         var0 = arg0;
         var2 = var0.code;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildTemplateStore, environment: var5
+        var3 = function() {
             _fun54078: for (var _fun54078_ip = 0;;) switch (_fun54078_ip) {
                 case 0:
                     var3 = this;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getGuildTemplate';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun54079: for (var _fun54079_ip = 0;;) switch (_fun54079_ip) {
                 case 0:
                     var2 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildTemplates';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun54081: for (var _fun54081_ip = 0;;) switch (_fun54081_ip) {
                 case 0:
                     var8 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDisplayedGuildTemplateCode';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var14 = var6.bind(var0)(var1);
     var1 = {};
-    var10 = function(arg0) { // Original name: handleGuildTemplateResolve, environment: var3
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.code;
         var0 = global;
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_TEMPLATE_CREATE_SUCCESS = var9;
     var1.GUILD_TEMPLATE_SYNC_SUCCESS = var9;
     var1.GUILD_TEMPLATE_RESOLVE_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleGuildTemplateLoadForGuildSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildTemplates;
         var1 = var2.forEach;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS = var9;
     var1.GUILD_TEMPLATE_RESOLVE_FAILURE = var8;
     var1.GUILD_TEMPLATE_DELETE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleGuildTemplateAccept, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot13;
         var0 = arg0;
         var2 = var0.code;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_TEMPLATE_ACCEPT = var8;
-    var8 = function(arg0) { // Original name: handleGuildTemplateAcceptSuccess, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot13;
         var0 = arg0;
         var2 = var0.code;
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_TEMPLATE_ACCEPT_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleAcceptInviteFailure, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot13;
         var0 = arg0;
         var2 = var0.code;
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_TEMPLATE_ACCEPT_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleGuildTemplateModalShow, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.code;
         _closure1_slot9 = var1;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_TEMPLATE_MODAL_SHOW = var8;
-    var3 = function() { // Original name: handleGuildTemplateModalHide, environment: var3
+    var3 = function() {
         var0 = null;
         _closure1_slot9 = var0;
         var0 = undefined;

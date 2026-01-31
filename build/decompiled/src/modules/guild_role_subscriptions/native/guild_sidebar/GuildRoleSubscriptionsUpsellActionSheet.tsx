@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionsUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = true;
         var0.startExpanded = var5;
-        var5 = function() { // Original name: onDismiss, environment: var13
+        var5 = function() {
             var2 = _closure2_slot1;
             var0 = _closure1_slot4;
             var1 = var0.UNKNOWN;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var11[var9];
         var6 = var10.bind(var3)(var5);
         var5 = {};
-        var14 = function() { // Original name: onPress, environment: var13
+        var14 = function() {
             var4 = _closure2_slot1;
             var0 = _closure1_slot4;
             var3 = var0.UNKNOWN;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var11[var9];
         var6 = var10.bind(var3)(var5);
         var5 = {};
-        var13 = function() { // Original name: onPress, environment: var13
+        var13 = function() {
             var2 = _closure2_slot1;
             var0 = _closure1_slot4;
             var1 = var0.UNKNOWN;

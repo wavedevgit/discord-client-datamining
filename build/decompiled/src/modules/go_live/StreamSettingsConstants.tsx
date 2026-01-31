@@ -6,14 +6,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var16 = dependencyMap;
     var _closure1_slot0 = var15;
     var _closure1_slot1 = var16;
-    var19 = function(arg0, arg1, arg2) { // Original name: makeButton, environment: var10
+    var19 = function arg0, arg1, arg2() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var0 = arg1;
         var _closure2_slot1 = var0;
         var0 = {};
         var0.value = var2;
-        var4 = function() { // Original name: get label, environment: var1
+        var4 = function() {
             _fun30783: for (var _fun30783_ip = 0;;) switch (_fun30783_ip) {
                 case 0:
                     var2 = _closure2_slot1;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             set: var3,
             enumerable: true
         });
-        var2 = function() { // Original name: get subtext, environment: var1
+        var2 = function() {
             _fun30784: for (var _fun30784_ip = 0;;) switch (_fun30784_ip) {
                 case 0:
                     var2 = _closure2_slot2;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var13.RESOLUTION_1440;
     var1 = var19.bind(var0)(var1);
     var6[2] = var1;
-    var5 = function(arg0) { // Original name: makeResolutionLabel, environment: var10
+    var5 = function arg0() {
         _fun30786: for (var _fun30786_ip = 0;;) switch (_fun30786_ip) {
             case 0:
                 var5 = arg0;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = 'modules/go_live/StreamSettingsConstants.tsx';
     var14 = var15.bind(var16)(var14);
     var2.ApplicationStreamResolutions = var13;
-    var13 = function(arg0) { // Original name: getApplicationResolution, environment: var10
+    var13 = function arg0() {
         _fun30795: for (var _fun30795_ip = 0;;) switch (_fun30795_ip) {
             case 0:
                 var4 = arg0;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getApplicationResolution = var13;
     var2.ApplicationStreamFPS = var12;
     var2.ApplicationStreamPresets = var11;
-    var10 = function(arg0) { // Original name: getApplicationFramerate, environment: var10
+    var10 = function arg0() {
         _fun30796: for (var _fun30796_ip = 0;;) switch (_fun30796_ip) {
             case 0:
                 var4 = arg0;

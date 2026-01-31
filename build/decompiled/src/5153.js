@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.jsx;
     var _closure1_slot8 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetViewComponent, environment: var1
+    var1 = function arg0() {
         _fun46233: for (var _fun46233_ip = 0;;) switch (_fun46233_ip) {
             case 0:
                 var7 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: UserSettingsSessions, environment: var1
+    var0 = function() {
         _fun82184: for (var _fun82184_ip = 0;;) switch (_fun82184_ip) {
             case 0:
                 var0 = _closure1_slot13;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.OTXyaf;
                 var14 = var15.bind(var16)(var14);
                 var9.subLabel = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: SessionInfo, environment: var1
+    var0 = function arg0() {
         _fun82192: for (var _fun82192_ip = 0;;) switch (_fun82192_ip) {
             case 0:
                 var0 = arg0;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.E4MJNt;
                 var6 = var7.bind(var8)(var6);
                 var0.accessibilityLabel = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 12;
@@ -829,7 +829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: UnknownLegacySessionsInfo, environment: var1
+    var0 = function() {
         var5 = _closure1_slot0;
         var9 = _closure1_slot2;
         var0 = 23;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.t;
         var5 = var4["044+8i"];
         var4 = {};
-        var8 = function() { // Original name: onClick, environment: var8
+        var8 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 25;
@@ -1125,7 +1125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/devices/UserSettingsSessions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsSessionsContainer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot10;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

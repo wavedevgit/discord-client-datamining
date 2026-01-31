@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hotspot/HotspotActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: hideHotspot, environment: var1
+    var3 = function arg0() {
         var8 = arg0;
         var _closure2_slot0 = var8;
         var3 = _closure1_slot0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hideHotspot = var3;
-    var3 = function(arg0, arg1) { // Original name: setHotspotOverride, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setHotspotOverride = var3;
-    var1 = function(arg0) { // Original name: clearHotspotOverride, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

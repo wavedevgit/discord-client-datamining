@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun68152: for (var _fun68152_ip = 0;;) switch (_fun68152_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun68154: for (var _fun68154_ip = 0;;) switch (_fun68154_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: createSoundItems, environment: var3
+    var0 = function arg0, arg1() {
         _fun68155: for (var _fun68155_ip = 0;;) switch (_fun68155_ip) {
             case 0:
                 var3 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: _addSectionForPotentialSoundIds, environment: var3
+    var0 = function arg0() {
         _fun68157: for (var _fun68157_ip = 0;;) switch (_fun68157_ip) {
             case 0:
                 var1 = arg0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 103:
                 var15 = var9[var7];
-                var16 = function(arg0) { // Original name: _loop, environment: var13
+                var16 = function arg0() {
                     _fun68158: for (var _fun68158_ip = 0;;) switch (_fun68158_ip) {
                         case 0:
                             var2 = arg0;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: addDefaultSection, environment: var3
+    var0 = function arg0, arg1() {
         _fun68160: for (var _fun68160_ip = 0;;) switch (_fun68160_ip) {
             case 0:
                 var3 = arg0;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var1 = function() { // Original name: useFrequentlyPlayedSounds, environment: var3
+    var1 = function() {
         var5 = _closure1_slot4;
         var4 = var5.useEffect;
         var3 = function() { // Environment: var0
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/soundboard/useSoundGrid.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useSoundGrid, environment: var3
+    var4 = function arg0() {
         _fun68164: for (var _fun68164_ip = 0;;) switch (_fun68164_ip) {
             case 0:
                 var16 = arg0;
@@ -1287,7 +1287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: useSearchCategories, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var6 = arg0;
         var4 = arg1;
         var5 = arg2;

@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/LaunchPadWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: LaunchPadWrapper, environment: var1
+    var1 = function arg0() {
         _fun109904: for (var _fun109904_ip = 0;;) switch (_fun109904_ip) {
             case 0:
                 var1 = arg0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2 = var6.bind(var3)(var2);
-                var0 = function(arg0) { // Original name: useLaunchPadComponentDispatchListeners, environment: var0
+                var0 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot4;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var2 = var3.bind(var4)(var2);
                         var _closure4_slot0 = var2;
-                        var10 = function() { // Original name: showLaunchPad, environment: var0
+                        var10 = function() {
                             var2 = _closure3_slot0;
                             var1 = var2.setLaunchPadShown;
                             var0 = true;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var _closure4_slot1 = var10;
-                        var4 = function() { // Original name: hideLaunchPad, environment: var0
+                        var4 = function() {
                             var2 = _closure3_slot0;
                             var1 = var2.setLaunchPadShown;
                             var0 = false;

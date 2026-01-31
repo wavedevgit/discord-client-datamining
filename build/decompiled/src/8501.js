@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = 'function pnpm_useSmoothKeyboardHandlerTs5(e){const{IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS,handler}=this.__closure;if(IS_ANDROID_ELEVEN_OR_HIGHER_OR_IOS){var _handler$onEnd,_handler;(_handler$onEnd=(_handler=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler,e);}}';
             var3.code = var4;
             var _closure1_slot8 = var3;
-            var1 = function(arg0, arg1) { // Original name: useSmoothKeyboardHandler, environment: var1
+            var1 = function arg0, arg1() {
                 var8 = arg0;
                 var4 = arg1;
                 var _closure2_slot0 = var8;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var12[var10];
                 var7 = var11.bind(var0)(var1);
                 var3 = var7.useAnimatedReaction;
-                var2 = function() { // Original name: pnpm_useSmoothKeyboardHandlerTs1, environment: var5
+                var2 = function() {
                     _fun68377: for (var _fun68377_ip = 0;;) switch (_fun68377_ip) {
                         case 0:
                             var0 = _closure1_slot2;
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2.__workletHash = var1;
                 var1 = _closure1_slot4;
                 var2.__initData = var1;
-                var1 = function(arg0) { // Original name: pnpm_useSmoothKeyboardHandlerTs2, environment: var5
+                var1 = function arg0() {
                     _fun68378: for (var _fun68378_ip = 0;;) switch (_fun68378_ip) {
                         case 0:
                             var3 = arg0;
@@ -215,7 +215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var11.bind(var0)(var1);
                 var2 = var3.useKeyboardHandler;
                 var1 = {};
-                var7 = function(arg0) { // Original name: pnpm_useSmoothKeyboardHandlerTs3, environment: var5
+                var7 = function arg0() {
                     _fun68379: for (var _fun68379_ip = 0;;) switch (_fun68379_ip) {
                         case 0:
                             var6 = arg0;
@@ -352,7 +352,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = _closure1_slot6;
                 var7.__initData = var9;
                 var1.onStart = var7;
-                var7 = function(arg0) { // Original name: pnpm_useSmoothKeyboardHandlerTs4, environment: var5
+                var7 = function arg0() {
                     _fun68380: for (var _fun68380_ip = 0;;) switch (_fun68380_ip) {
                         case 0:
                             var0 = _closure1_slot2;
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = _closure1_slot7;
                 var7.__initData = var9;
                 var1.onMove = var7;
-                var5 = function(arg0) { // Original name: pnpm_useSmoothKeyboardHandlerTs5, environment: var5
+                var5 = function arg0() {
                     _fun68381: for (var _fun68381_ip = 0;;) switch (_fun68381_ip) {
                         case 0:
                             var0 = _closure1_slot2;

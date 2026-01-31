@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun51563: for (var _fun51563_ip = 0;;) switch (_fun51563_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun51565: for (var _fun51565_ip = 0;;) switch (_fun51565_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: getDiscordLinkTypeFromMetadata, environment: var3
+    var0 = function arg0() {
         _fun51566: for (var _fun51566_ip = 0;;) switch (_fun51566_ip) {
             case 0:
                 var0 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: getDiscordLinkType, environment: var3
+    var0 = function arg0, arg1() {
         _fun51567: for (var _fun51567_ip = 0;;) switch (_fun51567_ip) {
             case 0:
                 var8 = arg0;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[2] = var6;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: trackDiscordLinkClicked, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackDiscordLinkClicked = var6;
-    var6 = function(arg0, arg1) { // Original name: trackLinkClicked, environment: var3
+    var6 = function arg0, arg1() {
         _fun51572: for (var _fun51572_ip = 0;;) switch (_fun51572_ip) {
             case 0:
                 var8 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackLinkClicked = var6;
-    var3 = function(arg0) { // Original name: trackAnnouncementMessageLinkClicked, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.messageId;
         var8 = var0.channelId;

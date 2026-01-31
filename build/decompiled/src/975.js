@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0) { // Original name: asString, environment: var3
+    var0 = function arg0() {
         _fun10051: for (var _fun10051_ip = 0;;) switch (_fun10051_ip) {
             case 0:
                 var1 = arg0;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: normalizeMessageRole, environment: var3
+    var0 = function arg0() {
         _fun10052: for (var _fun10052_ip = 0;;) switch (_fun10052_ip) {
             case 0:
                 var1 = arg0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: normalizeRoleNameFromCtor, environment: var3
+    var0 = function arg0() {
         _fun10053: for (var _fun10053_ip = 0;;) switch (_fun10053_ip) {
             case 0:
                 var7 = arg0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var1 = function(arg0) { // Original name: normalizeLangChainMessages, environment: var3
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -317,7 +317,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot8 = var1;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: baseRequestAttributes, environment: var3
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun10056: for (var _fun10056_ip = 0;;) switch (_fun10056_ip) {
             case 0:
                 var14 = arg0;
@@ -587,7 +587,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'Module';
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: setIfDefined, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun10057: for (var _fun10057_ip = 0;;) switch (_fun10057_ip) {
             case 0:
                 var2 = arg2;
@@ -606,7 +606,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: setNumberIfDefined, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun10058: for (var _fun10058_ip = 0;;) switch (_fun10058_ip) {
             case 0:
                 var1 = global;
@@ -630,7 +630,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: extractChatModelRequestAttributes, environment: var3
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         _fun10059: for (var _fun10059_ip = 0;;) switch (_fun10059_ip) {
             case 0:
                 var9 = arg0;
@@ -755,7 +755,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractChatModelRequestAttributes = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: extractLLMRequestAttributes, environment: var3
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         _fun10060: for (var _fun10060_ip = 0;;) switch (_fun10060_ip) {
             case 0:
                 var5 = arg1;
@@ -862,7 +862,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractLLMRequestAttributes = var4;
-    var4 = function(arg0, arg1) { // Original name: extractLlmResponseAttributes, environment: var3
+    var4 = function arg0, arg1() {
         _fun10062: for (var _fun10062_ip = 0;;) switch (_fun10062_ip) {
             case 0:
                 var1 = arg0;
@@ -1323,7 +1323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractLlmResponseAttributes = var4;
-    var3 = function(arg0) { // Original name: getInvocationParams, environment: var3
+    var3 = function arg0() {
         _fun10067: for (var _fun10067_ip = 0;;) switch (_fun10067_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FamilyCenterModalCancelScreen, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var20 = var1.otherUser;
         var _closure2_slot0 = var20;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterModalCancel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FamilyCenterModalCancel, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.otherUser;
         var _closure2_slot0 = var5;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var5;
         var1 = function() { // Environment: var1
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = {};
@@ -353,12 +353,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.pop;
                 var3 = var4.bind(var5)(var3);
                 var1.headerLeft = var3;
-                var3 = function() { // Original name: headerTitle, environment: var2
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var3;
-                var2 = function() { // Original name: render, environment: var2
+                var2 = function() {
                     var3 = _closure1_slot5;
                     var2 = _closure1_slot8;
                     var1 = {};

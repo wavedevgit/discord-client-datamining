@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media/MediaAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: logMediaAttachmentPlaybackStarted, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun79232: for (var _fun79232_ip = 0;;) switch (_fun79232_ip) {
             case 0:
                 var6 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.logMediaAttachmentPlaybackStarted = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: logMediaAttachmentPlaybackEnded, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun79233: for (var _fun79233_ip = 0;;) switch (_fun79233_ip) {
             case 0:
                 var9 = arg1;

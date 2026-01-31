@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function() { // Original name: playTouchSound, environment: var2
+    var2 = function() {
         _fun4457: for (var _fun4457_ip = 0;;) switch (_fun4457_ip) {
             case 0:
                 var4 = _closure1_slot0;

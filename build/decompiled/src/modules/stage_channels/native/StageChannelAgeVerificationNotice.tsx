@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: StageChannelAgeVerificationNoticeContent, environment: var3
+    var0 = function arg0() {
         _fun51880: for (var _fun51880_ip = 0;;) switch (_fun51880_ip) {
             case 0:
                 var0 = arg0;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 109:
                 var2 = var1.edpbxy;
                 var0 = {};
-                var6 = function(arg0) { // Original name: hook, environment: var5
+                var6 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot1;
                     var4 = var4.linkText;
                     var0.style = var4;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         _fun51884: for (var _fun51884_ip = 0;;) switch (_fun51884_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 135:
                 var2 = var1.iWGjcg;
                 var1 = {};
-                var5 = function(arg0) { // Original name: hook, environment: var5
+                var5 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot1;
                     var4 = var4.linkText;
                     var0.style = var4;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         _fun51882: for (var _fun51882_ip = 0;;) switch (_fun51882_ip) {
                             case 0:
                                 var4 = _closure1_slot1;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: StageChannelAgeVerificationNoticeWrapper, environment: var3
+    var0 = function arg0() {
         _fun51885: for (var _fun51885_ip = 0;;) switch (_fun51885_ip) {
             case 0:
                 var1 = arg0;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/native/StageChannelAgeVerificationNotice.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: StageChannelAgeVerificationNotice, environment: var3
+    var3 = function arg0() {
         _fun51886: for (var _fun51886_ip = 0;;) switch (_fun51886_ip) {
             case 0:
                 var0 = arg0;

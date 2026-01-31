@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/warnings/GatedContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GatedContent, environment: var1
+    var1 = function arg0() {
         _fun91193: for (var _fun91193_ip = 0;;) switch (_fun91193_ip) {
             case 0:
                 var2 = arg0;

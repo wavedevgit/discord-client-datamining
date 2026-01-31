@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1) { // Original name: defaultStatesAreEqual, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1 === var0;
@@ -28,10 +28,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'lib/ZustandStore.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createZustandStore, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
-        var4 = function(arg0) { // Original name: useState, environment: var1
+        var4 = function arg0() {
             _fun35085: for (var _fun35085_ip = 0;;) switch (_fun35085_ip) {
                 case 0:
                     var3 = arguments[1];
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure2_slot3 = var4;
-        var3 = function(arg0) { // Original name: getState, environment: var1
+        var3 = function arg0() {
             _fun35086: for (var _fun35086_ip = 0;;) switch (_fun35086_ip) {
                 case 0:
                     var3 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var6.bind(var7)(var0);
         var0 = var2.bind(var5)(var0);
         var _closure2_slot1 = var0;
-        var2 = function(arg0) { // Original name: setState, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.useState = var4;
         var0.getState = var3;
-        var3 = function(arg0) { // Original name: useField, environment: var1
+        var3 = function arg0() {
             _fun35092: for (var _fun35092_ip = 0;;) switch (_fun35092_ip) {
                 case 0:
                     var3 = arguments[1];
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.useField = var3;
-        var3 = function(arg0) { // Original name: getField, environment: var1
+        var3 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var2 = _closure2_slot4;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.getField = var3;
-        var3 = function(arg0, arg1, arg2) { // Original name: subscribe, environment: var1
+        var3 = function arg0, arg1, arg2() {
             var4 = _closure2_slot1;
             var3 = var4.subscribe;
             var2 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.subscribe = var3;
         var0.setState = var2;
-        var1 = function() { // Original name: resetState, environment: var1
+        var1 = function() {
             var2 = _closure2_slot1;
             var1 = var2.getInitialState;
             var2 = var1.bind(var2)();

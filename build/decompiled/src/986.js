@@ -10,12 +10,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function() { // Original name: getSDKSource, environment: var0
+    var2 = function() {
         var0 = 'npm';
         return var0;
     };
     var1.getSDKSource = var2;
-    var0 = function() { // Original name: isBrowserBundle, environment: var0
+    var0 = function() {
         _fun10142: for (var _fun10142_ip = 0;;) switch (_fun10142_ip) {
             case 0:
                 var1 = global;

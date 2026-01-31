@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun71846: for (var _fun71846_ip = 0;;) switch (_fun71846_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun71847: for (var _fun71847_ip = 0;;) switch (_fun71847_ip) {
             case 0:
             case 2: // try_start_0
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot8;
-        var2 = function(arg0, arg1, arg2) { // Original name: SearchFetcher, environment: var5
+        var2 = function arg0, arg1, arg2() {
             var2 = this;
             var3 = _closure1_slot7;
             var1 = _closure2_slot1;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var6.bind(var1)(var0);
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: fetch, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'cancel';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun71855: for (var _fun71855_ip = 0;;) switch (_fun71855_ip) {
                 case 0:
                     var0 = this;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'retryLater';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun71856: for (var _fun71856_ip = 0;;) switch (_fun71856_ip) {
                 case 0:
                     var2 = this;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var3.bind(var0)();
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: SearchFetcherImpl, environment: var5
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getEndpoint';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun71859: for (var _fun71859_ip = 0;;) switch (_fun71859_ip) {
                 case 0:
                     var1 = this;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'makeRequest';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun71860: for (var _fun71860_ip = 0;;) switch (_fun71860_ip) {
                 case 0:
                     var5 = this;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var3.bind(var0)(var4);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: SearchTabFetcherImpl, environment: var5
+        var3 = function arg0, arg1, arg2, arg3() {
             var4 = this;
             var1 = _closure1_slot7;
             var3 = _closure2_slot0;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getEndpoint';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun71863: for (var _fun71863_ip = 0;;) switch (_fun71863_ip) {
                 case 0:
                     var1 = this;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'makeRequest';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun71864: for (var _fun71864_ip = 0;;) switch (_fun71864_ip) {
                 case 0:
                     var5 = this;

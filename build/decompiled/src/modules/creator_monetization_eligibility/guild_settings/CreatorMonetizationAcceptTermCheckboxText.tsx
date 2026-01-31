@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/guild_settings/CreatorMonetizationAcceptTermCheckboxText.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getCreatorMonetizationAcceptTermsCheckboxText, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 1;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/core/isActionRequired.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: isActionRequired, environment: var1
+    var1 = function() {
         _fun15741: for (var _fun15741_ip = 0;;) switch (_fun15741_ip) {
             case 0:
                 var4 = arguments[0];

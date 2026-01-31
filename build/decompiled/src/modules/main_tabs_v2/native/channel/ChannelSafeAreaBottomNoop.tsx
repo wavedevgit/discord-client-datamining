@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot1 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: ChannelSafeAreaNoop, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot0;
         var1 = undefined;

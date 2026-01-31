@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: RewardPreview, environment: var1
+    var0 = function arg0() {
         _fun75253: for (var _fun75253_ip = 0;;) switch (_fun75253_ip) {
             case 0:
                 var0 = arg0;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gifting/PremiumGiftPurchaseButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumGiftPurchaseButton, environment: var1
+    var1 = function arg0() {
         _fun75255: for (var _fun75255_ip = 0;;) switch (_fun75255_ip) {
             case 0:
                 var0 = arg0;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var13 == var14;
             case 393:
                 _closure2_slot10 = var6;
-                var1 = function(arg0) { // Original name: navigateToRewardSelection, environment: var9
+                var1 = function arg0() {
                     _fun75258: for (var _fun75258_ip = 0;;) switch (_fun75258_ip) {
                         case 0:
                             var4 = arg0;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot4;
                         case 162:
                             var0.claimableRewards = var4;
-                            var4 = function(arg0) { // Original name: onSelect, environment: var4
+                            var4 = function arg0() {
                                 _fun75259: for (var _fun75259_ip = 0;;) switch (_fun75259_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -1062,7 +1062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var22.bt75uw;
                 var22 = var23.bind(var24)(var22);
                 var19.accessibilityLabel = var22;
-                var22 = function() { // Original name: onPress, environment: var9
+                var22 = function() {
                     var2 = _closure2_slot11;
                     var1 = _closure2_slot5;
                     var0 = undefined;

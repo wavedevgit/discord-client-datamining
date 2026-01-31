@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/webauthn/native/WebAuthnDeleteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: WebAuthnDeleteActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var19 = var0.credential;
         var _closure2_slot0 = var19;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = _closure1_slot7;
         var3 = undefined;
         var15 = var0.bind(var3)();
-        var10 = function() { // Original name: handleClose, environment: var12
+        var10 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 5;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.zYOk0f;
         var13 = var14.bind(var15)(var13);
         var8.text = var13;
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var4 = _closure2_slot1;
             var0 = undefined;
             var3 = true;

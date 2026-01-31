@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.UserSettingsTypes = var6;
     var2.PrivacySettingSurfaces = var5;
     var2.UserSettingsDelay = var4;
-    var4 = function() { // Original name: createEmptyEditInfo, environment: var4
+    var4 = function() {
         var0 = {};
         var1 = undefined;
         var0.protoToSave = var1;

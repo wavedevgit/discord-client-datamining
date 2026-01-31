@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun88800: for (var _fun88800_ip = 0;;) switch (_fun88800_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot80 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun88802: for (var _fun88802_ip = 0;;) switch (_fun88802_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot81 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun88803: for (var _fun88803_ip = 0;;) switch (_fun88803_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot78 = var3;
     var7 = var6.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: Messages, environment: var5
+        var3 = function arg0() {
             _fun88807: for (var _fun88807_ip = 0;;) switch (_fun88807_ip) {
                 case 0:
                     var5 = this;
@@ -1486,7 +1486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.animated = var11;
                                 var2.scrollPosition = var10;
                                 var2.focusTargetId = var9;
-                                var9 = function() { // Original name: onComputedScrollToUnread, environment: var1
+                                var9 = function() {
                                     var2 = _closure1_slot0;
                                     var1 = _closure1_slot2;
                                     var0 = 73;
@@ -3270,7 +3270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun88854: for (var _fun88854_ip = 0;;) switch (_fun88854_ip) {
                 case 0:
                     var4 = this;
@@ -3314,7 +3314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'recordTimings';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun88855: for (var _fun88855_ip = 0;;) switch (_fun88855_ip) {
                 case 0:
                     var1 = this;
@@ -3375,7 +3375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun88857: for (var _fun88857_ip = 0;;) switch (_fun88857_ip) {
                 case 0:
                     var1 = this;
@@ -3426,7 +3426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldComponentUpdate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun88858: for (var _fun88858_ip = 0;;) switch (_fun88858_ip) {
                 case 0:
                     var2 = arg0;
@@ -3485,7 +3485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun88859: for (var _fun88859_ip = 0;;) switch (_fun88859_ip) {
                 case 0:
                     var2 = arg0;
@@ -5519,7 +5519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleScrollCallbacks';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun88862: for (var _fun88862_ip = 0;;) switch (_fun88862_ip) {
                 case 0:
                     var2 = arg0;
@@ -5738,7 +5738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleVisibleMessagesChange';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun88863: for (var _fun88863_ip = 0;;) switch (_fun88863_ip) {
                 case 0:
                     var0 = arg0;
@@ -5817,7 +5817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var8 = this;
             var0 = var8.props;
             var12 = var0.animateEmoji;
@@ -6267,7 +6267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var3)(var1);
                 var1 = var4.useIsMessageSwipeActionsEnabled;
                 var12 = var1.bind(var4)();
-                var1 = function(arg0) { // Original name: useMessageAuthorActivities, environment: var0
+                var1 = function arg0() {
                     var2 = arg0;
                     var _closure3_slot0 = var2;
                     var5 = _closure1_slot10;
@@ -6348,7 +6348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var87 = var1.bind(var3)(var81);
-                var1 = function(arg0) { // Original name: useFetchMessageApplications, environment: var0
+                var1 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var3 = _closure1_slot10;
@@ -6589,7 +6589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 0:
                             var0 = new Array(0);
                             var _closure3_slot0 = var0;
-                            var5 = function(arg0) { // Original name: _loop, environment: var1
+                            var5 = function arg0() {
                                 _fun88886: for (var _fun88886_ip = 0;;) switch (_fun88886_ip) {
                                     case 0:
                                         var4 = arg0;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun12938: for (var _fun12938_ip = 0;;) switch (_fun12938_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var6 = false;
     var3.appStartReported = var6;
-    var6 = function() { // Original name: onRunApplicationHook, environment: var1
+    var6 = function() {
         var1 = _closure1_slot8;
         var0 = false;
         var1.appStartReported = var0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.Profiler;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ReactNativeProfiler, environment: var5
+        var3 = function arg0() {
             _fun12943: for (var _fun12943_ip = 0;;) switch (_fun12943_ip) {
                 case 0:
                     var3 = this;
@@ -159,12 +159,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             _fun12944: for (var _fun12944_ip = 0;;) switch (_fun12944_ip) {
                 case 0:
                     var3 = this;
                     var9 = _closure2_slot0;
-                    var4 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
+                    var4 = function arg0, arg1, arg2, arg3() {
                         _fun12945: for (var _fun12945_ip = 0;;) switch (_fun12945_ip) {
                             case 0:
                                 var4 = arg0;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_reportAppStart';
         var4.key = var6;
-        var5 = function() { // Original name: _reportAppStart, environment: var5
+        var5 = function() {
             _fun12947: for (var _fun12947_ip = 0;;) switch (_fun12947_ip) {
                 case 0:
                     var3 = _closure1_slot0;

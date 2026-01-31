@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: createPollCreationImageForMedia, environment: var1
+    var0 = function arg0, arg1() {
         var0 = {};
         var1 = {};
         var2 = arg1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/useCreatePollFormData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useCreatePollCommonData, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun108343: for (var _fun108343_ip = 0;;) switch (_fun108343_ip) {
             case 0:
                 var30 = arg0;

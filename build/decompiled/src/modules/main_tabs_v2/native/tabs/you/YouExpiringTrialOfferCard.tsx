@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getNoticeCTAColor, environment: var1
+    var0 = function arg0() {
         _fun103451: for (var _fun103451_ip = 0;;) switch (_fun103451_ip) {
             case 0:
                 var4 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getNoticeCopy, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun103452: for (var _fun103452_ip = 0;;) switch (_fun103452_ip) {
             case 0:
                 var7 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/you/YouExpiringTrialOfferCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: YouExpiringTrialOfferCard, environment: var1
+    var1 = function arg0() {
         _fun103453: for (var _fun103453_ip = 0;;) switch (_fun103453_ip) {
             case 0:
                 var0 = arg0;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'left': 8
                 };
                 var10.hitSlop = var15;
-                var15 = function() { // Original name: onPress, environment: var12
+                var15 = function() {
                     _fun103456: for (var _fun103456_ip = 0;;) switch (_fun103456_ip) {
                         case 0:
                             var6 = _closure2_slot3;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.J61px0;
                 var13 = var14.bind(var15)(var13);
                 var10.text = var13;
-                var13 = function() { // Original name: onPress, environment: var12
+                var13 = function() {
                     _fun103457: for (var _fun103457_ip = 0;;) switch (_fun103457_ip) {
                         case 0:
                             var6 = _closure2_slot3;
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var10.onPress = var13;
-                var13 = function() { // Original name: renderIcon, environment: var12
+                var13 = function() {
                     var3 = _closure1_slot12;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var10.renderIcon = var13;
-                var12 = function() { // Original name: renderLinearGradient, environment: var12
+                var12 = function() {
                     var3 = _closure1_slot12;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

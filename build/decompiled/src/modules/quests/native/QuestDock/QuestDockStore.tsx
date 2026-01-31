@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun46689: for (var _fun46689_ip = 0;;) switch (_fun46689_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: QuestDockStore, environment: var5
+        var3 = function() {
             _fun46693: for (var _fun46693_ip = 0;;) switch (_fun46693_ip) {
                 case 0:
                     var3 = this;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun46694: for (var _fun46694_ip = 0;;) switch (_fun46694_ip) {
                 case 0:
                     var0 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot2;
             var0.prevRestingQuestDockMode = var2;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'prevRestingQuestDockMode';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot2;
             return var0;
         };
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'questDockSoftDismissedAt';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot3;
             return var0;
         };
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVisible';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handlePrevRestingQuestDockModeUpdate, environment: var3
+    var8 = function arg0() {
         _fun46699: for (var _fun46699_ip = 0;;) switch (_fun46699_ip) {
             case 0:
                 var1 = arg0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_PREV_RESTING_QUEST_DOCK_MODE_UPDATE = var8;
-    var8 = function() { // Original name: handleResetSoftDismissal, environment: var3
+    var8 = function() {
         var0 = _closure1_slot9;
         var0 = var0.COLLAPSED;
         _closure1_slot2 = var0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_DOCK_RESET_SOFT_DISMISSAL = var8;
-    var3 = function(arg0) { // Original name: handleQuestDockVisibilityOverrideUpdate, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.isVisible;
         _closure1_slot10 = var1;

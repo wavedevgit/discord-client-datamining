@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Stack/native/Stack.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Stack, environment: var1
+    var1 = function arg0() {
         _fun37374: for (var _fun37374_ip = 0;;) switch (_fun37374_ip) {
             case 0:
                 var0 = arg0;

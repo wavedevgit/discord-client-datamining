@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CHANNEL_CREATE', 'CHANNEL_DELETE', 'CHANNEL_RECIPIENT_ADD', 'CHANNEL_RECIPIENT_REMOVE', 'CHANNEL_UPDATES', 'CONNECTION_OPEN', 'CONNECTION_OPEN_SUPPLEMENTAL', 'GUILD_CREATE', 'GUILD_DELETE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CHANNEL_CREATE', 'CHANNEL_DELETE', 'CHANNEL_UPDATES', 'CONNECTION_OPEN', 'GUILD_CREATE', 'GUILD_DELETE', 'GUILD_MEMBER_UPDATE', 'GUILD_ROLE_UPDATE', 'GUILD_UPDATE', 'POST_CONNECTION_OPEN', 'WRITE_CACHES'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'GUILD_DELETE', 'GUILD_EMOJIS_UPDATE', 'GUILD_UPDATE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'GUILD_DELETE', 'GUILD_MEMBER_ADD', 'GUILD_MEMBER_UPDATE', 'GUILD_ROLE_CREATE', 'GUILD_ROLE_DELETE', 'GUILD_ROLE_UPDATE', 'GUILD_UPDATE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'DELETED_ENTITY_IDS'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'CHANNEL_SYNC'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'GUILD_DELETE', 'GUILD_STICKERS_UPDATE', 'GUILD_UPDATE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['BACKGROUND_SYNC', 'CHANNEL_CREATE', 'CHANNEL_DELETE', 'CHANNEL_UPDATES', 'CONNECTION_OPEN', 'GUILD_CREATE', 'GUILD_DELETE', 'GUILD_EMOJIS_UPDATE', 'GUILD_ROLE_CREATE', 'GUILD_ROLE_DELETE', 'GUILD_ROLE_UPDATE', 'GUILD_STICKERS_UPDATE', 'GUILD_UPDATE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['CONNECTION_OPEN', 'WRITE_CACHES', 'BACKGROUND_SYNC'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 9;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['CHANNEL_DELETE', 'GUILD_DELETE', 'LOAD_MESSAGES_SUCCESS', 'MESSAGE_CREATE', 'MESSAGE_DELETE_BULK', 'MESSAGE_DELETE', 'MESSAGE_PREVIEWS_LOADED', 'MESSAGE_UPDATE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 10;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['POST_CONNECTION_OPEN'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 11;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['CONNECTION_OPEN', 'BACKGROUND_SYNC'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 12;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['CONNECTION_OPEN', 'CHANNEL_PINS_ACK', 'MESSAGE_ACK', 'BACKGROUND_SYNC_FINISHED', 'WRITE_CACHES'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['CONNECTION_OPEN', 'USER_SETTINGS_PROTO_UPDATE', 'USER_SETTINGS_PROTO_ENQUEUE_UPDATE', 'USER_SETTINGS_PROTO_UPDATE_EDIT_INFO'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 14;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['CONNECTION_OPEN', 'USER_GUILD_SETTINGS_FULL_UPDATE'];
     var1.actions = var6;
-    var6 = function() { // Original name: require, environment: var3
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.name = var6;
     var6 = ['POST_CONNECTION_OPEN', 'WRITE_CACHES'];
     var1.actions = var6;
-    var3 = function() { // Original name: require, environment: var3
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 16;

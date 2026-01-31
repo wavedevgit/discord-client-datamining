@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1, arg2) { // Original name: _prepareMessageRequestBodyCloud, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun37604: for (var _fun37604_ip = 0;;) switch (_fun37604_ip) {
             case 0:
                 var3 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var1 = function(arg0) { // Original name: getUploadPayload, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.filename;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'lib/uploader/native/CloudUploaderUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: prepareMessagePayload, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun37607: for (var _fun37607_ip = 0;;) switch (_fun37607_ip) {
             case 0:
                 var4 = _closure1_slot6;

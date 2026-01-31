@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var0 = function(arg0) { // Original name: show, environment: var0
+    var0 = function arg0() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;

@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/panels/MainTabsContentScrim.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MainTabsContentScrim, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.translateX;
         var _closure2_slot0 = var11;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6[var0];
         var7 = var10.bind(var3)(var5);
         var5 = var7.useAnimatedStyle;
-        var2 = function() { // Original name: c, environment: var2
+        var2 = function() {
             var0 = {};
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;

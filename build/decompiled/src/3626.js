@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: cloneTypedArray, environment: var0
+    var1 = function arg0, arg1() {
         _fun32478: for (var _fun32478_ip = 0;;) switch (_fun32478_ip) {
             case 0:
                 var0 = arg0;

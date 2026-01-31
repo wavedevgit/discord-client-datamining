@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = {};
     var0 = "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}";
     var2.code = var0;
-    var0 = function(arg0, arg1) { // Original name: pnpm_normalizeSnapPointTs1, environment: var0
+    var0 = function arg0, arg1() {
         _fun44609: for (var _fun44609_ip = 0;;) switch (_fun44609_ip) {
             case 0:
                 var5 = arg0;

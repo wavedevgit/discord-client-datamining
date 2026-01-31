@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.ACCOUNT;
     var1.parent = var8;
-    var8 = function() { // Original name: remove2FA, environment: var7
+    var8 = function() {
         var2 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 2;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4["ETE/oC"];
         var4 = var5.bind(var6)(var4);
         var1.cancelText = var4;
-        var4 = function() { // Original name: onConfirm, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 4;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onPress = var8;
-    var7 = function() { // Original name: useIsDisabled, environment: var7
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;

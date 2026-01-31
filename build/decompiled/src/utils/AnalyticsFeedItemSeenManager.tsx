@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun71153: for (var _fun71153_ip = 0;;) switch (_fun71153_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun71155: for (var _fun71155_ip = 0;;) switch (_fun71155_ip) {
             case 0:
                 var3 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var4;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: TrackedFeedItem, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'maybeMarkSeen';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun71158: for (var _fun71158_ip = 0;;) switch (_fun71158_ip) {
                 case 0:
                     var1 = this;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'maybeMarkUnseen';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun71159: for (var _fun71159_ip = 0;;) switch (_fun71159_ip) {
                 case 0:
                     var0 = this;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isVisible';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun71160: for (var _fun71160_ip = 0;;) switch (_fun71160_ip) {
                 case 0:
                     var0 = this;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'computeSeenTimeDestructive';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun71161: for (var _fun71161_ip = 0;;) switch (_fun71161_ip) {
                 case 0:
                     var11 = arg0;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: AnalyticsFeedItemSeenManager, environment: var1
+        var2 = function arg0() {
             _fun71163: for (var _fun71163_ip = 0;;) switch (_fun71163_ip) {
                 case 0:
                     var0 = arg0;
@@ -1093,7 +1093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'maybeFlushSeenItems';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun71180: for (var _fun71180_ip = 0;;) switch (_fun71180_ip) {
                 case 0:
                     var5 = arg0;

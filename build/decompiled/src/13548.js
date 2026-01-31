@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var10 = dependencyMap;
             var _closure1_slot0 = var9;
             var _closure1_slot1 = var10;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun104217: for (var _fun104217_ip = 0;;) switch (_fun104217_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot14 = var0;
-            var0 = function(arg0) { // Original name: validateOptions, environment: var1
+            var0 = function arg0() {
                 _fun104220: for (var _fun104220_ip = 0;;) switch (_fun104220_ip) {
                     case 0:
                         var0 = global;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot15 = var0;
-            var5 = function() { // Original name: ensureModuleIsLoaded, environment: var1
+            var5 = function() {
                 _fun104221: for (var _fun104221_ip = 0;;) switch (_fun104221_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot16 = var5;
-            var4 = function(arg0, arg1) { // Original name: captureRef, environment: var1
+            var4 = function arg0, arg1() {
                 _fun104222: for (var _fun104222_ip = 0;;) switch (_fun104222_ip) {
                     case 0:
                         var1 = arg0;
@@ -380,7 +380,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot17 = var4;
-            var3 = function(arg0) { // Original name: releaseCapture, environment: var1
+            var3 = function arg0() {
                 _fun104223: for (var _fun104223_ip = 0;;) switch (_fun104223_ip) {
                     case 0:
                         var2 = arg0;
@@ -501,7 +501,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var _closure1_slot13 = var6;
             var6 = function(arg0) { // Environment: var1
-                var3 = function() { // Original name: ViewShot, environment: var5
+                var3 = function() {
                     _fun104226: for (var _fun104226_ip = 0;;) switch (_fun104226_ip) {
                         case 0:
                             var5 = this;
@@ -729,7 +729,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     case 43:
                                         var3 = '-';
                                         var _closure4_slot0 = var3;
-                                        var3 = function() { // Original name: loop, environment: var4
+                                        var3 = function() {
                                             _fun104235: for (var _fun104235_ip = 0;;) switch (_fun104235_ip) {
                                                 case 0:
                                                     var4 = _closure3_slot0;
@@ -812,7 +812,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var0 = 'componentDidMount';
                 var4.key = var0;
-                var0 = function() { // Original name: componentDidMount, environment: var5
+                var0 = function() {
                     _fun104238: for (var _fun104238_ip = 0;;) switch (_fun104238_ip) {
                         case 0:
                             var1 = this;
@@ -844,7 +844,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var6 = 'componentDidUpdate';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: componentDidUpdate, environment: var5
+                var6 = function arg0() {
                     _fun104239: for (var _fun104239_ip = 0;;) switch (_fun104239_ip) {
                         case 0:
                             var2 = this;
@@ -892,7 +892,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var6 = 'componentWillUnmount';
                 var4.key = var6;
-                var6 = function() { // Original name: componentWillUnmount, environment: var5
+                var6 = function() {
                     var2 = this;
                     var1 = var2.syncCaptureLoop;
                     var0 = null;
@@ -905,7 +905,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var6 = 'render';
                 var4.key = var6;
-                var5 = function() { // Original name: render, environment: var5
+                var5 = function() {
                     var4 = this;
                     var0 = var4.props;
                     var0 = var0.children;
@@ -938,7 +938,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.ensureModuleIsLoaded = var5;
             var2.captureRef = var4;
             var2.releaseCapture = var3;
-            var1 = function(arg0) { // Original name: captureScreen, environment: var1
+            var1 = function arg0() {
                 var1 = _closure1_slot16;
                 var3 = undefined;
                 var1 = var1.bind(var3)();

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: keyMirror, environment: var0
+    var1 = function arg0() {
         _fun61667: for (var _fun61667_ip = 0;;) switch (_fun61667_ip) {
             case 0:
                 var7 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun84538: for (var _fun84538_ip = 0;;) switch (_fun84538_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun84540: for (var _fun84540_ip = 0;;) switch (_fun84540_ip) {
             case 0:
                 var3 = arg0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.ThemeTypes;
     var _closure1_slot4 = var3;
-    var3 = function() { // Original name: getMaxColors, environment: var1
+    var3 = function() {
         _fun84541: for (var _fun84541_ip = 0;;) switch (_fun84541_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: mix, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun84542: for (var _fun84542_ip = 0;;) switch (_fun84542_ip) {
             case 0:
                 var1 = 'light';
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: padWithLast, environment: var1
+    var3 = function arg0() {
         _fun84543: for (var _fun84543_ip = 0;;) switch (_fun84543_ip) {
             case 0:
                 var5 = arg0;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: convertBackgroundGradientToAnimatedTheme, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun84544: for (var _fun84544_ip = 0;;) switch (_fun84544_ip) {
             case 0:
                 var3 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: convertStandardThemeToAnimatedTheme, environment: var1
+    var3 = function arg0() {
         _fun84546: for (var _fun84546_ip = 0;;) switch (_fun84546_ip) {
             case 0:
                 var3 = arg0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: convertCustomBackgroundGradientToAnimatedTheme, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun84547: for (var _fun84547_ip = 0;;) switch (_fun84547_ip) {
             case 0:
                 var3 = arg0;

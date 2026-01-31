@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isGroupableMedia = var3;
-    var3 = function(arg0, arg1) { // Original name: getMosaicMediaTypeForAttachment, environment: var1
+    var3 = function arg0, arg1() {
         _fun72912: for (var _fun72912_ip = 0;;) switch (_fun72912_ip) {
             case 0:
                 var7 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMosaicMediaTypeForAttachment = var3;
-    var1 = function(arg0) { // Original name: getMosaicMediaTypeForUnfurledMediaItem, environment: var1
+    var1 = function arg0() {
         _fun72913: for (var _fun72913_ip = 0;;) switch (_fun72913_ip) {
             case 0:
                 var0 = arg0;

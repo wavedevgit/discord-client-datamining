@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_storefront/storefrontMessageEmbedCodedLink.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: makeStorefrontSKUCodedLink, environment: var1
+    var3 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.makeStorefrontSKUCodedLink = var3;
-    var1 = function(arg0) { // Original name: parseStorefrontSkuCodedLink, environment: var1
+    var1 = function arg0() {
         _fun28709: for (var _fun28709_ip = 0;;) switch (_fun28709_ip) {
             case 0:
                 var2 = arg0;

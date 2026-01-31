@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}';
     var3.code = var4;
     var _closure1_slot5 = var3;
-    var1 = function(arg0, arg1) { // Original name: useDerivedValue, environment: var1
+    var1 = function arg0, arg1() {
         _fun34810: for (var _fun34810_ip = 0;;) switch (_fun34810_ip) {
             case 0:
                 var9 = arg0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot2 = var0;
                 var2 = _closure1_slot3;
                 var1 = function() { // Environment: var1
-                    var5 = function() { // Original name: pnpm_useDerivedValueTs1, environment: var0
+                    var5 = function() {
                         var2 = _closure2_slot2;
                         var1 = _closure2_slot0;
                         var0 = undefined;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var3 = function(arg0) { // Original name: isM4V, environment: var1
+    var3 = function arg0() {
         _fun37783: for (var _fun37783_ip = 0;;) switch (_fun37783_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isOGG = var0;
     var2.isSWF = var0;
     var2.isWEBM = var0;
-    var4 = function(arg0) { // Original name: isAVI, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isAVI = var4;
-    var4 = function(arg0) { // Original name: isFLV, environment: var1
+    var4 = function arg0() {
         _fun37785: for (var _fun37785_ip = 0;;) switch (_fun37785_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isFLV = var4;
     var2.isM4V = var3;
-    var3 = function(arg0) { // Original name: isMKV, environment: var1
+    var3 = function arg0() {
         _fun37786: for (var _fun37786_ip = 0;;) switch (_fun37786_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isMKV = var3;
-    var3 = function(arg0) { // Original name: isMOV, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isMOV = var3;
-    var3 = function(arg0, arg1) { // Original name: isMP4, environment: var1
+    var3 = function arg0, arg1() {
         _fun37788: for (var _fun37788_ip = 0;;) switch (_fun37788_ip) {
             case 0:
                 var5 = arg1;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isMP4 = var3;
-    var3 = function(arg0) { // Original name: isOGG, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -249,7 +249,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isOGG = var3;
-    var3 = function(arg0) { // Original name: isSWF, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isSWF = var3;
-    var1 = function(arg0) { // Original name: isWEBM, environment: var1
+    var1 = function arg0() {
         _fun37791: for (var _fun37791_ip = 0;;) switch (_fun37791_ip) {
             case 0:
                 var2 = _closure1_slot0;

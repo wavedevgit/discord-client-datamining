@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MAX_THREAD_UNREAD_MESSAGE_COUNT = var8;
     var2.ThreadMemberFlags = var7;
     var2.OpenThreadAnalyticsLocations = var6;
-    var5 = function() { // Original name: getThreadNotificationOptions, environment: var5
+    var5 = function() {
         var1 = {};
         var3 = _closure1_slot2;
         var2 = var3.ALL_MESSAGES;

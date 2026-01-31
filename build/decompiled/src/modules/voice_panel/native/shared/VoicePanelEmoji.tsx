@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = [40, 32, 40];
     var4[var8] = var7;
     var _closure1_slot6 = var4;
-    var4 = function(arg0) { // Original name: stylesFor, environment: var3
+    var4 = function arg0() {
         _fun111010: for (var _fun111010_ip = 0;;) switch (_fun111010_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_panel/native/shared/VoicePanelEmoji.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: VoicePanelEmoji, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.variant;
         var9 = var0.style;

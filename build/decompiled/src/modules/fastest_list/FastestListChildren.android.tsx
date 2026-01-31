@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = arg1;
                 var6 = function() { // Environment: var1
                     var0 = {};
-                    var1 = function(arg0) { // Original name: setVisibleItems, environment: var1
+                    var1 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var2 = _closure2_slot15;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var23 = var2.sectionHeaderKeys;
                             var22 = var2.sectionHeaderSizeIsUniform;
                             var21 = var2.sectionHeaderSizes;
-                            var20 = function(arg0, arg1) { // Original name: fastestListChildJSX, environment: var2
+                            var20 = function arg0, arg1() {
                                 _fun60998: for (var _fun60998_ip = 0;;) switch (_fun60998_ip) {
                                     case 0:
                                         var4 = arg0;

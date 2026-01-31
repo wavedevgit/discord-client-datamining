@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var1 = function(arg0, arg1) { // Original name: _inherits, environment: var1
+    var1 = function arg0, arg1() {
         _fun45522: for (var _fun45522_ip = 0;;) switch (_fun45522_ip) {
             case 0:
                 var3 = arg0;

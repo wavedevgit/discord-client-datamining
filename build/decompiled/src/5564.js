@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: fuzzysearch, environment: var0
+    var1 = function arg0, arg1() {
         _fun49486: for (var _fun49486_ip = 0;;) switch (_fun49486_ip) {
             case 0:
                 var1 = arg0;

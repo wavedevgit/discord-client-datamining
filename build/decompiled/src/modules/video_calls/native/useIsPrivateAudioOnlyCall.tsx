@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: areParticipantStatesEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun62664: for (var _fun62664_ip = 0;;) switch (_fun62664_ip) {
             case 0:
                 var4 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/useIsPrivateAudioOnlyCall.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun62665: for (var _fun62665_ip = 0;;) switch (_fun62665_ip) {
             case 0:
                 var6 = arg0;

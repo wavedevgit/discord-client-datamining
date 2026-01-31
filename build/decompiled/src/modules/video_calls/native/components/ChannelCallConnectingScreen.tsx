@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: VoiceSettingsActionSheet, environment: var1
+    var0 = function() {
         var3 = _closure1_slot16;
         var5 = _closure1_slot0;
         var11 = _closure1_slot2;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: EmptyState, environment: var1
+    var0 = function() {
         var0 = _closure1_slot19;
         var3 = undefined;
         var10 = var0.bind(var3)();
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: MemberList, environment: var1
+    var0 = function arg0() {
         _fun67919: for (var _fun67919_ip = 0;;) switch (_fun67919_ip) {
             case 0:
                 var1 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: JoinMutedButton, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.channel;
         var2 = _closure1_slot1;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: JoinVoiceButton, environment: var1
+    var0 = function arg0() {
         _fun67921: for (var _fun67921_ip = 0;;) switch (_fun67921_ip) {
             case 0:
                 var1 = arg0;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/ChannelCallConnectingScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ChannelCallConnectingScreen, environment: var1
+    var3 = function arg0() {
         _fun67925: for (var _fun67925_ip = 0;;) switch (_fun67925_ip) {
             case 0:
                 var0 = arg0;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: showVoiceSettingsActionSheet, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 16;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showVoiceSettingsActionSheet = var3;
-    var3 = function(arg0) { // Original name: ChannelCallConnectingHeader, environment: var1
+    var3 = function arg0() {
         _fun67932: for (var _fun67932_ip = 0;;) switch (_fun67932_ip) {
             case 0:
                 var1 = arg0;
@@ -999,7 +999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ChannelCallConnectingHeader = var3;
-    var1 = function(arg0) { // Original name: CallConnectingActionBar, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.channel;
         var0 = _closure1_slot19;

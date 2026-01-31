@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createEventEnvelope, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun99307: for (var _fun99307_ip = 0;;) switch (_fun99307_ip) {
             case 0:
                 var6 = arg0;
@@ -174,7 +174,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createEventEnvelope = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createSessionEnvelope, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun99308: for (var _fun99308_ip = 0;;) switch (_fun99308_ip) {
             case 0:
                 var6 = arg0;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createSessionEnvelope = var3;
-    var1 = function(arg0, arg1) { // Original name: createSpanEnvelope, environment: var1
+    var1 = function arg0, arg1() {
         _fun99309: for (var _fun99309_ip = 0;;) switch (_fun99309_ip) {
             case 0:
                 var5 = arg0;

@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ContextMenuCommandAppScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ContextMenuCommandAppScreen, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.route;
         var0 = var0.params;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var2.bind(var3)(var1);
             var1 = {};
             var1.item = var0;
-            var8 = function() { // Original name: onPress, environment: var8
+            var8 = function() {
                 var2 = _closure2_slot2;
                 var1 = _closure3_slot0;
                 var0 = undefined;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: LinkedLobbyFormSection, environment: var1
+    var0 = function arg0() {
         _fun109173: for (var _fun109173_ip = 0;;) switch (_fun109173_ip) {
             case 0:
                 var0 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var9 = var11.bind(var4)(var10, var9);
                 var5.trailing = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var3 = _closure2_slot1;
                     var2 = var3.push;
                     var0 = _closure1_slot4;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/channel_settings/ChannelSettingsIntegrationsOverview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedChannelSettingsIntegrationsOverview, environment: var1
+    var1 = function arg0() {
         _fun109175: for (var _fun109175_ip = 0;;) switch (_fun109175_ip) {
             case 0:
                 var0 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = {};
                 var19 = var26.bind(var4)(var25, var19);
                 var16.trailing = var19;
-                var19 = function() { // Original name: onPress, environment: var20
+                var19 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var0 = _closure1_slot4;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = {};
                 var21 = var23.bind(var4)(var22, var21);
                 var17.trailing = var21;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var0 = _closure1_slot4;

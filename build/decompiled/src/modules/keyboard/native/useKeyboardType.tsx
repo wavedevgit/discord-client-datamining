@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: getKeyboardContextForType, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var4;
-    var3 = function() { // Original name: getKeyboardType, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -51,13 +51,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var5 = var5.bind(var0)(var8);
     var _closure1_slot3 = var5;
-    var5 = function(arg0) { // Original name: KEYBOARD_TYPE_GETTER, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var0 = var0.keyboardType;
         return var0;
     };
     var _closure1_slot4 = var5;
-    var5 = function(arg0) { // Original name: KEYBOARD_TYPE_PREVIOUS_GETTER, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var0 = var0.keyboardTypePrevious;
         return var0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/keyboard/native/useKeyboardType.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function() { // Original name: useKeyboardType, environment: var1
+    var5 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var5;
     var2.getKeyboardContextForType = var4;
-    var4 = function(arg0) { // Original name: useKeyboardContextForType, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot1;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useKeyboardContextForType = var4;
     var2.getKeyboardType = var3;
-    var3 = function() { // Original name: getKeyboardTypePrevious, environment: var1
+    var3 = function() {
         var2 = _closure1_slot5;
         var3 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getKeyboardTypePrevious = var3;
-    var3 = function() { // Original name: useKeyboardTypePrevious, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useKeyboardTypePrevious = var3;
-    var3 = function() { // Original name: useKeyboardTypeSharedValue, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
         var0 = 2;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useKeyboardTypeSharedValue = var3;
-    var1 = function() { // Original name: useKeyboardWillOpenSharedValue, environment: var1
+    var1 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 2;

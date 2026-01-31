@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = metroImportDefault;
     var _closure1_slot1 = var1;
     var _closure1_slot2 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: saferParse, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun44226: for (var _fun44226_ip = 0;;) switch (_fun44226_ip) {
             case 0:
                 var8 = arguments[3];
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function(arg0) { // Original name: astParserFor, environment: var0
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.astParserFor = var5;
-    var0 = function(arg0) { // Original name: reactParserFor, environment: var0
+    var0 = function arg0() {
         var6 = arg0;
         var5 = _closure1_slot1;
         var7 = _closure1_slot2;

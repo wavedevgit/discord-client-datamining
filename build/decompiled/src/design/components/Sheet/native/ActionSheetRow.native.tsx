@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: ActionSheetRow, environment: var1
+    var3 = function arg0() {
         _fun61754: for (var _fun61754_ip = 0;;) switch (_fun61754_ip) {
             case 0:
                 var2 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'default';
     var4 = var7.bind(var8)(var4);
     var _closure1_slot5 = var4;
-    var4 = function(arg0) { // Original name: ActionSheetRowIcon, environment: var1
+    var4 = function arg0() {
         _fun61755: for (var _fun61755_ip = 0;;) switch (_fun61755_ip) {
             case 0:
                 var0 = arg0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.Icon = var4;
-    var4 = function(arg0) { // Original name: ActionSheetRowGroup, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var6 = var0.children;
         var7 = var0.title;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Sheet/native/ActionSheetRow.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ActionSheetRow = var3;
-    var1 = function(arg0) { // Original name: ActionSheetSwitchRow, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

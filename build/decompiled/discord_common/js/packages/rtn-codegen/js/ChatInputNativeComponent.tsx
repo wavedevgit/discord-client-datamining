@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var8)(var9, var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: backspace, environment: var5
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.backspace = var8;
-    var8 = function(arg0) { // Original name: blur, environment: var5
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.blur = var8;
-    var8 = function(arg0) { // Original name: focus, environment: var5
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.focus = var8;
-    var8 = function(arg0) { // Original name: openCustomKeyboard, environment: var5
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openCustomKeyboard = var8;
-    var8 = function(arg0) { // Original name: openSystemKeyboard, environment: var5
+    var8 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openSystemKeyboard = var8;
-    var8 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: replaceRange, environment: var5
+    var8 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.replaceRange = var8;
-    var8 = function(arg0, arg1, arg2) { // Original name: setSelectedRange, environment: var5
+    var8 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setSelectedRange = var8;
-    var8 = function(arg0, arg1) { // Original name: setText, environment: var5
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setText = var8;
-    var8 = function(arg0, arg1) { // Original name: flushText, environment: var5
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.flushText = var8;
-    var5 = function(arg0, arg1, arg2) { // Original name: updateTextBlocks, environment: var5
+    var5 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: clearInteractionHandle, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun6051: for (var _fun6051_ip = 0;;) switch (_fun6051_ip) {
             case 0:
                 var1 = arg0;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.currentCentroidY;
     var _closure1_slot7 = var1;
     var1 = {};
-    var4 = function(arg0) { // Original name: _initializeGestureState, environment: var3
+    var4 = function arg0() {
         var1 = arg0;
         var0 = 0;
         var1.moveX = var0;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1._initializeGestureState = var4;
-    var4 = function(arg0, arg1) { // Original name: _updateGestureStateOnMove, environment: var3
+    var4 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var0 = var1.numberActiveTouches;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1._updateGestureStateOnMove = var4;
-    var4 = function(arg0) { // Original name: create, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var _closure2_slot2 = var0;
         var0 = {};
         var2 = {};
-        var3 = function(arg0) { // Original name: onStartShouldSetResponder, environment: var1
+        var3 = function arg0() {
             _fun6055: for (var _fun6055_ip = 0;;) switch (_fun6055_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -197,7 +197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onStartShouldSetResponder = var3;
-        var3 = function(arg0) { // Original name: onMoveShouldSetResponder, environment: var1
+        var3 = function arg0() {
             _fun6056: for (var _fun6056_ip = 0;;) switch (_fun6056_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -219,7 +219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onMoveShouldSetResponder = var3;
-        var3 = function(arg0) { // Original name: onStartShouldSetResponderCapture, environment: var1
+        var3 = function arg0() {
             _fun6057: for (var _fun6057_ip = 0;;) switch (_fun6057_ip) {
                 case 0:
                     var4 = arg0;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onStartShouldSetResponderCapture = var3;
-        var3 = function(arg0) { // Original name: onMoveShouldSetResponderCapture, environment: var1
+        var3 = function arg0() {
             _fun6058: for (var _fun6058_ip = 0;;) switch (_fun6058_ip) {
                 case 0:
                     var5 = arg0;
@@ -297,7 +297,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onMoveShouldSetResponderCapture = var3;
-        var3 = function(arg0) { // Original name: onResponderGrant, environment: var1
+        var3 = function arg0() {
             _fun6059: for (var _fun6059_ip = 0;;) switch (_fun6059_ip) {
                 case 0:
                     var4 = arg0;
@@ -363,7 +363,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onResponderGrant = var3;
-        var3 = function(arg0) { // Original name: onResponderReject, environment: var1
+        var3 = function arg0() {
             var5 = _closure1_slot9;
             var9 = _closure2_slot1;
             var1 = _closure2_slot0;
@@ -376,7 +376,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var2.onResponderReject = var3;
-        var3 = function(arg0) { // Original name: onResponderRelease, environment: var1
+        var3 = function arg0() {
             var6 = _closure1_slot9;
             var10 = _closure2_slot1;
             var2 = _closure2_slot0;
@@ -393,7 +393,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var2.onResponderRelease = var3;
-        var3 = function(arg0) { // Original name: onResponderStart, environment: var1
+        var3 = function arg0() {
             _fun6062: for (var _fun6062_ip = 0;;) switch (_fun6062_ip) {
                 case 0:
                     var3 = arg0;
@@ -418,7 +418,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onResponderStart = var3;
-        var3 = function(arg0) { // Original name: onResponderMove, environment: var1
+        var3 = function arg0() {
             _fun6063: for (var _fun6063_ip = 0;;) switch (_fun6063_ip) {
                 case 0:
                     var3 = arg0;
@@ -452,7 +452,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var2.onResponderMove = var3;
-        var3 = function(arg0) { // Original name: onResponderEnd, environment: var1
+        var3 = function arg0() {
             var5 = arg0;
             var1 = var5.touchHistory;
             var4 = _closure2_slot2;
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var2.onResponderEnd = var3;
-        var3 = function(arg0) { // Original name: onResponderTerminate, environment: var1
+        var3 = function arg0() {
             var6 = _closure1_slot9;
             var10 = _closure2_slot1;
             var2 = _closure2_slot0;
@@ -487,7 +487,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var2.onResponderTerminate = var3;
-        var3 = function(arg0) { // Original name: onResponderTerminationRequest, environment: var1
+        var3 = function arg0() {
             _fun6066: for (var _fun6066_ip = 0;;) switch (_fun6066_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -510,7 +510,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2.onResponderTerminationRequest = var3;
         var0.panHandlers = var2;
-        var1 = function() { // Original name: getInteractionHandle, environment: var1
+        var1 = function() {
             var0 = _closure2_slot1;
             var0 = var0.handle;
             return var0;

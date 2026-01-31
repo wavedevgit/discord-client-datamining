@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun57969: for (var _fun57969_ip = 0;;) switch (_fun57969_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun57971: for (var _fun57971_ip = 0;;) switch (_fun57971_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: useEligibleActiveOutboundPromotions, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var6 = arg0;
         var5 = arg1;
         var7 = arg2;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/promotions/PromotionsHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useOutboundPromotions, environment: var1
+    var3 = function() {
         _fun57977: for (var _fun57977_ip = 0;;) switch (_fun57977_ip) {
             case 0:
                 var12 = _closure1_slot0;
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useOutboundPromotions = var3;
-    var3 = function() { // Original name: useUnseenOutboundPromotions, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var9 = _closure1_slot2;
         var3 = 6;
@@ -974,7 +974,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useUnseenOutboundPromotions = var3;
-    var1 = function() { // Original name: useBogoPromotion, environment: var1
+    var1 = function() {
         var0 = {};
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;

@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var0 = undefined;
     var2.reflectionMergePartial = var0;
-    var1 = function(arg0, arg1, arg2) { // Original name: reflectionMergePartial, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun14981: for (var _fun14981_ip = 0;;) switch (_fun14981_ip) {
             case 0:
                 var10 = arg1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var4 = function(arg0) { // Original name: hasFetchedColors, environment: var3
+    var4 = function arg0() {
         var1 = _closure1_slot7;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var0 = function() { // Original name: _maybeFetchColors, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: fetchColors, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _fetchColors, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var1 = function(arg0, arg1) { // Original name: useAvatarColors, environment: var3
+    var1 = function arg0, arg1() {
         _fun56287: for (var _fun56287_ip = 0;;) switch (_fun56287_ip) {
             case 0:
                 var3 = arg0;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/avatar/useAvatarColor.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0, arg1) { // Original name: useAvatarColor, environment: var3
+    var6 = function arg0, arg1() {
         _fun56294: for (var _fun56294_ip = 0;;) switch (_fun56294_ip) {
             case 0:
                 var5 = arguments[2];
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var6;
     var2.useColorStore = var5;
     var2.hasFetchedColors = var4;
-    var4 = function() { // Original name: maybeFetchColors, environment: var3
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.maybeFetchColors = var4;
-    var3 = function(arg0) { // Original name: useHasFetchedColors, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot7;

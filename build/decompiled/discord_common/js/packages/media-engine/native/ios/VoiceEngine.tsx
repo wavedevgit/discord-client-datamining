@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = dependencyMap;
             var _closure1_slot0 = var3;
             var _closure1_slot1 = var4;
-            var0 = function(arg0) { // Original name: base64Decode, environment: var5
+            var0 = function arg0() {
                 var0 = global;
                 var3 = var0.Buffer;
                 var2 = var3.from;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot11 = var0;
-            var0 = function(arg0) { // Original name: base64Encode, environment: var5
+            var0 = function arg0() {
                 var0 = global;
                 var2 = var0.Buffer;
                 var1 = var2.from;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot12 = var0;
-            var8 = function(arg0, arg1) { // Original name: callbackSetter, environment: var5
+            var8 = function arg0, arg1() {
                 var1 = arg1;
                 var _closure2_slot0 = var1;
                 var1 = null;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 403:
             var6 = function() { // Environment: var5
                 var3 = _closure1_slot3;
-                var2 = function() { // Original name: VoiceConnection, environment: var4
+                var2 = function() {
                     var4 = this;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot2;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'wrapRosterCallback';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var4
+                var1 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = function(arg0, arg1, arg2) { // Environment: var0
@@ -677,7 +677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'destroy';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var1 = this;
                     var3 = var1.subscriptions;
                     var2 = var3.forEach;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getId';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var0 = this;
                     var0 = var0.id;
                     return var0;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'boundConnectionMethod';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun30363: for (var _fun30363_ip = 0;;) switch (_fun30363_ip) {
                         case 0:
                             var0 = arg0;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'callbackSetter';
                 var0.key = var5;
-                var4 = function(arg0, arg1) { // Original name: value, environment: var4
+                var4 = function arg0, arg1() {
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var2 = arg1;

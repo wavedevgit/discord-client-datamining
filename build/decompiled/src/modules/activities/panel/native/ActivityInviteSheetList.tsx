@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FriendsEmptyComponent, environment: var1
+    var0 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var12 = var0.bind(var3)();
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var14.bind(var3)(var5);
         var6 = var5.PressableOpacity;
         var5 = {};
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             _fun110432: for (var _fun110432_ip = 0;;) switch (_fun110432_ip) {
                 case 0:
                     var4 = _closure1_slot1;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.goToFriendsLink = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot7 = var6;
-    var6 = function(arg0) { // Original name: keyExtractor, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var0 = var0.item;
         var0 = var0.id;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/panel/native/ActivityInviteSheetList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityInviteSheetList, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.data;
         var _closure2_slot0 = var5;

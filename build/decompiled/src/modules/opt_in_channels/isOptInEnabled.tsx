@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/opt_in_channels/isOptInEnabled.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useOptInEnabledForGuild, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOptInEnabledForGuild = var3;
-    var3 = function(arg0) { // Original name: isOptInEnabledForGuild, environment: var1
+    var3 = function arg0() {
         _fun41512: for (var _fun41512_ip = 0;;) switch (_fun41512_ip) {
             case 0:
                 var4 = arg0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isOptInEnabledForGuild = var3;
-    var1 = function(arg0) { // Original name: useShouldShowOnboardingAdminUpsellForGuild, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;

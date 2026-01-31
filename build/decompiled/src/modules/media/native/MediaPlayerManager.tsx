@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun98480: for (var _fun98480_ip = 0;;) switch (_fun98480_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var1 = function(arg0) { // Original name: isPlaybackComplete, environment: var4
+    var1 = function arg0() {
         _fun98483: for (var _fun98483_ip = 0;;) switch (_fun98483_ip) {
             case 0:
                 var0 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.activeMediaPlayerSource = var1;
         var0.mediaSourceMessage = var1;
         var0.progress = var1;
-        var2 = function() { // Original name: closePip, environment: var2
+        var2 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 16;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var7[var5];
     var5 = var8.bind(var0)(var5);
     var4 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: MediaPlayerManager, environment: var5
+        var3 = function() {
             _fun98488: for (var _fun98488_ip = 0;;) switch (_fun98488_ip) {
                 case 0:
                     var3 = this;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = '_initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun98489: for (var _fun98489_ip = 0;;) switch (_fun98489_ip) {
                 case 0:
                     var2 = this;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateMediaPermissions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_terminate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun98492: for (var _fun98492_ip = 0;;) switch (_fun98492_ip) {
                 case 0:
                     var1 = this;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'pauseCurrentPlayer';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var1 = var0.MediaPlayerManager;
             var0 = var1.pauseCurrentPlayer;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'playCurrentPlayer';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var1 = var0.MediaPlayerManager;
             var0 = var1.playCurrentPlayer;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'userDidClosePip';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 16;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'pauseAndClosePip';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleVoicePanelStateUpdated';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun98500: for (var _fun98500_ip = 0;;) switch (_fun98500_ip) {
                 case 0:
                     var1 = this;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleEmbeddedActivitiesUpdated';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun98501: for (var _fun98501_ip = 0;;) switch (_fun98501_ip) {
                 case 0:
                     var1 = this;
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMediaPlayerPlaybackRateChanged';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -848,7 +848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMediaPlayerPlaybackProgressUpdated';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var2 = var0.source;
             var _closure3_slot0 = var2;
@@ -1006,7 +1006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMediaPlayerPlaybackSourceChanged';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = arg0;
@@ -1131,7 +1131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOrFetchMediaSourceMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun98508: for (var _fun98508_ip = 0;;) switch (_fun98508_ip) {
                 case 0:
                     var0 = arg0;
@@ -1201,7 +1201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMediaSourceMessageUpdated';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -1254,7 +1254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMediaPlayerViewWillAppear';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -1328,7 +1328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMediaPlayerViewDidDisappear';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -1430,7 +1430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateDisplayState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 16;

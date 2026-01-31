@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AutomatedUnderageAppealActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AutomatedUnderageAppealActionSheet, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.onClose;
         var _closure2_slot0 = var0;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var22 = var22.NHq382;
         var22 = var23.bind(var24)(var22);
         var20.subLabel = var22;
-        var22 = function() { // Original name: onPress, environment: var17
+        var22 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var1 = 19;
@@ -558,7 +558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var15.bind(var3)(var11);
         var12 = var11.Button;
         var11 = {};
-        var17 = function() { // Original name: onPress, environment: var17
+        var17 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 21;

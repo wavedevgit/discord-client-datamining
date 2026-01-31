@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DiscountIdToProductOfferId = var3;
     var3 = 'premium-tier-2-monthly-bogo';
     var2.BOGO_OFFER_ID = var3;
-    var3 = function(arg0) { // Original name: getProductIdForGift, environment: var1
+    var3 = function arg0() {
         _fun42101: for (var _fun42101_ip = 0;;) switch (_fun42101_ip) {
             case 0:
                 var2 = arg0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getProductIdForGift = var3;
-    var1 = function(arg0) { // Original name: getPlanIdForGift, environment: var1
+    var1 = function arg0() {
         _fun42102: for (var _fun42102_ip = 0;;) switch (_fun42102_ip) {
             case 0:
                 var2 = arg0;

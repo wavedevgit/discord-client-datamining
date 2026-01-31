@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function() { // Original name: closePortalKeyboard, environment: var1
+    var3 = function() {
         var3 = _closure1_slot2;
         var2 = var3.setState;
         var1 = {};
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/keyboard/native/PortalKeyboardUIStore.native.tsx';
     var5 = var6.bind(var7)(var5);
     var2.PortalKeyboardUIStore = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: openPortalKeyboard, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun35072: for (var _fun35072_ip = 0;;) switch (_fun35072_ip) {
             case 0:
                 var9 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.openPortalKeyboard = var4;
-    var4 = function(arg0) { // Original name: registerPortalKeyboardRenderer, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot2;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.registerPortalKeyboardRenderer = var4;
-    var4 = function(arg0) { // Original name: handlePortalKeyboardOpen, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot2;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handlePortalKeyboardOpen = var4;
     var2.closePortalKeyboard = var3;
-    var3 = function() { // Original name: closePortalKeyboardIfUnhandled, environment: var1
+    var3 = function() {
         _fun35080: for (var _fun35080_ip = 0;;) switch (_fun35080_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.closePortalKeyboardIfUnhandled = var3;
-    var1 = function() { // Original name: closePortalKeyboardRequest, environment: var1
+    var1 = function() {
         _fun35081: for (var _fun35081_ip = 0;;) switch (_fun35081_ip) {
             case 0:
                 var2 = _closure1_slot2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var11;
-    var0 = function(arg0, arg1, arg2) { // Original name: checkReactionResponse, environment: var6
+    var0 = function arg0, arg1, arg2() {
         _fun54319: for (var _fun54319_ip = 0;;) switch (_fun54319_ip) {
             case 0:
                 var2 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: optimisticDispatch, environment: var6
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun54320: for (var _fun54320_ip = 0;;) switch (_fun54320_ip) {
             case 0:
                 var4 = arg4;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: makeURL, environment: var6
+    var0 = function arg0() {
         _fun54321: for (var _fun54321_ip = 0;;) switch (_fun54321_ip) {
             case 0:
                 var1 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _getReactors, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var7 = function() { // Original name: addReaction, environment: var6
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var7;
-    var0 = function() { // Original name: _addReaction, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var5 = function() { // Original name: removeAllReactions, environment: var6
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -986,7 +986,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var5;
-    var0 = function() { // Original name: _removeAllReactions, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var4 = function() { // Original name: removeEmojiReactions, environment: var6
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -1107,7 +1107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var4;
-    var0 = function() { // Original name: _removeEmojiReactions, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1240,7 +1240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var3 = function() { // Original name: removeReaction, environment: var6
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var3;
-    var0 = function() { // Original name: _removeReaction, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1665,7 +1665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: getOptimisticEmojiColors, environment: var6
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot25;
         var2 = var3.apply;
@@ -1676,7 +1676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: _getOptimisticEmojiColors, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1743,7 +1743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: hasUserAlreadyReacted, environment: var6
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun54358: for (var _fun54358_ip = 0;;) switch (_fun54358_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -1830,7 +1830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'modules/reactions/ReactionActionCreators.tsx';
     var9 = var10.bind(var11)(var9);
     var2.ReactionLocations = var8;
-    var8 = function() { // Original name: getReactors, environment: var6
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -1842,7 +1842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getReactors = var8;
     var2.addReaction = var7;
-    var6 = function(arg0) { // Original name: playBurstReaction, environment: var6
+    var6 = function arg0() {
         var0 = arg0;
         var7 = var0.channelId;
         var6 = var0.messageId;

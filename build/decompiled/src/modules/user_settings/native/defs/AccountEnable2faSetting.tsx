@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var7
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 5;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.ACCOUNT;
     var1.parent = var9;
-    var9 = function() { // Original name: onAccountEnable2FASettingPress, environment: var7
+    var9 = function() {
         _fun81043: for (var _fun81043_ip = 0;;) switch (_fun81043_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onPress = var9;
     var1.withArrow = var8;
-    var7 = function() { // Original name: useHasAccountEnable2FASetting, environment: var7
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;

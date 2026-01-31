@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var8)(var9, var1);
     var1 = {};
-    var8 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: zoomTo, environment: var5
+    var8 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.zoomTo = var8;
-    var5 = function(arg0, arg1) { // Original name: unzoom, environment: var5
+    var5 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun49370: for (var _fun49370_ip = 0;;) switch (_fun49370_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun49373: for (var _fun49373_ip = 0;;) switch (_fun49373_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun49375: for (var _fun49375_ip = 0;;) switch (_fun49375_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: parseServerGuildSticker, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: parseServerGuildStickers, environment: var3
+    var0 = function arg0() {
         _fun49377: for (var _fun49377_ip = 0;;) switch (_fun49377_ip) {
             case 0:
                 var0 = {};
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: deriveStickerMetadata, environment: var3
+    var0 = function arg0, arg1() {
         _fun49378: for (var _fun49378_ip = 0;;) switch (_fun49378_ip) {
             case 0:
                 var2 = arg1;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var0)(var1);
     var _closure1_slot10 = var1;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: GuildStickersStore, environment: var5
+        var3 = function arg0() {
             _fun49381: for (var _fun49381_ip = 0;;) switch (_fun49381_ip) {
                 case 0:
                     var4 = this;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getStickerById';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun49385: for (var _fun49385_ip = 0;;) switch (_fun49385_ip) {
                 case 0:
                     var0 = this;
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'stateWrapper';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = this;
             var0 = var0.database;
             return var0;
@@ -743,21 +743,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'GuildStickersStore';
     var6.displayName = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: LOGOUT, environment: var3
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC, environment: var3
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.BACKGROUND_SYNC = var7;
-    var7 = function(arg0, arg1) { // Original name: CONNECTION_OPEN, environment: var3
+    var7 = function arg0, arg1() {
         _fun49389: for (var _fun49389_ip = 0;;) switch (_fun49389_ip) {
             case 0:
                 var3 = arg0;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_CREATE, environment: var3
+    var7 = function arg0, arg1() {
         _fun49390: for (var _fun49390_ip = 0;;) switch (_fun49390_ip) {
             case 0:
                 var6 = arg0;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_CREATE = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_DELETE, environment: var3
+    var7 = function arg0, arg1() {
         var2 = arg1;
         var1 = var2.removePartition;
         var0 = arg0;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DELETE = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_STICKERS_CREATE_SUCCESS, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg0;
         var5 = arg1;
         var4 = var5.setRecord;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_STICKERS_CREATE_SUCCESS = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_STICKER_FETCH_SUCCESS, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg0;
         var5 = arg1;
         var4 = var5.setRecord;
@@ -949,7 +949,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_STICKER_FETCH_SUCCESS = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_STICKERS_UPDATE, environment: var3
+    var7 = function arg0, arg1() {
         _fun49394: for (var _fun49394_ip = 0;;) switch (_fun49394_ip) {
             case 0:
                 var1 = arg0;
@@ -1009,7 +1009,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_STICKERS_UPDATE = var7;
-    var7 = function(arg0, arg1) { // Original name: CACHED_STICKERS_LOADED, environment: var3
+    var7 = function arg0, arg1() {
         _fun49395: for (var _fun49395_ip = 0;;) switch (_fun49395_ip) {
             case 0:
                 var8 = arg1;
@@ -1049,7 +1049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CACHED_STICKERS_LOADED = var7;
-    var3 = function(arg0, arg1) { // Original name: GUILD_STICKERS_FETCH_SUCCESS, environment: var3
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var4 = arg1;
         var3 = var4.setPartition;

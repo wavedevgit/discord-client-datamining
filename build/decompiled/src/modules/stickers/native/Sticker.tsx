@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1, arg2) { // Original name: getStickerAssetUrl, environment: var3
+    var1 = function arg0, arg1, arg2() {
         _fun74333: for (var _fun74333_ip = 0;;) switch (_fun74333_ip) {
             case 0:
                 var3 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stickers/native/Sticker.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun74334: for (var _fun74334_ip = 0;;) switch (_fun74334_ip) {
             case 0:
                 var0 = arg0;

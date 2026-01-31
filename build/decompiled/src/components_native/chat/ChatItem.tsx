@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var7;
             var _closure1_slot1 = var4;
             var _closure1_slot2 = var8;
-            var0 = function(arg0) { // Original name: DCDChatItem, environment: var5
+            var0 = function arg0() {
                 _fun70047: for (var _fun70047_ip = 0;;) switch (_fun70047_ip) {
                     case 0:
                         var2 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.fileFinishedImporting;
             var6 = 'components_native/chat/ChatItem.tsx';
             var6 = var7.bind(var8)(var6);
-            var5 = function(arg0) { // Original name: _default, environment: var5
+            var5 = function arg0() {
                 _fun70049: for (var _fun70049_ip = 0;;) switch (_fun70049_ip) {
                     case 0:
                         var2 = arg0;

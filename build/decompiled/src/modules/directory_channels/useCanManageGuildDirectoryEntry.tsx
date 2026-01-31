@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/useCanManageGuildDirectoryEntry.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useCanManageGuildDirectoryEntry, environment: var1
+    var3 = function arg0() {
         _fun71250: for (var _fun71250_ip = 0;;) switch (_fun71250_ip) {
             case 0:
                 var1 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useCanCreateOrAddGuildInDirectory, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun95561: for (var _fun95561_ip = 0;;) switch (_fun95561_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun95563: for (var _fun95563_ip = 0;;) switch (_fun95563_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0) { // Original name: getDetectableAppScheme, environment: var1
+    var3 = function arg0() {
         _fun95564: for (var _fun95564_ip = 0;;) switch (_fun95564_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var0 = function() { // Original name: _detectLocalApps, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/local_app_detection/native/LocalAppDetectionUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getDetectableAppScheme = var3;
-    var1 = function() { // Original name: detectLocalApps, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: removeTrailingSlash, environment: var0
+    var2 = function arg0() {
         _fun99534: for (var _fun99534_ip = 0;;) switch (_fun99534_ip) {
             case 0:
                 var4 = arg0;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1) { // Original name: isSentryRequestUrl, environment: var0
+    var0 = function arg0, arg1() {
         _fun99535: for (var _fun99535_ip = 0;;) switch (_fun99535_ip) {
             case 0:
                 var3 = arg0;

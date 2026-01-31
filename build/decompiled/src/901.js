@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function() { // Original name: getTraceData, environment: var0
+    var0 = function() {
         _fun9487: for (var _fun9487_ip = 0;;) switch (_fun9487_ip) {
             case 0:
                 var7 = undefined;

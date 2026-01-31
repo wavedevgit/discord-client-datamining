@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/GroupListingsFetchContext.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGroupListingsFetchContext, environment: var1
+    var3 = function arg0() {
         _fun84007: for (var _fun84007_ip = 0;;) switch (_fun84007_ip) {
             case 0:
                 var1 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGroupListingsFetchContext = var3;
-    var1 = function(arg0) { // Original name: GroupListingsFetchContextProvider, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.guildId;
         var _closure2_slot0 = var12;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var6 = var8.bind(var9)(var6, var7);
-        var1 = function(arg0, arg1) { // Original name: useListingsLoaded, environment: var1
+        var1 = function arg0, arg1() {
             var5 = arg0;
             var4 = arg1;
             var _closure3_slot0 = var5;

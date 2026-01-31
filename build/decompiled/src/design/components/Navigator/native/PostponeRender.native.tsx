@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Navigator/native/PostponeRender.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PostponeRender, environment: var1
+    var1 = function arg0() {
         _fun51382: for (var _fun51382_ip = 0;;) switch (_fun51382_ip) {
             case 0:
                 var0 = arg0;

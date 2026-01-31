@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportDefault;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot1 = var3;
-    var3 = function(arg0) { // Original name: FONT_SCALE_GETTER, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.fontScale;
         return var0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/screen/native/useFontScale.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getFontScale, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = var2.getState;
         var1 = var1.bind(var2)();
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getFontScale = var3;
-    var1 = function() { // Original name: useFontScale, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = undefined;

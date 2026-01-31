@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var11;
-    var0 = function(arg0, arg1, arg2) { // Original name: differ, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var5 = function(arg0) { // Original name: muteConfigToTimestamp, environment: var1
+    var5 = function arg0() {
         _fun43340: for (var _fun43340_ip = 0;;) switch (_fun43340_ip) {
             case 0:
                 var1 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var5;
-    var4 = function(arg0) { // Original name: getCurrentGuildSettings, environment: var1
+    var4 = function arg0() {
         _fun43341: for (var _fun43341_ip = 0;;) switch (_fun43341_ip) {
             case 0:
                 var3 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0, arg1) { // Original name: getCurrentChannelSettings, environment: var1
+    var3 = function arg0, arg1() {
         _fun43342: for (var _fun43342_ip = 0;;) switch (_fun43342_ip) {
             case 0:
                 var4 = arg0;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.AnnouncementAutoEnable = var7;
     var _closure1_slot13 = var8;
     var7 = {};
-    var9 = function(arg0) { // Original name: forumThreadsCreated, environment: var1
+    var9 = function arg0() {
         _fun43343: for (var _fun43343_ip = 0;;) switch (_fun43343_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.forumThreadsCreated = var9;
-    var9 = function(arg0) { // Original name: suppressEveryone, environment: var1
+    var9 = function arg0() {
         _fun43344: for (var _fun43344_ip = 0;;) switch (_fun43344_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.suppressEveryone = var9;
-    var9 = function(arg0) { // Original name: suppressRoles, environment: var1
+    var9 = function arg0() {
         _fun43345: for (var _fun43345_ip = 0;;) switch (_fun43345_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.suppressRoles = var9;
-    var9 = function(arg0) { // Original name: highlights, environment: var1
+    var9 = function arg0() {
         _fun43346: for (var _fun43346_ip = 0;;) switch (_fun43346_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.highlights = var9;
-    var9 = function(arg0) { // Original name: mobilePush, environment: var1
+    var9 = function arg0() {
         _fun43347: for (var _fun43347_ip = 0;;) switch (_fun43347_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.mobilePush = var9;
-    var9 = function(arg0) { // Original name: optedIn, environment: var1
+    var9 = function arg0() {
         _fun43348: for (var _fun43348_ip = 0;;) switch (_fun43348_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.optedIn = var9;
-    var9 = function(arg0) { // Original name: favorited, environment: var1
+    var9 = function arg0() {
         _fun43349: for (var _fun43349_ip = 0;;) switch (_fun43349_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.favorited = var9;
-    var9 = function(arg0) { // Original name: muted, environment: var1
+    var9 = function arg0() {
         _fun43350: for (var _fun43350_ip = 0;;) switch (_fun43350_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.muted = var9;
-    var9 = function(arg0) { // Original name: mutedEvents, environment: var1
+    var9 = function arg0() {
         _fun43351: for (var _fun43351_ip = 0;;) switch (_fun43351_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.mutedEvents = var9;
-    var9 = function(arg0) { // Original name: unreads, environment: var1
+    var9 = function arg0() {
         _fun43352: for (var _fun43352_ip = 0;;) switch (_fun43352_ip) {
             case 0:
                 var2 = arg0;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.unreads = var9;
-    var9 = function(arg0) { // Original name: notifications, environment: var1
+    var9 = function arg0() {
         _fun43353: for (var _fun43353_ip = 0;;) switch (_fun43353_ip) {
             case 0:
                 var2 = arg0;
@@ -631,11 +631,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NotificationLabels = var8;
     var2.NotificationLabel = var7;
     var2.MessageNotificationSettings = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: trackGuildNotificationSettingsUpdate, environment: var1
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         _fun43354: for (var _fun43354_ip = 0;;) switch (_fun43354_ip) {
             case 0:
                 var11 = arg0;
-                var4 = function(arg0) { // Original name: compute, environment: var0
+                var4 = function arg0() {
                     _fun43355: for (var _fun43355_ip = 0;;) switch (_fun43355_ip) {
                         case 0:
                             var2 = arg0;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackGuildNotificationSettingsUpdate = var6;
     var2.muteConfigToTimestamp = var5;
-    var5 = function(arg0) { // Original name: trackChannelNotificationSettingsUpdate, environment: var1
+    var5 = function arg0() {
         _fun43356: for (var _fun43356_ip = 0;;) switch (_fun43356_ip) {
             case 0:
                 var3 = arg0;
@@ -899,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.previous;
                 var14 = var3.label;
                 var18 = var3.location;
-                var2 = function(arg0) { // Original name: compute, environment: var2
+                var2 = function arg0() {
                     _fun43357: for (var _fun43357_ip = 0;;) switch (_fun43357_ip) {
                         case 0:
                             var6 = arg0;
@@ -1135,7 +1135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackChannelNotificationSettingsUpdate = var5;
     var2.getCurrentGuildSettings = var4;
-    var4 = function(arg0) { // Original name: getManyCurrentGuildSettings, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var0 = global;
         var0 = var0.Map;
@@ -1165,7 +1165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getManyCurrentGuildSettings = var4;
     var2.getCurrentChannelSettings = var3;
-    var3 = function(arg0, arg1) { // Original name: getManyCurrentChannelSettings, environment: var1
+    var3 = function arg0, arg1() {
         var3 = arg1;
         var0 = arg0;
         var _closure2_slot0 = var0;
@@ -1197,7 +1197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getManyCurrentChannelSettings = var3;
-    var1 = function(arg0, arg1) { // Original name: trackAccountNotificationSettingUpdated, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 10;

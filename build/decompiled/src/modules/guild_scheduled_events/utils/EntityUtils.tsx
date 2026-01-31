@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _getLocationFromEvent, environment: var1
+    var0 = function arg0, arg1() {
         _fun65311: for (var _fun65311_ip = 0;;) switch (_fun65311_ip) {
             case 0:
                 var1 = arg1;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/utils/EntityUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getChannelFromEvent, environment: var1
+    var3 = function arg0() {
         _fun65312: for (var _fun65312_ip = 0;;) switch (_fun65312_ip) {
             case 0:
                 var2 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelFromEvent = var3;
-    var3 = function(arg0) { // Original name: getLocationFromEvent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot3;
         var2 = var0.entity_type;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLocationFromEvent = var3;
-    var3 = function(arg0) { // Original name: getLocationFromEventData, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot3;
         var2 = var0.entityType;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLocationFromEventData = var3;
-    var1 = function(arg0) { // Original name: getChannelTypeFromEntity, environment: var1
+    var1 = function arg0() {
         _fun65315: for (var _fun65315_ip = 0;;) switch (_fun65315_ip) {
             case 0:
                 var2 = arg0;

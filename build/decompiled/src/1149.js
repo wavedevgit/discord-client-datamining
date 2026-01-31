@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0) { // Original name: pickSplat, environment: var3
+    var0 = function arg0() {
         _fun12520: for (var _fun12520_ip = 0;;) switch (_fun12520_ip) {
             case 0:
                 var0 = arg0;
@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: trimSlash, environment: var3
+    var0 = function arg0() {
         _fun12521: for (var _fun12521_ip = 0;;) switch (_fun12521_ip) {
             case 0:
                 var4 = arg0;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var7 = function(arg0) { // Original name: pathEndsWithWildcard, environment: var3
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.endsWith;
         var0 = '*';
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var7;
-    var6 = function(arg0, arg1) { // Original name: pathIsWildcardAndHasChildren, environment: var3
+    var6 = function arg0, arg1() {
         _fun12523: for (var _fun12523_ip = 0;;) switch (_fun12523_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var6;
-    var1 = function(arg0) { // Original name: routeIsDescendant, environment: var3
+    var1 = function arg0() {
         _fun12524: for (var _fun12524_ip = 0;;) switch (_fun12524_ip) {
             case 0:
                 var1 = arg0;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var1;
-    var0 = function(arg0, arg1, arg2) { // Original name: sendIndexPath, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun12525: for (var _fun12525_ip = 0;;) switch (_fun12525_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var9 = function(arg0) { // Original name: getNumberOfUrlSegments, environment: var3
+    var9 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = /\\?\\/ / ;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var9;
-    var0 = function(arg0, arg1) { // Original name: stripBasenameFromPathname, environment: var3
+    var0 = function arg0, arg1() {
         _fun12528: for (var _fun12528_ip = 0;;) switch (_fun12528_ip) {
             case 0:
                 var0 = arg0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var5 = function(arg0) { // Original name: prefixWithSlash, environment: var3
+    var5 = function arg0() {
         _fun12529: for (var _fun12529_ip = 0;;) switch (_fun12529_ip) {
             case 0:
                 var3 = arg0;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0, arg1) { // Original name: rebuildRoutePathFromAllRoutes, environment: var3
+    var4 = function arg0, arg1() {
         _fun12530: for (var _fun12530_ip = 0;;) switch (_fun12530_ip) {
             case 0:
                 var6 = arg0;
@@ -355,7 +355,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun12530
                 }
             case 49:
-                var4 = function(arg0) { // Original name: _loop, environment: var1
+                var4 = function arg0() {
                     _fun12531: for (var _fun12531_ip = 0;;) switch (_fun12531_ip) {
                         case 0:
                             var3 = arg0;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = undefined;
                             return var0;
                         case 48:
-                            var0 = function(arg0) { // Original name: pickPath, environment: var1
+                            var0 = function arg0() {
                                 _fun12532: for (var _fun12532_ip = 0;;) switch (_fun12532_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -505,7 +505,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var4;
-    var8 = function(arg0, arg1) { // Original name: locationIsInsideDescendantRoute, environment: var3
+    var8 = function arg0, arg1() {
         _fun12534: for (var _fun12534_ip = 0;;) switch (_fun12534_ip) {
             case 0:
                 var3 = undefined;
@@ -563,7 +563,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var8;
-    var0 = function(arg0, arg1) { // Original name: getFallbackTransactionName, environment: var3
+    var0 = function arg0, arg1() {
         _fun12535: for (var _fun12535_ip = 0;;) switch (_fun12535_ip) {
             case 0:
                 var1 = arg0;
@@ -594,7 +594,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var0;
-    var10 = function(arg0, arg1, arg2) { // Original name: getNormalizedName, environment: var3
+    var10 = function arg0, arg1, arg2() {
         _fun12536: for (var _fun12536_ip = 0;;) switch (_fun12536_ip) {
             case 0:
                 var5 = arg0;
@@ -886,7 +886,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var11;
     var2.getNormalizedName = var10;
     var2.getNumberOfUrlSegments = var9;
-    var9 = function(arg0) { // Original name: initializeRouterUtils, environment: var3
+    var9 = function arg0() {
         _fun12537: for (var _fun12537_ip = 0;;) switch (_fun12537_ip) {
             case 0:
                 var0 = undefined;
@@ -921,7 +921,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.pathIsWildcardAndHasChildren = var6;
     var2.prefixWithSlash = var5;
     var2.rebuildRoutePathFromAllRoutes = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: resolveRouteNameAndSource, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun12538: for (var _fun12538_ip = 0;;) switch (_fun12538_ip) {
             case 0:
                 var0 = arg0;

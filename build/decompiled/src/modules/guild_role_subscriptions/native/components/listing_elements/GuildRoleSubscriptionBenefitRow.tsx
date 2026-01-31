@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getEmojiId, environment: var1
+    var0 = function arg0() {
         _fun84277: for (var _fun84277_ip = 0;;) switch (_fun84277_ip) {
             case 0:
                 var1 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: BenefitRow, environment: var1
+    var0 = function arg0() {
         _fun84278: for (var _fun84278_ip = 0;;) switch (_fun84278_ip) {
             case 0:
                 var0 = arg0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionBenefitRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ChannelBenefitRow, environment: var1
+    var3 = function arg0() {
         _fun84279: for (var _fun84279_ip = 0;;) switch (_fun84279_ip) {
             case 0:
                 var1 = arg0;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ChannelBenefitRow = var3;
-    var1 = function(arg0) { // Original name: IntangibleBenefitRow, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.benefit;
         var6 = var0.guildId;

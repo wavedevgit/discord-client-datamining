@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var9;
-    var0 = function(arg0) { // Original name: timeoutAttachmentsAndEmbedsForMessage, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var0 = {};
         var5 = var2.attachments;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var3 = function() { // Original name: useShouldAgeVerifyForExplicitMedia, environment: var1
+    var3 = function() {
         _fun39018: for (var _fun39018_ip = 0;;) switch (_fun39018_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0) { // Original name: redactionSettingToRenderedString, environment: var1
+    var7 = function arg0() {
         _fun39019: for (var _fun39019_ip = 0;;) switch (_fun39019_ip) {
             case 0:
                 var3 = arg0;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.redactionSettingToRenderedString = var7;
-    var7 = function(arg0) { // Original name: isPendingScanVersion, environment: var1
+    var7 = function arg0() {
         _fun39023: for (var _fun39023_ip = 0;;) switch (_fun39023_ip) {
             case 0:
                 var4 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isPendingScanVersion = var7;
     var2.TrackMediaRedactionActionType = var6;
     var2.TrackMediaRedactionContext = var5;
-    var5 = function(arg0) { // Original name: trackMediaRedactionAction, environment: var1
+    var5 = function arg0() {
         _fun39024: for (var _fun39024_ip = 0;;) switch (_fun39024_ip) {
             case 0:
                 var0 = arg0;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackMediaRedactionAction = var5;
     var2.TimeoutCancelSource = var4;
-    var4 = function(arg0, arg1) { // Original name: trackScanTiming, environment: var1
+    var4 = function arg0, arg1() {
         var5 = global;
         var1 = var5.Date;
         var0 = var1.now;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackScanTiming = var4;
-    var4 = function(arg0) { // Original name: trackScanningTimedOut, environment: var1
+    var4 = function arg0() {
         _fun39026: for (var _fun39026_ip = 0;;) switch (_fun39026_ip) {
             case 0:
                 var1 = arg0;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackScanningTimedOut = var4;
-    var4 = function(arg0) { // Original name: trackExplicitMediaRedactableMessagedLoaded, environment: var1
+    var4 = function arg0() {
         _fun39027: for (var _fun39027_ip = 0;;) switch (_fun39027_ip) {
             case 0:
                 var0 = arg0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackExplicitMediaRedactableMessagedLoaded = var4;
-    var4 = function(arg0) { // Original name: trackRedactableMessageLoaded, environment: var1
+    var4 = function arg0() {
         _fun39028: for (var _fun39028_ip = 0;;) switch (_fun39028_ip) {
             case 0:
                 var0 = arg0;
@@ -781,7 +781,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackRedactableMessageLoaded = var4;
-    var4 = function(arg0) { // Original name: trackExplicitMediaScanComplete, environment: var1
+    var4 = function arg0() {
         _fun39029: for (var _fun39029_ip = 0;;) switch (_fun39029_ip) {
             case 0:
                 var0 = arg0;
@@ -843,14 +843,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackExplicitMediaScanComplete = var4;
-    var4 = function(arg0) { // Original name: handleExplicitMediaScanTimeoutForMessage, environment: var1
+    var4 = function arg0() {
         var2 = arg0;
         var0 = _closure1_slot9;
         var1 = undefined;
         var0 = var0.bind(var1)(var2);
         var5 = var0.attachments;
         var4 = var0.embeds;
-        var0 = function(arg0) { // Original name: handleExplicitMediaScanTimeoutForForwardedMessage, environment: var0
+        var0 = function arg0() {
             _fun39031: for (var _fun39031_ip = 0;;) switch (_fun39031_ip) {
                 case 0:
                     var0 = arg0;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isObscuredMediaBelowConstraints = var4;
-    var4 = function() { // Original name: shouldAgeVerifyForExplicitMedia, environment: var1
+    var4 = function() {
         _fun39034: for (var _fun39034_ip = 0;;) switch (_fun39034_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldAgeVerifyForExplicitMedia = var4;
     var2.useShouldAgeVerifyForExplicitMedia = var3;
-    var3 = function(arg0) { // Original name: useShouldAgeVerifyForReason, environment: var1
+    var3 = function arg0() {
         _fun39035: for (var _fun39035_ip = 0;;) switch (_fun39035_ip) {
             case 0:
                 var3 = arg0;
@@ -1020,7 +1020,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldAgeVerifyForReason = var3;
-    var3 = function(arg0) { // Original name: trackToggleMediaObscurityV2, environment: var1
+    var3 = function arg0() {
         _fun39036: for (var _fun39036_ip = 0;;) switch (_fun39036_ip) {
             case 0:
                 var0 = arg0;
@@ -1062,7 +1062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackToggleMediaObscurityV2 = var3;
-    var1 = function(arg0) { // Original name: hasMessageSnapshotsWithAttachmentsOrEmbeds, environment: var1
+    var1 = function arg0() {
         _fun39037: for (var _fun39037_ip = 0;;) switch (_fun39037_ip) {
             case 0:
                 var0 = arg0;

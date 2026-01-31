@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: UserProfileAboutMeCardCommand, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.application;
         var _closure2_slot0 = var1;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var7 = 'text-md/bold';
         var0.variant = var7;
-        var7 = function() { // Original name: onPress, environment: var6
+        var7 = function() {
             _fun61723: for (var _fun61723_ip = 0;;) switch (_fun61723_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.commandId = var6;
                     var5 = var5.displayName;
                     var1.commandName = var5;
-                    var5 = function(arg0) { // Original name: onOpenCustomKeyboard, environment: var4
+                    var5 = function arg0() {
                         _fun61724: for (var _fun61724_ip = 0;;) switch (_fun61724_ip) {
                             case 0:
                                 var2 = _closure3_slot0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.onOpenCustomKeyboard = var5;
-                    var4 = function() { // Original name: onSetCommand, environment: var4
+                    var4 = function() {
                         _fun61725: for (var _fun61725_ip = 0;;) switch (_fun61725_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.onPress = var7;
-        var6 = function() { // Original name: onLongPress, environment: var6
+        var6 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 7;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun54095: for (var _fun54095_ip = 0;;) switch (_fun54095_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: isCompleted, environment: var3
+    var0 = function arg0() {
         _fun54098: for (var _fun54098_ip = 0;;) switch (_fun54098_ip) {
             case 0:
                 var1 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: trackRoundtrip, environment: var3
+    var0 = function arg0() {
         _fun54099: for (var _fun54099_ip = 0;;) switch (_fun54099_ip) {
             case 0:
                 var5 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: MessageRoundtripTrackerStoreClass, environment: var5
+        var3 = function arg0() {
             _fun54101: for (var _fun54101_ip = 0;;) switch (_fun54101_ip) {
                 case 0:
                     var3 = this;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot8;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'recordMessageSendAttempt';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun54103: for (var _fun54103_ip = 0;;) switch (_fun54103_ip) {
                 case 0:
                     var6 = arg1;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'recordMessageSendApiResponse';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun54105: for (var _fun54105_ip = 0;;) switch (_fun54105_ip) {
                 case 0:
                     var2 = arg0;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'recordGatewayResponse';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun54106: for (var _fun54106_ip = 0;;) switch (_fun54106_ip) {
                 case 0:
                     var2 = arg0;
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: handleMessageCreate, environment: var3
+    var6 = function arg0() {
         _fun54107: for (var _fun54107_ip = 0;;) switch (_fun54107_ip) {
             case 0:
                 var1 = arg0;

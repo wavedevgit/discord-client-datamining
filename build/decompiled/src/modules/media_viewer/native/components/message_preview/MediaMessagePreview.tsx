@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MeasureMessage, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var11 = var1.message;
         var _closure2_slot0 = var11;
@@ -41,11 +41,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[4] = var8;
         var1[5] = var5;
         var0 = function() { // Environment: var0
-            var3 = function(arg0) { // Original name: generateChatItemProps, environment: var0
+            var3 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var2 = function(arg0) { // Original name: onLayout, environment: var1
+                var2 = function arg0() {
                     _fun73158: for (var _fun73158_ip = 0;;) switch (_fun73158_ip) {
                         case 0:
                             var0 = global;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.onLayout = var2;
-                var1 = function(arg0) { // Original name: modifyRow, environment: var1
+                var1 = function arg0() {
                     _fun73159: for (var _fun73159_ip = 0;;) switch (_fun73159_ip) {
                         case 0:
                             var2 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var15[var3](var14);
     var8 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot16 = var8;
-    var3 = function(arg0, arg1, arg2) { // Original name: rowModifierShared, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = arg0;
         var0 = arg1;
         var0 = !var0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/components/message_preview/MediaMessagePreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaMessagePreview, environment: var1
+    var1 = function arg0() {
         _fun73161: for (var _fun73161_ip = 0;;) switch (_fun73161_ip) {
             case 0:
                 var1 = arg0;
@@ -1012,7 +1012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = _closure1_slot6;
                 var16 = {};
                 var16.scrollEventThrottle = var34;
-                var34 = function(arg0) { // Original name: onScroll, environment: var27
+                var34 = function arg0() {
                     _fun73175: for (var _fun73175_ip = 0;;) switch (_fun73175_ip) {
                         case 0:
                             var0 = arg0;
@@ -1072,7 +1072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.onTapReaction = var30;
                 var19.onTapSeeMore = var29;
                 var19.onTapTag = var28;
-                var27 = function(arg0) { // Original name: onTapLink, environment: var27
+                var27 = function arg0() {
                     _fun73176: for (var _fun73176_ip = 0;;) switch (_fun73176_ip) {
                         case 0:
                             var0 = _closure2_slot5;
@@ -1104,7 +1104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = true;
                             var0.allowWithinModal = var5;
                             var0.chatInputRef = var4;
-                            var4 = function(arg0, arg1, arg2) { // Original name: handleTransitionToThread, environment: var4
+                            var4 = function arg0, arg1, arg2() {
                                 _fun73177: for (var _fun73177_ip = 0;;) switch (_fun73177_ip) {
                                     case 0:
                                         var3 = _closure1_slot9;

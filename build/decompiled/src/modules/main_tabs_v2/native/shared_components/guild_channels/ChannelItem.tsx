@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: LaunchpadChannelIcon, environment: var1
+    var0 = function arg0() {
         _fun105468: for (var _fun105468_ip = 0;;) switch (_fun105468_ip) {
             case 0:
                 var1 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getChannelAccessibilityProps, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.channel;
         var7 = var0.unread;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getChannelAccessibilityProps = var3;
-    var1 = function(arg0) { // Original name: renderChannelItem, environment: var1
+    var1 = function arg0() {
         _fun105472: for (var _fun105472_ip = 0;;) switch (_fun105472_ip) {
             case 0:
                 var0 = arg0;

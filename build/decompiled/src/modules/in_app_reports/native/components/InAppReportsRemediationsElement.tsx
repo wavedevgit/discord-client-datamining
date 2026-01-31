@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsRemediationsElement.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RemediationsElement, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.children;
         var0 = _closure1_slot4;

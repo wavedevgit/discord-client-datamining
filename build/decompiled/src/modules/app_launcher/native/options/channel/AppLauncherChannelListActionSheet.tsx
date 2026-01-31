@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: ChannelIcon, environment: var3
+    var1 = function arg0() {
         _fun105474: for (var _fun105474_ip = 0;;) switch (_fun105474_ip) {
             case 0:
                 var0 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/options/channel/AppLauncherChannelListActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AppLauncherChannelListActionSheet, environment: var3
+    var3 = function arg0() {
         _fun105475: for (var _fun105475_ip = 0;;) switch (_fun105475_ip) {
             case 0:
                 var1 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0 = var2.bind(var4)(var0, var1);
-                var0 = function(arg0) { // Original name: handleChannelPress, environment: var10
+                var0 = function arg0() {
                     var0 = arg0;
                     var0 = var0.channel;
                     var3 = _closure2_slot0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var3)(var4);
                 var8 = var4.AppLauncherListSearchBar;
                 var4 = {};
-                var14 = function(arg0) { // Original name: onChange, environment: var10
+                var14 = function arg0() {
                     _fun105478: for (var _fun105478_ip = 0;;) switch (_fun105478_ip) {
                         case 0:
                             var2 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.ref = var12;
                 var5.data = var11;
-                var10 = function(arg0) { // Original name: renderItem, environment: var10
+                var10 = function arg0() {
                     var1 = arg0;
                     var0 = var1.item;
                     var _closure3_slot0 = var0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var8.bind(var3)(var1);
                     var2 = var1.TableRow;
                     var1 = {};
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         var2 = _closure2_slot9;
                         var1 = {};
                         var0 = _closure3_slot0;

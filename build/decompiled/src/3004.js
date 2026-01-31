@@ -6,10 +6,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = require;
                     var _closure1_slot0 = var2;
                     var _closure1_slot1 = var1;
-                    var2 = function() { // Original name: t, environment: var0
+                    var2 = function() {
                         _fun24016: for (var _fun24016_ip = 0;;) switch (_fun24016_ip) {
                             case 0:
-                                var0 = function() { // Original name: hooks, environment: var2
+                                var0 = function() {
                                     var0 = undefined;
                                     var3 = _closure2_slot0;
                                     var2 = var3.apply;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot55 = var0;
-                                var1 = function(arg0) { // Original name: isArray, environment: var2
+                                var1 = function arg0() {
                                     _fun24018: for (var _fun24018_ip = 0;;) switch (_fun24018_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot56 = var1;
-                                var1 = function(arg0) { // Original name: isObject, environment: var2
+                                var1 = function arg0() {
                                     _fun24019: for (var _fun24019_ip = 0;;) switch (_fun24019_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -68,14 +68,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot57 = var1;
-                                var1 = function(arg0) { // Original name: isUndefined, environment: var2
+                                var1 = function arg0() {
                                     var1 = undefined;
                                     var0 = arg0;
                                     var0 = var1 === var0;
                                     return var0;
                                 };
                                 var _closure2_slot58 = var1;
-                                var1 = function(arg0) { // Original name: isNumber, environment: var2
+                                var1 = function arg0() {
                                     _fun24021: for (var _fun24021_ip = 0;;) switch (_fun24021_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot59 = var1;
-                                var11 = function(arg0) { // Original name: isDate, environment: var2
+                                var11 = function arg0() {
                                     _fun24022: for (var _fun24022_ip = 0;;) switch (_fun24022_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot60 = var11;
-                                var1 = function(arg0, arg1) { // Original name: map, environment: var2
+                                var1 = function arg0, arg1() {
                                     _fun24023: for (var _fun24023_ip = 0;;) switch (_fun24023_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot61 = var1;
-                                var1 = function(arg0, arg1) { // Original name: hasOwnProp, environment: var2
+                                var1 = function arg0, arg1() {
                                     var0 = global;
                                     var0 = var0.Object;
                                     var0 = var0.prototype;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot62 = var1;
-                                var1 = function(arg0, arg1) { // Original name: extend, environment: var2
+                                var1 = function arg0, arg1() {
                                     _fun24025: for (var _fun24025_ip = 0;;) switch (_fun24025_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot63 = var1;
-                                var12 = function(arg0, arg1, arg2, arg3) { // Original name: createUTC, environment: var2
+                                var12 = function arg0, arg1, arg2, arg3() {
                                     var6 = _closure2_slot119;
                                     var12 = undefined;
                                     var11 = arg0;
@@ -228,7 +228,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot64 = var12;
-                                var1 = function(arg0) { // Original name: getParsingFlags, environment: var2
+                                var1 = function arg0() {
                                     _fun24027: for (var _fun24027_ip = 0;;) switch (_fun24027_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot65 = var1;
-                                var1 = function(arg0) { // Original name: isValid, environment: var2
+                                var1 = function arg0() {
                                     _fun24028: for (var _fun24028_ip = 0;;) switch (_fun24028_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -449,7 +449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot66 = var1;
-                                var9 = function(arg0) { // Original name: createInvalid, environment: var2
+                                var9 = function arg0() {
                                     _fun24030: for (var _fun24030_ip = 0;;) switch (_fun24030_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -480,7 +480,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot67 = var9;
-                                var1 = function(arg0, arg1) { // Original name: copyConfig, environment: var2
+                                var1 = function arg0, arg1() {
                                     _fun24031: for (var _fun24031_ip = 0;;) switch (_fun24031_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -638,7 +638,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot68 = var1;
-                                var1 = function(arg0) { // Original name: Moment, environment: var2
+                                var1 = function arg0() {
                                     _fun24032: for (var _fun24032_ip = 0;;) switch (_fun24032_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -712,7 +712,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot69 = var1;
-                                var7 = function(arg0) { // Original name: isMoment, environment: var2
+                                var7 = function arg0() {
                                     _fun24033: for (var _fun24033_ip = 0;;) switch (_fun24033_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -739,7 +739,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot70 = var7;
-                                var3 = function(arg0) { // Original name: absFloor, environment: var2
+                                var3 = function arg0() {
                                     _fun24034: for (var _fun24034_ip = 0;;) switch (_fun24034_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -773,7 +773,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot71 = var3;
-                                var3 = function(arg0) { // Original name: toInt, environment: var2
+                                var3 = function arg0() {
                                     _fun24035: for (var _fun24035_ip = 0;;) switch (_fun24035_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -804,7 +804,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot72 = var3;
-                                var3 = function(arg0, arg1, arg2) { // Original name: compareArrays, environment: var2
+                                var3 = function arg0, arg1, arg2() {
                                     _fun24036: for (var _fun24036_ip = 0;;) switch (_fun24036_ip) {
                                         case 0:
                                             var9 = arg0;
@@ -883,7 +883,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot73 = var3;
-                                var3 = function(arg0) { // Original name: warn, environment: var2
+                                var3 = function arg0() {
                                     _fun24037: for (var _fun24037_ip = 0;;) switch (_fun24037_ip) {
                                         case 0:
                                             var0 = _closure2_slot55;
@@ -928,7 +928,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot74 = var3;
-                                var24 = function(arg0, arg1) { // Original name: deprecate, environment: var2
+                                var24 = function arg0, arg1() {
                                     var3 = arg1;
                                     var1 = arg0;
                                     var _closure3_slot0 = var1;
@@ -1063,7 +1063,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1 = var2.bind(var1)(var0, var3);
                                     return var0;
                                 };
-                                var3 = function(arg0, arg1) { // Original name: deprecateSimple, environment: var2
+                                var3 = function arg0, arg1() {
                                     _fun24040: for (var _fun24040_ip = 0;;) switch (_fun24040_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -1099,7 +1099,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot75 = var3;
-                                var3 = function(arg0) { // Original name: isFunction, environment: var2
+                                var3 = function arg0() {
                                     _fun24041: for (var _fun24041_ip = 0;;) switch (_fun24041_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -1123,7 +1123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot76 = var3;
-                                var3 = function(arg0, arg1) { // Original name: mergeConfigs, environment: var2
+                                var3 = function arg0, arg1() {
                                     _fun24042: for (var _fun24042_ip = 0;;) switch (_fun24042_ip) {
                                         case 0:
                                             var9 = arg0;
@@ -1219,7 +1219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot77 = var3;
-                                var36 = function(arg0) { // Original name: Locale, environment: var2
+                                var36 = function arg0() {
                                     _fun24043: for (var _fun24043_ip = 0;;) switch (_fun24043_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -1238,7 +1238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot78 = var36;
-                                var60 = function(arg0, arg1) { // Original name: addUnitAlias, environment: var2
+                                var60 = function arg0, arg1() {
                                     var2 = arg0;
                                     var0 = var2.toLowerCase;
                                     var1 = var0.bind(var2)();
@@ -1253,7 +1253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var0 = undefined;
                                     return var0;
                                 };
-                                var3 = function(arg0) { // Original name: normalizeUnits, environment: var2
+                                var3 = function arg0() {
                                     _fun24045: for (var _fun24045_ip = 0;;) switch (_fun24045_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -1283,7 +1283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot79 = var3;
-                                var4 = function(arg0) { // Original name: normalizeObjectUnits, environment: var2
+                                var4 = function arg0() {
                                     _fun24046: for (var _fun24046_ip = 0;;) switch (_fun24046_ip) {
                                         case 0:
                                             var9 = arg0;
@@ -1320,7 +1320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot80 = var4;
-                                var62 = function(arg0, arg1) { // Original name: addUnitPriority, environment: var2
+                                var62 = function arg0, arg1() {
                                     var2 = _closure2_slot7;
                                     var1 = arg1;
                                     var0 = arg0;
@@ -1328,7 +1328,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var0 = undefined;
                                     return var0;
                                 };
-                                var4 = function(arg0, arg1, arg2) { // Original name: zeroFill, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     _fun24048: for (var _fun24048_ip = 0;;) switch (_fun24048_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -1377,7 +1377,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot81 = var4;
-                                var22 = function(arg0, arg1, arg2, arg3) { // Original name: addFormatToken, environment: var2
+                                var22 = function arg0, arg1, arg2, arg3() {
                                     _fun24049: for (var _fun24049_ip = 0;;) switch (_fun24049_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -1395,7 +1395,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 continue _fun24049
                                             }
                                         case 41:
-                                            var1 = function() { // Original name: func, environment: var0
+                                            var1 = function() {
                                                 var1 = this;
                                                 var0 = _closure3_slot2;
                                                 var0 = var1[var0];
@@ -1468,7 +1468,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot82 = var22;
-                                var4 = function(arg0, arg1) { // Original name: formatMoment, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24053: for (var _fun24053_ip = 0;;) switch (_fun24053_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -1499,7 +1499,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 continue _fun24053
                                             }
                                         case 77:
-                                            var6 = function(arg0) { // Original name: makeFormatFunction, environment: var6
+                                            var6 = function arg0() {
                                                 _fun24054: for (var _fun24054_ip = 0;;) switch (_fun24054_ip) {
                                                     case 0:
                                                         var3 = arg0;
@@ -1622,13 +1622,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot83 = var4;
-                                var4 = function(arg0, arg1) { // Original name: expandFormat, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24056: for (var _fun24056_ip = 0;;) switch (_fun24056_ip) {
                                         case 0:
                                             var0 = arg0;
                                             var2 = arg1;
                                             var _closure3_slot0 = var2;
-                                            var7 = function(arg0) { // Original name: replaceLongDateFormatTokens, environment: var1
+                                            var7 = function arg0() {
                                                 _fun24057: for (var _fun24057_ip = 0;;) switch (_fun24057_ip) {
                                                     case 0:
                                                         var1 = arg0;
@@ -1686,7 +1686,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot84 = var4;
-                                var19 = function(arg0, arg1, arg2) { // Original name: addRegexToken, environment: var2
+                                var19 = function arg0, arg1, arg2() {
                                     _fun24058: for (var _fun24058_ip = 0;;) switch (_fun24058_ip) {
                                         case 0:
                                             var2 = arg1;
@@ -1732,7 +1732,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             return var0;
                                     }
                                 };
-                                var4 = function(arg0, arg1) { // Original name: getParseRegexForToken, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24060: for (var _fun24060_ip = 0;;) switch (_fun24060_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -1748,7 +1748,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         case 28:
                                             var0 = global;
                                             var5 = var0.RegExp;
-                                            var0 = function(arg0) { // Original name: unescapeFormat, environment: var0
+                                            var0 = function arg0() {
                                                 var4 = arg0;
                                                 var2 = _closure2_slot86;
                                                 var3 = var4.replace;
@@ -1816,7 +1816,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot85 = var4;
-                                var4 = function(arg0) { // Original name: regexEscape, environment: var2
+                                var4 = function arg0() {
                                     var3 = arg0;
                                     var2 = var3.replace;
                                     var1 = /[-\\/\\^$*+?.()|[\]{}]/g;
@@ -1825,7 +1825,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot86 = var4;
-                                var17 = function(arg0, arg1) { // Original name: addParseToken, environment: var2
+                                var17 = function arg0, arg1() {
                                     _fun24064: for (var _fun24064_ip = 0;;) switch (_fun24064_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -1851,7 +1851,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 continue _fun24064
                                             }
                                         case 54:
-                                            var3 = function(arg0, arg1) { // Original name: func, environment: var1
+                                            var3 = function arg0, arg1() {
                                                 var3 = _closure3_slot0;
                                                 var2 = _closure2_slot72;
                                                 var0 = undefined;
@@ -1884,7 +1884,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot87 = var17;
-                                var61 = function(arg0, arg1) { // Original name: addWeekParseToken, environment: var2
+                                var61 = function arg0, arg1() {
                                     var0 = arg1;
                                     var _closure3_slot0 = var0;
                                     var3 = _closure2_slot87;
@@ -1917,7 +1917,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1 = var3.bind(var0)(var2, var1);
                                     return var0;
                                 };
-                                var4 = function(arg0, arg1, arg2) { // Original name: addTimeToArrayFromToken, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     _fun24068: for (var _fun24068_ip = 0;;) switch (_fun24068_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -1954,7 +1954,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot88 = var4;
-                                var4 = function(arg0) { // Original name: daysInYear, environment: var2
+                                var4 = function arg0() {
                                     _fun24069: for (var _fun24069_ip = 0;;) switch (_fun24069_ip) {
                                         case 0:
                                             var2 = _closure2_slot90;
@@ -1973,7 +1973,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot89 = var4;
-                                var4 = function(arg0) { // Original name: isLeapYear, environment: var2
+                                var4 = function arg0() {
                                     _fun24070: for (var _fun24070_ip = 0;;) switch (_fun24070_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -2003,7 +2003,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot90 = var4;
-                                var52 = function(arg0, arg1) { // Original name: makeGetSet, environment: var2
+                                var52 = function arg0, arg1() {
                                     var1 = arg0;
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
@@ -2041,7 +2041,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     };
                                     return var0;
                                 };
-                                var4 = function(arg0, arg1) { // Original name: get, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24073: for (var _fun24073_ip = 0;;) switch (_fun24073_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -2078,7 +2078,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot91 = var4;
-                                var4 = function(arg0, arg1, arg2) { // Original name: set$1, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     _fun24074: for (var _fun24074_ip = 0;;) switch (_fun24074_ip) {
                                         case 0:
                                             var7 = arg0;
@@ -2179,7 +2179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot92 = var4;
-                                var4 = function(arg0, arg1) { // Original name: daysInMonth, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24075: for (var _fun24075_ip = 0;;) switch (_fun24075_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -2241,7 +2241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot93 = var4;
-                                var4 = function(arg0, arg1, arg2) { // Original name: handleStrictParse, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     _fun24076: for (var _fun24076_ip = 0;;) switch (_fun24076_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -2394,7 +2394,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot94 = var4;
-                                var4 = function(arg0, arg1) { // Original name: setMonth, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24077: for (var _fun24077_ip = 0;;) switch (_fun24077_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -2474,7 +2474,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot95 = var4;
-                                var39 = function(arg0) { // Original name: getSetMonth, environment: var2
+                                var39 = function arg0() {
                                     _fun24078: for (var _fun24078_ip = 0;;) switch (_fun24078_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -2504,11 +2504,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             return var0;
                                     }
                                 };
-                                var4 = function() { // Original name: computeMonthsParse, environment: var2
+                                var4 = function() {
                                     _fun24079: for (var _fun24079_ip = 0;;) switch (_fun24079_ip) {
                                         case 0:
                                             var2 = this;
-                                            var3 = function(arg0, arg1) { // Original name: cmpLenRev, environment: var0
+                                            var3 = function arg0, arg1() {
                                                 var0 = arg1;
                                                 var1 = var0.length;
                                                 var0 = arg0;
@@ -2640,7 +2640,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot96 = var4;
-                                var4 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: createDate, environment: var2
+                                var4 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
                                     _fun24081: for (var _fun24081_ip = 0;;) switch (_fun24081_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -2695,7 +2695,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot97 = var4;
-                                var4 = function(arg0) { // Original name: createUTCDate, environment: var2
+                                var4 = function arg0() {
                                     _fun24082: for (var _fun24082_ip = 0;;) switch (_fun24082_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -2751,7 +2751,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot98 = var4;
-                                var4 = function(arg0, arg1, arg2) { // Original name: firstWeekOffset, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     var3 = arg1;
                                     var2 = 7;
                                     var1 = var2 + var3;
@@ -2774,7 +2774,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot99 = var4;
-                                var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: dayOfYearFromWeeks, environment: var2
+                                var4 = function arg0, arg1, arg2, arg3, arg4() {
                                     _fun24084: for (var _fun24084_ip = 0;;) switch (_fun24084_ip) {
                                         case 0:
                                             var6 = arg0;
@@ -2830,7 +2830,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot100 = var4;
-                                var4 = function(arg0, arg1, arg2) { // Original name: weekOfYear, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     _fun24085: for (var _fun24085_ip = 0;;) switch (_fun24085_ip) {
                                         case 0:
                                             var9 = arg0;
@@ -2899,7 +2899,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot101 = var4;
-                                var4 = function(arg0, arg1, arg2) { // Original name: weeksInYear, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     var4 = arg0;
                                     var7 = arg1;
                                     var6 = arg2;
@@ -2918,7 +2918,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot102 = var4;
-                                var4 = function(arg0, arg1, arg2) { // Original name: handleStrictParse$1, environment: var2
+                                var4 = function arg0, arg1, arg2() {
                                     _fun24087: for (var _fun24087_ip = 0;;) switch (_fun24087_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -3162,11 +3162,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot103 = var4;
-                                var4 = function() { // Original name: computeWeekdaysParse, environment: var2
+                                var4 = function() {
                                     _fun24088: for (var _fun24088_ip = 0;;) switch (_fun24088_ip) {
                                         case 0:
                                             var2 = this;
-                                            var7 = function(arg0, arg1) { // Original name: cmpLenRev, environment: var0
+                                            var7 = function arg0, arg1() {
                                                 var0 = arg1;
                                                 var1 = var0.length;
                                                 var0 = arg0;
@@ -3312,7 +3312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot104 = var4;
-                                var70 = function() { // Original name: hFormat, environment: var2
+                                var70 = function() {
                                     _fun24090: for (var _fun24090_ip = 0;;) switch (_fun24090_ip) {
                                         case 0:
                                             var1 = this;
@@ -3331,7 +3331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot105 = var70;
-                                var81 = function(arg0, arg1) { // Original name: meridiem, environment: var2
+                                var81 = function arg0, arg1() {
                                     var0 = arg1;
                                     var _closure3_slot0 = var0;
                                     var4 = _closure2_slot82;
@@ -3356,12 +3356,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1 = var9[var4](var8, var7, var6, var5, var4);
                                     return var0;
                                 };
-                                var79 = function(arg0, arg1) { // Original name: matchMeridiem, environment: var2
+                                var79 = function arg0, arg1() {
                                     var0 = arg1;
                                     var0 = var0._meridiemParse;
                                     return var0;
                                 };
-                                var4 = function(arg0) { // Original name: normalizeLocale, environment: var2
+                                var4 = function arg0() {
                                     _fun24094: for (var _fun24094_ip = 0;;) switch (_fun24094_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -3382,7 +3382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot106 = var4;
-                                var4 = function(arg0) { // Original name: loadLocale, environment: var2
+                                var4 = function arg0() {
                                     _fun24095: for (var _fun24095_ip = 0;;) switch (_fun24095_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -3453,7 +3453,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot107 = var4;
-                                var10 = function(arg0, arg1) { // Original name: getSetGlobalLocale, environment: var2
+                                var10 = function arg0, arg1() {
                                     _fun24096: for (var _fun24096_ip = 0;;) switch (_fun24096_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -3520,7 +3520,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot108 = var10;
-                                var4 = function(arg0, arg1) { // Original name: defineLocale, environment: var2
+                                var4 = function arg0, arg1() {
                                     _fun24097: for (var _fun24097_ip = 0;;) switch (_fun24097_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -3654,7 +3654,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot109 = var4;
-                                var6 = function(arg0) { // Original name: getLocale, environment: var2
+                                var6 = function arg0() {
                                     _fun24099: for (var _fun24099_ip = 0;;) switch (_fun24099_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -3804,7 +3804,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot110 = var6;
-                                var5 = function(arg0) { // Original name: checkOverflow, environment: var2
+                                var5 = function arg0() {
                                     _fun24100: for (var _fun24100_ip = 0;;) switch (_fun24100_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -4053,7 +4053,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot111 = var5;
-                                var5 = function(arg0, arg1, arg2) { // Original name: defaults, environment: var2
+                                var5 = function arg0, arg1, arg2() {
                                     _fun24101: for (var _fun24101_ip = 0;;) switch (_fun24101_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -4078,7 +4078,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot112 = var5;
-                                var5 = function(arg0) { // Original name: configFromArray, environment: var2
+                                var5 = function arg0() {
                                     _fun24102: for (var _fun24102_ip = 0;;) switch (_fun24102_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -4642,7 +4642,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot113 = var5;
-                                var5 = function(arg0) { // Original name: configFromISO, environment: var2
+                                var5 = function arg0() {
                                     _fun24103: for (var _fun24103_ip = 0;;) switch (_fun24103_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -4857,7 +4857,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot114 = var5;
-                                var5 = function(arg0) { // Original name: untruncateYear, environment: var2
+                                var5 = function arg0() {
                                     _fun24104: for (var _fun24104_ip = 0;;) switch (_fun24104_ip) {
                                         case 0:
                                             var0 = global;
@@ -4892,7 +4892,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot115 = var5;
-                                var5 = function(arg0) { // Original name: configFromRFC2822, environment: var2
+                                var5 = function arg0() {
                                     _fun24105: for (var _fun24105_ip = 0;;) switch (_fun24105_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -5072,7 +5072,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot116 = var5;
-                                var5 = function(arg0) { // Original name: configFromStringAndFormat, environment: var2
+                                var5 = function arg0() {
                                     _fun24106: for (var _fun24106_ip = 0;;) switch (_fun24106_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -5386,7 +5386,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot117 = var5;
-                                var5 = function(arg0) { // Original name: prepareConfig, environment: var2
+                                var5 = function arg0() {
                                     _fun24107: for (var _fun24107_ip = 0;;) switch (_fun24107_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -5462,7 +5462,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 continue _fun24107
                                             }
                                         case 164:
-                                            var0 = function(arg0) { // Original name: configFromInput, environment: var0
+                                            var0 = function arg0() {
                                                 _fun24108: for (var _fun24108_ip = 0;;) switch (_fun24108_ip) {
                                                     case 0:
                                                         var2 = arg0;
@@ -5532,7 +5532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         _fun24108_ip = 458;
                                                         continue _fun24108;
                                                     case 158:
-                                                        var5 = function(arg0) { // Original name: configFromObject, environment: var3
+                                                        var5 = function arg0() {
                                                             _fun24110: for (var _fun24110_ip = 0;;) switch (_fun24110_ip) {
                                                                 case 0:
                                                                     var2 = arg0;
@@ -5884,7 +5884,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot118 = var5;
-                                var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createLocalOrUTC, environment: var2
+                                var5 = function arg0, arg1, arg2, arg3, arg4() {
                                     _fun24112: for (var _fun24112_ip = 0;;) switch (_fun24112_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -6016,7 +6016,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot119 = var5;
-                                var13 = function(arg0, arg1, arg2, arg3) { // Original name: createLocal, environment: var2
+                                var13 = function arg0, arg1, arg2, arg3() {
                                     var6 = _closure2_slot119;
                                     var12 = undefined;
                                     var11 = arg0;
@@ -6028,7 +6028,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot120 = var13;
-                                var5 = function(arg0, arg1) { // Original name: pickBy, environment: var2
+                                var5 = function arg0, arg1() {
                                     _fun24114: for (var _fun24114_ip = 0;;) switch (_fun24114_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -6111,7 +6111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot121 = var5;
-                                var15 = function(arg0) { // Original name: Duration, environment: var2
+                                var15 = function arg0() {
                                     _fun24115: for (var _fun24115_ip = 0;;) switch (_fun24115_ip) {
                                         case 0:
                                             var2 = this;
@@ -6317,14 +6317,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot122 = var15;
-                                var5 = function(arg0) { // Original name: isDuration, environment: var2
+                                var5 = function arg0() {
                                     var1 = _closure2_slot122;
                                     var0 = arg0;
                                     var0 = var0 instanceof var1;
                                     return var0;
                                 };
                                 var _closure2_slot123 = var5;
-                                var8 = function(arg0) { // Original name: absRound, environment: var2
+                                var8 = function arg0() {
                                     _fun24117: for (var _fun24117_ip = 0;;) switch (_fun24117_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -6353,7 +6353,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot124 = var8;
-                                var65 = function(arg0, arg1) { // Original name: offset, environment: var2
+                                var65 = function arg0, arg1() {
                                     var0 = arg1;
                                     var _closure3_slot0 = var0;
                                     var4 = _closure2_slot82;
@@ -6402,7 +6402,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1 = var9[var4](var8, var7, var6, var5, var4);
                                     return var0;
                                 };
-                                var8 = function(arg0, arg1) { // Original name: offsetFromString, environment: var2
+                                var8 = function arg0, arg1() {
                                     _fun24120: for (var _fun24120_ip = 0;;) switch (_fun24120_ip) {
                                         case 0:
                                             var2 = arg1;
@@ -6478,7 +6478,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot125 = var8;
-                                var8 = function(arg0, arg1) { // Original name: cloneWithOffset, environment: var2
+                                var8 = function arg0, arg1() {
                                     _fun24121: for (var _fun24121_ip = 0;;) switch (_fun24121_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -6544,7 +6544,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot126 = var8;
-                                var8 = function(arg0) { // Original name: getDateOffset, environment: var2
+                                var8 = function arg0() {
                                     var0 = global;
                                     var3 = var0.Math;
                                     var2 = var3.round;
@@ -6560,7 +6560,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot127 = var8;
-                                var37 = function() { // Original name: isUtc, environment: var2
+                                var37 = function() {
                                     _fun24123: for (var _fun24123_ip = 0;;) switch (_fun24123_ip) {
                                         case 0:
                                             var1 = this;
@@ -6587,7 +6587,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             return var0;
                                     }
                                 };
-                                var8 = function(arg0, arg1) { // Original name: createDuration, environment: var2
+                                var8 = function arg0, arg1() {
                                     _fun24124: for (var _fun24124_ip = 0;;) switch (_fun24124_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -6870,7 +6870,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot128 = var8;
-                                var14 = function(arg0, arg1) { // Original name: parseIso, environment: var2
+                                var14 = function arg0, arg1() {
                                     _fun24125: for (var _fun24125_ip = 0;;) switch (_fun24125_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -6907,7 +6907,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot129 = var14;
-                                var14 = function(arg0, arg1) { // Original name: positiveMomentsDifference, environment: var2
+                                var14 = function arg0, arg1() {
                                     _fun24126: for (var _fun24126_ip = 0;;) switch (_fun24126_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -6960,7 +6960,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot130 = var14;
-                                var47 = function(arg0, arg1) { // Original name: createAdder, environment: var2
+                                var47 = function arg0, arg1() {
                                     var1 = arg0;
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
@@ -7026,7 +7026,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     };
                                     return var0;
                                 };
-                                var14 = function(arg0, arg1, arg2, arg3) { // Original name: addSubtract, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3() {
                                     _fun24129: for (var _fun24129_ip = 0;;) switch (_fun24129_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -7116,7 +7116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot131 = var14;
-                                var14 = function(arg0, arg1) { // Original name: monthDiff, environment: var2
+                                var14 = function arg0, arg1() {
                                     _fun24130: for (var _fun24130_ip = 0;;) switch (_fun24130_ip) {
                                         case 0:
                                             var6 = arg0;
@@ -7181,7 +7181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot132 = var14;
-                                var25 = function(arg0) { // Original name: locale, environment: var2
+                                var25 = function arg0() {
                                     _fun24131: for (var _fun24131_ip = 0;;) switch (_fun24131_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -7212,12 +7212,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             return var0;
                                     }
                                 };
-                                var20 = function() { // Original name: localeData, environment: var2
+                                var20 = function() {
                                     var0 = this;
                                     var0 = var0._locale;
                                     return var0;
                                 };
-                                var69 = function(arg0, arg1) { // Original name: addWeekYearFormatToken, environment: var2
+                                var69 = function arg0, arg1() {
                                     var0 = arg0;
                                     var4 = _closure2_slot82;
                                     var3 = new Array(2);
@@ -7233,7 +7233,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1 = var9[var4](var8, var7, var6, var5, var4);
                                     return var0;
                                 };
-                                var14 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getSetWeekYearHelper, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3, arg4() {
                                     _fun24134: for (var _fun24134_ip = 0;;) switch (_fun24134_ip) {
                                         case 0:
                                             var7 = arg0;
@@ -7279,7 +7279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot133 = var14;
-                                var14 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: setWeekAll, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3, arg4() {
                                     var0 = this;
                                     var8 = _closure2_slot100;
                                     var5 = undefined;
@@ -7310,7 +7310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot134 = var14;
-                                var56 = function(arg0, arg1) { // Original name: parseMs, environment: var2
+                                var56 = function arg0, arg1() {
                                     var3 = _closure2_slot23;
                                     var2 = _closure2_slot72;
                                     var1 = '0.';
@@ -7324,11 +7324,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1[var3] = var2;
                                     return var0;
                                 };
-                                var35 = function(arg0) { // Original name: preParsePostFormat, environment: var2
+                                var35 = function arg0() {
                                     var0 = arg0;
                                     return var0;
                                 };
-                                var14 = function(arg0, arg1, arg2, arg3) { // Original name: get$1, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3() {
                                     var2 = _closure2_slot110;
                                     var1 = undefined;
                                     var3 = var2.bind(var1)();
@@ -7345,7 +7345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot135 = var14;
-                                var14 = function(arg0, arg1, arg2) { // Original name: listMonthsImpl, environment: var2
+                                var14 = function arg0, arg1, arg2() {
                                     _fun24139: for (var _fun24139_ip = 0;;) switch (_fun24139_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -7408,7 +7408,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot136 = var14;
-                                var14 = function(arg0, arg1, arg2, arg3) { // Original name: listWeekdaysImpl, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3() {
                                     _fun24140: for (var _fun24140_ip = 0;;) switch (_fun24140_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -7521,7 +7521,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot137 = var14;
-                                var14 = function(arg0, arg1, arg2, arg3) { // Original name: addSubtract$1, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3() {
                                     var1 = arg0;
                                     var3 = arg3;
                                     var5 = _closure2_slot128;
@@ -7549,7 +7549,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot138 = var14;
-                                var14 = function(arg0) { // Original name: absCeil, environment: var2
+                                var14 = function arg0() {
                                     _fun24142: for (var _fun24142_ip = 0;;) switch (_fun24142_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -7575,7 +7575,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot139 = var14;
-                                var14 = function(arg0) { // Original name: daysToMonths, environment: var2
+                                var14 = function arg0() {
                                     var1 = 4800;
                                     var0 = arg0;
                                     var1 = var1 * var0;
@@ -7584,7 +7584,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot140 = var14;
-                                var14 = function(arg0) { // Original name: monthsToDays, environment: var2
+                                var14 = function arg0() {
                                     var1 = 146097;
                                     var0 = arg0;
                                     var1 = var1 * var0;
@@ -7593,7 +7593,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var _closure2_slot141 = var14;
-                                var27 = function(arg0) { // Original name: makeAs, environment: var2
+                                var27 = function arg0() {
                                     var1 = arg0;
                                     var _closure3_slot0 = var1;
                                     var0 = function() { // Environment: var0
@@ -7605,7 +7605,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     };
                                     return var0;
                                 };
-                                var42 = function(arg0) { // Original name: makeGetter, environment: var2
+                                var42 = function arg0() {
                                     var1 = arg0;
                                     var _closure3_slot0 = var1;
                                     var0 = function() { // Environment: var0
@@ -7633,7 +7633,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     };
                                     return var0;
                                 };
-                                var14 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: substituteTimeAgo, environment: var2
+                                var14 = function arg0, arg1, arg2, arg3, arg4() {
                                     _fun24149: for (var _fun24149_ip = 0;;) switch (_fun24149_ip) {
                                         case 0:
                                             var5 = arg1;
@@ -7658,7 +7658,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot142 = var14;
-                                var14 = function(arg0) { // Original name: sign, environment: var2
+                                var14 = function arg0() {
                                     _fun24150: for (var _fun24150_ip = 0;;) switch (_fun24150_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -7677,7 +7677,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var _closure2_slot143 = var14;
-                                var23 = function() { // Original name: toISOString$1, environment: var2
+                                var23 = function() {
                                     _fun24151: for (var _fun24151_ip = 0;;) switch (_fun24151_ip) {
                                         case 0:
                                             var12 = this;
@@ -7886,7 +7886,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     continue _fun24016
                                 }
                             case 925:
-                                var14 = function(arg0) { // Original name: some, environment: var2
+                                var14 = function arg0() {
                                     _fun24152: for (var _fun24152_ip = 0;;) switch (_fun24152_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -7959,7 +7959,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     continue _fun24016
                                 }
                             case 1009:
-                                var14 = function(arg0) { // Original name: keys, environment: var2
+                                var14 = function arg0() {
                                     _fun24153: for (var _fun24153_ip = 0;;) switch (_fun24153_ip) {
                                         case 0:
                                             var8 = arg0;
@@ -8196,7 +8196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     continue _fun24016
                                 }
                             case 1670:
-                                var28 = function(arg0) { // Original name: indexOf, environment: var2
+                                var28 = function arg0() {
                                     _fun24160: for (var _fun24160_ip = 0;;) switch (_fun24160_ip) {
                                         case 0:
                                             var4 = arg0;
@@ -8559,7 +8559,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var46 = var87[var22](var86, var85, var84, var83, var82);
                                 var76 = 'k';
                                 var85 = ['kk', 2];
-                                var83 = function() { // Original name: kFormat, environment: var2
+                                var83 = function() {
                                     _fun24177: for (var _fun24177_ip = 0;;) switch (_fun24177_ip) {
                                         case 0:
                                             var1 = this;
@@ -9154,7 +9154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         return var0;
                                     }; var0.updateOffset = var18; var18 = /^(\-|\+)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/;
                                     var _closure2_slot49 = var18; var18 = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
-                                    var _closure2_slot50 = var18; var18 = var15.prototype; var8.fn = var18; var18 = function() { // Original name: createInvalid$1, environment: var2
+                                    var _closure2_slot50 = var18; var18 = var15.prototype; var8.fn = var18; var18 = function() {
                                         var2 = _closure2_slot128;
                                         var0 = global;
                                         var1 = var0.NaN;
@@ -9364,7 +9364,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         continue _fun24016
                                     }
                                     case 5056:
-                                    var43 = 'Milliseconds'; var43 = var52.bind(var16)(var43, var51); var86 = 'z'; var83 = 'zoneAbbr'; var87 = undefined; var85 = 0; var84 = 0; var51 = var87[var22](var86, var85, var84, var83, var82); var86 = 'zz'; var83 = 'zoneName'; var51 = var87[var22](var86, var85, var84, var83, var82); var1 = var1.prototype; var1.add = var50; var50 = function(arg0, arg1) { // Original name: calendar$1, environment: var2
+                                    var43 = 'Milliseconds'; var43 = var52.bind(var16)(var43, var51); var86 = 'z'; var83 = 'zoneAbbr'; var87 = undefined; var85 = 0; var84 = 0; var51 = var87[var22](var86, var85, var84, var83, var82); var86 = 'zz'; var83 = 'zoneName'; var51 = var87[var22](var86, var85, var84, var83, var82); var1 = var1.prototype; var1.add = var50; var50 = function arg0, arg1() {
                                         _fun24214: for (var _fun24214_ip = 0;;) switch (_fun24214_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -9436,7 +9436,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var0.bind(var2)(var1);
                                                 return var0;
                                         }
-                                    }; var1.calendar = var50; var50 = function() { // Original name: clone, environment: var2
+                                    }; var1.calendar = var50; var50 = function() {
                                         var2 = _closure2_slot69;
                                         var0 = var2.prototype;
                                         var1 = Object.create(var0, {
@@ -9449,7 +9449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = new var4[var2](var3, var2);
                                         var0 = var0 instanceof Object ? var0 : var1;
                                         return var0;
-                                    }; var1.clone = var50; var50 = function(arg0, arg1, arg2) { // Original name: diff, environment: var2
+                                    }; var1.clone = var50; var50 = function arg0, arg1, arg2() {
                                         _fun24216: for (var _fun24216_ip = 0;;) switch (_fun24216_ip) {
                                             case 0:
                                                 var5 = this;
@@ -9601,7 +9601,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 343:
                                                 return var0;
                                         }
-                                    }; var1.diff = var50; var50 = function(arg0) { // Original name: endOf, environment: var2
+                                    }; var1.diff = var50; var50 = function arg0() {
                                         _fun24217: for (var _fun24217_ip = 0;;) switch (_fun24217_ip) {
                                             case 0:
                                                 var2 = this;
@@ -9651,7 +9651,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 109:
                                                 return var0;
                                         }
-                                    }; var1.endOf = var50; var50 = function(arg0) { // Original name: format, environment: var2
+                                    }; var1.endOf = var50; var50 = function arg0() {
                                         _fun24218: for (var _fun24218_ip = 0;;) switch (_fun24218_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -9686,7 +9686,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var0.bind(var1)(var2);
                                                 return var0;
                                         }
-                                    }; var1.format = var50; var50 = function(arg0, arg1) { // Original name: from, environment: var2
+                                    }; var1.format = var50; var50 = function arg0, arg1() {
                                         _fun24219: for (var _fun24219_ip = 0;;) switch (_fun24219_ip) {
                                             case 0:
                                                 var5 = arg0;
@@ -9745,7 +9745,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 150:
                                                 return var0;
                                         }
-                                    }; var1.from = var50; var50 = function(arg0) { // Original name: fromNow, environment: var2
+                                    }; var1.from = var50; var50 = function arg0() {
                                         var3 = this;
                                         var2 = var3.from;
                                         var1 = _closure2_slot120;
@@ -9754,7 +9754,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = arg0;
                                         var0 = var2.bind(var3)(var1, var0);
                                         return var0;
-                                    }; var1.fromNow = var50; var50 = function(arg0, arg1) { // Original name: to, environment: var2
+                                    }; var1.fromNow = var50; var50 = function arg0, arg1() {
                                         _fun24221: for (var _fun24221_ip = 0;;) switch (_fun24221_ip) {
                                             case 0:
                                                 var5 = arg0;
@@ -9813,7 +9813,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 150:
                                                 return var0;
                                         }
-                                    }; var1.to = var50; var50 = function(arg0) { // Original name: toNow, environment: var2
+                                    }; var1.to = var50; var50 = function arg0() {
                                         var3 = this;
                                         var2 = var3.to;
                                         var1 = _closure2_slot120;
@@ -9822,7 +9822,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = arg0;
                                         var0 = var2.bind(var3)(var1, var0);
                                         return var0;
-                                    }; var1.toNow = var50; var50 = function(arg0) { // Original name: stringGet, environment: var2
+                                    }; var1.toNow = var50; var50 = function arg0() {
                                         _fun24223: for (var _fun24223_ip = 0;;) switch (_fun24223_ip) {
                                             case 0:
                                                 var2 = this;
@@ -9844,14 +9844,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 47:
                                                 return var0;
                                         }
-                                    }; var1.get = var50; var50 = function() { // Original name: invalidAt, environment: var2
+                                    }; var1.get = var50; var50 = function() {
                                         var2 = _closure2_slot65;
                                         var1 = undefined;
                                         var0 = this;
                                         var0 = var2.bind(var1)(var0);
                                         var0 = var0.overflow;
                                         return var0;
-                                    }; var1.invalidAt = var50; var50 = function(arg0, arg1) { // Original name: isAfter, environment: var2
+                                    }; var1.invalidAt = var50; var50 = function arg0, arg1() {
                                         _fun24225: for (var _fun24225_ip = 0;;) switch (_fun24225_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -9927,7 +9927,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 178:
                                                 return var0;
                                         }
-                                    }; var1.isAfter = var50; var50 = function(arg0, arg1) { // Original name: isBefore, environment: var2
+                                    }; var1.isAfter = var50; var50 = function arg0, arg1() {
                                         _fun24226: for (var _fun24226_ip = 0;;) switch (_fun24226_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -10003,7 +10003,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 178:
                                                 return var0;
                                         }
-                                    }; var1.isBefore = var50; var50 = function(arg0, arg1, arg2, arg3) { // Original name: isBetween, environment: var2
+                                    }; var1.isBefore = var50; var50 = function arg0, arg1, arg2, arg3() {
                                         _fun24227: for (var _fun24227_ip = 0;;) switch (_fun24227_ip) {
                                             case 0:
                                                 var6 = arg0;
@@ -10061,7 +10061,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 117:
                                                 return var0;
                                         }
-                                    }; var1.isBetween = var50; var50 = function(arg0, arg1) { // Original name: isSame, environment: var2
+                                    }; var1.isBetween = var50; var50 = function arg0, arg1() {
                                         _fun24228: for (var _fun24228_ip = 0;;) switch (_fun24228_ip) {
                                             case 0:
                                                 var6 = arg0;
@@ -10147,7 +10147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 207:
                                                 return var0;
                                         }
-                                    }; var1.isSame = var50; var50 = function(arg0, arg1) { // Original name: isSameOrAfter, environment: var2
+                                    }; var1.isSame = var50; var50 = function arg0, arg1() {
                                         _fun24229: for (var _fun24229_ip = 0;;) switch (_fun24229_ip) {
                                             case 0:
                                                 var4 = arg0;
@@ -10165,7 +10165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 36:
                                                 return var0;
                                         }
-                                    }; var1.isSameOrAfter = var50; var50 = function(arg0, arg1) { // Original name: isSameOrBefore, environment: var2
+                                    }; var1.isSameOrAfter = var50; var50 = function arg0, arg1() {
                                         _fun24230: for (var _fun24230_ip = 0;;) switch (_fun24230_ip) {
                                             case 0:
                                                 var4 = arg0;
@@ -10183,13 +10183,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 36:
                                                 return var0;
                                         }
-                                    }; var1.isSameOrBefore = var50; var50 = function() { // Original name: isValid$2, environment: var2
+                                    }; var1.isSameOrBefore = var50; var50 = function() {
                                         var2 = _closure2_slot66;
                                         var1 = undefined;
                                         var0 = this;
                                         var0 = var2.bind(var1)(var0);
                                         return var0;
-                                    }; var1.isValid = var50; var1.lang = var18; var1.locale = var25; var1.localeData = var20; var1.max = var49; var1.min = var48; var48 = function() { // Original name: parsingFlags, environment: var2
+                                    }; var1.isValid = var50; var1.lang = var18; var1.locale = var25; var1.localeData = var20; var1.max = var49; var1.min = var48; var48 = function() {
                                         var3 = _closure2_slot63;
                                         var0 = {};
                                         var4 = _closure2_slot65;
@@ -10198,7 +10198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var4.bind(var2)(var1);
                                         var1 = var3.bind(var2)(var0, var1);
                                         return var0;
-                                    }; var1.parsingFlags = var48; var48 = function(arg0, arg1) { // Original name: stringSet, environment: var2
+                                    }; var1.parsingFlags = var48; var48 = function arg0, arg1() {
                                         _fun24233: for (var _fun24233_ip = 0;;) switch (_fun24233_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -10229,7 +10229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var1 = _closure2_slot80;
                                                 var2 = undefined;
                                                 var4 = var1.bind(var2)(var3);
-                                                var1 = function(arg0) { // Original name: getPrioritizedUnits, environment: var1
+                                                var1 = function arg0() {
                                                     _fun24234: for (var _fun24234_ip = 0;;) switch (_fun24234_ip) {
                                                         case 0:
                                                             var0 = new Array(0);
@@ -10286,7 +10286,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 146:
                                                 return var0;
                                         }
-                                    }; var1.set = var48; var48 = function(arg0) { // Original name: startOf, environment: var2
+                                    }; var1.set = var48; var48 = function arg0() {
                                         _fun24236: for (var _fun24236_ip = 0;;) switch (_fun24236_ip) {
                                             case 0:
                                                 var0 = this;
@@ -10421,7 +10421,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 283:
                                                 return var0;
                                         }
-                                    }; var1.startOf = var48; var1.subtract = var47; var47 = function() { // Original name: toArray, environment: var2
+                                    }; var1.startOf = var48; var1.subtract = var47; var47 = function() {
                                         var2 = this;
                                         var0 = var2.year;
                                         var1 = var0.bind(var2)();
@@ -10446,7 +10446,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var1.bind(var2)();
                                         var0[6] = var1;
                                         return var0;
-                                    }; var1.toArray = var47; var47 = function() { // Original name: toObject, environment: var2
+                                    }; var1.toArray = var47; var47 = function() {
                                         var2 = this;
                                         var0 = {};
                                         var1 = var2.year;
@@ -10471,7 +10471,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var1.bind(var2)();
                                         var0.milliseconds = var1;
                                         return var0;
-                                    }; var1.toObject = var47; var47 = function() { // Original name: toDate, environment: var2
+                                    }; var1.toObject = var47; var47 = function() {
                                         var1 = this;
                                         var0 = global;
                                         var2 = var0.Date;
@@ -10487,7 +10487,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = new var4[var2](var3, var2);
                                         var0 = var0 instanceof Object ? var0 : var1;
                                         return var0;
-                                    }; var1.toDate = var47; var47 = function(arg0) { // Original name: toISOString, environment: var2
+                                    }; var1.toDate = var47; var47 = function arg0() {
                                         _fun24240: for (var _fun24240_ip = 0;;) switch (_fun24240_ip) {
                                             case 0:
                                                 var5 = this;
@@ -10615,7 +10615,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 327:
                                                 return var0;
                                         }
-                                    }; var1.toISOString = var47; var47 = function() { // Original name: inspect, environment: var2
+                                    }; var1.toISOString = var47; var47 = function() {
                                         _fun24241: for (var _fun24241_ip = 0;;) switch (_fun24241_ip) {
                                             case 0:
                                                 var2 = this;
@@ -10693,7 +10693,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var1.bind(var2)(var0);
                                                 return var0;
                                         }
-                                    }; var1.inspect = var47; var47 = function() { // Original name: toJSON, environment: var2
+                                    }; var1.inspect = var47; var47 = function() {
                                         _fun24242: for (var _fun24242_ip = 0;;) switch (_fun24242_ip) {
                                             case 0:
                                                 var2 = this;
@@ -10710,7 +10710,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 28:
                                                 return var0;
                                         }
-                                    }; var1.toJSON = var47; var47 = function() { // Original name: toString, environment: var2
+                                    }; var1.toJSON = var47; var47 = function() {
                                         var1 = this;
                                         var0 = var1.clone;
                                         var2 = var0.bind(var1)();
@@ -10721,7 +10721,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 'ddd MMM DD YYYY HH:mm:ss [GMT]ZZ';
                                         var0 = var1.bind(var2)(var0);
                                         return var0;
-                                    }; var1.toString = var47; var47 = function() { // Original name: unix, environment: var2
+                                    }; var1.toString = var47; var47 = function() {
                                         var3 = this;
                                         var0 = global;
                                         var2 = var0.Math;
@@ -10732,7 +10732,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = var3 / var0;
                                         var0 = var1.bind(var2)(var0);
                                         return var0;
-                                    }; var1.unix = var47; var47 = function() { // Original name: valueOf, environment: var2
+                                    }; var1.unix = var47; var47 = function() {
                                         _fun24245: for (var _fun24245_ip = 0;;) switch (_fun24245_ip) {
                                             case 0:
                                                 var0 = this;
@@ -10752,7 +10752,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var1 - var0;
                                                 return var0;
                                         }
-                                    }; var1.valueOf = var47; var47 = function() { // Original name: creationData, environment: var2
+                                    }; var1.valueOf = var47; var47 = function() {
                                         var1 = this;
                                         var0 = {};
                                         var2 = var1._i;
@@ -10766,7 +10766,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var1._strict;
                                         var0.strict = var1;
                                         return var0;
-                                    }; var1.creationData = var47; var1.year = var38; var47 = function() { // Original name: getIsLeapYear, environment: var2
+                                    }; var1.creationData = var47; var1.year = var38; var47 = function() {
                                         var1 = this;
                                         var2 = _closure2_slot90;
                                         var0 = var1.year;
@@ -10774,7 +10774,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = undefined;
                                         var0 = var2.bind(var0)(var1);
                                         return var0;
-                                    }; var1.isLeapYear = var47; var47 = function(arg0) { // Original name: getSetWeekYear, environment: var2
+                                    }; var1.isLeapYear = var47; var47 = function arg0() {
                                         var7 = this;
                                         var6 = _closure2_slot133;
                                         var5 = var6.call;
@@ -10795,7 +10795,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var13 = var7;
                                         var0 = var14[var5](var13, var12, var11, var10, var9, var8, var7);
                                         return var0;
-                                    }; var1.weekYear = var47; var47 = function(arg0) { // Original name: getSetISOWeekYear, environment: var2
+                                    }; var1.weekYear = var47; var47 = function arg0() {
                                         var7 = this;
                                         var6 = _closure2_slot133;
                                         var5 = var6.call;
@@ -10810,7 +10810,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var13 = var7;
                                         var0 = var14[var5](var13, var12, var11, var10, var9, var8, var7);
                                         return var0;
-                                    }; var1.isoWeekYear = var47; var47 = function(arg0) { // Original name: getSetQuarter, environment: var2
+                                    }; var1.isoWeekYear = var47; var47 = function arg0() {
                                         _fun24250: for (var _fun24250_ip = 0;;) switch (_fun24250_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -10847,7 +10847,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 100:
                                                 return var0;
                                         }
-                                    }; var1.quarters = var47; var1.quarter = var47; var1.month = var39; var47 = function() { // Original name: getDaysInMonth, environment: var2
+                                    }; var1.quarters = var47; var1.quarter = var47; var1.month = var39; var47 = function() {
                                         var1 = this;
                                         var3 = _closure2_slot93;
                                         var0 = var1.year;
@@ -10857,7 +10857,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = undefined;
                                         var0 = var3.bind(var0)(var2, var1);
                                         return var0;
-                                    }; var1.daysInMonth = var47; var47 = function(arg0) { // Original name: getSetWeek, environment: var2
+                                    }; var1.daysInMonth = var47; var47 = function arg0() {
                                         _fun24252: for (var _fun24252_ip = 0;;) switch (_fun24252_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -10882,7 +10882,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 62:
                                                 return var0;
                                         }
-                                    }; var1.weeks = var47; var1.week = var47; var47 = function(arg0) { // Original name: getSetISOWeek, environment: var2
+                                    }; var1.weeks = var47; var1.week = var47; var47 = function arg0() {
                                         _fun24253: for (var _fun24253_ip = 0;;) switch (_fun24253_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -10909,7 +10909,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 69:
                                                 return var0;
                                         }
-                                    }; var1.isoWeeks = var47; var1.isoWeek = var47; var47 = function() { // Original name: getWeeksInYear, environment: var2
+                                    }; var1.isoWeeks = var47; var1.isoWeek = var47; var47 = function() {
                                         var2 = this;
                                         var0 = var2.localeData;
                                         var0 = var0.bind(var2)();
@@ -10922,7 +10922,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = undefined;
                                         var0 = var4.bind(var0)(var3, var2, var1);
                                         return var0;
-                                    }; var1.weeksInYear = var47; var47 = function() { // Original name: getISOWeeksInYear, environment: var2
+                                    }; var1.weeksInYear = var47; var47 = function() {
                                         var1 = this;
                                         var4 = _closure2_slot102;
                                         var0 = var1.year;
@@ -10932,7 +10932,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 4;
                                         var0 = var4.bind(var2)(var3, var1, var0);
                                         return var0;
-                                    }; var1.isoWeeksInYear = var47; var1.date = var40; var47 = function(arg0) { // Original name: getSetDayOfWeek, environment: var2
+                                    }; var1.isoWeeksInYear = var47; var1.date = var40; var47 = function arg0() {
                                         _fun24256: for (var _fun24256_ip = 0;;) switch (_fun24256_ip) {
                                             case 0:
                                                 var8 = arg0;
@@ -11026,7 +11026,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 195:
                                                 return var0;
                                         }
-                                    }; var1.days = var47; var1.day = var47; var47 = function(arg0) { // Original name: getSetLocaleDayOfWeek, environment: var2
+                                    }; var1.days = var47; var1.day = var47; var47 = function arg0() {
                                         _fun24257: for (var _fun24257_ip = 0;;) switch (_fun24257_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -11074,7 +11074,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 113:
                                                 return var0;
                                         }
-                                    }; var1.weekday = var47; var47 = function(arg0) { // Original name: getSetISODayOfWeek, environment: var2
+                                    }; var1.weekday = var47; var47 = function arg0() {
                                         _fun24258: for (var _fun24258_ip = 0;;) switch (_fun24258_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -11167,7 +11167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var1.bind(var2)(var0);
                                                 return var0;
                                         }
-                                    }; var1.isoWeekday = var47; var47 = function(arg0) { // Original name: getSetDayOfYear, environment: var2
+                                    }; var1.isoWeekday = var47; var47 = function arg0() {
                                         _fun24259: for (var _fun24259_ip = 0;;) switch (_fun24259_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -11205,7 +11205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 123:
                                                 return var0;
                                         }
-                                    }; var1.dayOfYear = var47; var1.hours = var46; var1.hour = var46; var1.minutes = var45; var1.minute = var45; var1.seconds = var44; var1.second = var44; var1.milliseconds = var43; var1.millisecond = var43; var43 = function(arg0, arg1, arg2) { // Original name: getSetOffset, environment: var2
+                                    }; var1.dayOfYear = var47; var1.hours = var46; var1.hour = var46; var1.minutes = var45; var1.minute = var45; var1.seconds = var44; var1.second = var44; var1.milliseconds = var43; var1.millisecond = var43; var43 = function arg0, arg1, arg2() {
                                         _fun24260: for (var _fun24260_ip = 0;;) switch (_fun24260_ip) {
                                             case 0:
                                                 var8 = arg0;
@@ -11373,14 +11373,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 337:
                                                 return var0;
                                         }
-                                    }; var1.utcOffset = var43; var43 = function(arg0) { // Original name: setOffsetToUTC, environment: var2
+                                    }; var1.utcOffset = var43; var43 = function arg0() {
                                         var3 = this;
                                         var2 = var3.utcOffset;
                                         var1 = 0;
                                         var0 = arg0;
                                         var0 = var2.bind(var3)(var1, var0);
                                         return var0;
-                                    }; var1.utc = var43; var43 = function(arg0) { // Original name: setOffsetToLocal, environment: var2
+                                    }; var1.utc = var43; var43 = function arg0() {
                                         _fun24262: for (var _fun24262_ip = 0;;) switch (_fun24262_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -11410,7 +11410,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 70:
                                                 return var0;
                                         }
-                                    }; var1.local = var43; var43 = function() { // Original name: setOffsetToParsedOffset, environment: var2
+                                    }; var1.local = var43; var43 = function() {
                                         _fun24263: for (var _fun24263_ip = 0;;) switch (_fun24263_ip) {
                                             case 0:
                                                 var0 = this;
@@ -11459,7 +11459,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 115:
                                                 return var0;
                                         }
-                                    }; var1.parseZone = var43; var43 = function(arg0) { // Original name: hasAlignedHourOffset, environment: var2
+                                    }; var1.parseZone = var43; var43 = function arg0() {
                                         _fun24264: for (var _fun24264_ip = 0;;) switch (_fun24264_ip) {
                                             case 0:
                                                 var6 = arg0;
@@ -11495,7 +11495,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 81:
                                                 return var0;
                                         }
-                                    }; var1.hasAlignedHourOffset = var43; var43 = function() { // Original name: isDaylightSavingTime, environment: var2
+                                    }; var1.hasAlignedHourOffset = var43; var43 = function() {
                                         _fun24265: for (var _fun24265_ip = 0;;) switch (_fun24265_ip) {
                                             case 0:
                                                 var3 = this;
@@ -11527,7 +11527,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 101:
                                                 return var0;
                                         }
-                                    }; var1.isDST = var43; var43 = function() { // Original name: isLocal, environment: var2
+                                    }; var1.isDST = var43; var43 = function() {
                                         _fun24266: for (var _fun24266_ip = 0;;) switch (_fun24266_ip) {
                                             case 0:
                                                 var1 = this;
@@ -11545,7 +11545,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 31:
                                                 return var0;
                                         }
-                                    }; var1.isLocal = var43; var43 = function() { // Original name: isUtcOffset, environment: var2
+                                    }; var1.isLocal = var43; var43 = function() {
                                         _fun24267: for (var _fun24267_ip = 0;;) switch (_fun24267_ip) {
                                             case 0:
                                                 var1 = this;
@@ -11562,7 +11562,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 28:
                                                 return var0;
                                         }
-                                    }; var1.isUtcOffset = var43; var1.isUtc = var37; var1.isUTC = var37; var37 = function() { // Original name: getZoneAbbr, environment: var2
+                                    }; var1.isUtcOffset = var43; var1.isUtc = var37; var1.isUTC = var37; var37 = function() {
                                         _fun24268: for (var _fun24268_ip = 0;;) switch (_fun24268_ip) {
                                             case 0:
                                                 var0 = this;
@@ -11577,7 +11577,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 20:
                                                 return var0;
                                         }
-                                    }; var1.zoneAbbr = var37; var37 = function() { // Original name: getZoneName, environment: var2
+                                    }; var1.zoneAbbr = var37; var37 = function() {
                                         _fun24269: for (var _fun24269_ip = 0;;) switch (_fun24269_ip) {
                                             case 0:
                                                 var0 = this;
@@ -11592,7 +11592,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 22:
                                                 return var0;
                                         }
-                                    }; var1.zoneName = var37; var37 = 'dates accessor is deprecated. Use date instead.'; var37 = var24.bind(var16)(var37, var40); var1.dates = var37; var37 = 'months accessor is deprecated. Use month instead'; var37 = var24.bind(var16)(var37, var39); var1.months = var37; var37 = 'years accessor is deprecated. Use year instead'; var37 = var24.bind(var16)(var37, var38); var1.years = var37; var38 = 'moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/'; var37 = function(arg0, arg1) { // Original name: getSetZone, environment: var2
+                                    }; var1.zoneName = var37; var37 = 'dates accessor is deprecated. Use date instead.'; var37 = var24.bind(var16)(var37, var40); var1.dates = var37; var37 = 'months accessor is deprecated. Use month instead'; var37 = var24.bind(var16)(var37, var39); var1.months = var37; var37 = 'years accessor is deprecated. Use year instead'; var37 = var24.bind(var16)(var37, var38); var1.years = var37; var38 = 'moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/'; var37 = function arg0, arg1() {
                                         _fun24270: for (var _fun24270_ip = 0;;) switch (_fun24270_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -11626,7 +11626,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 62:
                                                 return var0;
                                         }
-                                    }; var37 = var24.bind(var16)(var38, var37); var1.zone = var37; var38 = 'isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information'; var37 = function() { // Original name: isDaylightSavingTimeShifted, environment: var2
+                                    }; var37 = var24.bind(var16)(var38, var37); var1.zone = var37; var38 = 'isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information'; var37 = function() {
                                         _fun24271: for (var _fun24271_ip = 0;;) switch (_fun24271_ip) {
                                             case 0:
                                                 var0 = this;
@@ -11694,7 +11694,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var0._isDSTShifted;
                                                 return var0;
                                         }
-                                    }; var37 = var24.bind(var16)(var38, var37); var1.isDSTShifted = var37; var36 = var36.prototype; var37 = function(arg0, arg1, arg2) { // Original name: calendar, environment: var2
+                                    }; var37 = var24.bind(var16)(var38, var37); var1.isDSTShifted = var37; var36 = var36.prototype; var37 = function arg0, arg1, arg2() {
                                         _fun24272: for (var _fun24272_ip = 0;;) switch (_fun24272_ip) {
                                             case 0:
                                                 var1 = this;
@@ -11726,7 +11726,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 71:
                                                 return var0;
                                         }
-                                    }; var36.calendar = var37; var37 = function(arg0) { // Original name: longDateFormat, environment: var2
+                                    }; var36.calendar = var37; var37 = function arg0() {
                                         _fun24273: for (var _fun24273_ip = 0;;) switch (_fun24273_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -11766,11 +11766,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 100:
                                                 return var0;
                                         }
-                                    }; var36.longDateFormat = var37; var37 = function() { // Original name: invalidDate, environment: var2
+                                    }; var36.longDateFormat = var37; var37 = function() {
                                         var0 = this;
                                         var0 = var0._invalidDate;
                                         return var0;
-                                    }; var36.invalidDate = var37; var37 = function(arg0) { // Original name: ordinal, environment: var2
+                                    }; var36.invalidDate = var37; var37 = function arg0() {
                                         var0 = this;
                                         var3 = var0._ordinal;
                                         var2 = var3.replace;
@@ -11778,7 +11778,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = arg0;
                                         var0 = var2.bind(var3)(var1, var0);
                                         return var0;
-                                    }; var36.ordinal = var37; var36.preparse = var35; var36.postformat = var35; var35 = function(arg0, arg1, arg2, arg3) { // Original name: relativeTime, environment: var2
+                                    }; var36.ordinal = var37; var36.preparse = var35; var36.postformat = var35; var35 = function arg0, arg1, arg2, arg3() {
                                         _fun24277: for (var _fun24277_ip = 0;;) switch (_fun24277_ip) {
                                             case 0:
                                                 var6 = arg0;
@@ -11809,7 +11809,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 81:
                                                 return var0;
                                         }
-                                    }; var36.relativeTime = var35; var35 = function(arg0, arg1) { // Original name: pastFuture, environment: var2
+                                    }; var36.relativeTime = var35; var35 = function arg0, arg1() {
                                         _fun24278: for (var _fun24278_ip = 0;;) switch (_fun24278_ip) {
                                             case 0:
                                                 var3 = arg1;
@@ -11845,7 +11845,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 85:
                                                 return var0;
                                         }
-                                    }; var36.pastFuture = var35; var35 = function(arg0) { // Original name: set, environment: var2
+                                    }; var36.pastFuture = var35; var35 = function arg0() {
                                         _fun24279: for (var _fun24279_ip = 0;;) switch (_fun24279_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -11902,7 +11902,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2._dayOfMonthOrdinalParseLenient = var1;
                                                 return var0;
                                         }
-                                    }; var36.set = var35; var35 = function(arg0, arg1) { // Original name: localeMonths, environment: var2
+                                    }; var36.set = var35; var35 = function arg0, arg1() {
                                         _fun24280: for (var _fun24280_ip = 0;;) switch (_fun24280_ip) {
                                             case 0:
                                                 var4 = arg0;
@@ -11971,7 +11971,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 134:
                                                 return var0;
                                         }
-                                    }; var36.months = var35; var35 = function(arg0, arg1) { // Original name: localeMonthsShort, environment: var2
+                                    }; var36.months = var35; var35 = function arg0, arg1() {
                                         _fun24281: for (var _fun24281_ip = 0;;) switch (_fun24281_ip) {
                                             case 0:
                                                 var4 = arg0;
@@ -12032,7 +12032,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 119:
                                                 return var0;
                                         }
-                                    }; var36.monthsShort = var35; var35 = function(arg0, arg1, arg2) { // Original name: localeMonthsParse, environment: var2
+                                    }; var36.monthsShort = var35; var35 = function arg0, arg1, arg2() {
                                         _fun24282: for (var _fun24282_ip = 0;;) switch (_fun24282_ip) {
                                             case 0:
                                                 var5 = arg0;
@@ -12247,7 +12247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var22[var0](var21, var20, var19, var18, var17);
                                                 return var0;
                                         }
-                                    }; var36.monthsParse = var35; var35 = function(arg0) { // Original name: monthsRegex, environment: var2
+                                    }; var36.monthsParse = var35; var35 = function arg0() {
                                         _fun24283: for (var _fun24283_ip = 0;;) switch (_fun24283_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -12314,7 +12314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 112:
                                                 return var0;
                                         }
-                                    }; var36.monthsRegex = var35; var35 = function(arg0) { // Original name: monthsShortRegex, environment: var2
+                                    }; var36.monthsRegex = var35; var35 = function arg0() {
                                         _fun24284: for (var _fun24284_ip = 0;;) switch (_fun24284_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -12383,7 +12383,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 122:
                                                 return var0;
                                         }
-                                    }; var36.monthsShortRegex = var35; var35 = function(arg0) { // Original name: localeWeek, environment: var2
+                                    }; var36.monthsShortRegex = var35; var35 = function arg0() {
                                         var0 = this;
                                         var4 = _closure2_slot101;
                                         var1 = var0._week;
@@ -12395,17 +12395,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = var4.bind(var1)(var0, var3, var2);
                                         var0 = var0.week;
                                         return var0;
-                                    }; var36.week = var35; var35 = function() { // Original name: localeFirstDayOfYear, environment: var2
+                                    }; var36.week = var35; var35 = function() {
                                         var0 = this;
                                         var0 = var0._week;
                                         var0 = var0.doy;
                                         return var0;
-                                    }; var36.firstDayOfYear = var35; var35 = function() { // Original name: localeFirstDayOfWeek, environment: var2
+                                    }; var36.firstDayOfYear = var35; var35 = function() {
                                         var0 = this;
                                         var0 = var0._week;
                                         var0 = var0.dow;
                                         return var0;
-                                    }; var36.firstDayOfWeek = var35; var35 = function(arg0, arg1) { // Original name: localeWeekdays, environment: var2
+                                    }; var36.firstDayOfWeek = var35; var35 = function arg0, arg1() {
                                         _fun24288: for (var _fun24288_ip = 0;;) switch (_fun24288_ip) {
                                             case 0:
                                                 var4 = arg0;
@@ -12467,7 +12467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 127:
                                                 return var0;
                                         }
-                                    }; var36.weekdays = var35; var35 = function(arg0) { // Original name: localeWeekdaysMin, environment: var2
+                                    }; var36.weekdays = var35; var35 = function arg0() {
                                         _fun24289: for (var _fun24289_ip = 0;;) switch (_fun24289_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -12488,7 +12488,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 36:
                                                 return var0;
                                         }
-                                    }; var36.weekdaysMin = var35; var35 = function(arg0) { // Original name: localeWeekdaysShort, environment: var2
+                                    }; var36.weekdaysMin = var35; var35 = function arg0() {
                                         _fun24290: for (var _fun24290_ip = 0;;) switch (_fun24290_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -12509,7 +12509,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 36:
                                                 return var0;
                                         }
-                                    }; var36.weekdaysShort = var35; var35 = function(arg0, arg1, arg2) { // Original name: localeWeekdaysParse, environment: var2
+                                    }; var36.weekdaysShort = var35; var35 = function arg0, arg1, arg2() {
                                         _fun24291: for (var _fun24291_ip = 0;;) switch (_fun24291_ip) {
                                             case 0:
                                                 var5 = arg0;
@@ -12766,7 +12766,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var23[var0](var22, var21, var20, var19, var18);
                                                 return var0;
                                         }
-                                    }; var36.weekdaysParse = var35; var35 = function(arg0) { // Original name: weekdaysRegex, environment: var2
+                                    }; var36.weekdaysParse = var35; var35 = function arg0() {
                                         _fun24292: for (var _fun24292_ip = 0;;) switch (_fun24292_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -12833,7 +12833,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 112:
                                                 return var0;
                                         }
-                                    }; var36.weekdaysRegex = var35; var35 = function(arg0) { // Original name: weekdaysShortRegex, environment: var2
+                                    }; var36.weekdaysRegex = var35; var35 = function arg0() {
                                         _fun24293: for (var _fun24293_ip = 0;;) switch (_fun24293_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -12902,7 +12902,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 122:
                                                 return var0;
                                         }
-                                    }; var36.weekdaysShortRegex = var35; var35 = function(arg0) { // Original name: weekdaysMinRegex, environment: var2
+                                    }; var36.weekdaysShortRegex = var35; var35 = function arg0() {
                                         _fun24294: for (var _fun24294_ip = 0;;) switch (_fun24294_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -12971,7 +12971,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 122:
                                                 return var0;
                                         }
-                                    }; var36.weekdaysMinRegex = var35; var35 = function(arg0) { // Original name: localeIsPM, environment: var2
+                                    }; var36.weekdaysMinRegex = var35; var35 = function arg0() {
                                         var0 = arg0;
                                         var1 = '' + var0;
                                         var0 = var1.toLowerCase;
@@ -12982,7 +12982,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 'p';
                                         var0 = var0 === var1;
                                         return var0;
-                                    }; var36.isPM = var35; var35 = function(arg0, arg1, arg2) { // Original name: localeMeridiem, environment: var2
+                                    }; var36.isPM = var35; var35 = function arg0, arg1, arg2() {
                                         _fun24296: for (var _fun24296_ip = 0;;) switch (_fun24296_ip) {
                                             case 0:
                                                 var2 = arg2;
@@ -13016,7 +13016,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 40:
                                                 return var0;
                                         }
-                                    }; var36.meridiem = var35; var36 = {}; var35 = /\d{1,2}(th|st|nd|rd)/; var36.dayOfMonthOrdinalParse = var35; var35 = function(arg0) { // Original name: ordinal, environment: var2
+                                    }; var36.meridiem = var35; var36 = {}; var35 = /\d{1,2}(th|st|nd|rd)/; var36.dayOfMonthOrdinalParse = var35; var35 = function arg0() {
                                         _fun24297: for (var _fun24297_ip = 0;;) switch (_fun24297_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -13077,11 +13077,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         'M': 11
                                     };
                                     var _closure2_slot53 = var42; var41 = var41.Math; var41 = var41.abs;
-                                    var _closure2_slot54 = var41; var15 = var15.prototype; var41 = function() { // Original name: isValid$1, environment: var2
+                                    var _closure2_slot54 = var41; var15 = var15.prototype; var41 = function() {
                                         var0 = this;
                                         var0 = var0._isValid;
                                         return var0;
-                                    }; var15.isValid = var41; var41 = function() { // Original name: abs, environment: var2
+                                    }; var15.isValid = var41; var41 = function() {
                                         var0 = this;
                                         var2 = var0._data;
                                         var5 = _closure2_slot51;
@@ -13122,7 +13122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var3.bind(var4)(var1);
                                         var2.years = var1;
                                         return var0;
-                                    }; var15.abs = var41; var41 = function(arg0, arg1) { // Original name: add$1, environment: var2
+                                    }; var15.abs = var41; var41 = function arg0, arg1() {
                                         var5 = _closure2_slot138;
                                         var10 = undefined;
                                         var9 = this;
@@ -13131,7 +13131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var6 = 1;
                                         var0 = var10[var5](var9, var8, var7, var6, var5);
                                         return var0;
-                                    }; var15.add = var41; var41 = function(arg0, arg1) { // Original name: subtract$1, environment: var2
+                                    }; var15.add = var41; var41 = function arg0, arg1() {
                                         var5 = _closure2_slot138;
                                         var10 = undefined;
                                         var9 = this;
@@ -13140,7 +13140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var6 = -1;
                                         var0 = var10[var5](var9, var8, var7, var6, var5);
                                         return var0;
-                                    }; var15.subtract = var41; var41 = function(arg0) { // Original name: as, environment: var2
+                                    }; var15.subtract = var41; var41 = function arg0() {
                                         _fun24302: for (var _fun24302_ip = 0;;) switch (_fun24302_ip) {
                                             case 0:
                                                 var2 = this;
@@ -13292,7 +13292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 411:
                                                 return var0;
                                         }
-                                    }; var15.as = var41; var15.asMilliseconds = var40; var15.asSeconds = var39; var15.asMinutes = var38; var15.asHours = var37; var15.asDays = var36; var15.asWeeks = var35; var15.asMonths = var34; var15.asYears = var33; var33 = function() { // Original name: valueOf$1, environment: var2
+                                    }; var15.as = var41; var15.asMilliseconds = var40; var15.asSeconds = var39; var15.asMinutes = var38; var15.asHours = var37; var15.asDays = var36; var15.asWeeks = var35; var15.asMonths = var34; var15.asYears = var33; var33 = function() {
                                         _fun24303: for (var _fun24303_ip = 0;;) switch (_fun24303_ip) {
                                             case 0:
                                                 var1 = this;
@@ -13330,7 +13330,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 125:
                                                 return var0;
                                         }
-                                    }; var15.valueOf = var33; var33 = function() { // Original name: bubble, environment: var2
+                                    }; var15.valueOf = var33; var33 = function() {
                                         _fun24304: for (var _fun24304_ip = 0;;) switch (_fun24304_ip) {
                                             case 0:
                                                 var0 = this;
@@ -13436,13 +13436,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2.years = var1;
                                                 return var0;
                                         }
-                                    }; var15._bubble = var33; var33 = function() { // Original name: clone$1, environment: var2
+                                    }; var15._bubble = var33; var33 = function() {
                                         var2 = _closure2_slot128;
                                         var1 = undefined;
                                         var0 = this;
                                         var0 = var2.bind(var1)(var0);
                                         return var0;
-                                    }; var15.clone = var33; var33 = function(arg0) { // Original name: get$2, environment: var2
+                                    }; var15.clone = var33; var33 = function arg0() {
                                         _fun24306: for (var _fun24306_ip = 0;;) switch (_fun24306_ip) {
                                             case 0:
                                                 var2 = this;
@@ -13469,7 +13469,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 59:
                                                 return var0;
                                         }
-                                    }; var15.get = var33; var15.milliseconds = var32; var15.seconds = var31; var15.minutes = var30; var15.hours = var29; var15.days = var28; var28 = function() { // Original name: weeks, environment: var2
+                                    }; var15.get = var33; var15.milliseconds = var32; var15.seconds = var31; var15.minutes = var30; var15.hours = var29; var15.days = var28; var28 = function() {
                                         var1 = this;
                                         var2 = _closure2_slot71;
                                         var0 = var1.days;
@@ -13479,7 +13479,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = undefined;
                                         var0 = var2.bind(var0)(var1);
                                         return var0;
-                                    }; var15.weeks = var28; var15.months = var27; var15.years = var26; var26 = function(arg0) { // Original name: humanize, environment: var2
+                                    }; var15.weeks = var28; var15.months = var27; var15.years = var26; var26 = function arg0() {
                                         _fun24308: for (var _fun24308_ip = 0;;) switch (_fun24308_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -13798,7 +13798,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1._d = var2;
                                         return var0;
                                     }; var14 = var17.bind(var16)(var15, var14); var14 = '2.22.2'; var0.version = var14;
-                                    var _closure2_slot0 = var13; var0.fn = var1; var13 = function() { // Original name: min, environment: var2
+                                    var _closure2_slot0 = var13; var0.fn = var1; var13 = function() {
                                         var3 = undefined;
                                         var0 = undefined;
                                         var2 = _closure2_slot121;
@@ -13812,7 +13812,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 'isBefore';
                                         var0 = var2.bind(var3)(var0, var1);
                                         return var0;
-                                    }; var0.min = var13; var13 = function() { // Original name: max, environment: var2
+                                    }; var0.min = var13; var13 = function() {
                                         var3 = undefined;
                                         var0 = undefined;
                                         var2 = _closure2_slot121;
@@ -13826,7 +13826,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 'isAfter';
                                         var0 = var2.bind(var3)(var0, var1);
                                         return var0;
-                                    }; var0.max = var13; var13 = function() { // Original name: now, environment: var2
+                                    }; var0.max = var13; var13 = function() {
                                         _fun24313: for (var _fun24313_ip = 0;;) switch (_fun24313_ip) {
                                             case 0:
                                                 var1 = global;
@@ -13856,7 +13856,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 56:
                                                 return var0;
                                         }
-                                    }; var0.now = var13; var0.utc = var12; var12 = function(arg0) { // Original name: createUnix, environment: var2
+                                    }; var0.now = var13; var0.utc = var12; var12 = function arg0() {
                                         var2 = _closure2_slot120;
                                         var1 = 1000;
                                         var0 = arg0;
@@ -13864,7 +13864,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = undefined;
                                         var0 = var2.bind(var0)(var1);
                                         return var0;
-                                    }; var0.unix = var12; var12 = function(arg0, arg1) { // Original name: listMonths, environment: var2
+                                    }; var0.unix = var12; var12 = function arg0, arg1() {
                                         var4 = _closure2_slot136;
                                         var3 = undefined;
                                         var2 = arg0;
@@ -13872,7 +13872,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 'months';
                                         var0 = var4.bind(var3)(var2, var1, var0);
                                         return var0;
-                                    }; var0.months = var12; var0.isDate = var11; var0.locale = var10; var0.invalid = var9; var0.duration = var8; var0.isMoment = var7; var7 = function(arg0, arg1, arg2) { // Original name: listWeekdays, environment: var2
+                                    }; var0.months = var12; var0.isDate = var11; var0.locale = var10; var0.invalid = var9; var0.duration = var8; var0.isMoment = var7; var7 = function arg0, arg1, arg2() {
                                         var5 = _closure2_slot137;
                                         var10 = undefined;
                                         var9 = arg0;
@@ -13881,7 +13881,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var6 = 'weekdays';
                                         var0 = var10[var5](var9, var8, var7, var6, var5);
                                         return var0;
-                                    }; var0.weekdays = var7; var7 = function() { // Original name: createInZone, environment: var2
+                                    }; var0.weekdays = var7; var7 = function() {
                                         var0 = undefined;
                                         var3 = _closure2_slot120;
                                         var2 = var3.apply;
@@ -13892,7 +13892,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = var1.parseZone;
                                         var0 = var0.bind(var1)();
                                         return var0;
-                                    }; var0.parseZone = var7; var0.localeData = var6; var0.isDuration = var5; var5 = function(arg0, arg1) { // Original name: listMonthsShort, environment: var2
+                                    }; var0.parseZone = var7; var0.localeData = var6; var0.isDuration = var5; var5 = function arg0, arg1() {
                                         var4 = _closure2_slot136;
                                         var3 = undefined;
                                         var2 = arg0;
@@ -13900,7 +13900,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = 'monthsShort';
                                         var0 = var4.bind(var3)(var2, var1, var0);
                                         return var0;
-                                    }; var0.monthsShort = var5; var5 = function(arg0, arg1, arg2) { // Original name: listWeekdaysMin, environment: var2
+                                    }; var0.monthsShort = var5; var5 = function arg0, arg1, arg2() {
                                         var5 = _closure2_slot137;
                                         var10 = undefined;
                                         var9 = arg0;
@@ -13909,7 +13909,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var6 = 'weekdaysMin';
                                         var0 = var10[var5](var9, var8, var7, var6, var5);
                                         return var0;
-                                    }; var0.weekdaysMin = var5; var0.defineLocale = var4; var4 = function(arg0, arg1) { // Original name: updateLocale, environment: var2
+                                    }; var0.weekdaysMin = var5; var0.defineLocale = var4; var4 = function arg0, arg1() {
                                         _fun24320: for (var _fun24320_ip = 0;;) switch (_fun24320_ip) {
                                             case 0:
                                                 var1 = arg0;
@@ -13989,13 +13989,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = var0[var1];
                                                 return var0;
                                         }
-                                    }; var0.updateLocale = var4; var4 = function() { // Original name: listLocales, environment: var2
+                                    }; var0.updateLocale = var4; var4 = function() {
                                         var2 = _closure2_slot4;
                                         var1 = _closure2_slot37;
                                         var0 = undefined;
                                         var0 = var2.bind(var0)(var1);
                                         return var0;
-                                    }; var0.locales = var4; var4 = function(arg0, arg1, arg2) { // Original name: listWeekdaysShort, environment: var2
+                                    }; var0.locales = var4; var4 = function arg0, arg1, arg2() {
                                         var5 = _closure2_slot137;
                                         var10 = undefined;
                                         var9 = arg0;
@@ -14004,7 +14004,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var6 = 'weekdaysShort';
                                         var0 = var10[var5](var9, var8, var7, var6, var5);
                                         return var0;
-                                    }; var0.weekdaysShort = var4; var0.normalizeUnits = var3; var3 = function(arg0) { // Original name: getSetRelativeTimeRounding, environment: var2
+                                    }; var0.weekdaysShort = var4; var0.normalizeUnits = var3; var3 = function arg0() {
                                         _fun24323: for (var _fun24323_ip = 0;;) switch (_fun24323_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -14032,7 +14032,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 41:
                                                 return var0;
                                         }
-                                    }; var0.relativeTimeRounding = var3; var3 = function(arg0, arg1) { // Original name: getSetRelativeTimeThreshold, environment: var2
+                                    }; var0.relativeTimeRounding = var3; var3 = function arg0, arg1() {
                                         _fun24324: for (var _fun24324_ip = 0;;) switch (_fun24324_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -14075,7 +14075,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             case 80:
                                                 return var0;
                                         }
-                                    }; var0.relativeTimeThreshold = var3; var2 = function(arg0, arg1) { // Original name: getCalendarFormat, environment: var2
+                                    }; var0.relativeTimeThreshold = var3; var2 = function arg0, arg1() {
                                         _fun24325: for (var _fun24325_ip = 0;;) switch (_fun24325_ip) {
                                             case 0:
                                                 var4 = arg0;

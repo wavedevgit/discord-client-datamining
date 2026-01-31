@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: _getThermalState, environment: var1
+    var0 = function arg0() {
         _fun63837: for (var _fun63837_ip = 0;;) switch (_fun63837_ip) {
             case 0:
                 var0 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/device/useThermalState.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function() { // Original name: useThermalState, environment: var1
+    var5 = function() {
         var2 = _closure1_slot5;
         var3 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.ThermalStates = var4;
     var2.AndroidThermalStates = var3;
-    var1 = function() { // Original name: getThermalState, environment: var1
+    var1 = function() {
         var2 = _closure1_slot5;
         var3 = _closure1_slot1;
         var1 = _closure1_slot2;

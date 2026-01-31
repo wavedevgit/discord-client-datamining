@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var5 = 'zh';
     var1.locale = var5;
-    var5 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var5 = function arg0, arg1() {
         var0 = 'other';
         return var0;
     };
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var5 = 'zh-Hant';
     var1.locale = var5;
-    var4 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var4 = function arg0, arg1() {
         var0 = 'other';
         return var0;
     };

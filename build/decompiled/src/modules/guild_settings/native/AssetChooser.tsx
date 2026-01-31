@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114679: for (var _fun114679_ip = 0;;) switch (_fun114679_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot17 = var6;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: AssetChooser, environment: var5
+        var3 = function arg0() {
             _fun114683: for (var _fun114683_ip = 0;;) switch (_fun114683_ip) {
                 case 0:
                     var5 = this;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getSource';
         var4.key = var0;
-        var0 = function() { // Original name: getSource, environment: var5
+        var0 = function() {
             _fun114687: for (var _fun114687_ip = 0;;) switch (_fun114687_ip) {
                 case 0:
                     var0 = this;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun114688: for (var _fun114688_ip = 0;;) switch (_fun114688_ip) {
                 case 0:
                     var10 = this;

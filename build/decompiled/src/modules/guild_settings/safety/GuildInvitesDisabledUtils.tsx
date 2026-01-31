@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: useInvitesDisabledPermission, environment: var1
+    var4 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: useInvitesDisabled, environment: var1
+    var3 = function arg0() {
         _fun89835: for (var _fun89835_ip = 0;;) switch (_fun89835_ip) {
             case 0:
                 var5 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.useInvitesDisabledPermission = var4;
     var2.useInvitesDisabled = var3;
-    var1 = function(arg0) { // Original name: useShouldShowInvitesDisabledNotif, environment: var1
+    var1 = function arg0() {
         _fun89837: for (var _fun89837_ip = 0;;) switch (_fun89837_ip) {
             case 0:
                 var3 = arg0;

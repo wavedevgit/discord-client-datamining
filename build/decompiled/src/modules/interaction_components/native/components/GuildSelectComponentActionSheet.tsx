@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun80688: for (var _fun80688_ip = 0;;) switch (_fun80688_ip) {
             case 0:
                 var0 = arg0;
@@ -152,11 +152,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot4;
                 var6 = var8.useCallback;
                 var2 = function(arg0) { // Environment: var4
-                    var2 = function(arg0) { // Original name: queryGuilds, environment: var0
+                    var2 = function arg0() {
                         _fun80690: for (var _fun80690_ip = 0;;) switch (_fun80690_ip) {
                             case 0:
                                 var4 = arg0;
-                                var1 = function(arg0) { // Original name: guildRecordToGuildSearchableSelectOption, environment: var0
+                                var1 = function arg0() {
                                     var1 = arg0;
                                     var0 = {};
                                     var4 = _closure1_slot0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var8 = var6.bind(var8)(var1, var2);
-                var6 = function() { // Original name: submitSelection, environment: var4
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 9;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var11[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var11 = function(arg0, arg1) { // Original name: onPressOptionItem, environment: var4
+                var11 = function arg0, arg1() {
                     var3 = arg1;
                     var4 = _closure2_slot0;
                     var2 = var3.guild;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onPressOptionItem = var11;
-                var11 = function() { // Original name: onRemoveOptionItem, environment: var4
+                var11 = function() {
                     var2 = _closure2_slot5;
                     var0 = undefined;
                     var1 = null;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onRemoveOptionItem = var11;
-                var11 = function(arg0) { // Original name: renderIcon, environment: var4
+                var11 = function arg0() {
                     var3 = _closure1_slot8;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.renderIcon = var11;
-                var11 = function(arg0) { // Original name: renderHeaderIcon, environment: var4
+                var11 = function arg0() {
                     var3 = _closure1_slot8;
                     var1 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.renderHeaderIcon = var11;
                 var10 = var10.iconContainer;
                 var0.iconContainerStyle = var10;
-                var10 = function(arg0) { // Original name: renderDescription, environment: var4
+                var10 = function arg0() {
                     _fun80700: for (var _fun80700_ip = 0;;) switch (_fun80700_ip) {
                         case 0:
                             var11 = arg0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.length;
                 var0.selectedCount = var8;
                 var0.selectedOptions = var7;
-                var7 = function(arg0) { // Original name: isSelected, environment: var4
+                var7 = function arg0() {
                     _fun80701: for (var _fun80701_ip = 0;;) switch (_fun80701_ip) {
                         case 0:
                             var0 = arg0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isSelected = var7;
                 var0.submitSelection = var6;
                 var0.onQueryChange = var5;
-                var4 = function(arg0) { // Original name: itemAccessibilityLabel, environment: var4
+                var4 = function arg0() {
                     var0 = arg0;
                     var0 = var0.label;
                     return var0;

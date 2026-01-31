@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useOnProgressChangeTs2(_value){const{computedOffsetXValueWithAutoFillData,rawDataLength,size,autoFillData,loop,onProgressChange,isFunc,runOnJS}=this.__closure;let value=computedOffsetXValueWithAutoFillData({value:_value,rawDataLength:rawDataLength,size:size,autoFillData:autoFillData,loop:loop});if(!loop){value=Math.max(-((rawDataLength-1)*size),Math.min(value,0));}let absoluteProgress=Math.abs(value/size);if(value>0)absoluteProgress=rawDataLength-absoluteProgress;if(onProgressChange){if(isFunc)runOnJS(onProgressChange)(value,absoluteProgress);else onProgressChange.value=absoluteProgress;}}';
     var2.code = var3;
     var _closure1_slot3 = var2;
-    var0 = function(arg0) { // Original name: useOnProgressChange, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.autoFillData;
         var _closure2_slot0 = var9;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         var5 = var13.bind(var0)(var3);
         var4 = var5.useAnimatedReaction;
-        var3 = function() { // Original name: pnpm_useOnProgressChangeTs1, environment: var2
+        var3 = function() {
             var0 = _closure2_slot2;
             var0 = var0.value;
             return var0;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3.__workletHash = var11;
         var11 = _closure1_slot2;
         var3.__initData = var11;
-        var2 = function(arg0) { // Original name: pnpm_useOnProgressChangeTs2, environment: var2
+        var2 = function arg0() {
             _fun74886: for (var _fun74886_ip = 0;;) switch (_fun74886_ip) {
                 case 0:
                     var2 = _closure1_slot0;

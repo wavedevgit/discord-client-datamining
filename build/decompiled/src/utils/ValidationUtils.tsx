@@ -29,7 +29,7 @@ var _closure1_slot5 = var1;
 var1 = ['discordtag', 'everyone', 'here', 'discord nitro', 'discord'];
 var _closure1_slot6 = var1;
 var1 = {};
-var3 = function(arg0) { // Original name: isEmail, environment: var0
+var3 = function arg0() {
     var2 = _closure1_slot0;
     var1 = var2.test;
     var0 = arg0;
@@ -37,7 +37,7 @@ var3 = function(arg0) { // Original name: isEmail, environment: var0
     return var0;
 };
 var1.isEmail = var3;
-var3 = function(arg0) { // Original name: isInvite, environment: var0
+var3 = function arg0() {
     var2 = _closure1_slot1;
     var1 = var2.test;
     var0 = arg0;
@@ -45,7 +45,7 @@ var3 = function(arg0) { // Original name: isInvite, environment: var0
     return var0;
 };
 var1.isInvite = var3;
-var3 = function(arg0) { // Original name: isPhoneNumber, environment: var0
+var3 = function arg0() {
     var2 = _closure1_slot2;
     var1 = var2.test;
     var0 = arg0;
@@ -53,7 +53,7 @@ var3 = function(arg0) { // Original name: isPhoneNumber, environment: var0
     return var0;
 };
 var1.isPhoneNumber = var3;
-var3 = function(arg0) { // Original name: isUserTagLike, environment: var0
+var3 = function arg0() {
     _fun51578: for (var _fun51578_ip = 0;;) switch (_fun51578_ip) {
         case 0:
             var4 = _closure1_slot3;
@@ -103,7 +103,7 @@ var3 = function(arg0) { // Original name: isUserTagLike, environment: var0
     }
 };
 var1.isUserTagLike = var3;
-var0 = function(arg0) { // Original name: isDiscoveryLink, environment: var0
+var0 = function arg0() {
     var2 = _closure1_slot4;
     var1 = var2.test;
     var0 = arg0;

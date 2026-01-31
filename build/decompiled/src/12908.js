@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: mergeAndOverwriteScopeData, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun99363: for (var _fun99363_ip = 0;;) switch (_fun99363_ip) {
             case 0:
                 var8 = arg0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.value = var4;
     var4 = '__esModule';
     var4 = var6.bind(var7)(var2, var4, var5);
-    var4 = function(arg0, arg1) { // Original name: applyScopeDataToEvent, environment: var1
+    var4 = function arg0, arg1() {
         _fun99364: for (var _fun99364_ip = 0;;) switch (_fun99364_ip) {
             case 0:
                 var2 = arg0;
@@ -384,7 +384,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.applyScopeDataToEvent = var4;
     var2.mergeAndOverwriteScopeData = var3;
-    var1 = function(arg0, arg1) { // Original name: mergeScopeData, environment: var1
+    var1 = function arg0, arg1() {
         _fun99365: for (var _fun99365_ip = 0;;) switch (_fun99365_ip) {
             case 0:
                 var2 = arg0;

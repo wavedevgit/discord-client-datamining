@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/StoreListingActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: fetchStoreListingsForApplications, environment: var1
+    var3 = function arg0() {
         _fun98186: for (var _fun98186_ip = 0;;) switch (_fun98186_ip) {
             case 0:
                 var3 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchStoreListingsForApplications = var3;
-    var3 = function(arg0) { // Original name: fetchAllStoreListingsForApplication, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchAllStoreListingsForApplication = var3;
-    var3 = function(arg0) { // Original name: fetchStoreListingForSku, environment: var1
+    var3 = function arg0() {
         _fun98192: for (var _fun98192_ip = 0;;) switch (_fun98192_ip) {
             case 0:
                 var7 = arg0;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchStoreListingForSku = var3;
-    var3 = function(arg0) { // Original name: fetchStoreListingById, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchStoreListingById = var3;
-    var3 = function(arg0) { // Original name: fetchStoreListingForApplication, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchStoreListingForApplication = var3;
-    var3 = function() { // Original name: matureAgree, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.matureAgree = var3;
-    var3 = function() { // Original name: matureDisagree, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.matureDisagree = var3;
-    var3 = function(arg0) { // Original name: joinPublishedStoreListingSkuGuild, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.joinPublishedStoreListingSkuGuild = var3;
-    var3 = function(arg0, arg1) { // Original name: goToSKUStoreListing, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 7;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.goToSKUStoreListing = var3;
-    var1 = function(arg0, arg1) { // Original name: goToApplicationStoreListing, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 7;

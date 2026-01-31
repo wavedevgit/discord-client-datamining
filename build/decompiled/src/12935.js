@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _extraErrorDataIntegration, environment: var1
+    var1 = function() {
         _fun99605: for (var _fun99605_ip = 0;;) switch (_fun99605_ip) {
             case 0:
                 var0 = undefined;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ExtraErrorData';
                 var0.name = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun99606: for (var _fun99606_ip = 0;;) switch (_fun99606_ip) {
                         case 0:
                             var1 = arg2;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 39:
                             var4 = var0;
                         case 42:
-                            var2 = function(arg0) { // Original name: _enhanceEventWithErrorData, environment: var0
+                            var2 = function arg0() {
                                 _fun99607: for (var _fun99607_ip = 0;;) switch (_fun99607_ip) {
                                     case 0:
                                         var4 = arg0;

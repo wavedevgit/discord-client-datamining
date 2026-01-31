@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var9;
-    var3 = function(arg0) { // Original name: useCanAccessMemberSafetyPage, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var0)(var4);
     var4 = var4.Permissions;
     var _closure1_slot8 = var4;
-    var6 = function(arg0) { // Original name: getContextForPermission, environment: var1
+    var6 = function arg0() {
         _fun49869: for (var _fun49869_ip = 0;;) switch (_fun49869_ip) {
             case 0:
                 var3 = arguments[1];
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var6;
-    var5 = function(arg0) { // Original name: canAccessMemberSafetyPage, environment: var1
+    var5 = function arg0() {
         _fun49870: for (var _fun49870_ip = 0;;) switch (_fun49870_ip) {
             case 0:
                 var3 = arguments[1];
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0) { // Original name: hasBulkBanningPermissions, environment: var1
+    var4 = function arg0() {
         _fun49871: for (var _fun49871_ip = 0;;) switch (_fun49871_ip) {
             case 0:
                 var3 = arguments[1];
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.canAccessMemberSafetyPage = var5;
     var2.hasBulkBanningPermissions = var4;
     var2.useCanAccessMemberSafetyPage = var3;
-    var3 = function(arg0) { // Original name: useCanAccessBulkBanningFeature, environment: var1
+    var3 = function arg0() {
         _fun49872: for (var _fun49872_ip = 0;;) switch (_fun49872_ip) {
             case 0:
                 var6 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanAccessBulkBanningFeature = var3;
-    var3 = function(arg0) { // Original name: useCanAccessInviteCodeFeature, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanAccessInviteCodeFeature = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useCanBulkBanUser, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var6 = arg0;
         var7 = arg1;
         var5 = arg2;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanBulkBanUser = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: canBulkBanUser, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun49878: for (var _fun49878_ip = 0;;) switch (_fun49878_ip) {
             case 0:
                 var1 = arg1;

@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var6[var3];
     var3 = var5.bind(var0)(var3);
     var _closure1_slot0 = var3;
-    var3 = function() { // Original name: ReactNativeDocumentElementInstanceHandleImpl, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = undefined;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot1 = var3;
-    var3 = function() { // Original name: createReactNativeDocumentElementInstanceHandle, environment: var1
+    var3 = function() {
         var0 = _closure1_slot1;
         var1 = var0.prototype;
         var1 = Object.create(var1, {
@@ -44,13 +44,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.createReactNativeDocumentElementInstanceHandle = var3;
-    var3 = function(arg0) { // Original name: getNativeElementReferenceFromReactNativeDocumentElementInstanceHandle, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.nativeElementReference;
         return var0;
     };
     var2.getNativeElementReferenceFromReactNativeDocumentElementInstanceHandle = var3;
-    var3 = function(arg0, arg1) { // Original name: setNativeElementReferenceForReactNativeDocumentElementInstanceHandle, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg1;
         var0 = arg0;
         var0.nativeElementReference = var1;
@@ -58,13 +58,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setNativeElementReferenceForReactNativeDocumentElementInstanceHandle = var3;
-    var3 = function(arg0) { // Original name: getPublicInstanceFromReactNativeDocumentElementInstanceHandle, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.publicInstance;
         return var0;
     };
     var2.getPublicInstanceFromReactNativeDocumentElementInstanceHandle = var3;
-    var3 = function(arg0, arg1) { // Original name: setPublicInstanceForReactNativeDocumentElementInstanceHandle, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg1;
         var0 = arg0;
         var0.publicInstance = var1;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setPublicInstanceForReactNativeDocumentElementInstanceHandle = var3;
-    var1 = function(arg0) { // Original name: isReactNativeDocumentElementInstanceHandle, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot1;
         var0 = arg0;
         var0 = var0 instanceof var1;

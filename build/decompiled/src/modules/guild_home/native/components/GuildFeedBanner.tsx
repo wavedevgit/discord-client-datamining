@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'function GuildFeedBannerTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}';
     var3.code = var7;
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: GuildFeedBanner, environment: var1
+    var3 = function arg0() {
         _fun104780: for (var _fun104780_ip = 0;;) switch (_fun104780_ip) {
             case 0:
                 var0 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5[var0];
                 var4 = var2.bind(var3)(var0);
                 var2 = var4.useAnimatedStyle;
-                var0 = function() { // Original name: R, environment: var20
+                var0 = function() {
                     var0 = {};
                     var2 = _closure2_slot1;
                     var1 = var2.get;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var3)(var4);
                 var4 = var5.getGuildBadgeSource;
                 var24 = var4.bind(var5)(var14);
-                var8 = function() { // Original name: handleLoad, environment: var20
+                var8 = function() {
                     var3 = _closure2_slot1;
                     var2 = var3.set;
                     var4 = _closure1_slot0;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.style = var23;
                 var23 = 'button';
                 var15.accessibilityRole = var23;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 28;

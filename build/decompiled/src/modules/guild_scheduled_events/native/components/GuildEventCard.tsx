@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: GuildEventCardControls, environment: var3
+    var0 = function arg0() {
         _fun66978: for (var _fun66978_ip = 0;;) switch (_fun66978_ip) {
             case 0:
                 var0 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.recurrenceRuleFromServer;
                 var0 = var13.recurrence_rule;
                 var14 = var1.bind(var2)(var0);
-                var21 = function() { // Original name: handlePress, environment: var12
+                var21 = function() {
                     _fun66981: for (var _fun66981_ip = 0;;) switch (_fun66981_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.recurrenceRule = var14;
                 var13 = var13.id;
                 var9.guildEventId = var13;
-                var12 = function(arg0) { // Original name: onRecurrencePress, environment: var12
+                var12 = function arg0() {
                     _fun66982: for (var _fun66982_ip = 0;;) switch (_fun66982_ip) {
                         case 0:
                             var2 = _closure2_slot1;

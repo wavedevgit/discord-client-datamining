@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun4964
             }
         case 115:
-            var1 = function(arg0) { // Original name: UnimplementedLayoutConformance, environment: var4
+            var1 = function arg0() {
                 var0 = arg0;
                 var0 = var0.children;
                 return var0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun4964_ip = 127;
             continue _fun4964;
         case 122:
-            var1 = function(arg0) { // Original name: LayoutConformance, environment: var4
+            var1 = function arg0() {
                 var3 = _closure1_slot2;
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;

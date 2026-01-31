@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var6[var1];
     var1 = var5.bind(var0)(var1);
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: Button, environment: var4
+    var1 = function arg0() {
         _fun4380: for (var _fun4380_ip = 0;;) switch (_fun4380_ip) {
             case 0:
                 var2 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: hasDetectedRaid, environment: var1
+    var3 = function arg0() {
         _fun55716: for (var _fun55716_ip = 0;;) switch (_fun55716_ip) {
             case 0:
                 var6 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/guild_antiraid/GuildAntiRaidUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.DATE_CONFIG = var4;
-    var4 = function(arg0) { // Original name: hasDetectedActivity, environment: var1
+    var4 = function arg0() {
         _fun55717: for (var _fun55717_ip = 0;;) switch (_fun55717_ip) {
             case 0:
                 var7 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasDetectedActivity = var4;
     var2.hasDetectedRaid = var3;
-    var3 = function(arg0) { // Original name: hasDetectedDMRaid, environment: var1
+    var3 = function arg0() {
         _fun55718: for (var _fun55718_ip = 0;;) switch (_fun55718_ip) {
             case 0:
                 var6 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasDetectedDMRaid = var3;
-    var3 = function(arg0) { // Original name: getIncidentAlertType, environment: var1
+    var3 = function arg0() {
         _fun55719: for (var _fun55719_ip = 0;;) switch (_fun55719_ip) {
             case 0:
                 var3 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getIncidentAlertType = var3;
-    var3 = function(arg0, arg1) { // Original name: getEnabledInterventions, environment: var1
+    var3 = function arg0, arg1() {
         _fun55720: for (var _fun55720_ip = 0;;) switch (_fun55720_ip) {
             case 0:
                 var0 = new Array(0);
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEnabledInterventions = var3;
-    var3 = function(arg0, arg1) { // Original name: getDisabledInterventions, environment: var1
+    var3 = function arg0, arg1() {
         _fun55721: for (var _fun55721_ip = 0;;) switch (_fun55721_ip) {
             case 0:
                 var0 = new Array(0);
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDisabledInterventions = var3;
-    var3 = function(arg0) { // Original name: isUnderLockdown, environment: var1
+    var3 = function arg0() {
         _fun55722: for (var _fun55722_ip = 0;;) switch (_fun55722_ip) {
             case 0:
                 var3 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isUnderLockdown = var3;
-    var3 = function(arg0) { // Original name: hasDMsDisabled, environment: var1
+    var3 = function arg0() {
         _fun55723: for (var _fun55723_ip = 0;;) switch (_fun55723_ip) {
             case 0:
                 var2 = arg0;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasDMsDisabled = var3;
-    var3 = function(arg0) { // Original name: hasInvitesDisabled, environment: var1
+    var3 = function arg0() {
         _fun55724: for (var _fun55724_ip = 0;;) switch (_fun55724_ip) {
             case 0:
                 var2 = arg0;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasInvitesDisabled = var3;
-    var1 = function(arg0, arg1) { // Original name: getSecurityActionDetailsString, environment: var1
+    var1 = function arg0, arg1() {
         _fun55725: for (var _fun55725_ip = 0;;) switch (_fun55725_ip) {
             case 0:
                 var0 = arg0;

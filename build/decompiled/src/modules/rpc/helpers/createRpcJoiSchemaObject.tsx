@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/rpc/helpers/createRpcJoiSchemaObject.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: createRpcJoiSchemaObject, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.object;
         var2 = var0.bind(var1)();

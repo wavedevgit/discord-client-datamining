@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var8
+    var0 = function arg0, arg1() {
         _fun49145: for (var _fun49145_ip = 0;;) switch (_fun49145_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var8
+    var0 = function arg0, arg1() {
         _fun49147: for (var _fun49147_ip = 0;;) switch (_fun49147_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: matchPrefix, environment: var8
+    var0 = function arg0, arg1, arg2() {
         _fun49148: for (var _fun49148_ip = 0;;) switch (_fun49148_ip) {
             case 0:
                 var1 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var15 = function(arg0) { // Original name: matchAndReturnText, environment: var8
+    var15 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var0 = {};
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.order = var3;
         var2 = var2.match;
         var0.match = var2;
-        var1 = function(arg0) { // Original name: parse, environment: var1
+        var1 = function arg0() {
             var0 = {};
             var1 = _closure2_slot0;
             var1 = var1.type;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.parse = var1;
         return var0;
     };
-    var11 = function(arg0) { // Original name: matchRegexAndReturnText, environment: var8
+    var11 = function arg0() {
         var0 = {};
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = arg0;
         var1 = var2.bind(var3)(var1);
         var0.match = var1;
-        var1 = function(arg0) { // Original name: parse, environment: var1
+        var1 = function arg0() {
             var0 = {};
             var1 = 'text';
             var0.type = var1;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.parse = var1;
         return var0;
     };
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: rebuild, environment: var8
+    var0 = function arg0, arg1, arg2, arg3() {
         var4 = arg0;
         var0 = arg1;
         var _closure2_slot0 = var0;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: parseAndRebuild, environment: var8
+    var3 = function arg0, arg1, arg2() {
         var5 = arg1;
         var4 = _closure1_slot26;
         var2 = _closure1_slot21;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var3;
-    var1 = function(arg0) { // Original name: createParserState, environment: var8
+    var1 = function arg0() {
         _fun49160: for (var _fun49160_ip = 0;;) switch (_fun49160_ip) {
             case 0:
                 var3 = arg0;
@@ -979,12 +979,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var1;
-    var0 = function(arg0) { // Original name: NOOP, environment: var8
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot29 = var0;
-    var5 = function(arg0, arg1, arg2) { // Original name: unparseWithMeta, environment: var8
+    var5 = function arg0, arg1, arg2() {
         _fun49172: for (var _fun49172_ip = 0;;) switch (_fun49172_ip) {
             case 0:
                 var2 = arg1;
@@ -1196,7 +1196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.bind(var0)(var19);
     var10.rawEmoji = var11;
     var11 = {};
-    var12 = function(arg0, arg1, arg2) { // Original name: match, environment: var8
+    var12 = function arg0, arg1, arg2() {
         _fun49173: for (var _fun49173_ip = 0;;) switch (_fun49173_ip) {
             case 0:
                 var6 = arg0;
@@ -1338,7 +1338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var11.match = var12;
-    var12 = function(arg0) { // Original name: parse, environment: var8
+    var12 = function arg0() {
         _fun49175: for (var _fun49175_ip = 0;;) switch (_fun49175_ip) {
             case 0:
                 var7 = arg0;
@@ -1443,10 +1443,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11.parse = var12;
     var10.mention = var11;
     var11 = {};
-    var12 = function(arg0, arg1) { // Original name: match, environment: var8
+    var12 = function arg0, arg1() {
         var0 = arg1;
         var4 = var0.channels;
-        var3 = function(arg0, arg1, arg2) { // Original name: matchChannelPrefix, environment: var0
+        var3 = function arg0, arg1, arg2() {
             _fun49177: for (var _fun49177_ip = 0;;) switch (_fun49177_ip) {
                 case 0:
                     var5 = arg1;
@@ -1585,7 +1585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var11.match = var12;
-    var12 = function(arg0) { // Original name: parse, environment: var8
+    var12 = function arg0() {
         var0 = {};
         var1 = 'text';
         var0.type = var1;
@@ -1604,7 +1604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11.parse = var12;
     var10.channel = var11;
     var11 = {};
-    var12 = function(arg0, arg1, arg2) { // Original name: match, environment: var8
+    var12 = function arg0, arg1, arg2() {
         _fun49182: for (var _fun49182_ip = 0;;) switch (_fun49182_ip) {
             case 0:
                 var3 = arg0;
@@ -1693,7 +1693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var11.match = var12;
-    var12 = function(arg0) { // Original name: parse, environment: var8
+    var12 = function arg0() {
         var0 = {
             'type': 'emoticon',
             'content': null,
@@ -1722,7 +1722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var12.emoji;
     var12 = var12.order;
     var11.order = var12;
-    var12 = function(arg0) { // Original name: match, environment: var8
+    var12 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 19;
@@ -1736,7 +1736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var11.match = var12;
-    var12 = function(arg0, arg1, arg2) { // Original name: parse, environment: var8
+    var12 = function arg0, arg1, arg2() {
         _fun49185: for (var _fun49185_ip = 0;;) switch (_fun49185_ip) {
             case 0:
                 var3 = arg0;
@@ -1851,7 +1851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11.parse = var12;
     var10.emoji = var11;
     var11 = {};
-    var12 = function(arg0, arg1) { // Original name: match, environment: var8
+    var12 = function arg0, arg1() {
         _fun49186: for (var _fun49186_ip = 0;;) switch (_fun49186_ip) {
             case 0:
                 var0 = arg1;
@@ -1881,7 +1881,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var11.match = var12;
-    var12 = function(arg0, arg1, arg2) { // Original name: parse, environment: var8
+    var12 = function arg0, arg1, arg2() {
         _fun49187: for (var _fun49187_ip = 0;;) switch (_fun49187_ip) {
             case 0:
                 var4 = arg0;
@@ -1982,7 +1982,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var24 = var9.bind(var0)(var12);
     var25 = var11;
     var12 = copyDataProperties(var25, var24);
-    var16 = function(arg0, arg1) { // Original name: match, environment: var8
+    var16 = function arg0, arg1() {
         _fun49188: for (var _fun49188_ip = 0;;) switch (_fun49188_ip) {
             case 0:
                 var3 = arg0;
@@ -2064,7 +2064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.anyScopeRegex;
     var15 = var15.bind(var16)(var22);
     var12.match = var15;
-    var15 = function(arg0, arg1, arg2) { // Original name: parse, environment: var8
+    var15 = function arg0, arg1, arg2() {
         _fun49189: for (var _fun49189_ip = 0;;) switch (_fun49189_ip) {
             case 0:
                 var2 = arg0;
@@ -2269,7 +2269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.anyScopeRegex;
     var15 = var15.bind(var16)(var21);
     var12.match = var15;
-    var15 = function(arg0, arg1, arg2) { // Original name: parse, environment: var8
+    var15 = function arg0, arg1, arg2() {
         _fun49191: for (var _fun49191_ip = 0;;) switch (_fun49191_ip) {
             case 0:
                 var3 = arg0;
@@ -2318,7 +2318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = /^<@\$(\d+)>/;
     var15 = var16.bind(var21)(var15);
     var12.match = var15;
-    var15 = function(arg0, arg1, arg2) { // Original name: parse, environment: var8
+    var15 = function arg0, arg1, arg2() {
         _fun49192: for (var _fun49192_ip = 0;;) switch (_fun49192_ip) {
             case 0:
                 var4 = arg0;
@@ -2412,7 +2412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.anyScopeRegex;
     var15 = var15.bind(var16)(var20);
     var12.match = var15;
-    var15 = function(arg0) { // Original name: parse, environment: var8
+    var15 = function arg0() {
         _fun49193: for (var _fun49193_ip = 0;;) switch (_fun49193_ip) {
             case 0:
                 var3 = arg0;
@@ -2460,7 +2460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.anyScopeRegex;
     var15 = var15.bind(var16)(var19);
     var12.match = var15;
-    var15 = function(arg0, arg1, arg2) { // Original name: parse, environment: var8
+    var15 = function arg0, arg1, arg2() {
         _fun49194: for (var _fun49194_ip = 0;;) switch (_fun49194_ip) {
             case 0:
                 var3 = arg0;
@@ -2561,7 +2561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var15.soundmojiRawFormatRegex;
     var15 = var16.bind(var19)(var15);
     var12.match = var15;
-    var15 = function(arg0) { // Original name: parse, environment: var8
+    var15 = function arg0() {
         _fun49195: for (var _fun49195_ip = 0;;) switch (_fun49195_ip) {
             case 0:
                 var2 = arg0;
@@ -2638,7 +2638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.anyScopeRegex;
     var15 = var15.bind(var16)(var18);
     var12.match = var15;
-    var15 = function() { // Original name: parse, environment: var8
+    var15 = function() {
         var0 = {};
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -2672,7 +2672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.anyScopeRegex;
     var15 = var15.bind(var16)(var17);
     var12.match = var15;
-    var15 = function(arg0) { // Original name: parse, environment: var8
+    var15 = function arg0() {
         var0 = {};
         var2 = arg0;
         var1 = 1;
@@ -2695,7 +2695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var24 = var14.timestamp;
     var25 = var12;
     var14 = copyDataProperties(var25, var24);
-    var15 = function(arg0) { // Original name: parse, environment: var8
+    var15 = function arg0() {
         _fun49198: for (var _fun49198_ip = 0;;) switch (_fun49198_ip) {
             case 0:
                 var7 = 0;
@@ -2782,7 +2782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
     var _closure1_slot22 = var4;
     var4 = {};
-    var9 = function(arg0, arg1) { // Original name: parse, environment: var8
+    var9 = function arg0, arg1() {
         _fun49201: for (var _fun49201_ip = 0;;) switch (_fun49201_ip) {
             case 0:
                 var2 = arg0;
@@ -2869,7 +2869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.parse = var9;
-    var9 = function(arg0, arg1) { // Original name: parsePreprocessor, environment: var8
+    var9 = function arg0, arg1() {
         var2 = _closure1_slot28;
         var3 = undefined;
         var1 = arg0;
@@ -2880,7 +2880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.parsePreprocessor = var9;
-    var8 = function(arg0, arg1, arg2) { // Original name: unparse, environment: var8
+    var8 = function arg0, arg1, arg2() {
         var4 = _closure1_slot30;
         var3 = undefined;
         var2 = arg0;

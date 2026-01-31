@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun38534: for (var _fun38534_ip = 0;;) switch (_fun38534_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: guildDimensionFactory, environment: var3
+    var0 = function arg0() {
         var0 = {
             'guildId': null,
             'scrollTop': null,
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: _isAtBottom, environment: var3
+    var0 = function arg0() {
         _fun38538: for (var _fun38538_ip = 0;;) switch (_fun38538_ip) {
             case 0:
                 var1 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: DimensionStore, environment: var5
+        var3 = function() {
             _fun38540: for (var _fun38540_ip = 0;;) switch (_fun38540_ip) {
                 case 0:
                     var3 = this;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'percentageScrolled';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun38541: for (var _fun38541_ip = 0;;) switch (_fun38541_ip) {
                 case 0:
                     var1 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getChannelDimensions';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot7;
             var0 = arg0;
             var0 = var1[var0];
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildDimensions';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun38543: for (var _fun38543_ip = 0;;) switch (_fun38543_ip) {
                 case 0:
                     var3 = arg0;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildListDimensions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isAtBottom';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleChannelScroll, environment: var3
+    var7 = function arg0() {
         _fun38546: for (var _fun38546_ip = 0;;) switch (_fun38546_ip) {
             case 0:
                 var0 = arg0;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPDATE_CHANNEL_DIMENSIONS = var7;
-    var7 = function(arg0) { // Original name: handleGuildUpdate, environment: var3
+    var7 = function arg0() {
         _fun38547: for (var _fun38547_ip = 0;;) switch (_fun38547_ip) {
             case 0:
                 var0 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.UPDATE_CHANNEL_LIST_DIMENSIONS = var7;
-    var7 = function(arg0) { // Original name: handleGuildListUpdate, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.scrollTop;
         var0 = _closure1_slot9;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPDATE_GUILD_LIST_DIMENSIONS = var7;
-    var3 = function(arg0) { // Original name: handleCallCreate, environment: var3
+    var3 = function arg0() {
         _fun38549: for (var _fun38549_ip = 0;;) switch (_fun38549_ip) {
             case 0:
                 var0 = arg0;

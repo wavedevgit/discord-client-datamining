@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = global;
     var1 = var1.parseInt;
     var _closure1_slot6 = var1;
-    var1 = function(arg0) { // Original name: toNumber, environment: var0
+    var1 = function arg0() {
         _fun28171: for (var _fun28171_ip = 0;;) switch (_fun28171_ip) {
             case 0:
                 var0 = arg0;

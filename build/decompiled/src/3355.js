@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var2 = var2.bind(var0)();
     var _closure1_slot2 = var2;
-    var2 = function() { // Original name: shimStringTrim, environment: var1
+    var2 = function() {
         _fun28941: for (var _fun28941_ip = 0;;) switch (_fun28941_ip) {
             case 0:
                 var1 = _closure1_slot0;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.CircleInformationIcon;
     var1.IconComponent = var9;
-    var8 = function() { // Original name: handleAcknowledgementsSettingPress, environment: var8
+    var8 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 1;

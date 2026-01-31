@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsMessageUnreadGuildActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationSettingsMessageUnreadGuildActionSheet, environment: var1
+    var1 = function arg0() {
         _fun69914: for (var _fun69914_ip = 0;;) switch (_fun69914_ip) {
             case 0:
                 var0 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 155:
                 var0.disabledMentionOnlyWithReason = var6;
                 var0.value = var5;
-                var4 = function(arg0) { // Original name: onChange, environment: var4
+                var4 = function arg0() {
                     _fun69915: for (var _fun69915_ip = 0;;) switch (_fun69915_ip) {
                         case 0:
                             var7 = arg0;

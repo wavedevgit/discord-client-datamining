@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: openTrialOfferActionSheet, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: TrialOfferSheetExample, environment: var1
+    var0 = function() {
         var3 = _closure1_slot8;
         var6 = _closure1_slot0;
         var9 = _closure1_slot2;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var12 = 'Trial Offer Nitro Basic';
         var4.label = var12;
-        var12 = function() { // Original name: onPress, environment: var8
+        var12 = function() {
             var2 = _closure1_slot10;
             var0 = _closure1_slot6;
             var1 = var0.TIER_0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var9 = 'Trial Offer Nitro';
         var5.label = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var2 = _closure1_slot10;
             var0 = _closure1_slot6;
             var1 = var0.TIER_2;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: PremiumToggles, environment: var1
+    var0 = function() {
         var1 = _closure1_slot0;
         var5 = _closure1_slot2;
         var2 = 12;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.label = var10;
                     var4.subLabel = var3;
                     var4.value = var9;
-                    var8 = function(arg0) { // Original name: onValueChange, environment: var8
+                    var8 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 14;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: PaymentFlowTest, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var8 = _closure1_slot0;
         var10 = _closure1_slot2;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var9 = 'Test Payment Flow';
         var4.label = var9;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 15;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: Orbs, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var8 = _closure1_slot0;
         var10 = _closure1_slot2;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var9 = 'Test Orbs Flow';
         var4.label = var9;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 15;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: RevenueSmokeTests, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var8 = _closure1_slot0;
         var10 = _closure1_slot2;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var9 = 'Test all purchasing flows';
         var4.label = var9;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 15;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: GuildPowerups, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var8 = _closure1_slot0;
         var10 = _closure1_slot2;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var4.TableRow;
         var4 = {};
         var4.label = var9;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 15;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsRevenuePlaygroundScreen, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var4 = var0.bind(var3)();

@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestBottomSheet/QuestBottomSheetHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestBottomSheetHeader, environment: var1
+    var1 = function arg0() {
         _fun82863: for (var _fun82863_ip = 0;;) switch (_fun82863_ip) {
             case 0:
                 var0 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.quest = var4;
                 var1.step = var2;
                 var1.location = var0;
-                var0 = function(arg0) { // Original name: useHeaderCopy, environment: var0
+                var0 = function arg0() {
                     _fun82864: for (var _fun82864_ip = 0;;) switch (_fun82864_ip) {
                         case 0:
                             var1 = arg0;

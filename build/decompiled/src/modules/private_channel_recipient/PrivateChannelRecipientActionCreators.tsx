@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot2 = var1;
     var1 = {};
-    var3 = function(arg0, arg1) { // Original name: updatePrivateChannelRecipientFlags, environment: var3
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

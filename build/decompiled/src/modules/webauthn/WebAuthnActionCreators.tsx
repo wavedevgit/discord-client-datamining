@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _fetchWebAuthnConditionalChallenge, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function() { // Original name: _fetchWebAuthnPasswordlessChallenge, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: _deleteWebAuthnCredentialAsync, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _editWebAuthnCredential, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _startRegisterWebAuthnCredential, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _finishRegisterWebAuthnCredential, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/webauthn/WebAuthnActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: fetchWebAuthnConditionalChallenge, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchWebAuthnConditionalChallenge = var3;
-    var3 = function() { // Original name: fetchWebAuthnPasswordlessChallenge, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchWebAuthnPasswordlessChallenge = var3;
-    var3 = function() { // Original name: fetchWebAuthnCredentials, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchWebAuthnCredentials = var3;
-    var3 = function(arg0) { // Original name: deleteWebAuthnCredential, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot0;
@@ -672,7 +672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.deleteWebAuthnCredential = var3;
-    var3 = function() { // Original name: deleteWebAuthnCredentialAsync, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.deleteWebAuthnCredentialAsync = var3;
-    var3 = function() { // Original name: editWebAuthnCredential, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -694,7 +694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.editWebAuthnCredential = var3;
-    var3 = function() { // Original name: startRegisterWebAuthnCredential, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -705,7 +705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.startRegisterWebAuthnCredential = var3;
-    var3 = function() { // Original name: finishRegisterWebAuthnCredential, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.finishRegisterWebAuthnCredential = var3;
-    var3 = function() { // Original name: triggerWebAuthnRegister, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.triggerWebAuthnRegister = var3;
-    var1 = function() { // Original name: clearWebAuthnRegisterTrigger, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

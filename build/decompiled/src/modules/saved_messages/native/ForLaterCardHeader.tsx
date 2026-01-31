@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: HeaderIcon, environment: var1
+    var0 = function arg0() {
         _fun75967: for (var _fun75967_ip = 0;;) switch (_fun75967_ip) {
             case 0:
                 var1 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: ChannelName, environment: var1
+    var0 = function arg0() {
         _fun75969: for (var _fun75969_ip = 0;;) switch (_fun75969_ip) {
             case 0:
                 var1 = arg0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/saved_messages/native/ForLaterCardHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForLaterCardHeader, environment: var1
+    var1 = function arg0() {
         _fun75971: for (var _fun75971_ip = 0;;) switch (_fun75971_ip) {
             case 0:
                 var0 = arg0;

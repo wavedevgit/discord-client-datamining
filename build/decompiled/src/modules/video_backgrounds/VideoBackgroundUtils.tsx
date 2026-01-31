@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var7 = function(arg0) { // Original name: isCustomBackgroundOption, environment: var1
+    var7 = function arg0() {
         _fun66361: for (var _fun66361_ip = 0;;) switch (_fun66361_ip) {
             case 0:
                 var1 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var7;
-    var6 = function(arg0) { // Original name: isDefaultBackgroundOption, environment: var1
+    var6 = function arg0() {
         _fun66362: for (var _fun66362_ip = 0;;) switch (_fun66362_ip) {
             case 0:
                 var2 = arg0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var6;
-    var5 = function(arg0) { // Original name: isAnimatedBackgroundOption, environment: var1
+    var5 = function arg0() {
         _fun66363: for (var _fun66363_ip = 0;;) switch (_fun66363_ip) {
             case 0:
                 var3 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0) { // Original name: getEffectAnalyticsType, environment: var1
+    var4 = function arg0() {
         _fun66364: for (var _fun66364_ip = 0;;) switch (_fun66364_ip) {
             case 0:
                 var1 = null;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0) { // Original name: getEffectDetailAnalyticsName, environment: var1
+    var3 = function arg0() {
         _fun66365: for (var _fun66365_ip = 0;;) switch (_fun66365_ip) {
             case 0:
                 var4 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isAnimatedBackgroundOption = var5;
     var2.getEffectAnalyticsType = var4;
     var2.getEffectDetailAnalyticsName = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: trackBackgroundOptionUpdated, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun66366: for (var _fun66366_ip = 0;;) switch (_fun66366_ip) {
             case 0:
                 var6 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackBackgroundOptionUpdated = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: trackBackgroundOptionAdded, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackBackgroundOptionAdded = var3;
-    var3 = function(arg0) { // Original name: trackBackgroundOptionDeleted, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackBackgroundOptionDeleted = var3;
-    var3 = function(arg0) { // Original name: getVideoBackgroundProtoFromOption, environment: var1
+    var3 = function arg0() {
         _fun66369: for (var _fun66369_ip = 0;;) switch (_fun66369_ip) {
             case 0:
                 var3 = arg0;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVideoBackgroundProtoFromOption = var3;
-    var1 = function(arg0, arg1) { // Original name: getVideoBackgroundOptionFromProto, environment: var1
+    var1 = function arg0, arg1() {
         _fun66370: for (var _fun66370_ip = 0;;) switch (_fun66370_ip) {
             case 0:
                 var2 = arg0;

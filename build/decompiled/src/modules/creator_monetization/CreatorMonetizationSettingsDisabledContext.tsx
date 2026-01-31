@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/creator_monetization/CreatorMonetizationSettingsDisabledContext.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function() { // Original name: useCreatorMonetizationSettingsDisabled, environment: var1
+    var3 = function() {
         _fun116551: for (var _fun116551_ip = 0;;) switch (_fun116551_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCreatorMonetizationSettingsDisabled = var3;
-    var1 = function(arg0) { // Original name: CreatorMonetizationSettingsDisabledContextProvider, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.guildId;
         var4 = var0.children;

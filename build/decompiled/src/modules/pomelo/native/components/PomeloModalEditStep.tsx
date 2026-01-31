@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.actionButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: getNavbarTitle, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot6;
         var1 = {};
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/pomelo/native/components/PomeloModalEditStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PomeloModalEditStep, environment: var1
+    var1 = function arg0() {
         _fun80783: for (var _fun80783_ip = 0;;) switch (_fun80783_ip) {
             case 0:
                 var0 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var29.handleSubmit = var20;
-                var20 = function() { // Original name: headerTitle, environment: var12
+                var20 = function() {
                     var2 = _closure1_slot14;
                     var3 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var33.handleSubmit = var29;
-                var29 = function() { // Original name: headerTitle, environment: var12
+                var29 = function() {
                     var2 = _closure1_slot14;
                     var3 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -637,17 +637,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var35 = var32.PREVIEW;
                 var33 = {};
                 var33.handleSubmit = var37;
-                var37 = function() { // Original name: headerTitle, environment: var12
+                var37 = function() {
                     var0 = null;
                     return var0;
                 };
                 var33.headerTitle = var37;
-                var37 = function() { // Original name: headerLeft, environment: var12
+                var37 = function() {
                     var0 = null;
                     return var0;
                 };
                 var33.headerLeft = var37;
-                var37 = function(arg0) { // Original name: title, environment: var12
+                var37 = function arg0() {
                     var0 = arg0;
                     var4 = var0.displayName;
                     var5 = _closure1_slot0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var32.handleSubmit = var35;
-                var35 = function() { // Original name: headerTitle, environment: var12
+                var35 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -1155,7 +1155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var28 = var28.MEDIUM;
                 var18.size = var28;
                 var18.text = var27;
-                var27 = function() { // Original name: onPress, environment: var12
+                var27 = function() {
                     var2 = _closure2_slot21;
                     var1 = {};
                     var0 = _closure2_slot15;
@@ -1517,7 +1517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.animatedStyles = var15;
                 var5.displayName = var14;
                 var5.onChangeDisplayName = var13;
-                var12 = function(arg0) { // Original name: onChangeUsername, environment: var12
+                var12 = function arg0() {
                     var3 = _closure2_slot16;
                     var4 = _closure1_slot0;
                     var2 = _closure1_slot2;

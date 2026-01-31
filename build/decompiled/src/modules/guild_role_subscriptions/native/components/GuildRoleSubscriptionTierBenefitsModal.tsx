@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var6;
-    var0 = function(arg0) { // Original name: AddBenefitButton, environment: var1
+    var0 = function arg0() {
         _fun116730: for (var _fun116730_ip = 0;;) switch (_fun116730_ip) {
             case 0:
                 var0 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: getSectionLabel, environment: var1
+    var0 = function arg0() {
         _fun116731: for (var _fun116731_ip = 0;;) switch (_fun116731_ip) {
             case 0:
                 var2 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: getAddItemLabel, environment: var1
+    var0 = function arg0() {
         _fun116732: for (var _fun116732_ip = 0;;) switch (_fun116732_ip) {
             case 0:
                 var2 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: Separator, environment: var1
+    var0 = function() {
         var1 = _closure1_slot15;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: ItemSeparator, environment: var1
+    var0 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: EmojiRowLabel, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.emoji;
         var0 = _closure1_slot15;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: ListFooterSection, environment: var1
+    var0 = function arg0() {
         _fun116736: for (var _fun116736_ip = 0;;) switch (_fun116736_ip) {
             case 0:
                 var1 = arg0;
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: Content, environment: var1
+    var0 = function arg0() {
         _fun116739: for (var _fun116739_ip = 0;;) switch (_fun116739_ip) {
             case 0:
                 var0 = arg0;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot15 = var3;
                 var _closure2_slot16 = var3;
                 var _closure2_slot17 = var3;
-                var0 = function(arg0) { // Original name: GuildRoleSubscriptionTierBenefitsModalHeader, environment: var6
+                var0 = function arg0() {
                     var0 = arg0;
                     var5 = var0.type;
                     var1 = _closure1_slot1;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11.useRoleSubscriptionSettingsDisabled;
                 var11 = var2.bind(var11)();
                 _closure2_slot14 = var11;
-                var2 = function(arg0) { // Original name: addBenefit, environment: var6
+                var2 = function arg0() {
                     _fun116741: for (var _fun116741_ip = 0;;) switch (_fun116741_ip) {
                         case 0:
                             var1 = arg0;
@@ -932,7 +932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var7 = var4.bind(var7)(var1, var2);
-                var1 = function(arg0, arg1) { // Original name: handleEditBenefit, environment: var6
+                var1 = function arg0, arg1() {
                     var6 = arg0;
                     var _closure3_slot0 = var6;
                     var0 = arg1;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot5;
                     var1.guildId = var7;
                     var1.benefit = var6;
-                    var6 = function() { // Original name: onDelete, environment: var5
+                    var6 = function() {
                         var1 = _closure3_slot0;
                         var3 = var1.ref_type;
                         var2 = _closure3_slot1;
@@ -1008,7 +1008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onDelete = var6;
-                    var5 = function(arg0) { // Original name: onSave, environment: var5
+                    var5 = function arg0() {
                         var3 = _closure3_slot1;
                         var2 = function(arg0, arg1) { // Environment: var0
                             _fun116754: for (var _fun116754_ip = 0;;) switch (_fun116754_ip) {
@@ -1100,7 +1100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.sections = var7;
                 var7 = var14.listContainer;
                 var0.contentContainerStyle = var7;
-                var7 = function(arg0) { // Original name: renderItem, environment: var6
+                var7 = function arg0() {
                     _fun116757: for (var _fun116757_ip = 0;;) switch (_fun116757_ip) {
                         case 0:
                             var0 = arg0;
@@ -1172,7 +1172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = _closure2_slot14;
                             var9.disabled = var10;
                             var0.accessibilityState = var9;
-                            var6 = function() { // Original name: onPress, environment: var6
+                            var6 = function() {
                                 var3 = _closure2_slot17;
                                 var2 = _closure3_slot0;
                                 var1 = _closure3_slot1;
@@ -1267,7 +1267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10.bind(var3)(var9, var8);
             case 896:
                 var0.ListHeaderComponent = var7;
-                var7 = function(arg0) { // Original name: renderSectionHeader, environment: var6
+                var7 = function arg0() {
                     var0 = arg0;
                     var0 = var0.section;
                     var0 = var0.type;
@@ -1282,7 +1282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.renderSectionHeader = var7;
                 var7 = false;
                 var0.stickySectionHeadersEnabled = var7;
-                var6 = function(arg0) { // Original name: renderSectionFooter, environment: var6
+                var6 = function arg0() {
                     var0 = arg0;
                     var0 = var0.section;
                     var6 = var0.type;
@@ -1294,7 +1294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var5 = var5.bind(var0)(var6);
                     var1.label = var5;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         _fun116761: for (var _fun116761_ip = 0;;) switch (_fun116761_ip) {
                             case 0:
                                 var2 = _closure3_slot0;
@@ -1380,7 +1380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var3 = function(arg0) { // Original name: GuildRoleSubscriptionTierBenefitsTab, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.onlyChannels;
         var0 = var0.onlyIntangible;
@@ -1599,7 +1599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierBenefitsModal.tsx';
     var4 = var5.bind(var6)(var4);
     var2.GuildRoleSubscriptionTierBenefitsTab = var3;
-    var3 = function(arg0) { // Original name: GuildRoleSubscriptionTierChannelBenefitsModal, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot12;
         var1 = _closure1_slot1;
         var9 = _closure1_slot3;
@@ -1652,7 +1652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GuildRoleSubscriptionTierChannelBenefitsModal = var3;
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierIntangibleBenefitsModal, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot12;
         var1 = _closure1_slot1;
         var9 = _closure1_slot3;

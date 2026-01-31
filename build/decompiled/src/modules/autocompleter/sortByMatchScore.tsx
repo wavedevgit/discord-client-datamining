@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/autocompleter/sortByMatchScore.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: sortByMatchScore, environment: var1
+    var1 = function arg0, arg1() {
         _fun49488: for (var _fun49488_ip = 0;;) switch (_fun49488_ip) {
             case 0:
                 var0 = arg0;

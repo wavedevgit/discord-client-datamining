@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: _runPrimaryAppCommandOrJoinEmbeddedActivity, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var26.isStart = var24;
                         var24 = var11;
                         var26.guildId = var24;
-                        var24 = function() { // Original name: joinEmbeddedActivity, environment: var4
+                        var24 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot32;
                             var2 = var3.apply;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var16.onExecutedCallback = var20;
                         var16.onConfirmActivityLaunchChecksAlertOpen = var19;
                         var16.embeddedActivitiesManager = var18;
-                        var4 = function() { // Original name: maybeSendPrimaryAppCommand, environment: var4
+                        var4 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot31;
                             var2 = var3.apply;
@@ -781,7 +781,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _maybeSendPrimaryAppCommand, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1126,11 +1126,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.sectionName = var5;
                             var4 = _closure4_slot6;
                             var1.source = var4;
-                            var3 = function() { // Original name: interactionLifecycleOptionsFactory, environment: var3
+                            var3 = function() {
                                 var0 = {};
                                 var2 = _closure4_slot1;
                                 var0.nonce = var2;
-                                var2 = function() { // Original name: onSuccess, environment: var1
+                                var2 = function() {
                                     _fun62898: for (var _fun62898_ip = 0;;) switch (_fun62898_ip) {
                                         case 0:
                                             var2 = _closure4_slot7;
@@ -1151,7 +1151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     }
                                 };
                                 var0.onSuccess = var2;
-                                var1 = function(arg0, arg1, arg2, arg3) { // Original name: onFailure, environment: var1
+                                var1 = function arg0, arg1, arg2, arg3() {
                                     _fun62899: for (var _fun62899_ip = 0;;) switch (_fun62899_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -1387,7 +1387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: _joinEmbeddedActivity, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1867,7 +1867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var5 = function(arg0) { // Original name: stopEmbeddedActivity, environment: var1
+    var5 = function arg0() {
         _fun62903: for (var _fun62903_ip = 0;;) switch (_fun62903_ip) {
             case 0:
                 var0 = arg0;
@@ -2003,7 +2003,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var5;
-    var0 = function() { // Original name: _fetchDeveloperApplications, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -2125,7 +2125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: _uploadImageAttachment, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -2262,7 +2262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: _fetchShelf, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -2692,7 +2692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var0;
-    var0 = function() { // Original name: _sendEmbeddedActivityInvite, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -2791,7 +2791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: _sendEmbeddedActivityInviteUser, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -2958,7 +2958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot38 = var0;
-    var0 = function() { // Original name: _validateTestMode, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -3028,7 +3028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var0;
-    var4 = function(arg0) { // Original name: updateActivityPanelMode, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 23;
@@ -3045,7 +3045,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot40 = var4;
-    var3 = function() { // Original name: createProxyTicket, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot42;
         var2 = var3.apply;
@@ -3056,7 +3056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot41 = var3;
-    var0 = function() { // Original name: _createProxyTicket, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -3130,7 +3130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot42 = var0;
-    var0 = function() { // Original name: _refreshProxyTicket, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -3564,7 +3564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'AIT_NOT_ENABLED_FOR_USER';
     var6[var10] = var9;
     var _closure1_slot28 = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: handleFetchDone, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun62937: for (var _fun62937_ip = 0;;) switch (_fun62937_ip) {
             case 0:
                 var3 = arg0;
@@ -3607,7 +3607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/activities/EmbeddedActivitiesActionCreators.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: maybeDisconnectFromCurrentActivity, environment: var1
+    var6 = function arg0() {
         _fun62938: for (var _fun62938_ip = 0;;) switch (_fun62938_ip) {
             case 0:
                 var3 = _closure1_slot15;
@@ -3636,7 +3636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.maybeDisconnectFromCurrentActivity = var6;
-    var6 = function() { // Original name: runPrimaryAppCommandOrJoinEmbeddedActivity, environment: var1
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -3648,7 +3648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.runPrimaryAppCommandOrJoinEmbeddedActivity = var6;
     var2.stopEmbeddedActivity = var5;
-    var5 = function() { // Original name: requestRespondToSeriousThermalState, environment: var1
+    var5 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 23;
@@ -3663,7 +3663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.requestRespondToSeriousThermalState = var5;
-    var5 = function() { // Original name: consumeRequestToReactToSeriousThermalState, environment: var1
+    var5 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 23;
@@ -3678,7 +3678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.consumeRequestToReactToSeriousThermalState = var5;
-    var5 = function() { // Original name: disregardSeriousThermalState, environment: var1
+    var5 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 23;
@@ -3693,7 +3693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.disregardSeriousThermalState = var5;
-    var5 = function() { // Original name: fetchDeveloperApplications, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot34;
         var2 = var3.apply;
@@ -3704,7 +3704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchDeveloperApplications = var5;
-    var5 = function() { // Original name: uploadImageAttachment, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot35;
         var2 = var3.apply;
@@ -3715,7 +3715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.uploadImageAttachment = var5;
-    var5 = function() { // Original name: fetchShelf, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot36;
         var2 = var3.apply;
@@ -3726,7 +3726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchShelf = var5;
-    var5 = function() { // Original name: sendEmbeddedActivityInvite, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot37;
         var2 = var3.apply;
@@ -3737,7 +3737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sendEmbeddedActivityInvite = var5;
-    var5 = function() { // Original name: sendEmbeddedActivityInviteUser, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot38;
         var2 = var3.apply;
@@ -3748,7 +3748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sendEmbeddedActivityInviteUser = var5;
-    var5 = function() { // Original name: dismissNewActivityIndicator, environment: var1
+    var5 = function() {
         _fun62948: for (var _fun62948_ip = 0;;) switch (_fun62948_ip) {
             case 0:
                 var6 = arguments[0];
@@ -3797,7 +3797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.dismissNewActivityIndicator = var5;
-    var5 = function() { // Original name: validateTestMode, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot39;
         var2 = var3.apply;
@@ -3809,7 +3809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validateTestMode = var5;
     var2.updateActivityPanelMode = var4;
-    var4 = function(arg0) { // Original name: updateFocusedActivityLayout, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 23;
@@ -3826,7 +3826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateFocusedActivityLayout = var4;
-    var4 = function() { // Original name: openActivityPopoutWindow, environment: var1
+    var4 = function() {
         var3 = _closure1_slot40;
         var0 = _closure1_slot17;
         var2 = var0.ACTIVITY_POPOUT_WINDOW;
@@ -3845,7 +3845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openActivityPopoutWindow = var4;
-    var4 = function(arg0) { // Original name: updateActivityPopoutWindowLayout, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 23;
@@ -3863,7 +3863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateActivityPopoutWindowLayout = var4;
     var2.createProxyTicket = var3;
-    var1 = function() { // Original name: refreshProxyTicket, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot43;
         var2 = var3.apply;

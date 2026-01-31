@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useChannelsUserCanStartStageIn, environment: var1
+    var1 = function arg0() {
         _fun65349: for (var _fun65349_ip = 0;;) switch (_fun65349_ip) {
             case 0:
                 var2 = arg0;

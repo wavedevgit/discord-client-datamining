@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/ListUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: getListSummaryLabel, environment: var1
+    var1 = function arg0, arg1() {
         _fun62070: for (var _fun62070_ip = 0;;) switch (_fun62070_ip) {
             case 0:
                 var7 = arg0;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: hasSymbols, environment: var0
+    var1 = function() {
         _fun6608: for (var _fun6608_ip = 0;;) switch (_fun6608_ip) {
             case 0:
                 var0 = global;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun101435: for (var _fun101435_ip = 0;;) switch (_fun101435_ip) {
             case 0:
                 var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun101437: for (var _fun101437_ip = 0;;) switch (_fun101437_ip) {
             case 0:
                 var3 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.RelationshipTypes;
     var _closure1_slot1 = var3;
-    var3 = function(arg0) { // Original name: filterFromPending, environment: var1
+    var3 = function arg0() {
         _fun101438: for (var _fun101438_ip = 0;;) switch (_fun101438_ip) {
             case 0:
                 var3 = arg0;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/hooks/getPendingRelationshipIds.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getPendingRelationshipIds, environment: var1
+    var1 = function arg0() {
         _fun101439: for (var _fun101439_ip = 0;;) switch (_fun101439_ip) {
             case 0:
                 var9 = arg0;

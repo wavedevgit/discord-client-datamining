@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4 + var2;
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: baseIsNative, environment: var1
+    var2 = function arg0() {
         _fun28133: for (var _fun28133_ip = 0;;) switch (_fun28133_ip) {
             case 0:
                 var5 = arg0;

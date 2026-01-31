@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.treatments = var9;
     var3 = var5.bind(var8)(var3);
     var _closure1_slot5 = var3;
-    var5 = function() { // Original name: platformSupportsVoiceFilters, environment: var1
+    var5 = function() {
         _fun94404: for (var _fun94404_ip = 0;;) switch (_fun94404_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.voiceFilterTestGuilds = var4;
     var2.VoiceFilterExperiment = var3;
-    var3 = function(arg0) { // Original name: isVoiceFiltersEnabled, environment: var1
+    var3 = function arg0() {
         _fun94405: for (var _fun94405_ip = 0;;) switch (_fun94405_ip) {
             case 0:
                 var0 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isVoiceFiltersEnabled = var3;
-    var3 = function(arg0) { // Original name: isVoiceFiltersTestingDisabled, environment: var1
+    var3 = function arg0() {
         _fun94406: for (var _fun94406_ip = 0;;) switch (_fun94406_ip) {
             case 0:
                 var1 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isVoiceFiltersTestingDisabled = var3;
-    var1 = function(arg0) { // Original name: useAreVoiceFiltersEnabled, environment: var1
+    var1 = function arg0() {
         _fun94407: for (var _fun94407_ip = 0;;) switch (_fun94407_ip) {
             case 0:
                 var1 = arg0;

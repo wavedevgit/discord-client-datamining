@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ReportModal, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.raidTypes;
         var _closure2_slot0 = var1;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.includes;
             var6 = var6.bind(var7)(var4);
             var0.checked = var6;
-            var5 = function() { // Original name: onPress, environment: var5
+            var5 = function() {
                 var2 = _closure2_slot1;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_antiraid/native/GuildAntiRaidReportModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildAntiRaidReportModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.onCloseModal;
         var _closure2_slot0 = var10;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.onCloseModal = var3;
             var1 = _closure2_slot2;
             var2.raidTypes = var1;
-            var1 = function(arg0) { // Original name: onChange, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var2 = _closure2_slot3;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.onChange = var1;
-            var1 = function() { // Original name: onSubmit, environment: var0
+            var1 = function() {
                 var3 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var2 = 17;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.onSubmit = var1;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var5 = var0.onCloseModal;
                 var2 = var0.raidTypes;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.getHeaderCloseButton;
                 var3 = var3.bind(var4)(var5);
                 var2.headerLeft = var3;
-                var1 = function() { // Original name: render, environment: var1
+                var1 = function() {
                     var3 = _closure1_slot9;
                     var2 = _closure1_slot12;
                     var1 = {};

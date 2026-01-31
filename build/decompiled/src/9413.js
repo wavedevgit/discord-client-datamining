@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: horizontalStackLayout, environment: var1
+    var3 = function() {
         _fun74872: for (var _fun74872_ip = 0;;) switch (_fun74872_ip) {
             case 0:
                 var5 = undefined;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = arguments[var1];
             case 31:
                 var _closure2_slot0 = var3;
-                var0 = function(arg0) { // Original name: pnpm_stackTs1, environment: var0
+                var0 = function arg0() {
                     _fun74873: for (var _fun74873_ip = 0;;) switch (_fun74873_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -337,11 +337,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot6 = var4;
     var4 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: getCommonVariables, environment: var0
+        var0 = function arg0() {
             _fun74875: for (var _fun74875_ip = 0;;) switch (_fun74875_ip) {
                 case 0:
                     var0 = arg0;
-                    var9 = function(arg0) { // Original name: easeInOutCubic, environment: var1
+                    var9 = function arg0() {
                         _fun74876: for (var _fun74876_ip = 0;;) switch (_fun74876_ip) {
                             case 0:
                                 var2 = arg0;
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot8 = var4;
     var4 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: getCommonStyles, environment: var0
+        var0 = function arg0() {
             _fun74878: for (var _fun74878_ip = 0;;) switch (_fun74878_ip) {
                 case 0:
                     var1 = arg0;
@@ -644,7 +644,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.bind(var0)();
     var _closure1_slot9 = var4;
     var2.horizontalStackLayout = var3;
-    var3 = function() { // Original name: useHorizontalStackLayout, environment: var1
+    var3 = function() {
         _fun74879: for (var _fun74879_ip = 0;;) switch (_fun74879_ip) {
             case 0:
                 var4 = undefined;
@@ -730,7 +730,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.useHorizontalStackLayout = var3;
-    var1 = function() { // Original name: verticalStackLayout, environment: var1
+    var1 = function() {
         _fun74881: for (var _fun74881_ip = 0;;) switch (_fun74881_ip) {
             case 0:
                 var5 = undefined;
@@ -755,7 +755,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = arguments[var1];
             case 31:
                 var _closure2_slot0 = var3;
-                var0 = function(arg0) { // Original name: pnpm_stackTs2, environment: var0
+                var0 = function arg0() {
                     _fun74882: for (var _fun74882_ip = 0;;) switch (_fun74882_ip) {
                         case 0:
                             var1 = _closure2_slot0;

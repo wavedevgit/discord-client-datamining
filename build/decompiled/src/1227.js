@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: warning, environment: var0
+    var1 = function arg0, arg1() {
         var0 = undefined;
         return var0;
     };

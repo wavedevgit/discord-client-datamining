@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     _fun7319: for (var _fun7319_ip = 0;;) switch (_fun7319_ip) {
         case 0:
-            var1 = function(arg0) { // Original name: shim, environment: var0
+            var1 = function arg0() {
                 _fun7320: for (var _fun7320_ip = 0;;) switch (_fun7320_ip) {
                     case 0:
                         var0 = new Array(0);

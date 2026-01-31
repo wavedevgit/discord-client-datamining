@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: matchPathToRoutes, environment: var3
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var4 = function(arg0) { // Original name: extractParamsFromVoiceModalRoute, environment: var3
+    var4 = function arg0() {
         _fun91433: for (var _fun91433_ip = 0;;) switch (_fun91433_ip) {
             case 0:
                 var7 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var0 = function(arg0) { // Original name: selectLastVisitedTextChannel, environment: var3
+    var0 = function arg0() {
         _fun91434: for (var _fun91434_ip = 0;;) switch (_fun91434_ip) {
             case 0:
                 var6 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var1 = function(arg0) { // Original name: extractParams, environment: var3
+    var1 = function arg0() {
         _fun91435: for (var _fun91435_ip = 0;;) switch (_fun91435_ip) {
             case 0:
                 var1 = arg0;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.MAIN_DRAWER_ROUTES = var5;
     var2.extractParamsFromVoiceModalRoute = var4;
-    var4 = function(arg0) { // Original name: popVoiceRoute, environment: var3
+    var4 = function arg0() {
         var8 = arg0;
         var0 = _closure1_slot8;
         var4 = var0.lastNonVoiceRoute;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.popVoiceRoute = var4;
-    var4 = function(arg0, arg1) { // Original name: transitionToVoiceRoute, environment: var3
+    var4 = function arg0, arg1() {
         _fun91437: for (var _fun91437_ip = 0;;) switch (_fun91437_ip) {
             case 0:
                 var5 = arg0;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transitionToVoiceRoute = var4;
-    var4 = function(arg0) { // Original name: voiceRouteRewriter, environment: var3
+    var4 = function arg0() {
         _fun91438: for (var _fun91438_ip = 0;;) switch (_fun91438_ip) {
             case 0:
                 var6 = arg0;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.voiceRouteRewriter = var4;
-    var4 = function(arg0) { // Original name: saveLastRouteListener, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.saveLastRouteListener = var4;
-    var4 = function(arg0) { // Original name: saveLastNonVoiceRouteListener, environment: var3
+    var4 = function arg0() {
         _fun91440: for (var _fun91440_ip = 0;;) switch (_fun91440_ip) {
             case 0:
                 var6 = arg0;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.saveLastNonVoiceRouteListener = var4;
-    var3 = function(arg0) { // Original name: updateSelectedChannelListener, environment: var3
+    var3 = function arg0() {
         _fun91441: for (var _fun91441_ip = 0;;) switch (_fun91441_ip) {
             case 0:
                 var13 = arg0;

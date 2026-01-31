@@ -8,10 +8,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: BurstReactionAnimationContainerInner, environment: var1
+    var0 = function() {
         _fun109604: for (var _fun109604_ip = 0;;) switch (_fun109604_ip) {
             case 0:
-                var9 = function() { // Original name: handleComponentFinish, environment: var5
+                var9 = function() {
                     var2 = _closure2_slot2;
                     var0 = undefined;
                     var1 = null;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot6 = var9;
-                var0 = function(arg0) { // Original name: handleAnimationFinish, environment: var5
+                var0 = function arg0() {
                     _fun109606: for (var _fun109606_ip = 0;;) switch (_fun109606_ip) {
                         case 0:
                             var1 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot4;
                 var7 = var8.useEffect;
                 var3 = function() { // Environment: var5
-                    var4 = function(arg0) { // Original name: handleEffectReceived, environment: var0
+                    var4 = function arg0() {
                         var0 = arg0;
                         var5 = var0.channelId;
                         var4 = var0.emoji;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var12[var10];
                 var7 = var11.bind(var4)(var2);
                 var3 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: b, environment: var5
+                var2 = function() {
                     _fun109610: for (var _fun109610_ip = 0;;) switch (_fun109610_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun109610
                             }
                         case 67:
-                            var6 = function(arg0) { // Original name: n, environment: var2
+                            var6 = function arg0() {
                                 _fun109611: for (var _fun109611_ip = 0;;) switch (_fun109611_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(1);
                 var6[0] = var7;
                 var1.contentTypes = var6;
-                var5 = function(arg0) { // Original name: children, environment: var5
+                var5 = function arg0() {
                     _fun109612: for (var _fun109612_ip = 0;;) switch (_fun109612_ip) {
                         case 0:
                             var0 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var11.bind(var2)(var10);
                             var10 = var10.BACKDROP_OPACITY;
                             var7.activeOpacity = var10;
-                            var10 = function() { // Original name: onPress, environment: var21
+                            var10 = function() {
                                 var2 = _closure2_slot7;
                                 var0 = undefined;
                                 var1 = function() { // Environment: var1
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var17.messageId = var23;
                             var22 = var22.emoji;
                             var17.emoji = var22;
-                            var21 = function() { // Original name: onComplete, environment: var21
+                            var21 = function() {
                                 var1 = _closure2_slot7;
                                 var0 = undefined;
                                 var1 = var1.bind(var0)();
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/burst_reactions/BurstReactionAnimationContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: BurstReactionAnimationContainer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot8;
         var1 = _closure1_slot0;
         var7 = _closure1_slot2;

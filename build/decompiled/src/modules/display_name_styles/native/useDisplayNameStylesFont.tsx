@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/display_name_styles/native/useDisplayNameStylesFont.tsx';
     var4 = var5.bind(var6)(var4);
     var2.DISPLAY_NAME_STYLES_FONT_FAMILY_MAP = var3;
-    var1 = function(arg0) { // Original name: useDisplayNameStylesFont, environment: var1
+    var1 = function arg0() {
         _fun56763: for (var _fun56763_ip = 0;;) switch (_fun56763_ip) {
             case 0:
                 var0 = arg0;

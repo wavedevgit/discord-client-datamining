@@ -1379,7 +1379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.guildName = var9;
         var5 = var7.bind(var8)(var6, var5);
         var1.content = var5;
-        var4 = function() { // Original name: icon, environment: var4
+        var4 = function() {
             var0 = _closure2_slot0;
             return var0;
         };
@@ -1416,7 +1416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.guildName = var9;
         var5 = var7.bind(var8)(var6, var5);
         var1.content = var5;
-        var4 = function() { // Original name: icon, environment: var4
+        var4 = function() {
             var0 = _closure2_slot0;
             return var0;
         };

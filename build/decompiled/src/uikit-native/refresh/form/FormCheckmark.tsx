@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/refresh/form/FormCheckmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RowCheckmark, environment: var1
+    var1 = function arg0() {
         _fun44472: for (var _fun44472_ip = 0;;) switch (_fun44472_ip) {
             case 0:
                 var0 = arg0;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun83537: for (var _fun83537_ip = 0;;) switch (_fun83537_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: validTimestamp, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot6;
         var1 = var2.test;
         var0 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: parseTimestamp, environment: var1
+    var0 = function arg0() {
         _fun83541: for (var _fun83541_ip = 0;;) switch (_fun83541_ip) {
             case 0:
                 var2 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Error;
     var4 = var4.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var2 = function(arg0, arg1) { // Original name: VttParserError, environment: var0
+        var2 = function arg0, arg1() {
             _fun83543: for (var _fun83543_ip = 0;;) switch (_fun83543_ip) {
                 case 0:
                     var3 = this;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/quests/native/VideoQuestModal/captions/VttParser.tsx';
     var4 = var5.bind(var6)(var4);
     var2.VttParserError = var3;
-    var1 = function(arg0) { // Original name: parseVtt, environment: var1
+    var1 = function arg0() {
         _fun83544: for (var _fun83544_ip = 0;;) switch (_fun83544_ip) {
             case 0:
                 var2 = arg0;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 instanceof Object ? var0 : var6;
                 throw var0;
             case 344:
-                var0 = function(arg0, arg1) { // Original name: parseCues, environment: var3
+                var0 = function arg0, arg1() {
                     var4 = arg0;
                     var1 = arg1;
                     var _closure3_slot0 = var1;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun83544
                 }
             case 386:
-                var3 = function(arg0) { // Original name: parseMeta, environment: var3
+                var3 = function arg0() {
                     _fun83548: for (var _fun83548_ip = 0;;) switch (_fun83548_ip) {
                         case 0:
                             var4 = arg0;

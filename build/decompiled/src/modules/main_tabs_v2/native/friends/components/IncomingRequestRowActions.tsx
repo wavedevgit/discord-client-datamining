@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/components/IncomingRequestRowActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: IncomingRequestRowActions, environment: var1
+    var1 = function arg0() {
         _fun108612: for (var _fun108612_ip = 0;;) switch (_fun108612_ip) {
             case 0:
                 var3 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11[var21];
                 var7 = var22.bind(var3)(var5);
                 var6 = var7.useAnimatedStyle;
-                var5 = function() { // Original name: E, environment: var17
+                var5 = function() {
                     _fun108613: for (var _fun108613_ip = 0;;) switch (_fun108613_ip) {
                         case 0:
                             var0 = {
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11[var21];
                 var8 = var22.bind(var3)(var5);
                 var7 = var8.useAnimatedStyle;
-                var5 = function() { // Original name: q, environment: var17
+                var5 = function() {
                     _fun108614: for (var _fun108614_ip = 0;;) switch (_fun108614_ip) {
                         case 0:
                             var2 = _closure2_slot7;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11[var21];
                 var8 = var22.bind(var3)(var5);
                 var7 = var8.useAnimatedStyle;
-                var5 = function() { // Original name: x, environment: var17
+                var5 = function() {
                     var0 = {};
                     var2 = {};
                     var4 = _closure2_slot8;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11[var21];
                 var8 = var22.bind(var3)(var5);
                 var7 = var8.useAnimatedStyle;
-                var5 = function() { // Original name: A, environment: var17
+                var5 = function() {
                     _fun108616: for (var _fun108616_ip = 0;;) switch (_fun108616_ip) {
                         case 0:
                             var0 = {};
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11[var21];
                 var8 = var22.bind(var3)(var5);
                 var7 = var8.useAnimatedProps;
-                var5 = function() { // Original name: X, environment: var17
+                var5 = function() {
                     var0 = {};
                     var2 = _closure2_slot2;
                     var1 = var2.get;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var12.bind(var3)(var4);
                 var5 = var4.View;
                 var4 = {};
-                var13 = function(arg0) { // Original name: onLayout, environment: var17
+                var13 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var0 = var0.layout;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.View;
                 var5 = {};
                 var5.style = var9;
-                var9 = function(arg0) { // Original name: onLayout, environment: var17
+                var9 = function arg0() {
                     var2 = _closure2_slot7;
                     var1 = var2.set;
                     var0 = arg0;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var19;
             case 1257:
                 var13.style = var18;
-                var17 = function(arg0) { // Original name: onLayout, environment: var17
+                var17 = function arg0() {
                     var0 = arg0;
                     var4 = _closure2_slot8;
                     var3 = var4.set;

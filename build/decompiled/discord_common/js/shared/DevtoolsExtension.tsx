@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: reportEvent, environment: var1
+    var3 = function arg0() {
         _fun13520: for (var _fun13520_ip = 0;;) switch (_fun13520_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot0 = var3;
-    var0 = function() { // Original name: getDevtools, environment: var1
+    var0 = function() {
         _fun13521: for (var _fun13521_ip = 0;;) switch (_fun13521_ip) {
             case 0:
                 var1 = global;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = '../discord_common/js/shared/DevtoolsExtension.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: logFluxAction, environment: var1
+    var4 = function arg0, arg1() {
         var0 = arg0;
         var2 = _closure1_slot0;
         var1 = {};
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.logFluxAction = var4;
     var2.reportEvent = var3;
-    var3 = function(arg0) { // Original name: notifyStoreCreated, environment: var1
+    var3 = function arg0() {
         _fun13523: for (var _fun13523_ip = 0;;) switch (_fun13523_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.notifyStoreCreated = var3;
-    var1 = function(arg0) { // Original name: notifyStoreChange, environment: var1
+    var1 = function arg0() {
         _fun13524: for (var _fun13524_ip = 0;;) switch (_fun13524_ip) {
             case 0:
                 var1 = _closure1_slot1;

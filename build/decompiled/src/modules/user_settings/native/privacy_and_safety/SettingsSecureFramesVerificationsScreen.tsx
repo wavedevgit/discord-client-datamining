@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: VerificationListItem, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var15 = var3.index;
         var2 = var3.userId;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: SectionListItem, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.title;
         var1 = _closure1_slot8;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: renderItem, environment: var1
+    var0 = function arg0() {
         _fun88261: for (var _fun88261_ip = 0;;) switch (_fun88261_ip) {
             case 0:
                 var0 = arg0;
@@ -173,13 +173,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getItemType, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.type;
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0() {
         _fun88263: for (var _fun88263_ip = 0;;) switch (_fun88263_ip) {
             case 0:
                 var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: ClearVerificationsListFooter, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var4 = var1.userId;
         var _closure2_slot0 = var4;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/privacy_and_safety/SettingsSecureFramesVerificationsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SettingsSecureFramesVerificationsScreen, environment: var1
+    var1 = function() {
         var1 = _closure1_slot8;
         var3 = undefined;
         var10 = var1.bind(var3)();
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = ')';
             var4 = var14[var7](var13, var12, var11, var10, var9);
             var1.title = var4;
-            var4 = function() { // Original name: headerTitle, environment: var4
+            var4 = function() {
                 var3 = _closure1_slot7;
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;

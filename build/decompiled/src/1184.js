@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var1 = function(arg0) { // Original name: shouldEnableNativeNagger, environment: var1
+    var1 = function arg0() {
         _fun12895: for (var _fun12895_ip = 0;;) switch (_fun12895_ip) {
             case 0:
                 var0 = arg0;

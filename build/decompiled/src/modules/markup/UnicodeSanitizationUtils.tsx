@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var7;
-    var9 = function(arg0) { // Original name: makeMatcher, environment: var1
+    var9 = function arg0() {
         var2 = arg0;
         var0 = global;
         var3 = var0.RegExp;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0 instanceof Object ? var0 : var1;
         return var0;
     };
-    var0 = function(arg0) { // Original name: safelyPartiallyDecodeURIComponent, environment: var1
+    var0 = function arg0() {
         _fun43992: for (var _fun43992_ip = 0;;) switch (_fun43992_ip) {
             case 0:
                 var0 = arg0;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.BLANK_CHARACTERS_TO_SANITIZE_REGEX = var5;
     var2.BLANK_CHARACTERS_TO_SANITIZE_REGEX_EXCLUDING_TABS = var4;
-    var4 = function(arg0) { // Original name: sanitizeWhitespace, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = _closure1_slot2;
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sanitizeWhitespace = var4;
-    var4 = function(arg0) { // Original name: sanitizeWhitespaceExcludingTabs, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = _closure1_slot3;
@@ -932,7 +932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sanitizeWhitespaceExcludingTabs = var4;
     var2.UNICODE_CONFUSABLES_FOR_URL_DETECTION = var3;
-    var3 = function(arg0) { // Original name: sanitizeUnicodeConfusables, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot4;
@@ -953,7 +953,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sanitizeUnicodeConfusables = var3;
-    var1 = function(arg0) { // Original name: safelyMakeUrlHumanReadable, environment: var1
+    var1 = function arg0() {
         _fun43997: for (var _fun43997_ip = 0;;) switch (_fun43997_ip) {
             case 0:
                 var0 = arg0;

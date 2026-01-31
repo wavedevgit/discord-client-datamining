@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: _findPlayingActivity, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot4;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var0;
-    var5 = function(arg0, arg1) { // Original name: getStreamerActivityByUserId, environment: var1
+    var5 = function arg0, arg1() {
         var3 = arg1;
         var2 = var3.findActivity;
         var1 = _closure1_slot5;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0, arg1) { // Original name: getStreamerActivity, environment: var1
+    var4 = function arg0, arg1() {
         _fun54222: for (var _fun54222_ip = 0;;) switch (_fun54222_ip) {
             case 0:
                 var1 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0, arg1) { // Original name: getStreamerApplication, environment: var1
+    var3 = function arg0, arg1() {
         _fun54223: for (var _fun54223_ip = 0;;) switch (_fun54223_ip) {
             case 0:
                 var4 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var0 = function(arg0, arg1) { // Original name: streamApplicationEqualityCheck, environment: var1
+    var0 = function arg0, arg1() {
         _fun54224: for (var _fun54224_ip = 0;;) switch (_fun54224_ip) {
             case 0:
                 var5 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getStreamerActivityByUserId = var5;
     var2.getStreamerActivity = var4;
     var2.getStreamerApplication = var3;
-    var1 = function(arg0) { // Original name: useGetStreamApplication, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var4 = _closure1_slot0;

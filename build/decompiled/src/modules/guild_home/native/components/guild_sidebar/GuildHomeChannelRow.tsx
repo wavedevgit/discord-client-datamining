@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_home/native/components/guild_sidebar/GuildHomeChannelRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildHomeChannelRow, environment: var1
+    var1 = function arg0() {
         _fun102141: for (var _fun102141_ip = 0;;) switch (_fun102141_ip) {
             case 0:
                 var2 = arg0;

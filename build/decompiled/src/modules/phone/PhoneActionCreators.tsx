@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'contact_sync';
     var1.CONTACT_SYNC = var3;
     var3 = {};
-    var7 = function(arg0) { // Original name: setCountryCode, environment: var4
+    var7 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.setCountryCode = var7;
-    var7 = function(arg0, arg1) { // Original name: removePhone, environment: var4
+    var7 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.removePhone = var7;
-    var7 = function(arg0) { // Original name: resendCode, environment: var4
+    var7 = function arg0() {
         _fun60906: for (var _fun60906_ip = 0;;) switch (_fun60906_ip) {
             case 0:
                 var3 = {};
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.resendCode = var7;
-    var7 = function(arg0, arg1) { // Original name: beginAddPhone, environment: var4
+    var7 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.beginAddPhone = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: addPhone, environment: var4
+    var7 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.addPhone = var7;
-    var7 = function(arg0) { // Original name: addPhoneWithoutPassword, environment: var4
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.addPhoneWithoutPassword = var7;
-    var7 = function(arg0, arg1) { // Original name: beginReverifyPhone, environment: var4
+    var7 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.beginReverifyPhone = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: reverifyPhone, environment: var4
+    var7 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.reverifyPhone = var7;
-    var7 = function(arg0) { // Original name: validatePhoneForSupport, environment: var4
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.validatePhoneForSupport = var7;
-    var4 = function(arg0, arg1) { // Original name: verifyPhone, environment: var4
+    var4 = function arg0, arg1() {
         _fun60913: for (var _fun60913_ip = 0;;) switch (_fun60913_ip) {
             case 0:
                 var3 = arguments[2];

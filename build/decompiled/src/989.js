@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0, arg1, arg2) { // Original name: callFrameToStackFrame, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun10152: for (var _fun10152_ip = 0;;) switch (_fun10152_ip) {
             case 0:
                 var3 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.callFrameToStackFrame = var2;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: watchdogTimer, environment: var0
+    var0 = function arg0, arg1, arg2, arg3() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = arg2;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 20;
         var0 = var3.bind(var4)(var2, var0);
         var0 = {};
-        var2 = function() { // Original name: poll, environment: var1
+        var2 = function() {
             var1 = _closure2_slot3;
             var0 = var1.reset;
             var0 = var0.bind(var1)();
@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.poll = var2;
-        var1 = function(arg0) { // Original name: enabled, environment: var1
+        var1 = function arg0() {
             var0 = arg0;
             _closure2_slot5 = var0;
             var0 = undefined;

@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/EphemeralIndication.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createEphemeralIndication, environment: var1
+    var1 = function arg0() {
         _fun56135: for (var _fun56135_ip = 0;;) switch (_fun56135_ip) {
             case 0:
                 var12 = arg0;

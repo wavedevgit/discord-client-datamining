@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var9;
-    var5 = function(arg0) { // Original name: getEmbeddedActivityParticipantId, environment: var3
+    var5 = function arg0() {
         _fun35892: for (var _fun35892_ip = 0;;) switch (_fun35892_ip) {
             case 0:
                 var0 = arg0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var5;
-    var4 = function(arg0) { // Original name: sortKey, environment: var3
+    var4 = function arg0() {
         _fun35893: for (var _fun35893_ip = 0;;) switch (_fun35893_ip) {
             case 0:
                 var0 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var4;
-    var0 = function(arg0) { // Original name: getIsLatched, environment: var3
+    var0 = function arg0() {
         _fun35894: for (var _fun35894_ip = 0;;) switch (_fun35894_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var1;
     var6 = function() { // Environment: var3
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: ChannelRTCParticipants, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var4 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'version';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.participantByIndex;
             var0 = var0.version;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'size';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.participantByIndex;
             var1 = var2.size;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toArray';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0.participantByIndex;
             var2 = var3.values;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'rebuild';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun35901: for (var _fun35901_ip = 0;;) switch (_fun35901_ip) {
                 case 0:
                     var1 = this;
@@ -688,7 +688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getParticipant';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun35904: for (var _fun35904_ip = 0;;) switch (_fun35904_ip) {
                 case 0:
                     var0 = this;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateEmbeddedActivities';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var1 = var2.updateParticipant;
             var0 = '__EMBEDDED_ACTIVITIES__';
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasEmbeddedActivity';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var1 = var2.size;
             var0 = _closure1_slot20;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateParticipant';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun35907: for (var _fun35907_ip = 0;;) switch (_fun35907_ip) {
                 case 0:
                     var3 = arg0;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateParticipantSpeaking';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun35910: for (var _fun35910_ip = 0;;) switch (_fun35910_ip) {
                 case 0:
                     var1 = arg0;
@@ -968,7 +968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateParticipantQuality';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun35912: for (var _fun35912_ip = 0;;) switch (_fun35912_ip) {
                 case 0:
                     var0 = this;
@@ -1041,7 +1041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateGuildRingingUsers';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun35914: for (var _fun35914_ip = 0;;) switch (_fun35914_ip) {
                 case 0:
                     var2 = arg0;
@@ -1070,7 +1070,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateParticipantPoppedOut';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun35915: for (var _fun35915_ip = 0;;) switch (_fun35915_ip) {
                 case 0:
                     var2 = arg0;
@@ -1099,7 +1099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_getEmbeddedActivities';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun35916: for (var _fun35916_ip = 0;;) switch (_fun35916_ip) {
                 case 0:
                     var0 = this;
@@ -1147,7 +1147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_getParticipantsForEmbeddedActivities';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var1 = var2._getEmbeddedActivities;
@@ -1232,7 +1232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_getParticipantsForUser';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun35920: for (var _fun35920_ip = 0;;) switch (_fun35920_ip) {
                 case 0:
                     var16 = arg0;
@@ -1579,7 +1579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var9)(var7);
     var2.default = var6;
     var2.getEmbeddedActivityParticipantId = var5;
-    var5 = function(arg0) { // Original name: activityParticipantIdToApplicationId, environment: var3
+    var5 = function arg0() {
         _fun35921: for (var _fun35921_ip = 0;;) switch (_fun35921_ip) {
             case 0:
                 var3 = arg0;
@@ -1601,7 +1601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.activityParticipantIdToApplicationId = var5;
     var2.sortKey = var4;
-    var3 = function(arg0, arg1) { // Original name: areParticipantsEqual, environment: var3
+    var3 = function arg0, arg1() {
         _fun35922: for (var _fun35922_ip = 0;;) switch (_fun35922_ip) {
             case 0:
                 var4 = arg0;

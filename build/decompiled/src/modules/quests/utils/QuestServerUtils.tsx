@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var5 = function(arg0) { // Original name: questConfigFromServer, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: progressFromServer, environment: var1
+    var0 = function arg0() {
         _fun46633: for (var _fun46633_ip = 0;;) switch (_fun46633_ip) {
             case 0:
                 var0 = {};
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var4 = function(arg0) { // Original name: questUserStatusFromServer, environment: var1
+    var4 = function arg0() {
         _fun46634: for (var _fun46634_ip = 0;;) switch (_fun46634_ip) {
             case 0:
                 var1 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var0 = function(arg0) { // Original name: getSimpleRewardFromServer, environment: var1
+    var0 = function arg0() {
         _fun46635: for (var _fun46635_ip = 0;;) switch (_fun46635_ip) {
             case 0:
                 var2 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getClaimedQuestFromServer, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0) { // Original name: questsRewardCodeFromServer, environment: var1
+    var3 = function arg0() {
         _fun46637: for (var _fun46637_ip = 0;;) switch (_fun46637_ip) {
             case 0:
                 var1 = arg0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var0 = function(arg0) { // Original name: _questsTenantMetadataFromServer, environment: var1
+    var0 = function arg0() {
         _fun46638: for (var _fun46638_ip = 0;;) switch (_fun46638_ip) {
             case 0:
                 var1 = arg0;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: _questsEntitlementFromServer, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.sku_id;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: questHomeTakeoverAssetFromServer, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.alt_text;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: questHomeTakeoverCtaQuestFromServer, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.cta_type;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/quests/utils/QuestServerUtils.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: isQuestWithKnownConfigVersion, environment: var1
+    var6 = function arg0() {
         _fun46642: for (var _fun46642_ip = 0;;) switch (_fun46642_ip) {
             case 0:
                 var0 = arg0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isQuestWithKnownConfigVersion = var6;
     var2.questConfigFromServer = var5;
     var2.questUserStatusFromServer = var4;
-    var4 = function(arg0) { // Original name: questWithUserStatusFromServer, environment: var1
+    var4 = function arg0() {
         _fun46644: for (var _fun46644_ip = 0;;) switch (_fun46644_ip) {
             case 0:
                 var1 = arg0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.questWithUserStatusFromServer = var4;
-    var4 = function(arg0) { // Original name: excludedQuestFromServer, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.excludedQuestFromServer = var4;
-    var4 = function(arg0) { // Original name: getClaimedQuestWithUserStatusFromServer, environment: var1
+    var4 = function arg0() {
         _fun46646: for (var _fun46646_ip = 0;;) switch (_fun46646_ip) {
             case 0:
                 var2 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getClaimedQuestWithUserStatusFromServer = var4;
     var2.questsRewardCodeFromServer = var3;
-    var3 = function(arg0) { // Original name: questsEntitlementsFromServer, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.claimed_at;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.questsEntitlementsFromServer = var3;
-    var1 = function(arg0) { // Original name: questHomeTakeoverConfigFromServer, environment: var1
+    var1 = function arg0() {
         _fun46648: for (var _fun46648_ip = 0;;) switch (_fun46648_ip) {
             case 0:
                 var0 = arg0;

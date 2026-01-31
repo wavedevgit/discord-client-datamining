@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: RobloxIcon, environment: var1
+    var0 = function arg0() {
         _fun109788: for (var _fun109788_ip = 0;;) switch (_fun109788_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: UnionIcon, environment: var1
+    var0 = function arg0() {
         _fun109789: for (var _fun109789_ip = 0;;) switch (_fun109789_ip) {
             case 0:
                 var0 = arg0;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: UserIcon, environment: var1
+    var0 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/local_app_detection/native/RobloxConnectionCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: RobloxConnectionActionSheet, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.markAsDismissed;
         var _closure2_slot0 = var0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var25.bind(var3)(var0);
         var0 = var0.bind(var3)();
         var9 = var0.bottom;
-        var15 = function() { // Original name: handleCancel, environment: var18
+        var15 = function() {
             _fun109793: for (var _fun109793_ip = 0;;) switch (_fun109793_ip) {
                 case 0:
                     var3 = _closure1_slot1;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.leading = var7;
         var4 = var6.bind(var3)(var5, var4);
         var0.header = var4;
-        var4 = function() { // Original name: onDismiss, environment: var18
+        var4 = function() {
             var2 = _closure2_slot0;
             var0 = _closure1_slot12;
             var1 = var0.DISMISS;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.iconPosition = var21;
         var21 = 'lg';
         var11.size = var21;
-        var18 = function() { // Original name: onPress, environment: var18
+        var18 = function() {
             _fun109795: for (var _fun109795_ip = 0;;) switch (_fun109795_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: useShouldShowRobloxConnectionCoachmark, environment: var1
+    var1 = function() {
         _fun109796: for (var _fun109796_ip = 0;;) switch (_fun109796_ip) {
             case 0:
                 var7 = _closure1_slot0;

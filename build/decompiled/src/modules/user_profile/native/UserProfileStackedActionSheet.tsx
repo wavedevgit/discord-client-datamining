@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileStackedActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: UserProfileStackedActionSheet, environment: var1
+    var3 = function arg0() {
         _fun61833: for (var _fun61833_ip = 0;;) switch (_fun61833_ip) {
             case 0:
                 var3 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: UserProfileStackedActionSheetList, environment: var1
+    var3 = function arg0() {
         _fun61834: for (var _fun61834_ip = 0;;) switch (_fun61834_ip) {
             case 0:
                 var2 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var6.list;
                 var7 = 'style';
                 var0[var7] = var11;
-                var11 = function() { // Original name: ItemSeparatorComponent, environment: var4
+                var11 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[2] = var5;
                 var5 = 'contentContainerStyle';
                 var0[var5] = var6;
-                var5 = function(arg0) { // Original name: renderItem, environment: var4
+                var5 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = var0.index;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.UserProfileStackedActionSheetList = var3;
-    var1 = function(arg0) { // Original name: UserProfileStackedActionSheetSectionList, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var6 = var2.contentContainerStyle;
         var0 = var2.renderItem;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = copyDataProperties(var10, var9);
         var5 = 'contentContainerStyle';
         var0[var5] = var6;
-        var6 = function(arg0) { // Original name: renderItem, environment: var4
+        var6 = function arg0() {
             var1 = arg0;
             var4 = var1.item;
             var0 = var1.section;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var5 = 'renderItem';
         var0[var5] = var6;
-        var5 = function() { // Original name: ItemSeparatorComponent, environment: var4
+        var5 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;

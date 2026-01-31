@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'hooks/useUnmountAbortSignal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useUnmountAbortSignal, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var5 = _closure1_slot2;
         var0 = 0;

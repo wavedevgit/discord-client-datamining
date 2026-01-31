@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/client_themes/ClientThemesUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getThemeForColor, environment: var1
+    var3 = function arg0() {
         _fun27924: for (var _fun27924_ip = 0;;) switch (_fun27924_ip) {
             case 0:
                 var0 = arg0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getThemeForColor = var3;
-    var3 = function(arg0) { // Original name: getLinearGradientForBackgroundGradient, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.angle;
         var2 = var0.colors;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLinearGradientForBackgroundGradient = var3;
-    var3 = function(arg0, arg1) { // Original name: areThemesEqualForGradientThemes, environment: var1
+    var3 = function arg0, arg1() {
         _fun27927: for (var _fun27927_ip = 0;;) switch (_fun27927_ip) {
             case 0:
                 var5 = arg0;

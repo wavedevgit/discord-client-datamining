@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: pickNotNil, environment: var0
+    var2 = function arg0() {
         _fun48357: for (var _fun48357_ip = 0;;) switch (_fun48357_ip) {
             case 0:
                 var9 = arg0;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.pickNotNil = var2;
     var2 = /#([^)]+)'?\)?$/;
     var1.idPattern = var2;
-    var2 = function() { // Original name: getRandomNumber, environment: var0
+    var2 = function() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.floor;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getRandomNumber = var2;
-    var0 = function() { // Original name: warnUnimplementedFilter, environment: var0
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

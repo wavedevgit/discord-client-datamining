@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/native/components/InstantInviteAgeText.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun67520: for (var _fun67520_ip = 0;;) switch (_fun67520_ip) {
             case 0:
                 var0 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var15.bind(var4)(var7);
                 var8 = var7.PressableOpacity;
                 var7 = {};
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     _fun67522: for (var _fun67522_ip = 0;;) switch (_fun67522_ip) {
                         case 0:
                             var2 = _closure1_slot0;

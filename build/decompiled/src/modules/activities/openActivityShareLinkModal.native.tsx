@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openActivityShareLinkModal = var3;
-    var1 = function() { // Original name: closeActivityShareLinkModal, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;

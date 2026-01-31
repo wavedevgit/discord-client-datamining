@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useDiscoveryByPhoneSettingDescription, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useDescription = var8;
-    var8 = function() { // Original name: useDiscoveryByPhoneSettingValue, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 3;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var7 = function(arg0) { // Original name: onDiscoveryByPhoneSettingValueChange, environment: var7
+    var7 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 3;

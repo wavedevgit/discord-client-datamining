@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Original name: toKey, environment: var0
+    var1 = function arg0() {
         _fun8248: for (var _fun8248_ip = 0;;) switch (_fun8248_ip) {
             case 0:
                 var0 = arg0;

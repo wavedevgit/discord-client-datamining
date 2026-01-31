@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/EmojiPickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun57166: for (var _fun57166_ip = 0;;) switch (_fun57166_ip) {
             case 0:
                 var0 = arg0;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var12[var8];
                             var9 = var9.bind(var0)(var8);
                             var8 = {};
-                            var12 = function() { // Original name: onPress, environment: var12
+                            var12 = function() {
                                 _fun57173: for (var _fun57173_ip = 0;;) switch (_fun57173_ip) {
                                     case 0:
                                         var2 = _closure1_slot0;

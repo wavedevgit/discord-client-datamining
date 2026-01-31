@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TrackUserProfileEditActions = var8;
     var2.TrackUserProfileWishlistActions = var7;
     var2.TrackUserProfileUi = var6;
-    var5 = function(arg0) { // Original name: getBadgeAssetFromCDN, environment: var5
+    var5 = function arg0() {
         _fun57069: for (var _fun57069_ip = 0;;) switch (_fun57069_ip) {
             case 0:
                 var6 = arg0;

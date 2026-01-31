@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var3 = function(arg0) { // Original name: _getUnhandledRejectionError, environment: var1
+    var3 = function arg0() {
         _fun10995: for (var _fun10995_ip = 0;;) switch (_fun10995_ip) {
             case 0:
                 var3 = arg0;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var4 = function(arg0) { // Original name: _eventFromRejectionWithPrimitive, environment: var1
+    var4 = function arg0() {
         var0 = {};
         var1 = {};
         var3 = {};
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var4;
-    var0 = function(arg0) { // Original name: globalHandlerLog, environment: var1
+    var0 = function arg0() {
         _fun10997: for (var _fun10997_ip = 0;;) switch (_fun10997_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: getOptions, environment: var1
+    var0 = function() {
         _fun10998: for (var _fun10998_ip = 0;;) switch (_fun10998_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 56:
                 var1 = {};
-                var2 = function() { // Original name: stackParser, environment: var2
+                var2 = function() {
                     var0 = new Array(0);
                     return var0;
                 };
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var6 = var6.bind(var0)(var5);
     var5 = var6.defineIntegration;
-    var1 = function() { // Original name: _globalHandlersIntegration, environment: var1
+    var1 = function() {
         _fun11000: for (var _fun11000_ip = 0;;) switch (_fun11000_ip) {
             case 0:
                 var4 = undefined;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'GlobalHandlers';
                 var0.name = var2;
-                var2 = function() { // Original name: setupOnce, environment: var1
+                var2 = function() {
                     var0 = global;
                     var1 = var0.Error;
                     var0 = 50;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.setupOnce = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     _fun11002: for (var _fun11002_ip = 0;;) switch (_fun11002_ip) {
                         case 0:
                             var1 = arg0;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun11002
                             }
                         case 21:
-                            var3 = function(arg0) { // Original name: _installGlobalOnErrorHandler, environment: var0
+                            var3 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var3 = _closure1_slot0;
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var16 = undefined;
                                             var15 = var11;
                                             var4 = var19[var9](var18, var17, var16, var15, var14, var13);
-                                            var2 = function(arg0, arg1, arg2, arg3) { // Original name: _enhanceEventWithInitialFrame, environment: var2
+                                            var2 = function arg0, arg1, arg2, arg3() {
                                                 _fun11005: for (var _fun11005_ip = 0;;) switch (_fun11005_ip) {
                                                     case 0:
                                                         var0 = arg0;
@@ -496,7 +496,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun11002
                             }
                         case 62:
-                            var0 = function(arg0) { // Original name: _installGlobalOnUnhandledRejectionHandler, environment: var0
+                            var0 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var3 = _closure1_slot0;

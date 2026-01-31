@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var2.globalThis;
         case 44:
             var _closure1_slot2 = var1;
-            var1 = function() { // Original name: availableTypedArrays, environment: var0
+            var1 = function() {
                 _fun16412: for (var _fun16412_ip = 0;;) switch (_fun16412_ip) {
                     case 0:
                         var0 = new Array(0);

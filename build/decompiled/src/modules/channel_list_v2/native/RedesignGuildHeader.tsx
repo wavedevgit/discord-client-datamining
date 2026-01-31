@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: GuildInfoHeader, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var11 = var1.guild;
         var7 = var1.scrollPosition;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var12[var1];
         var9 = var2.bind(var3)(var4);
         var6 = var9.useAnimatedStyle;
-        var4 = function() { // Original name: o, environment: var0
+        var4 = function() {
             var0 = {};
             var2 = {};
             var1 = global;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var12[var1];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: u, environment: var0
+        var0 = function() {
             var0 = {};
             var2 = {};
             var1 = global;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ReanimatedGuildBanner, environment: var1
+    var0 = function arg0() {
         _fun101827: for (var _fun101827_ip = 0;;) switch (_fun101827_ip) {
             case 0:
                 var3 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var20[var14];
                 var10 = var21.bind(var4)(var5);
                 var9 = var10.useAnimatedStyle;
-                var5 = function() { // Original name: b, environment: var1
+                var5 = function() {
                     _fun101832: for (var _fun101832_ip = 0;;) switch (_fun101832_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var20[var14];
                 var13 = var21.bind(var4)(var9);
                 var10 = var13.useAnimatedStyle;
-                var9 = function() { // Original name: H, environment: var1
+                var9 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var8)(var3);
     var _closure1_slot19 = var3;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: RedesignGuildHeader, environment: var1
+    var3 = function arg0() {
         _fun101840: for (var _fun101840_ip = 0;;) switch (_fun101840_ip) {
             case 0:
                 var1 = arg0;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/channel_list_v2/native/RedesignGuildHeader.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useRedesignGuildHeaderHeight, environment: var1
+    var1 = function arg0() {
         _fun101842: for (var _fun101842_ip = 0;;) switch (_fun101842_ip) {
             case 0:
                 var4 = _closure1_slot1;

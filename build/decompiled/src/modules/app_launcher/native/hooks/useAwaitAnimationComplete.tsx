@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/hooks/useAwaitAnimationComplete.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: AwaitAnimationContext, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.children;
         var6 = var1.handleQueuedCallback;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.AwaitAnimationContext = var3;
-    var1 = function() { // Original name: useAwaitAnimationCompletion, environment: var1
+    var1 = function() {
         _fun108080: for (var _fun108080_ip = 0;;) switch (_fun108080_ip) {
             case 0:
                 var2 = _closure1_slot0;

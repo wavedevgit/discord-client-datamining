@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/native/sidebar/details/screens/MutedUntilText.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: MutedUntilText, environment: var3
+    var3 = function arg0() {
         _fun69818: for (var _fun69818_ip = 0;;) switch (_fun69818_ip) {
             case 0:
                 var0 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var8 = var10.bind(var11)(var9, var8);
                 var4.endTime = var8;
-                var8 = function(arg0) { // Original name: endTimeHook, environment: var8
+                var8 = function arg0() {
                     var4 = _closure1_slot2;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot1;

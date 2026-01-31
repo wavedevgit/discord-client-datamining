@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun97882: for (var _fun97882_ip = 0;;) switch (_fun97882_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun97884: for (var _fun97884_ip = 0;;) switch (_fun97884_ip) {
             case 0:
                 var3 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot24 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: RPCServerManager, environment: var4
+        var2 = function arg0() {
             var1 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -1542,7 +1542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun97921
                         }
                     case 47:
-                        var4 = function() { // Original name: _loop, environment: var5
+                        var4 = function() {
                             _fun97922: for (var _fun97922_ip = 0;;) switch (_fun97922_ip) {
                                 case 0:
                                     var5 = _closure1_slot13;
@@ -1665,7 +1665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun97925
                         }
                     case 32:
-                        var7 = function() { // Original name: _loop2, environment: var9
+                        var7 = function() {
                             _fun97926: for (var _fun97926_ip = 0;;) switch (_fun97926_ip) {
                                 case 0:
                                     var4 = _closure4_slot1;
@@ -2028,7 +2028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'loadServer';
         var0.key = var1;
-        var1 = function() { // Original name: loadServer, environment: var4
+        var1 = function() {
             _fun97936: for (var _fun97936_ip = 0;;) switch (_fun97936_ip) {
                 case 0:
                     var8 = this;
@@ -2136,7 +2136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'init';
         var0.key = var5;
-        var5 = function() { // Original name: init, environment: var4
+        var5 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var2 = var1.rpcServer;
@@ -2405,7 +2405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'terminate';
         var0.key = var5;
-        var4 = function() { // Original name: terminate, environment: var4
+        var4 = function() {
             var1 = this;
             var3 = _closure1_slot1;
             var4 = _closure1_slot2;

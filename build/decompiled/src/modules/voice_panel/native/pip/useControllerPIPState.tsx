@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun110736: for (var _fun110736_ip = 0;;) switch (_fun110736_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun110738: for (var _fun110738_ip = 0;;) switch (_fun110738_ip) {
             case 0:
                 var3 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/pip/useControllerPIPState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useControllerPIPState, environment: var1
+    var1 = function arg0() {
         _fun110739: for (var _fun110739_ip = 0;;) switch (_fun110739_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var7.channelId = var5;
                 var7.mode = var15;
-                var0 = function(arg0) { // Original name: useShowSecondaryPIP, environment: var6
+                var0 = function arg0() {
                     var1 = arg0;
                     var7 = var1.channelId;
                     var _closure3_slot0 = var7;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.bind(var13)(var0);
                 var0 = 'mode';
                 var9[var0] = var12;
-                var0 = function(arg0, arg1) { // Original name: useCachedPipState, environment: var6
+                var0 = function arg0, arg1() {
                     _fun110748: for (var _fun110748_ip = 0;;) switch (_fun110748_ip) {
                         case 0:
                             var0 = arg0;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var3;
                 var8[2] = var11;
                 var6 = function() { // Environment: var6
-                    var2 = function() { // Original name: updateParticipantDimensions, environment: var0
+                    var2 = function() {
                         var2 = _closure2_slot7;
                         var0 = undefined;
                         var1 = function(arg0) { // Environment: var1

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun43605: for (var _fun43605_ip = 0;;) switch (_fun43605_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot43 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun43608: for (var _fun43608_ip = 0;;) switch (_fun43608_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot44 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun43610: for (var _fun43610_ip = 0;;) switch (_fun43610_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot45 = var0;
-    var0 = function(arg0) { // Original name: getUsableEmoji, environment: var5
+    var0 = function arg0() {
         _fun43611: for (var _fun43611_ip = 0;;) switch (_fun43611_ip) {
             case 0:
                 var6 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot46 = var0;
-    var0 = function() { // Original name: getEmojiToGroupId, environment: var5
+    var0 = function() {
         _fun43612: for (var _fun43612_ip = 0;;) switch (_fun43612_ip) {
             case 0:
                 var1 = _closure1_slot48;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot47 = var0;
-    var0 = function() { // Original name: loadSavedEmojis, environment: var5
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot49;
         var2 = var3.apply;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot48 = var0;
-    var0 = function() { // Original name: _loadSavedEmojis, environment: var5
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot49 = var0;
-    var0 = function() { // Original name: deleteEverything, environment: var5
+    var0 = function() {
         var0 = {};
         _closure1_slot36 = var0;
         var0 = {};
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot50 = var0;
-    var0 = function(arg0) { // Original name: deleteGuildEmoji, environment: var5
+    var0 = function arg0() {
         _fun43620: for (var _fun43620_ip = 0;;) switch (_fun43620_ip) {
             case 0:
                 var1 = arg0;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot51 = var0;
-    var0 = function() { // Original name: rebuildEmojis, environment: var5
+    var0 = function() {
         _fun43621: for (var _fun43621_ip = 0;;) switch (_fun43621_ip) {
             case 0:
                 var1 = null;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot52 = var0;
-    var0 = function(arg0) { // Original name: updateGuildEmoji, environment: var5
+    var0 = function arg0() {
         _fun43622: for (var _fun43622_ip = 0;;) switch (_fun43622_ip) {
             case 0:
                 var3 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot53 = var0;
-    var0 = function() { // Original name: handleUserSettingsProtoStoreChange, environment: var5
+    var0 = function() {
         _fun43623: for (var _fun43623_ip = 0;;) switch (_fun43623_ip) {
             case 0:
                 var0 = _closure1_slot13;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot54 = var0;
-    var0 = function(arg0) { // Original name: trackUsage, environment: var5
+    var0 = function arg0() {
         _fun43628: for (var _fun43628_ip = 0;;) switch (_fun43628_ip) {
             case 0:
                 var0 = arg0;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot55 = var0;
-    var10 = function(arg0) { // Original name: handleRoleUpdate, environment: var5
+    var10 = function arg0() {
         _fun43629: for (var _fun43629_ip = 0;;) switch (_fun43629_ip) {
             case 0:
                 var0 = arg0;
@@ -1195,7 +1195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot28 = var3;
     var3 = function() { // Environment: var5
         var3 = _closure1_slot9;
-        var2 = function(arg0, arg1, arg2) { // Original name: GuildEmojis, environment: var4
+        var2 = function arg0, arg1, arg2() {
             _fun43631: for (var _fun43631_ip = 0;;) switch (_fun43631_ip) {
                 case 0:
                     var2 = arguments[3];
@@ -1231,7 +1231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getEmoji';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var0 = this;
             var1 = var0._emojiMap;
             var0 = arg0;
@@ -1244,7 +1244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getUsableEmoji';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun43633: for (var _fun43633_ip = 0;;) switch (_fun43633_ip) {
                 case 0:
                     var4 = this;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isUsable';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun43634: for (var _fun43634_ip = 0;;) switch (_fun43634_ip) {
                 case 0:
                     var4 = arg0;
@@ -1364,7 +1364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emojiIds';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 25;
@@ -1382,7 +1382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emojis';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun43637: for (var _fun43637_ip = 0;;) switch (_fun43637_ip) {
                 case 0:
                     var0 = this;
@@ -1409,7 +1409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emoticons';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun43638: for (var _fun43638_ip = 0;;) switch (_fun43638_ip) {
                 case 0:
                     var0 = this;
@@ -1440,7 +1440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'usableEmojis';
         var0.key = var5;
-        var4 = function() { // Original name: get, environment: var4
+        var4 = function() {
             _fun43640: for (var _fun43640_ip = 0;;) switch (_fun43640_ip) {
                 case 0:
                     var0 = this;
@@ -1547,16 +1547,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = new var21[var1](var20);
     var1 = var1 instanceof Object ? var1 : var4;
     var _closure1_slot38 = var1;
-    var12 = function(arg0) { // Original name: createBaseEmojiFrecencyOptions, environment: var5
+    var12 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
-        var2 = function() { // Original name: computeBonus, environment: var1
+        var2 = function() {
             var0 = 100;
             return var0;
         };
         var0.computeBonus = var2;
-        var2 = function(arg0) { // Original name: lookupKey, environment: var1
+        var2 = function arg0() {
             _fun43645: for (var _fun43645_ip = 0;;) switch (_fun43645_ip) {
                 case 0:
                     var3 = arg0;
@@ -1581,7 +1581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.lookupKey = var2;
-        var1 = function() { // Original name: afterCompute, environment: var1
+        var1 = function() {
             _fun43646: for (var _fun43646_ip = 0;;) switch (_fun43646_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -1634,7 +1634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot39 = var12;
     var1 = function() { // Environment: var5
-        var4 = function(arg0) { // Original name: EmojiDisambiguations, environment: var5
+        var4 = function arg0() {
             _fun43649: for (var _fun43649_ip = 0;;) switch (_fun43649_ip) {
                 case 0:
                     var2 = this;
@@ -1725,7 +1725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot1 = var4;
                     var4 = new Array(0);
                     var _closure3_slot2 = var4;
-                    var5 = function(arg0) { // Original name: disambiguateEmoji, environment: var1
+                    var5 = function arg0() {
                         _fun43651: for (var _fun43651_ip = 0;;) switch (_fun43651_ip) {
                             case 0:
                                 var7 = arg0;
@@ -1846,7 +1846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot3 = var5;
-                    var5 = function(arg0) { // Original name: disambiguateEmoticon, environment: var1
+                    var5 = function arg0() {
                         _fun43652: for (var _fun43652_ip = 0;;) switch (_fun43652_ip) {
                             case 0:
                                 var2 = arg0;
@@ -1950,7 +1950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var5 = var6.bind(var7)(var5);
-                    var6 = function(arg0) { // Original name: addGuildEmoji, environment: var1
+                    var6 = function arg0() {
                         _fun43655: for (var _fun43655_ip = 0;;) switch (_fun43655_ip) {
                             case 0:
                                 var3 = arg0;
@@ -2073,7 +2073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getDisambiguatedEmoji';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var0 = this;
             var0 = var0.disambiguatedEmoji;
             return var0;
@@ -2084,7 +2084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getCustomEmoji';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var0 = this;
             var0 = var0.customEmojis;
             return var0;
@@ -2094,7 +2094,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getGroupedCustomEmoji';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var0 = this;
             var0 = var0.groupedCustomEmojis;
             return var0;
@@ -2104,7 +2104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getByName';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43661: for (var _fun43661_ip = 0;;) switch (_fun43661_ip) {
                 case 0:
                     var1 = arg0;
@@ -2162,7 +2162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getEmoticonByName';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43662: for (var _fun43662_ip = 0;;) switch (_fun43662_ip) {
                 case 0:
                     var1 = arg0;
@@ -2192,7 +2192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getById';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43663: for (var _fun43663_ip = 0;;) switch (_fun43663_ip) {
                 case 0:
                     var1 = arg0;
@@ -2222,7 +2222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getCustomEmoticonRegex';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun43664: for (var _fun43664_ip = 0;;) switch (_fun43664_ip) {
                 case 0:
                     var0 = this;
@@ -2279,7 +2279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getFrequentlyUsedEmojisWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun43665: for (var _fun43665_ip = 0;;) switch (_fun43665_ip) {
                 case 0:
                     var0 = this;
@@ -2359,7 +2359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun43667: for (var _fun43667_ip = 0;;) switch (_fun43667_ip) {
                 case 0:
                     var1 = this;
@@ -2467,7 +2467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getFrequentlyUsedReactionEmojisWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var1 = this;
             var0 = var1.rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest;
             var0 = var0.bind(var1)();
@@ -2479,7 +2479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'isFrequentlyUsedReactionEmojiWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43670: for (var _fun43670_ip = 0;;) switch (_fun43670_ip) {
                 case 0:
                     var0 = arg0;
@@ -2527,7 +2527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'rebuildFavoriteEmojisWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun43671: for (var _fun43671_ip = 0;;) switch (_fun43671_ip) {
                 case 0:
                     var1 = this;
@@ -2646,7 +2646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'favoriteEmojisWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var5
+        var1 = function() {
             var1 = this;
             var0 = var1.rebuildFavoriteEmojisWithoutFetchingLatest;
             var0 = var0.bind(var1)();
@@ -2658,7 +2658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getEmojiInPriorityOrderWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var1 = this;
             var2 = var1.getFrequentlyUsedReactionEmojisWithoutFetchingLatest;
             var3 = var2.bind(var1)();
@@ -2707,7 +2707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getTopEmojiWithoutFetchingLatest';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43676: for (var _fun43676_ip = 0;;) switch (_fun43676_ip) {
                 case 0:
                     var5 = arg0;
@@ -2841,7 +2841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getNewlyAddedEmojiForGuild';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43681: for (var _fun43681_ip = 0;;) switch (_fun43681_ip) {
                 case 0:
                     var0 = this;
@@ -2873,7 +2873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getEscapedCustomEmoticonNames';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             var0 = this;
             var0 = var0.escapedEmoticonNames;
             return var0;
@@ -2883,7 +2883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'nameMatchesChain';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             var4 = this;
             var1 = arg0;
             var _closure3_slot0 = var1;
@@ -2976,7 +2976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'get';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun43685: for (var _fun43685_ip = 0;;) switch (_fun43685_ip) {
                 case 0:
                     var1 = arg0;
@@ -3031,7 +3031,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'reset';
         var0.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure2_slot0;
             var0 = null;
             var1._lastInstance = var0;
@@ -3043,7 +3043,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'resetFrequentlyUsed';
         var0.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun43687: for (var _fun43687_ip = 0;;) switch (_fun43687_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -3067,7 +3067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'resetFrequentlyUsedReactionEmojis';
         var0.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun43688: for (var _fun43688_ip = 0;;) switch (_fun43688_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -3093,7 +3093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'clear';
         var0.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun43689: for (var _fun43689_ip = 0;;) switch (_fun43689_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -3153,7 +3153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4 instanceof Object ? var4 : var9;
     var _closure1_slot41 = var4;
     var9 = var1.resetFrequentlyUsedReactionEmojis;
-    var4 = function(arg0) { // Original name: createEmojiReactionFrecency, environment: var5
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 33;
@@ -3166,7 +3166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var3.bind(var4)(var1);
         var6 = var0;
         var1 = copyDataProperties(var6, var5);
-        var3 = function(arg0, arg1, arg2) { // Original name: computeFrecency, environment: var1
+        var3 = function arg0, arg1, arg2() {
             _fun43691: for (var _fun43691_ip = 0;;) switch (_fun43691_ip) {
                 case 0:
                     var0 = arg2;
@@ -3223,7 +3223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var0)(var4);
     var9 = var4.PersistedStore;
     var4 = function(arg0) { // Environment: var5
-        var3 = function() { // Original name: EmojiStore, environment: var5
+        var3 = function() {
             _fun43693: for (var _fun43693_ip = 0;;) switch (_fun43693_ip) {
                 case 0:
                     var3 = this;
@@ -3271,7 +3271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun43694: for (var _fun43694_ip = 0;;) switch (_fun43694_ip) {
                 case 0:
                     var1 = arg0;
@@ -3354,7 +3354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot28;
             return var0;
         };
@@ -3363,7 +3363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'loadState';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot34;
             return var0;
         };
@@ -3372,7 +3372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPendingUsage';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun43697: for (var _fun43697_ip = 0;;) switch (_fun43697_ip) {
                 case 0:
                     var0 = _closure1_slot28;
@@ -3398,7 +3398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'expandedSectionsByGuildIds';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot28;
             var0 = var0.expandedSectionsByGuildIds;
             return var0;
@@ -3408,7 +3408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'categories';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot35;
             return var0;
         };
@@ -3417,7 +3417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'diversitySurrogate';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun43700: for (var _fun43700_ip = 0;;) switch (_fun43700_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -3446,7 +3446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'emojiFrecencyWithoutFetchingLatest';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot41;
             return var0;
         };
@@ -3455,7 +3455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'emojiReactionFrecencyWithoutFetchingLatest';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot42;
             return var0;
         };
@@ -3464,7 +3464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildEmoji';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43703: for (var _fun43703_ip = 0;;) switch (_fun43703_ip) {
                 case 0:
                     var5 = arg0;
@@ -3506,7 +3506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUsableGuildEmoji';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43704: for (var _fun43704_ip = 0;;) switch (_fun43704_ip) {
                 case 0:
                     var2 = _closure1_slot48;
@@ -3539,7 +3539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuilds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot36;
             return var0;
         };
@@ -3548,7 +3548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDisambiguatedEmojiContext';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot48;
             var1 = undefined;
             var1 = var2.bind(var1)();
@@ -3563,7 +3563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSearchResultsOrder';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3, arg4() {
             _fun43707: for (var _fun43707_ip = 0;;) switch (_fun43707_ip) {
                 case 0:
                     var7 = arg0;
@@ -3927,7 +3927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'searchWithoutFetchingLatest';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43710: for (var _fun43710_ip = 0;;) switch (_fun43710_ip) {
                 case 0:
                     var1 = arg0;
@@ -3996,7 +3996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = new var19[var12](var18, var17, var16);
                     var3 = var3 instanceof Object ? var3 : var10;
                     _closure3_slot4 = var3;
-                    var2 = function(arg0) { // Original name: u, environment: var0
+                    var2 = function arg0() {
                         var5 = arg0;
                         var2 = _closure3_slot4;
                         var1 = var2.test;
@@ -4134,7 +4134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUsableCustomEmojiById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot48;
             var2 = undefined;
             var1 = var1.bind(var2)();
@@ -4148,7 +4148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCustomEmojiById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43714: for (var _fun43714_ip = 0;;) switch (_fun43714_ip) {
                 case 0:
                     var6 = arg0;
@@ -4195,7 +4195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTopEmoji';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43715: for (var _fun43715_ip = 0;;) switch (_fun43715_ip) {
                 case 0:
                     var2 = arg0;
@@ -4226,7 +4226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNewlyAddedEmoji';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43716: for (var _fun43716_ip = 0;;) switch (_fun43716_ip) {
                 case 0:
                     var2 = arg0;
@@ -4257,7 +4257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTopEmojisMetadata';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot38;
             var1 = var2.get;
             var0 = arg0;
@@ -4269,7 +4269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasUsableEmojiInAnyGuild';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot48;
             var3 = undefined;
             var1 = var1.bind(var3)();
@@ -4300,7 +4300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFavoriteEmojis';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun43720: for (var _fun43720_ip = 0;;) switch (_fun43720_ip) {
                 case 0:
                     var2 = _closure1_slot40;
@@ -4346,7 +4346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7[var4];
     var20 = var8.bind(var0)(var4);
     var4 = {};
-    var11 = function() { // Original name: handleLogout, environment: var5
+    var11 = function() {
         var2 = _closure1_slot28;
         var1 = new Array(0);
         var2.pendingUsages = var1;
@@ -4357,14 +4357,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.LOGOUT = var11;
-    var11 = function() { // Original name: handleBackgroundSync, environment: var5
+    var11 = function() {
         var1 = _closure1_slot50;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var4.BACKGROUND_SYNC = var11;
-    var11 = function(arg0) { // Original name: handleConnectionOpen, environment: var5
+    var11 = function arg0() {
         _fun43724: for (var _fun43724_ip = 0;;) switch (_fun43724_ip) {
             case 0:
                 var2 = arg0;
@@ -4423,7 +4423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.CONNECTION_OPEN = var11;
-    var11 = function(arg0) { // Original name: handleOverlayInitialize, environment: var5
+    var11 = function arg0() {
         _fun43726: for (var _fun43726_ip = 0;;) switch (_fun43726_ip) {
             case 0:
                 var2 = _closure1_slot50;
@@ -4449,7 +4449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.OVERLAY_INITIALIZE = var11;
-    var11 = function(arg0) { // Original name: handleCachedEmojisLoaded, environment: var5
+    var11 = function arg0() {
         _fun43727: for (var _fun43727_ip = 0;;) switch (_fun43727_ip) {
             case 0:
                 var0 = arg0;
@@ -4507,7 +4507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.CACHED_EMOJIS_LOADED = var11;
-    var11 = function(arg0) { // Original name: handleGuildMemberUpdate, environment: var5
+    var11 = function arg0() {
         _fun43728: for (var _fun43728_ip = 0;;) switch (_fun43728_ip) {
             case 0:
                 var0 = arg0;
@@ -4542,7 +4542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.GUILD_MEMBER_UPDATE = var11;
-    var11 = function(arg0) { // Original name: handleGuildCreate, environment: var5
+    var11 = function arg0() {
         _fun43729: for (var _fun43729_ip = 0;;) switch (_fun43729_ip) {
             case 0:
                 var0 = arg0;
@@ -4592,7 +4592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.GUILD_CREATE = var11;
-    var11 = function(arg0) { // Original name: handleGuildUpdate, environment: var5
+    var11 = function arg0() {
         var3 = _closure1_slot53;
         var0 = arg0;
         var0 = var0.guild;
@@ -4604,7 +4604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.GUILD_UPDATE = var11;
-    var11 = function(arg0) { // Original name: handleGuildEmojiUpdated, environment: var5
+    var11 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = _closure1_slot53;
@@ -4615,7 +4615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.GUILD_EMOJIS_UPDATE = var11;
-    var11 = function(arg0) { // Original name: handleGuildDelete, environment: var5
+    var11 = function arg0() {
         var0 = arg0;
         var2 = var0.guild;
         var4 = _closure1_slot51;
@@ -4631,7 +4631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.GUILD_DELETE = var11;
-    var11 = function(arg0) { // Original name: handleAddReaction, environment: var5
+    var11 = function arg0() {
         _fun43733: for (var _fun43733_ip = 0;;) switch (_fun43733_ip) {
             case 0:
                 var1 = arg0;
@@ -4792,7 +4792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.MESSAGE_REACTION_ADD = var11;
-    var11 = function(arg0) { // Original name: handleTrackUsage, environment: var5
+    var11 = function arg0() {
         var0 = arg0;
         var2 = var0.emojiUsed;
         var1 = _closure1_slot55;
@@ -4801,7 +4801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.EMOJI_TRACK_USAGE = var11;
-    var11 = function(arg0) { // Original name: handleUserSettingsProtoUpdate, environment: var5
+    var11 = function arg0() {
         _fun43735: for (var _fun43735_ip = 0;;) switch (_fun43735_ip) {
             case 0:
                 var0 = arg0;
@@ -4845,7 +4845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.USER_SETTINGS_PROTO_UPDATE = var11;
     var4.GUILD_ROLE_CREATE = var10;
     var4.GUILD_ROLE_UPDATE = var10;
-    var10 = function(arg0) { // Original name: handleTopEmojisLoaded, environment: var5
+    var10 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var7 = var0.topEmojisMetadata;
@@ -4881,7 +4881,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.TOP_EMOJIS_FETCH_SUCCESS = var10;
-    var5 = function(arg0) { // Original name: toggleGuildExpandedState, environment: var5
+    var5 = function arg0() {
         _fun43738: for (var _fun43738_ip = 0;;) switch (_fun43738_ip) {
             case 0:
                 var0 = arg0;

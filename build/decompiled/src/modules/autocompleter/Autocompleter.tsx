@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun54816: for (var _fun54816_ip = 0;;) switch (_fun54816_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun54818: for (var _fun54818_ip = 0;;) switch (_fun54818_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: getAutocompleterBoosterMap, environment: var1
+    var0 = function arg0, arg1() {
         _fun54819: for (var _fun54819_ip = 0;;) switch (_fun54819_ip) {
             case 0:
                 var0 = arg1;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: Autocompleter, environment: var4
+        var2 = function arg0, arg1() {
             _fun54821: for (var _fun54821_ip = 0;;) switch (_fun54821_ip) {
                 case 0:
                     var2 = arguments[2];
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'createSearchContext';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun54825: for (var _fun54825_ip = 0;;) switch (_fun54825_ip) {
                 case 0:
                     var1 = this;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setLimit';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun54826: for (var _fun54826_ip = 0;;) switch (_fun54826_ip) {
                 case 0:
                     var3 = arg0;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setRefetchForSingleCategoryLimit';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._refetchForSingleCategoryLimit = var1;
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setResultTypes';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun54828: for (var _fun54828_ip = 0;;) switch (_fun54828_ip) {
                 case 0:
                     var4 = arg0;
@@ -919,7 +919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_include';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun54829: for (var _fun54829_ip = 0;;) switch (_fun54829_ip) {
                 case 0:
                     var1 = this;
@@ -944,7 +944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_isAsyncSearch';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54830: for (var _fun54830_ip = 0;;) switch (_fun54830_ip) {
                 case 0:
                     var1 = this;
@@ -986,7 +986,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setOptions';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun54831: for (var _fun54831_ip = 0;;) switch (_fun54831_ip) {
                 case 0:
                     var5 = arg0;
@@ -1074,7 +1074,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_willRefetchIfSingleCategoryResults';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54834: for (var _fun54834_ip = 0;;) switch (_fun54834_ip) {
                 case 0:
                     var2 = this;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'refetchIfSingleCategoryResults';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54836: for (var _fun54836_ip = 0;;) switch (_fun54836_ip) {
                 case 0:
                     var4 = this;
@@ -1286,7 +1286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'search';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun54837: for (var _fun54837_ip = 0;;) switch (_fun54837_ip) {
                 case 0:
                     var3 = arg0;
@@ -1420,7 +1420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54839: for (var _fun54839_ip = 0;;) switch (_fun54839_ip) {
                 case 0:
                     var1 = this;
@@ -1461,7 +1461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clean';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.clear;
             var0 = var0.bind(var1)();
@@ -1479,7 +1479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'pause';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54841: for (var _fun54841_ip = 0;;) switch (_fun54841_ip) {
                 case 0:
                     var0 = this;
@@ -1511,7 +1511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resume';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54842: for (var _fun54842_ip = 0;;) switch (_fun54842_ip) {
                 case 0:
                     var0 = this;
@@ -1543,7 +1543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'destroy';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun54843: for (var _fun54843_ip = 0;;) switch (_fun54843_ip) {
                 case 0:
                     var1 = this;
@@ -1567,7 +1567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryTextChannels';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun54844: for (var _fun54844_ip = 0;;) switch (_fun54844_ip) {
                 case 0:
                     var4 = this;
@@ -1642,7 +1642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryVoiceChannels';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun54846: for (var _fun54846_ip = 0;;) switch (_fun54846_ip) {
                 case 0:
                     var0 = this;
@@ -1694,7 +1694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryGuilds';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun54847: for (var _fun54847_ip = 0;;) switch (_fun54847_ip) {
                 case 0:
                     var3 = this;
@@ -1768,7 +1768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryUsers';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun54849: for (var _fun54849_ip = 0;;) switch (_fun54849_ip) {
                 case 0:
                     var6 = arg0;
@@ -1972,7 +1972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryGroupDMs';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun54850: for (var _fun54850_ip = 0;;) switch (_fun54850_ip) {
                 case 0:
                     var2 = this;
@@ -2044,7 +2044,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryApplications';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun54852: for (var _fun54852_ip = 0;;) switch (_fun54852_ip) {
                 case 0:
                     var3 = this;
@@ -2085,7 +2085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryLink';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun54853: for (var _fun54853_ip = 0;;) switch (_fun54853_ip) {
                 case 0:
                     var12 = this;
@@ -2217,7 +2217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queryInAppNavigations';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun54854: for (var _fun54854_ip = 0;;) switch (_fun54854_ip) {
                 case 0:
                     var3 = this;

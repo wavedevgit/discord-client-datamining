@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var0.value = var6;
     var0 = var4.bind(var5)(var1, var3, var0);
-    var0 = function(arg0, arg1) { // Original name: merge, environment: var2
+    var0 = function arg0, arg1() {
         _fun8951: for (var _fun8951_ip = 0;;) switch (_fun8951_ip) {
             case 0:
                 var1 = arg0;

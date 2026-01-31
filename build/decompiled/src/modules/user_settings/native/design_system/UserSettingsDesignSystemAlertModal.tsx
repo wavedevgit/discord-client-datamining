@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: DemoModal, environment: var1
+    var0 = function() {
         var4 = _closure1_slot3;
         var2 = var4.useCallback;
         var1 = _closure1_slot2;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: openDemoModal, environment: var1
+    var0 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 5;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemAlertModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemAlertModal, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var6 = var0.bind(var3)();

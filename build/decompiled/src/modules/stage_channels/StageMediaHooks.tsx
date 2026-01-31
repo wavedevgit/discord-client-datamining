@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: useStageHasStream, environment: var1
+    var4 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: getStageHasStream, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot4;
         var2 = var3.getMutableParticipants;
         var4 = _closure1_slot0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/stage_channels/StageMediaHooks.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: useStageHasMedia, environment: var1
+    var5 = function arg0() {
         _fun38682: for (var _fun38682_ip = 0;;) switch (_fun38682_ip) {
             case 0:
                 var6 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStageHasMedia = var5;
     var2.useStageHasStream = var4;
-    var4 = function(arg0) { // Original name: getStageHasMedia, environment: var1
+    var4 = function arg0() {
         _fun38684: for (var _fun38684_ip = 0;;) switch (_fun38684_ip) {
             case 0:
                 var3 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStageHasMedia = var4;
     var2.getStageHasStream = var3;
-    var3 = function(arg0) { // Original name: useIsStageVideoEnabled, environment: var1
+    var3 = function arg0() {
         _fun38685: for (var _fun38685_ip = 0;;) switch (_fun38685_ip) {
             case 0:
                 var1 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsStageVideoEnabled = var3;
-    var1 = function(arg0) { // Original name: isStageVideoEnabled, environment: var1
+    var1 = function arg0() {
         _fun38687: for (var _fun38687_ip = 0;;) switch (_fun38687_ip) {
             case 0:
                 var2 = _closure1_slot2;

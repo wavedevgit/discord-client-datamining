@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: RemoveIcon, environment: var1
+    var0 = function arg0() {
         _fun65621: for (var _fun65621_ip = 0;;) switch (_fun65621_ip) {
             case 0:
                 var0 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.N86XcP;
                 var11 = var12.bind(var13)(var11);
                 var1.accessibilityLabel = var11;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     _fun65622: for (var _fun65622_ip = 0;;) switch (_fun65622_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var1.id;
                             var4 = var1.name;
                             var3 = _closure2_slot1;
-                            var2 = function(arg0, arg1, arg2) { // Original name: removeMemberOrRole, environment: var1
+                            var2 = function arg0, arg1, arg2() {
                                 var12 = arg1;
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var7 = var7.fKxYb0;
                                 var7 = var8.bind(var9)(var7);
                                 var1.confirmText = var7;
-                                var4 = function() { // Original name: onConfirm, environment: var4
+                                var4 = function() {
                                     var2 = _closure1_slot1;
                                     var1 = _closure1_slot3;
                                     var0 = 8;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: RoleItem, environment: var1
+    var0 = function arg0() {
         _fun65626: for (var _fun65626_ip = 0;;) switch (_fun65626_ip) {
             case 0:
                 var0 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: MemberItem, environment: var1
+    var0 = function arg0() {
         _fun65627: for (var _fun65627_ip = 0;;) switch (_fun65627_ip) {
             case 0:
                 var0 = arg0;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: EmptyRoleItem, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.item;
         var0 = _closure1_slot9;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_permissions/native/components/ChannelOverwritesItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelOverwritesItem, environment: var1
+    var1 = function arg0() {
         _fun65629: for (var _fun65629_ip = 0;;) switch (_fun65629_ip) {
             case 0:
                 var3 = arg0;

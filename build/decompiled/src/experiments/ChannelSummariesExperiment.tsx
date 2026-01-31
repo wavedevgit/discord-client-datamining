@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: canSeeChannelSummaries, environment: var1
+    var4 = function arg0() {
         _fun73582: for (var _fun73582_ip = 0;;) switch (_fun73582_ip) {
             case 0:
                 var3 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function(arg0) { // Original name: canGuildUseConversationSummaries, environment: var1
+    var3 = function arg0() {
         _fun73583: for (var _fun73583_ip = 0;;) switch (_fun73583_ip) {
             case 0:
                 var5 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'experiments/ChannelSummariesExperiment.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: channelEligibleForSummaries, environment: var1
+    var5 = function arg0() {
         var4 = _closure1_slot10;
         var3 = undefined;
         var2 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.channelEligibleForSummaries = var5;
     var2.canSeeChannelSummaries = var4;
     var2.canGuildUseConversationSummaries = var3;
-    var3 = function(arg0) { // Original name: useChannelSummariesExperiment, environment: var1
+    var3 = function arg0() {
         _fun73585: for (var _fun73585_ip = 0;;) switch (_fun73585_ip) {
             case 0:
                 var3 = arguments[2];
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useChannelSummariesExperiment = var3;
-    var1 = function(arg0) { // Original name: useGuildEligibleForSummaries, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

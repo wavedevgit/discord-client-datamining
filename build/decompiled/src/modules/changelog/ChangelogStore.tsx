@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun35465: for (var _fun35465_ip = 0;;) switch (_fun35465_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: handleUserSettingsProtoStoreChange, environment: var3
+    var0 = function() {
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 9;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ChangelogStore, environment: var5
+        var3 = function() {
             _fun35470: for (var _fun35470_ip = 0;;) switch (_fun35470_ip) {
                 case 0:
                     var3 = this;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun35471: for (var _fun35471_ip = 0;;) switch (_fun35471_ip) {
                 case 0:
                     var6 = this;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getChangelog';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun35473: for (var _fun35473_ip = 0;;) switch (_fun35473_ip) {
                 case 0:
                     var1 = _closure1_slot11;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'latestChangelogId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getChangelogLoadStatus';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun35475: for (var _fun35475_ip = 0;;) switch (_fun35475_ip) {
                 case 0:
                     var2 = _closure1_slot12;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasLoadedConfig';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot15;
             var0 = null;
             var0 = var0 != var1;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getConfig';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'overrideId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastSeenChangelogId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastSeenChangelogDate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStateForDebugging';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot15;
             var0.changelogConfig = var2;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLocked';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot18;
             var1 = var0.size;
             var0 = 0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleChangeLogLock, environment: var3
+    var8 = function arg0() {
         _fun35483: for (var _fun35483_ip = 0;;) switch (_fun35483_ip) {
             case 0:
                 var0 = arg0;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANGE_LOG_LOCK = var8;
-    var8 = function(arg0) { // Original name: handleChangeLogUnlock, environment: var3
+    var8 = function arg0() {
         _fun35484: for (var _fun35484_ip = 0;;) switch (_fun35484_ip) {
             case 0:
                 var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANGE_LOG_UNLOCK = var8;
-    var8 = function(arg0) { // Original name: handleConfig, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.config;
         var2 = var0.latestChangelogId;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CHANGE_LOG_SET_CONFIG = var8;
-    var8 = function(arg0) { // Original name: handleChangelogFetch, environment: var3
+    var8 = function arg0() {
         _fun35486: for (var _fun35486_ip = 0;;) switch (_fun35486_ip) {
             case 0:
                 var0 = arg0;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANGE_LOG_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleChangelogFetchFailed, environment: var3
+    var8 = function arg0() {
         _fun35487: for (var _fun35487_ip = 0;;) switch (_fun35487_ip) {
             case 0:
                 var0 = arg0;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANGE_LOG_FETCH_FAILED = var8;
-    var8 = function(arg0) { // Original name: handleChangelogSetOverride, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.id;
         _closure1_slot14 = var1;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CHANGE_LOG_SET_OVERRIDE = var8;
-    var3 = function(arg0) { // Original name: handleDismiss, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.changelogDate;
         var0 = global;

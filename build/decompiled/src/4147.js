@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getVersion, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38010: for (var _fun38010_ip = 0;;) switch (_fun38010_ip) {
             case 0:
                 var4 = arg0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getResolutionUnit, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38011: for (var _fun38011_ip = 0;;) switch (_fun38011_ip) {
             case 0:
                 var1 = 10;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: getResolutionUnitDescription, environment: var2
+    var0 = function arg0() {
         _fun38012: for (var _fun38012_ip = 0;;) switch (_fun38012_ip) {
             case 0:
                 var4 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getXResolution, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38013: for (var _fun38013_ip = 0;;) switch (_fun38013_ip) {
             case 0:
                 var1 = 12;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getYResolution, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38014: for (var _fun38014_ip = 0;;) switch (_fun38014_ip) {
             case 0:
                 var1 = 14;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0, arg1) { // Original name: read, environment: var2
+    var2 = function arg0, arg1() {
         _fun38015: for (var _fun38015_ip = 0;;) switch (_fun38015_ip) {
             case 0:
                 var3 = arg0;

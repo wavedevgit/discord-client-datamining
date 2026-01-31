@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.encode = var11;
     var3[var10] = var9;
     var5 = var5.bind(var6)(var3);
-    var3 = function(arg0) { // Original name: WantsVideoQuality, environment: var1
+    var3 = function arg0() {
         _fun32634: for (var _fun32634_ip = 0;;) switch (_fun32634_ip) {
             case 0:
                 var1 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var4;
     var3 = function() { // Environment: var1
         var4 = _closure1_slot2;
-        var3 = function(arg0) { // Original name: VideoQuality, environment: var1
+        var3 = function arg0() {
             var1 = arg0;
             var2 = this;
             var4 = _closure1_slot3;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'equals';
         var0.key = var2;
-        var2 = function(arg0, arg1) { // Original name: value, environment: var1
+        var2 = function arg0, arg1() {
             _fun32637: for (var _fun32637_ip = 0;;) switch (_fun32637_ip) {
                 case 0:
                     var4 = arg0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'extend';
         var0.key = var5;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var1
+        var1 = function arg0, arg1() {
             _fun32638: for (var _fun32638_ip = 0;;) switch (_fun32638_ip) {
                 case 0:
                     var1 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot14 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot2;
-        var2 = function(arg0, arg1) { // Original name: VideoQualityManager, environment: var4
+        var2 = function arg0, arg1() {
             _fun32640: for (var _fun32640_ip = 0;;) switch (_fun32640_ip) {
                 case 0:
                     var6 = arguments[2];
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getQuality';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun32641: for (var _fun32641_ip = 0;;) switch (_fun32641_ip) {
                 case 0:
                     var6 = arg0;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'applyQualityConstraints';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun32642: for (var _fun32642_ip = 0;;) switch (_fun32642_ip) {
                 case 0:
                     var1 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setQualityOverwrite';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.qualityOverwrite = var1;
@@ -694,7 +694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setGoliveQuality';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun32644: for (var _fun32644_ip = 0;;) switch (_fun32644_ip) {
                 case 0:
                     var2 = arg0;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'configGoLiveSimulcast';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var1 = arg1;
             var0 = this;
             var2 = arg0;
@@ -784,7 +784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setGoLiveSimulcastLQTargetBitrate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.goliveSimulcastLQBitrateTarget = var1;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'shouldEnableGoliveSimulcastForHqQuality';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun32647: for (var _fun32647_ip = 0;;) switch (_fun32647_ip) {
                 case 0:
                     var2 = arg0;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getVideoQuality';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun32648: for (var _fun32648_ip = 0;;) switch (_fun32648_ip) {
                 case 0:
                     var1 = arg0;
@@ -928,7 +928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'scaleLinearly';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun32649: for (var _fun32649_ip = 0;;) switch (_fun32649_ip) {
                 case 0:
                     var2 = arg1;
@@ -951,7 +951,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getGoliveQuality';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun32650: for (var _fun32650_ip = 0;;) switch (_fun32650_ip) {
                 case 0:
                     var2 = arg0;
@@ -1114,7 +1114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getDefaultGoliveQuality';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var2 = _closure1_slot13;
             var0 = {};
@@ -1162,7 +1162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getGoliveLQQuality';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun32652: for (var _fun32652_ip = 0;;) switch (_fun32652_ip) {
                 case 0:
                     var1 = this;

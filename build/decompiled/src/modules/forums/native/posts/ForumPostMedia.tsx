@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: ForumPostMediaAndroid, environment: var1
+    var0 = function arg0() {
         _fun89485: for (var _fun89485_ip = 0;;) switch (_fun89485_ip) {
             case 0:
                 var1 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: ForumPostMediaIOS, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.shouldSpoiler;
         var8 = var0.blurTheme;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var4 = function(arg0) { // Original name: ForumPostMediaSpoiler, environment: var1
+    var4 = function arg0() {
         _fun89487: for (var _fun89487_ip = 0;;) switch (_fun89487_ip) {
             case 0:
                 var0 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var0 = function(arg0) { // Original name: ForumPostMedia, environment: var1
+    var0 = function arg0() {
         _fun89488: for (var _fun89488_ip = 0;;) switch (_fun89488_ip) {
             case 0:
                 var7 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.androidRippleConfig = var14;
                 var14 = 0.8;
                 var11.activeOpacity = var14;
-                var14 = function() { // Original name: onPress, environment: var9
+                var14 = function() {
                     _fun89490: for (var _fun89490_ip = 0;;) switch (_fun89490_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.androidRippleConfig = var10;
                 var10 = 0;
                 var5.activeOpacity = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 16;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var3 = function(arg0) { // Original name: useSharedMediaProps, environment: var1
+    var3 = function arg0() {
         _fun89491: for (var _fun89491_ip = 0;;) switch (_fun89491_ip) {
             case 0:
                 var0 = arg0;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.ForumPostMediaSpoiler = var4;
     var2.useSharedMediaProps = var3;
-    var3 = function(arg0) { // Original name: ForumPostMediaThumbnail, environment: var1
+    var3 = function arg0() {
         _fun89492: for (var _fun89492_ip = 0;;) switch (_fun89492_ip) {
             case 0:
                 var0 = arg0;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ForumPostMediaThumbnail = var3;
-    var1 = function(arg0) { // Original name: ForumPostGridMedia, environment: var1
+    var1 = function arg0() {
         _fun89495: for (var _fun89495_ip = 0;;) switch (_fun89495_ip) {
             case 0:
                 var0 = arg0;

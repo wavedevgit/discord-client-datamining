@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: PremiumGiftDMSuccessBody, environment: var1
+    var3 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: PremiumGiftDMSuccessActions, environment: var1
+    var1 = function() {
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;
         var1 = 5;

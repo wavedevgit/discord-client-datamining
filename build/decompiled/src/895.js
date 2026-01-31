@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var11[var2](var10);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot2 = var2;
-    var2 = function() { // Original name: _INTERNAL_clearAiProviderSkips, environment: var0
+    var2 = function() {
         _fun9462: for (var _fun9462_ip = 0;;) switch (_fun9462_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1._INTERNAL_clearAiProviderSkips = var2;
-    var2 = function(arg0) { // Original name: _INTERNAL_shouldSkipAiProviderWrapping, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.has;
         var0 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1._INTERNAL_shouldSkipAiProviderWrapping = var2;
-    var0 = function(arg0) { // Original name: _INTERNAL_skipAiProviderWrapping, environment: var0
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.forEach;
         var0 = function(arg0) { // Environment: var0

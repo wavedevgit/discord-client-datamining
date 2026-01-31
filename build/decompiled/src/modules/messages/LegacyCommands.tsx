@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure1_slot0 = var5;
         var _closure1_slot1 = var9;
         var _closure1_slot2 = var6;
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: executeCommand, environment: var1
+        var0 = function arg0, arg1, arg2, arg3() {
             var3 = arg1;
             var4 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure1_slot9 = var3;
         var3 = {};
         var7 = {};
-        var8 = function() { // Original name: action, environment: var1
+        var8 = function() {
             var0 = {};
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.action = var8;
         var3.tts = var7;
         var7 = {};
-        var8 = function(arg0) { // Original name: action, environment: var1
+        var8 = function arg0() {
             var0 = {};
             var1 = global;
             var1 = var1.HermesInternal;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.action = var8;
         var3.me = var7;
         var7 = {};
-        var8 = function(arg0) { // Original name: action, environment: var1
+        var8 = function arg0() {
             var0 = {};
             var1 = global;
             var1 = var1.HermesInternal;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.action = var8;
         var3.tableflip = var7;
         var7 = {};
-        var8 = function(arg0) { // Original name: action, environment: var1
+        var8 = function arg0() {
             var0 = {};
             var1 = global;
             var1 = var1.HermesInternal;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.action = var8;
         var3.unflip = var7;
         var7 = {};
-        var8 = function(arg0) { // Original name: action, environment: var1
+        var8 = function arg0() {
             var0 = {};
             var1 = global;
             var1 = var1.HermesInternal;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.action = var8;
         var3.shrug = var7;
         var7 = {};
-        var8 = function(arg0, arg1) { // Original name: action, environment: var1
+        var8 = function arg0, arg1() {
             _fun89381: for (var _fun89381_ip = 0;;) switch (_fun89381_ip) {
                 case 0:
                     var0 = arg1;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = /^\+:(.+?): *$/;
         var10 = var11.bind(var12)(var10);
         var7.match = var10;
-        var10 = function(arg0, arg1) { // Original name: action, environment: var1
+        var10 = function arg0, arg1() {
             _fun89382: for (var _fun89382_ip = 0;;) switch (_fun89382_ip) {
                 case 0:
                     var7 = arg0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var6[var8];
         var10 = var9.bind(var0)(var8);
         var9 = var10.anyScopeRegex;
-        var8 = /^s\\/([ ^ \\/\\]*(?:\\.[^\\/\\]*)*)\\/([ ^ \\/\\]*(?:\\.[^\\/\\]*)*)(?:\\/([g] * )) ? $ / ; var8 = var9.bind(var10)(var8); var7.match = var8; var8 = function(arg0, arg1) { // Original name: action, environment: var1
+        var8 = /^s\\/([ ^ \\/\\]*(?:\\.[^\\/\\]*)*)\\/([ ^ \\/\\]*(?:\\.[^\\/\\]*)*)(?:\\/([g] * )) ? $ / ; var8 = var9.bind(var10)(var8); var7.match = var8; var8 = function arg0, arg1() {
                         _fun89383: for (var _fun89383_ip = 0;;) switch (_fun89383_ip) {
                             case 0:
                                 var9 = arg0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = undefined;
                                 return var0;
                         }
-                    }; var7.action = var8; var3.searchReplace = var7; var7 = {}; var8 = function(arg0) { // Original name: action, environment: var1
+                    }; var7.action = var8; var3.searchReplace = var7; var7 = {}; var8 = function arg0() {
                         var0 = {};
                         var3 = _closure1_slot7;
                         var2 = undefined;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.content = var1;
                         return var0;
                     }; var7.action = var8; var3.spoiler = var7;
-                    var _closure1_slot10 = var3; var8 = var4.Object; var7 = var8.setPrototypeOf; var4 = null; var4 = var7.bind(var8)(var3, var4); var4 = 11; var4 = var6[var4]; var6 = var5.bind(var0)(var4); var5 = var6.fileFinishedImporting; var4 = 'modules/messages/LegacyCommands.tsx'; var4 = var5.bind(var6)(var4); var2.COMMANDS = var3; var1 = function(arg0, arg1) { // Original name: handleLegacyCommands, environment: var1
+                    var _closure1_slot10 = var3; var8 = var4.Object; var7 = var8.setPrototypeOf; var4 = null; var4 = var7.bind(var8)(var3, var4); var4 = 11; var4 = var6[var4]; var6 = var5.bind(var0)(var4); var5 = var6.fileFinishedImporting; var4 = 'modules/messages/LegacyCommands.tsx'; var4 = var5.bind(var6)(var4); var2.COMMANDS = var3; var1 = function arg0, arg1() {
                         _fun89387: for (var _fun89387_ip = 0;;) switch (_fun89387_ip) {
                             case 0:
                                 var5 = arg0;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/messages/getDisplayFilename.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: getDisplayFilename, environment: var1
+    var1 = function arg0() {
         _fun56027: for (var _fun56027_ip = 0;;) switch (_fun56027_ip) {
             case 0:
                 var0 = arg0;

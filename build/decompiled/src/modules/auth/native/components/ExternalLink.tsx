@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/ExternalLink.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExternalLink, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.externalURL;
         var _closure2_slot0 = var0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.j3cG2p;
         var9 = var10.bind(var11)(var9);
         var5.text = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var1 = _closure2_slot1;
             var0 = var1.pop;
             var0 = var0.bind(var1)();

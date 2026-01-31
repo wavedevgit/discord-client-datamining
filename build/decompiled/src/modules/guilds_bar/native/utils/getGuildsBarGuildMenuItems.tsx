@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guilds_bar/native/utils/getGuildsBarGuildMenuItems.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getGuildsBarGuildMenuItems, environment: var1
+    var1 = function arg0() {
         _fun100786: for (var _fun100786_ip = 0;;) switch (_fun100786_ip) {
             case 0:
                 var6 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.e6RscS;
                 var0 = var7.bind(var10)(var0);
                 var3.label = var0;
-                var0 = function() { // Original name: action, environment: var1
+                var0 = function() {
                     var2 = _closure1_slot3;
                     var1 = undefined;
                     var0 = function*() { // Environment: var0
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.HcoRu0;
                 var7 = var10.bind(var12)(var7);
                 var3.label = var7;
-                var7 = function() { // Original name: action, environment: var1
+                var7 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.PdRCRg;
                 var4 = var7.bind(var10)(var4);
                 var3.label = var4;
-                var4 = function() { // Original name: action, environment: var1
+                var4 = function() {
                     _fun100791: for (var _fun100791_ip = 0;;) switch (_fun100791_ip) {
                         case 0:
                             var3 = _closure1_slot4;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.vRzp7P;
                 var6 = var10.bind(var11)(var6);
                 var3.label = var6;
-                var6 = function() { // Original name: action, environment: var1
+                var6 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 14;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.De0BTC;
                 var2 = var5.bind(var6)(var2);
                 var3.label = var2;
-                var1 = function() { // Original name: action, environment: var1
+                var1 = function() {
                     _fun100792: for (var _fun100792_ip = 0;;) switch (_fun100792_ip) {
                         case 0:
                             var2 = _closure2_slot0;

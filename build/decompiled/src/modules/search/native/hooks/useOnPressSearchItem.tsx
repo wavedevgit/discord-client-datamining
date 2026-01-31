@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: addSearchHistoryItem, environment: var1
+    var0 = function arg0, arg1() {
         _fun105317: for (var _fun105317_ip = 0;;) switch (_fun105317_ip) {
             case 0:
                 var1 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: addCurrentSearchQueryToSearchHistory, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot6;
         var1 = var2.getState;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: navigateToSearchPreview, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun105321: for (var _fun105321_ip = 0;;) switch (_fun105321_ip) {
             case 0:
                 var3 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0;
                 var7 = var5;
                 var5 = copyDataProperties(var8, var7);
-                var5 = function() { // Original name: onBeforeJumpToMessage, environment: var4
+                var5 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 19;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var3 = function() { // Original name: handleVoiceOrStageChannelConnectPress, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var3;
-    var0 = function() { // Original name: _handleVoiceOrStageChannelConnectPress, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/search/native/hooks/useOnPressSearchItem.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useOnPressSearchLink, environment: var1
+    var4 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot4;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.handleClick;
                     var1 = {};
                     var1.href = var5;
-                    var5 = function() { // Original name: onConfirm, environment: var4
+                    var5 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 15;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onConfirm = var5;
-                    var4 = function() { // Original name: trusted, environment: var4
+                    var4 = function() {
                         var0 = _closure3_slot0;
                         return var0;
                     };
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOnPressSearchLink = var4;
-    var4 = function(arg0) { // Original name: useOnPressMessageItem, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var5 = var1.searchContext;
         var _closure2_slot0 = var5;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOnPressMessageItem = var4;
-    var4 = function(arg0) { // Original name: useOnPressMediaItem, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var9 = var1.searchContext;
         var _closure2_slot0 = var9;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOnPressMediaItem = var4;
-    var4 = function(arg0) { // Original name: useOnPressGroupDMItem, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var4 = var1.searchContext;
         var _closure2_slot0 = var4;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOnPressGroupDMItem = var4;
-    var4 = function(arg0) { // Original name: useOnPressDMItem, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var4 = var1.searchContext;
         var _closure2_slot0 = var4;
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOnPressDMItem = var4;
-    var4 = function(arg0) { // Original name: useOnPressGuildTextChannel, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var4 = var1.searchContext;
         var _closure2_slot0 = var4;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOnPressGuildTextChannel = var4;
     var2.handleVoiceOrStageChannelConnectPress = var3;
-    var3 = function(arg0) { // Original name: useOnPressGuildVoiceChannel, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var4 = var1.searchContext;
         var _closure2_slot0 = var4;
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var5.useNavigation;
         var6 = var2.bind(var5)();
         var _closure2_slot1 = var6;
-        var2 = function() { // Original name: useVoiceChannelOnPressHandler, environment: var0
+        var2 = function() {
             var3 = _closure1_slot4;
             var2 = var3.useCallback;
             var1 = function() { // Environment: var0
@@ -1181,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOnPressGuildVoiceChannel = var3;
-    var1 = function(arg0) { // Original name: useOnPressSearchHistoryText, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.searchContext;
         var _closure2_slot0 = var4;

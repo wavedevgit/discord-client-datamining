@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/GuildIconWithChannelType.tsx';
     var4 = var5.bind(var6)(var4);
     var2.GuildIconWithChannelTypeSizes = var3;
-    var1 = function(arg0) { // Original name: GuildIconWithChannelType, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var16 = var5["aria-label"];
         var4 = var5.size;

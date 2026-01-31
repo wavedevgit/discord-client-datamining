@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/shared/utils/MutexUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: createLock, environment: var1
+    var3 = function() {
         var1 = global;
         var3 = var1.Promise;
         var2 = var3.resolve;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createLock = var3;
-    var1 = function(arg0) { // Original name: createObservableLock, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = global;
         var4 = var2.Promise;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot5 = var2;
         var0 = var0.timeoutMs;
         var _closure2_slot6 = var0;
-        var0 = function(arg0, arg1) { // Original name: mutex, environment: var1
+        var0 = function arg0, arg1() {
             _fun99805: for (var _fun99805_ip = 0;;) switch (_fun99805_ip) {
                 case 0:
                     var4 = arg1;

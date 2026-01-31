@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getHeaderBackground, environment: var1
+    var0 = function arg0() {
         _fun58148: for (var _fun58148_ip = 0;;) switch (_fun58148_ip) {
             case 0:
                 var3 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getHeaderImage, environment: var1
+    var0 = function arg0() {
         _fun58149: for (var _fun58149_ip = 0;;) switch (_fun58149_ip) {
             case 0:
                 var3 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: getLogo, environment: var1
+    var0 = function arg0() {
         _fun58150: for (var _fun58150_ip = 0;;) switch (_fun58150_ip) {
             case 0:
                 var3 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: getActivatedImage, environment: var1
+    var0 = function arg0, arg1() {
         _fun58151: for (var _fun58151_ip = 0;;) switch (_fun58151_ip) {
             case 0:
                 var2 = arg0;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: getDescription, environment: var1
+    var0 = function arg0, arg1() {
         _fun58152: for (var _fun58152_ip = 0;;) switch (_fun58152_ip) {
             case 0:
                 var2 = arg0;
@@ -892,7 +892,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/PremiumActivatedAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumActivatedAlert, environment: var1
+    var1 = function arg0() {
         _fun58155: for (var _fun58155_ip = 0;;) switch (_fun58155_ip) {
             case 0:
                 var1 = arg0;

@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionConfirmSubmission.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppealIngestionConfirmSubmission, environment: var1
+    var1 = function arg0() {
         _fun79554: for (var _fun79554_ip = 0;;) switch (_fun79554_ip) {
             case 0:
                 var0 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var17 = var17.detailsAction;
                 var10.style = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var3 = 13;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.paths;
                     var2 = var5.bind(var6)(var2, var1);
                     var1 = {};
-                    var5 = function(arg0) { // Original name: onSave, environment: var0
+                    var5 = function arg0() {
                         var2 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 16;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onSave = var5;
-                    var0 = function() { // Original name: onClose, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 13;

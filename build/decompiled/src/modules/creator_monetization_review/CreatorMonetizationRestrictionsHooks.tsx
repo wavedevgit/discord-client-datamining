@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var6;
     var3 = var3.GuildFeatures;
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: useCreatorMonetizationRestrictions, environment: var1
+    var3 = function arg0() {
         _fun49646: for (var _fun49646_ip = 0;;) switch (_fun49646_ip) {
             case 0:
                 var2 = arg0;

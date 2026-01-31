@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel/getFlattedChannelList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: getFlattenedChannelList, environment: var1
+    var1 = function arg0, arg1() {
         _fun41494: for (var _fun41494_ip = 0;;) switch (_fun41494_ip) {
             case 0:
                 var2 = arguments[2];
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun41494
                 }
             case 18:
-                var2 = function() { // Original name: l, environment: var0
+                var2 = function() {
                     var0 = true;
                     return var0;
                 };

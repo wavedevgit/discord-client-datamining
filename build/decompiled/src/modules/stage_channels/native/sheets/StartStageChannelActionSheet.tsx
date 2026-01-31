@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/sheets/StartStageChannelActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StartStageChannelEventActionSheet, environment: var1
+    var1 = function arg0() {
         _fun51772: for (var _fun51772_ip = 0;;) switch (_fun51772_ip) {
             case 0:
                 var0 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var19[var14];
                 var15 = var15.bind(var3)(var14);
                 var14 = {};
-                var18 = function() { // Original name: onConfirmPress, environment: var18
+                var18 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot3;
                     var1 = 17;

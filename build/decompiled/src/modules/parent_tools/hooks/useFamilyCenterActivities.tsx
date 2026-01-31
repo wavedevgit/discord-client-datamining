@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: useActionTotalsForDisplayType, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/parent_tools/hooks/useFamilyCenterActivities.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useActionsForDisplayType, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActionsForDisplayType = var4;
     var2.useActionTotalsForDisplayType = var3;
-    var3 = function() { // Original name: useHasActionForAnyDisplayType, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasActionForAnyDisplayType = var3;
-    var1 = function(arg0) { // Original name: useFormattedTotalForDisplayType, environment: var1
+    var1 = function arg0() {
         _fun81921: for (var _fun81921_ip = 0;;) switch (_fun81921_ip) {
             case 0:
                 var5 = arg0;

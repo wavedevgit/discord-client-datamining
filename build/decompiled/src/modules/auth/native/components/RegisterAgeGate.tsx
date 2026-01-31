@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/RegisterAgeGate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: RegisterAgeGate, environment: var1
+    var1 = function() {
         _fun100459: for (var _fun100459_ip = 0;;) switch (_fun100459_ip) {
             case 0:
                 var0 = _closure1_slot15;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = 'L';
                 var24 = var27.bind(var30)(var24);
                 var20.text = var24;
-                var24 = function() { // Original name: onPress, environment: var9
+                var24 = function() {
                     var2 = _closure2_slot6;
                     var1 = undefined;
                     var0 = true;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var23.bind(var3)(var28);
                 var18.consentRequired = var23;
                 var18.consent = var21;
-                var21 = function() { // Original name: onToggleConsent, environment: var9
+                var21 = function() {
                     var2 = _closure2_slot5;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21.size = var28;
                 var21.loading = var26;
                 var21.disabled = var25;
-                var25 = function() { // Original name: onPress, environment: var9
+                var25 = function() {
                     _fun100468: for (var _fun100468_ip = 0;;) switch (_fun100468_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.date = var11;
                 var10 = _closure1_slot18;
                 var5.maximumDate = var10;
-                var10 = function(arg0) { // Original name: onConfirm, environment: var9
+                var10 = function arg0() {
                     var3 = _closure2_slot6;
                     var0 = undefined;
                     var2 = false;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.onConfirm = var10;
-                var10 = function(arg0) { // Original name: onDateChange, environment: var9
+                var10 = function arg0() {
                     var2 = _closure2_slot3;
                     var3 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.onDateChange = var10;
-                var9 = function() { // Original name: onCancel, environment: var9
+                var9 = function() {
                     var2 = _closure2_slot6;
                     var1 = undefined;
                     var0 = false;

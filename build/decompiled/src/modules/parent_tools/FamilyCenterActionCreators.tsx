@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: maybeFetchCollectiblesForInvoices, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _maybeFetchCollectiblesForInvoices, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _updateLinkForUserId, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _removeLinkForUserId, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _getLinkCodeForCurrentUser, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _shareIarWithParents, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Endpoints;
     var _closure1_slot7 = var3;
     var3 = {};
-    var4 = function() { // Original name: initialPageLoad, environment: var1
+    var4 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.initialPageLoad = var4;
-    var4 = function() { // Original name: fetchLinkedUsers, environment: var1
+    var4 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.fetchLinkedUsers = var4;
-    var4 = function(arg0, arg1) { // Original name: requestLink, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.requestLink = var4;
-    var4 = function(arg0) { // Original name: fetchTeenActivity, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -1146,7 +1146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.fetchTeenActivity = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: fetchMoreTeenActivity, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1342,7 +1342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.fetchMoreTeenActivity = var4;
-    var4 = function(arg0) { // Original name: selectTab, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -1359,7 +1359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.selectTab = var4;
-    var4 = function(arg0) { // Original name: fetchTeenSettingsAndConsents, environment: var1
+    var4 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var3 = _closure1_slot0;
@@ -1405,7 +1405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.fetchTeenSettingsAndConsents = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: updateTeenSettings, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1539,7 +1539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.updateTeenSettings = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: updateTeenConsents, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var3 = _closure1_slot0;
@@ -1595,7 +1595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/parent_tools/FamilyCenterActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function() { // Original name: updateLinkForUserId, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -1606,7 +1606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateLinkForUserId = var3;
-    var3 = function() { // Original name: removeLinkForUserId, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -1617,7 +1617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeLinkForUserId = var3;
-    var3 = function() { // Original name: getLinkCodeForCurrentUser, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -1628,7 +1628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLinkCodeForCurrentUser = var3;
-    var1 = function() { // Original name: shareIarWithParents, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;

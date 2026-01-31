@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_following/native/components/NewChannelFollower.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun76621: for (var _fun76621_ip = 0;;) switch (_fun76621_ip) {
             case 0:
                 var1 = arg0;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1353:
                 var27.icon = var32;
                 var27.arrow = var18;
-                var32 = function() { // Original name: onPress, environment: var23
+                var32 = function() {
                     _fun76625: for (var _fun76625_ip = 0;;) switch (_fun76625_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = _closure2_slot2;
                         case 207:
                             var2.selectedItem = var6;
-                            var6 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var6 = function arg0() {
                                 _fun76627: for (var _fun76627_ip = 0;;) switch (_fun76627_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var2.onItemSelect = var6;
-                            var1 = function() { // Original name: onClose, environment: var1
+                            var1 = function() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure2_slot2;
                                 var1 = _closure2_slot3;
@@ -795,7 +795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1663:
                 var27.icon = var29;
                 var27.arrow = var18;
-                var29 = function() { // Original name: onPress, environment: var23
+                var29 = function() {
                     _fun76629: for (var _fun76629_ip = 0;;) switch (_fun76629_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.selectedChannel = var5;
                             var4 = _closure1_slot9;
                             var0.channelType = var4;
-                            var4 = function(arg0) { // Original name: filterFn, environment: var3
+                            var4 = function arg0() {
                                 _fun76630: for (var _fun76630_ip = 0;;) switch (_fun76630_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -851,7 +851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var0.filterFn = var4;
-                            var4 = function(arg0) { // Original name: onSelect, environment: var3
+                            var4 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure2_slot2;
                                 var0 = arg0;
@@ -861,7 +861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.onSelect = var4;
-                            var3 = function() { // Original name: onClose, environment: var3
+                            var3 = function() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure2_slot2;
                                 var1 = _closure2_slot3;
@@ -951,7 +951,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = !var25;
                 var18.disabled = var25;
                 var18.loading = var24;
-                var23 = function() { // Original name: onPress, environment: var23
+                var23 = function() {
                     _fun76633: for (var _fun76633_ip = 0;;) switch (_fun76633_ip) {
                         case 0:
                             var2 = _closure2_slot3;

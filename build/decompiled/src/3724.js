@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: getSensorContainer, environment: var1
+    var0 = function() {
         _fun33492: for (var _fun33492_ip = 0;;) switch (_fun33492_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.shouldBeUseWeb;
     var3 = var3.bind(var4)();
     var _closure1_slot4 = var3;
-    var3 = function() { // Original name: isReanimated3, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.runOnUI = var4;
     var2.isReanimated3 = var3;
     var2.isConfigured = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getViewProp, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun33494: for (var _fun33494_ip = 0;;) switch (_fun33494_ip) {
             case 0:
                 var2 = arg2;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getViewProp = var3;
-    var3 = function(arg0, arg1) { // Original name: registerEventHandler, environment: var1
+    var3 = function arg0, arg1() {
         _fun33497: for (var _fun33497_ip = 0;;) switch (_fun33497_ip) {
             case 0:
                 var6 = undefined;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = arguments[var1];
             case 50:
                 var0 = function() { // Environment: var0
-                    var0 = function(arg0, arg1) { // Original name: handleAndFlushAnimationFrame, environment: var0
+                    var0 = function arg0, arg1() {
                         var3 = arg0;
                         var1 = _closure1_slot0;
                         var1.__frameTimestamp = var3;
@@ -311,7 +311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.registerEventHandler = var3;
-    var3 = function(arg0) { // Original name: unregisterEventHandler, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -325,14 +325,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unregisterEventHandler = var3;
-    var3 = function(arg0, arg1) { // Original name: subscribeForKeyboardEvents, environment: var1
+    var3 = function arg0, arg1() {
         _fun33501: for (var _fun33501_ip = 0;;) switch (_fun33501_ip) {
             case 0:
                 var5 = arg1;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var0 = function() { // Environment: var0
-                    var0 = function(arg0, arg1) { // Original name: handleAndFlushAnimationFrame, environment: var0
+                    var0 = function arg0, arg1() {
                         var1 = _closure1_slot0;
                         var0 = var1._getAnimationTimestamp;
                         var3 = var0.bind(var1)();
@@ -412,7 +412,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.subscribeForKeyboardEvents = var3;
-    var3 = function(arg0) { // Original name: unsubscribeFromKeyboardEvents, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -426,7 +426,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unsubscribeFromKeyboardEvents = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: registerSensor, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = _closure1_slot8;
         var2 = undefined;
         var4 = var1.bind(var2)();
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.registerSensor = var3;
-    var3 = function(arg0, arg1) { // Original name: initializeSensor, environment: var1
+    var3 = function arg0, arg1() {
         var1 = _closure1_slot8;
         var0 = undefined;
         var3 = var1.bind(var0)();
@@ -456,7 +456,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.initializeSensor = var3;
-    var3 = function(arg0) { // Original name: unregisterSensor, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot8;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unregisterSensor = var3;
-    var3 = function(arg0) { // Original name: enableLayoutAnimations, environment: var1
+    var3 = function arg0() {
         _fun33508: for (var _fun33508_ip = 0;;) switch (_fun33508_ip) {
             case 0:
                 var3 = arg0;
@@ -538,7 +538,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.enableLayoutAnimations = var3;
-    var3 = function(arg0) { // Original name: configureLayoutAnimationBatch, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -552,7 +552,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.configureLayoutAnimationBatch = var3;
-    var3 = function(arg0, arg1) { // Original name: setShouldAnimateExitingForTag, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -567,7 +567,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setShouldAnimateExitingForTag = var3;
-    var3 = function(arg0, arg1) { // Original name: jsiConfigureProps, environment: var1
+    var3 = function arg0, arg1() {
         _fun33511: for (var _fun33511_ip = 0;;) switch (_fun33511_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -593,7 +593,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.jsiConfigureProps = var3;
-    var3 = function(arg0) { // Original name: markNodeAsRemovable, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -607,7 +607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.markNodeAsRemovable = var3;
-    var3 = function(arg0) { // Original name: unmarkNodeAsRemovable, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -621,7 +621,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unmarkNodeAsRemovable = var3;
-    var1 = function(arg0) { // Original name: setNodeRemovalCallback, environment: var1
+    var1 = function arg0() {
         _fun33514: for (var _fun33514_ip = 0;;) switch (_fun33514_ip) {
             case 0:
                 var3 = _closure1_slot1;

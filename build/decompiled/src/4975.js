@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.bind(var0)(var4);
     var _closure1_slot2 = var1;
     var1 = {};
-    var4 = function() { // Original name: Tap, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Tap = var4;
-    var4 = function() { // Original name: Pan, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Pan = var4;
-    var4 = function() { // Original name: Pinch, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Pinch = var4;
-    var4 = function() { // Original name: Rotation, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Rotation = var4;
-    var4 = function() { // Original name: Fling, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Fling = var4;
-    var4 = function() { // Original name: LongPress, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.LongPress = var4;
-    var4 = function() { // Original name: ForceTouch, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.ForceTouch = var4;
-    var4 = function() { // Original name: Native, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Native = var4;
-    var4 = function() { // Original name: Manual, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 9;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Manual = var4;
-    var4 = function() { // Original name: Hover, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 10;
@@ -220,7 +220,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.Hover = var4;
-    var4 = function() { // Original name: Race, environment: var3
+    var4 = function() {
         _fun44904: for (var _fun44904_ip = 0;;) switch (_fun44904_ip) {
             case 0:
                 var3 = undefined;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.Race = var4;
-    var4 = function() { // Original name: Simultaneous, environment: var3
+    var4 = function() {
         _fun44905: for (var _fun44905_ip = 0;;) switch (_fun44905_ip) {
             case 0:
                 var3 = undefined;
@@ -310,7 +310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.Simultaneous = var4;
-    var3 = function() { // Original name: Exclusive, environment: var3
+    var3 = function() {
         _fun44906: for (var _fun44906_ip = 0;;) switch (_fun44906_ip) {
             case 0:
                 var3 = undefined;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun97515: for (var _fun97515_ip = 0;;) switch (_fun97515_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 5;
     var3 = var6[var3];
     var4 = var5.bind(var0)(var3);
-    var3 = function(arg0, arg1) { // Original name: _interopRequireWildcard, environment: var1
+    var3 = function arg0, arg1() {
         _fun97518: for (var _fun97518_ip = 0;;) switch (_fun97518_ip) {
             case 0:
                 var3 = arg0;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var4;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: FullScreenOverlay, environment: var5
+        var3 = function arg0() {
             _fun97520: for (var _fun97520_ip = 0;;) switch (_fun97520_ip) {
                 case 0:
                     var2 = arg0;
@@ -347,7 +347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'createContainerStyle';
         var4.key = var0;
-        var0 = function() { // Original name: createContainerStyle, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0.state;
             var8 = var0.opacity;
@@ -381,7 +381,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'renderDebug';
         var4.key = var6;
-        var6 = function() { // Original name: renderDebug, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.state;
             var0 = var0.showDebug;
@@ -393,7 +393,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun97524: for (var _fun97524_ip = 0;;) switch (_fun97524_ip) {
                 case 0:
                     var6 = this;

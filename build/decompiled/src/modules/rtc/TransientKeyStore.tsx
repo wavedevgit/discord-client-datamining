@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun66503: for (var _fun66503_ip = 0;;) switch (_fun66503_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: TransientKeyStore, environment: var5
+        var3 = function() {
             _fun66507: for (var _fun66507_ip = 0;;) switch (_fun66507_ip) {
                 case 0:
                     var3 = this;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getUsers';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isKeyVerified';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun66509: for (var _fun66509_ip = 0;;) switch (_fun66509_ip) {
                 case 0:
                     var3 = arg1;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: handleConnectionOpen, environment: var3
+    var7 = function() {
         var1 = _closure1_slot5;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function(arg0) { // Original name: handleSecureFramesTransientKeyCreate, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.userId;
         var5 = var0.key;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SECURE_FRAMES_TRANSIENT_KEY_CREATE = var7;
-    var3 = function(arg0) { // Original name: handleSecureFramesTransientKeyDelete, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.userId;
         var1 = _closure1_slot5;

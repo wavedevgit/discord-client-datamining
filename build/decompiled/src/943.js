@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0) { // Original name: extractPromptResultAttributes, environment: var1
+    var3 = function arg0() {
         _fun9784: for (var _fun9784_ip = 0;;) switch (_fun9784_ip) {
             case 0:
                 var1 = arg0;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0[var3] = var2;
                 var2 = var1.messages;
                 var _closure2_slot1 = var2;
-                var9 = function() { // Original name: _loop2, environment: var8
+                var9 = function() {
                     _fun9785: for (var _fun9785_ip = 0;;) switch (_fun9785_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractPromptResultAttributes = var3;
-    var1 = function(arg0) { // Original name: extractToolResultAttributes, environment: var1
+    var1 = function arg0() {
         _fun9786: for (var _fun9786_ip = 0;;) switch (_fun9786_ip) {
             case 0:
                 var1 = arg0;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun9786;
             case 76:
                 var5 = var1.content;
-                var3 = function(arg0) { // Original name: buildAllContentItemAttributes, environment: var3
+                var3 = function arg0() {
                     _fun9787: for (var _fun9787_ip = 0;;) switch (_fun9787_ip) {
                         case 0:
                             var2 = arg0;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = {};
                             var0 = var4.bind(var7)(var0, var3, var1);
                             var _closure3_slot1 = var0;
-                            var9 = function() { // Original name: _loop, environment: var8
+                            var9 = function() {
                                 _fun9788: for (var _fun9788_ip = 0;;) switch (_fun9788_ip) {
                                     case 0:
                                         var4 = _closure1_slot0;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = var6.bind(var4)(var7);
                                     case 100:
                                         var _closure4_slot0 = var9;
-                                        var3 = function(arg0, arg1) { // Original name: safeSet, environment: var3
+                                        var3 = function arg0, arg1() {
                                             _fun9789: for (var _fun9789_ip = 0;;) switch (_fun9789_ip) {
                                                 case 0:
                                                     var2 = arg1;

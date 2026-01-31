@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
-        var4 = function() { // Original name: ProcessArgs, environment: var1
+        var4 = function() {
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'get';
         var0.key = var2;
-        var2 = function() { // Original name: value, environment: var1
+        var2 = function() {
             _fun37046: for (var _fun37046_ip = 0;;) switch (_fun37046_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'contains';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var1
+        var5 = function arg0() {
             var1 = _closure2_slot0;
             var0 = var1.get;
             var2 = var0.bind(var1)();
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isEnvVariableTrue';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var1
+        var5 = function arg0() {
             _fun37048: for (var _fun37048_ip = 0;;) switch (_fun37048_ip) {
                 case 0:
                     var1 = _closure1_slot0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDisallowPopupsSet';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             _fun37049: for (var _fun37049_ip = 0;;) switch (_fun37049_ip) {
                 case 0:
                     var3 = _closure2_slot0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDiscordTestSet';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var2 = _closure2_slot0;
             var1 = var2.isEnvVariableTrue;
             var0 = 'DISCORD_TEST';
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDiscordGatewayPlaintextSet';
         var0.key = var5;
-        var1 = function() { // Original name: value, environment: var1
+        var1 = function() {
             var0 = false;
             return var0;
         };

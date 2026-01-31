@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: isAuthorizedAppTwoWay, environment: var1
+    var3 = function arg0() {
         _fun82122: for (var _fun82122_ip = 0;;) switch (_fun82122_ip) {
             case 0:
                 var3 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/shouldWarnAuthorizedAppTwoWay.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useShouldWarnAuthorizedAppTwoWay, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg0;

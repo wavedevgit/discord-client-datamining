@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/native/components/EnableCommunityModal/CommunityRequirementSatisfiedForm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CommunityRequirementSatisfiedForm, environment: var1
+    var1 = function arg0() {
         _fun116309: for (var _fun116309_ip = 0;;) switch (_fun116309_ip) {
             case 0:
                 var0 = arg0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.accessibilityRole = var11;
                 var10 = var10.communityRequirementSatisfiedFormPressable;
                 var6.style = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     _fun116310: for (var _fun116310_ip = 0;;) switch (_fun116310_ip) {
                         case 0:
                             var0 = _closure2_slot0;

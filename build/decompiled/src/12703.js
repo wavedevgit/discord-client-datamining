@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = null;
             var3.veto = var4;
             var _closure1_slot5 = var3;
-            var3 = function(arg0) { // Original name: objectifyError, environment: var1
+            var3 = function arg0() {
                 var4 = arg0;
                 var _closure2_slot0 = var4;
                 var0 = {};
@@ -65,14 +65,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot6 = var3;
-            var1 = function(arg0) { // Original name: trackGlobalErrors, environment: var1
+            var1 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var0 = function(arg0) { // Environment: var0
                     _fun97533: for (var _fun97533_ip = 0;;) switch (_fun97533_ip) {
                         case 0:
                             var3 = arg0;
-                            var2 = function(arg0) { // Original name: reportError, environment: var1
+                            var2 = function arg0() {
                                 _fun97534: for (var _fun97534_ip = 0;;) switch (_fun97534_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -360,13 +360,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var5.bind(var6)(var0, var4, var3);
                             var _closure3_slot1 = var0;
                             var0 = {};
-                            var1 = function() { // Original name: onConnect, environment: var1
+                            var1 = function() {
                                 var1 = _closure1_slot4;
                                 var0 = global;
                                 var4 = var0.Proxy;
                                 var6 = var1.addException;
                                 var0 = {};
-                                var2 = function(arg0, arg1, arg2) { // Original name: apply, environment: var2
+                                var2 = function arg0, arg1, arg2() {
                                     var3 = arg0;
                                     var2 = arg2;
                                     var4 = _closure3_slot2;

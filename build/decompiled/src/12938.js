@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: formatIssueTitle, environment: var1
+    var0 = function arg0() {
         _fun99620: for (var _fun99620_ip = 0;;) switch (_fun99620_ip) {
             case 0:
                 var4 = arg0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: formatIssueMessage, environment: var1
+    var0 = function arg0() {
         _fun99621: for (var _fun99621_ip = 0;;) switch (_fun99621_ip) {
             case 0:
                 var3 = undefined;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: applyZodErrorsToEvent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun99622: for (var _fun99622_ip = 0;;) switch (_fun99622_ip) {
             case 0:
                 var5 = arg1;
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6[var4];
     var5 = var5.bind(var0)(var4);
     var4 = var5.defineIntegration;
-    var1 = function() { // Original name: _zodErrorsIntegration, environment: var1
+    var1 = function() {
         _fun99623: for (var _fun99623_ip = 0;;) switch (_fun99623_ip) {
             case 0:
                 var4 = undefined;
@@ -343,7 +343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ZodErrors';
                 var0.name = var2;
-                var1 = function(arg0, arg1) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1() {
                     var4 = _closure1_slot5;
                     var3 = _closure2_slot0;
                     var2 = undefined;

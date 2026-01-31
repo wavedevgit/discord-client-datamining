@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'voice';
         var0.currentType = var2;
-        var2 = function() { // Original name: startTimer, environment: var1
+        var2 = function() {
             _fun100702: for (var _fun100702_ip = 0;;) switch (_fun100702_ip) {
                 case 0:
                     var1 = _closure1_slot0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.startTimer = var2;
-        var1 = function() { // Original name: stopTimer, environment: var1
+        var1 = function() {
             _fun100704: for (var _fun100704_ip = 0;;) switch (_fun100704_ip) {
                 case 0:
                     var2 = _closure1_slot0;

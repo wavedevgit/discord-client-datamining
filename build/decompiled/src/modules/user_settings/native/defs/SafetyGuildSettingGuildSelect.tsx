@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7.createGuildSelector;
     var3 = {};
     var3.unsearchable = var10;
-    var10 = function() { // Original name: useSelectedGuildId, environment: var8
+    var10 = function() {
         var4 = _closure1_slot5;
         var3 = var4.useField;
         var2 = 'selected';
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.useSelectedGuildId = var10;
     var9 = var9.CONTENT_AND_SOCIAL_DISCORD;
     var3.parent = var9;
-    var8 = function() { // Original name: onGuildSelectPress, environment: var8
+    var8 = function() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;

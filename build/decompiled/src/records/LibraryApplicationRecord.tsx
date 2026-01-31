@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun30642: for (var _fun30642_ip = 0;;) switch (_fun30642_ip) {
             case 0:
             case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.SKUTypes;
     var _closure1_slot12 = var6;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: LibraryApplicationRecord, environment: var6
+        var4 = function arg0() {
             _fun30646: for (var _fun30646_ip = 0;;) switch (_fun30646_ip) {
                 case 0:
                     var1 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getFlags';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var6
+        var1 = function() {
             var0 = this;
             var0 = var0.flags;
             return var0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasFlag';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var6
+        var5 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 9;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isHidden';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var2 = this;
             var1 = var2.hasFlag;
             var0 = _closure1_slot10;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isLegacyOverlayEnabled';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var2 = this;
             var1 = var2.hasFlag;
             var0 = _closure1_slot10;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isOverlayV3Enabled';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var2 = this;
             var1 = var2.hasFlag;
             var0 = _closure1_slot10;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isOverlayEnabled';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             _fun30652: for (var _fun30652_ip = 0;;) switch (_fun30652_ip) {
                 case 0:
                     var2 = this;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isMasterBranch';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var0 = this;
             var1 = var0.branchId;
             var0 = var0.id;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDiscordApplication';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var0 = true;
             return var0;
         };
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isEntitled';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var6
+        var5 = function arg0, arg1() {
             _fun30655: for (var _fun30655_ip = 0;;) switch (_fun30655_ip) {
                 case 0:
                     var2 = this;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isPreorder';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             _fun30657: for (var _fun30657_ip = 0;;) switch (_fun30657_ip) {
                 case 0:
                     var1 = this;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getDistributor';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var0 = _closure1_slot11;
             var0 = var0.DISCORD;
             return var0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBranchName';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             _fun30659: for (var _fun30659_ip = 0;;) switch (_fun30659_ip) {
                 case 0:
                     var1 = this;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBranchedName';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var6
+        var5 = function arg0() {
             _fun30660: for (var _fun30660_ip = 0;;) switch (_fun30660_ip) {
                 case 0:
                     var1 = arg0;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSkuIdForAnalytics';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             var0 = this;
             var0 = var0.sku;
             var0 = var0.id;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getAnalyticsData';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var6
+        var5 = function() {
             _fun30662: for (var _fun30662_ip = 0;;) switch (_fun30662_ip) {
                 case 0:
                     var2 = this;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var0 = 'createFromServer';
         var5.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var6
+        var0 = function arg0() {
             _fun30663: for (var _fun30663_ip = 0;;) switch (_fun30663_ip) {
                 case 0:
                     var4 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var7 = 'createForTestMode';
         var5.key = var7;
-        var6 = function(arg0) { // Original name: value, environment: var6
+        var6 = function arg0() {
             var4 = arg0;
             var2 = _closure2_slot0;
             var0 = {};

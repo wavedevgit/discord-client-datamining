@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/useBottomVoiceControlsSheetWidth.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useBottomVoiceControlsSheetWidth, environment: var1
+    var1 = function() {
         _fun62865: for (var _fun62865_ip = 0;;) switch (_fun62865_ip) {
             case 0:
                 var2 = _closure1_slot0;

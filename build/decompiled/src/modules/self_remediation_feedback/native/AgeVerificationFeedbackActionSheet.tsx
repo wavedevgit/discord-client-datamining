@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_remediation_feedback/native/AgeVerificationFeedbackActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AgeVerificationFeedbackActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.dismissibleContent;
         var _closure2_slot0 = var0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.otherKey = var7;
         var0.trackOpen = var6;
         var0.trackReport = var5;
-        var4 = function(arg0) { // Original name: getFreeformDescription, environment: var4
+        var4 = function arg0() {
             _fun113074: for (var _fun113074_ip = 0;;) switch (_fun113074_ip) {
                 case 0:
                     var1 = arg0;

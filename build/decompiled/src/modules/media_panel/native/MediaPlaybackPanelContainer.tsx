@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot3 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: MediaPlaybackPanelContainer, environment: var1
+    var1 = function() {
         _fun111826: for (var _fun111826_ip = 0;;) switch (_fun111826_ip) {
             case 0:
                 var5 = _closure1_slot0;

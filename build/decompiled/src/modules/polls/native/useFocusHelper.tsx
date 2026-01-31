@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot4 = var3;
-    var3 = function() { // Original name: FocusHelperState, environment: var1
+    var3 = function() {
         var2 = this;
         var3 = _closure1_slot3;
         var1 = _closure1_slot7;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot2;
-        var2 = function() { // Original name: FocusHelperImpl, environment: var4
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot3;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'restartState';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = _closure1_slot5;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'commitState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun108412: for (var _fun108412_ip = 0;;) switch (_fun108412_ip) {
                 case 0:
                     var1 = this;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'refWithKey';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun108413: for (var _fun108413_ip = 0;;) switch (_fun108413_ip) {
                 case 0:
                     var3 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/native/useFocusHelper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useFocusHelper, environment: var1
+    var1 = function() {
         _fun108414: for (var _fun108414_ip = 0;;) switch (_fun108414_ip) {
             case 0:
                 var0 = arguments[0];

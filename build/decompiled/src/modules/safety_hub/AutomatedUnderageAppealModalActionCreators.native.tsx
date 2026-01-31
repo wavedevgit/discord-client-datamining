@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: open, environment: var3
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.open = var6;
-    var6 = function(arg0, arg1) { // Original name: openV2, environment: var3
+    var6 = function arg0, arg1() {
         var6 = arg1;
         var0 = arg0;
         var _closure2_slot0 = var0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.isRetry = var4;
                             var4 = true;
                             var1.useEmbeddedMethods = var4;
-                            var4 = function() { // Original name: onComplete, environment: var4
+                            var4 = function() {
                                 _fun79478: for (var _fun79478_ip = 0;;) switch (_fun79478_ip) {
                                     case 0:
                                         var2 = _closure2_slot1;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openV2 = var6;
-    var6 = function() { // Original name: close, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.close = var6;
-    var6 = function() { // Original name: success, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.success = var6;
-    var6 = function() { // Original name: start_verification_check, environment: var3
+    var6 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;

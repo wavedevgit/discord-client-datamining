@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'photoshop': 'http://ns.adobe.com/photoshop/1.0/'
     };
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: isMissingNamespaceError, environment: var0
+    var2 = function arg0() {
         _fun38232: for (var _fun38232_ip = 0;;) switch (_fun38232_ip) {
             case 0:
                 var4 = arg0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isMissingNamespaceError = var2;
-    var0 = function(arg0) { // Original name: addMissingNamespaces, environment: var0
+    var0 = function arg0() {
         _fun38233: for (var _fun38233_ip = 0;;) switch (_fun38233_ip) {
             case 0:
                 var4 = arg0;

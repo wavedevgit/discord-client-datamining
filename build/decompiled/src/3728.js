@@ -27,9 +27,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: createMapperRegistry, environment: var0
-            var0 = function() { // Original name: updateMappersOrder, environment: var1
-                var0 = function(arg0) { // Original name: dfs, environment: var2
+        var0 = function() {
+            var0 = function() {
+                var0 = function arg0() {
                     _fun33537: for (var _fun33537_ip = 0;;) switch (_fun33537_ip) {
                         case 0:
                             var3 = arg0;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure3_slot4 = var0;
-            var0 = function() { // Original name: mapperRun, environment: var1
+            var0 = function() {
                 _fun33540: for (var _fun33540_ip = 0;;) switch (_fun33540_ip) {
                     case 0:
                         var0 = undefined;
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure3_slot5 = var0;
-            var0 = function() { // Original name: maybeRequestUpdates, environment: var1
+            var0 = function() {
                 _fun33541: for (var _fun33541_ip = 0;;) switch (_fun33541_ip) {
                     case 0:
                         var1 = _closure1_slot3;
@@ -342,7 +342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure3_slot6 = var0;
-            var0 = function(arg0, arg1) { // Original name: extractInputs, environment: var1
+            var0 = function arg0, arg1() {
                 _fun33542: for (var _fun33542_ip = 0;;) switch (_fun33542_ip) {
                     case 0:
                         var1 = arg0;
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure3_slot2 = var0;
             var _closure3_slot3 = var0;
             var0 = {};
-            var2 = function(arg0, arg1, arg2, arg3) { // Original name: start, environment: var1
+            var2 = function arg0, arg1, arg2, arg3() {
                 _fun33543: for (var _fun33543_ip = 0;;) switch (_fun33543_ip) {
                     case 0:
                         var0 = undefined;
@@ -536,7 +536,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var0.start = var2;
-            var1 = function(arg0) { // Original name: stop, environment: var1
+            var1 = function arg0() {
                 _fun33545: for (var _fun33545_ip = 0;;) switch (_fun33545_ip) {
                     case 0:
                         var0 = undefined;
@@ -618,7 +618,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_mappersTs3(){const{mapperID}=this.__closure;const mapperRegistry=global.__mapperRegistry;mapperRegistry===null||mapperRegistry===void 0||mapperRegistry.stop(mapperID);}';
     var3.code = var4;
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: startMapper, environment: var1
+    var3 = function arg0() {
         _fun33546: for (var _fun33546_ip = 0;;) switch (_fun33546_ip) {
             case 0:
                 var9 = arg0;
@@ -674,7 +674,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3[var6];
                 var4 = var4.bind(var2)(var3);
                 var3 = var4.runOnUI;
-                var1 = function() { // Original name: pnpm_mappersTs2, environment: var1
+                var1 = function() {
                     _fun33547: for (var _fun33547_ip = 0;;) switch (_fun33547_ip) {
                         case 0:
                             var0 = _closure1_slot0;
@@ -719,7 +719,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.startMapper = var3;
-    var1 = function(arg0) { // Original name: stopMapper, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var3 = _closure1_slot1;
@@ -729,7 +729,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         var3 = var3.bind(var0)(var2);
         var2 = var3.runOnUI;
-        var1 = function() { // Original name: pnpm_mappersTs3, environment: var1
+        var1 = function() {
             _fun33549: for (var _fun33549_ip = 0;;) switch (_fun33549_ip) {
                 case 0:
                     var0 = _closure1_slot0;

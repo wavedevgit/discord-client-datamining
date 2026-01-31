@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var3 = dependencyMap;
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: requireModule, environment: var0
+    var3 = function arg0() {
         _fun1377: for (var _fun1377_ip = 0;;) switch (_fun1377_ip) {
             case 0:
                 var3 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var3, var4);
     var2 = var2.__turboModuleProxy;
     var _closure1_slot4 = var2;
-    var2 = function(arg0) { // Original name: get, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot5;
         var1 = undefined;
         var0 = arg0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.get = var2;
-    var0 = function(arg0) { // Original name: getEnforcing, environment: var0
+    var0 = function arg0() {
         var7 = arg0;
         var0 = _closure1_slot5;
         var4 = undefined;

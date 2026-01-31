@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var1 = function(arg0, arg1) { // Original name: toPrimitive, environment: var1
+    var1 = function arg0, arg1() {
         _fun147: for (var _fun147_ip = 0;;) switch (_fun147_ip) {
             case 0:
                 var0 = arg0;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/forums/native/posts/AnimatedCounterUtils.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: defaultFormatter, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;

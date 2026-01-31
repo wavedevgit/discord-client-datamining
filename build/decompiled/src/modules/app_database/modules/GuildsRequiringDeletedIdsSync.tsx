@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: GuildsRequiringDeletedIdsSync, environment: var5
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot3;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var1 = var4.bind(var0)(var2, var1);
             var1 = {};
-            var4 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleBackgroundSync;
                 var1 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.BACKGROUND_SYNC = var4;
-            var4 = function(arg0, arg1) { // Original name: CONNECTION_OPEN, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleConnectionOpen;
                 var1 = arg0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CONNECTION_OPEN = var4;
-            var4 = function(arg0, arg1) { // Original name: GUILD_CREATE, environment: var3
+            var4 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleGuildCreate;
                 var1 = arg0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.GUILD_CREATE = var4;
-            var3 = function(arg0, arg1) { // Original name: DELETED_ENTITY_IDS, environment: var3
+            var3 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleDeletedEntityIds;
                 var1 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var6.bind(var1)(var0);
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: getAll, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpen';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun93161: for (var _fun93161_ip = 0;;) switch (_fun93161_ip) {
                 case 0:
                     var1 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleBackgroundSync';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun93164: for (var _fun93164_ip = 0;;) switch (_fun93164_ip) {
                 case 0:
                     var1 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleGuildCreate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun93167: for (var _fun93167_ip = 0;;) switch (_fun93167_ip) {
                 case 0:
                     var0 = arg0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleDeletedEntityIds';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 3;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetInMemoryState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = undefined;
             return var0;
         };

@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.container = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot9 = var3;
-    var1 = function(arg0) { // Original name: BottomTabView, environment: var1
+    var1 = function arg0() {
         _fun100542: for (var _fun100542_ip = 0;;) switch (_fun100542_ip) {
             case 0:
                 var0 = arg0;
@@ -423,7 +423,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var5.Provider;
                 var5 = {};
                 var5.value = var9;
-                var8 = function() { // Original name: renderTabBar, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -434,7 +434,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.SafeAreaInsetsContext;
                     var1 = var0.Consumer;
                     var0 = {};
-                    var4 = function(arg0) { // Original name: children, environment: var4
+                    var4 = function arg0() {
                         _fun100548: for (var _fun100548_ip = 0;;) switch (_fun100548_ip) {
                             case 0:
                                 var9 = arg0;

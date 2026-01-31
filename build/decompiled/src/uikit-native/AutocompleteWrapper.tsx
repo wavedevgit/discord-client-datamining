@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getAutocompletesHeight, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun89884: for (var _fun89884_ip = 0;;) switch (_fun89884_ip) {
             case 0:
                 var4 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var8)(var3);
     var _closure1_slot29 = var3;
-    var3 = function(arg0) { // Original name: isSlashAutocompleteType, environment: var1
+    var3 = function arg0() {
         _fun89886: for (var _fun89886_ip = 0;;) switch (_fun89886_ip) {
             case 0:
                 var2 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var3;
-    var3 = function(arg0, arg1) { // Original name: getStickersItemLayout, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg1;
         var0 = {};
         var6 = _closure1_slot0;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var1 = _closure2_slot24;
                         var0.setChatInputHeight = var1;
-                        var1 = function(arg0) { // Original name: setData, environment: var1
+                        var1 = function arg0() {
                             _fun89898: for (var _fun89898_ip = 0;;) switch (_fun89898_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -2346,7 +2346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var2;
                             var13 = var5;
                             var1 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2355,7 +2355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var1 = 'onPress';
                             var2[var1] = var8;
-                            var8 = function() { // Original name: onLongPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot43;
                                 var0 = _closure3_slot0;
                                 var0 = var0.sticker;
@@ -2403,7 +2403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var1;
                             var13 = var5;
                             var7 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2427,7 +2427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var1;
                             var13 = var5;
                             var7 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2451,7 +2451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var1;
                             var13 = var5;
                             var7 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2475,7 +2475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var1;
                             var13 = var5;
                             var7 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2499,7 +2499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var1;
                             var13 = var5;
                             var7 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2538,7 +2538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var1;
                             var13 = var5;
                             var7 = copyDataProperties(var14, var13);
-                            var8 = function() { // Original name: onPress, environment: var4
+                            var8 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2566,7 +2566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var5.guild_id;
                             var5 = 'guildId';
                             var0[var5] = var6;
-                            var5 = function() { // Original name: onPress, environment: var4
+                            var5 = function() {
                                 var2 = _closure2_slot41;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -2630,7 +2630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var24.bind(var3)(var21);
                 var21 = {};
                 var21.channel = var14;
-                var34 = function(arg0, arg1, arg2) { // Original name: onPressSlashItem, environment: var27
+                var34 = function arg0, arg1, arg2() {
                     _fun89931: for (var _fun89931_ip = 0;;) switch (_fun89931_ip) {
                         case 0:
                             var3 = _closure2_slot40;
@@ -2701,7 +2701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = var41;
             case 1825:
                 var24.query = var33;
-                var33 = function(arg0, arg1) { // Original name: onPressCommandItem, environment: var27
+                var33 = function arg0, arg1() {
                     _fun89932: for (var _fun89932_ip = 0;;) switch (_fun89932_ip) {
                         case 0:
                             var3 = _closure2_slot40;
@@ -2752,7 +2752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = var34.bind(var3)(var33);
                 var33 = var33.getItemLayout;
                 var24.getItemLayout = var33;
-                var33 = function(arg0) { // Original name: onCommandsChange, environment: var27
+                var33 = function arg0() {
                     var2 = _closure2_slot37;
                     var5 = _closure1_slot33;
                     var4 = _closure2_slot25;
@@ -2826,7 +2826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var50 = var44;
                 var45 = copyDataProperties(var50, var49);
                 var37.style = var44;
-                var44 = function(arg0) { // Original name: keyExtractor, environment: var27
+                var44 = function arg0() {
                     var0 = arg0;
                     var0 = var0.sticker;
                     var0 = var0.id;
@@ -2919,7 +2919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = _closure1_slot6;
                 var22 = {};
                 var22.style = var28;
-                var27 = function(arg0, arg1) { // Original name: keyExtractor, environment: var27
+                var27 = function arg0, arg1() {
                     var0 = global;
                     var2 = var0.String;
                     var1 = undefined;

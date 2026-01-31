@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: SurveyOverrideInfoActionSheet, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.survey;
         var3 = _closure1_slot9;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = {};
                     var6 = var8.bind(var4)(var7, var6);
                     var0.icon = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         _fun86693: for (var _fun86693_ip = 0;;) switch (_fun86693_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: SurveyOverrideActionSheet, environment: var1
+    var0 = function() {
         _fun86694: for (var _fun86694_ip = 0;;) switch (_fun86694_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 270:
                 var5.variant = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     _fun86696: for (var _fun86696_ip = 0;;) switch (_fun86696_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: SurveyInfo, environment: var1
+    var0 = function() {
         _fun86697: for (var _fun86697_ip = 0;;) switch (_fun86697_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'subLabel': 'Force a survey to be shown.',
                     'arrow': true
                 };
-                var13 = function() { // Original name: onPress, environment: var9
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 16;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: ChangelogOverrideDebuggingActionSheet, environment: var1
+    var0 = function() {
         var3 = _closure1_slot9;
         var5 = _closure1_slot0;
         var7 = _closure1_slot3;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: ChangelogOverrideActionSheet, environment: var1
+    var0 = function() {
         _fun86702: for (var _fun86702_ip = 0;;) switch (_fun86702_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 270:
                 var5.variant = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     _fun86704: for (var _fun86704_ip = 0;;) switch (_fun86704_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: ChangelogInfo, environment: var1
+    var0 = function() {
         var3 = _closure1_slot10;
         var6 = _closure1_slot0;
         var9 = _closure1_slot3;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'subLabel': 'Force a changelog to be shown.',
             'arrow': true
         };
-        var12 = function() { // Original name: onPress, environment: var8
+        var12 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot3;
             var0 = 16;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'label': 'Changelog debugging',
             'arrow': true
         };
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot3;
             var0 = 16;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: UserSettingsSurveyChangelogOverride, environment: var1
+    var1 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var4 = var0.bind(var3)();

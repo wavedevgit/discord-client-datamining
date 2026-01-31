@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FamilyCenterModalDataTooltipScreen, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var21 = var0.bind(var3)();
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.icon = var11;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot8 = var6;
-    var6 = function(arg0) { // Original name: Row, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var16 = var0.header;
         var12 = var0.description;
@@ -470,11 +470,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterModalDataTooltip.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterModalDataTooltip, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
-            var1 = function() { // Original name: getScreens, environment: var0
+            var1 = function() {
                 var0 = {};
                 var1 = {};
                 var3 = true;
@@ -493,12 +493,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.pop;
                 var3 = var4.bind(var5)(var3);
                 var1.headerLeft = var3;
-                var3 = function() { // Original name: headerTitle, environment: var2
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var3;
-                var2 = function() { // Original name: render, environment: var2
+                var2 = function() {
                     var3 = _closure1_slot5;
                     var2 = _closure1_slot11;
                     var1 = undefined;

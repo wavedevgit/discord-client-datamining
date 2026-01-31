@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/useMediaItemSpoilerState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useMediaItemSpoilerState, environment: var1
+    var1 = function arg0() {
         _fun73010: for (var _fun73010_ip = 0;;) switch (_fun73010_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var12.bind(var0)(var4);
                             var4 = var4.STANDARD_EASING;
                             var5.easing = var4;
-                            var4 = function() { // Original name: t, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot1;
                                 var0 = 3;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var7];
                 var3 = var3.bind(var5)(var2);
                 var2 = var3.useAnimatedStyle;
-                var1 = function() { // Original name: S, environment: var1
+                var1 = function() {
                     var0 = {};
                     var2 = _closure2_slot3;
                     var1 = var2.get;

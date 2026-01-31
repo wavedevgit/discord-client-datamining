@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: getNativeImplementation, environment: var0
+    var2 = function arg0() {
         _fun10916: for (var _fun10916_ip = 0;;) switch (_fun10916_ip) {
             case 0:
                 var8 = arg0;
@@ -184,7 +184,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var4, var3);
     var3 = {};
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: clearCachedImplementation, environment: var0
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var0 = undefined;
         var1 = arg0;
@@ -192,7 +192,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.clearCachedImplementation = var3;
-    var3 = function() { // Original name: fetch, environment: var0
+    var3 = function() {
         var3 = undefined;
         var0 = undefined;
         var2 = _closure1_slot3;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.fetch = var3;
     var1.getNativeImplementation = var2;
-    var0 = function() { // Original name: setTimeout, environment: var0
+    var0 = function() {
         var3 = undefined;
         var0 = undefined;
         var2 = _closure1_slot3;

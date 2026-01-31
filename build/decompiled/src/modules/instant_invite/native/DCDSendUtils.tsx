@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canSendMail = var3;
-    var1 = function(arg0) { // Original name: canOpenUrlScheme, environment: var1
+    var1 = function arg0() {
         _fun31878: for (var _fun31878_ip = 0;;) switch (_fun31878_ip) {
             case 0:
                 var2 = arg0;

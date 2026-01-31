@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun70215: for (var _fun70215_ip = 0;;) switch (_fun70215_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.video = var9;
     var1 = var5.bind(var8)(var1);
     var _closure1_slot14 = var1;
-    var1 = function(arg0) { // Original name: VideoComponent, environment: var3
+    var1 = function arg0() {
         _fun70218: for (var _fun70218_ip = 0;;) switch (_fun70218_ip) {
             case 0:
                 var0 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var1;
     var5 = var4.PureComponent;
     var4 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: Video, environment: var5
+        var3 = function arg0() {
             _fun70223: for (var _fun70223_ip = 0;;) switch (_fun70223_ip) {
                 case 0:
                     var5 = this;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot0;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun70228: for (var _fun70228_ip = 0;;) switch (_fun70228_ip) {
                 case 0:
                     var0 = this;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderVideo';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun70229: for (var _fun70229_ip = 0;;) switch (_fun70229_ip) {
                 case 0:
                     var0 = this;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderImage';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun70230: for (var _fun70230_ip = 0;;) switch (_fun70230_ip) {
                 case 0:
                     var0 = this;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun70231: for (var _fun70231_ip = 0;;) switch (_fun70231_ip) {
                 case 0:
                     var6 = this;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'components_native/common/Video.tsx';
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
-    var3 = function(arg0) { // Original name: createVideoControls, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var1 = _closure1_slot8;
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = false;
         var _closure2_slot8 = var0;
         var0 = {};
-        var1 = function(arg0) { // Original name: seek, environment: var2
+        var1 = function arg0() {
             _fun70233: for (var _fun70233_ip = 0;;) switch (_fun70233_ip) {
                 case 0:
                     var0 = _closure2_slot4;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.seek = var1;
-        var1 = function(arg0) { // Original name: pause, environment: var2
+        var1 = function arg0() {
             _fun70234: for (var _fun70234_ip = 0;;) switch (_fun70234_ip) {
                 case 0:
                     var2 = arg0;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.pause = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: useSubscribe, environment: var2
+        var1 = function arg0, arg1, arg2() {
             var0 = arg0;
             var _closure2_slot1 = var0;
             var0 = arg1;
@@ -903,7 +903,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.useSubscribe = var1;
         var1 = {};
         var1.ref = var3;
-        var3 = function(arg0) { // Original name: onPlaybackRateChange, environment: var2
+        var3 = function arg0() {
             _fun70237: for (var _fun70237_ip = 0;;) switch (_fun70237_ip) {
                 case 0:
                     var0 = arg0;
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var1.onPlaybackRateChange = var3;
-        var3 = function(arg0) { // Original name: onProgress, environment: var2
+        var3 = function arg0() {
             _fun70238: for (var _fun70238_ip = 0;;) switch (_fun70238_ip) {
                 case 0:
                     var1 = arg0;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var1.onProgress = var3;
-        var2 = function(arg0) { // Original name: onDownloadProgress, environment: var2
+        var2 = function arg0() {
             _fun70239: for (var _fun70239_ip = 0;;) switch (_fun70239_ip) {
                 case 0:
                     var0 = arg0;

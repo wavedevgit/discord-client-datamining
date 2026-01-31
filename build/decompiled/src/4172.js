@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: getAutoRotateDescription, environment: var2
+    var0 = function arg0() {
         _fun38308: for (var _fun38308_ip = 0;;) switch (_fun38308_ip) {
             case 0:
                 var5 = arg0;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: read, environment: var2
+    var2 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38309: for (var _fun38309_ip = 0;;) switch (_fun38309_ip) {
             case 0:
                 var9 = arg1;

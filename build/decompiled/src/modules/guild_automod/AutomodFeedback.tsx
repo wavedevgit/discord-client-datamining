@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'modules/guild_automod/AutomodFeedback.tsx';
     var7 = var8.bind(var9)(var7);
     var2.Feedback = var6;
-    var6 = function() { // Original name: generateFeedbackOptions, environment: var3
+    var6 = function() {
         var1 = {};
         var7 = _closure1_slot0;
         var8 = _closure1_slot1;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.generateFeedbackOptions = var6;
     var2.RaidAlertType = var5;
     var2.RaidResolutionType = var4;
-    var3 = function(arg0) { // Original name: getMostImportantRaidResolutionType, environment: var3
+    var3 = function arg0() {
         _fun40778: for (var _fun40778_ip = 0;;) switch (_fun40778_ip) {
             case 0:
                 var3 = arg0;

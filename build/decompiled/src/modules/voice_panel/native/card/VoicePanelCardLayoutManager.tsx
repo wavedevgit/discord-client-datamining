@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun90884: for (var _fun90884_ip = 0;;) switch (_fun90884_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun90886: for (var _fun90886_ip = 0;;) switch (_fun90886_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getOrCreateRow, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun90887: for (var _fun90887_ip = 0;;) switch (_fun90887_ip) {
             case 0:
                 var3 = arg2;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: getTargetAspectRatio, environment: var1
+    var0 = function arg0() {
         _fun90888: for (var _fun90888_ip = 0;;) switch (_fun90888_ip) {
             case 0:
                 var0 = arg0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getGridDimensionsFromAspectRatio, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun90889: for (var _fun90889_ip = 0;;) switch (_fun90889_ip) {
             case 0:
                 var4 = arg0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: getTargetCardSize, environment: var1
+    var0 = function arg0() {
         _fun90890: for (var _fun90890_ip = 0;;) switch (_fun90890_ip) {
             case 0:
                 var1 = arg0;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: VoicePanelCardLayoutManager, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'setDirty';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun90893: for (var _fun90893_ip = 0;;) switch (_fun90893_ip) {
                 case 0:
                     var0 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'requiresEmit';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun90894: for (var _fun90894_ip = 0;;) switch (_fun90894_ip) {
                 case 0:
                     var0 = this;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleLayoutEffect';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = true;
             var1.mounted = var0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'cleanUp';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = false;
             var0 = this;
             var0.mounted = var1;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateState';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun90897: for (var _fun90897_ip = 0;;) switch (_fun90897_ip) {
                 case 0:
                     var2 = arg0;
@@ -874,7 +874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 225:
                     var4 = var1.setDirty;
                     var5 = var1.items;
-                    var3 = function(arg0, arg1) { // Original name: areArraysShallowEqual, environment: var3
+                    var3 = function arg0, arg1() {
                         _fun90898: for (var _fun90898_ip = 0;;) switch (_fun90898_ip) {
                             case 0:
                                 var3 = arg0;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getLayoutKey';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.layoutKey;
             return var0;
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChunk';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun90901: for (var _fun90901_ip = 0;;) switch (_fun90901_ip) {
                 case 0:
                     var0 = this;
@@ -949,7 +949,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getContentDimensions';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.computeCardsLayout;
             var1 = var1.bind(var0)();
@@ -961,7 +961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCardCoords';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var1 = var0.computeCardsLayout;
             var1 = var1.bind(var0)();
@@ -976,7 +976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCardCoordsMap';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.computeCardsLayout;
             var1 = var1.bind(var0)();
@@ -988,7 +988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getDefaultTargetDimensions';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.defaultTargetCoords;
             return var0;
@@ -998,7 +998,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getTargetDimensions';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun90906: for (var _fun90906_ip = 0;;) switch (_fun90906_ip) {
                 case 0:
                     var3 = arg0;
@@ -1046,7 +1046,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setTargetDimensions';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun90907: for (var _fun90907_ip = 0;;) switch (_fun90907_ip) {
                 case 0:
                     var4 = arg0;
@@ -1091,7 +1091,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resetTargetDimensions';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun90908: for (var _fun90908_ip = 0;;) switch (_fun90908_ip) {
                 case 0:
                     var3 = arg0;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setTargetAspectRatio';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun90909: for (var _fun90909_ip = 0;;) switch (_fun90909_ip) {
                 case 0:
                     var4 = arg0;
@@ -1203,7 +1203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'computeCardsLayout';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun90910: for (var _fun90910_ip = 0;;) switch (_fun90910_ip) {
                 case 0:
                     var2 = this;
@@ -1304,7 +1304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot8 = var1;
                     var10 = 0;
                     var _closure3_slot9 = var10;
-                    var9 = function(arg0) { // Original name: _loop, environment: var3
+                    var9 = function arg0() {
                         _fun90911: for (var _fun90911_ip = 0;;) switch (_fun90911_ip) {
                             case 0:
                                 var2 = arg0;
@@ -1800,7 +1800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot17 = var10;
                     var5 = new Array(0);
                     var _closure3_slot18 = var5;
-                    var14 = function(arg0, arg1, arg2, arg3) { // Original name: placeItem, environment: var3
+                    var14 = function arg0, arg1, arg2, arg3() {
                         _fun90913: for (var _fun90913_ip = 0;;) switch (_fun90913_ip) {
                             case 0:
                                 var3 = arg0;
@@ -2252,7 +2252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun90910
                     }
                 case 1354:
-                    var17 = function(arg0) { // Original name: _loop2, environment: var3
+                    var17 = function arg0() {
                         _fun90914: for (var _fun90914_ip = 0;;) switch (_fun90914_ip) {
                             case 0:
                                 var3 = arg0;
@@ -2608,7 +2608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'subscribeFromItem';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: subscribeFromItem, environment: var4
+        var5 = function arg0() {
             var3 = arg0;
             var1 = this;
             var _closure3_slot0 = var1;
@@ -2632,7 +2632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'subscribeToManager';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: subscribeToManager, environment: var4
+        var5 = function arg0() {
             var3 = arg0;
             var1 = this;
             var _closure3_slot0 = var1;
@@ -2656,7 +2656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emitLayoutChanges';
         var0.key = var5;
-        var5 = function() { // Original name: emitLayoutChanges, environment: var4
+        var5 = function() {
             _fun90919: for (var _fun90919_ip = 0;;) switch (_fun90919_ip) {
                 case 0:
                     var2 = this;
@@ -2743,7 +2743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'deferredLayoutChange';
         var0.key = var5;
-        var4 = function() { // Original name: deferredLayoutChange, environment: var4
+        var4 = function() {
             _fun90921: for (var _fun90921_ip = 0;;) switch (_fun90921_ip) {
                 case 0:
                     var1 = this;
@@ -2799,7 +2799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_panel/native/card/VoicePanelCardLayoutManager.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0, arg1) { // Original name: useCardLayoutCoordsSubscription, environment: var1
+    var3 = function arg0, arg1() {
         _fun90923: for (var _fun90923_ip = 0;;) switch (_fun90923_ip) {
             case 0:
                 var6 = arg0;
@@ -2836,7 +2836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var5;
                 var2[2] = var0;
                 var1 = function() { // Environment: var1
-                    var2 = function() { // Original name: updateSharedValues, environment: var0
+                    var2 = function() {
                         _fun90925: for (var _fun90925_ip = 0;;) switch (_fun90925_ip) {
                             case 0:
                                 var3 = _closure2_slot1;
@@ -2874,7 +2874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCardLayoutCoordsSubscription = var3;
-    var3 = function(arg0, arg1) { // Original name: useTargetDimensionsSubscription, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;
@@ -2900,7 +2900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[1] = var5;
         var2[2] = var0;
         var1 = function() { // Environment: var1
-            var2 = function() { // Original name: updateSharedValues, environment: var0
+            var2 = function() {
                 var3 = _closure2_slot1;
                 var2 = var3.getTargetDimensions;
                 var0 = _closure2_slot0;
@@ -2926,7 +2926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useTargetDimensionsSubscription = var3;
-    var1 = function(arg0) { // Original name: useManagerSubscription, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot6;

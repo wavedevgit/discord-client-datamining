@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/webauthn/native/PasskeyUpsellPromoSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PasswordlessUpsellPromoSheet, environment: var1
+    var1 = function() {
         _fun60626: for (var _fun60626_ip = 0;;) switch (_fun60626_ip) {
             case 0:
                 var3 = _closure1_slot7;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var0[var7];
                 var0 = var0[var1];
                 var _closure2_slot1 = var0;
-                var0 = function(arg0) { // Original name: onRegisterSuccess, environment: var13
+                var0 = function arg0() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 6;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6.bind(var7)(var5);
             case 318:
                 var0.description = var4;
-                var4 = function() { // Original name: onDismiss, environment: var13
+                var4 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 10;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var10 = 'lg';
                 var7.size = var10;
-                var10 = function() { // Original name: onPress, environment: var13
+                var10 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 10;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'lg',
                     'variant': 'secondary'
                 };
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 10;

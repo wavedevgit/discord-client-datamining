@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/native/PremiumPlanPurchasedStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.usePremiumPlanPurchasedStore = var3;
-    var3 = function(arg0) { // Original name: setInitiatedPurchaseFromNewFlow, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.productId;
         var _closure2_slot0 = var2;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setInitiatedPurchaseFromNewFlow = var3;
-    var3 = function() { // Original name: setPaymentSuccess, environment: var1
+    var3 = function() {
         _fun57557: for (var _fun57557_ip = 0;;) switch (_fun57557_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setPaymentSuccess = var3;
-    var3 = function(arg0) { // Original name: setApplePaymentLinkStatus, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setApplePaymentLinkStatus = var3;
-    var3 = function(arg0) { // Original name: handleApplePaymentLinkStatus, environment: var1
+    var3 = function arg0() {
         _fun57561: for (var _fun57561_ip = 0;;) switch (_fun57561_ip) {
             case 0:
                 var1 = arg0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleApplePaymentLinkStatus = var3;
-    var3 = function(arg0) { // Original name: showOldPaymentFlowSuccess, environment: var1
+    var3 = function arg0() {
         _fun57563: for (var _fun57563_ip = 0;;) switch (_fun57563_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showOldPaymentFlowSuccess = var3;
-    var1 = function() { // Original name: reset, environment: var1
+    var1 = function() {
         _fun57565: for (var _fun57565_ip = 0;;) switch (_fun57565_ip) {
             case 0:
                 var3 = _closure1_slot5;

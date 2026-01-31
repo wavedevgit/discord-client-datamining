@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: QuestCollectibleRewardModalMessages, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.quest;
         var1 = _closure1_slot7;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.open;
                 var1 = {};
                 var1.product = var6;
-                var5 = function() { // Original name: renderMessages, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot4;
                     var2 = _closure1_slot8;
                     var1 = {};

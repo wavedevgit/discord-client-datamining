@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/GuildRoleSettingsActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: pushTierEditScene, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var2 = _closure1_slot2;
         var1 = var2.resetImperatively;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.pushTierEditScene = var3;
-    var1 = function(arg0, arg1) { // Original name: pushTierTemplateSelectionScene, environment: var1
+    var1 = function arg0, arg1() {
         var5 = arg0;
         var4 = var5.push;
         var1 = _closure1_slot3;

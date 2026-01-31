@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = true;
     var2 = var4.bind(var0)(var3, var2);
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1) { // Original name: ArraySpeciesCreate, environment: var1
+    var2 = function arg0, arg1() {
         _fun28955: for (var _fun28955_ip = 0;;) switch (_fun28955_ip) {
             case 0:
                 var5 = arg0;

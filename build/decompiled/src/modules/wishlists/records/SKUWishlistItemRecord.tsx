@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun86975: for (var _fun86975_ip = 0;;) switch (_fun86975_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: SKUWishlistItemRecord, environment: var1
+        var4 = function arg0() {
             _fun86979: for (var _fun86979_ip = 0;;) switch (_fun86979_ip) {
                 case 0:
                     var1 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fromServer';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun86980: for (var _fun86980_ip = 0;;) switch (_fun86980_ip) {
                 case 0:
                     var1 = arg0;

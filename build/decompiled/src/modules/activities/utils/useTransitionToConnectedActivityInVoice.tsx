@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useTransitionToConnectedActivityInVoice, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var4 = var1.onTransition;
         var _closure2_slot0 = var4;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            var4 = function() { // Original name: handler, environment: var0
+            var4 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot1;
                 var2 = var3.apply;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure3_slot0 = var4;
-            var1 = function() { // Original name: _handler, environment: var0
+            var1 = function() {
                 var3 = undefined;
                 var0 = undefined;
                 var2 = _closure1_slot3;

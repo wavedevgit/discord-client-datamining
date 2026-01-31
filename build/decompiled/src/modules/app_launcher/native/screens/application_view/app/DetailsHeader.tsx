@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: DetailsHeader, environment: var1
+    var1 = function arg0() {
         _fun47801: for (var _fun47801_ip = 0;;) switch (_fun47801_ip) {
             case 0:
                 var0 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = true;
                 var7 = var10.bind(var13)(var7);
                 var _closure2_slot5 = var7;
-                var7 = function() { // Original name: useContainerAnimation, environment: var20
+                var7 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var3 = 6;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var7[var3];
                     var4 = var6.bind(var4)(var3);
                     var3 = var4.useAnimatedStyle;
-                    var2 = function() { // Original name: t, environment: var2
+                    var2 = function() {
                         var0 = {};
                         var2 = _closure3_slot0;
                         var1 = var2.get;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0 = var4.bind(var17)(var0, var2);
-                var21 = function() { // Original name: handleApplicationDescriptionPress, environment: var20
+                var21 = function() {
                     _fun47806: for (var _fun47806_ip = 0;;) switch (_fun47806_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var13[var4];
                             var4 = var12.bind(var11)(var4);
                             var16 = var4.timingStandard;
-                            var4 = function() { // Original name: t, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 6;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[0] = var17;
                 var13[1] = var11;
                 var7.style = var13;
-                var13 = function(arg0) { // Original name: onLayout, environment: var20
+                var13 = function arg0() {
                     _fun47808: for (var _fun47808_ip = 0;;) switch (_fun47808_ip) {
                         case 0:
                             var1 = _closure2_slot13;
@@ -821,7 +821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'variant': 'text-sm/medium',
                     'color': 'text-brand'
                 };
-                var25 = function(arg0) { // Original name: onLayout, environment: var20
+                var25 = function arg0() {
                     _fun47809: for (var _fun47809_ip = 0;;) switch (_fun47809_ip) {
                         case 0:
                             var2 = _closure2_slot8;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var9[2] = var11;
                 var6.style = var9;
-                var9 = function(arg0) { // Original name: onLayout, environment: var20
+                var9 = function arg0() {
                     _fun47810: for (var _fun47810_ip = 0;;) switch (_fun47810_ip) {
                         case 0:
                             var0 = arg0;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'variant': 'text-sm/medium',
                     'color': 'text-default'
                 };
-                var20 = function(arg0) { // Original name: onTextLayout, environment: var20
+                var20 = function arg0() {
                     _fun47811: for (var _fun47811_ip = 0;;) switch (_fun47811_ip) {
                         case 0:
                             var0 = arg0;

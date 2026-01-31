@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun76954: for (var _fun76954_ip = 0;;) switch (_fun76954_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PushFeedbackStore, environment: var5
+        var3 = function() {
             _fun76958: for (var _fun76958_ip = 0;;) switch (_fun76958_ip) {
                 case 0:
                     var3 = this;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun76959: for (var _fun76959_ip = 0;;) switch (_fun76959_ip) {
                 case 0:
                     var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot6;
             var0.pushFeedback = var2;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isEligible';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot6;
             var0 = null;
             var0 = var0 != var1;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isUserPushMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun76962: for (var _fun76962_ip = 0;;) switch (_fun76962_ip) {
                 case 0:
                     var0 = _closure1_slot6;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPushFeedback';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun76963: for (var _fun76963_ip = 0;;) switch (_fun76963_ip) {
                 case 0:
                     var0 = _closure1_slot6;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleReceivedNotification, environment: var3
+    var8 = function arg0() {
         _fun76964: for (var _fun76964_ip = 0;;) switch (_fun76964_ip) {
             case 0:
                 var0 = arg0;
@@ -373,14 +373,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.PUSH_FEEDBACK_RECEIVED_NOTIFICATION = var8;
-    var8 = function() { // Original name: handleCleanup, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot6 = var0;
         var0 = undefined;
         return var0;
     };
     var1.PUSH_FEEDBACK_CLEANUP = var8;
-    var3 = function(arg0) { // Original name: handleChannelSelect, environment: var3
+    var3 = function arg0() {
         _fun76966: for (var _fun76966_ip = 0;;) switch (_fun76966_ip) {
             case 0:
                 var0 = arg0;

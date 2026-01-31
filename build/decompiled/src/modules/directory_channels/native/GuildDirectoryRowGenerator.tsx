@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/directory_channels/native/GuildDirectoryRowGenerator.tsx';
     var4 = var5.bind(var6)(var4);
     var2.RowType = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: generateDirectoryRows, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun91234: for (var _fun91234_ip = 0;;) switch (_fun91234_ip) {
             case 0:
                 var3 = arg1;

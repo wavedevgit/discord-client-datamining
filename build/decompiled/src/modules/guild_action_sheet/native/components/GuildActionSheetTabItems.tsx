@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_action_sheet/native/components/GuildActionSheetTabItems.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun96580: for (var _fun96580_ip = 0;;) switch (_fun96580_ip) {
             case 0:
                 var0 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var19.bind(var3)(var18, var16);
                 var7.icon = var16;
                 var7.grow = var13;
-                var16 = function() { // Original name: onPress, environment: var12
+                var16 = function() {
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot3;
                     var0 = 18;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var3)(var19);
                 var11.icon = var19;
                 var11.grow = var13;
-                var19 = function() { // Original name: onPress, environment: var12
+                var19 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 19;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var19.bind(var3)(var18);
                 var10.icon = var18;
                 var10.grow = var13;
-                var18 = function() { // Original name: onPress, environment: var12
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot3;
                     var0 = 19;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 958:
                 var9.icon = var14;
                 var9.grow = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot3;
                     var0 = 19;

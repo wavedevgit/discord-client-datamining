@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = ['city', 'country', 'line1'];
     var2.NEW_PAYMENT_METHOD_REQUIRED_ADDRESS_ATTRIBUTES = var3;
-    var1 = function(arg0) { // Original name: getPaymentMethods, environment: var1
+    var1 = function arg0() {
         _fun29376: for (var _fun29376_ip = 0;;) switch (_fun29376_ip) {
             case 0:
                 var0 = arg0;

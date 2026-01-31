@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_sidebar/native/PremiumGuildSubscriptionPromptTooltip.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: PremiumGuildSubscriptionPromptTooltip, environment: var1
+    var3 = function arg0() {
         _fun101847: for (var _fun101847_ip = 0;;) switch (_fun101847_ip) {
             case 0:
                 var0 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0[var4];
                 var10 = var15.bind(var3)(var5);
                 var7 = var10.useAnimatedReaction;
-                var6 = function() { // Original name: T, environment: var1
+                var6 = function() {
                     var1 = _closure2_slot2;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.__workletHash = var5;
                 var5 = _closure1_slot10;
                 var6.__initData = var5;
-                var5 = function(arg0, arg1) { // Original name: S, environment: var1
+                var5 = function arg0, arg1() {
                     _fun101852: for (var _fun101852_ip = 0;;) switch (_fun101852_ip) {
                         case 0:
                             var1 = arg1;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0[var4];
                 var7 = var15.bind(var3)(var5);
                 var6 = var7.useAnimatedStyle;
-                var5 = function() { // Original name: v, environment: var1
+                var5 = function() {
                     _fun101853: for (var _fun101853_ip = 0;;) switch (_fun101853_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: PremiumGuildSubscriptionPromptTooltipFlashList, environment: var1
+    var1 = function arg0() {
         _fun101856: for (var _fun101856_ip = 0;;) switch (_fun101856_ip) {
             case 0:
                 var0 = arg0;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0[var4];
                 var10 = var15.bind(var3)(var5);
                 var7 = var10.useAnimatedReaction;
-                var6 = function() { // Original name: T, environment: var1
+                var6 = function() {
                     var1 = _closure2_slot1;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.__workletHash = var5;
                 var5 = _closure1_slot7;
                 var6.__initData = var5;
-                var5 = function(arg0, arg1) { // Original name: S, environment: var1
+                var5 = function arg0, arg1() {
                     _fun101861: for (var _fun101861_ip = 0;;) switch (_fun101861_ip) {
                         case 0:
                             var7 = arg1;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0[var4];
                 var7 = var15.bind(var3)(var5);
                 var6 = var7.useAnimatedStyle;
-                var5 = function() { // Original name: v, environment: var1
+                var5 = function() {
                     _fun101862: for (var _fun101862_ip = 0;;) switch (_fun101862_ip) {
                         case 0:
                             var0 = global;

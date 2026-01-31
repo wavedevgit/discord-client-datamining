@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
-    var3 = function(arg0, arg1) { // Original name: isGuildOwner, environment: var1
+    var3 = function arg0, arg1() {
         _fun16585: for (var _fun16585_ip = 0;;) switch (_fun16585_ip) {
             case 0:
                 var2 = arg1;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildRecordTypeTag = var6;
     var2.RESTRICTED_CONTENT_LEVELS = var5;
     var2.GUILD_DEFAULT_PROPERTY_VALUES = var4;
-    var4 = function(arg0, arg1) { // Original name: getGuildIconURL, environment: var1
+    var4 = function arg0, arg1() {
         _fun16586: for (var _fun16586_ip = 0;;) switch (_fun16586_ip) {
             case 0:
                 var5 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildIconURL = var4;
-    var4 = function(arg0, arg1) { // Original name: getGuildIconSource, environment: var1
+    var4 = function arg0, arg1() {
         _fun16587: for (var _fun16587_ip = 0;;) switch (_fun16587_ip) {
             case 0:
                 var3 = arguments[2];
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildIconSource = var4;
-    var4 = function(arg0) { // Original name: getGuildAcronym, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildAcronym = var4;
     var2.isGuildOwner = var3;
-    var3 = function(arg0, arg1) { // Original name: isGuildOwnerWithRequiredMfaLevel, environment: var1
+    var3 = function arg0, arg1() {
         _fun16590: for (var _fun16590_ip = 0;;) switch (_fun16590_ip) {
             case 0:
                 var4 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isGuildOwnerWithRequiredMfaLevel = var3;
-    var3 = function(arg0) { // Original name: isGuildLurker, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.joinedAt;
         var0 = null;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isGuildLurker = var3;
-    var3 = function(arg0) { // Original name: getGuildEveryoneRoleId, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getGuildEveryoneRoleId = var3;
-    var3 = function(arg0, arg1) { // Original name: updateJoinedAt, environment: var1
+    var3 = function arg0, arg1() {
         _fun16593: for (var _fun16593_ip = 0;;) switch (_fun16593_ip) {
             case 0:
                 var2 = arg1;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateJoinedAt = var3;
-    var1 = function(arg0) { // Original name: isGuildNSFW, environment: var1
+    var1 = function arg0() {
         _fun16594: for (var _fun16594_ip = 0;;) switch (_fun16594_ip) {
             case 0:
                 var2 = arg0;

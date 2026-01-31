@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = dependencyMap;
     var _closure1_slot0 = var20;
     var _closure1_slot1 = var21;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun41946: for (var _fun41946_ip = 0;;) switch (_fun41946_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun41948: for (var _fun41948_ip = 0;;) switch (_fun41948_ip) {
             case 0:
                 var3 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var21[var3];
     var3 = var20.bind(var0)(var3);
     var22 = var3.CurrencyCodes;
-    var18 = function(arg0, arg1, arg2) { // Original name: getPriceForCollectiblesProduct, environment: var1
+    var18 = function arg0, arg1, arg2() {
         _fun41949: for (var _fun41949_ip = 0;;) switch (_fun41949_ip) {
             case 0:
                 var1 = arg1;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var18;
-    var17 = function(arg0) { // Original name: getDefaultPriceSetAssignmentPurchaseType, environment: var1
+    var17 = function arg0() {
         _fun41950: for (var _fun41950_ip = 0;;) switch (_fun41950_ip) {
             case 0:
                 var1 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var17;
-    var16 = function(arg0) { // Original name: getBundleItemsPriceSum, environment: var1
+    var16 = function arg0() {
         _fun41951: for (var _fun41951_ip = 0;;) switch (_fun41951_ip) {
             case 0:
                 var1 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var16;
-    var15 = function(arg0, arg1) { // Original name: extractPriceByPurchaseTypes, environment: var1
+    var15 = function arg0, arg1() {
         _fun41953: for (var _fun41953_ip = 0;;) switch (_fun41953_ip) {
             case 0:
                 var0 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'discountPercentage': 4294967295
     };
     var _closure1_slot19 = var14;
-    var13 = function(arg0, arg1) { // Original name: getProductsFromCategories, environment: var1
+    var13 = function arg0, arg1() {
         _fun41954: for (var _fun41954_ip = 0;;) switch (_fun41954_ip) {
             case 0:
                 var4 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var13;
-    var12 = function(arg0, arg1) { // Original name: getItemRecordsFromPurchases, environment: var1
+    var12 = function arg0, arg1() {
         _fun41958: for (var _fun41958_ip = 0;;) switch (_fun41958_ip) {
             case 0:
                 var6 = arg0;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var12;
-    var11 = function(arg0, arg1) { // Original name: getItemRecordsFromCategories, environment: var1
+    var11 = function arg0, arg1() {
         _fun41959: for (var _fun41959_ip = 0;;) switch (_fun41959_ip) {
             case 0:
                 var1 = arg1;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var11;
-    var10 = function(arg0) { // Original name: getAvatarDecorationsFromPurchases, environment: var1
+    var10 = function arg0() {
         var3 = _closure1_slot21;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -868,7 +868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var10;
-    var9 = function(arg0) { // Original name: getAvatarDecorationsFromCategories, environment: var1
+    var9 = function arg0() {
         var3 = _closure1_slot22;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var9;
-    var8 = function(arg0) { // Original name: getProfileEffectsFromPurchases, environment: var1
+    var8 = function arg0() {
         var3 = _closure1_slot21;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -898,7 +898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var8;
-    var7 = function(arg0) { // Original name: getProfileEffectsFromCategories, environment: var1
+    var7 = function arg0() {
         var3 = _closure1_slot22;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var7;
-    var6 = function(arg0) { // Original name: getNameplatesFromPurchases, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot21;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -928,7 +928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var6;
-    var5 = function(arg0) { // Original name: getNameplatesFromCategories, environment: var1
+    var5 = function arg0() {
         var3 = _closure1_slot22;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -943,7 +943,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var5;
-    var4 = function(arg0) { // Original name: getDaysRemaining, environment: var1
+    var4 = function arg0() {
         var7 = arg0;
         var1 = global;
         var0 = var1.Date;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var4;
-    var3 = function(arg0) { // Original name: isBundleProduct, environment: var1
+    var3 = function arg0() {
         _fun41967: for (var _fun41967_ip = 0;;) switch (_fun41967_ip) {
             case 0:
                 var0 = arg0;
@@ -1018,7 +1018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var22 = var22.EGP;
     var19[2] = var22;
     var _closure1_slot31 = var19;
-    var19 = function(arg0) { // Original name: fillRecommendedGiftSkuIdsIfNeeded, environment: var1
+    var19 = function arg0() {
         _fun41968: for (var _fun41968_ip = 0;;) switch (_fun41968_ip) {
             case 0:
                 var2 = arg0;

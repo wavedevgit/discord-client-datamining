@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: GuildDirectoryEditDescription, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var11 = var1.entry;
         var _closure2_slot0 = var11;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
@@ -193,12 +193,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.close;
         var4 = var5.bind(var6)(var4);
         var1.headerLeft = var4;
-        var4 = function() { // Original name: headerTitle, environment: var3
+        var4 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var4;
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot7;
             var2 = _closure1_slot11;
             var1 = {};
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryEditDescriptionModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildDirectoryEditDescriptionModal, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot0;
         var2 = _closure1_slot3;

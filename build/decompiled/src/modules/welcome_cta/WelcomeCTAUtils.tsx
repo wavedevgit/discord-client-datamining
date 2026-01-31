@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/welcome_cta/WelcomeCTAUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: pickHelloSticker, environment: var1
+    var3 = function() {
         _fun55497: for (var _fun55497_ip = 0;;) switch (_fun55497_ip) {
             case 0:
                 var2 = _closure1_slot2;

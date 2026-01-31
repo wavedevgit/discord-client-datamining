@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: RequestToSpeakParticipant, environment: var1
+    var0 = function arg0() {
         _fun67745: for (var _fun67745_ip = 0;;) switch (_fun67745_ip) {
             case 0:
                 var0 = arg0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var15.bind(var3)(var4);
                 var5 = var4.PressableOpacity;
                 var4 = {};
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 8;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/RequestToSpeakParticipantList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RequestToSpeakParticipantList, environment: var1
+    var1 = function arg0() {
         _fun67747: for (var _fun67747_ip = 0;;) switch (_fun67747_ip) {
             case 0:
                 var1 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var6 = 64;
                 var0.itemSize = var6;
-                var5 = function(arg0, arg1) { // Original name: renderItem, environment: var5
+                var5 = function arg0, arg1() {
                     _fun67748: for (var _fun67748_ip = 0;;) switch (_fun67748_ip) {
                         case 0:
                             var3 = _closure2_slot2;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3.participant = var0;
                             var6 = _closure2_slot0;
                             var3.channel = var6;
-                            var6 = function() { // Original name: onGrantRequest, environment: var2
+                            var6 = function() {
                                 var1 = _closure3_slot0;
                                 var3 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var3.onGrantRequest = var6;
-                            var2 = function() { // Original name: onDenyRequest, environment: var2
+                            var2 = function() {
                                 var1 = _closure3_slot0;
                                 var3 = _closure1_slot0;
                                 var2 = _closure1_slot2;

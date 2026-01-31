@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun27468: for (var _fun27468_ip = 0;;) switch (_fun27468_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: computeTheme, environment: var3
+    var0 = function() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var1 = 12;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var8 = function() { // Original name: handleThemeChange, environment: var3
+    var8 = function() {
         _fun27472: for (var _fun27472_ip = 0;;) switch (_fun27472_ip) {
             case 0:
                 var0 = _closure1_slot20;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ThemeStore, environment: var5
+        var3 = function() {
             _fun27474: for (var _fun27474_ip = 0;;) switch (_fun27474_ip) {
                 case 0:
                     var3 = this;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun27475: for (var _fun27475_ip = 0;;) switch (_fun27475_ip) {
                 case 0:
                     var1 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = this;
             var1 = var1.theme;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'theme';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'systemTheme';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'themePreferenceForSystemTheme';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot16;
             var0 = arg0;
             var0 = var1[var0];
@@ -398,14 +398,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var6.bind(var0)(var1);
     var1 = {};
     var1.CACHE_LOADED = var8;
-    var9 = function() { // Original name: handleConnectionOpen, environment: var3
+    var9 = function() {
         var1 = _closure1_slot21;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var1.CONNECTION_OPEN = var9;
-    var9 = function(arg0) { // Original name: handleLogOut, environment: var3
+    var9 = function arg0() {
         _fun27483: for (var _fun27483_ip = 0;;) switch (_fun27483_ip) {
             case 0:
                 var0 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.UNSYNCED_USER_SETTINGS_UPDATE = var8;
     var1.USER_SETTINGS_PROTO_UPDATE = var8;
     var1.RESET_PREVIEW_CLIENT_THEME = var8;
-    var8 = function(arg0) { // Original name: handleSystemThemeChange, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.systemTheme;
         _closure1_slot17 = var1;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SYSTEM_THEME_CHANGE = var8;
-    var8 = function() { // Original name: handleDarkSidebarToggle, environment: var3
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 15;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ACCESSIBILITY_DARK_SIDEBAR_TOGGLE = var8;
-    var8 = function(arg0) { // Original name: handleUpdateThemePreferences, environment: var3
+    var8 = function arg0() {
         var1 = {};
         var3 = _closure1_slot16;
         var4 = var1;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPDATE_THEME_PREFERENCES = var8;
-    var8 = function(arg0) { // Original name: handleSetThemeOverride, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.theme;
         var1 = _closure1_slot21;
@@ -478,14 +478,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SET_THEME_OVERRIDE = var8;
-    var8 = function() { // Original name: handleClearThemeOverride, environment: var3
+    var8 = function() {
         var1 = _closure1_slot21;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var1.CLEAR_THEME_OVERRIDE = var8;
-    var3 = function() { // Original name: handleRefresh, environment: var3
+    var3 = function() {
         var1 = _closure1_slot21;
         var0 = undefined;
         var0 = var1.bind(var0)();

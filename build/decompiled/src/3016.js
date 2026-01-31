@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24378: for (var _fun24378_ip = 0;;) switch (_fun24378_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: _, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};
@@ -41,14 +41,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.longDateFormat = var4;
                 var4 = /午前|午後/i;
                 var1.meridiemParse = var4;
-                var4 = function(arg0) { // Original name: isPM, environment: var0
+                var4 = function arg0() {
                     var1 = '午後';
                     var0 = arg0;
                     var0 = var1 === var0;
                     return var0;
                 };
                 var1.isPM = var4;
-                var4 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var0
+                var4 = function arg0, arg1, arg2() {
                     _fun24381: for (var _fun24381_ip = 0;;) switch (_fun24381_ip) {
                         case 0:
                             var1 = arg0;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'lastWeek': null,
                     'sameElse': 'L'
                 };
-                var5 = function(arg0) { // Original name: nextWeek, environment: var0
+                var5 = function arg0() {
                     _fun24382: for (var _fun24382_ip = 0;;) switch (_fun24382_ip) {
                         case 0:
                             var1 = arg0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var4.nextWeek = var5;
-                var5 = function(arg0) { // Original name: lastWeek, environment: var0
+                var5 = function arg0() {
                     _fun24383: for (var _fun24383_ip = 0;;) switch (_fun24383_ip) {
                         case 0:
                             var2 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.calendar = var4;
                 var4 = /\d{1,2}日/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function(arg0, arg1) { // Original name: ordinal, environment: var0
+                var0 = function arg0, arg1() {
                     _fun24384: for (var _fun24384_ip = 0;;) switch (_fun24384_ip) {
                         case 0:
                             var1 = arg0;

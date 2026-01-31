@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: InviteDestinationIcon, environment: var1
+    var0 = function arg0() {
         _fun80217: for (var _fun80217_ip = 0;;) switch (_fun80217_ip) {
             case 0:
                 var0 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: InviteHeader, environment: var1
+    var0 = function arg0() {
         _fun80218: for (var _fun80218_ip = 0;;) switch (_fun80218_ip) {
             case 0:
                 var0 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: InviteJoinContext, environment: var1
+    var0 = function arg0() {
         _fun80219: for (var _fun80219_ip = 0;;) switch (_fun80219_ip) {
             case 0:
                 var1 = arg0;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: InviteMemberCounts, environment: var1
+    var0 = function arg0() {
         _fun80221: for (var _fun80221_ip = 0;;) switch (_fun80221_ip) {
             case 0:
                 var0 = arg0;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: InviteUsername, environment: var1
+    var0 = function arg0() {
         _fun80222: for (var _fun80222_ip = 0;;) switch (_fun80222_ip) {
             case 0:
                 var0 = arg0;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: InviteButtonText, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.style;
         var _closure2_slot0 = var7;
@@ -919,7 +919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.t;
         var5 = var4["9sWQNT"];
         var4 = {};
-        var8 = function(arg0, arg1) { // Original name: usernameHook, environment: var8
+        var8 = function arg0, arg1() {
             var4 = _closure1_slot11;
             var3 = _closure1_slot23;
             var2 = {};
@@ -1168,7 +1168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.embedDetailsCard = var10;
     var3 = var6.bind(var9)(var3);
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: getMemberCountFromInvite, environment: var1
+    var3 = function arg0() {
         _fun80225: for (var _fun80225_ip = 0;;) switch (_fun80225_ip) {
             case 0:
                 var2 = arg0;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0, arg1) { // Original name: isAlreadyMember, environment: var1
+    var3 = function arg0, arg1() {
         _fun80226: for (var _fun80226_ip = 0;;) switch (_fun80226_ip) {
             case 0:
                 var0 = arg1;
@@ -1235,7 +1235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0, arg1) { // Original name: shouldShowInviter, environment: var1
+    var3 = function arg0, arg1() {
         _fun80227: for (var _fun80227_ip = 0;;) switch (_fun80227_ip) {
             case 0:
                 var4 = arg0;
@@ -1300,7 +1300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/modals/InviteDetails.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InviteDetails, environment: var1
+    var1 = function arg0() {
         _fun80228: for (var _fun80228_ip = 0;;) switch (_fun80228_ip) {
             case 0:
                 var1 = arg0;
@@ -1579,7 +1579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = true;
                 var7.redesignEnabled = var6;
                 var7.isAlreadyMember = var15;
-                var6 = function(arg0) { // Original name: renderInviteButtonText, environment: var14
+                var6 = function arg0() {
                     _fun80233: for (var _fun80233_ip = 0;;) switch (_fun80233_ip) {
                         case 0:
                             var3 = arg0;
@@ -1654,7 +1654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.t;
                             var3 = var2["9sWQNT"];
                             var2 = {};
-                            var6 = function() { // Original name: usernameHook, environment: var6
+                            var6 = function() {
                                 _fun80234: for (var _fun80234_ip = 0;;) switch (_fun80234_ip) {
                                     case 0:
                                         var2 = _closure3_slot0;
@@ -1767,7 +1767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var8.icon = var19;
                 var8.text = var18;
-                var18 = function() { // Original name: handleAcceptInvitePress, environment: var14
+                var18 = function() {
                     var3 = _closure2_slot3;
                     var0 = _closure1_slot18;
                     var2 = var0.ACCEPT;
@@ -1820,7 +1820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var17.bind(var18)(var16);
             case 1156:
                 var9.text = var15;
-                var14 = function() { // Original name: handleCancelPress, environment: var14
+                var14 = function() {
                     _fun80231: for (var _fun80231_ip = 0;;) switch (_fun80231_ip) {
                         case 0:
                             var4 = _closure2_slot3;

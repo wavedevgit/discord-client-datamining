@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1, arg2) { // Original name: computeAllowNsfw, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun63909: for (var _fun63909_ip = 0;;) switch (_fun63909_ip) {
             case 0:
                 var3 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: computePermissions, environment: var3
+    var0 = function arg0, arg1() {
         _fun63910: for (var _fun63910_ip = 0;;) switch (_fun63910_ip) {
             case 0:
                 var6 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var1 = function(arg0) { // Original name: getContextGuildId, environment: var3
+    var1 = function arg0() {
         _fun63911: for (var _fun63911_ip = 0;;) switch (_fun63911_ip) {
             case 0:
                 var1 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/application_commands/CommandPermissionContext.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: buildPermissionContext, environment: var3
+    var4 = function arg0, arg1() {
         _fun63912: for (var _fun63912_ip = 0;;) switch (_fun63912_ip) {
             case 0:
                 var11 = arg0;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.buildPermissionContext = var4;
-    var4 = function(arg0, arg1) { // Original name: usePermissionContext, environment: var3
+    var4 = function arg0, arg1() {
         _fun63913: for (var _fun63913_ip = 0;;) switch (_fun63913_ip) {
             case 0:
                 var4 = arg0;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.usePermissionContext = var4;
-    var3 = function(arg0, arg1) { // Original name: computeCommandContextType, environment: var3
+    var3 = function arg0, arg1() {
         _fun63920: for (var _fun63920_ip = 0;;) switch (_fun63920_ip) {
             case 0:
                 var5 = arg0;

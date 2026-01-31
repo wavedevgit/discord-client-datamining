@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun111087: for (var _fun111087_ip = 0;;) switch (_fun111087_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun111089: for (var _fun111089_ip = 0;;) switch (_fun111089_ip) {
             case 0:
                 var3 = arg0;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot18 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelHeaderSpeaker, environment: var1
+    var1 = function arg0() {
         _fun111091: for (var _fun111091_ip = 0;;) switch (_fun111091_ip) {
             case 0:
                 var0 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot14 = var2;
                 var _closure2_slot15 = var2;
                 var _closure2_slot16 = var2;
-                var1 = function(arg0) { // Original name: renderButton, environment: var4
+                var1 = function arg0() {
                     _fun111092: for (var _fun111092_ip = 0;;) switch (_fun111092_ip) {
                         case 0:
                             var2 = arg0;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.iconSource = var7;
                             var7 = false;
                             var4.showIconFirst = var7;
-                            var7 = function() { // Original name: action, environment: var3
+                            var7 = function() {
                                 _fun111099: for (var _fun111099_ip = 0;;) switch (_fun111099_ip) {
                                     case 0:
                                         var0 = _closure1_slot6;
@@ -848,7 +848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.iconSource = var7;
                             var7 = false;
                             var4.showIconFirst = var7;
-                            var7 = function() { // Original name: action, environment: var3
+                            var7 = function() {
                                 _fun111100: for (var _fun111100_ip = 0;;) switch (_fun111100_ip) {
                                     case 0:
                                         var0 = _closure1_slot6;
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.iconSource = var7;
                             var7 = false;
                             var4.showIconFirst = var7;
-                            var7 = function() { // Original name: action, environment: var3
+                            var7 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 20;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var4.action = var7;
                             var4 = var5.bind(var1)(var4);
-                            var5 = function(arg0) { // Original name: _loop, environment: var3
+                            var5 = function arg0() {
                                 _fun111102: for (var _fun111102_ip = 0;;) switch (_fun111102_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0.iconSource = var6;
                                         var6 = false;
                                         var0.showIconFirst = var6;
-                                        var6 = function() { // Original name: action, environment: var3
+                                        var6 = function() {
                                             _fun111103: for (var _fun111103_ip = 0;;) switch (_fun111103_ip) {
                                                 case 0:
                                                     var3 = _closure1_slot11;
@@ -1011,7 +1011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0.iconSource = var4;
                                         var4 = false;
                                         var0.showIconFirst = var4;
-                                        var3 = function() { // Original name: action, environment: var3
+                                        var3 = function() {
                                             _fun111104: for (var _fun111104_ip = 0;;) switch (_fun111104_ip) {
                                                 case 0:
                                                     var3 = _closure1_slot11;

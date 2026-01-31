@@ -11,17 +11,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
     var1 = {};
-    var3 = function() { // Original name: init, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.init = var3;
-    var3 = function() { // Original name: donateSentMessage, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.donateSentMessage = var3;
-    var0 = function() { // Original name: deleteAllInteractions, environment: var0
+    var0 = function() {
         var0 = undefined;
         return var0;
     };

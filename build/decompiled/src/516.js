@@ -46,9 +46,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun6586_ip = 170;
             continue _fun6586;
         case 165:
-            var2 = function() { // Original name: getSideChannelWeakMap, environment: var1
+            var2 = function() {
                 var0 = {};
-                var2 = function(arg0) { // Original name: assert, environment: var1
+                var2 = function arg0() {
                     _fun6588: for (var _fun6588_ip = 0;;) switch (_fun6588_ip) {
                         case 0:
                             var3 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.assert = var2;
-                var2 = function(arg0) { // Original name: _delete, environment: var1
+                var2 = function arg0() {
                     _fun6589: for (var _fun6589_ip = 0;;) switch (_fun6589_ip) {
                         case 0:
                             var3 = arg0;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.delete = var2;
-                var2 = function(arg0) { // Original name: get, environment: var1
+                var2 = function arg0() {
                     _fun6590: for (var _fun6590_ip = 0;;) switch (_fun6590_ip) {
                         case 0:
                             var4 = arg0;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.get = var2;
-                var2 = function(arg0) { // Original name: has, environment: var1
+                var2 = function arg0() {
                     _fun6591: for (var _fun6591_ip = 0;;) switch (_fun6591_ip) {
                         case 0:
                             var4 = arg0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.has = var2;
-                var2 = function(arg0, arg1) { // Original name: set, environment: var1
+                var2 = function arg0, arg1() {
                     _fun6592: for (var _fun6592_ip = 0;;) switch (_fun6592_ip) {
                         case 0:
                             var4 = arg0;

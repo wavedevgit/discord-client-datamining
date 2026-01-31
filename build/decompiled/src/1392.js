@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = 'Object.prototype.toString';
             var1 = var2.bind(var0)(var1);
             var _closure1_slot1 = var1;
-            var1 = function(arg0) { // Original name: isArguments, environment: var3
+            var1 = function arg0() {
                 _fun16386: for (var _fun16386_ip = 0;;) switch (_fun16386_ip) {
                     case 0:
                         var3 = arg0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot2 = var1;
-            var2 = function(arg0) { // Original name: isArguments, environment: var3
+            var2 = function arg0() {
                 _fun16387: for (var _fun16387_ip = 0;;) switch (_fun16387_ip) {
                     case 0:
                         var2 = arg0;

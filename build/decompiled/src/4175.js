@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: getImageWidth, environment: var2
+    var0 = function arg0, arg1() {
         _fun38325: for (var _fun38325_ip = 0;;) switch (_fun38325_ip) {
             case 0:
                 var3 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1) { // Original name: getImageHeight, environment: var2
+    var0 = function arg0, arg1() {
         _fun38326: for (var _fun38326_ip = 0;;) switch (_fun38326_ip) {
             case 0:
                 var3 = arg0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: getBitDepth, environment: var2
+    var0 = function arg0, arg1() {
         _fun38327: for (var _fun38327_ip = 0;;) switch (_fun38327_ip) {
             case 0:
                 var3 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: getColorType, environment: var2
+    var0 = function arg0, arg1() {
         _fun38328: for (var _fun38328_ip = 0;;) switch (_fun38328_ip) {
             case 0:
                 var3 = arg0;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: getCompression, environment: var2
+    var0 = function arg0, arg1() {
         _fun38329: for (var _fun38329_ip = 0;;) switch (_fun38329_ip) {
             case 0:
                 var4 = arg0;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: getFilter, environment: var2
+    var0 = function arg0, arg1() {
         _fun38330: for (var _fun38330_ip = 0;;) switch (_fun38330_ip) {
             case 0:
                 var4 = arg0;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: getInterlace, environment: var2
+    var0 = function arg0, arg1() {
         _fun38331: for (var _fun38331_ip = 0;;) switch (_fun38331_ip) {
             case 0:
                 var3 = arg0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0, arg1) { // Original name: read, environment: var2
+    var2 = function arg0, arg1() {
         var4 = arg0;
         var3 = arg1;
         var0 = {};

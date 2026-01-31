@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var7;
-    var0 = function(arg0) { // Original name: ApplicationStatusNotice, environment: var4
+    var0 = function arg0() {
         _fun116343: for (var _fun116343_ip = 0;;) switch (_fun116343_ip) {
             case 0:
                 var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var3 = function(arg0) { // Original name: SectionContainer, environment: var4
+    var3 = function arg0() {
         _fun116344: for (var _fun116344_ip = 0;;) switch (_fun116344_ip) {
             case 0:
                 var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var3;
-    var0 = function(arg0) { // Original name: StartEarningButton, environment: var4
+    var0 = function arg0() {
         _fun116345: for (var _fun116345_ip = 0;;) switch (_fun116345_ip) {
             case 0:
                 var0 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = {};
                     var5 = _closure2_slot2;
                     var0.eligibility = var5;
-                    var5 = function() { // Original name: onRequireModeratorMFAClick, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot5;
                         var1 = var2.push;
                         var0 = _closure1_slot9;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.children = var11;
                 var4 = var7.bind(var3)(var6, var4);
                 var0.label = var4;
-                var4 = function() { // Original name: onPress, environment: var9
+                var4 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = !var0;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.NL5ZNS;
                 var10 = var11.bind(var13)(var10);
                 var5.text = var10;
-                var9 = function() { // Original name: renderIcon, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot11;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot3;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var1 = function(arg0) { // Original name: MarketingSections, environment: var4
+    var1 = function arg0() {
         _fun116351: for (var _fun116351_ip = 0;;) switch (_fun116351_ip) {
             case 0:
                 var0 = arg0;
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_role_subscriptions/native/guild_settings/welcome/GuildSettingsRoleSubscriptionWelcomeView.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionWelcomeView, environment: var4
+    var4 = function arg0() {
         _fun116353: for (var _fun116353_ip = 0;;) switch (_fun116353_ip) {
             case 0:
                 var0 = arg0;

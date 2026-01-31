@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: useHandleBuyNow, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.product;
         var _closure2_slot0 = var6;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = undefined;
         var _closure2_slot3 = var9;
         var _closure2_slot4 = var9;
-        var0 = function() { // Original name: _onPurchaseComplete, environment: var2
+        var0 = function() {
             var3 = undefined;
             var0 = undefined;
             var2 = _closure1_slot3;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.product = var6;
         var0.analyticsLocations = var8;
-        var8 = function() { // Original name: onPurchaseComplete, environment: var2
+        var8 = function() {
             var0 = undefined;
             var3 = _closure2_slot6;
             var2 = var3.apply;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onPurchaseComplete = var8;
-        var8 = function() { // Original name: onPurchaseError, environment: var2
+        var8 = function() {
             var2 = _closure2_slot3;
             var0 = undefined;
             var1 = false;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onPurchaseError = var8;
-        var8 = function() { // Original name: onPurchasePending, environment: var2
+        var8 = function() {
             var0 = undefined;
             return var0;
         };

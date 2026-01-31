@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: ActivityPanelContainer, environment: var1
+    var1 = function() {
         _fun110258: for (var _fun110258_ip = 0;;) switch (_fun110258_ip) {
             case 0:
                 var2 = _closure1_slot0;

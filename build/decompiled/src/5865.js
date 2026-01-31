@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.reverse;
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: reverse, environment: var0
+    var1 = function arg0() {
         _fun51716: for (var _fun51716_ip = 0;;) switch (_fun51716_ip) {
             case 0:
                 var3 = arg0;

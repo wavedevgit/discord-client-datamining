@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: GuildProductAttachmentUploadTarget, environment: var4
+        var2 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getCreateAttachmentURL';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var2 = _closure1_slot5;
             var1 = var2.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD;
             var0 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getDeleteUploadURL';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var2 = _closure1_slot5;
             var1 = var2.MESSAGE_DELETE_UPLOAD;
             var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMaxFileSize';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = _closure1_slot3;
             return var0;
         };
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMaxAttachmentsCount';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = _closure1_slot2;
             return var0;
         };
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMaxTotalAttachmentSize';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = _closure1_slot4;
             return var0;
         };
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'shouldReactNativeCompressUploads';
         var0.key = var5;
-        var4 = function() { // Original name: get, environment: var4
+        var4 = function() {
             var0 = false;
             return var0;
         };

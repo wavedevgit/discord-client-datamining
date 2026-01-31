@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/SafetyFlowsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SafetyFlowsModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var3 = var0.task;
         var8 = var0.initialScreen;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 1;
         var2 = var4[var2];
         var _closure2_slot1 = var2;
-        var2 = function() { // Original name: useScreens, environment: var1
+        var2 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 3;
@@ -73,14 +73,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.SafetyFlowScreens;
                 var7 = var6.OVERVIEW;
                 var6 = {};
-                var8 = function() { // Original name: headerLeft, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerLeft = var8;
                 var8 = false;
                 var6.headerShown = var8;
-                var8 = function() { // Original name: render, environment: var3
+                var8 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -99,17 +99,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.SafetyFlowScreens;
                 var7 = var6.ENTER_EMAIL;
                 var6 = {};
-                var8 = function() { // Original name: headerLeft, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerLeft = var8;
-                var8 = function() { // Original name: headerTitle, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerTitle = var8;
-                var8 = function() { // Original name: render, environment: var3
+                var8 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -134,12 +134,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.getHeaderBackButton;
                 var8 = var8.bind(var9)();
                 var6.headerLeft = var8;
-                var8 = function() { // Original name: headerTitle, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerTitle = var8;
-                var8 = function() { // Original name: render, environment: var3
+                var8 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -158,17 +158,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.SafetyFlowScreens;
                 var7 = var6.UPDATE_APP;
                 var6 = {};
-                var8 = function() { // Original name: headerLeft, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerLeft = var8;
-                var8 = function() { // Original name: headerTitle, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerTitle = var8;
-                var8 = function() { // Original name: render, environment: var3
+                var8 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -187,17 +187,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.SafetyFlowScreens;
                 var7 = var6.AGE_VERIFICATION;
                 var6 = {};
-                var8 = function() { // Original name: headerLeft, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerLeft = var8;
-                var8 = function() { // Original name: headerTitle, environment: var3
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
                 var6.headerTitle = var8;
-                var8 = function() { // Original name: render, environment: var3
+                var8 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -216,17 +216,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.SafetyFlowScreens;
                 var2 = var1.ERROR;
                 var1 = {};
-                var4 = function() { // Original name: headerLeft, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerLeft = var4;
-                var4 = function() { // Original name: headerTitle, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24450: for (var _fun24450_ip = 0;;) switch (_fun24450_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: t, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.longDateFormat = var4;
                 var4 = /凌晨|早上|上午|中午|下午|晚上/;
                 var1.meridiemParse = var4;
-                var4 = function(arg0, arg1) { // Original name: meridiemHour, environment: var0
+                var4 = function arg0, arg1() {
                     _fun24452: for (var _fun24452_ip = 0;;) switch (_fun24452_ip) {
                         case 0:
                             var3 = arg0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.meridiemHour = var4;
-                var4 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var0
+                var4 = function arg0, arg1, arg2() {
                     _fun24453: for (var _fun24453_ip = 0;;) switch (_fun24453_ip) {
                         case 0:
                             var1 = 100;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.calendar = var4;
                 var4 = /\d{1,2}(日|月|周)/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function(arg0, arg1) { // Original name: ordinal, environment: var0
+                var0 = function arg0, arg1() {
                     _fun24454: for (var _fun24454_ip = 0;;) switch (_fun24454_ip) {
                         case 0:
                             var1 = arg0;

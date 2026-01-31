@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun64338: for (var _fun64338_ip = 0;;) switch (_fun64338_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var8 = function() { // Original name: reset, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot9 = var0;
         var0 = {};
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ApplicationStreamPreviewStore, environment: var5
+        var3 = function() {
             _fun64343: for (var _fun64343_ip = 0;;) switch (_fun64343_ip) {
                 case 0:
                     var3 = this;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getPreviewURL';
         var4.key = var0;
-        var0 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var0 = function arg0, arg1, arg2() {
             _fun64344: for (var _fun64344_ip = 0;;) switch (_fun64344_ip) {
                 case 0:
                     var6 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetchPreview';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun64345: for (var _fun64345_ip = 0;;) switch (_fun64345_ip) {
                 case 0:
                     var5 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPreviewURLForStreamKey';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var4 = this;
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsPreviewLoading';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun64347: for (var _fun64347_ip = 0;;) switch (_fun64347_ip) {
                 case 0:
                     var4 = arg0;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var1.CONNECTION_OPEN = var8;
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleStreamPreviewFetch, environment: var3
+    var8 = function arg0() {
         _fun64348: for (var _fun64348_ip = 0;;) switch (_fun64348_ip) {
             case 0:
                 var0 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STREAM_PREVIEW_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleStreamPreviewFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.streamKey;
         var4 = var0.previewURL;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.STREAM_PREVIEW_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleStreamPreviewFetchFail, environment: var3
+    var8 = function arg0() {
         _fun64350: for (var _fun64350_ip = 0;;) switch (_fun64350_ip) {
             case 0:
                 var0 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STREAM_PREVIEW_FETCH_FAIL = var8;
-    var3 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var3
+    var3 = function arg0() {
         _fun64351: for (var _fun64351_ip = 0;;) switch (_fun64351_ip) {
             case 0:
                 var0 = arg0;

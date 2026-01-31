@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: ForYouFooter, environment: var1
+    var0 = function arg0() {
         _fun103201: for (var _fun103201_ip = 0;;) switch (_fun103201_ip) {
             case 0:
                 var0 = arg0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: getMessagePreviewIcon, environment: var1
+    var0 = function arg0() {
         _fun103202: for (var _fun103202_ip = 0;;) switch (_fun103202_ip) {
             case 0:
                 var2 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: Callout, environment: var1
+    var0 = function arg0() {
         _fun103203: for (var _fun103203_ip = 0;;) switch (_fun103203_ip) {
             case 0:
                 var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: ForYouMessagePreviewV2, environment: var1
+    var0 = function arg0() {
         _fun103204: for (var _fun103204_ip = 0;;) switch (_fun103204_ip) {
             case 0:
                 var1 = arg0;
@@ -753,7 +753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: ApplicationName, environment: var1
+    var0 = function arg0() {
         _fun103209: for (var _fun103209_ip = 0;;) switch (_fun103209_ip) {
             case 0:
                 var1 = arg0;
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: ScrollToTopRef, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.scrollRef;
         var3 = _closure1_slot0;
@@ -1491,7 +1491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var8.bind(var0)(var7);
                             var7 = var7.LightbulbIcon;
                             var3.IconComponent = var7;
-                            var7 = function() { // Original name: onPress, environment: var5
+                            var7 = function() {
                                 _fun103217: for (var _fun103217_ip = 0;;) switch (_fun103217_ip) {
                                     case 0: // try_start_0
                                         var2 = _closure1_slot0;
@@ -1581,7 +1581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var8.bind(var0)(var7);
                             var7 = var7.LightbulbIcon;
                             var3.IconComponent = var7;
-                            var7 = function() { // Original name: onPress, environment: var5
+                            var7 = function() {
                                 _fun103216: for (var _fun103216_ip = 0;;) switch (_fun103216_ip) {
                                     case 0:
                                         var0 = undefined;
@@ -1915,7 +1915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
                 var0.item = var20;
-                var2 = function(arg0) { // Original name: renderApplication, environment: var2
+                var2 = function arg0() {
                     var3 = _closure1_slot20;
                     var2 = _closure1_slot36;
                     var1 = {};
@@ -2203,7 +2203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var6)(var3);
     var _closure1_slot30 = var3;
-    var3 = function(arg0) { // Original name: extractKey, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.id;
         return var0;
@@ -2669,7 +2669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var6 = var16.container;
                 var0.style = var6;
-                var5 = function(arg0) { // Original name: onLayout, environment: var5
+                var5 = function arg0() {
                     var2 = _closure2_slot16;
                     var0 = arg0;
                     var0 = var0.nativeEvent;

@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/native/OAuth2AuthorizeModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OAuth2AuthorizeModal, environment: var1
+    var1 = function arg0() {
         _fun62162: for (var _fun62162_ip = 0;;) switch (_fun62162_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var14[var11];
                 var4 = var6.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: p, environment: var13
+                var1 = function() {
                     _fun62163: for (var _fun62163_ip = 0;;) switch (_fun62163_ip) {
                         case 0:
                             var0 = {};
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var17.bind(var18)(var15);
             case 351:
                 var5.accessibilityLabel = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     _fun62165: for (var _fun62165_ip = 0;;) switch (_fun62165_ip) {
                         case 0:
                             var0 = _closure2_slot0;

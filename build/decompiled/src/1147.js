@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = dependencyMap;
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var11;
-    var8 = function(arg0, arg1) { // Original name: addResolvedRoutesToParent, environment: var5
+    var8 = function arg0, arg1() {
         _fun12471: for (var _fun12471_ip = 0;;) switch (_fun12471_ip) {
             case 0:
                 var3 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot16 = var8;
-    var0 = function(arg0, arg1) { // Original name: shouldHandleNavigation, environment: var5
+    var0 = function arg0, arg1() {
         _fun12474: for (var _fun12474_ip = 0;;) switch (_fun12474_ip) {
             case 0:
                 var1 = arg0;
@@ -138,7 +138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot17 = var0;
-    var3 = function(arg0, arg1) { // Original name: processResolvedRoutes, environment: var5
+    var3 = function arg0, arg1() {
         _fun12475: for (var _fun12475_ip = 0;;) switch (_fun12475_ip) {
             case 0:
                 var4 = arg0;
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot18 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: updateNavigationSpan, environment: var5
+    var1 = function arg0, arg1, arg2() {
         _fun12477: for (var _fun12477_ip = 0;;) switch (_fun12477_ip) {
             case 0:
                 var5 = arg0;
@@ -429,7 +429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot19 = var1;
-    var0 = function(arg0) { // Original name: wrapPatchRoutesOnNavigation, environment: var5
+    var0 = function arg0() {
         _fun12478: for (var _fun12478_ip = 0;;) switch (_fun12478_ip) {
             case 0:
                 var0 = arg0;
@@ -695,7 +695,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var5 = var6.bind(var7)(var5);
                 var _closure2_slot1 = var5;
-                var1 = function(arg0) { // Original name: patchRoutesOnNavigation, environment: var1
+                var1 = function arg0() {
                     var0 = undefined;
                     var3 = _closure2_slot1;
                     var2 = var3.apply;
@@ -721,7 +721,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: createNavigationSpan, environment: var5
+    var0 = function arg0() {
         _fun12483: for (var _fun12483_ip = 0;;) switch (_fun12483_ip) {
             case 0:
                 var0 = arg0;
@@ -828,7 +828,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot21 = var0;
-    var4 = function(arg0) { // Original name: handleNavigation, environment: var5
+    var4 = function arg0() {
         _fun12485: for (var _fun12485_ip = 0;;) switch (_fun12485_ip) {
             case 0:
                 var0 = arg0;
@@ -1073,7 +1073,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot22 = var4;
-    var7 = function(arg0) { // Original name: addRoutesToAllRoutes, environment: var5
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.forEach;
         var0 = function(arg0) { // Environment: var0
@@ -1098,7 +1098,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot23 = var7;
-    var0 = function(arg0) { // Original name: getChildRoutesRecursively, environment: var5
+    var0 = function arg0() {
         _fun12489: for (var _fun12489_ip = 0;;) switch (_fun12489_ip) {
             case 0:
                 var2 = arg0;
@@ -1183,7 +1183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: updatePageloadTransaction, environment: var5
+    var0 = function arg0() {
         _fun12492: for (var _fun12492_ip = 0;;) switch (_fun12492_ip) {
             case 0:
                 var0 = arg0;
@@ -1302,7 +1302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: patchSpanEnd, environment: var5
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun12493: for (var _fun12493_ip = 0;;) switch (_fun12493_ip) {
             case 0:
                 var5 = arg0;
@@ -1347,7 +1347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind;
                 var2 = var2.bind(var3)(var5);
                 var _closure2_slot5 = var2;
-                var1 = function() { // Original name: patchedEnd, environment: var1
+                var1 = function() {
                     _fun12494: for (var _fun12494_ip = 0;;) switch (_fun12494_ip) {
                         case 0:
                             var3 = undefined;
@@ -1555,7 +1555,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: getActiveRootSpan, environment: var5
+    var0 = function() {
         _fun12495: for (var _fun12495_ip = 0;;) switch (_fun12495_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -1680,7 +1680,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.addResolvedRoutesToParent = var8;
     var2.addRoutesToAllRoutes = var7;
     var2.allRoutes = var6;
-    var6 = function(arg0, arg1) { // Original name: createReactRouterV6CompatibleTracingIntegration, environment: var5
+    var6 = function arg0, arg1() {
         _fun12496: for (var _fun12496_ip = 0;;) switch (_fun12496_ip) {
             case 0:
                 var3 = arg0;
@@ -1749,7 +1749,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.Object;
                 var2 = var3.assign;
                 var1 = {};
-                var5 = function(arg0) { // Original name: setup, environment: var0
+                var5 = function arg0() {
                     _fun12497: for (var _fun12497_ip = 0;;) switch (_fun12497_ip) {
                         case 0:
                             var3 = _closure2_slot1;
@@ -1788,7 +1788,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.setup = var5;
-                var0 = function(arg0) { // Original name: afterAllSetup, environment: var0
+                var0 = function arg0() {
                     _fun12498: for (var _fun12498_ip = 0;;) switch (_fun12498_ip) {
                         case 0:
                             var3 = arg0;
@@ -1879,7 +1879,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createReactRouterV6CompatibleTracingIntegration = var6;
-    var6 = function(arg0, arg1) { // Original name: createV6CompatibleWithSentryReactRouterRouting, environment: var5
+    var6 = function arg0, arg1() {
         _fun12499: for (var _fun12499_ip = 0;;) switch (_fun12499_ip) {
             case 0:
                 var3 = arg0;
@@ -1954,7 +1954,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 195:
                 return var3;
             case 197:
-                var0 = function(arg0) { // Original name: SentryRoutes, environment: var0
+                var0 = function arg0() {
                     var6 = arg0;
                     var _closure3_slot0 = var6;
                     var3 = _closure1_slot11;
@@ -2054,7 +2054,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createV6CompatibleWithSentryReactRouterRouting = var6;
-    var6 = function(arg0, arg1) { // Original name: createV6CompatibleWrapCreateBrowserRouter, environment: var5
+    var6 = function arg0, arg1() {
         _fun12502: for (var _fun12502_ip = 0;;) switch (_fun12502_ip) {
             case 0:
                 var2 = arg0;
@@ -2335,7 +2335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createV6CompatibleWrapCreateBrowserRouter = var6;
-    var6 = function(arg0, arg1) { // Original name: createV6CompatibleWrapCreateMemoryRouter, environment: var5
+    var6 = function arg0, arg1() {
         _fun12505: for (var _fun12505_ip = 0;;) switch (_fun12505_ip) {
             case 0:
                 var2 = arg0;
@@ -2701,7 +2701,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createV6CompatibleWrapCreateMemoryRouter = var6;
-    var5 = function(arg0, arg1) { // Original name: createV6CompatibleWrapUseRoutes, environment: var5
+    var5 = function arg0, arg1() {
         _fun12508: for (var _fun12508_ip = 0;;) switch (_fun12508_ip) {
             case 0:
                 var1 = arg0;
@@ -2756,7 +2756,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 120:
                 return var1;
             case 122:
-                var1 = function(arg0) { // Original name: SentryRoutes, environment: var0
+                var1 = function arg0() {
                     _fun12509: for (var _fun12509_ip = 0;;) switch (_fun12509_ip) {
                         case 0:
                             var0 = arg0;

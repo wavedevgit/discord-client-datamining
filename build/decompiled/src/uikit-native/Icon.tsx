@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var8;
-    var3 = function(arg0) { // Original name: getIconSize, environment: var5
+    var3 = function arg0() {
         _fun37396: for (var _fun37396_ip = 0;;) switch (_fun37396_ip) {
             case 0:
                 var1 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: getIconStyle, environment: var5
+    var1 = function arg0() {
         var2 = _closure1_slot6;
         var1 = undefined;
         var0 = arg0;

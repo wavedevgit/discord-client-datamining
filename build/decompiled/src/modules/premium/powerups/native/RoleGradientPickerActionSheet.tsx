@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/RoleGradientPickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RoleGradientPickerActionSheet, environment: var1
+    var1 = function arg0() {
         _fun115984: for (var _fun115984_ip = 0;;) switch (_fun115984_ip) {
             case 0:
                 var0 = arg0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var4;
                         case 67:
                             var2.color = var1;
-                            var1 = function(arg0) { // Original name: onSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure2_slot4;
                                 var1 = {};
                                 var4 = _closure2_slot2;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var4;
                         case 67:
                             var2.color = var1;
-                            var1 = function(arg0) { // Original name: onSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure2_slot4;
                                 var1 = {};
                                 var4 = _closure2_slot2;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 121:
                             var6[1] = var7;
                             var1.style = var6;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot4;
                                 var1 = {};
                                 var5 = _closure2_slot2;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.yBZMsQ;
                 var11 = var12.bind(var13)(var11);
                 var8.text = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure1_slot7;
                     var0 = undefined;

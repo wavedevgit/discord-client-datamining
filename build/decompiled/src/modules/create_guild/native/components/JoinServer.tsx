@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/JoinServer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: JoinServerContainer, environment: var1
+    var1 = function arg0() {
         _fun80178: for (var _fun80178_ip = 0;;) switch (_fun80178_ip) {
             case 0:
                 var1 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 368:
                 var4.error = var8;
                 var4.submitting = var7;
-                var7 = function(arg0) { // Original name: onInviteChange, environment: var6
+                var7 = function arg0() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var1 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var4.onInviteChange = var7;
-                var6 = function() { // Original name: onDone, environment: var6
+                var6 = function() {
                     _fun80183: for (var _fun80183_ip = 0;;) switch (_fun80183_ip) {
                         case 0:
                             var2 = _closure2_slot3;

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/keyboard/native/useKeyboardDuration.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getKeyboardDuration, environment: var1
+    var1 = function() {
         _fun44400: for (var _fun44400_ip = 0;;) switch (_fun44400_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: getContainerStyles, environment: var3
+    var0 = function arg0() {
         _fun108420: for (var _fun108420_ip = 0;;) switch (_fun108420_ip) {
             case 0:
                 var2 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: getTextColor, environment: var3
+    var0 = function arg0() {
         _fun108421: for (var _fun108421_ip = 0;;) switch (_fun108421_ip) {
             case 0:
                 var2 = arg0;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/native/components/MessageBlock.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: MessageBlock, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.color;
         var6 = var0.children;

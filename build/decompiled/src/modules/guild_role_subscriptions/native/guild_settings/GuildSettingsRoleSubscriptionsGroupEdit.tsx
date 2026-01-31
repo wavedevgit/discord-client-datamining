@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionsGroupEditInner, environment: var1
+    var0 = function arg0() {
         _fun116563: for (var _fun116563_ip = 0;;) switch (_fun116563_ip) {
             case 0:
                 var1 = arg0;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsGroupEdit.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionsGroupEdit, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var3 = _closure1_slot9;

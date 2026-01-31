@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 'GuildRole';
     var2.GuildRoleRecordTypeTag = var3;
-    var3 = function(arg0) { // Original name: isEveryoneRole, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.id;
         var0 = var0.guildId;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isEveryoneRole = var3;
-    var3 = function(arg0, arg1) { // Original name: hasPermission, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hasPermission = var3;
-    var1 = function(arg0, arg1) { // Original name: hasAnyPermission, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

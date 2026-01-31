@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: centroidDimension, environment: var2
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun6069: for (var _fun6069_ip = 0;;) switch (_fun6069_ip) {
             case 0:
                 var1 = arg0;
@@ -220,7 +220,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.centroidDimension = var3;
-    var3 = function(arg0, arg1) { // Original name: currentCentroidXOfTouchesChangedAfter, environment: var2
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var3 = var4.centroidDimension;
         var8 = arg0;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.currentCentroidXOfTouchesChangedAfter = var3;
-    var3 = function(arg0, arg1) { // Original name: currentCentroidYOfTouchesChangedAfter, environment: var2
+    var3 = function arg0, arg1() {
         var5 = _closure1_slot0;
         var4 = var5.centroidDimension;
         var9 = arg0;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.currentCentroidYOfTouchesChangedAfter = var3;
-    var3 = function(arg0, arg1) { // Original name: previousCentroidXOfTouchesChangedAfter, environment: var2
+    var3 = function arg0, arg1() {
         var5 = _closure1_slot0;
         var4 = var5.centroidDimension;
         var9 = arg0;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.previousCentroidXOfTouchesChangedAfter = var3;
-    var3 = function(arg0, arg1) { // Original name: previousCentroidYOfTouchesChangedAfter, environment: var2
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var3 = var4.centroidDimension;
         var8 = arg0;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.previousCentroidYOfTouchesChangedAfter = var3;
-    var3 = function(arg0) { // Original name: currentCentroidX, environment: var2
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var3 = var4.centroidDimension;
         var8 = arg0;
@@ -280,7 +280,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.currentCentroidX = var3;
-    var3 = function(arg0) { // Original name: currentCentroidY, environment: var2
+    var3 = function arg0() {
         var5 = _closure1_slot0;
         var4 = var5.centroidDimension;
         var9 = arg0;

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0, arg1, arg2) { // Original name: sampleSpan, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun9140: for (var _fun9140_ip = 0;;) switch (_fun9140_ip) {
             case 0:
                 var1 = arg0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var7.Object;
                 var8 = var10.assign;
                 var7 = {};
-                var5 = function(arg0) { // Original name: inheritOrSampleWith, environment: var5
+                var5 = function arg0() {
                     _fun9141: for (var _fun9141_ip = 0;;) switch (_fun9141_ip) {
                         case 0:
                             var0 = arg0;

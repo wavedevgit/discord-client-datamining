@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: handleCacheActionPress, environment: var8
+    var0 = function arg0() {
         var7 = arg0;
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.open;
         var2 = {};
         var2.key = var7;
-        var8 = function() { // Original name: icon, environment: var8
+        var8 = function() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: CacheActionsActionSheet, environment: var8
+    var0 = function() {
         var3 = _closure1_slot5;
         var15 = _closure1_slot0;
         var16 = _closure1_slot2;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12.tgwiMO;
         var12 = var13.bind(var14)(var12);
         var8.label = var12;
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             var5 = _closure1_slot0;
             var6 = _closure1_slot2;
             var0 = 13;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var9 = function() { // Original name: useCacheActionsTitle, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.FileWarningIcon;
     var1.IconComponent = var9;
-    var9 = function() { // Original name: handleCacheActionsPress, environment: var8
+    var9 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 3;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onPress = var9;
-    var8 = function() { // Original name: useCacheActionsPredicate, environment: var8
+    var8 = function() {
         _fun85665: for (var _fun85665_ip = 0;;) switch (_fun85665_ip) {
             case 0:
                 var3 = _closure1_slot0;

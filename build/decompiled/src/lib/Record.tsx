@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
-        var3 = function() { // Original name: Record, environment: var4
+        var3 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'toJS';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = {};
             var2 = this;
             var3 = var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'set';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun18076: for (var _fun18076_ip = 0;;) switch (_fun18076_ip) {
                 case 0:
                     var5 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'merge';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun18077: for (var _fun18077_ip = 0;;) switch (_fun18077_ip) {
                 case 0:
                     var12 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'update';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun18078: for (var _fun18078_ip = 0;;) switch (_fun18078_ip) {
                 case 0:
                     var3 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: TypedRecord, environment: var4
+        var2 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'toJS';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = {};
             var2 = this;
             var3 = var0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'set';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var2 = this;
             var1 = var2.merge;
             var0 = {};
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'merge';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun18083: for (var _fun18083_ip = 0;;) switch (_fun18083_ip) {
                 case 0:
                     var9 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'update';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun18084: for (var _fun18084_ip = 0;;) switch (_fun18084_ip) {
                 case 0:
                     var3 = arg0;

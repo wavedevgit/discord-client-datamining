@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: VideoUploadQualityNitroUpsell, environment: var1
+    var0 = function() {
         _fun85004: for (var _fun85004_ip = 0;;) switch (_fun85004_ip) {
             case 0:
                 var9 = _closure1_slot0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.t;
                 var20 = var19.uW1zul;
                 var19 = {};
-                var23 = function() { // Original name: onClick, environment: var23
+                var23 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 17;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/chat/SettingsChatScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SettingsChatScreen, environment: var1
+    var1 = function arg0() {
         _fun85007: for (var _fun85007_ip = 0;;) switch (_fun85007_ip) {
             case 0:
                 var0 = arg0;

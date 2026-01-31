@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.createNavigatorFactory;
-    var1 = function(arg0) { // Original name: StackNavigator, environment: var1
+    var1 = function arg0() {
         _fun51000: for (var _fun51000_ip = 0;;) switch (_fun51000_ip) {
             case 0:
                 var4 = arg0;

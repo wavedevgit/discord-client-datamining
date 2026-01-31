@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaSenderFalsePositiveActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExplicitMediaObscuredFalsePositiveActionSheet, environment: var1
+    var1 = function arg0() {
         _fun61596: for (var _fun61596_ip = 0;;) switch (_fun61596_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.bind(var3)(var4);
                 var5 = var6.useExplicitMediaActions;
                 var4 = {};
-                var7 = function() { // Original name: onSuccess, environment: var1
+                var7 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 6;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var4.onSuccess = var7;
-                var7 = function() { // Original name: onError, environment: var1
+                var7 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 6;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var4.onError = var7;
-                var7 = function() { // Original name: report, environment: var1
+                var7 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 8;

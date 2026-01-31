@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.NativeModules;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: backspace, environment: var3
+    var6 = function arg0() {
         _fun89338: for (var _fun89338_ip = 0;;) switch (_fun89338_ip) {
             case 0:
                 var2 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.backspace = var6;
-    var6 = function(arg0) { // Original name: blur, environment: var3
+    var6 = function arg0() {
         _fun89339: for (var _fun89339_ip = 0;;) switch (_fun89339_ip) {
             case 0:
                 var2 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.blur = var6;
-    var6 = function(arg0) { // Original name: closeCustomKeyboard, environment: var3
+    var6 = function arg0() {
         _fun89340: for (var _fun89340_ip = 0;;) switch (_fun89340_ip) {
             case 0:
                 var4 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.closeCustomKeyboard = var6;
-    var6 = function(arg0, arg1) { // Original name: flushText, environment: var3
+    var6 = function arg0, arg1() {
         _fun89341: for (var _fun89341_ip = 0;;) switch (_fun89341_ip) {
             case 0:
                 var3 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.flushText = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: getText, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun89342: for (var _fun89342_ip = 0;;) switch (_fun89342_ip) {
             case 0:
                 var5 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getText = var6;
-    var6 = function(arg0) { // Original name: focus, environment: var3
+    var6 = function arg0() {
         _fun89344: for (var _fun89344_ip = 0;;) switch (_fun89344_ip) {
             case 0:
                 var2 = arg0;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.focus = var6;
-    var6 = function(arg0) { // Original name: openCustomKeyboard, environment: var3
+    var6 = function arg0() {
         _fun89345: for (var _fun89345_ip = 0;;) switch (_fun89345_ip) {
             case 0:
                 var2 = arg0;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openCustomKeyboard = var6;
-    var6 = function(arg0) { // Original name: openSystemKeyboard, environment: var3
+    var6 = function arg0() {
         _fun89346: for (var _fun89346_ip = 0;;) switch (_fun89346_ip) {
             case 0:
                 var2 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.openSystemKeyboard = var6;
-    var6 = function(arg0, arg1) { // Original name: setText, environment: var3
+    var6 = function arg0, arg1() {
         _fun89347: for (var _fun89347_ip = 0;;) switch (_fun89347_ip) {
             case 0:
                 var3 = arg0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setText = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: setSelectedRange, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun89348: for (var _fun89348_ip = 0;;) switch (_fun89348_ip) {
             case 0:
                 var4 = arg0;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setSelectedRange = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: updateTextBlocks, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun89349: for (var _fun89349_ip = 0;;) switch (_fun89349_ip) {
             case 0:
                 var4 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateTextBlocks = var6;
-    var3 = function(arg0, arg1) { // Original name: replaceRange, environment: var3
+    var3 = function arg0, arg1() {
         _fun89350: for (var _fun89350_ip = 0;;) switch (_fun89350_ip) {
             case 0:
                 var9 = arg0;

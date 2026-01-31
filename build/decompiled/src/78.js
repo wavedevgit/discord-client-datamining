@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3[var0];
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
-    var1 = function(arg0) { // Original name: processTransformOrigin, environment: var1
+    var1 = function arg0() {
         _fun1468: for (var _fun1468_ip = 0;;) switch (_fun1468_ip) {
             case 0:
                 var26 = arg0;

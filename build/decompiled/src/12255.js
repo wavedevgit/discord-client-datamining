@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var1 = var2.bind(var3)(var1);
     var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Original name: parseOptions, environment: var0
+    var1 = function arg0() {
         _fun94019: for (var _fun94019_ip = 0;;) switch (_fun94019_ip) {
             case 0:
                 var1 = arg0;

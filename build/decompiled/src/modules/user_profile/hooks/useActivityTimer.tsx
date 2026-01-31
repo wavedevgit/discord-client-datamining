@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var6;
     var3 = var3.useState;
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: pad, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var2 = var0.String;
         var1 = undefined;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/hooks/useActivityTimer.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useActivityTimer, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var13 = var0.start;
         var2 = var0.end;

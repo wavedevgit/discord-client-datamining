@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun89528: for (var _fun89528_ip = 0;;) switch (_fun89528_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: _getTypingUsers, environment: var3
+    var0 = function arg0() {
         _fun89531: for (var _fun89531_ip = 0;;) switch (_fun89531_ip) {
             case 0:
                 var2 = _closure1_slot14;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var10 = function(arg0) { // Original name: handleTypingStart, environment: var3
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var5 = var0.userId;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var4.clearTimeout;
         var4 = var2[var5];
         var4 = var6.bind(var0)(var4);
-        var4 = function(arg0, arg1) { // Original name: scheduleClear, environment: var4
+        var4 = function arg0, arg1() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = arg1;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var10;
-    var9 = function(arg0) { // Original name: handleTypingStop, environment: var3
+    var9 = function arg0() {
         _fun89535: for (var _fun89535_ip = 0;;) switch (_fun89535_ip) {
             case 0:
                 var0 = arg0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var9;
-    var8 = function() { // Original name: handleConnectionOpen, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot14 = var0;
         var0 = undefined;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: TypingStore, environment: var5
+        var3 = function() {
             _fun89538: for (var _fun89538_ip = 0;;) switch (_fun89538_ip) {
                 case 0:
                     var3 = this;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot8;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTypingUsers';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot17;
             var1 = undefined;
             var0 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isTyping';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             var2 = _closure1_slot17;
             var1 = undefined;
             var0 = arg0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var1.TYPING_START = var10;
     var1.TYPING_STOP = var9;
-    var9 = function(arg0) { // Original name: handleTypingStartLocal, environment: var3
+    var9 = function arg0() {
         _fun89542: for (var _fun89542_ip = 0;;) switch (_fun89542_ip) {
             case 0:
                 var0 = arg0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.TYPING_START_LOCAL = var9;
-    var9 = function(arg0) { // Original name: handleTypingStopLocal, environment: var3
+    var9 = function arg0() {
         _fun89545: for (var _fun89545_ip = 0;;) switch (_fun89545_ip) {
             case 0:
                 var0 = arg0;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.TYPING_STOP_LOCAL = var9;
     var1.CONNECTION_OPEN = var8;
     var1.OVERLAY_INITIALIZE = var8;
-    var3 = function(arg0) { // Original name: handleIncomingMessage, environment: var3
+    var3 = function arg0() {
         _fun89546: for (var _fun89546_ip = 0;;) switch (_fun89546_ip) {
             case 0:
                 var0 = arg0;

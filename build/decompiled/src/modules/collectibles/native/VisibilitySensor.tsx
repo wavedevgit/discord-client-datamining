@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/VisibilitySensor.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var6 = var1.children;
         var1 = var1.onChange;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var10 = var10.bind(var11)(var1, var2);
         var _closure2_slot6 = var10;
-        var1 = function() { // Original name: stopWatching, environment: var0
+        var1 = function() {
             _fun87430: for (var _fun87430_ip = 0;;) switch (_fun87430_ip) {
                 case 0:
                     var1 = _closure2_slot5;

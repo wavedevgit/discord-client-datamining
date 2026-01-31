@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/build_overrides/native/BuildOverrideModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BuildOverrideModal, environment: var1
+    var1 = function arg0() {
         _fun96233: for (var _fun96233_ip = 0;;) switch (_fun96233_ip) {
             case 0:
                 var0 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.text = var11;
                 var11 = var20.skipButton;
                 var8.style = var11;
-                var11 = function() { // Original name: onPress, environment: var16
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 17;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.v0MBqF;
                 var14 = var22.bind(var23)(var14);
                 var12.text = var14;
-                var14 = function() { // Original name: onPress, environment: var16
+                var14 = function() {
                     _fun96235: for (var _fun96235_ip = 0;;) switch (_fun96235_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.Looks;
                 var17 = var17.OUTLINED;
                 var13.look = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 17;

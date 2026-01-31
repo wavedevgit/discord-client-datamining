@@ -3,9 +3,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24334: for (var _fun24334_ip = 0;;) switch (_fun24334_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: t, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
-                var4 = function(arg0, arg1, arg2, arg3) { // Original name: processRelativeTime, environment: var0
+                var4 = function arg0, arg1, arg2, arg3() {
                     _fun24336: for (var _fun24336_ip = 0;;) switch (_fun24336_ip) {
                         case 0:
                             var3 = arg0;

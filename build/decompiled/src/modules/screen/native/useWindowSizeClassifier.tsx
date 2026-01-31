@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var0 = function(arg0) { // Original name: calculateFromWidth, environment: var1
+    var0 = function arg0() {
         _fun35236: for (var _fun35236_ip = 0;;) switch (_fun35236_ip) {
             case 0:
                 var1 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/screen/native/useWindowSizeClassifier.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: useWindowSizeClassifier, environment: var1
+    var4 = function() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.WindowSizeClassifier = var3;
-    var1 = function() { // Original name: getWindowSizeClassifier, environment: var1
+    var1 = function() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot0;
         var1 = _closure1_slot2;

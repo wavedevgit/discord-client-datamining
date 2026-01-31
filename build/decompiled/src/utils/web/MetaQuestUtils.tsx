@@ -19,12 +19,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/web/MetaQuestUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isMetaQuest, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isMetaQuest = var3;
-    var1 = function() { // Original name: isQuestRelease, environment: var1
+    var1 = function() {
         var0 = false;
         return var0;
     };

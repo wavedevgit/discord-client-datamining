@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24428: for (var _fun24428_ip = 0;;) switch (_fun24428_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: t, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};
@@ -42,14 +42,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.longDateFormat = var4;
                 var4 = /ก่อนเที่ยง|หลังเที่ยง/;
                 var1.meridiemParse = var4;
-                var4 = function(arg0) { // Original name: isPM, environment: var0
+                var4 = function arg0() {
                     var1 = 'หลังเที่ยง';
                     var0 = arg0;
                     var0 = var1 === var0;
                     return var0;
                 };
                 var1.isPM = var4;
-                var0 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var0
+                var0 = function arg0, arg1, arg2() {
                     _fun24431: for (var _fun24431_ip = 0;;) switch (_fun24431_ip) {
                         case 0:
                             var1 = arg0;

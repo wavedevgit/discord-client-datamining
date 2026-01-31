@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun75877: for (var _fun75877_ip = 0;;) switch (_fun75877_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun75879: for (var _fun75879_ip = 0;;) switch (_fun75879_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: getKeys, environment: var1
+    var0 = function() {
         var1 = _closure1_slot4;
         var0 = var1.getSavedMessages;
         var2 = var0.bind(var1)();
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/saved_messages/useSavedMessagesForPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useSavedMessagesForPage, environment: var1
+    var1 = function() {
         var6 = _closure1_slot3;
         var2 = var6.useState;
         var0 = _closure1_slot7;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var4;
         var5 = var6.useEffect;
         var4 = function() { // Environment: var3
-            var3 = function() { // Original name: handleChange, environment: var0
+            var3 = function() {
                 _fun75884: for (var _fun75884_ip = 0;;) switch (_fun75884_ip) {
                     case 0:
                         var2 = _closure1_slot4;

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: increment, environment: var2
+    var3 = function arg0() {
         _fun99661: for (var _fun99661_ip = 0;;) switch (_fun99661_ip) {
             case 0:
                 var0 = undefined;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.increment = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: distribution, environment: var2
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.distribution = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: set, environment: var2
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.set = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: gauge, environment: var2
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 0;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.gauge = var3;
-    var3 = function(arg0, arg1) { // Original name: timing, environment: var2
+    var3 = function arg0, arg1() {
         _fun99665: for (var _fun99665_ip = 0;;) switch (_fun99665_ip) {
             case 0:
                 var2 = undefined;
@@ -186,7 +186,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.timing = var3;
-    var2 = function(arg0) { // Original name: getMetricsAggregatorForClient, environment: var2
+    var2 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;

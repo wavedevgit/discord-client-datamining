@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var0 = function() { // Original name: _getPrimaryAppCommand, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var6 = function(arg0, arg1) { // Original name: queryForPrimaryAppCommand, environment: var3
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot7;
         var3 = var4.query;
         var2 = {};
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var6;
-    var5 = function(arg0, arg1) { // Original name: useGetPrimaryAppCommand, environment: var3
+    var5 = function arg0, arg1() {
         var7 = arg1;
         var _closure2_slot0 = var7;
         var4 = _closure1_slot13;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var5;
-    var4 = function(arg0, arg1) { // Original name: useQueryForPrimaryAppCommand, environment: var3
+    var4 = function arg0, arg1() {
         var4 = _closure1_slot6;
         var3 = {};
         var1 = _closure1_slot9;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var4;
-    var1 = function(arg0) { // Original name: isPrimaryAppCommandUsableInAppDM, environment: var3
+    var1 = function arg0() {
         _fun64091: for (var _fun64091_ip = 0;;) switch (_fun64091_ip) {
             case 0:
                 var2 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.fileFinishedImporting;
     var8 = 'modules/application_commands/getPrimaryAppCommand.tsx';
     var8 = var9.bind(var10)(var8);
-    var8 = function() { // Original name: getPrimaryAppCommand, environment: var3
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.queryForPrimaryAppCommand = var6;
     var2.useGetPrimaryAppCommand = var5;
     var2.useQueryForPrimaryAppCommand = var4;
-    var3 = function(arg0) { // Original name: useIsPrimaryAppCommandUsableInAppDM, environment: var3
+    var3 = function arg0() {
         _fun64093: for (var _fun64093_ip = 0;;) switch (_fun64093_ip) {
             case 0:
                 var0 = arg0;

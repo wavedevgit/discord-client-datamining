@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: isValidClipboardCode, environment: var1
+    var0 = function arg0() {
         _fun86367: for (var _fun86367_ip = 0;;) switch (_fun86367_ip) {
             case 0:
                 var2 = arg0;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: getFormattedExplainer, environment: var1
+    var0 = function arg0() {
         _fun86368: for (var _fun86368_ip = 0;;) switch (_fun86368_ip) {
             case 0:
                 var10 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/screens/BackupScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BackupScreen, environment: var1
+    var1 = function arg0() {
         _fun86369: for (var _fun86369_ip = 0;;) switch (_fun86369_ip) {
             case 0:
                 var0 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var23.bind(var3)(var22);
                 var22 = var22.BACKUP_CODE_MAX_LENGTH;
                 var18.maxLength = var22;
-                var22 = function(arg0) { // Original name: onChangeCode, environment: var16
+                var22 = function arg0() {
                     var3 = _closure2_slot3;
                     var0 = undefined;
                     var2 = arg0;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var14;
             case 718:
                 var4.loading = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var2 = _closure2_slot8;
                     var1 = _closure2_slot2;
                     var0 = undefined;

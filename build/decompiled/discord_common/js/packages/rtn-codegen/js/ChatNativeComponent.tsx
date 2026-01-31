@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var8)(var9, var1);
     var1 = {};
-    var8 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: scrollTo, environment: var5
+    var8 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.scrollTo = var8;
-    var8 = function(arg0, arg1) { // Original name: scrollToBottom, environment: var5
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.scrollToBottom = var8;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: scrollIntoView, environment: var5
+    var5 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

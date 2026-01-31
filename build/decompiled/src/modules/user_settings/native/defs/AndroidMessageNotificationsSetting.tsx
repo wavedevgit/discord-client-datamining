@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function() { // Original name: useAndroidMessageNotificationsSettingValue, environment: var11
+    var3 = function() {
         _fun85223: for (var _fun85223_ip = 0;;) switch (_fun85223_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function() { // Original name: useHasAndroidMessageNotificationsSetting, environment: var11
+    var1 = function() {
         _fun85224: for (var _fun85224_ip = 0;;) switch (_fun85224_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var6.bind(var0)(var4);
     var5 = var8.createToggle;
     var4 = {};
-    var11 = function() { // Original name: title, environment: var11
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 4;

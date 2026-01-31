@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = [800, 1800];
     var _closure1_slot2 = var2;
-    var3 = function(arg0) { // Original name: whenReady, environment: var0
+    var3 = function arg0() {
         _fun10809: for (var _fun10809_ip = 0;;) switch (_fun10809_ip) {
             case 0:
                 var4 = arg0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var3;
     var1.TTFBThresholds = var2;
-    var0 = function(arg0) { // Original name: onTTFB, environment: var0
+    var0 = function arg0() {
         _fun10812: for (var _fun10812_ip = 0;;) switch (_fun10812_ip) {
             case 0:
                 var0 = undefined;

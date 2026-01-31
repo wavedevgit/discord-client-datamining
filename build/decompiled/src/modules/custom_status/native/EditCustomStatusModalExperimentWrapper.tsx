@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/custom_status/native/EditCustomStatusModalExperimentWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditCustomStatusModalExperimentWrapper, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.location;
         var9 = var0.analyticsLocations;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var5.PwknJL;
                         var0 = var7.bind(var10)(var0);
                         var2.title = var0;
-                        var0 = function() { // Original name: headerTitle, environment: var3
+                        var0 = function() {
                             var3 = _closure1_slot4;
                             var7 = _closure1_slot0;
                             var8 = _closure1_slot2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var0.pop;
                         var0 = var11.bind(var12)(var0);
                         var2.headerLeft = var0;
-                        var0 = function(arg0, arg1) { // Original name: render, environment: var3
+                        var0 = function arg0, arg1() {
                             var3 = _closure1_slot4;
                             var5 = _closure1_slot1;
                             var6 = _closure1_slot2;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.Iuzg8R;
                         var5 = var7.bind(var10)(var5);
                         var2.title = var5;
-                        var5 = function() { // Original name: headerTitle, environment: var3
+                        var5 = function() {
                             var3 = _closure1_slot4;
                             var7 = _closure1_slot0;
                             var8 = _closure1_slot2;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.pop;
                         var4 = var5.bind(var6)(var4);
                         var2.headerLeft = var4;
-                        var3 = function(arg0, arg1) { // Original name: render, environment: var3
+                        var3 = function arg0, arg1() {
                             var3 = _closure1_slot4;
                             var5 = _closure1_slot1;
                             var6 = _closure1_slot2;

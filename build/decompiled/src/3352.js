@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun28929_ip = 76;
             continue _fun28929;
         case 71:
-            var1 = function(arg0) { // Original name: keys, environment: var0
+            var1 = function arg0() {
                 var2 = _closure1_slot3;
                 var1 = undefined;
                 var0 = arg0;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var2.Object;
             var2 = var2.keys;
             var _closure1_slot5 = var2;
-            var0 = function() { // Original name: shimObjectKeys, environment: var0
+            var0 = function() {
                 _fun28931: for (var _fun28931_ip = 0;;) switch (_fun28931_ip) {
                     case 0:
                         var0 = global;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     case 61:
                         var2 = var0.Object;
-                        var1 = function(arg0) { // Original name: keys, environment: var1
+                        var1 = function arg0() {
                             _fun28933: for (var _fun28933_ip = 0;;) switch (_fun28933_ip) {
                                 case 0:
                                     var5 = arg0;

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'lib/WindowVisibilityUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: isDiscordVisible, environment: var1
+    var1 = function() {
         _fun64491: for (var _fun64491_ip = 0;;) switch (_fun64491_ip) {
             case 0:
                 var2 = _closure1_slot2;

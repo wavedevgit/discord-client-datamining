@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/getItemSubtitleForMaxPlayers.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getItemSubtitleForMaxPlayers, environment: var1
+    var3 = function arg0() {
         _fun107961: for (var _fun107961_ip = 0;;) switch (_fun107961_ip) {
             case 0:
                 var5 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: getItemSubtitleForMaxPlayersShort, environment: var1
+    var3 = function arg0() {
         _fun107962: for (var _fun107962_ip = 0;;) switch (_fun107962_ip) {
             case 0:
                 var3 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getItemSubtitleForMaxPlayersShort = var3;
-    var1 = function(arg0) { // Original name: getItemSubtitleForMaxPlayersShorter, environment: var1
+    var1 = function arg0() {
         _fun107963: for (var _fun107963_ip = 0;;) switch (_fun107963_ip) {
             case 0:
                 var3 = arg0;

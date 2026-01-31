@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.jsxs;
     var _closure1_slot9 = var1;
     var3 = var5.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: ScreenStackItem, environment: var4
+    var1 = function arg0, arg1() {
         _fun37283: for (var _fun37283_ip = 0;;) switch (_fun37283_ip) {
             case 0:
                 var5 = arg0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'enabled': true,
                     'isNativeStack': true
                 };
-                var16 = function(arg0) { // Original name: ref, environment: var16
+                var16 = function arg0() {
                     _fun37286: for (var _fun37286_ip = 0;;) switch (_fun37286_ip) {
                         case 0:
                             var4 = arg0;

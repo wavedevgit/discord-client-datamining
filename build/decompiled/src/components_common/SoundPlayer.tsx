@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: useSound, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: MuteDeafen, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var2 = _closure1_slot13;
         var3 = new Array(2);
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: Camera, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var2 = _closure1_slot13;
         var3 = new Array(2);
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: RTCConnect, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var2 = _closure1_slot11;
         var3 = new Array(4);
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: Speaking, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var1 = _closure1_slot17;
         var3 = new Array(1);
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: VoiceFilter, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var1 = _closure1_slot13;
         var3 = new Array(1);
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: SelfMutedTemporarily, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var1 = _closure1_slot13;
         var3 = new Array(1);
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: PriorityVAD, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var1 = _closure1_slot17;
         var3 = new Array(1);
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: UserHasBeenMoved, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var1 = _closure1_slot18;
         var3 = new Array(1);
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: UserInvitedToSpeak, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var2 = _closure1_slot16;
         var3 = new Array(2);
@@ -850,7 +850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: VoiceChannel, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var2 = _closure1_slot16;
         var3 = new Array(5);
@@ -1275,7 +1275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var0;
-    var0 = function() { // Original name: ActivitySounds, environment: var1
+    var0 = function() {
         var4 = _closure1_slot26;
         var2 = _closure1_slot16;
         var3 = new Array(4);
@@ -1863,7 +1863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: HangStatusSounds, environment: var1
+    var0 = function() {
         var5 = _closure1_slot26;
         var2 = _closure1_slot7;
         var4 = new Array(2);
@@ -2108,7 +2108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_common/SoundPlayer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SoundPlayer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot25;
         var2 = _closure1_slot24;
         var1 = {};

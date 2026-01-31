@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/game_server/GameServerExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.GameServerExperiment = var3;
-    var3 = function(arg0, arg1) { // Original name: getGameServerEnabled, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getGameServerEnabled = var3;
-    var1 = function(arg0, arg1) { // Original name: useGameServerEnabled, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = var3.useExperiment;
         var1 = {};

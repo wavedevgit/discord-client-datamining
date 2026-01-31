@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var9;
             var _closure1_slot3 = var8;
-            var0 = function(arg0, arg1) { // Original name: _allocateCallback, environment: var3
+            var0 = function arg0, arg1() {
                 _fun2577: for (var _fun2577_ip = 0;;) switch (_fun2577_ip) {
                     case 0:
                         var0 = _closure1_slot12;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot16 = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: _callTimer, environment: var3
+            var0 = function arg0, arg1, arg2() {
                 _fun2578: for (var _fun2578_ip = 0;;) switch (_fun2578_ip) {
                     case 0:
                         var10 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 256:
                         var4 = var2;
                         var3 = {};
-                        var6 = function() { // Original name: timeRemaining, environment: var6
+                        var6 = function() {
                             var0 = global;
                             var3 = var0.Math;
                             var2 = var3.max;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot17 = var0;
-            var0 = function() { // Original name: _callReactNativeMicrotasksPass, environment: var3
+            var0 = function() {
                 _fun2580: for (var _fun2580_ip = 0;;) switch (_fun2580_ip) {
                     case 0:
                         var1 = _closure1_slot9;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot18 = var0;
-            var0 = function(arg0) { // Original name: _clearIndex, environment: var3
+            var0 = function arg0() {
                 var2 = arg0;
                 var1 = _closure1_slot7;
                 var3 = null;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot19 = var0;
-            var0 = function(arg0) { // Original name: _freeCallback, environment: var3
+            var0 = function arg0() {
                 _fun2582: for (var _fun2582_ip = 0;;) switch (_fun2582_ip) {
                     case 0:
                         var2 = arg0;
@@ -320,7 +320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot20 = var0;
-            var0 = function(arg0, arg1, arg2, arg3) { // Original name: createTimer, environment: var3
+            var0 = function arg0, arg1, arg2, arg3() {
                 var4 = _closure1_slot1;
                 var3 = _closure1_slot3;
                 var0 = 0;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot21 = var0;
-            var0 = function(arg0) { // Original name: setSendIdleEvents, environment: var3
+            var0 = function arg0() {
                 var4 = _closure1_slot1;
                 var3 = _closure1_slot3;
                 var0 = 0;
@@ -397,7 +397,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = false;
             var _closure1_slot14 = var1;
             var5 = {};
-            var1 = function(arg0, arg1) { // Original name: setTimeout, environment: var3
+            var1 = function arg0, arg1() {
                 _fun2585: for (var _fun2585_ip = 0;;) switch (_fun2585_ip) {
                     case 0:
                         var5 = arg1;
@@ -476,7 +476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.setTimeout = var1;
-            var1 = function(arg0, arg1) { // Original name: setInterval, environment: var3
+            var1 = function arg0, arg1() {
                 _fun2587: for (var _fun2587_ip = 0;;) switch (_fun2587_ip) {
                     case 0:
                         var5 = arg1;
@@ -555,7 +555,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.setInterval = var1;
-            var1 = function(arg0) { // Original name: queueReactNativeMicrotask, environment: var3
+            var1 = function arg0() {
                 _fun2589: for (var _fun2589_ip = 0;;) switch (_fun2589_ip) {
                     case 0:
                         var4 = undefined;
@@ -620,7 +620,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.queueReactNativeMicrotask = var1;
-            var1 = function(arg0) { // Original name: requestAnimationFrame, environment: var3
+            var1 = function arg0() {
                 var3 = _closure1_slot16;
                 var5 = undefined;
                 var2 = arg0;
@@ -639,7 +639,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.requestAnimationFrame = var1;
-            var1 = function(arg0, arg1) { // Original name: requestIdleCallback, environment: var3
+            var1 = function arg0, arg1() {
                 _fun2592: for (var _fun2592_ip = 0;;) switch (_fun2592_ip) {
                     case 0:
                         var7 = arg0;
@@ -768,7 +768,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.requestIdleCallback = var1;
-            var1 = function(arg0) { // Original name: cancelIdleCallback, environment: var3
+            var1 = function arg0() {
                 _fun2595: for (var _fun2595_ip = 0;;) switch (_fun2595_ip) {
                     case 0:
                         var3 = arg0;
@@ -818,7 +818,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.cancelIdleCallback = var1;
-            var1 = function(arg0) { // Original name: clearTimeout, environment: var3
+            var1 = function arg0() {
                 var2 = _closure1_slot20;
                 var0 = undefined;
                 var1 = arg0;
@@ -826,7 +826,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.clearTimeout = var1;
-            var1 = function(arg0) { // Original name: clearInterval, environment: var3
+            var1 = function arg0() {
                 var2 = _closure1_slot20;
                 var0 = undefined;
                 var1 = arg0;
@@ -834,7 +834,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.clearInterval = var1;
-            var1 = function(arg0) { // Original name: clearReactNativeMicrotask, environment: var3
+            var1 = function arg0() {
                 _fun2598: for (var _fun2598_ip = 0;;) switch (_fun2598_ip) {
                     case 0:
                         var4 = arg0;
@@ -859,7 +859,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.clearReactNativeMicrotask = var1;
-            var1 = function(arg0) { // Original name: cancelAnimationFrame, environment: var3
+            var1 = function arg0() {
                 var2 = _closure1_slot20;
                 var0 = undefined;
                 var1 = arg0;
@@ -867,7 +867,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.cancelAnimationFrame = var1;
-            var1 = function(arg0) { // Original name: callTimers, environment: var3
+            var1 = function arg0() {
                 _fun2600: for (var _fun2600_ip = 0;;) switch (_fun2600_ip) {
                     case 0:
                         var6 = arg0;
@@ -946,7 +946,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.callTimers = var1;
-            var1 = function(arg0) { // Original name: callIdleCallbacks, environment: var3
+            var1 = function arg0() {
                 _fun2602: for (var _fun2602_ip = 0;;) switch (_fun2602_ip) {
                     case 0:
                         var6 = arg0;
@@ -1029,7 +1029,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.callIdleCallbacks = var1;
-            var1 = function() { // Original name: callReactNativeMicrotasks, environment: var3
+            var1 = function() {
                 _fun2605: for (var _fun2605_ip = 0;;) switch (_fun2605_ip) {
                     case 0:
                         var2 = _closure1_slot13;
@@ -1070,7 +1070,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.callReactNativeMicrotasks = var1;
-            var1 = function(arg0) { // Original name: emitTimeDriftWarning, environment: var3
+            var1 = function arg0() {
                 _fun2608: for (var _fun2608_ip = 0;;) switch (_fun2608_ip) {
                     case 0:
                         var0 = _closure1_slot14;

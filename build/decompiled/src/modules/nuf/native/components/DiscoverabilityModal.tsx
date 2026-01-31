@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: DiscoverabilityLandingScene, environment: var7
+    var0 = function() {
         _fun80562: for (var _fun80562_ip = 0;;) switch (_fun80562_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: DiscoverabilityNameScene, environment: var7
+    var0 = function() {
         _fun80565: for (var _fun80565_ip = 0;;) switch (_fun80565_ip) {
             case 0:
                 var1 = _closure1_slot8;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var1 = function() { // Original name: DiscoverabilityModal, environment: var7
+    var1 = function() {
         var3 = _closure1_slot7;
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = _closure1_slot3;
         var6 = var9.useMemo;
         var5 = function() { // Environment: var4
-            var1 = function() { // Original name: getScreens, environment: var0
+            var1 = function() {
                 var0 = {};
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -272,17 +272,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ImpressionNames;
                 var9 = var9.DISCOVERABILITY;
                 var2.impressionName = var9;
-                var9 = function() { // Original name: headerLeft, environment: var3
+                var9 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerLeft = var9;
-                var9 = function() { // Original name: headerTitle, environment: var3
+                var9 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var9;
-                var9 = function() { // Original name: render, environment: var3
+                var9 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot9;
                     var1 = undefined;
@@ -306,12 +306,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.ImpressionNames;
                 var4 = var4.DISCOVERABILITY;
                 var1.impressionName = var4;
-                var4 = function() { // Original name: headerTitle, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot10;
                     var1 = undefined;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: TableRow, environment: var7
+    var3 = function arg0() {
         _fun44411: for (var _fun44411_ip = 0;;) switch (_fun44411_ip) {
             case 0:
                 var2 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function(arg0) { // Original name: TableRowInner, environment: var7
+    var1 = function arg0() {
         _fun44412: for (var _fun44412_ip = 0;;) switch (_fun44412_ip) {
             case 0:
                 var0 = arg0;

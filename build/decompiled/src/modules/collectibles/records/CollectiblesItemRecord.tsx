@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun42284: for (var _fun42284_ip = 0;;) switch (_fun42284_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun42286: for (var _fun42286_ip = 0;;) switch (_fun42286_ip) {
             case 0:
                 var3 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createCollectiblesItemsFromServerResponse = var1;
-    var1 = function(arg0) { // Original name: transformSKUToCollectiblesItem, environment: var3
+    var1 = function arg0() {
         _fun42289: for (var _fun42289_ip = 0;;) switch (_fun42289_ip) {
             case 0:
                 var0 = arg0;

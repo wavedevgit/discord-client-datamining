@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var6 = 'function roundToNearestPixel_roundToNearestPixelTsx1(position){const{PIXEL_DENSITY}=this.__closure;return Math.round(position*PIXEL_DENSITY)/PIXEL_DENSITY;}';
     var3.code = var6;
-    var1 = function(arg0) { // Original name: t, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.round;

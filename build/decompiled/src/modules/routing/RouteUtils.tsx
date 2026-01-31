@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = require;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function(arg0) { // Original name: isPseudoGuildId, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.includes;
         var0 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.RouteParam;
     var2.RouteParam = var4;
     var2.isPseudoGuildId = var3;
-    var3 = function(arg0) { // Original name: isValidGuildId, environment: var1
+    var3 = function arg0() {
         _fun27849: for (var _fun27849_ip = 0;;) switch (_fun27849_ip) {
             case 0:
                 var4 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isValidGuildId = var3;
-    var1 = function(arg0) { // Original name: isValidChannelId, environment: var1
+    var1 = function arg0() {
         _fun27850: for (var _fun27850_ip = 0;;) switch (_fun27850_ip) {
             case 0:
                 var4 = arg0;

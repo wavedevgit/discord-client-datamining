@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun55551: for (var _fun55551_ip = 0;;) switch (_fun55551_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var7 = function(arg0) { // Original name: handleGuildBoostsUpdate, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildBoostSlot;
         var1 = {};
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var0 = function() { // Original name: handleSubscriptionStoreUpdate, environment: var3
+    var0 = function() {
         _fun55555: for (var _fun55555_ip = 0;;) switch (_fun55555_ip) {
             case 0:
                 var1 = {};
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildBoostSlotStore, environment: var5
+        var3 = function() {
             _fun55557: for (var _fun55557_ip = 0;;) switch (_fun55557_ip) {
                 case 0:
                     var3 = this;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.syncWith;
             var4 = _closure1_slot5;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetched';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetching';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'boostSlots';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildBoostSlot';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot8;
             var0 = arg0;
             var0 = var1[var0];
@@ -248,14 +248,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleGuildBoostsFetch, environment: var3
+    var8 = function() {
         var0 = true;
         _closure1_slot7 = var0;
         var0 = undefined;
         return var0;
     };
     var1.GUILD_BOOST_SLOTS_FETCH = var8;
-    var8 = function(arg0) { // Original name: handleGuildBoostsFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.guildBoostSlots;
         var0 = {};
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_BOOST_SLOT_UPDATE_SUCCESS = var7;
     var1.GUILD_BOOST_SLOT_CREATE = var7;
     var1.GUILD_BOOST_SLOT_UPDATE = var7;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot8 = var0;
         var0 = false;

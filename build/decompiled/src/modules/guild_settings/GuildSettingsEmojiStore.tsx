@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun115252: for (var _fun115252_ip = 0;;) switch (_fun115252_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildSettingsEmojiStore, environment: var5
+        var3 = function() {
             _fun115256: for (var _fun115256_ip = 0;;) switch (_fun115256_ip) {
                 case 0:
                     var3 = this;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot6;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isUploadingEmoji';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot9;
             var0 = 0;
             var0 = var1 > var0;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEmojiRevision';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun115259: for (var _fun115259_ip = 0;;) switch (_fun115259_ip) {
                 case 0:
                     var1 = _closure1_slot7;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEmojis';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot8;
             var0 = arg0;
             var0 = var1[var0];
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEmojiRawAsset';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot10;
             var1 = var2.get;
             var0 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleEmojiDelete, environment: var3
+    var7 = function arg0() {
         var1 = arg0;
         var2 = var1.guildId;
         var1 = var1.emojiId;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMOJI_DELETE = var7;
-    var7 = function(arg0) { // Original name: handleFetchSuccess, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var4 = var0.emojis;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMOJI_FETCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleFetchFailure, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot8;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMOJI_FETCH_FAILURE = var7;
-    var7 = function() { // Original name: handleStartUploading, environment: var3
+    var7 = function() {
         var0 = _closure1_slot9;
         var0 = var0 + 1;
         _closure1_slot9 = var0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMOJI_UPLOAD_START = var7;
-    var7 = function() { // Original name: handleStopUploading, environment: var3
+    var7 = function() {
         var0 = _closure1_slot9;
         var0 = var0 - 1;
         _closure1_slot9 = var0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMOJI_UPLOAD_STOP = var7;
-    var7 = function(arg0) { // Original name: handleCacheRawEmojiAsset, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.emojiId;
         var2 = var0.userImage;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMOJI_CACHE_RAW_EMOJI_ASSET = var7;
-    var3 = function(arg0) { // Original name: handleGuildEmojiUpdate, environment: var3
+    var3 = function arg0() {
         _fun115270: for (var _fun115270_ip = 0;;) switch (_fun115270_ip) {
             case 0:
                 var0 = arg0;

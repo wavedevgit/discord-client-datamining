@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/ClassificationDetailModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ClassificationDetailModal, environment: var1
+    var1 = function arg0() {
         _fun79290: for (var _fun79290_ip = 0;;) switch (_fun79290_ip) {
             case 0:
                 var1 = arg0;
@@ -132,14 +132,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = _closure2_slot2;
                     var7 = _closure2_slot3;
                     var6 = _closure2_slot1;
-                    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getScreens, environment: var0
+                    var1 = function arg0, arg1, arg2, arg3() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var0 = arg1;
                         var _closure4_slot1 = var0;
                         var0 = arg3;
                         var _closure4_slot2 = var0;
-                        var6 = function() { // Original name: closeModal, environment: var3
+                        var6 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot3;
                             var0 = 5;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = arg2;
                         var5 = var5.headerStyle;
                         var1.headerStyle = var5;
-                        var5 = function() { // Original name: headerTitle, environment: var3
+                        var5 = function() {
                             var0 = null;
                             return var0;
                         };
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.getHeaderCloseButton;
                         var4 = var4.bind(var5)(var6);
                         var1.headerLeft = var4;
-                        var3 = function() { // Original name: render, environment: var3
+                        var3 = function() {
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot3;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.classificationId = var6;
                             var5 = _closure4_slot2;
                             var0.source = var5;
-                            var5 = function() { // Original name: onClose, environment: var4
+                            var5 = function() {
                                 _fun79297: for (var _fun79297_ip = 0;;) switch (_fun79297_ip) {
                                     case 0:
                                         var2 = _closure4_slot3;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var0.onClose = var5;
-                            var4 = function() { // Original name: onError, environment: var4
+                            var4 = function() {
                                 var1 = _closure4_slot3;
                                 var0 = undefined;
                                 var1 = var1.bind(var0)();

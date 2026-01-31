@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleInviteAccepted, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_EXPIRATION_DAYS = var3;
     var3 = 5;
     var2.DEFAULT_EXPIRATION_USES = var3;
-    var3 = function() { // Original name: revokeAllFriendInvites, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.revokeAllFriendInvites = var3;
-    var1 = function(arg0, arg1) { // Original name: acceptFriendInvite, environment: var1
+    var1 = function arg0, arg1() {
         _fun112522: for (var _fun112522_ip = 0;;) switch (_fun112522_ip) {
             case 0:
                 var6 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.inviteKey = var6;
                 var6 = arg1;
                 var1.context = var6;
-                var5 = function() { // Original name: callback, environment: var5
+                var5 = function() {
                     _fun112523: for (var _fun112523_ip = 0;;) switch (_fun112523_ip) {
                         case 0:
                             var3 = _closure1_slot1;

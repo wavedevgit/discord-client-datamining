@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupsBoostLevelProgress.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGuildPowerupBoostLevelProgress, environment: var1
+    var3 = function arg0() {
         _fun55689: for (var _fun55689_ip = 0;;) switch (_fun55689_ip) {
             case 0:
                 var3 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getGuildPowerupBoostLevelProgress, environment: var1
+    var1 = function arg0() {
         _fun55692: for (var _fun55692_ip = 0;;) switch (_fun55692_ip) {
             case 0:
                 var5 = arg0;

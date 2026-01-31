@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: _htmlElementAsString, environment: var0
+    var2 = function arg0, arg1() {
         _fun58549: for (var _fun58549_ip = 0;;) switch (_fun58549_ip) {
             case 0:
                 var0 = arg0;
@@ -286,7 +286,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: getComponentName, environment: var0
+    var2 = function arg0() {
         _fun58553: for (var _fun58553_ip = 0;;) switch (_fun58553_ip) {
             case 0:
                 var5 = arg0;
@@ -357,7 +357,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getComponentName = var2;
-    var2 = function(arg0) { // Original name: getDomElement, environment: var0
+    var2 = function arg0() {
         _fun58554: for (var _fun58554_ip = 0;;) switch (_fun58554_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -401,7 +401,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getDomElement = var2;
-    var2 = function() { // Original name: getLocationHref, environment: var0
+    var2 = function() {
         _fun58555: for (var _fun58555_ip = 0;;) switch (_fun58555_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot0;
@@ -423,7 +423,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getLocationHref = var2;
-    var0 = function(arg0) { // Original name: htmlTreeAsString, environment: var0
+    var0 = function arg0() {
         _fun58556: for (var _fun58556_ip = 0;;) switch (_fun58556_ip) {
             case 0:
                 var8 = undefined;

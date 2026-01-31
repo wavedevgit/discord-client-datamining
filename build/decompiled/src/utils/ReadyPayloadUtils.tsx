@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun95176: for (var _fun95176_ip = 0;;) switch (_fun95176_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun95178: for (var _fun95178_ip = 0;;) switch (_fun95178_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: maybeIncludeInitialGuild, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun95179: for (var _fun95179_ip = 0;;) switch (_fun95179_ip) {
             case 0:
                 var5 = arg1;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getRawEmojiForGuild, environment: var3
+    var0 = function arg0() {
         _fun95181: for (var _fun95181_ip = 0;;) switch (_fun95181_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: restoreUsers, environment: var3
+    var0 = function arg0, arg1() {
         _fun95182: for (var _fun95182_ip = 0;;) switch (_fun95182_ip) {
             case 0:
                 var3 = arg1;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: popGuildCacheEntry, environment: var3
+    var0 = function arg0() {
         var2 = arg0;
         var0 = _closure1_slot10;
         var0 = var0[var2];
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: hydrateUpdateForEntity, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun95185: for (var _fun95185_ip = 0;;) switch (_fun95185_ip) {
             case 0:
                 var5 = arg0;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: hydrateGuild, environment: var3
+    var0 = function arg0() {
         _fun95187: for (var _fun95187_ip = 0;;) switch (_fun95187_ip) {
             case 0:
                 var1 = arg0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var1 = function(arg0, arg1) { // Original name: hydratePreviouslyUnavailableGuild, environment: var3
+    var1 = function arg0, arg1() {
         _fun95192: for (var _fun95192_ip = 0;;) switch (_fun95192_ip) {
             case 0:
                 var3 = arg0;
@@ -1064,7 +1064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var1;
-    var0 = function(arg0) { // Original name: collectThreadMessages, environment: var3
+    var0 = function arg0() {
         _fun95197: for (var _fun95197_ip = 0;;) switch (_fun95197_ip) {
             case 0:
                 var2 = arg0;
@@ -1164,7 +1164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'utils/ReadyPayloadUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: hydrateReadySupplementalPayload, environment: var3
+    var4 = function arg0, arg1() {
         _fun95198: for (var _fun95198_ip = 0;;) switch (_fun95198_ip) {
             case 0:
                 var3 = arg0;
@@ -1309,7 +1309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hydrateReadySupplementalPayload = var4;
-    var4 = function() { // Original name: preloadReadyPayloadData, environment: var3
+    var4 = function() {
         _fun95201: for (var _fun95201_ip = 0;;) switch (_fun95201_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -1489,7 +1489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.preloadReadyPayloadData = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: hydrateReadyPayloadPrioritized, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun95203: for (var _fun95203_ip = 0;;) switch (_fun95203_ip) {
             case 0:
                 var5 = arg0;
@@ -1787,7 +1787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hydrateReadyPayloadPrioritized = var4;
-    var3 = function(arg0, arg1) { // Original name: hydrateInitialGuild, environment: var3
+    var3 = function arg0, arg1() {
         _fun95209: for (var _fun95209_ip = 0;;) switch (_fun95209_ip) {
             case 0:
                 var3 = arg0;

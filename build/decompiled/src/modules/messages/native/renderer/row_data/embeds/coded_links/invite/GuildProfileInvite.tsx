@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/invite/GuildProfileInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createGuildProfileInvite, environment: var1
+    var1 = function arg0, arg1() {
         _fun92338: for (var _fun92338_ip = 0;;) switch (_fun92338_ip) {
             case 0:
                 var9 = arg0;

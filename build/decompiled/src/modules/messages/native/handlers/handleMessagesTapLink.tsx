@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: handleMessagesTapURLLink, environment: var1
+    var3 = function arg0, arg1() {
         _fun76147: for (var _fun76147_ip = 0;;) switch (_fun76147_ip) {
             case 0:
                 var5 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/native/handlers/handleMessagesTapLink.tsx';
     var4 = var5.bind(var6)(var4);
     var2.handleMessagesTapURLLink = var3;
-    var1 = function(arg0) { // Original name: handleMessagesTapLink, environment: var1
+    var1 = function arg0() {
         _fun76148: for (var _fun76148_ip = 0;;) switch (_fun76148_ip) {
             case 0:
                 var1 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var23;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun55508: for (var _fun55508_ip = 0;;) switch (_fun55508_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun55510: for (var _fun55510_ip = 0;;) switch (_fun55510_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var12 = function(arg0) { // Original name: getGuildTierFromGuild, environment: var1
+    var12 = function arg0() {
         _fun55511: for (var _fun55511_ip = 0;;) switch (_fun55511_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var12;
-    var11 = function(arg0, arg1) { // Original name: isGuildBoostedAtLeast, environment: var1
+    var11 = function arg0, arg1() {
         _fun55512: for (var _fun55512_ip = 0;;) switch (_fun55512_ip) {
             case 0:
                 var3 = arg0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var11;
-    var10 = function(arg0) { // Original name: getAvailableGuildBoostSlots, environment: var1
+    var10 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 13;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot40 = var10;
-    var9 = function(arg0, arg1) { // Original name: appliedGuildBoostsRequiredForPerks, environment: var1
+    var9 = function arg0, arg1() {
         _fun55515: for (var _fun55515_ip = 0;;) switch (_fun55515_ip) {
             case 0:
                 var2 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot41 = var9;
-    var7 = function(arg0) { // Original name: getMaxSoundboardSlots, environment: var1
+    var7 = function arg0() {
         _fun55517: for (var _fun55517_ip = 0;;) switch (_fun55517_ip) {
             case 0:
                 var0 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot42 = var7;
-    var6 = function(arg0) { // Original name: isGuildBoostSlotCanceled, environment: var1
+    var6 = function arg0() {
         _fun55518: for (var _fun55518_ip = 0;;) switch (_fun55518_ip) {
             case 0:
                 var1 = arg0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot43 = var6;
-    var5 = function(arg0) { // Original name: getTheoreticalPremiumTierForSubscriberCount, environment: var1
+    var5 = function arg0() {
         _fun55519: for (var _fun55519_ip = 0;;) switch (_fun55519_ip) {
             case 0:
                 var1 = arg0;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot44 = var5;
-    var4 = function(arg0) { // Original name: getNextPremiumTierForSubscriberCount, environment: var1
+    var4 = function arg0() {
         _fun55521: for (var _fun55521_ip = 0;;) switch (_fun55521_ip) {
             case 0:
                 var1 = arg0;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var14.reverse;
     var18 = var13.bind(var14)();
     var _closure1_slot29 = var18;
-    var17 = function(arg0, arg1) { // Original name: getTotalStickerCountForTier, environment: var1
+    var17 = function arg0, arg1() {
         _fun55523: for (var _fun55523_ip = 0;;) switch (_fun55523_ip) {
             case 0:
                 var2 = arg0;
@@ -744,14 +744,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var17;
-    var16 = function(arg0) { // Original name: getIncrementalStickerCountForTier, environment: var1
+    var16 = function arg0() {
         var1 = _closure1_slot22;
         var0 = arg0;
         var0 = var1[var0];
         return var0;
     };
     var _closure1_slot31 = var16;
-    var15 = function(arg0, arg1) { // Original name: getTotalSoundboardSoundCountForTier, environment: var1
+    var15 = function arg0, arg1() {
         _fun55525: for (var _fun55525_ip = 0;;) switch (_fun55525_ip) {
             case 0:
                 var0 = arg1;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var15;
-    var14 = function(arg0) { // Original name: getIncrementalSoundboardSoundCountForTier, environment: var1
+    var14 = function arg0() {
         _fun55526: for (var _fun55526_ip = 0;;) switch (_fun55526_ip) {
             case 0:
                 var1 = arg0;
@@ -1855,7 +1855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getTiers = var14;
-    var14 = function(arg0) { // Original name: getTierName, environment: var1
+    var14 = function arg0() {
         _fun55531: for (var _fun55531_ip = 0;;) switch (_fun55531_ip) {
             case 0:
                 var3 = arg0;
@@ -1988,7 +1988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getTierName = var14;
-    var14 = function(arg0) { // Original name: getShortenedTierName, environment: var1
+    var14 = function arg0() {
         _fun55532: for (var _fun55532_ip = 0;;) switch (_fun55532_ip) {
             case 0:
                 var2 = arg0;
@@ -2156,7 +2156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.boostedGuildTierToAnalyticsObjectType = var13;
     var2.getGuildTierFromGuild = var12;
-    var12 = function(arg0) { // Original name: getNextGuildTierFromGuild, environment: var1
+    var12 = function arg0() {
         _fun55534: for (var _fun55534_ip = 0;;) switch (_fun55534_ip) {
             case 0:
                 var2 = _closure1_slot38;
@@ -2201,7 +2201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getNextGuildTierFromGuild = var12;
-    var12 = function(arg0) { // Original name: getAppliedGuildBoostMonths, environment: var1
+    var12 = function arg0() {
         _fun55535: for (var _fun55535_ip = 0;;) switch (_fun55535_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -2232,7 +2232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAppliedGuildBoostMonths = var12;
-    var12 = function(arg0) { // Original name: getUserLevel, environment: var1
+    var12 = function arg0() {
         _fun55536: for (var _fun55536_ip = 0;;) switch (_fun55536_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -2284,7 +2284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUserLevel = var12;
     var2.isGuildBoostedAtLeast = var11;
-    var11 = function(arg0, arg1) { // Original name: isTierUnlocked, environment: var1
+    var11 = function arg0, arg1() {
         var3 = _closure1_slot39;
         var0 = arg0;
         var2 = var0.premiumTier;
@@ -2295,7 +2295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isTierUnlocked = var11;
     var2.getAvailableGuildBoostSlots = var10;
-    var10 = function(arg0) { // Original name: generateBlockGuildSubscriptionPurchasesNode, environment: var1
+    var10 = function arg0() {
         _fun55538: for (var _fun55538_ip = 0;;) switch (_fun55538_ip) {
             case 0:
                 var0 = arg0;
@@ -2589,7 +2589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateBlockGuildSubscriptionPurchasesNode = var10;
-    var10 = function(arg0, arg1) { // Original name: isInGracePeriod, environment: var1
+    var10 = function arg0, arg1() {
         var3 = _closure1_slot41;
         var2 = undefined;
         var1 = arg0;
@@ -2602,7 +2602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isInGracePeriod = var10;
     var2.appliedGuildBoostsRequiredForPerks = var9;
     var2.GuildTierSubscriptionsOrdered = var8;
-    var8 = function(arg0, arg1) { // Original name: getGracePeriodEndingDate, environment: var1
+    var8 = function arg0, arg1() {
         _fun55541: for (var _fun55541_ip = 0;;) switch (_fun55541_ip) {
             case 0:
                 var9 = arg0;
@@ -2619,7 +2619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 return var2;
             case 33:
-                var2 = function(arg0) { // Original name: sortAppliedGuildBoostsByEndsAt, environment: var1
+                var2 = function arg0() {
                     var2 = arg0;
                     var1 = var2.sort;
                     var0 = function(arg0, arg1) { // Environment: var0
@@ -2718,7 +2718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGracePeriodEndingDate = var8;
-    var8 = function(arg0, arg1) { // Original name: getAvailableStickerSlotCount, environment: var1
+    var8 = function arg0, arg1() {
         _fun55545: for (var _fun55545_ip = 0;;) switch (_fun55545_ip) {
             case 0:
                 var7 = arg0;
@@ -2768,7 +2768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAvailableStickerSlotCount = var8;
-    var8 = function(arg0, arg1, arg2) { // Original name: getAvailableSoundboardSoundCount, environment: var1
+    var8 = function arg0, arg1, arg2() {
         _fun55546: for (var _fun55546_ip = 0;;) switch (_fun55546_ip) {
             case 0:
                 var3 = _closure1_slot28;
@@ -2801,7 +2801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAvailableSoundboardSoundCount = var8;
     var2.getMaxSoundboardSlots = var7;
-    var7 = function(arg0) { // Original name: getMaxEmojiSlots, environment: var1
+    var7 = function arg0() {
         _fun55547: for (var _fun55547_ip = 0;;) switch (_fun55547_ip) {
             case 0:
                 var0 = arg0;
@@ -2851,7 +2851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMaxEmojiSlots = var7;
-    var7 = function(arg0, arg1) { // Original name: getNumberOfAppliedBoostsNeededForTier, environment: var1
+    var7 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var1 = 19;
@@ -2879,7 +2879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getTheoreticalPremiumTierForSubscriberCount = var5;
     var2.getNextPremiumTierForSubscriberCount = var4;
     var2.TierMarkerPositions = var3;
-    var1 = function(arg0) { // Original name: getGuildBoostingProgressBarFillFactor, environment: var1
+    var1 = function arg0() {
         _fun55549: for (var _fun55549_ip = 0;;) switch (_fun55549_ip) {
             case 0:
                 var1 = _closure1_slot0;

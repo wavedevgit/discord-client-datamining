@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
-    var4 = function() { // Original name: createDefaultMemberSafetyPaginationState, environment: var3
+    var4 = function() {
         var0 = {
             'pageSize': null,
             'currentPage': 1,
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: GuildMemberSafetyPagination, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot3;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'reset';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var2 = this;
             var1 = _closure1_slot8;
             var0 = undefined;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isMemberOnCurrentPage';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40853: for (var _fun40853_ip = 0;;) switch (_fun40853_ip) {
                 case 0:
                     var0 = this;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isMemberInAnyChunk';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0._sortedMemberIds;
             var1 = var2.includes;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_initPaginationFromRawMembers';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var4 = arg0;
             var1 = this;
             var _closure3_slot0 = var1;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_buildPaginationFromMemberIds';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var3 = arg0;
             var2 = var3.reduce;
             var0 = this;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_rebuildPaginationChunksFromStoredMembers';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var2 = var1._buildPaginationFromMemberIds;
             var0 = var1._sortedMemberIds;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPaginationState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._paginationState;
             return var0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updatePaginationToken';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40860: for (var _fun40860_ip = 0;;) switch (_fun40860_ip) {
                 case 0:
                     var4 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_calculateNewPageFromPageSizeChange';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40861: for (var _fun40861_ip = 0;;) switch (_fun40861_ip) {
                 case 0:
                     var6 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updatePaginationState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40862: for (var _fun40862_ip = 0;;) switch (_fun40862_ip) {
                 case 0:
                     var3 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSortedMembers';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var2 = var1._initPaginationFromRawMembers;
             var0 = arg0;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSortedMembersByUserIds';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var0 = arg0;
             var1._sortedMemberIds = var0;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_findMember';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40865: for (var _fun40865_ip = 0;;) switch (_fun40865_ip) {
                 case 0:
                     var8 = arg0;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getElasticSearchPagination';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.getPaginationState;
             var0 = var0.bind(var1)();
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'paginatedMembers';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._cachedPaginationChunks;
             return var0;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'version';
         var0.key = var5;
-        var4 = function() { // Original name: get, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0._version;
             return var0;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 250;
     var2.DEFAULT_SEARCH_CHUNK_LIMIT = var5;
     var2.createDefaultMemberSafetyPaginationState = var4;
-    var3 = function(arg0) { // Original name: getSearchChunkLimit, environment: var3
+    var3 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.max;

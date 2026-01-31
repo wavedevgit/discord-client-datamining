@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = 'modules/voice_panel/VoicePanelConstants.tsx';
     var15 = var16.bind(var17)(var15);
     var2.VoicePanelModes = var14;
-    var13 = function(arg0) { // Original name: getAnalyticsNameForVoicePanelMode, environment: var13
+    var13 = function arg0() {
         _fun90881: for (var _fun90881_ip = 0;;) switch (_fun90881_ip) {
             case 0:
                 var1 = arg0;

@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/connections/two_way_link/playstation/PlayStationLinkDiscordConsent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PlayStationLinkDiscordConsent, environment: var1
+    var1 = function arg0() {
         _fun51431: for (var _fun51431_ip = 0;;) switch (_fun51431_ip) {
             case 0:
                 var1 = arg0;

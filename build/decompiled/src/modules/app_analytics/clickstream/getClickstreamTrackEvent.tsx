@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_analytics/clickstream/getClickstreamTrackEvent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: getClickstreamTrackEvent, environment: var1
+    var1 = function arg0, arg1() {
         _fun39689: for (var _fun39689_ip = 0;;) switch (_fun39689_ip) {
             case 0:
                 var5 = arg0;

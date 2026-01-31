@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/native/BoostingActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: openApplyBoostModal, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openApplyBoostModal = var3;
-    var3 = function(arg0) { // Original name: openTransferModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildBoostSlots;
         var8 = var0.guildId;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openTransferModal = var3;
-    var1 = function() { // Original name: closeApplyBoostModal, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;

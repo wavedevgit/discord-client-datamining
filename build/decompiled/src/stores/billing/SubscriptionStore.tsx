@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var9
+    var0 = function() {
         _fun25267: for (var _fun25267_ip = 0;;) switch (_fun25267_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: getUpdatedActiveSubscriptions, environment: var9
+    var0 = function arg0() {
         _fun25270: for (var _fun25270_ip = 0;;) switch (_fun25270_ip) {
             case 0:
                 var1 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var4 = function() { // Original name: reset, environment: var9
+    var4 = function() {
         var0 = null;
         _closure1_slot11 = var0;
         _closure1_slot12 = var0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var0 = function(arg0) { // Original name: isPaid, environment: var9
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.status;
         var0 = _closure1_slot8;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var1 = function(arg0, arg1) { // Original name: getSubscriptionOfType, environment: var9
+    var1 = function arg0, arg1() {
         _fun25274: for (var _fun25274_ip = 0;;) switch (_fun25274_ip) {
             case 0:
                 var12 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var9
-        var3 = function() { // Original name: SubscriptionStore, environment: var5
+        var3 = function() {
             _fun25276: for (var _fun25276_ip = 0;;) switch (_fun25276_ip) {
                 case 0:
                     var3 = this;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot7;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedSubscriptions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot11;
             var0 = null;
             var0 = var0 != var1;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedMostRecentPremiumTypeSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedPreviousPremiumTypeSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPremiumSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun25281: for (var _fun25281_ip = 0;;) switch (_fun25281_ip) {
                 case 0:
                     var4 = arguments[0];
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPremiumTypeSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun25283: for (var _fun25283_ip = 0;;) switch (_fun25283_ip) {
                 case 0:
                     var3 = arguments[0];
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'inReverseTrial';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun25284: for (var _fun25284_ip = 0;;) switch (_fun25284_ip) {
                 case 0:
                     var4 = _closure1_slot26;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun25285: for (var _fun25285_ip = 0;;) switch (_fun25285_ip) {
                 case 0:
                     var0 = arguments[0];
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun25286: for (var _fun25286_ip = 0;;) switch (_fun25286_ip) {
                 case 0:
                     var4 = _closure1_slot11;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveGuildSubscriptions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveApplicationSubscriptions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionForPlanIds';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun25289: for (var _fun25289_ip = 0;;) switch (_fun25289_ip) {
                 case 0:
                     var1 = arguments[1];
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMostRecentPremiumTypeSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPreviousPremiumTypeSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsSubscriptionEligibleForReward';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsFetchingSubscriptionRewardEligibility';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsFetchingMostRecentSubscription';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastLazyPerkSync';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPremiumGroupSubscription';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var4 = _closure1_slot26;
             var0 = _closure1_slot9;
             var3 = var0.PREMIUM;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var10 = function(arg0) { // Original name: handleSubscriptionsFetch, environment: var9
+    var10 = function arg0() {
         var0 = arg0;
         var8 = var0.subscriptions;
         var1 = var0.lastLazyPerkSync;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.BILLING_SUBSCRIPTION_FETCH_SUCCESS = var10;
-    var10 = function(arg0) { // Original name: handleSubscriptionUpdate, environment: var9
+    var10 = function arg0() {
         _fun25302: for (var _fun25302_ip = 0;;) switch (_fun25302_ip) {
             case 0:
                 var0 = arg0;
@@ -920,14 +920,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.BILLING_SUBSCRIPTION_UPDATE_SUCCESS = var10;
-    var10 = function() { // Original name: handleMostRecentSubscriptionFetchStart, environment: var9
+    var10 = function() {
         var0 = true;
         _closure1_slot21 = var0;
         var0 = undefined;
         return var0;
     };
     var3.BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START = var10;
-    var10 = function(arg0) { // Original name: handleMostRecentSubscriptionFetch, environment: var9
+    var10 = function arg0() {
         _fun25304: for (var _fun25304_ip = 0;;) switch (_fun25304_ip) {
             case 0:
                 var0 = arg0;
@@ -965,14 +965,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS = var10;
-    var10 = function() { // Original name: handleMostRecentSubscriptionFetchFail, environment: var9
+    var10 = function() {
         var0 = false;
         _closure1_slot21 = var0;
         var0 = undefined;
         return var0;
     };
     var3.BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL = var10;
-    var10 = function(arg0) { // Original name: handlePreviousSubscriptionFetch, environment: var9
+    var10 = function arg0() {
         _fun25306: for (var _fun25306_ip = 0;;) switch (_fun25306_ip) {
             case 0:
                 var0 = arg0;
@@ -1010,14 +1010,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS = var10;
     var3.BILLING_SUBSCRIPTION_RESET = var4;
-    var10 = function() { // Original name: handleSubscriptionRewardEligibilityFetchStart, environment: var9
+    var10 = function() {
         var0 = true;
         _closure1_slot19 = var0;
         var0 = undefined;
         return var0;
     };
     var3.BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START = var10;
-    var10 = function(arg0) { // Original name: handleSubscriptionRewardEligibilityFetch, environment: var9
+    var10 = function arg0() {
         var0 = arg0;
         var0 = var0.eligible;
         _closure1_slot20 = var0;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS = var10;
-    var9 = function(arg0) { // Original name: handleSubscriptionRewardEligibilityFetchFailed, environment: var9
+    var9 = function arg0() {
         _fun25309: for (var _fun25309_ip = 0;;) switch (_fun25309_ip) {
             case 0:
                 var1 = arg0;

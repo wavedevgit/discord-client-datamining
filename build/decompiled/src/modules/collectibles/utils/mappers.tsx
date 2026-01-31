@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: parseServerUserNameplate, environment: var1
+    var0 = function arg0() {
         _fun18380: for (var _fun18380_ip = 0;;) switch (_fun18380_ip) {
             case 0:
                 var2 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/utils/mappers.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: parseServerUserCollectibles, environment: var1
+    var3 = function arg0() {
         _fun18381: for (var _fun18381_ip = 0;;) switch (_fun18381_ip) {
             case 0:
                 var3 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseServerUserCollectibles = var3;
-    var1 = function(arg0) { // Original name: getNameplateDataFromRecord, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.asset;

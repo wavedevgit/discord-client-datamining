@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var3 = function(arg0) { // Original name: formatSize, environment: var1
+    var3 = function arg0() {
         _fun28818: for (var _fun28818_ip = 0;;) switch (_fun28818_ip) {
             case 0:
                 var0 = arguments[1];
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.BYTE_IN_KB = var4;
     var2.KB_IN_MB = var4;
     var2.formatSize = var3;
-    var1 = function(arg0) { // Original name: formatKbSize, environment: var1
+    var1 = function arg0() {
         _fun28819: for (var _fun28819_ip = 0;;) switch (_fun28819_ip) {
             case 0:
                 var4 = arguments[1];

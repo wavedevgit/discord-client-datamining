@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6[var1];
     var1 = var4.bind(var0)(var1);
     var _closure1_slot4 = var1;
-    var1 = function(arg0, arg1) { // Original name: getHighestHoistedRole, environment: var3
+    var1 = function arg0, arg1() {
         _fun50382: for (var _fun50382_ip = 0;;) switch (_fun50382_ip) {
             case 0:
                 var5 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/useGuildMemberDisplayRole.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useGuildMemberDisplayRole, environment: var3
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;

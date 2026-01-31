@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/TagListInput/native/TagListInputTag.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TagListInputTagComponent, environment: var1
+    var1 = function arg0() {
         _fun65662: for (var _fun65662_ip = 0;;) switch (_fun65662_ip) {
             case 0:
                 var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 247:
                 var12[3] = var13;
                 var0.style = var12;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = 'select';

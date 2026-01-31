@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var9;
-    var4 = function(arg0, arg1) { // Original name: findChangeByKey, environment: var3
+    var4 = function arg0, arg1() {
         _fun114792: for (var _fun114792_ip = 0;;) switch (_fun114792_ip) {
             case 0:
                 var2 = arg1;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var4;
-    var0 = function(arg0, arg1) { // Original name: findAllChangeByKey, environment: var3
+    var0 = function arg0, arg1() {
         _fun114794: for (var _fun114794_ip = 0;;) switch (_fun114794_ip) {
             case 0:
                 var2 = arg1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0, arg1) { // Original name: getPermissionChanges, environment: var3
+    var0 = function arg0, arg1() {
         _fun114796: for (var _fun114796_ip = 0;;) switch (_fun114796_ip) {
             case 0:
                 var5 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot41 = var0;
-    var0 = function(arg0) { // Original name: convertForumTag, environment: var3
+    var0 = function arg0() {
         _fun114797: for (var _fun114797_ip = 0;;) switch (_fun114797_ip) {
             case 0:
                 var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot42 = var0;
-    var1 = function(arg0) { // Original name: transformAvailableForumTagChange, environment: var3
+    var1 = function arg0() {
         _fun114798: for (var _fun114798_ip = 0;;) switch (_fun114798_ip) {
             case 0:
                 var0 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot43 = var1;
-    var0 = function(arg0, arg1, arg2) { // Original name: convertValue, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun114801: for (var _fun114801_ip = 0;;) switch (_fun114801_ip) {
             case 0:
                 var1 = arg0;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot44 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getTargetValue, environment: var3
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun114802: for (var _fun114802_ip = 0;;) switch (_fun114802_ip) {
             case 0:
                 var5 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot45 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: convertSubtarget, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun114804: for (var _fun114804_ip = 0;;) switch (_fun114804_ip) {
             case 0:
                 var0 = arg0;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot46 = var0;
-    var0 = function(arg0, arg1) { // Original name: getNullableOldValueString, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot47 = var0;
-    var0 = function(arg0, arg1) { // Original name: getNullableNewValueString, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot48 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getNullableNewOrOldValueString, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot49 = var0;
-    var0 = function(arg0, arg1) { // Original name: getNewValueStringByBoolean, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot50 = var0;
-    var0 = function(arg0) { // Original name: getNullableNewValueStringByKey, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot51 = var0;
-    var0 = function(arg0, arg1) { // Original name: getNewValueStringByKeyOrDefault, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.SECONDS;
     var6[3] = var7;
     var _closure1_slot35 = var6;
-    var6 = function() { // Original name: CommonChangeStrings, environment: var3
+    var6 = function() {
         var0 = {};
         var1 = _closure1_slot16;
         var2 = var1.REASON;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.SOUND_ID;
     var5[var11] = var12;
     var6[var7] = var5;
-    var5 = function() { // Original name: ACTION_FILTER_ITEMS, environment: var3
+    var5 = function() {
         var1 = {};
         var3 = _closure1_slot15;
         var2 = var3.ALL;
@@ -4646,7 +4646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NotRenderedChanges = var6;
     var2.ACTION_FILTER_ITEMS = var5;
     var2.findChangeByKey = var4;
-    var4 = function(arg0) { // Original name: getSimpleAuditLogTitleFromChange, environment: var3
+    var4 = function arg0() {
         _fun114917: for (var _fun114917_ip = 0;;) switch (_fun114917_ip) {
             case 0:
                 var4 = arg0;
@@ -4712,7 +4712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSimpleAuditLogTitleFromChange = var4;
-    var4 = function(arg0) { // Original name: getSimpleAuditLogTitleContextFromChange, environment: var3
+    var4 = function arg0() {
         _fun114919: for (var _fun114919_ip = 0;;) switch (_fun114919_ip) {
             case 0:
                 var3 = arg0;
@@ -4948,7 +4948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSimpleAuditLogTitleContextFromChange = var4;
-    var4 = function(arg0) { // Original name: getSimpleAuditLogChangeDetails, environment: var3
+    var4 = function arg0() {
         _fun114920: for (var _fun114920_ip = 0;;) switch (_fun114920_ip) {
             case 0:
                 var5 = arg0;
@@ -5124,7 +5124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSimpleAuditLogChangeDetails = var4;
-    var4 = function(arg0) { // Original name: getChangeTitle, environment: var3
+    var4 = function arg0() {
         _fun114925: for (var _fun114925_ip = 0;;) switch (_fun114925_ip) {
             case 0:
                 var4 = arg0;
@@ -6745,7 +6745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChangeTitle = var4;
-    var4 = function(arg0) { // Original name: getStringForAddedChannelFlag, environment: var3
+    var4 = function arg0() {
         _fun114929: for (var _fun114929_ip = 0;;) switch (_fun114929_ip) {
             case 0:
                 var2 = arg0;
@@ -6820,7 +6820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStringForAddedChannelFlag = var4;
-    var4 = function(arg0) { // Original name: getStringForRemovedChannelFlag, environment: var3
+    var4 = function arg0() {
         _fun114930: for (var _fun114930_ip = 0;;) switch (_fun114930_ip) {
             case 0:
                 var2 = arg0;
@@ -6895,7 +6895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStringForRemovedChannelFlag = var4;
-    var4 = function(arg0, arg1) { // Original name: getStringForPermission, environment: var3
+    var4 = function arg0, arg1() {
         _fun114931: for (var _fun114931_ip = 0;;) switch (_fun114931_ip) {
             case 0:
                 var3 = arg0;
@@ -8049,7 +8049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStringForPermission = var4;
-    var3 = function(arg0, arg1) { // Original name: transformLogs, environment: var3
+    var3 = function arg0, arg1() {
         var3 = arg0;
         var0 = arg1;
         var _closure2_slot0 = var0;
@@ -8062,7 +8062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = arg0;
                     var _closure3_slot0 = var8;
                     var3 = _closure2_slot0;
-                    var2 = function(arg0, arg1) { // Original name: transformTarget, environment: var4
+                    var2 = function arg0, arg1() {
                         _fun114934: for (var _fun114934_ip = 0;;) switch (_fun114934_ip) {
                             case 0:
                                 var6 = arg0;
@@ -8852,7 +8852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var3.bind(var6)(var2, var7);
                     _closure3_slot0 = var7;
                     var6 = var7.set;
-                    var2 = function(arg0) { // Original name: transformOptions, environment: var4
+                    var2 = function arg0() {
                         _fun114974: for (var _fun114974_ip = 0;;) switch (_fun114974_ip) {
                             case 0:
                                 var4 = arg0;
@@ -9066,7 +9066,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 0:
                                 var6 = _closure3_slot0;
                                 var5 = _closure2_slot0;
-                                var4 = function(arg0, arg1, arg2) { // Original name: transformChange, environment: var1
+                                var4 = function arg0, arg1, arg2() {
                                     _fun114982: for (var _fun114982_ip = 0;;) switch (_fun114982_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -9764,7 +9764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         case 998:
                                             return var2;
                                         case 1000:
-                                            var5 = function(arg0) { // Original name: transformSystemChannelFlagsChanges, environment: var1
+                                            var5 = function arg0() {
                                                 var0 = arg0;
                                                 var _closure6_slot0 = var0;
                                                 var0 = {};

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var0 = "function pnpm_processBoxShadowTs1(value){return value.endsWith('px')||!isNaN(Number(value));}";
     var3.code = var0;
-    var0 = function(arg0) { // Original name: pnpm_processBoxShadowTs1, environment: var1
+    var0 = function arg0() {
         _fun34747: for (var _fun34747_ip = 0;;) switch (_fun34747_ip) {
             case 0:
                 var4 = arg0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot3 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: parseBoxShadowString, environment: var0
+        var0 = function arg0() {
             _fun34749: for (var _fun34749_ip = 0;;) switch (_fun34749_ip) {
                 case 0:
                     var4 = arg0;
@@ -338,7 +338,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: parseLength, environment: var0
+        var0 = function arg0() {
             _fun34753: for (var _fun34753_ip = 0;;) switch (_fun34753_ip) {
                 case 0:
                     var5 = arg0;
@@ -386,7 +386,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: processBoxShadow, environment: var0
+        var0 = function arg0() {
             _fun34755: for (var _fun34755_ip = 0;;) switch (_fun34755_ip) {
                 case 0:
                     var3 = arg0;

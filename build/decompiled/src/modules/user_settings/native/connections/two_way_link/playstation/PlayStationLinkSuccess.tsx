@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/connections/two_way_link/playstation/PlayStationLinkSuccess.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PlayStationLinkSuccess, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.onClose;
         var0 = _closure1_slot8;

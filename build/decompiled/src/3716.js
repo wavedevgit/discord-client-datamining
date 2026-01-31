@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.code = var4;
     var _closure1_slot4 = var2;
     var2 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: startObservingProgress, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var5 = arg0;
             var4 = arg1;
             var _closure3_slot0 = var5;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.code = var4;
     var _closure1_slot6 = var2;
     var2 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: stopObservingProgress, environment: var0
+        var0 = function arg0, arg1() {
             _fun33276: for (var _fun33276_ip = 0;;) switch (_fun33276_ip) {
                 case 0:
                     var4 = arg0;
@@ -128,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.code = var4;
     var _closure1_slot8 = var2;
     var2 = function() { // Environment: var1
-        var0 = function() { // Original name: createLayoutAnimationManager, environment: var0
+        var0 = function() {
             _fun33278: for (var _fun33278_ip = 0;;) switch (_fun33278_ip) {
                 case 0:
                     var0 = global;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = new var4[var0](var3);
                     var0 = var0 instanceof Object ? var0 : var2;
                     var _closure3_slot1 = var0;
-                    var2 = function(arg0, arg1, arg2, arg3) { // Original name: startActually, environment: var1
+                    var2 = function arg0, arg1, arg2, arg3() {
                         _fun33279: for (var _fun33279_ip = 0;;) switch (_fun33279_ip) {
                             case 0:
                                 var5 = arg0;
@@ -311,7 +311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         continue _fun33278
                     }
                 case 85:
-                    var2 = function(arg0, arg1, arg2, arg3) { // Original name: start, environment: var1
+                    var2 = function arg0, arg1, arg2, arg3() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var1 = arg1;
@@ -339,7 +339,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                 case 90:
                     var0.start = var2;
-                    var1 = function(arg0) { // Original name: stop, environment: var1
+                    var1 = function arg0() {
                         _fun33283: for (var _fun33283_ip = 0;;) switch (_fun33283_ip) {
                             case 0:
                                 var3 = arg0;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var5[var2];
     var3 = var3.bind(var0)(var2);
     var2 = var3.runOnUIImmediately;
-    var1 = function() { // Original name: pnpm_animationsManagerTs4, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot9;
         var0 = undefined;

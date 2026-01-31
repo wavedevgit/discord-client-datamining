@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun71220: for (var _fun71220_ip = 0;;) switch (_fun71220_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildDirectorySearchStore, environment: var5
+        var3 = function() {
             _fun71224: for (var _fun71224_ip = 0;;) switch (_fun71224_ip) {
                 case 0:
                     var3 = this;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getSearchState';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun71225: for (var _fun71225_ip = 0;;) switch (_fun71225_ip) {
                 case 0:
                     var1 = _closure1_slot8;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSearchResults';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun71226: for (var _fun71226_ip = 0;;) switch (_fun71226_ip) {
                 case 0:
                     var2 = _closure1_slot9;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetch';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun71227: for (var _fun71227_ip = 0;;) switch (_fun71227_ip) {
                 case 0:
                     var1 = _closure1_slot9;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleSearchStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var3 = var0.query;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_SEARCH_START = var8;
-    var8 = function(arg0) { // Original name: handleSearchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var5 = var0.query;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_SEARCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleSearchFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = _closure1_slot8;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_SEARCH_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleSearchClear, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = _closure1_slot8;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_SEARCH_CLEAR = var8;
-    var8 = function(arg0) { // Original name: handleUpdateQuery, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var3 = var0.query;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_CACHED_SEARCH = var8;
-    var3 = function(arg0) { // Original name: handleDeleteEntry, environment: var3
+    var3 = function arg0() {
         _fun71234: for (var _fun71234_ip = 0;;) switch (_fun71234_ip) {
             case 0:
                 var0 = arg0;

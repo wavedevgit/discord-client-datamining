@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var11;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun64142: for (var _fun64142_ip = 0;;) switch (_fun64142_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun64144: for (var _fun64144_ip = 0;;) switch (_fun64144_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var8 = function(arg0) { // Original name: filterEmpty, environment: var1
+    var8 = function arg0() {
         _fun64145: for (var _fun64145_ip = 0;;) switch (_fun64145_ip) {
             case 0:
                 var2 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var8;
-    var7 = function(arg0, arg1) { // Original name: getBoolean, environment: var1
+    var7 = function arg0, arg1() {
         _fun64147: for (var _fun64147_ip = 0;;) switch (_fun64147_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var7;
-    var6 = function(arg0, arg1) { // Original name: getChannelId, environment: var1
+    var6 = function arg0, arg1() {
         _fun64148: for (var _fun64148_ip = 0;;) switch (_fun64148_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var6;
-    var5 = function(arg0, arg1) { // Original name: getUserId, environment: var1
+    var5 = function arg0, arg1() {
         _fun64149: for (var _fun64149_ip = 0;;) switch (_fun64149_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var5;
-    var4 = function(arg0, arg1) { // Original name: getRoleId, environment: var1
+    var4 = function arg0, arg1() {
         _fun64150: for (var _fun64150_ip = 0;;) switch (_fun64150_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var4;
-    var3 = function(arg0, arg1) { // Original name: getString, environment: var1
+    var3 = function arg0, arg1() {
         _fun64151: for (var _fun64151_ip = 0;;) switch (_fun64151_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.bind(var11)(var9);
     var2.filterEmpty = var8;
     var2.getBoolean = var7;
-    var7 = function(arg0, arg1) { // Original name: getOptionalBoolean, environment: var1
+    var7 = function arg0, arg1() {
         _fun64152: for (var _fun64152_ip = 0;;) switch (_fun64152_ip) {
             case 0:
                 var4 = arg0;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOptionalBoolean = var7;
     var2.getChannelId = var6;
-    var6 = function(arg0, arg1) { // Original name: getOptionalChannelId, environment: var1
+    var6 = function arg0, arg1() {
         _fun64153: for (var _fun64153_ip = 0;;) switch (_fun64153_ip) {
             case 0:
                 var4 = arg0;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOptionalChannelId = var6;
     var2.getUserId = var5;
-    var5 = function(arg0, arg1) { // Original name: getOptionalUserId, environment: var1
+    var5 = function arg0, arg1() {
         _fun64154: for (var _fun64154_ip = 0;;) switch (_fun64154_ip) {
             case 0:
                 var4 = arg0;
@@ -723,7 +723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOptionalUserId = var5;
     var2.getRoleId = var4;
-    var4 = function(arg0, arg1) { // Original name: getOptionalRoleId, environment: var1
+    var4 = function arg0, arg1() {
         _fun64155: for (var _fun64155_ip = 0;;) switch (_fun64155_ip) {
             case 0:
                 var4 = arg0;
@@ -745,7 +745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOptionalRoleId = var4;
     var2.getString = var3;
-    var3 = function(arg0, arg1) { // Original name: getOptionalString, environment: var1
+    var3 = function arg0, arg1() {
         _fun64156: for (var _fun64156_ip = 0;;) switch (_fun64156_ip) {
             case 0:
                 var4 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getOptionalString = var3;
-    var3 = function(arg0, arg1) { // Original name: normalizeNumericString, environment: var1
+    var3 = function arg0, arg1() {
         _fun64157: for (var _fun64157_ip = 0;;) switch (_fun64157_ip) {
             case 0:
                 var2 = arg0;
@@ -850,14 +850,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.normalizeNumericString = var3;
-    var1 = function(arg0, arg1) { // Original name: getInitialValuesFromInteractionOptions, environment: var1
+    var1 = function arg0, arg1() {
         _fun64158: for (var _fun64158_ip = 0;;) switch (_fun64158_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = {};
                 var _closure2_slot1 = var0;
-                var5 = function(arg0) { // Original name: _loop, environment: var1
+                var5 = function arg0() {
                     _fun64159: for (var _fun64159_ip = 0;;) switch (_fun64159_ip) {
                         case 0:
                             var1 = arg0;

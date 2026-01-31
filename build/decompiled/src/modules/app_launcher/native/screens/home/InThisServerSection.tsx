@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: AppInThisServer, environment: var3
+    var0 = function arg0() {
         _fun107775: for (var _fun107775_ip = 0;;) switch (_fun107775_ip) {
             case 0:
                 var1 = arg0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
                 var2 = var1.PressableScale;
                 var1 = {};
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun107776: for (var _fun107776_ip = 0;;) switch (_fun107776_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/screens/home/InThisServerSection.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: InThisServerSection, environment: var3
+    var3 = function arg0() {
         _fun107777: for (var _fun107777_ip = 0;;) switch (_fun107777_ip) {
             case 0:
                 var0 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var16 = var9.viewAll;
                 var11.style = var16;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     _fun107781: for (var _fun107781_ip = 0;;) switch (_fun107781_ip) {
                         case 0:
                             var2 = _closure2_slot4;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = metroImportDefault;
     var _closure1_slot0 = var1;
     var _closure1_slot1 = var4;
-    var1 = function(arg0, arg1) { // Original name: disableFalsePositiveButton, environment: var0
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

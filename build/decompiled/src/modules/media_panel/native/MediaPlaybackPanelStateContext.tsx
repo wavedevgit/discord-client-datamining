@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.PIP;
     var10 = var13.bind(var14)(var10);
     var1.mode = var10;
-    var10 = function() { // Original name: setMode, environment: var8
+    var10 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = {};
     var9.current = var0;
     var1.dismissToPipGestureRef = var9;
-    var8 = function() { // Original name: dismissPanel, environment: var8
+    var8 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;

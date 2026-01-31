@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nameplates/native/EditNameplateSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var14 = var0.selectedNameplate;
         var _closure2_slot0 = var14;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2.accessibilityLabel = var10;
                         var10 = _closure2_slot4;
                         var2.size = var10;
-                        var10 = function() { // Original name: onPress, environment: var5
+                        var10 = function() {
                             var2 = _closure2_slot1;
                             var1 = _closure4_slot0;
                             var0 = undefined;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = {};
                         var6 = _closure2_slot4;
                         var1.size = var6;
-                        var5 = function() { // Original name: onPress, environment: var5
+                        var5 = function() {
                             var2 = _closure2_slot1;
                             var1 = undefined;
                             var0 = null;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.contentContainerStyle = var9;
         var9 = 98;
         var5.estimatedItemSize = var9;
-        var8 = function() { // Original name: ItemSeparatorComponent, environment: var8
+        var8 = function() {
             var3 = _closure1_slot6;
             var2 = _closure1_slot4;
             var1 = {};

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun95588: for (var _fun95588_ip = 0;;) switch (_fun95588_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0) { // Original name: handleSetLocationMetadata, environment: var1
+    var3 = function arg0() {
         _fun95591: for (var _fun95591_ip = 0;;) switch (_fun95591_ip) {
             case 0:
                 var0 = arg0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.bind(var0)(var7);
     var7 = var7.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: LocationMetadataStore, environment: var0
+        var3 = function() {
             _fun95593: for (var _fun95593_ip = 0;;) switch (_fun95593_ip) {
                 case 0:
                     var3 = this;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'getCountryCode';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = _closure1_slot7;
             return var0;
         };

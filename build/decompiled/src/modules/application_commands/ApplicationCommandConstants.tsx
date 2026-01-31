@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.EMPTY_COMMANDS_SECTION = var3;
     var3 = 200;
     var2.APPLICATION_USER_INSTALL_BETA_USER_LIMIT = var3;
-    var1 = function(arg0) { // Original name: getValidationErrorText, environment: var1
+    var1 = function arg0() {
         _fun40837: for (var _fun40837_ip = 0;;) switch (_fun40837_ip) {
             case 0:
                 var0 = arg0;

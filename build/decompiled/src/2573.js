@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var10 = function(arg0) { // Original name: futureSeconds, environment: var2
+    var10 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /sekuntia?/;
@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var9 = function(arg0) { // Original name: futureMinutes, environment: var2
+    var9 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /minuuttia?/;
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var8 = function(arg0) { // Original name: futureHours, environment: var2
+    var8 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /tuntia?/;
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var7 = function(arg0) { // Original name: futureWeeks, environment: var2
+    var7 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /(viikko|viikkoa)/;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var6 = function(arg0) { // Original name: futureMonths, environment: var2
+    var6 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /(kuukausi|kuukautta)/;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var5 = function(arg0) { // Original name: futureYears, environment: var2
+    var5 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /(vuosi|vuotta)/;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'one': 'puoli minuuttia',
         'other': 'puoli minuuttia'
     };
-    var10 = function(arg0) { // Original name: futureTense, environment: var2
+    var10 = function arg0() {
         var0 = 'puolen minuutin';
         return var0;
     };
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'one': 'päivä',
         'other': '{{count}} päivää'
     };
-    var8 = function(arg0) { // Original name: futureDays, environment: var2
+    var8 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /päivää?/;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.futureTense = var5;
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun21889: for (var _fun21889_ip = 0;;) switch (_fun21889_ip) {
             case 0:
                 var6 = arg1;

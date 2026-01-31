@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/sheets/StageBoostingActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageBoostingActionSheet, environment: var1
+    var1 = function arg0() {
         _fun93365: for (var _fun93365_ip = 0;;) switch (_fun93365_ip) {
             case 0:
                 var0 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 462:
                 var10 = var1;
             case 465:
-                var13 = function() { // Original name: handleClose, environment: var15
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 12;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var16.Uj0md3;
                 var16 = var19.bind(var20)(var16);
                 var9.text = var16;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     var1 = _closure2_slot2;
                     var0 = undefined;
                     var1 = var1.bind(var0)();

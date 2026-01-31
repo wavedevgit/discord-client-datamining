@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun40150: for (var _fun40150_ip = 0;;) switch (_fun40150_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun40153: for (var _fun40153_ip = 0;;) switch (_fun40153_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun40155: for (var _fun40155_ip = 0;;) switch (_fun40155_ip) {
             case 0:
                 var3 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ExpandedGuildFolderStore, environment: var5
+        var3 = function() {
             _fun40157: for (var _fun40157_ip = 0;;) switch (_fun40157_ip) {
                 case 0:
                     var3 = this;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: initialize, environment: var5
+        var0 = function arg0() {
             _fun40158: for (var _fun40158_ip = 0;;) switch (_fun40158_ip) {
                 case 0:
                     var0 = arg0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: getState, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = global;
             var3 = var1.Array;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getExpandedFolders';
         var4.key = var6;
-        var6 = function() { // Original name: getExpandedFolders, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFolderExpanded';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: isFolderExpanded, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot6;
             var1 = var2.has;
             var0 = arg0;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: toggleFolderExpand, environment: var3
+    var7 = function arg0() {
         _fun40162: for (var _fun40162_ip = 0;;) switch (_fun40162_ip) {
             case 0:
                 var0 = arg0;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.TOGGLE_GUILD_FOLDER_EXPAND = var7;
-    var7 = function(arg0) { // Original name: setFolderExpanded, environment: var3
+    var7 = function arg0() {
         _fun40163: for (var _fun40163_ip = 0;;) switch (_fun40163_ip) {
             case 0:
                 var0 = arg0;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SET_GUILD_FOLDER_EXPANDED = var7;
-    var7 = function() { // Original name: handleSettingsUpdate, environment: var3
+    var7 = function() {
         _fun40164: for (var _fun40164_ip = 0;;) switch (_fun40164_ip) {
             case 0:
                 var3 = _closure1_slot5;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 29:
                 var2 = false;
                 var _closure2_slot1 = var2;
-                var5 = function(arg0) { // Original name: _loop, environment: var0
+                var5 = function arg0() {
                     _fun40165: for (var _fun40165_ip = 0;;) switch (_fun40165_ip) {
                         case 0:
                             var3 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_PROTO_UPDATE = var7;
-    var3 = function() { // Original name: handleCollapseAll, environment: var3
+    var3 = function() {
         _fun40167: for (var _fun40167_ip = 0;;) switch (_fun40167_ip) {
             case 0:
                 var0 = _closure1_slot6;

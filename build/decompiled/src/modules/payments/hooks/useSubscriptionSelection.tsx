@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/payments/hooks/useSubscriptionSelection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useSubscriptionSelection, environment: var1
+    var1 = function() {
         var11 = _closure1_slot3;
         var0 = var11.useState;
         var9 = undefined;

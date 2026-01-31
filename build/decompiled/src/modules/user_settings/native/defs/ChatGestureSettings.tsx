@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var3 = function() { // Original name: useSwipeToReplySettingValue, environment: var1
+    var3 = function() {
         _fun71909: for (var _fun71909_ip = 0;;) switch (_fun71909_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var6.bind(var0)(var4);
     var5 = var8.createRadio;
     var4 = {};
-    var10 = function() { // Original name: title, environment: var1
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.title = var10;
-    var10 = function() { // Original name: additionalSearchTerms, environment: var1
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.SWIPE_RIGHT_TO_LEFT;
     var4.parent = var9;
     var4.useValue = var3;
-    var9 = function(arg0) { // Original name: onSwipeToReplyValueChange, environment: var1
+    var9 = function arg0() {
         var0 = global;
         var2 = var0.Number;
         var0 = undefined;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.onValueChange = var9;
-    var9 = function() { // Original name: useHasSwipeToReplySettingOptions, environment: var1
+    var9 = function() {
         var1 = {};
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.useSwipeToReplySettingValue = var3;
-    var1 = function() { // Original name: getSwipeToReplySettingValue, environment: var1
+    var1 = function() {
         _fun71914: for (var _fun71914_ip = 0;;) switch (_fun71914_ip) {
             case 0:
                 var5 = _closure1_slot0;

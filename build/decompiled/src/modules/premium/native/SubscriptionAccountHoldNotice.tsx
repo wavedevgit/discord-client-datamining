@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/SubscriptionAccountHoldNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun59306: for (var _fun59306_ip = 0;;) switch (_fun59306_ip) {
             case 0:
                 var0 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.VJmUNy;
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot3;
                     var1 = var2.openURL;
                     var4 = _closure1_slot0;

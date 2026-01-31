@@ -874,7 +874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3 = var4.bind(var7)(var3);
-    var4 = function(arg0) { // Original name: ChannelTitleWrapper, environment: var1
+    var4 = function arg0() {
         _fun91389: for (var _fun91389_ip = 0;;) switch (_fun91389_ip) {
             case 0:
                 var0 = arg0;
@@ -906,7 +906,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'header';
                 var0.accessibilityRole = var9;
                 var0.onPress = var8;
-                var8 = function() { // Original name: onAccessibilityTap, environment: var8
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -931,7 +931,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var4 = function(arg0) { // Original name: ChannelTitleContent, environment: var1
+    var4 = function arg0() {
         _fun91391: for (var _fun91391_ip = 0;;) switch (_fun91391_ip) {
             case 0:
                 var0 = arg0;
@@ -1048,7 +1048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var4;
-    var4 = function(arg0) { // Original name: ParentChannelSubTitle, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var9 = var0.parentChannel;
         var0 = _closure1_slot19;
@@ -1105,7 +1105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var4;
-    var4 = function(arg0) { // Original name: DMChannelName, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var10 = var0.userId;
         var _closure2_slot0 = var10;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var4;
-    var4 = function(arg0) { // Original name: ConnectedStatus, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var4 = var1.style;
         var1 = var1.userId;
@@ -1559,7 +1559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = _closure1_slot15;
                             var10 = var10.CHANNEL_HEADER_CALL_BUTTON_TOOLTIPS;
                             var6.groupName = var10;
-                            var9 = function(arg0) { // Original name: children, environment: var9
+                            var9 = function arg0() {
                                 _fun91403: for (var _fun91403_ip = 0;;) switch (_fun91403_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -1587,7 +1587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = var6[var1];
                                         var2 = var2.bind(var4)(var1);
                                         var1 = {};
-                                        var5 = function() { // Original name: onClosePress, environment: var5
+                                        var5 = function() {
                                             var2 = _closure4_slot0;
                                             var0 = _closure1_slot14;
                                             var1 = var0.UNKNOWN;

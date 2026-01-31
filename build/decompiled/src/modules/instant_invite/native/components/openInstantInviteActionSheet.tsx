@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/native/components/openInstantInviteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openInstantInviteActionSheet, environment: var1
+    var1 = function arg0() {
         _fun67293: for (var _fun67293_ip = 0;;) switch (_fun67293_ip) {
             case 0:
                 var1 = arg0;

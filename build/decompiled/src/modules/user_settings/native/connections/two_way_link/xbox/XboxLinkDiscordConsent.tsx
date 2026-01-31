@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/connections/two_way_link/xbox/XboxLinkDiscordConsent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: XboxLinkDiscordConsent, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var10 = var1.callbackCode;
         var7 = var1.callbackState;

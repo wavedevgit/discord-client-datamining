@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: getStripe, environment: var1
+    var3 = function() {
         _fun29384: for (var _fun29384_ip = 0;;) switch (_fun29384_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var0 = function() { // Original name: _authenticatePaymentIntentForPaymentId, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 0:
                             var3 = arg0;
                             var _closure3_slot0 = var3;
-                            var4 = function(arg0) { // Original name: throwErr, environment: var0
+                            var4 = function arg0() {
                                 _fun29391: for (var _fun29391_ip = 0;;) switch (_fun29391_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validateExpiry = var4;
     var2.getStripe = var3;
-    var3 = function() { // Original name: getStripeClientMode, environment: var1
+    var3 = function() {
         _fun29393: for (var _fun29393_ip = 0;;) switch (_fun29393_ip) {
             case 0:
                 var0 = _closure1_slot6;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStripeClientMode = var3;
-    var3 = function(arg0) { // Original name: parseStripePaymentMethod, environment: var1
+    var3 = function arg0() {
         _fun29394: for (var _fun29394_ip = 0;;) switch (_fun29394_ip) {
             case 0:
                 var2 = arg0;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseStripePaymentMethod = var3;
-    var3 = function(arg0) { // Original name: parseBillingAddressInfoToStripeBillingDetails, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.name;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.parseBillingAddressInfoToStripeBillingDetails = var3;
-    var1 = function() { // Original name: authenticatePaymentIntentForPaymentId, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;

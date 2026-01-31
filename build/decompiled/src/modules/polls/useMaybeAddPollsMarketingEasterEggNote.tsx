@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useMaybeAddPollsMarketingEasterEggNote, environment: var1
+    var1 = function arg0() {
         _fun73998: for (var _fun73998_ip = 0;;) switch (_fun73998_ip) {
             case 0:
                 var5 = arg0;

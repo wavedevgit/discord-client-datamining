@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
     var1 = var1.Platform;
-    var1 = function(arg0, arg1, arg2) { // Original name: getStatusBarHeight, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun99870: for (var _fun99870_ip = 0;;) switch (_fun99870_ip) {
             case 0:
                 var0 = arg0;

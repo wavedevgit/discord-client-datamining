@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.progressBar = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot17 = var6;
-    var6 = function(arg0) { // Original name: convertMsToSecs, environment: var1
+    var6 = function arg0() {
         _fun111858: for (var _fun111858_ip = 0;;) switch (_fun111858_ip) {
             case 0:
                 var2 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var6;
-    var6 = function(arg0) { // Original name: MediaInfo, environment: var1
+    var6 = function arg0() {
         _fun111859: for (var _fun111859_ip = 0;;) switch (_fun111859_ip) {
             case 0:
                 var0 = arg0;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'lineClamp': 1,
                     'ellipsizeMode': 'clip'
                 };
-                var8 = function(arg0) { // Original name: onLayout, environment: var5
+                var8 = function arg0() {
                     var2 = _closure2_slot4;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var6 = var18.infoContent;
                 var1.style = var6;
-                var5 = function(arg0) { // Original name: onLayout, environment: var5
+                var5 = function arg0() {
                     var2 = _closure2_slot2;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'function MediaPlaybackPipTsx1(){const{withTiming,visible}=this.__closure;return{opacity:withTiming(visible?1:0,{duration:200})};}';
     var6.code = var7;
     var _closure1_slot20 = var6;
-    var6 = function(arg0) { // Original name: PiPControls, environment: var1
+    var6 = function arg0() {
         _fun111864: for (var _fun111864_ip = 0;;) switch (_fun111864_ip) {
             case 0:
                 var2 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var10[var0];
                 var4 = var9.bind(var3)(var2);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: u, environment: var1
+                var1 = function() {
                     _fun111866: for (var _fun111866_ip = 0;;) switch (_fun111866_ip) {
                         case 0:
                             var0 = {};
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_panel/native/MediaPlaybackPip.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun111867: for (var _fun111867_ip = 0;;) switch (_fun111867_ip) {
             case 0:
                 var0 = _closure1_slot17;
@@ -935,7 +935,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 249:
                 var0 = !var10;
                 var _closure2_slot4 = var0;
-                var4 = function(arg0, arg1, arg2) { // Original name: useAnalyticsEffects, environment: var7
+                var4 = function arg0, arg1, arg2() {
                     var5 = arg0;
                     var6 = arg1;
                     var1 = arg2;
@@ -1316,7 +1316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13 = var11.bind(var6)(var2, var5);
                 var _closure2_slot8 = var13;
-                var2 = function(arg0, arg1) { // Original name: usePlaybackCompletionEffects, environment: var7
+                var2 = function arg0, arg1() {
                     _fun111878: for (var _fun111878_ip = 0;;) switch (_fun111878_ip) {
                         case 0:
                             var2 = arg0;
@@ -1560,7 +1560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var16.container;
                 var0.style = var10;
                 var0.activeOpacity = var9;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     _fun111886: for (var _fun111886_ip = 0;;) switch (_fun111886_ip) {
                         case 0:
                             var1 = _closure2_slot0;

@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot1 = var3;
             var1 = var1.View;
             var _closure1_slot2 = var1;
-            var1 = function(arg0) { // Original name: warn, environment: var4
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = global;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot3 = var1;
-            var3 = function(arg0) { // Original name: MaskFallback, environment: var4
+            var3 = function arg0() {
                 var3 = _closure1_slot3;
                 var2 = undefined;
                 var1 = 'Mask';
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
             };
-            var1 = function(arg0) { // Original name: UnmaskFallback, environment: var4
+            var1 = function arg0() {
                 var3 = _closure1_slot3;
                 var2 = undefined;
                 var1 = 'Unmask';
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
             };
-            var7 = function(arg0) { // Original name: hasViewManagerConfig, environment: var4
+            var7 = function arg0() {
                 _fun13143: for (var _fun13143_ip = 0;;) switch (_fun13143_ip) {
                     case 0:
                         var0 = _closure1_slot1;

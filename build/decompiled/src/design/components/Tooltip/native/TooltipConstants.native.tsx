@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tooltip/native/TooltipConstants.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: tooltipEnterExitAnimation, environment: var1
+    var1 = function arg0() {
         _fun57354: for (var _fun57354_ip = 0;;) switch (_fun57354_ip) {
             case 0:
                 var3 = -8;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 8;
             case 22:
                 var _closure2_slot0 = var3;
-                var0 = function(arg0, arg1) { // Original name: o, environment: var0
+                var0 = function arg0, arg1() {
                     _fun57355: for (var _fun57355_ip = 0;;) switch (_fun57355_ip) {
                         case 0:
                             var6 = arg0;

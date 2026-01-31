@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var1 = var1.jsx;
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: showActionSheet, environment: var4
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.content;
         var _closure2_slot0 = var2;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var1;
     var3 = {};
-    var7 = function(arg0, arg1, arg2, arg3) { // Original name: openLazy, environment: var4
+    var7 = function arg0, arg1, arg2, arg3() {
         _fun28093: for (var _fun28093_ip = 0;;) switch (_fun28093_ip) {
             case 0:
                 var4 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.openLazy = var7;
-    var7 = function(arg0) { // Original name: hideActionSheet, environment: var4
+    var7 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.hideActionSheet = var7;
-    var4 = function() { // Original name: hideAllActionSheets, environment: var4
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot3 = var3;
-    var3 = function(arg0, arg1) { // Original name: applySorting, environment: var1
+    var3 = function arg0, arg1() {
         var3 = arg1;
         var2 = new Array(0);
         var6 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/useActivityShelfItemsSorting.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useActivityShelfItemsSorting, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;

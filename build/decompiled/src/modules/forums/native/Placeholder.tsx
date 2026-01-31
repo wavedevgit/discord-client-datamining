@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: PlaceholderRow, environment: var1
+    var0 = function() {
         var1 = _closure1_slot7;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1[var6];
                 var11 = var4.bind(var3)(var2);
                 var4 = var11.useAnimatedStyle;
-                var2 = function() { // Original name: R, environment: var5
+                var2 = function() {
                     var0 = {};
                     var2 = _closure2_slot1;
                     var1 = var2.get;

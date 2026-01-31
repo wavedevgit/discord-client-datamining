@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/canViewInviteModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: canViewInviteModal, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun65965: for (var _fun65965_ip = 0;;) switch (_fun65965_ip) {
             case 0:
                 var7 = arg0;

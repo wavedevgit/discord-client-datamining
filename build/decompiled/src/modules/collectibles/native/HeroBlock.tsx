@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var6.bind(var7)(var3);
     var _closure1_slot13 = var3;
-    var3 = function() { // Original name: SkeletonLoading, environment: var1
+    var3 = function() {
         var6 = _closure1_slot1;
         var9 = _closure1_slot2;
         var0 = 7;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/HeroBlock.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun88134: for (var _fun88134_ip = 0;;) switch (_fun88134_ip) {
             case 0:
                 var0 = arg0;
@@ -604,7 +604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.lg;
                 var14.radius = var18;
                 var12.androidRippleConfig = var14;
-                var14 = function() { // Original name: onPress, environment: var25
+                var14 = function() {
                     _fun88137: for (var _fun88137_ip = 0;;) switch (_fun88137_ip) {
                         case 0:
                             var6 = _closure2_slot4;
@@ -905,7 +905,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var36 = var36.ynollq;
                 var36 = var37.bind(var38)(var36);
                 var34.text = var36;
-                var36 = function() { // Original name: onPress, environment: var25
+                var36 = function() {
                     var2 = _closure2_slot2;
                     var1 = var2.push;
                     var0 = _closure1_slot8;
@@ -1009,7 +1009,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var30.bind(var31)(var27);
                 var20.accessibilityLabel = var27;
                 var20.data = var21;
-                var27 = function(arg0) { // Original name: renderItem, environment: var25
+                var27 = function arg0() {
                     var1 = arg0;
                     var0 = var1.item;
                     var8 = var1.index;
@@ -1058,7 +1058,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.estimatedItemSize = var26;
                 var26 = false;
                 var20.showsHorizontalScrollIndicator = var26;
-                var26 = function() { // Original name: ListHeaderComponent, environment: var25
+                var26 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot5;
                     var1 = {};
@@ -1077,7 +1077,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var20.ListHeaderComponent = var26;
-                var26 = function() { // Original name: ListFooterComponent, environment: var25
+                var26 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot5;
                     var1 = {};
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var20.ListFooterComponent = var26;
-                var25 = function() { // Original name: ItemSeparatorComponent, environment: var25
+                var25 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot5;
                     var1 = {};

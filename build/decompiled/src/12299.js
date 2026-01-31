@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     _fun94193: for (var _fun94193_ip = 0;;) switch (_fun94193_ip) {
         case 0:
-            var1 = function(arg0) { // Original name: keyCode, environment: var0
+            var1 = function arg0() {
                 _fun94194: for (var _fun94194_ip = 0;;) switch (_fun94194_ip) {
                     case 0:
                         var2 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            var2 = function(arg0, arg1) { // Original name: isEventKey, environment: var0
+            var2 = function arg0, arg1() {
                 _fun94195: for (var _fun94195_ip = 0;;) switch (_fun94195_ip) {
                     case 0:
                         var0 = arg0;

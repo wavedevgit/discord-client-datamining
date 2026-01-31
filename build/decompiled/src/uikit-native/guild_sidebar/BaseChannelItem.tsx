@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var9;
-    var5 = function(arg0) { // Original name: BaseChannelSubtitle, environment: var1
+    var5 = function arg0() {
         _fun89858: for (var _fun89858_ip = 0;;) switch (_fun89858_ip) {
             case 0:
                 var0 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0) { // Original name: useChannelNameTextProps, environment: var1
+    var4 = function arg0() {
         _fun89859: for (var _fun89859_ip = 0;;) switch (_fun89859_ip) {
             case 0:
                 var1 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0) { // Original name: getChannelSubtitleTextProps, environment: var1
+    var3 = function arg0() {
         _fun89860: for (var _fun89860_ip = 0;;) switch (_fun89860_ip) {
             case 0:
                 var2 = arg0;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'uikit-native/guild_sidebar/BaseChannelItem.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0) { // Original name: BaseChannelItem, environment: var1
+    var7 = function arg0() {
         _fun89862: for (var _fun89862_ip = 0;;) switch (_fun89862_ip) {
             case 0:
                 var6 = arg0;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var7;
     var2.ChannelModes = var6;
     var2.BaseChannelSubtitle = var5;
-    var5 = function(arg0) { // Original name: BaseChannelIcon, environment: var1
+    var5 = function arg0() {
         _fun89864: for (var _fun89864_ip = 0;;) switch (_fun89864_ip) {
             case 0:
                 var0 = arg0;
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.BaseChannelIcon = var5;
     var2.useChannelNameTextProps = var4;
     var2.getChannelSubtitleTextProps = var3;
-    var1 = function(arg0) { // Original name: BaseChannelName, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.mode;
         var11 = var0.name;

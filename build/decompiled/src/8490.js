@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var11 = dependencyMap;
             var _closure1_slot0 = var12;
             var _closure1_slot1 = var11;
-            var3 = function(arg0, arg1) { // Original name: useGenericKeyboardHandler, environment: var1
+            var3 = function arg0, arg1() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var4 = _closure1_slot0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot2 = var5;
             var4 = var4.useLayoutEffect;
             var _closure1_slot3 = var4;
-            var4 = function() { // Original name: useResizeMode, environment: var1
+            var4 = function() {
                 var3 = _closure1_slot2;
                 var0 = undefined;
                 var2 = function() { // Environment: var1
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
         case 156:
             var2.useResizeMode = var4;
-            var4 = function() { // Original name: useKeyboardAnimation, environment: var1
+            var4 = function() {
                 var1 = _closure1_slot4;
                 var2 = undefined;
                 var1 = var1.bind(var2)();
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.useKeyboardAnimation = var4;
-            var4 = function() { // Original name: useReanimatedKeyboardAnimation, environment: var1
+            var4 = function() {
                 var1 = _closure1_slot4;
                 var2 = undefined;
                 var1 = var1.bind(var2)();
@@ -138,7 +138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.useReanimatedKeyboardAnimation = var4;
             var2.useGenericKeyboardHandler = var3;
-            var3 = function(arg0, arg1) { // Original name: useKeyboardHandler, environment: var1
+            var3 = function arg0, arg1() {
                 var2 = _closure1_slot4;
                 var0 = undefined;
                 var2 = var2.bind(var0)();
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.useKeyboardHandler = var3;
-            var3 = function() { // Original name: useKeyboardController, environment: var1
+            var3 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 3;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.useKeyboardController = var3;
-            var3 = function() { // Original name: useReanimatedFocusedInput, environment: var1
+            var3 = function() {
                 var0 = {};
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.useReanimatedFocusedInput = var3;
-            var1 = function(arg0, arg1) { // Original name: useFocusedInputHandler, environment: var1
+            var1 = function arg0, arg1() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var4 = _closure1_slot0;

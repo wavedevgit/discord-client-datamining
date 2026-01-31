@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: StrangerDangerWarningBanner, environment: var6
+    var1 = function arg0() {
         _fun89080: for (var _fun89080_ip = 0;;) switch (_fun89080_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = _closure3_slot0;
                         var9 = var10.bind(var0)(var9);
                         var1.onBlock = var9;
-                        var9 = function() { // Original name: onSuccess, environment: var6
+                        var9 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 13;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var1.onSuccess = var9;
-                        var6 = function() { // Original name: onIgnore, environment: var6
+                        var6 = function() {
                             var1 = _closure2_slot4;
                             var0 = undefined;
                             var1 = var1.bind(var0)();
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.text = var10;
                 var10 = 'primary';
                 var8.variant = var10;
-                var4 = function() { // Original name: onpress, environment: var4
+                var4 = function() {
                     var13 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 12;

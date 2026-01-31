@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/powerups/experiments/GuildPowerupsMobileExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: useGuildPowerupsMobileEnabledExperiment, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.useConfig;
         var0 = {};
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGuildPowerupsMobileEnabledExperiment = var3;
-    var1 = function(arg0) { // Original name: useGuildPowerupsMobileNotificationsEnabled, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.useConfig;
         var0 = {};

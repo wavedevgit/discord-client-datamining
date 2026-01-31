@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: RequestToSpeakHeader, environment: var1
+    var0 = function arg0() {
         _fun67725: for (var _fun67725_ip = 0;;) switch (_fun67725_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.FormSwitch;
                 var8 = {};
                 var8.value = var11;
-                var10 = function(arg0) { // Original name: onValueChange, environment: var10
+                var10 = function arg0() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: ManageSelfSpeakerButton, environment: var1
+    var0 = function arg0() {
         _fun67727: for (var _fun67727_ip = 0;;) switch (_fun67727_ip) {
             case 0:
                 var0 = arg0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 'button';
                 var4.accessibilityRole = var11;
                 var4.accessibilityLabel = var20;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun67729: for (var _fun67729_ip = 0;;) switch (_fun67729_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/RequestToSpeakActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RequestToSpeakActionSheet, environment: var1
+    var1 = function arg0() {
         _fun67730: for (var _fun67730_ip = 0;;) switch (_fun67730_ip) {
             case 0:
                 var0 = arg0;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var13 = var13.container;
                 var8.style = var13;
-                var11 = function(arg0) { // Original name: onLayout, environment: var11
+                var11 = function arg0() {
                     _fun67732: for (var _fun67732_ip = 0;;) switch (_fun67732_ip) {
                         case 0:
                             var0 = arg0;

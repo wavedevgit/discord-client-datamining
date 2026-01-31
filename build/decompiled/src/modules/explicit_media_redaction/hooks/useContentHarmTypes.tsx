@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: useEnabledHarmTypesBitmaskForChannelAndAuthorId, environment: var1
+    var3 = function arg0, arg1() {
         _fun72960: for (var _fun72960_ip = 0;;) switch (_fun72960_ip) {
             case 0:
                 var8 = arg1;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/explicit_media_redaction/hooks/useContentHarmTypes.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useEnabledHarmTypesBitmaskForChannelAndAuthorId = var3;
-    var1 = function(arg0) { // Original name: useEnabledHarmTypesBitmaskForMessage, environment: var1
+    var1 = function arg0() {
         _fun72968: for (var _fun72968_ip = 0;;) switch (_fun72968_ip) {
             case 0:
                 var2 = arg0;

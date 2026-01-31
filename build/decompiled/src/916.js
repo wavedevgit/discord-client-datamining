@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: instrumentConsole, environment: var0
+    var2 = function() {
         _fun9577: for (var _fun9577_ip = 0;;) switch (_fun9577_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0) { // Original name: addConsoleInstrumentationHandler, environment: var0
+    var0 = function arg0() {
         var3 = _closure1_slot0;
         var5 = _closure1_slot1;
         var2 = 0;

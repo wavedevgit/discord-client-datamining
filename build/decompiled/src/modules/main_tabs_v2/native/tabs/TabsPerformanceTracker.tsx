@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: trackForScreen, environment: var1
+    var0 = function arg0, arg1() {
         _fun100673: for (var _fun100673_ip = 0;;) switch (_fun100673_ip) {
             case 0:
                 var5 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/TabsPerformanceTracker.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: trackTabPressed, environment: var1
+    var3 = function arg0() {
         _fun100674: for (var _fun100674_ip = 0;;) switch (_fun100674_ip) {
             case 0:
                 var2 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackTabPressed = var3;
-    var1 = function(arg0) { // Original name: useTrackTabPerformance, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.now;
                     var1 = var1.bind(var3)();
                     var2.layoutEffectTime = var1;
-                    var6 = function() { // Original name: log, environment: var0
+                    var6 = function() {
                         var3 = _closure3_slot0;
                         var0 = global;
                         var1 = var0.performance;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = undefined;
                     var3 = var8.bind(var1)(var2);
                     var2 = var3.runOnUI;
-                    var0 = function() { // Original name: o, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 4;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.now;
                     var1 = var1.bind(var3)();
                     var2.effectTime = var1;
-                    var6 = function() { // Original name: log, environment: var0
+                    var6 = function() {
                         var3 = _closure3_slot0;
                         var0 = global;
                         var1 = var0.performance;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = undefined;
                     var3 = var8.bind(var1)(var2);
                     var2 = var3.runOnUI;
-                    var0 = function() { // Original name: o, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 4;

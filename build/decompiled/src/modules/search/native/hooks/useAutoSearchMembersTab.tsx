@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/hooks/useAutoSearchMembersTab.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useAutoSearchMembersTab, environment: var1
+    var1 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var4;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4.autoTrackExposure = var13;
                                 var4 = var11.bind(var12)(var8, var4);
                                 var8 = var4.enabled;
-                                var0 = function(arg0) { // Original name: getMemberSearchChannelId, environment: var0
+                                var0 = function arg0() {
                                     _fun106930: for (var _fun106930_ip = 0;;) switch (_fun106930_ip) {
                                         case 0:
                                             var3 = _closure1_slot4;

@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'sentryLogo': '#ffffff'
     };
     var _closure1_slot4 = var1;
-    var4 = function() { // Original name: getTheme, environment: var4
+    var4 = function() {
         _fun13045: for (var _fun13045_ip = 0;;) switch (_fun13045_ip) {
             case 0:
                 var1 = _closure1_slot0;

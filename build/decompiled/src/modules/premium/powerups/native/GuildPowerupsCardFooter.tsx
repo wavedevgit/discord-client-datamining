@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var10;
-    var7 = function(arg0) { // Original name: GuildPowerupCardFooterActive, environment: var1
+    var7 = function arg0() {
         var0 = arg0;
         var8 = var0.text;
         var0 = _closure1_slot6;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var7;
-    var6 = function(arg0) { // Original name: GuildPowerupCardFooterExpiring, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var13 = var0.dateString;
         var0 = _closure1_slot6;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var6;
-    var5 = function(arg0) { // Original name: GuildPowerupCardFooterRemoving, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var13 = var0.removingAt;
         var0 = _closure1_slot6;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var5;
-    var4 = function(arg0) { // Original name: GuildPowerupCardFooterStatus, environment: var1
+    var4 = function arg0() {
         _fun102430: for (var _fun102430_ip = 0;;) switch (_fun102430_ip) {
             case 0:
                 var0 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function(arg0) { // Original name: GuildPowerupCardFooterCost, environment: var1
+    var3 = function arg0() {
         _fun102431: for (var _fun102431_ip = 0;;) switch (_fun102431_ip) {
             case 0:
                 var0 = arg0;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildPowerupCardFooterRemoving = var5;
     var2.GuildPowerupCardFooterStatus = var4;
     var2.GuildPowerupCardFooterCost = var3;
-    var1 = function(arg0) { // Original name: GuildPowerupsCardFooter, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = _closure1_slot6;
         var3 = undefined;

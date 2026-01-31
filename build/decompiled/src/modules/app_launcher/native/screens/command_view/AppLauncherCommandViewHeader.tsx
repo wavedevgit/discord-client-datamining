@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5 + var4;
     var2.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT = var4;
     var2.useStyles = var3;
-    var1 = function(arg0) { // Original name: AppLauncherCommandViewHeader, environment: var1
+    var1 = function arg0() {
         _fun108048: for (var _fun108048_ip = 0;;) switch (_fun108048_ip) {
             case 0:
                 var1 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2[var11];
                 var8 = var1.bind(var3)(var6);
                 var7 = var8.useAnimatedStyle;
-                var6 = function() { // Original name: A, environment: var0
+                var6 = function() {
                     var0 = {};
                     var6 = _closure1_slot0;
                     var8 = _closure1_slot2;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2[var11];
                 var10 = var1.bind(var3)(var6);
                 var8 = var10.useAnimatedStyle;
-                var7 = function() { // Original name: E, environment: var0
+                var7 = function() {
                     var0 = {};
                     var2 = {};
                     var4 = _closure1_slot5;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2[var11];
                 var8 = var1.bind(var3)(var7);
                 var7 = var8.useAnimatedStyle;
-                var0 = function() { // Original name: N, environment: var0
+                var0 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildTemplatesItem, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.guildTemplate;
         var _closure2_slot0 = var5;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.Icon = var6;
         var5 = var5.label;
         var0.message = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure2_slot1;
             var1 = _closure2_slot0;
             var0 = undefined;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.backButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot16 = var3;
-    var3 = function() { // Original name: GuildTemplatesHeader, environment: var1
+    var3 = function() {
         var0 = _closure1_slot16;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var3;
-    var3 = function(arg0) { // Original name: GuildTemplatesJoinFooter, environment: var1
+    var3 = function arg0() {
         _fun80134: for (var _fun80134_ip = 0;;) switch (_fun80134_ip) {
             case 0:
                 var0 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.footerButton;
                 var7.style = var12;
                 var7.text = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     _fun80136: for (var _fun80136_ip = 0;;) switch (_fun80136_ip) {
                         case 0:
                             var3 = _closure2_slot0;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/GuildTemplates.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildTemplates, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var12 = var1.trigger;
         var _closure2_slot0 = var12;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var1 = var5.bind(var4)(var1, var2);
-        var19 = function(arg0) { // Original name: onGuildTemplatePress, environment: var0
+        var19 = function arg0() {
             _fun80139: for (var _fun80139_ip = 0;;) switch (_fun80139_ip) {
                 case 0:
                     var4 = arg0;

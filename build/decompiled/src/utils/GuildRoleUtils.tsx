@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun18980: for (var _fun18980_ip = 0;;) switch (_fun18980_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun18982: for (var _fun18982_ip = 0;;) switch (_fun18982_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var3 = function(arg0, arg1) { // Original name: compareGuildRoles, environment: var1
+    var3 = function arg0, arg1() {
         _fun18983: for (var _fun18983_ip = 0;;) switch (_fun18983_ip) {
             case 0:
                 var3 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'utils/GuildRoleUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: sortGuildRoleRecords, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var2 = var0.sort;
         var1 = _closure1_slot6;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sortGuildRoleRecords = var4;
     var2.compareGuildRoles = var3;
-    var3 = function(arg0, arg1) { // Original name: doesRoleSortHigher, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot6;
         var2 = undefined;
         var1 = arg0;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.doesRoleSortHigher = var3;
-    var3 = function(arg0, arg1) { // Original name: sortInviteRoles, environment: var1
+    var3 = function arg0, arg1() {
         _fun18986: for (var _fun18986_ip = 0;;) switch (_fun18986_ip) {
             case 0:
                 var1 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.sortInviteRoles = var3;
-    var3 = function(arg0, arg1) { // Original name: inviteRoleToDisplayData, environment: var1
+    var3 = function arg0, arg1() {
         _fun18987: for (var _fun18987_ip = 0;;) switch (_fun18987_ip) {
             case 0:
                 var2 = arg1;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.inviteRoleToDisplayData = var3;
-    var1 = function(arg0, arg1) { // Original name: filterRoleDeletes, environment: var1
+    var1 = function arg0, arg1() {
         _fun18988: for (var _fun18988_ip = 0;;) switch (_fun18988_ip) {
             case 0:
                 var8 = arg0;

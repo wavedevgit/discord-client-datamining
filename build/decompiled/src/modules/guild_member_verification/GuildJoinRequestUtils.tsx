@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: isActionedApplicationStatus, environment: var1
+    var3 = function arg0() {
         _fun27706: for (var _fun27706_ip = 0;;) switch (_fun27706_ip) {
             case 0:
                 var2 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_member_verification/GuildJoinRequestUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.isActionedApplicationStatus = var3;
-    var3 = function(arg0) { // Original name: isSubmittedApplicationStatus, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isSubmittedApplicationStatus = var3;
-    var3 = function(arg0) { // Original name: isApprovedAndAcked, environment: var1
+    var3 = function arg0() {
         _fun27708: for (var _fun27708_ip = 0;;) switch (_fun27708_ip) {
             case 0:
                 var1 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isApprovedAndAcked = var3;
-    var1 = function(arg0) { // Original name: isActionedAndNotAcked, environment: var1
+    var1 = function arg0() {
         _fun27709: for (var _fun27709_ip = 0;;) switch (_fun27709_ip) {
             case 0:
                 var1 = arg0;

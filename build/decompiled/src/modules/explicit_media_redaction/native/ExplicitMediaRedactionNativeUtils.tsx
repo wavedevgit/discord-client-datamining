@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11["5k5OFp"];
                 var11 = var12.bind(var13)(var11);
                 var3.label = var11;
-                var11 = function() { // Original name: onPress, environment: var4
+                var11 = function() {
                     _fun81253: for (var _fun81253_ip = 0;;) switch (_fun81253_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.S49Uad;
                 var11 = var12.bind(var13)(var11);
                 var3.label = var11;
-                var11 = function() { // Original name: onPress, environment: var4
+                var11 = function() {
                     var2 = _closure2_slot0;
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5["D/157Y"];
                 var5 = var10.bind(var11)(var5);
                 var2.label = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot0;
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleSensitiveMediaFilterPress = var3;
-    var1 = function(arg0, arg1) { // Original name: shouldAgeVerifyForSearchMedia, environment: var1
+    var1 = function arg0, arg1() {
         _fun81256: for (var _fun81256_ip = 0;;) switch (_fun81256_ip) {
             case 0:
                 var3 = arg0;

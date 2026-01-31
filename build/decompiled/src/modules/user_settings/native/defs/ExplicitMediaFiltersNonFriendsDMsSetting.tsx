@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function() { // Original name: useObscuredContentNonFriendsDmSettingValue, environment: var9
+    var3 = function() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 1;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.bind(var1)();
         return var0;
     };
-    var1 = function() { // Original name: onObscuredContentNonFriendsDmOnPress, environment: var9
+    var1 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 3;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot3;
         var5 = var5.bind(var0)();
         var1.subtitle = var5;
-        var5 = function(arg0) { // Original name: handlePress, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 3;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var3)(var1);
         return var0;
     };
-    var10 = function() { // Original name: getTitle, environment: var9
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 4;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var8.createPressable;
     var4 = {};
     var4.title = var10;
-    var10 = function() { // Original name: parent, environment: var9
+    var10 = function() {
         var0 = _closure1_slot2;
         var0 = var0.SENSITIVE_CONTENT_FILTERS;
         return var0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.parent = var10;
     var4.useTrailing = var3;
     var4.onPress = var1;
-    var9 = function() { // Original name: getSearchTerms, environment: var9
+    var9 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var1 = 4;

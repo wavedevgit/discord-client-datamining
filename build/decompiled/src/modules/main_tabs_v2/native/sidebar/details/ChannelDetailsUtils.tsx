@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/sidebar/details/ChannelDetailsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getChannelDetailsButtons, environment: var1
+    var3 = function arg0() {
         _fun90762: for (var _fun90762_ip = 0;;) switch (_fun90762_ip) {
             case 0:
                 var1 = arguments[1];
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelDetailsButtons = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: navigateToChannelDetailsScreen, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var3 = arg0;
         var2 = var3.navigate;
         var1 = {};

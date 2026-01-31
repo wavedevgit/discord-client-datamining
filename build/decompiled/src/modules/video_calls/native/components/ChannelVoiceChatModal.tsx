@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/ChannelVoiceChatModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelVoiceChatModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.channel;
         var _closure2_slot0 = var6;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.style = var7;
         var5 = var3.bind(var2)(var6, var5);
         var0.titleIcon = var5;
-        var4 = function() { // Original name: render, environment: var4
+        var4 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;

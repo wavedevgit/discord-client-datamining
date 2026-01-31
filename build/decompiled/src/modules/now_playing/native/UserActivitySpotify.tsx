@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var4;
     var _closure1_slot3 = var14;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun62316: for (var _fun62316_ip = 0;;) switch (_fun62316_ip) {
             case 0:
                 var3 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun62317: for (var _fun62317_ip = 0;;) switch (_fun62317_ip) {
             case 0:
             case 2: // try_start_0
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var11 = function() { // Original name: canOpenSpotifyUrl, environment: var1
+    var11 = function() {
         var2 = _closure1_slot9;
         var1 = var2.canOpenURL;
         var5 = _closure1_slot10;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var11;
-    var10 = function() { // Original name: attributeInstall, environment: var1
+    var10 = function() {
         var2 = _closure1_slot2;
         var3 = _closure1_slot3;
         var0 = 9;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var10;
-    var9 = function(arg0, arg1, arg2) { // Original name: openUrl, environment: var1
+    var9 = function arg0, arg1, arg2() {
         _fun62322: for (var _fun62322_ip = 0;;) switch (_fun62322_ip) {
             case 0:
                 var8 = arg1;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var9;
-    var8 = function(arg0) { // Original name: openTrack, environment: var1
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.sync_id;
         var _closure2_slot0 = var0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var8;
-    var7 = function(arg0, arg1, arg2) { // Original name: openArtist, environment: var1
+    var7 = function arg0, arg1, arg2() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var7;
-    var6 = function(arg0, arg1) { // Original name: openAlbum, environment: var1
+    var6 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var3;
     var4 = var12.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: SpotifyPlayButton, environment: var5
+        var3 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'renderIcon';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = _closure1_slot13;
             var5 = _closure1_slot1;
             var6 = _closure1_slot3;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var4 = this;
             var0 = var4.props;
             var12 = var0.activity;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var3.bind(var0)(var4);
     var4 = var12.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: SpotifyTrack, environment: var0
+        var3 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = var0.props;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = var1.bind(var2)(var0);
             var1 = var0.LegacyText;
             var0 = {};
-            var5 = function() { // Original name: onPress, environment: var5
+            var5 = function() {
                 _fun62347: for (var _fun62347_ip = 0;;) switch (_fun62347_ip) {
                     case 0:
                         var2 = _closure3_slot1;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var3.bind(var0)(var4);
     var15 = var12.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: SpotifyArtists, environment: var5
+        var3 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -674,7 +674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'renderLink';
         var4.key = var0;
-        var0 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var0 = function arg0, arg1, arg2() {
             _fun62351: for (var _fun62351_ip = 0;;) switch (_fun62351_ip) {
                 case 0:
                     var4 = arg1;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var6.bind(var2)(var5);
                     var6 = var5.LegacyText;
                     var5 = {};
-                    var8 = function() { // Original name: onPress, environment: var8
+                    var8 = function() {
                         _fun62352: for (var _fun62352_ip = 0;;) switch (_fun62352_ip) {
                             case 0:
                                 var2 = _closure3_slot2;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = var0.props;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var0)(var15);
     var12 = var12.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: SpotifyAlbum, environment: var0
+        var3 = function arg0() {
             var5 = this;
             var10 = 0;
             var6 = copyRestArgs(var10);
@@ -832,7 +832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var4 = this;
             var3 = _closure1_slot13;
             var1 = _closure1_slot0;

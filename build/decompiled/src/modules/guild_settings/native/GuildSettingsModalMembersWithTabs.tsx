@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 1;
             case 226:
                 var1.defaultIndex = var6;
-                var6 = function(arg0) { // Original name: onSetActiveIndex, environment: var0
+                var6 = function arg0() {
                     _fun104860: for (var _fun104860_ip = 0;;) switch (_fun104860_ip) {
                         case 0:
                             var1 = 0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot2;
                             var1 = var2.setOptions;
                             var0 = {};
-                            var4 = function() { // Original name: headerRight, environment: var3
+                            var4 = function() {
                                 var0 = null;
                                 return var0;
                             };
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot2;
                             var1 = var2.setOptions;
                             var0 = {};
-                            var3 = function() { // Original name: headerRight, environment: var3
+                            var3 = function() {
                                 _fun104861: for (var _fun104861_ip = 0;;) switch (_fun104861_ip) {
                                     case 0:
                                         var3 = _closure1_slot6;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var6.bind(var7)(var5);
                                     case 97:
                                         var0.items = var4;
-                                        var4 = function(arg0) { // Original name: children, environment: var4
+                                        var4 = function arg0() {
                                             var2 = arg0;
                                             var5 = var2.ref;
                                             var0 = null;

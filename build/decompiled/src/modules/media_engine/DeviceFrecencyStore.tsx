@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun31329: for (var _fun31329_ip = 0;;) switch (_fun31329_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: handleSetDevice, environment: var3
+    var0 = function arg0, arg1() {
         _fun31332: for (var _fun31332_ip = 0;;) switch (_fun31332_ip) {
             case 0:
                 var2 = arg0;
@@ -130,17 +130,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.videoDeviceFrecency = var7;
     var _closure1_slot12 = var1;
     var10 = {};
-    var1 = function() { // Original name: afterCompute, environment: var3
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var10.afterCompute = var1;
-    var1 = function() { // Original name: computeBonus, environment: var3
+    var1 = function() {
         var0 = 100;
         return var0;
     };
     var10.computeBonus = var1;
-    var1 = function(arg0) { // Original name: lookupKey, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: DeviceFrecencyStore, environment: var5
+        var3 = function() {
             _fun31337: for (var _fun31337_ip = 0;;) switch (_fun31337_ip) {
                 case 0:
                     var3 = this;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var5 = this;
             var1 = arg0;
             var _closure3_slot0 = var1;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'reset';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var1 = var0.AUDIO_INPUT;
             var2 = new Array(3);
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'track';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun31342: for (var _fun31342_ip = 0;;) switch (_fun31342_ip) {
                 case 0:
                     var1 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSampling';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot13;
             var0 = arg0;
             var1 = var1[var0];
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'startSampling';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot13;
             var0 = arg0;
             var1 = var1[var0];
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'stopSampling';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun31345: for (var _fun31345_ip = 0;;) switch (_fun31345_ip) {
                 case 0:
                     var5 = arg0;
@@ -490,12 +490,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun31345
                     }
                 case 62:
-                    var7 = function(arg0) { // Original name: getConfigForDeviceType, environment: var6
+                    var7 = function arg0() {
                         var1 = {};
                         var0 = _closure1_slot9;
                         var4 = var0.AUDIO_INPUT;
                         var2 = {};
-                        var5 = function(arg0) { // Original name: getCurrentDeviceId, environment: var3
+                        var5 = function arg0() {
                             var1 = arg0;
                             var0 = var1.getInputDeviceId;
                             var0 = var0.bind(var1)();
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1[var4] = var2;
                         var4 = var0.AUDIO_OUTPUT;
                         var2 = {};
-                        var5 = function(arg0) { // Original name: getCurrentDeviceId, environment: var3
+                        var5 = function arg0() {
                             var1 = arg0;
                             var0 = var1.getOutputDeviceId;
                             var0 = var0.bind(var1)();
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1[var4] = var2;
                         var2 = var0.VIDEO_INPUT;
                         var0 = {};
-                        var3 = function(arg0) { // Original name: getCurrentDeviceId, environment: var3
+                        var3 = function arg0() {
                             var1 = arg0;
                             var0 = var1.getVideoDeviceId;
                             var0 = var0.bind(var1)();
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = _closure1_slot9;
             var4 = var1.AUDIO_INPUT;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDeviceIdsSortedByFrecency';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot15;
             var0 = arg0;
             var0 = var1[var0];
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUsageStats';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var3 = {};
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var15 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: AUDIO_SET_INPUT_DEVICE, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot18;
         var0 = _closure1_slot9;
         var2 = var0.AUDIO_INPUT;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.AUDIO_SET_INPUT_DEVICE = var6;
-    var6 = function(arg0) { // Original name: AUDIO_SET_OUTPUT_DEVICE, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot18;
         var0 = _closure1_slot9;
         var2 = var0.AUDIO_OUTPUT;
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.AUDIO_SET_OUTPUT_DEVICE = var6;
-    var6 = function(arg0) { // Original name: MEDIA_ENGINE_SET_VIDEO_DEVICE, environment: var3
+    var6 = function arg0() {
         var3 = _closure1_slot18;
         var0 = _closure1_slot9;
         var2 = var0.VIDEO_INPUT;
@@ -876,7 +876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MEDIA_ENGINE_SET_VIDEO_DEVICE = var6;
-    var6 = function(arg0) { // Original name: handleSpeaking, environment: var3
+    var6 = function arg0() {
         _fun31363: for (var _fun31363_ip = 0;;) switch (_fun31363_ip) {
             case 0:
                 var0 = arg0;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SPEAKING = var6;
-    var6 = function() { // Original name: handleConnect, environment: var3
+    var6 = function() {
         var1 = _closure1_slot16;
         var0 = var1.reset;
         var0 = var0.bind(var1)();

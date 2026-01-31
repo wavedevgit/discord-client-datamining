@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: InteractionModal, environment: var1
+    var3 = function arg0() {
         _fun113374: for (var _fun113374_ip = 0;;) switch (_fun113374_ip) {
             case 0:
                 var23 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.error = var9;
     var4 = var7.bind(var8)(var4);
     var _closure1_slot8 = var4;
-    var4 = function() { // Original name: onClose, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/interaction_components/native/InteractionModal.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: openInteractionModal, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 6;

@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.title = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: HeaderTitle, environment: var1
+    var1 = function arg0() {
         _fun51085: for (var _fun51085_ip = 0;;) switch (_fun51085_ip) {
             case 0:
                 var4 = arg0;

@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var2;
     var2 = '__esModule';
     var2 = var5.bind(var6)(var3, var2, var4);
-    var2 = function(arg0) { // Original name: runtimeHashMessageKey, environment: var1
+    var2 = function arg0() {
         _fun13950: for (var _fun13950_ip = 0;;) switch (_fun13950_ip) {
             case 0:
                 var2 = _closure1_slot0;

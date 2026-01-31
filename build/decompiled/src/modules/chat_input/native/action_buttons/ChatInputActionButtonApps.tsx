@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputActionButtonApps, environment: var1
+    var1 = function arg0() {
         _fun90258: for (var _fun90258_ip = 0;;) switch (_fun90258_ip) {
             case 0:
                 var0 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.disabled = var12;
                 var5.active = var9;
                 var5.activeIconStyle = var11;
-                var10 = function(arg0) { // Original name: onPress, environment: var10
+                var10 = function arg0() {
                     var0 = global;
                     var2 = var0.clearTimeout;
                     var0 = _closure2_slot7;

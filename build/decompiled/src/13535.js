@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var5 = function(arg0) { // Original name: thumbHashToRGBA, environment: var1
+    var5 = function arg0() {
         _fun104077: for (var _fun104077_ip = 0;;) switch (_fun104077_ip) {
             case 0:
                 var3 = arg0;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 302:
                 var _closure2_slot1 = var6;
                 var _closure2_slot2 = var47;
-                var4 = function(arg0, arg1, arg2) { // Original name: decodeChannel, environment: var4
+                var4 = function arg0, arg1, arg2() {
                     _fun104078: for (var _fun104078_ip = 0;;) switch (_fun104078_ip) {
                         case 0:
                             var10 = arg0;
@@ -624,7 +624,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var5;
-    var4 = function(arg0) { // Original name: thumbHashToApproximateAspectRatio, environment: var1
+    var4 = function arg0() {
         _fun104079: for (var _fun104079_ip = 0;;) switch (_fun104079_ip) {
             case 0:
                 var2 = arg0;
@@ -680,7 +680,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: rgbaToDataURL, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun104080: for (var _fun104080_ip = 0;;) switch (_fun104080_ip) {
             case 0:
                 var6 = arg0;
@@ -993,7 +993,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var6 = var6.bind(var0)(var7);
     var _closure1_slot0 = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: rgbaToThumbHash, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun104081: for (var _fun104081_ip = 0;;) switch (_fun104081_ip) {
             case 0:
                 var6 = arg0;
@@ -1164,7 +1164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun104081
                 }
             case 514:
-                var18 = function(arg0, arg1, arg2) { // Original name: encodeChannel, environment: var14
+                var18 = function arg0, arg1, arg2() {
                     _fun104082: for (var _fun104082_ip = 0;;) switch (_fun104082_ip) {
                         case 0:
                             var18 = arg0;
@@ -1613,7 +1613,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.rgbaToThumbHash = var6;
     var2.thumbHashToRGBA = var5;
-    var5 = function(arg0) { // Original name: thumbHashToAverageRGBA, environment: var1
+    var5 = function arg0() {
         _fun104083: for (var _fun104083_ip = 0;;) switch (_fun104083_ip) {
             case 0:
                 var2 = arg0;
@@ -1689,7 +1689,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.thumbHashToAverageRGBA = var5;
     var2.thumbHashToApproximateAspectRatio = var4;
     var2.rgbaToDataURL = var3;
-    var1 = function(arg0) { // Original name: thumbHashToDataURL, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var4 = undefined;
         var0 = arg0;

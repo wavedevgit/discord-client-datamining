@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var4;
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0) { // Original name: isWorkletFunction, environment: var0
+        var0 = function arg0() {
             _fun33145: for (var _fun33145_ip = 0;;) switch (_fun33145_ip) {
                 case 0:
                     var1 = arg0;

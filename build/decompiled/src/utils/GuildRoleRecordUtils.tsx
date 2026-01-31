@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun18994: for (var _fun18994_ip = 0;;) switch (_fun18994_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun18996: for (var _fun18996_ip = 0;;) switch (_fun18996_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var5 = function(arg0, arg1) { // Original name: fromServer, environment: var1
+    var5 = function arg0, arg1() {
         _fun18997: for (var _fun18997_ip = 0;;) switch (_fun18997_ip) {
             case 0:
                 var3 = arg1;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0) { // Original name: constructGuildRoleInPlace, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot3;
         var2 = _closure1_slot5;
         var1 = undefined;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0, arg1) { // Original name: fromSerialized, environment: var1
+    var3 = function arg0, arg1() {
         _fun18999: for (var _fun18999_ip = 0;;) switch (_fun18999_ip) {
             case 0:
                 var3 = arg1;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'utils/GuildRoleRecordUtils.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: isGuildRoleRecord, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot4;
         var2 = _closure1_slot5;
         var1 = undefined;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isGuildRoleRecord = var6;
-    var6 = function(arg0, arg1) { // Original name: fromServerArray, environment: var1
+    var6 = function arg0, arg1() {
         _fun19001: for (var _fun19001_ip = 0;;) switch (_fun19001_ip) {
             case 0:
                 var6 = arg0;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.fromServer = var5;
     var2.constructGuildRoleInPlace = var4;
     var2.fromSerialized = var3;
-    var3 = function(arg0, arg1) { // Original name: fromSerializedPartition, environment: var1
+    var3 = function arg0, arg1() {
         _fun19002: for (var _fun19002_ip = 0;;) switch (_fun19002_ip) {
             case 0:
                 var9 = arg0;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromSerializedPartition = var3;
-    var1 = function(arg0) { // Original name: toSerializedPartition, environment: var1
+    var1 = function arg0() {
         _fun19003: for (var _fun19003_ip = 0;;) switch (_fun19003_ip) {
             case 0:
                 var7 = arg0;

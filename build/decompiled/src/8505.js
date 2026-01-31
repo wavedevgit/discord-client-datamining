@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
-    var1 = function(arg0) { // Original name: ButtonAndroid, environment: var1
+    var1 = function arg0() {
         _fun68396: for (var _fun68396_ip = 0;;) switch (_fun68396_ip) {
             case 0:
                 var2 = arg0;

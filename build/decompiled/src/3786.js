@@ -9,13 +9,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function(arg0) { // Original name: setAndForwardRef, environment: var0
+    var0 = function arg0() {
         var1 = arg0;
         var2 = var1.getForwardedRef;
         var _closure2_slot0 = var2;
         var1 = var1.setLocalRef;
         var _closure2_slot1 = var1;
-        var0 = function(arg0) { // Original name: forwardRef, environment: var0
+        var0 = function arg0() {
             _fun34006: for (var _fun34006_ip = 0;;) switch (_fun34006_ip) {
                 case 0:
                     var2 = arg0;

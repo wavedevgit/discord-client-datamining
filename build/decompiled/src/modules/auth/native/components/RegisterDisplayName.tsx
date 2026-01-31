@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/RegisterDisplayName.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun100348: for (var _fun100348_ip = 0;;) switch (_fun100348_ip) {
             case 0:
                 var0 = _closure1_slot14;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot12;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4["5Wxrcd"];
                         var4 = var5.bind(var6)(var4);
                         var0.text = var4;
-                        var4 = function() { // Original name: onPress, environment: var4
+                        var4 = function() {
                             var2 = _closure2_slot5;
                             var1 = undefined;
                             var0 = null;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var9.ref = var20;
                 var9.value = var15;
-                var20 = function(arg0) { // Original name: onChange, environment: var16
+                var20 = function arg0() {
                     _fun100359: for (var _fun100359_ip = 0;;) switch (_fun100359_ip) {
                         case 0:
                             var0 = arg0;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.onChange = var20;
                 var20 = 'next';
                 var9.returnKeyType = var20;
-                var20 = function() { // Original name: onSubmitEditing, environment: var16
+                var20 = function() {
                     var2 = _closure2_slot5;
                     var1 = _closure2_slot2;
                     var0 = undefined;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.PDTjLN;
                 var17 = var18.bind(var19)(var17);
                 var11.text = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var2 = _closure2_slot5;
                     var1 = _closure2_slot2;
                     var0 = undefined;

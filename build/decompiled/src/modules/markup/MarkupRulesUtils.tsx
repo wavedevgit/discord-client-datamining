@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/markup/MarkupRulesUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: smartOutput, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun61774: for (var _fun61774_ip = 0;;) switch (_fun61774_ip) {
             case 0:
                 var1 = arg0;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.smartOutput = var3;
-    var1 = function(arg0) { // Original name: isStaticRouteIconType, environment: var1
+    var1 = function arg0() {
         _fun61775: for (var _fun61775_ip = 0;;) switch (_fun61775_ip) {
             case 0:
                 var2 = arg0;

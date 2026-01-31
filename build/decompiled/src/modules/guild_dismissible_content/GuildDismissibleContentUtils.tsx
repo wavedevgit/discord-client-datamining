@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: isContentDismissed, environment: var1
+    var3 = function arg0, arg1() {
         _fun86683: for (var _fun86683_ip = 0;;) switch (_fun86683_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: toggleContentSeen, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun86684: for (var _fun86684_ip = 0;;) switch (_fun86684_ip) {
             case 0:
                 var2 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.isContentDismissed = var3;
-    var3 = function(arg0, arg1) { // Original name: useIsContentDismissed, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsContentDismissed = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: markContentAsDismissed, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var6 = _closure1_slot8;
         var0 = undefined;
         var11 = true;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.markContentAsDismissed = var3;
-    var1 = function(arg0, arg1) { // Original name: unmarkContentAsDismissed, environment: var1
+    var1 = function arg0, arg1() {
         var4 = _closure1_slot8;
         var0 = undefined;
         var3 = false;

@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var8 = var24.bind(var3)(var6, var8);
-                var15 = function(arg0) { // Original name: pnpm_indexTsx1, environment: var1
+                var15 = function arg0() {
                     _fun68358: for (var _fun68358_ip = 0;;) switch (_fun68358_ip) {
                         case 0:
                             var7 = undefined;
@@ -516,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6[3] = var17;
                 var19 = var24.bind(var3)(var15, var6);
                 var _closure2_slot20 = var19;
-                var15 = function(arg0) { // Original name: pnpm_indexTsx2, environment: var1
+                var15 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 4;
@@ -558,7 +558,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6[0] = var16;
                 var17 = var24.bind(var3)(var15, var6);
                 var _closure2_slot21 = var17;
-                var15 = function(arg0) { // Original name: pnpm_indexTsx3, environment: var1
+                var15 = function arg0() {
                     _fun68360: for (var _fun68360_ip = 0;;) switch (_fun68360_ip) {
                         case 0:
                             var2 = arg0;
@@ -647,7 +647,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6[0] = var19;
                 var30 = var24.bind(var3)(var15, var6);
                 var _closure2_slot22 = var30;
-                var15 = function() { // Original name: pnpm_indexTsx4, environment: var1
+                var15 = function() {
                     _fun68361: for (var _fun68361_ip = 0;;) switch (_fun68361_ip) {
                         case 0:
                             var0 = _closure2_slot18;
@@ -700,7 +700,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6[0] = var30;
                 var6 = var24.bind(var3)(var15, var6);
                 var _closure2_slot23 = var6;
-                var16 = function(arg0) { // Original name: pnpm_indexTsx5, environment: var1
+                var16 = function arg0() {
                     _fun68362: for (var _fun68362_ip = 0;;) switch (_fun68362_ip) {
                         case 0:
                             var0 = arg0;
@@ -768,7 +768,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var16 = var5.bind(var3)(var4);
                 var15 = var16.useSmoothKeyboardHandler;
                 var6 = {};
-                var4 = function(arg0) { // Original name: pnpm_indexTsx6, environment: var1
+                var4 = function arg0() {
                     _fun68364: for (var _fun68364_ip = 0;;) switch (_fun68364_ip) {
                         case 0:
                             var0 = arg0;
@@ -933,7 +933,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var24 = _closure1_slot15;
                 var4.__initData = var24;
                 var6.onStart = var4;
-                var4 = function(arg0) { // Original name: pnpm_indexTsx7, environment: var1
+                var4 = function arg0() {
                     _fun68365: for (var _fun68365_ip = 0;;) switch (_fun68365_ip) {
                         case 0:
                             var1 = arg0;
@@ -973,7 +973,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var24 = _closure1_slot16;
                 var4.__initData = var24;
                 var6.onMove = var4;
-                var4 = function(arg0) { // Original name: pnpm_indexTsx8, environment: var1
+                var4 = function arg0() {
                     var2 = arg0;
                     var3 = _closure2_slot12;
                     var1 = var2.height;
@@ -1006,7 +1006,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var13[var9];
                 var17 = var5.bind(var3)(var4);
                 var16 = var17.useAnimatedReaction;
-                var15 = function() { // Original name: pnpm_indexTsx9, environment: var1
+                var15 = function() {
                     var0 = _closure2_slot17;
                     var0 = var0.value;
                     return var0;
@@ -1018,7 +1018,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15.__workletHash = var4;
                 var4 = _closure1_slot18;
                 var15.__initData = var4;
-                var6 = function(arg0, arg1) { // Original name: pnpm_indexTsx10, environment: var1
+                var6 = function arg0, arg1() {
                     _fun68368: for (var _fun68368_ip = 0;;) switch (_fun68368_ip) {
                         case 0:
                             var4 = arg0;
@@ -1110,7 +1110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var13[var9];
                 var6 = var5.bind(var3)(var4);
                 var5 = var6.useAnimatedStyle;
-                var4 = function() { // Original name: pnpm_indexTsx11, environment: var1
+                var4 = function() {
                     _fun68369: for (var _fun68369_ip = 0;;) switch (_fun68369_ip) {
                         case 0:
                             var0 = _closure2_slot4;

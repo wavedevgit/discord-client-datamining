@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createThreadEmbed, environment: var6
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun53882: for (var _fun53882_ip = 0;;) switch (_fun53882_ip) {
             case 0:
                 var0 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0, arg1) { // Original name: getForumPostActions, environment: var6
+    var0 = function arg0, arg1() {
         _fun53883: for (var _fun53883_ip = 0;;) switch (_fun53883_ip) {
             case 0:
                 var2 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var1 = function(arg0) { // Original name: createMessageContent, environment: var6
+    var1 = function arg0() {
         _fun53884: for (var _fun53884_ip = 0;;) switch (_fun53884_ip) {
             case 0:
                 var0 = arg0;

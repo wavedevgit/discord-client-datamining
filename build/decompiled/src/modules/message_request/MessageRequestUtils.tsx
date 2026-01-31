@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/MessageRequestUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: filterOutMessageRequestsAndSpam, environment: var1
+    var3 = function arg0() {
         _fun93405: for (var _fun93405_ip = 0;;) switch (_fun93405_ip) {
             case 0:
                 var3 = arguments[1];
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 103:
                 var1.return();
             case 106:
-                var3 = function(arg0) { // Original name: channelRecordToArray, environment: var0
+                var3 = function arg0() {
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     var4 = _closure1_slot0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1 = var3.bind(var4)(var1);
-                var0 = function(arg0) { // Original name: channelArrayToObject, environment: var0
+                var0 = function arg0() {
                     var0 = global;
                     var2 = var0.Array;
                     var1 = var2.from;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterOutMessageRequestsAndSpam = var3;
-    var3 = function(arg0) { // Original name: filterOutMessageRequestsAndSpamById, environment: var1
+    var3 = function arg0() {
         _fun93411: for (var _fun93411_ip = 0;;) switch (_fun93411_ip) {
             case 0:
                 var2 = arg0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterOutMessageRequestsAndSpamById = var3;
-    var3 = function(arg0) { // Original name: isMessageRequestOrSpamRequest, environment: var1
+    var3 = function arg0() {
         _fun93413: for (var _fun93413_ip = 0;;) switch (_fun93413_ip) {
             case 0:
                 var3 = arg0;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isMessageRequestOrSpamRequest = var3;
-    var1 = function() { // Original name: shouldShowMessageRequests, environment: var1
+    var1 = function() {
         _fun93414: for (var _fun93414_ip = 0;;) switch (_fun93414_ip) {
             case 0:
                 var1 = arguments[0];

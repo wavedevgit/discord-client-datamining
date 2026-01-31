@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_panel/native/hooks/useVoicePanelCardUserStateIcons.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1, arg2) { // Original name: useVoicePanelCardUserStateIcons, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun110948: for (var _fun110948_ip = 0;;) switch (_fun110948_ip) {
             case 0:
                 var11 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = 'user-disconnected-indicator';
                     var1.key = var5;
-                    var5 = function() { // Original name: icon, environment: var5
+                    var5 = function() {
                         var3 = _closure1_slot7;
                         var1 = _closure1_slot0;
                         var6 = _closure1_slot2;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = 0;
                             var5 = var6 > var5;
                             var3.withLeftMargin = var5;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 _fun110955: for (var _fun110955_ip = 0;;) switch (_fun110955_ip) {
                                     case 0:
                                         var2 = _closure2_slot4;

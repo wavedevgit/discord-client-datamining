@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'div';
                 var2 = var1.bind(var2)(var0);
                 var1 = {};
-                var0 = function() { // Original name: get, environment: var0
+                var0 = function() {
                     var0 = 7;
                     return var0;
                 };

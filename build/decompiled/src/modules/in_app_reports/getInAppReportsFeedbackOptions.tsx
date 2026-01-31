@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/in_app_reports/getInAppReportsFeedbackOptions.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: getInAppReportsFeedbackOptions, environment: var3
+    var3 = function() {
         var1 = {};
         var7 = _closure1_slot0;
         var8 = _closure1_slot1;

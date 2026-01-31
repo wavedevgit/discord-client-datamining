@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gateway/GatewayConnectSkippedExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: shouldLogConnectSkipped, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = var2.getCurrentConfig;
         var0 = {};
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.shouldLogConnectSkipped = var3;
-    var1 = function() { // Original name: shouldLogPostConnectSkipped, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = var2.getCurrentConfig;
         var0 = {};

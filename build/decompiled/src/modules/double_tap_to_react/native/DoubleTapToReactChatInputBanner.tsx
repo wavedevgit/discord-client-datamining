@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: DoubleTapToReactChatInputBannerInner, environment: var1
+            var0 = function arg0() {
                 _fun89708: for (var _fun89708_ip = 0;;) switch (_fun89708_ip) {
                     case 0:
                         var0 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var18 = {};
                         var23 = var23.name;
                         var18.emojiName = var23;
-                        var23 = function(arg0, arg1) { // Original name: emojiNameHook, environment: var22
+                        var23 = function arg0, arg1() {
                             var4 = _closure1_slot9;
                             var1 = _closure1_slot0;
                             var2 = _closure1_slot2;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var18.emojiNameHook = var23;
-                        var22 = function(arg0, arg1) { // Original name: tapHereHook, environment: var22
+                        var22 = function arg0, arg1() {
                             var4 = _closure1_slot9;
                             var1 = _closure1_slot0;
                             var2 = _closure1_slot2;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/double_tap_to_react/native/DoubleTapToReactChatInputBanner.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function() { // Original name: DoubleTapToReactChatInputBanner, environment: var1
+            var1 = function() {
                 _fun89712: for (var _fun89712_ip = 0;;) switch (_fun89712_ip) {
                     case 0:
                         var1 = _closure1_slot13;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var11[var6];
                         var7 = var10.bind(var4)(var1);
                         var2 = var7.useAnimatedStyle;
-                        var1 = function() { // Original name: x, environment: var0
+                        var1 = function() {
                             _fun89716: for (var _fun89716_ip = 0;;) switch (_fun89716_ip) {
                                 case 0:
                                     var0 = _closure2_slot3;

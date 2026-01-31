@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/create_guild/CreateGuildConstants.tsx';
     var4 = var5.bind(var6)(var4);
     var2.GuildTemplateId = var3;
-    var1 = function() { // Original name: getGuildTemplatesMap, environment: var1
+    var1 = function() {
         var0 = {};
         var4 = _closure1_slot5;
         var2 = var4.CREATE;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: useHandleRedemptionLinkClick, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.quest;
         var _closure2_slot0 = var1;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/quests/hooks/RewardCodeClaimHooks.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useClaimOrFetchRewardCode, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var14 = var1.isClaimingReward;
         var _closure2_slot0 = var14;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useClaimOrFetchRewardCode = var4;
     var2.useHandleRedemptionLinkClick = var3;
-    var1 = function(arg0) { // Original name: useClaimRewardCodePrimaryCtaClickHandler, environment: var1
+    var1 = function arg0() {
         _fun78403: for (var _fun78403_ip = 0;;) switch (_fun78403_ip) {
             case 0:
                 var3 = arg0;

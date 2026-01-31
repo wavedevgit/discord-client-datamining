@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/shared/utils/GlobalUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getGlobalObject, environment: var1
+    var1 = function() {
         _fun96780: for (var _fun96780_ip = 0;;) switch (_fun96780_ip) {
             case 0:
                 var1 = global;

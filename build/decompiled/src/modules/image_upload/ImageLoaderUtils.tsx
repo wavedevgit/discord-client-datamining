@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: loadImageAsset, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = global;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = new var7[var0](var6);
         var2 = var0 instanceof Object ? var0 : var2;
         var _closure2_slot1 = var2;
-        var4 = function(arg0, arg1) { // Original name: getOnError, environment: var3
+        var4 = function arg0, arg1() {
             _fun16670: for (var _fun16670_ip = 0;;) switch (_fun16670_ip) {
                 case 0:
                     var1 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: handleImageLoad, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun16675: for (var _fun16675_ip = 0;;) switch (_fun16675_ip) {
             case 0:
                 var3 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: splitURL, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = '?';
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var3 = function(arg0) { // Original name: getSrcWithWidthAndHeight, environment: var1
+    var3 = function arg0() {
         _fun16678: for (var _fun16678_ip = 0;;) switch (_fun16678_ip) {
             case 0:
                 var2 = arg0;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var2.getDevicePixelRatio = var4;
-    var4 = function(arg0) { // Original name: isImageLoaded, environment: var1
+    var4 = function arg0() {
         _fun16679: for (var _fun16679_ip = 0;;) switch (_fun16679_ip) {
             case 0:
                 var2 = _closure1_slot10;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isImageLoaded = var4;
-    var4 = function(arg0, arg1) { // Original name: loadImage, environment: var1
+    var4 = function arg0, arg1() {
         _fun16680: for (var _fun16680_ip = 0;;) switch (_fun16680_ip) {
             case 0:
                 var8 = arg0;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.loadImage = var4;
-    var4 = function(arg0) { // Original name: getBestMediaProxySize, environment: var1
+    var4 = function arg0() {
         _fun16684: for (var _fun16684_ip = 0;;) switch (_fun16684_ip) {
             case 0:
                 var2 = arg0;
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBestMediaProxySize = var4;
     var2.getSrcWithWidthAndHeight = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getSizedImageSrc, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun16687: for (var _fun16687_ip = 0;;) switch (_fun16687_ip) {
             case 0:
                 var6 = arguments[3];
@@ -850,7 +850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSizedImageSrc = var3;
-    var1 = function(arg0) { // Original name: getImageSrc, environment: var1
+    var1 = function arg0() {
         _fun16688: for (var _fun16688_ip = 0;;) switch (_fun16688_ip) {
             case 0:
                 var1 = arg0;

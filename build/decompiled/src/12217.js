@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = function(arg0) { // Original name: Node, environment: var1
+    var0 = function arg0() {
         var1 = this;
         var0 = arg0;
         var1.data = var0;
@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var0;
-    var2 = function(arg0) { // Original name: BinTree, environment: var1
+    var2 = function arg0() {
         var1 = this;
         var0 = null;
         var1._root = var0;

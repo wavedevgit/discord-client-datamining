@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var4;
     var3 = var3.ParticipantTypes;
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: usePipVideoOrStream, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var3;
-    var4 = function(arg0) { // Original name: getVideoOrStreamParticipant, environment: var1
+    var4 = function arg0() {
         _fun62809: for (var _fun62809_ip = 0;;) switch (_fun62809_ip) {
             case 0:
                 var0 = arg0;

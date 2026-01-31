@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.jsx;
     var _closure1_slot5 = var1;
     var3 = var5.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: CardSheet, environment: var4
+    var1 = function arg0, arg1() {
         _fun51325: for (var _fun51325_ip = 0;;) switch (_fun51325_ip) {
             case 0:
                 var5 = arg0;

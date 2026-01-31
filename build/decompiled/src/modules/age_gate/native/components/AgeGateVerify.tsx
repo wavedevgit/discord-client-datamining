@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/native/components/AgeGateVerify.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AgeGateVerify, environment: var1
+    var1 = function arg0() {
         _fun112592: for (var _fun112592_ip = 0;;) switch (_fun112592_ip) {
             case 0:
                 var0 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.button;
                 var6.style = var10;
                 var6.text = var9;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 9;

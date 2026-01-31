@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: _INTERNAL_insertToFlagBuffer, environment: var3
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun9676: for (var _fun9676_ip = 0;;) switch (_fun9676_ip) {
             case 0:
                 var2 = arg0;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2._INTERNAL_FLAG_BUFFER_SIZE = var4;
     var4 = 10;
     var2._INTERNAL_MAX_FLAGS_PER_SPAN = var4;
-    var4 = function(arg0, arg1) { // Original name: _INTERNAL_addFeatureFlagToActiveSpan, environment: var3
+    var4 = function arg0, arg1() {
         _fun9678: for (var _fun9678_ip = 0;;) switch (_fun9678_ip) {
             case 0:
                 var7 = arg0;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2._INTERNAL_addFeatureFlagToActiveSpan = var4;
-    var4 = function(arg0) { // Original name: _INTERNAL_copyFlagsFromScopeToEvent, environment: var3
+    var4 = function arg0() {
         _fun9680: for (var _fun9680_ip = 0;;) switch (_fun9680_ip) {
             case 0:
                 var0 = arg0;
@@ -264,7 +264,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2._INTERNAL_copyFlagsFromScopeToEvent = var4;
-    var3 = function(arg0, arg1) { // Original name: _INTERNAL_insertFlagToScope, environment: var3
+    var3 = function arg0, arg1() {
         _fun9681: for (var _fun9681_ip = 0;;) switch (_fun9681_ip) {
             case 0:
                 var0 = undefined;

@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.PORTAL_HOST_NAME_DEFAULT = var3;
     var3 = 'modal';
     var2.PORTAL_HOST_NAME_MODAL = var3;
-    var3 = function(arg0) { // Original name: PortalKeyboard, environment: var1
+    var3 = function arg0() {
         _fun35165: for (var _fun35165_ip = 0;;) switch (_fun35165_ip) {
             case 0:
                 var0 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.PortalKeyboard = var3;
-    var1 = function(arg0) { // Original name: PortalKeyboardHost, environment: var1
+    var1 = function arg0() {
         _fun35166: for (var _fun35166_ip = 0;;) switch (_fun35166_ip) {
             case 0:
                 var0 = arg0;

@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = arg1;
                 var2 = function() { // Environment: var2
                     var0 = {};
-                    var1 = function() { // Original name: play, environment: var1
+                    var1 = function() {
                         _fun75401: for (var _fun75401_ip = 0;;) switch (_fun75401_ip) {
                             case 0:
                                 var0 = _closure2_slot1;

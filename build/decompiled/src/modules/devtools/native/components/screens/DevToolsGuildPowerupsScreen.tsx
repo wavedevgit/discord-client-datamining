@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: setWarningBoosts, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _setWarningBoosts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: _sendPowerupsSystemMessage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: UserDCSwitchRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.dc;
         var1 = _closure1_slot1;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: GuildDCSwitchRow, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var7 = var1.dc;
         var _closure2_slot0 = var7;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsGuildPowerupsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsGuildPowerupsScreen, environment: var1
+    var1 = function() {
         _fun86664: for (var _fun86664_ip = 0;;) switch (_fun86664_ip) {
             case 0:
                 var0 = _closure1_slot20;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = {};
                 var17 = 'Reset Notification Indicators';
                 var12.label = var17;
-                var17 = function() { // Original name: onPress, environment: var13
+                var17 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = {};
                 var18 = 'Set Half Boosts expiring in 1 day';
                 var15.label = var18;
-                var18 = function() { // Original name: onPress, environment: var13
+                var18 = function() {
                     var4 = _closure1_slot21;
                     var3 = _closure2_slot0;
                     var2 = _closure2_slot2;
@@ -662,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = {};
                 var19 = 'Reset End Date';
                 var16.label = var19;
-                var19 = function() { // Original name: onPress, environment: var13
+                var19 = function() {
                     var4 = _closure1_slot21;
                     var3 = _closure2_slot0;
                     var2 = _closure2_slot2;
@@ -795,9 +795,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var14 = 'Send Powerups System Message';
                 var10.label = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure2_slot0;
-                    var1 = function() { // Original name: sendPowerupsSystemMessage, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure1_slot23;
                         var2 = var3.apply;

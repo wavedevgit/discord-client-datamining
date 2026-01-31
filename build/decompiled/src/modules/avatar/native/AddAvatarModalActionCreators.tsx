@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: closeAddAvatarModal, environment: var1
+    var0 = function arg0() {
         var4 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 6;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/avatar/native/AddAvatarModalActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: handlePressNext, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun113833: for (var _fun113833_ip = 0;;) switch (_fun113833_ip) {
             case 0:
                 var5 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handlePressNext = var3;
-    var3 = function(arg0) { // Original name: showSkipAvatarModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot1;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.nhJ8OC;
         var5 = var6.bind(var7)(var5);
         var1.confirmText = var5;
-        var4 = function() { // Original name: onConfirm, environment: var4
+        var4 = function() {
             _fun113835: for (var _fun113835_ip = 0;;) switch (_fun113835_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showSkipAvatarModal = var3;
-    var1 = function() { // Original name: openAddAvatarModal, environment: var1
+    var1 = function() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 6;

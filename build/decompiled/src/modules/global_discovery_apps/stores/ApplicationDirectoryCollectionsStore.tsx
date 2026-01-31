@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun107486: for (var _fun107486_ip = 0;;) switch (_fun107486_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getKey, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.surface;
         var3 = var0.activeState;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: ApplicationDirectoryCollectionsStore, environment: var5
+        var3 = function() {
             _fun107491: for (var _fun107491_ip = 0;;) switch (_fun107491_ip) {
                 case 0:
                     var3 = this;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getLastFetchTimeMs';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var0 = arg0;
             var4 = var0.surface;
             var0 = var0.activeState;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var4 = var0.surface;
             var0 = var0.activeState;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCollections';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun107494: for (var _fun107494_ip = 0;;) switch (_fun107494_ip) {
                 case 0:
                     var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var12 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function(arg0) { // Original name: handleFetchAppDirectoryCollections, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var5 = var0.surface;
         var0 = var0.activeState;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_DIRECTORY_FETCH_COLLECTIONS = var8;
-    var8 = function(arg0) { // Original name: handleFetchAppDirectoryCollectionsSuccess, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var5 = var0.collections;
         var4 = var0.surface;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS = var8;
-    var4 = function(arg0) { // Original name: handleFetchAppDirectoryCollectionsFailure, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var5 = var0.surface;
         var0 = var0.activeState;

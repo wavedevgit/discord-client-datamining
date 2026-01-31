@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var4 = function(arg0, arg1, arg2) { // Original name: getNickname, environment: var6
+    var4 = function arg0, arg1, arg2() {
         _fun36004: for (var _fun36004_ip = 0;;) switch (_fun36004_ip) {
             case 0:
                 var4 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: getName, environment: var6
+    var3 = function arg0, arg1, arg2() {
         _fun36005: for (var _fun36005_ip = 0;;) switch (_fun36005_ip) {
             case 0:
                 var3 = arg2;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useName, environment: var6
+    var1 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

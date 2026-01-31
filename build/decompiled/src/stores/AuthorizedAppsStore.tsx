@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun41608: for (var _fun41608_ip = 0;;) switch (_fun41608_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: AuthorizedAppsStore, environment: var5
+        var3 = function() {
             _fun41612: for (var _fun41612_ip = 0;;) switch (_fun41612_ip) {
                 case 0:
                     var3 = this;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot5;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNewestTokenForApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun41614: for (var _fun41614_ip = 0;;) switch (_fun41614_ip) {
                 case 0:
                     var4 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNewestTokens';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNewestTokensForNonChildrenApplications';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchStateForApplication';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun41618: for (var _fun41618_ip = 0;;) switch (_fun41618_ip) {
                 case 0:
                     var2 = _closure1_slot12;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function() { // Original name: handleUserAuthorizedAppsRequest, environment: var4
+    var8 = function() {
         var1 = _closure1_slot8;
         var1 = var1.FETCHING;
         _closure1_slot12 = var1;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_AUTHORIZED_APPS_REQUEST = var8;
-    var8 = function(arg0) { // Original name: handleUserAuthorizedAppsRequestById, environment: var4
+    var8 = function arg0() {
         var3 = _closure1_slot13;
         var2 = var3.set;
         var1 = arg0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_AUTHORIZED_APPS_REQUEST_BY_ID = var8;
-    var8 = function(arg0) { // Original name: handleAuthorizedAppsUpdate, environment: var4
+    var8 = function arg0() {
         var2 = arg0;
         var3 = _closure1_slot8;
         var3 = var3.FETCHED;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_AUTHORIZED_APPS_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleAuthorizedAppsUpdateById, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var4 = _closure1_slot13;
         var3 = var4.set;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_AUTHORIZED_APPS_UPDATE_BY_ID = var8;
-    var8 = function(arg0) { // Original name: handleOAuth2TokenCreate, environment: var4
+    var8 = function arg0() {
         _fun41627: for (var _fun41627_ip = 0;;) switch (_fun41627_ip) {
             case 0:
                 var0 = arg0;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.OAUTH2_TOKEN_CREATE = var8;
-    var4 = function(arg0) { // Original name: handleOAuth2TokenDelete, environment: var4
+    var4 = function arg0() {
         _fun41630: for (var _fun41630_ip = 0;;) switch (_fun41630_ip) {
             case 0:
                 var1 = arg0;

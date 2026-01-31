@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun10353: for (var _fun10353_ip = 0;;) switch (_fun10353_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun10354: for (var _fun10354_ip = 0;;) switch (_fun10354_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun10355: for (var _fun10355_ip = 0;;) switch (_fun10355_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun10356: for (var _fun10356_ip = 0;;) switch (_fun10356_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 74:
             var _closure1_slot2 = var2;
             var2 = {};
-            var3 = function(arg0, arg1) { // Original name: onUnhandled, environment: var0
+            var3 = function arg0, arg1() {
                 _fun10358: for (var _fun10358_ip = 0;;) switch (_fun10358_ip) {
                     case 0:
                         var4 = arg1;
@@ -251,13 +251,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.onUnhandled = var3;
-            var3 = function(arg0) { // Original name: onHandled, environment: var0
+            var3 = function arg0() {
                 var0 = undefined;
                 return var0;
             };
             var2.onHandled = var3;
             var _closure1_slot3 = var2;
-            var0 = function() { // Original name: reactNativeErrorHandlersIntegration, environment: var0
+            var0 = function() {
                 _fun10360: for (var _fun10360_ip = 0;;) switch (_fun10360_ip) {
                     case 0:
                         var4 = undefined;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = {};
                         var2 = 'ReactNativeErrorHandlers';
                         var0.name = var2;
-                        var1 = function() { // Original name: setupOnce, environment: var1
+                        var1 = function() {
                             var0 = global;
                             var3 = var0.Object;
                             var2 = var3.assign;
@@ -296,7 +296,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 'patchGlobalPromise': true
                             };
                             var2 = var2.bind(var3)(var0, var1);
-                            var1 = function(arg0) { // Original name: setup, environment: var0
+                            var1 = function arg0() {
                                 _fun10362: for (var _fun10362_ip = 0;;) switch (_fun10362_ip) {
                                     case 0:
                                         var1 = arg0;
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     case 14:
                                         var4 = var1.patchGlobalPromise;
-                                        var3 = function(arg0) { // Original name: setupUnhandledRejectionsTracking, environment: var0
+                                        var3 = function arg0() {
                                             _fun10363: for (var _fun10363_ip = 0;;) switch (_fun10363_ip) {
                                                 case 0:
                                                     var1 = arg0;
@@ -595,7 +595,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             continue _fun10362
                                         }
                                     case 41:
-                                        var1 = function() { // Original name: setupErrorUtilsGlobalHandler, environment: var0
+                                        var1 = function() {
                                             _fun10365: for (var _fun10365_ip = 0;;) switch (_fun10365_ip) {
                                                 case 0:
                                                     var0 = this;

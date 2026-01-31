@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.Crashpad = var4;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: ProcessUtils, environment: var1
+        var2 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'getCPUCoreCount';
         var0.key = var4;
-        var1 = function() { // Original name: value, environment: var1
+        var1 = function() {
             var0 = this;
             var0 = var0.cpuCoreCount;
             return var0;

@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.AccessibilityInfo;
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: SCREEN_READER_ENABLED_GETTER, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.screenReaderEnabled;
         return var0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = function(arg0) { // Environment: var1
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var3 = function(arg0) { // Original name: updateScreenReaderEnabled, environment: var0
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/a11y/native/useIsScreenReaderEnabled.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: addScreenReaderEnabledListener, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.addScreenReaderEnabledListener = var3;
-    var3 = function() { // Original name: getIsScreenReaderEnabled, environment: var1
+    var3 = function() {
         var1 = _closure1_slot4;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getIsScreenReaderEnabled = var3;
-    var1 = function() { // Original name: useIsScreenReaderEnabled, environment: var1
+    var1 = function() {
         var2 = _closure1_slot4;
         var1 = _closure1_slot3;
         var0 = undefined;

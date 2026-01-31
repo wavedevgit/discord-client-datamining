@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.blocked = var9;
     var4 = var3.bind(var4)(var1);
     var _closure1_slot12 = var4;
-    var3 = function(arg0, arg1) { // Original name: getSizeStyle, environment: var8
+    var3 = function arg0, arg1() {
         _fun69201: for (var _fun69201_ip = 0;;) switch (_fun69201_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: getTileWidthStyle, environment: var8
+    var1 = function arg0, arg1, arg2() {
         _fun69202: for (var _fun69202_ip = 0;;) switch (_fun69202_ip) {
             case 0:
                 var4 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var1;
-    var9 = function(arg0, arg1) { // Original name: getImageBackgroundStyle, environment: var8
+    var9 = function arg0, arg1() {
         _fun69203: for (var _fun69203_ip = 0;;) switch (_fun69203_ip) {
             case 0:
                 var1 = arg1;

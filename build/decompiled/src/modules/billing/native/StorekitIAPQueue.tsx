@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: productSK2ToIAPProduct, environment: var1
+    var0 = function arg0() {
         _fun58485: for (var _fun58485_ip = 0;;) switch (_fun58485_ip) {
             case 0:
                 var2 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: promoOfferToDiscount, environment: var1
+    var0 = function arg0() {
         _fun58487: for (var _fun58487_ip = 0;;) switch (_fun58487_ip) {
             case 0:
                 var1 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: StorekitIAPQueueClass, environment: var5
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot1;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var1 = 'fetchSubscriptions';
         var4.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             var2 = this;
             var _closure3_slot0 = var2;
             var1 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fetchProducts';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var _closure3_slot0 = var2;
             var1 = arg0;
@@ -578,7 +578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var0)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: processQueue, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

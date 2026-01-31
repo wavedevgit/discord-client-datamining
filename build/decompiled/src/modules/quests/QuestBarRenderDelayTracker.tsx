@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: QuestBarRenderDelayTracker, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'clearTimeoutTimer';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun47031: for (var _fun47031_ip = 0;;) switch (_fun47031_ip) {
                 case 0:
                     var1 = this;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'sendMetric';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun47032: for (var _fun47032_ip = 0;;) switch (_fun47032_ip) {
                 case 0:
                     var6 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'startTracking';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var3 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'stopTracking';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun47035: for (var _fun47035_ip = 0;;) switch (_fun47035_ip) {
                 case 0:
                     var5 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearTracking';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var1 = this;
             var0 = var1.clearTimeoutTimer;
             var0 = var0.bind(var1)();

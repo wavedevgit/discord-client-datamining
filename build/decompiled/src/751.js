@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2['[object ArrayBuffer]'] = var1;
     var2['[object Array]'] = var1;
     var2['[object Arguments]'] = var1;
-    var1 = function(arg0) { // Original name: baseIsTypedArray, environment: var0
+    var1 = function arg0() {
         _fun8375: for (var _fun8375_ip = 0;;) switch (_fun8375_ip) {
             case 0:
                 var4 = arg0;

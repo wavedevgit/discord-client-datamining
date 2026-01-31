@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: UserRow, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var17 = var1.user;
         var _closure2_slot0 = var17;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileActivityVoiceChannelUsers, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.users;
         var1 = var0.channel;
@@ -164,13 +164,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var4.UserProfileStackedActionSheetList;
         var4 = {};
         var4.data = var8;
-        var8 = function(arg0) { // Original name: keyExtractor, environment: var7
+        var8 = function arg0() {
             var0 = arg0;
             var0 = var0.id;
             return var0;
         };
         var4.keyExtractor = var8;
-        var7 = function(arg0) { // Original name: renderItem, environment: var7
+        var7 = function arg0() {
             var1 = arg0;
             var0 = var1.item;
             var _closure3_slot0 = var0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.user = var0;
             var7 = _closure2_slot0;
             var2.channel = var7;
-            var6 = function() { // Original name: onPress, environment: var6
+            var6 = function() {
                 var2 = _closure2_slot1;
                 var0 = _closure3_slot0;
                 var1 = var0.id;

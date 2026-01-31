@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var8;
-    var4 = function(arg0) { // Original name: AnimatedPrompt, environment: var1
+    var4 = function arg0() {
         _fun67571: for (var _fun67571_ip = 0;;) switch (_fun67571_ip) {
             case 0:
                 var0 = arg0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9[var0];
                 var10 = var14.bind(var3)(var7);
                 var7 = var10.useAnimatedStyle;
-                var2 = function() { // Original name: l, environment: var2
+                var2 = function() {
                     _fun67573: for (var _fun67573_ip = 0;;) switch (_fun67573_ip) {
                         case 0:
                             var0 = {};
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var4;
-    var3 = function(arg0) { // Original name: StartStagePrompt, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.channel;
         var _closure2_slot0 = var1;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var7.bind(var3)(var0);
         var1 = var0.FormCTA;
         var0 = {};
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             _fun67575: for (var _fun67575_ip = 0;;) switch (_fun67575_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.footer = var10;
     var5 = var6.bind(var9)(var5);
     var _closure1_slot15 = var5;
-    var5 = function(arg0) { // Original name: AgeVerificationSpeakerActionSheet, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var0 = var0.onClose;
         var _closure2_slot0 = var0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var3)(var0);
         var0 = var0.bind(var3)();
         var5 = var0.bottom;
-        var14 = function() { // Original name: handleDismiss, environment: var19
+        var14 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = {};
         var15 = 'lg';
         var9.size = var15;
-        var19 = function() { // Original name: onPress, environment: var19
+        var19 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot3;
             var0 = 40;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var8[var6];
         var6 = var7.bind(var2)(var6);
         var0.source = var6;
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot3;
             var0 = 14;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.IconComponent = var8;
                 var7 = var7.imageStyle;
                 var1.imageStyle = var7;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 21;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.bind(var2)(var6);
         var6 = var6.DoorExitIcon;
         var0.IconComponent = var6;
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             _fun67585: for (var _fun67585_ip = 0;;) switch (_fun67585_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.StageChannelParticipantNamedIndex;
                 var1 = var1.REQUESTED_TO_SPEAK_ONLY;
                 var6 = var3.bind(var6)(var2, var1);
-                var7 = function() { // Original name: handleOpenAudienceList, environment: var0
+                var7 = function() {
                     var4 = _closure1_slot1;
                     var2 = _closure1_slot3;
                     var0 = 30;
@@ -1086,7 +1086,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = _closure1_slot12;
                             var4 = _closure1_slot16;
                             var3 = {};
-                            var7 = function() { // Original name: onClose, environment: var7
+                            var7 = function() {
                                 var2 = _closure2_slot2;
                                 var1 = undefined;
                                 var0 = true;
@@ -1231,7 +1231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.RequestToSpeakButton = var5;
-    var5 = function(arg0) { // Original name: ChatButton, environment: var1
+    var5 = function arg0() {
         _fun67592: for (var _fun67592_ip = 0;;) switch (_fun67592_ip) {
             case 0:
                 var1 = arg0;
@@ -1291,7 +1291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.openChat;
             case 172:
                 _closure2_slot2 = var1;
-                var7 = function() { // Original name: onPress, environment: var0
+                var7 = function() {
                     _fun67594: for (var _fun67594_ip = 0;;) switch (_fun67594_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -1432,7 +1432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ChatButton = var5;
     var2.AnimatedPrompt = var4;
-    var4 = function(arg0) { // Original name: AnimatedStartStagePrompt, environment: var1
+    var4 = function arg0() {
         _fun67595: for (var _fun67595_ip = 0;;) switch (_fun67595_ip) {
             case 0:
                 var1 = arg0;
@@ -1638,7 +1638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AnimatedStartStagePrompt = var4;
     var2.StartStagePrompt = var3;
-    var3 = function(arg0) { // Original name: JoinStagePrompt, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.channel;
         var _closure2_slot0 = var1;
@@ -1654,7 +1654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var7.bind(var3)(var0);
         var1 = var0.FormCTA;
         var0 = {};
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot3;
             var0 = 58;
@@ -1702,7 +1702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.JoinStagePrompt = var3;
-    var1 = function(arg0) { // Original name: ContinueToStagePrompt, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.onContinue;
         var0 = _closure1_slot14;

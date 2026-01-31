@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Modal/native/ModalFloatingAction.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ModalFloatingAction, environment: var1
+    var3 = function arg0() {
         _fun72922: for (var _fun72922_ip = 0;;) switch (_fun72922_ip) {
             case 0:
                 var3 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0[var4];
                 var12 = var18.bind(var3)(var10);
                 var10 = var12.useAnimatedStyle;
-                var2 = function() { // Original name: y, environment: var2
+                var2 = function() {
                     _fun72924: for (var _fun72924_ip = 0;;) switch (_fun72924_ip) {
                         case 0:
                             var0 = {};
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ModalFloatingAction = var3;
-    var1 = function() { // Original name: ModalFloatingActionSpacer, environment: var1
+    var1 = function() {
         var1 = _closure1_slot8;
         var3 = undefined;
         var4 = var1.bind(var3)();

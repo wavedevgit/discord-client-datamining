@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 229:
                 var11[1] = var12;
                 var9.style = var11;
-                var11 = function() { // Original name: onPress, environment: var15
+                var11 = function() {
                     _fun87435: for (var _fun87435_ip = 0;;) switch (_fun87435_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 396:
                 var17[1] = var18;
                 var10.style = var17;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     _fun87436: for (var _fun87436_ip = 0;;) switch (_fun87436_ip) {
                         case 0:
                             var2 = _closure2_slot0;

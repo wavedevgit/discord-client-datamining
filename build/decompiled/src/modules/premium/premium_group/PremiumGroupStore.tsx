@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun59161: for (var _fun59161_ip = 0;;) switch (_fun59161_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var9 = function() { // Original name: handleMutationStart, environment: var3
+    var9 = function() {
         var0 = _closure1_slot12;
         var1 = var0.membersData;
         var0 = true;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var8 = function(arg0) { // Original name: handleMutationSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.subscriptionId;
         var _closure2_slot0 = var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.isUpdating = var1;
         return var0;
     };
-    var10 = function() { // Original name: handleMutationFailure, environment: var3
+    var10 = function() {
         var0 = _closure1_slot12;
         var1 = var0.membersData;
         var0 = false;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PremiumGroupStore, environment: var5
+        var3 = function() {
             _fun59169: for (var _fun59169_ip = 0;;) switch (_fun59169_ip) {
                 case 0:
                     var3 = this;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot8;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMembers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membersData;
             var0 = var0.data;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingMembers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membersData;
             var0 = var0.isFetching;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isUpdatingMembers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membersData;
             var0 = var0.isUpdating;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedMembers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membersData;
             var1 = var0.data;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMembership';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membershipData;
             var0 = var0.data;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingMembership';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membershipData;
             var0 = var0.isFetching;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedMembership';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.membershipData;
             var1 = var0.data;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNumUsedSeats';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun59178: for (var _fun59178_ip = 0;;) switch (_fun59178_ip) {
                 case 0:
                     var0 = _closure1_slot12;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNumAvailableInvites';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun59179: for (var _fun59179_ip = 0;;) switch (_fun59179_ip) {
                 case 0:
                     var1 = _closure1_slot12;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNumTotalSeats';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var14 = var6.bind(var0)(var1);
     var1 = {};
-    var11 = function(arg0) { // Original name: handleMembersRequest, environment: var3
+    var11 = function arg0() {
         _fun59181: for (var _fun59181_ip = 0;;) switch (_fun59181_ip) {
             case 0:
                 var0 = arg0;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.PREMIUM_GROUP_MEMBERS_REQUEST = var11;
-    var11 = function() { // Original name: handleMembersFetchStart, environment: var3
+    var11 = function() {
         var0 = _closure1_slot12;
         var1 = var0.membersData;
         var0 = true;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREMIUM_GROUP_MEMBERS_FETCH_START = var11;
-    var11 = function(arg0) { // Original name: handleMembersFetchSuccess, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var2 = var0.members;
         var1 = _closure1_slot12;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS = var11;
-    var11 = function() { // Original name: handleMembersFetchFailure, environment: var3
+    var11 = function() {
         var0 = _closure1_slot12;
         var1 = var0.membersData;
         var0 = false;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREMIUM_GROUP_MEMBERS_FETCH_FAILURE = var11;
-    var11 = function() { // Original name: handleMembershipRequest, environment: var3
+    var11 = function() {
         _fun59186: for (var _fun59186_ip = 0;;) switch (_fun59186_ip) {
             case 0:
                 var0 = _closure1_slot12;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.PREMIUM_GROUP_MEMBERSHIP_REQUEST = var11;
-    var11 = function() { // Original name: handleMembershipFetchStart, environment: var3
+    var11 = function() {
         var0 = _closure1_slot12;
         var1 = var0.membershipData;
         var0 = true;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREMIUM_GROUP_MEMBERSHIP_FETCH_START = var11;
-    var11 = function(arg0) { // Original name: handleMembershipFetchSuccess, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var2 = var0.membership;
         var1 = _closure1_slot12;
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS = var11;
-    var11 = function() { // Original name: handleMembershipNotFound, environment: var3
+    var11 = function() {
         var1 = _closure1_slot12;
         var2 = var1.membershipData;
         var1 = false;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND = var11;
-    var11 = function() { // Original name: handleMembershipFetchFailure, environment: var3
+    var11 = function() {
         var1 = _closure1_slot12;
         var2 = var1.membershipData;
         var1 = false;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.PREMIUM_GROUP_REMOVE_MEMBER_FAILURE = var10;
     var1.PREMIUM_GROUP_REMOVE_INVITE_START = var9;
     var1.PREMIUM_GROUP_REMOVE_INVITE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleRemoveInviteFailure, environment: var3
+    var8 = function arg0() {
         _fun59192: for (var _fun59192_ip = 0;;) switch (_fun59192_ip) {
             case 0:
                 var0 = arg0;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.PREMIUM_GROUP_REMOVE_INVITE_FAILURE = var8;
-    var3 = function() { // Original name: reset, environment: var3
+    var3 = function() {
         var1 = {};
         var0 = {
             'data': null,

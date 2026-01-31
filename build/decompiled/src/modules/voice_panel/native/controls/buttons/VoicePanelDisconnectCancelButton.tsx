@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DisconnectCancelButton, environment: var1
+    var1 = function arg0() {
         _fun111587: for (var _fun111587_ip = 0;;) switch (_fun111587_ip) {
             case 0:
                 var0 = arg0;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var17[var15];
                 var12 = var16.bind(var3)(var1);
                 var11 = var12.useAnimatedReaction;
-                var2 = function() { // Original name: A, environment: var4
+                var2 = function() {
                     _fun111589: for (var _fun111589_ip = 0;;) switch (_fun111589_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.__workletHash = var1;
                 var1 = _closure1_slot12;
                 var2.__initData = var1;
-                var1 = function(arg0, arg1) { // Original name: p, environment: var4
+                var1 = function arg0, arg1() {
                     _fun111590: for (var _fun111590_ip = 0;;) switch (_fun111590_ip) {
                         case 0:
                             var2 = arg0;

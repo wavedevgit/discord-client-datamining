@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113176: for (var _fun113176_ip = 0;;) switch (_fun113176_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: syncLocalState, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _syncLocalState, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: GameConsoleManager, environment: var0
+        var2 = function arg0() {
             _fun113184: for (var _fun113184_ip = 0;;) switch (_fun113184_ip) {
                 case 0:
                     var5 = this;
@@ -313,28 +313,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 instanceof Object ? var2 : var3;
                     var0.awaitRemoteTimeout = var2;
                     var2 = {};
-                    var3 = function() { // Original name: WAIT_FOR_REMOTE_SESSION, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleWaitForRemoteSession;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.WAIT_FOR_REMOTE_SESSION = var3;
-                    var3 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleSessionsChanged;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.POST_CONNECTION_OPEN = var3;
-                    var3 = function() { // Original name: SESSIONS_REPLACE, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleSessionsChanged;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.SESSIONS_REPLACE = var3;
-                    var3 = function(arg0) { // Original name: AUDIO_TOGGLE_SELF_DEAF, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAudioStateToggle;
                         var0 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.AUDIO_TOGGLE_SELF_DEAF = var3;
-                    var3 = function(arg0) { // Original name: AUDIO_TOGGLE_SELF_MUTE, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAudioStateToggle;
                         var0 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.AUDIO_TOGGLE_SELF_MUTE = var3;
-                    var3 = function(arg0) { // Original name: VOICE_STATE_UPDATES, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleVoiceStateUpdates;
                         var0 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.VOICE_STATE_UPDATES = var3;
-                    var3 = function(arg0) { // Original name: CONSOLE_COMMAND_UPDATE, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleConsoleCommandUpdate;
                         var0 = arg0;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.CONSOLE_COMMAND_UPDATE = var3;
-                    var3 = function(arg0) { // Original name: PASSIVE_UPDATE_V2, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleVoiceStateUpdates;
                         var0 = arg0;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.PASSIVE_UPDATE_V2 = var3;
-                    var3 = function() { // Original name: REMOTE_SESSION_DISCONNECT, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleRemoteSessionDisconnect;
                         var0 = var0.bind(var1)();
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = function(arg0) { // Environment: var1
                         _fun113194: for (var _fun113194_ip = 0;;) switch (_fun113194_ip) {
                             case 0:
-                                var2 = function(arg0) { // Original name: findRemoteSession, environment: var0
+                                var2 = function arg0() {
                                     var2 = arg0;
                                     var3 = _closure1_slot14;
                                     var1 = var3.getAwaitingRemoteSessionInfo;

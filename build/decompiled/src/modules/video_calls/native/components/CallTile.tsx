@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: ParticipantIcon, environment: var5
+    var0 = function arg0() {
         _fun69235: for (var _fun69235_ip = 0;;) switch (_fun69235_ip) {
             case 0:
                 var0 = arg0;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4 = var3.bind(var4)(var1);
-    var3 = function(arg0) { // Original name: StreamPreviewTile, environment: var5
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.participant;
         var6 = var0.style;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.style = var7;
         var7 = true;
         var4.disableTransition = var7;
-        var7 = function() { // Original name: onPress, environment: var7
+        var7 = function() {
             var1 = _closure1_slot8;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -736,7 +736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = 'function CallTileTsx1(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}';
     var1.code = var8;
     var _closure1_slot18 = var1;
-    var1 = function(arg0) { // Original name: TileOverlay, environment: var5
+    var1 = function arg0() {
         _fun69244: for (var _fun69244_ip = 0;;) switch (_fun69244_ip) {
             case 0:
                 var1 = arg0;
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var21[var4];
                 var7 = var20.bind(var3)(var6);
                 var6 = var7.useAnimatedStyle;
-                var0 = function() { // Original name: A, environment: var0
+                var0 = function() {
                     _fun69245: for (var _fun69245_ip = 0;;) switch (_fun69245_ip) {
                         case 0:
                             var0 = {};

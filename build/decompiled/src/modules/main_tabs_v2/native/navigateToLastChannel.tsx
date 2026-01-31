@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/navigateToLastChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: navigateToLastChannel, environment: var1
+    var1 = function() {
         _fun61770: for (var _fun61770_ip = 0;;) switch (_fun61770_ip) {
             case 0:
                 var3 = _closure1_slot0;

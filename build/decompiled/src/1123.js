@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function() { // Original name: getExpoUpdatesContext, environment: var2
+    var0 = function() {
         _fun12293: for (var _fun12293_ip = 0;;) switch (_fun12293_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -181,8 +181,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var3, var4);
     var3 = 'ota_updates';
     var1.OTA_UPDATES_CONTEXT_KEY = var3;
-    var2 = function() { // Original name: expoContextIntegration, environment: var2
-        var0 = function() { // Original name: getExpoUpdatesContextCached, environment: var1
+    var2 = function() {
+        var0 = function() {
             _fun12295: for (var _fun12295_ip = 0;;) switch (_fun12295_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -204,7 +204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'ExpoContext';
         var0.name = var2;
-        var2 = function(arg0) { // Original name: setup, environment: var1
+        var2 = function arg0() {
             var3 = arg0;
             var _closure3_slot0 = var3;
             var2 = var3.on;
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.setup = var2;
-        var1 = function(arg0) { // Original name: processEvent, environment: var1
+        var1 = function arg0() {
             _fun12298: for (var _fun12298_ip = 0;;) switch (_fun12298_ip) {
                 case 0:
                     var0 = arg0;
@@ -300,7 +300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         continue _fun12298
                     }
                 case 40:
-                    var1 = function(arg0) { // Original name: addExpoGoContext, environment: var1
+                    var1 = function arg0() {
                         _fun12299: for (var _fun12299_ip = 0;;) switch (_fun12299_ip) {
                             case 0:
                                 var1 = arg0;

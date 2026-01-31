@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: HeaderStatus, environment: var1
+    var0 = function arg0() {
         _fun84024: for (var _fun84024_ip = 0;;) switch (_fun84024_ip) {
             case 0:
                 var0 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: Header, environment: var1
+    var0 = function arg0() {
         _fun84025: for (var _fun84025_ip = 0;;) switch (_fun84025_ip) {
             case 0:
                 var0 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: Separator, environment: var1
+    var0 = function() {
         var1 = _closure1_slot14;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: CardBody, environment: var1
+    var0 = function arg0() {
         _fun84027: for (var _fun84027_ip = 0;;) switch (_fun84027_ip) {
             case 0:
                 var1 = arg0;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         continue _fun84030
                                     }
                                 case 150:
-                                    var4 = function() { // Original name: openResubsribedAlert, environment: var4
+                                    var4 = function() {
                                         var2 = _closure1_slot1;
                                         var1 = _closure1_slot3;
                                         var0 = 17;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var3 = var2.bind(var0)(var1);
                                         var2 = var3.openLazy;
                                         var1 = {};
-                                        var4 = function() { // Original name: importer, environment: var4
+                                        var4 = function() {
                                             var2 = _closure1_slot0;
                                             var0 = _closure1_slot3;
                                             var1 = 19;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var31.bind(var3)(var11);
                 var12 = var11.GappedList;
                 var11 = {};
-                var14 = function() { // Original name: renderGap, environment: var25
+                var14 = function() {
                     var3 = _closure1_slot11;
                     var2 = _closure1_slot7;
                     var1 = {};
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var28 = var28["7spYft"];
                 var28 = var30.bind(var32)(var28);
                 var14.text = var28;
-                var28 = function() { // Original name: onPress, environment: var25
+                var28 = function() {
                     _fun84037: for (var _fun84037_ip = 0;;) switch (_fun84037_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -897,7 +897,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.FRbWR8;
                 var27 = var28.bind(var30)(var27);
                 var18.text = var27;
-                var25 = function() { // Original name: onPress, environment: var25
+                var25 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot3;
                     var0 = 32;
@@ -1179,7 +1179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/manage_subscriptions/ManageSubscriptionCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ManageSubscriptionCard, environment: var1
+    var1 = function arg0() {
         _fun84039: for (var _fun84039_ip = 0;;) switch (_fun84039_ip) {
             case 0:
                 var0 = arg0;
@@ -1283,7 +1283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[var15] = var17;
                 var15 = 'subscription';
                 var11[var15] = var16;
-                var15 = function() { // Original name: onCancelSubscription, environment: var14
+                var15 = function() {
                     var3 = _closure2_slot1;
                     var2 = var3.push;
                     var0 = _closure1_slot9;
@@ -1292,7 +1292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot0;
                     var4 = var4.id;
                     var0.subscriptionId = var4;
-                    var4 = function() { // Original name: onClose, environment: var4
+                    var4 = function() {
                         var1 = _closure2_slot1;
                         var0 = var1.pop;
                         var0 = var0.bind(var1)();

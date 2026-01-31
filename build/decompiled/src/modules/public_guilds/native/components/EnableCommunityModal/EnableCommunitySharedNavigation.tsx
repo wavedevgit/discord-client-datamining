@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/public_guilds/native/components/EnableCommunityModal/EnableCommunitySharedNavigation.tsx';
     var4 = var5.bind(var6)(var4);
     var2.EnableCommunityModalSteps = var3;
-    var1 = function(arg0) { // Original name: EnableCommunityModalScreen, environment: var1
+    var1 = function arg0() {
         _fun116274: for (var _fun116274_ip = 0;;) switch (_fun116274_ip) {
             case 0:
                 var0 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.Colors;
                 var15 = var15.BRAND;
                 var11.color = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     _fun116278: for (var _fun116278_ip = 0;;) switch (_fun116278_ip) {
                         case 0:
                             var3 = _closure2_slot1;

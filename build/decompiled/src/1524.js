@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = metroImportAll;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: useRegisterNavigator, environment: var1
+    var1 = function() {
         _fun17363: for (var _fun17363_ip = 0;;) switch (_fun17363_ip) {
             case 0:
                 var6 = _closure1_slot3;

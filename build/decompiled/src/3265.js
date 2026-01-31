@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: eq, environment: var0
+    var1 = function arg0, arg1() {
         _fun28163: for (var _fun28163_ip = 0;;) switch (_fun28163_ip) {
             case 0:
                 var1 = arg0;

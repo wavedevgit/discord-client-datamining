@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: getApplicationWidgetContainerId, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.applicationId;
         var0 = global;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: useComponentValidatorState, environment: var1
+    var0 = function arg0, arg1() {
         _fun56174: for (var _fun56174_ip = 0;;) switch (_fun56174_ip) {
             case 0:
                 var4 = arg0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var0
                     _fun56177: for (var _fun56177_ip = 0;;) switch (_fun56177_ip) {
                         case 0:
-                            var3 = function() { // Original name: currentValidate, environment: var0
+                            var3 = function() {
                                 var2 = _closure2_slot3;
                                 var1 = _closure2_slot1;
                                 var0 = undefined;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: useComponentStateForMessage, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun56180: for (var _fun56180_ip = 0;;) switch (_fun56180_ip) {
             case 0:
                 var13 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: useComponentStateForModal, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var8 = arg0;
         var11 = arg1;
         var _closure2_slot0 = var8;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: getParentsNotSupported, environment: var1
+    var0 = function arg0() {
         var1 = 'ApplicationWidget';
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: isInteractionComponent, environment: var1
+    var3 = function arg0() {
         _fun56190: for (var _fun56190_ip = 0;;) switch (_fun56190_ip) {
             case 0:
                 var1 = arg0;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var4 = function(arg0, arg1) { // Original name: getActionComponentState, environment: var1
+    var4 = function arg0, arg1() {
         _fun56191: for (var _fun56191_ip = 0;;) switch (_fun56191_ip) {
             case 0:
                 var7 = arg0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var4;
-    var3 = function(arg0) { // Original name: useShouldDisableInteractiveComponents, environment: var1
+    var3 = function arg0() {
         _fun56192: for (var _fun56192_ip = 0;;) switch (_fun56192_ip) {
             case 0:
                 var4 = _closure1_slot7;
@@ -1043,7 +1043,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.getActionComponentState = var4;
     var2.useShouldDisableInteractiveComponents = var3;
-    var3 = function(arg0) { // Original name: ComponentStateContextProvider, environment: var1
+    var3 = function arg0() {
         _fun56196: for (var _fun56196_ip = 0;;) switch (_fun56196_ip) {
             case 0:
                 var0 = arg0;
@@ -1174,7 +1174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.validationErrors = var3;
                             var3 = _closure2_slot5;
                             var0.setValidationErrors = var3;
-                            var3 = function(arg0) { // Original name: getParents, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 20;
@@ -1205,7 +1205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.message = var3;
                             var2 = _closure2_slot3;
                             var0.validators = var2;
-                            var1 = function(arg0) { // Original name: getParents, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 20;
@@ -1235,7 +1235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ComponentStateContextProvider = var3;
-    var3 = function(arg0, arg1) { // Original name: useComponentState, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var1 = var2.useContext;
         var0 = _closure1_slot16;
@@ -1247,7 +1247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useComponentState = var3;
-    var3 = function() { // Original name: useComponentStateContext, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var1 = var2.useContext;
         var0 = _closure1_slot16;
@@ -1255,7 +1255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useComponentStateContext = var3;
-    var3 = function() { // Original name: useComponentContainerId, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var1 = var2.useContext;
         var0 = _closure1_slot16;
@@ -1264,7 +1264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useComponentContainerId = var3;
-    var1 = function(arg0) { // Original name: useComponentError, environment: var1
+    var1 = function arg0() {
         _fun56204: for (var _fun56204_ip = 0;;) switch (_fun56204_ip) {
             case 0:
                 var2 = _closure1_slot4;

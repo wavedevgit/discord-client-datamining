@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun4807: for (var _fun4807_ip = 0;;) switch (_fun4807_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun4810: for (var _fun4810_ip = 0;;) switch (_fun4810_ip) {
             case 0:
                 var4 = arg0;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: StateSafePureComponent, environment: var5
+        var3 = function arg0() {
             _fun4813: for (var _fun4813_ip = 0;;) switch (_fun4813_ip) {
                 case 0:
                     var3 = this;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'setState';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: setState, environment: var5
+        var0 = function arg0, arg1() {
             _fun4814: for (var _fun4814_ip = 0;;) switch (_fun4814_ip) {
                 case 0:
                     var5 = arg0;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_installSetStateHooks';
         var4.key = var6;
-        var5 = function() { // Original name: _installSetStateHooks, environment: var5
+        var5 = function() {
             var4 = this;
             var _closure3_slot0 = var4;
             var1 = var4.props;
@@ -281,7 +281,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var1.Object;
             var5 = var6.defineProperty;
             var3 = {};
-            var2 = function() { // Original name: get, environment: var0
+            var2 = function() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 7;
@@ -297,7 +297,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var3.get = var2;
-            var2 = function(arg0) { // Original name: set, environment: var0
+            var2 = function arg0() {
                 var0 = arg0;
                 _closure3_slot1 = var0;
                 var0 = undefined;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var1.Object;
             var2 = var3.defineProperty;
             var1 = {};
-            var5 = function() { // Original name: get, environment: var0
+            var5 = function() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 7;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.get = var5;
-            var0 = function(arg0) { // Original name: set, environment: var0
+            var0 = function arg0() {
                 var0 = arg0;
                 _closure3_slot2 = var0;
                 var0 = undefined;

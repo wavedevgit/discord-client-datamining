@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun57730: for (var _fun57730_ip = 0;;) switch (_fun57730_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.MessageType;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: PremiumMarketingComponentProperties$Type, environment: var5
+        var3 = function() {
             _fun57734: for (var _fun57734_ip = 0;;) switch (_fun57734_ip) {
                 case 0:
                     var3 = this;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 6;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 7;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 8;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 9;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 10;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 11;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 12;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 13;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 14;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 15;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 16;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 17;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'kind': 'message',
                         'oneof': 'properties'
                     };
-                    var6 = function() { // Original name: T, environment: var6
+                    var6 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 18;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'create';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun57748: for (var _fun57748_ip = 0;;) switch (_fun57748_ip) {
                 case 0:
                     var4 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryRead';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun57749: for (var _fun57749_ip = 0;;) switch (_fun57749_ip) {
                 case 0:
                     var45 = arg0;
@@ -895,7 +895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryWrite';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun57750: for (var _fun57750_ip = 0;;) switch (_fun57750_ip) {
                 case 0:
                     var4 = arg0;

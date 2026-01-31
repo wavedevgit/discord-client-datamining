@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/community/native/GuildSettingsModalCommunity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsModalCommunity, environment: var1
+    var1 = function arg0() {
         _fun116211: for (var _fun116211_ip = 0;;) switch (_fun116211_ip) {
             case 0:
                 var0 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = function() { // Environment: var11
                     _fun116217: for (var _fun116217_ip = 0;;) switch (_fun116217_ip) {
                         case 0:
-                            var0 = function() { // Original name: handlePublicCancelChanges, environment: var4
+                            var0 = function() {
                                 _fun116218: for (var _fun116218_ip = 0;;) switch (_fun116218_ip) {
                                     case 0:
                                         var1 = _closure2_slot5;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var _closure3_slot0 = var0;
-                            var0 = function() { // Original name: handlePublicSaveChanges, environment: var4
+                            var0 = function() {
                                 _fun116219: for (var _fun116219_ip = 0;;) switch (_fun116219_ip) {
                                     case 0:
                                         var2 = _closure2_slot5;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot9;
                             var1 = var1.bind(var0)();
                             var2.items = var1;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure1_slot1;
                                 var3 = _closure1_slot2;
                                 var0 = 13;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot9;
                             var1 = var1.bind(var0)();
                             var2.items = var1;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure1_slot1;
                                 var3 = _closure1_slot2;
                                 var0 = 13;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure1_slot11;
                     var1 = var1.bind(var0)();
                     var2.items = var1;
-                    var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 13;

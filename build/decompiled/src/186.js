@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: parseLine, environment: var0
+    var2 = function arg0() {
         _fun2637: for (var _fun2637_ip = 0;;) switch (_fun2637_ip) {
             case 0:
                 var2 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var2 = /^ {4}at .*$/;
     var _closure1_slot2 = var2;
-    var0 = function(arg0) { // Original name: parseHermesStack, environment: var0
+    var0 = function arg0() {
         _fun2638: for (var _fun2638_ip = 0;;) switch (_fun2638_ip) {
             case 0:
                 var2 = arg0;

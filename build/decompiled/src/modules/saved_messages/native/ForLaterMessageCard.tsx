@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: ForLaterDeletedMessageCard, environment: var3
+    var1 = function arg0() {
         _fun75892: for (var _fun75892_ip = 0;;) switch (_fun75892_ip) {
             case 0:
                 var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var14[var12];
                 var12 = var13.bind(var3)(var12);
                 var8.icon = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var1;
-    var0 = function(arg0) { // Original name: ForLaterMessageCard, environment: var3
+    var0 = function arg0() {
         _fun75894: for (var _fun75894_ip = 0;;) switch (_fun75894_ip) {
             case 0:
                 var0 = arg0;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot13 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: ForLaterMessageCardGuard, environment: var3
+    var3 = function arg0() {
         _fun75902: for (var _fun75902_ip = 0;;) switch (_fun75902_ip) {
             case 0:
                 var1 = arg0;

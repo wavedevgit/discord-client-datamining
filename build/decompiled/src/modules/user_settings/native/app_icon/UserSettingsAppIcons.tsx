@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.buttonText = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
-    var3 = function() { // Original name: NitroUpsellButton, environment: var1
+    var3 = function() {
         var0 = _closure1_slot14;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var7[var5];
         var1 = var6.bind(var3)(var0);
         var0 = {};
-        var10 = function() { // Original name: onPress, environment: var4
+        var10 = function() {
             var3 = _closure1_slot1;
             var7 = _closure1_slot2;
             var0 = 11;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.text = var9;
         var8 = var8.buttonText;
         var0.textStyle = var8;
-        var8 = function() { // Original name: renderRightIcon, environment: var4
+        var8 = function() {
             var3 = _closure1_slot11;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.Colors;
         var5 = var5.TRANSPARENT;
         var0.color = var5;
-        var4 = function() { // Original name: renderLinearGradient, environment: var4
+        var4 = function() {
             var3 = _closure1_slot11;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;

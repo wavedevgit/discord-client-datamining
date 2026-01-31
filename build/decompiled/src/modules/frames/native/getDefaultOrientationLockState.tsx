@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/frames/native/getDefaultOrientationLockState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: setOrientationLockState, environment: var1
+    var1 = function arg0, arg1() {
         _fun110479: for (var _fun110479_ip = 0;;) switch (_fun110479_ip) {
             case 0:
                 var4 = arg0;

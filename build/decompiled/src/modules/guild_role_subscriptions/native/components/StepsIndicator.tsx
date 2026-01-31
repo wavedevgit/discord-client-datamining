@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: StepNode, environment: var1
+    var0 = function arg0() {
         _fun116920: for (var _fun116920_ip = 0;;) switch (_fun116920_ip) {
             case 0:
                 var2 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var13[var10];
                 var9 = var14.bind(var3)(var2);
                 var7 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: p, environment: var1
+                var2 = function() {
                     var10 = _closure1_slot0;
                     var11 = _closure1_slot2;
                     var6 = 6;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/StepsIndicator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StepsIndicator, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.current;
         var _closure2_slot0 = var10;

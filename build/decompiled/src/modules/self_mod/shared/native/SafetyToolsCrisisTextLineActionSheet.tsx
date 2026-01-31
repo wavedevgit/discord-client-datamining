@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/shared/native/SafetyToolsCrisisTextLineActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SafetyToolsCrisisTextLineActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.channelId;
         var11 = var0.recipientId;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.lkUb4S;
         var13 = var16.bind(var17)(var13);
         var9.text = var13;
-        var13 = function() { // Original name: onPress, environment: var10
+        var13 = function() {
             var3 = _closure1_slot1;
             var4 = _closure1_slot2;
             var0 = 10;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.ogLlvy;
         var11 = var12.bind(var13)(var11);
         var8.text = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var3 = _closure1_slot1;
             var4 = _closure1_slot2;
             var0 = 10;

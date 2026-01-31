@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildSettingsRoleItem, environment: var1
+    var1 = function arg0() {
         _fun115892: for (var _fun115892_ip = 0;;) switch (_fun115892_ip) {
             case 0:
                 var2 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25.size = var28;
                 var28 = 'destructive';
                 var25.variant = var28;
-                var28 = function() { // Original name: onPress, environment: var19
+                var28 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 9;

@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot9 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PrivateChannelUserList, environment: var1
+    var1 = function arg0() {
         _fun105822: for (var _fun105822_ip = 0;;) switch (_fun105822_ip) {
             case 0:
                 var0 = arg0;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.nickname = var2;
                             var2 = true;
                             var1.isNameplatedRow = var2;
-                            var6 = function(arg0) { // Original name: onPress, environment: var6
+                            var6 = function arg0() {
                                 _fun105829: for (var _fun105829_ip = 0;;) switch (_fun105829_ip) {
                                     case 0:
                                         var4 = arg0;

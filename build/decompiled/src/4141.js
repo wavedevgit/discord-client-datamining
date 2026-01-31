@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: isAvifFile, environment: var2
+    var3 = function arg0() {
         _fun37976: for (var _fun37976_ip = 0;;) switch (_fun37976_ip) {
             case 0:
                 var2 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isAvifFile = var3;
-    var2 = function(arg0) { // Original name: findAvifOffsets, environment: var2
+    var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

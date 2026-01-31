@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun91095: for (var _fun91095_ip = 0;;) switch (_fun91095_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var9 = function(arg0) { // Original name: handleInviteData, environment: var4
+    var9 = function arg0() {
         _fun91098: for (var _fun91098_ip = 0;;) switch (_fun91098_ip) {
             case 0:
                 var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var8 = function(arg0) { // Original name: handleWelcomeScreenUpdate, environment: var4
+    var8 = function arg0() {
         _fun91099: for (var _fun91099_ip = 0;;) switch (_fun91099_ip) {
             case 0:
                 var0 = arg0;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: WelcomeScreenStore, environment: var5
+        var3 = function() {
             _fun91101: for (var _fun91101_ip = 0;;) switch (_fun91101_ip) {
                 case 0:
                     var3 = this;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'get';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun91102: for (var _fun91102_ip = 0;;) switch (_fun91102_ip) {
                 case 0:
                     var1 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetching';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasSeen';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun91105: for (var _fun91105_ip = 0;;) switch (_fun91105_ip) {
                 case 0:
                     var3 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isEmpty';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun91106: for (var _fun91106_ip = 0;;) switch (_fun91106_ip) {
                 case 0:
                     var2 = arg0;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.INVITE_ACCEPT_SUCCESS = var9;
     var3.WELCOME_SCREEN_SUBMIT_SUCCESS = var8;
     var3.WELCOME_SCREEN_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleWelcomeScreenView, environment: var4
+    var8 = function arg0() {
         _fun91107: for (var _fun91107_ip = 0;;) switch (_fun91107_ip) {
             case 0:
                 var0 = arg0;
@@ -344,14 +344,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.WELCOME_SCREEN_VIEW = var8;
-    var8 = function() { // Original name: handleGuildStopLurking, environment: var4
+    var8 = function() {
         var0 = false;
         _closure1_slot8 = var0;
         var0 = undefined;
         return var0;
     };
     var3.GUILD_STOP_LURKING = var8;
-    var8 = function(arg0) { // Original name: handleGuildDelete, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         var2 = var0.id;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_DELETE = var8;
-    var8 = function() { // Original name: handleFetchWelcomeScreen, environment: var4
+    var8 = function() {
         var0 = true;
         _closure1_slot9 = var0;
         var0 = false;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.WELCOME_SCREEN_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleFetchWelcomeScreenSuccess, environment: var4
+    var8 = function arg0() {
         _fun91111: for (var _fun91111_ip = 0;;) switch (_fun91111_ip) {
             case 0:
                 var0 = arg0;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.WELCOME_SCREEN_FETCH_SUCCESS = var8;
-    var4 = function() { // Original name: handleFetchWelcomeScreenFail, environment: var4
+    var4 = function() {
         var0 = false;
         _closure1_slot9 = var0;
         var0 = true;

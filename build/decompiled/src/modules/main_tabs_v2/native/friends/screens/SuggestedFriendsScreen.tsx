@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/screens/SuggestedFriendsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SuggestedFriendsScreen, environment: var1
+    var1 = function() {
         _fun108640: for (var _fun108640_ip = 0;;) switch (_fun108640_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.user;
                             var2 = var2.id;
                             var0.key = var2;
-                            var1 = function() { // Original name: component, environment: var1
+                            var1 = function() {
                                 var3 = _closure1_slot7;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.end = var6;
                                 var5 = _closure2_slot4;
                                 var0.onPress = var5;
-                                var5 = function() { // Original name: onAddSuggestion, environment: var5
+                                var5 = function() {
                                     var2 = _closure2_slot2;
                                     var1 = undefined;
                                     var0 = function(arg0) { // Environment: var0

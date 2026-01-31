@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _testCaptcha, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.CaptchaDeciderType = var4;
     var2.HCaptchaDifficulty = var3;
-    var1 = function() { // Original name: testCaptcha, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;

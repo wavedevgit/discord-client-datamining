@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SelectedServerIcon, environment: var1
+    var0 = function arg0() {
         _fun103866: for (var _fun103866_ip = 0;;) switch (_fun103866_ip) {
             case 0:
                 var0 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: SelectedServersRow, environment: var1
+    var0 = function arg0() {
         _fun103867: for (var _fun103867_ip = 0;;) switch (_fun103867_ip) {
             case 0:
                 var0 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var13[var0];
                 var6 = var10.bind(var3)(var2);
                 var2 = var6.useAnimatedStyle;
-                var1 = function() { // Original name: _, environment: var1
+                var1 = function() {
                     _fun103870: for (var _fun103870_ip = 0;;) switch (_fun103870_ip) {
                         case 0:
                             var0 = {};
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: CutoutGuildBanner, environment: var1
+    var0 = function arg0() {
         _fun103871: for (var _fun103871_ip = 0;;) switch (_fun103871_ip) {
             case 0:
                 var1 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: FeaturedServer, environment: var1
+    var0 = function arg0() {
         _fun103874: for (var _fun103874_ip = 0;;) switch (_fun103874_ip) {
             case 0:
                 var1 = arg0;
@@ -1091,7 +1091,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/info_modal/ICYMIJoinGuildsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMIJoinGuildsScreen, environment: var1
+    var1 = function() {
         _fun103878: for (var _fun103878_ip = 0;;) switch (_fun103878_ip) {
             case 0:
                 var1 = _closure1_slot16;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PollEmoji, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.style;
         var5 = var0.emoji;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: PollVotesHeader, environment: var1
+    var0 = function arg0() {
         _fun76037: for (var _fun76037_ip = 0;;) switch (_fun76037_ip) {
             case 0:
                 var0 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: VotersList, environment: var1
+    var0 = function arg0() {
         _fun76050: for (var _fun76050_ip = 0;;) switch (_fun76050_ip) {
             case 0:
                 var0 = arg0;
@@ -795,7 +795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var6;
                         case 414:
                             var0.subLabel = var5;
-                            var4 = function() { // Original name: onPress, environment: var4
+                            var4 = function() {
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
                                 var0 = 30;
@@ -887,7 +887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11[var0];
                 var6 = var5.bind(var3)(var2);
                 var2 = var6.useAnimatedStyle;
-                var1 = function() { // Original name: b, environment: var1
+                var1 = function() {
                     var0 = {
                         'flex': 1,
                         'opacity': null,
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: NoResults, environment: var1
+    var0 = function() {
         _fun76056: for (var _fun76056_ip = 0;;) switch (_fun76056_ip) {
             case 0:
                 var0 = _closure1_slot16;
@@ -1393,7 +1393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/native/PollVotesActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PollVotesActionSheet, environment: var1
+    var1 = function arg0() {
         _fun76059: for (var _fun76059_ip = 0;;) switch (_fun76059_ip) {
             case 0:
                 var0 = arg0;

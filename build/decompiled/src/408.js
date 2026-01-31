@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var4.jsx;
     var4 = var4.jsxs;
     var _closure1_slot9 = var4;
-    var1 = function(arg0) { // Original name: Pressable, environment: var1
+    var1 = function arg0() {
         _fun5796: for (var _fun5796_ip = 0;;) switch (_fun5796_ip) {
             case 0:
                 var4 = arg0;
@@ -453,7 +453,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.onLongPress = var3;
                     var2 = _closure2_slot12;
                     var0.onPress = var2;
-                    var2 = function(arg0) { // Original name: onPressIn, environment: var1
+                    var2 = function arg0() {
                         _fun5798: for (var _fun5798_ip = 0;;) switch (_fun5798_ip) {
                             case 0:
                                 var2 = arg0;
@@ -494,7 +494,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onPressIn = var2;
-                    var2 = function(arg0) { // Original name: onPressMove, environment: var1
+                    var2 = function arg0() {
                         _fun5799: for (var _fun5799_ip = 0;;) switch (_fun5799_ip) {
                             case 0:
                                 var2 = arg0;
@@ -524,7 +524,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onPressMove = var2;
-                    var1 = function(arg0) { // Original name: onPressOut, environment: var1
+                    var1 = function arg0() {
                         _fun5800: for (var _fun5800_ip = 0;;) switch (_fun5800_ip) {
                             case 0:
                                 var2 = arg0;

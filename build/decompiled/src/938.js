@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1) { // Original name: createSpanName, environment: var1
+    var0 = function arg0, arg1() {
         _fun9763: for (var _fun9763_ip = 0;;) switch (_fun9763_ip) {
             case 0:
                 var5 = arg0;
@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: buildSentryAttributes, environment: var1
+    var0 = function arg0() {
         _fun9764: for (var _fun9764_ip = 0;;) switch (_fun9764_ip) {
             case 0:
                 var1 = arg0;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: createMcpSpan, environment: var1
+    var0 = function arg0() {
         _fun9765: for (var _fun9765_ip = 0;;) switch (_fun9765_ip) {
             case 0:
                 var0 = arg0;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: buildMcpServerSpanConfig, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun9766: for (var _fun9766_ip = 0;;) switch (_fun9766_ip) {
             case 0:
                 var15 = arg0;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.buildMcpServerSpanConfig = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createMcpNotificationSpan, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot5;
         var1 = {};
         var0 = 'notification-incoming';
@@ -350,7 +350,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.createMcpNotificationSpan = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: createMcpOutgoingNotificationSpan, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var2 = _closure1_slot5;
         var1 = {};
         var0 = 'notification-outgoing';

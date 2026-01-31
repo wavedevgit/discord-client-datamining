@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
                 var2 = var1.PressableOpacity;
                 var1 = {};
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot2;
                     var0 = undefined;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ApplicationCommandsCategories.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun90064: for (var _fun90064_ip = 0;;) switch (_fun90064_ip) {
             case 0:
                 var0 = arg0;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.keyboardShouldPersistTaps = var12;
                 var12 = true;
                 var5.horizontal = var12;
-                var11 = function(arg0) { // Original name: keyExtractor, environment: var11
+                var11 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;

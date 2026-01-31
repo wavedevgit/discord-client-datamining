@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.Presets = var3;
-    var3 = function(arg0, arg1) { // Original name: presetFromSettings, environment: var1
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
         var2 = 2;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.presetFromSettings = var3;
-    var3 = function(arg0) { // Original name: presetName, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
         var2 = 2;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.presetName = var3;
-    var1 = function(arg0, arg1) { // Original name: arePresetSettingsUnset, environment: var1
+    var1 = function arg0, arg1() {
         _fun39558: for (var _fun39558_ip = 0;;) switch (_fun39558_ip) {
             case 0:
                 var4 = arg0;

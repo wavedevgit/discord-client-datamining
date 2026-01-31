@@ -29,9 +29,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var4.bind(var0)(var3);
         case 59:
             var _closure1_slot2 = var2;
-            var2 = function() { // Original name: getSideChannel, environment: var1
+            var2 = function() {
                 var0 = {};
-                var2 = function(arg0) { // Original name: assert, environment: var1
+                var2 = function arg0() {
                     _fun6581: for (var _fun6581_ip = 0;;) switch (_fun6581_ip) {
                         case 0:
                             var3 = arg0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.assert = var2;
-                var2 = function(arg0) { // Original name: _delete, environment: var1
+                var2 = function arg0() {
                     _fun6582: for (var _fun6582_ip = 0;;) switch (_fun6582_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.delete = var2;
-                var2 = function(arg0) { // Original name: get, environment: var1
+                var2 = function arg0() {
                     _fun6583: for (var _fun6583_ip = 0;;) switch (_fun6583_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.get = var2;
-                var2 = function(arg0) { // Original name: has, environment: var1
+                var2 = function arg0() {
                     _fun6584: for (var _fun6584_ip = 0;;) switch (_fun6584_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.has = var2;
-                var2 = function(arg0, arg1) { // Original name: set, environment: var1
+                var2 = function arg0, arg1() {
                     _fun6585: for (var _fun6585_ip = 0;;) switch (_fun6585_ip) {
                         case 0:
                             var1 = _closure2_slot0;

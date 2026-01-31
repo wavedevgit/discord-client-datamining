@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: useApplicationInfo, environment: var3
+    var0 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot5;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: getUploadsForModal, environment: var3
+    var0 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot11;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var1 = function() { // Original name: submitModal, environment: var3
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var1;
-    var0 = function() { // Original name: _submitModal, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.uploads = var8;
                         var3 = var7.bind(var2)(var6, var5, var3);
                         _closure4_slot5 = var3;
-                        var3 = function() { // Original name: send, environment: var4
+                        var3 = function() {
                             _fun113387: for (var _fun113387_ip = 0;;) switch (_fun113387_ip) {
                                 case 0:
                                     var1 = _closure4_slot1;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var0)(var4);
     var4 = var4.Endpoints;
     var _closure1_slot15 = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: getData, environment: var3
+    var4 = function arg0, arg1, arg2() {
         var2 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -988,7 +988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/interaction_components/InteractionModalUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useIsFirstTextInputInModal, environment: var3
+    var4 = function arg0() {
         _fun113394: for (var _fun113394_ip = 0;;) switch (_fun113394_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -1052,7 +1052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsFirstTextInputInModal = var4;
-    var4 = function(arg0, arg1) { // Original name: useModalState, environment: var3
+    var4 = function arg0, arg1() {
         var14 = arg0;
         var16 = arg1;
         var _closure2_slot0 = var14;
@@ -1330,7 +1330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useModalState = var4;
-    var3 = function(arg0) { // Original name: useIframeModalState, environment: var3
+    var3 = function arg0() {
         _fun113404: for (var _fun113404_ip = 0;;) switch (_fun113404_ip) {
             case 0:
                 var0 = arg0;

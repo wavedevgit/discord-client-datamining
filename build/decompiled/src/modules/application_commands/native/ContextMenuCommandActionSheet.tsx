@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ContextMenuCommandActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ContextMenuCommandActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var16 = var0.channel;
         var _closure2_slot0 = var16;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = {};
                     var8 = var6.command;
                     var0.item = var8;
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         _fun75769: for (var _fun75769_ip = 0;;) switch (_fun75769_ip) {
                             case 0:
                                 var2 = _closure2_slot2;

@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun16402
             }
         case 166:
-            var6 = function(arg0, arg1) { // Original name: indexOf, environment: var1
+            var6 = function arg0, arg1() {
                 _fun16403: for (var _fun16403_ip = 0;;) switch (_fun16403_ip) {
                     case 0:
                         var5 = arg0;
@@ -252,7 +252,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2 = var3.bind(var0)(var4, var2);
         case 265:
-            var2 = function(arg0) { // Original name: whichTypedArray, environment: var1
+            var2 = function arg0() {
                 _fun16406: for (var _fun16406_ip = 0;;) switch (_fun16406_ip) {
                     case 0:
                         var3 = arg0;
@@ -297,7 +297,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun16406
                         }
                     case 98:
-                        var5 = function(arg0) { // Original name: tryAllSlices, environment: var1
+                        var5 = function arg0() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var1 = false;
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun16406
                         }
                     case 140:
-                        var1 = function(arg0) { // Original name: tryAllTypedArrays, environment: var1
+                        var1 = function arg0() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var1 = false;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: NotificationSettingsMessageUnread, environment: var1
+    var0 = function arg0() {
         _fun69902: for (var _fun69902_ip = 0;;) switch (_fun69902_ip) {
             case 0:
                 var17 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsMessageUnread.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: NotificationSettingsGuildMessageUnread, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var5 = var5.unread;
         var1.setting = var5;
-        var4 = function() { // Original name: onCustomize, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.NotificationSettingsGuildMessageUnread = var3;
-    var1 = function(arg0) { // Original name: NotificationSettingsChannelMessageUnread, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var5 = var5.unread;
         var1.setting = var5;
-        var4 = function() { // Original name: onCustomize, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;

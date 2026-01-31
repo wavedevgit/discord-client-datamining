@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot11;
                         var6 = var2.bind(var4)();
                         _closure2_slot6 = var6;
-                        var5 = function() { // Original name: renderContent, environment: var0
+                        var5 = function() {
                             _fun59583: for (var _fun59583_ip = 0;;) switch (_fun59583_ip) {
                                 case 0:
                                     var3 = _closure1_slot10;

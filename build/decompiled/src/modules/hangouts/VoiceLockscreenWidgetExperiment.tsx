@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.VoiceLockscreenWidgetUserExperiment = var3;
-    var1 = function(arg0, arg1) { // Original name: getLockscreenWidgetConfig, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg0;
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FailedGroupDMRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.channel;
         var0 = _closure1_slot13;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: FailedUserRow, environment: var1
+    var0 = function arg0() {
         _fun72933: for (var _fun72933_ip = 0;;) switch (_fun72933_ip) {
             case 0:
                 var1 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: FailedChannelRow, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var13 = var1.channel;
         var _closure2_slot0 = var13;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: FailedDestinationRow, environment: var1
+    var0 = function arg0() {
         _fun72938: for (var _fun72938_ip = 0;;) switch (_fun72938_ip) {
             case 0:
                 var1 = arg0;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/share/native/DestinationFailedAlertModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DestinationFailedAlertModal, environment: var1
+    var1 = function arg0() {
         _fun72940: for (var _fun72940_ip = 0;;) switch (_fun72940_ip) {
             case 0:
                 var0 = arg0;

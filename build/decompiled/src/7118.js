@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var4;
     var3 = var3.useEffect;
     var _closure1_slot4 = var3;
-    var1 = function() { // Original name: useIAP, environment: var1
+    var1 = function() {
         _fun58404: for (var _fun58404_ip = 0;;) switch (_fun58404_ip) {
             case 0:
                 var4 = _closure1_slot0;

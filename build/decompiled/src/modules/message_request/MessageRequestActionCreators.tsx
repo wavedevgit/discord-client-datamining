@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _acceptMessageRequest, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/MessageRequestActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: acceptMessageRequest, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.acceptMessageRequest = var3;
-    var3 = function(arg0) { // Original name: clearMessageRequestState, environment: var1
+    var3 = function arg0() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 2;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearMessageRequestState = var3;
-    var3 = function(arg0) { // Original name: markAsMessageRequest, environment: var1
+    var3 = function arg0() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 2;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.markAsMessageRequest = var3;
-    var3 = function(arg0) { // Original name: rejectMessageRequest, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.rejectMessageRequest = var3;
-    var3 = function(arg0) { // Original name: rejectMessageRequestBatch, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.rejectMessageRequestBatch = var3;
-    var1 = function() { // Original name: fetchUserCountryCode, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;

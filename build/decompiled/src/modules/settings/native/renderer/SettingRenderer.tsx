@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: formatSettingsRowTrailing, environment: var1
+    var0 = function arg0() {
         _fun79635: for (var _fun79635_ip = 0;;) switch (_fun79635_ip) {
             case 0:
                 var5 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: SettingSearchResultBreadcrumbs, environment: var1
+    var0 = function arg0() {
         _fun79636: for (var _fun79636_ip = 0;;) switch (_fun79636_ip) {
             case 0:
                 var0 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: SettingSearchResultIcon, environment: var1
+    var0 = function arg0() {
         _fun79637: for (var _fun79637_ip = 0;;) switch (_fun79637_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: RouteSettingSearchResult, environment: var1
+    var0 = function arg0() {
         _fun79638: for (var _fun79638_ip = 0;;) switch (_fun79638_ip) {
             case 0:
                 var2 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: PressableSettingSearchResult, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.settingData;
         var12 = var2.IconComponent;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: StaticSettingSearchResult, environment: var1
+    var0 = function arg0() {
         _fun79642: for (var _fun79642_ip = 0;;) switch (_fun79642_ip) {
             case 0:
                 var2 = arg0;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: SettingSearchResultPlaceholder, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.start;
         var5 = var0.end;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var4.bind(var8)(var3);
     var _closure1_slot19 = var3;
-    var3 = function(arg0) { // Original name: GuildSelectDefaultIcon, environment: var1
+    var3 = function arg0() {
         _fun79648: for (var _fun79648_ip = 0;;) switch (_fun79648_ip) {
             case 0:
                 var0 = arg0;
@@ -2237,7 +2237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/settings/native/renderer/SettingRenderer.tsx';
     var4 = var5.bind(var6)(var4);
     var2.GuildSelectDefaultIcon = var3;
-    var3 = function(arg0) { // Original name: renderSettingItem, environment: var1
+    var3 = function arg0() {
         _fun79671: for (var _fun79671_ip = 0;;) switch (_fun79671_ip) {
             case 0:
                 var1 = arg0;
@@ -2445,7 +2445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderSettingItem = var3;
-    var3 = function(arg0) { // Original name: renderSettingSearchResultItem, environment: var1
+    var3 = function arg0() {
         _fun79672: for (var _fun79672_ip = 0;;) switch (_fun79672_ip) {
             case 0:
                 var2 = arg0;
@@ -2526,7 +2526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderSettingSearchResultItem = var3;
-    var1 = function(arg0) { // Original name: renderSettingSearchResultPlaceholderItem, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot15;
         var2 = _closure1_slot34;

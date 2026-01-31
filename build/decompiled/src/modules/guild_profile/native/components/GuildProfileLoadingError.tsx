@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_profile/native/components/GuildProfileLoadingError.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildProfileLoadingError, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.onRetry;
         var16 = _closure1_slot0;

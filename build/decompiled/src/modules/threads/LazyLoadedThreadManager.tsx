@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var3 = function(arg0) { // Original name: loadThread, environment: var6
+    var3 = function arg0() {
         _fun49883: for (var _fun49883_ip = 0;;) switch (_fun49883_ip) {
             case 0:
                 var4 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun49883
                 }
             case 92:
-                var1 = function() { // Original name: initialize, environment: var0
+                var1 = function() {
                     _fun49884: for (var _fun49884_ip = 0;;) switch (_fun49884_ip) {
                         case 0:
                             var1 = _closure1_slot12;

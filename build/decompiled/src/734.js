@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.hasOwnProperty;
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: baseIsEqualDeep, environment: var0
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun8347: for (var _fun8347_ip = 0;;) switch (_fun8347_ip) {
             case 0:
                 var8 = arg0;

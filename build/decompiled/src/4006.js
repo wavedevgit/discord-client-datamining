@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
     var3 = var4.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: SearchBar, environment: var1
+    var1 = function arg0, arg1() {
         _fun37242: for (var _fun37242_ip = 0;;) switch (_fun37242_ip) {
             case 0:
                 var8 = arg0;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = arg1;
                 var0 = function() { // Environment: var3
                     var0 = {};
-                    var2 = function() { // Original name: blur, environment: var1
+                    var2 = function() {
                         var2 = _closure2_slot1;
                         var0 = undefined;
                         var1 = function(arg0) { // Environment: var1
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.blur = var2;
-                    var2 = function() { // Original name: focus, environment: var1
+                    var2 = function() {
                         var2 = _closure2_slot1;
                         var0 = undefined;
                         var1 = function(arg0) { // Environment: var1
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.focus = var2;
-                    var2 = function(arg0) { // Original name: toggleCancelButton, environment: var1
+                    var2 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var2 = _closure2_slot1;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.toggleCancelButton = var2;
-                    var2 = function() { // Original name: clearText, environment: var1
+                    var2 = function() {
                         var2 = _closure2_slot1;
                         var0 = undefined;
                         var1 = function(arg0) { // Environment: var1
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.clearText = var2;
-                    var2 = function(arg0) { // Original name: setText, environment: var1
+                    var2 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var2 = _closure2_slot1;
@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.setText = var2;
-                    var1 = function() { // Original name: cancelSearch, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot1;
                         var0 = undefined;
                         var1 = function(arg0) { // Environment: var1

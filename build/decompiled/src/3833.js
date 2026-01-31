@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useAnimatedReactionTs1(){const{prepare,react,previous}=this.__closure;const input=prepare();react(input,previous.value);previous.value=input;}';
     var3.code = var4;
     var _closure1_slot4 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useAnimatedReaction, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun34762: for (var _fun34762_ip = 0;;) switch (_fun34762_ip) {
             case 0:
                 var4 = arg0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 299:
                 var2 = _closure1_slot3;
                 var1 = function() { // Environment: var1
-                    var4 = function() { // Original name: pnpm_useAnimatedReactionTs1, environment: var0
+                    var4 = function() {
                         var2 = _closure2_slot0;
                         var0 = undefined;
                         var2 = var2.bind(var0)();

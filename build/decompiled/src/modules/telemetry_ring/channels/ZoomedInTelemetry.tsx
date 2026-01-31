@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun96679: for (var _fun96679_ip = 0;;) switch (_fun96679_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun96681: for (var _fun96681_ip = 0;;) switch (_fun96681_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun96682: for (var _fun96682_ip = 0;;) switch (_fun96682_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: shouldExportZoomed, environment: var1
+    var0 = function() {
         _fun96685: for (var _fun96685_ip = 0;;) switch (_fun96685_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ZoomedInTelemetryImpl, environment: var5
+        var3 = function() {
             _fun96687: for (var _fun96687_ip = 0;;) switch (_fun96687_ip) {
                 case 0:
                     var3 = this;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'shouldRun';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var1 = _closure1_slot15;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getBudget';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun96689: for (var _fun96689_ip = 0;;) switch (_fun96689_ip) {
                 case 0:
                     var1 = 'backlog';
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getAckedEndOffsetStorageKey';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = 'telemetry_ring_zoomed_acked_end_offset_v1';
             return var0;
         };
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'getExportBatchSize';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = 250;
             return var0;
         };
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: exportEntries, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

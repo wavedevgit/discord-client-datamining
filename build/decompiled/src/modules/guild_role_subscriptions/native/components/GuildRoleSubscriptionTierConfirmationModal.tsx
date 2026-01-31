@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierConfirmationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierConfirmationModal, environment: var1
+    var1 = function arg0() {
         _fun116883: for (var _fun116883_ip = 0;;) switch (_fun116883_ip) {
             case 0:
                 var4 = arg0;

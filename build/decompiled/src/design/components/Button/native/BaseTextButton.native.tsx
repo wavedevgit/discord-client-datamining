@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CollapsingText, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var7 = var1.children;
         var2 = var1.collapseText;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var9[var4];
         var12 = var8.bind(var3)(var5);
         var10 = var12.useWorkletCallback;
-        var8 = function(arg0) { // Original name: o, environment: var0
+        var8 = function arg0() {
             _fun37383: for (var _fun37383_ip = 0;;) switch (_fun37383_ip) {
                 case 0:
                     var0 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = new Array(1);
         var5[0] = var1;
         var10 = var10.bind(var12)(var8, var5);
-        var5 = function(arg0, arg1) { // Original name: useCollapsingTextContainerStyles, environment: var0
+        var5 = function arg0, arg1() {
             var9 = arg0;
             var5 = arg1;
             var _closure3_slot0 = var9;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = undefined;
             var2 = var7.bind(var6)(var1);
             var1 = var2.useAnimatedStyle;
-            var0 = function() { // Original name: o, environment: var0
+            var0 = function() {
                 _fun37385: for (var _fun37385_ip = 0;;) switch (_fun37385_ip) {
                     case 0:
                         var1 = _closure3_slot0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var12 = var5.bind(var3)(var1, var2);
-        var0 = function(arg0, arg1) { // Original name: useCollapsingTextStyles, environment: var0
+        var0 = function arg0, arg1() {
             var5 = arg0;
             var7 = arg1;
             var _closure3_slot0 = var5;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var8[var1];
             var2 = var2.bind(var4)(var1);
             var1 = var2.useAnimatedStyle;
-            var0 = function() { // Original name: l, environment: var0
+            var0 = function() {
                 _fun37387: for (var _fun37387_ip = 0;;) switch (_fun37387_ip) {
                     case 0:
                         var2 = _closure3_slot1;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var9 = function(arg0) { // Original name: getHitSlop, environment: var1
+    var9 = function arg0() {
         _fun37388: for (var _fun37388_ip = 0;;) switch (_fun37388_ip) {
             case 0:
                 var4 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: BaseTextButtonIcon, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.icon;
         var8 = var0.size;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var9.bind(var0)(var7);
     var6.lg = var7;
     var _closure1_slot17 = var6;
-    var6 = function(arg0, arg1) { // Original name: getTextPlatformLineHeight, environment: var1
+    var6 = function arg0, arg1() {
         _fun37392: for (var _fun37392_ip = 0;;) switch (_fun37392_ip) {
             case 0:
                 var3 = arg0;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var3.Object;
     var6 = var7.assign;
     var3 = {};
-    var1 = function(arg0) { // Original name: TextButtonIcon, environment: var1
+    var1 = function arg0() {
         _fun37394: for (var _fun37394_ip = 0;;) switch (_fun37394_ip) {
             case 0:
                 var0 = arg0;

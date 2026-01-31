@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+    var0 = function() {
         _fun112810: for (var _fun112810_ip = 0;;) switch (_fun112810_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: cleanupResyncState, environment: var6
+    var0 = function arg0() {
         _fun112813: for (var _fun112813_ip = 0;;) switch (_fun112813_ip) {
             case 0:
                 var1 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: cleanupIntegrityCheckState, environment: var6
+    var0 = function arg0() {
         _fun112814: for (var _fun112814_ip = 0;;) switch (_fun112814_ip) {
             case 0:
                 var1 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: handleGuildCreate, environment: var6
+    var0 = function arg0() {
         _fun112815: for (var _fun112815_ip = 0;;) switch (_fun112815_ip) {
             case 0:
                 var1 = arg0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: handlePostConnectionOpen, environment: var6
+    var0 = function() {
         var2 = _closure1_slot20;
         var0 = var2.clear;
         var0 = var0.bind(var2)();
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: handleChannelSync, environment: var6
+    var0 = function arg0() {
         _fun112819: for (var _fun112819_ip = 0;;) switch (_fun112819_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun112819_ip = 170;
                 continue _fun112819;
             case 154:
-                var1 = function(arg0) { // Original name: doIntegrityCheck, environment: var0
+                var1 = function arg0() {
                     _fun112820: for (var _fun112820_ip = 0;;) switch (_fun112820_ip) {
                         case 0:
                             var0 = arg0;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: scheduleGuildResyncs, environment: var6
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot32;
         var2 = var3.apply;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: _scheduleGuildResyncs, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 35:
                                     var3 = var0.id;
                                     var2 = var0.requestId;
-                                    var1 = function(arg0, arg1) { // Original name: scheduleGuildResync, environment: var0
+                                    var1 = function arg0, arg1() {
                                         _fun112827: for (var _fun112827_ip = 0;;) switch (_fun112827_ip) {
                                             case 0:
                                                 var3 = arg0;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                     var0 = _closure1_slot21;
                                                     var2 = _closure6_slot0;
                                                     var0 = delete var0[var2];
-                                                    var1 = function(arg0) { // Original name: triggerGuildChannelResync, environment: var0
+                                                    var1 = function arg0() {
                                                         _fun112829: for (var _fun112829_ip = 0;;) switch (_fun112829_ip) {
                                                             case 0:
                                                                 var2 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                                 var4 = var3.bind(var4)();
                                                                 var3 = var4.triggerGuildChannelResync;
                                                                 var3 = var3.bind(var4)(var2, var5);
-                                                                var3 = function(arg0, arg1) { // Original name: scheduleResyncTimeout, environment: var3
+                                                                var3 = function arg0, arg1() {
                                                                     _fun112830: for (var _fun112830_ip = 0;;) switch (_fun112830_ip) {
                                                                         case 0:
                                                                             var3 = arg0;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: scheduleIntegrityCheck, environment: var6
+    var0 = function arg0() {
         _fun112832: for (var _fun112832_ip = 0;;) switch (_fun112832_ip) {
             case 0:
                 var3 = arg0;
@@ -942,7 +942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot23;
                     var2 = _closure2_slot0;
                     var0 = delete var0[var2];
-                    var1 = function(arg0) { // Original name: triggerIntegrityCheck, environment: var0
+                    var1 = function arg0() {
                         _fun112834: for (var _fun112834_ip = 0;;) switch (_fun112834_ip) {
                             case 0:
                                 var2 = arg0;
@@ -1007,7 +1007,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var3.bind(var4)();
                                 var3 = var4.triggerGuildChannelResync;
                                 var3 = var3.bind(var4)(var2, var5);
-                                var3 = function(arg0, arg1) { // Original name: scheduleIntegrityCheckTimeout, environment: var3
+                                var3 = function arg0, arg1() {
                                     _fun112835: for (var _fun112835_ip = 0;;) switch (_fun112835_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -1205,7 +1205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var7 = var7.bind(var0)(var1);
     var1 = function(arg0) { // Environment: var6
-        var2 = function(arg0) { // Original name: ChannelResyncManager, environment: var0
+        var2 = function arg0() {
             _fun112838: for (var _fun112838_ip = 0;;) switch (_fun112838_ip) {
                 case 0:
                     var4 = this;

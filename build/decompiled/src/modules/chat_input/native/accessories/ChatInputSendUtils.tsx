@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun89389: for (var _fun89389_ip = 0;;) switch (_fun89389_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun89391: for (var _fun89391_ip = 0;;) switch (_fun89391_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: chatInputSendMessage, environment: var1
+    var0 = function arg0() {
         _fun89392: for (var _fun89392_ip = 0;;) switch (_fun89392_ip) {
             case 0:
                 var1 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = copyDataProperties(var20, var19);
                 var7 = 'attachmentsToUpload';
                 var1[var7] = var8;
-                var7 = function(arg0, arg1, arg2) { // Original name: onAttachmentUploadError, environment: var6
+                var7 = function arg0, arg1, arg2() {
                     _fun89393: for (var _fun89393_ip = 0;;) switch (_fun89393_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var4 = function(arg0) { // Original name: chatInputValidateContentLength, environment: var1
+    var4 = function arg0() {
         _fun89394: for (var _fun89394_ip = 0;;) switch (_fun89394_ip) {
             case 0:
                 var0 = arg0;
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var3 = function(arg0, arg1) { // Original name: showFileSizeExceededAlert, environment: var1
+    var3 = function arg0, arg1() {
         _fun89395: for (var _fun89395_ip = 0;;) switch (_fun89395_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var0 = function() { // Original name: _chatInputSendApplicationCommand, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -990,7 +990,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/chat_input/native/accessories/ChatInputSendUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.chatInputValidateContentLength = var4;
-    var4 = function(arg0) { // Original name: chatInputHandleSendText, environment: var1
+    var4 = function arg0() {
         _fun89399: for (var _fun89399_ip = 0;;) switch (_fun89399_ip) {
             case 0:
                 var0 = arg0;
@@ -1103,7 +1103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.KJnHq3;
                 var12 = var13.bind(var16)(var12);
                 var4.confirmText = var12;
-                var12 = function() { // Original name: onConfirm, environment: var1
+                var12 = function() {
                     var2 = _closure1_slot15;
                     var1 = {};
                     var0 = _closure2_slot0;
@@ -1188,7 +1188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.id;
                 var2.threadId = var7;
                 var2.attachments = var6;
-                var1 = function() { // Original name: sendMessage, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot15;
                     var1 = {};
                     var0 = _closure2_slot0;
@@ -1212,7 +1212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.chatInputHandleSendText = var4;
-    var4 = function(arg0) { // Original name: chatInputCreateThread, environment: var1
+    var4 = function arg0() {
         _fun89402: for (var _fun89402_ip = 0;;) switch (_fun89402_ip) {
             case 0:
                 var0 = arg0;
@@ -1272,7 +1272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.chatInputCreateThread = var4;
     var2.showFileSizeExceededAlert = var3;
-    var1 = function() { // Original name: chatInputSendApplicationCommand, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;

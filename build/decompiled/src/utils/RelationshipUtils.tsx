@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: showNotification, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var1 = arg0;
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/RelationshipUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: showPendingNotification, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot4;
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showPendingNotification = var3;
-    var1 = function(arg0) { // Original name: showAcceptedNotification, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot4;

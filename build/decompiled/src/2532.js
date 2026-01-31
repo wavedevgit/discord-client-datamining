@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun21777: for (var _fun21777_ip = 0;;) switch (_fun21777_ip) {
         case 0:
             var1 = exports;
-            var0 = function(arg0) { // Original name: _typeof, environment: var3
+            var0 = function arg0() {
                 _fun21778: for (var _fun21778_ip = 0;;) switch (_fun21778_ip) {
                     case 0:
                         var1 = global;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun21778
                         }
                     case 43:
-                        var2 = function(arg0) { // Original name: _typeof, environment: var0
+                        var2 = function arg0() {
                             _fun21780: for (var _fun21780_ip = 0;;) switch (_fun21780_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun21778_ip = 55;
                         continue _fun21778;
                     case 50:
-                        var2 = function(arg0) { // Original name: _typeof, environment: var0
+                        var2 = function arg0() {
                             var0 = arg0;
                             var0 = typeof var0;
                             return var0;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.value = var0;
             var0 = '__esModule';
             var0 = var4.bind(var5)(var1, var0, var2);
-            var0 = function(arg0) { // Original name: toDate, environment: var3
+            var0 = function arg0() {
                 _fun21781: for (var _fun21781_ip = 0;;) switch (_fun21781_ip) {
                     case 0:
                         var2 = arg0;

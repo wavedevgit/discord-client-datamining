@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/authorized_apps/UserSettingsAuthedAppDeleteWarningModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserSettingsAuthedAppDeleteWarningModal, environment: var1
+    var1 = function arg0() {
         _fun82125: for (var _fun82125_ip = 0;;) switch (_fun82125_ip) {
             case 0:
                 var0 = arg0;

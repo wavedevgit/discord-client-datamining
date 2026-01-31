@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var1);
     var0 = {};
-    var1 = function() { // Original name: getDueAt, environment: var5
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.getDueAt = var1;
-    var1 = function() { // Original name: getLabel, environment: var5
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 1;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = new Array(5);
     var1[0] = var0;
     var0 = {};
-    var6 = function() { // Original name: getDueAt, environment: var5
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.getDueAt = var6;
-    var6 = function() { // Original name: getLabel, environment: var5
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 1;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.getLabel = var6;
     var1[1] = var0;
     var0 = {};
-    var6 = function() { // Original name: getDueAt, environment: var5
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var0.getDueAt = var6;
-    var6 = function() { // Original name: getLabel, environment: var5
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 1;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.getLabel = var6;
     var1[2] = var0;
     var0 = {};
-    var6 = function() { // Original name: getDueAt, environment: var5
+    var6 = function() {
         _fun75948: for (var _fun75948_ip = 0;;) switch (_fun75948_ip) {
             case 0:
                 var5 = _closure1_slot1;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var0.getDueAt = var6;
-    var6 = function() { // Original name: getLabel, environment: var5
+    var6 = function() {
         _fun75949: for (var _fun75949_ip = 0;;) switch (_fun75949_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.getLabel = var6;
     var1[3] = var0;
     var0 = {};
-    var6 = function() { // Original name: getDueAt, environment: var5
+    var6 = function() {
         _fun75950: for (var _fun75950_ip = 0;;) switch (_fun75950_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var0.getDueAt = var6;
-    var5 = function() { // Original name: getLabel, environment: var5
+    var5 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 1;

@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.lockIcon = var8;
     var3 = var4.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: EditCollectibleListItem, environment: var1
+    var3 = function arg0() {
         _fun50863: for (var _fun50863_ip = 0;;) switch (_fun50863_ip) {
             case 0:
                 var0 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.PressableOpacity;
                 var0 = {};
                 var0.disabled = var12;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var3 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 8;

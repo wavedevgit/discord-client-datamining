@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.section;
         var3 = var0.row;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = var16.categoryContainer;
                 var0.style = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var4 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var3 = var0.guild_id;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.children = var12;
                 var9 = var11.bind(var4)(var10, var9);
                 var1.label = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var4 = _closure2_slot2;
                     var1 = _closure2_slot1;
                     var3 = var1.id;
@@ -818,7 +818,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/opt_in_channels/native/ChannelBrowser.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelBrowser, environment: var1
+    var1 = function arg0() {
         _fun77587: for (var _fun77587_ip = 0;;) switch (_fun77587_ip) {
             case 0:
                 var0 = arg0;
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var15 = 'md';
                 var5.size = var15;
-                var15 = function(arg0) { // Original name: onChange, environment: var18
+                var15 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = arg0;
@@ -1158,7 +1158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var23.bind(var3)(var16);
                 var17 = var16.PressableOpacity;
                 var16 = {};
-                var18 = function() { // Original name: onPress, environment: var18
+                var18 = function() {
                     var2 = _closure1_slot0;
                     var6 = _closure1_slot2;
                     var0 = 19;

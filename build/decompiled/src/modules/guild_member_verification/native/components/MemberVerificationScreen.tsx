@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: MemberVerificationRouteView, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot11;
         var1 = _closure1_slot1;
         var2 = _closure1_slot3;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: ExistingJoinRequestHandler, environment: var1
+    var0 = function arg0() {
         _fun107085: for (var _fun107085_ip = 0;;) switch (_fun107085_ip) {
             case 0:
                 var0 = arg0;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.scrollContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot12 = var3;
-    var3 = function() { // Original name: Loading, environment: var1
+    var3 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var6 = var4.bind(var0)(var3);
     var3 = var6.makeAuthenticated;
-    var1 = function(arg0) { // Original name: MemberVerificationRouteContainer, environment: var1
+    var1 = function arg0() {
         _fun107092: for (var _fun107092_ip = 0;;) switch (_fun107092_ip) {
             case 0:
                 var1 = arg0;

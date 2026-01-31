@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: getSpoilerDescriptionForType, environment: var1
+    var0 = function arg0() {
         _fun56017: for (var _fun56017_ip = 0;;) switch (_fun56017_ip) {
             case 0:
                 var1 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.MessageAttachmentFlags;
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: getContentScanVersionFromMedia, environment: var1
+    var3 = function arg0() {
         _fun56018: for (var _fun56018_ip = 0;;) switch (_fun56018_ip) {
             case 0:
                 var0 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/ExplicitMediaUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getAttachmentObscurityProps, environment: var1
+    var3 = function arg0() {
         _fun56019: for (var _fun56019_ip = 0;;) switch (_fun56019_ip) {
             case 0:
                 var0 = arg0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAttachmentObscurityProps = var3;
-    var3 = function(arg0) { // Original name: getUnfurledMediaItemObscurityProps, environment: var1
+    var3 = function arg0() {
         _fun56020: for (var _fun56020_ip = 0;;) switch (_fun56020_ip) {
             case 0:
                 var0 = arg0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getUnfurledMediaItemObscurityProps = var3;
-    var1 = function() { // Original name: getAttachmentObscurityDefaults, environment: var1
+    var1 = function() {
         var0 = {
             'isSpoiler': false,
             'spoiler': ''

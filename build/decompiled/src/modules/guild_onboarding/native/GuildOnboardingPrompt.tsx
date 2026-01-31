@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PromptHeader, environment: var1
+    var0 = function arg0() {
         _fun43578: for (var _fun43578_ip = 0;;) switch (_fun43578_ip) {
             case 0:
                 var0 = arg0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: PromptFooter, environment: var1
+    var0 = function arg0() {
         _fun43579: for (var _fun43579_ip = 0;;) switch (_fun43579_ip) {
             case 0:
                 var2 = arg0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: formattedNameHighlight, environment: var1
+    var0 = function arg0, arg1() {
         var4 = _closure1_slot15;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: DropdownOption, environment: var1
+    var0 = function arg0() {
         _fun43585: for (var _fun43585_ip = 0;;) switch (_fun43585_ip) {
             case 0:
                 var1 = arg0;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/GuildOnboardingPrompt.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: RulesPrompt, environment: var1
+    var3 = function arg0() {
         _fun43587: for (var _fun43587_ip = 0;;) switch (_fun43587_ip) {
             case 0:
                 var0 = arg0;
@@ -1214,7 +1214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.contentContainerStyle = var17;
                 var17 = [0];
                 var7.data = var17;
-                var17 = function() { // Original name: renderItem, environment: var23
+                var17 = function() {
                     var3 = _closure1_slot15;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -1232,7 +1232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var7.renderItem = var17;
-                var17 = function() { // Original name: onEndReached, environment: var23
+                var17 = function() {
                     var2 = _closure2_slot5;
                     var1 = undefined;
                     var0 = true;
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var24["0KL0ot"];
                 var24 = var25.bind(var26)(var24);
                 var20.text = var24;
-                var23 = function() { // Original name: onPress, environment: var23
+                var23 = function() {
                     _fun43593: for (var _fun43593_ip = 0;;) switch (_fun43593_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -1407,7 +1407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.RulesPrompt = var3;
-    var3 = function(arg0) { // Original name: MultipleChoicePrompt, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var12 = var0.guildId;
         var _closure2_slot0 = var12;
@@ -1515,7 +1515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.option = var0;
                     var7 = _closure2_slot0;
                     var1.guildId = var7;
-                    var6 = function(arg0) { // Original name: onSelect, environment: var6
+                    var6 = function arg0() {
                         _fun43597: for (var _fun43597_ip = 0;;) switch (_fun43597_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1581,7 +1581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.MultipleChoicePrompt = var3;
-    var1 = function(arg0) { // Original name: DropdownPrompt, environment: var1
+    var1 = function arg0() {
         _fun43598: for (var _fun43598_ip = 0;;) switch (_fun43598_ip) {
             case 0:
                 var1 = arg0;
@@ -1698,7 +1698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot1;
                     var1 = var1.id;
                     var2.promptId = var1;
-                    var1 = function(arg0, arg1) { // Original name: onSelect, environment: var1
+                    var1 = function arg0, arg1() {
                         _fun43602: for (var _fun43602_ip = 0;;) switch (_fun43602_ip) {
                             case 0:
                                 var0 = arg1;

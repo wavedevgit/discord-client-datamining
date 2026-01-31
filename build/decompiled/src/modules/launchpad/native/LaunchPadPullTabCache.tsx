@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
-    var5 = function() { // Original name: getLaunchPadPullTabPositionCached, environment: var3
+    var5 = function() {
         _fun109888: for (var _fun109888_ip = 0;;) switch (_fun109888_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var5;
-    var4 = function(arg0) { // Original name: setLaunchPadPullTabPositionCached, environment: var3
+    var4 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 1;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var4;
-    var1 = function() { // Original name: setLaunchPadPullTabExclusionRect, environment: var3
+    var1 = function() {
         _fun109890: for (var _fun109890_ip = 0;;) switch (_fun109890_ip) {
             case 0:
                 var4 = arguments[0];
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.getLaunchPadPullTabPositionCached = var5;
     var2.setLaunchPadPullTabPositionCached = var4;
-    var4 = function(arg0) { // Original name: persistLaunchPadPullTabPosition, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = global;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.persistLaunchPadPullTabPosition = var4;
-    var3 = function() { // Original name: clearLaunchPadPullTabExclusionRect, environment: var3
+    var3 = function() {
         _fun109893: for (var _fun109893_ip = 0;;) switch (_fun109893_ip) {
             case 0:
                 var3 = _closure1_slot0;

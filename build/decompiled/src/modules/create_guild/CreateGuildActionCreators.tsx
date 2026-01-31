@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _createGuildFromTemplate, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot4 = var1;
     var1 = {};
-    var3 = function() { // Original name: createGuildFromTemplate, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

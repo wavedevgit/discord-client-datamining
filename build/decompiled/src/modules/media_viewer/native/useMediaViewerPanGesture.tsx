@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/useMediaViewerPanGesture.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: useMediaViewerPanGestureConfig, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var12 = arg0;
         var7 = arg1;
         var1 = arg2;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var16 = _closure1_slot4;
                     var17 = var5;
                     var4 = copyDataProperties(var17, var16);
-                    var4 = function() { // Original name: t, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 1;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useMediaViewerPanGestureConfig = var3;
-    var1 = function(arg0, arg1) { // Original name: useMediaViewerPanGesture, environment: var1
+    var1 = function arg0, arg1() {
         var2 = arg0;
         var9 = arg1;
         var6 = var2.swipeVelocityThreshold;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1[1] = var5;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onStart;
-            var1 = function() { // Original name: V, environment: var0
+            var1 = function() {
                 var3 = _closure2_slot4;
                 var2 = var3.set;
                 var1 = {};
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__initData = var13;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onUpdate;
-            var1 = function(arg0) { // Original name: S, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var2 = var0.velocityY;
                 var5 = var0.translationY;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__initData = var13;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onTouchesDown;
-            var1 = function(arg0, arg1) { // Original name: w, environment: var0
+            var1 = function arg0, arg1() {
                 _fun76411: for (var _fun76411_ip = 0;;) switch (_fun76411_ip) {
                     case 0:
                         var1 = arg1;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__initData = var13;
             var2 = var2.bind(var4)(var1);
             var1 = var2.onEnd;
-            var0 = function() { // Original name: t, environment: var0
+            var0 = function() {
                 _fun76412: for (var _fun76412_ip = 0;;) switch (_fun76412_ip) {
                     case 0:
                         var3 = _closure2_slot2;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = new Array(0);
             var _closure3_slot1 = var0;
             var0 = {};
-            var2 = function(arg0) { // Original name: panGestureGenerator, environment: var2
+            var2 = function arg0() {
                 _fun76414: for (var _fun76414_ip = 0;;) switch (_fun76414_ip) {
                     case 0:
                         var1 = arg0;

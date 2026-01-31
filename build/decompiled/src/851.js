@@ -30,12 +30,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var3;
     var2.TRACING_DEFAULTS = var3;
-    var1 = function(arg0) { // Original name: startIdleSpan, environment: var1
+    var1 = function arg0() {
         _fun8981: for (var _fun8981_ip = 0;;) switch (_fun8981_ip) {
             case 0:
                 var4 = undefined;
                 var2 = undefined;
-                var0 = function() { // Original name: _cancelIdleTimeout, environment: var1
+                var0 = function() {
                     _fun8982: for (var _fun8982_ip = 0;;) switch (_fun8982_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot15 = var0;
-                var5 = function(arg0) { // Original name: _restartIdleTimeout, environment: var1
+                var5 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var3 = _closure2_slot15;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot16 = var5;
-                var0 = function(arg0) { // Original name: _restartChildSpanTimeout, environment: var1
+                var0 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var0 = global;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot17 = var0;
-                var0 = function(arg0) { // Original name: onIdleSpanEnded, environment: var1
+                var0 = function arg0() {
                     _fun8987: for (var _fun8987_ip = 0;;) switch (_fun8987_ip) {
                         case 0:
                             var0 = arg0;
@@ -638,7 +638,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var2.Proxy;
                 var19 = var0.end;
                 var7 = {};
-                var8 = function(arg0, arg1, arg2) { // Original name: apply, environment: var1
+                var8 = function arg0, arg1, arg2() {
                     _fun8991: for (var _fun8991_ip = 0;;) switch (_fun8991_ip) {
                         case 0:
                             var5 = arg0;

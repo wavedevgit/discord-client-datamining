@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun38616: for (var _fun38616_ip = 0;;) switch (_fun38616_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun38618: for (var _fun38618_ip = 0;;) switch (_fun38618_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: isTypeOrCategory, environment: var1
+    var0 = function arg0, arg1() {
         _fun38619: for (var _fun38619_ip = 0;;) switch (_fun38619_ip) {
             case 0:
                 var2 = arg0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var6 = function(arg0, arg1, arg2) { // Original name: allowChannelAccess, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun38620: for (var _fun38620_ip = 0;;) switch (_fun38620_ip) {
             case 0:
                 var6 = arg1;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var6;
-    var5 = function(arg0) { // Original name: computeSummarizedVoiceStates, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var3 = var0.channels;
         var2 = var0.selectedChannelId;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var5;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: getChannelPermalink, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun38625: for (var _fun38625_ip = 0;;) switch (_fun38625_ip) {
             case 0:
                 var2 = arg3;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getChannelThreadPermalink, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun38626: for (var _fun38626_ip = 0;;) switch (_fun38626_ip) {
             case 0:
                 var5 = arg0;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var11.fileFinishedImporting;
     var9 = 'utils/ChannelUtils.tsx';
     var9 = var10.bind(var11)(var9);
-    var9 = function(arg0, arg1) { // Original name: denyChannelAccessForNonPaidUsers, environment: var1
+    var9 = function arg0, arg1() {
         _fun38627: for (var _fun38627_ip = 0;;) switch (_fun38627_ip) {
             case 0:
                 var3 = arg1;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.denyChannelAccessForNonPaidUsers = var9;
     var2.allowChannelAccess = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: permissionOverwritesForRoles, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun38628: for (var _fun38628_ip = 0;;) switch (_fun38628_ip) {
             case 0:
                 var10 = arg1;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.permissionOverwritesForRoles = var6;
-    var6 = function(arg0, arg1) { // Original name: permissionOverwriteForUser, environment: var1
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot27;
         var1 = _closure1_slot0;
         var2 = _closure1_slot3;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.permissionOverwriteForUser = var6;
-    var6 = function(arg0, arg1) { // Original name: permissionOverwriteForRole, environment: var1
+    var6 = function arg0, arg1() {
         var4 = _closure1_slot27;
         var1 = _closure1_slot0;
         var2 = _closure1_slot3;
@@ -849,7 +849,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.permissionOverwriteForRole = var6;
-    var6 = function(arg0) { // Original name: permissionOverwritesForAnnouncement, environment: var1
+    var6 = function arg0() {
         var1 = {};
         var0 = arg0;
         var1.id = var0;
@@ -876,7 +876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.permissionOverwritesForAnnouncement = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: isChannelFull, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun38633: for (var _fun38633_ip = 0;;) switch (_fun38633_ip) {
             case 0:
                 var3 = arg0;
@@ -1064,7 +1064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8[var6];
     var6 = var7.bind(var0)(var6);
     var2.sanitizeGuildTextChannelName = var6;
-    var6 = function(arg0, arg1) { // Original name: getBitrateLimit, environment: var1
+    var6 = function arg0, arg1() {
         _fun38634: for (var _fun38634_ip = 0;;) switch (_fun38634_ip) {
             case 0:
                 var0 = arg0;
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBitrateLimit = var6;
     var2.computeSummarizedVoiceStates = var5;
-    var5 = function(arg0) { // Original name: computeSummarizedVoiceUsers, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var5 = var0.channels;
         var4 = var0.selectedChannelId;
@@ -1151,7 +1151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.computeSummarizedVoiceUsers = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: isAnyVoiceStateStage, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun38637: for (var _fun38637_ip = 0;;) switch (_fun38637_ip) {
             case 0:
                 var11 = arg1;
@@ -1264,7 +1264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isAnyVoiceStateStage = var5;
-    var5 = function(arg0) { // Original name: channelTypeString, environment: var1
+    var5 = function arg0() {
         _fun38638: for (var _fun38638_ip = 0;;) switch (_fun38638_ip) {
             case 0:
                 var0 = arg0;
@@ -1494,7 +1494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.channelTypeString = var5;
-    var5 = function(arg0, arg1) { // Original name: getPrivateChannelUserTagsString, environment: var1
+    var5 = function arg0, arg1() {
         _fun38639: for (var _fun38639_ip = 0;;) switch (_fun38639_ip) {
             case 0:
                 var3 = arg0;
@@ -1633,7 +1633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPrivateChannelUserTagsString = var5;
-    var5 = function(arg0) { // Original name: getMentionIconType, environment: var1
+    var5 = function arg0() {
         _fun38641: for (var _fun38641_ip = 0;;) switch (_fun38641_ip) {
             case 0:
                 var4 = arg0;
@@ -1772,7 +1772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMentionIconType = var5;
-    var5 = function(arg0) { // Original name: previousTextChannelRouteForGuild, environment: var1
+    var5 = function arg0() {
         _fun38642: for (var _fun38642_ip = 0;;) switch (_fun38642_ip) {
             case 0:
                 var3 = arg0;
@@ -1829,7 +1829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.previousTextChannelRouteForGuild = var5;
     var2.getChannelPermalink = var4;
     var2.getChannelThreadPermalink = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getChannelLinkToCopy, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun38643: for (var _fun38643_ip = 0;;) switch (_fun38643_ip) {
             case 0:
                 var1 = arg0;
@@ -1888,7 +1888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelLinkToCopy = var3;
-    var1 = function(arg0) { // Original name: getChannelAnalyticsPage, environment: var1
+    var1 = function arg0() {
         _fun38644: for (var _fun38644_ip = 0;;) switch (_fun38644_ip) {
             case 0:
                 var1 = arg0;

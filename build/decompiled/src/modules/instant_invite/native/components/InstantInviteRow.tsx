@@ -209,10 +209,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun67531
                 }
             case 260:
-                var11 = function() { // Original name: handlePress, environment: var1
+                var11 = function() {
                     _fun67536: for (var _fun67536_ip = 0;;) switch (_fun67536_ip) {
                         case 0:
-                            var4 = function(arg0) { // Original name: handleSendState, environment: var0
+                            var4 = function arg0() {
                                 _fun67537: for (var _fun67537_ip = 0;;) switch (_fun67537_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -662,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'importantForAccessibility': 'no-hide-descendants',
                     'accessibilityElementsHidden': true
                 };
-                var19 = function(arg0) { // Original name: onPress, environment: var1
+                var19 = function arg0() {
                     _fun67538: for (var _fun67538_ip = 0;;) switch (_fun67538_ip) {
                         case 0:
                             var1 = arg0;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17[0] = var18;
                 var2 = var17;
             case 1314:
-                var5 = function(arg0) { // Original name: O, environment: var1
+                var5 = function arg0() {
                     _fun67539: for (var _fun67539_ip = 0;;) switch (_fun67539_ip) {
                         case 0:
                             var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Code, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var6 = var0.color;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/dev_tools/UserSettingsStartupTimings.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsStartupTimings, environment: var1
+    var1 = function() {
         _fun85626: for (var _fun85626_ip = 0;;) switch (_fun85626_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1;
             case 535:
                 var _closure2_slot13 = var0;
-                var0 = function(arg0) { // Original name: renderTime, environment: var7
+                var0 = function arg0() {
                     var7 = arg0;
                     var3 = _closure1_slot8;
                     var2 = _closure1_slot12;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot14 = var0;
-                var0 = function(arg0) { // Original name: renderTTi, environment: var7
+                var0 = function arg0() {
                     _fun85630: for (var _fun85630_ip = 0;;) switch (_fun85630_ip) {
                         case 0:
                             var5 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var3)(var4);
                 var5 = var4.FlashList;
                 var4 = {};
-                var9 = function() { // Original name: ListHeaderComponent, environment: var7
+                var9 = function() {
                     _fun85631: for (var _fun85631_ip = 0;;) switch (_fun85631_ip) {
                         case 0:
                             var3 = _closure1_slot9;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = {};
                             var8 = 'Show start times at launch';
                             var12.label = var8;
-                            var8 = function() { // Original name: onPress, environment: var15
+                            var8 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 17;
@@ -611,7 +611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = {};
                             var21 = 'Hide the Noise';
                             var14.label = var21;
-                            var21 = function() { // Original name: onPress, environment: var15
+                            var21 = function() {
                                 var2 = _closure2_slot2;
                                 var1 = undefined;
                                 var0 = function(arg0) { // Environment: var0
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var16 = {};
                             var21 = 'Hide paints';
                             var16.label = var21;
-                            var21 = function() { // Original name: onPress, environment: var15
+                            var21 = function() {
                                 var2 = _closure2_slot4;
                                 var1 = undefined;
                                 var0 = function(arg0) { // Environment: var0
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var16 = {};
                             var16 = var18.bind(var0)(var17, var16);
                             var12.icon = var16;
-                            var15 = function() { // Original name: onPress, environment: var15
+                            var15 = function() {
                                 var2 = _closure1_slot0;
                                 var7 = _closure1_slot2;
                                 var1 = 20;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4.ListHeaderComponent = var9;
                 var4.data = var8;
-                var7 = function(arg0) { // Original name: renderItem, environment: var7
+                var7 = function arg0() {
                     var0 = arg0;
                     var0 = var0.item;
                     var3 = _closure1_slot8;

@@ -1177,7 +1177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/oauth2/permissions.tsx';
     var4 = var5.bind(var6)(var4);
     var2.OrderedPermissions = var3;
-    var3 = function(arg0) { // Original name: containsDisallowedPermission, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.containsDisallowedPermission = var3;
-    var1 = function(arg0) { // Original name: getPermissionName, environment: var1
+    var1 = function arg0() {
         _fun47785: for (var _fun47785_ip = 0;;) switch (_fun47785_ip) {
             case 0:
                 var3 = arg0;

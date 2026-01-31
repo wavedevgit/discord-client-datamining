@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: NitroAcquiredHeader, environment: var1
+    var0 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/FractionalNitroCollectedActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FractionalNitroCollectedActionSheet, environment: var1
+    var1 = function arg0() {
         _fun87384: for (var _fun87384_ip = 0;;) switch (_fun87384_ip) {
             case 0:
                 var0 = arg0;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.TkTvBz;
                 var21 = var22.bind(var23)(var21);
                 var17.text = var21;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 24;

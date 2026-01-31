@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96892
             }
         case 51:
-            var1 = function(arg0) { // Original name: trunc, environment: var0
+            var1 = function arg0() {
                 _fun96893: for (var _fun96893_ip = 0;;) switch (_fun96893_ip) {
                     case 0:
                         var0 = arg0;

@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot2;
-        var2 = function() { // Original name: UploaderQueue, environment: var5
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot1;
             var1 = _closure2_slot1;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var1 = 'enqueue';
         var4.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun54659: for (var _fun54659_ip = 0;;) switch (_fun54659_ip) {
                 case 0:
                     var1 = this;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var0)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: drainQueue, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

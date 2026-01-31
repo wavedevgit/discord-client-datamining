@@ -16,47 +16,47 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1 = var1.bind(var0)(var4);
     var1 = {};
-    var4 = function() { // Original name: install, environment: var3
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var1.install = var4;
-    var4 = function() { // Original name: uninstall, environment: var3
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var1.uninstall = var4;
-    var4 = function() { // Original name: isInstalled, environment: var3
+    var4 = function() {
         var0 = false;
         return var0;
     };
     var1.isInstalled = var4;
-    var4 = function(arg0) { // Original name: ignoreLogs, environment: var3
+    var4 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1.ignoreLogs = var4;
-    var4 = function(arg0) { // Original name: ignoreAllLogs, environment: var3
+    var4 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1.ignoreAllLogs = var4;
-    var4 = function() { // Original name: clearAllLogs, environment: var3
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var1.clearAllLogs = var4;
-    var4 = function(arg0) { // Original name: addLog, environment: var3
+    var4 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1.addLog = var4;
-    var4 = function(arg0) { // Original name: addConsoleLog, environment: var3
+    var4 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1.addConsoleLog = var4;
-    var3 = function(arg0) { // Original name: addException, environment: var3
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };

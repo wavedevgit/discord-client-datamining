@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: UsernameAnimated, environment: var1
+    var0 = function arg0() {
         _fun102866: for (var _fun102866_ip = 0;;) switch (_fun102866_ip) {
             case 0:
                 var0 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var11.bind(var0)(var3);
                             var9 = var10.withSpring;
                             var15 = _closure1_slot26;
-                            var7 = function() { // Original name: t, environment: var3
+                            var7 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 12;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot41 = var0;
-    var0 = function(arg0) { // Original name: YouAvatarAnimated, environment: var1
+    var0 = function arg0() {
         _fun102869: for (var _fun102869_ip = 0;;) switch (_fun102869_ip) {
             case 0:
                 var1 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var11.bind(var0)(var3);
                             var9 = var10.withSpring;
                             var15 = _closure1_slot26;
-                            var7 = function() { // Original name: t, environment: var3
+                            var7 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 12;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot42 = var0;
-    var0 = function(arg0) { // Original name: NameplateAnimated, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.nameplate;
         var12 = var0.transitionState;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var11.bind(var0)(var3);
                     var9 = var10.withSpring;
                     var15 = _closure1_slot26;
-                    var7 = function() { // Original name: t, environment: var3
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 12;
@@ -1192,7 +1192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.TransitionGroup;
                 var4 = {};
                 var4.items = var8;
-                var8 = function(arg0) { // Original name: getItemKey, environment: var19
+                var8 = function arg0() {
                     _fun102886: for (var _fun102886_ip = 0;;) switch (_fun102886_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var14.TransitionGroup;
                 var14 = {};
                 var14.items = var26;
-                var19 = function(arg0) { // Original name: getItemKey, environment: var19
+                var19 = function arg0() {
                     var0 = arg0;
                     return var0;
                 };
@@ -1439,7 +1439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot25;
                 var3 = undefined;
                 var4 = var1.bind(var3)();
-                var2 = function(arg0) { // Original name: useIconBadgeCutout, environment: var0
+                var2 = function arg0() {
                     _fun102889: for (var _fun102889_ip = 0;;) switch (_fun102889_ip) {
                         case 0:
                             var1 = arg0;
@@ -1546,7 +1546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var2.bind(var3)(var1);
                 var _closure2_slot1 = var9;
                 var15 = 8;
-                var2 = function(arg0) { // Original name: useIconContentStyle, environment: var0
+                var2 = function arg0() {
                     _fun102891: for (var _fun102891_ip = 0;;) switch (_fun102891_ip) {
                         case 0:
                             var2 = arg0;
@@ -1760,7 +1760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.hasBadge = var6;
                 var5 = var5.icymiBadge;
                 var0.badgeStyle = var5;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun102895: for (var _fun102895_ip = 0;;) switch (_fun102895_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -1846,7 +1846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var14[var13];
                 var2 = var12.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: n, environment: var8
+                var0 = function() {
                     _fun102897: for (var _fun102897_ip = 0;;) switch (_fun102897_ip) {
                         case 0:
                             var0 = {};
@@ -2026,7 +2026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.children = var12;
                 var9 = var11.bind(var3)(var10, var9);
                 var4.icon = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     _fun102898: for (var _fun102898_ip = 0;;) switch (_fun102898_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -2113,7 +2113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.hasBadge = var6;
                 var5 = var5.settingsBadge;
                 var0.badgeStyle = var5;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun102900: for (var _fun102900_ip = 0;;) switch (_fun102900_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -2441,7 +2441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var7 = var17.bind(var3)(var2);
                 var5 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: X, environment: var18
+                var2 = function() {
                     _fun102906: for (var _fun102906_ip = 0;;) switch (_fun102906_ip) {
                         case 0:
                             var0 = {};
@@ -2666,7 +2666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = new Array(1);
                 var19[0] = var20;
                 var4.items = var19;
-                var18 = function(arg0) { // Original name: getItemKey, environment: var18
+                var18 = function arg0() {
                     _fun102913: for (var _fun102913_ip = 0;;) switch (_fun102913_ip) {
                         case 0:
                             var0 = arg0;
@@ -2794,7 +2794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9[var1];
                 var6 = var4.bind(var3)(var1);
                 var2 = var6.useAnimatedStyle;
-                var1 = function() { // Original name: o, environment: var0
+                var1 = function() {
                     var0 = {};
                     var2 = _closure2_slot0;
                     var0.height = var2;

@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gifting/PremiumGiftingPromotionSuccessActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumGiftingPromotionSuccessActions, environment: var1
+    var1 = function arg0() {
         _fun75283: for (var _fun75283_ip = 0;;) switch (_fun75283_ip) {
             case 0:
                 var0 = arg0;

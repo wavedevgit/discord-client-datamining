@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_uploads/experiments/VideoUploadBitrateExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getVideoUploadBitrateConfig, environment: var1
+    var3 = function arg0() {
         _fun37532: for (var _fun37532_ip = 0;;) switch (_fun37532_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVideoUploadBitrateConfig = var3;
-    var1 = function(arg0) { // Original name: shouldApplyBitrateExperiment, environment: var1
+    var1 = function arg0() {
         _fun37533: for (var _fun37533_ip = 0;;) switch (_fun37533_ip) {
             case 0:
                 var2 = arg0;

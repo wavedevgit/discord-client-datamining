@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1) { // Original name: makeDataFormatters, environment: var0
+    var0 = function arg0, arg1() {
         _fun13727: for (var _fun13727_ip = 0;;) switch (_fun13727_ip) {
             case 0:
                 var5 = undefined;
@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var0;
                 var0 = arg1;
                 var _closure2_slot1 = var0;
-                var0 = function(arg0) { // Original name: optionsWithLocaleMatcher, environment: var1
+                var0 = function arg0() {
                     _fun13728: for (var _fun13728_ip = 0;;) switch (_fun13728_ip) {
                         case 0:
                             var6 = arg0;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 57:
                 var _closure2_slot2 = var0;
                 var0 = {};
-                var2 = function(arg0, arg1) { // Original name: formatDate, environment: var1
+                var2 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var0 = 0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.formatDate = var2;
-                var2 = function(arg0, arg1) { // Original name: formatDuration, environment: var1
+                var2 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var0 = 0;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.formatDuration = var2;
-                var2 = function(arg0, arg1) { // Original name: formatNumber, environment: var1
+                var2 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var0 = 0;
@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.formatNumber = var2;
-                var2 = function(arg0, arg1) { // Original name: formatList, environment: var1
+                var2 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var0 = 0;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.formatList = var2;
-                var2 = function(arg0, arg1) { // Original name: formatListToParts, environment: var1
+                var2 = function arg0, arg1() {
                     _fun13733: for (var _fun13733_ip = 0;;) switch (_fun13733_ip) {
                         case 0:
                             var12 = arg0;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.formatListToParts = var2;
-                var2 = function(arg0, arg1, arg2) { // Original name: formatRelativeTime, environment: var1
+                var2 = function arg0, arg1, arg2() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var0 = 0;
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.formatRelativeTime = var2;
-                var2 = function(arg0, arg1) { // Original name: formatTime, environment: var1
+                var2 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var0 = 0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.formatTime = var2;
-                var1 = function(arg0) { // Original name: getPluralRules, environment: var1
+                var1 = function arg0() {
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot1;
                     var0 = 1;

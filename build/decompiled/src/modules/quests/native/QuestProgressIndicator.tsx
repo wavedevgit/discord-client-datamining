@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot16 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: QuestProgressIndicator, environment: var1
+    var1 = function arg0() {
         _fun83574: for (var _fun83574_ip = 0;;) switch (_fun83574_ip) {
             case 0:
                 var1 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var2[var7];
                 var23 = var9.bind(var3)(var13);
                 var21 = var23.useAnimatedStyle;
-                var13 = function() { // Original name: I, environment: var0
+                var13 = function() {
                     var0 = {};
                     var2 = _closure2_slot6;
                     var3 = var2.completionGlow;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var2[var7];
                 var24 = var9.bind(var3)(var21);
                 var23 = var24.useAnimatedProps;
-                var21 = function() { // Original name: b, environment: var0
+                var21 = function() {
                     var0 = {};
                     var2 = _closure2_slot5;
                     var3 = _closure2_slot7;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var7];
                 var21 = var9.bind(var3)(var2);
                 var9 = var21.useAnimatedStyle;
-                var2 = function() { // Original name: G, environment: var0
+                var2 = function() {
                     var0 = {};
                     var3 = _closure2_slot8;
                     var2 = var3.get;

@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: NotificationSettingChannelOverrides, environment: var1
+    var1 = function arg0() {
         _fun117097: for (var _fun117097_ip = 0;;) switch (_fun117097_ip) {
             case 0:
                 var1 = arg0;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = {};
                     var5 = var3.bind(var2)(var6, var5);
                     var0.trailing = var5;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         var3 = _closure2_slot1;
                         var2 = var3.push;
                         var0 = _closure1_slot11;

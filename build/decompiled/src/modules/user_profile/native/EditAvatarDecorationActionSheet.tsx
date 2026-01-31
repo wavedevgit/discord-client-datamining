@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var20[var4];
                 var6 = var19.bind(var3)(var2);
                 var5 = var6.useAnimatedStyle;
-                var2 = function() { // Original name: O, environment: var0
+                var2 = function() {
                     _fun48964: for (var _fun48964_ip = 0;;) switch (_fun48964_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var20[var4];
                 var6 = var19.bind(var3)(var2);
                 var5 = var6.useAnimatedProps;
-                var2 = function() { // Original name: B, environment: var0
+                var2 = function() {
                     _fun48965: for (var _fun48965_ip = 0;;) switch (_fun48965_ip) {
                         case 0:
                             var0 = {};
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var20[var4];
                 var17 = var19.bind(var3)(var2);
                 var6 = var17.useAnimatedStyle;
-                var2 = function() { // Original name: x, environment: var0
+                var2 = function() {
                     _fun48966: for (var _fun48966_ip = 0;;) switch (_fun48966_ip) {
                         case 0:
                             var2 = _closure2_slot6;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1 = var7.bind(var8)(var1);
     var _closure1_slot23 = var1;
-    var1 = function(arg0) { // Original name: EditAvatarDecorationInner, environment: var3
+    var1 = function arg0() {
         _fun48969: for (var _fun48969_ip = 0;;) switch (_fun48969_ip) {
             case 0:
                 var0 = arg0;
@@ -1379,7 +1379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_profile/native/EditAvatarDecorationActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: EditAvatarDecorationActionSheet, environment: var3
+    var3 = function arg0() {
         _fun48974: for (var _fun48974_ip = 0;;) switch (_fun48974_ip) {
             case 0:
                 var1 = arg0;

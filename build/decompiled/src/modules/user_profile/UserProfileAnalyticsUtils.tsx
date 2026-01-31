@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var3 = var3.StatusTypes;
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: getProfileProperties, environment: var1
+    var3 = function arg0() {
         _fun57020: for (var _fun57020_ip = 0;;) switch (_fun57020_ip) {
             case 0:
                 var1 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: getUserStatus, environment: var1
+    var3 = function arg0() {
         _fun57022: for (var _fun57022_ip = 0;;) switch (_fun57022_ip) {
             case 0:
                 var3 = arg0;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var5 = function(arg0) { // Original name: getActivityType, environment: var1
+    var5 = function arg0() {
         _fun57023: for (var _fun57023_ip = 0;;) switch (_fun57023_ip) {
             case 0:
                 var5 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var5;
-    var3 = function(arg0) { // Original name: getTrackUserProfileProperties, environment: var1
+    var3 = function arg0() {
         _fun57024: for (var _fun57024_ip = 0;;) switch (_fun57024_ip) {
             case 0:
                 var0 = arg0;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var4 = function(arg0) { // Original name: getTrackUserRelationshipProperties, environment: var1
+    var4 = function arg0() {
         _fun57028: for (var _fun57028_ip = 0;;) switch (_fun57028_ip) {
             case 0:
                 var0 = arg0;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var3 = function(arg0) { // Original name: getTrackUserProfileApplicationProperties, environment: var1
+    var3 = function arg0() {
         _fun57029: for (var _fun57029_ip = 0;;) switch (_fun57029_ip) {
             case 0:
                 var5 = arg0;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var3;
-    var3 = function(arg0) { // Original name: trackUserProfileAction, environment: var1
+    var3 = function arg0() {
         var14 = arg0;
         var20 = var14.guildId;
         var16 = var14.channelId;

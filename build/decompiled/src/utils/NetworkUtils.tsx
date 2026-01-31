@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var6.default;
     var10 = var1;
     var6 = copyDataProperties(var10, var9);
-    var6 = function() { // Original name: awaitOnline, environment: var3
+    var6 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 68:
                     var4 = true;
                     _closure1_slot3 = var4;
-                    var4 = function() { // Original name: whenOnline, environment: var3
+                    var4 = function() {
                         var2 = _closure1_slot2;
                         var3 = var2.forEach;
                         var1 = function(arg0) { // Environment: var1

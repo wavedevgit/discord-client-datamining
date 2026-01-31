@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: AppLauncherCommandViewFooter, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.enableSubmit;
         var12 = var0.onSubmit;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var14[var0];
         var4 = var13.bind(var3)(var1);
         var2 = var4.useAnimatedStyle;
-        var1 = function() { // Original name: p, environment: var8
+        var1 = function() {
             _fun107987: for (var _fun107987_ip = 0;;) switch (_fun107987_ip) {
                 case 0:
                     var1 = _closure2_slot3;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var14[var4];
                     var4 = var13.bind(var12)(var4);
                     var18 = var4.timingStandard;
-                    var7 = function() { // Original name: e, environment: var4
+                    var7 = function() {
                         var3 = _closure1_slot0;
                         var4 = _closure1_slot3;
                         var0 = 16;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var6.bind(var3)(var0);
         var1 = var0.View;
         var0 = {};
-        var4 = function(arg0) { // Original name: onLayout, environment: var8
+        var4 = function arg0() {
             _fun107989: for (var _fun107989_ip = 0;;) switch (_fun107989_ip) {
                 case 0:
                     var0 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.bind(var3)(var5);
         var5 = {};
         var5.onPress = var12;
-        var12 = function() { // Original name: onPressIn, environment: var8
+        var12 = function() {
             var2 = _closure2_slot5;
             var1 = undefined;
             var0 = true;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var5.onPressIn = var12;
-        var12 = function() { // Original name: onPressOut, environment: var8
+        var12 = function() {
             var2 = _closure2_slot5;
             var1 = undefined;
             var0 = false;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.submitButton;
         var9 = var9.borderRadius;
         var5.cornerRadius = var9;
-        var8 = function() { // Original name: renderRightIcon, environment: var8
+        var8 = function() {
             var3 = _closure1_slot20;
             var8 = _closure1_slot1;
             var9 = _closure1_slot3;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: AppLauncherCommandViewInner, environment: var1
+    var0 = function arg0() {
         _fun107993: for (var _fun107993_ip = 0;;) switch (_fun107993_ip) {
             case 0:
                 var1 = arg0;
@@ -1840,7 +1840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17[var25];
                 var30 = var24.bind(var3)(var17);
                 var24 = var30.useAnimatedStyle;
-                var17 = function() { // Original name: tt, environment: var35
+                var17 = function() {
                     var0 = {};
                     var2 = {};
                     var4 = _closure2_slot52;
@@ -2034,7 +2034,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.target;
                     var6 = var6.bind(var7)(var1);
                     var _closure3_slot2 = var6;
-                    var1 = function(arg0) { // Original name: onAttachFileParams, environment: var4
+                    var1 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var0 = {};
@@ -2043,7 +2043,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.channel = var2;
                         var2 = 1;
                         var0.uploadLimit = var2;
-                        var2 = function() { // Original name: onDismissKeyboard, environment: var1
+                        var2 = function() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 42;
@@ -2057,7 +2057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.onDismissKeyboard = var2;
                         var2 = _closure1_slot17;
                         var0.onRestoreKeyboard = var2;
-                        var1 = function(arg0) { // Original name: onSelectFiles, environment: var1
+                        var1 = function arg0() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 41;
@@ -2110,7 +2110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = new Array(1);
                     var5[0] = var6;
                     var1.includedUploadIds = var5;
-                    var5 = function() { // Original name: onAttachPress, environment: var4
+                    var5 = function() {
                         var6 = _closure1_slot0;
                         var7 = _closure1_slot3;
                         var0 = 41;
@@ -2132,7 +2132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onAttachPress = var5;
-                    var5 = function(arg0) { // Original name: onPressCamera, environment: var4
+                    var5 = function arg0() {
                         var6 = _closure1_slot0;
                         var7 = _closure1_slot3;
                         var0 = 41;
@@ -2157,7 +2157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPressCamera = var5;
-                    var5 = function(arg0) { // Original name: onPressItem, environment: var4
+                    var5 = function arg0() {
                         var0 = arg0;
                         var7 = var0.channelId;
                         var4 = var0.item;
@@ -2190,7 +2190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPressItem = var5;
-                    var5 = function() { // Original name: onViewAll, environment: var4
+                    var5 = function() {
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot3;
                         var0 = 41;
@@ -2215,7 +2215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onViewAll = var5;
-                    var5 = function() { // Original name: onClose, environment: var4
+                    var5 = function() {
                         var2 = _closure2_slot54;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -2223,7 +2223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onClose = var5;
-                    var4 = function() { // Original name: onBack, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot3;
                         var0 = 42;
@@ -3229,7 +3229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: AppLauncherCommandView, environment: var1
+    var0 = function arg0() {
         _fun108039: for (var _fun108039_ip = 0;;) switch (_fun108039_ip) {
             case 0:
                 var0 = arg0;
@@ -3263,7 +3263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var9.bind(var3)();
                 var _closure2_slot2 = var20;
                 var26 = var12.channel;
-                var9 = function(arg0, arg1, arg2, arg3) { // Original name: usePreSelectedCommand, environment: var1
+                var9 = function arg0, arg1, arg2, arg3() {
                     _fun108040: for (var _fun108040_ip = 0;;) switch (_fun108040_ip) {
                         case 0:
                             var6 = arg0;
@@ -3764,7 +3764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: LoadingState, environment: var1
+    var0 = function() {
         var3 = _closure1_slot20;
         var2 = _closure1_slot7;
         var1 = {};
@@ -3786,7 +3786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: NotFoundState, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.onPressBack;
         var0 = _closure1_slot23;
@@ -3884,7 +3884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: NoPermsState, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.onPressBack;
         var16 = var0.command;
@@ -4272,7 +4272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/command_view/AppLauncherCommandViewScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherCommandViewScreen, environment: var1
+    var1 = function arg0() {
         _fun108046: for (var _fun108046_ip = 0;;) switch (_fun108046_ip) {
             case 0:
                 var0 = arg0;

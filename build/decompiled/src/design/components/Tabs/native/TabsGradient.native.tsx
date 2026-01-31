@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: useGradientAnimatedStyle, environment: var1
+    var0 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var8 = _closure1_slot0;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = undefined;
         var2 = var8.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: s, environment: var0
+        var0 = function() {
             _fun87771: for (var _fun87771_ip = 0;;) switch (_fun87771_ip) {
                 case 0:
                     var0 = {};
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tabs/native/TabsGradient.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TabsGradient, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var13 = var1.state;
         var _closure2_slot0 = var13;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = undefined;
         var8 = var4.bind(var3)(var2);
         var7 = var8.useDerivedValue;
-        var2 = function() { // Original name: f, environment: var0
+        var2 = function() {
             var2 = _closure2_slot3;
             var1 = var2.get;
             var2 = var1.bind(var2)();
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var6[var1];
         var13 = var4.bind(var3)(var7);
         var8 = var13.useDerivedValue;
-        var7 = function() { // Original name: y, environment: var0
+        var7 = function() {
             _fun87775: for (var _fun87775_ip = 0;;) switch (_fun87775_ip) {
                 case 0:
                     var2 = _closure2_slot2;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var6[var1];
         var6 = var4.bind(var3)(var1);
         var4 = var6.useDerivedValue;
-        var1 = function() { // Original name: W, environment: var0
+        var1 = function() {
             _fun87776: for (var _fun87776_ip = 0;;) switch (_fun87776_ip) {
                 case 0:
                     var2 = _closure2_slot2;

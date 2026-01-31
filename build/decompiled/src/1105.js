@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var1;
-    var0 = function(arg0) { // Original name: listenForSentryMessages, environment: var3
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.addEventListener;
         var1 = 'message';
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'WebWorker';
         var0.name = var2;
-        var2 = function() { // Original name: setupOnce, environment: var1
+        var2 = function() {
             _fun12154: for (var _fun12154_ip = 0;;) switch (_fun12154_ip) {
                 case 0:
                     var0 = global;
@@ -347,7 +347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.setupOnce = var2;
-        var1 = function(arg0) { // Original name: addWorker, environment: var1
+        var1 = function arg0() {
             var2 = _closure1_slot2;
             var0 = undefined;
             var1 = arg0;
@@ -360,7 +360,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var4.bind(var5)(var1);
     var4 = 'WebWorker';
     var2.INTEGRATION_NAME = var4;
-    var3 = function(arg0) { // Original name: registerWebWorker, environment: var3
+    var3 = function arg0() {
         _fun12157: for (var _fun12157_ip = 0;;) switch (_fun12157_ip) {
             case 0:
                 var0 = arg0;

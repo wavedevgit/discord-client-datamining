@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ConfirmActivityGateContent, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var18 = var0.application;
         var0 = _closure1_slot8;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: LinkButton, environment: var1
+    var0 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.Sizes;
         var9 = var9.XSMALL;
         var0.size = var9;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 9;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/confirmExternalAppLaunchAlert.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: confirmExternalAppLaunchAlert, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var13 = var0.application;
         var6 = var0.onConfirm;

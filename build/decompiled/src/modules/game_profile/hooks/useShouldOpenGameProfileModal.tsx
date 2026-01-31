@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'profile disabled';
     var3.Disabled = var4;
     var _closure1_slot8 = var3;
-    var3 = function(arg0, arg1) { // Original name: getRejectionReasons, environment: var1
+    var3 = function arg0, arg1() {
         _fun78450: for (var _fun78450_ip = 0;;) switch (_fun78450_ip) {
             case 0:
                 var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1) { // Original name: gameIsAcceptable, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot9;
         var2 = undefined;
         var1 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/game_profile/hooks/useShouldOpenGameProfileModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: _default, environment: var1
+    var4 = function arg0() {
         _fun78452: for (var _fun78452_ip = 0;;) switch (_fun78452_ip) {
             case 0:
                 var2 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getSafeAreaInsets, environment: var1
+    var0 = function arg0() {
         _fun46348: for (var _fun46348_ip = 0;;) switch (_fun46348_ip) {
             case 0:
                 var3 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safe_area/SafeAreaProvider.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: SafeAreaReporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 6;

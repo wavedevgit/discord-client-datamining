@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AVATAR_BORDER_WIDTH = var3;
     var3 = 16;
     var2.SCROLL_EVENT_TIMER_MS = var3;
-    var1 = function() { // Original name: useBannerHeight, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

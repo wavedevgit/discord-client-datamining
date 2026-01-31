@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun91074: for (var _fun91074_ip = 0;;) switch (_fun91074_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildPromptsStore, environment: var5
+        var3 = function() {
             _fun91078: for (var _fun91078_ip = 0;;) switch (_fun91078_ip) {
                 case 0:
                     var3 = this;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun91079: for (var _fun91079_ip = 0;;) switch (_fun91079_ip) {
                 case 0:
                     var7 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasViewedPrompt';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun91080: for (var _fun91080_ip = 0;;) switch (_fun91080_ip) {
                 case 0:
                     var1 = _closure1_slot5;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleGuildPromptViewed, environment: var3
+    var7 = function arg0() {
         _fun91082: for (var _fun91082_ip = 0;;) switch (_fun91082_ip) {
             case 0:
                 var0 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_PROMPT_VIEWED = var7;
-    var3 = function(arg0) { // Original name: handleGuildDelete, environment: var3
+    var3 = function arg0() {
         _fun91083: for (var _fun91083_ip = 0;;) switch (_fun91083_ip) {
             case 0:
                 var0 = arg0;

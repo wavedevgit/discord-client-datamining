@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var11.bind(var0)(var10);
     var1.dispatcher = var10;
     var10 = {};
-    var11 = function(arg0) { // Original name: CONNECTION_OPEN, environment: var7
+    var11 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.CONNECTION_OPEN = var11;
-    var11 = function(arg0) { // Original name: OVERLAY_INITIALIZE, environment: var7
+    var11 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.OVERLAY_INITIALIZE = var11;
-    var11 = function(arg0) { // Original name: CURRENT_USER_UPDATE, environment: var7
+    var11 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.CURRENT_USER_UPDATE = var11;
-    var11 = function() { // Original name: CONNECTION_CLOSED, environment: var7
+    var11 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.CONNECTION_CLOSED = var11;
-    var11 = function() { // Original name: FINGERPRINT, environment: var7
+    var11 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.FINGERPRINT = var11;
-    var11 = function(arg0) { // Original name: TRACK, environment: var7
+    var11 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.waitFor = var9;
     var8 = var8.getFingerprint;
     var1.getFingerprint = var8;
-    var8 = function() { // Original name: getSessionId, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getSessionId = var8;
-    var7 = function() { // Original name: getLaunchSignature, environment: var7
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;

@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun37459: for (var _fun37459_ip = 0;;) switch (_fun37459_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot14 = var5;
     var4 = var4.jsxs;
     var _closure1_slot15 = var4;
-    var4 = function(arg0, arg1) { // Original name: convertPoint, environment: var1
+    var4 = function arg0, arg1() {
         _fun37462: for (var _fun37462_ip = 0;;) switch (_fun37462_ip) {
             case 0:
                 var3 = arg1;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot16 = var4;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: LinearGradient, environment: var5
+        var3 = function() {
             _fun37464: for (var _fun37464_ip = 0;;) switch (_fun37464_ip) {
                 case 0:
                     var4 = this;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'setNativeProps';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: setNativeProps, environment: var5
+        var0 = function arg0() {
             var0 = this;
             var0 = var0.gradientRef;
             var2 = var0.current;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun37466: for (var _fun37466_ip = 0;;) switch (_fun37466_ip) {
                 case 0:
                     var0 = this;
@@ -311,7 +311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 157:
                     var4 = 0;
                 case 159:
-                    var2 = function(arg0) { // Original name: validNumber, environment: var2
+                    var2 = function arg0() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var0 = function(arg0) { // Environment: var0

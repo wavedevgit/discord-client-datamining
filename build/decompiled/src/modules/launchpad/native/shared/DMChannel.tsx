@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: usePrivateChannelPressEvents, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var2;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: DMChannel, environment: var1
+    var1 = function arg0() {
         _fun110112: for (var _fun110112_ip = 0;;) switch (_fun110112_ip) {
             case 0:
                 var0 = arg0;

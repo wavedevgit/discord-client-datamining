@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaScreen, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var13 = var0.searchContext;
         var _closure2_slot0 = var13;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4.media = var5;
                         var5 = _closure2_slot2;
                         var4.size = var5;
-                        var0 = function(arg0) { // Original name: onPress, environment: var0
+                        var0 = function arg0() {
                             var3 = _closure2_slot7;
                             var2 = _closure4_slot0;
                             var1 = undefined;

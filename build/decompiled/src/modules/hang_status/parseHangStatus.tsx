@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hang_status/parseHangStatus.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: parseHangStatus, environment: var1
+    var1 = function arg0, arg1() {
         _fun61961: for (var _fun61961_ip = 0;;) switch (_fun61961_ip) {
             case 0:
                 var3 = arg1;

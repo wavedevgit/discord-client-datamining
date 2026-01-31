@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/auth/native/RegistrationUIStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useRegistrationUIStore = var3;
-    var3 = function(arg0) { // Original name: setRegistrationErrors, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setRegistrationErrors = var3;
-    var3 = function() { // Original name: clearRegistrationErrorMessage, environment: var1
+    var3 = function() {
         var2 = {};
         var4 = _closure1_slot2;
         var3 = var4.getState;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearRegistrationErrorMessage = var3;
-    var3 = function(arg0) { // Original name: updateRegistrationOptions, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot2;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateRegistrationOptions = var3;
-    var3 = function() { // Original name: resetRegistration, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetRegistration = var3;
-    var3 = function(arg0) { // Original name: setSubmitting, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setSubmitting = var3;
-    var1 = function() { // Original name: doesRegistrationHaveIdentityType, environment: var1
+    var1 = function() {
         _fun100209: for (var _fun100209_ip = 0;;) switch (_fun100209_ip) {
             case 0:
                 var1 = _closure1_slot2;

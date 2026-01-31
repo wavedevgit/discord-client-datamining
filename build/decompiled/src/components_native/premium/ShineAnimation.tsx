@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ShineAnimation, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var8 = var1.source;
         var7 = var1.style;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var13[var9];
         var4 = var17.bind(var3)(var1);
         var2 = var4.useAnimatedStyle;
-        var1 = function() { // Original name: A, environment: var0
+        var1 = function() {
             var0 = {};
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var13[var9];
         var2 = var17.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: E, environment: var0
+        var0 = function() {
             var0 = _closure1_slot8;
             var6 = var0.FLASH_TIME_PERCENT;
             var1 = var0.FLASH_DURATION_PERCENT;

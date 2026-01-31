@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun30825: for (var _fun30825_ip = 0;;) switch (_fun30825_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun30828: for (var _fun30828_ip = 0;;) switch (_fun30828_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun30830: for (var _fun30830_ip = 0;;) switch (_fun30830_ip) {
             case 0:
                 var3 = arg0;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SecureFramesPersistedStore, environment: var5
+        var3 = function() {
             _fun30832: for (var _fun30832_ip = 0;;) switch (_fun30832_ip) {
                 case 0:
                     var3 = this;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun30833: for (var _fun30833_ip = 0;;) switch (_fun30833_ip) {
                 case 0:
                     var4 = arg0;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot6;
             var0.persistentCodesEnabled = var2;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPersistentCodesEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUploadedKeyVersionsCached';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleSecureFramesSettingsUpdate, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.persistentCodesEnabled;
         _closure1_slot6 = var1;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SECURE_FRAMES_SETTINGS_UPDATE = var7;
-    var7 = function(arg0) { // Original name: handleSecureFramesUploadedKeyVersionAdd, environment: var3
+    var7 = function arg0() {
         _fun30838: for (var _fun30838_ip = 0;;) switch (_fun30838_ip) {
             case 0:
                 var3 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SECURE_FRAMES_UPLOADED_KEY_VERSION_ADD = var7;
-    var3 = function() { // Original name: handleSecureFramesUploadedKeyVersionsClear, environment: var3
+    var3 = function() {
         var0 = _closure1_slot5;
         _closure1_slot7 = var0;
         var0 = undefined;

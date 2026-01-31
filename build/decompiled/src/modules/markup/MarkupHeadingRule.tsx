@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = [' ', '#'];
     var6 = 'requiredFirstCharacters';
     var1[var6] = var7;
-    var6 = function(arg0, arg1, arg2) { // Original name: match, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun44098: for (var _fun44098_ip = 0;;) switch (_fun44098_ip) {
             case 0:
                 var5 = arg1;

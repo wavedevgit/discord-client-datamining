@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var _closure2_slot0 = var0;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'gestureEnabled': false,
             'title': ''
         };
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot13;
             var2 = _closure1_slot22;
             var1 = {};
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: CallWithVoiceChat, environment: var1
+    var0 = function arg0() {
         _fun64744: for (var _fun64744_ip = 0;;) switch (_fun64744_ip) {
             case 0:
                 var0 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var13[var16];
                 var4 = var15.bind(var3)(var0);
                 var2 = var4.useAnimatedStyle;
-                var0 = function() { // Original name: h, environment: var1
+                var0 = function() {
                     _fun64745: for (var _fun64745_ip = 0;;) switch (_fun64745_ip) {
                         case 0:
                             var0 = {};
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var13[var16];
                 var4 = var15.bind(var3)(var0);
                 var2 = var4.useAnimatedStyle;
-                var0 = function() { // Original name: _, environment: var1
+                var0 = function() {
                     _fun64746: for (var _fun64746_ip = 0;;) switch (_fun64746_ip) {
                         case 0:
                             var0 = {};
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0[var16];
                 var6 = var15.bind(var3)(var2);
                 var4 = var6.useAnimatedReaction;
-                var2 = function() { // Original name: C, environment: var1
+                var2 = function() {
                     _fun64747: for (var _fun64747_ip = 0;;) switch (_fun64747_ip) {
                         case 0:
                             var0 = global;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.__workletHash = var7;
                 var7 = _closure1_slot18;
                 var2.__initData = var7;
-                var1 = function(arg0, arg1) { // Original name: v, environment: var1
+                var1 = function arg0, arg1() {
                     _fun64748: for (var _fun64748_ip = 0;;) switch (_fun64748_ip) {
                         case 0:
                             var2 = arg0;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: MainCallScreen, environment: var1
+    var0 = function arg0() {
         _fun64749: for (var _fun64749_ip = 0;;) switch (_fun64749_ip) {
             case 0:
                 var1 = arg0;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = _closure1_slot5;
                 var11 = var15.useEffect;
                 var10 = function() { // Environment: var0
-                    var1 = function() { // Original name: dismissOAuthModal, environment: var0
+                    var1 = function() {
                         _fun64754: for (var _fun64754_ip = 0;;) switch (_fun64754_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot1 = var1;
-                    var4 = function() { // Original name: showOAuth2Modal, environment: var0
+                    var4 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot3;
                         var2 = var3.apply;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot2 = var4;
-                    var1 = function() { // Original name: _showOAuth2Modal, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/ChannelCallNavigator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelCallNavigator, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.channel;
         var0 = _closure1_slot10;

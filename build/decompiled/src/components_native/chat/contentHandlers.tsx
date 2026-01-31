@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var7 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: onLongPressLink, environment: var3
+    var6 = function arg0() {
         _fun77797: for (var _fun77797_ip = 0;;) switch (_fun77797_ip) {
             case 0:
                 var0 = arg0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onLongPressAttachmentLink = var6;
-    var6 = function(arg0) { // Original name: onTapMention, environment: var3
+    var6 = function arg0() {
         _fun77804: for (var _fun77804_ip = 0;;) switch (_fun77804_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5["/AXYnE"];
                 var5 = var8.bind(var9)(var5);
                 var2.secondaryConfirmText = var5;
-                var4 = function() { // Original name: onConfirmSecondary, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 10;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onTapMention = var6;
-    var6 = function(arg0) { // Original name: onTapTimestamp, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var0 = var0.nativeEvent;
         var1 = var0.node;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onTapTimestamp = var6;
-    var6 = function(arg0) { // Original name: onTapInlineCode, environment: var3
+    var6 = function arg0() {
         _fun77807: for (var _fun77807_ip = 0;;) switch (_fun77807_ip) {
             case 0:
                 var0 = arg0;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onTapInlineCode = var6;
-    var3 = function(arg0) { // Original name: onTapEmoji, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.nativeEvent;
         var1 = var0.node;

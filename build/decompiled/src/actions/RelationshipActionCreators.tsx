@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0) { // Original name: showAlert, environment: var4
+    var0 = function arg0() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot3;
         var0 = 4;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: handleRelationshipAddError, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun64385: for (var _fun64385_ip = 0;;) switch (_fun64385_ip) {
             case 0:
                 var0 = arg0;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.HbTSE6;
                 var5 = var6.bind(var7)(var5);
                 var2.confirmText = var5;
-                var5 = function() { // Original name: onConfirm, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot2;
                     var1 = _closure1_slot3;
                     var0 = 8;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[var7] = var3;
     var _closure1_slot10 = var1;
     var3 = {};
-    var7 = function(arg0) { // Original name: sendRequest, environment: var4
+    var7 = function arg0() {
         _fun64387: for (var _fun64387_ip = 0;;) switch (_fun64387_ip) {
             case 0:
                 var1 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.sendRequest = var7;
-    var7 = function(arg0, arg1) { // Original name: addRelationship, environment: var4
+    var7 = function arg0, arg1() {
         _fun64389: for (var _fun64389_ip = 0;;) switch (_fun64389_ip) {
             case 0:
                 var2 = arg0;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.addRelationship = var7;
-    var7 = function(arg0) { // Original name: acceptFriendRequest, environment: var4
+    var7 = function arg0() {
         var3 = _closure1_slot11;
         var2 = var3.addRelationship;
         var1 = arg0;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.acceptFriendRequest = var7;
-    var7 = function(arg0, arg1) { // Original name: cancelFriendRequest, environment: var4
+    var7 = function arg0, arg1() {
         var4 = _closure1_slot11;
         var3 = var4.removeRelationship;
         var2 = arg0;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.cancelFriendRequest = var7;
-    var7 = function(arg0, arg1) { // Original name: removeFriend, environment: var4
+    var7 = function arg0, arg1() {
         var4 = _closure1_slot11;
         var3 = var4.removeRelationship;
         var2 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.removeFriend = var7;
-    var7 = function(arg0, arg1) { // Original name: blockUser, environment: var4
+    var7 = function arg0, arg1() {
         var3 = _closure1_slot11;
         var2 = var3.addRelationship;
         var1 = {};
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.blockUser = var7;
-    var7 = function(arg0, arg1) { // Original name: unblockUser, environment: var4
+    var7 = function arg0, arg1() {
         var4 = _closure1_slot11;
         var3 = var4.removeRelationship;
         var2 = arg0;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.unblockUser = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: removeRelationship, environment: var4
+    var7 = function arg0, arg1, arg2() {
         var1 = arg2;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.removeRelationship = var7;
-    var7 = function(arg0, arg1) { // Original name: updateRelationship, environment: var4
+    var7 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -750,7 +750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.updateRelationship = var7;
-    var7 = function() { // Original name: fetchRelationships, environment: var4
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var0 = 11;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.fetchRelationships = var7;
-    var7 = function(arg0) { // Original name: confirmClearPendingRelationships, environment: var4
+    var7 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 15;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.confirmClearPendingRelationships = var7;
-    var7 = function() { // Original name: clearPendingRelationships, environment: var4
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var1 = 11;
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.clearPendingRelationships = var7;
-    var7 = function() { // Original name: clearPendingSpamAndIgnored, environment: var4
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var1 = 11;
@@ -956,7 +956,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.clearPendingSpamAndIgnored = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: ignoreUser, environment: var4
+    var7 = function arg0, arg1, arg2() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var1 = arg2;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ignoreUser = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: unignoreUser, environment: var4
+    var7 = function arg0, arg1, arg2() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var1 = arg2;

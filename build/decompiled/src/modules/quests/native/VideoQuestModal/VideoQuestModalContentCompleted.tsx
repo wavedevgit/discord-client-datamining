@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VideoQuestModalContentCompleted, environment: var1
+    var1 = function arg0() {
         _fun83644: for (var _fun83644_ip = 0;;) switch (_fun83644_ip) {
             case 0:
                 var1 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var14[var7];
                 var5 = var11.bind(var3)(var2);
                 var4 = var5.useAnimatedStyle;
-                var2 = function() { // Original name: T, environment: var0
+                var2 = function() {
                     var0 = {};
                     var11 = _closure1_slot0;
                     var12 = _closure1_slot2;

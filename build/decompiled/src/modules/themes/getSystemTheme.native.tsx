@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/themes/getSystemTheme.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getSystemTheme, environment: var1
+    var1 = function() {
         _fun27535: for (var _fun27535_ip = 0;;) switch (_fun27535_ip) {
             case 0:
                 var2 = _closure1_slot0;

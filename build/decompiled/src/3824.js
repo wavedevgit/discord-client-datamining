@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useAnimatedGestureHandlerTs1(e){const{useWeb,EVENT_TYPE,handlers,context}=this.__closure;const event=useWeb?e.nativeEvent:e;if(event.state===EVENT_TYPE.BEGAN&&handlers.onStart){handlers.onStart(event,context);}if(event.state===EVENT_TYPE.ACTIVE&&handlers.onActive){handlers.onActive(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.END&&handlers.onEnd){handlers.onEnd(event,context);}if(event.oldState===EVENT_TYPE.BEGAN&&event.state===EVENT_TYPE.FAILED&&handlers.onFail){handlers.onFail(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.CANCELLED&&handlers.onCancel){handlers.onCancel(event,context);}if((event.oldState===EVENT_TYPE.BEGAN||event.oldState===EVENT_TYPE.ACTIVE)&&event.state!==EVENT_TYPE.BEGAN&&event.state!==EVENT_TYPE.ACTIVE&&handlers.onFinish){handlers.onFinish(event,context,event.state===EVENT_TYPE.CANCELLED||event.state===EVENT_TYPE.FAILED);}}';
     var2.code = var3;
     var _closure1_slot3 = var2;
-    var0 = function(arg0, arg1) { // Original name: useAnimatedGestureHandler, environment: var0
+    var0 = function arg0, arg1() {
         _fun34683: for (var _fun34683_ip = 0;;) switch (_fun34683_ip) {
             case 0:
                 var7 = arg0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var2.doDependenciesDiffer;
                 var2 = var2.useWeb;
                 var _closure2_slot2 = var2;
-                var4 = function(arg0) { // Original name: pnpm_useAnimatedGestureHandlerTs1, environment: var0
+                var4 = function arg0() {
                     _fun34684: for (var _fun34684_ip = 0;;) switch (_fun34684_ip) {
                         case 0:
                             var1 = arg0;

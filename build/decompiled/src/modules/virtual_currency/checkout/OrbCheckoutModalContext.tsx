@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = new Array(0);
     var3.analyticsLocations = var7;
     var3.analyticsSourceLocation = var0;
-    var7 = function() { // Original name: onRedeemVirtualCurrency, environment: var1
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.rentalDuration = var0;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: useOrbCheckoutModalContextProvider, environment: var1
+    var3 = function arg0() {
         _fun86588: for (var _fun86588_ip = 0;;) switch (_fun86588_ip) {
             case 0:
                 var1 = arg0;

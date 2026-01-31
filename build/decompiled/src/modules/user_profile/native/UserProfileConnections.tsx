@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: VerifiedIcon, environment: var1
+    var0 = function arg0() {
         _fun91938: for (var _fun91938_ip = 0;;) switch (_fun91938_ip) {
             case 0:
                 var0 = arg0;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.DOMAIN;
                             var3 = var4 !== var3;
                             var0.trusted = var3;
-                            var3 = function() { // Original name: onConfirm, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot0;
                                 var4 = _closure1_slot2;
                                 var0 = 21;
@@ -1140,7 +1140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.t;
                 var16 = var15.zIT9YA;
                 var15 = {};
-                var19 = function() { // Original name: applicationHook, environment: var19
+                var19 = function() {
                     var0 = _closure2_slot0;
                     var0 = var0.application;
                     var0 = var0.name;
@@ -1170,7 +1170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_profile/native/UserProfileConnections.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ApplicationRoleConnection = var3;
-    var3 = function(arg0) { // Original name: UserProfileAccountConnectionsCard, environment: var1
+    var3 = function arg0() {
         _fun91947: for (var _fun91947_ip = 0;;) switch (_fun91947_ip) {
             case 0:
                 var0 = arg0;
@@ -1293,7 +1293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.UserProfileAccountConnectionsCard = var3;
-    var1 = function(arg0) { // Original name: UserProfileApplicationRoleConnectionsCard, environment: var1
+    var1 = function arg0() {
         _fun91951: for (var _fun91951_ip = 0;;) switch (_fun91951_ip) {
             case 0:
                 var0 = arg0;

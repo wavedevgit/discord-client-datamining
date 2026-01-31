@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var3 = function() { // Original name: _shouldConvertToWebP, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var3;
-    var0 = function() { // Original name: _shouldConvertToWebP2, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: hashImageData, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.Uint8Array;
         var0 = arg0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _performWebPConversion, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _maybeConvertToWebP, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.bind(var16)();
                         var10 = var5;
                         _closure4_slot1 = var5;
-                        var2 = function(arg0) { // Original name: createFailedResult, environment: var7
+                        var2 = function arg0() {
                             _fun37673: for (var _fun37673_ip = 0;;) switch (_fun37673_ip) {
                                 case 0:
                                     var4 = arguments[1];
@@ -927,7 +927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 165:
                         var16 = var8;
-                        var7 = function() { // Original name: performWebPConversion, environment: var7
+                        var7 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot9;
                             var2 = var3.apply;
@@ -1197,7 +1197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.ConversionFailureReason = var4;
     var2._shouldConvertToWebP = var3;
-    var1 = function() { // Original name: maybeConvertToWebP, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;

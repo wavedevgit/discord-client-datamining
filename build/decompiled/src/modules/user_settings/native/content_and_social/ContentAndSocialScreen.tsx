@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getSocialPermissions, environment: var1
+    var0 = function arg0() {
         _fun88314: for (var _fun88314_ip = 0;;) switch (_fun88314_ip) {
             case 0:
                 var0 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/content_and_social/ContentAndSocialScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ContentAndSocialSettings, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.route;
         var _closure2_slot0 = var0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var3 = function() { // Original name: DiscordPermissionsPage, environment: var1
+    var3 = function() {
         var11 = _closure1_slot0;
         var9 = _closure1_slot2;
         var1 = 12;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.DiscordPermissionsPage = var3;
-    var1 = function() { // Original name: ConnectedGamesPage, environment: var1
+    var1 = function() {
         _fun88322: for (var _fun88322_ip = 0;;) switch (_fun88322_ip) {
             case 0:
                 var0 = _closure1_slot12;

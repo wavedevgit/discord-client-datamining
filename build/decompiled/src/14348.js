@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var2 = function(arg0, arg1, arg2) { // Original name: MessageFormat, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun112050: for (var _fun112050_ip = 0;;) switch (_fun112050_ip) {
             case 0:
                 var4 = arg0;
@@ -184,7 +184,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = var4.bind(var0)(var6);
     var8 = var9.defineProperty;
     var7 = {};
-    var6 = function(arg0) { // Original name: value, environment: var1
+    var6 = function arg0() {
         _fun112052: for (var _fun112052_ip = 0;;) switch (_fun112052_ip) {
             case 0:
                 var2 = arg0;

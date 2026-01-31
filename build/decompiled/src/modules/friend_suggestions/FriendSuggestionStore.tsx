@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun72470: for (var _fun72470_ip = 0;;) switch (_fun72470_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: transformSuggestion, environment: var4
+    var0 = function arg0() {
         _fun72473: for (var _fun72473_ip = 0;;) switch (_fun72473_ip) {
             case 0:
                 var2 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var1 = function(arg0) { // Original name: transformFriendSuggestions, environment: var4
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 7;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: FriendSuggestionStore, environment: var5
+        var3 = function() {
             _fun72478: for (var _fun72478_ip = 0;;) switch (_fun72478_ip) {
                 case 0:
                     var3 = this;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot8;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSuggestionCount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSuggestions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.entries;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSuggestion';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot9;
             var0 = arg0;
             var0 = var1[var0];
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var4
+    var8 = function arg0() {
         _fun72484: for (var _fun72484_ip = 0;;) switch (_fun72484_ip) {
             case 0:
                 var1 = {};
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleFriendSuggestionCreate, environment: var4
+    var8 = function arg0() {
         _fun72485: for (var _fun72485_ip = 0;;) switch (_fun72485_ip) {
             case 0:
                 var3 = _closure1_slot14;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.FRIEND_SUGGESTION_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleFriendSuggestionDelete, environment: var4
+    var8 = function arg0() {
         var0 = global;
         var4 = var0.Math;
         var3 = var4.max;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.FRIEND_SUGGESTION_DELETE = var8;
-    var8 = function(arg0) { // Original name: handleLoadFriendSuggestionsSuccess, environment: var4
+    var8 = function arg0() {
         var0 = false;
         _closure1_slot11 = var0;
         var3 = _closure1_slot15;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.LOAD_FRIEND_SUGGESTIONS_SUCCESS = var8;
-    var4 = function() { // Original name: handleLoadFriendSuggestionsFailure, environment: var4
+    var4 = function() {
         var0 = false;
         _closure1_slot11 = var0;
         var0 = {};

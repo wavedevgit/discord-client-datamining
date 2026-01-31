@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var6[var0];
         var8 = var13.bind(var3)(var1);
         var7 = var8.useDerivedValue;
-        var1 = function() { // Original name: o, environment: var5
+        var1 = function() {
             _fun74998: for (var _fun74998_ip = 0;;) switch (_fun74998_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var6[var0];
         var8 = var13.bind(var3)(var7);
         var7 = var8.useAnimatedStyle;
-        var5 = function() { // Original name: c, environment: var5
+        var5 = function() {
             var0 = {};
             var5 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/CarouselPagination.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CarouselPagination, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.numberOfItems;
         var6 = var0.currentIndex;

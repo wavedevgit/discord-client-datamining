@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var4;
-    var6 = function(arg0) { // Original name: valuePromise, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot0 = var2;
                     var0 = arg1;
                     var _closure3_slot1 = var0;
-                    var5 = function(arg0, arg1) { // Original name: res, environment: var6
+                    var5 = function arg0, arg1() {
                         _fun10409: for (var _fun10409_ip = 0;;) switch (_fun10409_ip) {
                             case 0:
                                 var4 = arg0;

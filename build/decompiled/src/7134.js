@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: dsnFromString, environment: var1
+    var3 = function arg0() {
         _fun58561: for (var _fun58561_ip = 0;;) switch (_fun58561_ip) {
             case 0:
                 var4 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var0 = function(arg0) { // Original name: dsnFromComponents, environment: var1
+    var0 = function arg0() {
         _fun58563: for (var _fun58563_ip = 0;;) switch (_fun58563_ip) {
             case 0:
                 var1 = arg0;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = /^(?:(\w+):)\\/\\ / ( ? : (\w + )( ? ::(\w + ) ? ) ? @)([\w. - ] + )( ? ::(\d + )) ? \\/(.+)/;
     var _closure1_slot3 = var4;
     var2.dsnFromString = var3;
-    var3 = function(arg0) { // Original name: dsnToString, environment: var1
+    var3 = function arg0() {
         _fun58564: for (var _fun58564_ip = 0;;) switch (_fun58564_ip) {
             case 0:
                 var1 = arg0;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.dsnToString = var3;
-    var1 = function(arg0) { // Original name: makeDsn, environment: var1
+    var1 = function arg0() {
         _fun58565: for (var _fun58565_ip = 0;;) switch (_fun58565_ip) {
             case 0:
                 var3 = arg0;
@@ -328,7 +328,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun58565
                 }
             case 47:
-                var2 = function(arg0) { // Original name: validateDsn, environment: var1
+                var2 = function arg0() {
                     _fun58566: for (var _fun58566_ip = 0;;) switch (_fun58566_ip) {
                         case 0:
                             var1 = arg0;

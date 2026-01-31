@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/referrals/ReferralMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: canOpenPremiumPlanDirectlyForReferralTrial, environment: var1
+    var1 = function() {
         _fun78782: for (var _fun78782_ip = 0;;) switch (_fun78782_ip) {
             case 0:
                 var2 = _closure1_slot0;

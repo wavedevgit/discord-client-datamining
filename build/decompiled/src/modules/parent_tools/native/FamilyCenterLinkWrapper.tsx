@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterLinkWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FamilyCenterLinkRowWrapper, environment: var1
+    var1 = function arg0() {
         _fun81999: for (var _fun81999_ip = 0;;) switch (_fun81999_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var7 = var7.container;
                 var1.style = var7;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 6;

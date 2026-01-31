@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/explicit_media_redaction/native/ExplicitMediaLearnMoreActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExplicitMediaLearnMoreActionSheet, environment: var1
+    var1 = function arg0() {
         _fun79275: for (var _fun79275_ip = 0;;) switch (_fun79275_ip) {
             case 0:
                 var0 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.t;
                             var2 = var1.Ge0HUi;
                             var1 = {};
-                            var6 = function() { // Original name: handleFalsePositiveHook, environment: var5
+                            var6 = function() {
                                 var4 = _closure1_slot1;
                                 var2 = _closure1_slot2;
                                 var3 = 13;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.t;
                             var2 = var1["TGqx+i"];
                             var1 = {};
-                            var5 = function() { // Original name: handleOnHelpUrlHook, environment: var5
+                            var5 = function() {
                                 var6 = _closure1_slot1;
                                 var4 = _closure1_slot2;
                                 var0 = 16;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var19.hvVgAZ;
                 var9 = var20.bind(var21)(var9);
                 var12.text = var9;
-                var9 = function() { // Original name: handleNavigateToHelpCenterLearnMore, environment: var17
+                var9 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 14;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19["9D+zGX"];
                 var19 = var20.bind(var21)(var19);
                 var12.text = var19;
-                var19 = function() { // Original name: handleNavigateToSettingsButtonPress, environment: var17
+                var19 = function() {
                     var5 = _closure2_slot7;
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun79275;
             case 1094:
                 var12.text = var16;
-                var16 = function() { // Original name: handleAgeVerifyButtonPress, environment: var17
+                var16 = function() {
                     var4 = _closure2_slot7;
                     var7 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.bmbHPA;
                 var18 = var19.bind(var20)(var18);
                 var10.text = var18;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     var4 = _closure2_slot7;
                     var5 = _closure1_slot0;
                     var3 = _closure1_slot2;

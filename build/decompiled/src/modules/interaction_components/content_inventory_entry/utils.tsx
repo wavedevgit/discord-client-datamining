@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/content_inventory_entry/utils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isContentInventoryFallbackEmbed, environment: var1
+    var1 = function arg0() {
         _fun55971: for (var _fun55971_ip = 0;;) switch (_fun55971_ip) {
             case 0:
                 var2 = _closure1_slot0;

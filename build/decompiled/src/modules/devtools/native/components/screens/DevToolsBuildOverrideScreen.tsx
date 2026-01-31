@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 1;
                 var0 = var1[var0];
                 var _closure2_slot2 = var0;
-                var21 = function(arg0) { // Original name: getLabel, environment: var11
+                var21 = function arg0() {
                     _fun85761: for (var _fun85761_ip = 0;;) switch (_fun85761_ip) {
                         case 0:
                             var1 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.label = var23;
                 var23 = var17.id;
                 var18.subLabel = var23;
-                var23 = function() { // Original name: onPress, environment: var11
+                var23 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 16;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.title = var17;
                 var17 = var12.type;
                 var8.defaultValue = var17;
-                var17 = function(arg0) { // Original name: onChange, environment: var11
+                var17 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var0 = arg0;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = 'Enter ';
                 var21 = var22.bind(var21)(var23);
                 var19.placeholder = var21;
-                var21 = function(arg0) { // Original name: onChange, environment: var11
+                var21 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var4 = _closure2_slot1;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.id;
                 var12 = var13 === var12;
                 var8.disabled = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     _fun85768: for (var _fun85768_ip = 0;;) switch (_fun85768_ip) {
                         case 0:
                             var1 = _closure2_slot1;

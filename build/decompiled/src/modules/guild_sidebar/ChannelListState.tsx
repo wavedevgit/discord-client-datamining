@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var16;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var17;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var18
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun41210: for (var _fun41210_ip = 0;;) switch (_fun41210_ip) {
             case 0:
                 var4 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot63 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var18
+    var0 = function arg0, arg1, arg2() {
         _fun41212: for (var _fun41212_ip = 0;;) switch (_fun41212_ip) {
             case 0:
                 var3 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot64 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var18
+    var0 = function() {
         _fun41213: for (var _fun41213_ip = 0;;) switch (_fun41213_ip) {
             case 0:
             case 2: // try_start_0
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot65 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var18
+    var0 = function arg0, arg1() {
         _fun41216: for (var _fun41216_ip = 0;;) switch (_fun41216_ip) {
             case 0:
                 var2 = arg0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot66 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var18
+    var0 = function arg0, arg1() {
         _fun41218: for (var _fun41218_ip = 0;;) switch (_fun41218_ip) {
             case 0:
                 var3 = arg0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot67 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: _computeSubtitle, environment: var18
+    var3 = function arg0, arg1, arg2() {
         _fun41219: for (var _fun41219_ip = 0;;) switch (_fun41219_ip) {
             case 0:
                 var4 = arg0;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot68 = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: computeThreadIds, environment: var18
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun41221: for (var _fun41221_ip = 0;;) switch (_fun41221_ip) {
             case 0:
                 var2 = arg0;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot69 = var1;
-    var0 = function(arg0, arg1) { // Original name: shouldShowInFavorites, environment: var18
+    var0 = function arg0, arg1() {
         _fun41225: for (var _fun41225_ip = 0;;) switch (_fun41225_ip) {
             case 0:
                 var1 = arg0;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot70 = var0;
-    var0 = function(arg0, arg1) { // Original name: shouldAlwaysShowInRecents, environment: var18
+    var0 = function arg0, arg1() {
         _fun41226: for (var _fun41226_ip = 0;;) switch (_fun41226_ip) {
             case 0:
                 var1 = arg0;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot71 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: shouldShowInRecents, environment: var18
+    var0 = function arg0, arg1, arg2() {
         _fun41227: for (var _fun41227_ip = 0;;) switch (_fun41227_ip) {
             case 0:
                 var0 = arg0;
@@ -1302,7 +1302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot47 = var5;
     var5 = function() { // Environment: var18
         var3 = _closure1_slot8;
-        var2 = function() { // Original name: ChannelListStates, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot7;
             var1 = _closure2_slot0;
@@ -1316,7 +1316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_areGuildActionRowsUpdated';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun41231: for (var _fun41231_ip = 0;;) switch (_fun41231_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -1364,7 +1364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_areChannelNoticeRowsUpdated';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun41233: for (var _fun41233_ip = 0;;) switch (_fun41233_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -1401,7 +1401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_areGuildVocalChannelsInRecentsInNeedOfAppearingInActiveNow';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41234: for (var _fun41234_ip = 0;;) switch (_fun41234_ip) {
                 case 0:
                     var0 = this;
@@ -1488,7 +1488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getGuild';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun41235: for (var _fun41235_ip = 0;;) switch (_fun41235_ip) {
                 case 0:
                     var1 = arg0;
@@ -1553,7 +1553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getGuildChannelRowsOnly';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41236: for (var _fun41236_ip = 0;;) switch (_fun41236_ip) {
                 case 0:
                     var1 = arg0;
@@ -1591,7 +1591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = {};
             var0 = this;
             var0.guilds = var1;
@@ -1603,7 +1603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearGuildId';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41238: for (var _fun41238_ip = 0;;) switch (_fun41238_ip) {
                 case 0:
                     var2 = arg0;
@@ -1635,7 +1635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateRecentsCategory';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41239: for (var _fun41239_ip = 0;;) switch (_fun41239_ip) {
                 case 0:
                     var3 = arg0;
@@ -1685,7 +1685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'nonPositionalChannelIdUpdate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41240: for (var _fun41240_ip = 0;;) switch (_fun41240_ip) {
                 case 0:
                     var9 = arg0;
@@ -1751,7 +1751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'nonPositionalChannelUpdate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41241: for (var _fun41241_ip = 0;;) switch (_fun41241_ip) {
                 case 0:
                     var3 = arg0;
@@ -1806,7 +1806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSubtitles';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun41242: for (var _fun41242_ip = 0;;) switch (_fun41242_ip) {
                 case 0:
                     var4 = arg0;
@@ -1867,7 +1867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var5.bind(var0)();
     var5 = function() { // Environment: var18
         var3 = _closure1_slot8;
-        var2 = function(arg0, arg1, arg2) { // Original name: ChannelListImpl, environment: var4
+        var2 = function arg0, arg1, arg2() {
             _fun41245: for (var _fun41245_ip = 0;;) switch (_fun41245_ip) {
                 case 0:
                     var2 = this;
@@ -2295,7 +2295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'initializationData';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = {};
             var6 = _closure1_slot25;
@@ -2325,7 +2325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'invalidate';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var0 = null;
             var2.sections = var0;
@@ -2343,7 +2343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSortedNamedCategories';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41248: for (var _fun41248_ip = 0;;) switch (_fun41248_ip) {
                 case 0:
                     var0 = this;
@@ -2366,7 +2366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSortedCategories';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var2 = var1.favoritesCategory;
             var0 = new Array(4);
@@ -2391,7 +2391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSections';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41250: for (var _fun41250_ip = 0;;) switch (_fun41250_ip) {
                 case 0:
                     var0 = arguments[0];
@@ -2447,7 +2447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRows';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41252: for (var _fun41252_ip = 0;;) switch (_fun41252_ip) {
                 case 0:
                     var0 = this;
@@ -2569,7 +2569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCategoryFromSection';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41255: for (var _fun41255_ip = 0;;) switch (_fun41255_ip) {
                 case 0:
                     var3 = arg0;
@@ -2649,7 +2649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getNamedCategoryFromSection';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41256: for (var _fun41256_ip = 0;;) switch (_fun41256_ip) {
                 case 0:
                     var2 = this;
@@ -2691,7 +2691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getGuildActionSection';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.guildActionSection;
             return var0;
@@ -2701,7 +2701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChannelNoticeSection';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.channelNoticeSection;
             return var0;
@@ -2711,7 +2711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChannelFromSectionRow';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun41259: for (var _fun41259_ip = 0;;) switch (_fun41259_ip) {
                 case 0:
                     var2 = this;
@@ -2752,7 +2752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isPlaceholderRow';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun41260: for (var _fun41260_ip = 0;;) switch (_fun41260_ip) {
                 case 0:
                     var2 = arg0;
@@ -2790,7 +2790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getFirstVoiceChannel';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41261: for (var _fun41261_ip = 0;;) switch (_fun41261_ip) {
                 case 0:
                     var3 = arg0;
@@ -2873,7 +2873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSectionRowsFromChannel';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41262: for (var _fun41262_ip = 0;;) switch (_fun41262_ip) {
                 case 0:
                     var12 = arg0;
@@ -3138,7 +3138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCategory';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41264: for (var _fun41264_ip = 0;;) switch (_fun41264_ip) {
                 case 0:
                     var1 = arg0;
@@ -3174,7 +3174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateRecentsCategory';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41265: for (var _fun41265_ip = 0;;) switch (_fun41265_ip) {
                 case 0:
                     var2 = this;
@@ -3198,7 +3198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'nonPositionalChannelUpdate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41266: for (var _fun41266_ip = 0;;) switch (_fun41266_ip) {
                 case 0:
                     var5 = arg0;
@@ -3254,7 +3254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSlicedChannels';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun41267: for (var _fun41267_ip = 0;;) switch (_fun41267_ip) {
                 case 0:
                     var2 = arg0;
@@ -3430,7 +3430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_initializeAllChannelsById';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41268: for (var _fun41268_ip = 0;;) switch (_fun41268_ip) {
                 case 0:
                     var0 = this;
@@ -3485,7 +3485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChannels';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41269: for (var _fun41269_ip = 0;;) switch (_fun41269_ip) {
                 case 0:
                     var2 = this;
@@ -3531,7 +3531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChannel';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41270: for (var _fun41270_ip = 0;;) switch (_fun41270_ip) {
                 case 0:
                     var1 = this;
@@ -3556,7 +3556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSubtitles';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun41271: for (var _fun41271_ip = 0;;) switch (_fun41271_ip) {
                 case 0:
                     var5 = arg0;
@@ -3707,7 +3707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'forEachShownChannel';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun41274: for (var _fun41274_ip = 0;;) switch (_fun41274_ip) {
                 case 0:
                     var13 = arg0;
@@ -3841,7 +3841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'forEachChannel';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun41275: for (var _fun41275_ip = 0;;) switch (_fun41275_ip) {
                 case 0:
                     var10 = arg0;
@@ -3928,7 +3928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot48 = var5;
     var5 = function() { // Environment: var18
         var3 = _closure1_slot8;
-        var2 = function(arg0) { // Original name: BaseChannelListCategory, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot7;
             var1 = _closure2_slot0;
@@ -3951,7 +3951,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'updateChannel';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun41278: for (var _fun41278_ip = 0;;) switch (_fun41278_ip) {
                 case 0:
                     var5 = arg0;
@@ -3992,7 +3992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'invalidate';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = null;
             var0 = this;
             var0.shownChannelIds = var1;
@@ -4004,7 +4004,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRows';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41280: for (var _fun41280_ip = 0;;) switch (_fun41280_ip) {
                 case 0:
                     var3 = this;
@@ -4039,7 +4039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'shouldShowEmptyCategory';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 33;
@@ -4065,7 +4065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getShownChannelIds';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41283: for (var _fun41283_ip = 0;;) switch (_fun41283_ip) {
                 case 0:
                     var0 = this;
@@ -4141,7 +4141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getShownChannelAndThreadIds';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
@@ -4173,7 +4173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isEmpty';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.getShownChannelIds;
             var0 = var0.bind(var1)();
@@ -4187,7 +4187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChannelRecords';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
             var1 = 33;
@@ -4225,7 +4225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getFirstVoiceChannel';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun41293: for (var _fun41293_ip = 0;;) switch (_fun41293_ip) {
                 case 0:
                     var6 = arg0;
@@ -4305,7 +4305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var19 = var5.bind(var0)();
     var5 = function(arg0) { // Environment: var18
-        var2 = function(arg0, arg1, arg2) { // Original name: ChannelListCategoryNoParent, environment: var0
+        var2 = function arg0, arg1, arg2() {
             var6 = this;
             var0 = arg2;
             var _closure3_slot0 = var0;
@@ -4368,7 +4368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var5.bind(var0)(var19);
     var _closure1_slot49 = var5;
     var5 = function(arg0) { // Environment: var18
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: ChannelListCategoryWithParent, environment: var0
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun41299: for (var _fun41299_ip = 0;;) switch (_fun41299_ip) {
                 case 0:
                     var2 = arg0;
@@ -4446,7 +4446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'shouldShowEmptyCategory';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun41300: for (var _fun41300_ip = 0;;) switch (_fun41300_ip) {
                 case 0:
                     var3 = this;
@@ -4535,7 +4535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var5.bind(var0)(var19);
     var _closure1_slot50 = var5;
     var5 = function(arg0) { // Environment: var18
-        var3 = function(arg0, arg1) { // Original name: ChannelListFavoritesCategory, environment: var5
+        var3 = function arg0, arg1() {
             _fun41302: for (var _fun41302_ip = 0;;) switch (_fun41302_ip) {
                 case 0:
                     var2 = arg0;
@@ -4673,7 +4673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'updateChannel';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var5
+        var0 = function arg0, arg1() {
             _fun41306: for (var _fun41306_ip = 0;;) switch (_fun41306_ip) {
                 case 0:
                     var1 = arg0;
@@ -4790,7 +4790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFirstVoiceChannel';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = null;
             return var0;
         };
@@ -4802,7 +4802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var5.bind(var0)(var19);
     var _closure1_slot51 = var5;
     var20 = function(arg0) { // Environment: var18
-        var3 = function(arg0, arg1, arg2) { // Original name: ChannelListRecentlyActiveCategory, environment: var5
+        var3 = function arg0, arg1, arg2() {
             _fun41309: for (var _fun41309_ip = 0;;) switch (_fun41309_ip) {
                 case 0:
                     var1 = arg0;
@@ -4904,7 +4904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'shouldShowEmptyCategory';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun41310: for (var _fun41310_ip = 0;;) switch (_fun41310_ip) {
                 case 0:
                     var6 = this;
@@ -4941,7 +4941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateAllChannels';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var _closure3_slot0 = var1;
             var2 = arg0;
@@ -4981,7 +4981,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateChannel';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun41313: for (var _fun41313_ip = 0;;) switch (_fun41313_ip) {
                 case 0:
                     var0 = arg0;
@@ -5091,7 +5091,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFirstVoiceChannel';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -5100,7 +5100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getShownChannelIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun41315: for (var _fun41315_ip = 0;;) switch (_fun41315_ip) {
                 case 0:
                     var0 = this;
@@ -5485,7 +5485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateShownChannelIds';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun41322: for (var _fun41322_ip = 0;;) switch (_fun41322_ip) {
                 case 0:
                     var0 = arg0;
@@ -5593,7 +5593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 604800000;
     var20.MAX_TIMESTAMP_DELTA = var4;
     var4 = function(arg0) { // Environment: var18
-        var3 = function(arg0, arg1, arg2) { // Original name: ChannelListRecentsCategory, environment: var5
+        var3 = function arg0, arg1, arg2() {
             _fun41324: for (var _fun41324_ip = 0;;) switch (_fun41324_ip) {
                 case 0:
                     var5 = arg0;
@@ -5688,7 +5688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'updateAllChannels';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var1 = this;
             var _closure3_slot0 = var1;
             var2 = arg0;
@@ -5738,7 +5738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateChannel';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun41329: for (var _fun41329_ip = 0;;) switch (_fun41329_ip) {
                 case 0:
                     var6 = arg0;
@@ -5809,7 +5809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFirstVoiceChannel';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = null;
             return var0;
         };
@@ -5818,7 +5818,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getShownChannelIds';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun41331: for (var _fun41331_ip = 0;;) switch (_fun41331_ip) {
                 case 0:
                     var0 = this;
@@ -5944,7 +5944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.bind(var0)(var19);
     var _closure1_slot53 = var4;
     var4 = function(arg0) { // Environment: var18
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: ChannelListVoiceChannelsCategory, environment: var5
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun41338: for (var _fun41338_ip = 0;;) switch (_fun41338_ip) {
                 case 0:
                     var6 = arg0;
@@ -6032,7 +6032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'invalidate';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var5 = _closure1_slot63;
             var9 = _closure2_slot0;
@@ -6054,7 +6054,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHiddenChannelIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun41342: for (var _fun41342_ip = 0;;) switch (_fun41342_ip) {
                 case 0:
                     var0 = this;
@@ -6132,7 +6132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRows';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun41346: for (var _fun41346_ip = 0;;) switch (_fun41346_ip) {
                 case 0:
                     var4 = this;
@@ -6178,7 +6178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getShownChannelIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun41347: for (var _fun41347_ip = 0;;) switch (_fun41347_ip) {
                 case 0:
                     var0 = this;
@@ -6396,7 +6396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFirstVoiceChannel';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = null;
             return var0;
         };
@@ -6409,7 +6409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot54 = var4;
     var19 = function() { // Environment: var18
         var3 = _closure1_slot8;
-        var2 = function(arg0) { // Original name: ChannelListChannelNoticeSection, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot7;
             var1 = _closure2_slot0;
@@ -6423,7 +6423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'isEmpty';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.rows;
             var1 = var0.length;
@@ -6437,7 +6437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRows';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.rows;
             return var0;
@@ -6447,7 +6447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRow';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var0 = this;
             var1 = var0.rows;
             var0 = arg0;
@@ -6464,7 +6464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot55 = var19;
     var19 = function() { // Environment: var18
         var3 = _closure1_slot8;
-        var2 = function(arg0, arg1) { // Original name: ChannelListGuildActionSection, environment: var4
+        var2 = function arg0, arg1() {
             _fun41358: for (var _fun41358_ip = 0;;) switch (_fun41358_ip) {
                 case 0:
                     var6 = arg0;
@@ -6499,7 +6499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'isEmpty';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.guildActionRows;
             var1 = var0.length;
@@ -6513,7 +6513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRows';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.guildActionRows;
             return var0;
@@ -6523,7 +6523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRow';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var0 = this;
             var1 = var0.guildActionRows;
             var0 = arg0;
@@ -6540,7 +6540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot56 = var19;
     var19 = function() { // Environment: var18
         var3 = _closure1_slot8;
-        var2 = function(arg0, arg1, arg2) { // Original name: BaseChannelListChannel, environment: var4
+        var2 = function arg0, arg1, arg2() {
             _fun41363: for (var _fun41363_ip = 0;;) switch (_fun41363_ip) {
                 case 0:
                     var3 = arg1;
@@ -6597,7 +6597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'isMuted';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var1 = var0.category;
             var1 = var1.guild;
@@ -6613,7 +6613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isCollapsed';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var2 = _closure1_slot26;
             var1 = var2.isCollapsed;
             var0 = this;
@@ -6626,7 +6626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isFirstVoiceChannel';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var1 = this;
             var2 = var1.category;
             var0 = var2.getFirstVoiceChannel;
@@ -6639,7 +6639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'lastMessageTimestamp';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var4 = this;
             var0 = global;
             var2 = var0.Math;
@@ -6669,7 +6669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateChannel';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun41368: for (var _fun41368_ip = 0;;) switch (_fun41368_ip) {
                 case 0:
                     var1 = arg0;
@@ -6763,7 +6763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSubtitle';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun41369: for (var _fun41369_ip = 0;;) switch (_fun41369_ip) {
                 case 0:
                     var2 = this;
@@ -6795,7 +6795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'computeSubtitle';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun41370: for (var _fun41370_ip = 0;;) switch (_fun41370_ip) {
                 case 0:
                     var0 = this;
@@ -6826,7 +6826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var22 = var19.bind(var0)();
     var19 = function(arg0) { // Environment: var18
-        var3 = function() { // Original name: ChannelListChannelImpl, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -6847,7 +6847,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'computeState';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun41373: for (var _fun41373_ip = 0;;) switch (_fun41373_ip) {
                 case 0:
                     var1 = arg0;
@@ -7258,7 +7258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var20 = var19.bind(var0)(var22);
     var _closure1_slot57 = var20;
     var19 = function(arg0) { // Environment: var18
-        var3 = function() { // Original name: FavoritesChannelListChannel, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -7279,7 +7279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'computeState';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun41376: for (var _fun41376_ip = 0;;) switch (_fun41376_ip) {
                 case 0:
                     var0 = arg0;
@@ -7344,7 +7344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var19.bind(var0)(var22);
     var _closure1_slot58 = var19;
     var19 = function(arg0) { // Environment: var18
-        var3 = function() { // Original name: RecentsChannelListChannel, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -7365,7 +7365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'computeState';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun41379: for (var _fun41379_ip = 0;;) switch (_fun41379_ip) {
                 case 0:
                     var10 = arg0;
@@ -7465,7 +7465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var19.bind(var0)(var22);
     var _closure1_slot59 = var19;
     var19 = function(arg0) { // Environment: var18
-        var3 = function() { // Original name: RecentlyActiveChannelListChannel, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -7486,7 +7486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'computeState';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun41382: for (var _fun41382_ip = 0;;) switch (_fun41382_ip) {
                 case 0:
                     var9 = arg0;
@@ -7628,7 +7628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var19.bind(var0)(var20);
     var _closure1_slot60 = var19;
     var19 = function(arg0) { // Environment: var18
-        var3 = function() { // Original name: VoiceChannelListChannel, environment: var5
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -7649,7 +7649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getRenderLevel';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun41386: for (var _fun41386_ip = 0;;) switch (_fun41386_ip) {
                 case 0:
                     var4 = arg0;
@@ -7749,7 +7749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'computeState';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun41387: for (var _fun41387_ip = 0;;) switch (_fun41387_ip) {
                 case 0:
                     var2 = this;

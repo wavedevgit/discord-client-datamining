@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PoolIdInput, environment: var1
+    var0 = function arg0() {
         _fun85782: for (var _fun85782_ip = 0;;) switch (_fun85782_ip) {
             case 0:
                 var1 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: UserActionSheet, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.pool;
         var _closure2_slot0 = var9;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var10;
                     var10 = var0.email;
                     var1.subLabel = var10;
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         var2 = _closure2_slot3;
                         var0 = _closure3_slot0;
                         var1 = var0.id;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: PoolUsers, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var11 = var1.pool;
         var _closure2_slot0 = var11;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsGeneratedTestUsersScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsGeneratedTestUsersScreen, environment: var1
+    var1 = function() {
         _fun85791: for (var _fun85791_ip = 0;;) switch (_fun85791_ip) {
             case 0:
                 var0 = _closure1_slot14;

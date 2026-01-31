@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var6 = var6.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: onSwitchStart, environment: var3
+    var7 = function() {
         _fun113715: for (var _fun113715_ip = 0;;) switch (_fun113715_ip) {
             case 0:
                 var4 = _closure1_slot1;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onSwitchStart = var7;
-    var7 = function(arg0, arg1) { // Original name: onSwitchSuccess, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onSwitchSuccess = var7;
-    var7 = function() { // Original name: onSwitchError, environment: var3
+    var7 = function() {
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
         var0 = 7;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onSwitchError = var7;
-    var3 = function() { // Original name: onTokenSet, environment: var3
+    var3 = function() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var2 = 3;

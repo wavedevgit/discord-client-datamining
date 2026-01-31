@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_antiraid/native/GuildRaidLockdownFeedbackActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun78920: for (var _fun78920_ip = 0;;) switch (_fun78920_ip) {
             case 0:
                 var0 = arg0;
@@ -299,9 +299,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     var1 = var0.TableCheckboxRow;
                     var0 = {};
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var2 = _closure3_slot0;
-                        var1 = function(arg0) { // Original name: onCheckboxChange, environment: var0
+                        var1 = function arg0() {
                             _fun78923: for (var _fun78923_ip = 0;;) switch (_fun78923_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14["PAM+JR"];
                 var14 = var16.bind(var17)(var14);
                 var10.placeholder = var14;
-                var14 = function(arg0) { // Original name: onChange, environment: var12
+                var14 = function arg0() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var1 = arg0;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var14.bind(var3)(var8);
                 var9 = var8.Button;
                 var8 = {};
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 16;

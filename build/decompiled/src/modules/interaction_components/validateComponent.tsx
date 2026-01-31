@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = function(arg0, arg1, arg2) { // Original name: validateSelect, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun56242: for (var _fun56242_ip = 0;;) switch (_fun56242_ip) {
             case 0:
                 var0 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/validateComponent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: validateComponent, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun56243: for (var _fun56243_ip = 0;;) switch (_fun56243_ip) {
             case 0:
                 var5 = arg0;

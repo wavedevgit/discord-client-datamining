@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaGridItem, environment: var1
+    var1 = function arg0() {
         _fun105512: for (var _fun105512_ip = 0;;) switch (_fun105512_ip) {
             case 0:
                 var0 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0[var4];
                 var11 = var19.bind(var3)(var5);
                 var9 = var11.useAnimatedStyle;
-                var5 = function() { // Original name: v, environment: var1
+                var5 = function() {
                     var0 = {};
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;

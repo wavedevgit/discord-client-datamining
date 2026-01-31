@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var7;
-    var4 = function(arg0) { // Original name: useReactors, environment: var1
+    var4 = function arg0() {
         _fun73264: for (var _fun73264_ip = 0;;) switch (_fun73264_ip) {
             case 0:
                 var2 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var4;
-    var3 = function(arg0) { // Original name: useReactorsOnScrollNative, environment: var1
+    var3 = function arg0() {
         _fun73266: for (var _fun73266_ip = 0;;) switch (_fun73266_ip) {
             case 0:
                 var1 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var3;
-    var0 = function(arg0, arg1) { // Original name: useRenderFooter, environment: var1
+    var0 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: useRenderItem, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         var10 = arg0;
         var7 = arg1;
         var9 = arg2;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = _closure1_slot17;
                     var14 = _closure1_slot8;
                     var13 = {};
-                    var16 = function() { // Original name: onPress, environment: var11
+                    var16 = function() {
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot3;
                         var3 = 19;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var15.bind(var3)(var14, var13);
                 case 623:
                     var4.trailing = var12;
-                    var11 = function() { // Original name: onLongPress, environment: var11
+                    var11 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 31;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: useRenderQuickActions, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg2;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var8.unsafe_rawColors;
                     var8 = var8.RED_400;
                     var4.color = var8;
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot3;
                         var3 = 19;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: ReactionTab, environment: var1
+    var0 = function arg0() {
         _fun73283: for (var _fun73283_ip = 0;;) switch (_fun73283_ip) {
             case 0:
                 var0 = arg0;
@@ -1345,7 +1345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = "function MessageReactionsContentTsx2(){const{useReducedMotion,textOpacity,withTiming}=this.__closure;return{opacity:useReducedMotion?textOpacity.get():withTiming(textOpacity.get(),{duration:125}),color:'white',fontSize:14,marginLeft:8,textAlignVertical:'center'};}";
     var5.code = var8;
     var _closure1_slot22 = var5;
-    var5 = function(arg0) { // Original name: RemoveAllButton, environment: var1
+    var5 = function arg0() {
         _fun73285: for (var _fun73285_ip = 0;;) switch (_fun73285_ip) {
             case 0:
                 var1 = arg0;
@@ -1410,7 +1410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var16[var5];
                 var7 = var15.bind(var4)(var0);
                 var2 = var7.useAnimatedStyle;
-                var0 = function() { // Original name: b, environment: var6
+                var0 = function() {
                     _fun73287: for (var _fun73287_ip = 0;;) switch (_fun73287_ip) {
                         case 0:
                             var0 = {};
@@ -1467,7 +1467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16[var5];
                 var7 = var15.bind(var4)(var2);
                 var3 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: T, environment: var6
+                var2 = function() {
                     _fun73288: for (var _fun73288_ip = 0;;) switch (_fun73288_ip) {
                         case 0:
                             var0 = {
@@ -1564,7 +1564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot17;
                 var2 = _closure1_slot8;
                 var1 = {};
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     _fun73291: for (var _fun73291_ip = 0;;) switch (_fun73291_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -1674,7 +1674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var5;
-    var5 = function(arg0) { // Original name: EmojiOptionsButton, environment: var1
+    var5 = function arg0() {
         var3 = arg0;
         var2 = var3.reactions;
         var1 = var3.reactionSelectedIndex;
@@ -1802,7 +1802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var5;
-    var5 = function(arg0) { // Original name: ReactionTabs, environment: var1
+    var5 = function arg0() {
         _fun73295: for (var _fun73295_ip = 0;;) switch (_fun73295_ip) {
             case 0:
                 var12 = arg0;
@@ -1885,7 +1885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var19.tabSelected;
                 var4.tabStyleSelected = var11;
                 var4.tabIndexSelected = var14;
-                var8 = function(arg0) { // Original name: onSelect, environment: var8
+                var8 = function arg0() {
                     var3 = _closure1_slot0;
                     var5 = _closure1_slot3;
                     var0 = 48;
@@ -2098,7 +2098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.reactions = var18;
                 var2.emoji = var5;
                 var2.isSelectedBurst = var0;
-                var0 = function(arg0) { // Original name: useReactionSelected, environment: var1
+                var0 = function arg0() {
                     _fun73300: for (var _fun73300_ip = 0;;) switch (_fun73300_ip) {
                         case 0:
                             var0 = arg0;
@@ -2309,7 +2309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var9[var0];
                 var0 = var8.bind(var3)(var0);
                 var13 = var0.bind(var3)();
-                var0 = function(arg0) { // Original name: useCanManageMessages, environment: var1
+                var0 = function arg0() {
                     var5 = arg0;
                     var _closure3_slot0 = var5;
                     var4 = _closure1_slot0;

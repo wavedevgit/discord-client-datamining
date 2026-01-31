@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Math;
     var1 = var1.min;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: findLastIndex, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun31630: for (var _fun31630_ip = 0;;) switch (_fun31630_ip) {
             case 0:
                 var5 = arg0;

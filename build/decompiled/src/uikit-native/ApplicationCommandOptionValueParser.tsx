@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun89987: for (var _fun89987_ip = 0;;) switch (_fun89987_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun89989: for (var _fun89989_ip = 0;;) switch (_fun89989_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var6 = function(arg0) { // Original name: getUsers, environment: var1
+    var6 = function arg0() {
         _fun89990: for (var _fun89990_ip = 0;;) switch (_fun89990_ip) {
             case 0:
                 var1 = arg0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var6;
-    var5 = function(arg0) { // Original name: getRoles, environment: var1
+    var5 = function arg0() {
         _fun89995: for (var _fun89995_ip = 0;;) switch (_fun89995_ip) {
             case 0:
                 var0 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var5;
-    var4 = function(arg0, arg1) { // Original name: getChannels, environment: var1
+    var4 = function arg0, arg1() {
         _fun89997: for (var _fun89997_ip = 0;;) switch (_fun89997_ip) {
             case 0:
                 var2 = arg0;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var3;
     var3 = /^@(([^@#:]+)#([0-9]{4}))$/i;
     var _closure1_slot13 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: matchPrefix, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun90003: for (var _fun90003_ip = 0;;) switch (_fun90003_ip) {
             case 0:
                 var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: ApplicationCommandOptionValueParser, environment: var1
+    var3 = function arg0() {
         var2 = this;
         var _closure2_slot0 = var2;
         var4 = _closure1_slot3;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var1 = var2.bind(var3)(var1);
                     var _closure3_slot3 = var1;
-                    var5 = function() { // Original name: matchUser, environment: var0
+                    var5 = function() {
                         _fun90010: for (var _fun90010_ip = 0;;) switch (_fun90010_ip) {
                             case 0:
                                 var6 = _closure1_slot14;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                         }
                     };
-                    var3 = function() { // Original name: matchRole, environment: var0
+                    var3 = function() {
                         _fun90011: for (var _fun90011_ip = 0;;) switch (_fun90011_ip) {
                             case 0:
                                 var5 = _closure1_slot14;

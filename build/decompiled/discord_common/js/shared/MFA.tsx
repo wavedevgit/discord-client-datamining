@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: finishMFACheck, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var3;
-    var0 = function() { // Original name: _finishMFACheck, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: _trySubmit, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TOTP_CODE_LENGTH = var4;
     var2.SMS_CODE_LENGTH = var4;
     var2.finishMFACheck = var3;
-    var1 = function() { // Original name: trySubmit, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

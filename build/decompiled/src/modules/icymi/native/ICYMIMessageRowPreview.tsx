@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: isMediaEmbed, environment: var1
+    var0 = function arg0() {
         _fun104020: for (var _fun104020_ip = 0;;) switch (_fun104020_ip) {
             case 0:
                 var2 = arg0;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: ICYMIMessageRowPreview, environment: var1
+    var0 = function arg0() {
         _fun104021: for (var _fun104021_ip = 0;;) switch (_fun104021_ip) {
             case 0:
                 var0 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.pointerEvents = var9;
                 var9 = 0;
                 var0.horizontalOffset = var9;
-                var8 = function(arg0) { // Original name: modifyRow, environment: var8
+                var8 = function arg0() {
                     _fun104023: for (var _fun104023_ip = 0;;) switch (_fun104023_ip) {
                         case 0:
                             var2 = arg0;

@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionsRow, environment: var1
+    var1 = function arg0() {
         _fun102133: for (var _fun102133_ip = 0;;) switch (_fun102133_ip) {
             case 0:
                 var2 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var1 = _closure2_slot0;
                     var2.guildId = var1;
-                    var1 = function() { // Original name: onClose, environment: var1
+                    var1 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 8;

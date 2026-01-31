@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var3;
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0, arg1) { // Original name: lerpVarWidthThumbnailScrollBounds, environment: var0
+        var0 = function arg0, arg1() {
             _fun70437: for (var _fun70437_ip = 0;;) switch (_fun70437_ip) {
                 case 0:
                     var2 = arg0;

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var7 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun46842: for (var _fun46842_ip = 0;;) switch (_fun46842_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Error;
     var5 = var5.bind(var0)(var1);
     var1 = function(arg0) { // Environment: var3
-        var2 = function() { // Original name: CaptchaCancelError, environment: var0
+        var2 = function() {
             _fun46846: for (var _fun46846_ip = 0;;) switch (_fun46846_ip) {
                 case 0:
                     var3 = this;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/captcha/SharedCaptchaUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.CaptchaError = var4;
-    var4 = function(arg0) { // Original name: extractCaptchaPropsFromResponse, environment: var3
+    var4 = function arg0() {
         _fun46847: for (var _fun46847_ip = 0;;) switch (_fun46847_ip) {
             case 0:
                 var2 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractCaptchaPropsFromResponse = var4;
-    var3 = function(arg0) { // Original name: emitCaptchaDistributionMetric, environment: var3
+    var3 = function arg0() {
         _fun46848: for (var _fun46848_ip = 0;;) switch (_fun46848_ip) {
             case 0:
                 var2 = _closure1_slot7;

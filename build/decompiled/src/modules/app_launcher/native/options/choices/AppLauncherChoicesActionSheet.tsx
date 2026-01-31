@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FlashListWrapper, environment: var1
+    var0 = function arg0() {
         _fun108110: for (var _fun108110_ip = 0;;) switch (_fun108110_ip) {
             case 0:
                 var3 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/choices/AppLauncherChoicesActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherChoicesActionSheet, environment: var1
+    var1 = function arg0() {
         _fun108111: for (var _fun108111_ip = 0;;) switch (_fun108111_ip) {
             case 0:
                 var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = function() { // Environment: var14
                     var0 = _closure2_slot0;
                     var2 = var0.choices;
-                    var1 = function(arg0) { // Original name: toChoicesWithIndex, environment: var0
+                    var1 = function arg0() {
                         _fun108113: for (var _fun108113_ip = 0;;) switch (_fun108113_ip) {
                             case 0:
                                 var2 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.align = var10;
                             var8 = var9 === var8;
                             var4.selected = var8;
-                            var7 = function() { // Original name: onPress, environment: var7
+                            var7 = function() {
                                 var4 = _closure2_slot6;
                                 var1 = _closure3_slot0;
                                 var3 = var1.originalIndex;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = {};
                 var15.bottom = var16;
                 var5.scrollIndicatorInsets = var15;
-                var14 = function(arg0) { // Original name: keyExtractor, environment: var14
+                var14 = function arg0() {
                     var0 = arg0;
                     var1 = var0.choice;
                     var4 = var1.name;

@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/SettingsAccountUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useIs2FAEnabled, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIs2FAEnabled = var3;
-    var3 = function() { // Original name: useIsTOTPEnabled, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsTOTPEnabled = var3;
-    var1 = function() { // Original name: useIsUserVerified, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;

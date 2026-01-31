@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_antiraid/native/GuildRaidResolveActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var0;
         var3 = undefined;
         var _closure2_slot6 = var3;
-        var0 = function(arg0) { // Original name: handleTextInputChange, environment: var15
+        var0 = function arg0() {
             var2 = _closure2_slot6;
             var0 = undefined;
             var1 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var _closure2_slot7 = var0;
-        var14 = function() { // Original name: handleClose, environment: var15
+        var14 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 10;
@@ -336,9 +336,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = {};
                     var14 = var14.option;
                     var5.style = var14;
-                    var11 = function() { // Original name: onPress, environment: var11
+                    var11 = function() {
                         var2 = _closure3_slot0;
-                        var1 = function(arg0) { // Original name: onCheckboxChange, environment: var0
+                        var1 = function arg0() {
                             _fun79169: for (var _fun79169_ip = 0;;) switch (_fun79169_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var12[var10];
         var9 = var11.bind(var3)(var8);
         var8 = {};
-        var15 = function() { // Original name: onPress, environment: var15
+        var15 = function() {
             var12 = {};
             var9 = _closure1_slot0;
             var4 = _closure1_slot2;

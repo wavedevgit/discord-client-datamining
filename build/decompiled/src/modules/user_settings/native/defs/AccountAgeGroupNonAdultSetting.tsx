@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var7
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 5;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.ACCOUNT;
     var1.parent = var9;
-    var9 = function() { // Original name: useAccountAgeGroupNonAdultSettingTrailing, environment: var7
+    var9 = function() {
         _fun81010: for (var _fun81010_ip = 0;;) switch (_fun81010_ip) {
             case 0:
                 var10 = _closure1_slot0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTrailing = var9;
-    var9 = function() { // Original name: onAccountAgeGroupNonAdultSettingPress, environment: var7
+    var9 = function() {
         var2 = _closure1_slot1;
         var6 = _closure1_slot2;
         var0 = 1;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onPress = var9;
     var1.withArrow = var8;
-    var7 = function() { // Original name: AccountAgeGroupNonAdultSettingPredicate, environment: var7
+    var7 = function() {
         _fun81012: for (var _fun81012_ip = 0;;) switch (_fun81012_ip) {
             case 0:
                 var5 = _closure1_slot0;

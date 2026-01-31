@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var5 = var3.default;
     var4 = {};
-    var3 = function(arg0, arg1) { // Original name: setColor, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.setColor = var3;
-    var3 = function(arg0) { // Original name: setTranslucent, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.setTranslucent = var3;
-    var3 = function(arg0) { // Original name: setStyle, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.setStyle = var3;
-    var3 = function(arg0) { // Original name: setHidden, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var3 = var6.bind(var7)(var3, var5, var4);
     var _closure1_slot4 = var3;
-    var3 = function() { // Original name: applyMonkeyPatch, environment: var1
+    var3 = function() {
         var0 = global;
         var4 = var0.Object;
         var3 = var4.assign;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.applyMonkeyPatch = var3;
-    var1 = function() { // Original name: revertMonkeyPatch, environment: var1
+    var1 = function() {
         var0 = global;
         var4 = var0.Object;
         var3 = var4.assign;

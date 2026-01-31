@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_analytics/track/friends_list_viewed/getTrackFriendsListViewedData.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getTrackFriendsListViewedData, environment: var1
+    var1 = function() {
         var2 = _closure1_slot5;
         var1 = var2.getLocalAccount;
         var0 = _closure1_slot7;

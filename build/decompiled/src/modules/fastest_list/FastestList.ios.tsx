@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getBatchesToRender, environment: var1
+    var0 = function arg0() {
         _fun61007: for (var _fun61007_ip = 0;;) switch (_fun61007_ip) {
             case 0:
                 var1 = arg0;

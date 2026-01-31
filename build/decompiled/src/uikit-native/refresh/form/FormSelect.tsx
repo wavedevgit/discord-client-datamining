@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: OptionButton, environment: var1
+    var0 = function arg0() {
         _fun48031: for (var _fun48031_ip = 0;;) switch (_fun48031_ip) {
             case 0:
                 var0 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: extractKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.value;
         var0 = global;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/refresh/form/FormSelect.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormSelect, environment: var1
+    var1 = function arg0() {
         _fun48034: for (var _fun48034_ip = 0;;) switch (_fun48034_ip) {
             case 0:
                 var0 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.extraData = var11;
                 var10 = _closure1_slot11;
                 var5.keyExtractor = var10;
-                var9 = function(arg0) { // Original name: renderItem, environment: var9
+                var9 = function arg0() {
                     var0 = arg0;
                     var0 = var0.item;
                     var3 = _closure1_slot6;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot0;
                     var0 = var4 === var0;
                     var1.selected = var0;
-                    var0 = function(arg0) { // Original name: onPress, environment: var0
+                    var0 = function arg0() {
                         _fun48036: for (var _fun48036_ip = 0;;) switch (_fun48036_ip) {
                             case 0:
                                 var0 = arg0;

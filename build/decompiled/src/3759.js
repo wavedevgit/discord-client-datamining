@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = "function pnpm_delayTs2(){const{_nextAnimation,delayMs,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}";
     var1.code = var4;
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: pnpm_delayTs1, environment: var0
+    var1 = function arg0, arg1, arg2() {
         var11 = arg0;
         var3 = arg1;
         var6 = arg2;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var8 = undefined;
         var2 = var9.bind(var8)(var1);
         var1 = var2.defineAnimation;
-        var0 = function() { // Original name: pnpm_delayTs2, environment: var0
+        var0 = function() {
             _fun33732: for (var _fun33732_ip = 0;;) switch (_fun33732_ip) {
                 case 0:
                     var0 = _closure2_slot1;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var4 = true;
                     var0.isHigherOrder = var4;
-                    var4 = function(arg0, arg1) { // Original name: delay, environment: var2
+                    var4 = function arg0, arg1() {
                         _fun33733: for (var _fun33733_ip = 0;;) switch (_fun33733_ip) {
                             case 0:
                                 var2 = arg0;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onFrame = var4;
-                    var4 = function(arg0, arg1, arg2, arg3) { // Original name: onStart, environment: var2
+                    var4 = function arg0, arg1, arg2, arg3() {
                         _fun33734: for (var _fun33734_ip = 0;;) switch (_fun33734_ip) {
                             case 0:
                                 var1 = arg0;
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.onStart = var4;
                     var3 = var3.current;
                     var0.current = var3;
-                    var2 = function(arg0) { // Original name: callback, environment: var2
+                    var2 = function arg0() {
                         _fun33735: for (var _fun33735_ip = 0;;) switch (_fun33735_ip) {
                             case 0:
                                 var1 = _closure3_slot0;

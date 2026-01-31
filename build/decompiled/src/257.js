@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.name = var3;
     var _closure1_slot1 = var0;
     var0 = {};
-    var3 = function(arg0) { // Original name: setActiveScene, environment: var2
+    var3 = function arg0() {
         var1 = arg0;
         _closure1_slot1 = var1;
         var2 = _closure1_slot0;
@@ -33,19 +33,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.setActiveScene = var3;
-    var3 = function() { // Original name: getActiveScene, environment: var2
+    var3 = function() {
         var0 = _closure1_slot1;
         return var0;
     };
     var0.getActiveScene = var3;
-    var2 = function(arg0) { // Original name: addActiveSceneChangedListener, environment: var2
+    var2 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot0;
         var0 = var2.push;
         var0 = var0.bind(var2)(var3);
         var0 = {};
-        var1 = function() { // Original name: remove, environment: var1
+        var1 = function() {
             var3 = _closure1_slot0;
             var2 = var3.filter;
             var0 = function(arg0) { // Environment: var0

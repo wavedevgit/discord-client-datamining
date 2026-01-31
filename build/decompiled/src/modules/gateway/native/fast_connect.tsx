@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var3 = function() { // Original name: createFastConnectSocket, environment: var1
+    var3 = function() {
         _fun1092: for (var _fun1092_ip = 0;;) switch (_fun1092_ip) {
             case 0:
                 var0 = global;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun1092_ip = 58;
                 continue _fun1092;
             case 45:
-                var1 = function() { // Original name: newWebSocket, environment: var0
+                var1 = function() {
                     _fun1093: for (var _fun1093_ip = 0;;) switch (_fun1093_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/gateway/native/fast_connect.tsx';
     var4 = var5.bind(var6)(var4);
     var2.createFastConnectSocket = var3;
-    var3 = function() { // Original name: closeFastConnectSocket, environment: var1
+    var3 = function() {
         _fun1097: for (var _fun1097_ip = 0;;) switch (_fun1097_ip) {
             case 0:
                 var0 = global;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.closeFastConnectSocket = var3;
-    var1 = function() { // Original name: identifyWebSocket, environment: var1
+    var1 = function() {
         _fun1098: for (var _fun1098_ip = 0;;) switch (_fun1098_ip) {
             case 0:
                 var0 = global;

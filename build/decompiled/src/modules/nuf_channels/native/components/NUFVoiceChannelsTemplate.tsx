@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf_channels/native/components/NUFVoiceChannelsTemplate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var _closure2_slot0 = var0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.eIi3Om;
         var5 = var6.bind(var7)(var5);
         var0.CTALabel = var5;
-        var4 = function() { // Original name: onCTAPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot3;
             var0 = 5;

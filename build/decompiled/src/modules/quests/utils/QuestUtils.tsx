@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun46902: for (var _fun46902_ip = 0;;) switch (_fun46902_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun46904: for (var _fun46904_ip = 0;;) switch (_fun46904_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var4 = function(arg0) { // Original name: isSponsoredPlayQuest, environment: var1
+    var4 = function arg0() {
         _fun46905: for (var _fun46905_ip = 0;;) switch (_fun46905_ip) {
             case 0:
                 var3 = arg0;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0, arg1) { // Original name: hasVariant, environment: var1
+    var3 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Set;
         var0 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/quests/utils/QuestUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.isSponsoredPlayQuest = var4;
-    var4 = function(arg0) { // Original name: isPlayAnyActivityQuest, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 6;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isPlayAnyActivityQuest = var4;
     var2.hasVariant = var3;
-    var3 = function(arg0) { // Original name: canLaunchActivity, environment: var1
+    var3 = function arg0() {
         _fun46908: for (var _fun46908_ip = 0;;) switch (_fun46908_ip) {
             case 0:
                 var2 = arg0;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canLaunchActivity = var3;
-    var3 = function(arg0, arg1) { // Original name: filterQuestsForSocialEntrypoints, environment: var1
+    var3 = function arg0, arg1() {
         _fun46909: for (var _fun46909_ip = 0;;) switch (_fun46909_ip) {
             case 0:
                 var12 = arg1;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterQuestsForSocialEntrypoints = var3;
-    var3 = function(arg0) { // Original name: isShareableQuest, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.sharePolicy;
         var3 = _closure1_slot0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isShareableQuest = var3;
-    var3 = function(arg0, arg1) { // Original name: isStreamingAndCanWatch, environment: var1
+    var3 = function arg0, arg1() {
         _fun46911: for (var _fun46911_ip = 0;;) switch (_fun46911_ip) {
             case 0:
                 var7 = arg1;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStreamingAndCanWatch = var3;
-    var3 = function(arg0) { // Original name: getQuestType, environment: var1
+    var3 = function arg0() {
         _fun46912: for (var _fun46912_ip = 0;;) switch (_fun46912_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getQuestType = var3;
-    var1 = function(arg0, arg1) { // Original name: isQuestFeaturedByTakeover, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg0;

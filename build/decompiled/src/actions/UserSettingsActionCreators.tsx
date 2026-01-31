@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: convertThemeToProto, environment: var1
+    var0 = function arg0() {
         _fun61392: for (var _fun61392_ip = 0;;) switch (_fun61392_ip) {
             case 0:
                 var2 = arg0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.SystemThemeState;
     var _closure1_slot7 = var3;
     var3 = {};
-    var4 = function(arg0) { // Original name: overrideLocale, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.overrideLocale = var4;
-    var4 = function(arg0) { // Original name: updatedUnsyncedSettings, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.updatedUnsyncedSettings = var4;
-    var4 = function(arg0) { // Original name: setShouldSyncTextSettings, environment: var1
+    var4 = function arg0() {
         _fun61395: for (var _fun61395_ip = 0;;) switch (_fun61395_ip) {
             case 0:
                 var6 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.setShouldSyncTextSettings = var4;
-    var4 = function(arg0) { // Original name: setShouldSyncAppearanceSettings, environment: var1
+    var4 = function arg0() {
         _fun61396: for (var _fun61396_ip = 0;;) switch (_fun61396_ip) {
             case 0:
                 var6 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.setShouldSyncAppearanceSettings = var4;
-    var4 = function(arg0) { // Original name: applySettingsOverride, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.applySettingsOverride = var4;
-    var4 = function(arg0) { // Original name: clearSettingsOverride, environment: var1
+    var4 = function arg0() {
         var6 = 0;
         var4 = copyRestArgs(var6);
         var2 = _closure1_slot1;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.clearSettingsOverride = var4;
-    var4 = function(arg0) { // Original name: updateLocale, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot0;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.updateLocale = var4;
-    var4 = function(arg0) { // Original name: updateTheme, environment: var1
+    var4 = function arg0() {
         _fun61401: for (var _fun61401_ip = 0;;) switch (_fun61401_ip) {
             case 0:
                 var9 = arg0;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'actions/UserSettingsActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: saveGuildFolders, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.saveGuildFolders = var3;
-    var1 = function(arg0) { // Original name: saveClientTheme, environment: var1
+    var1 = function arg0() {
         _fun61406: for (var _fun61406_ip = 0;;) switch (_fun61406_ip) {
             case 0:
                 var1 = arg0;

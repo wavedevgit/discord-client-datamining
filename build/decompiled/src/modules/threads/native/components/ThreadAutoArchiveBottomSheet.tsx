@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.disabled = var12;
                             var12 = var7.label;
                             var0.label = var12;
-                            var11 = function() { // Original name: onPress, environment: var11
+                            var11 = function() {
                                 var2 = _closure2_slot1;
                                 var0 = _closure3_slot0;
                                 var1 = var0.value;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: formatSinkWantStat, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun32629: for (var _fun32629_ip = 0;;) switch (_fun32629_ip) {
             case 0:
                 var2 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.formatSinkWantStat = var3;
-    var1 = function(arg0, arg1) { // Original name: formatSinkWantAsInt, environment: var1
+    var1 = function arg0, arg1() {
         _fun32630: for (var _fun32630_ip = 0;;) switch (_fun32630_ip) {
             case 0:
                 var1 = arg0;

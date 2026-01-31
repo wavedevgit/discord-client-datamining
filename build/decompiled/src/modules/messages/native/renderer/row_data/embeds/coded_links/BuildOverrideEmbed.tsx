@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createBuildOverrideEmbed, environment: var1
+    var1 = function arg0, arg1() {
         _fun92345: for (var _fun92345_ip = 0;;) switch (_fun92345_ip) {
             case 0:
                 var11 = arg1;

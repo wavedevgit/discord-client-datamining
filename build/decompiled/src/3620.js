@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: nativeKeysIn, environment: var0
+    var1 = function arg0() {
         _fun32466: for (var _fun32466_ip = 0;;) switch (_fun32466_ip) {
             case 0:
                 var7 = arg0;

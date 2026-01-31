@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ExpandedHeader, environment: var1
+    var0 = function arg0() {
         _fun75506: for (var _fun75506_ip = 0;;) switch (_fun75506_ip) {
             case 0:
                 var2 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4[var5];
                 var15 = var2.bind(var3)(var7);
                 var10 = var15.useAnimatedStyle;
-                var7 = function() { // Original name: N, environment: var1
+                var7 = function() {
                     _fun75510: for (var _fun75510_ip = 0;;) switch (_fun75510_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4[var5];
                 var16 = var2.bind(var3)(var7);
                 var10 = var16.useAnimatedStyle;
-                var7 = function() { // Original name: k, environment: var1
+                var7 = function() {
                     _fun75511: for (var _fun75511_ip = 0;;) switch (_fun75511_ip) {
                         case 0:
                             var2 = _closure2_slot8;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4[var5];
                 var7 = var2.bind(var3)(var5);
                 var5 = var7.useAnimatedProps;
-                var1 = function() { // Original name: G, environment: var1
+                var1 = function() {
                     _fun75513: for (var _fun75513_ip = 0;;) switch (_fun75513_ip) {
                         case 0:
                             var0 = {};
@@ -978,7 +978,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaKeyboardBottomSheetHeader, environment: var1
+    var1 = function arg0() {
         var8 = arg0;
         var3 = _closure1_slot13;
         var2 = _closure1_slot14;

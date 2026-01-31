@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/utils/useWithPostLoginRouting.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useWithPostLoginRouting, environment: var1
+    var1 = function arg0, arg1() {
         var8 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var8;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPhoneTokenReceived = var6;
-                    var6 = function(arg0) { // Original name: onClose, environment: var5
+                    var6 = function arg0() {
                         _fun60780: for (var _fun60780_ip = 0;;) switch (_fun60780_ip) {
                             case 0:
                                 var0 = arg0;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var8.bind(var9)(var7);
                     var1.description = var7;
                     var1.phone = var6;
-                    var6 = function(arg0) { // Original name: onPhoneTokenReceived, environment: var5
+                    var6 = function arg0() {
                         var3 = _closure1_slot1;
                         var2 = _closure1_slot2;
                         var0 = 7;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPhoneTokenReceived = var6;
-                    var5 = function() { // Original name: onClose, environment: var5
+                    var5 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 8;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: valueOf, environment: var0
+    var1 = function arg0() {
         _fun13507: for (var _fun13507_ip = 0;;) switch (_fun13507_ip) {
             case 0:
                 var2 = arg0;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1) { // Original name: valueEqual, environment: var0
+    var1 = function arg0, arg1() {
         _fun13508: for (var _fun13508_ip = 0;;) switch (_fun13508_ip) {
             case 0:
                 var3 = arg0;

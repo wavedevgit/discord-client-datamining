@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/enhanced_role_colors/EnhancedRoleColorUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: extractColorStringsFromServerColors, environment: var1
+    var3 = function arg0() {
         _fun18990: for (var _fun18990_ip = 0;;) switch (_fun18990_ip) {
             case 0:
                 var2 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.extractColorStringsFromServerColors = var3;
-    var3 = function(arg0) { // Original name: getAuthorHasGradientRole, environment: var1
+    var3 = function arg0() {
         _fun18991: for (var _fun18991_ip = 0;;) switch (_fun18991_ip) {
             case 0:
                 var2 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAuthorHasGradientRole = var3;
-    var1 = function(arg0) { // Original name: getIsDefaultErc, environment: var1
+    var1 = function arg0() {
         _fun18992: for (var _fun18992_ip = 0;;) switch (_fun18992_ip) {
             case 0:
                 var2 = arg0;

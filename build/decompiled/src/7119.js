@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = null;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot10 = var3;
-    var3 = function() { // Original name: useIAPContext, environment: var1
+    var3 = function() {
         _fun58424: for (var _fun58424_ip = 0;;) switch (_fun58424_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -79,10 +79,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.useIAPContext = var3;
-    var1 = function(arg0) { // Original name: withIAPContext, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: WrapperComponent, environment: var0
+        var0 = function arg0() {
             var4 = _closure1_slot8;
             var3 = undefined;
             var2 = false;

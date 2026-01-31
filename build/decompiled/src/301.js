@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4 = var4.bind(var6)(var7, var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: openDrawer, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.openDrawer = var6;
-    var5 = function(arg0) { // Original name: closeDrawer, environment: var5
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;

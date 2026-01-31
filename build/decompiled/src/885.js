@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun9363: for (var _fun9363_ip = 0;;) switch (_fun9363_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun9366: for (var _fun9366_ip = 0;;) switch (_fun9366_ip) {
             case 0:
                 var4 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: setCurrentRequestSessionErroredOrCrashed, environment: var1
+    var0 = function arg0() {
         _fun9368: for (var _fun9368_ip = 0;;) switch (_fun9368_ip) {
             case 0:
                 var4 = arg0;
@@ -217,7 +217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.Client;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ServerRuntimeClient, environment: var5
+        var3 = function arg0() {
             _fun9370: for (var _fun9370_ip = 0;;) switch (_fun9370_ip) {
                 case 0:
                     var0 = arg0;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'eventFromException';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: eventFromException, environment: var5
+        var0 = function arg0, arg1() {
             var8 = this;
             var3 = _closure1_slot0;
             var4 = _closure1_slot1;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'eventFromMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: eventFromMessage, environment: var5
+        var6 = function arg0() {
             _fun9372: for (var _fun9372_ip = 0;;) switch (_fun9372_ip) {
                 case 0:
                     var0 = this;
@@ -373,7 +373,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'captureException';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: captureException, environment: var5
+        var6 = function arg0, arg1, arg2() {
             var3 = arg1;
             var1 = _closure1_slot11;
             var2 = undefined;
@@ -399,7 +399,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'captureEvent';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: captureEvent, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun9374: for (var _fun9374_ip = 0;;) switch (_fun9374_ip) {
                 case 0:
                     var4 = arg0;
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'captureCheckIn';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: captureCheckIn, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun9375: for (var _fun9375_ip = 0;;) switch (_fun9375_ip) {
                 case 0:
                     var1 = arg0;
@@ -643,7 +643,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_prepareEvent';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: _prepareEvent, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun9376: for (var _fun9376_ip = 0;;) switch (_fun9376_ip) {
                 case 0:
                     var3 = arg0;
@@ -745,7 +745,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_setUpMetricsProcessing';
         var4.key = var6;
-        var5 = function() { // Original name: _setUpMetricsProcessing, environment: var5
+        var5 = function() {
             var3 = this;
             var _closure3_slot0 = var3;
             var2 = var3.on;

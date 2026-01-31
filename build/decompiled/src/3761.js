@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var3;
     var _closure1_slot4 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0) { // Original name: withSequence, environment: var0
+        var0 = function arg0() {
             _fun33745: for (var _fun33745_ip = 0;;) switch (_fun33745_ip) {
                 case 0:
                     var2 = arg0;
@@ -109,8 +109,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var12.bind(var10)(var0);
                     var3 = var5.defineAnimation;
                     var2 = var13[var4];
-                    var0 = function() { // Original name: pnpm_sequenceTs3, environment: var1
-                        var0 = function(arg0) { // Original name: findNextNonReducedMotionAnimationIndex, environment: var2
+                    var0 = function() {
+                        var0 = function arg0() {
                             _fun33750: for (var _fun33750_ip = 0;;) switch (_fun33750_ip) {
                                 case 0:
                                     var5 = arg0;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = {};
                         var3 = true;
                         var0.isHigherOrder = var3;
-                        var3 = function(arg0, arg1) { // Original name: sequence, environment: var2
+                        var3 = function arg0, arg1() {
                             _fun33752: for (var _fun33752_ip = 0;;) switch (_fun33752_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -249,7 +249,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.onFrame = var3;
-                        var3 = function(arg0, arg1, arg2, arg3) { // Original name: onStart, environment: var2
+                        var3 = function arg0, arg1, arg2, arg3() {
                             _fun33753: for (var _fun33753_ip = 0;;) switch (_fun33753_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -311,7 +311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var4[var3];
                         var3 = var3.current;
                         var0.current = var3;
-                        var2 = function(arg0) { // Original name: callback, environment: var2
+                        var2 = function arg0() {
                             _fun33755: for (var _fun33755_ip = 0;;) switch (_fun33755_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -397,16 +397,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var8[var11];
                     var3 = var9.bind(var10)(var2);
                     var2 = var3.defineAnimation;
-                    var1 = function() { // Original name: pnpm_sequenceTs2, environment: var1
+                    var1 = function() {
                         var0 = {};
-                        var2 = function(arg0, arg1) { // Original name: onStart, environment: var1
+                        var2 = function arg0, arg1() {
                             var0 = arg1;
                             var1 = arg0;
                             var1.current = var0;
                             return var0;
                         };
                         var0.onStart = var2;
-                        var1 = function() { // Original name: onFrame, environment: var1
+                        var1 = function() {
                             var0 = true;
                             return var0;
                         };

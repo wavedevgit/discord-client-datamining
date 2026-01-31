@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun86616: for (var _fun86616_ip = 0;;) switch (_fun86616_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun86618: for (var _fun86618_ip = 0;;) switch (_fun86618_ip) {
             case 0:
                 var3 = arg0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.PriceSetAssignmentPurchaseTypes;
     var _closure1_slot3 = var3;
-    var4 = function(arg0, arg1) { // Original name: extractPriceByPurchaseTypes, environment: var1
+    var4 = function arg0, arg1() {
         _fun86619: for (var _fun86619_ip = 0;;) switch (_fun86619_ip) {
             case 0:
                 var1 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: isGPlaySynced, environment: var1
+    var3 = function arg0() {
         _fun86620: for (var _fun86620_ip = 0;;) switch (_fun86620_ip) {
             case 0:
                 var6 = arg0;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var3;
-    var5 = function(arg0) { // Original name: hasAtLeastOneGPlaySynced, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var2 = var0.products;
         var1 = var2.filter;

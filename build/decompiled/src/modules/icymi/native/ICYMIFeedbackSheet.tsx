@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMIFeedbackSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMIFeedbackSheet, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.trackOpen = var4;
         var4 = ['other'];
         var0.feedbackReasons = var4;
-        var4 = function(arg0) { // Original name: trackReport, environment: var4
+        var4 = function arg0() {
             _fun103682: for (var _fun103682_ip = 0;;) switch (_fun103682_ip) {
                 case 0:
                     var4 = arg0;

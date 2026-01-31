@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var9;
-    var1 = function(arg0) { // Original name: isSpecialMediaGridNode, environment: var3
+    var1 = function arg0() {
         _fun75523: for (var _fun75523_ip = 0;;) switch (_fun75523_ip) {
             case 0:
                 var1 = arg0;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var1;
-    var0 = function(arg0, arg1, arg2) { // Original name: useLayoutStyle, environment: var3
+    var0 = function arg0, arg1, arg2() {
         var6 = arg0;
         var5 = arg1;
         var4 = arg2;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.imageDisabled = var15;
     var7 = var11.bind(var14)(var7);
     var _closure1_slot13 = var7;
-    var7 = function(arg0) { // Original name: NewCaption, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var8 = var0.label;
         var6 = var0.style;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var7;
-    var7 = function(arg0) { // Original name: MediaKeyboardImage, environment: var3
+    var7 = function arg0() {
         _fun75527: for (var _fun75527_ip = 0;;) switch (_fun75527_ip) {
             case 0:
                 var3 = arg0;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[4] = var16;
                 var4 = function() { // Environment: var4
                     var0 = {};
-                    var2 = function() { // Original name: onPress, environment: var1
+                    var2 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 14;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onPress = var2;
-                    var1 = function() { // Original name: onLongPress, environment: var1
+                    var1 = function() {
                         _fun75532: for (var _fun75532_ip = 0;;) switch (_fun75532_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -962,7 +962,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var7;
-    var7 = function(arg0) { // Original name: MediaKeyboardDummy, environment: var3
+    var7 = function arg0() {
         _fun75533: for (var _fun75533_ip = 0;;) switch (_fun75533_ip) {
             case 0:
                 var0 = arg0;
@@ -1028,7 +1028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'function MediaKeyboardItemTsx1(){const{withTiming,interpolateColor,pressed,backgroundColor,pressedBackgroundColor,Easing}=this.__closure;return{backgroundColor:withTiming(interpolateColor(pressed.get(),[0,1],[backgroundColor,pressedBackgroundColor]),{duration:200,easing:Easing.out(Easing.quad)})};}';
     var6.code = var7;
     var _closure1_slot18 = var6;
-    var6 = function(arg0) { // Original name: MediaKeyboardSpecialButton, environment: var3
+    var6 = function arg0() {
         _fun75534: for (var _fun75534_ip = 0;;) switch (_fun75534_ip) {
             case 0:
                 var0 = arg0;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var16];
                 var14 = var17.bind(var3)(var1);
                 var9 = var14.useAnimatedStyle;
-                var1 = function() { // Original name: h, environment: var11
+                var1 = function() {
                     var0 = {};
                     var9 = _closure1_slot0;
                     var10 = _closure1_slot2;
@@ -1133,7 +1133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 'button';
                 var0.accessibilityRole = var13;
                 var0.accessibilityLabel = var12;
-                var12 = function() { // Original name: onPressIn, environment: var11
+                var12 = function() {
                     var2 = _closure2_slot0;
                     var1 = var2.set;
                     var0 = 1;
@@ -1142,7 +1142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onPressIn = var12;
-                var11 = function() { // Original name: onPressOut, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot0;
                     var1 = var2.set;
                     var0 = 0;
@@ -1400,7 +1400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.PARENT_PADDING = var5;
     var2.CHILD_PADDING = var4;
     var2.SEPARATOR_SIZE = var4;
-    var4 = function(arg0) { // Original name: isMediaCameraNode, environment: var3
+    var4 = function arg0() {
         _fun75540: for (var _fun75540_ip = 0;;) switch (_fun75540_ip) {
             case 0:
                 var1 = arg0;
@@ -1419,7 +1419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isMediaCameraNode = var4;
-    var4 = function(arg0) { // Original name: isAttachFilesNode, environment: var3
+    var4 = function arg0() {
         _fun75541: for (var _fun75541_ip = 0;;) switch (_fun75541_ip) {
             case 0:
                 var1 = arg0;
@@ -1438,7 +1438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isAttachFilesNode = var4;
-    var3 = function(arg0) { // Original name: isViewAllPhotosNode, environment: var3
+    var3 = function arg0() {
         _fun75542: for (var _fun75542_ip = 0;;) switch (_fun75542_ip) {
             case 0:
                 var1 = arg0;

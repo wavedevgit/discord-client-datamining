@@ -13,7 +13,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var1 = 'function getRandomNumberInRange_getRandomNumberInRangeTsx1(min,max){return Math.random()*(max-min)+min;}';
     var0.code = var1;
-    var1 = function(arg0, arg1) { // Original name: n, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var0 = global;
         var2 = var0.Math;

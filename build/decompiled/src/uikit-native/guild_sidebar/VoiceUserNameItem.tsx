@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/guild_sidebar/VoiceUserNameItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: VoiceUserNameItem, environment: var1
+    var1 = function arg0() {
         _fun102088: for (var _fun102088_ip = 0;;) switch (_fun102088_ip) {
             case 0:
                 var1 = arg0;

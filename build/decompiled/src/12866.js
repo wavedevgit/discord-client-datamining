@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var1 = function(arg0, arg1) { // Original name: parseStackFrames, environment: var4
+    var1 = function arg0, arg1() {
         _fun99016: for (var _fun99016_ip = 0;;) switch (_fun99016_ip) {
             case 0:
                 var0 = arg1;
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var3 = function(arg0, arg1) { // Original name: exceptionFromError, environment: var4
+    var3 = function arg0, arg1() {
         _fun99017: for (var _fun99017_ip = 0;;) switch (_fun99017_ip) {
             case 0:
                 var4 = arg1;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function(arg0) { // Original name: getMessageForObject, environment: var4
+    var0 = function arg0() {
         _fun99018: for (var _fun99018_ip = 0;;) switch (_fun99018_ip) {
             case 0:
                 var3 = arg0;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getException, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun99019: for (var _fun99019_ip = 0;;) switch (_fun99019_ip) {
             case 0:
                 var4 = arg0;
@@ -395,7 +395,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.value = var5;
     var5 = '__esModule';
     var5 = var7.bind(var8)(var2, var5, var6);
-    var5 = function(arg0, arg1) { // Original name: eventFromMessage, environment: var4
+    var5 = function arg0, arg1() {
         _fun99020: for (var _fun99020_ip = 0;;) switch (_fun99020_ip) {
             case 0:
                 var1 = arg1;
@@ -514,7 +514,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.eventFromMessage = var5;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: eventFromUnknownInput, environment: var4
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun99021: for (var _fun99021_ip = 0;;) switch (_fun99021_ip) {
             case 0:
                 var5 = arg3;

@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var8;
     var _closure1_slot9 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: MediaKeyboardListHeader, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var14 = var0.animatedIndex;
         var _closure2_slot0 = var14;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var10[var1];
         var9 = var2.bind(var3)(var5);
         var8 = var9.useAnimatedStyle;
-        var5 = function() { // Original name: _, environment: var4
+        var5 = function() {
             _fun75518: for (var _fun75518_ip = 0;;) switch (_fun75518_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var10[var1];
         var8 = var2.bind(var3)(var1);
         var5 = var8.useAnimatedProps;
-        var1 = function() { // Original name: I, environment: var4
+        var1 = function() {
             _fun75519: for (var _fun75519_ip = 0;;) switch (_fun75519_ip) {
                 case 0:
                     var0 = {};

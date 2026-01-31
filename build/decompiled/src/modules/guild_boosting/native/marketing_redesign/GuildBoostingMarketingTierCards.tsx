@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: TierFeatures, environment: var1
+    var0 = function arg0() {
         _fun78114: for (var _fun78114_ip = 0;;) switch (_fun78114_ip) {
             case 0:
                 var0 = arg0;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5[var0];
                 var10 = var13.bind(var3)(var2);
                 var7 = var10.useAnimatedStyle;
-                var2 = function() { // Original name: o, environment: var4
+                var2 = function() {
                     _fun78115: for (var _fun78115_ip = 0;;) switch (_fun78115_ip) {
                         case 0:
                             var0 = {};
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.ReactionIcon;
     var9.IconComponent = var8;
-    var8 = function() { // Original name: getCopy, environment: var1
+    var8 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var4.bind(var0)(var11);
     var11 = var11.StickerIcon;
     var9.IconComponent = var11;
-    var11 = function() { // Original name: getCopy, environment: var1
+    var11 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.ScreenArrowIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.VoiceNormalIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var4 = 8;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.StageIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.GifIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.ServerGridIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.UploadIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var4 = 8;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.ServerGridIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.ReactionIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var23 = var4.bind(var0)(var23);
     var23 = var23.LinkIcon;
     var9.IconComponent = var23;
-    var23 = function() { // Original name: getCopy, environment: var1
+    var23 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.ReactionIcon;
     var23.IconComponent = var9;
-    var9 = function() { // Original name: getCopy, environment: var1
+    var9 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.StickerIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.ScreenArrowIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.VoiceNormalIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var4 = 8;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.StageIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -828,7 +828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.GifIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.ServerGridIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -878,7 +878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.UploadIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var4 = 8;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.ServerGridIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = var4.bind(var0)(var25);
     var25 = var25.ReactionIcon;
     var23.IconComponent = var25;
-    var25 = function() { // Original name: getCopy, environment: var1
+    var25 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -976,7 +976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var24 = var4.bind(var0)(var24);
     var24 = var24.LinkIcon;
     var23.IconComponent = var24;
-    var24 = function() { // Original name: getCopy, environment: var1
+    var24 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var6);
     var6 = var6.ReactionIcon;
     var9.IconComponent = var6;
-    var6 = function() { // Original name: getCopy, environment: var1
+    var6 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -1038,7 +1038,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var22 = var4.bind(var0)(var22);
     var22 = var22.StickerIcon;
     var9.IconComponent = var22;
-    var22 = function() { // Original name: getCopy, environment: var1
+    var22 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -1070,7 +1070,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var22 = var4.bind(var0)(var22);
     var22 = var22.ScreenArrowIcon;
     var9.IconComponent = var22;
-    var22 = function() { // Original name: getCopy, environment: var1
+    var22 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -1104,7 +1104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = var4.bind(var0)(var21);
     var21 = var21.VoiceNormalIcon;
     var9.IconComponent = var21;
-    var21 = function() { // Original name: getCopy, environment: var1
+    var21 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var4 = 8;
@@ -1151,7 +1151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var20 = var4.bind(var0)(var20);
     var20 = var20.StageIcon;
     var9.IconComponent = var20;
-    var20 = function() { // Original name: getCopy, environment: var1
+    var20 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 8;
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var4.bind(var0)(var19);
     var19 = var19.GifIcon;
     var9.IconComponent = var19;
-    var19 = function() { // Original name: getCopy, environment: var1
+    var19 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -1209,7 +1209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var4.bind(var0)(var19);
     var19 = var19.ServerGridIcon;
     var9.IconComponent = var19;
-    var19 = function() { // Original name: getCopy, environment: var1
+    var19 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -1235,7 +1235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var4.bind(var0)(var18);
     var18 = var18.UploadIcon;
     var9.IconComponent = var18;
-    var18 = function() { // Original name: getCopy, environment: var1
+    var18 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var4 = 8;
@@ -1281,7 +1281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17 = var4.bind(var0)(var17);
     var17 = var17.ServerGridIcon;
     var9.IconComponent = var17;
-    var17 = function() { // Original name: getCopy, environment: var1
+    var17 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -1305,7 +1305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var4.bind(var0)(var15);
     var15 = var15.ReactionIcon;
     var9.IconComponent = var15;
-    var15 = function() { // Original name: getCopy, environment: var1
+    var15 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -1331,7 +1331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var12);
     var12 = var12.LinkIcon;
     var9.IconComponent = var12;
-    var12 = function() { // Original name: getCopy, environment: var1
+    var12 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -2189,8 +2189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTierCards.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildBoostingMarketingTierCards, environment: var1
-        var0 = function() { // Original name: handleCardPress, environment: var4
+    var1 = function arg0() {
+        var0 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 36;
@@ -2365,7 +2365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.isExpanded = var6;
             var5 = _closure2_slot6;
             var1.onCardPress = var5;
-            var0 = function(arg0) { // Original name: ref, environment: var0
+            var0 = function arg0() {
                 _fun78164: for (var _fun78164_ip = 0;;) switch (_fun78164_ip) {
                     case 0:
                         var0 = _closure3_slot0;

@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/controller/usePanelOpenState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: usePanelOpenState, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var6 = arg0;
         var9 = arg1;
         var8 = arg2;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var9;
         var _closure2_slot2 = var8;
         var _closure2_slot3 = var3;
-        var12 = function() { // Original name: doCloseChannel, environment: var1
+        var12 = function() {
             var1 = _closure1_slot5;
             var0 = var1.getState;
             var2 = var0.bind(var1)();
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         var10 = var14.bind(var0)(var4);
         var7 = var10.useAnimatedReaction;
-        var5 = function() { // Original name: v, environment: var1
+        var5 = function() {
             var0 = {};
             var2 = _closure2_slot3;
             var1 = var2.get;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.__workletHash = var4;
         var4 = _closure1_slot9;
         var5.__initData = var4;
-        var4 = function(arg0, arg1) { // Original name: O, environment: var1
+        var4 = function arg0, arg1() {
             _fun110797: for (var _fun110797_ip = 0;;) switch (_fun110797_ip) {
                 case 0:
                     var1 = arg1;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5[2] = var8;
         var5[3] = var3;
         var3 = function() { // Environment: var1
-            var10 = function(arg0) { // Original name: componentActionOpen, environment: var0
+            var10 = function arg0() {
                 _fun110799: for (var _fun110799_ip = 0;;) switch (_fun110799_ip) {
                     case 0:
                         var2 = _closure2_slot0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure3_slot0 = var10;
-            var4 = function() { // Original name: componentActionClose, environment: var0
+            var4 = function() {
                 _fun110800: for (var _fun110800_ip = 0;;) switch (_fun110800_ip) {
                     case 0:
                         var2 = _closure2_slot3;

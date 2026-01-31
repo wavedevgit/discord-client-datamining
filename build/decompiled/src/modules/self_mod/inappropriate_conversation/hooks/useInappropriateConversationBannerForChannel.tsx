@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useInappropriateConversationBannerForChannel, environment: var1
+    var1 = function arg0, arg1() {
         _fun72863: for (var _fun72863_ip = 0;;) switch (_fun72863_ip) {
             case 0:
                 var7 = arg0;

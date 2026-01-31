@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherAutocompleteOption, environment: var1
+    var1 = function arg0() {
         _fun108125: for (var _fun108125_ip = 0;;) switch (_fun108125_ip) {
             case 0:
                 var1 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot9 = var1;
                 var1 = _closure1_slot6;
                 var7 = var1.bind(var3)();
-                var5 = function() { // Original name: onPress, environment: var0
+                var5 = function() {
                     _fun108127: for (var _fun108127_ip = 0;;) switch (_fun108127_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.option = var6;
                             var6 = _closure2_slot8;
                             var2.initChoice = var6;
-                            var6 = function(arg0) { // Original name: onChoiceSelect, environment: var6
+                            var6 = function arg0() {
                                 var2 = arg0;
                                 var3 = _closure2_slot9;
                                 var0 = undefined;

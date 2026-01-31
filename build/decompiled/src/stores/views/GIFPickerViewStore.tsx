@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun73061: for (var _fun73061_ip = 0;;) switch (_fun73061_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: getFormatFromUrl, environment: var3
+    var0 = function arg0() {
         _fun73064: for (var _fun73064_ip = 0;;) switch (_fun73064_ip) {
             case 0:
                 var1 = arg0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GIFPickerViewStore, environment: var5
+        var3 = function() {
             _fun73066: for (var _fun73066_ip = 0;;) switch (_fun73066_ip) {
                 case 0:
                     var3 = this;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getAnalyticsID';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getQuery';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getResultQuery';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getResultItems';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTrendingCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSelectedFormat';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = 'tinywebp';
             return var0;
         };
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSuggestions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTrendingSearchTerms';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleInitialize, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.analyticsID;
         _closure1_slot9 = var1;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GIF_PICKER_INITIALIZE = var8;
-    var8 = function(arg0) { // Original name: handleQuery, environment: var3
+    var8 = function arg0() {
         _fun73076: for (var _fun73076_ip = 0;;) switch (_fun73076_ip) {
             case 0:
                 var0 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIF_PICKER_QUERY = var8;
-    var8 = function(arg0) { // Original name: handleQuerySuccess, environment: var3
+    var8 = function arg0() {
         _fun73077: for (var _fun73077_ip = 0;;) switch (_fun73077_ip) {
             case 0:
                 var0 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIF_PICKER_QUERY_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleQueryFailure, environment: var3
+    var8 = function arg0() {
         _fun73079: for (var _fun73079_ip = 0;;) switch (_fun73079_ip) {
             case 0:
                 var0 = arg0;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIF_PICKER_QUERY_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleTrendingFetchSuccess, environment: var3
+    var8 = function arg0() {
         _fun73080: for (var _fun73080_ip = 0;;) switch (_fun73080_ip) {
             case 0:
                 var0 = arg0;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIF_PICKER_TRENDING_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleSuggestionsSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.items;
         _closure1_slot14 = var1;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GIF_PICKER_SUGGESTIONS_SUCCESS = var8;
-    var3 = function(arg0) { // Original name: handleTrendingSearchSuccess, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.items;
         _closure1_slot15 = var1;

@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/action_sheet/SelectConnectionActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelectConnectionActionSheet, environment: var1
+    var1 = function arg0() {
         _fun116102: for (var _fun116102_ip = 0;;) switch (_fun116102_ip) {
             case 0:
                 var0 = arg0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.children = var15;
                             var5 = var8.bind(var3)(var14, var5);
                             var12.label = var5;
-                            var4 = function() { // Original name: onPress, environment: var4
+                            var4 = function() {
                                 var2 = _closure2_slot0;
                                 var0 = _closure3_slot0;
                                 var1 = var0.type;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var16.bind(var1)(var15, var14);
                         case 283:
                             var8.subLabel = var6;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot3;
                                 var0 = _closure3_slot0;
                                 var1 = var0.id;

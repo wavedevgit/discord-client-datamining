@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: makeLogKey, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         var0 = global;
         var0 = var0.HermesInternal;
         var7 = var0.concat;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: MessageCacheStats, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'recordChannelFetchStart';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: value, environment: var4
+        var1 = function arg0, arg1, arg2, arg3, arg4() {
             _fun40209: for (var _fun40209_ip = 0;;) switch (_fun40209_ip) {
                 case 0:
                     var8 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'recordChannelFetchedLocal';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun40210: for (var _fun40210_ip = 0;;) switch (_fun40210_ip) {
                 case 0:
                     var10 = arg0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'recordChannelFetchedNetwork';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: value, environment: var4
+        var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun40211: for (var _fun40211_ip = 0;;) switch (_fun40211_ip) {
                 case 0:
                     var10 = arg0;

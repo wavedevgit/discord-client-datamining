@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: Loading, environment: var1
+    var0 = function() {
         _fun110415: for (var _fun110415_ip = 0;;) switch (_fun110415_ip) {
             case 0:
                 var0 = _closure1_slot17;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/panel/native/ActivityInviteSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityInviteSheet, environment: var1
+    var1 = function arg0() {
         _fun110416: for (var _fun110416_ip = 0;;) switch (_fun110416_ip) {
             case 0:
                 var0 = arg0;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = undefined;
                             var10 = undefined;
                             var9 = undefined;
-                            var3 = function() { // Original name: markInviteSent, environment: var2
+                            var3 = function() {
                                 _fun110421: for (var _fun110421_ip = 0;;) switch (_fun110421_ip) {
                                     case 0:
                                         var2 = _closure3_slot1;
@@ -772,17 +772,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.bind(var3)(var14);
                 var14 = {};
                 var14.link = var18;
-                var18 = function() { // Original name: onCopy, environment: var17
+                var18 = function() {
                     var0 = undefined;
                     return var0;
                 };
                 var14.onCopy = var18;
-                var18 = function() { // Original name: onShare, environment: var17
+                var18 = function() {
                     var0 = undefined;
                     return var0;
                 };
                 var14.onShare = var18;
-                var17 = function() { // Original name: onPressSettings, environment: var17
+                var17 = function() {
                     var0 = undefined;
                     return var0;
                 };

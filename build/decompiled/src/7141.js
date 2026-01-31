@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var4 = function(arg0, arg1, arg2) { // Original name: addNonEnumerableProperty, environment: var0
+    var4 = function arg0, arg1, arg2() {
         _fun58614: for (var _fun58614_ip = 0;;) switch (_fun58614_ip) {
             case 0:
                 var0 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var4;
-    var2 = function(arg0, arg1) { // Original name: markFunctionWrapped, environment: var0
+    var2 = function arg0, arg1() {
         _fun58615: for (var _fun58615_ip = 0;;) switch (_fun58615_ip) {
             case 0:
                 var2 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var3 = function(arg0) { // Original name: convertToPlainObject, environment: var0
+    var3 = function arg0() {
         _fun58616: for (var _fun58616_ip = 0;;) switch (_fun58616_ip) {
             case 0:
                 var5 = arg0;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var5 = function(arg0) { // Original name: serializeEventTarget, environment: var0
+    var5 = function arg0() {
         _fun58617: for (var _fun58617_ip = 0;;) switch (_fun58617_ip) {
             case 0:
                 var1 = arg0;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var5;
-    var5 = function(arg0) { // Original name: getOwnProperties, environment: var0
+    var5 = function arg0() {
         _fun58618: for (var _fun58618_ip = 0;;) switch (_fun58618_ip) {
             case 0:
                 var7 = arg0;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var5;
-    var5 = function(arg0, arg1) { // Original name: _dropUndefinedKeys, environment: var0
+    var5 = function arg0, arg1() {
         _fun58619: for (var _fun58619_ip = 0;;) switch (_fun58619_ip) {
             case 0:
                 var11 = arg0;
@@ -448,7 +448,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var7.bind(var8)(var1, var5, var6);
     var1.addNonEnumerableProperty = var4;
     var1.convertToPlainObject = var3;
-    var3 = function(arg0) { // Original name: dropUndefinedKeys, environment: var0
+    var3 = function arg0() {
         var3 = _closure1_slot7;
         var0 = global;
         var0 = var0.Map;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.dropUndefinedKeys = var3;
-    var3 = function(arg0) { // Original name: extractExceptionKeysForMessage, environment: var0
+    var3 = function arg0() {
         _fun58622: for (var _fun58622_ip = 0;;) switch (_fun58622_ip) {
             case 0:
                 var4 = undefined;
@@ -571,7 +571,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.extractExceptionKeysForMessage = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: fill, environment: var0
+    var3 = function arg0, arg1, arg2() {
         _fun58623: for (var _fun58623_ip = 0;;) switch (_fun58623_ip) {
             case 0:
                 var2 = arg0;
@@ -603,14 +603,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.fill = var3;
-    var3 = function(arg0) { // Original name: getOriginalFunction, environment: var0
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.__sentry_original__;
         return var0;
     };
     var1.getOriginalFunction = var3;
     var1.markFunctionWrapped = var2;
-    var2 = function(arg0) { // Original name: objectify, environment: var0
+    var2 = function arg0() {
         _fun58625: for (var _fun58625_ip = 0;;) switch (_fun58625_ip) {
             case 0:
                 var3 = arg0;
@@ -690,7 +690,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.objectify = var2;
-    var0 = function(arg0) { // Original name: urlEncode, environment: var0
+    var0 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var1 = global;

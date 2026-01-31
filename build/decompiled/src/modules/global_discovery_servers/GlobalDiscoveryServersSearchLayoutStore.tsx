@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun95436: for (var _fun95436_ip = 0;;) switch (_fun95436_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var7 = function() { // Original name: reset, environment: var3
+    var7 = function() {
         var0 = new Array(0);
         _closure1_slot7 = var0;
         var0 = undefined;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GlobalDiscoveryServersSearchLayoutStore, environment: var5
+        var3 = function() {
             _fun95441: for (var _fun95441_ip = 0;;) switch (_fun95441_ip) {
                 case 0:
                     var3 = this;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot5;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getVisibleTabs';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var1.CONNECTION_OPEN = var7;
     var1.GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET = var7;
-    var3 = function(arg0) { // Original name: handleGlobalDiscoveryServersSearchCountSuccess, environment: var3
+    var3 = function arg0() {
         _fun95444: for (var _fun95444_ip = 0;;) switch (_fun95444_ip) {
             case 0:
                 var0 = arg0;

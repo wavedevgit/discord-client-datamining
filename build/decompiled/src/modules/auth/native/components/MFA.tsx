@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: handleFinish, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var3 = var0.mfaType;
         var5 = var0.data;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: statesAreEqual, environment: var1
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/MFA.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ConnectedMFA, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 5;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.mfaChallenge = var6;
         var5 = _closure1_slot5;
         var0.finish = var5;
-        var4 = function() { // Original name: handleOnClose, environment: var4
+        var4 = function() {
             var1 = _closure2_slot0;
             var0 = var1.goBack;
             var0 = var0.bind(var1)();

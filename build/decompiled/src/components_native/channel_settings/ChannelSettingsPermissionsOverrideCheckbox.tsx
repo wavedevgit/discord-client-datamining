@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[2] = var7;
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelSettingsPermissionsOverrideCheckbox, environment: var1
+    var1 = function arg0() {
         _fun109165: for (var _fun109165_ip = 0;;) switch (_fun109165_ip) {
             case 0:
                 var0 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7 === var10;
                             var5.selected = var7;
                             var2.accessibilityState = var5;
-                            var5 = function(arg0) { // Original name: style, environment: var0
+                            var5 = function arg0() {
                                 _fun109167: for (var _fun109167_ip = 0;;) switch (_fun109167_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var2.style = var5;
-                            var0 = function() { // Original name: onPress, environment: var0
+                            var0 = function() {
                                 _fun109168: for (var _fun109168_ip = 0;;) switch (_fun109168_ip) {
                                     case 0:
                                         var2 = _closure2_slot1;

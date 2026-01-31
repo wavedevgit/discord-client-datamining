@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: getThemeNameForAnalytics, environment: var1
+    var0 = function arg0() {
         _fun83758: for (var _fun83758_ip = 0;;) switch (_fun83758_ip) {
             case 0:
                 var2 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7.bind(var0)(var4);
     var4 = var4.AnalyticsPremiumFeatureNames;
     var _closure1_slot5 = var4;
-    var5 = function(arg0) { // Original name: trackClientThemeUpdated, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var7 = var0.isPersisted;
         var6 = var0.isSynced;

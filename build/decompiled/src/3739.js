@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.exp = var3;
     var _closure1_slot0 = var2;
     var1.WebEasings = var2;
-    var2 = function(arg0) { // Original name: getEasingByName, environment: var0
+    var2 = function arg0() {
         var1 = _closure1_slot0;
         var0 = arg0;
         var1 = var1[var0];
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getEasingByName = var2;
-    var0 = function(arg0) { // Original name: maybeGetBezierEasing, environment: var0
+    var0 = function arg0() {
         _fun33647: for (var _fun33647_ip = 0;;) switch (_fun33647_ip) {
             case 0:
                 var1 = arg0;

@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var5.bind(var6)(var2, var1, var4);
     var1 = {};
-    var4 = function(arg0) { // Original name: createProgress, environment: var0
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.createProgress = var4;
-    var4 = function(arg0) { // Original name: markCompletedProgressSeen, environment: var0
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.markCompletedProgressSeen = var4;
-    var0 = function(arg0) { // Original name: dismissProgress, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

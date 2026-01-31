@@ -5,7 +5,7 @@ var7 = require;
         var5 = metroImportDefault;
         var2 = exports;
         var8 = dependencyMap;
-        var3 = function(arg0, arg1) { // Original name: calculateTargetDimensions, environment: var1
+        var3 = function arg0, arg1() {
             _fun37535: for(var _fun37535_ip = 0; ; ) switch(_fun37535_ip) {
 case 0:
                 var0 = arg0;
@@ -98,7 +98,7 @@ case 180:
         var _closure1_slot4 = var4;
         var4 = function() { // Environment: var1
             var3 = _closure1_slot2;
-            var2 = function(arg0, arg1, arg2) { // Original name: VideoQualityTarget, environment: var1
+            var2 = function arg0, arg1, arg2() {
                 var2 = this;
                 var3 = _closure1_slot1;
                 var1 = _closure2_slot0;
@@ -116,7 +116,7 @@ case 180:
             var0 = {};
             var4 = 'toString';
             var0.key = var4;
-            var1 = function() { // Original name: value, environment: var1
+            var1 = function () {
                 var0 = this;
                 var0 = var0.value;
                 return var0;
@@ -275,7 +275,7 @@ case 213:
         var2.VideoQualityTarget = var5;
         var2.DEFAULT_VIDEO_ENCODING_CONFIG = var4;
         var2.calculateTargetDimensions = var3;
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: canSkipVideoTranscode, environment: var1
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun37540: for(var _fun37540_ip = 0; ; ) switch(_fun37540_ip) {
 case 0:
                 var0 = arg0;
@@ -338,7 +338,7 @@ case 194:
             }
         };
         var2.canSkipVideoTranscode = var3;
-        var3 = function(arg0) { // Original name: logSourceMetadata, environment: var1
+        var3 = function arg0() {
             _fun37541: for(var _fun37541_ip = 0; ; ) switch(_fun37541_ip) {
 case 0:
                 var3 = arg0;
@@ -438,7 +438,7 @@ case 283:
             }
         };
         var2.logSourceMetadata = var3;
-        var3 = function(arg0) { // Original name: logEncoderSettings, environment: var1
+        var3 = function arg0() {
             _fun37542: for(var _fun37542_ip = 0; ; ) switch(_fun37542_ip) {
 case 0:
                 var6 = arg0;
@@ -589,7 +589,7 @@ case 664:
             }
         };
         var2.logEncoderSettings = var3;
-        var3 = function(arg0, arg1, arg2) { // Original name: calculateOptimalBitrate, environment: var1
+        var3 = function arg0, arg1, arg2() {
             var0 = arg0;
             var4 = var0.bitRate;
             var0 = global;
@@ -605,7 +605,7 @@ case 664:
             return var0;
         };
         var2.calculateOptimalBitrate = var3;
-        var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: shouldUseHEVC, environment: var1
+        var1 = function arg0, arg1, arg2, arg3, arg4() {
             _fun37544: for(var _fun37544_ip = 0; ; ) switch(_fun37544_ip) {
 case 0:
                 var1 = arg3;

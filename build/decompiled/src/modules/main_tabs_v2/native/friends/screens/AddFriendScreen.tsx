@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/screens/AddFriendScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddFriendScreen, environment: var1
+    var1 = function arg0() {
         _fun108533: for (var _fun108533_ip = 0;;) switch (_fun108533_ip) {
             case 0:
                 var0 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var2 = var3.setOptions;
                     var0 = {};
-                    var4 = function(arg0) { // Original name: headerRight, environment: var1
+                    var4 = function arg0() {
                         var6 = _closure1_slot0;
                         var7 = _closure1_slot2;
                         var0 = 17;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var8.bind(var3)(var1);
                     var2 = var1.FormCTA;
                     var1 = {};
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         _fun108540: for (var _fun108540_ip = 0;;) switch (_fun108540_ip) {
                             case 0:
                                 var0 = _closure3_slot0;

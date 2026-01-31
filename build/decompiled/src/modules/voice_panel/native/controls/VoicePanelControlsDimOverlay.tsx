@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelControlsDimOverlay, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.wrapperSpecs;
         var _closure2_slot0 = var12;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7[var4];
         var8 = var1.bind(var3)(var5);
         var6 = var8.useDerivedValue;
-        var5 = function() { // Original name: A, environment: var2
+        var5 = function() {
             _fun111629: for (var _fun111629_ip = 0;;) switch (_fun111629_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7[var4];
         var8 = var1.bind(var3)(var5);
         var6 = var8.useDerivedValue;
-        var5 = function() { // Original name: y, environment: var2
+        var5 = function() {
             var1 = _closure2_slot6;
             var0 = var1.get;
             var1 = var0.bind(var1)();
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7[var4];
         var8 = var1.bind(var3)(var5);
         var6 = var8.useAnimatedStyle;
-        var5 = function() { // Original name: S, environment: var2
+        var5 = function() {
             _fun111631: for (var _fun111631_ip = 0;;) switch (_fun111631_ip) {
                 case 0:
                     var0 = {};
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var7[var4];
         var8 = var1.bind(var3)(var4);
         var6 = var8.useAnimatedProps;
-        var4 = function() { // Original name: v, environment: var2
+        var4 = function() {
             _fun111632: for (var _fun111632_ip = 0;;) switch (_fun111632_ip) {
                 case 0:
                     var0 = {};

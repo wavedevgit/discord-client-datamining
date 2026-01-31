@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/IconUploader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: IconUploader, environment: var1
+    var1 = function arg0() {
         _fun72729: for (var _fun72729_ip = 0;;) switch (_fun72729_ip) {
             case 0:
                 var5 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun72729
                 }
             case 28:
-                var7 = function() { // Original name: o, environment: var2
+                var7 = function() {
                     var0 = undefined;
                     return var0;
                 };

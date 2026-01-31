@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EmptyStateCard, environment: var1
+    var0 = function arg0() {
         _fun82239: for (var _fun82239_ip = 0;;) switch (_fun82239_ip) {
             case 0:
                 var1 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: OtherConnectionsCard, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.count;
         var0 = _closure1_slot8;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/connections/ConnectionsEmptyStateUpsell.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ConnectionsEmptyStateUpsell, environment: var1
+    var1 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var15 = var0.bind(var3)();

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: onClose, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -20,17 +20,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: renderHeaderTitle, environment: var1
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         _fun112540: for (var _fun112540_ip = 0;;) switch (_fun112540_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
-                var0 = function(arg0) { // Original name: generateOnBack, environment: var3
+                var0 = function arg0() {
                     _fun112541: for (var _fun112541_ip = 0;;) switch (_fun112541_ip) {
                         case 0:
                             var2 = arg0;
@@ -270,9 +270,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.headerLeft = var9;
                 var9 = _closure1_slot11;
                 var2.headerTitle = var9;
-                var13 = function(arg0, arg1) { // Original name: render, environment: var3
+                var13 = function arg0, arg1() {
                     var4 = _closure2_slot0;
-                    var1 = function(arg0, arg1) { // Original name: generateOnSuccess, environment: var0
+                    var1 = function arg0, arg1() {
                         _fun112549: for (var _fun112549_ip = 0;;) switch (_fun112549_ip) {
                             case 0:
                                 var0 = arg1;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var2.fullscreen = var12;
                 var2.headerTitle = var9;
-                var13 = function(arg0) { // Original name: render, environment: var3
+                var13 = function arg0() {
                     var3 = _closure1_slot9;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.USER_AGE_GATE_VERIFY;
                 var2.impressionName = var11;
                 var2.headerTitle = var9;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot9;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var11.existing_user = var12;
                 var2.impressionProperties = var11;
-                var11 = function(arg0) { // Original name: render, environment: var3
+                var11 = function arg0() {
                     var3 = _closure1_slot9;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.getHeaderBackButton;
                 var4 = var4.bind(var5)(var6);
                 var1.headerLeft = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot9;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_gate/native/components/ExistingUserAgeGateModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExistingUserAgeGateModal, environment: var1
+    var1 = function arg0() {
         _fun112556: for (var _fun112556_ip = 0;;) switch (_fun112556_ip) {
             case 0:
                 var0 = arg0;

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/message_embed/native/utils/nativeAppMessageEmbedUtil.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getAppGradientColors, environment: var1
+    var3 = function arg0() {
         _fun88758: for (var _fun88758_ip = 0;;) switch (_fun88758_ip) {
             case 0:
                 var4 = arg0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAppGradientColors = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: getAppIconSrc, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun88759: for (var _fun88759_ip = 0;;) switch (_fun88759_ip) {
             case 0:
                 var2 = _closure1_slot1;

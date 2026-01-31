@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117436: for (var _fun117436_ip = 0;;) switch (_fun117436_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: handleMessageSendFailure, environment: var1
+    var0 = function arg0() {
         _fun117439: for (var _fun117439_ip = 0;;) switch (_fun117439_ip) {
             case 0:
                 var0 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.key = var3;
                 var3 = 5000;
                 var0.duration = var3;
-                var3 = function() { // Original name: onDismiss, environment: var3
+                var3 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 11;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: handleMessageCreate, environment: var1
+    var0 = function arg0() {
         _fun117441: for (var _fun117441_ip = 0;;) switch (_fun117441_ip) {
             case 0:
                 var1 = arg0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: MessageSendFailureNotificationManager, environment: var0
+        var2 = function arg0() {
             _fun117444: for (var _fun117444_ip = 0;;) switch (_fun117444_ip) {
                 case 0:
                     var4 = this;

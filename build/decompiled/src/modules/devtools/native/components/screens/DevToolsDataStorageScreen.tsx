@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: DevToolsPersistedStoresActionSheet, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.store;
         var _closure2_slot0 = var12;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'label': 'Clear persisted store',
             'subLabel': 'App restart required to re-init the cleared store'
         };
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure2_slot0;
             var0 = var2.clear;
             var0 = var0.bind(var2)();
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'label': 'Disable Database',
             'start': true
         };
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             _fun85876: for (var _fun85876_ip = 0;;) switch (_fun85876_ip) {
                 case 0:
                     var3 = _closure1_slot1;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'Disable + Remove Database';
         var0.label = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
             var0 = 12;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'label': 'View Cache Stats',
             'end': true
         };
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure2_slot0;
             var1 = var2.navigate;
             var0 = 'cacheStats';
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsDataStorageScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsDataStorageScreen, environment: var1
+    var1 = function() {
         var2 = _closure1_slot9;
         var3 = undefined;
         var5 = var2.bind(var3)();
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.length;
                     var6 = var2 === var6;
                     var1.end = var6;
-                    var6 = function() { // Original name: onPress, environment: var9
+                    var6 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 19;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var7 - var1;
                         var1 = var6[var1];
                         var2.store = var1;
-                        var1 = function() { // Original name: close, environment: var1
+                        var1 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 19;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = {};
                     var10 = 'md';
                     var6.size = var10;
-                    var9 = function(arg0) { // Original name: onChange, environment: var9
+                    var9 = function arg0() {
                         var2 = _closure2_slot3;
                         var3 = _closure2_slot1;
                         var1 = undefined;

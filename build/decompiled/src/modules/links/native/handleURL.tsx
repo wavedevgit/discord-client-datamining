@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun26973: for (var _fun26973_ip = 0;;) switch (_fun26973_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun26975: for (var _fun26975_ip = 0;;) switch (_fun26975_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: sanitizeURLPart, environment: var1
+    var0 = function arg0() {
         _fun26976: for (var _fun26976_ip = 0;;) switch (_fun26976_ip) {
             case 0:
                 var4 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _handleURL, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun26980
                         }
                     case 81:
-                        var3 = function() { // Original name: openInBrowser, environment: var6
+                        var3 = function() {
                             _fun26981: for (var _fun26981_ip = 0;;) switch (_fun26981_ip) {
                                 case 0:
                                     var4 = _closure1_slot1;
@@ -674,7 +674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 363:
                         var5 = var7;
-                        var4 = function(arg0) { // Original name: tryHandleUniversalLink, environment: var6
+                        var4 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 389:
                         var8 = var7;
-                        var5 = function(arg0) { // Original name: tryHandleCustomScheme, environment: var6
+                        var5 = function arg0() {
                             _fun26988: for (var _fun26988_ip = 0;;) switch (_fun26988_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -933,12 +933,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun26980
                         }
                     case 415:
-                        var6 = function(arg0) { // Original name: tryHandleWhitelistedURL, environment: var6
+                        var6 = function arg0() {
                             _fun26993: for (var _fun26993_ip = 0;;) switch (_fun26993_ip) {
                                 case 0:
                                     var1 = arg0;
                                     var _closure5_slot0 = var1;
-                                    var7 = function(arg0) { // Original name: _loop, environment: var0
+                                    var7 = function arg0() {
                                         _fun26994: for (var _fun26994_ip = 0;;) switch (_fun26994_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -1208,7 +1208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/links/native/handleURL.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: handleURL, environment: var1
+    var1 = function arg0, arg1() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;

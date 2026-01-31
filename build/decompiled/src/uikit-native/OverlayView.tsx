@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = 'uikit-native/OverlayView.tsx';
             var5 = var6.bind(var7)(var5);
             var2.default = var4;
-            var3 = function(arg0) { // Original name: TransitionGroupOverlayView, environment: var3
+            var3 = function arg0() {
                 _fun37189: for (var _fun37189_ip = 0;;) switch (_fun37189_ip) {
                     case 0:
                         var2 = arg0;

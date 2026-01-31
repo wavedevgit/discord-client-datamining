@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: batchEmitChanges, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: Emitter, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'destroy';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var2 = var0.changedStores;
             var1 = var2.clear;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var0.reactChangedStores;
             var0 = var1.clear;
             var0 = var0.bind(var1)();
-            var0 = function(arg0) { // Original name: batchEmitChanges, environment: var0
+            var0 = function arg0() {
                 var1 = arg0;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'injectBatchEmitChanges';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = arg0;
             _closure1_slot5 = var0;
             var0 = undefined;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'pause';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun6901: for (var _fun6901_ip = 0;;) switch (_fun6901_ip) {
                 case 0:
                     var4 = arguments[0];
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resume';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun6903: for (var _fun6903_ip = 0;;) switch (_fun6903_ip) {
                 case 0:
                     var3 = arguments[0];
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'batched';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun6905: for (var _fun6905_ip = 0;;) switch (_fun6905_ip) {
                 case 0:
                     var3 = this;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emit';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun6906: for (var _fun6906_ip = 0;;) switch (_fun6906_ip) {
                 case 0:
                     var2 = this;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChangeSentinel';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.changeSentinel;
             return var0;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getIsPaused';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.isPaused;
             return var0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'markChanged';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun6910: for (var _fun6910_ip = 0;;) switch (_fun6910_ip) {
                 case 0:
                     var3 = arg0;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emitNonReactOnce';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun6911: for (var _fun6911_ip = 0;;) switch (_fun6911_ip) {
                 case 0:
                     var4 = this;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emitReactOnce';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun6915: for (var _fun6915_ip = 0;;) switch (_fun6915_ip) {
                 case 0:
                     var4 = this;

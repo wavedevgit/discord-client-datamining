@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingOverview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildBoostingMarketingOverview, environment: var1
+    var1 = function arg0() {
         _fun77958: for (var _fun77958_ip = 0;;) switch (_fun77958_ip) {
             case 0:
                 var0 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var7 = var7.wrapper;
                 var5.contentContainerStyle = var7;
-                var7 = function(arg0) { // Original name: onScroll, environment: var17
+                var7 = function arg0() {
                     _fun77967: for (var _fun77967_ip = 0;;) switch (_fun77967_ip) {
                         case 0:
                             var0 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = {};
                 var15.guild = var13;
                 var15.previousGuildSubscriptionSlot = var12;
-                var17 = function(arg0) { // Original name: onLayout, environment: var17
+                var17 = function arg0() {
                     var0 = arg0;
                     var2 = _closure2_slot7;
                     var1 = var0.nativeEvent;

@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: VoiceControlsToggleActionSheet, environment: var1
+    var1 = function arg0() {
         _fun110893: for (var _fun110893_ip = 0;;) switch (_fun110893_ip) {
             case 0:
                 var0 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var13 = true;
                 var0.startExpanded = var13;
-                var4 = function() { // Original name: onDismiss, environment: var12
+                var4 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot7;
                     var1 = var0.UNKNOWN;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var8 = var16.contentContainer;
                 var6.style = var8;
-                var8 = function(arg0) { // Original name: onLayout, environment: var12
+                var8 = function arg0() {
                     _fun110896: for (var _fun110896_ip = 0;;) switch (_fun110896_ip) {
                         case 0:
                             var0 = arg0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var15[var9];
                 var10 = var10.bind(var3)(var9);
                 var9 = {};
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot7;
                     var1 = var0.UNKNOWN;

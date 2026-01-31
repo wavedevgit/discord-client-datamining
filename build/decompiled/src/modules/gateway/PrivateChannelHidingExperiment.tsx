@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.PRIVATE_CHANNEL_OBFUSCATION_KEY;
     var2.PRIVATE_CHANNEL_OBFUSCATION_KEY = var3;
-    var3 = function(arg0) { // Original name: isChannelMetadataObfuscationEnabled, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.getCurrentConfig;
         var0 = {};
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isChannelMetadataObfuscationEnabled = var3;
-    var3 = function(arg0) { // Original name: useIsChannelMetadataObfuscationEnabled, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.useExperiment;
         var0 = {};
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsChannelMetadataObfuscationEnabled = var3;
-    var1 = function(arg0) { // Original name: isChannelMetadataIntegrityCheckEnabled, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.getCurrentConfig;
         var0 = {};

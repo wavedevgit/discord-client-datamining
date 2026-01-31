@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40335: for (var _fun40335_ip = 0;;) switch (_fun40335_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40337: for (var _fun40337_ip = 0;;) switch (_fun40337_ip) {
             case 0:
                 var3 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: GuildMemberSafetyPageStore, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getSearchIndex';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun40340: for (var _fun40340_ip = 0;;) switch (_fun40340_ip) {
                 case 0:
                     var0 = this;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'initialize';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40341: for (var _fun40341_ip = 0;;) switch (_fun40341_ip) {
                 case 0:
                     var1 = this;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isInitialized';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._initialized;
             return var0;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'reset';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40343: for (var _fun40343_ip = 0;;) switch (_fun40343_ip) {
                 case 0:
                     var1 = arguments[0];
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'searchChunkSize';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun40344: for (var _fun40344_ip = 0;;) switch (_fun40344_ip) {
                 case 0:
                     var1 = this;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMember';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40345: for (var _fun40345_ip = 0;;) switch (_fun40345_ip) {
                 case 0:
                     var1 = this;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMembersByIndex';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40346: for (var _fun40346_ip = 0;;) switch (_fun40346_ip) {
                 case 0:
                     var2 = this;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'countMembersByIndex';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40347: for (var _fun40347_ip = 0;;) switch (_fun40347_ip) {
                 case 0:
                     var1 = this;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_checkUpdatesForPaginationUpdate';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40348: for (var _fun40348_ip = 0;;) switch (_fun40348_ip) {
                 case 0:
                     var2 = arg0;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_getIsIncludedInSearch';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40349: for (var _fun40349_ip = 0;;) switch (_fun40349_ip) {
                 case 0:
                     var1 = arg0;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updatePaginationChunks';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40350: for (var _fun40350_ip = 0;;) switch (_fun40350_ip) {
                 case 0:
                     var0 = this;
@@ -814,7 +814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeMember';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40351: for (var _fun40351_ip = 0;;) switch (_fun40351_ip) {
                 case 0:
                     var3 = arg0;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_rawUpdateMember';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40352: for (var _fun40352_ip = 0;;) switch (_fun40352_ip) {
                 case 0:
                     var9 = arg0;
@@ -976,7 +976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isMemberInIndex';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40353: for (var _fun40353_ip = 0;;) switch (_fun40353_ip) {
                 case 0:
                     var1 = this;
@@ -1011,7 +1011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isMemberIncludedInSearchResults';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40354: for (var _fun40354_ip = 0;;) switch (_fun40354_ip) {
                 case 0:
                     var2 = arg0;
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateMember';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40355: for (var _fun40355_ip = 0;;) switch (_fun40355_ip) {
                 case 0:
                     var2 = this;
@@ -1150,7 +1150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateClientMembers';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40356: for (var _fun40356_ip = 0;;) switch (_fun40356_ip) {
                 case 0:
                     var22 = arguments[1];
@@ -1313,7 +1313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateServerMembers';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40357: for (var _fun40357_ip = 0;;) switch (_fun40357_ip) {
                 case 0:
                     var2 = this;
@@ -1421,7 +1421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateMembersByMemberIds';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40358: for (var _fun40358_ip = 0;;) switch (_fun40358_ip) {
                 case 0:
                     var4 = arg0;
@@ -1478,7 +1478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateMembersSort';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var _closure3_slot0 = var1;
             var1 = arg0;
@@ -1593,7 +1593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'sortMembersBySelectedSort';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40363: for (var _fun40363_ip = 0;;) switch (_fun40363_ip) {
                 case 0:
                     var3 = arg0;
@@ -1655,7 +1655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSearchedMembersByMemberIds';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40365: for (var _fun40365_ip = 0;;) switch (_fun40365_ip) {
                 case 0:
                     var3 = arg0;
@@ -1723,7 +1723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'rebuildAllMembers';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40367: for (var _fun40367_ip = 0;;) switch (_fun40367_ip) {
                 case 0:
                     var2 = this;
@@ -1757,7 +1757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_scheduleRefresh';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40368: for (var _fun40368_ip = 0;;) switch (_fun40368_ip) {
                 case 0:
                     var2 = this;
@@ -1803,7 +1803,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'refreshNewMembersAndSearchResults';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40370: for (var _fun40370_ip = 0;;) switch (_fun40370_ip) {
                 case 0:
                     var2 = this;
@@ -1942,7 +1942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getNewMemberTimestamp';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40371: for (var _fun40371_ip = 0;;) switch (_fun40371_ip) {
                 case 0:
                     var1 = this;
@@ -1973,7 +1973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSearchState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40372: for (var _fun40372_ip = 0;;) switch (_fun40372_ip) {
                 case 0:
                     var3 = arg0;
@@ -2144,7 +2144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSearchState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40373: for (var _fun40373_ip = 0;;) switch (_fun40373_ip) {
                 case 0:
                     var1 = this;
@@ -2184,7 +2184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasDefaultSearchState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40374: for (var _fun40374_ip = 0;;) switch (_fun40374_ip) {
                 case 0:
                     var1 = this;
@@ -2215,7 +2215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'resetSearchState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40375: for (var _fun40375_ip = 0;;) switch (_fun40375_ip) {
                 case 0:
                     var3 = this;
@@ -2259,7 +2259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getTotalResultsCount';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40376: for (var _fun40376_ip = 0;;) switch (_fun40376_ip) {
                 case 0:
                     var2 = this;
@@ -2319,7 +2319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updatePaginationState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40377: for (var _fun40377_ip = 0;;) switch (_fun40377_ip) {
                 case 0:
                     var3 = arg0;
@@ -2397,7 +2397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearPaginationState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40378: for (var _fun40378_ip = 0;;) switch (_fun40378_ip) {
                 case 0:
                     var0 = this;
@@ -2420,7 +2420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPaginationState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40379: for (var _fun40379_ip = 0;;) switch (_fun40379_ip) {
                 case 0:
                     var1 = this;
@@ -2460,7 +2460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPaginatedMembers';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40380: for (var _fun40380_ip = 0;;) switch (_fun40380_ip) {
                 case 0:
                     var2 = this;
@@ -2502,7 +2502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updatePaginationToken';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40381: for (var _fun40381_ip = 0;;) switch (_fun40381_ip) {
                 case 0:
                     var1 = this;
@@ -2536,7 +2536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getElasticSearchPagination';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun40382: for (var _fun40382_ip = 0;;) switch (_fun40382_ip) {
                 case 0:
                     var1 = this;
@@ -2568,7 +2568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeRoleFromSearchState';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var2 = this;
             var0 = global;
             var3 = var0.Set;

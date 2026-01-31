@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppDetailsOverflowMenu, environment: var1
+    var1 = function arg0() {
         _fun107913: for (var _fun107913_ip = 0;;) switch (_fun107913_ip) {
             case 0:
                 var0 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.NgXl3C;
                 var3 = var9.bind(var10)(var3);
                 var0.label = var3;
-                var3 = function() { // Original name: action, environment: var5
+                var3 = function() {
                     var2 = _closure2_slot1;
                     var1 = {};
                     var0 = _closure2_slot2;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3["+NP/b2"];
                 var3 = var9.bind(var10)(var3);
                 var0.label = var3;
-                var3 = function() { // Original name: action, environment: var5
+                var3 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 7;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.ContextMenu;
                 var1 = {};
                 var1.items = var6;
-                var5 = function(arg0) { // Original name: children, environment: var5
+                var5 = function arg0() {
                     var2 = arg0;
                     var6 = var2.ref;
                     var0 = null;

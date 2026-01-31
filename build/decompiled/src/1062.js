@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function() { // Original name: instrumentDOM, environment: var2
+    var0 = function() {
         _fun10899: for (var _fun10899_ip = 0;;) switch (_fun10899_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -313,7 +313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var3 = function(arg0) { // Original name: makeDOMEventHandler, environment: var2
+    var3 = function arg0() {
         _fun10905: for (var _fun10905_ip = 0;;) switch (_fun10905_ip) {
             case 0:
                 var5 = undefined;
@@ -558,7 +558,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var2 = function(arg0) { // Original name: addClickKeypressInstrumentationHandler, environment: var2
+    var2 = function arg0() {
         var3 = _closure1_slot0;
         var5 = _closure1_slot1;
         var2 = 0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _checkIsSpeaking, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun35926: for (var _fun35926_ip = 0;;) switch (_fun35926_ip) {
             case 0:
                 var0 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'hooks/useIsSpeaking.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useIsSpeaking, environment: var1
+    var3 = function arg0() {
         _fun35927: for (var _fun35927_ip = 0;;) switch (_fun35927_ip) {
             case 0:
                 var2 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getIsSpeaking, environment: var1
+    var1 = function arg0() {
         _fun35932: for (var _fun35932_ip = 0;;) switch (_fun35932_ip) {
             case 0:
                 var3 = arg0;

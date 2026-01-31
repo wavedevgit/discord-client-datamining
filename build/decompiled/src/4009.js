@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
-    var1 = function(arg0) { // Original name: ScreenContainer, environment: var1
+    var1 = function arg0() {
         _fun37268: for (var _fun37268_ip = 0;;) switch (_fun37268_ip) {
             case 0:
                 var6 = arg0;

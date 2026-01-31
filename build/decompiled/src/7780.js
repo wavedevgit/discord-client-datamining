@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
     var3 = dependencyMap;
-    var0 = function(arg0) { // Original name: getKey, environment: var1
+    var0 = function arg0() {
         _fun62140: for (var _fun62140_ip = 0;;) switch (_fun62140_ip) {
             case 0:
                 var1 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__listener_id';
     var _closure1_slot4 = var2;
     var2 = {};
-    var3 = function(arg0) { // Original name: getOrientation, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getOrientation = var3;
-    var3 = function(arg0) { // Original name: getSpecificOrientation, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getSpecificOrientation = var3;
-    var3 = function(arg0) { // Original name: ignoreAutoRotate, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.ignoreAutoRotate;
         var0 = arg0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ignoreAutoRotate = var3;
-    var3 = function() { // Original name: lockToPortrait, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.lockToPortrait;
         var0 = var0.bind(var1)();
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.lockToPortrait = var3;
-    var3 = function() { // Original name: lockToLandscape, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.lockToLandscape;
         var0 = var0.bind(var1)();
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.lockToLandscape = var3;
-    var3 = function() { // Original name: lockToLandscapeRight, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.lockToLandscapeRight;
         var0 = var0.bind(var1)();
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.lockToLandscapeRight = var3;
-    var3 = function() { // Original name: lockToLandscapeLeft, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.lockToLandscapeLeft;
         var0 = var0.bind(var1)();
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.lockToLandscapeLeft = var3;
-    var3 = function() { // Original name: unlockAllOrientations, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.unlockAllOrientations;
         var0 = var0.bind(var1)();
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.unlockAllOrientations = var3;
-    var3 = function(arg0) { // Original name: addOrientationListener, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot5;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.addOrientationListener = var3;
-    var3 = function(arg0) { // Original name: addOrientationDegreesChangeListener, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot5;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.addOrientationDegreesChangeListener = var3;
-    var3 = function(arg0) { // Original name: removeOrientationListener, environment: var1
+    var3 = function arg0() {
         _fun62155: for (var _fun62155_ip = 0;;) switch (_fun62155_ip) {
             case 0:
                 var3 = _closure1_slot5;
@@ -220,7 +220,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.removeOrientationListener = var3;
-    var3 = function(arg0) { // Original name: addSpecificOrientationListener, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot5;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.addSpecificOrientationListener = var3;
-    var3 = function(arg0) { // Original name: removeSpecificOrientationListener, environment: var1
+    var3 = function arg0() {
         _fun62158: for (var _fun62158_ip = 0;;) switch (_fun62158_ip) {
             case 0:
                 var3 = _closure1_slot5;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.removeSpecificOrientationListener = var3;
-    var1 = function() { // Original name: getInitialOrientation, environment: var1
+    var1 = function() {
         var0 = _closure1_slot0;
         var0 = var0.initialOrientation;
         return var0;

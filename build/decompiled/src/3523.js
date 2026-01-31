@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: isKeyable, environment: var0
+    var1 = function arg0() {
         _fun31547: for (var _fun31547_ip = 0;;) switch (_fun31547_ip) {
             case 0:
                 var2 = arg0;

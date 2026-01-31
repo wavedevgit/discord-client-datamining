@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = require;
     var2 = exports;
     var7 = dependencyMap;
-    var4 = function(arg0, arg1) { // Original name: findChoiceStringValue, environment: var1
+    var4 = function arg0, arg1() {
         _fun64163: for (var _fun64163_ip = 0;;) switch (_fun64163_ip) {
             case 0:
                 var5 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0, arg1) { // Original name: findChoiceNumberValue, environment: var1
+    var3 = function arg0, arg1() {
         _fun64165: for (var _fun64165_ip = 0;;) switch (_fun64165_ip) {
             case 0:
                 var5 = arg0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/application_commands/ApplicationCommandChoiceUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: toChoiceBooleanValue, environment: var1
+    var5 = function arg0() {
         _fun64167: for (var _fun64167_ip = 0;;) switch (_fun64167_ip) {
             case 0:
                 var3 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.toChoiceBooleanValue = var5;
     var2.findChoiceStringValue = var4;
     var2.findChoiceNumberValue = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: findAutocompleteChoiceStringValue, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var3 = _closure1_slot3;
         var4 = _closure1_slot0;
         var2 = var4.getAutocompleteLastChoices;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.findAutocompleteChoiceStringValue = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: findAutocompleteChoiceNumberValue, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var3 = _closure1_slot4;
         var4 = _closure1_slot0;
         var2 = var4.getAutocompleteLastChoices;

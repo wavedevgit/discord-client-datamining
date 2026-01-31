@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/utils/notificationSettingsGuildFlagUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: updateGuildPreset, environment: var1
+    var3 = function arg0, arg1() {
         _fun69873: for (var _fun69873_ip = 0;;) switch (_fun69873_ip) {
             case 0:
                 var5 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateGuildPreset = var3;
-    var1 = function(arg0) { // Original name: useGuildPresetSettings, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot0;

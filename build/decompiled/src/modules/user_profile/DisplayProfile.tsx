@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _getStringFieldDefault, environment: var1
+    var0 = function arg0, arg1() {
         _fun56913: for (var _fun56913_ip = 0;;) switch (_fun56913_ip) {
             case 0:
                 var1 = arg0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: DisplayProfile, environment: var4
+        var2 = function arg0, arg1() {
             _fun56915: for (var _fun56915_ip = 0;;) switch (_fun56915_ip) {
                 case 0:
                     var3 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'premiumSince';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0._userProfile;
             var0 = var0.premiumSince;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'premiumGuildSince';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._userProfile;
             var0 = var0.premiumGuildSince;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'premiumType';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._userProfile;
             var0 = var0.premiumType;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'widgets';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._userProfile;
             var0 = var0.widgets;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'gameWidgets';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun56920: for (var _fun56920_ip = 0;;) switch (_fun56920_ip) {
                 case 0:
                     var0 = this;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'primaryColor';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun56921: for (var _fun56921_ip = 0;;) switch (_fun56921_ip) {
                 case 0:
                     var1 = this;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'canUsePremiumProfileCustomization';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var1 = 4;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'canEditThemes';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.canUsePremiumProfileCustomization;
             return var0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'application';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._userProfile;
             var0 = var0.application;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isLoaded';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun56925: for (var _fun56925_ip = 0;;) switch (_fun56925_ip) {
                 case 0:
                     var2 = this;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasThemeColors';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun56926: for (var _fun56926_ip = 0;;) switch (_fun56926_ip) {
                 case 0:
                     var3 = this;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasPremiumCustomization';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun56927: for (var _fun56927_ip = 0;;) switch (_fun56927_ip) {
                 case 0:
                     var1 = this;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isUsingGuildMemberBanner';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun56928: for (var _fun56928_ip = 0;;) switch (_fun56928_ip) {
                 case 0:
                     var0 = this;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isUsingGuildMemberBio';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun56929: for (var _fun56929_ip = 0;;) switch (_fun56929_ip) {
                 case 0:
                     var1 = this;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isUsingGuildMemberPronouns';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun56930: for (var _fun56930_ip = 0;;) switch (_fun56930_ip) {
                 case 0:
                     var1 = this;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBannerURL';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun56931: for (var _fun56931_ip = 0;;) switch (_fun56931_ip) {
                 case 0:
                     var0 = arg0;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPreviewBanner';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun56932: for (var _fun56932_ip = 0;;) switch (_fun56932_ip) {
                 case 0:
                     var1 = arg0;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPreviewBio';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun56933: for (var _fun56933_ip = 0;;) switch (_fun56933_ip) {
                 case 0:
                     var3 = this;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPreviewThemeColors';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun56934: for (var _fun56934_ip = 0;;) switch (_fun56934_ip) {
                 case 0:
                     var3 = arg0;
@@ -803,7 +803,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBadges';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun56935: for (var _fun56935_ip = 0;;) switch (_fun56935_ip) {
                 case 0:
                     var1 = this;
@@ -851,7 +851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getLegacyUsername';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0._userProfile;
             var0 = var0.legacyUsername;

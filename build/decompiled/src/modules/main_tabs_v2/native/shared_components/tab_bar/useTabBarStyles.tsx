@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.spacing;
             var10 = var3.PX_48;
             var _closure1_slot5 = var10;
-            var4 = function() { // Original name: useTabletIconYouWidth, environment: var1
+            var4 = function() {
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot2;
                 var2 = 4;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.bind(var7)(var5);
             var2.useTabletIconYouWidth = var4;
             var2.useTabBarStyles = var3;
-            var1 = function() { // Original name: useTabBarStylesComputed, environment: var1
+            var1 = function() {
                 _fun104501: for (var _fun104501_ip = 0;;) switch (_fun104501_ip) {
                     case 0:
                         var2 = _closure1_slot7;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var7[0] = var9;
                                     var7[1] = var8;
                                     var3.tabBarStyle = var7;
-                                    var7 = function() { // Original name: tabBarBackground, environment: var7
+                                    var7 = function() {
                                         var3 = _closure1_slot4;
                                         var1 = _closure1_slot1;
                                         var2 = _closure1_slot2;

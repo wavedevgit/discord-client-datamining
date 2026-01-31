@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/billing/RegionalPaymentMethods.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: getIdealBankDisplayNameFromBankName, environment: var1
+    var3 = function arg0() {
         _fun29381: for (var _fun29381_ip = 0;;) switch (_fun29381_ip) {
             case 0:
                 var3 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getIdealBankDisplayNameFromBankName = var3;
-    var1 = function(arg0) { // Original name: getEPSBankDisplayNameFromBankName, environment: var1
+    var1 = function arg0() {
         _fun29382: for (var _fun29382_ip = 0;;) switch (_fun29382_ip) {
             case 0:
                 var3 = arg0;

@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: LayoutAnimation, environment: var0
+        var0 = function arg0() {
             var3 = arg0;
             var1 = {};
             var4 = _closure1_slot0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var5;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: ExitingAnimation, environment: var0
+        var0 = function arg0() {
             var3 = arg0;
             var0 = global;
             var4 = var0.Math;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION = var5;
     var2.LayoutAnimation = var4;
     var2.ExitingAnimation = var3;
-    var1 = function() { // Original name: useOptionEnteringAnimation, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 3;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot2 = var0;
         var3 = var4.useState;
         var0 = function() { // Environment: var1
-            var0 = function() { // Original name: n, environment: var0
+            var0 = function() {
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
                 var0 = 2;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var3;
                 var1.transform = var2;
                 var0.initialValues = var1;
-                var1 = function() { // Original name: callback, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 3;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 0;
         var2 = var3[var2];
         var0.EnteringAnimation = var2;
-        var1 = function(arg0) { // Original name: registerAnimationCompleteCallback, environment: var1
+        var1 = function arg0() {
             _fun108076: for (var _fun108076_ip = 0;;) switch (_fun108076_ip) {
                 case 0:
                     var1 = arg0;

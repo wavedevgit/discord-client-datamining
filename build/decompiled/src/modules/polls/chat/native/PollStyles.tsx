@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var1);
-    var8 = function(arg0, arg1) { // Original name: normal, environment: var5
+    var8 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = {};
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: normalVote, environment: var5
+    var0 = function arg0, arg1() {
         var0 = {};
         var4 = _closure1_slot2;
         var3 = undefined;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var0;
-    var7 = function(arg0, arg1) { // Original name: notVoted, environment: var5
+    var7 = function arg0, arg1() {
         var2 = arg0;
         var0 = {};
         var5 = _closure1_slot3;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var7;
-    var6 = function(arg0, arg1) { // Original name: victorNotSelected, environment: var5
+    var6 = function arg0, arg1() {
         var2 = arg0;
         var0 = {};
         var5 = _closure1_slot3;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var6;
     var1 = {};
-    var9 = function(arg0, arg1) { // Original name: loserSelected, environment: var5
+    var9 = function arg0, arg1() {
         var1 = arg0;
         var0 = {};
         var5 = _closure1_slot4;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.loserSelected = var9;
     var1.normal = var8;
     var1.notVoted = var7;
-    var7 = function(arg0, arg1) { // Original name: selected, environment: var5
+    var7 = function arg0, arg1() {
         var1 = arg0;
         var0 = {};
         var5 = _closure1_slot3;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.selected = var7;
     var1.victorNotSelected = var6;
-    var6 = function(arg0, arg1) { // Original name: victorSelected, environment: var5
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var0 = {};
         var5 = _closure1_slot5;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.victorSelected = var6;
-    var5 = function(arg0, arg1) { // Original name: voted, environment: var5
+    var5 = function arg0, arg1() {
         var1 = arg0;
         var0 = {};
         var5 = _closure1_slot3;

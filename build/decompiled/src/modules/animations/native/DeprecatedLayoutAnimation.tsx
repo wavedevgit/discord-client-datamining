@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var3 = function(arg0) { // Original name: DeprecatedLayoutAnimation, environment: var1
+    var3 = function arg0() {
         _fun44402: for (var _fun44402_ip = 0;;) switch (_fun44402_ip) {
             case 0:
                 var2 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CONFIG_GUILD_FOLDER_OPACITY = var5;
     var2.CONFIG_GUILD_FOLDER_SCALEXY = var4;
     var2.DeprecatedLayoutAnimation = var3;
-    var1 = function(arg0) { // Original name: DeprecatedLayoutAnimationKeyboard, environment: var1
+    var1 = function arg0() {
         _fun44403: for (var _fun44403_ip = 0;;) switch (_fun44403_ip) {
             case 0:
                 var5 = arg0;

@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/text_input/AppLauncherTextInputOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherTextInputOption, environment: var1
+    var1 = function arg0() {
         _fun108148: for (var _fun108148_ip = 0;;) switch (_fun108148_ip) {
             case 0:
                 var1 = arg0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'off';
                 var4.autoComplete = var17;
                 var4.onChangeText = var16;
-                var16 = function(arg0) { // Original name: onSelectionChange, environment: var9
+                var16 = function arg0() {
                     var1 = _closure2_slot5;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var10 = var10.expressionButton;
                 var6.style = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 16;

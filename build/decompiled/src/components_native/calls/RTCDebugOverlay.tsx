@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: Text, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot14;
         var1 = _closure1_slot0;
         var2 = _closure1_slot3;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: Section, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.title;
         var8 = var0.children;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: renderObjectKV, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.entries;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: RTCDebugGeneral, environment: var1
+    var0 = function() {
         _fun69078: for (var _fun69078_ip = 0;;) switch (_fun69078_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: renderContextInfo, environment: var1
+    var0 = function arg0() {
         _fun69082: for (var _fun69082_ip = 0;;) switch (_fun69082_ip) {
             case 0:
                 var2 = _closure1_slot21;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: RTCDebugContext, environment: var1
+    var0 = function arg0() {
         _fun69083: for (var _fun69083_ip = 0;;) switch (_fun69083_ip) {
             case 0:
                 var0 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var7;
     var3 = var3.Fragment;
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: asString, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = '' + var0;
         return var0;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var3;
     var3 = {};
     var8 = var6.DEFAULT;
-    var7 = function() { // Original name: DefaultContextInfo, environment: var1
+    var7 = function() {
         var2 = _closure1_slot24;
         var4 = _closure1_slot0;
         var3 = _closure1_slot3;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3[var8] = var7;
     var7 = var6.STREAM;
-    var6 = function() { // Original name: StreamContextInfo, environment: var1
+    var6 = function() {
         var3 = _closure1_slot11;
         var2 = var3.getAllActiveStreamKeys;
         var4 = var2.bind(var3)();
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/calls/RTCDebugOverlay.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RTCDebugOverlay, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.onClose;
         var5 = var0.style;

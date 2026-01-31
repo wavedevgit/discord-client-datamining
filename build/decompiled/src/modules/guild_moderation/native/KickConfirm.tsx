@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: KickConfirm, environment: var1
+    var1 = function arg0() {
         _fun79116: for (var _fun79116_ip = 0;;) switch (_fun79116_ip) {
             case 0:
                 var0 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.label = var26;
                 var26 = 512;
                 var12.maxLength = var26;
-                var24 = function(arg0) { // Original name: onChange, environment: var24
+                var24 = function arg0() {
                     var1 = _closure2_slot5;
                     var0 = arg0;
                     var1.current = var0;

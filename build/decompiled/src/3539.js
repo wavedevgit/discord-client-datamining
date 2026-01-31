@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: stackDelete, environment: var0
+    var1 = function arg0() {
         var2 = this;
         var1 = var2.__data__;
         var3 = var1.delete;

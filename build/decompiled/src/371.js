@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5494: for (var _fun5494_ip = 0;;) switch (_fun5494_ip) {
             case 0:
             case 2: // try_start_0
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun5497: for (var _fun5497_ip = 0;;) switch (_fun5497_ip) {
             case 0:
                 var4 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: SpringAnimation, environment: var5
+        var3 = function arg0() {
             _fun5500: for (var _fun5500_ip = 0;;) switch (_fun5500_ip) {
                 case 0:
                     var5 = arg0;
@@ -490,7 +490,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '__getNativeAnimationConfig';
         var4.key = var0;
-        var0 = function() { // Original name: __getNativeAnimationConfig, environment: var5
+        var0 = function() {
             _fun5501: for (var _fun5501_ip = 0;;) switch (_fun5501_ip) {
                 case 0:
                     var2 = this;
@@ -537,7 +537,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'start';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: start, environment: var5
+        var6 = function arg0, arg1, arg2, arg3, arg4() {
             _fun5502: for (var _fun5502_ip = 0;;) switch (_fun5502_ip) {
                 case 0:
                     var6 = arg0;
@@ -592,7 +592,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var4.lastTime;
                     var2._lastTime = var4;
                 case 212:
-                    var4 = function() { // Original name: start, environment: var3
+                    var4 = function() {
                         _fun5503: for (var _fun5503_ip = 0;;) switch (_fun5503_ip) {
                             case 0:
                                 var3 = _closure3_slot1;
@@ -635,7 +635,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getInternalState';
         var4.key = var6;
-        var6 = function() { // Original name: getInternalState, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = {};
             var2 = var1._lastPosition;
@@ -651,7 +651,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'onUpdate';
         var4.key = var6;
-        var6 = function() { // Original name: onUpdate, environment: var5
+        var6 = function() {
             _fun5505: for (var _fun5505_ip = 0;;) switch (_fun5505_ip) {
                 case 0:
                     var2 = this;
@@ -911,7 +911,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'stop';
         var4.key = var6;
-        var5 = function() { // Original name: stop, environment: var5
+        var5 = function() {
             _fun5506: for (var _fun5506_ip = 0;;) switch (_fun5506_ip) {
                 case 0:
                     var3 = this;

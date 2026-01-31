@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: GiftBackgroundSelect, environment: var3
+    var1 = function arg0() {
         _fun75187: for (var _fun75187_ip = 0;;) switch (_fun75187_ip) {
             case 0:
                 var0 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var19[var0];
                 var2 = var20.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: k, environment: var9
+                var0 = function() {
                     _fun75189: for (var _fun75189_ip = 0;;) switch (_fun75189_ip) {
                         case 0:
                             var0 = {};
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot8;
                 var5 = {};
-                var14 = function(arg0) { // Original name: onContentSizeChange, environment: var9
+                var14 = function arg0() {
                     _fun75190: for (var _fun75190_ip = 0;;) switch (_fun75190_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot0;
                     var6 = var7 === var6;
                     var0.selected = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot1;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: PremiumGiftBackgroundSelect, environment: var3
+    var3 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 14;

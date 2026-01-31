@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function(arg0, arg1) { // Original name: utf8ToBytes, environment: var0
+    var0 = function arg0, arg1() {
         _fun10339: for (var _fun10339_ip = 0;;) switch (_fun10339_ip) {
             case 0:
                 var32 = arg0;

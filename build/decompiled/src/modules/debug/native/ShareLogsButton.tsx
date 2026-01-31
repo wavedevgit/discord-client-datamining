@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot2 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: ShareLogsButton, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4["Aw+09z"];
         var4 = var7.bind(var8)(var4);
         var0.accessibilityLabel = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var5 = _closure1_slot0;
             var6 = _closure1_slot1;
             var0 = 4;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: useIsMobileQuestDockVisibleBase, environment: var1
+    var4 = function arg0() {
         _fun46444: for (var _fun46444_ip = 0;;) switch (_fun46444_ip) {
             case 0:
                 var11 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function() { // Original name: useIsMobileQuestDockVisible, environment: var1
+    var3 = function() {
         _fun46448: for (var _fun46448_ip = 0;;) switch (_fun46448_ip) {
             case 0:
                 var4 = _closure1_slot1;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/quests/native/QuestHooks.native.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function() { // Original name: useMobileQuestDockHeight, environment: var1
+    var5 = function() {
         _fun46452: for (var _fun46452_ip = 0;;) switch (_fun46452_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMobileQuestDockHeight = var5;
-    var5 = function() { // Original name: useMobileQuestDock, environment: var1
+    var5 = function() {
         _fun46453: for (var _fun46453_ip = 0;;) switch (_fun46453_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useMobileQuestDock = var5;
     var2.useIsMobileQuestDockVisibleBase = var4;
     var2.useIsMobileQuestDockVisible = var3;
-    var3 = function(arg0) { // Original name: useQuestGameLogotypeAssetUrl, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestGameLogotypeAssetUrl = var3;
-    var3 = function(arg0) { // Original name: useQuestDockHeroAsset, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestDockHeroAsset = var3;
-    var1 = function(arg0) { // Original name: useHasWatchVideoOnMobileTasks, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;

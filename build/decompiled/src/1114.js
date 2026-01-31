@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var4 = function(arg0) { // Original name: isValidProfile, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.samples;
         var1 = var0.length;
@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: enrichAndroidProfileWithEventContext, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun12244: for (var _fun12244_ip = 0;;) switch (_fun12244_ip) {
             case 0:
                 var5 = arg1;
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var5.bind(var0)(var6);
     var _closure1_slot2 = var5;
     var2.isValidProfile = var4;
-    var4 = function(arg0) { // Original name: findProfiledTransactionsFromEnvelope, environment: var1
+    var4 = function arg0() {
         var0 = new Array(0);
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;
@@ -585,7 +585,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.findProfiledTransactionsFromEnvelope = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: enrichCombinedProfileWithEventContext, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun12247: for (var _fun12247_ip = 0;;) switch (_fun12247_ip) {
             case 0:
                 var4 = arg0;
@@ -1124,7 +1124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.enrichCombinedProfileWithEventContext = var4;
     var2.enrichAndroidProfileWithEventContext = var3;
-    var3 = function(arg0) { // Original name: createHermesProfilingEvent, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var0 = {
             'platform': 'javascript',
@@ -1138,7 +1138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.createHermesProfilingEvent = var3;
-    var1 = function(arg0, arg1) { // Original name: addProfilesToEnvelope, environment: var1
+    var1 = function arg0, arg1() {
         _fun12249: for (var _fun12249_ip = 0;;) switch (_fun12249_ip) {
             case 0:
                 var1 = arg1;

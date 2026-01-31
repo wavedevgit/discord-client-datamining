@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.t;
                 var3 = var2.n5vd1E;
                 var2 = {};
-                var6 = function() { // Original name: handleOnHelpUrlHook, environment: var6
+                var6 = function() {
                     var5 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 4;

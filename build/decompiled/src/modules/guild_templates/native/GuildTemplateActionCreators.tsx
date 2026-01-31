@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var7.bind(var0)(var6);
     var11 = var1;
     var6 = copyDataProperties(var11, var10);
-    var7 = function(arg0) { // Original name: showModal, environment: var3
+    var7 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var6 = 'showModal';
     var1[var6] = var7;
-    var6 = function() { // Original name: hideModal, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 1;

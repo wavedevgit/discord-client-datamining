@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/explicit_media_redaction/ObscuredMessageLoadExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ObscuredMessageLoadExperiment = var3;
-    var1 = function() { // Original name: isEligibleForObscuredMessageLoadExperiment, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = var3.getCurrentConfig;
         var1 = {};

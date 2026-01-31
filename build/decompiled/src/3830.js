@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: checkSharedValueUsage, environment: var1
+    var0 = function arg0, arg1() {
         _fun34714: for (var _fun34714_ip = 0;;) switch (_fun34714_ip) {
             case 0:
                 var3 = arg0;
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: animatedStyleHandleToJSON, environment: var1
+    var0 = function() {
         var0 = '{}';
         return var0;
     };
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = "function prepareAnimation_Pnpm_useAnimatedStyleTs1(frameTimestamp,animatedProp,lastAnimation,lastValue){const prepareAnimation_Pnpm_useAnimatedStyleTs1=this._recur;if(Array.isArray(animatedProp)){animatedProp.forEach(function(prop,index){prepareAnimation_Pnpm_useAnimatedStyleTs1(frameTimestamp,prop,lastAnimation&&lastAnimation[index],lastValue&&lastValue[index]);});}if(typeof animatedProp==='object'&&animatedProp.onFrame){const animation=animatedProp;let value=animation.current;if(lastValue!==undefined&&lastValue!==null){if(typeof lastValue==='object'){if(lastValue.value!==undefined){value=lastValue.value;}else if(lastValue.onFrame!==undefined){if((lastAnimation===null||lastAnimation===void 0?void 0:lastAnimation.current)!==undefined){value=lastAnimation.current;}else if((lastValue===null||lastValue===void 0?void 0:lastValue.current)!==undefined){value=lastValue.current;}}}else{value=lastValue;}}animation.callStart=function(timestamp){animation.onStart(animation,value,timestamp,lastAnimation);};animation.callStart(frameTimestamp);animation.callStart=null;}else if(typeof animatedProp==='object'){Object.keys(animatedProp).forEach(function(key){return prepareAnimation_Pnpm_useAnimatedStyleTs1(frameTimestamp,animatedProp[key],lastAnimation&&lastAnimation[key],lastValue&&lastValue[key]);});}}";
     var4.code = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: prepareAnimation, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun34716: for (var _fun34716_ip = 0;;) switch (_fun34716_ip) {
             case 0:
                 var3 = arg0;
@@ -414,7 +414,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var3 = "function runAnimations_Pnpm_useAnimatedStyleTs2(animation,timestamp,key,result,animationsActive,forceCopyAnimation){const runAnimations_Pnpm_useAnimatedStyleTs2=this._recur;if(!animationsActive.value){return true;}if(Array.isArray(animation)){result[key]=[];let allFinished=true;forceCopyAnimation=key==='boxShadow';animation.forEach(function(entry,index){if(!runAnimations_Pnpm_useAnimatedStyleTs2(entry,timestamp,index,result[key],animationsActive,forceCopyAnimation)){allFinished=false;}});return allFinished;}else if(typeof animation==='object'&&animation.onFrame){let finished=true;if(!animation.finished){if(animation.callStart){animation.callStart(timestamp);animation.callStart=null;}finished=animation.onFrame(animation,timestamp);animation.timestamp=timestamp;if(finished){animation.finished=true;animation.callback&&animation.callback(true);}}if(forceCopyAnimation){result[key]={...animation.current};}else{result[key]=animation.current;}return finished;}else if(typeof animation==='object'){result[key]={};let allFinished=true;Object.keys(animation).forEach(function(k){if(!runAnimations_Pnpm_useAnimatedStyleTs2(animation[k],timestamp,k,result[key],animationsActive,forceCopyAnimation)){allFinished=false;}});return allFinished;}else{result[key]=animation;return true;}}";
     var4.code = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: runAnimations, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun34720: for (var _fun34720_ip = 0;;) switch (_fun34720_ip) {
             case 0:
                 var3 = arg0;
@@ -619,7 +619,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot11 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: styleUpdater, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             _fun34724: for (var _fun34724_ip = 0;;) switch (_fun34724_ip) {
                 case 0:
                     var6 = arg0;
@@ -775,7 +775,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     _fun34724_ip = 474;
                     continue _fun34724;
                 case 398:
-                    var7 = function(arg0) { // Original name: frame, environment: var12
+                    var7 = function arg0() {
                         _fun34725: for (var _fun34725_ip = 0;;) switch (_fun34725_ip) {
                             case 0:
                                 var0 = arg0;
@@ -795,7 +795,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var _closure4_slot3 = var6;
                                 var3 = true;
                                 var _closure4_slot4 = var3;
-                                var9 = function(arg0) { // Original name: _loop, environment: var1
+                                var9 = function arg0() {
                                     _fun34726: for (var _fun34726_ip = 0;;) switch (_fun34726_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -1008,7 +1008,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot13 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: jestStyleUpdater, environment: var0
+        var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun34729: for (var _fun34729_ip = 0;;) switch (_fun34729_ip) {
                 case 0:
                     var6 = arg0;
@@ -1153,7 +1153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.isAnimationCancelled = var7;
                     var7 = true;
                     var1.isAnimationRunning = var7;
-                    var7 = function(arg0) { // Original name: frame, environment: var2
+                    var7 = function arg0() {
                         _fun34732: for (var _fun34732_ip = 0;;) switch (_fun34732_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1347,7 +1347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useAnimatedStyleTs9(){const{remoteState}=this.__closure;return remoteState.isFirstRun=true;}';
     var3.code = var4;
     var _closure1_slot19 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useAnimatedStyle, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun34734: for (var _fun34734_ip = 0;;) switch (_fun34734_ip) {
             case 0:
                 var13 = arg0;
@@ -1570,7 +1570,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun34735
                             }
                         case 20:
-                            var2 = function() { // Original name: pnpm_useAnimatedStyleTs5, environment: var0
+                            var2 = function() {
                                 var3 = _closure2_slot0;
                                 var0 = undefined;
                                 var0 = var3.bind(var0)();
@@ -1613,7 +1613,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun34735
                             }
                         case 128:
-                            var3 = function() { // Original name: pnpm_useAnimatedStyleTs7, environment: var0
+                            var3 = function() {
                                 var6 = _closure1_slot12;
                                 var11 = _closure2_slot8;
                                 var10 = _closure3_slot0;
@@ -1669,7 +1669,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = undefined;
                                 var3 = var2.bind(var0)(var1);
                                 var2 = var3.runOnUI;
-                                var1 = function() { // Original name: pnpm_useAnimatedStyleTs8, environment: var1
+                                var1 = function() {
                                     var7 = _closure1_slot12;
                                     var12 = _closure2_slot8;
                                     var11 = _closure3_slot0;
@@ -1711,7 +1711,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             _fun34735_ip = 384;
                             continue _fun34735;
                         case 277:
-                            var3 = function() { // Original name: pnpm_useAnimatedStyleTs6, environment: var0
+                            var3 = function() {
                                 var7 = _closure1_slot14;
                                 var13 = _closure2_slot8;
                                 var12 = _closure2_slot0;
@@ -1780,7 +1780,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var1[var3];
                                         var3 = var2.bind(var0)(var1);
                                         var2 = var3.runOnUI;
-                                        var1 = function() { // Original name: pnpm_useAnimatedStyleTs9, environment: var1
+                                        var1 = function() {
                                             var1 = _closure2_slot7;
                                             var0 = true;
                                             var1.isFirstRun = var0;

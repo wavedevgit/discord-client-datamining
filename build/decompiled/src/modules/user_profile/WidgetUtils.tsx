@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var12;
-    var9 = function(arg0) { // Original name: widgetSupportsComment, environment: var1
+    var9 = function arg0() {
         var2 = _closure1_slot8;
         var1 = var2.includes;
         var0 = arg0;
@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var9;
-    var8 = function(arg0) { // Original name: widgetSupportsTags, environment: var1
+    var8 = function arg0() {
         var2 = _closure1_slot9;
         var1 = var2.includes;
         var0 = arg0;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var8;
-    var7 = function(arg0) { // Original name: widgetMaxGames, environment: var1
+    var7 = function arg0() {
         _fun42704: for (var _fun42704_ip = 0;;) switch (_fun42704_ip) {
             case 0:
                 var2 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var7;
-    var6 = function() { // Original name: getSavedWidgets, environment: var1
+    var6 = function() {
         _fun42705: for (var _fun42705_ip = 0;;) switch (_fun42705_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var6;
-    var0 = function() { // Original name: getCurrentWidgets, environment: var1
+    var0 = function() {
         _fun42706: for (var _fun42706_ip = 0;;) switch (_fun42706_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: findGameWidget, environment: var1
+    var0 = function arg0() {
         _fun42707: for (var _fun42707_ip = 0;;) switch (_fun42707_ip) {
             case 0:
                 var1 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var5 = function(arg0) { // Original name: replaceWidgetInList, environment: var1
+    var5 = function arg0() {
         _fun42709: for (var _fun42709_ip = 0;;) switch (_fun42709_ip) {
             case 0:
                 var1 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: updatePendingGameTags, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun42711: for (var _fun42711_ip = 0;;) switch (_fun42711_ip) {
             case 0:
                 var6 = arg2;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var0 = function(arg0) { // Original name: normalizeNullishValue, environment: var1
+    var0 = function arg0() {
         _fun42714: for (var _fun42714_ip = 0;;) switch (_fun42714_ip) {
             case 0:
                 var1 = arg0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var3 = function(arg0) { // Original name: isNSFWGame, environment: var1
+    var3 = function arg0() {
         _fun42715: for (var _fun42715_ip = 0;;) switch (_fun42715_ip) {
             case 0:
                 var1 = arg0;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getWidgetTitle = var10;
-    var10 = function(arg0, arg1) { // Original name: getGameWidgetSubtitle, environment: var1
+    var10 = function arg0, arg1() {
         _fun42717: for (var _fun42717_ip = 0;;) switch (_fun42717_ip) {
             case 0:
                 var6 = arg0;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGameWidgetSubtitle = var10;
-    var10 = function(arg0) { // Original name: hasGameWidgetsOnProfile, environment: var1
+    var10 = function arg0() {
         _fun42718: for (var _fun42718_ip = 0;;) switch (_fun42718_ip) {
             case 0:
                 var2 = arg0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.widgetSupportsComment = var9;
     var2.widgetSupportsTags = var8;
     var2.widgetMaxGames = var7;
-    var7 = function(arg0) { // Original name: getRandomElement, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var0 = global;
         var3 = var0.Math;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getRandomElement = var7;
-    var7 = function(arg0, arg1) { // Original name: getRandomElements, environment: var1
+    var7 = function arg0, arg1() {
         var2 = new Array(0);
         var5 = arg0;
         var3 = 0;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getRandomElements = var7;
     var2.getSavedWidgets = var6;
     var2.replaceWidgetInList = var5;
-    var5 = function(arg0) { // Original name: addWidgetToPending, environment: var1
+    var5 = function arg0() {
         _fun42722: for (var _fun42722_ip = 0;;) switch (_fun42722_ip) {
             case 0:
                 var4 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.addWidgetToPending = var5;
-    var5 = function(arg0) { // Original name: removeWidgetFromPending, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot14;
@@ -674,7 +674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.removeWidgetFromPending = var5;
     var2.updatePendingGameTags = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: removeTagFromGame, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun42726: for (var _fun42726_ip = 0;;) switch (_fun42726_ip) {
             case 0:
                 var4 = arg1;
@@ -745,7 +745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removeTagFromGame = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: updatePendingGameComment, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun42729: for (var _fun42729_ip = 0;;) switch (_fun42729_ip) {
             case 0:
                 var6 = arg2;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updatePendingGameComment = var4;
-    var4 = function(arg0) { // Original name: addPendingGameToWidget, environment: var1
+    var4 = function arg0() {
         _fun42732: for (var _fun42732_ip = 0;;) switch (_fun42732_ip) {
             case 0:
                 var0 = arg0;
@@ -1010,7 +1010,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.addPendingGameToWidget = var4;
-    var4 = function(arg0, arg1) { // Original name: reorderWidgets, environment: var1
+    var4 = function arg0, arg1() {
         _fun42734: for (var _fun42734_ip = 0;;) switch (_fun42734_ip) {
             case 0:
                 var4 = arg0;
@@ -1072,7 +1072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.reorderWidgets = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: reorderGamesInWidget, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun42735: for (var _fun42735_ip = 0;;) switch (_fun42735_ip) {
             case 0:
                 var3 = arg1;
@@ -1169,7 +1169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.reorderGamesInWidget = var4;
-    var4 = function(arg0, arg1) { // Original name: removePendingGameFromWidget, environment: var1
+    var4 = function arg0, arg1() {
         _fun42736: for (var _fun42736_ip = 0;;) switch (_fun42736_ip) {
             case 0:
                 var0 = arg1;
@@ -1240,7 +1240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removePendingGameFromWidget = var4;
-    var4 = function(arg0) { // Original name: isGameLimitReached, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot12;
         var2 = var0.type;
@@ -1252,7 +1252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isGameLimitReached = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: areWidgetGamesEqual, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun42739: for (var _fun42739_ip = 0;;) switch (_fun42739_ip) {
             case 0:
                 var3 = arg0;
@@ -1274,7 +1274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = arg1;
                     var4 = var2[var1];
                     var3 = _closure2_slot1;
-                    var2 = function(arg0, arg1, arg2) { // Original name: areGamesEqual, environment: var0
+                    var2 = function arg0, arg1, arg2() {
                         _fun42741: for (var _fun42741_ip = 0;;) switch (_fun42741_ip) {
                             case 0:
                                 var2 = arg0;
@@ -1389,7 +1389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.areWidgetGamesEqual = var4;
     var2.isNSFWGame = var3;
-    var1 = function(arg0) { // Original name: isGameAllowedInGameWidgets, environment: var1
+    var1 = function arg0() {
         _fun42743: for (var _fun42743_ip = 0;;) switch (_fun42743_ip) {
             case 0:
                 var1 = arg0;

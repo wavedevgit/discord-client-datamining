@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/double_tap_to_react/native/DoubleTapEmojiEditNudge.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DoubleTapEmojiEditNudge, environment: var1
+    var1 = function arg0() {
         _fun77907: for (var _fun77907_ip = 0;;) switch (_fun77907_ip) {
             case 0:
                 var0 = arg0;

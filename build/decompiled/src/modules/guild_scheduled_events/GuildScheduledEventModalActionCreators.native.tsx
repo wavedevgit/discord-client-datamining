@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: openGuildEventDetails, environment: var1
+    var3 = function arg0() {
         _fun66061: for (var _fun66061_ip = 0;;) switch (_fun66061_ip) {
             case 0:
                 var0 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var0 = function() { // Original name: _transitionToEventDetailsFromInvite, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.openGuildEventDetails = var3;
-    var3 = function() { // Original name: transitionToEventDetailsFromInvite, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.transitionToEventDetailsFromInvite = var3;
-    var1 = function(arg0) { // Original name: openEndEventModal, environment: var1
+    var1 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 3;

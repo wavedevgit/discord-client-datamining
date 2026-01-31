@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.dataFormatterCache = var0;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: FormatterCache, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'getDateTimeFormatter';
         var0.key = var1;
-        var1 = function() { // Original name: getDateTimeFormatter, environment: var4
+        var1 = function() {
             _fun13743: for (var _fun13743_ip = 0;;) switch (_fun13743_ip) {
                 case 0:
                     var4 = this;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getDurationFormatter';
         var0.key = var5;
-        var5 = function() { // Original name: getDurationFormatter, environment: var4
+        var5 = function() {
             _fun13745: for (var _fun13745_ip = 0;;) switch (_fun13745_ip) {
                 case 0:
                     var4 = this;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getListFormatter';
         var0.key = var5;
-        var5 = function() { // Original name: getListFormatter, environment: var4
+        var5 = function() {
             _fun13747: for (var _fun13747_ip = 0;;) switch (_fun13747_ip) {
                 case 0:
                     var4 = this;
@@ -279,7 +279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getNumberFormatter';
         var0.key = var5;
-        var5 = function() { // Original name: getNumberFormatter, environment: var4
+        var5 = function() {
             _fun13749: for (var _fun13749_ip = 0;;) switch (_fun13749_ip) {
                 case 0:
                     var4 = this;
@@ -335,7 +335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getPluralRules';
         var0.key = var5;
-        var5 = function() { // Original name: getPluralRules, environment: var4
+        var5 = function() {
             _fun13751: for (var _fun13751_ip = 0;;) switch (_fun13751_ip) {
                 case 0:
                     var4 = this;
@@ -391,7 +391,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getRelativeTimeFormatter';
         var0.key = var5;
-        var5 = function() { // Original name: getRelativeTimeFormatter, environment: var4
+        var5 = function() {
             _fun13753: for (var _fun13753_ip = 0;;) switch (_fun13753_ip) {
                 case 0:
                     var4 = this;
@@ -447,7 +447,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_getCached';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: _getCached, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun13755: for (var _fun13755_ip = 0;;) switch (_fun13755_ip) {
                 case 0:
                     var4 = arg0;
@@ -477,7 +477,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_getKey';
         var0.key = var5;
-        var4 = function() { // Original name: _getKey, environment: var4
+        var4 = function() {
             _fun13756: for (var _fun13756_ip = 0;;) switch (_fun13756_ip) {
                 case 0:
                     var4 = undefined;

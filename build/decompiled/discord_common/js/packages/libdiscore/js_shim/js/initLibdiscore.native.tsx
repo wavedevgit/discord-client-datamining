@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _initLibdiscore, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/libdiscore/js_shim/js/initLibdiscore.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isLibdiscoreInitialized, environment: var1
+    var3 = function() {
         var0 = _closure1_slot1;
         var1 = var0.LibDiscoreModule;
         var0 = undefined;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isLibdiscoreInitialized = var3;
-    var1 = function() { // Original name: initLibdiscore, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot2;
         var2 = var3.apply;

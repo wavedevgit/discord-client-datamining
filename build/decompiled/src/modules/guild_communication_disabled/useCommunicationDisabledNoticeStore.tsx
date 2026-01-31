@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new var7[var2](var6, var5);
                 var2 = var2 instanceof Object ? var2 : var3;
                 var0.notificationDismissedInGuilds = var2;
-                var2 = function(arg0) { // Original name: dismissNotification, environment: var1
+                var2 = function arg0() {
                     var2 = _closure2_slot1;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.dismissNotification = var2;
-                var1 = function(arg0) { // Original name: resetNotification, environment: var1
+                var1 = function arg0() {
                     _fun19119: for (var _fun19119_ip = 0;;) switch (_fun19119_ip) {
                         case 0:
                             var3 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_communication_disabled/useCommunicationDisabledNoticeStore.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useCommunicationDisabledNoticeStore, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var7 = _closure1_slot1;
         var1 = 5;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCommunicationDisabledNoticeStore = var3;
-    var1 = function(arg0) { // Original name: clearCommunicationDisabledNotice, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot4;
         var0 = var1.getState;
         var2 = var0.bind(var1)();

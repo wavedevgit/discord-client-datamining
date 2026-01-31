@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'manage_in_web';
     var4.IN_WEB = var3;
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: getPremiumManagementMethod, environment: var1
+    var3 = function arg0() {
         _fun59313: for (var _fun59313_ip = 0;;) switch (_fun59313_ip) {
             case 0:
                 var1 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var6 = function() { // Original name: defaultMobileWebNitroManagementSuccessCallback, environment: var1
+    var6 = function() {
         var2 = _closure1_slot6;
         var1 = var2.log;
         var0 = 'Successfully opened mobile web Nitro Management page';
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var6;
-    var6 = function(arg0) { // Original name: defaultMobileWebNitroManagementFailureCallback, environment: var1
+    var6 = function arg0() {
         var3 = _closure1_slot6;
         var2 = var3.error;
         var1 = 'Failed to open mobile web Nitro Management page, error response: ';
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MobileWebDestinationTypes = var5;
     var2.PremiumManagementMethod = var4;
     var2.getPremiumManagementMethod = var3;
-    var1 = function(arg0) { // Original name: getExternalManagementMessage, environment: var1
+    var1 = function arg0() {
         _fun59316: for (var _fun59316_ip = 0;;) switch (_fun59316_ip) {
             case 0:
                 var5 = arg0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var9)(var3, var2);
                 return var2;
             case 244:
-                var10 = function() { // Original name: manageExternalNitroSubscription, environment: var12
+                var10 = function() {
                     _fun59317: for (var _fun59317_ip = 0;;) switch (_fun59317_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 'flex-start';
                 var13.justifyContent = var14;
                 var2.containerStyle = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var0 = var1.bind(var0)();

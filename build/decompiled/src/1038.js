@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0, arg1, arg2) { // Original name: addPageListener, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun10764: for (var _fun10764_ip = 0;;) switch (_fun10764_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addPageListener = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: removePageListener, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun10765: for (var _fun10765_ip = 0;;) switch (_fun10765_ip) {
             case 0:
                 var4 = _closure1_slot0;

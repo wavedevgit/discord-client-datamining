@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0, arg1) { // Original name: mergeApexExperiments, environment: var1
+    var4 = function arg0, arg1() {
         _fun77085: for (var _fun77085_ip = 0;;) switch (_fun77085_ip) {
             case 0:
                 var0 = {};
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: getApexExperimentOverridesInfo, environment: var1
+    var3 = function arg0() {
         _fun77088: for (var _fun77088_ip = 0;;) switch (_fun77088_ip) {
             case 0:
                 var0 = {};
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.mergeApexExperiments = var4;
     var2.getApexExperimentOverridesInfo = var3;
-    var3 = function() { // Original name: getApexExperiments, environment: var1
+    var3 = function() {
         var0 = {};
         var6 = _closure1_slot6;
         var4 = _closure1_slot5;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getApexExperiments = var3;
-    var1 = function() { // Original name: useApexExperiments, environment: var1
+    var1 = function() {
         var5 = _closure1_slot3;
         var4 = undefined;
         var2 = function() { // Environment: var1

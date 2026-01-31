@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderActivityOrPIP, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun110461: for (var _fun110461_ip = 0;;) switch (_fun110461_ip) {
             case 0:
                 var4 = _closure1_slot4;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/frames/panel/native/FramePanelUI.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FramePanelUI, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var4 = var3.useCallback;
         var2 = function() { // Environment: var0

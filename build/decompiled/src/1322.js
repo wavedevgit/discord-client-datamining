@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.assertInt32 = var0;
     var2.assertUInt32 = var0;
     var2.assertFloat32 = var0;
-    var3 = function(arg0, arg1) { // Original name: assert, environment: var1
+    var3 = function arg0, arg1() {
         _fun14877: for (var _fun14877_ip = 0;;) switch (_fun14877_ip) {
             case 0:
                 var0 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.assert = var3;
-    var3 = function(arg0, arg1) { // Original name: assertNever, environment: var1
+    var3 = function arg0, arg1() {
         _fun14878: for (var _fun14878_ip = 0;;) switch (_fun14878_ip) {
             case 0:
                 var2 = arg1;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.assertNever = var3;
-    var3 = function(arg0) { // Original name: assertInt32, environment: var1
+    var3 = function arg0() {
         _fun14879: for (var _fun14879_ip = 0;;) switch (_fun14879_ip) {
             case 0:
                 var1 = arg0;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.assertInt32 = var3;
-    var3 = function(arg0) { // Original name: assertUInt32, environment: var1
+    var3 = function arg0() {
         _fun14880: for (var _fun14880_ip = 0;;) switch (_fun14880_ip) {
             case 0:
                 var1 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.assertUInt32 = var3;
-    var1 = function(arg0) { // Original name: assertFloat32, environment: var1
+    var1 = function arg0() {
         _fun14881: for (var _fun14881_ip = 0;;) switch (_fun14881_ip) {
             case 0:
                 var1 = arg0;

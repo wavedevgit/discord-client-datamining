@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var4 = _closure1_slot1;
-        var3 = function() { // Original name: SessionManager, environment: var1
+        var3 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'generateSessionId';
         var0.key = var2;
-        var1 = function() { // Original name: value, environment: var1
+        var1 = function() {
             var0 = global;
             var2 = var0.Date;
             var1 = var2.now;

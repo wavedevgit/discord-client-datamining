@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun77234: for (var _fun77234_ip = 0;;) switch (_fun77234_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun77236: for (var _fun77236_ip = 0;;) switch (_fun77236_ip) {
             case 0:
                 var3 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/createChannelStream.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createChannelStream, environment: var1
+    var1 = function arg0() {
         _fun77237: for (var _fun77237_ip = 0;;) switch (_fun77237_ip) {
             case 0:
                 var0 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun77237
                 }
             case 286:
-                var1 = function(arg0) { // Original name: unreadFilter, environment: var2
+                var1 = function arg0() {
                     _fun77238: for (var _fun77238_ip = 0;;) switch (_fun77238_ip) {
                         case 0:
                             var3 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot15 = var1;
                 var1 = new Array(0);
                 _closure2_slot16 = var1;
-                var8 = function(arg0) { // Original name: insertMessage, environment: var2
+                var8 = function arg0() {
                     _fun77239: for (var _fun77239_ip = 0;;) switch (_fun77239_ip) {
                         case 0:
                             var3 = arg0;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var8 = var9.bind(var4)(var8);
-                var8 = function(arg0) { // Original name: determineChangeType, environment: var2
+                var8 = function arg0() {
                     _fun77241: for (var _fun77241_ip = 0;;) switch (_fun77241_ip) {
                         case 0:
                             var3 = arguments[1];
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 434:
                             var3 = true;
                         case 436:
-                            var4 = function(arg0) { // Original name: processHiddenMessageRow, environment: var4
+                            var4 = function arg0() {
                                 _fun77243: for (var _fun77243_ip = 0;;) switch (_fun77243_ip) {
                                     case 0:
                                         var0 = arg0;

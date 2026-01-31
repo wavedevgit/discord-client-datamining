@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var1 = function(arg0) { // Original name: attachHandlers, environment: var1
+    var1 = function arg0() {
         _fun44854: for (var _fun44854_ip = 0;;) switch (_fun44854_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 501:
                 var2 = var2.animatedHandlers;
                 var4 = var5.filter;
-                var3 = function(arg0) { // Original name: isAnimatedGesture, environment: var1
+                var3 = function arg0() {
                     var0 = arg0;
                     var0 = var0.shouldUseReanimated;
                     return var0;

@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/you/hooks/useYouTabBarTheme.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useYouTabBarTheme, environment: var1
+    var1 = function() {
         _fun104505: for (var _fun104505_ip = 0;;) switch (_fun104505_ip) {
             case 0:
                 var4 = _closure1_slot0;

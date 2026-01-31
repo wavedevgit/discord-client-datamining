@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/createNonce.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: createNonce, environment: var1
+    var1 = function() {
         _fun54232: for (var _fun54232_ip = 0;;) switch (_fun54232_ip) {
             case 0:
                 var0 = global;

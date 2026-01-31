@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/native/components/ThreadParentMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ThreadChannelStarterMessage, environment: var1
+    var3 = function arg0() {
         _fun104991: for (var _fun104991_ip = 0;;) switch (_fun104991_ip) {
             case 0:
                 var0 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var6 = 'button';
                 var1.accessibilityRole = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 7;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ThreadChannelStarterMessage = var3;
-    var1 = function(arg0) { // Original name: ThreadCreationStarterMessage, environment: var1
+    var1 = function arg0() {
         _fun104994: for (var _fun104994_ip = 0;;) switch (_fun104994_ip) {
             case 0:
                 var1 = arg0;

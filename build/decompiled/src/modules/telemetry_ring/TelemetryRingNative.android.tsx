@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'ZOOMED';
     var1.ZOOMED = var3;
     var3 = {};
-    var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: append, environment: var0
+    var5 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.append = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: snapshot, environment: var0
+    var5 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.snapshot = var5;
-    var0 = function() { // Original name: clear, environment: var0
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

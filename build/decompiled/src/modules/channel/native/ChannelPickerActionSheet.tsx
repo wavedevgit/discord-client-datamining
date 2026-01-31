@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel/native/ChannelPickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelPickerActionSheet, environment: var1
+    var1 = function arg0() {
         _fun76642: for (var _fun76642_ip = 0;;) switch (_fun76642_ip) {
             case 0:
                 var4 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var1 = var0.ActionSheetCloseButton;
                 var0 = {};
-                var9 = function() { // Original name: onPress, environment: var12
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 6;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var15.title;
             case 501:
                 var8.accessibilityLabel = var11;
-                var11 = function(arg0) { // Original name: onChange, environment: var12
+                var11 = function arg0() {
                     _fun76644: for (var _fun76644_ip = 0;;) switch (_fun76644_ip) {
                         case 0:
                             var1 = arg0;

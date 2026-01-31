@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var4;
     var3 = var3.MAX_THREAD_MESSAGE_COUNT_OLD;
     var _closure1_slot4 = var3;
-    var4 = function(arg0) { // Original name: shouldUseOldMaxMessageCount, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1) { // Original name: getMessageCountText, environment: var1
+    var3 = function arg0, arg1() {
         _fun55316: for (var _fun55316_ip = 0;;) switch (_fun55316_ip) {
             case 0:
                 var4 = arg0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var5 = function(arg0, arg1, arg2) { // Original name: _formatMessageCountLabel, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun55317: for (var _fun55317_ip = 0;;) switch (_fun55317_ip) {
             case 0:
                 var3 = _closure1_slot6;

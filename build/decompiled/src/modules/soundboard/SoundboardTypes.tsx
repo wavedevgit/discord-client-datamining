@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var12.fileFinishedImporting;
     var10 = 'modules/soundboard/SoundboardTypes.tsx';
     var10 = var11.bind(var12)(var10);
-    var10 = function(arg0) { // Original name: topSoundForGuildFromAPI, environment: var5
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.sound_id;
         var1 = var0.rank;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AnalyticsSoundType = var8;
     var2.AnalyticsChangeType = var7;
     var2.AnalyticsSoundSource = var6;
-    var6 = function(arg0, arg1) { // Original name: soundboardSoundFromAPI, environment: var5
+    var6 = function arg0, arg1() {
         _fun44077: for (var _fun44077_ip = 0;;) switch (_fun44077_ip) {
             case 0:
                 var8 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.soundboardSoundFromAPI = var6;
-    var5 = function(arg0) { // Original name: soundboardSoundToAPI, environment: var5
+    var5 = function arg0() {
         var7 = arg0;
         var6 = var7.soundId;
         var5 = var7.guildId;

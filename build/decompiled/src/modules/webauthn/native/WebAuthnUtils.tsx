@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _promptForRegisterCredential, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0) { // Original name: registerSecurityKey, environment: var6
+    var3 = function arg0() {
         _fun60546: for (var _fun60546_ip = 0;;) switch (_fun60546_ip) {
             case 0:
                 var1 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 80:
                 var1 = true;
                 var1 = var5.bind(var2)(var1);
-                var1 = function() { // Original name: promptForRegisterCredential, environment: var0
+                var1 = function() {
                     var0 = undefined;
                     var3 = _closure1_slot7;
                     var2 = var3.apply;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var0 = function(arg0) { // Original name: mutateAndroidRegisterChallengeForDiscoverable, environment: var6
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var7 = function(arg0) { // Original name: registerAndroidCredentialManagerPasskey, environment: var6
+    var7 = function arg0() {
         var3 = _closure1_slot8;
         var1 = _closure1_slot9;
         var0 = _closure1_slot4;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot6 = var1;
     var1 = {};
-    var9 = function() { // Original name: get hasAndroidPasskeySupport, environment: var6
+    var9 = function() {
         _fun60553: for (var _fun60553_ip = 0;;) switch (_fun60553_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var9 = function() { // Original name: get shouldDisplayAndroidFidoSelector, environment: var6
+    var9 = function() {
         _fun60554: for (var _fun60554_ip = 0;;) switch (_fun60554_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var8 = function(arg0) { // Original name: getScreens, environment: var6
+    var8 = function arg0() {
         _fun60555: for (var _fun60555_ip = 0;;) switch (_fun60555_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var7 = '';
                 var2.title = var7;
-                var7 = function() { // Original name: render, environment: var4
+                var7 = function() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5["0N1s81"];
                 var5 = var9.bind(var10)(var5);
                 var1.title = var5;
-                var5 = function() { // Original name: render, environment: var4
+                var5 = function() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot5;
                 var9 = var1.EDIT;
                 var2 = {};
-                var5 = function(arg0) { // Original name: render, environment: var4
+                var5 = function arg0() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var9] = var2;
                 var9 = var1.REGISTER;
                 var2 = {};
-                var10 = function() { // Original name: render, environment: var4
+                var10 = function() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var9] = var2;
                 var2 = var1.NAME;
                 var1 = {};
-                var9 = function(arg0) { // Original name: render, environment: var4
+                var9 = function arg0() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot5;
                 var2 = var1.SUCCESS;
                 var1 = {};
-                var4 = function() { // Original name: render, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getScreens = var8;
     var1.registerAndroidCredentialManagerPasskey = var7;
-    var7 = function(arg0) { // Original name: registerAndroidDevicePasskey, environment: var6
+    var7 = function arg0() {
         var3 = _closure1_slot8;
         var1 = _closure1_slot9;
         var0 = _closure1_slot4;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.registerAndroidDevicePasskey = var7;
-    var6 = function(arg0) { // Original name: registerPasskey, environment: var6
+    var6 = function arg0() {
         _fun60563: for (var _fun60563_ip = 0;;) switch (_fun60563_ip) {
             case 0:
                 var3 = arg0;

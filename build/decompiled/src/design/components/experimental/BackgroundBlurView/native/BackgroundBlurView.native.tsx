@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot5 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: BackgroundBlurViewComponent, environment: var1
+    var1 = function arg0, arg1() {
         _fun47876: for (var _fun47876_ip = 0;;) switch (_fun47876_ip) {
             case 0:
                 var2 = arg0;

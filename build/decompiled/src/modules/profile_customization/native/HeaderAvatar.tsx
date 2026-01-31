@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/profile_customization/native/HeaderAvatar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HeaderAvatar, environment: var1
+    var1 = function arg0() {
         _fun50801: for (var _fun50801_ip = 0;;) switch (_fun50801_ip) {
             case 0:
                 var5 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.animate = var9;
                 var3.avatarDecoration = var5;
                 _closure2_slot5 = var3;
-                var5 = function(arg0) { // Original name: renderAvatar, environment: var2
+                var5 = function arg0() {
                     _fun50806: for (var _fun50806_ip = 0;;) switch (_fun50806_ip) {
                         case 0:
                             var6 = arg0;

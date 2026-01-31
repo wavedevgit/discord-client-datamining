@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'components_native/common/ImageWithPlaceholder.tsx';
             var4 = var5.bind(var6)(var4);
             var2.ImagePlaceholderVersions = var3;
-            var1 = function(arg0) { // Original name: ImageWithPlaceholder, environment: var1
+            var1 = function arg0() {
                 _fun105536: for (var _fun105536_ip = 0;;) switch (_fun105536_ip) {
                     case 0:
                         var3 = arg0;

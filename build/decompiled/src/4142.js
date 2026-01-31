@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: isWebpFile, environment: var2
+    var3 = function arg0() {
         _fun37979: for (var _fun37979_ip = 0;;) switch (_fun37979_ip) {
             case 0:
                 var5 = arg0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isWebpFile = var3;
-    var2 = function(arg0) { // Original name: findOffsets, environment: var2
+    var2 = function arg0() {
         _fun37980: for (var _fun37980_ip = 0;;) switch (_fun37980_ip) {
             case 0:
                 var27 = arg0;

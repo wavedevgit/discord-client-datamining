@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40197: for (var _fun40197_ip = 0;;) switch (_fun40197_ip) {
             case 0:
                 var2 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40199: for (var _fun40199_ip = 0;;) switch (_fun40199_ip) {
             case 0:
                 var3 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.EMPTY_STRING_SNOWFLAKE_ID;
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
-        var4 = function() { // Original name: KvMessage, environment: var1
+        var4 = function() {
             var3 = _closure1_slot1;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'fromMessage';
         var0.key = var2;
-        var2 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var1
+        var2 = function arg0, arg1, arg2, arg3() {
             var3 = arg2;
             var2 = _closure2_slot0;
             var1 = var2.deriveMemberUsers;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'deriveMemberUsers';
         var0.key = var5;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var1
+        var1 = function arg0, arg1() {
             _fun40203: for (var _fun40203_ip = 0;;) switch (_fun40203_ip) {
                 case 0:
                     var10 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun54626: for (var _fun54626_ip = 0;;) switch (_fun54626_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun54628: for (var _fun54628_ip = 0;;) switch (_fun54628_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun54629: for (var _fun54629_ip = 0;;) switch (_fun54629_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: CloudUploader, environment: var5
+        var3 = function arg0() {
             _fun54633: for (var _fun54633_ip = 0;;) switch (_fun54633_ip) {
                 case 0:
                     var3 = this;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var7.bind(var8)(var2);
                         var2 = 'start';
                         var2 = var9.bind(var4)(var2, var7);
-                        var9 = function() { // Original name: onCompleteTask, environment: var3
+                        var9 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 11;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 192: // try_start_0
                         var4.files = var6;
                         var23 = _closure2_slot2;
-                        var10 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var3
+                        var10 = function arg0, arg1, arg2, arg3() {
                             _fun54642: for (var _fun54642_ip = 0;;) switch (_fun54642_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -895,7 +895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var7.bind(var2)(var0);
         var _closure2_slot1 = var0;
-        var0 = function() { // Original name: uploadFiles, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: startUpload, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -1136,11 +1136,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'observeCompressionProgress';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var4 = arg0;
             var1 = this;
             var _closure3_slot0 = var1;
-            var2 = function() { // Original name: cleanUp, environment: var0
+            var2 = function() {
                 _fun54652: for (var _fun54652_ip = 0;;) switch (_fun54652_ip) {
                     case 0:
                         var1 = _closure3_slot0;

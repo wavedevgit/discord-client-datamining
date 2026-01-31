@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun79323: for (var _fun79323_ip = 0;;) switch (_fun79323_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var8 = function(arg0) { // Original name: handleSafetyHubRequestAgeVerificationResetModalAction, environment: var3
+    var8 = function arg0() {
         _fun79326: for (var _fun79326_ip = 0;;) switch (_fun79326_ip) {
             case 0:
                 var1 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SafetyHubStore, environment: var5
+        var3 = function() {
             _fun79328: for (var _fun79328_ip = 0;;) switch (_fun79328_ip) {
                 case 0:
                     var3 = this;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isFetching';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getClassifications';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getClassification';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot11;
             var0 = arg0;
             var0 = var1[var0];
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAccountStanding';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isInitialized';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getClassificationRequestState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var0 = var1[var0];
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAppealClassificationId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsDsaEligible';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsAppealEligible';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAppealEligibility';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAppealSignal';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot23;
             return var0;
         };
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFreeTextAppealReason';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot24;
             return var0;
         };
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsSubmitting';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubmitError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUsername';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot25;
             return var0;
         };
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAgeVerificationWebviewUrl';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot26;
             return var0;
         };
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAgeVerificationError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot28;
             return var0;
         };
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsLoadingAgeVerification';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot29;
             return var0;
         };
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAgeCheckStatus';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot30;
             return var0;
         };
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAgeCheckError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot31;
             return var0;
         };
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAgeCheckAttempts';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot27;
             return var0;
         };
@@ -414,14 +414,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var15 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function() { // Original name: handleFetchStart, environment: var3
+    var9 = function() {
         var0 = true;
         _closure1_slot14 = var0;
         var0 = undefined;
         return var0;
     };
     var1.SAFETY_HUB_FETCH_START = var9;
-    var9 = function(arg0) { // Original name: handleFetchSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var9 = var0.classifications;
         var6 = var0.accountStanding;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleFetchFailure, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         var2 = false;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_FETCH_FAILURE = var9;
-    var9 = function(arg0) { // Original name: handleFetchClassificationStart, environment: var3
+    var9 = function arg0() {
         var4 = _closure1_slot12;
         var0 = arg0;
         var3 = var0.classificationId;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_FETCH_CLASSIFICATION_START = var9;
-    var9 = function(arg0) { // Original name: handleFetchClassificationSuccess, environment: var3
+    var9 = function arg0() {
         var1 = arg0;
         var0 = var1.classification;
         var5 = var1.accountStanding;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleFetchClassificationFailure, environment: var3
+    var9 = function arg0() {
         var1 = arg0;
         var0 = var1.error;
         var5 = var1.classificationId;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE = var9;
-    var9 = function(arg0) { // Original name: handleAppealOpen, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.classificationId;
         _closure1_slot17 = var1;
@@ -544,7 +544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_APPEAL_OPEN = var9;
-    var9 = function() { // Original name: handleAppealClose, environment: var3
+    var9 = function() {
         var0 = null;
         _closure1_slot17 = var0;
         var0 = _closure1_slot9;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_APPEAL_CLOSE = var9;
-    var9 = function(arg0) { // Original name: handleAppealSignalSelect, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.signal;
         _closure1_slot23 = var1;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_APPEAL_SIGNAL_SELECT = var9;
-    var9 = function(arg0) { // Original name: handleAppealSignalCustomInputChange, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.userInput;
         _closure1_slot24 = var1;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE = var9;
-    var9 = function(arg0) { // Original name: handleSafetyHubRequestReviewStart, environment: var3
+    var9 = function arg0() {
         _fun79361: for (var _fun79361_ip = 0;;) switch (_fun79361_ip) {
             case 0:
                 var1 = arg0;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SAFETY_HUB_REQUEST_REVIEW_START = var9;
-    var9 = function(arg0) { // Original name: handleSafetyHubRequestReviewSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.classificationId;
         var1 = false;
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_REQUEST_REVIEW_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleSafetyHubRequestReviewFailure, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         var2 = false;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_REQUEST_REVIEW_FAILURE = var9;
-    var9 = function(arg0) { // Original name: handleSafetyHubRequestAgeVerificationStart, environment: var3
+    var9 = function arg0() {
         _fun79364: for (var _fun79364_ip = 0;;) switch (_fun79364_ip) {
             case 0:
                 var1 = arg0;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START = var9;
-    var9 = function(arg0) { // Original name: handleSafetyHubRequestAgeVerificationSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var0 = var0.verificationWebviewUrl;
         _closure1_slot26 = var0;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleSafetyHubRequestAgeVerificationFailure, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var0 = var0.error;
         var2 = '';
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE = var9;
     var1.SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN = var8;
     var1.SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE = var8;
-    var8 = function(arg0) { // Original name: handleSafetyHubAutomatedUnderageAppealSubmitSuccessAction, environment: var3
+    var8 = function arg0() {
         _fun79367: for (var _fun79367_ip = 0;;) switch (_fun79367_ip) {
             case 0:
                 var1 = arg0;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleSafetyHubAgeVerificationStartPoll, environment: var3
+    var8 = function arg0() {
         _fun79368: for (var _fun79368_ip = 0;;) switch (_fun79368_ip) {
             case 0:
                 var1 = arg0;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL = var8;
-    var8 = function(arg0) { // Original name: handleSafetyHubCheckAgeVerificationStart, environment: var3
+    var8 = function arg0() {
         _fun79369: for (var _fun79369_ip = 0;;) switch (_fun79369_ip) {
             case 0:
                 var1 = arg0;
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START = var8;
-    var8 = function(arg0) { // Original name: handleSafetyHubCheckAgeVerificationCheckSuccess, environment: var3
+    var8 = function arg0() {
         _fun79370: for (var _fun79370_ip = 0;;) switch (_fun79370_ip) {
             case 0:
                 var0 = arg0;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleSafetyHubCheckAgeVerificationFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         var2 = _closure1_slot8;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE = var8;
-    var3 = function() { // Original name: reset, environment: var3
+    var3 = function() {
         var0 = false;
         _closure1_slot14 = var0;
         var0 = {};

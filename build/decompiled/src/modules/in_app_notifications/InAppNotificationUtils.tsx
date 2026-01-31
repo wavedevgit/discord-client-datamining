@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_notifications/InAppNotificationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getNotificationTitle, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun69698: for (var _fun69698_ip = 0;;) switch (_fun69698_ip) {
             case 0:
                 var4 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getNotificationTitle = var3;
-    var1 = function(arg0, arg1) { // Original name: isReactionMilestoneNotification, environment: var1
+    var1 = function arg0, arg1() {
         _fun69699: for (var _fun69699_ip = 0;;) switch (_fun69699_ip) {
             case 0:
                 var2 = arg1;

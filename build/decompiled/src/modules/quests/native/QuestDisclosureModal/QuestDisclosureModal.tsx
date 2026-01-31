@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: CloseButton, environment: var1
+    var0 = function() {
         var3 = _closure1_slot3;
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var8[var4];
         var4 = var5.bind(var2)(var4);
         var0.source = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 3;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestDisclosureModal/QuestDisclosureModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestDisclosureModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.isTargetedDisclosure;
         var _closure2_slot0 = var1;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot3 = var1;
         var0 = var0.isVideoQuest;
         var _closure2_slot4 = var0;
-        var0 = function() { // Original name: onClose, environment: var3
+        var0 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 3;
@@ -104,12 +104,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = {};
         var6 = _closure1_slot5;
         var1.headerLeft = var6;
-        var6 = function() { // Original name: headerRight, environment: var3
+        var6 = function() {
             var0 = null;
             return var0;
         };
         var1.headerRight = var6;
-        var6 = function() { // Original name: headerTitle, environment: var3
+        var6 = function() {
             var3 = _closure1_slot3;
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.headerTitle = var6;
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot3;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Placeholder, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.start;
         var5 = var0.end;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: PlaceholderSection, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot5;
         var1 = undefined;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var7 = var6.memo;
-    var3 = function(arg0) { // Original name: UserSectionInner, environment: var1
+    var3 = function arg0() {
         _fun72500: for (var _fun72500_ip = 0;;) switch (_fun72500_ip) {
             case 0:
                 var0 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var5[var7];
                 var13 = var6.bind(var3)(var11);
                 var12 = var13.useDerivedValue;
-                var11 = function() { // Original name: T, environment: var1
+                var11 = function() {
                     _fun72503: for (var _fun72503_ip = 0;;) switch (_fun72503_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var5[var7];
                 var16 = var6.bind(var3)(var11);
                 var13 = var16.useAnimatedStyle;
-                var11 = function() { // Original name: w, environment: var1
+                var11 = function() {
                     _fun72504: for (var _fun72504_ip = 0;;) switch (_fun72504_ip) {
                         case 0:
                             var0 = {};
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5[var7];
                 var6 = var6.bind(var3)(var5);
                 var5 = var6.useAnimatedStyle;
-                var1 = function() { // Original name: x, environment: var1
+                var1 = function() {
                     _fun72506: for (var _fun72506_ip = 0;;) switch (_fun72506_ip) {
                         case 0:
                             var0 = {};
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot14 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: UsersFastListInner, environment: var1
+    var1 = function arg0, arg1() {
         _fun72507: for (var _fun72507_ip = 0;;) switch (_fun72507_ip) {
             case 0:
                 var0 = arg0;

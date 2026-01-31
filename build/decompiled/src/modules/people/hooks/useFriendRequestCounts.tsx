@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: getIncomingFriendRequestCount, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot2;
         var2 = undefined;
         var1 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/people/hooks/useFriendRequestCounts.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getIncomingFriendRequestCount = var3;
-    var3 = function() { // Original name: useIncomingFriendRequestCount, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIncomingFriendRequestCount = var3;
-    var1 = function() { // Original name: getOutgoingFriendRequestCount, environment: var1
+    var1 = function() {
         _fun107143: for (var _fun107143_ip = 0;;) switch (_fun107143_ip) {
             case 0:
                 var3 = arguments[0];

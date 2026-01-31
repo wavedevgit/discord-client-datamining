@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1 instanceof Object ? var1 : var6;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: resolveGuildTemplate, environment: var3
+    var6 = function arg0() {
         _fun53567: for (var _fun53567_ip = 0;;) switch (_fun53567_ip) {
             case 0:
                 var5 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var6;
     var1.resolveGuildTemplate = var6;
-    var6 = function(arg0) { // Original name: loadTemplatesForGuild, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.loadTemplatesForGuild = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: createGuildTemplate, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.createGuildTemplate = var6;
-    var6 = function(arg0, arg1) { // Original name: syncGuildTemplate, environment: var3
+    var6 = function arg0, arg1() {
         var7 = arg1;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.syncGuildTemplate = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: updateGuildTemplate, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var7 = arg1;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateGuildTemplate = var6;
-    var3 = function(arg0, arg1) { // Original name: deleteGuildTemplate, environment: var3
+    var3 = function arg0, arg1() {
         var7 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var7;

@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useVanityURLPowerupRollbackNotificationConfig.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useVanityURLPowerupRollbackNotificationConfig, environment: var1
+    var1 = function arg0, arg1() {
         _fun102300: for (var _fun102300_ip = 0;;) switch (_fun102300_ip) {
             case 0:
                 var7 = arg0;

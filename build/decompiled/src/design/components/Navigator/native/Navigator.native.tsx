@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: NavigationStack, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.screens;
         var _closure2_slot0 = var7;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
-            var2 = function() { // Original name: focus, environment: var1
+            var2 = function() {
                 _fun50980: for (var _fun50980_ip = 0;;) switch (_fun50980_ip) {
                     case 0:
                         var2 = _closure2_slot1;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.focus = var2;
-            var1 = function(arg0) { // Original name: transitionEnd, environment: var1
+            var1 = function arg0() {
                 _fun50981: for (var _fun50981_ip = 0;;) switch (_fun50981_ip) {
                     case 0:
                         var0 = arg0;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot24;
                     var1.listeners = var6;
                     var1.options = var5;
-                    var0 = function(arg0) { // Original name: children, environment: var0
+                    var0 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: WrappedNavigationStack, environment: var1
+    var0 = function arg0() {
         _fun50989: for (var _fun50989_ip = 0;;) switch (_fun50989_ip) {
             case 0:
                 var2 = arg0;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 252:
                 var0.initialState = var9;
-                var6 = function() { // Original name: onReady, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 18;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Navigator/native/Navigator.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useNavigatorScreens, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot4;
         var2 = var3.useMemo;
         var1 = arg0;
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useNavigatorScreens = var3;
-    var3 = function() { // Original name: useAccessibilityNativeStackOptions, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 6;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAccessibilityNativeStackOptions = var3;
-    var1 = function(arg0) { // Original name: Navigator, environment: var1
+    var1 = function arg0() {
         _fun50995: for (var _fun50995_ip = 0;;) switch (_fun50995_ip) {
             case 0:
                 var4 = arg0;

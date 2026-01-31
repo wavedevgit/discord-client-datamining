@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Math;
     var1 = var1.min;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: baseSortedIndexBy, environment: var0
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun24576: for (var _fun24576_ip = 0;;) switch (_fun24576_ip) {
             case 0:
                 var14 = arg0;

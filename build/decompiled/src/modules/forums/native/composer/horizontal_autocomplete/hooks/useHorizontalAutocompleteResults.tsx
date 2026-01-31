@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/composer/horizontal_autocomplete/hooks/useHorizontalAutocompleteResults.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useHorizontalAutocompleteResults, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.channel;
         var _closure2_slot0 = var2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var12;
-    var9 = function(arg0, arg1, arg2) { // Original name: getGuildMemberAgeInRange, environment: var3
+    var9 = function arg0, arg1, arg2() {
         _fun78945: for (var _fun78945_ip = 0;;) switch (_fun78945_ip) {
             case 0:
                 var9 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var9;
-    var8 = function(arg0, arg1, arg2) { // Original name: useGuildMemberAgeInRange, environment: var3
+    var8 = function arg0, arg1, arg2() {
         var5 = arg0;
         var6 = arg1;
         var1 = arg2;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var8;
-    var7 = function(arg0, arg1) { // Original name: canKickMember, environment: var3
+    var7 = function arg0, arg1() {
         _fun78948: for (var _fun78948_ip = 0;;) switch (_fun78948_ip) {
             case 0:
                 var1 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var7;
-    var6 = function(arg0, arg1) { // Original name: hasKickMemberPerms, environment: var3
+    var6 = function arg0, arg1() {
         _fun78949: for (var _fun78949_ip = 0;;) switch (_fun78949_ip) {
             case 0:
                 var2 = arg0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var6;
-    var5 = function(arg0, arg1) { // Original name: canBanMember, environment: var3
+    var5 = function arg0, arg1() {
         _fun78950: for (var _fun78950_ip = 0;;) switch (_fun78950_ip) {
             case 0:
                 var1 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var5;
-    var4 = function(arg0, arg1) { // Original name: hasBanMemberPerms, environment: var3
+    var4 = function arg0, arg1() {
         _fun78951: for (var _fun78951_ip = 0;;) switch (_fun78951_ip) {
             case 0:
                 var1 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var4;
-    var1 = function(arg0, arg1) { // Original name: canManageMessages, environment: var3
+    var1 = function arg0, arg1() {
         _fun78952: for (var _fun78952_ip = 0;;) switch (_fun78952_ip) {
             case 0:
                 var2 = arg0;
@@ -674,7 +674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useNewMemberBadge = var8;
-    var8 = function(arg0, arg1) { // Original name: useCanKickMember, environment: var3
+    var8 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useCanKickMember = var8;
     var2.canKickMember = var7;
     var2.hasKickMemberPerms = var6;
-    var6 = function(arg0, arg1) { // Original name: useCanBanMember, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useCanBanMember = var6;
     var2.canBanMember = var5;
     var2.hasBanMemberPerms = var4;
-    var3 = function(arg0, arg1) { // Original name: useCanManageMessages, environment: var3
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

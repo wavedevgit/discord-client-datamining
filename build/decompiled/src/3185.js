@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var5 = function(arg0, arg1) { // Original name: parse, environment: var1
+    var5 = function arg0, arg1() {
         _fun27832: for (var _fun27832_ip = 0;;) switch (_fun27832_ip) {
             case 0:
                 var5 = arg0;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var5;
-    var2 = function(arg0) { // Original name: encodeURIComponentPretty, environment: var1
+    var2 = function arg0() {
         var0 = global;
         var2 = var0.encodeURI;
         var1 = undefined;
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var2;
-    var4 = function(arg0) { // Original name: tokensToFunction, environment: var1
+    var4 = function arg0() {
         _fun27835: for (var _fun27835_ip = 0;;) switch (_fun27835_ip) {
             case 0:
                 var8 = arg0;
@@ -705,7 +705,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var4;
-    var2 = function(arg0) { // Original name: escapeString, environment: var1
+    var2 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /([.+*?=^!:${}()[\]|\\/\\])/g;
@@ -714,7 +714,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var2;
-    var2 = function(arg0) { // Original name: escapeGroup, environment: var1
+    var2 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /([=!:$\\/()])/g;
@@ -723,14 +723,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var2;
-    var2 = function(arg0, arg1) { // Original name: attachKeys, environment: var1
+    var2 = function arg0, arg1() {
         var0 = arg0;
         var1 = arg1;
         var0.keys = var1;
         return var0;
     };
     var _closure1_slot8 = var2;
-    var2 = function(arg0) { // Original name: flags, environment: var1
+    var2 = function arg0() {
         _fun27841: for (var _fun27841_ip = 0;;) switch (_fun27841_ip) {
             case 0:
                 var0 = arg0;
@@ -747,7 +747,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: tokensToRegExp, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun27842: for (var _fun27842_ip = 0;;) switch (_fun27842_ip) {
             case 0:
                 var21 = arg0;
@@ -970,7 +970,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var2;
-    var3 = function(arg0, arg1, arg2) { // Original name: pathToRegexp, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun27843: for (var _fun27843_ip = 0;;) switch (_fun27843_ip) {
             case 0:
                 var1 = arg0;
@@ -1130,7 +1130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var0.exports;
     var3.parse = var5;
     var5 = var0.exports;
-    var3 = function(arg0, arg1) { // Original name: compile, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot5;
         var4 = _closure1_slot3;
         var1 = undefined;

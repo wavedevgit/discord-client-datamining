@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/noise_cancellation/native/KrispUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getKrispModel, environment: var1
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -28,12 +28,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getKrispModel = var3;
-    var3 = function() { // Original name: setKrispSuppressionLevel, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var2.setKrispSuppressionLevel = var3;
-    var1 = function() { // Original name: setKrispModelOverride, environment: var1
+    var1 = function() {
         var0 = undefined;
         return var0;
     };

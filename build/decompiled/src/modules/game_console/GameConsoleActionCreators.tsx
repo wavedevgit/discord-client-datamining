@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: logRemoteCommand, environment: var1
+    var0 = function arg0, arg1() {
         _fun66874: for (var _fun66874_ip = 0;;) switch (_fun66874_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var6 = function() { // Original name: disconnectRemote, environment: var1
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var6;
-    var0 = function() { // Original name: _disconnectRemote, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var5 = function() { // Original name: getConnectNonce, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var5;
-    var0 = function() { // Original name: _getConnectNonce, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var4 = function(arg0) { // Original name: cancelConnectRequest, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var4;
-    var0 = function() { // Original name: _fetchDevices, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _sendConnectVoiceCommand, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var3 = function() { // Original name: cancelCommand, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var3;
-    var0 = function() { // Original name: _cancelCommand, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _transferToPlayStation, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun66896
                         }
                     case 98:
-                        var9 = function() { // Original name: sendConnectVoiceCommand, environment: var4
+                        var9 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot17;
                             var2 = var3.apply;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/game_console/GameConsoleActionCreators.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0, arg1, arg2) { // Original name: waitForSession, environment: var1
+    var7 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -937,7 +937,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.waitForSession = var7;
     var2.disconnectRemote = var6;
-    var6 = function(arg0) { // Original name: connectToRemote, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.connectToRemote = var6;
-    var6 = function(arg0, arg1) { // Original name: remoteVoiceStateUpdate, environment: var1
+    var6 = function arg0, arg1() {
         var3 = arg0;
         var0 = arg1;
         var9 = var0.selfMute;
@@ -982,7 +982,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.remoteVoiceStateUpdate = var6;
-    var6 = function(arg0) { // Original name: remoteDisconnect, environment: var1
+    var6 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -1007,7 +1007,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.remoteDisconnect = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: remoteAudioSettingsUpdate, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun66902: for (var _fun66902_ip = 0;;) switch (_fun66902_ip) {
             case 0:
                 var3 = arg0;
@@ -1056,7 +1056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.remoteAudioSettingsUpdate = var6;
     var2.getConnectNonce = var5;
     var2.cancelConnectRequest = var4;
-    var4 = function() { // Original name: fetchDevices, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;
@@ -1067,7 +1067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchDevices = var4;
-    var4 = function(arg0, arg1) { // Original name: persistSelectedDeviceId, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -1087,7 +1087,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.persistSelectedDeviceId = var4;
     var2.cancelCommand = var3;
-    var1 = function() { // Original name: transferToPlayStation, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;

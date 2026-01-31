@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = global;
     var3.REACT_NAVIGATION_DEVTOOLS = var5;
     var3 = var4.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: NavigationContainerInner, environment: var1
+    var1 = function arg0, arg1() {
         _fun17491: for (var _fun17491_ip = 0;;) switch (_fun17491_ip) {
             case 0:
                 var9 = arg0;
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = _closure2_slot3;
                             var1 = var0.current;
                             var0 = {};
-                            var6 = function() { // Original name: get linking, environment: var4
+                            var6 = function() {
                                 _fun17493: for (var _fun17493_ip = 0;;) switch (_fun17493_ip) {
                                     case 0:
                                         var0 = global;

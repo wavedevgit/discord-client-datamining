@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var5 = 'en';
     var1.locale = var5;
-    var5 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var5 = function arg0, arg1() {
         _fun112145: for (var _fun112145_ip = 0;;) switch (_fun112145_ip) {
             case 0:
                 var0 = arg0;
@@ -308,7 +308,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var5 = 'en-Dsrt';
     var1.locale = var5;
-    var5 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var5 = function arg0, arg1() {
         var0 = 'other';
         return var0;
     };
@@ -753,7 +753,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var5 = 'en-Shaw';
     var1.locale = var5;
-    var4 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var4 = function arg0, arg1() {
         var0 = 'other';
         return var0;
     };

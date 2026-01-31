@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = function(arg0) { // Original name: getBasePath, environment: var2
+    var0 = function arg0() {
         _fun1588: for (var _fun1588_ip = 0;;) switch (_fun1588_ip) {
             case 0:
                 var0 = arg0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1 instanceof Object ? var1 : var3;
     var _closure1_slot1 = var1;
     var1 = {};
-    var3 = function(arg0, arg1) { // Original name: getAndroidResourceFolderName, environment: var2
+    var3 = function arg0, arg1() {
         _fun1589: for (var _fun1589_ip = 0;;) switch (_fun1589_ip) {
             case 0:
                 var9 = arg0;
@@ -158,7 +158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getAndroidResourceFolderName = var3;
-    var2 = function(arg0) { // Original name: getAndroidResourceIdentifier, environment: var2
+    var2 = function arg0() {
         var0 = arg0;
         var2 = _closure1_slot2;
         var1 = undefined;

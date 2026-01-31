@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_sidebar/SidebarVisibilityMethodStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.SidebarVisibilityMethodStore = var3;
-    var3 = function(arg0) { // Original name: setGetVisibleGuildIds, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setState;
         var0 = {};
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setGetVisibleGuildIds = var3;
-    var3 = function() { // Original name: getVisibleGuildIdsMethod, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getVisibleGuildIdsMethod = var3;
-    var3 = function(arg0) { // Original name: setGetVisibleChannelIds, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setState;
         var0 = {};
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setGetVisibleChannelIds = var3;
-    var1 = function() { // Original name: getVisibleChannelIdsMethod, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var0 = var1.getState;
         var0 = var0.bind(var1)();

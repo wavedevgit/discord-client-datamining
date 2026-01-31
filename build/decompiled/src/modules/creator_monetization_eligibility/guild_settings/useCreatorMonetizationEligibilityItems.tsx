@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useCreatorMonetizationEligibilityItems, environment: var1
+    var1 = function arg0() {
         _fun116413: for (var _fun116413_ip = 0;;) switch (_fun116413_ip) {
             case 0:
                 var10 = arg0;

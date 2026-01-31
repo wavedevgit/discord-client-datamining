@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChatInputActionButtonTransitionItem, environment: var1
+    var1 = function arg0() {
         _fun90373: for (var _fun90373_ip = 0;;) switch (_fun90373_ip) {
             case 0:
                 var1 = arg0;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var2
                     _fun90374: for (var _fun90374_ip = 0;;) switch (_fun90374_ip) {
                         case 0:
-                            var4 = function(arg0) { // Original name: withTimingExtended, environment: var0
+                            var4 = function arg0() {
                                 var9 = _closure1_slot0;
                                 var10 = _closure1_slot2;
                                 var1 = 5;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var5 = var9.bind(var8)(var1);
                                 var4 = var5.withTiming;
                                 var13 = _closure1_slot4;
-                                var2 = function(arg0) { // Original name: s, environment: var1
+                                var2 = function arg0() {
                                     _fun90376: for (var _fun90376_ip = 0;;) switch (_fun90376_ip) {
                                         case 0:
                                             var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0[var6];
                 var7 = var7.bind(var3)(var5);
                 var5 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: h, environment: var2
+                var2 = function() {
                     var0 = {};
                     var1 = 'absolute';
                     var0.position = var1;

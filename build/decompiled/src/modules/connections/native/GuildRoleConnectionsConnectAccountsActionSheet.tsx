@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PlatformIcon, environment: var3
+    var0 = function arg0() {
         _fun77636: for (var _fun77636_ip = 0;;) switch (_fun77636_ip) {
             case 0:
                 var0 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: ChannelName, environment: var3
+    var0 = function arg0() {
         _fun77637: for (var _fun77637_ip = 0;;) switch (_fun77637_ip) {
             case 0:
                 var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: ConnectionsCheck, environment: var3
+    var0 = function arg0() {
         _fun77638: for (var _fun77638_ip = 0;;) switch (_fun77638_ip) {
             case 0:
                 var0 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: ConnectionsChecks, environment: var3
+    var0 = function arg0() {
         _fun77639: for (var _fun77639_ip = 0;;) switch (_fun77639_ip) {
             case 0:
                 var0 = arg0;
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = !var9;
                         case 1092:
                             var0.disabled = var7;
-                            var7 = function() { // Original name: onPress, environment: var11
+                            var7 = function() {
                                 _fun77654: for (var _fun77654_ip = 0;;) switch (_fun77654_ip) {
                                     case 0:
                                         var0 = _closure3_slot1;
@@ -1288,7 +1288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var19 = _closure1_slot27;
                             var18 = _closure1_slot7;
                             var17 = {};
-                            var21 = function() { // Original name: onPress, environment: var11
+                            var21 = function() {
                                 var6 = _closure1_slot1;
                                 var7 = _closure1_slot2;
                                 var0 = 33;
@@ -1404,7 +1404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: ConnectedUserAccountOptions, environment: var3
+    var0 = function arg0() {
         _fun77657: for (var _fun77657_ip = 0;;) switch (_fun77657_ip) {
             case 0:
                 var0 = arg0;
@@ -1513,7 +1513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var15.bind(var16)(var14);
                 var2.label = var14;
                 var2.value = var13;
-                var13 = function(arg0) { // Original name: onValueChange, environment: var10
+                var13 = function arg0() {
                     var5 = arg0;
                     var2 = _closure2_slot3;
                     var0 = undefined;
@@ -1566,7 +1566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var15.bind(var16)(var14, var13);
                 var1.label = var13;
                 var1.value = var12;
-                var12 = function(arg0) { // Original name: onValueChange, environment: var10
+                var12 = function arg0() {
                     var5 = arg0;
                     var2 = _closure2_slot4;
                     var0 = undefined;
@@ -1616,7 +1616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.value = var9;
                 var9 = !var11;
                 var0.disabled = var9;
-                var9 = function(arg0) { // Original name: onValueChange, environment: var10
+                var9 = function arg0() {
                     _fun77661: for (var _fun77661_ip = 0;;) switch (_fun77661_ip) {
                         case 0:
                             var6 = arg0;
@@ -1674,7 +1674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var13.bind(var14)(var12);
                 var4.label = var12;
                 var4.value = var11;
-                var10 = function(arg0) { // Original name: onValueChange, environment: var10
+                var10 = function arg0() {
                     _fun77662: for (var _fun77662_ip = 0;;) switch (_fun77662_ip) {
                         case 0:
                             var6 = arg0;
@@ -2098,7 +2098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var1 = 'modules/connections/native/GuildRoleConnectionsConnectAccountsActionSheet.tsx';
     var1 = var4.bind(var5)(var1);
-    var1 = function(arg0) { // Original name: GuildRoleConnectionsConnectAccountsActionSheet, environment: var3
+    var1 = function arg0() {
         _fun77663: for (var _fun77663_ip = 0;;) switch (_fun77663_ip) {
             case 0:
                 var1 = arg0;
@@ -2116,7 +2116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot22 = var3;
                 var _closure2_slot24 = var3;
                 var _closure2_slot26 = var3;
-                var1 = function() { // Original name: handleClose, environment: var8
+                var1 = function() {
                     _fun77664: for (var _fun77664_ip = 0;;) switch (_fun77664_ip) {
                         case 0:
                             var0 = undefined;
@@ -2154,7 +2154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot31 = var1;
-                var1 = function() { // Original name: handleManageConnections, environment: var8
+                var1 = function() {
                     var2 = _closure2_slot31;
                     var0 = undefined;
                     var1 = true;
@@ -2173,7 +2173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot32 = var1;
-                var1 = function() { // Original name: handleManageAuthorizedApplications, environment: var8
+                var1 = function() {
                     var2 = _closure2_slot31;
                     var0 = undefined;
                     var1 = true;
@@ -2192,7 +2192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot33 = var1;
-                var1 = function() { // Original name: _handleAssignRole, environment: var8
+                var1 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -2250,7 +2250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot34 = var1;
-                var1 = function(arg0, arg1) { // Original name: handlePlatformConnect, environment: var8
+                var1 = function arg0, arg1() {
                     _fun77670: for (var _fun77670_ip = 0;;) switch (_fun77670_ip) {
                         case 0:
                             var5 = arg0;
@@ -2267,7 +2267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.platformType = var5;
                             var5 = 'Verified Roles Connect Accounts Modal';
                             var1.location = var5;
-                            var3 = function() { // Original name: onClose, environment: var3
+                            var3 = function() {
                                 _fun77671: for (var _fun77671_ip = 0;;) switch (_fun77671_ip) {
                                     case 0:
                                         var2 = _closure1_slot1;
@@ -2350,7 +2350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot35 = var1;
-                var1 = function(arg0, arg1) { // Original name: handlePlatformConnected, environment: var8
+                var1 = function arg0, arg1() {
                     _fun77672: for (var _fun77672_ip = 0;;) switch (_fun77672_ip) {
                         case 0:
                             var4 = arg1;
@@ -2650,7 +2650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = undefined;
                         var2 = var2.bind(var0)(var4);
                         var3 = _closure2_slot10;
-                        var2 = function(arg0) { // Original name: checkEligibility, environment: var2
+                        var2 = function arg0() {
                             var2 = arg0;
                             var1 = var2.some;
                             var0 = function(arg0) { // Environment: var0
@@ -2979,7 +2979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1556:
                 var7 = new Array(3);
                 var7[0] = var9;
-                var9 = function() { // Original name: renderContent, environment: var8
+                var9 = function() {
                     _fun77688: for (var _fun77688_ip = 0;;) switch (_fun77688_ip) {
                         case 0:
                             var4 = _closure2_slot5;
@@ -3567,7 +3567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var9 = var9.bind(var3)();
                 var7[1] = var9;
-                var8 = function() { // Original name: renderFooter, environment: var8
+                var8 = function() {
                     _fun77692: for (var _fun77692_ip = 0;;) switch (_fun77692_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -3632,7 +3632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var14.ButtonColors;
                             var14 = var14.BRAND;
                             var7.color = var14;
-                            var14 = function() { // Original name: onPress, environment: var5
+                            var14 = function() {
                                 var2 = _closure2_slot31;
                                 var0 = undefined;
                                 var1 = true;
@@ -3713,7 +3713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7.ButtonColors;
                             var7 = var7.BRAND;
                             var0.color = var7;
-                            var7 = function() { // Original name: onPress, environment: var5
+                            var7 = function() {
                                 var2 = _closure2_slot6;
                                 var0 = _closure1_slot31;
                                 var1 = var0.CHECKS_REQUIRED;
@@ -3750,8 +3750,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7.ButtonColors;
                             var7 = var7.BRAND;
                             var0.color = var7;
-                            var5 = function() { // Original name: onPress, environment: var5
-                                var1 = function() { // Original name: handleAssignRole, environment: var0
+                            var5 = function() {
+                                var1 = function() {
                                     var0 = undefined;
                                     var3 = _closure2_slot34;
                                     var2 = var3.apply;

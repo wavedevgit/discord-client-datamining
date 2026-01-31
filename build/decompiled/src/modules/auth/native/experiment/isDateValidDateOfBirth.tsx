@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/experiment/isDateValidDateOfBirth.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isDateValidDateOfBirth, environment: var1
+    var1 = function arg0() {
         _fun100473: for (var _fun100473_ip = 0;;) switch (_fun100473_ip) {
             case 0:
                 var4 = arg0;

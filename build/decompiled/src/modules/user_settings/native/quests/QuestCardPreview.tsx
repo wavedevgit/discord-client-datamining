@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.sourceQuestContent = var5;
         var5 = false;
         var0.trackGuildAndChannelMetadata = var5;
-        var4 = function() { // Original name: children, environment: var4
+        var4 = function() {
             var3 = _closure1_slot3;
             var1 = _closure1_slot1;
             var8 = _closure1_slot2;

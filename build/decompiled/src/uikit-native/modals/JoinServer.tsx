@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: OrSeparator, environment: var3
+    var1 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'uikit-native/modals/JoinServer.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: JoinServer, environment: var3
+    var3 = function arg0() {
         _fun60825: for (var _fun60825_ip = 0;;) switch (_fun60825_ip) {
             case 0:
                 var0 = arg0;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = 2;
                 var24 = var25[var24];
                 var15.example3 = var24;
-                var23 = function(arg0, arg1) { // Original name: exampleHook, environment: var23
+                var23 = function arg0, arg1() {
                     var4 = _closure1_slot8;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

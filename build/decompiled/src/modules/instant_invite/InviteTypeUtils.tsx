@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = dependencyMap;
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var11;
-    var7 = function(arg0) { // Original name: isGroupDMInvite, environment: var1
+    var7 = function arg0() {
         _fun28578: for (var _fun28578_ip = 0;;) switch (_fun28578_ip) {
             case 0:
                 var2 = arg0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var7;
-    var6 = function(arg0) { // Original name: isGuildScheduledEventInviteEmbed, environment: var1
+    var6 = function arg0() {
         _fun28579: for (var _fun28579_ip = 0;;) switch (_fun28579_ip) {
             case 0:
                 var0 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var6;
-    var5 = function(arg0) { // Original name: isFriendInvite, environment: var1
+    var5 = function arg0() {
         _fun28580: for (var _fun28580_ip = 0;;) switch (_fun28580_ip) {
             case 0:
                 var2 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var5;
-    var4 = function(arg0) { // Original name: isEmbeddedApplicationInvite, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.target_type;
         var0 = _closure1_slot4;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.InviteTypes = var8;
     var2.isGroupDMInvite = var7;
     var2.isGuildScheduledEventInviteEmbed = var6;
-    var6 = function(arg0) { // Original name: isRoleSubscriptionInvite, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var1 = var0.target_type;
         var0 = _closure1_slot4;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isRoleSubscriptionInvite = var6;
-    var6 = function(arg0) { // Original name: isStreamInvite, environment: var1
+    var6 = function arg0() {
         _fun28583: for (var _fun28583_ip = 0;;) switch (_fun28583_ip) {
             case 0:
                 var1 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isStreamInvite = var6;
     var2.isFriendInvite = var5;
     var2.isEmbeddedApplicationInvite = var4;
-    var4 = function(arg0) { // Original name: getInviteType, environment: var1
+    var4 = function arg0() {
         _fun28584: for (var _fun28584_ip = 0;;) switch (_fun28584_ip) {
             case 0:
                 var1 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInviteType = var4;
     var2.GuildInviteExtendedType = var3;
-    var1 = function(arg0) { // Original name: getGuildInviteExtendedType, environment: var1
+    var1 = function arg0() {
         _fun28585: for (var _fun28585_ip = 0;;) switch (_fun28585_ip) {
             case 0:
                 var3 = arg0;

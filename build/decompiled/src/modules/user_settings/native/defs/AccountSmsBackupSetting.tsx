@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var7 = function() { // Original name: useAccountSMSBackupSettingDescription, environment: var8
+    var7 = function() {
         _fun81138: for (var _fun81138_ip = 0;;) switch (_fun81138_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var10 = var4.bind(var0)(var1);
     var6 = var10.debounce;
-    var3 = function(arg0) { // Original name: toggleSMS, environment: var8
+    var3 = function arg0() {
         _fun81140: for (var _fun81140_ip = 0;;) switch (_fun81140_ip) {
             case 0:
                 var0 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.ACCOUNT;
     var1.parent = var9;
-    var9 = function() { // Original name: useAccountSMSBackupSettingIsDisabled, environment: var8
+    var9 = function() {
         var1 = _closure1_slot7;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useIsDisabled = var9;
-    var9 = function() { // Original name: useAccountSMSBackupSettingToggleValue, environment: var8
+    var9 = function() {
         _fun81144: for (var _fun81144_ip = 0;;) switch (_fun81144_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useValue = var9;
-    var8 = function(arg0) { // Original name: onAccountSMSBackupSettingTogglePress, environment: var8
+    var8 = function arg0() {
         _fun81146: for (var _fun81146_ip = 0;;) switch (_fun81146_ip) {
             case 0:
                 var2 = _closure1_slot3;

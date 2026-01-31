@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: GuildTooltipActionSheets, environment: var3
+    var1 = function arg0() {
         _fun102722: for (var _fun102722_ip = 0;;) switch (_fun102722_ip) {
             case 0:
                 var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot5;
                 var5 = var5.GUILD_HEADER_TOOLTIPS;
                 var0.groupName = var5;
-                var4 = function(arg0) { // Original name: children, environment: var4
+                var4 = function arg0() {
                     _fun102723: for (var _fun102723_ip = 0;;) switch (_fun102723_ip) {
                         case 0:
                             var0 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1.bind(var3)(var0);
                             var1 = var0.DismissibleActionSheet;
                             var0 = {};
-                            var6 = function(arg0) { // Original name: markAsDismissed, environment: var6
+                            var6 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = undefined;
                                 var0 = arg0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var4 = 'GuildTooltipActionSheet';
     var _closure1_slot7 = var4;
-    var4 = function() { // Original name: NUFChannelsActionSheetImporter, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 5;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var4 = function() { // Original name: GuildRoleSubscriptionsUpsellActionSheetImporter, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 5;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var4;
-    var4 = function() { // Original name: GuildRoleSubscriptionsIAPUpsellActionSheetImporter, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 5;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var4;
-    var4 = function() { // Original name: CreatorMonetizationOnboardingV2UpsellActionSheetImporter, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 5;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var4;
-    var4 = function() { // Original name: TierTemplatesUpsellActionSheetImporter, environment: var3
+    var4 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 5;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_sidebar/native/GuildTooltipActionSheets.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildTooltipActionSheetsGuard, environment: var3
+    var3 = function arg0() {
         _fun102730: for (var _fun102730_ip = 0;;) switch (_fun102730_ip) {
             case 0:
                 var6 = _closure1_slot4;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var3 = var7.bind(var0)(var1);
                     var2 = var3.runOnUI;
-                    var1 = function() { // Original name: s, environment: var1
+                    var1 = function() {
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
                         var0 = 18;

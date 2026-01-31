@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 0:
             var7 = global;
             var5 = this;
-            var4 = function(arg0) { // Original name: check, environment: var0
+            var4 = function arg0() {
                 _fun96792: for (var _fun96792_ip = 0;;) switch (_fun96792_ip) {
                     case 0:
                         var1 = arg0;

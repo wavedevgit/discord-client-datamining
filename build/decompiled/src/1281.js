@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: parseSignificantPrecision, environment: var1
+    var0 = function arg0() {
         _fun13867: for (var _fun13867_ip = 0;;) switch (_fun13867_ip) {
             case 0:
                 var4 = arg0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: parseSign, environment: var1
+    var0 = function arg0() {
         _fun13869: for (var _fun13869_ip = 0;;) switch (_fun13869_ip) {
             case 0:
                 var1 = arg0;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: parseConciseScientificAndEngineeringStem, environment: var1
+    var0 = function arg0() {
         _fun13870: for (var _fun13870_ip = 0;;) switch (_fun13870_ip) {
             case 0:
                 var6 = arg0;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: parseNotationOptions, environment: var1
+    var0 = function arg0() {
         _fun13871: for (var _fun13871_ip = 0;;) switch (_fun13871_ip) {
             case 0:
                 var2 = _closure1_slot7;
@@ -370,7 +370,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.parseNumberSkeletonFromString = var0;
     var2.parseNumberSkeleton = var0;
-    var3 = function(arg0) { // Original name: parseNumberSkeletonFromString, environment: var1
+    var3 = function arg0() {
         _fun13872: for (var _fun13872_ip = 0;;) switch (_fun13872_ip) {
             case 0:
                 var3 = arg0;
@@ -509,7 +509,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var3;
     var3 = /^(0+)$/;
     var _closure1_slot5 = var3;
-    var1 = function(arg0) { // Original name: parseNumberSkeleton, environment: var1
+    var1 = function arg0() {
         _fun13874: for (var _fun13874_ip = 0;;) switch (_fun13874_ip) {
             case 0:
                 var63 = arg0;

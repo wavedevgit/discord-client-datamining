@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileNote.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileNote, environment: var1
+    var1 = function arg0() {
         _fun91781: for (var _fun91781_ip = 0;;) switch (_fun91781_ip) {
             case 0:
                 var0 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11;
             case 307:
                 var0.accessibilityLabel = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 9;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.userId = var4;
                     var3 = _closure2_slot1;
                     var1.onBack = var3;
-                    var3 = function() { // Original name: onSave, environment: var3
+                    var3 = function() {
                         var2 = _closure2_slot2;
                         var1 = {};
                         var0 = 'SET_NOTE';

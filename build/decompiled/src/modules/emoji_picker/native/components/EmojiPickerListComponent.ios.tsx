@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = arg1;
         var0 = function() { // Environment: var0
             var0 = {};
-            var2 = function(arg0) { // Original name: scrollToHeaderIndex, environment: var1
+            var2 = function arg0() {
                 _fun73962: for (var _fun73962_ip = 0;;) switch (_fun73962_ip) {
                     case 0:
                         var0 = arg0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.scrollToHeaderIndex = var2;
-            var2 = function() { // Original name: forceUpdate, environment: var1
+            var2 = function() {
                 _fun73963: for (var _fun73963_ip = 0;;) switch (_fun73963_ip) {
                     case 0:
                         var0 = _closure2_slot4;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.forceUpdate = var2;
-            var1 = function(arg0) { // Original name: onStickyHeaderRendered, environment: var1
+            var1 = function arg0() {
                 _fun73964: for (var _fun73964_ip = 0;;) switch (_fun73964_ip) {
                     case 0:
                         var5 = arg0;

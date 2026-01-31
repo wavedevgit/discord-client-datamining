@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 0:
             var2 = exports;
             var _closure1_slot0 = var2;
-            var1 = function(arg0, arg1) { // Original name: _has, environment: var0
+            var1 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.Object;
                 var0 = var0.prototype;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.shrinkBuf = var3;
             var3 = {};
-            var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: arraySet, environment: var0
+            var4 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun94727: for (var _fun94727_ip = 0;;) switch (_fun94727_ip) {
                     case 0:
                         var3 = arg0;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.arraySet = var4;
-            var4 = function(arg0) { // Original name: flattenChunks, environment: var0
+            var4 = function arg0() {
                 _fun94728: for (var _fun94728_ip = 0;;) switch (_fun94728_ip) {
                     case 0:
                         var4 = arg0;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.flattenChunks = var4;
             var _closure1_slot1 = var3;
             var3 = {};
-            var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: arraySet, environment: var0
+            var4 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun94729: for (var _fun94729_ip = 0;;) switch (_fun94729_ip) {
                     case 0:
                         var5 = arg0;
@@ -300,7 +300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.arraySet = var4;
-            var4 = function(arg0) { // Original name: flattenChunks, environment: var0
+            var4 = function arg0() {
                 var0 = new Array(0);
                 var3 = var0.concat;
                 var2 = var3.apply;

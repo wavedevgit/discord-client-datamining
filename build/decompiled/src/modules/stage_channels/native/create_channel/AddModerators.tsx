@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/create_channel/AddModerators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddModerators, environment: var1
+    var1 = function arg0() {
         _fun65680: for (var _fun65680_ip = 0;;) switch (_fun65680_ip) {
             case 0:
                 var5 = arg0;

@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/native/IgnoreThermalStateAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: IgnoreThermalStateAlert, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var0 = var2.onConfirm;
         var _closure2_slot0 = var0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.bind(var10)(var6);
         var6 = 'cancelText';
         var0[var6] = var7;
-        var6 = function() { // Original name: onCancel, environment: var5
+        var6 = function() {
             _fun64202: for (var _fun64202_ip = 0;;) switch (_fun64202_ip) {
                 case 0:
                     var2 = _closure2_slot0;

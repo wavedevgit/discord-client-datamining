@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notification_center/native/GameUpdateActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GameUpdateActionSheet, environment: var1
+    var1 = function arg0() {
         _fun117979: for (var _fun117979_ip = 0;;) switch (_fun117979_ip) {
             case 0:
                 var0 = arg0;
@@ -816,7 +816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.progress = var8;
                 var8 = var33.invite;
                 var5.invite = var8;
-                var8 = function() { // Original name: onJoinPress, environment: var32
+                var8 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 12;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.ActionSheetHeaderBarVariants;
                 var12 = var12.FLOATING;
                 var7.variant = var12;
-                var12 = function() { // Original name: onPress, environment: var32
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 26;
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'variant': 'text-md/normal',
                     'lineClamp': 12
                 };
-                var19 = function(arg0) { // Original name: onToggle, environment: var32
+                var19 = function arg0() {
                     _fun117990: for (var _fun117990_ip = 0;;) switch (_fun117990_ip) {
                         case 0:
                             var1 = _closure2_slot9;
@@ -1564,7 +1564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = {};
                 var33 = var33.invite;
                 var29.invite = var33;
-                var32 = function() { // Original name: onJoinPress, environment: var32
+                var32 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 12;

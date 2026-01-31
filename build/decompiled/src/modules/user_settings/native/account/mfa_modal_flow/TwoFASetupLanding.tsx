@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/mfa_modal_flow/TwoFASetupLanding.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: TwoFASetupLanding, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var11 = var0.bind(var3)();

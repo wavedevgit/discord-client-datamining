@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['DISPLAYED_INVITE_SHOW', 'DISPLAYED_INVITE_CLEAR', 'DEFERRED_INVITE_SHOW', 'REGISTER_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CHANNEL_SELECT', 'AGE_GATE_MODAL_OPEN', 'AGE_GATE_MODAL_CLOSE', 'GUILD_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CURRENT_USER_UPDATE', 'MESSAGE_CREATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.neverLoadBeforeConnectionOpen = var3;
     var1.AgeVerificationManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.neverLoadBeforeConnectionOpen = var3;
     var1.ATTManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'AUDIO_SET_LOCAL_VOLUME', 'AUDIO_TOGGLE_LOCAL_MUTE', 'AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE', 'MEDIA_ENGINE_RESET_SETTINGS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MESSAGE_CREATE', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.neverLoadBeforeConnectionOpen = var3;
     var1.BackgroundSyncManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 9;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.loadAfterConnectionOpen = var3;
     var1.BlockedDomainManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 10;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_STATE_UPDATES', 'EMBEDDED_ACTIVITY_CLOSE', 'CONNECTION_CLOSED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 11;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CONNECTION_CLOSED', 'APP_STATE_UPDATE', 'WINDOW_FOCUS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 12;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['GUILD_LOCAL_RING_START', 'GUILD_RING_STOP'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 14;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['GUILD_CREATE', 'POST_CONNECTION_OPEN', 'CHANNEL_SYNC'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_SELECT', 'CHANNEL_UPDATES'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 16;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SELECT', 'CALL_CREATE', 'USER_SETTINGS_MODAL_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 17;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.inlineRequire = var7;
     var1.CommonTriggerPointManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 18;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 19;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['USER_SETTINGS_PROTO_UPDATE', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 20;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['DM_SETTINGS_UPSELL_SHOW'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 21;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['EMOJI_INTERACTION_INITIATED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 22;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['GUILD_CREATE', 'DELETED_ENTITY_IDS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 23;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_SELECT', 'LOAD_MESSAGES_SUCCESS', 'MESSAGE_CREATE', 'MESSAGE_UPDATE', 'SEARCH_MESSAGES_SUCCESS', 'MOD_VIEW_SEARCH_MESSAGES_SUCCESS', 'LOAD_FORUM_POSTS', 'LOAD_ARCHIVED_THREADS_SUCCESS', 'LOAD_THREADS_SUCCESS', 'LOGOUT', 'LOAD_PINNED_MESSAGES_SUCCESS', 'USER_SETTINGS_PROTO_UPDATE', 'CHANNEL_RTC_UPDATE_CHAT_OPEN', 'SIDEBAR_VIEW_CHANNEL'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 24;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE', 'LOGOUT', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 25;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SHOW_FEEDBACK', 'STREAM_CLOSE', 'EMBEDDED_ACTIVITY_CLOSE', 'IN_APP_REPORTS_SHOW_FEEDBACK', 'BLOCK_USER_SHOW_FEEDBACK', 'AGE_VERIFICATION_SHOW_FEEDBACK'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 26;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_PRELOAD'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 27;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.neverLoadBeforeConnectionOpen = var3;
     var1.ForumManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 28;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_SELECT', 'THREAD_CREATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 29;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['RPC_APP_DISCONNECTED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 30;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CONNECTION_RESUMED', 'CONNECTION_CLOSED', 'APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 31;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['WAIT_FOR_REMOTE_SESSION', 'POST_CONNECTION_OPEN', 'SESSIONS_REPLACE', 'AUDIO_TOGGLE_SELF_DEAF', 'AUDIO_TOGGLE_SELF_MUTE', 'VOICE_STATE_UPDATES', 'CONSOLE_COMMAND_UPDATE', 'PASSIVE_UPDATE_V2', 'REMOTE_SESSION_DISCONNECT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 32;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CHANNEL_SELECT', 'MESSAGE_CREATE', 'THREAD_CREATE', 'GUILD_MEMBER_UPDATE', 'GUILD_DELETE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 33;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_SELECT', 'GUILD_DELETE', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 34;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['GUILD_POWERUP_ENTITLEMENTS_CREATE', 'GUILD_POWERUP_ENTITLEMENTS_DELETE', 'GUILD_APPLIED_BOOSTS_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 35;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'GUILD_DELETE', 'GUILD_UNAVAILABLE', 'INVITE_RESOLVE_SUCCESS', 'CHANNEL_SELECT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 36;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['INVITE_ACCEPT_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 37;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'VOICE_CHANNEL_SELECT', 'LOGOUT', 'GUILD_MEMBER_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 38;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['GUILD_JOIN_REQUEST_UPDATE', 'CHANNEL_SELECT', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 39;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MESSAGE_UPDATE', 'MESSAGE_CREATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 40;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['NOTIFICATIONS_SET_DISABLED_SOUNDS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 41;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 42;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['INTERACTION_MODAL_CREATE', 'INTERACTION_IFRAME_MODAL_CREATE', 'INTERACTION_IFRAME_MODAL_CLOSE', 'RPC_APP_DISCONNECTED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 43;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 44;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 45;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 46;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE', 'CONNECTION_OPEN_SUPPLEMENTAL'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 47;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE', 'CONNECTION_OPEN_SUPPLEMENTAL'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 48;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 49;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'MESSAGE_UPDATE', 'LOAD_MESSAGES_SUCCESS', 'LOAD_MESSAGES_AROUND_SUCCESS', 'LOAD_RECENT_MENTIONS_SUCCESS', 'LOAD_PINNED_MESSAGES_SUCCESS', 'SEARCH_MESSAGES_SUCCESS', 'MOD_VIEW_SEARCH_MESSAGES_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 50;
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7 = ['APP_STATE_UPDATE', 'OVERLAY_INITIALIZE', 'CONNECTION_RESUMED', 'CHANNEL_SELECT', 'VOICE_CHANNEL_SELECT', 'THREAD_CREATE', 'THREAD_LIST_SYNC', 'CHANNEL_CREATE', 'CHANNEL_PRELOAD', 'GUILD_CREATE', 'MESSAGE_END_EDIT', 'LOAD_MESSAGES_SUCCESS', 'UPLOAD_FAIL', 'CHANNEL_DELETE', 'THREAD_DELETE', 'CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 51;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var8 = ['CONNECTION_OPEN_SUPPLEMENTAL', 'CONNECTION_RESUMED', 'GUILD_CREATE', 'GUILD_DELETE', 'LOAD_MESSAGES_SUCCESS', 'LOCAL_MESSAGES_LOADED', 'LOGOUT', 'MESSAGE_CREATE', 'MESSAGE_DELETE', 'MESSAGE_UPDATE', 'THREAD_LIST_SYNC'];
     var0.actions = var8;
-    var8 = function() { // Original name: inlineRequire, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 52;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.neverLoadBeforeConnectionOpen = var7;
     var1.MessagePreviewManager = var0;
     var0 = {};
-    var8 = function() { // Original name: inlineRequire, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 53;
@@ -855,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var8 = ['LOGOUT'];
     var0.actions = var8;
-    var8 = function() { // Original name: inlineRequire, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 54;
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var8 = ['START_HANGOUT', 'END_HANGOUT', 'APP_STATE_UPDATE', 'VOICE_STATE_UPDATES', 'SPEAKING', 'MESSAGE_CREATE', 'LOAD_USER_AFFINITIES_SUCCESS'];
     var0.actions = var8;
-    var8 = function() { // Original name: inlineRequire, environment: var6
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 55;
@@ -887,7 +887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 56;
@@ -902,7 +902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['ONBOARDING_STEP'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 57;
@@ -917,7 +917,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'ONBOARDING_START'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 58;
@@ -932,7 +932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MESSAGE_CREATE', 'INVITE_ACCEPT_SUCCESS', 'RELATIONSHIP_ADD', 'POST_CONNECTION_OPEN', 'APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 59;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['LOGOUT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 60;
@@ -962,7 +962,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.loadAfterConnectionOpen = var3;
     var1.NUFChannelsManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 61;
@@ -978,7 +978,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 62;
@@ -993,7 +993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'EXPERIMENTS_FETCH_SUCCESS', 'BILLING_SUBSCRIPTION_UPDATE_SUCCESS', 'BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS', 'BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS', 'VIRTUAL_CURRENCY_REDEEM_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 63;
@@ -1006,7 +1006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.inlineRequire = var7;
     var1.PromotionsManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 64;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CURRENT_USER_UPDATE', 'LOGOUT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 65;
@@ -1037,7 +1037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['RELATIONSHIP_ADD', 'FRIEND_REQUEST_ACCEPTED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 66;
@@ -1052,7 +1052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 67;
@@ -1067,7 +1067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 68;
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['SAVED_MESSAGES_UPDATE', 'SAVED_MESSAGE_CREATE', 'SAVED_MESSAGE_DELETE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 69;
@@ -1099,7 +1099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['USER_SETTINGS_PROTO_UPDATE', 'POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 70;
@@ -1115,7 +1115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['GUILD_CREATE', 'CHANNEL_CREATE', 'LOGOUT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 71;
@@ -1128,7 +1128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.inlineRequire = var7;
     var1.SelectedChannelManager = var0;
     var0 = {};
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 72;
@@ -1144,7 +1144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 73;
@@ -1159,7 +1159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_SELECT', 'APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 74;
@@ -1175,7 +1175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SELECT', 'VOICE_STATE_UPDATES'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 75;
@@ -1190,7 +1190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_STATE_UPDATES'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 76;
@@ -1205,7 +1205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SELECT', 'LOGOUT', 'STAGE_MUSIC_MUTE', 'STAGE_MUSIC_PLAY', 'VOICE_STATE_UPDATES', 'AUDIO_SET_OUTPUT_VOLUME', 'AUDIO_TOGGLE_SELF_DEAF'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 77;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 78;
@@ -1235,7 +1235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 79;
@@ -1250,7 +1250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CALL_DELETE', 'CHANNEL_DELETE', 'VOICE_CHANNEL_SELECT', 'RTC_CONNECTION_STATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 80;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_DELETE', 'MESSAGE_CREATE', 'GUILD_DELETE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 81;
@@ -1282,7 +1282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'MESSAGE_CREATE', 'CHANNEL_SELECT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 82;
@@ -1298,7 +1298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CATEGORY_COLLAPSE', 'CATEGORY_EXPAND', 'CATEGORY_COLLAPSE_ALL', 'CATEGORY_EXPAND_ALL', 'POST_CONNECTION_OPEN', 'USER_GUILD_SETTINGS_FULL_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 83;
@@ -1313,7 +1313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['LOGOUT', 'POST_CONNECTION_OPEN', 'CONNECTION_OPEN_SUPPLEMENTAL', 'OVERLAY_INITIALIZE', 'CURRENT_USER_UPDATE', 'GUILD_CREATE', 'GUILD_MEMBERS_CHUNK_BATCH', 'GUILD_MEMBER_ADD', 'GUILD_MEMBER_UPDATE', 'RELATIONSHIP_ADD', 'RELATIONSHIP_UPDATE', 'RELATIONSHIP_REMOVE', 'CHANNEL_CREATE', 'CHANNEL_UPDATES', 'CHANNEL_RECIPIENT_ADD', 'PASSIVE_UPDATE_V2', 'THREAD_LIST_SYNC', 'LOAD_FORUM_POSTS', 'LOAD_MESSAGES_SUCCESS', 'SEARCH_MESSAGES_SUCCESS', 'LOAD_THREADS_SUCCESS', 'LOAD_ARCHIVED_THREADS_SUCCESS', 'LOAD_PINNED_MESSAGES_SUCCESS', 'GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS', 'MESSAGE_CREATE', 'MESSAGE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 84;
@@ -1329,7 +1329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'OVERLAY_INITIALIZE', 'USER_SETTINGS_PROTO_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 85;
@@ -1344,7 +1344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 86;
@@ -1360,7 +1360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'BILLING_USER_OFFER_FETCH_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 87;
@@ -1376,7 +1376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'LOGOUT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 88;
@@ -1393,7 +1393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SELECT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 89;
@@ -1408,7 +1408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_UPDATES', 'VOICE_STATE_UPDATES'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 90;
@@ -1423,7 +1423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SELECT', 'VOICE_STATE_UPDATES'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 91;
@@ -1438,7 +1438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MEDIA_ENGINE_NOISE_CANCELLATION_ERROR', 'MEDIA_ENGINE_VOICE_ACTIVITY_DETECTION_ERROR'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 92;
@@ -1453,7 +1453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CONNECTION_OPEN_SUPPLEMENTAL', 'GUILD_SETTINGS_CLOSE', 'USER_SETTINGS_MODAL_CLOSE', 'NOTIFICATION_SETTINGS_MODAL_CLOSE', 'PREMIUM_PAYMENT_MODAL_CLOSE', 'EMAIL_VERIFICATION_MODAL_CLOSE', 'IFE_EXPERIMENT_SEARCH_MODAL_CLOSE', 'CREATE_INVITE_MODAL_CLOSE', 'QUICKSWITCHER_HIDE', 'EMAIL_VERIFICATION_MODAL_OPEN', 'USER_REQUIRED_ACTION_UPDATE', 'GUILD_SETTINGS_OPEN', 'NOTIFICATION_SETTINGS_MODAL_OPEN', 'CREATE_INVITE_MODAL_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 93;
@@ -1468,7 +1468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VOICE_CHANNEL_SELECT', 'RTC_CONNECTION_STATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 94;
@@ -1483,7 +1483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'MESSAGE_UPDATE', 'LOAD_MESSAGES_SUCCESS', 'LOAD_MESSAGES_AROUND_SUCCESS', 'LOAD_RECENT_MENTIONS_SUCCESS', 'LOAD_PINNED_MESSAGES_SUCCESS', 'SEARCH_MESSAGES_SUCCESS', 'MOD_VIEW_SEARCH_MESSAGES_SUCCESS', 'LOAD_THREADS_SUCCESS', 'LOAD_ARCHIVED_THREADS_SUCCESS', 'LOAD_FORUM_POSTS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 95;
@@ -1499,7 +1499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['RTC_CONNECTION_FLAGS', 'RTC_CONNECTION_STATE', 'POST_CONNECTION_OPEN', 'RTC_CONNECTION_USERS_MERGED', 'CLIPS_ALLOW_VOICE_RECORDING_UPDATE', 'CLIPS_SETTINGS_UPDATE', 'CLIPS_INIT_FAILURE', 'STREAM_START', 'RUNNING_GAMES_CHANGE', 'RUNNING_GAME_TOGGLE_DETECTION', 'CLIPS_RESTART', 'RTC_CONNECTION_VIDEO'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 96;
@@ -1515,7 +1515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CHANNEL_CREATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 97;
@@ -1531,7 +1531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MESSAGE_ACK', 'CHANNEL_SELECT', 'POST_CONNECTION_OPEN', 'EXPERIMENT_OVERRIDE_BUCKET', 'EXPERIMENTS_FETCH_SUCCESS', 'APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 98;
@@ -1547,7 +1547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CONNECTION_RESUMED', 'CONNECTION_CLOSED', 'CONNECTION_INTERRUPTED', 'SELF_PRESENCE_STORE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 99;
@@ -1563,7 +1563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['VIBING_WUMPUS_PLAY_MUSIC', 'VIBING_WUMPUS_STOP_MUSIC', 'VIBING_WUMPUS_PAUSE_MUSIC'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 100;
@@ -1579,7 +1579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CONNECTION_CLOSED', 'IDLE', 'WINDOW_FOCUS', 'CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN', 'CONTENT_INVENTORY_MANUAL_REFRESH', 'CONTENT_INVENTORY_INBOX_STALE', 'SPOTIFY_NEW_TRACK', 'GAME_PROFILE_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 101;
@@ -1595,7 +1595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['QUESTS_FETCH_CURRENT_QUESTS_BEGIN', 'POST_CONNECTION_OPEN', 'RUNNING_GAMES_CHANGE', 'RUNNING_NON_GAMES_CHANGE', 'USER_SETTINGS_PROTO_UPDATE', 'LOGOUT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 102;
@@ -1610,7 +1610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['QUESTS_VISIBLE_MOBILE_MESSAGES_CHANGED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 103;
@@ -1627,7 +1627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MESSAGE_CREATE', 'MESSAGE_SEND_FAILED'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 104;
@@ -1643,7 +1643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 105;
@@ -1658,7 +1658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'USER_SETTINGS_PROTO_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 106;
@@ -1673,7 +1673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'MESSAGE_UPDATE', 'LOAD_MESSAGES_SUCCESS', 'LOAD_MESSAGES_AROUND_SUCCESS', 'LOAD_RECENT_MENTIONS_SUCCESS', 'LOAD_PINNED_MESSAGES_SUCCESS', 'SEARCH_MESSAGES_SUCCESS', 'MOD_VIEW_SEARCH_MESSAGES_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 107;
@@ -1688,7 +1688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'LOGIN_SUCCESS', 'LOGIN_RESET', 'LOGOUT'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 108;
@@ -1705,7 +1705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 109;
@@ -1720,7 +1720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'MESSAGE_UPDATE', 'LOAD_MESSAGES_SUCCESS', 'LOAD_MESSAGES_AROUND_SUCCESS', 'LOAD_RECENT_MENTIONS_SUCCESS', 'LOAD_PINNED_MESSAGES_SUCCESS', 'SEARCH_MESSAGES_SUCCESS', 'MOD_VIEW_SEARCH_MESSAGES_SUCCESS'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 110;
@@ -1736,7 +1736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['MEDIA_ENGINE_SET_AUDIO_ENABLED', 'AUDIO_INPUT_DETECTED', 'AUDIO_SET_DISPLAY_SILENCE_WARNING', 'CERTIFIED_DEVICES_SET', 'AUDIO_SET_INPUT_DEVICE', 'AUDIO_SET_OUTPUT_DEVICE', 'MEDIA_ENGINE_DEVICES', 'RTC_CONNECTION_STATE', 'VOICE_STATE_UPDATES', 'MEDIA_ENGINE_SET_GO_LIVE_SOURCE', 'MEDIA_ENGINE_SOUNDSHARE_FAILED', 'MEDIA_ENGINE_NOISE_CANCELLATION_ERROR', 'MEDIA_ENGINE_VOICE_ACTIVITY_DETECTION_ERROR', 'MEDIA_ENGINE_VIDEO_STATE_CHANGED', 'NATIVE_SCREEN_SHARE_PICKER_UPDATE', 'NATIVE_SCREEN_SHARE_PICKER_ERROR', 'MEDIA_SESSION_JOINED', 'RTC_CONNECTION_UPDATE_ID', 'RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS', 'REPORT_AV_ERROR', 'VIDEO_STREAM_READY_TIMEOUT', 'CLEAR_VIDEO_STREAM_READY_TIMEOUT', 'RTC_CONNECTION_VIDEO', 'STREAM_CLOSE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 111;
@@ -1752,7 +1752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['STREAM_WATCH', 'STREAM_START', 'STREAM_CREATE', 'STREAM_UPDATE', 'STREAM_DELETE', 'STREAM_CLOSE', 'CALL_UPDATE', 'CHANNEL_UPDATES', 'VOICE_CHANNEL_SELECT', 'VOICE_STATE_UPDATES'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 112;
@@ -1768,7 +1768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = new Array(0);
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 113;
@@ -1784,7 +1784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN', 'CHANNEL_SELECT', 'CHANNEL_CREATE', 'CHANNEL_DELETE', 'CHANNEL_UPDATES', 'GUILD_CREATE', 'GUILD_UPDATE', 'GUILD_DELETE', 'LOGOUT', 'RELATIONSHIP_ADD', 'RELATIONSHIP_REMOVE', 'RELATIONSHIP_UPDATE', 'THREAD_CREATE', 'THREAD_DELETE', 'THREAD_UPDATE', 'USER_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 114;
@@ -1800,7 +1800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['CONNECTION_OPEN_SUPPLEMENTAL', 'SAFETY_FLOWS_MODAL_OPEN', 'USER_REQUIRED_ACTION_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 115;
@@ -1816,7 +1816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['USER_APPLICATION_IDENTITY_UPDATE', 'USER_APPLICATION_IDENTITY_REMOVE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 116;
@@ -1831,7 +1831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['APP_STATE_UPDATE'];
     var0.actions = var7;
-    var7 = function() { // Original name: inlineRequire, environment: var6
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 117;
@@ -1846,7 +1846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var6 = function() { // Original name: inlineRequire, environment: var6
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 118;

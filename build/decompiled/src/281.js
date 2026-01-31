@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun4382: for (var _fun4382_ip = 0;;) switch (_fun4382_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var3 = var1.Component;
     var1 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: TouchableNativeFeedback, environment: var5
+        var3 = function() {
             _fun4386: for (var _fun4386_ip = 0;;) switch (_fun4386_ip) {
                 case 0:
                     var3 = this;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '_createPressabilityConfig';
         var4.key = var0;
-        var0 = function() { // Original name: _createPressabilityConfig, environment: var5
+        var0 = function() {
             _fun4387: for (var _fun4387_ip = 0;;) switch (_fun4387_ip) {
                 case 0:
                     var2 = this;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.props;
                     var2 = var2.onPress;
                     var0.onPress = var2;
-                    var2 = function(arg0) { // Original name: onPressIn, environment: var1
+                    var2 = function arg0() {
                         _fun4388: for (var _fun4388_ip = 0;;) switch (_fun4388_ip) {
                             case 0:
                                 var2 = arg0;
@@ -296,7 +296,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onPressIn = var2;
-                    var2 = function(arg0) { // Original name: onPressMove, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2._dispatchHotspotUpdate;
                         var0 = arg0;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.onPressMove = var2;
-                    var1 = function(arg0) { // Original name: onPressOut, environment: var1
+                    var1 = function arg0() {
                         _fun4390: for (var _fun4390_ip = 0;;) switch (_fun4390_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
@@ -340,7 +340,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_dispatchPressedStateChange';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _dispatchPressedStateChange, environment: var5
+        var6 = function arg0() {
             _fun4391: for (var _fun4391_ip = 0;;) switch (_fun4391_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -384,7 +384,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_dispatchHotspotUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _dispatchHotspotUpdate, environment: var5
+        var6 = function arg0() {
             _fun4392: for (var _fun4392_ip = 0;;) switch (_fun4392_ip) {
                 case 0:
                     var0 = arg0;
@@ -449,7 +449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var6 = function() { // Original name: render, environment: var5
+        var6 = function() {
             _fun4393: for (var _fun4393_ip = 0;;) switch (_fun4393_ip) {
                 case 0:
                     var0 = this;
@@ -880,7 +880,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0, arg1() {
             var3 = this;
             var0 = var3.state;
             var2 = var0.pressability;
@@ -896,7 +896,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidMount';
         var4.key = var6;
-        var6 = function() { // Original name: componentDidMount, environment: var5
+        var6 = function() {
             var3 = this;
             var0 = var3.state;
             var2 = var0.pressability;
@@ -912,7 +912,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var5 = function() { // Original name: componentWillUnmount, environment: var5
+        var5 = function() {
             var0 = this;
             var0 = var0.state;
             var1 = var0.pressability;
@@ -992,7 +992,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.canUseNativeForeground = var3;
-    var3 = function(arg0, arg1) { // Original name: getBackgroundProp, environment: var4
+    var3 = function arg0, arg1() {
         _fun4401: for (var _fun4401_ip = 0;;) switch (_fun4401_ip) {
             case 0:
                 var2 = arg0;

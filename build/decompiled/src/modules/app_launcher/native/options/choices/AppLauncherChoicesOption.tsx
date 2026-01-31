@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/choices/AppLauncherChoicesOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherChoicesOption, environment: var1
+    var1 = function arg0() {
         _fun108104: for (var _fun108104_ip = 0;;) switch (_fun108104_ip) {
             case 0:
                 var1 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var7.index;
                         case 133:
                             var2.initChoiceIndex = var6;
-                            var6 = function(arg0, arg1) { // Original name: onChoiceSelect, environment: var6
+                            var6 = function arg0, arg1() {
                                 var2 = arg0;
                                 var4 = _closure2_slot6;
                                 var3 = {};

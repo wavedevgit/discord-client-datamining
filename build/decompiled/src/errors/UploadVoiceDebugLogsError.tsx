@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var3 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function(arg0) { // Original name: UploadVoiceDebugLogsError, environment: var1
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'displayMessage';
         var0.key = var4;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             _fun28830: for (var _fun28830_ip = 0;;) switch (_fun28830_ip) {
                 case 0:
                     var0 = this;

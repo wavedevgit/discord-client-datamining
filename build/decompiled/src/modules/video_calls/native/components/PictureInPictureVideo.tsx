@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1) { // Original name: areParticipantsEqual, environment: var3
+    var1 = function arg0, arg1() {
         _fun64227: for (var _fun64227_ip = 0;;) switch (_fun64227_ip) {
             case 0:
                 var4 = arg0;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1 = var5.bind(var6)(var2, var0, var1);
-                var8 = function() { // Original name: onScreenshareTap, environment: var9
+                var8 = function() {
                     _fun64230: for (var _fun64230_ip = 0;;) switch (_fun64230_ip) {
                         case 0:
                             var2 = _closure1_slot11;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var6 = function() { // Original name: onPipTap, environment: var9
+                var6 = function() {
                     _fun64231: for (var _fun64231_ip = 0;;) switch (_fun64231_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.participant = var12;
                 var0.channel = var14;
-                var14 = function() { // Original name: onSingleTap, environment: var9
+                var14 = function() {
                     _fun64232: for (var _fun64232_ip = 0;;) switch (_fun64232_ip) {
                         case 0:
                             var2 = _closure1_slot7;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.ResizeMode;
                 var10 = var10.COVER;
                 var4.resizeMode = var10;
-                var9 = function() { // Original name: onSingleTap, environment: var9
+                var9 = function() {
                     _fun64233: for (var _fun64233_ip = 0;;) switch (_fun64233_ip) {
                         case 0:
                             var1 = _closure2_slot3;

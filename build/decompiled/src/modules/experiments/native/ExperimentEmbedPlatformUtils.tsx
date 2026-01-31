@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/experiments/native/ExperimentEmbedPlatformUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.EXPERIMENT_EMBED_URL_REGEX = var3;
-    var1 = function(arg0, arg1) { // Original name: handleCodedLinkExperimentEmbedTap, environment: var1
+    var1 = function arg0, arg1() {
         _fun78689: for (var _fun78689_ip = 0;;) switch (_fun78689_ip) {
             case 0:
                 var0 = arg0;

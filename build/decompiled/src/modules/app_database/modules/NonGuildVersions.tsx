@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function() { // Original name: NonGuildVersions, environment: var5
+        var2 = function() {
             _fun93264: for (var _fun93264_ip = 0;;) switch (_fun93264_ip) {
                 case 0:
                     var3 = this;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var2 = var5.bind(var0)(var3, var2);
                     var2 = {};
-                    var5 = function(arg0, arg1) { // Original name: CONNECTION_OPEN, environment: var1
+                    var5 = function arg0, arg1() {
                         var3 = _closure3_slot0;
                         var2 = var3.handleConnectionOpen;
                         var1 = arg0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.CONNECTION_OPEN = var5;
-                    var5 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC, environment: var1
+                    var5 = function arg0, arg1() {
                         var3 = _closure3_slot0;
                         var2 = var3.handleConnectionOpen;
                         var1 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var6.bind(var1)(var0);
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: getCommittedVersions, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpen';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun93273: for (var _fun93273_ip = 0;;) switch (_fun93273_ip) {
                 case 0:
                     var3 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetInMemoryState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = undefined;
             return var0;
         };

@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
     var2.reflectionLongConvert = var0;
-    var1 = function(arg0, arg1) { // Original name: reflectionLongConvert, environment: var1
+    var1 = function arg0, arg1() {
         _fun14948: for (var _fun14948_ip = 0;;) switch (_fun14948_ip) {
             case 0:
                 var1 = arg0;

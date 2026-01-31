@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function() { // Original name: shouldNavigate, environment: var1
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var4;
-    var0 = function(arg0, arg1) { // Original name: maybeExternallyNavigate, environment: var1
+    var0 = function arg0, arg1() {
         _fun13399: for (var _fun13399_ip = 0;;) switch (_fun13399_ip) {
             case 0:
                 var3 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var3 = function(arg0, arg1) { // Original name: transitionTo, environment: var1
+    var3 = function arg0, arg1() {
         _fun13401: for (var _fun13401_ip = 0;;) switch (_fun13401_ip) {
             case 0:
                 var6 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.shouldNavigate = var4;
     var2.transitionTo = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: transitionToGuild, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var5 = arg0;
         var4 = arg1;
         var2 = arg2;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.transitionToGuild = var3;
-    var3 = function() { // Original name: currentRouteHasBackNavigation, environment: var1
+    var3 = function() {
         _fun13404: for (var _fun13404_ip = 0;;) switch (_fun13404_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.currentRouteHasBackNavigation = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: replaceWith, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun13405: for (var _fun13405_ip = 0;;) switch (_fun13405_ip) {
             case 0:
                 var5 = arg0;
@@ -352,22 +352,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.replaceWith = var3;
-    var3 = function() { // Original name: getHistory, environment: var1
+    var3 = function() {
         var0 = _closure1_slot2;
         return var0;
     };
     var2.getHistory = var3;
-    var3 = function() { // Original name: getLastRouteChangeSource, environment: var1
+    var3 = function() {
         var0 = _closure1_slot3;
         return var0;
     };
     var2.getLastRouteChangeSource = var3;
-    var3 = function() { // Original name: getLastRouteChangeSourceLocationStack, environment: var1
+    var3 = function() {
         var0 = _closure1_slot4;
         return var0;
     };
     var2.getLastRouteChangeSourceLocationStack = var3;
-    var3 = function(arg0) { // Original name: isValidFingerprintRoute, environment: var1
+    var3 = function arg0() {
         _fun13409: for (var _fun13409_ip = 0;;) switch (_fun13409_ip) {
             case 0:
                 var1 = null;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isValidFingerprintRoute = var3;
-    var3 = function(arg0) { // Original name: getFingerprintLocation, environment: var1
+    var3 = function arg0() {
         _fun13410: for (var _fun13410_ip = 0;;) switch (_fun13410_ip) {
             case 0:
                 var0 = arg0;
@@ -625,12 +625,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFingerprintLocation = var3;
-    var3 = function() { // Original name: hasNavigated, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.hasNavigated = var3;
-    var3 = function() { // Original name: back, environment: var1
+    var3 = function() {
         _fun13412: for (var _fun13412_ip = 0;;) switch (_fun13412_ip) {
             case 0:
                 var2 = _closure1_slot11;
@@ -651,7 +651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.back = var3;
-    var1 = function() { // Original name: forward, environment: var1
+    var1 = function() {
         _fun13413: for (var _fun13413_ip = 0;;) switch (_fun13413_ip) {
             case 0:
                 var2 = _closure1_slot11;

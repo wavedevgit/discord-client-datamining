@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function() { // Original name: getDevServer, environment: var0
+    var0 = function() {
         _fun10193: for (var _fun10193_ip = 0;;) switch (_fun10193_ip) {
             case 0:
                 var0 = _closure1_slot2;

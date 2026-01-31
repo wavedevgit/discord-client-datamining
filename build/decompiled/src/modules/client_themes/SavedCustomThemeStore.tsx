@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun28011: for (var _fun28011_ip = 0;;) switch (_fun28011_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: validateSavedTheme, environment: var4
+    var0 = function arg0() {
         _fun28014: for (var _fun28014_ip = 0;;) switch (_fun28014_ip) {
             case 0:
                 var4 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: SavedCustomThemeStore, environment: var5
+        var3 = function() {
             _fun28016: for (var _fun28016_ip = 0;;) switch (_fun28016_ip) {
                 case 0:
                     var3 = this;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun28017: for (var _fun28017_ip = 0;;) switch (_fun28017_ip) {
                 case 0:
                     var0 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun28018: for (var _fun28018_ip = 0;;) switch (_fun28018_ip) {
                 case 0:
                     var0 = {};
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSavedCustomTheme';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun28019: for (var _fun28019_ip = 0;;) switch (_fun28019_ip) {
                 case 0:
                     var2 = _closure1_slot9;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasSavedCustomThemes';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun28021: for (var _fun28021_ip = 0;;) switch (_fun28021_ip) {
                 case 0:
                     var0 = _closure1_slot9;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetching';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot10;
             var0 = _closure1_slot8;
             var0 = var0.IS_FETCHING;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetched';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot10;
             var0 = _closure1_slot8;
             var0 = var0.HAS_FETCHED;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasError';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = _closure1_slot10;
             var0 = _closure1_slot8;
             var0 = var0.ERROR;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var14 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function() { // Original name: handleCustomThemesFetchStart, environment: var4
+    var9 = function() {
         var0 = _closure1_slot8;
         var0 = var0.IS_FETCHING;
         _closure1_slot10 = var0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SAVED_CUSTOM_THEMES_FETCH_START = var9;
-    var9 = function(arg0) { // Original name: SAVED_CUSTOM_THEMES_FETCH_SUCCESS, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.themes;
         var0 = _closure1_slot8;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SAVED_CUSTOM_THEMES_FETCH_SUCCESS = var9;
-    var4 = function(arg0) { // Original name: SAVED_CUSTOM_THEMES_FETCH_FAILURE, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var4 = var0.error;
         var1 = _closure1_slot8;

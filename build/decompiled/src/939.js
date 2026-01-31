@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.targetAttribute = var5;
     var3['prompts/get'] = var4;
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1) { // Original name: extractTargetInfo, environment: var1
+    var3 = function arg0, arg1() {
         _fun9770: for (var _fun9770_ip = 0;;) switch (_fun9770_ip) {
             case 0:
                 var1 = arg1;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractTargetInfo = var3;
-    var1 = function(arg0, arg1) { // Original name: getRequestArguments, environment: var1
+    var1 = function arg0, arg1() {
         _fun9771: for (var _fun9771_ip = 0;;) switch (_fun9771_ip) {
             case 0:
                 var1 = arg1;

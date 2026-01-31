@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: hashDelete, environment: var0
+    var1 = function arg0() {
         _fun8287: for (var _fun8287_ip = 0;;) switch (_fun8287_ip) {
             case 0:
                 var3 = arg0;

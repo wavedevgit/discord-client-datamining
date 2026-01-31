@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.VoiceActivityNotificationUserExperiment = var4;
     var2.VoiceActivityNotificationGuildExperiment = var3;
-    var3 = function(arg0) { // Original name: useVoiceActivityNotificationSettingsExperiment, environment: var1
+    var3 = function arg0() {
         _fun69821: for (var _fun69821_ip = 0;;) switch (_fun69821_ip) {
             case 0:
                 var4 = arg0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useVoiceActivityNotificationSettingsExperiment = var3;
-    var1 = function(arg0) { // Original name: hasVoiceChannelActivityNotifsEnabled, environment: var1
+    var1 = function arg0() {
         _fun69822: for (var _fun69822_ip = 0;;) switch (_fun69822_ip) {
             case 0:
                 var7 = arg0;

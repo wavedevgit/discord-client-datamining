@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createVoiceChannelLinkEmbed, environment: var1
+    var1 = function arg0, arg1() {
         _fun92353: for (var _fun92353_ip = 0;;) switch (_fun92353_ip) {
             case 0:
                 var2 = arg0;

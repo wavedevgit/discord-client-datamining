@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function(arg0) { // Original name: showModal, environment: var0
+    var5 = function arg0() {
         _fun83611: for (var _fun83611_ip = 0;;) switch (_fun83611_ip) {
             case 0:
                 var0 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.showModal = var5;
-    var0 = function() { // Original name: hideModal, environment: var0
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;

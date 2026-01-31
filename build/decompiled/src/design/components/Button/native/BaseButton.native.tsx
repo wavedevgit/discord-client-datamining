@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[var26] = var10;
                 var26 = 'onPress';
                 var1[var26] = var9;
-                var27 = function(arg0) { // Original name: onPressIn, environment: var25
+                var27 = function arg0() {
                     _fun37435: for (var _fun37435_ip = 0;;) switch (_fun37435_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var26 = 'onPressIn';
                 var1[var26] = var27;
-                var26 = function(arg0) { // Original name: onPressOut, environment: var25
+                var26 = function arg0() {
                     _fun37436: for (var _fun37436_ip = 0;;) switch (_fun37436_ip) {
                         case 0:
                             var1 = _closure2_slot3;

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.VOICE;
     var1.parent = var8;
-    var8 = function() { // Original name: useAutomaticGainControlSettingValue, environment: var7
+    var8 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.handleAutomaticGainControlChange;
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useAutomaticGainControlSettingDescription, environment: var7
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;

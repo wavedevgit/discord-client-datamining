@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: aggregateExceptionsFromError, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
         _fun98669: for (var _fun98669_ip = 0;;) switch (_fun98669_ip) {
             case 0:
                 var13 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: applyExceptionGroupFieldsForParentException, environment: var1
+    var0 = function arg0, arg1() {
         _fun98671: for (var _fun98671_ip = 0;;) switch (_fun98671_ip) {
             case 0:
                 var1 = arg0;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: applyExceptionGroupFieldsForChildException, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun98672: for (var _fun98672_ip = 0;;) switch (_fun98672_ip) {
             case 0:
                 var1 = arg0;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var1 = function(arg0, arg1) { // Original name: applyAggregateErrorsToEvent, environment: var1
+    var1 = function arg0, arg1() {
         _fun98673: for (var _fun98673_ip = 0;;) switch (_fun98673_ip) {
             case 0:
                 var0 = undefined;
@@ -398,7 +398,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var13 = var8;
                 var12 = 0;
                 var3 = var20[var7](var19, var18, var17, var16, var15, var14, var13, var12, var11);
-                var1 = function(arg0, arg1) { // Original name: truncateAggregateExceptions, environment: var1
+                var1 = function arg0, arg1() {
                     var2 = arg0;
                     var1 = arg1;
                     var _closure3_slot0 = var1;

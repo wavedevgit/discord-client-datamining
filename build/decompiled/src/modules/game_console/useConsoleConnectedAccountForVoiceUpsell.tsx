@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useConsoleConnectedAccountForVoiceUpsell, environment: var1
+    var1 = function() {
         _fun69446: for (var _fun69446_ip = 0;;) switch (_fun69446_ip) {
             case 0:
                 var6 = _closure1_slot0;

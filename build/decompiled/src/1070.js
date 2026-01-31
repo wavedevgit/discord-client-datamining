@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: getDefaultIntegrations, environment: var0
+    var2 = function arg0() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var1 = 0;
@@ -74,13 +74,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = function() { // Original name: forceLoad, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.forceLoad = var3;
     var1.getDefaultIntegrations = var2;
-    var2 = function() { // Original name: init, environment: var0
+    var2 = function() {
         _fun10959: for (var _fun10959_ip = 0;;) switch (_fun10959_ip) {
             case 0:
                 var5 = undefined;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.init = var2;
-    var0 = function(arg0) { // Original name: onLoad, environment: var0
+    var0 = function arg0() {
         var1 = arg0;
         var0 = undefined;
         var1 = var1.bind(var0)();

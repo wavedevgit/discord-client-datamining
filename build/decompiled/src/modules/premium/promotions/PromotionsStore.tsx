@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun57684: for (var _fun57684_ip = 0;;) switch (_fun57684_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: getLatestActiveOutboundPromotionStartDate, environment: var3
+    var0 = function() {
         _fun57687: for (var _fun57687_ip = 0;;) switch (_fun57687_ip) {
             case 0:
                 var0 = global;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: initializeFromUserSettings, environment: var3
+    var0 = function() {
         _fun57688: for (var _fun57688_ip = 0;;) switch (_fun57688_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PromotionsStore, environment: var5
+        var3 = function() {
             _fun57690: for (var _fun57690_ip = 0;;) switch (_fun57690_ip) {
                 case 0:
                     var3 = this;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun57691: for (var _fun57691_ip = 0;;) switch (_fun57691_ip) {
                 case 0:
                     var1 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'outboundPromotions';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'outboundRecurringPromotions';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastSeenOutboundPromotionStartDate';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             var0 = var0.lastSeenOutboundPromotionStartDate;
             return var0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastDismissedOutboundPromotionStartDate';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastFetchedActivePromotions';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingActivePromotions';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedConsumedInboundPromotionId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             var0 = var0.hasFetchedConsumedInboundPromotionId;
             return var0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'consumedInboundPromotionId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             var0 = var0.consumedInboundPromotionId;
             return var0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'bogoPromotion';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingActiveBogoPromotion';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastFetchedActiveBogoPromotion';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'promotionsByType';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -482,7 +482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPromotionByTypeAndId';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun57704: for (var _fun57704_ip = 0;;) switch (_fun57704_ip) {
                 case 0:
                     var1 = _closure1_slot16;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMarketingComponentByType';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun57706: for (var _fun57706_ip = 0;;) switch (_fun57706_ip) {
                 case 0:
                     var2 = _closure1_slot19;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGiftPromotionRewardSkuIds';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun57707: for (var _fun57707_ip = 0;;) switch (_fun57707_ip) {
                 case 0:
                     var1 = _closure1_slot16;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var14 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleActivePromotionsFetchSuccess, environment: var3
+    var8 = function arg0() {
         _fun57709: for (var _fun57709_ip = 0;;) switch (_fun57709_ip) {
             case 0:
                 var0 = arg0;
@@ -791,14 +791,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.ACTIVE_PROMOTIONS_FETCH_SUCCESS = var8;
-    var8 = function() { // Original name: handleActivePromotionsFetchStart, environment: var3
+    var8 = function() {
         var0 = true;
         _closure1_slot14 = var0;
         var0 = undefined;
         return var0;
     };
     var1.ACTIVE_PROMOTIONS_FETCH = var8;
-    var8 = function() { // Original name: handleActivePromotionsFetchFail, environment: var3
+    var8 = function() {
         var1 = {};
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ACTIVE_PROMOTIONS_FETCH_FAIL = var8;
-    var8 = function(arg0) { // Original name: handleActiveBogoPromotionFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.activePromotion;
         var0 = {};
@@ -886,14 +886,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS = var8;
-    var8 = function() { // Original name: handleActiveBogoPromotionFetchStart, environment: var3
+    var8 = function() {
         var0 = true;
         _closure1_slot12 = var0;
         var0 = undefined;
         return var0;
     };
     var1.ACTIVE_BOGO_PROMOTION_FETCH = var8;
-    var8 = function() { // Original name: handleActiveBogoPromotionFetchFail, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot11 = var0;
         var0 = false;
@@ -902,7 +902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ACTIVE_BOGO_PROMOTION_FETCH_FAIL = var8;
-    var8 = function() { // Original name: handleDismissOutboundPromotionNotice, environment: var3
+    var8 = function() {
         _fun57717: for (var _fun57717_ip = 0;;) switch (_fun57717_ip) {
             case 0:
                 var0 = global;
@@ -943,7 +943,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.OUTBOUND_PROMOTION_NOTICE_DISMISS = var8;
-    var8 = function() { // Original name: handleOutboundPromotionsSeen, environment: var3
+    var8 = function() {
         _fun57718: for (var _fun57718_ip = 0;;) switch (_fun57718_ip) {
             case 0:
                 var0 = global;
@@ -986,7 +986,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.OUTBOUND_PROMOTIONS_SEEN = var8;
-    var8 = function() { // Original name: handleLogout, environment: var3
+    var8 = function() {
         var0 = false;
         var2 = null;
         var3 = {
@@ -1050,7 +1050,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var8;
-    var3 = function(arg0) { // Original name: handlePremiumMarketingPreview, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.data;
         var2 = _closure1_slot9;

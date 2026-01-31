@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun60583: for (var _fun60583_ip = 0;;) switch (_fun60583_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: WebAuthnStore, environment: var5
+        var3 = function() {
             _fun60587: for (var _fun60587_ip = 0;;) switch (_fun60587_ip) {
                 case 0:
                     var3 = this;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'hasFetchedCredentials';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasCredentials';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var1 = var0.length;
             var0 = 0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCredentials';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPendingRegisterTrigger';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleReset, environment: var3
+    var8 = function() {
         var0 = new Array(0);
         _closure1_slot8 = var0;
         var0 = false;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleWebAuthnCredentialsLoaded, environment: var3
+    var8 = function arg0() {
         _fun60593: for (var _fun60593_ip = 0;;) switch (_fun60593_ip) {
             case 0:
                 var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MFA_WEBAUTHN_CREDENTIALS_LOADED = var8;
-    var8 = function(arg0) { // Original name: handleAuthenticatorCreate, environment: var3
+    var8 = function arg0() {
         _fun60594: for (var _fun60594_ip = 0;;) switch (_fun60594_ip) {
             case 0:
                 var0 = arg0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.AUTHENTICATOR_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleAuthenticatorUpdate, environment: var3
+    var8 = function arg0() {
         _fun60596: for (var _fun60596_ip = 0;;) switch (_fun60596_ip) {
             case 0:
                 var0 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.AUTHENTICATOR_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleAuthenticatorDelete, environment: var3
+    var8 = function arg0() {
         _fun60598: for (var _fun60598_ip = 0;;) switch (_fun60598_ip) {
             case 0:
                 var0 = arg0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.AUTHENTICATOR_DELETE = var8;
-    var8 = function() { // Original name: handleTriggerRegister, environment: var3
+    var8 = function() {
         _fun60600: for (var _fun60600_ip = 0;;) switch (_fun60600_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WEBAUTHN_TRIGGER_REGISTER = var8;
-    var3 = function() { // Original name: handleClearRegisterTrigger, environment: var3
+    var3 = function() {
         _fun60601: for (var _fun60601_ip = 0;;) switch (_fun60601_ip) {
             case 0:
                 var2 = _closure1_slot9;

@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/StageChannelUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: fillChunk, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun51805: for (var _fun51805_ip = 0;;) switch (_fun51805_ip) {
             case 0:
                 var1 = arg1;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fillChunk = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: summarizeUsernamesParticipating, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun51807: for (var _fun51807_ip = 0;;) switch (_fun51807_ip) {
             case 0:
                 var0 = arg1;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.summarizeUsernamesParticipating = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: summarizeUsernamesParticipatingWithSpeakerNickname, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun51808: for (var _fun51808_ip = 0;;) switch (_fun51808_ip) {
             case 0:
                 var7 = arg1;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.summarizeUsernamesParticipatingWithSpeakerNickname = var3;
-    var3 = function(arg0, arg1) { // Original name: getRemoveModeratorTooltipHint, environment: var1
+    var3 = function arg0, arg1() {
         _fun51809: for (var _fun51809_ip = 0;;) switch (_fun51809_ip) {
             case 0:
                 var2 = arg0;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRemoveModeratorTooltipHint = var3;
-    var3 = function(arg0) { // Original name: getStageChannelMetadata, environment: var1
+    var3 = function arg0() {
         _fun51810: for (var _fun51810_ip = 0;;) switch (_fun51810_ip) {
             case 0:
                 var8 = arg0;
@@ -459,13 +459,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStageChannelMetadata = var3;
-    var1 = function(arg0, arg1) { // Original name: getParticipantNamesText, environment: var1
+    var1 = function arg0, arg1() {
         _fun51811: for (var _fun51811_ip = 0;;) switch (_fun51811_ip) {
             case 0:
                 var2 = arg1;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
-                var7 = function(arg0) { // Original name: getParticipantName, environment: var0
+                var7 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 6;

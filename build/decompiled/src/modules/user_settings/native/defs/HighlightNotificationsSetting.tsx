@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: useHighlightNotifications, environment: var9
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5.bind(var0)(var3);
     var4 = var7.createRoute;
     var3 = {};
-    var11 = function() { // Original name: title, environment: var9
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.title = var11;
     var8 = var8.NOTIFICATIONS;
     var3.parent = var8;
-    var8 = function() { // Original name: useDescription, environment: var9
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var10 = var10.HIGHLIGHT_NOTIFICATIONS;
     var8.route = var10;
-    var9 = function() { // Original name: getComponent, environment: var9
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;

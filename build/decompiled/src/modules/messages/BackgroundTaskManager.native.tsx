@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var8;
             var _closure1_slot1 = var4;
             var _closure1_slot2 = var9;
-            var1 = function(arg0, arg1) { // Original name: backgroundify, environment: var6
+            var1 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var3.backgroundTaskIdentifierInvalid;
         case 145:
             var _closure1_slot5 = var5;
-            var4 = function(arg0) { // Original name: startBackgroundTask, environment: var6
+            var4 = function arg0() {
                 _fun54240: for (var _fun54240_ip = 0;;) switch (_fun54240_ip) {
                     case 0:
                         var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot6 = var4;
-            var3 = function(arg0) { // Original name: endBackgroundTask, environment: var6
+            var3 = function arg0() {
                 _fun54242: for (var _fun54242_ip = 0;;) switch (_fun54242_ip) {
                     case 0:
                         var2 = arg0;

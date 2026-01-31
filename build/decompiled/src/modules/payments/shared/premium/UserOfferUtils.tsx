@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/payments/shared/premium/UserOfferUtils.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: hasUserDiscountExpired, environment: var1
+    var1 = function arg0() {
         _fun55286: for (var _fun55286_ip = 0;;) switch (_fun55286_ip) {
             case 0:
                 var1 = arg0;

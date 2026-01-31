@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var10 = var1.QueryIds;
     var3 = {};
-    var1 = function(arg0, arg1) { // Original name: fetchUserApplicationIdentitiesWithProfiles, environment: var9
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var10 = var10.USER_APPLICATION_IDENTITIES;
     var1.getQueryId = var10;
-    var10 = function(arg0) { // Original name: get, environment: var9
+    var10 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.getUserIdentities;
         var0 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.get = var10;
-    var9 = function(arg0) { // Original name: load, environment: var9
+    var9 = function arg0() {
         var2 = _closure1_slot6;
         var1 = var2.fetchUserApplicationIdentitiesWithProfiles;
         var0 = arg0;

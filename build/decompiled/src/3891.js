@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useContext;
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: usePortalState, environment: var1
+    var1 = function arg0() {
         _fun35271: for (var _fun35271_ip = 0;;) switch (_fun35271_ip) {
             case 0:
                 var2 = _closure1_slot2;

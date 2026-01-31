@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useAnimatedTextStyle, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var9 = var1.index;
         var _closure2_slot0 = var9;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var1];
         var2 = var6.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: o, environment: var0
+        var0 = function() {
             _fun62022: for (var _fun62022_ip = 0;;) switch (_fun62022_ip) {
                 case 0:
                     var1 = _closure2_slot3;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: TabItemCount, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.count;
         var12 = var0.index;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9[var0];
         var10 = var5.bind(var3)(var2);
         var2 = var10.useAnimatedStyle;
-        var1 = function() { // Original name: v, environment: var1
+        var1 = function() {
             var0 = {};
             var8 = _closure1_slot0;
             var9 = _closure1_slot2;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tabs/native/TabItem.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TabItem, environment: var1
+    var1 = function arg0() {
         _fun62026: for (var _fun62026_ip = 0;;) switch (_fun62026_ip) {
             case 0:
                 var3 = arg0;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2[var0];
                 var2 = var1.bind(var3)(var0);
                 var1 = var2.useAnimatedProps;
-                var0 = function() { // Original name: I, environment: var5
+                var0 = function() {
                     var0 = {};
                     var1 = {};
                     var4 = _closure2_slot1;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var0;
                 var20 = var8;
                 var8 = copyDataProperties(var21, var20);
-                var8 = function(arg0) { // Original name: onLayout, environment: var5
+                var8 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 3;

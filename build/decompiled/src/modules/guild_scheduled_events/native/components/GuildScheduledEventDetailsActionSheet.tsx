@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventDetailsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildScheduledEventDetailsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun66068: for (var _fun66068_ip = 0;;) switch (_fun66068_ip) {
             case 0:
                 var0 = arg0;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var6.pageWidth = var23;
                 var6.defaultIndex = var3;
-                var23 = function(arg0) { // Original name: onSetActiveIndex, environment: var21
+                var23 = function arg0() {
                     _fun66075: for (var _fun66075_ip = 0;;) switch (_fun66075_ip) {
                         case 0:
                             var2 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: isUserEligibleBasedOnCurrentOrPreviousSubs, environment: var1
+    var4 = function arg0() {
         _fun57672: for (var _fun57672_ip = 0;;) switch (_fun57672_ip) {
             case 0:
                 var1 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var4;
-    var3 = function() { // Original name: isEligibleForBOGOPromotion, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var3;
-    var0 = function() { // Original name: _isEligibleForBOGOPromotion, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _maybeFetchActiveBogoPromotion, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/premium/PremiumBogoPromotionUtilsCommon.tsx';
     var5 = var6.bind(var7)(var5);
     var2.isUserEligibleBasedOnCurrentOrPreviousSubs = var4;
-    var4 = function() { // Original name: useIsEligibleForBogoPromotion, environment: var1
+    var4 = function() {
         _fun57680: for (var _fun57680_ip = 0;;) switch (_fun57680_ip) {
             case 0:
                 var3 = arguments[0];
@@ -896,7 +896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForBogoPromotion = var4;
     var2.isEligibleForBOGOPromotion = var3;
-    var1 = function() { // Original name: maybeFetchActiveBogoPromotion, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;

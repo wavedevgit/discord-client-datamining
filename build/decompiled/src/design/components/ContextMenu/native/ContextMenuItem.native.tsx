@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/ContextMenu/native/ContextMenuItem.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ContextMenuItem, environment: var1
+    var1 = function arg0() {
         _fun46402: for (var _fun46402_ip = 0;;) switch (_fun46402_ip) {
             case 0:
                 var2 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var23[var9];
                 var15 = var22.bind(var3)(var7);
                 var13 = var15.useAnimatedReaction;
-                var8 = function() { // Original name: p, environment: var0
+                var8 = function() {
                     var1 = _closure2_slot2;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.__workletHash = var7;
                 var7 = _closure1_slot8;
                 var8.__initData = var7;
-                var7 = function(arg0, arg1) { // Original name: h, environment: var0
+                var7 = function arg0, arg1() {
                     _fun46404: for (var _fun46404_ip = 0;;) switch (_fun46404_ip) {
                         case 0:
                             var1 = arg1;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var23[var9];
                 var13 = var22.bind(var3)(var7);
                 var8 = var13.useAnimatedStyle;
-                var7 = function() { // Original name: G, environment: var0
+                var7 = function() {
                     _fun46405: for (var _fun46405_ip = 0;;) switch (_fun46405_ip) {
                         case 0:
                             var1 = _closure2_slot4;

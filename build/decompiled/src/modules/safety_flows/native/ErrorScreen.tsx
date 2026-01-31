@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/ErrorScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ErrorScreen, environment: var1
+    var1 = function() {
         var2 = _closure1_slot5;
         var1 = var2.useState;
         var0 = false;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var16.bind(var3)(var7);
         var9 = var7.Button;
         var7 = {};
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 14;

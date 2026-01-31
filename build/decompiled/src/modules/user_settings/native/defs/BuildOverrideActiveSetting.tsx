@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: useBuildOverrideActive, environment: var8
+    var0 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.RefreshIcon;
     var1.IconComponent = var9;
-    var9 = function() { // Original name: useBuildOverrideActiveDescription, environment: var8
+    var9 = function() {
         _fun87601: for (var _fun87601_ip = 0;;) switch (_fun87601_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useDescription = var9;
-    var9 = function() { // Original name: useHasBuildOverrideActive, environment: var8
+    var9 = function() {
         _fun87602: for (var _fun87602_ip = 0;;) switch (_fun87602_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.usePredicate = var9;
-    var8 = function() { // Original name: handleBuildOverrideActivePress, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

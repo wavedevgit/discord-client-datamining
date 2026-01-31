@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: isVisibleSearchResult, environment: var1
+    var0 = function arg0, arg1() {
         _fun88576: for (var _fun88576_ip = 0;;) switch (_fun88576_ip) {
             case 0:
                 var2 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/settings/native/search/hooks/useSettingSearchResults.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSettingSearchResults, environment: var1
+    var1 = function arg0() {
         var9 = arg0;
         var _closure2_slot0 = var9;
         var7 = _closure1_slot5;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = _closure1_slot6;
             var4 = var5.subscribe;
             var3 = {};
-            var1 = function(arg0, arg1) { // Original name: equalityFn, environment: var0
+            var1 = function arg0, arg1() {
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var1 === var0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var4 = function(arg0) { // Original name: parseParticipant, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.user_id;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0) { // Original name: parseSeat, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.parseParticipant = var4;
     var2.parseSeat = var3;
-    var3 = function(arg0) { // Original name: parseRoom, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.room_id;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.parseRoom = var3;
-    var1 = function(arg0) { // Original name: getHavenSoundControlName, environment: var1
+    var1 = function arg0() {
         _fun96157: for (var _fun96157_ip = 0;;) switch (_fun96157_ip) {
             case 0:
                 var2 = arg0;

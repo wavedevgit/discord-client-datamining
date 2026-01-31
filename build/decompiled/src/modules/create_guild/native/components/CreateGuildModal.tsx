@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getScreens, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun80003: for (var _fun80003_ip = 0;;) switch (_fun80003_ip) {
             case 0:
                 var0 = arg1;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.impressionProperties = var4;
                 var4 = true;
                 var1.fullscreen = var4;
-                var10 = function() { // Original name: headerTitle, environment: var3
+                var10 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.closeCreateGuildModal;
                 var10 = var11.bind(var12)(var10);
                 var1.headerLeft = var10;
-                var10 = function() { // Original name: render, environment: var3
+                var10 = function() {
                     var3 = _closure1_slot10;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -76,12 +76,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot11;
                 var1.impressionProperties = var10;
                 var1.fullscreen = var4;
-                var10 = function() { // Original name: headerTitle, environment: var3
+                var10 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var10;
-                var10 = function(arg0) { // Original name: render, environment: var3
+                var10 = function arg0() {
                     var0 = arg0;
                     var5 = var0.guildTemplate;
                     var3 = _closure1_slot10;
@@ -112,12 +112,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot11;
                 var1.impressionProperties = var10;
                 var1.fullscreen = var4;
-                var10 = function() { // Original name: headerTitle, environment: var3
+                var10 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var10;
-                var10 = function(arg0, arg1) { // Original name: render, environment: var3
+                var10 = function arg0, arg1() {
                     var0 = arg1;
                     var _closure3_slot0 = var0;
                     var3 = _closure1_slot10;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = arg0;
                     var10 = var0;
                     var6 = copyDataProperties(var10, var9);
-                    var6 = function(arg0) { // Original name: onCreate, environment: var5
+                    var6 = function arg0() {
                         _fun80010: for (var _fun80010_ip = 0;;) switch (_fun80010_ip) {
                             case 0:
                                 var0 = arg0;
@@ -224,12 +224,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot11;
                 var1.impressionProperties = var10;
                 var1.fullscreen = var4;
-                var10 = function() { // Original name: headerTitle, environment: var3
+                var10 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var10;
-                var10 = function(arg0) { // Original name: render, environment: var3
+                var10 = function arg0() {
                     var0 = arg0;
                     var0 = var0.guildId;
                     var _closure3_slot0 = var0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = {};
                     var5 = false;
                     var0.closeOnEditInviteLink = var5;
-                    var4 = function() { // Original name: onClose, environment: var4
+                    var4 = function() {
                         _fun80013: for (var _fun80013_ip = 0;;) switch (_fun80013_ip) {
                             case 0:
                                 var2 = _closure3_slot0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
             case 484:
                 var1.headerTitle = var7;
-                var7 = function(arg0) { // Original name: render, environment: var3
+                var7 = function arg0() {
                     var3 = _closure1_slot10;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -366,17 +366,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot11;
                 var1.impressionProperties = var7;
                 var1.fullscreen = var4;
-                var7 = function() { // Original name: headerTitle, environment: var3
+                var7 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var7;
-                var7 = function() { // Original name: headerLeft, environment: var3
+                var7 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerLeft = var7;
-                var7 = function(arg0) { // Original name: render, environment: var3
+                var7 = function arg0() {
                     var0 = arg0;
                     var7 = var0.code;
                     var3 = _closure1_slot10;
@@ -418,17 +418,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.impressionProperties = var5;
                 var1.fullscreen = var4;
                 var1.ignoreKeyboard = var4;
-                var4 = function() { // Original name: headerTitle, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var4;
-                var4 = function() { // Original name: headerLeft, environment: var3
+                var4 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerLeft = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot10;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/CreateGuildModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CreateGuildModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.channel;
         var _closure2_slot0 = var0;

@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: isCommunicationDisabled, environment: var1
+    var3 = function arg0() {
         _fun24486: for (var _fun24486_ip = 0;;) switch (_fun24486_ip) {
             case 0:
                 var4 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_communication_disabled/CommunicationDisabledUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.isCommunicationDisabled = var3;
-    var1 = function(arg0) { // Original name: isMemberCommunicationDisabled, environment: var1
+    var1 = function arg0() {
         _fun24487: for (var _fun24487_ip = 0;;) switch (_fun24487_ip) {
             case 0:
                 var3 = arg0;

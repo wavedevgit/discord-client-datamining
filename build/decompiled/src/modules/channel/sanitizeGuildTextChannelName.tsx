@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/channel/sanitizeGuildTextChannelName.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: sanitizeGuildTextChannelName, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /[\s-~]+/g;

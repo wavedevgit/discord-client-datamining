@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileNameplateEditButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileNameplateEditButton, environment: var1
+    var1 = function arg0() {
         _fun79900: for (var _fun79900_ip = 0;;) switch (_fun79900_ip) {
             case 0:
                 var1 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun79900
                 }
             case 375:
-                var10 = function() { // Original name: renderSectionLabel, environment: var0
+                var10 = function() {
                     _fun79903: for (var _fun79903_ip = 0;;) switch (_fun79903_ip) {
                         case 0:
                             var0 = _closure2_slot3;

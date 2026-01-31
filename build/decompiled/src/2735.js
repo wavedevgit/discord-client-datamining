@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
+    var4 = function arg0() {
         _fun22584: for (var _fun22584_ip = 0;;) switch (_fun22584_ip) {
             case 0:
                 var2 = arg0;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function(arg0, arg1, arg2) { // Original name: differenceInSeconds, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun22585: for (var _fun22585_ip = 0;;) switch (_fun22585_ip) {
             case 0:
                 var4 = arg2;

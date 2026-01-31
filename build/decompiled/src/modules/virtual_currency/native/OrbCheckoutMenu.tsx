@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/virtual_currency/native/OrbCheckoutMenu.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: OrbCheckoutMenu, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var12 = var0.bind(var3)();
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.skuId = var4;
                     var4 = new Array(0);
                     var0.analyticsLocations = var4;
-                    var4 = function() { // Original name: onCheckoutSuccess, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 7;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15 = 'SKU ID';
         var11.label = var15;
         var11.value = var9;
-        var14 = function(arg0) { // Original name: onChange, environment: var14
+        var14 = function arg0() {
             var2 = _closure2_slot1;
             var1 = undefined;
             var0 = arg0;

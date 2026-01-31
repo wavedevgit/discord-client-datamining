@@ -350,7 +350,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.exports = var4;
             var2 = var2.Function;
             var2 = var2.prototype;
-            var3 = function() { // Original name: toString, environment: var1
+            var3 = function() {
                 _fun96914: for (var _fun96914_ip = 0;;) switch (_fun96914_ip) {
                     case 0:
                         var3 = this;

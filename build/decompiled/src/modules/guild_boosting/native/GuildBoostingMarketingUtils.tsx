@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getIconForPerk, environment: var1
+    var1 = function arg0() {
         _fun102397: for (var _fun102397_ip = 0;;) switch (_fun102397_ip) {
             case 0:
                 var3 = arg0;

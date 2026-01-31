@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var6.v4;
         var0 = var0.bind(var6)();
         var4 = var3.bind(var4)(var0);
-        var3 = function(arg0) { // Original name: useAddCoachmark, environment: var0
+        var3 = function arg0() {
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot2;

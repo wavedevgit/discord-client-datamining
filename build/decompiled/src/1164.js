@@ -13,14 +13,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: userInteractionIntegration, environment: var0
+    var2 = function() {
         var0 = {};
         var1 = 'UserInteraction';
         var0.name = var1;
         return var0;
     };
     var1.userInteractionIntegration = var2;
-    var0 = function(arg0) { // Original name: startUserInteractionSpan, environment: var0
+    var0 = function arg0() {
         _fun12701: for (var _fun12701_ip = 0;;) switch (_fun12701_ip) {
             case 0:
                 var3 = arg0;

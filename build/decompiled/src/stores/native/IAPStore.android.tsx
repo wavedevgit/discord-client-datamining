@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun42166: for (var _fun42166_ip = 0;;) switch (_fun42166_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: updateProduct, environment: var3
+    var0 = function arg0() {
         _fun42169: for (var _fun42169_ip = 0;;) switch (_fun42169_ip) {
             case 0:
                 var1 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var8 = function(arg0) { // Original name: skusLoaded, environment: var3
+    var8 = function arg0() {
         _fun42170: for (var _fun42170_ip = 0;;) switch (_fun42170_ip) {
             case 0:
                 var0 = arg0;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: IAPStore, environment: var5
+        var3 = function() {
             _fun42177: for (var _fun42177_ip = 0;;) switch (_fun42177_ip) {
                 case 0:
                     var3 = this;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getProducts';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOfferIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProduct';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun42180: for (var _fun42180_ip = 0;;) switch (_fun42180_ip) {
                 case 0:
                     var2 = _closure1_slot12;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isBusy';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42181: for (var _fun42181_ip = 0;;) switch (_fun42181_ip) {
                 case 0:
                     var0 = _closure1_slot14;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPurchasingProduct';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot14;
             var1 = var2.has;
             var0 = arg0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isReady';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot10;
             var0 = _closure1_slot7;
             var0 = var0.CONNECTED;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasConnectionError';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot10;
             var0 = _closure1_slot7;
             var0 = var0.ERROR;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingDowngrade';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingGoogleSkus';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42186: for (var _fun42186_ip = 0;;) switch (_fun42186_ip) {
                 case 0:
                     var0 = _closure1_slot18;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingProducts';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42187: for (var _fun42187_ip = 0;;) switch (_fun42187_ip) {
                 case 0:
                     var0 = _closure1_slot18;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserCountry';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: updateConnectionState, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.connectionState;
         _closure1_slot10 = var1;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GPLAY_UPDATE_CONNECTION_STATE = var9;
-    var9 = function() { // Original name: handleFetchSubscriptionSkusStart, environment: var3
+    var9 = function() {
         var0 = true;
         _closure1_slot18 = var0;
         var0 = undefined;
@@ -589,14 +589,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.GPLAY_FETCH_SUBSCRIPTION_SKUS_START = var9;
     var1.GPLAY_SUBSCRIPTION_SKUS_LOADED = var8;
-    var9 = function() { // Original name: handleFetchSubscriptionSkusFailed, environment: var3
+    var9 = function() {
         var0 = false;
         _closure1_slot18 = var0;
         var0 = undefined;
         return var0;
     };
     var1.GPLAY_FETCH_SUBSCRIPTION_SKUS_FAILED = var9;
-    var9 = function() { // Original name: handleFetchInAppSkusStart, environment: var3
+    var9 = function() {
         var0 = true;
         _closure1_slot17 = var0;
         var0 = undefined;
@@ -604,14 +604,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.GPLAY_FETCH_IN_APP_SKUS_START = var9;
     var1.GPLAY_IN_APP_SKUS_LOADED = var8;
-    var8 = function() { // Original name: handleFetchInAppSkusFailed, environment: var3
+    var8 = function() {
         var0 = false;
         _closure1_slot17 = var0;
         var0 = undefined;
         return var0;
     };
     var1.GPLAY_FETCH_IN_APP_SKUS_FAILED = var8;
-    var8 = function(arg0) { // Original name: handleVerificationStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.productId;
         var1 = _closure1_slot14;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GPLAY_VERIFICATION_START = var8;
-    var8 = function(arg0) { // Original name: handleVerificationEnd, environment: var3
+    var8 = function arg0() {
         _fun42195: for (var _fun42195_ip = 0;;) switch (_fun42195_ip) {
             case 0:
                 var0 = arg0;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GPLAY_VERIFICATION_END = var8;
-    var8 = function(arg0) { // Original name: handleUpdatePendingDowngrade, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.pendingDowngrade;
         _closure1_slot15 = var1;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GPLAY_UPDATE_PENDING_DOWNGRADE = var8;
-    var8 = function(arg0) { // Original name: handleUpdateIsDowngrading, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.isDowngrading;
         _closure1_slot16 = var1;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GPLAY_UPDATE_IS_DOWNGRADING = var8;
-    var3 = function(arg0) { // Original name: handleSetUserCountry, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.countryCode;
         _closure1_slot19 = var1;

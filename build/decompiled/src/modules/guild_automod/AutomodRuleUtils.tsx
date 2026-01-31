@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var5 = function(arg0, arg1) { // Original name: validateKeywordsOrThrow, environment: var1
+    var5 = function arg0, arg1() {
         _fun115022: for (var _fun115022_ip = 0;;) switch (_fun115022_ip) {
             case 0:
                 var2 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var5;
-    var4 = function(arg0) { // Original name: validateRegexPatternsOrThrow, environment: var1
+    var4 = function arg0() {
         _fun115024: for (var _fun115024_ip = 0;;) switch (_fun115024_ip) {
             case 0:
                 var2 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var3 = function(arg0) { // Original name: isBackendPersistedRule, environment: var1
+    var3 = function arg0() {
         _fun115026: for (var _fun115026_ip = 0;;) switch (_fun115026_ip) {
             case 0:
                 var4 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var7;
     var6 = var6.AutomodEventType;
     var _closure1_slot12 = var6;
-    var7 = function(arg0, arg1) { // Original name: getNewAutomodRuleMockId, environment: var1
+    var7 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var5 = var0.concat;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var7;
-    var6 = function(arg0) { // Original name: isRuleKeywordFilter, environment: var1
+    var6 = function arg0() {
         _fun115028: for (var _fun115028_ip = 0;;) switch (_fun115028_ip) {
             case 0:
                 var0 = arg0;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isRuleUserProfileFilter = var6;
-    var6 = function(arg0, arg1) { // Original name: createDefaultRule, environment: var1
+    var6 = function arg0, arg1() {
         _fun115034: for (var _fun115034_ip = 0;;) switch (_fun115034_ip) {
             case 0:
                 var7 = arg0;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.createDefaultRule = var6;
     var2.validateKeywordsOrThrow = var5;
     var2.validateRegexPatternsOrThrow = var4;
-    var4 = function(arg0) { // Original name: validateRuleBeforeSaveOrThrow, environment: var1
+    var4 = function arg0() {
         _fun115035: for (var _fun115035_ip = 0;;) switch (_fun115035_ip) {
             case 0:
                 var1 = arg0;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validateRuleBeforeSaveOrThrow = var4;
     var2.isBackendPersistedRule = var3;
-    var3 = function(arg0) { // Original name: eventTypeToName, environment: var1
+    var3 = function arg0() {
         _fun115036: for (var _fun115036_ip = 0;;) switch (_fun115036_ip) {
             case 0:
                 var2 = arg0;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.eventTypeToName = var3;
-    var3 = function(arg0) { // Original name: actionTypeToName, environment: var1
+    var3 = function arg0() {
         _fun115037: for (var _fun115037_ip = 0;;) switch (_fun115037_ip) {
             case 0:
                 var2 = arg0;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.actionTypeToName = var3;
-    var1 = function(arg0) { // Original name: triggerTypeToName, environment: var1
+    var1 = function arg0() {
         _fun115038: for (var _fun115038_ip = 0;;) switch (_fun115038_ip) {
             case 0:
                 var2 = arg0;

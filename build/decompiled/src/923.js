@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var5 = function(arg0) { // Original name: flattenIssue, environment: var1
+    var5 = function arg0() {
         _fun9644: for (var _fun9644_ip = 0;;) switch (_fun9644_ip) {
             case 0:
                 var4 = arg0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var5;
-    var4 = function(arg0) { // Original name: flattenIssuePath, environment: var1
+    var4 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: formatIssueMessage, environment: var1
+    var3 = function arg0() {
         _fun9647: for (var _fun9647_ip = 0;;) switch (_fun9647_ip) {
             case 0:
                 var1 = arg0;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var6 = function(arg0) { // Original name: applyZodErrorsToEvent, environment: var1
+    var6 = function arg0() {
         _fun9648: for (var _fun9648_ip = 0;;) switch (_fun9648_ip) {
             case 0:
                 var18 = undefined;
@@ -510,7 +510,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var9[var7];
     var8 = var8.bind(var0)(var7);
     var7 = var8.defineIntegration;
-    var1 = function() { // Original name: _zodErrorsIntegration, environment: var1
+    var1 = function() {
         _fun9649: for (var _fun9649_ip = 0;;) switch (_fun9649_ip) {
             case 0:
                 var4 = undefined;
@@ -550,7 +550,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ZodErrors';
                 var0.name = var2;
-                var1 = function(arg0, arg1) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1() {
                     var5 = _closure1_slot6;
                     var9 = _closure2_slot1;
                     var0 = _closure2_slot0;

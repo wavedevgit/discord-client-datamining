@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_icons/native/AppIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppIcon, environment: var1
+    var1 = function arg0() {
         _fun85349: for (var _fun85349_ip = 0;;) switch (_fun85349_ip) {
             case 0:
                 var0 = arg0;

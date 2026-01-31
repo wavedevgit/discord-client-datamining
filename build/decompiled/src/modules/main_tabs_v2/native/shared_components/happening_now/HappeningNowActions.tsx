@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: trackClick, environment: var1
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 10;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: HappeningNowCardCreateChannel, environment: var1
+    var3 = function arg0() {
         _fun101737: for (var _fun101737_ip = 0;;) switch (_fun101737_ip) {
             case 0:
                 var1 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.HappeningNowCardCreateChannel = var3;
-    var3 = function(arg0) { // Original name: HappeningNowCardCustomizeGuild, environment: var1
+    var3 = function arg0() {
         _fun101739: for (var _fun101739_ip = 0;;) switch (_fun101739_ip) {
             case 0:
                 var1 = arg0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.HappeningNowCardCustomizeGuild = var3;
-    var3 = function(arg0) { // Original name: HappeningNowCardInvite, environment: var1
+    var3 = function arg0() {
         _fun101741: for (var _fun101741_ip = 0;;) switch (_fun101741_ip) {
             case 0:
                 var1 = arg0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.HappeningNowCardInvite = var3;
-    var1 = function(arg0) { // Original name: HappeningNowStudentHubAddServer, environment: var1
+    var1 = function arg0() {
         _fun101743: for (var _fun101743_ip = 0;;) switch (_fun101743_ip) {
             case 0:
                 var1 = arg0;

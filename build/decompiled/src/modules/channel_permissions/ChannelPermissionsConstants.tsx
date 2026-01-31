@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ADVANCED_MODE_ON_KEY = var5;
     var2.TrackExposureLocations = var4;
     var2.SettingMode = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: getChannelPermissionSpecMap, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun51815: for (var _fun51815_ip = 0;;) switch (_fun51815_ip) {
             case 0:
                 var10 = arg0;

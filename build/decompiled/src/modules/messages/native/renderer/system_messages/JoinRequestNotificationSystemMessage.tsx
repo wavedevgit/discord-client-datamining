@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getMessageContent, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun55803: for (var _fun55803_ip = 0;;) switch (_fun55803_ip) {
             case 0:
                 var2 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createJoinRequestNotificationSystemMessage, environment: var1
+    var1 = function arg0() {
         _fun55804: for (var _fun55804_ip = 0;;) switch (_fun55804_ip) {
             case 0:
                 var3 = arg0;

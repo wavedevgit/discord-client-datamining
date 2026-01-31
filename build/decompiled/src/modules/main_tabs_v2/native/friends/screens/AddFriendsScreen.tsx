@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun108542: for (var _fun108542_ip = 0;;) switch (_fun108542_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun108544: for (var _fun108544_ip = 0;;) switch (_fun108544_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: areGameFriendRequestRowsEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun108545: for (var _fun108545_ip = 0;;) switch (_fun108545_ip) {
             case 0:
                 var2 = arg0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: areHydratedGameFriendRequestRowStatesEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun108546: for (var _fun108546_ip = 0;;) switch (_fun108546_ip) {
             case 0:
                 var4 = arg0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.loading = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot21 = var3;
-    var3 = function() { // Original name: handleFindFriends, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 13;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/screens/AddFriendsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddFriendsScreen, environment: var1
+    var1 = function arg0() {
         _fun108553: for (var _fun108553_ip = 0;;) switch (_fun108553_ip) {
             case 0:
                 var0 = arg0;
@@ -1245,7 +1245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.bind(var3)(var9);
                 var8 = {};
                 var8.navigation = var5;
-                var5 = function(arg0) { // Original name: useTransitionEnd, environment: var14
+                var5 = function arg0() {
                     var0 = arg0;
                     var5 = var0.navigation;
                     var _closure3_slot0 = var5;
@@ -1642,7 +1642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var9.UsersFastList;
                 var9 = {};
                 var9.sections = var17;
-                var14 = function(arg0, arg1) { // Original name: getItemProps, environment: var14
+                var14 = function arg0, arg1() {
                     _fun108581: for (var _fun108581_ip = 0;;) switch (_fun108581_ip) {
                         case 0:
                             var6 = arg0;
@@ -1733,7 +1733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var6.user;
                             var6 = var6.id;
                             var5.key = var6;
-                            var6 = function() { // Original name: component, environment: var2
+                            var6 = function() {
                                 var3 = _closure1_slot18;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -1759,7 +1759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = _closure1_slot15;
                                 var4 = var4.ADD_FRIENDS_MODAL;
                                 var0.location = var4;
-                                var4 = function() { // Original name: onAddSuggestion, environment: var4
+                                var4 = function() {
                                     var2 = _closure2_slot18;
                                     var1 = undefined;
                                     var0 = function(arg0) { // Environment: var0
@@ -1813,7 +1813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = '-';
                             var6 = var8.bind(var7)(var9, var6, var10);
                             var5.key = var6;
-                            var6 = function() { // Original name: component, environment: var2
+                            var6 = function() {
                                 var3 = _closure1_slot18;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -1867,7 +1867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'itemType': 'viewAll',
                                 'key': 'gameFriendRequestsViewAll'
                             };
-                            var6 = function() { // Original name: component, environment: var2
+                            var6 = function() {
                                 var3 = _closure1_slot18;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -1876,7 +1876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = undefined;
                                 var1 = var1.bind(var2)(var0);
                                 var0 = {};
-                                var4 = function() { // Original name: onPress, environment: var5
+                                var4 = function() {
                                     var2 = _closure2_slot0;
                                     var1 = var2.navigate;
                                     var0 = 'requests';
@@ -1925,7 +1925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var4 = var4.id;
                             var3.key = var4;
-                            var4 = function() { // Original name: component, environment: var2
+                            var4 = function() {
                                 var3 = _closure1_slot18;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -1964,7 +1964,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'itemType': 'viewAll',
                                 'key': 'friendRequestsViewAll'
                             };
-                            var4 = function() { // Original name: component, environment: var2
+                            var4 = function() {
                                 var3 = _closure1_slot18;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -1973,7 +1973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = undefined;
                                 var1 = var1.bind(var2)(var0);
                                 var0 = {};
-                                var4 = function() { // Original name: onPress, environment: var4
+                                var4 = function() {
                                     var3 = _closure1_slot1;
                                     var2 = _closure1_slot2;
                                     var0 = 24;
@@ -2031,7 +2031,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'itemType': 'addByUsername',
                                 'key': 'addByUsername'
                             };
-                            var1 = function() { // Original name: component, environment: var2
+                            var1 = function() {
                                 var3 = _closure1_slot18;
                                 var8 = _closure1_slot0;
                                 var9 = _closure1_slot2;
@@ -2088,7 +2088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'itemType': 'showContactSyncCTA',
                                 'key': 'showContactSyncCTA'
                             };
-                            var2 = function() { // Original name: component, environment: var2
+                            var2 = function() {
                                 var3 = _closure1_slot18;
                                 var6 = _closure1_slot0;
                                 var7 = _closure1_slot2;

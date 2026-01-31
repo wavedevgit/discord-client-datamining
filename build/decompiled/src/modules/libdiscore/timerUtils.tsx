@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var7 = function() { // Original name: flushDelayLogs, environment: var1
+    var7 = function() {
         _fun118127: for (var _fun118127_ip = 0;;) switch (_fun118127_ip) {
             case 0:
                 var0 = _closure1_slot5;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var7;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: onTimersDelayCallback, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun118128: for (var _fun118128_ip = 0;;) switch (_fun118128_ip) {
             case 0:
                 var3 = _closure1_slot5;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/libdiscore/timerUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: setupLibdiscoreTimersMonitor, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 4;

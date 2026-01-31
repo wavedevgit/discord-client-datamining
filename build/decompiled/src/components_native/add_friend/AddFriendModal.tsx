@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AddFriendModalScene, environment: var1
+    var0 = function arg0() {
         _fun96164: for (var _fun96164_ip = 0;;) switch (_fun96164_ip) {
             case 0:
                 var0 = arg0;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var0;
                 var3 = undefined;
                 var _closure2_slot2 = var3;
-                var0 = function(arg0) { // Original name: studentHubCTA, environment: var10
+                var0 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot14;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var7.bind(var2)(var0);
                     var1 = var0.FormCTA;
                     var0 = {};
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         _fun96166: for (var _fun96166_ip = 0;;) switch (_fun96166_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot5;
                     var2 = var3.setOptions;
                     var1 = {};
-                    var0 = function() { // Original name: headerRight, environment: var0
+                    var0 = function() {
                         var3 = _closure1_slot14;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/add_friend/AddFriendModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddFriendModal, environment: var1
+    var1 = function arg0() {
         var8 = arg0;
         var _closure2_slot0 = var8;
         var4 = _closure1_slot1;
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var8;
         var1 = function() { // Environment: var1
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = {};
                 var1 = {};
                 var2 = true;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.title = var2;
                 var2 = arg0;
                 var1.initialParams = var2;
-                var2 = function(arg0) { // Original name: render, environment: var2
+                var2 = function arg0() {
                     var3 = _closure1_slot14;
                     var2 = _closure1_slot17;
                     var1 = {};

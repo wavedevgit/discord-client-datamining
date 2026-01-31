@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Forms/native/FormCheckbox.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormCheckbox, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var2 = var1.checked;
         var1 = _closure1_slot5;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var5.bind(var7)(var1);
         var1 = var1.reducedMotion;
         var1 = var1.enabled;
-        var5 = function(arg0) { // Original name: useCheckboxStyles, environment: var0
+        var5 = function arg0() {
             var10 = arg0;
             var _closure3_slot0 = var10;
             var1 = _closure1_slot5;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var8[var1];
             var2 = var6.bind(var7)(var1);
             var1 = var2.useAnimatedStyle;
-            var0 = function() { // Original name: S, environment: var0
+            var0 = function() {
                 _fun48154: for (var _fun48154_ip = 0;;) switch (_fun48154_ip) {
                     case 0:
                         var0 = {};
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var8 = var5.bind(var3)(var2);
-        var0 = function(arg0, arg1) { // Original name: useCheckmarkStyles, environment: var0
+        var0 = function arg0, arg1() {
             var9 = arg0;
             var5 = arg1;
             var _closure3_slot0 = var9;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = undefined;
             var2 = var7.bind(var6)(var1);
             var1 = var2.useAnimatedStyle;
-            var0 = function() { // Original name: c, environment: var0
+            var0 = function() {
                 _fun48156: for (var _fun48156_ip = 0;;) switch (_fun48156_ip) {
                     case 0:
                         var0 = _closure3_slot0;

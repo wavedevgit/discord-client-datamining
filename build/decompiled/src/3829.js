@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34711_ip = 102;
             continue _fun34711;
         case 97:
-            var1 = function(arg0, arg1, arg2) { // Original name: useAnimatedPropsJS, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 0;

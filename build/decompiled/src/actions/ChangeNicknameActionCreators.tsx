@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot3 = var1;
     var1 = {};
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: changeNickname, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         var5 = arg3;
         var1 = arg1;
         var _closure2_slot0 = var1;

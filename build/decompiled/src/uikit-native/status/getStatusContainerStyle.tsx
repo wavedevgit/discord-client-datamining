@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var10 = function(arg0, arg1) { // Original name: createContainerStyle, environment: var1
+    var10 = function arg0, arg1() {
         _fun48948: for (var _fun48948_ip = 0;;) switch (_fun48948_ip) {
             case 0:
                 var3 = arg1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/status/getStatusContainerStyle.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: getStatusContainerStyle, environment: var1
+    var1 = function arg0, arg1() {
         _fun48949: for (var _fun48949_ip = 0;;) switch (_fun48949_ip) {
             case 0:
                 var4 = arg0;

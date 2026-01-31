@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun34583: for (var _fun34583_ip = 0;;) switch (_fun34583_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.BaseAnimationBuilder;
     var1 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: JumpingTransition, environment: var1
+        var4 = function() {
             _fun34587: for (var _fun34587_ip = 0;;) switch (_fun34587_ip) {
                 case 0:
                     var4 = this;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var9 = {};
                                 var9.duration = var2;
                                 var _closure4_slot4 = var9;
-                                var0 = function(arg0) { // Original name: pnpm_JumpingTransitionTs1, environment: var0
+                                var0 = function arg0() {
                                     var3 = arg0;
                                     var17 = global;
                                     var4 = var17.Math;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'createInstance';
         var0.key = var5;
-        var1 = function() { // Original name: createInstance, environment: var1
+        var1 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {

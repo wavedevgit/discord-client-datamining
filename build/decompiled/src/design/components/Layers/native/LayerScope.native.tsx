@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Layer, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.zIndex;
         var _closure2_slot0 = var0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = _closure1_slot5;
         var0 = {};
         var0.style = var7;
-        var7 = function(arg0) { // Original name: ref, environment: var4
+        var7 = function arg0() {
             var2 = arg0;
             var1 = _closure2_slot3;
             var1.current = var2;

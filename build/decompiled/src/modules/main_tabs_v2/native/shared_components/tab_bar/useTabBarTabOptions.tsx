@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/tab_bar/useTabBarTabOptions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useTabBarTabOptions, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 2;
@@ -81,12 +81,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var2;
             var3 = copyDataProperties(var5, var4);
             var0.base = var2;
-            var2 = function(arg0) { // Original name: guilds, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -157,12 +157,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.guilds = var2;
-            var2 = function(arg0) { // Original name: messages, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -223,12 +223,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.messages = var2;
-            var2 = function(arg0) { // Original name: notifications, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -292,12 +292,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.notifications = var2;
-            var2 = function(arg0) { // Original name: settings, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -355,14 +355,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.settings = var2;
-            var2 = function(arg0) { // Original name: you, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
                 var3 = _closure2_slot1;
                 var0.tabBarIconStyle = var3;
-                var2 = function(arg0) { // Original name: tabBarIcon, environment: var2
+                var2 = function arg0() {
                     var0 = arg0;
                     var5 = var0.focused;
                     var4 = var0.color;
@@ -408,12 +408,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.you = var2;
-            var2 = function(arg0) { // Original name: icymi, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -469,12 +469,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.icymi = var2;
-            var2 = function(arg0) { // Original name: discovery, environment: var1
+            var2 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.bind(var2)(var4);
                     var4 = 'icon';
                     var0[var4] = var5;
-                    var5 = function() { // Original name: useBadgeCount, environment: var4
+                    var5 = function() {
                         var0 = {
                             'value': 0,
                             'showDot': false
@@ -534,12 +534,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.discovery = var2;
-            var1 = function(arg0) { // Original name: play, environment: var1
+            var1 = function arg0() {
                 var0 = arg0;
                 var0 = var0.navigation;
                 var _closure4_slot0 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: tabBarIcon, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -558,7 +558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.bind(var2)(var4);
                     var4 = 'icon';
                     var0[var4] = var5;
-                    var5 = function() { // Original name: useBadgeCount, environment: var4
+                    var5 = function() {
                         var0 = {
                             'value': 0,
                             'showDot': false

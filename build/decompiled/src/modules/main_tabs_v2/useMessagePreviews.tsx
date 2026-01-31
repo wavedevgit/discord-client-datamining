@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: useMessagePreviewSetting, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/useMessagePreviews.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useMessagePreview, environment: var3
+    var3 = function arg0, arg1() {
         _fun84635: for (var _fun84635_ip = 0;;) switch (_fun84635_ip) {
             case 0:
                 var3 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: trackRoundtrip, environment: var1
+    var0 = function arg0() {
         _fun47055: for (var _fun47055_ip = 0;;) switch (_fun47055_ip) {
             case 0:
                 var5 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: EarnedDecisionRoundtripTracker, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'recordEarnedRequestAttempt';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             var5 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'recordEarnedRequestApiResponse';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun47060: for (var _fun47060_ip = 0;;) switch (_fun47060_ip) {
                 case 0:
                     var3 = arg0;

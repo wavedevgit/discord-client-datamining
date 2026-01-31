@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/pomelo/PomeloModalActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openPomeloModal, environment: var1
+    var1 = function arg0() {
         _fun80756: for (var _fun80756_ip = 0;;) switch (_fun80756_ip) {
             case 0:
                 var5 = arguments[1];
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.paths;
                 var2 = var6.bind(var7)(var2, var1);
                 var1 = {};
-                var6 = function() { // Original name: onCloseModal, environment: var6
+                var6 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 1;

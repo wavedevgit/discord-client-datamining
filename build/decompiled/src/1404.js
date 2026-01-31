@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '%Math.floor%';
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1) { // Original name: setFunctionLength, environment: var1
+    var2 = function arg0, arg1() {
         _fun16428: for (var _fun16428_ip = 0;;) switch (_fun16428_ip) {
             case 0:
                 var0 = arg0;

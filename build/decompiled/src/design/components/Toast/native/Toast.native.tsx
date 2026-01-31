@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'design/components/Toast/native/Toast.native.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function() { // Original name: Toast, environment: var1
+    var1 = function() {
         var0 = null;
         return var0;
     };

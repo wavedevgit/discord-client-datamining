@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _validateCollectiblesRecipientAndShowError, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var8 = var2.skuId;
                             var7 = _closure2_slot3;
-                            var1 = function() { // Original name: validateCollectiblesRecipientAndShowError, environment: var1
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure1_slot13;
                                 var2 = var3.apply;

@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileMutualGuildsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileMutualGuildsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun61866: for (var _fun61866_ip = 0;;) switch (_fun61866_ip) {
             case 0:
                 var0 = arg0;
@@ -134,14 +134,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.UserProfileStackedActionSheetList;
                 var7 = {};
                 var7.data = var13;
-                var13 = function(arg0) { // Original name: keyExtractor, environment: var10
+                var13 = function arg0() {
                     var0 = arg0;
                     var0 = var0.guild;
                     var0 = var0.id;
                     return var0;
                 };
                 var7.keyExtractor = var13;
-                var10 = function(arg0) { // Original name: renderItem, environment: var10
+                var10 = function arg0() {
                     var0 = arg0;
                     var7 = var0.item;
                     var _closure3_slot0 = var7;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = _closure2_slot0;
                     var0.user = var8;
                     var0.mutualGuild = var7;
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var2 = _closure2_slot1;
                         var0 = _closure3_slot0;
                         var0 = var0.guild;

@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemTabs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemTabs, environment: var1
+    var1 = function() {
         _fun87763: for (var _fun87763_ip = 0;;) switch (_fun87763_ip) {
             case 0:
                 var5 = _closure1_slot4;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var0[var6];
                 var0 = _closure1_slot9;
                 var7 = var0.bind(var3)();
-                var0 = function(arg0, arg1) { // Original name: useTabItems, environment: var26
+                var0 = function arg0, arg1() {
                     var6 = arg0;
                     var4 = arg1;
                     var _closure3_slot0 = var6;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var29 = var27 >= var29;
                 var14.disabled = var29;
-                var29 = function() { // Original name: onPress, environment: var26
+                var29 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot1;
                     var0 = 1;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var27 = var28 === var27;
                 var20.disabled = var27;
-                var26 = function() { // Original name: onPress, environment: var26
+                var26 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot1;
                     var0 = 1;

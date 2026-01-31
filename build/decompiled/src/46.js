@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = metroImportDefault;
             var _closure1_slot1 = var2;
             var _closure1_slot2 = var4;
-            var2 = function(arg0) { // Original name: isFabricReactTag, environment: var0
+            var2 = function arg0() {
                 var1 = arg0;
                 var0 = 2;
                 var1 = var1 % var0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var2.Object;
             var3 = var4.assign;
             var2 = {};
-            var6 = function(arg0, arg1) { // Original name: measure, environment: var0
+            var6 = function arg0, arg1() {
                 _fun1308: for (var _fun1308_ip = 0;;) switch (_fun1308_ip) {
                     case 0:
                         var8 = arg0;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.measure = var6;
-            var6 = function(arg0, arg1) { // Original name: measureInWindow, environment: var0
+            var6 = function arg0, arg1() {
                 _fun1309: for (var _fun1309_ip = 0;;) switch (_fun1309_ip) {
                     case 0:
                         var8 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.measureInWindow = var6;
-            var6 = function(arg0, arg1, arg2, arg3) { // Original name: measureLayout, environment: var0
+            var6 = function arg0, arg1, arg2, arg3() {
                 _fun1310: for (var _fun1310_ip = 0;;) switch (_fun1310_ip) {
                     case 0:
                         var3 = arg0;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.measureLayout = var6;
-            var6 = function(arg0, arg1, arg2) { // Original name: measureLayoutRelativeToParent, environment: var0
+            var6 = function arg0, arg1, arg2() {
                 _fun1311: for (var _fun1311_ip = 0;;) switch (_fun1311_ip) {
                     case 0:
                         var3 = arg0;
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.measureLayoutRelativeToParent = var6;
-            var0 = function(arg0, arg1, arg2) { // Original name: dispatchViewManagerCommand, environment: var0
+            var0 = function arg0, arg1, arg2() {
                 _fun1313: for (var _fun1313_ip = 0;;) switch (_fun1313_ip) {
                     case 0:
                         var2 = arg0;

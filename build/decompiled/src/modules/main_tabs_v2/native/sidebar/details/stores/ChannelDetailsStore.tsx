@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: createChannelState, environment: var1
+    var0 = function() {
         var0 = {};
         var2 = _closure1_slot2;
         var3 = var0;
@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: useChannelState, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/sidebar/details/stores/ChannelDetailsStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useChannelDetailsStore = var3;
-    var3 = function() { // Original name: deleteChannelStates, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.deleteChannelStates = var3;
-    var3 = function(arg0) { // Original name: useIsChannelDetailsSearchActive, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot5;
         var2 = undefined;
         var1 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsChannelDetailsSearchActive = var3;
-    var3 = function(arg0) { // Original name: useChannelDetailsSearchActiveSource, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot5;
         var2 = undefined;
         var1 = arg0;
@@ -149,13 +149,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChannelDetailsSearchActiveSource = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setIsChannelDetailsSearchActive, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var3 = {};
         var0 = arg1;
         var3.isSearchActive = var0;
         var0 = arg2;
         var3.searchActiveSource = var0;
-        var2 = function(arg0, arg1) { // Original name: upsertChannelState, environment: var0
+        var2 = function arg0, arg1() {
             _fun70996: for (var _fun70996_ip = 0;;) switch (_fun70996_ip) {
                 case 0:
                     var5 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setIsChannelDetailsSearchActive = var3;
-    var3 = function(arg0) { // Original name: getIsChannelDetailsSearchActive, environment: var1
+    var3 = function arg0() {
         _fun70998: for (var _fun70998_ip = 0;;) switch (_fun70998_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getIsChannelDetailsSearchActive = var3;
-    var1 = function(arg0) { // Original name: deleteChannelDetailsSearchState, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot3;
         var2 = var3.getState;
         var2 = var2.bind(var3)();

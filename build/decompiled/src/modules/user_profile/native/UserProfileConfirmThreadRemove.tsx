@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileConfirmThreadRemove.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileConfirmThreadRemove, environment: var1
+    var1 = function arg0() {
         _fun72102: for (var _fun72102_ip = 0;;) switch (_fun72102_ip) {
             case 0:
                 var0 = arg0;

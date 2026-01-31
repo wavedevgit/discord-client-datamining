@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun6609
             }
         case 64:
-            var2 = function(arg0) { // Original name: getProto, environment: var1
+            var2 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 2;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun6609_ip = 76;
             continue _fun6609;
         case 71:
-            var2 = function(arg0) { // Original name: getProto, environment: var1
+            var2 = function arg0() {
                 _fun6611: for (var _fun6611_ip = 0;;) switch (_fun6611_ip) {
                     case 0:
                         var2 = arg0;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun6609_ip = 83;
             continue _fun6609;
         case 78:
-            var2 = function(arg0) { // Original name: getProto, environment: var1
+            var2 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 0;

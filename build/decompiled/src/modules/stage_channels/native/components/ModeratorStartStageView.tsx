@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/ModeratorStartStageView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ModeratorStartStageView, environment: var1
+    var1 = function arg0() {
         _fun64801: for (var _fun64801_ip = 0;;) switch (_fun64801_ip) {
             case 0:
                 var1 = arg0;

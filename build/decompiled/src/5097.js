@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun45623
             }
         case 37:
-            var6 = function(arg0, arg1) { // Original name: extendStatics, environment: var2
+            var6 = function arg0, arg1() {
                 _fun45624: for (var _fun45624_ip = 0;;) switch (_fun45624_ip) {
                     case 0:
                         var1 = global;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = arg0;
                         var3 = arg1;
                         var _closure2_slot0 = var2;
-                        var1 = function() { // Original name: __, environment: var0
+                        var1 = function() {
                             var1 = _closure2_slot0;
                             var0 = this;
                             var0.constructor = var1;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = function(arg0) { // Environment: var2
                 var4 = arg0;
                 var _closure2_slot0 = var4;
-                var0 = function(arg0, arg1) { // Original name: StickyContainer, environment: var1
+                var0 = function arg0, arg1() {
                     _fun45632: for (var _fun45632_ip = 0;;) switch (_fun45632_ip) {
                         case 0:
                             var3 = arg0;
@@ -1005,7 +1005,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var8 = var9.bind(var13)(var8);
                             var9 = var8.default;
                             var8 = {};
-                            var15 = function(arg0) { // Original name: ref, environment: var12
+                            var15 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = var2._getStickyHeaderRef;
                                 var0 = arg0;
@@ -1057,7 +1057,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7 = var8.bind(var13)(var7);
                             var8 = var7.default;
                             var7 = {};
-                            var12 = function(arg0) { // Original name: ref, environment: var12
+                            var12 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = var2._getStickyFooterRef;
                                 var0 = arg0;

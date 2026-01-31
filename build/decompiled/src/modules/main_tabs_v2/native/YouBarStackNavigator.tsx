@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: getGuildsComponent, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: getNotificationsComponent, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: getYouComponent, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 9;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: getICYMIComponent, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var7)();
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: YouBarStackNavigator, environment: var1
-        var0 = function() { // Original name: useInitialGuildParams, environment: var6
+    var1 = function() {
+        var0 = function() {
             _fun100661: for (var _fun100661_ip = 0;;) switch (_fun100661_ip) {
                 case 0:
                     var1 = _closure1_slot3;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.initialParams = var0;
                     var0 = _closure1_slot13;
                     var4.getComponent = var0;
-                    var0 = function() { // Original name: options, environment: var8
+                    var0 = function() {
                         var0 = {};
                         var2 = _closure2_slot2;
                         var3 = var0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6.name = var11;
                     var11 = _closure1_slot16;
                     var6.getComponent = var11;
-                    var11 = function() { // Original name: options, environment: var8
+                    var11 = function() {
                         var0 = {};
                         var2 = _closure2_slot2;
                         var3 = var0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6.name = var12;
                     var12 = _closure1_slot14;
                     var6.getComponent = var12;
-                    var12 = function() { // Original name: options, environment: var8
+                    var12 = function() {
                         var0 = {};
                         var2 = _closure2_slot2;
                         var3 = var0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.name = var10;
                     var9 = _closure1_slot15;
                     var5.getComponent = var9;
-                    var8 = function() { // Original name: options, environment: var8
+                    var8 = function() {
                         var0 = {};
                         var2 = _closure2_slot2;
                         var3 = var0;

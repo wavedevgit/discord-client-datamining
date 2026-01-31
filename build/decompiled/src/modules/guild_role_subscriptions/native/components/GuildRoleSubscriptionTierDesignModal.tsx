@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: MemberPreviews, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.role;
         var0 = _closure1_slot12;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: Content, environment: var1
+    var0 = function() {
         _fun116900: for (var _fun116900_ip = 0;;) switch (_fun116900_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.previewShape = var19;
                 var19 = 'cover';
                 var12.previewResizeMode = var19;
-                var18 = function(arg0) { // Original name: setImage, environment: var18
+                var18 = function arg0() {
                     var0 = arg0;
                     var0 = var0.uri;
                     var2 = _closure2_slot0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDesignModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: GuildRoleSubscriptionTierDesignModal, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot9;
         var1 = _closure1_slot1;
         var9 = _closure1_slot3;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: GuildRoleSubscriptionTierDesignTab, environment: var1
+    var1 = function() {
         var3 = _closure1_slot9;
         var2 = _closure1_slot14;
         var1 = undefined;

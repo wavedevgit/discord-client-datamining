@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var15[var27];
                 var16 = var11.bind(var4)(var5);
                 var11 = var16.useAnimatedStyle;
-                var5 = function() { // Original name: j, environment: var0
+                var5 = function() {
                     var0 = {};
                     var2 = _closure2_slot4;
                     var1 = var2.get;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var36;
                 var3 = function() { // Environment: var0
-                    var4 = function(arg0) { // Original name: handleOpenKeyboard, environment: var0
+                    var4 = function arg0() {
                         _fun89213: for (var _fun89213_ip = 0;;) switch (_fun89213_ip) {
                             case 0:
                                 var2 = arg0;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var36;
                 var3 = function() { // Environment: var0
                     var0 = {};
-                    var2 = function(arg0) { // Original name: handleBlur, environment: var1
+                    var2 = function arg0() {
                         _fun89216: for (var _fun89216_ip = 0;;) switch (_fun89216_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1109,7 +1109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleBlur = var2;
-                    var2 = function(arg0) { // Original name: handleFocus, environment: var1
+                    var2 = function arg0() {
                         _fun89217: for (var _fun89217_ip = 0;;) switch (_fun89217_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1184,7 +1184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleFocus = var2;
-                    var2 = function(arg0) { // Original name: handleChangeContentSize, environment: var1
+                    var2 = function arg0() {
                         var0 = arg0;
                         var0 = var0.nativeEvent;
                         var5 = var0.height;
@@ -1209,7 +1209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleChangeContentSize = var2;
-                    var2 = function(arg0) { // Original name: handleLayoutOfInputContainer, environment: var1
+                    var2 = function arg0() {
                         _fun89219: for (var _fun89219_ip = 0;;) switch (_fun89219_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1233,7 +1233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleLayoutOfInputContainer = var2;
-                    var2 = function(arg0) { // Original name: handleLayout, environment: var1
+                    var2 = function arg0() {
                         _fun89220: for (var _fun89220_ip = 0;;) switch (_fun89220_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1276,7 +1276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleLayout = var2;
-                    var2 = function() { // Original name: handleMaxHeightChanged, environment: var1
+                    var2 = function() {
                         _fun89221: for (var _fun89221_ip = 0;;) switch (_fun89221_ip) {
                             case 0:
                                 var1 = _closure2_slot5;
@@ -1309,7 +1309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleMaxHeightChanged = var2;
-                    var2 = function(arg0) { // Original name: handleChangeAutoCompleteVisibility, environment: var1
+                    var2 = function arg0() {
                         var3 = _closure1_slot17;
                         var0 = _closure2_slot5;
                         var0 = var0.props;
@@ -1321,7 +1321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleChangeAutoCompleteVisibility = var2;
-                    var2 = function(arg0) { // Original name: handlePasteCommand, environment: var1
+                    var2 = function arg0() {
                         _fun89223: for (var _fun89223_ip = 0;;) switch (_fun89223_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1500,7 +1500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handlePasteImage = var2;
-                    var2 = function(arg0, arg1) { // Original name: handlePressAction, environment: var1
+                    var2 = function arg0, arg1() {
                         _fun89227: for (var _fun89227_ip = 0;;) switch (_fun89227_ip) {
                             case 0:
                                 var1 = arg1;
@@ -1641,7 +1641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.channel = var5;
                                 var5 = _closure1_slot25;
                                 var0.uploadLimit = var5;
-                                var5 = function() { // Original name: onDismissKeyboard, environment: var3
+                                var5 = function() {
                                     var2 = _closure1_slot0;
                                     var1 = _closure1_slot3;
                                     var0 = 45;
@@ -1653,7 +1653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.onDismissKeyboard = var5;
-                                var5 = function() { // Original name: onRestoreKeyboard, environment: var3
+                                var5 = function() {
                                     var2 = _closure2_slot6;
                                     var1 = var2.handleToggleKeyboard;
                                     var0 = {};
@@ -1670,7 +1670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.onRestoreKeyboard = var5;
-                                var3 = function(arg0) { // Original name: onSelectFiles, environment: var3
+                                var3 = function arg0() {
                                     var2 = _closure1_slot0;
                                     var6 = _closure1_slot3;
                                     var0 = 44;
@@ -1870,7 +1870,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handlePressAction = var2;
-                    var2 = function(arg0) { // Original name: handlePressExpression, environment: var1
+                    var2 = function arg0() {
                         var5 = _closure1_slot0;
                         var6 = _closure1_slot3;
                         var0 = 48;
@@ -1896,7 +1896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handlePressExpression = var2;
-                    var2 = function() { // Original name: handlePressSend, environment: var1
+                    var2 = function() {
                         var0 = _closure2_slot5;
                         var0 = var0.chatInput;
                         var1 = var0.current;
@@ -1906,7 +1906,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handlePressSend = var2;
-                    var2 = function(arg0) { // Original name: handleSelectionOrTextChange, environment: var1
+                    var2 = function arg0() {
                         _fun89233: for (var _fun89233_ip = 0;;) switch (_fun89233_ip) {
                             case 0:
                                 var0 = arg0;
@@ -2022,7 +2022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleSelectionOrTextChange = var2;
-                    var2 = function(arg0) { // Original name: handleTapAction, environment: var1
+                    var2 = function arg0() {
                         _fun89234: for (var _fun89234_ip = 0;;) switch (_fun89234_ip) {
                             case 0:
                                 var0 = arg0;
@@ -2084,7 +2084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleTapAction = var2;
-                    var2 = function(arg0, arg1) { // Original name: handleTextOrFocusChange, environment: var1
+                    var2 = function arg0, arg1() {
                         _fun89236: for (var _fun89236_ip = 0;;) switch (_fun89236_ip) {
                             case 0:
                                 var2 = arg0;
@@ -2215,7 +2215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleTextOrFocusChange = var2;
-                    var2 = function(arg0) { // Original name: handleTextFlushed, environment: var1
+                    var2 = function arg0() {
                         _fun89237: for (var _fun89237_ip = 0;;) switch (_fun89237_ip) {
                             case 0:
                                 var0 = arg0;
@@ -2241,7 +2241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleTextFlushed = var2;
-                    var1 = function(arg0) { // Original name: handleToggleKeyboard, environment: var1
+                    var1 = function arg0() {
                         _fun89238: for (var _fun89238_ip = 0;;) switch (_fun89238_ip) {
                             case 0:
                                 var3 = arg0;

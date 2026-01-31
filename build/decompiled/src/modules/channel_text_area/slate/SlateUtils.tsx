@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: toRichValue, environment: var1
+    var3 = function arg0() {
         _fun54175: for (var _fun54175_ip = 0;;) switch (_fun54175_ip) {
             case 0:
                 var3 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/channel_text_area/slate/SlateUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: createEmptyState, environment: var1
+    var4 = function() {
         var0 = {};
         var1 = '';
         var0.textValue = var1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createEmptyState = var4;
-    var4 = function(arg0) { // Original name: createState, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var0 = {};
         var0.textValue = var3;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createState = var4;
     var2.toRichValue = var3;
-    var1 = function(arg0) { // Original name: voidToOptionValue, environment: var1
+    var1 = function arg0() {
         _fun54179: for (var _fun54179_ip = 0;;) switch (_fun54179_ip) {
             case 0:
                 var1 = arg0;

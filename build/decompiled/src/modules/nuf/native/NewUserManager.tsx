@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113811: for (var _fun113811_ip = 0;;) switch (_fun113811_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = {};
     var3 = var8.ADD_AVATAR;
     var9.key = var3;
-    var3 = function() { // Original name: shouldShowStep, environment: var1
+    var3 = function() {
         _fun113814: for (var _fun113814_ip = 0;;) switch (_fun113814_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var3 = var8.CONTACT_SYNC;
     var7.key = var3;
-    var3 = function() { // Original name: shouldShowStep, environment: var1
+    var3 = function() {
         _fun113815: for (var _fun113815_ip = 0;;) switch (_fun113815_ip) {
             case 0:
                 var3 = _closure1_slot10;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = {};
     var10 = var8.DISCOVERABILITY;
     var9.key = var10;
-    var10 = function() { // Original name: shouldShowStep, environment: var1
+    var10 = function() {
         var2 = _closure1_slot10;
         var1 = var2.getLocalAccount;
         var0 = _closure1_slot14;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var8.STUDENT_HUB;
     var7.key = var9;
-    var9 = function() { // Original name: shouldShowStep, environment: var1
+    var9 = function() {
         _fun113817: for (var _fun113817_ip = 0;;) switch (_fun113817_ip) {
             case 0:
                 var2 = _closure1_slot12;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.shouldShowStep = var9;
-    var9 = function() { // Original name: transitionToStep, environment: var1
+    var9 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 15;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var8.GUILD_TEMPLATE;
     var7.key = var9;
-    var9 = function() { // Original name: shouldShowStep, environment: var1
+    var9 = function() {
         var2 = _closure1_slot12;
         var1 = var2.getType;
         var1 = var1.bind(var2)();
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.shouldShowStep = var9;
-    var9 = function() { // Original name: transitionToStep, environment: var1
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 15;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.hasDeferredInvite;
     var7.shouldShowStep = var9;
-    var9 = function() { // Original name: transitionToStep, environment: var1
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 18;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var8 = var8.IN_APP_EDUCATION;
     var7.key = var8;
-    var8 = function() { // Original name: shouldShowStep, environment: var1
+    var8 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 19;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.shouldShowStep = var8;
-    var8 = function() { // Original name: transitionToStep, environment: var1
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 15;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: NewUserManager, environment: var0
+        var2 = function arg0() {
             _fun113825: for (var _fun113825_ip = 0;;) switch (_fun113825_ip) {
                 case 0:
                     var4 = this;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = null;
                     var0._lastStep = var3;
                     var3 = {};
-                    var4 = function(arg0) { // Original name: ONBOARDING_STEP, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOnboardingStep;
                         var0 = arg0;

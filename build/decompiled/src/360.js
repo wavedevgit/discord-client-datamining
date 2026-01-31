@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var8 = function() { // Original name: _scheduleUpdate, environment: var3
+            var8 = function() {
                 _fun5322: for (var _fun5322_ip = 0;;) switch (_fun5322_ip) {
                     case 0:
                         var0 = _closure1_slot7;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot11 = var8;
-            var0 = function() { // Original name: _processUpdate, environment: var3
+            var0 = function() {
                 _fun5323: for (var _fun5323_ip = 0;;) switch (_fun5323_ip) {
                     case 0:
                         var4 = 0;
@@ -203,7 +203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 'interactionComplete': 'interactionComplete'
             };
             var1.Events = var9;
-            var9 = function(arg0) { // Original name: runAfterInteractions, environment: var3
+            var9 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = new Array(0);
@@ -273,7 +273,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind;
                 var2 = var2.bind(var3)(var4);
                 var0.then = var2;
-                var1 = function() { // Original name: cancel, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot6;
                     var1 = var2.cancelTasks;
                     var0 = _closure2_slot1;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.runAfterInteractions = var9;
-            var9 = function() { // Original name: createInteractionHandle, environment: var3
+            var9 = function() {
                 var2 = _closure1_slot11;
                 var0 = undefined;
                 var0 = var2.bind(var0)();
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.createInteractionHandle = var9;
-            var9 = function(arg0) { // Original name: clearInteractionHandle, environment: var3
+            var9 = function arg0() {
                 var3 = arg0;
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = var10.bind;
             var9 = var9.bind(var10)(var11);
             var1.addListener = var9;
-            var9 = function(arg0) { // Original name: setDeadline, environment: var3
+            var9 = function arg0() {
                 var0 = arg0;
                 _closure1_slot9 = var0;
                 var0 = undefined;

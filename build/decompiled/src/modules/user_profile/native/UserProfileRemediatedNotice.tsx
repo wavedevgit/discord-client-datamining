@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileRemediatedNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RemediatedUserNotice, environment: var1
+    var1 = function arg0() {
         _fun91988: for (var _fun91988_ip = 0;;) switch (_fun91988_ip) {
             case 0:
                 var0 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var12 = var11.PrtAqy;
                 var11 = {};
-                var15 = function(arg0) { // Original name: unignoreHook, environment: var15
+                var15 = function arg0() {
                     var3 = _closure1_slot6;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'variant': 'heading-sm/medium',
                         'color': 'text-link'
                     };
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 11;

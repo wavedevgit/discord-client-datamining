@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun72177: for (var _fun72177_ip = 0;;) switch (_fun72177_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun72179: for (var _fun72179_ip = 0;;) switch (_fun72179_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: GuildChannelMemberCount, environment: var1
+    var0 = function arg0() {
         _fun72180: for (var _fun72180_ip = 0;;) switch (_fun72180_ip) {
             case 0:
                 var0 = arg0;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ChannelLinkedLobbyCoachmark, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var3 = var1.iconRef;
         var10 = var1.guild;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.position = var1;
                     var1 = 15;
                     var0.offsetY = var1;
-                    var1 = function() { // Original name: onDismiss, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot2;
                         var0 = _closure1_slot18;
                         var1 = var0.USER_DISMISS;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot21 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildChannelHeader, environment: var1
+    var1 = function arg0() {
         _fun72186: for (var _fun72186_ip = 0;;) switch (_fun72186_ip) {
             case 0:
                 var0 = arg0;
@@ -822,7 +822,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = !var6;
                 var7.disableGuildMemberCount = var6;
                 var7.showCreateThread = var0;
-                var6 = function(arg0) { // Original name: useChannelName, environment: var2
+                var6 = function arg0() {
                     _fun72189: for (var _fun72189_ip = 0;;) switch (_fun72189_ip) {
                         case 0:
                             var0 = arg0;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/markup/ChannelUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isChannelTypeMentionable, environment: var1
+    var1 = function arg0() {
         _fun44056: for (var _fun44056_ip = 0;;) switch (_fun44056_ip) {
             case 0:
                 var3 = arg0;

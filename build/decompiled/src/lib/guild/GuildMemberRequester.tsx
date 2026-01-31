@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: GuildMemberRequestState, environment: var4
+        var2 = function arg0, arg1() {
             var3 = arg0;
             var2 = this;
             var _closure3_slot0 = var3;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'acknowledge';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var2 = arg0;
             var0 = this;
             var3 = var0._unacknowledgedRequests;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'flushRequests';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun50363: for (var _fun50363_ip = 0;;) switch (_fun50363_ip) {
                 case 0:
                     var0 = this;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'requestUnacknowledged';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun50365: for (var _fun50365_ip = 0;;) switch (_fun50365_ip) {
                 case 0:
                     var1 = this;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'request';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun50367: for (var _fun50367_ip = 0;;) switch (_fun50367_ip) {
                 case 0:
                     var2 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: GuildMemberRequester, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot3;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'reset';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var1 = {};
             var0._guildStates = var1;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'request';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun50372: for (var _fun50372_ip = 0;;) switch (_fun50372_ip) {
                 case 0:
                     var0 = this;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'acknowledge';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var2 = this;
             var1 = var2._getGuildState;
             var0 = arg0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'flushRequests';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot1;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'requestUnacknowledged';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun50376: for (var _fun50376_ip = 0;;) switch (_fun50376_ip) {
                 case 0:
                     var1 = this;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_getGuildState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun50378: for (var _fun50378_ip = 0;;) switch (_fun50378_ip) {
                 case 0:
                     var3 = arg0;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getDebugState';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var3 = new Array(0);

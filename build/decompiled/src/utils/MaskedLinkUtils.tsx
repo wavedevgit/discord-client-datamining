@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/MaskedLinkUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: isLinkTrusted, environment: var1
+    var3 = function arg0, arg1() {
         _fun51536: for (var _fun51536_ip = 0;;) switch (_fun51536_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isLinkTrusted = var3;
-    var1 = function(arg0, arg1) { // Original name: handleClick, environment: var1
+    var1 = function arg0, arg1() {
         _fun51537: for (var _fun51537_ip = 0;;) switch (_fun51537_ip) {
             case 0:
                 var8 = arg0;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun51537
                 }
             case 1276:
-                var5 = function() { // Original name: handleConfirm, environment: var21
+                var5 = function() {
                     _fun51538: for (var _fun51538_ip = 0;;) switch (_fun51538_ip) {
                         case 0:
                             var1 = _closure2_slot4;

@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9[1] = var10;
     var3[2] = var9;
     var _closure1_slot8 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: createToken, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun94025: for (var _fun94025_ip = 0;;) switch (_fun94025_ip) {
             case 0:
                 var7 = arg0;

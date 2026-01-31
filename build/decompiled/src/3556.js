@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Original name: arrayPush, environment: var0
+    var1 = function arg0, arg1() {
         _fun31611: for (var _fun31611_ip = 0;;) switch (_fun31611_ip) {
             case 0:
                 var0 = arg0;

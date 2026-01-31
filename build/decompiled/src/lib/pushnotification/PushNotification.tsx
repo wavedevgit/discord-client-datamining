@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = metroImportDefault;
             var _closure1_slot1 = var0;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: createNotification, environment: var3
+            var0 = function arg0() {
                 _fun68694: for (var _fun68694_ip = 0;;) switch (_fun68694_ip) {
                     case 0:
                         var1 = arg0;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 18:
                         var1 = {};
-                        var3 = function() { // Original name: getData, environment: var2
+                        var3 = function() {
                             _fun68695: for (var _fun68695_ip = 0;;) switch (_fun68695_ip) {
                                 case 0:
                                     var0 = {};
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var1.getData = var3;
-                        var3 = function() { // Original name: getMessage, environment: var2
+                        var3 = function() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var2.prototype;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             throw var0;
                         };
                         var1.getMessage = var3;
-                        var3 = function() { // Original name: getSound, environment: var2
+                        var3 = function() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var2.prototype;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             throw var0;
                         };
                         var1.getSound = var3;
-                        var3 = function() { // Original name: getCategory, environment: var2
+                        var3 = function() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var2.prototype;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             throw var0;
                         };
                         var1.getCategory = var3;
-                        var3 = function() { // Original name: getAlert, environment: var2
+                        var3 = function() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var2.prototype;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             throw var0;
                         };
                         var1.getAlert = var3;
-                        var3 = function() { // Original name: getContentAvailable, environment: var2
+                        var3 = function() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var2.prototype;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             throw var0;
                         };
                         var1.getContentAvailable = var3;
-                        var3 = function() { // Original name: getBadgeCount, environment: var2
+                        var3 = function() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var2.prototype;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             throw var0;
                         };
                         var1.getBadgeCount = var3;
-                        var2 = function(arg0) { // Original name: finish, environment: var2
+                        var2 = function arg0() {
                             var0 = global;
                             var2 = var0.Error;
                             var0 = var0.HermesInternal;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 139:
             var _closure1_slot4 = var1;
             var1 = {};
-            var6 = function() { // Original name: getInitialNotification, environment: var3
+            var6 = function() {
                 _fun68703: for (var _fun68703_ip = 0;;) switch (_fun68703_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.getInitialNotification = var6;
-            var6 = function(arg0, arg1) { // Original name: setCurrentUser, environment: var3
+            var6 = function arg0, arg1() {
                 _fun68706: for (var _fun68706_ip = 0;;) switch (_fun68706_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.setCurrentUser = var6;
-            var6 = function() { // Original name: clearPushNotificationLogs, environment: var3
+            var6 = function() {
                 _fun68707: for (var _fun68707_ip = 0;;) switch (_fun68707_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.clearPushNotificationLogs = var6;
-            var6 = function(arg0) { // Original name: setApplicationIconBadgeNumber, environment: var3
+            var6 = function arg0() {
                 _fun68708: for (var _fun68708_ip = 0;;) switch (_fun68708_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.setApplicationIconBadgeNumber = var6;
-            var6 = function() { // Original name: clearAllNotifications, environment: var3
+            var6 = function() {
                 _fun68709: for (var _fun68709_ip = 0;;) switch (_fun68709_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.clearAllNotifications = var6;
-            var6 = function(arg0) { // Original name: presentLocalNotification, environment: var3
+            var6 = function arg0() {
                 _fun68710: for (var _fun68710_ip = 0;;) switch (_fun68710_ip) {
                     case 0:
                         var3 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.presentLocalNotification = var6;
-            var6 = function() { // Original name: getDeliveredNotifications, environment: var3
+            var6 = function() {
                 _fun68711: for (var _fun68711_ip = 0;;) switch (_fun68711_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.getDeliveredNotifications = var6;
-            var6 = function(arg0) { // Original name: removeDeliveredNotifications, environment: var3
+            var6 = function arg0() {
                 _fun68713: for (var _fun68713_ip = 0;;) switch (_fun68713_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.removeDeliveredNotifications = var6;
-            var6 = function(arg0) { // Original name: scheduleLocalNotification, environment: var3
+            var6 = function arg0() {
                 _fun68714: for (var _fun68714_ip = 0;;) switch (_fun68714_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.scheduleLocalNotification = var6;
-            var6 = function(arg0) { // Original name: getScheduledLocalNotifications, environment: var3
+            var6 = function arg0() {
                 _fun68715: for (var _fun68715_ip = 0;;) switch (_fun68715_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.getScheduledLocalNotifications = var6;
-            var6 = function(arg0) { // Original name: cancelLocalNotifications, environment: var3
+            var6 = function arg0() {
                 _fun68716: for (var _fun68716_ip = 0;;) switch (_fun68716_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.cancelLocalNotifications = var6;
-            var6 = function() { // Original name: cancelAllLocalNotifications, environment: var3
+            var6 = function() {
                 _fun68717: for (var _fun68717_ip = 0;;) switch (_fun68717_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.cancelAllLocalNotifications = var6;
-            var6 = function(arg0) { // Original name: checkPermissions, environment: var3
+            var6 = function arg0() {
                 _fun68718: for (var _fun68718_ip = 0;;) switch (_fun68718_ip) {
                     case 0:
                         var2 = arg0;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.checkPermissions = var6;
-            var6 = function(arg0) { // Original name: requestPermissions, environment: var3
+            var6 = function arg0() {
                 _fun68719: for (var _fun68719_ip = 0;;) switch (_fun68719_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.requestPermissions = var6;
-            var6 = function() { // Original name: openNotificationSettings, environment: var3
+            var6 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 4;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.openNotificationSettings = var6;
-            var6 = function(arg0, arg1) { // Original name: addNotificationEventListener, environment: var3
+            var6 = function arg0, arg1() {
                 _fun68722: for (var _fun68722_ip = 0;;) switch (_fun68722_ip) {
                     case 0:
                         var3 = arg0;
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.addNotificationEventListener = var6;
-            var6 = function(arg0) { // Original name: addRegisterEventListener, environment: var3
+            var6 = function arg0() {
                 _fun68725: for (var _fun68725_ip = 0;;) switch (_fun68725_ip) {
                     case 0:
                         var6 = arg0;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.addRegisterEventListener = var6;
-            var6 = function() { // Original name: getSoundsEnabled, environment: var3
+            var6 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var0 = var2.prototype;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.getSoundsEnabled = var6;
-            var6 = function() { // Original name: getVibrationsEnabled, environment: var3
+            var6 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var0 = var2.prototype;
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.getVibrationsEnabled = var6;
-            var6 = function() { // Original name: getLightsEnabled, environment: var3
+            var6 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var0 = var2.prototype;
@@ -1021,7 +1021,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.getLightsEnabled = var6;
-            var6 = function(arg0) { // Original name: setSoundsEnabled, environment: var3
+            var6 = function arg0() {
                 _fun68736: for (var _fun68736_ip = 0;;) switch (_fun68736_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -1046,7 +1046,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.setSoundsEnabled = var6;
-            var6 = function(arg0) { // Original name: setVibrationsEnabled, environment: var3
+            var6 = function arg0() {
                 _fun68737: for (var _fun68737_ip = 0;;) switch (_fun68737_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -1071,7 +1071,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.setVibrationsEnabled = var6;
-            var6 = function(arg0) { // Original name: setLightsEnabled, environment: var3
+            var6 = function arg0() {
                 _fun68738: for (var _fun68738_ip = 0;;) switch (_fun68738_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.setLightsEnabled = var6;
-            var6 = function(arg0) { // Original name: setAndroidNotifyEveryTime, environment: var3
+            var6 = function arg0() {
                 _fun68739: for (var _fun68739_ip = 0;;) switch (_fun68739_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.setAndroidNotifyEveryTime = var6;
-            var3 = function() { // Original name: shouldAndroidNotifyEveryTime, environment: var3
+            var3 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var0 = var2.prototype;

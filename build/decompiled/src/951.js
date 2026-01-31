@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         5: 'trace'
     };
     var _closure1_slot6 = var3;
-    var1 = function() { // Original name: createConsolaReporter, environment: var1
+    var1 = function() {
         _fun9832: for (var _fun9832_ip = 0;;) switch (_fun9832_ip) {
             case 0:
                 var4 = undefined;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.client;
                 var _closure2_slot1 = var0;
                 var0 = {};
-                var1 = function(arg0) { // Original name: log, environment: var1
+                var1 = function arg0() {
                     _fun9833: for (var _fun9833_ip = 0;;) switch (_fun9833_ip) {
                         case 0:
                             var5 = arg0;

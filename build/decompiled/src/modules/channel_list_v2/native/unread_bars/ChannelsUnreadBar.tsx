@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelsUnreadBar, environment: var1
+    var1 = function arg0() {
         _fun101891: for (var _fun101891_ip = 0;;) switch (_fun101891_ip) {
             case 0:
                 var3 = arg0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var19[var21];
                 var5 = var18.bind(var3)(var2);
                 var2 = var5.useAnimatedStyle;
-                var0 = function() { // Original name: q, environment: var0
+                var0 = function() {
                     _fun101902: for (var _fun101902_ip = 0;;) switch (_fun101902_ip) {
                         case 0:
                             var0 = _closure2_slot1;

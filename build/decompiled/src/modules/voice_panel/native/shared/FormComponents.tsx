@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: VoiceBadges, environment: var1
+    var0 = function arg0() {
         _fun66440: for (var _fun66440_ip = 0;;) switch (_fun66440_ip) {
             case 0:
                 var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/shared/FormComponents.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: VoicePanelFormSection, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var6 = var2.style;
         var0 = null;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.VoicePanelFormSection = var3;
-    var1 = function(arg0) { // Original name: MemberRowItem, environment: var1
+    var1 = function arg0() {
         _fun66442: for (var _fun66442_ip = 0;;) switch (_fun66442_ip) {
             case 0:
                 var1 = arg0;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'sm',
                     'variant': 'secondary'
                 };
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 23;

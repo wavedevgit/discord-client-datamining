@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun49338: for (var _fun49338_ip = 0;;) switch (_fun49338_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: StickersStore, environment: var5
+        var3 = function() {
             _fun49348: for (var _fun49348_ip = 0;;) switch (_fun49348_ip) {
                 case 0:
                     var3 = this;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var5 = var3.waitFor;
             var9 = _closure1_slot9;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLoaded';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot14;
             var0 = _closure1_slot13;
             var0 = var0.Unloaded;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'loadState';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStickerMetadataArrays';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot15;
             var0 = undefined;
             var0 = var2.bind(var0)();
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasLoadedStickerPacks';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.hasLoadedStickerPacks;
             return var0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingStickerPacks';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var0 = var0.isFetchingStickerPacks;
             return var0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStickerById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun49356: for (var _fun49356_ip = 0;;) switch (_fun49356_ip) {
                 case 0:
                     var3 = arg0;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStickerPack';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.getStickerPack;
             var0 = arg0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPremiumPacks';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot12;
             var0 = var1.getPremiumPacks;
             var0 = var0.bind(var1)();
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPremiumPack';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.isPremiumPack;
             var0 = arg0;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRawStickersByGuild';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot11;
             var0 = var1.getAllGuildStickers;
             var0 = var0.bind(var1)();
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllGuildStickers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot15;
             var1 = undefined;
             var1 = var2.bind(var1)();
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllPackStickers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot12;
             var0 = var1.getAllPackStickers;
             var0 = var0.bind(var1)();
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStickersByGuildId';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot15;
             var1 = undefined;
             var1 = var2.bind(var1)();
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: BACKGROUND_SYNC, environment: var3
+    var8 = function() {
         var0 = _closure1_slot13;
         var0 = var0.Unloaded;
         _closure1_slot14 = var0;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BACKGROUND_SYNC = var8;
-    var8 = function(arg0) { // Original name: CONNECTION_OPEN, environment: var3
+    var8 = function arg0() {
         _fun49365: for (var _fun49365_ip = 0;;) switch (_fun49365_ip) {
             case 0:
                 var0 = arg0;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleGuildCreate, environment: var3
+    var8 = function arg0() {
         _fun49367: for (var _fun49367_ip = 0;;) switch (_fun49367_ip) {
             case 0:
                 var0 = arg0;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_CREATE = var8;
-    var3 = function() { // Original name: LOGOUT, environment: var3
+    var3 = function() {
         var0 = _closure1_slot13;
         var0 = var0.Unloaded;
         _closure1_slot14 = var0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: MyTableRow, environment: var1
+    var0 = function() {
         var3 = _closure1_slot12;
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemTableRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemTableRow, environment: var1
+    var1 = function() {
         var22 = _closure1_slot0;
         var23 = _closure1_slot2;
         var1 = 9;

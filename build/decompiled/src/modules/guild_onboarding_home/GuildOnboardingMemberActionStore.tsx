@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun39592: for (var _fun39592_ip = 0;;) switch (_fun39592_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: GuildOnboardingMemberActionStore, environment: var5
+        var3 = function() {
             _fun39596: for (var _fun39596_ip = 0;;) switch (_fun39596_ip) {
                 case 0:
                     var3 = this;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getCompletedActions';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun39597: for (var _fun39597_ip = 0;;) switch (_fun39597_ip) {
                 case 0:
                     var2 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasCompletedActionForChannel';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun39598: for (var _fun39598_ip = 0;;) switch (_fun39598_ip) {
                 case 0:
                     var2 = this;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun39599: for (var _fun39599_ip = 0;;) switch (_fun39599_ip) {
                 case 0:
                     var3 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function(arg0) { // Original name: handleMemberActionsFetchStart, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot7;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_NEW_MEMBER_ACTIONS_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleMemberActionsFetchSuccess, environment: var4
+    var8 = function arg0() {
         _fun39601: for (var _fun39601_ip = 0;;) switch (_fun39601_ip) {
             case 0:
                 var0 = arg0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleMemberActionsFetchFail, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot7;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL = var8;
-    var8 = function(arg0) { // Original name: handleNewMemberActionsDelete, environment: var4
+    var8 = function arg0() {
         _fun39603: for (var _fun39603_ip = 0;;) switch (_fun39603_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_NEW_MEMBER_ACTIONS_DELETE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleCompleteNewMemberAction, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var5 = var0.channelId;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.COMPLETE_NEW_MEMBER_ACTION = var8;
-    var4 = function(arg0) { // Original name: handleGuildDelete, environment: var4
+    var4 = function arg0() {
         _fun39605: for (var _fun39605_ip = 0;;) switch (_fun39605_ip) {
             case 0:
                 var0 = arg0;

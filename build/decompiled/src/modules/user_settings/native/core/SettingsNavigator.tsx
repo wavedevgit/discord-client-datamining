@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: LeftAlignedHeaderTitle, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.title;
         var0 = _closure1_slot13;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var12.bind(var0)(var4);
                                         var5 = var4.PressableOpacity;
                                         var4 = {};
-                                        var8 = function() { // Original name: onPress, environment: var8
+                                        var8 = function() {
                                             var1 = _closure3_slot0;
                                             var0 = var1.goBack;
                                             var0 = var0.bind(var1)();
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.useMemo;
                 var2 = function() { // Environment: var11
                     var0 = {};
-                    var1 = function(arg0) { // Original name: transitionEnd, environment: var1
+                    var1 = function arg0() {
                         _fun104426: for (var _fun104426_ip = 0;;) switch (_fun104426_ip) {
                             case 0:
                                 var0 = arg0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.useMemo;
                 var2 = function() { // Environment: var11
                     var0 = {};
-                    var1 = function(arg0) { // Original name: transitionEnd, environment: var1
+                    var1 = function arg0() {
                         _fun104428: for (var _fun104428_ip = 0;;) switch (_fun104428_ip) {
                             case 0:
                                 var0 = arg0;
@@ -662,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.top = var9;
                 var8 = var8.statusBarSpacer;
                 var5.style = var8;
-                var8 = function(arg0) { // Original name: onAccessibilityAction, environment: var11
+                var8 = function arg0() {
                     _fun104430: for (var _fun104430_ip = 0;;) switch (_fun104430_ip) {
                         case 0:
                             var0 = arg0;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = _closure1_slot9;
                 var16 = var16.OVERVIEW;
                 var10.name = var16;
-                var16 = function(arg0) { // Original name: options, environment: var11
+                var16 = function arg0() {
                     var0 = arg0;
                     var4 = var0.navigation;
                     var0 = {};
@@ -797,7 +797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var10.options = var16;
                 var10.listeners = var15;
-                var15 = function() { // Original name: getComponent, environment: var11
+                var15 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 37;
@@ -864,7 +864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = {};
                             var7 = var6.route;
                             var0.name = var7;
-                            var7 = function(arg0) { // Original name: options, environment: var5
+                            var7 = function arg0() {
                                 _fun104435: for (var _fun104435_ip = 0;;) switch (_fun104435_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -914,7 +914,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var0.options = var7;
-                            var5 = function() { // Original name: getComponent, environment: var5
+                            var5 = function() {
                                 var2 = _closure3_slot1;
                                 var0 = var2.getComponent;
                                 var0 = var0.bind(var2)();

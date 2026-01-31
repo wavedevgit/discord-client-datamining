@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var1 = 'modules/channel_following/native/showChannelFollowingActionSheet.tsx';
     var1 = var4.bind(var5)(var1);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: showChannelFollowingActionSheet, environment: var3
+    var1 = function arg0, arg1, arg2, arg3() {
         var8 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var8;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.targetChannelId = var7;
         var7 = arg3;
         var1.targetGuildId = var7;
-        var7 = function(arg0, arg1) { // Original name: reopenActionSheetWithTarget, environment: var6
+        var7 = function arg0, arg1() {
             var5 = _closure1_slot4;
             var9 = _closure2_slot0;
             var8 = _closure2_slot1;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.reopenActionSheetWithTarget = var7;
-        var7 = function() { // Original name: onSuccess, environment: var6
+        var7 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 5;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var2.bind(var0)(var1);
             var2 = var3.openLazy;
             var1 = {};
-            var4 = function() { // Original name: importer, environment: var4
+            var4 = function() {
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot2;
                 var1 = 4;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.onSuccess = var7;
-        var6 = function() { // Original name: onCancel, environment: var6
+        var6 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 2;

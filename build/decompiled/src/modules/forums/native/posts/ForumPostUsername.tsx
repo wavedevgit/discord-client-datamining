@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ForumPostUsername, environment: var1
+    var0 = function arg0() {
         _fun89461: for (var _fun89461_ip = 0;;) switch (_fun89461_ip) {
             case 0:
                 var1 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/posts/ForumPostUsername.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ForumPostAuthor, environment: var1
+    var3 = function arg0() {
         _fun89463: for (var _fun89463_ip = 0;;) switch (_fun89463_ip) {
             case 0:
                 var0 = arg0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ForumPostAuthor = var3;
-    var1 = function(arg0) { // Original name: ForumPostMessageAuthor, environment: var1
+    var1 = function arg0() {
         _fun89464: for (var _fun89464_ip = 0;;) switch (_fun89464_ip) {
             case 0:
                 var0 = arg0;

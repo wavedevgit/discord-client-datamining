@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun45681
             }
         case 37:
-            var3 = function(arg0, arg1) { // Original name: extendStatics, environment: var1
+            var3 = function arg0, arg1() {
                 _fun45682: for (var _fun45682_ip = 0;;) switch (_fun45682_ip) {
                     case 0:
                         var1 = global;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = arg0;
                         var3 = arg1;
                         var _closure2_slot0 = var2;
-                        var1 = function() { // Original name: __, environment: var0
+                        var1 = function() {
                             var1 = _closure2_slot0;
                             var0 = this;
                             var0.constructor = var1;
@@ -217,7 +217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = function(arg0) { // Environment: var1
                 var4 = arg0;
                 var _closure2_slot0 = var4;
-                var0 = function(arg0, arg1) { // Original name: StickyObject, environment: var1
+                var0 = function arg0, arg1() {
                     _fun45688: for (var _fun45688_ip = 0;;) switch (_fun45688_ip) {
                         case 0:
                             var1 = this;

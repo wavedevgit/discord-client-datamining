@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.code = var4;
             var _closure1_slot9 = var3;
             var4 = var7.memo;
-            var3 = function(arg0) { // Original name: VoiceUserItem, environment: var1
+            var3 = function arg0() {
                 _fun102082: for (var _fun102082_ip = 0;;) switch (_fun102082_ip) {
                     case 0:
                         var24 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var23[var3];
                         var8 = var25.bind(var4)(var2);
                         var6 = var8.useAnimatedStyle;
-                        var2 = function() { // Original name: c, environment: var1
+                        var2 = function() {
                             _fun102084: for (var _fun102084_ip = 0;;) switch (_fun102084_ip) {
                                 case 0:
                                     var0 = _closure2_slot3;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = _closure1_slot9;
                         var2.__initData = var9;
                         var6 = var6.bind(var8)(var2);
-                        var8 = function() { // Original name: getSource, environment: var1
+                        var8 = function() {
                             _fun102085: for (var _fun102085_ip = 0;;) switch (_fun102085_ip) {
                                 case 0:
                                     var0 = _closure2_slot0;
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'uikit-native/guild_sidebar/VoiceUserItem.tsx';
             var4 = var5.bind(var6)(var4);
             var2.default = var3;
-            var1 = function(arg0) { // Original name: getVoiceUserHeight, environment: var1
+            var1 = function arg0() {
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 var1 = 5;

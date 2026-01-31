@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionEmojiEditorModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionEmojiEditorModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var _closure2_slot0 = var2;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16 = var17.bind(var18)(var16);
         var4.title = var16;
         var4.onClose = var13;
-        var13 = function() { // Original name: onSave, environment: var8
+        var13 = function() {
             _fun116863: for (var _fun116863_ip = 0;;) switch (_fun116863_ip) {
                 case 0:
                     var1 = _closure2_slot9;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var10 = var10.emojiList;
         var5.style = var10;
-        var10 = function(arg0) { // Original name: renderItem, environment: var8
+        var10 = function arg0() {
             var0 = arg0;
             var15 = var0.item;
             var _closure3_slot0 = var15;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9.source = var11;
             var9 = var3.bind(var2)(var10, var9);
             var0.leading = var9;
-            var9 = function() { // Original name: label, environment: var8
+            var9 = function() {
                 _fun116865: for (var _fun116865_ip = 0;;) switch (_fun116865_ip) {
                     case 0:
                         var3 = _closure1_slot11;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.label = var9;
-            var8 = function() { // Original name: onPress, environment: var8
+            var8 = function() {
                 _fun116866: for (var _fun116866_ip = 0;;) switch (_fun116866_ip) {
                     case 0:
                         var0 = _closure3_slot0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = new Array(1);
         var9[0] = var10;
         var5.sections = var9;
-        var8 = function() { // Original name: ItemSeparatorComponent, environment: var8
+        var8 = function() {
             var3 = _closure1_slot9;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;

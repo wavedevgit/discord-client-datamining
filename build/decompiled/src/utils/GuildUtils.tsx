@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1, arg2) { // Original name: requestMembersDebounced, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun49490: for (var _fun49490_ip = 0;;) switch (_fun49490_ip) {
             case 0:
                 var0 = arg0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 0:
                             var4 = new Array(0);
                             var _closure3_slot0 = var4;
-                            var5 = function(arg0) { // Original name: pushGuild, environment: var1
+                            var5 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = var2.push;
                                 var0 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: getCachedResults, environment: var4
+    var0 = function arg0, arg1() {
         _fun49494: for (var _fun49494_ip = 0;;) switch (_fun49494_ip) {
             case 0:
                 var0 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var1 = function(arg0) { // Original name: getGuildNameSuggestion, environment: var4
+    var1 = function arg0() {
         _fun49495: for (var _fun49495_ip = 0;;) switch (_fun49495_ip) {
             case 0:
                 var6 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = {};
     var3.getGuildNameSuggestion = var1;
-    var4 = function(arg0, arg1) { // Original name: requestMembers, environment: var4
+    var4 = function arg0, arg1() {
         _fun49496: for (var _fun49496_ip = 0;;) switch (_fun49496_ip) {
             case 0:
                 var5 = arg0;

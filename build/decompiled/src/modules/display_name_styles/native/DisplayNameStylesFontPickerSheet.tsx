@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/DisplayNameStylesFontPickerSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DisplayNameStylesFontPickerSheet, environment: var1
+    var1 = function arg0() {
         _fun84854: for (var _fun84854_ip = 0;;) switch (_fun84854_ip) {
             case 0:
                 var2 = arg0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure1_slot9;
                             var1 = _closure1_slot6;
                             var0 = {};
-                            var6 = function() { // Original name: onPress, environment: var6
+                            var6 = function() {
                                 var2 = _closure2_slot5;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;

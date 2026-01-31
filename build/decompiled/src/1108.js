@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun12179: for (var _fun12179_ip = 0;;) switch (_fun12179_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun12180: for (var _fun12180_ip = 0;;) switch (_fun12180_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun12181: for (var _fun12181_ip = 0;;) switch (_fun12181_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun12182: for (var _fun12182_ip = 0;;) switch (_fun12182_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -234,8 +234,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.version = var4;
             var _closure1_slot4 = var3;
             var2.defaultSdkInfo = var3;
-            var1 = function() { // Original name: sdkInfoIntegration, environment: var1
-                var2 = function() { // Original name: createCachedFetchNativeSdkInfo, environment: var1
+            var1 = function() {
+                var2 = function() {
                     _fun12185: for (var _fun12185_ip = 0;;) switch (_fun12185_ip) {
                         case 0:
                             var1 = this;
@@ -364,14 +364,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'SdkInfo';
                 var0.name = var2;
-                var2 = function() { // Original name: setupOnce, environment: var1
+                var2 = function() {
                     var0 = undefined;
                     return var0;
                 };
                 var0.setupOnce = var2;
-                var1 = function(arg0) { // Original name: processEvent, environment: var1
+                var1 = function arg0() {
                     var3 = _closure2_slot0;
-                    var2 = function(arg0, arg1) { // Original name: _processEvent, environment: var0
+                    var2 = function arg0, arg1() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var1 = arg1;

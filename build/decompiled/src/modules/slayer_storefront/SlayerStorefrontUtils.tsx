@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var8;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var9;
-            var5 = function() { // Original name: getMarketingGuildId, environment: var1
+            var5 = function() {
                 _fun30706: for (var _fun30706_ip = 0;;) switch (_fun30706_ip) {
                     case 0:
                         var3 = _closure1_slot5;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var5;
-            var4 = function(arg0) { // Original name: hasSocialLayerStorefront, environment: var1
+            var4 = function arg0() {
                 _fun30707: for (var _fun30707_ip = 0;;) switch (_fun30707_ip) {
                     case 0:
                         var1 = arg0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var4;
-            var3 = function(arg0, arg1) { // Original name: getSKUShareURL, environment: var1
+            var3 = function arg0, arg1() {
                 var1 = arg1;
                 var0 = global;
                 var2 = var0.location;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = 'modules/slayer_storefront/SlayerStorefrontUtils.tsx';
             var7 = var8.bind(var9)(var7);
             var2.LARGE_ASSET_FORMAT = var6;
-            var6 = function(arg0) { // Original name: isSlayerStorefrontApplication, environment: var1
+            var6 = function arg0() {
                 _fun30709: for (var _fun30709_ip = 0;;) switch (_fun30709_ip) {
                     case 0:
                         var1 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.isSlayerStorefrontApplication = var6;
-            var6 = function(arg0) { // Original name: isGameItemSKU, environment: var1
+            var6 = function arg0() {
                 _fun30710: for (var _fun30710_ip = 0;;) switch (_fun30710_ip) {
                     case 0:
                         var1 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.isGameItemSKU = var6;
             var2.getMarketingGuildId = var5;
             var2.hasSocialLayerStorefront = var4;
-            var4 = function(arg0) { // Original name: transformSlayerApplicationStorefrontServer, environment: var1
+            var4 = function arg0() {
                 _fun30711: for (var _fun30711_ip = 0;;) switch (_fun30711_ip) {
                     case 0:
                         var2 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.transformSlayerApplicationStorefrontServer = var4;
-            var4 = function(arg0) { // Original name: transformSlayerSKUTenantMetadataFromServer, environment: var1
+            var4 = function arg0() {
                 _fun30714: for (var _fun30714_ip = 0;;) switch (_fun30714_ip) {
                     case 0:
                         var1 = arg0;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.transformSlayerSKUTenantMetadataFromServer = var4;
-            var4 = function(arg0) { // Original name: transformSocialLayerStorefrontRecommendationServer, environment: var1
+            var4 = function arg0() {
                 var1 = arg0;
                 var0 = {};
                 var5 = var1.skus;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.transformSocialLayerStorefrontRecommendationServer = var4;
-            var4 = function(arg0, arg1) { // Original name: getPrimaryCarouselItemInfo, environment: var1
+            var4 = function arg0, arg1() {
                 _fun30720: for (var _fun30720_ip = 0;;) switch (_fun30720_ip) {
                     case 0:
                         var0 = arg0;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getPrimaryCarouselItemInfo = var4;
-            var4 = function(arg0) { // Original name: getGameItemThumbnailUrl, environment: var1
+            var4 = function arg0() {
                 _fun30721: for (var _fun30721_ip = 0;;) switch (_fun30721_ip) {
                     case 0:
                         var0 = arg0;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getGameItemThumbnailUrl = var4;
-            var4 = function(arg0) { // Original name: getCardImageURL, environment: var1
+            var4 = function arg0() {
                 _fun30722: for (var _fun30722_ip = 0;;) switch (_fun30722_ip) {
                     case 0:
                         var2 = arg0;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getCardImageURL = var4;
-            var4 = function(arg0) { // Original name: getCardBackgroundImageURL, environment: var1
+            var4 = function arg0() {
                 _fun30723: for (var _fun30723_ip = 0;;) switch (_fun30723_ip) {
                     case 0:
                         var3 = arg0;
@@ -790,7 +790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getCardBackgroundImageURL = var4;
             var2.getSKUShareURL = var3;
-            var3 = function(arg0, arg1) { // Original name: getForwardedSKUShareURL, environment: var1
+            var3 = function arg0, arg1() {
                 var3 = _closure1_slot15;
                 var2 = undefined;
                 var1 = arg0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.getForwardedSKUShareURL = var3;
-            var1 = function(arg0, arg1) { // Original name: canSeeGameShop, environment: var1
+            var1 = function arg0, arg1() {
                 _fun30725: for (var _fun30725_ip = 0;;) switch (_fun30725_ip) {
                     case 0:
                         var3 = _closure1_slot5;

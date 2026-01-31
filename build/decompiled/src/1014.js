@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: getPromisePolyfill, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var3 = function() { // Original name: polyfillPromise, environment: var0
+    var3 = function() {
         _fun10373: for (var _fun10373_ip = 0;;) switch (_fun10373_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.polyfillPromise = var3;
     var1.getPromisePolyfill = var2;
-    var2 = function() { // Original name: requireRejectionTracking, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.requireRejectionTracking = var2;
-    var0 = function() { // Original name: checkPromiseAndWarn, environment: var0
+    var0 = function() {
         _fun10376: for (var _fun10376_ip = 0;;) switch (_fun10376_ip) {
             case 0:
                 var0 = undefined;

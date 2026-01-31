@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun32209: for (var _fun32209_ip = 0;;) switch (_fun32209_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun32211: for (var _fun32211_ip = 0;;) switch (_fun32211_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: releaseDirectVideoStream, environment: var1
+    var0 = function arg0() {
         _fun32212: for (var _fun32212_ip = 0;;) switch (_fun32212_ip) {
             case 0:
                 var2 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var6;
     var6 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: RefCountedStream, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'addref';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = var1.refcount;
             var0 = var0 + 1;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'release';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var1 = var0.refcount;
             var1 = var1 - 1;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/media-engine/native/ui/DirectVideo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: DirectVideo, environment: var1
+    var1 = function arg0, arg1() {
         _fun32217: for (var _fun32217_ip = 0;;) switch (_fun32217_ip) {
             case 0:
                 var5 = arg0;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.muted = var6;
                             var8 = var1.addEventListener;
                             var7 = 'pause';
-                            var6 = function() { // Original name: handlePause, environment: var5
+                            var6 = function() {
                                 _fun32220: for (var _fun32220_ip = 0;;) switch (_fun32220_ip) {
                                     case 0:
                                         var0 = _closure2_slot8;
@@ -627,7 +627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var8.bind(var1)(var7, var6);
                             var8 = var1.addEventListener;
                             var7 = 'resize';
-                            var6 = function() { // Original name: handleResize, environment: var5
+                            var6 = function() {
                                 _fun32221: for (var _fun32221_ip = 0;;) switch (_fun32221_ip) {
                                     case 0:
                                         var0 = _closure2_slot7;
@@ -711,7 +711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var8.bind(var1)(var7, var6);
                             var7 = var1.addEventListener;
                             var6 = 'canplaythrough';
-                            var5 = function() { // Original name: handleReady, environment: var5
+                            var5 = function() {
                                 _fun32222: for (var _fun32222_ip = 0;;) switch (_fun32222_ip) {
                                     case 0:
                                         var4 = _closure1_slot7;

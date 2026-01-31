@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: makeUpdateSettingFunction, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/UserSettingDefinitions.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: defineProtoSetting, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun15467: for (var _fun15467_ip = 0;;) switch (_fun15467_ip) {
             case 0:
                 var0 = arguments[4];
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun15467
                 }
             case 78:
-                var0 = function(arg0, arg1) { // Original name: o, environment: var1
+                var0 = function arg0, arg1() {
                     var1 = arg0;
                     var0 = arg1;
                     var0 = var1 === var0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
             case 83:
                 var _closure2_slot5 = var0;
-                var4 = function() { // Original name: getSetting, environment: var1
+                var4 = function() {
                     _fun15469: for (var _fun15469_ip = 0;;) switch (_fun15469_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var3.bind(var5)(var4, var2);
                 var0.updateSetting = var2;
-                var1 = function() { // Original name: useSetting, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var1 = 4;
@@ -192,14 +192,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.defineProtoSetting = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: wrapSettingWithSelectiveSyncing, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
         var _closure2_slot1 = var0;
         var0 = arg2;
         var _closure2_slot2 = var0;
-        var4 = function() { // Original name: getSetting, environment: var1
+        var4 = function() {
             _fun15474: for (var _fun15474_ip = 0;;) switch (_fun15474_ip) {
                 case 0:
                     var1 = _closure1_slot3;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = {};
         var0.getSetting = var4;
-        var2 = function() { // Original name: useSetting, environment: var1
+        var2 = function() {
             _fun15475: for (var _fun15475_ip = 0;;) switch (_fun15475_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.wrapSettingWithSelectiveSyncing = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: wrapSettingWithOverride, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot2 = var0;
         var0 = arg3;
         var _closure2_slot3 = var0;
-        var4 = function() { // Original name: getSetting, environment: var1
+        var4 = function() {
             _fun15479: for (var _fun15479_ip = 0;;) switch (_fun15479_ip) {
                 case 0:
                     var2 = _closure2_slot2;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = {};
         var0.getSetting = var4;
-        var2 = function() { // Original name: useSetting, environment: var1
+        var2 = function() {
             _fun15480: for (var _fun15480_ip = 0;;) switch (_fun15480_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.wrapSettingWithOverride = var3;
-    var1 = function(arg0) { // Original name: wrapSettingWithExperimentDefaults, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.baseSetting;
         var _closure2_slot0 = var2;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.onUseDefault;
         var _closure2_slot5 = var0;
         var0 = {};
-        var2 = function() { // Original name: getSetting, environment: var1
+        var2 = function() {
             _fun15483: for (var _fun15483_ip = 0;;) switch (_fun15483_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.getSetting = var2;
-        var2 = function() { // Original name: useSetting, environment: var1
+        var2 = function() {
             _fun15484: for (var _fun15484_ip = 0;;) switch (_fun15484_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.useSetting = var2;
-        var1 = function(arg0) { // Original name: updateSetting, environment: var1
+        var1 = function arg0() {
             var2 = _closure2_slot0;
             var1 = var2.updateSetting;
             var0 = arg0;

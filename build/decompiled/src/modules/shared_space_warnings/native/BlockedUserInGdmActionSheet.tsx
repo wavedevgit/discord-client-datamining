@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.icon = var8;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot14 = var1;
-    var1 = function(arg0) { // Original name: getUserCalloutRowText, environment: var3
+    var1 = function arg0() {
         _fun95859: for (var _fun95859_ip = 0;;) switch (_fun95859_ip) {
             case 0:
                 var0 = arg0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var1.bind(var2)(var0);
                 var _closure2_slot2 = var0;
-                var0 = function(arg0) { // Original name: renderUsername, environment: var7
+                var0 = function arg0() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var1 = var0["4WHCtq"];
                 var0 = {};
-                var4 = function() { // Original name: usernameHook, environment: var7
+                var4 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.t;
                 var2 = var1.veV4IN;
                 var1 = {};
-                var8 = function() { // Original name: usernameHook1, environment: var7
+                var8 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.usernameHook1 = var8;
-                var8 = function() { // Original name: usernameHook2, environment: var7
+                var8 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 1;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.t;
                 var2 = var1["67ZE+9"];
                 var1 = {};
-                var8 = function() { // Original name: usernameHook1, environment: var7
+                var8 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.usernameHook1 = var8;
-                var8 = function() { // Original name: usernameHook2, environment: var7
+                var8 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 1;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.t;
                 var2 = var1.qfo6KR;
                 var1 = {};
-                var8 = function() { // Original name: usernameHook1, environment: var7
+                var8 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.usernameHook1 = var8;
-                var7 = function() { // Original name: usernameHook2, environment: var7
+                var7 = function() {
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot2;
                     var0 = 1;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var1;
-    var4 = function(arg0) { // Original name: UserCalloutAvatars, environment: var3
+    var4 = function arg0() {
         _fun95869: for (var _fun95869_ip = 0;;) switch (_fun95869_ip) {
             case 0:
                 var2 = arg0;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var4 = function(arg0) { // Original name: BlockedUserInGDMDescription, environment: var3
+    var4 = function arg0() {
         _fun95872: for (var _fun95872_ip = 0;;) switch (_fun95872_ip) {
             case 0:
                 var0 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: BlockedUserInGdmActionSheet, environment: var3
+    var3 = function arg0() {
         _fun95873: for (var _fun95873_ip = 0;;) switch (_fun95873_ip) {
             case 0:
                 var1 = arg0;
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var14 = 'lg';
                 var9.size = var14;
-                var14 = function() { // Original name: onPress, environment: var13
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 25;
@@ -1031,7 +1031,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'lg',
                     'variant': 'secondary'
                 };
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 25;

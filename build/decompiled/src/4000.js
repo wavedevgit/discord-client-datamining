@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0) { // Original name: Suspender, environment: var1
+    var0 = function arg0() {
         _fun37224: for (var _fun37224_ip = 0;;) switch (_fun37224_ip) {
             case 0:
                 var0 = arg0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
-    var1 = function(arg0) { // Original name: Freeze, environment: var1
+    var1 = function arg0() {
         _fun37226: for (var _fun37226_ip = 0;;) switch (_fun37226_ip) {
             case 0:
                 var0 = arg0;

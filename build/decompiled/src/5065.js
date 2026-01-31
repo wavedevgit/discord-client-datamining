@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function(arg0, arg1) { // Original name: _classCallCheck, environment: var1
+    var1 = function arg0, arg1() {
         _fun45502: for (var _fun45502_ip = 0;;) switch (_fun45502_ip) {
             case 0:
                 var1 = arg0;

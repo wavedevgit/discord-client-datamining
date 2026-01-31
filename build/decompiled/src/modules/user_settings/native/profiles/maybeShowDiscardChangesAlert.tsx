@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/profiles/maybeShowDiscardChangesAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: maybeShowDiscardChangesAlert, environment: var1
+    var3 = function arg0() {
         _fun72663: for (var _fun72663_ip = 0;;) switch (_fun72663_ip) {
             case 0:
                 var2 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.DmDzZB;
                 var5 = var6.bind(var7)(var5);
                 var1.cancelText = var5;
-                var5 = function() { // Original name: onConfirm, environment: var4
+                var5 = function() {
                     var2 = _closure2_slot0;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onConfirm = var5;
-                var4 = function() { // Original name: onCancel, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: showDiscardChangesAlert, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.onConfirm;
         var3 = var0.onCancel;

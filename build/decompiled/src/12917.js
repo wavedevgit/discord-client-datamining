@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: getEventForEnvelopeItem, environment: var0
+    var2 = function arg0, arg1() {
         _fun99482: for (var _fun99482_ip = 0;;) switch (_fun99482_ip) {
             case 0:
                 var2 = arg0;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = 64;
     var1.DEFAULT_TRANSPORT_BUFFER_SIZE = var2;
-    var0 = function(arg0, arg1) { // Original name: createTransport, environment: var0
+    var0 = function arg0, arg1() {
         _fun99483: for (var _fun99483_ip = 0;;) switch (_fun99483_ip) {
             case 0:
                 var0 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var _closure2_slot3 = var0;
                 var0 = {};
-                var2 = function(arg0) { // Original name: send, environment: var1
+                var2 = function arg0() {
                     _fun99484: for (var _fun99484_ip = 0;;) switch (_fun99484_ip) {
                         case 0:
                             var4 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var4[var3];
                             var4 = var5.bind(var6)(var4, var7);
                             var _closure3_slot1 = var4;
-                            var4 = function(arg0) { // Original name: recordEnvelopeLoss, environment: var1
+                            var4 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var3 = _closure1_slot0;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var _closure3_slot2 = var4;
                             var6 = _closure2_slot2;
                             var5 = var6.add;
-                            var4 = function() { // Original name: requestTask, environment: var1
+                            var4 = function() {
                                 var3 = _closure2_slot1;
                                 var2 = {};
                                 var5 = _closure1_slot0;
@@ -370,7 +370,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.send = var2;
-                var1 = function(arg0) { // Original name: flush, environment: var1
+                var1 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = var2.drain;
                     var0 = arg0;

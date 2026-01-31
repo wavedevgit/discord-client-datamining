@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var7.bind(var3)(var0);
         var1 = var0.TableRow;
         var0 = {};
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure2_slot1;
             var1 = _closure2_slot0;
             var0 = undefined;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var6.bind(var7)(var3);
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: GuildDirectoryCreateOrAddHeader, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var17 = var0.directoryGuildName;
         var6 = var0.tabIndex;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: GuildDirectoryCreateOrAddFooter, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.handleFooterPress;
         var0 = _closure1_slot12;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildDirectoryCreateOrAdd, environment: var1
+    var1 = function arg0() {
         _fun71281: for (var _fun71281_ip = 0;;) switch (_fun71281_ip) {
             case 0:
                 var2 = arg0;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.current;
                     var4 = var4.directoryGuildName;
                     var0.directoryGuildName = var4;
-                    var4 = function(arg0, arg1, arg2) { // Original name: onHubGuildInfoSet, environment: var4
+                    var4 = function arg0, arg1, arg2() {
                         var3 = _closure2_slot1;
                         var2 = var3.push;
                         var0 = _closure1_slot9;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var2;
                             var7 = var5;
                             var0 = copyDataProperties(var8, var7);
-                            var6 = function(arg0) { // Original name: handleItemPress, environment: var0
+                            var6 = function arg0() {
                                 var3 = _closure2_slot1;
                                 var2 = var3.push;
                                 var0 = _closure1_slot9;

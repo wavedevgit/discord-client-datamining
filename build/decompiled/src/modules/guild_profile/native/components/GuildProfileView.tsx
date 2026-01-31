@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var8;
-    var4 = function(arg0, arg1) { // Original name: getBackgroundForProfile, environment: var5
+    var4 = function arg0, arg1() {
         _fun59657: for (var _fun59657_ip = 0;;) switch (_fun59657_ip) {
             case 0:
                 var5 = arg1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var0 = function(arg0) { // Original name: GuildProfileBackground, environment: var5
+    var0 = function arg0() {
         _fun59658: for (var _fun59658_ip = 0;;) switch (_fun59658_ip) {
             case 0:
                 var0 = arg0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: GuildProfileGradient, environment: var5
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.guildProfile;
         var0 = _closure1_slot10;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/guild_profile/native/components/GuildProfileView.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: GuildProfileView, environment: var5
+    var5 = function arg0() {
         _fun59661: for (var _fun59661_ip = 0;;) switch (_fun59661_ip) {
             case 0:
                 var1 = arg0;

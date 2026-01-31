@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: getOrientationDescription, environment: var4
+    var0 = function arg0() {
         _fun38311: for (var _fun38311_ip = 0;;) switch (_fun38311_ip) {
             case 0:
                 var7 = arg0;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getRollAngleDescription, environment: var4
+    var0 = function arg0() {
         var1 = -0.5;
         var0 = arg0;
         var0 = var1 * var0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getPitchAngleDescription, environment: var4
+    var0 = function arg0() {
         var1 = -0.5;
         var0 = arg0;
         var0 = var1 * var0;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var2;
     var0 = {};
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: read, environment: var4
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun38314: for (var _fun38314_ip = 0;;) switch (_fun38314_ip) {
             case 0:
                 var10 = arg0;

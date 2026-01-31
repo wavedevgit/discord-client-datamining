@@ -8,17 +8,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: headerTitle, environment: var1
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: headerRight, environment: var1
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var _closure2_slot0 = var4;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.headerTitle = var5;
         var4 = _closure1_slot14;
         var2.headerRight = var4;
-        var8 = function(arg0) { // Original name: render, environment: var3
+        var8 = function arg0() {
             _fun43418: for (var _fun43418_ip = 0;;) switch (_fun43418_ip) {
                 case 0:
                     var7 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var8 = var9.bind(var10)(var8);
         var2.headerLeft = var8;
-        var8 = function() { // Original name: render, environment: var3
+        var8 = function() {
             _fun43420: for (var _fun43420_ip = 0;;) switch (_fun43420_ip) {
                 case 0:
                     var3 = _closure1_slot12;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.fullscreen = var6;
         var2.headerTitle = var5;
         var2.headerRight = var4;
-        var8 = function() { // Original name: render, environment: var3
+        var8 = function() {
             var3 = _closure1_slot12;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.prompts = var5;
             var4 = _closure2_slot3;
             var0.completeOnboarding = var4;
-            var4 = function() { // Original name: onClose, environment: var4
+            var4 = function() {
                 var2 = _closure2_slot5;
                 var0 = undefined;
                 var2 = var2.bind(var0)();
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.fullscreen = var6;
         var1.headerTitle = var5;
         var1.headerRight = var4;
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot12;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/GuildOnboardingModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildOnboardingModal, environment: var1
+    var1 = function arg0() {
         _fun43424: for (var _fun43424_ip = 0;;) switch (_fun43424_ip) {
             case 0:
                 var0 = arg0;

@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/native/ActivityShareLinkModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityShareLinkModal, environment: var1
+    var1 = function arg0() {
         _fun98063: for (var _fun98063_ip = 0;;) switch (_fun98063_ip) {
             case 0:
                 var0 = arg0;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.r9qKow;
                 var11 = var20.bind(var25)(var11);
                 var6.title = var11;
-                var11 = function(arg0) { // Original name: headerTitle, environment: var8
+                var11 = function arg0() {
                     var0 = arg0;
                     var4 = var0.children;
                     var3 = _closure1_slot12;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var20.getHeaderCloseButton;
                 var11 = var11.bind(var20)(var24);
                 var6.headerLeft = var11;
-                var8 = function(arg0) { // Original name: headerRight, environment: var8
+                var8 = function arg0() {
                     var3 = _closure1_slot12;
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;

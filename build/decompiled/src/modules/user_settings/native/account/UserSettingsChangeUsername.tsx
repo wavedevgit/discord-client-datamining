@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.dividerInner = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: UsernameStatusMessage, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var4 = var1.usernameStatus;
         var1 = var1.showHint;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/UserSettingsChangeUsername.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun80972: for (var _fun80972_ip = 0;;) switch (_fun80972_ip) {
             case 0:
                 var0 = _closure1_slot12;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.onSubmit = var5;
-                            var4 = function() { // Original name: onSuccess, environment: var4
+                            var4 = function() {
                                 var3 = _closure2_slot0;
                                 var2 = var3.dispatch;
                                 var4 = _closure1_slot0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function(arg0) { // Original name: headerRight, environment: var3
+                    var3 = function arg0() {
                         _fun80980: for (var _fun80980_ip = 0;;) switch (_fun80980_ip) {
                             case 0:
                                 var1 = _closure2_slot9;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.ClearButtonVisibility;
                 var6 = var6.WITH_CONTENT;
                 var5.clearButtonVisibility = var6;
-                var6 = function() { // Original name: renderLeadingComponent, environment: var22
+                var6 = function() {
                     var3 = _closure1_slot10;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -964,7 +964,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var16.hasUniqueUsername;
                 var26 = var26.bind(var16)();
                 var14.enableAndroidSanitizedInputWorkaround = var26;
-                var22 = function(arg0) { // Original name: onChangeText, environment: var22
+                var22 = function arg0() {
                     _fun80983: for (var _fun80983_ip = 0;;) switch (_fun80983_ip) {
                         case 0:
                             var3 = arg0;

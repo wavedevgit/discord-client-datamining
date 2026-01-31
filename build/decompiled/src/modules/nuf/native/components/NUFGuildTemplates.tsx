@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: onCreateGuild, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _onCreateGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _onCreateServer, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: getScreens, environment: var1
+    var0 = function() {
         var0 = {};
         var1 = _closure1_slot11;
         var2 = var1.GUILD_TEMPLATES;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.impressionProperties = var4;
         var4 = true;
         var1.fullscreen = var4;
-        var10 = function() { // Original name: headerTitle, environment: var3
+        var10 = function() {
             var0 = null;
             return var0;
         };
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var10 = var11.bind(var12)(var10);
         var1.headerLeft = var10;
-        var10 = function() { // Original name: render, environment: var3
+        var10 = function() {
             var3 = _closure1_slot14;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -266,12 +266,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = _closure1_slot15;
         var1.impressionProperties = var10;
         var1.fullscreen = var4;
-        var10 = function() { // Original name: headerTitle, environment: var3
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var10;
-        var10 = function(arg0) { // Original name: render, environment: var3
+        var10 = function arg0() {
             var0 = arg0;
             var5 = var0.guildTemplate;
             var3 = _closure1_slot14;
@@ -302,12 +302,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = _closure1_slot15;
         var1.impressionProperties = var10;
         var1.fullscreen = var4;
-        var10 = function() { // Original name: headerTitle, environment: var3
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var10;
-        var10 = function(arg0, arg1) { // Original name: render, environment: var3
+        var10 = function arg0, arg1() {
             var6 = arg0;
             var _closure3_slot0 = var6;
             var0 = arg1;
@@ -323,14 +323,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var0;
             var9 = var6;
             var6 = copyDataProperties(var10, var9);
-            var6 = function(arg0) { // Original name: onCreate, environment: var5
+            var6 = function arg0() {
                 var0 = arg0;
                 var1 = var0.guild;
                 var4 = _closure3_slot1;
                 var3 = var1.id;
                 var0 = _closure3_slot0;
                 var2 = var0.guildTemplate;
-                var1 = function() { // Original name: onCreateServer, environment: var0
+                var1 = function() {
                     var0 = undefined;
                     var3 = _closure1_slot18;
                     var2 = var3.apply;
@@ -375,12 +375,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = _closure1_slot15;
         var1.impressionProperties = var10;
         var1.fullscreen = var4;
-        var10 = function() { // Original name: headerTitle, environment: var3
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var10;
-        var10 = function() { // Original name: render, environment: var3
+        var10 = function() {
             var3 = _closure1_slot14;
             var5 = _closure1_slot1;
             var6 = _closure1_slot2;
@@ -412,17 +412,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = _closure1_slot15;
         var1.impressionProperties = var10;
         var1.fullscreen = var4;
-        var10 = function() { // Original name: headerTitle, environment: var3
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var10;
-        var10 = function() { // Original name: headerLeft, environment: var3
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var1.headerLeft = var10;
-        var10 = function(arg0) { // Original name: render, environment: var3
+        var10 = function arg0() {
             var0 = arg0;
             var4 = var0.code;
             var3 = _closure1_slot14;
@@ -455,12 +455,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = _closure1_slot15;
         var1.impressionProperties = var7;
         var1.fullscreen = var4;
-        var7 = function() { // Original name: headerTitle, environment: var3
+        var7 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var7;
-        var7 = function(arg0) { // Original name: render, environment: var3
+        var7 = function arg0() {
             var0 = arg0;
             var5 = var0.guildId;
             var _closure3_slot0 = var5;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var7 = _closure1_slot9;
             var0.onCancel = var7;
-            var6 = function() { // Original name: onSuccess, environment: var6
+            var6 = function() {
                 var2 = _closure1_slot16;
                 var1 = _closure3_slot0;
                 var0 = undefined;
@@ -511,17 +511,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.impressionProperties = var5;
         var1.fullscreen = var4;
         var1.ignoreKeyboard = var4;
-        var4 = function() { // Original name: headerTitle, environment: var3
+        var4 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var4;
-        var4 = function() { // Original name: headerLeft, environment: var3
+        var4 = function() {
             var0 = null;
             return var0;
         };
         var1.headerLeft = var4;
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot14;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf/native/components/NUFGuildTemplates.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: NUFGuildTemplates, environment: var1
+    var1 = function() {
         var3 = _closure1_slot14;
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;

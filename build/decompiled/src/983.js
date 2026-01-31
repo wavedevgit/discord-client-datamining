@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: _isFetchSupported, environment: var0
+    var2 = function() {
         _fun10125: for (var _fun10125_ip = 0;;) switch (_fun10125_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var3 = function(arg0) { // Original name: isNativeFunction, environment: var0
+    var3 = function arg0() {
         _fun10126: for (var _fun10126_ip = 0;;) switch (_fun10126_ip) {
             case 0:
                 var4 = arg0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var8;
     var4 = var6.bind(var7)(var1, var5, var4);
     var1.isNativeFunction = var3;
-    var3 = function() { // Original name: supportsDOMError, environment: var0
+    var3 = function() {
         _fun10127: for (var _fun10127_ip = 0;;) switch (_fun10127_ip) {
             case 0: // try_start_0
                 var0 = global;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.supportsDOMError = var3;
-    var3 = function() { // Original name: supportsDOMException, environment: var0
+    var3 = function() {
         _fun10128: for (var _fun10128_ip = 0;;) switch (_fun10128_ip) {
             case 0: // try_start_0
                 var0 = global;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.supportsDOMException = var3;
-    var3 = function() { // Original name: supportsErrorEvent, environment: var0
+    var3 = function() {
         _fun10129: for (var _fun10129_ip = 0;;) switch (_fun10129_ip) {
             case 0: // try_start_0
                 var0 = global;
@@ -161,7 +161,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.supportsErrorEvent = var3;
     var1.supportsFetch = var2;
-    var2 = function() { // Original name: supportsHistory, environment: var0
+    var2 = function() {
         _fun10130: for (var _fun10130_ip = 0;;) switch (_fun10130_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.supportsHistory = var2;
-    var2 = function() { // Original name: supportsNativeFetch, environment: var0
+    var2 = function() {
         _fun10131: for (var _fun10131_ip = 0;;) switch (_fun10131_ip) {
             case 0:
                 var4 = undefined;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.supportsNativeFetch = var2;
-    var2 = function() { // Original name: supportsReferrerPolicy, environment: var0
+    var2 = function() {
         _fun10132: for (var _fun10132_ip = 0;;) switch (_fun10132_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -365,7 +365,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.supportsReferrerPolicy = var2;
-    var0 = function() { // Original name: supportsReportingObserver, environment: var0
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

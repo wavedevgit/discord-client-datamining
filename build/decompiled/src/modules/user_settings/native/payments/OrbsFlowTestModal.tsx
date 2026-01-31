@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: BalanceWidgetMenuSection, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: BalanceWidgetPillSection, environment: var1
+    var0 = function() {
         _fun86535: for (var _fun86535_ip = 0;;) switch (_fun86535_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.cpT0Cq;
                     var7 = var8.bind(var11)(var7);
                     var2.buttonText = var7;
-                    var7 = function() { // Original name: onButtonPress, environment: var1
+                    var7 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 13;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.WAI6xu;
                     var6 = var7.bind(var8)(var6);
                     var2.buttonText = var6;
-                    var6 = function() { // Original name: onButtonPress, environment: var1
+                    var6 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 13;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var21;
             case 455:
                 var18.defaultValue = var14;
-                var9 = function(arg0) { // Original name: onChange, environment: var9
+                var9 = function arg0() {
                     var2 = _closure2_slot5;
                     var1 = ['primary', 'secondary', 'tertiary'];
                     var0 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: OrbsFlowTest, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: OrbsFlowTestModal, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 5;
@@ -555,11 +555,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot9;
         var1 = var4.Navigator;
         var0 = {};
-        var5 = function(arg0) { // Original name: screenOptions, environment: var8
+        var5 = function arg0() {
             var0 = arg0;
             var6 = var0.navigation;
             var0 = {};
-            var1 = function(arg0) { // Original name: headerTitle, environment: var1
+            var1 = function arg0() {
                 var2 = arg0;
                 var5 = var2.children;
                 var0 = null;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var9 = 'OrbsFlowTest';
         var4.name = var9;
-        var8 = function() { // Original name: options, environment: var8
+        var8 = function() {
             var0 = {};
             var1 = 'Orbs Flow Test';
             var0.title = var1;

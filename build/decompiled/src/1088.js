@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var12 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var12;
-    var1 = function(arg0, arg1, arg2) { // Original name: startBrowserTracingPageLoadSpan, environment: var5
+    var1 = function arg0, arg1, arg2() {
         _fun11961: for (var _fun11961_ip = 0;;) switch (_fun11961_ip) {
             case 0:
                 var3 = arg0;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var1;
-    var3 = function(arg0, arg1, arg2) { // Original name: startBrowserTracingNavigationSpan, environment: var5
+    var3 = function arg0, arg1, arg2() {
         _fun11962: for (var _fun11962_ip = 0;;) switch (_fun11962_ip) {
             case 0:
                 var2 = arg0;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var3;
-    var4 = function(arg0) { // Original name: getMetaContent, environment: var5
+    var4 = function arg0() {
         _fun11963: for (var _fun11963_ip = 0;;) switch (_fun11963_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -165,14 +165,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var4;
-    var0 = function(arg0) { // Original name: getActiveIdleSpan, environment: var5
+    var0 = function arg0() {
         var1 = _closure1_slot4;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: setActiveIdleSpan, environment: var5
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -241,12 +241,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var6;
     var6 = 'BrowserTracing';
     var2.BROWSER_TRACING_INTEGRATION_ID = var6;
-    var5 = function() { // Original name: browserTracingIntegration, environment: var5
+    var5 = function() {
         _fun11966: for (var _fun11966_ip = 0;;) switch (_fun11966_ip) {
             case 0:
                 var4 = undefined;
                 var2 = undefined;
-                var0 = function(arg0, arg1) { // Original name: _createRouteSpan, environment: var1
+                var0 = function arg0, arg1() {
                     _fun11967: for (var _fun11967_ip = 0;;) switch (_fun11967_ip) {
                         case 0:
                             var7 = arg0;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = undefined;
                             var4 = undefined;
                             var _closure3_slot0 = var7;
-                            var1 = function() { // Original name: emitFinish, environment: var2
+                            var1 = function() {
                                 _fun11968: for (var _fun11968_ip = 0;;) switch (_fun11968_ip) {
                                     case 0:
                                         var0 = _closure2_slot4;
@@ -394,7 +394,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var11 = _closure2_slot15;
                             var6.childSpanTimeout = var11;
                             var6.disableAutoFinish = var4;
-                            var11 = function(arg0) { // Original name: beforeSpanEnd, environment: var2
+                            var11 = function arg0() {
                                 _fun11969: for (var _fun11969_ip = 0;;) switch (_fun11969_ip) {
                                     case 0:
                                         var11 = arg0;
@@ -627,12 +627,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'BrowserTracing';
                 var0.name = var2;
-                var2 = function(arg0) { // Original name: setup, environment: var1
+                var2 = function arg0() {
                     _fun11971: for (var _fun11971_ip = 0;;) switch (_fun11971_ip) {
                         case 0:
                             var4 = arg0;
                             var _closure3_slot0 = var4;
-                            var0 = function() { // Original name: maybeEndActiveSpan, environment: var1
+                            var0 = function() {
                                 _fun11972: for (var _fun11972_ip = 0;;) switch (_fun11972_ip) {
                                     case 0:
                                         var3 = _closure1_slot8;
@@ -848,7 +848,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun11971
                             }
                         case 384:
-                            var6 = function() { // Original name: interactionHandler, environment: var1
+                            var6 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot1;
                                 var0 = 1;
@@ -1199,7 +1199,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.setup = var2;
-                var1 = function(arg0) { // Original name: afterAllSetup, environment: var1
+                var1 = function arg0() {
                     _fun11977: for (var _fun11977_ip = 0;;) switch (_fun11977_ip) {
                         case 0:
                             var4 = arg0;
@@ -1476,7 +1476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var16 = _closure2_slot14;
                             var15 = _closure2_slot15;
                             var14 = _closure2_slot3;
-                            var2 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: registerInteractionListener, environment: var2
+                            var2 = function arg0, arg1, arg2, arg3, arg4() {
                                 _fun11979: for (var _fun11979_ip = 0;;) switch (_fun11979_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -1508,7 +1508,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var2 = true;
                                         var3.capture = var2;
                                         var2 = 'click';
-                                        var1 = function() { // Original name: registerInteractionTransaction, environment: var1
+                                        var1 = function() {
                                             _fun11980: for (var _fun11980_ip = 0;;) switch (_fun11980_ip) {
                                                 case 0:
                                                     var4 = _closure1_slot8;

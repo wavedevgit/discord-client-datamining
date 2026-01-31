@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Module';
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
-    var0 = function(arg0) { // Original name: parseCookie, environment: var0
+    var0 = function arg0() {
         _fun9567: for (var _fun9567_ip = 0;;) switch (_fun9567_ip) {
             case 0:
                 var14 = arg0;

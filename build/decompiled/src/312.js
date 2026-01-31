@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun4773: for (var _fun4773_ip = 0;;) switch (_fun4773_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot11 = var3;
     var3 = var1.PureComponent;
     var1 = function(arg0) { // Environment: var4
-        var4 = function() { // Original name: CellRenderer, environment: var0
+        var4 = function() {
             _fun4777: for (var _fun4777_ip = 0;;) switch (_fun4777_ip) {
                 case 0:
                     var4 = this;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2.separatorProps = var3;
                     var0.state = var2;
                     var2 = {};
-                    var3 = function() { // Original name: highlight, environment: var1
+                    var3 = function() {
                         var0 = _closure3_slot0;
                         var0 = var0.props;
                         var4 = var0.cellKey;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var2.highlight = var3;
-                    var3 = function() { // Original name: unhighlight, environment: var1
+                    var3 = function() {
                         var0 = _closure3_slot0;
                         var0 = var0.props;
                         var4 = var0.cellKey;
@@ -219,7 +219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var2.unhighlight = var3;
-                    var3 = function(arg0, arg1) { // Original name: updateProps, environment: var1
+                    var3 = function arg0, arg1() {
                         _fun4780: for (var _fun4780_ip = 0;;) switch (_fun4780_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var1 = 'updateSeparatorProps';
         var5.key = var1;
-        var1 = function(arg0) { // Original name: updateSeparatorProps, environment: var0
+        var1 = function arg0() {
             var2 = this;
             var1 = arg0;
             var _closure3_slot0 = var1;
@@ -342,7 +342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = 'componentWillUnmount';
         var5.key = var6;
-        var6 = function() { // Original name: componentWillUnmount, environment: var0
+        var6 = function() {
             var0 = this;
             var2 = var0.props;
             var1 = var2.onUnmount;
@@ -357,7 +357,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '_renderElement';
         var5.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: _renderElement, environment: var0
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun4786: for (var _fun4786_ip = 0;;) switch (_fun4786_ip) {
                 case 0:
                     var7 = arg0;
@@ -435,7 +435,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = 'render';
         var5.key = var6;
-        var6 = function() { // Original name: render, environment: var0
+        var6 = function() {
             _fun4787: for (var _fun4787_ip = 0;;) switch (_fun4787_ip) {
                 case 0:
                     var5 = this;
@@ -607,7 +607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = 'getDerivedStateFromProps';
         var5.key = var6;
-        var0 = function(arg0, arg1) { // Original name: getDerivedStateFromProps, environment: var0
+        var0 = function arg0, arg1() {
             _fun4788: for (var _fun4788_ip = 0;;) switch (_fun4788_ip) {
                 case 0:
                     var2 = arg0;

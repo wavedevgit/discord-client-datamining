@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var15;
     var _closure1_slot1 = var68;
     var _closure1_slot2 = var16;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun24932: for (var _fun24932_ip = 0;;) switch (_fun24932_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot59 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun24934: for (var _fun24934_ip = 0;;) switch (_fun24934_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot60 = var0;
-    var67 = function(arg0) { // Original name: getPremiumPlanItem, environment: var5
+    var67 = function arg0() {
         var0 = arg0;
         var2 = var0.items;
         var1 = var2.find;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot61 = var67;
-    var66 = function(arg0) { // Original name: getDefaultPrice, environment: var5
+    var66 = function arg0() {
         _fun24937: for (var _fun24937_ip = 0;;) switch (_fun24937_ip) {
             case 0:
                 var6 = arguments[1];
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot62 = var66;
-    var65 = function(arg0) { // Original name: getPrice, environment: var5
+    var65 = function arg0() {
         _fun24938: for (var _fun24938_ip = 0;;) switch (_fun24938_ip) {
             case 0:
                 var7 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot63 = var65;
-    var0 = function(arg0, arg1) { // Original name: getPurchaseTypePrices, environment: var5
+    var0 = function arg0, arg1() {
         _fun24939: for (var _fun24939_ip = 0;;) switch (_fun24939_ip) {
             case 0:
                 var5 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot64 = var0;
-    var64 = function(arg0) { // Original name: experimentalGetPrices, environment: var5
+    var64 = function arg0() {
         _fun24940: for (var _fun24940_ip = 0;;) switch (_fun24940_ip) {
             case 0:
                 var5 = arg0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot65 = var64;
-    var63 = function(arg0) { // Original name: experimentalGetPrice, environment: var5
+    var63 = function arg0() {
         _fun24941: for (var _fun24941_ip = 0;;) switch (_fun24941_ip) {
             case 0:
                 var12 = arg0;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot66 = var63;
-    var62 = function(arg0) { // Original name: getServerPriceFromClientPrice, environment: var5
+    var62 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.amount;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot67 = var62;
-    var61 = function(arg0, arg1, arg2) { // Original name: getItemPlansTotalServerPrice, environment: var5
+    var61 = function arg0, arg1, arg2() {
         _fun24944: for (var _fun24944_ip = 0;;) switch (_fun24944_ip) {
             case 0:
                 var4 = arg0;
@@ -994,7 +994,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot68 = var61;
-    var60 = function(arg0) { // Original name: getInterval, environment: var5
+    var60 = function arg0() {
         _fun24945: for (var _fun24945_ip = 0;;) switch (_fun24945_ip) {
             case 0:
                 var6 = arg0;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var59 = function(arg0, arg1, arg2) { // Original name: getIntervalString, environment: var5
+    var59 = function arg0, arg1, arg2() {
         _fun24946: for (var _fun24946_ip = 0;;) switch (_fun24946_ip) {
             case 0:
                 var4 = arg0;
@@ -1317,7 +1317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var58 = function(arg0) { // Original name: getIntervalStringAsNoun, environment: var5
+    var58 = function arg0() {
         _fun24947: for (var _fun24947_ip = 0;;) switch (_fun24947_ip) {
             case 0:
                 var2 = arg0;
@@ -1381,7 +1381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot69 = var58;
-    var57 = function(arg0) { // Original name: getPremiumType, environment: var5
+    var57 = function arg0() {
         _fun24948: for (var _fun24948_ip = 0;;) switch (_fun24948_ip) {
             case 0:
                 var6 = arg0;
@@ -1424,7 +1424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot70 = var57;
-    var56 = function(arg0) { // Original name: getDisplayName, environment: var5
+    var56 = function arg0() {
         _fun24949: for (var _fun24949_ip = 0;;) switch (_fun24949_ip) {
             case 0:
                 var10 = arg0;
@@ -1955,7 +1955,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot71 = var56;
-    var55 = function(arg0) { // Original name: getTierDisplayNameByPlanId, environment: var5
+    var55 = function arg0() {
         _fun24950: for (var _fun24950_ip = 0;;) switch (_fun24950_ip) {
             case 0:
                 var8 = arg0;
@@ -2023,7 +2023,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var75 = function(arg0) { // Original name: getPlanDescription, environment: var5
+    var75 = function arg0() {
         _fun24951: for (var _fun24951_ip = 0;;) switch (_fun24951_ip) {
             case 0:
                 var0 = arg0;
@@ -2615,7 +2615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'LL';
                 var18 = var21.bind(var22)(var20, var18);
                 var13.endDate = var18;
-                var18 = function() { // Original name: onClick, environment: var14
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 19;
@@ -2907,7 +2907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'LL';
                 var17 = var19.bind(var20)(var18, var17);
                 var11.endDate = var17;
-                var17 = function() { // Original name: onClick, environment: var14
+                var17 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 19;
@@ -3168,7 +3168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = 'LL';
                 var15 = var17.bind(var18)(var16, var15);
                 var9.endDate = var15;
-                var14 = function() { // Original name: onClick, environment: var14
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 19;
@@ -3366,7 +3366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot72 = var75;
-    var54 = function(arg0) { // Original name: getPremiumPlanOptions, environment: var5
+    var54 = function arg0() {
         _fun24955: for (var _fun24955_ip = 0;;) switch (_fun24955_ip) {
             case 0:
                 var1 = arg0;
@@ -3560,7 +3560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var74 = function(arg0) { // Original name: getSkuIdForPlan, environment: var5
+    var74 = function arg0() {
         _fun24957: for (var _fun24957_ip = 0;;) switch (_fun24957_ip) {
             case 0:
                 var5 = arg0;
@@ -3603,7 +3603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot73 = var74;
-    var53 = function(arg0) { // Original name: getNumPremiumGuildSubscriptions, environment: var5
+    var53 = function arg0() {
         _fun24958: for (var _fun24958_ip = 0;;) switch (_fun24958_ip) {
             case 0:
                 var3 = arg0;
@@ -3648,7 +3648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot74 = var53;
-    var52 = function(arg0) { // Original name: subscriptionHasPremiumGuildPlan, environment: var5
+    var52 = function arg0() {
         var2 = _closure1_slot74;
         var0 = arg0;
         var1 = var0.additionalPlans;
@@ -3659,7 +3659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot75 = var52;
-    var51 = function(arg0) { // Original name: isPremiumBaseSubscriptionPlan, environment: var5
+    var51 = function arg0() {
         var2 = _closure1_slot57;
         var1 = var2.has;
         var0 = arg0;
@@ -3667,7 +3667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot76 = var51;
-    var50 = function(arg0) { // Original name: isPremiumGuildSubscriptionPlan, environment: var5
+    var50 = function arg0() {
         var2 = _closure1_slot31;
         var1 = var2.has;
         var0 = arg0;
@@ -3675,7 +3675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot77 = var50;
-    var49 = function(arg0) { // Original name: getBillingGracePeriodDaysAndExpiresDate, environment: var5
+    var49 = function arg0() {
         _fun24963: for (var _fun24963_ip = 0;;) switch (_fun24963_ip) {
             case 0:
                 var2 = arg0;
@@ -3900,7 +3900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot78 = var49;
-    var48 = function(arg0, arg1) { // Original name: getBillingInformationString, environment: var5
+    var48 = function arg0, arg1() {
         _fun24964: for (var _fun24964_ip = 0;;) switch (_fun24964_ip) {
             case 0:
                 var4 = arg0;
@@ -4634,7 +4634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var47 = function(arg0, arg1, arg2, arg3) { // Original name: extendDateWithUnconsumedFractionalPremium, environment: var5
+    var47 = function arg0, arg1, arg2, arg3() {
         _fun24968: for (var _fun24968_ip = 0;;) switch (_fun24968_ip) {
             case 0:
                 var4 = arg0;
@@ -4706,7 +4706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot79 = var47;
-    var46 = function(arg0) { // Original name: getUnactivatedFractionalPremiumDurationString, environment: var5
+    var46 = function arg0() {
         _fun24969: for (var _fun24969_ip = 0;;) switch (_fun24969_ip) {
             case 0:
                 var0 = arg0;
@@ -4774,7 +4774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var45 = function(arg0) { // Original name: isSwitchingPlansDisabled, environment: var5
+    var45 = function arg0() {
         _fun24970: for (var _fun24970_ip = 0;;) switch (_fun24970_ip) {
             case 0:
                 var1 = arg0;
@@ -4802,7 +4802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var44 = function(arg0) { // Original name: getSwitchingPlansDisabledMessage, environment: var5
+    var44 = function arg0() {
         _fun24971: for (var _fun24971_ip = 0;;) switch (_fun24971_ip) {
             case 0:
                 var1 = arg0;
@@ -4878,7 +4878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var43 = function(arg0) { // Original name: isSubscriptionPrepaidPaymentSource, environment: var5
+    var43 = function arg0() {
         _fun24972: for (var _fun24972_ip = 0;;) switch (_fun24972_ip) {
             case 0:
                 var1 = arg0;
@@ -4899,7 +4899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot80 = var43;
-    var42 = function(arg0) { // Original name: isPrepaidPaymentSource, environment: var5
+    var42 = function arg0() {
         _fun24973: for (var _fun24973_ip = 0;;) switch (_fun24973_ip) {
             case 0:
                 var4 = arg0;
@@ -4930,7 +4930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot81 = var42;
-    var41 = function(arg0) { // Original name: getCoercedPremiumGuildSubscriptionStatus, environment: var5
+    var41 = function arg0() {
         _fun24974: for (var _fun24974_ip = 0;;) switch (_fun24974_ip) {
             case 0:
                 var1 = arg0;
@@ -4971,7 +4971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot82 = var41;
-    var40 = function(arg0) { // Original name: isPremiumGuildSubscriptionCanceled, environment: var5
+    var40 = function arg0() {
         _fun24975: for (var _fun24975_ip = 0;;) switch (_fun24975_ip) {
             case 0:
                 var2 = arg0;
@@ -4999,7 +4999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot83 = var40;
-    var39 = function(arg0, arg1, arg2) { // Original name: getFormattedPriceForPlan, environment: var5
+    var39 = function arg0, arg1, arg2() {
         _fun24976: for (var _fun24976_ip = 0;;) switch (_fun24976_ip) {
             case 0:
                 var1 = arg0;
@@ -5070,7 +5070,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot84 = var39;
-    var38 = function(arg0, arg1) { // Original name: getPlanIdFromInvoice, environment: var5
+    var38 = function arg0, arg1() {
         _fun24977: for (var _fun24977_ip = 0;;) switch (_fun24977_ip) {
             case 0:
                 var2 = arg0;
@@ -5151,7 +5151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var37 = function(arg0, arg1) { // Original name: getStatusFromInvoice, environment: var5
+    var37 = function arg0, arg1() {
         _fun24979: for (var _fun24979_ip = 0;;) switch (_fun24979_ip) {
             case 0:
                 var3 = arg0;
@@ -5218,7 +5218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var36 = function(arg0) { // Original name: isBaseSubscriptionCanceled, environment: var5
+    var36 = function arg0() {
         _fun24981: for (var _fun24981_ip = 0;;) switch (_fun24981_ip) {
             case 0:
                 var2 = arg0;
@@ -5258,7 +5258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot85 = var36;
-    var35 = function(arg0) { // Original name: isSubscriptionStatusFailedPayment, environment: var5
+    var35 = function arg0() {
         _fun24982: for (var _fun24982_ip = 0;;) switch (_fun24982_ip) {
             case 0:
                 var2 = arg0;
@@ -5287,7 +5287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot86 = var35;
-    var34 = function(arg0, arg1, arg2) { // Original name: getFormattedPlanPriceFromInvoice, environment: var5
+    var34 = function arg0, arg1, arg2() {
         _fun24983: for (var _fun24983_ip = 0;;) switch (_fun24983_ip) {
             case 0:
                 var1 = arg0;
@@ -5339,7 +5339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot87 = var34;
-    var33 = function(arg0, arg1, arg2, arg3) { // Original name: getPremiumGuildIntervalPrice, environment: var5
+    var33 = function arg0, arg1, arg2, arg3() {
         _fun24984: for (var _fun24984_ip = 0;;) switch (_fun24984_ip) {
             case 0:
                 var5 = arg0;
@@ -5456,7 +5456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot88 = var33;
-    var32 = function(arg0, arg1, arg2) { // Original name: getBillingReviewSubheader, environment: var5
+    var32 = function arg0, arg1, arg2() {
         _fun24985: for (var _fun24985_ip = 0;;) switch (_fun24985_ip) {
             case 0:
                 var7 = arg1;
@@ -5963,7 +5963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var31 = function(arg0) { // Original name: getIntervalForInvoice, environment: var5
+    var31 = function arg0() {
         var0 = arg0;
         var1 = var0.invoiceItems;
         var0 = 0;
@@ -5989,7 +5989,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.intervalCount = var1;
         return var0;
     };
-    var30 = function(arg0) { // Original name: formatTrialCtaIntervalDuration, environment: var5
+    var30 = function arg0() {
         _fun24987: for (var _fun24987_ip = 0;;) switch (_fun24987_ip) {
             case 0:
                 var1 = arg0;
@@ -6176,7 +6176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot89 = var30;
-    var29 = function(arg0, arg1) { // Original name: getExternalSubscriptionMethodUrl, environment: var5
+    var29 = function arg0, arg1() {
         _fun24988: for (var _fun24988_ip = 0;;) switch (_fun24988_ip) {
             case 0:
                 var5 = arg0;
@@ -6236,7 +6236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot90 = var29;
-    var28 = function(arg0, arg1) { // Original name: getItemsFromNewAdditionalPlans, environment: var5
+    var28 = function arg0, arg1() {
         _fun24989: for (var _fun24989_ip = 0;;) switch (_fun24989_ip) {
             case 0:
                 var3 = arg0;
@@ -6342,7 +6342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot91 = var28;
-    var27 = function(arg0) { // Original name: getItemsWithoutPremiumPlanItem, environment: var5
+    var27 = function arg0() {
         var2 = arg0;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
@@ -6358,7 +6358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot92 = var27;
-    var26 = function(arg0, arg1, arg2, arg3) { // Original name: getItemsWithUpsertedPlanIdForGroup, environment: var5
+    var26 = function arg0, arg1, arg2, arg3() {
         _fun24994: for (var _fun24994_ip = 0;;) switch (_fun24994_ip) {
             case 0:
                 var1 = arg0;
@@ -6473,7 +6473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot93 = var26;
-    var25 = function(arg0) { // Original name: getGuildBoostPlanItem, environment: var5
+    var25 = function arg0() {
         _fun24998: for (var _fun24998_ip = 0;;) switch (_fun24998_ip) {
             case 0:
                 var1 = arg0;
@@ -6500,7 +6500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot94 = var25;
-    var24 = function(arg0) { // Original name: isBoostOnlySubscription, environment: var5
+    var24 = function arg0() {
         _fun25000: for (var _fun25000_ip = 0;;) switch (_fun25000_ip) {
             case 0:
                 var4 = arg0;
@@ -6529,7 +6529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var23 = function(arg0) { // Original name: getPremiumSkuIdForSubscription, environment: var5
+    var23 = function arg0() {
         _fun25001: for (var _fun25001_ip = 0;;) switch (_fun25001_ip) {
             case 0:
                 var4 = arg0;
@@ -6560,7 +6560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var22 = function(arg0) { // Original name: getPremiumTypeFromSubscription, environment: var5
+    var22 = function arg0() {
         _fun25002: for (var _fun25002_ip = 0;;) switch (_fun25002_ip) {
             case 0:
                 var4 = arg0;
@@ -6587,7 +6587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var21 = function(arg0) { // Original name: getPremiumTypeFromSubscriptionRenewalMutations, environment: var5
+    var21 = function arg0() {
         _fun25003: for (var _fun25003_ip = 0;;) switch (_fun25003_ip) {
             case 0:
                 var0 = arg0;
@@ -6621,7 +6621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var20 = function(arg0) { // Original name: getPremiumGradientColor, environment: var5
+    var20 = function arg0() {
         _fun25004: for (var _fun25004_ip = 0;;) switch (_fun25004_ip) {
             case 0:
                 var2 = arg0;
@@ -6680,7 +6680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var18 = function(arg0, arg1) { // Original name: formatPriceString, environment: var5
+    var18 = function arg0, arg1() {
         var1 = arg0;
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
@@ -6704,11 +6704,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot95 = var18;
-    var17 = function(arg0) { // Original name: castPremiumSubscriptionAsSkuId, environment: var5
+    var17 = function arg0() {
         var0 = arg0;
         return var0;
     };
-    var13 = function(arg0) { // Original name: getReverseTrialWeeks, environment: var5
+    var13 = function arg0() {
         _fun25007: for (var _fun25007_ip = 0;;) switch (_fun25007_ip) {
             case 0:
                 var4 = arg0;
@@ -6735,7 +6735,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var12 = function(arg0) { // Original name: isTrialOffer, environment: var5
+    var12 = function arg0() {
         _fun25008: for (var _fun25008_ip = 0;;) switch (_fun25008_ip) {
             case 0:
                 var2 = arg0;
@@ -6753,7 +6753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot96 = var12;
-    var11 = function(arg0) { // Original name: isDiscountOffer, environment: var5
+    var11 = function arg0() {
         _fun25009: for (var _fun25009_ip = 0;;) switch (_fun25009_ip) {
             case 0:
                 var2 = arg0;
@@ -6771,7 +6771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot97 = var11;
-    var10 = function(arg0) { // Original name: formatInterval, environment: var5
+    var10 = function arg0() {
         _fun25010: for (var _fun25010_ip = 0;;) switch (_fun25010_ip) {
             case 0:
                 var4 = arg0;
@@ -6837,7 +6837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9 = function(arg0) { // Original name: isPremiumEligible, environment: var5
+    var9 = function arg0() {
         _fun25011: for (var _fun25011_ip = 0;;) switch (_fun25011_ip) {
             case 0:
                 var1 = arg0;
@@ -6862,7 +6862,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var8 = function(arg0) { // Original name: getFractionalPremiumUnitsHours, environment: var5
+    var8 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot99;
         var1 = var3.map;
@@ -6877,7 +6877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot98 = var8;
-    var7 = function(arg0) { // Original name: getFractionalPremiumUnitsHoursFromSkuIds, environment: var5
+    var7 = function arg0() {
         var3 = arg0;
         var2 = var3.reduce;
         var1 = function(arg0, arg1) { // Environment: var0
@@ -6923,7 +6923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot99 = var7;
-    var4 = function(arg0) { // Original name: calculateDiscountPercentageForYearlyPlan, environment: var5
+    var4 = function arg0() {
         _fun25016: for (var _fun25016_ip = 0;;) switch (_fun25016_ip) {
             case 0:
                 var1 = arg0;
@@ -6996,7 +6996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var3 = function(arg0) { // Original name: getDaysSincePremium, environment: var5
+    var3 = function arg0() {
         _fun25017: for (var _fun25017_ip = 0;;) switch (_fun25017_ip) {
             case 0:
                 var9 = arg0;
@@ -7046,7 +7046,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function(arg0) { // Original name: getDaysRemainingUntilSubscriptionCurrentPeriodEnds, environment: var5
+    var1 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.max;
@@ -7304,7 +7304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = new var80[var70](var79, var78);
     var6 = var6 instanceof Object ? var6 : var19;
     var _closure1_slot57 = var6;
-    var19 = function(arg0) { // Original name: isNewUser, environment: var5
+    var19 = function arg0() {
         _fun25019: for (var _fun25019_ip = 0;;) switch (_fun25019_ip) {
             case 0:
                 var1 = arg0;
@@ -7329,7 +7329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var6 = function(arg0) { // Original name: getMonthlyPrice, environment: var5
+    var6 = function arg0() {
         _fun25020: for (var _fun25020_ip = 0;;) switch (_fun25020_ip) {
             case 0:
                 var1 = arg0;
@@ -7403,7 +7403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var70.getReverseTrialWeeks = var13;
     var70.formatInterval = var10;
     var70.getPlanDescription = var75;
-    var75 = function(arg0) { // Original name: isPremiumSku, environment: var5
+    var75 = function arg0() {
         _fun25021: for (var _fun25021_ip = 0;;) switch (_fun25021_ip) {
             case 0:
                 var2 = arg0;
@@ -7432,7 +7432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var70.isPremiumSku = var75;
-    var75 = function(arg0, arg1) { // Original name: getIntervalMonths, environment: var5
+    var75 = function arg0, arg1() {
         _fun25022: for (var _fun25022_ip = 0;;) switch (_fun25022_ip) {
             case 0:
                 var5 = arg0;
@@ -7483,7 +7483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var75 = var75.getUserMaxFileSize;
     var70.getUserMaxFileSize = var75;
     var70.getSkuIdForPlan = var74;
-    var74 = function(arg0) { // Original name: getSkuIdForPremiumType, environment: var5
+    var74 = function arg0() {
         _fun25023: for (var _fun25023_ip = 0;;) switch (_fun25023_ip) {
             case 0:
                 var2 = arg0;
@@ -7525,7 +7525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var70.getSkuIdForPremiumType = var74;
-    var74 = function(arg0) { // Original name: getNumIncludedPremiumGuildSubscriptionSlots, environment: var5
+    var74 = function arg0() {
         _fun25024: for (var _fun25024_ip = 0;;) switch (_fun25024_ip) {
             case 0:
                 var3 = _closure1_slot70;
@@ -7556,7 +7556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var70.getStatusFromInvoice = var37;
     var70.isBaseSubscriptionCanceled = var36;
     var70.getPremiumGuildIntervalPrice = var33;
-    var73 = function(arg0) { // Original name: hasAccountCredit, environment: var5
+    var73 = function arg0() {
         _fun25025: for (var _fun25025_ip = 0;;) switch (_fun25025_ip) {
             case 0:
                 var3 = arg0;
@@ -7613,7 +7613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var70.hasAccountCredit = var73;
-    var73 = function(arg0, arg1) { // Original name: hasUnconsumedGiftForSubscriptionPlan, environment: var5
+    var73 = function arg0, arg1() {
         _fun25027: for (var _fun25027_ip = 0;;) switch (_fun25027_ip) {
             case 0:
                 var4 = arg0;
@@ -7701,7 +7701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var70.calculateDiscountPercentageForYearlyPlan = var4;
     var70.getDaysSincePremium = var3;
     var70.getDaysRemainingUntilSubscriptionCurrentPeriodEnds = var1;
-    var73 = function(arg0) { // Original name: canUseAnimatedEmojis, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7717,7 +7717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseAnimatedEmojis = var73;
-    var73 = function(arg0) { // Original name: canUseEmojisEverywhere, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7733,7 +7733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseEmojisEverywhere = var73;
-    var73 = function(arg0) { // Original name: canUseSoundboardEverywhere, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7749,7 +7749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseSoundboardEverywhere = var73;
-    var73 = function(arg0) { // Original name: canUseCustomCallSounds, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7765,7 +7765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseCustomCallSounds = var73;
-    var73 = function(arg0) { // Original name: canUploadLargeFiles, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7781,7 +7781,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUploadLargeFiles = var73;
-    var73 = function(arg0) { // Original name: canUseBadges, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7797,7 +7797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseBadges = var73;
-    var73 = function(arg0) { // Original name: canUseHighVideoUploadQuality, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7813,7 +7813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseHighVideoUploadQuality = var73;
-    var73 = function(arg0) { // Original name: canEditDiscriminator, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7829,7 +7829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canEditDiscriminator = var73;
-    var73 = function(arg0) { // Original name: hasBoostDiscount, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7845,7 +7845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.hasBoostDiscount = var73;
-    var73 = function(arg0) { // Original name: canUseAnimatedAvatar, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7861,7 +7861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseAnimatedAvatar = var73;
-    var73 = function(arg0) { // Original name: canUseFancyVoiceChannelReactions, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7877,7 +7877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseFancyVoiceChannelReactions = var73;
-    var73 = function(arg0) { // Original name: canInstallPremiumApplications, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7893,7 +7893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canInstallPremiumApplications = var73;
-    var73 = function(arg0) { // Original name: canUseIncreasedMessageLength, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7909,7 +7909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseIncreasedMessageLength = var73;
-    var73 = function(arg0) { // Original name: canUseIncreasedGuildCap, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7925,7 +7925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseIncreasedGuildCap = var73;
-    var73 = function(arg0) { // Original name: canRedeemPremiumPerks, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7941,7 +7941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canRedeemPremiumPerks = var73;
-    var73 = function(arg0) { // Original name: canUsePremiumProfileCustomization, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7957,7 +7957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUsePremiumProfileCustomization = var73;
-    var73 = function(arg0) { // Original name: canUsePremiumAppIcons, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7973,7 +7973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUsePremiumAppIcons = var73;
-    var73 = function(arg0) { // Original name: canUsePremiumGuildMemberProfile, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -7989,7 +7989,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUsePremiumGuildMemberProfile = var73;
-    var73 = function(arg0) { // Original name: canUseClientThemes, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -8005,7 +8005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseClientThemes = var73;
-    var73 = function(arg0, arg1) { // Original name: canStreamQuality, environment: var5
+    var73 = function arg0, arg1() {
         _fun25048: for (var _fun25048_ip = 0;;) switch (_fun25048_ip) {
             case 0:
                 var2 = arg0;
@@ -8056,7 +8056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var70.canStreamQuality = var73;
-    var73 = function(arg0) { // Original name: hasFreeBoosts, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -8072,7 +8072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.hasFreeBoosts = var73;
-    var73 = function(arg0) { // Original name: canUseCustomStickersEverywhere, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -8088,7 +8088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseCustomStickersEverywhere = var73;
-    var73 = function(arg0) { // Original name: canUseCustomBackgrounds, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -8104,7 +8104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseCustomBackgrounds = var73;
-    var73 = function(arg0) { // Original name: canUseCollectibles, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -8120,7 +8120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var70.canUseCollectibles = var73;
-    var73 = function(arg0) { // Original name: canUsePremiumVoiceFilters, environment: var5
+    var73 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 28;
@@ -8148,7 +8148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var70;
     var2.Branding = var69;
     var2.StreamQuality = var68;
-    var68 = function(arg0) { // Original name: getPremiumBranding, environment: var5
+    var68 = function arg0() {
         _fun25054: for (var _fun25054_ip = 0;;) switch (_fun25054_ip) {
             case 0:
                 var4 = arg0;
@@ -8258,7 +8258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getPremiumPlanItem = var67;
     var2.getDefaultPrice = var66;
     var2.getPrice = var65;
-    var65 = function(arg0) { // Original name: getCountryPrices, environment: var5
+    var65 = function arg0() {
         _fun25055: for (var _fun25055_ip = 0;;) switch (_fun25055_ip) {
             case 0:
                 var3 = arguments[1];
@@ -8283,7 +8283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.experimentalGetPrice = var63;
     var2.getServerPriceFromClientPrice = var62;
     var2.getItemPlansTotalServerPrice = var61;
-    var61 = function(arg0, arg1, arg2, arg3) { // Original name: getSubscriptionWithNewPlansTotalServerPrice, environment: var5
+    var61 = function arg0, arg1, arg2, arg3() {
         _fun25056: for (var _fun25056_ip = 0;;) switch (_fun25056_ip) {
             case 0:
                 var5 = arg0;
@@ -8330,7 +8330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSubscriptionWithNewPlansTotalServerPrice = var61;
     var2.getInterval = var60;
-    var60 = function(arg0) { // Original name: getDiscountIntervalString, environment: var5
+    var60 = function arg0() {
         _fun25057: for (var _fun25057_ip = 0;;) switch (_fun25057_ip) {
             case 0:
                 var2 = arg0;
@@ -8408,7 +8408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getIntervalStringAsNoun = var58;
     var2.getPremiumType = var57;
     var2.getDisplayName = var56;
-    var56 = function(arg0) { // Original name: getDisplayNameFromSku, environment: var5
+    var56 = function arg0() {
         _fun25058: for (var _fun25058_ip = 0;;) switch (_fun25058_ip) {
             case 0:
                 var6 = arg0;
@@ -8507,7 +8507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDisplayNameFromSku = var56;
     var2.getTierDisplayNameByPlanId = var55;
-    var55 = function(arg0) { // Original name: getPremiumTypeDisplayName, environment: var5
+    var55 = function arg0() {
         _fun25059: for (var _fun25059_ip = 0;;) switch (_fun25059_ip) {
             case 0:
                 var3 = arg0;
@@ -8601,7 +8601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPremiumTypeDisplayName = var55;
-    var55 = function(arg0) { // Original name: getPlanDescriptionFromInvoice, environment: var5
+    var55 = function arg0() {
         _fun25060: for (var _fun25060_ip = 0;;) switch (_fun25060_ip) {
             case 0:
                 var0 = arg0;
@@ -8664,7 +8664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPlanDescriptionFromInvoice = var55;
-    var55 = function(arg0) { // Original name: getExternalPlanDisplayName, environment: var5
+    var55 = function arg0() {
         _fun25061: for (var _fun25061_ip = 0;;) switch (_fun25061_ip) {
             case 0:
                 var0 = arg0;
@@ -8827,7 +8827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getExternalPlanDisplayName = var55;
     var2.getPremiumPlanOptions = var54;
-    var54 = function(arg0, arg1) { // Original name: getPlanIdForPremiumType, environment: var5
+    var54 = function arg0, arg1() {
         _fun25063: for (var _fun25063_ip = 0;;) switch (_fun25063_ip) {
             case 0:
                 var5 = arg0;
@@ -8944,7 +8944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.subscriptionHasPremiumGuildPlan = var52;
     var2.isPremiumBaseSubscriptionPlan = var51;
     var2.isPremiumGuildSubscriptionPlan = var50;
-    var50 = function(arg0) { // Original name: isPremiumSubscriptionPlan, environment: var5
+    var50 = function arg0() {
         _fun25064: for (var _fun25064_ip = 0;;) switch (_fun25064_ip) {
             case 0:
                 var3 = arg0;
@@ -8963,7 +8963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isPremiumSubscriptionPlan = var50;
-    var50 = function(arg0) { // Original name: isPremiumGroupSubscriptionPlan, environment: var5
+    var50 = function arg0() {
         _fun25065: for (var _fun25065_ip = 0;;) switch (_fun25065_ip) {
             case 0:
                 var2 = arg0;
@@ -8992,7 +8992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isPrepaidPaymentSource = var42;
     var2.getCoercedPremiumGuildSubscriptionStatus = var41;
     var2.isPremiumGuildSubscriptionCanceled = var40;
-    var40 = function(arg0) { // Original name: getPremiumGuildHeaderDescription, environment: var5
+    var40 = function arg0() {
         _fun25066: for (var _fun25066_ip = 0;;) switch (_fun25066_ip) {
             case 0:
                 var1 = arg0;
@@ -9354,7 +9354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPremiumGuildHeaderDescription = var40;
     var2.getFormattedPriceForPlan = var39;
-    var39 = function(arg0, arg1, arg2) { // Original name: getFormattedRateForPlan, environment: var5
+    var39 = function arg0, arg1, arg2() {
         var0 = arg0;
         var5 = _closure1_slot84;
         var3 = undefined;
@@ -9381,7 +9381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getPremiumGuildIntervalPrice = var33;
     var2.getBillingReviewSubheader = var32;
     var2.getIntervalForInvoice = var31;
-    var31 = function(arg0) { // Original name: formatTrialOfferIntervalDuration, environment: var5
+    var31 = function arg0() {
         _fun25069: for (var _fun25069_ip = 0;;) switch (_fun25069_ip) {
             case 0:
                 var0 = arg0;
@@ -9583,7 +9583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatTrialOfferIntervalDuration = var31;
     var2.formatTrialCtaIntervalDuration = var30;
-    var30 = function(arg0, arg1) { // Original name: formatTrialCtaIntervalDurationFromTrialOffer, environment: var5
+    var30 = function arg0, arg1() {
         _fun25070: for (var _fun25070_ip = 0;;) switch (_fun25070_ip) {
             case 0:
                 var0 = arg0;
@@ -9622,7 +9622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.formatTrialCtaIntervalDurationFromTrialOffer = var30;
-    var30 = function(arg0) { // Original name: formatIntervalDuration, environment: var5
+    var30 = function arg0() {
         _fun25071: for (var _fun25071_ip = 0;;) switch (_fun25071_ip) {
             case 0:
                 var0 = arg0;
@@ -9824,7 +9824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatIntervalDuration = var30;
     var2.getExternalSubscriptionMethodUrl = var29;
-    var29 = function(arg0, arg1) { // Original name: hasPremiumSubscriptionToDisplay, environment: var5
+    var29 = function arg0, arg1() {
         _fun25072: for (var _fun25072_ip = 0;;) switch (_fun25072_ip) {
             case 0:
                 var4 = arg1;
@@ -9859,7 +9859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasPremiumSubscriptionToDisplay = var29;
-    var29 = function() { // Original name: useHasPremiumSubscriptionToDisplay, environment: var5
+    var29 = function() {
         _fun25073: for (var _fun25073_ip = 0;;) switch (_fun25073_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -9922,7 +9922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getItemsFromNewAdditionalPlans = var28;
     var2.getItemsWithoutPremiumPlanItem = var27;
     var2.getItemsWithUpsertedPlanIdForGroup = var26;
-    var26 = function(arg0, arg1) { // Original name: getItemsWithUpsertedPremiumPlanId, environment: var5
+    var26 = function arg0, arg1() {
         var5 = _closure1_slot93;
         var6 = _closure1_slot32;
         var10 = undefined;
@@ -9933,7 +9933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getItemsWithUpsertedPremiumPlanId = var26;
-    var26 = function(arg0, arg1, arg2) { // Original name: getItemsWithUpsertedPremiumGuildPlan, environment: var5
+    var26 = function arg0, arg1, arg2() {
         var5 = _closure1_slot93;
         var6 = _closure1_slot31;
         var10 = undefined;
@@ -9944,7 +9944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getItemsWithUpsertedPremiumGuildPlan = var26;
-    var26 = function(arg0) { // Original name: coerceExistingItemsToNewItemInterval, environment: var5
+    var26 = function arg0() {
         _fun25078: for (var _fun25078_ip = 0;;) switch (_fun25078_ip) {
             case 0:
                 var3 = arg0;
@@ -10071,7 +10071,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.coerceExistingItemsToNewItemInterval = var26;
-    var26 = function(arg0) { // Original name: getMaxFileSizeForPremiumType, environment: var5
+    var26 = function arg0() {
         _fun25082: for (var _fun25082_ip = 0;;) switch (_fun25082_ip) {
             case 0:
                 var4 = arguments[1];
@@ -10117,7 +10117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isNewUser = var19;
     var2.formatPriceString = var18;
     var2.castPremiumSubscriptionAsSkuId = var17;
-    var17 = function(arg0) { // Original name: getPremiumTypeFromPlanId, environment: var5
+    var17 = function arg0() {
         _fun25083: for (var _fun25083_ip = 0;;) switch (_fun25083_ip) {
             case 0:
                 var4 = arg0;
@@ -10211,7 +10211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPremiumTypeFromPlanId = var17;
-    var17 = function(arg0) { // Original name: isNitroLockedState, environment: var5
+    var17 = function arg0() {
         var1 = 'isNitroLocked';
         var0 = arg0;
         var0 = var1 in var0;
@@ -10234,7 +10234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var15.bind(var0)(var14);
     var14 = var14.isPremiumExactly;
     var2.isPremiumExactly = var14;
-    var14 = function() { // Original name: useHasTier2Premium, environment: var5
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 25;
@@ -10263,7 +10263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHasTier2Premium = var14;
     var2.getReverseTrialWeeks = var13;
-    var13 = function(arg0) { // Original name: getOfferNoticeThreshold, environment: var5
+    var13 = function arg0() {
         _fun25087: for (var _fun25087_ip = 0;;) switch (_fun25087_ip) {
             case 0:
                 var2 = arg0;
@@ -10345,7 +10345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getFractionalPremiumUnitsHours = var8;
     var2.getFractionalPremiumUnitsHoursFromSkuIds = var7;
     var2.getMonthlyPrice = var6;
-    var5 = function(arg0) { // Original name: calculateMonthlyPriceEquivalentTotal, environment: var5
+    var5 = function arg0() {
         _fun25088: for (var _fun25088_ip = 0;;) switch (_fun25088_ip) {
             case 0:
                 var0 = arg0;

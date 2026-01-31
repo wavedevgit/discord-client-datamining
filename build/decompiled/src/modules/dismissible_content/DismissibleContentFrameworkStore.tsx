@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun15635: for (var _fun15635_ip = 0;;) switch (_fun15635_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: hasAlreadySeenDCForGuild, environment: var3
+    var0 = function arg0, arg1() {
         _fun15638: for (var _fun15638_ip = 0;;) switch (_fun15638_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: DismissibleContentFrameworkStore, environment: var5
+        var3 = function() {
             _fun15640: for (var _fun15640_ip = 0;;) switch (_fun15640_ip) {
                 case 0:
                     var3 = this;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun15641: for (var _fun15641_ip = 0;;) switch (_fun15641_ip) {
                 case 0:
                     var0 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'dailyCapOverridden';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var0 = var0.dailyCapOverridden;
             return var0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'newUserMinAgeRequiredOverridden';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var0 = var0.newUserMinAgeRequiredOverridden;
             return var0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastDCDismissed';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var0 = var0.lastDCDismissed;
             return var0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRenderedAtTimestamp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = _closure1_slot9;
             var2 = var0.renderedAtTimestamps;
             var1 = var2.get;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasUserHitDCCap';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun15647: for (var _fun15647_ip = 0;;) switch (_fun15647_ip) {
                 case 0:
                     var3 = arg0;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleLogout, environment: var3
+    var8 = function() {
         var1 = {};
         var5 = _closure1_slot9;
         var6 = var1;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleDailyCapOverride, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.value;
         var0 = _closure1_slot9;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DCF_DAILY_CAP_OVERRIDE = var8;
-    var8 = function(arg0) { // Original name: handleNewUserMinAgeRequiredOverride, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.value;
         var0 = _closure1_slot9;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE = var8;
-    var8 = function(arg0) { // Original name: handleDCShownToUser, environment: var3
+    var8 = function arg0() {
         _fun15652: for (var _fun15652_ip = 0;;) switch (_fun15652_ip) {
             case 0:
                 var0 = arg0;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.DCF_HANDLE_DC_SHOWN = var8;
-    var8 = function(arg0) { // Original name: handleDCDismissed, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.dismissibleContent;
         var1 = _closure1_slot9;
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DCF_HANDLE_DC_DISMISSED = var8;
-    var8 = function(arg0) { // Original name: handleResetLastDCDismissed, environment: var3
+    var8 = function arg0() {
         _fun15654: for (var _fun15654_ip = 0;;) switch (_fun15654_ip) {
             case 0:
                 var0 = arg0;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.DCF_OVERRIDE_LAST_DC_DISMISSED = var8;
-    var3 = function() { // Original name: resetStore, environment: var3
+    var3 = function() {
         var2 = _closure1_slot9;
         var1 = null;
         var2.dailyCapPeriodStart = var1;

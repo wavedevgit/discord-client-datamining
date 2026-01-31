@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/getCanSendInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getCanSendInvite, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun92468: for (var _fun92468_ip = 0;;) switch (_fun92468_ip) {
             case 0:
                 var6 = arg0;

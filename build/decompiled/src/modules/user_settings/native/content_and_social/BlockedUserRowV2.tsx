@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: handleUnblockUser, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: BlockedUserRow, environment: var1
+    var3 = function arg0() {
         _fun81178: for (var _fun81178_ip = 0;;) switch (_fun81178_ip) {
             case 0:
                 var0 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var6;
                 var0.accessibilityActions = var5;
-                var5 = function(arg0) { // Original name: onAccessibilityAction, environment: var7
+                var5 = function arg0() {
                     _fun81179: for (var _fun81179_ip = 0;;) switch (_fun81179_ip) {
                         case 0:
                             var0 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.onAccessibilityAction = var5;
-                var5 = function() { // Original name: onPress, environment: var7
+                var5 = function() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 8;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["PR/xUz"];
                 var8 = var9.bind(var10)(var8);
                 var4.text = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var2 = _closure1_slot5;
                     var0 = _closure2_slot0;
                     var1 = var0.id;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/content_and_social/BlockedUserRowV2.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedBlockedUserRow, environment: var1
+    var1 = function arg0() {
         _fun81182: for (var _fun81182_ip = 0;;) switch (_fun81182_ip) {
             case 0:
                 var1 = arg0;

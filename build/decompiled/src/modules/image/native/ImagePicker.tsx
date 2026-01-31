@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var7 = function(arg0, arg1) { // Original name: launchImageLibrary, environment: var3
+    var7 = function arg0, arg1() {
         _fun37492: for (var _fun37492_ip = 0;;) switch (_fun37492_ip) {
             case 0:
                 var1 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var7;
-    var6 = function(arg0, arg1) { // Original name: launchCamera, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var1 = {};
     var1.launchImageLibrary = var7;
-    var7 = function(arg0) { // Original name: launchImageLibraryAsync, environment: var3
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.launchImageLibraryAsync = var7;
     var1.launchCamera = var6;
-    var6 = function(arg0) { // Original name: launchCameraAsync, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.launchCameraAsync = var6;
-    var3 = function(arg0) { // Original name: launchCropper, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var18 = var0.uri;
         var17 = var0.width;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_engine/trackVideoToggle.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: trackVideoToggle, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun93951: for (var _fun93951_ip = 0;;) switch (_fun93951_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: setVideoToggleAnalyticsParams, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg0;
         var _closure1_slot3 = var0;
         var0 = arg1;

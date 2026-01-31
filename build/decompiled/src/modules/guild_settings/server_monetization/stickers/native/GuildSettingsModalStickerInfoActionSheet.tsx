@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildSettingsModalStickerInfoActionSheet, environment: var1
+    var1 = function arg0() {
         _fun115373: for (var _fun115373_ip = 0;;) switch (_fun115373_ip) {
             case 0:
                 var0 = arg0;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.tdhW5b;
                 var21 = var22.bind(var23)(var21);
                 var10.label = var21;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 17;

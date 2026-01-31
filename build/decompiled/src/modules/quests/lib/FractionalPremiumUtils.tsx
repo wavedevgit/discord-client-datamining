@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var3 = function(arg0) { // Original name: getFractionalPremiumQuestRewards, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.rewardsConfig;
         var2 = var0.rewards;

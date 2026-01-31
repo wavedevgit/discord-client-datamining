@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var3;
     var1 = function() { // Environment: var1
-        var4 = function() { // Original name: BundleUpdater, environment: var1
+        var4 = function() {
             var3 = _closure1_slot3;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'getInitialBundleDownloaded';
         var0.key = var2;
-        var2 = function() { // Original name: value, environment: var1
+        var2 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getInitialBundleDownloaded;
             var0 = var0.bind(var1)();
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getInitialOtaUpdateChecked';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getInitialOtaUpdateChecked;
             var0 = var0.bind(var1)();
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'addEventListener';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var1
+        var5 = function arg0, arg1() {
             var2 = _closure1_slot9;
             var1 = arg0;
             var3 = var2[var1];
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'checkForUpdateAndReload';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var1 = _closure1_slot7;
             var0 = var1.checkForUpdateAndReload;
             var0 = var0.bind(var1)();
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'verifyOtaFiles';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var1 = _closure1_slot7;
             var0 = var1.verifyOtaFiles;
             var0 = var0.bind(var1)();
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBuildOverrideCookieContents';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getBuildOverrideCookieContents;
             var0 = var0.bind(var1)();
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setBuildOverrideCookieHeader';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var1
+        var5 = function arg0() {
             var2 = _closure1_slot7;
             var1 = var2.setBuildOverrideCookieHeader;
             var0 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getOtaRootPath';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getOtaRootPath;
             var0 = var0.bind(var1)();
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getManifestInfo';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var1
+        var5 = function() {
             var1 = _closure1_slot7;
             var0 = var1.getManifestInfo;
             var0 = var0.bind(var1)();
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emitOtaMetric';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var1
+        var5 = function arg0() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
             var0 = 5;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'prepareOtaMetricForDatadog';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun78686: for (var _fun78686_ip = 0;;) switch (_fun78686_ip) {
                 case 0:
                     var2 = arg0;

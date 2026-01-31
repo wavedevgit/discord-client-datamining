@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var4 = /\s+/;
     var _closure1_slot2 = var4;
-    var3 = function(arg0) { // Original name: extractViewBox, environment: var3
+    var3 = function arg0() {
         _fun48339: for (var _fun48339_ip = 0;;) switch (_fun48339_ip) {
             case 0:
                 var0 = arg0;

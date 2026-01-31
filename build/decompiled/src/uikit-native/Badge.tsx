@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var3 = function(arg0) { // Original name: Badge, environment: var1
+            var3 = function arg0() {
                 _fun69020: for (var _fun69020_ip = 0;;) switch (_fun69020_ip) {
                     case 0:
                         var1 = arg0;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'uikit-native/Badge.tsx';
             var4 = var5.bind(var6)(var4);
             var2.default = var3;
-            var1 = function(arg0) { // Original name: MaskedBadge, environment: var1
+            var1 = function arg0() {
                 _fun69023: for (var _fun69023_ip = 0;;) switch (_fun69023_ip) {
                     case 0:
                         var1 = arg0;

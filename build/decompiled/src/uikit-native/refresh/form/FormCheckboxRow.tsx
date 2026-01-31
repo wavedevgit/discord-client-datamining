@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/refresh/form/FormCheckboxRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormCheckboxRow, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var7 = var2.selected;
         var0 = null;

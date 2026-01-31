@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var6;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun33235: for (var _fun33235_ip = 0;;) switch (_fun33235_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot17 = var0;
-            var0 = function(arg0) { // Original name: filterOutAnimatedStyles, environment: var1
+            var0 = function arg0() {
                 _fun33238: for (var _fun33238_ip = 0;;) switch (_fun33238_ip) {
                     case 0:
                         var5 = arg0;
@@ -281,7 +281,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var5.bind(var6)(var4);
         case 414:
             var _closure1_slot16 = var3;
-            var1 = function(arg0, arg1) { // Original name: createAnimatedComponent, environment: var1
+            var1 = function arg0, arg1() {
                 _fun33242: for (var _fun33242_ip = 0;;) switch (_fun33242_ip) {
                     case 0:
                         var2 = arg0;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = _closure1_slot8;
                         var5 = var3.Component;
                         var3 = function(arg0) { // Environment: var0
-                            var3 = function(arg0) { // Original name: AnimatedComponent, environment: var5
+                            var3 = function arg0() {
                                 _fun33244: for (var _fun33244_ip = 0;;) switch (_fun33244_ip) {
                                     case 0:
                                         var3 = this;
@@ -495,14 +495,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var2 = var7[var2];
                                         var5 = var5.bind(var4)(var2);
                                         var2 = {};
-                                        var7 = function() { // Original name: getForwardedRef, environment: var6
+                                        var7 = function() {
                                             var0 = _closure4_slot0;
                                             var0 = var0.props;
                                             var0 = var0.forwardedRef;
                                             return var0;
                                         };
                                         var2.getForwardedRef = var7;
-                                        var6 = function(arg0) { // Original name: setLocalRef, environment: var6
+                                        var6 = function arg0() {
                                             _fun33247: for (var _fun33247_ip = 0;;) switch (_fun33247_ip) {
                                                 case 0:
                                                     var3 = arg0;
@@ -717,7 +717,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var0 = 'componentDidMount';
                             var4.key = var0;
-                            var0 = function() { // Original name: componentDidMount, environment: var5
+                            var0 = function() {
                                 _fun33248: for (var _fun33248_ip = 0;;) switch (_fun33248_ip) {
                                     case 0:
                                         var1 = this;
@@ -1026,7 +1026,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'componentWillUnmount';
                             var4.key = var6;
-                            var6 = function() { // Original name: componentWillUnmount, environment: var5
+                            var6 = function() {
                                 _fun33249: for (var _fun33249_ip = 0;;) switch (_fun33249_ip) {
                                     case 0:
                                         var4 = this;
@@ -1351,7 +1351,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_syncStylePropsBackToReact';
                             var4.key = var6;
-                            var6 = function(arg0) { // Original name: _syncStylePropsBackToReact, environment: var5
+                            var6 = function arg0() {
                                 var2 = this;
                                 var1 = var2.setState;
                                 var0 = {};
@@ -1366,7 +1366,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'getComponentViewTag';
                             var4.key = var6;
-                            var6 = function() { // Original name: getComponentViewTag, environment: var5
+                            var6 = function() {
                                 var1 = this;
                                 var0 = var1._getViewInfo;
                                 var0 = var0.bind(var1)();
@@ -1378,7 +1378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_detachStyles';
                             var4.key = var6;
-                            var6 = function() { // Original name: _detachStyles, environment: var5
+                            var6 = function() {
                                 _fun33252: for (var _fun33252_ip = 0;;) switch (_fun33252_ip) {
                                     case 0:
                                         var2 = this;
@@ -1453,7 +1453,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_updateFromNative';
                             var4.key = var6;
-                            var6 = function(arg0) { // Original name: _updateFromNative, environment: var5
+                            var6 = function arg0() {
                                 _fun33253: for (var _fun33253_ip = 0;;) switch (_fun33253_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -1506,7 +1506,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_updateReanimatedProps';
                             var4.key = var6;
-                            var6 = function(arg0) { // Original name: _updateReanimatedProps, environment: var5
+                            var6 = function arg0() {
                                 _fun33254: for (var _fun33254_ip = 0;;) switch (_fun33254_ip) {
                                     case 0:
                                         var17 = arg0;
@@ -1613,7 +1613,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_getViewInfo';
                             var4.key = var6;
-                            var6 = function() { // Original name: _getViewInfo, environment: var5
+                            var6 = function() {
                                 _fun33256: for (var _fun33256_ip = 0;;) switch (_fun33256_ip) {
                                     case 0:
                                         var0 = this;
@@ -1723,7 +1723,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_attachAnimatedStyles';
                             var4.key = var6;
-                            var6 = function() { // Original name: _attachAnimatedStyles, environment: var5
+                            var6 = function() {
                                 _fun33257: for (var _fun33257_ip = 0;;) switch (_fun33257_ip) {
                                     case 0:
                                         var1 = this;
@@ -1750,7 +1750,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var2 = var1.props;
                                         var2 = var2.style;
                                         var3 = var3.bind(var4)(var2);
-                                        var2 = function(arg0) { // Original name: onlyAnimatedStyles, environment: var7
+                                        var2 = function arg0() {
                                             var2 = arg0;
                                             var1 = var2.filter;
                                             var0 = function(arg0) { // Environment: var0
@@ -1842,7 +1842,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var19 = var15;
                                         var9 = new var20[var9](var19, var18);
                                         var9 = var9 instanceof Object ? var9 : var11;
-                                        var12 = function(arg0) { // Original name: isStyleAttached, environment: var7
+                                        var12 = function arg0() {
                                             var0 = arg0;
                                             var2 = var0.viewDescriptors;
                                             var1 = var2.has;
@@ -1884,7 +1884,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             continue _fun33257
                                         }
                                     case 343:
-                                        var13 = function(arg0) { // Original name: _loop, environment: var7
+                                        var13 = function arg0() {
                                             _fun33261: for (var _fun33261_ip = 0;;) switch (_fun33261_ip) {
                                                 case 0:
                                                     var1 = arg0;
@@ -2098,7 +2098,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'componentDidUpdate';
                             var4.key = var6;
-                            var6 = function(arg0, arg1, arg2) { // Original name: componentDidUpdate, environment: var5
+                            var6 = function arg0, arg1, arg2() {
                                 _fun33264: for (var _fun33264_ip = 0;;) switch (_fun33264_ip) {
                                     case 0:
                                         var6 = arg0;
@@ -2257,7 +2257,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_configureLayoutAnimation';
                             var4.key = var6;
-                            var6 = function(arg0, arg1, arg2) { // Original name: _configureLayoutAnimation, environment: var5
+                            var6 = function arg0, arg1, arg2() {
                                 _fun33265: for (var _fun33265_ip = 0;;) switch (_fun33265_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -2377,7 +2377,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_configureSharedTransition';
                             var4.key = var6;
-                            var6 = function() { // Original name: _configureSharedTransition, environment: var5
+                            var6 = function() {
                                 _fun33266: for (var _fun33266_ip = 0;;) switch (_fun33266_ip) {
                                     case 0:
                                         var2 = this;
@@ -2474,7 +2474,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = '_isReducedMotion';
                             var4.key = var6;
-                            var6 = function(arg0) { // Original name: _isReducedMotion, environment: var5
+                            var6 = function arg0() {
                                 _fun33267: for (var _fun33267_ip = 0;;) switch (_fun33267_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -2528,7 +2528,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'getSnapshotBeforeUpdate';
                             var4.key = var6;
-                            var6 = function() { // Original name: getSnapshotBeforeUpdate, environment: var5
+                            var6 = function() {
                                 _fun33268: for (var _fun33268_ip = 0;;) switch (_fun33268_ip) {
                                     case 0:
                                         var1 = this;
@@ -2575,7 +2575,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = {};
                             var6 = 'render';
                             var4.key = var6;
-                            var5 = function() { // Original name: render, environment: var5
+                            var5 = function() {
                                 _fun33269: for (var _fun33269_ip = 0;;) switch (_fun33269_ip) {
                                     case 0:
                                         var13 = this;

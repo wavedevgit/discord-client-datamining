@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var12;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var13;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun74583: for (var _fun74583_ip = 0;;) switch (_fun74583_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun74585: for (var _fun74585_ip = 0;;) switch (_fun74585_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var10 = function(arg0, arg1, arg2) { // Original name: addImagesFromPicker, environment: var5
+    var10 = function arg0, arg1, arg2() {
         _fun74586: for (var _fun74586_ip = 0;;) switch (_fun74586_ip) {
             case 0:
                 var5 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var10;
-    var9 = function(arg0) { // Original name: handleCameraDialog, environment: var5
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.channel;
         var _closure2_slot0 = var2;
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var9;
-    var8 = function(arg0) { // Original name: handleViewAllDialog, environment: var5
+    var8 = function arg0() {
         _fun74593: for (var _fun74593_ip = 0;;) switch (_fun74593_ip) {
             case 0:
                 var0 = arg0;
@@ -1046,7 +1046,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var8;
-    var7 = function() { // Original name: handleAttachFile, environment: var5
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -1057,7 +1057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var7;
-    var0 = function() { // Original name: _handleAttachFile, environment: var5
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1319,7 +1319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var6 = function(arg0, arg1) { // Original name: mediaNodeToUploadItem, environment: var5
+    var6 = function arg0, arg1() {
         _fun74609: for (var _fun74609_ip = 0;;) switch (_fun74609_ip) {
             case 0:
                 var1 = arg0;
@@ -1383,7 +1383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var6;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: handleSelectKeyboardItem, environment: var5
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun74610: for (var _fun74610_ip = 0;;) switch (_fun74610_ip) {
             case 0:
                 var4 = arg0;
@@ -1458,7 +1458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var4;
-    var1 = function(arg0) { // Original name: getMediaKeyboardDraftType, environment: var5
+    var1 = function arg0() {
         _fun74612: for (var _fun74612_ip = 0;;) switch (_fun74612_ip) {
             case 0:
                 var2 = arg0;
@@ -1586,7 +1586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var11;
     var _closure1_slot21 = var3;
     var3 = function() { // Environment: var5
-        var0 = function(arg0, arg1) { // Original name: animatedIndexThreshold, environment: var0
+        var0 = function arg0, arg1() {
             _fun74614: for (var _fun74614_ip = 0;;) switch (_fun74614_ip) {
                 case 0:
                     var3 = arg0;
@@ -1629,7 +1629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = 'modules/media_keyboard/native/MediaKeyboardUtils.tsx';
     var11 = var12.bind(var13)(var11);
     var2.addImagesFromPicker = var10;
-    var10 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: addAttachmentForCommand, environment: var5
+    var10 = function arg0, arg1, arg2, arg3, arg4() {
         _fun74615: for (var _fun74615_ip = 0;;) switch (_fun74615_ip) {
             case 0:
                 var5 = arg0;
@@ -1851,7 +1851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleSelectGift = var8;
-    var8 = function(arg0, arg1) { // Original name: handleSelectThread, environment: var5
+    var8 = function arg0, arg1() {
         _fun74617: for (var _fun74617_ip = 0;;) switch (_fun74617_ip) {
             case 0:
                 var4 = arg0;
@@ -1922,7 +1922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleSelectThread = var8;
     var2.handleAttachFile = var7;
     var2.mediaNodeToUploadItem = var6;
-    var6 = function(arg0) { // Original name: cropResultToUploadItem, environment: var5
+    var6 = function arg0() {
         _fun74618: for (var _fun74618_ip = 0;;) switch (_fun74618_ip) {
             case 0:
                 var5 = arg0;
@@ -1983,7 +1983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.cropResultToUploadItem = var6;
     var2.handleSelectKeyboardItem = var4;
-    var4 = function(arg0) { // Original name: showSimpleMediaKeyboard, environment: var5
+    var4 = function arg0() {
         var10 = arg0;
         var _closure2_slot0 = var10;
         var2 = _closure1_slot31;
@@ -1995,7 +1995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         var9 = var2.bind(var0)(var1);
         var _closure2_slot1 = var9;
-        var1 = function(arg0) { // Original name: onAttachFileParams, environment: var7
+        var1 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
@@ -2003,7 +2003,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.channel = var2;
             var2 = _closure1_slot19;
             var0.uploadLimit = var2;
-            var2 = function() { // Original name: onDismissKeyboard, environment: var1
+            var2 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 24;
@@ -2015,7 +2015,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.onDismissKeyboard = var2;
-            var2 = function() { // Original name: onRestoreKeyboard, environment: var1
+            var2 = function() {
                 var2 = _closure1_slot32;
                 var1 = _closure2_slot0;
                 var0 = undefined;
@@ -2023,7 +2023,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.onRestoreKeyboard = var2;
-            var1 = function(arg0) { // Original name: onSelectFiles, environment: var1
+            var1 = function arg0() {
                 var4 = _closure1_slot24;
                 var0 = _closure2_slot0;
                 var3 = var0.id;
@@ -2050,7 +2050,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.uploadLimit = var8;
         var8 = true;
         var1.disableWhenReachedLimit = var8;
-        var8 = function() { // Original name: onAttachPress, environment: var7
+        var8 = function() {
             var2 = _closure1_slot27;
             var1 = {};
             var4 = _closure2_slot2;
@@ -2069,7 +2069,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.onAttachPress = var8;
-        var8 = function(arg0) { // Original name: onPressCamera, environment: var7
+        var8 = function arg0() {
             var2 = _closure1_slot25;
             var1 = {};
             var4 = _closure2_slot2;
@@ -2091,7 +2091,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.onPressCamera = var8;
-        var8 = function(arg0) { // Original name: onPressItem, environment: var7
+        var8 = function arg0() {
             var0 = arg0;
             var4 = var0.channelId;
             var3 = var0.item;
@@ -2109,7 +2109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.onPressItem = var8;
-        var7 = function() { // Original name: onViewAll, environment: var7
+        var7 = function() {
             var2 = _closure1_slot26;
             var1 = {};
             var5 = _closure2_slot2;

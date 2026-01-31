@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 76:
             var _closure1_slot0 = var1;
-            var1 = function(arg0, arg1, arg2, arg3) { // Original name: crc32, environment: var0
+            var1 = function arg0, arg1, arg2, arg3() {
                 _fun94792: for (var _fun94792_ip = 0;;) switch (_fun94792_ip) {
                     case 0:
                         var7 = arg1;

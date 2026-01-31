@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MainCallScreen, environment: var1
+    var0 = function arg0() {
         _fun69328: for (var _fun69328_ip = 0;;) switch (_fun69328_ip) {
             case 0:
                 var1 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/ChannelCallNavigatorMainCallScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelCallNavigatorMainCallScreen, environment: var1
+    var1 = function arg0() {
         _fun69329: for (var _fun69329_ip = 0;;) switch (_fun69329_ip) {
             case 0:
                 var0 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)();
                 var22 = var1.showSparkles;
                 _closure2_slot2 = var22;
-                var23 = function() { // Original name: onOpenRTCDebugOverlay, environment: var14
+                var23 = function() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = true;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var15[var11];
                 var12 = var12.bind(var3)(var11);
                 var11 = {};
-                var14 = function() { // Original name: onClose, environment: var14
+                var14 = function() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = false;

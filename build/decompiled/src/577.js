@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: isObjectLike, environment: var0
+    var1 = function arg0() {
         _fun6940: for (var _fun6940_ip = 0;;) switch (_fun6940_ip) {
             case 0:
                 var1 = arg0;

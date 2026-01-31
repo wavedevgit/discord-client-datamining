@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubEmailConnectionContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubEmailConnectionContent, environment: var1
+    var1 = function arg0() {
         _fun80355: for (var _fun80355_ip = 0;;) switch (_fun80355_ip) {
             case 0:
                 var0 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25.t;
                 var26 = var25["6kzaqs"];
                 var25 = {};
-                var29 = function() { // Original name: onClick, environment: var16
+                var29 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 20;
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var18.bind(var20)();
             case 1065:
                 var10.error = var17;
-                var17 = function() { // Original name: onFocus, environment: var16
+                var17 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var10.onFocus = var17;
-                var16 = function() { // Original name: onBlur, environment: var16
+                var16 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;

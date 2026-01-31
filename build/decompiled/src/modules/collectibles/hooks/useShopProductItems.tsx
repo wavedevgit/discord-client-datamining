@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0) { // Original name: ItemsSortingHat, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'firstAvatarDecoration';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var2 = this;
             var1 = var2.getFirstItemByType;
             var4 = _closure1_slot0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'firstProfileEffect';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var2 = this;
             var1 = var2.getFirstItemByType;
             var4 = _closure1_slot0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'firstNameplate';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var2 = this;
             var1 = var2.getFirstItemByType;
             var4 = _closure1_slot0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getFirstItemByType';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun56590: for (var _fun56590_ip = 0;;) switch (_fun56590_ip) {
                 case 0:
                     var0 = this;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'sortByTypes';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var3 = arg0;
             var2 = var3.reduce;
             var0 = global;

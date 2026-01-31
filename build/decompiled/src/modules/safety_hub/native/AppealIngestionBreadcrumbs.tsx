@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionBreadcrumbs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppealIngestionBreadcrumbs, environment: var1
+    var1 = function arg0() {
         _fun79563: for (var _fun79563_ip = 0;;) switch (_fun79563_ip) {
             case 0:
                 var0 = arg0;

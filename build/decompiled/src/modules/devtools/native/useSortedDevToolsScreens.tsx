@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun87537: for (var _fun87537_ip = 0;;) switch (_fun87537_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun87539: for (var _fun87539_ip = 0;;) switch (_fun87539_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function() { // Original name: getSortedDevToolsScreens, environment: var1
+    var0 = function() {
         _fun87540: for (var _fun87540_ip = 0;;) switch (_fun87540_ip) {
             case 0:
                 var1 = arguments[0];
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/useSortedDevToolsScreens.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useSortedDevToolsScreens, environment: var1
+    var3 = function() {
         var2 = _closure1_slot6;
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: updateSortOrder, environment: var1
+    var1 = function arg0, arg1() {
         _fun87545: for (var _fun87545_ip = 0;;) switch (_fun87545_ip) {
             case 0:
                 var6 = arg1;

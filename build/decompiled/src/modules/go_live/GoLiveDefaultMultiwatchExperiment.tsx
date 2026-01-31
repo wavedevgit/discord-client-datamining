@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: getGoLiveDefaultMultiwatchExperimentConfig, environment: var1
+    var3 = function arg0() {
         _fun64354: for (var _fun64354_ip = 0;;) switch (_fun64354_ip) {
             case 0:
                 var0 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/go_live/GoLiveDefaultMultiwatchExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getGoLiveDefaultMultiwatchExperimentConfig = var3;
-    var1 = function(arg0) { // Original name: useGoLiveDefaultMultiwatchExperimentConfig, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var1 = var1.location;
         var _closure2_slot0 = var1;

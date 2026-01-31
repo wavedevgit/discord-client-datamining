@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: extractTraceparentData, environment: var0
+    var2 = function arg0() {
         _fun58794: for (var _fun58794_ip = 0;;) switch (_fun58794_ip) {
             case 0:
                 var2 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var1.TRACEPARENT_REGEXP = var3;
     var1.extractTraceparentData = var2;
-    var2 = function() { // Original name: generateSentryTraceHeader, environment: var0
+    var2 = function() {
         _fun58795: for (var _fun58795_ip = 0;;) switch (_fun58795_ip) {
             case 0:
                 var0 = undefined;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.generateSentryTraceHeader = var2;
-    var0 = function(arg0, arg1) { // Original name: propagationContextFromHeaders, environment: var0
+    var0 = function arg0, arg1() {
         _fun58796: for (var _fun58796_ip = 0;;) switch (_fun58796_ip) {
             case 0:
                 var1 = _closure1_slot3;

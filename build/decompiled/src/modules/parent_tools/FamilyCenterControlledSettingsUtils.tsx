@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var6 = function(arg0) { // Original name: isSetAndNotDefault, environment: var1
+    var6 = function arg0() {
         _fun81308: for (var _fun81308_ip = 0;;) switch (_fun81308_ip) {
             case 0:
                 var2 = arg0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var6;
-    var5 = function(arg0) { // Original name: getGoreContentSettingOrDefault, environment: var1
+    var5 = function arg0() {
         _fun81309: for (var _fun81309_ip = 0;;) switch (_fun81309_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var5;
-    var4 = function(arg0) { // Original name: resolveExplicitContentSettingWithDefaultsForTeen, environment: var1
+    var4 = function arg0() {
         _fun81310: for (var _fun81310_ip = 0;;) switch (_fun81310_ip) {
             case 0:
                 var1 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: getExplicitContentSettingOrDefault, environment: var1
+    var3 = function arg0() {
         _fun81311: for (var _fun81311_ip = 0;;) switch (_fun81311_ip) {
             case 0:
                 var7 = arg0;

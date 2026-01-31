@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/useInviteApplicationBypassInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useInviteApplicationBypassInfo, environment: var1
+    var1 = function arg0() {
         _fun117142: for (var _fun117142_ip = 0;;) switch (_fun117142_ip) {
             case 0:
                 var1 = arg0;

@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var3 = var3.SubscriptionPlanInfo;
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: getCollectibleTypeName, environment: var1
+    var3 = function arg0() {
         _fun81961: for (var _fun81961_ip = 0;;) switch (_fun81961_ip) {
             case 0:
                 var2 = arg0;

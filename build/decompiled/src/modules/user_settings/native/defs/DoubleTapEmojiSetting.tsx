@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var8 = function() { // Original name: useDoubleTapDisabled, environment: var7
+    var8 = function() {
         _fun88428: for (var _fun88428_ip = 0;;) switch (_fun88428_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var11 = function() { // Original name: title, environment: var7
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 19;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var11;
     var10 = var10.CHAT;
     var1.parent = var10;
-    var10 = function() { // Original name: useDoubleTapEmojiSettingTrailing, environment: var7
+    var10 = function() {
         _fun88431: for (var _fun88431_ip = 0;;) switch (_fun88431_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTrailing = var10;
-    var10 = function() { // Original name: onPressSetting, environment: var7
+    var10 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 13;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onPress = var10;
     var1.withArrow = var9;
-    var9 = function() { // Original name: useDescription, environment: var7
+    var9 = function() {
         _fun88437: for (var _fun88437_ip = 0;;) switch (_fun88437_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useDescription = var9;
     var1.useIsDisabled = var8;
-    var7 = function() { // Original name: usePredicate, environment: var7
+    var7 = function() {
         var1 = _closure1_slot9;
         var0 = undefined;
         var0 = var1.bind(var0)();

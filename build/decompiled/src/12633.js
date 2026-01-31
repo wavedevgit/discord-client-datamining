@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96868
             }
         case 60:
-            var1 = function(arg0) { // Original name: propertyIsEnumerable, environment: var0
+            var1 = function arg0() {
                 _fun96869: for (var _fun96869_ip = 0;;) switch (_fun96869_ip) {
                     case 0:
                         var3 = _closure1_slot0;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var4 = function(arg0) { // Original name: createVirtualView, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var2 = _closure1_slot7;
@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var _closure2_slot1 = var2;
         var2 = _closure1_slot3;
         var1 = var2.forwardRef;
-        var0 = function(arg0, arg1) { // Original name: VirtualView_withRef, environment: var0
+        var0 = function arg0, arg1() {
             _fun5943: for (var _fun5943_ip = 0;;) switch (_fun5943_ip) {
                 case 0:
                     var0 = arg0;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var9.bind(var10)(var11, var8);
                 case 245:
                     var0.style = var7;
-                    var4 = function(arg0) { // Original name: handleModeChange, environment: var4
+                    var4 = function arg0() {
                         _fun5944: for (var _fun5944_ip = 0;;) switch (_fun5944_ip) {
                             case 0:
                                 var5 = arg0;
@@ -273,7 +273,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var3;
     var3 = var4.bind(var0)(var3);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: createHiddenVirtualView, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot8;
         var1 = undefined;
         var0 = arg0;

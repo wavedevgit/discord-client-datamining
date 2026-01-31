@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var5.bind(var7)();
         case 283:
             var _closure1_slot17 = var4;
-            var5 = function() { // Original name: createNativeOperations, environment: var3
+            var5 = function() {
                 _fun5174: for (var _fun5174_ip = 0;;) switch (_fun5174_ip) {
                     case 0:
                         var1 = ['createAnimatedNode', 'updateAnimatedNodeConfig', 'getValue', 'startListeningToAnimatedNodeValue', 'stopListeningToAnimatedNodeValue', 'connectAnimatedNodes', 'disconnectAnimatedNodes', 'startAnimatingNode', 'stopAnimation', 'setAnimatedNodeValue', 'setAnimatedNodeOffset', 'flattenAnimatedNodeOffset', 'extractAnimatedNodeOffset', 'connectAnimatedNodeToView', 'disconnectAnimatedNodeFromView', 'restoreDefaultValues', 'dropAnimatedNode', 'addAnimatedEventToView', 'removeAnimatedEventFromView', 'addListener', 'removeListener'];
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun5174
                         }
                     case 32:
-                        var6 = function() { // Original name: _loop2, environment: var5
+                        var6 = function() {
                             var3 = _closure2_slot0;
                             var2 = _closure2_slot3;
                             var2 = var3[var2];
@@ -252,7 +252,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun5174_ip = 114;
                         continue _fun5174;
                     case 74:
-                        var4 = function() { // Original name: _loop, environment: var5
+                        var4 = function() {
                             var3 = _closure2_slot2;
                             var2 = 1;
                             var2 = var3 + var2;
@@ -389,7 +389,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 317:
             var5.getValue = var7;
-            var7 = function(arg0) { // Original name: setWaitingForIdentifier, environment: var3
+            var7 = function arg0() {
                 _fun5183: for (var _fun5183_ip = 0;;) switch (_fun5183_ip) {
                     case 0:
                         var1 = _closure1_slot17;
@@ -434,7 +434,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.setWaitingForIdentifier = var7;
-            var7 = function(arg0) { // Original name: unsetWaitingForIdentifier, environment: var3
+            var7 = function arg0() {
                 _fun5184: for (var _fun5184_ip = 0;;) switch (_fun5184_ip) {
                     case 0:
                         var1 = _closure1_slot17;
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.unsetWaitingForIdentifier = var7;
-            var7 = function() { // Original name: disableQueue, environment: var3
+            var7 = function() {
                 _fun5185: for (var _fun5185_ip = 0;;) switch (_fun5185_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -624,7 +624,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun5186
                         }
                     case 62:
-                        var3 = function() { // Original name: ensureGlobalEventEmitterListeners, environment: var3
+                        var3 = function() {
                             _fun5187: for (var _fun5187_ip = 0;;) switch (_fun5187_ip) {
                                 case 0:
                                     var0 = _closure1_slot15;
@@ -774,7 +774,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 367:
             var5.flushQueue = var7;
-            var7 = function(arg0, arg1) { // Original name: createAnimatedNode, environment: var3
+            var7 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.createAnimatedNode;
                 var1 = arg0;
@@ -784,7 +784,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.createAnimatedNode = var7;
-            var7 = function(arg0, arg1) { // Original name: updateAnimatedNodeConfig, environment: var3
+            var7 = function arg0, arg1() {
                 _fun5192: for (var _fun5192_ip = 0;;) switch (_fun5192_ip) {
                     case 0:
                         var1 = _closure1_slot18;
@@ -806,7 +806,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.updateAnimatedNodeConfig = var7;
-            var7 = function(arg0) { // Original name: startListeningToAnimatedNodeValue, environment: var3
+            var7 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.startListeningToAnimatedNodeValue;
                 var0 = arg0;
@@ -815,7 +815,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.startListeningToAnimatedNodeValue = var7;
-            var7 = function(arg0) { // Original name: stopListeningToAnimatedNodeValue, environment: var3
+            var7 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.stopListeningToAnimatedNodeValue;
                 var0 = arg0;
@@ -824,7 +824,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.stopListeningToAnimatedNodeValue = var7;
-            var7 = function(arg0, arg1) { // Original name: connectAnimatedNodes, environment: var3
+            var7 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.connectAnimatedNodes;
                 var1 = arg0;
@@ -834,7 +834,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.connectAnimatedNodes = var7;
-            var7 = function(arg0, arg1) { // Original name: disconnectAnimatedNodes, environment: var3
+            var7 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.disconnectAnimatedNodes;
                 var1 = arg0;
@@ -888,7 +888,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 447:
             var5.startAnimatingNode = var6;
-            var6 = function(arg0) { // Original name: stopAnimation, environment: var3
+            var6 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.stopAnimation;
                 var0 = arg0;
@@ -897,7 +897,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.stopAnimation = var6;
-            var6 = function(arg0, arg1) { // Original name: setAnimatedNodeValue, environment: var3
+            var6 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.setAnimatedNodeValue;
                 var1 = arg0;
@@ -907,7 +907,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.setAnimatedNodeValue = var6;
-            var6 = function(arg0, arg1) { // Original name: setAnimatedNodeOffset, environment: var3
+            var6 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.setAnimatedNodeOffset;
                 var1 = arg0;
@@ -917,7 +917,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.setAnimatedNodeOffset = var6;
-            var6 = function(arg0) { // Original name: flattenAnimatedNodeOffset, environment: var3
+            var6 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.flattenAnimatedNodeOffset;
                 var0 = arg0;
@@ -926,7 +926,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.flattenAnimatedNodeOffset = var6;
-            var6 = function(arg0) { // Original name: extractAnimatedNodeOffset, environment: var3
+            var6 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.extractAnimatedNodeOffset;
                 var0 = arg0;
@@ -935,7 +935,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.extractAnimatedNodeOffset = var6;
-            var6 = function(arg0, arg1) { // Original name: connectAnimatedNodeToView, environment: var3
+            var6 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.connectAnimatedNodeToView;
                 var1 = arg0;
@@ -945,7 +945,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.connectAnimatedNodeToView = var6;
-            var6 = function(arg0, arg1) { // Original name: disconnectAnimatedNodeFromView, environment: var3
+            var6 = function arg0, arg1() {
                 var3 = _closure1_slot18;
                 var2 = var3.disconnectAnimatedNodeFromView;
                 var1 = arg0;
@@ -955,7 +955,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.disconnectAnimatedNodeFromView = var6;
-            var6 = function(arg0) { // Original name: restoreDefaultValues, environment: var3
+            var6 = function arg0() {
                 _fun5206: for (var _fun5206_ip = 0;;) switch (_fun5206_ip) {
                     case 0:
                         var1 = _closure1_slot18;
@@ -976,7 +976,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var5.restoreDefaultValues = var6;
-            var6 = function(arg0) { // Original name: dropAnimatedNode, environment: var3
+            var6 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.dropAnimatedNode;
                 var0 = arg0;
@@ -985,7 +985,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.dropAnimatedNode = var6;
-            var6 = function(arg0, arg1, arg2) { // Original name: addAnimatedEventToView, environment: var3
+            var6 = function arg0, arg1, arg2() {
                 var4 = _closure1_slot18;
                 var3 = var4.addAnimatedEventToView;
                 var2 = arg0;
@@ -996,7 +996,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5.addAnimatedEventToView = var6;
-            var6 = function(arg0, arg1, arg2) { // Original name: removeAnimatedEventFromView, environment: var3
+            var6 = function arg0, arg1, arg2() {
                 var4 = _closure1_slot18;
                 var3 = var4.removeAnimatedEventFromView;
                 var2 = arg0;
@@ -1011,7 +1011,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot20 = var1;
             var1 = {};
             var1.API = var5;
-            var5 = function() { // Original name: generateNewNodeTag, environment: var3
+            var5 = function() {
                 var0 = _closure1_slot5;
                 var0 = parseFloat(var0);
                 var1 = var0 + 1;
@@ -1019,7 +1019,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.generateNewNodeTag = var5;
-            var5 = function() { // Original name: generateNewAnimationId, environment: var3
+            var5 = function() {
                 var0 = _closure1_slot6;
                 var0 = parseFloat(var0);
                 var1 = var0 + 1;
@@ -1027,7 +1027,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.generateNewAnimationId = var5;
-            var5 = function() { // Original name: assertNativeAnimatedModule, environment: var3
+            var5 = function() {
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 4;
@@ -1040,7 +1040,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.assertNativeAnimatedModule = var5;
-            var5 = function(arg0) { // Original name: shouldUseNativeDriver, environment: var3
+            var5 = function arg0() {
                 _fun5213: for (var _fun5213_ip = 0;;) switch (_fun5213_ip) {
                     case 0:
                         var1 = arg0;
@@ -1102,7 +1102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1.shouldUseNativeDriver = var5;
             var1.shouldSignalBatch = var4;
-            var4 = function(arg0) { // Original name: transformDataType, environment: var3
+            var4 = function arg0() {
                 _fun5214: for (var _fun5214_ip = 0;;) switch (_fun5214_ip) {
                     case 0:
                         var5 = arg0;
@@ -1170,7 +1170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.transformDataType = var4;
-            var4 = function() { // Original name: get nativeEventEmitter, environment: var3
+            var4 = function() {
                 _fun5215: for (var _fun5215_ip = 0;;) switch (_fun5215_ip) {
                     case 0:
                         var1 = _closure1_slot3;

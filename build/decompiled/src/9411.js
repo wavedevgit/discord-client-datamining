@@ -17,13 +17,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_normalTs1(value){const{interpolate,size,vertical}=this.__closure;const translate=interpolate(value,[-1,0,1],[-size,0,size]);return{transform:[vertical?{translateY:translate}:{translateX:translate}]};}';
     var2.code = var3;
     var _closure1_slot2 = var2;
-    var0 = function(arg0) { // Original name: normalLayout, environment: var0
+    var0 = function arg0() {
         var1 = arg0;
         var4 = var1.size;
         var _closure2_slot0 = var4;
         var3 = var1.vertical;
         var _closure2_slot1 = var3;
-        var0 = function(arg0) { // Original name: pnpm_normalTs1, environment: var0
+        var0 = function arg0() {
             _fun74867: for (var _fun74867_ip = 0;;) switch (_fun74867_ip) {
                 case 0:
                     var2 = _closure1_slot0;

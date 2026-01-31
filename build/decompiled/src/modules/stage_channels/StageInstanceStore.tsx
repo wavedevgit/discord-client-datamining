@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun16151: for (var _fun16151_ip = 0;;) switch (_fun16151_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: addStageInstancesForGuild, environment: var3
+    var0 = function arg0, arg1() {
         _fun16154: for (var _fun16154_ip = 0;;) switch (_fun16154_ip) {
             case 0:
                 var2 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var8 = function(arg0) { // Original name: handleStageInstanceCreateOrUpdate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.instance;
         var3 = _closure1_slot9;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var0)(var2, var1);
         return var0;
     };
-    var0 = function(arg0, arg1) { // Original name: doDelete, environment: var3
+    var0 = function arg0, arg1() {
         _fun16157: for (var _fun16157_ip = 0;;) switch (_fun16157_ip) {
             case 0:
                 var2 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: StageInstanceStore, environment: var5
+        var3 = function() {
             _fun16159: for (var _fun16159_ip = 0;;) switch (_fun16159_ip) {
                 case 0:
                     var3 = this;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getStageInstanceByChannel';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun16160: for (var _fun16160_ip = 0;;) switch (_fun16160_ip) {
                 case 0:
                     var1 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLive';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var1 = var2.getStageInstanceByChannel;
             var0 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPublic';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun16162: for (var _fun16162_ip = 0;;) switch (_fun16162_ip) {
                 case 0:
                     var2 = this;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStageInstancesByGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun16163: for (var _fun16163_ip = 0;;) switch (_fun16163_ip) {
                 case 0:
                     var2 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllStageInstances';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guilds;
         var0 = {};
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var9;
-    var9 = function(arg0) { // Original name: handleGuildCreate, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         var3 = _closure1_slot9;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_CREATE = var9;
-    var9 = function(arg0) { // Original name: handleGuildDelete, environment: var3
+    var9 = function arg0() {
         _fun16168: for (var _fun16168_ip = 0;;) switch (_fun16168_ip) {
             case 0:
                 var0 = arg0;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_DELETE = var9;
     var1.STAGE_INSTANCE_CREATE = var8;
     var1.STAGE_INSTANCE_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleStageInstanceDelete, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.instance;
         var3 = _closure1_slot10;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.STAGE_INSTANCE_DELETE = var8;
-    var8 = function(arg0) { // Original name: handleChannelDelete, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var3 = _closure1_slot10;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CHANNEL_DELETE = var8;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot7 = var0;
         var0 = {};

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 106:
             var9 = var4.Proxy;
             var8 = {};
-            var4 = function() { // Original name: get, environment: var1
+            var4 = function() {
                 var0 = global;
                 var2 = var0.Error;
                 var0 = var2.prototype;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var3.ExperimentCacher;
             var3 = function() { // Environment: var1
                 var4 = _closure1_slot1;
-                var3 = function() { // Original name: BlockedDomainsStore, environment: var1
+                var3 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure2_slot0;
                     var0 = undefined;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var2 = 'isBlockedDomain';
                 var0.key = var2;
-                var2 = function(arg0) { // Original name: value, environment: var1
+                var2 = function arg0() {
                     var2 = _closure1_slot2;
                     var1 = var2.isBlockedDomain;
                     var0 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'startFetchingBlockedDomains';
                 var0.key = var5;
-                var1 = function(arg0) { // Original name: value, environment: var1
+                var1 = function arg0() {
                     var2 = _closure1_slot2;
                     var1 = var2.startFetchingBlockedDomains;
                     var0 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = '../discord_common/js/packages/libdiscore/mobile/js/index.tsx';
             var5 = var6.bind(var7)(var5);
             var2.ExperimentCacher = var4;
-            var4 = function(arg0, arg1) { // Original name: rustMultiply, environment: var1
+            var4 = function arg0, arg1() {
                 var3 = _closure1_slot2;
                 var2 = var3.rustMultiply;
                 var1 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.rustMultiply = var4;
-            var4 = function() { // Original name: consumeLogs, environment: var1
+            var4 = function() {
                 var1 = _closure1_slot2;
                 var0 = var1.consumeLogs;
                 var0 = var0.bind(var1)();
@@ -144,12 +144,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.consumeLogs = var4;
             var2.BlockedDomainsStore = var3;
-            var3 = function() { // Original name: getFluxApi, environment: var1
+            var3 = function() {
                 var0 = null;
                 return var0;
             };
             var2.getFluxApi = var3;
-            var3 = function() { // Original name: crash, environment: var1
+            var3 = function() {
                 var1 = _closure1_slot2;
                 var0 = var1.crash;
                 var0 = var0.bind(var1)();
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.crash = var3;
-            var3 = function(arg0) { // Original name: generateLaunchSignature, environment: var1
+            var3 = function arg0() {
                 var2 = _closure1_slot2;
                 var1 = var2.generateLaunchSignature;
                 var0 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.generateLaunchSignature = var3;
-            var1 = function() { // Original name: getHttpClientAPI, environment: var1
+            var1 = function() {
                 var0 = {};
                 var2 = _closure1_slot2;
                 var2 = var2.httpRequest;

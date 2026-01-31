@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useTextPressability, environment: var4
+    var0 = function arg0() {
         var1 = arg0;
         var16 = var1.onLongPress;
         var _closure2_slot0 = var16;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 20:
                     var1 = {};
-                    var5 = function(arg0) { // Original name: onResponderGrant, environment: var2
+                    var5 = function arg0() {
                         _fun4467: for (var _fun4467_ip = 0;;) switch (_fun4467_ip) {
                             case 0:
                                 var2 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var1.onResponderGrant = var5;
-                    var5 = function(arg0) { // Original name: onResponderMove, environment: var2
+                    var5 = function arg0() {
                         _fun4468: for (var _fun4468_ip = 0;;) switch (_fun4468_ip) {
                             case 0:
                                 var2 = arg0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var1.onResponderMove = var5;
-                    var5 = function(arg0) { // Original name: onResponderRelease, environment: var2
+                    var5 = function arg0() {
                         _fun4469: for (var _fun4469_ip = 0;;) switch (_fun4469_ip) {
                             case 0:
                                 var2 = arg0;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var1.onResponderRelease = var5;
-                    var2 = function(arg0) { // Original name: onResponderTerminate, environment: var2
+                    var2 = function arg0() {
                         _fun4470: for (var _fun4470_ip = 0;;) switch (_fun4470_ip) {
                             case 0:
                                 var2 = arg0;
@@ -280,7 +280,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var3.bind(var0)(var1);
     var1 = var1.jsx;
     var _closure1_slot9 = var1;
-    var1 = function(arg0) { // Original name: TextImpl, environment: var4
+    var1 = function arg0() {
         _fun4472: for (var _fun4472_ip = 0;;) switch (_fun4472_ip) {
             case 0:
                 var28 = arg0;
@@ -918,7 +918,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = 'Text';
     var1.displayName = var3;
-    var3 = function(arg0) { // Original name: NativePressableVirtualText, environment: var4
+    var3 = function arg0() {
         var2 = arg0;
         var0 = var2.ref;
         var8 = var2.textProps;
@@ -957,7 +957,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: NativePressableText, environment: var4
+    var3 = function arg0() {
         var2 = arg0;
         var0 = var2.ref;
         var8 = var2.textProps;

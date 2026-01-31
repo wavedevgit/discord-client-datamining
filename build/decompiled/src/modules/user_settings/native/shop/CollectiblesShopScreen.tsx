@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/shop/CollectiblesShopScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: CollectiblesShopScreen, environment: var1
+    var1 = function() {
         _fun87986: for (var _fun87986_ip = 0;;) switch (_fun87986_ip) {
             case 0:
                 var1 = _closure1_slot0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: _toPropertyKey, environment: var1
+    var0 = function arg0() {
         _fun65688: for (var _fun65688_ip = 0;;) switch (_fun65688_ip) {
             case 0:
                 var6 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: getFullRowId, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.rowType;
         var3 = var0.id;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/create_channel/AddMembersBody.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddMembersBody, environment: var1
+    var1 = function arg0() {
         _fun65690: for (var _fun65690_ip = 0;;) switch (_fun65690_ip) {
             case 0:
                 var0 = arg0;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot5 = var3;
                 var _closure2_slot6 = var3;
                 var _closure2_slot7 = var3;
-                var1 = function(arg0, arg1) { // Original name: getQuery, environment: var10
+                var1 = function arg0, arg1() {
                     _fun65691: for (var _fun65691_ip = 0;;) switch (_fun65691_ip) {
                         case 0:
                             var3 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot8 = var1;
-                var9 = function(arg0) { // Original name: filterByQuery, environment: var10
+                var9 = function arg0() {
                     var2 = _closure2_slot8;
                     var3 = _closure2_slot6;
                     var1 = var3.trim;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var23.bind(var24)(var21);
                 var18.placeholder = var21;
                 var18.tags = var20;
-                var20 = function(arg0) { // Original name: onChangeText, environment: var10
+                var20 = function arg0() {
                     var4 = arg0;
                     var0 = var4.trim;
                     var9 = var0.bind(var4)();
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var18.onChangeText = var20;
-                var20 = function(arg0) { // Original name: onRemove, environment: var10
+                var20 = function arg0() {
                     var0 = global;
                     var4 = var0.Object;
                     var3 = var4.keys;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var17 + var14;
                 var11.paddingBottom = var14;
                 var5.contentContainerStyle = var11;
-                var11 = function(arg0) { // Original name: renderItem, environment: var10
+                var11 = function arg0() {
                     _fun65699: for (var _fun65699_ip = 0;;) switch (_fun65699_ip) {
                         case 0:
                             var0 = arg0;
@@ -809,9 +809,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.item = var10;
                             var5 = var10.disabled;
                             var0.disabled = var5;
-                            var4 = function() { // Original name: onPress, environment: var4
+                            var4 = function() {
                                 var2 = _closure3_slot0;
-                                var1 = function(arg0) { // Original name: handleUpdatePendingAdditions, environment: var0
+                                var1 = function arg0() {
                                     _fun65701: for (var _fun65701_ip = 0;;) switch (_fun65701_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -1028,7 +1028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var5.renderItem = var11;
-                var10 = function(arg0) { // Original name: renderSectionHeader, environment: var10
+                var10 = function arg0() {
                     _fun65703: for (var _fun65703_ip = 0;;) switch (_fun65703_ip) {
                         case 0:
                             var0 = arg0;

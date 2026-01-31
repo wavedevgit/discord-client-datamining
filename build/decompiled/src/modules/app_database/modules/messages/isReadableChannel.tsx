@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function(arg0) { // Original name: isReadableChannel, environment: var1
+    var3 = function arg0() {
         _fun40084: for (var _fun40084_ip = 0;;) switch (_fun40084_ip) {
             case 0:
                 var6 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_database/modules/messages/isReadableChannel.tsx';
     var4 = var5.bind(var6)(var4);
     var2.isReadableChannel = var3;
-    var1 = function(arg0) { // Original name: isReadableChannelId, environment: var1
+    var1 = function arg0() {
         _fun40085: for (var _fun40085_ip = 0;;) switch (_fun40085_ip) {
             case 0:
                 var4 = arg0;

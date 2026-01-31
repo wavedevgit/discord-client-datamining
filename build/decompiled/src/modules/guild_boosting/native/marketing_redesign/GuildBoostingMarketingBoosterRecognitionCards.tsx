@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Card, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = _closure1_slot6;
         var3 = undefined;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingBoosterRecognitionCards.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildBoostingMarketingBoosterRecognitionCards, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var8 = var0.bind(var3)();

@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function() { // Original name: getTextInVoiceSendMessageChannelPermissionText, environment: var0
+    var5 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getTextInVoiceSendMessageChannelPermissionText = var5;
-    var0 = function() { // Original name: getTextInVoiceReadMessageHistoryChannelPermissionText, environment: var0
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;

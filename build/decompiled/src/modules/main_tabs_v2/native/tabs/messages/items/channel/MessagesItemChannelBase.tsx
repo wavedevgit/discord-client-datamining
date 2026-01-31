@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot17 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: MessagesItemChannelBase, environment: var3
+    var3 = function arg0() {
         _fun101319: for (var _fun101319_ip = 0;;) switch (_fun101319_ip) {
             case 0:
                 var0 = arg0;

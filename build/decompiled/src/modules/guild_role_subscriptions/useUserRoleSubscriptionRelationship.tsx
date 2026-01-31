@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: getUserRoleSubscriptionRelationship, environment: var3
+    var1 = function() {
         _fun83902: for (var _fun83902_ip = 0;;) switch (_fun83902_ip) {
             case 0:
                 var4 = arguments[0];
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useUserRoleSubscriptionRelationship, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_list_v2/native/ChannelListUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: isFavoritesSection, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var1 = var0.favoritesSectionNumber;
         var0 = arg0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isFavoritesSection = var3;
-    var3 = function(arg0, arg1) { // Original name: isRecentsSection, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var1 = var0.recentsSectionNumber;
         var0 = arg0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isRecentsSection = var3;
-    var3 = function(arg0, arg1) { // Original name: isVoiceChannelsSection, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var1 = var0.voiceChannelsSectionNumber;
         var0 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isVoiceChannelsSection = var3;
-    var3 = function(arg0) { // Original name: isNamedCategorySection, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isNamedCategorySection = var3;
-    var1 = function() { // Original name: logChannelListEndReached, environment: var1
+    var1 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 2;

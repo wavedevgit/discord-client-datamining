@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.B3zz0G;
                 var11 = var12.bind(var13)(var11);
                 var0.accessibilityLabel = var11;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     _fun68035: for (var _fun68035_ip = 0;;) switch (_fun68035_ip) {
                         case 0:
                             var1 = _closure2_slot2;

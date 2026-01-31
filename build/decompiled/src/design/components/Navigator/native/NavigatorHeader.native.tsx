@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var7;
-    var3 = function() { // Original name: HeaderBackImage, environment: var1
+    var3 = function() {
         var1 = _closure1_slot8;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var3;
-    var0 = function(arg0) { // Original name: CloseButton, environment: var1
+    var0 = function arg0() {
         _fun43485: for (var _fun43485_ip = 0;;) switch (_fun43485_ip) {
             case 0:
                 var3 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = false;
                 var6 = 'labelVisible';
                 var0[var6] = var7;
-                var6 = function(arg0) { // Original name: backImage, environment: var4
+                var6 = function arg0() {
                     var0 = arg0;
                     var6 = var0.tintColor;
                     var3 = _closure1_slot6;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: CustomHeaderBackButton, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var6 = var2.onPress;
         var _closure2_slot0 = var6;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = false;
         var5 = 'labelVisible';
         var0[var5] = var6;
-        var5 = function() { // Original name: backImage, environment: var4
+        var5 = function() {
             var3 = _closure1_slot6;
             var2 = _closure1_slot9;
             var1 = undefined;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: HeaderTextButton, environment: var1
+    var0 = function arg0() {
         _fun43492: for (var _fun43492_ip = 0;;) switch (_fun43492_ip) {
             case 0:
                 var3 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var5] = var9;
                 var5 = 'labelStyle';
                 var0[var5] = var8;
-                var8 = function() { // Original name: backImage, environment: var5
+                var8 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'design/components/Navigator/native/NavigatorHeader.native.tsx';
     var5 = var6.bind(var7)(var5);
     var2.useStyles = var4;
-    var4 = function(arg0) { // Original name: NavigatorHeader, environment: var1
+    var4 = function arg0() {
         _fun43494: for (var _fun43494_ip = 0;;) switch (_fun43494_ip) {
             case 0:
                 var0 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NavigatorHeader = var4;
     var2.HeaderBackImage = var3;
-    var3 = function() { // Original name: renderBackImage, environment: var1
+    var3 = function() {
         var3 = _closure1_slot6;
         var2 = _closure1_slot9;
         var1 = undefined;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.renderBackImage = var3;
-    var3 = function(arg0) { // Original name: getHeaderCloseButton, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getHeaderCloseButton = var3;
-    var3 = function(arg0) { // Original name: getHeaderConditionalBackButton, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getHeaderConditionalBackButton = var3;
-    var3 = function(arg0) { // Original name: getHeaderBackButton, environment: var1
+    var3 = function arg0() {
         _fun43504: for (var _fun43504_ip = 0;;) switch (_fun43504_ip) {
             case 0:
                 var1 = arguments[1];
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var7 = var1;
                     var4 = copyDataProperties(var7, var6);
-                    var4 = function() { // Original name: onPress, environment: var0
+                    var4 = function() {
                         _fun43506: for (var _fun43506_ip = 0;;) switch (_fun43506_ip) {
                             case 0:
                                 var1 = _closure2_slot0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHeaderBackButton = var3;
-    var3 = function(arg0, arg1) { // Original name: getHeaderTextButton, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getHeaderTextButton = var3;
-    var3 = function() { // Original name: getHeaderNoTitle, environment: var1
+    var3 = function() {
         var0 = function() { // Environment: var0
             var0 = null;
             return var0;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getHeaderNoTitle = var3;
-    var3 = function(arg0) { // Original name: FauxHeader, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var6 = var0.style;
@@ -755,7 +755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.FauxHeader = var3;
-    var1 = function() { // Original name: HeaderSubmittingIndicator, environment: var1
+    var1 = function() {
         var1 = _closure1_slot8;
         var3 = undefined;
         var4 = var1.bind(var3)();

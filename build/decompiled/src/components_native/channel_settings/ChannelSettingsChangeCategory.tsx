@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun109293: for (var _fun109293_ip = 0;;) switch (_fun109293_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot21 = var6;
     var6 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ChannelSettingsChangeCategory, environment: var5
+        var3 = function arg0() {
             _fun109297: for (var _fun109297_ip = 0;;) switch (_fun109297_ip) {
                 case 0:
                     var4 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'shouldComponentUpdate';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0.state;
             var0 = var0.submitting;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleSetCategory';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun109301: for (var _fun109301_ip = 0;;) switch (_fun109301_ip) {
                 case 0:
                     var0 = arg0;
@@ -441,14 +441,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = {};
                     var3.oldOrdering = var11;
                     var3.newOrdering = var9;
-                    var9 = function(arg0) { // Original name: idGetter, environment: var1
+                    var9 = function arg0() {
                         var0 = arg0;
                         var0 = var0.channel;
                         var0 = var0.id;
                         return var0;
                     };
                     var3.idGetter = var9;
-                    var9 = function(arg0) { // Original name: existingPositionGetter, environment: var1
+                    var9 = function arg0() {
                         var0 = arg0;
                         var0 = var0.channel;
                         var0 = var0.position;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var7.bind(var8)(var2);
                     var2 = var3.bind(var5)(var6, var2);
                     var _closure3_slot9 = var2;
-                    var2 = function() { // Original name: saveUpdates, environment: var1
+                    var2 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 21;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var4.s4uM3b;
                                 var4 = var5.bind(var6)(var4);
                                 var1.cancelText = var4;
-                                var4 = function() { // Original name: onConfirm, environment: var4
+                                var4 = function() {
                                     var2 = _closure3_slot6;
                                     var1 = true;
                                     var2.lock_permissions = var1;
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderCategory';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun109313: for (var _fun109313_ip = 0;;) switch (_fun109313_ip) {
                 case 0:
                     var0 = arg0;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = {};
                     var11 = var0.name;
                     var6.label = var11;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleSetCategory;
                         var0 = _closure3_slot1;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun109315: for (var _fun109315_ip = 0;;) switch (_fun109315_ip) {
                 case 0:
                     var7 = this;
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun109316: for (var _fun109316_ip = 0;;) switch (_fun109316_ip) {
                 case 0:
                     var6 = this;
@@ -944,7 +944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = {};
                     var14 = var10.name;
                     var11.label = var14;
-                    var13 = function() { // Original name: onPress, environment: var13
+                    var13 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleSetCategory;
                         var0 = _closure3_slot1;
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/channel_settings/ChannelSettingsChangeCategory.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedChannelSettingsChangeCategory, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var1 = var1.channelId;
         var _closure2_slot0 = var1;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: isSpammer, environment: var1
+    var3 = function arg0() {
         _fun40736: for (var _fun40736_ip = 0;;) switch (_fun40736_ip) {
             case 0:
                 var3 = _closure1_slot2;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/isSpam.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: isSpamSupported, environment: var1
+    var4 = function arg0() {
         _fun40737: for (var _fun40737_ip = 0;;) switch (_fun40737_ip) {
             case 0:
                 var1 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSpamSupported = var4;
     var2.isSpammer = var3;
-    var1 = function(arg0) { // Original name: isSpam, environment: var1
+    var1 = function arg0() {
         _fun40738: for (var _fun40738_ip = 0;;) switch (_fun40738_ip) {
             case 0:
                 var3 = arg0;

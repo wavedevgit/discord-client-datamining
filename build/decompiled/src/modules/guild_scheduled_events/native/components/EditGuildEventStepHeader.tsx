@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditGuildEventStepHeader, environment: var1
+    var1 = function arg0() {
         _fun65705: for (var _fun65705_ip = 0;;) switch (_fun65705_ip) {
             case 0:
                 var0 = arg0;

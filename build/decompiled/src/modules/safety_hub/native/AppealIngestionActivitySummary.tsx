@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionActivitySummary.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppealIngestionActivitySummary, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.flaggedContent;
         var0 = _closure1_slot4;

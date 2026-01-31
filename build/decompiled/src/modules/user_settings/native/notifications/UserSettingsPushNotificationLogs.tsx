@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/notifications/UserSettingsPushNotificationLogs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsPushNotificationLogs, environment: var1
+    var1 = function() {
         var4 = _closure1_slot5;
         var1 = var4.useState;
         var0 = function() { // Environment: var8
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot3 = var1;
         var5 = var4.useEffect;
         var2 = function() { // Environment: var8
-            var1 = function() { // Original name: _load, environment: var0
+            var1 = function() {
                 var3 = undefined;
                 var0 = undefined;
                 var2 = _closure1_slot3;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure3_slot0 = var1;
-            var1 = function() { // Original name: load, environment: var0
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot0;
                 var2 = var3.apply;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10.list;
         var5.contentContainerStyle = var10;
         var5.data = var9;
-        var8 = function(arg0) { // Original name: renderItem, environment: var8
+        var8 = function arg0() {
             _fun85653: for (var _fun85653_ip = 0;;) switch (_fun85653_ip) {
                 case 0:
                     var0 = arg0;

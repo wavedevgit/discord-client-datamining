@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var3.Object;
     var6 = var7.assign;
     var5 = {};
-    var4 = function(arg0) { // Original name: touchableHandleStartShouldSetResponder, environment: var1
+    var4 = function arg0() {
         _fun48420: for (var _fun48420_ip = 0;;) switch (_fun48420_ip) {
             case 0:
                 var3 = arg0;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleStartShouldSetResponder = var4;
-    var4 = function(arg0) { // Original name: touchableHandleResponderTerminationRequest, environment: var1
+    var4 = function arg0() {
         _fun48421: for (var _fun48421_ip = 0;;) switch (_fun48421_ip) {
             case 0:
                 var3 = arg0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleResponderTerminationRequest = var4;
-    var4 = function(arg0) { // Original name: touchableHandleResponderGrant, environment: var1
+    var4 = function arg0() {
         _fun48422: for (var _fun48422_ip = 0;;) switch (_fun48422_ip) {
             case 0:
                 var3 = arg0;
@@ -116,7 +116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleResponderGrant = var4;
-    var4 = function(arg0) { // Original name: touchableHandleResponderMove, environment: var1
+    var4 = function arg0() {
         _fun48423: for (var _fun48423_ip = 0;;) switch (_fun48423_ip) {
             case 0:
                 var3 = arg0;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleResponderMove = var4;
-    var4 = function(arg0) { // Original name: touchableHandleResponderRelease, environment: var1
+    var4 = function arg0() {
         _fun48424: for (var _fun48424_ip = 0;;) switch (_fun48424_ip) {
             case 0:
                 var3 = arg0;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleResponderRelease = var4;
-    var4 = function(arg0) { // Original name: touchableHandleResponderTerminate, environment: var1
+    var4 = function arg0() {
         _fun48425: for (var _fun48425_ip = 0;;) switch (_fun48425_ip) {
             case 0:
                 var3 = arg0;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleResponderTerminate = var4;
-    var4 = function(arg0) { // Original name: touchableHandlePress, environment: var1
+    var4 = function arg0() {
         _fun48426: for (var _fun48426_ip = 0;;) switch (_fun48426_ip) {
             case 0:
                 var0 = this;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandlePress = var4;
-    var4 = function(arg0) { // Original name: touchableHandleActivePressIn, environment: var1
+    var4 = function arg0() {
         _fun48427: for (var _fun48427_ip = 0;;) switch (_fun48427_ip) {
             case 0:
                 var0 = this;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleActivePressIn = var4;
-    var4 = function(arg0) { // Original name: touchableHandleActivePressOut, environment: var1
+    var4 = function arg0() {
         _fun48428: for (var _fun48428_ip = 0;;) switch (_fun48428_ip) {
             case 0:
                 var0 = this;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleActivePressOut = var4;
-    var4 = function(arg0) { // Original name: touchableHandleLongPress, environment: var1
+    var4 = function arg0() {
         _fun48429: for (var _fun48429_ip = 0;;) switch (_fun48429_ip) {
             case 0:
                 var0 = this;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableHandleLongPress = var4;
-    var4 = function() { // Original name: touchableGetPressRectOffset, environment: var1
+    var4 = function() {
         _fun48430: for (var _fun48430_ip = 0;;) switch (_fun48430_ip) {
             case 0:
                 var0 = this;
@@ -288,14 +288,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableGetPressRectOffset = var4;
-    var4 = function() { // Original name: touchableGetHitSlop, environment: var1
+    var4 = function() {
         var0 = this;
         var0 = var0.props;
         var0 = var0.hitSlop;
         return var0;
     };
     var5.touchableGetHitSlop = var4;
-    var4 = function() { // Original name: touchableGetHighlightDelayMS, environment: var1
+    var4 = function() {
         _fun48432: for (var _fun48432_ip = 0;;) switch (_fun48432_ip) {
             case 0:
                 var0 = this;
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableGetHighlightDelayMS = var4;
-    var4 = function() { // Original name: touchableGetLongPressDelayMS, environment: var1
+    var4 = function() {
         _fun48433: for (var _fun48433_ip = 0;;) switch (_fun48433_ip) {
             case 0:
                 var0 = this;
@@ -337,7 +337,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5.touchableGetLongPressDelayMS = var4;
-    var4 = function() { // Original name: touchableGetPressOutDelayMS, environment: var1
+    var4 = function() {
         _fun48434: for (var _fun48434_ip = 0;;) switch (_fun48434_ip) {
             case 0:
                 var0 = this;
@@ -372,7 +372,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var4;
     var3 = var3.length;
     var _closure1_slot11 = var3;
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun48436: for (var _fun48436_ip = 0;;) switch (_fun48436_ip) {
             case 0:
                 var2 = arg0;

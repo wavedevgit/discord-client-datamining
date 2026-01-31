@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var0 = function(arg0) { // Original name: serializePurchaseResponse, environment: var1
+    var0 = function arg0() {
         _fun58447: for (var _fun58447_ip = 0;;) switch (_fun58447_ip) {
             case 0:
                 var1 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var5 = function(arg0) { // Original name: convertToUUID, environment: var1
+    var5 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 12;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var5;
-    var0 = function() { // Original name: _restorePurchases, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var4 = function() { // Original name: isStorekit2Available, environment: var1
+    var4 = function() {
         _fun58456: for (var _fun58456_ip = 0;;) switch (_fun58456_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var4;
-    var3 = function() { // Original name: fetchStoreFront, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _fetchStoreFront, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.storekitMode = var11;
     var6 = var7.bind(var10)(var6);
     var6 = {};
-    var7 = function() { // Original name: loadProducts, environment: var1
+    var7 = function() {
         _fun58461: for (var _fun58461_ip = 0;;) switch (_fun58461_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var6.loadProducts = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: purchaseProduct, environment: var1
+    var7 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -835,7 +835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.purchaseProduct = var7;
-    var7 = function() { // Original name: canMakePayments, environment: var1
+    var7 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -891,7 +891,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.canMakePayments = var7;
-    var7 = function() { // Original name: restorePurchases, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -902,7 +902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.restorePurchases = var7;
-    var7 = function() { // Original name: loadGenericProducts, environment: var1
+    var7 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.all;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var9)(var7);
     var2.default = var6;
     var2.convertToUUID = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: makeIAPRequest, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1187,7 +1187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.makeIAPRequest = var5;
-    var5 = function(arg0) { // Original name: useCanPurchaseIAP, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -1292,7 +1292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useCanPurchaseIAP = var5;
     var2.isStorekit2Available = var4;
     var2.fetchStoreFront = var3;
-    var1 = function() { // Original name: manageSubscription, environment: var1
+    var1 = function() {
         _fun58483: for (var _fun58483_ip = 0;;) switch (_fun58483_ip) {
             case 0:
                 var2 = _closure1_slot13;

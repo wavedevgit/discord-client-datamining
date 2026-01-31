@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var3 = var3.DatePickerAndroid;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: getTheme, environment: var1
+    var3 = function arg0() {
         _fun65372: for (var _fun65372_ip = 0;;) switch (_fun65372_ip) {
             case 0:
                 var0 = arg0;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: getDividerColor, environment: var1
+    var3 = function arg0() {
         _fun65373: for (var _fun65373_ip = 0;;) switch (_fun65373_ip) {
             case 0:
                 var0 = arg0;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: getTextColor, environment: var1
+    var3 = function arg0() {
         _fun65374: for (var _fun65374_ip = 0;;) switch (_fun65374_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: getTitle, environment: var1
+    var3 = function arg0() {
         _fun65375: for (var _fun65375_ip = 0;;) switch (_fun65375_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot8 = var3;
     var3 = var4.memo;
-    var1 = function(arg0) { // Original name: DatePickerWrapper, environment: var1
+    var1 = function arg0() {
         _fun65376: for (var _fun65376_ip = 0;;) switch (_fun65376_ip) {
             case 0:
                 var7 = arg0;

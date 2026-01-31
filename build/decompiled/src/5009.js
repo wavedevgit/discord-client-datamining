@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useContext;
     var _closure1_slot2 = var3;
-    var1 = function() { // Original name: useBottomSheetGestureHandlers, environment: var1
+    var1 = function() {
         _fun45257: for (var _fun45257_ip = 0;;) switch (_fun45257_ip) {
             case 0:
                 var2 = _closure1_slot2;

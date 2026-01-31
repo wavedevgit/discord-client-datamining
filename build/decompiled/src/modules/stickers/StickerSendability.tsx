@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'SENDABLE_WITH_BOOSTED_GUILD';
     var4[var5] = var3;
     var _closure1_slot7 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: getStickerSendability, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun49533: for (var _fun49533_ip = 0;;) switch (_fun49533_ip) {
             case 0:
                 var1 = arg0;

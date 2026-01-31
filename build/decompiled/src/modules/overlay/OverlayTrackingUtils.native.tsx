@@ -19,17 +19,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/overlay/OverlayTrackingUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useOverlayTrackedGames, environment: var1
+    var3 = function() {
         var0 = new Array(0);
         return var0;
     };
     var2.useOverlayTrackedGames = var3;
-    var3 = function() { // Original name: useAnyOverlayRendering, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.useAnyOverlayRendering = var3;
-    var1 = function() { // Original name: useAnyOverlayRenderingLocked, environment: var1
+    var1 = function() {
         var0 = false;
         return var0;
     };

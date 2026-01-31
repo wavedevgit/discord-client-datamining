@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 'forward-modal';
     var2.FORWARD_MODAL_KEY = var3;
-    var3 = function(arg0) { // Original name: openForwardModal, environment: var1
+    var3 = function arg0() {
         _fun70858: for (var _fun70858_ip = 0;;) switch (_fun70858_ip) {
             case 0:
                 var1 = arg0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.openForwardModal = var3;
-    var3 = function() { // Original name: closeForwardModal, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.closeForwardModal = var3;
-    var1 = function(arg0) { // Original name: showForwardFailedAlertModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.message;
         var7 = var0.failedDestinations;

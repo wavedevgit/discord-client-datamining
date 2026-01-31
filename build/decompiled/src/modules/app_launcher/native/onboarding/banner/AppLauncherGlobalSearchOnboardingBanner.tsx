@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GlobalSearchCoachmark, environment: var1
+    var1 = function arg0() {
         _fun107791: for (var _fun107791_ip = 0;;) switch (_fun107791_ip) {
             case 0:
                 var1 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var11.bind(var4)(var1);
                 var2 = var1.Coachmark;
                 var1 = {};
-                var8 = function() { // Original name: renderImgComponent, environment: var5
+                var8 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot4;
                     var1 = {};
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["0TBExc"];
                 var8 = var9.bind(var10)(var8);
                 var1.description = var8;
-                var5 = function() { // Original name: onDismiss, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot0;
                     var1 = {};
                     var0 = _closure1_slot6;

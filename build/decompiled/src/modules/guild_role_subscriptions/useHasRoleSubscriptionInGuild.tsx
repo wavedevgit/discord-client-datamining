@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun49638: for (var _fun49638_ip = 0;;) switch (_fun49638_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun49640: for (var _fun49640_ip = 0;;) switch (_fun49640_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var1 = function(arg0, arg1) { // Original name: computeHasRoleSubscriptionsInGuild, environment: var3
+    var1 = function arg0, arg1() {
         _fun49641: for (var _fun49641_ip = 0;;) switch (_fun49641_ip) {
             case 0:
                 var3 = arg0;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/useHasRoleSubscriptionInGuild.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useHasRoleSubscriptionInGuild, environment: var3
+    var3 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var4 = _closure1_slot0;

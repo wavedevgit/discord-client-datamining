@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/profiles/GuildProfileEmptyState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildProfileEmptyState, environment: var1
+    var1 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var14 = var0.bind(var3)();

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_database/system/StartupData.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getUserId, environment: var1
+    var3 = function() {
         _fun18756: for (var _fun18756_ip = 0;;) switch (_fun18756_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getUserId = var3;
-    var1 = function(arg0) { // Original name: setUserId, environment: var1
+    var1 = function arg0() {
         _fun18757: for (var _fun18757_ip = 0;;) switch (_fun18757_ip) {
             case 0:
                 var3 = arg0;

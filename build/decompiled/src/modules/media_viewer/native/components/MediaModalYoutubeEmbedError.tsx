@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaModalYoutubeEmbedError, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.videoId;
         var _closure2_slot0 = var0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.LLpxJ5;
         var9 = var10.bind(var11)(var9);
         var5.text = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 9;

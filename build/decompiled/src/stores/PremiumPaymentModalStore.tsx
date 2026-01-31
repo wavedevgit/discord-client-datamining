@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun28765: for (var _fun28765_ip = 0;;) switch (_fun28765_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var9 = function(arg0) { // Original name: handleSubscribeFailure, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         _closure1_slot7 = var1;
         var0 = undefined;
         return var0;
     };
-    var8 = function() { // Original name: handleClearError, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot7 = var0;
         var0 = undefined;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PremiumPaymentModalStore, environment: var5
+        var3 = function() {
             _fun28771: for (var _fun28771_ip = 0;;) switch (_fun28771_ip) {
                 case 0:
                     var3 = this;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'paymentError';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGiftCode';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun28773: for (var _fun28773_ip = 0;;) switch (_fun28773_ip) {
                 case 0:
                     var3 = _closure1_slot9;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var1.PREMIUM_PAYMENT_SUBSCRIBE_FAIL = var9;
     var1.PREMIUM_PAYMENT_UPDATE_FAIL = var9;
-    var9 = function() { // Original name: handleSubscribeSuccess, environment: var3
+    var9 = function() {
         var1 = _closure1_slot11;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS = var9;
     var1.PREMIUM_PAYMENT_UPDATE_SUCCESS = var8;
     var1.PREMIUM_PAYMENT_ERROR_CLEAR = var8;
-    var8 = function(arg0) { // Original name: handlePayPalTokenizeFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.message;
         var3 = _closure1_slot0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BRAINTREE_TOKENIZE_PAYPAL_FAIL = var8;
-    var8 = function(arg0) { // Original name: handleVenmoTokenizeFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.message;
         var3 = _closure1_slot0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BRAINTREE_TOKENIZE_VENMO_FAIL = var8;
-    var8 = function(arg0) { // Original name: handleSKUPurchaseSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.giftCode;
         _closure1_slot8 = var2;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SKU_PURCHASE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleSKUPurchaseFail, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         _closure1_slot7 = var1;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SKU_PURCHASE_FAIL = var8;
-    var8 = function(arg0) { // Original name: handleSKUPurchaseAwaitConfirmation, environment: var3
+    var8 = function arg0() {
         _fun28779: for (var _fun28779_ip = 0;;) switch (_fun28779_ip) {
             case 0:
                 var0 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SKU_PURCHASE_AWAIT_CONFIRMATION = var8;
-    var3 = function(arg0) { // Original name: handleGiftCodeCreate, environment: var3
+    var3 = function arg0() {
         _fun28780: for (var _fun28780_ip = 0;;) switch (_fun28780_ip) {
             case 0:
                 var0 = arg0;

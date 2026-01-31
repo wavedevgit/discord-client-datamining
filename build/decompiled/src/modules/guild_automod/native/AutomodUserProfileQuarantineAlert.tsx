@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChatBlockedAlert, environment: var1
+    var0 = function arg0() {
         _fun79204: for (var _fun79204_ip = 0;;) switch (_fun79204_ip) {
             case 0:
                 var2 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: PerServerProfileAlert, environment: var1
+    var0 = function arg0() {
         _fun79205: for (var _fun79205_ip = 0;;) switch (_fun79205_ip) {
             case 0:
                 var7 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var5] = var7;
                 var5 = 'buttonCta';
                 var0[var5] = var6;
-                var5 = function() { // Original name: onConfirm, environment: var4
+                var5 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: ServerTagAlert, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var11 = var2.guildName;
         var1 = _closure1_slot7;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.bind(var6)(var4);
         var4 = 'buttonCta';
         var0[var4] = var5;
-        var5 = function() { // Original name: onConfirm, environment: var4
+        var5 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 19;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_automod/native/AutomodUserProfileQuarantineAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AutomodUserProfileQuarantineAlert, environment: var1
+    var1 = function arg0() {
         _fun79209: for (var _fun79209_ip = 0;;) switch (_fun79209_ip) {
             case 0:
                 var5 = arg0;

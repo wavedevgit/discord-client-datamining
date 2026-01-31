@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/billing/native/subscription/useRestorePurchases.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useRestorePurchases, environment: var1
+    var1 = function() {
         _fun83916: for (var _fun83916_ip = 0;;) switch (_fun83916_ip) {
             case 0:
                 var0 = arguments[0];
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var5;
                 var _closure2_slot1 = var6;
                 var _closure2_slot2 = var6;
-                var0 = function() { // Original name: _restore, environment: var1
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot2;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun83920
                             }
                         case 25:
-                            var1 = function() { // Original name: restore, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure2_slot3;
                                 var2 = var3.apply;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: TypingIndicatorInner, environment: var1
+    var0 = function arg0() {
         _fun89615: for (var _fun89615_ip = 0;;) switch (_fun89615_ip) {
             case 0:
                 var0 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5[var0];
                 var7 = var11.bind(var3)(var6);
                 var6 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: I, environment: var2
+                var2 = function() {
                     _fun89617: for (var _fun89617_ip = 0;;) switch (_fun89617_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var13[var3];
                             var3 = var11.bind(var12)(var3);
                             var16 = var3.springStandard;
-                            var3 = function(arg0) { // Original name: t, environment: var3
+                            var3 = function arg0() {
                                 _fun89618: for (var _fun89618_ip = 0;;) switch (_fun89618_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderTypingIndicator, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot7;
         var3 = _closure1_slot12;
         var2 = {};
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/native/TypingIndicator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TypingIndicator, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var10 = var1.channel;
         var _closure2_slot0 = var10;

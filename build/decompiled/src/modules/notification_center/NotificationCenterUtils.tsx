@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isRemoteAcked = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: incomingFriendRequestLocalItem, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var6 = arg0;
         var1 = _closure1_slot1;
         var5 = _closure1_slot2;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.incomingFriendRequestLocalItem = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: incomingGameFriendRequestLocalItem, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var6 = arg0;
         var1 = _closure1_slot1;
         var5 = _closure1_slot2;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.incomingGameFriendRequestLocalItem = var3;
-    var3 = function(arg0) { // Original name: mobileNativeUpdateAvailableLocalItem, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {
             'acked': false,

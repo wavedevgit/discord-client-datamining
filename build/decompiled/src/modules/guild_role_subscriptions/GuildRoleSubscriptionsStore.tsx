@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun24505: for (var _fun24505_ip = 0;;) switch (_fun24505_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun24508: for (var _fun24508_ip = 0;;) switch (_fun24508_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun24510: for (var _fun24510_ip = 0;;) switch (_fun24510_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: makeGroupListingIndexGuildTag, environment: var4
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: makeGroupListingIndexSubscriptionListingTag, environment: var4
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: makeListingIndexApplicationTag, environment: var4
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: makeListingIndexPlanTag, environment: var4
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: _getSubscriptionGroupListingsForGuild, environment: var4
+    var0 = function arg0() {
         var2 = _closure1_slot9;
         var1 = var2.values;
         var4 = _closure1_slot22;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: saveGroupListing, environment: var4
+    var0 = function arg0() {
         _fun24516: for (var _fun24516_ip = 0;;) switch (_fun24516_ip) {
             case 0:
                 var0 = arg0;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: saveListing, environment: var4
+    var0 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot10;
         var1 = var2.set;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: GuildRoleSubscriptionsStore, environment: var5
+        var3 = function() {
             _fun24523: for (var _fun24523_ip = 0;;) switch (_fun24523_ip) {
                 case 0:
                     var3 = this;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getSubscriptionGroupListingsForGuildFetchState';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun24524: for (var _fun24524_ip = 0;;) switch (_fun24524_ip) {
                 case 0:
                     var2 = _closure1_slot11;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDidFetchListingForSubscriptionPlanId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.has;
             var0 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionGroupListing';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot9;
             var1 = var2.get;
             var0 = arg0;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionGroupListingsForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot26;
             var1 = undefined;
             var0 = arg0;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionGroupListingForSubscriptionListing';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = _closure1_slot9;
             var2 = var3.values;
             var5 = _closure1_slot23;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionListing';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot10;
             var1 = var2.get;
             var0 = arg0;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionListingsForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun24530: for (var _fun24530_ip = 0;;) switch (_fun24530_ip) {
                 case 0:
                     var2 = this;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionListingForPlan';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = _closure1_slot10;
             var2 = var3.values;
             var5 = _closure1_slot25;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionSettings';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot13;
             var0 = arg0;
             var0 = var1[var0];
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionTrial';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot14;
             var0 = arg0;
             var0 = var1[var0];
@@ -789,7 +789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMonetizationRestrictions';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot15;
             var0 = arg0;
             var0 = var1[var0];
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMonetizationRestrictionsFetchState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun24535: for (var _fun24535_ip = 0;;) switch (_fun24535_ip) {
                 case 0:
                     var2 = _closure1_slot16;
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getApplicationIdForGuild';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot17;
             var1 = var2.get;
             var0 = arg0;
@@ -842,7 +842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var15 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function() { // Original name: handleConnectionOpen, environment: var4
+    var9 = function() {
         var2 = _closure1_slot9;
         var1 = var2.clear;
         var1 = var1.bind(var2)();
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CONNECTION_OPEN = var9;
-    var9 = function(arg0) { // Original name: handleUpdateSettings, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.settings;
         var1 = _closure1_slot13;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS = var9;
-    var9 = function(arg0) { // Original name: handleFetchListings, environment: var4
+    var9 = function arg0() {
         _fun24539: for (var _fun24539_ip = 0;;) switch (_fun24539_ip) {
             case 0:
                 var0 = arg0;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS = var9;
-    var9 = function(arg0) { // Original name: handleFetchListingsSuccess, environment: var4
+    var9 = function arg0() {
         _fun24540: for (var _fun24540_ip = 0;;) switch (_fun24540_ip) {
             case 0:
                 var0 = arg0;
@@ -999,7 +999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleFetchListingsFailure, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot11;
@@ -1010,7 +1010,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE = var9;
-    var9 = function(arg0) { // Original name: handleUpdateGroupListing, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.listing;
         var1 = _closure1_slot27;
@@ -1019,7 +1019,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING = var9;
-    var9 = function(arg0) { // Original name: handleDeleteGroupListing, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.groupListingId;
         var1 = _closure1_slot9;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_DELETE_GROUP_LISTING = var9;
-    var9 = function(arg0) { // Original name: handleFetchListingForPlan, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.planId;
         var1 = _closure1_slot12;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN = var9;
-    var9 = function(arg0) { // Original name: handleFetchListingForPlanSuccess, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.groupListing;
         var1 = _closure1_slot27;
@@ -1048,7 +1048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleCreateListing, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var4 = var0.listing;
         var2 = var0.groupListing;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_CREATE_LISTING = var9;
-    var9 = function(arg0) { // Original name: handleUpdateListing, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.listing;
         var1 = _closure1_slot28;
@@ -1069,7 +1069,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING = var9;
-    var9 = function(arg0) { // Original name: handleDeleteListing, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.listingId;
         var1 = _closure1_slot10;
@@ -1078,7 +1078,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_DELETE_LISTING = var9;
-    var9 = function(arg0) { // Original name: handleUpdateSubscriptionTrial, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.subscriptionTrial;
         var1 = _closure1_slot14;
@@ -1088,7 +1088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTION_TRIAL = var9;
-    var9 = function(arg0) { // Original name: handleFetchRestrictions, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot16;
@@ -1099,7 +1099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS = var9;
-    var9 = function(arg0) { // Original name: handleFetchRestrictionsSuccess, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var3 = var0.restrictions;
@@ -1113,7 +1113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleFetchRestrictionsFailure, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var3 = _closure1_slot16;
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE = var9;
-    var4 = function(arg0) { // Original name: handleFetchRestrictionsAborted, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot16;

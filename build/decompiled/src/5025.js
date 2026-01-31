@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.jsx;
     var _closure1_slot4 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetBackgroundContainerComponent, environment: var1
+    var1 = function arg0() {
         _fun45315: for (var _fun45315_ip = 0;;) switch (_fun45315_ip) {
             case 0:
                 var0 = arg0;

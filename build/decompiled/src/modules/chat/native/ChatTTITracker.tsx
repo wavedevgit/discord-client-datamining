@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/native/ChatTTITracker.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChatTTITracker, environment: var1
+    var1 = function arg0() {
         _fun88796: for (var _fun88796_ip = 0;;) switch (_fun88796_ip) {
             case 0:
                 var0 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var0 = 'cached_messages_tti';
                 var8.nativeID = var0;
-                var13 = function(arg0) { // Original name: onMeasurement, environment: var10
+                var13 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 2;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var5 = 'latest_messages_tti';
                 var6.nativeID = var5;
-                var10 = function(arg0) { // Original name: onMeasurement, environment: var10
+                var10 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 2;

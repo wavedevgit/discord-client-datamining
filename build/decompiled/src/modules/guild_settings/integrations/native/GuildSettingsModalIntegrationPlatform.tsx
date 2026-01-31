@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun115411: for (var _fun115411_ip = 0;;) switch (_fun115411_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot18 = var6;
     var6 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: IntegrationItem, environment: var0
+        var4 = function arg0() {
             _fun115415: for (var _fun115415_ip = 0;;) switch (_fun115415_ip) {
                 case 0:
                     var4 = this;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var7 = var7["ETE/oC"];
                                 var7 = var8.bind(var9)(var7);
                                 var0.cancelText = var7;
-                                var7 = function() { // Original name: onConfirm, environment: var4
+                                var7 = function() {
                                     var2 = _closure1_slot1;
                                     var1 = _closure1_slot2;
                                     var0 = 10;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.onConfirm = var7;
-                                var4 = function() { // Original name: onCancel, environment: var4
+                                var4 = function() {
                                     var2 = _closure3_slot0;
                                     var1 = var2.setState;
                                     var0 = {};
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'render';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             _fun115419: for (var _fun115419_ip = 0;;) switch (_fun115419_ip) {
                 case 0:
                     var8 = this;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var9.syncing;
                 case 632:
                     var4.disabled = var12;
-                    var11 = function() { // Original name: onPress, environment: var11
+                    var11 = function() {
                         _fun115420: for (var _fun115420_ip = 0;;) switch (_fun115420_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getDerivedStateFromProps';
         var5.key = var6;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun115421: for (var _fun115421_ip = 0;;) switch (_fun115421_ip) {
                 case 0:
                     var0 = arg0;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/integrations/native/GuildSettingsModalIntegrationPlatform.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsModalIntegrationPlatform, environment: var1
+    var1 = function arg0() {
         _fun115422: for (var _fun115422_ip = 0;;) switch (_fun115422_ip) {
             case 0:
                 var0 = arg0;
@@ -764,7 +764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun115422
                 }
             case 242:
-                var1 = function() { // Original name: onSave, environment: var8
+                var1 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var10.name;
             case 322:
                 var1.title = var6;
-                var6 = function() { // Original name: headerRight, environment: var8
+                var6 = function() {
                     _fun115428: for (var _fun115428_ip = 0;;) switch (_fun115428_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1.headerRight = var6;
                 var1 = var3.bind(var5)(var1);
-                var6 = function() { // Original name: onConectTap, environment: var8
+                var6 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -989,7 +989,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot6;
                     var2.theme = var5;
                     var2.integration = var0;
-                    var1 = function() { // Original name: onPress, environment: var1
+                    var1 = function() {
                         var4 = _closure3_slot0;
                         var3 = _closure2_slot2;
                         var2 = var3.push;

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/calls/native/getPrivateChannelCall.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getPrivateChannelCall, environment: var1
+    var1 = function arg0() {
         _fun72022: for (var _fun72022_ip = 0;;) switch (_fun72022_ip) {
             case 0:
                 var10 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.oCqlGG;
                 var4 = var7.bind(var9)(var1);
             case 330:
-                var1 = function() { // Original name: C, environment: var6
+                var1 = function() {
                     var3 = _closure2_slot2;
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 497:
                 var9 = var7;
             case 500:
-                var1 = function() { // Original name: C, environment: var6
+                var1 = function() {
                     var3 = _closure2_slot3;
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["4ry6yi"];
                 var7 = var9.bind(var10)(var8);
             case 574:
-                var1 = function() { // Original name: C, environment: var6
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 5;

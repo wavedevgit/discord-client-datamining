@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventDetails.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditGuildEventDetails, environment: var1
+    var1 = function arg0() {
         _fun65880: for (var _fun65880_ip = 0;;) switch (_fun65880_ip) {
             case 0:
                 var0 = arg0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.useNavigation;
                 var0 = var0.bind(var1)();
                 var _closure2_slot12 = var0;
-                var0 = function(arg0) { // Original name: handleChangeEvent, environment: var8
+                var0 = function arg0() {
                     var3 = _closure2_slot11;
                     var0 = undefined;
                     var2 = null;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.text = var27;
                 var27 = 'primary';
                 var11.variant = var27;
-                var27 = function() { // Original name: onPress, environment: var8
+                var27 = function() {
                     _fun65889: for (var _fun65889_ip = 0;;) switch (_fun65889_ip) {
                         case 0:
                             var3 = _closure1_slot2;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6.GuildEventTopic;
                 var6 = {};
                 var6.topic = var25;
-                var25 = function(arg0) { // Original name: onChange, environment: var8
+                var25 = function arg0() {
                     var2 = _closure2_slot13;
                     var1 = {};
                     var0 = arg0;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6.GuildEventDatetime;
                 var6 = {};
                 var6.date = var15;
-                var25 = function(arg0) { // Original name: onChange, environment: var8
+                var25 = function arg0() {
                     _fun65891: for (var _fun65891_ip = 0;;) switch (_fun65891_ip) {
                         case 0:
                             var5 = arg0;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var7.GuildEventDatetime;
                 var7 = {};
                 var7.date = var21;
-                var21 = function(arg0) { // Original name: onChange, environment: var8
+                var21 = function arg0() {
                     var3 = arg0;
                     var2 = _closure2_slot13;
                     var1 = {};
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = {};
                 var12.startDate = var15;
                 var12.recurrenceRule = var14;
-                var14 = function(arg0) { // Original name: onRecurrenceChange, environment: var8
+                var14 = function arg0() {
                     _fun65893: for (var _fun65893_ip = 0;;) switch (_fun65893_ip) {
                         case 0:
                             var2 = arg0;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 1262:
                 var5.description = var9;
-                var9 = function(arg0) { // Original name: onChange, environment: var8
+                var9 = function arg0() {
                     var2 = _closure2_slot13;
                     var1 = {};
                     var0 = arg0;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.onChange = var9;
-                var8 = function() { // Original name: onFocus, environment: var8
+                var8 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;

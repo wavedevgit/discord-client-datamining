@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 3;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var10;
-    var10 = function() { // Original name: useDataForQuestsSettingTitle, environment: var8
+    var10 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 3;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useTitle = var10;
     var9 = var9.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS;
     var1.parent = var9;
-    var9 = function() { // Original name: useDataToSupportQuestsSettingValue, environment: var8
+    var9 = function() {
         _fun88507: for (var _fun88507_ip = 0;;) switch (_fun88507_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useValue = var9;
-    var8 = function(arg0) { // Original name: onDataToSupportQuestsSettingValueChange, environment: var8
+    var8 = function arg0() {
         _fun88508: for (var _fun88508_ip = 0;;) switch (_fun88508_ip) {
             case 0:
                 var2 = _closure1_slot3;

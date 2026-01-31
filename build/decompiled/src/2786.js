@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5.value = var0;
             var0 = '__esModule';
             var0 = var6.bind(var7)(var1, var0, var5);
-            var0 = function(arg0, arg1) { // Original name: formatDuration, environment: var3
+            var0 = function arg0, arg1() {
                 _fun22775: for (var _fun22775_ip = 0;;) switch (_fun22775_ip) {
                     case 0:
                         var3 = arg1;

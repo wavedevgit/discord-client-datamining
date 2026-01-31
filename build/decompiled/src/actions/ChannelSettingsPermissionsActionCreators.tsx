@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _updatePermission, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: saveAndClearPermissionUpdates, environment: var3
+    var1 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = function(arg0) { // Environment: var0
             var1 = arg0;
             var _closure3_slot0 = var1;
-            var1 = function() { // Original name: chain, environment: var0
+            var1 = function() {
                 _fun65569: for (var _fun65569_ip = 0;;) switch (_fun65569_ip) {
                     case 0:
                         var1 = _closure2_slot1;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'actions/ChannelSettingsPermissionsActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: updatePermission, environment: var3
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updatePermission = var4;
-    var4 = function(arg0) { // Original name: selectPermission, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.selectPermission = var4;
-    var4 = function(arg0) { // Original name: setAdvancedMode, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setAdvancedMode = var4;
-    var4 = function() { // Original name: init, environment: var3
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.init = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: savePermissionUpdates, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var5 = _closure1_slot5;
         var10 = undefined;
         var9 = arg0;

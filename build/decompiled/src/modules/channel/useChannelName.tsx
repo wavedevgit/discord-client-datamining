@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var6 = function(arg0, arg1, arg2) { // Original name: computeDefaultGroupDmNameFromUserIds, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun44045: for (var _fun44045_ip = 0;;) switch (_fun44045_ip) {
             case 0:
                 var3 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: computeDefaultGroupDmName, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var4 = _closure1_slot8;
         var0 = arg0;
         var3 = var0.recipients;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: computeChannelName, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun44048: for (var _fun44048_ip = 0;;) switch (_fun44048_ip) {
             case 0:
                 var2 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var3 = function(arg0) { // Original name: escapeChannelName, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /\\/g;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/channel/useChannelName.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0) { // Original name: useChannelName, environment: var1
+    var7 = function arg0() {
         _fun44050: for (var _fun44050_ip = 0;;) switch (_fun44050_ip) {
             case 0:
                 var1 = arguments[1];
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var7;
     var2.computeDefaultGroupDmNameFromUserIds = var6;
     var2.computeDefaultGroupDmName = var5;
-    var5 = function(arg0) { // Original name: useComputedGroupDmName, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useComputedGroupDmName = var5;
     var2.computeChannelName = var4;
     var2.escapeChannelName = var3;
-    var1 = function(arg0) { // Original name: unescapeChannelName, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /\\"/g;

@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var1.TurboModuleRegistry;
             var1 = {};
             var6 = {};
-            var10 = function(arg0) { // Original name: parseErrorStack, environment: var4
+            var10 = function arg0() {
                 _fun10182: for (var _fun10182_ip = 0;;) switch (_fun10182_ip) {
                     case 0:
                         var3 = arg0;
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var6.parseErrorStack = var10;
-            var10 = function(arg0, arg1) { // Original name: symbolicateStackTrace, environment: var4
+            var10 = function arg0, arg1() {
                 _fun10183: for (var _fun10183_ip = 0;;) switch (_fun10183_ip) {
                     case 0:
                         var4 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var6.symbolicateStackTrace = var10;
-            var10 = function() { // Original name: getDevServer, environment: var4
+            var10 = function() {
                 _fun10184: for (var _fun10184_ip = 0;;) switch (_fun10184_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var8.bind(var0)(var6);
             var1.Promise = var6;
             var6 = {};
-            var8 = function(arg0, arg1) { // Original name: polyfillGlobal, environment: var4
+            var8 = function arg0, arg1() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 5;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.TurboModuleRegistry = var5;
             var1.AppRegistry = var3;
             var3 = {};
-            var4 = function(arg0) { // Original name: requireNativeComponent, environment: var4
+            var4 = function arg0() {
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var0 = 0;

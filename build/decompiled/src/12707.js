@@ -13,13 +13,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.assertHasLoggerPlugin = var0;
     var2.default = var0;
     var2.hasLoggerPlugin = var0;
-    var3 = function() { // Original name: logger, environment: var1
+    var3 = function() {
         var0 = function(arg0) { // Environment: var0
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
             var1 = {};
-            var3 = function() { // Original name: log, environment: var2
+            var3 = function() {
                 _fun97593: for (var _fun97593_ip = 0;;) switch (_fun97593_ip) {
                     case 0:
                         var0 = undefined;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.log = var3;
-            var3 = function() { // Original name: logImportant, environment: var2
+            var3 = function() {
                 _fun97594: for (var _fun97594_ip = 0;;) switch (_fun97594_ip) {
                     case 0:
                         var0 = undefined;
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.logImportant = var3;
-            var3 = function(arg0) { // Original name: debug, environment: var2
+            var3 = function arg0() {
                 _fun97595: for (var _fun97595_ip = 0;;) switch (_fun97595_ip) {
                     case 0:
                         var4 = undefined;
@@ -171,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.debug = var3;
-            var3 = function(arg0) { // Original name: warn, environment: var2
+            var3 = function arg0() {
                 var4 = _closure3_slot0;
                 var3 = var4.send;
                 var2 = {};
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.warn = var3;
-            var2 = function(arg0, arg1) { // Original name: error, environment: var2
+            var2 = function arg0, arg1() {
                 var4 = _closure3_slot0;
                 var3 = var4.send;
                 var2 = {};
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: hasLoggerPlugin, environment: var1
+    var3 = function arg0() {
         _fun97598: for (var _fun97598_ip = 0;;) switch (_fun97598_ip) {
             case 0:
                 var1 = arg0;
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot0 = var3;
     var2.hasLoggerPlugin = var3;
-    var1 = function(arg0) { // Original name: assertHasLoggerPlugin, environment: var1
+    var1 = function arg0() {
         _fun97599: for (var _fun97599_ip = 0;;) switch (_fun97599_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1) { // Original name: _enhanceEventWithSdkInfo, environment: var1
+    var3 = function arg0, arg1() {
         _fun9063: for (var _fun9063_ip = 0;;) switch (_fun9063_ip) {
             case 0:
                 var0 = arg0;
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
     var2._enhanceEventWithSdkInfo = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createEventEnvelope, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun9064: for (var _fun9064_ip = 0;;) switch (_fun9064_ip) {
             case 0:
                 var6 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createEventEnvelope = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createSessionEnvelope, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun9065: for (var _fun9065_ip = 0;;) switch (_fun9065_ip) {
             case 0:
                 var6 = arg0;
@@ -348,7 +348,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.createSessionEnvelope = var3;
-    var1 = function(arg0, arg1) { // Original name: createSpanEnvelope, environment: var1
+    var1 = function arg0, arg1() {
         _fun9066: for (var _fun9066_ip = 0;;) switch (_fun9066_ip) {
             case 0:
                 var10 = arg0;

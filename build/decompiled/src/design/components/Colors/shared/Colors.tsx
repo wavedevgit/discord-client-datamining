@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: toRGBAString, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = var1.rgba;
         var3 = var0.bind(var1)();
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Colors/shared/Colors.tsx';
     var4 = var5.bind(var6)(var4);
     var2.WCAGContrastRatios = var3;
-    var3 = function(arg0) { // Original name: getContrastingColor, environment: var1
+    var3 = function arg0() {
         _fun27575: for (var _fun27575_ip = 0;;) switch (_fun27575_ip) {
             case 0:
                 var5 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getContrastingColor = var3;
-    var3 = function(arg0, arg1) { // Original name: darkenColor, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.darkenColor = var3;
-    var3 = function(arg0, arg1) { // Original name: brightenColor, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.brightenColor = var3;
-    var1 = function(arg0, arg1) { // Original name: setColorOpacity, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ForumTagContextMenu.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumTagContextMenu, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.tagId;
         var _closure2_slot0 = var1;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var1.bind(var3)(var8);
         var8 = var8.IdIcon;
         var2.IconComponent = var8;
-        var6 = function() { // Original name: action, environment: var6
+        var6 = function() {
             var2 = _closure1_slot0;
             var3 = _closure1_slot1;
             var0 = 4;

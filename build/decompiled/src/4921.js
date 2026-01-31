@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var4;
     var3 = var3.useEffect;
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useScrollableSetter, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun44624: for (var _fun44624_ip = 0;;) switch (_fun44624_ip) {
             case 0:
                 var14 = arg0;

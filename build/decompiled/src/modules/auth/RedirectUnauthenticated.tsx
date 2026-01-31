@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: getRedirectPath, environment: var3
+    var1 = function() {
         _fun107098: for (var _fun107098_ip = 0;;) switch (_fun107098_ip) {
             case 0:
                 var0 = global;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/auth/RedirectUnauthenticated.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: RedirectUnauthenticated, environment: var3
+    var3 = function() {
         var3 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

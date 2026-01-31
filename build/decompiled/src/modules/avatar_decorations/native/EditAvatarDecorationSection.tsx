@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/avatar_decorations/native/EditAvatarDecorationSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun50846: for (var _fun50846_ip = 0;;) switch (_fun50846_ip) {
             case 0:
                 var0 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.flashListRef = var13;
                 var7 = 200;
                 var8.afterMs = var7;
-                var7 = function(arg0) { // Original name: useScrollToInitialIndexOnce, environment: var9
+                var7 = function arg0() {
                     var1 = arg0;
                     var6 = var1.initialScrollIndex;
                     var _closure3_slot0 = var6;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.accessibilityLabel = var8;
                                 var8 = _closure2_slot7;
                                 var2.size = var8;
-                                var8 = function() { // Original name: onPress, environment: var5
+                                var8 = function() {
                                     var2 = _closure2_slot1;
                                     var1 = _closure4_slot0;
                                     var0 = undefined;
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = {};
                                 var6 = _closure2_slot7;
                                 var1.size = var6;
-                                var5 = function() { // Original name: onPress, environment: var5
+                                var5 = function() {
                                     var2 = _closure2_slot1;
                                     var1 = undefined;
                                     var0 = null;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.contentContainerStyle = var10;
                 var10 = 98;
                 var6.estimatedItemSize = var10;
-                var9 = function() { // Original name: ItemSeparatorComponent, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot9;
                     var2 = _closure1_slot5;
                     var1 = {};

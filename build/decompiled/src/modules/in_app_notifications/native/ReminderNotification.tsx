@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.BOTTOM_RIGHT;
     var3.direction = var7;
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: NotificationAvatar, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var13 = var0.user;
         var8 = var0.guildId;

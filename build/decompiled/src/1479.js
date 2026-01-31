@@ -33,21 +33,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var4.bind(var0)(var1);
     var5 = var1.TabActions;
     var4 = {};
-    var1 = function() { // Original name: openDrawer, environment: var3
+    var1 = function() {
         var0 = {};
         var1 = 'OPEN_DRAWER';
         var0.type = var1;
         return var0;
     };
     var4.openDrawer = var1;
-    var1 = function() { // Original name: closeDrawer, environment: var3
+    var1 = function() {
         var0 = {};
         var1 = 'CLOSE_DRAWER';
         var0.type = var1;
         return var0;
     };
     var4.closeDrawer = var1;
-    var1 = function() { // Original name: toggleDrawer, environment: var3
+    var1 = function() {
         var0 = {};
         var1 = 'TOGGLE_DRAWER';
         var0.type = var1;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var1 = var6.bind(var7)(var1, var5, var4);
     var _closure1_slot6 = var1;
-    var3 = function(arg0) { // Original name: DrawerRouter, environment: var3
+    var3 = function arg0() {
         _fun16987: for (var _fun16987_ip = 0;;) switch (_fun16987_ip) {
             case 0:
                 var4 = arg0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var3)(var1);
                 var4 = var1.bind(var3)(var2);
                 var _closure2_slot1 = var4;
-                var1 = function(arg0) { // Original name: isDrawerInHistory, environment: var5
+                var1 = function arg0() {
                     _fun16988: for (var _fun16988_ip = 0;;) switch (_fun16988_ip) {
                         case 0:
                             var0 = global;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot2 = var1;
-                var1 = function(arg0) { // Original name: addDrawerToHistory, environment: var5
+                var1 = function arg0() {
                     _fun16990: for (var _fun16990_ip = 0;;) switch (_fun16990_ip) {
                         case 0:
                             var5 = arg0;
@@ -159,7 +159,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot3 = var1;
-                var1 = function(arg0) { // Original name: removeDrawerFromHistory, environment: var5
+                var1 = function arg0() {
                     _fun16991: for (var _fun16991_ip = 0;;) switch (_fun16991_ip) {
                         case 0:
                             var5 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot4 = var1;
-                var1 = function(arg0) { // Original name: closeDrawer, environment: var5
+                var1 = function arg0() {
                     _fun16993: for (var _fun16993_ip = 0;;) switch (_fun16993_ip) {
                         case 0:
                             var3 = arg0;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = {};
                 var6 = 'drawer';
                 var1.type = var6;
-                var6 = function(arg0) { // Original name: getInitialState, environment: var5
+                var6 = function arg0() {
                     var0 = arg0;
                     var6 = var0.routeNames;
                     var4 = var0.routeParamList;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.getInitialState = var6;
-                var6 = function(arg0, arg1) { // Original name: getRehydratedState, environment: var5
+                var6 = function arg0, arg1() {
                     _fun16995: for (var _fun16995_ip = 0;;) switch (_fun16995_ip) {
                         case 0:
                             var0 = arg0;
@@ -329,7 +329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.getRehydratedState = var6;
-                var6 = function(arg0, arg1) { // Original name: getStateForRouteFocus, environment: var5
+                var6 = function arg0, arg1() {
                     var4 = _closure2_slot1;
                     var3 = var4.getStateForRouteFocus;
                     var2 = arg0;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.getStateForRouteFocus = var6;
-                var5 = function(arg0, arg1, arg2) { // Original name: getStateForAction, environment: var5
+                var5 = function arg0, arg1, arg2() {
                     _fun16997: for (var _fun16997_ip = 0;;) switch (_fun16997_ip) {
                         case 0:
                             var3 = arg0;

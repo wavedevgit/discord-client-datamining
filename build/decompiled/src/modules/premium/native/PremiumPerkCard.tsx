@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/premium/native/PremiumPerkCard.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: PremiumPerkCard, environment: var1
+    var6 = function arg0() {
         _fun59357: for (var _fun59357_ip = 0;;) switch (_fun59357_ip) {
             case 0:
                 var1 = arg0;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.PerkCardTypes = var5;
     var2.PerkCardVariant = var4;
     var2.PERK_CARD_SIZES = var3;
-    var1 = function() { // Original name: usePremiumPerkCard, environment: var1
+    var1 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var1 = 5;

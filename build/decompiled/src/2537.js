@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = function() { // Original name: getDefaultOptions, environment: var1
+    var0 = function() {
         var0 = _closure1_slot0;
         return var0;
     };
     var2.getDefaultOptions = var0;
-    var0 = function(arg0) { // Original name: setDefaultOptions, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         _closure1_slot0 = var0;
         var0 = undefined;

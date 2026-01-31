@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.LogBox;
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: ignoreRequireCycleLogs, environment: var1
+    var1 = function arg0() {
         _fun12826: for (var _fun12826_ip = 0;;) switch (_fun12826_ip) {
             case 0:
                 var1 = arg0;

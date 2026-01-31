@@ -20,12 +20,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var1 = var1.bind(var0)(var4);
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: throttleStateFn, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1) { // Original name: useThrottledFunction, environment: var3
+    var1 = function arg0, arg1() {
         _fun69316: for (var _fun69316_ip = 0;;) switch (_fun69316_ip) {
             case 0:
                 var8 = arg0;

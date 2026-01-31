@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[2] = var14;
     var10[var13] = var12;
     var6.scope = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97967: for (var _fun97967_ip = 0;;) switch (_fun97967_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.OAuth2Scopes;
     var10 = var10.RPC;
     var6.scope = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97968: for (var _fun97968_ip = 0;;) switch (_fun97968_ip) {
             case 0:
                 var0 = arg0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[1] = var14;
     var10[var13] = var12;
     var6.scope = var10;
-    var10 = function() { // Original name: handler, environment: var7
+    var10 = function() {
         _fun97972: for (var _fun97972_ip = 0;;) switch (_fun97972_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.OAuth2Scopes;
     var10 = var10.RPC;
     var6.scope = var10;
-    var10 = function(arg0) { // Original name: validation, environment: var7
+    var10 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97974: for (var _fun97974_ip = 0;;) switch (_fun97974_ip) {
             case 0:
                 var0 = arg0;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11[1] = var13;
     var10[var12] = var11;
     var6.scope = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97979: for (var _fun97979_ip = 0;;) switch (_fun97979_ip) {
             case 0:
                 var0 = arg0;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.OAuth2Scopes;
     var10 = var10.RPC;
     var6.scope = var10;
-    var10 = function(arg0) { // Original name: validation, environment: var7
+    var10 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -912,7 +912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97981: for (var _fun97981_ip = 0;;) switch (_fun97981_ip) {
             case 0:
                 var0 = arg0;
@@ -1214,7 +1214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.OAuth2Scopes;
     var8 = var8.RPC;
     var3.scope = var8;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         var1 = arg0;
         var3 = var1.args;
         var5 = var3.channel_id;

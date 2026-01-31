@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var3;
-    var0 = function(arg0) { // Original name: getDisplayName, environment: var1
+    var0 = function arg0() {
         _fun70153: for (var _fun70153_ip = 0;;) switch (_fun70153_ip) {
             case 0:
                 var1 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/debug/serializeAppStartLogs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: serializeAppStartLogs, environment: var1
+    var1 = function arg0() {
         _fun70154: for (var _fun70154_ip = 0;;) switch (_fun70154_ip) {
             case 0:
                 var2 = arguments[1];
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 115:
                             var13 = _closure2_slot1;
                             var12 = _closure2_slot2;
-                            var1 = function(arg0, arg1, arg2, arg3) { // Original name: joinLogs, environment: var0
+                            var1 = function arg0, arg1, arg2, arg3() {
                                 var2 = arg0;
                                 var4 = arg1;
                                 var1 = arg2;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                 continue _fun70163
                                             }
                                         case 286:
-                                            var12 = function(arg0) { // Original name: isSuperNoisyLog, environment: var12
+                                            var12 = function arg0() {
                                                 var1 = arg0;
                                                 var _closure6_slot0 = var1;
                                                 var2 = ['GET_CONSTANTS', 'CONVERT_CONSTANTS'];
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var15 = var10;
                             var14 = var9;
                             var1 = var16[var1](var15, var14, var13, var12, var11);
-                            var0 = function(arg0, arg1) { // Original name: serializeLogGroup, environment: var0
+                            var0 = function arg0, arg1() {
                                 _fun70157: for (var _fun70157_ip = 0;;) switch (_fun70157_ip) {
                                     case 0:
                                         var10 = arg0;

@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _getDetectedFileSize, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_uploads/DetectedFileSize.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getDetectedFileSize, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot1;
         var2 = var3.apply;

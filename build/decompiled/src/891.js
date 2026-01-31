@@ -20,12 +20,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var4)(var2);
     var _closure1_slot2 = var2;
     var1.SENTRY_BUFFER_FULL_ERROR = var2;
-    var0 = function() { // Original name: makePromiseBuffer, environment: var0
+    var0 = function() {
         _fun9407: for (var _fun9407_ip = 0;;) switch (_fun9407_ip) {
             case 0:
                 var4 = undefined;
                 var3 = undefined;
-                var0 = function(arg0) { // Original name: remove, environment: var1
+                var0 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = var2.delete;
                     var0 = arg0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0 instanceof Object ? var0 : var2;
                 var _closure2_slot1 = var0;
                 var0 = {};
-                var3 = function() { // Original name: get $, environment: var1
+                var3 = function() {
                     var0 = global;
                     var2 = var0.Array;
                     var1 = var2.from;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     set: var4,
                     enumerable: true
                 });
-                var2 = function(arg0) { // Original name: add, environment: var1
+                var2 = function arg0() {
                     _fun9410: for (var _fun9410_ip = 0;;) switch (_fun9410_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.add = var2;
-                var1 = function(arg0) { // Original name: drain, environment: var1
+                var1 = function arg0() {
                     _fun9413: for (var _fun9413_ip = 0;;) switch (_fun9413_ip) {
                         case 0:
                             var2 = arg0;

@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.placeholderEmojiWrapper = var9;
     var1 = var7.bind(var8)(var1);
     var _closure1_slot19 = var1;
-    var1 = function(arg0) { // Original name: WelcomeChannelRow, environment: var3
+    var1 = function arg0() {
         _fun91130: for (var _fun91130_ip = 0;;) switch (_fun91130_ip) {
             case 0:
                 var1 = arg0;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/welcome_screen/native/GuildWelcomeActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildWelcomeActionSheet, environment: var3
+    var3 = function arg0() {
         _fun91135: for (var _fun91135_ip = 0;;) switch (_fun91135_ip) {
             case 0:
                 var1 = arg0;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = {};
                 var22 = var22.name;
                 var18.guildName = var22;
-                var22 = function(arg0, arg1) { // Original name: guildNameHook, environment: var9
+                var22 = function arg0, arg1() {
                     var4 = _closure1_slot17;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = arg0;
                     var1.welcomeChannel = var5;
-                    var0 = function() { // Original name: trackOptionSelect, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot6;
                         var1 = _closure3_slot0;
                         var0 = undefined;

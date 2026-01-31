@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/roadblocks/native/hooks/usePremiumFeatureUpsellGetNitro.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: usePremiumFeatureUpsellGetNitro, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var6 = arg0;
         var7 = arg1;
         var9 = arg2;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun44967: for (var _fun44967_ip = 0;;) switch (_fun44967_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.BaseGesture;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: FlingGesture, environment: var5
+        var3 = function() {
             _fun44971: for (var _fun44971_ip = 0;;) switch (_fun44971_ip) {
                 case 0:
                     var3 = this;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'numberOfPointers';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: numberOfPointers, environment: var5
+        var0 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'direction';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: direction, environment: var5
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;

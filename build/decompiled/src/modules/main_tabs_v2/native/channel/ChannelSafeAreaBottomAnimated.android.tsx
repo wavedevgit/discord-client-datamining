@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelSafeAreaBottom, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.channelId;
         var1 = _closure1_slot1;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var6[var0];
         var10 = var9.bind(var4)(var7);
         var9 = var10.useAnimatedStyle;
-        var7 = function() { // Original name: c, environment: var3
+        var7 = function() {
             var0 = {};
             var2 = _closure2_slot0;
             var1 = var2.get;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = _closure1_slot8;
         var7.__initData = var11;
         var7 = var9.bind(var10)(var7);
-        var3 = function(arg0) { // Original name: useSelfHealingLayoutMonitor, environment: var3
+        var3 = function arg0() {
             var13 = arg0;
             var _closure3_slot0 = var13;
             var7 = _closure1_slot4;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var12[var9];
             var5 = var10.bind(var11)(var3);
             var4 = var5.useAnimatedReaction;
-            var3 = function() { // Original name: s, environment: var0
+            var3 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.get;
                 var2 = var0.bind(var1)();
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.__workletHash = var7;
             var7 = _closure1_slot6;
             var3.__initData = var7;
-            var0 = function(arg0, arg1) { // Original name: l, environment: var0
+            var0 = function arg0, arg1() {
                 _fun90975: for (var _fun90975_ip = 0;;) switch (_fun90975_ip) {
                     case 0:
                         var1 = arg0;

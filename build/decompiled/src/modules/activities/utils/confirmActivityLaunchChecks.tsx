@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: getOrFetchApplicationForLaunch, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _getOrFetchApplicationForLaunch, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _confirmActivityChange, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _confirmActivityAgeGate, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var5 = var6.id;
                                 case 95:
                                     var1.channelId = var5;
-                                    var5 = function() { // Original name: onAgree, environment: var4
+                                    var5 = function() {
                                         var2 = _closure5_slot0;
                                         var1 = undefined;
                                         var0 = true;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var1.onAgree = var5;
-                                    var4 = function() { // Original name: onDisagree, environment: var4
+                                    var4 = function() {
                                         var2 = _closure5_slot0;
                                         var1 = undefined;
                                         var0 = false;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _confirmExternalAppLaunch, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = {};
                                     var5 = _closure4_slot1;
                                     var1.application = var5;
-                                    var5 = function() { // Original name: onConfirm, environment: var4
+                                    var5 = function() {
                                         var2 = _closure5_slot0;
                                         var1 = undefined;
                                         var0 = true;
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var1.onConfirm = var5;
-                                    var4 = function() { // Original name: onCancel, environment: var4
+                                    var4 = function() {
                                         var2 = _closure5_slot0;
                                         var1 = undefined;
                                         var0 = false;
@@ -811,7 +811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: _confirmActivityLaunchChecks, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2.shouldClosePopoutOnLeaveCurrentEmbeddedApplication = var1;
                         var1 = var5.onConfirmActivityLaunchChecksAlertOpen;
                         var2.onConfirmActivityLaunchChecksAlertOpen = var1;
-                        var1 = function() { // Original name: confirmActivityChange, environment: var3
+                        var1 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot9;
                             var2 = var3.apply;
@@ -864,7 +864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = false;
                         return var2;
                     case 80:
-                        var2 = function() { // Original name: confirmActivityAgeGate, environment: var3
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot10;
                             var2 = var3.apply;
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = false;
                         return var6;
                     case 108:
-                        var3 = function() { // Original name: confirmExternalAppLaunch, environment: var3
+                        var3 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot11;
                             var2 = var3.apply;
@@ -971,7 +971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/confirmActivityLaunchChecks.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: confirmActivityLaunchChecks, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;

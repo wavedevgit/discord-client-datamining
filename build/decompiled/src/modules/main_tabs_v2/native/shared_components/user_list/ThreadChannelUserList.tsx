@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot9 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ThreadChannelUserList, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var17 = var0.channelId;
         var _closure2_slot0 = var17;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = true;
                     var2.isNameplatedRow = var5;
                     var2.canShowDisplayNameStylesFont = var5;
-                    var5 = function(arg0) { // Original name: onPress, environment: var5
+                    var5 = function arg0() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 14;

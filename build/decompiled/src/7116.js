@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.NativeEventEmitter;
     var _closure1_slot2 = var3;
-    var3 = function(arg0, arg1) { // Original name: purchaseUpdatedListener, environment: var1
+    var3 = function arg0, arg1() {
         _fun58392: for (var _fun58392_ip = 0;;) switch (_fun58392_ip) {
             case 0:
                 var7 = arg0;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.purchaseUpdatedListener = var3;
-    var3 = function(arg0) { // Original name: purchaseErrorListener, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.purchaseErrorListener = var3;
-    var3 = function(arg0) { // Original name: promotedProductListener, environment: var1
+    var3 = function arg0() {
         _fun58396: for (var _fun58396_ip = 0;;) switch (_fun58396_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.promotedProductListener = var3;
-    var1 = function(arg0) { // Original name: transactionListener, environment: var1
+    var1 = function arg0() {
         _fun58397: for (var _fun58397_ip = 0;;) switch (_fun58397_ip) {
             case 0:
                 var2 = _closure1_slot0;

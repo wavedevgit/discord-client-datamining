@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun81019: for (var _fun81019_ip = 0;;) switch (_fun81019_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot19 = var6;
     var6 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: EditPassword, environment: var5
+        var3 = function arg0() {
             _fun81023: for (var _fun81023_ip = 0;;) switch (_fun81023_ip) {
                 case 0:
                     var5 = this;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentWillUnmount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun81032: for (var _fun81032_ip = 0;;) switch (_fun81032_ip) {
                 case 0: // try_start_0
                     var2 = _closure1_slot1;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getError';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun81033: for (var _fun81033_ip = 0;;) switch (_fun81033_ip) {
                 case 0:
                     var2 = arg0;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun81034: for (var _fun81034_ip = 0;;) switch (_fun81034_ip) {
                 case 0:
                     var16 = this;
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/UserSettingsAccountEditPassword.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: EditPasswordWrapper, environment: var1
+    var1 = function() {
         _fun81035: for (var _fun81035_ip = 0;;) switch (_fun81035_ip) {
             case 0:
                 var4 = _closure1_slot0;

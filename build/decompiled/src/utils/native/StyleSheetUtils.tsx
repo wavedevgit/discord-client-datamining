@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var1);
     var1 = {};
-    var0 = function(arg0, arg1) { // Original name: getStyleProp, environment: var3
+    var0 = function arg0, arg1() {
         _fun44438: for (var _fun44438_ip = 0;;) switch (_fun44438_ip) {
             case 0:
                 var7 = arg0;

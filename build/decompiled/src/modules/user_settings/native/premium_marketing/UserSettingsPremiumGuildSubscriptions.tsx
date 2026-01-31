@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun82473: for (var _fun82473_ip = 0;;) switch (_fun82473_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: UserSettingsPremiumGuildSubscriptions, environment: var5
+        var3 = function arg0() {
             _fun82477: for (var _fun82477_ip = 0;;) switch (_fun82477_ip) {
                 case 0:
                     var4 = this;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun82480: for (var _fun82480_ip = 0;;) switch (_fun82480_ip) {
                 case 0:
                     var0 = this;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderPremiumGuildSubscriptions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun82481: for (var _fun82481_ip = 0;;) switch (_fun82481_ip) {
                 case 0:
                     var0 = this;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun82482: for (var _fun82482_ip = 0;;) switch (_fun82482_ip) {
                 case 0:
                     var15 = this;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/UserSettingsPremiumGuildSubscriptions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedUserSettingsPremiumGuildSubscriptions, environment: var1
+    var1 = function arg0() {
         _fun82483: for (var _fun82483_ip = 0;;) switch (_fun82483_ip) {
             case 0:
                 var0 = arg0;

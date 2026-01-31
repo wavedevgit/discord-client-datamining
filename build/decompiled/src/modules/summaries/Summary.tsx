@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SummarySources = var3;
     var2.SummaryType = var1;
-    var1 = function(arg0, arg1) { // Original name: createSummaryFromServer, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;

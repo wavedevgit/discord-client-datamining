@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CollectiblesShopViewAllCategoryItemsHeader, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.logoUrl;
         var12 = var0.buttonColor;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12["13/7kX"];
         var12 = var13.bind(var14)(var12);
         var8.accessibilityLabel = var12;
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             var1 = _closure2_slot0;
             var0 = var1.goBack;
             var0 = var0.bind(var1)();

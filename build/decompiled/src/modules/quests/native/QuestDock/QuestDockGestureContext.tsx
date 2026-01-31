@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var4 = var7.memo;
-    var1 = function(arg0) { // Original name: QuestDockGestureContextProviderInner, environment: var1
+    var1 = function arg0() {
         _fun46716: for (var _fun46716_ip = 0;;) switch (_fun46716_ip) {
             case 0:
                 var5 = _closure1_slot3;

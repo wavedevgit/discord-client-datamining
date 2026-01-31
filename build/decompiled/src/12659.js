@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var10 = {};
                         var0 = true;
                         var10.enumerable = var0;
-                        var3 = function() { // Original name: get, environment: var1
+                        var3 = function() {
                             var4 = _closure1_slot3;
                             var0 = undefined;
                             var3 = this;
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96932
             }
         case 109:
-            var2 = function(arg0, arg1) { // Original name: assign, environment: var1
+            var2 = function arg0, arg1() {
                 _fun96936: for (var _fun96936_ip = 0;;) switch (_fun96936_ip) {
                     case 0:
                         var12 = undefined;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: TitleWrapper, environment: var1
+    var0 = function arg0() {
         _fun72141: for (var _fun72141_ip = 0;;) switch (_fun72141_ip) {
             case 0:
                 var1 = arg0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: ChannelTitle, environment: var1
+    var0 = function arg0() {
         _fun72143: for (var _fun72143_ip = 0;;) switch (_fun72143_ip) {
             case 0:
                 var0 = arg0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: GroupDMIcon, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.channel;
         var0 = _closure1_slot14;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: UserAvatar, environment: var1
+    var0 = function arg0() {
         _fun72145: for (var _fun72145_ip = 0;;) switch (_fun72145_ip) {
             case 0:
                 var0 = arg0;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var3 = function(arg0, arg1) { // Original name: renderChannelIconRaw, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot20;
         var1 = {};
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var3;
-    var0 = function(arg0) { // Original name: ChannelIconRaw, environment: var1
+    var0 = function arg0() {
         _fun72147: for (var _fun72147_ip = 0;;) switch (_fun72147_ip) {
             case 0:
                 var0 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: ParentChannelSubTitle, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.channel;
         var0 = _closure1_slot14;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: EmptyIcon, environment: var1
+    var0 = function() {
         var1 = _closure1_slot14;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/native/channel/header/ChannelHeaderShared.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: renderTitleWrapper, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot15;
         var1 = {};
@@ -636,7 +636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.renderTitleWrapper = var4;
-    var4 = function(arg0) { // Original name: renderChannelTitle, environment: var1
+    var4 = function arg0() {
         _fun72151: for (var _fun72151_ip = 0;;) switch (_fun72151_ip) {
             case 0:
                 var0 = arguments[1];
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderChannelTitle = var4;
-    var4 = function(arg0) { // Original name: renderGroupDMIcon, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot17;
         var1 = {};
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.renderGroupDMIcon = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: renderUserAvatar, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot18;
         var1 = {};
@@ -705,7 +705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderUserAvatar = var4;
     var2.renderChannelIconRaw = var3;
-    var3 = function(arg0, arg1) { // Original name: renderChannelIcon, environment: var1
+    var3 = function arg0, arg1() {
         _fun72154: for (var _fun72154_ip = 0;;) switch (_fun72154_ip) {
             case 0:
                 var6 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderChannelIcon = var3;
-    var3 = function(arg0, arg1) { // Original name: renderMemberCountText, environment: var1
+    var3 = function arg0, arg1() {
         _fun72155: for (var _fun72155_ip = 0;;) switch (_fun72155_ip) {
             case 0:
                 var10 = arg0;
@@ -845,7 +845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderMemberCountText = var3;
-    var3 = function(arg0) { // Original name: renderParentChannelSubTitle, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot21;
         var1 = {};
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.renderParentChannelSubTitle = var3;
-    var3 = function() { // Original name: renderEmptyIcon, environment: var1
+    var3 = function() {
         var3 = _closure1_slot11;
         var2 = _closure1_slot22;
         var1 = undefined;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.renderEmptyIcon = var3;
-    var1 = function(arg0) { // Original name: EventsActionButton, environment: var1
+    var1 = function arg0() {
         _fun72158: for (var _fun72158_ip = 0;;) switch (_fun72158_ip) {
             case 0:
                 var1 = arg0;

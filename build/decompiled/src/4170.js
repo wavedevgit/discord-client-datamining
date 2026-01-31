@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: hasTagsData, environment: var4
+    var0 = function arg0, arg1() {
         var0 = arg0;
         var1 = var0.length;
         var2 = _closure1_slot8;
@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: parseTags, environment: var4
+    var0 = function arg0() {
         _fun38278: for (var _fun38278_ip = 0;;) switch (_fun38278_ip) {
             case 0:
                 var27 = arg0;
@@ -449,7 +449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var2 = function(arg0) { // Original name: sliceToString, environment: var4
+    var2 = function arg0() {
         var0 = global;
         var1 = var0.String;
         var3 = var1.fromCharCode;
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot11 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: addTag, environment: var4
+    var2 = function arg0, arg1, arg2() {
         _fun38280: for (var _fun38280_ip = 0;;) switch (_fun38280_ip) {
             case 0:
                 var3 = arg0;
@@ -521,7 +521,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var5.bind(var6)(var1, var2, var3);
     var2 = {};
-    var3 = function(arg0, arg1, arg2) { // Original name: read, environment: var4
+    var3 = function arg0, arg1, arg2() {
         _fun38281: for (var _fun38281_ip = 0;;) switch (_fun38281_ip) {
             case 0:
                 var3 = arg0;
@@ -546,7 +546,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun38281
                 }
             case 58:
-                var5 = function(arg0, arg1) { // Original name: readIcc, environment: var0
+                var5 = function arg0, arg1() {
                     _fun38284: for (var _fun38284_ip = 0;;) switch (_fun38284_ip) {
                         case 0:
                             var1 = arg1;
@@ -613,7 +613,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var8 = var9.buffer;
                         case 168:
                             var _closure3_slot3 = var8;
-                            var6 = function(arg0) { // Original name: _loop, environment: var4
+                            var6 = function arg0() {
                                 _fun38286: for (var _fun38286_ip = 0;;) switch (_fun38286_ip) {
                                     case 0:
                                         var6 = arg0;
@@ -726,7 +726,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.bind(var4)(var3, var2);
                 return var4;
             case 73:
-                var0 = function(arg0, arg1) { // Original name: readCompressedIcc, environment: var0
+                var0 = function arg0, arg1() {
                     _fun38282: for (var _fun38282_ip = 0;;) switch (_fun38282_ip) {
                         case 0:
                             var2 = arg1;

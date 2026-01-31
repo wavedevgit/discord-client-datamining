@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/ResourceChannelButtons.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ResourceChannelButtons, environment: var1
+    var1 = function arg0() {
         _fun89627: for (var _fun89627_ip = 0;;) switch (_fun89627_ip) {
             case 0:
                 var0 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.color = var14;
                 var14 = var8.title;
                 var5.text = var14;
-                var14 = function() { // Original name: renderIcon, environment: var10
+                var14 = function() {
                     var3 = _closure1_slot5;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.renderIcon = var14;
-                var14 = function() { // Original name: onPress, environment: var10
+                var14 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.color = var12;
                 var11 = var11.title;
                 var7.text = var11;
-                var11 = function() { // Original name: renderRightIcon, environment: var10
+                var11 = function() {
                     var3 = _closure1_slot5;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var7.renderRightIcon = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 10;

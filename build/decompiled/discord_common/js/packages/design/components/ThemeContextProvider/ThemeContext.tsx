@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = require;
     var2 = exports;
     var9 = dependencyMap;
-    var6 = function(arg0) { // Original name: createThemedContext, environment: var1
+    var6 = function arg0() {
         var1 = arg0;
         var0 = global;
         var2 = var0.JSON;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0[var1] = var2;
         return var0;
     };
-    var5 = function() { // Original name: useThemeContext, environment: var1
+    var5 = function() {
         _fun27280: for (var _fun27280_ip = 0;;) switch (_fun27280_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useThemeContext = var5;
     var2.FALLBACK_THEME_CONTEXT_VALUE = var4;
     var2.ThemeContext = var3;
-    var1 = function(arg0) { // Original name: UseThemeContext, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.children;
         var1 = _closure1_slot4;

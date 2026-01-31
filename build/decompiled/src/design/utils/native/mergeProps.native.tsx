@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: chainCallbacks, environment: var1
+    var3 = function arg0() {
         var2 = 0;
         var1 = copyRestArgs(var2);
         var _closure2_slot0 = var1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/utils/native/mergeProps.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.chainCallbacks = var3;
-    var3 = function(arg0) { // Original name: mergeRefs, environment: var1
+    var3 = function arg0() {
         _fun27228: for (var _fun27228_ip = 0;;) switch (_fun27228_ip) {
             case 0:
                 var2 = 0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.mergeRefs = var3;
-    var1 = function(arg0) { // Original name: mergeProps, environment: var1
+    var1 = function arg0() {
         _fun27230: for (var _fun27230_ip = 0;;) switch (_fun27230_ip) {
             case 0:
                 var17 = 0;

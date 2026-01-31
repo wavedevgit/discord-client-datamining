@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5.value = var0;
             var0 = '__esModule';
             var0 = var6.bind(var7)(var1, var0, var5);
-            var0 = function(arg0) { // Original name: setDefaultOptions, environment: var3
+            var0 = function arg0() {
                 _fun23837: for (var _fun23837_ip = 0;;) switch (_fun23837_ip) {
                     case 0:
                         var10 = arg0;

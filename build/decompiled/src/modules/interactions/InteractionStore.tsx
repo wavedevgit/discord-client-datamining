@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun53886: for (var _fun53886_ip = 0;;) switch (_fun53886_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: markInteractionByNonceCompleted, environment: var5
+    var0 = function arg0() {
         _fun53889: for (var _fun53889_ip = 0;;) switch (_fun53889_ip) {
             case 0:
                 var2 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: deleteNonce, environment: var5
+    var0 = function arg0() {
         _fun53890: for (var _fun53890_ip = 0;;) switch (_fun53890_ip) {
             case 0:
                 var2 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var0)(var4);
     var9 = var4.Store;
     var4 = function(arg0) { // Environment: var5
-        var3 = function() { // Original name: InteractionStore, environment: var5
+        var3 = function() {
             _fun53892: for (var _fun53892_ip = 0;;) switch (_fun53892_ip) {
                 case 0:
                     var3 = this;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot9;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getInteraction';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53894: for (var _fun53894_ip = 0;;) switch (_fun53894_ip) {
                 case 0:
                     var2 = _closure1_slot14;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMessageInteractionStates';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun53895: for (var _fun53895_ip = 0;;) switch (_fun53895_ip) {
                 case 0:
                     var0 = {};
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canQueueInteraction';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun53896: for (var _fun53896_ip = 0;;) switch (_fun53896_ip) {
                 case 0:
                     var4 = arg1;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIFrameModalApplicationId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIFrameModalKey';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7[var4];
     var13 = var8.bind(var0)(var4);
     var4 = {};
-    var10 = function() { // Original name: handleInit, environment: var5
+    var10 = function() {
         var1 = {};
         _closure1_slot13 = var1;
         var1 = {};
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.LOGOUT = var10;
-    var10 = function(arg0) { // Original name: handleInteractionQueue, environment: var5
+    var10 = function arg0() {
         _fun53901: for (var _fun53901_ip = 0;;) switch (_fun53901_ip) {
             case 0:
                 var0 = arg0;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.INTERACTION_QUEUE = var10;
-    var10 = function(arg0) { // Original name: handleInteractionCreate, environment: var5
+    var10 = function arg0() {
         _fun53902: for (var _fun53902_ip = 0;;) switch (_fun53902_ip) {
             case 0:
                 var0 = arg0;
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.INTERACTION_CREATE = var10;
-    var10 = function(arg0) { // Original name: handleInteractionSuccess, environment: var5
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.nonce;
         var1 = _closure1_slot20;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.INTERACTION_SUCCESS = var10;
-    var10 = function(arg0) { // Original name: handleInteractionFailure, environment: var5
+    var10 = function arg0() {
         _fun53904: for (var _fun53904_ip = 0;;) switch (_fun53904_ip) {
             case 0:
                 var0 = arg0;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.INTERACTION_FAILURE = var10;
-    var10 = function(arg0) { // Original name: handleMessageCreate, environment: var5
+    var10 = function arg0() {
         _fun53905: for (var _fun53905_ip = 0;;) switch (_fun53905_ip) {
             case 0:
                 var0 = arg0;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.MESSAGE_CREATE = var10;
-    var10 = function(arg0) { // Original name: handleChannelSelect, environment: var5
+    var10 = function arg0() {
         _fun53906: for (var _fun53906_ip = 0;;) switch (_fun53906_ip) {
             case 0:
                 var0 = arg0;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.CHANNEL_SELECT = var10;
-    var10 = function(arg0) { // Original name: handleIFrameModalCreate, environment: var5
+    var10 = function arg0() {
         var1 = arg0;
         var0 = var1.application;
         var2 = var1.nonce;
@@ -829,14 +829,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.INTERACTION_IFRAME_MODAL_CREATE = var10;
-    var10 = function() { // Original name: handleIFrameModalClose, environment: var5
+    var10 = function() {
         var0 = undefined;
         _closure1_slot16 = var0;
         _closure1_slot17 = var0;
         return var0;
     };
     var4.INTERACTION_IFRAME_MODAL_CLOSE = var10;
-    var10 = function(arg0) { // Original name: handleIFrameModalKeyCreate, environment: var5
+    var10 = function arg0() {
         var0 = arg0;
         var1 = var0.modalKey;
         _closure1_slot16 = var1;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.INTERACTION_IFRAME_MODAL_KEY_CREATE = var10;
-    var10 = function(arg0) { // Original name: handleInteractionModalCreate, environment: var5
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.nonce;
         var1 = _closure1_slot20;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.INTERACTION_MODAL_CREATE = var10;
-    var5 = function(arg0) { // Original name: handleEmbeddedActivityUpdateV2, environment: var5
+    var5 = function arg0() {
         _fun53911: for (var _fun53911_ip = 0;;) switch (_fun53911_ip) {
             case 0:
                 var1 = arg0;

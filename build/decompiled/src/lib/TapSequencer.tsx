@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot2;
-        var2 = function(arg0) { // Original name: TapSequencer, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot1;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'setTapSequenceHandlers';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.tapSequenceHandlers = var1;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun104627: for (var _fun104627_ip = 0;;) switch (_fun104627_ip) {
                 case 0:
                     var0 = this;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'progressState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun104628: for (var _fun104628_ip = 0;;) switch (_fun104628_ip) {
                 case 0:
                     var2 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handlePress';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun104629: for (var _fun104629_ip = 0;;) switch (_fun104629_ip) {
                 case 0:
                     var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.TapSequencerPressType = var4;
     var2.TapSequencer = var3;
-    var1 = function(arg0) { // Original name: useTapSequencer, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot3;

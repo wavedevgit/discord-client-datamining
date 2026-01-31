@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var1 = function(arg0, arg1, arg2) { // Original name: usePremiumUpsellConfig, environment: var3
+    var1 = function arg0, arg1, arg2() {
         _fun61351: for (var _fun61351_ip = 0;;) switch (_fun61351_ip) {
             case 0:
                 var4 = arg0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.jsx;
     var _closure1_slot10 = var4;
     var4 = {};
-    var5 = function(arg0) { // Original name: handleShowUpsellAlert, environment: var3
+    var5 = function arg0() {
         _fun61355: for (var _fun61355_ip = 0;;) switch (_fun61355_ip) {
             case 0:
                 var3 = arg0;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var0)(var1);
                 var2 = var3.openLazy;
                 var1 = {};
-                var4 = function() { // Original name: importer, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot2;
                     var1 = 15;
@@ -816,7 +816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'utils/native/PremiumUpsellUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
-    var3 = function() { // Original name: getUpsellItems, environment: var3
+    var3 = function() {
         var1 = {};
         var0 = _closure1_slot7;
         var0 = var0.GLOBAL_EMOJI;

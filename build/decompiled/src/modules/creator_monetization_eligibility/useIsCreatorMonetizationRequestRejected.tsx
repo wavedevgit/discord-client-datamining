@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/useIsCreatorMonetizationRequestRejected.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useIsCreatorMonetizationRequestRejected, environment: var1
+    var1 = function arg0() {
         _fun116496: for (var _fun116496_ip = 0;;) switch (_fun116496_ip) {
             case 0:
                 var1 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 84:
                 var2 = var1.can_reapply_at;
             case 92:
-                var1 = function(arg0) { // Original name: getRequestCooldown, environment: var1
+                var1 = function arg0() {
                     _fun116497: for (var _fun116497_ip = 0;;) switch (_fun116497_ip) {
                         case 0:
                             var4 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var4 / var1;
                             var4 = var2.bind(var3)(var1);
                             var _closure3_slot0 = var4;
-                            var6 = function(arg0) { // Original name: roundByInterval, environment: var0
+                            var6 = function arg0() {
                                 var0 = global;
                                 var2 = var0.Math;
                                 var1 = var2.round;

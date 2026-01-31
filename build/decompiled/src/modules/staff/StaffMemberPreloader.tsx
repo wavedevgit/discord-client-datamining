@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/staff/StaffMemberPreloader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: preloadStaffMembers, environment: var1
+    var1 = function() {
         _fun114197: for (var _fun114197_ip = 0;;) switch (_fun114197_ip) {
             case 0:
                 var2 = _closure1_slot3;

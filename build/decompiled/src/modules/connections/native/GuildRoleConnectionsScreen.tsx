@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/connections/native/GuildRoleConnectionsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleConnectionsScreen, environment: var1
+    var1 = function arg0() {
         _fun77776: for (var _fun77776_ip = 0;;) switch (_fun77776_ip) {
             case 0:
                 var1 = arg0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var2.bind(var3)(var1);
                             var _closure3_slot1 = var5;
                             var2 = var0.id;
-                            var1 = function(arg0) { // Original name: getIconsForConnectionRole, environment: var7
+                            var1 = function arg0() {
                                 _fun77786: for (var _fun77786_ip = 0;;) switch (_fun77786_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var8 = 'button';
                             var1.accessibilityRole = var8;
-                            var8 = function(arg0) { // Original name: style, environment: var7
+                            var8 = function arg0() {
                                 _fun77790: for (var _fun77790_ip = 0;;) switch (_fun77790_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var1.style = var8;
-                            var7 = function() { // Original name: onPress, environment: var7
+                            var7 = function() {
                                 _fun77791: for (var _fun77791_ip = 0;;) switch (_fun77791_ip) {
                                     case 0:
                                         var0 = _closure3_slot1;
@@ -736,7 +736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         _fun77791_ip = 164;
                                         continue _fun77791;
                                     case 147:
-                                        var1 = function(arg0, arg1) { // Original name: renderLeaveRoleActionSheet, environment: var0
+                                        var1 = function arg0, arg1() {
                                             var1 = arg0;
                                             var _closure5_slot0 = var1;
                                             var0 = arg1;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             var1 = 'LeaveConnectionRoleActionSheet-';
                                             var2 = var2.bind(var1)(var7);
                                             var1 = {};
-                                            var6 = function() { // Original name: onLeaveRolePressed, environment: var6
+                                            var6 = function() {
                                                 var2 = _closure1_slot1;
                                                 var3 = _closure1_slot2;
                                                 var0 = 17;

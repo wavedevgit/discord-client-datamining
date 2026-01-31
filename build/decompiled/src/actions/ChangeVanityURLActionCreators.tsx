@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: openModal, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openModal = var6;
-    var6 = function() { // Original name: closeModal, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.closeModal = var6;
-    var6 = function(arg0) { // Original name: removeVanityURL, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeVanityURL = var6;
-    var6 = function(arg0, arg1) { // Original name: changeVanityURL, environment: var3
+    var6 = function arg0, arg1() {
         var1 = this;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot1;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.changeVanityURL = var6;
-    var3 = function(arg0, arg1) { // Original name: setVanityURL, environment: var3
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 2;

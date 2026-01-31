@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0) { // Original name: _isStreaming, environment: var1
+    var0 = function arg0() {
         _fun50815: for (var _fun50815_ip = 0;;) switch (_fun50815_ip) {
             case 0:
                 var2 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/isStreaming.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isStreaming, environment: var1
+    var1 = function arg0() {
         _fun50816: for (var _fun50816_ip = 0;;) switch (_fun50816_ip) {
             case 0:
                 var4 = arg0;

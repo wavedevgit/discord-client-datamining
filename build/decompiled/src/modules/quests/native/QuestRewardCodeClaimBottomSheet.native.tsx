@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: QuestRewardCodeClaimBottomSheet, environment: var1
+    var0 = function arg0() {
         _fun78381: for (var _fun78381_ip = 0;;) switch (_fun78381_ip) {
             case 0:
                 var0 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.MSaeTe;
                                 var3 = var4.bind(var5)(var3);
                                 var0.content = var3;
-                                var3 = function() { // Original name: icon, environment: var3
+                                var3 = function() {
                                     var3 = _closure1_slot8;
                                     var1 = _closure1_slot0;
                                     var2 = _closure1_slot2;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestRewardCodeClaimBottomSheet.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestRewardCodeClaimBottomSheetConnected, environment: var1
+    var1 = function arg0() {
         _fun78390: for (var _fun78390_ip = 0;;) switch (_fun78390_ip) {
             case 0:
                 var0 = arg0;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.questContent = var9;
                 var0.questContentPosition = var8;
                 var0.sourceQuestContent = var7;
-                var6 = function() { // Original name: children, environment: var6
+                var6 = function() {
                     var3 = _closure1_slot8;
                     var2 = _closure1_slot11;
                     var1 = {};

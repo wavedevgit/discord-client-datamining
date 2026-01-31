@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: paramPattern, environment: var3
+    var0 = function arg0, arg1() {
         _fun27852: for (var _fun27852_ip = 0;;) switch (_fun27852_ip) {
             case 0:
                 var0 = arguments[2];
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.StaticChannelRoutes;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function() { // Original name: guildId, environment: var3
+    var6 = function() {
         _fun27853: for (var _fun27853_ip = 0;;) switch (_fun27853_ip) {
             case 0:
                 var0 = arguments[0];
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.guildId = var6;
-    var3 = function() { // Original name: channelId, environment: var3
+    var3 = function() {
         _fun27854: for (var _fun27854_ip = 0;;) switch (_fun27854_ip) {
             case 0:
                 var0 = arguments[0];

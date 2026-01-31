@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun64839: for (var _fun64839_ip = 0;;) switch (_fun64839_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: resetStateForEvent, environment: var3
+    var0 = function arg0() {
         var2 = arg0;
         var0 = {};
         var4 = _closure1_slot11;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: UpcomingEventNoticesStore, environment: var5
+        var3 = function() {
             _fun64844: for (var _fun64844_ip = 0;;) switch (_fun64844_ip) {
                 case 0:
                     var3 = this;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun64845: for (var _fun64845_ip = 0;;) switch (_fun64845_ip) {
                 case 0:
                     var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildEventNoticeDismissalTime';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot11;
             var0 = arg0;
             var0 = var1[var0];
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllEventDismissals';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUpcomingNoticeSeenTime';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var0 = var1[var0];
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllUpcomingNoticeSeenTimes';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = {};
             var2 = _closure1_slot11;
             var0.upcomingEventDismissals = var2;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleHideNotice, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.eventId;
         var1 = {};
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.UPCOMING_GUILD_EVENT_NOTICE_HIDE = var8;
-    var8 = function(arg0) { // Original name: handleEventUpdate, environment: var3
+    var8 = function arg0() {
         _fun64852: for (var _fun64852_ip = 0;;) switch (_fun64852_ip) {
             case 0:
                 var0 = arg0;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_SCHEDULED_EVENT_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleEventDelete, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.guildScheduledEvent;
         var2 = _closure1_slot14;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_SCHEDULED_EVENT_DELETE = var8;
-    var8 = function(arg0) { // Original name: handleMaybeHideNewEventNotice, environment: var3
+    var8 = function arg0() {
         _fun64854: for (var _fun64854_ip = 0;;) switch (_fun64854_ip) {
             case 0:
                 var0 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_SCHEDULED_EVENT_USER_ADD = var8;
-    var3 = function(arg0) { // Original name: handleMarkUpcomingNoticeAsSeen, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.guildEventId;
         var1 = {};

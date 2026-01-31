@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: normalizePath, environment: var1
+    var0 = function arg0() {
         _fun32853: for (var _fun32853_ip = 0;;) switch (_fun32853_ip) {
             case 0:
                 var1 = arg0;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var3 = function(arg0) { // Original name: removeExecutablePathPrefix, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/game_detection/GameAnalyticsUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.removeExecutablePathPrefix = var3;
-    var3 = function(arg0) { // Original name: getRunningGameAnalytics, environment: var1
+    var3 = function arg0() {
         _fun32855: for (var _fun32855_ip = 0;;) switch (_fun32855_ip) {
             case 0:
                 var5 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRunningGameAnalytics = var3;
-    var1 = function(arg0, arg1) { // Original name: isVerifiedGameExecutable, environment: var1
+    var1 = function arg0, arg1() {
         _fun32856: for (var _fun32856_ip = 0;;) switch (_fun32856_ip) {
             case 0:
                 var5 = arg0;

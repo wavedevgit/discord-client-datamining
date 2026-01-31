@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun15441: for (var _fun15441_ip = 0;;) switch (_fun15441_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun15444: for (var _fun15444_ip = 0;;) switch (_fun15444_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun15446: for (var _fun15446_ip = 0;;) switch (_fun15446_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: getExistingSettings, environment: var3
+    var0 = function() {
         _fun15447: for (var _fun15447_ip = 0;;) switch (_fun15447_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: updateExistingSettings, environment: var3
+    var0 = function() {
         var2 = _closure1_slot13;
         var0 = undefined;
         var0 = var2.bind(var0)();
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: UserSettingsOverridesStore, environment: var5
+        var3 = function() {
             _fun15450: for (var _fun15450_ip = 0;;) switch (_fun15450_ip) {
                 case 0:
                     var3 = this;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun15451: for (var _fun15451_ip = 0;;) switch (_fun15451_ip) {
                 case 0:
                     var1 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAppliedOverrideReasonKey';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun15453: for (var _fun15453_ip = 0;;) switch (_fun15453_ip) {
                 case 0:
                     var1 = _closure1_slot8;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverride';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot8;
             var0 = arg0;
             var0 = var1[var0];
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleUserSettingsProtoUpdate, environment: var3
+    var8 = function() {
         _fun15456: for (var _fun15456_ip = 0;;) switch (_fun15456_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_PROTO_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleApplySettingsOverride, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.settings;
         var1 = {};
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_OVERRIDE_APPLY = var8;
-    var8 = function(arg0) { // Original name: handleClearSettingsOverride, environment: var3
+    var8 = function arg0() {
         _fun15458: for (var _fun15458_ip = 0;;) switch (_fun15458_ip) {
             case 0:
                 var2 = _closure1_slot11;
@@ -646,14 +646,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_OVERRIDE_CLEAR = var8;
-    var8 = function() { // Original name: handleLogOut, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot8 = var0;
         var0 = undefined;
         return var0;
     };
     var1.LOGOUT = var8;
-    var3 = function() { // Original name: handleLogInSuccess, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot8 = var0;
         var0 = undefined;

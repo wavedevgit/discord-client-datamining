@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = false;
     var _closure1_slot2 = var4;
     var2.isNativePlatformSupported = var3;
-    var3 = function() { // Original name: enableScreens, environment: var1
+    var3 = function() {
         _fun37194: for (var _fun37194_ip = 0;;) switch (_fun37194_ip) {
             case 0:
                 var0 = undefined;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.enableScreens = var3;
-    var3 = function() { // Original name: enableFreeze, environment: var1
+    var3 = function() {
         _fun37195: for (var _fun37195_ip = 0;;) switch (_fun37195_ip) {
             case 0:
                 var0 = undefined;
@@ -102,12 +102,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.enableFreeze = var3;
-    var3 = function() { // Original name: screensEnabled, environment: var1
+    var3 = function() {
         var0 = _closure1_slot1;
         return var0;
     };
     var2.screensEnabled = var3;
-    var1 = function() { // Original name: freezeEnabled, environment: var1
+    var1 = function() {
         var0 = _closure1_slot2;
         return var0;
     };

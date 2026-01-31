@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var6;
     var3 = var3.Permissions;
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: getHasAutomodAccess, environment: var1
+    var3 = function arg0() {
         _fun109126: for (var _fun109126_ip = 0;;) switch (_fun109126_ip) {
             case 0:
                 var2 = arguments[1];
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_automod/PermissionUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: canCurrentUserManageMessageFilters, environment: var1
+    var3 = function arg0() {
         _fun109127: for (var _fun109127_ip = 0;;) switch (_fun109127_ip) {
             case 0:
                 var3 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canCurrentUserManageMessageFilters = var3;
-    var3 = function(arg0) { // Original name: canCurrentUserManageAutomod, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot6;
         var1 = undefined;
         var0 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.canCurrentUserManageAutomod = var3;
-    var3 = function(arg0) { // Original name: useCanCurrentUserManageAutomod, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanCurrentUserManageAutomod = var3;
-    var1 = function(arg0) { // Original name: useIsUserProfileRuleEnabled, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

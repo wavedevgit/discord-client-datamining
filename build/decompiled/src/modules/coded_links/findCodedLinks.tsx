@@ -10,7 +10,7 @@ case 0:
             var _closure1_slot0 = var10;
             var _closure1_slot1 = var17;
             var _closure1_slot2 = var11;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+            var0 = function arg0, arg1() {
                 _fun28187: for(var _fun28187_ip = 0; ; ) switch(_fun28187_ip) {
 case 0:
                     var2 = arg0;
@@ -153,7 +153,7 @@ case 343:
                 }
             };
             var _closure1_slot28 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+            var0 = function arg0, arg1() {
                 _fun28189: for(var _fun28189_ip = 0; ; ) switch(_fun28189_ip) {
 case 0:
                     var3 = arg0;
@@ -186,7 +186,7 @@ case 70:
                 }
             };
             var _closure1_slot29 = var0;
-            var15 = function(arg0) { // Original name: getHost, environment: var1
+            var15 = function arg0() {
                 _fun28190: for(var _fun28190_ip = 0; ; ) switch(_fun28190_ip) {
 case 0:
                     var4 = arg0;
@@ -224,7 +224,7 @@ case 110:
                     return var0;
                 }
             };
-            var0 = function(arg0, arg1) { // Original name: isHostMatch, environment: var1
+            var0 = function arg0, arg1() {
                 _fun28191: for(var _fun28191_ip = 0; ; ) switch(_fun28191_ip) {
 case 0:
                     var0 = arg1;
@@ -246,7 +246,7 @@ case 49:
                 }
             };
             var _closure1_slot30 = var0;
-            var0 = function(arg0, arg1) { // Original name: remainingPathFromHostMatch, environment: var1
+            var0 = function arg0, arg1() {
                 _fun28192: for(var _fun28192_ip = 0; ; ) switch(_fun28192_ip) {
 case 0:
                     var1 = arg0;
@@ -292,7 +292,7 @@ case 111:
                 }
             };
             var _closure1_slot31 = var0;
-            var5 = function(arg0) { // Original name: getPathsFromURL, environment: var1
+            var5 = function arg0() {
                 _fun28193: for(var _fun28193_ip = 0; ; ) switch(_fun28193_ip) {
 case 0:
                     var1 = _closure1_slot35;
@@ -349,7 +349,7 @@ case 178:
                 }
             };
             var _closure1_slot32 = var5;
-            var8 = function(arg0) { // Original name: findCodedLinks, environment: var1
+            var8 = function arg0() {
                 _fun28194: for(var _fun28194_ip = 0; ; ) switch(_fun28194_ip) {
 case 0:
                     var7 = arg0;
@@ -420,7 +420,7 @@ case 173:
                     var5 = 0;
                     if(!(var5 !== var4)) { _fun28194_ip = 241; continue _fun28194 }
 case 184:
-                    var4 = function(arg0) { // Original name: _loop, environment: var3
+                    var4 = function arg0() {
                         _fun28196: for(var _fun28196_ip = 0; ; ) switch(_fun28196_ip) {
 case 0:
                             var8 = arg0;
@@ -443,7 +443,7 @@ case 77:
                             var0 = var6.pathname;
                             if(!(var5 != var0)) { _fun28196_ip = 2175; continue _fun28196 }
 case 90:
-                            var4 = function(arg0, arg1) { // Original name: add, environment: var11
+                            var4 = function arg0, arg1() {
                                 _fun28197: for(var _fun28197_ip = 0; ; ) switch(_fun28197_ip) {
 case 0:
                                     var3 = arg1;
@@ -1082,7 +1082,7 @@ case 247:
                 }
             };
             var _closure1_slot33 = var8;
-            var4 = function(arg0) { // Original name: parseQuestsEmbedCode, environment: var1
+            var4 = function arg0() {
                 _fun28199: for(var _fun28199_ip = 0; ; ) switch(_fun28199_ip) {
 case 0:
                     var3 = _closure1_slot32;
@@ -1120,7 +1120,7 @@ case 86:
                 }
             };
             var _closure1_slot34 = var4;
-            var3 = function(arg0) { // Original name: parseURLSafely, environment: var1
+            var3 = function arg0() {
                 _fun28200: for(var _fun28200_ip = 0; ; ) switch(_fun28200_ip) {
 case 0:
                     var0 = arg0;
@@ -1316,7 +1316,7 @@ case 855:
             var6 = new var29[var15](var28, var27, var26);
             var6 = var6 instanceof Object ? var6 : var13;
             var _closure1_slot25 = var6;
-            var6 = function(arg0) { // Original name: stripMarkdownLinkSyntax, environment: var1
+            var6 = function arg0() {
                 var3 = arg0;
                 var2 = var3.replaceAll;
                 var1 = _closure1_slot27;
@@ -1378,7 +1378,7 @@ case 1088:
             var2.default = var8;
             var2.DEVLINK_REGEX = var7;
             var2.stripMarkdownLinkSyntax = var6;
-            var6 = function(arg0) { // Original name: remainingPathFromDiscordHostMatch, environment: var1
+            var6 = function arg0() {
                 _fun28202: for(var _fun28202_ip = 0; ; ) switch(_fun28202_ip) {
 case 0:
                     var4 = arg0;
@@ -1416,7 +1416,7 @@ case 96:
             };
             var2.remainingPathFromDiscordHostMatch = var6;
             var2.getPathsFromURL = var5;
-            var5 = function(arg0) { // Original name: isSuspiciousCodedLink, environment: var1
+            var5 = function arg0() {
                 _fun28203: for(var _fun28203_ip = 0; ; ) switch(_fun28203_ip) {
 case 0:
                     var1 = arg0;
@@ -1497,7 +1497,7 @@ case 219:
             var2.isSuspiciousCodedLink = var5;
             var2.parseQuestsEmbedCode = var4;
             var2.parseURLSafely = var3;
-            var1 = function(arg0) { // Original name: findCodedLink, environment: var1
+            var1 = function arg0() {
                 var2 = _closure1_slot33;
                 var1 = undefined;
                 var0 = arg0;

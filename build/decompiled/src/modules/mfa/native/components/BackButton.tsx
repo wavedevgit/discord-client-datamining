@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/components/BackButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BackButton, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.props;
         var _closure2_slot0 = var0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.Tot4EC;
         var5 = var6.bind(var7)(var5);
         var0.text = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var4 = _closure2_slot1;
             var3 = var4.push;
             var5 = _closure1_slot0;

@@ -7,7 +7,7 @@ var5 = require;
         var0 = metroImportDefault;
         var _closure1_slot1 = var0;
         var _closure1_slot2 = var6;
-        var0 = function(arg0) { // Original name: extractSingleFontFamily, environment: var1
+        var0 = function arg0() {
             _fun48373: for(var _fun48373_ip = 0; ; ) switch(_fun48373_ip) {
 case 0:
                 var4 = arg0;
@@ -31,7 +31,7 @@ case 65:
             }
         };
         var _closure1_slot11 = var0;
-        var3 = function(arg0) { // Original name: extractFont, environment: var1
+        var3 = function arg0() {
             _fun48374: for(var _fun48374_ip = 0; ; ) switch(_fun48374_ip) {
 case 0:
                 var0 = arg0;
@@ -154,7 +154,7 @@ case 470:
             }
         };
         var _closure1_slot12 = var3;
-        var0 = function(arg0) { // Original name: getChild, environment: var1
+        var0 = function arg0() {
             _fun48375: for(var _fun48375_ip = 0; ; ) switch(_fun48375_ip) {
 case 0:
                 var6 = arg0;
@@ -212,7 +212,7 @@ case 63:
         var _closure1_slot9 = var4;
         var4 = {};
         var _closure1_slot10 = var4;
-        var4 = function(arg0, arg1) { // Original name: extractText, environment: var1
+        var4 = function arg0, arg1() {
             _fun48376: for(var _fun48376_ip = 0; ; ) switch(_fun48376_ip) {
 case 0:
                 var5 = arg0;
@@ -316,7 +316,7 @@ case 221:
         };
         var2.default = var4;
         var2.extractFont = var3;
-        var1 = function(arg0) { // Original name: setTSpan, environment: var1
+        var1 = function arg0() {
             var0 = arg0;
             var _closure1_slot3 = var0;
             var0 = undefined;

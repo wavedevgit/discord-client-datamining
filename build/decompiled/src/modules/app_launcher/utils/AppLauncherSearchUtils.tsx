@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var27;
     var _closure1_slot2 = var26;
     var _closure1_slot3 = var25;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun107351: for (var _fun107351_ip = 0;;) switch (_fun107351_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun107353: for (var _fun107353_ip = 0;;) switch (_fun107353_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var22 = function(arg0) { // Original name: useApplicationsInContext, environment: var1
+    var22 = function arg0() {
         _fun107354: for (var _fun107354_ip = 0;;) switch (_fun107354_ip) {
             case 0:
                 var0 = arg0;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var22;
-    var21 = function(arg0) { // Original name: useApplicationCommandsInContext, environment: var1
+    var21 = function arg0() {
         _fun107356: for (var _fun107356_ip = 0;;) switch (_fun107356_ip) {
             case 0:
                 var1 = arg0;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot1 = var3;
                             var1 = {};
                             var _closure3_slot2 = var1;
-                            var5 = function() { // Original name: _loop, environment: var8
+                            var5 = function() {
                                 _fun107359: for (var _fun107359_ip = 0;;) switch (_fun107359_ip) {
                                     case 0:
                                         var5 = _closure1_slot8;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var21;
-    var20 = function(arg0) { // Original name: filterApplicationAllowed, environment: var1
+    var20 = function arg0() {
         _fun107361: for (var _fun107361_ip = 0;;) switch (_fun107361_ip) {
             case 0:
                 var5 = arg0;
@@ -1026,7 +1026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var20;
-    var19 = function(arg0) { // Original name: defaultApplicationBucketing, environment: var1
+    var19 = function arg0() {
         var3 = arg0;
         var0 = _closure1_slot22;
         var2 = undefined;
@@ -1045,7 +1045,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var19;
-    var18 = function(arg0) { // Original name: bucketApplicationNameStartsWith, environment: var1
+    var18 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1070,7 +1070,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var18;
-    var17 = function(arg0) { // Original name: bucketApplicationNameContains, environment: var1
+    var17 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1095,7 +1095,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var17;
-    var16 = function(arg0) { // Original name: bucketApplicationDescriptionStartsWith, environment: var1
+    var16 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1148,7 +1148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var16;
-    var15 = function(arg0) { // Original name: bucketApplicationDescriptionContains, environment: var1
+    var15 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1201,7 +1201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var15;
-    var14 = function(arg0, arg1) { // Original name: sortApplicationFreceny, environment: var1
+    var14 = function arg0, arg1() {
         var3 = _closure1_slot11;
         var2 = var3.getScoreWithoutLoadingLatest;
         var1 = arg0;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var14;
-    var13 = function(arg0, arg1) { // Original name: sortApplicationAlpha, environment: var1
+    var13 = function arg0, arg1() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot3;
         var1 = 10;
@@ -1236,7 +1236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var13;
-    var12 = function(arg0) { // Original name: filterCommandAllowed, environment: var1
+    var12 = function arg0() {
         _fun107375: for (var _fun107375_ip = 0;;) switch (_fun107375_ip) {
             case 0:
                 var5 = arg0;
@@ -1430,7 +1430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var12;
-    var11 = function(arg0) { // Original name: defaultCommandBucketing, environment: var1
+    var11 = function arg0() {
         var3 = arg0;
         var0 = _closure1_slot30;
         var2 = undefined;
@@ -1452,7 +1452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var11;
-    var10 = function(arg0) { // Original name: bucketRootCommandNameStartsWith, environment: var1
+    var10 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1479,7 +1479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var10;
-    var9 = function(arg0) { // Original name: bucketFullCommandNameStartsWith, environment: var1
+    var9 = function arg0() {
         _fun107380: for (var _fun107380_ip = 0;;) switch (_fun107380_ip) {
             case 0:
                 var4 = arg0;
@@ -1573,7 +1573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var9;
-    var8 = function(arg0) { // Original name: bucketCommandNameContains, environment: var1
+    var8 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1600,7 +1600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var8;
-    var7 = function(arg0) { // Original name: bucketOptionNameStartsWithOrCommandAndOptionStartsWith, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1737,7 +1737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var7;
-    var6 = function(arg0) { // Original name: bucketCommandOptionNameContains, environment: var1
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1808,7 +1808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var6;
-    var5 = function(arg0) { // Original name: defaultCommandsSort, environment: var1
+    var5 = function arg0() {
         var3 = _closure1_slot36;
         var2 = undefined;
         var0 = arg0;
@@ -1820,7 +1820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var5;
-    var4 = function(arg0) { // Original name: sortCommandsByFreceny, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0, arg1) { // Environment: var0
@@ -1839,7 +1839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var4;
-    var3 = function(arg0, arg1) { // Original name: sortCommandsAlpha, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot7;
         var0 = arg0;
         var2 = var0.displayName;
@@ -1927,7 +1927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.bucketCommandNameContains = var8;
     var2.bucketOptionNameStartsWithOrCommandAndOptionStartsWith = var7;
     var2.bucketCommandOptionNameContains = var6;
-    var6 = function(arg0, arg1) { // Original name: bucketCommandSectionNameStartsWith, environment: var1
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -1999,7 +1999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.bucketCommandSectionNameStartsWith = var6;
-    var6 = function(arg0, arg1) { // Original name: bucketCommandSectionNameContains, environment: var1
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -2074,7 +2074,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.defaultCommandsSort = var5;
     var2.sortCommandsByFreceny = var4;
     var2.sortCommandsAlpha = var3;
-    var3 = function(arg0) { // Original name: useLocalSearchResults, environment: var1
+    var3 = function arg0() {
         _fun107398: for (var _fun107398_ip = 0;;) switch (_fun107398_ip) {
             case 0:
                 var1 = arg0;
@@ -2496,7 +2496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useLocalSearchResults = var3;
-    var1 = function(arg0) { // Original name: useGlobalSearchResults, environment: var1
+    var1 = function arg0() {
         _fun107407: for (var _fun107407_ip = 0;;) switch (_fun107407_ip) {
             case 0:
                 var2 = arg0;

@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubEmailConnectionStudentPrompt.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubEmailConnectionStudentPrompt, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.onClose;
         var _closure2_slot0 = var10;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19 = var19.Gsegk8;
         var19 = var20.bind(var21)(var19);
         var8.subLabel = var19;
-        var18 = function() { // Original name: onPress, environment: var18
+        var18 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 14;

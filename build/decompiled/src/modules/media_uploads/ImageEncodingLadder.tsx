@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var8 = dependencyMap;
-    var3 = function(arg0, arg1) { // Original name: getAdaptiveImageCompressionQuality, environment: var1
+    var3 = function arg0, arg1() {
         _fun37548: for (var _fun37548_ip = 0;;) switch (_fun37548_ip) {
             case 0:
                 var0 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot4 = var4;
     var1 = function() { // Environment: var1
-        var4 = function() { // Original name: ImageEncodingLadder, environment: var1
+        var4 = function() {
             var3 = _closure1_slot0;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'selectEncodingConfig';
         var0.key = var2;
-        var2 = function(arg0) { // Original name: value, environment: var1
+        var2 = function arg0() {
             _fun37551: for (var _fun37551_ip = 0;;) switch (_fun37551_ip) {
                 case 0:
                     var0 = arg0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clampDimensions';
         var0.key = var5;
-        var1 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var1
+        var1 = function arg0, arg1, arg2, arg3() {
             _fun37552: for (var _fun37552_ip = 0;;) switch (_fun37552_ip) {
                 case 0:
                     var2 = arg0;

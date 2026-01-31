@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: resetGuildUnreadFlags, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var5;
     var3 = var3.ChannelNotificationSettingsFlags;
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: resetChannelUnreadFlags, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/notifications/settings/utils/notificationSettingsFlagUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.resetGuildUnreadFlags = var4;
-    var4 = function(arg0, arg1) { // Original name: withGuildUnreadFlags, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 1;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.withGuildUnreadFlags = var4;
     var2.resetChannelUnreadFlags = var3;
-    var1 = function(arg0, arg1) { // Original name: withChannelUnreadFlags, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 1;

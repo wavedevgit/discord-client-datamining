@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_uploads/native/UploadPreviewActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UploadPreviewActionSheet, environment: var1
+    var1 = function arg0() {
         _fun74569: for (var _fun74569_ip = 0;;) switch (_fun74569_ip) {
             case 0:
                 var2 = arg0;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var9 = 16;
                 var6.spacing = var9;
-                var9 = function(arg0) { // Original name: onLayout, environment: var32
+                var9 = function arg0() {
                     var2 = _closure2_slot11;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = {};
                 var33 = var30.bind(var3)(var34, var33);
                 var20.icon = var33;
-                var33 = function() { // Original name: onPress, environment: var32
+                var33 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = {};
                 var33 = var30.bind(var3)(var34, var33);
                 var24.icon = var33;
-                var32 = function() { // Original name: onPress, environment: var32
+                var32 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 12;

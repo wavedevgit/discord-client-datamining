@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/records/CollectiblesPrices.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getPricesFromServer, environment: var1
+    var1 = function arg0() {
         _fun42280: for (var _fun42280_ip = 0;;) switch (_fun42280_ip) {
             case 0:
                 var3 = arg0;

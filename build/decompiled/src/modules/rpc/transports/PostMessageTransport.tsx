@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun63036: for (var _fun63036_ip = 0;;) switch (_fun63036_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var13[var3](var12);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot18 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: postClose, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.EventEmitter;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: PostMessageTransport, environment: var0
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun63041: for (var _fun63041_ip = 0;;) switch (_fun63041_ip) {
                 case 0:
                     var5 = this;
@@ -1247,7 +1247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'routeEvent';
         var4.key = var5;
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             _fun63059: for (var _fun63059_ip = 0;;) switch (_fun63059_ip) {
                 case 0:
                     var2 = arg0;

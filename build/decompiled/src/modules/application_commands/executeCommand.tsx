@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun64102: for (var _fun64102_ip = 0;;) switch (_fun64102_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun64104: for (var _fun64104_ip = 0;;) switch (_fun64104_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _executeCommand, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -2371,7 +2371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7.context = var5;
                         var7.attachments = var17;
                         var7.maxSizeCallback = var16;
-                        var15 = function() { // Original name: onMessageSuccess, environment: var15
+                        var15 = function() {
                             var2 = _closure1_slot16;
                             var1 = _closure4_slot0;
                             var0 = undefined;
@@ -2457,7 +2457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: queueCommand, environment: var3
+    var0 = function arg0, arg1() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var0 = arg1;
@@ -2534,7 +2534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: displayInteractionLifecycleInChat, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;
@@ -2545,7 +2545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: _displayInteractionLifecycleInChat, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -2746,7 +2746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var18 = var3;
                         var1 = var22[var6](var21, var20, var19, var18, var17);
                         var1 = {};
-                        var4 = function() { // Original name: get messageId, environment: var2
+                        var4 = function() {
                             var0 = _closure4_slot2;
                             var0 = var0.id;
                             return var0;
@@ -2757,7 +2757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             set: var5,
                             enumerable: true
                         });
-                        var4 = function() { // Original name: get nonce, environment: var2
+                        var4 = function() {
                             var0 = _closure4_slot2;
                             var0 = var0.id;
                             return var0;
@@ -2768,7 +2768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             set: var5,
                             enumerable: true
                         });
-                        var3 = function(arg0) { // Original name: onCreate, environment: var2
+                        var3 = function arg0() {
                             _fun64117: for (var _fun64117_ip = 0;;) switch (_fun64117_ip) {
                                 case 0:
                                     var1 = _closure4_slot2;
@@ -2789,12 +2789,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var1.onCreate = var3;
-                        var3 = function() { // Original name: onSuccess, environment: var2
+                        var3 = function() {
                             var0 = undefined;
                             return var0;
                         };
                         var1.onSuccess = var3;
-                        var2 = function(arg0, arg1, arg2, arg3) { // Original name: onFailure, environment: var2
+                        var2 = function arg0, arg1, arg2, arg3() {
                             _fun64119: for (var _fun64119_ip = 0;;) switch (_fun64119_ip) {
                                 case 0:
                                     var7 = arg0;
@@ -2905,7 +2905,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: getAnalyticsLocationFromCommandOrigin, environment: var3
+    var0 = function arg0() {
         _fun64120: for (var _fun64120_ip = 0;;) switch (_fun64120_ip) {
             case 0:
                 var4 = arg0;
@@ -3092,7 +3092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: getMaxAndTotalFileSize, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;
@@ -3103,7 +3103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _getMaxAndTotalFileSize, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -3210,7 +3210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: _stageAttachments, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -3246,7 +3246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = arg2;
                         var15 = var2.bind(var8)(var1);
                         _closure4_slot2 = var15;
-                        var4 = function(arg0) { // Original name: handleUploadsTooLarge, environment: var11
+                        var4 = function arg0() {
                             _fun64128: for (var _fun64128_ip = 0;;) switch (_fun64128_ip) {
                                 case 0:
                                     var1 = _closure4_slot1;
@@ -3509,7 +3509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var1 = var1.DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE;
     var _closure1_slot15 = var1;
-    var1 = function(arg0) { // Original name: trackEmojiUsage, environment: var3
+    var1 = function arg0() {
         _fun64130: for (var _fun64130_ip = 0;;) switch (_fun64130_ip) {
             case 0:
                 var0 = global;
@@ -3724,7 +3724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1 = var1.bind(var0)();
-    var4 = function(arg0) { // Original name: enqueueCommandInteraction, environment: var3
+    var4 = function arg0() {
         _fun64137: for (var _fun64137_ip = 0;;) switch (_fun64137_ip) {
             case 0:
                 var0 = arg0;
@@ -3832,7 +3832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun64137;
             case 367:
                 var21 = var2.nonce;
-                var2 = function() { // Original name: stageAttachments, environment: var1
+                var2 = function() {
                     var0 = undefined;
                     var3 = _closure1_slot27;
                     var2 = var3.apply;
@@ -3879,7 +3879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/application_commands/executeCommand.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: executeCommand, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;

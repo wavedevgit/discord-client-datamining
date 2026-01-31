@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: _canSetVoiceChannelStatus, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun111017: for (var _fun111017_ip = 0;;) switch (_fun111017_ip) {
             case 0:
                 var1 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/calls/useCanSetVoiceChannelStatus.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useCanSetVoiceChannelStatus, environment: var1
+    var4 = function arg0() {
         _fun111019: for (var _fun111019_ip = 0;;) switch (_fun111019_ip) {
             case 0:
                 var7 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2._canSetVoiceChannelStatus = var3;
-    var1 = function(arg0) { // Original name: canSetVoiceChannelStatus, environment: var1
+    var1 = function arg0() {
         _fun111021: for (var _fun111021_ip = 0;;) switch (_fun111021_ip) {
             case 0:
                 var5 = arguments[1];

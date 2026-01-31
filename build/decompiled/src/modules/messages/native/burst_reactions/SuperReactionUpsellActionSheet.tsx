@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/burst_reactions/SuperReactionUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SuperReactionCoachmarkActionSheet, environment: var1
+    var1 = function arg0() {
         _fun57410: for (var _fun57410_ip = 0;;) switch (_fun57410_ip) {
             case 0:
                 var0 = arg0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.sEAnVH;
                 var8 = var11.bind(var12)(var8);
                 var1.primaryButtonText = var8;
-                var8 = function() { // Original name: primaryButtonIcon, environment: var7
+                var8 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.primaryButtonIcon = var8;
-                var7 = function() { // Original name: onPrimaryButtonPress, environment: var7
+                var7 = function() {
                     var3 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 29;

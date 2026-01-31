@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleLogout, environment: var7
+    var0 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 1;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var8 = function() { // Original name: title, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.parent = var8;
     var8 = 'danger';
     var1.variant = var8;
-    var7 = function() { // Original name: showConfirmLogoutAlert, environment: var7
+    var7 = function() {
         var15 = _closure1_slot0;
         var16 = _closure1_slot2;
         var0 = 7;

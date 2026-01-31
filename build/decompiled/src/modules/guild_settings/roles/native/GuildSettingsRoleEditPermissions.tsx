@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleEditPermissions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleEditPermission, environment: var1
+    var1 = function arg0() {
         _fun116014: for (var _fun116014_ip = 0;;) switch (_fun116014_ip) {
             case 0:
                 var0 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.t;
                 var16 = var15.ZhSOBy;
                 var15 = {};
-                var22 = function() { // Original name: onTemplateOpen, environment: var10
+                var22 = function() {
                     var1 = _closure1_slot7;
                     var0 = var1.dismiss;
                     var0 = var0.bind(var1)();
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = {};
                 var20 = 'md';
                 var16.size = var20;
-                var20 = function(arg0) { // Original name: onChange, environment: var10
+                var20 = function arg0() {
                     _fun116020: for (var _fun116020_ip = 0;;) switch (_fun116020_ip) {
                         case 0:
                             var3 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var6.sections = var12;
                 var6.stickySectionHeadersEnabled = var11;
-                var11 = function(arg0) { // Original name: renderItem, environment: var10
+                var11 = function arg0() {
                     _fun116021: for (var _fun116021_ip = 0;;) switch (_fun116021_ip) {
                         case 0:
                             var1 = arg0;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var9.bind(var10)(var8, var11);
                             var0.value = var8;
                             var0.disabled = var7;
-                            var6 = function(arg0) { // Original name: onValueChange, environment: var6
+                            var6 = function arg0() {
                                 _fun116022: for (var _fun116022_ip = 0;;) switch (_fun116022_ip) {
                                     case 0:
                                         var3 = _closure2_slot3;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var6.renderItem = var11;
-                var11 = function(arg0) { // Original name: renderSectionHeader, environment: var10
+                var11 = function arg0() {
                     var0 = arg0;
                     var0 = var0.section;
                     var4 = var0.title;
@@ -822,7 +822,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var6.renderSectionHeader = var11;
-                var11 = function() { // Original name: ItemSeparatorComponent, environment: var10
+                var11 = function() {
                     var3 = _closure1_slot15;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot3;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var6.ItemSeparatorComponent = var11;
-                var10 = function(arg0) { // Original name: keyExtractor, environment: var10
+                var10 = function arg0() {
                     var0 = arg0;
                     var1 = var0.flag;
                     var0 = var1.toString;

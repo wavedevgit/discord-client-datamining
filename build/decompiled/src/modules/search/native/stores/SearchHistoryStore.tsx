@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun105283: for (var _fun105283_ip = 0;;) switch (_fun105283_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: getOrCreateSearchHistory, environment: var3
+    var0 = function arg0() {
         _fun105286: for (var _fun105286_ip = 0;;) switch (_fun105286_ip) {
             case 0:
                 var2 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var7;
     var7 = function() { // Environment: var3
         var3 = _closure1_slot6;
-        var2 = function() { // Original name: SearchHistory, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot5;
             var1 = _closure2_slot0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'deserialize';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var4 = arg0;
             var1 = this;
             var3 = var4.slice;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'serialize';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.items;
             return var0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'add';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun105293: for (var _fun105293_ip = 0;;) switch (_fun105293_ip) {
                 case 0:
                     var3 = arg0;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'remove';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var1 = this;
             var2 = arg0;
             var _closure3_slot0 = var2;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.bind(var0)(var7);
     var9 = var7.PersistedStore;
     var7 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SearchHistoryStore, environment: var5
+        var3 = function() {
             _fun105297: for (var _fun105297_ip = 0;;) switch (_fun105297_ip) {
                 case 0:
                     var3 = this;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var1 = {};
             var _closure3_slot0 = var1;
             var2 = global;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initialize';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun105300: for (var _fun105300_ip = 0;;) switch (_fun105300_ip) {
                 case 0:
                     var2 = arg0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSearchHistory';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot11;
             var1 = undefined;
             var0 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleSearchHistoryClearItems, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.id;
         var0 = _closure1_slot9;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SEARCH_HISTORY_NATIVE_CLEAR_ITEMS = var8;
-    var8 = function(arg0) { // Original name: handleSearchHistoryRemoveItem, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.id;
         var3 = var0.item;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SEARCH_HISTORY_NATIVE_REMOVE_ITEM = var8;
-    var3 = function(arg0) { // Original name: handleSearchHistoryAddItem, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.id;
         var3 = var0.item;

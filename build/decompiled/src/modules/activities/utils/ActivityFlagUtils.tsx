@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: _computeActivityPartyPrivacyFlags, environment: var1
+    var0 = function arg0() {
         _fun50434: for (var _fun50434_ip = 0;;) switch (_fun50434_ip) {
             case 0:
                 var4 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/ActivityFlagUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: computeActivityFlags, environment: var1
+    var3 = function arg0() {
         _fun50435: for (var _fun50435_ip = 0;;) switch (_fun50435_ip) {
             case 0:
                 var4 = arguments[1];
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.computeActivityFlags = var3;
-    var1 = function(arg0) { // Original name: isContextlessEmbeddedActivity, environment: var1
+    var1 = function arg0() {
         _fun50436: for (var _fun50436_ip = 0;;) switch (_fun50436_ip) {
             case 0:
                 var3 = arg0;

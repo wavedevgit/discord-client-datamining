@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var4, var0, var5);
-    var0 = function() { // Original name: getReactNativeDimensions, environment: var2
+    var0 = function() {
         _fun97460: for (var _fun97460_ip = 0;;) switch (_fun97460_ip) {
             case 0:
                 var1 = null;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: JoinRequestRejectionReasonActionSheet, environment: var7
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.joinRequest;
         var6 = var2.onError;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = var9["TQY/Rd"];
                         var9 = var10.bind(var11)(var9);
                         var3.content = var9;
-                        var9 = function() { // Original name: icon, environment: var9
+                        var9 = function() {
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot0;
                             var6 = _closure1_slot2;

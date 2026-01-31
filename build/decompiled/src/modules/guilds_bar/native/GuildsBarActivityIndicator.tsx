@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
-    var3 = function(arg0) { // Original name: getMediaIcon, environment: var5
+    var3 = function arg0() {
         _fun101037: for (var _fun101037_ip = 0;;) switch (_fun101037_ip) {
             case 0:
                 var1 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var1 = function(arg0) { // Original name: useActivityIndicatorState, environment: var5
+    var1 = function arg0() {
         _fun101038: for (var _fun101038_ip = 0;;) switch (_fun101038_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6.bind(var9)(var4);
     var _closure1_slot6 = var4;
     var6 = var9.memo;
-    var5 = function(arg0) { // Original name: GuildsBarGuildActivityIndicator, environment: var5
+    var5 = function arg0() {
         _fun101041: for (var _fun101041_ip = 0;;) switch (_fun101041_ip) {
             case 0:
                 var0 = arg0;

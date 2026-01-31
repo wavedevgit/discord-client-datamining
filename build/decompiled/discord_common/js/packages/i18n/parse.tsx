@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: setUpdateRules, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var3 = 6;
@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         var6 = var4.bind(var0)(var6);
         var8 = var6.rules;
-        var7 = function(arg0, arg1) { // Original name: parserFor, environment: var1
+        var7 = function arg0, arg1() {
             var6 = arg0;
             var5 = _closure1_slot1;
             var7 = _closure1_slot2;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var5[var3];
         var3 = var4.bind(var0)(var3);
         var3 = var3.rules;
-        var1 = function(arg0) { // Original name: parserForNonReact, environment: var1
+        var1 = function arg0() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var1 = 5;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var4;
     var4 = function() { // Environment: var1
         var3 = _closure1_slot7;
-        var2 = function(arg0, arg1, arg2) { // Original name: FormattedMessage, environment: var4
+        var2 = function arg0, arg1, arg2() {
             _fun112261: for (var _fun112261_ip = 0;;) switch (_fun112261_ip) {
                 case 0:
                     var8 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'format';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun112262: for (var _fun112262_ip = 0;;) switch (_fun112262_ip) {
                 case 0:
                     var2 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'astFormat';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.getContext;
             var1 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'plainFormat';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.intlMessage;
             var1 = var2.format;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getContext';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun112265: for (var _fun112265_ip = 0;;) switch (_fun112265_ip) {
                 case 0:
                     var2 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.FormattedMessage = var4;
     var2.setUpdateRules = var3;
-    var1 = function(arg0, arg1) { // Original name: getMessage, environment: var1
+    var1 = function arg0, arg1() {
         _fun112266: for (var _fun112266_ip = 0;;) switch (_fun112266_ip) {
             case 0:
                 var4 = arg0;

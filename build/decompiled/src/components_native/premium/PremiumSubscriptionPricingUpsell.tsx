@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.cardText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot21 = var3;
-    var3 = function() { // Original name: PricingSubheadingCopy, environment: var1
+    var3 = function() {
         _fun82571: for (var _fun82571_ip = 0;;) switch (_fun82571_ip) {
             case 0:
                 var1 = _closure1_slot21;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var11.price = var17;
                 var11.originalPrice = var16;
-                var15 = function(arg0, arg1) { // Original name: originalPriceHook, environment: var15
+                var15 = function arg0, arg1() {
                     _fun82579: for (var _fun82579_ip = 0;;) switch (_fun82579_ip) {
                         case 0:
                             var3 = _closure2_slot2;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/PremiumSubscriptionPricingUpsell.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun82580: for (var _fun82580_ip = 0;;) switch (_fun82580_ip) {
             case 0:
                 var0 = _closure1_slot21;

@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: hasTracingEnabled, environment: var0
+    var0 = function arg0() {
         _fun99206: for (var _fun99206_ip = 0;;) switch (_fun99206_ip) {
             case 0:
                 var3 = arg0;

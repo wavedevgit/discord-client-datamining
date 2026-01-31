@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/VoiceSensitivity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: VoiceSensitivity, environment: var1
+    var1 = function arg0() {
         _fun67961: for (var _fun67961_ip = 0;;) switch (_fun67961_ip) {
             case 0:
                 var2 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = function() { // Environment: var10
                     _fun67967: for (var _fun67967_ip = 0;;) switch (_fun67967_ip) {
                         case 0:
-                            var1 = function() { // Original name: _listenOnlyIfWeHavePermission, environment: var0
+                            var1 = function() {
                                 var3 = undefined;
                                 var0 = undefined;
                                 var2 = _closure1_slot3;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 41:
                             var1 = false;
                             var _closure3_slot0 = var1;
-                            var2 = function() { // Original name: listenOnlyIfWeHavePermission, environment: var0
+                            var2 = function() {
                                 var0 = undefined;
                                 var3 = _closure3_slot1;
                                 var2 = var3.apply;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.style = var13;
                 var7.value = var12;
                 var7.onValueChange = var11;
-                var10 = function(arg0) { // Original name: handleSlidingComplete, environment: var10
+                var10 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = 100;
                     var0 = arg0;

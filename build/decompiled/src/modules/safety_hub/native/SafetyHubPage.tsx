@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: AutomatedUnderageAppealStatus, environment: var1
+    var0 = function() {
         _fun88634: for (var _fun88634_ip = 0;;) switch (_fun88634_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2 = var5.bind(var6)(var3, var2);
-                var0 = function(arg0) { // Original name: getAutomatedAppealStatusMessage, environment: var0
+                var0 = function arg0() {
                     _fun88635: for (var _fun88635_ip = 0;;) switch (_fun88635_ip) {
                         case 0:
                             var2 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.t;
                             var5 = var1.hyh4ls;
                             var1 = {};
-                            var8 = function(arg0) { // Original name: loginHook, environment: var8
+                            var8 = function arg0() {
                                 var3 = _closure1_slot12;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot3;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     'variant': 'text-sm/medium',
                                     'color': 'text-link'
                                 };
-                                var4 = function() { // Original name: onPress, environment: var4
+                                var4 = function() {
                                     var3 = _closure1_slot1;
                                     var2 = _closure1_slot3;
                                     var1 = 8;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/SafetyHubPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SafetyHubPage, environment: var1
+    var1 = function arg0() {
         _fun88639: for (var _fun88639_ip = 0;;) switch (_fun88639_ip) {
             case 0:
                 var0 = arg0;

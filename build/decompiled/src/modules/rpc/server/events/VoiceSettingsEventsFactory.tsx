@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rpc/server/events/VoiceSettingsEventsFactory.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createVoiceSettingsEventHandlers, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7[1] = var9;
         var6[var8] = var7;
         var2.scope = var6;
-        var6 = function() { // Original name: handler, environment: var3
+        var6 = function() {
             var0 = function(arg0) { // Environment: var0
                 _fun98371: for (var _fun98371_ip = 0;;) switch (_fun98371_ip) {
                     case 0:
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = {};
         var4 = _closure1_slot4;
         var1.scope = var4;
-        var3 = function(arg0) { // Original name: handler, environment: var3
+        var3 = function arg0() {
             var1 = arg0;
             var1 = var1.socket;
             var _closure3_slot0 = var1;

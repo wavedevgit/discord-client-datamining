@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PopoutMenuRow, environment: var1
+    var0 = function arg0() {
         _fun64204: for (var _fun64204_ip = 0;;) switch (_fun64204_ip) {
             case 0:
                 var1 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: PopoutMenu, environment: var1
+    var1 = function arg0, arg1() {
         _fun64206: for (var _fun64206_ip = 0;;) switch (_fun64206_ip) {
             case 0:
                 var2 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = arg1;
                 var9 = function() { // Environment: var11
                     var0 = {};
-                    var1 = function() { // Original name: close, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot7;
                         var0 = undefined;
                         var1 = true;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9[var22];
                 var5 = var16.bind(var4)(var2);
                 var3 = var5.useAnimatedStyle;
-                var2 = function() { // Original name: te, environment: var11
+                var2 = function() {
                     _fun64217: for (var _fun64217_ip = 0;;) switch (_fun64217_ip) {
                         case 0:
                             var0 = {};
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12.easing = var2;
                             var6 = 250;
                             var12.duration = var6;
-                            var11 = function(arg0) { // Original name: n, environment: var2
+                            var11 = function arg0() {
                                 _fun64218: for (var _fun64218_ip = 0;;) switch (_fun64218_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.LongPress;
                     var4 = var1.bind(var2)();
                     var2 = var4.onBegin;
-                    var1 = function() { // Original name: t, environment: var0
+                    var1 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 12;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var10;
                     var2 = var2.bind(var4)(var1);
                     var1 = var2.onStart;
-                    var0 = function() { // Original name: n, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 12;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10[2] = var18;
                 var10[3] = var16;
                 var7.style = var10;
-                var10 = function(arg0) { // Original name: onLayout, environment: var11
+                var10 = function arg0() {
                     var2 = _closure2_slot16;
                     var0 = arg0;
                     var0 = var0.nativeEvent;

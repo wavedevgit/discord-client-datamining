@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SparklingIconInner, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var15 = _closure1_slot2;
         var5 = 4;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = -1;
             var8 = var11.bind(var12)(var8, var6);
             var8 = var9.bind(var10)(var8);
-            var8 = function() { // Original name: starOpacityScaleSequence, environment: var1
+            var8 = function() {
                 var8 = _closure1_slot0;
                 var10 = _closure1_slot2;
                 var6 = 4;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var14.bind(var15)(var13, var12, var3);
             var3 = var10.bind(var11)(var3, var6);
             var3 = var8.bind(var9)(var3);
-            var1 = function() { // Original name: sparkleOpacityScaleSequence, environment: var1
+            var1 = function() {
                 var9 = _closure1_slot0;
                 var11 = _closure1_slot2;
                 var5 = 4;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var15[var5];
         var9 = var2.bind(var3)(var1);
         var4 = var9.useAnimatedStyle;
-        var1 = function() { // Original name: f, environment: var0
+        var1 = function() {
             var0 = {};
             var2 = _closure2_slot1;
             var1 = var2.get;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var15[var5];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: T, environment: var0
+        var0 = function() {
             var0 = {};
             var2 = _closure2_slot4;
             var1 = var2.get;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/SparklingIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SparklingIcon, environment: var1
+    var1 = function arg0() {
         _fun77902: for (var _fun77902_ip = 0;;) switch (_fun77902_ip) {
             case 0:
                 var2 = _closure1_slot0;

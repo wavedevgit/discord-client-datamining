@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_icons/native/AppIconsCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppIconsCoachmarkActionSheet, environment: var1
+    var1 = function arg0() {
         _fun109776: for (var _fun109776_ip = 0;;) switch (_fun109776_ip) {
             case 0:
                 var0 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10.bind(var3)(var0);
                 var1 = var0.BottomSheet;
                 var0 = {};
-                var4 = function() { // Original name: onDismiss, environment: var14
+                var4 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot7;
                     var1 = var0.DISMISS;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.Pt547C;
                 var15 = var18.bind(var19)(var15);
                 var8.text = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     _fun109780: for (var _fun109780_ip = 0;;) switch (_fun109780_ip) {
                         case 0:
                             var3 = _closure1_slot1;

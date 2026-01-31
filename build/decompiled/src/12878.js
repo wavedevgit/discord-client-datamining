@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var3 = function(arg0) { // Original name: spanTimeInputToSeconds, environment: var0
+    var3 = function arg0() {
         _fun99069: for (var _fun99069_ip = 0;;) switch (_fun99069_ip) {
             case 0:
                 var3 = arg0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var2 = function(arg0) { // Original name: ensureTimestampInSeconds, environment: var0
+    var2 = function arg0() {
         _fun99070: for (var _fun99070_ip = 0;;) switch (_fun99070_ip) {
             case 0:
                 var2 = arg0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: spanToJSON, environment: var0
+    var2 = function arg0() {
         _fun99071: for (var _fun99071_ip = 0;;) switch (_fun99071_ip) {
             case 0:
                 var1 = arg0;
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var4 = function(arg0) { // Original name: spanIsSampled, environment: var0
+    var4 = function arg0() {
         var1 = arg0;
         var0 = var1.spanContext;
         var0 = var0.bind(var1)();
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var4;
-    var5 = function(arg0) { // Original name: getStatusMessage, environment: var0
+    var5 = function arg0() {
         _fun99073: for (var _fun99073_ip = 0;;) switch (_fun99073_ip) {
             case 0:
                 var1 = arg0;
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var5;
-    var6 = function() { // Original name: getActiveSpan, environment: var0
+    var6 = function() {
         _fun99074: for (var _fun99074_ip = 0;;) switch (_fun99074_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -344,7 +344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.TRACE_FLAG_NONE = var7;
     var7 = 1;
     var1.TRACE_FLAG_SAMPLED = var7;
-    var7 = function(arg0, arg1) { // Original name: addChildSpanToSpan, environment: var0
+    var7 = function arg0, arg1() {
         _fun99075: for (var _fun99075_ip = 0;;) switch (_fun99075_ip) {
             case 0:
                 var1 = arg0;
@@ -405,7 +405,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.addChildSpanToSpan = var7;
     var1.getActiveSpan = var6;
-    var6 = function(arg0) { // Original name: getRootSpan, environment: var0
+    var6 = function arg0() {
         _fun99076: for (var _fun99076_ip = 0;;) switch (_fun99076_ip) {
             case 0:
                 var1 = arg0;
@@ -421,7 +421,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getRootSpan = var6;
-    var6 = function(arg0) { // Original name: getSpanDescendants, environment: var0
+    var6 = function arg0() {
         var0 = global;
         var2 = var0.Set;
         var3 = var2.prototype;
@@ -434,7 +434,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = new var6[var2](var5);
         var2 = var2 instanceof Object ? var2 : var3;
         var _closure2_slot0 = var2;
-        var4 = function(arg0) { // Original name: addSpanChildren, environment: var1
+        var4 = function arg0() {
             _fun99078: for (var _fun99078_ip = 0;;) switch (_fun99078_ip) {
                 case 0:
                     var0 = arg0;
@@ -509,7 +509,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getSpanDescendants = var6;
     var1.getStatusMessage = var5;
-    var5 = function(arg0, arg1) { // Original name: removeChildSpanFromSpan, environment: var0
+    var5 = function arg0, arg1() {
         _fun99079: for (var _fun99079_ip = 0;;) switch (_fun99079_ip) {
             case 0:
                 var0 = arg0;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.spanIsSampled = var4;
     var1.spanTimeInputToSeconds = var3;
     var1.spanToJSON = var2;
-    var2 = function(arg0) { // Original name: spanToTraceContext, environment: var0
+    var2 = function arg0() {
         var5 = arg0;
         var0 = var5.spanContext;
         var0 = var0.bind(var5)();
@@ -556,7 +556,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.spanToTraceContext = var2;
-    var2 = function(arg0) { // Original name: spanToTraceHeader, environment: var0
+    var2 = function arg0() {
         var2 = arg0;
         var0 = var2.spanContext;
         var0 = var0.bind(var2)();
@@ -575,7 +575,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.spanToTraceHeader = var2;
-    var2 = function(arg0) { // Original name: spanToTransactionTraceContext, environment: var0
+    var2 = function arg0() {
         var3 = arg0;
         var0 = var3.spanContext;
         var0 = var0.bind(var3)();
@@ -607,7 +607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.spanToTransactionTraceContext = var2;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: updateMetricSummaryOnActiveSpan, environment: var0
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun99083: for (var _fun99083_ip = 0;;) switch (_fun99083_ip) {
             case 0:
                 var2 = _closure1_slot7;

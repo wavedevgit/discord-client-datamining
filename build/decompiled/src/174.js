@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun2559
             }
         case 34:
-            var7 = function(arg0) { // Original name: defineLazyTimer, environment: var0
+            var7 = function arg0() {
                 var4 = arg0;
                 var _closure2_slot0 = var4;
                 var3 = _closure1_slot0;

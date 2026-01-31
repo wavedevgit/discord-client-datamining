@@ -12,7 +12,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var18;
             var _closure1_slot2 = var3;
             var _closure1_slot3 = var4;
-            var7 = function(arg0) { // Original name: expandLocation, environment: var1
+            var7 = function arg0() {
                 _fun8472: for (var _fun8472_ip = 0;;) switch (_fun8472_ip) {
                     case 0:
                         var2 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot24 = var7;
-            var0 = function(arg0) { // Original name: expandSource, environment: var1
+            var0 = function arg0() {
                 _fun8473: for (var _fun8473_ip = 0;;) switch (_fun8473_ip) {
                     case 0:
                         var2 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot25 = var0;
-            var6 = function(arg0) { // Original name: expandEventProperties, environment: var1
+            var6 = function arg0() {
                 _fun8474: for (var _fun8474_ip = 0;;) switch (_fun8474_ip) {
                     case 0:
                         var7 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var6;
-            var5 = function(arg0, arg1) { // Original name: debugLogEvent, environment: var1
+            var5 = function arg0, arg1() {
                 _fun8476: for (var _fun8476_ip = 0;;) switch (_fun8476_ip) {
                     case 0:
                         var5 = arg0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var22 = 300000;
             var14.throttlePeriod = var22;
-            var16 = function() { // Original name: throttleKeys, environment: var1
+            var16 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var23 = 120000;
             var14.throttlePeriod = var23;
-            var16 = function() { // Original name: throttleKeys, environment: var1
+            var16 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = {};
                         var2 = 900000;
                         var1.throttlePeriod = var2;
-                        var2 = function(arg0) { // Original name: throttleKeys, environment: var2
+                        var2 = function arg0() {
                             var1 = arg0;
                             var2 = var1.guild_id;
                             var0 = new Array(3);
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var15 = 900000;
             var14.throttlePeriod = var15;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var1 = arg0;
                 var2 = var1.guild_id;
                 var0 = new Array(2);
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.FRIENDS_LIST_CLICKED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var0 = arg0;
                 var1 = var0.tab_opened;
                 var0 = new Array(1);
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.FRIENDS_LIST_VIEWED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var0 = arg0;
                 var1 = var0.tab_opened;
                 var0 = new Array(1);
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.NOW_PLAYING_CARD_HOVERED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var0 = arg0;
                 var1 = var0.tab_opened;
                 var0 = new Array(1);
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.START_SPEAKING;
             var14 = {};
             var14.throttlePeriod = var15;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var0 = arg0;
                 var1 = var0.server;
                 var0 = new Array(1);
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.START_LISTENING;
             var14 = {};
             var14.throttlePeriod = var15;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var0 = arg0;
                 var1 = var0.server;
                 var0 = new Array(1);
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'deduplicate': true
             };
             var19 = 60000;
-            var20 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var20 = function arg0() {
                 var0 = arg0;
                 var1 = var0.application_id;
                 var0 = new Array(1);
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.CHANNEL_OPENED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var20 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var20 = function arg0() {
                 _fun8488: for (var _fun8488_ip = 0;;) switch (_fun8488_ip) {
                     case 0:
                         var2 = arg0;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var20 = 86400000;
             var14.throttlePeriod = var20;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.NOTIFICATION_VIEWED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var0 = arg0;
                 var1 = var0.notif_type;
                 var0 = new Array(1);
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.MEMBER_LIST_VIEWED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.DM_LIST_VIEWED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.NAV_DRAWER_OPENED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var21 = function() { // Original name: throttleKeys, environment: var1
+            var21 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.KEYBOARD_SHORTCUT_USED;
             var14 = {};
             var14.throttlePeriod = var23;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 _fun8494: for (var _fun8494_ip = 0;;) switch (_fun8494_ip) {
                     case 0:
                         var1 = arg0;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var21 = 10000;
             var14.throttlePeriod = var21;
-            var24 = function() { // Original name: throttleKeys, environment: var1
+            var24 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.CHAT_INPUT_COMPONENT_VIEWED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var24 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var24 = function arg0() {
                 var0 = arg0;
                 var1 = var0.type;
                 var0 = new Array(1);
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.ROLE_PAGE_VIEWED;
             var14 = {};
             var14.throttlePeriod = var23;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.role_id;
                 var0 = new Array(2);
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.VIDEO_INPUT_INITIALIZED;
             var14 = {};
             var14.throttlePeriod = var22;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.AUDIO_INPUT_INITIALIZED;
             var14 = {};
             var14.throttlePeriod = var22;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.HUB_ONBOARDING_CAROUSEL_SCROLLED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -748,7 +748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.HUB_STUDENT_PROMPT_CLICKED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.RPC_SERVER_ERROR_CAUGHT;
             var14 = {};
             var14.throttlePeriod = var20;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'throttleKeys': null,
                 'throttlePercent': 0.001
             };
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.application_id;
                 var0 = new Array(2);
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'throttleKeys': null,
                 'throttlePercent': 0.001
             };
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.application_id;
                 var0 = new Array(2);
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.ACTIVITY_HANDSHAKE;
             var14 = {};
             var14.throttlePeriod = var20;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.application_id;
                 var0 = new Array(1);
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.CHANNEL_BANNER_VIEWED;
             var14 = {};
             var14.throttlePeriod = var20;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.banner_type;
                 var0 = new Array(2);
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.PREMIUM_UPSELL_VIEWED;
             var14 = {};
             var14.throttlePeriod = var19;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.type;
                 var0 = new Array(1);
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.FORUM_CHANNEL_SEARCHED;
             var14 = {};
             var14.throttlePeriod = var19;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.guild_id;
                 var0 = new Array(2);
@@ -852,7 +852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.FORUM_CHANNEL_SCROLLED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.guild_id;
                 var0 = new Array(2);
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED;
             var14 = {};
             var14.throttlePeriod = var19;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.user_id;
                 var0 = new Array(1);
@@ -878,7 +878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.MEDIA_VIEWER_SESSION_COMPLETED;
             var14 = {};
             var14.throttlePeriod = var19;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -887,7 +887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.SUMMARIES_UNREAD_BAR_VIEWED;
             var14 = {};
             var14.throttlePeriod = var22;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -899,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.ACTIVITY_CARDS_VIEWED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var1 = arg0;
                 var2 = var1.context;
                 var0 = new Array(2);
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.GUILD_TOOLTIP_SHOWN;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.guild_id;
                 var0 = new Array(1);
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.ACK_COMMUNITY_MESSAGES;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -937,7 +937,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.REDESIGN_NAV_BAR_CLICKED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.tab;
                 var0 = new Array(1);
@@ -949,7 +949,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.CHANNEL_LIST_END_REACHED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.guild_id;
                 var0 = new Array(1);
@@ -961,7 +961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED;
             var14 = {};
             var14.throttlePeriod = var19;
-            var19 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var19 = function arg0() {
                 var1 = arg0;
                 var2 = var1.guild_id;
                 var0 = new Array(2);
@@ -976,7 +976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var19 = 3600000;
             var14.throttlePeriod = var19;
-            var23 = function() { // Original name: throttleKeys, environment: var1
+            var23 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.MEDIA_INPUT_VOLUME_CHANGED;
             var14 = {};
             var14.throttlePeriod = var22;
-            var23 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var23 = function arg0() {
                 var0 = arg0;
                 var1 = var0.location_stack;
                 var0 = new Array(1);
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.MEDIA_OUTPUT_VOLUME_CHANGED;
             var14 = {};
             var14.throttlePeriod = var22;
-            var22 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var22 = function arg0() {
                 var0 = arg0;
                 var1 = var0.location_stack;
                 var0 = new Array(1);
@@ -1009,7 +1009,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.APP_DMS_QUICK_LAUNCHER_IMPRESSION;
             var14 = {};
             var14.throttlePeriod = var15;
-            var22 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var22 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'throttleKeys': null,
                 'deduplicate': true
             };
-            var22 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var22 = function arg0() {
                 var1 = arg0;
                 var2 = var1.activity_user_id;
                 var0 = new Array(2);
@@ -1041,7 +1041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'throttleKeys': null,
                 'deduplicate': true
             };
-            var22 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var22 = function arg0() {
                 var0 = arg0;
                 var1 = var0.voice_channel_id;
                 var0 = new Array(1);
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.MEMBER_LIST_SWIPE_PEEK;
             var14 = {};
             var14.throttlePeriod = var17;
-            var22 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var22 = function arg0() {
                 var0 = arg0;
                 var1 = var0.channel_id;
                 var0 = new Array(1);
@@ -1065,7 +1065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.REDACTABLE_MESSAGE_LOADED;
             var14 = {};
             var14.throttlePeriod = var15;
-            var22 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var22 = function arg0() {
                 var1 = arg0;
                 var2 = var1.channel_id;
                 var0 = new Array(2);
@@ -1093,7 +1093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = {};
                         var2 = 60000;
                         var1.throttlePeriod = var2;
-                        var2 = function(arg0) { // Original name: throttleKeys, environment: var2
+                        var2 = function arg0() {
                             var0 = arg0;
                             var1 = var0.type;
                             var0 = new Array(1);
@@ -1110,7 +1110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.MODERATOR_QUEUE_ACTION;
             var14 = {};
             var14.throttlePeriod = var21;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var0 = arg0;
                 var1 = var0.guild_id;
                 var0 = new Array(1);
@@ -1123,7 +1123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = {};
             var21 = 43200000;
             var14.throttlePeriod = var21;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var1 = arg0;
                 var2 = var1.os_enabled;
                 var0 = new Array(4);
@@ -1141,7 +1141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.SEARCH_BAR_VIEWED;
             var14 = {};
             var14.throttlePeriod = var19;
-            var21 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var21 = function arg0() {
                 var0 = arg0;
                 var1 = var0.search_type;
                 var0 = new Array(1);
@@ -1153,7 +1153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.AD_IDENTIFIER_FETCHED;
             var14 = {};
             var14.throttlePeriod = var20;
-            var21 = function() { // Original name: throttleKeys, environment: var1
+            var21 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -1162,7 +1162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.ACTIVITY_PANEL_SDK_LINK_VIEWED;
             var14 = {};
             var14.throttlePeriod = var20;
-            var20 = function(arg0) { // Original name: throttleKeys, environment: var1
+            var20 = function arg0() {
                 var0 = arg0;
                 var1 = var0.application_id;
                 var0 = new Array(1);
@@ -1174,7 +1174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.LIBDISCORE_SLOW_TIMERS;
             var14 = {};
             var14.throttlePeriod = var19;
-            var20 = function() { // Original name: throttleKeys, environment: var1
+            var20 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -1183,7 +1183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.DEBUG_MISSING_STRING;
             var14 = {};
             var14.throttlePeriod = var19;
-            var19 = function() { // Original name: throttleKeys, environment: var1
+            var19 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -1192,7 +1192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var11.VIDEO_STREAM_ZOOM_CHANGED;
             var14 = {};
             var14.throttlePeriod = var17;
-            var17 = function() { // Original name: throttleKeys, environment: var1
+            var17 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -1201,13 +1201,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = var11.CACHE_STATS_RECORDED;
             var11 = {};
             var11.throttlePeriod = var15;
-            var15 = function() { // Original name: throttleKeys, environment: var1
+            var15 = function() {
                 var0 = new Array(0);
                 return var0;
             };
             var11.throttleKeys = var15;
             var8[var14] = var11;
-            var11 = function() { // Original name: getAccessibilityFeatures, environment: var1
+            var11 = function() {
                 var0 = _closure1_slot12;
                 var0 = var0.NONE;
                 return var0;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = var12.getCampaignParams;
             var12 = 'getCampaignParams';
             var11[var12] = var14;
-            var14 = function(arg0) { // Original name: setSystemAccessibilityFeatures, environment: var1
+            var14 = function arg0() {
                 var0 = arg0;
                 _closure1_slot19 = var0;
                 var0 = undefined;
@@ -1261,7 +1261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11[var12] = var14;
             var12 = 'expandEventProperties';
             var11[var12] = var6;
-            var14 = function(arg0, arg1) { // Original name: track, environment: var1
+            var14 = function arg0, arg1() {
                 _fun8540: for (var _fun8540_ip = 0;;) switch (_fun8540_ip) {
                     case 0:
                         var5 = arg0;
@@ -1387,7 +1387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var11;
             var2.AnalyticsContext = var10;
             var2.launchSignature = var9;
-            var9 = function(arg0) { // Original name: addExtraAnalyticsDecorator, environment: var1
+            var9 = function arg0() {
                 var2 = _closure1_slot18;
                 var1 = var2.push;
                 var0 = arg0;
@@ -1398,7 +1398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.addExtraAnalyticsDecorator = var9;
             var2.AnalyticEventConfigs = var8;
             var2.expandLocation = var7;
-            var7 = function(arg0) { // Original name: setUTMContext, environment: var1
+            var7 = function arg0() {
                 var0 = arg0;
                 _closure1_slot14 = var0;
                 return var0;
@@ -1406,26 +1406,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.setUTMContext = var7;
             var2.expandEventProperties = var6;
             var2.debugLogEvent = var5;
-            var5 = function() { // Original name: startRecordingAnalyticsEvents, environment: var1
+            var5 = function() {
                 var0 = true;
                 _closure1_slot21 = var0;
                 var0 = undefined;
                 return var0;
             };
             var2.startRecordingAnalyticsEvents = var5;
-            var5 = function() { // Original name: stopRecordingAnalyticsEvents, environment: var1
+            var5 = function() {
                 var0 = false;
                 _closure1_slot21 = var0;
                 var0 = undefined;
                 return var0;
             };
             var2.stopRecordingAnalyticsEvents = var5;
-            var5 = function() { // Original name: getAnalyticsEventsRecording, environment: var1
+            var5 = function() {
                 var0 = _closure1_slot22;
                 return var0;
             };
             var2.getAnalyticsEventsRecording = var5;
-            var5 = function() { // Original name: clearAnalyticsEventsRecording, environment: var1
+            var5 = function() {
                 var0 = global;
                 var2 = var0.Object;
                 var1 = var2.keys;
@@ -1444,7 +1444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.clearAnalyticsEventsRecording = var5;
-            var5 = function(arg0) { // Original name: isGameApplicationType, environment: var1
+            var5 = function arg0() {
                 _fun8548: for (var _fun8548_ip = 0;;) switch (_fun8548_ip) {
                     case 0:
                         var2 = arg0;
@@ -1464,7 +1464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.isGameApplicationType = var5;
-            var5 = function(arg0, arg1) { // Original name: trackNetworkAction, environment: var1
+            var5 = function arg0, arg1() {
                 var3 = arg0;
                 var6 = arg1;
                 var4 = _closure1_slot26;
@@ -1492,7 +1492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.trackNetworkAction = var5;
-            var1 = function() { // Original name: getNewAnalyticsLoadId, environment: var1
+            var1 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot3;
                 var0 = 17;

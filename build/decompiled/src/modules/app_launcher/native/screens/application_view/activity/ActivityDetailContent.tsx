@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: Tag, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.tagName;
         var6 = var0.icon;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: PrimaryEntryPointButton, environment: var1
+    var0 = function arg0() {
         _fun107934: for (var _fun107934_ip = 0;;) switch (_fun107934_ip) {
             case 0:
                 var1 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: TryItOutButton, environment: var1
+    var0 = function arg0() {
         _fun107938: for (var _fun107938_ip = 0;;) switch (_fun107938_ip) {
             case 0:
                 var0 = arg0;
@@ -692,7 +692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/application_view/activity/ActivityDetailContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityDetailContent, environment: var1
+    var1 = function arg0() {
         _fun107942: for (var _fun107942_ip = 0;;) switch (_fun107942_ip) {
             case 0:
                 var0 = arg0;

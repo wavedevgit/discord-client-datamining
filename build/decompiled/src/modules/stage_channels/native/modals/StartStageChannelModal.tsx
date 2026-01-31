@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: closeModal, environment: var3
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot3;
         var0 = 11;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: NavigationBar, environment: var3
+    var0 = function arg0() {
         _fun67028: for (var _fun67028_ip = 0;;) switch (_fun67028_ip) {
             case 0:
                 var0 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: HeaderIcon, environment: var3
+    var0 = function arg0() {
         _fun67029: for (var _fun67029_ip = 0;;) switch (_fun67029_ip) {
             case 0:
                 var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var1 = function(arg0) { // Original name: NotificationToggle, environment: var3
+    var1 = function arg0() {
         _fun67030: for (var _fun67030_ip = 0;;) switch (_fun67030_ip) {
             case 0:
                 var0 = arg0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = arg1;
                 var0 = function() { // Environment: var22
                     var0 = {};
-                    var1 = function() { // Original name: renderRightButton, environment: var1
+                    var1 = function() {
                         var0 = _closure1_slot16;
                         var3 = undefined;
                         var7 = var0.bind(var3)();
@@ -1306,7 +1306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot20;
                 var7 = {};
                 var7.sendStartNotification = var23;
-                var22 = function() { // Original name: onToggle, environment: var22
+                var22 = function() {
                     var2 = _closure1_slot2;
                     var1 = _closure1_slot3;
                     var0 = 28;

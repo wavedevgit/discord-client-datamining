@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/PremiumPlanActionSheetHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun57609: for (var _fun57609_ip = 0;;) switch (_fun57609_ip) {
             case 0:
                 var1 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot8;
                 var3 = undefined;
                 var11 = var1.bind(var3)();
-                var8 = function() { // Original name: getClouds, environment: var0
+                var8 = function() {
                     _fun57610: for (var _fun57610_ip = 0;;) switch (_fun57610_ip) {
                         case 0:
                             var2 = _closure2_slot0;

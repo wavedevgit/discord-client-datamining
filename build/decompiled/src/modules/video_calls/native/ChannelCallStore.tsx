@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var10;
-    var4 = function() { // Original name: useIsVoiceChatFocused, environment: var3
+    var4 = function() {
         _fun62639: for (var _fun62639_ip = 0;;) switch (_fun62639_ip) {
             case 0:
                 var2 = _closure1_slot10;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1 = var5.bind(var6)(var1);
     var _closure1_slot10 = var1;
-    var6 = function() { // Original name: resetFocusTimer, environment: var3
+    var6 = function() {
         var3 = _closure1_slot8;
         var0 = var3.stop;
         var0 = var0.bind(var3)();

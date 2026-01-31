@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun78542: for (var _fun78542_ip = 0;;) switch (_fun78542_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: OrderStore, environment: var5
+        var3 = function() {
             _fun78546: for (var _fun78546_ip = 0;;) switch (_fun78546_ip) {
                 case 0:
                     var4 = this;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = new Array(2);
                     var9[0] = var0;
                     var0 = {};
-                    var6 = function(arg0) { // Original name: ORDER_CREATE_START, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderCreateStart;
                         var0 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_CREATE_START = var6;
-                    var6 = function(arg0) { // Original name: ORDER_CREATE_SUCCESS, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderCreateSuccess;
                         var0 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_CREATE_SUCCESS = var6;
-                    var6 = function(arg0) { // Original name: ORDER_CREATE_FAIL, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderCreateFail;
                         var0 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_CREATE_FAIL = var6;
-                    var6 = function(arg0) { // Original name: ORDER_UPDATE_START, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderUpdateStart;
                         var0 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_UPDATE_START = var6;
-                    var6 = function(arg0) { // Original name: ORDER_UPDATE_SUCCESS, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderUpdateSuccess;
                         var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_UPDATE_SUCCESS = var6;
-                    var6 = function(arg0) { // Original name: ORDER_UPDATE_FAIL, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderUpdateFail;
                         var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_UPDATE_FAIL = var6;
-                    var6 = function(arg0) { // Original name: ORDER_DISCARD_SUCCESS, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOrderDiscardSuccess;
                         var0 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.ORDER_DISCARD_SUCCESS = var6;
-                    var6 = function(arg0) { // Original name: PAYMENT_MODAL_OPEN, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handlePaymentModalOpen;
                         var0 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isCreatingOrder';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0._isCreatingOrder;
             return var0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'currentOrderId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun78556: for (var _fun78556_ip = 0;;) switch (_fun78556_ip) {
                 case 0:
                     var0 = this;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'currentOrder';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._order;
             return var0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'currentPaymentGateway';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun78558: for (var _fun78558_ip = 0;;) switch (_fun78558_ip) {
                 case 0:
                     var0 = this;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderCreateStart';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78559: for (var _fun78559_ip = 0;;) switch (_fun78559_ip) {
                 case 0:
                     var1 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderCreateSuccess';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78560: for (var _fun78560_ip = 0;;) switch (_fun78560_ip) {
                 case 0:
                     var0 = arg0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderCreateFail';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78561: for (var _fun78561_ip = 0;;) switch (_fun78561_ip) {
                 case 0:
                     var1 = arg0;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderUpdateStart';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78562: for (var _fun78562_ip = 0;;) switch (_fun78562_ip) {
                 case 0:
                     var1 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderUpdateSuccess';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78563: for (var _fun78563_ip = 0;;) switch (_fun78563_ip) {
                 case 0:
                     var1 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderUpdateFail';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78564: for (var _fun78564_ip = 0;;) switch (_fun78564_ip) {
                 case 0:
                     var1 = arg0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOrderDiscardSuccess';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun78565: for (var _fun78565_ip = 0;;) switch (_fun78565_ip) {
                 case 0:
                     var2 = this;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handlePaymentModalOpen';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun78566: for (var _fun78566_ip = 0;;) switch (_fun78566_ip) {
                 case 0:
                     var1 = arg0;

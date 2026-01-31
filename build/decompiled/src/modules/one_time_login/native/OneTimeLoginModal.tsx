@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/one_time_login/native/OneTimeLoginModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OneTimeLoginModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var11 = var1.token;
         var _closure2_slot0 = var11;

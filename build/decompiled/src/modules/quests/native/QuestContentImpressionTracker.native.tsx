@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun78472: for (var _fun78472_ip = 0;;) switch (_fun78472_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun78474: for (var _fun78474_ip = 0;;) switch (_fun78474_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: useVisibilityData, environment: var1
+    var0 = function arg0() {
         _fun78475: for (var _fun78475_ip = 0;;) switch (_fun78475_ip) {
             case 0:
                 var1 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.setVisibilityPercentage = var1;
                     var0 = _closure2_slot1;
                     var2.visibilityRef = var0;
-                    var1 = function(arg0) { // Original name: initHandlers, environment: var0
+                    var1 = function arg0() {
                         _fun78477: for (var _fun78477_ip = 0;;) switch (_fun78477_ip) {
                             case 0:
                                 var2 = arg0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     continue _fun78477
                                 }
                             case 37:
-                                var4 = function(arg0) { // Original name: _loop, environment: var0
+                                var4 = function arg0() {
                                     var2 = arg0;
                                     var _closure5_slot0 = var2;
                                     var4 = _closure4_slot1;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var5 = var4[var2];
                                     var6 = var0;
                                     var4 = copyDataProperties(var6, var5);
-                                    var4 = function() { // Original name: calculateVisibility, environment: var3
+                                    var4 = function() {
                                         var2 = _closure4_slot0;
                                         var3 = _closure1_slot9;
                                         var1 = {};
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.createElement;
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: calculateVisibilityPercentage, environment: var1
+    var3 = function arg0() {
         _fun78480: for (var _fun78480_ip = 0;;) switch (_fun78480_ip) {
             case 0:
                 var0 = arg0;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestContentImpressionTracker.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestContentImpressionTrackerNative, environment: var1
+    var1 = function arg0() {
         _fun78481: for (var _fun78481_ip = 0;;) switch (_fun78481_ip) {
             case 0:
                 var0 = arg0;

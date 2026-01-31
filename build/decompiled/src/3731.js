@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = "function pnpm_timingTs2(){const{Easing,userConfig,toValue,callback,getReduceMotionForAnimation}=this.__closure;var _userConfig;const config={duration:300,easing:Easing.inOut(Easing.quad)};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}function timing(animation,now){const{toValue:toValue,startTime:startTime,startValue:startValue}=animation;const runtime=now-startTime;if(runtime>=config.duration){animation.startTime=0;animation.current=toValue;return true;}const progress=animation.easing(runtime/config.duration);animation.current=startValue+(toValue-startValue)*progress;return false;}function onStart(animation,value,now,previousAnimation){if(previousAnimation&&previousAnimation.type==='timing'&&previousAnimation.toValue===toValue&&previousAnimation.startTime){animation.startTime=previousAnimation.startTime;animation.startValue=previousAnimation.startValue;}else{animation.startTime=now;animation.startValue=value;}animation.current=value;if(typeof config.easing==='object'){animation.easing=config.easing.factory();}else{animation.easing=config.easing;}}return{type:'timing',onFrame:timing,onStart:onStart,progress:0,toValue:toValue,startValue:0,startTime:0,easing:function(){return 0;},current:toValue,callback:callback,reduceMotion:getReduceMotionForAnimation((_userConfig=userConfig)===null||_userConfig===void 0?void 0:_userConfig.reduceMotion)};}";
     var1.code = var4;
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: pnpm_timingTs1, environment: var0
+    var1 = function arg0, arg1, arg2() {
         var3 = arg0;
         var11 = arg1;
         var10 = arg2;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = undefined;
         var2 = var8.bind(var7)(var1);
         var1 = var2.defineAnimation;
-        var0 = function() { // Original name: pnpm_timingTs2, environment: var0
+        var0 = function() {
             _fun33564: for (var _fun33564_ip = 0;;) switch (_fun33564_ip) {
                 case 0:
                     var0 = {};
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         'startValue': 0,
                         'startTime': 0
                     };
-                    var3 = function(arg0, arg1) { // Original name: timing, environment: var6
+                    var3 = function arg0, arg1() {
                         _fun33566: for (var _fun33566_ip = 0;;) switch (_fun33566_ip) {
                             case 0:
                                 var1 = arg0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onFrame = var3;
-                    var3 = function(arg0, arg1, arg2, arg3) { // Original name: onStart, environment: var6
+                    var3 = function arg0, arg1, arg2, arg3() {
                         _fun33567: for (var _fun33567_ip = 0;;) switch (_fun33567_ip) {
                             case 0:
                                 var1 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = 0;
                     var3 = _closure2_slot0;
                     var0.toValue = var3;
-                    var6 = function() { // Original name: easing, environment: var6
+                    var6 = function() {
                         var0 = 0;
                         return var0;
                     };

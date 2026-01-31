@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Module';
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
-    var0 = function(arg0, arg1, arg2) { // Original name: debounce, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun9492: for (var _fun9492_ip = 0;;) switch (_fun9492_ip) {
             case 0:
                 var9 = arg1;
@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var _closure2_slot1 = var9;
-                var0 = function() { // Original name: invokeFunc, environment: var1
+                var0 = function() {
                     var0 = _closure2_slot8;
                     var2 = undefined;
                     var0 = var0.bind(var2)();
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot7 = var0;
-                var2 = function() { // Original name: cancelTimers, environment: var1
+                var2 = function() {
                     _fun9494: for (var _fun9494_ip = 0;;) switch (_fun9494_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot8 = var2;
-                var0 = function() { // Original name: debounced, environment: var1
+                var0 = function() {
                     _fun9495: for (var _fun9495_ip = 0;;) switch (_fun9495_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 119:
                 var _closure2_slot6 = var3;
                 var0.cancel = var2;
-                var1 = function() { // Original name: flush, environment: var1
+                var1 = function() {
                     _fun9496: for (var _fun9496_ip = 0;;) switch (_fun9496_ip) {
                         case 0:
                             var0 = _closure2_slot3;

@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3.valueOf;
         case 58:
             var _closure1_slot2 = var2;
-            var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: equalByTag, environment: var1
+            var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
                 _fun31596: for (var _fun31596_ip = 0;;) switch (_fun31596_ip) {
                     case 0:
                         var1 = arg0;

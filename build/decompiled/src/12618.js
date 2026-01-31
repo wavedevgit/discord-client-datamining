@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96836
             }
         case 63:
-            var2 = function(arg0, arg1) { // Original name: hasOwn, environment: var1
+            var2 = function arg0, arg1() {
                 var3 = _closure1_slot2;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;

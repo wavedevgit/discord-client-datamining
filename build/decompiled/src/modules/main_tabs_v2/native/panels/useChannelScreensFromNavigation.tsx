@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: getActiveTabsRoute, environment: var1
+    var3 = function arg0() {
         _fun100618: for (var _fun100618_ip = 0;;) switch (_fun100618_ip) {
             case 0:
                 var2 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var0 = function(arg0) { // Original name: resolveBackgroundScreen, environment: var1
+    var0 = function arg0() {
         _fun100619: for (var _fun100619_ip = 0;;) switch (_fun100619_ip) {
             case 0:
                 var0 = arg0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: resolveChannelScreens, environment: var1
+    var0 = function arg0, arg1() {
         _fun100620: for (var _fun100620_ip = 0;;) switch (_fun100620_ip) {
             case 0:
                 var7 = arg0;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/main_tabs_v2/native/panels/useChannelScreensFromNavigation.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: useChannelScreensFromNavigation, environment: var1
+    var5 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var3 = _closure1_slot1;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            var4 = function(arg0) { // Original name: handleStateChange, environment: var0
+            var4 = function arg0() {
                 var3 = _closure1_slot13;
                 var1 = arg0;
                 var1 = var1.data;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.ChannelScreenType = var4;
     var2.getActiveTabsRoute = var3;
-    var1 = function(arg0) { // Original name: isActiveTabsGuilds, environment: var1
+    var1 = function arg0() {
         _fun100630: for (var _fun100630_ip = 0;;) switch (_fun100630_ip) {
             case 0:
                 var0 = arg0;

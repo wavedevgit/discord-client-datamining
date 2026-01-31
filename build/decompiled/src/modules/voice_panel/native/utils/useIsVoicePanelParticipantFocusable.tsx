@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0, arg1, arg2) { // Original name: isVoicePanelParticipantFocusable, environment: var3
+    var1 = function arg0, arg1, arg2() {
         _fun110697: for (var _fun110697_ip = 0;;) switch (_fun110697_ip) {
             case 0:
                 var6 = arg2;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1, arg2) { // Original name: useIsVoicePanelParticipantFocusable, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

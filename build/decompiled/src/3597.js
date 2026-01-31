@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function() { // Environment: var0
         _fun32227: for (var _fun32227_ip = 0;;) switch (_fun32227_ip) {
             case 0:
-                var2 = function() { // Original name: classNames, environment: var3
+                var2 = function() {
                     _fun32228: for (var _fun32228_ip = 0;;) switch (_fun32228_ip) {
                         case 0:
                             var5 = undefined;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot1 = var2;
-                var0 = function(arg0) { // Original name: parseValue, environment: var3
+                var0 = function arg0() {
                     _fun32229: for (var _fun32229_ip = 0;;) switch (_fun32229_ip) {
                         case 0:
                             var0 = arg0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot2 = var0;
-                var0 = function(arg0, arg1) { // Original name: appendClass, environment: var3
+                var0 = function arg0, arg1() {
                     _fun32230: for (var _fun32230_ip = 0;;) switch (_fun32230_ip) {
                         case 0:
                             var4 = arg0;

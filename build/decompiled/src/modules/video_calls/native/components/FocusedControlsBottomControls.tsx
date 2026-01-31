@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: FocusedControlsExpanded, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var10 = var1.expandedControls;
         var5 = var1.availableHeight;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var14[var7];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: u, environment: var0
+        var0 = function() {
             _fun68783: for (var _fun68783_ip = 0;;) switch (_fun68783_ip) {
                 case 0:
                     var0 = global;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: FocusedControlsBottomDrawerTooltip, environment: var3
+    var0 = function arg0() {
         _fun68784: for (var _fun68784_ip = 0;;) switch (_fun68784_ip) {
             case 0:
                 var1 = arg0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3[var1];
                 var5 = var5.bind(var4)(var3);
                 var3 = var5.useAnimatedStyle;
-                var0 = function() { // Original name: o, environment: var0
+                var0 = function() {
                     var0 = {};
                     var1 = global;
                     var4 = var1.Math;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: FocusedControlsAboveActionBarView, environment: var3
+    var0 = function arg0() {
         _fun68786: for (var _fun68786_ip = 0;;) switch (_fun68786_ip) {
             case 0:
                 var1 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var16[var15];
                 var2 = var10.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: _, environment: var0
+                var0 = function() {
                     var0 = {};
                     var1 = global;
                     var4 = var1.Math;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var1 = function(arg0) { // Original name: FocusedControlsBottomDrawer, environment: var3
+    var1 = function arg0() {
         _fun68788: for (var _fun68788_ip = 0;;) switch (_fun68788_ip) {
             case 0:
                 var2 = arg0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot18;
                 var6 = var6.bind(var3)(var7);
                 var5.landscapeOffsetY = var6;
-                var6 = function() { // Original name: onClose, environment: var0
+                var6 = function() {
                     _fun68800: for (var _fun68800_ip = 0;;) switch (_fun68800_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var5.onClose = var6;
                 var5.onOpen = var4;
-                var4 = function(arg0) { // Original name: useDrawerGesture, environment: var0
+                var4 = function arg0() {
                     var1 = arg0;
                     var18 = var1.controlMaxHeight;
                     var _closure3_slot0 = var18;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot6 = var11;
                     var _closure3_slot7 = var11;
                     var _closure3_slot13 = var11;
-                    var13 = function() { // Original name: handleOpen, environment: var0
+                    var13 = function() {
                         _fun68790: for (var _fun68790_ip = 0;;) switch (_fun68790_ip) {
                             case 0:
                                 var1 = _closure3_slot6;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot14 = var13;
-                    var8 = function() { // Original name: handleClose, environment: var0
+                    var8 = function() {
                         _fun68791: for (var _fun68791_ip = 0;;) switch (_fun68791_ip) {
                             case 0:
                                 var1 = _closure3_slot6;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var12[var14];
                     var7 = var10.bind(var11)(var2);
                     var3 = var7.useDerivedValue;
-                    var2 = function() { // Original name: h, environment: var0
+                    var2 = function() {
                         _fun68792: for (var _fun68792_ip = 0;;) switch (_fun68792_ip) {
                             case 0:
                                 var0 = _closure3_slot1;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var5.Pan;
                     var7 = var3.bind(var5)();
                     var5 = var7.onStart;
-                    var3 = function() { // Original name: b, environment: var0
+                    var3 = function() {
                         _fun68795: for (var _fun68795_ip = 0;;) switch (_fun68795_ip) {
                             case 0:
                                 var3 = _closure1_slot0;
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.__initData = var19;
                     var7 = var5.bind(var7)(var3);
                     var5 = var7.onUpdate;
-                    var3 = function(arg0) { // Original name: N, environment: var0
+                    var3 = function arg0() {
                         _fun68796: for (var _fun68796_ip = 0;;) switch (_fun68796_ip) {
                             case 0:
                                 var0 = arg0;
@@ -856,10 +856,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.__initData = var19;
                     var5 = var5.bind(var7)(var3);
                     var3 = var5.onEnd;
-                    var0 = function() { // Original name: H, environment: var0
+                    var0 = function() {
                         _fun68797: for (var _fun68797_ip = 0;;) switch (_fun68797_ip) {
                             case 0:
-                                var2 = function() { // Original name: openDrawer, environment: var0
+                                var2 = function() {
                                     var3 = _closure1_slot0;
                                     var4 = _closure1_slot2;
                                     var2 = 13;
@@ -909,7 +909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = var2.bind(var0)(var1);
                                     return var0;
                                 };
-                                var1 = function() { // Original name: closeDrawer, environment: var0
+                                var1 = function() {
                                     var2 = _closure3_slot10;
                                     var0 = var2.set;
                                     var10 = 0;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var27[var7];
                 var6 = var25.bind(var3)(var4);
                 var5 = var6.useAnimatedStyle;
-                var4 = function() { // Original name: E, environment: var0
+                var4 = function() {
                     _fun68801: for (var _fun68801_ip = 0;;) switch (_fun68801_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -1263,7 +1263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var14;
                 var1 = function() { // Environment: var0
-                    var4 = function() { // Original name: handleSelectActivity, environment: var0
+                    var4 = function() {
                         var3 = _closure2_slot8;
                         var2 = var3.set;
                         var5 = _closure1_slot0;
@@ -1312,7 +1312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var27[var7];
                 var5 = var25.bind(var3)(var1);
                 var2 = var5.useAnimatedStyle;
-                var1 = function() { // Original name: ee, environment: var0
+                var1 = function() {
                     var0 = {};
                     var2 = _closure2_slot5;
                     var0.height = var2;
@@ -1520,7 +1520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var4;
     var4 = 20;
     var _closure1_slot16 = var4;
-    var4 = function(arg0) { // Original name: EXTENDED_CONTROLS_OFFSET_Y, environment: var3
+    var4 = function arg0() {
         _fun68810: for (var _fun68810_ip = 0;;) switch (_fun68810_ip) {
             case 0:
                 var1 = arg0;
@@ -1547,7 +1547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var4;
-    var4 = function(arg0) { // Original name: EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y, environment: var3
+    var4 = function arg0() {
         var1 = arg0;
         var0 = 54;
         var1 = var1 + var0;
@@ -1709,7 +1709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/video_calls/native/components/FocusedControlsBottomControls.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: FocusedControlsBottomControls, environment: var3
+    var3 = function arg0() {
         _fun68812: for (var _fun68812_ip = 0;;) switch (_fun68812_ip) {
             case 0:
                 var1 = arg0;

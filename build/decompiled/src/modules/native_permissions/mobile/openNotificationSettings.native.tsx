@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/native_permissions/mobile/openNotificationSettings.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: openNotificationSettings, environment: var1
+    var1 = function() {
         _fun68779: for (var _fun68779_ip = 0;;) switch (_fun68779_ip) {
             case 0:
                 var3 = _closure1_slot0;

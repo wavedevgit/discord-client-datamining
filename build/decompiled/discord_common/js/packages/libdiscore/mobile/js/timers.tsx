@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = require;
     var2 = exports;
     var8 = dependencyMap;
-    var5 = function(arg0, arg1) { // Original name: setTimeout, environment: var1
+    var5 = function arg0, arg1() {
         _fun37593: for (var _fun37593_ip = 0;;) switch (_fun37593_ip) {
             case 0:
                 var0 = arg1;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0, arg1) { // Original name: setInterval, environment: var1
+    var4 = function arg0, arg1() {
         _fun37594: for (var _fun37594_ip = 0;;) switch (_fun37594_ip) {
             case 0:
                 var0 = arg1;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: clearTimeout, environment: var1
+    var3 = function arg0() {
         _fun37595: for (var _fun37595_ip = 0;;) switch (_fun37595_ip) {
             case 0:
                 var2 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'slowExecutionThresholdMillis': 500,
         'delayedExecutionThresholdMillis': 5000
     };
-    var9 = function(arg0, arg1, arg2, arg3) { // Original name: onSlowTimer, environment: var1
+    var9 = function arg0, arg1, arg2, arg3() {
         _fun37596: for (var _fun37596_ip = 0;;) switch (_fun37596_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6 instanceof Object ? var6 : var9;
     var _closure1_slot2 = var6;
     var9 = var11.makeTimerManager;
-    var6 = function(arg0, arg1) { // Original name: expirationCallback, environment: var1
+    var6 = function arg0, arg1() {
         _fun37597: for (var _fun37597_ip = 0;;) switch (_fun37597_ip) {
             case 0:
                 var3 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = '../discord_common/js/packages/libdiscore/mobile/js/timers.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: setTimersMonitorCallback, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         _closure1_slot1 = var0;
         var0 = undefined;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.setInterval = var4;
     var2.clearTimeout = var3;
     var2.clearInterval = var3;
-    var3 = function() { // Original name: registerTimerPolyfills, environment: var1
+    var3 = function() {
         var1 = global;
         var3 = var1.window;
         var2 = _closure1_slot5;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.registerTimerPolyfills = var3;
-    var1 = function() { // Original name: keepAliveWorkaround, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = var2.runtimeExecutorDemo;
         var0 = 5000;

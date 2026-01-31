@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: randomFolderId, environment: var1
+    var0 = function() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.floor;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var4;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: GuildsTree, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getSnapshot';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun40172: for (var _fun40172_ip = 0;;) switch (_fun40172_ip) {
                 case 0:
                     var3 = this;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'loadSnapshot';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40175: for (var _fun40175_ip = 0;;) switch (_fun40175_ip) {
                 case 0:
                     var3 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'moveNextTo';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40178: for (var _fun40178_ip = 0;;) switch (_fun40178_ip) {
                 case 0:
                     var2 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'moveInto';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40179: for (var _fun40179_ip = 0;;) switch (_fun40179_ip) {
                 case 0:
                     var2 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'addNode';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40180: for (var _fun40180_ip = 0;;) switch (_fun40180_ip) {
                 case 0:
                     var4 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeNode';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var4 = _closure1_slot1;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'replaceNode';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun40182: for (var _fun40182_ip = 0;;) switch (_fun40182_ip) {
                 case 0:
                     var1 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'cloneNode';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 3;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'convertToFolder';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun40184: for (var _fun40184_ip = 0;;) switch (_fun40184_ip) {
                 case 0:
                     var4 = arg0;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'allNodes';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.values;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getNode';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var1 = var0.nodes;
             var0 = arg0;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRoots';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.root;
             var0 = var0.children;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'size';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.allNodes;
             var0 = var0.bind(var1)();
@@ -649,8 +649,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'sortedGuildNodes';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
-            var2 = function(arg0) { // Original name: collectChildren, environment: var0
+        var5 = function() {
+            var2 = function arg0() {
                 _fun40190: for (var _fun40190_ip = 0;;) switch (_fun40190_ip) {
                     case 0:
                         var2 = arg0;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_pluckNode';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun40192: for (var _fun40192_ip = 0;;) switch (_fun40192_ip) {
                 case 0:
                     var1 = arg0;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.GuildsNodeType = var4;
     var2.GuildsTree = var3;
-    var3 = function(arg0, arg1) { // Original name: createGuildNode, environment: var1
+    var3 = function arg0, arg1() {
         var0 = {};
         var1 = _closure1_slot5;
         var1 = var1.GUILD;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGuildNode = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: createFolderNode, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun40195: for (var _fun40195_ip = 0;;) switch (_fun40195_ip) {
             case 0:
                 var3 = arg0;

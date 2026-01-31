@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var3 = function(arg0) { // Original name: savedMessageDataToClient, environment: var1
+    var3 = function arg0() {
         _fun75842: for (var _fun75842_ip = 0;;) switch (_fun75842_ip) {
             case 0:
                 var2 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.SavedMessageSortTypes = var4;
     var2.savedMessageDataToClient = var3;
-    var3 = function(arg0) { // Original name: savedMessageCreateObjectToClient, environment: var1
+    var3 = function arg0() {
         _fun75843: for (var _fun75843_ip = 0;;) switch (_fun75843_ip) {
             case 0:
                 var1 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.savedMessageCreateObjectToClient = var3;
-    var1 = function(arg0) { // Original name: savedMessageDeleteObjectToClient, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.channel_id;

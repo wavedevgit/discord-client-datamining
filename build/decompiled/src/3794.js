@@ -26,13 +26,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun34068
             }
         case 77:
-            var1 = function() { // Original name: createUpdateManager, environment: var3
+            var1 = function() {
                 var0 = new Array(0);
                 var _closure2_slot0 = var0;
                 var0 = new Array(0);
                 var _closure2_slot1 = var0;
                 var0 = {};
-                var2 = function(arg0, arg1) { // Original name: update, environment: var1
+                var2 = function arg0, arg1() {
                     _fun34071: for (var _fun34071_ip = 0;;) switch (_fun34071_ip) {
                         case 0:
                             var4 = arg0;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.update = var2;
-                var1 = function() { // Original name: flush, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 1;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1 = var1.bind(var0)();
             var _closure1_slot2 = var1;
-            var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: updateLayoutAnimations, environment: var3
+            var1 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun34073: for (var _fun34073_ip = 0;;) switch (_fun34073_ip) {
                     case 0:
                         var6 = arg2;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34068_ip = 102;
             continue _fun34068;
         case 97:
-            var1 = function() { // Original name: updateLayoutAnimations, environment: var3
+            var1 = function() {
                 var0 = undefined;
                 return var0;
             };

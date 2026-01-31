@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun62457: for (var _fun62457_ip = 0;;) switch (_fun62457_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: resetOutboxes, environment: var3
+    var0 = function() {
         var0 = global;
         var1 = var0.Map;
         var2 = var1.prototype;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ContentInventoryOutboxStore, environment: var5
+        var3 = function() {
             _fun62462: for (var _fun62462_ip = 0;;) switch (_fun62462_ip) {
                 case 0:
                     var3 = this;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getMatchingOutboxEntry';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun62463: for (var _fun62463_ip = 0;;) switch (_fun62463_ip) {
                 case 0:
                     var0 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserOutbox';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot7;
             var1 = var2.get;
             var0 = arg0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingUserOutbox';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot8;
             var1 = var2.has;
             var0 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'deleteOutboxEntryError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isDeletingEntryHistory';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasInitialized';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleConnectionOpen, environment: var3
+    var8 = function() {
         var1 = _closure1_slot13;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -296,14 +296,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function() { // Original name: handleLogOut, environment: var3
+    var8 = function() {
         var1 = _closure1_slot13;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleFetchOutboxStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.userId;
         var1 = _closure1_slot8;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_FETCH_OUTBOX_START = var8;
-    var8 = function(arg0) { // Original name: handleFetchOutboxSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var7 = var0.outbox;
         var2 = var0.userId;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchOutboxFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.userId;
         var1 = _closure1_slot8;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE = var8;
-    var8 = function() { // Original name: handleDeleteOutboxEntryStart, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot9 = var0;
         var0 = true;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START = var8;
-    var8 = function(arg0) { // Original name: handleDeleteOutboxEntrySuccess, environment: var3
+    var8 = function arg0() {
         _fun62475: for (var _fun62475_ip = 0;;) switch (_fun62475_ip) {
             case 0:
                 var1 = arg0;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleDeleteOutboxEntryFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.error;
         _closure1_slot9 = var0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE = var8;
-    var3 = function() { // Original name: handleClearError, environment: var3
+    var3 = function() {
         var0 = null;
         _closure1_slot9 = var0;
         var0 = false;

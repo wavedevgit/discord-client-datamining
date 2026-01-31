@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: StickerPackDetailActionSheet, environment: var1
+    var1 = function arg0() {
         _fun74298: for (var _fun74298_ip = 0;;) switch (_fun74298_ip) {
             case 0:
                 var1 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.useRef;
                 var2 = var2.bind(var4)(var1);
                 var _closure2_slot8 = var2;
-                var2 = function(arg0) { // Original name: onPressSticker, environment: var15
+                var2 = function arg0() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot9 = var2;
-                var9 = function() { // Original name: toggleDisplayingPackDetails, environment: var15
+                var9 = function() {
                     _fun74300: for (var _fun74300_ip = 0;;) switch (_fun74300_ip) {
                         case 0:
                             var0 = _closure2_slot6;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.accessibilityRole = var16;
                 var16 = var10.focusedStickerPreviewContainer;
                 var8.style = var16;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     var2 = _closure2_slot3;
                     var1 = undefined;
                     var0 = null;

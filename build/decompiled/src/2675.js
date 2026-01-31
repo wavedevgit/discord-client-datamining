@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0, arg1) { // Original name: declension, environment: var2
+    var0 = function arg0, arg1() {
         _fun22149: for (var _fun22149_ip = 0;;) switch (_fun22149_ip) {
             case 0:
                 var0 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var0;
-    var5 = function(arg0) { // Original name: buildLocalizeTokenFn, environment: var2
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0, arg1) { // Environment: var0
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.future = var6;
     var4 = var5.bind(var0)(var4);
     var3.xSeconds = var4;
-    var4 = function(arg0, arg1) { // Original name: halfAtMinute, environment: var2
+    var4 = function arg0, arg1() {
         _fun22152: for (var _fun22152_ip = 0;;) switch (_fun22152_ip) {
             case 0:
                 var2 = arg1;
@@ -454,7 +454,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun22153: for (var _fun22153_ip = 0;;) switch (_fun22153_ip) {
             case 0:
                 var3 = arg2;

@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getScreens, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = arg2;
         var _closure2_slot1 = var0;
         var0 = arg3;
         var _closure2_slot2 = var0;
-        var0 = function() { // Original name: handleClose, environment: var3
+        var0 = function() {
             var1 = _closure2_slot2;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.headerStyle = var4;
         var4 = arg4;
         var1.headerTitle = var4;
-        var4 = function() { // Original name: headerLeft, environment: var3
+        var4 = function() {
             var3 = _closure1_slot5;
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.headerLeft = var4;
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var1 = {};
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'VERIFY_AGE';
     var3.VERIFY_AGE = var6;
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: AgeVerifyScreen, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.webviewUrl;
         var11 = var0.onComplete;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_assurance/native/AgeVerificationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AgeVerificationModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var12 = var1.webviewUrl;
         var _closure2_slot0 = var12;

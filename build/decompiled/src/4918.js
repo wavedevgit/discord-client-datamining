@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var0 = 'function pnpm_noopTs1(){}';
     var3.code = var0;
-    var0 = function() { // Original name: pnpm_noopTs1, environment: var2
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 16791771801238.0;
     var0.__workletHash = var4;
     var0.__initData = var3;
-    var2 = function() { // Original name: noop, environment: var2
+    var2 = function() {
         var0 = undefined;
         return var0;
     };

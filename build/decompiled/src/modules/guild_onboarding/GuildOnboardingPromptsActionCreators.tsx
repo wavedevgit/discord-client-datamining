@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: fetchOnboardingPrompts, environment: var3
+    var4 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var2 = _closure1_slot1;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var4;
-    var0 = function() { // Original name: _maybeFetchOnboardingPrompts, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var1 = function(arg0) { // Original name: startOnboarding, environment: var3
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var1;
-    var0 = function(arg0) { // Original name: _trackOnboardingDirectJoin, environment: var3
+    var0 = function arg0() {
         var10 = arg0;
         var2 = _closure1_slot1;
         var11 = _closure1_slot2;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_onboarding/GuildOnboardingPromptsActionCreators.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: loadOnboardingPrompts, environment: var3
+    var5 = function arg0() {
         var2 = _closure1_slot1;
         var7 = _closure1_slot2;
         var0 = 8;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.loadOnboardingPrompts = var5;
     var2.fetchOnboardingPrompts = var4;
-    var3 = function() { // Original name: maybeFetchOnboardingPrompts, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;

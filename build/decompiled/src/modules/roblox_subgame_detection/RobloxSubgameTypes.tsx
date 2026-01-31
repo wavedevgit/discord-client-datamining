@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var4 = function(arg0) { // Original name: ROBLOX_PROTOCOL_URL, environment: var1
+    var4 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot0 = var4;
-    var3 = function(arg0) { // Original name: ROBLOX_WEB_URL, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;

@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var1;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getNameAndValue, environment: var4
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38334: for (var _fun38334_ip = 0;;) switch (_fun38334_ip) {
             case 0:
                 var13 = arg0;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getCompressionMethod, environment: var4
+    var0 = function arg0() {
         _fun38337: for (var _fun38337_ip = 0;;) switch (_fun38337_ip) {
             case 0:
                 var0 = arg0;
@@ -350,7 +350,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: moveToNextState, environment: var4
+    var0 = function arg0, arg1() {
         _fun38338: for (var _fun38338_ip = 0;;) switch (_fun38338_ip) {
             case 0:
                 var3 = arg0;
@@ -431,7 +431,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: constructTag, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun38339: for (var _fun38339_ip = 0;;) switch (_fun38339_ip) {
             case 0:
                 var4 = arg0;
@@ -483,7 +483,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getName, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun38340: for (var _fun38340_ip = 0;;) switch (_fun38340_ip) {
             case 0:
                 var3 = arg1;
@@ -534,7 +534,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: getDescription, environment: var4
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -548,7 +548,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: isExifGroupTag, environment: var4
+    var0 = function arg0, arg1() {
         _fun38342: for (var _fun38342_ip = 0;;) switch (_fun38342_ip) {
             case 0:
                 var1 = arg0;
@@ -573,7 +573,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: isIptcGroupTag, environment: var4
+    var0 = function arg0, arg1() {
         _fun38343: for (var _fun38343_ip = 0;;) switch (_fun38343_ip) {
             case 0:
                 var1 = arg0;
@@ -598,7 +598,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: decodeRawData, environment: var4
+    var0 = function arg0() {
         _fun38344: for (var _fun38344_ip = 0;;) switch (_fun38344_ip) {
             case 0:
                 var2 = arg0;
@@ -677,7 +677,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var3.bind(var0)(var1);
     var _closure1_slot3 = var1;
     var1 = {};
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: read, environment: var4
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun38345: for (var _fun38345_ip = 0;;) switch (_fun38345_ip) {
             case 0:
                 var13 = arg0;

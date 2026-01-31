@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.MAX_PINS_PER_CHANNEL;
     var _closure1_slot8 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: pinMessage, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.pinMessage = var6;
-    var6 = function(arg0, arg1) { // Original name: unpinMessage, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.unpinMessage = var6;
-    var6 = function(arg0) { // Original name: ackPins, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ackPins = var6;
-    var6 = function(arg0, arg1) { // Original name: fetchPins, environment: var3
+    var6 = function arg0, arg1() {
         _fun75716: for (var _fun75716_ip = 0;;) switch (_fun75716_ip) {
             case 0:
                 var10 = arg0;

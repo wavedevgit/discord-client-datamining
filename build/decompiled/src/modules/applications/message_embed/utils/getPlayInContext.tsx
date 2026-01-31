@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/message_embed/utils/getPlayInContext.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: usePlayInContext, environment: var1
+    var3 = function arg0() {
         _fun88750: for (var _fun88750_ip = 0;;) switch (_fun88750_ip) {
             case 0:
                 var1 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.usePlayInContext = var3;
-    var1 = function(arg0, arg1) { // Original name: getPlayInContext, environment: var1
+    var1 = function arg0, arg1() {
         _fun88755: for (var _fun88755_ip = 0;;) switch (_fun88755_ip) {
             case 0:
                 var8 = arg1;

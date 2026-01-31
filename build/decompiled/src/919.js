@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _extractErrorData, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun9592: for (var _fun9592_ip = 0;;) switch (_fun9592_ip) {
             case 0:
                 var4 = arg0;
@@ -280,7 +280,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _extraErrorDataIntegration, environment: var1
+    var1 = function() {
         _fun9593: for (var _fun9593_ip = 0;;) switch (_fun9593_ip) {
             case 0:
                 var0 = undefined;
@@ -327,14 +327,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ExtraErrorData';
                 var0.name = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     var1 = arg2;
                     var0 = var1.getOptions;
                     var0 = var0.bind(var1)();
                     var7 = var0.maxValueLength;
                     var9 = _closure2_slot0;
                     var8 = _closure2_slot1;
-                    var3 = function(arg0) { // Original name: _enhanceEventWithErrorData, environment: var0
+                    var3 = function arg0() {
                         _fun9595: for (var _fun9595_ip = 0;;) switch (_fun9595_ip) {
                             case 0:
                                 var4 = arg0;

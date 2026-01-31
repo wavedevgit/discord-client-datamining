@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: decorateWithIcon, environment: var6
+    var0 = function arg0() {
         _fun44108: for (var _fun44108_ip = 0;;) switch (_fun44108_ip) {
             case 0:
                 var2 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var7 = ['\\'];
     var3.requiredFirstCharacters = var7;
-    var7 = function(arg0, arg1) { // Original name: match, environment: var6
+    var7 = function arg0, arg1() {
         _fun44110: for (var _fun44110_ip = 0;;) switch (_fun44110_ip) {
             case 0:
                 var0 = arg1;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = copyDataProperties(var12, var11);
     var7 = 'requiredFirstCharacters';
     var3[var7] = var0;
-    var9 = function(arg0) { // Original name: match, environment: var6
+    var9 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.exec;
         var0 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var7] = var9;
     var1.invisibleUnicode = var3;
     var3 = {};
-    var7 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var7 = function arg0, arg1, arg2() {
         _fun44112: for (var _fun44112_ip = 0;;) switch (_fun44112_ip) {
             case 0:
                 var2 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.parse = var7;
     var1.text = var3;
     var3 = {};
-    var7 = function(arg0) { // Original name: parse, environment: var6
+    var7 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.order = var9;
     var9 = ['<'];
     var3.requiredFirstCharacters = var9;
-    var9 = function(arg0) { // Original name: match, environment: var6
+    var9 = function arg0() {
         var2 = /^<(a)?:(\w+):(\d+)>/;
         var1 = var2.exec;
         var0 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.match = var9;
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var9 = function arg0, arg1, arg2() {
         _fun44115: for (var _fun44115_ip = 0;;) switch (_fun44115_ip) {
             case 0:
                 var2 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.parse = var9;
     var1.customEmoji = var3;
     var3 = {};
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var9 = function arg0, arg1, arg2() {
         var1 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 6;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.parse = var9;
     var1.channelMention = var3;
     var3 = {};
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var9 = function arg0, arg1, arg2() {
         var1 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 6;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.parse = var9;
     var1.channelOrMessageUrl = var3;
     var3 = {};
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var9 = function arg0, arg1, arg2() {
         var1 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 6;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.parse = var9;
     var1.mediaPostLink = var3;
     var3 = {};
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var9 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.order = var7;
     var7 = ['@'];
     var3.requiredFirstCharacters = var7;
-    var7 = function(arg0) { // Original name: match, environment: var6
+    var7 = function arg0() {
         var2 = /^(@silent(?![^\s]))/;
         var1 = var2.exec;
         var0 = arg0;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.match = var7;
-    var6 = function(arg0) { // Original name: parse, environment: var6
+    var6 = function arg0() {
         var0 = {};
         var1 = 'text';
         var0.type = var1;

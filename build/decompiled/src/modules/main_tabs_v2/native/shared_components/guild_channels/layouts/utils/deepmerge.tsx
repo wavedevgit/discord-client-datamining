@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var4;
     var1 = '__esModule';
     var1 = var5.bind(var6)(var2, var1, var3);
-    var1 = function(arg0) { // Original name: isObject, environment: var0
+    var1 = function arg0() {
         _fun70000: for (var _fun70000_ip = 0;;) switch (_fun70000_ip) {
             case 0:
                 var4 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: merge, environment: var0
+    var1 = function arg0() {
         var5 = 0;
         var3 = copyRestArgs(var5);
         var2 = var3.reduce;

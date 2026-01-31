@@ -8,7 +8,7 @@ var7 = require;
         var _closure1_slot0 = var7;
         var _closure1_slot1 = var4;
         var _closure1_slot2 = var8;
-        var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+        var0 = function arg0, arg1() {
             _fun24842: for(var _fun24842_ip = 0; ; ) switch(_fun24842_ip) {
 case 0:
                 var2 = arg0;
@@ -151,7 +151,7 @@ case 343:
             }
         };
         var _closure1_slot17 = var0;
-        var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+        var0 = function arg0, arg1() {
             _fun24844: for(var _fun24844_ip = 0; ; ) switch(_fun24844_ip) {
 case 0:
                 var3 = arg0;
@@ -184,7 +184,7 @@ case 70:
             }
         };
         var _closure1_slot18 = var0;
-        var0 = function(arg0) { // Original name: getEmojiObjectByName, environment: var1
+        var0 = function arg0() {
             _fun24845: for(var _fun24845_ip = 0; ; ) switch(_fun24845_ip) {
 case 0:
                 var2 = _closure1_slot0;
@@ -211,7 +211,7 @@ case 74:
             }
         };
         var _closure1_slot19 = var0;
-        var0 = function(arg0) { // Original name: getEmojiObjectBySurrogate, environment: var1
+        var0 = function arg0() {
             _fun24846: for(var _fun24846_ip = 0; ; ) switch(_fun24846_ip) {
 case 0:
                 var2 = _closure1_slot0;
@@ -238,7 +238,7 @@ case 74:
             }
         };
         var _closure1_slot20 = var0;
-        var0 = function(arg0) { // Original name: parseRawEmojiObject, environment: var1
+        var0 = function arg0() {
             _fun24847: for(var _fun24847_ip = 0; ; ) switch(_fun24847_ip) {
 case 0:
                 var4 = arg0;
@@ -264,7 +264,7 @@ case 70:
             }
         };
         var _closure1_slot21 = var0;
-        var13 = function(arg0) { // Original name: getByName, environment: var1
+        var13 = function arg0() {
             _fun24848: for(var _fun24848_ip = 0; ; ) switch(_fun24848_ip) {
 case 0:
                 var2 = _closure1_slot19;
@@ -282,7 +282,7 @@ case 35:
             }
         };
         var _closure1_slot22 = var13;
-        var12 = function(arg0) { // Original name: contentHasUnicodeOrEmoji, environment: var1
+        var12 = function arg0() {
             var2 = _closure1_slot10;
             var1 = var2.test;
             var0 = arg0;
@@ -290,7 +290,7 @@ case 35:
             return var0;
         };
         var _closure1_slot23 = var12;
-        var0 = function(arg0) { // Original name: emojiNameOrUnicodeSequence, environment: var1
+        var0 = function arg0() {
             _fun24850: for(var _fun24850_ip = 0; ; ) switch(_fun24850_ip) {
 case 0:
                 var2 = arg0;
@@ -329,7 +329,7 @@ case 103:
             }
         };
         var _closure1_slot24 = var0;
-        var11 = function(arg0, arg1) { // Original name: findInlineEmojisFromSurrogates, environment: var1
+        var11 = function arg0, arg1() {
             _fun24851: for(var _fun24851_ip = 0; ; ) switch(_fun24851_ip) {
 case 0:
                 var4 = arg0;
@@ -467,7 +467,7 @@ case 403:
             }
         };
         var _closure1_slot25 = var11;
-        var10 = function(arg0) { // Original name: convertNameToSurrogate, environment: var1
+        var10 = function arg0() {
             _fun24852: for(var _fun24852_ip = 0; ; ) switch(_fun24852_ip) {
 case 0:
                 var0 = arguments[1];
@@ -494,7 +494,7 @@ case 51:
             }
         };
         var _closure1_slot26 = var10;
-        var9 = function(arg0) { // Original name: convertSurrogateToName, environment: var1
+        var9 = function arg0() {
             _fun24853: for(var _fun24853_ip = 0; ; ) switch(_fun24853_ip) {
 case 0:
                 var1 = arguments[1];
@@ -577,7 +577,7 @@ case 95:
         var _closure1_slot11 = var3;
         var3 = function() { // Environment: var1
             var3 = _closure1_slot4;
-            var2 = function(arg0) { // Original name: Emoji, environment: var4
+            var2 = function arg0() {
                 _fun24855: for(var _fun24855_ip = 0; ; ) switch(_fun24855_ip) {
 case 0:
                     var1 = arg0;
@@ -651,7 +651,7 @@ case 265:
             var0 = {};
             var1 = 'names';
             var0.key = var1;
-            var1 = function() { // Original name: get, environment: var4
+            var1 = function () {
                 var0 = this;
                 var0 = var0.emojiObject;
                 var0 = var0.names;
@@ -663,7 +663,7 @@ case 265:
             var0 = {};
             var5 = 'allNamesString';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 _fun24857: for(var _fun24857_ip = 0; ; ) switch(_fun24857_ip) {
 case 0:
                     var1 = this;
@@ -698,7 +698,7 @@ case 95:
             var0 = {};
             var5 = 'unicodeVersion';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 _fun24858: for(var _fun24858_ip = 0; ; ) switch(_fun24858_ip) {
 case 0:
                     var0 = this;
@@ -719,7 +719,7 @@ case 28:
             var0 = {};
             var5 = 'hasDiversity';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 var0 = this;
                 var0 = var0.emojiObject;
                 var0 = var0.hasDiversity;
@@ -730,7 +730,7 @@ case 28:
             var0 = {};
             var5 = 'hasMultiDiversity';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 var0 = this;
                 var0 = var0.emojiObject;
                 var0 = var0.hasMultiDiversity;
@@ -741,7 +741,7 @@ case 28:
             var0 = {};
             var5 = 'hasDiversityParent';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 var0 = this;
                 var0 = var0.emojiObject;
                 var0 = var0.hasDiversityParent;
@@ -752,7 +752,7 @@ case 28:
             var0 = {};
             var5 = 'hasMultiDiversityParent';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 var0 = this;
                 var0 = var0.emojiObject;
                 var0 = var0.hasMultiDiversityParent;
@@ -763,7 +763,7 @@ case 28:
             var0 = {};
             var5 = 'managed';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 var0 = true;
                 return var0;
             };
@@ -772,7 +772,7 @@ case 28:
             var0 = {};
             var5 = 'animated';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 var0 = false;
                 return var0;
             };
@@ -781,7 +781,7 @@ case 28:
             var0 = {};
             var5 = 'defaultDiversityChild';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 _fun24865: for(var _fun24865_ip = 0; ; ) switch(_fun24865_ip) {
 case 0:
                     var0 = this;
@@ -816,7 +816,7 @@ case 68:
             var0 = {};
             var5 = 'url';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 _fun24866: for(var _fun24866_ip = 0; ; ) switch(_fun24866_ip) {
 case 0:
                     var0 = this;
@@ -853,7 +853,7 @@ case 99:
             var0 = {};
             var5 = 'name';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 _fun24867: for(var _fun24867_ip = 0; ; ) switch(_fun24867_ip) {
 case 0:
                     var3 = this;
@@ -895,7 +895,7 @@ case 104:
             var0 = {};
             var5 = 'optionallyDiverseSequence';
             var0.key = var5;
-            var5 = function() { // Original name: get, environment: var4
+            var5 = function () {
                 _fun24868: for(var _fun24868_ip = 0; ; ) switch(_fun24868_ip) {
 case 0:
                     var0 = this;
@@ -916,7 +916,7 @@ case 27:
             var0 = {};
             var5 = 'forEachDiversity';
             var0.key = var5;
-            var5 = function(arg0) { // Original name: value, environment: var4
+            var5 = function arg0() {
                 _fun24869: for(var _fun24869_ip = 0; ; ) switch(_fun24869_ip) {
 case 0:
                     var0 = this;
@@ -944,7 +944,7 @@ case 61:
             var0 = {};
             var5 = 'forEachName';
             var0.key = var5;
-            var4 = function(arg0) { // Original name: value, environment: var4
+            var4 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 6;
@@ -986,12 +986,12 @@ case 61:
         var5 = /^(?:\uDB40[\uDC61-\uDC7A])$/;
         var _closure1_slot16 = var5;
         var5 = {};
-        var14 = function() { // Original name: getDefaultDiversitySurrogate, environment: var1
+        var14 = function () {
             var0 = _closure1_slot6;
             return var0;
         };
         var5.getDefaultDiversitySurrogate = var14;
-        var14 = function(arg0) { // Original name: setDefaultDiversitySurrogate, environment: var1
+        var14 = function arg0() {
             _fun24872: for(var _fun24872_ip = 0; ; ) switch(_fun24872_ip) {
 case 0:
                 var0 = arg0;
@@ -1012,7 +1012,7 @@ case 27:
             }
         };
         var5.setDefaultDiversitySurrogate = var14;
-        var14 = function() { // Original name: getCategories, environment: var1
+        var14 = function () {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.keys;
@@ -1028,7 +1028,7 @@ case 27:
         };
         var5.getCategories = var14;
         var5.getByName = var13;
-        var13 = function(arg0) { // Original name: getByCategory, environment: var1
+        var13 = function arg0() {
             _fun24874: for(var _fun24874_ip = 0; ; ) switch(_fun24874_ip) {
 case 0:
                 var4 = arg0;
@@ -1074,7 +1074,7 @@ case 159:
         };
         var5.getByCategory = var13;
         var5.contentHasUnicodeOrEmoji = var12;
-        var12 = function(arg0) { // Original name: translateInlineEmojiToSurrogates, environment: var1
+        var12 = function arg0() {
             var3 = arg0;
             var2 = var3.replace;
             var1 = _closure1_slot9;
@@ -1090,7 +1090,7 @@ case 159:
             return var0;
         };
         var5.translateInlineEmojiToSurrogates = var12;
-        var12 = function(arg0) { // Original name: maybeTranslateSurrogatesToInlineEmoji, environment: var1
+        var12 = function arg0() {
             _fun24877: for(var _fun24877_ip = 0; ; ) switch(_fun24877_ip) {
 case 0:
                 var2 = arg0;
@@ -1136,7 +1136,7 @@ case 76:
         };
         var5.maybeTranslateSurrogatesToInlineEmoji = var12;
         var5.findInlineEmojisFromSurrogates = var11;
-        var11 = function(arg0) { // Original name: translateSurrogatesToInlineEmoji, environment: var1
+        var11 = function arg0() {
             var2 = _closure1_slot25;
             var1 = undefined;
             var0 = arg0;
@@ -1167,7 +1167,7 @@ case 29:
         var5.translateSurrogatesToInlineEmoji = var11;
         var5.convertNameToSurrogate = var10;
         var5.convertSurrogateToName = var9;
-        var9 = function(arg0) { // Original name: convertShortcutToName, environment: var1
+        var9 = function arg0() {
             _fun24881: for(var _fun24881_ip = 0; ; ) switch(_fun24881_ip) {
 case 0:
                 var4 = arg0;
@@ -1213,7 +1213,7 @@ case 129:
             }
         };
         var5.convertShortcutToName = var9;
-        var9 = function(arg0) { // Original name: convertSurrogateToBase, environment: var1
+        var9 = function arg0() {
             var2 = _closure1_slot22;
             var4 = _closure1_slot27;
             var5 = _closure1_slot8;
@@ -1235,7 +1235,7 @@ case 129:
             return var0;
         };
         var5.convertSurrogateToBase = var9;
-        var9 = function(arg0) { // Original name: forEach, environment: var1
+        var9 = function arg0() {
             _fun24884: for(var _fun24884_ip = 0; ; ) switch(_fun24884_ip) {
 case 0:
                 var5 = arg0;
@@ -1287,7 +1287,7 @@ case 106:
         var5.EMOJI_NAME_AND_DIVERSITY_RE = var6;
         var6 = /^(>:\(|>:\-\(|>=\(|>=\-\(|:"\)|:\-"\)|="\)|=\-"\)|<\\/3|<\\3|:\-\\|:\-\\/|=\-\\|=\-\\/|:'\(|:'\-\(|:,\(|:,\-\(|='\(|='\-\(|=,\(|=,\-\(|:\(|:\-\(|=\(|=\-\(|<3|♡|\]:\(|\]:\-\(|\]=\(|\]=\-\(|o:\)|O:\)|o:\-\)|O:\-\)|0:\)|0:\-\)|o=\)|O=\)|o=\-\)|O=\-\)|0=\)|0=\-\)|:'D|:'\-D|:,D|:,\-D|='D|='\-D|=,D|=,\-D|:\*|:\-\*|=\*|=\-\*|x\-\)|X\-\)|:\||:\-\||=\||=\-\||:o|:\-o|:O|:\-O|=o|=\-o|=O|=\-O|:@|:\-@|=@|=\-@|:D|:\-D|=D|=\-D|:'\)|:'\-\)|:,\)|:,\-\)|='\)|='\-\)|=,\)|=,\-\)|:\)|:\-\)|=\)|=\-\)|\]:\)|\]:\-\)|\]=\)|\]=\-\)|:,'\(|:,'\-\(|;\(|;\-\(|=,'\(|=,'\-\(|:P|:\-P|=P|=\-P|8\-\)|B\-\)|,:\(|,:\-\(|,=\(|,=\-\(|,:\)|,:\-\)|,=\)|,=\-\)|:s|:\-S|:z|:\-Z|:\$|:\-\$|=s|=\-S|=z|=\-Z|=\$|=\-\$|;\)|;\-\))/;
         var5.EMOJI_SHORTCUT_RE = var6;
-        var6 = function(arg0) { // Original name: hasSurrogates, environment: var1
+        var6 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 6;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+    var0 = function() {
         _fun40098: for (var _fun40098_ip = 0;;) switch (_fun40098_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var6
+    var0 = function arg0, arg1() {
         _fun40101: for (var _fun40101_ip = 0;;) switch (_fun40101_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var6
+    var0 = function arg0, arg1() {
         _fun40103: for (var _fun40103_ip = 0;;) switch (_fun40103_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var1 = function(arg0, arg1) { // Original name: insertUnsortedGuilds, environment: var6
+    var1 = function arg0, arg1() {
         _fun40104: for (var _fun40104_ip = 0;;) switch (_fun40104_ip) {
             case 0:
                 var6 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var1;
-    var0 = function(arg0) { // Original name: convertNodeToGuildFolder, environment: var6
+    var0 = function arg0() {
         _fun40105: for (var _fun40105_ip = 0;;) switch (_fun40105_ip) {
             case 0:
                 var1 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: rebuildTree, environment: var6
+    var0 = function arg0, arg1() {
         _fun40107: for (var _fun40107_ip = 0;;) switch (_fun40107_ip) {
             case 0:
                 var6 = arg0;
@@ -775,7 +775,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: handleRebuild, environment: var6
+    var0 = function() {
         _fun40110: for (var _fun40110_ip = 0;;) switch (_fun40110_ip) {
             case 0:
                 var3 = _closure1_slot28;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: handleSettingsUpdate, environment: var6
+    var0 = function() {
         _fun40111: for (var _fun40111_ip = 0;;) switch (_fun40111_ip) {
             case 0:
                 var2 = _closure1_slot10;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: handleMoveById, environment: var6
+    var0 = function arg0() {
         _fun40112: for (var _fun40112_ip = 0;;) switch (_fun40112_ip) {
             case 0:
                 var0 = arg0;
@@ -1028,7 +1028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: handleGuildFolderCreateLocal, environment: var6
+    var0 = function arg0() {
         _fun40113: for (var _fun40113_ip = 0;;) switch (_fun40113_ip) {
             case 0:
                 var0 = arg0;
@@ -1092,7 +1092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: handleGuildFolderEditLocal, environment: var6
+    var0 = function arg0() {
         _fun40115: for (var _fun40115_ip = 0;;) switch (_fun40115_ip) {
             case 0:
                 var4 = arg0;
@@ -1314,7 +1314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: handleGuildFolderDeleteLocal, environment: var6
+    var0 = function arg0() {
         _fun40121: for (var _fun40121_ip = 0;;) switch (_fun40121_ip) {
             case 0:
                 var0 = arg0;
@@ -1394,7 +1394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: handleJoinedLurkingGuild, environment: var6
+    var0 = function arg0() {
         _fun40124: for (var _fun40124_ip = 0;;) switch (_fun40124_ip) {
             case 0:
                 var0 = arg0;
@@ -1474,7 +1474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: handleGuildFolderExpand, environment: var6
+    var0 = function arg0() {
         _fun40125: for (var _fun40125_ip = 0;;) switch (_fun40125_ip) {
             case 0:
                 var0 = arg0;
@@ -1520,7 +1520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: handleFolderExpanded, environment: var6
+    var0 = function arg0() {
         _fun40126: for (var _fun40126_ip = 0;;) switch (_fun40126_ip) {
             case 0:
                 var0 = arg0;
@@ -1564,7 +1564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: handleCollapseAll, environment: var6
+    var0 = function() {
         _fun40127: for (var _fun40127_ip = 0;;) switch (_fun40127_ip) {
             case 0:
                 var2 = _closure1_slot24;
@@ -1618,7 +1618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0, arg1) { // Original name: setNodeExpanded, environment: var6
+    var0 = function arg0, arg1() {
         var4 = arg0;
         var2 = _closure1_slot18;
         var0 = var2.cloneNode;
@@ -1763,7 +1763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = function(arg0) { // Environment: var6
         var0 = new Array(0);
         var _closure2_slot0 = var0;
-        var3 = function(arg0) { // Original name: flattenNodes, environment: var1
+        var3 = function arg0() {
             _fun40133: for (var _fun40133_ip = 0;;) switch (_fun40133_ip) {
                 case 0:
                     var1 = arg0;
@@ -1844,7 +1844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.bind(var11)(var9);
     var _closure1_slot22 = var9;
     var6 = function(arg0) { // Environment: var6
-        var3 = function() { // Original name: SortedGuildStore, environment: var5
+        var3 = function() {
             _fun40136: for (var _fun40136_ip = 0;;) switch (_fun40136_ip) {
                 case 0:
                     var4 = this;
@@ -1856,7 +1856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure1_slot29;
                     var0.CONNECTION_OPEN = var6;
                     var0.OVERLAY_INITIALIZE = var6;
-                    var7 = function() { // Original name: CACHE_LOADED, environment: var1
+                    var7 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.loadCache;
                         var0 = var0.bind(var1)();
@@ -2007,7 +2007,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var8 = this;
             var7 = var8.waitFor;
             var15 = _closure1_slot14;
@@ -2028,7 +2028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildsTree';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -2037,7 +2037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildFolders';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot20;
             var2 = _closure1_slot18;
             var1 = var2.version;
@@ -2050,7 +2050,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildFolderById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var1 = arg0;
             var _closure3_slot0 = var1;
@@ -2072,7 +2072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFlattenedGuildIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot19;
             var2 = _closure1_slot18;
             var1 = var2.version;
@@ -2085,7 +2085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFlattenedGuildFolderList';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot21;
             var2 = _closure1_slot18;
             var1 = var2.version;
@@ -2098,7 +2098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCompatibleGuildFolders';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot22;
             var2 = _closure1_slot18;
             var1 = var2.version;
@@ -2111,7 +2111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFastListGuildFolders';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var0 = var1.getRoots;
             var0 = var0.bind(var1)();
@@ -2122,7 +2122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'takeSnapshot';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = {};
             var1 = _closure2_slot0;
             var1 = var1.LATEST_SNAPSHOT_VERSION;

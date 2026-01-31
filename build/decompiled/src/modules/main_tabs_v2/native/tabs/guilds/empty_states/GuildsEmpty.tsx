@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: handleJoinGuild, environment: var3
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: handleCreateGuild, environment: var3
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var1 = function(arg0) { // Original name: GuildsEmptyContent, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.contentContainerStyle;
         var0 = _closure1_slot14;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot14 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: GuildsEmpty, environment: var3
+    var3 = function arg0() {
         _fun102855: for (var _fun102855_ip = 0;;) switch (_fun102855_ip) {
             case 0:
                 var0 = arg0;

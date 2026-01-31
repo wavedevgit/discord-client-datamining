@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: toPermissionKey, environment: var1
+    var3 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var3;
-    var0 = function(arg0, arg1) { // Original name: commandPermissions, environment: var1
+    var0 = function arg0, arg1() {
         _fun40840: for (var _fun40840_ip = 0;;) switch (_fun40840_ip) {
             case 0:
                 var9 = arg1;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_settings/integrations/permission/IntegrationPermissionUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: commandName, environment: var1
+    var4 = function arg0, arg1() {
         _fun40841: for (var _fun40841_ip = 0;;) switch (_fun40841_ip) {
             case 0:
                 var2 = arg1;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.commandName = var4;
-    var4 = function(arg0) { // Original name: commandPermissionChannels, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.commandPermissionChannels = var4;
-    var4 = function(arg0) { // Original name: commandPermissionMembersRoles, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot4;
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.commandPermissionMembersRoles = var4;
     var2.toPermissionKey = var3;
-    var1 = function(arg0) { // Original name: keyPermissions, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var0 = global;
         var2 = var0.Object;

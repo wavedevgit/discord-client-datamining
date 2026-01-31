@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/now_playing/getApplicationIdForActivity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getApplicationIdForActivity, environment: var1
+    var1 = function arg0() {
         _fun95987: for (var _fun95987_ip = 0;;) switch (_fun95987_ip) {
             case 0:
                 var1 = arg0;

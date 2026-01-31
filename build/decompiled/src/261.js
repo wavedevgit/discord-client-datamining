@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var2 = {};
-    var4 = function() { // Original name: get BatchedBridge, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ExceptionsManager, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Platform, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get RCTEventEmitter, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ReactNativeViewConfigRegistry, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TextInputState, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get UIManager, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get deepDiffer, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get deepFreezeAndThrowOnMutationInDev, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get flattenStyle, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 9;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ReactFiberErrorDialog, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 10;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get legacySendAccessibilityEvent, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 11;
@@ -197,7 +197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get RawEventEmitter, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 12;
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get CustomEvent, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get createAttributePayload, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 14;
@@ -245,7 +245,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get diffAttributePayloads, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 14;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get createPublicRootInstance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get createPublicInstance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get createPublicTextInstance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get getNativeTagFromPublicInstance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get getNodeFromPublicInstance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var3 = function() { // Original name: get getInternalInstanceHandleFromPublicInstance, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;

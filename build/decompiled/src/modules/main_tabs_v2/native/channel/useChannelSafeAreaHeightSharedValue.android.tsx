@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/channel/useChannelSafeAreaHeightSharedValue.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useChannelSafeAreaHeightSharedValue, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var10 = _closure1_slot2;
         var1 = 0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var10[var1];
         var2 = var8.bind(var9)(var1);
         var1 = var2.useDerivedValue;
-        var0 = function() { // Original name: n, environment: var0
+        var0 = function() {
             _fun88982: for (var _fun88982_ip = 0;;) switch (_fun88982_ip) {
                 case 0:
                     var2 = _closure2_slot1;

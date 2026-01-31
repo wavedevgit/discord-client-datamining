@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/private_channel_creation/maybeConvertPrivateChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: maybeConvertPrivateChannel, environment: var1
+    var1 = function arg0() {
         _fun54234: for (var _fun54234_ip = 0;;) switch (_fun54234_ip) {
             case 0:
                 var3 = arg0;

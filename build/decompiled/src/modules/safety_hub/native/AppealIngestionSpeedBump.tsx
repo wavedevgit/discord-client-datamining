@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionSpeedBump.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppealIngestionSpeedBump, environment: var1
+    var1 = function arg0() {
         _fun79525: for (var _fun79525_ip = 0;;) switch (_fun79525_ip) {
             case 0:
                 var0 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = _closure1_slot6;
                 var19 = var19.AGE_VERIFICATION_LINK;
                 var13.url = var19;
-                var19 = function() { // Original name: onPress, environment: var14
+                var19 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot5;
                     var1 = var0.ClickAgeVerificationLink;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = _closure1_slot6;
                 var18 = var18.SPAM_LINK;
                 var12.url = var18;
-                var18 = function() { // Original name: onPress, environment: var14
+                var18 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot5;
                     var1 = var0.ClickSpamWebformLink;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var18.bind(var19)(var17);
                 var11.text = var17;
                 var11.url = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure1_slot5;
                     var1 = var0.ClickLearnMoreLink;

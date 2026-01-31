@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guild_sidebar/ChannelListUtils.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: hasStream, environment: var1
+    var1 = function arg0() {
         _fun38646: for (var _fun38646_ip = 0;;) switch (_fun38646_ip) {
             case 0:
                 var2 = arg0;

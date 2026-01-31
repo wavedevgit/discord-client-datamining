@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0) { // Original name: CustomActivityLinkRecord, environment: var1
+        var2 = function arg0() {
             _fun92382: for (var _fun92382_ip = 0;;) switch (_fun92382_ip) {
                 case 0:
                     var1 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'getAssetURL';
         var0.key = var4;
-        var1 = function() { // Original name: value, environment: var1
+        var1 = function() {
             _fun92383: for (var _fun92383_ip = 0;;) switch (_fun92383_ip) {
                 case 0:
                     var1 = this;

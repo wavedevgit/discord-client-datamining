@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.badgeHorizontal = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot5 = var3;
-    var1 = function(arg0) { // Original name: TabBarIcon, environment: var1
+    var1 = function arg0() {
         _fun100579: for (var _fun100579_ip = 0;;) switch (_fun100579_ip) {
             case 0:
                 var1 = arg0;

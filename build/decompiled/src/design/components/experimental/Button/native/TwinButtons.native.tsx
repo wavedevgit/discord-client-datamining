@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/experimental/Button/native/TwinButtons.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TwinButtons, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.children;
         var1 = _closure1_slot0;

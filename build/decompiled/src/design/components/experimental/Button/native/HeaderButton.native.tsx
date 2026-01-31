@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: HeaderButton, environment: var6
+    var1 = function arg0() {
         var3 = _closure1_slot2;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/AddPhone.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddPhone, environment: var1
+    var1 = function arg0() {
         _fun60888: for (var _fun60888_ip = 0;;) switch (_fun60888_ip) {
             case 0:
                 var1 = arg0;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot10 = var3;
                 var _closure2_slot11 = var3;
                 var _closure2_slot12 = var3;
-                var21 = function() { // Original name: handleSubmit, environment: var14
+                var21 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot13;
                     var2 = var3.apply;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var0, var1);
                     return var0;
                 };
-                var1 = function() { // Original name: _handleSubmit, environment: var14
+                var1 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.alpha2 = var22;
                 var10.countryCode = var18;
                 var10.value = var17;
-                var17 = function(arg0, arg1) { // Original name: onChangeText, environment: var14
+                var17 = function arg0, arg1() {
                     var3 = _closure2_slot9;
                     var0 = undefined;
                     var2 = arg0;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.returnKeyType = var22;
                 var10.onSubmitEditing = var21;
                 var10.error = var19;
-                var19 = function() { // Original name: onPressCountrySelector, environment: var14
+                var19 = function() {
                     var2 = _closure1_slot1;
                     var0 = _closure1_slot2;
                     var1 = 20;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.kYvzoQ;
                 var15 = var16.bind(var17)(var15);
                 var12.text = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     _fun60899: for (var _fun60899_ip = 0;;) switch (_fun60899_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.bind(var0)(var1);
                             var1 = var2.openLazy;
                             var0 = {};
-                            var3 = function() { // Original name: importer, environment: var3
+                            var3 = function() {
                                 var2 = _closure1_slot0;
                                 var0 = _closure1_slot2;
                                 var1 = 22;

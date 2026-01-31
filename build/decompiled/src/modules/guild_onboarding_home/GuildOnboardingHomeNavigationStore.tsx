@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun76697: for (var _fun76697_ip = 0;;) switch (_fun76697_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildOnboardingHomeNavigationStore, environment: var5
+        var3 = function() {
             _fun76701: for (var _fun76701_ip = 0;;) switch (_fun76701_ip) {
                 case 0:
                     var3 = this;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun76702: for (var _fun76702_ip = 0;;) switch (_fun76702_ip) {
                 case 0:
                     var4 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = _closure1_slot7;
             var0.selectedResourceChannelIdByGuildId = var1;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSelectedResourceChannelId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun76704: for (var _fun76704_ip = 0;;) switch (_fun76704_ip) {
                 case 0:
                     var2 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHomeNavigationChannelId';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun76705: for (var _fun76705_ip = 0;;) switch (_fun76705_ip) {
                 case 0:
                     var3 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleChannelSelect, environment: var3
+    var8 = function arg0() {
         _fun76706: for (var _fun76706_ip = 0;;) switch (_fun76706_ip) {
             case 0:
                 var0 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANNEL_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleHomeResourceChannelSelect, environment: var3
+    var8 = function arg0() {
         _fun76707: for (var _fun76707_ip = 0;;) switch (_fun76707_ip) {
             case 0:
                 var0 = arg0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SELECT_HOME_RESOURCE_CHANNEL = var8;
-    var3 = function(arg0) { // Original name: handleHomeTodoChannelSelect, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = var0.guildId;

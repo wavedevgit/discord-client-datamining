@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_profile/native/components/GameIcon.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GameIcon, environment: var3
+    var3 = function arg0() {
         _fun59744: for (var _fun59744_ip = 0;;) switch (_fun59744_ip) {
             case 0:
                 var2 = arg0;

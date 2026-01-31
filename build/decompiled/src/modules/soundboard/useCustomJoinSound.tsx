@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _getCustomJoinSound, environment: var1
+    var0 = function arg0, arg1() {
         _fun50672: for (var _fun50672_ip = 0;;) switch (_fun50672_ip) {
             case 0:
                 var5 = arg1;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/soundboard/useCustomJoinSound.tsx';
     var4 = var5.bind(var6)(var4);
     var2.CustomSoundType = var3;
-    var3 = function(arg0) { // Original name: useCustomJoinSound, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCustomJoinSound = var3;
-    var1 = function(arg0) { // Original name: getCustomJoinSound, environment: var1
+    var1 = function arg0() {
         _fun50675: for (var _fun50675_ip = 0;;) switch (_fun50675_ip) {
             case 0:
                 var3 = _closure1_slot5;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun117913: for (var _fun117913_ip = 0;;) switch (_fun117913_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun117915: for (var _fun117915_ip = 0;;) switch (_fun117915_ip) {
             case 0:
                 var3 = arg0;
@@ -246,14 +246,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: validateInDevMode, environment: var1
+    var0 = function arg0, arg1() {
         var0 = arg1;
         var0 = var0.actions;
         var0 = undefined;
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: populateMap, environment: var1
+    var0 = function arg0() {
         _fun117917: for (var _fun117917_ip = 0;;) switch (_fun117917_ip) {
             case 0:
                 var5 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: handleAction, environment: var1
+    var0 = function arg0() {
         _fun117918: for (var _fun117918_ip = 0;;) switch (_fun117918_ip) {
             case 0:
                 var0 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_startup/ManagerRegistryShared.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: initialize, environment: var1
+    var1 = function arg0() {
         _fun117919: for (var _fun117919_ip = 0;;) switch (_fun117919_ip) {
             case 0:
                 var7 = arg0;

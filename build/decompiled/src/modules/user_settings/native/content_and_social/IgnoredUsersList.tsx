@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.sectionLabelStyle = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: IgnoredUsersList, environment: var1
+    var3 = function arg0() {
         _fun81190: for (var _fun81190_ip = 0;;) switch (_fun81190_ip) {
             case 0:
                 var0 = arg0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/content_and_social/IgnoredUsersList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ConnectedIgnoredUsersList, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 15;

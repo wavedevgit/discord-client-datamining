@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun18782: for (var _fun18782_ip = 0;;) switch (_fun18782_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun18784: for (var _fun18784_ip = 0;;) switch (_fun18784_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var3 = function(arg0) { // Original name: deserializeChannels, environment: var1
+    var3 = function arg0() {
         _fun18785: for (var _fun18785_ip = 0;;) switch (_fun18785_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/cache/deserializeChannels.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: deserializeChannelEntries, environment: var1
+    var3 = function arg0() {
         _fun18786: for (var _fun18786_ip = 0;;) switch (_fun18786_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.deserializeChannelEntries = var3;
-    var1 = function(arg0) { // Original name: deserializeChannel, environment: var1
+    var1 = function arg0() {
         _fun18787: for (var _fun18787_ip = 0;;) switch (_fun18787_ip) {
             case 0:
                 var0 = arg0;

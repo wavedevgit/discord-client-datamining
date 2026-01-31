@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 1;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.SearchResultExactCountEnabled;
     var8 = var8.updateSetting;
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useSearchResultExactCountDescription, environment: var7
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 1;

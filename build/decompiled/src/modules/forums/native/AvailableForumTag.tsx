@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/AvailableForumTag.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AvailableForumTag, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.tag;
         var _closure2_slot0 = var5;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = var8.bind(var11)(var7, var2);
         var _closure2_slot8 = var2;
-        var2 = function() { // Original name: handlePress, environment: var4
+        var2 = function() {
             _fun75678: for (var _fun75678_ip = 0;;) switch (_fun75678_ip) {
                 case 0:
                     var1 = _closure2_slot2;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = var5.id;
         var0.tagId = var5;
-        var4 = function(arg0) { // Original name: children, environment: var4
+        var4 = function arg0() {
             _fun75680: for (var _fun75680_ip = 0;;) switch (_fun75680_ip) {
                 case 0:
                     var2 = arg0;

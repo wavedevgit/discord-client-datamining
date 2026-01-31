@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: computeTabletDrawerWidth, environment: var1
+    var0 = function arg0, arg1() {
         _fun77134: for (var _fun77134_ip = 0;;) switch (_fun77134_ip) {
             case 0:
                 var0 = arg1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/screen/native/drawer/useDrawerWidth.tsx';
     var4 = var5.bind(var6)(var4);
     var2.DRAWER_LEFT_WIDTH_MIN = var3;
-    var3 = function() { // Original name: getDrawerWidth, environment: var1
+    var3 = function() {
         _fun77135: for (var _fun77135_ip = 0;;) switch (_fun77135_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDrawerWidth = var3;
-    var1 = function() { // Original name: useDrawerWidth, environment: var1
+    var1 = function() {
         _fun77136: for (var _fun77136_ip = 0;;) switch (_fun77136_ip) {
             case 0:
                 var2 = _closure1_slot1;

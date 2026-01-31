@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings_picker/native/components/GuildPicker.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPicker, environment: var1
+    var1 = function arg0() {
         _fun96344: for (var _fun96344_ip = 0;;) switch (_fun96344_ip) {
             case 0:
                 var0 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.name;
             case 121:
                 var0.label = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot1;
                     var9 = _closure1_slot2;
                     var0 = 4;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.title = var1;
                     var6 = _closure2_slot2;
                     var2.items = var6;
-                    var6 = function(arg0) { // Original name: onItemSelect, environment: var6
+                    var6 = function arg0() {
                         _fun96346: for (var _fun96346_ip = 0;;) switch (_fun96346_ip) {
                             case 0:
                                 var2 = arg0;

@@ -19,12 +19,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/type-utils/TypeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: exact, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var2.exact = var3;
-    var3 = function(arg0, arg1) { // Original name: hasOwnProperty, environment: var1
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var1 = var2.hasOwnProperty;
         var0 = arg1;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hasOwnProperty = var3;
-    var3 = function(arg0, arg1) { // Original name: dangerouslyCast, environment: var1
+    var3 = function arg0, arg1() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.setPrototypeOf;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.dangerouslyCast = var3;
-    var3 = function(arg0) { // Original name: assertUnreachable, environment: var1
+    var3 = function arg0() {
         _fun16195: for (var _fun16195_ip = 0;;) switch (_fun16195_ip) {
             case 0:
                 var1 = arguments[1];
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.assertUnreachable = var3;
-    var1 = function(arg0) { // Original name: arrayIsNotEmpty, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.length;
         var0 = 0;

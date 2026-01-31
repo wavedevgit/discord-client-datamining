@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun64044: for (var _fun64044_ip = 0;;) switch (_fun64044_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _selectAndWaitForVoiceChannelJoin, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Error;
     var5 = var5.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: JoinTimeoutError, environment: var0
+        var2 = function() {
             _fun64054: for (var _fun64054_ip = 0;;) switch (_fun64054_ip) {
                 case 0:
                     var3 = this;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: selectAndWaitForVoiceChannelJoin, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;

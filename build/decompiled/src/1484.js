@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var3;
     var3 = {};
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: useSyncState, environment: var1
+    var1 = function arg0() {
         _fun17085: for (var _fun17085_ip = 0;;) switch (_fun17085_ip) {
             case 0:
                 var4 = arg0;

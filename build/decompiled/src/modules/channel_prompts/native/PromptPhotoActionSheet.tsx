@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel_prompts/native/PromptPhotoActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PromptPhotoActionSheet, environment: var1
+    var1 = function arg0() {
         _fun79245: for (var _fun79245_ip = 0;;) switch (_fun79245_ip) {
             case 0:
                 var0 = arg0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.left = var27;
                 var17[1] = var19;
                 var11.style = var17;
-                var17 = function() { // Original name: onPress, environment: var21
+                var17 = function() {
                     _fun79253: for (var _fun79253_ip = 0;;) switch (_fun79253_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var19[1] = var23;
                 var13.style = var19;
-                var19 = function() { // Original name: onPress, environment: var21
+                var19 = function() {
                     var2 = _closure2_slot6;
                     var0 = undefined;
                     var1 = function(arg0) { // Environment: var1
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var14.bind(var3)(var13);
                 var14 = var13.PressableOpacity;
                 var13 = {};
-                var19 = function() { // Original name: onPress, environment: var21
+                var19 = function() {
                     _fun79256: for (var _fun79256_ip = 0;;) switch (_fun79256_ip) {
                         case 0:
                             var1 = _closure2_slot10;
@@ -798,7 +798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 1726:
                 var16 = {};
-                var19 = function() { // Original name: onPress, environment: var21
+                var19 = function() {
                     _fun79259: for (var _fun79259_ip = 0;;) switch (_fun79259_ip) {
                         case 0:
                             var2 = _closure2_slot10;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun79245;
             case 1863:
                 var19 = {};
-                var21 = function() { // Original name: onPress, environment: var21
+                var21 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 28;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var10.CHANNEL_PROMPT;
                     var1.location = var10;
                     var1.attachmentsToUpload = var9;
-                    var8 = function(arg0, arg1, arg2) { // Original name: onAttachmentUploadError, environment: var8
+                    var8 = function arg0, arg1, arg2() {
                         _fun79258: for (var _fun79258_ip = 0;;) switch (_fun79258_ip) {
                             case 0:
                                 var3 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: dismissActionSheet, environment: var1
+    var0 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/progress_bar/HubProgressActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubProgressActionSheet, environment: var1
+    var1 = function arg0() {
         _fun91246: for (var _fun91246_ip = 0;;) switch (_fun91246_ip) {
             case 0:
                 var0 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var4;
                 var3 = undefined;
                 var _closure2_slot3 = var3;
-                var12 = function() { // Original name: handleFinishPress, environment: var15
+                var12 = function() {
                     var3 = _closure1_slot1;
                     var5 = _closure1_slot2;
                     var0 = 12;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.numFinished = var21;
                 var21 = _closure1_slot7;
                 var11.total = var21;
-                var21 = function(arg0, arg1) { // Original name: stepsHook, environment: var15
+                var21 = function arg0, arg1() {
                     var4 = _closure1_slot15;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var19[var6];
                 var21 = var20.bind(var3)(var10);
                 var10 = {};
-                var11 = function() { // Original name: onPress, environment: var15
+                var11 = function() {
                     _fun91251: for (var _fun91251_ip = 0;;) switch (_fun91251_ip) {
                         case 0:
                             var4 = _closure1_slot5;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var19[var6];
                 var21 = var20.bind(var3)(var10);
                 var10 = {};
-                var22 = function() { // Original name: onPress, environment: var15
+                var22 = function() {
                     _fun91252: for (var _fun91252_ip = 0;;) switch (_fun91252_ip) {
                         case 0:
                             var5 = _closure1_slot5;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var19[var6];
                 var10 = var20.bind(var3)(var6);
                 var6 = {};
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     _fun91253: for (var _fun91253_ip = 0;;) switch (_fun91253_ip) {
                         case 0:
                             var4 = _closure2_slot2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getApplicationIdFromApplicationItem, environment: var1
+    var0 = function arg0() {
         _fun107713: for (var _fun107713_ip = 0;;) switch (_fun107713_ip) {
             case 0:
                 var1 = arg0;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: getImpressionPropsFromApplicationItem, environment: var1
+    var0 = function arg0() {
         var0 = {};
         var3 = _closure1_slot18;
         var2 = undefined;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: CommandRow, environment: var1
+    var0 = function arg0() {
         _fun107715: for (var _fun107715_ip = 0;;) switch (_fun107715_ip) {
             case 0:
                 var0 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: PlaceholderCommandRow, environment: var1
+    var0 = function arg0() {
         _fun107716: for (var _fun107716_ip = 0;;) switch (_fun107716_ip) {
             case 0:
                 var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.subLabelLineClamp = var6;
                 var0.start = var5;
                 var0.end = var4;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0, arg1() {
         _fun107718: for (var _fun107718_ip = 0;;) switch (_fun107718_ip) {
             case 0:
                 var0 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: CommandsExpandableList, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.commandData;
         var _closure2_slot0 = var8;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.command = var7;
                             var7 = _closure4_slot2;
                             var1.application = var7;
-                            var7 = function() { // Original name: onPress, environment: var4
+                            var7 = function() {
                                 var3 = _closure2_slot3;
                                 var2 = _closure4_slot1;
                                 var1 = _closure4_slot0;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var6 === var7;
                             var1.isFirstRow = var6;
                             var1.isLastRow = var5;
-                            var4 = function() { // Original name: beforeExecuteCommand, environment: var4
+                            var4 = function() {
                                 var2 = _closure2_slot2;
                                 var1 = {};
                                 var3 = _closure4_slot1;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot13 = var15;
                 var17 = var13.fetchNextPage;
                 _closure2_slot14 = var17;
-                var13 = function(arg0) { // Original name: useCommandsExpanded, environment: var1
+                var13 = function arg0() {
                     var4 = _closure1_slot4;
                     var3 = var4.useState;
                     var0 = false;
@@ -1161,7 +1161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var1.application = var8;
                             var1.iconSource = var7;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 _fun107742: for (var _fun107742_ip = 0;;) switch (_fun107742_ip) {
                                     case 0:
                                         var2 = _closure2_slot15;

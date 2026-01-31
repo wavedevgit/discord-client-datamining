@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1) { // Original name: createAnimatedPropAdapter, environment: var0
+    var0 = function arg0, arg1() {
         _fun34992: for (var _fun34992_ip = 0;;) switch (_fun34992_ip) {
             case 0:
                 var3 = arg1;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: requirePromise, environment: var0
+    var1 = function() {
         _fun28863: for (var _fun28863_ip = 0;;) switch (_fun28863_ip) {
             case 0:
                 var0 = global;

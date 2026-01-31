@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun95701: for (var _fun95701_ip = 0;;) switch (_fun95701_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun95704: for (var _fun95704_ip = 0;;) switch (_fun95704_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun95706: for (var _fun95706_ip = 0;;) switch (_fun95706_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: dismissUntilStorageKey, environment: var3
+    var0 = function arg0() {
         var1 = _closure1_slot13;
         var0 = arg0;
         var1 = var1[var0];
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: clearDismissUntil, environment: var3
+    var0 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: dismissNotice, environment: var3
+    var0 = function arg0, arg1() {
         _fun95709: for (var _fun95709_ip = 0;;) switch (_fun95709_ip) {
             case 0:
                 var4 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: isNoticeDismissed, environment: var3
+    var0 = function arg0() {
         _fun95710: for (var _fun95710_ip = 0;;) switch (_fun95710_ip) {
             case 0:
                 var6 = arg0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var8 = function() { // Original name: updateNotice, environment: var3
+    var8 = function() {
         _fun95711: for (var _fun95711_ip = 0;;) switch (_fun95711_ip) {
             case 0:
                 var0 = null;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: NoticeStore, environment: var5
+        var3 = function() {
             _fun95713: for (var _fun95713_ip = 0;;) switch (_fun95713_ip) {
                 case 0:
                     var3 = this;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var4 = var2.syncWith;
             var1 = _closure1_slot8;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNoticeType';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.BILLING_SUBSCRIPTION_UPDATE_SUCCESS = var8;
     var1.BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS = var8;
     var1.BILLING_SUBSCRIPTION_FETCH_SUCCESS = var8;
-    var8 = function() { // Original name: handleLogout, environment: var3
+    var8 = function() {
         _fun95716: for (var _fun95716_ip = 0;;) switch (_fun95716_ip) {
             case 0:
                 var3 = _closure1_slot15;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LOGOUT = var8;
-    var3 = function(arg0) { // Original name: handleNoticeDismiss, environment: var3
+    var3 = function arg0() {
         _fun95717: for (var _fun95717_ip = 0;;) switch (_fun95717_ip) {
             case 0:
                 var2 = _closure1_slot11;

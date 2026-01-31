@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
-    var3 = function(arg0) { // Original name: horizontalOrDefault, environment: var1
+    var3 = function arg0() {
         _fun4766: for (var _fun4766_ip = 0;;) switch (_fun4766_ip) {
             case 0:
                 var1 = arg0;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.horizontalOrDefault = var3;
-    var3 = function(arg0) { // Original name: initialNumToRenderOrDefault, environment: var1
+    var3 = function arg0() {
         _fun4767: for (var _fun4767_ip = 0;;) switch (_fun4767_ip) {
             case 0:
                 var1 = arg0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.initialNumToRenderOrDefault = var3;
-    var3 = function(arg0) { // Original name: maxToRenderPerBatchOrDefault, environment: var1
+    var3 = function arg0() {
         _fun4768: for (var _fun4768_ip = 0;;) switch (_fun4768_ip) {
             case 0:
                 var1 = arg0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.maxToRenderPerBatchOrDefault = var3;
-    var3 = function(arg0) { // Original name: onStartReachedThresholdOrDefault, environment: var1
+    var3 = function arg0() {
         _fun4769: for (var _fun4769_ip = 0;;) switch (_fun4769_ip) {
             case 0:
                 var1 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.onStartReachedThresholdOrDefault = var3;
-    var3 = function(arg0) { // Original name: onEndReachedThresholdOrDefault, environment: var1
+    var3 = function arg0() {
         _fun4770: for (var _fun4770_ip = 0;;) switch (_fun4770_ip) {
             case 0:
                 var1 = arg0;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.onEndReachedThresholdOrDefault = var3;
-    var1 = function(arg0) { // Original name: windowSizeOrDefault, environment: var1
+    var1 = function arg0() {
         _fun4771: for (var _fun4771_ip = 0;;) switch (_fun4771_ip) {
             case 0:
                 var1 = arg0;

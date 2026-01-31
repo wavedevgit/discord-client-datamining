@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun92770: for (var _fun92770_ip = 0;;) switch (_fun92770_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun92772: for (var _fun92772_ip = 0;;) switch (_fun92772_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var4 = function(arg0, arg1) { // Original name: questMatchesActivity, environment: var1
+    var4 = function arg0, arg1() {
         _fun92773: for (var _fun92773_ip = 0;;) switch (_fun92773_ip) {
             case 0:
                 var2 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0, arg1) { // Original name: getQuestByActivity, environment: var1
+    var3 = function arg0, arg1() {
         _fun92774: for (var _fun92774_ip = 0;;) switch (_fun92774_ip) {
             case 0:
                 var9 = arg1;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var0 = function(arg0, arg1) { // Original name: questMatchesApplicationId, environment: var1
+    var0 = function arg0, arg1() {
         _fun92775: for (var _fun92775_ip = 0;;) switch (_fun92775_ip) {
             case 0:
                 var0 = arg0;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.questMatchesActivity = var4;
     var2.getQuestByActivity = var3;
-    var3 = function(arg0, arg1) { // Original name: getQuestByApplicationId, environment: var1
+    var3 = function arg0, arg1() {
         _fun92777: for (var _fun92777_ip = 0;;) switch (_fun92777_ip) {
             case 0:
                 var10 = arg1;
@@ -571,7 +571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getQuestByApplicationId = var3;
-    var3 = function(arg0, arg1) { // Original name: allPlayOnDesktopQuestsByApplicationId, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.allPlayOnDesktopQuestsByApplicationId = var3;
-    var3 = function(arg0, arg1) { // Original name: getQuestsFromActivities, environment: var1
+    var3 = function arg0, arg1() {
         _fun92780: for (var _fun92780_ip = 0;;) switch (_fun92780_ip) {
             case 0:
                 var7 = arg0;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getQuestsFromActivities = var3;
-    var1 = function(arg0, arg1) { // Original name: getEligibleQuestsForApplicationId, environment: var1
+    var1 = function arg0, arg1() {
         _fun92781: for (var _fun92781_ip = 0;;) switch (_fun92781_ip) {
             case 0:
                 var4 = arg0;

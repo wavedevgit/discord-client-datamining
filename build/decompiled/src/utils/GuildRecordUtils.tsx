@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1, arg2) { // Original name: fromGuildPropertiesWithAdditionalFields, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun17771: for (var _fun17771_ip = 0;;) switch (_fun17771_ip) {
             case 0:
                 var5 = arg0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var1 = function(arg0) { // Original name: constructFromPartialGuildRecord, environment: var3
+    var1 = function arg0() {
         var2 = _closure1_slot12;
         var1 = {};
         var3 = _closure1_slot7;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var1;
-    var0 = function(arg0) { // Original name: constructGuildInPlace, environment: var3
+    var0 = function arg0() {
         var3 = _closure1_slot3;
         var2 = _closure1_slot8;
         var1 = undefined;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'utils/GuildRecordUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: isGuildRecord, environment: var3
+    var5 = function arg0() {
         var3 = _closure1_slot5;
         var2 = _closure1_slot8;
         var1 = undefined;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildRecord = var5;
     var2.fromGuildPropertiesWithAdditionalFields = var4;
-    var4 = function(arg0, arg1) { // Original name: fromServer, environment: var3
+    var4 = function arg0, arg1() {
         _fun17775: for (var _fun17775_ip = 0;;) switch (_fun17775_ip) {
             case 0:
                 var0 = arg0;
@@ -544,7 +544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromServer = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: attachSerializedData, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun17776: for (var _fun17776_ip = 0;;) switch (_fun17776_ip) {
             case 0:
                 var1 = arg0;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.attachSerializedData = var4;
-    var4 = function(arg0, arg1) { // Original name: fromBackgroundSync, environment: var3
+    var4 = function arg0, arg1() {
         _fun17777: for (var _fun17777_ip = 0;;) switch (_fun17777_ip) {
             case 0:
                 var1 = arg0;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromBackgroundSync = var4;
-    var4 = function(arg0, arg1) { // Original name: fromGuild, environment: var3
+    var4 = function arg0, arg1() {
         _fun17778: for (var _fun17778_ip = 0;;) switch (_fun17778_ip) {
             case 0:
                 var4 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromGuild = var4;
-    var4 = function(arg0) { // Original name: fromInviteGuild, environment: var3
+    var4 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot11;
         var1 = {};
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fromInviteGuild = var4;
-    var4 = function(arg0) { // Original name: fromGuildProfile, environment: var3
+    var4 = function arg0() {
         _fun17780: for (var _fun17780_ip = 0;;) switch (_fun17780_ip) {
             case 0:
                 var3 = arg0;
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromGuildProfile = var4;
-    var4 = function(arg0) { // Original name: fromStoreListingGuild, environment: var3
+    var4 = function arg0() {
         _fun17781: for (var _fun17781_ip = 0;;) switch (_fun17781_ip) {
             case 0:
                 var0 = arg0;
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromStoreListingGuild = var4;
-    var4 = function(arg0) { // Original name: fromDirectoryGuild, environment: var3
+    var4 = function arg0() {
         _fun17782: for (var _fun17782_ip = 0;;) switch (_fun17782_ip) {
             case 0:
                 var3 = arg0;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromDirectoryGuild = var4;
-    var4 = function(arg0) { // Original name: fromGuildDirectoryEntry, environment: var3
+    var4 = function arg0() {
         _fun17783: for (var _fun17783_ip = 0;;) switch (_fun17783_ip) {
             case 0:
                 var3 = arg0;
@@ -928,7 +928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromGuildDirectoryEntry = var4;
-    var4 = function(arg0) { // Original name: fromVerificationGateGuild, environment: var3
+    var4 = function arg0() {
         _fun17784: for (var _fun17784_ip = 0;;) switch (_fun17784_ip) {
             case 0:
                 var3 = arg0;
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromVerificationGateGuild = var4;
-    var4 = function(arg0) { // Original name: fromClientDiscoverableGuild, environment: var3
+    var4 = function arg0() {
         _fun17785: for (var _fun17785_ip = 0;;) switch (_fun17785_ip) {
             case 0:
                 var4 = arg0;
@@ -1098,7 +1098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromClientDiscoverableGuild = var4;
-    var4 = function(arg0) { // Original name: fromGuildBasic, environment: var3
+    var4 = function arg0() {
         _fun17786: for (var _fun17786_ip = 0;;) switch (_fun17786_ip) {
             case 0:
                 var3 = arg0;
@@ -1168,7 +1168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromGuildBasic = var4;
-    var4 = function(arg0) { // Original name: dangerouslyConstructGuildRecordFromUntypedObject, environment: var3
+    var4 = function arg0() {
         _fun17787: for (var _fun17787_ip = 0;;) switch (_fun17787_ip) {
             case 0:
                 var4 = arg0;
@@ -1546,7 +1546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.dangerouslyConstructGuildRecordFromUntypedObject = var4;
-    var4 = function(arg0) { // Original name: toGuildProperties, environment: var3
+    var4 = function arg0() {
         _fun17788: for (var _fun17788_ip = 0;;) switch (_fun17788_ip) {
             case 0:
                 var3 = arg0;
@@ -1686,7 +1686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.toGuildProperties = var4;
-    var3 = function(arg0) { // Original name: fromSerializedGuildRecord, environment: var3
+    var3 = function arg0() {
         _fun17789: for (var _fun17789_ip = 0;;) switch (_fun17789_ip) {
             case 0:
                 var3 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: MobileSearchableSelect, environment: var6
+    var1 = function arg0() {
         _fun83777: for (var _fun83777_ip = 0;;) switch (_fun83777_ip) {
             case 0:
                 var4 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.style = var6;
                             var6 = 0.7;
                             var2.activeOpacity = var6;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot12;
                                 var0 = _closure3_slot0;
                                 var1 = var0.value;

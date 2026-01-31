@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = new var14[var5](var13, var12);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1) { // Original name: filterMcpPiiFromSpanData, environment: var1
+    var1 = function arg0, arg1() {
         _fun9776: for (var _fun9776_ip = 0;;) switch (_fun9776_ip) {
             case 0:
                 var3 = arg0;

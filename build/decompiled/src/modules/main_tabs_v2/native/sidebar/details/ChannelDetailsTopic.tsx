@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildChannelDetailsTopic, environment: var1
+    var0 = function arg0() {
         _fun107032: for (var _fun107032_ip = 0;;) switch (_fun107032_ip) {
             case 0:
                 var2 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var18[var9];
                 var8 = var12.bind(var3)(var4);
                 var7 = var8.useAnimatedStyle;
-                var4 = function() { // Original name: c, environment: var0
+                var4 = function() {
                     _fun107034: for (var _fun107034_ip = 0;;) switch (_fun107034_ip) {
                         case 0:
                             var1 = _closure2_slot7;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var18[var9];
                 var8 = var12.bind(var3)(var4);
                 var7 = var8.useAnimatedStyle;
-                var4 = function() { // Original name: _, environment: var0
+                var4 = function() {
                     _fun107035: for (var _fun107035_ip = 0;;) switch (_fun107035_ip) {
                         case 0:
                             var2 = _closure2_slot7;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var18[var9];
                 var8 = var12.bind(var3)(var4);
                 var7 = var8.useAnimatedStyle;
-                var4 = function() { // Original name: L, environment: var0
+                var4 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: PrivateChannelDetailsTopic, environment: var1
+    var0 = function arg0() {
         _fun107045: for (var _fun107045_ip = 0;;) switch (_fun107045_ip) {
             case 0:
                 var1 = arg0;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: GroupDMChannelDetailsTopic, environment: var1
+    var0 = function arg0() {
         _fun107047: for (var _fun107047_ip = 0;;) switch (_fun107047_ip) {
             case 0:
                 var1 = arg0;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot19 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelDetailsTopic, environment: var1
+    var1 = function arg0() {
         _fun107049: for (var _fun107049_ip = 0;;) switch (_fun107049_ip) {
             case 0:
                 var0 = arg0;

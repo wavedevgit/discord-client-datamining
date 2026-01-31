@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var4.createContext;
     var1 = var1.bind(var4)(var0);
     var _closure1_slot2 = var1;
-    var3 = function(arg0) { // Original name: EnsureSingleNavigator, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.children;
         var5 = _closure1_slot0;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var5.useMemo;
         var3 = function() { // Environment: var2
             var0 = {};
-            var2 = function(arg0) { // Original name: register, environment: var1
+            var2 = function arg0() {
                 _fun17152: for (var _fun17152_ip = 0;;) switch (_fun17152_ip) {
                     case 0:
                         var2 = arg0;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var0.register = var2;
-            var1 = function(arg0) { // Original name: unregister, environment: var1
+            var1 = function arg0() {
                 _fun17153: for (var _fun17153_ip = 0;;) switch (_fun17153_ip) {
                     case 0:
                         var1 = _closure2_slot0;

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: updateContextMenuState, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun46389: for (var _fun46389_ip = 0;;) switch (_fun46389_ip) {
                 case 0:
                     var11 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 3;
     var2.INDEX_BOUNDS_HEIGHT_OFFSET = var5;
     var2.ContextMenuStore = var4;
-    var4 = function(arg0) { // Original name: showContextMenu, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showContextMenu = var4;
-    var4 = function() { // Original name: hideContextMenu, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hideContextMenu = var4;
-    var4 = function() { // Original name: useActiveContextMenu, environment: var1
+    var4 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActiveContextMenu = var4;
     var2.updateContextMenuState = var3;
-    var3 = function() { // Original name: useContextMenuState, environment: var1
+    var3 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot1;
         var2 = 3;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useContextMenuState = var3;
-    var1 = function(arg0) { // Original name: resetContextMenuState, environment: var1
+    var1 = function arg0() {
         _fun46399: for (var _fun46399_ip = 0;;) switch (_fun46399_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) { // Original name: getPlanOptions, environment: var3
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.priceText = var8;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot33 = var1;
-    var1 = function(arg0) { // Original name: Header, environment: var3
+    var1 = function arg0() {
         _fun57573: for (var _fun57573_ip = 0;;) switch (_fun57573_ip) {
             case 0:
                 var0 = arg0;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var1;
-    var1 = function(arg0) { // Original name: PlanOptionBadgeComponent, environment: var3
+    var1 = function arg0() {
         _fun57574: for (var _fun57574_ip = 0;;) switch (_fun57574_ip) {
             case 0:
                 var0 = arg0;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var1;
-    var1 = function(arg0) { // Original name: renderPlanOptionBadge, environment: var3
+    var1 = function arg0() {
         _fun57575: for (var _fun57575_ip = 0;;) switch (_fun57575_ip) {
             case 0:
                 var1 = arg0;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var1;
-    var1 = function(arg0) { // Original name: PlanOption, environment: var3
+    var1 = function arg0() {
         _fun57576: for (var _fun57576_ip = 0;;) switch (_fun57576_ip) {
             case 0:
                 var0 = arg0;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var15 = var15.discountSubTextContainer;
                 var9.style = var15;
-                var14 = function(arg0) { // Original name: onLayout, environment: var14
+                var14 = function arg0() {
                     _fun57578: for (var _fun57578_ip = 0;;) switch (_fun57578_ip) {
                         case 0:
                             var0 = arg0;
@@ -1335,7 +1335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var1;
-    var1 = function(arg0) { // Original name: PremiumPlanSelectionActionSheetCTA, environment: var3
+    var1 = function arg0() {
         _fun57579: for (var _fun57579_ip = 0;;) switch (_fun57579_ip) {
             case 0:
                 var1 = arg0;
@@ -1412,7 +1412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = var0;
                 var32 = var7;
                 var5 = copyDataProperties(var33, var32);
-                var5 = function() { // Original name: onPress, environment: var20
+                var5 = function() {
                     var2 = _closure2_slot0;
                     var1 = {};
                     var0 = false;
@@ -1513,7 +1513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var22.color;
                 var22 = 'color';
                 var13[var22] = var23;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure2_slot0;
                     var1 = {};
                     var0 = true;
@@ -1567,7 +1567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var1;
-    var1 = function(arg0) { // Original name: getItemsByPremiumTypePredicate, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -1615,7 +1615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/native/PremiumPlanSelectionActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun57584: for (var _fun57584_ip = 0;;) switch (_fun57584_ip) {
             case 0:
                 var0 = arg0;
@@ -1651,7 +1651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun57584
                 }
             case 89:
-                var7 = function(arg0) { // Original name: A, environment: var19
+                var7 = function arg0() {
                     var0 = arg0;
                     var1 = var0.interval;
                     var0 = _closure1_slot18;
@@ -1666,7 +1666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun57584
                 }
             case 106:
-                var11 = function(arg0, arg1) { // Original name: b, environment: var19
+                var11 = function arg0, arg1() {
                     var0 = arg1;
                     var1 = var0.interval;
                     var0 = arg0;
@@ -1717,7 +1717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot31 = var3;
                 var _closure2_slot32 = var3;
                 var _closure2_slot33 = var3;
-                var12 = function() { // Original name: onClose, environment: var19
+                var12 = function() {
                     var2 = _closure1_slot13;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -2482,7 +2482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10[8] = var27;
                 var10[9] = var26;
                 var27 = var22.bind(var7)(var11, var10);
-                var10 = function() { // Original name: getActivatedImageSource, environment: var19
+                var10 = function() {
                     _fun57600: for (var _fun57600_ip = 0;;) switch (_fun57600_ip) {
                         case 0:
                             var2 = _closure2_slot17;
@@ -2604,7 +2604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 _closure2_slot31 = var10;
-                var10 = function() { // Original name: getActivatedText, environment: var19
+                var10 = function() {
                     _fun57601: for (var _fun57601_ip = 0;;) switch (_fun57601_ip) {
                         case 0:
                             var2 = _closure2_slot17;
@@ -3496,7 +3496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var29 = var19;
                             var15 = var34[var24](var33, var32, var31, var30, var29, var28, var27, var26, var25, var24);
                             var11.options = var15;
-                            var15 = function(arg0) { // Original name: onChange, environment: var15
+                            var15 = function arg0() {
                                 var1 = arg0;
                                 var1 = var1.value;
                                 var _closure4_slot0 = var1;

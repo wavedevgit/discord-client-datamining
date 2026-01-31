@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function() { // Original name: getNavigationModalPresentation, environment: var1
+            var1 = function() {
                 _fun72714: for (var _fun72714_ip = 0;;) switch (_fun72714_ip) {
                     case 0:
                         var0 = arguments[0];

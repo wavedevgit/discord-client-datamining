@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot2 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: A, environment: var0
+        var0 = function arg0, arg1() {
             var1 = 3;
             var0 = arg1;
             var2 = var1 * var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: B, environment: var0
+        var0 = function arg0, arg1() {
             var1 = 3;
             var0 = arg1;
             var1 = var1 * var0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: C, environment: var0
+        var0 = function arg0() {
             var1 = 3;
             var0 = arg0;
             var0 = var1 * var0;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot8 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: calcBezier, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var1 = arg0;
             var4 = arg1;
             var6 = arg2;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getSlope, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var5 = arg0;
             var4 = arg1;
             var6 = arg2;
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: binarySubdivide, environment: var0
+        var0 = function arg0, arg1, arg2, arg3, arg4() {
             _fun33623: for (var _fun33623_ip = 0;;) switch (_fun33623_ip) {
                 case 0:
                     var13 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot14 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: newtonRaphsonIterate, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             _fun33625: for (var _fun33625_ip = 0;;) switch (_fun33625_ip) {
                 case 0:
                     var10 = arg0;
@@ -313,7 +313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot19 = var3;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: Bezier, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             _fun33627: for (var _fun33627_ip = 0;;) switch (_fun33627_ip) {
                 case 0:
                     var8 = arg0;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot2 = var6;
                     var _closure3_slot3 = var5;
                     var0 = function() { // Environment: var1
-                        var0 = function(arg0) { // Original name: LinearEasing, environment: var0
+                        var0 = function arg0() {
                             var0 = arg0;
                             return var0;
                         };
@@ -416,7 +416,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 206:
                     var3 = function() { // Environment: var1
-                        var0 = function(arg0) { // Original name: getTForX, environment: var0
+                        var0 = function arg0() {
                             _fun33631: for (var _fun33631_ip = 0;;) switch (_fun33631_ip) {
                                 case 0:
                                     var6 = arg0;
@@ -537,7 +537,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                     var4 = var3.bind(var4)();
                     var _closure3_slot5 = var4;
-                    var1 = function(arg0) { // Original name: BezierEasing, environment: var1
+                    var1 = function arg0() {
                         _fun33632: for (var _fun33632_ip = 0;;) switch (_fun33632_ip) {
                             case 0:
                                 var5 = arg0;

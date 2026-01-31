@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.code = var3;
     var _closure1_slot0 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getHorizontalOrVerticalStartPoint, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun84554: for (var _fun84554_ip = 0;;) switch (_fun84554_ip) {
                 case 0:
                     var4 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot2 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getStartCornerToIntersect, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun84556: for (var _fun84556_ip = 0;;) switch (_fun84556_ip) {
                 case 0:
                     var1 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var4 = 'function getGradientStartPoint_getGradientStartPontTsx3(angle,width,height){const{getHorizontalOrVerticalStartPoint,getStartCornerToIntersect}=this.__closure;angle=angle%360;if(angle<0){angle+=360;}if(angle%90===0){return getHorizontalOrVerticalStartPoint(angle,width,height);}const slope=Math.tan(angle*Math.PI/180);const perpendicularSlope=-1/slope;const startCorner=getStartCornerToIntersect(angle,width,height);const b=startCorner[1]-perpendicularSlope*startCorner[0];const startX=b/(slope-perpendicularSlope);const startY=slope*startX;return[startX,startY];}';
     var3.code = var4;
-    var1 = function(arg0, arg1, arg2) { // Original name: t, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun84557: for (var _fun84557_ip = 0;;) switch (_fun84557_ip) {
             case 0:
                 var4 = arg1;

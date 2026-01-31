@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FormSwitchRow, environment: var1
+    var0 = function arg0() {
         _fun48042: for (var _fun48042_ip = 0;;) switch (_fun48042_ip) {
             case 0:
                 var4 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = true;
                 var13 = 'accessible';
                 var0[var13] = var14;
-                var13 = function() { // Original name: onAccessibilityTap, environment: var11
+                var13 = function() {
                     var2 = _closure2_slot3;
                     var0 = _closure2_slot2;
                     var1 = !var0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/refresh/form/FormSwitchRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormSwitchRowContainer, environment: var1
+    var1 = function arg0() {
         _fun48047: for (var _fun48047_ip = 0;;) switch (_fun48047_ip) {
             case 0:
                 var8 = arg0;

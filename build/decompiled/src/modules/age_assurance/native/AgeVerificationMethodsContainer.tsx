@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_assurance/native/AgeVerificationMethodsContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AgeVerificationMethodsContainer, environment: var1
+    var1 = function arg0() {
         _fun52950: for (var _fun52950_ip = 0;;) switch (_fun52950_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var6;
                     var6 = var0.description;
                     var1.subLabel = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.onClick;
                         var0 = _closure2_slot0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.bind(var3)(var9);
                 var10 = var9.htWh1G;
                 var9 = {};
-                var13 = function() { // Original name: handleOnHelpUrlHook, environment: var13
+                var13 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 16;

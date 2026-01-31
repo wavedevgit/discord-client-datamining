@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/app_database/modules/messages/isPrivateChannel.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: isPrivateChannel, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guild_id;
         var0 = null;

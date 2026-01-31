@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderActivityOrPIP, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun110323: for (var _fun110323_ip = 0;;) switch (_fun110323_ip) {
             case 0:
                 var4 = _closure1_slot7;
@@ -43,12 +43,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getKey, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: wrapChildren, environment: var3
+    var0 = function arg0() {
         var3 = _closure1_slot7;
         var2 = _closure1_slot4;
         var1 = {};
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var1 = function(arg0) { // Original name: BaseActivityPanelUI, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var9 = var1.renderActivityOrPIP;
         var3 = var1.context;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/activities/panel/native/ActivityPanelUI.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: ActivityPanelUI, environment: var3
+    var3 = function() {
         var5 = _closure1_slot3;
         var4 = var5.useCallback;
         var3 = function() { // Environment: var0

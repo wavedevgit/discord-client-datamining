@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1 = var3.bind(var5)(var1);
-    var3 = function(arg0) { // Original name: getStyle, environment: var4
+    var3 = function arg0() {
         _fun65383: for (var _fun65383_ip = 0;;) switch (_fun65383_ip) {
             case 0:
                 var1 = arg0;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: getTimezoneOffsetInMinutes, environment: var4
+    var3 = function arg0() {
         _fun65384: for (var _fun65384_ip = 0;;) switch (_fun65384_ip) {
             case 0:
                 var0 = arg0;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: toIsoWithTimeZoneOffset, environment: var4
+    var3 = function arg0() {
         _fun65385: for (var _fun65385_ip = 0;;) switch (_fun65385_ip) {
             case 0:
                 var1 = arg0;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: fromIsoWithTimeZoneOffset, environment: var4
+    var3 = function arg0() {
         var0 = global;
         var2 = var0.Date;
         var0 = var2.prototype;

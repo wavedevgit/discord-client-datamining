@@ -19,12 +19,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'lib/hook/Hook.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isHookModuleTooOld, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var2.isHookModuleTooOld = var3;
-    var3 = function() { // Original name: attachToProcess, environment: var1
+    var3 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.attachToProcess = var3;
-    var3 = function() { // Original name: cancelAttachToProcess, environment: var1
+    var3 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.cancelAttachToProcess = var3;
-    var1 = function() { // Original name: findSteamProcess, environment: var1
+    var1 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;

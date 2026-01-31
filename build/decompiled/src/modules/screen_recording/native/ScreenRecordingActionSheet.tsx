@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/screen_recording/native/ScreenRecordingActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ScreenRecordingActionSheet, environment: var1
+    var1 = function() {
         _fun100085: for (var _fun100085_ip = 0;;) switch (_fun100085_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = 'Done';
                 var8.text = var21;
                 var8.loading = var14;
-                var21 = function() { // Original name: onPress, environment: var13
+                var21 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var21 = var17.closeButton;
                 var8.style = var21;
-                var21 = function() { // Original name: onPress, environment: var13
+                var21 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 8;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = 'Next';
                 var11.text = var15;
                 var11.loading = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var1 = var1.bind(var0)();

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var1 = 'utils/StringUtils.tsx';
     var1 = var5.bind(var6)(var1);
-    var1 = function(arg0) { // Original name: isNullOrEmpty, environment: var1
+    var1 = function arg0() {
         _fun17832: for (var _fun17832_ip = 0;;) switch (_fun17832_ip) {
             case 0:
                 var1 = arg0;

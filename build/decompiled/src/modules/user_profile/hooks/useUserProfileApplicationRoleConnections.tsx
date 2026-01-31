@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/hooks/useUserProfileApplicationRoleConnections.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useUserProfileApplicationRoleConnections, environment: var1
+    var1 = function arg0() {
         _fun91960: for (var _fun91960_ip = 0;;) switch (_fun91960_ip) {
             case 0:
                 var1 = arg0;

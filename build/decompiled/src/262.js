@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__constants': null,
         'OS': 'android'
     };
-    var5 = function() { // Original name: get Version, environment: var3
+    var5 = function() {
         var0 = this;
         var0 = var0.constants;
         var0 = var0.Version;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var5 = function() { // Original name: get constants, environment: var3
+    var5 = function() {
         _fun3357: for (var _fun3357_ip = 0;;) switch (_fun3357_ip) {
             case 0:
                 var0 = this;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var5 = function() { // Original name: get isTesting, environment: var3
+    var5 = function() {
         var0 = false;
         return var0;
     };
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var5 = function() { // Original name: get isDisableAnimations, environment: var3
+    var5 = function() {
         _fun3359: for (var _fun3359_ip = 0;;) switch (_fun3359_ip) {
             case 0:
                 var1 = this;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var5 = function() { // Original name: get isTV, environment: var3
+    var5 = function() {
         var0 = this;
         var0 = var0.constants;
         var1 = var0.uiMode;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var5 = function() { // Original name: get isVision, environment: var3
+    var5 = function() {
         var0 = false;
         return var0;
     };
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var3 = function(arg0) { // Original name: select, environment: var3
+    var3 = function arg0() {
         _fun3362: for (var _fun3362_ip = 0;;) switch (_fun3362_ip) {
             case 0:
                 var1 = arg0;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: ZStream, environment: var0
+    var1 = function() {
         var1 = this;
         var2 = null;
         var1.input = var2;

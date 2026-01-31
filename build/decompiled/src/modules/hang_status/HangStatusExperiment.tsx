@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/hang_status/HangStatusExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.HangStatusExperiment = var3;
-    var3 = function(arg0) { // Original name: useHangStatusExperiment, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var0 = var0.location;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHangStatusExperiment = var3;
-    var1 = function(arg0) { // Original name: getHangStatusExperiment, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var0 = var0.location;

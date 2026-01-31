@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.COLLAPSED;
     var9 = var10.bind(var11)(var9);
     var3.restingQuestDockMode = var9;
-    var9 = function() { // Original name: setRestingQuestDockMode, environment: var1
+    var9 = function() {
         var0 = undefined;
         return var0;
     };
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.bind(var8)(var3);
     var _closure1_slot8 = var4;
     var5 = var8.memo;
-    var3 = function(arg0) { // Original name: QuestDockExternalCoordinationContextProviderInner, environment: var1
+    var3 = function arg0() {
         _fun46733: for (var _fun46733_ip = 0;;) switch (_fun46733_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.QuestDockExternalCoordinationContext = var4;
     var2.QuestDockExternalCoordinationContextProvider = var3;
-    var1 = function(arg0) { // Original name: useExternalScrollEventHandler, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.id;
         var _closure2_slot0 = var11;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = undefined;
         var12 = var15.bind(var14)(var2);
         var10 = var12.useAnimatedReaction;
-        var4 = function() { // Original name: D, environment: var1
+        var4 = function() {
             var1 = _closure2_slot2;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.__workletHash = var2;
         var2 = _closure1_slot10;
         var4.__initData = var2;
-        var2 = function(arg0, arg1) { // Original name: c, environment: var1
+        var2 = function arg0, arg1() {
             _fun46741: for (var _fun46741_ip = 0;;) switch (_fun46741_ip) {
                 case 0:
                     var1 = arg0;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = var17.bind(var3)(var2, var12);
         var2 = var3.useCallback;
-        var1 = function(arg0, arg1, arg2) { // Original name: T, environment: var1
+        var1 = function arg0, arg1, arg2() {
             _fun46745: for (var _fun46745_ip = 0;;) switch (_fun46745_ip) {
                 case 0:
                     var3 = arg0;

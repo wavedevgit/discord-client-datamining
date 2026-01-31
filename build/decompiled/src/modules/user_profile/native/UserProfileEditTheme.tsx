@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ColorSwatch, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.color;
         var8 = var0.label;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileEditTheme.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileEditTheme, environment: var1
+    var1 = function arg0() {
         _fun79879: for (var _fun79879_ip = 0;;) switch (_fun79879_ip) {
             case 0:
                 var0 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun79879
                 }
             case 288:
-                var1 = function(arg0) { // Original name: handleProfileThemeColorsChanged, environment: var14
+                var1 = function arg0() {
                     _fun79880: for (var _fun79880_ip = 0;;) switch (_fun79880_ip) {
                         case 0:
                             var3 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 _closure2_slot5 = var1;
-                var15 = function(arg0, arg1) { // Original name: makeOnPress, environment: var14
+                var15 = function arg0, arg1() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = arg1;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18["+1H47t"];
                 var18 = var21.bind(var23)(var18);
                 var12.accessibilityLabel = var18;
-                var18 = function() { // Original name: onPress, environment: var14
+                var18 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 18;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.paths;
                     var3 = var3.bind(var0)(var2, var1);
                     var2 = {};
-                    var1 = function() { // Original name: onResetTheme, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot5;
                         var1 = undefined;
                         var0 = [null, null];

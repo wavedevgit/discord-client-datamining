@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: EmptyStateNoQuestsAvailable, environment: var1
+    var0 = function() {
         var11 = _closure1_slot0;
         var12 = _closure1_slot2;
         var1 = 11;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: EmptyStateFiltered, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.onClearFilters;
         var3 = _closure1_slot10;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: QuestHome, environment: var1
+    var1 = function arg0() {
         _fun82771: for (var _fun82771_ip = 0;;) switch (_fun82771_ip) {
             case 0:
                 var0 = arg0;
@@ -813,7 +813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var21)(var19);
                 var1.accessibilityLabel = var19;
                 var1.data = var16;
-                var16 = function(arg0) { // Original name: renderItem, environment: var15
+                var16 = function arg0() {
                     var1 = arg0;
                     var0 = var1.item;
                     var _closure3_slot0 = var0;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.QuestContent;
                     var6 = var6.QUEST_HOME_MOBILE;
                     var1.sourceQuestContent = var6;
-                    var5 = function() { // Original name: children, environment: var5
+                    var5 = function() {
                         var4 = _closure1_slot10;
                         var6 = _closure1_slot0;
                         var7 = _closure1_slot2;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.estimatedItemSize = var16;
                 var16 = false;
                 var1.showsHorizontalScrollIndicator = var16;
-                var16 = function() { // Original name: ListHeaderComponent, environment: var15
+                var16 = function() {
                     _fun82789: for (var _fun82789_ip = 0;;) switch (_fun82789_ip) {
                         case 0:
                             var0 = _closure2_slot7;
@@ -940,7 +940,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.ListHeaderComponent = var16;
-                var15 = function(arg0) { // Original name: CellRendererComponent, environment: var15
+                var15 = function arg0() {
                     var5 = arg0;
                     var _closure3_slot0 = var5;
                     var3 = _closure1_slot10;
@@ -955,7 +955,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var0;
                     var6 = var5;
                     var5 = copyDataProperties(var7, var6);
-                    var5 = function(arg0) { // Original name: onLayout, environment: var4
+                    var5 = function arg0() {
                         _fun82791: for (var _fun82791_ip = 0;;) switch (_fun82791_ip) {
                             case 0:
                                 var2 = arg0;

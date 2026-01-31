@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/activities/native/WebViewContext.tsx';
     var4 = var5.bind(var6)(var4);
     var2.WebViewContext = var3;
-    var1 = function(arg0) { // Original name: WebViewContextProvider, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.children;
         var6 = _closure1_slot1;

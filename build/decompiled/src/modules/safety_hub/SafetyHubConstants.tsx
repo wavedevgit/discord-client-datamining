@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17[1] = var1;
     var1 = var18.ENCRYPTION;
     var17[2] = var1;
-    var1 = function() { // Original name: SafetyHubLinks, environment: var9
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = undefined;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var16.SPAM_LINK = var1;
     var1 = 'https://support.discord.com/hc/articles/360041820932';
     var16.LEARN_MORE_UU_APPEAL_LINK = var1;
-    var1 = function() { // Original name: SafetyHubPolicyNoticeKeys, environment: var9
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = undefined;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14.POLICY_VIOLATION_DETAIL = var5;
     var5 = 'learn_more_link';
     var14.LEARN_MORE_LINK = var5;
-    var6 = function() { // Original name: SafetySystemNotificationEmbedKeys, environment: var9
+    var6 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var0 = undefined;

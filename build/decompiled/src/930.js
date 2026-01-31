@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function(arg0, arg1, arg2) { // Original name: _callOnRequestSpanEnd, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun9693: for (var _fun9693_ip = 0;;) switch (_fun9693_ip) {
             case 0:
                 var1 = arg1;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: _addTracingHeadersToFetchRequest, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun9694: for (var _fun9694_ip = 0;;) switch (_fun9694_ip) {
             case 0:
                 var1 = arg0;
@@ -492,7 +492,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var4;
-    var0 = function(arg0) { // Original name: baggageHeaderHasSentryBaggageValues, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = ',';
@@ -517,7 +517,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getFetchSpanAttributes, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun9701: for (var _fun9701_ip = 0;;) switch (_fun9701_ip) {
             case 0:
                 var1 = arg1;
@@ -607,7 +607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var7.bind(var8)(var2, var6, var5);
     var2._addTracingHeadersToFetchRequest = var4;
     var2._callOnRequestSpanEnd = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: instrumentFetchRequest, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun9702: for (var _fun9702_ip = 0;;) switch (_fun9702_ip) {
             case 0:
                 var6 = arg0;

@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGuildsBarBottomRightBadge, environment: var1
+    var1 = function arg0() {
         _fun100910: for (var _fun100910_ip = 0;;) switch (_fun100910_ip) {
             case 0:
                 var1 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.accessibilityElementsHidden = var6;
                             var6 = 'no-hide-descendants';
                             var1.importantForAccessibility = var6;
-                            var6 = function(arg0) { // Original name: onLayout, environment: var6
+                            var6 = function arg0() {
                                 _fun100913: for (var _fun100913_ip = 0;;) switch (_fun100913_ip) {
                                     case 0:
                                         var0 = arg0;

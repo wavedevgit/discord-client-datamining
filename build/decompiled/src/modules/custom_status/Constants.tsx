@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var4 = var3.ONLINE;
     var1.value = var4;
-    var4 = function() { // Original name: label, environment: var10
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var4 = var3.IDLE;
     var1.value = var4;
-    var4 = function() { // Original name: label, environment: var10
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var4 = var3.DND;
     var1.value = var4;
-    var4 = function() { // Original name: label, environment: var10
+    var4 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var3 = var3.INVISIBLE;
     var1.value = var3;
-    var3 = function() { // Original name: label, environment: var10
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var1 = var3.PLAYING;
     var7.value = var1;
-    var1 = function() { // Original name: label, environment: var10
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.LISTENING_TO;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.WATCHING;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.CURRENT_OBSESSION;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.SHOWER_THOUGHT;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.TODAY_I_LEARNED;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.HOT_TAKE;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.DAD_JOKE;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.EMOJI_DAY;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.USELESS_TALENT;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.VIDEO_GAME_ITEM;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.READING;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.SONG_STUCK;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.MOST_USED_EMOJI;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.BEST_FOOD;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.FICTIONAL_WORLD;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.USERNAME_ORIGIN;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.THEME_SONG;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.FAVORITE_COLLECTIBLE;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.GAME_MECHANIC;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.NPC_COMPANION;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.FOOD_CRAVING;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.MYTHICAL_PET;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.LATEST_HOBBY;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -689,7 +689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.FAVORITE_ANIME;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.RANKED_UP;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.CHARACTER_CLASS;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.HIGH_SCORE;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.FINISHED_PLAYING;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.FINISHED_READING;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.CANT_WAIT;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.ADD_STATUS;
     var7.value = var11;
-    var11 = function() { // Original name: label, environment: var10
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;
@@ -857,7 +857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var11 = var3.WHATS_ON_YOUR_MIND;
     var7.value = var11;
-    var10 = function() { // Original name: label, environment: var10
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 2;

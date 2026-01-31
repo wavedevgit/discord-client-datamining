@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.analyticsLocation;
         var _closure2_slot0 = var1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var14.getHeaderCloseButton;
         var11 = var11.bind(var14)(var6);
         var2.headerLeft = var11;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11["8jmdON"];
         var11 = var14.bind(var15)(var11);
         var2.title = var11;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var14.getHeaderCloseButton;
         var11 = var11.bind(var14)(var6);
         var2.headerLeft = var11;
-        var11 = function() { // Original name: render, environment: var3
+        var11 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.u95Dt4;
         var11 = var14.bind(var15)(var11);
         var2.title = var11;
-        var11 = function(arg0) { // Original name: headerLeft, environment: var3
+        var11 = function arg0() {
             _fun57427: for (var _fun57427_ip = 0;;) switch (_fun57427_ip) {
                 case 0:
                     var3 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11.predicate = var13;
         var11.showCurrentPlan = var12;
         var2.initialParams = var11;
-        var11 = function(arg0) { // Original name: render, environment: var3
+        var11 = function arg0() {
             var0 = arg0;
             var6 = var0.predicate;
             var5 = var0.showCurrentPlan;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var5.getHeaderCloseButton;
         var4 = var4.bind(var5)(var6);
         var1.headerLeft = var4;
-        var3 = function() { // Original name: render, environment: var3
+        var3 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/PremiumModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumModal, environment: var1
+    var1 = function arg0() {
         _fun57430: for (var _fun57430_ip = 0;;) switch (_fun57430_ip) {
             case 0:
                 var0 = arg0;

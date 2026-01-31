@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: addRequestAttributes, environment: var1
+    var0 = function arg0, arg1() {
         _fun9871: for (var _fun9871_ip = 0;;) switch (_fun9871_ip) {
             case 0:
                 var2 = arg0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: instrumentMethod, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -629,7 +629,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var5 = var3;
                                                 var2 = _closure5_slot1;
                                                 var4 = var2.recordOutputs;
-                                                var3 = function(arg0, arg1, arg2) { // Original name: addResponseAttributes, environment: var2
+                                                var3 = function arg0, arg1, arg2() {
                                                     _fun9883: for (var _fun9883_ip = 0;;) switch (_fun9883_ip) {
                                                         case 0:
                                                             var2 = arg0;
@@ -1024,7 +1024,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1 = var3.bind(var2)(var1);
             var _closure3_slot0 = var1;
-            var0 = function() { // Original name: instrumentedMethod, environment: var0
+            var0 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot0;
                 var2 = var3.apply;
@@ -1041,7 +1041,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: createDeepProxy, environment: var1
+    var0 = function arg0() {
         _fun9887: for (var _fun9887_ip = 0;;) switch (_fun9887_ip) {
             case 0:
                 var1 = undefined;
@@ -1081,7 +1081,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = global;
                 var3 = var1.Proxy;
                 var2 = {};
-                var0 = function(arg0, arg1) { // Original name: get, environment: var0
+                var0 = function arg0, arg1() {
                     _fun9888: for (var _fun9888_ip = 0;;) switch (_fun9888_ip) {
                         case 0:
                             var6 = arg0;
@@ -1198,7 +1198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0, arg1) { // Original name: instrumentOpenAiClient, environment: var1
+    var1 = function arg0, arg1() {
         var4 = _closure1_slot7;
         var3 = undefined;
         var2 = arg0;

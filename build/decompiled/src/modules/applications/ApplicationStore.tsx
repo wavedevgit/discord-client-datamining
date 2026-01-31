@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun29427: for (var _fun29427_ip = 0;;) switch (_fun29427_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun29430: for (var _fun29430_ip = 0;;) switch (_fun29430_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun29432: for (var _fun29432_ip = 0;;) switch (_fun29432_ip) {
             case 0:
                 var3 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: addApplication, environment: var3
+    var0 = function arg0() {
         _fun29433: for (var _fun29433_ip = 0;;) switch (_fun29433_ip) {
             case 0:
                 var1 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var7 = function(arg0) { // Original name: handleWishlistAction, environment: var3
+    var7 = function arg0() {
         _fun29434: for (var _fun29434_ip = 0;;) switch (_fun29434_ip) {
             case 0:
                 var0 = arg0;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: updateApplication, environment: var3
+    var0 = function arg0() {
         var2 = _closure1_slot17;
         var3 = _closure1_slot6;
         var1 = var3.createFromServer;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: handleAppWithBot, environment: var3
+    var0 = function arg0() {
         _fun29436: for (var _fun29436_ip = 0;;) switch (_fun29436_ip) {
             case 0:
                 var0 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var8 = function(arg0) { // Original name: handleEntitlementsFetched, environment: var3
+    var8 = function arg0() {
         _fun29438: for (var _fun29438_ip = 0;;) switch (_fun29438_ip) {
             case 0:
                 var0 = arg0;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ApplicationStore, environment: var5
+        var3 = function() {
             _fun29440: for (var _fun29440_ip = 0;;) switch (_fun29440_ip) {
                 case 0:
                     var3 = this;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun29441: for (var _fun29441_ip = 0;;) switch (_fun29441_ip) {
                 case 0:
                     var9 = arg0;
@@ -864,7 +864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -873,7 +873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_getAllApplications';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildApplication';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun29444: for (var _fun29444_ip = 0;;) switch (_fun29444_ip) {
                 case 0:
                     var6 = arg0;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildApplicationIds';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun29445: for (var _fun29445_ip = 0;;) switch (_fun29445_ip) {
                 case 0:
                     var4 = arg0;
@@ -981,7 +981,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun29446: for (var _fun29446_ip = 0;;) switch (_fun29446_ip) {
                 case 0:
                     var2 = arg0;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getApplicationByName';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun29447: for (var _fun29447_ip = 0;;) switch (_fun29447_ip) {
                 case 0:
                     var1 = arg0;
@@ -1041,7 +1041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getApplicationLastUpdated';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot11;
             var1 = var2.get;
             var0 = arg0;
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.get;
             var0 = arg0;
@@ -1067,7 +1067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'didFetchingApplicationFail';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.get;
             var0 = arg0;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchingOrFailedFetchingIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAppIdForBotUserId';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun29452: for (var _fun29452_ip = 0;;) switch (_fun29452_ip) {
                 case 0:
                     var2 = arg0;
@@ -1137,7 +1137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var13 = var5.bind(var0)(var1);
     var1 = {};
-    var9 = function() { // Original name: handleLogout, environment: var3
+    var9 = function() {
         var2 = _closure1_slot8;
         var1 = var2.clear;
         var1 = var1.bind(var2)();
@@ -1157,7 +1157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var9;
-    var9 = function(arg0) { // Original name: handleOverlayInitialize, environment: var3
+    var9 = function arg0() {
         _fun29454: for (var _fun29454_ip = 0;;) switch (_fun29454_ip) {
             case 0:
                 var0 = arg0;
@@ -1197,7 +1197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.OVERLAY_INITIALIZE = var9;
-    var9 = function(arg0) { // Original name: handleApplicationFetch, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var4 = var0.applicationId;
         var2 = _closure1_slot12;
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.APPLICATION_FETCH = var9;
-    var9 = function(arg0) { // Original name: handleApplicationFetchSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.application;
         var1 = _closure1_slot18;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.APPLICATION_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleApplicationFetchFail, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var4 = var0.applicationId;
         var2 = _closure1_slot12;
@@ -1234,7 +1234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.APPLICATION_FETCH_FAIL = var9;
-    var9 = function(arg0) { // Original name: handleApplicationsFetch, environment: var3
+    var9 = function arg0() {
         _fun29458: for (var _fun29458_ip = 0;;) switch (_fun29458_ip) {
             case 0:
                 var0 = arg0;
@@ -1271,7 +1271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.APPLICATIONS_FETCH = var9;
-    var9 = function(arg0) { // Original name: handleApplicationsFetchSuccess, environment: var3
+    var9 = function arg0() {
         _fun29459: for (var _fun29459_ip = 0;;) switch (_fun29459_ip) {
             case 0:
                 var0 = arg0;
@@ -1304,7 +1304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.APPLICATIONS_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleApplicationsFetchFail, environment: var3
+    var9 = function arg0() {
         _fun29460: for (var _fun29460_ip = 0;;) switch (_fun29460_ip) {
             case 0:
                 var0 = arg0;
@@ -1342,7 +1342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.APPLICATIONS_FETCH_FAIL = var9;
-    var9 = function(arg0) { // Original name: handleUpdateApplication, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.application;
         var1 = _closure1_slot18;
@@ -1354,7 +1354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS = var8;
     var1.ENTITLEMENTS_FETCH_FOR_USER_SUCCESS = var8;
     var1.ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleGuildApplicationsFetchSuccess, environment: var3
+    var8 = function arg0() {
         _fun29462: for (var _fun29462_ip = 0;;) switch (_fun29462_ip) {
             case 0:
                 var0 = arg0;
@@ -1395,7 +1395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_APPLICATIONS_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchPayments, environment: var3
+    var8 = function arg0() {
         _fun29463: for (var _fun29463_ip = 0;;) switch (_fun29463_ip) {
             case 0:
                 var0 = arg0;
@@ -1469,7 +1469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_PAYMENTS_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleUpdatePayment, environment: var3
+    var8 = function arg0() {
         _fun29464: for (var _fun29464_ip = 0;;) switch (_fun29464_ip) {
             case 0:
                 var0 = arg0;
@@ -1505,7 +1505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.PAYMENT_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleResolveInvite, environment: var3
+    var8 = function arg0() {
         _fun29465: for (var _fun29465_ip = 0;;) switch (_fun29465_ip) {
             case 0:
                 var0 = arg0;
@@ -1531,7 +1531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.INVITE_RESOLVE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleGiftCodeResolveSuccess, environment: var3
+    var8 = function arg0() {
         _fun29466: for (var _fun29466_ip = 0;;) switch (_fun29466_ip) {
             case 0:
                 var0 = arg0;
@@ -1569,7 +1569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_RESOLVE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleLibraryApplicationsFetch, environment: var3
+    var8 = function arg0() {
         _fun29467: for (var _fun29467_ip = 0;;) switch (_fun29467_ip) {
             case 0:
                 var0 = arg0;
@@ -1603,7 +1603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LIBRARY_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleStoreListingFetch, environment: var3
+    var8 = function arg0() {
         _fun29468: for (var _fun29468_ip = 0;;) switch (_fun29468_ip) {
             case 0:
                 var0 = arg0;
@@ -1631,12 +1631,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STORE_LISTING_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleLoadMessages, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.messages;
         var1 = var2.forEach;
         var0 = function(arg0) { // Environment: var0
-            var2 = function(arg0) { // Original name: mergeApplicationsFromMessage, environment: var0
+            var2 = function arg0() {
                 _fun29471: for (var _fun29471_ip = 0;;) switch (_fun29471_ip) {
                     case 0:
                         var0 = arg0;
@@ -1687,7 +1687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOAD_MESSAGES_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleProfileFetchSuccess, environment: var3
+    var8 = function arg0() {
         _fun29473: for (var _fun29473_ip = 0;;) switch (_fun29473_ip) {
             case 0:
                 var0 = arg0;
@@ -1722,7 +1722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_PROFILE_FETCH_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleAppDMOpen, environment: var3
+    var8 = function arg0() {
         _fun29474: for (var _fun29474_ip = 0;;) switch (_fun29474_ip) {
             case 0:
                 var0 = arg0;
@@ -1755,7 +1755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.APP_DM_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleAuthorizedAppsUpdate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.tokens;
         var1 = var2.forEach;
@@ -1795,7 +1795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_AUTHORIZED_APPS_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleNotificationCenterItemsSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.items;
         var1 = var2.forEach;
@@ -1827,7 +1827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleOAuth2TokenCreate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.application;
         var2 = _closure1_slot17;
@@ -1842,7 +1842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.WISHLIST_FETCH_SUCCESS = var7;
     var1.WISHLIST_ADD_SKU_SUCCESS = var7;
     var1.WISHLIST_REMOVE_SKU_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleSocialLayerStorefrontLoadSuccess, environment: var3
+    var7 = function arg0() {
         _fun29480: for (var _fun29480_ip = 0;;) switch (_fun29480_ip) {
             case 0:
                 var0 = arg0;
@@ -1864,7 +1864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS = var7;
-    var3 = function(arg0) { // Original name: handleSocialLayerStorefrontRecommendationsFetchSuccess, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.application;
         var1 = _closure1_slot17;

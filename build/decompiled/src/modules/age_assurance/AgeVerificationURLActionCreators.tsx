@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var0 = function() { // Original name: _requestAgeVerification, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var6 = function() { // Original name: initiateAgeVerification, environment: var4
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var6;
-    var0 = function() { // Original name: _initiateAgeVerification, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var5 = function() { // Original name: initiateSuspendedUserAgeVerification, environment: var4
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var5;
-    var0 = function() { // Original name: _initiateSuspendedUserAgeVerification, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _getAgeVerificationMethods, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var3 = function() { // Original name: fetchAgeVerificationMethods, environment: var4
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var3;
-    var1 = function() { // Original name: fetchAgeVerificationMethodsSuspendedUser, environment: var4
+    var1 = function() {
         var1 = _closure1_slot4;
         var0 = var1.getSuspendedUserToken;
         var4 = var0.bind(var1)();
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/age_assurance/AgeVerificationURLActionCreators.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function() { // Original name: requestAgeVerification, environment: var4
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.requestAgeVerification = var7;
     var2.initiateAgeVerification = var6;
     var2.initiateSuspendedUserAgeVerification = var5;
-    var4 = function() { // Original name: getAgeVerificationMethods, environment: var4
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;

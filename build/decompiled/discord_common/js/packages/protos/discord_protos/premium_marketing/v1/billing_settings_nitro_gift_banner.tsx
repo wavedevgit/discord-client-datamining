@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun57907: for (var _fun57907_ip = 0;;) switch (_fun57907_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.MessageType;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: BillingSettingsNitroGiftBanner$Type, environment: var5
+        var3 = function() {
             _fun57911: for (var _fun57911_ip = 0;;) switch (_fun57911_ip) {
                 case 0:
                     var3 = this;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'name': 'gradient',
                         'kind': 'message'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 6;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'name': 'asset',
                         'kind': 'message'
                     };
-                    var7 = function() { // Original name: T, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 7;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'name': 'background_asset',
                         'kind': 'message'
                     };
-                    var6 = function() { // Original name: T, environment: var6
+                    var6 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 7;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'create';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun57915: for (var _fun57915_ip = 0;;) switch (_fun57915_ip) {
                 case 0:
                     var4 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryRead';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun57916: for (var _fun57916_ip = 0;;) switch (_fun57916_ip) {
                 case 0:
                     var22 = arg0;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryWrite';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun57917: for (var _fun57917_ip = 0;;) switch (_fun57917_ip) {
                 case 0:
                     var4 = arg0;

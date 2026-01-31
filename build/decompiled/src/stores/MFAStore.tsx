@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun60729: for (var _fun60729_ip = 0;;) switch (_fun60729_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: MFAStore, environment: var5
+        var3 = function() {
             _fun60733: for (var _fun60733_ip = 0;;) switch (_fun60733_ip) {
                 case 0:
                     var3 = this;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getVerificationKey';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getBackupCodes';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'togglingSMS';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNonces';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasSeenBackupPrompt';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleEnableSuccess, environment: var3
+    var7 = function arg0() {
         _fun60739: for (var _fun60739_ip = 0;;) switch (_fun60739_ip) {
             case 0:
                 var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MFA_ENABLE_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleDisableSuccess, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.token;
         var2 = _closure1_slot1;
@@ -234,28 +234,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MFA_DISABLE_SUCCESS = var7;
-    var7 = function() { // Original name: handleSMSToggle, environment: var3
+    var7 = function() {
         var0 = true;
         _closure1_slot8 = var0;
         var0 = undefined;
         return var0;
     };
     var1.MFA_SMS_TOGGLE = var7;
-    var7 = function() { // Original name: handleSMSToggleComplete, environment: var3
+    var7 = function() {
         var0 = false;
         _closure1_slot8 = var0;
         var0 = undefined;
         return var0;
     };
     var1.MFA_SMS_TOGGLE_COMPLETE = var7;
-    var7 = function() { // Original name: handleClearBackupCodes, environment: var3
+    var7 = function() {
         var0 = new Array(0);
         _closure1_slot9 = var0;
         var0 = undefined;
         return var0;
     };
     var1.MFA_CLEAR_BACKUP_CODES = var7;
-    var7 = function(arg0) { // Original name: handleGetBackupCodes, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var6 = var0.codes;
         var2 = var0.key;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MFA_VIEW_BACKUP_CODES = var7;
-    var7 = function(arg0) { // Original name: handleSendVerificationEmail, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.nonces;
         _closure1_slot12 = var1;
@@ -281,14 +281,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MFA_SEND_VERIFICATION_KEY = var7;
-    var7 = function() { // Original name: handleSeenBackupPrompt, environment: var3
+    var7 = function() {
         var0 = true;
         _closure1_slot11 = var0;
         var0 = undefined;
         return var0;
     };
     var1.MFA_SEEN_BACKUP_CODE_PROMPT = var7;
-    var3 = function() { // Original name: CONNECTION_OPEN, environment: var3
+    var3 = function() {
         var0 = undefined;
         return var0;
     };

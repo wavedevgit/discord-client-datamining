@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var0 = function(arg0) { // Original name: _getRequireWildcardCache, environment: var1
+            var0 = function arg0() {
                 _fun48093: for (var _fun48093_ip = 0;;) switch (_fun48093_ip) {
                     case 0:
                         var1 = global;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = new var5[var1](var4);
                         var1 = var1 instanceof Object ? var1 : var2;
                         var _closure2_slot1 = var1;
-                        var2 = function(arg0) { // Original name: _getRequireWildcardCache, environment: var0
+                        var2 = function arg0() {
                             _fun48094: for (var _fun48094_ip = 0;;) switch (_fun48094_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -245,7 +245,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot8 = var4;
             var4 = var3.default;
             var3 = var4.forwardRef;
-            var1 = function(arg0, arg1) { // Original name: SliderComponent, environment: var1
+            var1 = function arg0, arg1() {
                 _fun48095: for (var _fun48095_ip = 0;;) switch (_fun48095_ip) {
                     case 0:
                         var9 = arg0;
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7[0] = var18;
                         var5 = var11.style;
                         var7[1] = var5;
-                        var14 = function(arg0) { // Original name: onValueChangeEvent, environment: var12
+                        var14 = function arg0() {
                             _fun48097: for (var _fun48097_ip = 0;;) switch (_fun48097_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -652,7 +652,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = _closure1_slot5;
                         var1 = var0.View;
                         var0 = {};
-                        var4 = function(arg0) { // Original name: onLayout, environment: var12
+                        var4 = function arg0() {
                             var2 = _closure2_slot8;
                             var0 = arg0;
                             var0 = var0.nativeEvent;
@@ -766,12 +766,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var8.onRNCSliderSlidingComplete = var15;
                         var8.onRNCSliderValueChange = var14;
                         var8.disabled = var13;
-                        var13 = function() { // Original name: onStartShouldSetResponder, environment: var12
+                        var13 = function() {
                             var0 = true;
                             return var0;
                         };
                         var8.onStartShouldSetResponder = var13;
-                        var12 = function() { // Original name: onResponderTerminationRequest, environment: var12
+                        var12 = function() {
                             var0 = false;
                             return var0;
                         };

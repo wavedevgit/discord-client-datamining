@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: useBugReporterExperimentSettingPredicate, environment: var9
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var5.bind(var0)(var10);
     var10 = var10.BugIcon;
     var3.IconComponent = var10;
-    var9 = function() { // Original name: handleBugReporterSettingPress, environment: var9
+    var9 = function() {
         _fun87554: for (var _fun87554_ip = 0;;) switch (_fun87554_ip) {
             case 0:
                 var2 = _closure1_slot3;

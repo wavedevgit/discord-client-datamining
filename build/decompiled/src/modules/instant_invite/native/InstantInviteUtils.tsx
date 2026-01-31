@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot14 = var4;
     var3 = var3.Permissions;
     var _closure1_slot15 = var3;
-    var5 = function(arg0, arg1) { // Original name: showInstantInviteActionSheet, environment: var1
+    var5 = function arg0, arg1() {
         _fun67096: for (var _fun67096_ip = 0;;) switch (_fun67096_ip) {
             case 0:
                 var5 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: showVanityUrlInviteActionSheet, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var3 = arg2;
         var2 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: trackOptionClicked, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun67098: for (var _fun67098_ip = 0;;) switch (_fun67098_ip) {
             case 0:
                 var11 = arg0;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/instant_invite/native/InstantInviteUtils.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: showInstantInviteActionSheetForChannel, environment: var1
+    var6 = function arg0() {
         _fun67099: for (var _fun67099_ip = 0;;) switch (_fun67099_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -857,7 +857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handlePressSettings = var3;
-    var3 = function(arg0) { // Original name: isAppInstalled, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 21;

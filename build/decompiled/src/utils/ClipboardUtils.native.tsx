@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _copy, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/ClipboardUtils.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.SUPPORTS_COPY = var3;
-    var3 = function() { // Original name: copy, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot3;
         var2 = var3.apply;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.copy = var3;
-    var1 = function() { // Original name: getString, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

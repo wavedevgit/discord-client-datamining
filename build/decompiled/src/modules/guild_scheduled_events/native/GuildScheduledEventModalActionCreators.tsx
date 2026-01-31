@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var7 = function(arg0, arg1) { // Original name: openCreateOrEditGuildEventModal, environment: var1
+    var7 = function arg0, arg1() {
         _fun65210: for (var _fun65210_ip = 0;;) switch (_fun65210_ip) {
             case 0:
                 var1 = arg1;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.onClose;
                 var _closure2_slot0 = var2;
                 var6 = var1.recurrenceId;
-                var5 = function() { // Original name: handleClose, environment: var0
+                var5 = function() {
                     _fun65211: for (var _fun65211_ip = 0;;) switch (_fun65211_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var7;
-    var6 = function(arg0, arg1, arg2) { // Original name: openStartGuildEventModal, environment: var1
+    var6 = function arg0, arg1, arg2() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 14;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: openDeleteGuildEventActionSheet, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var3 = _closure1_slot4;
         var2 = var3.lazy;
         var0 = function() { // Environment: var0
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var5;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: updateRsvp, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var7 = arg3;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot1;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: handleGuildScheduledEventRsvp, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var7 = arg0;
         var6 = arg2;
         var4 = arg3;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = arg1;
         var1.recurrenceId = var7;
         var1.guildId = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: updateRsvp, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             var5 = _closure1_slot21;
             var9 = _closure2_slot0;
             var7 = _closure2_slot1;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.updateRsvp = var6;
-        var5 = function(arg0, arg1) { // Original name: openRsvpPicker, environment: var5
+        var5 = function arg0, arg1() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 14;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var3;
-    var0 = function() { // Original name: _transitionToEventDetailsFromInvite, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = 'modules/guild_scheduled_events/native/GuildScheduledEventModalActionCreators.tsx';
     var8 = var9.bind(var10)(var8);
     var2.openCreateOrEditGuildEventModal = var7;
-    var7 = function(arg0) { // Original name: openGuildEventListActionSheet, environment: var1
+    var7 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 14;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openGuildEventListActionSheet = var7;
-    var7 = function() { // Original name: closeGuildEventListActionSheet, environment: var1
+    var7 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 14;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.openDeleteGuildEventActionSheet = var5;
     var2.updateRsvp = var4;
     var2.handleGuildScheduledEventRsvp = var3;
-    var3 = function(arg0, arg1) { // Original name: openShareEvent, environment: var1
+    var3 = function arg0, arg1() {
         _fun65225: for (var _fun65225_ip = 0;;) switch (_fun65225_ip) {
             case 0:
                 var5 = arg0;
@@ -673,7 +673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.openShareEvent = var3;
-    var3 = function() { // Original name: transitionToEventDetailsFromInvite, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.transitionToEventDetailsFromInvite = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: showGuildEventModeratorActionSheet, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun65227: for (var _fun65227_ip = 0;;) switch (_fun65227_ip) {
             case 0:
                 var8 = arg0;
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var17.bind(var18)(var16);
             case 280:
                 var14.label = var15;
-                var15 = function() { // Original name: onPress, environment: var5
+                var15 = function() {
                     var4 = _closure1_slot22;
                     var1 = _closure2_slot0;
                     var3 = var1.id;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.cK1GGY;
                 var15 = var16.bind(var17)(var15);
                 var11.label = var15;
-                var15 = function() { // Original name: onPress, environment: var5
+                var15 = function() {
                     var3 = _closure1_slot19;
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.wmVmXN;
                 var13 = var14.bind(var15)(var13);
                 var11.label = var13;
-                var13 = function() { // Original name: onPress, environment: var5
+                var13 = function() {
                     var3 = _closure1_slot18;
                     var2 = _closure2_slot3;
                     var1 = {};
@@ -979,7 +979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var14.bind(var15)(var13);
             case 698:
                 var10.label = var12;
-                var12 = function() { // Original name: onPress, environment: var5
+                var12 = function() {
                     var3 = _closure1_slot18;
                     var2 = _closure2_slot3;
                     var1 = {};
@@ -1030,7 +1030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.label = var10;
                 var10 = true;
                 var3.isDestructive = var10;
-                var10 = function() { // Original name: onPress, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot20;
                     var1 = _closure2_slot0;
                     var3 = var1.id;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.b8606G;
                 var10 = var11.bind(var12)(var10);
                 var3.label = var10;
-                var10 = function() { // Original name: onPress, environment: var5
+                var10 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 35;
@@ -1119,7 +1119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.label = var10;
                 var10 = true;
                 var3.isDestructive = var10;
-                var10 = function() { // Original name: onPress, environment: var5
+                var10 = function() {
                     var3 = _closure1_slot20;
                     var0 = _closure2_slot0;
                     var2 = var0.id;
@@ -1150,7 +1150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.label = var10;
                 var10 = true;
                 var3.isDestructive = var10;
-                var10 = function() { // Original name: onPress, environment: var5
+                var10 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 20;
@@ -1194,7 +1194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.label = var9;
                 var9 = true;
                 var3.isDestructive = var9;
-                var9 = function() { // Original name: onPress, environment: var5
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 36;
@@ -1243,7 +1243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var13)(var11);
             case 1388:
                 var3.label = var9;
-                var9 = function() { // Original name: onPress, environment: var5
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -1294,7 +1294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.QLtDqP;
                 var9 = var11.bind(var12)(var9);
                 var3.label = var9;
-                var9 = function() { // Original name: onPress, environment: var5
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -1354,7 +1354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.WZwPO4;
                 var9 = var11.bind(var12)(var9);
                 var3.label = var9;
-                var9 = function() { // Original name: onPress, environment: var5
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -1388,7 +1388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.NZRGQo;
                 var7 = var9.bind(var11)(var7);
                 var2.label = var7;
-                var7 = function() { // Original name: onPress, environment: var5
+                var7 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -1452,7 +1452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6["8xHmxo"];
                 var6 = var7.bind(var8)(var6);
                 var2.label = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 28;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun94565: for (var _fun94565_ip = 0;;) switch (_fun94565_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun94567: for (var _fun94567_ip = 0;;) switch (_fun94567_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: _shouldYieldToBrowser, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun94568: for (var _fun94568_ip = 0;;) switch (_fun94568_ip) {
             case 0:
                 var5 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: GatewaySocketDispatcher, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot3;
@@ -604,7 +604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'hasStuffToDispatchNow';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun94572: for (var _fun94572_ip = 0;;) switch (_fun94572_ip) {
                 case 0:
                     var1 = this;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'processFirstQueuedDispatch';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94573: for (var _fun94573_ip = 0;;) switch (_fun94573_ip) {
                 case 0:
                     var6 = arg0;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'unpauseDispatchQueue';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun94574: for (var _fun94574_ip = 0;;) switch (_fun94574_ip) {
                 case 0:
                     var2 = this;
@@ -748,7 +748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'receiveDispatch';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun94575: for (var _fun94575_ip = 0;;) switch (_fun94575_ip) {
                 case 0:
                     var2 = arg1;
@@ -800,7 +800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'maybePreload';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94576: for (var _fun94576_ip = 0;;) switch (_fun94576_ip) {
                 case 0:
                     var2 = arg0;
@@ -911,7 +911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'scheduleFlush';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94579: for (var _fun94579_ip = 0;;) switch (_fun94579_ip) {
                 case 0:
                     var3 = arg0;
@@ -970,7 +970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getDispatchTimings';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -979,7 +979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSchedulerTelemetry';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.scheduler;
             var0 = var0.telemetry;
@@ -990,7 +990,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getIsSchedulerBackgrounded';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.scheduler;
             var0 = var0.isBackgrounded;
@@ -1001,7 +1001,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'toggleRequestIdleCallback';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.scheduler;
             var1 = var2.toggleRequestIdleCallback;
@@ -1015,7 +1015,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getIsRequestIdleCallbackEnabled';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.scheduler;
             var0 = var0.isRequestIdleCallbackEnabled;
@@ -1026,7 +1026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'dispatchMultiple';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun94585: for (var _fun94585_ip = 0;;) switch (_fun94585_ip) {
                 case 0:
                     var1 = arg0;
@@ -1308,7 +1308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'dispatchOne';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun94587: for (var _fun94587_ip = 0;;) switch (_fun94587_ip) {
                 case 0:
                     var0 = arg0;
@@ -1495,7 +1495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var1 = false;
             var0.paused = var1;

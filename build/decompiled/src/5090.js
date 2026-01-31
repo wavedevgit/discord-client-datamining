@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var1 = dependencyMap;
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: _wrapNativeSuper, environment: var2
+    var1 = function arg0() {
         _fun45605: for (var _fun45605_ip = 0;;) switch (_fun45605_ip) {
             case 0:
                 var1 = global;
@@ -33,12 +33,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 50:
                 var _closure2_slot0 = var0;
                 var1 = _closure1_slot1;
-                var3 = function(arg0) { // Original name: _wrapNativeSuper, environment: var3
+                var3 = function arg0() {
                     _fun45606: for (var _fun45606_ip = 0;;) switch (_fun45606_ip) {
                         case 0:
                             var0 = arg0;
                             var _closure3_slot0 = var0;
-                            var4 = function() { // Original name: Wrapper, environment: var1
+                            var4 = function() {
                                 var4 = undefined;
                                 var0 = undefined;
                                 var5 = _closure1_slot0;

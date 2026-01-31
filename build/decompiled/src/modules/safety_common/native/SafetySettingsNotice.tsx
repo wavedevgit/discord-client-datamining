@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_common/native/SafetySettingsNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SafetySettingsNotice, environment: var1
+    var1 = function arg0() {
         _fun79606: for (var _fun79606_ip = 0;;) switch (_fun79606_ip) {
             case 0:
                 var1 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var8.intl;
                 var10 = var11.format;
                 var8 = {};
-                var15 = function(arg0) { // Original name: hook, environment: var14
+                var15 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot1;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9.intl;
                 var10 = var11.format;
                 var9 = {};
-                var14 = function(arg0) { // Original name: hook, environment: var14
+                var14 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: JoinRequestActionSheet, environment: var7
+    var1 = function arg0() {
         _fun104936: for (var _fun104936_ip = 0;;) switch (_fun104936_ip) {
             case 0:
                 var0 = arg0;

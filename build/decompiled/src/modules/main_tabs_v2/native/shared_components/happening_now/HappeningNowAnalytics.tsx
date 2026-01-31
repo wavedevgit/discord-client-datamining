@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun101473: for (var _fun101473_ip = 0;;) switch (_fun101473_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun101475: for (var _fun101475_ip = 0;;) switch (_fun101475_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: convertNullableArrayToItemAndItemIndex, environment: var1
+    var0 = function arg0() {
         _fun101476: for (var _fun101476_ip = 0;;) switch (_fun101476_ip) {
             case 0:
                 var2 = new Array(0);
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getItemUserId, environment: var1
+    var0 = function arg0() {
         _fun101477: for (var _fun101477_ip = 0;;) switch (_fun101477_ip) {
             case 0:
                 var1 = arg0;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: getItemChannelId, environment: var1
+    var0 = function arg0() {
         _fun101478: for (var _fun101478_ip = 0;;) switch (_fun101478_ip) {
             case 0:
                 var1 = arg0;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getUserIdProperties, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot6;
         var3 = var4.map;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: getChannelIdProperties, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot6;
         var3 = var4.map;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getAffinityProperties, environment: var1
+    var1 = function arg0() {
         _fun101481: for (var _fun101481_ip = 0;;) switch (_fun101481_ip) {
             case 0:
                 var4 = arg0;

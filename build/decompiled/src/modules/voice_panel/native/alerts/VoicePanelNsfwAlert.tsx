@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/alerts/VoicePanelNsfwAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: VoicePanelNsfwAlert, environment: var1
+    var1 = function arg0() {
         _fun111575: for (var _fun111575_ip = 0;;) switch (_fun111575_ip) {
             case 0:
                 var0 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var7 = 'primary';
                 var10.variant = var7;
-                var7 = function() { // Original name: onPress, environment: var12
+                var7 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 7;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var13 = 'secondary';
                 var9.variant = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 7;

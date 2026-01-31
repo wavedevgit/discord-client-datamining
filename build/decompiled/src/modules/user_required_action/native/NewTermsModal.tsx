@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleTouch, environment: var1
+    var0 = function() {
         var1 = _closure1_slot7;
         var0 = var1.dismiss;
         var0 = var0.bind(var1)();
@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: handleMoreActions, environment: var1
+    var0 = function() {
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;
         var0 = 9;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.label = var4;
         var4 = true;
         var5.isDestructive = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_required_action/native/NewTermsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: NewTermsModal, environment: var1
+    var1 = function() {
         _fun114463: for (var _fun114463_ip = 0;;) switch (_fun114463_ip) {
             case 0:
                 var0 = _closure1_slot14;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var7.Button;
                 var7 = {};
                 var7.loading = var16;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     _fun114467: for (var _fun114467_ip = 0;;) switch (_fun114467_ip) {
                         case 0:
                             var2 = _closure2_slot0;

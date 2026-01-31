@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.viewAllIcon = var10;
     var5 = var8.bind(var9)(var5);
     var _closure1_slot10 = var5;
-    var5 = function() { // Original name: Spacing, environment: var1
+    var5 = function() {
         var3 = _closure1_slot8;
         var2 = _closure1_slot5;
         var1 = {};
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var5;
-    var5 = function() { // Original name: HeaderAndFooterSpacing, environment: var1
+    var5 = function() {
         var3 = _closure1_slot8;
         var2 = _closure1_slot5;
         var1 = {};
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.lg;
                 var11.radius = var18;
                 var9.androidRippleConfig = var11;
-                var11 = function() { // Original name: onPress, environment: var14
+                var11 = function() {
                     _fun88083: for (var _fun88083_ip = 0;;) switch (_fun88083_ip) {
                         case 0:
                             var6 = _closure2_slot0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var21.bind(var22)(var20);
                 var9.accessibilityLabel = var20;
                 var9.data = var19;
-                var14 = function(arg0) { // Original name: renderItem, environment: var14
+                var14 = function arg0() {
                     var1 = arg0;
                     var0 = var1.item;
                     var8 = var1.index;

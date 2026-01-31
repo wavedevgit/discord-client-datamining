@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var5 = var3.bind(var0)(var5);
             var _closure1_slot1 = var5;
-            var3 = function() { // Original name: print, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun35281
             }
         case 68:
-            var3 = function(arg0) { // Original name: print, environment: var1
+            var3 = function arg0() {
                 _fun35283: for (var _fun35283_ip = 0;;) switch (_fun35283_ip) {
                     case 0:
                         var1 = arg0;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var5.freeze;
             var4 = var4.bind(var5)(var3);
             var2.print = var3;
-            var1 = function() { // Original name: enableLogging, environment: var1
+            var1 = function() {
                 _fun35285: for (var _fun35285_ip = 0;;) switch (_fun35285_ip) {
                     case 0:
                         var0 = _closure1_slot1;

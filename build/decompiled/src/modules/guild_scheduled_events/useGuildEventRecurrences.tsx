@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useGuildEventRecurrences.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useGuildEventRecurrences, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun66150: for (var _fun66150_ip = 0;;) switch (_fun66150_ip) {
             case 0:
                 var10 = arg0;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.recurrenceStartTimes = var3;
                 var0.canViewMoreRecurrences = var2;
-                var1 = function() { // Original name: updateRecurrenceStartTimes, environment: var1
+                var1 = function() {
                     _fun66156: for (var _fun66156_ip = 0;;) switch (_fun66156_ip) {
                         case 0:
                             var1 = _closure2_slot2;

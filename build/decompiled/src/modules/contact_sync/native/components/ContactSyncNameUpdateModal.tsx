@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot8 = var3;
-    var10 = function() { // Original name: onClose, environment: var1
+    var10 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.container = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
-    var3 = function() { // Original name: ContactSyncNameInputScreen, environment: var1
+    var3 = function() {
         _fun81600: for (var _fun81600_ip = 0;;) switch (_fun81600_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var3)(var4);
                 var4 = {};
                 var4.onNext = var9;
-                var7 = function() { // Original name: onRemoveName, environment: var7
+                var7 = function() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = null;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'headerLeft': null,
         'title': ''
     };
-    var8 = function() { // Original name: render, environment: var1
+    var8 = function() {
         var3 = _closure1_slot8;
         var2 = _closure1_slot11;
         var1 = undefined;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ContactSyncNameUpdateModal, environment: var1
+    var1 = function() {
         var3 = _closure1_slot8;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

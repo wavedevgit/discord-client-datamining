@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPowerupsBoostInfo, environment: var1
+    var1 = function arg0() {
         _fun102333: for (var _fun102333_ip = 0;;) switch (_fun102333_ip) {
             case 0:
                 var0 = arg0;

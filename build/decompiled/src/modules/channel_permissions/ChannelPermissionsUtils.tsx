@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var12;
-    var0 = function(arg0) { // Original name: isAdmin, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot6;
         var0 = _closure1_slot11;
         var2 = var0.ADMINISTRATOR;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var9 = function(arg0) { // Original name: getRoleRowData, environment: var1
+    var9 = function arg0() {
         _fun65519: for (var _fun65519_ip = 0;;) switch (_fun65519_ip) {
             case 0:
                 var1 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var9;
-    var8 = function(arg0, arg1) { // Original name: sortRoles, environment: var1
+    var8 = function arg0, arg1() {
         _fun65520: for (var _fun65520_ip = 0;;) switch (_fun65520_ip) {
             case 0:
                 var5 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var8;
-    var7 = function() { // Original name: getNoRolesRow, environment: var1
+    var7 = function() {
         _fun65521: for (var _fun65521_ip = 0;;) switch (_fun65521_ip) {
             case 0:
                 var0 = arguments[0];
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var7;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: canAddPermissionInChannel, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun65522: for (var _fun65522_ip = 0;;) switch (_fun65522_ip) {
             case 0:
                 var3 = arg0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getExistingRoles, environment: var1
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = arg1;
         var1 = arg2;
         var _closure2_slot0 = var1;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var6;
-    var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getAllExistingRolesWithPermission, environment: var1
+    var5 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = arg1;
         var1 = arg2;
         var _closure2_slot0 = var1;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var5;
-    var0 = function(arg0, arg1) { // Original name: getDisplayName, environment: var1
+    var0 = function arg0, arg1() {
         _fun65527: for (var _fun65527_ip = 0;;) switch (_fun65527_ip) {
             case 0:
                 var3 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: isDefaultMember, environment: var1
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot5;
         var2 = undefined;
         var1 = arg1;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1) { // Original name: getMemberRowData, environment: var1
+    var0 = function arg0, arg1() {
         _fun65529: for (var _fun65529_ip = 0;;) switch (_fun65529_ip) {
             case 0:
                 var1 = arg0;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: sortMembers, environment: var1
+    var0 = function arg0, arg1() {
         _fun65530: for (var _fun65530_ip = 0;;) switch (_fun65530_ip) {
             case 0:
                 var2 = arg0;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getExistingMembers, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         var4 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: flipEveryonePermission, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun65533: for (var _fun65533_ip = 0;;) switch (_fun65533_ip) {
             case 0:
                 var0 = arg0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getRoleRowData = var9;
     var2.sortRoles = var8;
     var2.getNoRolesRow = var7;
-    var7 = function(arg0, arg1) { // Original name: isEveryoneRoleId, environment: var1
+    var7 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 10;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isEveryoneRoleId = var7;
-    var7 = function(arg0, arg1, arg2, arg3) { // Original name: getRolesRows, environment: var1
+    var7 = function arg0, arg1, arg2, arg3() {
         _fun65535: for (var _fun65535_ip = 0;;) switch (_fun65535_ip) {
             case 0:
                 var3 = arg1;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun65535
                 }
             case 28:
-                var1 = function() { // Original name: a, environment: var0
+                var1 = function() {
                     var0 = true;
                     return var0;
                 };
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRolesRows = var7;
-    var7 = function(arg0, arg1, arg2, arg3) { // Original name: getRolesRowsWithPermissionDisabled, environment: var1
+    var7 = function arg0, arg1, arg2, arg3() {
         _fun65539: for (var _fun65539_ip = 0;;) switch (_fun65539_ip) {
             case 0:
                 var3 = arg1;
@@ -794,7 +794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun65539
                 }
             case 28:
-                var1 = function() { // Original name: u, environment: var0
+                var1 = function() {
                     var0 = true;
                     return var0;
                 };
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getRolesRowsWithPermissionDisabled = var7;
     var2.getExistingRoles = var6;
     var2.getAllExistingRolesWithPermission = var5;
-    var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getExistingRolesRows, environment: var1
+    var5 = function arg0, arg1, arg2, arg3, arg4() {
         _fun65543: for (var _fun65543_ip = 0;;) switch (_fun65543_ip) {
             case 0:
                 var7 = _closure1_slot19;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExistingRolesRows = var5;
-    var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getExistingRolesRowWithPermissionDisabled, environment: var1
+    var5 = function arg0, arg1, arg2, arg3, arg4() {
         _fun65545: for (var _fun65545_ip = 0;;) switch (_fun65545_ip) {
             case 0:
                 var8 = arg3;
@@ -968,7 +968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getExistingRolesRowWithPermissionDisabled = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: getMembersRows, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun65547: for (var _fun65547_ip = 0;;) switch (_fun65547_ip) {
             case 0:
                 var4 = arg0;
@@ -985,7 +985,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun65547
                 }
             case 35:
-                var0 = function() { // Original name: a, environment: var1
+                var0 = function() {
                     var0 = true;
                     return var0;
                 };
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMembersRows = var5;
     var2.getExistingMembers = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getExistingMembersRows, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         var8 = arg2;
         var _closure2_slot0 = var8;
         var7 = _closure1_slot25;
@@ -1103,7 +1103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getExistingMembersRows = var4;
-    var4 = function(arg0, arg1) { // Original name: getRowTypeLabel, environment: var1
+    var4 = function arg0, arg1() {
         _fun65553: for (var _fun65553_ip = 0;;) switch (_fun65553_ip) {
             case 0:
                 var2 = arg0;
@@ -1262,7 +1262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRowTypeLabel = var4;
-    var4 = function(arg0) { // Original name: getRemoveTooltipHint, environment: var1
+    var4 = function arg0() {
         _fun65554: for (var _fun65554_ip = 0;;) switch (_fun65554_ip) {
             case 0:
                 var2 = arg0;
@@ -1362,7 +1362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRemoveTooltipHint = var4;
     var2.flipEveryonePermission = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: toggleChannelEveryonePermission, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var6 = arg0;
         var4 = _closure1_slot26;
         var0 = undefined;
@@ -1384,7 +1384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.toggleChannelEveryonePermission = var3;
-    var3 = function(arg0, arg1) { // Original name: grantUserChannelAccess, environment: var1
+    var3 = function arg0, arg1() {
         _fun65556: for (var _fun65556_ip = 0;;) switch (_fun65556_ip) {
             case 0:
                 var1 = arg0;
@@ -1470,7 +1470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.grantUserChannelAccess = var3;
-    var3 = function(arg0, arg1) { // Original name: isPrivateGuildChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun65557: for (var _fun65557_ip = 0;;) switch (_fun65557_ip) {
             case 0:
                 var1 = arg0;
@@ -1526,7 +1526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isPrivateGuildChannel = var3;
-    var3 = function(arg0) { // Original name: isPrivateTextChannel, environment: var1
+    var3 = function arg0() {
         _fun65558: for (var _fun65558_ip = 0;;) switch (_fun65558_ip) {
             case 0:
                 var1 = arg0;
@@ -1566,7 +1566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isPrivateTextChannel = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: canCreatePrivateChannel, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun65559: for (var _fun65559_ip = 0;;) switch (_fun65559_ip) {
             case 0:
                 var5 = arg0;
@@ -1622,7 +1622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canCreatePrivateChannel = var3;
-    var3 = function(arg0) { // Original name: getPrivateChannelHintText, environment: var1
+    var3 = function arg0() {
         _fun65560: for (var _fun65560_ip = 0;;) switch (_fun65560_ip) {
             case 0:
                 var2 = arg0;
@@ -1707,7 +1707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPrivateChannelHintText = var3;
-    var1 = function(arg0, arg1) { // Original name: extractPermissionOverwrites, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = new Array(0);

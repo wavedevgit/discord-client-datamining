@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member/GuildMemberActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: updateGuildSelfMember, environment: var1
+    var1 = function arg0, arg1() {
         _fun43413: for (var _fun43413_ip = 0;;) switch (_fun43413_ip) {
             case 0:
                 var4 = arg0;

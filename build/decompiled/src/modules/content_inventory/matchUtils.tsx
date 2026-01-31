@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var10;
-    var7 = function(arg0) { // Original name: isSpotifyEntry, environment: var1
+    var7 = function arg0() {
         _fun62287: for (var _fun62287_ip = 0;;) switch (_fun62287_ip) {
             case 0:
                 var2 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var7;
-    var6 = function(arg0) { // Original name: isCrunchyrollEntry, environment: var1
+    var6 = function arg0() {
         _fun62288: for (var _fun62288_ip = 0;;) switch (_fun62288_ip) {
             case 0:
                 var2 = arg0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var6;
-    var5 = function(arg0, arg1) { // Original name: isMatchingApplicationActivity, environment: var1
+    var5 = function arg0, arg1() {
         _fun62289: for (var _fun62289_ip = 0;;) switch (_fun62289_ip) {
             case 0:
                 var4 = arg1;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0, arg1) { // Original name: isMatchingListeningActivity, environment: var1
+    var4 = function arg0, arg1() {
         _fun62290: for (var _fun62290_ip = 0;;) switch (_fun62290_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0, arg1) { // Original name: isMatchingWatchActivity, environment: var1
+    var3 = function arg0, arg1() {
         _fun62291: for (var _fun62291_ip = 0;;) switch (_fun62291_ip) {
             case 0:
                 var2 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isMatchingApplicationActivity = var5;
     var2.isMatchingListeningActivity = var4;
     var2.isMatchingWatchActivity = var3;
-    var1 = function(arg0, arg1) { // Original name: findMatchingEntry, environment: var1
+    var1 = function arg0, arg1() {
         _fun62292: for (var _fun62292_ip = 0;;) switch (_fun62292_ip) {
             case 0:
                 var7 = arg0;

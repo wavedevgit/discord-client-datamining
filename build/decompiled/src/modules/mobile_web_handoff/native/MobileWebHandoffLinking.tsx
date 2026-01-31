@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: createHandoffTokenWithLoadingModal, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var2 = var1.nonce;
         var _closure2_slot0 = var2;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var4.showSimpleLoadingModal;
                     var2 = _closure1_slot8;
                     var1 = {};
-                    var7 = function() { // Original name: operation, environment: var5
+                    var7 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 5;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var1.operation = var7;
                     var1.onResolved = var6;
-                    var5 = function() { // Original name: onRejected, environment: var5
+                    var5 = function() {
                         var3 = _closure1_slot1;
                         var7 = _closure1_slot2;
                         var0 = 6;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _redirectWithHandoffToken, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _redirectDeveloperPortalWithHandoffToken, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'mweb-handoff';
     var _closure1_slot8 = var1;
     var1 = {};
-    var6 = function() { // Original name: redirectWithHandoffToken, environment: var3
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.redirectWithHandoffToken = var6;
-    var3 = function() { // Original name: redirectDeveloperPortalWithHandoffToken, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;

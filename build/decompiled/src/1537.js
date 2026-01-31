@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var5 = var3.bind(var0)(var4);
     var4 = var5.memo;
-    var3 = function(arg0) { // Original name: StaticContainer, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.children;
         return var0;

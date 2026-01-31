@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun94657: for (var _fun94657_ip = 0;;) switch (_fun94657_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun94659: for (var _fun94659_ip = 0;;) switch (_fun94659_ip) {
             case 0:
                 var3 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0, arg1, arg2) { // Original name: ActionBatcher, environment: var1
+        var4 = function arg0, arg1, arg2() {
             var3 = this;
             var _closure3_slot0 = var3;
             var0 = arg1;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'flush';
         var0.key = var5;
-        var2 = function() { // Original name: value, environment: var1
+        var2 = function() {
             _fun94663: for (var _fun94663_ip = 0;;) switch (_fun94663_ip) {
                 case 0:
                     var2 = this;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var0;
         var0 = {};
         var0.key = var5;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var1
+        var1 = function arg0, arg1() {
             _fun94665: for (var _fun94665_ip = 0;;) switch (_fun94665_ip) {
                 case 0:
                     var6 = arg0;

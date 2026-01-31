@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/convertor.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: convertOAuth2Authorization, environment: var1
+    var1 = function arg0() {
         _fun47727: for (var _fun47727_ip = 0;;) switch (_fun47727_ip) {
             case 0:
                 var2 = arg0;

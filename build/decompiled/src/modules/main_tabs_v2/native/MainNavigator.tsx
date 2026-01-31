@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var6;
-            var0 = function() { // Original name: getAuthComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 12;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot20 = var0;
-            var0 = function() { // Original name: getOldMainComponent, environment: var3
+            var0 = function() {
                 var0 = global;
                 var2 = var0.Error;
                 var0 = var2.prototype;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 throw var0;
             };
             var _closure1_slot21 = var0;
-            var0 = function() { // Original name: getTabsComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -48,12 +48,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot22 = var0;
-            var0 = function() { // Original name: getChannelComponent, environment: var3
+            var0 = function() {
                 var0 = _closure1_slot5;
                 return var0;
             };
             var _closure1_slot23 = var0;
-            var0 = function() { // Original name: WrappedAutoAnalytics, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
                 var1 = 14;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot24 = var0;
-            var0 = function() { // Original name: getMemberVerificationComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 15;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot25 = var0;
-            var0 = function() { // Original name: getFriendsNavigatorComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 16;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot26 = var0;
-            var0 = function() { // Original name: getChannelDetailsComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 17;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot27 = var0;
-            var0 = function() { // Original name: getSearchComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 18;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot28 = var0;
-            var0 = function() { // Original name: getContextMenuCommandNavigatorComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 19;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot29 = var0;
-            var0 = function() { // Original name: getModalComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 20;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot30 = var0;
-            var0 = function() { // Original name: getMessageRequestsComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 21;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot31 = var0;
-            var0 = function() { // Original name: getSettingsComponent, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 22;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot32 = var0;
-            var0 = function() { // Original name: getAccountStanding, environment: var3
+            var0 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 23;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot33 = var0;
-            var1 = function() { // Original name: getChannelScreen, environment: var3
+            var1 = function() {
                 _fun100127: for (var _fun100127_ip = 0;;) switch (_fun100127_ip) {
                     case 0:
                         var0 = arguments[0];
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = 'channel';
                         var0.name = var6;
                         var6 = {};
-                        var7 = function(arg0) { // Original name: beforeRemove, environment: var5
+                        var7 = function arg0() {
                             _fun100128: for (var _fun100128_ip = 0;;) switch (_fun100128_ip) {
                                 case 0:
                                     var2 = _closure1_slot0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var6.beforeRemove = var7;
                         var0.listeners = var6;
-                        var5 = function(arg0) { // Original name: options, environment: var5
+                        var5 = function arg0() {
                             var0 = arg0;
                             var5 = var0.navigation;
                             var4 = var0.route;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4.bind(var8)();
             var _closure1_slot19 = var4;
             var4 = var7.memo;
-            var3 = function() { // Original name: StackNavigator, environment: var3
+            var3 = function() {
                 var2 = _closure1_slot14;
                 var4 = undefined;
                 var11 = var2.bind(var4)();
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var20 = {};
                             var12 = 'root';
                             var20.id = var12;
-                            var12 = function() { // Original name: screenOptions, environment: var27
+                            var12 = function() {
                                 var0 = {};
                                 var1 = false;
                                 var0.headerShown = var1;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12.name = var25;
                             var25 = _closure1_slot18;
                             var12.options = var25;
-                            var25 = function() { // Original name: children, environment: var27
+                            var25 = function() {
                                 _fun100137: for (var _fun100137_ip = 0;;) switch (_fun100137_ip) {
                                     case 0:
                                         var3 = _closure1_slot12;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = {};
                                         var0 = 'tabs';
                                         var4.id = var0;
-                                        var7 = function(arg0) { // Original name: screenOptions, environment: var11
+                                        var7 = function arg0() {
                                             _fun100138: for (var _fun100138_ip = 0;;) switch (_fun100138_ip) {
                                                 case 0:
                                                     var0 = arg0;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var8 = {};
                                         var12 = 'settings';
                                         var8.name = var12;
-                                        var11 = function(arg0) { // Original name: options, environment: var11
+                                        var11 = function arg0() {
                                             _fun100139: for (var _fun100139_ip = 0;;) switch (_fun100139_ip) {
                                                 case 0:
                                                     var0 = arg0;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = {};
                             var26 = 'friends';
                             var12.name = var26;
-                            var26 = function(arg0) { // Original name: options, environment: var27
+                            var26 = function arg0() {
                                 _fun100140: for (var _fun100140_ip = 0;;) switch (_fun100140_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12.name = var26;
                             var26 = _closure1_slot27;
                             var12.getComponent = var26;
-                            var26 = function() { // Original name: options, environment: var27
+                            var26 = function() {
                                 var0 = {};
                                 var3 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var24 = {};
                             var28 = 'modal';
                             var24.name = var28;
-                            var27 = function(arg0) { // Original name: options, environment: var27
+                            var27 = function arg0() {
                                 _fun100144: for (var _fun100144_ip = 0;;) switch (_fun100144_ip) {
                                     case 0:
                                         var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: VibingWumpusScreen, environment: var3
+    var1 = function() {
         _fun72357: for (var _fun72357_ip = 0;;) switch (_fun72357_ip) {
             case 0:
                 var0 = _closure1_slot15;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21["8eKkaf"];
                 var21 = var22.bind(var24)(var21);
                 var12.text = var21;
-                var21 = function() { // Original name: onPress, environment: var17
+                var21 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 12;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var21.bind(var22)(var20);
             case 833:
                 var13.text = var18;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     _fun72362: for (var _fun72362_ip = 0;;) switch (_fun72362_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/self_mod/inappropriate_conversation/native/VibingWumpusModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: VibingWumpusModal, environment: var3
+    var3 = function() {
         var3 = _closure1_slot12;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'fullscreen': true,
             'headerShown': false
         };
-        var6 = function() { // Original name: render, environment: var6
+        var6 = function() {
             var3 = _closure1_slot12;
             var2 = _closure1_slot16;
             var1 = undefined;

@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun35385: for (var _fun35385_ip = 0;;) switch (_fun35385_ip) {
             case 0:
                 var2 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun35387: for (var _fun35387_ip = 0;;) switch (_fun35387_ip) {
             case 0:
                 var3 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: makeAnsiRuleCategory, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun35388: for (var _fun35388_ip = 0;;) switch (_fun35388_ip) {
             case 0:
                 var3 = arg1;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 63:
                             var11 = _closure2_slot0;
                             var8 = _closure2_slot1;
-                            var0 = function(arg0, arg1, arg2, arg3) { // Original name: makeAnsiRule, environment: var0
+                            var0 = function arg0, arg1, arg2, arg3() {
                                 var0 = arg2;
                                 var _closure4_slot0 = var0;
                                 var0 = arg3;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.endsParent = var2;
                                 var2 = _closure1_slot4;
                                 var0.begin = var2;
-                                var1 = function(arg0, arg1) { // Original name: on:begin, environment: var1
+                                var1 = function arg0, arg1() {
                                     _fun35391: for (var _fun35391_ip = 0;;) switch (_fun35391_ip) {
                                         case 0:
                                             var2 = arg1;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'utils/HighlightJsAnsiLanguage.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: highlightJsAnsiLanguage, environment: var3
+    var3 = function() {
         _fun35392: for (var _fun35392_ip = 0;;) switch (_fun35392_ip) {
             case 0:
                 var10 = _closure1_slot7;

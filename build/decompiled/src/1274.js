@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var0 = undefined;
     var2.DEFAULT_FORMAT_CONFIG = var0;
-    var1 = function(arg0, arg1) { // Original name: resolveFormatConfigOptions, environment: var1
+    var1 = function arg0, arg1() {
         _fun13739: for (var _fun13739_ip = 0;;) switch (_fun13739_ip) {
             case 0:
                 var3 = arg1;

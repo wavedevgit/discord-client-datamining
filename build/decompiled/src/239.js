@@ -10,12 +10,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function() { // Original name: setup, environment: var2
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var0.setup = var3;
-    var3 = function() { // Original name: enable, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.console;
         var1 = var2.error;
@@ -25,17 +25,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.enable = var3;
-    var3 = function() { // Original name: disable, environment: var2
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var0.disable = var3;
-    var3 = function() { // Original name: registerBundle, environment: var2
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var0.registerBundle = var3;
-    var2 = function() { // Original name: log, environment: var2
+    var2 = function() {
         var0 = undefined;
         return var0;
     };

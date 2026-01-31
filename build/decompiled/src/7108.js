@@ -128,7 +128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: fillProductsWithAdditionalData, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/application_view/app/FrecencyCommandsSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FrecencyCommandsSection, environment: var1
+    var1 = function arg0() {
         _fun107965: for (var _fun107965_ip = 0;;) switch (_fun107965_ip) {
             case 0:
                 var0 = arg0;

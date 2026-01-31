@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var7 = var4.bind(var0)(var3);
     var6 = var7.memoize;
-    var3 = function(arg0) { // Original name: buildPollResources, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.theme;
         var2 = var0.layoutType;

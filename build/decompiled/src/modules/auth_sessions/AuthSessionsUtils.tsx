@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth_sessions/AuthSessionsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useAuthSessions, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 3;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAuthSessions = var3;
-    var1 = function(arg0) { // Original name: formatDate, environment: var1
+    var1 = function arg0() {
         _fun60669: for (var _fun60669_ip = 0;;) switch (_fun60669_ip) {
             case 0:
                 var2 = arg0;

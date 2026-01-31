@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5593: for (var _fun5593_ip = 0;;) switch (_fun5593_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun5596: for (var _fun5596_ip = 0;;) switch (_fun5596_ip) {
             case 0:
                 var4 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: mapTransforms, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -266,7 +266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0, arg1, arg2) { // Original name: AnimatedTransform, environment: var0
+        var4 = function arg0, arg1, arg2() {
             _fun5602: for (var _fun5602_ip = 0;;) switch (_fun5602_ip) {
                 case 0:
                     var4 = this;
@@ -328,7 +328,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var1 = '__makeNative';
         var5.key = var1;
-        var1 = function(arg0) { // Original name: __makeNative, environment: var0
+        var1 = function arg0() {
             _fun5603: for (var _fun5603_ip = 0;;) switch (_fun5603_ip) {
                 case 0:
                     var3 = arg0;
@@ -374,7 +374,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '__getValue';
         var5.key = var6;
-        var6 = function() { // Original name: __getValue, environment: var0
+        var6 = function() {
             var3 = _closure1_slot12;
             var0 = this;
             var2 = var0._transforms;
@@ -393,7 +393,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '__getValueWithStaticTransforms';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: __getValueWithStaticTransforms, environment: var0
+        var6 = function arg0() {
             var1 = new Array(0);
             var _closure3_slot0 = var1;
             var3 = _closure1_slot12;
@@ -426,7 +426,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '__getAnimatedValue';
         var5.key = var6;
-        var6 = function() { // Original name: __getAnimatedValue, environment: var0
+        var6 = function() {
             var3 = _closure1_slot12;
             var0 = this;
             var2 = var0._transforms;
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '__attach';
         var5.key = var6;
-        var6 = function() { // Original name: __attach, environment: var0
+        var6 = function() {
             _fun5611: for (var _fun5611_ip = 0;;) switch (_fun5611_ip) {
                 case 0:
                     var5 = this;
@@ -488,7 +488,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '__detach';
         var5.key = var6;
-        var6 = function() { // Original name: __detach, environment: var0
+        var6 = function() {
             _fun5612: for (var _fun5612_ip = 0;;) switch (_fun5612_ip) {
                 case 0:
                     var5 = this;
@@ -531,7 +531,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = '__getNativeConfig';
         var5.key = var6;
-        var6 = function() { // Original name: __getNativeConfig, environment: var0
+        var6 = function() {
             _fun5613: for (var _fun5613_ip = 0;;) switch (_fun5613_ip) {
                 case 0:
                     var2 = this;
@@ -622,7 +622,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = 'from';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: from, environment: var0
+        var0 = function arg0() {
             _fun5614: for (var _fun5614_ip = 0;;) switch (_fun5614_ip) {
                 case 0:
                     var4 = arg0;

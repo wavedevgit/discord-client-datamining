@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: getSentryCarrier, environment: var2
+    var0 = function arg0() {
         _fun8771: for (var _fun8771_ip = 0;;) switch (_fun8771_ip) {
             case 0:
                 var0 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = function(arg0, arg1) { // Original name: getGlobalSingleton, environment: var2
+    var3 = function arg0, arg1() {
         _fun8772: for (var _fun8772_ip = 0;;) switch (_fun8772_ip) {
             case 0:
                 var3 = arg0;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getGlobalSingleton = var3;
-    var2 = function() { // Original name: getMainCarrier, environment: var2
+    var2 = function() {
         var5 = _closure1_slot2;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;

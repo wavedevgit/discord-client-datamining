@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tooltip/native/useTooltipPosition.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useTooltipPosition, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun57351: for (var _fun57351_ip = 0;;) switch (_fun57351_ip) {
             case 0:
                 var7 = arg0;

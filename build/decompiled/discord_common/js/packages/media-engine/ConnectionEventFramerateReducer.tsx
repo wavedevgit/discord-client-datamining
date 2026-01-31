@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1) { // Original name: ConnectionEventFramerateReducer, environment: var4
+        var2 = function arg0, arg1() {
             var5 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'initialize';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var2 = this;
             var1 = var2.userSpeakingChange;
             var0 = true;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'userSpeakingChange';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun32714: for (var _fun32714_ip = 0;;) switch (_fun32714_ip) {
                 case 0:
                     var1 = this;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'destroyFramerateScaleFactorTimers';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun32716: for (var _fun32716_ip = 0;;) switch (_fun32716_ip) {
                 case 0:
                     var1 = this;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateRemoteWantsFramerate';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var2 = var0.connection;
             var1 = var2.updateVideoQuality;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'destroy';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var1 = this;
             var0 = var1.destroyFramerateScaleFactorTimers;
             var0 = var0.bind(var1)();

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.CHAT;
     var1.parent = var8;
-    var8 = function() { // Original name: useValue, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var7 = function(arg0) { // Original name: onValueChange, environment: var7
+    var7 = function arg0() {
         _fun88443: for (var _fun88443_ip = 0;;) switch (_fun88443_ip) {
             case 0:
                 var0 = _closure1_slot2;

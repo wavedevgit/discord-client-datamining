@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChatInputReplyBarNoAuthor, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.onCancelReplying;
         var0 = _closure1_slot14;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: ChatInputReplyBar, environment: var1
+    var0 = function arg0() {
         _fun90120: for (var _fun90120_ip = 0;;) switch (_fun90120_ip) {
             case 0:
                 var0 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.t;
                 var21 = var19["8E4GxS"];
                 var19 = {};
-                var24 = function(arg0, arg1) { // Original name: userHook, environment: var24
+                var24 = function arg0, arg1() {
                     _fun90123: for (var _fun90123_ip = 0;;) switch (_fun90123_ip) {
                         case 0:
                             var9 = arg1;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: ChatInputEditBar, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.onCancelEditing;
         var0 = _closure1_slot14;
@@ -899,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6[var0];
         var8 = var7.bind(var3)(var5);
         var7 = var8.useAnimatedStyle;
-        var5 = function() { // Original name: o, environment: var2
+        var5 = function() {
             var0 = {};
             var2 = _closure2_slot0;
             var0.backgroundColor = var2;
@@ -953,7 +953,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = arg1;
         var2 = function() { // Environment: var2
             var0 = {};
-            var2 = function() { // Original name: componentDidAppear, environment: var1
+            var2 = function() {
                 var3 = _closure2_slot1;
                 var2 = var3.set;
                 var5 = _closure1_slot0;
@@ -970,7 +970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.componentDidAppear = var2;
-            var2 = function() { // Original name: componentDidEnter, environment: var1
+            var2 = function() {
                 var3 = _closure2_slot1;
                 var2 = var3.set;
                 var5 = _closure1_slot0;
@@ -987,7 +987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.componentDidEnter = var2;
-            var1 = function(arg0) { // Original name: componentWillLeave, environment: var1
+            var1 = function arg0() {
                 var1 = _closure2_slot2;
                 var0 = arg0;
                 var1.current = var0;
@@ -1001,7 +1001,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var11.bind(var0)(var4);
                 var7 = var8.withTiming;
                 var15 = _closure1_slot12;
-                var5 = function(arg0) { // Original name: n, environment: var4
+                var5 = function arg0() {
                     _fun90133: for (var _fun90133_ip = 0;;) switch (_fun90133_ip) {
                         case 0:
                             var0 = arg0;
@@ -1064,7 +1064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot17 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputContextBar, environment: var1
+    var1 = function arg0() {
         _fun90134: for (var _fun90134_ip = 0;;) switch (_fun90134_ip) {
             case 0:
                 var1 = arg0;
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[2] = var7;
                 var0 = function() { // Environment: var0
                     var0 = {};
-                    var2 = function() { // Original name: onCancelEditing, environment: var1
+                    var2 = function() {
                         _fun90136: for (var _fun90136_ip = 0;;) switch (_fun90136_ip) {
                             case 0:
                                 var0 = _closure2_slot1;
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onCancelEditing = var2;
-                    var2 = function() { // Original name: onCancelReplying, environment: var1
+                    var2 = function() {
                         _fun90137: for (var _fun90137_ip = 0;;) switch (_fun90137_ip) {
                             case 0:
                                 var0 = _closure2_slot2;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onCancelReplying = var2;
-                    var2 = function() { // Original name: onTapContextBarReply, environment: var1
+                    var2 = function() {
                         _fun90138: for (var _fun90138_ip = 0;;) switch (_fun90138_ip) {
                             case 0:
                                 var2 = _closure2_slot2;
@@ -1228,7 +1228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onTapContextBarReply = var2;
-                    var1 = function() { // Original name: onToggleReplyMention, environment: var1
+                    var1 = function() {
                         _fun90139: for (var _fun90139_ip = 0;;) switch (_fun90139_ip) {
                             case 0:
                                 var2 = _closure2_slot2;

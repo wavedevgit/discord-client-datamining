@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useRef;
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: useEvent, environment: var1
+    var1 = function arg0() {
         _fun34704: for (var _fun34704_ip = 0;;) switch (_fun34704_ip) {
             case 0:
                 var4 = arg0;

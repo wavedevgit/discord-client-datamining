@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: WarningLabel, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.text;
         var0 = _closure1_slot23;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: AuthorizedAppTwoWay, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.application;
         var5 = _closure1_slot0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: ParentApp, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.application;
         var3 = _closure1_slot21;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/authorized_apps/UserSettingsAuthedApp.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserSettingsAuthedApp, environment: var1
+    var1 = function arg0() {
         _fun82097: for (var _fun82097_ip = 0;;) switch (_fun82097_ip) {
             case 0:
                 var0 = arg0;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var6 = _closure2_slot1;
                     var1.application = var6;
-                    var6 = function() { // Original name: onDelete, environment: var6
+                    var6 = function() {
                         var2 = _closure2_slot6;
                         var1 = _closure2_slot0;
                         var0 = undefined;
@@ -959,7 +959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1507:
                 var18.subLabel = var29;
                 var18.value = var27;
-                var27 = function(arg0) { // Original name: handleMuteChannelChange, environment: var8
+                var27 = function arg0() {
                     _fun82114: for (var _fun82114_ip = 0;;) switch (_fun82114_ip) {
                         case 0:
                             var0 = _closure2_slot9;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var28;
             case 1649:
                 var21.value = var27;
-                var27 = function(arg0) { // Original name: handleDMSettingChange, environment: var8
+                var27 = function arg0() {
                     _fun82115: for (var _fun82115_ip = 0;;) switch (_fun82115_ip) {
                         case 0:
                             var5 = arg0;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.xrmhRX;
                 var19 = var26.bind(var27)(var19);
                 var21.label = var19;
-                var19 = function() { // Original name: handleClickPermissions, environment: var8
+                var19 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 35;
@@ -1335,7 +1335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var28 = var28["lx+Gec"];
                 var28 = var29.bind(var30)(var28);
                 var24.label = var28;
-                var28 = function() { // Original name: handleClickToS, environment: var8
+                var28 = function() {
                     _fun82109: for (var _fun82109_ip = 0;;) switch (_fun82109_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -1394,7 +1394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.okSwq9;
                 var27 = var28.bind(var29)(var27);
                 var23.label = var27;
-                var27 = function() { // Original name: handleClickPrivacyPolicy, environment: var8
+                var27 = function() {
                     _fun82110: for (var _fun82110_ip = 0;;) switch (_fun82110_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -1558,7 +1558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.label = var7;
                             var7 = 'danger';
                             var4.variant = var7;
-                            var7 = function() { // Original name: onPress, environment: var8
+                            var7 = function() {
                                 var2 = _closure2_slot7;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -1584,7 +1584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var9.XyHpKH;
                             var9 = var10.bind(var11)(var9);
                             var7.label = var9;
-                            var8 = function() { // Original name: onPress, environment: var8
+                            var8 = function() {
                                 var2 = _closure2_slot8;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;

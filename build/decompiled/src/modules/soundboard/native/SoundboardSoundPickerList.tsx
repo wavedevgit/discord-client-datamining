@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun68411: for (var _fun68411_ip = 0;;) switch (_fun68411_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun68413: for (var _fun68413_ip = 0;;) switch (_fun68413_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getSectionLabel, environment: var1
+    var0 = function arg0() {
         _fun68414: for (var _fun68414_ip = 0;;) switch (_fun68414_ip) {
             case 0:
                 var0 = arg0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.soundButtonNotFirst = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: SoundPickerButtonRow, environment: var1
+    var3 = function arg0() {
         _fun68415: for (var _fun68415_ip = 0;;) switch (_fun68415_ip) {
             case 0:
                 var0 = arg0;
@@ -688,7 +688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot8 = var3;
                 var _closure2_slot9 = var3;
                 var _closure2_slot10 = var3;
-                var0 = function(arg0, arg1) { // Original name: calculateCategory, environment: var4
+                var0 = function arg0, arg1() {
                     _fun68419: for (var _fun68419_ip = 0;;) switch (_fun68419_ip) {
                         case 0:
                             var0 = global;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot11 = var0;
-                var0 = function(arg0) { // Original name: getSectionIcon, environment: var4
+                var0 = function arg0() {
                     _fun68420: for (var _fun68420_ip = 0;;) switch (_fun68420_ip) {
                         case 0:
                             var4 = arg0;
@@ -916,7 +916,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot12 = var0;
-                var0 = function(arg0) { // Original name: isSectionLocked, environment: var4
+                var0 = function arg0() {
                     _fun68421: for (var _fun68421_ip = 0;;) switch (_fun68421_ip) {
                         case 0:
                             var5 = arg0;
@@ -956,7 +956,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot13 = var0;
-                var0 = function(arg0) { // Original name: getSectionPosition, environment: var4
+                var0 = function arg0() {
                     _fun68422: for (var _fun68422_ip = 0;;) switch (_fun68422_ip) {
                         case 0:
                             var3 = arg0;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var9[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var9 = function(arg0) { // Original name: onLayout, environment: var4
+                var9 = function arg0() {
                     var3 = _closure2_slot9;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -1229,7 +1229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.onLayout = var9;
                 var0.sections = var8;
-                var8 = function(arg0) { // Original name: sectionSize, environment: var4
+                var8 = function arg0() {
                     _fun68430: for (var _fun68430_ip = 0;;) switch (_fun68430_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -1257,7 +1257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.sectionSize = var8;
-                var8 = function(arg0) { // Original name: itemSize, environment: var4
+                var8 = function arg0() {
                     _fun68431: for (var _fun68431_ip = 0;;) switch (_fun68431_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.itemSize = var8;
-                var8 = function(arg0) { // Original name: sectionFooterSize, environment: var4
+                var8 = function arg0() {
                     _fun68432: for (var _fun68432_ip = 0;;) switch (_fun68432_ip) {
                         case 0:
                             var1 = _closure2_slot14;
@@ -1309,7 +1309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.sectionFooterSize = var8;
                 var0.ref = var7;
                 var0.renderItem = var6;
-                var6 = function(arg0) { // Original name: renderSection, environment: var4
+                var6 = function arg0() {
                     _fun68433: for (var _fun68433_ip = 0;;) switch (_fun68433_ip) {
                         case 0:
                             var2 = arg0;
@@ -1374,7 +1374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.renderSection = var6;
-                var6 = function(arg0) { // Original name: renderSectionFooter, environment: var4
+                var6 = function arg0() {
                     _fun68434: for (var _fun68434_ip = 0;;) switch (_fun68434_ip) {
                         case 0:
                             var1 = _closure2_slot14;
@@ -1403,7 +1403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.renderSectionFooter = var6;
                 var0.insetEnd = var5;
-                var4 = function(arg0) { // Original name: onScroll, environment: var4
+                var4 = function arg0() {
                     _fun68435: for (var _fun68435_ip = 0;;) switch (_fun68435_ip) {
                         case 0:
                             var2 = arg0;

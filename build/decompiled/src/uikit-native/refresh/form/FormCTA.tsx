@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/refresh/form/FormCTA.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormCTA, environment: var1
+    var1 = function arg0() {
         _fun47865: for (var _fun47865_ip = 0;;) switch (_fun47865_ip) {
             case 0:
                 var1 = arg0;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var7;
                 var5 = var6.bind(var4)(var2, var1);
             case 244:
-                var6 = function() { // Original name: renderTrailing, environment: var0
+                var6 = function() {
                     _fun47866: for (var _fun47866_ip = 0;;) switch (_fun47866_ip) {
                         case 0:
                             var1 = _closure2_slot0;

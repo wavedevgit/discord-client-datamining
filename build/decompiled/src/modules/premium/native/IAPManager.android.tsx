@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113352: for (var _fun113352_ip = 0;;) switch (_fun113352_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var3];
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: IAPManager, environment: var0
+        var2 = function arg0() {
             _fun113356: for (var _fun113356_ip = 0;;) switch (_fun113356_ip) {
                 case 0:
                     var4 = this;
@@ -117,12 +117,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 120:
                     var0 = var1.bind(var3)(var4, var0);
                     var1 = {};
-                    var3 = function() { // Original name: POST_CONNECTION_OPEN, environment: var2
+                    var3 = function() {
                         var0 = undefined;
                         return var0;
                     };
                     var1.POST_CONNECTION_OPEN = var3;
-                    var2 = function() { // Original name: APP_STATE_UPDATE, environment: var2
+                    var2 = function() {
                         var0 = undefined;
                         return var0;
                     };

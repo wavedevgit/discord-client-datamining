@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.createContext;
     var1 = var1.bind(var0)(var3);
     var2.RootTagContext = var1;
-    var1 = function(arg0) { // Original name: createRootTag, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         return var0;
     };

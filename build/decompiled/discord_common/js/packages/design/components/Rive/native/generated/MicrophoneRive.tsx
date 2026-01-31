@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/design/components/Rive/native/generated/MicrophoneRive.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MicrophoneRive, environment: var1
+    var1 = function arg0() {
         _fun27446: for (var _fun27446_ip = 0;;) switch (_fun27446_ip) {
             case 0:
                 var2 = arg0;

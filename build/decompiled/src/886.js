@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Module';
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
-    var0 = function(arg0) { // Original name: addUserAgentToTransportHeaders, environment: var0
+    var0 = function arg0() {
         _fun9380: for (var _fun9380_ip = 0;;) switch (_fun9380_ip) {
             case 0:
                 var2 = arg0;

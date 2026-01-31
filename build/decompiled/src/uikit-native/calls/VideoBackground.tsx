@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var3 = function(arg0, arg1) { // Original name: useDominantRGBFromImage, environment: var5
+    var3 = function arg0, arg1() {
         _fun50822: for (var _fun50822_ip = 0;;) switch (_fun50822_ip) {
             case 0:
                 var6 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var1 = function(arg0, arg1) { // Original name: useDominantColorFromImage, environment: var5
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot13;
         var2 = undefined;
         var1 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var1;
-    var11 = function(arg0) { // Original name: VideoBackground, environment: var5
+    var11 = function arg0() {
         _fun50826: for (var _fun50826_ip = 0;;) switch (_fun50826_ip) {
             case 0:
                 var6 = arg0;

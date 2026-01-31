@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun44975: for (var _fun44975_ip = 0;;) switch (_fun44975_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.BaseGesture;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: LongPressGesture, environment: var5
+        var3 = function() {
             _fun44979: for (var _fun44979_ip = 0;;) switch (_fun44979_ip) {
                 case 0:
                     var3 = this;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'minDuration';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: minDuration, environment: var5
+        var0 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'maxDistance';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: maxDistance, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'numberOfPointers';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: numberOfPointers, environment: var5
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;

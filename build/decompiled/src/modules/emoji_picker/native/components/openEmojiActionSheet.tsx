@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/openEmojiActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openEmojiActionSheet, environment: var1
+    var1 = function arg0() {
         _fun73979: for (var _fun73979_ip = 0;;) switch (_fun73979_ip) {
             case 0:
                 var2 = arg0;

@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/EmbeddedActivityInstanceEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createActivityInstanceEmbed, environment: var1
+    var1 = function arg0() {
         _fun92394: for (var _fun92394_ip = 0;;) switch (_fun92394_ip) {
             case 0:
                 var12 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var16)(var2);
                 var16 = _closure1_slot6;
                 var3 = var5.id;
-                var1 = function(arg0, arg1, arg2) { // Original name: getStatusText, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun92396: for (var _fun92396_ip = 0;;) switch (_fun92396_ip) {
                         case 0:
                             var5 = arg0;

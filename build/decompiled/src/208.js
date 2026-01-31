@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var1;
-    var0 = function(arg0) { // Original name: convertHeadersMapToArray, environment: var3
+    var0 = function arg0() {
         _fun2927: for (var _fun2927_ip = 0;;) switch (_fun2927_ip) {
             case 0:
                 var6 = arg0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1 instanceof Object ? var1 : var4;
     var _closure1_slot3 = var1;
     var1 = {};
-    var4 = function(arg0, arg1, arg2) { // Original name: addListener, environment: var3
+    var4 = function arg0, arg1, arg2() {
         var4 = _closure1_slot3;
         var3 = var4.addListener;
         var2 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.addListener = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9) { // Original name: sendRequest, environment: var3
+    var4 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9() {
         _fun2929: for (var _fun2929_ip = 0;;) switch (_fun2929_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.sendRequest = var4;
-    var4 = function(arg0) { // Original name: abortRequest, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.abortRequest = var4;
-    var3 = function(arg0) { // Original name: clearCookies, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: generateInviteKeyFromExtraData, environment: var1
+    var3 = function arg0() {
         _fun28245: for (var _fun28245_ip = 0;;) switch (_fun28245_ip) {
             case 0:
                 var0 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/instant_invite/InviteCodeUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: generateInviteKeyFromUrlParams, environment: var1
+    var4 = function arg0, arg1() {
         _fun28246: for (var _fun28246_ip = 0;;) switch (_fun28246_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateInviteKeyFromUrlParams = var4;
     var2.generateInviteKeyFromExtraData = var3;
-    var3 = function(arg0) { // Original name: parseExtraDataFromInviteKey, environment: var1
+    var3 = function arg0() {
         _fun28247: for (var _fun28247_ip = 0;;) switch (_fun28247_ip) {
             case 0:
                 var2 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseExtraDataFromInviteKey = var3;
-    var1 = function(arg0) { // Original name: parseInviteCodeFromInviteKey, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = '?';

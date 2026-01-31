@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun25106: for (var _fun25106_ip = 0;;) switch (_fun25106_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,30 +45,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var12 = function() { // Original name: handlePaymentSourceCreateEnd, environment: var3
+    var12 = function() {
         var0 = false;
         _closure1_slot11 = var0;
         var0 = undefined;
         return var0;
     };
-    var11 = function() { // Original name: handlePaymentSourcesFetchEnd, environment: var3
+    var11 = function() {
         var0 = undefined;
         var _closure1_slot6 = var0;
         return var0;
     };
-    var10 = function() { // Original name: handleSubscriptionFetchEnd, environment: var3
+    var10 = function() {
         var0 = false;
         _closure1_slot14 = var0;
         var0 = undefined;
         return var0;
     };
-    var9 = function() { // Original name: handleSubscriptionUpdateStart, environment: var3
+    var9 = function() {
         var0 = true;
         _closure1_slot15 = var0;
         var0 = undefined;
         return var0;
     };
-    var8 = function() { // Original name: handleSubscriptionUpdateEnd, environment: var3
+    var8 = function() {
         var0 = false;
         _closure1_slot15 = var0;
         var0 = undefined;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: BillingInfoStore, environment: var5
+        var3 = function() {
             _fun25115: for (var _fun25115_ip = 0;;) switch (_fun25115_ip) {
                 case 0:
                     var3 = this;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isBusy';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             _fun25116: for (var _fun25116_ip = 0;;) switch (_fun25116_ip) {
                 case 0:
                     var0 = _closure1_slot11;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isUpdatingPaymentSource';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isRemovingPaymentSource';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSyncing';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun25119: for (var _fun25119_ip = 0;;) switch (_fun25119_ip) {
                 case 0:
                     var1 = this;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSubscriptionFetching';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPaymentSourceFetching';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot6;
             var0 = null;
             var0 = var0 != var1;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'editSourceError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'removeSourceError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipCountryCodeLoaded';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot7;
             var0 = undefined;
             var0 = var0 !== var1;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipCountryCode';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipCountryCodeRequest';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipLocationLoaded';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot9;
             var0 = undefined;
             var0 = var0 !== var1;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipLocation';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipLocationRequest';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipLocationHasError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipCountryCodeWithFallback';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun25131: for (var _fun25131_ip = 0;;) switch (_fun25131_ip) {
                 case 0:
                     var2 = _closure1_slot7;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ipCountryCodeHasError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'paymentSourcesFetchRequest';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var16 = var6.bind(var0)(var1);
     var1 = {};
-    var13 = function() { // Original name: handlePaymentSourceCreateStart, environment: var3
+    var13 = function() {
         var0 = true;
         _closure1_slot11 = var0;
         var0 = undefined;
@@ -408,21 +408,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.BILLING_PAYMENT_SOURCE_CREATE_SUCCESS = var12;
     var1.BILLING_PAYMENT_SOURCE_CREATE_FAIL = var12;
     var1.STRIPE_TOKEN_FAILURE = var12;
-    var12 = function() { // Original name: handlePaymentSourceRemoveStart, environment: var3
+    var12 = function() {
         var0 = true;
         _closure1_slot13 = var0;
         var0 = undefined;
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_REMOVE_START = var12;
-    var12 = function() { // Original name: handlePaymentSourceRemoveSuccess, environment: var3
+    var12 = function() {
         var0 = false;
         _closure1_slot13 = var0;
         var0 = undefined;
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS = var12;
-    var12 = function(arg0) { // Original name: handlePaymentSourceRemoveFail, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         var2 = false;
@@ -432,28 +432,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_REMOVE_FAIL = var12;
-    var12 = function() { // Original name: handleClearRemoveError, environment: var3
+    var12 = function() {
         var0 = null;
         _closure1_slot17 = var0;
         var0 = undefined;
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_REMOVE_CLEAR_ERROR = var12;
-    var12 = function() { // Original name: handlePaymentSourceUpdateStart, environment: var3
+    var12 = function() {
         var0 = true;
         _closure1_slot12 = var0;
         var0 = undefined;
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_UPDATE_START = var12;
-    var12 = function() { // Original name: handlePaymentSourceUpdateSuccess, environment: var3
+    var12 = function() {
         var0 = false;
         _closure1_slot12 = var0;
         var0 = undefined;
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS = var12;
-    var12 = function(arg0) { // Original name: handlePaymentSourceUpdateFail, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var1 = var0.error;
         var2 = false;
@@ -463,14 +463,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_UPDATE_FAIL = var12;
-    var12 = function() { // Original name: handleClearUpdateError, environment: var3
+    var12 = function() {
         var0 = null;
         _closure1_slot16 = var0;
         var0 = undefined;
         return var0;
     };
     var1.BILLING_PAYMENT_SOURCE_UPDATE_CLEAR_ERROR = var12;
-    var12 = function(arg0) { // Original name: handlePaymentSourcesFetchStart, environment: var3
+    var12 = function arg0() {
         var0 = arg0;
         var1 = var0.request;
         _closure1_slot6 = var1;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.BILLING_PAYMENT_SOURCES_FETCH_START = var12;
     var1.BILLING_PAYMENT_SOURCES_FETCH_SUCCESS = var11;
     var1.BILLING_PAYMENT_SOURCES_FETCH_FAIL = var11;
-    var11 = function() { // Original name: handleSubscriptionFetchStart, environment: var3
+    var11 = function() {
         var0 = true;
         _closure1_slot14 = var0;
         var0 = undefined;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.BILLING_SUBSCRIPTION_UPDATE_FAIL = var8;
     var1.BILLING_SUBSCRIPTION_CANCEL_FAIL = var8;
     var1.BILLING_SUBSCRIPTION_CANCEL_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleIpCountryCodeFetchStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.request;
         var _closure1_slot8 = var1;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_IP_COUNTRY_CODE_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleSetIpCountryCode, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.countryCode;
         var _closure1_slot7 = var1;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_SET_IP_COUNTRY_CODE = var8;
-    var8 = function() { // Original name: handleIpCountryCodeFailure, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot7 = var0;
         var0 = true;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_IP_COUNTRY_CODE_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleIpLocationFetchStart, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.request;
         var _closure1_slot10 = var1;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_IP_LOCATION_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleSetIpLocation, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.location;
         var _closure1_slot9 = var1;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_SET_IP_LOCATION = var8;
-    var8 = function() { // Original name: handleIpLocationFailure, environment: var3
+    var8 = function() {
         var0 = null;
         _closure1_slot9 = var0;
         var0 = true;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_IP_LOCATION_FAILURE = var8;
-    var8 = function() { // Original name: handleLogout, environment: var3
+    var8 = function() {
         var0 = undefined;
         _closure1_slot6 = var0;
         _closure1_slot8 = var0;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var8;
-    var3 = function(arg0) { // Original name: CONNECTION_OPEN, environment: var3
+    var3 = function arg0() {
         _fun25152: for (var _fun25152_ip = 0;;) switch (_fun25152_ip) {
             case 0:
                 var0 = arg0;

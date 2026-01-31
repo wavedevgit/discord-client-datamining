@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPixelsPerUnitX, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38348: for (var _fun38348_ip = 0;;) switch (_fun38348_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPixelsPerUnitY, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38349: for (var _fun38349_ip = 0;;) switch (_fun38349_ip) {
             case 0:
                 var3 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPixelUnits, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38350: for (var _fun38350_ip = 0;;) switch (_fun38350_ip) {
             case 0:
                 var4 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getModifyDate, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38351: for (var _fun38351_ip = 0;;) switch (_fun38351_ip) {
             case 0:
                 var12 = arg0;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: tagFitsInBuffer, environment: var2
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38352: for (var _fun38352_ip = 0;;) switch (_fun38352_ip) {
             case 0:
                 var3 = arg3;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: pad, environment: var2
+    var0 = function arg0, arg1() {
         var3 = arg0;
         var2 = '0';
         var1 = var2.repeat;
@@ -321,7 +321,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0, arg1) { // Original name: read, environment: var2
+    var2 = function arg0, arg1() {
         _fun38354: for (var _fun38354_ip = 0;;) switch (_fun38354_ip) {
             case 0:
                 var9 = arg0;

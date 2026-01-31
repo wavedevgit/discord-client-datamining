@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = function(arg0) { // Original name: _firstPartyTasksFromServer, environment: var1
+    var0 = function arg0() {
         _fun46653: for (var _fun46653_ip = 0;;) switch (_fun46653_ip) {
             case 0:
                 var5 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: _thirdPartyTasksFromServer, environment: var1
+    var0 = function arg0() {
         _fun46654: for (var _fun46654_ip = 0;;) switch (_fun46654_ip) {
             case 0:
                 var5 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: _questTaskFromServer, environment: var1
+    var0 = function arg0() {
         _fun46655: for (var _fun46655_ip = 0;;) switch (_fun46655_ip) {
             case 0:
                 var1 = arg0;

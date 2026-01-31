@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot8 = var3;
-    var3 = function() { // Original name: VoiceControlsNuxActionSheetImporter, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot2;
         var1 = 7;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VoicePanelDismissibleContent, environment: var1
+    var1 = function() {
         _fun110887: for (var _fun110887_ip = 0;;) switch (_fun110887_ip) {
             case 0:
                 var7 = _closure1_slot4;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var12[var10];
                 var7 = var11.bind(var3)(var2);
                 var6 = var7.useAnimatedReaction;
-                var5 = function() { // Original name: h, environment: var4
+                var5 = function() {
                     _fun110889: for (var _fun110889_ip = 0;;) switch (_fun110889_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.__workletHash = var2;
                 var2 = _closure1_slot10;
                 var5.__initData = var2;
-                var2 = function(arg0, arg1) { // Original name: f, environment: var4
+                var2 = function arg0, arg1() {
                     _fun110890: for (var _fun110890_ip = 0;;) switch (_fun110890_ip) {
                         case 0:
                             var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
                 var0.contentTypes = var5;
-                var4 = function(arg0) { // Original name: children, environment: var4
+                var4 = function arg0() {
                     _fun110891: for (var _fun110891_ip = 0;;) switch (_fun110891_ip) {
                         case 0:
                             var0 = arg0;

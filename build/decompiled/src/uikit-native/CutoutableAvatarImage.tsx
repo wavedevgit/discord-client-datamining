@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var10;
-    var0 = function(arg0) { // Original name: NativeCutoutAvatarImage, environment: var7
+    var0 = function arg0() {
         _fun48185: for (var _fun48185_ip = 0;;) switch (_fun48185_ip) {
             case 0:
                 var1 = arg0;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var1];
                 var2 = var9.bind(var3)(var1);
                 var1 = var2.useAnimatedProps;
-                var0 = function() { // Original name: h, environment: var0
+                var0 = function() {
                     _fun48186: for (var _fun48186_ip = 0;;) switch (_fun48186_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: CutoutAvatarImage, environment: var7
+    var0 = function arg0() {
         _fun48187: for (var _fun48187_ip = 0;;) switch (_fun48187_ip) {
             case 0:
                 var0 = arg0;
@@ -1171,7 +1171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var7 = function(arg0, arg1) { // Original name: customShallowEqual, environment: var7
+    var7 = function arg0, arg1() {
         _fun48189: for (var _fun48189_ip = 0;;) switch (_fun48189_ip) {
             case 0:
                 var1 = arg0;

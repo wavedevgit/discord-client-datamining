@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_panel/native/controls/utils/createUseAnimatedScrollLock.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ControlsGestureScrollLock = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: createUseAnimatedScrollLock, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var5.bind(var7)(var1);
                     var11 = var12.useAnimatedScrollHandler;
                     var10 = {};
-                    var8 = function(arg0, arg1) { // Original name: w, environment: var3
+                    var8 = function arg0, arg1() {
                         var1 = 0;
                         var0 = arg1;
                         var0.momentumEndCount = var1;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13 = _closure1_slot3;
                     var8.__initData = var13;
                     var10.onBeginDrag = var8;
-                    var13 = function(arg0) { // Original name: H, environment: var3
+                    var13 = function arg0() {
                         _fun105502: for (var _fun105502_ip = 0;;) switch (_fun105502_ip) {
                             case 0:
                                 var2 = _closure2_slot3;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = _closure1_slot4;
                     var13.__initData = var14;
                     var10.onEndDrag = var13;
-                    var13 = function(arg0, arg1) { // Original name: D, environment: var3
+                    var13 = function arg0, arg1() {
                         _fun105503: for (var _fun105503_ip = 0;;) switch (_fun105503_ip) {
                             case 0:
                                 var1 = arg1;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = _closure1_slot5;
                     var13.__initData = var14;
                     var10.onMomentumEnd = var13;
-                    var13 = function(arg0) { // Original name: k, environment: var3
+                    var13 = function arg0() {
                         _fun105504: for (var _fun105504_ip = 0;;) switch (_fun105504_ip) {
                             case 0:
                                 var0 = arg0;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var9[var4];
                     var5 = var5.bind(var7)(var4);
                     var4 = var5.useAnimatedProps;
-                    var3 = function() { // Original name: L, environment: var3
+                    var3 = function() {
                         var0 = {};
                         var2 = _closure2_slot1;
                         var1 = var2.get;

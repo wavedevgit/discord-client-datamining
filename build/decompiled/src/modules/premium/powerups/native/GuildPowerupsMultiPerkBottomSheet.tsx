@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildPowerupsMultiPerkCard, environment: var1
+    var0 = function arg0() {
         _fun102527: for (var _fun102527_ip = 0;;) switch (_fun102527_ip) {
             case 0:
                 var0 = arg0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 883:
                 var13 = var14.bind(var15)(var13);
                 var9.text = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     _fun102528: for (var _fun102528_ip = 0;;) switch (_fun102528_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/GuildPowerupsMultiPerkBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildPowerupsMultiPerkBottomSheet, environment: var1
+    var1 = function arg0() {
         _fun102530: for (var _fun102530_ip = 0;;) switch (_fun102530_ip) {
             case 0:
                 var0 = arg0;

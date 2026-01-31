@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/shared/hooks/useMountEffect.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useMountEffect, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = var3.useRef;
         var1 = arg0;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: useMountLayoutEffect, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = var3.useRef;
         var1 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useMountLayoutEffect = var3;
-    var1 = function(arg0) { // Original name: useUnmountEffect, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var3 = _closure1_slot0;

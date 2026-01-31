@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/AppealIngestionExternalLink.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppealIngestionExternalLink, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.text;
         var1 = var0.url;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.style = var5;
         var5 = 'button';
         var0.accessibilityRole = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             _fun79541: for (var _fun79541_ip = 0;;) switch (_fun79541_ip) {
                 case 0:
                     var2 = _closure2_slot1;

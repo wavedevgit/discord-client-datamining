@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: showCoachmark, environment: var4
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = {};
     var3.fetchVerificationForm = var11;
     var3.updateVerificationForm = var10;
-    var10 = function(arg0, arg1) { // Original name: updateVerificationFormFieldsLocal, environment: var4
+    var10 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -868,7 +868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.updateVerificationFormFieldsLocal = var10;
     var3.updateVerificationFormDescription = var9;
-    var9 = function(arg0, arg1) { // Original name: updateVerificationFormDescriptionLocal, environment: var4
+    var9 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.updateVerificationFormDescriptionLocal = var9;
     var3.enableVerificationForm = var8;
     var3.submitVerificationForm = var7;
-    var7 = function() { // Original name: clearCoachmark, environment: var4
+    var7 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.clearCoachmark = var7;
-    var4 = function(arg0) { // Original name: reportApplication, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var8 = var0.guild;
         var10 = var0.guildJoinRequest;

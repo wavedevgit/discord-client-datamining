@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: getOrRefreshPushSyncToken, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _getOrRefreshPushSyncToken, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot14 = var3;
     var3 = {};
-    var4 = function(arg0) { // Original name: registerDevice, environment: var1
+    var4 = function arg0() {
         _fun85177: for (var _fun85177_ip = 0;;) switch (_fun85177_ip) {
             case 0:
                 var4 = arg0;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.registerDevice = var4;
-    var4 = function(arg0) { // Original name: syncDevice, environment: var1
+    var4 = function arg0() {
         _fun85178: for (var _fun85178_ip = 0;;) switch (_fun85178_ip) {
             case 0:
                 var2 = arguments[1];
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.syncDevice = var4;
-    var4 = function(arg0) { // Original name: unregisterDevice, environment: var1
+    var4 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot14;
         var1 = var2.log;
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'actions/native/PushNotificationActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: setPushPermissionState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot1;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPushPermissionState = var3;
-    var3 = function(arg0) { // Original name: setPushPermissionReactivationSeen, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 15;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPushPermissionReactivationSeen = var3;
-    var3 = function(arg0) { // Original name: setPushNotificationPermissionEligibleForPrompt, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 15;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPushNotificationPermissionEligibleForPrompt = var3;
-    var1 = function(arg0) { // Original name: updateNotificationAuthorizationStatus, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 15;

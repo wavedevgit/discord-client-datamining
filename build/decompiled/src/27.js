@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var2 = {};
-    var4 = function() { // Original name: get ActivityIndicator, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Button, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get DrawerLayoutAndroid, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get FlatList, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Image, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ImageBackground, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get InputAccessoryView, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get KeyboardAvoidingView, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -134,7 +134,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get experimental_LayoutConformance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Modal, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 9;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Pressable, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 10;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ProgressBarAndroid, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 11;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get RefreshControl, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get SafeAreaView, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 11;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ScrollView, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 15;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get SectionList, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 16;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get StatusBar, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 17;
@@ -292,7 +292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Switch, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 18;
@@ -308,7 +308,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Text, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 19;
@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get unstable_TextAncestorContext, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 20;
@@ -340,7 +340,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TextInput, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 21;
@@ -356,7 +356,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Touchable, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 22;
@@ -372,7 +372,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TouchableHighlight, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 23;
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TouchableNativeFeedback, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 24;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TouchableOpacity, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 25;
@@ -420,7 +420,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TouchableWithoutFeedback, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 26;
@@ -436,7 +436,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get View, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 27;
@@ -452,7 +452,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get VirtualizedList, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 28;
@@ -468,7 +468,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get VirtualizedSectionList, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 29;
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get unstable_VirtualView, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 30;
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get AccessibilityInfo, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 31;
@@ -516,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ActionSheetIOS, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 32;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Alert, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 33;
@@ -548,7 +548,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Animated, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 34;
@@ -564,7 +564,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Appearance, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 35;
@@ -579,7 +579,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get AppRegistry, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 36;
@@ -595,7 +595,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get AppState, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 37;
@@ -611,7 +611,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get BackHandler, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 38;
@@ -627,7 +627,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Clipboard, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 11;
@@ -650,7 +650,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get codegenNativeCommands, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 40;
@@ -666,7 +666,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get codegenNativeComponent, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 41;
@@ -682,7 +682,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get DeviceEventEmitter, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 42;
@@ -698,7 +698,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get DeviceInfo, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 43;
@@ -714,7 +714,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get DevMenu, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 44;
@@ -730,7 +730,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get DevSettings, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 45;
@@ -746,7 +746,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Dimensions, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 46;
@@ -762,7 +762,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get DynamicColorIOS, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 47;
@@ -778,7 +778,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Easing, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 48;
@@ -794,7 +794,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get findNodeHandle, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 49;
@@ -810,7 +810,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get I18nManager, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 50;
@@ -826,7 +826,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get InteractionManager, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 51;
@@ -842,7 +842,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Keyboard, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 52;
@@ -858,7 +858,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get LayoutAnimation, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 53;
@@ -874,7 +874,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Linking, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 54;
@@ -890,7 +890,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get LogBox, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 55;
@@ -906,7 +906,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get NativeAppEventEmitter, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 56;
@@ -922,7 +922,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get NativeDialogManagerAndroid, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 57;
@@ -938,7 +938,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get NativeEventEmitter, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 58;
@@ -954,7 +954,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get NativeModules, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 59;
@@ -970,7 +970,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Networking, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 60;
@@ -986,7 +986,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get PanResponder, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 61;
@@ -1002,7 +1002,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get PermissionsAndroid, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 62;
@@ -1018,7 +1018,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get PixelRatio, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 63;
@@ -1034,7 +1034,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Platform, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 64;
@@ -1050,7 +1050,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get PlatformColor, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 65;
@@ -1066,7 +1066,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get PushNotificationIOS, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 11;
@@ -1089,7 +1089,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get processColor, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 67;
@@ -1105,7 +1105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get registerCallableModule, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 68;
@@ -1121,7 +1121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get requireNativeComponent, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 69;
@@ -1137,7 +1137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get RootTagContext, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 70;
@@ -1153,7 +1153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Settings, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 71;
@@ -1169,7 +1169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Share, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 72;
@@ -1185,7 +1185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get StyleSheet, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 73;
@@ -1201,7 +1201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Systrace, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 74;
@@ -1216,7 +1216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get ToastAndroid, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 75;
@@ -1232,7 +1232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get TurboModuleRegistry, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 76;
@@ -1247,7 +1247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get UIManager, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 77;
@@ -1263,7 +1263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get unstable_batchedUpdates, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 49;
@@ -1279,7 +1279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get useAnimatedValue, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 78;
@@ -1295,7 +1295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get useColorScheme, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 79;
@@ -1311,7 +1311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get useWindowDimensions, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 80;
@@ -1327,7 +1327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get UTFSequence, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 81;
@@ -1343,7 +1343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var4 = function() { // Original name: get Vibration, environment: var1
+    var4 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 82;
@@ -1359,7 +1359,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         set: var0,
         enumerable: true
     });
-    var3 = function() { // Original name: get VirtualViewMode, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 30;

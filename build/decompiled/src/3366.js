@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun28959
             }
         case 76:
-            var2 = function(arg0) { // Original name: IsArray, environment: var1
+            var2 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = undefined;
                 var0 = arg0;

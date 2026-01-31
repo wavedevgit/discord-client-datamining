@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: resolveGiftCode, environment: var4
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _resolveGiftCode, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var3;
     var3 = {};
     var3.resolveGiftCode = var1;
-    var7 = function(arg0) { // Original name: fetchUserGiftCodesForSKU, environment: var4
+    var7 = function arg0() {
         _fun56462: for (var _fun56462_ip = 0;;) switch (_fun56462_ip) {
             case 0:
                 var2 = arguments[1];
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.fetchUserGiftCodesForSKU = var7;
-    var7 = function(arg0) { // Original name: createGiftCode, environment: var4
+    var7 = function arg0() {
         _fun56465: for (var _fun56465_ip = 0;;) switch (_fun56465_ip) {
             case 0:
                 var3 = arguments[1];
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.createGiftCode = var7;
-    var7 = function(arg0) { // Original name: revokeGiftCode, environment: var4
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -611,7 +611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.revokeGiftCode = var7;
-    var4 = function(arg0) { // Original name: openNativeGiftCodeModal, environment: var4
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 9;

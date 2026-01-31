@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(0);
     var _closure1_slot19 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildChannelUserList, environment: var1
+    var1 = function arg0() {
         _fun105751: for (var _fun105751_ip = 0;;) switch (_fun105751_ip) {
             case 0:
                 var0 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.listRef = var26;
                 var7.searchable = var4;
                 var7.searchableEmptyState = var2;
-                var2 = function(arg0) { // Original name: useSearchableConfig, environment: var21
+                var2 = function arg0() {
                     var2 = arg0;
                     var1 = var2.guildId;
                     var _closure3_slot0 = var1;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.scrollOffsetRef = var16;
                 var7.heightRef = var15;
                 var7.scaledRowHeight = var2;
-                var2 = function(arg0) { // Original name: useThrottledUpdateSubscription, environment: var21
+                var2 = function arg0() {
                     var1 = arg0;
                     var9 = var1.guildId;
                     var _closure3_slot0 = var9;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = arg1;
                             var _closure3_slot0 = var8;
                             var _closure3_slot1 = var7;
-                            var0 = function() { // Original name: getIndex, environment: var4
+                            var0 = function() {
                                 _fun105779: for (var _fun105779_ip = 0;;) switch (_fun105779_ip) {
                                     case 0:
                                         var1 = _closure2_slot19;
@@ -1414,7 +1414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.guildId = var7;
                             var6 = _closure2_slot7;
                             var1.canShowDisplayNameStylesFont = var6;
-                            var6 = function(arg0) { // Original name: onPress, environment: var4
+                            var6 = function arg0() {
                                 _fun105780: for (var _fun105780_ip = 0;;) switch (_fun105780_ip) {
                                     case 0:
                                         var5 = arg0;

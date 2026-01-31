@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var4;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun4987: for (var _fun4987_ip = 0;;) switch (_fun4987_ip) {
             case 0:
             case 2: // try_start_0
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: createRefForwarder, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {
@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var6.jsxs;
     var6 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ScrollView, environment: var5
+        var3 = function arg0() {
             _fun4994: for (var _fun4994_ip = 0;;) switch (_fun4994_ip) {
                 case 0:
                     var5 = this;
@@ -597,7 +597,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = var3.bind(var4)(var2);
                                 var2 = var2.height;
                                 var _closure4_slot2 = var2;
-                                var2 = function() { // Original name: scrollTextInputIntoVisibleRect, environment: var1
+                                var2 = function() {
                                     _fun5006: for (var _fun5006_ip = 0;;) switch (_fun5006_ip) {
                                         case 0:
                                             var1 = _closure3_slot0;
@@ -1748,7 +1748,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             _fun5036: for (var _fun5036_ip = 0;;) switch (_fun5036_ip) {
                 case 0:
                     var2 = this;
@@ -1845,7 +1845,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0() {
             _fun5037: for (var _fun5037_ip = 0;;) switch (_fun5037_ip) {
                 case 0:
                     var2 = arg0;
@@ -1899,7 +1899,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: componentWillUnmount, environment: var5
+        var6 = function() {
             _fun5038: for (var _fun5038_ip = 0;;) switch (_fun5038_ip) {
                 case 0:
                     var0 = this;
@@ -1963,7 +1963,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_textInputFocusError';
         var4.key = var6;
-        var6 = function() { // Original name: _textInputFocusError, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.console;
             var1 = var2.warn;
@@ -1977,7 +1977,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_getKeyForIndex';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: _getKeyForIndex, environment: var5
+        var6 = function arg0, arg1() {
             _fun5040: for (var _fun5040_ip = 0;;) switch (_fun5040_ip) {
                 case 0:
                     var1 = arg1;
@@ -1999,7 +1999,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_updateAnimatedNodeAttachment';
         var4.key = var6;
-        var6 = function() { // Original name: _updateAnimatedNodeAttachment, environment: var5
+        var6 = function() {
             _fun5041: for (var _fun5041_ip = 0;;) switch (_fun5041_ip) {
                 case 0:
                     var1 = this;
@@ -2062,7 +2062,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_setStickyHeaderRef';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: _setStickyHeaderRef, environment: var5
+        var6 = function arg0, arg1() {
             _fun5042: for (var _fun5042_ip = 0;;) switch (_fun5042_ip) {
                 case 0:
                     var3 = arg0;
@@ -2091,7 +2091,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_onStickyHeaderLayout';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: _onStickyHeaderLayout, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun5043: for (var _fun5043_ip = 0;;) switch (_fun5043_ip) {
                 case 0:
                     var3 = arg0;
@@ -2165,7 +2165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun5044: for (var _fun5044_ip = 0;;) switch (_fun5044_ip) {
                 case 0:
                     var2 = this;
@@ -2320,7 +2320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             case 118:
                                 var2 = _closure1_slot14;
                                 var1 = {};
-                                var5 = function(arg0) { // Original name: ref, environment: var6
+                                var5 = function arg0() {
                                     var3 = _closure3_slot0;
                                     var2 = var3._setStickyHeaderRef;
                                     var1 = _closure4_slot1;
@@ -2337,7 +2337,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var7 = var10.bind(var5)(var11, var7);
                                 var7 = var8.bind(var9)(var7);
                                 var1.nextHeaderLayoutY = var7;
-                                var6 = function(arg0) { // Original name: onLayout, environment: var6
+                                var6 = function arg0() {
                                     var4 = _closure3_slot0;
                                     var3 = var4._onStickyHeaderLayout;
                                     var2 = _closure4_slot0;
@@ -2717,7 +2717,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.contentContainerHorizontal = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot16 = var6;
-    var1 = function(arg0) { // Original name: Wrapper, environment: var1
+    var1 = function arg0() {
         _fun5048: for (var _fun5048_ip = 0;;) switch (_fun5048_ip) {
             case 0:
                 var5 = arg0;

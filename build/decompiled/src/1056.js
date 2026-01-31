@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var6 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: _addMeasureSpans, environment: var1
+    var6 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun10835: for (var _fun10835_ip = 0;;) switch (_fun10835_ip) {
             case 0:
                 var7 = arg1;
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: _addNavigationSpans, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun10836: for (var _fun10836_ip = 0;;) switch (_fun10836_ip) {
             case 0:
                 var6 = arg0;
@@ -410,7 +410,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _addPerformanceNavigationTiming, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun10838: for (var _fun10838_ip = 0;;) switch (_fun10838_ip) {
             case 0:
                 var11 = arg1;
@@ -546,7 +546,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var4 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: _addResourceSpans, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         _fun10839: for (var _fun10839_ip = 0;;) switch (_fun10839_ip) {
             case 0:
                 var5 = arg1;
@@ -699,7 +699,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: _setResourceRequestAttributes, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = arg2;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -789,7 +789,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2._addNavigationSpans = var5;
     var2._addResourceSpans = var4;
     var2._setResourceRequestAttributes = var3;
-    var3 = function(arg0, arg1) { // Original name: addPerformanceEntries, environment: var1
+    var3 = function arg0, arg1() {
         _fun10842: for (var _fun10842_ip = 0;;) switch (_fun10842_ip) {
             case 0:
                 var4 = arg0;
@@ -1212,7 +1212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var5.bind(var6)();
                 var5 = 'performance.activationStart';
                 var5 = var7.bind(var4)(var5, var6);
-                var1 = function(arg0, arg1) { // Original name: _setWebVitalAttributes, environment: var1
+                var1 = function arg0, arg1() {
                     _fun10845: for (var _fun10845_ip = 0;;) switch (_fun10845_ip) {
                         case 0:
                             var6 = arg0;
@@ -1383,7 +1383,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.addPerformanceEntries = var3;
-    var3 = function() { // Original name: startTrackingInteractions, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -1524,7 +1524,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.startTrackingInteractions = var3;
-    var3 = function() { // Original name: startTrackingLongAnimationFrames, environment: var1
+    var3 = function() {
         var0 = global;
         var2 = var0.PerformanceObserver;
         var0 = var2.prototype;
@@ -1721,7 +1721,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.startTrackingLongAnimationFrames = var3;
-    var3 = function() { // Original name: startTrackingLongTasks, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -1860,7 +1860,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.startTrackingLongTasks = var3;
-    var1 = function(arg0) { // Original name: startTrackingWebVitals, environment: var1
+    var1 = function arg0() {
         _fun10853: for (var _fun10853_ip = 0;;) switch (_fun10853_ip) {
             case 0:
                 var2 = arg0;
@@ -1920,7 +1920,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun10853
                 }
             case 162:
-                var3 = function() { // Original name: _trackLCP, environment: var0
+                var3 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 7;
@@ -1974,7 +1974,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var6.bind(var7)(var4);
             case 204:
                 var _closure2_slot0 = var3;
-                var3 = function() { // Original name: _trackTtfb, environment: var0
+                var3 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 7;
@@ -2020,7 +2020,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun10853
                 }
             case 224:
-                var1 = function() { // Original name: _trackCLS, environment: var0
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 7;

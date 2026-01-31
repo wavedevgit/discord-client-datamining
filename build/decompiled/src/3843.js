@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = dependencyMap;
             var _closure1_slot0 = var3;
             var _closure1_slot1 = var5;
-            var0 = function(arg0) { // Original name: getWebScrollableElement, environment: var4
+            var0 = function arg0() {
                 _fun34839: for (var _fun34839_ip = 0;;) switch (_fun34839_ip) {
                     case 0:
                         var0 = arg0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun34838
             }
         case 125:
-            var1 = function(arg0, arg1) { // Original name: useScrollViewOffsetNative, environment: var4
+            var1 = function arg0, arg1() {
                 _fun34845: for (var _fun34845_ip = 0;;) switch (_fun34845_ip) {
                     case 0:
                         var6 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var7[var3];
                         var8 = var5.bind(var4)(var3);
                         var7 = var8.useEvent;
-                        var5 = function(arg0) { // Original name: pnpm_useScrollViewOffsetTs2, environment: var1
+                        var5 = function arg0() {
                             _fun34846: for (var _fun34846_ip = 0;;) switch (_fun34846_ip) {
                                 case 0:
                                     var2 = arg0;
@@ -197,7 +197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34838_ip = 137;
             continue _fun34838;
         case 132:
-            var1 = function(arg0, arg1) { // Original name: useScrollViewOffsetWeb, environment: var4
+            var1 = function arg0, arg1() {
                 _fun34840: for (var _fun34840_ip = 0;;) switch (_fun34840_ip) {
                     case 0:
                         var6 = arg0;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var0.current;
                         var _closure2_slot1 = var0;
                         var7 = _closure1_slot2;
-                        var5 = function() { // Original name: pnpm_useScrollViewOffsetTs1, environment: var1
+                        var5 = function() {
                             _fun34841: for (var _fun34841_ip = 0;;) switch (_fun34841_ip) {
                                 case 0:
                                     var1 = _closure2_slot0;

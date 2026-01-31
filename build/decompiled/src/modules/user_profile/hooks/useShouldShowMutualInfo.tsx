@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/hooks/useShouldShowMutualInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useShouldShowMutualInfo, environment: var1
+    var1 = function arg0() {
         _fun61860: for (var _fun61860_ip = 0;;) switch (_fun61860_ip) {
             case 0:
                 var0 = arg0;

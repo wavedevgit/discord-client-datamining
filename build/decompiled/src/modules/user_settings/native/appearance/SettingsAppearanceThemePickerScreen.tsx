@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var5;
-            var0 = function(arg0, arg1, arg2) { // Original name: getThemeOverride, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun84449: for (var _fun84449_ip = 0;;) switch (_fun84449_ip) {
                     case 0:
                         var1 = arg2;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.color = var9;
             var3 = var7.bind(var8)(var3);
             var _closure1_slot30 = var3;
-            var3 = function() { // Original name: getSegmentedControlItems, environment: var1
+            var3 = function() {
                 var1 = {};
                 var4 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = 'function SettingsAppearanceThemePickerScreenTsx3(){const{mobileThemes,isClientThemesSelector,currentThemeIndex,themeTypeIndex,ClientThemeType,withTiming,interpolateColor,cardSecondaryStyles,timingStandard,bgRaised}=this.__closure;const theme=mobileThemes[isClientThemesSelector?currentThemeIndex:themeTypeIndex.get()];if(!isClientThemesSelector||theme.type===ClientThemeType.STANDARD_BACKGROUND_THEME){return{backgroundColor:withTiming(interpolateColor(themeTypeIndex.get(),[0,1,2],cardSecondaryStyles),timingStandard)};}else{return{backgroundColor:withTiming(interpolateColor(themeTypeIndex.get(),[0,1,2],[bgRaised,bgRaised,bgRaised]),timingStandard)};}}';
             var3.code = var6;
             var _closure1_slot35 = var3;
-            var3 = function(arg0) { // Original name: ThemePicker, environment: var1
+            var3 = function arg0() {
                 _fun84451: for (var _fun84451_ip = 0;;) switch (_fun84451_ip) {
                     case 0:
                         var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var20 = var1[var4];
                         var26 = var7.bind(var3)(var20);
                         var25 = var26.useAnimatedReaction;
-                        var24 = function() { // Original name: j, environment: var0
+                        var24 = function() {
                             var1 = _closure2_slot16;
                             var0 = var1.get;
                             var0 = var0.bind(var1)();
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var24.__workletHash = var20;
                         var20 = _closure1_slot33;
                         var24.__initData = var20;
-                        var20 = function(arg0) { // Original name: W, environment: var0
+                        var20 = function arg0() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot2;
                             var0 = 32;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var10[var4];
                         var26 = var7.bind(var3)(var17);
                         var25 = var26.useAnimatedStyle;
-                        var20 = function() { // Original name: Ae, environment: var0
+                        var20 = function() {
                             _fun84459: for (var _fun84459_ip = 0;;) switch (_fun84459_ip) {
                                 case 0:
                                     var1 = _closure2_slot0;
@@ -1170,7 +1170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     };
                                 case 152:
                                     var1.headerBackground = var6;
-                                    var6 = function() { // Original name: headerLeft, environment: var5
+                                    var6 = function() {
                                         _fun84466: for (var _fun84466_ip = 0;;) switch (_fun84466_ip) {
                                             case 0:
                                                 var0 = _closure2_slot3;
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         }
                                     };
                                     var1.headerLeft = var6;
-                                    var6 = function() { // Original name: headerTitle, environment: var5
+                                    var6 = function() {
                                         _fun84467: for (var _fun84467_ip = 0;;) switch (_fun84467_ip) {
                                             case 0:
                                                 var3 = _closure1_slot13;
@@ -1661,7 +1661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/user_settings/native/appearance/SettingsAppearanceThemePickerScreen.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: _default, environment: var1
+            var1 = function arg0() {
                 _fun84472: for (var _fun84472_ip = 0;;) switch (_fun84472_ip) {
                     case 0:
                         var0 = arg0;

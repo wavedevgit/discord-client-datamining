@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/CtaButtonUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.CtaButtonType = var3;
-    var3 = function(arg0, arg1) { // Original name: getCtaButtonType, environment: var1
+    var3 = function arg0, arg1() {
         _fun88692: for (var _fun88692_ip = 0;;) switch (_fun88692_ip) {
             case 0:
                 var5 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCtaButtonType = var3;
-    var1 = function(arg0, arg1) { // Original name: useCtaButtonType, environment: var1
+    var1 = function arg0, arg1() {
         _fun88693: for (var _fun88693_ip = 0;;) switch (_fun88693_ip) {
             case 0:
                 var6 = arg0;

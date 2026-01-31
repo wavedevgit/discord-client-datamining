@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/DebugLogView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun88189: for (var _fun88189_ip = 0;;) switch (_fun88189_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot10;
                 var11 = _closure1_slot5;
                 var9 = {};
-                var16 = function() { // Original name: onPress, environment: var8
+                var16 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var1 = var1.bind(var0)();

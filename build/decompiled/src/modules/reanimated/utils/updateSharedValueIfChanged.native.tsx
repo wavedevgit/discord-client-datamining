@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var0 = 'function updateSharedValueIfChangedNativeTsx2(sharedValue,value){const{runOnUI,updateSharedValueIfChanged}=this.__closure;if(!_WORKLET){runOnUI(updateSharedValueIfChanged)(sharedValue,value);}else{const _sharedValue=sharedValue.get();const newValue={..._sharedValue,...value};for(const key in newValue){if(_sharedValue[key]!==newValue[key]){sharedValue.set(newValue);break;}}}}';
     var7.code = var0;
-    var3 = function(arg0, arg1) { // Original name: u, environment: var1
+    var3 = function arg0, arg1() {
         _fun47173: for (var _fun47173_ip = 0;;) switch (_fun47173_ip) {
             case 0:
                 var2 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var7;
     var _closure1_slot4 = var4;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: u, environment: var2
+        var0 = function arg0, arg1() {
             _fun47175: for (var _fun47175_ip = 0;;) switch (_fun47175_ip) {
                 case 0:
                     var4 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var11;
             var _closure1_slot2 = var6;
-            var3 = function(arg0) { // Original name: ToastEmoji, environment: var1
+            var3 = function arg0() {
                 _fun57293: for (var _fun57293_ip = 0;;) switch (_fun57293_ip) {
                     case 0:
                         var0 = arg0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot8 = var3;
-            var0 = function(arg0) { // Original name: ToastText, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var8 = var0.emoji;
                 var1 = _closure1_slot7;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx';
             var4 = var5.bind(var6)(var4);
             var2.ToastEmoji = var3;
-            var1 = function(arg0) { // Original name: showDoubleTapEmojiUpdatedToast, environment: var1
+            var1 = function arg0() {
                 var0 = arg0;
                 var0 = var0.emoji;
                 var _closure2_slot0 = var0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = 'DEFAULT_REACTION_EMOJI_UPDATED';
                 var1.key = var5;
-                var5 = function() { // Original name: icon, environment: var4
+                var5 = function() {
                     var3 = _closure1_slot6;
                     var2 = _closure1_slot8;
                     var1 = {};
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.icon = var5;
-                var4 = function() { // Original name: content, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot6;
                     var2 = _closure1_slot9;
                     var1 = {};

@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/media_viewer/native/useVideoControls.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: useVideoControls, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun70332: for (var _fun70332_ip = 0;;) switch (_fun70332_ip) {
             case 0:
                 var11 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.useVideoStateStore = var3;
-    var3 = function() { // Original name: initVideoStateStore, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.initVideoStateStore = var3;
-    var3 = function(arg0) { // Original name: setMuted, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setMuted = var3;
-    var3 = function() { // Original name: toggleMuted, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.toggleMuted = var3;
-    var3 = function(arg0) { // Original name: setVideoStateControls, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVideoStateControls = var3;
-    var3 = function(arg0) { // Original name: setPausedState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPausedState = var3;
-    var3 = function() { // Original name: tryPauseCurrentVideo, environment: var1
+    var3 = function() {
         _fun70348: for (var _fun70348_ip = 0;;) switch (_fun70348_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.tryPauseCurrentVideo = var3;
-    var1 = function() { // Original name: unpauseCurrentVideoIfNeeded, environment: var1
+    var1 = function() {
         _fun70349: for (var _fun70349_ip = 0;;) switch (_fun70349_ip) {
             case 0:
                 var1 = _closure1_slot7;

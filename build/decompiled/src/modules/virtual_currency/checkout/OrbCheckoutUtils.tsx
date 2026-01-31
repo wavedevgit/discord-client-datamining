@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/virtual_currency/checkout/OrbCheckoutUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getOrbCheckoutDisclaimerMessage, environment: var1
+    var1 = function arg0() {
         _fun86633: for (var _fun86633_ip = 0;;) switch (_fun86633_ip) {
             case 0:
                 var4 = arg0;

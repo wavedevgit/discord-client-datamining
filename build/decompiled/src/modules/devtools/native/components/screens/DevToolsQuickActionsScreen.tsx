@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleNewUserOnboarding, environment: var1
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 18;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: handleThemeChange, environment: var1
+    var0 = function arg0() {
         _fun86258: for (var _fun86258_ip = 0;;) switch (_fun86258_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: handleReducedMotionChange, environment: var1
+    var0 = function arg0() {
         _fun86259: for (var _fun86259_ip = 0;;) switch (_fun86259_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: handleLaunchWelcomeReset, environment: var1
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 23;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.content = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot21 = var3;
-    var3 = function() { // Original name: launchMFA, environment: var1
+    var3 = function() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 26;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var3;
-    var3 = function() { // Original name: showVibingWumpus, environment: var1
+    var3 = function() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 26;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.paths;
         var3 = var6.bind(var0)(var3, var2);
         var2 = {};
-        var6 = function() { // Original name: onClose, environment: var6
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var3;
-    var3 = function() { // Original name: handleResetDoubleTapState, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 23;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var3;
-    var3 = function() { // Original name: launchTotpSetupSuccess, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var0 = 26;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsQuickActionsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsQuickActionsScreen, environment: var1
+    var1 = function() {
         _fun86271: for (var _fun86271_ip = 0;;) switch (_fun86271_ip) {
             case 0:
                 var1 = _closure1_slot21;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'Show Dev Widget';
                 var8.label = var17;
                 var8.value = var10;
-                var10 = function() { // Original name: onValueChange, environment: var13
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 38;
@@ -784,7 +784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var7.bind(var2)(var0);
                     var1 = var0.TableSwitchRow;
                     var0 = {};
-                    var5 = function(arg0) { // Original name: onValueChange, environment: var5
+                    var5 = function arg0() {
                         _fun86279: for (var _fun86279_ip = 0;;) switch (_fun86279_ip) {
                             case 0:
                                 var3 = _closure1_slot0;
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var12.bind(var3)(var23, var22);
                 var11.icon = var22;
                 var11.value = var21;
-                var21 = function() { // Original name: onValueChange, environment: var13
+                var21 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 34;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.icon = var17;
                 var17 = 'Force Native Crash';
                 var9.label = var17;
-                var17 = function() { // Original name: onPress, environment: var13
+                var17 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 54;
@@ -1179,7 +1179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.icon = var18;
                 var18 = 'Force JS Crash';
                 var11.label = var18;
-                var18 = function() { // Original name: onPress, environment: var13
+                var18 = function() {
                     var0 = global;
                     var2 = var0.Error;
                     var0 = var2.prototype;
@@ -1209,7 +1209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.icon = var18;
                 var18 = 'Force JS Boundary Crash';
                 var11.label = var18;
-                var18 = function() { // Original name: onPress, environment: var13
+                var18 = function() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var1 = true;
@@ -1231,7 +1231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.icon = var14;
                 var14 = 'Force libdiscore Crash';
                 var10.label = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 55;

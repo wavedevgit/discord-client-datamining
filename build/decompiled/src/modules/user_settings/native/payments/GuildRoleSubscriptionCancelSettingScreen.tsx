@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/payments/GuildRoleSubscriptionCancelSettingScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildRoleSubscriptionCancelSettingScreen, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 2;

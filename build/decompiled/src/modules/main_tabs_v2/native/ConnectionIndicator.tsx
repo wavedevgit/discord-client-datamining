@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ConnectionIndicator, environment: var1
+    var0 = function arg0() {
         _fun101290: for (var _fun101290_ip = 0;;) switch (_fun101290_ip) {
             case 0:
                 var0 = arg0;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4 = var2.bind(var4)(var1, var0);
                 var _closure2_slot0 = var4;
-                var0 = function() { // Original name: useHideDueToAppState, environment: var6
+                var0 = function() {
                     var4 = _closure1_slot4;
                     var3 = var4.useState;
                     var0 = function() { // Environment: var1
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure1_slot4;
                     var3 = var4.useEffect;
                     var2 = function() { // Environment: var1
-                        var2 = function() { // Original name: handleChange, environment: var0
+                        var2 = function() {
                             _fun101295: for (var _fun101295_ip = 0;;) switch (_fun101295_ip) {
                                 case 0:
                                     var2 = _closure1_slot8;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.xi7E7F;
                 var7 = var9.bind(var12)(var7);
                 var2['aria-label'] = var7;
-                var7 = function() { // Original name: onPress, environment: var6
+                var7 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 14;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.xi7E7F;
                     var4 = var5.bind(var6)(var4);
                     var1.content = var4;
-                    var4 = function() { // Original name: icon, environment: var4
+                    var4 = function() {
                         var3 = _closure1_slot11;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["s+IpiQ"];
                 var8 = var12.bind(var13)(var8);
                 var2['aria-label'] = var8;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 14;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4["s+IpiQ"];
                     var4 = var5.bind(var6)(var4);
                     var1.content = var4;
-                    var4 = function() { // Original name: icon, environment: var4
+                    var4 = function() {
                         var3 = _closure1_slot11;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;

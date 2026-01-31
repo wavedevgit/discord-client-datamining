@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/utils/triggerIOSHaptic.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: triggerIOSHaptic, environment: var1
+    var1 = function() {
         _fun110866: for (var _fun110866_ip = 0;;) switch (_fun110866_ip) {
             case 0:
                 var1 = _closure1_slot2;

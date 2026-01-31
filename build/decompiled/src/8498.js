@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5[var1];
                 var11 = var18.bind(var3)(var2);
                 var9 = var11.useAnimatedStyle;
-                var6 = function() { // Original name: pnpm_indexTsx1, environment: var0
+                var6 = function() {
                     _fun68352: for (var _fun68352_ip = 0;;) switch (_fun68352_ip) {
                         case 0:
                             var2 = _closure1_slot0;

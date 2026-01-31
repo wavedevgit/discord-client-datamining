@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun78345: for (var _fun78345_ip = 0;;) switch (_fun78345_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun78347: for (var _fun78347_ip = 0;;) switch (_fun78347_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: openRewardClaimBottomSheet, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.questId;
         var7 = var0.questContent;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.UserSettingsSections;
     var _closure1_slot8 = var3;
-    var4 = function(arg0) { // Original name: viewReward, environment: var1
+    var4 = function arg0() {
         _fun78349: for (var _fun78349_ip = 0;;) switch (_fun78349_ip) {
             case 0:
                 var0 = arg0;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/quests/native/QuestUtils.native.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: openRewardDetailsBottomSheet, environment: var1
+    var5 = function arg0() {
         var0 = arg0;
         var5 = var0.questId;
         var3 = _closure1_slot1;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             continue _fun78361
                                         }
                                     case 30:
-                                        var3 = function(arg0) { // Original name: isQuestsRoute, environment: var2
+                                        var3 = function arg0() {
                                             _fun78362: for (var _fun78362_ip = 0;;) switch (_fun78362_ip) {
                                                 case 0:
                                                     var1 = arg0;
@@ -870,7 +870,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             }
                                         };
                                         var _closure4_slot0 = var3;
-                                        var3 = function(arg0) { // Original name: searchRoutes, environment: var2
+                                        var3 = function arg0() {
                                             _fun78363: for (var _fun78363_ip = 0;;) switch (_fun78363_ip) {
                                                 case 0:
                                                     var1 = _closure1_slot11;

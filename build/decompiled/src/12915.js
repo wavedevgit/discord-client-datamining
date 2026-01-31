@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createCheckInEnvelope, environment: var0
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun99476: for (var _fun99476_ip = 0;;) switch (_fun99476_ip) {
             case 0:
                 var2 = arg1;

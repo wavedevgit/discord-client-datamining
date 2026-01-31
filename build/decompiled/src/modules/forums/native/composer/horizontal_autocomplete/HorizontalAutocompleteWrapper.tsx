@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/composer/horizontal_autocomplete/HorizontalAutocompleteWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HorizontalAutocompleteWrapper, environment: var1
+    var1 = function arg0() {
         _fun74471: for (var _fun74471_ip = 0;;) switch (_fun74471_ip) {
             case 0:
                 var0 = arg0;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var1;
                             var9 = var5;
                             var7 = copyDataProperties(var10, var9);
-                            var8 = function(arg0) { // Original name: onPress, environment: var4
+                            var8 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure3_slot0;
                                 var1 = undefined;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var1;
                             var9 = var5;
                             var7 = copyDataProperties(var10, var9);
-                            var8 = function(arg0) { // Original name: onPress, environment: var4
+                            var8 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure3_slot0;
                                 var1 = undefined;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var7.guild_id;
                             var7 = 'guildId';
                             var1[var7] = var8;
-                            var8 = function(arg0) { // Original name: onPress, environment: var4
+                            var8 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure3_slot0;
                                 var1 = undefined;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var5.guild_id;
                             var5 = 'guildId';
                             var0[var5] = var6;
-                            var5 = function(arg0) { // Original name: onPress, environment: var4
+                            var5 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure3_slot0;
                                 var1 = undefined;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5[var0];
                 var9 = var14.bind(var3)(var1);
                 var2 = var9.useAnimatedStyle;
-                var1 = function() { // Original name: _, environment: var8
+                var1 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'keyboardShouldPersistTaps': 'always',
                     'horizontal': true
                 };
-                var8 = function(arg0, arg1) { // Original name: keyExtractor, environment: var8
+                var8 = function arg0, arg1() {
                     var0 = global;
                     var2 = var0.String;
                     var1 = undefined;

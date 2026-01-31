@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/GameConsoleConnecting.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GameConsoleConnecting, environment: var1
+    var1 = function arg0() {
         _fun69345: for (var _fun69345_ip = 0;;) switch (_fun69345_ip) {
             case 0:
                 var0 = arg0;

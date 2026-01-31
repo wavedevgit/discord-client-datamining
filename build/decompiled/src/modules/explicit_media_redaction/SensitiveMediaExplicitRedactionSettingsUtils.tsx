@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.BLOCK;
     var6[var4] = var3;
     var _closure1_slot6 = var6;
-    var5 = function(arg0) { // Original name: resolveExplicitContentSettingWithDefaults, environment: var1
+    var5 = function arg0() {
         _fun39280: for (var _fun39280_ip = 0;;) switch (_fun39280_ip) {
             case 0:
                 var1 = arg0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var5;
-    var3 = function(arg0) { // Original name: resolveSettingWithDefaultsForAdult, environment: var1
+    var3 = function arg0() {
         _fun39281: for (var _fun39281_ip = 0;;) switch (_fun39281_ip) {
             case 0:
                 var0 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var4 = function(arg0) { // Original name: resolveSettingWithDefaultsForTeen, environment: var1
+    var4 = function arg0() {
         _fun39282: for (var _fun39282_ip = 0;;) switch (_fun39282_ip) {
             case 0:
                 var0 = arg0;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: resultDefaultSettingsForSensitiveContentDefaultsMixed, environment: var1
+    var3 = function arg0() {
         _fun39283: for (var _fun39283_ip = 0;;) switch (_fun39283_ip) {
             case 0:
                 var0 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: getExplicitContentSettingOrDefault, environment: var1
+    var3 = function arg0() {
         _fun39284: for (var _fun39284_ip = 0;;) switch (_fun39284_ip) {
             case 0:
                 var5 = arg0;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateExplicitContentSetting = var3;
-    var1 = function() { // Original name: shouldRedactMessageMediaForForum, environment: var1
+    var1 = function() {
         _fun39286: for (var _fun39286_ip = 0;;) switch (_fun39286_ip) {
             case 0:
                 var2 = _closure1_slot2;

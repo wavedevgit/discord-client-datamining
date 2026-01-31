@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ForumDisplaySettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumDisplaySettingsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun91349: for (var _fun91349_ip = 0;;) switch (_fun91349_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = false;
                 var10.hasIcons = var17;
                 var10.defaultValue = var20;
-                var20 = function(arg0) { // Original name: onChange, environment: var15
+                var20 = function arg0() {
                     var2 = _closure2_slot6;
                     var0 = undefined;
                     var1 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.groupRef = var24;
                 var19.hasIcons = var17;
                 var19.defaultValue = var23;
-                var23 = function(arg0) { // Original name: onChange, environment: var15
+                var23 = function arg0() {
                     var2 = _closure2_slot8;
                     var0 = undefined;
                     var1 = arg0;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.groupRef = var18;
                 var12.hasIcons = var17;
                 var12.defaultValue = var16;
-                var16 = function(arg0) { // Original name: onChange, environment: var15
+                var16 = function arg0() {
                     var2 = _closure2_slot10;
                     var0 = undefined;
                     var1 = arg0;

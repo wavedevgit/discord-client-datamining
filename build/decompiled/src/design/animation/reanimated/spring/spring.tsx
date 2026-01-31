@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: withSpring, environment: var0
+        var0 = function arg0, arg1() {
             _fun37377: for (var _fun37377_ip = 0;;) switch (_fun37377_ip) {
                 case 0:
                     var5 = arg1;

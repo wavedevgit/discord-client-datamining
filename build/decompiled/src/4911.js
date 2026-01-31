@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useContext;
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: useBottomSheetModalInternal, environment: var1
+    var1 = function arg0() {
         _fun44602: for (var _fun44602_ip = 0;;) switch (_fun44602_ip) {
             case 0:
                 var2 = _closure1_slot2;

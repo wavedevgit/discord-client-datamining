@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun94906: for (var _fun94906_ip = 0;;) switch (_fun94906_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun94908: for (var _fun94908_ip = 0;;) switch (_fun94908_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: populateCountdownFlagToActivities, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var7 = function(arg0, arg1) { // Original name: defineSimpleDispatch, environment: var1
+    var7 = function arg0, arg1() {
         _fun94911: for (var _fun94911_ip = 0;;) switch (_fun94911_ip) {
             case 0:
                 var5 = arg1;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.value;
                 var7 = _closure1_slot22;
                 var1 = {};
-                var9 = function() { // Original name: preload, environment: var6
+                var9 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9 = function(arg0, arg1, arg2) { // Original name: definePreloadableDispatch, environment: var1
+    var9 = function arg0, arg1, arg2() {
         _fun94913: for (var _fun94913_ip = 0;;) switch (_fun94913_ip) {
             case 0:
                 var6 = arg1;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: dispatchVoiceStateUpdates, environment: var1
+    var0 = function arg0() {
         _fun94914: for (var _fun94914_ip = 0;;) switch (_fun94914_ip) {
             case 0:
                 var3 = new Array(0);
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: dispatchOrResetSocket, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot1;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: dispatchGuildMemberAdd, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun94917: for (var _fun94917_ip = 0;;) switch (_fun94917_ip) {
             case 0:
                 var16 = arg0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: dispatchMessageMembers, environment: var1
+    var0 = function arg0() {
         _fun94918: for (var _fun94918_ip = 0;;) switch (_fun94918_ip) {
             case 0:
                 var1 = arg0;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: convertSessions, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -890,7 +890,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: dispatchPresence, environment: var1
+    var0 = function arg0() {
         _fun94922: for (var _fun94922_ip = 0;;) switch (_fun94922_ip) {
             case 0:
                 var0 = arg0;
@@ -1492,7 +1492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var5 = var5.bind(var6)(var3);
                         _closure2_slot0 = var5;
-                        var8 = function(arg0) { // Original name: transformPresences, environment: var2
+                        var8 = function arg0() {
                             var2 = arg0;
                             var1 = var2.map;
                             var0 = function(arg0) { // Environment: var0
@@ -4844,7 +4844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.Emitter;
         var2 = var3.batched;
         var1 = function() { // Environment: var1
-            var1 = function(arg0) { // Original name: handleItem, environment: var0
+            var1 = function arg0() {
                 _fun95085: for (var _fun95085_ip = 0;;) switch (_fun95085_ip) {
                     case 0:
                         var0 = arg0;
@@ -6547,7 +6547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gateway/dispatchSocketMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getDispatchHandler, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot22;
         var0 = arg0;
         var0 = var1[var0];

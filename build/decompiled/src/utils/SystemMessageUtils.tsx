@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var6 = function(arg0) { // Original name: getSystemMessageUserJoinMobile, environment: var3
+    var6 = function arg0() {
         var5 = _closure1_slot0;
         var4 = _closure1_slot2;
         var2 = 7;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var6;
-    var0 = function(arg0) { // Original name: getSystemMessageUserPremiumGuildSubscription, environment: var3
+    var0 = function arg0() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 9;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: getSystemMessageUserPremiumGuildSubscriptionAchievedTier, environment: var3
+    var0 = function arg0, arg1() {
         _fun55407: for (var _fun55407_ip = 0;;) switch (_fun55407_ip) {
             case 0:
                 var3 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot12 = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: stringify, environment: var3
+    var7 = function arg0, arg1() {
         _fun55408: for (var _fun55408_ip = 0;;) switch (_fun55408_ip) {
             case 0:
                 var1 = arg0;
@@ -1374,7 +1374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.stringify = var7;
-    var7 = function(arg0) { // Original name: getSystemMessageUserJoin, environment: var3
+    var7 = function arg0() {
         var5 = _closure1_slot0;
         var4 = _closure1_slot2;
         var2 = 7;
@@ -1459,7 +1459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getSystemMessageUserJoin = var7;
     var1.getSystemMessageUserJoinMobile = var6;
-    var3 = function(arg0) { // Original name: getSystemMessageBotJoin, environment: var3
+    var3 = function arg0() {
         _fun55413: for (var _fun55413_ip = 0;;) switch (_fun55413_ip) {
             case 0:
                 var2 = arg0;
@@ -1487,7 +1487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.xw1Ij0;
                 var1 = {};
                 var5 = {};
-                var6 = function() { // Original name: onClick, environment: var6
+                var6 = function() {
                     var0 = global;
                     var2 = var0.window;
                     var1 = var2.open;

@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = [6, 30, 58, 86, 114, 142, 170];
     var2[39] = var3;
     var1.PATTERN_POSITION_TABLE = var2;
-    var2 = function(arg0) { // Original name: getBCHTypeInfo, environment: var0
+    var2 = function arg0() {
         _fun67480: for (var _fun67480_ip = 0;;) switch (_fun67480_ip) {
             case 0:
                 var3 = arg0;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getBCHTypeInfo = var2;
-    var2 = function(arg0) { // Original name: getBCHTypeNumber, environment: var0
+    var2 = function arg0() {
         _fun67481: for (var _fun67481_ip = 0;;) switch (_fun67481_ip) {
             case 0:
                 var2 = arg0;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getBCHTypeNumber = var2;
-    var2 = function(arg0) { // Original name: getBCHDigit, environment: var0
+    var2 = function arg0() {
         _fun67482: for (var _fun67482_ip = 0;;) switch (_fun67482_ip) {
             case 0:
                 var4 = arg0;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getBCHDigit = var2;
-    var2 = function(arg0) { // Original name: getPatternPosition, environment: var0
+    var2 = function arg0() {
         var0 = _closure1_slot2;
         var1 = var0.PATTERN_POSITION_TABLE;
         var2 = arg0;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getPatternPosition = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: getMask, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun67484: for (var _fun67484_ip = 0;;) switch (_fun67484_ip) {
             case 0:
                 var6 = arg0;
@@ -379,7 +379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getMask = var2;
-    var2 = function(arg0) { // Original name: getErrorCorrectPolynomial, environment: var0
+    var2 = function arg0() {
         _fun67485: for (var _fun67485_ip = 0;;) switch (_fun67485_ip) {
             case 0:
                 var7 = arg0;
@@ -443,7 +443,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getErrorCorrectPolynomial = var2;
-    var2 = function(arg0, arg1) { // Original name: getLengthInBits, environment: var0
+    var2 = function arg0, arg1() {
         _fun67486: for (var _fun67486_ip = 0;;) switch (_fun67486_ip) {
             case 0:
                 var2 = arg0;
@@ -692,7 +692,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getLengthInBits = var2;
-    var2 = function(arg0) { // Original name: getLostPoint, environment: var0
+    var2 = function arg0() {
         _fun67487: for (var _fun67487_ip = 0;;) switch (_fun67487_ip) {
             case 0:
                 var7 = arg0;

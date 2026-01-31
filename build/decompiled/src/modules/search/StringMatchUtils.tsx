@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = function(arg0, arg1) { // Original name: calculateJaroWinklerDistance, environment: var1
+    var0 = function arg0, arg1() {
         _fun88610: for (var _fun88610_ip = 0;;) switch (_fun88610_ip) {
             case 0:
                 var5 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot0 = var0;
-    var0 = function(arg0, arg1) { // Original name: _matching, environment: var1
+    var0 = function arg0, arg1() {
         _fun88611: for (var _fun88611_ip = 0;;) switch (_fun88611_ip) {
             case 0:
                 var10 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: _transpositions, environment: var1
+    var0 = function arg0, arg1() {
         _fun88612: for (var _fun88612_ip = 0;;) switch (_fun88612_ip) {
             case 0:
                 var10 = arg0;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1) { // Original name: _prefix, environment: var1
+    var0 = function arg0, arg1() {
         _fun88613: for (var _fun88613_ip = 0;;) switch (_fun88613_ip) {
             case 0:
                 var5 = arg0;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/StringMatchUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: calculateJaroWinklerSimilarity, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun88614: for (var _fun88614_ip = 0;;) switch (_fun88614_ip) {
             case 0:
                 var4 = arg0;

@@ -27,14 +27,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Navigator/native/useAccessibilityNativeStackFocusTracking.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useAccessibilityNativeStackFocusTracking, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
             var0 = false;
             var _closure3_slot0 = var0;
             var0 = {};
-            var2 = function(arg0) { // Original name: transitionStart, environment: var1
+            var2 = function arg0() {
                 _fun92878: for (var _fun92878_ip = 0;;) switch (_fun92878_ip) {
                     case 0:
                         var0 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.transitionStart = var2;
-            var1 = function() { // Original name: beforeRemove, environment: var1
+            var1 = function() {
                 var0 = true;
                 _closure3_slot0 = var0;
                 var0 = undefined;

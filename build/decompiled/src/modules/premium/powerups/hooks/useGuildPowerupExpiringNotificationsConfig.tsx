@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGuildPowerupExpiringNotificationsConfig, environment: var1
+    var1 = function arg0() {
         _fun102343: for (var _fun102343_ip = 0;;) switch (_fun102343_ip) {
             case 0:
                 var2 = arg0;

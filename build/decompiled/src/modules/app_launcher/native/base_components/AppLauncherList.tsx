@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_launcher/native/base_components/AppLauncherList.tsx';
     var4 = var5.bind(var6)(var4);
     var2.AppLauncherList = var3;
-    var3 = function() { // Original name: AppLauncherListEmptyState, environment: var1
+    var3 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.AppLauncherListEmptyState = var3;
-    var1 = function(arg0) { // Original name: AppLauncherListSearchBar, environment: var1
+    var1 = function arg0() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var5 = var0.bind(var3)();

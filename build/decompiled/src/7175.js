@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: _optionalChainDelete, environment: var0
+    var0 = function arg0() {
         _fun58890: for (var _fun58890_ip = 0;;) switch (_fun58890_ip) {
             case 0:
                 var2 = _closure1_slot0;

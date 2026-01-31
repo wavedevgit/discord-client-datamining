@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/ErrorCommonUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getUpdatedOptions, environment: var1
+    var1 = function arg0() {
         _fun96777: for (var _fun96777_ip = 0;;) switch (_fun96777_ip) {
             case 0:
                 var3 = arg0;

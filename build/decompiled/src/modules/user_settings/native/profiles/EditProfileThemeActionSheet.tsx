@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/profiles/EditProfileThemeActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditProfileThemeActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.onResetTheme;
         var _closure2_slot0 = var0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9.text = var11;
         var9 = var7.bind(var3)(var10, var9);
         var5.subLabel = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();

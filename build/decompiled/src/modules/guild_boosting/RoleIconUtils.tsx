@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.isAndroid;
     var3 = var3.bind(var6)();
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1) { // Original name: getRoleIconSource, environment: var1
+    var3 = function arg0, arg1() {
         _fun55737: for (var _fun55737_ip = 0;;) switch (_fun55737_ip) {
             case 0:
                 var0 = arg0;

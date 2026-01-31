@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: renderCustom, environment: var3
+    var0 = function arg0() {
         _fun44385: for (var _fun44385_ip = 0;;) switch (_fun44385_ip) {
             case 0:
                 var5 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var4.bind(var0)(var6);
     var8 = var10.createStyles;
     var6 = function() { // Environment: var3
-        var4 = function() { // Original name: getPadding, environment: var0
+        var4 = function() {
             _fun44387: for (var _fun44387_ip = 0;;) switch (_fun44387_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 227:
                 var23 = var0.variant;
                 var _closure2_slot8 = var3;
-                var26 = function() { // Original name: renderInnerView, environment: var1
+                var26 = function() {
                     _fun44389: for (var _fun44389_ip = 0;;) switch (_fun44389_ip) {
                         case 0:
                             var0 = _closure2_slot0;

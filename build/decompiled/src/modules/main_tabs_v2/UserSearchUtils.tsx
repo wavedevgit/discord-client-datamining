@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: cleanString, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/UserSearchUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.cleanString = var3;
-    var3 = function(arg0) { // Original name: getRelationshipType, environment: var1
+    var3 = function arg0() {
         _fun72466: for (var _fun72466_ip = 0;;) switch (_fun72466_ip) {
             case 0:
                 var5 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRelationshipType = var3;
-    var1 = function(arg0) { // Original name: getNames, environment: var1
+    var1 = function arg0() {
         _fun72467: for (var _fun72467_ip = 0;;) switch (_fun72467_ip) {
             case 0:
                 var3 = arg0;

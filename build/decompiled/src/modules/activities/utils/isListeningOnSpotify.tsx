@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/isListeningOnSpotify.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isListeningOnSpotify, environment: var1
+    var1 = function arg0() {
         _fun50442: for (var _fun50442_ip = 0;;) switch (_fun50442_ip) {
             case 0:
                 var1 = arg0;

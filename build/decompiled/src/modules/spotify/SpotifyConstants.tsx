@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4.USER_ACTIVITY_SYNC = var3;
             var3 = 'embed_sync';
             var4.EMBED_SYNC = var3;
-            var13 = function(arg0) { // Original name: spotifyUtmParams, environment: var1
+            var13 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = '/me/player/repeat';
             var12 = var14.bind(var16)(var15, var12);
             var3.PLAYER_REPEAT = var12;
-            var12 = function(arg0, arg1) { // Original name: WEB_OPEN, environment: var1
+            var12 = function arg0, arg1() {
                 _fun50061: for (var _fun50061_ip = 0;;) switch (_fun50061_ip) {
                     case 0:
                         var3 = arguments[2];
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var3.WEB_OPEN = var12;
-            var12 = function(arg0) { // Original name: EMBED, environment: var1
+            var12 = function arg0() {
                 _fun50062: for (var _fun50062_ip = 0;;) switch (_fun50062_ip) {
                     case 0:
                         var2 = arguments[1];
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var3.EMBED = var12;
-            var12 = function(arg0, arg1) { // Original name: PLAYER_OPEN, environment: var1
+            var12 = function arg0, arg1() {
                 _fun50063: for (var _fun50063_ip = 0;;) switch (_fun50063_ip) {
                     case 0:
                         var1 = arguments[2];
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = 'https://www.spotify.com/premium/';
             var11 = var12.bind(var11)(var13);
             var3.PREMIUM_SITE = var11;
-            var11 = function(arg0) { // Original name: INSTALL_ATTRIBUTION, environment: var1
+            var11 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = 'spotify:';
             var2.SPOTIFY_PARTY_PREFIX = var7;
             var2.SPOTIFY_PLATFORM_NAME = var6;
-            var6 = function(arg0) { // Original name: isSpotifyParty, environment: var1
+            var6 = function arg0() {
                 _fun50065: for (var _fun50065_ip = 0;;) switch (_fun50065_ip) {
                     case 0:
                         var3 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = ['open.spotify.com', 'www.spotify.com'];
             var2.SPOTIFY_HOSTNAMES = var4;
             var2.SpotifyEndpoints = var3;
-            var1 = function(arg0) { // Original name: getSpotifyResourceType, environment: var1
+            var1 = function arg0() {
                 _fun50066: for (var _fun50066_ip = 0;;) switch (_fun50066_ip) {
                     case 0:
                         var1 = arg0;

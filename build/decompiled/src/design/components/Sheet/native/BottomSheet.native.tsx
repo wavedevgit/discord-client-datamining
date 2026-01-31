@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Background, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot17;
         var2 = _closure1_slot6;
         var1 = {};
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: GradientBackground, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot20;
         var3 = undefined;
         var0 = false;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var7[var39];
                 var17 = var40.bind(var4)(var13);
                 var14 = var17.useDerivedValue;
-                var13 = function() { // Original name: ue, environment: var0
+                var13 = function() {
                     var1 = _closure2_slot13;
                     var0 = var1.get;
                     var1 = var0.bind(var1)();
@@ -1172,7 +1172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var7[var39];
                 var25 = var40.bind(var4)(var13);
                 var17 = var25.useAnimatedReaction;
-                var14 = function() { // Original name: he, environment: var0
+                var14 = function() {
                     var1 = _closure2_slot14;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.__workletHash = var13;
                 var13 = _closure1_slot24;
                 var14.__initData = var13;
-                var13 = function(arg0) { // Original name: ce, environment: var0
+                var13 = function arg0() {
                     _fun44530: for (var _fun44530_ip = 0;;) switch (_fun44530_ip) {
                         case 0:
                             var0 = arg0;
@@ -1243,7 +1243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     var1 = var0.ActionSheetHeaderBar;
                     var0 = {};
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         _fun44532: for (var _fun44532_ip = 0;;) switch (_fun44532_ip) {
                             case 0:
                                 var0 = _closure2_slot9;
@@ -1359,7 +1359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.ignoreKeyboard = var28;
                 var30 = var6.bind(var4)(var5);
-                var0 = function(arg0) { // Original name: useConstrainedContainerStyle, environment: var0
+                var0 = function arg0() {
                     var1 = arg0;
                     var4 = var1.width;
                     var _closure3_slot0 = var4;

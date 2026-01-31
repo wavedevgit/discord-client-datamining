@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.RPCErrors;
     var _closure1_slot2 = var1;
     var3 = {};
-    var1 = function(arg0) { // Original name: handler, environment: var4
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.handler = var1;
     var1 = {};
-    var4 = function(arg0) { // Original name: handler, environment: var4
+    var4 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;

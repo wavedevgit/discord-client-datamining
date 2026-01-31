@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var4 = function(arg0) { // Original name: getDefaultRules, environment: var1
+    var4 = function arg0() {
         var0 = {};
         var3 = _closure1_slot13;
         var2 = undefined;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var3;
     var3 = /^\$(\w+?)\$/;
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: parseWithClassNameExtraction, environment: var1
+    var3 = function arg0() {
         _fun55881: for (var _fun55881_ip = 0;;) switch (_fun55881_ip) {
             case 0:
                 var1 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: defaultRules, environment: var1
+    var3 = function arg0() {
         _fun55883: for (var _fun55883_ip = 0;;) switch (_fun55883_ip) {
             case 0:
                 var5 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.bind(var6)(var9);
                 var9 = var9.order;
                 var8.order = var9;
-                var9 = function(arg0) { // Original name: match, environment: var2
+                var9 = function arg0() {
                     var2 = _closure1_slot11;
                     var1 = var2.exec;
                     var0 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var8.match = var9;
-                var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var2
+                var9 = function arg0, arg1, arg2() {
                     _fun55885: for (var _fun55885_ip = 0;;) switch (_fun55885_ip) {
                         case 0:
                             var3 = arg0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var8.parse = var9;
-                var2 = function(arg0) { // Original name: react, environment: var2
+                var2 = function arg0() {
                     var1 = arg0;
                     var0 = var1.renderer;
                     var0 = var0.bind(var1)();
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: specialRules, environment: var1
+    var3 = function arg0() {
         _fun55887: for (var _fun55887_ip = 0;;) switch (_fun55887_ip) {
             case 0:
                 var0 = {};
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: messageRules, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var4 = _closure1_slot13;
         var3 = undefined;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var3;
     var3 = {};
     var3.getDefaultRules = var4;
-    var4 = function(arg0) { // Original name: getSpecialRules, environment: var1
+    var4 = function arg0() {
         var3 = arg0;
         var0 = {};
         var4 = _closure1_slot13;
@@ -604,7 +604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getSpecialRules = var4;
-    var4 = function(arg0) { // Original name: getMessageRules, environment: var1
+    var4 = function arg0() {
         var0 = {};
         var3 = _closure1_slot15;
         var2 = undefined;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/ChangeLogUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: renderChangelogMessageMarkup, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun55891: for (var _fun55891_ip = 0;;) switch (_fun55891_ip) {
             case 0:
                 var7 = arg2;

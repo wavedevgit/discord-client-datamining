@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var9 = function(arg0) { // Original name: getSystemLocale, environment: var4
+    var9 = function arg0() {
         _fun13546: for (var _fun13546_ip = 0;;) switch (_fun13546_ip) {
             case 0:
                 var0 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var7.bind(var0)(var12);
     var13 = var14.makeReactFormatter;
     var12 = {};
-    var15 = function(arg0, arg1) { // Original name: $i, environment: var4
+    var15 = function arg0, arg1() {
         var4 = _closure1_slot4;
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var12.$i = var15;
-    var15 = function(arg0, arg1) { // Original name: $b, environment: var4
+    var15 = function arg0, arg1() {
         var4 = _closure1_slot4;
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var12.$b = var15;
-    var15 = function(arg0, arg1) { // Original name: $del, environment: var4
+    var15 = function arg0, arg1() {
         var4 = _closure1_slot4;
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var12.$del = var15;
-    var15 = function(arg0, arg1) { // Original name: $p, environment: var4
+    var15 = function arg0, arg1() {
         var4 = _closure1_slot4;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var12.$p = var15;
-    var15 = function(arg0, arg1) { // Original name: $code, environment: var4
+    var15 = function arg0, arg1() {
         var4 = _closure1_slot4;
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var12.$code = var15;
-    var15 = function(arg0, arg1, arg2) { // Original name: $link, environment: var4
+    var15 = function arg0, arg1, arg2() {
         _fun13552: for (var _fun13552_ip = 0;;) switch (_fun13552_ip) {
             case 0:
                 var0 = arg2;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var20 = var16;
     var19 = var12;
     var12 = copyDataProperties(var20, var19);
-    var12 = function(arg0) { // Original name: format, environment: var4
+    var12 = function arg0() {
         _fun13553: for (var _fun13553_ip = 0;;) switch (_fun13553_ip) {
             case 0:
                 var4 = 0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var12.stringFormatter;
     var20 = var15;
     var12 = copyDataProperties(var20, var19);
-    var12 = function(arg0) { // Original name: format, environment: var4
+    var12 = function arg0() {
         _fun13554: for (var _fun13554_ip = 0;;) switch (_fun13554_ip) {
             case 0:
                 var7 = 0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var12.markdownFormatter;
     var20 = var14;
     var12 = copyDataProperties(var20, var19);
-    var12 = function(arg0) { // Original name: format, environment: var4
+    var12 = function arg0() {
         _fun13555: for (var _fun13555_ip = 0;;) switch (_fun13555_ip) {
             case 0:
                 var7 = 0;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var12.astFormatter;
     var20 = var13;
     var12 = copyDataProperties(var20, var19);
-    var12 = function(arg0) { // Original name: format, environment: var4
+    var12 = function arg0() {
         _fun13556: for (var _fun13556_ip = 0;;) switch (_fun13556_ip) {
             case 0:
                 var5 = 0;

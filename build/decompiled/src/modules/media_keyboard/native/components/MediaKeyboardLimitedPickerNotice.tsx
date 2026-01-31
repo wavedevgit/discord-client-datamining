@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: handleLimitedPickerPress, environment: var1
+    var0 = function() {
         _fun75601: for (var _fun75601_ip = 0;;) switch (_fun75601_ip) {
             case 0:
                 var0 = _closure1_slot3;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_keyboard/native/components/MediaKeyboardLimitedPickerNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaKeyboardLimitedPickerNotice, environment: var1
+    var1 = function arg0() {
         _fun75602: for (var _fun75602_ip = 0;;) switch (_fun75602_ip) {
             case 0:
                 var1 = arg0;

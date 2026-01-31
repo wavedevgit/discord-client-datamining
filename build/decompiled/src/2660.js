@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var2;
         case 86:
             var2 = {};
-            var4 = function(arg0, arg1) { // Original name: ordinalNumber, environment: var7
+            var4 = function arg0, arg1() {
                 _fun22112: for (var _fun22112_ip = 0;;) switch (_fun22112_ip) {
                     case 0:
                         var0 = global;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8.wide = var9;
             var4.values = var8;
             var4.defaultWidth = var5;
-            var7 = function(arg0) { // Original name: argumentCallback, environment: var7
+            var7 = function arg0() {
                 var1 = arg0;
                 var0 = 1;
                 var0 = var1 - var0;

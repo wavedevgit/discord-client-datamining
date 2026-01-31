@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var4;
                 var _closure2_slot4 = var4;
                 var _closure2_slot5 = var4;
-                var17 = function() { // Original name: handleSubmit, environment: var1
+                var17 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot6;
                     var2 = var3.apply;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var0, var1);
                     return var0;
                 };
-                var0 = function() { // Original name: _handleSubmit, environment: var1
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/account/UserSettingsConfirmPassword.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: UserSettingsConfirmPasswordWrapped, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 9;

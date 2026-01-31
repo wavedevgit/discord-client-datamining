@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: getPurchaseToken, environment: var1
+    var3 = function() {
         _fun29418: for (var _fun29418_ip = 0;;) switch (_fun29418_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function() { // Original name: _getPurchaseTokenHash, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/PurchaseTokenUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getPurchaseToken = var3;
-    var1 = function() { // Original name: getPurchaseTokenHash, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;

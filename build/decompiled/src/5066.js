@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: _defineProperties, environment: var1
+    var2 = function arg0, arg1() {
         _fun45504: for (var _fun45504_ip = 0;;) switch (_fun45504_ip) {
             case 0:
                 var10 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var1 = function(arg0, arg1, arg2) { // Original name: _createClass, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun45505: for (var _fun45505_ip = 0;;) switch (_fun45505_ip) {
             case 0:
                 var0 = arg0;

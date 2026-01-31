@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var5 = function(arg0) { // Original name: measureView, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot0 = var5;
-    var4 = function(arg0) { // Original name: measureViewInWindow, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1) { // Original name: measureViewInView, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/view_measure/ViewMeasureUtils.native.tsx';
     var6 = var7.bind(var8)(var6);
     var2.measureView = var5;
-    var5 = function(arg0) { // Original name: measureViewRef, environment: var1
+    var5 = function arg0() {
         _fun75655: for (var _fun75655_ip = 0;;) switch (_fun75655_ip) {
             case 0:
                 var0 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.measureViewRef = var5;
     var2.measureViewInWindow = var4;
-    var4 = function(arg0) { // Original name: measureViewRefInWindow, environment: var1
+    var4 = function arg0() {
         _fun75656: for (var _fun75656_ip = 0;;) switch (_fun75656_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.measureViewRefInWindow = var4;
     var2.measureViewInView = var3;
-    var1 = function(arg0, arg1) { // Original name: measureViewRefInView, environment: var1
+    var1 = function arg0, arg1() {
         _fun75657: for (var _fun75657_ip = 0;;) switch (_fun75657_ip) {
             case 0:
                 var0 = arg0;

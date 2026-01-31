@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_assurance/native/AgeVerificationRetryScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GetStartedScreen, environment: var1
+    var1 = function arg0() {
         _fun52893: for (var _fun52893_ip = 0;;) switch (_fun52893_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4["ty+iWP"];
                             var4 = var5.bind(var6)(var4);
                             var1.description = var4;
-                            var3 = function() { // Original name: onPress, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot1;
                                 var7 = _closure1_slot2;
                                 var0 = 14;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.t;
                 var13 = var12["L+FgkZ"];
                 var12 = {};
-                var16 = function() { // Original name: handleOnHelpUrlHook, environment: var16
+                var16 = function() {
                     var5 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 14;

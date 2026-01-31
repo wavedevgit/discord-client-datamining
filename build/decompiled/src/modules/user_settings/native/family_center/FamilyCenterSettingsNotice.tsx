@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/family_center/FamilyCenterSettingsNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterSettingsParentalControlsNotice, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var9 = _closure1_slot2;
         var0 = 3;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot3;
         var6 = var6.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE;
         var0.noticeType = var6;
-        var5 = function() { // Original name: labelHook, environment: var5
+        var5 = function() {
             var4 = _closure1_slot0;
             var3 = _closure1_slot2;
             var0 = 6;

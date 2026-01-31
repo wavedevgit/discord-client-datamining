@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/shared_components/SearchButton.tsx';
     var4 = var5.bind(var6)(var4);
     var2.SEARCH_BAR_HEIGHT = var3;
-    var1 = function(arg0) { // Original name: SearchButtonContent, environment: var1
+    var1 = function arg0() {
         _fun89831: for (var _fun89831_ip = 0;;) switch (_fun89831_ip) {
             case 0:
                 var2 = arg0;

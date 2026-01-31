@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ForumPostTagsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumPostTagsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun75669: for (var _fun75669_ip = 0;;) switch (_fun75669_ip) {
             case 0:
                 var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var14.bind(var3)(var0);
                 var0 = var1.useVisibleForumTags;
                 var12 = var0.bind(var1)(var2);
-                var0 = function(arg0) { // Original name: toggleTag, environment: var10
+                var0 = function arg0() {
                     _fun75670: for (var _fun75670_ip = 0;;) switch (_fun75670_ip) {
                         case 0:
                             var3 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var14.bind(var3)(var0);
                 var1 = var0.ActionSheet;
                 var0 = {};
-                var5 = function() { // Original name: onDismiss, environment: var10
+                var5 = function() {
                     _fun75671: for (var _fun75671_ip = 0;;) switch (_fun75671_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11["R3BPH+"];
                 var11 = var12.bind(var13)(var11);
                 var8.text = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     _fun75673: for (var _fun75673_ip = 0;;) switch (_fun75673_ip) {
                         case 0:
                             var0 = global;

@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/shared/VoicePanelStreamPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: VoicePanelStreamPreview, environment: var1
+    var1 = function arg0() {
         _fun91667: for (var _fun91667_ip = 0;;) switch (_fun91667_ip) {
             case 0:
                 var1 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var14[var4];
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: p, environment: var0
+                var0 = function() {
                     _fun91668: for (var _fun91668_ip = 0;;) switch (_fun91668_ip) {
                         case 0:
                             var1 = _closure2_slot0;

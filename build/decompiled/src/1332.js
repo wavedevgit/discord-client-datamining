@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.ReflectionJsonWriter = var0;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: ReflectionJsonWriter, environment: var4
+        var2 = function arg0() {
             _fun14951: for (var _fun14951_ip = 0;;) switch (_fun14951_ip) {
                 case 0:
                     var2 = this;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'write';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: write, environment: var4
+        var1 = function arg0, arg1() {
             _fun14952: for (var _fun14952_ip = 0;;) switch (_fun14952_ip) {
                 case 0:
                     var16 = this;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'field';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: field, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun14953: for (var _fun14953_ip = 0;;) switch (_fun14953_ip) {
                 case 0:
                     var0 = arg0;
@@ -747,7 +747,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'enum';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: _enum, environment: var4
+        var5 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun14954: for (var _fun14954_ip = 0;;) switch (_fun14954_ip) {
                 case 0:
                     var5 = arg0;
@@ -860,7 +860,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'message';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: message, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun14955: for (var _fun14955_ip = 0;;) switch (_fun14955_ip) {
                 case 0:
                     var4 = arg0;
@@ -896,7 +896,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scalar';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: scalar, environment: var4
+        var4 = function arg0, arg1, arg2, arg3, arg4() {
             _fun14956: for (var _fun14956_ip = 0;;) switch (_fun14956_ip) {
                 case 0:
                     var5 = arg0;

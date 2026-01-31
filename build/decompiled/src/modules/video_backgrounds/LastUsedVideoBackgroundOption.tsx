@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: getOptionFromSettingsFiltered, environment: var1
+    var0 = function arg0, arg1() {
         _fun66403: for (var _fun66403_ip = 0;;) switch (_fun66403_ip) {
             case 0:
                 var6 = arg1;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getLastUsedVideoBackgroundOption, environment: var1
+    var3 = function arg0() {
         _fun66404: for (var _fun66404_ip = 0;;) switch (_fun66404_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getLastUsedVideoBackgroundOption = var3;
-    var1 = function() { // Original name: useLastUsedVideoBackgroundOption, environment: var1
+    var1 = function() {
         _fun66405: for (var _fun66405_ip = 0;;) switch (_fun66405_ip) {
             case 0:
                 var4 = _closure1_slot0;

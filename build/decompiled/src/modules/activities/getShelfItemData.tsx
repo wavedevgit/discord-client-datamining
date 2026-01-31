@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/getShelfItemData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getShelfItemData, environment: var1
+    var1 = function arg0() {
         _fun63903: for (var _fun63903_ip = 0;;) switch (_fun63903_ip) {
             case 0:
                 var1 = arg0;

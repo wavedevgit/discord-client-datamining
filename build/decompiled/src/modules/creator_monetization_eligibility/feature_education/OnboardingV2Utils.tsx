@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useCanSeeCreatorMonetizationOnboardingV2Upsell, environment: var1
+    var3 = function arg0() {
         _fun102764: for (var _fun102764_ip = 0;;) switch (_fun102764_ip) {
             case 0:
                 var0 = arg0;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanSeeCreatorMonetizationOnboardingV2Upsell = var3;
-    var1 = function(arg0) { // Original name: canSeeCreatorMonetizationOnboardingV2Upsell, environment: var1
+    var1 = function arg0() {
         _fun102768: for (var _fun102768_ip = 0;;) switch (_fun102768_ip) {
             case 0:
                 var4 = _closure1_slot3;

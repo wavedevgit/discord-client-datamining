@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _navigateToGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getGlobalDiscoveryServersTabTitle, environment: var1
+    var3 = function arg0() {
         _fun117499: for (var _fun117499_ip = 0;;) switch (_fun117499_ip) {
             case 0:
                 var2 = arg0;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGlobalDiscoveryServersTabTitle = var3;
-    var3 = function(arg0) { // Original name: getGlobalDiscoveryServersBannerTitle, environment: var1
+    var3 = function arg0() {
         _fun117500: for (var _fun117500_ip = 0;;) switch (_fun117500_ip) {
             case 0:
                 var4 = arg0;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGlobalDiscoveryServersBannerTitle = var3;
-    var3 = function(arg0) { // Original name: getGlobalDiscoveryServersBannerDescription, environment: var1
+    var3 = function arg0() {
         _fun117501: for (var _fun117501_ip = 0;;) switch (_fun117501_ip) {
             case 0:
                 var4 = arg0;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGlobalDiscoveryServersBannerDescription = var3;
-    var3 = function(arg0) { // Original name: getGlobalDiscoveryServersTabSectionTitle, environment: var1
+    var3 = function arg0() {
         _fun117502: for (var _fun117502_ip = 0;;) switch (_fun117502_ip) {
             case 0:
                 var2 = arg0;
@@ -811,7 +811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGlobalDiscoveryServersTabSectionTitle = var3;
-    var3 = function(arg0) { // Original name: getCategoryIdFromServerTab, environment: var1
+    var3 = function arg0() {
         _fun117503: for (var _fun117503_ip = 0;;) switch (_fun117503_ip) {
             case 0:
                 var4 = arg0;
@@ -902,7 +902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCategoryIdFromServerTab = var3;
-    var3 = function(arg0) { // Original name: isStaleFeaturedGuilds, environment: var1
+    var3 = function arg0() {
         _fun117504: for (var _fun117504_ip = 0;;) switch (_fun117504_ip) {
             case 0:
                 var2 = arg0;
@@ -925,7 +925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStaleFeaturedGuilds = var3;
-    var3 = function(arg0) { // Original name: fromDiscoverableGuildServer, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -970,7 +970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fromDiscoverableGuildServer = var3;
-    var3 = function(arg0) { // Original name: fromDiscoverableGuildSearchResult, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -1012,7 +1012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fromDiscoverableGuildSearchResult = var3;
-    var3 = function() { // Original name: getLanguageCodeFallback, environment: var1
+    var3 = function() {
         _fun117507: for (var _fun117507_ip = 0;;) switch (_fun117507_ip) {
             case 0:
                 var4 = arguments[0];
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getLanguageCodeFallback = var3;
-    var3 = function() { // Original name: navigateToGuild, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -1087,7 +1087,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.navigateToGuild = var3;
-    var3 = function() { // Original name: handleTabPressPrefetch, environment: var1
+    var3 = function() {
         _fun117510: for (var _fun117510_ip = 0;;) switch (_fun117510_ip) {
             case 0:
                 var5 = _closure1_slot6;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleTabPressPrefetch = var3;
-    var1 = function() { // Original name: makeAnalyticsID, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot3;
         var0 = 10;

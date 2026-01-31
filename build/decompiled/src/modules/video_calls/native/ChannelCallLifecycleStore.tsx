@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun62768: for (var _fun62768_ip = 0;;) switch (_fun62768_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ChannelCallLifecycleStore, environment: var5
+        var3 = function() {
             _fun62772: for (var _fun62772_ip = 0;;) switch (_fun62772_ip) {
                 case 0:
                     var3 = this;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot7;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldReactToSeriousThermalStateWhenActivityFocused';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'consumedRequestToRespondToSeriousThermalState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'disregardSeriousThermalState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isReactingToThermalState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun62777: for (var _fun62777_ip = 0;;) switch (_fun62777_ip) {
                 case 0:
                     var0 = _closure1_slot10;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getShowActivitiesDebugOverlay';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getVoiceCallOverlayLayoutStates';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPipEnabledWhileFocusedOnActivityOrStream';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var16 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleVoiceChannelSelect, environment: var3
+    var8 = function arg0() {
         _fun62781: for (var _fun62781_ip = 0;;) switch (_fun62781_ip) {
             case 0:
                 var1 = arg0;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.VOICE_CHANNEL_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleRequestRespondToSeriousThermalState, environment: var3
+    var8 = function arg0() {
         _fun62782: for (var _fun62782_ip = 0;;) switch (_fun62782_ip) {
             case 0:
                 var1 = arg0;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.EMBEDDED_ACTIVITY_REQUEST_RESPOND_TO_SERIOUS_THERMAL_STATE = var8;
-    var8 = function(arg0) { // Original name: handleConsumeReactToSeriousThermalStateRequest, environment: var3
+    var8 = function arg0() {
         _fun62783: for (var _fun62783_ip = 0;;) switch (_fun62783_ip) {
             case 0:
                 var1 = arg0;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.EMBEDDED_ACTIVITY_CONSUME_RESPOND_TO_SERIOUS_THERMAL_STATE_REQUEST = var8;
-    var8 = function(arg0) { // Original name: handleDisregardSeriousThermalState, environment: var3
+    var8 = function arg0() {
         _fun62784: for (var _fun62784_ip = 0;;) switch (_fun62784_ip) {
             case 0:
                 var1 = arg0;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.EMBEDDED_ACTIVITY_DISREGARD_SERIOUS_THERMAL_STATE = var8;
-    var8 = function(arg0) { // Original name: handleSetDebugOverlayVisibility, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.visible;
         _closure1_slot12 = var1;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.EMBEDDED_ACTIVITY_SET_DEBUG_OVERLAY_VISIBILITY = var8;
-    var8 = function(arg0) { // Original name: handleVoiceCallOverlayLayoutStateUpdate, environment: var3
+    var8 = function arg0() {
         _fun62786: for (var _fun62786_ip = 0;;) switch (_fun62786_ip) {
             case 0:
                 var0 = arg0;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.VOICE_CALL_OVERLAY_LAYOUT_STATE_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleSetPipEnabledForActivityOrStream, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.pipEnabledWhileFocusedOnActivityOrStream;
         _closure1_slot15 = var1;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.VOICE_CALL_SET_PIP_ENABLED_FOR_ACTIVITY_OR_STREAM = var8;
-    var8 = function(arg0) { // Original name: handleEmbeddedActivityOpen, environment: var3
+    var8 = function arg0() {
         _fun62788: for (var _fun62788_ip = 0;;) switch (_fun62788_ip) {
             case 0:
                 var1 = arg0;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.EMBEDDED_ACTIVITY_OPEN = var8;
-    var3 = function(arg0) { // Original name: handleStreamWatch, environment: var3
+    var3 = function arg0() {
         _fun62789: for (var _fun62789_ip = 0;;) switch (_fun62789_ip) {
             case 0:
                 var1 = arg0;

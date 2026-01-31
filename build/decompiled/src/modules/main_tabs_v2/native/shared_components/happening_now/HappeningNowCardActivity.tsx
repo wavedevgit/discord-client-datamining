@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: IconOrPreview, environment: var1
+    var0 = function arg0() {
         _fun101622: for (var _fun101622_ip = 0;;) switch (_fun101622_ip) {
             case 0:
                 var2 = arg0;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.activity = var0;
                 var4.game = var2;
                 var4.stream = var9;
-                var2 = function(arg0) { // Original name: useActivityIcon, environment: var1
+                var2 = function arg0() {
                     _fun101623: for (var _fun101623_ip = 0;;) switch (_fun101623_ip) {
                         case 0:
                             var0 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: StageStreamAvatars, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.user;
         var11 = var0.stage;

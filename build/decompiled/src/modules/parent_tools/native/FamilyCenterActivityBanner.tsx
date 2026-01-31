@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FamilyCenterActivityBannerButton, environment: var1
+    var0 = function() {
         _fun81723: for (var _fun81723_ip = 0;;) switch (_fun81723_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterActivityBanner.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterActivityBanner, environment: var1
+    var1 = function() {
         _fun81724: for (var _fun81724_ip = 0;;) switch (_fun81724_ip) {
             case 0:
                 var12 = _closure1_slot1;

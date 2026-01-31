@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'uikit-native/Tooltip.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: Tooltip, environment: var4
+    var4 = function arg0() {
         _fun68833: for (var _fun68833_ip = 0;;) switch (_fun68833_ip) {
             case 0:
                 var1 = arg0;

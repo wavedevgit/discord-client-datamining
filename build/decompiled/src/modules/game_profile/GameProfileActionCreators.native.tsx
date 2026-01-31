@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var3.bind(var4)(var2, var0, var1);
     var1 = {};
-    var0 = function() { // Original name: openGameProfileModal, environment: var0
+    var0 = function() {
         var0 = undefined;
         return var0;
     };

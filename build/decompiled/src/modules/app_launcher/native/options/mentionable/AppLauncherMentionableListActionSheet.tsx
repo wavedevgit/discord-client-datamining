@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/options/mentionable/AppLauncherMentionableListActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AppLauncherMentionableListActionSheet, environment: var3
+    var3 = function arg0() {
         _fun108182: for (var _fun108182_ip = 0;;) switch (_fun108182_ip) {
             case 0:
                 var1 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var3)(var4);
                 var8 = var4.AppLauncherListSearchBar;
                 var4 = {};
-                var14 = function(arg0) { // Original name: onChange, environment: var10
+                var14 = function arg0() {
                     _fun108187: for (var _fun108187_ip = 0;;) switch (_fun108187_ip) {
                         case 0:
                             var2 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.ref = var12;
                 var5.data = var11;
-                var10 = function(arg0) { // Original name: renderItem, environment: var10
+                var10 = function arg0() {
                     _fun108188: for (var _fun108188_ip = 0;;) switch (_fun108188_ip) {
                         case 0:
                             var2 = arg0;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot0 = var0;
                             var2 = var2.index;
                             var5 = {};
-                            var1 = function() { // Original name: onPress, environment: var1
+                            var1 = function() {
                                 var3 = _closure2_slot0;
                                 var2 = {};
                                 var0 = _closure3_slot0;

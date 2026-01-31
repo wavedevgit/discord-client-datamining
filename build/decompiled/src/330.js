@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun4905: for (var _fun4905_ip = 0;;) switch (_fun4905_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var4;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ImageBackground, environment: var5
+        var3 = function() {
             _fun4909: for (var _fun4909_ip = 0;;) switch (_fun4909_ip) {
                 case 0:
                     var4 = this;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'setNativeProps';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: setNativeProps, environment: var5
+        var0 = function arg0() {
             _fun4911: for (var _fun4911_ip = 0;;) switch (_fun4911_ip) {
                 case 0:
                     var0 = this;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun4912: for (var _fun4912_ip = 0;;) switch (_fun4912_ip) {
                 case 0:
                     var7 = this;

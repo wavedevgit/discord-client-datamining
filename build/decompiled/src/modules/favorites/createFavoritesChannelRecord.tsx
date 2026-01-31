@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/favorites/createFavoritesChannelRecord.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1, arg2) { // Original name: createFavoritesChannelRecord, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun24578: for (var _fun24578_ip = 0;;) switch (_fun24578_ip) {
             case 0:
                 var1 = arg1;

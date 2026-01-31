@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/AvatarDecorationSampleV2.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun56733: for (var _fun56733_ip = 0;;) switch (_fun56733_ip) {
             case 0:
                 var0 = arg0;

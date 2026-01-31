@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setDebugTrackedData = var4;
     var2.useImpressionStore = var3;
-    var3 = function() { // Original name: getLocation, environment: var1
+    var3 = function() {
         var0 = {};
         var _closure2_slot0 = var0;
         var3 = _closure1_slot3;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getLocation = var3;
-    var1 = function() { // Original name: getImpressionStack, environment: var1
+    var1 = function() {
         var1 = _closure1_slot3;
         var0 = var1.getState;
         var0 = var0.bind(var1)();

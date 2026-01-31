@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var0 instanceof Object ? var0 : var3;
     var _closure1_slot3 = var0;
     var0 = {};
-    var3 = function() { // Original name: isBoldTextEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isBoldTextEnabled = var3;
-    var3 = function() { // Original name: isGrayscaleEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isGrayscaleEnabled = var3;
-    var3 = function() { // Original name: isInvertColorsEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isInvertColorsEnabled = var3;
-    var3 = function() { // Original name: isReduceMotionEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isReduceMotionEnabled = var3;
-    var3 = function() { // Original name: isHighTextContrastEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isHighTextContrastEnabled = var3;
-    var3 = function() { // Original name: isDarkerSystemColorsEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isDarkerSystemColorsEnabled = var3;
-    var3 = function() { // Original name: prefersCrossFadeTransitions, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -321,7 +321,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.prefersCrossFadeTransitions = var3;
-    var3 = function() { // Original name: isReduceTransparencyEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.resolve;
@@ -330,7 +330,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isReduceTransparencyEnabled = var3;
-    var3 = function() { // Original name: isScreenReaderEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -376,7 +376,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isScreenReaderEnabled = var3;
-    var3 = function() { // Original name: isAccessibilityServiceEnabled, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -432,7 +432,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.isAccessibilityServiceEnabled = var3;
-    var3 = function(arg0, arg1) { // Original name: addEventListener, environment: var2
+    var3 = function arg0, arg1() {
         _fun5969: for (var _fun5969_ip = 0;;) switch (_fun5969_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun5969;
             case 65:
                 var1 = {};
-                var2 = function() { // Original name: remove, environment: var2
+                var2 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -469,7 +469,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.addEventListener = var3;
-    var3 = function(arg0) { // Original name: setAccessibilityFocus, environment: var2
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -482,7 +482,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.setAccessibilityFocus = var3;
-    var3 = function(arg0, arg1) { // Original name: sendAccessibilityEvent, environment: var2
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -496,7 +496,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.sendAccessibilityEvent = var3;
-    var3 = function(arg0) { // Original name: announceForAccessibility, environment: var2
+    var3 = function arg0() {
         _fun5973: for (var _fun5973_ip = 0;;) switch (_fun5973_ip) {
             case 0:
                 var4 = _closure1_slot1;
@@ -523,7 +523,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.announceForAccessibility = var3;
-    var3 = function(arg0, arg1) { // Original name: announceForAccessibilityWithOptions, environment: var2
+    var3 = function arg0, arg1() {
         _fun5974: for (var _fun5974_ip = 0;;) switch (_fun5974_ip) {
             case 0:
                 var4 = _closure1_slot1;
@@ -550,7 +550,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.announceForAccessibilityWithOptions = var3;
-    var2 = function(arg0) { // Original name: getRecommendedTimeoutMillis, environment: var2
+    var2 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;

@@ -323,7 +323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.many = var5;
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun21806: for (var _fun21806_ip = 0;;) switch (_fun21806_ip) {
             case 0:
                 var4 = arg1;

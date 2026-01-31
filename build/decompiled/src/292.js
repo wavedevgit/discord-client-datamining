@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var4;
     var3 = var3.useRef;
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: usePressability, environment: var1
+    var1 = function arg0() {
         _fun4481: for (var _fun4481_ip = 0;;) switch (_fun4481_ip) {
             case 0:
                 var3 = arg0;

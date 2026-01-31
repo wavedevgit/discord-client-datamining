@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = arg1;
                 var7 = function() { // Environment: var0
                     var0 = {};
-                    var2 = function() { // Original name: componentDidEnter, environment: var1
+                    var2 = function() {
                         var2 = _closure2_slot2;
                         var0 = undefined;
                         var1 = 'visible';
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.componentDidEnter = var2;
-                    var2 = function(arg0) { // Original name: componentWillLeave, environment: var1
+                    var2 = function arg0() {
                         var3 = _closure2_slot2;
                         var0 = undefined;
                         var2 = 'exiting';
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.componentWillLeave = var2;
-                    var1 = function() { // Original name: componentDidLeave, environment: var1
+                    var1 = function() {
                         var3 = _closure2_slot2;
                         var0 = undefined;
                         var2 = 'exited';
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Sheet/native/ActionSheetPresenter.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ActionSheetPresenter, environment: var1
+    var1 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var1 = 15;

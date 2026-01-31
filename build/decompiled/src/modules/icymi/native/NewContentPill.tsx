@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CutoutGuildIcon, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var14 = var0.guild;
         var0 = _closure1_slot11;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/NewContentPill.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NewContentPill, environment: var1
+    var1 = function arg0() {
         _fun104363: for (var _fun104363_ip = 0;;) switch (_fun104363_ip) {
             case 0:
                 var1 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var15[var1];
                 var7 = var6.bind(var4)(var3);
                 var5 = var7.useAnimatedStyle;
-                var3 = function() { // Original name: y, environment: var14
+                var3 = function() {
                     _fun104370: for (var _fun104370_ip = 0;;) switch (_fun104370_ip) {
                         case 0:
                             var0 = {};
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var15[var1];
                 var16 = var6.bind(var4)(var3);
                 var5 = var16.useAnimatedProps;
-                var3 = function() { // Original name: C, environment: var14
+                var3 = function() {
                     _fun104371: for (var _fun104371_ip = 0;;) switch (_fun104371_ip) {
                         case 0:
                             var0 = {};

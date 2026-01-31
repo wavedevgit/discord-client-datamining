@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsShieldElement.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ShieldElement, environment: var1
+    var1 = function arg0() {
         _fun53818: for (var _fun53818_ip = 0;;) switch (_fun53818_ip) {
             case 0:
                 var0 = arg0;

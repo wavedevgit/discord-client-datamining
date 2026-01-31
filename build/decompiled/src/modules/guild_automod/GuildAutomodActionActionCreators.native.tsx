@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_automod/GuildAutomodActionActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getPromiseableActionHandlers, environment: var1
+    var3 = function() {
         var0 = {};
         var1 = _closure1_slot3;
         var3 = var1.BLOCK_MESSAGE;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getPromiseableActionHandlers = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: openSubmitFeedback, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 3;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.paths;
         var3 = var6.bind(var0)(var3, var2);
         var2 = {};
-        var6 = function() { // Original name: onCloseModal, environment: var6
+        var6 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 3;
@@ -97,17 +97,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openSubmitFeedback = var3;
-    var3 = function() { // Original name: openRaidResolveModal, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var2.openRaidResolveModal = var3;
-    var3 = function() { // Original name: openConfirmRemoveMentionRaid, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var2.openConfirmRemoveMentionRaid = var3;
-    var1 = function(arg0) { // Original name: openAutomodProfileQuarantineAlert, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot1;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot2;
             var1 = 5;

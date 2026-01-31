@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _submitHamReportForFirstDM, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _submitReportForInappropriateConversationSafetyAlert, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: trackShowReportModalAnalytics, environment: var1
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/ReportModals.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: showReportModalForGuild, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForGuild = var3;
-    var3 = function(arg0, arg1) { // Original name: showReportModalForGuildDirectoryEntry, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForGuildDirectoryEntry = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: showReportModalForMessage, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForMessage = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: showStaffTestReportModalForMessage, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showStaffTestReportModalForMessage = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: showStaffTestReportModalForGuild, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showStaffTestReportModalForGuild = var3;
-    var3 = function(arg0, arg1) { // Original name: showReportModalForStageChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun53600: for (var _fun53600_ip = 0;;) switch (_fun53600_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showReportModalForStageChannel = var3;
-    var3 = function(arg0, arg1) { // Original name: showReportModalForGuildScheduledEvent, environment: var1
+    var3 = function arg0, arg1() {
         _fun53601: for (var _fun53601_ip = 0;;) switch (_fun53601_ip) {
             case 0:
                 var1 = arg0;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showReportModalForGuildScheduledEvent = var3;
-    var3 = function(arg0, arg1) { // Original name: showReportModalForFirstDM, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForFirstDM = var3;
-    var3 = function() { // Original name: submitHamReportForFirstDM, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.submitHamReportForFirstDM = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: showReportModalForUser, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForUser = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: showStaffTestReportModalForUser, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -652,7 +652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showStaffTestReportModalForUser = var3;
-    var3 = function(arg0, arg1) { // Original name: showUnauthenticatedReportModalForUser, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot6;
         var1 = var3.prototype;
         var2 = Object.create(var1, {
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showUnauthenticatedReportModalForUser = var3;
-    var3 = function(arg0, arg1) { // Original name: showUnauthenticatedReportModalForGuild, environment: var1
+    var3 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 8;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showUnauthenticatedReportModalForGuild = var3;
-    var3 = function(arg0, arg1) { // Original name: showUnauthenticatedReportModalForTida, environment: var1
+    var3 = function arg0, arg1() {
         var5 = _closure1_slot10;
         var2 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showUnauthenticatedReportModalForTida = var3;
-    var3 = function(arg0, arg1) { // Original name: showUnauthenticatedReportModalForMessage, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot5;
         var1 = var3.prototype;
         var2 = Object.create(var1, {
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showUnauthenticatedReportModalForMessage = var3;
-    var3 = function() { // Original name: submitReportForInappropriateConversationSafetyAlert, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.submitReportForInappropriateConversationSafetyAlert = var3;
-    var3 = function(arg0, arg1) { // Original name: showReportModalForInappropriateConversationSafetyAlert, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var5 = _closure1_slot10;
         var6 = _closure1_slot0;
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForInappropriateConversationSafetyAlert = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: showReportModalForWidget, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun53612: for (var _fun53612_ip = 0;;) switch (_fun53612_ip) {
             case 0:
                 var1 = arg1;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.showReportModalForWidget = var3;
-    var3 = function(arg0) { // Original name: showReportModalForApp, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.application;
         var2 = var0.entrypoint;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showReportModalForApp = var3;
-    var1 = function(arg0, arg1) { // Original name: showReportToModMessageModal, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 6;

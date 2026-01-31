@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/native/components/EnableCommunityModal/SafetyCheckScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SafetyCheckScreen, environment: var1
+    var1 = function() {
         _fun116280: for (var _fun116280_ip = 0;;) switch (_fun116280_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var27 !== var26;
                 var23.value = var26;
                 var23.disabled = var25;
-                var25 = function(arg0) { // Original name: onValueChange, environment: var18
+                var25 = function arg0() {
                     _fun116282: for (var _fun116282_ip = 0;;) switch (_fun116282_ip) {
                         case 0:
                             var0 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var21 === var20;
                 var16.value = var20;
                 var16.disabled = var19;
-                var18 = function(arg0) { // Original name: onValueChange, environment: var18
+                var18 = function arg0() {
                     _fun116283: for (var _fun116283_ip = 0;;) switch (_fun116283_ip) {
                         case 0:
                             var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: useAppearanceSettingTrailing, environment: var9
+    var1 = function() {
         _fun84424: for (var _fun84424_ip = 0;;) switch (_fun84424_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5.bind(var0)(var3);
     var4 = var7.createRoute;
     var3 = {};
-    var8 = function() { // Original name: title, environment: var9
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var10 = var10.APPEARANCE;
     var8.route = var10;
-    var9 = function() { // Original name: getComponent, environment: var9
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun105668: for (var _fun105668_ip = 0;;) switch (_fun105668_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun105670: for (var _fun105670_ip = 0;;) switch (_fun105670_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: matchGroupDMRecipients, environment: var5
+    var0 = function arg0, arg1() {
         _fun105671: for (var _fun105671_ip = 0;;) switch (_fun105671_ip) {
             case 0:
                 var12 = arg0;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var4 = function(arg0, arg1) { // Original name: matchGroupDM, environment: var5
+    var4 = function arg0, arg1() {
         _fun105672: for (var _fun105672_ip = 0;;) switch (_fun105672_ip) {
             case 0:
                 var5 = arg0;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var0 = function(arg0, arg1, arg2) { // Original name: isMatchNewMessageUserListGroupDM, environment: var5
+    var0 = function arg0, arg1, arg2() {
         _fun105673: for (var _fun105673_ip = 0;;) switch (_fun105673_ip) {
             case 0:
                 var3 = arg0;
@@ -504,14 +504,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var3 = function(arg0) { // Original name: filterGroupDMs, environment: var5
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.isGroupDM;
         var0 = var0.bind(var1)();
         return var0;
     };
     var _closure1_slot20 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useSearchGDMNames, environment: var5
+    var1 = function arg0, arg1, arg2() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg2;
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/main_tabs_v2/native/shared_components/user_list/NewMessageUserList.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: NewMessageUserList, environment: var5
+    var5 = function arg0() {
         _fun105681: for (var _fun105681_ip = 0;;) switch (_fun105681_ip) {
             case 0:
                 var0 = arg0;

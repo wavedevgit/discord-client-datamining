@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 21;
     var3 = var4 >= var3;
     var _closure1_slot10 = var3;
-    var1 = function(arg0) { // Original name: PlatformPressable, environment: var1
+    var1 = function arg0() {
         _fun51097: for (var _fun51097_ip = 0;;) switch (_fun51097_ip) {
             case 0:
                 var2 = arg0;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 0;
                 var10 = var1[var0];
                 var _closure2_slot3 = var10;
-                var0 = function(arg0, arg1) { // Original name: animateTo, environment: var9
+                var0 = function arg0, arg1() {
                     _fun51099: for (var _fun51099_ip = 0;;) switch (_fun51099_ip) {
                         case 0:
                             var0 = _closure1_slot10;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var12.Object;
                 var4 = var5.assign;
                 var0 = {};
-                var13 = function(arg0) { // Original name: handlePressIn, environment: var9
+                var13 = function arg0() {
                     _fun51100: for (var _fun51100_ip = 0;;) switch (_fun51100_ip) {
                         case 0:
                             var4 = _closure2_slot4;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.onPressIn = var13;
-                var9 = function(arg0) { // Original name: handlePressOut, environment: var9
+                var9 = function arg0() {
                     _fun51101: for (var _fun51101_ip = 0;;) switch (_fun51101_ip) {
                         case 0:
                             var4 = _closure2_slot4;

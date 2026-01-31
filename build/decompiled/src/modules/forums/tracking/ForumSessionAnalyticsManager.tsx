@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: createSessionData, environment: var1
+    var0 = function arg0() {
         var0 = {};
         var1 = arg0;
         var0.channelId = var1;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: ForumSessionAnalyticsManager, environment: var1
+        var2 = function() {
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'getForumChannelSessionId';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun53436: for (var _fun53436_ip = 0;;) switch (_fun53436_ip) {
                 case 0:
                     var3 = arg0;

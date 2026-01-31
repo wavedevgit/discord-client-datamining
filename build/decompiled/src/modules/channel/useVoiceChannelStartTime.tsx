@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel/useVoiceChannelStartTime.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useStartTime, environment: var1
+    var1 = function arg0() {
         _fun102605: for (var _fun102605_ip = 0;;) switch (_fun102605_ip) {
             case 0:
                 var7 = arg0;

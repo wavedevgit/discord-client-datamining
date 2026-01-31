@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MessagesScreen, environment: var1
+    var1 = function arg0() {
         _fun105969: for (var _fun105969_ip = 0;;) switch (_fun105969_ip) {
             case 0:
                 var1 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var6 = arg0;
                                 var6 = var7.bind(var8)(var6);
                                 var3.message = var6;
-                                var5 = function(arg0) { // Original name: onPress, environment: var5
+                                var5 = function arg0() {
                                     var3 = _closure2_slot4;
                                     var2 = _closure4_slot0;
                                     var1 = undefined;

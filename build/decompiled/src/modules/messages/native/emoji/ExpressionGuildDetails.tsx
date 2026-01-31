@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.joinGuildButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
-    var1 = function(arg0) { // Original name: ExpressionGuildDetails, environment: var1
+    var1 = function arg0() {
         _fun74038: for (var _fun74038_ip = 0;;) switch (_fun74038_ip) {
             case 0:
                 var0 = arg0;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = {};
                 var22 = var22.joinGuildButton;
                 var16.style = var22;
-                var21 = function() { // Original name: onPress, environment: var21
+                var21 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 12;

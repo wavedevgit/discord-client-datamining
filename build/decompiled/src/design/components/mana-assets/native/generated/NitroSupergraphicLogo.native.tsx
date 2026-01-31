@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/mana-assets/native/generated/NitroSupergraphicLogo.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NitroSupergraphicLogo, environment: var1
+    var1 = function arg0() {
         _fun52599: for (var _fun52599_ip = 0;;) switch (_fun52599_ip) {
             case 0:
                 var0 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var3 = function(arg0, arg1) { // Original name: exceptionFromError, environment: var5
+    var3 = function arg0, arg1() {
         _fun10702: for (var _fun10702_ip = 0;;) switch (_fun10702_ip) {
             case 0:
                 var4 = arg1;
@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: eventFromPlainObject, environment: var5
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun10703: for (var _fun10703_ip = 0;;) switch (_fun10703_ip) {
             case 0:
                 var6 = arg0;
@@ -193,7 +193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: eventFromError, environment: var5
+    var0 = function arg0, arg1() {
         var0 = {};
         var1 = {};
         var5 = _closure1_slot3;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: parseStackFrames, environment: var5
+    var0 = function arg0, arg1() {
         _fun10705: for (var _fun10705_ip = 0;;) switch (_fun10705_ip) {
             case 0:
                 var6 = arg1;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: isWebAssemblyException, environment: var5
+    var0 = function arg0() {
         _fun10706: for (var _fun10706_ip = 0;;) switch (_fun10706_ip) {
             case 0:
                 var1 = global;
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: extractType, environment: var5
+    var0 = function arg0() {
         _fun10707: for (var _fun10707_ip = 0;;) switch (_fun10707_ip) {
             case 0:
                 var2 = arg0;
@@ -375,7 +375,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var2 = function(arg0) { // Original name: extractMessage, environment: var5
+    var2 = function arg0() {
         _fun10708: for (var _fun10708_ip = 0;;) switch (_fun10708_ip) {
             case 0:
                 var2 = arg0;
@@ -460,7 +460,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var2;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: eventFromUnknownInput, environment: var5
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         _fun10709: for (var _fun10709_ip = 0;;) switch (_fun10709_ip) {
             case 0:
                 var3 = arg0;
@@ -689,7 +689,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var4;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: eventFromString, environment: var5
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun10710: for (var _fun10710_ip = 0;;) switch (_fun10710_ip) {
             case 0:
                 var1 = arg1;
@@ -764,7 +764,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var6;
-    var6 = function(arg0, arg1) { // Original name: getNonErrorObjectExceptionValue, environment: var5
+    var6 = function arg0, arg1() {
         _fun10711: for (var _fun10711_ip = 0;;) switch (_fun10711_ip) {
             case 0:
                 var1 = arg0;
@@ -879,7 +879,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var8.bind(var9)(var1, var7, var6);
     var6 = /Minified React error #\d+;/i;
     var _closure1_slot2 = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: eventFromException, environment: var5
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun10712: for (var _fun10712_ip = 0;;) switch (_fun10712_ip) {
             case 0:
                 var1 = arg2;
@@ -943,7 +943,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.eventFromException = var6;
-    var5 = function(arg0, arg1) { // Original name: eventFromMessage, environment: var5
+    var5 = function arg0, arg1() {
         _fun10713: for (var _fun10713_ip = 0;;) switch (_fun10713_ip) {
             case 0:
                 var3 = undefined;

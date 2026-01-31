@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FamilyCenterLoading, environment: var1
+    var0 = function() {
         var0 = _closure1_slot19;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: FamilyCenter, environment: var1
+    var0 = function() {
         _fun81705: for (var _fun81705_ip = 0;;) switch (_fun81705_ip) {
             case 0:
                 var0 = _closure1_slot19;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23.page = var24;
                 var22[1] = var23;
                 var13.items = var22;
-                var22 = function(arg0) { // Original name: onPageChange, environment: var7
+                var22 = function arg0() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 25;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/family_center/UserSettingsFamilyCenter.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterContainer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot16;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

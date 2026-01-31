@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/themes/native/useNativeThemeUpdater.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useNativeThemeUpdater, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useRef;
         var1 = _closure1_slot3;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var1;
         var2 = var3.useLayoutEffect;
         var1 = function() { // Environment: var0
-            var3 = function() { // Original name: handleThemeUpdate, environment: var0
+            var3 = function() {
                 _fun109867: for (var _fun109867_ip = 0;;) switch (_fun109867_ip) {
                     case 0:
                         var1 = _closure1_slot3;

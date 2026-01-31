@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun115743: for (var _fun115743_ip = 0;;) switch (_fun115743_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function() { // Original name: calculatePositionDeltas, environment: var4
+    var0 = function() {
         _fun115746: for (var _fun115746_ip = 0;;) switch (_fun115746_ip) {
             case 0:
                 var0 = _closure1_slot19;
@@ -82,13 +82,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.oldOrdering = var5;
                 var4 = _closure1_slot27;
                 var0.newOrdering = var4;
-                var4 = function(arg0) { // Original name: idGetter, environment: var3
+                var4 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
                 };
                 var0.idGetter = var4;
-                var3 = function(arg0) { // Original name: existingPositionGetter, environment: var3
+                var3 = function arg0() {
                     var0 = arg0;
                     var0 = var0.position;
                     return var0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var10 = function(arg0) { // Original name: handleSetSection, environment: var4
+    var10 = function arg0() {
         _fun115749: for (var _fun115749_ip = 0;;) switch (_fun115749_ip) {
             case 0:
                 var0 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function() { // Original name: handleInit, environment: var4
+    var0 = function() {
         _fun115750: for (var _fun115750_ip = 0;;) switch (_fun115750_ip) {
             case 0:
                 var2 = arguments[0];
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0, arg1) { // Original name: initRoleStyles, environment: var4
+    var0 = function arg0, arg1() {
         var2 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateRole, environment: var4
+    var0 = function arg0, arg1() {
         _fun115754: for (var _fun115754_ip = 0;;) switch (_fun115754_ip) {
             case 0:
                 var2 = arg0;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0) { // Original name: _getRole, environment: var4
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot27;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot41 = var0;
-    var7 = function(arg0) { // Original name: syncGuildChanges, environment: var4
+    var7 = function arg0() {
         _fun115757: for (var _fun115757_ip = 0;;) switch (_fun115757_ip) {
             case 0:
                 var0 = arg0;
@@ -818,7 +818,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var6.isEqual;
                             var2 = _closure1_slot41;
                             var4 = var2.bind(var0)(var3);
-                            var2 = function(arg0) { // Original name: getOriginalRole, environment: var2
+                            var2 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
                                 var2 = _closure1_slot28;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var8.bind(var0)(var3);
     var9 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: GuildSettingsRolesStore, environment: var5
+        var3 = function() {
             _fun115767: for (var _fun115767_ip = 0;;) switch (_fun115767_ip) {
                 case 0:
                     var3 = this;
@@ -955,7 +955,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot12;
@@ -971,7 +971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasChanges';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun115769: for (var _fun115769_ip = 0;;) switch (_fun115769_ip) {
                 case 0:
                     var0 = _closure1_slot25;
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRoleStyleData';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot33;
             var1 = var2.get;
             var0 = arg0;
@@ -1009,7 +1009,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'errorMessage';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -1018,7 +1018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasSortChanges';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot26;
             return var0;
         };
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasRoleConfigurationChanges';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot29;
             return var0;
         };
@@ -1036,7 +1036,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'guild';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -1045,7 +1045,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'editedRoleIds';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -1058,7 +1058,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'editedRoleIdsForConfigurations';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot30;
             return var0;
         };
@@ -1067,7 +1067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'roles';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot27;
             return var0;
         };
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'formState';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot24;
             return var0;
         };
@@ -1085,7 +1085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSortDeltas';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot37;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'showNotice';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.hasChanges;
             var0 = var0.bind(var1)();
@@ -1107,7 +1107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRole';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot41;
             var1 = undefined;
             var0 = arg0;
@@ -1119,7 +1119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPermissionSearchQuery';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -1128,7 +1128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEditedRoleConnectionConfigurationsMap';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot32;
             return var0;
         };
@@ -1144,7 +1144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var15 = var8.bind(var0)(var3);
     var3 = {};
-    var11 = function() { // Original name: GUILD_SETTINGS_ROLES_INIT, environment: var4
+    var11 = function() {
         var1 = _closure1_slot38;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -1153,7 +1153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.GUILD_SETTINGS_ROLES_INIT = var11;
     var3.GUILD_SETTINGS_INIT = var10;
     var3.GUILD_SETTINGS_SET_SECTION = var10;
-    var10 = function(arg0) { // Original name: handleSortUpdate, environment: var4
+    var10 = function arg0() {
         _fun115785: for (var _fun115785_ip = 0;;) switch (_fun115785_ip) {
             case 0:
                 var0 = arg0;
@@ -1203,7 +1203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_SORT_UPDATE = var10;
-    var10 = function(arg0) { // Original name: handleUpdatePermissions, environment: var4
+    var10 = function arg0() {
         _fun115787: for (var _fun115787_ip = 0;;) switch (_fun115787_ip) {
             case 0:
                 var0 = arg0;
@@ -1249,7 +1249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS = var10;
-    var10 = function(arg0) { // Original name: handleUpdatePermissionSet, environment: var4
+    var10 = function arg0() {
         _fun115788: for (var _fun115788_ip = 0;;) switch (_fun115788_ip) {
             case 0:
                 var0 = arg0;
@@ -1274,7 +1274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_PERMISSION_SET = var10;
-    var10 = function(arg0) { // Original name: handleClearRolePermissions, environment: var4
+    var10 = function arg0() {
         _fun115789: for (var _fun115789_ip = 0;;) switch (_fun115789_ip) {
             case 0:
                 var0 = arg0;
@@ -1304,7 +1304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_CLEAR_PERMISSIONS = var10;
-    var10 = function(arg0) { // Original name: handleUpdateName, environment: var4
+    var10 = function arg0() {
         _fun115790: for (var _fun115790_ip = 0;;) switch (_fun115790_ip) {
             case 0:
                 var0 = arg0;
@@ -1329,7 +1329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_NAME = var10;
-    var10 = function(arg0) { // Original name: handleUpdateDescription, environment: var4
+    var10 = function arg0() {
         _fun115791: for (var _fun115791_ip = 0;;) switch (_fun115791_ip) {
             case 0:
                 var0 = arg0;
@@ -1354,7 +1354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_DESCRIPTION = var10;
-    var10 = function(arg0) { // Original name: handleUpdateColor, environment: var4
+    var10 = function arg0() {
         _fun115792: for (var _fun115792_ip = 0;;) switch (_fun115792_ip) {
             case 0:
                 var0 = arg0;
@@ -1450,7 +1450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_COLOR = var10;
-    var10 = function(arg0) { // Original name: handleUpdateColors, environment: var4
+    var10 = function arg0() {
         _fun115793: for (var _fun115793_ip = 0;;) switch (_fun115793_ip) {
             case 0:
                 var0 = arg0;
@@ -1509,7 +1509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_COLORS = var10;
-    var10 = function(arg0) { // Original name: handleUpdateSettings, environment: var4
+    var10 = function arg0() {
         _fun115794: for (var _fun115794_ip = 0;;) switch (_fun115794_ip) {
             case 0:
                 var0 = arg0;
@@ -1536,7 +1536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_SETTINGS = var10;
-    var10 = function(arg0) { // Original name: handleUpdateRoleIcon, environment: var4
+    var10 = function arg0() {
         _fun115795: for (var _fun115795_ip = 0;;) switch (_fun115795_ip) {
             case 0:
                 var0 = arg0;
@@ -1563,7 +1563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON = var10;
-    var10 = function(arg0) { // Original name: handleInsertRole, environment: var4
+    var10 = function arg0() {
         _fun115796: for (var _fun115796_ip = 0;;) switch (_fun115796_ip) {
             case 0:
                 var0 = arg0;
@@ -1607,7 +1607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLE_SELECT = var10;
-    var10 = function(arg0) { // Original name: handleRoleStyleUpdate, environment: var4
+    var10 = function arg0() {
         _fun115797: for (var _fun115797_ip = 0;;) switch (_fun115797_ip) {
             case 0:
                 var0 = arg0;
@@ -1674,7 +1674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE = var10;
-    var10 = function(arg0) { // Original name: handleFetchRoleConnectionConfigurations, environment: var4
+    var10 = function arg0() {
         _fun115798: for (var _fun115798_ip = 0;;) switch (_fun115798_ip) {
             case 0:
                 var0 = arg0;
@@ -1725,7 +1725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS = var10;
-    var10 = function(arg0) { // Original name: handleUpdateRoleConnectionConfigurations, environment: var4
+    var10 = function arg0() {
         _fun115799: for (var _fun115799_ip = 0;;) switch (_fun115799_ip) {
             case 0:
                 var0 = arg0;
@@ -1759,7 +1759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS = var10;
-    var10 = function() { // Original name: handleClose, environment: var4
+    var10 = function() {
         var0 = null;
         _closure1_slot19 = var0;
         var0 = new Array(0);
@@ -1802,7 +1802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.GUILD_SETTINGS_CLOSE = var10;
     var3.GUILD_ROLE_CREATE = var7;
     var3.GUILD_ROLE_UPDATE = var7;
-    var7 = function(arg0) { // Original name: handleRoleDelete, environment: var4
+    var7 = function arg0() {
         _fun115801: for (var _fun115801_ip = 0;;) switch (_fun115801_ip) {
             case 0:
                 var2 = arg0;
@@ -1837,7 +1837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_ROLE_DELETE = var7;
-    var7 = function() { // Original name: handleSubmitting, environment: var4
+    var7 = function() {
         var0 = _closure1_slot14;
         var0 = var0.SUBMITTING;
         _closure1_slot24 = var0;
@@ -1845,7 +1845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_SETTINGS_ROLES_SUBMITTING = var7;
-    var7 = function(arg0) { // Original name: handleSaveFail, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.message;
         var2 = _closure1_slot14;
@@ -1856,7 +1856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_SETTINGS_ROLES_SAVE_FAIL = var7;
-    var7 = function() { // Original name: handleSaveSuccess, environment: var4
+    var7 = function() {
         var2 = _closure1_slot38;
         var0 = undefined;
         var1 = false;
@@ -1864,7 +1864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_SETTINGS_ROLES_SAVE_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handlePinPermissionMigrated, environment: var4
+    var7 = function arg0() {
         _fun115805: for (var _fun115805_ip = 0;;) switch (_fun115805_ip) {
             case 0:
                 var0 = arg0;
@@ -1919,7 +1919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SETTINGS_PIN_PERMISSION_MIGRATED = var7;
-    var7 = function(arg0) { // Original name: handleSlowmodePermissionMigrated, environment: var4
+    var7 = function arg0() {
         _fun115806: for (var _fun115806_ip = 0;;) switch (_fun115806_ip) {
             case 0:
                 var0 = arg0;

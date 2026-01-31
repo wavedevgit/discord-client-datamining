@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: getMissingIconURL, environment: var1
+    var0 = function() {
         var2 = _closure1_slot3;
         var1 = var2.resolveAssetSource;
         var4 = _closure1_slot1;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: getGradientColors, environment: var1
+    var0 = function arg0() {
         _fun56267: for (var _fun56267_ip = 0;;) switch (_fun56267_ip) {
             case 0:
                 var4 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: buildTimestampBadge, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var6 = arg0;
         var0 = arg1;
         var1 = var0.timestamp;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/transformContentInventoryEntryMessageComponent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: transformToRowGeneratedContentInventoryEntryComponent, environment: var1
+    var1 = function arg0() {
         _fun56269: for (var _fun56269_ip = 0;;) switch (_fun56269_ip) {
             case 0:
                 var0 = arg0;

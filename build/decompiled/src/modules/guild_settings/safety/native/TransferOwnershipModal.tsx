@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: closeModal, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/safety/native/TransferOwnershipModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TransferOwnershipModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var6 = var1.guild;
         var _closure2_slot0 = var6;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var3 = _closure2_slot0;
             var2 = _closure2_slot1;
-            var1 = function(arg0, arg1) { // Original name: getScreens, environment: var0
+            var1 = function arg0, arg1() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = arg1;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.GUILD_TRANSFER_OWNERSHIP;
                 var2.impressionName = var13;
                 var2.impressionProperties = var4;
-                var13 = function() { // Original name: render, environment: var3
+                var13 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE;
                 var1.impressionName = var5;
                 var1.impressionProperties = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot1;
                     var8 = _closure1_slot2;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var6 = var6.bind(var2)();
                     var0.onFormSubmit = var6;
-                    var6 = function() { // Original name: onSuccess, environment: var5
+                    var6 = function() {
                         var2 = _closure1_slot8;
                         var0 = undefined;
                         var2 = var2.bind(var0)();

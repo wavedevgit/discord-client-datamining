@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: GuildsBarItemUnavailableGuilds, environment: var1
+    var1 = function() {
         _fun101148: for (var _fun101148_ip = 0;;) switch (_fun101148_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.count = var13;
                 var6 = var11.bind(var12)(var10, var6);
                 var1.accessibilityLabel = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var8 = _closure2_slot0;
                     var2 = _closure1_slot1;
                     var9 = _closure1_slot2;

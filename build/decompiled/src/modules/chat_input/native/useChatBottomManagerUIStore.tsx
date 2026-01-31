@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: getChatInputContainerHeight, environment: var1
+    var0 = function() {
         _fun62753: for (var _fun62753_ip = 0;;) switch (_fun62753_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/chat_input/native/useChatBottomManagerUIStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0, arg1) { // Original name: updateChatInputContainerHeight, environment: var1
+    var3 = function arg0, arg1() {
         _fun62755: for (var _fun62755_ip = 0;;) switch (_fun62755_ip) {
             case 0:
                 var1 = arg0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateChatInputContainerHeight = var3;
-    var3 = function(arg0, arg1) { // Original name: updateShowingAutoComplete, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateShowingAutoComplete = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: updateShouldShowJumpToPresentButton, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateShouldShowJumpToPresentButton = var3;
-    var3 = function(arg0) { // Original name: useChatInputContainerHeight, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChatInputContainerHeight = var3;
-    var3 = function(arg0) { // Original name: useChatShowingAutoComplete, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChatShowingAutoComplete = var3;
-    var1 = function() { // Original name: useBestActiveChatInputContainerHeight, environment: var1
+    var1 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0

@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var19[var8](var18, var17, var16, var15, var14);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: GradientThemeBackground, environment: var1
+    var3 = function arg0() {
         _fun84505: for (var _fun84505_ip = 0;;) switch (_fun84505_ip) {
             case 0:
                 var0 = arg0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: DefaultThemeBackground, environment: var1
+    var3 = function arg0() {
         _fun84506: for (var _fun84506_ip = 0;;) switch (_fun84506_ip) {
             case 0:
                 var0 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: CustomThemeBackground, environment: var1
+    var3 = function arg0() {
         _fun84508: for (var _fun84508_ip = 0;;) switch (_fun84508_ip) {
             case 0:
                 var0 = arg0;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/appearance/components/SettingsAppearanceThemeSelectorItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ThemeSelectorItem, environment: var1
+    var1 = function arg0() {
         _fun84509: for (var _fun84509_ip = 0;;) switch (_fun84509_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _sendShareMessage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = true;
                         var4.doNotNotifyOnError = var11;
                         var4.attachmentsToUpload = var10;
-                        var2 = function() { // Original name: onAttachmentUploadError, environment: var2
+                        var2 = function() {
                             var3 = _closure4_slot4;
                             var1 = var3.reject;
                             var0 = undefined;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/share/native/ShareUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: showInformationToast, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showInformationToast = var3;
-    var1 = function() { // Original name: sendShareMessage, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;

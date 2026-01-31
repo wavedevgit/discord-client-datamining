@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: FrameViewInner, environment: var1
+    var1 = function arg0() {
         _fun110471: for (var _fun110471_ip = 0;;) switch (_fun110471_ip) {
             case 0:
                 var0 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var12[var5];
                 var6 = var6.bind(var4)(var5);
                 var5 = {};
-                var19 = function() { // Original name: onActivityCrash, environment: var19
+                var19 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = true;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: ExpandedControlItemIcon, environment: var1
+    var0 = function arg0() {
         _fun68072: for (var _fun68072_ip = 0;;) switch (_fun68072_ip) {
             case 0:
                 var0 = arg0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var3 = function(arg0) { // Original name: ExpandedControlItem, environment: var1
+    var3 = function arg0() {
         _fun68073: for (var _fun68073_ip = 0;;) switch (_fun68073_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var3;
-    var0 = function(arg0) { // Original name: useIsGridMode, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot1;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/video_calls/native/components/FocusedExpandedControls.tsx';
     var4 = var5.bind(var6)(var4);
     var2.ExpandedControlItem = var3;
-    var3 = function() { // Original name: StreamVolumeItem, environment: var1
+    var3 = function() {
         _fun68076: for (var _fun68076_ip = 0;;) switch (_fun68076_ip) {
             case 0:
                 var0 = _closure1_slot23;
@@ -571,14 +571,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.StreamVolumeItem = var3;
-    var3 = function(arg0) { // Original name: DisconnectCallButton, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var1 = var1.channel;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot20;
         var2 = _closure1_slot25;
         var1 = {};
-        var0 = function() { // Original name: onPress, environment: var0
+        var0 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 27;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.DisconnectCallButton = var3;
-    var3 = function(arg0) { // Original name: AudioRouteButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         var _closure2_slot0 = var1;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot20;
         var1 = _closure1_slot25;
         var0 = {};
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 29;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ScreenshareButton = var3;
-    var3 = function(arg0) { // Original name: SoundboardButton, environment: var1
+    var3 = function arg0() {
         _fun68086: for (var _fun68086_ip = 0;;) switch (_fun68086_ip) {
             case 0:
                 var0 = arg0;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.bind(var3)(var11);
                 var10 = !var10;
                 var0.disabled = var10;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 36;
@@ -989,7 +989,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot20;
         var2 = _closure1_slot25;
         var1 = {};
-        var0 = function() { // Original name: onPress, environment: var0
+        var0 = function() {
             _fun68094: for (var _fun68094_ip = 0;;) switch (_fun68094_ip) {
                 case 0:
                     var2 = _closure1_slot8;
@@ -1052,7 +1052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.LeaveActivitiesButton = var3;
-    var3 = function(arg0) { // Original name: VoiceSettingsButton, environment: var1
+    var3 = function arg0() {
         _fun68095: for (var _fun68095_ip = 0;;) switch (_fun68095_ip) {
             case 0:
                 var0 = arg0;
@@ -1087,7 +1087,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.VoiceSettingsButton = var3;
-    var3 = function() { // Original name: ToggleShowPip, environment: var1
+    var3 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var0 = 21;
@@ -1125,7 +1125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.bind(var8)(var6);
         var0.label = var6;
         var0.switchValue = var5;
-        var4 = function(arg0) { // Original name: onSwitchValueChange, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 49;
@@ -1142,7 +1142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ToggleShowPip = var3;
-    var3 = function() { // Original name: ToggleShowActivitiesDebugOverlay, environment: var1
+    var3 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
         var0 = 21;
@@ -1180,7 +1180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.bind(var8)(var6);
         var0.label = var6;
         var0.switchValue = var5;
-        var4 = function(arg0) { // Original name: onSwitchValueChange, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 51;
@@ -1201,7 +1201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ToggleShowActivitiesDebugOverlay = var3;
-    var3 = function() { // Original name: ToggleNoiseCancellation, environment: var1
+    var3 = function() {
         _fun68102: for (var _fun68102_ip = 0;;) switch (_fun68102_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -1291,7 +1291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.bind(var0)(var1);
                             var2 = var1.NUF_KRISP_ACTIONSHEET_KEY;
                             var1 = {};
-                            var7 = function() { // Original name: callback, environment: var7
+                            var7 = function() {
                                 var2 = _closure1_slot1;
                                 var5 = _closure1_slot2;
                                 var1 = 54;
@@ -1379,7 +1379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ToggleNoiseCancellation = var3;
-    var3 = function(arg0) { // Original name: RtcDebugPanelButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.onOpenRTCDebugOverlay;
         var2 = _closure1_slot0;
@@ -1403,7 +1403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.RtcDebugPanelButton = var3;
-    var3 = function(arg0) { // Original name: HideNonVideoParticipants, environment: var1
+    var3 = function arg0() {
         _fun68108: for (var _fun68108_ip = 0;;) switch (_fun68108_ip) {
             case 0:
                 var1 = arg0;
@@ -1456,7 +1456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.HideNonVideoParticipants = var3;
-    var3 = function(arg0) { // Original name: HideSelfVideo, environment: var1
+    var3 = function arg0() {
         _fun68110: for (var _fun68110_ip = 0;;) switch (_fun68110_ip) {
             case 0:
                 var0 = arg0;
@@ -1539,7 +1539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.label = var7;
                 var6 = !var6;
                 var1.switchValue = var6;
-                var5 = function() { // Original name: onSwitchValueChange, environment: var5
+                var5 = function() {
                     _fun68112: for (var _fun68112_ip = 0;;) switch (_fun68112_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -1556,7 +1556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 19:
                             var1 = _closure1_slot18;
                             var4 = var1.VIDEO;
-                            var3 = function(arg0, arg1) { // Original name: openHideSelfStreamAndVideoConfirmDialog, environment: var2
+                            var3 = function arg0, arg1() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var0 = arg1;
@@ -1569,7 +1569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var2.bind(var0)(var1);
                                 var2 = var3.openLazy;
                                 var1 = {};
-                                var4 = function() { // Original name: importer, environment: var4
+                                var4 = function() {
                                     var2 = _closure1_slot0;
                                     var0 = _closure1_slot2;
                                     var1 = 56;
@@ -1638,7 +1638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.HideSelfVideo = var3;
-    var3 = function(arg0) { // Original name: ReportStreamIssueButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.stream;
         var2 = _closure1_slot0;
@@ -1662,7 +1662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ReportStreamIssueButton = var3;
-    var3 = function(arg0) { // Original name: GameConsoleAccountItem, environment: var1
+    var3 = function arg0() {
         _fun68119: for (var _fun68119_ip = 0;;) switch (_fun68119_ip) {
             case 0:
                 var0 = arg0;
@@ -1975,7 +1975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GameConsoleAccountItem = var3;
-    var1 = function(arg0) { // Original name: TransferCallButton, environment: var1
+    var1 = function arg0() {
         _fun68123: for (var _fun68123_ip = 0;;) switch (_fun68123_ip) {
             case 0:
                 var0 = arg0;
@@ -2018,7 +2018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.PlwgdU;
                 var5 = var6.bind(var7)(var5);
                 var0.label = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     _fun68124: for (var _fun68124_ip = 0;;) switch (_fun68124_ip) {
                         case 0:
                             var2 = _closure2_slot1;

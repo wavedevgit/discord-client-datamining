@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: QuestDockDismissalNotification, environment: var1
+    var0 = function() {
         var1 = _closure1_slot6;
         var3 = undefined;
         var1 = var1.bind(var3)();
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.t;
         var5 = var4.dYE1px;
         var4 = {};
-        var8 = function() { // Original name: arrowHook, environment: var8
+        var8 = function() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot4;
             var1 = {};
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestDockDismissalToast.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: displayQuestDismissalToast, environment: var1
+    var1 = function() {
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
         var0 = 8;

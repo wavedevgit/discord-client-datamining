@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: KrispLogo, environment: var1
+    var0 = function() {
         _fun84320: for (var _fun84320_ip = 0;;) switch (_fun84320_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/voice/SettingsVoiceScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SettingsVoiceScreen, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1

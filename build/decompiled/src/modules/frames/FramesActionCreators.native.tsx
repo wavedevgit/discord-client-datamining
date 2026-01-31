@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var4;
-    var0 = function() { // Original name: _launchFrameOnNative, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var6.bind(var0)(var5);
     var11 = var1;
     var5 = copyDataProperties(var11, var10);
-    var5 = function() { // Original name: launchFrameOnNative, environment: var3
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

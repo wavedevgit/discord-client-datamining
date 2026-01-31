@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var18;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: getHeaderBackground, environment: var6
+    var0 = function arg0, arg1() {
         var1 = _closure1_slot19;
         var0 = arg0;
         var1 = var1[var0];
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: getPremiumImage, environment: var6
+    var0 = function arg0, arg1() {
         var1 = _closure1_slot20;
         var0 = arg0;
         var1 = var1[var0];
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: getPremiumImageStyle, environment: var6
+    var0 = function arg0, arg1() {
         var1 = _closure1_slot21;
         var0 = arg0;
         var1 = var1[var0];
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: getLogo, environment: var6
+    var0 = function arg0, arg1() {
         var1 = _closure1_slot22;
         var0 = arg0;
         var1 = var1[var0];
@@ -44,21 +44,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: getLogoStyle, environment: var6
+    var0 = function arg0() {
         var1 = _closure1_slot23;
         var0 = arg0;
         var0 = var1[var0];
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: getPlanDescriptionStyle, environment: var6
+    var0 = function arg0() {
         var1 = _closure1_slot24;
         var0 = arg0;
         var0 = var1[var0];
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: handleCancelSubscription, environment: var6
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot32;
         var2 = var3.apply;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: _handleCancelSubscription, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var5 = function(arg0, arg1) { // Original name: onCancelClick, environment: var6
+    var5 = function arg0, arg1() {
         _fun59038: for (var _fun59038_ip = 0;;) switch (_fun59038_ip) {
             case 0:
                 var4 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.WhatYouLoseMode;
                 var7 = var7.CANCEL;
                 var0.mode = var7;
-                var6 = function(arg0) { // Original name: onContinue, environment: var6
+                var6 = function arg0() {
                     var4 = _closure1_slot31;
                     var3 = _closure2_slot0;
                     var2 = _closure2_slot1;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: handleManageSubscription, environment: var6
+    var4 = function arg0, arg1, arg2() {
         _fun59040: for (var _fun59040_ip = 0;;) switch (_fun59040_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var4;
-    var3 = function() { // Original name: onResubscribeClick, environment: var6
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot36;
         var2 = var3.apply;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var3;
-    var0 = function() { // Original name: _onResubscribeClick, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var0;
-    var1 = function(arg0) { // Original name: PremiumSubscriptionHeader, environment: var6
+    var1 = function arg0() {
         _fun59045: for (var _fun59045_ip = 0;;) switch (_fun59045_ip) {
             case 0:
                 var0 = arg0;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var26 = var17.button;
                 var11.style = var26;
-                var26 = function() { // Original name: onPress, environment: var16
+                var26 = function() {
                     var2 = _closure1_slot35;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var23[var26];
                 var21 = var25.bind(var3)(var18);
                 var18 = {};
-                var27 = function() { // Original name: onPress, environment: var16
+                var27 = function() {
                     var4 = _closure1_slot34;
                     var3 = _closure2_slot0;
                     var2 = _closure2_slot1;
@@ -950,7 +950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var17 = var17.cancelLink;
                 var13.style = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var3 = _closure1_slot33;
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot2;
@@ -1640,7 +1640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'components_native/premium/PremiumSubscriptionDetails.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function(arg0) { // Original name: PremiumSubscriptionDetails, environment: var6
+    var6 = function arg0() {
         _fun59051: for (var _fun59051_ip = 0;;) switch (_fun59051_ip) {
             case 0:
                 var0 = arg0;

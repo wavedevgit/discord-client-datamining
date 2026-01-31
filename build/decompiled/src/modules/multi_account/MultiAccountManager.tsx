@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113722: for (var _fun113722_ip = 0;;) switch (_fun113722_ip) {
             case 0:
             case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: MultiAccountManager, environment: var5
+        var3 = function arg0() {
             _fun113726: for (var _fun113726_ip = 0;;) switch (_fun113726_ip) {
                 case 0:
                     var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var6.bind(var7)(var8, var0);
                     var _closure3_slot0 = var0;
                     var6 = {};
-                    var7 = function(arg0) { // Original name: LOGOUT, environment: var5
+                    var7 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleLogout;
                         var0 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = '_initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot0;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_terminate';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;

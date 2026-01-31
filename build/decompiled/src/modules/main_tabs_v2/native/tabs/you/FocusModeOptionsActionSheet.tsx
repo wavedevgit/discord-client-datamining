@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 30;
     var6 = var6 * var7;
     var3.duration = var6;
-    var6 = function() { // Original name: label, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.Millis;
     var7 = var7.HOUR;
     var3.duration = var7;
-    var7 = function() { // Original name: label, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 3;
     var7 = var7 * var10;
     var3.duration = var7;
-    var7 = function() { // Original name: label, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 8;
     var10 = var3 * var10;
     var7.duration = var10;
-    var10 = function() { // Original name: label, environment: var1
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.Millis;
     var8 = var8.DAY;
     var7.duration = var8;
-    var8 = function() { // Original name: label, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6[4] = var7;
     var7 = {};
     var7.duration = var0;
-    var8 = function() { // Original name: label, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FocusModeOptionsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun103041: for (var _fun103041_ip = 0;;) switch (_fun103041_ip) {
             case 0:
                 var0 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.rk35Gm;
                 var15 = var18.bind(var19)(var15);
                 var7.accessibilityHint = var15;
-                var15 = function() { // Original name: onPress, environment: var8
+                var15 = function() {
                     var2 = _closure2_slot0;
                     var0 = undefined;
                     var1 = false;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.accessibilityLabel = var7;
                     var7 = var0.bind(var3)();
                     var1.accessibilityHint = var7;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var3 = _closure2_slot0;
                         var2 = _closure3_slot0;
                         var0 = undefined;

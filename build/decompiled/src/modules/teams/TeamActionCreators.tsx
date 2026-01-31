@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot2 = var1;
     var1 = {};
-    var3 = function() { // Original name: fetchTeams, environment: var3
+    var3 = function() {
         _fun116561: for (var _fun116561_ip = 0;;) switch (_fun116561_ip) {
             case 0:
                 var4 = arguments[0];

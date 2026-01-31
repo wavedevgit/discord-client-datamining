@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.ANDROID_DEFAULT_BUNDLE_NAME = var3;
             var3 = 'app:///main.jsbundle';
             var2.IOS_DEFAULT_BUNDLE_NAME = var3;
-            var1 = function() { // Original name: createReactNativeRewriteFrames, environment: var1
+            var1 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 1;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var0)(var1);
                 var1 = var2.rewriteFramesIntegration;
                 var0 = {};
-                var3 = function(arg0) { // Original name: iteratee, environment: var3
+                var3 = function arg0() {
                     _fun12255: for (var _fun12255_ip = 0;;) switch (_fun12255_ip) {
                         case 0:
                             var0 = arg0;

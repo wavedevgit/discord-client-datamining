@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'ThirdPartyErrorsFilter';
         var0.name = var2;
-        var2 = function(arg0) { // Original name: setup, environment: var1
+        var2 = function arg0() {
             var3 = arg0;
             var _closure3_slot0 = var3;
             var4 = var3.on;
@@ -120,11 +120,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.setup = var2;
-        var1 = function(arg0) { // Original name: processEvent, environment: var1
+        var1 = function arg0() {
             _fun99631: for (var _fun99631_ip = 0;;) switch (_fun99631_ip) {
                 case 0:
                     var0 = arg0;
-                    var3 = function(arg0) { // Original name: getBundleKeysForAllFramesWithFilenames, environment: var2
+                    var3 = function arg0() {
                         _fun99632: for (var _fun99632_ip = 0;;) switch (_fun99632_ip) {
                             case 0:
                                 var3 = _closure1_slot0;

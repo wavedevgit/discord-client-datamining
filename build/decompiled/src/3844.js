@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.useCallback;
     var _closure1_slot0 = var3;
-    var1 = function(arg0, arg1) { // Original name: useWorkletCallback, environment: var1
+    var1 = function arg0, arg1() {
         _fun34851: for (var _fun34851_ip = 0;;) switch (_fun34851_ip) {
             case 0:
                 var3 = arg1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: IntlLink, environment: var6
+    var1 = function arg0() {
         _fun14037: for (var _fun14037_ip = 0;;) switch (_fun14037_ip) {
             case 0:
                 var0 = arg0;

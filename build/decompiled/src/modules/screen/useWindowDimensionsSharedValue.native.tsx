@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var4;
     var _closure1_slot4 = var1;
     var1 = function() { // Environment: var3
-        var0 = function() { // Original name: getWindowDimensionsWorklet, environment: var0
+        var0 = function() {
             _fun99980: for (var _fun99980_ip = 0;;) switch (_fun99980_ip) {
                 case 0:
                     var0 = arguments[0];
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/screen/useWindowDimensionsSharedValue.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useWindowDimensionsSharedValue, environment: var3
+    var3 = function() {
         _fun99981: for (var _fun99981_ip = 0;;) switch (_fun99981_ip) {
             case 0:
                 var0 = arguments[0];

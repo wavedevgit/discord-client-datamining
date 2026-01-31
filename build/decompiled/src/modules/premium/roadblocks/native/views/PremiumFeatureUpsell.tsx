@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getPremiumUpsellType, environment: var1
+    var0 = function arg0() {
         _fun68500: for (var _fun68500_ip = 0;;) switch (_fun68500_ip) {
             case 0:
                 var3 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: PremiumFeatureUpsellPill, environment: var1
+    var0 = function arg0() {
         _fun68501: for (var _fun68501_ip = 0;;) switch (_fun68501_ip) {
             case 0:
                 var0 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ButtonColors;
                 var9 = var9.GREEN;
                 var5.color = var9;
-                var9 = function() { // Original name: renderIcon, environment: var8
+                var9 = function() {
                     _fun68503: for (var _fun68503_ip = 0;;) switch (_fun68503_ip) {
                         case 0:
                             var3 = _closure1_slot11;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var5.renderIcon = var9;
-                var8 = function() { // Original name: renderLinearGradient, environment: var8
+                var8 = function() {
                     _fun68504: for (var _fun68504_ip = 0;;) switch (_fun68504_ip) {
                         case 0:
                             var3 = _closure1_slot11;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot15 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: animationEnterExit, environment: var0
+        var0 = function arg0, arg1() {
             var7 = arg1;
             var _closure3_slot0 = var7;
             var0 = {};
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var9[var3];
             var3 = var8.bind(var4)(var3);
             var12 = var3.springStandard;
-            var3 = function(arg0) { // Original name: l, environment: var2
+            var3 = function arg0() {
                 _fun68508: for (var _fun68508_ip = 0;;) switch (_fun68508_ip) {
                     case 0:
                         var2 = _closure3_slot0;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/roadblocks/native/views/PremiumFeatureUpsell.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumFeatureUpsell, environment: var1
+    var1 = function arg0() {
         _fun68509: for (var _fun68509_ip = 0;;) switch (_fun68509_ip) {
             case 0:
                 var3 = arg0;

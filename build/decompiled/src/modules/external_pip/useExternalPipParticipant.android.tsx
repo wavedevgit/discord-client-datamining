@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun110238: for (var _fun110238_ip = 0;;) switch (_fun110238_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun110240: for (var _fun110240_ip = 0;;) switch (_fun110240_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: useSelectedParticipant, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.channelId;
         var _closure2_slot0 = var9;
@@ -837,7 +837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/external_pip/useExternalPipParticipant.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useExternalPipParticipant, environment: var1
+    var1 = function() {
         _fun110248: for (var _fun110248_ip = 0;;) switch (_fun110248_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 71:
                 var3 = {};
                 var3.channelId = var5;
-                var1 = function(arg0) { // Original name: useFocusedParticipant, environment: var0
+                var1 = function arg0() {
                     var1 = arg0;
                     var1 = var1.channelId;
                     var _closure3_slot0 = var1;
@@ -1084,7 +1084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 158:
                 var6 = {};
                 var6.selectedParticipantStreamId = var4;
-                var0 = function(arg0) { // Original name: useSetHasActiveVideoOutputSink, environment: var0
+                var0 = function arg0() {
                     var1 = arg0;
                     var4 = var1.selectedParticipantStreamId;
                     var _closure3_slot0 = var4;

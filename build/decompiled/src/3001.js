@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = require;
     var1 = exports;
     var9 = dependencyMap;
-    var5 = function(arg0) { // Original name: _interopRequireDefault, environment: var8
+    var5 = function arg0() {
         _fun23978: for (var _fun23978_ip = 0;;) switch (_fun23978_ip) {
             case 0:
                 var2 = arg0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9.any = var10;
     var4.parsePatterns = var9;
     var4.defaultParseWidth = var5;
-    var8 = function(arg0) { // Original name: valueCallback, environment: var8
+    var8 = function arg0() {
         var1 = arg0;
         var0 = 1;
         var0 = var1 + var0;

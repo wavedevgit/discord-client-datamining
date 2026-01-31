@@ -61,12 +61,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/share/native/AppShare.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppShare, environment: var1
+    var1 = function arg0() {
         _fun118133: for (var _fun118133_ip = 0;;) switch (_fun118133_ip) {
             case 0:
                 var9 = arg0;
                 var _closure2_slot0 = var9;
-                var1 = function(arg0) { // Original name: useInitialization, environment: var0
+                var1 = function arg0() {
                     _fun118134: for (var _fun118134_ip = 0;;) switch (_fun118134_ip) {
                         case 0:
                             var0 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var3 = undefined;
                 var4 = var1.bind(var3)(var9);
-                var1 = function() { // Original name: useAuthenticated, environment: var0
+                var1 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 8;

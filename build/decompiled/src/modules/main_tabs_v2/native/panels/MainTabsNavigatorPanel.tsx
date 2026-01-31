@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: MainTabsNavigatorPanel, environment: var1
+    var1 = function() {
         _fun100593: for (var _fun100593_ip = 0;;) switch (_fun100593_ip) {
             case 0:
                 var1 = _closure1_slot13;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = new Array(1);
                 var10[0] = var1;
                 var6 = function() { // Environment: var0
-                    var4 = function(arg0) { // Original name: handleStateChange, environment: var0
+                    var4 = function arg0() {
                         var2 = _closure2_slot12;
                         var3 = _closure1_slot0;
                         var1 = _closure1_slot2;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7[var30];
                 var2 = var5.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: re, environment: var0
+                var0 = function() {
                     _fun100613: for (var _fun100613_ip = 0;;) switch (_fun100613_ip) {
                         case 0:
                             var0 = {};

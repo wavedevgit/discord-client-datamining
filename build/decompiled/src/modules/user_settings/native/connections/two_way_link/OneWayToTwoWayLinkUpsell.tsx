@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.upsellImage = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: OneWayToTwoWayNewTag, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.markAsDismissed;
         var _closure2_slot0 = var7;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var17 = new Array(1);
         var17[0] = var19;
         var12.contentTypes = var17;
-        var16 = function(arg0) { // Original name: children, environment: var16
+        var16 = function arg0() {
             _fun82308: for (var _fun82308_ip = 0;;) switch (_fun82308_ip) {
                 case 0:
                     var0 = arg0;

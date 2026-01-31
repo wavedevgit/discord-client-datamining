@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: useScaledRowHeightData, environment: var3
+    var1 = function() {
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useScaledRowHeight, environment: var3
+    var3 = function() {
         var1 = _closure1_slot4;
         var0 = undefined;
         var0 = var1.bind(var0)();

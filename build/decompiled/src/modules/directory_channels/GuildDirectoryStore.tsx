@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun71291: for (var _fun71291_ip = 0;;) switch (_fun71291_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildDirectoryStore, environment: var5
+        var3 = function() {
             _fun71295: for (var _fun71295_ip = 0;;) switch (_fun71295_ip) {
                 case 0:
                     var3 = this;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isFetching';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentCategoryId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun71297: for (var _fun71297_ip = 0;;) switch (_fun71297_ip) {
                 case 0:
                     var2 = _closure1_slot11;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDirectoryEntries';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun71298: for (var _fun71298_ip = 0;;) switch (_fun71298_ip) {
                 case 0:
                     var4 = arg0;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDirectoryEntry';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun71299: for (var _fun71299_ip = 0;;) switch (_fun71299_ip) {
                 case 0:
                     var1 = _closure1_slot10;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDirectoryAllEntriesCount';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun71300: for (var _fun71300_ip = 0;;) switch (_fun71300_ip) {
                 case 0:
                     var0 = global;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDirectoryCategoryCounts';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun71301: for (var _fun71301_ip = 0;;) switch (_fun71301_ip) {
                 case 0:
                     var2 = _closure1_slot13;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAdminGuildEntryIds';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot14;
             var0 = arg0;
             var0 = var1[var0];
@@ -313,14 +313,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleFetchStart, environment: var3
+    var8 = function() {
         var0 = true;
         _closure1_slot9 = var0;
         var0 = undefined;
         return var0;
     };
     var1.GUILD_DIRECTORY_FETCH_START = var8;
-    var8 = function(arg0) { // Original name: handleFetchSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var6 = var0.entries;
@@ -382,14 +382,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_FETCH_SUCCESS = var8;
-    var8 = function() { // Original name: handleFetchFailure, environment: var3
+    var8 = function() {
         var0 = false;
         _closure1_slot9 = var0;
         var0 = undefined;
         return var0;
     };
     var1.GUILD_DIRECTORY_FETCH_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleCreateEntry, environment: var3
+    var8 = function arg0() {
         _fun71307: for (var _fun71307_ip = 0;;) switch (_fun71307_ip) {
             case 0:
                 var0 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_DIRECTORY_ENTRY_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleDeleteEntry, environment: var3
+    var8 = function arg0() {
         _fun71308: for (var _fun71308_ip = 0;;) switch (_fun71308_ip) {
             case 0:
                 var0 = arg0;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_DIRECTORY_ENTRY_DELETE = var8;
-    var8 = function(arg0) { // Original name: handleUpdateEntry, environment: var3
+    var8 = function arg0() {
         _fun71309: for (var _fun71309_ip = 0;;) switch (_fun71309_ip) {
             case 0:
                 var0 = arg0;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_DIRECTORY_ENTRY_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleSelectCategory, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = var0.categoryId;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_CATEGORY_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleFetchCategoryCounts, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = var0.counts;
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_DIRECTORY_COUNTS_FETCH_SUCCESS = var8;
-    var3 = function(arg0) { // Original name: handleFetchAdminEntries, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.channelId;
         var4 = var1.entries;

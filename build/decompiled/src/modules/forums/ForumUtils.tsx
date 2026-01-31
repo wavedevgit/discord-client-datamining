@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: getForumPostReadStates, environment: var1
+    var3 = function arg0, arg1() {
         _fun53461: for (var _fun53461_ip = 0;;) switch (_fun53461_ip) {
             case 0:
                 var2 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var0)(var4);
     var4 = var4.ChannelFlags;
     var _closure1_slot6 = var4;
-    var4 = function() { // Original name: getCreationDefaultFormatter, environment: var1
+    var4 = function() {
         var0 = {};
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/forums/ForumUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getForumPostReadStates = var3;
-    var3 = function(arg0) { // Original name: getForumPostReadStatesById, environment: var1
+    var3 = function arg0() {
         _fun53463: for (var _fun53463_ip = 0;;) switch (_fun53463_ip) {
             case 0:
                 var1 = arguments[1];
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getForumPostReadStatesById = var3;
-    var3 = function(arg0, arg1) { // Original name: getForumTimestampFormatter, environment: var1
+    var3 = function arg0, arg1() {
         _fun53464: for (var _fun53464_ip = 0;;) switch (_fun53464_ip) {
             case 0:
                 var1 = _closure1_slot5;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getForumTimestampFormatter = var3;
-    var3 = function(arg0, arg1) { // Original name: canDisplayPostUnreadMessageCount, environment: var1
+    var3 = function arg0, arg1() {
         _fun53465: for (var _fun53465_ip = 0;;) switch (_fun53465_ip) {
             case 0:
                 var4 = arg0;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canDisplayPostUnreadMessageCount = var3;
-    var1 = function(arg0) { // Original name: isForumPostPinned, environment: var1
+    var1 = function arg0() {
         _fun53466: for (var _fun53466_ip = 0;;) switch (_fun53466_ip) {
             case 0:
                 var3 = _closure1_slot2;

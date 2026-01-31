@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useIsFeatureUpsellEnabled, environment: var1
+    var0 = function arg0() {
         _fun61412: for (var _fun61412_ip = 0;;) switch (_fun61412_ip) {
             case 0:
                 var1 = arg0;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun61412
                 }
             case 33:
-                var3 = function(arg0) { // Original name: p, environment: var0
+                var3 = function arg0() {
                     var0 = arg0;
                     var0 = var0.enabled;
                     return var0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: isSoundboardSectionNitroLocked, environment: var1
+    var3 = function arg0, arg1() {
         _fun61416: for (var _fun61416_ip = 0;;) switch (_fun61416_ip) {
             case 0:
                 var1 = arg1;
@@ -174,10 +174,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSoundboardSectionNitroLocked = var3;
-    var3 = function() { // Original name: useIsPremiumFileUploadUpsellEnabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot6;
         var1 = {};
-        var4 = function(arg0) { // Original name: featureEnabledPredicate, environment: var3
+        var4 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 6;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var5.bind(var0)(var4);
         var4 = var4.PremiumFileUploadUpsellExperiment;
         var1.FeatureExperiment = var4;
-        var3 = function(arg0) { // Original name: experimentEnabledPredicate, environment: var3
+        var3 = function arg0() {
             var0 = arg0;
             var0 = var0.showInlineUpsell;
             return var0;
@@ -208,10 +208,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsPremiumFileUploadUpsellEnabled = var3;
-    var3 = function() { // Original name: useIsPremiumAppIconUpsellEnabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot6;
         var1 = {};
-        var3 = function(arg0) { // Original name: featureEnabledPredicate, environment: var3
+        var3 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 6;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsPremiumAppIconUpsellEnabled = var3;
-    var1 = function(arg0) { // Original name: getUpsellType, environment: var1
+    var1 = function arg0() {
         _fun61422: for (var _fun61422_ip = 0;;) switch (_fun61422_ip) {
             case 0:
                 var5 = arg0;

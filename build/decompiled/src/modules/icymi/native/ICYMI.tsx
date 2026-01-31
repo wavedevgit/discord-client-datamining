@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: SettingsButton, environment: var1
+    var0 = function() {
         var3 = _closure1_slot14;
         var5 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.size = var7;
         var4 = var6.bind(var2)(var5, var4);
         var0.icon = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var3 = 16;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: InfoButton, environment: var1
+    var0 = function() {
         var3 = _closure1_slot14;
         var5 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.size = var7;
         var4 = var6.bind(var2)(var5, var4);
         var0.icon = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var3 = _closure1_slot2;
             var2 = 16;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: ICYMIHeaderTextWrapper, environment: var1
+    var0 = function() {
         var1 = _closure1_slot18;
         var3 = undefined;
         var5 = var1.bind(var3)();
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: handleEndReached, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 34;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: ICYMI, environment: var1
+    var0 = function arg0() {
         _fun103487: for (var _fun103487_ip = 0;;) switch (_fun103487_ip) {
             case 0:
                 var0 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = _closure1_slot4;
                 var12 = var18.useRef;
                 var8 = {};
-                var19 = function() { // Original name: scrollToTop, environment: var13
+                var19 = function() {
                     _fun103495: for (var _fun103495_ip = 0;;) switch (_fun103495_ip) {
                         case 0:
                             var0 = _closure2_slot10;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 50:
                             var4 = _closure2_slot11;
                             var2 = {};
-                            var5 = function() { // Original name: scrollToTop, environment: var3
+                            var5 = function() {
                                 var4 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 48;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 76:
                             var2 = _closure2_slot11;
                             var1 = {};
-                            var3 = function() { // Original name: scrollToTop, environment: var3
+                            var3 = function() {
                                 _fun103498: for (var _fun103498_ip = 0;;) switch (_fun103498_ip) {
                                     case 0:
                                         var0 = _closure2_slot10;
@@ -1074,7 +1074,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var30[var8];
                 var11 = var11.bind(var3)(var8);
                 var8 = {};
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 16;
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.id;
         return var0;
@@ -1693,7 +1693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ICYMI.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMITab, environment: var1
+    var1 = function arg0() {
         _fun103514: for (var _fun103514_ip = 0;;) switch (_fun103514_ip) {
             case 0:
                 var1 = arg0;

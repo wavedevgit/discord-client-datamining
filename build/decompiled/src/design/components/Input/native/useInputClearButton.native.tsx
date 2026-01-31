@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0, arg1) { // Original name: useInputClearButtonConfig, environment: var3
+    var1 = function arg0, arg1() {
         _fun47975: for (var _fun47975_ip = 0;;) switch (_fun47975_ip) {
             case 0:
                 var2 = arg1;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'design/components/Input/native/useInputClearButton.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useInputClearButton, environment: var3
+    var3 = function arg0, arg1() {
         _fun47976: for (var _fun47976_ip = 0;;) switch (_fun47976_ip) {
             case 0:
                 var3 = _closure1_slot4;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun44069: for (var _fun44069_ip = 0;;) switch (_fun44069_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun44071: for (var _fun44071_ip = 0;;) switch (_fun44071_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: getSoundFromSounds, environment: var1
+    var0 = function arg0, arg1() {
         _fun44072: for (var _fun44072_ip = 0;;) switch (_fun44072_ip) {
             case 0:
                 var3 = arg0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/sounds/soundmoji/utils/getSoundFromMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getSoundFromMessage, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun44074: for (var _fun44074_ip = 0;;) switch (_fun44074_ip) {
             case 0:
                 var9 = arg2;

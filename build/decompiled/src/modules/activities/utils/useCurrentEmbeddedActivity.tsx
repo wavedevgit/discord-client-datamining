@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/useCurrentEmbeddedActivity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useCurrentEmbeddedActivity, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;

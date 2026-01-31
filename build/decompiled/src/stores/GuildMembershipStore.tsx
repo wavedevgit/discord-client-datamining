@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun15978: for (var _fun15978_ip = 0;;) switch (_fun15978_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun15980: for (var _fun15980_ip = 0;;) switch (_fun15980_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun15981: for (var _fun15981_ip = 0;;) switch (_fun15981_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: GuildMembershipStore, environment: var5
+        var3 = function() {
             _fun15985: for (var _fun15985_ip = 0;;) switch (_fun15985_ip) {
                 case 0:
                     var4 = this;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = new Array(3);
                     var9[0] = var6;
                     var6 = {};
-                    var8 = function(arg0) { // Original name: CACHE_LOADED, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleCacheLoaded;
                         var0 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.CACHE_LOADED = var8;
-                    var8 = function(arg0) { // Original name: CACHE_LOADED_LAZY, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleCacheLoadedLazy;
                         var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.CACHE_LOADED_LAZY = var8;
-                    var8 = function(arg0) { // Original name: CONNECTION_OPEN, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleConnectionOpen;
                         var0 = arg0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.CONNECTION_OPEN = var8;
-                    var8 = function(arg0) { // Original name: GUILD_CREATE, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleGuildCreate;
                         var0 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.GUILD_CREATE = var8;
-                    var8 = function(arg0) { // Original name: GUILD_DELETE, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleGuildDelete;
                         var0 = arg0;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'allGuildIds';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0.guildIds;
             return var0;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isMember';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var2 = var0.guildIds;
             var1 = var2.has;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpen';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var0 = global;
             var2 = var0.Set;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleCacheLoaded';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = global;
             var2 = var0.Set;
             var0 = arg0;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleCacheLoadedLazy';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun15997: for (var _fun15997_ip = 0;;) switch (_fun15997_ip) {
                 case 0:
                     var4 = this;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleGuildCreate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var2 = var0.guildIds;
             var1 = var2.add;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleGuildDelete';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun15999: for (var _fun15999_ip = 0;;) switch (_fun15999_ip) {
                 case 0:
                     var0 = arg0;

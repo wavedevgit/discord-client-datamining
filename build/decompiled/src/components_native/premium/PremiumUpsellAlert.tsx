@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun61441: for (var _fun61441_ip = 0;;) switch (_fun61441_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot22 = var4;
     var4 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: UpsellItem, environment: var0
+        var3 = function() {
             _fun61445: for (var _fun61445_ip = 0;;) switch (_fun61445_ip) {
                 case 0:
                     var3 = this;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun61446: for (var _fun61446_ip = 0;;) switch (_fun61446_ip) {
                 case 0:
                     var0 = this;
@@ -361,7 +361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = false;
     var3.isInitial = var7;
     var4.defaultProps = var3;
-    var3 = function(arg0) { // Original name: PremiumUpsellItem, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.upsellItem;
         var15 = var1.alertWidth;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var3;
-    var4 = function(arg0) { // Original name: GlobalEmojiUpsell, environment: var1
+    var4 = function arg0() {
         _fun61448: for (var _fun61448_ip = 0;;) switch (_fun61448_ip) {
             case 0:
                 var0 = arg0;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var4;
-    var4 = function(arg0) { // Original name: AnimatedEmojiUpsell, environment: var1
+    var4 = function arg0() {
         _fun61449: for (var _fun61449_ip = 0;;) switch (_fun61449_ip) {
             case 0:
                 var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var4;
-    var4 = function(arg0) { // Original name: PremiumGuildIdentityUpsell, environment: var1
+    var4 = function arg0() {
         _fun61450: for (var _fun61450_ip = 0;;) switch (_fun61450_ip) {
             case 0:
                 var0 = arg0;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var4;
-    var4 = function(arg0) { // Original name: CustomProfilesUpsell, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var6 = var0.alertWidth;
         var8 = _closure1_slot0;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var4;
-    var4 = function(arg0) { // Original name: CustomAppIconsUpsell, environment: var1
+    var4 = function arg0() {
         _fun61452: for (var _fun61452_ip = 0;;) switch (_fun61452_ip) {
             case 0:
                 var0 = arg0;
@@ -892,7 +892,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var4;
-    var4 = function(arg0) { // Original name: GlobalStickerUpsell, environment: var1
+    var4 = function arg0() {
         _fun61454: for (var _fun61454_ip = 0;;) switch (_fun61454_ip) {
             case 0:
                 var1 = arg0;
@@ -961,7 +961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var4;
-    var4 = function(arg0) { // Original name: LongerMessageUpsell, environment: var1
+    var4 = function arg0() {
         _fun61455: for (var _fun61455_ip = 0;;) switch (_fun61455_ip) {
             case 0:
                 var0 = arg0;
@@ -1045,7 +1045,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var4;
-    var4 = function(arg0) { // Original name: GuildCapUpsell, environment: var1
+    var4 = function arg0() {
         _fun61456: for (var _fun61456_ip = 0;;) switch (_fun61456_ip) {
             case 0:
                 var0 = arg0;
@@ -1124,7 +1124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var4;
-    var4 = function(arg0) { // Original name: UploadUpsell, environment: var1
+    var4 = function arg0() {
         _fun61457: for (var _fun61457_ip = 0;;) switch (_fun61457_ip) {
             case 0:
                 var0 = arg0;
@@ -1209,7 +1209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12.bind(var13)(var11);
                 var6.subLabel = var11;
                 var6.value = var10;
-                var9 = function(arg0) { // Original name: onValueChange, environment: var9
+                var9 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 36;
@@ -1233,7 +1233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var4;
-    var1 = function(arg0) { // Original name: PremiumUpsellAlert, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.initialUpsellKey;
         var _closure2_slot0 = var7;
@@ -1289,7 +1289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = var8.bind(var14)(var2, var1);
         var _closure2_slot5 = var1;
-        var1 = function(arg0) { // Original name: generateUpsellItems, environment: var4
+        var1 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var3 = _closure1_slot0;
@@ -1429,7 +1429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var1 = var8.bind(var12)(var1, var2);
-        var1 = function() { // Original name: getUploadAlertDescription, environment: var4
+        var1 = function() {
             _fun61467: for (var _fun61467_ip = 0;;) switch (_fun61467_ip) {
                 case 0:
                     var1 = _closure2_slot8;
@@ -1523,7 +1523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var8.GREEN;
         var0.confirmColor = var8;
         var0.confirmText = var7;
-        var7 = function() { // Original name: renderConfirmIcon, environment: var4
+        var7 = function() {
             _fun61468: for (var _fun61468_ip = 0;;) switch (_fun61468_ip) {
                 case 0:
                     var5 = _closure1_slot19;

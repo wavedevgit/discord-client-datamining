@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var5;
         case 125:
             var _closure1_slot0 = var4;
-            var5 = function(arg0) { // Original name: defaultPerformanceNow, environment: var1
+            var5 = function arg0() {
                 var0 = global;
                 var1 = var0.Date;
                 var0 = var1.now;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun97639
             }
         case 152:
-            var4 = function() { // Original name: performanceNow, environment: var1
+            var4 = function() {
                 _fun97641: for (var _fun97641_ip = 0;;) switch (_fun97641_ip) {
                     case 0:
                         var0 = _closure1_slot0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3.nativePerformanceNow;
             _closure1_slot1 = var3;
         case 175:
-            var1 = function() { // Original name: start, environment: var1
+            var1 = function() {
                 var2 = _closure1_slot1;
                 var1 = undefined;
                 var1 = var2.bind(var1)();

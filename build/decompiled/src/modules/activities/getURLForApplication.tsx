@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function(arg0) { // Original name: getNonTestModeUrlForApplication, environment: var4
+    var3 = function arg0() {
         _fun63000: for (var _fun63000_ip = 0;;) switch (_fun63000_ip) {
             case 0:
                 var1 = global;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var3;
-    var1 = function() { // Original name: isUsingDevShelfActivityUrlOverride, environment: var4
+    var1 = function() {
         _fun63001: for (var _fun63001_ip = 0;;) switch (_fun63001_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/activities/getURLForApplication.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: getURLForApplication, environment: var4
+    var4 = function arg0() {
         _fun63002: for (var _fun63002_ip = 0;;) switch (_fun63002_ip) {
             case 0:
                 var3 = arg0;

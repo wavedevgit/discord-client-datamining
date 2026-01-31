@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildsBarPendingGuild, environment: var1
+    var1 = function arg0() {
         _fun101127: for (var _fun101127_ip = 0;;) switch (_fun101127_ip) {
             case 0:
                 var0 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var0;
                 var0 = function() { // Environment: var2
                     var0 = {};
-                    var1 = function() { // Original name: onPress, environment: var1
+                    var1 = function() {
                         _fun101132: for (var _fun101132_ip = 0;;) switch (_fun101132_ip) {
                             case 0:
                                 var2 = _closure2_slot2;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var2 = var3.bind(var4)(var2);
                     var0.accessibilityActions = var2;
-                    var1 = function(arg0) { // Original name: onAccessibilityAction, environment: var1
+                    var1 = function arg0() {
                         _fun101135: for (var _fun101135_ip = 0;;) switch (_fun101135_ip) {
                             case 0:
                                 var1 = arg0;

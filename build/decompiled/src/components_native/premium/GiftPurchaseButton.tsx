@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/GiftPurchaseButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun82694: for (var _fun82694_ip = 0;;) switch (_fun82694_ip) {
             case 0:
                 var0 = arg0;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var8.bind(var3)(var0);
                 var0 = {};
                 var0.style = var12;
-                var11 = function(arg0) { // Original name: text, environment: var11
+                var11 = function arg0() {
                     var0 = arg0;
                     var3 = var0.style;
                     var1 = _closure1_slot1;

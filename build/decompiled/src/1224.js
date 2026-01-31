@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: isAbsolute, environment: var0
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.charAt;
         var0 = 0;
@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1) { // Original name: spliceOne, environment: var0
+    var1 = function arg0, arg1() {
         _fun13503: for (var _fun13503_ip = 0;;) switch (_fun13503_ip) {
             case 0:
                 var1 = arg0;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: resolvePathname, environment: var0
+    var1 = function arg0, arg1() {
         _fun13504: for (var _fun13504_ip = 0;;) switch (_fun13504_ip) {
             case 0:
                 var2 = arg0;

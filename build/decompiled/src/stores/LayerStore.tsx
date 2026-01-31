@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var7
+    var0 = function() {
         _fun46885: for (var _fun46885_ip = 0;;) switch (_fun46885_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var3 = function() { // Original name: handlePopAllLayers, environment: var7
+    var3 = function() {
         var0 = new Array(0);
         _closure1_slot5 = var0;
         var0 = undefined;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var7
-        var3 = function() { // Original name: LayerStore, environment: var5
+        var3 = function() {
             _fun46890: for (var _fun46890_ip = 0;;) switch (_fun46890_ip) {
                 case 0:
                     var3 = this;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'hasLayers';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot5;
             var1 = var0.length;
             var0 = 0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLayers';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleAddLayer, environment: var7
+    var8 = function arg0() {
         _fun46893: for (var _fun46893_ip = 0;;) switch (_fun46893_ip) {
             case 0:
                 var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LAYER_PUSH = var8;
-    var7 = function() { // Original name: handleRemoveLayer, environment: var7
+    var7 = function() {
         _fun46894: for (var _fun46894_ip = 0;;) switch (_fun46894_ip) {
             case 0:
                 var0 = _closure1_slot5;

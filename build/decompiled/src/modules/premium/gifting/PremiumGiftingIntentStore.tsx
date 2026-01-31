@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun95637: for (var _fun95637_ip = 0;;) switch (_fun95637_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun95640: for (var _fun95640_ip = 0;;) switch (_fun95640_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun95642: for (var _fun95642_ip = 0;;) switch (_fun95642_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: getCurrentTime, environment: var4
+    var0 = function() {
         _fun95643: for (var _fun95643_ip = 0;;) switch (_fun95643_ip) {
             case 0:
                 var2 = _closure1_slot19;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: isFriendAnniversaryForYear, environment: var4
+    var0 = function arg0, arg1() {
         _fun95644: for (var _fun95644_ip = 0;;) switch (_fun95644_ip) {
             case 0:
                 var3 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: isFriendAnniversary, environment: var4
+    var0 = function arg0() {
         _fun95645: for (var _fun95645_ip = 0;;) switch (_fun95645_ip) {
             case 0:
                 var4 = arg0;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: categorizeTopAffinityFriendAnniversaries, environment: var4
+    var0 = function() {
         _fun95646: for (var _fun95646_ip = 0;;) switch (_fun95646_ip) {
             case 0:
                 var3 = arguments[0];
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: updateFriendAnniversaries, environment: var4
+    var0 = function() {
         _fun95649: for (var _fun95649_ip = 0;;) switch (_fun95649_ip) {
             case 0:
                 var1 = _closure1_slot18;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: resetFriendAnniversaries, environment: var4
+    var0 = function() {
         var2 = _closure1_slot14;
         var0 = 0;
         var2.length = var0;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: cleanGiftUnreadNotificationLastDismissedTimes, environment: var4
+    var0 = function() {
         var3 = _closure1_slot23;
         var0 = undefined;
         var3 = var3.bind(var0)();
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: maybeUpdateMessageGiftIntentLastShownMap, environment: var4
+    var0 = function arg0() {
         _fun95654: for (var _fun95654_ip = 0;;) switch (_fun95654_ip) {
             case 0:
                 var2 = arg0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: generateFriendAnniversaries, environment: var4
+    var0 = function arg0() {
         _fun95655: for (var _fun95655_ip = 0;;) switch (_fun95655_ip) {
             case 0:
                 var6 = arg0;
@@ -956,7 +956,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: PremiumGiftingIntentStore, environment: var5
+        var3 = function() {
             _fun95660: for (var _fun95660_ip = 0;;) switch (_fun95660_ip) {
                 case 0:
                     var3 = this;
@@ -1004,7 +1004,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun95661: for (var _fun95661_ip = 0;;) switch (_fun95661_ip) {
                 case 0:
                     var2 = arg0;
@@ -1131,7 +1131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -1140,7 +1140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFriendAnniversaries';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -1149,7 +1149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNextRecipientUserIDForNotification';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun95664: for (var _fun95664_ip = 0;;) switch (_fun95664_ip) {
                 case 0:
                     var1 = this;
@@ -1187,7 +1187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isNotificationCooldownActive';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun95666: for (var _fun95666_ip = 0;;) switch (_fun95666_ip) {
                 case 0:
                     var2 = _closure1_slot29;
@@ -1239,8 +1239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canShowFriendsTabBadge';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
-            var1 = function() { // Original name: hasNewHighAffinityFriendAnniversaries, environment: var0
+        var6 = function() {
+            var1 = function() {
                 var0 = global;
                 var2 = var0.Array;
                 var1 = var2.from;
@@ -1268,7 +1268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFriendAnniversaryYears';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95671: for (var _fun95671_ip = 0;;) switch (_fun95671_ip) {
                 case 0:
                     var2 = _closure1_slot17;
@@ -1307,7 +1307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canShowProfilePopoutGiftIntents';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95672: for (var _fun95672_ip = 0;;) switch (_fun95672_ip) {
                 case 0:
                     var3 = arg0;
@@ -1333,7 +1333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isGiftIntentMessageInCooldown';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = _closure1_slot13;
             var1 = var0.messageGiftIntentLastShownMap;
             var0 = arg0;
@@ -1347,7 +1347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDevToolTotalFriendAnniversaries';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -1356,7 +1356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDevToolCurrentDate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -1365,7 +1365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHighestAffinityFriendAnniversaries';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -1378,7 +1378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHighAffinityFriendAnniversaries';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -1391,7 +1391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGiftUnreadNotificationLastDismissedTimes';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             var0 = var0.giftUnreadNotificationLastDismissedTimes;
             return var0;
@@ -1401,7 +1401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMessageGiftIntentLastShownMap';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             var0 = var0.messageGiftIntentLastShownMap;
             return var0;
@@ -1411,7 +1411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getProfilePopoutGiftIntentsDismissMap';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot13;
             var0 = var0.profilePopoutGiftIntentsDismissMap;
             return var0;
@@ -1558,14 +1558,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function() { // Original name: handleConnectionOpen, environment: var4
+    var9 = function() {
         var1 = _closure1_slot28;
         var0 = undefined;
         var1 = var1.bind(var0)();
         return var0;
     };
     var3.CONNECTION_OPEN = var9;
-    var9 = function() { // Original name: handleLogout, environment: var4
+    var9 = function() {
         var1 = {};
         var0 = {};
         var1.messageGiftIntentLastShownMap = var0;
@@ -1584,7 +1584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.LOGOUT = var9;
-    var9 = function(arg0) { // Original name: handleMessageGiftIntentShown, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.recipientUserId;
         var1 = _closure1_slot30;
@@ -1593,7 +1593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MESSAGE_GIFT_INTENT_SHOWN = var9;
-    var9 = function() { // Original name: handleFriendsListGiftIntentsShown, environment: var4
+    var9 = function() {
         var1 = _closure1_slot13;
         var2 = global;
         var3 = var2.Array;
@@ -1605,7 +1605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.FRIENDS_LIST_GIFT_INTENTS_SHOWN = var9;
-    var9 = function() { // Original name: handleGiftUnreadNotificationDismiss, environment: var4
+    var9 = function() {
         var1 = _closure1_slot13;
         var3 = var1.giftUnreadNotificationLastDismissedTimes;
         var2 = var3.push;
@@ -1616,7 +1616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GIFT_UNREAD_NOTIFICATION_DISMISS = var9;
-    var9 = function(arg0) { // Original name: handleGiftIntentFlowPurchasedGift, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.recipientUserId;
         var1 = _closure1_slot30;
@@ -1625,7 +1625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GIFT_INTENT_FLOW_PURCHASED_GIFT = var9;
-    var9 = function(arg0) { // Original name: handleProfilePopoutGiftIntentsDismiss, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.recipientUserId;
         var1 = _closure1_slot13;
@@ -1637,7 +1637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.PROFILE_POPOUT_GIFT_INTENTS_DISMISS = var9;
-    var9 = function() { // Original name: handleDevToolResetFriendsListGiftIntentsShown, environment: var4
+    var9 = function() {
         var1 = _closure1_slot13;
         var0 = new Array(0);
         var1.lastShownFriendsListGiftIntents = var0;
@@ -1645,7 +1645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET = var9;
-    var9 = function() { // Original name: handleDevToolResetGiftMessageCooldown, environment: var4
+    var9 = function() {
         var1 = _closure1_slot13;
         var0 = {};
         var1.messageGiftIntentLastShownMap = var0;
@@ -1653,7 +1653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET = var9;
-    var9 = function() { // Original name: handleDevToolResetGiftUnreadNotificationCooldown, environment: var4
+    var9 = function() {
         var1 = _closure1_slot13;
         var0 = new Array(0);
         var1.giftUnreadNotificationLastDismissedTimes = var0;
@@ -1661,7 +1661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET = var9;
-    var9 = function(arg0) { // Original name: handleDevToolSetFriendAnniversaryCount, environment: var4
+    var9 = function arg0() {
         _fun95694: for (var _fun95694_ip = 0;;) switch (_fun95694_ip) {
             case 0:
                 var0 = arg0;
@@ -1685,7 +1685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT = var9;
-    var9 = function(arg0) { // Original name: handleDevToolSetCurrentDate, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.date;
         _closure1_slot19 = var1;
@@ -1693,14 +1693,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.DEV_TOOLS_SET_CURRENT_DATE = var9;
-    var9 = function() { // Original name: handleDevToolResetCurrentDate, environment: var4
+    var9 = function() {
         var0 = null;
         _closure1_slot19 = var0;
         var0 = undefined;
         return var0;
     };
     var3.DEV_TOOLS_RESET_CURRENT_DATE = var9;
-    var4 = function() { // Original name: handleDevToolResetProfilePopoutGiftIntentsDismiss, environment: var4
+    var4 = function() {
         var1 = _closure1_slot13;
         var0 = {};
         var1.profilePopoutGiftIntentsDismissMap = var0;

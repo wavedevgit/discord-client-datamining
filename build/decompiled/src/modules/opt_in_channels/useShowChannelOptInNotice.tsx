@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/opt_in_channels/useShowChannelOptInNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useShowChannelOptInNotice, environment: var1
+    var1 = function arg0() {
         _fun89187: for (var _fun89187_ip = 0;;) switch (_fun89187_ip) {
             case 0:
                 var2 = arg0;

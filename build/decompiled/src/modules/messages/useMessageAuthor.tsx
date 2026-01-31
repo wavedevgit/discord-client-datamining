@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: useNullableMessageAuthor, environment: var4
+    var5 = function arg0() {
         _fun36502: for (var _fun36502_ip = 0;;) switch (_fun36502_ip) {
             case 0:
                 var11 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var5;
-    var3 = function(arg0, arg1) { // Original name: useNullableUserAuthor, environment: var4
+    var3 = function arg0, arg1() {
         _fun36509: for (var _fun36509_ip = 0;;) switch (_fun36509_ip) {
             case 0:
                 var4 = arg0;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var1 = function(arg0, arg1) { // Original name: getUserAuthor, environment: var4
+    var1 = function arg0, arg1() {
         _fun36514: for (var _fun36514_ip = 0;;) switch (_fun36514_ip) {
             case 0:
                 var4 = arg0;
@@ -636,7 +636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var1;
-    var0 = function(arg0) { // Original name: computeMessageAuthor, environment: var4
+    var0 = function arg0() {
         _fun36515: for (var _fun36515_ip = 0;;) switch (_fun36515_ip) {
             case 0:
                 var2 = arg0;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/messages/useMessageAuthor.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0, arg1) { // Original name: useMessageNickAndColor, environment: var4
+    var6 = function arg0, arg1() {
         _fun36516: for (var _fun36516_ip = 0;;) switch (_fun36516_ip) {
             case 0:
                 var1 = arg1;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var6;
     var2.useNullableMessageAuthor = var5;
-    var5 = function(arg0) { // Original name: getMessageAuthor, environment: var4
+    var5 = function arg0() {
         var0 = arg0;
         var4 = _closure1_slot3;
         var3 = var4.getChannel;
@@ -896,7 +896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getMessageAuthor = var5;
-    var4 = function(arg0, arg1) { // Original name: useUserNickAndColor, environment: var4
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot10;
         var4 = undefined;
         var2 = arg0;

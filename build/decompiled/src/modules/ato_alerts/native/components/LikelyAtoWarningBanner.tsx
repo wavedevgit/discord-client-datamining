@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: LikelyAtoWarningBanner, environment: var6
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.channelId;
         var _closure2_slot0 = var9;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var2.bind(var10)(var0, var1);
         var _closure2_slot5 = var0;
-        var0 = function() { // Original name: handleLearnMore, environment: var6
+        var0 = function() {
             var7 = _closure1_slot0;
             var4 = _closure1_slot2;
             var6 = 8;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.text = var4;
         var4 = 'primary';
         var5.variant = var4;
-        var4 = function() { // Original name: onpress, environment: var6
+        var4 = function() {
             var12 = _closure1_slot1;
             var6 = _closure1_slot2;
             var0 = 10;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var12.bind(var0)(var1);
             var1 = {};
             var1.senderId = var8;
-            var15 = function() { // Original name: handleMutePressed, environment: var15
+            var15 = function() {
                 var2 = _closure2_slot5;
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot2;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.text = var7;
         var7 = 'secondary';
         var5.variant = var7;
-        var6 = function() { // Original name: onpress, environment: var6
+        var6 = function() {
             var2 = _closure2_slot5;
             var3 = _closure1_slot0;
             var1 = _closure1_slot2;

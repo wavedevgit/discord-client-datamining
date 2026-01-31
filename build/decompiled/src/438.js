@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: AppStateImpl, environment: var1
+        var2 = function() {
             _fun5996: for (var _fun5996_ip = 0;;) switch (_fun5996_ip) {
                 case 0:
                     var2 = this;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var4 = 'addEventListener';
         var0.key = var4;
-        var1 = function(arg0, arg1) { // Original name: addEventListener, environment: var1
+        var1 = function arg0, arg1() {
             _fun5999: for (var _fun5999_ip = 0;;) switch (_fun5999_ip) {
                 case 0:
                     var5 = arg0;

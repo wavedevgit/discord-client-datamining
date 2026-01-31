@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: TestLocaleSelector, environment: var1
+    var0 = function() {
         var3 = _closure1_slot11;
         var6 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: LocaleInfo, environment: var1
+    var0 = function() {
         _fun86033: for (var _fun86033_ip = 0;;) switch (_fun86033_ip) {
             case 0:
                 var11 = _closure1_slot0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/intl/native/IntlTestingSettingsPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: IntlTestingSettingsPage, environment: var1
+    var1 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var20 = var12.bind(var3)(var20);
         var21 = var20.uczI4g;
         var20 = {};
-        var24 = function() { // Original name: linkTarget, environment: var15
+        var24 = function() {
             var0 = undefined;
             return var0;
         };
@@ -579,7 +579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = {};
         var16 = 'some user';
         var11.username = var16;
-        var15 = function(arg0) { // Original name: usernameHook, environment: var15
+        var15 = function arg0() {
             var3 = _closure1_slot10;
             var2 = _closure1_slot6;
             var1 = {};

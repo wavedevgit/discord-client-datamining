@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var3.bind(var0)(var1);
     var1 = var1.default;
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: ActivityIndicator, environment: var4
+    var1 = function arg0() {
         _fun1188: for (var _fun1188_ip = 0;;) switch (_fun1188_ip) {
             case 0:
                 var8 = arg0;

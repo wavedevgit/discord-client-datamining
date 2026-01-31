@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun43740: for (var _fun43740_ip = 0;;) switch (_fun43740_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun43743: for (var _fun43743_ip = 0;;) switch (_fun43743_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun43745: for (var _fun43745_ip = 0;;) switch (_fun43745_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: computeRolesForGuild, environment: var3
+    var0 = function arg0() {
         _fun43746: for (var _fun43746_ip = 0;;) switch (_fun43746_ip) {
             case 0:
                 var3 = arg0;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var10 = function() { // Original name: deleteEverything, environment: var3
+    var10 = function() {
         var2 = _closure1_slot16;
         var0 = var2.clear;
         var0 = var0.bind(var2)();
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var9 = function(arg0) { // Original name: handleGuildUpdate, environment: var3
+    var9 = function arg0() {
         _fun43748: for (var _fun43748_ip = 0;;) switch (_fun43748_ip) {
             case 0:
                 var0 = arg0;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var8 = function(arg0) { // Original name: handleRoleUpdate, environment: var3
+    var8 = function arg0() {
         _fun43749: for (var _fun43749_ip = 0;;) switch (_fun43749_ip) {
             case 0:
                 var0 = arg0;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SubscriptionRoleStore, environment: var5
+        var3 = function() {
             _fun43751: for (var _fun43751_ip = 0;;) switch (_fun43751_ip) {
                 case 0:
                     var3 = this;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var5 = this;
             var4 = var5.waitFor;
             var9 = _closure1_slot11;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildIdsWithPurchasableRoles';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun43753: for (var _fun43753_ip = 0;;) switch (_fun43753_ip) {
                 case 0:
                     var1 = _closure1_slot20;
@@ -889,7 +889,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'buildRoles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43754: for (var _fun43754_ip = 0;;) switch (_fun43754_ip) {
                 case 0:
                     var2 = arg0;
@@ -914,7 +914,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSubscriptionRoles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43755: for (var _fun43755_ip = 0;;) switch (_fun43755_ip) {
                 case 0:
                     var3 = arg0;
@@ -940,7 +940,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPurchasableSubscriptionRoles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43756: for (var _fun43756_ip = 0;;) switch (_fun43756_ip) {
                 case 0:
                     var3 = arg0;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserSubscriptionRoles';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun43757: for (var _fun43757_ip = 0;;) switch (_fun43757_ip) {
                 case 0:
                     var3 = arg0;
@@ -992,7 +992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserIsAdmin';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun43758: for (var _fun43758_ip = 0;;) switch (_fun43758_ip) {
                 case 0:
                     var2 = arg0;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CONNECTION_OPEN = var10;
     var1.LOGOUT = var10;
     var1.GUILD_CREATE = var9;
-    var10 = function(arg0) { // Original name: handleGuildDelete, environment: var3
+    var10 = function arg0() {
         _fun43759: for (var _fun43759_ip = 0;;) switch (_fun43759_ip) {
             case 0:
                 var0 = arg0;
@@ -1080,7 +1080,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_ROLE_CREATE = var8;
     var1.GUILD_ROLE_UPDATE = var8;
     var1.GUILD_ROLE_DELETE = var8;
-    var3 = function(arg0) { // Original name: handleGuildMemberUpdate, environment: var3
+    var3 = function arg0() {
         _fun43760: for (var _fun43760_ip = 0;;) switch (_fun43760_ip) {
             case 0:
                 var0 = arg0;

@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var4;
-    var3 = function(arg0) { // Original name: normalize, environment: var1
+    var3 = function arg0() {
         _fun98873: for (var _fun98873_ip = 0;;) switch (_fun98873_ip) {
             case 0:
                 var5 = undefined;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var0 = function(arg0, arg1) { // Original name: visit, environment: var1
+    var0 = function arg0, arg1() {
         _fun98874: for (var _fun98874_ip = 0;;) switch (_fun98874_ip) {
             case 0:
                 var0 = arg1;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun98874
                 }
             case 247:
-                var8 = function(arg0, arg1) { // Original name: stringifyValue, environment: var4
+                var8 = function arg0, arg1() {
                     _fun98875: for (var _fun98875_ip = 0;;) switch (_fun98875_ip) {
                         case 0:
                             var0 = arg0;
@@ -616,7 +616,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = '__esModule';
     var4 = var6.bind(var7)(var2, var4, var5);
     var2.normalize = var3;
-    var3 = function(arg0) { // Original name: normalizeToSize, environment: var1
+    var3 = function arg0() {
         _fun98876: for (var _fun98876_ip = 0;;) switch (_fun98876_ip) {
             case 0:
                 var5 = arg0;
@@ -662,7 +662,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 78:
                 var0 = _closure1_slot4;
                 var0 = var0.bind(var4)(var5, var1);
-                var7 = function(arg0) { // Original name: jsonSize, environment: var7
+                var7 = function arg0() {
                     var0 = global;
                     var3 = var0.JSON;
                     var2 = var3.stringify;
@@ -694,7 +694,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var3;
     var2.normalizeToSize = var3;
-    var1 = function(arg0, arg1) { // Original name: normalizeUrlToBase, environment: var1
+    var1 = function arg0, arg1() {
         _fun98878: for (var _fun98878_ip = 0;;) switch (_fun98878_ip) {
             case 0:
                 var3 = arg0;

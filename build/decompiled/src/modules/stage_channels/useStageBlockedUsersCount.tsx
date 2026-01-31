@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/useStageBlockedUsersCount.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useStageBlockedUsersCount, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useStageBlockedUsersCount = var3;
-    var3 = function(arg0) { // Original name: useStageIgnoredUsersCount, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useStageIgnoredUsersCount = var3;
-    var3 = function(arg0) { // Original name: getStageBlockedUsersCount, environment: var1
+    var3 = function arg0() {
         _fun52992: for (var _fun52992_ip = 0;;) switch (_fun52992_ip) {
             case 0:
                 var3 = _closure1_slot2;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStageBlockedUsersCount = var3;
-    var3 = function(arg0) { // Original name: getStageIgnoredUsersCount, environment: var1
+    var3 = function arg0() {
         _fun52993: for (var _fun52993_ip = 0;;) switch (_fun52993_ip) {
             case 0:
                 var3 = _closure1_slot2;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStageIgnoredUsersCount = var3;
-    var3 = function(arg0) { // Original name: useStageBlockedUsers, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useStageBlockedUsers = var3;
-    var1 = function(arg0) { // Original name: useStageIgnoredUsers, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

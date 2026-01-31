@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/roadblocks/native/views/PremiumUpsellSectionDivider.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: PremiumUpsellSectionDivider, environment: var3
+    var3 = function arg0() {
         _fun68495: for (var _fun68495_ip = 0;;) switch (_fun68495_ip) {
             case 0:
                 var0 = arg0;

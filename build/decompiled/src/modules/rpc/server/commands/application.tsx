@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var9 = var3.SEND_ANALYTICS_EVENT;
     var6 = {};
-    var10 = function(arg0) { // Original name: validation, environment: var7
+    var10 = function arg0() {
         var5 = arg0;
         var6 = _closure1_slot1;
         var7 = _closure1_slot2;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97953: for (var _fun97953_ip = 0;;) switch (_fun97953_ip) {
             case 0:
                 var0 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.GET_APPLICATION_TICKET;
     var3 = {};
     var3.scope = var8;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         _fun97954: for (var _fun97954_ip = 0;;) switch (_fun97954_ip) {
             case 0:
                 var0 = arg0;

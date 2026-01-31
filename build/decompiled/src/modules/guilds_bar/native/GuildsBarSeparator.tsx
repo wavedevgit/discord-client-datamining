@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: GuildsBarSeparator, environment: var1
+    var1 = function() {
         var2 = _closure1_slot5;
         var3 = undefined;
         var4 = var2.bind(var3)();
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var6[var2];
         var5 = var9.bind(var3)(var2);
         var2 = var5.useAnimatedStyle;
-        var1 = function() { // Original name: n, environment: var1
+        var1 = function() {
             var0 = {};
             var6 = _closure1_slot0;
             var7 = _closure1_slot2;

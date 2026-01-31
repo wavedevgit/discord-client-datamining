@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var3.bind(var4)(var2, var0, var1);
     var1 = {};
-    var0 = function(arg0) { // Original name: escape, environment: var0
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /[-[\]\/{}()*+?.\\^$|]/g;

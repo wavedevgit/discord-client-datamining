@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var10;
-    var7 = function() { // Original name: getDefaultIcon, environment: var1
+    var7 = function() {
         var0 = {};
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var7;
-    var6 = function(arg0) { // Original name: isIconExpired, environment: var1
+    var6 = function arg0() {
         _fun61473: for (var _fun61473_ip = 0;;) switch (_fun61473_ip) {
             case 0:
                 var1 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var6;
-    var5 = function() { // Original name: getOfficialAlternateIcons, environment: var1
+    var5 = function() {
         var2 = _closure1_slot3;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var5;
-    var4 = function() { // Original name: getLimitedAlternateIcons, environment: var1
+    var4 = function() {
         var2 = _closure1_slot4;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var3 = function() { // Original name: getIcons, environment: var1
+    var3 = function() {
         var0 = _closure1_slot5;
         var3 = undefined;
         var2 = var0.bind(var3)();
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getOfficialAlternateIcons = var5;
     var2.getLimitedAlternateIcons = var4;
     var2.getIcons = var3;
-    var1 = function(arg0) { // Original name: getIconById, environment: var1
+    var1 = function arg0() {
         _fun61479: for (var _fun61479_ip = 0;;) switch (_fun61479_ip) {
             case 0:
                 var1 = arg0;

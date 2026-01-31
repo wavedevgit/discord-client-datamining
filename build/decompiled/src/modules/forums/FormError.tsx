@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: formSubmitError, environment: var1
+    var0 = function arg0, arg1() {
         _fun73718: for (var _fun73718_ip = 0;;) switch (_fun73718_ip) {
             case 0:
                 var2 = arg1;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: makeEmptyContentError, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot3;
         var0 = _closure1_slot2;
         var2 = var0.EmptyContent;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/forums/FormError.tsx';
     var4 = var5.bind(var6)(var4);
     var2.FormSubmitErrorType = var3;
-    var3 = function() { // Original name: makeEmptyTitleError, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.makeEmptyTitleError = var3;
-    var3 = function() { // Original name: makeEmptyMessageError, environment: var1
+    var3 = function() {
         var2 = _closure1_slot4;
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.makeEmptyMessageError = var3;
-    var3 = function(arg0, arg1) { // Original name: makeAutomodViolationError, environment: var1
+    var3 = function arg0, arg1() {
         _fun73722: for (var _fun73722_ip = 0;;) switch (_fun73722_ip) {
             case 0:
                 var0 = arg1;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.makeAutomodViolationError = var3;
-    var3 = function() { // Original name: makeEmptyTagsError, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var1 = _closure1_slot2;
         var2 = var1.EmptyTags;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.makeEmptyTagsError = var3;
-    var1 = function(arg0, arg1) { // Original name: renderError, environment: var1
+    var1 = function arg0, arg1() {
         _fun73724: for (var _fun73724_ip = 0;;) switch (_fun73724_ip) {
             case 0:
                 var2 = arg0;

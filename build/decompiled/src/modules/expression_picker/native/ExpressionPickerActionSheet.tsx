@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/expression_picker/native/ExpressionPickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExpressionPickerActionSheet, environment: var1
+    var1 = function arg0() {
         _fun73801: for (var _fun73801_ip = 0;;) switch (_fun73801_ip) {
             case 0:
                 var0 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var17 = var6.bind(var7)(var2, var1);
-                var1 = function() { // Original name: dismissSheet, environment: var14
+                var1 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 9;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.channel = var17;
                 var9.expressionType = var16;
                 var9.hideGifFavorites = var15;
-                var15 = function(arg0) { // Original name: onPressEmoji, environment: var14
+                var15 = function arg0() {
                     var3 = _closure2_slot1;
                     var0 = undefined;
                     var2 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var9.onPressEmoji = var15;
-                var15 = function(arg0) { // Original name: onPressGIF, environment: var14
+                var15 = function arg0() {
                     var3 = _closure2_slot3;
                     var0 = undefined;
                     var2 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var9.onPressGIF = var15;
-                var14 = function(arg0) { // Original name: onPressSticker, environment: var14
+                var14 = function arg0() {
                     var3 = _closure2_slot2;
                     var0 = undefined;
                     var2 = arg0;

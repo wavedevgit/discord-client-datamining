@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: NOOP, environment: var1
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelVoiceControls, environment: var1
+    var1 = function arg0() {
         _fun111649: for (var _fun111649_ip = 0;;) switch (_fun111649_ip) {
             case 0:
                 var2 = arg0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var5.bind(var7)(var2);
                 var _closure2_slot2 = var10;
                 var7 = var4.useCallback;
-                var5 = function(arg0) { // Original name: l, environment: var0
+                var5 = function arg0() {
                     var0 = arg0;
                     var3 = var0.offset;
                     var2 = _closure2_slot2;

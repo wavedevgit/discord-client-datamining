@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_limited_access/openGuildLimitedAccessInfoModal.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openGuildLimitedAccessInfoModal, environment: var1
+    var1 = function arg0() {
         _fun32953: for (var _fun32953_ip = 0;;) switch (_fun32953_ip) {
             case 0:
                 var0 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var0)(var1);
                 var2 = var3.openLazy;
                 var1 = {};
-                var4 = function() { // Original name: importer, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot2;
                     var1 = 6;

@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 'NEW_LISTING_EDIT_STATE_ID';
     var2.NEW_LISTING_EDIT_STATE_ID = var3;
-    var3 = function(arg0) { // Original name: openTierCreationModal, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot4;
         var0 = var2.resetImperatively;
         var0 = var0.bind(var2)();
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openTierCreationModal = var3;
-    var1 = function(arg0) { // Original name: openGroupSetupModal, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot4;
         var0 = var2.resetImperatively;
         var0 = var0.bind(var2)();

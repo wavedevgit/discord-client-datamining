@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var16;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var17;
-    var13 = function() { // Original name: fetchSummary, environment: var8
+    var13 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var13;
-    var0 = function() { // Original name: _fetchSummary, environment: var8
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var12 = function() { // Original name: fetchSummaries, environment: var8
+    var12 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _fetchSummaries, environment: var8
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var11 = function(arg0, arg1) { // Original name: setHighlightedSummary, environment: var8
+    var11 = function arg0, arg1() {
         _fun73477: for (var _fun73477_ip = 0;;) switch (_fun73477_ip) {
             case 0:
                 var5 = arg1;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var10 = function(arg0, arg1) { // Original name: setSelectedSummary, environment: var8
+    var10 = function arg0, arg1() {
         _fun73478: for (var _fun73478_ip = 0;;) switch (_fun73478_ip) {
             case 0:
                 var6 = arg0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9 = function(arg0, arg1) { // Original name: updateVisibleMessages, environment: var8
+    var9 = function arg0, arg1() {
         _fun73479: for (var _fun73479_ip = 0;;) switch (_fun73479_ip) {
             case 0:
                 var7 = arg0;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0, arg1) { // Original name: updateCount, environment: var8
+    var0 = function arg0, arg1() {
         _fun73480: for (var _fun73480_ip = 0;;) switch (_fun73480_ip) {
             case 0:
                 var1 = arg0;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var7 = function(arg0, arg1) { // Original name: setSummaryFeedback, environment: var8
+    var7 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.bind(var3)(var1);
         return var0;
     };
-    var6 = function() { // Original name: fetchChannelAffinities, environment: var8
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -579,7 +579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var6;
-    var0 = function() { // Original name: _fetchChannelAffinities, environment: var8
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var5 = function() { // Original name: fetchSummariesBulk, environment: var8
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -754,7 +754,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var5;
-    var0 = function() { // Original name: _fetchSummariesBulk, environment: var8
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1041,7 +1041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var4 = function() { // Original name: useMaybeFetchChannelAffinitiesAndSummaries, environment: var8
+    var4 = function() {
         _fun73492: for (var _fun73492_ip = 0;;) switch (_fun73492_ip) {
             case 0:
                 var3 = arguments[0];
@@ -1094,7 +1094,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = function() { // Environment: var1
                     _fun73495: for (var _fun73495_ip = 0;;) switch (_fun73495_ip) {
                         case 0:
-                            var1 = function() { // Original name: _fetch, environment: var0
+                            var1 = function() {
                                 var3 = undefined;
                                 var0 = undefined;
                                 var2 = _closure1_slot3;
@@ -1171,7 +1171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun73495
                             }
                         case 23:
-                            var1 = function() { // Original name: fetch, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure3_slot0;
                                 var2 = var3.apply;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var3 = function(arg0) { // Original name: useChannelSummaries, environment: var8
+    var3 = function arg0() {
         _fun73500: for (var _fun73500_ip = 0;;) switch (_fun73500_ip) {
             case 0:
                 var0 = arg0;
@@ -1228,7 +1228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function(arg0) { // Original name: deleteSummary, environment: var8
+    var1 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -1238,7 +1238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _deleteSummary, environment: var8
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1401,7 +1401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.fetchSummary = var13;
     var2.fetchSummaries = var12;
     var2.setHighlightedSummary = var11;
-    var11 = function() { // Original name: toggleTopicsBar, environment: var8
+    var11 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -1418,7 +1418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.toggleTopicsBar = var11;
     var2.setSelectedSummary = var10;
     var2.updateVisibleMessages = var9;
-    var8 = function(arg0) { // Original name: stopPolling, environment: var8
+    var8 = function arg0() {
         _fun73507: for (var _fun73507_ip = 0;;) switch (_fun73507_ip) {
             case 0:
                 var3 = arg0;

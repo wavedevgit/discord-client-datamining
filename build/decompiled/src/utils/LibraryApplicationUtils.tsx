@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: convertToTransitionState, environment: var1
+    var3 = function arg0() {
         _fun30733: for (var _fun30733_ip = 0;;) switch (_fun30733_ip) {
             case 0:
                 var2 = arg0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'utils/LibraryApplicationUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: getComboId, environment: var1
+    var4 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getComboId = var4;
-    var4 = function(arg0) { // Original name: convertComboId, environment: var1
+    var4 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = ':';
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.convertComboId = var4;
-    var4 = function(arg0, arg1) { // Original name: shouldShareApplicationActivity, environment: var1
+    var4 = function arg0, arg1() {
         _fun30736: for (var _fun30736_ip = 0;;) switch (_fun30736_ip) {
             case 0:
                 var3 = arg1;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShareApplicationActivity = var4;
-    var4 = function(arg0, arg1) { // Original name: calculateProgressPercentage, environment: var1
+    var4 = function arg0, arg1() {
         _fun30737: for (var _fun30737_ip = 0;;) switch (_fun30737_ip) {
             case 0:
                 var3 = arg1;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.calculateProgressPercentage = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: shouldShowGameInLibrary, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun30738: for (var _fun30738_ip = 0;;) switch (_fun30738_ip) {
             case 0:
                 var3 = arg1;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldShowGameInLibrary = var4;
     var2.convertToTransitionState = var3;
-    var3 = function(arg0) { // Original name: getCombinedProgress, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.reduce;
         var1 = function(arg0, arg1) { // Environment: var0
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getCombinedProgress = var3;
-    var1 = function(arg0) { // Original name: isUserEntitledToLibraryApplication, environment: var1
+    var1 = function arg0() {
         _fun30741: for (var _fun30741_ip = 0;;) switch (_fun30741_ip) {
             case 0:
                 var4 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var7
+    var0 = function() {
         _fun95515: for (var _fun95515_ip = 0;;) switch (_fun95515_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: makeProductListingGuildIndex, environment: var7
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: makeProductListingGuildPublishedIndex, environment: var7
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var8.bind(var0)(var3);
     var9 = var3.Store;
     var3 = function(arg0) { // Environment: var7
-        var3 = function() { // Original name: GuildProductsStore, environment: var5
+        var3 = function() {
             _fun95523: for (var _fun95523_ip = 0;;) switch (_fun95523_ip) {
                 case 0:
                     var3 = this;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getGuildProductsForGuildFetchState';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun95524: for (var _fun95524_ip = 0;;) switch (_fun95524_ip) {
                 case 0:
                     var2 = _closure1_slot8;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildProduct';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.get;
             var0 = arg0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildProductsForGuild';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun95526: for (var _fun95526_ip = 0;;) switch (_fun95526_ip) {
                 case 0:
                     var5 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildProductFetchState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95527: for (var _fun95527_ip = 0;;) switch (_fun95527_ip) {
                 case 0:
                     var2 = _closure1_slot9;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isGuildProductsCacheExpired';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun95528: for (var _fun95528_ip = 0;;) switch (_fun95528_ip) {
                 case 0:
                     var0 = global;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var14 = var8.bind(var0)(var3);
     var3 = {};
-    var10 = function() { // Original name: handleConnectionOpen, environment: var7
+    var10 = function() {
         var2 = _closure1_slot12;
         var0 = var2.clear;
         var0 = var0.bind(var2)();
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.CONNECTION_OPEN = var10;
-    var10 = function(arg0) { // Original name: handleFetchGuildProducts, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var2 = _closure1_slot8;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCTS_FETCH = var10;
-    var10 = function(arg0) { // Original name: handleFetchProductsSuccess, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = var0.products;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCTS_FETCH_SUCCESS = var10;
-    var10 = function(arg0) { // Original name: handleFetchProductsFailure, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot8;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCTS_FETCH_FAILURE = var10;
-    var10 = function(arg0) { // Original name: handleCreateProduct, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.product;
         var2 = _closure1_slot12;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCT_CREATE = var10;
-    var10 = function(arg0) { // Original name: handleUpdateProduct, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.product;
         var2 = _closure1_slot12;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCT_UPDATE = var10;
-    var10 = function(arg0) { // Original name: handleDeleteProduct, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.productId;
         var1 = _closure1_slot12;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCT_DELETE = var10;
-    var10 = function(arg0) { // Original name: handleFetchGuildProduct, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.productId;
         var1 = _closure1_slot9;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCT_FETCH = var10;
-    var10 = function(arg0) { // Original name: handleFetchProductSuccess, environment: var7
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.product;
         var4 = _closure1_slot9;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_PRODUCT_FETCH_SUCCESS = var10;
-    var7 = function(arg0) { // Original name: handleFetchProductFailure, environment: var7
+    var7 = function arg0() {
         _fun95540: for (var _fun95540_ip = 0;;) switch (_fun95540_ip) {
             case 0:
                 var0 = arg0;

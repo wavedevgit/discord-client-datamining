@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = null;
         var0.packToScrollTo = var2;
-        var1 = function(arg0) { // Original name: setPackToScrollTo, environment: var1
+        var1 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var3 = _closure1_slot0;

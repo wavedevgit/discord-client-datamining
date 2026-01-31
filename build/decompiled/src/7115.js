@@ -18,14 +18,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.NativeModules;
     var3 = var3.RNIapIosSk2;
     var _closure1_slot0 = var3;
-    var3 = function() { // Original name: sync, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.sync;
         var0 = var0.bind(var1)();
         return var0;
     };
     var2.sync = var3;
-    var3 = function(arg0) { // Original name: isEligibleForIntroOffer, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.isEligibleForIntroOffer;
         var0 = arg0;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isEligibleForIntroOffer = var3;
-    var3 = function(arg0) { // Original name: subscriptionStatus, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.subscriptionStatus;
         var0 = arg0;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.subscriptionStatus = var3;
-    var3 = function(arg0) { // Original name: currentEntitlement, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.currentEntitlement;
         var0 = arg0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.currentEntitlement = var3;
-    var3 = function(arg0) { // Original name: latestTransaction, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.latestTransaction;
         var0 = arg0;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.latestTransaction = var3;
-    var3 = function(arg0) { // Original name: beginRefundRequest, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.beginRefundRequest;
         var0 = arg0;
@@ -65,14 +65,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.beginRefundRequest = var3;
-    var3 = function() { // Original name: showManageSubscriptions, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.showManageSubscriptions;
         var0 = var0.bind(var1)();
         return var0;
     };
     var2.showManageSubscriptions = var3;
-    var1 = function(arg0) { // Original name: finishTransaction, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.finishTransaction;
         var0 = arg0;

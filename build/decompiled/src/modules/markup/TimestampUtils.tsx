@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: formatTimestampMention, environment: var1
+    var3 = function arg0() {
         _fun44082: for (var _fun44082_ip = 0;;) switch (_fun44082_ip) {
             case 0:
                 var0 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = '__esModule';
     var4 = var8.bind(var9)(var2, var4, var5);
     var5 = {};
-    var4 = function(arg0) { // Original name: t, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.t = var4;
-    var4 = function(arg0) { // Original name: T, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.T = var4;
-    var4 = function(arg0) { // Original name: d, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.d = var4;
-    var4 = function(arg0) { // Original name: D, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.D = var4;
-    var4 = function(arg0) { // Original name: f, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.f = var4;
-    var4 = function(arg0) { // Original name: F, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.F = var4;
-    var4 = function(arg0) { // Original name: s, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.s = var4;
-    var4 = function(arg0) { // Original name: S, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.S = var4;
-    var4 = function(arg0) { // Original name: R, environment: var1
+    var4 = function arg0() {
         _fun44091: for (var _fun44091_ip = 0;;) switch (_fun44091_ip) {
             case 0:
                 var0 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_TIMESTAMP_FORMAT = var5;
     var2.TIMESTAMP_REGEX = var4;
     var2.formatTimestampMention = var3;
-    var3 = function(arg0, arg1) { // Original name: parseTimestamp, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var1 = {};
         var0 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.parseTimestamp = var3;
-    var1 = function(arg0, arg1) { // Original name: unparseTimestamp, environment: var1
+    var1 = function arg0, arg1() {
         _fun44093: for (var _fun44093_ip = 0;;) switch (_fun44093_ip) {
             case 0:
                 var6 = arg0;

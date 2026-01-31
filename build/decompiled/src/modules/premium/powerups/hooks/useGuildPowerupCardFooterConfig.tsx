@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useGuildPowerupCardFooterConfig, environment: var1
+    var1 = function arg0, arg1() {
         _fun102440: for (var _fun102440_ip = 0;;) switch (_fun102440_ip) {
             case 0:
                 var8 = arg0;

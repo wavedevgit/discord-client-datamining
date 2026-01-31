@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: getAsyncContextStrategy, environment: var0
+    var2 = function arg0() {
         _fun99095: for (var _fun99095_ip = 0;;) switch (_fun99095_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getAsyncContextStrategy = var2;
-    var0 = function(arg0) { // Original name: setAsyncContextStrategy, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var1 = 0;

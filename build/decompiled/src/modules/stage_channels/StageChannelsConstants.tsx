@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'stage-channel-audience-notice-shown';
     var2.STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY = var4;
     var2.RequestToSpeakPermissionStates = var3;
-    var1 = function() { // Original name: getStagePublicInfoText, environment: var1
+    var1 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var1 = 1;

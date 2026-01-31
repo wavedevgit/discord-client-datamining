@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AttachmentPreviewAppLauncher, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.uri;
         var10 = var0.isImage;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/attachment/AppLauncherAttachmentOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherAttachmentOption, environment: var1
+    var1 = function arg0() {
         _fun108159: for (var _fun108159_ip = 0;;) switch (_fun108159_ip) {
             case 0:
                 var2 = arg0;

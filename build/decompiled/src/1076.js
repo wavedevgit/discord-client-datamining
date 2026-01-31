@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'HttpContext';
         var0.name = var1;
-        var1 = function(arg0) { // Original name: preprocessEvent, environment: var1
+        var1 = function arg0() {
             _fun11013: for (var _fun11013_ip = 0;;) switch (_fun11013_ip) {
                 case 0:
                     var2 = arg0;

@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MemberlistRankerExperiment = var6;
     var2.HotwheelsHoldoutTheSequel = var5;
     var2.HotwheelsActivityFeedNvidiaExperiment = var4;
-    var4 = function(arg0) { // Original name: isEligibleForContentInventoryV1, environment: var1
+    var4 = function arg0() {
         _fun95337: for (var _fun95337_ip = 0;;) switch (_fun95337_ip) {
             case 0:
                 var4 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEligibleForContentInventoryV1 = var4;
-    var4 = function(arg0) { // Original name: isEligibleForImpressionCapping, environment: var1
+    var4 = function arg0() {
         _fun95338: for (var _fun95338_ip = 0;;) switch (_fun95338_ip) {
             case 0:
                 var3 = _closure1_slot2;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForImpressionCapping = var4;
     var2.ContentInventoryAnalyticsSamplingExperiment = var3;
-    var3 = function(arg0) { // Original name: isEligibleForContentInventoryAnalyticsSampling, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot3;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isEligibleForContentInventoryAnalyticsSampling = var3;
-    var1 = function(arg0) { // Original name: useIsEligibleForContentInventoryAnalyticsSampling, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot3;
         var2 = var3.useExperiment;
         var1 = {};

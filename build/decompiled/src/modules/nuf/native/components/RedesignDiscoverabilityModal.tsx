@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: DiscoverabilityLandingScene, environment: var7
+    var0 = function arg0() {
         _fun113943: for (var _fun113943_ip = 0;;) switch (_fun113943_ip) {
             case 0:
                 var0 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: DiscoverabilityNameScene, environment: var7
+    var0 = function arg0() {
         _fun113946: for (var _fun113946_ip = 0;;) switch (_fun113946_ip) {
             case 0:
                 var1 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var1 = function(arg0) { // Original name: RedesignDiscoverabilityModal, environment: var7
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.route;
         var0 = var0.params;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 24:
                     var2 = _closure2_slot0;
                 case 28:
-                    var1 = function(arg0) { // Original name: getScreens, environment: var0
+                    var1 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var0 = {};
@@ -307,17 +307,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = var9.ImpressionNames;
                         var9 = var9.DISCOVERABILITY;
                         var2.impressionName = var9;
-                        var9 = function() { // Original name: headerLeft, environment: var3
+                        var9 = function() {
                             var0 = null;
                             return var0;
                         };
                         var2.headerLeft = var9;
-                        var9 = function() { // Original name: headerTitle, environment: var3
+                        var9 = function() {
                             var0 = null;
                             return var0;
                         };
                         var2.headerTitle = var9;
-                        var9 = function(arg0) { // Original name: headerRight, environment: var3
+                        var9 = function arg0() {
                             var3 = _closure1_slot7;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = arg0;
                             var7 = var0;
                             var4 = copyDataProperties(var7, var6);
-                            var5 = function() { // Original name: onPress, environment: var4
+                            var5 = function() {
                                 var2 = _closure4_slot0;
                                 var1 = undefined;
                                 var0 = true;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var2.headerRight = var9;
-                        var9 = function() { // Original name: render, environment: var3
+                        var9 = function() {
                             var3 = _closure1_slot7;
                             var2 = _closure1_slot9;
                             var1 = {};
@@ -370,12 +370,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.ImpressionNames;
                         var4 = var4.DISCOVERABILITY;
                         var1.impressionName = var4;
-                        var4 = function() { // Original name: headerTitle, environment: var3
+                        var4 = function() {
                             var0 = null;
                             return var0;
                         };
                         var1.headerTitle = var4;
-                        var3 = function() { // Original name: render, environment: var3
+                        var3 = function() {
                             var3 = _closure1_slot7;
                             var2 = _closure1_slot10;
                             var1 = {};

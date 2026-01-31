@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _debugIntegration, environment: var1
+    var1 = function() {
         _fun99593: for (var _fun99593_ip = 0;;) switch (_fun99593_ip) {
             case 0:
                 var4 = undefined;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'Debug';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     var3 = arg0;
                     var2 = var3.on;
                     var1 = 'beforeSendEvent';

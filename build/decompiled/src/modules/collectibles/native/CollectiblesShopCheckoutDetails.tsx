@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ProfileEffectAssetPreview, environment: var1
+    var0 = function arg0() {
         _fun86603: for (var _fun86603_ip = 0;;) switch (_fun86603_ip) {
             case 0:
                 var0 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: NameplateAssetPreview, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.item;
         var1 = _closure1_slot13;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: CollectibleProductPreview, environment: var1
+    var0 = function arg0() {
         _fun86605: for (var _fun86605_ip = 0;;) switch (_fun86605_ip) {
             case 0:
                 var0 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: CollectibleProductPreviewContent, environment: var1
+    var0 = function arg0() {
         _fun86606: for (var _fun86606_ip = 0;;) switch (_fun86606_ip) {
             case 0:
                 var0 = arg0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: ProductDetails, environment: var1
+    var0 = function arg0() {
         _fun86607: for (var _fun86607_ip = 0;;) switch (_fun86607_ip) {
             case 0:
                 var1 = arg0;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: ProductPriceAmountTag, environment: var1
+    var0 = function arg0() {
         _fun86609: for (var _fun86609_ip = 0;;) switch (_fun86609_ip) {
             case 0:
                 var0 = arg0;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopCheckoutDetails.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CollectiblesShopCheckoutDetails, environment: var1
+    var1 = function arg0() {
         _fun86612: for (var _fun86612_ip = 0;;) switch (_fun86612_ip) {
             case 0:
                 var0 = arg0;

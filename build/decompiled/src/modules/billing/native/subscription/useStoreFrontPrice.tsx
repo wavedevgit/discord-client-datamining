@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/billing/native/subscription/useStoreFrontPrice.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useStoreFrontPrice, environment: var3
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var5;

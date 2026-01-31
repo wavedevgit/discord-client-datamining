@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _readFile, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/FileManagerUtils.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: writeFile, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun100099: for (var _fun100099_ip = 0;;) switch (_fun100099_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.writeFile = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: moveFile, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun100101: for (var _fun100101_ip = 0;;) switch (_fun100101_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.moveFile = var3;
-    var3 = function(arg0, arg1) { // Original name: removeFile, environment: var1
+    var3 = function arg0, arg1() {
         _fun100102: for (var _fun100102_ip = 0;;) switch (_fun100102_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removeFile = var3;
-    var3 = function(arg0, arg1) { // Original name: clearFolder, environment: var1
+    var3 = function arg0, arg1() {
         _fun100103: for (var _fun100103_ip = 0;;) switch (_fun100103_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.clearFolder = var3;
-    var1 = function() { // Original name: readFile, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;

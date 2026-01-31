@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_profile/native/GuildProfileUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useProfilePrimaryColor, environment: var1
+    var3 = function arg0, arg1() {
         _fun59666: for (var _fun59666_ip = 0;;) switch (_fun59666_ip) {
             case 0:
                 var1 = arg0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useProfilePrimaryColor = var3;
-    var1 = function(arg0) { // Original name: getProfilePrimaryColor, environment: var1
+    var1 = function arg0() {
         _fun59667: for (var _fun59667_ip = 0;;) switch (_fun59667_ip) {
             case 0:
                 var1 = arg0;

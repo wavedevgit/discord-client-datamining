@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1) { // Original name: useDisplayProfile, environment: var3
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var4;
-    var1 = function(arg0, arg1) { // Original name: getDisplayProfile, environment: var3
+    var1 = function arg0, arg1() {
         _fun56885: for (var _fun56885_ip = 0;;) switch (_fun56885_ip) {
             case 0:
                 var7 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/user_profile/hooks/useDisplayProfile.tsx';
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
-    var3 = function(arg0, arg1) { // Original name: useDisplayProfileWithFetchEffect, environment: var3
+    var3 = function arg0, arg1() {
         var3 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var3;

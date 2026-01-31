@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = global;
     var1 = var1.TypeError;
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: iterateIterator, environment: var0
+    var1 = function arg0() {
         _fun28882: for (var _fun28882_ip = 0;;) switch (_fun28882_ip) {
             case 0:
                 var5 = arg0;

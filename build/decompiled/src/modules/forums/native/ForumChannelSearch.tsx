@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.text = var7;
                 var6 = var6.cancelButtonText;
                 var1.textStyle = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun71940: for (var _fun71940_ip = 0;;) switch (_fun71940_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'sm';
                 var5.size = var12;
                 var5.defaultValue = var8;
-                var12 = function(arg0) { // Original name: onChange, environment: var7
+                var12 = function arg0() {
                     _fun71943: for (var _fun71943_ip = 0;;) switch (_fun71943_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 0;
                 var8 = var8 === var9;
                 var5.autoFocus = var8;
-                var7 = function() { // Original name: onClear, environment: var7
+                var7 = function() {
                     _fun71944: for (var _fun71944_ip = 0;;) switch (_fun71944_ip) {
                         case 0:
                             var1 = _closure2_slot1;

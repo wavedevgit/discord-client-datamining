@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AnalyticEvents;
     var _closure1_slot5 = var1;
     var1 = {};
-    var7 = function() { // Original name: hasPermission, environment: var3
+    var7 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.hasPermission = var7;
-    var7 = function(arg0) { // Original name: requestPermission, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var5 = _closure1_slot0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.requestPermission = var7;
-    var7 = function() { // Original name: showNotification, environment: var3
+    var7 = function() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.showNotification = var7;
     var1.shouldRequestNotification = var6;
-    var3 = function(arg0) { // Original name: playNotificationSound, environment: var3
+    var3 = function arg0() {
         _fun85171: for (var _fun85171_ip = 0;;) switch (_fun85171_ip) {
             case 0:
                 var5 = arguments[1];

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/kv-storage/js/util/Key.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: combineKey, environment: var1
+    var3 = function arg0, arg1() {
         _fun18501: for (var _fun18501_ip = 0;;) switch (_fun18501_ip) {
             case 0:
                 var5 = arg0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.combineKey = var3;
-    var1 = function(arg0, arg1) { // Original name: combineKeyPrefix, environment: var1
+    var1 = function arg0, arg1() {
         _fun18502: for (var _fun18502_ip = 0;;) switch (_fun18502_ip) {
             case 0:
                 var5 = arg0;

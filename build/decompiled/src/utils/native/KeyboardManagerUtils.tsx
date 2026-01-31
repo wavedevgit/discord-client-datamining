@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/native/KeyboardManagerUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: dismissGlobalKeyboard, environment: var1
+    var3 = function() {
         _fun17611: for (var _fun17611_ip = 0;;) switch (_fun17611_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.dismissGlobalKeyboard = var3;
-    var3 = function() { // Original name: clearCurrentFocusAndDismissKeyboard, environment: var1
+    var3 = function() {
         _fun17612: for (var _fun17612_ip = 0;;) switch (_fun17612_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.clearCurrentFocusAndDismissKeyboard = var3;
-    var1 = function(arg0) { // Original name: onKeyboardChanged, environment: var1
+    var1 = function arg0() {
         _fun17613: for (var _fun17613_ip = 0;;) switch (_fun17613_ip) {
             case 0:
                 var3 = _closure1_slot0;

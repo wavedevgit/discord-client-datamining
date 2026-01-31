@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/native/useChatLayout.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useChatLayout, environment: var1
+    var3 = function() {
         var4 = _closure1_slot1;
         var3 = _closure1_slot2;
         var2 = 1;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: getChatLayout, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 1;

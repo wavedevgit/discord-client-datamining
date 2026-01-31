@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun42861: for (var _fun42861_ip = 0;;) switch (_fun42861_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun42863: for (var _fun42863_ip = 0;;) switch (_fun42863_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var6 = function(arg0) { // Original name: isRealApplication, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var1 = var0.id;
         var0 = _closure1_slot10;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var6;
-    var5 = function(arg0) { // Original name: isEmbeddedApp, environment: var1
+    var5 = function arg0() {
         _fun42865: for (var _fun42865_ip = 0;;) switch (_fun42865_ip) {
             case 0:
                 var2 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var5;
-    var4 = function(arg0) { // Original name: getShelfBadgeTypeIfActive, environment: var1
+    var4 = function arg0() {
         _fun42866: for (var _fun42866_ip = 0;;) switch (_fun42866_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var3 = function(arg0) { // Original name: getEmbeddedActivityConfig, environment: var1
+    var3 = function arg0() {
         _fun42867: for (var _fun42867_ip = 0;;) switch (_fun42867_ip) {
             case 0:
                 var2 = arg0;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.bind(var10)(var8);
     var2.FAKE_BUILT_IN_APP = var7;
     var2.isRealApplication = var6;
-    var6 = function(arg0) { // Original name: getSectionName, environment: var1
+    var6 = function arg0() {
         _fun42868: for (var _fun42868_ip = 0;;) switch (_fun42868_ip) {
             case 0:
                 var1 = arg0;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSectionName = var6;
-    var6 = function(arg0) { // Original name: getSectionDescription, environment: var1
+    var6 = function arg0() {
         _fun42869: for (var _fun42869_ip = 0;;) switch (_fun42869_ip) {
             case 0:
                 var1 = arg0;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSectionDescription = var6;
     var2.isEmbeddedApp = var5;
-    var5 = function(arg0) { // Original name: isPartnerApplication, environment: var1
+    var5 = function arg0() {
         _fun42870: for (var _fun42870_ip = 0;;) switch (_fun42870_ip) {
             case 0:
                 var2 = arg0;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isPartnerApplication = var5;
-    var5 = function(arg0) { // Original name: isPromotedApplication, environment: var1
+    var5 = function arg0() {
         _fun42871: for (var _fun42871_ip = 0;;) switch (_fun42871_ip) {
             case 0:
                 var2 = arg0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isPromotedApplication = var5;
     var2.getShelfBadgeTypeIfActive = var4;
-    var4 = function(arg0) { // Original name: getShelfBadgeNameIfActive, environment: var1
+    var4 = function arg0() {
         _fun42872: for (var _fun42872_ip = 0;;) switch (_fun42872_ip) {
             case 0:
                 var2 = _closure1_slot16;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getShelfBadgeNameIfActive = var4;
     var2.getEmbeddedActivityConfig = var3;
-    var3 = function(arg0) { // Original name: executeAppLauncherCommand, environment: var1
+    var3 = function arg0() {
         _fun42873: for (var _fun42873_ip = 0;;) switch (_fun42873_ip) {
             case 0:
                 var1 = arg0;
@@ -886,7 +886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var5 = var5["5911Lb"];
                                     var5 = var6.bind(var7)(var5);
                                     var2.confirmText = var5;
-                                    var5 = function() { // Original name: onConfirm, environment: var5
+                                    var5 = function() {
                                         var1 = _closure2_slot8;
                                         var0 = undefined;
                                         var0 = var1.bind(var0)();
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.executeAppLauncherCommand = var3;
-    var3 = function(arg0) { // Original name: getApplicationDetails, environment: var1
+    var3 = function arg0() {
         _fun42879: for (var _fun42879_ip = 0;;) switch (_fun42879_ip) {
             case 0:
                 var2 = arg0;
@@ -1012,7 +1012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getApplicationDetails = var3;
-    var3 = function(arg0) { // Original name: isApplicationMonetizedWithIAP, environment: var1
+    var3 = function arg0() {
         _fun42880: for (var _fun42880_ip = 0;;) switch (_fun42880_ip) {
             case 0:
                 var2 = arg0;
@@ -1045,7 +1045,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isApplicationMonetizedWithIAP = var3;
-    var3 = function(arg0) { // Original name: isApplicationAdSupported, environment: var1
+    var3 = function arg0() {
         _fun42881: for (var _fun42881_ip = 0;;) switch (_fun42881_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -1065,7 +1065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isApplicationAdSupported = var3;
-    var3 = function(arg0) { // Original name: appLauncherShowsRecommendations, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 19;
@@ -1079,7 +1079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.appLauncherShowsRecommendations = var3;
-    var3 = function(arg0) { // Original name: formatPrimaryEntryPointCommandName, environment: var1
+    var3 = function arg0() {
         _fun42883: for (var _fun42883_ip = 0;;) switch (_fun42883_ip) {
             case 0:
                 var4 = arg0;
@@ -1109,7 +1109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.formatPrimaryEntryPointCommandName = var3;
-    var3 = function(arg0) { // Original name: ensureRecommendationSectionsOnlyContainActivities, environment: var1
+    var3 = function arg0() {
         _fun42884: for (var _fun42884_ip = 0;;) switch (_fun42884_ip) {
             case 0:
                 var0 = new Array(0);
@@ -1182,7 +1182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ensureRecommendationSectionsOnlyContainActivities = var3;
-    var3 = function(arg0) { // Original name: getInstallAppPropsFromProfileApplication, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -1196,7 +1196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getInstallAppPropsFromProfileApplication = var3;
-    var3 = function(arg0) { // Original name: getInstallAppProps, environment: var1
+    var3 = function arg0() {
         _fun42887: for (var _fun42887_ip = 0;;) switch (_fun42887_ip) {
             case 0:
                 var2 = arg0;
@@ -1232,7 +1232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getInstallAppProps = var3;
-    var1 = function(arg0, arg1) { // Original name: isAppAvailableInAppLauncher, environment: var1
+    var1 = function arg0, arg1() {
         _fun42888: for (var _fun42888_ip = 0;;) switch (_fun42888_ip) {
             case 0:
                 var3 = arg0;

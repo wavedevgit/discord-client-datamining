@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var8 = function(arg0) { // Original name: getURL, environment: var3
+    var8 = function arg0() {
         _fun54363: for (var _fun54363_ip = 0;;) switch (_fun54363_ip) {
             case 0:
                 var3 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var8;
-    var0 = function() { // Original name: _getEmojiColors, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.makeMemoizer;
     var6 = var6.bind(var7)(var8);
     var1.getURL = var6;
-    var6 = function(arg0) { // Original name: filterUnsupportedEmojis, environment: var3
+    var6 = function arg0() {
         _fun54368: for (var _fun54368_ip = 0;;) switch (_fun54368_ip) {
             case 0:
                 var4 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.filterUnsupportedEmojis = var6;
-    var6 = function(arg0) { // Original name: applyPlatformToThemedEmojiColorPalette, environment: var3
+    var6 = function arg0() {
         _fun54370: for (var _fun54370_ip = 0;;) switch (_fun54370_ip) {
             case 0:
                 var1 = arg0;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.applyPlatformToThemedEmojiColorPalette = var6;
-    var6 = function() { // Original name: getEmojiColors, environment: var3
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getEmojiColors = var6;
-    var3 = function(arg0) { // Original name: triggerFullscreenAnimation, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.channelId;
         var5 = var0.messageId;

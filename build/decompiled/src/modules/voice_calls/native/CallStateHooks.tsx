@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_calls/native/CallStateHooks.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: _default, environment: var3
+    var3 = function() {
         _fun69375: for (var _fun69375_ip = 0;;) switch (_fun69375_ip) {
             case 0:
                 var10 = arguments[0];

@@ -64,12 +64,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = _closure1_slot2;
             var2 = _closure2_slot0;
             var7 = var5[var2];
-            var6 = function(arg0) { // Original name: wrapRounded, environment: var1
+            var6 = function arg0() {
                 _fun51247: for (var _fun51247_ip = 0;;) switch (_fun51247_ip) {
                     case 0:
                         var1 = arg0;
                         var _closure4_slot0 = var1;
-                        var0 = function() { // Original name: wrappedFn, environment: var0
+                        var0 = function() {
                             _fun51248: for (var _fun51248_ip = 0;;) switch (_fun51248_ip) {
                                 case 0:
                                     var5 = undefined;
@@ -170,12 +170,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7[var4] = var6;
             var2 = var5[var2];
             var2 = var2[var4];
-            var1 = function(arg0) { // Original name: wrapRaw, environment: var1
+            var1 = function arg0() {
                 _fun51249: for (var _fun51249_ip = 0;;) switch (_fun51249_ip) {
                     case 0:
                         var1 = arg0;
                         var _closure4_slot0 = var1;
-                        var0 = function() { // Original name: wrappedFn, environment: var0
+                        var0 = function() {
                             _fun51250: for (var _fun51250_ip = 0;;) switch (_fun51250_ip) {
                                 case 0:
                                     var3 = undefined;

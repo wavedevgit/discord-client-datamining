@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot3 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: getVal, environment: var0
+        var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun34898: for (var _fun34898_ip = 0;;) switch (_fun34898_ip) {
                 case 0:
                     var6 = arg0;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var5;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: isExtrapolate, environment: var0
+        var0 = function arg0() {
             _fun34900: for (var _fun34900_ip = 0;;) switch (_fun34900_ip) {
                 case 0:
                     var2 = arg0;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var5;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: validateType, environment: var0
+        var0 = function arg0() {
             _fun34902: for (var _fun34902_ip = 0;;) switch (_fun34902_ip) {
                 case 0:
                     var1 = arg0;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var5;
     var _closure1_slot9 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: internalInterpolate, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun34904: for (var _fun34904_ip = 0;;) switch (_fun34904_ip) {
                 case 0:
                     var8 = arg0;
@@ -351,7 +351,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var5;
     var _closure1_slot11 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: interpolate, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             _fun34906: for (var _fun34906_ip = 0;;) switch (_fun34906_ip) {
                 case 0:
                     var4 = arg0;
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.code = var6;
     var _closure1_slot12 = var5;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: clamp, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.min;

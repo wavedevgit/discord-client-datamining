@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: JoinCallButton, environment: var1
+    var0 = function() {
         var3 = _closure1_slot14;
         var1 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: EndCallButton, environment: var1
+    var0 = function() {
         var3 = _closure1_slot14;
         var1 = _closure1_slot0;
         var6 = _closure1_slot2;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: ChannelActionButtons, environment: var1
+    var0 = function arg0() {
         _fun70969: for (var _fun70969_ip = 0;;) switch (_fun70969_ip) {
             case 0:
                 var0 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var15.bind(var3)(var12);
                 var12 = var12.BellIcon;
                 var10.IconComponent = var12;
-                var12 = function() { // Original name: onPress, environment: var4
+                var12 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 33;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var15.bind(var3)(var12);
                 var12 = var12.MagnifyingGlassIcon;
                 var10.IconComponent = var12;
-                var12 = function() { // Original name: onPress, environment: var4
+                var12 = function() {
                     _fun70977: for (var _fun70977_ip = 0;;) switch (_fun70977_ip) {
                         case 0:
                             var6 = _closure1_slot8;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var14.bind(var3)(var11);
                 var11 = var11.MagnifyingGlassIcon;
                 var2.IconComponent = var11;
-                var11 = function() { // Original name: onPress, environment: var4
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var14.bind(var3)(var11);
                 var11 = var11.MagnifyingGlassIcon;
                 var2.IconComponent = var11;
-                var11 = function() { // Original name: onPress, environment: var4
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 27;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10.bind(var3)(var7);
                 var7 = var7.ThreadIcon;
                 var1.IconComponent = var7;
-                var7 = function() { // Original name: onPress, environment: var4
+                var7 = function() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 43;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: WrappedChannelNavButtons, environment: var1
+    var0 = function arg0() {
         _fun70980: for (var _fun70980_ip = 0;;) switch (_fun70980_ip) {
             case 0:
                 var1 = arg0;
@@ -912,7 +912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/channel/ChannelActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelActions, environment: var1
+    var1 = function arg0() {
         _fun70982: for (var _fun70982_ip = 0;;) switch (_fun70982_ip) {
             case 0:
                 var1 = arg0;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activate_device/ActivateDeviceUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: clientIdToActivateDevicePlatform, environment: var1
+    var1 = function arg0() {
         _fun96266: for (var _fun96266_ip = 0;;) switch (_fun96266_ip) {
             case 0:
                 var3 = arg0;

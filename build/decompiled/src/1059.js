@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: _sendStandaloneClsSpan, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun10882: for (var _fun10882_ip = 0;;) switch (_fun10882_ip) {
             case 0:
                 var7 = arg0;
@@ -230,7 +230,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
     var2._sendStandaloneClsSpan = var3;
-    var1 = function(arg0) { // Original name: trackClsAsStandaloneSpan, environment: var1
+    var1 = function arg0() {
         _fun10884: for (var _fun10884_ip = 0;;) switch (_fun10884_ip) {
             case 0:
                 var0 = 0;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var9;
-    var9 = function() { // Original name: useDescription, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useDescription = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useViewNsfwDmCommandsSettingValue, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: handleValueChange, environment: var7
+    var8 = function arg0() {
         _fun81378: for (var _fun81378_ip = 0;;) switch (_fun81378_ip) {
             case 0:
                 var3 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: usePredicate, environment: var7
+    var7 = function() {
         _fun81379: for (var _fun81379_ip = 0;;) switch (_fun81379_ip) {
             case 0:
                 var4 = _closure1_slot0;

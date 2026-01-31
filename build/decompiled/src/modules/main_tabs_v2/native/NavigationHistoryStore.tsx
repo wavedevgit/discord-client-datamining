@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun99833: for (var _fun99833_ip = 0;;) switch (_fun99833_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: cleanDuplicatesAndAppend, environment: var1
+    var0 = function arg0() {
         _fun99836: for (var _fun99836_ip = 0;;) switch (_fun99836_ip) {
             case 0:
                 var3 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var0)(var5);
     var9 = var5.PersistedStore;
     var5 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: NavigationHistoryStore, environment: var5
+        var3 = function() {
             _fun99839: for (var _fun99839_ip = 0;;) switch (_fun99839_ip) {
                 case 0:
                     var3 = this;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun99840: for (var _fun99840_ip = 0;;) switch (_fun99840_ip) {
                 case 0:
                     var4 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = _closure1_slot8;
             var0.history = var1;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastHistory';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun99842: for (var _fun99842_ip = 0;;) switch (_fun99842_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var8[var5];
     var17 = var6.bind(var0)(var5);
     var5 = {};
-    var6 = function() { // Original name: LOGOUT, environment: var1
+    var6 = function() {
         var1 = new Array(0);
         _closure1_slot8 = var1;
         var1 = _closure1_slot9;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.CHANNEL_PREFIX = var4;
     var2.GUILD_PREFIX = var3;
-    var3 = function(arg0) { // Original name: getIdFromHistoryItem, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = _closure1_slot7;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getIdFromHistoryItem = var3;
-    var3 = function() { // Original name: handleHistoryStoreNavigationChange, environment: var1
+    var3 = function() {
         _fun99845: for (var _fun99845_ip = 0;;) switch (_fun99845_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleHistoryStoreNavigationChange = var3;
-    var1 = function() { // Original name: getNavigationHistory, environment: var1
+    var1 = function() {
         var0 = _closure1_slot8;
         return var0;
     };

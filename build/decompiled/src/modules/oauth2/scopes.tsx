@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ValidScopes = var3;
     var3 = ['rpc.api'];
     var2.RemovedScopes = var3;
-    var3 = function(arg0, arg1) { // Original name: getScopeNames, environment: var1
+    var3 = function arg0, arg1() {
         _fun28674: for (var _fun28674_ip = 0;;) switch (_fun28674_ip) {
             case 0:
                 var2 = arg0;
@@ -1741,7 +1741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getScopeNames = var3;
-    var3 = function(arg0) { // Original name: isSocialLayerUmbrellaScope, environment: var1
+    var3 = function arg0() {
         _fun28675: for (var _fun28675_ip = 0;;) switch (_fun28675_ip) {
             case 0:
                 var2 = arg0;
@@ -1771,7 +1771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSocialLayerUmbrellaScope = var3;
-    var1 = function(arg0) { // Original name: getSecurityMessage, environment: var1
+    var1 = function arg0() {
         _fun28676: for (var _fun28676_ip = 0;;) switch (_fun28676_ip) {
             case 0:
                 var3 = arg0;

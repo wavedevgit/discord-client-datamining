@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun115176: for (var _fun115176_ip = 0;;) switch (_fun115176_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: shouldNotRenderChangeDetail, environment: var1
+    var0 = function arg0, arg1() {
         _fun115179: for (var _fun115179_ip = 0;;) switch (_fun115179_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getUserAvatarSource, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun115180: for (var _fun115180_ip = 0;;) switch (_fun115180_ip) {
             case 0:
                 var6 = arg1;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: ApplicationHook, environment: var1
+    var0 = function arg0() {
         _fun115181: for (var _fun115181_ip = 0;;) switch (_fun115181_ip) {
             case 0:
                 var0 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot22 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: AuditLog, environment: var5
+        var3 = function() {
             _fun115183: for (var _fun115183_ip = 0;;) switch (_fun115183_ip) {
                 case 0:
                     var3 = this;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'hasChangesToRender';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun115184: for (var _fun115184_ip = 0;;) switch (_fun115184_ip) {
                 case 0:
                     var0 = this;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderTitle';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun115186: for (var _fun115186_ip = 0;;) switch (_fun115186_ip) {
                 case 0:
                     var0 = this;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = {};
                     var5.user = var14;
                     var5.target = var12;
-                    var12 = function() { // Original name: userHook, environment: var10
+                    var12 = function() {
                         _fun115187: for (var _fun115187_ip = 0;;) switch (_fun115187_ip) {
                             case 0:
                                 var1 = _closure3_slot2;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var5.userHook = var12;
-                    var12 = function(arg0, arg1) { // Original name: targetHook, environment: var10
+                    var12 = function arg0, arg1() {
                         _fun115188: for (var _fun115188_ip = 0;;) switch (_fun115188_ip) {
                             case 0:
                                 var0 = _closure3_slot1;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = var9.channel;
                 case 333:
                     var5.channel = var11;
-                    var10 = function(arg0, arg1) { // Original name: channelHook, environment: var10
+                    var10 = function arg0, arg1() {
                         var4 = _closure1_slot20;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot3;
@@ -1056,7 +1056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderRoleUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun115190: for (var _fun115190_ip = 0;;) switch (_fun115190_ip) {
                 case 0:
                     var0 = arg0;
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderPermissionUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun115192: for (var _fun115192_ip = 0;;) switch (_fun115192_ip) {
                 case 0:
                     var0 = this;
@@ -1157,7 +1157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderChangeDetails';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun115194: for (var _fun115194_ip = 0;;) switch (_fun115194_ip) {
                 case 0:
                     var0 = this;
@@ -1481,12 +1481,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var7 = var8;
                             case 861:
                                 var1.subtarget = var7;
-                                var7 = function() { // Original name: newColorHook, environment: var6
+                                var7 = function() {
                                     var0 = null;
                                     return var0;
                                 };
                                 var1.newColorHook = var7;
-                                var7 = function(arg0, arg1) { // Original name: newColorsHook, environment: var6
+                                var7 = function arg0, arg1() {
                                     var1 = _closure4_slot1;
                                     var7 = var1.primary_color;
                                     var1 = _closure4_slot1;
@@ -1591,12 +1591,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var1.newColorsHook = var7;
-                                var7 = function() { // Original name: oldColorHook, environment: var6
+                                var7 = function() {
                                     var0 = null;
                                     return var0;
                                 };
                                 var1.oldColorHook = var7;
-                                var7 = function(arg0, arg1) { // Original name: oldTagHook, environment: var6
+                                var7 = function arg0, arg1() {
                                     var4 = _closure1_slot20;
                                     var1 = _closure1_slot0;
                                     var2 = _closure1_slot3;
@@ -1616,7 +1616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var1.oldTagHook = var7;
-                                var7 = function(arg0, arg1) { // Original name: newTagHook, environment: var6
+                                var7 = function arg0, arg1() {
                                     var4 = _closure1_slot20;
                                     var1 = _closure1_slot0;
                                     var2 = _closure1_slot3;
@@ -1636,7 +1636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var1.newTagHook = var7;
-                                var7 = function(arg0, arg1) { // Original name: oldEmojiHook, environment: var6
+                                var7 = function arg0, arg1() {
                                     _fun115202: for (var _fun115202_ip = 0;;) switch (_fun115202_ip) {
                                         case 0:
                                             var2 = _closure4_slot0;
@@ -1685,7 +1685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     }
                                 };
                                 var1.oldEmojiHook = var7;
-                                var7 = function(arg0, arg1) { // Original name: newEmojiHook, environment: var6
+                                var7 = function arg0, arg1() {
                                     _fun115203: for (var _fun115203_ip = 0;;) switch (_fun115203_ip) {
                                         case 0:
                                             var2 = _closure4_slot1;
@@ -1734,7 +1734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     }
                                 };
                                 var1.newEmojiHook = var7;
-                                var6 = function(arg0, arg1) { // Original name: applicationHook, environment: var6
+                                var6 = function arg0, arg1() {
                                     _fun115204: for (var _fun115204_ip = 0;;) switch (_fun115204_ip) {
                                         case 0:
                                             var4 = _closure1_slot20;
@@ -1980,7 +1980,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderChangeSummary';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun115205: for (var _fun115205_ip = 0;;) switch (_fun115205_ip) {
                 case 0:
                     var2 = this;
@@ -2371,7 +2371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun115206: for (var _fun115206_ip = 0;;) switch (_fun115206_ip) {
                 case 0:
                     var7 = this;
@@ -2487,7 +2487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = 'strong';
                 case 368:
                     var0.border = var4;
-                    var4 = function() { // Original name: onPress, environment: var16
+                    var4 = function() {
                         var2 = _closure3_slot3;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -2542,7 +2542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = var14.username;
                 case 554:
                     var15.accessibilityHint = var11;
-                    var11 = function() { // Original name: onPress, environment: var16
+                    var11 = function() {
                         _fun115208: for (var _fun115208_ip = 0;;) switch (_fun115208_ip) {
                             case 0:
                                 var3 = _closure1_slot1;
@@ -2611,7 +2611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var21 = !var13;
                     var20.disabled = var21;
                     var11.accessibilityState = var20;
-                    var16 = function() { // Original name: onPress, environment: var16
+                    var16 = function() {
                         var2 = _closure3_slot3;
                         var1 = _closure3_slot0;
                         var0 = undefined;

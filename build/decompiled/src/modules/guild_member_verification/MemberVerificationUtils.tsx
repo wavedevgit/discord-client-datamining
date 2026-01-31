@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isValidFormResponse = var3;
-    var3 = function(arg0) { // Original name: removeInternalFields, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeInternalFields = var3;
-    var3 = function(arg0) { // Original name: isAutomaticApprovalFormField, environment: var1
+    var3 = function arg0() {
         _fun44155: for (var _fun44155_ip = 0;;) switch (_fun44155_ip) {
             case 0:
                 var3 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isAutomaticApprovalFormField = var3;
-    var3 = function(arg0) { // Original name: isManualApprovalFormField, environment: var1
+    var3 = function arg0() {
         _fun44156: for (var _fun44156_ip = 0;;) switch (_fun44156_ip) {
             case 0:
                 var3 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isManualApprovalFormField = var3;
-    var1 = function(arg0) { // Original name: guildHasVerificationGate, environment: var1
+    var1 = function arg0() {
         _fun44157: for (var _fun44157_ip = 0;;) switch (_fun44157_ip) {
             case 0:
                 var1 = arg0;

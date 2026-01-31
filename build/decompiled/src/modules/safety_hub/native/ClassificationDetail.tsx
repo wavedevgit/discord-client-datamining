@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ClassificationHeader, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var7 = var1.classificationTypeText;
         var _closure2_slot0 = var7;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = {};
                     var0 = _closure2_slot0;
                     var8.classification_type = var0;
-                    var0 = function(arg0, arg1) { // Original name: classificationHook, environment: var0
+                    var0 = function arg0, arg1() {
                         var4 = _closure1_slot13;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: ClassificationActionsTaken, environment: var1
+    var0 = function arg0() {
         _fun79303: for (var _fun79303_ip = 0;;) switch (_fun79303_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: ClassificationActionsTakenRows, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.action;
         var1 = _closure1_slot16;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: ClassificationGuidance, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var17 = var0.tosLink;
         var16 = var0.communityGuidelinesLink;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: ClassificationPolicyCard, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var18 = var0.classificationTypeText;
         var0 = var0.policyExplainerLink;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var19[var4];
         var5 = var17.bind(var3)(var4);
         var4 = {};
-        var7 = function() { // Original name: onPress, environment: var7
+        var7 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 16;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ClassificationDetailFooter, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.onClose;
         var0 = _closure1_slot16;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.redirectButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot16 = var3;
-    var3 = function() { // Original name: AppealStatus, environment: var1
+    var3 = function() {
         var3 = _closure1_slot13;
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -946,7 +946,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var3;
-    var3 = function(arg0) { // Original name: LetUsKnow, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot13;
@@ -971,7 +971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.t;
         var5 = var4.IFxUaT;
         var4 = {};
-        var8 = function(arg0, arg1) { // Original name: letUsKnowHook, environment: var8
+        var8 = function arg0, arg1() {
             var4 = _closure1_slot13;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -1001,7 +1001,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: AppealFooter, environment: var1
+    var3 = function arg0() {
         _fun79316: for (var _fun79316_ip = 0;;) switch (_fun79316_ip) {
             case 0:
                 var8 = arg0;
@@ -1044,7 +1044,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/ClassificationDetail.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedClassificationDetail, environment: var1
+    var1 = function arg0() {
         _fun79317: for (var _fun79317_ip = 0;;) switch (_fun79317_ip) {
             case 0:
                 var0 = arg0;
@@ -1368,7 +1368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var22.appeal_status;
                 var22 = var1 != var22;
                 var18.hasBeenAppealed = var22;
-                var21 = function() { // Original name: onPressLetUsKnow, environment: var21
+                var21 = function() {
                     _fun79321: for (var _fun79321_ip = 0;;) switch (_fun79321_ip) {
                         case 0:
                             var3 = _closure1_slot1;

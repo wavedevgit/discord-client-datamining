@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var1 = 'modules/guild_settings_picker/native/GuildSettingsPickerBottomSheet.tsx';
     var1 = var4.bind(var5)(var1);
-    var1 = function(arg0) { // Original name: GuildSettingsPickerBottomSheet, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.feature;
         var _closure2_slot0 = var2;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16 = var9.bind(var3)(var14);
         var14 = {};
         var14.guildId = var12;
-        var18 = function(arg0) { // Original name: onChange, environment: var10
+        var18 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 10;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = null;
         var11 = var11 == var12;
         var8.disabled = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
             var0 = 12;

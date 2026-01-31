@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/quests/SettingsQuestPreviewScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SettingsQuestPreviewScreen, environment: var1
+    var1 = function() {
         _fun83700: for (var _fun83700_ip = 0;;) switch (_fun83700_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var16;
                 var0 = function() { // Environment: var1
-                    var4 = function(arg0) { // Original name: listener, environment: var0
+                    var4 = function arg0() {
                         _fun83712: for (var _fun83712_ip = 0;;) switch (_fun83712_ip) {
                             case 0:
                                 var0 = arg0;

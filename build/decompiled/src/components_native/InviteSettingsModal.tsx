@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.Yx4IiC;
     var8 = var9.bind(var10)(var8);
     var6.title = var8;
-    var8 = function() { // Original name: render, environment: var1
+    var8 = function() {
         var3 = _closure1_slot4;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/InviteSettingsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: InviteSettingsModal, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var0;
             var0 = dependencyMap;
             var _closure1_slot1 = var0;
-            var0 = function() { // Original name: getDevServer, environment: var2
+            var0 = function() {
                 _fun8691: for (var _fun8691_ip = 0;;) switch (_fun8691_ip) {
                     case 0:
                         var0 = undefined;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun8694: for (var _fun8694_ip = 0;;) switch (_fun8694_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun8695: for (var _fun8695_ip = 0;;) switch (_fun8695_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun8696: for (var _fun8696_ip = 0;;) switch (_fun8696_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun8697: for (var _fun8697_ip = 0;;) switch (_fun8697_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 83:
             var _closure1_slot2 = var3;
-            var3 = function(arg0) { // Original name: fetchSourceContext, environment: var2
+            var3 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var3 = _closure1_slot2;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.fetchSourceContext = var3;
-            var3 = function(arg0) { // Original name: parseErrorStack, environment: var2
+            var3 = function arg0() {
                 _fun8705: for (var _fun8705_ip = 0;;) switch (_fun8705_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -510,7 +510,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.parseErrorStack = var3;
-            var2 = function(arg0, arg1) { // Original name: symbolicateStackTrace, environment: var2
+            var2 = function arg0, arg1() {
                 _fun8706: for (var _fun8706_ip = 0;;) switch (_fun8706_ip) {
                     case 0:
                         var4 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun13382: for (var _fun13382_ip = 0;;) switch (_fun13382_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0, arg1) { // Original name: MobileCacheSnapshotStore, environment: var0
+        var4 = function arg0, arg1() {
             _fun13386: for (var _fun13386_ip = 0;;) switch (_fun13386_ip) {
                 case 0:
                     var3 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var18 = var0;
                     var17 = var3;
                     var2 = copyDataProperties(var18, var17);
-                    var2 = function() { // Original name: CLEAR_CACHES, environment: var4
+                    var2 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.clear;
                         var0 = var0.bind(var1)();
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var8 = 'CLEAR_CACHES';
                     var0[var8] = var2;
-                    var9 = function() { // Original name: WRITE_CACHES, environment: var4
+                    var9 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.save;
                         var0 = var0.bind(var1)();
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'persistKey';
         var5.key = var1;
-        var1 = function() { // Original name: get, environment: var0
+        var1 = function() {
             var1 = this;
             var0 = var1.getClass;
             var0 = var0.bind(var1)();
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'clear';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 7;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'save';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var5 = this;
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'readSnapshot';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun13392: for (var _fun13392_ip = 0;;) switch (_fun13392_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getClass';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = this;
             var0 = var0.constructor;
             return var0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'clearAll';
         var5.key = var6;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             var0 = _closure2_slot0;
             var2 = var0.allStores;
             var1 = var2.forEach;

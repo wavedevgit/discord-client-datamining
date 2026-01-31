@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.subscriptionUpsell = var8;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot9 = var1;
-    var1 = function() { // Original name: FEATURES_PREMIUM_GUILD_USER, environment: var3
+    var1 = function() {
         var1 = {};
         var6 = _closure1_slot1;
         var5 = _closure1_slot2;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var8.a7LWeM;
         var8 = var9.bind(var10)(var8);
         var1.label = var8;
-        var8 = function(arg0) { // Original name: IconComponent, environment: var8
+        var8 = function arg0() {
             var3 = _closure1_slot7;
             var1 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'components_native/premium/GuildBoostingUpsell.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun82548: for (var _fun82548_ip = 0;;) switch (_fun82548_ip) {
             case 0:
                 var0 = arg0;

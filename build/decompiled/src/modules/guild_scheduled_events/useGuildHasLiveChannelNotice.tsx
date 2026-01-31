@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useGuildHasLiveChannelNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGuildHasLiveChannelNotice, environment: var1
+    var3 = function arg0() {
         _fun101913: for (var _fun101913_ip = 0;;) switch (_fun101913_ip) {
             case 0:
                 var10 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildHasLiveChannelNotice = var3;
-    var1 = function(arg0) { // Original name: useGuildLiveChannelNoticeInfo, environment: var1
+    var1 = function arg0() {
         _fun101916: for (var _fun101916_ip = 0;;) switch (_fun101916_ip) {
             case 0:
                 var9 = arg0;

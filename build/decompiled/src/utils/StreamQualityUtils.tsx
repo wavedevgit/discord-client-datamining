@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: isPremiumRequirement, environment: var1
+    var5 = function arg0() {
         _fun64360: for (var _fun64360_ip = 0;;) switch (_fun64360_ip) {
             case 0:
                 var1 = arg0;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: getPremiumRequirement, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var4;
-    var3 = function(arg0) { // Original name: getMaxQuality, environment: var1
+    var3 = function arg0() {
         _fun64363: for (var _fun64363_ip = 0;;) switch (_fun64363_ip) {
             case 0:
                 var2 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'utils/StreamQualityUtils.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Original name: isPremiumResolution, environment: var1
+    var6 = function arg0() {
         _fun64364: for (var _fun64364_ip = 0;;) switch (_fun64364_ip) {
             case 0:
                 var0 = arg0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isPremiumResolution = var6;
-    var6 = function(arg0) { // Original name: isPremiumFPS, environment: var1
+    var6 = function arg0() {
         _fun64366: for (var _fun64366_ip = 0;;) switch (_fun64366_ip) {
             case 0:
                 var3 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isPremiumFPS = var6;
     var2.isPremiumRequirement = var5;
     var2.getPremiumRequirement = var4;
-    var4 = function(arg0) { // Original name: getResolutionText, environment: var1
+    var4 = function arg0() {
         _fun64368: for (var _fun64368_ip = 0;;) switch (_fun64368_ip) {
             case 0:
                 var5 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getResolutionText = var4;
-    var4 = function(arg0) { // Original name: getFPSText, environment: var1
+    var4 = function arg0() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getFPSText = var4;
     var2.getMaxQuality = var3;
-    var3 = function(arg0) { // Original name: useMaxQuality, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var6 = _closure1_slot0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useMaxQuality = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: trackStreamSettingsUpdate, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun64374: for (var _fun64374_ip = 0;;) switch (_fun64374_ip) {
             case 0:
                 var7 = arg0;

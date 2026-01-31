@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = undefined;
         var19 = var23.bind(var3)(var14);
         var17 = var19.useAnimatedReaction;
-        var16 = function() { // Original name: D, environment: var1
+        var16 = function() {
             var1 = _closure2_slot1;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16.__workletHash = var14;
         var14 = _closure1_slot13;
         var16.__initData = var14;
-        var14 = function(arg0) { // Original name: R, environment: var1
+        var14 = function arg0() {
             _fun73938: for (var _fun73938_ip = 0;;) switch (_fun73938_ip) {
                 case 0:
                     var2 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = arg1;
         var4 = function() { // Environment: var1
             var0 = {};
-            var2 = function(arg0) { // Original name: scrollToHeaderIndex, environment: var1
+            var2 = function arg0() {
                 _fun73945: for (var _fun73945_ip = 0;;) switch (_fun73945_ip) {
                     case 0:
                         var0 = arg0;
@@ -445,12 +445,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var0.scrollToHeaderIndex = var2;
-            var2 = function() { // Original name: forceUpdate, environment: var1
+            var2 = function() {
                 var0 = undefined;
                 return var0;
             };
             var0.forceUpdate = var2;
-            var1 = function() { // Original name: onStickyHeaderRendered, environment: var1
+            var1 = function() {
                 var0 = undefined;
                 return var0;
             };

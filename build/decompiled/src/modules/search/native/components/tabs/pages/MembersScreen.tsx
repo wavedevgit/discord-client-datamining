@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: SearchableMembersScreen, environment: var1
+    var0 = function arg0() {
         _fun105707: for (var _fun105707_ip = 0;;) switch (_fun105707_ip) {
             case 0:
                 var1 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var19 = var11.bind(var12)(var10, var9);
                 var _closure2_slot4 = var19;
-                var9 = function(arg0) { // Original name: useMemberScreenChannelId, environment: var0
+                var9 = function arg0() {
                     _fun105709: for (var _fun105709_ip = 0;;) switch (_fun105709_ip) {
                         case 0:
                             var4 = _closure1_slot12;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4.isOwner = var9;
                                         var9 = _closure2_slot1;
                                         var4.guildId = var9;
-                                        var9 = function(arg0) { // Original name: onLongPress, environment: var8
+                                        var9 = function arg0() {
                                             var3 = _closure2_slot9;
                                             var2 = _closure4_slot0;
                                             var1 = undefined;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             return var0;
                                         };
                                         var4.onLongPress = var9;
-                                        var8 = function(arg0) { // Original name: onPress, environment: var8
+                                        var8 = function arg0() {
                                             var3 = _closure2_slot9;
                                             var2 = _closure4_slot0;
                                             var1 = undefined;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: ThreadMembersScreen, environment: var1
+    var0 = function arg0() {
         _fun105723: for (var _fun105723_ip = 0;;) switch (_fun105723_ip) {
             case 0:
                 var1 = arg0;
@@ -814,7 +814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot20 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MembersScreen, environment: var1
+    var1 = function arg0() {
         _fun105726: for (var _fun105726_ip = 0;;) switch (_fun105726_ip) {
             case 0:
                 var0 = arg0;

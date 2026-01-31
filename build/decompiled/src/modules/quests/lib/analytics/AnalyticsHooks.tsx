@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function() { // Original name: useTrackQuestEventWithImpression, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 3;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/quests/lib/analytics/AnalyticsHooks.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useTrackQuestEventWithImpression = var3;
-    var3 = function() { // Original name: useTrackQuestContentClickedWithImpression, environment: var1
+    var3 = function() {
         var3 = _closure1_slot6;
         var2 = undefined;
         var4 = var3.bind(var2)();
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useTrackQuestContentClickedWithImpression = var3;
-    var1 = function(arg0, arg1) { // Original name: useQuestsEmbedFallbackAnalytics, environment: var1
+    var1 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var5;

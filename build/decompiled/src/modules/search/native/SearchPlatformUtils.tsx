@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var12;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var13;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var9
+    var0 = function arg0, arg1() {
         _fun89777: for (var _fun89777_ip = 0;;) switch (_fun89777_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var9
+    var0 = function arg0, arg1() {
         _fun89779: for (var _fun89779_ip = 0;;) switch (_fun89779_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var8 = function(arg0) { // Original name: performKeyboardAwareNavigation, environment: var9
+    var8 = function arg0() {
         _fun89780: for (var _fun89780_ip = 0;;) switch (_fun89780_ip) {
             case 0:
                 var3 = arg0;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var7 = function(arg0) { // Original name: delayUntilNavigationComplete, environment: var9
+    var7 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = global;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var0)(var2, var1);
         return var0;
     };
-    var6 = function(arg0) { // Original name: getUrlIcon, environment: var9
+    var6 = function arg0() {
         _fun89784: for (var _fun89784_ip = 0;;) switch (_fun89784_ip) {
             case 0:
                 var6 = arg0;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var5 = function(arg0) { // Original name: getGridItemBorderStyles, environment: var9
+    var5 = function arg0() {
         _fun89785: for (var _fun89785_ip = 0;;) switch (_fun89785_ip) {
             case 0:
                 var1 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var5;
-    var4 = function(arg0) { // Original name: getMediaGridItemStyles, environment: var9
+    var4 = function arg0() {
         var0 = arg0;
         var6 = var0.itemIndex;
         var3 = var0.numItems;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = copyDataProperties(var10, var9);
         return var0;
     };
-    var3 = function(arg0) { // Original name: getGridItemSpacingStyles, environment: var9
+    var3 = function arg0() {
         _fun89787: for (var _fun89787_ip = 0;;) switch (_fun89787_ip) {
             case 0:
                 var0 = arg0;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var3;
-    var1 = function(arg0) { // Original name: toSearchBarTag, environment: var9
+    var1 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.text;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.text = var1;
         return var0;
     };
-    var0 = function(arg0) { // Original name: _getLimit, environment: var9
+    var0 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.min;
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: getInitialFetchLimit, environment: var9
+    var0 = function arg0() {
         var2 = _closure1_slot21;
         var1 = _closure1_slot9;
         var0 = arg0;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: getNextFetchLimit, environment: var9
+    var0 = function arg0() {
         var2 = _closure1_slot21;
         var1 = _closure1_slot9;
         var0 = arg0;
@@ -634,7 +634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: onInitialFetchMessagesSuccess, environment: var9
+    var0 = function arg0() {
         _fun89792: for (var _fun89792_ip = 0;;) switch (_fun89792_ip) {
             case 0:
                 var0 = arg0;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: onFetchMessagesStart, environment: var9
+    var0 = function arg0() {
         var1 = arg0;
         var3 = var1.searchContext;
         var1 = var1.searchQueryString;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var19 = function(arg0) { // Original name: fetchInitialMessages, environment: var9
+    var19 = function arg0() {
         _fun89796: for (var _fun89796_ip = 0;;) switch (_fun89796_ip) {
             case 0:
                 var9 = arg0;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.searchContext = var9;
                 var0.searchTabs = var7;
                 var0.searchQueryString = var5;
-                var4 = function(arg0) { // Original name: getId, environment: var4
+                var4 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 5;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var19;
-    var16 = function(arg0) { // Original name: syncAutocomplete, environment: var9
+    var16 = function arg0() {
         var7 = arg0;
         var3 = _closure1_slot4;
         var2 = var3.getState;
@@ -1016,7 +1016,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17 = var18.debounce;
     var17 = var17.bind(var18)(var19, var15);
     var10.fetchInitialMessagesDebounced = var17;
-    var17 = function(arg0, arg1, arg2) { // Original name: fetchNextMessages, environment: var9
+    var17 = function arg0, arg1, arg2() {
         _fun89802: for (var _fun89802_ip = 0;;) switch (_fun89802_ip) {
             case 0:
                 var8 = arg0;
@@ -1161,7 +1161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.searchQueryString = var6;
                 var6 = _closure1_slot23;
                 var1.getLimit = var6;
-                var5 = function(arg0) { // Original name: getId, environment: var5
+                var5 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 5;
@@ -1219,7 +1219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var14.debounce;
     var11 = var11.bind(var14)(var16, var15);
     var10.syncAutocompleteDebounced = var11;
-    var11 = function(arg0, arg1) { // Original name: navigateToSearchWithPrefetch, environment: var9
+    var11 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var5 = _closure1_slot1;
@@ -1247,7 +1247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = 'modules/search/native/SearchPlatformUtils.tsx';
     var11 = var12.bind(var13)(var11);
     var2.default = var10;
-    var10 = function(arg0, arg1) { // Original name: getMedia, environment: var9
+    var10 = function arg0, arg1() {
         _fun89806: for (var _fun89806_ip = 0;;) switch (_fun89806_ip) {
             case 0:
                 var3 = arg1;
@@ -1543,7 +1543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMedia = var10;
-    var10 = function(arg0) { // Original name: getFiles, environment: var9
+    var10 = function arg0() {
         _fun89810: for (var _fun89810_ip = 0;;) switch (_fun89810_ip) {
             case 0:
                 var2 = arg0;
@@ -1663,7 +1663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFiles = var10;
-    var9 = function(arg0, arg1) { // Original name: getLinks, environment: var9
+    var9 = function arg0, arg1() {
         _fun89812: for (var _fun89812_ip = 0;;) switch (_fun89812_ip) {
             case 0:
                 var4 = arg1;

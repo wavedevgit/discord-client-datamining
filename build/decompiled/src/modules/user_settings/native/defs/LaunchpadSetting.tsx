@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRadio;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 4;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = arg2;
     var8 = var8.bind(var0)(var9);
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onLaunchpadSettingValueChange, environment: var7
+    var8 = function arg0() {
         _fun85390: for (var _fun85390_ip = 0;;) switch (_fun85390_ip) {
             case 0:
                 var2 = arg0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useLaunchpadSettingOptions, environment: var7
+    var7 = function() {
         var1 = {};
         var7 = _closure1_slot0;
         var8 = _closure1_slot1;

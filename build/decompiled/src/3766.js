@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var2](var9);
     var2 = var2 instanceof Object ? var2 : var3;
     var1.snapshots = var2;
-    var2 = function(arg0, arg1) { // Original name: makeElementVisible, environment: var0
+    var2 = function arg0, arg1() {
         _fun33846: for (var _fun33846_ip = 0;;) switch (_fun33846_ip) {
             case 0:
                 var3 = arg0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.makeElementVisible = var2;
-    var0 = function(arg0, arg1) { // Original name: setElementPosition, environment: var0
+    var0 = function arg0, arg1() {
         _fun33848: for (var _fun33848_ip = 0;;) switch (_fun33848_ip) {
             case 0:
                 var1 = arg0;

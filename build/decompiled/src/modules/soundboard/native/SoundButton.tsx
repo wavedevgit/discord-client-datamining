@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = 'function SoundButtonTsx1(){const{animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG}=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+"deg"}]};}';
             var6.code = var8;
             var _closure1_slot12 = var6;
-            var6 = function(arg0) { // Original name: useAnimation, environment: var1
+            var6 = function arg0() {
                 var9 = arg0;
                 var _closure2_slot0 = var9;
                 var7 = _closure1_slot0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var2 = var7.bind(var6)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: t, environment: var0
+                var0 = function() {
                     _fun68444: for (var _fun68444_ip = 0;;) switch (_fun68444_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot13 = var6;
-            var6 = function(arg0) { // Original name: SoundButtonEmoji, environment: var1
+            var6 = function arg0() {
                 _fun68445: for (var _fun68445_ip = 0;;) switch (_fun68445_ip) {
                     case 0:
                         var0 = arg0;

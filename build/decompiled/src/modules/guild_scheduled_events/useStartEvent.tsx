@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var3 = {};
-    var6 = function() { // Original name: onSuccess, environment: var1
+    var6 = function() {
         var0 = undefined;
         return var0;
     };
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useStartEvent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useStartEvent, environment: var1
-        var0 = function() { // Original name: _startEvent, environment: var1
+    var1 = function() {
+        var0 = function() {
             var3 = undefined;
             var0 = undefined;
             var2 = _closure1_slot3;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0[var4];
         var _closure2_slot1 = var0;
         var0 = new Array(2);
-        var1 = function(arg0, arg1) { // Original name: startEvent, environment: var1
+        var1 = function arg0, arg1() {
             var0 = undefined;
             var3 = _closure2_slot2;
             var2 = var3.apply;

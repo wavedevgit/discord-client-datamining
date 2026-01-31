@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/feedback/FeedbackSurveyEligibilityOverride.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getFeedbackSurveyEligibilityOverrideConfig, environment: var1
+    var1 = function arg0() {
         _fun113133: for (var _fun113133_ip = 0;;) switch (_fun113133_ip) {
             case 0:
                 var1 = arg0;

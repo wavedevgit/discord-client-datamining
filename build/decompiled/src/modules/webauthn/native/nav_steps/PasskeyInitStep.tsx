@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CredentialList, environment: var1
+    var0 = function arg0() {
         _fun60635: for (var _fun60635_ip = 0;;) switch (_fun60635_ip) {
             case 0:
                 var0 = arg0;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var3;
                 var _closure2_slot2 = var3;
                 var _closure2_slot3 = var3;
-                var0 = function(arg0) { // Original name: credentialTrailer, environment: var4
+                var0 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var3 = _closure1_slot10;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.disabled = var16;
                     var16 = _closure2_slot2;
                     var4.loading = var16;
-                    var16 = function() { // Original name: onPress, environment: var8
+                    var16 = function() {
                         var3 = _closure1_slot1;
                         var0 = _closure1_slot2;
                         var2 = 15;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.disabled = var10;
                     var9 = _closure2_slot2;
                     var5.loading = var9;
-                    var8 = function() { // Original name: onPress, environment: var8
+                    var8 = function() {
                         var3 = _closure2_slot0;
                         var2 = var3.push;
                         var0 = _closure1_slot8;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/webauthn/native/nav_steps/PasskeyInitStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PasskeyInitStep, environment: var1
+    var1 = function arg0() {
         _fun60641: for (var _fun60641_ip = 0;;) switch (_fun60641_ip) {
             case 0:
                 var1 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         _fun60645: for (var _fun60645_ip = 0;;) switch (_fun60645_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var4.OYkgVk;
                                 var4 = var5.bind(var6)(var4);
                                 var0.text = var4;
-                                var4 = function() { // Original name: onPress, environment: var4
+                                var4 = function() {
                                     var2 = _closure2_slot0;
                                     var1 = var2.push;
                                     var0 = _closure1_slot8;

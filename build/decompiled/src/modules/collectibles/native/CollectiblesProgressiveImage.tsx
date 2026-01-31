@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesProgressiveImage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CollectiblesProgressiveImage, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var10 = var3.source;
         var5 = var3.style;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8[var7] = var9;
         var7 = 'style';
         var4[var7] = var8;
-        var7 = function() { // Original name: onLoad, environment: var6
+        var7 = function() {
             var3 = _closure2_slot0;
             var2 = var3.set;
             var9 = _closure1_slot0;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24398: for (var _fun24398_ip = 0;;) switch (_fun24398_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: t, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.';
                 var1 = var2.split;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var8.split;
                 var7 = var7.bind(var8)(var6);
                 var1.months = var7;
-                var7 = function(arg0, arg1) { // Original name: monthsShort, environment: var0
+                var7 = function arg0, arg1() {
                     _fun24400: for (var _fun24400_ip = 0;;) switch (_fun24400_ip) {
                         case 0:
                             var4 = arg0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.relativeTime = var4;
                 var4 = /\d{1,2}(ste|de)/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function(arg0) { // Original name: ordinal, environment: var0
+                var0 = function arg0() {
                     _fun24401: for (var _fun24401_ip = 0;;) switch (_fun24401_ip) {
                         case 0:
                             var1 = arg0;

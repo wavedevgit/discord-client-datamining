@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/useLaunchPadState.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useLaunchPadState, environment: var1
+    var1 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var3 = 3;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[2] = var5;
         var1[3] = var3;
         var0 = function() { // Environment: var0
-            var6 = function(arg0) { // Original name: t, environment: var1
+            var6 = function arg0() {
                 var2 = _closure2_slot3;
                 var1 = var2.set;
                 var0 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6.__workletHash = var0;
             var0 = _closure1_slot8;
             var6.__initData = var0;
-            var3 = function(arg0) { // Original name: s, environment: var1
+            var3 = function arg0() {
                 var2 = _closure2_slot2;
                 var1 = var2.set;
                 var0 = global;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.__workletHash = var0;
             var0 = _closure1_slot9;
             var3.__initData = var0;
-            var4 = function(arg0) { // Original name: l, environment: var1
+            var4 = function arg0() {
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
                 var0 = 4;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = {};
             var0.setLaunchPadShown = var6;
             var0.setLaunchPadPosition = var3;
-            var3 = function(arg0) { // Original name: C, environment: var1
+            var3 = function arg0() {
                 var1 = _closure2_slot0;
                 var0 = var1.get;
                 var0 = var0.bind(var1)();
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = _closure1_slot11;
             var3.__initData = var6;
             var0.setLaunchPadPullTabTranslation = var3;
-            var3 = function(arg0, arg1) { // Original name: I, environment: var1
+            var3 = function arg0, arg1() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 6;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = _closure1_slot12;
             var3.__initData = var6;
             var0.setLaunchPadPullTabPosition = var3;
-            var3 = function(arg0) { // Original name: w, environment: var1
+            var3 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 6;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = _closure1_slot13;
             var3.__initData = var6;
             var0.setLaunchPadPullTabScale = var3;
-            var3 = function(arg0) { // Original name: D, environment: var1
+            var3 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 6;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = _closure1_slot14;
             var3.__initData = var6;
             var0.setLaunchPadPullTabMinimized = var3;
-            var1 = function() { // Original name: v, environment: var1
+            var1 = function() {
                 var1 = _closure2_slot1;
                 var0 = var1.get;
                 var0 = var0.bind(var1)();

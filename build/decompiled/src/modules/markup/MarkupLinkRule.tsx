@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var6
+    var0 = function arg0, arg1() {
         _fun43979: for (var _fun43979_ip = 0;;) switch (_fun43979_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var6
+    var0 = function arg0, arg1() {
         _fun43981: for (var _fun43981_ip = 0;;) switch (_fun43981_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: sanitizeWithCache, environment: var6
+    var0 = function arg0() {
         _fun43982: for (var _fun43982_ip = 0;;) switch (_fun43982_ip) {
             case 0:
                 var4 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: validateContentTypes, environment: var6
+    var0 = function arg0, arg1() {
         _fun43983: for (var _fun43983_ip = 0;;) switch (_fun43983_ip) {
             case 0:
                 var2 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getRawText, environment: var6
+    var0 = function arg0() {
         _fun43984: for (var _fun43984_ip = 0;;) switch (_fun43984_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var3 = function(arg0) { // Original name: isSuspiciousUrl, environment: var6
+    var3 = function arg0() {
         _fun43985: for (var _fun43985_ip = 0;;) switch (_fun43985_ip) {
             case 0:
                 var3 = arg0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var3;
-    var1 = function(arg0) { // Original name: punycodeLink, environment: var6
+    var1 = function arg0() {
         _fun43986: for (var _fun43986_ip = 0;;) switch (_fun43986_ip) {
             case 0:
                 var0 = arg0;
@@ -1129,7 +1129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var9.link;
     var16 = var5;
     var9 = copyDataProperties(var16, var15);
-    var10 = function(arg0, arg1, arg2) { // Original name: match, environment: var6
+    var10 = function arg0, arg1, arg2() {
         _fun43987: for (var _fun43987_ip = 0;;) switch (_fun43987_ip) {
             case 0:
                 var5 = arg1;
@@ -1158,7 +1158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var9 = 'match';
     var5[var9] = var10;
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var6
+    var9 = function arg0, arg1, arg2() {
         _fun43988: for (var _fun43988_ip = 0;;) switch (_fun43988_ip) {
             case 0:
                 var8 = arg1;
@@ -1177,7 +1177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var2[var3];
                 var19 = 3;
                 var15 = var2[var19];
-                var0 = function() { // Original name: renderIndividualParts, environment: var0
+                var0 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;

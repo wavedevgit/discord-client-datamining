@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var6;
             var _closure1_slot2 = var5;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun13093: for (var _fun13093_ip = 0;;) switch (_fun13093_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun13098: for (var _fun13098_ip = 0;;) switch (_fun13098_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun13099: for (var _fun13099_ip = 0;;) switch (_fun13099_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun13100: for (var _fun13100_ip = 0;;) switch (_fun13100_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun13101: for (var _fun13101_ip = 0;;) switch (_fun13101_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot17 = var6;
             var3 = var3.Component;
             var1 = function(arg0) { // Environment: var1
-                var4 = function(arg0) { // Original name: FeedbackWidget, environment: var0
+                var4 = function arg0() {
                     _fun13104: for (var _fun13104_ip = 0;;) switch (_fun13104_ip) {
                         case 0:
                             var6 = this;
@@ -1611,7 +1611,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var1 = 'componentDidMount';
                 var5.key = var1;
-                var1 = function() { // Original name: componentDidMount, environment: var0
+                var1 = function() {
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var3 = _closure1_slot9;
@@ -1634,7 +1634,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'componentWillUnmount';
                 var5.key = var6;
-                var6 = function() { // Original name: componentWillUnmount, environment: var0
+                var6 = function() {
                     _fun13126: for (var _fun13126_ip = 0;;) switch (_fun13126_ip) {
                         case 0:
                             var0 = this;
@@ -1673,7 +1673,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'render';
                 var5.key = var6;
-                var6 = function() { // Original name: render, environment: var0
+                var6 = function() {
                     _fun13127: for (var _fun13127_ip = 0;;) switch (_fun13127_ip) {
                         case 0:
                             var22 = this;
@@ -1712,7 +1712,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var22.props;
                             var1 = var1.styles;
                             var24 = var3.bind(var4)(var2, var1);
-                            var21 = function() { // Original name: onCancel, environment: var17
+                            var21 = function() {
                                 _fun13128: for (var _fun13128_ip = 0;;) switch (_fun13128_ip) {
                                     case 0:
                                         var1 = _closure3_slot1;
@@ -1933,7 +1933,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var32 = var0.namePlaceholder;
                             var8.placeholder = var32;
                             var8.value = var30;
-                            var30 = function(arg0) { // Original name: onChangeText, environment: var17
+                            var30 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = var2.setState;
                                 var0 = {};
@@ -1995,7 +1995,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var32 = 'email-address';
                             var8.keyboardType = var32;
                             var8.value = var31;
-                            var31 = function(arg0) { // Original name: onChangeText, environment: var17
+                            var31 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = var2.setState;
                                 var0 = {};
@@ -2041,7 +2041,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var27 = var0.messagePlaceholder;
                             var7.placeholder = var27;
                             var7.value = var26;
-                            var26 = function(arg0) { // Original name: onChangeText, environment: var17
+                            var26 = function arg0() {
                                 var2 = _closure3_slot0;
                                 var1 = var2.setState;
                                 var0 = {};
@@ -2168,7 +2168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var18 = {};
                             var25 = var24.takeScreenshotButton;
                             var18.style = var25;
-                            var17 = function() { // Original name: onPress, environment: var17
+                            var17 = function() {
                                 var2 = _closure1_slot0;
                                 var3 = _closure1_slot2;
                                 var1 = 17;
@@ -2247,7 +2247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'reset';
                 var5.key = var6;
-                var0 = function() { // Original name: reset, environment: var0
+                var0 = function() {
                     var2 = _closure2_slot0;
                     var1 = {
                         'name': '',

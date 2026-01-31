@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.toastText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: DoubleTapReminderContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.emoji;
         var1 = _closure1_slot6;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.t;
         var5 = var4.C2tQIV;
         var4 = {};
-        var9 = function(arg0) { // Original name: protipHook, environment: var9
+        var9 = function arg0() {
             var4 = _closure1_slot5;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var9 = 'DOUBLE_TAP_TO_REACT_REMINDER';
                 var2.key = var9;
-                var9 = function() { // Original name: icon, environment: var8
+                var9 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.icon = var9;
-                var8 = function() { // Original name: content, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot5;
                     var2 = _closure1_slot7;
                     var1 = {};

@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.DismissibleContent;
         var4 = var4.XBOX_ONE_WAY_RECONNECT;
         var0.newIndicatorDismissibleContent = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var1 = 10;

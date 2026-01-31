@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/self_remediation_feedback/BlockUserFeedbackExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.BlockUserFeedbackExperiment = var3;
-    var3 = function(arg0) { // Original name: isEligibleForBlockUserFeedbackExperiment, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = var3.getCurrentConfig;
         var1 = {};
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isEligibleForBlockUserFeedbackExperiment = var3;
-    var1 = function(arg0) { // Original name: useIsEligibleForBlockUserFeedbackExperiment, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = var3.useExperiment;
         var1 = {};

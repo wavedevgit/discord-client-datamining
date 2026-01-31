@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var4 = var5.createContext;
     var1 = {};
-    var6 = function() { // Original name: scheduleUpdate, environment: var3
+    var6 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         throw var0;
     };
     var1.scheduleUpdate = var6;
-    var6 = function() { // Original name: flushUpdates, environment: var3
+    var6 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.flushUpdates = var6;
     var1 = var4.bind(var5)(var1);
     var _closure1_slot1 = var1;
-    var3 = function(arg0) { // Original name: useScheduleUpdate, environment: var3
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var1 = var3.useContext;
         var0 = _closure1_slot1;

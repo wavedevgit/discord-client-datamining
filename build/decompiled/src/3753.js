@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_clampTs2(){const{_animationToClamp,config,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;const animationToClamp=typeof _animationToClamp===\'function\'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn("Error inside \'withClamp\' animation, the inner animation has invalid current value");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current===\'number\'?newValue:""+(prefix===undefined?\'\':prefix)+newValue+(suffix===undefined?\'\':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn(\'Wrong config was provided to withClamp. Min value is bigger than max\');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}';
     var1.code = var4;
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1) { // Original name: pnpm_clampTs1, environment: var0
+    var1 = function arg0, arg1() {
         var10 = arg0;
         var3 = arg1;
         var _closure2_slot0 = var10;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = undefined;
         var2 = var8.bind(var7)(var1);
         var1 = var2.defineAnimation;
-        var0 = function() { // Original name: pnpm_clampTs2, environment: var0
+        var0 = function() {
             _fun33707: for (var _fun33707_ip = 0;;) switch (_fun33707_ip) {
                 case 0:
                     var0 = _closure2_slot1;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var5 = true;
                     var0.isHigherOrder = var5;
-                    var5 = function(arg0, arg1) { // Original name: clampOnFrame, environment: var2
+                    var5 = function arg0, arg1() {
                         _fun33708: for (var _fun33708_ip = 0;;) switch (_fun33708_ip) {
                             case 0:
                                 var4 = _closure3_slot0;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onFrame = var5;
-                    var5 = function(arg0, arg1, arg2, arg3) { // Original name: onStart, environment: var2
+                    var5 = function arg0, arg1, arg2, arg3() {
                         _fun33709: for (var _fun33709_ip = 0;;) switch (_fun33709_ip) {
                             case 0:
                                 var2 = arg0;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.onStart = var5;
                     var3 = var3.current;
                     var0.current = var3;
-                    var2 = function(arg0) { // Original name: callback, environment: var2
+                    var2 = function arg0() {
                         _fun33710: for (var _fun33710_ip = 0;;) switch (_fun33710_ip) {
                             case 0:
                                 var1 = _closure3_slot0;

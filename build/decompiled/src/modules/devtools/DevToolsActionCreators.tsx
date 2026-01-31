@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var3 = function(arg0) { // Original name: updateDevToolsSettings, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/devtools/DevToolsActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.updateDevToolsSettings = var3;
-    var3 = function() { // Original name: toggleDisplayDevTools, environment: var1
+    var3 = function() {
         var2 = _closure1_slot3;
         var1 = {};
         var0 = _closure1_slot2;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.toggleDisplayDevTools = var3;
-    var3 = function(arg0) { // Original name: openDevTools, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot3;
         var1 = {};
         var0 = true;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openDevTools = var3;
-    var1 = function() { // Original name: clearAnalyticsLog, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

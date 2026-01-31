@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun107417: for (var _fun107417_ip = 0;;) switch (_fun107417_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: getCacheKey, environment: var4
+    var0 = function arg0() {
         _fun107420: for (var _fun107420_ip = 0;;) switch (_fun107420_ip) {
             case 0:
                 var0 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: ApplicationDirectorySearchStore, environment: var5
+        var3 = function() {
             _fun107422: for (var _fun107422_ip = 0;;) switch (_fun107422_ip) {
                 case 0:
                     var3 = this;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getSearchResults';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var0 = arg0;
             var13 = var0.query;
             var12 = var0.guildId;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = arg0;
             var13 = var0.query;
             var12 = var0.guildId;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleSearchFetch, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var13 = var0.query;
         var12 = var0.guildId;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_DIRECTORY_FETCH_SEARCH = var9;
-    var9 = function(arg0) { // Original name: handleSearchFetchSuccess, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var14 = var0.query;
         var13 = var0.guildId;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS = var9;
-    var4 = function(arg0) { // Original name: handleSearchFetchFailure, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var13 = var0.query;
         var12 = var0.guildId;

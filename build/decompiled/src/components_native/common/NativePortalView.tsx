@@ -377,11 +377,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'components_native/common/NativePortalView.tsx';
             var4 = var5.bind(var6)(var4);
             var2.default = var3;
-            var3 = function(arg0) { // Original name: createPortalControls, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = {};
-                var2 = function(arg0) { // Original name: seek, environment: var1
+                var2 = function arg0() {
                     var3 = _closure2_slot0;
                     var2 = _closure1_slot7;
                     var1 = var2.changeProgress;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.seek = var2;
-                var2 = function(arg0) { // Original name: pause, environment: var1
+                var2 = function arg0() {
                     var3 = _closure2_slot0;
                     var2 = _closure1_slot7;
                     var1 = var2.toggle;
@@ -402,9 +402,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.pause = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: useSubscribe, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     var9 = _closure2_slot0;
-                    var4 = function(arg0, arg1, arg2, arg3) { // Original name: useSubscribe, environment: var0
+                    var4 = function arg0, arg1, arg2, arg3() {
                         var7 = arg0;
                         var5 = arg1;
                         var6 = arg2;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.createPortalControls = var3;
-            var3 = function(arg0) { // Original name: markPortalAlive, environment: var1
+            var3 = function arg0() {
                 var2 = _closure1_slot10;
                 var1 = var2.delete;
                 var0 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.markPortalAlive = var3;
-            var1 = function(arg0) { // Original name: isPortalExpired, environment: var1
+            var1 = function arg0() {
                 var2 = _closure1_slot10;
                 var1 = var2.has;
                 var0 = arg0;

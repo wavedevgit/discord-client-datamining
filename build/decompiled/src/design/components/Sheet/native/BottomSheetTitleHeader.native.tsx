@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: RedesignBottomSheetTitleHeaderBase, environment: var1
+    var0 = function arg0() {
         _fun46311: for (var _fun46311_ip = 0;;) switch (_fun46311_ip) {
             case 0:
                 var0 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: RedesignBottomSheetTitleHeaderStacked, environment: var1
+    var0 = function arg0() {
         _fun46312: for (var _fun46312_ip = 0;;) switch (_fun46312_ip) {
             case 0:
                 var0 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: RedesignBottomSheetTitleHeaderComplex, environment: var1
+    var0 = function arg0() {
         _fun46313: for (var _fun46313_ip = 0;;) switch (_fun46313_ip) {
             case 0:
                 var1 = arg0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: Title, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot8;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: Subtitle, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var1 = _closure1_slot8;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Sheet/native/BottomSheetTitleHeader.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BottomSheetTitleHeader, environment: var1
+    var1 = function arg0() {
         _fun46321: for (var _fun46321_ip = 0;;) switch (_fun46321_ip) {
             case 0:
                 var6 = arg0;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1;
                 var10 = var6;
                 var8 = copyDataProperties(var11, var10);
-                var8 = function(arg0) { // Original name: onTitleTextLayout, environment: var7
+                var8 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var2 = _closure2_slot0;

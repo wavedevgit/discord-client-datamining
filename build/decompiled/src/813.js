@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: createSyntheticError, environment: var0
+    var2 = function() {
         _fun8687: for (var _fun8687_ip = 0;;) switch (_fun8687_ip) {
             case 0:
                 var4 = undefined;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.createSyntheticError = var2;
-    var2 = function(arg0) { // Original name: getFramesToPop, environment: var0
+    var2 = function arg0() {
         _fun8688: for (var _fun8688_ip = 0;;) switch (_fun8688_ip) {
             case 0:
                 var1 = arg0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getFramesToPop = var2;
-    var0 = function(arg0) { // Original name: isErrorLike, environment: var0
+    var0 = function arg0() {
         _fun8689: for (var _fun8689_ip = 0;;) switch (_fun8689_ip) {
             case 0:
                 var1 = arg0;

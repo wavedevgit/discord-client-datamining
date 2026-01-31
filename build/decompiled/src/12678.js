@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var _closure1_slot0 = var2;
-    var0 = function(arg0, arg1) { // Original name: _, environment: var3
+    var0 = function arg0, arg1() {
         _fun97144: for (var _fun97144_ip = 0;;) switch (_fun97144_ip) {
             case 0:
                 var0 = arg1;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: integerPart, environment: var3
+    var0 = function arg0() {
         var2 = _closure1_slot6;
         var0 = global;
         var3 = var0.Math;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: sign, environment: var3
+    var0 = function arg0() {
         _fun97146: for (var _fun97146_ip = 0;;) switch (_fun97146_ip) {
             case 0:
                 var1 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: censorNegativeZero, environment: var3
+    var0 = function arg0() {
         _fun97147: for (var _fun97147_ip = 0;;) switch (_fun97147_ip) {
             case 0:
                 var1 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var6 = function(arg0, arg1) { // Original name: createIntegerConversion, environment: var3
+    var6 = function arg0, arg1() {
         _fun97148: for (var _fun97148_ip = 0;;) switch (_fun97148_ip) {
             case 0:
                 var5 = arg0;
@@ -395,7 +395,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var1 = function(arg0, arg1) { // Original name: convertCallbackFunction, environment: var3
+    var1 = function arg0, arg1() {
         _fun97150: for (var _fun97150_ip = 0;;) switch (_fun97150_ip) {
             case 0:
                 var0 = arg0;
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 throw var0;
         }
     };
-    var0 = function(arg0) { // Original name: isArrayBuffer, environment: var3
+    var0 = function arg0() {
         _fun97151: for (var _fun97151_ip = 0;;) switch (_fun97151_ip) {
             case 0:
                 var0 = arg0;

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.INITIATE_IMAGE_UPLOAD;
     var7 = {};
     var7.request = var0;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.OPEN_SHARE_MOMENT_DIALOG;
     var7 = {};
     var7.response = var0;
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.RPCCommand;
     var8 = var7.AUTHENTICATE;
     var7 = {};
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.request = var9;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var3 = arg0;
         var0 = {};
         var1 = var3.string;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS;
     var7 = {};
     var7.request = var0;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var7 = arg0;
         var0 = {};
         var1 = var7.array;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.RPCCommand;
     var8 = var7.SHARE_INTERACTION;
     var7 = {};
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.request = var9;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.boolean;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.RPCCommand;
     var8 = var7.SHARE_LINK;
     var7 = {};
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.request = var9;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.boolean;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.GET_RELATIONSHIPS;
     var7 = {};
     var7.request = var0;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var5 = arg0;
         var0 = {};
         var1 = var5.array;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.RPCCommand;
     var8 = var7.INVITE_USER_EMBEDDED;
     var7 = {};
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.RPCCommand;
     var8 = var7.GET_USER;
     var7 = {};
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.request = var9;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.RPCCommand;
     var8 = var7.GET_QUEST_ENROLLMENT_STATUS;
     var7 = {};
-    var9 = function(arg0) { // Original name: request, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.request = var9;
-    var9 = function(arg0) { // Original name: response, environment: var6
+    var9 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.RPCCommand;
     var7 = var3.QUEST_START_TIMER;
     var3 = {};
-    var8 = function(arg0) { // Original name: request, environment: var6
+    var8 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.string;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.request = var8;
-    var8 = function(arg0) { // Original name: response, environment: var6
+    var8 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = var2.boolean;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.response = var8;
     var1[var7] = var3;
-    var3 = function(arg0) { // Original name: Activity, environment: var6
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.object;
         var0 = {};
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: User, environment: var6
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.object;
         var0 = {};
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: ActionRowComponent, environment: var6
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.object;
         var0 = {};
@@ -898,7 +898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: ButtonComponent, environment: var6
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.object;
         var0 = {};

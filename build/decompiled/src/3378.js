@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var1;
     var2 = silentSetPrototypeOf(var4, var3);
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: isPropertyDescriptor, environment: var0
+    var1 = function arg0() {
         _fun28984: for (var _fun28984_ip = 0;;) switch (_fun28984_ip) {
             case 0:
                 var6 = arg0;

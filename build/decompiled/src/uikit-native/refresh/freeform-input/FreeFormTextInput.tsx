@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ClearButton, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.onPress;
         var0 = _closure1_slot9;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot6;
             case 477:
                 var0 = {};
-                var4 = function() { // Original name: onPress, environment: var12
+                var4 = function() {
                     _fun51513: for (var _fun51513_ip = 0;;) switch (_fun51513_ip) {
                         case 0:
                             var1 = _closure2_slot4;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.multiline = var21;
                 var11.value = var20;
                 var11.onChangeText = var19;
-                var19 = function(arg0) { // Original name: onFocus, environment: var12
+                var19 = function arg0() {
                     _fun51514: for (var _fun51514_ip = 0;;) switch (_fun51514_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var11.onFocus = var19;
-                var19 = function(arg0) { // Original name: onBlur, environment: var12
+                var19 = function arg0() {
                     _fun51515: for (var _fun51515_ip = 0;;) switch (_fun51515_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot7;
                 var10 = _closure1_slot10;
                 var9 = {};
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     _fun51516: for (var _fun51516_ip = 0;;) switch (_fun51516_ip) {
                         case 0:
                             var2 = _closure2_slot0;

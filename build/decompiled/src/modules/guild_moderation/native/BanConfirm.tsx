@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var7;
     var7 = {};
     var7.value = var3;
-    var3 = function() { // Original name: getLabel, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.HOUR;
     var8 = var12 * var8;
     var7.value = var8;
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = 6;
     var8 = var8 * var13;
     var7.value = var8;
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = 12;
     var8 = var8 * var13;
     var7.value = var8;
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.DAY;
     var8 = var12 * var8;
     var7.value = var8;
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.DAY;
     var8 = var10 * var8;
     var7.value = var8;
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.DAY;
     var8 = var9 * var8;
     var7.value = var8;
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: BanConfirm, environment: var1
+    var1 = function arg0() {
         _fun79132: for (var _fun79132_ip = 0;;) switch (_fun79132_ip) {
             case 0:
                 var0 = arg0;
@@ -628,7 +628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var29[var27];
                 var27 = var27.value;
                 var12.defaultValue = var27;
-                var27 = function(arg0) { // Original name: onChange, environment: var24
+                var27 = function arg0() {
                     var1 = _closure2_slot5;
                     var0 = arg0;
                     var1.current = var0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.label = var26;
                 var26 = 512;
                 var12.maxLength = var26;
-                var24 = function(arg0) { // Original name: onChange, environment: var24
+                var24 = function arg0() {
                     var1 = _closure2_slot6;
                     var0 = arg0;
                     var1.current = var0;

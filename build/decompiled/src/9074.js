@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = metroImportAll;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot1 = var3;
-    var1 = function(arg0) { // Original name: useInvalidPreventRemoveError, environment: var1
+    var1 = function arg0() {
         _fun72707: for (var _fun72707_ip = 0;;) switch (_fun72707_ip) {
             case 0:
                 var3 = _closure1_slot1;

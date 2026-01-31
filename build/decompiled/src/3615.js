@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.hasOwnProperty;
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: assignValue, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun32456: for (var _fun32456_ip = 0;;) switch (_fun32456_ip) {
             case 0:
                 var4 = arg0;

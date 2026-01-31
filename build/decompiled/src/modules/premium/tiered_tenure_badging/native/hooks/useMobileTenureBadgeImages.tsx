@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var1 = function(arg0) { // Original name: getMobileTenureBadgeImages, environment: var3
+    var1 = function arg0() {
         var1 = _closure1_slot0;
         var0 = arg0;
         var0 = var1[var0];

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0) { // Original name: setActiveSpanInBrowser, environment: var0
+    var0 = function arg0() {
         _fun12006: for (var _fun12006_ip = 0;;) switch (_fun12006_ip) {
             case 0:
                 var4 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var6.Proxy;
                 var11 = var4.end;
                 var6 = {};
-                var7 = function(arg0, arg1, arg2) { // Original name: apply, environment: var7
+                var7 = function arg0, arg1, arg2() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 0;

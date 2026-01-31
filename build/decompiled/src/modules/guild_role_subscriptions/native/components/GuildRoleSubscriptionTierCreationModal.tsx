@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierCreationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierCreationModal, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var11 = var1.guildId;
         var _closure2_slot0 = var11;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.editStateId = var2;
                             var2 = _closure2_slot1;
                             var1.groupListingId = var2;
-                            var2 = function(arg0) { // Original name: onBeforeDispatchNewListing, environment: var2
+                            var2 = function arg0() {
                                 var2 = _closure2_slot5;
                                 var0 = arg0;
                                 var1 = var0.id;

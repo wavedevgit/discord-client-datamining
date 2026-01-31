@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var1 = exports;
     var6 = dependencyMap;
-    var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
+    var4 = function arg0() {
         _fun22635: for (var _fun22635_ip = 0;;) switch (_fun22635_ip) {
             case 0:
                 var2 = arg0;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function(arg0) { // Original name: eachYearOfInterval, environment: var3
+    var0 = function arg0() {
         _fun22636: for (var _fun22636_ip = 0;;) switch (_fun22636_ip) {
             case 0:
                 var0 = arg0;

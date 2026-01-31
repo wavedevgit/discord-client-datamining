@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun35934: for (var _fun35934_ip = 0;;) switch (_fun35934_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun35937: for (var _fun35937_ip = 0;;) switch (_fun35937_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun35939: for (var _fun35939_ip = 0;;) switch (_fun35939_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var9 = function(arg0) { // Original name: handleSoundCreateOrUpdate, environment: var4
+    var9 = function arg0() {
         _fun35940: for (var _fun35940_ip = 0;;) switch (_fun35940_ip) {
             case 0:
                 var0 = arg0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: syncLocalSoundboardMutesFromUserSettings, environment: var4
+    var0 = function arg0() {
         _fun35942: for (var _fun35942_ip = 0;;) switch (_fun35942_ip) {
             case 0:
                 var1 = arg0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: SoundboardStore, environment: var5
+        var3 = function() {
             _fun35945: for (var _fun35945_ip = 0;;) switch (_fun35945_ip) {
                 case 0:
                     var3 = this;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var0 = _closure1_slot9;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOverlaySerializedState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = global;
             var5 = var2.Object;
@@ -762,7 +762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSounds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSoundsForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot15;
             var1 = var2.get;
             var0 = arg0;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSound';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun35950: for (var _fun35950_ip = 0;;) switch (_fun35950_ip) {
                 case 0:
                     var1 = arg1;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSoundById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = global;
@@ -845,7 +845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingSounds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot20;
             var0 = _closure1_slot14;
             var0 = var0.FETCHING;
@@ -857,7 +857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingDefaultSounds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot19;
             var0 = _closure1_slot14;
             var0 = var0.FETCHING;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetching';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun35956: for (var _fun35956_ip = 0;;) switch (_fun35956_ip) {
                 case 0:
                     var2 = this;
@@ -891,7 +891,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetchDefaultSounds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot19;
             var0 = _closure1_slot14;
             var0 = var0.NOT_FETCHED;
@@ -903,7 +903,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedDefaultSounds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot19;
             var0 = _closure1_slot14;
             var0 = var0.FETCHED;
@@ -915,7 +915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isUserPlayingSounds';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun35959: for (var _fun35959_ip = 0;;) switch (_fun35959_ip) {
                 case 0:
                     var2 = _closure1_slot24;
@@ -940,7 +940,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPlayingSound';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot17;
             var1 = var2.get;
             var0 = arg0;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFavoriteSound';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot23;
             var1 = var2.has;
             var0 = arg0;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFavorites';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot23;
             return var0;
         };
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllTopSoundsForGuilds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -984,7 +984,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLocalSoundboardMuted';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot18;
             var1 = var2.has;
             var0 = arg0;
@@ -996,7 +996,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasHadOtherUserPlaySoundInSession';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot25;
             return var0;
         };
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldFetchTopSoundsForGuilds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun35966: for (var _fun35966_ip = 0;;) switch (_fun35966_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedTopSoundsForGuilds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot21;
             var0 = _closure1_slot14;
             var0 = var0.FETCHED;
@@ -1073,7 +1073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedAllSounds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun35968: for (var _fun35968_ip = 0;;) switch (_fun35968_ip) {
                 case 0:
                     var1 = _closure1_slot20;
@@ -1116,7 +1116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingAnySounds';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = _closure1_slot20;
             var2 = new Array(3);
             var2[0] = var1;
@@ -1147,7 +1147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var15 = var7.bind(var0)(var3);
     var3 = {};
-    var10 = function() { // Original name: handleReset, environment: var4
+    var10 = function() {
         var2 = _closure1_slot15;
         var0 = var2.clear;
         var0 = var0.bind(var2)();
@@ -1175,7 +1175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.LOGOUT = var10;
-    var10 = function() { // Original name: handleSoundboardFetch, environment: var4
+    var10 = function() {
         var0 = _closure1_slot14;
         var0 = var0.FETCHING;
         _closure1_slot20 = var0;
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.GUILD_SOUNDBOARD_FETCH = var10;
     var3.GUILD_SOUNDBOARD_SOUND_CREATE = var9;
     var3.GUILD_SOUNDBOARD_SOUND_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleSoundDelete, environment: var4
+    var9 = function arg0() {
         _fun35974: for (var _fun35974_ip = 0;;) switch (_fun35974_ip) {
             case 0:
                 var0 = arg0;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SOUNDBOARD_SOUND_DELETE = var9;
-    var9 = function(arg0) { // Original name: handleSoundPlayStart, environment: var4
+    var9 = function arg0() {
         _fun35976: for (var _fun35976_ip = 0;;) switch (_fun35976_ip) {
             case 0:
                 var0 = arg0;
@@ -1316,7 +1316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SOUNDBOARD_SOUND_PLAY_START = var9;
-    var9 = function(arg0) { // Original name: handleSoundPlayEnd, environment: var4
+    var9 = function arg0() {
         _fun35977: for (var _fun35977_ip = 0;;) switch (_fun35977_ip) {
             case 0:
                 var0 = arg0;
@@ -1386,7 +1386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.GUILD_SOUNDBOARD_SOUND_PLAY_END = var9;
-    var9 = function(arg0) { // Original name: handleSoundsUpdate, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = var0.soundboardSounds;
@@ -1397,7 +1397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_SOUNDBOARD_SOUNDS_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleSetLocalVolume, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.volume;
         var2 = var0.location;
@@ -1407,7 +1407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_SOUNDBOARD_SET_VOLUME = var9;
-    var9 = function() { // Original name: handleVoiceChannelSelect, environment: var4
+    var9 = function() {
         var2 = _closure1_slot17;
         var1 = var2.clear;
         var1 = var1.bind(var2)();
@@ -1418,7 +1418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.VOICE_CHANNEL_SELECT = var9;
-    var9 = function(arg0) { // Original name: handleUserSettingsProtoUpdate, environment: var4
+    var9 = function arg0() {
         _fun35981: for (var _fun35981_ip = 0;;) switch (_fun35981_ip) {
             case 0:
                 var0 = arg0;
@@ -1489,7 +1489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.USER_SETTINGS_PROTO_UPDATE = var9;
-    var9 = function() { // Original name: handleFetchDefaultSounds, environment: var4
+    var9 = function() {
         var0 = _closure1_slot14;
         var0 = var0.FETCHING;
         _closure1_slot19 = var0;
@@ -1497,7 +1497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SOUNDBOARD_FETCH_DEFAULT_SOUNDS = var9;
-    var9 = function(arg0) { // Original name: handleFetchDefaultSoundsSuccess, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var4 = var0.soundboardSounds;
         var3 = _closure1_slot15;
@@ -1511,7 +1511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS = var9;
-    var9 = function() { // Original name: handleFetchTopSoundsForGuilds, environment: var4
+    var9 = function() {
         var0 = _closure1_slot14;
         var0 = var0.FETCHING;
         _closure1_slot21 = var0;
@@ -1519,7 +1519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH = var9;
-    var9 = function(arg0) { // Original name: handleFetchTopSoundsForGuildsSuccess, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var4 = var0.topSoundsForGuilds;
         var0 = global;
@@ -1545,7 +1545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS = var9;
-    var9 = function() { // Original name: handleFetchTopSoundsForGuildsFailure, environment: var4
+    var9 = function() {
         var0 = _closure1_slot14;
         var0 = var0.FETCHED;
         _closure1_slot21 = var0;
@@ -1555,7 +1555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE = var9;
-    var9 = function(arg0) { // Original name: handleSoundboardSoundsReceived, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.updates;
         var1 = var2.forEach;
@@ -1577,7 +1577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.SOUNDBOARD_SOUNDS_RECEIVED = var9;
-    var9 = function(arg0) { // Original name: handleGuildDelete, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         var2 = _closure1_slot15;
@@ -1588,7 +1588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_DELETE = var9;
-    var9 = function(arg0) { // Original name: handleToggleLocalSoundboardMute, environment: var4
+    var9 = function arg0() {
         _fun35990: for (var _fun35990_ip = 0;;) switch (_fun35990_ip) {
             case 0:
                 var0 = arg0;
@@ -1615,7 +1615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE = var9;
-    var4 = function(arg0) { // Original name: handleOverlayInitialize, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.soundboardStoreState;
         var3 = global;

@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: AppLauncherKeyboard, environment: var1
+    var1 = function arg0() {
         _fun107227: for (var _fun107227_ip = 0;;) switch (_fun107227_ip) {
             case 0:
                 var1 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var23[var30];
                 var27 = var31.bind(var3)(var4);
                 var26 = var27.useAnimatedReaction;
-                var6 = function() { // Original name: C, environment: var0
+                var6 = function() {
                     var1 = _closure2_slot12;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.__workletHash = var4;
                 var4 = _closure1_slot12;
                 var6.__initData = var4;
-                var4 = function(arg0, arg1) { // Original name: E, environment: var0
+                var4 = function arg0, arg1() {
                     _fun107232: for (var _fun107232_ip = 0;;) switch (_fun107232_ip) {
                         case 0:
                             var3 = arg0;

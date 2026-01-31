@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_channel/native/createMediaPostPreviewEmbedContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createMediaPostPreviewEmbedContent, environment: var1
+    var1 = function arg0() {
         _fun92510: for (var _fun92510_ip = 0;;) switch (_fun92510_ip) {
             case 0:
                 var6 = arguments[1];

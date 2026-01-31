@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: getExperimentServerAssignment, environment: var1
+    var3 = function arg0, arg1() {
         _fun78722: for (var _fun78722_ip = 0;;) switch (_fun78722_ip) {
             case 0:
                 var2 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/experiments/client_override_hooks/useExperimentAssignments.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: useExperimentAssignment, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useExperimentAssignment = var4;
     var2.getExperimentServerAssignment = var3;
-    var1 = function(arg0, arg1) { // Original name: useExperimentServerAssignment, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

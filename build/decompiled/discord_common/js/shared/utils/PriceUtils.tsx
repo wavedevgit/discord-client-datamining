@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.DISCORD_ORB;
     var4[var3] = var8;
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1) { // Original name: convertToMajorCurrencyUnits, environment: var1
+    var3 = function arg0, arg1() {
         _fun42104: for (var _fun42104_ip = 0;;) switch (_fun42104_ip) {
             case 0:
                 var3 = arg1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: PopoutCheck, environment: var3
+    var0 = function arg0() {
         _fun78787: for (var _fun78787_ip = 0;;) switch (_fun78787_ip) {
             case 0:
                 var0 = arg0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var1 = function(arg0) { // Original name: PopoutChecks, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.eligibilityStates;
         var0 = var0.guildId;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/connections/native/ConnectionsRoleMessageBadgeActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ConnectionsRoleMessageBadgeActionSheet, environment: var3
+    var3 = function arg0() {
         _fun78794: for (var _fun78794_ip = 0;;) switch (_fun78794_ip) {
             case 0:
                 var0 = arg0;
@@ -1261,7 +1261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = {};
                 var28 = var25.button;
                 var19.style = var28;
-                var28 = function() { // Original name: onPress, environment: var24
+                var28 = function() {
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 38;
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = {};
                 var25 = var25.button;
                 var17.style = var25;
-                var24 = function() { // Original name: onPress, environment: var24
+                var24 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 40;

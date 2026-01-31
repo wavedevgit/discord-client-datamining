@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EmojiImage, environment: var1
+    var0 = function arg0() {
         _fun56997: for (var _fun56997_ip = 0;;) switch (_fun56997_ip) {
             case 0:
                 var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: TextStatusContent, environment: var1
+    var0 = function arg0() {
         _fun56998: for (var _fun56998_ip = 0;;) switch (_fun56998_ip) {
             case 0:
                 var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: EmojiOnlyStatusContent, environment: var1
+    var0 = function arg0() {
         _fun56999: for (var _fun56999_ip = 0;;) switch (_fun56999_ip) {
             case 0:
                 var0 = arg0;
@@ -867,7 +867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 604:
                 return var10;
             case 606:
-                var14 = function() { // Original name: handlePressAddOrEditStatus, environment: var5
+                var14 = function() {
                     var2 = _closure2_slot6;
                     var1 = {};
                     var0 = 'PRESS_EDIT_CUSTOM_STATUS';
@@ -901,7 +901,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.bind(var3)(var1);
                     return var0;
                 };
-                var15 = function() { // Original name: renderStatusContent, environment: var5
+                var15 = function() {
                     _fun57005: for (var _fun57005_ip = 0;;) switch (_fun57005_ip) {
                         case 0:
                             var0 = _closure2_slot11;
@@ -1088,7 +1088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.emoji = var7;
                             var7 = _closure2_slot4;
                             var4.textVariant = var7;
-                            var7 = function(arg0) { // Original name: onTextLayout, environment: var7
+                            var7 = function arg0() {
                                 var2 = _closure2_slot12;
                                 var0 = arg0;
                                 var0 = var0.nativeEvent;

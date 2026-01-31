@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.ACTION_SHEET_MAX_WIDTH;
     var _closure1_slot8 = var3;
-    var3 = function() { // Original name: useOrientationConfig, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 6;

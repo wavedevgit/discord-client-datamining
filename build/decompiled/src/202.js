@@ -49,14 +49,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.STOP_IMMEDIATE_PROPAGATION_FLAG_KEY = var5;
     var2.STOP_PROPAGATION_FLAG_KEY = var4;
     var2.TARGET_KEY = var3;
-    var3 = function(arg0) { // Original name: getCurrentTarget, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot1;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getCurrentTarget = var3;
-    var3 = function(arg0, arg1) { // Original name: setCurrentTarget, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = arg1;
         var0 = arg0;
@@ -65,14 +65,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setCurrentTarget = var3;
-    var3 = function(arg0) { // Original name: getComposedPath, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot0;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getComposedPath = var3;
-    var3 = function(arg0, arg1) { // Original name: setComposedPath, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = arg1;
         var0 = arg0;
@@ -81,14 +81,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setComposedPath = var3;
-    var3 = function(arg0) { // Original name: getEventPhase, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot2;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getEventPhase = var3;
-    var3 = function(arg0, arg1) { // Original name: setEventPhase, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot2;
         var1 = arg1;
         var0 = arg0;
@@ -97,14 +97,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setEventPhase = var3;
-    var3 = function(arg0) { // Original name: getInPassiveListenerFlag, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot3;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getInPassiveListenerFlag = var3;
-    var3 = function(arg0, arg1) { // Original name: setInPassiveListenerFlag, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot3;
         var1 = arg1;
         var0 = arg0;
@@ -113,14 +113,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setInPassiveListenerFlag = var3;
-    var3 = function(arg0) { // Original name: getIsTrusted, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot4;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getIsTrusted = var3;
-    var3 = function(arg0, arg1) { // Original name: setIsTrusted, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var1 = arg1;
         var0 = arg0;
@@ -129,14 +129,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setIsTrusted = var3;
-    var3 = function(arg0) { // Original name: getStopImmediatePropagationFlag, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot5;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getStopImmediatePropagationFlag = var3;
-    var3 = function(arg0, arg1) { // Original name: setStopImmediatePropagationFlag, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot5;
         var1 = arg1;
         var0 = arg0;
@@ -145,14 +145,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setStopImmediatePropagationFlag = var3;
-    var3 = function(arg0) { // Original name: getStopPropagationFlag, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot6;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getStopPropagationFlag = var3;
-    var3 = function(arg0, arg1) { // Original name: setStopPropagationFlag, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot6;
         var1 = arg1;
         var0 = arg0;
@@ -161,14 +161,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setStopPropagationFlag = var3;
-    var3 = function(arg0) { // Original name: getTarget, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot7;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var2.getTarget = var3;
-    var1 = function(arg0, arg1) { // Original name: setTarget, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot7;
         var1 = arg1;
         var0 = arg0;

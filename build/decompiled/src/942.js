@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: getOrCreateSpanMap, environment: var1
+    var0 = function arg0() {
         _fun9779: for (var _fun9779_ip = 0;;) switch (_fun9779_ip) {
             case 0:
                 var4 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = new var12[var3](var11);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: cleanupPendingSpansForTransport, environment: var1
+    var3 = function arg0() {
         _fun9780: for (var _fun9780_ip = 0;;) switch (_fun9780_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.cleanupPendingSpansForTransport = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: completeSpanWithResults, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun9781: for (var _fun9781_ip = 0;;) switch (_fun9781_ip) {
             case 0:
                 var3 = arg1;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.completeSpanWithResults = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: storeSpanForRequest, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot4;
         var0 = undefined;
         var1 = arg0;

@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
-    var3 = function(arg0) { // Original name: oneArgumentPooler, environment: var2
+    var3 = function arg0() {
         _fun5884: for (var _fun5884_ip = 0;;) switch (_fun5884_ip) {
             case 0:
                 var3 = arg0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: standardReleaser, environment: var2
+    var0 = function arg0() {
         _fun5885: for (var _fun5885_ip = 0;;) switch (_fun5885_ip) {
             case 0:
                 var3 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var3;
     var0 = {};
-    var4 = function(arg0, arg1) { // Original name: addPoolingTo, environment: var2
+    var4 = function arg0, arg1() {
         _fun5886: for (var _fun5886_ip = 0;;) switch (_fun5886_ip) {
             case 0:
                 var0 = arg0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.addPoolingTo = var4;
     var0.oneArgumentPooler = var3;
-    var3 = function(arg0, arg1) { // Original name: twoArgumentPooler, environment: var2
+    var3 = function arg0, arg1() {
         _fun5887: for (var _fun5887_ip = 0;;) switch (_fun5887_ip) {
             case 0:
                 var4 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.twoArgumentPooler = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: threeArgumentPooler, environment: var2
+    var3 = function arg0, arg1, arg2() {
         _fun5888: for (var _fun5888_ip = 0;;) switch (_fun5888_ip) {
             case 0:
                 var5 = arg0;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.threeArgumentPooler = var3;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: fourArgumentPooler, environment: var2
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun5889: for (var _fun5889_ip = 0;;) switch (_fun5889_ip) {
             case 0:
                 var6 = arg0;

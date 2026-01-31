@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: HorizontalAutocompleteOption, environment: var6
+    var0 = function arg0() {
         var1 = arg0;
         var7 = var1.children;
         var11 = var1.onPress;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var10[var4];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: s, environment: var0
+        var0 = function() {
             var0 = {};
             var2 = _closure2_slot0;
             var1 = var2.get;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var7;
     var _closure1_slot13 = var1;
     var1 = {};
-    var7 = function(arg0) { // Original name: User, environment: var6
+    var7 = function arg0() {
         _fun74523: for (var _fun74523_ip = 0;;) switch (_fun74523_ip) {
             case 0:
                 var0 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.User = var7;
-    var7 = function(arg0) { // Original name: Role, environment: var6
+    var7 = function arg0() {
         _fun74524: for (var _fun74524_ip = 0;;) switch (_fun74524_ip) {
             case 0:
                 var1 = arg0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.Role = var7;
-    var7 = function(arg0) { // Original name: Channel, environment: var6
+    var7 = function arg0() {
         _fun74526: for (var _fun74526_ip = 0;;) switch (_fun74526_ip) {
             case 0:
                 var1 = arg0;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.Channel = var7;
-    var6 = function(arg0) { // Original name: Emoji, environment: var6
+    var6 = function arg0() {
         _fun74528: for (var _fun74528_ip = 0;;) switch (_fun74528_ip) {
             case 0:
                 var0 = arg0;

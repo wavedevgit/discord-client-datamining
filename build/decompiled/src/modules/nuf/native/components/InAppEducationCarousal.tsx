@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var18;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: InAppEducationCarouselCard, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var7 = var0.image;
                 var0 = _closure1_slot16;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot17 = var0;
-            var0 = function() { // Original name: onClose, environment: var1
+            var0 = function() {
                 _fun80674: for (var _fun80674_ip = 0;;) switch (_fun80674_ip) {
                     case 0:
                         var3 = _closure1_slot1;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var0;
-            var0 = function() { // Original name: InAppEducationCarousel, environment: var1
+            var0 = function() {
                 var0 = _closure1_slot16;
                 var3 = undefined;
                 var14 = var0.bind(var3)();
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.sliderWidth = var13;
                 var13 = _closure1_slot14;
                 var7.itemWidth = var13;
-                var13 = function(arg0) { // Original name: renderItem, environment: var12
+                var13 = function arg0() {
                     var0 = arg0;
                     var0 = var0.item;
                     var3 = _closure1_slot10;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var7.renderItem = var13;
-                var13 = function(arg0) { // Original name: onBeforeSnapToItem, environment: var12
+                var13 = function arg0() {
                     var2 = _closure2_slot1;
                     var0 = undefined;
                     var1 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.enableMomentum = var13;
                 var13 = 0.9;
                 var7.decelerationRate = var13;
-                var13 = function(arg0) { // Original name: onScroll, environment: var12
+                var13 = function arg0() {
                     var2 = _closure2_slot2;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.PDTjLN;
                             var5 = var6.bind(var7)(var5);
                             var1.text = var5;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 _fun80681: for (var _fun80681_ip = 0;;) switch (_fun80681_ip) {
                                     case 0:
                                         var0 = _closure2_slot4;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/nuf/native/components/InAppEducationCarousal.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function() { // Original name: InAppEducationScreen, environment: var1
+            var1 = function() {
                 var3 = _closure1_slot10;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;

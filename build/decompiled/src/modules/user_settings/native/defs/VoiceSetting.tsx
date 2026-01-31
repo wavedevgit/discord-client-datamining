@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var8 = function() { // Original name: title, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.MicrophoneIcon;
     var1.IconComponent = var8;
-    var8 = function() { // Original name: useVoiceSettingTrailing, environment: var7
+    var8 = function() {
         _fun84313: for (var _fun84313_ip = 0;;) switch (_fun84313_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var9 = var9.VOICE;
     var8.route = var9;
-    var9 = function() { // Original name: getComponent, environment: var7
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var8.getComponent = var9;
     var1.screen = var8;
-    var7 = function() { // Original name: additionalSearchTerms, environment: var7
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;

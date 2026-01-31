@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildsBarPendingGuildFolder, environment: var1
+    var1 = function arg0() {
         _fun100935: for (var _fun100935_ip = 0;;) switch (_fun100935_ip) {
             case 0:
                 var0 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var2 = var3.bind(var4)(var2);
                     var0.accessibilityActions = var2;
-                    var1 = function(arg0) { // Original name: onAccessibilityAction, environment: var1
+                    var1 = function arg0() {
                         _fun100939: for (var _fun100939_ip = 0;;) switch (_fun100939_ip) {
                             case 0:
                                 var1 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var10;
                 var2 = function() { // Environment: var2
                     var0 = {};
-                    var1 = function() { // Original name: onPress, environment: var1
+                    var1 = function() {
                         var6 = _closure1_slot0;
                         var3 = _closure1_slot2;
                         var2 = 9;

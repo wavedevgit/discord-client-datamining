@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var1.Object;
             var3 = var4.assign;
             var1 = {};
-            var8 = function() { // Original name: get FlatList, environment: var6
+            var8 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 3;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 set: var0,
                 enumerable: true
             });
-            var8 = function() { // Original name: get Image, environment: var6
+            var8 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 4;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 set: var0,
                 enumerable: true
             });
-            var8 = function() { // Original name: get ScrollView, environment: var6
+            var8 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 5;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 set: var0,
                 enumerable: true
             });
-            var8 = function() { // Original name: get SectionList, environment: var6
+            var8 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 6;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 set: var0,
                 enumerable: true
             });
-            var8 = function() { // Original name: get Text, environment: var6
+            var8 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 7;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 set: var0,
                 enumerable: true
             });
-            var7 = function() { // Original name: get View, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 8;

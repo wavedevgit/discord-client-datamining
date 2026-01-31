@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = require;
             var2 = exports;
             var5 = dependencyMap;
-            var3 = function(arg0) { // Original name: FastImageAndroid, environment: var6
+            var3 = function arg0() {
                 var0 = arg0;
                 var3 = _closure1_slot2;
                 var2 = _closure1_slot0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var1.Object;
             var7 = var8.assign;
             var1 = {};
-            var10 = function(arg0) { // Original name: preload, environment: var6
+            var10 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var4 = global;

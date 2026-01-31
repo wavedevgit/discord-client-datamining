@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 61: // try_start_0
             var9 = var4;
             var8 = {};
-            var6 = function() { // Original name: Get, environment: var1
+            var6 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 104:
             var6 = var2;
-            var5 = function(arg0) { // Original name: IsConstructor, environment: var1
+            var5 = function arg0() {
                 _fun28979: for (var _fun28979_ip = 0;;) switch (_fun28979_ip) {
                     case 0:
                         var1 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot2 = var6;
             var5 = var4;
             var4 = {};
-            var7 = function() { // Original name: Get, environment: var1
+            var7 = function() {
                 var0 = _closure1_slot1;
                 throw var0;
             };
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4['[[Enumerable]]'] = var3;
             var3 = 'length';
             var3 = var5.bind(var0)(var6, var3, var4);
-            var1 = function(arg0) { // Original name: IsConstructor, environment: var1
+            var1 = function arg0() {
                 _fun28978: for (var _fun28978_ip = 0;;) switch (_fun28978_ip) {
                     case 0:
                         var1 = arg0;

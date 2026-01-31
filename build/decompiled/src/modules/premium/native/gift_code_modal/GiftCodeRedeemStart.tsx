@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getGiftCodeHeaderText, environment: var1
+    var0 = function arg0() {
         _fun56523: for (var _fun56523_ip = 0;;) switch (_fun56523_ip) {
             case 0:
                 var2 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gift_code_modal/GiftCodeRedeemStart.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GiftCodeRedeemStart, environment: var1
+    var1 = function arg0() {
         _fun56533: for (var _fun56533_ip = 0;;) switch (_fun56533_ip) {
             case 0:
                 var1 = arg0;
@@ -1353,7 +1353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.Colors;
                 var11 = var11.BRAND;
                 var8.color = var11;
-                var11 = function() { // Original name: onPress, environment: var12
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 43;
@@ -1395,7 +1395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.Colors;
                 var14 = var14.BRAND;
                 var11.color = var14;
-                var14 = function() { // Original name: renderIcon, environment: var12
+                var14 = function() {
                     var3 = _closure1_slot11;
                     var1 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -1421,7 +1421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var11.renderIcon = var14;
-                var14 = function() { // Original name: onPress, environment: var12
+                var14 = function() {
                     var2 = _closure2_slot9;
                     var1 = {};
                     var0 = _closure2_slot10;
@@ -1483,7 +1483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.Colors;
                 var13 = var13.BRAND;
                 var9.color = var13;
-                var13 = function() { // Original name: onPress, environment: var12
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 45;
@@ -1495,7 +1495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot0;
                     var5 = var5.code;
                     var1.code = var5;
-                    var5 = function() { // Original name: onRedeemed, environment: var4
+                    var5 = function() {
                         var2 = _closure1_slot0;
                         var6 = _closure1_slot2;
                         var0 = 7;
@@ -1529,7 +1529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onRedeemed = var5;
-                    var4 = function(arg0) { // Original name: onError, environment: var4
+                    var4 = function arg0() {
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;
                         var6 = 7;
@@ -1609,7 +1609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.Colors;
                 var13 = var13.BRAND;
                 var9.color = var13;
-                var13 = function() { // Original name: onPress, environment: var12
+                var13 = function() {
                     var2 = _closure1_slot0;
                     var6 = _closure1_slot2;
                     var0 = 7;
@@ -1678,7 +1678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.Colors;
                 var13 = var13.BRAND;
                 var9.color = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var3 = _closure2_slot6;
                     var2 = var3.push;
                     var5 = _closure1_slot0;

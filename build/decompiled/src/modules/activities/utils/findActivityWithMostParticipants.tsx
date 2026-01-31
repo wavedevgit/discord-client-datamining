@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/findActivityWithMostParticipants.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: findActivityWithMostParticipants, environment: var1
+    var3 = function arg0() {
         _fun101553: for (var _fun101553_ip = 0;;) switch (_fun101553_ip) {
             case 0:
                 var3 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: findActivityWithMostNonBlockedOrIgnoredParticipants, environment: var1
+    var1 = function arg0() {
         _fun101555: for (var _fun101555_ip = 0;;) switch (_fun101555_ip) {
             case 0:
                 var1 = arg0;

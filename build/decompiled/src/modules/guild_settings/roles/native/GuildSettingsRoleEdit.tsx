@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun115900: for (var _fun115900_ip = 0;;) switch (_fun115900_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot29 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: GuildSettingsRoleEdit, environment: var5
+        var3 = function arg0() {
             _fun115904: for (var _fun115904_ip = 0;;) switch (_fun115904_ip) {
                 case 0:
                     var4 = this;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var3 = var3.bind(var4)(var5);
                                     var _closure5_slot1 = var3;
                                 case 421:
-                                    var3 = function() { // Original name: success, environment: var1
+                                    var3 = function() {
                                         var2 = _closure5_slot2;
                                         var0 = var2.pop;
                                         var0 = var0.bind(var2)();
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var _closure5_slot11 = var3;
-                                    var3 = function() { // Original name: failure, environment: var1
+                                    var3 = function() {
                                         var2 = _closure3_slot0;
                                         var1 = var2.setState;
                                         var0 = {};
@@ -1018,7 +1018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var7 = var7.p89ACt;
                                     var7 = var8.bind(var9)(var7);
                                     var1.confirmText = var7;
-                                    var7 = function() { // Original name: onConfirm, environment: var4
+                                    var7 = function() {
                                         var1 = _closure3_slot0;
                                         var0 = var1.handleSaveRole;
                                         var2 = var0.bind(var1)();
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var1.onConfirm = var7;
-                                    var4 = function() { // Original name: onCancel, environment: var4
+                                    var4 = function() {
                                         var2 = _closure1_slot0;
                                         var1 = _closure1_slot3;
                                         var0 = 35;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var1 = var3.trackTabChanged;
             var0 = var3.props;
@@ -1099,7 +1099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var3 = this;
             var2 = var3.updateNavigation;
             var1 = arg0;
@@ -1113,7 +1113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateNavigation';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun115932: for (var _fun115932_ip = 0;;) switch (_fun115932_ip) {
                 case 0:
                     var4 = arg0;
@@ -1229,7 +1229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                 case 190:
                     var0.headerRight = var4;
-                    var3 = function() { // Original name: headerTitle, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot27;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot3;
@@ -1268,7 +1268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderSubScreenButtons';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot28;
@@ -1296,7 +1296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var10.WIDE1L;
             var10 = var13.bind(var14)(var10);
             var4.label = var10;
-            var10 = function() { // Original name: onPress, environment: var11
+            var10 = function() {
                 var2 = _closure3_slot0;
                 var1 = var2.onSubScreenValueChange;
                 var0 = _closure1_slot22;
@@ -1333,7 +1333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var13["5//Muu"];
             var13 = var14.bind(var15)(var13);
             var9.label = var13;
-            var13 = function() { // Original name: onPress, environment: var11
+            var13 = function() {
                 var2 = _closure3_slot0;
                 var1 = var2.onSubScreenValueChange;
                 var0 = _closure1_slot22;
@@ -1369,7 +1369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var12.J4ZtH1;
             var12 = var13.bind(var14)(var12);
             var9.label = var12;
-            var11 = function() { // Original name: onPress, environment: var11
+            var11 = function() {
                 var2 = _closure3_slot0;
                 var1 = var2.onSubScreenValueChange;
                 var0 = _closure1_slot22;
@@ -1400,7 +1400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderDeleteButton';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot27;
             var9 = _closure1_slot0;
             var10 = _closure1_slot3;
@@ -1441,7 +1441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderManagedRoleWarningText';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot29;
             var0 = this;
             var0 = var0.context;
@@ -1485,7 +1485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun115942: for (var _fun115942_ip = 0;;) switch (_fun115942_ip) {
                 case 0:
                     var11 = this;
@@ -1762,7 +1762,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleEdit.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedGuildSettingsRoleEdit, environment: var1
+    var1 = function arg0() {
         _fun115943: for (var _fun115943_ip = 0;;) switch (_fun115943_ip) {
             case 0:
                 var2 = arg0;

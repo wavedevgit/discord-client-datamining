@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: normalizeTransactionName, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var0 = arg1;
         var2 = arg3;
         var _closure2_slot0 = var2;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 21:
                     var1 = new Array(0);
                 case 25:
-                    var0 = function(arg0) { // Original name: getRouteStringFromRoutes, environment: var0
+                    var0 = function arg0() {
                         _fun12437: for (var _fun12437_ip = 0;;) switch (_fun12437_ip) {
                             case 0:
                                 var3 = arg0;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0) { // Original name: reactRouterV3BrowserTracingIntegration, environment: var1
+    var1 = function arg0() {
         _fun12440: for (var _fun12440_ip = 0;;) switch (_fun12440_ip) {
             case 0:
                 var3 = arg0;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.Object;
                 var2 = var3.assign;
                 var1 = {};
-                var0 = function(arg0) { // Original name: afterAllSetup, environment: var0
+                var0 = function arg0() {
                     _fun12441: for (var _fun12441_ip = 0;;) switch (_fun12441_ip) {
                         case 0:
                             var4 = arg0;

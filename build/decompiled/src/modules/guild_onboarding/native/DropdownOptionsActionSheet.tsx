@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: DropdownOptionRow, environment: var1
+    var0 = function arg0() {
         _fun77522: for (var _fun77522_ip = 0;;) switch (_fun77522_ip) {
             case 0:
                 var0 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DropdownOptionsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun77525: for (var _fun77525_ip = 0;;) switch (_fun77525_ip) {
             case 0:
                 var0 = arg0;

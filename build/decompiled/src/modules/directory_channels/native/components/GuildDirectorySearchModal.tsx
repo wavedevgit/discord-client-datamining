@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectorySearchModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildDirectorySearchModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot3;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var2)(var5);
         var4 = function() { // Environment: var4
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = {};
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'fullscreen': true,
                     'headerShown': false
                 };
-                var1 = function() { // Original name: render, environment: var1
+                var1 = function() {
                     var3 = _closure1_slot3;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

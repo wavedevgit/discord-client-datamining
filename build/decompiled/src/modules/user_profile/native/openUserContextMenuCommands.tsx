@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/openUserContextMenuCommands.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openUserContextMenuCommands, environment: var1
+    var1 = function arg0() {
         _fun91854: for (var _fun91854_ip = 0;;) switch (_fun91854_ip) {
             case 0:
                 var0 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.USER;
                 var10.commandType = var2;
                 var10.commandTargetId = var6;
-                var2 = function() { // Original name: onPressAppCommand, environment: var4
+                var2 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.commandType = var7;
                 var1.commandTargetId = var6;
                 var1.onClose = var5;
-                var4 = function() { // Original name: onPressAppCommand, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 0;

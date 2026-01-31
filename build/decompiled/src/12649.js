@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96899
             }
         case 75:
-            var2 = function(arg0, arg1, arg2) { // Original name: defineProperty, environment: var3
+            var2 = function arg0, arg1, arg2() {
                 _fun96901: for (var _fun96901_ip = 0;;) switch (_fun96901_ip) {
                     case 0:
                         var11 = arg0;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96899
             }
         case 99:
-            var1 = function(arg0, arg1, arg2) { // Original name: defineProperty, environment: var3
+            var1 = function arg0, arg1, arg2() {
                 _fun96900: for (var _fun96900_ip = 0;;) switch (_fun96900_ip) {
                     case 0:
                         var4 = arg0;

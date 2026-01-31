@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'enableDevtools': false
     };
     var8 = {};
-    var9 = function(arg0, arg1) { // Original name: warn, environment: var6
+    var9 = function arg0, arg1() {
         var4 = 1;
         var8 = var4;
         var7 = copyRestArgs(var8);
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var8.warn = var9;
     var1.logger = var8;
-    var6 = function(arg0, arg1, arg2) { // Original name: reportDevtoolsEvent, environment: var6
+    var6 = function arg0, arg1, arg2() {
         _fun13517: for (var _fun13517_ip = 0;;) switch (_fun13517_ip) {
             case 0:
                 var5 = arg0;

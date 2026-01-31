@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: PlatformColor, environment: var0
+    var2 = function() {
         _fun1272: for (var _fun1272_ip = 0;;) switch (_fun1272_ip) {
             case 0:
                 var3 = undefined;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.PlatformColor = var2;
-    var2 = function(arg0) { // Original name: normalizeColorObject, environment: var0
+    var2 = function arg0() {
         _fun1273: for (var _fun1273_ip = 0;;) switch (_fun1273_ip) {
             case 0:
                 var1 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.normalizeColorObject = var2;
-    var0 = function(arg0) { // Original name: processColorObject, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/native/ClientInfoUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: getConstants, environment: var1
+    var3 = function() {
         _fun17732: for (var _fun17732_ip = 0;;) switch (_fun17732_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getConstants = var3;
-    var1 = function() { // Original name: getBuildNumberLabel, environment: var1
+    var1 = function() {
         _fun17733: for (var _fun17733_ip = 0;;) switch (_fun17733_ip) {
             case 0:
                 var1 = ['0', '123456', '1234567890'];

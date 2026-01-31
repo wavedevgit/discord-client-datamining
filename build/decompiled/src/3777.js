@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var0 = function(arg0) { // Original name: isInlineStyleTransform, environment: var3
+    var0 = function arg0() {
         _fun33911: for (var _fun33911_ip = 0;;) switch (_fun33911_ip) {
             case 0:
                 var3 = arg0;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var4 = function(arg0) { // Original name: hasInlineStyles, environment: var3
+    var4 = function arg0() {
         _fun33913: for (var _fun33913_ip = 0;;) switch (_fun33913_ip) {
             case 0:
                 var4 = arg0;
@@ -116,7 +116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = {};
     var1 = "function getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(inlineProps){const getInlinePropsUpdate_Pnpm_InlinePropManagerTs1=this._recur;const{isSharedValue}=this.__closure;const update={};for(const[key,styleValue]of Object.entries(inlineProps)){if(isSharedValue(styleValue)){update[key]=styleValue.value;}else if(Array.isArray(styleValue)){update[key]=styleValue.map(function(item){return getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(item);});}else if(typeof styleValue==='object'){update[key]=getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(styleValue);}else{update[key]=styleValue;}}return update;}";
     var5.code = var1;
-    var1 = function(arg0) { // Original name: getInlinePropsUpdate, environment: var3
+    var1 = function arg0() {
         _fun33915: for (var _fun33915_ip = 0;;) switch (_fun33915_ip) {
             case 0:
                 var10 = undefined;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: InlinePropManager, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -254,14 +254,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'attachInlineProps';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: attachInlineProps, environment: var4
+        var1 = function arg0, arg1() {
             _fun33919: for (var _fun33919_ip = 0;;) switch (_fun33919_ip) {
                 case 0:
                     var5 = arg1;
                     var2 = this;
                     var0 = arg0;
                     var4 = var0.props;
-                    var1 = function(arg0) { // Original name: extractSharedValuesMapFromProps, environment: var3
+                    var1 = function arg0() {
                         _fun33920: for (var _fun33920_ip = 0;;) switch (_fun33920_ip) {
                             case 0:
                                 var13 = arg0;
@@ -516,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var2._inlinePropsViewDescriptors;
                     var6 = var4.shareableViewDescriptors;
                     var _closure3_slot1 = var6;
-                    var5 = function() { // Original name: pnpm_InlinePropManagerTs2, environment: var3
+                    var5 = function() {
                         var4 = _closure1_slot6;
                         var3 = _closure3_slot0;
                         var0 = undefined;
@@ -596,7 +596,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'detachInlineProps';
         var0.key = var5;
-        var4 = function() { // Original name: detachInlineProps, environment: var4
+        var4 = function() {
             _fun33923: for (var _fun33923_ip = 0;;) switch (_fun33923_ip) {
                 case 0:
                     var0 = this;
@@ -628,7 +628,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1 = var1.bind(var0)();
     var2.hasInlineStyles = var4;
-    var3 = function(arg0, arg1) { // Original name: getInlineStyle, environment: var3
+    var3 = function arg0, arg1() {
         _fun33924: for (var _fun33924_ip = 0;;) switch (_fun33924_ip) {
             case 0:
                 var2 = arg0;

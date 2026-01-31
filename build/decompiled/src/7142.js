@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: instrumentFetch, environment: var3
+    var0 = function arg0() {
         _fun58629: for (var _fun58629_ip = 0;;) switch (_fun58629_ip) {
             case 0:
                 var0 = undefined;
@@ -316,7 +316,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: streamHandler, environment: var3
+    var0 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function() { // Original name: _streamHandler, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -358,13 +358,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         CatchBlockStart(arg_register = 4);
                     case 40:
                         var4 = var3;
-                        var3 = function(arg0, arg1) { // Original name: resolveResponse, environment: var1
+                        var3 = function arg0, arg1() {
                             _fun58641: for (var _fun58641_ip = 0;;) switch (_fun58641_ip) {
                                 case 0:
                                     var1 = arg0;
                                     var2 = arg1;
                                     var _closure5_slot0 = var2;
-                                    var3 = function(arg0) { // Original name: consumeChunks, environment: var0
+                                    var3 = function arg0() {
                                         var0 = undefined;
                                         var3 = _closure5_slot3;
                                         var2 = var3.apply;
@@ -375,7 +375,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         return var0;
                                     };
                                     var _closure5_slot2 = var3;
-                                    var2 = function() { // Original name: _consumeChunks, environment: var0
+                                    var2 = function() {
                                         var3 = undefined;
                                         var0 = undefined;
                                         var2 = _closure1_slot3;
@@ -583,7 +583,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: hasProp, environment: var3
+    var0 = function arg0, arg1() {
         _fun58651: for (var _fun58651_ip = 0;;) switch (_fun58651_ip) {
             case 0:
                 var2 = arg0;
@@ -612,7 +612,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: getUrlFromResource, environment: var3
+    var0 = function arg0() {
         _fun58652: for (var _fun58652_ip = 0;;) switch (_fun58652_ip) {
             case 0:
                 var3 = arg0;
@@ -662,7 +662,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var1 = function(arg0) { // Original name: parseFetchArgs, environment: var3
+    var1 = function arg0() {
         _fun58653: for (var _fun58653_ip = 0;;) switch (_fun58653_ip) {
             case 0:
                 var5 = arg0;
@@ -759,7 +759,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.value = var4;
     var4 = '__esModule';
     var4 = var6.bind(var7)(var2, var4, var5);
-    var4 = function(arg0) { // Original name: addFetchEndInstrumentationHandler, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 2;
@@ -784,7 +784,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.addFetchEndInstrumentationHandler = var4;
-    var3 = function(arg0, arg1) { // Original name: addFetchInstrumentationHandler, environment: var3
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;

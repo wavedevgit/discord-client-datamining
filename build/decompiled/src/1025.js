@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function() { // Original name: ignoreNextOnError, environment: var3
+    var1 = function() {
         var0 = _closure1_slot2;
         var0 = var0 + 1;
         _closure1_slot2 = var0;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.GLOBAL_OBJ;
     var2.WINDOW = var4;
-    var4 = function() { // Original name: getHttpRequestData, environment: var3
+    var4 = function() {
         _fun10677: for (var _fun10677_ip = 0;;) switch (_fun10677_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -109,14 +109,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.getHttpRequestData = var4;
     var2.ignoreNextOnError = var1;
-    var1 = function() { // Original name: shouldIgnoreOnError, environment: var3
+    var1 = function() {
         var1 = _closure1_slot2;
         var0 = 0;
         var0 = var1 > var0;
         return var0;
     };
     var2.shouldIgnoreOnError = var1;
-    var1 = function(arg0) { // Original name: wrap, environment: var3
+    var1 = function arg0() {
         _fun10679: for (var _fun10679_ip = 0;;) switch (_fun10679_ip) {
             case 0:
                 var3 = arg0;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun10679
                 }
             case 131: // try_end0
-                var1 = function() { // Original name: sentryWrapped, environment: var9
+                var1 = function() {
                     _fun10680: for (var _fun10680_ip = 0;;) switch (_fun10680_ip) {
                         case 0:
                             var4 = undefined;
@@ -363,7 +363,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var7.defineProperty;
                 var5 = var1;
                 var4 = {};
-                var9 = function() { // Original name: get, environment: var9
+                var9 = function() {
                     var0 = _closure2_slot0;
                     var0 = var0.name;
                     return var0;

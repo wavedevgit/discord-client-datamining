@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: _toPropertyKey, environment: var4
+    var0 = function arg0() {
         _fun87245: for (var _fun87245_ip = 0;;) switch (_fun87245_ip) {
             case 0:
                 var6 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun87246: for (var _fun87246_ip = 0;;) switch (_fun87246_ip) {
             case 0:
                 var2 = arg0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun87248: for (var _fun87248_ip = 0;;) switch (_fun87248_ip) {
             case 0:
                 var3 = arg0;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: isMatch, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun87249: for (var _fun87249_ip = 0;;) switch (_fun87249_ip) {
             case 0:
                 var0 = arg2;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2;
             case 58:
                 var _closure2_slot2 = var0;
-                var9 = function(arg0) { // Original name: _loop, environment: var11
+                var9 = function arg0() {
                     _fun87250: for (var _fun87250_ip = 0;;) switch (_fun87250_ip) {
                         case 0:
                             var2 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: boostExact, environment: var4
+    var0 = function arg0, arg1() {
         _fun87252: for (var _fun87252_ip = 0;;) switch (_fun87252_ip) {
             case 0:
                 var4 = _closure1_slot21;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var1 = function(arg0) { // Original name: parseUserSearchResults, environment: var4
+    var1 = function arg0() {
         _fun87253: for (var _fun87253_ip = 0;;) switch (_fun87253_ip) {
             case 0:
                 var3 = arg0;
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot16 = var3;
     var3 = function() { // Environment: var4
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: UserSearch, environment: var4
+        var2 = function arg0() {
             _fun87259: for (var _fun87259_ip = 0;;) switch (_fun87259_ip) {
                 case 0:
                     var4 = arguments[1];
@@ -1559,7 +1559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'subscribe';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: subscribe, environment: var4
+        var1 = function arg0() {
             _fun87273: for (var _fun87273_ip = 0;;) switch (_fun87273_ip) {
                 case 0:
                     var4 = arguments[1];
@@ -1793,7 +1793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'unsubscribe';
         var0.key = var5;
-        var5 = function() { // Original name: unsubscribe, environment: var4
+        var5 = function() {
             _fun87276: for (var _fun87276_ip = 0;;) switch (_fun87276_ip) {
                 case 0:
                     var1 = this;
@@ -1896,7 +1896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fetch';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: fetch, environment: var4
+        var5 = function arg0, arg1() {
             _fun87277: for (var _fun87277_ip = 0;;) switch (_fun87277_ip) {
                 case 0:
                     var1 = this;
@@ -1966,7 +1966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'filter';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: filter, environment: var4
+        var5 = function arg0() {
             _fun87278: for (var _fun87278_ip = 0;;) switch (_fun87278_ip) {
                 case 0:
                     var2 = this;
@@ -2144,7 +2144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'initializeUsersFromStores';
         var0.key = var5;
-        var5 = function() { // Original name: initializeUsersFromStores, environment: var4
+        var5 = function() {
             _fun87286: for (var _fun87286_ip = 0;;) switch (_fun87286_ip) {
                 case 0:
                     var3 = this;
@@ -2234,7 +2234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'initializeUsersFromCache';
         var0.key = var5;
-        var5 = function() { // Original name: initializeUsersFromCache, environment: var4
+        var5 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var3 = _closure1_slot1;
@@ -2283,7 +2283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateUser';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: updateUser, environment: var4
+        var5 = function arg0() {
             _fun87290: for (var _fun87290_ip = 0;;) switch (_fun87290_ip) {
                 case 0:
                     var3 = arg0;
@@ -2365,7 +2365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getItem';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: getItem, environment: var4
+        var5 = function arg0() {
             _fun87291: for (var _fun87291_ip = 0;;) switch (_fun87291_ip) {
                 case 0:
                     var5 = arg0;
@@ -2470,7 +2470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateUserCached';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: updateUserCached, environment: var4
+        var5 = function arg0() {
             _fun87292: for (var _fun87292_ip = 0;;) switch (_fun87292_ip) {
                 case 0:
                     var1 = arg0;
@@ -2518,7 +2518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getItemCached';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: getItemCached, environment: var4
+        var4 = function arg0() {
             _fun87293: for (var _fun87293_ip = 0;;) switch (_fun87293_ip) {
                 case 0:
                     var4 = arg0;
@@ -2586,7 +2586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: useUserListData, environment: var4
+    var4 = function arg0() {
         _fun87294: for (var _fun87294_ip = 0;;) switch (_fun87294_ip) {
             case 0:
                 var2 = arg0;

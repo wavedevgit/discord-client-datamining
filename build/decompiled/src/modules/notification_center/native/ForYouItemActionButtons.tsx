@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: focusChatInput, environment: var1
+    var0 = function arg0() {
         _fun103239: for (var _fun103239_ip = 0;;) switch (_fun103239_ip) {
             case 0:
                 var4 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var3 = function(arg0) { // Original name: IncomingFriendRequestActions, environment: var1
+    var3 = function arg0() {
         _fun103241: for (var _fun103241_ip = 0;;) switch (_fun103241_ip) {
             case 0:
                 var0 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var17];
                 var2 = var32.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: u, environment: var22
+                var0 = function() {
                     _fun103242: for (var _fun103242_ip = 0;;) switch (_fun103242_ip) {
                         case 0:
                             var0 = {};
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var17];
                 var2 = var32.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: _, environment: var22
+                var0 = function() {
                     _fun103243: for (var _fun103243_ip = 0;;) switch (_fun103243_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var17];
                 var2 = var32.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: E, environment: var22
+                var0 = function() {
                     var0 = {};
                     var2 = {};
                     var4 = _closure2_slot3;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var17];
                 var2 = var32.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: p, environment: var22
+                var0 = function() {
                     _fun103245: for (var _fun103245_ip = 0;;) switch (_fun103245_ip) {
                         case 0:
                             var0 = {};
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var17];
                 var2 = var32.bind(var3)(var0);
                 var1 = var2.useAnimatedProps;
-                var0 = function() { // Original name: I, environment: var22
+                var0 = function() {
                     var0 = {};
                     var2 = _closure2_slot0;
                     var1 = var2.get;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = _closure1_slot12;
                 var21 = _closure1_slot5;
                 var15 = {};
-                var8 = function(arg0) { // Original name: onLayout, environment: var22
+                var8 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = var2.set;
                     var0 = arg0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.View;
                 var5 = {};
                 var5.style = var10;
-                var10 = function(arg0) { // Original name: onLayout, environment: var22
+                var10 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = var2.set;
                     var0 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17.View;
                 var17 = {};
                 var17.style = var24;
-                var22 = function(arg0) { // Original name: onLayout, environment: var22
+                var22 = function arg0() {
                     var0 = arg0;
                     var4 = _closure2_slot3;
                     var3 = var4.set;
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/notification_center/native/ForYouItemActionButtons.tsx';
     var4 = var5.bind(var6)(var4);
     var2.IncomingFriendRequestActions = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: useItemActionButtonPropsV2, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
         _fun103250: for (var _fun103250_ip = 0;;) switch (_fun103250_ip) {
             case 0:
                 var2 = arg0;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.applicationId = var5;
                             var4 = _closure2_slot7;
                             var1.location = var4;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 _fun103254: for (var _fun103254_ip = 0;;) switch (_fun103254_ip) {
                                     case 0:
                                         var4 = _closure1_slot7;
@@ -2057,7 +2057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3;
             case 3390:
                 var0.accessibilityActions = var2;
-                var1 = function(arg0) { // Original name: onAccessibilityAction, environment: var1
+                var1 = function arg0() {
                     _fun103263: for (var _fun103263_ip = 0;;) switch (_fun103263_ip) {
                         case 0:
                             var0 = arg0;
@@ -2208,7 +2208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var0;
                             var10 = var8;
                             var8 = copyDataProperties(var11, var10);
-                            var8 = function(arg0) { // Original name: onPress, environment: var7
+                            var8 = function arg0() {
                                 _fun103266: for (var _fun103266_ip = 0;;) switch (_fun103266_ip) {
                                     case 0:
                                         var0 = _closure3_slot1;

@@ -17,12 +17,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var1.bind(var0)(var3);
     var3 = var4.createContext;
     var1 = {};
-    var6 = function() { // Original name: onDispatchAction, environment: var5
+    var6 = function() {
         var0 = undefined;
         return var0;
     };
     var1.onDispatchAction = var6;
-    var5 = function() { // Original name: onOptionsChange, environment: var5
+    var5 = function() {
         var0 = undefined;
         return var0;
     };

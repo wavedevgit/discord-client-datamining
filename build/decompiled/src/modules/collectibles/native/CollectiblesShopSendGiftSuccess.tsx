@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopSendGiftSuccess.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CollectiblesShopSendGiftSuccess, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.giftStyle;
         var10 = var0.onClose;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.t;
         var14 = var11.YS2J4S;
         var11 = {};
-        var17 = function() { // Original name: onClick, environment: var17
+        var17 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();

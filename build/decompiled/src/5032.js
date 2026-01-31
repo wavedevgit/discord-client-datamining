@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'function pnpm_BottomSheetFooterTsx1(){const{animatedFooterPosition,animatedKeyboardState,KEYBOARD_STATE,bottomInset}=this.__closure;let footerTranslateY=animatedFooterPosition.get();if(animatedKeyboardState.get()!==KEYBOARD_STATE.SHOWN){footerTranslateY=footerTranslateY-bottomInset;}return{transform:[{translateY:Math.max(0,footerTranslateY)}]};}';
     var4.code = var5;
     var _closure1_slot7 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetFooterComponent, environment: var1
+    var1 = function arg0() {
         _fun45333: for (var _fun45333_ip = 0;;) switch (_fun45333_ip) {
             case 0:
                 var0 = arg0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var11[var9];
                 var15 = var3.bind(var4)(var6);
                 var12 = var15.useAnimatedStyle;
-                var7 = function() { // Original name: pnpm_BottomSheetFooterTsx1, environment: var10
+                var7 = function() {
                     _fun45334: for (var _fun45334_ip = 0;;) switch (_fun45334_ip) {
                         case 0:
                             var2 = _closure2_slot0;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var11 = function() { // Original name: title, environment: var8
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var11;
     var9 = var9.VOICE;
     var1.parent = var9;
-    var9 = function() { // Original name: useAndroidMobileOverlaySettingValue, environment: var8
+    var9 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.bind(var0)(var9);
     var9 = var9.setEnabled;
     var1.onValueChange = var9;
-    var8 = function() { // Original name: useAndroidMobileOverlaySettingDescription, environment: var8
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;

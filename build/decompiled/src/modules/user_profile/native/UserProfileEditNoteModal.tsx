@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileEditNoteModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileEditNoteModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.userId;
         var _closure2_slot0 = var1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var1;
         var0 = var0.onBack;
         var _closure2_slot2 = var0;
-        var9 = function() { // Original name: handleClose, environment: var6
+        var9 = function() {
             _fun91811: for (var _fun91811_ip = 0;;) switch (_fun91811_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.sHHsOM;
         var7 = var11.bind(var12)(var7);
         var5.title = var7;
-        var7 = function() { // Original name: headerTitle, environment: var6
+        var7 = function() {
             var3 = _closure1_slot3;
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var8.getHeaderCloseButton;
         var7 = var7.bind(var8)(var9);
         var5.headerLeft = var7;
-        var6 = function() { // Original name: render, environment: var6
+        var6 = function() {
             var2 = _closure1_slot0;
             var3 = _closure1_slot2;
             var1 = 7;

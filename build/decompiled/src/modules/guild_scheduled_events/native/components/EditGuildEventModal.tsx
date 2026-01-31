@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.error = var10;
         var1.loading = var9;
         var1.onSave = var2;
-        var2 = function(arg0) { // Original name: onChange, environment: var11
+        var2 = function arg0() {
             _fun65416: for (var _fun65416_ip = 0;;) switch (_fun65416_ip) {
                 case 0:
                     var2 = arg0;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1.onChange = var2;
         var _closure2_slot7 = var1;
-        var13 = function(arg0) { // Original name: getChannelSelectorHeader, environment: var11
+        var13 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var0 = function() { // Environment: var0
@@ -469,12 +469,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var10.CHANNEL_SELECTOR;
         var10 = var13.bind(var3)(var10);
         var1.customNavbar = var10;
-        var10 = function() { // Original name: headerLeft, environment: var11
+        var10 = function() {
             var0 = null;
             return var0;
         };
         var1.headerLeft = var10;
-        var10 = function() { // Original name: render, environment: var11
+        var10 = function() {
             _fun65421: for (var _fun65421_ip = 0;;) switch (_fun65421_ip) {
                 case 0:
                     var3 = _closure1_slot8;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var14.DETAILS;
         var14 = var13.bind(var3)(var14);
         var1.customNavbar = var14;
-        var14 = function() { // Original name: render, environment: var11
+        var14 = function() {
             var3 = _closure1_slot8;
             var1 = _closure1_slot1;
             var2 = _closure1_slot3;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12.PREVIEW;
         var12 = var13.bind(var3)(var12);
         var1.customNavbar = var12;
-        var11 = function() { // Original name: render, environment: var11
+        var11 = function() {
             var3 = _closure1_slot8;
             var1 = _closure1_slot1;
             var2 = _closure1_slot3;

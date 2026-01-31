@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = dependencyMap;
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var7;
-            var0 = function(arg0) { // Original name: getComponentOrScrollable, environment: var3
+            var0 = function arg0() {
                 _fun34767: for (var _fun34767_ip = 0;;) switch (_fun34767_ip) {
                     case 0:
                         var2 = arg0;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot7 = var0;
-            var0 = function(arg0) { // Original name: useAnimatedRefBase, environment: var3
+            var0 = function arg0() {
                 _fun34768: for (var _fun34768_ip = 0;;) switch (_fun34768_ip) {
                     case 0:
                         var0 = arg0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun34768
                         }
                     case 98:
-                        var1 = function(arg0) { // Original name: fun, environment: var3
+                        var1 = function arg0() {
                             _fun34769: for (var _fun34769_ip = 0;;) switch (_fun34769_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -301,7 +301,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun34766
             }
         case 205:
-            var1 = function() { // Original name: useAnimatedRefNative, environment: var3
+            var1 = function() {
                 _fun34776: for (var _fun34776_ip = 0;;) switch (_fun34776_ip) {
                     case 0:
                         var5 = _closure1_slot4;
@@ -470,10 +470,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = var2.bind(var4)(var3);
                         var6 = var7.makeShareableCloneRecursive;
                         var3 = {};
-                        var8 = function() { // Original name: pnpm_useAnimatedRefTs1, environment: var8
+                        var8 = function() {
                             _fun34781: for (var _fun34781_ip = 0;;) switch (_fun34781_ip) {
                                 case 0:
-                                    var0 = function() { // Original name: f, environment: var0
+                                    var0 = function() {
                                         var0 = _closure2_slot1;
                                         var0 = var0.value;
                                         return var0;
@@ -512,7 +512,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34766_ip = 217;
             continue _fun34766;
         case 212:
-            var1 = function() { // Original name: useAnimatedRefWeb, environment: var3
+            var1 = function() {
                 var2 = _closure1_slot8;
                 var1 = undefined;
                 var0 = function(arg0) { // Environment: var0

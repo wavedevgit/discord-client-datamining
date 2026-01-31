@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun55982: for (var _fun55982_ip = 0;;) switch (_fun55982_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun55984: for (var _fun55984_ip = 0;;) switch (_fun55984_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var7 = function(arg0) { // Original name: getInteractionTimeoutTimestamp, environment: var1
+    var7 = function arg0() {
         _fun55985: for (var _fun55985_ip = 0;;) switch (_fun55985_ip) {
             case 0:
                 var2 = arg0;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var7;
-    var6 = function(arg0) { // Original name: getInteractionInitialResponseDeadlineTimestamp, environment: var1
+    var6 = function arg0() {
         _fun55986: for (var _fun55986_ip = 0;;) switch (_fun55986_ip) {
             case 0:
                 var2 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var6;
-    var0 = function(arg0) { // Original name: mapMessageComponentLocalStateForAPI, environment: var1
+    var0 = function arg0() {
         _fun55987: for (var _fun55987_ip = 0;;) switch (_fun55987_ip) {
             case 0:
                 var1 = arg0;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var21.customId = var10;
                         var21.componentId = var8;
                         var6.data = var21;
-                        var21 = function(arg0, arg1) { // Original name: onFailure, environment: var3
+                        var21 = function arg0, arg1() {
                             var4 = _closure1_slot11;
                             var3 = _closure4_slot1;
                             var2 = undefined;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5 = var3.bind(var0)();
-    var3 = function(arg0, arg1, arg2) { // Original name: handleInteractionFailure, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun55995: for (var _fun55995_ip = 0;;) switch (_fun55995_ip) {
             case 0:
                 var3 = arg1;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: handleInteractionResponse, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         _fun55996: for (var _fun55996_ip = 0;;) switch (_fun55996_ip) {
             case 0:
                 var2 = arg0;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getInteractionStatusViewState = var3;
-    var3 = function(arg0) { // Original name: canRetryInteractionData, environment: var1
+    var3 = function arg0() {
         _fun55998: for (var _fun55998_ip = 0;;) switch (_fun55998_ip) {
             case 0:
                 var0 = arg0;
@@ -1426,7 +1426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canRetryInteractionData = var3;
-    var1 = function(arg0, arg1) { // Original name: interactionCallbackErrorReason, environment: var1
+    var1 = function arg0, arg1() {
         _fun55999: for (var _fun55999_ip = 0;;) switch (_fun55999_ip) {
             case 0:
                 var2 = arg0;

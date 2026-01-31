@@ -4,14 +4,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = require;
     var2 = exports;
     var7 = dependencyMap;
-    var4 = function(arg0) { // Original name: isKlipyProvider, environment: var1
+    var4 = function arg0() {
         var1 = 'Klipy';
         var0 = arg0;
         var0 = var1 === var0;
         return var0;
     };
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: shouldUseAnimatedWebPThumbnail, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = undefined;
         var0 = arg0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.isKlipyProvider = var4;
     var2.shouldUseAnimatedWebPThumbnail = var3;
-    var3 = function(arg0) { // Original name: getGIFThumbnailForFavorite, environment: var1
+    var3 = function arg0() {
         _fun73095: for (var _fun73095_ip = 0;;) switch (_fun73095_ip) {
             case 0:
                 var1 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGIFThumbnailForFavorite = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: calculateAnalyticsMetadata, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun73096: for (var _fun73096_ip = 0;;) switch (_fun73096_ip) {
             case 0:
                 var5 = arg1;

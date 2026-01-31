@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/regional_feature_config/RegionalFeatureConfigUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isFeatureAgeGated, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.isFeatureAgeGated;
         var0 = arg0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isFeatureAgeGated = var3;
-    var3 = function(arg0) { // Original name: useIsFeatureAgeGated, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsFeatureAgeGated = var3;
-    var3 = function(arg0) { // Original name: isSettingTeenByDefault, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.isSettingTeenByDefault;
         var0 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isSettingTeenByDefault = var3;
-    var3 = function(arg0) { // Original name: useIsSettingTeenByDefault, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -90,14 +90,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsSettingTeenByDefault = var3;
-    var3 = function() { // Original name: hasAgeGatedFeatures, environment: var1
+    var3 = function() {
         var1 = _closure1_slot2;
         var0 = var1.hasAgeGatedFeatures;
         var0 = var0.bind(var1)();
         return var0;
     };
     var2.hasAgeGatedFeatures = var3;
-    var3 = function() { // Original name: useHasAgeGatedFeatures, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;
@@ -118,14 +118,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasAgeGatedFeatures = var3;
-    var3 = function() { // Original name: hasTeenDefaults, environment: var1
+    var3 = function() {
         var1 = _closure1_slot2;
         var0 = var1.hasTeenDefaults;
         var0 = var0.bind(var1)();
         return var0;
     };
     var2.hasTeenDefaults = var3;
-    var1 = function() { // Original name: useHasTeenDefaults, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;

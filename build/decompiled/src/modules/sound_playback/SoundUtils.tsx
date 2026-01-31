@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: createSound, environment: var1
+    var3 = function arg0, arg1() {
         _fun67643: for (var _fun67643_ip = 0;;) switch (_fun67643_ip) {
             case 0:
                 var5 = arguments[2];
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/sound_playback/SoundUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: createSoundForPack, environment: var1
+    var4 = function arg0, arg1() {
         _fun67644: for (var _fun67644_ip = 0;;) switch (_fun67644_ip) {
             case 0:
                 var5 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createSoundForPack = var4;
     var2.createSound = var3;
-    var1 = function(arg0) { // Original name: playSound, environment: var1
+    var1 = function arg0() {
         _fun67645: for (var _fun67645_ip = 0;;) switch (_fun67645_ip) {
             case 0:
                 var8 = arg0;

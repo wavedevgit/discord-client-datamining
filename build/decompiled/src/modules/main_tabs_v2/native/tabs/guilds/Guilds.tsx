@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var6 = var7.memo;
-    var3 = function() { // Original name: GuildsOnly, environment: var1
+    var3 = function() {
         _fun100670: for (var _fun100670_ip = 0;;) switch (_fun100670_ip) {
             case 0:
                 var7 = _closure1_slot0;

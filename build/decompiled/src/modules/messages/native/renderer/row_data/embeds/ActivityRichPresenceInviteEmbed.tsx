@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPresenceActivity, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun92403: for (var _fun92403_ip = 0;;) switch (_fun92403_ip) {
             case 0:
                 var0 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/ActivityRichPresenceInviteEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createActivityRichPresenceInviteEmbed, environment: var1
+    var1 = function arg0, arg1() {
         _fun92405: for (var _fun92405_ip = 0;;) switch (_fun92405_ip) {
             case 0:
                 var4 = arg0;

@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/isMessagePinnable.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: isMessagePinnable, environment: var1
+    var1 = function arg0, arg1() {
         _fun77869: for (var _fun77869_ip = 0;;) switch (_fun77869_ip) {
             case 0:
                 var2 = arg1;

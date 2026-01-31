@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/appearance/components/SettingsAppearanceChannelList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelListPreview, environment: var1
+    var1 = function arg0() {
         _fun84559: for (var _fun84559_ip = 0;;) switch (_fun84559_ip) {
             case 0:
                 var0 = arg0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.contentContainerStyle = var16;
                 var5.data = var15;
                 var5.renderItem = var14;
-                var13 = function(arg0) { // Original name: keyExtractor, environment: var13
+                var13 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;

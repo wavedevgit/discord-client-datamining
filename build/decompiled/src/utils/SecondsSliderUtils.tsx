@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/SecondsSliderUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getSecondsSliderLabel, environment: var1
+    var1 = function arg0() {
         _fun108889: for (var _fun108889_ip = 0;;) switch (_fun108889_ip) {
             case 0:
                 var3 = arg0;

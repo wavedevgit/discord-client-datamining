@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/premium_channel/GuildRoleSubscriptionGatedChannelIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SubscriptionGatedChannelIcon, environment: var1
+    var1 = function arg0() {
         _fun102057: for (var _fun102057_ip = 0;;) switch (_fun102057_ip) {
             case 0:
                 var0 = arg0;

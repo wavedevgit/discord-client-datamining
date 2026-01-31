@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var20;
-    var12 = function(arg0) { // Original name: getOverlayStreamWatchNudgeConfig, environment: var1
+    var12 = function arg0() {
         var2 = _closure1_slot5;
         var1 = var2.getConfig;
         var0 = {};
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var12;
-    var10 = function(arg0) { // Original name: getOverlayV3OneClickGoLive, environment: var1
+    var10 = function arg0() {
         _fun95318: for (var _fun95318_ip = 0;;) switch (_fun95318_ip) {
             case 0:
                 var4 = arguments[1];
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var10;
-    var7 = function(arg0) { // Original name: getOverlayNegativeWidgetConfig, environment: var1
+    var7 = function arg0() {
         _fun95319: for (var _fun95319_ip = 0;;) switch (_fun95319_ip) {
             case 0:
                 var4 = arguments[1];
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var7;
-    var5 = function(arg0) { // Original name: getOverlayWelcomeNotificationConfig, environment: var1
+    var5 = function arg0() {
         _fun95320: for (var _fun95320_ip = 0;;) switch (_fun95320_ip) {
             case 0:
                 var4 = arguments[1];
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var5;
-    var3 = function(arg0) { // Original name: getOverlayBugReporterConfig, environment: var1
+    var3 = function arg0() {
         _fun95321: for (var _fun95321_ip = 0;;) switch (_fun95321_ip) {
             case 0:
                 var4 = arguments[1];
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = 'modules/overlay/OverlayV3Experiment.tsx';
     var18 = var19.bind(var20)(var18);
     var2.OverlayRafManagerExperiment = var17;
-    var17 = function(arg0) { // Original name: useOverlayRafManager, environment: var1
+    var17 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.useExperiment;
         var0 = {};
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOverlayRafManager = var17;
-    var17 = function(arg0) { // Original name: getUseOverlayRafManager, environment: var1
+    var17 = function arg0() {
         _fun95323: for (var _fun95323_ip = 0;;) switch (_fun95323_ip) {
             case 0:
                 var4 = arguments[1];
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUseOverlayRafManager = var17;
     var2.OverlayRenderTimeoutExperiment = var16;
-    var16 = function(arg0) { // Original name: getOverlayRenderTimeout, environment: var1
+    var16 = function arg0() {
         _fun95324: for (var _fun95324_ip = 0;;) switch (_fun95324_ip) {
             case 0:
                 var4 = arguments[1];
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOverlayRenderTimeout = var16;
     var2.OverlayDefaultDisableExperiment = var15;
-    var15 = function(arg0) { // Original name: useOverlayDefaultDisable, environment: var1
+    var15 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.useExperiment;
         var0 = {};
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOverlayDefaultDisable = var15;
-    var15 = function(arg0) { // Original name: getOverlayDefaultDisable, environment: var1
+    var15 = function arg0() {
         _fun95326: for (var _fun95326_ip = 0;;) switch (_fun95326_ip) {
             case 0:
                 var4 = arguments[1];
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.StreamWatchDesignVariations = var14;
     var2.OverlayStreamWatchNudgeExperiment = var13;
     var2.getOverlayStreamWatchNudgeConfig = var12;
-    var12 = function(arg0) { // Original name: useOverlayStreamWatchNudge, environment: var1
+    var12 = function arg0() {
         var2 = _closure1_slot5;
         var1 = var2.useConfig;
         var0 = {};
@@ -598,7 +598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.OverlayV3OneClickGoLiveExperiment = var11;
     var2.getOverlayV3OneClickGoLive = var10;
     var2.OverlayDefaultKeybindOverrideExperiment = var9;
-    var9 = function(arg0) { // Original name: getOverlayDefaultKeybind, environment: var1
+    var9 = function arg0() {
         _fun95328: for (var _fun95328_ip = 0;;) switch (_fun95328_ip) {
             case 0:
                 var4 = arguments[1];
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOverlayDefaultKeybind = var9;
     var2.OverlayNegativeWidgetExperiment = var8;
-    var8 = function(arg0) { // Original name: getOverlayNegativeWidgetExperimentBucket, environment: var1
+    var8 = function arg0() {
         _fun95329: for (var _fun95329_ip = 0;;) switch (_fun95329_ip) {
             case 0:
                 var4 = _closure1_slot13;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getOverlayWelcomeNotificationConfig = var5;
     var2.OverlayBugReporterExperiment = var4;
     var2.getOverlayBugReporterConfig = var3;
-    var3 = function(arg0) { // Original name: useOverlayBugReporter, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot10;
         var1 = var2.useExperiment;
         var0 = {};
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOverlayBugReporter = var3;
-    var1 = function() { // Original name: trackOverlayInitializedExperiments, environment: var1
+    var1 = function() {
         var3 = _closure1_slot11;
         var0 = undefined;
         var2 = 'OVERLAY_INITIALIZED';

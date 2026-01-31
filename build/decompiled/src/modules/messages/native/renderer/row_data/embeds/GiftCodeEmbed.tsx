@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getGiftStyleUrl, environment: var1
+    var0 = function arg0() {
         _fun56366: for (var _fun56366_ip = 0;;) switch (_fun56366_ip) {
             case 0:
                 var2 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getUserNameOrDefault, environment: var1
+    var0 = function arg0() {
         _fun56367: for (var _fun56367_ip = 0;;) switch (_fun56367_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/GiftCodeEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createGiftCodeEmbed, environment: var1
+    var1 = function arg0, arg1() {
         _fun56368: for (var _fun56368_ip = 0;;) switch (_fun56368_ip) {
             case 0:
                 var1 = arg0;

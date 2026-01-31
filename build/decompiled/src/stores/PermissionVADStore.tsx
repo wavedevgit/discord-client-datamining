@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun97328: for (var _fun97328_ip = 0;;) switch (_fun97328_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var8 = function() { // Original name: handleUpdateVADPermission, environment: var3
+    var8 = function() {
         _fun97331: for (var _fun97331_ip = 0;;) switch (_fun97331_ip) {
             case 0:
                 var1 = _closure1_slot12;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PermissionVADStore, environment: var5
+        var3 = function() {
             _fun97333: for (var _fun97333_ip = 0;;) switch (_fun97333_ip) {
                 case 0:
                     var3 = this;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var7 = this;
             var6 = var7.waitFor;
             var13 = _closure1_slot8;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldShowWarning';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             var0 = !var0;
             return var0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canUseVoiceActivity';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canUseLatching';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_MEMBER_UPDATE = var8;
     var1.IMPERSONATE_UPDATE = var8;
     var1.IMPERSONATE_STOP = var8;
-    var8 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.voiceStates;
         var1 = var2.some;
@@ -444,14 +444,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.VOICE_STATE_UPDATES = var8;
-    var8 = function() { // Original name: handleUnclearWarning, environment: var3
+    var8 = function() {
         var0 = _closure1_slot16;
         _closure1_slot18 = var0;
         var0 = undefined;
         return var0;
     };
     var1.AUDIO_TOGGLE_SELF_MUTE = var8;
-    var3 = function() { // Original name: handleClearWarning, environment: var3
+    var3 = function() {
         var0 = true;
         _closure1_slot18 = var0;
         var0 = undefined;

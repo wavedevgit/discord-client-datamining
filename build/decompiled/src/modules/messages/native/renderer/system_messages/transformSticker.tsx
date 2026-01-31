@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: transform, environment: var1
+    var0 = function arg0, arg1() {
         _fun55485: for (var _fun55485_ip = 0;;) switch (_fun55485_ip) {
             case 0:
                 var9 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/system_messages/transformSticker.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useTransformedSticker, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var4 = var1.sticker;
         var _closure2_slot0 = var4;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: transformSticker, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot4;
         var4 = _closure1_slot0;
         var2 = _closure1_slot1;

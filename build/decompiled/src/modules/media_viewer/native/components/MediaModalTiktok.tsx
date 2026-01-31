@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: getReadablePlayerError, environment: var1
+    var0 = function arg0() {
         _fun70439: for (var _fun70439_ip = 0;;) switch (_fun70439_ip) {
             case 0:
                 var1 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: postMessage, environment: var1
+    var0 = function arg0, arg1() {
         _fun70440: for (var _fun70440_ip = 0;;) switch (_fun70440_ip) {
             case 0:
                 var0 = global;
@@ -755,7 +755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/media_viewer/native/components/MediaModalTiktok.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: createTiktokVideoControls, environment: var1
+    var1 = function() {
         var1 = _closure1_slot4;
         var0 = var1.createRef;
         var3 = var0.bind(var1)();
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = false;
         var _closure2_slot5 = var0;
         var0 = {};
-        var1 = function(arg0) { // Original name: seek, environment: var2
+        var1 = function arg0() {
             var3 = _closure1_slot9;
             var2 = _closure2_slot2;
             var1 = {};
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.seek = var1;
-        var1 = function(arg0) { // Original name: pause, environment: var2
+        var1 = function arg0() {
             _fun70450: for (var _fun70450_ip = 0;;) switch (_fun70450_ip) {
                 case 0:
                     var4 = arg0;
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.pause = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: useSubscribe, environment: var2
+        var1 = function arg0, arg1, arg2() {
             var0 = arg0;
             var _closure2_slot0 = var0;
             var0 = arg1;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.useSubscribe = var1;
         var1 = {};
         var1.ref = var3;
-        var3 = function(arg0) { // Original name: onPlayerStateChange, environment: var2
+        var3 = function arg0() {
             _fun70453: for (var _fun70453_ip = 0;;) switch (_fun70453_ip) {
                 case 0:
                     var4 = arg0;
@@ -897,7 +897,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var1.onPlayerStateChange = var3;
-        var3 = function(arg0) { // Original name: onCurrentSecond, environment: var2
+        var3 = function arg0() {
             _fun70454: for (var _fun70454_ip = 0;;) switch (_fun70454_ip) {
                 case 0:
                     var1 = arg0;
@@ -920,7 +920,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var1.onCurrentSecond = var3;
-        var2 = function(arg0) { // Original name: onDuration, environment: var2
+        var2 = function arg0() {
             _fun70455: for (var _fun70455_ip = 0;;) switch (_fun70455_ip) {
                 case 0:
                     var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChatViewStickyHeaderAccountSafetyWarnings, environment: var1
+    var0 = function arg0() {
         _fun89027: for (var _fun89027_ip = 0;;) switch (_fun89027_ip) {
             case 0:
                 var0 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg1;
                 var0 = function() { // Environment: var0
                     var0 = {};
-                    var1 = function(arg0) { // Original name: onChatViewScrolled, environment: var1
+                    var1 = function arg0() {
                         _fun89030: for (var _fun89030_ip = 0;;) switch (_fun89030_ip) {
                             case 0:
                                 var0 = arg0;

@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildsBarItemIconPresable, environment: var1
+    var1 = function arg0() {
         _fun101166: for (var _fun101166_ip = 0;;) switch (_fun101166_ip) {
             case 0:
                 var1 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var18[var1];
                 var13 = var17.bind(var3)(var2);
                 var6 = var13.useAnimatedStyle;
-                var2 = function() { // Original name: b, environment: var0
+                var2 = function() {
                     _fun101169: for (var _fun101169_ip = 0;;) switch (_fun101169_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var1];
                 var2 = var17.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: I, environment: var0
+                var0 = function() {
                     _fun101170: for (var _fun101170_ip = 0;;) switch (_fun101170_ip) {
                         case 0:
                             var0 = {};

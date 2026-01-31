@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/AppLauncherNativeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: handleApplicationSelected, environment: var1
+    var3 = function arg0() {
         _fun107249: for (var _fun107249_ip = 0;;) switch (_fun107249_ip) {
             case 0:
                 var1 = arg0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleApplicationSelected = var3;
-    var3 = function(arg0) { // Original name: handleViewAllSelected, environment: var1
+    var3 = function arg0() {
         _fun107250: for (var _fun107250_ip = 0;;) switch (_fun107250_ip) {
             case 0:
                 var0 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleViewAllSelected = var3;
-    var3 = function(arg0) { // Original name: handleApplicationCommandSelected, environment: var1
+    var3 = function arg0() {
         _fun107251: for (var _fun107251_ip = 0;;) switch (_fun107251_ip) {
             case 0:
                 var0 = arg0;
@@ -832,7 +832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAppLauncherIconSource = var3;
-    var3 = function(arg0, arg1) { // Original name: useLogAppLauncherEmptyStateView, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var4 = _closure1_slot0;
@@ -886,7 +886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useLogAppLauncherEmptyStateView = var3;
-    var1 = function(arg0) { // Original name: useHandleActivityItemSelected, environment: var1
+    var1 = function arg0() {
         _fun107260: for (var _fun107260_ip = 0;;) switch (_fun107260_ip) {
             case 0:
                 var0 = arg0;
@@ -953,7 +953,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.embeddedActivitiesManager = var13;
                 var12 = var12.location;
                 var0.locationObject = var12;
-                var12 = function(arg0) { // Original name: onActivityItemSelectedProp, environment: var1
+                var12 = function arg0() {
                     _fun107261: for (var _fun107261_ip = 0;;) switch (_fun107261_ip) {
                         case 0:
                             var0 = arg0;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 _closure2_slot5 = var0;
                 var0 = {};
-                var1 = function() { // Original name: handleActivityItemSelected, environment: var1
+                var1 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot3;
                     var1 = 20;

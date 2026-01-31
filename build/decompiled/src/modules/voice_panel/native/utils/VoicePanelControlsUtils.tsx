@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot3 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getControlsDefaultWidth, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var1 = global;
             var4 = var1.Math;
             var3 = var4.max;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var7;
     var _closure1_slot4 = var4;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getControlsDrawerOpenWidth, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.min;

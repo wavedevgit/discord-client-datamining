@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SuggestedFriendsSectionHeader, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.label;
         var0 = _closure1_slot11;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.sectionHeader = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: SuggestionRow, environment: var1
+    var3 = function arg0() {
         _fun81554: for (var _fun81554_ip = 0;;) switch (_fun81554_ip) {
             case 0:
                 var0 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
                 var0.subLabel = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var0 = var0.suggested_user;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/ContactSyncSuggestions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.friendSuggestions;
         var _closure2_slot0 = var1;
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13["J5/69j"];
         var13 = var14.bind(var15)(var13);
         var8.text = var13;
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 18;

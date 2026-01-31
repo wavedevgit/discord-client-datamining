@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4 = var4.bind(var6)(var7, var1);
     var1 = {};
-    var6 = function(arg0, arg1, arg2) { // Original name: play, environment: var5
+    var6 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.play = var6;
-    var6 = function(arg0) { // Original name: reset, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.reset = var6;
-    var6 = function(arg0) { // Original name: pause, environment: var5
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -134,7 +134,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.pause = var6;
-    var5 = function(arg0) { // Original name: resume, environment: var5
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

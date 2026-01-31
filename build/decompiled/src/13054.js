@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.createNavigatorFactory;
-    var1 = function(arg0) { // Original name: BottomTabNavigator, environment: var1
+    var1 = function arg0() {
         _fun100539: for (var _fun100539_ip = 0;;) switch (_fun100539_ip) {
             case 0:
                 var1 = arg0;

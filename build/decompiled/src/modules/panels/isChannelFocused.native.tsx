@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function() { // Original name: getFocusedChannelId, environment: var1
+    var4 = function() {
         _fun69646: for (var _fun69646_ip = 0;;) switch (_fun69646_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function() { // Original name: isChannelFocused, environment: var1
+    var3 = function() {
         var1 = _closure1_slot8;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.getFocusedChannelId = var4;
     var2.isChannelFocused = var3;
-    var3 = function() { // Original name: useIsChannelFocused, environment: var1
+    var3 = function() {
         var4 = _closure1_slot4;
         var3 = var4.useState;
         var0 = function() { // Environment: var1
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 47:
                     return var1;
                 case 49:
-                    var3 = function() { // Original name: handleStateChange, environment: var0
+                    var3 = function() {
                         var2 = _closure2_slot0;
                         var1 = _closure1_slot9;
                         var0 = undefined;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsChannelFocused = var3;
-    var1 = function(arg0) { // Original name: isChannelFocusedForReadStateAck, environment: var1
+    var1 = function arg0() {
         _fun69654: for (var _fun69654_ip = 0;;) switch (_fun69654_ip) {
             case 0:
                 var3 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun48797: for (var _fun48797_ip = 0;;) switch (_fun48797_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: RadialGradient, environment: var0
+        var3 = function() {
             _fun48801: for (var _fun48801_ip = 0;;) switch (_fun48801_ip) {
                 case 0:
                     var3 = this;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             _fun48802: for (var _fun48802_ip = 0;;) switch (_fun48802_ip) {
                 case 0:
                     var9 = this;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var4.Object;
                     var5 = var6.assign;
                     var4 = {};
-                    var0 = function(arg0) { // Original name: ref, environment: var0
+                    var0 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.refMethod;
                         var0 = arg0;

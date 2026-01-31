@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: handleOutOfSuperReactions, environment: var1
+    var5 = function arg0() {
         _fun73248: for (var _fun73248_ip = 0;;) switch (_fun73248_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/reactions/native/ReactionUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.handleOutOfSuperReactions = var5;
-    var5 = function(arg0, arg1) { // Original name: handleAddNewReactions, environment: var1
+    var5 = function arg0, arg1() {
         _fun73249: for (var _fun73249_ip = 0;;) switch (_fun73249_ip) {
             case 0:
                 var9 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var0)(var1);
                 var2 = var3.openEmojiPickerActionSheet;
                 var1 = {};
-                var10 = function(arg0, arg1) { // Original name: onPressEmoji, environment: var10
+                var10 = function arg0, arg1() {
                     _fun73250: for (var _fun73250_ip = 0;;) switch (_fun73250_ip) {
                         case 0:
                             var9 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleAddNewReactions = var5;
-    var5 = function(arg0) { // Original name: handleViewReactions, environment: var1
+    var5 = function arg0() {
         _fun73251: for (var _fun73251_ip = 0;;) switch (_fun73251_ip) {
             case 0:
                 var4 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleViewReactions = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: handleViewPreviewReactions, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleViewPreviewReactions = var5;
     var2.ADD_REACTION_ICONS = var4;
     var2.ADD_REACTION_ICON_COMPONENTS = var3;
-    var1 = function(arg0, arg1) { // Original name: handleRemoveAllReactions, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.oyYWHE;
         var5 = var6.bind(var7)(var5);
         var1.confirmText = var5;
-        var4 = function() { // Original name: onConfirm, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 10;

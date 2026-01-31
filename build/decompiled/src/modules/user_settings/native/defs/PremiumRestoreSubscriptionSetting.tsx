@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 4;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.NitroWheelIcon;
     var1.IconComponent = var9;
-    var9 = function() { // Original name: handleNitroRestoreSettingPress, environment: var7
+    var9 = function() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 2;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot2;
             var1 = 6;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onPress = var9;
     var1.withArrow = var8;
-    var7 = function() { // Original name: useHasPremiumRestoreSubscriptionSetting, environment: var7
+    var7 = function() {
         _fun84290: for (var _fun84290_ip = 0;;) switch (_fun84290_ip) {
             case 0:
                 var2 = _closure1_slot0;

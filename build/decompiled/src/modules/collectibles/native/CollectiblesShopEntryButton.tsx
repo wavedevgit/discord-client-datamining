@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.shopPressable = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: ShopIconButton, environment: var1
+    var3 = function arg0() {
         _fun103416: for (var _fun103416_ip = 0;;) switch (_fun103416_ip) {
             case 0:
                 var1 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopEntryButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CollectiblesShopEntryButton, environment: var1
+    var1 = function arg0() {
         _fun103418: for (var _fun103418_ip = 0;;) switch (_fun103418_ip) {
             case 0:
                 var0 = arg0;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = {};
                 var0.contentTypes = var3;
-                var3 = function(arg0) { // Original name: children, environment: var5
+                var3 = function arg0() {
                     var1 = arg0;
                     var4 = var1.visibleContent;
                     var _closure3_slot0 = var4;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = _closure2_slot1;
                     var1.shopButtonRef = var5;
-                    var0 = function() { // Original name: handlePress, environment: var0
+                    var0 = function() {
                         _fun103423: for (var _fun103423_ip = 0;;) switch (_fun103423_ip) {
                             case 0:
                                 var1 = _closure2_slot0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7;
             case 423:
                 var1.latestVersion = var6;
-                var5 = function(arg0) { // Original name: children, environment: var5
+                var5 = function arg0() {
                     var1 = arg0;
                     var4 = var1.visibleContent;
                     var _closure3_slot0 = var4;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var5 = _closure2_slot1;
                     var1.shopButtonRef = var5;
-                    var0 = function() { // Original name: handlePress, environment: var0
+                    var0 = function() {
                         _fun103421: for (var _fun103421_ip = 0;;) switch (_fun103421_ip) {
                             case 0:
                                 var1 = _closure2_slot0;

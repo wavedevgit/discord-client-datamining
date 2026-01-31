@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = {};
         var0.listings = var2;
-        var2 = function(arg0, arg1) { // Original name: setListing, environment: var1
+        var2 = function arg0, arg1() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = arg1;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.setListing = var2;
         var2 = {};
         var0.editStateIdsForGroup = var2;
-        var1 = function(arg0, arg1) { // Original name: setEditStateIdsForGroup, environment: var1
+        var1 = function arg0, arg1() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = arg1;

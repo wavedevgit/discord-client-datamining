@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: getConsoleInfo, environment: var3
+    var1 = function arg0() {
         _fun111121: for (var _fun111121_ip = 0;;) switch (_fun111121_ip) {
             case 0:
                 var2 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: VoicePanelConsoleFacepile, environment: var3
+    var3 = function() {
         var1 = _closure1_slot6;
         var3 = undefined;
         var9 = var1.bind(var3)();

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: extractToolCalls, environment: var1
+    var3 = function arg0() {
         _fun10082: for (var _fun10082_ip = 0;;) switch (_fun10082_ip) {
             case 0:
                 var0 = arg0;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var4 = function(arg0) { // Original name: extractTokenUsageFromMessage, environment: var1
+    var4 = function arg0() {
         _fun10083: for (var _fun10083_ip = 0;;) switch (_fun10083_ip) {
             case 0:
                 var0 = arg0;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var4;
-    var5 = function(arg0, arg1) { // Original name: extractModelMetadata, environment: var1
+    var5 = function arg0, arg1() {
         _fun10084: for (var _fun10084_ip = 0;;) switch (_fun10084_ip) {
             case 0:
                 var3 = arg0;
@@ -342,7 +342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.extractModelMetadata = var5;
     var2.extractTokenUsageFromMessage = var4;
     var2.extractToolCalls = var3;
-    var3 = function(arg0) { // Original name: extractToolsFromCompiledGraph, environment: var1
+    var3 = function arg0() {
         _fun10085: for (var _fun10085_ip = 0;;) switch (_fun10085_ip) {
             case 0:
                 var1 = arg0;
@@ -486,7 +486,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractToolsFromCompiledGraph = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: setResponseAttributes, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun10087: for (var _fun10087_ip = 0;;) switch (_fun10087_ip) {
             case 0:
                 var6 = arg1;

@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/ChannelCallNavigatorIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun67754: for (var _fun67754_ip = 0;;) switch (_fun67754_ip) {
             case 0:
                 var0 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.disabled = var12;
                 var10 = var15.pressable;
                 var4.style = var10;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     _fun67755: for (var _fun67755_ip = 0;;) switch (_fun67755_ip) {
                         case 0:
                             var2 = _closure1_slot5;

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0, arg1) { // Original name: jumpTo, environment: var2
+    var3 = function arg0, arg1() {
         var0 = {};
         var1 = 'JUMP_TO';
         var0.type = var1;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.jumpTo = var3;
     var _closure1_slot3 = var0;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getRouteHistory, environment: var2
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun17000: for (var _fun17000_ip = 0;;) switch (_fun17000_ip) {
             case 0:
                 var5 = arg0;
@@ -138,7 +138,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: changeIndex, environment: var2
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun17002: for (var _fun17002_ip = 0;;) switch (_fun17002_ip) {
             case 0:
                 var4 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var2 = function(arg0) { // Original name: TabRouter, environment: var2
+    var2 = function arg0() {
         _fun17004: for (var _fun17004_ip = 0;;) switch (_fun17004_ip) {
             case 0:
                 var0 = arg0;
@@ -233,7 +233,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = {};
                 var6 = 'tab';
                 var1.type = var6;
-                var6 = function(arg0) { // Original name: getInitialState, environment: var5
+                var6 = function arg0() {
                     _fun17005: for (var _fun17005_ip = 0;;) switch (_fun17005_ip) {
                         case 0:
                             var0 = arg0;
@@ -319,7 +319,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.getInitialState = var6;
-                var6 = function(arg0, arg1) { // Original name: getRehydratedState, environment: var5
+                var6 = function arg0, arg1() {
                     _fun17007: for (var _fun17007_ip = 0;;) switch (_fun17007_ip) {
                         case 0:
                             var0 = arg0;
@@ -545,7 +545,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.getRehydratedState = var6;
-                var6 = function(arg0, arg1) { // Original name: getStateForRouteNamesChange, environment: var5
+                var6 = function arg0, arg1() {
                     _fun17012: for (var _fun17012_ip = 0;;) switch (_fun17012_ip) {
                         case 0:
                             var4 = arg0;
@@ -689,7 +689,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.getStateForRouteNamesChange = var6;
-                var6 = function(arg0, arg1) { // Original name: getStateForRouteFocus, environment: var5
+                var6 = function arg0, arg1() {
                     _fun17017: for (var _fun17017_ip = 0;;) switch (_fun17017_ip) {
                         case 0:
                             var6 = arg0;
@@ -731,7 +731,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.getStateForRouteFocus = var6;
-                var6 = function(arg0, arg1, arg2) { // Original name: getStateForAction, environment: var5
+                var6 = function arg0, arg1, arg2() {
                     _fun17019: for (var _fun17019_ip = 0;;) switch (_fun17019_ip) {
                         case 0:
                             var7 = arg0;
@@ -1098,7 +1098,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.getStateForAction = var6;
-                var5 = function(arg0) { // Original name: shouldActionChangeFocus, environment: var5
+                var5 = function arg0() {
                     var0 = arg0;
                     var1 = var0.type;
                     var0 = 'NAVIGATE';

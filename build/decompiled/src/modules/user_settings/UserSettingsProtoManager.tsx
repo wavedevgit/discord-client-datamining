@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: handleConnectionOpen, environment: var3
+    var0 = function() {
         _fun97800: for (var _fun97800_ip = 0;;) switch (_fun97800_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: handleUserSettingsProtoEnqueueUpdate, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.settings;
         var4 = var1.proto;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: handleUserSettingsProtoLoadIfNecessary, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.settingsType;
         var3 = _closure1_slot0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: handleAppStateUpdate, environment: var3
+    var0 = function arg0() {
         _fun97804: for (var _fun97804_ip = 0;;) switch (_fun97804_ip) {
             case 0:
                 var0 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.UserSettingsTypes;
     var _closure1_slot4 = var1;
     var1 = {};
-    var3 = function() { // Original name: init, environment: var3
+    var3 = function() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var2 = 2;

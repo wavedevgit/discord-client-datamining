@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestBottomSheet/QuestBottomSheetProgressCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: QuestBottomSheetProgressCardPlayStreamTask, environment: var1
+    var3 = function arg0() {
         _fun83653: for (var _fun83653_ip = 0;;) switch (_fun83653_ip) {
             case 0:
                 var1 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.t;
                             var2 = var1.e3OlfB;
                             var1 = {};
-                            var6 = function() { // Original name: rewardHook, environment: var4
+                            var6 = function() {
                                 var3 = _closure1_slot6;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var0.aFaRso;
                             var0 = {};
                             var0.minutesLeft = var5;
-                            var4 = function(arg0) { // Original name: minutesHook, environment: var4
+                            var4 = function arg0() {
                                 var3 = _closure1_slot6;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.QuestBottomSheetProgressCardPlayStreamTask = var3;
-    var3 = function(arg0) { // Original name: QuestBottomSheetProgressCardWatchTask, environment: var1
+    var3 = function arg0() {
         _fun83657: for (var _fun83657_ip = 0;;) switch (_fun83657_ip) {
             case 0:
                 var1 = arg0;
@@ -911,7 +911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.QuestBottomSheetProgressCardWatchTask = var3;
-    var1 = function(arg0) { // Original name: QuestBottomSheetProgressCardInGameTask, environment: var1
+    var1 = function arg0() {
         _fun83660: for (var _fun83660_ip = 0;;) switch (_fun83660_ip) {
             case 0:
                 var0 = arg0;

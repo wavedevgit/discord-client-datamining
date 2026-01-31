@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/channel/useChannelSafeAreaBottomStyles.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useChannelSafeAreaBottomStyles, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot12;
         var4 = undefined;
         var6 = var2.bind(var4)();
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.useGradientBottom;
         var5 = var2.bind(var3)();
         var _closure2_slot1 = var5;
-        var3 = function(arg0) { // Original name: useChannelSafeAreaBottomType, environment: var0
+        var3 = function arg0() {
             var6 = arg0;
             var _closure3_slot0 = var6;
             var2 = _closure1_slot1;

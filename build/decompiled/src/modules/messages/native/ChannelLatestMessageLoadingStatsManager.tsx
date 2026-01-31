@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.AnalyticEvents;
     var _closure1_slot4 = var6;
     var1 = function() { // Environment: var1
-        var3 = function(arg0) { // Original name: ChannelLatestMessageLoadingStatsManager, environment: var4
+        var3 = function arg0() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'start';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var1 = {};
             var0 = arg0;
             var0 = var0.channelId;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'cancel';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = undefined;
             var1 = this;
             var1.latestChannelMessagesLoad = var0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'finish';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun77232: for (var _fun77232_ip = 0;;) switch (_fun77232_ip) {
                 case 0:
                     var7 = arg0;

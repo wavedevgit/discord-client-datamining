@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: getSpanStatusFromHttpCode, environment: var0
+    var2 = function arg0() {
         _fun8877: for (var _fun8877_ip = 0;;) switch (_fun8877_ip) {
             case 0:
                 var1 = arg0;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 0;
     var1.SPAN_STATUS_UNSET = var3;
     var1.getSpanStatusFromHttpCode = var2;
-    var0 = function(arg0, arg1) { // Original name: setHttpStatus, environment: var0
+    var0 = function arg0, arg1() {
         _fun8878: for (var _fun8878_ip = 0;;) switch (_fun8878_ip) {
             case 0:
                 var3 = arg0;

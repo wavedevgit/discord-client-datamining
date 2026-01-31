@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var6 = function(arg0, arg1, arg2) { // Original name: addPreviousTraceSpanLink, environment: var4
+    var6 = function arg0, arg1, arg2() {
         _fun11982: for (var _fun11982_ip = 0;;) switch (_fun11982_ip) {
             case 0:
                 var4 = arg0;
@@ -193,7 +193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var6;
-    var1 = function(arg0) { // Original name: storePreviousTraceInSessionStorage, environment: var4
+    var1 = function arg0() {
         _fun11983: for (var _fun11983_ip = 0;;) switch (_fun11983_ip) {
             case 0:
                 var1 = arg0;
@@ -246,7 +246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var1;
-    var5 = function() { // Original name: getPreviousTraceFromSessionStorage, environment: var4
+    var5 = function() {
         _fun11984: for (var _fun11984_ip = 0;;) switch (_fun11984_ip) {
             case 0:
                 var0 = undefined;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var5;
-    var3 = function(arg0) { // Original name: spanContextSampled, environment: var4
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.traceFlags;
         var0 = 1;
@@ -344,7 +344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.PREVIOUS_TRACE_TMP_SPAN_ATTRIBUTE = var7;
     var2.addPreviousTraceSpanLink = var6;
     var2.getPreviousTraceFromSessionStorage = var5;
-    var4 = function(arg0, arg1) { // Original name: linkTraces, environment: var4
+    var4 = function arg0, arg1() {
         _fun11986: for (var _fun11986_ip = 0;;) switch (_fun11986_ip) {
             case 0:
                 var4 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun27675: for (var _fun27675_ip = 0;;) switch (_fun27675_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var1 = function(arg0) { // Original name: joinRequestFromServer, environment: var4
+    var1 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.join_request_id;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var1;
-    var0 = function(arg0) { // Original name: deleteJoinRequest, environment: var4
+    var0 = function arg0() {
         _fun27679: for (var _fun27679_ip = 0;;) switch (_fun27679_ip) {
             case 0:
                 var2 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var9 = function(arg0) { // Original name: handleGatewayJoinRequestUpdate, environment: var4
+    var9 = function arg0() {
         _fun27680: for (var _fun27680_ip = 0;;) switch (_fun27680_ip) {
             case 0:
                 var0 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: UserGuildJoinRequestStore, environment: var5
+        var3 = function() {
             _fun27682: for (var _fun27682_ip = 0;;) switch (_fun27682_ip) {
                 case 0:
                     var3 = this;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot7;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRequest';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot9;
             var0 = arg0;
             var0 = var1[var0];
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'computeGuildIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = global;
             var3 = var1.Object;
             var2 = var3.values;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getJoinRequestGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun27688: for (var _fun27688_ip = 0;;) switch (_fun27688_ip) {
                 case 0:
                     var4 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedRequestToJoinGuilds';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasJoinRequestCoackmark';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot8;
             var0 = null;
             var0 = var0 != var1;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCooldown';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var0 = var1[var0];
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var10 = function(arg0) { // Original name: handleConnectionOpen, environment: var4
+    var10 = function arg0() {
         var0 = arg0;
         var2 = var0.guildJoinRequests;
         var0 = false;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.CONNECTION_OPEN = var10;
     var3.GUILD_JOIN_REQUEST_UPDATE = var9;
     var3.GUILD_JOIN_REQUEST_CREATE = var9;
-    var9 = function(arg0) { // Original name: handleRemoveJoinRequest, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot15;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_JOIN_REQUEST_DELETE = var9;
-    var9 = function(arg0) { // Original name: handleJoinRequestUpdate, environment: var4
+    var9 = function arg0() {
         _fun27695: for (var _fun27695_ip = 0;;) switch (_fun27695_ip) {
             case 0:
                 var0 = arg0;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.USER_GUILD_JOIN_REQUEST_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleGuildLeave, environment: var4
+    var9 = function arg0() {
         var2 = _closure1_slot15;
         var0 = arg0;
         var0 = var0.guild;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.GUILD_DELETE = var9;
-    var9 = function(arg0) { // Original name: handleJoinRequestGuildsFetch, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guilds;
         var0 = true;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_JOIN_REQUEST_GUILDS_FETCH = var9;
-    var9 = function(arg0) { // Original name: handleVerificationFormUpdate, environment: var4
+    var9 = function arg0() {
         _fun27699: for (var _fun27699_ip = 0;;) switch (_fun27699_ip) {
             case 0:
                 var0 = arg0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.MEMBER_VERIFICATION_FORM_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleInviteSuccess, environment: var4
+    var9 = function arg0() {
         _fun27700: for (var _fun27700_ip = 0;;) switch (_fun27700_ip) {
             case 0:
                 var0 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.INVITE_ACCEPT_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleAckApprovedGuildJoinRequest, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = _closure1_slot15;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.ACK_APPROVED_GUILD_JOIN_REQUEST = var9;
-    var9 = function(arg0) { // Original name: handleShowCoachmark, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         _closure1_slot8 = var1;
@@ -632,14 +632,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW = var9;
-    var9 = function() { // Original name: handleClearCoachmark, environment: var4
+    var9 = function() {
         var0 = null;
         _closure1_slot8 = var0;
         var0 = undefined;
         return var0;
     };
     var3.USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR = var9;
-    var4 = function(arg0) { // Original name: handleJoinRequestCooldownFetch, environment: var4
+    var4 = function arg0() {
         _fun27704: for (var _fun27704_ip = 0;;) switch (_fun27704_ip) {
             case 0:
                 var0 = arg0;

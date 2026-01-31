@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PremiumPlanDowngradeToTier0, environment: var1
+    var0 = function arg0() {
         _fun59107: for (var _fun59107_ip = 0;;) switch (_fun59107_ip) {
             case 0:
                 var0 = arg0;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.percentSavings = var18;
                 var14 = var16.bind(var17)(var15, var14);
                 var9.text = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure1_slot1;
                     var5 = _closure1_slot2;
                     var0 = 29;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: getScreens, environment: var1
+    var0 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = arg1;
         var3 = var4.bind(var5)(var3);
         var1.headerLeft = var3;
-        var2 = function() { // Original name: render, environment: var2
+        var2 = function() {
             var3 = _closure1_slot13;
             var2 = _closure1_slot18;
             var1 = {};
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.buttonContinue = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: PerkCard, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.imageSource;
         var12 = var0.text;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/PremiumPlanDowngradeToTier0Modal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumPlanDowngradeToTier0Modal, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var7 = var6.subscription;
         var _closure2_slot0 = var7;

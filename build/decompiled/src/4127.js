@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: load, environment: var4
+    var3 = function arg0() {
         _fun37841: for (var _fun37841_ip = 0;;) switch (_fun37841_ip) {
             case 0:
                 var5 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 100:
                 var2 = true;
                 var3.async = var2;
-                var2 = function(arg0) { // Original name: loadFileObject, environment: var1
+                var2 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = global;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 135:
                 var2 = true;
                 var3.async = var2;
-                var2 = function(arg0, arg1) { // Original name: loadFile, environment: var1
+                var2 = function arg0, arg1() {
                     _fun37842: for (var _fun37842_ip = 0;;) switch (_fun37842_ip) {
                         case 0:
                             var4 = arg0;
@@ -161,7 +161,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun37842
                             }
                         case 62:
-                            var2 = function(arg0) { // Original name: loadLocalFile, environment: var1
+                            var2 = function arg0() {
                                 _fun37852: for (var _fun37852_ip = 0;;) switch (_fun37852_ip) {
                                     case 0:
                                         var4 = undefined;
@@ -386,7 +386,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun37842
                             }
                         case 153:
-                            var2 = function(arg0) { // Original name: nodeGetRemoteFile, environment: var1
+                            var2 = function arg0() {
                                 _fun37845: for (var _fun37845_ip = 0;;) switch (_fun37845_ip) {
                                     case 0:
                                         var4 = undefined;
@@ -583,7 +583,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             _fun37842_ip = 181;
                             continue _fun37842;
                         case 168:
-                            var2 = function(arg0) { // Original name: fetchRemoteFile, environment: var1
+                            var2 = function arg0() {
                                 _fun37843: for (var _fun37843_ip = 0;;) switch (_fun37843_ip) {
                                     case 0:
                                         var3 = undefined;
@@ -670,7 +670,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0, arg1) { // Original name: loadFromData, environment: var4
+    var0 = function arg0, arg1() {
         _fun37864: for (var _fun37864_ip = 0;;) switch (_fun37864_ip) {
             case 0:
                 var3 = arg0;
@@ -751,13 +751,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var1 = function(arg0) { // Original name: loadView, environment: var4
+    var1 = function arg0() {
         _fun37865: for (var _fun37865_ip = 0;;) switch (_fun37865_ip) {
             case 0:
                 var13 = arg0;
                 var5 = undefined;
                 var0 = undefined;
-                var23 = function(arg0) { // Original name: addIccTags, environment: var1
+                var23 = function arg0() {
                     _fun37866: for (var _fun37866_ip = 0;;) switch (_fun37866_ip) {
                         case 0:
                             var1 = arg0;
@@ -788,7 +788,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                var9 = function(arg0) { // Original name: addPngTextTags, environment: var1
+                var9 = function arg0() {
                     _fun37867: for (var _fun37867_ip = 0;;) switch (_fun37867_ip) {
                         case 0:
                             var3 = arg0;
@@ -2569,14 +2569,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0) { // Original name: hasIptcData, environment: var4
+    var0 = function arg0() {
         var1 = undefined;
         var0 = arg0;
         var0 = var1 !== var0;
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: hasXmpData, environment: var4
+    var0 = function arg0() {
         _fun37871: for (var _fun37871_ip = 0;;) switch (_fun37871_ip) {
             case 0:
                 var1 = arg0;
@@ -2597,7 +2597,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: hasIccData, environment: var4
+    var0 = function arg0() {
         _fun37872: for (var _fun37872_ip = 0;;) switch (_fun37872_ip) {
             case 0:
                 var1 = arg0;

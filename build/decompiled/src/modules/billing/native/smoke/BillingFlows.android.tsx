@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot1 = var1;
     var1 = {};
-    var3 = function() { // Original name: RunAllFlows, environment: var3
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot0;
         var1 = undefined;

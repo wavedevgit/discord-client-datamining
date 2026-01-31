@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun56206: for (var _fun56206_ip = 0;;) switch (_fun56206_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: setComponentState, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun56209: for (var _fun56209_ip = 0;;) switch (_fun56209_ip) {
             case 0:
                 var4 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: deleteStatesForMessageId, environment: var3
+    var0 = function arg0() {
         _fun56210: for (var _fun56210_ip = 0;;) switch (_fun56210_ip) {
             case 0:
                 var3 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LocalInteractionComponentStateStore, environment: var5
+        var3 = function() {
             _fun56212: for (var _fun56212_ip = 0;;) switch (_fun56212_ip) {
                 case 0:
                     var3 = this;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getInteractionComponentStates';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getInteractionComponentStateVersion';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getInteractionComponentState';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun56215: for (var _fun56215_ip = 0;;) switch (_fun56215_ip) {
                 case 0:
                     var2 = _closure1_slot5;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var12 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: handleInit, environment: var3
+    var7 = function() {
         var2 = _closure1_slot5;
         var0 = var2.clear;
         var0 = var0.bind(var2)();
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function(arg0) { // Original name: handleQueueActionComponentState, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var4 = var0.messageId;
         var7 = var0.nonce;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUEUE_INTERACTION_COMPONENT_STATE = var7;
-    var7 = function(arg0) { // Original name: handleSetInteractionComponentState, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var4 = var0.rootContainerId;
         var3 = var0.componentId;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SET_INTERACTION_COMPONENT_STATE = var7;
-    var7 = function(arg0) { // Original name: handleMessageDelete, environment: var3
+    var7 = function arg0() {
         _fun56219: for (var _fun56219_ip = 0;;) switch (_fun56219_ip) {
             case 0:
                 var0 = arg0;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_DELETE = var7;
-    var7 = function(arg0) { // Original name: handleMessageUpdate, environment: var3
+    var7 = function arg0() {
         _fun56220: for (var _fun56220_ip = 0;;) switch (_fun56220_ip) {
             case 0:
                 var0 = arg0;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_UPDATE = var7;
-    var7 = function(arg0) { // Original name: handleInteractionSuccess, environment: var3
+    var7 = function arg0() {
         _fun56221: for (var _fun56221_ip = 0;;) switch (_fun56221_ip) {
             case 0:
                 var0 = arg0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.INTERACTION_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleInteractionFailure, environment: var3
+    var7 = function arg0() {
         _fun56222: for (var _fun56222_ip = 0;;) switch (_fun56222_ip) {
             case 0:
                 var0 = arg0;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.INTERACTION_FAILURE = var7;
-    var3 = function(arg0) { // Original name: handleClearInteractionModalState, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.customId;
         var2 = _closure1_slot5;

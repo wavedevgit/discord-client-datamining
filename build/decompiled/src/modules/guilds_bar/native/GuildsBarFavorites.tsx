@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
     var3 = {};
-    var7 = function() { // Original name: onPress, environment: var1
+    var7 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 5;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.onPress = var7;
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: GuildsBarFavorites, environment: var1
+    var1 = function() {
         _fun100979: for (var _fun100979_ip = 0;;) switch (_fun100979_ip) {
             case 0:
                 var5 = _closure1_slot0;

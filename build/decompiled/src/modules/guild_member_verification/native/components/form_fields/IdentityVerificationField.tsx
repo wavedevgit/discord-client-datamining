@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: BaseIdentityVerificationField, environment: var1
+    var0 = function arg0() {
         _fun60361: for (var _fun60361_ip = 0;;) switch (_fun60361_ip) {
             case 0:
                 var0 = arg0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: IdentityVerificationField, environment: var1
+    var1 = function arg0() {
         _fun60362: for (var _fun60362_ip = 0;;) switch (_fun60362_ip) {
             case 0:
                 var0 = arg0;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var6 = var8.bind(var9)(var4, var6);
-                var1 = function(arg0) { // Original name: getHandlePress, environment: var1
+                var1 = function arg0() {
                     _fun60364: for (var _fun60364_ip = 0;;) switch (_fun60364_ip) {
                         case 0:
                             var2 = arg0;

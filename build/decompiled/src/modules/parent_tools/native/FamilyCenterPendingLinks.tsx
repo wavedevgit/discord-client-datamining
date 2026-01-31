@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FamilyCenterPendingLinkRow, environment: var1
+    var0 = function arg0() {
         _fun82020: for (var _fun82020_ip = 0;;) switch (_fun82020_ip) {
             case 0:
                 var0 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.name = var17;
                 var12 = var14.bind(var15)(var13, var12);
                 var6.accessibilityLabel = var12;
-                var12 = function() { // Original name: onPress, environment: var8
+                var12 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 13;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.name = var16;
                 var12 = var14.bind(var15)(var13, var12);
                 var9.accessibilityLabel = var12;
-                var12 = function() { // Original name: onPress, environment: var8
+                var12 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 13;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.name = var13;
                 var9 = var11.bind(var12)(var10, var9);
                 var1.accessibilityLabel = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 13;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterPendingLinks.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterPendingLinks, environment: var1
+    var1 = function() {
         _fun82024: for (var _fun82024_ip = 0;;) switch (_fun82024_ip) {
             case 0:
                 var0 = _closure1_slot8;

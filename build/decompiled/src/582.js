@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3.toStringTag;
         case 73:
             var _closure1_slot2 = var2;
-            var2 = function(arg0) { // Original name: getRawTag, environment: var1
+            var2 = function arg0() {
                 _fun6947: for (var _fun6947_ip = 0;;) switch (_fun6947_ip) {
                     case 0:
                         var7 = arg0;

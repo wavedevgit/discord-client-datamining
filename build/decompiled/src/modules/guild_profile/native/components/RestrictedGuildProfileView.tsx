@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_profile/native/components/RestrictedGuildProfileView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: RestrictedGuildProfileView, environment: var1
+    var1 = function() {
         var13 = _closure1_slot0;
         var14 = _closure1_slot2;
         var7 = 3;

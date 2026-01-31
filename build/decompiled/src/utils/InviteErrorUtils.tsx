@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/InviteErrorUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getDescriptiveInviteError, environment: var1
+    var3 = function arg0() {
         _fun80324: for (var _fun80324_ip = 0;;) switch (_fun80324_ip) {
             case 0:
                 var2 = arg0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDescriptiveInviteError = var3;
-    var1 = function(arg0) { // Original name: getInviteError, environment: var1
+    var1 = function arg0() {
         _fun80325: for (var _fun80325_ip = 0;;) switch (_fun80325_ip) {
             case 0:
                 var2 = arg0;

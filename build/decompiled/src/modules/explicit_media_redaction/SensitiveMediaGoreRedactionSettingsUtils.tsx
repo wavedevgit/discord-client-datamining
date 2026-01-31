@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var3 = var3.HelpdeskArticles;
     var _closure1_slot4 = var3;
-    var5 = function(arg0) { // Original name: resolveGoreSettingWithDefaults, environment: var1
+    var5 = function arg0() {
         _fun39336: for (var _fun39336_ip = 0;;) switch (_fun39336_ip) {
             case 0:
                 var1 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var5;
-    var3 = function(arg0) { // Original name: resultDefaultSettingsForSensitiveContentDefaultsMixed, environment: var1
+    var3 = function arg0() {
         _fun39337: for (var _fun39337_ip = 0;;) switch (_fun39337_ip) {
             case 0:
                 var0 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: resolveGoreSettingWithDefaultsForAdult, environment: var1
+    var3 = function arg0() {
         _fun39338: for (var _fun39338_ip = 0;;) switch (_fun39338_ip) {
             case 0:
                 var1 = arg0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var4 = function(arg0) { // Original name: resolveGoreSettingWithDefaultsForTeen, environment: var1
+    var4 = function arg0() {
         _fun39339: for (var _fun39339_ip = 0;;) switch (_fun39339_ip) {
             case 0:
                 var1 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0) { // Original name: getGoreContentSettingOrDefault, environment: var1
+    var3 = function arg0() {
         _fun39340: for (var _fun39340_ip = 0;;) switch (_fun39340_ip) {
             case 0:
                 var5 = arg0;

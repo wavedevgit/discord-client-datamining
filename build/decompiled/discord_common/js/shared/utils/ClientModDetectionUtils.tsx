@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = '../discord_common/js/shared/utils/ClientModDetectionUtils.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function() { // Original name: usesClientMods, environment: var1
+    var1 = function() {
         var0 = false;
         return var0;
     };

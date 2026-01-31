@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.AnalyticEvents;
     var _closure1_slot10 = var3;
     var1 = function() { // Environment: var1
-        var4 = function() { // Original name: NativePermissionBaseUtils, environment: var0
+        var4 = function() {
             var2 = this;
             var4 = _closure1_slot4;
             var3 = _closure2_slot1;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = var6.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var1 = function() { // Original name: requestAuthorization, environment: var0
+        var1 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'requestPermission';
         var5.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var0
+        var6 = function arg0, arg1() {
             var3 = this;
             var2 = _closure2_slot1;
             var1 = var2.defaultNativePermissionsRequestOptions;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'hasPermission';
         var5.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var0
+        var6 = function arg0, arg1() {
             var3 = this;
             var2 = _closure2_slot1;
             var1 = var2.defaultNativePermissionsRequestOptions;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'showAlert';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun37076: for (var _fun37076_ip = 0;;) switch (_fun37076_ip) {
                 case 0:
                     var2 = arg0;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = var10.bind(var11)(var9);
                     var1.title = var9;
                     var1.body = var6;
-                    var5 = function() { // Original name: onConfirm, environment: var5
+                    var5 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.openSettings;
                         var0 = _closure3_slot1;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'defaultNativePermissionsRequestOptions';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun37078: for (var _fun37078_ip = 0;;) switch (_fun37078_ip) {
                 case 0:
                     var2 = arg0;

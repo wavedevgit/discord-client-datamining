@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: getReactionEmojiName, environment: var1
+    var3 = function arg0() {
         _fun24833: for (var _fun24833_ip = 0;;) switch (_fun24833_ip) {
             case 0:
                 var1 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 20;
     var2.MAX_REACTIONS = var4;
     var2.getReactionEmojiName = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getAccessibleEmojiDisplayName, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun24834: for (var _fun24834_ip = 0;;) switch (_fun24834_ip) {
             case 0:
                 var0 = arg0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAccessibleEmojiDisplayName = var3;
-    var3 = function(arg0) { // Original name: toReactionEmoji, environment: var1
+    var3 = function arg0() {
         _fun24835: for (var _fun24835_ip = 0;;) switch (_fun24835_ip) {
             case 0:
                 var1 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.toReactionEmoji = var3;
-    var3 = function(arg0, arg1) { // Original name: emojiEquals, environment: var1
+    var3 = function arg0, arg1() {
         _fun24836: for (var _fun24836_ip = 0;;) switch (_fun24836_ip) {
             case 0:
                 var2 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.emojiEquals = var3;
-    var3 = function(arg0) { // Original name: getBurstAnalyticsSection, environment: var1
+    var3 = function arg0() {
         _fun24837: for (var _fun24837_ip = 0;;) switch (_fun24837_ip) {
             case 0:
                 var2 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getBurstAnalyticsSection = var3;
-    var3 = function(arg0) { // Original name: shouldApplyReaction, environment: var1
+    var3 = function arg0() {
         _fun24838: for (var _fun24838_ip = 0;;) switch (_fun24838_ip) {
             case 0:
                 var0 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldApplyReaction = var3;
-    var1 = function(arg0, arg1) { // Original name: updateReactionNotificationsSetting, environment: var1
+    var1 = function arg0, arg1() {
         var5 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;

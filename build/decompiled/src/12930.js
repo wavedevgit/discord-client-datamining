@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: getMetadataForUrl, environment: var0
+    var2 = function arg0, arg1() {
         _fun99576: for (var _fun99576_ip = 0;;) switch (_fun99576_ip) {
             case 0:
                 var5 = arg0;
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = new var11[var3](var10);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot3 = var3;
-    var3 = function(arg0, arg1) { // Original name: addMetadataToStackFrames, environment: var0
+    var3 = function arg0, arg1() {
         _fun99577: for (var _fun99577_ip = 0;;) switch (_fun99577_ip) {
             case 0:
                 var2 = arg0;
@@ -246,7 +246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.addMetadataToStackFrames = var3;
     var1.getMetadataForUrl = var2;
-    var0 = function(arg0) { // Original name: stripMetadataFromStackFrames, environment: var0
+    var0 = function arg0() {
         _fun99579: for (var _fun99579_ip = 0;;) switch (_fun99579_ip) {
             case 0:
                 var0 = arg0;

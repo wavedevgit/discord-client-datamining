@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/EnterEmail.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EnterEmail, environment: var1
+    var1 = function arg0() {
         _fun60833: for (var _fun60833_ip = 0;;) switch (_fun60833_ip) {
             case 0:
                 var1 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onSubmit = var6;
-                    var5 = function() { // Original name: onSuccess, environment: var5
+                    var5 = function() {
                         _fun60841: for (var _fun60841_ip = 0;;) switch (_fun60841_ip) {
                             case 0:
                                 var2 = _closure2_slot0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun50290: for (var _fun50290_ip = 0;;) switch (_fun50290_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -50,10 +50,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var8 = function() { // Original name: handleUpdateActivity, environment: var3
+    var8 = function() {
         _fun50293: for (var _fun50293_ip = 0;;) switch (_fun50293_ip) {
             case 0:
-                var0 = function() { // Original name: buildActivity, environment: var0
+                var0 = function() {
                     _fun50294: for (var _fun50294_ip = 0;;) switch (_fun50294_ip) {
                         case 0:
                             var1 = _closure1_slot12;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: StageChannelSelfRichPresenceStore, environment: var5
+        var3 = function() {
             _fun50297: for (var _fun50297_ip = 0;;) switch (_fun50297_ip) {
                 case 0:
                     var3 = this;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var7 = this;
             var6 = var7.waitFor;
             var13 = _closure1_slot9;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActivity';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.STAGE_INSTANCE_UPDATE = var8;
     var1.STAGE_INSTANCE_DELETE = var8;
     var1.VOICE_CHANNEL_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleUpdateRTCConnection, environment: var3
+    var8 = function arg0() {
         _fun50300: for (var _fun50300_ip = 0;;) switch (_fun50300_ip) {
             case 0:
                 var0 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.RTC_CONNECTION_STATE = var8;
-    var3 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var3
+    var3 = function arg0() {
         _fun50301: for (var _fun50301_ip = 0;;) switch (_fun50301_ip) {
             case 0:
                 var0 = arg0;

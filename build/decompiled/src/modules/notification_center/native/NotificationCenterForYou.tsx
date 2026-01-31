@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: isHoisted, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var3 = _closure1_slot0;
@@ -731,7 +731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var4 = var3.bind(var6)(var1);
                         case 96:
-                            var3 = function(arg0) { // Original name: sortBySnowflake, environment: var2
+                            var3 = function arg0() {
                                 var2 = arg0;
                                 var1 = var2.sort;
                                 var0 = function(arg0, arg1) { // Environment: var0

@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.QuestHomeSortMethods = var6;
             var2.TaskFilterTypes = var5;
             var2.RewardFilterTypes = var4;
-            var3 = function(arg0) { // Original name: getQuestHomeFilterOptionItem, environment: var3
+            var3 = function arg0() {
                 _fun46590: for (var _fun46590_ip = 0;;) switch (_fun46590_ip) {
                     case 0:
                         var2 = arg0;

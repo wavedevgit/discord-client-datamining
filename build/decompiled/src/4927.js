@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: findHandler, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot2;
         var1 = var2.get;
         var0 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var3;
     var3 = {};
     var1.handlerIDToTag = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: registerHandler, environment: var0
+    var3 = function arg0, arg1, arg2() {
         _fun44651: for (var _fun44651_ip = 0;;) switch (_fun44651_ip) {
             case 0:
                 var4 = arg0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.registerHandler = var3;
-    var3 = function(arg0, arg1) { // Original name: registerOldGestureHandler, environment: var0
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot3;
         var2 = var3.set;
         var1 = arg0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.registerOldGestureHandler = var3;
-    var3 = function(arg0) { // Original name: unregisterOldGestureHandler, environment: var0
+    var3 = function arg0() {
         var2 = _closure1_slot3;
         var1 = var2.delete;
         var0 = arg0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.unregisterOldGestureHandler = var3;
-    var3 = function(arg0, arg1) { // Original name: unregisterHandler, environment: var0
+    var3 = function arg0, arg1() {
         _fun44654: for (var _fun44654_ip = 0;;) switch (_fun44654_ip) {
             case 0:
                 var3 = arg1;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.unregisterHandler = var3;
     var1.findHandler = var2;
-    var2 = function(arg0) { // Original name: findOldGestureHandler, environment: var0
+    var2 = function arg0() {
         var2 = _closure1_slot3;
         var1 = var2.get;
         var0 = arg0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.findOldGestureHandler = var2;
-    var0 = function(arg0) { // Original name: findHandlerByTestID, environment: var0
+    var0 = function arg0() {
         _fun44656: for (var _fun44656_ip = 0;;) switch (_fun44656_ip) {
             case 0:
                 var3 = _closure1_slot4;

@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/saved_messages/native/ForLaterModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ForLaterModal, environment: var1
+    var1 = function() {
         _fun75863: for (var _fun75863_ip = 0;;) switch (_fun75863_ip) {
             case 0:
                 var0 = _closure1_slot6;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["2pAkDA"];
                 var8 = var12.bind(var13)(var8);
                 var7.title = var8;
-                var8 = function() { // Original name: headerTitle, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;

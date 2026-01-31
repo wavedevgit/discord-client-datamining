@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PendingSpamMessageRequestRow, environment: var1
+    var0 = function arg0() {
         _fun109543: for (var _fun109543_ip = 0;;) switch (_fun109543_ip) {
             case 0:
                 var0 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var0.isOptimisticRejected;
                 var0 = var0.markAsNotSpam;
                 var _closure2_slot7 = var0;
-                var21 = function() { // Original name: handleRejectMessageRequest, environment: var4
+                var21 = function() {
                     var2 = _closure2_slot6;
                     var0 = _closure2_slot3;
                     var1 = var0.id;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot8 = var21;
-                var28 = function() { // Original name: handleAcceptMessageRequest, environment: var4
+                var28 = function() {
                     var3 = _closure2_slot7;
                     var2 = _closure2_slot3;
                     var1 = _closure2_slot5;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot9 = var28;
-                var8 = function() { // Original name: handleSelectRow, environment: var4
+                var8 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 13;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.label = var10;
                 var8[2] = var9;
                 var0.accessibilityActions = var8;
-                var4 = function(arg0) { // Original name: onAccessibilityAction, environment: var4
+                var4 = function arg0() {
                     _fun109549: for (var _fun109549_ip = 0;;) switch (_fun109549_ip) {
                         case 0:
                             var0 = arg0;
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/native/spam/SpamMessageList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SpamMessageList, environment: var1
+    var1 = function arg0() {
         _fun109550: for (var _fun109550_ip = 0;;) switch (_fun109550_ip) {
             case 0:
                 var0 = arg0;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 12;
                 var7.paddingTop = var8;
                 var0.contentContainerStyle = var7;
-                var6 = function(arg0) { // Original name: renderItem, environment: var6
+                var6 = function arg0() {
                     _fun109552: for (var _fun109552_ip = 0;;) switch (_fun109552_ip) {
                         case 0:
                             var0 = arg0;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure1_slot12;
                             var2 = {};
                             var2.messageRequest = var0;
-                            var1 = function() { // Original name: goToMessageRequestPreview, environment: var1
+                            var1 = function() {
                                 var2 = _closure2_slot0;
                                 var0 = _closure3_slot0;
                                 var0 = var0.channel;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: useHasSettingsBadge, environment: var3
+    var1 = function() {
         _fun103402: for (var _fun103402_ip = 0;;) switch (_fun103402_ip) {
             case 0:
                 var7 = _closure1_slot0;

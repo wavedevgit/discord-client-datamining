@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guild_sidebar/showChannelBadge.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: showChannelBadge, environment: var1
+    var1 = function arg0() {
         _fun102631: for (var _fun102631_ip = 0;;) switch (_fun102631_ip) {
             case 0:
                 var0 = arg0;

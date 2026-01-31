@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot15 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: QuestDockUnenrolledBackground, environment: var1
+    var1 = function() {
         _fun83881: for (var _fun83881_ip = 0;;) switch (_fun83881_ip) {
             case 0:
                 var17 = _closure1_slot4;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var20[var2];
                 var6 = var24.bind(var3)(var4);
                 var5 = var6.useAnimatedStyle;
-                var4 = function() { // Original name: s, environment: var1
+                var4 = function() {
                     _fun83885: for (var _fun83885_ip = 0;;) switch (_fun83885_ip) {
                         case 0:
                             var0 = {};
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0[var2];
                 var5 = var15.bind(var3)(var2);
                 var2 = var5.useAnimatedStyle;
-                var1 = function() { // Original name: G, environment: var1
+                var1 = function() {
                     _fun83890: for (var _fun83890_ip = 0;;) switch (_fun83890_ip) {
                         case 0:
                             var0 = {};

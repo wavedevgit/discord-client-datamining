@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SearchMediaObscurityIcon, environment: var1
+    var0 = function arg0() {
         _fun105520: for (var _fun105520_ip = 0;;) switch (_fun105520_ip) {
             case 0:
                 var1 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/list/SearchMediaImage.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: SearchAttachmentMediaImage, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var4 = var3.attachment;
         var _closure2_slot0 = var4;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SearchAttachmentMediaImage = var3;
-    var3 = function(arg0) { // Original name: SearchEmbedMediaImage, environment: var1
+    var3 = function arg0() {
         _fun105527: for (var _fun105527_ip = 0;;) switch (_fun105527_ip) {
             case 0:
                 var3 = arg0;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.SearchEmbedMediaImage = var3;
-    var3 = function(arg0) { // Original name: SearchSoundMediaImage, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var9 = var1.height;
         var _closure2_slot0 = var9;
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SearchSoundMediaImage = var3;
-    var3 = function(arg0) { // Original name: SearchFileMediaImage, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var7 = var1.fileName;
         var10 = var1.height;
@@ -850,7 +850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SearchFileMediaImage = var3;
-    var1 = function(arg0) { // Original name: SearchComponentMediaImage, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var4 = var3.unfurledMediaItem;
         var _closure2_slot0 = var4;

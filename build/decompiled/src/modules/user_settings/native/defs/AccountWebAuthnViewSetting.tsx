@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var7 = var7.ACCOUNT;
     var1.parent = var7;
-    var7 = function() { // Original name: useAccountCanUseWebAuthnView, environment: var8
+    var7 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useCallback;
         var1 = function() { // Environment: var0
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.usePreNavigationAction = var7;
-    var7 = function() { // Original name: useAccountSecurityKeysSettingTrailing, environment: var8
+    var7 = function() {
         _fun81151: for (var _fun81151_ip = 0;;) switch (_fun81151_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.WEBAUTHN_VIEW;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 10;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0, arg1) { // Original name: parse, environment: var1
+    var0 = function arg0, arg1() {
         _fun17735: for (var _fun17735_ip = 0;;) switch (_fun17735_ip) {
             case 0:
                 var6 = arg0;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.parse = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: serialize, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun17737: for (var _fun17737_ip = 0;;) switch (_fun17737_ip) {
             case 0:
                 var4 = arg0;

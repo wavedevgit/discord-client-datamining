@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun80248: for (var _fun80248_ip = 0;;) switch (_fun80248_ip) {
             case 0:
             case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: removeAccountById, environment: var4
+    var0 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var4 = _closure1_slot12;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: setTokenStatus, environment: var4
+    var0 = function arg0, arg1() {
         _fun80253: for (var _fun80253_ip = 0;;) switch (_fun80253_ip) {
             case 0:
                 var0 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: MultiAccountStore, environment: var5
+        var3 = function() {
             _fun80256: for (var _fun80256_ip = 0;;) switch (_fun80256_ip) {
                 case 0:
                     var3 = this;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun80257: for (var _fun80257_ip = 0;;) switch (_fun80257_ip) {
                 case 0:
                     var0 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCanUseMultiAccountMobile';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot12;
             var0.users = var2;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUsers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getValidUsers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot12;
             var1 = var2.filter;
             var0 = function(arg0) { // Environment: var0
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHasLoggedInAccounts';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             var1 = var0.length;
             var0 = 0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsValidatingUsers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot12;
             var1 = var2.some;
             var0 = function(arg0) { // Environment: var0
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canUseMultiAccountNotifications';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun80266: for (var _fun80266_ip = 0;;) switch (_fun80266_ip) {
                 case 0:
                     var1 = this;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSwitchingAccount';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var13 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleConnectionOpen, environment: var4
+    var9 = function arg0() {
         _fun80269: for (var _fun80269_ip = 0;;) switch (_fun80269_ip) {
             case 0:
                 var1 = arg0;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CONNECTION_OPEN = var9;
-    var9 = function(arg0) { // Original name: handleLogout, environment: var4
+    var9 = function arg0() {
         _fun80272: for (var _fun80272_ip = 0;;) switch (_fun80272_ip) {
             case 0:
                 var0 = arg0;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.LOGOUT = var9;
-    var9 = function(arg0) { // Original name: MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST, environment: var4
+    var9 = function arg0() {
         var3 = _closure1_slot16;
         var1 = arg0;
         var2 = var1.userId;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST = var9;
-    var9 = function(arg0) { // Original name: MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS, environment: var4
+    var9 = function arg0() {
         var3 = _closure1_slot16;
         var1 = arg0;
         var2 = var1.userId;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE, environment: var4
+    var9 = function arg0() {
         var3 = _closure1_slot16;
         var1 = arg0;
         var2 = var1.userId;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE = var9;
-    var9 = function(arg0) { // Original name: MULTI_ACCOUNT_REMOVE_ACCOUNT, environment: var4
+    var9 = function arg0() {
         var2 = _closure1_slot15;
         var0 = arg0;
         var1 = var0.userId;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_REMOVE_ACCOUNT = var9;
-    var9 = function(arg0) { // Original name: handleMoveAccount, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var6 = var0.from;
         var5 = var0.to;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_MOVE_ACCOUNT = var9;
-    var9 = function(arg0) { // Original name: handleCurrentUserUpdate, environment: var4
+    var9 = function arg0() {
         _fun80279: for (var _fun80279_ip = 0;;) switch (_fun80279_ip) {
             case 0:
                 var0 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CURRENT_USER_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleMultiAccountMobileExperimentUpdate, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.multiAccountMobileExperimentEnabled;
         _closure1_slot10 = var1;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleUpdatePushSyncToken, environment: var4
+    var9 = function arg0() {
         var1 = arg0;
         var2 = var1.userId;
         var _closure2_slot0 = var2;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN = var9;
-    var4 = function(arg0) { // Original name: handleInvalidatePushSyncTokens, environment: var4
+    var4 = function arg0() {
         var1 = arg0;
         var1 = var1.invalidPushSyncTokens;
         var _closure2_slot0 = var1;

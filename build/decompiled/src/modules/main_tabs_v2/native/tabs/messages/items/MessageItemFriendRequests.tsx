@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: IncomingRequestsRowSeparator, environment: var1
+    var0 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/messages/items/MessageItemFriendRequests.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MessagesItemIncomingRequestsRow, environment: var1
+    var1 = function arg0() {
         _fun101427: for (var _fun101427_ip = 0;;) switch (_fun101427_ip) {
             case 0:
                 var1 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = new var7[var2](var6);
                     var2 = var2 instanceof Object ? var2 : var4;
                     var _closure3_slot1 = var2;
-                    var2 = function(arg0) { // Original name: maybeAddToUsers, environment: var1
+                    var2 = function arg0() {
                         _fun101429: for (var _fun101429_ip = 0;;) switch (_fun101429_ip) {
                             case 0:
                                 var2 = arg0;

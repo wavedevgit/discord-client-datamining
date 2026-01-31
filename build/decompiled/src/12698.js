@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = new Array(0);
     var3.ignore = var4;
     var _closure1_slot1 = var3;
-    var1 = function(arg0) { // Original name: asyncStorage, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot8 = var0;
                     var0 = false;
                     var _closure3_slot9 = var0;
-                    var0 = function(arg0, arg1) { // Original name: sendToReactotron, environment: var2
+                    var0 = function arg0, arg1() {
                         var3 = _closure3_slot0;
                         var2 = var3.send;
                         var1 = {};
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0, arg1, arg2) { // Original name: setItem, environment: var0
+                        var0 = function arg0, arg1, arg2() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0, arg1) { // Original name: removeItem, environment: var0
+                        var0 = function arg0, arg1() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0, arg1, arg2) { // Original name: mergeItem, environment: var0
+                        var0 = function arg0, arg1, arg2() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -321,7 +321,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0) { // Original name: clear, environment: var0
+                        var0 = function arg0() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -424,7 +424,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0, arg1) { // Original name: multiSet, environment: var0
+                        var0 = function arg0, arg1() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -508,7 +508,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0, arg1) { // Original name: multiRemove, environment: var0
+                        var0 = function arg0, arg1() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -611,7 +611,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function(arg0, arg1) { // Original name: multiMerge, environment: var0
+                        var0 = function arg0, arg1() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -625,7 +625,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                     var3 = var3.bind(var0)();
                     var _closure3_slot17 = var3;
-                    var3 = function() { // Original name: trackAsyncStorage, environment: var2
+                    var3 = function() {
                         _fun97498: for (var _fun97498_ip = 0;;) switch (_fun97498_ip) {
                             case 0:
                                 var0 = _closure3_slot9;
@@ -695,7 +695,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = {};
                     var1 = {};
                     var1.trackAsyncStorage = var3;
-                    var2 = function() { // Original name: untrackAsyncStorage, environment: var2
+                    var2 = function() {
                         _fun97499: for (var _fun97499_ip = 0;;) switch (_fun97499_ip) {
                             case 0:
                                 var0 = _closure3_slot9;

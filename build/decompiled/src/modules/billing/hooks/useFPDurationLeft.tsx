@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: roundFPCountdownUnits, environment: var4
+    var1 = function arg0() {
         _fun78028: for (var _fun78028_ip = 0;;) switch (_fun78028_ip) {
             case 0:
                 var2 = {};
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/billing/hooks/useFPDurationLeft.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0, arg1) { // Original name: useFPDurationLeft, environment: var4
+    var4 = function arg0, arg1() {
         _fun78029: for (var _fun78029_ip = 0;;) switch (_fun78029_ip) {
             case 0:
                 var10 = arg1;

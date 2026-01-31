@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: closeGuildEventInfoActionSheet, environment: var3
+    var1 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 14;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_scheduled_events/native/components/event_detail/EventDetailInfoSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: EventDetailInfoSheet, environment: var3
+    var3 = function arg0() {
         _fun66133: for (var _fun66133_ip = 0;;) switch (_fun66133_ip) {
             case 0:
                 var0 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var24.t;
                 var25 = var24["66DLFs"];
                 var24 = {};
-                var28 = function() { // Original name: usernameHook, environment: var10
+                var28 = function() {
                     _fun66139: for (var _fun66139_ip = 0;;) switch (_fun66139_ip) {
                         case 0:
                             var3 = _closure1_slot13;
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var20.BOTTOM;
                 var15[1] = var20;
                 var8.divider = var15;
-                var15 = function() { // Original name: onConfirmPress, environment: var10
+                var15 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 14;
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var14.GuildEventCardPrimaryAction;
                 var14 = {};
                 var14.event = var11;
-                var20 = function() { // Original name: onCloseAction, environment: var10
+                var20 = function() {
                     _fun66141: for (var _fun66141_ip = 0;;) switch (_fun66141_ip) {
                         case 0:
                             var1 = _closure1_slot16;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.recurrenceRule = var12;
                 var11 = var11.id;
                 var6.guildEventId = var11;
-                var10 = function(arg0) { // Original name: onRecurrencePress, environment: var10
+                var10 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = arg0;

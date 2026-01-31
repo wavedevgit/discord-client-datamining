@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: ChannelPrivateVoiceCallController, environment: var1
+    var3 = function arg0() {
         _fun69351: for (var _fun69351_ip = 0;;) switch (_fun69351_ip) {
             case 0:
                 var0 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: ChannelCallController, environment: var1
+    var3 = function arg0() {
         _fun69352: for (var _fun69352_ip = 0;;) switch (_fun69352_ip) {
             case 0:
                 var0 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: ChannelCallGridContainer, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var1 = var1.channel;
         var _closure2_slot0 = var1;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/ChannelCallController.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun69355: for (var _fun69355_ip = 0;;) switch (_fun69355_ip) {
             case 0:
                 var0 = arg0;

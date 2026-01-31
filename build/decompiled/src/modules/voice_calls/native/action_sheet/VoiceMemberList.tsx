@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: VoiceMemberListSectionHeader, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.title;
         var0 = _closure1_slot25;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: isEmbeddedActivity, environment: var1
+    var0 = function arg0() {
         _fun91550: for (var _fun91550_ip = 0;;) switch (_fun91550_ip) {
             case 0:
                 var1 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["6Qgrev"];
                 var10 = var11.bind(var12)(var10);
                 var6.label = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     _fun91554: for (var _fun91554_ip = 0;;) switch (_fun91554_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var6)(var3);
     var _closure1_slot27 = var3;
-    var3 = function() { // Original name: ItemSeparator, environment: var1
+    var3 = function() {
         var1 = _closure1_slot25;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var3;
-    var3 = function(arg0) { // Original name: renderSectionHeader, environment: var1
+    var3 = function arg0() {
         _fun91556: for (var _fun91556_ip = 0;;) switch (_fun91556_ip) {
             case 0:
                 var0 = arg0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'DISCONNECTED';
     var3[var8] = var7;
     var _closure1_slot30 = var3;
-    var3 = function(arg0) { // Original name: extractKey, environment: var1
+    var3 = function arg0() {
         _fun91557: for (var _fun91557_ip = 0;;) switch (_fun91557_ip) {
             case 0:
                 var1 = arg0;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var3;
-    var3 = function(arg0) { // Original name: VoiceSectionRow, environment: var1
+    var3 = function arg0() {
         _fun91558: for (var _fun91558_ip = 0;;) switch (_fun91558_ip) {
             case 0:
                 var0 = arg0;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot32 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: VoiceMemberList, environment: var1
+    var1 = function arg0, arg1() {
         _fun91563: for (var _fun91563_ip = 0;;) switch (_fun91563_ip) {
             case 0:
                 var7 = arg0;
@@ -1268,7 +1268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var9;
                 var25 = var13;
                 var13 = copyDataProperties(var26, var25);
-                var15 = function(arg0, arg1) { // Original name: renderItem, environment: var12
+                var15 = function arg0, arg1() {
                     _fun91573: for (var _fun91573_ip = 0;;) switch (_fun91573_ip) {
                         case 0:
                             var4 = arg0;
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13 = 'renderItem';
                 var9[var13] = var15;
-                var15 = function(arg0, arg1) { // Original name: itemSize, environment: var12
+                var15 = function arg0, arg1() {
                     _fun91574: for (var _fun91574_ip = 0;;) switch (_fun91574_ip) {
                         case 0:
                             var1 = arg1;

@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96877
             }
         case 69:
-            var2 = function(arg0) { // Original name: getOwnPropertyNames, environment: var1
+            var2 = function arg0() {
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var1 = 1;

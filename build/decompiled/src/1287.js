@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun13931: for (var _fun13931_ip = 0;;) switch (_fun13931_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: createReactBuilder, environment: var4
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var3.bind(var2)(var1);
         var1 = var1.FormatBuilder;
         var0 = function(arg0) { // Environment: var0
-            var3 = function() { // Original name: _class, environment: var5
+            var3 = function() {
                 _fun13936: for (var _fun13936_ip = 0;;) switch (_fun13936_ip) {
                     case 0:
                         var3 = this;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = {};
             var0 = 'pushRichTextTag';
             var4.key = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: pushRichTextTag, environment: var5
+            var0 = function arg0, arg1, arg2() {
                 var3 = this;
                 var2 = var3.result;
                 var1 = var2.push;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = {};
             var6 = 'pushLiteralText';
             var4.key = var6;
-            var6 = function(arg0) { // Original name: pushLiteralText, environment: var5
+            var6 = function arg0() {
                 _fun13938: for (var _fun13938_ip = 0;;) switch (_fun13938_ip) {
                     case 0:
                         var3 = arg0;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = {};
             var6 = 'pushObject';
             var4.key = var6;
-            var6 = function(arg0) { // Original name: pushObject, environment: var5
+            var6 = function arg0() {
                 var0 = this;
                 var2 = var0.result;
                 var1 = var2.push;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = {};
             var6 = 'finish';
             var4.key = var6;
-            var5 = function() { // Original name: finish, environment: var5
+            var5 = function() {
                 var0 = this;
                 var0 = var0.result;
                 return var0;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot10 = var0;
-    var1 = function(arg0, arg1, arg2) { // Original name: formatReact, environment: var4
+    var1 = function arg0, arg1, arg2() {
         _fun13941: for (var _fun13941_ip = 0;;) switch (_fun13941_ip) {
             case 0:
                 var5 = arg0;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var1;
-    var3 = function(arg0) { // Original name: makeReactFormatter, environment: var4
+    var3 = function arg0() {
         var0 = {};
         var2 = _closure1_slot11;
         var0.format = var2;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.createElement;
     var _closure1_slot8 = var1;
     var1 = {};
-    var5 = function(arg0, arg1) { // Original name: $b, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot8;
         var3 = {};
         var0 = arg1;
@@ -297,7 +297,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.$b = var5;
-    var5 = function(arg0, arg1) { // Original name: $i, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot8;
         var3 = {};
         var0 = arg1;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.$i = var5;
-    var5 = function(arg0, arg1) { // Original name: $del, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot8;
         var3 = {};
         var0 = arg1;
@@ -321,7 +321,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.$del = var5;
-    var5 = function(arg0, arg1) { // Original name: $code, environment: var4
+    var5 = function arg0, arg1() {
         var4 = _closure1_slot8;
         var3 = {};
         var0 = arg1;
@@ -333,7 +333,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.$code = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: $link, environment: var4
+    var5 = function arg0, arg1, arg2() {
         var3 = _closure1_slot7;
         var4 = undefined;
         var2 = arg2;
@@ -352,7 +352,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.$link = var5;
-    var4 = function(arg0, arg1) { // Original name: $p, environment: var4
+    var4 = function arg0, arg1() {
         var4 = _closure1_slot8;
         var3 = {};
         var0 = arg1;

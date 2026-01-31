@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CollectibleShopCardsGridRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.itemGroup;
         var1 = var0.position;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopCardsGrid.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CollectiblesShopCardsGrid, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.products;
         var _closure2_slot0 = var5;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.cardGridContentContainer;
         var7.contentContainerStyle = var13;
         var7.data = var12;
-        var12 = function(arg0) { // Original name: renderItem, environment: var10
+        var12 = function arg0() {
             var0 = arg0;
             var5 = var0.item;
             var4 = var0.index;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = false;
         var7.showsVerticalScrollIndicator = var12;
         var7.onScroll = var11;
-        var10 = function() { // Original name: ListHeaderComponent, environment: var10
+        var10 = function() {
             var3 = _closure1_slot6;
             var2 = _closure1_slot4;
             var1 = {};

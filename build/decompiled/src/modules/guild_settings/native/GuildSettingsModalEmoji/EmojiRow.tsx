@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/guild_settings/native/GuildSettingsModalEmoji/EmojiRow.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: EmojiRow, environment: var1
+            var1 = function arg0() {
                 _fun115278: for (var _fun115278_ip = 0;;) switch (_fun115278_ip) {
                     case 0:
                         var0 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.guildId = var4;
                             var4 = _closure2_slot1;
                             var1.emoji = var4;
-                            var4 = function() { // Original name: onEdit, environment: var4
+                            var4 = function() {
                                 var2 = _closure2_slot5;
                                 var0 = undefined;
                                 var1 = true;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var17 = _closure1_slot7;
                         var11 = {};
-                        var12 = function() { // Original name: onPress, environment: var16
+                        var12 = function() {
                             var2 = _closure1_slot1;
                             var8 = _closure1_slot2;
                             var0 = 17;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             'autoCapitalize': 'none',
                             'autoFocus': true
                         };
-                        var17 = function() { // Original name: handleNameBlur, environment: var16
+                        var17 = function() {
                             _fun115280: for (var _fun115280_ip = 0;;) switch (_fun115280_ip) {
                                 case 0:
                                     var2 = _closure2_slot3;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var18 = var18.flex;
                         var17[1] = var18;
                         var13.style = var17;
-                        var16 = function(arg0) { // Original name: updateName, environment: var16
+                        var16 = function arg0() {
                             var2 = _closure2_slot4;
                             var0 = undefined;
                             var1 = arg0;

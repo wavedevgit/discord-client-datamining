@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getPrivateChannelIconComponent, environment: var1
+    var1 = function arg0() {
         _fun117039: for (var _fun117039_ip = 0;;) switch (_fun117039_ip) {
             case 0:
                 var3 = arg0;

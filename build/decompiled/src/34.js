@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0, arg1, arg2) { // Original name: jsxProd, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun1261: for (var _fun1261_ip = 0;;) switch (_fun1261_ip) {
             case 0:
                 var11 = arg1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun85967: for (var _fun85967_ip = 0;;) switch (_fun85967_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun85969: for (var _fun85969_ip = 0;;) switch (_fun85969_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var5 = function() { // Original name: isGameInstalled, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var5;
-    var0 = function() { // Original name: _isGameInstalled, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _checkAllSchemes, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _isGameInstalledForPlatform, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 53:
                         var4 = var6.iosUrlSchemes;
-                        var2 = function() { // Original name: checkAllSchemes, environment: var5
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot16;
                             var2 = var3.apply;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var4 = function() { // Original name: detectInstalledGamesWithDiagnostics, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var4;
-    var0 = function() { // Original name: _detectInstalledGamesWithDiagnostics, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -628,7 +628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         case 30:
                                             var3 = var4.overrideInstall;
                                         case 36:
-                                            var2 = function() { // Original name: isGameInstalledForPlatform, environment: var1
+                                            var2 = function() {
                                                 var0 = undefined;
                                                 var3 = _closure1_slot17;
                                                 var2 = var3.apply;
@@ -723,7 +723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var3 = function() { // Original name: detectInstalledGames, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var3;
-    var0 = function() { // Original name: _detectInstalledGames, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _getTopPriorityGame, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -976,7 +976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/game_community_upsell/native/GameDetectionUtils.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function() { // Original name: invalidateInstalledGamesCache, environment: var1
+    var6 = function() {
         var0 = null;
         _closure1_slot10 = var0;
         _closure1_slot11 = var0;
@@ -987,7 +987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isGameInstalled = var5;
     var2.detectInstalledGamesWithDiagnostics = var4;
     var2.detectInstalledGames = var3;
-    var1 = function() { // Original name: getTopPriorityGame, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;

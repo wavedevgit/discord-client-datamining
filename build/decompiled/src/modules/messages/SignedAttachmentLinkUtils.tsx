@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var7;
-            var4 = function(arg0) { // Original name: isAttachmentUrl, environment: var1
+            var4 = function arg0() {
                 _fun67819: for (var _fun67819_ip = 0;;) switch (_fun67819_ip) {
                     case 0:
                         var0 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot10 = var4;
-            var3 = function(arg0) { // Original name: getSignedAttachmentExpiration, environment: var1
+            var3 = function arg0() {
                 _fun67821: for (var _fun67821_ip = 0;;) switch (_fun67821_ip) {
                     case 0:
                         var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot11 = var3;
-            var0 = function(arg0) { // Original name: shouldRefreshAttachmentUrl, environment: var1
+            var0 = function arg0() {
                 _fun67822: for (var _fun67822_ip = 0;;) switch (_fun67822_ip) {
                     case 0:
                         var3 = _closure1_slot11;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot12 = var0;
-            var0 = function(arg0) { // Original name: isAttachmentExpired, environment: var1
+            var0 = function arg0() {
                 _fun67823: for (var _fun67823_ip = 0;;) switch (_fun67823_ip) {
                     case 0:
                         var2 = _closure1_slot1;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0) { // Original name: isEmbedMediaExpiredAttachment, environment: var1
+            var0 = function arg0() {
                 _fun67824: for (var _fun67824_ip = 0;;) switch (_fun67824_ip) {
                     case 0:
                         var1 = arg0;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var0 = function(arg0) { // Original name: embedHasExpiredAttachmentUrl, environment: var1
+            var0 = function arg0() {
                 _fun67825: for (var _fun67825_ip = 0;;) switch (_fun67825_ip) {
                     case 0:
                         var1 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot15 = var0;
-            var0 = function() { // Original name: _refreshAttachmentUrl, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var0;
-            var0 = function() { // Original name: _maybeRefreshAttachmentUrl, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 64:
                                 return var1;
                             case 67:
-                                var2 = function() { // Original name: refreshAttachmentUrl, environment: var2
+                                var2 = function() {
                                     var0 = undefined;
                                     var3 = _closure1_slot16;
                                     var2 = var3.apply;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var6.bind(var0)(var8);
             var8 = var8.Endpoints;
             var _closure1_slot4 = var8;
-            var11 = function(arg0) { // Original name: getHostWithoutPort, environment: var1
+            var11 = function arg0() {
                 _fun67833: for (var _fun67833_ip = 0;;) switch (_fun67833_ip) {
                     case 0:
                         var3 = arg0;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = 'modules/messages/SignedAttachmentLinkUtils.tsx';
             var5 = var6.bind(var7)(var5);
             var2.isAttachmentUrl = var4;
-            var4 = function(arg0) { // Original name: isExternalProxiedAttachmentUrl, environment: var1
+            var4 = function arg0() {
                 _fun67835: for (var _fun67835_ip = 0;;) switch (_fun67835_ip) {
                     case 0:
                         var0 = arg0;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.isExternalProxiedAttachmentUrl = var4;
-            var4 = function(arg0) { // Original name: removeSignedUrlParameters, environment: var1
+            var4 = function arg0() {
                 _fun67837: for (var _fun67837_ip = 0;;) switch (_fun67837_ip) {
                     case 0:
                         var0 = arg0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.removeSignedUrlParameters = var4;
             var2.getSignedAttachmentExpiration = var3;
-            var3 = function(arg0) { // Original name: messageHasExpiredAttachmentUrl, environment: var1
+            var3 = function arg0() {
                 _fun67838: for (var _fun67838_ip = 0;;) switch (_fun67838_ip) {
                     case 0:
                         var2 = arg0;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.messageHasExpiredAttachmentUrl = var3;
-            var1 = function() { // Original name: maybeRefreshAttachmentUrl, environment: var1
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot17;
                 var2 = var3.apply;

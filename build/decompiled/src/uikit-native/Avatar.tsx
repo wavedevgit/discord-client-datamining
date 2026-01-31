@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: getStatusSize, environment: var3
+    var1 = function arg0() {
         _fun48178: for (var _fun48178_ip = 0;;) switch (_fun48178_ip) {
             case 0:
                 var2 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var1;
-    var0 = function(arg0) { // Original name: getAvatarDecorationMargin, environment: var3
+    var0 = function arg0() {
         var2 = arg0;
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;

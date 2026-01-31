@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun112702: for (var _fun112702_ip = 0;;) switch (_fun112702_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun112704: for (var _fun112704_ip = 0;;) switch (_fun112704_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _backgroundSync, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -705,7 +705,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: backgroundSyncPrivateChannels, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot22;
         var2 = var3.apply;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: _backgroundSyncPrivateChannels, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: backgroundSyncGuildData, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot24;
         var2 = var3.apply;
@@ -950,7 +950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: _backgroundSyncGuildData, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1381,7 +1381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: backgroundSyncGuildChannels, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;
@@ -1392,7 +1392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _backgroundSyncGuildChannels, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1857,7 +1857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: processChannelChanges, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -1868,7 +1868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _processChannelChanges, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -2083,7 +2083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: writeMessageChanges, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         var3 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -2099,7 +2099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 0:
                     var1 = arg0;
                     var _closure3_slot0 = var1;
-                    var6 = function(arg0) { // Original name: _loop, environment: var0
+                    var6 = function arg0() {
                         _fun112736: for (var _fun112736_ip = 0;;) switch (_fun112736_ip) {
                             case 0:
                                 var9 = arg0;
@@ -2333,7 +2333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_database/background_sync/native/BackgroundSync.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: backgroundSync, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_tag/GuildTagCoachmarkUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGuildTagAvailableDismissibleContent, environment: var1
+    var3 = function arg0() {
         _fun104550: for (var _fun104550_ip = 0;;) switch (_fun104550_ip) {
             case 0:
                 var3 = arg0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildTagAvailableDismissibleContent = var3;
-    var1 = function(arg0) { // Original name: useGuildTagUpdatedDismissibleContent, environment: var1
+    var1 = function arg0() {
         _fun104552: for (var _fun104552_ip = 0;;) switch (_fun104552_ip) {
             case 0:
                 var0 = arg0;

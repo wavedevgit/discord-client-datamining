@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun103655: for (var _fun103655_ip = 0;;) switch (_fun103655_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: GuildDiscoveryCategoryStore, environment: var5
+        var3 = function() {
             _fun103659: for (var _fun103659_ip = 0;;) switch (_fun103659_ip) {
                 case 0:
                     var3 = this;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getPrimaryCategories';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDiscoveryCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot11;
             var2 = var3.map;
             var1 = function(arg0) { // Environment: var1
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getClanDiscoveryCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var3 = _closure1_slot11;
             var2 = var3.map;
             var1 = function(arg0) { // Environment: var1
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllCategories';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchedLocale';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCategoryName';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun103669: for (var _fun103669_ip = 0;;) switch (_fun103669_ip) {
                 case 0:
                     var2 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var11 = var4.bind(var0)(var3);
     var3 = {};
-    var4 = function(arg0) { // Original name: handleCategoryFetchSuccess, environment: var1
+    var4 = function arg0() {
         _fun103670: for (var _fun103670_ip = 0;;) switch (_fun103670_ip) {
             case 0:
                 var0 = arg0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/global_discovery_servers/GuildDiscoveryCategoryStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: areDiscoveryCategoriesEqual, environment: var1
+    var1 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var3 = _closure1_slot1;

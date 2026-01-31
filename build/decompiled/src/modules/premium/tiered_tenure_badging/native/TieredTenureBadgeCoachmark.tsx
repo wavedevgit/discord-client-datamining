@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CoachmarkImg, environment: var1
+    var0 = function arg0() {
         _fun59573: for (var _fun59573_ip = 0;;) switch (_fun59573_ip) {
             case 0:
                 var0 = arg0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/tiered_tenure_badging/native/TieredTenureBadgeCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TieredTenureBadgeCoachmark, environment: var1
+    var1 = function arg0() {
         _fun59574: for (var _fun59574_ip = 0;;) switch (_fun59574_ip) {
             case 0:
                 var0 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.TIERED_TENURE_BADGE_COACHMARK;
                     var3 = var7 === var3;
                     var0.visible = var3;
-                    var3 = function() { // Original name: onDismiss, environment: var2
+                    var3 = function() {
                         var2 = _closure2_slot2;
                         var0 = _closure1_slot7;
                         var1 = var0.USER_DISMISS;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onDismiss = var3;
-                    var3 = function() { // Original name: renderImgComponent, environment: var2
+                    var3 = function() {
                         var3 = _closure1_slot8;
                         var2 = _closure1_slot10;
                         var1 = {};
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.renderImgComponent = var3;
-                    var2 = function() { // Original name: onButtonPress, environment: var2
+                    var2 = function() {
                         var2 = _closure2_slot2;
                         var0 = _closure1_slot7;
                         var1 = var0.TAKE_ACTION;

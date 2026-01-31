@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notification_center/native/NotificationCenterActionButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: NotificationCenterActionButton, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var9[var5];
         var5 = var6.bind(var2)(var5);
         var0.icon = var5;
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             var3 = _closure1_slot1;
             var0 = _closure1_slot2;
             var2 = 4;

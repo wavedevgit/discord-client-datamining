@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/self_mod/inappropriate_conversation/SelfModInappropriateConversationExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.InappropriateConversationExperiment = var3;
-    var3 = function(arg0) { // Original name: isEligibleForInappropriateConversationWarning, environment: var1
+    var3 = function arg0() {
         _fun71973: for (var _fun71973_ip = 0;;) switch (_fun71973_ip) {
             case 0:
                 var1 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEligibleForInappropriateConversationWarning = var3;
-    var1 = function(arg0) { // Original name: useIsEligibleForInappropriateConversationWarning, environment: var1
+    var1 = function arg0() {
         _fun71974: for (var _fun71974_ip = 0;;) switch (_fun71974_ip) {
             case 0:
                 var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun95542: for (var _fun95542_ip = 0;;) switch (_fun95542_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun95544: for (var _fun95544_ip = 0;;) switch (_fun95544_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun95545: for (var _fun95545_ip = 0;;) switch (_fun95545_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.DeviceSettingsStore;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: LocalAppDetectionStore, environment: var5
+        var3 = function() {
             _fun95549: for (var _fun95549_ip = 0;;) switch (_fun95549_ip) {
                 case 0:
                     var4 = this;
@@ -360,14 +360,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = new Array(2);
                     var9[0] = var0;
                     var0 = {};
-                    var6 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var6 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handlePostConnectionOpen;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var0.POST_CONNECTION_OPEN = var6;
-                    var6 = function(arg0) { // Original name: LOCAL_APP_DETECTION_COMPLETE, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleLocalAppDetectionComplete;
                         var0 = arg0;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun95552: for (var _fun95552_ip = 0;;) switch (_fun95552_ip) {
                 case 0:
                     var1 = arg0;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAppState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95554: for (var _fun95554_ip = 0;;) switch (_fun95554_ip) {
                 case 0:
                     var1 = this;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isAppInstalled';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95555: for (var _fun95555_ip = 0;;) switch (_fun95555_ip) {
                 case 0:
                     var3 = this;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handlePostConnectionOpen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun95556: for (var _fun95556_ip = 0;;) switch (_fun95556_ip) {
                 case 0:
                     var9 = this;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleLocalAppDetectionComplete';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95557: for (var _fun95557_ip = 0;;) switch (_fun95557_ip) {
                 case 0:
                     var0 = global;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'DEV_resetState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = {};
             var0 = {};
             var1.apps = var0;

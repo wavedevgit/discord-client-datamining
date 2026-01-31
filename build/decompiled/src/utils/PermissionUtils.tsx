@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var14;
     var _closure1_slot3 = var13;
-    var0 = function(arg0, arg1, arg2) { // Original name: calculateElevatedPermissions, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun24706: for (var _fun24706_ip = 0;;) switch (_fun24706_ip) {
             case 0:
                 var5 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: applyOverwrites, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun24707: for (var _fun24707_ip = 0;;) switch (_fun24707_ip) {
             case 0:
                 var8 = arg1;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: computePermissionsForMember, environment: var1
+    var0 = function arg0() {
         _fun24708: for (var _fun24708_ip = 0;;) switch (_fun24708_ip) {
             case 0:
                 var8 = arg0;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var6 = function(arg0) { // Original name: computePermissions, environment: var1
+    var6 = function arg0() {
         _fun24709: for (var _fun24709_ip = 0;;) switch (_fun24709_ip) {
             case 0:
                 var0 = arg0;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var6;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: applyThreadPermissions, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun24710: for (var _fun24710_ip = 0;;) switch (_fun24710_ip) {
             case 0:
                 var4 = arg0;
@@ -870,7 +870,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var5;
-    var4 = function(arg0) { // Original name: makeEveryoneOverwrite, environment: var1
+    var4 = function arg0() {
         var0 = {};
         var1 = arg0;
         var0.id = var1;
@@ -890,7 +890,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var4;
-    var3 = function(arg0) { // Original name: can, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.permission;
         var10 = var0.user;
@@ -1119,7 +1119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ALL = var9;
     var2.DEFAULT = var8;
     var2.VIEW_GUILD_SETTINGS = var7;
-    var7 = function(arg0) { // Original name: computePermissionsForRoles, environment: var1
+    var7 = function arg0() {
         _fun24713: for (var _fun24713_ip = 0;;) switch (_fun24713_ip) {
             case 0:
                 var0 = arg0;
@@ -1321,7 +1321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.computePermissionsForRoles = var7;
     var2.computePermissions = var6;
     var2.applyThreadPermissions = var5;
-    var5 = function(arg0, arg1) { // Original name: areChannelsLocked, environment: var1
+    var5 = function arg0, arg1() {
         _fun24714: for (var _fun24714_ip = 0;;) switch (_fun24714_ip) {
             case 0:
                 var6 = arg0;
@@ -1464,7 +1464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.areChannelsLocked = var5;
-    var5 = function(arg0) { // Original name: getGuildVisualOwnerId, environment: var1
+    var5 = function arg0() {
         _fun24716: for (var _fun24716_ip = 0;;) switch (_fun24716_ip) {
             case 0:
                 var2 = arg0;
@@ -1522,7 +1522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildVisualOwnerId = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: isRoleHigher, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun24718: for (var _fun24718_ip = 0;;) switch (_fun24718_ip) {
             case 0:
                 var7 = arg1;
@@ -1576,7 +1576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isRoleHigher = var5;
-    var5 = function(arg0, arg1) { // Original name: getHighestRole, environment: var1
+    var5 = function arg0, arg1() {
         _fun24719: for (var _fun24719_ip = 0;;) switch (_fun24719_ip) {
             case 0:
                 var1 = arg0;
@@ -1614,7 +1614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHighestRole = var5;
-    var5 = function(arg0, arg1) { // Original name: getHighestHoistedRole, environment: var1
+    var5 = function arg0, arg1() {
         _fun24721: for (var _fun24721_ip = 0;;) switch (_fun24721_ip) {
             case 0:
                 var1 = arg1;
@@ -1638,7 +1638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getHighestHoistedRole = var5;
     var2.makeEveryoneOverwrite = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: canManageACategory, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun24722: for (var _fun24722_ip = 0;;) switch (_fun24722_ip) {
             case 0:
                 var0 = arg0;
@@ -1702,7 +1702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DENY = var3;
     var3 = 'PASSTHROUGH';
     var2.PASSTHROUGH = var3;
-    var3 = function(arg0, arg1) { // Original name: canEveryoneRole, environment: var1
+    var3 = function arg0, arg1() {
         _fun24724: for (var _fun24724_ip = 0;;) switch (_fun24724_ip) {
             case 0:
                 var2 = arg1;
@@ -1815,7 +1815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canEveryoneRole = var3;
-    var1 = function(arg0, arg1) { // Original name: canEveryone, environment: var1
+    var1 = function arg0, arg1() {
         _fun24725: for (var _fun24725_ip = 0;;) switch (_fun24725_ip) {
             case 0:
                 var6 = arg0;

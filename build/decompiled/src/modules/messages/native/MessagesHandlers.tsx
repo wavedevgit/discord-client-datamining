@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: getCodedLinks, environment: var1
+    var0 = function arg0() {
         _fun77267: for (var _fun77267_ip = 0;;) switch (_fun77267_ip) {
             case 0:
                 var0 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot68 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot10;
-        var2 = function(arg0) { // Original name: MessagesHandlers, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var _closure3_slot0 = var2;
             var _closure3_slot1 = var2;
@@ -1279,7 +1279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var2.bind(var0)(var7);
                         var7 = var7.PhoneCallIcon;
                         var8.IconComponent = var7;
-                        var7 = function() { // Original name: onPress, environment: var9
+                        var7 = function() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 55;
@@ -1310,7 +1310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var2.bind(var0)(var10);
                         var10 = var10.VideoIcon;
                         var8.IconComponent = var10;
-                        var9 = function() { // Original name: onPress, environment: var9
+                        var9 = function() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 55;
@@ -1419,7 +1419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1.currentText = var7;
                         var1.commandId = var6;
                         var1.commandName = var5;
-                        var5 = function(arg0) { // Original name: onOpenCustomKeyboard, environment: var4
+                        var5 = function arg0() {
                             _fun77286: for (var _fun77286_ip = 0;;) switch (_fun77286_ip) {
                                 case 0:
                                     var0 = _closure4_slot2;
@@ -1440,7 +1440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var1.onOpenCustomKeyboard = var5;
-                        var4 = function() { // Original name: onSetCommand, environment: var4
+                        var4 = function() {
                             _fun77287: for (var _fun77287_ip = 0;;) switch (_fun77287_ip) {
                                 case 0:
                                     var3 = _closure1_slot1;
@@ -5999,7 +5999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6.guildId = var4;
                         var6.containerId = var8;
                         var6.labelComponent = var3;
-                        var1 = function(arg0) { // Original name: onSubmit, environment: var1
+                        var1 = function arg0() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 148;
@@ -8381,7 +8381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'params';
         var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = var1.getParams;
             var0 = var0.bind(var1)();
@@ -8393,7 +8393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'replaceCorrectMessageParams';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun77389: for (var _fun77389_ip = 0;;) switch (_fun77389_ip) {
                 case 0:
                     var6 = arg0;

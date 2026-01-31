@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/list/rows/Separators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: MessageVerticalSeparator, environment: var1
+    var3 = function() {
         var1 = _closure1_slot2;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.MessageVerticalSeparator = var3;
-    var3 = function() { // Original name: MediaVerticalSeparator, environment: var1
+    var3 = function() {
         var1 = _closure1_slot2;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.MediaVerticalSeparator = var3;
-    var1 = function() { // Original name: CardVerticalSeparator, environment: var1
+    var1 = function() {
         var1 = _closure1_slot2;
         var3 = undefined;
         var4 = var1.bind(var3)();

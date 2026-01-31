@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rtc/native/SecureFramesCopyIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SecureFramesCopyIcon, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.chunks;
         var _closure2_slot0 = var2;

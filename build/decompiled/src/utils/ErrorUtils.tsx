@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: getUnderlyingIOSExceptionRecursively, environment: var1
+    var0 = function arg0() {
         _fun58507: for (var _fun58507_ip = 0;;) switch (_fun58507_ip) {
             case 0:
                 var1 = arg0;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/ErrorUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getUnderlyingIOSError, environment: var1
+    var3 = function arg0() {
         _fun58508: for (var _fun58508_ip = 0;;) switch (_fun58508_ip) {
             case 0:
                 var0 = arg0;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getUnderlyingIOSError = var3;
-    var1 = function(arg0) { // Original name: serializeError, environment: var1
+    var1 = function arg0() {
         _fun58509: for (var _fun58509_ip = 0;;) switch (_fun58509_ip) {
             case 0:
                 var2 = arg0;

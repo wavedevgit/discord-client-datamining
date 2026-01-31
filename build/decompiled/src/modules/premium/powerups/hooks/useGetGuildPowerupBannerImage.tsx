@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0, arg1, arg2) { // Original name: getGuildPowerupBannerImage, environment: var3
+    var1 = function arg0, arg1, arg2() {
         _fun102416: for (var _fun102416_ip = 0;;) switch (_fun102416_ip) {
             case 0:
                 var1 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useGetGuildPowerupBannerImage, environment: var3
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot3;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;

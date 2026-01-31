@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/profile_customization/native/DMIdentities.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DMIdentities, environment: var1
+    var1 = function arg0() {
         _fun87115: for (var _fun87115_ip = 0;;) switch (_fun87115_ip) {
             case 0:
                 var1 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.max = var14;
                 var14 = -5;
                 var11.offsetAmount = var14;
-                var13 = function(arg0, arg1) { // Original name: renderItem, environment: var13
+                var13 = function arg0, arg1() {
                     _fun87116: for (var _fun87116_ip = 0;;) switch (_fun87116_ip) {
                         case 0:
                             var3 = _closure1_slot4;

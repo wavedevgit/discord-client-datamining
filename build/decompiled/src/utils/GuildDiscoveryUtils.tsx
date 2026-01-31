@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _startLurking, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var3 = function(arg0) { // Original name: makeDiscoverableGuild, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var3;
-    var0 = function() { // Original name: _getDiscoverableGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.IOS_MINIMUM_MEMBER_COUNT = var4;
     var4 = '>200';
     var2.MINIMUM_MEMBER_COUNT = var4;
-    var4 = function() { // Original name: startLurking, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.startLurking = var4;
     var2.makeDiscoverableGuild = var3;
-    var3 = function(arg0, arg1) { // Original name: trackDiscoveryExited, environment: var1
+    var3 = function arg0, arg1() {
         _fun49603: for (var _fun49603_ip = 0;;) switch (_fun49603_ip) {
             case 0:
                 var5 = arguments[2];
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackDiscoveryExited = var3;
-    var3 = function(arg0) { // Original name: trackSearchClosed, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 9;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackSearchClosed = var3;
-    var3 = function(arg0, arg1) { // Original name: trackSearchStarted, environment: var1
+    var3 = function arg0, arg1() {
         _fun49605: for (var _fun49605_ip = 0;;) switch (_fun49605_ip) {
             case 0:
                 var5 = arguments[2];
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackSearchStarted = var3;
-    var3 = function(arg0) { // Original name: trackGuildDiscoverySearchStart, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.withCounts;
         var5 = var0.offset;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackGuildDiscoverySearchStart = var3;
-    var3 = function(arg0) { // Original name: trackSearchFailed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.categoryId;
         var7 = var0.error;
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackSearchFailed = var3;
-    var3 = function(arg0) { // Original name: trackGuildDiscoveryGetFeaturedGuildsFailed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.categoryId;
         var3 = _closure1_slot1;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackGuildDiscoveryGetFeaturedGuildsFailed = var3;
-    var3 = function(arg0) { // Original name: trackSearchResultsViewed, environment: var1
+    var3 = function arg0() {
         _fun49609: for (var _fun49609_ip = 0;;) switch (_fun49609_ip) {
             case 0:
                 var0 = arg0;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackSearchResultsViewed = var3;
-    var3 = function(arg0) { // Original name: trackGuildJoinClicked, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var1 = _closure1_slot4;
         var0 = var1.getLoadId;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackGuildJoinClicked = var3;
-    var1 = function() { // Original name: getDiscoverableGuild, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;

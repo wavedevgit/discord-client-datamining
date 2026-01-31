@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: getAbsoluteTime, environment: var1
+    var0 = function arg0() {
         _fun10888: for (var _fun10888_ip = 0;;) switch (_fun10888_ip) {
             case 0:
                 var2 = arg0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0) { // Original name: resourceTimingToSpanAttributes, environment: var1
+    var1 = function arg0() {
         _fun10889: for (var _fun10889_ip = 0;;) switch (_fun10889_ip) {
             case 0:
                 var7 = arg0;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2['http.request.time_to_first_byte'] = var1;
                 var1 = {};
                 var2 = var4.bind(var5)(var1, var6, var2);
-                var1 = function(arg0) { // Original name: dropUndefinedKeysFromObject, environment: var1
+                var1 = function arg0() {
                     var0 = global;
                     var2 = var0.Object;
                     var1 = var2.fromEntries;

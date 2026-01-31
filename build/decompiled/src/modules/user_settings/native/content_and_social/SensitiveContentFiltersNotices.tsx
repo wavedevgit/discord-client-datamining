@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/content_and_social/SensitiveContentFiltersNotices.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: SensitiveContentFiltersTeenNotice, environment: var1
+    var3 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 3;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.t;
         var6 = var6.EUo0yj;
         var0.label = var6;
-        var5 = function() { // Original name: labelHook, environment: var5
+        var5 = function() {
             var4 = _closure1_slot1;
             var5 = _closure1_slot2;
             var0 = 6;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SensitiveContentFiltersTeenNotice = var3;
-    var1 = function() { // Original name: SensitiveContentFiltersAgeVerificationNotice, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var1 = _closure1_slot1;
         var7 = _closure1_slot2;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.t;
         var5 = var5.OX4ybh;
         var0.label = var5;
-        var5 = function() { // Original name: labelHook, environment: var5
+        var5 = function() {
             var2 = _closure1_slot1;
             var6 = _closure1_slot2;
             var0 = 8;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AnalyticEvents;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: setDesktopType, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setDesktopType = var6;
-    var6 = function(arg0) { // Original name: setTTSType, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setTTSType = var6;
-    var6 = function(arg0) { // Original name: setDisabledSounds, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setDisabledSounds = var6;
-    var6 = function(arg0) { // Original name: toggleDisableAllSounds, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var0 = 1;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.toggleDisableAllSounds = var6;
-    var6 = function(arg0) { // Original name: setDisableUnreadBadge, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setDisableUnreadBadge = var6;
-    var6 = function(arg0) { // Original name: setTaskbarFlash, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setTaskbarFlash = var6;
-    var6 = function(arg0) { // Original name: setNotifyMessagesInSelectedChannel, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setNotifyMessagesInSelectedChannel = var6;
-    var6 = function(arg0, arg1) { // Original name: setPermissionsState, environment: var3
+    var6 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var2 = _closure1_slot0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setPermissionsState = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: showNotification, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var6 = arg4;
         var _closure2_slot0 = var6;
         var2 = _closure1_slot0;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var4;
         var7 = var6;
         var6 = copyDataProperties(var8, var7);
-        var6 = function(arg0) { // Original name: onClick, environment: var5
+        var6 = function arg0() {
             _fun114090: for (var _fun114090_ip = 0;;) switch (_fun114090_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showNotification = var6;
-    var3 = function() { // Original name: clickedNotification, environment: var3
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

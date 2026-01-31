@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: getScreensForTaskType, environment: var1
+    var5 = function arg0() {
         _fun117785: for (var _fun117785_ip = 0;;) switch (_fun117785_ip) {
             case 0:
                 var8 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function() { // Original name: fetchAndUpdateTask, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var4;
-    var0 = function() { // Original name: _fetchAndUpdateTask, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0, arg1) { // Original name: navigateToScreenForTask, environment: var1
+    var3 = function arg0, arg1() {
         _fun117790: for (var _fun117790_ip = 0;;) switch (_fun117790_ip) {
             case 0:
                 var3 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getScreensForTaskType = var5;
     var2.fetchAndUpdateTask = var4;
     var2.navigateToScreenForTask = var3;
-    var1 = function() { // Original name: useOnTaskComplete, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 11;

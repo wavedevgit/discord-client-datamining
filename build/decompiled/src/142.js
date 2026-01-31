@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun2304: for (var _fun2304_ip = 0;;) switch (_fun2304_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot7 = var3;
-    var3 = function() { // Original name: noop, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: ReactNativeElement, environment: var5
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun2311: for (var _fun2311_ip = 0;;) switch (_fun2311_ip) {
                 case 0:
                     var1 = arg2;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'offsetHeight';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = global;
             var2 = var0.Math;
             var1 = var2.round;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'offsetLeft';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun2313: for (var _fun2313_ip = 0;;) switch (_fun2313_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'offsetParent';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun2314: for (var _fun2314_ip = 0;;) switch (_fun2314_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'offsetTop';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun2315: for (var _fun2315_ip = 0;;) switch (_fun2315_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'offsetWidth';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Math;
             var1 = var2.round;
@@ -323,7 +323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'blur';
         var4.key = var6;
-        var6 = function() { // Original name: blur, environment: var5
+        var6 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 8;
@@ -340,7 +340,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'focus';
         var4.key = var6;
-        var6 = function() { // Original name: focus, environment: var5
+        var6 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 8;
@@ -357,7 +357,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'measure';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: measure, environment: var5
+        var6 = function arg0() {
             _fun2319: for (var _fun2319_ip = 0;;) switch (_fun2319_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -392,7 +392,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'measureInWindow';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: measureInWindow, environment: var5
+        var6 = function arg0() {
             _fun2320: for (var _fun2320_ip = 0;;) switch (_fun2320_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'measureLayout';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: measureLayout, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun2321: for (var _fun2321_ip = 0;;) switch (_fun2321_ip) {
                 case 0:
                     var2 = arg0;
@@ -503,7 +503,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'setNativeProps';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: setNativeProps, environment: var5
+        var5 = function arg0() {
             _fun2322: for (var _fun2322_ip = 0;;) switch (_fun2322_ip) {
                 case 0:
                     var5 = this;
@@ -554,8 +554,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3 = var3.bind(var0)(var4);
-    var1 = function(arg0) { // Original name: replaceConstructorWithoutSuper, environment: var1
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: ReactNativeElement, environment: var0
+    var1 = function arg0() {
+        var0 = function arg0, arg1, arg2, arg3() {
             var1 = arg2;
             var2 = this;
             var4 = _closure1_slot0;

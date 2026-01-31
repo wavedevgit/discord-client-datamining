@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: isEnum, environment: var0
+    var2 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.isEnum = var2;
-    var0 = function(arg0) { // Original name: convertErrorFromNativeToRN, environment: var0
+    var0 = function arg0() {
         _fun27425: for (var _fun27425_ip = 0;;) switch (_fun27425_ip) {
             case 0:
                 var2 = arg0;

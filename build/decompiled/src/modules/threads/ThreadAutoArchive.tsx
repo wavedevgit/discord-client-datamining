@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var4 = function() { // Original name: getAutoArchiveOptions, environment: var1
+    var4 = function() {
         var1 = {};
         var0 = '1hour';
         var1.id = var0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AUTO_ARCHIVE_OPTION_VALUES = var5;
     var2.getAutoArchiveOptions = var4;
     var2.getAutoArchiveDurations = var3;
-    var3 = function(arg0) { // Original name: getAutoArchiveDurationText, environment: var1
+    var3 = function arg0() {
         _fun61331: for (var _fun61331_ip = 0;;) switch (_fun61331_ip) {
             case 0:
                 var4 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAutoArchiveDurationText = var3;
-    var1 = function(arg0, arg1) { // Original name: getAutoArchiveDuration, environment: var1
+    var1 = function arg0, arg1() {
         _fun61333: for (var _fun61333_ip = 0;;) switch (_fun61333_ip) {
             case 0:
                 var3 = arg0;

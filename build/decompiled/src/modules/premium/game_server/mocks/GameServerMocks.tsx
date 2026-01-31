@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var7 = function(arg0, arg1) { // Original name: createMockGame, environment: var0
+    var7 = function arg0, arg1() {
         var0 = {};
         var1 = arg0;
         var0.id = var1;

@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BlockedUserInVoiceChannelActionSheet, environment: var1
+    var1 = function arg0() {
         _fun95884: for (var _fun95884_ip = 0;;) switch (_fun95884_ip) {
             case 0:
                 var0 = arg0;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var17 = 'lg';
                 var11.size = var17;
-                var17 = function() { // Original name: onPress, environment: var16
+                var17 = function() {
                     _fun95887: for (var _fun95887_ip = 0;;) switch (_fun95887_ip) {
                         case 0:
                             var2 = _closure1_slot1;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'lg',
                     'variant': 'secondary'
                 };
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     _fun95888: for (var _fun95888_ip = 0;;) switch (_fun95888_ip) {
                         case 0:
                             var2 = _closure1_slot1;

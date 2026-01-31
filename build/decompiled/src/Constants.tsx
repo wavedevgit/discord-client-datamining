@@ -1262,7 +1262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var38 = var1.Object;
             var37 = var38.freeze;
             var25 = {};
-            var40 = function(arg0) { // Original name: USER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1272,7 +1272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER = var40;
-            var40 = function() { // Original name: USER_RELATIONSHIPS, environment: var62
+            var40 = function() {
                 _fun7396: for (var _fun7396_ip = 0;;) switch (_fun7396_ip) {
                     case 0:
                         var3 = arguments[0];
@@ -1294,7 +1294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.USER_RELATIONSHIPS = var40;
-            var40 = function(arg0) { // Original name: USER_RELATIONSHIP, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1306,7 +1306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_RELATIONSHIP = var40;
             var40 = '/users/@me/relationships/bulk';
             var25.USER_BULK_RELATIONSHIPS = var40;
-            var40 = function(arg0, arg1) { // Original name: USER_GAME_RELATIONSHIP, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_GAME_RELATIONSHIP = var40;
-            var40 = function(arg0) { // Original name: USER_PROFILE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1335,7 +1335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_PROFILE_SUGGESTED_GAMES = var40;
             var40 = '/users/@me/widgets/application-widget-application-ids';
             var25.USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS = var40;
-            var40 = function(arg0, arg1) { // Original name: USER_GUILD_PROFILE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1351,7 +1351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_CHANNELS = var40;
             var40 = '/users/@me/warp/license';
             var25.USER_WARP_LICENSE = var40;
-            var40 = function(arg0) { // Original name: USER_WISHLIST, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1361,7 +1361,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_WISHLIST = var40;
-            var40 = function(arg0) { // Original name: USER_WISHLIST_PATCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1373,7 +1373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_WISHLIST_PATCH = var40;
             var40 = '/users/@me/wishlist/items';
             var25.USER_WISHLIST_ITEMS = var40;
-            var40 = function(arg0, arg1) { // Original name: USER_WISHLIST_ITEM, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_WISHLIST_ITEM = var40;
-            var40 = function(arg0) { // Original name: USER_APPLICATION_IDENTITIES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1396,7 +1396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_APPLICATION_IDENTITIES = var40;
-            var40 = function(arg0) { // Original name: DM_CHANNEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1406,7 +1406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DM_CHANNEL = var40;
-            var40 = function(arg0) { // Original name: USER_SETTINGS_PROTO, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1416,7 +1416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_SETTINGS_PROTO = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: USER_ACTIVITY_METADATA, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7407: for (var _fun7407_ip = 0;;) switch (_fun7407_ip) {
                     case 0:
                         var0 = arg2;
@@ -1445,7 +1445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.USER_ACTIVITY_METADATA = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: USER_ACTIVITY_JOIN, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = _closure1_slot1;
                 var9 = var0.JOIN;
                 var0 = global;
@@ -1466,7 +1466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_ACTIVITY_STATISTICS = var40;
             var40 = '/users/@me/activities/subscribe';
             var25.USER_ACTIVITY_SUBSCRIBE = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_ACTIVITY_STATISTICS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1492,7 +1492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.PLATFORM_APPLICATION = var40;
             var40 = '/roblox-applications-supplemental-data';
             var25.ROBLOX_APPLICATIONS_SUPPLEMENTAL_DATA = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_FEATURE_ACK, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -1506,7 +1506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_FEATURE_ACK = var40;
-            var40 = function(arg0, arg1) { // Original name: USER_NON_CHANNEL_ACK, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1521,7 +1521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_NON_CHANNEL_ACK = var40;
             var40 = '/read-states/ack-bulk';
             var25.BULK_ACK = var40;
-            var40 = function(arg0) { // Original name: DM_SETTINGS_UPSELL_ACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1532,7 +1532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DM_SETTINGS_UPSELL_ACK = var40;
-            var40 = function(arg0) { // Original name: GUILD_CHANNELS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1543,7 +1543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_CHANNELS = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1554,7 +1554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBERS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_MEMBER, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1566,7 +1566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_MEMBER_NICK, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1579,7 +1579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_NICK = var40;
-            var40 = function(arg0, arg1, arg2, arg3) { // Original name: GUILD_MEMBER_AVATAR, environment: var62
+            var40 = function arg0, arg1, arg2, arg3() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var8 = var0.concat;
@@ -1595,7 +1595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_AVATAR = var40;
-            var40 = function(arg0) { // Original name: SET_GUILD_MEMBER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1608,7 +1608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.SET_GUILD_MEMBER = var40;
             var40 = '/users/@me/notification-settings/muted-games';
             var25.GAME_NOTIFICATION_SETTINGS = var40;
-            var40 = function(arg0) { // Original name: GAME_NOTIFICATION_SETTING_UPDATE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1618,7 +1618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GAME_NOTIFICATION_SETTING_UPDATE = var40;
-            var40 = function(arg0) { // Original name: GUILD_JOIN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1629,7 +1629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_JOIN = var40;
-            var40 = function(arg0) { // Original name: GUILD_LEAVE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -1639,7 +1639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_LEAVE = var40;
-            var40 = function(arg0) { // Original name: GUILD_INTEGRATIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1650,7 +1650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INTEGRATIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_INTEGRATION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1662,7 +1662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INTEGRATION = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_INTEGRATION_SYNC, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1675,7 +1675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INTEGRATION_SYNC = var40;
-            var40 = function(arg0) { // Original name: GUILD_MIGRATE_COMMAND_SCOPE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1686,7 +1686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MIGRATE_COMMAND_SCOPE = var40;
-            var40 = function(arg0) { // Original name: GUILD_BANS_SEARCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1697,7 +1697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_BANS_SEARCH = var40;
-            var40 = function(arg0) { // Original name: GUILD_BANS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1708,7 +1708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_BANS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_BAN, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1720,7 +1720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_BAN = var40;
-            var40 = function(arg0) { // Original name: GUILD_ROLES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1731,7 +1731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLES = var40;
-            var40 = function(arg0) { // Original name: GUILD_ROLE_MEMBER_COUNTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1742,7 +1742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_MEMBER_COUNTS = var40;
-            var40 = function(arg0) { // Original name: GUILD_ROLE_CONNECTIONS_CONFIGURATIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1753,7 +1753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_CONNECTIONS_CONFIGURATIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_MEMBER_IDS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1766,7 +1766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_MEMBER_IDS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1778,7 +1778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_MEMBERS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1791,7 +1791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_MEMBERS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_CONNECTIONS_ELIGIBILITY, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1804,7 +1804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_CONNECTIONS_ELIGIBILITY = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_CONNECTIONS_ASSIGN, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1817,7 +1817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_CONNECTIONS_ASSIGN = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_CONNECTIONS_UNASSIGN, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1830,7 +1830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_CONNECTIONS_UNASSIGN = var40;
-            var40 = function(arg0) { // Original name: GUILD_ONBOARDING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1841,7 +1841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ONBOARDING = var40;
-            var40 = function(arg0) { // Original name: GUILD_ONBOARDING_ALLOWED_APPLICATIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1852,7 +1852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ONBOARDING_ALLOWED_APPLICATIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ONBOARDING_PROMPT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -1864,7 +1864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ONBOARDING_PROMPT = var40;
-            var40 = function(arg0) { // Original name: GUILD_ONBOARDING_RESPONSES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1875,7 +1875,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ONBOARDING_RESPONSES = var40;
-            var40 = function(arg0, arg1) { // Original name: ROLE_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -1888,7 +1888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ROLE_ICON = var40;
-            var40 = function(arg0) { // Original name: GUILD_INSTANT_INVITES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1899,7 +1899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INSTANT_INVITES = var40;
-            var40 = function(arg0) { // Original name: GUILD_WIDGET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1910,7 +1910,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_WIDGET = var40;
-            var40 = function(arg0) { // Original name: GUILD_VANITY_URL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1921,7 +1921,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_VANITY_URL = var40;
-            var40 = function(arg0) { // Original name: GUILD_MFA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1932,7 +1932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MFA = var40;
-            var40 = function(arg0) { // Original name: GUILD_PRUNE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1943,7 +1943,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PRUNE = var40;
-            var40 = function(arg0) { // Original name: GUILD_PRUNE_V2, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -1954,7 +1954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PRUNE_V2 = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7449: for (var _fun7449_ip = 0;;) switch (_fun7449_ip) {
                     case 0:
                         var6 = arguments[2];
@@ -1980,7 +1980,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_ICON = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_TEMPLATE_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7450: for (var _fun7450_ip = 0;;) switch (_fun7450_ip) {
                     case 0:
                         var6 = arguments[2];
@@ -2006,7 +2006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_TEMPLATE_ICON = var40;
-            var40 = function(arg0) { // Original name: GUILD_DISCOVERY_CHECKLIST, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2017,7 +2017,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_DISCOVERY_CHECKLIST = var40;
-            var40 = function(arg0) { // Original name: GUILD_DISCOVERY_REQUIREMENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2028,7 +2028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_DISCOVERY_REQUIREMENTS = var40;
-            var40 = function(arg0) { // Original name: GUILD_EMOJIS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2039,7 +2039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EMOJIS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_EMOJI, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2051,7 +2051,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EMOJI = var40;
-            var40 = function(arg0) { // Original name: GUILD_AUDIT_LOG, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2062,7 +2062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_AUDIT_LOG = var40;
-            var40 = function(arg0) { // Original name: GUILD_ANALYTICS_OVERVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2073,7 +2073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ANALYTICS_OVERVIEW = var40;
-            var40 = function(arg0) { // Original name: GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2084,7 +2084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW = var40;
-            var40 = function(arg0) { // Original name: GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2095,7 +2095,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW = var40;
-            var40 = function(arg0) { // Original name: GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2106,7 +2106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION = var40;
-            var40 = function(arg0) { // Original name: GUILD_TOP_GAMES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2117,7 +2117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_TOP_GAMES = var40;
-            var40 = function(arg0) { // Original name: GUILD_TOP_READ_CHANNELS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2128,7 +2128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_TOP_READ_CHANNELS = var40;
-            var40 = function(arg0, arg1) { // Original name: EMOJI, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2140,7 +2140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.EMOJI = var40;
-            var40 = function(arg0) { // Original name: EMOJI_GUILD_DATA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2151,7 +2151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.EMOJI_GUILD_DATA = var40;
-            var40 = function(arg0) { // Original name: EMOJI_SOURCE_DATA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2162,7 +2162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.EMOJI_SOURCE_DATA = var40;
-            var40 = function(arg0) { // Original name: TOP_EMOJIS_FOR_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2173,7 +2173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.TOP_EMOJIS_FOR_GUILD = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_SPLASH, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2186,7 +2186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_SPLASH = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_DISCOVERY_SPLASH, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2199,7 +2199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_DISCOVERY_SPLASH = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_BANNER, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -2213,7 +2213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_BANNER = var40;
-            var40 = function(arg0) { // Original name: GUILD_HOME_SETTINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2224,7 +2224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_HOME_SETTINGS = var40;
-            var40 = function(arg0, arg1) { // Original name: RESOURCE_CHANNEL, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2236,7 +2236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.RESOURCE_CHANNEL = var40;
-            var40 = function(arg0, arg1) { // Original name: NEW_MEMBER_ACTION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2248,7 +2248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.NEW_MEMBER_ACTION = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_RESOURCE_CHANNELS_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7472: for (var _fun7472_ip = 0;;) switch (_fun7472_ip) {
                     case 0:
                         var6 = arguments[2];
@@ -2274,7 +2274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_RESOURCE_CHANNELS_ICON = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_NEW_MEMBER_ACTIONS_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7473: for (var _fun7473_ip = 0;;) switch (_fun7473_ip) {
                     case 0:
                         var6 = arguments[2];
@@ -2300,7 +2300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_NEW_MEMBER_ACTIONS_ICON = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBER_ACTIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2311,7 +2311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_ACTIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_MEMBER_ACTION_UPDATE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2323,7 +2323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_ACTION_UPDATE = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_HOME_HEADER, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2336,7 +2336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_HOME_HEADER = var40;
-            var40 = function(arg0) { // Original name: GUILD_WELCOME_SCREEN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2347,7 +2347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_WELCOME_SCREEN = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBER_VERIFICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2358,7 +2358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_VERIFICATION = var40;
-            var40 = function(arg0) { // Original name: GUILD_JOIN_REQUEST_BY_ID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -2368,7 +2368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_JOIN_REQUEST_BY_ID = var40;
-            var40 = function(arg0) { // Original name: GUILD_JOIN_REQUESTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2381,7 +2381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GUILD_JOIN_REQUESTS = var40;
             var40 = '/users/@me/join-request-guilds';
             var25.USER_JOIN_REQUEST_GUILDS = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBER_REQUEST_TO_JOIN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2392,7 +2392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_REQUEST_TO_JOIN = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBER_JOIN_REQUEST_COOLDOWN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2403,7 +2403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_JOIN_REQUEST_COOLDOWN = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_JOIN_REQUEST, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2415,7 +2415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_JOIN_REQUEST = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_JOIN_REQUEST_ID, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2427,7 +2427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_JOIN_REQUEST_ID = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_JOIN_REQUEST_ACK, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2440,7 +2440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_JOIN_REQUEST_ACK = var40;
-            var40 = function(arg0) { // Original name: GUILD_JOIN_REQUEST_INTERVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2453,7 +2453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GUILD_JOIN_REQUEST_INTERVIEW = var40;
             var40 = '/guilds';
             var25.GUILDS = var40;
-            var40 = function(arg0) { // Original name: GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -2463,7 +2463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD = var40;
-            var40 = function(arg0) { // Original name: GUILD_BASIC, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2474,7 +2474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_BASIC = var40;
-            var40 = function(arg0) { // Original name: GUILD_PINCODE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2485,7 +2485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PINCODE = var40;
-            var40 = function(arg0) { // Original name: GUILD_DELETE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2498,7 +2498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GUILD_DELETE = var40;
             var40 = '/channels';
             var25.CHANNELS = var40;
-            var40 = function(arg0) { // Original name: CHANNEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -2508,7 +2508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL = var40;
-            var40 = function(arg0) { // Original name: THREAD_MEMBER, environment: var62
+            var40 = function arg0() {
                 _fun7492: for (var _fun7492_ip = 0;;) switch (_fun7492_ip) {
                     case 0:
                         var4 = arguments[1];
@@ -2531,7 +2531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.THREAD_MEMBER = var40;
-            var40 = function(arg0) { // Original name: THREAD_MEMBER_SETTINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2542,7 +2542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.THREAD_MEMBER_SETTINGS = var40;
-            var40 = function(arg0, arg1) { // Original name: ALL_ARCHIVED_THREADS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2554,7 +2554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ALL_ARCHIVED_THREADS = var40;
-            var40 = function(arg0) { // Original name: MY_ARCHIVED_THREADS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2565,7 +2565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MY_ARCHIVED_THREADS = var40;
-            var40 = function(arg0) { // Original name: THREAD_SEARCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2576,7 +2576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.THREAD_SEARCH = var40;
-            var40 = function(arg0) { // Original name: FORUM_POSTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2587,7 +2587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.FORUM_POSTS = var40;
-            var40 = function(arg0) { // Original name: PARTNER_REQUIREMENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2598,7 +2598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PARTNER_REQUIREMENTS = var40;
-            var40 = function(arg0, arg1) { // Original name: AVATAR, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7499: for (var _fun7499_ip = 0;;) switch (_fun7499_ip) {
                     case 0:
                         var6 = arguments[2];
@@ -2624,7 +2624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.AVATAR = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: ARCHIVED_AVATAR, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7500: for (var _fun7500_ip = 0;;) switch (_fun7500_ip) {
                     case 0:
                         var8 = arguments[3];
@@ -2652,7 +2652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.ARCHIVED_AVATAR = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: USER_BANNER, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -2666,7 +2666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_BANNER = var40;
-            var40 = function(arg0) { // Original name: AVATAR_DECORATION_PRESETS, environment: var62
+            var40 = function arg0() {
                 _fun7502: for (var _fun7502_ip = 0;;) switch (_fun7502_ip) {
                     case 0:
                         var4 = arguments[1];
@@ -2701,7 +2701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.COLLECTIBLES_CLAIM_CATEGORY_REWARD = var40;
             var40 = '/users/@me/collectibles-purchases';
             var25.COLLECTIBLES_PURCHASES = var40;
-            var40 = function(arg0) { // Original name: COLLECTIBLES_PRODUCTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -2719,7 +2719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.COLLECTIBLES_MARKETING = var40;
             var40 = '/collectibles-shop';
             var25.COLLECTIBLES_SHOP = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_MEMBER_BANNER, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7504: for (var _fun7504_ip = 0;;) switch (_fun7504_ip) {
                     case 0:
                         var8 = arguments[3];
@@ -2747,7 +2747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_MEMBER_BANNER = var40;
-            var40 = function(arg0) { // Original name: MESSAGES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2758,7 +2758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGES = var40;
-            var40 = function(arg0) { // Original name: MESSAGES_GREET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2769,7 +2769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGES_GREET = var40;
-            var40 = function(arg0) { // Original name: MESSAGES_ANNOUNCEMENT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2780,7 +2780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGES_ANNOUNCEMENT = var40;
-            var40 = function(arg0, arg1) { // Original name: MESSAGE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2792,7 +2792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGE = var40;
-            var40 = function(arg0, arg1) { // Original name: MESSAGE_ACK, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2805,7 +2805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGE_ACK = var40;
-            var40 = function(arg0) { // Original name: MESSAGE_CREATE_ATTACHMENT_UPLOAD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2816,7 +2816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGE_CREATE_ATTACHMENT_UPLOAD = var40;
-            var40 = function(arg0) { // Original name: UPDATE_VOICE_CHANNEL_STATUS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2827,7 +2827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.UPDATE_VOICE_CHANNEL_STATUS = var40;
-            var40 = function(arg0) { // Original name: MESSAGE_DELETE_UPLOAD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -2837,7 +2837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MESSAGE_DELETE_UPLOAD = var40;
-            var40 = function(arg0, arg1) { // Original name: MESSAGE_CROSSPOST, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2856,7 +2856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.AI_TRANSLATE = var40;
             var40 = '/ai/fix-grammar';
             var25.AI_FIX_GRAMMAR = var40;
-            var40 = function(arg0) { // Original name: AI_SUMMARIZE_THREAD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -2874,7 +2874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BACKGROUND_SYNC = var40;
             var40 = '/channels/preload-messages';
             var25.MESSAGE_PREVIEWS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_FEED_MESSAGE_REMOVE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -2887,7 +2887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_FEED_MESSAGE_REMOVE = var40;
-            var40 = function(arg0) { // Original name: GUILD_FEED_MESSAGE_SET_PREFERENCE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2898,7 +2898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_FEED_MESSAGE_SET_PREFERENCE = var40;
-            var40 = function(arg0) { // Original name: GUILD_FEED_FEATURE_ITEM, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2909,7 +2909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_FEED_FEATURE_ITEM = var40;
-            var40 = function(arg0) { // Original name: GUILD_FEED_MARK_SEEN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2920,7 +2920,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_FEED_MARK_SEEN = var40;
-            var40 = function(arg0) { // Original name: PINS_ACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2931,7 +2931,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PINS_ACK = var40;
-            var40 = function(arg0) { // Original name: PINS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2942,7 +2942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PINS = var40;
-            var40 = function(arg0, arg1) { // Original name: PIN, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2954,7 +2954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PIN = var40;
-            var40 = function(arg0) { // Original name: INSTANT_INVITES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2965,7 +2965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.INSTANT_INVITES = var40;
-            var40 = function(arg0) { // Original name: TYPING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2976,7 +2976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.TYPING = var40;
-            var40 = function(arg0, arg1) { // Original name: CHANNEL_PERMISSIONS_OVERWRITE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -2988,7 +2988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_PERMISSIONS_OVERWRITE = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_RECIPIENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -2999,7 +2999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_RECIPIENTS = var40;
-            var40 = function(arg0, arg1) { // Original name: CHANNEL_RECIPIENT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3011,7 +3011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_RECIPIENT = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_RECIPIENT_ME, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3022,12 +3022,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_RECIPIENT_ME = var40;
-            var40 = function() { // Original name: CHANNEL_RECIPIENT_REJECT_BATCH, environment: var62
+            var40 = function() {
                 var0 = '/channels/recipients/@me/batch-reject';
                 return var0;
             };
             var25.CHANNEL_RECIPIENT_REJECT_BATCH = var40;
-            var40 = function(arg0, arg1) { // Original name: CHANNEL_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -3040,7 +3040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_ICON = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_CONVERT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3051,7 +3051,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_CONVERT = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_ACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3062,7 +3062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_ACK = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_STORE_LISTING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3073,7 +3073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_STORE_LISTING = var40;
-            var40 = function(arg0, arg1) { // Original name: CHANNEL_STORE_LISTING_SKU, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3085,7 +3085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_STORE_LISTING_SKU = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_ENTITLEMENT_GRANT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3096,7 +3096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_ENTITLEMENT_GRANT = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_FOLLOWERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3107,7 +3107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_FOLLOWERS = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_FOLLOWER_STATS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3118,7 +3118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_FOLLOWER_STATS = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_FOLLOWER_MESSAGE_STATS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3129,7 +3129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_FOLLOWER_MESSAGE_STATS = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_INTEGRATIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3140,7 +3140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_INTEGRATIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: CHANNEL_INTEGRATION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3152,7 +3152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_INTEGRATION = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_SAFETY_WARNINGS_ACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3163,7 +3163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_SAFETY_WARNINGS_ACK = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_BLOCKED_USER_WARNING_ACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3174,7 +3174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_BLOCKED_USER_WARNING_ACK = var40;
-            var40 = function(arg0) { // Original name: FORUM_TAGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3185,7 +3185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.FORUM_TAGS = var40;
-            var40 = function(arg0, arg1) { // Original name: FORUM_TAG, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3201,7 +3201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.FRIEND_FINDER = var40;
             var40 = '/friend-suggestions';
             var25.FRIEND_SUGGESTIONS = var40;
-            var40 = function(arg0) { // Original name: FRIEND_SUGGESTION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3215,7 +3215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.TUTORIAL_INDICATORS = var40;
             var40 = '/tutorial/indicators/suppress';
             var25.TUTORIAL_INDICATORS_SUPPRESS = var40;
-            var40 = function(arg0) { // Original name: TUTORIAL_INDICATOR, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3289,7 +3289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.RESEND_PHONE = var40;
             var40 = '/users/@me/avatars';
             var25.RECENT_AVATARS = var40;
-            var40 = function(arg0) { // Original name: RECENT_AVATARS_DELETE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3303,7 +3303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USERS_ME_CUSTOM_THEMES = var40;
             var40 = '/users/@me/connections';
             var25.CONNECTIONS = var40;
-            var40 = function(arg0) { // Original name: CONNECTIONS_AUTHORIZE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3314,7 +3314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONNECTIONS_AUTHORIZE = var40;
-            var40 = function(arg0) { // Original name: CONNECTIONS_SESSION_HANDOFF, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3325,7 +3325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONNECTIONS_SESSION_HANDOFF = var40;
-            var40 = function(arg0) { // Original name: CONNECTIONS_CALLBACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3336,7 +3336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONNECTIONS_CALLBACK = var40;
-            var40 = function(arg0, arg1) { // Original name: CONNECTION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var3 = var0.escape;
                 var2 = undefined;
@@ -3351,7 +3351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONNECTION = var40;
-            var40 = function(arg0, arg1) { // Original name: CONNECTION_REFRESH, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var3 = var0.escape;
                 var2 = undefined;
@@ -3369,7 +3369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.CONNECTION_REFRESH = var40;
             var40 = '/users/@me/connections/contacts/@me/external-friend-list-entries';
             var25.CONNECTION_SYNC_CONTACTS = var40;
-            var40 = function(arg0, arg1) { // Original name: CONNECTION_ACCESS_TOKEN, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var3 = var0.escape;
                 var2 = undefined;
@@ -3385,7 +3385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONNECTION_ACCESS_TOKEN = var40;
-            var40 = function(arg0) { // Original name: CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3400,7 +3400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.XBOX_HANDOFF = var40;
             var40 = '/users/@me/notes';
             var25.NOTES = var40;
-            var40 = function(arg0) { // Original name: NOTE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3412,7 +3412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.NOTE = var40;
             var40 = '/users/@me/mentions';
             var25.MENTIONS = var40;
-            var40 = function(arg0) { // Original name: MENTIONS_MESSAGE_ID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3436,7 +3436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.EXPERIMENTS = var40;
             var40 = '/auth/login';
             var25.LOGIN = var40;
-            var40 = function(arg0) { // Original name: LOGIN_GENERATED_USER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3448,7 +3448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.LOGIN_GENERATED_USER = var40;
             var40 = '/generated-pools/@me';
             var25.GENERATED_POOLS_FOR_CURRENT_USER = var40;
-            var40 = function(arg0) { // Original name: GENERATED_POOL_BY_ID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3458,7 +3458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GENERATED_POOL_BY_ID = var40;
-            var40 = function(arg0) { // Original name: LOGIN_MFA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3496,7 +3496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.WEBAUTHN_CONDITIONAL_UI_LOGIN = var40;
             var40 = '/auth/passwordless/start';
             var25.WEBAUTHN_PASSWORDLESS_CHALLENGE = var40;
-            var40 = function(arg0) { // Original name: MFA_WEBAUTHN_CREDENTIAL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3506,7 +3506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MFA_WEBAUTHN_CREDENTIAL = var40;
-            var40 = function(arg0) { // Original name: INVITE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3516,7 +3516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.INVITE = var40;
-            var40 = function(arg0) { // Original name: INVITE_FRIEND_MEMBERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3527,7 +3527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.INVITE_FRIEND_MEMBERS = var40;
-            var40 = function(arg0) { // Original name: UNRESOLVED_GUILD_TEMPLATE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3537,7 +3537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.UNRESOLVED_GUILD_TEMPLATE = var40;
-            var40 = function(arg0) { // Original name: GUILD_TEMPLATES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3548,7 +3548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_TEMPLATES = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_TEMPLATE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3582,7 +3582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.FORGOT_PASSWORD = var40;
             var40 = '/auth/reset';
             var25.RESET_PASSWORD = var40;
-            var40 = function(arg0) { // Original name: REGIONS, environment: var62
+            var40 = function arg0() {
                 _fun7565: for (var _fun7565_ip = 0;;) switch (_fun7565_ip) {
                     case 0:
                         var4 = arg0;
@@ -3605,7 +3605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.REGIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: DEBUG_LOG, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3617,7 +3617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DEBUG_LOG = var40;
-            var40 = function(arg0) { // Original name: DEBUG_LOGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3629,7 +3629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.DEBUG_LOGS = var40;
             var40 = '/reports';
             var25.REPORT_V2 = var40;
-            var40 = function(arg0, arg1) { // Original name: STAGE_REPORT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3645,7 +3645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.REPORT_OPTIONS = var40;
             var40 = '/integrations';
             var25.INTEGRATIONS = var40;
-            var40 = function(arg0) { // Original name: INTEGRATION_JOIN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3656,7 +3656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.INTEGRATION_JOIN = var40;
-            var40 = function(arg0) { // Original name: INTEGRATION_SEARCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3671,7 +3671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS = var40;
             var40 = '/users/@me/guilds/settings';
             var25.USER_GUILD_SETTINGS_BULK = var40;
-            var40 = function(arg0) { // Original name: USER_GUILD_SETTINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3690,7 +3690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.NON_GAMES_DETECTABLE = var40;
             var40 = '/applications/games-supplemental';
             var25.APPLICATIONS_GAMES_SUPPLEMENTAL = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLICATION_ICON, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -3703,7 +3703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_ICON = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_RPC, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3714,7 +3714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_RPC = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_ASSETS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3725,7 +3725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_ASSETS = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_EXTERNAL_ASSETS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3736,7 +3736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_EXTERNAL_ASSETS = var40;
-            var40 = function(arg0) { // Original name: OWNED_APPLICATION_BRANCHES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3759,7 +3759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.OAUTH2_CURRENT_AUTH = var40;
             var40 = '/oauth2/tokens';
             var25.OAUTH2_TOKENS = var40;
-            var40 = function(arg0) { // Original name: OAUTH2_TOKEN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3791,7 +3791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.MFA_CODES_VERIFICATION = var40;
             var40 = '/auth/verify/view-backup-codes-challenge';
             var25.MFA_SEND_VERIFICATION_KEY = var40;
-            var40 = function(arg0) { // Original name: CALL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3802,7 +3802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CALL = var40;
-            var40 = function(arg0) { // Original name: CALL_RING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3813,7 +3813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CALL_RING = var40;
-            var40 = function(arg0) { // Original name: CALL_STOP_RINGING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3828,7 +3828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.DISABLE_EMAIL_NOTIFICATIONS = var40;
             var40 = '/users/disable-server-highlight-notifications';
             var25.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_WEBHOOKS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3839,7 +3839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_WEBHOOKS = var40;
-            var40 = function(arg0) { // Original name: GUILD_WEBHOOKS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3850,7 +3850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_WEBHOOKS = var40;
-            var40 = function(arg0) { // Original name: WEBHOOK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -3860,7 +3860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.WEBHOOK = var40;
-            var40 = function(arg0, arg1) { // Original name: WEBHOOK_INTEGRATION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -3872,7 +3872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.WEBHOOK_INTEGRATION = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: REACTIONS, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -3886,7 +3886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.REACTIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: REMOVE_REACTIONS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -3899,7 +3899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.REMOVE_REACTIONS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: REMOVE_EMOJI_REACTIONS, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -3913,7 +3913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.REMOVE_EMOJI_REACTIONS = var40;
-            var40 = function(arg0, arg1, arg2, arg3) { // Original name: REACTION, environment: var62
+            var40 = function arg0, arg1, arg2, arg3() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var8 = var0.concat;
@@ -3929,7 +3929,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.REACTION = var40;
-            var40 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: REACTION_WITH_TYPE, environment: var62
+            var40 = function arg0, arg1, arg2, arg3, arg4() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var9 = var0.concat;
@@ -3948,7 +3948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.REACTION_WITH_TYPE = var40;
-            var40 = function(arg0) { // Original name: SEARCH_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3961,7 +3961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.SEARCH_GUILD = var40;
             var40 = '/search/favorites';
             var25.SEARCH_FAVORITES = var40;
-            var40 = function(arg0) { // Original name: SEARCH_TABS_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3976,7 +3976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.SEARCH_TABS_DMS = var40;
             var40 = '/changelogs/@me/messages';
             var25.CHANGELOG_MESSAGES = var40;
-            var40 = function(arg0) { // Original name: GUILD_APPLICATIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3987,7 +3987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_APPLICATIONS = var40;
-            var40 = function(arg0) { // Original name: APPLIED_GUILD_BOOSTS_FOR_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -3998,7 +3998,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLIED_GUILD_BOOSTS_FOR_GUILD = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLIED_GUILD_BOOST, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4016,7 +4016,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_APPLIED_GUILD_BOOSTS = var40;
             var40 = '/users/@me/guilds/premium/subscription-slots';
             var25.USER_GUILD_BOOST_SLOTS = var40;
-            var40 = function(arg0) { // Original name: USER_GUILD_BOOST_SLOT_CANCEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4027,7 +4027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_GUILD_BOOST_SLOT_CANCEL = var40;
-            var40 = function(arg0) { // Original name: USER_GUILD_BOOST_SLOT_UNCANCEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4038,7 +4038,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.USER_GUILD_BOOST_SLOT_UNCANCEL = var40;
-            var40 = function(arg0) { // Original name: GUILD_POWERUPS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4049,7 +4049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_POWERUPS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_POWERUP_TOGGLE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4061,7 +4061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_POWERUP_TOGGLE = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_POWERUP_UPDATE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4073,7 +4073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_POWERUP_UPDATE = var40;
-            var40 = function(arg0) { // Original name: GAME_SERVERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4084,7 +4084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GAME_SERVERS = var40;
-            var40 = function(arg0) { // Original name: GAME_SERVER_REGIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4095,7 +4095,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GAME_SERVER_REGIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: GAME_SERVER_WAKE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4108,7 +4108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GAME_SERVER_WAKE = var40;
-            var40 = function(arg0) { // Original name: SEARCH_CHANNEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4119,7 +4119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SEARCH_CHANNEL = var40;
-            var40 = function(arg0) { // Original name: SEARCH_TABS_CHANNEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4140,7 +4140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BILLING_PAYMENT_SOURCES = var40;
             var40 = '/users/@me/billing/payment-sources/validate-billing-address';
             var25.BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS = var40;
-            var40 = function(arg0) { // Original name: BILLING_PAYMENT_SOURCE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4152,7 +4152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BILLING_PAYMENT_SOURCE = var40;
             var40 = '/users/@me/billing/payments';
             var25.BILLING_PAYMENTS = var40;
-            var40 = function(arg0) { // Original name: BILLING_PAYMENT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4162,7 +4162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_PAYMENT = var40;
-            var40 = function(arg0) { // Original name: BILLING_PAYMENTS_VOID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4177,7 +4177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BILLING_INVOICE_PDF = var40;
             var40 = '/users/@me/billing/invoice/breakdown';
             var25.BILLING_INVOICE_BREAKDOWN = var40;
-            var40 = function(arg0) { // Original name: BILLING_STRIPE_PAYMENT_INTENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4187,7 +4187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_STRIPE_PAYMENT_INTENTS = var40;
-            var40 = function(arg0) { // Original name: BILLING_STRIPE_PAYMENT_INTENTS_VIA_ID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4197,7 +4197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_STRIPE_PAYMENT_INTENTS_VIA_ID = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: BILLING_STANDALONE_CHECKOUT_LOGIN_HANDOFF, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -4217,7 +4217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BILLING_STANDALONE_CHECKOUT_LOGIN_HANDOFF = var40;
             var40 = '/users/@me/billing/paypal/billing-agreement-tokens';
             var25.BILLING_PAYPAL_BILLING_AGREEMENT_TOKENS = var40;
-            var40 = function(arg0) { // Original name: BILLING_POPUP_BRIDGE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4227,7 +4227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_POPUP_BRIDGE = var40;
-            var40 = function(arg0) { // Original name: BILLING_POPUP_BRIDGE_CALLBACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4238,7 +4238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_POPUP_BRIDGE_CALLBACK = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7613: for (var _fun7613_ip = 0;;) switch (_fun7613_ip) {
                     case 0:
                         var0 = arg2;
@@ -4276,7 +4276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BILLING_SUBSCRIPTIONS_PREVIEW = var40;
             var40 = '/billing/apple/apply-receipt';
             var25.BILLING_APPLY_APPLE_RECEIPT = var40;
-            var40 = function(arg0) { // Original name: BILLING_APPLE_SUBSCRIPTION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4292,7 +4292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BILLING_CREATE_APPLE_IAP_JWT_TOKEN = var40;
             var40 = '/billing/apple/acom-subscriptions/migrate';
             var25.BILLING_ACOM_SUBSCRIPTION_MIGRATION = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4302,7 +4302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_PREVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4313,7 +4313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_PREVIEW = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_INVOICE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4324,7 +4324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_INVOICE = var40;
-            var40 = function(arg0, arg1) { // Original name: BILLING_INVOICE_MANUAL_PAYMENT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4337,7 +4337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_INVOICE_MANUAL_PAYMENT = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_REWARDS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4348,7 +4348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_REWARDS = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_PROMOTION_REWARD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4359,7 +4359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_PROMOTION_REWARD = var40;
-            var40 = function(arg0) { // Original name: Billing_SUBSCRIPTION_REWARD_ELIGIBILITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4370,7 +4370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.Billing_SUBSCRIPTION_REWARD_ELIGIBILITY = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_ELIGIBLE_USERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4381,7 +4381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_ELIGIBLE_USERS = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_INVITES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4392,7 +4392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_INVITES = var40;
-            var40 = function(arg0, arg1) { // Original name: BILLING_SUBSCRIPTION_INVITE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4405,7 +4405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_INVITE = var40;
-            var40 = function(arg0, arg1) { // Original name: BILLING_SUBSCRIPTION_REMOVE_USER, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4417,7 +4417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BILLING_SUBSCRIPTION_REMOVE_USER = var40;
-            var40 = function(arg0) { // Original name: BILLING_SUBSCRIPTION_MEMBERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4438,7 +4438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.PREMIUM_GROUP_MEMBERSHIP = var40;
             var40 = '/users/@me/premium-group/invites';
             var25.PREMIUM_GROUP_INVITES = var40;
-            var40 = function(arg0) { // Original name: PREMIUM_GROUP_INVITE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4464,7 +4464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.HANDOFF_EXCHANGE = var40;
             var40 = '/users/@me/library';
             var25.LIBRARY = var40;
-            var40 = function(arg0, arg1) { // Original name: LIBRARY_APPLICATION_BRANCH, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4476,7 +4476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.LIBRARY_APPLICATION_BRANCH = var40;
-            var40 = function(arg0) { // Original name: LIBRARY_APPLICATION_DELETE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4490,7 +4490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.AUTH_LOCATION_METADATA = var40;
             var40 = '/users/@me/harvest';
             var25.USER_HARVEST = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLICATION_LIVE_BUILD, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4503,7 +4503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_LIVE_BUILD = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: APPLICATION_BUILD_SIZE, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var7 = var0.concat;
@@ -4520,7 +4520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATION_BUILD_SIZE = var40;
             var40 = '/branches';
             var25.APPLICATION_BRANCHES = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_PUBLIC, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4535,7 +4535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATIONS_PUBLIC = var40;
             var40 = '/applications/trending/global';
             var25.APPLICATIONS_TRENDING = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_BRANCH_LIST, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4546,7 +4546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_BRANCH_LIST = var40;
-            var40 = function(arg0, arg1) { // Original name: LIBRARY_APPLICATION_INSTALLED, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4559,7 +4559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.LIBRARY_APPLICATION_INSTALLED = var40;
-            var40 = function(arg0) { // Original name: STOREFRONT_PREMIUM_BUTTON, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4569,7 +4569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STOREFRONT_PREMIUM_BUTTON = var40;
-            var40 = function(arg0) { // Original name: COLLECTION_PUBLISHED_LISTINGS_SKU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4579,7 +4579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.COLLECTION_PUBLISHED_LISTINGS_SKU = var40;
-            var40 = function(arg0) { // Original name: PRODUCT_FOR_SKU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4589,7 +4589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PRODUCT_FOR_SKU = var40;
-            var40 = function(arg0) { // Original name: STORE_DIRECTORY_LAYOUT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4599,7 +4599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_DIRECTORY_LAYOUT = var40;
-            var40 = function(arg0) { // Original name: STORE_DIRECTORY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4613,7 +4613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.STORE_EMAIL_RESEND_PAYMENT_VERIFICATION = var40;
             var40 = '/store/published-listings/applications';
             var25.STORE_PUBLISHED_LISTINGS_APPLICATIONS = var40;
-            var40 = function(arg0) { // Original name: STORE_PUBLISHED_LISTINGS_APPLICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4625,7 +4625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.STORE_PUBLISHED_LISTINGS_APPLICATION = var40;
             var40 = '/store/published-listings/skus';
             var25.STORE_PUBLISHED_LISTINGS_SKUS = var40;
-            var40 = function(arg0) { // Original name: STORE_PUBLISHED_LISTINGS_SKU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4635,7 +4635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_PUBLISHED_LISTINGS_SKU = var40;
-            var40 = function(arg0) { // Original name: STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4646,7 +4646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD = var40;
-            var40 = function(arg0) { // Original name: STORE_PUBLISHED_LISTINGS_SUBSCRIPTION_PLANS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4657,7 +4657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_PUBLISHED_LISTINGS_SUBSCRIPTION_PLANS = var40;
-            var40 = function(arg0) { // Original name: STORE_SKU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4667,7 +4667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_SKU = var40;
-            var40 = function(arg0) { // Original name: STORE_SKU_PURCHASE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4678,7 +4678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_SKU_PURCHASE = var40;
-            var40 = function(arg0) { // Original name: STORE_LISTING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4688,7 +4688,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_LISTING = var40;
-            var40 = function(arg0) { // Original name: STORE_LISTINGS_SKU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4699,7 +4699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_LISTINGS_SKU = var40;
-            var40 = function(arg0) { // Original name: SOCIAL_LAYER_APPLICATION_STOREFRONT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4710,7 +4710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOCIAL_LAYER_APPLICATION_STOREFRONT = var40;
-            var40 = function(arg0) { // Original name: SOCIAL_LAYER_APPLCIATION_RECOMMENDATIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4721,7 +4721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOCIAL_LAYER_APPLCIATION_RECOMMENDATIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4733,7 +4733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU = var40;
-            var40 = function(arg0, arg1) { // Original name: SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_ELIGIBILITY, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4746,7 +4746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_ELIGIBILITY = var40;
-            var40 = function(arg0) { // Original name: SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4757,7 +4757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT = var40;
-            var40 = function(arg0) { // Original name: ORDER_GET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4770,7 +4770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var40 = '/billing/orders';
             var25.ORDER_CREATE = var40;
             var25.ORDER_LIST = var40;
-            var40 = function(arg0, arg1) { // Original name: ORDER_PATCH_LINE_ITEM, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4782,7 +4782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ORDER_PATCH_LINE_ITEM = var40;
-            var40 = function(arg0) { // Original name: ORDER_UPDATE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4792,7 +4792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ORDER_UPDATE = var40;
-            var40 = function(arg0) { // Original name: ORDER_SIGN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4803,7 +4803,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ORDER_SIGN = var40;
-            var40 = function(arg0) { // Original name: ORDER_DISCARD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4814,7 +4814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ORDER_DISCARD = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_SKUS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4825,7 +4825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_SKUS = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLICATION_MANAGED_ACTIVITY_LINK, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4837,7 +4837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_MANAGED_ACTIVITY_LINK = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLICATION_QUICK_ACTIVITY_LINK, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -4849,7 +4849,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_QUICK_ACTIVITY_LINK = var40;
-            var40 = function(arg0) { // Original name: STORE_EULA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4859,7 +4859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_EULA = var40;
-            var40 = function(arg0) { // Original name: ENTITLEMENTS_FOR_APPLICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4874,7 +4874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.ENTITLEMENTS_FOR_USER = var40;
             var40 = '/users/@me/meaningfully-online';
             var25.USER_MEANINGFULLY_ONLINE = var40;
-            var40 = function(arg0) { // Original name: ENTITLEMENT_TICKET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4885,7 +4885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ENTITLEMENT_TICKET = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_TICKET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4898,7 +4898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATION_TICKET = var40;
             var40 = '/users/@me/entitlements/gifts';
             var25.ENTITLEMENTS_GIFTABLE = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: STORE_ASSET, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -4912,7 +4912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_ASSET = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: APPLICATION_ASSET, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -4926,7 +4926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_ASSET = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLICATION_STORAGE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -4939,7 +4939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_STORAGE = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_DISCLOSURES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4962,7 +4962,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GIFS_SUGGEST = var40;
             var40 = '/gifs/trending-search';
             var25.GIFS_TRENDING_SEARCH = var40;
-            var40 = function(arg0) { // Original name: GIFT_CODE_RESOLVE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4972,7 +4972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GIFT_CODE_RESOLVE = var40;
-            var40 = function(arg0) { // Original name: GIFT_CODE_REDEEM, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -4983,7 +4983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GIFT_CODE_REDEEM = var40;
-            var40 = function(arg0) { // Original name: PARTNER_PROMOTIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -4995,7 +4995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.PARTNER_PROMOTIONS = var40;
             var40 = '/users/@me/entitlements/gift-codes';
             var25.USER_GIFT_CODE_CREATE = var40;
-            var41 = function(arg0) { // Original name: USER_GIFT_CODE_REVOKE, environment: var62
+            var41 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5008,7 +5008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_GIFT_CODES = var40;
             var40 = '/users/@me/billing/user-trial-offer';
             var25.USER_TRIAL_OFFER = var40;
-            var40 = function(arg0) { // Original name: USER_TRIAL_OFFER_ACKNOWLEDGED, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5027,7 +5027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.CHURN_USER_OFFER = var40;
             var40 = '/users/@me/billing/user-offer/redeem';
             var25.USER_OFFER_REDEEM = var40;
-            var40 = function(arg0, arg1) { // Original name: REACTIVATION_OFFER_REDEEM, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5042,7 +5042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.REACTIVATION_OFFER_REDEEM = var40;
             var40 = '/users/@me/perks-demos';
             var25.USER_PERKS_DEMOS = var40;
-            var40 = function(arg0) { // Original name: USER_PERKS_DEMOS_ACTIVATE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5058,7 +5058,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GUILD_DISCOVERY_SEARCH = var40;
             var40 = '/discovery/categories';
             var25.GUILD_DISCOVERY_CATEGORIES = var40;
-            var40 = function(arg0) { // Original name: GUILD_DISCOVERY_SLUG, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5068,7 +5068,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_DISCOVERY_SLUG = var40;
-            var40 = function(arg0) { // Original name: GUILD_DISCOVERY_METADATA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5079,7 +5079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_DISCOVERY_METADATA = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_DISCOVERY_UPDATE_CATEGORY, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5091,7 +5091,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_DISCOVERY_UPDATE_CATEGORY = var40;
-            var40 = function(arg0) { // Original name: STREAM_PREVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5102,7 +5102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STREAM_PREVIEW = var40;
-            var40 = function(arg0) { // Original name: STREAM_NOTIFY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5113,7 +5113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STREAM_NOTIFY = var40;
-            var40 = function(arg0) { // Original name: STREAM, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5124,7 +5124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STREAM = var40;
-            var40 = function(arg0) { // Original name: GUILD_PREVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5147,7 +5147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.PARTNERS_CONNECTIONS = var40;
             var40 = '/partners/apply';
             var25.PARTNERS_APPLY = var40;
-            var40 = function(arg0) { // Original name: STICKER_PACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5157,7 +5157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STICKER_PACK = var40;
-            var40 = function(arg0) { // Original name: STORE_DIRECTORY_LAYOUT_STICKER_PACKS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5167,7 +5167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STORE_DIRECTORY_LAYOUT_STICKER_PACKS = var40;
-            var40 = function(arg0, arg1) { // Original name: STICKER_ASSET, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5179,7 +5179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.STICKER_ASSET = var40;
-            var40 = function(arg0) { // Original name: STICKER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5191,7 +5191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.STICKER = var40;
             var40 = '/sticker-packs';
             var25.STICKER_PACKS = var40;
-            var40 = function(arg0) { // Original name: GUILD_STICKER_PACKS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5202,7 +5202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_STICKER_PACKS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_STICKER, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5214,7 +5214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_STICKER = var40;
-            var40 = function(arg0) { // Original name: STICKER_GUILD_DATA, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5227,7 +5227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.STICKER_GUILD_DATA = var40;
             var40 = '/interactions';
             var25.INTERACTIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: MESSAGE_INTERACTION_DATA, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5242,7 +5242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.MESSAGE_INTERACTION_DATA = var40;
             var40 = '/activities/shelf';
             var25.ACTIVITY_SHELF = var40;
-            var40 = function(arg0, arg1) { // Original name: ACTIVITY_CHANNEL_LAUNCH, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5254,7 +5254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVITY_CHANNEL_LAUNCH = var40;
-            var40 = function(arg0, arg1) { // Original name: ACTIVITY_JOIN_INSTANCE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5267,7 +5267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVITY_JOIN_INSTANCE = var40;
-            var40 = function(arg0) { // Original name: ACTIVITY_TEST_MODE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5278,7 +5278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVITY_TEST_MODE = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: ACTIVITY_LEAVE, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var7 = var0.concat;
@@ -5293,7 +5293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVITY_LEAVE = var40;
-            var40 = function(arg0) { // Original name: ACTIVITIES_DISCORD_CONFIG, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5303,7 +5303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVITIES_DISCORD_CONFIG = var40;
-            var40 = function(arg0) { // Original name: ACTIVITIES_TRUSTED_LINKS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5314,7 +5314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVITIES_TRUSTED_LINKS = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_UPLOAD_ATTACHMENT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5325,7 +5325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_UPLOAD_ATTACHMENT = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_PROXY_TICKET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5336,7 +5336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_PROXY_TICKET = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_THREADS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5347,7 +5347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_THREADS = var40;
-            var40 = function(arg0, arg1) { // Original name: CHANNEL_MESSAGE_THREADS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5360,7 +5360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_MESSAGE_THREADS = var40;
-            var40 = function(arg0) { // Original name: CHANNEL_LINKED_LOBBY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5371,7 +5371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CHANNEL_LINKED_LOBBY = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var7 = var0.concat;
@@ -5386,7 +5386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS = var40;
-            var40 = function(arg0) { // Original name: UPDATE_VOICE_STATE, environment: var62
+            var40 = function arg0() {
                 _fun7703: for (var _fun7703_ip = 0;;) switch (_fun7703_ip) {
                     case 0:
                         var4 = arguments[1];
@@ -5409,7 +5409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.UPDATE_VOICE_STATE = var40;
-            var40 = function(arg0) { // Original name: GET_REPORT_MENU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5419,7 +5419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GET_REPORT_MENU = var40;
-            var40 = function(arg0) { // Original name: GET_UNAUTHENTICATED_REPORT_MENU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5429,7 +5429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GET_UNAUTHENTICATED_REPORT_MENU = var40;
-            var40 = function(arg0) { // Original name: SUBMIT_REPORT_MENU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5439,7 +5439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SUBMIT_REPORT_MENU = var40;
-            var40 = function(arg0) { // Original name: SUBMIT_UNAUTHENTICATED_REPORT_MENU, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5449,7 +5449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SUBMIT_UNAUTHENTICATED_REPORT_MENU = var40;
-            var40 = function(arg0) { // Original name: SEND_UNAUTHENTICATED_REPORT_PINCODE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5460,7 +5460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SEND_UNAUTHENTICATED_REPORT_PINCODE = var40;
-            var40 = function(arg0) { // Original name: VERIFY_UNAUTHENTICATED_REPORT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5471,7 +5471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.VERIFY_UNAUTHENTICATED_REPORT = var40;
-            var40 = function(arg0, arg1) { // Original name: SUBMIT_MODERATOR_MESSAGE_REPORT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5484,7 +5484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SUBMIT_MODERATOR_MESSAGE_REPORT = var40;
-            var40 = function(arg0) { // Original name: MODERATOR_REPORT_CLOSE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5495,7 +5495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MODERATOR_REPORT_CLOSE = var40;
-            var40 = function(arg0) { // Original name: REPORT_TO_MOD_REOPEN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5516,7 +5516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.STAGE_INSTANCES = var40;
             var40 = '/stage-instances/extra';
             var25.STAGE_INSTANCES_EXTRA = var40;
-            var40 = function(arg0) { // Original name: STAGE_INSTANCE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5528,7 +5528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.STAGE_INSTANCE = var40;
             var40 = '/users/@me/survey';
             var25.USER_SURVEY = var40;
-            var40 = function(arg0) { // Original name: EMBEDDED_SURVEY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -5538,7 +5538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.EMBEDDED_SURVEY = var40;
-            var40 = function(arg0) { // Original name: EMBEDDED_SURVEY_RESPONSE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5551,7 +5551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.EMBEDDED_SURVEY_RESPONSE = var40;
             var40 = '/users/@me/embedded-survey/action';
             var25.EMBEDDED_SURVEY_ACTION = var40;
-            var40 = function(arg0) { // Original name: USER_SURVEY_SEEN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5564,7 +5564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_SURVEY_SEEN = var40;
             var40 = '/guild-events';
             var25.GUILD_EVENTS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_EVENT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5576,7 +5576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EVENT = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_EVENT_IMAGE, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -5590,7 +5590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EVENT_IMAGE = var40;
-            var40 = function(arg0) { // Original name: GUILD_EVENTS_FOR_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5601,7 +5601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EVENTS_FOR_GUILD = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_EVENT_USER_COUNTS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5614,7 +5614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EVENT_USER_COUNTS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_EVENT_USERS, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7721: for (var _fun7721_ip = 0;;) switch (_fun7721_ip) {
                     case 0:
                         var2 = arg2;
@@ -5646,7 +5646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_EVENT_USERS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: USER_GUILD_EVENT, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7722: for (var _fun7722_ip = 0;;) switch (_fun7722_ip) {
                     case 0:
                         var2 = arg2;
@@ -5680,7 +5680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_GUILD_EVENT = var40;
             var40 = '/users/@me/scheduled-events';
             var25.USER_GUILD_EVENTS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_EVENT_EXCEPTIONS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -5693,7 +5693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EVENT_EXCEPTIONS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_EVENT_EXCEPTION, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -5707,7 +5707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_EVENT_EXCEPTION = var40;
-            var40 = function(arg0) { // Original name: MEMBER_SAFETY_SUPPLEMENTAL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5718,7 +5718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.MEMBER_SAFETY_SUPPLEMENTAL = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBER_SEARCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5729,7 +5729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MEMBER_SEARCH = var40;
-            var40 = function(arg0) { // Original name: GUILD_AUTOMOD_RULES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5740,7 +5740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_AUTOMOD_RULES = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_AUTOMOD_RULE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5752,7 +5752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_AUTOMOD_RULE = var40;
-            var40 = function(arg0) { // Original name: GUILD_AUTOMOD_VALIDATE_RULE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5763,7 +5763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_AUTOMOD_VALIDATE_RULE = var40;
-            var40 = function(arg0) { // Original name: GUILD_AUTOMOD_CLEAR_MENTION_RAID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5774,7 +5774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_AUTOMOD_CLEAR_MENTION_RAID = var40;
-            var40 = function(arg0) { // Original name: GUILD_AUTOMOD_ALERT_ACTION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5785,7 +5785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_AUTOMOD_ALERT_ACTION = var40;
-            var40 = function(arg0) { // Original name: GUILD_INCIDENT_ACTIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5796,7 +5796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INCIDENT_ACTIONS = var40;
-            var40 = function(arg0) { // Original name: GUILD_INCIDENT_REPORT_FALSE_ALARM, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5807,7 +5807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INCIDENT_REPORT_FALSE_ALARM = var40;
-            var40 = function(arg0) { // Original name: GUILD_INCIDENT_REPORT_RAID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5818,7 +5818,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_INCIDENT_REPORT_RAID = var40;
-            var40 = function(arg0) { // Original name: DIRECTORY_CHANNEL_ENTRIES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5829,7 +5829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DIRECTORY_CHANNEL_ENTRIES = var40;
-            var40 = function(arg0, arg1) { // Original name: DIRECTORY_CHANNEL_ENTRY, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -5841,7 +5841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DIRECTORY_CHANNEL_ENTRY = var40;
-            var40 = function(arg0) { // Original name: DIRECTORY_ENTRIES_SEARCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5852,7 +5852,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DIRECTORY_ENTRIES_SEARCH = var40;
-            var40 = function(arg0) { // Original name: DIRECTORY_CHANNEL_CATEGORY_COUNTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5863,7 +5863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DIRECTORY_CHANNEL_CATEGORY_COUNTS = var40;
-            var40 = function(arg0) { // Original name: DIRECTORY_CHANNEL_LIST_BY_ID, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5874,7 +5874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DIRECTORY_CHANNEL_LIST_BY_ID = var40;
-            var40 = function(arg0) { // Original name: DIRECTORY_ENTRIES_BROADCAST_INFO, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5893,7 +5893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATIONS = var40;
             var40 = '/applications-with-assets';
             var25.APPLICATIONS_WITH_ASSETS = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_OWNER_TRANSFER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5918,7 +5918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BOGO_PROMOTIONS = var40;
             var40 = '/users/@me/outbound-promotions/codes';
             var25.CLAIMED_OUTBOUND_PROMOTION_CODES = var40;
-            var40 = function(arg0) { // Original name: CLAIM_OUTBOUND_PROMOTION_CODE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5931,7 +5931,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.CLAIM_OUTBOUND_PROMOTION_CODE = var40;
             var40 = '/guilds/automations/email-domain-lookup';
             var25.HUB_EMAIL_VERIFY_SEND = var40;
-            var40 = function(arg0) { // Original name: GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5942,7 +5942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD = var40;
-            var40 = function(arg0) { // Original name: GUILD_ROLE_SUBSCRIPTIONS_SETTINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -5953,7 +5953,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7745: for (var _fun7745_ip = 0;;) switch (_fun7745_ip) {
                     case 0:
                         var2 = arg1;
@@ -5982,7 +5982,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_ROLE_SUBSCRIPTION_LISTINGS, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7746: for (var _fun7746_ip = 0;;) switch (_fun7746_ip) {
                     case 0:
                         var2 = arg2;
@@ -6014,7 +6014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_ROLE_SUBSCRIPTION_LISTINGS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var7 = var0.concat;
@@ -6029,7 +6029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE = var40;
-            var40 = function(arg0) { // Original name: GUILD_ROLE_SUBSCRIPTION_TRIALS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6040,7 +6040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_SUBSCRIPTION_TRIALS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -6053,7 +6053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL = var40;
-            var40 = function(arg0) { // Original name: GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6064,7 +6064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_ENABLE_REQUESTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6075,7 +6075,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_ENABLE_REQUESTS = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_ELIGIBILITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6086,7 +6086,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_ELIGIBILITY = var40;
-            var40 = function(arg0, arg1) { // Original name: CREATOR_MONETIZATION_ACCEPT_TERMS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -6099,7 +6099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_ACCEPT_TERMS = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_ACCEPT_TERMS_V2, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6110,7 +6110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_ACCEPT_TERMS_V2 = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_RESTRICTIONS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6121,7 +6121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_RESTRICTIONS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var7 = var0.concat;
@@ -6136,7 +6136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_MARKETING_ONBOARDING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6149,7 +6149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.CREATOR_MONETIZATION_MARKETING_ONBOARDING = var40;
             var40 = '/creator-monetization/marketing/nag-activate/eligibility';
             var25.CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6160,7 +6160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_ACCEPT_NEW_TERMS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6171,7 +6171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6182,7 +6182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED = var40;
-            var40 = function(arg0) { // Original name: CREATOR_MONETIZATION_REMOVE_MONETIZATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6193,7 +6193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATOR_MONETIZATION_REMOVE_MONETIZATION = var40;
-            var40 = function(arg0) { // Original name: SUBSCRIPTION_PLAN_GROUP_LISTING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6204,7 +6204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SUBSCRIPTION_PLAN_GROUP_LISTING = var40;
-            var40 = function(arg0) { // Original name: SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6215,7 +6215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING = var40;
-            var40 = function(arg0) { // Original name: MEDIA_POST_RESHARE_GET_PREVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6230,7 +6230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.UNFURL_EMBED_URLS = var40;
             var40 = '/private/bug-reports';
             var25.BUG_REPORTS = var40;
-            var40 = function(arg0) { // Original name: PAYMENT_PAYOUT_GROUPS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6241,7 +6241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PAYMENT_PAYOUT_GROUPS = var40;
-            var40 = function(arg0) { // Original name: GUILD_PRODUCTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6252,7 +6252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PRODUCTS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_PRODUCT_LISTINGS, environment: var62
+            var40 = function arg0, arg1() {
                 _fun7767: for (var _fun7767_ip = 0;;) switch (_fun7767_ip) {
                     case 0:
                         var2 = arg1;
@@ -6281,7 +6281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.GUILD_PRODUCT_LISTINGS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: GUILD_PRODUCT_ATTACHMENT_DOWNLOAD, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var7 = var0.concat;
@@ -6296,7 +6296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD = var40;
-            var40 = function(arg0) { // Original name: GUILD_PROFILE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6307,7 +6307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_PROFILE = var40;
-            var40 = function(arg0) { // Original name: GUILD_PROFILE_VISIBILITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6332,7 +6332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.ACCOUNT_NOTIFICATION_SETTINGS = var40;
             var40 = '/users/@me/video-filters/assets';
             var25.VIDEO_FILTER_ASSETS = var40;
-            var40 = function(arg0) { // Original name: VIDEO_FILTER_ASSET, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6342,7 +6342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.VIDEO_FILTER_ASSET = var40;
-            var40 = function(arg0) { // Original name: VIDEO_FILTER_ASSET_LAST_USED, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6353,7 +6353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.VIDEO_FILTER_ASSET_LAST_USED = var40;
-            var40 = function(arg0, arg1, arg2, arg3) { // Original name: VIDEO_FILTER_ASSET_STORAGE, environment: var62
+            var40 = function arg0, arg1, arg2, arg3() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var8 = var0.concat;
@@ -6369,7 +6369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.VIDEO_FILTER_ASSET_STORAGE = var40;
-            var40 = function(arg0) { // Original name: GUILD_SOUNDBOARD_SOUNDS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6380,7 +6380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_SOUNDBOARD_SOUNDS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_SOUNDBOARD_SOUND, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6392,7 +6392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_SOUNDBOARD_SOUND = var40;
-            var40 = function(arg0) { // Original name: SOUNDBOARD_SOUND, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6402,7 +6402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOUNDBOARD_SOUND = var40;
-            var40 = function(arg0, arg1) { // Original name: SOUNDBOARD_SOUND_GUILD_DATA, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6418,7 +6418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.SOUNDBOARD_DEFAULT_SOUNDS = var40;
             var40 = '/users/@me/top-sounds-for-guilds';
             var25.TOP_SOUNDS_FOR_GUILDS = var40;
-            var40 = function(arg0) { // Original name: SEND_SOUNDBOARD_SOUND, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6429,7 +6429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SEND_SOUNDBOARD_SOUND = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_COMMANDS_SEARCH, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6440,7 +6440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_COMMANDS_SEARCH = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_COMMAND_INDEX_CHANNEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6451,7 +6451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_COMMAND_INDEX_CHANNEL = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_COMMAND_INDEX_GUILD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6464,7 +6464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATION_COMMAND_INDEX_GUILD = var40;
             var40 = '/users/@me/application-command-index';
             var25.APPLICATION_COMMAND_INDEX_USER = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_COMMAND_INDEX_APPLICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6475,7 +6475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_COMMAND_INDEX_APPLICATION = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_COMMANDS_FOR_APPLICATION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6487,7 +6487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_COMMANDS_FOR_APPLICATION = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_DIRECTORY_APPLICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6497,7 +6497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_DIRECTORY_APPLICATION = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_DIRECTORY_EMBED_APPLICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6510,7 +6510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATION_DIRECTORY_EMBED_APPLICATION = var40;
             var40 = '/application-directory-static/categories';
             var25.APPLICATION_DIRECTORY_CATEGORIES = var40;
-            var40 = function(arg0) { // Original name: APPLICATION_DIRECTORY_SIMILAR, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6525,7 +6525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATION_DIRECTORY_SEARCH = var40;
             var40 = '/application-directory-static/collections';
             var25.APPLICATION_DIRECTORY_COLLECTIONS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -6541,7 +6541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE = var40;
             var40 = '/app-recommendations';
             var25.APP_RECOMMENDATIONS = var40;
-            var40 = function(arg0) { // Original name: GUILD_FEED, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6558,7 +6558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_EMAIL_VERIFY_CODE = var40;
             var40 = '/users/@me/premium-usage';
             var25.PREMIUM_USAGE = var40;
-            var40 = function(arg0) { // Original name: ACTIVE_CHANNELS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6569,7 +6569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ACTIVE_CHANNELS = var40;
-            var40 = function(arg0) { // Original name: NOTIF_CENTER_ITEMS, environment: var62
+            var40 = function arg0() {
                 _fun7790: for (var _fun7790_ip = 0;;) switch (_fun7790_ip) {
                     case 0:
                         var3 = arg0;
@@ -6593,7 +6593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.NOTIF_CENTER_ITEMS = var40;
-            var40 = function(arg0) { // Original name: NOTIF_CENTER_ITEMS_ACK, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6608,7 +6608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.NOTIF_CENTER_ITEMS_BULK_ACK = var40;
             var40 = '/users/@me/notification-settings/snapshots';
             var25.NOTIFICATION_SNAPSHOTS = var40;
-            var40 = function(arg0) { // Original name: NOTIFICATION_SNAPSHOT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6618,7 +6618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.NOTIFICATION_SNAPSHOT = var40;
-            var40 = function(arg0) { // Original name: RESTORE_NOTIFICATION_SNAPSHOT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6629,7 +6629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.RESTORE_NOTIFICATION_SNAPSHOT = var40;
-            var40 = function(arg0) { // Original name: GUILD_ADMIN_SERVER_ELIGIBILITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6640,7 +6640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ADMIN_SERVER_ELIGIBILITY = var40;
-            var40 = function(arg0) { // Original name: JOIN_ADMIN_SERVER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6657,7 +6657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.AUTH_SESSION_NOTIFICATIONS_DEBUG = var40;
             var40 = '/auth/sessions/logout';
             var25.AUTH_SESSIONS_LOGOUT = var40;
-            var40 = function(arg0) { // Original name: CUSTOM_CALL_SOUNDS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6668,7 +6668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CUSTOM_CALL_SOUNDS = var40;
-            var40 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6679,7 +6679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.VOICE_CHANNEL_EFFECTS = var40;
-            var40 = function(arg0, arg1) { // Original name: APPLICATION_SUBSCRIPTION_GROUP_LISTING, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6691,7 +6691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.APPLICATION_SUBSCRIPTION_GROUP_LISTING = var40;
-            var40 = function(arg0) { // Original name: GUILD_ENTITLEMENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6702,7 +6702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_ENTITLEMENTS = var40;
-            var40 = function(arg0, arg1) { // Original name: GUILD_ROLE_CONNECTIONS_CONFIGURATION, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -6719,7 +6719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA = var40;
             var40 = '/consoles/connect-request';
             var25.CONNECT_REQUEST_CREATE = var40;
-            var40 = function(arg0) { // Original name: CONNECT_REQUEST, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6729,7 +6729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONNECT_REQUEST = var40;
-            var40 = function(arg0) { // Original name: CONSOLES_DEVICES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6740,7 +6740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONSOLES_DEVICES = var40;
-            var40 = function(arg0, arg1) { // Original name: CONSOLES_DEVICES_COMMANDS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -6753,7 +6753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONSOLES_DEVICES_COMMANDS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: CONSOLES_DEVICES_COMMAND, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -6771,7 +6771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.ELIGIBLE_APPLICATION_SUBSCRIPTION_GUILDS = var40;
             var40 = '/users/@me/applications/role-connections';
             var25.APPLICATION_USER_ROLE_CONNECTIONS = var40;
-            var40 = function(arg0, arg1) { // Original name: SHARED_CANVAS_LINES, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -6784,7 +6784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SHARED_CANVAS_LINES = var40;
-            var40 = function(arg0, arg1) { // Original name: SHARED_CANVAS_EMOJI_HOSES, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -6797,7 +6797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SHARED_CANVAS_EMOJI_HOSES = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: SHARED_CANVAS_EMOJI_HOSE, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -6815,7 +6815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.BURST_CREDIT_BALANCE = var40;
             var40 = '/users/@me/saved-messages';
             var25.GET_SAVED_MESSAGES = var40;
-            var40 = function(arg0, arg1) { // Original name: PUT_SAVED_MESSAGE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6827,7 +6827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.PUT_SAVED_MESSAGE = var40;
-            var40 = function(arg0, arg1) { // Original name: DELETE_SAVED_MESSAGE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6843,7 +6843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GET_REFERRALS_REMAINING = var40;
             var40 = '/users/@me/referrals/eligible-users';
             var25.GET_REFERRAL_ELIGIBLE_USERS = var40;
-            var40 = function(arg0) { // Original name: CREATE_REFERRAL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6853,7 +6853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATE_REFERRAL = var40;
-            var40 = function(arg0) { // Original name: FAMILY_CENTER_TEEN_ACTIVITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6866,7 +6866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.FAMILY_CENTER_TEEN_ACTIVITY = var40;
             var40 = '/family-center/@me';
             var25.FAMILY_CENTER_TEEN_ACTIVITY_ME = var40;
-            var40 = function(arg0, arg1, arg2, arg3) { // Original name: FAMILY_CENTER_TEEN_ACTIVITY_MORE, environment: var62
+            var40 = function arg0, arg1, arg2, arg3() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -6887,7 +6887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.FAMILY_CENTER_LINKED_USERS = var40;
             var40 = '/family-center/@me/link-code';
             var25.FAMILY_CENTER_LINK_CODE = var40;
-            var40 = function(arg0) { // Original name: FAMILY_CENTER_FETCH_TEEN_USER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6897,7 +6897,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.FAMILY_CENTER_FETCH_TEEN_USER = var40;
-            var40 = function(arg0) { // Original name: FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6908,7 +6908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS = var40;
-            var40 = function(arg0) { // Original name: FAMILY_CENTER_TEEN_SETTINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6919,7 +6919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.FAMILY_CENTER_TEEN_SETTINGS = var40;
-            var40 = function(arg0) { // Original name: FAMILY_CENTER_TEEN_CONSENTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6932,7 +6932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.FAMILY_CENTER_TEEN_CONSENTS = var40;
             var40 = '/family-center/share-iar-with-parents';
             var25.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS = var40;
-            var40 = function(arg0) { // Original name: REFERRAL_OFFER_ID_RESOLVE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -6944,7 +6944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.REFERRAL_OFFER_ID_RESOLVE = var40;
             var40 = '/applications/shelf';
             var25.APPLICATIONS_SHELF = var40;
-            var40 = function(arg0) { // Original name: BADGE_ICON, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -6959,7 +6959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.FINISH_MFA_CHECK = var40;
             var40 = '/user-offers/reverse-trial';
             var25.CREATE_REVERSE_TRIAL = var40;
-            var40 = function(arg0, arg1) { // Original name: CREATE_USER_OFFER, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6971,7 +6971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CREATE_USER_OFFER = var40;
-            var40 = function(arg0, arg1) { // Original name: UPDATE_USER_OFFER, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -6987,7 +6987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.USER_OFFERS = var40;
             var40 = '/user-offer-ids';
             var25.USER_OFFER_IDS = var40;
-            var40 = function(arg0) { // Original name: GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7002,7 +7002,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.EMOJI_CAPTIONS_GET = var40;
             var40 = '/safety-hub/@me';
             var25.SAFETY_HUB = var40;
-            var40 = function(arg0) { // Original name: SAFETY_HUB_REQUEST_REVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7012,7 +7012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SAFETY_HUB_REQUEST_REVIEW = var40;
-            var40 = function(arg0) { // Original name: SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7032,7 +7032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS = var40;
             var40 = '/initiate-prompts';
             var25.INITIATE_CHANNEL_PROMPTS = var40;
-            var40 = function(arg0) { // Original name: FORCE_SEND_PROMPT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7047,7 +7047,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE = var40;
             var40 = '/attachments/sender-report-false-positive';
             var25.EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE = var40;
-            var40 = function(arg0) { // Original name: BULK_GUILD_BAN, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7058,7 +7058,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.BULK_GUILD_BAN = var40;
-            var40 = function(arg0) { // Original name: EXPLICIT_MEDIA_SCAN_MESSAGES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7071,7 +7071,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.EXPLICIT_MEDIA_SCAN_MESSAGES = var40;
             var40 = '/messages/explicit-media';
             var25.EXPLICIT_MEDIA_SCAN_MULTI_CHANNEL_MESSAGES = var40;
-            var40 = function(arg0, arg1) { // Original name: POLL_ANSWERS, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -7084,7 +7084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.POLL_ANSWERS = var40;
-            var40 = function(arg0, arg1) { // Original name: POLL_EXPIRE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -7097,7 +7097,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.POLL_EXPIRE = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: POLL_ANSWER_VOTERS, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var6 = var0.concat;
@@ -7113,7 +7113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.POLL_ANSWER_VOTERS = var40;
             var40 = '/premium-marketing';
             var25.PREMIUM_MARKETING = var40;
-            var40 = function(arg0) { // Original name: MARKETING_CAMPAIGN_ELIGIBILITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7128,7 +7128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.QUESTS_CURRENT_QUESTS = var40;
             var40 = '/quests/@me/claimed';
             var25.QUESTS_CLAIMED_QUESTS = var40;
-            var40 = function(arg0) { // Original name: QUEST, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7138,7 +7138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUEST = var40;
-            var40 = function(arg0) { // Original name: QUEST_PREVIEW, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7149,7 +7149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUEST_PREVIEW = var40;
-            var40 = function(arg0) { // Original name: QUESTS_ENROLL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7160,7 +7160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_ENROLL = var40;
-            var40 = function(arg0) { // Original name: QUEST_ON_CONSOLE_START, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7171,7 +7171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUEST_ON_CONSOLE_START = var40;
-            var40 = function(arg0) { // Original name: QUEST_ON_CONSOLE_STOP, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7182,7 +7182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUEST_ON_CONSOLE_STOP = var40;
-            var40 = function(arg0) { // Original name: QUESTS_HEARTBEAT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7193,7 +7193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_HEARTBEAT = var40;
-            var40 = function(arg0) { // Original name: QUESTS_VIDEO_PROGRESS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7204,7 +7204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_VIDEO_PROGRESS = var40;
-            var40 = function(arg0) { // Original name: QUESTS_REWARD_CODE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7215,7 +7215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_REWARD_CODE = var40;
-            var40 = function(arg0) { // Original name: QUESTS_CLAIM_REWARD, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7226,7 +7226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_CLAIM_REWARD = var40;
-            var40 = function(arg0, arg1) { // Original name: QUESTS_DISMISS_CONTENT, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -7239,7 +7239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_DISMISS_CONTENT = var40;
-            var40 = function(arg0) { // Original name: QUESTS_PREVIEW_STATUS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7250,7 +7250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_PREVIEW_STATUS = var40;
-            var40 = function(arg0) { // Original name: QUESTS_PREVIEW_DISMISSIBILITY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7261,7 +7261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.QUESTS_PREVIEW_DISMISSIBILITY = var40;
-            var40 = function(arg0) { // Original name: QUESTS_PREVIEW_COMPLETE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7276,7 +7276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.QUESTS_RESET_RECENT_QUEST_COMPLETIONS = var40;
             var40 = '/quests/decision';
             var25.QUEST_FETCH_QUEST_TO_DELIVER = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: QUEST_EARNED_DECISION, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 _fun7844: for (var _fun7844_ip = 0;;) switch (_fun7844_ip) {
                     case 0:
                         var2 = arg2;
@@ -7309,7 +7309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.QUEST_EARNED_DECISION = var40;
             var40 = '/attachments/refresh-urls';
             var25.ATTACHMENTS_REFRESH_URLS = var40;
-            var40 = function(arg0) { // Original name: GAME_INVITE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7321,7 +7321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GAME_INVITE = var40;
             var40 = '/game-invite/@me';
             var25.GAME_INVITES = var40;
-            var40 = function(arg0) { // Original name: ADD_SAFETY_WARNING, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7332,7 +7332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.ADD_SAFETY_WARNING = var40;
-            var40 = function(arg0) { // Original name: DELETE_SAFETY_WARNINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7343,7 +7343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.DELETE_SAFETY_WARNINGS = var40;
-            var40 = function(arg0) { // Original name: SAFETY_WARNING_FALSE_POSITIVE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7354,7 +7354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SAFETY_WARNING_FALSE_POSITIVE = var40;
-            var40 = function(arg0) { // Original name: MY_CONTENT_INVENTORY, environment: var62
+            var40 = function arg0() {
                 _fun7849: for (var _fun7849_ip = 0;;) switch (_fun7849_ip) {
                     case 0:
                         var3 = arg0;
@@ -7378,7 +7378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var25.MY_CONTENT_INVENTORY = var40;
-            var40 = function(arg0) { // Original name: CONTENT_INVENTORY_OUTBOX, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7389,7 +7389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONTENT_INVENTORY_OUTBOX = var40;
-            var40 = function(arg0) { // Original name: DELETE_MY_CONTENT_INVENTORY_OUTBOX_ENTRY_HISTORY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7402,7 +7402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.DELETE_MY_CONTENT_INVENTORY_OUTBOX_ENTRY_HISTORY = var40;
             var40 = '/content-inventory/users/@me/spotify';
             var25.MY_SPOTIFY_CONTENT_INVENTORY = var40;
-            var40 = function(arg0) { // Original name: MY_CONTENT_INVENTORY_APPLICATION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7414,7 +7414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.MY_CONTENT_INVENTORY_APPLICATION = var40;
             var40 = '/users/@me/tenure-reward/sync';
             var25.TENURE_REWARD_SYNC = var40;
-            var40 = function(arg0) { // Original name: STORE_LAYOUT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7429,7 +7429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.CHECKOUT_RECOVERY = var40;
             var40 = '/users/@me/billing/campaign-context';
             var25.CAMPAIGN_CONTEXT = var40;
-            var40 = function(arg0) { // Original name: SIMILAR_GAMES, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7439,12 +7439,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SIMILAR_GAMES = var40;
-            var40 = function() { // Original name: VOICE_PUBLIC_KEYS, environment: var62
+            var40 = function() {
                 var0 = '/voice/public-keys';
                 return var0;
             };
             var25.VOICE_PUBLIC_KEYS = var40;
-            var40 = function(arg0) { // Original name: VOICE_MATCH_PUBLIC_KEY, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7457,7 +7457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.VOICE_MATCH_PUBLIC_KEY = var40;
             var40 = '/auth/revert';
             var25.ACCOUNT_REVERT = var40;
-            var40 = function(arg0) { // Original name: VIRTUAL_CURRENCY_SKU_REDEEM, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7470,7 +7470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.VIRTUAL_CURRENCY_SKU_REDEEM = var40;
             var40 = '/users/@me/virtual-currency/balance';
             var25.VIRTUAL_CURRENCY_USER_BALANCE = var40;
-            var40 = function(arg0) { // Original name: IGNORE_USER, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7483,7 +7483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.IGNORE_USER = var40;
             var40 = '/users/@me/scheduled-messages';
             var25.SCHEDULED_MESSAGES = var40;
-            var40 = function(arg0) { // Original name: SCHEDULED_MESSAGE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7497,7 +7497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.HOLIDAY_REDEEM_PRIZE = var40;
             var40 = '/debug/applied-boosts/ends-at';
             var25.APPLIED_BOOST_MODIFY_END_DATE = var40;
-            var40 = function(arg0) { // Original name: SEND_POWERUPS_SYSTEM_MESSAGE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7520,7 +7520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.APEX_EXPERIMENTS = var40;
             var40 = '/conference-mode/guilds';
             var25.CONFERENCE_MODE_GUILDS = var40;
-            var40 = function(arg0) { // Original name: CONFERENCE_MODE_VOICE_CHANNELS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7531,7 +7531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONFERENCE_MODE_VOICE_CHANNELS = var40;
-            var40 = function(arg0) { // Original name: CONFERENCE_MODE_VOICE_CHANNEL, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -7541,7 +7541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.CONFERENCE_MODE_VOICE_CHANNEL = var40;
-            var40 = function(arg0) { // Original name: CONFERENCE_MODE_VOICE_CHANNEL_USERS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7556,7 +7556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.CONFERENCE_MODE_EVENTS = var40;
             var40 = '/conference-mode/conference';
             var25.CONFERENCE_MODE_CONFERENCES = var40;
-            var40 = function(arg0) { // Original name: GUILD_MIGRATE_PIN_PERMISSION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7567,7 +7567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GUILD_MIGRATE_PIN_PERMISSION = var40;
-            var40 = function(arg0) { // Original name: GET_APPLICATION_TOKENS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7578,7 +7578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GET_APPLICATION_TOKENS = var40;
-            var40 = function(arg0) { // Original name: GUILD_MIGRATE_SLOWMODE_PERMISSION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7591,7 +7591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.GUILD_MIGRATE_SLOWMODE_PERMISSION = var40;
             var40 = '/quests/placement-alpha';
             var25.QUEST_PLACEMENT = var40;
-            var40 = function(arg0, arg1) { // Original name: GAME_UPDATE, environment: var62
+            var40 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var4 = var0.concat;
@@ -7603,7 +7603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.GAME_UPDATE = var40;
-            var40 = function(arg0) { // Original name: HAVEN_CONNECT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7614,7 +7614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.HAVEN_CONNECT = var40;
-            var40 = function(arg0) { // Original name: HAVEN_DISCONNECT, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7625,7 +7625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.HAVEN_DISCONNECT = var40;
-            var40 = function(arg0) { // Original name: HAVEN_UPDATE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -7831,7 +7831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var40 = '/developers/docs/game-and-server-management/alpha-and-beta-testing';
             var40 = var41.bind(var165)(var42, var40);
             var22.API_DOCS_GAME_AND_SERVER_MANAGEMENT = var40;
-            var40 = function(arg0) { // Original name: API_DOCS_APPLICATION_SKUS_INDEX, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -7878,7 +7878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var40 = '/developers/teams';
             var40 = var41.bind(var165)(var42, var40);
             var22.DEVELOPER_PORTAL_TEAMS = var40;
-            var40 = function(arg0) { // Original name: DEVELOPER_PORTAL_PAYOUT_SETTINGS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -7893,7 +7893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var22.DEVELOPER_PORTAL_PAYOUT_SETTINGS = var40;
-            var40 = function(arg0) { // Original name: DEVELOPER_PORTAL_GUILD_ANALYTICS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -7907,7 +7907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var22.DEVELOPER_PORTAL_GUILD_ANALYTICS = var40;
-            var40 = function(arg0, arg1, arg2) { // Original name: DEVELOPER_PORTAL_LOGIN_HANDOFF, environment: var62
+            var40 = function arg0, arg1, arg2() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -7929,7 +7929,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var22.DEVELOPER_PORTAL_LOGIN_HANDOFF = var40;
-            var40 = function(arg0) { // Original name: DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -8068,7 +8068,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var22.SLASH_COMMANDS = var40;
             var40 = 'https://support.discord.com/hc/en-us/articles/10394859532823';
             var22.GUILD_ONBOARDING_EXAMPLES = var40;
-            var40 = function(arg0) { // Original name: ROLE_SUBSCRIPTION_STORE_PAGE, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var1 = var0.window;
                 var1 = var1.GLOBAL_ENV;
@@ -8102,7 +8102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'DEVELOPER_PORTAL_GUILD_ANALYTICS': null,
                 'DEVELOPER_PORTAL_TEAMS': '/developers/teams'
             };
-            var40 = function(arg0) { // Original name: DEVELOPER_PORTAL_GUILD_ANALYTICS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -8112,7 +8112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var22.DEVELOPER_PORTAL_GUILD_ANALYTICS = var40;
-            var40 = function(arg0) { // Original name: DEVELOPER_PORTAL_EDIT_PAYOUTS, environment: var62
+            var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -14761,7 +14761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var45 = var1.Object;
             var44 = var45.freeze;
             var43 = {};
-            var28 = function(arg0, arg1) { // Original name: STORAGE_MANIFEST, environment: var62
+            var28 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -14774,7 +14774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var43.STORAGE_MANIFEST = var28;
-            var28 = function(arg0) { // Original name: INSTALL_DIR, environment: var62
+            var28 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var3 = var0.concat;
@@ -14787,7 +14787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var43.INSTALL_DIR = var28;
             var28 = ['**/*'];
             var43.ROOT_PATTERN = var28;
-            var28 = function(arg0, arg1) { // Original name: ROOT_STORAGE_PATH, environment: var62
+            var28 = function arg0, arg1() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var5 = var0.concat;
@@ -16451,7 +16451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var232 = var1.Object;
             var4 = var232.freeze;
             var1 = {};
-            var233 = function(arg0) { // Original name: APPLICATIONS, environment: var62
+            var233 = function arg0() {
                 _fun7882: for (var _fun7882_ip = 0;;) switch (_fun7882_ip) {
                     case 0:
                         var3 = arg0;
@@ -16472,7 +16472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.APPLICATIONS = var233;
-            var233 = function(arg0) { // Original name: APP_PREMIUM_BUTTON, environment: var62
+            var233 = function arg0() {
                 _fun7883: for (var _fun7883_ip = 0;;) switch (_fun7883_ip) {
                     case 0:
                         var3 = arg0;
@@ -16493,7 +16493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.APP_PREMIUM_BUTTON = var233;
-            var233 = function(arg0, arg1) { // Original name: CUSTOM_ACTIVITY_LINK, environment: var62
+            var233 = function arg0, arg1() {
                 _fun7884: for (var _fun7884_ip = 0;;) switch (_fun7884_ip) {
                     case 0:
                         var5 = arg0;
@@ -16524,7 +16524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.CUSTOM_ACTIVITY_LINK = var233;
-            var233 = function(arg0) { // Original name: SKU, environment: var62
+            var233 = function arg0() {
                 _fun7885: for (var _fun7885_ip = 0;;) switch (_fun7885_ip) {
                     case 0:
                         var3 = arg0;
@@ -16545,7 +16545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.SKU = var233;
-            var233 = function(arg0) { // Original name: STORE_LISTING, environment: var62
+            var233 = function arg0() {
                 _fun7886: for (var _fun7886_ip = 0;;) switch (_fun7886_ip) {
                     case 0:
                         var3 = arg0;
@@ -16566,7 +16566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.STORE_LISTING = var233;
-            var233 = function(arg0) { // Original name: SUBSCRIPTION_PLANS, environment: var62
+            var233 = function arg0() {
                 _fun7887: for (var _fun7887_ip = 0;;) switch (_fun7887_ip) {
                     case 0:
                         var3 = arg0;
@@ -16587,7 +16587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.SUBSCRIPTION_PLANS = var233;
-            var233 = function(arg0) { // Original name: SUBSCRIPTION_PLAN, environment: var62
+            var233 = function arg0() {
                 _fun7888: for (var _fun7888_ip = 0;;) switch (_fun7888_ip) {
                     case 0:
                         var3 = arg0;
@@ -16608,17 +16608,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.SUBSCRIPTION_PLAN = var233;
-            var233 = function() { // Original name: USER_COUNTRY_CODE, environment: var62
+            var233 = function() {
                 var0 = 'location-metadata';
                 return var0;
             };
             var1.USER_COUNTRY_CODE = var233;
-            var233 = function() { // Original name: APPLICATION_WIDGET_APPLICATION_CONFIGS, environment: var62
+            var233 = function() {
                 var0 = 'application-widget-application-configs';
                 return var0;
             };
             var1.APPLICATION_WIDGET_APPLICATION_CONFIGS = var233;
-            var233 = function(arg0) { // Original name: USER_APPLICATION_IDENTITIES, environment: var62
+            var233 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -16628,7 +16628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.USER_APPLICATION_IDENTITIES = var233;
-            var233 = function(arg0) { // Original name: ACTIVITIES_DISCORD_CONFIG, environment: var62
+            var233 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
                 var2 = var0.concat;
@@ -16638,7 +16638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.ACTIVITIES_DISCORD_CONFIG = var233;
-            var233 = function(arg0, arg1) { // Original name: GAME_UPDATE, environment: var62
+            var233 = function arg0, arg1() {
                 _fun7893: for (var _fun7893_ip = 0;;) switch (_fun7893_ip) {
                     case 0:
                         var5 = arg1;
@@ -16661,7 +16661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.GAME_UPDATE = var233;
-            var233 = function(arg0) { // Original name: __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU, environment: var62
+            var233 = function arg0() {
                 _fun7894: for (var _fun7894_ip = 0;;) switch (_fun7894_ip) {
                     case 0:
                         var3 = arg0;

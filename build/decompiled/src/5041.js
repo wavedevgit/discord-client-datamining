@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.mount = var6;
     var1.data = var0;
     var _closure1_slot14 = var1;
-    var1 = function(arg0, arg1) { // Original name: BottomSheetModalComponent, environment: var3
+    var1 = function arg0, arg1() {
         _fun45357: for (var _fun45357_ip = 0;;) switch (_fun45357_ip) {
             case 0:
                 var6 = arg0;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var19.bind(var5)(var4, var18);
                 var _closure2_slot21 = var4;
                 var18 = _closure1_slot6;
-                var31 = function() { // Original name: resetVariables, environment: var3
+                var31 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 8;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var19[2] = var30;
                 var19[3] = var29;
                 var19[4] = var11;
-                var11 = function() { // Original name: unmount, environment: var3
+                var11 = function() {
                     _fun45360: for (var _fun45360_ip = 0;;) switch (_fun45360_ip) {
                         case 0:
                             var0 = _closure2_slot20;
@@ -667,7 +667,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var19[0] = var4;
                 var19[1] = var28;
                 var19[2] = var9;
-                var9 = function(arg0) { // Original name: handlePresent, environment: var3
+                var9 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var0 = global;
@@ -699,7 +699,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var19[1] = var11;
                 var19[2] = var4;
                 var19[3] = var23;
-                var9 = function(arg0) { // Original name: handleDismiss, environment: var3
+                var9 = function arg0() {
                     _fun45369: for (var _fun45369_ip = 0;;) switch (_fun45369_ip) {
                         case 0:
                             var0 = _closure2_slot16;
@@ -789,7 +789,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot31 = var9;
                 var19 = new Array(1);
                 var19[0] = var25;
-                var9 = function() { // Original name: handleMinimize, environment: var3
+                var9 = function() {
                     _fun45370: for (var _fun45370_ip = 0;;) switch (_fun45370_ip) {
                         case 0:
                             var1 = _closure2_slot18;
@@ -838,7 +838,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var9 = var18.bind(var5)(var9, var19);
                 var _closure2_slot32 = var9;
-                var19 = function() { // Original name: handleRestore, environment: var3
+                var19 = function() {
                     _fun45371: for (var _fun45371_ip = 0;;) switch (_fun45371_ip) {
                         case 0:
                             var1 = _closure2_slot18;
@@ -884,7 +884,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9[0] = var4;
                 var9[1] = var11;
                 var9[2] = var6;
-                var6 = function() { // Original name: handlePortalOnUnmount, environment: var3
+                var6 = function() {
                     _fun45372: for (var _fun45372_ip = 0;;) switch (_fun45372_ip) {
                         case 0:
                             var1 = _closure2_slot15;
@@ -945,7 +945,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var6 = var18.bind(var5)(var6, var9);
-                var19 = function(arg0) { // Original name: handlePortalRender, environment: var3
+                var19 = function arg0() {
                     _fun45373: for (var _fun45373_ip = 0;;) switch (_fun45373_ip) {
                         case 0:
                             var0 = _closure2_slot20;
@@ -967,7 +967,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var18.bind(var5)(var19, var9);
                 var19 = new Array(1);
                 var19[0] = var16;
-                var16 = function(arg0, arg1, arg2) { // Original name: handleBottomSheetOnChange, environment: var3
+                var16 = function arg0, arg1, arg2() {
                     _fun45374: for (var _fun45374_ip = 0;;) switch (_fun45374_ip) {
                         case 0:
                             var4 = arg0;
@@ -1024,7 +1024,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var16 = new Array(2);
                 var16[0] = var27;
                 var16[1] = var11;
-                var11 = function() { // Original name: handleBottomSheetOnClose, environment: var3
+                var11 = function() {
                     _fun45376: for (var _fun45376_ip = 0;;) switch (_fun45376_ip) {
                         case 0:
                             var1 = _closure2_slot18;

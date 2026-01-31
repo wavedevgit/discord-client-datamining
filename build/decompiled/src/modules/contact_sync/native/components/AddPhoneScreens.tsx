@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/AddPhoneScreens.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: AddPhoneScreen, environment: var1
+    var3 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var1 = 10;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.CONTACT_SYNC;
         var0.reason = var6;
         var0.header = var5;
-        var4 = function(arg0) { // Original name: onComplete, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 15;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.AddPhoneScreen = var3;
-    var3 = function() { // Original name: VerifyPhoneScreen, environment: var1
+    var3 = function() {
         var1 = _closure1_slot11;
         var3 = undefined;
         var5 = var1.bind(var3)();
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var5 = var5.bind(var3)();
         var0.onCodeEnteredIntercept = var5;
-        var4 = function(arg0) { // Original name: onVerified, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 15;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.VerifyPhoneScreen = var3;
-    var1 = function() { // Original name: VerifyPasswordScreen, environment: var1
+    var1 = function() {
         var10 = _closure1_slot5;
         var2 = var10.useState;
         var1 = false;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.parentLoading = var6;
         var5 = var5.redesignContainer;
         var0.style = var5;
-        var5 = function(arg0) { // Original name: onSubmit, environment: var4
+        var5 = function arg0() {
             var1 = _closure2_slot0;
             var5 = undefined;
             var0 = true;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onSubmit = var5;
-        var5 = function() { // Original name: onError, environment: var4
+        var5 = function() {
             var2 = _closure2_slot0;
             var1 = undefined;
             var0 = false;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onError = var5;
-        var4 = function() { // Original name: onSuccess, environment: var4
+        var4 = function() {
             var0 = undefined;
             return var0;
         };

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var3 = /\.jpe?g$/i;
     var6.reName = var3;
-    var3 = function(arg0) { // Original name: name, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var8 = /\.jfif$/i;
     var6.reName = var8;
-    var8 = function(arg0) { // Original name: name, environment: var1
+    var8 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.png$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.gif$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.webp$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.avif$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.heic$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.heif$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.dng$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.mov$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var8 = /\.qt$/i;
     var6.reName = var8;
-    var8 = function(arg0) { // Original name: name, environment: var1
+    var8 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.avi$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.mp4$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var7 = /\.webm$/i;
     var6.reName = var7;
-    var7 = function(arg0) { // Original name: name, environment: var1
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var3 = var0.concat;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 524288000;
     var2.MAX_TOTAL_ATTACHMENT_SIZE = var3;
-    var3 = function(arg0) { // Original name: getAttachmentPayload, environment: var1
+    var3 = function arg0() {
         _fun36831: for (var _fun36831_ip = 0;;) switch (_fun36831_ip) {
             case 0:
                 var1 = arg0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAttachmentPayload = var3;
-    var3 = function(arg0) { // Original name: getFileData, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getFileData = var3;
-    var3 = function(arg0) { // Original name: getFileContentLength, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -722,7 +722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getFileContentLength = var3;
-    var3 = function(arg0) { // Original name: getFile, environment: var1
+    var3 = function arg0() {
         _fun36841: for (var _fun36841_ip = 0;;) switch (_fun36841_ip) {
             case 0:
                 var1 = arg0;
@@ -971,7 +971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFile = var3;
-    var1 = function(arg0) { // Original name: getOptimalChunkSize, environment: var1
+    var1 = function arg0() {
         _fun36844: for (var _fun36844_ip = 0;;) switch (_fun36844_ip) {
             case 0:
                 var3 = arguments[1];

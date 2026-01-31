@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var3 = function(arg0) { // Original name: openOAuth2Modal, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var4 = _closure1_slot1;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var2;
         var11 = var7;
         var7 = copyDataProperties(var12, var11);
-        var7 = function() { // Original name: dismissOAuthModal, environment: var6
+        var7 = function() {
             _fun62093: for (var _fun62093_ip = 0;;) switch (_fun62093_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'utils/native/ApplicationUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: installApplication, environment: var1
+    var4 = function arg0() {
         _fun62094: for (var _fun62094_ip = 0;;) switch (_fun62094_ip) {
             case 0:
                 var0 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12.bind(var13)(var11);
             case 316:
                 var0.permissions = var8;
-                var8 = function(arg0) { // Original name: callback, environment: var3
+                var8 = function arg0() {
                     _fun62098: for (var _fun62098_ip = 0;;) switch (_fun62098_ip) {
                         case 0:
                             var2 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.guildId = var7;
                 var1.channelId = var6;
                 var1.disableGuildSelect = var5;
-                var5 = function(arg0) { // Original name: callback, environment: var3
+                var5 = function arg0() {
                     _fun62097: for (var _fun62097_ip = 0;;) switch (_fun62097_ip) {
                         case 0:
                             var2 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.handleClick;
                 var0 = {};
                 var0.href = var4;
-                var3 = function() { // Original name: onConfirm, environment: var3
+                var3 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 4;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.installApplication = var4;
     var2.openOAuth2Modal = var3;
-    var1 = function(arg0) { // Original name: installPrivateChannelIntegration, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.applicationId;
         var7 = var0.channelId;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8[0] = var9;
         var2.scopes = var8;
         var2.channelId = var7;
-        var7 = function() { // Original name: dismissOAuthModal, environment: var7
+        var7 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot3;
             var1 = 7;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Header, environment: var1
+    var0 = function arg0() {
         _fun104664: for (var _fun104664_ip = 0;;) switch (_fun104664_ip) {
             case 0:
                 var1 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.WYj55Y;
                 var2 = var7.bind(var8)(var2);
                 var1.label = var2;
-                var2 = function() { // Original name: action, environment: var6
+                var2 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 14;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'align': 'below'
                 };
                 var0.items = var7;
-                var6 = function(arg0) { // Original name: children, environment: var6
+                var6 = function arg0() {
                     var2 = arg0;
                     var5 = var2.ref;
                     var0 = null;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: StandaloneChannelScreen, environment: var1
+    var1 = function arg0() {
         _fun104670: for (var _fun104670_ip = 0;;) switch (_fun104670_ip) {
             case 0:
                 var0 = arg0;
@@ -828,7 +828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var19 = false;
                 var0.accessible = var19;
-                var4 = function() { // Original name: onAccessibilityEscape, environment: var4
+                var4 = function() {
                     _fun104673: for (var _fun104673_ip = 0;;) switch (_fun104673_ip) {
                         case 0:
                             var1 = _closure2_slot4;

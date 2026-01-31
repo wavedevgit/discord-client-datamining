@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useExternalPipAspectRatioUpdater, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var4 = arg1;
         var2 = arg2;
         var _closure2_slot0 = var4;

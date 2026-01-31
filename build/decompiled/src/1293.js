@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: isMessagesProxy, environment: var0
+    var2 = function arg0() {
         var0 = global;
         var0 = var0.Symbol;
         var1 = var0.toStringTag;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0, arg1) { // Original name: chainMessagesObjects, environment: var0
+    var2 = function arg0, arg1() {
         _fun14026: for (var _fun14026_ip = 0;;) switch (_fun14026_ip) {
             case 0:
                 var1 = arg0;
@@ -109,10 +109,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.chainMessagesObjects = var2;
-    var0 = function(arg0) { // Original name: makeMessagesProxy, environment: var0
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: makeBind, environment: var4
+        var0 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var0 = function(arg0) { // Environment: var0
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = global;
         var5 = var2.Proxy;
         var0 = {};
-        var6 = function(arg0) { // Original name: ownKeys, environment: var4
+        var6 = function arg0() {
             var0 = global;
             var2 = var0.Reflect;
             var1 = var2.ownKeys;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.ownKeys = var6;
-        var6 = function(arg0, arg1) { // Original name: getOwnPropertyDescriptor, environment: var4
+        var6 = function arg0, arg1() {
             _fun14031: for (var _fun14031_ip = 0;;) switch (_fun14031_ip) {
                 case 0:
                     var3 = arg0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.getOwnPropertyDescriptor = var6;
-        var4 = function(arg0, arg1) { // Original name: get, environment: var4
+        var4 = function arg0, arg1() {
             _fun14032: for (var _fun14032_ip = 0;;) switch (_fun14032_ip) {
                 case 0:
                     var3 = arg0;

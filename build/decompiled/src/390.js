@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.fill = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot14 = var3;
-    var1 = function(arg0) { // Original name: ScrollViewStickyHeader, environment: var1
+    var1 = function arg0() {
         _fun5717: for (var _fun5717_ip = 0;;) switch (_fun5717_ip) {
             case 0:
                 var2 = arg0;
@@ -606,7 +606,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.collapsable = var11;
                 var9 = var9.nativeID;
                 var0.nativeID = var9;
-                var8 = function(arg0) { // Original name: _onLayout, environment: var8
+                var8 = function arg0() {
                     _fun5726: for (var _fun5726_ip = 0;;) switch (_fun5726_ip) {
                         case 0:
                             var3 = arg0;

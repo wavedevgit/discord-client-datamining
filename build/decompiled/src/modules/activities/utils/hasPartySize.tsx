@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/activities/utils/hasPartySize.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: hasPartySize, environment: var1
+    var1 = function arg0() {
         _fun92470: for (var _fun92470_ip = 0;;) switch (_fun92470_ip) {
             case 0:
                 var1 = arg0;

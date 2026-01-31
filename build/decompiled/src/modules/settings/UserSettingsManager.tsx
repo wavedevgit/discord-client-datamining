@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114286: for (var _fun114286_ip = 0;;) switch (_fun114286_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: UserSettingsManager, environment: var5
+        var3 = function arg0() {
             _fun114290: for (var _fun114290_ip = 0;;) switch (_fun114290_ip) {
                 case 0:
                     var4 = this;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var1 = {};
-                    var2 = function() { // Original name: POST_CONNECTION_OPEN, environment: var2
+                    var2 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.setVerifyTimezone;
                         var0 = var0.bind(var1)();
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'setVerifyTimezone';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = true;
             _closure1_slot7 = var0;
             var0 = undefined;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'ensureTimezoneUpdated';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun114293: for (var _fun114293_ip = 0;;) switch (_fun114293_ip) {
                 case 0:
                     var1 = _closure1_slot7;

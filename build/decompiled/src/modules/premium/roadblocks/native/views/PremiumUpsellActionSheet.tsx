@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getPageContent, environment: var1
+    var0 = function arg0() {
         _fun61372: for (var _fun61372_ip = 0;;) switch (_fun61372_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: AlwaysCompressImagesSwitch, environment: var1
+    var0 = function() {
         _fun61373: for (var _fun61373_ip = 0;;) switch (_fun61373_ip) {
             case 0:
                 var1 = _closure1_slot20;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: PremiumUpsellImage, environment: var1
+    var0 = function arg0() {
         _fun61376: for (var _fun61376_ip = 0;;) switch (_fun61376_ip) {
             case 0:
                 var0 = arg0;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/roadblocks/native/views/PremiumUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         _fun61377: for (var _fun61377_ip = 0;;) switch (_fun61377_ip) {
             case 0:
                 var0 = arg0;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 300:
                 var3 = var2.TIER_0;
             case 306:
-                var2 = function(arg0, arg1, arg2, arg3) { // Original name: getPageConfig, environment: var18
+                var2 = function arg0, arg1, arg2, arg3() {
                     _fun61381: for (var _fun61381_ip = 0;;) switch (_fun61381_ip) {
                         case 0:
                             var0 = _closure1_slot16;
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var18 = {};
                             var22 = arg3;
                             var18.guildId = var22;
-                            var22 = function() { // Original name: onClick, environment: var22
+                            var22 = function() {
                                 var5 = _closure1_slot1;
                                 var6 = _closure1_slot2;
                                 var0 = 16;
@@ -1049,7 +1049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.ButtonColors;
                 var19 = var19.GREEN;
                 var12.color = var19;
-                var19 = function() { // Original name: renderIcon, environment: var18
+                var19 = function() {
                     _fun61385: for (var _fun61385_ip = 0;;) switch (_fun61385_ip) {
                         case 0:
                             var0 = _closure2_slot6;
@@ -1076,7 +1076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var12.renderIcon = var19;
-                var18 = function() { // Original name: renderLinearGradient, environment: var18
+                var18 = function() {
                     _fun61386: for (var _fun61386_ip = 0;;) switch (_fun61386_ip) {
                         case 0:
                             var3 = _closure1_slot18;

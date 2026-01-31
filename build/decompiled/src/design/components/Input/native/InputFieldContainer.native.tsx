@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: useInputStyles, environment: var1
+    var3 = function arg0() {
         _fun47926: for (var _fun47926_ip = 0;;) switch (_fun47926_ip) {
             case 0:
                 var0 = arg0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Input/native/InputFieldContainer.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useInputStyles = var3;
-    var1 = function(arg0) { // Original name: InputFieldContainer, environment: var1
+    var1 = function arg0() {
         _fun47928: for (var _fun47928_ip = 0;;) switch (_fun47928_ip) {
             case 0:
                 var4 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var11[var4];
                 var2 = var9.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: s, environment: var0
+                var0 = function() {
                     _fun47929: for (var _fun47929_ip = 0;;) switch (_fun47929_ip) {
                         case 0:
                             var2 = _closure2_slot2;

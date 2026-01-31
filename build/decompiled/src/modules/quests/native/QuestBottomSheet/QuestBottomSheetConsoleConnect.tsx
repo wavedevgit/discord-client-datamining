@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: NonInlineConsoleConnection, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.consoles;
         var0 = var0.onConsoleSelect;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: ConsoleRow, environment: var1
+    var0 = function arg0() {
         _fun83672: for (var _fun83672_ip = 0;;) switch (_fun83672_ip) {
             case 0:
                 var2 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.bind(var11)(var9);
             case 275:
                 var0.subLabel = var8;
-                var8 = function() { // Original name: onPress, environment: var4
+                var8 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.bind(var8)(var6);
             case 494:
                 var0.subLabel = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestBottomSheet/QuestBottomSheetConsoleConnect.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestBottomSheetConsoleConnect, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.quest;
         var _closure2_slot0 = var7;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var5 = var5.bind(var6)(var1, var2);
-        var1 = function() { // Original name: openQuestBottomSheet, environment: var4
+        var1 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 9;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = _closure1_slot7;
         var0 = {};
         var0.consoles = var5;
-        var4 = function(arg0) { // Original name: onConsoleSelect, environment: var4
+        var4 = function arg0() {
             _fun83680: for (var _fun83680_ip = 0;;) switch (_fun83680_ip) {
                 case 0:
                     var4 = arg0;

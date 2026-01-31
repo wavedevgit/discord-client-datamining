@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/utils/useIdentityRegistrationStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useIdentityRegistrationStep, environment: var1
+    var1 = function arg0, arg1() {
         _fun100289: for (var _fun100289_ip = 0;;) switch (_fun100289_ip) {
             case 0:
                 var18 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var10.phone = var14;
                                     var14 = _closure2_slot0;
                                     var10.sourceState = var14;
-                                    var14 = function(arg0) { // Original name: onPhoneTokenReceived, environment: var2
+                                    var14 = function arg0() {
                                         var2 = _closure1_slot7;
                                         var1 = {};
                                         var0 = undefined;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var10.onPhoneTokenReceived = var14;
-                                    var14 = function() { // Original name: onBail, environment: var2
+                                    var14 = function() {
                                         var3 = _closure2_slot7;
                                         var0 = undefined;
                                         var2 = '';

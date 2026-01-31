@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: unprocessProps, environment: var2
+    var0 = function arg0() {
         var2 = arg0;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var3.bind(var0)(var1);
         var1 = var3.unprocessColorsInProps;
         var1 = var1.bind(var3)(var2);
-        var1 = function(arg0) { // Original name: unprocessBoxShadow, environment: var1
+        var1 = function arg0() {
             _fun34024: for (var _fun34024_ip = 0;;) switch (_fun34024_ip) {
                 case 0:
                     var1 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = new var10[var3](var9);
     var3 = var3 instanceof Object ? var3 : var4;
     var0.viewsMap = var3;
-    var3 = function(arg0, arg1) { // Original name: registerView, environment: var2
+    var3 = function arg0, arg1() {
         _fun34026: for (var _fun34026_ip = 0;;) switch (_fun34026_ip) {
             case 0:
                 var4 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.registerView = var3;
-    var3 = function(arg0) { // Original name: unregisterView, environment: var2
+    var3 = function arg0() {
         _fun34027: for (var _fun34027_ip = 0;;) switch (_fun34027_ip) {
             case 0:
                 var1 = this;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.unregisterView = var3;
-    var3 = function() { // Original name: syncPropsBackToReact, environment: var2
+    var3 = function() {
         _fun34028: for (var _fun34028_ip = 0;;) switch (_fun34028_ip) {
             case 0:
                 var7 = this;
@@ -204,7 +204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.syncPropsBackToReact = var3;
-    var3 = function() { // Original name: registerInterval, environment: var2
+    var3 = function() {
         var2 = this;
         var0 = global;
         var4 = var0.setInterval;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.registerInterval = var3;
-    var2 = function() { // Original name: unregisterInterval, environment: var2
+    var2 = function() {
         _fun34030: for (var _fun34030_ip = 0;;) switch (_fun34030_ip) {
             case 0:
                 var1 = this;

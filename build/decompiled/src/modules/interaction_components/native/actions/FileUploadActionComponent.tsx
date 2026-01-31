@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun113418: for (var _fun113418_ip = 0;;) switch (_fun113418_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun113420: for (var _fun113420_ip = 0;;) switch (_fun113420_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: MainAreaCanUpload, environment: var1
+    var0 = function arg0() {
         _fun113421: for (var _fun113421_ip = 0;;) switch (_fun113421_ip) {
             case 0:
                 var0 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: MainAreaLimitReached, environment: var1
+    var0 = function() {
         var3 = _closure1_slot9;
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: File, environment: var1
+    var0 = function arg0() {
         _fun113423: for (var _fun113423_ip = 0;;) switch (_fun113423_ip) {
             case 0:
                 var0 = arg0;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.size = var13;
                 var8 = var12.bind(var3)(var9, var8);
                 var4.icon = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = var0.id;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/actions/FileUploadActionComponent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FileUploadActionComponent, environment: var1
+    var1 = function arg0() {
         _fun113425: for (var _fun113425_ip = 0;;) switch (_fun113425_ip) {
             case 0:
                 var9 = arg0;
@@ -1008,7 +1008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.channel = var2;
                     var9 = _closure2_slot0;
                     var1.uploadLimit = var9;
-                    var2 = function() { // Original name: onDismissKeyboard, environment: var7
+                    var2 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 27;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.onDismissKeyboard = var2;
                     var2 = _closure1_slot8;
                     var1.onRestoreKeyboard = var2;
-                    var2 = function(arg0) { // Original name: onSelectFiles, environment: var7
+                    var2 = function arg0() {
                         var2 = _closure2_slot9;
                         var0 = undefined;
                         var1 = arg0;
@@ -1055,7 +1055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.disableWhenReachedLimit = var9;
                     var8 = _closure2_slot5;
                     var1.includedUploadIds = var8;
-                    var8 = function() { // Original name: onAttachPress, environment: var7
+                    var8 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 29;
@@ -1071,7 +1071,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onAttachPress = var8;
-                    var8 = function(arg0) { // Original name: onPressCamera, environment: var7
+                    var8 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 29;
@@ -1090,7 +1090,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onPressCamera = var8;
-                    var8 = function(arg0) { // Original name: onPressItem, environment: var7
+                    var8 = function arg0() {
                         _fun113439: for (var _fun113439_ip = 0;;) switch (_fun113439_ip) {
                             case 0:
                                 var0 = arg0;
@@ -1156,7 +1156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.onPressItem = var8;
-                    var7 = function() { // Original name: onViewAll, environment: var7
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 29;

@@ -21,14 +21,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/design/utils/requestSafeIdleCallback.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: setOriginWindow, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         _closure1_slot0 = var0;
         var0 = undefined;
         return var0;
     };
     var2.setOriginWindow = var3;
-    var1 = function(arg0, arg1) { // Original name: requestSafeIdleCallback, environment: var1
+    var1 = function arg0, arg1() {
         _fun8466: for (var _fun8466_ip = 0;;) switch (_fun8466_ip) {
             case 0:
                 var7 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = false;
                 var _closure2_slot2 = var3;
                 var _closure2_slot3 = var2;
-                var6 = function() { // Original name: runOnce, environment: var0
+                var6 = function() {
                     _fun8467: for (var _fun8467_ip = 0;;) switch (_fun8467_ip) {
                         case 0:
                             var1 = _closure2_slot2;

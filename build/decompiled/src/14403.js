@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var1.ReactNativeWebView;
         var1 = var1.postMessage;
         var _closure2_slot0 = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: patchedPostMessage, environment: var2
+        var1 = function arg0, arg1, arg2() {
             var4 = _closure2_slot0;
             var0 = undefined;
             var3 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.loadingOverlay = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot9 = var3;
-    var1 = function(arg0) { // Original name: Hcaptcha, environment: var1
+    var1 = function arg0() {
         _fun112359: for (var _fun112359_ip = 0;;) switch (_fun112359_ip) {
             case 0:
                 var1 = arg0;
@@ -267,7 +267,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var13 = ['*'];
                 var0.originWhitelist = var13;
-                var12 = function(arg0) { // Original name: onShouldStartLoadWithRequest, environment: var12
+                var12 = function arg0() {
                     _fun112362: for (var _fun112362_ip = 0;;) switch (_fun112362_ip) {
                         case 0:
                             var1 = arg0;

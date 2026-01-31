@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.bind(var7)(var8);
     var3.layout = var6;
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: UsernameStatusMessage, environment: var1
+    var3 = function arg0() {
         _fun100400: for (var _fun100400_ip = 0;;) switch (_fun100400_ip) {
             case 0:
                 var0 = arg0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/RegisterUsernameInput.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RegisterUsernameInput, environment: var1
+    var1 = function arg0() {
         _fun100401: for (var _fun100401_ip = 0;;) switch (_fun100401_ip) {
             case 0:
                 var2 = arg0;

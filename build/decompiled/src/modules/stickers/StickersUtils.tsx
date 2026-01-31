@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var3 = function() { // Original name: getFavoriteStickerIds, environment: var1
+    var3 = function() {
         _fun36605: for (var _fun36605_ip = 0;;) switch (_fun36605_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = new var27[var6](var26, var25, var24);
     var4 = var4 instanceof Object ? var4 : var5;
     var _closure1_slot16 = var4;
-    var5 = function(arg0) { // Original name: getStickerPackPreviewSticker, environment: var1
+    var5 = function arg0() {
         _fun36606: for (var _fun36606_ip = 0;;) switch (_fun36606_ip) {
             case 0:
                 var1 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var5;
-    var4 = function(arg0) { // Original name: getStickerExtensionFromFormatType, environment: var1
+    var4 = function arg0() {
         _fun36608: for (var _fun36608_ip = 0;;) switch (_fun36608_ip) {
             case 0:
                 var6 = arg0;
@@ -1077,7 +1077,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isAvailableGuildSticker = var4;
     var2.getFavoriteStickerIds = var3;
-    var1 = function(arg0) { // Original name: isFavoriteSticker, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot20;
         var0 = undefined;
         var2 = var1.bind(var0)();

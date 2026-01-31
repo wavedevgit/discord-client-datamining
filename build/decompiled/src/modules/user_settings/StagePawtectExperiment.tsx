@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsStagePawtectEnabled = var3;
-    var1 = function(arg0) { // Original name: getIsStagePawtectEnabled, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.getConfig;
         var0 = {};

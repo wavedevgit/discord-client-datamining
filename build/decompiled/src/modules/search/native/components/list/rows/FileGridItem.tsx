@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getAttachmentIcon, environment: var1
+    var0 = function arg0() {
         _fun105606: for (var _fun105606_ip = 0;;) switch (_fun105606_ip) {
             case 0:
                 var3 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: FileGridItem, environment: var1
+    var1 = function arg0() {
         _fun105607: for (var _fun105607_ip = 0;;) switch (_fun105607_ip) {
             case 0:
                 var2 = arg0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4.width;
                             var4 = var4 + var5;
                             var0.containerWidth = var4;
-                            var4 = function() { // Original name: renderFallback, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot9;
                                 var2 = _closure1_slot4;
                                 var1 = {};

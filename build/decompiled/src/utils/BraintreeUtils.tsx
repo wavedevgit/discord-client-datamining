@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: getBraintreeSDK, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var5 = _closure1_slot1;
         var1 = 2;
@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var1)(var2);
         var2 = var3.importWithRetry;
         var1 = {};
-        var4 = function() { // Original name: createPromise, environment: var0
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot1;
             var1 = 4;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var3;
-    var0 = function(arg0) { // Original name: getDeviceData, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/BraintreeUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getBraintreeSDK = var3;
-    var1 = function() { // Original name: collectDeviceData, environment: var1
+    var1 = function() {
         _fun25411: for (var _fun25411_ip = 0;;) switch (_fun25411_ip) {
             case 0:
                 var2 = _closure1_slot2;

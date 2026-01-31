@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/media_viewer/native/components/MediaSlider.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: MediaSlider, environment: var1
+            var1 = function arg0() {
                 _fun70359: for (var _fun70359_ip = 0;;) switch (_fun70359_ip) {
                     case 0:
                         var1 = arg0;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = var14.bind(var16)(var10);
                     case 572:
                         var4.accessibilityLabel = var9;
-                        var9 = function() { // Original name: onPress, environment: var12
+                        var9 = function() {
                             _fun70371: for (var _fun70371_ip = 0;;) switch (_fun70371_ip) {
                                 case 0:
                                     var1 = _closure2_slot1;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var13 = _closure1_slot8;
                         var13 = var13.centerText;
                         var5.style = var13;
-                        var12 = function(arg0) { // Original name: onLayout, environment: var12
+                        var12 = function arg0() {
                             var2 = _closure2_slot9;
                             var0 = arg0;
                             var0 = var0.nativeEvent;

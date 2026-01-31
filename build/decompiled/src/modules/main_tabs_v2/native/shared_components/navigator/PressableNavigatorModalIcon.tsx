@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PressableNavigatorModalIcon, environment: var1
+    var1 = function arg0() {
         _fun70956: for (var _fun70956_ip = 0;;) switch (_fun70956_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: HeaderRow, environment: var1
+    var0 = function arg0() {
         _fun115298: for (var _fun115298_ip = 0;;) switch (_fun115298_ip) {
             case 0:
                 var0 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var18 = var1.bind(var3)();
-                var2 = function(arg0, arg1) { // Original name: createUploadInstructionsListItem, environment: var15
+                var2 = function arg0, arg1() {
                     var0 = {};
                     var1 = global;
                     var1 = var1.HermesInternal;
@@ -565,13 +565,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.uploadInstructionsList;
                 var12.style = var17;
                 var12.data = var16;
-                var16 = function(arg0) { // Original name: keyExtractor, environment: var15
+                var16 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
                 };
                 var12.keyExtractor = var16;
-                var15 = function(arg0) { // Original name: renderItem, environment: var15
+                var15 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = _closure1_slot13;
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/native/GuildSettingsModalEmoji/HeaderRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedHeaderRow, environment: var1
+    var1 = function arg0() {
         _fun115308: for (var _fun115308_ip = 0;;) switch (_fun115308_ip) {
             case 0:
                 var1 = arg0;

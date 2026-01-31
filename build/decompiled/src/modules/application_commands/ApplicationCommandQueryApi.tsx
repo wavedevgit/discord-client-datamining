@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun61101: for (var _fun61101_ip = 0;;) switch (_fun61101_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun61103: for (var _fun61103_ip = 0;;) switch (_fun61103_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: findCommandInSection, environment: var1
+    var0 = function arg0, arg1() {
         _fun61104: for (var _fun61104_ip = 0;;) switch (_fun61104_ip) {
             case 0:
                 var0 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: createPlaceholderCommands, environment: var1
+    var0 = function arg0, arg1() {
         _fun61106: for (var _fun61106_ip = 0;;) switch (_fun61106_ip) {
             case 0:
                 var5 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: createPlaceholderCommand, environment: var1
+    var0 = function arg0, arg1() {
         var0 = {
             'type': null,
             'inputType': null,
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/ApplicationCommandQueryApi.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: getCachedCommand, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun61108: for (var _fun61108_ip = 0;;) switch (_fun61108_ip) {
             case 0:
                 var3 = arg1;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCachedCommand = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getCachedApplicationSection, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun61110: for (var _fun61110_ip = 0;;) switch (_fun61110_ip) {
             case 0:
                 var5 = arg2;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCachedApplicationSection = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getCachedResults, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var4 = _closure1_slot9;
         var3 = var4.query;
         var2 = {};
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getCachedResults = var3;
-    var3 = function(arg0) { // Original name: getChangeKeys, environment: var1
+    var3 = function arg0() {
         _fun61112: for (var _fun61112_ip = 0;;) switch (_fun61112_ip) {
             case 0:
                 var3 = _closure1_slot9;
@@ -793,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChangeKeys = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useCachedResults, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var5 = arg1;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot3;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCachedResults = var3;
-    var3 = function(arg0) { // Original name: useDiscovery, environment: var1
+    var3 = function arg0() {
         _fun61115: for (var _fun61115_ip = 0;;) switch (_fun61115_ip) {
             case 0:
                 var3 = arg0;
@@ -982,7 +982,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.placeholders = var3;
                             var3 = _closure2_slot3;
                             var0.sectionDescriptors = var3;
-                            var3 = function(arg0) { // Original name: filterSection, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure2_slot8;
                                 var0 = undefined;
                                 var1 = arg0;
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useDiscovery = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: executeQuery, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun61121: for (var _fun61121_ip = 0;;) switch (_fun61121_ip) {
             case 0:
                 var0 = arg1;
@@ -1202,7 +1202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.executeQuery = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useQuery, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = arg1;
         var1 = arg2;
         var _closure2_slot0 = var2;
@@ -1332,7 +1332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuery = var3;
-    var3 = function(arg0, arg1) { // Original name: useCommand, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg1;
         var _closure2_slot0 = var4;
         var1 = _closure1_slot8;
@@ -1456,7 +1456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCommand = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useCommandsForApplication, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun61127: for (var _fun61127_ip = 0;;) switch (_fun61127_ip) {
             case 0:
                 var5 = arg1;

@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.subtitleWrapper = var8;
     var1 = var3.bind(var7)(var1);
     var _closure1_slot12 = var1;
-    var1 = function(arg0) { // Original name: PrivateChannelSubtitle, environment: var4
+    var1 = function arg0() {
         _fun91618: for (var _fun91618_ip = 0;;) switch (_fun91618_ip) {
             case 0:
                 var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var1;
-    var3 = function(arg0) { // Original name: VoiceChannelHeader, environment: var4
+    var3 = function arg0() {
         _fun91619: for (var _fun91619_ip = 0;;) switch (_fun91619_ip) {
             case 0:
                 var1 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var1.channel = var11;
                 var17 = var5.bind(var3)(var4, var1);
-                var12 = function() { // Original name: E, environment: var0
+                var12 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var1 = 18;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function(arg0) { // Original name: AddMemberButton, environment: var4
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.onPress;
         var0 = _closure1_slot12;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var1;
-    var1 = function(arg0) { // Original name: IconButton, environment: var4
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.onPress;
         var6 = var0.iconStyle;

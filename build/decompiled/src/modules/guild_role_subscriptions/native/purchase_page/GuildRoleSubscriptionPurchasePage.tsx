@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: Separator, environment: var1
+    var0 = function() {
         var1 = _closure1_slot17;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: LegalDisclaimer, environment: var1
+    var0 = function() {
         var3 = _closure1_slot14;
         var5 = _closure1_slot0;
         var9 = _closure1_slot3;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: SocialBadge, environment: var1
+    var0 = function arg0() {
         _fun104687: for (var _fun104687_ip = 0;;) switch (_fun104687_ip) {
             case 0:
                 var0 = arg0;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionPurchasePage, environment: var1
+    var1 = function arg0() {
         _fun104688: for (var _fun104688_ip = 0;;) switch (_fun104688_ip) {
             case 0:
                 var0 = arg0;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var1 = var0.A1L1hU;
                 var0 = {};
-                var7 = function() { // Original name: unlockHook, environment: var18
+                var7 = function() {
                     var3 = _closure1_slot15;
                     var2 = _closure1_slot6;
                     var1 = {};
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var35 = var35["4PGeGA"];
                 var35 = var36.bind(var37)(var35);
                 var32.text = var35;
-                var35 = function() { // Original name: onPress, environment: var18
+                var35 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 30;

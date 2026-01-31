@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_products/GuildProductsExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useGuildEligibleForGuildProducts, environment: var1
+    var3 = function arg0, arg1() {
         _fun49811: for (var _fun49811_ip = 0;;) switch (_fun49811_ip) {
             case 0:
                 var3 = arg0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildEligibleForGuildProducts = var3;
-    var1 = function(arg0, arg1) { // Original name: isGuildEligibleForGuildProducts, environment: var1
+    var1 = function arg0, arg1() {
         _fun49812: for (var _fun49812_ip = 0;;) switch (_fun49812_ip) {
             case 0:
                 var3 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun46960: for (var _fun46960_ip = 0;;) switch (_fun46960_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun46962: for (var _fun46962_ip = 0;;) switch (_fun46962_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var5 = function(arg0, arg1, arg2) { // Original name: canStreamInChannel, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun46963: for (var _fun46963_ip = 0;;) switch (_fun46963_ip) {
             case 0:
                 var4 = arg0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var5;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: canWatchStream, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun46964: for (var _fun46964_ip = 0;;) switch (_fun46964_ip) {
             case 0:
                 var1 = arg0;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/go_live/utils/StreamPermissionUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.canStreamInChannel = var5;
-    var5 = function(arg0) { // Original name: getStreamCTAString, environment: var1
+    var5 = function arg0() {
         _fun46965: for (var _fun46965_ip = 0;;) switch (_fun46965_ip) {
             case 0:
                 var2 = arg0;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStreamCTAString = var5;
-    var5 = function(arg0) { // Original name: getStreamCTAAriaLabel, environment: var1
+    var5 = function arg0() {
         _fun46966: for (var _fun46966_ip = 0;;) switch (_fun46966_ip) {
             case 0:
                 var2 = arg0;
@@ -886,7 +886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getStreamCTAAriaLabel = var5;
     var2.StreamUnavailableReasons = var4;
     var2.canWatchStream = var3;
-    var3 = function(arg0) { // Original name: useCanWatchStream, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -920,7 +920,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanWatchStream = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: getStreamEligibleChannels, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun46969: for (var _fun46969_ip = 0;;) switch (_fun46969_ip) {
             case 0:
                 var7 = arg1;

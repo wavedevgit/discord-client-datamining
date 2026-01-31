@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'uikit-native/BetaTag.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: BetaTag, environment: var3
+    var3 = function arg0() {
         _fun47825: for (var _fun47825_ip = 0;;) switch (_fun47825_ip) {
             case 0:
                 var0 = arg0;

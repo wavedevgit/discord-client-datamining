@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_profile/GuildProfileUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getEstablishedDate, environment: var1
+    var3 = function arg0, arg1() {
         _fun28658: for (var _fun28658_ip = 0;;) switch (_fun28658_ip) {
             case 0:
                 var4 = arg0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEstablishedDate = var3;
-    var1 = function(arg0) { // Original name: guildInviteCanEmbedProfile, environment: var1
+    var1 = function arg0() {
         _fun28659: for (var _fun28659_ip = 0;;) switch (_fun28659_ip) {
             case 0:
                 var1 = arg0;

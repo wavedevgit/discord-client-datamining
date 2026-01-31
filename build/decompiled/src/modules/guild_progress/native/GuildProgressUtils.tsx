@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: useIOSCompletionStates, environment: var1
+    var3 = function arg0() {
         _fun80027: for (var _fun80027_ip = 0;;) switch (_fun80027_ip) {
             case 0:
                 var11 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MIN_PROGRESS_PERCENT = var4;
     var4 = 'rgba(78, 93, 148, 0.3)';
     var2.PROGRESS_BACKGROUND_COLOR = var4;
-    var4 = function(arg0) { // Original name: openActionSheet, environment: var1
+    var4 = function arg0() {
         var6 = arg0;
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openActionSheet = var4;
-    var4 = function(arg0) { // Original name: hideActionSheet, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hideActionSheet = var4;
-    var4 = function(arg0) { // Original name: createGuildProgress, environment: var1
+    var4 = function arg0() {
         _fun80035: for (var _fun80035_ip = 0;;) switch (_fun80035_ip) {
             case 0:
                 var2 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildProgress = var4;
     var2.useIOSCompletionStates = var3;
-    var3 = function(arg0) { // Original name: useGuildProgressStep, environment: var1
+    var3 = function arg0() {
         _fun80036: for (var _fun80036_ip = 0;;) switch (_fun80036_ip) {
             case 0:
                 var1 = _closure1_slot10;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildProgressStep = var3;
-    var1 = function(arg0) { // Original name: useIsEligibleForGuildProgress, environment: var1
+    var1 = function arg0() {
         _fun80038: for (var _fun80038_ip = 0;;) switch (_fun80038_ip) {
             case 0:
                 var2 = arg0;

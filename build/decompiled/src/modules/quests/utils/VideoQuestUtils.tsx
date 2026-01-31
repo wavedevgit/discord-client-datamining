@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var5 = function(arg0, arg1) { // Original name: sendVideoProgress, environment: var1
+    var5 = function arg0, arg1() {
         _fun47441: for (var _fun47441_ip = 0;;) switch (_fun47441_ip) {
             case 0:
                 var1 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0, arg1) { // Original name: formatVideoProgressRatio, environment: var1
+    var4 = function arg0, arg1() {
         _fun47442: for (var _fun47442_ip = 0;;) switch (_fun47442_ip) {
             case 0:
                 var6 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: getVideoQuestModalKey, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/quests/utils/VideoQuestUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.sendVideoProgress = var5;
-    var5 = function(arg0) { // Original name: getVideoOrientation, environment: var1
+    var5 = function arg0() {
         _fun47444: for (var _fun47444_ip = 0;;) switch (_fun47444_ip) {
             case 0:
                 var0 = arg0;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoQuestWatchCtaText = var5;
     var2.formatVideoProgressRatio = var4;
-    var4 = function(arg0) { // Original name: getVideoQuestEndCardCtaText, environment: var1
+    var4 = function arg0() {
         _fun47446: for (var _fun47446_ip = 0;;) switch (_fun47446_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVideoQuestEndCardCtaText = var4;
-    var4 = function(arg0) { // Original name: handleVideoQuestModalClose, environment: var1
+    var4 = function arg0() {
         _fun47447: for (var _fun47447_ip = 0;;) switch (_fun47447_ip) {
             case 0:
                 var0 = arg0;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleVideoQuestModalClose = var4;
     var2.getVideoQuestModalKey = var3;
-    var1 = function(arg0) { // Original name: isVideoQuestProgressing, environment: var1
+    var1 = function arg0() {
         _fun47448: for (var _fun47448_ip = 0;;) switch (_fun47448_ip) {
             case 0:
                 var1 = arg0;

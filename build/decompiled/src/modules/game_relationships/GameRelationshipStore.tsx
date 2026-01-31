@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun87306: for (var _fun87306_ip = 0;;) switch (_fun87306_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun87309: for (var _fun87309_ip = 0;;) switch (_fun87309_ip) {
             case 0:
                 var2 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun87311: for (var _fun87311_ip = 0;;) switch (_fun87311_ip) {
             case 0:
                 var3 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: recountRelationshipTypes, environment: var3
+    var0 = function() {
         var1 = 0;
         var _closure2_slot0 = var1;
         var _closure2_slot1 = var1;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: upsert, environment: var3
+    var0 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot11;
         var2 = var3.set;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: remove, environment: var3
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot11;
         var2 = var3.delete;
         var5 = _closure1_slot7;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var7);
     var7 = var7.RelationshipTypes;
     var _closure1_slot6 = var7;
-    var7 = function(arg0, arg1) { // Original name: GAME_RELATIONSHIP_KEY, environment: var3
+    var7 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var7;
-    var7 = function(arg0) { // Original name: GameRelationshipIndexes_BY_APPLICATION_ID, environment: var3
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var7;
-    var7 = function(arg0) { // Original name: GameRelationshipIndexes_BY_USER_ID, environment: var3
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var7;
-    var7 = function(arg0) { // Original name: GameRelationshipIndexes_BY_RELATIONSHIP_TYPE, environment: var3
+    var7 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             value: var10
         }
     });
-    var13 = function(arg0) { // Original name: gameRelationshipsIndex, environment: var3
+    var13 = function arg0() {
         var1 = arg0;
         var0 = new Array(0);
         var5 = var0.push;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GameRelationshipStore, environment: var5
+        var3 = function() {
             _fun87323: for (var _fun87323_ip = 0;;) switch (_fun87323_ip) {
                 case 0:
                     var3 = this;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot5;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingIncomingCount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingOutgoingCount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameFriendCount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameFriendsForApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = _closure1_slot11;
             var2 = var3.values;
             var4 = _closure1_slot8;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameRelationshipsForUser';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = _closure1_slot11;
             var2 = var3.values;
             var4 = _closure1_slot9;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameRelationshipsForUserByType';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var3 = this;
             var1 = arg1;
             var _closure3_slot0 = var1;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameFriendsForUser';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = this;
             var2 = var3.getGameRelationshipsForUserByType;
             var0 = _closure1_slot6;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameRelationshipCount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot11;
             var0 = var1.size;
             var0 = var0.bind(var1)();
@@ -711,7 +711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameRelationships';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameRelationshipsByType';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = _closure1_slot11;
             var2 = var3.values;
             var4 = _closure1_slot10;
@@ -736,7 +736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGameRelationshipsVersion';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot11;
             var0 = var0.version;
             return var0;
@@ -753,7 +753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleConnectionOpen, environment: var3
+    var8 = function arg0() {
         var2 = _closure1_slot11;
         var1 = var2.clear;
         var1 = var1.bind(var2)();
@@ -785,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleGameRelationshipAdd, environment: var3
+    var8 = function arg0() {
         var3 = _closure1_slot19;
         var0 = arg0;
         var2 = var0.gameRelationship;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_RELATIONSHIP_ADD = var8;
-    var8 = function(arg0) { // Original name: handleGameRelationshipRemove, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = _closure1_slot20;
         var3 = var0.userId;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_RELATIONSHIP_REMOVE = var8;
-    var3 = function(arg0) { // Original name: handleApplicationsFetchSuccess, environment: var3
+    var3 = function arg0() {
         _fun87342: for (var _fun87342_ip = 0;;) switch (_fun87342_ip) {
             case 0:
                 var0 = arg0;

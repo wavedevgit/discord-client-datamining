@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.headerText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: ExternalLinkItem, environment: var1
+    var3 = function arg0() {
         _fun92596: for (var _fun92596_ip = 0;;) switch (_fun92596_ip) {
             case 0:
                 var0 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.style = var6;
                 var6 = 'link';
                 var1.accessibilityRole = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 8;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ExternalLinksElement, environment: var1
+    var1 = function arg0() {
         _fun92598: for (var _fun92598_ip = 0;;) switch (_fun92598_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun28263: for (var _fun28263_ip = 0;;) switch (_fun28263_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun28265: for (var _fun28265_ip = 0;;) switch (_fun28265_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var6 = function(arg0) { // Original name: getFirstEligibleUserExperiment, environment: var3
+    var6 = function arg0() {
         _fun28266: for (var _fun28266_ip = 0;;) switch (_fun28266_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var1 = {};
     var1.getFirstEligibleUserExperiment = var6;
-    var6 = function(arg0, arg1) { // Original name: isInExperimentBucket, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var1 = var2.getUserExperimentBucket;
         var0 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.isInExperimentBucket = var6;
-    var6 = function(arg0, arg1) { // Original name: experimentDescriptorEquals, environment: var3
+    var6 = function arg0, arg1() {
         _fun28268: for (var _fun28268_ip = 0;;) switch (_fun28268_ip) {
             case 0:
                 var1 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.experimentDescriptorEquals = var6;
-    var6 = function(arg0) { // Original name: trackExposureToFirstEligibleUserExperiment, environment: var3
+    var6 = function arg0() {
         _fun28269: for (var _fun28269_ip = 0;;) switch (_fun28269_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackExposureToFirstEligibleUserExperiment = var6;
-    var6 = function(arg0) { // Original name: getExperimentBucketName, environment: var3
+    var6 = function arg0() {
         _fun28270: for (var _fun28270_ip = 0;;) switch (_fun28270_ip) {
             case 0:
                 var4 = arg0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getExperimentBucketName = var6;
-    var3 = function(arg0, arg1) { // Original name: getRecentExperimentBuckets, environment: var3
+    var3 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = global;

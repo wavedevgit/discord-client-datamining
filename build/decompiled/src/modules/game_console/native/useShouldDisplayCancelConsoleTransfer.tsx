@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function(arg0) { // Original name: shouldDisplayCancel, environment: var1
+    var0 = function arg0() {
         _fun69408: for (var _fun69408_ip = 0;;) switch (_fun69408_ip) {
             case 0:
                 var1 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/useShouldDisplayCancelConsoleTransfer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useShouldDisplayCancelConsoleTransfer, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot1;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/PremiumRoleUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isSubscriptionRole, environment: var1
+    var3 = function arg0() {
         _fun24492: for (var _fun24492_ip = 0;;) switch (_fun24492_ip) {
             case 0:
                 var2 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSubscriptionRole = var3;
-    var1 = function(arg0) { // Original name: isSubscriptionRoleAvailableForPurchase, environment: var1
+    var1 = function arg0() {
         _fun24493: for (var _fun24493_ip = 0;;) switch (_fun24493_ip) {
             case 0:
                 var2 = arg0;

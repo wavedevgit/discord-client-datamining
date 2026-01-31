@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var13;
     var18 = var14;
     var14 = copyDataProperties(var19, var18);
-    var15 = function(arg0, arg1, arg2) { // Original name: parse, environment: var7
+    var15 = function arg0, arg1, arg2() {
         var1 = arg2;
         var4 = _closure1_slot0;
         var3 = var4.parse;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = /^\$\[(.*?)\]\((\w+)\)/;
     var9 = var10.bind(var11)(var9);
     var6.match = var9;
-    var9 = function(arg0, arg1, arg2) { // Original name: parse, environment: var7
+    var9 = function arg0, arg1, arg2() {
         var2 = arg0;
         var4 = arg2;
         var0 = {};
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.parse = var9;
-    var9 = function(arg0, arg1, arg2) { // Original name: react, environment: var7
+    var9 = function arg0, arg1, arg2() {
         var3 = arg0;
         var0 = arg2;
         var2 = var3.render;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = /^!!(\d+?)!!/;
     var8 = var9.bind(var10)(var8);
     var6.match = var8;
-    var8 = function(arg0, arg1, arg2) { // Original name: parse, environment: var7
+    var8 = function arg0, arg1, arg2() {
         _fun112272: for (var _fun112272_ip = 0;;) switch (_fun112272_ip) {
             case 0:
                 var0 = arg2;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var6.parse = var8;
-    var7 = function(arg0) { // Original name: react, environment: var7
+    var7 = function arg0() {
         var0 = arg0;
         var0 = var0.content;
         return var0;

@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _captureConsoleIntegration, environment: var1
+    var1 = function() {
         _fun9569: for (var _fun9569_ip = 0;;) switch (_fun9569_ip) {
             case 0:
                 var5 = undefined;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'CaptureConsole';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     _fun9570: for (var _fun9570_ip = 0;;) switch (_fun9570_ip) {
                         case 0:
                             var0 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     case 84:
                                         var2 = _closure2_slot1;
-                                        var1 = function(arg0, arg1, arg2) { // Original name: consoleHandler, environment: var1
+                                        var1 = function arg0, arg1, arg2() {
                                             var6 = arg0;
                                             var8 = arg1;
                                             var _closure5_slot0 = var6;

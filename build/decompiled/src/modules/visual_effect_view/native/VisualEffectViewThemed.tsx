@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot3 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: VisualEffectViewThemed, environment: var1
+    var1 = function arg0, arg1() {
         _fun67503: for (var _fun67503_ip = 0;;) switch (_fun67503_ip) {
             case 0:
                 var2 = _closure1_slot1;

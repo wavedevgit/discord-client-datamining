@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getScreenTitle, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.keys;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: onModalClose, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -88,12 +88,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: EnableCommunityModal, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
-            var1 = function() { // Original name: getScreens, environment: var0
-                var9 = function() { // Original name: headerRight, environment: var3
+            var1 = function() {
+                var9 = function() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.STEP_1;
                 var10 = var5.bind(var6)(var10);
                 var1.headerTitle = var10;
-                var10 = function() { // Original name: render, environment: var3
+                var10 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.STEP_2;
                 var10 = var5.bind(var6)(var10);
                 var1.headerTitle = var10;
-                var10 = function() { // Original name: render, environment: var3
+                var10 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.STEP_3;
                 var4 = var5.bind(var6)(var4);
                 var1.headerTitle = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

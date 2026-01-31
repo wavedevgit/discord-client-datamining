@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useSuggestedFriends, environment: var1
+    var1 = function arg0() {
         _fun101407: for (var _fun101407_ip = 0;;) switch (_fun101407_ip) {
             case 0:
                 var1 = arg0;

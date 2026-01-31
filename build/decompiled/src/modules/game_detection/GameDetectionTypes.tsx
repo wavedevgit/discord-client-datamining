@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = metroImportDefault;
     var2 = exports;
     var8 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun30590: for (var _fun30590_ip = 0;;) switch (_fun30590_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'Erotic';
     var3.EROTIC = var6;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: GameRecord, environment: var5
+        var3 = function arg0() {
             _fun30594: for (var _fun30594_ip = 0;;) switch (_fun30594_ip) {
                 case 0:
                     var1 = arg0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getIconURL';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun30595: for (var _fun30595_ip = 0;;) switch (_fun30595_ip) {
                 case 0:
                     var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasTheme';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.themes;
             var1 = var2.includes;

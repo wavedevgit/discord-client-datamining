@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: getChannelRoleSubscriptionStatus, environment: var3
+    var1 = function arg0() {
         _fun44041: for (var _fun44041_ip = 0;;) switch (_fun44041_ip) {
             case 0:
                 var2 = arguments[1];
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useChannelRoleSubscriptionStatus, environment: var3
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

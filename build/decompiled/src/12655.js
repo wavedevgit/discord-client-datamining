@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96917
             }
         case 75:
-            var1 = function() { // Original name: something, environment: var1
+            var1 = function() {
                 var0 = undefined;
                 return var0;
             };

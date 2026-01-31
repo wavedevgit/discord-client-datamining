@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: fallbackAvatar, environment: var1
+    var0 = function arg0() {
         _fun113783: for (var _fun113783_ip = 0;;) switch (_fun113783_ip) {
             case 0:
                 var2 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: preloadAssetsForUser, environment: var1
+    var0 = function arg0() {
         _fun113784: for (var _fun113784_ip = 0;;) switch (_fun113784_ip) {
             case 0:
                 var0 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: getVoiceStateForUser, environment: var1
+    var0 = function arg0, arg1() {
         _fun113785: for (var _fun113785_ip = 0;;) switch (_fun113785_ip) {
             case 0:
                 var7 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: flattenAndConcatMessage, environment: var1
+    var0 = function arg0() {
         _fun113788: for (var _fun113788_ip = 0;;) switch (_fun113788_ip) {
             case 0:
                 var4 = arg0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 30;
     var2.MAX_MEMBERS = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: generateLiveActivityState, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun113790: for (var _fun113790_ip = 0;;) switch (_fun113790_ip) {
             case 0:
                 var8 = arg0;

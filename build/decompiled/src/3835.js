@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}";
     var2.code = var3;
     var _closure1_slot2 = var2;
-    var0 = function(arg0, arg1) { // Original name: useAnimatedScrollHandler, environment: var0
+    var0 = function arg0, arg1() {
         _fun34784: for (var _fun34784_ip = 0;;) switch (_fun34784_ip) {
             case 0:
                 var3 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var9[var1];
                 var2 = var2.bind(var6)(var1);
                 var1 = var2.useEvent;
-                var0 = function(arg0) { // Original name: pnpm_useAnimatedScrollHandlerTs1, environment: var0
+                var0 = function arg0() {
                     _fun34785: for (var _fun34785_ip = 0;;) switch (_fun34785_ip) {
                         case 0:
                             var3 = arg0;

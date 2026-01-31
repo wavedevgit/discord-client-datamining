@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         _fun16821: for (var _fun16821_ip = 0;;) switch (_fun16821_ip) {
             case 0:
                 var5 = arg0;
-                var1 = function(arg0) { // Original name: error, environment: var0
+                var1 = function arg0() {
                     var0 = global;
                     var2 = var0.RangeError;
                     var1 = _closure2_slot6;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     throw var0;
                 };
                 var _closure2_slot9 = var1;
-                var1 = function(arg0, arg1) { // Original name: map, environment: var0
+                var1 = function arg0, arg1() {
                     _fun16823: for (var _fun16823_ip = 0;;) switch (_fun16823_ip) {
                         case 0:
                             var5 = arg0;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot10 = var1;
-                var1 = function(arg0, arg1) { // Original name: mapDomain, environment: var0
+                var1 = function arg0, arg1() {
                     _fun16824: for (var _fun16824_ip = 0;;) switch (_fun16824_ip) {
                         case 0:
                             var4 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot11 = var1;
-                var12 = function(arg0) { // Original name: ucs2decode, environment: var0
+                var12 = function arg0() {
                     _fun16825: for (var _fun16825_ip = 0;;) switch (_fun16825_ip) {
                         case 0:
                             var11 = arg0;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot12 = var12;
-                var11 = function(arg0) { // Original name: ucs2encode, environment: var0
+                var11 = function arg0() {
                     var3 = _closure2_slot10;
                     var2 = undefined;
                     var1 = arg0;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot13 = var11;
-                var1 = function(arg0, arg1) { // Original name: digitToBasic, environment: var0
+                var1 = function arg0, arg1() {
                     var2 = arg0;
                     var0 = 22;
                     var1 = var2 + var0;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot14 = var1;
-                var1 = function(arg0, arg1, arg2) { // Original name: adapt, environment: var0
+                var1 = function arg0, arg1, arg2() {
                     _fun16829: for (var _fun16829_ip = 0;;) switch (_fun16829_ip) {
                         case 0:
                             var1 = arg0;
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot15 = var1;
-                var8 = function(arg0) { // Original name: decode, environment: var0
+                var8 = function arg0() {
                     _fun16830: for (var _fun16830_ip = 0;;) switch (_fun16830_ip) {
                         case 0:
                             var19 = arg0;
@@ -632,7 +632,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot16 = var8;
-                var6 = function(arg0) { // Original name: encode, environment: var0
+                var6 = function arg0() {
                     _fun16831: for (var _fun16831_ip = 0;;) switch (_fun16831_ip) {
                         case 0:
                             var2 = new Array(0);
@@ -1033,7 +1033,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2.ucs2 = var10;
                 var2.decode = var8;
                 var2.encode = var6;
-                var6 = function(arg0) { // Original name: toASCII, environment: var0
+                var6 = function arg0() {
                     var3 = _closure2_slot11;
                     var2 = undefined;
                     var1 = arg0;
@@ -1063,7 +1063,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var2.toASCII = var6;
-                var6 = function(arg0) { // Original name: toUnicode, environment: var0
+                var6 = function arg0() {
                     var3 = _closure2_slot11;
                     var2 = undefined;
                     var1 = arg0;

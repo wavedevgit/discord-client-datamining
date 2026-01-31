@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: subscribeChannel, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'actions/GuildSubscriptionsActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: subscribeMembers, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.subscribeMembers = var4;
-    var4 = function(arg0, arg1) { // Original name: unsubscribeMembers, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.unsubscribeMembers = var4;
-    var4 = function(arg0) { // Original name: subscribeToMemberUpdates, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.subscribeToMemberUpdates = var4;
-    var4 = function(arg0) { // Original name: unsubscribeFromMemberUpdates, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.unsubscribeFromMemberUpdates = var4;
-    var4 = function(arg0) { // Original name: subscribeGuild, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.subscribeGuild = var4;
     var2.subscribeChannel = var3;
-    var1 = function(arg0) { // Original name: subscribeChannelDimensions, environment: var1
+    var1 = function arg0() {
         _fun61821: for (var _fun61821_ip = 0;;) switch (_fun61821_ip) {
             case 0:
                 var2 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.height;
                 var2 = var2.rowHeight;
                 var _closure2_slot0 = var2;
-                var6 = function(arg0) { // Original name: toIndex, environment: var0
+                var6 = function arg0() {
                     _fun61822: for (var _fun61822_ip = 0;;) switch (_fun61822_ip) {
                         case 0:
                             var1 = arguments[1];
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var7 = function(arg0) { // Original name: pushRange, environment: var0
+                var7 = function arg0() {
                     var5 = arg0;
                     var3 = _closure1_slot0;
                     var0 = _closure1_slot2;

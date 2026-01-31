@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun109247: for (var _fun109247_ip = 0;;) switch (_fun109247_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot19 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: EditWebhook, environment: var5
+        var3 = function arg0() {
             _fun109251: for (var _fun109251_ip = 0;;) switch (_fun109251_ip) {
                 case 0:
                     var4 = this;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1.guildId = var6;
                         var5 = _closure1_slot8;
                         var1.channelType = var5;
-                        var5 = function(arg0) { // Original name: filterFn, environment: var3
+                        var5 = function arg0() {
                             var0 = arg0;
                             var3 = var0.channel;
                             var2 = _closure1_slot9;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var1.filterFn = var5;
                         var1.selectedChannel = var4;
-                        var3 = function(arg0) { // Original name: onSelect, environment: var3
+                        var3 = function arg0() {
                             _fun109259: for (var _fun109259_ip = 0;;) switch (_fun109259_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidUpdate';
         var4.key = var0;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var5
+        var0 = function arg0, arg1() {
             _fun109267: for (var _fun109267_ip = 0;;) switch (_fun109267_ip) {
                 case 0:
                     var0 = this;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 55:
                     var4 = var2.setOptions;
                     var1 = {};
-                    var5 = function() { // Original name: headerRight, environment: var3
+                    var5 = function() {
                         var3 = _closure1_slot17;
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.headerRight = var5;
-                    var5 = function() { // Original name: headerLeft, environment: var3
+                    var5 = function() {
                         var0 = null;
                         return var0;
                     };
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 127:
                     var1 = var2.setOptions;
                     var0 = {};
-                    var4 = function() { // Original name: headerRight, environment: var3
+                    var4 = function() {
                         var3 = _closure1_slot17;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.headerRight = var4;
-                    var3 = function() { // Original name: headerLeft, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot17;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun109272: for (var _fun109272_ip = 0;;) switch (_fun109272_ip) {
                 case 0:
                     var11 = this;
@@ -858,7 +858,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13.type = var23;
                     var13.icon = var22;
                     var13.name = var16;
-                    var19 = function(arg0) { // Original name: makeURL, environment: var19
+                    var19 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 27;
@@ -1123,7 +1123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/integration_settings/native/IntegrationsSettingsEditWebhook.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedEditWebhook, environment: var1
+    var1 = function arg0() {
         var6 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 34;

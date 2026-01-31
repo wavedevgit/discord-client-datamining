@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/native/hooks/useGuildPowerupsCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useGuildPowerupsCoachmark, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var12 = arg1;
         var9 = arg2;
         var _closure2_slot0 = var12;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'visible': false
                     };
                     var14 = '';
-                    var1 = function() { // Original name: onDismiss, environment: var2
+                    var1 = function() {
                         var0 = undefined;
                         return var0;
                     };
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun102572
                     }
                 case 58:
-                    var4 = function() { // Original name: handleButtonPress, environment: var2
+                    var4 = function() {
                         var4 = _closure2_slot1;
                         var2 = var4.markAsDismissed;
                         var1 = _closure1_slot7;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2.bind(var0)(var1);
                         return var0;
                     };
-                    var3 = function() { // Original name: handleDismiss, environment: var2
+                    var3 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.markAsDismissed;
                         var0 = _closure1_slot7;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = true;
                     var9 = 'visible';
                     var7[var9] = var10;
-                    var10 = function() { // Original name: renderImgComponent, environment: var2
+                    var10 = function() {
                         var3 = _closure1_slot9;
                         var5 = _closure1_slot1;
                         var6 = _closure1_slot2;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = true;
                     var9 = 'visible';
                     var7[var9] = var10;
-                    var10 = function() { // Original name: renderImgComponent, environment: var2
+                    var10 = function() {
                         var3 = _closure1_slot9;
                         var5 = _closure1_slot1;
                         var6 = _closure1_slot2;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = true;
                     var7 = 'visible';
                     var6[var7] = var10;
-                    var10 = function() { // Original name: renderImgComponent, environment: var2
+                    var10 = function() {
                         _fun102578: for (var _fun102578_ip = 0;;) switch (_fun102578_ip) {
                             case 0:
                                 var3 = _closure1_slot9;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = true;
                     var7 = 'visible';
                     var6[var7] = var9;
-                    var9 = function() { // Original name: renderImgComponent, environment: var2
+                    var9 = function() {
                         var3 = _closure1_slot9;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -818,7 +818,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = true;
                     var6 = 'visible';
                     var1[var6] = var7;
-                    var6 = function() { // Original name: renderImgComponent, environment: var2
+                    var6 = function() {
                         var3 = _closure1_slot9;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;

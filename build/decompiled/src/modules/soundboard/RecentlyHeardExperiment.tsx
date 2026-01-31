@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/soundboard/RecentlyHeardExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: recentlyHeardExperiment, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.location;
         var4 = var1.autoTrackExposure;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.recentlyHeardExperiment = var3;
-    var1 = function(arg0) { // Original name: useRecentlyHeardExperiment, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.autoTrackExposure;
         var0 = var0.location;

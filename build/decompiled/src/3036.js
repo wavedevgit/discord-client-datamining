@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2 = var2.bind(var0)(var3);
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: isIterable, environment: var1
+    var2 = function arg0() {
         var0 = global;
         var0 = var0.Symbol;
         var1 = var0.iterator;
@@ -16,14 +16,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: hasIterableEntries, environment: var1
+    var2 = function arg0() {
         var1 = 'entries';
         var0 = arg0;
         var0 = var1 in var0;
         return var0;
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1) { // Original name: compareEntries, environment: var1
+    var2 = function arg0, arg1() {
         _fun24477: for (var _fun24477_ip = 0;;) switch (_fun24477_ip) {
             case 0:
                 var2 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1) { // Original name: shallow, environment: var1
+    var2 = function arg0, arg1() {
         _fun24478: for (var _fun24478_ip = 0;;) switch (_fun24478_ip) {
             case 0:
                 var8 = arg0;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 166:
                 var9 = _closure1_slot3;
                 var4 = {};
-                var3 = function() { // Original name: entries, environment: var10
+                var3 = function() {
                     var0 = global;
                     var2 = var0.Object;
                     var1 = var2.entries;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var4.entries = var3;
                 var3 = {};
-                var10 = function() { // Original name: entries, environment: var10
+                var10 = function() {
                     var0 = global;
                     var2 = var0.Object;
                     var1 = var2.entries;

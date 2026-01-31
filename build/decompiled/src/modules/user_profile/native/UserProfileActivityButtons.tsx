@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileActivityButtons.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: JoinActivityButton, environment: var1
+    var3 = function arg0() {
         _fun91637: for (var _fun91637_ip = 0;;) switch (_fun91637_ip) {
             case 0:
                 var1 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.variant = var7;
                 var6 = !var6;
                 var1.disabled = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot4;
                     var1 = {};
                     var0 = 'PRESS_JOIN_BUTTON';
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.JoinActivityButton = var3;
-    var3 = function(arg0) { // Original name: PlayOnSpotifyButton, environment: var1
+    var3 = function arg0() {
         _fun91641: for (var _fun91641_ip = 0;;) switch (_fun91641_ip) {
             case 0:
                 var0 = arg0;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.PlayOnSpotifyButton = var3;
-    var3 = function(arg0) { // Original name: WatchActivityButton, environment: var1
+    var3 = function arg0() {
         _fun91644: for (var _fun91644_ip = 0;;) switch (_fun91644_ip) {
             case 0:
                 var0 = arg0;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.text = var6;
                 var6 = 'secondary';
                 var1.variant = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var3 = _closure2_slot0;
                     var2 = {};
                     var0 = 'PRESS_WATCH_BUTTON';
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.WatchActivityButton = var3;
-    var3 = function(arg0) { // Original name: VoiceChannelButtons, environment: var1
+    var3 = function arg0() {
         _fun91646: for (var _fun91646_ip = 0;;) switch (_fun91646_ip) {
             case 0:
                 var0 = arg0;
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.variant = var5;
                 var5 = true;
                 var0.grow = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     _fun91647: for (var _fun91647_ip = 0;;) switch (_fun91647_ip) {
                         case 0:
                             var3 = _closure2_slot1;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.VoiceChannelButtons = var3;
-    var3 = function(arg0) { // Original name: ConnectPlatformButton, environment: var1
+    var3 = function arg0() {
         _fun91648: for (var _fun91648_ip = 0;;) switch (_fun91648_ip) {
             case 0:
                 var0 = arg0;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.icon = var5;
                 var5 = 'secondary';
                 var0.variant = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     _fun91650: for (var _fun91650_ip = 0;;) switch (_fun91650_ip) {
                         case 0:
                             var4 = _closure2_slot1;
@@ -910,7 +910,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.platformType = var4;
                             var3 = _closure2_slot2;
                             var1.location = var3;
-                            var3 = function() { // Original name: onClose, environment: var3
+                            var3 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 40;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ConnectPlatformButton = var3;
-    var1 = function(arg0) { // Original name: CustomActivityButton, environment: var1
+    var1 = function arg0() {
         _fun91652: for (var _fun91652_ip = 0;;) switch (_fun91652_ip) {
             case 0:
                 var0 = arg0;
@@ -1126,7 +1126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var5.handleClick;
                                 var3 = {};
                                 var3.href = var7;
-                                var6 = function() { // Original name: onConfirm, environment: var6
+                                var6 = function() {
                                     var2 = _closure1_slot1;
                                     var1 = _closure1_slot2;
                                     var0 = 31;

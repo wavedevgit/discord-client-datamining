@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var10];
                 var8 = var5.bind(var3)(var2);
                 var5 = var8.useAnimatedStyle;
-                var2 = function() { // Original name: b, environment: var1
+                var2 = function() {
                     var0 = {};
                     var2 = _closure2_slot3;
                     var1 = var2.get;

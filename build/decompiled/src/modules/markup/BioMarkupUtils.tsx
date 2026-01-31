@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var7;
-    var4 = function(arg0) { // Original name: getOrParseBioAST, environment: var3
+    var4 = function arg0() {
         _fun47813: for (var _fun47813_ip = 0;;) switch (_fun47813_ip) {
             case 0:
                 var4 = arg0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[0] = var10;
     var10 = {};
     var11 = {};
-    var12 = function() { // Original name: react, environment: var3
+    var12 = function() {
         var0 = null;
         return var0;
     };
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.parseBioReact = var5;
     var2.getOrParseBioAST = var4;
-    var3 = function(arg0) { // Original name: parseBioReactWithCachedAST, environment: var3
+    var3 = function arg0() {
         _fun47815: for (var _fun47815_ip = 0;;) switch (_fun47815_ip) {
             case 0:
                 var3 = arg0;

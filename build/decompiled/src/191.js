@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = undefined;
                         var20 = undefined;
                         var17 = undefined;
-                        var16 = function(arg0, arg1, arg2) { // Original name: define, environment: var3
+                        var16 = function arg0, arg1, arg2() {
                             var1 = arg0;
                             var0 = arg1;
                             var2 = global;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var6 = var16;
                         var _closure2_slot11 = var16;
-                        var16 = function(arg0, arg1, arg2, arg3) { // Original name: wrap, environment: var3
+                        var16 = function arg0, arg1, arg2, arg3() {
                             _fun2655: for (var _fun2655_ip = 0;;) switch (_fun2655_ip) {
                                 case 0:
                                     var0 = arg1;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var18 = var16;
                         var _closure2_slot12 = var16;
-                        var16 = function(arg0, arg1, arg2) { // Original name: tryCatch, environment: var3
+                        var16 = function arg0, arg1, arg2() {
                             _fun2656: for (var _fun2656_ip = 0;;) switch (_fun2656_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -138,25 +138,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot13 = var16;
-                        var16 = function() { // Original name: Generator, environment: var3
+                        var16 = function() {
                             var0 = undefined;
                             return var0;
                         };
                         var15 = var16;
                         var _closure2_slot14 = var16;
-                        var16 = function() { // Original name: GeneratorFunction, environment: var3
+                        var16 = function() {
                             var0 = undefined;
                             return var0;
                         };
                         var13 = var16;
                         var _closure2_slot15 = var16;
-                        var16 = function() { // Original name: GeneratorFunctionPrototype, environment: var3
+                        var16 = function() {
                             var0 = undefined;
                             return var0;
                         };
                         var14 = var16;
                         var _closure2_slot16 = var16;
-                        var5 = function(arg0) { // Original name: defineIteratorMethods, environment: var3
+                        var5 = function arg0() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var2 = ['next', 'throw', 'return'];
@@ -182,12 +182,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = undefined;
                             return var0;
                         };
-                        var16 = function(arg0, arg1) { // Original name: AsyncIterator, environment: var3
+                        var16 = function arg0, arg1() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var1 = arg1;
                             var _closure3_slot1 = var1;
-                            var1 = function(arg0, arg1, arg2, arg3) { // Original name: invoke, environment: var0
+                            var1 = function arg0, arg1, arg2, arg3() {
                                 _fun2664: for (var _fun2664_ip = 0;;) switch (_fun2664_ip) {
                                     case 0:
                                         var6 = arg3;
@@ -299,14 +299,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var _closure3_slot3 = var1;
                             var4 = _closure2_slot2;
                             var3 = {};
-                            var0 = function(arg0, arg1) { // Original name: enqueue, environment: var0
+                            var0 = function arg0, arg1() {
                                 _fun2669: for (var _fun2669_ip = 0;;) switch (_fun2669_ip) {
                                     case 0:
                                         var1 = arg0;
                                         var _closure4_slot0 = var1;
                                         var1 = arg1;
                                         var _closure4_slot1 = var1;
-                                        var4 = function() { // Original name: callInvokeWithMethodAndArg, environment: var0
+                                        var4 = function() {
                                             var2 = _closure3_slot1;
                                             var0 = var2.prototype;
                                             var1 = Object.create(var0, {
@@ -358,7 +358,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var10 = var16;
                         var _closure2_slot17 = var16;
-                        var16 = function(arg0, arg1, arg2) { // Original name: makeInvokeMethod, environment: var3
+                        var16 = function arg0, arg1, arg2() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var1 = arg1;
@@ -367,7 +367,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var _closure3_slot2 = var1;
                             var1 = _closure2_slot5;
                             var _closure3_slot3 = var1;
-                            var0 = function(arg0, arg1) { // Original name: invoke, environment: var0
+                            var0 = function arg0, arg1() {
                                 _fun2673: for (var _fun2673_ip = 0;;) switch (_fun2673_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -570,7 +570,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var _closure2_slot18 = var16;
-                        var16 = function(arg0, arg1) { // Original name: maybeInvokeDelegate, environment: var3
+                        var16 = function arg0, arg1() {
                             _fun2674: for (var _fun2674_ip = 0;;) switch (_fun2674_ip) {
                                 case 0:
                                     var6 = arg0;
@@ -719,7 +719,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot19 = var16;
-                        var16 = function(arg0) { // Original name: pushTryEntry, environment: var3
+                        var16 = function arg0() {
                             _fun2675: for (var _fun2675_ip = 0;;) switch (_fun2675_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -759,7 +759,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot20 = var16;
-                        var16 = function(arg0) { // Original name: resetTryEntry, environment: var3
+                        var16 = function arg0() {
                             _fun2676: for (var _fun2676_ip = 0;;) switch (_fun2676_ip) {
                                 case 0:
                                     var1 = arg0;
@@ -780,7 +780,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot21 = var16;
-                        var16 = function(arg0) { // Original name: Context, environment: var3
+                        var16 = function arg0() {
                             var3 = arg0;
                             var2 = this;
                             var1 = {};
@@ -800,7 +800,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var1 = var16;
                         var _closure2_slot22 = var16;
-                        var16 = function(arg0) { // Original name: values, environment: var3
+                        var16 = function arg0() {
                             _fun2678: for (var _fun2678_ip = 0;;) switch (_fun2678_ip) {
                                 case 0:
                                     var2 = arg0;
@@ -837,7 +837,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 case 65:
                                     var0 = -1;
                                     var _closure3_slot1 = var0;
-                                    var0 = function() { // Original name: next, environment: var3
+                                    var0 = function() {
                                         _fun2679: for (var _fun2679_ip = 0;;) switch (_fun2679_ip) {
                                             case 0:
                                                 var0 = _closure3_slot1;
@@ -905,7 +905,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var2 = var16;
                         var _closure2_slot23 = var16;
-                        var16 = function() { // Original name: doneResult, environment: var3
+                        var16 = function() {
                             var0 = {};
                             var1 = undefined;
                             var0.value = var1;
@@ -994,7 +994,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         continue _fun2653;
                     case 348: // catch_target0
                         CatchBlockStart(arg_register = 22);
-                        var22 = function(arg0, arg1, arg2) { // Original name: define, environment: var3
+                        var22 = function arg0, arg1, arg2() {
                             var0 = arg2;
                             var2 = arg0;
                             var1 = arg1;
@@ -1300,7 +1300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 case 67:
                                     var0 = var2.reverse;
                                     var0 = var0.bind(var2)();
-                                    var0 = function() { // Original name: next, environment: var1
+                                    var0 = function() {
                                         _fun2693: for (var _fun2693_ip = 0;;) switch (_fun2693_ip) {
                                             case 0:
                                                 var1 = _closure3_slot1;
@@ -1348,7 +1348,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var1;
                         var1 = {};
                         var1.constructor = var2;
-                        var4 = function(arg0) { // Original name: reset, environment: var3
+                        var4 = function arg0() {
                             _fun2694: for (var _fun2694_ip = 0;;) switch (_fun2694_ip) {
                                 case 0:
                                     var11 = this;
@@ -1415,7 +1415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.reset = var4;
-                        var4 = function() { // Original name: stop, environment: var3
+                        var4 = function() {
                             _fun2695: for (var _fun2695_ip = 0;;) switch (_fun2695_ip) {
                                 case 0:
                                     var1 = this;
@@ -1440,13 +1440,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.stop = var4;
-                        var4 = function(arg0) { // Original name: dispatchException, environment: var3
+                        var4 = function arg0() {
                             _fun2696: for (var _fun2696_ip = 0;;) switch (_fun2696_ip) {
                                 case 0:
                                     var0 = arg0;
                                     var12 = this;
                                     var _closure3_slot0 = var0;
-                                    var3 = function(arg0, arg1) { // Original name: handle, environment: var13
+                                    var3 = function arg0, arg1() {
                                         _fun2697: for (var _fun2697_ip = 0;;) switch (_fun2697_ip) {
                                             case 0:
                                                 var0 = arg1;
@@ -1624,7 +1624,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.dispatchException = var4;
-                        var4 = function(arg0, arg1) { // Original name: abrupt, environment: var3
+                        var4 = function arg0, arg1() {
                             _fun2698: for (var _fun2698_ip = 0;;) switch (_fun2698_ip) {
                                 case 0:
                                     var5 = arg0;
@@ -1748,7 +1748,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.abrupt = var4;
-                        var4 = function(arg0, arg1) { // Original name: complete, environment: var3
+                        var4 = function arg0, arg1() {
                             _fun2699: for (var _fun2699_ip = 0;;) switch (_fun2699_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -1821,7 +1821,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.complete = var4;
-                        var4 = function(arg0) { // Original name: finish, environment: var3
+                        var4 = function arg0() {
                             _fun2700: for (var _fun2700_ip = 0;;) switch (_fun2700_ip) {
                                 case 0:
                                     var2 = arg0;
@@ -1865,7 +1865,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.finish = var4;
-                        var4 = function(arg0) { // Original name: _catch, environment: var3
+                        var4 = function arg0() {
                             _fun2701: for (var _fun2701_ip = 0;;) switch (_fun2701_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -1926,7 +1926,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.catch = var4;
-                        var3 = function(arg0, arg1, arg2) { // Original name: delegateYield, environment: var3
+                        var3 = function arg0, arg1, arg2() {
                             _fun2702: for (var _fun2702_ip = 0;;) switch (_fun2702_ip) {
                                 case 0:
                                     var2 = this;

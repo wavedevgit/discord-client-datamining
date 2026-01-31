@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Original name: baseClamp, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun32430: for (var _fun32430_ip = 0;;) switch (_fun32430_ip) {
             case 0:
                 var5 = arg0;

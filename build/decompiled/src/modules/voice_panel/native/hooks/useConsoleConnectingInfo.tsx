@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useConsoleConnectingInfo, environment: var1
+    var1 = function arg0() {
         _fun111482: for (var _fun111482_ip = 0;;) switch (_fun111482_ip) {
             case 0:
                 var6 = arg0;

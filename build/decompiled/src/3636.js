@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: arrayReduce, environment: var0
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun32496: for (var _fun32496_ip = 0;;) switch (_fun32496_ip) {
             case 0:
                 var6 = arg0;

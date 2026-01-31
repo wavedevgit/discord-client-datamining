@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}";
     var3.code = var4;
     var _closure1_slot9 = var3;
-    var1 = function(arg0, arg1) { // Original name: useBottomSheetContentContainerStyle, environment: var1
+    var1 = function arg0, arg1() {
         var6 = arg0;
         var0 = arg1;
         var _closure2_slot0 = var6;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var14[var11];
         var5 = var12.bind(var13)(var3);
         var4 = var5.useAnimatedReaction;
-        var3 = function() { // Original name: pnpm_useBottomSheetContentContainerStyleTs1, environment: var2
+        var3 = function() {
             var1 = _closure2_slot4;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3.__workletHash = var9;
         var9 = _closure1_slot8;
         var3.__initData = var9;
-        var2 = function(arg0, arg1) { // Original name: pnpm_useBottomSheetContentContainerStyleTs2, environment: var2
+        var2 = function arg0, arg1() {
             _fun45296: for (var _fun45296_ip = 0;;) switch (_fun45296_ip) {
                 case 0:
                     var1 = _closure2_slot0;

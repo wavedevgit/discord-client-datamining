@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: createPremiumGroupInviteEmbed, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun55815: for (var _fun55815_ip = 0;;) switch (_fun55815_ip) {
             case 0:
                 var0 = arg0;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/hooks/useAuthorizedSlayerApplications.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useAuthorizedSlayerApplications, environment: var1
+    var1 = function arg0, arg1() {
         _fun88356: for (var _fun88356_ip = 0;;) switch (_fun88356_ip) {
             case 0:
                 var8 = arg1;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var9;
-    var6 = function(arg0) { // Original name: isModeratorReportOrPostChannelId, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot13;
         var3 = _closure1_slot5;
         var1 = var3.getChannel;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var6;
-    var5 = function(arg0) { // Original name: isModeratorReportChannel, environment: var1
+    var5 = function arg0() {
         _fun49891: for (var _fun49891_ip = 0;;) switch (_fun49891_ip) {
             case 0:
                 var3 = arg0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0) { // Original name: isModeratorReportPostChannel, environment: var1
+    var4 = function arg0() {
         _fun49892: for (var _fun49892_ip = 0;;) switch (_fun49892_ip) {
             case 0:
                 var3 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0) { // Original name: isModeratorReportOrPostChannel, environment: var1
+    var3 = function arg0() {
         _fun49893: for (var _fun49893_ip = 0;;) switch (_fun49893_ip) {
             case 0:
                 var4 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/report_to_mod/ReportToModUtils.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0) { // Original name: canReportMessageToMods, environment: var1
+    var7 = function arg0() {
         _fun49894: for (var _fun49894_ip = 0;;) switch (_fun49894_ip) {
             case 0:
                 var1 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canAccessReportsChannel = var7;
-    var7 = function(arg0) { // Original name: getReportToModChannelId, environment: var1
+    var7 = function arg0() {
         _fun49896: for (var _fun49896_ip = 0;;) switch (_fun49896_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getReportToModChannelId = var7;
     var2.isModeratorReportOrPostChannelId = var6;
-    var6 = function(arg0) { // Original name: isModeratorReportChannelId, environment: var1
+    var6 = function arg0() {
         var2 = _closure1_slot11;
         var3 = _closure1_slot5;
         var1 = var3.getChannel;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isModeratorReportChannelId = var6;
     var2.isModeratorReportChannel = var5;
-    var5 = function(arg0) { // Original name: isModeratorReportPostChannelId, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot12;
         var3 = _closure1_slot5;
         var1 = var3.getChannel;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isModeratorReportPostChannelId = var5;
     var2.isModeratorReportPostChannel = var4;
     var2.isModeratorReportOrPostChannel = var3;
-    var3 = function(arg0) { // Original name: isSafeToTransitionToReportForCurrentUser, environment: var1
+    var3 = function arg0() {
         _fun49899: for (var _fun49899_ip = 0;;) switch (_fun49899_ip) {
             case 0:
                 var4 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSafeToTransitionToReportForCurrentUser = var3;
-    var3 = function(arg0, arg1) { // Original name: isModeratorReportThreadStarterMessage, environment: var1
+    var3 = function arg0, arg1() {
         _fun49900: for (var _fun49900_ip = 0;;) switch (_fun49900_ip) {
             case 0:
                 var2 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isModeratorReportThreadStarterMessage = var3;
-    var3 = function(arg0) { // Original name: sortedModeratorReportTags, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.sort;
         var0 = function(arg0, arg1) { // Environment: var0
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sortedModeratorReportTags = var3;
-    var3 = function(arg0) { // Original name: isModeratorReportMessage, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.messageSnapshots;
         var1 = var2.some;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isModeratorReportMessage = var3;
-    var1 = function(arg0, arg1) { // Original name: isUserAuthorOfReportedMessage, environment: var1
+    var1 = function arg0, arg1() {
         _fun49905: for (var _fun49905_ip = 0;;) switch (_fun49905_ip) {
             case 0:
                 var3 = arg0;

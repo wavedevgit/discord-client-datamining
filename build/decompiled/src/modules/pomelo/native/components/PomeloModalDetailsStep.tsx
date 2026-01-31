@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.brandColor = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot9 = var6;
-    var6 = function(arg0) { // Original name: InfoItem, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var12 = var0.icon;
         var8 = var0.text;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/pomelo/native/components/PomeloModalDetailsStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PomeloModalDetailsStep, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.user;
         var0 = _closure1_slot9;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.LhlgY9;
         var6 = var10.bind(var14)(var6);
         var0.text = var6;
-        var6 = function() { // Original name: onPress, environment: var2
+        var6 = function() {
             var2 = _closure2_slot0;
             var1 = var2.push;
             var0 = _closure1_slot5;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4["1mGbXA"];
         var4 = var10.bind(var14)(var4);
         var0.text = var4;
-        var2 = function() { // Original name: onPress, environment: var2
+        var2 = function() {
             var2 = _closure2_slot0;
             var1 = var2.push;
             var0 = _closure1_slot5;

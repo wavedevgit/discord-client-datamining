@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: PillWrapper, environment: var5
+    var0 = function arg0() {
         _fun37439: for (var _fun37439_ip = 0;;) switch (_fun37439_ip) {
             case 0:
                 var0 = arg0;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var4 = function(arg0) { // Original name: BasicButtonPill, environment: var5
+    var4 = function arg0() {
         _fun37440: for (var _fun37440_ip = 0;;) switch (_fun37440_ip) {
             case 0:
                 var0 = arg0;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var3 = function(arg0) { // Original name: LoadingButtonPill, environment: var5
+    var3 = function arg0() {
         _fun37441: for (var _fun37441_ip = 0;;) switch (_fun37441_ip) {
             case 0:
                 var1 = arg0;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var1 = function(arg0, arg1) { // Original name: useLoadingStyles, environment: var5
+    var1 = function arg0, arg1() {
         _fun37444: for (var _fun37444_ip = 0;;) switch (_fun37444_ip) {
             case 0:
                 var13 = arg0;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10[var7];
                 var3 = var8.bind(var9)(var0);
                 var2 = var3.useAnimatedStyle;
-                var0 = function() { // Original name: o, environment: var1
+                var0 = function() {
                     _fun37445: for (var _fun37445_ip = 0;;) switch (_fun37445_ip) {
                         case 0:
                             var1 = _closure1_slot0;
@@ -577,7 +577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var10[var7];
                 var3 = var8.bind(var9)(var2);
                 var2 = var3.useAnimatedStyle;
-                var1 = function() { // Original name: s, environment: var1
+                var1 = function() {
                     _fun37446: for (var _fun37446_ip = 0;;) switch (_fun37446_ip) {
                         case 0:
                             var1 = _closure1_slot0;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'design/components/Button/native/ButtonPill.native.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0) { // Original name: ButtonPill, environment: var5
+    var5 = function arg0() {
         _fun37448: for (var _fun37448_ip = 0;;) switch (_fun37448_ip) {
             case 0:
                 var1 = arg0;

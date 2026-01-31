@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot4 = var4;
             var3 = var3.Fragment;
             var _closure1_slot5 = var3;
-            var3 = function() { // Original name: loaderMaker, environment: var1
+            var3 = function() {
                 _fun25436: for (var _fun25436_ip = 0;;) switch (_fun25436_ip) {
                     case 0:
                         var1 = arguments[0];
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
         case 209:
             var2.loaderMaker = var3;
-            var3 = function(arg0) { // Original name: makeLazy, environment: var1
+            var3 = function arg0() {
                 _fun25438: for (var _fun25438_ip = 0;;) switch (_fun25438_ip) {
                     case 0:
                         var1 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var3 = var5.bind(var6)(var3);
                         _closure2_slot3 = var3;
-                        var3 = function(arg0) { // Original name: Wrapper, environment: var0
+                        var3 = function arg0() {
                             _fun25440: for (var _fun25440_ip = 0;;) switch (_fun25440_ip) {
                                 case 0:
                                     var3 = _closure1_slot4;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.makeLazy = var3;
-            var1 = function(arg0) { // Original name: LazyLibrary, environment: var1
+            var1 = function arg0() {
                 _fun25441: for (var _fun25441_ip = 0;;) switch (_fun25441_ip) {
                     case 0:
                         var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: Screenshot, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var20 = var1.render;
         var5 = var1.setUri;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: GravityShareFooter, environment: var1
+    var0 = function arg0() {
         _fun104138: for (var _fun104138_ip = 0;;) switch (_fun104138_ip) {
             case 0:
                 var0 = arg0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var3 = function(arg0) { // Original name: ICYMIShareModal, environment: var1
+    var3 = function arg0() {
         _fun104141: for (var _fun104141_ip = 0;;) switch (_fun104141_ip) {
             case 0:
                 var0 = arg0;
@@ -636,7 +636,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                         var9 = var9.ICYMI;
                                                         var3.location = var9;
                                                         var3.attachmentsToUpload = var8;
-                                                        var1 = function(arg0, arg1, arg2) { // Original name: onAttachmentUploadError, environment: var1
+                                                        var1 = function arg0, arg1, arg2() {
                                                             var2 = _closure1_slot0;
                                                             var1 = _closure1_slot2;
                                                             var0 = 39;
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var14.Header;
                 var14 = {};
                 var14.title = var25;
-                var20 = function() { // Original name: headerTitle, environment: var20
+                var20 = function() {
                     var3 = _closure1_slot13;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/icymi/native/ICYMIShareModal.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: GuildEventShareModal, environment: var1
+    var3 = function arg0() {
         _fun104155: for (var _fun104155_ip = 0;;) switch (_fun104155_ip) {
             case 0:
                 var0 = arg0;
@@ -1116,7 +1116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventShareModal = var3;
-    var3 = function(arg0) { // Original name: GameShareModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.content;
         var _closure2_slot0 = var0;
@@ -1273,7 +1273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GameShareModal = var3;
-    var1 = function(arg0) { // Original name: GeneratedCandidateShareModal, environment: var1
+    var1 = function arg0() {
         _fun104161: for (var _fun104161_ip = 0;;) switch (_fun104161_ip) {
             case 0:
                 var0 = arg0;
@@ -1372,7 +1372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.id = var8;
                 var1.originDestinationId = var7;
                 var1.linkText = var6;
-                var5 = function() { // Original name: render, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot13;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

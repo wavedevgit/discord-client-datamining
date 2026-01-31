@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.editAvatarIcon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: handleChangeAvatar, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 10;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.handleUploadAvatarSelect = var6;
-        var1 = function() { // Original name: handleRemoveAvatarSelect, environment: var1
+        var1 = function() {
             var4 = _closure1_slot0;
             var3 = _closure1_slot2;
             var0 = 15;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_identity/native/EditGuildIdentityAvatar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditGuildIdentityAvatar, environment: var1
+    var1 = function arg0() {
         _fun80729: for (var _fun80729_ip = 0;;) switch (_fun80729_ip) {
             case 0:
                 var1 = arg0;

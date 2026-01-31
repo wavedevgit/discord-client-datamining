@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/UpcomingEventsLongPressActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UpcomingEventsLongPressActionSheet, environment: var1
+    var1 = function arg0() {
         _fun89850: for (var _fun89850_ip = 0;;) switch (_fun89850_ip) {
             case 0:
                 var0 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.text = var19;
                 var16 = var7.bind(var3)(var18, var16);
                 var5.label = var16;
-                var16 = function() { // Original name: onPress, environment: var8
+                var16 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 15;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.text = var12;
                 var9 = var11.bind(var3)(var10, var9);
                 var5.label = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 19;

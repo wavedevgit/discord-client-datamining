@@ -38,14 +38,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reactions/native/MessagePreviewReactions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun73392: for (var _fun73392_ip = 0;;) switch (_fun73392_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.channelId;
                 var10 = var0.messageId;
                 var9 = var0.emoji;
-                var0 = function(arg0) { // Original name: usePreviewMessageReactions, environment: var0
+                var0 = function arg0() {
                     var5 = arg0;
                     var _closure3_slot0 = var5;
                     var4 = _closure1_slot0;

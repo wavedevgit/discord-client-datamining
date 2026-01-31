@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/MobileSurvey.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: MobileSurvey, environment: var1
+    var1 = function() {
         _fun109681: for (var _fun109681_ip = 0;;) switch (_fun109681_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.f3Pet9;
                 var6 = var7.bind(var8)(var6);
                 var1.cancelText = var6;
-                var6 = function() { // Original name: onConfirm, environment: var5
+                var6 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 11;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onConfirm = var6;
-                var6 = function() { // Original name: onCancel, environment: var5
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 8;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onCancel = var6;
-                var5 = function() { // Original name: renderConfirmRightIcon, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot7;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;

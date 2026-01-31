@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierTemplateUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = var17.container;
         var4.style = var7;
-        var7 = function(arg0) { // Original name: onLayout, environment: var15
+        var7 = function arg0() {
             _fun102757: for (var _fun102757_ip = 0;;) switch (_fun102757_ip) {
                 case 0:
                     var0 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.BQq86h;
         var11 = var18.bind(var20)(var11);
         var9.text = var11;
-        var11 = function() { // Original name: onPress, environment: var15
+        var11 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 16;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16 = var16.WAI6xu;
         var16 = var17.bind(var18)(var16);
         var10.text = var16;
-        var15 = function() { // Original name: onPress, environment: var15
+        var15 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 17;

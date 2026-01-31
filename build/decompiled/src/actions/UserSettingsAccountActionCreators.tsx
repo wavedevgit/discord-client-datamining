@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function() { // Original name: saveAccountRequest, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: _saveAccountRequest, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'actions/UserSettingsAccountActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: accountDetailsInit, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.accountDetailsInit = var4;
-    var4 = function() { // Original name: accountDetailsClose, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.accountDetailsClose = var4;
-    var4 = function(arg0, arg1) { // Original name: disableAccount, environment: var1
+    var4 = function arg0, arg1() {
         _fun50686: for (var _fun50686_ip = 0;;) switch (_fun50686_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.disableAccount = var4;
     var2.saveAccountRequest = var3;
-    var3 = function(arg0) { // Original name: saveAccountChanges, environment: var1
+    var3 = function arg0() {
         _fun50688: for (var _fun50688_ip = 0;;) switch (_fun50688_ip) {
             case 0:
                 var1 = arg0;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.saveAccountChanges = var3;
-    var3 = function() { // Original name: getHarvestStatus, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getHarvestStatus = var3;
-    var3 = function(arg0) { // Original name: requestHarvest, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.requestHarvest = var3;
-    var3 = function(arg0) { // Original name: setPendingAvatar, environment: var1
+    var3 = function arg0() {
         _fun50693: for (var _fun50693_ip = 0;;) switch (_fun50693_ip) {
             case 0:
                 var3 = arg0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setPendingAvatar = var3;
-    var3 = function(arg0) { // Original name: setPendingGlobalName, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingGlobalName = var3;
-    var3 = function(arg0) { // Original name: setPendingLegacyUsernameDisabled, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingLegacyUsernameDisabled = var3;
-    var3 = function(arg0) { // Original name: setPendingCollectiblesItem, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingCollectiblesItem = var3;
-    var3 = function(arg0) { // Original name: setPendingPrimaryGuildId, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingPrimaryGuildId = var3;
-    var3 = function(arg0) { // Original name: setPendingDisplayNameStyles, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingDisplayNameStyles = var3;
-    var3 = function() { // Original name: clearErrors, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -748,7 +748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearErrors = var3;
-    var3 = function() { // Original name: resetPendingAccountChanges, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetPendingAccountChanges = var3;
-    var3 = function() { // Original name: resetAllPending, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetAllPending = var3;
-    var3 = function() { // Original name: resetAllTryItOut, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -793,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetAllTryItOut = var3;
-    var3 = function() { // Original name: resetAndCloseUserProfileForm, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetAndCloseUserProfileForm = var3;
-    var3 = function() { // Original name: resetPendingLegacyUsernameDisabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetPendingLegacyUsernameDisabled = var3;
-    var1 = function() { // Original name: resetPendingPrimaryGuildChanges, environment: var1
+    var1 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

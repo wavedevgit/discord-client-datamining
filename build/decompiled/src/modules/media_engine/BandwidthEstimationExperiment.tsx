@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var6
+    var0 = function arg0, arg1() {
         _fun93931: for (var _fun93931_ip = 0;;) switch (_fun93931_ip) {
             case 0:
                 var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var6
+    var0 = function arg0, arg1() {
         _fun93933: for (var _fun93933_ip = 0;;) switch (_fun93933_ip) {
             case 0:
                 var3 = arg0;
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var8)(var1);
     var _closure1_slot0 = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: getConfig, environment: var6
+    var7 = function arg0, arg1() {
         _fun93934: for (var _fun93934_ip = 0;;) switch (_fun93934_ip) {
             case 0:
                 var4 = this;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getConfig = var7;
-    var7 = function(arg0, arg1) { // Original name: supportsBandwidthEstimationExperimentFullname, environment: var6
+    var7 = function arg0, arg1() {
         _fun93935: for (var _fun93935_ip = 0;;) switch (_fun93935_ip) {
             case 0:
                 var4 = arg1;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.supportsBandwidthEstimationExperimentFullname = var7;
-    var6 = function(arg0) { // Original name: getMediaEngineExperiments, environment: var6
+    var6 = function arg0() {
         _fun93936: for (var _fun93936_ip = 0;;) switch (_fun93936_ip) {
             case 0:
                 var2 = arg0;

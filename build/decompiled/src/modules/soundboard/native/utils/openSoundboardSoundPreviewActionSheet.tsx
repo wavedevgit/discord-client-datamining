@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/soundboard/native/utils/openSoundboardSoundPreviewActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: openSoundboardSoundPreviewActionSheet, environment: var1
+    var1 = function arg0, arg1() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 0;

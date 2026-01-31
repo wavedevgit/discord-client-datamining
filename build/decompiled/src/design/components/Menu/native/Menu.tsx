@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var7;
     var _closure1_slot12 = var4;
     var4 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: measureButtonRef, environment: var0
+        var0 = function arg0, arg1() {
             _fun44355: for (var _fun44355_ip = 0;;) switch (_fun44355_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 10;
     var2.MENU_OFFSET = var4;
     var2.MenuContext = var3;
-    var1 = function(arg0) { // Original name: Menu, environment: var1
+    var1 = function arg0() {
         _fun44356: for (var _fun44356_ip = 0;;) switch (_fun44356_ip) {
             case 0:
                 var1 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var8 = var12.bind(var14)(var8, var9);
-                var8 = function() { // Original name: openMenuCallback, environment: var10
+                var8 = function() {
                     _fun44358: for (var _fun44358_ip = 0;;) switch (_fun44358_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot6;
             case 418:
                 _closure2_slot14 = var0;
-                var15 = function() { // Original name: handleClose, environment: var10
+                var15 = function() {
                     var3 = _closure2_slot11;
                     var2 = var3.set;
                     var11 = _closure1_slot0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var11.bind(var0)(var4);
                     var7 = var8.withTiming;
                     var15 = _closure1_slot9;
-                    var5 = function() { // Original name: t, environment: var4
+                    var5 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 8;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 _closure2_slot15 = var15;
-                var14 = function() { // Original name: handleDismiss, environment: var10
+                var14 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4[var16];
                 var2 = var21.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: N, environment: var10
+                var0 = function() {
                     _fun44363: for (var _fun44363_ip = 0;;) switch (_fun44363_ip) {
                         case 0:
                             var0 = {};
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[3] = var8;
                 var6[4] = var7;
                 var4.style = var6;
-                var6 = function(arg0) { // Original name: onLayout, environment: var10
+                var6 = function arg0() {
                     var3 = arg0;
                     var2 = _closure2_slot12;
                     var1 = var2.set;
@@ -958,7 +958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var11.bind(var0)(var4);
                     var7 = var8.withSpring;
                     var15 = _closure1_slot8;
-                    var5 = function() { // Original name: n, environment: var4
+                    var5 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 8;

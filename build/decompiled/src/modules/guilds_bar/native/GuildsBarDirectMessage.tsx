@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildsBarDirectMessage, environment: var1
+    var1 = function arg0() {
         _fun101101: for (var _fun101101_ip = 0;;) switch (_fun101101_ip) {
             case 0:
                 var0 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var10;
                 var2 = function() { // Environment: var2
                     var0 = {};
-                    var2 = function() { // Original name: onPress, environment: var1
+                    var2 = function() {
                         _fun101106: for (var _fun101106_ip = 0;;) switch (_fun101106_ip) {
                             case 0:
                                 var2 = _closure2_slot2;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onPress = var2;
-                    var1 = function() { // Original name: onLongPress, environment: var1
+                    var1 = function() {
                         _fun101107: for (var _fun101107_ip = 0;;) switch (_fun101107_ip) {
                             case 0:
                                 var2 = _closure2_slot2;

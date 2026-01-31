@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var18 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
+    var18 = function arg0() {
         _fun97435: for (var _fun97435_ip = 0;;) switch (_fun97435_ip) {
             case 0:
                 var2 = arg0;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: getPluginOptions, environment: var3
+    var0 = function arg0() {
         _fun97436: for (var _fun97436_ip = 0;;) switch (_fun97436_ip) {
             case 0:
                 var1 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot5;
         var0 = var0.default;
         return var0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot11;
         var0 = var0.default;
         return var0;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot9;
         var0 = var0.default;
         return var0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot7;
         var0 = var0.default;
         return var0;
@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot6;
         var0 = var0.default;
         return var0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot10;
         var0 = var0.default;
         return var0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot8;
         var0 = var0.default;
         return var0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.defineProperty;
     var4 = {};
     var4.enumerable = var14;
-    var1 = function() { // Original name: get, environment: var3
+    var1 = function() {
         var0 = _closure1_slot12;
         var0 = var0.default;
         return var0;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'name': 'React Native App',
         'environment': 'production'
     };
-    var18 = function(arg0) { // Original name: createSocket, environment: var3
+    var18 = function arg0() {
         var0 = global;
         var2 = var0.WebSocket;
         var0 = var2.prototype;
@@ -253,7 +253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4.createSocket = var18;
-    var19 = function() { // Original name: getHost, environment: var3
+    var19 = function() {
         _fun97446: for (var _fun97446_ip = 0;;) switch (_fun97446_ip) {
             case 0:
                 var3 = undefined;
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var15 = var16.bind(var0)(var15);
     var _closure1_slot14 = var15;
-    var15 = function() { // Original name: getClientId, environment: var3
+    var15 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -505,7 +505,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var15 = var16.bind(var0)(var15);
     var _closure1_slot13 = var15;
-    var15 = function(arg0) { // Original name: setClientId, environment: var3
+    var15 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;

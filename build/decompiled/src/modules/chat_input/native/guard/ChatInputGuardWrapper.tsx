@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat_input/native/guard/ChatInputGuardWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChatInputGuardWrapper, environment: var1
+    var1 = function arg0() {
         _fun90503: for (var _fun90503_ip = 0;;) switch (_fun90503_ip) {
             case 0:
                 var0 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.rBIGBL;
                 var17 = var18.bind(var19)(var17);
                 var2.buttonPrimaryText = var17;
-                var17 = function() { // Original name: buttonPrimaryOnPress, environment: var9
+                var17 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.lm1UKt;
                 var14 = var15.bind(var16)(var14);
                 var1.buttonPrimaryText = var14;
-                var14 = function() { // Original name: buttonPrimaryOnPress, environment: var9
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 21;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14["50gfOv"];
                 var14 = var15.bind(var16)(var14);
                 var1.buttonPrimaryText = var14;
-                var14 = function() { // Original name: buttonPrimaryOnPress, environment: var9
+                var14 = function() {
                     var3 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 21;
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.XyHpKH;
                 var10 = var11.bind(var12)(var10);
                 var1.buttonPrimaryText = var10;
-                var9 = function() { // Original name: buttonPrimaryOnPress, environment: var9
+                var9 = function() {
                     _fun90509: for (var _fun90509_ip = 0;;) switch (_fun90509_ip) {
                         case 0:
                             var2 = _closure2_slot0;

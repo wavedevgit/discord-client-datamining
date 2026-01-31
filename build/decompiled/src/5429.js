@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var3;
     var3 = var3.length;
     var _closure1_slot1 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: extractResponder, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun48222: for (var _fun48222_ip = 0;;) switch (_fun48222_ip) {
             case 0:
                 var1 = arg0;

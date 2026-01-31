@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: reject, environment: var2
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = global;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'interactionComplete': 'interactionComplete'
     };
     var0.Events = var3;
-    var3 = function(arg0) { // Original name: runAfterInteractions, environment: var2
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = global;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = var3.bind;
         var2 = var2.bind(var3)(var4);
         var0.then = var2;
-        var1 = function() { // Original name: cancel, environment: var1
+        var1 = function() {
             var0 = global;
             var2 = var0.clearImmediate;
             var1 = _closure2_slot1;
@@ -208,12 +208,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.runAfterInteractions = var3;
-    var3 = function() { // Original name: createInteractionHandle, environment: var2
+    var3 = function() {
         var0 = -1;
         return var0;
     };
     var0.createInteractionHandle = var3;
-    var3 = function(arg0) { // Original name: clearInteractionHandle, environment: var2
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -228,9 +228,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.clearInteractionHandle = var3;
-    var3 = function() { // Original name: addListener, environment: var2
+    var3 = function() {
         var0 = {};
-        var1 = function() { // Original name: remove, environment: var1
+        var1 = function() {
             var0 = undefined;
             return var0;
         };
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.addListener = var3;
-    var2 = function(arg0) { // Original name: setDeadline, environment: var2
+    var2 = function arg0() {
         var0 = undefined;
         return var0;
     };

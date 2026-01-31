@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: getForumPostShouldObscure, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun89504: for (var _fun89504_ip = 0;;) switch (_fun89504_ip) {
             case 0:
                 var0 = arg0;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getObscureReasonForUnfurledMediaItem = var4;
     var2.getForumPostShouldObscure = var3;
-    var3 = function(arg0) { // Original name: useShouldObscure, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.channel;
         var _closure2_slot0 = var2;

@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_parallaxTs1(value){const{interpolate,size,parallaxScrollingOffset,Extrapolation,parallaxAdjacentItemScale,parallaxScrollingScale,vertical}=this.__closure;const translate=interpolate(value,[-1,0,1],[-size+parallaxScrollingOffset,0,size-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,size,0],Extrapolation.CLAMP));const scale=interpolate(value,[-1,0,1],[parallaxAdjacentItemScale,parallaxScrollingScale,parallaxAdjacentItemScale],Extrapolation.CLAMP);return{transform:[vertical?{translateY:translate}:{translateX:translate},{scale:scale}],zIndex:zIndex};}';
     var2.code = var3;
     var _closure1_slot2 = var2;
-    var0 = function(arg0) { // Original name: parallaxLayout, environment: var0
+    var0 = function arg0() {
         _fun74869: for (var _fun74869_ip = 0;;) switch (_fun74869_ip) {
             case 0:
                 var2 = arg0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = exponentiationOperator(var14, var13);
             case 121:
                 var _closure2_slot4 = var5;
-                var0 = function(arg0) { // Original name: pnpm_parallaxTs1, environment: var0
+                var0 = function arg0() {
                     _fun74870: for (var _fun74870_ip = 0;;) switch (_fun74870_ip) {
                         case 0:
                             var8 = arg0;

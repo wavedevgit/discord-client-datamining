@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var _closure1_slot3 = var7;
-    var0 = function(arg0, arg1) { // Original name: validateCallback, environment: var4
+    var0 = function arg0, arg1() {
         _fun2838: for (var _fun2838_ip = 0;;) switch (_fun2838_ip) {
             case 0:
                 var0 = arg0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: dispatch, environment: var4
+    var0 = function arg0, arg1() {
         _fun2839: for (var _fun2839_ip = 0;;) switch (_fun2839_ip) {
             case 0:
                 var11 = arg0;
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: invoke, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun2840: for (var _fun2840_ip = 0;;) switch (_fun2840_ip) {
             case 0:
                 var4 = arg0;
@@ -504,7 +504,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: getListenersForPhase, environment: var4
+    var0 = function arg0, arg1() {
         _fun2841: for (var _fun2841_ip = 0;;) switch (_fun2841_ip) {
             case 0:
                 var2 = arg0;
@@ -526,7 +526,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: setEventDispatchFlag, environment: var4
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot8;
         var1 = arg1;
         var0 = arg0;
@@ -554,7 +554,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot5 = var1;
     var1 = function() { // Environment: var4
         var3 = _closure1_slot5;
-        var2 = function() { // Original name: EventTarget, environment: var5
+        var2 = function() {
             var3 = _closure1_slot4;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -566,7 +566,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var1 = 'addEventListener';
         var4.key = var1;
-        var1 = function(arg0, arg1) { // Original name: addEventListener, environment: var5
+        var1 = function arg0, arg1() {
             _fun2845: for (var _fun2845_ip = 0;;) switch (_fun2845_ip) {
                 case 0:
                     var8 = arg1;
@@ -844,7 +844,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'removeEventListener';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: removeEventListener, environment: var5
+        var6 = function arg0, arg1() {
             _fun2847: for (var _fun2847_ip = 0;;) switch (_fun2847_ip) {
                 case 0:
                     var4 = arg1;
@@ -957,7 +957,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'dispatchEvent';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: dispatchEvent, environment: var5
+        var6 = function arg0() {
             _fun2848: for (var _fun2848_ip = 0;;) switch (_fun2848_ip) {
                 case 0:
                     var0 = arg0;
@@ -1035,7 +1035,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var9 = var7.bind(var0)(var9);
         var9 = var9.EVENT_TARGET_GET_THE_PARENT_KEY;
         var4.key = var9;
-        var9 = function() { // Original name: value, environment: var5
+        var9 = function() {
             var0 = null;
             return var0;
         };
@@ -1046,7 +1046,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = var7.bind(var0)(var6);
         var6 = var6.INTERNAL_DISPATCH_METHOD_KEY;
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var3 = _closure1_slot10;
             var0 = undefined;
             var2 = this;

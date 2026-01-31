@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ActivityActionOverlay, environment: var1
+    var0 = function arg0() {
         _fun111345: for (var _fun111345_ip = 0;;) switch (_fun111345_ip) {
             case 0:
                 var0 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: ParticipantsText, environment: var1
+    var0 = function arg0() {
         _fun111346: for (var _fun111346_ip = 0;;) switch (_fun111346_ip) {
             case 0:
                 var0 = arg0;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/controls/activities/ActivityShelfItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityShelfItem, environment: var1
+    var1 = function arg0() {
         _fun111347: for (var _fun111347_ip = 0;;) switch (_fun111347_ip) {
             case 0:
                 var1 = arg0;

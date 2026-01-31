@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = require;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function(arg0) { // Original name: eligibleForGuildExperiment, environment: var1
+    var0 = function arg0() {
         _fun102293: for (var _fun102293_ip = 0;;) switch (_fun102293_ip) {
             case 0:
                 var2 = arg0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/powerups/experiments/VanityURLPerkExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.VanityURLPerkExperiment = var3;
-    var3 = function(arg0, arg1) { // Original name: useVanityURLPerkExperimentEnabled, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var3 = _closure1_slot3;
         var2 = undefined;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useVanityURLPerkExperimentEnabled = var3;
-    var3 = function(arg0, arg1) { // Original name: useVanityURLPerkPurchaseEnabled, environment: var1
+    var3 = function arg0, arg1() {
         _fun102295: for (var _fun102295_ip = 0;;) switch (_fun102295_ip) {
             case 0:
                 var0 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useVanityURLPerkPurchaseEnabled = var3;
-    var3 = function(arg0, arg1) { // Original name: useVanityURLPerkRollbackEnabled, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var3 = _closure1_slot3;
         var2 = undefined;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useVanityURLPerkRollbackEnabled = var3;
-    var3 = function(arg0, arg1) { // Original name: getVanityURLPerkRollbackEnabled, environment: var1
+    var3 = function arg0, arg1() {
         _fun102297: for (var _fun102297_ip = 0;;) switch (_fun102297_ip) {
             case 0:
                 var1 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVanityURLPerkRollbackEnabled = var3;
-    var1 = function(arg0, arg1) { // Original name: getVanityURLPerkExperimentEnabled, environment: var1
+    var1 = function arg0, arg1() {
         _fun102298: for (var _fun102298_ip = 0;;) switch (_fun102298_ip) {
             case 0:
                 var1 = arg0;

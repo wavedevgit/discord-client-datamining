@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun90154: for (var _fun90154_ip = 0;;) switch (_fun90154_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun90156: for (var _fun90156_ip = 0;;) switch (_fun90156_ip) {
             case 0:
                 var3 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.MediaKeyboardTarget;
     var _closure1_slot13 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getNextOption, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun90157: for (var _fun90157_ip = 0;;) switch (_fun90157_ip) {
             case 0:
                 var1 = arg1;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot6;
-        var2 = function(arg0) { // Original name: ApplicationCommandManager, environment: var4
+        var2 = function arg0() {
             var1 = arg0;
             var2 = this;
             var _closure3_slot0 = var2;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ChatInputNodeType;
                 var9 = var9.COMMAND_OPTION;
                 var2.type = var9;
-                var9 = function(arg0, arg1) { // Original name: matchFunction, environment: var4
+                var9 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.matchFunction = var9;
-                var9 = function() { // Original name: style, environment: var4
+                var9 = function() {
                     var0 = _closure3_slot0;
                     var1 = var0.styles;
                     var0 = var1.commandOption;
@@ -1072,7 +1072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ChatInputNodeType;
                 var9 = var9.COMMAND_OPTION_WITH_VALUE;
                 var2.type = var9;
-                var9 = function(arg0, arg1) { // Original name: matchFunction, environment: var4
+                var9 = function arg0, arg1() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1086,7 +1086,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.matchFunction = var9;
-                var9 = function() { // Original name: style, environment: var4
+                var9 = function() {
                     var0 = _closure3_slot0;
                     var1 = var0.styles;
                     var0 = var1.commandOption;
@@ -1094,7 +1094,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.style = var9;
-                var9 = function(arg0) { // Original name: editDisabled, environment: var4
+                var9 = function arg0() {
                     _fun90175: for (var _fun90175_ip = 0;;) switch (_fun90175_ip) {
                         case 0:
                             var0 = arg0;
@@ -1134,7 +1134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ChatInputNodeType;
                 var9 = var9.EMOJI_HIGHLIGHT;
                 var2.type = var9;
-                var9 = function(arg0) { // Original name: matchFunction, environment: var4
+                var9 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1150,7 +1150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.matchFunction = var9;
-                var9 = function() { // Original name: style, environment: var4
+                var9 = function() {
                     var0 = _closure3_slot0;
                     var1 = var0.styles;
                     var0 = var1.autocomplete;
@@ -1158,7 +1158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.style = var9;
-                var9 = function() { // Original name: editDisabled, environment: var4
+                var9 = function() {
                     var0 = false;
                     return var0;
                 };
@@ -1174,7 +1174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ChatInputNodeType;
                 var9 = var9.ROLE_HIGHLIGHT;
                 var2.type = var9;
-                var9 = function(arg0) { // Original name: matchFunction, environment: var4
+                var9 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1190,7 +1190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.matchFunction = var9;
-                var9 = function(arg0) { // Original name: style, environment: var4
+                var9 = function arg0() {
                     _fun90180: for (var _fun90180_ip = 0;;) switch (_fun90180_ip) {
                         case 0:
                             var0 = arg0;
@@ -1222,7 +1222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2.style = var9;
-                var9 = function() { // Original name: editDisabled, environment: var4
+                var9 = function() {
                     var0 = false;
                     return var0;
                 };
@@ -1238,7 +1238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ChatInputNodeType;
                 var9 = var9.USER_HIGHLIGHT;
                 var2.type = var9;
-                var9 = function(arg0) { // Original name: matchFunction, environment: var4
+                var9 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1254,7 +1254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.matchFunction = var9;
-                var9 = function() { // Original name: style, environment: var4
+                var9 = function() {
                     var0 = _closure3_slot0;
                     var1 = var0.styles;
                     var0 = var1.autocomplete;
@@ -1262,7 +1262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.style = var9;
-                var9 = function() { // Original name: editDisabled, environment: var4
+                var9 = function() {
                     var0 = false;
                     return var0;
                 };
@@ -1278,7 +1278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.ChatInputNodeType;
                 var9 = var9.CHANNEL_HIGHLIGHT;
                 var2.type = var9;
-                var9 = function(arg0) { // Original name: matchFunction, environment: var4
+                var9 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1294,7 +1294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.matchFunction = var9;
-                var9 = function() { // Original name: style, environment: var4
+                var9 = function() {
                     var0 = _closure3_slot0;
                     var1 = var0.styles;
                     var0 = var1.autocomplete;
@@ -1302,7 +1302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.style = var9;
-                var9 = function() { // Original name: editDisabled, environment: var4
+                var9 = function() {
                     var0 = false;
                     return var0;
                 };
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.ChatInputNodeType;
                 var5 = var5.SILENT_HIGHLIGHT;
                 var1.type = var5;
-                var5 = function(arg0) { // Original name: matchFunction, environment: var4
+                var5 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 14;
@@ -1331,7 +1331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.matchFunction = var5;
-                var5 = function() { // Original name: style, environment: var4
+                var5 = function() {
                     var0 = _closure3_slot0;
                     var1 = var0.styles;
                     var0 = var1.autocomplete;
@@ -1339,7 +1339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.style = var5;
-                var4 = function() { // Original name: editDisabled, environment: var4
+                var4 = function() {
                     var0 = false;
                     return var0;
                 };
@@ -1475,7 +1475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = 3;
                         var14 = var11.bind(var12)(var10, var8);
                         var _closure4_slot4 = var14;
-                        var13 = function() { // Original name: _loop, environment: var4
+                        var13 = function() {
                             _fun90193: for (var _fun90193_ip = 0;;) switch (_fun90193_ip) {
                                 case 0:
                                     var5 = _closure4_slot4;
@@ -2961,7 +2961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'setPreferredOptionValue';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: setPreferredOptionValue, environment: var4
+        var1 = function arg0, arg1, arg2() {
             _fun90203: for (var _fun90203_ip = 0;;) switch (_fun90203_ip) {
                 case 0:
                     var1 = arg0;
@@ -2993,7 +2993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'mergePropsAndUpdate';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: mergePropsAndUpdate, environment: var4
+        var5 = function arg0() {
             _fun90204: for (var _fun90204_ip = 0;;) switch (_fun90204_ip) {
                 case 0:
                     var8 = arg0;
@@ -4581,7 +4581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateValidationResults';
         var0.key = var5;
-        var4 = function() { // Original name: updateValidationResults, environment: var4
+        var4 = function() {
             _fun90210: for (var _fun90210_ip = 0;;) switch (_fun90210_ip) {
                 case 0:
                     var1 = this;

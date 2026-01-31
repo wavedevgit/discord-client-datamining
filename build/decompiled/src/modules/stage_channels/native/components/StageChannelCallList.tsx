@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.RIGHT;
     var3.direction = var6;
     var _closure1_slot10 = var3;
-    var3 = function(arg0, arg1) { // Original name: getSpeakerRowHeight, environment: var1
+    var3 = function arg0, arg1() {
         _fun69168: for (var _fun69168_ip = 0;;) switch (_fun69168_ip) {
             case 0:
                 var1 = arg1;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var5;
                     var5 = _closure2_slot10;
                     var1.count = var5;
-                    var5 = function() { // Original name: onToggleCollapse, environment: var6
+                    var5 = function() {
                         var2 = _closure2_slot6;
                         var0 = _closure2_slot5;
                         var1 = !var0;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var7;
                     var7 = _closure2_slot11;
                     var1.count = var7;
-                    var6 = function() { // Original name: onToggleCollapse, environment: var6
+                    var6 = function() {
                         var2 = _closure2_slot4;
                         var0 = _closure2_slot3;
                         var1 = !var0;
@@ -1082,7 +1082,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/StageChannelCallList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageChannelCallList, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.channel;
         var2 = _closure1_slot0;

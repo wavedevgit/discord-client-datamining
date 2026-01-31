@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/useGuildOnboardingAvailable.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGuildOnboardingAvailable, environment: var1
+    var3 = function arg0() {
         _fun49526: for (var _fun49526_ip = 0;;) switch (_fun49526_ip) {
             case 0:
                 var3 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: isGuildOnboardingAvailable, environment: var1
+    var1 = function arg0() {
         _fun49528: for (var _fun49528_ip = 0;;) switch (_fun49528_ip) {
             case 0:
                 var2 = arg0;

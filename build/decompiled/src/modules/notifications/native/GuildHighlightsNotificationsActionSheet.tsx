@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildPill, environment: var1
+    var0 = function arg0() {
         _fun76210: for (var _fun76210_ip = 0;;) switch (_fun76210_ip) {
             case 0:
                 var0 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: isFeedbackComplete, environment: var1
+    var0 = function arg0() {
         _fun76211: for (var _fun76211_ip = 0;;) switch (_fun76211_ip) {
             case 0:
                 var0 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: isFeedbackGood, environment: var1
+    var0 = function arg0() {
         _fun76212: for (var _fun76212_ip = 0;;) switch (_fun76212_ip) {
             case 0:
                 var0 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/native/GuildHighlightsNotificationsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SummaryFeedbackActionSheet, environment: var1
+    var1 = function arg0() {
         _fun76213: for (var _fun76213_ip = 0;;) switch (_fun76213_ip) {
             case 0:
                 var1 = arg0;
@@ -840,7 +840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var25 === var24;
             case 1504:
                 var20.value = var23;
-                var23 = function(arg0) { // Original name: onValueChange, environment: var18
+                var23 = function arg0() {
                     _fun76221: for (var _fun76221_ip = 0;;) switch (_fun76221_ip) {
                         case 0:
                             var1 = arg0;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.t;
                 var15 = var14.F9rfLX;
                 var14 = {};
-                var18 = function() { // Original name: notifSettingsHook, environment: var18
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 26;

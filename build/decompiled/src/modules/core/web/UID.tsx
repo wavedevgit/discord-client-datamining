@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var6)(var2, var0, var3);
-    var4 = function() { // Original name: uid, environment: var1
+    var4 = function() {
         _fun44491: for (var _fun44491_ip = 0;;) switch (_fun44491_ip) {
             case 0:
                 var2 = arguments[0];
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var4;
-    var3 = function() { // Original name: useUID, environment: var1
+    var3 = function() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;

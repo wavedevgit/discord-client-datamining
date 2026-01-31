@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/StageChannelParticipantUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: participantMemberInfo, environment: var1
+    var1 = function arg0() {
         _fun67752: for (var _fun67752_ip = 0;;) switch (_fun67752_ip) {
             case 0:
                 var2 = arg0;

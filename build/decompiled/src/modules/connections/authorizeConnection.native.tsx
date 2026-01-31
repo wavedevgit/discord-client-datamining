@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/connections/authorizeConnection.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: authorizeConnection, environment: var1
+    var1 = function arg0() {
         _fun47461: for (var _fun47461_ip = 0;;) switch (_fun47461_ip) {
             case 0:
                 var0 = arg0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0.overrideUrl;
                 var _closure2_slot1 = var10;
                 var9 = var0.successRedirect;
-                var1 = function() { // Original name: registerHandleModalClose, environment: var8
+                var1 = function() {
                     _fun47462: for (var _fun47462_ip = 0;;) switch (_fun47462_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = undefined;
                             var3 = var3.bind(var1)(var2);
                             var2 = var3.subscribe;
-                            var1 = function() { // Original name: handleModalClose, environment: var0
+                            var1 = function() {
                                 _fun47463: for (var _fun47463_ip = 0;;) switch (_fun47463_ip) {
                                     case 0:
                                         var2 = _closure2_slot0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = {};
                 var3.shouldConfirm = var11;
                 var3.href = var10;
-                var8 = function() { // Original name: onConfirm, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 13;

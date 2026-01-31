@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/quests/native/VideoQuestModal/VideoQuestModalContext.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: useVideoQuestModalContext, environment: var1
+    var1 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useContext;
         var0 = _closure1_slot3;

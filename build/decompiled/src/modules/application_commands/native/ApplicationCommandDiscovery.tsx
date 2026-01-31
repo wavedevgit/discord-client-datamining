@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun90022: for (var _fun90022_ip = 0;;) switch (_fun90022_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun90024: for (var _fun90024_ip = 0;;) switch (_fun90024_ip) {
             case 0:
                 var3 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ApplicationCommandDiscovery.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ApplicationCommandDiscovery, environment: var1
+    var1 = function arg0() {
         _fun90025: for (var _fun90025_ip = 0;;) switch (_fun90025_ip) {
             case 0:
                 var0 = arg0;
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot0 = var0;
                             var0 = new Array(0);
                             var _closure3_slot1 = var0;
-                            var5 = function(arg0) { // Original name: _loop, environment: var1
+                            var5 = function arg0() {
                                 _fun90038: for (var _fun90038_ip = 0;;) switch (_fun90038_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -1150,7 +1150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.onScrollBeginDrag = var16;
                 var4.onScrollEndDrag = var15;
                 var4.onMomentumScrollEnd = var14;
-                var14 = function(arg0) { // Original name: onScroll, environment: var10
+                var14 = function arg0() {
                     _fun90044: for (var _fun90044_ip = 0;;) switch (_fun90044_ip) {
                         case 0:
                             var0 = arg0;
@@ -1272,7 +1272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.onScroll = var14;
                 var14 = 16;
                 var4.scrollEventThrottle = var14;
-                var14 = function(arg0) { // Original name: keyExtractor, environment: var10
+                var14 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
@@ -1289,7 +1289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var12;
             case 932:
                 var4.maintainVisibleContentPosition = var11;
-                var11 = function(arg0) { // Original name: renderItem, environment: var10
+                var11 = function arg0() {
                     _fun90046: for (var _fun90046_ip = 0;;) switch (_fun90046_ip) {
                         case 0:
                             var0 = arg0;
@@ -1332,7 +1332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.bind(var3)(var1);
                             var1 = {};
                             var1.command = var7;
-                            var9 = function() { // Original name: onPress, environment: var9
+                            var9 = function() {
                                 _fun90048: for (var _fun90048_ip = 0;;) switch (_fun90048_ip) {
                                     case 0:
                                         var2 = _closure2_slot0;
@@ -1380,7 +1380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var4.renderItem = var11;
-                var10 = function(arg0) { // Original name: renderSectionHeader, environment: var10
+                var10 = function arg0() {
                     _fun90049: for (var _fun90049_ip = 0;;) switch (_fun90049_ip) {
                         case 0:
                             var0 = arg0;

@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/pip/VoicePanelSecondaryPIPContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: VoicePanelSecondaryPIPContent, environment: var1
+    var1 = function() {
         _fun111819: for (var _fun111819_ip = 0;;) switch (_fun111819_ip) {
             case 0:
                 var17 = _closure1_slot3;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var17[var3];
                 var6 = var6.bind(var4)(var3);
                 var3 = var6.useAnimatedStyle;
-                var2 = function() { // Original name: P, environment: var2
+                var2 = function() {
                     _fun111824: for (var _fun111824_ip = 0;;) switch (_fun111824_ip) {
                         case 0:
                             var1 = _closure1_slot1;

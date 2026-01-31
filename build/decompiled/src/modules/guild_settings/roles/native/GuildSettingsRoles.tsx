@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: hasSearchQuery, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = var1.trim;
         var1 = var0.bind(var1)();
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1) { // Original name: useSearchQueryStateWithAnalytics, environment: var1
+    var0 = function arg0, arg1() {
         var9 = arg0;
         var10 = arg1;
         var _closure2_slot0 = var9;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: PinPermissionMigrationCallout, environment: var1
+    var0 = function arg0() {
         _fun115584: for (var _fun115584_ip = 0;;) switch (_fun115584_ip) {
             case 0:
                 var0 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 289:
                 var8 = var6.DXvUMK;
                 var6 = {};
-                var12 = function() { // Original name: onClickMigrate, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot3;
                     var0 = 26;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4["cY+Oob"];
                     var4 = var5.bind(var6)(var4);
                     var1.confirmText = var4;
-                    var4 = function() { // Original name: onConfirm, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 23;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: JointPermissionMigrationCallout, environment: var1
+    var0 = function arg0() {
         _fun115588: for (var _fun115588_ip = 0;;) switch (_fun115588_ip) {
             case 0:
                 var1 = arg0;
@@ -840,7 +840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoles.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedGuildSettingsModalRoles, environment: var1
+    var1 = function arg0() {
         _fun115591: for (var _fun115591_ip = 0;;) switch (_fun115591_ip) {
             case 0:
                 var1 = arg0;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var10)(var4);
                 var10 = var4.enabled;
                 _closure2_slot13 = var10;
-                var4 = function(arg0) { // Original name: useRoleJustCreatedHelper, environment: var0
+                var4 = function arg0() {
                     var6 = arg0;
                     var _closure3_slot0 = var6;
                     var4 = _closure1_slot0;
@@ -1149,7 +1149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var4 = var4.bind(var3)(var19);
-                var4 = function(arg0) { // Original name: useGuildRoleAccessGuard, environment: var0
+                var4 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var4 = _closure1_slot0;
@@ -2167,7 +2167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = {};
                             var5.role = var10;
                             var5.locked = var9;
-                            var9 = function() { // Original name: onPress, environment: var9
+                            var9 = function() {
                                 var2 = _closure2_slot24;
                                 var1 = _closure2_slot6;
                                 var0 = undefined;

@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'none': 'none'
     };
     var _closure1_slot0 = var2;
-    var0 = function(arg0) { // Original name: convertObjectFitToResizeMode, environment: var0
+    var0 = function arg0() {
         _fun4879: for (var _fun4879_ip = 0;;) switch (_fun4879_ip) {
             case 0:
                 var2 = arg0;

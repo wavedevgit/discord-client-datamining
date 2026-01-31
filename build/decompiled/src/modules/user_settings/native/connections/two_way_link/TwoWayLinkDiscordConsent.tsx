@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/connections/two_way_link/TwoWayLinkDiscordConsent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TwoWayLinkDiscordConsent, environment: var1
+    var1 = function arg0() {
         _fun47537: for (var _fun47537_ip = 0;;) switch (_fun47537_ip) {
             case 0:
                 var1 = arg0;

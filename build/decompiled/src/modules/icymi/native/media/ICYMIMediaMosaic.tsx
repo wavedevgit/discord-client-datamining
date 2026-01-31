@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: isMediaSourceGif, environment: var3
+    var0 = function arg0() {
         _fun104037: for (var _fun104037_ip = 0;;) switch (_fun104037_ip) {
             case 0:
                 var1 = arg0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: MediaMosaicVideo, environment: var3
+    var0 = function arg0() {
         _fun104038: for (var _fun104038_ip = 0;;) switch (_fun104038_ip) {
             case 0:
                 var0 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: MediaMosaicImage, environment: var3
+    var0 = function arg0() {
         _fun104040: for (var _fun104040_ip = 0;;) switch (_fun104040_ip) {
             case 0:
                 var0 = arg0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var15[var6];
                 var2 = var17.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: h, environment: var11
+                var0 = function() {
                     _fun104041: for (var _fun104041_ip = 0;;) switch (_fun104041_ip) {
                         case 0:
                             var0 = {};
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[1] = var14;
                 var12[2] = var13;
                 var6.style = var12;
-                var11 = function() { // Original name: onLoadEnd, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = true;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: Media, environment: var3
+    var0 = function arg0() {
         _fun104044: for (var _fun104044_ip = 0;;) switch (_fun104044_ip) {
             case 0:
                 var1 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 824:
                 var22[1] = var23;
                 var17.style = var22;
-                var21 = function() { // Original name: onPress, environment: var21
+                var21 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 23;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: OneImageRow, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.source;
         var8 = var0.handlePressMedia;
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: ThreeImagesRow, environment: var3
+    var0 = function arg0() {
         _fun104050: for (var _fun104050_ip = 0;;) switch (_fun104050_ip) {
             case 0:
                 var0 = arg0;
@@ -816,7 +816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: TwoImagesRow, environment: var3
+    var0 = function arg0() {
         _fun104052: for (var _fun104052_ip = 0;;) switch (_fun104052_ip) {
             case 0:
                 var0 = arg0;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: ThreeImages, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var15 = var0.sources;
         var16 = var0.handlePressMedia;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: FourImages, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var14 = var0.sources;
         var13 = var0.handlePressMedia;
@@ -1073,7 +1073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: SingleImage, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var10 = var1.source;
         var _closure2_slot0 = var10;
@@ -1173,7 +1173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var1 = function(arg0) { // Original name: GravityAttachmentMediaMosaic, environment: var3
+    var1 = function arg0() {
         _fun104058: for (var _fun104058_ip = 0;;) switch (_fun104058_ip) {
             case 0:
                 var0 = arg0;
@@ -1399,7 +1399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var1;
-    var0 = function(arg0) { // Original name: useMaxWidth, environment: var3
+    var0 = function arg0() {
         _fun104061: for (var _fun104061_ip = 0;;) switch (_fun104061_ip) {
             case 0:
                 var0 = arg0;
@@ -1704,7 +1704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/icymi/native/media/ICYMIMediaMosaic.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ICYMIMediaMosaic, environment: var3
+    var3 = function arg0() {
         _fun104063: for (var _fun104063_ip = 0;;) switch (_fun104063_ip) {
             case 0:
                 var0 = arg0;

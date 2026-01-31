@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: nanoid, environment: var0
+    var2 = function() {
         _fun16980: for (var _fun16980_ip = 0;;) switch (_fun16980_ip) {
             case 0:
                 var4 = undefined;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.nanoid = var2;
-    var0 = function(arg0) { // Original name: customAlphabet, environment: var0
+    var0 = function arg0() {
         _fun16981: for (var _fun16981_ip = 0;;) switch (_fun16981_ip) {
             case 0:
                 var5 = undefined;

@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: SettingsSearchEmptyState, environment: var1
+    var1 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var7 = var0.bind(var3)();

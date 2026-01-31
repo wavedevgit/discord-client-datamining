@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.placeholderText = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot11 = var6;
-    var6 = function(arg0) { // Original name: UnpurchasedCollectiblesShopCardV2, environment: var1
+    var6 = function arg0() {
         var6 = _closure1_slot4;
         var3 = var6.useState;
         var2 = 0;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/tooling/CollectiblesTool.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun86822: for (var _fun86822_ip = 0;;) switch (_fun86822_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.textStyle = var21;
                 var21 = 'Show Collectibles Modal';
                 var17.text = var21;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     _fun86827: for (var _fun86827_ip = 0;;) switch (_fun86827_ip) {
                         case 0:
                             var1 = _closure2_slot2;

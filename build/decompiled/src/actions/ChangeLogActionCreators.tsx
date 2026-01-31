@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: cacheBustParam, environment: var3
+    var0 = function() {
         var0 = global;
         var1 = var0.Date;
         var2 = var1.prototype;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ChangelogPlatforms;
     var _closure1_slot6 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: lockChangeLog, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.lockChangeLog = var6;
-    var6 = function(arg0) { // Original name: unlockChangeLog, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.unlockChangeLog = var6;
-    var6 = function(arg0, arg1) { // Original name: markChangelogAsSeen, environment: var3
+    var6 = function arg0, arg1() {
         var3 = arg0;
         var5 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.markChangelogAsSeen = var6;
-    var6 = function(arg0) { // Original name: setChangelogOverride, environment: var3
+    var6 = function arg0() {
         _fun55873: for (var _fun55873_ip = 0;;) switch (_fun55873_ip) {
             case 0:
                 var3 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.setChangelogOverride = var6;
-    var6 = function(arg0) { // Original name: sendChangelogMessage, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.sendChangelogMessage = var6;
-    var6 = function() { // Original name: fetchChangelogConfig, environment: var3
+    var6 = function() {
         var0 = _closure1_slot6;
         var7 = var0.MOBILE;
         var1 = _closure1_slot0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchChangelogConfig = var6;
-    var3 = function(arg0, arg1) { // Original name: fetchChangelog, environment: var3
+    var3 = function arg0, arg1() {
         _fun55876: for (var _fun55876_ip = 0;;) switch (_fun55876_ip) {
             case 0:
                 var3 = arguments[2];

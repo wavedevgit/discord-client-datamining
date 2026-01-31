@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/hooks/useTapGestures.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useTapGestures, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot3;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             _fun111273: for (var _fun111273_ip = 0;;) switch (_fun111273_ip) {
                 case 0:
-                    var9 = function(arg0) { // Original name: handleEvent, environment: var0
+                    var9 = function arg0() {
                         _fun111274: for (var _fun111274_ip = 0;;) switch (_fun111274_ip) {
                             case 0:
                                 var1 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.numberOfTaps;
                     var5 = var1.bind(var2)(var8);
                     var2 = var5.onTouchesDown;
-                    var1 = function(arg0, arg1) { // Original name: O, environment: var0
+                    var1 = function arg0, arg1() {
                         _fun111275: for (var _fun111275_ip = 0;;) switch (_fun111275_ip) {
                             case 0:
                                 var1 = arg1;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.__initData = var10;
                     var14 = var2.bind(var5)(var1);
                     var13 = var14.onStart;
-                    var2 = function() { // Original name: h, environment: var0
+                    var2 = function() {
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
                         var0 = 3;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var5.maxDistance;
                     var14 = var1.bind(var5)(var6);
                     var13 = var14.onStart;
-                    var1 = function() { // Original name: c, environment: var0
+                    var1 = function() {
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot2;
                         var0 = 3;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 452:
                     var6 = var6.bind(var8)(var5);
                     var5 = var6.onStart;
-                    var0 = function() { // Original name: n, environment: var0
+                    var0 = function() {
                         var2 = _closure1_slot0;
                         var3 = _closure1_slot2;
                         var1 = 3;

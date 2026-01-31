@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/ContextUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: createDefinedContext, environment: var1
-        var2 = function() { // Original name: useContext, environment: var1
+    var1 = function() {
+        var2 = function() {
             _fun74689: for (var _fun74689_ip = 0;;) switch (_fun74689_ip) {
                 case 0:
                     var2 = _closure1_slot0;

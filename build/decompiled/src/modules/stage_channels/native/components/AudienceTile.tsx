@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: RaisedHandIcon, environment: var4
+    var0 = function arg0() {
         _fun69295: for (var _fun69295_ip = 0;;) switch (_fun69295_ip) {
             case 0:
                 var0 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.faded = var9;
     var3 = var3.bind(var5)(var1);
     var _closure1_slot8 = var3;
-    var1 = function(arg0) { // Original name: getTileWidthStyle, environment: var4
+    var1 = function arg0() {
         var1 = arg0;
         var0 = 46;
         var1 = var1 - var0;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var5;
                 var5 = 'button';
                 var0.accessibilityRole = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 14;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rich_presence/PresenceActivityFiltering.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: doesGameHaveRichPresence, environment: var1
+    var1 = function arg0, arg1() {
         _fun50429: for (var _fun50429_ip = 0;;) switch (_fun50429_ip) {
             case 0:
                 var0 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 52:
                             var3 = var1.id;
                             var2 = _closure2_slot0;
-                            var1 = function(arg0, arg1) { // Original name: hasRichPresenceForGame, environment: var1
+                            var1 = function arg0, arg1() {
                                 var2 = arg1;
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun85146: for (var _fun85146_ip = 0;;) switch (_fun85146_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7.bind(var0)(var4);
     var8 = var4.DeviceSettingsStore;
     var4 = function(arg0) { // Environment: var5
-        var3 = function() { // Original name: PushNotificationPermissionStore, environment: var5
+        var3 = function() {
             _fun85150: for (var _fun85150_ip = 0;;) switch (_fun85150_ip) {
                 case 0:
                     var3 = this;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun85151: for (var _fun85151_ip = 0;;) switch (_fun85151_ip) {
                 case 0:
                     var8 = arg0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'permissionState';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             var0 = var0.permissionState;
             return var0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'promptSeen';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var1 = _closure1_slot7;
             var3 = var1.PROMPT_SEEN;
             var2 = new Array(2);
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'authorizationStatus';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6[var4];
     var16 = var7.bind(var0)(var4);
     var4 = {};
-    var9 = function(arg0) { // Original name: setPushNotificationPermissionState, environment: var5
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.permissionState;
         var0 = _closure1_slot9;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.PUSH_NOTIFICATION_PERMISSION_SET_STATE = var9;
-    var9 = function(arg0) { // Original name: setPushPermissionReactivationSeen, environment: var5
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.promptType;
         var0 = _closure1_slot9;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.PUSH_NOTIFICATION_PERMISSION_REACTIVATION_SEEN = var9;
-    var9 = function(arg0) { // Original name: setPromptTypeAsEligible, environment: var5
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.promptType;
         var1 = _closure1_slot9;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.PUSH_NOTIFICATION_PERMISSION_SET_ELIGIBLE = var9;
-    var5 = function(arg0) { // Original name: setNotificationAuthorizationStatus, environment: var5
+    var5 = function arg0() {
         var0 = arg0;
         var1 = var0.authorizationStatus;
         _closure1_slot10 = var1;

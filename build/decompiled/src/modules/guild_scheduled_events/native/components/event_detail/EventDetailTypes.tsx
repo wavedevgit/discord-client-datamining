@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guild_scheduled_events/native/components/event_detail/EventDetailTypes.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: isRemainingUsersGroup, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.count;
         var0 = undefined;

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AccessibilityInfo;
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: announce, environment: var3
+    var6 = function arg0, arg1() {
         _fun27243: for (var _fun27243_ip = 0;;) switch (_fun27243_ip) {
             case 0:
                 var2 = arg0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.announce = var6;
-    var3 = function() { // Original name: clearAnnouncements, environment: var3
+    var3 = function() {
         var0 = null;
         return var0;
     };

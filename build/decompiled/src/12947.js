@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: createMetricEnvelope, environment: var2
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun99712: for (var _fun99712_ip = 0;;) switch (_fun99712_ip) {
             case 0:
                 var2 = arg1;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = function(arg0, arg1) { // Original name: captureAggregateMetrics, environment: var2
+    var2 = function arg0, arg1() {
         var3 = arg0;
         var6 = arg1;
         var4 = _closure1_slot0;

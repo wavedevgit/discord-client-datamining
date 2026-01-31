@@ -28,17 +28,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.transform = var4;
     var2.invertedTransformStyleHorizontal = var3;
     var1.PlatformConfig = var2;
-    var2 = function(arg0, arg1) { // Original name: getCellContainerPlatformStyles, environment: var0
+    var2 = function arg0, arg1() {
         var0 = undefined;
         return var0;
     };
     var1.getCellContainerPlatformStyles = var2;
-    var2 = function() { // Original name: getItemAnimator, environment: var0
+    var2 = function() {
         var0 = undefined;
         return var0;
     };
     var1.getItemAnimator = var2;
-    var0 = function() { // Original name: getFooterContainer, environment: var0
+    var0 = function() {
         var0 = undefined;
         return var0;
     };

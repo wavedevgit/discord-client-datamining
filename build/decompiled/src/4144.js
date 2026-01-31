@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function(arg0) { // Original name: isXMLFile, environment: var3
+    var2 = function arg0() {
         _fun37985: for (var _fun37985_ip = 0;;) switch (_fun37985_ip) {
             case 0:
                 var6 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isXMLFile = var2;
-    var2 = function(arg0) { // Original name: findOffsets, environment: var3
+    var2 = function arg0() {
         var1 = new Array(0);
         var2 = var1.push;
         var0 = {};

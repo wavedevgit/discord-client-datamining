@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var4;
     var3 = var3.TaskFilterTypes;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: getQuestUrl, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var1 = var0.location;
         var11 = var1.protocol;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/quests/utils/QuestCopyUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getContextualEntrypointHeading, environment: var1
+    var4 = function arg0() {
         _fun47111: for (var _fun47111_ip = 0;;) switch (_fun47111_ip) {
             case 0:
                 var0 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getContextualEntrypointHeading = var4;
-    var4 = function(arg0) { // Original name: getDisclosureText, environment: var1
+    var4 = function arg0() {
         _fun47112: for (var _fun47112_ip = 0;;) switch (_fun47112_ip) {
             case 0:
                 var2 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDisclosureText = var4;
-    var4 = function(arg0) { // Original name: getExternalCtaLabel, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var0 = var0.config;
         var0 = var0.ctaConfig;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getExternalCtaLabel = var4;
-    var4 = function(arg0) { // Original name: getSortMethodText, environment: var1
+    var4 = function arg0() {
         _fun47114: for (var _fun47114_ip = 0;;) switch (_fun47114_ip) {
             case 0:
                 var2 = arg0;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSortMethodText = var4;
-    var4 = function(arg0) { // Original name: getFilterTypeText, environment: var1
+    var4 = function arg0() {
         _fun47115: for (var _fun47115_ip = 0;;) switch (_fun47115_ip) {
             case 0:
                 var2 = arg0;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFilterTypeText = var4;
-    var4 = function(arg0) { // Original name: getFilterGroupHeadingText, environment: var1
+    var4 = function arg0() {
         _fun47116: for (var _fun47116_ip = 0;;) switch (_fun47116_ip) {
             case 0:
                 var1 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getFilterGroupHeadingText = var4;
     var2.getQuestUrl = var3;
-    var3 = function(arg0) { // Original name: getCtaLink, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.ctaConfig;
         var0 = var0.link;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.copyShareLink = var3;
-    var3 = function(arg0) { // Original name: getDefaultReward, environment: var1
+    var3 = function arg0() {
         _fun47119: for (var _fun47119_ip = 0;;) switch (_fun47119_ip) {
             case 0:
                 var1 = arg0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = dependencyMap;
     var _closure1_slot0 = var16;
     var _closure1_slot1 = var15;
-    var1 = function(arg0, arg1) { // Original name: getButtonPadding, environment: var3
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.LARGE_BUTTON_PADDING = var4;
     var4 = 3;
     var2.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = var4;
-    var3 = function(arg0) { // Original name: getButtonDefaultTextVariant, environment: var3
+    var3 = function arg0() {
         _fun37403: for (var _fun37403_ip = 0;;) switch (_fun37403_ip) {
             case 0:
                 var0 = 'text-sm/semibold';

@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/messages/items/MessageItemNotificationNudge.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: MessageItemNotificationNudge, environment: var1
+    var3 = function arg0() {
         _fun101391: for (var _fun101391_ip = 0;;) switch (_fun101391_ip) {
             case 0:
                 var0 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'sm'
                 };
                 var14 = 'sm';
-                var18 = function() { // Original name: onPress, environment: var9
+                var18 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var0 = 12;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10.bind(var3)(var7);
                 var8 = var7.PressableHighlight;
                 var7 = {};
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     _fun101396: for (var _fun101396_ip = 0;;) switch (_fun101396_ip) {
                         case 0:
                             var7 = _closure1_slot0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getMessageItemNotificationNudgeHeight, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;

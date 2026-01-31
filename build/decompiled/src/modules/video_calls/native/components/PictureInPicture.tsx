@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = {};
     var4 = 'function PictureInPictureTsx1(velocity){return{mass:0.2,damping:7.5,stiffness:100,restDisplacementThreshold:0.1,restSpeedThreshold:0.1,overshootClamping:true,velocity:velocity};}';
     var9.code = var4;
-    var4 = function(arg0) { // Original name: t, environment: var3
+    var4 = function arg0() {
         var0 = {
             'mass': 0.2,
             'damping': 7.5,
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2[var8];
                 var9 = var1.bind(var3)(var0);
                 var7 = var9.useAnimatedStyle;
-                var0 = function() { // Original name: S, environment: var6
+                var0 = function() {
                     var0 = {};
                     var1 = _closure2_slot0;
                     var1 = var1.top;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var14.pipInnerContainer;
                 var4.style = var15;
                 var4.pointerEvents = var7;
-                var6 = function() { // Original name: onLayout, environment: var6
+                var6 = function() {
                     _fun62798: for (var _fun62798_ip = 0;;) switch (_fun62798_ip) {
                         case 0:
                             var1 = _closure2_slot2;

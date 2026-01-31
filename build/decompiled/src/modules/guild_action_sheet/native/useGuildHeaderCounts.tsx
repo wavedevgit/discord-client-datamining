@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: useThrottledDispatch, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var7 = arg0;
         var2 = arg1;
         var4 = arg2;
@@ -123,10 +123,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_action_sheet/native/useGuildHeaderCounts.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGuildHeaderCounts, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
-        var0 = function(arg0) { // Original name: useMemberCount, environment: var1
+        var0 = function arg0() {
             var9 = arg0;
             var _closure3_slot0 = var9;
             var4 = _closure1_slot0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var5 = undefined;
         var3 = var0.bind(var5)(var2);
-        var0 = function(arg0) { // Original name: useOnlineCount, environment: var1
+        var0 = function arg0() {
             var9 = arg0;
             var _closure3_slot0 = var9;
             var4 = _closure1_slot0;

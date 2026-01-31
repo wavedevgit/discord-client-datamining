@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: setIndex, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg1;
         var0 = arg0;
         var0.index = var1;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/opt_in_channels/OptInChannelsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: useFilterCategoriesByQuery, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var7 = arg1;
         var6 = arg2;
         var2 = arg3;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useFilterCategoriesByQuery = var3;
-    var3 = function(arg0) { // Original name: getFirstRouteFor, environment: var1
+    var3 = function arg0() {
         _fun77619: for (var _fun77619_ip = 0;;) switch (_fun77619_ip) {
             case 0:
                 var10 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFirstRouteFor = var3;
-    var3 = function(arg0, arg1) { // Original name: clearRecentChannels, environment: var1
+    var3 = function arg0, arg1() {
         _fun77620: for (var _fun77620_ip = 0;;) switch (_fun77620_ip) {
             case 0:
                 var6 = arg0;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.clearRecentChannels = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: useChannelBrowserSections, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun77622: for (var _fun77622_ip = 0;;) switch (_fun77622_ip) {
             case 0:
                 var4 = arg0;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useChannelBrowserSections = var3;
-    var3 = function(arg0) { // Original name: useChannelBrowserChannelCount, environment: var1
+    var3 = function arg0() {
         _fun77625: for (var _fun77625_ip = 0;;) switch (_fun77625_ip) {
             case 0:
                 var1 = arg0;
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useChannelBrowserChannelCount = var3;
-    var1 = function(arg0) { // Original name: getActiveAgoTimestamp, environment: var1
+    var1 = function arg0() {
         _fun77627: for (var _fun77627_ip = 0;;) switch (_fun77627_ip) {
             case 0:
                 var4 = arg0;

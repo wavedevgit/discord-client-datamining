@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = metroImportDefault;
         var _closure1_slot1 = var0;
         var _closure1_slot2 = var29;
-        var0 = function(arg0) { // Original name: getAvatarURL, environment: var4
+        var0 = function arg0() {
             _fun16596: for (var _fun16596_ip = 0;;) switch (_fun16596_ip) {
                 case 0:
                     var1 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure1_slot10 = var0;
-        var20 = function(arg0) { // Original name: getEmojiURL, environment: var4
+        var20 = function arg0() {
             _fun16597: for (var _fun16597_ip = 0;;) switch (_fun16597_ip) {
                 case 0:
                     var0 = arg0;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var19 = function(arg0, arg1) { // Original name: getDefaultAvatarURL, environment: var4
+        var19 = function arg0, arg1() {
             _fun16598: for (var _fun16598_ip = 0;;) switch (_fun16598_ip) {
                 case 0:
                     var5 = arg0;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure1_slot11 = var19;
-        var0 = function(arg0) { // Original name: getUserAvatarURLWithoutFallback, environment: var4
+        var0 = function arg0() {
             _fun16599: for (var _fun16599_ip = 0;;) switch (_fun16599_ip) {
                 case 0:
                     var0 = arg0;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure1_slot12 = var0;
-        var18 = function(arg0) { // Original name: getUserAvatarURL, environment: var4
+        var18 = function arg0() {
             _fun16600: for (var _fun16600_ip = 0;;) switch (_fun16600_ip) {
                 case 0:
                     var1 = arg0;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure1_slot13 = var18;
-        var17 = function(arg0) { // Original name: getGuildMemberAvatarURLSimple, environment: var4
+        var17 = function arg0() {
             _fun16601: for (var _fun16601_ip = 0;;) switch (_fun16601_ip) {
                 case 0:
                     var0 = arg0;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure1_slot14 = var17;
-        var16 = function(arg0) { // Original name: getGuildMemberAvatarURL, environment: var4
+        var16 = function arg0() {
             _fun16602: for (var _fun16602_ip = 0;;) switch (_fun16602_ip) {
                 case 0:
                     var0 = arg0;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure1_slot15 = var16;
-        var15 = function(arg0, arg1) { // Original name: getGuildMemberAvatarSource, environment: var4
+        var15 = function arg0, arg1() {
             _fun16603: for (var _fun16603_ip = 0;;) switch (_fun16603_ip) {
                 case 0:
                     var0 = arg0;
@@ -903,7 +903,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var14 = function(arg0) { // Original name: getUserBannerURL, environment: var4
+        var14 = function arg0() {
             _fun16604: for (var _fun16604_ip = 0;;) switch (_fun16604_ip) {
                 case 0:
                     var0 = arg0;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var13 = function(arg0) { // Original name: getAvatarDecorationURL, environment: var4
+        var13 = function arg0() {
             _fun16605: for (var _fun16605_ip = 0;;) switch (_fun16605_ip) {
                 case 0:
                     var0 = arg0;
@@ -1169,7 +1169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     }
             };
-            var12 = function(arg0) { // Original name: getGuildMemberBannerURL, environment: var4
+            var12 = function arg0() {
                 _fun16606: for (var _fun16606_ip = 0;;) switch (_fun16606_ip) {
                     case 0:
                         var0 = arg0;
@@ -1300,7 +1300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var35 = function(arg0) { // Original name: getGuildSplashURL, environment: var4
+            var35 = function arg0() {
                 _fun16607: for (var _fun16607_ip = 0;;) switch (_fun16607_ip) {
                     case 0:
                         var0 = arg0;
@@ -1384,7 +1384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot16 = var35;
-            var33 = function(arg0) { // Original name: getGuildBannerURL, environment: var4
+            var33 = function arg0() {
                 _fun16608: for (var _fun16608_ip = 0;;) switch (_fun16608_ip) {
                     case 0:
                         var0 = arg0;
@@ -1533,7 +1533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot17 = var33;
-            var32 = function(arg0) { // Original name: getGuildHomeHeaderURL, environment: var4
+            var32 = function arg0() {
                 _fun16609: for (var _fun16609_ip = 0;;) switch (_fun16609_ip) {
                     case 0:
                         var0 = arg0;
@@ -1603,7 +1603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var32;
-            var11 = function(arg0) { // Original name: getResourceChannelIconURL, environment: var4
+            var11 = function arg0() {
                 _fun16610: for (var _fun16610_ip = 0;;) switch (_fun16610_ip) {
                     case 0:
                         var0 = arg0;
@@ -1637,7 +1637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var10 = function(arg0) { // Original name: getNewMemberActionIconURL, environment: var4
+            var10 = function arg0() {
                 _fun16611: for (var _fun16611_ip = 0;;) switch (_fun16611_ip) {
                     case 0:
                         var0 = arg0;
@@ -1671,7 +1671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var34 = function(arg0) { // Original name: getGuildDiscoverySplashURL, environment: var4
+            var34 = function arg0() {
                 _fun16612: for (var _fun16612_ip = 0;;) switch (_fun16612_ip) {
                     case 0:
                         var0 = arg0;
@@ -1755,7 +1755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot19 = var34;
-            var36 = function(arg0) { // Original name: getGuildIconURL, environment: var4
+            var36 = function arg0() {
                 _fun16613: for (var _fun16613_ip = 0;;) switch (_fun16613_ip) {
                     case 0:
                         var0 = arg0;
@@ -1798,7 +1798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot20 = var36;
-            var9 = function(arg0) { // Original name: getGuildTemplateIconURL, environment: var4
+            var9 = function arg0() {
                 _fun16614: for (var _fun16614_ip = 0;;) switch (_fun16614_ip) {
                     case 0:
                         var0 = arg0;
@@ -1839,7 +1839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot21 = var9;
-            var30 = function(arg0) { // Original name: getApplicationIconURL, environment: var4
+            var30 = function arg0() {
                 _fun16615: for (var _fun16615_ip = 0;;) switch (_fun16615_ip) {
                     case 0:
                         var0 = arg0;
@@ -1993,7 +1993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot22 = var30;
-            var27 = function(arg0) { // Original name: getGameAssetURL, environment: var4
+            var27 = function arg0() {
                 _fun16616: for (var _fun16616_ip = 0;;) switch (_fun16616_ip) {
                     case 0:
                         var0 = arg0;
@@ -2037,7 +2037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot23 = var27;
-            var8 = function(arg0) { // Original name: getVideoFilterAssetURL, environment: var4
+            var8 = function arg0() {
                 _fun16617: for (var _fun16617_ip = 0;;) switch (_fun16617_ip) {
                     case 0:
                         var0 = arg0;
@@ -2059,7 +2059,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 53:
                         var1 = _closure1_slot10;
                         var0 = {};
-                        var7 = function(arg0, arg1, arg2) { // Original name: endpoint, environment: var7
+                        var7 = function arg0, arg1, arg2() {
                             var5 = _closure1_slot3;
                             var4 = var5.VIDEO_FILTER_ASSET_STORAGE;
                             var9 = _closure2_slot0;
@@ -2087,7 +2087,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var31 = function(arg0) { // Original name: getChannelIconURL, environment: var4
+            var31 = function arg0() {
                 _fun16619: for (var _fun16619_ip = 0;;) switch (_fun16619_ip) {
                     case 0:
                         var0 = arg0;
@@ -2171,7 +2171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot24 = var31;
-            var7 = function(arg0) { // Original name: hasAnimatedGuildIcon, environment: var4
+            var7 = function arg0() {
                 _fun16620: for (var _fun16620_ip = 0;;) switch (_fun16620_ip) {
                     case 0:
                         var3 = arg0;
@@ -2191,7 +2191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                 }
             };
-            var6 = function(arg0) { // Original name: isAnimatedIconHash, environment: var4
+            var6 = function arg0() {
                 _fun16621: for (var _fun16621_ip = 0;;) switch (_fun16621_ip) {
                     case 0:
                         var3 = arg0;
@@ -2210,7 +2210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot25 = var6;
-            var5 = function(arg0) { // Original name: isVideoAssetHash, environment: var4
+            var5 = function arg0() {
                 _fun16622: for (var _fun16622_ip = 0;;) switch (_fun16622_ip) {
                     case 0:
                         var3 = arg0;
@@ -2229,7 +2229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var5;
-            var0 = function(arg0) { // Original name: _getAssetHash, environment: var4
+            var0 = function arg0() {
                 _fun16623: for (var _fun16623_ip = 0;;) switch (_fun16623_ip) {
                     case 0:
                         var0 = arg0;
@@ -2257,7 +2257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot27 = var0;
-            var3 = function(arg0) { // Original name: makeSource, environment: var4
+            var3 = function arg0() {
                 _fun16624: for (var _fun16624_ip = 0;;) switch (_fun16624_ip) {
                     case 0:
                         var3 = arg0;
@@ -2287,7 +2287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot28 = var3;
-            var1 = function(arg0) { // Original name: isDataUri, environment: var4
+            var1 = function arg0() {
                 _fun16625: for (var _fun16625_ip = 0;;) switch (_fun16625_ip) {
                     case 0:
                         var3 = arg0;
@@ -2306,7 +2306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var1;
-            var0 = function(arg0) { // Original name: getAnimatedFormat, environment: var4
+            var0 = function arg0() {
                 _fun16626: for (var _fun16626_ip = 0;;) switch (_fun16626_ip) {
                     case 0:
                         var0 = 'gif';
@@ -2378,7 +2378,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var26.getAvatarDecorationURL = var13;
             var26.hasAnimatedGuildIcon = var7;
             var26.isAnimatedIconHash = var6;
-            var37 = function(arg0, arg1, arg2) { // Original name: getUserAvatarSource, environment: var4
+            var37 = function arg0,
+            arg1,
+            arg2() {
                 var2 = _closure1_slot28;
                 var5 = _closure1_slot13;
                 var1 = undefined;
@@ -2392,7 +2394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var26.getUserAvatarSource = var37;
             var26.getGuildIconURL = var36;
             var26.getGuildSplashURL = var35;
-            var35 = function(arg0) { // Original name: getGuildSplashSource, environment: var4
+            var35 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot16;
                 var1 = undefined;
@@ -2403,7 +2405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var26.getGuildSplashSource = var35;
             var26.getGuildDiscoverySplashURL = var34;
-            var34 = function(arg0) { // Original name: getGuildDiscoverySplashSource, environment: var4
+            var34 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot19;
                 var1 = undefined;
@@ -2423,7 +2425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var26.getApplicationIconURL = var30;
             var26.getGameAssetURL = var27;
             var26.getVideoFilterAssetURL = var8;
-            var27 = function(arg0) { // Original name: getGameAssetSource, environment: var4
+            var27 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot23;
                 var1 = undefined;
@@ -2433,7 +2435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var26.getGameAssetSource = var27;
-            var27 = function(arg0) { // Original name: getGuildIconSource, environment: var4
+            var27 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot20;
                 var1 = undefined;
@@ -2443,7 +2445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var26.getGuildIconSource = var27;
-            var27 = function(arg0) { // Original name: getGuildTemplateIconSource, environment: var4
+            var27 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot21;
                 var1 = undefined;
@@ -2453,7 +2455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var26.getGuildTemplateIconSource = var27;
-            var27 = function(arg0) { // Original name: getGuildBannerSource, environment: var4
+            var27 = function arg0() {
                 _fun16633: for (var _fun16633_ip = 0;;) switch (_fun16633_ip) {
                     case 0:
                         var4 = arguments[1];
@@ -2474,7 +2476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var26.getGuildBannerSource = var27;
-            var27 = function(arg0) { // Original name: getGuildHomeHeaderSource, environment: var4
+            var27 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot18;
                 var1 = undefined;
@@ -2484,7 +2486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var26.getGuildHomeHeaderSource = var27;
-            var27 = function(arg0) { // Original name: getChannelIconSource, environment: var4
+            var27 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot24;
                 var1 = undefined;
@@ -2494,7 +2496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var26.getChannelIconSource = var27;
-            var27 = function(arg0) { // Original name: getApplicationIconSource, environment: var4
+            var27 = function arg0() {
                 var2 = _closure1_slot28;
                 var3 = _closure1_slot22;
                 var1 = undefined;
@@ -2505,7 +2507,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var26.getApplicationIconSource = var27;
             var26.makeSource = var3;
-            var27 = function(arg0, arg1) { // Original name: getAnimatableSourceWithFallback, environment: var4
+            var27 = function arg0,
+            arg1() {
                 _fun16637: for (var _fun16637_ip = 0;;) switch (_fun16637_ip) {
                     case 0:
                         var0 = arg0;
@@ -2602,7 +2605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.hasAnimatedGuildIcon = var7;
             var2.isAnimatedIconHash = var6;
             var2.isVideoAssetHash = var5;
-            var5 = function(arg0) { // Original name: isAnimatedImageURL, environment: var4
+            var5 = function arg0() {
                 _fun16638: for (var _fun16638_ip = 0;;) switch (_fun16638_ip) {
                     case 0:
                         var4 = arg0;
@@ -2623,7 +2626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.isAnimatedImageURL = var5;
-            var4 = function(arg0) { // Original name: isVideoURL, environment: var4
+            var4 = function arg0() {
                 _fun16639: for (var _fun16639_ip = 0;;) switch (_fun16639_ip) {
                     case 0:
                         var4 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun69661: for (var _fun69661_ip = 0;;) switch (_fun69661_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun69663: for (var _fun69663_ip = 0;;) switch (_fun69663_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: getFirstGuildIncidentId, environment: var1
+    var0 = function arg0() {
         _fun69664: for (var _fun69664_ip = 0;;) switch (_fun69664_ip) {
             case 0:
                 var14 = arg0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_antiraid/GuildAntiRaidHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useFirstGuildIncidentId, environment: var1
+    var3 = function() {
         _fun69666: for (var _fun69666_ip = 0;;) switch (_fun69666_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFirstGuildIncidentId = var3;
-    var3 = function(arg0) { // Original name: useGuildIncidentsState, environment: var1
+    var3 = function arg0() {
         _fun69671: for (var _fun69671_ip = 0;;) switch (_fun69671_ip) {
             case 0:
                 var1 = arg0;
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildIncidentsState = var3;
-    var3 = function() { // Original name: shouldShowRaidNotificationNagbar, environment: var1
+    var3 = function() {
         _fun69674: for (var _fun69674_ip = 0;;) switch (_fun69674_ip) {
             case 0:
                 var3 = _closure1_slot15;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShowRaidNotificationNagbar = var3;
-    var3 = function() { // Original name: shouldShowRaidInAppNotification, environment: var1
+    var3 = function() {
         _fun69675: for (var _fun69675_ip = 0;;) switch (_fun69675_ip) {
             case 0:
                 var2 = _closure1_slot15;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShowRaidInAppNotification = var3;
-    var3 = function(arg0) { // Original name: getDisabledActions, environment: var1
+    var3 = function arg0() {
         _fun69676: for (var _fun69676_ip = 0;;) switch (_fun69676_ip) {
             case 0:
                 var6 = arg0;
@@ -958,7 +958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDisabledActions = var3;
-    var3 = function(arg0) { // Original name: useDisabledActions, environment: var1
+    var3 = function arg0() {
         _fun69677: for (var _fun69677_ip = 0;;) switch (_fun69677_ip) {
             case 0:
                 var6 = arg0;
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useDisabledActions = var3;
-    var1 = function(arg0) { // Original name: useShowAntiRaidInGuildNotifSettings, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;

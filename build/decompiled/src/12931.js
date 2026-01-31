@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _requestDataIntegration, environment: var1
+    var1 = function() {
         _fun99582: for (var _fun99582_ip = 0;;) switch (_fun99582_ip) {
             case 0:
                 var4 = undefined;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'RequestData';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: processEvent, environment: var1
+                var1 = function arg0() {
                     _fun99583: for (var _fun99583_ip = 0;;) switch (_fun99583_ip) {
                         case 0:
                             var4 = arg0;

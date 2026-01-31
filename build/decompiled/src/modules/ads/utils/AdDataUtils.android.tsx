@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/ads/utils/AdDataUtils.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getAdUser, environment: var1
+    var3 = function arg0() {
         _fun46975: for (var _fun46975_ip = 0;;) switch (_fun46975_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var2 = var5.bind(var0)(var2, var3);
                     var _closure3_slot2 = var2;
-                    var3 = function() { // Original name: handleUpdate, environment: var4
+                    var3 = function() {
                         _fun46978: for (var _fun46978_ip = 0;;) switch (_fun46978_ip) {
                             case 0:
                                 var1 = _closure1_slot4;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot3 = var3;
-                    var2 = function(arg0) { // Original name: safeResolve, environment: var4
+                    var2 = function arg0() {
                         _fun46979: for (var _fun46979_ip = 0;;) switch (_fun46979_ip) {
                             case 0:
                                 var1 = _closure3_slot1;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAdUser = var3;
-    var1 = function(arg0) { // Original name: useAdUser, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot3;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             _fun46981: for (var _fun46981_ip = 0;;) switch (_fun46981_ip) {
                 case 0:
-                    var3 = function() { // Original name: handleStoreChange, environment: var0
+                    var3 = function() {
                         _fun46982: for (var _fun46982_ip = 0;;) switch (_fun46982_ip) {
                             case 0:
                                 var1 = _closure1_slot4;

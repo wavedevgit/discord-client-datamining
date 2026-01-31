@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: getChannelMode, environment: var3
+    var1 = function arg0() {
         _fun102048: for (var _fun102048_ip = 0;;) switch (_fun102048_ip) {
             case 0:
                 var1 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var1;
-    var0 = function(arg0) { // Original name: ChannelIcon, environment: var3
+    var0 = function arg0() {
         _fun102049: for (var _fun102049_ip = 0;;) switch (_fun102049_ip) {
             case 0:
                 var2 = arg0;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: DMChannelIcon, environment: var3
+    var0 = function arg0() {
         _fun102050: for (var _fun102050_ip = 0;;) switch (_fun102050_ip) {
             case 0:
                 var0 = arg0;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.bind(var3)(var9, var8);
                 var0.icon = var8;
                 var0.channelInfo = var7;
-                var6 = function(arg0) { // Original name: onPress, environment: var6
+                var6 = function arg0() {
                     _fun102054: for (var _fun102054_ip = 0;;) switch (_fun102054_ip) {
                         case 0:
                             var0 = _closure2_slot2;

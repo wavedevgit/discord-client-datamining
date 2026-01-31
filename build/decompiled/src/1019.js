@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function() { // Original name: disable, environment: var0
+    var2 = function() {
         var1 = false;
         _closure1_slot3 = var1;
         var3 = _closure1_slot0;
@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var2;
-    var3 = function(arg0, arg1) { // Original name: matchWhitelist, environment: var0
+    var3 = function arg0, arg1() {
         var2 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -49,12 +49,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = false;
     var _closure1_slot3 = var3;
     var1.disable = var2;
-    var0 = function(arg0) { // Original name: enable, environment: var0
+    var0 = function arg0() {
         _fun10422: for (var _fun10422_ip = 0;;) switch (_fun10422_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
-                var2 = function(arg0) { // Original name: onUnhandled, environment: var1
+                var2 = function arg0() {
                     _fun10423: for (var _fun10423_ip = 0;;) switch (_fun10423_ip) {
                         case 0:
                             var4 = arg0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = _closure2_slot3;
                             var1 = var1[var4];
                             var3 = var1.error;
-                            var2 = function(arg0, arg1) { // Original name: logError, environment: var1
+                            var2 = function arg0, arg1() {
                                 _fun10424: for (var _fun10424_ip = 0;;) switch (_fun10424_ip) {
                                     case 0:
                                         var2 = arg1;

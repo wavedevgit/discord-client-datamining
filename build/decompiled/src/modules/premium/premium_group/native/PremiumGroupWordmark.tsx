@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/premium_group/native/PremiumGroupWordmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumGroupWordmark, environment: var1
+    var1 = function arg0() {
         _fun59261: for (var _fun59261_ip = 0;;) switch (_fun59261_ip) {
             case 0:
                 var3 = arg0;

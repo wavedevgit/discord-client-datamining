@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = ['Spidey Bot', 'Captain Hook'];
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: fetchForGuild, environment: var3
+    var6 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot1;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchForGuild = var6;
-    var6 = function(arg0, arg1) { // Original name: fetchForChannel, environment: var3
+    var6 = function arg0, arg1() {
         var8 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var8;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchForChannel = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: create, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun109230: for (var _fun109230_ip = 0;;) switch (_fun109230_ip) {
             case 0:
                 var5 = arg2;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.create = var6;
-    var6 = function(arg0, arg1) { // Original name: delete, environment: var3
+    var6 = function arg0, arg1() {
         var6 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.delete = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: update, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;

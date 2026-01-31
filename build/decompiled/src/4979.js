@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun44956: for (var _fun44956_ip = 0;;) switch (_fun44956_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var5;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: changeEventCalculator, environment: var0
+        var0 = function arg0, arg1() {
             _fun44960: for (var _fun44960_ip = 0;;) switch (_fun44960_ip) {
                 case 0:
                     var4 = arg0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.ContinousBaseGesture;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: RotationGesture, environment: var0
+        var3 = function() {
             _fun44962: for (var _fun44962_ip = 0;;) switch (_fun44962_ip) {
                 case 0:
                     var3 = this;
@@ -176,13 +176,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'onChange';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: onChange, environment: var0
+        var0 = function arg0() {
             var5 = this;
             var1 = var5.handlers;
             var0 = _closure1_slot7;
             var1.changeEventCalculator = var0;
             var9 = _closure2_slot0;
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
+            var3 = function arg0, arg1, arg2, arg3() {
                 _fun44964: for (var _fun44964_ip = 0;;) switch (_fun44964_ip) {
                     case 0:
                         var4 = arg0;

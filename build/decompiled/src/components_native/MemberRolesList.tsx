@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/MemberRolesList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberRolesList, environment: var1
+    var1 = function arg0() {
         _fun79158: for (var _fun79158_ip = 0;;) switch (_fun79158_ip) {
             case 0:
                 var0 = arg0;

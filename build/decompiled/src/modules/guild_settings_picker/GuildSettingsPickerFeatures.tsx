@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3['server-subscriptions-create-tier-from-template'] = var7;
     var _closure1_slot5 = var3;
     var3 = {};
-    var7 = function() { // Original name: title, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 6;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.title = var7;
-    var7 = function() { // Original name: description, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 6;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.description = var7;
-    var7 = function() { // Original name: selectGuildCta, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 6;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.selectGuildCta = var7;
-    var7 = function() { // Original name: createGuildDescription, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 6;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.createGuildDescription = var7;
-    var7 = function() { // Original name: createGuildCta, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 6;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.createGuildCta = var7;
     var3.canCreateGuild = var6;
-    var6 = function() { // Original name: useIsGuildSupported, environment: var1
+    var6 = function() {
         var2 = _closure1_slot0;
         var6 = _closure1_slot1;
         var0 = 7;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGuildSettingsPickerFeature, environment: var1
+    var1 = function arg0() {
         _fun96315: for (var _fun96315_ip = 0;;) switch (_fun96315_ip) {
             case 0:
                 var8 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.createGuildCta = var3;
                 var2 = var2.canCreateGuild;
                 var0.canCreateGuild = var2;
-                var1 = function(arg0, arg1) { // Original name: isGuildSupported, environment: var1
+                var1 = function arg0, arg1() {
                     _fun96316: for (var _fun96316_ip = 0;;) switch (_fun96316_ip) {
                         case 0:
                             var5 = arg0;

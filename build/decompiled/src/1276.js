@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var2
+    var0 = function() {
         _fun13758: for (var _fun13758_ip = 0;;) switch (_fun13758_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: isRichTextTag, environment: var2
+    var0 = function arg0() {
         var1 = arg0;
         var0 = 0;
         var1 = var1[var0];
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var0;
-    var7 = function(arg0) { // Original name: bindFormatValuesWithBuilder, environment: var2
+    var7 = function arg0() {
         _fun13762: for (var _fun13762_ip = 0;;) switch (_fun13762_ip) {
             case 0:
                 var0 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun13762_ip = 185;
                 continue _fun13762;
             case 140:
-                var3 = function() { // Original name: _loop, environment: var5
+                var3 = function() {
                     _fun13763: for (var _fun13763_ip = 0;;) switch (_fun13763_ip) {
                         case 0:
                             var3 = undefined;
@@ -808,7 +808,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var7;
-    var4 = function(arg0) { // Original name: bindFormatValues, environment: var2
+    var4 = function arg0() {
         _fun13764: for (var _fun13764_ip = 0;;) switch (_fun13764_ip) {
             case 0:
                 var0 = arg0;
@@ -902,7 +902,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.FormatBuilder = var0;
     var5.bindFormatValuesWithBuilder = var7;
     var5.bindFormatValues = var4;
-    var4 = function(arg0) { // Original name: FormatBuilder, environment: var2
+    var4 = function arg0() {
         var2 = this;
         var3 = _closure1_slot6;
         var1 = _closure1_slot12;
@@ -918,7 +918,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Error;
     var3 = var3.bind(var0)(var1);
     var1 = function(arg0) { // Environment: var2
-        var2 = function(arg0, arg1, arg2) { // Original name: MissingValueError, environment: var0
+        var2 = function arg0, arg1, arg2() {
             _fun13767: for (var _fun13767_ip = 0;;) switch (_fun13767_ip) {
                 case 0:
                     var2 = arg0;

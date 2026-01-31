@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf/native/components/NewUserModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NewUserModal, environment: var1
+    var1 = function arg0() {
         _fun113914: for (var _fun113914_ip = 0;;) switch (_fun113914_ip) {
             case 0:
                 var0 = arg0;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot8;
                 var1 = var0.Navigator;
                 var0 = {};
-                var7 = function(arg0) { // Original name: screenOptions, environment: var8
+                var7 = function arg0() {
                     _fun113918: for (var _fun113918_ip = 0;;) switch (_fun113918_ip) {
                         case 0:
                             var0 = arg0;
@@ -233,12 +233,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.header;
                             var0.headerStyle = var2;
                             var2 = false;
-                            var4 = function() { // Original name: headerLeft, environment: var3
+                            var4 = function() {
                                 var0 = null;
                                 return var0;
                             };
                             var0.headerLeft = var4;
-                            var3 = function() { // Original name: headerRight, environment: var3
+                            var3 = function() {
                                 var0 = null;
                                 return var0;
                             };
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var10 = 'enable-notification';
                 var4.name = var10;
-                var10 = function() { // Original name: getComponent, environment: var8
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 16;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var5.Screen;
                 var6 = {};
                 var6.name = var11;
-                var11 = function() { // Original name: getComponent, environment: var8
+                var11 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 17;
@@ -318,9 +318,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var6.getComponent = var11;
-                var11 = function() { // Original name: options, environment: var8
+                var11 = function() {
                     var0 = {};
-                    var1 = function(arg0) { // Original name: headerRight, environment: var1
+                    var1 = function arg0() {
                         var3 = _closure1_slot6;
                         var1 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -332,9 +332,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = arg0;
                         var7 = var0;
                         var4 = copyDataProperties(var7, var6);
-                        var5 = function() { // Original name: onPress, environment: var4
+                        var5 = function() {
                             var2 = _closure2_slot7;
-                            var1 = function(arg0) { // Original name: handleChooseAvatarSkip, environment: var0
+                            var1 = function arg0() {
                                 var0 = arg0;
                                 var _closure6_slot0 = var0;
                                 var3 = _closure1_slot4;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var4.openAlert;
                                 var2 = _closure1_slot6;
                                 var1 = {};
-                                var6 = function() { // Original name: onConfirm, environment: var6
+                                var6 = function() {
                                     var2 = _closure6_slot0;
                                     var1 = undefined;
                                     var0 = true;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = false;
                 var12.headerShown = var11;
                 var6.options = var12;
-                var12 = function() { // Original name: getComponent, environment: var8
+                var12 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 19;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var10.headerShown = var11;
                 var5.options = var10;
-                var8 = function() { // Original name: getComponent, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 20;

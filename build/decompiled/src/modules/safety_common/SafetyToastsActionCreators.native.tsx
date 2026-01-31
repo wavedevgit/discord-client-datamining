@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.SafetyToastType;
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: showIgnoreSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showIgnoreSuccessToast = var6;
-    var6 = function(arg0, arg1) { // Original name: showUnignoreSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showUnignoreSuccessToast = var6;
-    var6 = function(arg0, arg1) { // Original name: showBlockSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showBlockSuccessToast = var6;
-    var6 = function(arg0, arg1) { // Original name: showUnblockSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showUnblockSuccessToast = var6;
-    var6 = function(arg0, arg1) { // Original name: showMuteSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showMuteSuccessToast = var6;
-    var6 = function(arg0, arg1) { // Original name: showUnmuteSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showUnmuteSuccessToast = var6;
-    var6 = function(arg0, arg1) { // Original name: showReportSuccessToast, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 1;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showReportSuccessToast = var6;
-    var6 = function(arg0) { // Original name: showSuccessToast, environment: var3
+    var6 = function arg0() {
         var4 = arg0;
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showSuccessToast = var6;
-    var3 = function(arg0) { // Original name: showFailedToast, environment: var3
+    var3 = function arg0() {
         _fun51859: for (var _fun51859_ip = 0;;) switch (_fun51859_ip) {
             case 0:
                 var5 = arg0;

@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GUILD_DCS = var5;
     var2.SERVER_TAG_GUILD_DCS = var4;
     var2.VANITY_URL_POWERUP_DCS = var3;
-    var3 = function(arg0) { // Original name: getGuildDCString, environment: var1
+    var3 = function arg0() {
         _fun86680: for (var _fun86680_ip = 0;;) switch (_fun86680_ip) {
             case 0:
                 var2 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildDCString = var3;
-    var1 = function(arg0) { // Original name: getUserDCString, environment: var1
+    var1 = function arg0() {
         _fun86681: for (var _fun86681_ip = 0;;) switch (_fun86681_ip) {
             case 0:
                 var3 = arg0;

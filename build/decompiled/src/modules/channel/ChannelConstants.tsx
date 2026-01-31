@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.bind(var11)(var9);
     var2.StaticChannelRoute = var8;
     var2.StaticChannelRoutes = var7;
-    var7 = function(arg0) { // Original name: isStaticChannelRoute, environment: var6
+    var7 = function arg0() {
         var2 = _closure1_slot1;
         var1 = var2.has;
         var0 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isStaticChannelRoute = var7;
-    var7 = function(arg0, arg1) { // Original name: buildGuildStaticChannelId, environment: var6
+    var7 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.buildGuildStaticChannelId = var7;
-    var6 = function(arg0) { // Original name: isGuildHomeChannel, environment: var6
+    var6 = function arg0() {
         _fun16177: for (var _fun16177_ip = 0;;) switch (_fun16177_ip) {
             case 0:
                 var3 = arg0;

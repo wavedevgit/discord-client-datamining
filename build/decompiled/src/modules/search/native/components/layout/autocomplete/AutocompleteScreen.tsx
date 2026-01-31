@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(0);
     var _closure1_slot16 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: AutocompleteScreen, environment: var1
+    var1 = function arg0() {
         _fun106949: for (var _fun106949_ip = 0;;) switch (_fun106949_ip) {
             case 0:
                 var0 = arg0;
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = new var17[var5](var16, var15);
                             var3 = var3 instanceof Object ? var3 : var4;
                             var _closure3_slot2 = var3;
-                            var10 = function(arg0, arg1) { // Original name: maybeAddUserItem, environment: var1
+                            var10 = function arg0, arg1() {
                                 _fun106967: for (var _fun106967_ip = 0;;) switch (_fun106967_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var _closure3_slot3 = var10;
-                            var3 = function(arg0, arg1) { // Original name: maybeAddChannelItem, environment: var1
+                            var3 = function arg0, arg1() {
                                 _fun106968: for (var _fun106968_ip = 0;;) switch (_fun106968_ip) {
                                     case 0:
                                         var4 = arg0;

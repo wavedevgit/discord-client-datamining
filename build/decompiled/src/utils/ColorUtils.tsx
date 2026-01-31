@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var14;
-    var10 = function(arg0) { // Original name: hexToRgb, environment: var1
+    var10 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var10;
-    var9 = function(arg0) { // Original name: hexToRgba, environment: var1
+    var9 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var9;
-    var7 = function(arg0, arg1, arg2) { // Original name: rgbToHslObject, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun27932: for (var _fun27932_ip = 0;;) switch (_fun27932_ip) {
             case 0:
                 var0 = arg0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var7;
-    var6 = function(arg0, arg1, arg2) { // Original name: hslToString, environment: var1
+    var6 = function arg0, arg1, arg2() {
         var0 = global;
         var0 = var0.HermesInternal;
         var7 = var0.concat;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: hslToHex, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg2;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2 * var4;
         var2 = var2 / var3;
         var _closure2_slot2 = var2;
-        var5 = function(arg0) { // Original name: f, environment: var1
+        var5 = function arg0() {
             var2 = _closure2_slot0;
             var1 = 30;
             var2 = var2 / var1;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0) { // Original name: hex2rgb2hsv, environment: var1
+    var4 = function arg0() {
         _fun27936: for (var _fun27936_ip = 0;;) switch (_fun27936_ip) {
             case 0:
                 var2 = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var6)(var15, var7, var13);
                 var1 = var5 - var1;
                 var _closure2_slot1 = var1;
-                var11 = function(arg0) { // Original name: diffc, environment: var3
+                var11 = function arg0() {
                     var2 = _closure2_slot0;
                     var1 = arg0;
                     var2 = var2 - var1;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1 + var0;
                     return var0;
                 };
-                var3 = function(arg0) { // Original name: percentRoundFn, environment: var3
+                var3 = function arg0() {
                     var0 = global;
                     var3 = var0.Math;
                     var2 = var3.round;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var0 = function(arg0, arg1, arg2) { // Original name: hslToRgb, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var2 = _closure1_slot7;
         var5 = _closure1_slot11;
         var1 = undefined;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: rawRgbToHsl, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun27940: for (var _fun27940_ip = 0;;) switch (_fun27940_ip) {
             case 0:
                 var0 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: rawHslToRgb, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun27941: for (var _fun27941_ip = 0;;) switch (_fun27941_ip) {
             case 0:
                 var4 = arg1;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun27941
                 }
             case 34:
-                var9 = function(arg0, arg1, arg2) { // Original name: hue2rgb, environment: var0
+                var9 = function arg0, arg1, arg2() {
                     _fun27942: for (var _fun27942_ip = 0;;) switch (_fun27942_ip) {
                         case 0:
                             var2 = arg0;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: sortColors, environment: var1
+    var0 = function arg0, arg1() {
         var0 = arg0;
         var0 = var0.hsv;
         var1 = arg1;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.code = var11;
     var _closure1_slot4 = var8;
     var8 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: hexWithOpacity, environment: var0
+        var0 = function arg0, arg1() {
             _fun27945: for (var _fun27945_ip = 0;;) switch (_fun27945_ip) {
                 case 0:
                     var1 = arg0;
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.code = var12;
     var _closure1_slot5 = var8;
     var8 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: hexToRgbaString, environment: var0
+        var0 = function arg0, arg1() {
             _fun27947: for (var _fun27947_ip = 0;;) switch (_fun27947_ip) {
                 case 0:
                     var0 = arg1;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.bind(var0)();
     var12 = {};
     var15 = {};
-    var16 = function() { // Original name: #1abc9c, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -971,7 +971,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#1abc9c'] = var16;
-    var16 = function() { // Original name: #2ecc71, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -988,7 +988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#2ecc71'] = var16;
-    var16 = function() { // Original name: #3498db, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#3498db'] = var16;
-    var16 = function() { // Original name: #9b59b6, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#9b59b6'] = var16;
-    var16 = function() { // Original name: #e91e63, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#e91e63'] = var16;
-    var16 = function() { // Original name: #11806a, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1056,7 +1056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#11806a'] = var16;
-    var16 = function() { // Original name: #1f8b4c, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1073,7 +1073,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#1f8b4c'] = var16;
-    var16 = function() { // Original name: #206694, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1090,7 +1090,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#206694'] = var16;
-    var16 = function() { // Original name: #71368a, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1107,7 +1107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#71368a'] = var16;
-    var16 = function() { // Original name: #ad1457, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1124,7 +1124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#ad1457'] = var16;
-    var16 = function() { // Original name: #f1c40f, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1141,7 +1141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#f1c40f'] = var16;
-    var16 = function() { // Original name: #e67e22, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1158,7 +1158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#e67e22'] = var16;
-    var16 = function() { // Original name: #e74c3c, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1175,7 +1175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#e74c3c'] = var16;
-    var16 = function() { // Original name: #95a5a6, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1192,7 +1192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#95a5a6'] = var16;
-    var16 = function() { // Original name: #607d8b, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1209,7 +1209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#607d8b'] = var16;
-    var16 = function() { // Original name: #c27c0e, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1226,7 +1226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#c27c0e'] = var16;
-    var16 = function() { // Original name: #arg84300, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1243,7 +1243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#arg84300'] = var16;
-    var16 = function() { // Original name: #992d22, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1260,7 +1260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#992d22'] = var16;
-    var16 = function() { // Original name: #979c9f, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1277,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#979c9f'] = var16;
-    var16 = function() { // Original name: #546e7a, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1294,7 +1294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var15['#546e7a'] = var16;
-    var16 = function() { // Original name: #99aab5, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1314,7 +1314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var12;
     var18 = var15;
     var15 = copyDataProperties(var19, var18);
-    var16 = function() { // Original name: #5865f2, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 2;
@@ -1341,7 +1341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var13.bind(var14)(var12);
     var2.hexWithOpacity = var11;
     var2.hexToRgb = var10;
-    var10 = function(arg0) { // Original name: hexToRgbArray, environment: var1
+    var10 = function arg0() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = arg0;
@@ -1358,7 +1358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.hexToRgbArray = var10;
     var2.hexToRgba = var9;
     var2.hexToRgbaString = var8;
-    var8 = function(arg0, arg1) { // Original name: hexOpacityToRgba, environment: var1
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = arg0;
@@ -1382,7 +1382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.hexOpacityToRgba = var8;
     var2.rgbToHslObject = var7;
     var2.hslToString = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: rgbToHsl, environment: var1
+    var6 = function arg0, arg1, arg2() {
         var5 = _closure1_slot9;
         var4 = undefined;
         var3 = arg0;
@@ -1397,7 +1397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.rgbToHsl = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: rgbToHex, environment: var1
+    var6 = function arg0, arg1, arg2() {
         var0 = arg0;
         var2 = 16;
         var3 = var0 << var2;
@@ -1419,7 +1419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.rgbToHex = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: rgbaToHex, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         var2 = 256;
         var0 = arg0;
         var1 = var2 + var0;
@@ -1456,7 +1456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.rgbaToHex = var6;
     var2.hslToHex = var5;
-    var5 = function(arg0, arg1) { // Original name: hexToColorName, environment: var1
+    var5 = function arg0, arg1() {
         _fun27975: for (var _fun27975_ip = 0;;) switch (_fun27975_ip) {
             case 0:
                 var6 = arg0;
@@ -1529,7 +1529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hexToColorName = var5;
-    var5 = function(arg0, arg1) { // Original name: mixColors, environment: var1
+    var5 = function arg0, arg1() {
         var0 = arg0;
         var2 = arg1;
         var7 = var0.alpha;
@@ -1578,7 +1578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.mixColors = var5;
     var2.hex2rgb2hsv = var4;
-    var4 = function(arg0) { // Original name: getComplimentaryPaletteForColor, environment: var1
+    var4 = function arg0() {
         _fun27977: for (var _fun27977_ip = 0;;) switch (_fun27977_ip) {
             case 0:
                 var5 = arg0;
@@ -1673,7 +1673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getComplimentaryPaletteForColor = var4;
     var2.rawRgbToHsl = var3;
-    var3 = function(arg0, arg1) { // Original name: getColorLightnessAdjusted, environment: var1
+    var3 = function arg0, arg1() {
         _fun27978: for (var _fun27978_ip = 0;;) switch (_fun27978_ip) {
             case 0:
                 var0 = arg0;
@@ -1735,7 +1735,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getColorLightnessAdjusted = var3;
-    var3 = function(arg0) { // Original name: getAccessibleForegroundColor, environment: var1
+    var3 = function arg0() {
         _fun27979: for (var _fun27979_ip = 0;;) switch (_fun27979_ip) {
             case 0:
                 var0 = arg0;
@@ -1858,7 +1858,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAccessibleForegroundColor = var3;
-    var3 = function(arg0) { // Original name: findColorByHsv, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.slice;
         var1 = 0;
@@ -1899,7 +1899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.findColorByHsv = var3;
-    var3 = function(arg0) { // Original name: getSaturatedColorHex, environment: var1
+    var3 = function arg0() {
         _fun27982: for (var _fun27982_ip = 0;;) switch (_fun27982_ip) {
             case 0:
                 var1 = arg0;
@@ -1972,7 +1972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSaturatedColorHex = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: interpolateColor, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var9 = arg0;
         var13 = arg1;
         var10 = arg2;

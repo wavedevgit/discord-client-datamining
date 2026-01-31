@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun69301: for (var _fun69301_ip = 0;;) switch (_fun69301_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun69303: for (var _fun69303_ip = 0;;) switch (_fun69303_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var3 = function(arg0, arg1, arg2) { // Original name: useStageChannelParticipantsList, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var4 = arg0;
         var7 = arg1;
         var5 = arg2;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun69307
                     }
                 case 211:
-                    var5 = function(arg0, arg1, arg2) { // Original name: pushSection, environment: var0
+                    var5 = function arg0, arg1, arg2() {
                         _fun69308: for (var _fun69308_ip = 0;;) switch (_fun69308_ip) {
                             case 0:
                                 var2 = arg0;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/stage_channels/useStageChannelGridParticipants.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useStageChannelParticipantsList = var3;
-    var3 = function(arg0) { // Original name: useThrottleDurationForChannel, environment: var1
+    var3 = function arg0() {
         _fun69311: for (var _fun69311_ip = 0;;) switch (_fun69311_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useThrottleDurationForChannel = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useStageChannelParticipantsListThrottled, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun69313: for (var _fun69313_ip = 0;;) switch (_fun69313_ip) {
             case 0:
                 var10 = arg1;

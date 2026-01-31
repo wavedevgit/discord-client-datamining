@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: MainTabs, environment: var1
+    var1 = function() {
         var9 = _closure1_slot1;
         var10 = _closure1_slot2;
         var0 = 2;

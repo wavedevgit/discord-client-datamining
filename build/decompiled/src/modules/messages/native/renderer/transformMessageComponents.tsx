@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: transformToRowGeneratedComponent, environment: var3
+    var0 = function arg0, arg1() {
         _fun56155: for (var _fun56155_ip = 0;;) switch (_fun56155_ip) {
             case 0:
                 var21 = arg0;
                 var5 = arg1;
                 var _closure2_slot0 = var21;
                 var _closure2_slot1 = var5;
-                var7 = function(arg0) { // Original name: getChildComponent, environment: var1
+                var7 = function arg0() {
                     _fun56156: for (var _fun56156_ip = 0;;) switch (_fun56156_ip) {
                         case 0:
                             var3 = _closure1_slot9;
@@ -1398,7 +1398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getSelectAccessibilityLabel, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun56165: for (var _fun56165_ip = 0;;) switch (_fun56165_ip) {
             case 0:
                 var2 = arg1;
@@ -1463,7 +1463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var1 = function(arg0) { // Original name: getUnfurledMediaItemType, environment: var3
+    var1 = function arg0() {
         _fun56166: for (var _fun56166_ip = 0;;) switch (_fun56166_ip) {
             case 0:
                 var0 = arg0;
@@ -1544,7 +1544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var1;
-    var0 = function(arg0, arg1) { // Original name: transformUnfurledMediaItem, environment: var3
+    var0 = function arg0, arg1() {
         _fun56167: for (var _fun56167_ip = 0;;) switch (_fun56167_ip) {
             case 0:
                 var6 = arg0;
@@ -1632,7 +1632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: renderMarkdownText, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun56168: for (var _fun56168_ip = 0;;) switch (_fun56168_ip) {
             case 0:
                 var1 = arg0;
@@ -1742,7 +1742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/native/renderer/transformMessageComponents.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: transformMessageComponents, environment: var3
+    var3 = function arg0() {
         _fun56169: for (var _fun56169_ip = 0;;) switch (_fun56169_ip) {
             case 0:
                 var3 = arg0;

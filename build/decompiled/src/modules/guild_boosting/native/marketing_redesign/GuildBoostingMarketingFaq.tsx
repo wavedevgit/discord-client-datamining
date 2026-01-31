@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var6 = {};
-    var3 = function() { // Original name: getQuestion, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var3;
-    var3 = function() { // Original name: getAnswer, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(9);
     var3[0] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var1 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 8;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[1] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[2] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[3] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[4] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[5] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[6] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.getAnswer = var7;
     var3[7] = var6;
     var6 = {};
-    var7 = function() { // Original name: getQuestion, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.getQuestion = var7;
-    var7 = function() { // Original name: getAnswer, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingFaq.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildBoostingMarketingFaq, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var10 = var0.bind(var3)();
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 110:
                     var12[1] = var13;
                     var5.style = var12;
-                    var9 = function() { // Original name: onPress, environment: var9
+                    var9 = function() {
                         var2 = _closure2_slot2;
                         var1 = undefined;
                         var0 = function(arg0) { // Environment: var0

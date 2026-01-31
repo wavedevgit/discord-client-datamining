@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.ClearAfterValues;
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: formatDuration, environment: var1
+    var3 = function arg0() {
         _fun92245: for (var _fun92245_ip = 0;;) switch (_fun92245_ip) {
             case 0:
                 var0 = global;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/custom_status/utils/formatClearAfterOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: formatClearAfterOption, environment: var1
+    var1 = function arg0() {
         _fun92246: for (var _fun92246_ip = 0;;) switch (_fun92246_ip) {
             case 0:
                 var5 = arg0;

@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = {};
     var0 = 'function pnpm_snapPointTs1(value,velocity,points){const point=value+0.2*velocity;const deltas=points.map(function(p){return Math.abs(point-p);});const minDelta=Math.min.apply(null,deltas);return points.filter(function(p){return Math.abs(point-p)===minDelta;})[0];}';
     var2.code = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: pnpm_snapPointTs1, environment: var0
+    var0 = function arg0, arg1, arg2() {
         var2 = arg2;
         var3 = 0.2;
         var1 = arg1;

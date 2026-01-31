@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var4;
     var3 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: MediaPlayerMuteManager, environment: var4
+        var2 = function() {
             var1 = this;
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'initialize';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var3 = _closure1_slot5;
             var2 = var3.addListener;
             var1 = 'MediaPlayerMuteStateChanged';
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'terminate';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun70357: for (var _fun70357_ip = 0;;) switch (_fun70357_ip) {
                 case 0:
                     var0 = this;

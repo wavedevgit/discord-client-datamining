@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: processColorStringsInternal, environment: var1
+    var0 = function arg0() {
         _fun55369: for (var _fun55369_ip = 0;;) switch (_fun55369_ip) {
             case 0:
                 var3 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var4 = function(arg0) { // Original name: processColorStrings, environment: var1
+    var4 = function arg0() {
         _fun55370: for (var _fun55370_ip = 0;;) switch (_fun55370_ip) {
             case 0:
                 var1 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: processColorStringsArray, environment: var1
+    var3 = function arg0() {
         _fun55371: for (var _fun55371_ip = 0;;) switch (_fun55371_ip) {
             case 0:
                 var2 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.processColorStrings = var4;
     var2.processColorStringsArray = var3;
-    var3 = function(arg0) { // Original name: useProcessColorStringsArray, environment: var1
+    var3 = function arg0() {
         _fun55372: for (var _fun55372_ip = 0;;) switch (_fun55372_ip) {
             case 0:
                 var5 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useProcessColorStringsArray = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: isNativeMessageEligibleForEnhancedRoleColors, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun55374: for (var _fun55374_ip = 0;;) switch (_fun55374_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isNativeMessageEligibleForEnhancedRoleColors = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useIsRoleStyleAndRoleColorsEligibleForERC, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun55375: for (var _fun55375_ip = 0;;) switch (_fun55375_ip) {
             case 0:
                 var1 = _closure1_slot1;

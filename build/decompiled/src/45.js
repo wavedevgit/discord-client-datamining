@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var2 = dependencyMap;
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1) { // Original name: merge, environment: var0
+    var2 = function arg0, arg1() {
         _fun1302: for (var _fun1302_ip = 0;;) switch (_fun1302_ip) {
             case 0:
                 var0 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: getDifferForType, environment: var0
+    var2 = function arg0() {
         _fun1303: for (var _fun1303_ip = 0;;) switch (_fun1303_ip) {
             case 0:
                 var1 = arg0;
@@ -159,7 +159,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0) { // Original name: getProcessorForType, environment: var0
+    var2 = function arg0() {
         _fun1304: for (var _fun1304_ip = 0;;) switch (_fun1304_ip) {
             case 0:
                 var1 = arg0;
@@ -319,7 +319,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: getNativeComponentAttributes, environment: var0
+    var0 = function arg0() {
         _fun1305: for (var _fun1305_ip = 0;;) switch (_fun1305_ip) {
             case 0:
                 var13 = arg0;

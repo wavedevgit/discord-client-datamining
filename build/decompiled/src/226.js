@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = metroImportDefault;
                             var2 = exports;
                             var4 = dependencyMap;
-                            var0 = function(arg0) { // Original name: validateBaseUrl, environment: var1
+                            var0 = function arg0() {
                                     var2 = /^(?:(?:(?:https?|ftp):)?\\/\\ / )( ? : ( ? : [1 - 9]\ d ? | 1\ d\ d | 2[01]\ d | 22[0 - 3])( ? : \.( ? : 1 ? \d {
                                     1,
                                     2
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     case 236:
                                     var1 = function() { // Environment: var1
                                         var4 = _closure1_slot1;
-                                        var3 = function(arg0, arg1) { // Original name: URL, environment: var5
+                                        var3 = function arg0, arg1() {
                                             _fun3114: for (var _fun3114_ip = 0;;) switch (_fun3114_ip) {
                                                 case 0:
                                                     var1 = arg0;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = {};
                                         var1 = 'hash';
                                         var0.key = var1;
-                                        var1 = function() { // Original name: get, environment: var5
+                                        var1 = function() {
                                             _fun3115: for (var _fun3115_ip = 0;;) switch (_fun3115_ip) {
                                                 case 0:
                                                     var0 = this;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = {};
                                         var1 = 'host';
                                         var0.key = var1;
-                                        var1 = function() { // Original name: get, environment: var5
+                                        var1 = function() {
                                                 _fun3116: for (var _fun3116_ip = 0;;) switch (_fun3116_ip) {
                                                     case 0:
                                                         var0 = this;
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         var0 = {};
                                                         var1 = 'hostname';
                                                         var0.key = var1;
-                                                        var1 = function() { // Original name: get, environment: var5
+                                                        var1 = function() {
                                                             _fun3117: for (var _fun3117_ip = 0;;) switch (_fun3117_ip) {
                                                                 case 0:
                                                                     var0 = this;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                     var0 = {};
                                                                     var1 = 'href';
                                                                     var0.key = var1;
-                                                                    var1 = function() { // Original name: get, environment: var5
+                                                                    var1 = function() {
                                                                         var1 = this;
                                                                         var0 = var1.toString;
                                                                         var0 = var0.bind(var1)();
@@ -342,7 +342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                     var0 = {};
                                                                     var1 = 'origin';
                                                                     var0.key = var1;
-                                                                    var1 = function() { // Original name: get, environment: var5
+                                                                    var1 = function() {
                                                                         _fun3119: for (var _fun3119_ip = 0;;) switch (_fun3119_ip) {
                                                                             case 0:
                                                                                 var0 = this;
@@ -367,7 +367,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'password';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3120: for (var _fun3120_ip = 0;;) switch (_fun3120_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -392,7 +392,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'pathname';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3121: for (var _fun3121_ip = 0;;) switch (_fun3121_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -424,7 +424,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'port';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3122: for (var _fun3122_ip = 0;;) switch (_fun3122_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -449,7 +449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'protocol';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3123: for (var _fun3123_ip = 0;;) switch (_fun3123_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -476,7 +476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'search';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3124: for (var _fun3124_ip = 0;;) switch (_fun3124_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -506,7 +506,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'searchParams';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3125: for (var _fun3125_ip = 0;;) switch (_fun3125_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -540,7 +540,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'toJSON';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: toJSON, environment: var5
+                                                                        var1 = function() {
                                                                             var1 = this;
                                                                             var0 = var1.toString;
                                                                             var0 = var0.bind(var1)();
@@ -551,7 +551,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'toString';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: toString, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3127: for (var _fun3127_ip = 0;;) switch (_fun3127_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -592,7 +592,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'username';
                                                                         var0.key = var1;
-                                                                        var1 = function() { // Original name: get, environment: var5
+                                                                        var1 = function() {
                                                                             _fun3128: for (var _fun3128_ip = 0;;) switch (_fun3128_ip) {
                                                                                 case 0:
                                                                                     var0 = this;
@@ -617,7 +617,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var1 = 'createObjectURL';
                                                                         var0.key = var1;
-                                                                        var1 = function(arg0) { // Original name: createObjectURL, environment: var5
+                                                                        var1 = function arg0() {
                                                                             _fun3129: for (var _fun3129_ip = 0;;) switch (_fun3129_ip) {
                                                                                 case 0:
                                                                                     var0 = arg0;
@@ -664,7 +664,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var0 = {};
                                                                         var6 = 'revokeObjectURL';
                                                                         var0.key = var6;
-                                                                        var5 = function(arg0) { // Original name: revokeObjectURL, environment: var5
+                                                                        var5 = function arg0() {
                                                                             var0 = undefined;
                                                                             return var0;
                                                                         };

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0, arg1) { // Original name: getStateForAction, environment: var2
+    var3 = function arg0, arg1() {
         _fun16972: for (var _fun16972_ip = 0;;) switch (_fun16972_ip) {
             case 0:
                 var5 = arg0;
@@ -231,7 +231,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.getStateForAction = var3;
-    var2 = function(arg0) { // Original name: shouldActionChangeFocus, environment: var2
+    var2 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = 'NAVIGATE';

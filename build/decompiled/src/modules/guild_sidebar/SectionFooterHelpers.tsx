@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1, arg2) { // Original name: isSectionFooterWithDivider, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun102715: for (var _fun102715_ip = 0;;) switch (_fun102715_ip) {
             case 0:
                 var6 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: isSectionFooterVoiceSummaryEligible, environment: var1
+    var0 = function arg0, arg1() {
         _fun102716: for (var _fun102716_ip = 0;;) switch (_fun102716_ip) {
             case 0:
                 var1 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0) { // Original name: getSectionFooterActiveVoiceChannels, environment: var1
+    var3 = function arg0() {
         _fun102717: for (var _fun102717_ip = 0;;) switch (_fun102717_ip) {
             case 0:
                 var1 = arg0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_sidebar/SectionFooterHelpers.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: getSectionFooterConfig, environment: var1
+    var4 = function arg0, arg1, arg2() {
         var4 = arg0;
         var3 = arg2;
         var0 = {};
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSectionFooterConfig = var4;
     var2.getSectionFooterActiveVoiceChannels = var3;
-    var1 = function(arg0) { // Original name: isSectionFooterWithActiveVoiceChannels, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.category;
         var0 = var1.voiceStates;

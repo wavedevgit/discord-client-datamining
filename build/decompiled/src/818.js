@@ -16,10 +16,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = false;
     var _closure1_slot2 = var2;
-    var0 = function() { // Original name: registerSpanErrorInstrumentation, environment: var0
+    var0 = function() {
         _fun8712: for (var _fun8712_ip = 0;;) switch (_fun8712_ip) {
             case 0:
-                var2 = function() { // Original name: errorCallback, environment: var0
+                var2 = function() {
                     _fun8713: for (var _fun8713_ip = 0;;) switch (_fun8713_ip) {
                         case 0:
                             var2 = _closure1_slot0;

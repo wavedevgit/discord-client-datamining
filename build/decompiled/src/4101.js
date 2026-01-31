@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isFileContaineJfiforExifHeader = var0;
     var2.isAvifStringIncluded = var0;
     var2.isHeicSignatureIncluded = var0;
-    var3 = function(arg0) { // Original name: getFileChunk, environment: var1
+    var3 = function arg0() {
         _fun37692: for (var _fun37692_ip = 0;;) switch (_fun37692_ip) {
             case 0:
                 var0 = arg0;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun37692
                 }
             case 109:
-                var4 = function(arg0) { // Original name: isArrayofNumbers, environment: var2
+                var4 = function arg0() {
                     var2 = arg0;
                     var1 = var2.every;
                     var0 = function(arg0) { // Environment: var0
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 0;
                 var0 = var6.bind(var7)(var0, var8);
                 var0 = var4.bind(var5)(var0);
-                var2 = function(arg0) { // Original name: isLegalChunk, environment: var2
+                var2 = function arg0() {
                     var2 = arg0;
                     var1 = var2.every;
                     var0 = function(arg0) { // Environment: var0
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getFileChunk = var3;
-    var3 = function(arg0, arg1) { // Original name: fetchFromObject, environment: var1
+    var3 = function arg0, arg1() {
         _fun37697: for (var _fun37697_ip = 0;;) switch (_fun37697_ip) {
             case 0:
                 var2 = arg0;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot0 = var3;
     var2.fetchFromObject = var3;
-    var3 = function(arg0) { // Original name: findMatroskaDocTypeElements, environment: var1
+    var3 = function arg0() {
         _fun37698: for (var _fun37698_ip = 0;;) switch (_fun37698_ip) {
             case 0:
                 var2 = arg0;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.findMatroskaDocTypeElements = var3;
-    var3 = function(arg0) { // Original name: isftypStringIncluded, environment: var1
+    var3 = function arg0() {
         _fun37700: for (var _fun37700_ip = 0;;) switch (_fun37700_ip) {
             case 0:
                 var6 = arg0;
@@ -320,7 +320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isftypStringIncluded = var3;
-    var3 = function(arg0) { // Original name: isFlvStringIncluded, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.slice;
         var1 = 0;
@@ -355,7 +355,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isFlvStringIncluded = var3;
-    var3 = function(arg0) { // Original name: isFileContaineJfiforExifHeader, environment: var1
+    var3 = function arg0() {
         _fun37702: for (var _fun37702_ip = 0;;) switch (_fun37702_ip) {
             case 0:
                 var1 = arg0;
@@ -375,7 +375,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isFileContaineJfiforExifHeader = var3;
-    var3 = function(arg0) { // Original name: isAvifStringIncluded, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.slice;
         var1 = 4;
@@ -399,7 +399,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isAvifStringIncluded = var3;
-    var1 = function(arg0) { // Original name: isHeicSignatureIncluded, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = var3.map;
         var1 = function(arg0) { // Environment: var0

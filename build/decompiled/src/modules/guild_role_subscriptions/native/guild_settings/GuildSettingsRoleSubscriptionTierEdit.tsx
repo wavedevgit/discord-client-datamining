@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: ArchiveOrDeleteTierSection, environment: var1
+    var0 = function() {
         _fun116944: for (var _fun116944_ip = 0;;) switch (_fun116944_ip) {
             case 0:
                 var0 = _closure1_slot17;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.color = var15;
                 var14 = var14.actionButton;
                 var5.style = var14;
-                var13 = function() { // Original name: renderIcon, environment: var13
+                var13 = function() {
                     var3 = _closure1_slot14;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot3;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: TabContent, environment: var1
+    var0 = function arg0() {
         _fun116946: for (var _fun116946_ip = 0;;) switch (_fun116946_ip) {
             case 0:
                 var0 = arg0;
@@ -497,7 +497,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.Lj6R5m;
                 var8 = var10.bind(var11)(var8);
                 var1.ctaMessage = var8;
-                var7 = function() { // Original name: onClick, environment: var7
+                var7 = function() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var3 = _closure2_slot0;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTierEdit.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionTierEdit, environment: var1
+    var1 = function arg0() {
         _fun116951: for (var _fun116951_ip = 0;;) switch (_fun116951_ip) {
             case 0:
                 var0 = arg0;
@@ -687,7 +687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.groupListingId = var3;
                     var0 = _closure2_slot2;
                     var1.onBeforeDispatchNewListing = var0;
-                    var0 = function(arg0) { // Original name: onAfterDispatchNewListing, environment: var0
+                    var0 = function arg0() {
                         var3 = _closure2_slot4;
                         var0 = arg0;
                         var2 = var0.id;
@@ -848,7 +848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                         case 40:
                             var0.headerRight = var4;
-                            var3 = function() { // Original name: headerTitle, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot14;
                                 var7 = _closure1_slot0;
                                 var8 = _closure1_slot3;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot19;
                 var9 = var9[var15];
                 var2.defaultIndex = var9;
-                var9 = function(arg0) { // Original name: onSetActiveIndex, environment: var16
+                var9 = function arg0() {
                     _fun116961: for (var _fun116961_ip = 0;;) switch (_fun116961_ip) {
                         case 0:
                             var1 = _closure1_slot18;
@@ -1054,7 +1054,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var2;
                 var17 = var1;
             case 887:
-                var1 = function() { // Original name: GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter, environment: var16
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot3;
                     var1 = 38;
@@ -1098,7 +1098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.bind(var4)(var11);
                 var11 = {};
                 var11.contentTypes = var17;
-                var16 = function(arg0) { // Original name: children, environment: var16
+                var16 = function arg0() {
                     _fun116964: for (var _fun116964_ip = 0;;) switch (_fun116964_ip) {
                         case 0:
                             var0 = arg0;
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.bind(var4)(var1);
                             var2 = var1.DismissibleActionSheet;
                             var1 = {};
-                            var5 = function() { // Original name: markAsDismissed, environment: var5
+                            var5 = function() {
                                 var2 = _closure3_slot0;
                                 var0 = _closure1_slot13;
                                 var1 = var0.UNKNOWN;

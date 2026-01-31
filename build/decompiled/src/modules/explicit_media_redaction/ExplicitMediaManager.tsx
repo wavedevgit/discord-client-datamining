@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun39081: for (var _fun39081_ip = 0;;) switch (_fun39081_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: createCompositeKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.channel_id;
         var3 = var0.id;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: resetManager, environment: var1
+    var0 = function() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.values;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: maybeCancelTimeout, environment: var1
+    var0 = function arg0, arg1() {
         _fun39087: for (var _fun39087_ip = 0;;) switch (_fun39087_ip) {
             case 0:
                 var7 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var1];
                 var3 = var2.timeout;
                 var6 = var2.setAt;
-                var5 = function(arg0, arg1, arg2) { // Original name: handleMediaScanCompleteReporting, environment: var2
+                var5 = function arg0, arg1, arg2() {
                     _fun39088: for (var _fun39088_ip = 0;;) switch (_fun39088_ip) {
                         case 0:
                             var11 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: withoutScheduledTimeout, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot22;
         var2 = undefined;
         var1 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: handleUnscannedMessages, environment: var1
+    var0 = function arg0, arg1() {
         _fun39092: for (var _fun39092_ip = 0;;) switch (_fun39092_ip) {
             case 0:
                 var7 = arg0;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: aggregateExplicitMediaCounts, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var2 = {};
         var _closure2_slot0 = var2;
@@ -973,10 +973,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: processMessagesFromAction, environment: var1
+    var0 = function arg0, arg1() {
         _fun39108: for (var _fun39108_ip = 0;;) switch (_fun39108_ip) {
             case 0:
-                var2 = function(arg0) { // Original name: getScanningAttributesForMessages, environment: var0
+                var2 = function arg0() {
                     _fun39109: for (var _fun39109_ip = 0;;) switch (_fun39109_ip) {
                         case 0:
                             var3 = arg0;
@@ -1339,10 +1339,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: processChannelMessagesFromAction, environment: var1
+    var0 = function arg0() {
         _fun39117: for (var _fun39117_ip = 0;;) switch (_fun39117_ip) {
             case 0:
-                var2 = function(arg0) { // Original name: getScanningAttributesForChannelMessages, environment: var0
+                var2 = function arg0() {
                     _fun39118: for (var _fun39118_ip = 0;;) switch (_fun39118_ip) {
                         case 0:
                             var3 = arg0;
@@ -1720,7 +1720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: handleMessageUpdate, environment: var1
+    var0 = function arg0() {
         _fun39126: for (var _fun39126_ip = 0;;) switch (_fun39126_ip) {
             case 0:
                 var0 = arg0;
@@ -1959,7 +1959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: handleMessageCreate, environment: var1
+    var0 = function arg0() {
         _fun39127: for (var _fun39127_ip = 0;;) switch (_fun39127_ip) {
             case 0:
                 var1 = arg0;
@@ -2089,7 +2089,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: handleMessagesLoad, environment: var1
+    var0 = function arg0() {
         _fun39128: for (var _fun39128_ip = 0;;) switch (_fun39128_ip) {
             case 0:
                 var0 = arg0;
@@ -2136,7 +2136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: handleSearchMessagesSuccess, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var3 = var1.data;
         var1 = false;
@@ -2196,7 +2196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: handleLoadPinnedMessages, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var3 = var0.pins;
         var2 = _closure1_slot28;
@@ -2212,7 +2212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: handleForumPostsLoad, environment: var1
+    var0 = function arg0() {
         _fun39134: for (var _fun39134_ip = 0;;) switch (_fun39134_ip) {
             case 0:
                 var0 = arg0;
@@ -2261,7 +2261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: handleThreadsLoad, environment: var1
+    var0 = function arg0() {
         _fun39136: for (var _fun39136_ip = 0;;) switch (_fun39136_ip) {
             case 0:
                 var0 = arg0;
@@ -2297,7 +2297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: handleSidebarViewChannel, environment: var1
+    var0 = function arg0() {
         _fun39137: for (var _fun39137_ip = 0;;) switch (_fun39137_ip) {
             case 0:
                 var0 = arg0;
@@ -2317,7 +2317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var0;
-    var0 = function(arg0) { // Original name: handleChannelSelect, environment: var1
+    var0 = function arg0() {
         _fun39138: for (var _fun39138_ip = 0;;) switch (_fun39138_ip) {
             case 0:
                 var0 = arg0;
@@ -2356,7 +2356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0) { // Original name: handleUserSettingsUpdate, environment: var1
+    var0 = function arg0() {
         _fun39139: for (var _fun39139_ip = 0;;) switch (_fun39139_ip) {
             case 0:
                 var1 = arg0;
@@ -2396,7 +2396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var0;
-    var0 = function(arg0) { // Original name: handleVoiceChannelChatOpen, environment: var1
+    var0 = function arg0() {
         _fun39140: for (var _fun39140_ip = 0;;) switch (_fun39140_ip) {
             case 0:
                 var0 = arg0;
@@ -2417,7 +2417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0) { // Original name: maybeScanMessagesForChannelId, environment: var1
+    var0 = function arg0() {
         _fun39141: for (var _fun39141_ip = 0;;) switch (_fun39141_ip) {
             case 0:
                 var3 = _closure1_slot13;
@@ -2517,7 +2517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot18 = var3;
     var3 = {};
     var _closure1_slot19 = var3;
-    var3 = function(arg0, arg1) { // Original name: sendForScanning, environment: var1
+    var3 = function arg0, arg1() {
         _fun39142: for (var _fun39142_ip = 0;;) switch (_fun39142_ip) {
             case 0:
                 var2 = arg0;
@@ -2566,7 +2566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: ExplicitMediaManager, environment: var0
+        var2 = function arg0() {
             _fun39145: for (var _fun39145_ip = 0;;) switch (_fun39145_ip) {
                 case 0:
                     var4 = this;

@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var5 = dependencyMap;
-    var3 = function(arg0) { // Original name: getCommandContext, environment: var1
+    var3 = function arg0() {
         _fun89582: for (var _fun89582_ip = 0;;) switch (_fun89582_ip) {
             case 0:
                 var1 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_launcher/hooks/useCommandContext.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getCommandContext = var3;
-    var1 = function(arg0) { // Original name: useCommandContext, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot0;

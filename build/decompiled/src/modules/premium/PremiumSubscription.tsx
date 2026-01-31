@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = require;
     var2 = exports;
     var7 = dependencyMap;
-    var4 = function(arg0) { // Original name: getNonePlanIdForIntervalType, environment: var1
+    var4 = function arg0() {
         _fun25385: for (var _fun25385_ip = 0;;) switch (_fun25385_ip) {
             case 0:
                 var1 = arguments[1];
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var4;
-    var3 = function(arg0) { // Original name: getBaseSubscriptionItemForSubscriptionItems, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.find;
         var0 = function(arg0) { // Environment: var0
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/premium/PremiumSubscription.tsx';
     var5 = var6.bind(var7)(var5);
     var2.getNonePlanIdForIntervalType = var4;
-    var4 = function(arg0) { // Original name: getNonePlanIdForSubscription, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot1;
         var0 = arg0;
         var3 = var0.items;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getNonePlanIdForSubscription = var4;
     var2.getBaseSubscriptionItemForSubscriptionItems = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: getBasePlanIdForSubscriptionItems, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun25390: for (var _fun25390_ip = 0;;) switch (_fun25390_ip) {
             case 0:
                 var6 = arg0;

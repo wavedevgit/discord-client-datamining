@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: getEmbedThemeColors, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 5;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/native/renderer/row_data/embeds/getEmbedThemeColors.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useEmbedThemeColors, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot3;

@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var2 = global;
     var _closure1_slot0 = var2;
-    var2 = function() { // Original name: isEnabled, environment: var0
+    var2 = function() {
         _fun1442: for (var _fun1442_ip = 0;;) switch (_fun1442_ip) {
             case 0:
                 var0 = _closure1_slot0;
@@ -44,12 +44,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 0;
     var _closure1_slot2 = var3;
     var1.isEnabled = var2;
-    var2 = function(arg0) { // Original name: setEnabled, environment: var0
+    var2 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1.setEnabled = var2;
-    var2 = function(arg0, arg1) { // Original name: beginEvent, environment: var0
+    var2 = function arg0, arg1() {
         _fun1444: for (var _fun1444_ip = 0;;) switch (_fun1444_ip) {
             case 0:
                 var2 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.beginEvent = var2;
-    var2 = function(arg0) { // Original name: endEvent, environment: var0
+    var2 = function arg0() {
         _fun1445: for (var _fun1445_ip = 0;;) switch (_fun1445_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.endEvent = var2;
-    var2 = function(arg0, arg1) { // Original name: beginAsyncEvent, environment: var0
+    var2 = function arg0, arg1() {
         _fun1446: for (var _fun1446_ip = 0;;) switch (_fun1446_ip) {
             case 0:
                 var3 = arg0;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.beginAsyncEvent = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: endAsyncEvent, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun1447: for (var _fun1447_ip = 0;;) switch (_fun1447_ip) {
             case 0:
                 var2 = arg0;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.endAsyncEvent = var2;
-    var0 = function(arg0, arg1) { // Original name: counterEvent, environment: var0
+    var0 = function arg0, arg1() {
         _fun1448: for (var _fun1448_ip = 0;;) switch (_fun1448_ip) {
             case 0:
                 var2 = arg0;

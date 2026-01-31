@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0, arg1) { // Original name: hasBit, environment: var1
+    var3 = function arg0, arg1() {
         _fun15563: for (var _fun15563_ip = 0;;) switch (_fun15563_ip) {
             case 0:
                 var4 = arg0;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/Uint8ArrayUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.hasBit = var3;
-    var3 = function(arg0, arg1) { // Original name: addBit, environment: var1
+    var3 = function arg0, arg1() {
         _fun15564: for (var _fun15564_ip = 0;;) switch (_fun15564_ip) {
             case 0:
                 var7 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.addBit = var3;
-    var3 = function(arg0, arg1) { // Original name: removeBit, environment: var1
+    var3 = function arg0, arg1() {
         _fun15565: for (var _fun15565_ip = 0;;) switch (_fun15565_ip) {
             case 0:
                 var0 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removeBit = var3;
-    var3 = function(arg0) { // Original name: isUint8Array, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var1 = var0.Uint8Array;
         var0 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isUint8Array = var3;
-    var1 = function(arg0) { // Original name: isSerializedUint8Array, environment: var1
+    var1 = function arg0() {
         _fun15567: for (var _fun15567_ip = 0;;) switch (_fun15567_ip) {
             case 0:
                 var1 = arg0;

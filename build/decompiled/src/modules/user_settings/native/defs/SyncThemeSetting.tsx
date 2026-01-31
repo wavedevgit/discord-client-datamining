@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.APPEARANCE;
     var1.parent = var8;
-    var8 = function() { // Original name: useSyncThemeAcrossClientsValue, environment: var7
+    var8 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 7;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onSyncThemeAcrossClientsValueChange, environment: var7
+    var8 = function arg0() {
         _fun84598: for (var _fun84598_ip = 0;;) switch (_fun84598_ip) {
             case 0:
                 var3 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onValueChange = var8;
-    var8 = function() { // Original name: useSyncThemeAcrossClientsDescription, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 6;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useDescription = var8;
-    var7 = function() { // Original name: useIsSyncThemeAcrossClientsDisabled, environment: var7
+    var7 = function() {
         _fun84600: for (var _fun84600_ip = 0;;) switch (_fun84600_ip) {
             case 0:
                 var2 = _closure1_slot0;

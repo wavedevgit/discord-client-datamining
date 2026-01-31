@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: MediaKeyboardEmptyState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.actionIcon;
         var9 = var0.actionLabel;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/media_keyboard/native/components/MediaKeyboardEmptyState.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getMediaEmptyStateComponentOrNull, environment: var1
+    var1 = function arg0() {
         _fun75606: for (var _fun75606_ip = 0;;) switch (_fun75606_ip) {
             case 0:
                 var0 = arg0;

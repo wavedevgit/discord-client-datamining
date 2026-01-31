@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/MemberActionUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useMemberActionsForChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun89696: for (var _fun89696_ip = 0;;) switch (_fun89696_ip) {
             case 0:
                 var1 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMemberActionsForChannel = var3;
-    var3 = function(arg0, arg1) { // Original name: useNextMemberAction, environment: var1
+    var3 = function arg0, arg1() {
         _fun89700: for (var _fun89700_ip = 0;;) switch (_fun89700_ip) {
             case 0:
                 var0 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useNextMemberAction = var3;
-    var1 = function(arg0) { // Original name: useAllActionsCompleted, environment: var1
+    var1 = function arg0() {
         _fun89704: for (var _fun89704_ip = 0;;) switch (_fun89704_ip) {
             case 0:
                 var0 = arg0;

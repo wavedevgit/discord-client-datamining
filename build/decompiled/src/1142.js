@@ -22,12 +22,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var4 = true;
     var3.attachReduxState = var4;
-    var4 = function(arg0) { // Original name: actionTransformer, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var3.actionTransformer = var4;
-    var4 = function(arg0) { // Original name: stateTransformer, environment: var1
+    var4 = function arg0() {
         _fun12426: for (var _fun12426_ip = 0;;) switch (_fun12426_ip) {
             case 0:
                 var0 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.stateTransformer = var4;
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: createReduxEnhancer, environment: var1
+    var1 = function arg0() {
         var1 = global;
         var5 = var1.Object;
         var4 = var5.assign;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = function(arg0, arg1) { // Environment: var0
                 _fun12429: for (var _fun12429_ip = 0;;) switch (_fun12429_ip) {
                     case 0:
-                        var1 = function(arg0) { // Original name: sentryWrapReducer, environment: var2
+                        var1 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var0 = function(arg0, arg1) { // Environment: var0
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var1.Proxy;
                         var6 = var0.replaceReducer;
                         var1 = {};
-                        var2 = function(arg0, arg1, arg2) { // Original name: apply, environment: var2
+                        var2 = function arg0, arg1, arg2() {
                             var4 = arg0;
                             var3 = var4.apply;
                             var2 = _closure4_slot0;

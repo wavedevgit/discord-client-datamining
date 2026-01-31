@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var12;
             var _closure1_slot2 = var6;
-            var0 = function(arg0) { // Original name: PressableBase, environment: var1
+            var0 = function arg0() {
                 var6 = arg0;
                 var4 = var6.children;
                 var10 = var6.androidRippleConfig;

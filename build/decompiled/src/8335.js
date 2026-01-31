@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: QRBitBuffer, environment: var2
+    var1 = function() {
         var1 = this;
         var0 = global;
         var0 = var0.Array;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0 = {};
-    var3 = function(arg0) { // Original name: get, environment: var2
+    var3 = function arg0() {
         var2 = arg0;
         var0 = global;
         var4 = var0.Math;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.get = var3;
-    var3 = function(arg0, arg1) { // Original name: put, environment: var2
+    var3 = function arg0, arg1() {
         _fun67476: for (var _fun67476_ip = 0;;) switch (_fun67476_ip) {
             case 0:
                 var4 = arg0;
@@ -73,13 +73,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.put = var3;
-    var3 = function() { // Original name: getLengthInBits, environment: var2
+    var3 = function() {
         var0 = this;
         var0 = var0.length;
         return var0;
     };
     var0.getLengthInBits = var3;
-    var2 = function(arg0) { // Original name: putBit, environment: var2
+    var2 = function arg0() {
         _fun67478: for (var _fun67478_ip = 0;;) switch (_fun67478_ip) {
             case 0:
                 var1 = this;

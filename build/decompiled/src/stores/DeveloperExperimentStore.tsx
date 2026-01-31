@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = dependencyMap;
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun81396: for (var _fun81396_ip = 0;;) switch (_fun81396_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot11 = var0;
-            var3 = function() { // Original name: init, environment: var1
+            var3 = function() {
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 9;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var6.bind(var0)(var7);
             var7 = var7.Store;
             var1 = function(arg0) { // Environment: var1
-                var3 = function(arg0) { // Original name: DeveloperExperimentStore, environment: var5
+                var3 = function arg0() {
                     _fun81401: for (var _fun81401_ip = 0;;) switch (_fun81401_ip) {
                         case 0:
                             var3 = this;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'initialize';
                 var4.key = var0;
-                var0 = function() { // Original name: value, environment: var5
+                var0 = function() {
                     var6 = this;
                     var _closure3_slot0 = var6;
                     var4 = var6.waitFor;
@@ -198,12 +198,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = {};
                     var8 = false;
                     var7.configurable = var8;
-                    var8 = function() { // Original name: get, environment: var1
+                    var8 = function() {
                         var0 = _closure1_slot10;
                         return var0;
                     };
                     var7.get = var8;
-                    var8 = function() { // Original name: set, environment: var1
+                    var8 = function() {
                         var0 = undefined;
                         return var0;
                     };
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getExperimentDescriptor';
                 var4.key = var6;
-                var5 = function() { // Original name: value, environment: var5
+                var5 = function() {
                     _fun81406: for (var _fun81406_ip = 0;;) switch (_fun81406_ip) {
                         case 0:
                             var1 = _closure1_slot10;

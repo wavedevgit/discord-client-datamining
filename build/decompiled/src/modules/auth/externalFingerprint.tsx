@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/externalFingerprint.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: externalFingerprint, environment: var1
+    var1 = function arg0() {
         _fun117929: for (var _fun117929_ip = 0;;) switch (_fun117929_ip) {
             case 0:
                 var2 = _closure1_slot3;

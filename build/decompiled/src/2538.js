@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun21795: for (var _fun21795_ip = 0;;) switch (_fun21795_ip) {
         case 0:
             var1 = exports;
-            var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: numberWithSuffix, environment: var7
+            var0 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun21796: for (var _fun21796_ip = 0;;) switch (_fun21796_ip) {
                     case 0:
                         var5 = arg1;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var2;
         case 95:
             var2 = {};
-            var4 = function(arg0, arg1) { // Original name: ordinalNumber, environment: var7
+            var4 = function arg0, arg1() {
                 _fun21797: for (var _fun21797_ip = 0;;) switch (_fun21797_ip) {
                     case 0:
                         var0 = arg1;
@@ -266,7 +266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8.wide = var9;
             var4.values = var8;
             var4.defaultWidth = var5;
-            var7 = function(arg0) { // Original name: argumentCallback, environment: var7
+            var7 = function arg0() {
                 var1 = arg0;
                 var0 = 1;
                 var0 = var1 - var0;

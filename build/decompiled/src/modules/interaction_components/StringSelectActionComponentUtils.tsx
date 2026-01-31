@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/StringSelectActionComponentUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: getInitialStringSelectOptions, environment: var1
+    var1 = function arg0, arg1() {
         _fun56245: for (var _fun56245_ip = 0;;) switch (_fun56245_ip) {
             case 0:
                 var2 = arg0;

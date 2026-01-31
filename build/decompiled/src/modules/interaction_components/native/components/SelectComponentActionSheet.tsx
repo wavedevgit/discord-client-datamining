@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SelectionHeader, environment: var1
+    var0 = function arg0() {
         _fun78833: for (var _fun78833_ip = 0;;) switch (_fun78833_ip) {
             case 0:
                 var1 = arg0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 645:
                 var6.icon = var11;
                 var6.tags = var10;
-                var10 = function(arg0) { // Original name: onRemove, environment: var9
+                var10 = function arg0() {
                     _fun78836: for (var _fun78836_ip = 0;;) switch (_fun78836_ip) {
                         case 0:
                             var3 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var6.onRemove = var10;
-                var9 = function(arg0) { // Original name: onChangeText, environment: var9
+                var9 = function arg0() {
                     _fun78837: for (var _fun78837_ip = 0;;) switch (_fun78837_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: SelectionOptionItem, environment: var1
+    var0 = function arg0() {
         _fun78838: for (var _fun78838_ip = 0;;) switch (_fun78838_ip) {
             case 0:
                 var0 = arg0;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 297:
                 var0.subLabel = var6;
                 var0.subLabelLineClamp = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var3 = _closure2_slot1;
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/components/SelectComponentActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelectComponentActionSheet, environment: var1
+    var1 = function arg0() {
         _fun78840: for (var _fun78840_ip = 0;;) switch (_fun78840_ip) {
             case 0:
                 var1 = arg0;
@@ -1003,7 +1003,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var3)(var4);
                 var5 = var4.BottomSheetFlatList;
                 var4 = {};
-                var13 = function(arg0, arg1) { // Original name: keyExtractor, environment: var13
+                var13 = function arg0, arg1() {
                     var0 = global;
                     var0 = var0.HermesInternal;
                     var2 = var0.concat;

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
-    var0 = function() { // Original name: _importWithRetry, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot1;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot1 = var3;
-    var3 = function(arg0) { // Original name: pausedPromise, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot2 = var3;
-    var4 = function() { // Original name: awaitOnline, environment: var1
+    var4 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = '../discord_common/js/packages/code-splitting/importWithRetry.tsx';
     var5 = var6.bind(var7)(var5);
     var2.awaitOnline = var4;
-    var4 = function(arg0) { // Original name: setAwaitOnline, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         _closure1_slot3 = var0;
         var0 = undefined;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setAwaitOnline = var4;
     var2.pausedPromise = var3;
-    var1 = function() { // Original name: importWithRetry, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;

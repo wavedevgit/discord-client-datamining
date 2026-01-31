@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: customKeyboardWillHide, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.viewHandle;
         var0 = _closure1_slot4;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: withChatViewHandle, environment: var1
+    var0 = function arg0, arg1() {
         _fun90840: for (var _fun90840_ip = 0;;) switch (_fun90840_ip) {
             case 0:
                 var0 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: InlinePortalKeyboard, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var12 = var1.channelId;
         var7 = var1.messagesRef;

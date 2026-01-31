@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4 = var4.bind(var6)(var7, var1);
     var1 = {};
-    var5 = function(arg0, arg1) { // Original name: setNativeValue, environment: var5
+    var5 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;

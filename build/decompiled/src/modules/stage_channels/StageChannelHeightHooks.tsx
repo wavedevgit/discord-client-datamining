@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/StageChannelHeightHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGetStageRTCPanelHeight, environment: var1
+    var3 = function arg0() {
         _fun68062: for (var _fun68062_ip = 0;;) switch (_fun68062_ip) {
             case 0:
                 var4 = arg0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGetStageRTCPanelHeight = var3;
-    var1 = function(arg0) { // Original name: useGetActionBarHeight, environment: var1
+    var1 = function arg0() {
         _fun68063: for (var _fun68063_ip = 0;;) switch (_fun68063_ip) {
             case 0:
                 var4 = arg0;

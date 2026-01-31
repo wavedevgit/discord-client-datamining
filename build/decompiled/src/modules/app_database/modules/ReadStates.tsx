@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40229: for (var _fun40229_ip = 0;;) switch (_fun40229_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40231: for (var _fun40231_ip = 0;;) switch (_fun40231_ip) {
             case 0:
                 var3 = arg0;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: ReadStates, environment: var5
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot3;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = null;
             var2.readStateVersion = var1;
             var1 = {};
-            var4 = function(arg0) { // Original name: CONNECTION_OPEN, environment: var3
+            var4 = function arg0() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleConnectionOpen;
                 var0 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CONNECTION_OPEN = var4;
-            var4 = function(arg0) { // Original name: CHANNEL_PINS_ACK, environment: var3
+            var4 = function arg0() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleReadStateAction;
                 var0 = arg0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_PINS_ACK = var4;
-            var4 = function(arg0) { // Original name: MESSAGE_ACK, environment: var3
+            var4 = function arg0() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleReadStateAction;
                 var0 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.MESSAGE_ACK = var4;
-            var4 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC_FINISHED, environment: var3
+            var4 = function arg0, arg1() {
                 _fun40237: for (var _fun40237_ip = 0;;) switch (_fun40237_ip) {
                     case 0:
                         var0 = arg0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.BACKGROUND_SYNC_FINISHED = var4;
-            var3 = function(arg0, arg1) { // Original name: WRITE_CACHES, environment: var3
+            var3 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var2 = var3.handleWriteCaches;
                 var1 = arg1;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var6.bind(var1)(var0);
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: getAll, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetInMemoryState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = null;
             var0 = this;
             var0.readStateVersion = var1;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpen';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var0 = var0.readState;
             var1 = var0.version;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleReadStateAction';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun40244: for (var _fun40244_ip = 0;;) switch (_fun40244_ip) {
                 case 0:
                     var0 = arg0;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleWriteCaches';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var5
+        var5 = function arg0, arg1() {
             _fun40245: for (var _fun40245_ip = 0;;) switch (_fun40245_ip) {
                 case 0:
                     var5 = arg0;

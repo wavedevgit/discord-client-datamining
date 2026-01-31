@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: _getCancellationSlowConnection, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_channel_effects/VoiceChannelEffectsActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
     var2.VoiceChannelEffectSentLocation = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: sendVoiceChannelCustomCallSoundEffect, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun50621: for (var _fun50621_ip = 0;;) switch (_fun50621_ip) {
             case 0:
                 var13 = arg0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.sendVoiceChannelCustomCallSoundEffect = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: sendVoiceChannelSoundboardEffect, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun50623: for (var _fun50623_ip = 0;;) switch (_fun50623_ip) {
             case 0:
                 var15 = arg0;

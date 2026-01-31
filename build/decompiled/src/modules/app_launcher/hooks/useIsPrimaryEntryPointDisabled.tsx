@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useIsPrimaryEntryPointDisabled, environment: var1
+    var1 = function arg0() {
         _fun107956: for (var _fun107956_ip = 0;;) switch (_fun107956_ip) {
             case 0:
                 var2 = arg0;

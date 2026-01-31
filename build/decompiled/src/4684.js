@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.iconMask = var6;
             var3 = var4.bind(var5)(var3);
             var _closure1_slot11 = var3;
-            var1 = function(arg0) { // Original name: HeaderBackButton, environment: var1
+            var1 = function arg0() {
                 _fun43543: for (var _fun43543_ip = 0;;) switch (_fun43543_ip) {
                     case 0:
                         var0 = arg0;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var11 = var0.text;
                     case 314:
                         var _closure2_slot11 = var11;
-                        var0 = function(arg0) { // Original name: handleLabelLayout, environment: var8
+                        var0 = function arg0() {
                             _fun43544: for (var _fun43544_ip = 0;;) switch (_fun43544_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -300,7 +300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun43543
                         }
                     case 385:
-                        var9 = function() { // Original name: handlePress, environment: var8
+                        var9 = function() {
                             _fun43545: for (var _fun43545_ip = 0;;) switch (_fun43545_ip) {
                                 case 0:
                                     var0 = _closure2_slot5;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 633:
                         var7 = new Array(2);
                         var7[0] = var9;
-                        var8 = function() { // Original name: renderLabel, environment: var8
+                        var8 = function() {
                             _fun43546: for (var _fun43546_ip = 0;;) switch (_fun43546_ip) {
                                 case 0:
                                     var0 = _closure2_slot1;

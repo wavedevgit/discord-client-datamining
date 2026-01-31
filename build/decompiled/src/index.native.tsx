@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var2;
     var _closure1_slot1 = var3;
-    var5 = function(arg0, arg1) { // Original name: registerHeadlessTask, environment: var1
+    var5 = function arg0, arg1() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var1 = arg1;

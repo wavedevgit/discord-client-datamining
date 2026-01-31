@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_engine/AsyncCameraInitExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getAsyncCameraInitExperimentConfig, environment: var1
+    var1 = function arg0() {
         _fun94001: for (var _fun94001_ip = 0;;) switch (_fun94001_ip) {
             case 0:
                 var3 = arg0;

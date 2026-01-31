@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'function pnpm_BottomSheetContentTsx3(){const{animatedContainerHeight,INITIAL_CONTAINER_HEIGHT,enableDynamicSizing,animatedContentHeight,detached,animatedPaddingBottom,animate,animationConfigs,overrideReduceMotion,animatedContentHeightMax}=this.__closure;if(animatedContainerHeight.get()===INITIAL_CONTAINER_HEIGHT){return{};}if(enableDynamicSizing&&animatedContentHeight.get()===INITIAL_CONTAINER_HEIGHT){return{};}const paddingBottom=detached?0:animatedPaddingBottom.get();return{paddingBottom:animate({point:paddingBottom,configs:animationConfigs,overrideReduceMotion:overrideReduceMotion}),height:animate({point:animatedContentHeightMax.get()+paddingBottom,configs:animationConfigs,overrideReduceMotion:overrideReduceMotion})};}';
     var4.code = var5;
     var _closure1_slot7 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetContentComponent, environment: var1
+    var1 = function arg0() {
         _fun45321: for (var _fun45321_ip = 0;;) switch (_fun45321_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var24[var1];
                 var14 = var23.bind(var3)(var10);
                 var13 = var14.useDerivedValue;
-                var11 = function() { // Original name: pnpm_BottomSheetContentTsx1, environment: var5
+                var11 = function() {
                     _fun45322: for (var _fun45322_ip = 0;;) switch (_fun45322_ip) {
                         case 0:
                             var1 = _closure2_slot9;
@@ -310,7 +310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var24[var1];
                 var14 = var23.bind(var3)(var10);
                 var13 = var14.useDerivedValue;
-                var11 = function() { // Original name: pnpm_BottomSheetContentTsx2, environment: var5
+                var11 = function() {
                     _fun45323: for (var _fun45323_ip = 0;;) switch (_fun45323_ip) {
                         case 0:
                             var2 = _closure2_slot9;
@@ -405,7 +405,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var24[var1];
                 var14 = var23.bind(var3)(var10);
                 var13 = var14.useAnimatedStyle;
-                var11 = function() { // Original name: pnpm_BottomSheetContentTsx3, environment: var5
+                var11 = function() {
                     _fun45324: for (var _fun45324_ip = 0;;) switch (_fun45324_ip) {
                         case 0:
                             var1 = _closure2_slot9;

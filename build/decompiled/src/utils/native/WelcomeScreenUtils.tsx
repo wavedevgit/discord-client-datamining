@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/native/WelcomeScreenUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useShowWelcomeModal, environment: var1
+    var3 = function arg0, arg1() {
         var7 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var7;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useShowWelcomeModal = var3;
-    var1 = function(arg0) { // Original name: openWelcomeActionSheet, environment: var1
+    var1 = function arg0() {
         _fun91092: for (var _fun91092_ip = 0;;) switch (_fun91092_ip) {
             case 0:
                 var1 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var2;
                 var1 = var1.onHide;
                 var _closure2_slot1 = var1;
-                var3 = function() { // Original name: openWelcomeActionSheet, environment: var0
+                var3 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;

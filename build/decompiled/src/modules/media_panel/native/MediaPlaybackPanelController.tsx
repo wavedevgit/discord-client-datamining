@@ -68,10 +68,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_panel/native/MediaPlaybackPanelController.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaPlaybackPanelController, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
-        var0 = function() { // Original name: useCoreState, environment: var1
+        var0 = function() {
             var11 = _closure1_slot0;
             var12 = _closure1_slot2;
             var0 = 9;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = new Array(1);
             var4[0] = var7;
             var3 = function() { // Environment: var5
-                var3 = function() { // Original name: onChange, environment: var0
+                var3 = function() {
                     _fun111832: for (var _fun111832_ip = 0;;) switch (_fun111832_ip) {
                         case 0:
                             var0 = _closure1_slot5;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var12[var0];
             var13 = var11.bind(var1)(var9);
             var9 = var13.useDerivedValue;
-            var5 = function() { // Original name: p, environment: var5
+            var5 = function() {
                 _fun111834: for (var _fun111834_ip = 0;;) switch (_fun111834_ip) {
                     case 0:
                         var1 = _closure3_slot0;

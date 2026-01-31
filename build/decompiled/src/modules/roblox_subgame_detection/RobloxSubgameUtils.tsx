@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1) { // Original name: hasSubgameInfoChanged, environment: var1
+    var4 = function arg0, arg1() {
         _fun31847: for (var _fun31847_ip = 0;;) switch (_fun31847_ip) {
             case 0:
                 var6 = arg0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var0 = function(arg0) { // Original name: isActivityRobloxSubgame, environment: var1
+    var0 = function arg0() {
         _fun31848: for (var _fun31848_ip = 0;;) switch (_fun31848_ip) {
             case 0:
                 var2 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0) { // Original name: isRobloxSubgame, environment: var1
+    var3 = function arg0() {
         _fun31849: for (var _fun31849_ip = 0;;) switch (_fun31849_ip) {
             case 0:
                 var2 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var0 = function() { // Original name: _openRobloxURLWithRootPlaceId, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/roblox_subgame_detection/RobloxSubgameUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: keyForRobloxGame, environment: var1
+    var5 = function arg0() {
         _fun31853: for (var _fun31853_ip = 0;;) switch (_fun31853_ip) {
             case 0:
                 var1 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.keyForRobloxGame = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: hasRunningGameChanged, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun31854: for (var _fun31854_ip = 0;;) switch (_fun31854_ip) {
             case 0:
                 var3 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasRunningGameChanged = var5;
     var2.hasSubgameInfoChanged = var4;
-    var4 = function(arg0, arg1) { // Original name: updateRunningGameWithRobloxSubgameInfo, environment: var1
+    var4 = function arg0, arg1() {
         _fun31855: for (var _fun31855_ip = 0;;) switch (_fun31855_ip) {
             case 0:
                 var6 = arg0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateRunningGameWithRobloxSubgameInfo = var4;
-    var4 = function(arg0) { // Original name: convertMapToRobloxSubgameInfo, environment: var1
+    var4 = function arg0() {
         _fun31856: for (var _fun31856_ip = 0;;) switch (_fun31856_ip) {
             case 0:
                 var3 = arg0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.convertMapToRobloxSubgameInfo = var4;
-    var4 = function(arg0) { // Original name: getSubgameMetadata, environment: var1
+    var4 = function arg0() {
         _fun31857: for (var _fun31857_ip = 0;;) switch (_fun31857_ip) {
             case 0:
                 var5 = arg0;
@@ -743,7 +743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSubgameMetadata = var4;
-    var4 = function(arg0) { // Original name: maybeAddAdditionalGameMetadata, environment: var1
+    var4 = function arg0() {
         _fun31858: for (var _fun31858_ip = 0;;) switch (_fun31858_ip) {
             case 0:
                 var2 = arg0;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.maybeAddAdditionalGameMetadata = var4;
-    var4 = function(arg0) { // Original name: transformRobloxSubgameNames, environment: var1
+    var4 = function arg0() {
         _fun31859: for (var _fun31859_ip = 0;;) switch (_fun31859_ip) {
             case 0:
                 var5 = arg0;
@@ -878,7 +878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transformRobloxSubgameNames = var4;
-    var4 = function(arg0) { // Original name: maybeTransformRobloxSubgameIntoRobloxActivity, environment: var1
+    var4 = function arg0() {
         _fun31860: for (var _fun31860_ip = 0;;) switch (_fun31860_ip) {
             case 0:
                 var0 = arg0;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.maybeTransformRobloxSubgameIntoRobloxActivity = var4;
     var2.isRobloxSubgame = var3;
-    var3 = function(arg0) { // Original name: isRobloxSubgameApplication, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.thirdPartySkus;
         var1 = var2.some;
@@ -954,7 +954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isRobloxSubgameApplication = var3;
-    var3 = function() { // Original name: openRobloxURLWithRootPlaceId, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openRobloxURLWithRootPlaceId = var3;
-    var1 = function(arg0) { // Original name: maybeTransformRobloxSubgameToRoblox, environment: var1
+    var1 = function arg0() {
         _fun31864: for (var _fun31864_ip = 0;;) switch (_fun31864_ip) {
             case 0:
                 var3 = arg0;

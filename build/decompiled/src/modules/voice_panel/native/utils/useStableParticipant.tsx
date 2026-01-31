@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: isStableStreamParticipant, environment: var1
+    var5 = function arg0() {
         _fun110931: for (var _fun110931_ip = 0;;) switch (_fun110931_ip) {
             case 0:
                 var5 = arg0;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0) { // Original name: isStableUserParticipant, environment: var1
+    var4 = function arg0() {
         _fun110932: for (var _fun110932_ip = 0;;) switch (_fun110932_ip) {
             case 0:
                 var0 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: isStableActivityParticipant, environment: var1
+    var3 = function arg0() {
         _fun110933: for (var _fun110933_ip = 0;;) switch (_fun110933_ip) {
             case 0:
                 var0 = arg0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var0 = function(arg0, arg1) { // Original name: areStableParticipantsEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun110934: for (var _fun110934_ip = 0;;) switch (_fun110934_ip) {
             case 0:
                 var5 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/voice_panel/native/utils/useStableParticipant.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0, arg1, arg2) { // Original name: useStableParticipant, environment: var1
+    var6 = function arg0, arg1, arg2() {
         var8 = arg0;
         var7 = arg1;
         var6 = arg2;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isStableStreamParticipant = var5;
     var2.isStableUserParticipant = var4;
     var2.isStableActivityParticipant = var3;
-    var3 = function(arg0) { // Original name: isStableParticipantWithUser, environment: var1
+    var3 = function arg0() {
         _fun110937: for (var _fun110937_ip = 0;;) switch (_fun110937_ip) {
             case 0:
                 var3 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStableParticipantWithUser = var3;
-    var1 = function(arg0) { // Original name: stableParticipantHasVideo, environment: var1
+    var1 = function arg0() {
         _fun110938: for (var _fun110938_ip = 0;;) switch (_fun110938_ip) {
             case 0:
                 var2 = arg0;

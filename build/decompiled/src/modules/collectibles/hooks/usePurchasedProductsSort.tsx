@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'PURCHASED';
     var3[var7] = var6;
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1) { // Original name: productPurchaseStatus, environment: var1
+    var3 = function arg0, arg1() {
         _fun88109: for (var _fun88109_ip = 0;;) switch (_fun88109_ip) {
             case 0:
                 var1 = arg0;

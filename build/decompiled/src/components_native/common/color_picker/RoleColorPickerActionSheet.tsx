@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/color_picker/RoleColorPickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RoleColorPickerActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.color;
         var _closure2_slot0 = var5;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.yBZMsQ;
         var11 = var12.bind(var13)(var11);
         var8.text = var11;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var2 = _closure2_slot3;
             var1 = _closure1_slot7;
             var0 = undefined;

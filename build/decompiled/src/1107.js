@@ -9,16 +9,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function() { // Original name: eventOriginIntegration, environment: var0
+    var0 = function() {
         var0 = {};
         var2 = 'EventOrigin';
         var0.name = var2;
-        var2 = function() { // Original name: setupOnce, environment: var1
+        var2 = function() {
             var0 = undefined;
             return var0;
         };
         var0.setupOnce = var2;
-        var1 = function(arg0) { // Original name: processEvent, environment: var1
+        var1 = function arg0() {
             _fun12175: for (var _fun12175_ip = 0;;) switch (_fun12175_ip) {
                 case 0:
                     var0 = arg0;

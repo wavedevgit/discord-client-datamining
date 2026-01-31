@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var1.bind(var3)(var0);
                 _closure2_slot15 = var0;
-                var13 = function() { // Original name: hasUnsavedChanges, environment: var12
+                var13 = function() {
                     _fun115350: for (var _fun115350_ip = 0;;) switch (_fun115350_ip) {
                         case 0:
                             var0 = arguments[0];
@@ -1345,7 +1345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var17 = var17.emojiPreview;
                 var10.style = var17;
-                var17 = function() { // Original name: onPress, environment: var12
+                var17 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -1511,7 +1511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.placeholder = var23;
                 var9.onChange = var22;
                 var9.onFocus = var16;
-                var12 = function() { // Original name: onSubmitEditing, environment: var12
+                var12 = function() {
                     _fun115362: for (var _fun115362_ip = 0;;) switch (_fun115362_ip) {
                         case 0:
                             var0 = _closure2_slot5;

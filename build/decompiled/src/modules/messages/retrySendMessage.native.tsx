@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/retrySendMessage.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: retrySendMessage, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun75749: for (var _fun75749_ip = 0;;) switch (_fun75749_ip) {
             case 0:
                 var5 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[var11] = var13;
                 var11 = 'attachmentsToUpload';
                 var2[var11] = var12;
-                var11 = function(arg0, arg1, arg2) { // Original name: onAttachmentUploadError, environment: var10
+                var11 = function arg0, arg1, arg2() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 4;

@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/premium/sounds/soundmoji/native/views/SoundmojiActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: SoundmojiActionSheet, environment: var1
+            var1 = function arg0() {
                 _fun88713: for (var _fun88713_ip = 0;;) switch (_fun88713_ip) {
                     case 0:
                         var1 = arg0;

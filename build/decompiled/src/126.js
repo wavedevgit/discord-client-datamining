@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var2 = dependencyMap;
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: polyfillObjectProperty, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun2105: for (var _fun2105_ip = 0;;) switch (_fun2105_ip) {
             case 0:
                 var4 = arg0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.polyfillObjectProperty = var2;
-    var0 = function(arg0, arg1) { // Original name: polyfillGlobal, environment: var0
+    var0 = function arg0, arg1() {
         var4 = _closure1_slot3;
         var3 = _closure1_slot0;
         var0 = undefined;

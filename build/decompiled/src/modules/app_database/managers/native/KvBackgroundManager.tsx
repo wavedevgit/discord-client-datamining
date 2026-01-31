@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun112940: for (var _fun112940_ip = 0;;) switch (_fun112940_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun112942: for (var _fun112942_ip = 0;;) switch (_fun112942_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun112943: for (var _fun112943_ip = 0;;) switch (_fun112943_ip) {
             case 0:
             case 2: // try_start_0
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: KvBackgroundManager, environment: var5
+        var3 = function arg0() {
             _fun112947: for (var _fun112947_ip = 0;;) switch (_fun112947_ip) {
                 case 0:
                     var5 = this;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.hasConnected = var1;
                     var0.applicationActive = var1;
                     var1 = {};
-                    var3 = function(arg0) { // Original name: APP_STATE_UPDATE, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAppStateUpdate;
                         var0 = arg0;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.APP_STATE_UPDATE = var3;
-                    var3 = function(arg0) { // Original name: LOGOUT, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleLogout;
                         var0 = arg0;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.LOGOUT = var3;
-                    var3 = function(arg0) { // Original name: POST_CONNECTION_OPEN, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handlePostConnectionOpen;
                         var0 = arg0;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.POST_CONNECTION_OPEN = var3;
                     var0.actions = var1;
                     var1 = {};
-                    var3 = function(arg0) { // Original name: trimOrphanedChannels, environment: var2
+                    var3 = function arg0() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var2 = _closure1_slot4;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.trimOrphanedChannels = var3;
-                    var3 = function(arg0) { // Original name: deleteDeprecatedKeyspaces, environment: var2
+                    var3 = function arg0() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var2 = _closure1_slot4;
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.deleteDeprecatedKeyspaces = var3;
-                    var3 = function(arg0) { // Original name: trimLowDisk, environment: var2
+                    var3 = function arg0() {
                         var1 = arg0;
                         var _closure4_slot0 = var1;
                         var2 = _closure1_slot4;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.trimLowDisk = var3;
-                    var3 = function() { // Original name: deleteExtraDatabases, environment: var2
+                    var3 = function() {
                         var2 = _closure1_slot4;
                         var1 = undefined;
                         var0 = function*() { // Environment: var0
@@ -866,7 +866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.deleteExtraDatabases = var3;
-                    var2 = function() { // Original name: optimize, environment: var2
+                    var2 = function() {
                         var2 = _closure1_slot4;
                         var1 = undefined;
                         var0 = function*() { // Environment: var0
@@ -927,7 +927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleAppStateUpdate';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun112971: for (var _fun112971_ip = 0;;) switch (_fun112971_ip) {
                 case 0:
                     var1 = this;
@@ -963,7 +963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleLogout';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var1 = false;
             var0 = this;
             var0.hasConnected = var1;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handlePostConnectionOpen';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var1 = true;
             var0 = this;
             var0.hasConnected = var1;
@@ -1151,7 +1151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot2 = var6;
-        var6 = function() { // Original name: maybeCleanup, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot2;
             var2 = var3.apply;
@@ -1255,7 +1255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot1 = var6;
-        var6 = function() { // Original name: cleanupAsync, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -1356,7 +1356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: cleanDatabaseAsync, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var1 = function(arg0, arg1) { // Original name: unstable_createAnimatedComponentWithAllowlist, environment: var3
+    var1 = function arg0, arg1() {
         _fun5662: for (var _fun5662_ip = 0;;) switch (_fun5662_ip) {
             case 0:
                 var1 = arg0;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arg1;
                 var2 = var3.bind(var4)(var2);
                 var _closure2_slot1 = var2;
-                var0 = function(arg0) { // Original name: AnimatedComponent, environment: var0
+                var0 = function arg0() {
                     _fun5663: for (var _fun5663_ip = 0;;) switch (_fun5663_ip) {
                         case 0:
                             var5 = arg0;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.jsx;
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: createAnimatedComponent, environment: var3
+    var3 = function arg0() {
         var3 = _closure1_slot7;
         var2 = undefined;
         var1 = arg0;

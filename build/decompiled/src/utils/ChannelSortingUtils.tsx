@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: areTypesInSameSection, environment: var1
+    var3 = function arg0, arg1() {
         _fun115500: for (var _fun115500_ip = 0;;) switch (_fun115500_ip) {
             case 0:
                 var6 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getFirstChannelOfType, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun115501: for (var _fun115501_ip = 0;;) switch (_fun115501_ip) {
             case 0:
                 var8 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: getChannelPosition, environment: var1
+    var0 = function arg0, arg1() {
         _fun115503: for (var _fun115503_ip = 0;;) switch (_fun115503_ip) {
             case 0:
                 var2 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: hoverSameType, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/ChannelSortingUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.areTypesInSameSection = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getDropData, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun115507: for (var _fun115507_ip = 0;;) switch (_fun115507_ip) {
             case 0:
                 var7 = arg0;
@@ -867,7 +867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDropData = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getDnDUpdates, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun115508: for (var _fun115508_ip = 0;;) switch (_fun115508_ip) {
             case 0:
                 var5 = arg0;
@@ -880,7 +880,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot4 = var1;
                 var1 = new Array(0);
                 var8 = var10._categories;
-                var3 = function(arg0) { // Original name: generateUpdates, environment: var0
+                var3 = function arg0() {
                     _fun115509: for (var _fun115509_ip = 0;;) switch (_fun115509_ip) {
                         case 0:
                             var8 = arg0;
@@ -969,14 +969,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var1.oldOrdering = var8;
                             var1.newOrdering = var0;
-                            var8 = function(arg0) { // Original name: idGetter, environment: var7
+                            var8 = function arg0() {
                                 var0 = arg0;
                                 var0 = var0.channel;
                                 var0 = var0.id;
                                 return var0;
                             };
                             var1.idGetter = var8;
-                            var7 = function(arg0) { // Original name: existingPositionGetter, environment: var7
+                            var7 = function arg0() {
                                 var0 = arg0;
                                 var0 = var0.channel;
                                 var0 = var0.position;

@@ -30,12 +30,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _reportingObserverIntegration, environment: var1
+    var1 = function() {
         _fun11027: for (var _fun11027_ip = 0;;) switch (_fun11027_ip) {
             case 0:
                 var4 = undefined;
                 var3 = undefined;
-                var0 = function(arg0) { // Original name: handler, environment: var1
+                var0 = function arg0() {
                     _fun11028: for (var _fun11028_ip = 0;;) switch (_fun11028_ip) {
                         case 0:
                             var0 = undefined;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun11028
                             }
                         case 53:
-                            var3 = function(arg0) { // Original name: _loop, environment: var1
+                            var3 = function arg0() {
                                 var0 = arg0;
                                 var _closure4_slot0 = var0;
                                 var3 = _closure1_slot0;
@@ -238,7 +238,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ReportingObserver';
                 var0.name = var2;
-                var2 = function() { // Original name: setupOnce, environment: var1
+                var2 = function() {
                     _fun11031: for (var _fun11031_ip = 0;;) switch (_fun11031_ip) {
                         case 0:
                             var4 = _closure1_slot0;
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.setupOnce = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     var3 = _closure1_slot2;
                     var2 = var3.set;
                     var1 = arg0;

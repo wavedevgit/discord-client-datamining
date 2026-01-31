@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: zswap32, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         var2 = 24;
         var7 = var0 >>> var2;
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var2;
-    var2 = function() { // Original name: InflateState, environment: var0
+    var2 = function() {
         var2 = this;
         var1 = 0;
         var2.mode = var1;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var2;
-    var3 = function(arg0) { // Original name: inflateResetKeep, environment: var0
+    var3 = function arg0() {
         _fun94810: for (var _fun94810_ip = 0;;) switch (_fun94810_ip) {
             case 0:
                 var4 = arg0;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var3;
-    var5 = function(arg0) { // Original name: inflateReset, environment: var0
+    var5 = function arg0() {
         _fun94811: for (var _fun94811_ip = 0;;) switch (_fun94811_ip) {
             case 0:
                 var3 = arg0;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0, arg1) { // Original name: inflateReset2, environment: var0
+    var4 = function arg0, arg1() {
         _fun94812: for (var _fun94812_ip = 0;;) switch (_fun94812_ip) {
             case 0:
                 var4 = arg0;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var4;
-    var2 = function(arg0, arg1) { // Original name: inflateInit2, environment: var0
+    var2 = function arg0, arg1() {
         _fun94813: for (var _fun94813_ip = 0;;) switch (_fun94813_ip) {
             case 0:
                 var3 = arg0;
@@ -355,7 +355,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var2;
-    var6 = function(arg0) { // Original name: fixedtables, environment: var0
+    var6 = function arg0() {
         _fun94814: for (var _fun94814_ip = 0;;) switch (_fun94814_ip) {
             case 0:
                 var1 = arg0;
@@ -526,7 +526,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: updatewindow, environment: var0
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun94815: for (var _fun94815_ip = 0;;) switch (_fun94815_ip) {
             case 0:
                 var7 = arg1;
@@ -675,7 +675,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.inflateReset = var5;
     var1.inflateReset2 = var4;
     var1.inflateResetKeep = var3;
-    var3 = function(arg0) { // Original name: inflateInit, environment: var0
+    var3 = function arg0() {
         var3 = _closure1_slot10;
         var2 = undefined;
         var1 = arg0;
@@ -685,7 +685,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.inflateInit = var3;
     var1.inflateInit2 = var2;
-    var2 = function(arg0, arg1) { // Original name: inflate, environment: var0
+    var2 = function arg0, arg1() {
         _fun94817: for (var _fun94817_ip = 0;;) switch (_fun94817_ip) {
             case 0:
                 var106 = arg0;
@@ -5815,7 +5815,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.inflate = var2;
-    var2 = function(arg0) { // Original name: inflateEnd, environment: var0
+    var2 = function arg0() {
         _fun94818: for (var _fun94818_ip = 0;;) switch (_fun94818_ip) {
             case 0:
                 var1 = arg0;
@@ -5850,7 +5850,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.inflateEnd = var2;
-    var2 = function(arg0, arg1) { // Original name: inflateGetHeader, environment: var0
+    var2 = function arg0, arg1() {
         _fun94819: for (var _fun94819_ip = 0;;) switch (_fun94819_ip) {
             case 0:
                 var1 = arg0;
@@ -5888,7 +5888,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.inflateGetHeader = var2;
-    var0 = function(arg0, arg1) { // Original name: inflateSetDictionary, environment: var0
+    var0 = function arg0, arg1() {
         _fun94820: for (var _fun94820_ip = 0;;) switch (_fun94820_ip) {
             case 0:
                 var9 = arg0;

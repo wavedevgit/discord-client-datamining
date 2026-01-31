@@ -63,14 +63,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RolePermissionTemplatesActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.permissionsEdited;
         var _closure2_slot0 = var1;
         var1 = var0.onPermissionsChanged;
         var _closure2_slot1 = var1;
         var8 = var0.guildId;
-        var0 = function(arg0) { // Original name: saveTemplate, environment: var10
+        var0 = function arg0() {
             var2 = _closure2_slot1;
             var0 = undefined;
             var1 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var11[var6];
         var7 = var7.bind(var3)(var6);
         var6 = {};
-        var10 = function(arg0) { // Original name: onSelect, environment: var10
+        var10 = function arg0() {
             _fun116030: for (var _fun116030_ip = 0;;) switch (_fun116030_ip) {
                 case 0:
                     var2 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.p89ACt;
                     var4 = var5.bind(var6)(var4);
                     var0.confirmText = var4;
-                    var4 = function() { // Original name: onConfirm, environment: var3
+                    var4 = function() {
                         var2 = _closure2_slot2;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onConfirm = var4;
-                    var3 = function() { // Original name: onCancel, environment: var3
+                    var3 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 7;

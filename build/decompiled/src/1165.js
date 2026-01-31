@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: getDefaultTracePropagationTargets, environment: var3
+    var0 = function() {
         _fun12703: for (var _fun12703_ip = 0;;) switch (_fun12703_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var1 = function(arg0) { // Original name: getReactNativeTracingIntegration, environment: var3
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.getIntegrationByName;
         var0 = _closure1_slot2;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var4;
     var2.INTEGRATION_NAME = var5;
     var2.defaultReactNativeTracingOptions = var4;
-    var4 = function() { // Original name: reactNativeTracingIntegration, environment: var3
+    var4 = function() {
         _fun12705: for (var _fun12705_ip = 0;;) switch (_fun12705_ip) {
             case 0:
                 var6 = undefined;
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var4 = _closure1_slot2;
                 var0.name = var4;
-                var4 = function(arg0) { // Original name: setup, environment: var1
+                var4 = function arg0() {
                     _fun12708: for (var _fun12708_ip = 0;;) switch (_fun12708_ip) {
                         case 0:
                             var4 = arg0;
@@ -274,7 +274,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.setup = var4;
-                var4 = function(arg0) { // Original name: processEvent, environment: var1
+                var4 = function arg0() {
                     _fun12709: for (var _fun12709_ip = 0;;) switch (_fun12709_ip) {
                         case 0:
                             var0 = arg0;
@@ -313,7 +313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.processEvent = var4;
                 var0.options = var3;
                 var0.state = var2;
-                var1 = function(arg0) { // Original name: setCurrentRoute, environment: var1
+                var1 = function arg0() {
                     var1 = _closure2_slot0;
                     var0 = arg0;
                     var1.currentRoute = var0;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.reactNativeTracingIntegration = var4;
-    var3 = function() { // Original name: getCurrentReactNativeTracingIntegration, environment: var3
+    var3 = function() {
         _fun12711: for (var _fun12711_ip = 0;;) switch (_fun12711_ip) {
             case 0:
                 var3 = _closure1_slot0;

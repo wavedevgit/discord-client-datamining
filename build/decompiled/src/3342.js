@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var3 === var2;
         case 60:
             var _closure1_slot2 = var1;
-            var1 = function(arg0) { // Original name: ToPrimitive, environment: var0
+            var1 = function arg0() {
                 _fun28908: for (var _fun28908_ip = 0;;) switch (_fun28908_ip) {
                     case 0:
                         var0 = arg0;

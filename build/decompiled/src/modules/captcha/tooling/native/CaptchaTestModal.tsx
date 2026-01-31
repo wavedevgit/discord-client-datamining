@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'TEST_CAPTCHA';
     var6.TEST_CAPTCHA = var7;
     var _closure1_slot13 = var6;
-    var6 = function(arg0) { // Original name: CaptchaTestScreen, environment: var1
+    var6 = function arg0() {
         _fun86414: for (var _fun86414_ip = 0;;) switch (_fun86414_ip) {
             case 0:
                 var1 = arg0;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.value = var8;
                 var22 = _closure1_slot12;
                 var14.options = var22;
-                var22 = function(arg0) { // Original name: onChange, environment: var19
+                var22 = function arg0() {
                     _fun86419: for (var _fun86419_ip = 0;;) switch (_fun86419_ip) {
                         case 0:
                             var0 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.value = var20;
                 var20 = _closure1_slot10;
                 var14.options = var20;
-                var19 = function(arg0) { // Original name: onChange, environment: var19
+                var19 = function arg0() {
                     _fun86420: for (var _fun86420_ip = 0;;) switch (_fun86420_ip) {
                         case 0:
                             var0 = arg0;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/captcha/tooling/native/CaptchaTestModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: CaptchaTestModal, environment: var1
+    var1 = function() {
         var1 = _closure1_slot15;
         var3 = undefined;
         var6 = var1.bind(var3)();
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var6;
         var0 = function() { // Environment: var0
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = {};
                 var1 = _closure1_slot13;
                 var2 = var1.TEST_CAPTCHA;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4 = var5.bind(var6)(var4);
                 var1.headerLeft = var4;
-                var3 = function() { // Original name: render, environment: var3
+                var3 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot14;
                     var1 = undefined;

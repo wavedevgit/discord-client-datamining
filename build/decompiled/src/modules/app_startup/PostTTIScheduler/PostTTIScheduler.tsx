@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
     var3 = {};
-    var4 = function() { // Original name: resolve, environment: var1
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_startup/PostTTIScheduler/PostTTIScheduler.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: schedulePostTTIEvent, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.schedulePostTTIEvent = var3;
-    var1 = function() { // Original name: notifyAboutTTI, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = var2.resolve;
         var0 = null;

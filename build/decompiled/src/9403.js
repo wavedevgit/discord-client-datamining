@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var3;
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0, arg1) { // Original name: handlerOffsetDirection, environment: var0
+        var0 = function arg0, arg1() {
             _fun74835: for (var _fun74835_ip = 0;;) switch (_fun74835_ip) {
                 case 0:
                     var3 = arg0;

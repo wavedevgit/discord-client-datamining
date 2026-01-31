@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/screens/SmsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SmsScreen, environment: var1
+    var1 = function arg0() {
         _fun86381: for (var _fun86381_ip = 0;;) switch (_fun86381_ip) {
             case 0:
                 var0 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var11;
             case 906:
                 var4.loading = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var2 = _closure2_slot8;
                     var1 = _closure2_slot4;
                     var0 = undefined;

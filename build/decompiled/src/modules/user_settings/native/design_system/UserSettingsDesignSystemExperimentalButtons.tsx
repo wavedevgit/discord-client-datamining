@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemExperimentalButtons.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemExperimentalButtons, environment: var1
+    var1 = function() {
         var6 = _closure1_slot0;
         var12 = _closure1_slot2;
         var5 = 3;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'accessibilityHint': 'double-tap for more options',
             'iconOpticalOffsetMargin': 4294967290
         };
-        var24 = function() { // Original name: onPress, environment: var9
+        var24 = function() {
             var0 = undefined;
             return var0;
         };
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'icon': null,
             'isRound': true
         };
-        var24 = function() { // Original name: onPress, environment: var9
+        var24 = function() {
             var0 = undefined;
             return var0;
         };
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'iconPosition': 'end',
             'accessibilityLabel': 'Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
         };
-        var27 = function() { // Original name: onPress, environment: var9
+        var27 = function() {
             var0 = undefined;
             return var0;
         };
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var24 = var6.bind(var3)(var24);
         var28 = var24.Button;
         var24 = {};
-        var29 = function() { // Original name: onPress, environment: var9
+        var29 = function() {
             var0 = undefined;
             return var0;
         };
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var27 = var6.bind(var3)(var27);
         var28 = var27.Button;
         var27 = {};
-        var29 = function() { // Original name: onPress, environment: var9
+        var29 = function() {
             var0 = undefined;
             return var0;
         };
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var6.bind(var3)(var10);
         var24 = var10.PressableScale;
         var23 = {};
-        var10 = function() { // Original name: onPress, environment: var9
+        var10 = function() {
             var0 = undefined;
             return var0;
         };
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var27 = var12[var10];
         var27 = var11.bind(var3)(var27);
         var23.icon = var27;
-        var27 = function() { // Original name: onPress, environment: var9
+        var27 = function() {
             var0 = undefined;
             return var0;
         };
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var12[var10];
         var10 = var11.bind(var3)(var10);
         var5.icon = var10;
-        var9 = function() { // Original name: onPress, environment: var9
+        var9 = function() {
             var0 = undefined;
             return var0;
         };

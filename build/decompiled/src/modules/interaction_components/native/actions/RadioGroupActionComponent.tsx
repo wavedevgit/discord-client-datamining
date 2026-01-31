@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var18[var13];
                 var2 = var6.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: p, environment: var12
+                var0 = function() {
                     _fun113459: for (var _fun113459_ip = 0;;) switch (_fun113459_ip) {
                         case 0:
                             var0 = {};
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot7;
                 var0.__initData = var4;
                 var10 = var1.bind(var2)(var0);
-                var14 = function(arg0) { // Original name: onChange, environment: var12
+                var14 = function arg0() {
                     _fun113460: for (var _fun113460_ip = 0;;) switch (_fun113460_ip) {
                         case 0:
                             var1 = arg0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13["5uAtZN"];
                 var13 = var14.bind(var15)(var13);
                 var9.label = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure2_slot8;
                     var1 = undefined;
                     var0 = null;

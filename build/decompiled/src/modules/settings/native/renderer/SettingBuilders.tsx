@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/settings/native/renderer/SettingBuilders.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: createToggle, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.TOGGLE;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createToggle = var3;
-    var3 = function(arg0) { // Original name: createStatic, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.STATIC;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createStatic = var3;
-    var3 = function(arg0) { // Original name: createRoute, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.ROUTE;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createRoute = var3;
-    var3 = function(arg0) { // Original name: createPressable, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.PRESSABLE;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createPressable = var3;
-    var3 = function(arg0) { // Original name: createVolumeSlider, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.VOLUME_SLIDER;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createVolumeSlider = var3;
-    var3 = function(arg0) { // Original name: createSlider, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.SLIDER;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createSlider = var3;
-    var3 = function(arg0) { // Original name: createGuildSelector, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.GUILD_SELECTOR;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGuildSelector = var3;
-    var3 = function(arg0) { // Original name: createRadio, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.RADIO;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createRadio = var3;
-    var3 = function(arg0) { // Original name: createList, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.LIST;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createList = var3;
-    var1 = function(arg0) { // Original name: createSegmentedControl, environment: var1
+    var1 = function arg0() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.SEGMENTED_CONTROL;

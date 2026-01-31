@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_progress/native/components/ProgressItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ProgressItem, environment: var1
+    var1 = function arg0() {
         _fun80090: for (var _fun80090_ip = 0;;) switch (_fun80090_ip) {
             case 0:
                 var1 = arg0;

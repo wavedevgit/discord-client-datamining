@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: isChannelAccessDeniedBy, environment: var1
+    var3 = function arg0, arg1() {
         _fun24495: for (var _fun24495_ip = 0;;) switch (_fun24495_ip) {
             case 0:
                 var5 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/RolePermissionUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: hasViewChannelPermission, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot2;
         var0 = _closure1_slot3;
         var2 = var0.VIEW_CHANNEL;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasViewChannelPermission = var4;
     var2.isChannelAccessDeniedBy = var3;
-    var1 = function(arg0, arg1) { // Original name: isChannelAccessGrantedBy, environment: var1
+    var1 = function arg0, arg1() {
         _fun24497: for (var _fun24497_ip = 0;;) switch (_fun24497_ip) {
             case 0:
                 var6 = arg0;

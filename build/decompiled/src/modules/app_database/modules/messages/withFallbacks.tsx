@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun40090: for (var _fun40090_ip = 0;;) switch (_fun40090_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun40092: for (var _fun40092_ip = 0;;) switch (_fun40092_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: isSaveableChannel, environment: var1
+    var0 = function arg0() {
         _fun40093: for (var _fun40093_ip = 0;;) switch (_fun40093_ip) {
             case 0:
                 var2 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: addFallback, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun40094: for (var _fun40094_ip = 0;;) switch (_fun40094_ip) {
             case 0:
                 var4 = arg1;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: mergeInto, environment: var1
+    var0 = function arg0, arg1() {
         _fun40095: for (var _fun40095_ip = 0;;) switch (_fun40095_ip) {
             case 0:
                 var0 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_database/modules/messages/withFallbacks.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: withFallbacks, environment: var1
+    var1 = function arg0, arg1() {
         _fun40096: for (var _fun40096_ip = 0;;) switch (_fun40096_ip) {
             case 0:
                 var0 = arg0;

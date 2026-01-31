@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: extractTraceparentData, environment: var0
+    var2 = function arg0() {
         _fun8838: for (var _fun8838_ip = 0;;) switch (_fun8838_ip) {
             case 0:
                 var2 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var1.TRACEPARENT_REGEXP = var3;
     var1.extractTraceparentData = var2;
-    var2 = function() { // Original name: generateSentryTraceHeader, environment: var0
+    var2 = function() {
         _fun8839: for (var _fun8839_ip = 0;;) switch (_fun8839_ip) {
             case 0:
                 var0 = undefined;
@@ -174,7 +174,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.generateSentryTraceHeader = var2;
-    var2 = function() { // Original name: generateTraceparentHeader, environment: var0
+    var2 = function() {
         _fun8840: for (var _fun8840_ip = 0;;) switch (_fun8840_ip) {
             case 0:
                 var0 = undefined;
@@ -262,7 +262,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.generateTraceparentHeader = var2;
-    var2 = function(arg0, arg1) { // Original name: propagationContextFromHeaders, environment: var0
+    var2 = function arg0, arg1() {
         _fun8841: for (var _fun8841_ip = 0;;) switch (_fun8841_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -419,7 +419,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.propagationContextFromHeaders = var2;
-    var0 = function(arg0, arg1) { // Original name: shouldContinueTrace, environment: var0
+    var0 = function arg0, arg1() {
         _fun8842: for (var _fun8842_ip = 0;;) switch (_fun8842_ip) {
             case 0:
                 var2 = arg0;

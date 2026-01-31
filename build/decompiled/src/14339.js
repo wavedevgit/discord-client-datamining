@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun111899: for (var _fun111899_ip = 0;;) switch (_fun111899_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot9 = var4;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: CircularProgress, environment: var5
+        var3 = function() {
             _fun111903: for (var _fun111903_ip = 0;;) switch (_fun111903_ip) {
                 case 0:
                     var3 = this;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'polarToCartesian';
         var4.key = var0;
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: polarToCartesian, environment: var5
+        var0 = function arg0, arg1, arg2, arg3() {
             var2 = arg2;
             var1 = arg3;
             var0 = 90;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'circlePath';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: circlePath, environment: var5
+        var6 = function arg0, arg1, arg2, arg3, arg4() {
             _fun111906: for (var _fun111906_ip = 0;;) switch (_fun111906_ip) {
                 case 0:
                     var7 = arg0;
@@ -286,7 +286,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             _fun111907: for (var _fun111907_ip = 0;;) switch (_fun111907_ip) {
                 case 0:
                     var1 = this;

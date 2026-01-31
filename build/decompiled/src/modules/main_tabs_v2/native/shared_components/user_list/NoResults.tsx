@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NoResults, environment: var1
+    var1 = function arg0() {
         _fun72876: for (var _fun72876_ip = 0;;) switch (_fun72876_ip) {
             case 0:
                 var0 = arg0;

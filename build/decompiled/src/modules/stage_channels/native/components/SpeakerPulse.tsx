@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/SpeakerPulse.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SpeakerPulse, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var10 = var1.style;
         var1 = _closure1_slot9;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var11[var5];
         var9 = var2.bind(var3)(var1);
         var4 = var9.useAnimatedStyle;
-        var1 = function() { // Original name: T, environment: var0
+        var1 = function() {
             var0 = {};
             var2 = _closure2_slot1;
             var1 = var2.get;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var11[var5];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: k, environment: var0
+        var0 = function() {
             var0 = {};
             var2 = _closure2_slot2;
             var1 = var2.get;

@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0, arg1) { // Original name: _getTraceInfoFromScope, environment: var0
+    var0 = function arg0, arg1() {
         _fun9323: for (var _fun9323_ip = 0;;) switch (_fun9323_ip) {
             case 0:
                 var4 = arg1;

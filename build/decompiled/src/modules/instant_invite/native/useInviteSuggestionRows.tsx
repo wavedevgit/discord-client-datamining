@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/native/useInviteSuggestionRows.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: _default, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var7 = arg0;
         var3 = arg1;
         var6 = arg2;

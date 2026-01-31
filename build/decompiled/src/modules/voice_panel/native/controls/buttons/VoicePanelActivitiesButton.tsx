@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelActivitiesButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivitiesButton, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.props;
         var _closure2_slot0 = var1;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.ACTIVITIES_VOICE_LAUNCHER_BADGE;
         var0.contentType = var6;
         var0.latestVersion = var5;
-        var4 = function(arg0) { // Original name: children, environment: var4
+        var4 = function arg0() {
             _fun111611: for (var _fun111611_ip = 0;;) switch (_fun111611_ip) {
                 case 0:
                     var0 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var5[var0];
                     var1 = var1.bind(var3)(var0);
                     var0 = {};
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         var2 = _closure3_slot0;
                         var0 = _closure1_slot5;
                         var1 = var0.TAKE_ACTION;

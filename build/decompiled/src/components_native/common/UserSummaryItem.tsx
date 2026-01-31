@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/UserSummaryItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserSummaryItem, environment: var1
+    var1 = function arg0() {
         _fun69223: for (var _fun69223_ip = 0;;) switch (_fun69223_ip) {
             case 0:
                 var0 = arg0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 321:
                 var4 = new Array(0);
                 _closure2_slot9 = var4;
-                var14 = function() { // Original name: _loop, environment: var20
+                var14 = function() {
                     _fun69226: for (var _fun69226_ip = 0;;) switch (_fun69226_ip) {
                         case 0:
                             var2 = _closure2_slot10;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.id;
                             var2 = var4[var2];
                             var _closure3_slot1 = var2;
-                            var8 = function() { // Original name: o, environment: var1
+                            var8 = function() {
                                 _fun69227: for (var _fun69227_ip = 0;;) switch (_fun69227_ip) {
                                     case 0:
                                         var6 = arguments[0];

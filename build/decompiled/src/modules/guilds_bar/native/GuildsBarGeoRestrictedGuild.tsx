@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[0] = var7;
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildsBarGeoRestrictedGuild, environment: var1
+    var1 = function arg0() {
         _fun101138: for (var _fun101138_ip = 0;;) switch (_fun101138_ip) {
             case 0:
                 var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var7;
                 var1 = function() { // Environment: var1
                     var0 = {};
-                    var1 = function() { // Original name: onPress, environment: var1
+                    var1 = function() {
                         var2 = _closure1_slot1;
                         var8 = _closure1_slot2;
                         var0 = 8;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.J2TBi3;
                         var4 = var5.bind(var6)(var4);
                         var1.cancelText = var4;
-                        var4 = function() { // Original name: onCancel, environment: var4
+                        var4 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 10;

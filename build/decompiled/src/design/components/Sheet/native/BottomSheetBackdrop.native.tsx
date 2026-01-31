@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.Tap;
                 var10 = var6.bind(var8)();
                 var8 = var10.onEnd;
-                var6 = function() { // Original name: I, environment: var0
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 5;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var5[var19];
                 var12 = var2.bind(var4)(var8);
                 var10 = var12.useAnimatedStyle;
-                var8 = function() { // Original name: S, environment: var0
+                var8 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;

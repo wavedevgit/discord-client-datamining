@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function() { // Original name: vibrate, environment: var2
+    var3 = function() {
         _fun6157: for (var _fun6157_ip = 0;;) switch (_fun6157_ip) {
             case 0:
                 var0 = undefined;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.vibrate = var3;
-    var2 = function() { // Original name: cancel, environment: var2
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

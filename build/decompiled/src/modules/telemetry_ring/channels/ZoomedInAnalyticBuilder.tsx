@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: convertDeviceEventBreadcrumb, environment: var1
+    var0 = function arg0() {
         _fun96699: for (var _fun96699_ip = 0;;) switch (_fun96699_ip) {
             case 0:
                 var3 = arg0;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5.description;
                 var3 = var6.bind(var2)(var1);
             case 115:
-                var1 = function(arg0) { // Original name: formatDeviceMetadata, environment: var1
+                var1 = function arg0() {
                     _fun96700: for (var _fun96700_ip = 0;;) switch (_fun96700_ip) {
                         case 0:
                             var0 = global;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: resolveSocketKind, environment: var1
+    var0 = function arg0, arg1() {
         _fun96703: for (var _fun96703_ip = 0;;) switch (_fun96703_ip) {
             case 0:
                 var3 = arg0;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: buildSocketMessageIdentity, environment: var1
+    var0 = function arg0, arg1() {
         _fun96704: for (var _fun96704_ip = 0;;) switch (_fun96704_ip) {
             case 0:
                 var0 = arg0;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: buildWebsocketMessageProps, environment: var1
+    var0 = function arg0() {
         _fun96705: for (var _fun96705_ip = 0;;) switch (_fun96705_ip) {
             case 0:
                 var0 = arg0;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun96705
                 }
             case 72:
-                var4 = function(arg0) { // Original name: buildLegacyMessageIdentity, environment: var4
+                var4 = function arg0() {
                     _fun96706: for (var _fun96706_ip = 0;;) switch (_fun96706_ip) {
                         case 0:
                             var0 = arg0;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: coerceNumber, environment: var1
+    var0 = function arg0() {
         _fun96708: for (var _fun96708_ip = 0;;) switch (_fun96708_ip) {
             case 0:
                 var1 = arg0;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: coerceString, environment: var1
+    var0 = function arg0() {
         _fun96709: for (var _fun96709_ip = 0;;) switch (_fun96709_ip) {
             case 0:
                 var1 = arg0;
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: coerceNumberFromUnknown, environment: var1
+    var0 = function arg0() {
         _fun96710: for (var _fun96710_ip = 0;;) switch (_fun96710_ip) {
             case 0:
                 var0 = arg0;
@@ -1285,7 +1285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/telemetry_ring/channels/ZoomedInAnalyticBuilder.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: buildZoomedInAnalyticsEvent, environment: var1
+    var1 = function arg0() {
         _fun96720: for (var _fun96720_ip = 0;;) switch (_fun96720_ip) {
             case 0:
                 var2 = arg0;

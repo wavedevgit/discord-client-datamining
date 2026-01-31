@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot4 = var3;
-    var3 = function() { // Original name: joinPaths, environment: var1
+    var3 = function() {
         _fun17252: for (var _fun17252_ip = 0;;) switch (_fun17252_ip) {
             case 0:
                 var6 = undefined;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var3 = function(arg0, arg1) { // Original name: matchAgainstConfigs, environment: var1
+    var3 = function arg0, arg1() {
         _fun17254: for (var _fun17254_ip = 0;;) switch (_fun17254_ip) {
             case 0:
                 var0 = arg1;
@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = undefined;
                 var2 = arg0;
                 var _closure2_slot2 = var2;
-                var7 = function() { // Original name: _loop, environment: var1
+                var7 = function() {
                     _fun17255: for (var _fun17255_ip = 0;;) switch (_fun17255_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -353,7 +353,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1) { // Original name: createNormalizedConfigs, environment: var1
+    var3 = function arg0, arg1() {
         _fun17262: for (var _fun17262_ip = 0;;) switch (_fun17262_ip) {
             case 0:
                 var7 = arg0;
@@ -616,7 +616,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createConfigItem, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun17264: for (var _fun17264_ip = 0;;) switch (_fun17264_ip) {
             case 0:
                 var2 = arg2;
@@ -733,7 +733,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: findInitialRoute, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun17266: for (var _fun17266_ip = 0;;) switch (_fun17266_ip) {
             case 0:
                 var1 = arg0;
@@ -832,7 +832,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: createStateObject, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun17267: for (var _fun17267_ip = 0;;) switch (_fun17267_ip) {
             case 0:
                 var3 = arg0;
@@ -917,7 +917,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createNestedStateObject, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun17268: for (var _fun17268_ip = 0;;) switch (_fun17268_ip) {
             case 0:
                 var5 = arg0;
@@ -1072,7 +1072,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var3;
-    var3 = function(arg0, arg1) { // Original name: parseQueryParams, environment: var1
+    var3 = function arg0, arg1() {
         _fun17269: for (var _fun17269_ip = 0;;) switch (_fun17269_ip) {
             case 0:
                 var4 = arg0;
@@ -1158,7 +1158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var3;
-    var1 = function(arg0, arg1) { // Original name: getStateFromPath, environment: var1
+    var1 = function arg0, arg1() {
         _fun17271: for (var _fun17271_ip = 0;;) switch (_fun17271_ip) {
             case 0:
                 var5 = arg0;

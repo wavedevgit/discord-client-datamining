@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var10 = function() { // Original name: getTitle, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS;
     var1.parent = var9;
-    var9 = function() { // Original name: useObscuredContentFriendsDmSettingValue, environment: var8
+    var9 = function() {
         _fun88478: for (var _fun88478_ip = 0;;) switch (_fun88478_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTrailing = var9;
-    var8 = function() { // Original name: onObscuredContentFriendsDmOnPress, environment: var8
+    var8 = function() {
         _fun88479: for (var _fun88479_ip = 0;;) switch (_fun88479_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot3;
                 var8 = var8.bind(var4)();
                 var0.subtitle = var8;
-                var7 = function(arg0) { // Original name: handlePress, environment: var7
+                var7 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 4;

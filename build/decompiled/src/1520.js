@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: useFocusEffect, environment: var1
+    var1 = function arg0() {
         _fun17312: for (var _fun17312_ip = 0;;) switch (_fun17312_ip) {
             case 0:
                 var6 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 0:
                             var1 = false;
                             var _closure3_slot1 = var1;
-                            var3 = function() { // Original name: callback, environment: var0
+                            var3 = function() {
                                 _fun17314: for (var _fun17314_ip = 0;;) switch (_fun17314_ip) {
                                     case 0:
                                         var0 = _closure2_slot0;

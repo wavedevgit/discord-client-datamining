@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var3 = function() { // Original name: isReferralProgramPopoverSeen, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 3;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/referral_program/ReferralProgramUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getReferralTrialOfferExpirationCopy, environment: var1
+    var4 = function arg0() {
         _fun55222: for (var _fun55222_ip = 0;;) switch (_fun55222_ip) {
             case 0:
                 var6 = global;

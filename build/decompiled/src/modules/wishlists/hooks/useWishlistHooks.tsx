@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var10;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun86852: for (var _fun86852_ip = 0;;) switch (_fun86852_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun86854: for (var _fun86854_ip = 0;;) switch (_fun86854_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var4 = function(arg0) { // Original name: useFetchWishlist, environment: var3
+    var4 = function arg0() {
         _fun86855: for (var _fun86855_ip = 0;;) switch (_fun86855_ip) {
             case 0:
                 var1 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var4;
-    var0 = function(arg0) { // Original name: createWishlistItemFromCollectiblesProduct, environment: var3
+    var0 = function arg0() {
         _fun86859: for (var _fun86859_ip = 0;;) switch (_fun86859_ip) {
             case 0:
                 var2 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var1 = function(arg0) { // Original name: useFetchWishlistAndProfileInfoForUser, environment: var3
+    var1 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var5 = _closure1_slot0;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.WishlistItemSource = var6;
     var2.WishlistFetchSource = var5;
     var2.useFetchWishlist = var4;
-    var4 = function(arg0, arg1) { // Original name: useIsSkuInWishlist, environment: var3
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsSkuInWishlist = var4;
-    var4 = function(arg0) { // Original name: useShopAndWishlistData, environment: var3
+    var4 = function arg0() {
         _fun86866: for (var _fun86866_ip = 0;;) switch (_fun86866_ip) {
             case 0:
                 var1 = arg0;
@@ -840,7 +840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var11.bind(var12)(var2, var5);
                 var _closure2_slot3 = var2;
                 var5 = var3.id;
-                var3 = function(arg0) { // Original name: useValidateWishlistPopularSkus, environment: var0
+                var3 = function arg0() {
                     var6 = arg0;
                     var _closure3_slot0 = var6;
                     var4 = _closure1_slot4;
@@ -958,7 +958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var3.validatedSkuIds;
                 var _closure2_slot4 = var11;
                 var5 = var3.isValidating;
-                var3 = function(arg0, arg1) { // Original name: useFetchWishlistPopularProducts, environment: var0
+                var3 = function arg0, arg1() {
                     var4 = arg0;
                     var3 = var4.slice;
                     var2 = 0;
@@ -1167,7 +1167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShopAndWishlistData = var4;
-    var4 = function(arg0) { // Original name: useShopAndWishlistDisplayItems, environment: var3
+    var4 = function arg0() {
         _fun86882: for (var _fun86882_ip = 0;;) switch (_fun86882_ip) {
             case 0:
                 var1 = arg0;
@@ -1441,7 +1441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShopAndWishlistDisplayItems = var4;
-    var4 = function(arg0) { // Original name: useShouldShowWishlistInDMGifting, environment: var3
+    var4 = function arg0() {
         _fun86889: for (var _fun86889_ip = 0;;) switch (_fun86889_ip) {
             case 0:
                 var1 = arg0;
@@ -1628,7 +1628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldShowWishlistInDMGifting = var4;
-    var3 = function() { // Original name: useCurrentUserWishlist, environment: var3
+    var3 = function() {
         var2 = _closure1_slot20;
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: _typeof, environment: var0
+    var1 = function arg0() {
         _fun97270: for (var _fun97270_ip = 0;;) switch (_fun97270_ip) {
             case 0:
                 var1 = global;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: _defineProperties, environment: var0
+    var1 = function arg0, arg1() {
         _fun97273: for (var _fun97273_ip = 0;;) switch (_fun97273_ip) {
             case 0:
                 var12 = arg0;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1) { // Original name: _classPrivateFieldGet, environment: var0
+    var1 = function arg0, arg1() {
         _fun97274: for (var _fun97274_ip = 0;;) switch (_fun97274_ip) {
             case 0:
                 var3 = arg0;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: _classPrivateFieldSet, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun97275: for (var _fun97275_ip = 0;;) switch (_fun97275_ip) {
             case 0:
                 var3 = arg0;
@@ -264,7 +264,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: _classExtractFieldDescriptor, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun97276: for (var _fun97276_ip = 0;;) switch (_fun97276_ip) {
             case 0:
                 var2 = arg0;
@@ -300,7 +300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: _classPrivateFieldInitSpec, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun97277: for (var _fun97277_ip = 0;;) switch (_fun97277_ip) {
             case 0:
                 var3 = arg0;
@@ -334,7 +334,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var1;
-    var1 = function(arg0) { // Original name: toNumber, environment: var0
+    var1 = function arg0() {
         _fun97278: for (var _fun97278_ip = 0;;) switch (_fun97278_ip) {
             case 0:
                 var0 = arg0;
@@ -376,7 +376,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var1;
-    var1 = function(arg0) { // Original name: canonicalizeLocaleList, environment: var0
+    var1 = function arg0() {
         _fun97279: for (var _fun97279_ip = 0;;) switch (_fun97279_ip) {
             case 0:
                 var2 = arg0;
@@ -539,7 +539,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getPluralRules, environment: var0
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun97281: for (var _fun97281_ip = 0;;) switch (_fun97281_ip) {
             case 0:
                 var1 = arg0;
@@ -550,7 +550,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot2 = var1;
                 var1 = arg3;
                 var _closure2_slot3 = var1;
-                var1 = function(arg0) { // Original name: findLocale, environment: var0
+                var1 = function arg0() {
                     _fun97282: for (var _fun97282_ip = 0;;) switch (_fun97282_ip) {
                         case 0:
                             var4 = arg0;
@@ -637,7 +637,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2 instanceof Object ? var2 : var3;
                 var _closure2_slot9 = var2;
                 var2 = function() { // Environment: var0
-                    var0 = function() { // Original name: PluralRules, environment: var2
+                    var0 = function() {
                         _fun97284: for (var _fun97284_ip = 0;;) switch (_fun97284_ip) {
                             case 0:
                                 var4 = this;
@@ -853,7 +853,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = {};
                     var3 = 'resolvedOptions';
                     var1.key = var3;
-                    var3 = function() { // Original name: resolvedOptions, environment: var2
+                    var3 = function() {
                         _fun97285: for (var _fun97285_ip = 0;;) switch (_fun97285_ip) {
                             case 0:
                                 var7 = this;
@@ -919,7 +919,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = {};
                     var3 = 'select';
                     var1.key = var3;
-                    var3 = function(arg0) { // Original name: select, environment: var2
+                    var3 = function arg0() {
                         _fun97286: for (var _fun97286_ip = 0;;) switch (_fun97286_ip) {
                             case 0:
                                 var3 = arg0;
@@ -997,7 +997,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = {};
                     var3 = 'selectRange';
                     var1.key = var3;
-                    var3 = function(arg0, arg1) { // Original name: selectRange, environment: var2
+                    var3 = function arg0, arg1() {
                         _fun97287: for (var _fun97287_ip = 0;;) switch (_fun97287_ip) {
                             case 0:
                                 var1 = arg0;
@@ -1126,7 +1126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = {};
                     var3 = 'supportedLocalesOf';
                     var1.key = var3;
-                    var2 = function(arg0) { // Original name: supportedLocalesOf, environment: var2
+                    var2 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = undefined;
                         var0 = arg0;

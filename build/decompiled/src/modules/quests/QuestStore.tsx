@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun46462: for (var _fun46462_ip = 0;;) switch (_fun46462_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot47 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun46465: for (var _fun46465_ip = 0;;) switch (_fun46465_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot48 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun46467: for (var _fun46467_ip = 0;;) switch (_fun46467_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot49 = var0;
-    var1 = function() { // Original name: initializeState, environment: var3
+    var1 = function() {
         var0 = false;
         var _closure1_slot10 = var0;
         var _closure1_slot11 = var0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot50 = var1;
-    var0 = function(arg0, arg1) { // Original name: updateQuestData, environment: var3
+    var0 = function arg0, arg1() {
         _fun46469: for (var _fun46469_ip = 0;;) switch (_fun46469_ip) {
             case 0:
                 var3 = arg0;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot51 = var0;
-    var0 = function(arg0, arg1) { // Original name: _addRewardCode, environment: var3
+    var0 = function arg0, arg1() {
         var0 = global;
         var3 = var0.Map;
         var6 = _closure1_slot28;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot52 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateQuestRewardData, environment: var3
+    var0 = function arg0, arg1() {
         _fun46471: for (var _fun46471_ip = 0;;) switch (_fun46471_ip) {
             case 0:
                 var3 = arg0;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot53 = var0;
-    var0 = function(arg0) { // Original name: maybeDeleteQuestHeartbeatFailure, environment: var3
+    var0 = function arg0() {
         _fun46472: for (var _fun46472_ip = 0;;) switch (_fun46472_ip) {
             case 0:
                 var2 = arg0;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot54 = var0;
-    var0 = function(arg0) { // Original name: removeQuestIdFromIsEnrolling, environment: var3
+    var0 = function arg0() {
         var0 = global;
         var3 = var0.Set;
         var4 = _closure1_slot22;
@@ -973,7 +973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot55 = var0;
-    var0 = function(arg0) { // Original name: removeQuestIdFromIsDismissing, environment: var3
+    var0 = function arg0() {
         var0 = global;
         var3 = var0.Set;
         var4 = _closure1_slot25;
@@ -994,7 +994,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot56 = var0;
-    var0 = function(arg0) { // Original name: resolveResponseTtl, environment: var3
+    var0 = function arg0() {
         _fun46475: for (var _fun46475_ip = 0;;) switch (_fun46475_ip) {
             case 0:
                 var1 = arg0;
@@ -1027,10 +1027,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot57 = var0;
-    var0 = function() { // Original name: _runExpirationCheck, environment: var3
+    var0 = function() {
         _fun46476: for (var _fun46476_ip = 0;;) switch (_fun46476_ip) {
             case 0:
-                var2 = function() { // Original name: updateExpiredQuestsMap, environment: var1
+                var2 = function() {
                     _fun46477: for (var _fun46477_ip = 0;;) switch (_fun46477_ip) {
                         case 0:
                             var0 = false;
@@ -1168,7 +1168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot58 = var0;
-    var0 = function() { // Original name: _stopExpirationChecker, environment: var3
+    var0 = function() {
         _fun46480: for (var _fun46480_ip = 0;;) switch (_fun46480_ip) {
             case 0:
                 var2 = _closure1_slot41;
@@ -1269,7 +1269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: QuestStore, environment: var5
+        var3 = function() {
             _fun46482: for (var _fun46482_ip = 0;;) switch (_fun46482_ip) {
                 case 0:
                     var3 = this;
@@ -1317,7 +1317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'quests';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -1327,7 +1327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'excludedQuests';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -1336,7 +1336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'claimedQuests';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -1345,7 +1345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingCurrentQuests';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -1354,7 +1354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingClaimedQuests';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -1363,7 +1363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingQuestPreview';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot26;
             var1 = var2.has;
             var0 = arg0;
@@ -1375,7 +1375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastFetchedCurrentQuests';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -1384,7 +1384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lastFetchedQuestToDeliver';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -1393,7 +1393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingQuestToDeliver';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -1402,7 +1402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingQuestToDeliverByPlacement';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun46492: for (var _fun46492_ip = 0;;) switch (_fun46492_ip) {
                 case 0:
                     var4 = _closure1_slot12;
@@ -1434,7 +1434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'questDeliveryOverride';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun46493: for (var _fun46493_ip = 0;;) switch (_fun46493_ip) {
                 case 0:
                     var2 = _closure1_slot17;
@@ -1459,7 +1459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'questToDeliverForPlacement';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot33;
             return var0;
         };
@@ -1468,7 +1468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'questEnrollmentBlockedUntil';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot36;
             return var0;
         };
@@ -1477,7 +1477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'questAdDecisionByPlacement';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot37;
             return var0;
         };
@@ -1486,7 +1486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchQuestPreviewError';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot45;
             var1 = var2.get;
             var0 = arg0;
@@ -1498,7 +1498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isEnrolling';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot22;
             var1 = var2.has;
             var0 = arg0;
@@ -1510,7 +1510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isClaimingReward';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot23;
             var1 = var2.has;
             var0 = arg0;
@@ -1522,7 +1522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingRewardCode';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot24;
             var1 = var2.has;
             var0 = arg0;
@@ -1534,7 +1534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isDismissingContent';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot25;
             var1 = var2.has;
             var0 = arg0;
@@ -1546,7 +1546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRewardCode';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot28;
             var1 = var2.get;
             var0 = arg0;
@@ -1558,7 +1558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRewards';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot29;
             var1 = var2.get;
             var0 = arg0;
@@ -1570,7 +1570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStreamHeartbeatFailure';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot30;
             var1 = var2.get;
             var0 = arg0;
@@ -1582,7 +1582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getQuest';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot17;
             var1 = var2.get;
             var0 = arg0;
@@ -1594,7 +1594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getQuestConfig';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot16;
             var1 = var2.get;
             var0 = arg0;
@@ -1606,7 +1606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'questConfigs';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -1615,7 +1615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isProgressingOnDesktop';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot27;
             var1 = var2.has;
             var0 = arg0;
@@ -1627,7 +1627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'selectedTaskPlatform';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun46509: for (var _fun46509_ip = 0;;) switch (_fun46509_ip) {
                 case 0:
                     var2 = _closure1_slot32;
@@ -1651,7 +1651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOptimisticProgress';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun46510: for (var _fun46510_ip = 0;;) switch (_fun46510_ip) {
                 case 0:
                     var2 = _closure1_slot40;
@@ -1678,7 +1678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getExpiredQuestsMap';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot35;
             return var0;
         };
@@ -1687,7 +1687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isQuestExpired';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun46512: for (var _fun46512_ip = 0;;) switch (_fun46512_ip) {
                 case 0:
                     var2 = _closure1_slot35;
@@ -1711,7 +1711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getQuestLoadedViaPreview';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot38;
             var1 = var2.get;
             var0 = arg0;
@@ -1723,7 +1723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingQuestHomeTakeover';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot43;
             return var0;
         };
@@ -1732,7 +1732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getQuestHomeTakeoverConfig';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot44;
             return var0;
         };
@@ -1741,7 +1741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastFetchedQuestHomeTakeover';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot42;
             return var0;
         };
@@ -1750,7 +1750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingEarnedQuestToDeliver';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -1759,7 +1759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingEarnedQuestToDeliverByPlacement';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun46518: for (var _fun46518_ip = 0;;) switch (_fun46518_ip) {
                 case 0:
                     var4 = _closure1_slot15;
@@ -1791,7 +1791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'earnedQuestForPlacement';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot34;
             return var0;
         };
@@ -1807,7 +1807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function() { // Original name: handleLogout, environment: var3
+    var6 = function() {
         var2 = _closure1_slot59;
         var0 = undefined;
         var2 = var2.bind(var0)();
@@ -1816,14 +1816,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var6;
-    var6 = function() { // Original name: handleFetchCurrentQuestsBegin, environment: var3
+    var6 = function() {
         var0 = true;
         _closure1_slot10 = var0;
         var0 = undefined;
         return var0;
     };
     var1.QUESTS_FETCH_CURRENT_QUESTS_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchCurrentQuestsSuccess, environment: var3
+    var6 = function arg0() {
         _fun46522: for (var _fun46522_ip = 0;;) switch (_fun46522_ip) {
             case 0:
                 var0 = arg0;
@@ -2067,7 +2067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_FETCH_CURRENT_QUESTS_SUCCESS = var6;
-    var6 = function() { // Original name: handleFetchCurrentQuestsFailure, environment: var3
+    var6 = function() {
         var0 = 0;
         _closure1_slot20 = var0;
         var0 = false;
@@ -2076,14 +2076,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_CURRENT_QUESTS_FAILURE = var6;
-    var6 = function() { // Original name: handleFetchClaimedQuestsBegin, environment: var3
+    var6 = function() {
         var0 = true;
         _closure1_slot13 = var0;
         var0 = undefined;
         return var0;
     };
     var1.QUESTS_FETCH_CLAIMED_QUESTS_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchClaimedQuestsSuccess, environment: var3
+    var6 = function arg0() {
         _fun46525: for (var _fun46525_ip = 0;;) switch (_fun46525_ip) {
             case 0:
                 var0 = arg0;
@@ -2129,14 +2129,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS = var6;
-    var6 = function() { // Original name: handleFetchClaimedQuestsFailure, environment: var3
+    var6 = function() {
         var0 = false;
         _closure1_slot13 = var0;
         var0 = undefined;
         return var0;
     };
     var1.QUESTS_FETCH_CLAIMED_QUESTS_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestToDeliverBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.placement;
         var2 = true;
@@ -2160,7 +2160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestToDeliverSuccess, environment: var3
+    var6 = function arg0() {
         _fun46528: for (var _fun46528_ip = 0;;) switch (_fun46528_ip) {
             case 0:
                 var0 = arg0;
@@ -2287,7 +2287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestToDeliverFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.placement;
         var2 = _closure1_slot33;
@@ -2318,7 +2318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleFetchEarnedQuestToDeliverBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.content;
         var2 = true;
@@ -2342,7 +2342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchEarnedQuestToDeliverSuccess, environment: var3
+    var6 = function arg0() {
         _fun46531: for (var _fun46531_ip = 0;;) switch (_fun46531_ip) {
             case 0:
                 var0 = arg0;
@@ -2391,7 +2391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleFetchEarnedQuestToDeliverFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.content;
         var2 = _closure1_slot34;
@@ -2418,7 +2418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestPreviewBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.questId;
         var1 = global;
@@ -2454,7 +2454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_PREVIEW_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestPreviewSuccess, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.questId;
         var3 = var0.quest;
@@ -2534,7 +2534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_PREVIEW_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestPreviewFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var2 = var0.error;
@@ -2571,7 +2571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_PREVIEW_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleSendHeartbeatSuccess, environment: var3
+    var6 = function arg0() {
         _fun46536: for (var _fun46536_ip = 0;;) switch (_fun46536_ip) {
             case 0:
                 var0 = arg0;
@@ -2599,7 +2599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_SEND_HEARTBEAT_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleSendHeartbeatFailure, environment: var3
+    var6 = function arg0() {
         _fun46537: for (var _fun46537_ip = 0;;) switch (_fun46537_ip) {
             case 0:
                 var0 = arg0;
@@ -2650,7 +2650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_SEND_HEARTBEAT_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleEnrollBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var0 = global;
@@ -2672,7 +2672,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_ENROLL_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleEnrollSuccess, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var1 = var0.enrolledQuestUserStatus;
         var5 = _closure1_slot51;
@@ -2687,7 +2687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_ENROLL_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleEnrollFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.questId;
         var1 = _closure1_slot55;
@@ -2696,7 +2696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_ENROLL_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleFetchRewardCodeBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var0 = global;
@@ -2718,7 +2718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_REWARD_CODE_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchRewardCodeSuccess, environment: var3
+    var6 = function arg0() {
         _fun46542: for (var _fun46542_ip = 0;;) switch (_fun46542_ip) {
             case 0:
                 var0 = arg0;
@@ -2785,7 +2785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_FETCH_REWARD_CODE_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleFetchRewardCodeFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var0 = global;
@@ -2807,7 +2807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_REWARD_CODE_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleClaimRewardBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var0 = global;
@@ -2829,7 +2829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_CLAIM_REWARD_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleClaimRewardSuccess, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var2 = var0.entitlements;
@@ -2854,7 +2854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_CLAIM_REWARD_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleClaimRewardFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var0 = global;
@@ -2876,7 +2876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_CLAIM_REWARD_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleDismissContentBegin, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.questId;
         var0 = global;
@@ -2898,7 +2898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_DISMISS_CONTENT_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleDismissContentSuccess, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var1 = var0.dismissedQuestUserStatus;
         var5 = _closure1_slot51;
@@ -2913,7 +2913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_DISMISS_CONTENT_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleDismissContentFailure, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.questId;
         var1 = _closure1_slot56;
@@ -2922,7 +2922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_DISMISS_CONTENT_FAILURE = var6;
-    var6 = function(arg0) { // Original name: handleQuestUserStatusUpdate, environment: var3
+    var6 = function arg0() {
         _fun46550: for (var _fun46550_ip = 0;;) switch (_fun46550_ip) {
             case 0:
                 var0 = arg0;
@@ -3037,7 +3037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_USER_STATUS_UPDATE = var6;
-    var6 = function(arg0) { // Original name: handleStreamClose, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.streamKey;
         var1 = _closure1_slot54;
@@ -3046,7 +3046,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.STREAM_CLOSE = var6;
-    var6 = function(arg0) { // Original name: handleDismissProgressTrackingFailureNotice, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.streamKey;
         var1 = _closure1_slot54;
@@ -3055,7 +3055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE = var6;
-    var6 = function(arg0) { // Original name: handlePreviewUpdateSuccess, environment: var3
+    var6 = function arg0() {
         _fun46553: for (var _fun46553_ip = 0;;) switch (_fun46553_ip) {
             case 0:
                 var0 = arg0;
@@ -3165,7 +3165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_PREVIEW_UPDATE_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleDeliveryOverride, environment: var3
+    var6 = function arg0() {
         _fun46554: for (var _fun46554_ip = 0;;) switch (_fun46554_ip) {
             case 0:
                 var0 = arg0;
@@ -3185,7 +3185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_DELIVERY_OVERRIDE = var6;
-    var6 = function(arg0) { // Original name: handleSelectTaskPlatform, environment: var3
+    var6 = function arg0() {
         _fun46555: for (var _fun46555_ip = 0;;) switch (_fun46555_ip) {
             case 0:
                 var0 = arg0;
@@ -3225,7 +3225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_SELECT_TASK_PLATFORM = var6;
-    var6 = function(arg0) { // Original name: handleUpdateOptimisticProgress, environment: var3
+    var6 = function arg0() {
         _fun46556: for (var _fun46556_ip = 0;;) switch (_fun46556_ip) {
             case 0:
                 var0 = arg0;
@@ -3263,7 +3263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_UPDATE_OPTIMISTIC_PROGRESS = var6;
-    var6 = function(arg0) { // Original name: handleResetOptimisticProgress, environment: var3
+    var6 = function arg0() {
         _fun46557: for (var _fun46557_ip = 0;;) switch (_fun46557_ip) {
             case 0:
                 var0 = arg0;
@@ -3290,7 +3290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_RESET_OPTIMISTIC_PROGRESS = var6;
-    var6 = function(arg0) { // Original name: handleUserCompletionUpdate, environment: var3
+    var6 = function arg0() {
         _fun46558: for (var _fun46558_ip = 0;;) switch (_fun46558_ip) {
             case 0:
                 var0 = arg0;
@@ -3321,14 +3321,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.QUESTS_USER_COMPLETION_UPDATE = var6;
-    var6 = function() { // Original name: handleFetchQuestHomeTakeoverBegin, environment: var3
+    var6 = function() {
         var0 = true;
         _closure1_slot43 = var0;
         var0 = undefined;
         return var0;
     };
     var1.QUESTS_FETCH_QUEST_HOME_TAKEOVER_BEGIN = var6;
-    var6 = function(arg0) { // Original name: handleFetchQuestHomeTakeoverSuccess, environment: var3
+    var6 = function arg0() {
         var0 = false;
         _closure1_slot43 = var0;
         var0 = global;
@@ -3343,7 +3343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.QUESTS_FETCH_QUEST_HOME_TAKEOVER_SUCCESS = var6;
-    var6 = function() { // Original name: handleFetchQuestHomeTakeoverFailure, environment: var3
+    var6 = function() {
         var0 = false;
         _closure1_slot43 = var0;
         var0 = undefined;

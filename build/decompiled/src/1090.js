@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: isSpotlightInteraction, environment: var1
+    var3 = function arg0() {
         _fun11990: for (var _fun11990_ip = 0;;) switch (_fun11990_ip) {
             case 0:
                 var0 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var5 = var5.bind(var0)(var4);
     var4 = var5.defineIntegration;
-    var1 = function() { // Original name: _spotlightIntegration, environment: var1
+    var1 = function() {
         _fun11992: for (var _fun11992_ip = 0;;) switch (_fun11992_ip) {
             case 0:
                 var4 = undefined;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'SpotlightBrowser';
                 var0.name = var2;
-                var2 = function() { // Original name: setup, environment: var1
+                var2 = function() {
                     _fun11993: for (var _fun11993_ip = 0;;) switch (_fun11993_ip) {
                         case 0:
                             var3 = _closure1_slot0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.setup = var2;
-                var2 = function(arg0) { // Original name: processEvent, environment: var1
+                var2 = function arg0() {
                     _fun11994: for (var _fun11994_ip = 0;;) switch (_fun11994_ip) {
                         case 0:
                             var1 = arg0;
@@ -184,9 +184,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.processEvent = var2;
-                var1 = function(arg0) { // Original name: afterAllSetup, environment: var1
+                var1 = function arg0() {
                     var3 = _closure2_slot0;
-                    var2 = function(arg0, arg1) { // Original name: setupSidecarForwarding, environment: var0
+                    var2 = function arg0, arg1() {
                         var4 = arg0;
                         var0 = arg1;
                         var _closure4_slot0 = var0;

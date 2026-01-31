@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: makeRequest, environment: var3
+    var0 = function arg0, arg1, arg2() {
         var4 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.bind(var0)(var6);
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: get, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.get = var6;
-    var6 = function(arg0) { // Original name: post, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.post = var6;
-    var6 = function(arg0) { // Original name: put, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.put = var6;
-    var6 = function(arg0) { // Original name: patch, environment: var3
+    var6 = function arg0() {
         var4 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.patch = var6;
-    var3 = function(arg0) { // Original name: del, environment: var3
+    var3 = function arg0() {
         var4 = _closure1_slot4;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;

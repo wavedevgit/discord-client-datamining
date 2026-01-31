@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: UserResult, environment: var1
+    var0 = function arg0() {
         _fun110144: for (var _fun110144_ip = 0;;) switch (_fun110144_ip) {
             case 0:
                 var1 = arg0;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: UserResultWithChannel, environment: var1
+    var0 = function arg0() {
         var4 = arg0;
         var0 = var4.user;
         var _closure2_slot0 = var0;

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/UserSettingsProtoUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getProtoFieldClass, environment: var1
+    var3 = function arg0, arg1() {
         _fun15559: for (var _fun15559_ip = 0;;) switch (_fun15559_ip) {
             case 0:
                 var4 = arg1;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getProtoFieldClass = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createModifiedProto, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun15561: for (var _fun15561_ip = 0;;) switch (_fun15561_ip) {
             case 0:
                 var4 = arg0;

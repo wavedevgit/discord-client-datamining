@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var4.shouldBeUseWeb;
             var6 = var1.bind(var4)();
             var1 = function() { // Environment: var3
-                var3 = function() { // Original name: JSPropsUpdaterPaper, environment: var4
+                var3 = function() {
                     var2 = this;
                     var4 = _closure1_slot3;
                     var3 = _closure2_slot0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'addOnJSPropsChangeListener';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: addOnJSPropsChangeListener, environment: var4
+                var1 = function arg0() {
                     _fun33896: for (var _fun33896_ip = 0;;) switch (_fun33896_ip) {
                         case 0:
                             var4 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var0._reanimatedEventEmitter;
                             var2 = var3.addListener;
                             var1 = 'onReanimatedPropsChange';
-                            var0 = function(arg0) { // Original name: listener, environment: var0
+                            var0 = function arg0() {
                                 _fun33897: for (var _fun33897_ip = 0;;) switch (_fun33897_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'removeOnJSPropsChangeListener';
                 var0.key = var5;
-                var4 = function(arg0) { // Original name: removeOnJSPropsChangeListener, environment: var4
+                var4 = function arg0() {
                     _fun33898: for (var _fun33898_ip = 0;;) switch (_fun33898_ip) {
                         case 0:
                             var1 = arg0;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.code = var8;
             var _closure1_slot6 = var4;
             var4 = function() { // Environment: var3
-                var3 = function() { // Original name: JSPropsUpdaterFabric, environment: var4
+                var3 = function() {
                     _fun33900: for (var _fun33900_ip = 0;;) switch (_fun33900_ip) {
                         case 0:
                             var6 = _closure1_slot3;
@@ -186,7 +186,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun33900
                             }
                         case 36:
-                            var7 = function(arg0, arg1) { // Original name: updater, environment: var2
+                            var7 = function arg0, arg1() {
                                 _fun33901: for (var _fun33901_ip = 0;;) switch (_fun33901_ip) {
                                     case 0:
                                         var0 = _closure2_slot0;
@@ -215,7 +215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var10[var8];
                             var4 = var9.bind(var0)(var3);
                             var3 = var4.runOnUIImmediately;
-                            var2 = function() { // Original name: pnpm_JSPropsUpdaterTs1, environment: var2
+                            var2 = function() {
                                 var1 = _closure1_slot0;
                                 var0 = function(arg0, arg1) { // Environment: var0
                                     var2 = _closure1_slot1;
@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'addOnJSPropsChangeListener';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: addOnJSPropsChangeListener, environment: var4
+                var1 = function arg0() {
                     _fun33904: for (var _fun33904_ip = 0;;) switch (_fun33904_ip) {
                         case 0:
                             var3 = arg0;
@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'removeOnJSPropsChangeListener';
                 var0.key = var5;
-                var4 = function(arg0) { // Original name: removeOnJSPropsChangeListener, environment: var4
+                var4 = function arg0() {
                     _fun33905: for (var _fun33905_ip = 0;;) switch (_fun33905_ip) {
                         case 0:
                             var2 = arg0;
@@ -349,7 +349,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 267:
             var3 = function() { // Environment: var3
                 var3 = _closure1_slot4;
-                var2 = function() { // Original name: JSPropsUpdaterWeb, environment: var4
+                var2 = function() {
                     var3 = _closure1_slot3;
                     var2 = _closure2_slot0;
                     var0 = undefined;
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'addOnJSPropsChangeListener';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: addOnJSPropsChangeListener, environment: var4
+                var1 = function arg0() {
                     var0 = undefined;
                     return var0;
                 };
@@ -371,7 +371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'removeOnJSPropsChangeListener';
                 var0.key = var5;
-                var4 = function(arg0) { // Original name: removeOnJSPropsChangeListener, environment: var4
+                var4 = function arg0() {
                     var0 = undefined;
                     return var0;
                 };

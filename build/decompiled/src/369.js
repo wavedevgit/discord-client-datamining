@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5456: for (var _fun5456_ip = 0;;) switch (_fun5456_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun5459: for (var _fun5459_ip = 0;;) switch (_fun5459_ip) {
             case 0:
                 var4 = arg0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: processColor, environment: var1
+    var0 = function arg0() {
         _fun5461: for (var _fun5461_ip = 0;;) switch (_fun5461_ip) {
             case 0:
                 var1 = arg0;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: isRgbaValue, environment: var1
+    var0 = function arg0() {
         _fun5462: for (var _fun5462_ip = 0;;) switch (_fun5462_ip) {
             case 0:
                 var1 = arg0;
@@ -281,7 +281,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: AnimatedColor, environment: var5
+        var3 = function arg0, arg1() {
             _fun5464: for (var _fun5464_ip = 0;;) switch (_fun5464_ip) {
                 case 0:
                     var3 = arg0;
@@ -502,7 +502,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'setValue';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: setValue, environment: var5
+        var0 = function arg0() {
             _fun5465: for (var _fun5465_ip = 0;;) switch (_fun5465_ip) {
                 case 0:
                     var3 = this;
@@ -661,7 +661,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'setOffset';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: setOffset, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var1 = this;
             var4 = var1.r;
@@ -688,7 +688,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'flattenOffset';
         var4.key = var6;
-        var6 = function() { // Original name: flattenOffset, environment: var5
+        var6 = function() {
             var0 = this;
             var2 = var0.r;
             var1 = var2.flattenOffset;
@@ -710,7 +710,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'extractOffset';
         var4.key = var6;
-        var6 = function() { // Original name: extractOffset, environment: var5
+        var6 = function() {
             var0 = this;
             var2 = var0.r;
             var1 = var2.extractOffset;
@@ -732,7 +732,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'stopAnimation';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: stopAnimation, environment: var5
+        var6 = function arg0() {
             _fun5470: for (var _fun5470_ip = 0;;) switch (_fun5470_ip) {
                 case 0:
                     var2 = arg0;
@@ -768,7 +768,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'resetAnimation';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: resetAnimation, environment: var5
+        var6 = function arg0() {
             _fun5471: for (var _fun5471_ip = 0;;) switch (_fun5471_ip) {
                 case 0:
                     var2 = arg0;
@@ -804,7 +804,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getValue';
         var4.key = var6;
-        var6 = function() { // Original name: __getValue, environment: var5
+        var6 = function() {
             _fun5472: for (var _fun5472_ip = 0;;) switch (_fun5472_ip) {
                 case 0:
                     var1 = this;
@@ -850,7 +850,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__attach';
         var4.key = var6;
-        var6 = function() { // Original name: __attach, environment: var5
+        var6 = function() {
             var5 = this;
             var1 = var5.r;
             var0 = var1.__addChild;
@@ -881,7 +881,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__detach';
         var4.key = var6;
-        var6 = function() { // Original name: __detach, environment: var5
+        var6 = function() {
             var5 = this;
             var1 = var5.r;
             var0 = var1.__removeChild;
@@ -912,7 +912,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_withSuspendedCallbacks';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _withSuspendedCallbacks, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var0 = var2._suspendCallbacks;
             var0 = var0 + 1;
@@ -930,7 +930,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__callListeners';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: __callListeners, environment: var5
+        var6 = function arg0() {
             _fun5476: for (var _fun5476_ip = 0;;) switch (_fun5476_ip) {
                 case 0:
                     var5 = this;
@@ -963,7 +963,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__makeNative';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: __makeNative, environment: var5
+        var6 = function arg0() {
             var3 = arg0;
             var6 = this;
             var1 = var6.r;
@@ -996,7 +996,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getNativeConfig';
         var4.key = var6;
-        var5 = function() { // Original name: __getNativeConfig, environment: var5
+        var5 = function() {
             var2 = this;
             var0 = {};
             var1 = 'color';

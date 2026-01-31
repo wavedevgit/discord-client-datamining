@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var1
+    var0 = function arg0() {
         _fun105386: for (var _fun105386_ip = 0;;) switch (_fun105386_ip) {
             case 0:
                 var0 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 729:
                 var2 = var0.props;
                 var3 = var2.searchHistoryItem;
-                var2 = function(arg0) { // Original name: searchHistoryKeyExtractor, environment: var1
+                var2 = function arg0() {
                     _fun105387: for (var _fun105387_ip = 0;;) switch (_fun105387_ip) {
                         case 0:
                             var0 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var4 = var2.type;
         var1 = _closure1_slot11;
@@ -392,13 +392,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getItemType, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.type;
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: renderItem, environment: var1
+    var0 = function arg0() {
         _fun105392: for (var _fun105392_ip = 0;;) switch (_fun105392_ip) {
             case 0:
                 var0 = arg0;
@@ -806,7 +806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: SearchList, environment: var1
+    var1 = function arg0() {
         _fun105393: for (var _fun105393_ip = 0;;) switch (_fun105393_ip) {
             case 0:
                 var0 = arg0;

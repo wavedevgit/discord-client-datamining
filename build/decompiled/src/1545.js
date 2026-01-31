@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.Platform;
     var3 = var3.Text;
     var _closure1_slot5 = var3;
-    var1 = function(arg0) { // Original name: Link, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var6 = var7.to;
         var5 = var7.action;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = var4.Object;
         var5 = var6.assign;
         var4 = {};
-        var0 = function(arg0) { // Original name: onPress, environment: var0
+        var0 = function arg0() {
             _fun17481: for (var _fun17481_ip = 0;;) switch (_fun17481_ip) {
                 case 0:
                     var2 = arg0;

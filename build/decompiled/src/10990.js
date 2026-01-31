@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var0 = undefined;
     var2.deepComparePlayList = var0;
-    var1 = function(arg0, arg1) { // Original name: deepComparePlayList, environment: var1
+    var1 = function arg0, arg1() {
         _fun85559: for (var _fun85559_ip = 0;;) switch (_fun85559_ip) {
             case 0:
                 var3 = arg0;

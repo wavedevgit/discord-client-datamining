@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/nameplates/useNameplateSections.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function() { // Original name: _default, environment: var5
+    var5 = function() {
         var4 = _closure1_slot0;
         var8 = _closure1_slot2;
         var2 = 4;

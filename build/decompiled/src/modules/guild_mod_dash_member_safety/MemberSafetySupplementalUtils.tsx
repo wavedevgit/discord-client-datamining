@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: pendingMemberRequestKey, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1 + var0;
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: createFetchKeys, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: getUserIdFromFetchKey, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = '-';
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateFetchRequests, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: _transformFetchMemberSupplementalResponse, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.user_id;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _fetchMemberSupplemental, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = arg1;
                         var8 = var8.bind(var4)(var9, var3);
                         var2 = var8;
-                        var3 = function(arg0) { // Original name: getFetchchableUsers, environment: var6
+                        var3 = function arg0() {
                             var2 = arg0;
                             var1 = var2.filter;
                             var0 = function(arg0) { // Environment: var0
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_mod_dash_member_safety/MemberSafetySupplementalUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1) { // Original name: registerFetchedSupplementals, environment: var1
+    var5 = function arg0, arg1() {
         var2 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGetIntegrationIconString = var3;
-    var1 = function() { // Original name: fetchMemberSupplemental, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;

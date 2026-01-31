@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var14
+    var0 = function() {
         _fun49033: for (var _fun49033_ip = 0;;) switch (_fun49033_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var16 = function() { // Original name: handleFormOpen, environment: var14
+    var16 = function() {
         var0 = _closure1_slot8;
         var0 = var0.OPEN;
         _closure1_slot16 = var0;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var15 = function() { // Original name: handleFormClose, environment: var14
+    var15 = function() {
         var0 = _closure1_slot8;
         var0 = var0.CLOSED;
         _closure1_slot16 = var0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var15;
-    var11 = function(arg0) { // Original name: handleResetAllPending, environment: var14
+    var11 = function arg0() {
         _fun49038: for (var _fun49038_ip = 0;;) switch (_fun49038_ip) {
             case 0:
                 var0 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var11;
-    var13 = function(arg0) { // Original name: handleResetPendingAccountChanges, environment: var14
+    var13 = function arg0() {
         _fun49039: for (var _fun49039_ip = 0;;) switch (_fun49039_ip) {
             case 0:
                 var0 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var13;
-    var12 = function(arg0) { // Original name: handleResetPendingProfileChanges, environment: var14
+    var12 = function arg0() {
         _fun49040: for (var _fun49040_ip = 0;;) switch (_fun49040_ip) {
             case 0:
                 var0 = arg0;
@@ -255,14 +255,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var12;
-    var10 = function() { // Original name: handleResetTryItOut, environment: var14
+    var10 = function() {
         var0 = _closure1_slot12;
         _closure1_slot15 = var0;
         var0 = undefined;
         return var0;
     };
     var _closure1_slot23 = var10;
-    var9 = function() { // Original name: handleResetPendingLegacyUsernameDisabled, environment: var14
+    var9 = function() {
         _fun49042: for (var _fun49042_ip = 0;;) switch (_fun49042_ip) {
             case 0:
                 var2 = _closure1_slot14;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var9;
-    var8 = function() { // Original name: handleResetPendingPrimaryGuildChanges, environment: var14
+    var8 = function() {
         _fun49043: for (var _fun49043_ip = 0;;) switch (_fun49043_ip) {
             case 0:
                 var2 = _closure1_slot14;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var8;
-    var3 = function() { // Original name: handleReset, environment: var14
+    var3 = function() {
         var3 = _closure1_slot20;
         var2 = {};
         var0 = 'USER_SETTINGS_RESET_ALL_PENDING';
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var14
-        var3 = function() { // Original name: UserProfileSettingsStore, environment: var5
+        var3 = function() {
             _fun49046: for (var _fun49046_ip = 0;;) switch (_fun49046_ip) {
                 case 0:
                     var3 = this;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getFormState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getErrors';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun49048: for (var _fun49048_ip = 0;;) switch (_fun49048_ip) {
                 case 0:
                     var3 = arg0;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingChanges';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun49049: for (var _fun49049_ip = 0;;) switch (_fun49049_ip) {
                 case 0:
                     var3 = arg0;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTryItOutChanges';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'showNotice';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var1 = var2.getPendingChanges;
             var0 = arg0;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canSubmit';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun49053: for (var _fun49053_ip = 0;;) switch (_fun49053_ip) {
                 case 0:
                     var2 = this;
@@ -611,7 +611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.USER_SETTINGS_ACCOUNT_INIT = var16;
     var1.USER_SETTINGS_MODAL_INIT = var16;
     var1.USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS = var16;
-    var16 = function(arg0) { // Original name: handleSectionChange, environment: var14
+    var16 = function arg0() {
         _fun49054: for (var _fun49054_ip = 0;;) switch (_fun49054_ip) {
             case 0:
                 var0 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.USER_SETTINGS_MODAL_SET_SECTION = var16;
     var1.USER_SETTINGS_ACCOUNT_CLOSE = var15;
     var1.USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM = var3;
-    var15 = function() { // Original name: handleFormSubmit, environment: var14
+    var15 = function() {
         var0 = _closure1_slot8;
         var0 = var0.SUBMITTING;
         _closure1_slot16 = var0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SUBMIT = var15;
-    var15 = function(arg0) { // Original name: handleFormSubmitFailure, environment: var14
+    var15 = function arg0() {
         _fun49056: for (var _fun49056_ip = 0;;) switch (_fun49056_ip) {
             case 0:
                 var0 = arg0;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingAvatar, environment: var14
+    var15 = function arg0() {
         _fun49057: for (var _fun49057_ip = 0;;) switch (_fun49057_ip) {
             case 0:
                 var0 = arg0;
@@ -733,7 +733,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingGlobalName, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var4 = var0.globalName;
         var2 = _closure1_slot14;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingLegacyUsernameDisabled, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var4 = var0.legacyUsernameDisabled;
         var2 = _closure1_slot14;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingCollectiblesItem, environment: var14
+    var15 = function arg0() {
         _fun49060: for (var _fun49060_ip = 0;;) switch (_fun49060_ip) {
             case 0:
                 var0 = arg0;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingBanner, environment: var14
+    var15 = function arg0() {
         _fun49061: for (var _fun49061_ip = 0;;) switch (_fun49061_ip) {
             case 0:
                 var0 = arg0;
@@ -936,7 +936,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingBio, environment: var14
+    var15 = function arg0() {
         _fun49062: for (var _fun49062_ip = 0;;) switch (_fun49062_ip) {
             case 0:
                 var0 = arg0;
@@ -972,7 +972,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_BIO = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingPronouns, environment: var14
+    var15 = function arg0() {
         _fun49063: for (var _fun49063_ip = 0;;) switch (_fun49063_ip) {
             case 0:
                 var0 = arg0;
@@ -1008,7 +1008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingAccentColor, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var4 = var0.color;
         var2 = _closure1_slot14;
@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingThemeColors, environment: var14
+    var15 = function arg0() {
         _fun49065: for (var _fun49065_ip = 0;;) switch (_fun49065_ip) {
             case 0:
                 var0 = arg0;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutAvatar, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var3 = var0.avatar;
         var1 = {};
@@ -1074,7 +1074,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutAvatarDecoration, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var3 = var0.avatarDecoration;
         var1 = {};
@@ -1088,7 +1088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutProfileEffect, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var3 = var0.profileEffect;
         var1 = {};
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutBanner, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var3 = var0.banner;
         var1 = {};
@@ -1116,7 +1116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutThemeColors, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var3 = var0.themeColors;
         var1 = {};
@@ -1130,7 +1130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutDisplayNameStyles, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var3 = var0.displayNameStyles;
         var1 = {};
@@ -1144,7 +1144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES = var15;
-    var15 = function(arg0) { // Original name: handleSetTryItOutPreset, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var6 = var0.banner;
         var5 = var0.themeColors;
@@ -1167,7 +1167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingPrimaryGuildId, environment: var14
+    var15 = function arg0() {
         var0 = arg0;
         var4 = var0.primaryGuildId;
         var2 = _closure1_slot14;
@@ -1183,7 +1183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID = var15;
-    var15 = function(arg0) { // Original name: handleSetPendingDisplayNameStyles, environment: var14
+    var15 = function arg0() {
         _fun49074: for (var _fun49074_ip = 0;;) switch (_fun49074_ip) {
             case 0:
                 var0 = arg0;
@@ -1219,7 +1219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES = var15;
-    var14 = function(arg0) { // Original name: handleClearErrors, environment: var14
+    var14 = function arg0() {
         _fun49075: for (var _fun49075_ip = 0;;) switch (_fun49075_ip) {
             case 0:
                 var0 = arg0;

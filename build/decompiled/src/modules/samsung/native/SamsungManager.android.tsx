@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.NativeModules;
     var _closure1_slot0 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: checkIfOAuthRequest, environment: var3
+    var6 = function arg0() {
         var0 = _closure1_slot0;
         var2 = var0.Samsung;
         var1 = var2.checkIfOAuthRequest;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.checkIfOAuthRequest = var6;
-    var6 = function() { // Original name: showConnectionDisclaimer, environment: var3
+    var6 = function() {
         var0 = _closure1_slot0;
         var1 = var0.Samsung;
         var0 = var1.showConnectionDisclaimer;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.showConnectionDisclaimer = var6;
-    var6 = function() { // Original name: getAccountUrlAndAuthCode, environment: var3
+    var6 = function() {
         var0 = _closure1_slot0;
         var1 = var0.Samsung;
         var0 = var1.getAccountUrlAndAuthCode;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getAccountUrlAndAuthCode = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: finishSamsungAuthorization, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var0 = _closure1_slot0;
         var4 = var0.Samsung;
         var3 = var4.finishSamsungAuthorization;

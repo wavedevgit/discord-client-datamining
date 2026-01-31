@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reactions/native/BurstReactionToggle.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BurstReactionToggle, environment: var1
+    var1 = function arg0() {
         _fun57306: for (var _fun57306_ip = 0;;) switch (_fun57306_ip) {
             case 0:
                 var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var9[var1];
                             var4 = var3.bind(var4)(var1);
                             var3 = var4.useAnimatedStyle;
-                            var1 = function() { // Original name: c, environment: var0
+                            var1 = function() {
                                 _fun57309: for (var _fun57309_ip = 0;;) switch (_fun57309_ip) {
                                     case 0:
                                         var0 = {};
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var1 = _closure1_slot4;
                 var0 = {};
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var3 = _closure2_slot1;
                     var0 = _closure1_slot6;
                     var2 = var0.AUTO;

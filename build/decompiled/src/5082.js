@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var1 = function(arg0) { // Original name: _toConsumableArray, environment: var1
+    var1 = function arg0() {
         _fun45574: for (var _fun45574_ip = 0;;) switch (_fun45574_ip) {
             case 0:
                 var4 = arg0;

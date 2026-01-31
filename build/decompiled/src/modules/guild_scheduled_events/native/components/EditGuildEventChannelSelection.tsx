@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventChannelSelection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditGuildEventChannelSelection, environment: var1
+    var1 = function arg0() {
         _fun65448: for (var _fun65448_ip = 0;;) switch (_fun65448_ip) {
             case 0:
                 var1 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var14.channelSelectorButton;
                 var11[2] = var16;
                 var5.style = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     _fun65451: for (var _fun65451_ip = 0;;) switch (_fun65451_ip) {
                         case 0:
                             var2 = _closure1_slot2;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = _closure2_slot0;
                             var5 = var5.id;
                             var2.guildId = var5;
-                            var5 = function(arg0) { // Original name: onCreate, environment: var6
+                            var5 = function arg0() {
                                 _fun65453: for (var _fun65453_ip = 0;;) switch (_fun65453_ip) {
                                     case 0:
                                         var2 = _closure1_slot0;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.title = var10;
                             var2.items = var9;
                             var2.body = var8;
-                            var6 = function(arg0) { // Original name: onItemSelect, environment: var6
+                            var6 = function arg0() {
                                 _fun65454: for (var _fun65454_ip = 0;;) switch (_fun65454_ip) {
                                     case 0:
                                         var0 = arg0;

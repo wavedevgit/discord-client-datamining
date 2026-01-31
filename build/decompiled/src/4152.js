@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: ApertureValue, environment: var2
+    var3 = function arg0() {
         var6 = arg0;
         var0 = global;
         var4 = var0.Math;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.ApertureValue = var3;
-    var3 = function(arg0) { // Original name: ColorSpace, environment: var2
+    var3 = function arg0() {
         _fun38062: for (var _fun38062_ip = 0;;) switch (_fun38062_ip) {
             case 0:
                 var3 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.ColorSpace = var3;
-    var3 = function(arg0) { // Original name: ComponentsConfiguration, environment: var2
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.ComponentsConfiguration = var3;
-    var3 = function(arg0) { // Original name: Contrast, environment: var2
+    var3 = function arg0() {
         _fun38065: for (var _fun38065_ip = 0;;) switch (_fun38065_ip) {
             case 0:
                 var4 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.Contrast = var3;
-    var3 = function(arg0) { // Original name: CustomRendered, environment: var2
+    var3 = function arg0() {
         _fun38066: for (var _fun38066_ip = 0;;) switch (_fun38066_ip) {
             case 0:
                 var3 = arg0;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.CustomRendered = var3;
-    var3 = function(arg0) { // Original name: ExposureMode, environment: var2
+    var3 = function arg0() {
         _fun38067: for (var _fun38067_ip = 0;;) switch (_fun38067_ip) {
             case 0:
                 var4 = arg0;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.ExposureMode = var3;
-    var3 = function(arg0) { // Original name: ExposureProgram, environment: var2
+    var3 = function arg0() {
         _fun38068: for (var _fun38068_ip = 0;;) switch (_fun38068_ip) {
             case 0:
                 var11 = arg0;
@@ -321,7 +321,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.ExposureProgram = var3;
-    var3 = function(arg0) { // Original name: ExposureTime, environment: var2
+    var3 = function arg0() {
         _fun38069: for (var _fun38069_ip = 0;;) switch (_fun38069_ip) {
             case 0:
                 var0 = arg0;
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.ExposureTime = var3;
-    var3 = function(arg0) { // Original name: FNumber, environment: var2
+    var3 = function arg0() {
         var1 = arg0;
         var0 = global;
         var4 = var0.Number;
@@ -408,7 +408,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.FNumber = var3;
-    var3 = function(arg0) { // Original name: FocalLength, environment: var2
+    var3 = function arg0() {
         var2 = arg0;
         var0 = 0;
         var1 = var2[var0];
@@ -420,7 +420,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.FocalLength = var3;
-    var3 = function(arg0) { // Original name: FocalPlaneResolutionUnit, environment: var2
+    var3 = function arg0() {
         _fun38072: for (var _fun38072_ip = 0;;) switch (_fun38072_ip) {
             case 0:
                 var4 = arg0;
@@ -455,7 +455,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.FocalPlaneResolutionUnit = var3;
-    var3 = function(arg0) { // Original name: LightSource, environment: var2
+    var3 = function arg0() {
         _fun38073: for (var _fun38073_ip = 0;;) switch (_fun38073_ip) {
             case 0:
                 var21 = arg0;
@@ -643,7 +643,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.LightSource = var3;
-    var3 = function(arg0) { // Original name: MeteringMode, environment: var2
+    var3 = function arg0() {
         _fun38074: for (var _fun38074_ip = 0;;) switch (_fun38074_ip) {
             case 0:
                 var8 = arg0;
@@ -714,7 +714,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.MeteringMode = var3;
-    var3 = function(arg0) { // Original name: ResolutionUnit, environment: var2
+    var3 = function arg0() {
         _fun38075: for (var _fun38075_ip = 0;;) switch (_fun38075_ip) {
             case 0:
                 var3 = arg0;
@@ -740,7 +740,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.ResolutionUnit = var3;
-    var3 = function(arg0) { // Original name: Saturation, environment: var2
+    var3 = function arg0() {
         _fun38076: for (var _fun38076_ip = 0;;) switch (_fun38076_ip) {
             case 0:
                 var4 = arg0;
@@ -775,7 +775,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.Saturation = var3;
-    var3 = function(arg0) { // Original name: FocalLengthIn35mmFilm, environment: var2
+    var3 = function arg0() {
         _fun38077: for (var _fun38077_ip = 0;;) switch (_fun38077_ip) {
             case 0:
                 var2 = arg0;
@@ -793,7 +793,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.FocalLengthIn35mmFilm = var3;
-    var3 = function(arg0) { // Original name: SceneCaptureType, environment: var2
+    var3 = function arg0() {
         _fun38078: for (var _fun38078_ip = 0;;) switch (_fun38078_ip) {
             case 0:
                 var5 = arg0;
@@ -837,7 +837,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.SceneCaptureType = var3;
-    var3 = function(arg0) { // Original name: Sharpness, environment: var2
+    var3 = function arg0() {
         _fun38079: for (var _fun38079_ip = 0;;) switch (_fun38079_ip) {
             case 0:
                 var4 = arg0;
@@ -872,7 +872,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.Sharpness = var3;
-    var3 = function(arg0) { // Original name: ShutterSpeedValue, environment: var2
+    var3 = function arg0() {
         _fun38080: for (var _fun38080_ip = 0;;) switch (_fun38080_ip) {
             case 0:
                 var0 = arg0;
@@ -914,7 +914,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.ShutterSpeedValue = var3;
-    var3 = function(arg0) { // Original name: WhiteBalance, environment: var2
+    var3 = function arg0() {
         _fun38081: for (var _fun38081_ip = 0;;) switch (_fun38081_ip) {
             case 0:
                 var3 = arg0;
@@ -940,7 +940,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.WhiteBalance = var3;
-    var3 = function(arg0) { // Original name: XResolution, environment: var2
+    var3 = function arg0() {
         var4 = arg0;
         var0 = global;
         var2 = var0.Math;
@@ -955,7 +955,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.XResolution = var3;
-    var2 = function(arg0) { // Original name: YResolution, environment: var2
+    var2 = function arg0() {
         var4 = arg0;
         var0 = global;
         var2 = var0.Math;

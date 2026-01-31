@@ -22,17 +22,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 40:
             var1 = {};
-            var6 = function() { // Original name: mark, environment: var5
+            var6 = function() {
                 var0 = undefined;
                 return var0;
             };
             var1.mark = var6;
-            var6 = function() { // Original name: measure, environment: var5
+            var6 = function() {
                 var0 = undefined;
                 return var0;
             };
             var1.measure = var6;
-            var5 = function() { // Original name: now, environment: var5
+            var5 = function() {
                 _fun2375: for (var _fun2375_ip = 0;;) switch (_fun2375_ip) {
                     case 0:
                         var0 = _closure1_slot0;

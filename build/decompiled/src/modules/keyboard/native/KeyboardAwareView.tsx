@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: getKeyboardHeightWithOffset, environment: var1
+    var0 = function arg0() {
         _fun50942: for (var _fun50942_ip = 0;;) switch (_fun50942_ip) {
             case 0:
                 var0 = global;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: KeyboardAwareView, environment: var1
+    var1 = function arg0() {
         _fun50943: for (var _fun50943_ip = 0;;) switch (_fun50943_ip) {
             case 0:
                 var0 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: addTransformToKeepPosition, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun33887: for (var _fun33887_ip = 0;;) switch (_fun33887_ip) {
             case 0:
                 var11 = arg0;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
-    var1 = function(arg0, arg1) { // Original name: EntryExitTransition, environment: var1
+    var1 = function arg0, arg1() {
         _fun33888: for (var _fun33888_ip = 0;;) switch (_fun33888_ip) {
             case 0:
                 var0 = arg1;

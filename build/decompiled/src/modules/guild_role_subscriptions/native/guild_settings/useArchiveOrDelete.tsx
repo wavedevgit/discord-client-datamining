@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/useArchiveOrDelete.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useArchiveOrDelete, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun116676: for (var _fun116676_ip = 0;;) switch (_fun116676_ip) {
             case 0:
                 var13 = arg0;

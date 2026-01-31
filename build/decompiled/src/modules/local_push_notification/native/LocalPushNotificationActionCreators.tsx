@@ -33,11 +33,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: receiveLocalNotification, environment: var1
+    var1 = function arg0() {
         _fun118067: for (var _fun118067_ip = 0;;) switch (_fun118067_ip) {
             case 0:
                 var5 = arg0;
-                var2 = function() { // Original name: dispatch, environment: var4
+                var2 = function() {
                     _fun118068: for (var _fun118068_ip = 0;;) switch (_fun118068_ip) {
                         case 0:
                             var5 = _closure1_slot1;

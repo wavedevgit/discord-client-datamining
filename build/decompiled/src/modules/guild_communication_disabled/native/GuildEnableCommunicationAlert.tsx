@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildEnableCommunicationAlert, environment: var1
+    var1 = function arg0() {
         _fun79076: for (var _fun79076_ip = 0;;) switch (_fun79076_ip) {
             case 0:
                 var3 = arg0;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20;
             case 588:
                 var10.username = var19;
-                var18 = function() { // Original name: countdown, environment: var18
+                var18 = function() {
                     _fun79082: for (var _fun79082_ip = 0;;) switch (_fun79082_ip) {
                         case 0:
                             var1 = _closure2_slot3;

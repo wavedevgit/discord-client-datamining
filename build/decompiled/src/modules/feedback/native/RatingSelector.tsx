@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/feedback/native/RatingSelector.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RatingSelector, environment: var1
+    var1 = function arg0() {
         _fun76252: for (var _fun76252_ip = 0;;) switch (_fun76252_ip) {
             case 0:
                 var0 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1;
             case 86:
                 _closure2_slot3 = var5;
-                var1 = function(arg0) { // Original name: useEmojiConfigs, environment: var4
+                var1 = function arg0() {
                     var2 = arg0;
                     var1 = {};
                     var5 = _closure1_slot6;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.bind(var12)();
                     var6.normal = var7;
                     var3.source = var6;
-                    var6 = function() { // Original name: getLabel, environment: var0
+                    var6 = function() {
                         var4 = _closure1_slot0;
                         var5 = _closure1_slot2;
                         var0 = 7;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.bind(var12)();
                     var6.normal = var7;
                     var3.source = var6;
-                    var6 = function() { // Original name: getLabel, environment: var0
+                    var6 = function() {
                         var4 = _closure1_slot0;
                         var5 = _closure1_slot2;
                         var0 = 7;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.bind(var8)();
                     var6.normal = var7;
                     var3.source = var6;
-                    var6 = function() { // Original name: getLabel, environment: var0
+                    var6 = function() {
                         var4 = _closure1_slot0;
                         var5 = _closure1_slot2;
                         var0 = 7;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var7 === var5;
                             var6.selected = var9;
                             var0.accessibilityState = var6;
-                            var6 = function() { // Original name: onPress, environment: var10
+                            var6 = function() {
                                 var2 = _closure2_slot2;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var13 = var13 === var5;
                             var14.selected = var13;
                             var6.accessibilityState = var14;
-                            var10 = function() { // Original name: onPress, environment: var10
+                            var10 = function() {
                                 var2 = _closure2_slot2;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;

@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ForumExplicitMediaAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumExplicitMediaAlert, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         var _closure2_slot0 = var1;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var8.t;
         var9 = var8["APQGZ+"];
         var8 = {};
-        var12 = function() { // Original name: handleFalsePositiveHook, environment: var12
+        var12 = function() {
             var2 = _closure2_slot2;
             var0 = undefined;
             var2 = var2.bind(var0)();

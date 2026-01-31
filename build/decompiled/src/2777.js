@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = undefined;
     var1.default = var0;
-    var2 = function(arg0, arg1) { // Original name: dateLongFormatter, environment: var3
+    var2 = function arg0, arg1() {
         _fun22750: for (var _fun22750_ip = 0;;) switch (_fun22750_ip) {
             case 0:
                 var1 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var2;
-    var4 = function(arg0, arg1) { // Original name: timeLongFormatter, environment: var3
+    var4 = function arg0, arg1() {
         _fun22751: for (var _fun22751_ip = 0;;) switch (_fun22751_ip) {
             case 0:
                 var1 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var4;
     var2 = {};
     var2.p = var4;
-    var3 = function(arg0, arg1) { // Original name: dateTimeLongFormatter, environment: var3
+    var3 = function arg0, arg1() {
         _fun22752: for (var _fun22752_ip = 0;;) switch (_fun22752_ip) {
             case 0:
                 var2 = arg0;

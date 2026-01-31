@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var17 = function(arg0) { // Original name: wrapperForImpl, environment: var13
+    var17 = function arg0() {
         _fun96987: for (var _fun96987_ip = 0;;) switch (_fun96987_ip) {
             case 0:
                 var2 = arg0;
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var17;
-    var16 = function(arg0) { // Original name: implForWrapper, environment: var13
+    var16 = function arg0() {
         _fun96988: for (var _fun96988_ip = 0;;) switch (_fun96988_ip) {
             case 0:
                 var2 = arg0;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = 'named property delete';
     var1 = var2.bind(var0)(var1);
     var2 = {};
-    var21 = function(arg0) { // Original name: isObject, environment: var13
+    var21 = function arg0() {
         _fun96989: for (var _fun96989_ip = 0;;) switch (_fun96989_ip) {
             case 0:
                 var3 = arg0;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isObject = var21;
-    var21 = function(arg0, arg1) { // Original name: hasOwn, environment: var13
+    var21 = function arg0, arg1() {
         var0 = global;
         var0 = var0.Object;
         var0 = var0.prototype;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.hasOwn = var21;
     var2.wrapperSymbol = var20;
     var2.implSymbol = var19;
-    var19 = function(arg0, arg1, arg2) { // Original name: getSameObject, environment: var13
+    var19 = function arg0, arg1, arg2() {
         _fun96991: for (var _fun96991_ip = 0;;) switch (_fun96991_ip) {
             case 0:
                 var2 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.ctorRegistrySymbol = var18;
     var2.wrapperForImpl = var17;
     var2.implForWrapper = var16;
-    var16 = function(arg0) { // Original name: tryWrapperForImpl, environment: var13
+    var16 = function arg0() {
         _fun96992: for (var _fun96992_ip = 0;;) switch (_fun96992_ip) {
             case 0:
                 var1 = arg0;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.tryWrapperForImpl = var16;
-    var16 = function(arg0) { // Original name: tryImplForWrapper, environment: var13
+    var16 = function arg0() {
         _fun96993: for (var _fun96993_ip = 0;;) switch (_fun96993_ip) {
             case 0:
                 var1 = arg0;
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.tryImplForWrapper = var16;
     var2.iterInternalSymbol = var15;
     var2.IteratorPrototype = var14;
-    var14 = function(arg0) { // Original name: isArrayBuffer, environment: var13
+    var14 = function arg0() {
         _fun96994: for (var _fun96994_ip = 0;;) switch (_fun96994_ip) {
             case 0:
                 var0 = arg0;
@@ -250,7 +250,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isArrayBuffer = var14;
-    var13 = function(arg0) { // Original name: isArrayIndexPropName, environment: var13
+    var13 = function arg0() {
         _fun96995: for (var _fun96995_ip = 0;;) switch (_fun96995_ip) {
             case 0:
                 var2 = arg0;

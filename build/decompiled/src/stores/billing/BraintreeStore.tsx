@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = dependencyMap;
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun25416: for (var _fun25416_ip = 0;;) switch (_fun25416_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 225:
             var7 = var1.window;
             var1 = {};
-            var8 = function() { // Original name: getReturnUrlPrefix, environment: var3
+            var8 = function() {
                 _fun25419: for (var _fun25419_ip = 0;;) switch (_fun25419_ip) {
                     case 0:
                         var2 = _closure1_slot10;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.getReturnUrlPrefix = var8;
-            var8 = function(arg0) { // Original name: open, environment: var3
+            var8 = function arg0() {
                 var3 = arg0;
                 var _closure1_slot11 = var3;
                 var1 = global;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.bind(var0)(var1);
             var7 = var1.Store;
             var1 = function(arg0) { // Environment: var3
-                var3 = function() { // Original name: BraintreeStore, environment: var5
+                var3 = function() {
                     _fun25422: for (var _fun25422_ip = 0;;) switch (_fun25422_ip) {
                         case 0:
                             var3 = this;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'getClient';
                 var4.key = var0;
-                var0 = function() { // Original name: value, environment: var5
+                var0 = function() {
                     var0 = _closure1_slot12;
                     return var0;
                 };
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getPayPalClient';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot13;
                     return var0;
                 };
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getVenmoClient';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot14;
                     return var0;
                 };
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getLastURL';
                 var4.key = var6;
-                var5 = function() { // Original name: value, environment: var5
+                var5 = function() {
                     var0 = _closure1_slot11;
                     return var0;
                 };
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var5[var1];
             var12 = var6.bind(var0)(var1);
             var1 = {};
-            var6 = function(arg0) { // Original name: handleBraintreeCreateClientSuccess, environment: var3
+            var6 = function arg0() {
                 var0 = arg0;
                 var1 = var0.client;
                 _closure1_slot12 = var1;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.BRAINTREE_CREATE_CLIENT_SUCCESS = var6;
-            var6 = function(arg0) { // Original name: handleBraintreeCreatePayPalClientSuccess, environment: var3
+            var6 = function arg0() {
                 var0 = arg0;
                 var1 = var0.paypalClient;
                 _closure1_slot13 = var1;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS = var6;
-            var6 = function(arg0) { // Original name: handleBillingPopupBridgeCallback, environment: var3
+            var6 = function arg0() {
                 _fun25429: for (var _fun25429_ip = 0;;) switch (_fun25429_ip) {
                     case 0:
                         var0 = arg0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.BILLING_POPUP_BRIDGE_CALLBACK = var6;
-            var6 = function(arg0) { // Original name: handleBillingPopupBridgeStateUpdate, environment: var3
+            var6 = function arg0() {
                 _fun25430: for (var _fun25430_ip = 0;;) switch (_fun25430_ip) {
                     case 0:
                         var0 = arg0;
@@ -339,14 +339,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.BILLING_POPUP_BRIDGE_STATE_UPDATE = var6;
-            var6 = function() { // Original name: handleBraintreeTeardownPayPalClient, environment: var3
+            var6 = function() {
                 var0 = null;
                 _closure1_slot13 = var0;
                 var0 = undefined;
                 return var0;
             };
             var1.BRAINTREE_TEARDOWN_PAYPAL_CLIENT = var6;
-            var6 = function(arg0) { // Original name: handleBraintreeCreateVenmoClientSuccess, environment: var3
+            var6 = function arg0() {
                 var0 = arg0;
                 var1 = var0.venmoClient;
                 _closure1_slot14 = var1;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS = var6;
-            var6 = function() { // Original name: handleBraintreeTeardownVenmoClient, environment: var3
+            var6 = function() {
                 var0 = null;
                 _closure1_slot14 = var0;
                 var0 = undefined;

@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/posts/list/ForumPostListFooter.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumPostListFooter, environment: var1
+    var1 = function arg0() {
         _fun89580: for (var _fun89580_ip = 0;;) switch (_fun89580_ip) {
             case 0:
                 var0 = arg0;

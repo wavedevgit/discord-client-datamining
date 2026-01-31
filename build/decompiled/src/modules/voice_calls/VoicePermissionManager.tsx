@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun112653: for (var _fun112653_ip = 0;;) switch (_fun112653_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: voicePermissionRequest, environment: var3
+    var0 = function() {
         _fun112656: for (var _fun112656_ip = 0;;) switch (_fun112656_ip) {
             case 0:
                 var3 = _closure1_slot1;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var1 = function(arg0, arg1) { // Original name: shouldImmediatelyRequestVoicePermissions, environment: var3
+    var1 = function arg0, arg1() {
         _fun112658: for (var _fun112658_ip = 0;;) switch (_fun112658_ip) {
             case 0:
                 var4 = arg1;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6[var4];
     var4 = var7.bind(var0)(var4);
     var3 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: VoicePermissionManager, environment: var5
+        var3 = function arg0() {
             _fun112660: for (var _fun112660_ip = 0;;) switch (_fun112660_ip) {
                 case 0:
                     var3 = this;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleVoiceChannelSelect';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun112661: for (var _fun112661_ip = 0;;) switch (_fun112661_ip) {
                 case 0:
                     var0 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleVoiceStateUpdates';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = arg0;
             var2 = var0.voiceStates;
             var1 = var2.forEach;

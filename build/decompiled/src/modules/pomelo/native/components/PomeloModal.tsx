@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PomeloModal, environment: var1
+    var0 = function arg0() {
         _fun80760: for (var _fun80760_ip = 0;;) switch (_fun80760_ip) {
             case 0:
                 var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.source = var12;
                 var9.one_click_flow = var11;
                 var0.impressionProperties = var9;
-                var9 = function() { // Original name: render, environment: var2
+                var9 = function() {
                     var3 = _closure1_slot8;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.source = var12;
                 var10.one_click_flow = var11;
                 var0.impressionProperties = var10;
-                var10 = function() { // Original name: render, environment: var2
+                var10 = function() {
                     var3 = _closure1_slot8;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'render': null,
                     'fullscreen': true
                 };
-                var2 = function() { // Original name: render, environment: var2
+                var2 = function() {
                     var3 = _closure1_slot8;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

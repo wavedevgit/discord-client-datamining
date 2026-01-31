@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var3 = var3.ApplicationStreamPresets;
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: getOptimizedProfileEffectThumbnailUrl, environment: var1
+    var3 = function arg0() {
         _fun42508: for (var _fun42508_ip = 0;;) switch (_fun42508_ip) {
             case 0:
                 var3 = arg0;

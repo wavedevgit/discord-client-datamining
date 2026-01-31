@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/calls/stream/StreamFeedbackActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StreamFeedbackActionSheet, environment: var1
+    var1 = function arg0() {
         _fun113014: for (var _fun113014_ip = 0;;) switch (_fun113014_ip) {
             case 0:
                 var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var6;
                 var0.optionsTree = var5;
-                var5 = function() { // Original name: trackOpen, environment: var4
+                var5 = function() {
                     _fun113016: for (var _fun113016_ip = 0;;) switch (_fun113016_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.trackOpen = var5;
-                var4 = function(arg0) { // Original name: trackReport, environment: var4
+                var4 = function arg0() {
                     _fun113017: for (var _fun113017_ip = 0;;) switch (_fun113017_ip) {
                         case 0:
                             var1 = arg0;

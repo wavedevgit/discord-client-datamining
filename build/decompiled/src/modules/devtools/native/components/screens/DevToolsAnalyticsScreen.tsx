@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CommonProperty, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.name;
         var5 = var0.children;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: LoggedEvent, environment: var1
+    var0 = function arg0() {
         _fun85730: for (var _fun85730_ip = 0;;) switch (_fun85730_ip) {
             case 0:
                 var0 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var16.name;
             case 273:
                 var4.subLabel = var11;
-                var11 = function() { // Original name: onPress, environment: var13
+                var11 = function() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = {};
                 var25 = var14.copyContainer;
                 var21.style = var25;
-                var25 = function() { // Original name: onPress, environment: var13
+                var25 = function() {
                     _fun85733: for (var _fun85733_ip = 0;;) switch (_fun85733_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsAnalyticsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsAnalyticsScreen, environment: var1
+    var1 = function() {
         _fun85735: for (var _fun85735_ip = 0;;) switch (_fun85735_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.extraData = var10;
                 var4.data = var9;
                 var4.estimatedItemSize = var8;
-                var7 = function(arg0) { // Original name: renderItem, environment: var7
+                var7 = function arg0() {
                     var1 = arg0;
                     var0 = var1.item;
                     var5 = var1.index;

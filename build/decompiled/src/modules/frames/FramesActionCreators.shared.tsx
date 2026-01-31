@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _launchFrame, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: _refreshProxyTicket, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/frames/FramesActionCreators.shared.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: launchFrame, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.launchFrame = var3;
-    var3 = function(arg0) { // Original name: stopFrame, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.applicationId;
         var2 = _closure1_slot1;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.stopFrame = var3;
-    var3 = function(arg0) { // Original name: updateFrameLayoutMode, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.applicationId;
         var4 = var0.layoutMode;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateFrameLayoutMode = var3;
-    var3 = function(arg0) { // Original name: updateFramePanelMode, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateFramePanelMode = var3;
-    var1 = function() { // Original name: refreshProxyTicket, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

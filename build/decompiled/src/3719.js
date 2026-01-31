@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot2 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: resolvePath, environment: var0
+        var0 = function arg0, arg1() {
             _fun33335: for (var _fun33335_ip = 0;;) switch (_fun33335_ip) {
                 case 0:
                     var1 = arg1;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: setPath, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun33338: for (var _fun33338_ip = 0;;) switch (_fun33338_ip) {
                 case 0:
                     var2 = arg0;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: withStyleAnimation, environment: var0
+        var0 = function arg0() {
             var9 = arg0;
             var _closure3_slot0 = var9;
             var7 = _closure1_slot0;
@@ -211,11 +211,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = undefined;
             var3 = var7.bind(var6)(var2);
             var2 = var3.defineAnimation;
-            var1 = function() { // Original name: pnpm_styleAnimationTs4, environment: var1
+            var1 = function() {
                 var0 = {};
                 var2 = true;
                 var0.isHigherOrder = var2;
-                var2 = function(arg0, arg1) { // Original name: onFrame, environment: var1
+                var2 = function arg0, arg1() {
                     _fun33342: for (var _fun33342_ip = 0;;) switch (_fun33342_ip) {
                         case 0:
                             var15 = arg0;
@@ -433,7 +433,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.onFrame = var2;
-                var2 = function(arg0, arg1, arg2, arg3) { // Original name: onStart, environment: var1
+                var2 = function arg0, arg1, arg2, arg3() {
                     _fun33343: for (var _fun33343_ip = 0;;) switch (_fun33343_ip) {
                         case 0:
                             var17 = arg0;
@@ -673,7 +673,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.current = var2;
                 var2 = _closure3_slot0;
                 var0.styleAnimations = var2;
-                var1 = function(arg0) { // Original name: callback, environment: var1
+                var1 = function arg0() {
                     _fun33344: for (var _fun33344_ip = 0;;) switch (_fun33344_ip) {
                         case 0:
                             var0 = undefined;

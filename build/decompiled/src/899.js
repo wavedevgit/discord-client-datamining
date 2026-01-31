@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0) { // Original name: addAutoIpAddressToSession, environment: var0
+    var2 = function arg0() {
         _fun9481: for (var _fun9481_ip = 0;;) switch (_fun9481_ip) {
             case 0:
                 var1 = arg0;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addAutoIpAddressToSession = var2;
-    var0 = function(arg0) { // Original name: addAutoIpAddressToUser, environment: var0
+    var0 = function arg0() {
         _fun9482: for (var _fun9482_ip = 0;;) switch (_fun9482_ip) {
             case 0:
                 var2 = arg0;

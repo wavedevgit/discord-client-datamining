@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PendingMessageRequestRow, environment: var1
+    var0 = function arg0() {
         _fun109466: for (var _fun109466_ip = 0;;) switch (_fun109466_ip) {
             case 0:
                 var0 = arg0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var0.isUserProfileLoading;
                 var23 = var0.isOptimisticAccepted;
                 var18 = var0.isOptimisticRejected;
-                var21 = function() { // Original name: handleRejectMessageRequest, environment: var4
+                var21 = function() {
                     var2 = _closure2_slot6;
                     var0 = _closure2_slot3;
                     var1 = var0.id;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot7 = var21;
-                var28 = function() { // Original name: handleAcceptMessageRequest, environment: var4
+                var28 = function() {
                     var2 = _closure2_slot5;
                     var0 = _closure2_slot3;
                     var1 = var0.id;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot8 = var28;
-                var8 = function() { // Original name: handleSelectRow, environment: var4
+                var8 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 12;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.label = var10;
                 var8[2] = var9;
                 var0.accessibilityActions = var8;
-                var4 = function(arg0) { // Original name: onAccessibilityAction, environment: var4
+                var4 = function arg0() {
                     _fun109472: for (var _fun109472_ip = 0;;) switch (_fun109472_ip) {
                         case 0:
                             var0 = arg0;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/message_request/native/MessageRequestList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MessageRequestList, environment: var1
+    var1 = function arg0() {
         _fun109473: for (var _fun109473_ip = 0;;) switch (_fun109473_ip) {
             case 0:
                 var0 = arg0;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 12;
                 var7.paddingTop = var8;
                 var0.contentContainerStyle = var7;
-                var6 = function(arg0) { // Original name: renderItem, environment: var6
+                var6 = function arg0() {
                     _fun109474: for (var _fun109474_ip = 0;;) switch (_fun109474_ip) {
                         case 0:
                             var0 = arg0;
@@ -741,7 +741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure1_slot12;
                             var2 = {};
                             var2.messageRequest = var0;
-                            var1 = function() { // Original name: goToMessageRequestPreview, environment: var1
+                            var1 = function() {
                                 var2 = _closure2_slot0;
                                 var0 = _closure3_slot0;
                                 var0 = var0.channel;

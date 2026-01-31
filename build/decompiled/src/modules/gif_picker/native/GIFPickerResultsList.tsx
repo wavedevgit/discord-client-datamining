@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gif_picker/native/GIFPickerResultsList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun74134: for (var _fun74134_ip = 0;;) switch (_fun74134_ip) {
             case 0:
                 var3 = arg0;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4 = new Array(0);
                 var9 = var6.bind(var13)(var5, var4);
-                var4 = function() { // Original name: useViewedItemIndexes, environment: var0
+                var4 = function() {
                     var4 = _closure1_slot4;
                     var3 = var4.useState;
                     var2 = function() { // Environment: var1

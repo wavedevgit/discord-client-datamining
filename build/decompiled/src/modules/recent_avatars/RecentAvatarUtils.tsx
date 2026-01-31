@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: getImageFormat, environment: var1
+    var4 = function arg0() {
         _fun50727: for (var _fun50727_ip = 0;;) switch (_fun50727_ip) {
             case 0:
                 var1 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: getArchivedAvatarURL, environment: var1
+    var3 = function arg0() {
         _fun50728: for (var _fun50728_ip = 0;;) switch (_fun50728_ip) {
             case 0:
                 var0 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function(arg0) { // Original name: getFileTypeFromExtension, environment: var1
+    var0 = function arg0() {
         _fun50729: for (var _fun50729_ip = 0;;) switch (_fun50729_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.getImageFormat = var4;
     var2.getArchivedAvatarURL = var3;
-    var3 = function(arg0) { // Original name: generateAvatarDescription, environment: var1
+    var3 = function arg0() {
         _fun50730: for (var _fun50730_ip = 0;;) switch (_fun50730_ip) {
             case 0:
                 var0 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateAvatarDescription = var3;
-    var3 = function(arg0, arg1) { // Original name: generateRecentAvatarFileDetails, environment: var1
+    var3 = function arg0, arg1() {
         _fun50731: for (var _fun50731_ip = 0;;) switch (_fun50731_ip) {
             case 0:
                 var6 = arg1;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateRecentAvatarFileDetails = var3;
-    var3 = function(arg0) { // Original name: createPendingImage, environment: var1
+    var3 = function arg0() {
         _fun50732: for (var _fun50732_ip = 0;;) switch (_fun50732_ip) {
             case 0:
                 var4 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createPendingImage = var3;
-    var1 = function(arg0) { // Original name: getPendingAvatarSrc, environment: var1
+    var1 = function arg0() {
         _fun50733: for (var _fun50733_ip = 0;;) switch (_fun50733_ip) {
             case 0:
                 var0 = arg0;

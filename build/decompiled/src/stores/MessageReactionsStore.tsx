@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun54304: for (var _fun54304_ip = 0;;) switch (_fun54304_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var7 = function(arg0) { // Original name: handleReaction, environment: var3
+    var7 = function arg0() {
         _fun54307: for (var _fun54307_ip = 0;;) switch (_fun54307_ip) {
             case 0:
                 var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var _closure1_slot11 = var1;
     var1 = function() { // Environment: var3
-        var4 = function() { // Original name: Reaction, environment: var1
+        var4 = function() {
             var2 = this;
             var3 = _closure1_slot5;
             var1 = _closure2_slot0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'ensure';
         var0.key = var2;
-        var1 = function(arg0, arg1, arg2) { // Original name: value, environment: var1
+        var1 = function arg0, arg1, arg2() {
             _fun54310: for (var _fun54310_ip = 0;;) switch (_fun54310_ip) {
                 case 0:
                     var0 = arg1;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: MessageReactionsStore, environment: var5
+        var3 = function() {
             _fun54312: for (var _fun54312_ip = 0;;) switch (_fun54312_ip) {
                 case 0:
                     var3 = this;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot9;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getReactions';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2, arg3, arg4() {
             _fun54314: for (var _fun54314_ip = 0;;) switch (_fun54314_ip) {
                 case 0:
                     var7 = arg0;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleConnectionOpen, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot11 = var0;
         var0 = undefined;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CONNECTION_OPEN = var8;
     var1.MESSAGE_REACTION_ADD = var7;
     var1.MESSAGE_REACTION_REMOVE = var7;
-    var3 = function(arg0) { // Original name: handleAddUserReactions, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var6 = var1.messageId;
         var2 = var1.users;

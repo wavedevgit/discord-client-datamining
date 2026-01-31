@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getExtendedInviteType, environment: var1
+    var0 = function arg0() {
         _fun92651: for (var _fun92651_ip = 0;;) switch (_fun92651_ip) {
             case 0:
                 var4 = arg0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/resolveInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: resolveInvite, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun92652: for (var _fun92652_ip = 0;;) switch (_fun92652_ip) {
             case 0:
                 var2 = arg0;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.NetworkActionNames;
                 var7 = var7.INVITE_RESOLVE;
                 var6.event = var7;
-                var7 = function(arg0) { // Original name: properties, environment: var1
+                var7 = function arg0() {
                     _fun92653: for (var _fun92653_ip = 0;;) switch (_fun92653_ip) {
                         case 0:
                             var8 = arg0;

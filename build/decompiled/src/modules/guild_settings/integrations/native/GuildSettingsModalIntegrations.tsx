@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_settings/integrations/native/GuildSettingsModalIntegrations.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildSettingsModalIntegrations, environment: var3
+    var3 = function arg0() {
         _fun115222: for (var _fun115222_ip = 0;;) switch (_fun115222_ip) {
             case 0:
                 var0 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = {};
                 var22 = var23.bind(var5)(var27, var22);
                 var19.trailing = var22;
-                var22 = function() { // Original name: onPress, environment: var14
+                var22 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var0 = _closure1_slot6;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = {};
                 var24 = var23.bind(var5)(var25, var24);
                 var20.trailing = var24;
-                var24 = function() { // Original name: onPress, environment: var14
+                var24 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var0 = _closure1_slot6;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = {};
                 var19 = var18.bind(var5)(var20, var19);
                 var16.trailing = var19;
-                var19 = function() { // Original name: onPress, environment: var14
+                var19 = function() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var0 = _closure1_slot6;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = {};
                             var8 = var10.bind(var5)(var9, var8);
                             var2.trailing = var8;
-                            var7 = function() { // Original name: onPress, environment: var7
+                            var7 = function() {
                                 var3 = _closure2_slot1;
                                 var2 = var3.push;
                                 var0 = _closure1_slot6;

@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/masked_link/components/native/MaskedLinkModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MaskedLinkModal, environment: var1
+    var1 = function arg0() {
         _fun92764: for (var _fun92764_ip = 0;;) switch (_fun92764_ip) {
             case 0:
                 var0 = arg0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'end': true
                 };
                 var8.selected = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = !var0;

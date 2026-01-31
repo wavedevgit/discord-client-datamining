@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: SearchListContentAuthor, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var10 = var0.author;
         var6 = var0.avatarSource;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var0 = function(arg0) { // Original name: SearchListPrivateChannel, environment: var1
+    var0 = function arg0() {
         _fun105544: for (var _fun105544_ip = 0;;) switch (_fun105544_ip) {
             case 0:
                 var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0) { // Original name: SearchListGuildChannel, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.channel;
         var0 = _closure1_slot7;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.SearchListContentAuthor = var4;
     var2.SearchListGuildChannel = var3;
-    var3 = function(arg0) { // Original name: SearchListCardContainer, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var7 = var0.onPress;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SearchListCardContainer = var3;
-    var3 = function(arg0) { // Original name: SearchListCardThumbnail, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.thumbnail;
         var1 = _closure1_slot7;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SearchListCardThumbnail = var3;
-    var3 = function(arg0) { // Original name: SearchListCardContent, environment: var1
+    var3 = function arg0() {
         _fun105548: for (var _fun105548_ip = 0;;) switch (_fun105548_ip) {
             case 0:
                 var0 = arg0;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.SearchListCardContent = var3;
-    var1 = function(arg0) { // Original name: SearchListCardFooter, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var9 = var1.author;
         var8 = var1.avatarSource;

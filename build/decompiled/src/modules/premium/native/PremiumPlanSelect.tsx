@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getPlanDescription, environment: var1
+    var0 = function arg0() {
         _fun82408: for (var _fun82408_ip = 0;;) switch (_fun82408_ip) {
             case 0:
                 var5 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: PlanRow, environment: var1
+    var0 = function arg0() {
         _fun82409: for (var _fun82409_ip = 0;;) switch (_fun82409_ip) {
             case 0:
                 var0 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6;
             case 766:
                 var0.disabled = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     _fun82412: for (var _fun82412_ip = 0;;) switch (_fun82412_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4.WhatYouLoseMode;
                             var4 = var4.DOWNGRADE;
                             var1.mode = var4;
-                            var4 = function() { // Original name: onContinue, environment: var4
+                            var4 = function() {
                                 var2 = _closure2_slot1;
                                 var0 = _closure2_slot0;
                                 var1 = var0.productId;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: PlanSection, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var5 = var1.plans;
         var2 = var1.purchase;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.plan = var0;
             var1 = _closure2_slot4;
             var2.subscription = var1;
-            var1 = function(arg0) { // Original name: purchase, environment: var1
+            var1 = function arg0() {
                 _fun82416: for (var _fun82416_ip = 0;;) switch (_fun82416_ip) {
                     case 0:
                         var3 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             'hideActionSheet': true,
                             'isDismissable': true
                         };
-                        var6 = function() { // Original name: importer, environment: var6
+                        var6 = function() {
                             var2 = _closure1_slot0;
                             var0 = _closure1_slot2;
                             var1 = 34;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: CurrentPlanRow, environment: var1
+    var0 = function arg0() {
         _fun82424: for (var _fun82424_ip = 0;;) switch (_fun82424_ip) {
             case 0:
                 var0 = arg0;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.disabled = var9;
                 var9 = true;
                 var4.hasBackground = var9;
-                var8 = function() { // Original name: purchase, environment: var8
+                var8 = function() {
                     _fun82425: for (var _fun82425_ip = 0;;) switch (_fun82425_ip) {
                         case 0:
                             var1 = _closure1_slot0;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'hideActionSheet': true,
                                 'isDismissable': true
                             };
-                            var7 = function() { // Original name: importer, environment: var7
+                            var7 = function() {
                                 var2 = _closure1_slot0;
                                 var0 = _closure1_slot2;
                                 var1 = 34;
@@ -1249,7 +1249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: PlanSectionHeader, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.string;
         var1 = _closure1_slot27;
@@ -1270,7 +1270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0) { // Original name: PlanSections, environment: var1
+    var0 = function arg0() {
         _fun82434: for (var _fun82434_ip = 0;;) switch (_fun82434_ip) {
             case 0:
                 var0 = arg0;
@@ -1695,7 +1695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[var8] = var7;
     var _closure1_slot28 = var3;
     var7 = {};
-    var3 = function() { // Original name: getLabel, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 15;
@@ -1712,7 +1712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.getLabel = var3;
-    var3 = function(arg0) { // Original name: predicate, environment: var1
+    var3 = function arg0() {
         _fun82438: for (var _fun82438_ip = 0;;) switch (_fun82438_ip) {
             case 0:
                 var1 = arg0;
@@ -1735,7 +1735,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(3);
     var3[0] = var7;
     var7 = {};
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 15;
@@ -1752,7 +1752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.getLabel = var8;
-    var8 = function(arg0) { // Original name: predicate, environment: var1
+    var8 = function arg0() {
         _fun82440: for (var _fun82440_ip = 0;;) switch (_fun82440_ip) {
             case 0:
                 var1 = arg0;
@@ -1774,7 +1774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.predicate = var8;
     var3[1] = var7;
     var7 = {};
-    var8 = function() { // Original name: getLabel, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 15;
@@ -1791,7 +1791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.getLabel = var8;
-    var8 = function(arg0) { // Original name: predicate, environment: var1
+    var8 = function arg0() {
         _fun82442: for (var _fun82442_ip = 0;;) switch (_fun82442_ip) {
             case 0:
                 var1 = arg0;
@@ -1814,7 +1814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[2] = var7;
     var _closure1_slot29 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: PremiumPlanSelect, environment: var1
+    var1 = function arg0, arg1() {
         _fun82443: for (var _fun82443_ip = 0;;) switch (_fun82443_ip) {
             case 0:
                 var0 = arg0;
@@ -2249,7 +2249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.plans = var16;
                 var10.showCurrentPlan = var15;
                 var10.analyticsLoadId = var14;
-                var14 = function(arg0) { // Original name: trackPaymentFlowStep, environment: var13
+                var14 = function arg0() {
                     var0 = arg0;
                     var9 = var0.productId;
                     var11 = var0.fromStep;
@@ -2283,7 +2283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var10.trackPaymentFlowStep = var14;
-                var14 = function(arg0) { // Original name: trackNewPaymentFlow, environment: var13
+                var14 = function arg0() {
                     var0 = arg0;
                     var6 = var0.newFlowAnalyticsLoadId;
                     var7 = var0.productId;

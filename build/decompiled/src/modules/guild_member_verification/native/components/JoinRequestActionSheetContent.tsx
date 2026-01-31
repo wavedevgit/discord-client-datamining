@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var3 = var3.id;
                     var1.userId = var3;
-                    var3 = function() { // Original name: onClose, environment: var3
+                    var3 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 12;
@@ -1210,7 +1210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot15 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: JoinRequestActionSheetContent, environment: var1
+    var1 = function arg0() {
         _fun104951: for (var _fun104951_ip = 0;;) switch (_fun104951_ip) {
             case 0:
                 var0 = arg0;

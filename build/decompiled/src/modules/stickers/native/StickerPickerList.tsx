@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = -1;
                     var0.scrollTo = var2;
                     var _closure3_slot0 = var0;
-                    var0 = function() { // Original name: scrollToCancel, environment: var1
+                    var0 = function() {
                         var0 = global;
                         var2 = var0.clearTimeout;
                         var0 = _closure3_slot0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var _closure3_slot1 = var0;
                     var0 = {};
-                    var2 = function(arg0) { // Original name: scroll, environment: var1
+                    var2 = function arg0() {
                         _fun74425: for (var _fun74425_ip = 0;;) switch (_fun74425_ip) {
                             case 0:
                                 var0 = arg0;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.scroll = var2;
-                    var1 = function() { // Original name: cancel, environment: var1
+                    var1 = function() {
                         var0 = _closure3_slot1;
                         return var0;
                     };
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.bind(var4)(var1, var0);
                     var _closure3_slot0 = var1;
                     var0 = {};
-                    var2 = function(arg0) { // Original name: onScroll, environment: var2
+                    var2 = function arg0() {
                         var1 = arg0;
                         var3 = _closure3_slot0;
                         var0 = var1.nativeEvent;

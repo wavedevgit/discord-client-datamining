@@ -137,11 +137,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Forms/native/FormSwitch.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormSwitch, environment: var1
+    var1 = function arg0() {
         _fun48056: for (var _fun48056_ip = 0;;) switch (_fun48056_ip) {
             case 0:
                 var0 = arg0;
-                var2 = function(arg0, arg1) { // Original name: useIconAnimation, environment: var13
+                var2 = function arg0, arg1() {
                     var9 = arg0;
                     var5 = arg1;
                     var _closure3_slot0 = var9;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = undefined;
                     var2 = var7.bind(var6)(var1);
                     var1 = var2.useAnimatedStyle;
-                    var0 = function() { // Original name: c, environment: var0
+                    var0 = function() {
                         _fun48058: for (var _fun48058_ip = 0;;) switch (_fun48058_ip) {
                             case 0:
                                 var0 = _closure2_slot2;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7[var4];
                 var10 = var19.bind(var3)(var5);
                 var8 = var10.useAnimatedStyle;
-                var5 = function() { // Original name: L, environment: var13
+                var5 = function() {
                     _fun48060: for (var _fun48060_ip = 0;;) switch (_fun48060_ip) {
                         case 0:
                             var0 = {};
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7[var4];
                 var10 = var19.bind(var3)(var5);
                 var8 = var10.useAnimatedStyle;
-                var5 = function() { // Original name: B, environment: var13
+                var5 = function() {
                     _fun48061: for (var _fun48061_ip = 0;;) switch (_fun48061_ip) {
                         case 0:
                             var0 = {};
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19[0] = var21;
                 var19[1] = var20;
                 var0.style = var19;
-                var19 = function() { // Original name: onPress, environment: var13
+                var19 = function() {
                     _fun48062: for (var _fun48062_ip = 0;;) switch (_fun48062_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.disabled = var16;
                 var15.checked = var6;
                 var0.accessibilityState = var15;
-                var13 = function() { // Original name: onAccessibilityTap, environment: var13
+                var13 = function() {
                     var2 = _closure2_slot4;
                     var0 = _closure2_slot0;
                     var1 = !var0;

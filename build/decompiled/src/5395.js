@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = dependencyMap;
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
-            var0 = function(arg0) { // Original name: _getRequireWildcardCache, environment: var1
+            var0 = function arg0() {
                 _fun48113: for (var _fun48113_ip = 0;;) switch (_fun48113_ip) {
                     case 0:
                         var1 = global;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = new var5[var1](var4);
                         var1 = var1 instanceof Object ? var1 : var2;
                         var _closure2_slot1 = var1;
-                        var2 = function(arg0) { // Original name: _getRequireWildcardCache, environment: var0
+                        var2 = function arg0() {
                             _fun48114: for (var _fun48114_ip = 0;;) switch (_fun48114_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5[var3];
             var3 = var4.bind(var0)(var3);
             var _closure1_slot4 = var3;
-            var1 = function(arg0) { // Original name: StepsIndicator, environment: var1
+            var1 = function arg0() {
                 _fun48115: for (var _fun48115_ip = 0;;) switch (_fun48115_ip) {
                     case 0:
                         var0 = arg0;

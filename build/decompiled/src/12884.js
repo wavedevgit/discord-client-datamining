@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: getAsyncContextStack, environment: var1
+    var0 = function() {
         _fun99098: for (var _fun99098_ip = 0;;) switch (_fun99098_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: withScope, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot5;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: withSetScope, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: withIsolationScope, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot5;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var2, var3, var4);
     var3 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1) { // Original name: AsyncContextStack, environment: var4
+        var2 = function arg0, arg1() {
             _fun99105: for (var _fun99105_ip = 0;;) switch (_fun99105_ip) {
                 case 0:
                     var3 = arg0;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'withScope';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: withScope, environment: var4
+        var1 = function arg0() {
             _fun99106: for (var _fun99106_ip = 0;;) switch (_fun99106_ip) {
                 case 0:
                     var2 = this;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getClient';
         var0.key = var5;
-        var5 = function() { // Original name: getClient, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.getStackTop;
             var0 = var0.bind(var1)();
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getScope';
         var0.key = var5;
-        var5 = function() { // Original name: getScope, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = var1.getStackTop;
             var0 = var0.bind(var1)();
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getIsolationScope';
         var0.key = var5;
-        var5 = function() { // Original name: getIsolationScope, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._isolationScope;
             return var0;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getStackTop';
         var0.key = var5;
-        var5 = function() { // Original name: getStackTop, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0._stack;
             var0 = var0._stack;
@@ -308,7 +308,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_pushScope';
         var0.key = var5;
-        var5 = function() { // Original name: _pushScope, environment: var4
+        var5 = function() {
             var5 = this;
             var0 = var5.getScope;
             var1 = var0.bind(var5)();
@@ -329,7 +329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_popScope';
         var0.key = var5;
-        var4 = function() { // Original name: _popScope, environment: var4
+        var4 = function() {
             _fun99114: for (var _fun99114_ip = 0;;) switch (_fun99114_ip) {
                 case 0:
                     var1 = this;
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)();
     var _closure1_slot4 = var3;
     var2.AsyncContextStack = var3;
-    var1 = function() { // Original name: getStackAsyncContextStrategy, environment: var1
+    var1 = function() {
         var0 = {};
         var3 = _closure1_slot8;
         var0.withIsolationScope = var3;
@@ -369,7 +369,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0.withScope = var3;
         var2 = _closure1_slot7;
         var0.withSetScope = var2;
-        var2 = function(arg0, arg1) { // Original name: withSetIsolationScope, environment: var1
+        var2 = function arg0, arg1() {
             var2 = _closure1_slot8;
             var1 = undefined;
             var0 = arg1;
@@ -377,7 +377,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.withSetIsolationScope = var2;
-        var2 = function() { // Original name: getCurrentScope, environment: var1
+        var2 = function() {
             var1 = _closure1_slot5;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -386,7 +386,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.getCurrentScope = var2;
-        var1 = function() { // Original name: getIsolationScope, environment: var1
+        var1 = function() {
             var1 = _closure1_slot5;
             var0 = undefined;
             var1 = var1.bind(var0)();

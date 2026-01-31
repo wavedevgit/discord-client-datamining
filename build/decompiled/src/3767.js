@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: findDescendantWithExitingAnimation, environment: var0
+    var2 = function arg0, arg1() {
         _fun33850: for (var _fun33850_ip = 0;;) switch (_fun33850_ip) {
             case 0:
                 var0 = arg0;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun33850
                 }
             case 45:
-                var3 = function(arg0, arg1) { // Original name: reattachElementToAncestor, environment: var2
+                var3 = function arg0, arg1() {
                     _fun33851: for (var _fun33851_ip = 0;;) switch (_fun33851_ip) {
                         case 0:
                             var2 = arg0;
@@ -161,7 +161,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var2;
     var2 = false;
     var _closure1_slot4 = var2;
-    var2 = function() { // Original name: configureWebLayoutAnimations, environment: var0
+    var2 = function() {
         _fun33853: for (var _fun33853_ip = 0;;) switch (_fun33853_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.configureWebLayoutAnimations = var2;
-    var2 = function(arg0, arg1) { // Original name: insertWebAnimation, environment: var0
+    var2 = function arg0, arg1() {
         _fun33855: for (var _fun33855_ip = 0;;) switch (_fun33855_ip) {
             case 0:
                 var6 = arg0;
@@ -367,7 +367,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.insertWebAnimation = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: scheduleAnimationCleanup, environment: var0
+    var2 = function arg0, arg1, arg2() {
         var3 = arg1;
         var0 = arg0;
         var _closure2_slot0 = var0;
@@ -506,7 +506,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.scheduleAnimationCleanup = var2;
-    var2 = function() { // Original name: addHTMLMutationObserver, environment: var0
+    var2 = function() {
         _fun33858: for (var _fun33858_ip = 0;;) switch (_fun33858_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -663,7 +663,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addHTMLMutationObserver = var2;
-    var0 = function(arg0, arg1) { // Original name: areDOMRectsEqual, environment: var0
+    var0 = function arg0, arg1() {
         _fun33860: for (var _fun33860_ip = 0;;) switch (_fun33860_ip) {
             case 0:
                 var2 = arg0;

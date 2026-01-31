@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/fastest_list/utils/FastestListLogger.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: logFastestListError, environment: var1
+    var1 = function arg0, arg1() {
         var4 = arg0;
         var5 = arg1;
         var2 = _closure1_slot2;

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var2 = function(arg0, arg1, arg2) { // Original name: TDigest, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun93708: for (var _fun93708_ip = 0;;) switch (_fun93708_ip) {
             case 0:
                 var0 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var0 = function(arg0, arg1) { // Original name: compare_centroid_means, environment: var1
+    var0 = function arg0, arg1() {
         _fun93709: for (var _fun93709_ip = 0;;) switch (_fun93709_ip) {
             case 0:
                 var2 = arg0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: compare_centroid_mean_cumns, environment: var1
+    var0 = function arg0, arg1() {
         var0 = arg0;
         var1 = var0.mean_cumn;
         var0 = arg1;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: Digest, environment: var1
+    var0 = function arg0() {
         _fun93711: for (var _fun93711_ip = 0;;) switch (_fun93711_ip) {
             case 0:
                 var4 = arg0;

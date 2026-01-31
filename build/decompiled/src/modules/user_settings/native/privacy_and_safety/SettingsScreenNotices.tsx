@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = {};
     var13 = 200;
     var12.order = var13;
-    var13 = function() { // Original name: predicate, environment: var3
+    var13 = function() {
         _fun81224: for (var _fun81224_ip = 0;;) switch (_fun81224_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = {};
     var14 = 300;
     var12.order = var14;
-    var14 = function() { // Original name: predicate, environment: var3
+    var14 = function() {
         _fun81225: for (var _fun81225_ip = 0;;) switch (_fun81225_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_settings/native/privacy_and_safety/SettingsScreenNotices.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: SettingsScreenNotices, environment: var3
+    var3 = function arg0() {
         _fun81226: for (var _fun81226_ip = 0;;) switch (_fun81226_ip) {
             case 0:
                 var1 = arg0;

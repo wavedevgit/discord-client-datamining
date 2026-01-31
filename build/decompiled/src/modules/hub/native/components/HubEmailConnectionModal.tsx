@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: getScreens, environment: var1
+    var0 = function arg0, arg1() {
         _fun80329: for (var _fun80329_ip = 0;;) switch (_fun80329_ip) {
             case 0:
                 var4 = arg0;
@@ -39,12 +39,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = true;
                 var2.fullscreen = var5;
                 var2.headerLeft = var6;
-                var7 = function() { // Original name: headerTitle, environment: var3
+                var7 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var7;
-                var7 = function(arg0) { // Original name: render, environment: var3
+                var7 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.ImpressionNames;
                 var7 = var7.HUB_EMAIL_SIGNUP;
                 var2.impressionName = var7;
-                var7 = function(arg0) { // Original name: impressionProperties, environment: var3
+                var7 = function arg0() {
                     var0 = arg0;
                     var2 = var0.invite;
                     var0 = {};
@@ -84,12 +84,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.impressionProperties = var7;
                 var2.fullscreen = var5;
                 var2.headerLeft = var6;
-                var6 = function() { // Original name: headerTitle, environment: var3
+                var6 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var6;
-                var6 = function(arg0) { // Original name: render, environment: var3
+                var6 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -110,12 +110,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.EMAIL_WAITLIST;
                 var2 = {};
                 var2.fullscreen = var5;
-                var6 = function() { // Original name: headerTitle, environment: var3
+                var6 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var6;
-                var6 = function(arg0) { // Original name: render, environment: var3
+                var6 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -136,12 +136,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.SUBMIT_SCHOOL;
                 var2 = {};
                 var2.fullscreen = var5;
-                var6 = function() { // Original name: headerTitle, environment: var3
+                var6 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var6;
-                var6 = function(arg0) { // Original name: render, environment: var3
+                var6 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -162,12 +162,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.SELECT_SCHOOL;
                 var2 = {};
                 var2.fullscreen = var5;
-                var6 = function() { // Original name: headerTitle, environment: var3
+                var6 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var6;
-                var6 = function(arg0) { // Original name: render, environment: var3
+                var6 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -188,12 +188,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.VERIFY_PIN;
                 var2 = {};
                 var2.fullscreen = var5;
-                var5 = function() { // Original name: headerTitle, environment: var3
+                var5 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerTitle = var5;
-                var5 = function(arg0) { // Original name: render, environment: var3
+                var5 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'fullscreen': true,
                     'headerShown': false
                 };
-                var3 = function(arg0) { // Original name: render, environment: var3
+                var3 = function arg0() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubEmailConnectionModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: HubEmailConnectionModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.isNestedNavigator;
         var _closure2_slot0 = var2;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             _fun80346: for (var _fun80346_ip = 0;;) switch (_fun80346_ip) {
                 case 0:
-                    var5 = function() { // Original name: handleClose, environment: var0
+                    var5 = function() {
                         _fun80347: for (var _fun80347_ip = 0;;) switch (_fun80347_ip) {
                             case 0:
                                 var4 = arguments[0];
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: HubEmailConnectionScreen, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var1 = _closure1_slot6;

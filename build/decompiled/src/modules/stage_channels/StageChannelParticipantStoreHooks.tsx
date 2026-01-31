@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/StageChannelParticipantStoreHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useStageParticipants, environment: var1
+    var3 = function arg0, arg1() {
         var10 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var10;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useStageParticipants = var3;
-    var3 = function(arg0, arg1) { // Original name: useStageParticipantsCount, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useStageParticipantsCount = var3;
-    var3 = function(arg0) { // Original name: useSortedRequestToSpeakParticipants, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var8 = _closure1_slot0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSortedRequestToSpeakParticipants = var3;
-    var1 = function(arg0) { // Original name: useActualStageSpeakerCount, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

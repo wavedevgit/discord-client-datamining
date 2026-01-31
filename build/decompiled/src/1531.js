@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.PrivateValueStore;
-    var1 = function(arg0) { // Original name: useNavigationHelpers, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var10 = var1.id;
         var _closure2_slot0 = var10;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = function() { // Environment: var0
             _fun17397: for (var _fun17397_ip = 0;;) switch (_fun17397_ip) {
                 case 0:
-                    var7 = function(arg0) { // Original name: dispatch, environment: var1
+                    var7 = function arg0() {
                         _fun17398: for (var _fun17398_ip = 0;;) switch (_fun17398_ip) {
                             case 0:
                                 var3 = arg0;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var8.isFocused;
                 case 172:
                     var2.isFocused = var7;
-                    var7 = function() { // Original name: canGoBack, environment: var1
+                    var7 = function() {
                         _fun17402: for (var _fun17402_ip = 0;;) switch (_fun17402_ip) {
                             case 0:
                                 var0 = _closure2_slot2;
@@ -228,12 +228,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var2.canGoBack = var7;
-                    var7 = function() { // Original name: getId, environment: var1
+                    var7 = function() {
                         var0 = _closure2_slot0;
                         return var0;
                     };
                     var2.getId = var7;
-                    var7 = function(arg0) { // Original name: getParent, environment: var1
+                    var7 = function arg0() {
                         _fun17404: for (var _fun17404_ip = 0;;) switch (_fun17404_ip) {
                             case 0:
                                 var3 = arg0;

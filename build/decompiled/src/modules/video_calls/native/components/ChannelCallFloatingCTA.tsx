@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: FloatingCTA, environment: var3
+    var0 = function arg0() {
         _fun69428: for (var _fun69428_ip = 0;;) switch (_fun69428_ip) {
             case 0:
                 var0 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var1 = function() { // Original name: openDrawerForConsoleVoice, environment: var3
+    var1 = function() {
         var3 = _closure1_slot13;
         var0 = undefined;
         var2 = true;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var1;
-    var0 = function(arg0) { // Original name: ConsoleVoiceUpsell, environment: var3
+    var0 = function arg0() {
         _fun69432: for (var _fun69432_ip = 0;;) switch (_fun69432_ip) {
             case 0:
                 var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var9 = 4;
                 var5.hitSlop = var9;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot8;
                     var1 = undefined;
                     var0 = true;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: ConsoleNUXCTA, environment: var3
+    var0 = function() {
         var3 = _closure1_slot18;
         var2 = _closure1_slot22;
         var1 = {};
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: handlePressSoundboardNotice, environment: var3
+    var0 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 26;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: handleSoundboardNoticeClose, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 33;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: SoundboardNotice, environment: var3
+    var0 = function() {
         var0 = _closure1_slot21;
         var3 = undefined;
         var10 = var0.bind(var3)();
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: ChannelCallInvite, environment: var3
+    var0 = function arg0() {
         _fun69438: for (var _fun69438_ip = 0;;) switch (_fun69438_ip) {
             case 0:
                 var0 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8[var6];
                 var6 = var7.bind(var3)(var6);
                 var0.image = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 38;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/video_calls/native/components/ChannelCallFloatingCTA.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun69441: for (var _fun69441_ip = 0;;) switch (_fun69441_ip) {
             case 0:
                 var1 = arg0;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var3)(var4);
                 var4 = {};
                 var4.contentTypes = var8;
-                var7 = function(arg0) { // Original name: children, environment: var7
+                var7 = function arg0() {
                     _fun69444: for (var _fun69444_ip = 0;;) switch (_fun69444_ip) {
                         case 0:
                             var0 = arg0;

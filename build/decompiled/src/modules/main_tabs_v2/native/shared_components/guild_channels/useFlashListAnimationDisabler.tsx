@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/useFlashListAnimationDisabler.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useFlashListAnimationDisabler, environment: var1
+    var1 = function arg0() {
         var9 = arg0;
         var _closure2_slot0 = var9;
         var6 = _closure1_slot0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var7[var3];
         var7 = var6.bind(var5)(var3);
         var6 = var7.useAnimatedReaction;
-        var5 = function() { // Original name: _, environment: var1
+        var5 = function() {
             var1 = _closure2_slot2;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.__workletHash = var3;
         var3 = _closure1_slot3;
         var5.__initData = var3;
-        var3 = function(arg0, arg1) { // Original name: u, environment: var1
+        var3 = function arg0, arg1() {
             _fun50920: for (var _fun50920_ip = 0;;) switch (_fun50920_ip) {
                 case 0:
                     var1 = arg0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3.__initData = var8;
         var3 = var6.bind(var7)(var5, var3);
         var3 = var4.useCallback;
-        var1 = function(arg0) { // Original name: b, environment: var1
+        var1 = function arg0() {
             _fun50921: for (var _fun50921_ip = 0;;) switch (_fun50921_ip) {
                 case 0:
                     var0 = arg0;

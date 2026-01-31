@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/auth/native/getError.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: getError, environment: var1
+    var1 = function arg0, arg1() {
         _fun60541: for (var _fun60541_ip = 0;;) switch (_fun60541_ip) {
             case 0:
                 var1 = arg1;

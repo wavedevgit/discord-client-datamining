@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function(arg0) { // Original name: queueMicrotask, environment: var0
+    var0 = function arg0() {
         _fun2613: for (var _fun2613_ip = 0;;) switch (_fun2613_ip) {
             case 0:
                 var3 = arg0;

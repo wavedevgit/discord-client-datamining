@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/blocking/useDiscoverableApplicationStream.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useDiscoverableApplicationStream, environment: var1
+    var1 = function arg0() {
         _fun61907: for (var _fun61907_ip = 0;;) switch (_fun61907_ip) {
             case 0:
                 var7 = arg0;

@@ -1213,7 +1213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.actionAllPendingJoinRequests = var10;
     var1.resetGuildJoinRequest = var9;
     var1.fetchRequestToJoinGuilds = var8;
-    var8 = function(arg0, arg1) { // Original name: setSelectedApplicationTab, environment: var7
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -1232,7 +1232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setSelectedApplicationTab = var8;
-    var8 = function(arg0, arg1) { // Original name: setSelectedSortOrder, environment: var7
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setSelectedSortOrder = var8;
-    var7 = function(arg0, arg1) { // Original name: setSelectedGuildJoinRequest, environment: var7
+    var7 = function arg0, arg1() {
         _fun59851: for (var _fun59851_ip = 0;;) switch (_fun59851_ip) {
             case 0:
                 var5 = arg0;

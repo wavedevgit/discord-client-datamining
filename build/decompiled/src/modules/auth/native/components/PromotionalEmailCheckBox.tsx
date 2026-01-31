@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/PromotionalEmailCheckBox.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PromotionalEmailCheckBox, environment: var1
+    var1 = function arg0() {
         _fun100481: for (var _fun100481_ip = 0;;) switch (_fun100481_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var9.selected = var10;
                 var5.accessibilityState = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot5;
                     var0 = _closure2_slot0;
                     var1 = !var0;

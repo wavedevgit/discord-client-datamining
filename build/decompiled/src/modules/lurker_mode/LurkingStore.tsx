@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun24634: for (var _fun24634_ip = 0;;) switch (_fun24634_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: removeLurkedGuild, environment: var3
+    var0 = function arg0() {
         _fun24637: for (var _fun24637_ip = 0;;) switch (_fun24637_ip) {
             case 0:
                 var1 = arg0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: addLurkingGuild, environment: var3
+    var0 = function arg0() {
         _fun24638: for (var _fun24638_ip = 0;;) switch (_fun24638_ip) {
             case 0:
                 var4 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LurkingStore, environment: var5
+        var3 = function() {
             _fun24640: for (var _fun24640_ip = 0;;) switch (_fun24640_ip) {
                 case 0:
                     var3 = this;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var3 = var4.waitFor;
             var2 = _closure1_slot6;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'lurkingGuildIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'mostRecentLurkedGuildId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun24643: for (var _fun24643_ip = 0;;) switch (_fun24643_ip) {
                 case 0:
                     var0 = _closure1_slot11;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLurking';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun24644: for (var _fun24644_ip = 0;;) switch (_fun24644_ip) {
                 case 0:
                     var4 = arg0;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLurkingSource';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLoadId';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun24646: for (var _fun24646_ip = 0;;) switch (_fun24646_ip) {
                 case 0:
                     var2 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var11 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleConnectionOpen, environment: var3
+    var8 = function() {
         var3 = _closure1_slot7;
         var2 = var3.getGuildsArray;
         var4 = var2.bind(var3)();
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var8;
-    var8 = function(arg0) { // Original name: handleGuildJoin, environment: var3
+    var8 = function arg0() {
         _fun24650: for (var _fun24650_ip = 0;;) switch (_fun24650_ip) {
             case 0:
                 var1 = arg0;
@@ -448,12 +448,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_JOIN = var8;
-    var8 = function(arg0) { // Original name: handleGuildStopLurking, environment: var3
+    var8 = function arg0() {
         _fun24651: for (var _fun24651_ip = 0;;) switch (_fun24651_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.ignoredGuildIds;
-                var1 = function(arg0) { // Original name: clearLurkingGuilds, environment: var0
+                var1 = function arg0() {
                     _fun24652: for (var _fun24652_ip = 0;;) switch (_fun24652_ip) {
                         case 0:
                             var3 = arg0;
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_STOP_LURKING = var8;
-    var8 = function(arg0) { // Original name: handleGuildStopLurkingFailure, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.lurkingGuildId;
         var1 = var0.lurkingSource;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_STOP_LURKING_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleGuildCreate, environment: var3
+    var8 = function arg0() {
         _fun24655: for (var _fun24655_ip = 0;;) switch (_fun24655_ip) {
             case 0:
                 var0 = arg0;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleGuildDelete, environment: var3
+    var8 = function arg0() {
         _fun24656: for (var _fun24656_ip = 0;;) switch (_fun24656_ip) {
             case 0:
                 var0 = arg0;
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_DELETE = var8;
-    var3 = function(arg0) { // Original name: handleGuildMemberAdd, environment: var3
+    var3 = function arg0() {
         _fun24657: for (var _fun24657_ip = 0;;) switch (_fun24657_ip) {
             case 0:
                 var1 = arg0;

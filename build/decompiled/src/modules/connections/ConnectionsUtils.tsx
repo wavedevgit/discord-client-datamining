@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = ['426537812993638400', '1042836142560645130', '296023718839451649', '979802510766268446', '1031611223235637258', '512333785338216465'];
     var2.officialApplicationIds = var4;
     var2.ConnectionConfigurationRuleOperator = var3;
-    var3 = function(arg0) { // Original name: getCallbackParamsFromURL, environment: var1
+    var3 = function arg0() {
         _fun40680: for (var _fun40680_ip = 0;;) switch (_fun40680_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCallbackParamsFromURL = var3;
-    var3 = function(arg0) { // Original name: getConnectionsCheckText, environment: var1
+    var3 = function arg0() {
         _fun40681: for (var _fun40681_ip = 0;;) switch (_fun40681_ip) {
             case 0:
                 var1 = arg0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -753,7 +753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -847,7 +847,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -963,7 +963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -995,7 +995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1089,7 +1089,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1153,7 +1153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.intl;
                 var8 = var9.format;
                 var6 = {};
-                var10 = function() { // Original name: platformQuantityHook, environment: var5
+                var10 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1247,7 +1247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2.intl;
                 var6 = var7.format;
                 var2 = {};
-                var8 = function() { // Original name: platformQuantityHook, environment: var5
+                var8 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1276,7 +1276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2.intl;
                 var6 = var7.format;
                 var2 = {};
-                var8 = function() { // Original name: platformQuantityHook, environment: var5
+                var8 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1305,7 +1305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2.intl;
                 var6 = var7.format;
                 var2 = {};
-                var8 = function() { // Original name: platformQuantityHook, environment: var5
+                var8 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1337,7 +1337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.intl;
                 var2 = var3.format;
                 var1 = {};
-                var5 = function() { // Original name: platformQuantityHook, environment: var5
+                var5 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 7;
@@ -1363,7 +1363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getConnectionsCheckText = var3;
-    var3 = function(arg0) { // Original name: isVerifiedRolesChannelVisible, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.some;
         var0 = function(arg0) { // Environment: var0
@@ -1378,7 +1378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isVerifiedRolesChannelVisible = var3;
-    var3 = function(arg0) { // Original name: getVisibleConnectionsRole, environment: var1
+    var3 = function arg0() {
         _fun40710: for (var _fun40710_ip = 0;;) switch (_fun40710_ip) {
             case 0:
                 var0 = arg0;
@@ -1519,7 +1519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVisibleConnectionsRole = var3;
-    var3 = function(arg0, arg1) { // Original name: getCreatedAtDate, environment: var1
+    var3 = function arg0, arg1() {
         _fun40712: for (var _fun40712_ip = 0;;) switch (_fun40712_ip) {
             case 0:
                 var4 = arg0;
@@ -1581,7 +1581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCreatedAtDate = var3;
-    var1 = function(arg0) { // Original name: useShowLinkedRolesAdminNux, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;

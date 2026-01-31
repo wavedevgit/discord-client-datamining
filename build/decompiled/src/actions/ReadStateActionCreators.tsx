@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
-    var4 = function(arg0, arg1) { // Original name: ack, environment: var1
+    var4 = function arg0, arg1() {
         _fun41451: for (var _fun41451_ip = 0;;) switch (_fun41451_ip) {
             case 0:
                 var6 = arguments[2];
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0, arg1) { // Original name: ackCategory, environment: var1
+    var3 = function arg0, arg1() {
         _fun41452: for (var _fun41452_ip = 0;;) switch (_fun41452_ip) {
             case 0:
                 var3 = arg0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.ack = var4;
     var2.ackCategory = var3;
-    var3 = function(arg0, arg1) { // Original name: ackChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun41456: for (var _fun41456_ip = 0;;) switch (_fun41456_ip) {
             case 0:
                 var0 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ackChannel = var3;
-    var3 = function(arg0, arg1) { // Original name: bulkAck, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.bulkAck = var3;
-    var3 = function(arg0) { // Original name: localAck, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.localAck = var3;
-    var3 = function(arg0, arg1) { // Original name: enableAutomaticAck, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.enableAutomaticAck = var3;
-    var3 = function(arg0, arg1) { // Original name: disableAutomaticAck, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.disableAutomaticAck = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: ackGuildFeature, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ackGuildFeature = var3;
-    var3 = function(arg0, arg1) { // Original name: ackUserFeature, environment: var1
+    var3 = function arg0, arg1() {
         _fun41462: for (var _fun41462_ip = 0;;) switch (_fun41462_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ackUserFeature = var3;
-    var1 = function(arg0) { // Original name: clearOldestUnreadMessageId, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;

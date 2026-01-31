@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: setConversationSuggestionsEnabled, environment: var7
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useIOSConversationSuggestionsSettingValue, environment: var7
+    var8 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useEffect;
         var2 = function() { // Environment: var0
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = new Array(0);
         var1 = var3.bind(var4)(var2, var1);
-        var1 = function() { // Original name: useConversationSuggestionsEnabled, environment: var0
+        var1 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onIOSConversationSuggestionsSettingValueChange, environment: var7
+    var8 = function arg0() {
         var3 = _closure1_slot5;
         var2 = var3.setConversationSuggestionsEnabled;
         var1 = arg0;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useHasIOSConversationSuggestionsSetting, environment: var7
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;

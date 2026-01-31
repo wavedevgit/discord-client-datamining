@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emojis/top_emojis/TopEmojisUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: maybeFetchTopEmojisByGuild, environment: var1
+    var1 = function arg0() {
         _fun57228: for (var _fun57228_ip = 0;;) switch (_fun57228_ip) {
             case 0:
                 var2 = arg0;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'lib/rateLimit.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1, arg2) { // Original name: rateLimit, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot2 = var0;
         var0 = new Array(0);
         var _closure2_slot4 = var0;
-        var0 = function(arg0) { // Original name: wrapper, environment: var1
+        var0 = function arg0() {
             _fun94881: for (var _fun94881_ip = 0;;) switch (_fun94881_ip) {
                 case 0:
                     var3 = 0;

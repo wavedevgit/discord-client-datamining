@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var8;
             var _closure1_slot2 = var6;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun6187: for (var _fun6187_ip = 0;;) switch (_fun6187_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot36 = var0;
-            var0 = function(arg0) { // Original name: incrementMetric, environment: var1
+            var0 = function arg0() {
                 _fun6190: for (var _fun6190_ip = 0;;) switch (_fun6190_ip) {
                     case 0:
                         var1 = arguments[1];
@@ -174,22 +174,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3 instanceof Object ? var3 : var7;
             var _closure1_slot31 = var3;
             var3 = {};
-            var7 = function() { // Original name: handleConnectionOpen, environment: var1
+            var7 = function() {
                 var0 = undefined;
                 return var0;
             };
             var3.handleConnectionOpen = var7;
-            var7 = function() { // Original name: handleConnectionClosed, environment: var1
+            var7 = function() {
                 var0 = undefined;
                 return var0;
             };
             var3.handleConnectionClosed = var7;
-            var7 = function() { // Original name: handleFingerprint, environment: var1
+            var7 = function() {
                 var0 = undefined;
                 return var0;
             };
             var3.handleFingerprint = var7;
-            var7 = function() { // Original name: handleTrack, environment: var1
+            var7 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = new Array(0);
             var _closure1_slot33 = var7;
             var _closure1_slot34 = var4;
-            var4 = function() { // Original name: defaultGetSessionId, environment: var1
+            var4 = function() {
                 var0 = global;
                 var2 = var0.Promise;
                 var1 = var2.resolve;
@@ -254,13 +254,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun6198
                         }
                     case 107:
-                        var5 = function() { // Original name: B, environment: var0
+                        var5 = function() {
                             var0 = null;
                             return var0;
                         };
                     case 112:
                         var _closure2_slot5 = var5;
-                        var5 = function() { // Original name: canDrain, environment: var0
+                        var5 = function() {
                             _fun6200: for (var _fun6200_ip = 0;;) switch (_fun6200_ip) {
                                 case 0:
                                     var0 = _closure1_slot33;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var _closure2_slot6 = var5;
-                        var5 = function(arg0) { // Original name: scheduleDrain, environment: var0
+                        var5 = function arg0() {
                             _fun6201: for (var _fun6201_ip = 0;;) switch (_fun6201_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var _closure2_slot7 = var5;
-                        var5 = function() { // Original name: drainEventsQueue, environment: var0
+                        var5 = function() {
                             _fun6202: for (var _fun6202_ip = 0;;) switch (_fun6202_ip) {
                                 case 0:
                                     var0 = null;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var _closure2_slot8 = var5;
-                        var5 = function(arg0) { // Original name: submitEventsImmediately, environment: var0
+                        var5 = function arg0() {
                             _fun6206: for (var _fun6206_ip = 0;;) switch (_fun6206_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var _closure2_slot9 = var5;
-                        var5 = function() { // Original name: sendTelemetryEvent, environment: var0
+                        var5 = function() {
                             _fun6209: for (var _fun6209_ip = 0;;) switch (_fun6209_ip) {
                                 case 0:
                                     var4 = {};
@@ -684,7 +684,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var _closure2_slot10 = var5;
-                        var5 = function() { // Original name: stopTelemetryHeartbeat, environment: var0
+                        var5 = function() {
                             _fun6210: for (var _fun6210_ip = 0;;) switch (_fun6210_ip) {
                                 case 0:
                                     var2 = _closure1_slot24;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = var0.id;
                                     var _closure1_slot29 = var1;
                                 case 48:
-                                    var0 = function() { // Original name: startTelemetryHeartbeat, environment: var0
+                                    var0 = function() {
                                         _fun6212: for (var _fun6212_ip = 0;;) switch (_fun6212_ip) {
                                             case 0:
                                                 var3 = _closure1_slot24;
@@ -793,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                 var0 = var7 * var0;
                                                 var0 = var0 + var6;
                                                 var5 = var4.bind(var5)(var0);
-                                                var0 = function() { // Original name: scheduleNextHeartbeat, environment: var2
+                                                var0 = function() {
                                                     var3 = _closure1_slot10;
                                                     var0 = 0.1;
                                                     var4 = var0 * var3;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var5.bind(var4)(var1);
                         var1 = var1.Store;
                         var0 = function(arg0) { // Environment: var0
-                            var3 = function(arg0) { // Original name: AnalyticsTrackingStore, environment: var0
+                            var3 = function arg0() {
                                 _fun6221: for (var _fun6221_ip = 0;;) switch (_fun6221_ip) {
                                     case 0:
                                         var3 = this;
@@ -1093,7 +1093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var5 = 'initialize';
                             var4.key = var5;
-                            var0 = function() { // Original name: initialize, environment: var0
+                            var0 = function() {
                                 _fun6222: for (var _fun6222_ip = 0;;) switch (_fun6222_ip) {
                                     case 0:
                                         var2 = this;

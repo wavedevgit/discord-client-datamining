@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var8;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun36808: for (var _fun36808_ip = 0;;) switch (_fun36808_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var7.bind(var0)(var5);
     var6 = var5.EventEmitter;
     var5 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: Upload, environment: var5
+        var3 = function arg0() {
             _fun36812: for (var _fun36812_ip = 0;;) switch (_fun36812_ip) {
                 case 0:
                     var2 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'cancel';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = this;
             return var0;
         };
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.default = var5;
     var2.UploadPlatform = var4;
-    var3 = function(arg0) { // Original name: isResolvedUpload, environment: var3
+    var3 = function arg0() {
         _fun36815: for (var _fun36815_ip = 0;;) switch (_fun36815_ip) {
             case 0:
                 var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChangeBannerColorRow, environment: var1
+    var0 = function arg0() {
         _fun79752: for (var _fun79752_ip = 0;;) switch (_fun79752_ip) {
             case 0:
                 var0 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
                 var0.trailing = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/ChangeBannerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChangeBannerActionSheet, environment: var1
+    var1 = function arg0() {
         _fun79756: for (var _fun79756_ip = 0;;) switch (_fun79756_ip) {
             case 0:
                 var0 = arg0;
@@ -776,7 +776,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.text = var20;
                 var17 = var19.bind(var3)(var18, var17);
                 var13.label = var17;
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     var2 = _closure2_slot0;
                     var0 = undefined;
                     var1 = null;

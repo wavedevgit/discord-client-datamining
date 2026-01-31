@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun77743: for (var _fun77743_ip = 0;;) switch (_fun77743_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun77745: for (var _fun77745_ip = 0;;) switch (_fun77745_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: PaypalVanityTag, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.style;
         var1 = _closure1_slot8;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: VanityMetric, environment: var1
+    var0 = function arg0() {
         _fun77747: for (var _fun77747_ip = 0;;) switch (_fun77747_ip) {
             case 0:
                 var0 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: VanityItem, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.label;
         var13 = var0.imageSrc;
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: VanityTag, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.label;
         var6 = var0.style;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: VanityDate, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.date;
         var8 = var0.label;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/connections/native/ConnectionMetadataVanityItems.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: generateRedditMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77751: for (var _fun77751_ip = 0;;) switch (_fun77751_ip) {
             case 0:
                 var8 = arg0;
@@ -723,7 +723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateRedditMetadataItems = var3;
-    var3 = function(arg0) { // Original name: generateTwitterMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77752: for (var _fun77752_ip = 0;;) switch (_fun77752_ip) {
             case 0:
                 var9 = arg0;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateTwitterMetadataItems = var3;
-    var3 = function(arg0) { // Original name: generateBlueskyMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77753: for (var _fun77753_ip = 0;;) switch (_fun77753_ip) {
             case 0:
                 var9 = arg0;
@@ -917,7 +917,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateBlueskyMetadataItems = var3;
-    var3 = function(arg0) { // Original name: generateSteamMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77754: for (var _fun77754_ip = 0;;) switch (_fun77754_ip) {
             case 0:
                 var9 = arg0;
@@ -1094,7 +1094,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateSteamMetadataItems = var3;
-    var3 = function(arg0) { // Original name: generatePaypalMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77755: for (var _fun77755_ip = 0;;) switch (_fun77755_ip) {
             case 0:
                 var6 = arguments[1];
@@ -1129,7 +1129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generatePaypalMetadataItems = var3;
-    var3 = function(arg0) { // Original name: generateEbayMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77756: for (var _fun77756_ip = 0;;) switch (_fun77756_ip) {
             case 0:
                 var4 = arg0;
@@ -1222,7 +1222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateEbayMetadataItems = var3;
-    var3 = function(arg0) { // Original name: generateTikTokMetadataItems, environment: var1
+    var3 = function arg0() {
         _fun77757: for (var _fun77757_ip = 0;;) switch (_fun77757_ip) {
             case 0:
                 var11 = arg0;
@@ -1389,7 +1389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateTikTokMetadataItems = var3;
-    var1 = function(arg0) { // Original name: generateRoleConnectionMetadataItems, environment: var1
+    var1 = function arg0() {
         _fun77758: for (var _fun77758_ip = 0;;) switch (_fun77758_ip) {
             case 0:
                 var4 = arg0;

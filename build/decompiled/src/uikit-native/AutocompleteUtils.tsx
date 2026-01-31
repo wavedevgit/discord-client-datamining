@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: getMentionTextWithUser, environment: var1
+    var3 = function arg0, arg1() {
         _fun73751: for (var _fun73751_ip = 0;;) switch (_fun73751_ip) {
             case 0:
                 var1 = arg1;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var3;
-    var0 = function() { // Original name: AutocompleteFormDivider, environment: var1
+    var0 = function() {
         var1 = _closure1_slot13;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getItemLayout = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: getAutocompleteResultText, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun73754: for (var _fun73754_ip = 0;;) switch (_fun73754_ip) {
             case 0:
                 var0 = arg0;

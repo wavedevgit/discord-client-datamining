@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/native/ImageInputActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ImageInputAnswerActionSheet, environment: var1
+    var1 = function arg0() {
         _fun108440: for (var _fun108440_ip = 0;;) switch (_fun108440_ip) {
             case 0:
                 var0 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var20.bind(var21)(var19);
             case 613:
                 var8.label = var17;
-                var17 = function() { // Original name: onPress, environment: var13
+                var17 = function() {
                     var2 = _closure2_slot6;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.w7x2t4;
                 var19 = var20.bind(var21)(var19);
                 var15.label = var19;
-                var19 = function() { // Original name: onPress, environment: var13
+                var19 = function() {
                     var1 = _closure2_slot6;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.IhMxgu;
                 var14 = var15.bind(var16)(var14);
                 var10.label = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var3 = _closure2_slot4;
                     var2 = _closure2_slot1;
                     var0 = undefined;

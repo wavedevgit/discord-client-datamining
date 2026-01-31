@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: walkErrorTree, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun10429: for (var _fun10429_ip = 0;;) switch (_fun10429_ip) {
             case 0:
                 var9 = arg0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun10429_ip = 388;
                 continue _fun10429;
             case 339:
-                var4 = function(arg0) { // Original name: exceptionFromAppleStackReturnAddresses, environment: var3
+                var4 = function arg0() {
                     _fun10432: for (var _fun10432_ip = 0;;) switch (_fun10432_ip) {
                         case 0:
                             var3 = arg0;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun10429_ip = 388;
                 continue _fun10429;
             case 363:
-                var3 = function(arg0) { // Original name: exceptionFromJavaStackElements, environment: var3
+                var3 = function arg0() {
                     var3 = arg0;
                     var1 = _closure1_slot5;
                     var0 = undefined;
@@ -346,7 +346,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: fetchNativePackage, environment: var1
+    var0 = function() {
         _fun10433: for (var _fun10433_ip = 0;;) switch (_fun10433_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var3;
     var3 = null;
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: nativeLinkedErrorsIntegration, environment: var1
+    var1 = function() {
         _fun10434: for (var _fun10434_ip = 0;;) switch (_fun10434_ip) {
             case 0:
                 var4 = undefined;
@@ -433,12 +433,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'NativeLinkedErrors';
                 var0.name = var2;
-                var2 = function() { // Original name: setupOnce, environment: var1
+                var2 = function() {
                     var0 = undefined;
                     return var0;
                 };
                 var0.setupOnce = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: preprocessEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun10436: for (var _fun10436_ip = 0;;) switch (_fun10436_ip) {
                         case 0:
                             var2 = arg0;

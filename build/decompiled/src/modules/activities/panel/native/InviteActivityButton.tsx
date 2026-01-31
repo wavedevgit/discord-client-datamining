@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: InviteActivityButton, environment: var1
+    var1 = function arg0() {
         _fun110411: for (var _fun110411_ip = 0;;) switch (_fun110411_ip) {
             case 0:
                 var0 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var8.bind(var4)(var1);
                 var2 = var1.Button;
                 var1 = {};
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     var6 = _closure2_slot1;
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;

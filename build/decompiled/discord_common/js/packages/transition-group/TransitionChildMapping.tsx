@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/transition-group/TransitionChildMapping.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getChildMapping, environment: var1
+    var3 = function arg0() {
         _fun80931: for (var _fun80931_ip = 0;;) switch (_fun80931_ip) {
             case 0:
                 var5 = arg0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChildMapping = var3;
-    var1 = function() { // Original name: mergeChildMappings, environment: var1
+    var1 = function() {
         _fun80934: for (var _fun80934_ip = 0;;) switch (_fun80934_ip) {
             case 0:
                 var0 = arguments[0];
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
             case 26:
                 var _closure2_slot1 = var1;
-                var4 = function(arg0) { // Original name: getValueForKey, environment: var2
+                var4 = function arg0() {
                     _fun80935: for (var _fun80935_ip = 0;;) switch (_fun80935_ip) {
                         case 0:
                             var2 = arg0;

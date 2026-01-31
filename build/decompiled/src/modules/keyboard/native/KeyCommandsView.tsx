@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = metroImportDefault;
             var2 = exports;
             var5 = dependencyMap;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+            var0 = function arg0, arg1() {
                 _fun99927: for (var _fun99927_ip = 0;;) switch (_fun99927_ip) {
                     case 0:
                         var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot6 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+            var0 = function arg0, arg1() {
                 _fun99929: for (var _fun99929_ip = 0;;) switch (_fun99929_ip) {
                     case 0:
                         var3 = arg0;
@@ -306,12 +306,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = {};
             var8 = new Array(0);
             var3.keyCommands = var8;
-            var8 = function() { // Original name: addKeyCommand, environment: var1
+            var8 = function() {
                 var0 = undefined;
                 return var0;
             };
             var3.addKeyCommand = var8;
-            var8 = function() { // Original name: removeKeyCommand, environment: var1
+            var8 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/keyboard/native/KeyCommandsView.tsx';
             var3 = var4.bind(var5)(var3);
-            var3 = function(arg0) { // Original name: KeyCommandsView, environment: var1
+            var3 = function arg0() {
                 var3 = arg0;
                 var7 = var3.style;
                 var0 = null;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[var7] = var9;
                 var7 = 'keyCommands';
                 var4[var7] = var8;
-                var7 = function(arg0) { // Original name: onKeyCommand, environment: var6
+                var7 = function arg0() {
                     _fun99939: for (var _fun99939_ip = 0;;) switch (_fun99939_ip) {
                         case 0:
                             var1 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.default = var3;
-            var1 = function(arg0) { // Original name: useKeyCommands, environment: var1
+            var1 = function arg0() {
                 var4 = arg0;
                 var _closure2_slot0 = var4;
                 var3 = _closure1_slot1;

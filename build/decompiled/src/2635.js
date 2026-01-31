@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun22044: for (var _fun22044_ip = 0;;) switch (_fun22044_ip) {
         case 0:
             var1 = exports;
-            var4 = function(arg0, arg1, arg2, arg3) { // Original name: dayAndTimeWithAdjective, environment: var2
+            var4 = function arg0, arg1, arg2, arg3() {
                 _fun22045: for (var _fun22045_ip = 0;;) switch (_fun22045_ip) {
                     case 0:
                         var6 = arg0;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.lastWeek = var4;
             var3.nextWeek = var4;
             var _closure1_slot5 = var3;
-            var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
+            var2 = function arg0, arg1, arg2, arg3() {
                 _fun22046: for (var _fun22046_ip = 0;;) switch (_fun22046_ip) {
                     case 0:
                         var6 = arg0;

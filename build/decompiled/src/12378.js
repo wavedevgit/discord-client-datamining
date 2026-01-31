@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var1;
     var1 = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
     var _closure1_slot5 = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: inflate_table, environment: var0
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
         _fun94822: for (var _fun94822_ip = 0;;) switch (_fun94822_ip) {
             case 0:
                 var10 = arg0;

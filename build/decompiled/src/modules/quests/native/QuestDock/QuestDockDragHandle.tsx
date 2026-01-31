@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: QuestDockDragHandle, environment: var1
+    var1 = function arg0() {
         _fun83892: for (var _fun83892_ip = 0;;) switch (_fun83892_ip) {
             case 0:
                 var1 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var18[var1];
                 var7 = var19.bind(var3)(var2);
                 var4 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: D, environment: var0
+                var2 = function() {
                     _fun83893: for (var _fun83893_ip = 0;;) switch (_fun83893_ip) {
                         case 0:
                             var0 = {};
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var18[var1];
                 var11 = var19.bind(var3)(var2);
                 var4 = var11.useAnimatedStyle;
-                var2 = function() { // Original name: p, environment: var0
+                var2 = function() {
                     _fun83894: for (var _fun83894_ip = 0;;) switch (_fun83894_ip) {
                         case 0:
                             var0 = {};
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var1];
                 var2 = var19.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: C, environment: var0
+                var0 = function() {
                     _fun83895: for (var _fun83895_ip = 0;;) switch (_fun83895_ip) {
                         case 0:
                             var0 = {};

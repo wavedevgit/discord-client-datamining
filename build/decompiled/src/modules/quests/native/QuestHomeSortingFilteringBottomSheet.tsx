@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var3 = new Array(0);
     var _closure1_slot10 = var3;
-    var3 = function(arg0, arg1) { // Original name: isFilterOptionEqual, environment: var1
+    var3 = function arg0, arg1() {
         _fun82744: for (var _fun82744_ip = 0;;) switch (_fun82744_ip) {
             case 0:
                 var2 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestHomeSortingFilteringBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestHomeSortingFilteringBottomSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var8 = var0.onSortMethodChange;
         var _closure2_slot0 = var8;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.filter;
                 var5 = var6.bind(var7)(var5);
                 var1.label = var5;
-                var5 = function(arg0) { // Original name: onPress, environment: var0
+                var5 = function arg0() {
                     var3 = _closure2_slot8;
                     var2 = _closure4_slot0;
                     var1 = undefined;

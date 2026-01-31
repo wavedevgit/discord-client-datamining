@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/components/KeyImage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: KeyImage, environment: var1
+    var1 = function() {
         var0 = _closure1_slot4;
         var3 = undefined;
         var4 = var0.bind(var3)();

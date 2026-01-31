@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: XorAndSalsa, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun66544: for (var _fun66544_ip = 0;;) switch (_fun66544_ip) {
             case 0:
                 var4 = arg0;
@@ -481,7 +481,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: BlockMix, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun66545: for (var _fun66545_ip = 0;;) switch (_fun66545_ip) {
             case 0:
                 var10 = arg0;
@@ -563,7 +563,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: scryptInit, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun66546: for (var _fun66546_ip = 0;;) switch (_fun66546_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -729,7 +729,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = new var28[var2](var27, var26);
                 var2 = var2 instanceof Object ? var2 : var21;
                 var3 = var3.bind(var20)(var2);
-                var2 = function() { // Original name: blockMixCb, environment: var0
+                var2 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -751,7 +751,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var16 = var17.bind(var18)(var16, var19);
                 var _closure2_slot2 = var16;
                 var _closure2_slot3 = var15;
-                var2 = function() { // Original name: blockMixCb, environment: var0
+                var2 = function() {
                     _fun66548: for (var _fun66548_ip = 0;;) switch (_fun66548_ip) {
                         case 0:
                             var1 = _closure2_slot3;
@@ -889,7 +889,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: scryptOutput, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         var5 = arg2;
         var4 = arg3;
         var3 = arg4;
@@ -924,7 +924,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: _scryptAsync, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -1353,7 +1353,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var3 = function(arg0, arg1, arg2) { // Original name: scrypt, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun66557: for (var _fun66557_ip = 0;;) switch (_fun66557_ip) {
             case 0:
                 var6 = arg0;
@@ -1539,7 +1539,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.scrypt = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: scryptAsync, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;

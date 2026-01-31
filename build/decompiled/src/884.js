@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var3 = function(arg0) { // Original name: convertSpanJsonToTransactionEvent, environment: var1
+    var3 = function arg0() {
         _fun9360: for (var _fun9360_ip = 0;;) switch (_fun9360_ip) {
             case 0:
                 var1 = arg0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.convertSpanJsonToTransactionEvent = var3;
-    var1 = function(arg0) { // Original name: convertTransactionEventToSpanJson, environment: var1
+    var1 = function arg0() {
         _fun9361: for (var _fun9361_ip = 0;;) switch (_fun9361_ip) {
             case 0:
                 var1 = arg0;

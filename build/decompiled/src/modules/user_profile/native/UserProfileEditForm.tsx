@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EditUserProfileBanner, environment: var1
+    var0 = function arg0() {
         _fun79736: for (var _fun79736_ip = 0;;) switch (_fun79736_ip) {
             case 0:
                 var2 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 299:
                 var4.bannerSafeArea = var11;
                 var4.showProfilePreviewButton = var10;
-                var9 = function() { // Original name: onPressEdit, environment: var9
+                var9 = function() {
                     _fun79737: for (var _fun79737_ip = 0;;) switch (_fun79737_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileEditForm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileEditForm, environment: var1
+    var1 = function arg0() {
         _fun79738: for (var _fun79738_ip = 0;;) switch (_fun79738_ip) {
             case 0:
                 var0 = arg0;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 2158:
                 var29.value = var60;
                 var29.onFocus = var47;
-                var60 = function(arg0) { // Original name: onChange, environment: var32
+                var60 = function arg0() {
                     _fun79740: for (var _fun79740_ip = 0;;) switch (_fun79740_ip) {
                         case 0:
                             var0 = arg0;
@@ -1019,7 +1019,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 2371:
                 var28.value = var54;
                 var28.onFocus = var47;
-                var54 = function(arg0) { // Original name: onChange, environment: var32
+                var54 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 17;
@@ -1066,7 +1066,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 2507:
                 var27.value = var49;
                 var27.onFocus = var47;
-                var47 = function(arg0) { // Original name: onChange, environment: var32
+                var47 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 17;
@@ -1182,7 +1182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = _closure1_slot13;
                 var28 = _closure1_slot5;
                 var27 = {};
-                var32 = function(arg0) { // Original name: ref, environment: var32
+                var32 = function arg0() {
                     _fun79743: for (var _fun79743_ip = 0;;) switch (_fun79743_ip) {
                         case 0:
                             var2 = arg0;

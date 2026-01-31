@@ -4,14 +4,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: isUndefinedOrNull, environment: var1
+    var0 = function arg0() {
         var1 = null;
         var0 = arg0;
         var0 = var1 == var0;
         return var0;
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: isBuffer, environment: var1
+    var0 = function arg0() {
         _fun7313: for (var _fun7313_ip = 0;;) switch (_fun7313_ip) {
             case 0:
                 var4 = arg0;

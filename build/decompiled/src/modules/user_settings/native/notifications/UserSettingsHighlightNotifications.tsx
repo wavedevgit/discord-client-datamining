@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Row, environment: var1
+    var0 = function arg0() {
         _fun85304: for (var _fun85304_ip = 0;;) switch (_fun85304_ip) {
             case 0:
                 var1 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/notifications/UserSettingsHighlightNotifications.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsHighlightNotifications, environment: var1
+    var1 = function() {
         _fun85307: for (var _fun85307_ip = 0;;) switch (_fun85307_ip) {
             case 0:
                 var3 = _closure1_slot0;

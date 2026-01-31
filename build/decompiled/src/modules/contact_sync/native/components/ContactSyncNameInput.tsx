@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/ContactSyncNameInput.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun80666: for (var _fun80666_ip = 0;;) switch (_fun80666_ip) {
             case 0:
                 var0 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 963:
                 var10.size = var18;
                 var10.text = var17;
-                var17 = function() { // Original name: onPress, environment: var14
+                var17 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot2;
                     var0 = undefined;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15["91RssO"];
                 var15 = var16.bind(var17)(var15);
                 var12.text = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     _fun80668: for (var _fun80668_ip = 0;;) switch (_fun80668_ip) {
                         case 0:
                             var2 = _closure2_slot1;

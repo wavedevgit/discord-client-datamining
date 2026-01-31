@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/PhoneVerificationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PhoneVerificationModal, environment: var1
+    var1 = function arg0() {
         var12 = arg0;
         var3 = _closure1_slot6;
         var7 = _closure1_slot0;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12.onClose;
         var12 = var13.bind(var14)(var12);
         var6.headerLeft = var12;
-        var12 = function(arg0, arg1) { // Original name: render, environment: var10
+        var12 = function arg0, arg1() {
             _fun60871: for (var _fun60871_ip = 0;;) switch (_fun60871_ip) {
                 case 0:
                     var6 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 91:
                     var6 = 'reason';
                     var0[var6] = var7;
-                    var7 = function(arg0) { // Original name: onComplete, environment: var4
+                    var7 = function arg0() {
                         var3 = _closure3_slot1;
                         var2 = var3.push;
                         var0 = _closure1_slot4;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var4 = arg0;
                         var0.phone = var4;
-                        var4 = function(arg0) { // Original name: onVerified, environment: var4
+                        var4 = function arg0() {
                             var0 = arg0;
                             var _closure5_slot0 = var0;
                             var3 = _closure3_slot1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = {};
                             var5 = true;
                             var0.hideUnverifiedBanner = var5;
-                            var5 = function(arg0) { // Original name: onSubmit, environment: var4
+                            var5 = function arg0() {
                                 _fun60874: for (var _fun60874_ip = 0;;) switch (_fun60874_ip) {
                                     case 0:
                                         var2 = _closure1_slot1;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var0.onSubmit = var5;
-                            var4 = function() { // Original name: onSuccess, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot1;
                                 var2 = _closure1_slot2;
                                 var0 = 8;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var5 = true;
                         var0.hideUnverifiedBanner = var5;
-                        var5 = function(arg0) { // Original name: onSubmit, environment: var4
+                        var5 = function arg0() {
                             _fun60877: for (var _fun60877_ip = 0;;) switch (_fun60877_ip) {
                                 case 0:
                                     var2 = _closure1_slot1;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.onSubmit = var5;
-                        var4 = function() { // Original name: onSuccess, environment: var4
+                        var4 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 8;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12.ImpressionNames;
         var12 = var12.USER_VERIFY_PHONE;
         var6.impressionName = var12;
-        var12 = function(arg0, arg1) { // Original name: render, environment: var10
+        var12 = function arg0, arg1() {
             var0 = arg1;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot6;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = true;
             var5 = 'disableKeyboardAvoidingView';
             var0[var5] = var6;
-            var5 = function(arg0) { // Original name: onVerified, environment: var4
+            var5 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var4 = _closure3_slot0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onSubmit = var6;
-                var5 = function() { // Original name: onSuccess, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 8;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var12.getHeaderNoTitle;
         var11 = var11.bind(var12)();
         var6.headerTitle = var11;
-        var10 = function(arg0) { // Original name: render, environment: var10
+        var10 = function arg0() {
             var3 = _closure1_slot6;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;

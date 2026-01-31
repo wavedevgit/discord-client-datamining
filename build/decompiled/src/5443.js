@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = /,/g;
     var _closure1_slot1 = var2;
-    var0 = function(arg0) { // Original name: extractLengthList, environment: var0
+    var0 = function arg0() {
         _fun48371: for (var _fun48371_ip = 0;;) switch (_fun48371_ip) {
             case 0:
                 var3 = arg0;

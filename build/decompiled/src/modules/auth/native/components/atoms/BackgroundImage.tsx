@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/atoms/BackgroundImage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BackgroundImage, environment: var1
+    var1 = function arg0() {
         _fun60786: for (var _fun60786_ip = 0;;) switch (_fun60786_ip) {
             case 0:
                 var1 = arg0;

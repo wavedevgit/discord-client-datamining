@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/content_inventory/useEntryActivityAndApplication.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useEntryActivityAndApplication, environment: var1
+    var1 = function arg0() {
         _fun62239: for (var _fun62239_ip = 0;;) switch (_fun62239_ip) {
             case 0:
                 var7 = arg0;

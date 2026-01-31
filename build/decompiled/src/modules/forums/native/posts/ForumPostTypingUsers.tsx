@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/posts/ForumPostTypingUsers.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumPostTypingUsers, environment: var1
+    var1 = function arg0() {
         _fun89550: for (var _fun89550_ip = 0;;) switch (_fun89550_ip) {
             case 0:
                 var0 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var7];
                 var8 = var3.bind(var4)(var2);
                 var3 = var8.useAnimatedStyle;
-                var2 = function() { // Original name: _, environment: var5
+                var2 = function() {
                     _fun89551: for (var _fun89551_ip = 0;;) switch (_fun89551_ip) {
                         case 0:
                             var0 = {};

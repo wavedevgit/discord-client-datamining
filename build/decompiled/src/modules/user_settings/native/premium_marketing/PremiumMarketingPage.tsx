@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/PremiumMarketingPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun92192: for (var _fun92192_ip = 0;;) switch (_fun92192_ip) {
             case 0:
                 var1 = arg0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.size = var5;
                 var5 = var14.arrowIcon;
                 var0.iconStyle = var5;
-                var5 = function() { // Original name: onPress, environment: var25
+                var5 = function() {
                     var1 = _closure2_slot6;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var26 = var14.scrollContainer;
                 var5.contentContainerStyle = var26;
-                var25 = function(arg0) { // Original name: onScroll, environment: var25
+                var25 = function arg0() {
                     _fun92197: for (var _fun92197_ip = 0;;) switch (_fun92197_ip) {
                         case 0:
                             var0 = arg0;

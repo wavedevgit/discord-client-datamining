@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var17;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var18;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var9
+    var0 = function arg0, arg1() {
         _fun39222: for (var _fun39222_ip = 0;;) switch (_fun39222_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var9
+    var0 = function arg0, arg1() {
         _fun39224: for (var _fun39224_ip = 0;;) switch (_fun39224_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var11 = function(arg0, arg1) { // Original name: messageHasObscurableMediaForBitmask, environment: var9
+    var11 = function arg0, arg1() {
         _fun39225: for (var _fun39225_ip = 0;;) switch (_fun39225_ip) {
             case 0:
                 var2 = arg0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var11;
-    var0 = function(arg0) { // Original name: findComponentMedia, environment: var9
+    var0 = function arg0() {
         _fun39228: for (var _fun39228_ip = 0;;) switch (_fun39228_ip) {
             case 0:
                 var2 = arg0;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var10 = function(arg0, arg1) { // Original name: getMediaObscuredReasonFromBitmask, environment: var9
+    var10 = function arg0, arg1() {
         _fun39232: for (var _fun39232_ip = 0;;) switch (_fun39232_ip) {
             case 0:
                 var3 = arg1;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var10;
-    var8 = function(arg0, arg1) { // Original name: isMediaScanPending, environment: var9
+    var8 = function arg0, arg1() {
         _fun39235: for (var _fun39235_ip = 0;;) switch (_fun39235_ip) {
             case 0:
                 var1 = arg0;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var4;
             case 212:
                 var5 = var1.media;
-                var4 = function(arg0, arg1) { // Original name: shouldScanGenericMedia, environment: var0
+                var4 = function arg0, arg1() {
                     _fun39241: for (var _fun39241_ip = 0;;) switch (_fun39241_ip) {
                         case 0:
                             var2 = arg0;
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var4;
             case 231:
                 var5 = var1.media;
-                var4 = function(arg0, arg1) { // Original name: shouldScanAttachment, environment: var0
+                var4 = function arg0, arg1() {
                     _fun39239: for (var _fun39239_ip = 0;;) switch (_fun39239_ip) {
                         case 0:
                             var2 = arg0;
@@ -837,7 +837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var4;
             case 250:
                 var1 = var1.media;
-                var0 = function(arg0, arg1) { // Original name: shouldScanEmbed, environment: var0
+                var0 = function arg0, arg1() {
                     _fun39236: for (var _fun39236_ip = 0;;) switch (_fun39236_ip) {
                         case 0:
                             var0 = arg0;
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var8;
-    var7 = function(arg0, arg1) { // Original name: isMediaFlaggedForHarmType, environment: var9
+    var7 = function arg0, arg1() {
         _fun39243: for (var _fun39243_ip = 0;;) switch (_fun39243_ip) {
             case 0:
                 var3 = arg0;
@@ -1279,7 +1279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var7;
-    var6 = function(arg0) { // Original name: contentHarmTypesToFlags, environment: var9
+    var6 = function arg0() {
         _fun39244: for (var _fun39244_ip = 0;;) switch (_fun39244_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -1380,7 +1380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var6;
-    var5 = function(arg0) { // Original name: getHarmTypeFromBitmask, environment: var9
+    var5 = function arg0() {
         _fun39245: for (var _fun39245_ip = 0;;) switch (_fun39245_ip) {
             case 0:
                 var6 = arg0;
@@ -1437,7 +1437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var5;
-    var4 = function(arg0, arg1) { // Original name: getChannelTypeById, environment: var9
+    var4 = function arg0, arg1() {
         _fun39246: for (var _fun39246_ip = 0;;) switch (_fun39246_ip) {
             case 0:
                 var6 = arg1;
@@ -1555,7 +1555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var4;
-    var0 = function(arg0, arg1) { // Original name: shouldScanForContentScanVersion, environment: var9
+    var0 = function arg0, arg1() {
         _fun39247: for (var _fun39247_ip = 0;;) switch (_fun39247_ip) {
             case 0:
                 var4 = arg0;
@@ -1619,7 +1619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var3 = function(arg0) { // Original name: shouldRedactForSettingValue, environment: var9
+    var3 = function arg0() {
         _fun39248: for (var _fun39248_ip = 0;;) switch (_fun39248_ip) {
             case 0:
                 var3 = arg0;
@@ -1652,7 +1652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var3;
-    var1 = function(arg0) { // Original name: getChannelIdAndAuthorIdFromMessage, environment: var9
+    var1 = function arg0() {
         _fun39249: for (var _fun39249_ip = 0;;) switch (_fun39249_ip) {
             case 0:
                 var3 = arg0;
@@ -1806,7 +1806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var18[var12];
     var12 = var13.bind(var0)(var12);
     var _closure1_slot9 = var12;
-    var15 = function() { // Original name: getEligibleHarmTypesConfigsForContext, environment: var9
+    var15 = function() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -1851,7 +1851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var15;
-    var14 = function(arg0) { // Original name: getEnabledHarmTypesForMessage, environment: var9
+    var14 = function arg0() {
         _fun39252: for (var _fun39252_ip = 0;;) switch (_fun39252_ip) {
             case 0:
                 var5 = arg0;
@@ -1888,7 +1888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var14;
-    var13 = function(arg0, arg1) { // Original name: getEnabledHarmTypesForChannelAndAuthorId, environment: var9
+    var13 = function arg0, arg1() {
         _fun39253: for (var _fun39253_ip = 0;;) switch (_fun39253_ip) {
             case 0:
                 var6 = arg1;
@@ -1948,7 +1948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var13;
-    var12 = function(arg0) { // Original name: getEnabledHarmTypesBitmaskForChannelType, environment: var9
+    var12 = function arg0() {
         _fun39254: for (var _fun39254_ip = 0;;) switch (_fun39254_ip) {
             case 0:
                 var4 = arg0;
@@ -2021,7 +2021,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getEnabledHarmTypesForMessage = var14;
     var2.getEnabledHarmTypesForChannelAndAuthorId = var13;
     var2.getEnabledHarmTypesBitmaskForChannelType = var12;
-    var12 = function(arg0) { // Original name: messageHasObscurableMedia, environment: var9
+    var12 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot16;
         var0 = _closure1_slot11;
@@ -2032,7 +2032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.messageHasObscurableMedia = var12;
     var2.messageHasObscurableMediaForBitmask = var11;
-    var11 = function(arg0, arg1) { // Original name: hasUnscannedMedia, environment: var9
+    var11 = function arg0, arg1() {
         _fun39257: for (var _fun39257_ip = 0;;) switch (_fun39257_ip) {
             case 0:
                 var2 = arg0;
@@ -2249,7 +2249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot27 = var11;
     var2.hasUnscannedMedia = var11;
-    var11 = function(arg0) { // Original name: isEligibleForScanning, environment: var9
+    var11 = function arg0() {
         _fun39261: for (var _fun39261_ip = 0;;) switch (_fun39261_ip) {
             case 0:
                 var1 = arg0;
@@ -2287,7 +2287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEligibleForScanning = var11;
-    var11 = function(arg0) { // Original name: getUnscannedMediaIds, environment: var9
+    var11 = function arg0() {
         _fun39263: for (var _fun39263_ip = 0;;) switch (_fun39263_ip) {
             case 0:
                 var0 = arg0;
@@ -2437,7 +2437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUnscannedMediaIds = var11;
     var2.getMediaObscuredReasonFromBitmask = var10;
-    var9 = function(arg0, arg1) { // Original name: isMediaObscuredForHarmTypes, environment: var9
+    var9 = function arg0, arg1() {
         _fun39268: for (var _fun39268_ip = 0;;) switch (_fun39268_ip) {
             case 0:
                 var3 = arg1;

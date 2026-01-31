@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var3 = function() { // Original name: enableExperimentalWebImplementation, environment: var1
+    var3 = function() {
         var0 = global;
         var3 = var0.console;
         var2 = var3.warn;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.enableExperimentalWebImplementation = var3;
-    var3 = function() { // Original name: enableLegacyWebImplementation, environment: var1
+    var3 = function() {
         var0 = global;
         var3 = var0.console;
         var2 = var3.warn;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.enableLegacyWebImplementation = var3;
-    var1 = function() { // Original name: isNewWebImplementationEnabled, environment: var1
+    var1 = function() {
         var0 = true;
         return var0;
     };

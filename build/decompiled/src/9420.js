@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_usePanGestureProxyTs5(e,success){const{userDefinedConflictGestures}=this.__closure;if(userDefinedConflictGestures.onFinalize)userDefinedConflictGestures.onFinalize(e,success);}';
     var3.code = var4;
     var _closure1_slot7 = var3;
-    var1 = function(arg0) { // Original name: usePanGestureProxy, environment: var1
+    var1 = function arg0() {
         _fun74945: for (var _fun74945_ip = 0;;) switch (_fun74945_ip) {
             case 0:
                 var1 = arg0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6.onEnd = var5;
                             var6.onFinalize = var5;
                             var _closure3_slot1 = var6;
-                            var3 = function(arg0) { // Original name: fakeOnBegin, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure3_slot1;
                                 var1 = arg0;
                                 var2.onBegin = var1;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.onBegin = var3;
-                            var3 = function(arg0) { // Original name: fakeOnStart, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure3_slot1;
                                 var1 = arg0;
                                 var2.onStart = var1;
@@ -116,7 +116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.onStart = var3;
-                            var3 = function(arg0) { // Original name: fakeOnUpdate, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure3_slot1;
                                 var1 = arg0;
                                 var2.onUpdate = var1;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.onUpdate = var3;
-                            var3 = function(arg0) { // Original name: fakeOnEnd, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure3_slot1;
                                 var1 = arg0;
                                 var2.onEnd = var1;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 return var0;
                             };
                             var0.onEnd = var3;
-                            var3 = function(arg0) { // Original name: fakeOnFinalize, environment: var1
+                            var3 = function arg0() {
                                 var2 = _closure3_slot1;
                                 var1 = arg0;
                                 var2.onFinalize = var1;
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var2.onFinalize;
                             var0.onFinalize = var2;
                             var3 = var0.onBegin;
-                            var2 = function(arg0) { // Original name: pnpm_usePanGestureProxyTs1, environment: var1
+                            var2 = function arg0() {
                                 _fun74952: for (var _fun74952_ip = 0;;) switch (_fun74952_ip) {
                                     case 0:
                                         var1 = _closure3_slot1;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2.__initData = var5;
                             var5 = var3.bind(var0)(var2);
                             var3 = var5.onStart;
-                            var2 = function(arg0) { // Original name: pnpm_usePanGestureProxyTs2, environment: var1
+                            var2 = function arg0() {
                                 _fun74953: for (var _fun74953_ip = 0;;) switch (_fun74953_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -220,7 +220,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2.__initData = var7;
                             var5 = var3.bind(var5)(var2);
                             var3 = var5.onUpdate;
-                            var2 = function(arg0) { // Original name: pnpm_usePanGestureProxyTs3, environment: var1
+                            var2 = function arg0() {
                                 _fun74954: for (var _fun74954_ip = 0;;) switch (_fun74954_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -252,7 +252,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2.__initData = var7;
                             var5 = var3.bind(var5)(var2);
                             var3 = var5.onEnd;
-                            var2 = function(arg0, arg1) { // Original name: pnpm_usePanGestureProxyTs4, environment: var1
+                            var2 = function arg0, arg1() {
                                 _fun74955: for (var _fun74955_ip = 0;;) switch (_fun74955_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2.__initData = var7;
                             var3 = var3.bind(var5)(var2);
                             var2 = var3.onFinalize;
-                            var1 = function(arg0, arg1) { // Original name: pnpm_usePanGestureProxyTs5, environment: var1
+                            var1 = function arg0, arg1() {
                                 _fun74956: for (var _fun74956_ip = 0;;) switch (_fun74956_ip) {
                                     case 0:
                                         var1 = _closure3_slot1;

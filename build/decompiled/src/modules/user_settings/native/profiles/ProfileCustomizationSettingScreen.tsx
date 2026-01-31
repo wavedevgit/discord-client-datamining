@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var9)(var3);
     var _closure1_slot17 = var3;
     var7 = {};
-    var3 = function() { // Original name: renderLabel, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.renderLabel = var3;
     var3 = 'edit-user-profile';
     var7.id = var3;
-    var3 = function(arg0) { // Original name: renderPage, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.autoFocusElement;
         var3 = _closure1_slot15;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(2);
     var3[0] = var7;
     var7 = {};
-    var9 = function() { // Original name: renderLabel, environment: var1
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.renderLabel = var9;
     var9 = 'edit-user-profiles-guilds';
     var7.id = var9;
-    var9 = function() { // Original name: renderPage, environment: var1
+    var9 = function() {
         var3 = _closure1_slot15;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var13.bind(var14)(var11, var9);
                 var11 = {};
                 var11.autoFocusElement = var4;
-                var4 = function(arg0) { // Original name: getTabItems, environment: var0
+                var4 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var2 = _closure1_slot18;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5.bind(var0)(var4);
                     var4 = var4.dismissKeyboard;
                     var1.onHasEdits = var4;
-                    var3 = function() { // Original name: onConfirm, environment: var3
+                    var3 = function() {
                         var2 = _closure2_slot1;
                         var1 = var2.dispatch;
                         var0 = _closure3_slot0;

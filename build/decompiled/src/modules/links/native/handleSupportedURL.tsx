@@ -111,10 +111,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/links/native/handleSupportedURL.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: handleSupportedURL, environment: var1
+    var1 = function arg0() {
         _fun29805: for (var _fun29805_ip = 0;;) switch (_fun29805_ip) {
             case 0:
-                var1 = function(arg0) { // Original name: _handleSupportedURL, environment: var0
+                var1 = function arg0() {
                     _fun29806: for (var _fun29806_ip = 0;;) switch (_fun29806_ip) {
                         case 0:
                             var0 = arg0;
@@ -2099,7 +2099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             var7 = var7.bind(var0)(var6);
                                             var6 = 'callback';
                                             var2[var6] = var7;
-                                            var7 = function() { // Original name: dismissOAuthModal, environment: var6
+                                            var7 = function() {
                                                 var3 = _closure1_slot1;
                                                 var2 = _closure1_slot3;
                                                 var0 = 17;

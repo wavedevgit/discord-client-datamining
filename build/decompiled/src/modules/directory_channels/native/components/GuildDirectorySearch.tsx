@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.proTip = var10;
     var7 = var8.bind(var9)(var7);
     var _closure1_slot14 = var7;
-    var7 = function() { // Original name: DefaultState, environment: var1
+    var7 = function() {
         var0 = _closure1_slot14;
         var3 = undefined;
         var8 = var0.bind(var3)();
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var8.t;
         var9 = var8.aYLd8O;
         var8 = {};
-        var12 = function(arg0) { // Original name: protipHook, environment: var12
+        var12 = function arg0() {
             var4 = _closure1_slot12;
             var1 = _closure1_slot0;
             var2 = _closure1_slot3;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var7;
-    var7 = function(arg0) { // Original name: EmptyState, environment: var1
+    var7 = function arg0() {
         _fun71207: for (var _fun71207_ip = 0;;) switch (_fun71207_ip) {
             case 0:
                 var0 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var1 = var0.ZxNVMy;
                 var0 = {};
-                var6 = function() { // Original name: addServerHook, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 15;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectorySearch.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildDirectorySearch, environment: var1
+    var1 = function arg0() {
         _fun71210: for (var _fun71210_ip = 0;;) switch (_fun71210_ip) {
             case 0:
                 var0 = arg0;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot8;
                 var1 = {};
                 var1.data = var6;
-                var6 = function(arg0) { // Original name: renderItem, environment: var10
+                var6 = function arg0() {
                     _fun71213: for (var _fun71213_ip = 0;;) switch (_fun71213_ip) {
                         case 0:
                             var0 = arg0;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.renderItem = var6;
-                var6 = function(arg0, arg1) { // Original name: keyExtractor, environment: var10
+                var6 = function arg0, arg1() {
                     _fun71214: for (var _fun71214_ip = 0;;) switch (_fun71214_ip) {
                         case 0:
                             var1 = arg0;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.keyExtractor = var6;
-                var6 = function() { // Original name: ListEmptyComponent, environment: var10
+                var6 = function() {
                     var3 = _closure1_slot12;
                     var2 = _closure1_slot16;
                     var1 = {};
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var13.bind(var14)(var12);
                 var8.placeholder = var12;
                 var8.onChange = var11;
-                var11 = function() { // Original name: onClose, environment: var10
+                var11 = function() {
                     var4 = _closure1_slot2;
                     var3 = _closure1_slot3;
                     var0 = 21;
@@ -601,7 +601,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var8.onClose = var11;
-                var10 = function() { // Original name: onSubmitEditing, environment: var10
+                var10 = function() {
                     _fun71217: for (var _fun71217_ip = 0;;) switch (_fun71217_ip) {
                         case 0:
                             var2 = _closure2_slot2;

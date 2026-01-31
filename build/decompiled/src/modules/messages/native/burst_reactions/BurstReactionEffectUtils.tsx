@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: generateAnimationSource, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function(arg0) { // Original name: generateAnimationSourceFromLocalImage, environment: var0
+        var0 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[2] = var6;
         var2[3] = var5;
         var1 = function() { // Environment: var1
-            var1 = function() { // Original name: _getSource, environment: var0
+            var1 = function() {
                 var3 = undefined;
                 var0 = undefined;
                 var2 = _closure1_slot2;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure3_slot0 = var1;
-            var1 = function() { // Original name: getSource, environment: var0
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot0;
                 var2 = var3.apply;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            var1 = function() { // Original name: _getSource2, environment: var0
+            var1 = function() {
                 var3 = undefined;
                 var0 = undefined;
                 var2 = _closure1_slot2;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure3_slot0 = var1;
-            var1 = function() { // Original name: getSource, environment: var0
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot0;
                 var2 = var3.apply;

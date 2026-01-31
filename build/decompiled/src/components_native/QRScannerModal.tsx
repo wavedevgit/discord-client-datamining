@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var8.bind(var0)(var6);
         case 245:
             var _closure1_slot10 = var3;
-            var3 = function(arg0) { // Original name: DCDQRScanner, environment: var1
+            var3 = function arg0() {
                 var3 = _closure1_slot8;
                 var2 = _closure1_slot10;
                 var1 = {};
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'components_native/QRScannerModal.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: QRScannerModal, environment: var1
+            var1 = function arg0() {
                 _fun81821: for (var _fun81821_ip = 0;;) switch (_fun81821_ip) {
                     case 0:
                         var0 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4.style = var10;
                         var10 = 'none';
                         var4.pointerEvents = var10;
-                        var7 = function(arg0) { // Original name: onQRCodeFound, environment: var7
+                        var7 = function arg0() {
                             _fun81825: for (var _fun81825_ip = 0;;) switch (_fun81825_ip) {
                                 case 0:
                                     var0 = arg0;

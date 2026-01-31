@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/tasks/AgeVerificationScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: AgeVerificationScreen, environment: var1
+    var1 = function() {
         var9 = _closure1_slot3;
         var2 = var9.useMemo;
         var1 = function() { // Environment: var13
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var1];
         var2 = var10.bind(var3)(var1);
         var1 = {};
-        var4 = function() { // Original name: onClose, environment: var13
+        var4 = function() {
             var2 = _closure2_slot1;
             var1 = {};
             var4 = _closure1_slot0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var10.bind(var3)(var9);
         var10 = var9.RpMIT0;
         var9 = {};
-        var17 = function() { // Original name: handleOnHelpUrlHook, environment: var13
+        var17 = function() {
             var5 = _closure1_slot1;
             var6 = _closure1_slot2;
             var0 = 19;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = {};
         var14 = 'button';
         var11.accessibilityRole = var14;
-        var13 = function() { // Original name: onPress, environment: var13
+        var13 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 22;

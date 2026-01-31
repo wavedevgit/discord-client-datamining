@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var4;
-    var9 = function(arg0, arg1) { // Original name: parseBezierKnot, environment: var5
+    var9 = function arg0, arg1() {
         _fun38266: for (var _fun38266_ip = 0;;) switch (_fun38266_ip) {
             case 0:
                 var7 = arg0;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0, arg1) { // Original name: parsePathPoint, environment: var5
+    var0 = function arg0, arg1() {
         var5 = arg0;
         var6 = arg1;
         var4 = _closure1_slot6;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getFixedPointNumber, environment: var5
+    var0 = function arg0, arg1, arg2() {
         _fun38268: for (var _fun38268_ip = 0;;) switch (_fun38268_ip) {
             case 0:
                 var6 = arg2;
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var6 = 'PathInformation';
     var4.name = var6;
-    var6 = function(arg0) { // Original name: pathResource, environment: var5
+    var6 = function arg0() {
         _fun38269: for (var _fun38269_ip = 0;;) switch (_fun38269_ip) {
             case 0:
                 var9 = arg0;
@@ -220,7 +220,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var6 = 'ClippingPathName';
     var4.name = var6;
-    var6 = function(arg0) { // Original name: description, environment: var5
+    var6 = function arg0() {
         var4 = _closure1_slot0;
         var1 = _closure1_slot2;
         var3 = 2;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = {};
     var4 = 'Closed subpath length';
     var6.description = var4;
-    var4 = function(arg0, arg1) { // Original name: path, environment: var5
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var10 = 'Open subpath length';
     var4.description = var10;
-    var10 = function(arg0, arg1) { // Original name: path, environment: var5
+    var10 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -310,7 +310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var9 = 'Path fill rule';
     var4.description = var9;
-    var9 = function() { // Original name: path, environment: var5
+    var9 = function() {
         var0 = new Array(0);
         return var0;
     };
@@ -320,7 +320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var9 = 'Initial fill rule';
     var4.description = var9;
-    var9 = function(arg0, arg1) { // Original name: path, environment: var5
+    var9 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = {};
     var9 = 'Clipboard';
     var4.description = var9;
-    var9 = function(arg0, arg1) { // Original name: parseClipboard, environment: var5
+    var9 = function arg0, arg1() {
         var5 = arg0;
         var6 = arg1;
         var4 = _closure1_slot6;

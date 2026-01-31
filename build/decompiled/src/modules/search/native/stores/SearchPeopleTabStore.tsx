@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun105641: for (var _fun105641_ip = 0;;) switch (_fun105641_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var7;
     var7 = function() { // Environment: var3
         var3 = _closure1_slot7;
-        var2 = function() { // Original name: PeopleSearchManager, environment: var4
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var5 = _closure1_slot6;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'teardown';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var1 = var0.userSearch;
             var0 = var1.unsubscribe;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'search';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun105649: for (var _fun105649_ip = 0;;) switch (_fun105649_ip) {
                 case 0:
                     var2 = arg0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var4.fetch;
                     var0 = true;
                     var0 = var2.bind(var4)(var3, var0);
-                    var2 = function(arg0) { // Original name: searchGroupDMs, environment: var0
+                    var2 = function arg0() {
                         _fun105650: for (var _fun105650_ip = 0;;) switch (_fun105650_ip) {
                             case 0:
                                 var2 = arg0;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'processResults';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun105655: for (var _fun105655_ip = 0;;) switch (_fun105655_ip) {
                 case 0:
                     var3 = this;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getResults';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.results;
             return var0;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCount';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0.count;
             return var0;
@@ -558,7 +558,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: SearchPeopleTabStoreImpl, environment: var5
+        var3 = function() {
             _fun105661: for (var _fun105661_ip = 0;;) switch (_fun105661_ip) {
                 case 0:
                     var3 = this;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot8;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getResults';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun105663: for (var _fun105663_ip = 0;;) switch (_fun105663_ip) {
                 case 0:
                     var3 = _closure1_slot12;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCount';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun105664: for (var _fun105664_ip = 0;;) switch (_fun105664_ip) {
                 case 0:
                     var2 = _closure1_slot12;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: handleSearchPeopleTabSearch, environment: var3
+    var6 = function arg0() {
         _fun105665: for (var _fun105665_ip = 0;;) switch (_fun105665_ip) {
             case 0:
                 var0 = arg0;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SEARCH_PEOPLE_TAB_SEARCH = var6;
-    var6 = function(arg0) { // Original name: handleSearchPeopleTabCleanup, environment: var3
+    var6 = function arg0() {
         _fun105666: for (var _fun105666_ip = 0;;) switch (_fun105666_ip) {
             case 0:
                 var0 = arg0;

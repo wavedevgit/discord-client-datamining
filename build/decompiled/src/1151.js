@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = require;
             var _closure1_slot0 = var0;
             var _closure1_slot1 = var3;
-            var5 = function(arg0) { // Original name: _captureAppStart, environment: var1
+            var5 = function arg0() {
                 var1 = arg0;
                 var1 = var1.isManual;
                 var _closure2_slot1 = var1;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot10 = var5;
-            var4 = function(arg0) { // Original name: setRootComponentCreationTimestampMs, environment: var1
+            var4 = function arg0() {
                 _fun12549: for (var _fun12549_ip = 0;;) switch (_fun12549_ip) {
                     case 0:
                         var1 = _closure1_slot5;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot11 = var4;
-            var0 = function(arg0, arg1, arg2) { // Original name: setSpanDurationAsMeasurementOnTransactionEvent, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun12550: for (var _fun12550_ip = 0;;) switch (_fun12550_ip) {
                     case 0:
                         var1 = arg0;
@@ -339,7 +339,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun12553: for (var _fun12553_ip = 0;;) switch (_fun12553_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -364,7 +364,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun12554: for (var _fun12554_ip = 0;;) switch (_fun12554_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -389,7 +389,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun12555: for (var _fun12555_ip = 0;;) switch (_fun12555_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -400,7 +400,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun12556: for (var _fun12556_ip = 0;;) switch (_fun12556_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -487,7 +487,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot6 = var3;
             var _closure1_slot7 = var0;
             var _closure1_slot8 = var3;
-            var3 = function(arg0) { // Original name: _setAppStartEndData, environment: var1
+            var3 = function arg0() {
                 _fun12558: for (var _fun12558_ip = 0;;) switch (_fun12558_ip) {
                     case 0:
                         var0 = _closure1_slot5;
@@ -514,7 +514,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot9 = var3;
-            var6 = function() { // Original name: captureAppStart, environment: var1
+            var6 = function() {
                 var2 = _closure1_slot10;
                 var1 = {};
                 var0 = true;
@@ -526,7 +526,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.captureAppStart = var6;
             var2._captureAppStart = var5;
             var2.setRootComponentCreationTimestampMs = var4;
-            var4 = function(arg0) { // Original name: _setRootComponentCreationTimestampMs, environment: var1
+            var4 = function arg0() {
                 var3 = _closure1_slot11;
                 var0 = undefined;
                 var1 = arg0;
@@ -537,18 +537,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2._setRootComponentCreationTimestampMs = var4;
             var2._setAppStartEndData = var3;
-            var3 = function() { // Original name: _clearRootComponentCreationTimestampMs, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 _closure1_slot7 = var0;
                 return var0;
             };
             var2._clearRootComponentCreationTimestampMs = var3;
-            var1 = function() { // Original name: appStartIntegration, environment: var1
+            var1 = function() {
                 _fun12562: for (var _fun12562_ip = 0;;) switch (_fun12562_ip) {
                     case 0:
                         var0 = undefined;
                         var4 = undefined;
-                        var1 = function(arg0) { // Original name: attachAppStartToTransactionEvent, environment: var2
+                        var1 = function arg0() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var3 = _closure1_slot3;
@@ -1192,7 +1192,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var11 = var11.bind(var4)(var3);
                                             var3 = _closure1_slot2;
                                             var15 = var1.spans;
-                                            var6 = function(arg0, arg1) { // Original name: convertNativeSpansToSpanJSON, environment: var6
+                                            var6 = function arg0, arg1() {
                                                 var3 = arg1;
                                                 var1 = arg0;
                                                 var _closure6_slot0 = var1;
@@ -1491,7 +1491,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var _closure2_slot3 = var1;
                         var _closure2_slot4 = var1;
                         var _closure2_slot5 = var0;
-                        var0 = function(arg0) { // Original name: recordFirstStartedActiveRootSpanId, environment: var2
+                        var0 = function arg0() {
                             _fun12571: for (var _fun12571_ip = 0;;) switch (_fun12571_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -1525,7 +1525,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot6 = var0;
-                        var1 = function(arg0) { // Original name: setFirstStartedActiveRootSpanId, environment: var2
+                        var1 = function arg0() {
                             var0 = arg0;
                             _closure2_slot5 = var0;
                             var3 = _closure1_slot0;
@@ -1545,7 +1545,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = {};
                         var3 = _closure1_slot4;
                         var0.name = var3;
-                        var3 = function(arg0) { // Original name: setup, environment: var2
+                        var3 = function arg0() {
                             _fun12573: for (var _fun12573_ip = 0;;) switch (_fun12573_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -1580,7 +1580,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.setup = var3;
-                        var3 = function(arg0) { // Original name: afterAllSetup, environment: var2
+                        var3 = function arg0() {
                             _fun12574: for (var _fun12574_ip = 0;;) switch (_fun12574_ip) {
                                 case 0:
                                     var0 = _closure2_slot4;
@@ -1653,7 +1653,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.afterAllSetup = var3;
-                        var3 = function(arg0) { // Original name: processEvent, environment: var2
+                        var3 = function arg0() {
                             var1 = arg0;
                             var _closure3_slot0 = var1;
                             var2 = _closure1_slot3;
@@ -1724,7 +1724,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var0.processEvent = var3;
-                        var2 = function() { // Original name: captureStandaloneAppStart, environment: var2
+                        var2 = function() {
                             var3 = _closure1_slot3;
                             var7 = this;
                             var4 = function*() { // Environment: var0

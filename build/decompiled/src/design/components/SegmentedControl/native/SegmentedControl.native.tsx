@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/SegmentedControl/native/SegmentedControl.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SegmentedControl, environment: var1
+    var1 = function arg0() {
         _fun66088: for (var _fun66088_ip = 0;;) switch (_fun66088_ip) {
             case 0:
                 var0 = arg0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8[var16];
                 var14 = var5.bind(var4)(var7);
                 var12 = var14.useAnimatedReaction;
-                var11 = function() { // Original name: T, environment: var3
+                var11 = function() {
                     var1 = _closure2_slot12;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.__workletHash = var7;
                 var7 = _closure1_slot10;
                 var11.__initData = var7;
-                var7 = function(arg0, arg1) { // Original name: R, environment: var3
+                var7 = function arg0, arg1() {
                     _fun66090: for (var _fun66090_ip = 0;;) switch (_fun66090_ip) {
                         case 0:
                             var2 = arg1;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8[var16];
                 var14 = var5.bind(var4)(var7);
                 var11 = var14.useDerivedValue;
-                var7 = function() { // Original name: F, environment: var3
+                var7 = function() {
                     var0 = global;
                     var3 = var0.Math;
                     var2 = var3.min;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8[var16];
                 var14 = var5.bind(var4)(var7);
                 var11 = var14.useDerivedValue;
-                var7 = function() { // Original name: k, environment: var3
+                var7 = function() {
                     var2 = _closure2_slot16;
                     var1 = var2.get;
                     var2 = var1.bind(var2)();
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8[var16];
                 var14 = var5.bind(var4)(var7);
                 var11 = var14.useAnimatedStyle;
-                var7 = function() { // Original name: G, environment: var3
+                var7 = function() {
                     _fun66094: for (var _fun66094_ip = 0;;) switch (_fun66094_ip) {
                         case 0:
                             var2 = _closure2_slot17;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.state = var8;
                                 var8 = _closure2_slot5;
                                 var0.pressed = var8;
-                                var8 = function() { // Original name: onPress, environment: var6
+                                var8 = function() {
                                     var2 = _closure2_slot6;
                                     var1 = _closure4_slot0;
                                     var0 = undefined;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.onPress = var8;
-                                var8 = function() { // Original name: onPressIn, environment: var6
+                                var8 = function() {
                                     var2 = _closure2_slot5;
                                     var1 = var2.set;
                                     var0 = _closure4_slot0;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var0.onPressIn = var8;
-                                var6 = function() { // Original name: onPressOut, environment: var6
+                                var6 = function() {
                                     var2 = _closure2_slot5;
                                     var1 = var2.set;
                                     var0 = -1;
@@ -826,7 +826,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13 = var11.bind(var12)(var6, var7);
                 var6 = function() { // Environment: var3
-                    var0 = function(arg0) { // Original name: onPanGestureUpdate, environment: var0
+                    var0 = function arg0() {
                         var0 = arg0;
                         var2 = var0.translationX;
                         var3 = _closure2_slot12;
@@ -878,7 +878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var11.Pan;
                 var19 = var6.bind(var11)();
                 var11 = var19.onStart;
-                var6 = function() { // Original name: B, environment: var3
+                var6 = function() {
                     var2 = _closure2_slot11;
                     var1 = var2.set;
                     var3 = _closure2_slot2;
@@ -900,7 +900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var11.onUpdate;
                 var11 = var6.bind(var11)(var12);
                 var6 = var11.onEnd;
-                var3 = function() { // Original name: H, environment: var3
+                var3 = function() {
                     var3 = _closure2_slot11;
                     var2 = var3.set;
                     var0 = -1;

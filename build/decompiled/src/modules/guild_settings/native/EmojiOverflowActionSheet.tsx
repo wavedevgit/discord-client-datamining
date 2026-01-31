@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/native/EmojiOverflowActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EmojiOverflowActionSheet, environment: var1
+    var1 = function arg0() {
         _fun115291: for (var _fun115291_ip = 0;;) switch (_fun115291_ip) {
             case 0:
                 var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.children = var20;
                 var14 = var16.bind(var3)(var19, var14);
                 var7.label = var14;
-                var14 = function() { // Original name: onPress, environment: var17
+                var14 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 13;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.children = var22;
                 var20 = var16.bind(var3)(var21, var20);
                 var10.label = var20;
-                var20 = function() { // Original name: onPress, environment: var17
+                var20 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var2 = var2.bind(var0)();

@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/ItemDetailsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ItemDetailsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun103571: for (var _fun103571_ip = 0;;) switch (_fun103571_ip) {
             case 0:
                 var1 = arg0;

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1 * var6;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function() { // Original name: getActiveErrors, environment: var3
+    var6 = function() {
         _fun117609: for (var _fun117609_ip = 0;;) switch (_fun117609_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getActiveErrors = var6;
-    var3 = function(arg0) { // Original name: makeErrorContextKey, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.mediaSessionId;
         var0 = global;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Button/native/useToggleButtonProps.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useToggleButtonProps, environment: var1
+    var3 = function arg0, arg1() {
         _fun87671: for (var _fun87671_ip = 0;;) switch (_fun87671_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useToggleButtonProps = var3;
-    var1 = function(arg0, arg1) { // Original name: useToggleIconButtonProps, environment: var1
+    var1 = function arg0, arg1() {
         _fun87672: for (var _fun87672_ip = 0;;) switch (_fun87672_ip) {
             case 0:
                 var3 = arg0;

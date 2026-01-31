@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: OrbsBadgeCoachmarkImg, environment: var1
+    var0 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/OrbsBadgeCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: OrbsBadgeCoachmark, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var4 = var3.badgeRef;
         var0 = null;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useOrbsBadgeCoachmark, environment: var1
+    var1 = function arg0() {
         _fun59567: for (var _fun59567_ip = 0;;) switch (_fun59567_ip) {
             case 0:
                 var1 = arg0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var2 = !var2;
                     var0.visible = var2;
-                    var2 = function() { // Original name: onDismiss, environment: var1
+                    var2 = function() {
                         _fun59569: for (var _fun59569_ip = 0;;) switch (_fun59569_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onDismiss = var2;
-                    var1 = function() { // Original name: renderImgComponent, environment: var1
+                    var1 = function() {
                         var3 = _closure1_slot6;
                         var2 = _closure1_slot8;
                         var1 = undefined;

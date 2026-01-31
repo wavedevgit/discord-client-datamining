@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/settings/Settings.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: Settings, environment: var1
+    var1 = function() {
         _fun104407: for (var _fun104407_ip = 0;;) switch (_fun104407_ip) {
             case 0:
                 var5 = _closure1_slot0;

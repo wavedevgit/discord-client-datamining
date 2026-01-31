@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var1;
-    var3 = function(arg0, arg1) { // Original name: getMetricsAggregatorForClient, environment: var4
+    var3 = function arg0, arg1() {
         _fun99640: for (var _fun99640_ip = 0;;) switch (_fun99640_ip) {
             case 0:
                 var4 = arg0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: addToMetricsAggregator, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun99644: for (var _fun99644_ip = 0;;) switch (_fun99644_ip) {
             case 0:
                 var8 = arg1;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: distribution, environment: var4
+    var5 = function arg0, arg1, arg2, arg3() {
         var6 = _closure1_slot3;
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var5;
-    var0 = function(arg0) { // Original name: ensureNumber, environment: var4
+    var0 = function arg0() {
         _fun99646: for (var _fun99646_ip = 0;;) switch (_fun99646_ip) {
             case 0:
                 var3 = arg0;
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1 = var6.bind(var0)(var1);
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: increment, environment: var4
+    var6 = function arg0, arg1() {
         _fun99647: for (var _fun99647_ip = 0;;) switch (_fun99647_ip) {
             case 0:
                 var0 = undefined;
@@ -344,7 +344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.increment = var6;
     var1.distribution = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: set, environment: var4
+    var5 = function arg0, arg1, arg2, arg3() {
         var6 = _closure1_slot3;
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -362,7 +362,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.set = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: gauge, environment: var4
+    var5 = function arg0, arg1, arg2, arg3() {
         var6 = _closure1_slot3;
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -382,7 +382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.gauge = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: timing, environment: var4
+    var4 = function arg0, arg1, arg2() {
         _fun99650: for (var _fun99650_ip = 0;;) switch (_fun99650_ip) {
             case 0:
                 var6 = arg0;

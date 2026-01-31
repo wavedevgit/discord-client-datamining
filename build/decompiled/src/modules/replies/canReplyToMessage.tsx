@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: hasReplyPermission, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun77256: for (var _fun77256_ip = 0;;) switch (_fun77256_ip) {
             case 0:
                 var2 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: _canReplyToMessage, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun77257: for (var _fun77257_ip = 0;;) switch (_fun77257_ip) {
             case 0:
                 var5 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/replies/canReplyToMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useCanReplyToMessage, environment: var1
+    var3 = function arg0, arg1() {
         _fun77258: for (var _fun77258_ip = 0;;) switch (_fun77258_ip) {
             case 0:
                 var7 = arg0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanReplyToMessage = var3;
-    var1 = function(arg0, arg1) { // Original name: canReplyToMessage, environment: var1
+    var1 = function arg0, arg1() {
         _fun77260: for (var _fun77260_ip = 0;;) switch (_fun77260_ip) {
             case 0:
                 var6 = arg0;

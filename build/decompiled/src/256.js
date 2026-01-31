@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var4)(var2);
     var _closure1_slot0 = var2;
     var1.default = var2;
-    var0 = function(arg0) { // Original name: coerceDisplayMode, environment: var0
+    var0 = function arg0() {
         _fun3316: for (var _fun3316_ip = 0;;) switch (_fun3316_ip) {
             case 0:
                 var2 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: FamilyCenterBannerButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.onPress;
         var7 = var0.text;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.text = var7;
         var0.onPress = var6;
         var0.loading = var5;
-        var4 = function() { // Original name: renderIcon, environment: var4
+        var4 = function() {
             var3 = _closure1_slot7;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/parent_tools/native/FamilyCenterBannerButton.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function() { // Original name: FamilyCenterTeenQRCodeButton, environment: var1
+    var3 = function() {
         _fun81728: for (var _fun81728_ip = 0;;) switch (_fun81728_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot9;
                 var1 = {};
                 var1.text = var5;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 8;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.FamilyCenterTeenQRCodeButton = var3;
-    var1 = function() { // Original name: FamilyCenterParentQRCodeButton, environment: var1
+    var1 = function() {
         _fun81730: for (var _fun81730_ip = 0;;) switch (_fun81730_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun81730
                 }
             case 40:
-                var0 = function(arg0) { // Original name: handleQrCodeScanSucess, environment: var4
+                var0 = function arg0() {
                     _fun81731: for (var _fun81731_ip = 0;;) switch (_fun81731_ip) {
                         case 0:
                             var1 = _closure1_slot1;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.z4a9HP;
                 var5 = var6.bind(var7)(var5);
                 var0.text = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 11;

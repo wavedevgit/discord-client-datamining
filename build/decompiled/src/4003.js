@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var2.ScreenStackHeaderSubview = var4;
     var2.ScreenStackHeaderConfig = var3;
-    var3 = function(arg0) { // Original name: ScreenStackHeaderBackButtonImage, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot8;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ScreenStackHeaderBackButtonImage = var3;
-    var3 = function(arg0) { // Original name: ScreenStackHeaderRightView, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var8 = var4.style;
         var2 = _closure1_slot6;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ScreenStackHeaderRightView = var3;
-    var3 = function(arg0) { // Original name: ScreenStackHeaderLeftView, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var8 = var4.style;
         var2 = _closure1_slot6;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ScreenStackHeaderLeftView = var3;
-    var3 = function(arg0) { // Original name: ScreenStackHeaderCenterView, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var8 = var4.style;
         var2 = _closure1_slot6;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.ScreenStackHeaderCenterView = var3;
-    var1 = function(arg0) { // Original name: ScreenStackHeaderSearchBarView, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot8;
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;

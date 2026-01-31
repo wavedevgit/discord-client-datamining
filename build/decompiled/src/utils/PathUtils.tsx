@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1) { // Original name: pathBasename, environment: var1
+    var3 = function arg0, arg1() {
         _fun30798: for (var _fun30798_ip = 0;;) switch (_fun30798_ip) {
             case 0:
                 var4 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'utils/PathUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: pathJoin, environment: var1
+    var4 = function arg0() {
         _fun30799: for (var _fun30799_ip = 0;;) switch (_fun30799_ip) {
             case 0:
                 var1 = 0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.pathJoin = var4;
     var2.pathBasename = var3;
-    var1 = function(arg0) { // Original name: pathFilenameWithoutExt, environment: var1
+    var1 = function arg0() {
         _fun30801: for (var _fun30801_ip = 0;;) switch (_fun30801_ip) {
             case 0:
                 var2 = _closure1_slot2;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.toString;
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: isArguments, environment: var0
+    var1 = function arg0() {
         _fun28939: for (var _fun28939_ip = 0;;) switch (_fun28939_ip) {
             case 0:
                 var2 = arg0;

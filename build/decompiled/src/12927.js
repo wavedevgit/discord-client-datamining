@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: _getEventFilterUrl, environment: var1
+    var0 = function arg0() {
         _fun99556: for (var _fun99556_ip = 0;;) switch (_fun99556_ip) {
             case 0:
                 var0 = arg0;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 51:
                 var3 = var2;
-                var2 = function() { // Original name: _getLastValidUrl, environment: var2
+                var2 = function() {
                     _fun99557: for (var _fun99557_ip = 0;;) switch (_fun99557_ip) {
                         case 0:
                             var2 = undefined;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _inboundFiltersIntegration, environment: var1
+    var1 = function() {
         _fun99558: for (var _fun99558_ip = 0;;) switch (_fun99558_ip) {
             case 0:
                 var4 = undefined;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'InboundFilters';
                 var0.name = var2;
-                var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun99559: for (var _fun99559_ip = 0;;) switch (_fun99559_ip) {
                         case 0:
                             var1 = arg0;
@@ -215,7 +215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.getOptions;
                             var5 = var2.bind(var3)();
                             var4 = _closure2_slot0;
-                            var2 = function() { // Original name: _mergeOptions, environment: var0
+                            var2 = function() {
                                 _fun99560: for (var _fun99560_ip = 0;;) switch (_fun99560_ip) {
                                     case 0:
                                         var3 = undefined;
@@ -384,7 +384,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             };
                             var3 = undefined;
                             var2 = var2.bind(var3)(var4, var5);
-                            var0 = function(arg0, arg1) { // Original name: _shouldDropEvent, environment: var0
+                            var0 = function arg0, arg1() {
                                 _fun99561: for (var _fun99561_ip = 0;;) switch (_fun99561_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -417,7 +417,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     case 62:
                                         var3 = var1.ignoreErrors;
-                                        var2 = function(arg0, arg1) { // Original name: _isIgnoredError, environment: var0
+                                        var2 = function arg0, arg1() {
                                             _fun99562: for (var _fun99562_ip = 0;;) switch (_fun99562_ip) {
                                                 case 0:
                                                     var4 = arg0;
@@ -536,7 +536,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             continue _fun99561
                                         }
                                     case 89:
-                                        var0 = function(arg0) { // Original name: _isUselessError, environment: var0
+                                        var0 = function arg0() {
                                             _fun99564: for (var _fun99564_ip = 0;;) switch (_fun99564_ip) {
                                                 case 0:
                                                     var1 = arg0;

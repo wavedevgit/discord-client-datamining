@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/Authorize.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: filterScopes, environment: var1
+    var3 = function arg0() {
         _fun28661: for (var _fun28661_ip = 0;;) switch (_fun28661_ip) {
             case 0:
                 var2 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.filterScopes = var3;
-    var1 = function(arg0) { // Original name: parseOAuth2AuthorizeProps, environment: var1
+    var1 = function arg0() {
         _fun28663: for (var _fun28663_ip = 0;;) switch (_fun28663_ip) {
             case 0:
                 var5 = undefined;

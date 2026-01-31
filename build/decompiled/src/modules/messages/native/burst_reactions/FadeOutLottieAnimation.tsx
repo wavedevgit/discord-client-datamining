@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/burst_reactions/FadeOutLottieAnimation.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FadeOutLottieAnimation, environment: var1
+    var1 = function arg0() {
         _fun54484: for (var _fun54484_ip = 0;;) switch (_fun54484_ip) {
             case 0:
                 var4 = arg0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var15[var1];
                 var12 = var16.bind(var4)(var5);
                 var6 = var12.useAnimatedStyle;
-                var5 = function() { // Original name: I, environment: var8
+                var5 = function() {
                     _fun54487: for (var _fun54487_ip = 0;;) switch (_fun54487_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = {};
                             var4 = 300;
                             var6.duration = var4;
-                            var5 = function(arg0) { // Original name: t, environment: var4
+                            var5 = function arg0() {
                                 _fun54488: for (var _fun54488_ip = 0;;) switch (_fun54488_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 0.5;
             case 394:
                 var5.speed = var9;
-                var8 = function(arg0) { // Original name: onAnimationFinish, environment: var8
+                var8 = function arg0() {
                     _fun54489: for (var _fun54489_ip = 0;;) switch (_fun54489_ip) {
                         case 0:
                             var2 = _closure2_slot0;

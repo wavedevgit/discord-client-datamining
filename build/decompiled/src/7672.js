@@ -4,10 +4,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Original name: deprecatedCreateStrictShapeTypeChecker, environment: var0
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: checkType, environment: var0
+        var4 = function arg0, arg1, arg2, arg3, arg4() {
             _fun61700: for (var _fun61700_ip = 0;;) switch (_fun61700_ip) {
                 case 0:
                     var24 = arg1;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var _closure2_slot1 = var4;
-        var0 = function(arg0, arg1, arg2, arg3) { // Original name: chainedCheckType, environment: var0
+        var0 = function arg0, arg1, arg2, arg3() {
             _fun61701: for (var _fun61701_ip = 0;;) switch (_fun61701_ip) {
                 case 0:
                     var3 = undefined;

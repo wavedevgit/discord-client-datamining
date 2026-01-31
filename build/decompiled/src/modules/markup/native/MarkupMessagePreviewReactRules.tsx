@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1, arg2) { // Original name: defaultReactFn, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun69968: for (var _fun69968_ip = 0;;) switch (_fun69968_ip) {
             case 0:
                 var1 = arg0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var1 = function(arg0) { // Original name: createMessagePreviewReactRules, environment: var3
+    var1 = function arg0() {
         _fun69969: for (var _fun69969_ip = 0;;) switch (_fun69969_ip) {
             case 0:
                 var0 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12[var11];
                 var14 = var6;
                 var11 = copyDataProperties(var14, var13);
-                var11 = function() { // Original name: react, environment: var3
+                var11 = function() {
                     var0 = '\n';
                     return var0;
                 };
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.AST_KEY;
                 var7 = var6.HIGHLIGHT;
                 var6 = {};
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     var0 = arg2;
                     var4 = _closure1_slot4;
                     var2 = _closure1_slot1;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.AST_KEY;
                 var7 = var6.EMOJI;
                 var6 = {};
-                var11 = function(arg0) { // Original name: react, environment: var3
+                var11 = function arg0() {
                     _fun69972: for (var _fun69972_ip = 0;;) switch (_fun69972_ip) {
                         case 0:
                             var1 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.AST_KEY;
                 var7 = var6.CUSTOM_EMOJI;
                 var6 = {};
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     _fun69973: for (var _fun69973_ip = 0;;) switch (_fun69973_ip) {
                         case 0:
                             var6 = arg0;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.AST_KEY;
                 var7 = var6.SPOILER;
                 var6 = {};
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     var0 = arg2;
                     var4 = _closure1_slot4;
                     var2 = _closure1_slot1;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.AST_KEY;
                 var7 = var6.STATIC_ROUTE_LINK;
                 var6 = {};
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     _fun69975: for (var _fun69975_ip = 0;;) switch (_fun69975_ip) {
                         case 0:
                             var5 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12[var11];
                 var14 = var6;
                 var11 = copyDataProperties(var14, var13);
-                var12 = function(arg0, arg1, arg2) { // Original name: parse, environment: var3
+                var12 = function arg0, arg1, arg2() {
                     _fun69976: for (var _fun69976_ip = 0;;) switch (_fun69976_ip) {
                         case 0:
                             var4 = _closure1_slot0;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12[var11];
                 var14 = var6;
                 var11 = copyDataProperties(var14, var13);
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     _fun69977: for (var _fun69977_ip = 0;;) switch (_fun69977_ip) {
                         case 0:
                             var5 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12[var11];
                 var14 = var6;
                 var11 = copyDataProperties(var14, var13);
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     _fun69978: for (var _fun69978_ip = 0;;) switch (_fun69978_ip) {
                         case 0:
                             var0 = arg2;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.AST_KEY;
                 var7 = var6.CHANNEL;
                 var6 = {};
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     _fun69979: for (var _fun69979_ip = 0;;) switch (_fun69979_ip) {
                         case 0:
                             var10 = arg0;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12[var11];
                 var14 = var6;
                 var11 = copyDataProperties(var14, var13);
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     var0 = arg2;
                     var4 = _closure1_slot5;
                     var6 = _closure1_slot0;
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var12[var11];
                 var14 = var6;
                 var11 = copyDataProperties(var14, var13);
-                var11 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var11 = function arg0, arg1, arg2() {
                     var4 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -1000,7 +1000,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11[var9];
                 var14 = var6;
                 var9 = copyDataProperties(var14, var13);
-                var9 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var9 = function arg0, arg1, arg2() {
                     _fun69982: for (var _fun69982_ip = 0;;) switch (_fun69982_ip) {
                         case 0:
                             var0 = arg0;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.AST_KEY;
                 var2 = var1.GAME_MENTION;
                 var1 = {};
-                var3 = function(arg0, arg1, arg2) { // Original name: react, environment: var3
+                var3 = function arg0, arg1, arg2() {
                     var0 = arg2;
                     var4 = _closure1_slot5;
                     var6 = _closure1_slot0;
@@ -1139,7 +1139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/markup/native/MarkupMessagePreviewReactRules.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createChannelListMessagePreviewReactRules, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun69984: for (var _fun69984_ip = 0;;) switch (_fun69984_ip) {
             case 0:
                 var8 = arg2;

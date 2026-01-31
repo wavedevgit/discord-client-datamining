@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var0.prototype;
             var0 = var0.propertyIsEnumerable;
             var _closure1_slot2 = var0;
-            var3 = function() { // Original name: shouldUseNative, environment: var2
+            var3 = function() {
                 _fun28703: for (var _fun28703_ip = 0;;) switch (_fun28703_ip) {
                     case 0:
                         var1 = undefined;

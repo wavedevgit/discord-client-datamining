@@ -10,12 +10,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function() { // Original name: shouldEmitW3CPointerEvents, environment: var2
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var0.shouldEmitW3CPointerEvents = var3;
-    var2 = function() { // Original name: shouldPressibilityUseW3CPointerEventsForHover, environment: var2
+    var2 = function() {
         var0 = false;
         return var0;
     };

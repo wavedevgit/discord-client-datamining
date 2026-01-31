@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_automod/AutomodAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var2.AutomodAlertActionType = var1;
-    var1 = function(arg0) { // Original name: parseAlertActionsExecution, environment: var1
+    var1 = function arg0() {
         _fun40774: for (var _fun40774_ip = 0;;) switch (_fun40774_ip) {
             case 0:
                 var2 = arg0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: compareVersions, environment: var1
+    var0 = function arg0, arg1() {
         _fun43909: for (var _fun43909_ip = 0;;) switch (_fun43909_ip) {
             case 0:
                 var1 = arg0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: canUseRoleSubscriptionIAP, environment: var1
+    var3 = function arg0() {
         _fun43910: for (var _fun43910_ip = 0;;) switch (_fun43910_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canUseRoleSubscriptionIAP = var3;
-    var1 = function(arg0) { // Original name: useCanUseRoleSubscriptionIAP, environment: var1
+    var1 = function arg0() {
         _fun43912: for (var _fun43912_ip = 0;;) switch (_fun43912_ip) {
             case 0:
                 var0 = arg0;

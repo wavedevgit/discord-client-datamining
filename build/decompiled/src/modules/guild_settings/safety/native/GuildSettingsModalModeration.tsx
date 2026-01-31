@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114693: for (var _fun114693_ip = 0;;) switch (_fun114693_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot17 = var7;
     var6 = var6.Fragment;
     var _closure1_slot18 = var6;
-    var6 = function(arg0) { // Original name: GuildSettingsOwnerConfiguredContentLevel, environment: var1
+    var6 = function arg0() {
         _fun114696: for (var _fun114696_ip = 0;;) switch (_fun114696_ip) {
             case 0:
                 var0 = arg0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot19 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: GuildSettingsModalModeration, environment: var5
+        var3 = function arg0() {
             _fun114699: for (var _fun114699_ip = 0;;) switch (_fun114699_ip) {
                 case 0:
                     var4 = this;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var1 = this;
             var0 = var1.updateNavigation;
             var0 = var0.bind(var1)();
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var1 = var2.updateNavigation;
             var0 = arg0;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'updateNavigation';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun114703: for (var _fun114703_ip = 0;;) switch (_fun114703_ip) {
                 case 0:
                     var1 = arg0;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderVerificationLevelSection';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = var0.props;
@@ -555,7 +555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var13 = var12.bind(var0)(var14, var13);
                         var10.label = var13;
                         var10.subLabel = var7;
-                        var2 = function() { // Original name: onPress, environment: var2
+                        var2 = function() {
                             var2 = _closure3_slot0;
                             var1 = var2.handleVerificationLevelChange;
                             var0 = _closure4_slot0;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'renderExplicitContentFilter';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = var0.props;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = {};
                         var10.label = var13;
                         var10.subLabel = var7;
-                        var2 = function() { // Original name: onPress, environment: var2
+                        var2 = function() {
                             var2 = _closure3_slot0;
                             var1 = var2.handleExplicitContentFilterChange;
                             var0 = _closure4_slot0;
@@ -831,7 +831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun114713: for (var _fun114713_ip = 0;;) switch (_fun114713_ip) {
                 case 0:
                     var10 = this;
@@ -897,7 +897,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun114714: for (var _fun114714_ip = 0;;) switch (_fun114714_ip) {
                 case 0:
                     var0 = this;
@@ -929,7 +929,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleVerificationLevelChange';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 12;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleExplicitContentFilterChange';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 12;
@@ -975,7 +975,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/safety/native/GuildSettingsModalModeration.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedGuildSettingsModalModeration, environment: var1
+    var1 = function arg0() {
         _fun114717: for (var _fun114717_ip = 0;;) switch (_fun114717_ip) {
             case 0:
                 var1 = arg0;

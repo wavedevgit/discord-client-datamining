@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: ActionChannelInfo, environment: var1
+    var0 = function arg0() {
         _fun89677: for (var _fun89677_ip = 0;;) switch (_fun89677_ip) {
             case 0:
                 var1 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: ChannelActionEmoji, environment: var1
+    var0 = function arg0() {
         _fun89679: for (var _fun89679_ip = 0;;) switch (_fun89679_ip) {
             case 0:
                 var1 = arg0;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: MemberActionChatInputBanner, environment: var1
+    var0 = function arg0() {
         _fun89681: for (var _fun89681_ip = 0;;) switch (_fun89681_ip) {
             case 0:
                 var0 = arg0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var18[var17];
                 var12 = var16.bind(var4)(var6);
                 var10 = var12.useAnimatedStyle;
-                var6 = function() { // Original name: H, environment: var1
+                var6 = function() {
                     _fun89685: for (var _fun89685_ip = 0;;) switch (_fun89685_ip) {
                         case 0:
                             var0 = _closure2_slot5;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var18[var17];
                 var12 = var16.bind(var4)(var6);
                 var10 = var12.useAnimatedStyle;
-                var6 = function() { // Original name: B, environment: var1
+                var6 = function() {
                     _fun89686: for (var _fun89686_ip = 0;;) switch (_fun89686_ip) {
                         case 0:
                             var0 = _closure2_slot5;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun89681
                 }
             case 895:
-                var13 = function() { // Original name: renderAction, environment: var1
+                var13 = function() {
                     _fun89689: for (var _fun89689_ip = 0;;) switch (_fun89689_ip) {
                         case 0:
                             var3 = _closure1_slot13;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var14 = function() { // Original name: renderNextAction, environment: var1
+                var14 = function() {
                     _fun89690: for (var _fun89690_ip = 0;;) switch (_fun89690_ip) {
                         case 0:
                             var1 = _closure2_slot4;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = _closure2_slot1;
                             var5 = var12.container;
                             var1.style = var5;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var3 = _closure1_slot0;
                                 var2 = _closure1_slot2;
                                 var1 = 28;

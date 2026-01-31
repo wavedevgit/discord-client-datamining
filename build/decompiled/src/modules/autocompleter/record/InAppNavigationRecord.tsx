@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun49310: for (var _fun49310_ip = 0;;) switch (_fun49310_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.PLAYGROUND = var7;
     var _closure1_slot7 = var1;
     var3 = function(arg0) { // Environment: var3
-        var4 = function(arg0) { // Original name: InAppNavigationRecord, environment: var1
+        var4 = function arg0() {
             _fun49314: for (var _fun49314_ip = 0;;) switch (_fun49314_ip) {
                 case 0:
                     var1 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fromType';
         var0.key = var5;
-        var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: value, environment: var1
+        var1 = function arg0, arg1, arg2, arg3, arg4() {
             _fun49315: for (var _fun49315_ip = 0;;) switch (_fun49315_ip) {
                 case 0:
                     var3 = arg0;

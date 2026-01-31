@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: SettingBlocklistManager, environment: var1
+    var1 = function() {
         _fun104455: for (var _fun104455_ip = 0;;) switch (_fun104455_ip) {
             case 0:
                 var4 = _closure1_slot4;

@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = function(arg0) { // Original name: isProtectedDayOfYearToken, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.indexOf;
         var0 = arg0;
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isProtectedDayOfYearToken = var0;
-    var0 = function(arg0) { // Original name: isProtectedWeekYearToken, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = var2.indexOf;
         var0 = arg0;
@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isProtectedWeekYearToken = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: throwProtectedError, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun22757: for (var _fun22757_ip = 0;;) switch (_fun22757_ip) {
             case 0:
                 var1 = arg0;

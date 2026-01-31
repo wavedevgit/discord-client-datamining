@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot21 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: clamp, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.min;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/useDraggablePip.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useDraggablePip, environment: var1
+    var1 = function arg0() {
         _fun62838: for (var _fun62838_ip = 0;;) switch (_fun62838_ip) {
             case 0:
                 var0 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var6 = var22.bind(var5)(var0);
                 var3 = var6.useDerivedValue;
-                var0 = function() { // Original name: N, environment: var1
+                var0 = function() {
                     _fun62840: for (var _fun62840_ip = 0;;) switch (_fun62840_ip) {
                         case 0:
                             var1 = _closure1_slot0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var7 = var22.bind(var5)(var0);
                 var3 = var7.useDerivedValue;
-                var0 = function() { // Original name: E, environment: var1
+                var0 = function() {
                     var0 = _closure2_slot0;
                     return var0;
                 };
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var7 = var22.bind(var5)(var0);
                 var3 = var7.useDerivedValue;
-                var0 = function() { // Original name: V, environment: var1
+                var0 = function() {
                     var0 = _closure2_slot1;
                     return var0;
                 };
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var8 = var22.bind(var5)(var0);
                 var3 = var8.useDerivedValue;
-                var0 = function() { // Original name: F, environment: var1
+                var0 = function() {
                     var2 = _closure2_slot8;
                     var1 = var2.get;
                     var1 = var1.bind(var2)();
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var8 = var22.bind(var5)(var0);
                 var3 = var8.useDerivedValue;
-                var0 = function() { // Original name: G, environment: var1
+                var0 = function() {
                     var2 = _closure2_slot8;
                     var1 = var2.get;
                     var1 = var1.bind(var2)();
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var9 = var22.bind(var5)(var0);
                 var3 = var9.useDerivedValue;
-                var0 = function() { // Original name: I, environment: var1
+                var0 = function() {
                     var0 = _closure2_slot2;
                     return var0;
                 };
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var9 = var22.bind(var5)(var0);
                 var3 = var9.useDerivedValue;
-                var0 = function() { // Original name: q, environment: var1
+                var0 = function() {
                     var0 = _closure2_slot3;
                     return var0;
                 };
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var16 = var22.bind(var5)(var0);
                 var14 = var16.useAnimatedReaction;
-                var3 = function() { // Original name: R, environment: var1
+                var3 = function() {
                     var2 = _closure2_slot2;
                     var3 = _closure2_slot11;
                     var0 = var3.get;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var0;
                 var0 = _closure1_slot13;
                 var3.__initData = var0;
-                var0 = function(arg0, arg1) { // Original name: J, environment: var1
+                var0 = function arg0, arg1() {
                     _fun62848: for (var _fun62848_ip = 0;;) switch (_fun62848_ip) {
                         case 0:
                             var3 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var13];
                 var16 = var22.bind(var5)(var0);
                 var14 = var16.useAnimatedReaction;
-                var3 = function() { // Original name: L, environment: var1
+                var3 = function() {
                     var2 = _closure2_slot3;
                     var3 = _closure2_slot12;
                     var0 = var3.get;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var0;
                 var0 = _closure1_slot15;
                 var3.__initData = var0;
-                var0 = function(arg0, arg1) { // Original name: U, environment: var1
+                var0 = function arg0, arg1() {
                     _fun62850: for (var _fun62850_ip = 0;;) switch (_fun62850_ip) {
                         case 0:
                             var3 = arg0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.Pan;
                 var16 = var0.bind(var3)();
                 var3 = var16.onUpdate;
-                var0 = function(arg0) { // Original name: re, environment: var1
+                var0 = function arg0() {
                     _fun62851: for (var _fun62851_ip = 0;;) switch (_fun62851_ip) {
                         case 0:
                             var1 = arg0;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.__initData = var17;
                 var16 = var3.bind(var16)(var0);
                 var3 = var16.onEnd;
-                var0 = function(arg0) { // Original name: ae, environment: var1
+                var0 = function arg0() {
                     _fun62852: for (var _fun62852_ip = 0;;) switch (_fun62852_ip) {
                         case 0:
                             var8 = arg0;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var15.Tap;
                 var16 = var0.bind(var15)();
                 var15 = var16.onStart;
-                var0 = function() { // Original name: ce, environment: var1
+                var0 = function() {
                     _fun62853: for (var _fun62853_ip = 0;;) switch (_fun62853_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var13];
                 var3 = var3.bind(var5)(var2);
                 var2 = var3.useAnimatedStyle;
-                var1 = function() { // Original name: ue, environment: var1
+                var1 = function() {
                     var0 = {};
                     var2 = {};
                     var4 = _closure2_slot16;

@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.DEVICE_PUSH_PROVIDER_META_HORIZON = var6;
             var2.DEVICE_PUSH_PROVIDER_IOS = var5;
             var2.DEVICE_PUSH_VOIP_PROVIDER = var4;
-            var3 = function() { // Original name: getDevicePushProvider, environment: var3
+            var3 = function() {
                 _fun41112: for (var _fun41112_ip = 0;;) switch (_fun41112_ip) {
                     case 0:
                         var0 = _closure1_slot2;

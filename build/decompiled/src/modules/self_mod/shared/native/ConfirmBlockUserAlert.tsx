@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/shared/native/ConfirmBlockUserAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConfirmBlockUserAlert, environment: var1
+    var1 = function arg0() {
         _fun72348: for (var _fun72348_ip = 0;;) switch (_fun72348_ip) {
             case 0:
                 var1 = arg0;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var9[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var4 = function() { // Original name: renderConfirmButton, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot7;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;

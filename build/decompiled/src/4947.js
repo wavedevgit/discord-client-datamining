@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var3 = function(arg0) { // Original name: transformIntoHandlerTags, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 1;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var4;
     var4 = false;
     var _closure1_slot4 = var4;
-    var4 = function(arg0, arg1) { // Original name: filterConfig, environment: var1
+    var4 = function arg0, arg1() {
         _fun44730: for (var _fun44730_ip = 0;;) switch (_fun44730_ip) {
             case 0:
                 var12 = undefined;
@@ -253,7 +253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.filterConfig = var4;
     var2.transformIntoHandlerTags = var3;
-    var3 = function(arg0) { // Original name: findNodeHandle, environment: var1
+    var3 = function arg0() {
         _fun44731: for (var _fun44731_ip = 0;;) switch (_fun44731_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -273,7 +273,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.findNodeHandle = var3;
-    var1 = function() { // Original name: scheduleFlushOperations, environment: var1
+    var1 = function() {
         _fun44732: for (var _fun44732_ip = 0;;) switch (_fun44732_ip) {
             case 0:
                 var1 = _closure1_slot4;

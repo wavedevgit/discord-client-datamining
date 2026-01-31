@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.ProductType;
     var3 = var3.inapp;
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1) { // Original name: addSubscriptionPlatform, environment: var1
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.isIosStorekit2;
     var2.isIosStorekit2 = var3;
-    var3 = function() { // Original name: setup, environment: var1
+    var3 = function() {
         _fun58255: for (var _fun58255_ip = 0;;) switch (_fun58255_ip) {
             case 0:
                 var0 = undefined;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.setup = var3;
-    var3 = function() { // Original name: initConnection, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.initConnection = var3;
-    var3 = function() { // Original name: endConnection, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.endConnection = var3;
-    var3 = function() { // Original name: flushFailedPurchasesCachedAsPendingAndroid, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -210,7 +210,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.flushFailedPurchasesCachedAsPendingAndroid = var3;
-    var3 = function(arg0) { // Original name: getProducts, environment: var1
+    var3 = function arg0() {
         _fun58259: for (var _fun58259_ip = 0;;) switch (_fun58259_ip) {
             case 0:
                 var0 = arg0;
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var3 = var4.bind(var2)(var3);
                 var _closure2_slot0 = var3;
-                var1 = function() { // Original name: android, environment: var1
+                var1 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -310,7 +310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getProducts = var3;
-    var3 = function(arg0) { // Original name: getSubscriptions, environment: var1
+    var3 = function arg0() {
         _fun58263: for (var _fun58263_ip = 0;;) switch (_fun58263_ip) {
             case 0:
                 var0 = arg0;
@@ -454,7 +454,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var3 = var4.bind(var2)(var3);
                 var _closure2_slot0 = var3;
-                var1 = function() { // Original name: android, environment: var1
+                var1 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getSubscriptions = var3;
-    var3 = function() { // Original name: getPurchaseHistory, environment: var1
+    var3 = function() {
         _fun58267: for (var _fun58267_ip = 0;;) switch (_fun58267_ip) {
             case 0:
                 var1 = undefined;
@@ -575,7 +575,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var2 = var3.bind(var1)(var2);
                 var _closure2_slot0 = var2;
-                var0 = function() { // Original name: android, environment: var0
+                var0 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -590,7 +590,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getPurchaseHistory = var3;
-    var3 = function() { // Original name: getAvailablePurchases, environment: var1
+    var3 = function() {
         _fun58271: for (var _fun58271_ip = 0;;) switch (_fun58271_ip) {
             case 0:
                 var1 = undefined;
@@ -695,7 +695,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var2 = var3.bind(var1)(var2);
                 var _closure2_slot0 = var2;
-                var0 = function() { // Original name: android, environment: var0
+                var0 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -710,7 +710,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getAvailablePurchases = var3;
-    var3 = function(arg0) { // Original name: requestPurchase, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot3;
@@ -833,7 +833,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2 = var3.bind(var1)(var2);
         var _closure2_slot1 = var2;
-        var0 = function() { // Original name: android, environment: var0
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -847,7 +847,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.requestPurchase = var3;
-    var3 = function(arg0) { // Original name: requestSubscription, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot3;
@@ -1031,7 +1031,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2 = var3.bind(var1)(var2);
         var _closure2_slot1 = var2;
-        var0 = function() { // Original name: android, environment: var0
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -1045,7 +1045,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.requestSubscription = var3;
-    var3 = function(arg0) { // Original name: finishTransaction, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.purchase;
         var _closure2_slot1 = var2;
@@ -1193,7 +1193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2 = var3.bind(var1)(var2);
         var _closure2_slot0 = var2;
-        var0 = function() { // Original name: android, environment: var0
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -1207,7 +1207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.finishTransaction = var3;
-    var3 = function(arg0) { // Original name: deepLinkToSubscriptions, environment: var1
+    var3 = function arg0() {
         _fun58289: for (var _fun58289_ip = 0;;) switch (_fun58289_ip) {
             case 0:
                 var1 = arg0;
@@ -1305,7 +1305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var2 = var3.bind(var1)(var2);
                 var _closure2_slot0 = var2;
-                var0 = function() { // Original name: android, environment: var0
+                var0 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot0;
                     var2 = var3.apply;
@@ -1320,7 +1320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.deepLinkToSubscriptions = var3;
-    var1 = function() { // Original name: getStorefront, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var1 = undefined;
         var2 = function*() { // Environment: var0
@@ -1358,7 +1358,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2 = var3.bind(var1)(var2);
         var _closure2_slot0 = var2;
-        var0 = function() { // Original name: android, environment: var0
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

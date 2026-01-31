@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var14;
     var _closure1_slot1 = var26;
     var _closure1_slot2 = var15;
-    var11 = function(arg0, arg1) { // Original name: useEventRsvpState, environment: var1
+    var11 = function arg0, arg1() {
         var2 = arg0;
         var0 = arg1;
         var _closure2_slot0 = var2;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var11;
-    var9 = function(arg0, arg1) { // Original name: usePrimaryActionButtonType, environment: var1
+    var9 = function arg0, arg1() {
         _fun65915: for (var _fun65915_ip = 0;;) switch (_fun65915_ip) {
             case 0:
                 var7 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var9;
-    var8 = function(arg0) { // Original name: GuildEventCardRSVPAction, environment: var1
+    var8 = function arg0() {
         _fun65920: for (var _fun65920_ip = 0;;) switch (_fun65920_ip) {
             case 0:
                 var0 = arg0;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var8;
-    var7 = function(arg0) { // Original name: GuildEventJoinAndRSVPAction, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var4 = var1.event;
         var _closure2_slot0 = var4;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var7;
-    var5 = function(arg0) { // Original name: UserCountIconPill, environment: var1
+    var5 = function arg0() {
         _fun65926: for (var _fun65926_ip = 0;;) switch (_fun65926_ip) {
             case 0:
                 var0 = arg0;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var5;
-    var4 = function(arg0) { // Original name: GuildEventCardTitle, environment: var1
+    var4 = function arg0() {
         _fun65927: for (var _fun65927_ip = 0;;) switch (_fun65927_ip) {
             case 0:
                 var0 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var4;
-    var3 = function(arg0) { // Original name: GuildEventCardDescription, environment: var1
+    var3 = function arg0() {
         _fun65928: for (var _fun65928_ip = 0;;) switch (_fun65928_ip) {
             case 0:
                 var0 = arg0;
@@ -1051,7 +1051,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5 = var5.bind(var6)(var1, var0);
-                var6 = function() { // Original name: handleListenIn, environment: var9
+                var6 = function() {
                     _fun65932: for (var _fun65932_ip = 0;;) switch (_fun65932_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -1193,7 +1193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.qaYzPA;
                 var10 = var11.bind(var12)(var10);
                 var0.text = var10;
-                var10 = function() { // Original name: onPress, environment: var9
+                var10 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 36;
@@ -1244,7 +1244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.p89ACt;
                     var4 = var7.bind(var8)(var4);
                     var1.confirmText = var4;
-                    var4 = function() { // Original name: onConfirm, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 37;
@@ -1324,7 +1324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.cK1GGY;
                 var10 = var11.bind(var12)(var10);
                 var0.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     _fun65933: for (var _fun65933_ip = 0;;) switch (_fun65933_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -1471,7 +1471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = 'modules/guild_scheduled_events/native/components/GuildEventCardComponents.tsx';
     var13 = var14.bind(var15)(var13);
     var2.useGuildEventCardStyles = var12;
-    var12 = function(arg0) { // Original name: GuildEventShareAction, environment: var1
+    var12 = function arg0() {
         _fun65936: for (var _fun65936_ip = 0;;) switch (_fun65936_ip) {
             case 0:
                 var0 = arg0;
@@ -1514,7 +1514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.RDE0Sc;
                 var8 = var9.bind(var10)(var8);
                 var0.accessibilityLabel = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     _fun65937: for (var _fun65937_ip = 0;;) switch (_fun65937_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -1576,7 +1576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventShareAction = var12;
-    var12 = function(arg0) { // Original name: GuildEventModeratorAction, environment: var1
+    var12 = function arg0() {
         _fun65938: for (var _fun65938_ip = 0;;) switch (_fun65938_ip) {
             case 0:
                 var0 = arg0;
@@ -1657,7 +1657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.HIgA5a;
                 var7 = var8.bind(var9)(var7);
                 var0.accessibilityLabel = var7;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 21;
@@ -1685,7 +1685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildEventModeratorAction = var12;
     var2.useEventRsvpState = var11;
-    var11 = function(arg0) { // Original name: GuildEventIndicateInterestAction, environment: var1
+    var11 = function arg0() {
         _fun65942: for (var _fun65942_ip = 0;;) switch (_fun65942_ip) {
             case 0:
                 var0 = arg0;
@@ -1772,7 +1772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildEventCardRSVPAction = var8;
     var2.GuildEventJoinAndRSVPAction = var7;
     var2.GuildEventCardPrimaryAction = var6;
-    var6 = function(arg0) { // Original name: GuildEventCardImageHeader, environment: var1
+    var6 = function arg0() {
         _fun65943: for (var _fun65943_ip = 0;;) switch (_fun65943_ip) {
             case 0:
                 var0 = arg0;
@@ -1829,7 +1829,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildEventCardImageHeader = var6;
     var2.UserCountIconPill = var5;
-    var5 = function(arg0) { // Original name: GuildEventCardHeader, environment: var1
+    var5 = function arg0() {
         _fun65944: for (var _fun65944_ip = 0;;) switch (_fun65944_ip) {
             case 0:
                 var2 = arg0;
@@ -2036,7 +2036,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var15 = 'button';
                 var1.accessibilityRole = var15;
-                var15 = function() { // Original name: onPress, environment: var16
+                var15 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -2094,7 +2094,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.vHYgJW;
                 var0 = {};
                 var0.start = var17;
-                var16 = function(arg0) { // Original name: startHook, environment: var16
+                var16 = function arg0() {
                     _fun65948: for (var _fun65948_ip = 0;;) switch (_fun65948_ip) {
                         case 0:
                             var3 = _closure1_slot23;
@@ -2279,7 +2279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildEventCardHeader = var5;
     var2.GuildEventCardTitle = var4;
     var2.GuildEventCardDescription = var3;
-    var3 = function(arg0) { // Original name: GuildEventCardMetaInfo, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var11 = var1.event;
         var13 = var1.titleStyle;
@@ -2319,7 +2319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.GuildEventCardMetaInfo = var3;
-    var3 = function(arg0) { // Original name: GuildEventSimpleLocation, environment: var1
+    var3 = function arg0() {
         _fun65950: for (var _fun65950_ip = 0;;) switch (_fun65950_ip) {
             case 0:
                 var1 = arg0;
@@ -2506,7 +2506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventSimpleLocation = var3;
-    var3 = function(arg0) { // Original name: GuildEventCardSimpleGuildInfo, environment: var1
+    var3 = function arg0() {
         _fun65953: for (var _fun65953_ip = 0;;) switch (_fun65953_ip) {
             case 0:
                 var2 = arg0;
@@ -2598,7 +2598,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.GuildEventCardSimpleGuildInfo = var3;
-    var1 = function(arg0) { // Original name: GuildEventCardGuildInfo, environment: var1
+    var1 = function arg0() {
         _fun65955: for (var _fun65955_ip = 0;;) switch (_fun65955_ip) {
             case 0:
                 var1 = arg0;

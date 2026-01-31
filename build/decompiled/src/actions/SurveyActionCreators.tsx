@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/SurveyActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: overrideSurvey, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.overrideSurvey = var3;
-    var3 = function(arg0, arg1) { // Original name: surveyHide, environment: var1
+    var3 = function arg0, arg1() {
         _fun86740: for (var _fun86740_ip = 0;;) switch (_fun86740_ip) {
             case 0:
                 var6 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.surveyHide = var3;
-    var3 = function(arg0, arg1) { // Original name: surveyFetch, environment: var1
+    var3 = function arg0, arg1() {
         _fun86741: for (var _fun86741_ip = 0;;) switch (_fun86741_ip) {
             case 0:
                 var3 = arg0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.NetworkActionNames;
                 var5 = var5.USER_SURVEY_FETCH;
                 var4.event = var5;
-                var5 = function(arg0) { // Original name: properties, environment: var0
+                var5 = function arg0() {
                     _fun86742: for (var _fun86742_ip = 0;;) switch (_fun86742_ip) {
                         case 0:
                             var0 = arg0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.surveyFetch = var3;
-    var1 = function(arg0) { // Original name: surveySeen, environment: var1
+    var1 = function arg0() {
         _fun86745: for (var _fun86745_ip = 0;;) switch (_fun86745_ip) {
             case 0:
                 var9 = arg0;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.NetworkActionNames;
                 var5 = var5.USER_SURVEY_SEEN;
                 var3.event = var5;
-                var4 = function() { // Original name: properties, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 6;

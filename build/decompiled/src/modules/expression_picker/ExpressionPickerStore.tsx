@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = {};
     var1 = 'expression-picker-last-active-view';
     var5.name = var1;
-    var1 = function(arg0) { // Original name: partialize, environment: var3
+    var1 = function arg0() {
         var0 = {};
         var1 = arg0;
         var1 = var1.lastActiveView;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var9)(var1, var5);
     var1 = var4.bind(var0)(var1);
     var _closure1_slot4 = var1;
-    var5 = function(arg0, arg1, arg2) { // Original name: openExpressionPicker, environment: var3
+    var5 = function arg0, arg1, arg2() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0, arg1) { // Original name: closeExpressionPicker, environment: var3
+    var4 = function arg0, arg1() {
         _fun68141: for (var _fun68141_ip = 0;;) switch (_fun68141_ip) {
             case 0:
                 var6 = arg0;

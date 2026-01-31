@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113526: for (var _fun113526_ip = 0;;) switch (_fun113526_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: JankStatsManager, environment: var5
+        var3 = function arg0() {
             _fun113530: for (var _fun113530_ip = 0;;) switch (_fun113530_ip) {
                 case 0:
                     var4 = this;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = true;
                     var0._isStartup = var1;
                     var1 = {};
-                    var3 = function(arg0) { // Original name: APP_STATE_UPDATE, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAppStateUpdate;
                         var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.APP_STATE_UPDATE = var3;
-                    var2 = function() { // Original name: CONNECTION_OPEN_SUPPLEMENTAL, environment: var2
+                    var2 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleConnectionOpenSupplemental;
                         var0 = var0.bind(var1)();
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleAppStateUpdate';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun113533: for (var _fun113533_ip = 0;;) switch (_fun113533_ip) {
                 case 0:
                     var2 = this;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpenSupplemental';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = global;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'scheduleReport';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun113536: for (var _fun113536_ip = 0;;) switch (_fun113536_ip) {
                 case 0:
                     var1 = this;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'sendReport';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun113538: for (var _fun113538_ip = 0;;) switch (_fun113538_ip) {
                 case 0:
                     var2 = _closure1_slot1;

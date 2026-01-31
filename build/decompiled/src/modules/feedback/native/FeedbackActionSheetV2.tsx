@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: closeActionSheet, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.problemsList = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: shuffleOptionsTree, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/feedback/native/FeedbackActionSheetV2.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FeedbackActionSheetV2, environment: var1
+    var1 = function arg0() {
         _fun113022: for (var _fun113022_ip = 0;;) switch (_fun113022_ip) {
             case 0:
                 var0 = arg0;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = _closure2_slot8;
                             var8.dontShowAgain = var9;
                             var0.result = var8;
-                            var8 = function(arg0) { // Original name: trackReport, environment: var8
+                            var8 = function arg0() {
                                 _fun113026: for (var _fun113026_ip = 0;;) switch (_fun113026_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var5;
                     var5 = 2;
                     var1.labelLineClamp = var5;
-                    var0 = function() { // Original name: onPress, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot19;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var26["13/7kX"];
                 var26 = var27.bind(var28)(var26);
                 var18.text = var26;
-                var26 = function() { // Original name: onPress, environment: var20
+                var26 = function() {
                     _fun113036: for (var _fun113036_ip = 0;;) switch (_fun113036_ip) {
                         case 0:
                             var0 = _closure2_slot6;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.label = var5;
                     var5 = 2;
                     var1.labelLineClamp = var5;
-                    var0 = function() { // Original name: onPress, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot18;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -821,7 +821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25["13/7kX"];
                 var25 = var26.bind(var27)(var25);
                 var17.text = var25;
-                var25 = function() { // Original name: onPress, environment: var20
+                var25 = function() {
                     var2 = _closure2_slot11;
                     var1 = undefined;
                     var0 = null;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21["5E9SB9"];
                 var21 = var22.bind(var23)(var21);
                 var17.label = var21;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure2_slot9;
                     var0 = _closure2_slot8;
                     var1 = !var0;

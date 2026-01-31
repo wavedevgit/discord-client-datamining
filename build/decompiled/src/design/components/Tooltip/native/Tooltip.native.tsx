@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tooltip/native/Tooltip.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Tooltip, environment: var1
+    var1 = function arg0() {
         _fun57344: for (var _fun57344_ip = 0;;) switch (_fun57344_ip) {
             case 0:
                 var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var26[var9];
                 var2 = var27.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: b, environment: var20
+                var0 = function() {
                     var0 = {};
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var26[var9];
                 var2 = var27.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: D, environment: var20
+                var0 = function() {
                     var0 = {};
                     var9 = _closure1_slot0;
                     var11 = _closure1_slot2;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var19 == var21;
                 var0.disabled = var22;
                 var0.onPress = var21;
-                var20 = function(arg0) { // Original name: onLayout, environment: var20
+                var20 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var2 = _closure2_slot1;

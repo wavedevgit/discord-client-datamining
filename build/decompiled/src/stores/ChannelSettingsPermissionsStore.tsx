@@ -12,7 +12,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = metroImportAll;
             var _closure1_slot2 = var0;
             var _closure1_slot3 = var5;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+            var0 = function() {
                 _fun108973: for (var _fun108973_ip = 0;;) switch (_fun108973_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var0;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+            var0 = function arg0, arg1() {
                 _fun108976: for (var _fun108976_ip = 0;;) switch (_fun108976_ip) {
                     case 0:
                         var2 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot27 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+            var0 = function arg0, arg1() {
                 _fun108978: for (var _fun108978_ip = 0;;) switch (_fun108978_ip) {
                     case 0:
                         var3 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot28 = var0;
-            var0 = function(arg0) { // Original name: getPermissionOverwrites, environment: var3
+            var0 = function arg0() {
                 _fun108979: for (var _fun108979_ip = 0;;) switch (_fun108979_ip) {
                     case 0:
                         var1 = arg0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var0;
-            var8 = function() { // Original name: init, environment: var3
+            var8 = function() {
                 _fun108980: for (var _fun108980_ip = 0;;) switch (_fun108980_ip) {
                     case 0:
                         var2 = _closure1_slot9;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot30 = var8;
-            var0 = function(arg0) { // Original name: syncChannelUpdates, environment: var3
+            var0 = function arg0() {
                 _fun108981: for (var _fun108981_ip = 0;;) switch (_fun108981_ip) {
                     case 0:
                         var4 = arg0;
@@ -646,7 +646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.bind(var0)(var1);
             var7 = var1.Store;
             var1 = function(arg0) { // Environment: var3
-                var3 = function() { // Original name: ChannelSettingsPermissionsStore, environment: var5
+                var3 = function() {
                     _fun108984: for (var _fun108984_ip = 0;;) switch (_fun108984_ip) {
                         case 0:
                             var3 = this;
@@ -694,7 +694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'initialize';
                 var4.key = var0;
-                var0 = function() { // Original name: value, environment: var5
+                var0 = function() {
                     var3 = this;
                     var2 = var3.waitFor;
                     var1 = _closure1_slot9;
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hasChanges';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot18;
                     return var0;
                 };
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'showNotice';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var1 = this;
                     var0 = var1.hasChanges;
                     var0 = var0.bind(var1)();
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getPermissionOverwrite';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun108988: for (var _fun108988_ip = 0;;) switch (_fun108988_ip) {
                         case 0:
                             var2 = _closure1_slot19;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'editedPermissionIds';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = global;
                     var2 = var0.Array;
                     var1 = var2.from;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'permissionOverwrites';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot19;
                     return var0;
                 };
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'selectedOverwriteId';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot23;
                     return var0;
                 };
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'formState';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot17;
                     return var0;
                 };
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'isLockable';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot15;
                     return var0;
                 };
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'locked';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot14;
                     return var0;
                 };
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'channel';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot21;
                     return var0;
                 };
@@ -819,7 +819,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'category';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot22;
                     return var0;
                 };
@@ -828,7 +828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'advancedMode';
                 var4.key = var6;
-                var5 = function() { // Original name: get, environment: var5
+                var5 = function() {
                     var0 = _closure1_slot25;
                     return var0;
                 };
@@ -844,7 +844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var5[var1];
             var13 = var6.bind(var0)(var1);
             var1 = {};
-            var9 = function(arg0) { // Original name: handleSetSection, environment: var3
+            var9 = function arg0() {
                 _fun108998: for (var _fun108998_ip = 0;;) switch (_fun108998_ip) {
                     case 0:
                         var0 = arg0;
@@ -874,7 +874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.CHANNEL_SETTINGS_SET_SECTION = var9;
             var1.CHANNEL_SETTINGS_PERMISSIONS_INIT = var8;
-            var8 = function(arg0) { // Original name: handleUpdatePermission, environment: var3
+            var8 = function arg0() {
                 _fun108999: for (var _fun108999_ip = 0;;) switch (_fun108999_ip) {
                     case 0:
                         var0 = arg0;
@@ -951,7 +951,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION = var8;
-            var8 = function(arg0) { // Original name: handleSelectPermission, environment: var3
+            var8 = function arg0() {
                 _fun109000: for (var _fun109000_ip = 0;;) switch (_fun109000_ip) {
                     case 0:
                         var0 = arg0;
@@ -990,7 +990,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION = var8;
-            var8 = function() { // Original name: handleInit, environment: var3
+            var8 = function() {
                 _fun109001: for (var _fun109001_ip = 0;;) switch (_fun109001_ip) {
                     case 0:
                         var2 = _closure1_slot9;
@@ -1012,7 +1012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.CHANNEL_SETTINGS_INIT = var8;
-            var8 = function() { // Original name: handleClose, environment: var3
+            var8 = function() {
                 var0 = _closure1_slot12;
                 var0 = var0.CLOSED;
                 _closure1_slot17 = var0;
@@ -1032,7 +1032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_SETTINGS_CLOSE = var8;
-            var8 = function(arg0) { // Original name: handleChannelUpdates, environment: var3
+            var8 = function arg0() {
                 _fun109003: for (var _fun109003_ip = 0;;) switch (_fun109003_ip) {
                     case 0:
                         var0 = arg0;
@@ -1085,7 +1085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.CHANNEL_UPDATES = var8;
-            var8 = function() { // Original name: handleSubmitting, environment: var3
+            var8 = function() {
                 var0 = _closure1_slot12;
                 var0 = var0.SUBMITTING;
                 _closure1_slot17 = var0;
@@ -1093,7 +1093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING = var8;
-            var8 = function(arg0) { // Original name: handleSaveSuccess, environment: var3
+            var8 = function arg0() {
                 _fun109005: for (var _fun109005_ip = 0;;) switch (_fun109005_ip) {
                     case 0:
                         var0 = arg0;
@@ -1120,7 +1120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS = var8;
-            var3 = function(arg0) { // Original name: handleSetAdvancedMode, environment: var3
+            var3 = function arg0() {
                 var0 = arg0;
                 var4 = var0.advancedMode;
                 _closure1_slot25 = var4;

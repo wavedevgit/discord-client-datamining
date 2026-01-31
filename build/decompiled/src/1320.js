@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var2
+            var0 = function arg0, arg1, arg2() {
                 _fun14830: for (var _fun14830_ip = 0;;) switch (_fun14830_ip) {
                     case 0:
                         var3 = arg0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot10 = var0;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var2
+            var0 = function() {
                 _fun14831: for (var _fun14831_ip = 0;;) switch (_fun14831_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot11 = var0;
-            var0 = function(arg0) { // Original name: assertBi, environment: var2
+            var0 = function arg0() {
                 _fun14834: for (var _fun14834_ip = 0;;) switch (_fun14834_ip) {
                     case 0:
                         var0 = arg0;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot9 = var4;
             var4 = function() { // Environment: var2
                 var3 = _closure1_slot7;
-                var2 = function(arg0, arg1) { // Original name: SharedPbLong, environment: var4
+                var2 = function arg0, arg1() {
                     var2 = this;
                     var3 = _closure1_slot6;
                     var1 = _closure2_slot0;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'isZero';
                 var0.key = var1;
-                var1 = function() { // Original name: isZero, environment: var4
+                var1 = function() {
                     _fun14837: for (var _fun14837_ip = 0;;) switch (_fun14837_ip) {
                         case 0:
                             var1 = this;
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'toNumber';
                 var0.key = var5;
-                var4 = function() { // Original name: toNumber, environment: var4
+                var4 = function() {
                     _fun14838: for (var _fun14838_ip = 0;;) switch (_fun14838_ip) {
                         case 0:
                             var0 = this;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var4 = var4.bind(var0)();
             var5 = function(arg0) { // Environment: var2
-                var4 = function() { // Original name: PbULong, environment: var0
+                var4 = function() {
                     var4 = this;
                     var3 = undefined;
                     var0 = undefined;
@@ -348,7 +348,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var1 = 'toString';
                 var5.key = var1;
-                var1 = function() { // Original name: toString, environment: var0
+                var1 = function() {
                     _fun14841: for (var _fun14841_ip = 0;;) switch (_fun14841_ip) {
                         case 0:
                             var2 = this;
@@ -385,7 +385,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'toBigInt';
                 var5.key = var6;
-                var6 = function() { // Original name: toBigInt, environment: var0
+                var6 = function() {
                     var1 = this;
                     var3 = _closure1_slot12;
                     var0 = _closure1_slot8;
@@ -412,7 +412,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'from';
                 var5.key = var6;
-                var0 = function(arg0) { // Original name: from, environment: var0
+                var0 = function arg0() {
                     _fun14843: for (var _fun14843_ip = 0;;) switch (_fun14843_ip) {
                         case 0:
                             var6 = arg0;
@@ -762,7 +762,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var5 instanceof Object ? var5 : var7;
             var6.ZERO = var5;
             var2 = function(arg0) { // Environment: var2
-                var4 = function() { // Original name: PbLong, environment: var0
+                var4 = function() {
                     var4 = this;
                     var3 = undefined;
                     var0 = undefined;
@@ -783,7 +783,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var1 = 'isNegative';
                 var5.key = var1;
-                var1 = function() { // Original name: isNegative, environment: var0
+                var1 = function() {
                     var0 = this;
                     var1 = var0.hi;
                     var0 = 2147483648.0;
@@ -798,7 +798,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'negate';
                 var5.key = var6;
-                var6 = function() { // Original name: negate, environment: var0
+                var6 = function() {
                     _fun14847: for (var _fun14847_ip = 0;;) switch (_fun14847_ip) {
                         case 0:
                             var0 = this;
@@ -840,7 +840,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'toString';
                 var5.key = var6;
-                var6 = function() { // Original name: toString, environment: var0
+                var6 = function() {
                     _fun14848: for (var _fun14848_ip = 0;;) switch (_fun14848_ip) {
                         case 0:
                             var1 = this;
@@ -897,7 +897,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'toBigInt';
                 var5.key = var6;
-                var6 = function() { // Original name: toBigInt, environment: var0
+                var6 = function() {
                     var1 = this;
                     var3 = _closure1_slot12;
                     var0 = _closure1_slot8;
@@ -924,7 +924,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = {};
                 var6 = 'from';
                 var5.key = var6;
-                var0 = function(arg0) { // Original name: from, environment: var0
+                var0 = function arg0() {
                     _fun14850: for (var _fun14850_ip = 0;;) switch (_fun14850_ip) {
                         case 0:
                             var6 = arg0;

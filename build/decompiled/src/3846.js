@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
-    var0 = function(arg0) { // Original name: JsPerformance, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var10 = var1.smoothingFrames;
         var2 = _closure1_slot0;
@@ -33,12 +33,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7[0] = var5;
         var7[1] = var6;
         var6 = function() { // Environment: var0
-            var2 = function(arg0) { // Original name: loopAnimationFrame, environment: var1
+            var2 = function arg0() {
                 var1 = arg0;
                 var _closure4_slot0 = var1;
                 var1 = 0;
                 var _closure4_slot1 = var1;
-                var1 = function() { // Original name: loop, environment: var0
+                var1 = function() {
                     var0 = global;
                     var2 = var0.requestAnimationFrame;
                     var0 = undefined;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var4[var1];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedProps;
-        var0 = function() { // Original name: pnpm_PerformanceMonitorTsx4, environment: var0
+        var0 = function() {
             _fun34860: for (var _fun34860_ip = 0;;) switch (_fun34860_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: UiPerformance, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var11 = var1.smoothingFrames;
         var _closure2_slot0 = var11;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = var4[var1];
         var9 = var2.bind(var3)(var6);
         var7 = var9.useFrameCallback;
-        var6 = function(arg0) { // Original name: pnpm_PerformanceMonitorTsx5, environment: var0
+        var6 = function arg0() {
             _fun34862: for (var _fun34862_ip = 0;;) switch (_fun34862_ip) {
                 case 0:
                     var0 = arg0;
@@ -233,7 +233,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var4[var1];
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedProps;
-        var0 = function() { // Original name: pnpm_PerformanceMonitorTsx6, environment: var0
+        var0 = function() {
             _fun34863: for (var _fun34863_ip = 0;;) switch (_fun34863_ip) {
                 case 0:
                     var0 = _closure2_slot1;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var8;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: createCircularDoublesBuffer, environment: var0
+        var0 = function arg0() {
             var3 = arg0;
             var0 = {};
             var2 = 0;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0.buffer = var4;
             var0.size = var3;
             var0.count = var2;
-            var2 = function(arg0) { // Original name: push, environment: var1
+            var2 = function arg0() {
                 _fun34866: for (var _fun34866_ip = 0;;) switch (_fun34866_ip) {
                     case 0:
                         var0 = this;
@@ -384,7 +384,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var0.push = var2;
-            var2 = function() { // Original name: front, environment: var1
+            var2 = function() {
                 _fun34867: for (var _fun34867_ip = 0;;) switch (_fun34867_ip) {
                     case 0:
                         var0 = this;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var0.front = var2;
-            var1 = function() { // Original name: back, environment: var1
+            var1 = function() {
                 _fun34868: for (var _fun34868_ip = 0;;) switch (_fun34868_ip) {
                     case 0:
                         var1 = this;
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: getFps, environment: var0
+        var0 = function arg0() {
             var1 = 1000;
             var0 = arg0;
             var0 = var1 / var0;
@@ -487,7 +487,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: completeBufferRoutine, environment: var0
+        var0 = function arg0, arg1() {
             _fun34872: for (var _fun34872_ip = 0;;) switch (_fun34872_ip) {
                 case 0:
                     var0 = arg0;
@@ -574,7 +574,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.container = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot17 = var3;
-    var1 = function(arg0) { // Original name: PerformanceMonitor, environment: var1
+    var1 = function arg0() {
         _fun34873: for (var _fun34873_ip = 0;;) switch (_fun34873_ip) {
             case 0:
                 var0 = arg0;

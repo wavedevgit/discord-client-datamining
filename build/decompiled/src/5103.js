@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
     var1 = function() { // Environment: var0
-        var0 = function() { // Original name: BinarySearch, environment: var1
+        var0 = function() {
             var0 = undefined;
             return var0;
         };

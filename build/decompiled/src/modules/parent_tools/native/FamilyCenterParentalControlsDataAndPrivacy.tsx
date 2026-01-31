@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterParentalControlsDataAndPrivacy.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterParentalControlsDataAndPrivacy, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var5 = var4.useMemo;
         var3 = function() { // Environment: var1

@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var8.Pan;
                 var16 = var5.bind(var8)();
                 var14 = var16.onStart;
-                var8 = function() { // Original name: G, environment: var9
+                var8 = function() {
                     _fun68841: for (var _fun68841_ip = 0;;) switch (_fun68841_ip) {
                         case 0:
                             var4 = _closure1_slot0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.__initData = var17;
                 var16 = var14.bind(var16)(var8);
                 var14 = var16.onEnd;
-                var8 = function() { // Original name: F, environment: var9
+                var8 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.Q8gkVL;
                 var10 = var11.bind(var12)(var10);
                 var7.text = var10;
-                var10 = function() { // Original name: onTouchStart, environment: var9
+                var10 = function() {
                     _fun68843: for (var _fun68843_ip = 0;;) switch (_fun68843_ip) {
                         case 0:
                             var3 = _closure2_slot4;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var7.onTouchStart = var10;
-                var9 = function() { // Original name: onTouchEnd, environment: var9
+                var9 = function() {
                     _fun68844: for (var _fun68844_ip = 0;;) switch (_fun68844_ip) {
                         case 0:
                             var3 = _closure2_slot4;

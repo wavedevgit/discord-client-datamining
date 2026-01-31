@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var10;
-    var5 = function(arg0) { // Original name: toContentScanMetadata, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.version;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var5;
-    var3 = function(arg0) { // Original name: messageAttachmentToUnfurledMediaItem, environment: var1
+    var3 = function arg0() {
         _fun36477: for (var _fun36477_ip = 0;;) switch (_fun36477_ip) {
             case 0:
                 var5 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var0 = function(arg0) { // Original name: getMessageAttachmentMediaItemType, environment: var1
+    var0 = function arg0() {
         _fun36478: for (var _fun36478_ip = 0;;) switch (_fun36478_ip) {
             case 0:
                 var1 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ImageEncoder = var6;
     var2.toContentScanMetadata = var5;
     var2.UnfurledMediaItemFlags = var4;
-    var4 = function(arg0) { // Original name: toUnfurledMediaItem, environment: var1
+    var4 = function arg0() {
         _fun36479: for (var _fun36479_ip = 0;;) switch (_fun36479_ip) {
             case 0:
                 var2 = arg0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.toUnfurledMediaItem = var4;
     var2.messageAttachmentToUnfurledMediaItem = var3;
-    var3 = function(arg0) { // Original name: getUnfurledMediaItemType, environment: var1
+    var3 = function arg0() {
         _fun36480: for (var _fun36480_ip = 0;;) switch (_fun36480_ip) {
             case 0:
                 var2 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getUnfurledMediaItemType = var3;
-    var3 = function(arg0, arg1) { // Original name: messageAttachmentToMediaItem, environment: var1
+    var3 = function arg0, arg1() {
         var3 = arg0;
         var0 = {};
         var4 = _closure1_slot7;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.messageAttachmentToMediaItem = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: embedMediaToMediaItem, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var0 = {};
         var2 = arg2;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.embedMediaToMediaItem = var3;
-    var1 = function(arg0) { // Original name: isVisualUnfurledMediaItem, environment: var1
+    var1 = function arg0() {
         _fun36483: for (var _fun36483_ip = 0;;) switch (_fun36483_ip) {
             case 0:
                 var1 = arg0;

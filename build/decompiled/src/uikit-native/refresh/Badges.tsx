@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/refresh/Badges.tsx';
     var4 = var5.bind(var6)(var4);
     var2.BadgeColors = var3;
-    var1 = function(arg0) { // Original name: TextBadge, environment: var1
+    var1 = function arg0() {
         _fun66802: for (var _fun66802_ip = 0;;) switch (_fun66802_ip) {
             case 0:
                 var0 = arg0;

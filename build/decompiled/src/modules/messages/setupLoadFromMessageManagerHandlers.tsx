@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/messages/setupLoadFromMessageManagerHandlers.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: setupLoadFromMessageManagerHandlers, environment: var1
+    var1 = function arg0, arg1() {
         _fun113691: for (var _fun113691_ip = 0;;) switch (_fun113691_ip) {
             case 0:
                 var2 = arg0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 23:
                 var _closure2_slot1 = var0;
                 var _closure2_slot2 = var0;
-                var3 = function(arg0) { // Original name: handleCallbackIfLoaded, environment: var5
+                var3 = function arg0() {
                     _fun113692: for (var _fun113692_ip = 0;;) switch (_fun113692_ip) {
                         case 0:
                             var2 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot3 = var3;
-                var8 = function(arg0) { // Original name: handleMessage, environment: var5
+                var8 = function arg0() {
                     _fun113693: for (var _fun113693_ip = 0;;) switch (_fun113693_ip) {
                         case 0:
                             var0 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var7 = function(arg0) { // Original name: handleLoadMessages, environment: var5
+                var7 = function arg0() {
                     _fun113694: for (var _fun113694_ip = 0;;) switch (_fun113694_ip) {
                         case 0:
                             var0 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var6 = function(arg0) { // Original name: handleSearchMessagesSuccess, environment: var5
+                var6 = function arg0() {
                     _fun113696: for (var _fun113696_ip = 0;;) switch (_fun113696_ip) {
                         case 0:
                             var0 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var2.actions;
                 var11 = var1;
                 var3 = copyDataProperties(var11, var10);
-                var4 = function() { // Original name: POST_CONNECTION_OPEN, environment: var5
+                var4 = function() {
                     var1 = _closure2_slot2;
                     var0 = var1.clear;
                     var0 = var0.bind(var1)();
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[var4] = var7;
                 var4 = 'LOAD_MESSAGES_AROUND_SUCCESS';
                 var1[var4] = var7;
-                var7 = function(arg0) { // Original name: LOAD_RECENT_MENTIONS_SUCCESS, environment: var5
+                var7 = function arg0() {
                     _fun113701: for (var _fun113701_ip = 0;;) switch (_fun113701_ip) {
                         case 0:
                             var0 = arg0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4 = 'LOAD_RECENT_MENTIONS_SUCCESS';
                 var1[var4] = var7;
-                var7 = function(arg0) { // Original name: LOAD_PINNED_MESSAGES_SUCCESS, environment: var5
+                var7 = function arg0() {
                     _fun113703: for (var _fun113703_ip = 0;;) switch (_fun113703_ip) {
                         case 0:
                             var0 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'MOD_VIEW_SEARCH_MESSAGES_SUCCESS';
                 var1[var4] = var6;
                 var4 = {};
-                var5 = function(arg0) { // Original name: callback, environment: var5
+                var5 = function arg0() {
                     _fun113705: for (var _fun113705_ip = 0;;) switch (_fun113705_ip) {
                         case 0:
                             var0 = arg0;

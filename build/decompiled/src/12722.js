@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = function() { // Original name: getReactNativePlatformConstants, environment: var2
+    var0 = function() {
         _fun97703: for (var _fun97703_ip = 0;;) switch (_fun97703_ip) {
             case 0:
                 var4 = {

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/panels/morphable/native/useScreenNameSharedValue.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useScreenNameSharedValue, environment: var1
+    var1 = function() {
         _fun110290: for (var _fun110290_ip = 0;;) switch (_fun110290_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = function() { // Environment: var1
                     _fun110291: for (var _fun110291_ip = 0;;) switch (_fun110291_ip) {
                         case 0:
-                            var4 = function() { // Original name: handleStateChange, environment: var0
+                            var4 = function() {
                                 _fun110292: for (var _fun110292_ip = 0;;) switch (_fun110292_ip) {
                                     case 0:
                                         var2 = _closure3_slot0;

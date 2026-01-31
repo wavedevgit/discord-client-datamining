@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var15;
     var _closure1_slot2 = var10;
-    var6 = function(arg0) { // Original name: handleAutomaticGainControlChange, environment: var7
+    var6 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 5;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var6;
-    var5 = function(arg0) { // Original name: handleEchoCancellationChange, environment: var7
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 5;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var5;
-    var4 = function(arg0) { // Original name: handleNoiseSuppressionChange, environment: var7
+    var4 = function arg0() {
         var5 = arg0;
         var0 = _closure1_slot12;
         var7 = var0.KRISP;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var4;
-    var1 = function() { // Original name: VoiceProcessingOptions, environment: var7
+    var1 = function() {
         _fun68000: for (var _fun68000_ip = 0;;) switch (_fun68000_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.bind(var10)(var8);
                 var3.subLabel = var8;
                 var3.value = var7;
-                var7 = function(arg0) { // Original name: onValueChange, environment: var15
+                var7 = function arg0() {
                     _fun68004: for (var _fun68004_ip = 0;;) switch (_fun68004_ip) {
                         case 0:
                             var2 = _closure1_slot15;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var9.TableRadioGroup;
                 var9 = {};
                 var9.defaultValue = var17;
-                var15 = function(arg0) { // Original name: onChange, environment: var15
+                var15 = function arg0() {
                     var4 = arg0;
                     var1 = _closure1_slot12;
                     var6 = var1.KRISP;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.fileFinishedImporting;
     var8 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoiceProcessing.tsx';
     var8 = var9.bind(var10)(var8);
-    var7 = function() { // Original name: NewUserSettingsVoiceProcessing, environment: var7
+    var7 = function() {
         _fun68005: for (var _fun68005_ip = 0;;) switch (_fun68005_ip) {
             case 0:
                 var21 = _closure1_slot0;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var16.bind(var17)(var15);
                 var10.subLabel = var15;
                 var10.value = var14;
-                var13 = function(arg0) { // Original name: onValueChange, environment: var13
+                var13 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 5;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MemberActionRow, environment: var1
+    var0 = function arg0() {
         _fun104816: for (var _fun104816_ip = 0;;) switch (_fun104816_ip) {
             case 0:
                 var1 = arg0;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/GuildOnboardingNewMemberActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildOnboardingNewMemberActions, environment: var1
+    var1 = function arg0() {
         _fun104821: for (var _fun104821_ip = 0;;) switch (_fun104821_ip) {
             case 0:
                 var0 = arg0;

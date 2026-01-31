@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: wrapURL, environment: var4
+    var0 = function arg0() {
         _fun19132: for (var _fun19132_ip = 0;;) switch (_fun19132_ip) {
             case 0:
                 var1 = arguments[1];
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: getLocale, environment: var4
+    var0 = function() {
         var0 = _closure1_slot3;
         var1 = var0.locale;
         var0 = var1.toLowerCase;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var7)(var8);
     var _closure1_slot6 = var3;
     var3 = {};
-    var7 = function(arg0) { // Original name: getArticleURL, environment: var4
+    var7 = function arg0() {
         var2 = _closure1_slot7;
         var0 = _closure1_slot8;
         var1 = undefined;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getArticleURL = var7;
-    var7 = function(arg0) { // Original name: getDevArticleURL, environment: var4
+    var7 = function arg0() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot8;
         var2 = undefined;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getDevArticleURL = var7;
-    var7 = function(arg0) { // Original name: getCreatorSupportArticleURL, environment: var4
+    var7 = function arg0() {
         var3 = _closure1_slot7;
         var0 = _closure1_slot8;
         var2 = undefined;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getCreatorSupportArticleURL = var7;
-    var7 = function() { // Original name: getTwitterURL, environment: var4
+    var7 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 2;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getTwitterURL = var7;
-    var7 = function() { // Original name: getCommunityURL, environment: var4
+    var7 = function() {
         var2 = _closure1_slot7;
         var0 = _closure1_slot8;
         var1 = undefined;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getCommunityURL = var7;
-    var7 = function(arg0) { // Original name: getSubmitRequestURL, environment: var4
+    var7 = function arg0() {
         _fun19139: for (var _fun19139_ip = 0;;) switch (_fun19139_ip) {
             case 0:
                 var5 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.getSubmitRequestURL = var7;
-    var7 = function(arg0) { // Original name: getSearchURL, environment: var4
+    var7 = function arg0() {
         var0 = global;
         var3 = var0.encodeURIComponent;
         var2 = undefined;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getSearchURL = var7;
-    var7 = function() { // Original name: getFeaturedArticlesJsonURL, environment: var4
+    var7 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = '/api/v2/help_center/en-us/articles.json?label_names=featured';
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.getFeaturedArticlesJsonURL = var7;
-    var4 = function(arg0) { // Original name: getAppsSupportURL, environment: var4
+    var4 = function arg0() {
         var3 = _closure1_slot7;
         var0 = _closure1_slot8;
         var2 = undefined;

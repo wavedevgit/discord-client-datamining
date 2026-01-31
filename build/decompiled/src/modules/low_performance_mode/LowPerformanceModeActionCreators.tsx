@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/low_performance_mode/LowPerformanceModeActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: setEnabled, environment: var1
+    var1 = function arg0() {
         _fun88522: for (var _fun88522_ip = 0;;) switch (_fun88522_ip) {
             case 0:
                 var4 = arg0;

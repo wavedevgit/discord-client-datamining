@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun85799: for (var _fun85799_ip = 0;;) switch (_fun85799_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: handleAddUser, environment: var3
+    var0 = function arg0() {
         _fun85802: for (var _fun85802_ip = 0;;) switch (_fun85802_ip) {
             case 0:
                 var5 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GeneratedTestUsersStore, environment: var5
+        var3 = function() {
             _fun85804: for (var _fun85804_ip = 0;;) switch (_fun85804_ip) {
                 case 0:
                     var3 = this;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun85805: for (var _fun85805_ip = 0;;) switch (_fun85805_ip) {
                 case 0:
                     var0 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun85806: for (var _fun85806_ip = 0;;) switch (_fun85806_ip) {
                 case 0:
                     var0 = {};
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUsersForPool';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun85807: for (var _fun85807_ip = 0;;) switch (_fun85807_ip) {
                 case 0:
                     var1 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPool';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun85809: for (var _fun85809_ip = 0;;) switch (_fun85809_ip) {
                 case 0:
                     var0 = _closure1_slot6;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUser';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun85810: for (var _fun85810_ip = 0;;) switch (_fun85810_ip) {
                 case 0:
                     var0 = _closure1_slot6;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPools';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun85811: for (var _fun85811_ip = 0;;) switch (_fun85811_ip) {
                 case 0:
                     var0 = _closure1_slot6;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleFetchPoolByIdSuccess, environment: var3
+    var7 = function arg0() {
         _fun85812: for (var _fun85812_ip = 0;;) switch (_fun85812_ip) {
             case 0:
                 var0 = arg0;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GENERATED_POOL_BY_ID_FETCH_SUCCESS = var7;
-    var3 = function(arg0) { // Original name: handleRemovePool, environment: var3
+    var3 = function arg0() {
         _fun85813: for (var _fun85813_ip = 0;;) switch (_fun85813_ip) {
             case 0:
                 var0 = arg0;

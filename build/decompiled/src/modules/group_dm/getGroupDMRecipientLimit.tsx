@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/group_dm/getGroupDMRecipientLimit.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getGroupDMRecipientLimit, environment: var1
+    var1 = function arg0() {
         _fun107212: for (var _fun107212_ip = 0;;) switch (_fun107212_ip) {
             case 0:
                 var2 = arg0;

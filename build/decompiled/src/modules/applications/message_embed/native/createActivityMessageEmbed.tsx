@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/message_embed/native/createActivityMessageEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createActivityMessageEmbed, environment: var1
+    var1 = function arg0() {
         _fun92355: for (var _fun92355_ip = 0;;) switch (_fun92355_ip) {
             case 0:
                 var0 = arg0;

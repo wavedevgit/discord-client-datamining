@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var7
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var9 = var9.SENSITIVE_MEDIA_FILTERS;
     var8.route = var9;
-    var9 = function() { // Original name: getComponent, environment: var7
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 5;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var8.getComponent = var9;
     var1.screen = var8;
-    var7 = function() { // Original name: additionalSearchTerms, environment: var7
+    var7 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var1 = 3;

@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/account/mfa_modal_flow/TwoFASetupSuccess.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: TwoFASetupSuccess, environment: var1
+    var1 = function() {
         _fun81093: for (var _fun81093_ip = 0;;) switch (_fun81093_ip) {
             case 0:
                 var1 = _closure1_slot10;

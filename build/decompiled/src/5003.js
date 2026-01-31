@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot0 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: applyRelationProp, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun45208: for (var _fun45208_ip = 0;;) switch (_fun45208_ip) {
             case 0:
                 var3 = arg0;

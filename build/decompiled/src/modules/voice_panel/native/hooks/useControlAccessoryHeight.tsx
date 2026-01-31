@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_panel/native/hooks/useControlAccessoryHeight.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useControlAccessoryHeight, environment: var1
+    var1 = function() {
         var11 = _closure1_slot3;
         var5 = var11.useContext;
         var2 = _closure1_slot1;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var7[var1];
         var2 = var2.bind(var4)(var1);
         var1 = var2.useDerivedValue;
-        var0 = function() { // Original name: l, environment: var0
+        var0 = function() {
             var2 = _closure2_slot1;
             var1 = var2.get;
             var1 = var1.bind(var2)();

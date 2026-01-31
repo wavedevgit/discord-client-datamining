@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/posts/ForumPostTitle.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumPostTitle, environment: var1
+    var1 = function arg0() {
         _fun89521: for (var _fun89521_ip = 0;;) switch (_fun89521_ip) {
             case 0:
                 var0 = arg0;

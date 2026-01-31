@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2['[object WeakMap]'] = var1;
     var2['[object Function]'] = var1;
     var2['[object Error]'] = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: baseClone, environment: var0
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun32434: for (var _fun32434_ip = 0;;) switch (_fun32434_ip) {
             case 0:
                 var7 = arg0;

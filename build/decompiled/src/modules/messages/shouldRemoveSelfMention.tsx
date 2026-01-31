@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/shouldRemoveSelfMention.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: shouldRemoveSelfMention, environment: var1
+    var1 = function arg0, arg1() {
         _fun69017: for (var _fun69017_ip = 0;;) switch (_fun69017_ip) {
             case 0:
                 var1 = arg0;

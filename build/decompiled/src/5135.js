@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function(arg0) { // Original name: _readOnlyError, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var2 = var0.TypeError;
         var1 = '"';

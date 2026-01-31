@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsChannelLongPressActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionsChannelLongPressActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9.text = var11;
         var9 = var7.bind(var3)(var10, var9);
         var5.label = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var1 = var1.bind(var0)();

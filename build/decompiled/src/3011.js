@@ -3,9 +3,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24355: for (var _fun24355_ip = 0;;) switch (_fun24355_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
-                var4 = function(arg0, arg1, arg2, arg3) { // Original name: translate, environment: var1
+                var4 = function arg0, arg1, arg2, arg3() {
                     _fun24357: for (var _fun24357_ip = 0;;) switch (_fun24357_ip) {
                         case 0:
                             var5 = arg0;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/hooks/usePremiumProductPricingString.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: usePremiumProductPricingString, environment: var1
+    var1 = function arg0, arg1() {
         _fun74792: for (var _fun74792_ip = 0;;) switch (_fun74792_ip) {
             case 0:
                 var4 = _closure1_slot0;

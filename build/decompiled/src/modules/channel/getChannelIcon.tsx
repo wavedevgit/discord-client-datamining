@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel/getChannelIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getChannelIconURL, environment: var1
+    var3 = function arg0() {
         _fun48194: for (var _fun48194_ip = 0;;) switch (_fun48194_ip) {
             case 0:
                 var1 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelIconURL = var3;
-    var1 = function(arg0) { // Original name: getChannelIconSource, environment: var1
+    var1 = function arg0() {
         _fun48195: for (var _fun48195_ip = 0;;) switch (_fun48195_ip) {
             case 0:
                 var1 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: prettyPrintTrace_, environment: var1
+    var0 = function arg0, arg1() {
         _fun94641: for (var _fun94641_ip = 0;;) switch (_fun94641_ip) {
             case 0:
                 var14 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: eachTraceCall, environment: var1
+    var0 = function arg0, arg1() {
         _fun94642: for (var _fun94642_ip = 0;;) switch (_fun94642_ip) {
             case 0:
                 var7 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: getReadyPayloadSizeAnalytics, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.guilds;
         var0 = 0;
@@ -241,19 +241,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gateway/GatewaySocketAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: reportDevtoolsEvent, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var2.reportDevtoolsEvent = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: logReadyPayloadReceived, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         _fun94647: for (var _fun94647_ip = 0;;) switch (_fun94647_ip) {
             case 0:
                 var2 = arg0;
                 var7 = arg1;
                 var6 = arg2;
                 var8 = arg3;
-                var1 = function(arg0) { // Original name: getReadyPayloadTraceAnalytics, environment: var0
+                var1 = function arg0() {
                     _fun94648: for (var _fun94648_ip = 0;;) switch (_fun94648_ip) {
                         case 0:
                             var3 = arg0;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.logReadyPayloadReceived = var3;
-    var3 = function(arg0) { // Original name: getConnectionPath, environment: var1
+    var3 = function arg0() {
         _fun94650: for (var _fun94650_ip = 0;;) switch (_fun94650_ip) {
             case 0:
                 var1 = arg0;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getConnectionPath = var3;
-    var3 = function(arg0) { // Original name: getReadyPayloadByteSizeAnalytics, environment: var1
+    var3 = function arg0() {
         _fun94651: for (var _fun94651_ip = 0;;) switch (_fun94651_ip) {
             case 0:
                 var6 = arg0;
@@ -921,7 +921,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getReadyPayloadByteSizeAnalytics = var3;
-    var3 = function(arg0) { // Original name: createResumeAnalytics, environment: var1
+    var3 = function arg0() {
         _fun94653: for (var _fun94653_ip = 0;;) switch (_fun94653_ip) {
             case 0:
                 var2 = arg0;
@@ -957,7 +957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createResumeAnalytics = var3;
-    var1 = function(arg0) { // Original name: logResumeAnalytics, environment: var1
+    var1 = function arg0() {
         _fun94654: for (var _fun94654_ip = 0;;) switch (_fun94654_ip) {
             case 0:
                 var0 = arg0;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: dummyListener, environment: var1
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: PropsFilter, environment: var1
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var4 = 'filterNonAnimatedProps';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: filterNonAnimatedProps, environment: var1
+        var1 = function arg0() {
             _fun33978: for (var _fun33978_ip = 0;;) switch (_fun33978_ip) {
                 case 0:
                     var0 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot2 = var1;
                     var0 = {};
                     var _closure3_slot3 = var0;
-                    var7 = function() { // Original name: _loop, environment: var8
+                    var7 = function() {
                         _fun33979: for (var _fun33979_ip = 0;;) switch (_fun33979_ip) {
                             case 0:
                                 var3 = _closure3_slot2;

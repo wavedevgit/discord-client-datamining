@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
     var _closure1_slot0 = var0;
-    var1 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var1 = function() {
         _fun2471: for (var _fun2471_ip = 0;;) switch (_fun2471_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 CatchBlockStart(arg_register = 1);
             case 74:
                 var1 = _closure1_slot0;
-                var0 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var0 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;

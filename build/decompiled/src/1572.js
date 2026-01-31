@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var6;
-    var5 = function() { // Original name: useSafeAreaInsets, environment: var4
+    var5 = function() {
         _fun17571: for (var _fun17571_ip = 0;;) switch (_fun17571_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var1.Consumer;
     var2.SafeAreaInsetsContext = var1;
     var2.SafeAreaFrameContext = var6;
-    var6 = function(arg0) { // Original name: SafeAreaProvider, environment: var4
+    var6 = function arg0() {
         _fun17572: for (var _fun17572_ip = 0;;) switch (_fun17572_ip) {
             case 0:
                 var5 = arg0;
@@ -362,7 +362,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.SafeAreaProvider = var6;
-    var6 = function(arg0) { // Original name: SafeAreaListener, environment: var4
+    var6 = function arg0() {
         var4 = arg0;
         var0 = var4.onChange;
         var _closure2_slot0 = var0;
@@ -389,7 +389,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var9[0] = var11;
         var9[1] = var10;
         var4.style = var9;
-        var8 = function(arg0) { // Original name: onInsetsChange, environment: var8
+        var8 = function arg0() {
             var0 = arg0;
             var2 = _closure2_slot0;
             var1 = {};
@@ -412,7 +412,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.SafeAreaListener = var6;
     var2.useSafeAreaInsets = var5;
-    var5 = function() { // Original name: useSafeAreaFrame, environment: var4
+    var5 = function() {
         _fun17578: for (var _fun17578_ip = 0;;) switch (_fun17578_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -443,7 +443,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.useSafeAreaFrame = var5;
-    var5 = function(arg0) { // Original name: withSafeAreaInsets, environment: var4
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot6;
@@ -471,7 +471,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.withSafeAreaInsets = var5;
-    var4 = function() { // Original name: useSafeArea, environment: var4
+    var4 = function() {
         var1 = _closure1_slot13;
         var0 = undefined;
         var0 = var1.bind(var0)();

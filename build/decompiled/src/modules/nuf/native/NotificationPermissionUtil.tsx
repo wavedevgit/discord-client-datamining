@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _requestPushNotificationPermission, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _enableProvisionalPushNotification, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/nuf/native/NotificationPermissionUtil.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: requestPushNotificationPermission, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.requestPushNotificationPermission = var4;
-    var4 = function() { // Original name: useShowReactivationPrompt, environment: var1
+    var4 = function() {
         var4 = _closure1_slot5;
         var3 = var4.useState;
         var2 = false;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var2;
         var3 = var4.useEffect;
         var2 = function() { // Environment: var1
-            var1 = function() { // Original name: _shouldShowReactivationPrompts, environment: var0
+            var1 = function() {
                 var3 = undefined;
                 var0 = undefined;
                 var2 = _closure1_slot4;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure3_slot0 = var1;
-            var1 = function() { // Original name: shouldShowReactivationPrompts, environment: var0
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot0;
                 var2 = var3.apply;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useShowReactivationPrompt = var4;
-    var4 = function() { // Original name: enableProvisionalPushNotification, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.enableProvisionalPushNotification = var4;
     var2.PERMISSION_PROMPT_EXPERIMENTS = var3;
-    var3 = function(arg0) { // Original name: useNudgeExperimentConfigWithoutExposure, environment: var1
+    var3 = function arg0() {
         _fun85139: for (var _fun85139_ip = 0;;) switch (_fun85139_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useNudgeExperimentConfigWithoutExposure = var3;
-    var1 = function(arg0) { // Original name: useShouldSeePushNotificationNudge, environment: var1
+    var1 = function arg0() {
         _fun85140: for (var _fun85140_ip = 0;;) switch (_fun85140_ip) {
             case 0:
                 var6 = arg0;

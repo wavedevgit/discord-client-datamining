@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/modals/InviteFriendMembers.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InviteFriendMembers, environment: var1
+    var1 = function arg0() {
         _fun80305: for (var _fun80305_ip = 0;;) switch (_fun80305_ip) {
             case 0:
                 var0 = arg0;

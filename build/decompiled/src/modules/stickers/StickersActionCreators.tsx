@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var12;
-    var0 = function(arg0) { // Original name: cleanFavoriteStickers, environment: var1
+    var0 = function arg0() {
         _fun74231: for (var _fun74231_ip = 0;;) switch (_fun74231_ip) {
             case 0:
                 var4 = arg0;
@@ -868,7 +868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.deleteGuildSticker = var5;
     var2.createGuildSticker = var4;
     var2.updateGuildSticker = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: addStickerPreview, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 9;
@@ -889,7 +889,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.addStickerPreview = var3;
-    var3 = function(arg0, arg1) { // Original name: clearStickerPreview, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 9;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearStickerPreview = var3;
-    var3 = function(arg0) { // Original name: favoriteSticker, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;
@@ -1006,7 +1006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.favoriteSticker = var3;
-    var1 = function(arg0) { // Original name: unfavoriteSticker, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;

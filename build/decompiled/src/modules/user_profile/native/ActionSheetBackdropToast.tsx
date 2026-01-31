@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9[var4];
         var10 = var7.bind(var3)(var2);
         var2 = var10.useAnimatedStyle;
-        var1 = function() { // Original name: D, environment: var1
+        var1 = function() {
             _fun59528: for (var _fun59528_ip = 0;;) switch (_fun59528_ip) {
                 case 0:
                     var0 = {};

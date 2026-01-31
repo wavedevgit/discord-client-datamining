@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/native/placeholder/useChatPlaceholderAnimatedStyles.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useChatPlaceholderAnimatedStyles, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var11 = var1.visible;
         var _closure2_slot0 = var11;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var5];
         var2 = var7.bind(var6)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: c, environment: var0
+        var0 = function() {
             _fun90955: for (var _fun90955_ip = 0;;) switch (_fun90955_ip) {
                 case 0:
                     var0 = _closure2_slot0;

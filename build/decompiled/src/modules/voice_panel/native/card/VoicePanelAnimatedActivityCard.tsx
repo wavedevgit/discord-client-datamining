@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: VoicePanelAnimatedActivityCardInner, environment: var1
+    var0 = function arg0() {
         _fun111296: for (var _fun111296_ip = 0;;) switch (_fun111296_ip) {
             case 0:
                 var0 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var34[var12];
                 var15 = var37.bind(var4)(var5);
                 var9 = var15.useAnimatedReaction;
-                var8 = function() { // Original name: Z, environment: var3
+                var8 = function() {
                     var0 = {};
                     var3 = _closure2_slot1;
                     var2 = var3.get;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.__workletHash = var5;
                 var5 = _closure1_slot18;
                 var8.__initData = var5;
-                var5 = function(arg0, arg1) { // Original name: q, environment: var3
+                var5 = function arg0, arg1() {
                     _fun111308: for (var _fun111308_ip = 0;;) switch (_fun111308_ip) {
                         case 0:
                             var0 = arg0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var5[var12];
                 var34 = var9.bind(var4)(var8);
                 var30 = var34.useAnimatedReaction;
-                var26 = function() { // Original name: ue, environment: var3
+                var26 = function() {
                     _fun111309: for (var _fun111309_ip = 0;;) switch (_fun111309_ip) {
                         case 0:
                             var0 = _closure2_slot20;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26.__workletHash = var8;
                 var8 = _closure1_slot20;
                 var26.__initData = var8;
-                var8 = function(arg0, arg1) { // Original name: le, environment: var3
+                var8 = function arg0, arg1() {
                     _fun111310: for (var _fun111310_ip = 0;;) switch (_fun111310_ip) {
                         case 0:
                             var2 = arg0;
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var5[var12];
                 var30 = var9.bind(var4)(var26);
                 var28 = var30.useAnimatedReaction;
-                var27 = function() { // Original name: Pe, environment: var3
+                var27 = function() {
                     var1 = _closure2_slot7;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27.__workletHash = var26;
                 var26 = _closure1_slot22;
                 var27.__initData = var26;
-                var26 = function(arg0, arg1) { // Original name: pe, environment: var3
+                var26 = function arg0, arg1() {
                     _fun111316: for (var _fun111316_ip = 0;;) switch (_fun111316_ip) {
                         case 0:
                             var2 = arg0;
@@ -857,7 +857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var5[var12];
                 var26 = var9.bind(var4)(var12);
                 var18 = var26.useAnimatedStyle;
-                var12 = function() { // Original name: Ce, environment: var3
+                var12 = function() {
                     _fun111317: for (var _fun111317_ip = 0;;) switch (_fun111317_ip) {
                         case 0:
                             var1 = _closure1_slot8;
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot18;
                     var2 = var1.bind(var2)(var0);
                     var1 = var2.onTouchesDown;
-                    var0 = function(arg0, arg1) { // Original name: t, environment: var0
+                    var0 = function arg0, arg1() {
                         _fun111320: for (var _fun111320_ip = 0;;) switch (_fun111320_ip) {
                             case 0:
                                 var1 = arg1;
@@ -1404,7 +1404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot25 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoicePanelAnimatedActivityCard, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot15;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

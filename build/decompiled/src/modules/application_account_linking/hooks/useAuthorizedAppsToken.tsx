@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun56610: for (var _fun56610_ip = 0;;) switch (_fun56610_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun56612: for (var _fun56612_ip = 0;;) switch (_fun56612_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0, arg1) { // Original name: useAuthorizedAppsTokens, environment: var1
+    var3 = function arg0, arg1() {
         _fun56613: for (var _fun56613_ip = 0;;) switch (_fun56613_ip) {
             case 0:
                 var4 = arg0;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/application_account_linking/hooks/useAuthorizedAppsToken.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useAuthorizedAppsTokens = var3;
-    var1 = function(arg0, arg1) { // Original name: useAuthorizedAppsToken, environment: var1
+    var1 = function arg0, arg1() {
         _fun56621: for (var _fun56621_ip = 0;;) switch (_fun56621_ip) {
             case 0:
                 var5 = arg0;

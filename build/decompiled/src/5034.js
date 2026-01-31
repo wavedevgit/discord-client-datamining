@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'function pnpm_BottomSheetFooterContainerTsx1(){const{animatedHandleHeight,INITIAL_HANDLE_HEIGHT,animatedKeyboardHeightInContainer,animatedContainerHeight,animatedPosition,animatedKeyboardState,animatedFooterHeight,KEYBOARD_STATE}=this.__closure;const handleHeight=animatedHandleHeight.get();if(handleHeight===INITIAL_HANDLE_HEIGHT){return 0;}const keyboardHeight=animatedKeyboardHeightInContainer.get();const containerHeight=animatedContainerHeight.get();const position=animatedPosition.get();const keyboardState=animatedKeyboardState.get();const footerHeight=animatedFooterHeight.get();let footerTranslateY=Math.max(0,containerHeight-position);if(keyboardState===KEYBOARD_STATE.SHOWN){footerTranslateY=footerTranslateY-keyboardHeight;}footerTranslateY=footerTranslateY-footerHeight-handleHeight;return footerTranslateY;}';
     var4.code = var5;
     var _closure1_slot2 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetFooterContainerComponent, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.renderFooter;
         var15 = _closure1_slot0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = var16[var5];
         var6 = var15.bind(var1)(var5);
         var5 = var6.useDerivedValue;
-        var4 = function() { // Original name: pnpm_BottomSheetFooterContainerTsx1, environment: var4
+        var4 = function() {
             _fun45341: for (var _fun45341_ip = 0;;) switch (_fun45341_ip) {
                 case 0:
                     var1 = _closure2_slot1;

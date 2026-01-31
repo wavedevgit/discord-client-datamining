@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createSlider;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 8;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.APPEARANCE;
     var1.parent = var8;
-    var7 = function() { // Original name: useFontScaleSliderProps, environment: var7
+    var7 = function() {
         _fun84607: for (var _fun84607_ip = 0;;) switch (_fun84607_ip) {
             case 0:
                 var2 = _closure1_slot3;

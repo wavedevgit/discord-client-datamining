@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var4 = _closure1_slot3;
-        var3 = function() { // Original name: DiscordImageFactory, environment: var1
+        var3 = function() {
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'create';
         var0.key = var2;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun37679: for (var _fun37679_ip = 0;;) switch (_fun37679_ip) {
                 case 0:
                     var3 = arg0;

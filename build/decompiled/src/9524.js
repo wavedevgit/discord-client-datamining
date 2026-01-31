@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0 = var2.bind(var3)(var0);
     var1.errorCodes = var0;
-    var0 = function(arg0) { // Original name: isErrorWithCode, environment: var0
+    var0 = function arg0() {
         _fun75456: for (var _fun75456_ip = 0;;) switch (_fun75456_ip) {
             case 0:
                 var2 = arg0;

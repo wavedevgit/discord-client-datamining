@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readExifIfd, environment: var2
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38017: for (var _fun38017_ip = 0;;) switch (_fun38017_ip) {
             case 0:
                 var4 = arg0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readGpsIfd, environment: var2
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38018: for (var _fun38018_ip = 0;;) switch (_fun38018_ip) {
             case 0:
                 var4 = arg0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readInteroperabilityIfd, environment: var2
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38019: for (var _fun38019_ip = 0;;) switch (_fun38019_ip) {
             case 0:
                 var4 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = 'Interoperability IFD Pointer';
     var _closure1_slot5 = var0;
     var0 = {};
-    var2 = function(arg0, arg1, arg2) { // Original name: read, environment: var2
+    var2 = function arg0, arg1, arg2() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg2;

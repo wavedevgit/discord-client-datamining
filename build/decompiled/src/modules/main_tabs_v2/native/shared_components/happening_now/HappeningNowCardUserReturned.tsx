@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var13[var21];
                 var17 = var23.bind(var4)(var6);
                 var15 = var17.useAnimatedReaction;
-                var14 = function() { // Original name: T, environment: var1
+                var14 = function() {
                     var1 = _closure2_slot6;
                     var0 = var1.get;
                     var2 = var0.bind(var1)();
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.__workletHash = var6;
                 var6 = _closure1_slot14;
                 var14.__initData = var6;
-                var6 = function(arg0, arg1) { // Original name: N, environment: var1
+                var6 = function arg0, arg1() {
                     _fun101757: for (var _fun101757_ip = 0;;) switch (_fun101757_ip) {
                         case 0:
                             var2 = arg0;

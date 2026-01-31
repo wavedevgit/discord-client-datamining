@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var4 = function(arg0, arg1) { // Original name: getIsPrivate, environment: var1
+    var4 = function arg0, arg1() {
         _fun61259: for (var _fun61259_ip = 0;;) switch (_fun61259_ip) {
             case 0:
                 var0 = _closure1_slot19;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var4;
-    var0 = function(arg0, arg1) { // Original name: trimToLength, environment: var1
+    var0 = function arg0, arg1() {
         _fun61260: for (var _fun61260_ip = 0;;) switch (_fun61260_ip) {
             case 0:
                 var4 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var3 = function(arg0, arg1) { // Original name: getDefaultThreadName, environment: var1
+    var3 = function arg0, arg1() {
         _fun61261: for (var _fun61261_ip = 0;;) switch (_fun61261_ip) {
             case 0:
                 var1 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var3;
-    var0 = function() { // Original name: createThread_, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot24;
         var2 = var3.apply;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: _createThread_, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1191,7 +1191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/threads/ThreadCreationHooks.tsx';
     var6 = var7.bind(var8)(var6);
     var2.PrivateThreadMode = var5;
-    var5 = function(arg0) { // Original name: usePrivateThreadMode, environment: var1
+    var5 = function arg0() {
         _fun61272: for (var _fun61272_ip = 0;;) switch (_fun61272_ip) {
             case 0:
                 var4 = arg0;
@@ -1236,7 +1236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.usePrivateThreadMode = var5;
     var2.getIsPrivate = var4;
     var2.getDefaultThreadName = var3;
-    var3 = function(arg0) { // Original name: useCreateThreadCommon, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var11 = var1.parentChannel;
         var _closure2_slot0 = var11;
@@ -1604,7 +1604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCreateThreadCommon = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createThread, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var1 = arg1;
@@ -1655,7 +1655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createThread = var3;
-    var1 = function(arg0) { // Original name: useCreateForumPostCommon, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var9 = var1.parentChannel;
         var _closure2_slot0 = var9;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: err, environment: var0
+    var2 = function arg0, arg1() {
         var0 = arg1;
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: rank, environment: var0
+    var2 = function arg0() {
         _fun94744: for (var _fun94744_ip = 0;;) switch (_fun94744_ip) {
             case 0:
                 var2 = arg0;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0) { // Original name: zero, environment: var0
+    var2 = function arg0() {
         _fun94745: for (var _fun94745_ip = 0;;) switch (_fun94745_ip) {
             case 0:
                 var2 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var2;
-    var2 = function(arg0) { // Original name: flush_pending, environment: var0
+    var2 = function arg0() {
         _fun94746: for (var _fun94746_ip = 0;;) switch (_fun94746_ip) {
             case 0:
                 var4 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var2;
-    var2 = function(arg0, arg1) { // Original name: flush_block_only, environment: var0
+    var2 = function arg0, arg1() {
         _fun94747: for (var _fun94747_ip = 0;;) switch (_fun94747_ip) {
             case 0:
                 var1 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var2;
-    var2 = function(arg0, arg1) { // Original name: put_byte, environment: var0
+    var2 = function arg0, arg1() {
         var3 = arg0;
         var2 = var3.pending_buf;
         var0 = var3.pending;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot8 = var2;
-    var2 = function(arg0, arg1) { // Original name: putShortMSB, environment: var0
+    var2 = function arg0, arg1() {
         var5 = arg0;
         var3 = arg1;
         var4 = var5.pending_buf;
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var2;
-    var2 = function(arg0, arg1) { // Original name: longest_match, environment: var0
+    var2 = function arg0, arg1() {
         _fun94750: for (var _fun94750_ip = 0;;) switch (_fun94750_ip) {
             case 0:
                 var1 = arg0;
@@ -476,7 +476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var2;
-    var2 = function(arg0) { // Original name: fill_window, environment: var0
+    var2 = function arg0() {
         _fun94751: for (var _fun94751_ip = 0;;) switch (_fun94751_ip) {
             case 0:
                 var13 = arg0;
@@ -793,7 +793,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var2;
-    var14 = function(arg0, arg1) { // Original name: deflate_fast, environment: var0
+    var14 = function arg0, arg1() {
         _fun94752: for (var _fun94752_ip = 0;;) switch (_fun94752_ip) {
             case 0:
                 var4 = arg0;
@@ -1080,7 +1080,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var11 = function(arg0, arg1) { // Original name: deflate_slow, environment: var0
+    var11 = function arg0, arg1() {
         _fun94753: for (var _fun94753_ip = 0;;) switch (_fun94753_ip) {
             case 0:
                 var4 = arg0;
@@ -1459,7 +1459,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var10 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: Config, environment: var0
+    var10 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = this;
         var0 = arg0;
         var1.good_length = var0;
@@ -1474,7 +1474,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         return var0;
     };
-    var2 = function() { // Original name: DeflateState, environment: var0
+    var2 = function() {
         var2 = this;
         var6 = null;
         var2.strm = var6;
@@ -1635,7 +1635,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot12 = var2;
-    var2 = function(arg0) { // Original name: deflateResetKeep, environment: var0
+    var2 = function arg0() {
         _fun94756: for (var _fun94756_ip = 0;;) switch (_fun94756_ip) {
             case 0:
                 var5 = arg0;
@@ -1709,7 +1709,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var2;
-    var3 = function(arg0) { // Original name: deflateReset, environment: var0
+    var3 = function arg0() {
         _fun94757: for (var _fun94757_ip = 0;;) switch (_fun94757_ip) {
             case 0:
                 var1 = arg0;
@@ -1763,7 +1763,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var3;
-    var4 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: deflateInit2, environment: var0
+    var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun94758: for (var _fun94758_ip = 0;;) switch (_fun94758_ip) {
             case 0:
                 var3 = arg0;
@@ -2003,7 +2003,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             value: var10
         }
     });
-    var15 = function(arg0, arg1) { // Original name: deflate_stored, environment: var0
+    var15 = function arg0, arg1() {
         _fun94759: for (var _fun94759_ip = 0;;) switch (_fun94759_ip) {
             case 0:
                 var3 = arg0;
@@ -2293,7 +2293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var6 instanceof Object ? var6 : var7;
     var5[9] = var6;
     var _closure1_slot2 = var5;
-    var5 = function(arg0, arg1) { // Original name: deflateInit, environment: var0
+    var5 = function arg0, arg1() {
         var6 = _closure1_slot15;
         var13 = undefined;
         var12 = arg0;
@@ -2310,7 +2310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.deflateInit2 = var4;
     var1.deflateReset = var3;
     var1.deflateResetKeep = var2;
-    var2 = function(arg0, arg1) { // Original name: deflateSetHeader, environment: var0
+    var2 = function arg0, arg1() {
         _fun94761: for (var _fun94761_ip = 0;;) switch (_fun94761_ip) {
             case 0:
                 var2 = arg0;
@@ -2347,7 +2347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.deflateSetHeader = var2;
-    var2 = function(arg0, arg1) { // Original name: deflate, environment: var0
+    var2 = function arg0, arg1() {
         _fun94762: for (var _fun94762_ip = 0;;) switch (_fun94762_ip) {
             case 0:
                 var3 = arg0;
@@ -4001,7 +4001,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.deflate = var2;
-    var2 = function(arg0) { // Original name: deflateEnd, environment: var0
+    var2 = function arg0() {
         _fun94763: for (var _fun94763_ip = 0;;) switch (_fun94763_ip) {
             case 0:
                 var5 = arg0;
@@ -4092,7 +4092,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.deflateEnd = var2;
-    var0 = function(arg0, arg1) { // Original name: deflateSetDictionary, environment: var0
+    var0 = function arg0, arg1() {
         _fun94764: for (var _fun94764_ip = 0;;) switch (_fun94764_ip) {
             case 0:
                 var4 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: GuildDirectoryHeaderRowItem, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var1 = _closure1_slot23;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.categorySectionText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot23 = var3;
-    var3 = function(arg0, arg1) { // Original name: keyExtractor, environment: var1
+    var3 = function arg0, arg1() {
         _fun91199: for (var _fun91199_ip = 0;;) switch (_fun91199_ip) {
             case 0:
                 var1 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var3;
-    var3 = function(arg0) { // Original name: renderItem, environment: var1
+    var3 = function arg0() {
         _fun91200: for (var _fun91200_ip = 0;;) switch (_fun91200_ip) {
             case 0:
                 var0 = arg0;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var3;
-    var3 = function(arg0) { // Original name: GuildDirectoryHeader, environment: var1
+    var3 = function arg0() {
         _fun91201: for (var _fun91201_ip = 0;;) switch (_fun91201_ip) {
             case 0:
                 var0 = arg0;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var3;
-    var3 = function(arg0) { // Original name: GuildDirectoryFooter, environment: var1
+    var3 = function arg0() {
         _fun91202: for (var _fun91202_ip = 0;;) switch (_fun91202_ip) {
             case 0:
                 var0 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.H9jxS1;
                 var6 = var7.bind(var8)(var6);
                 var1.accessibilityLabel = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 24;
@@ -608,7 +608,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectory.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun91204: for (var _fun91204_ip = 0;;) switch (_fun91204_ip) {
             case 0:
                 var0 = arg0;
@@ -1074,7 +1074,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var4 = var7.bind(var14)(var4, var6);
-                var4 = function() { // Original name: handleTapCategory, environment: var8
+                var4 = function() {
                     _fun91215: for (var _fun91215_ip = 0;;) switch (_fun91215_ip) {
                         case 0:
                             var1 = _closure2_slot11;
@@ -1157,7 +1157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot7;
                 var6 = {};
                 var6.ref = var12;
-                var12 = function(arg0) { // Original name: onScroll, environment: var8
+                var12 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var0 = var0.contentOffset;
@@ -1179,7 +1179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = _closure1_slot26;
                 var12 = {};
                 var12.guild = var15;
-                var15 = function() { // Original name: onPressSearch, environment: var8
+                var15 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 35;
@@ -1213,7 +1213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.keyExtractor = var10;
                 var9 = _closure1_slot25;
                 var6.renderItem = var9;
-                var9 = function() { // Original name: renderSectionHeader, environment: var8
+                var9 = function() {
                     var3 = _closure1_slot19;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot3;
@@ -1234,7 +1234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var6.renderSectionHeader = var9;
-                var8 = function() { // Original name: ListFooterComponent, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot19;
                     var2 = _closure1_slot27;
                     var1 = {};

@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/native/OnboardingHomeScrollView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OnboardingHomeScrollView, environment: var1
+    var1 = function arg0() {
         _fun104774: for (var _fun104774_ip = 0;;) switch (_fun104774_ip) {
             case 0:
                 var0 = arg0;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 1;
                 var8.right = var9;
                 var0.scrollIndicatorInsets = var8;
-                var7 = function(arg0) { // Original name: onScroll, environment: var7
+                var7 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var0 = var0.contentOffset;

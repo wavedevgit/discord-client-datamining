@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: ChannelButtonIcons, environment: var1
+    var0 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: ChannelButton, environment: var1
+    var0 = function arg0() {
         _fun110960: for (var _fun110960_ip = 0;;) switch (_fun110960_ip) {
             case 0:
                 var1 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: StreamButton, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.participant;
         var4 = var0.onPress;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: ActivityButton, environment: var1
+    var0 = function arg0() {
         _fun110963: for (var _fun110963_ip = 0;;) switch (_fun110963_ip) {
             case 0:
                 var1 = arg0;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: UserButton, environment: var1
+    var0 = function arg0() {
         _fun110965: for (var _fun110965_ip = 0;;) switch (_fun110965_ip) {
             case 0:
                 var0 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VoicePanelTitleButton, environment: var1
+    var1 = function() {
         _fun110966: for (var _fun110966_ip = 0;;) switch (_fun110966_ip) {
             case 0:
                 var7 = _closure1_slot3;

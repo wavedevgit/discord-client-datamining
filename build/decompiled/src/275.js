@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var3;
-    var0 = function(arg0, arg1) { // Original name: getExtendedError, environment: var1
+    var0 = function arg0, arg1() {
         _fun3422: for (var _fun3422_ip = 0;;) switch (_fun3422_ip) {
             case 0:
                 var6 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = arg3;
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
-    var3 = function(arg0, arg1) { // Original name: onUncaughtError, environment: var1
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot3;
         var0 = undefined;
         var3 = arg0;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.onUncaughtError = var3;
-    var3 = function(arg0, arg1) { // Original name: onCaughtError, environment: var1
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot3;
         var0 = undefined;
         var3 = arg0;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.onCaughtError = var3;
-    var1 = function(arg0, arg1) { // Original name: onRecoverableError, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot3;
         var0 = undefined;
         var2 = arg0;

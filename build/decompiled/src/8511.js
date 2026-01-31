@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Math;
     var1 = var1.max;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: chunk, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun68437: for (var _fun68437_ip = 0;;) switch (_fun68437_ip) {
             case 0:
                 var8 = arg0;

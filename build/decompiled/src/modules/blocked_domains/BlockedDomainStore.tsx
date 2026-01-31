@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var4 = _closure1_slot4;
-        var3 = function() { // Original name: BlockedDomainStore, environment: var1
+        var3 = function() {
             var3 = _closure1_slot3;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'isBlockedDomain';
         var0.key = var2;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun51543: for (var _fun51543_ip = 0;;) switch (_fun51543_ip) {
                 case 0:
                     var2 = _closure1_slot0;

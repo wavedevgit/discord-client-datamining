@@ -5,14 +5,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = dependencyMap;
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var5;
-            var3 = function(arg0) { // Original name: isURLObjectRelative, environment: var1
+            var3 = function arg0() {
                 var1 = 'isRelative';
                 var0 = arg0;
                 var0 = var1 in var0;
                 return var0;
             };
             var _closure1_slot3 = var3;
-            var4 = function(arg0) { // Original name: getSanitizedUrlStringFromUrlObject, environment: var1
+            var4 = function arg0() {
                 _fun9471: for (var _fun9471_ip = 0;;) switch (_fun9471_ip) {
                     case 0:
                         var0 = arg0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot4 = var4;
-            var0 = function(arg0, arg1, arg2, arg3) { // Original name: getHttpSpanNameFromUrlObject, environment: var1
+            var0 = function arg0, arg1, arg2, arg3() {
                 _fun9472: for (var _fun9472_ip = 0;;) switch (_fun9472_ip) {
                     case 0:
                         var6 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = 'Module';
             var5.value = var9;
             var5 = var7.bind(var8)(var2, var6, var5);
-            var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getHttpSpanDetailsFromUrlObject, environment: var1
+            var5 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun9473: for (var _fun9473_ip = 0;;) switch (_fun9473_ip) {
                     case 0:
                         var6 = arg0;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.getHttpSpanDetailsFromUrlObject = var5;
-            var5 = function(arg0) { // Original name: getSanitizedUrlString, environment: var1
+            var5 = function arg0() {
                 _fun9474: for (var _fun9474_ip = 0;;) switch (_fun9474_ip) {
                     case 0:
                         var0 = arg0;
@@ -401,7 +401,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.getSanitizedUrlString = var5;
             var2.getSanitizedUrlStringFromUrlObject = var4;
             var2.isURLObjectRelative = var3;
-            var3 = function(arg0, arg1) { // Original name: parseStringToURLObject, environment: var1
+            var3 = function arg0, arg1() {
                 _fun9475: for (var _fun9475_ip = 0;;) switch (_fun9475_ip) {
                     case 0:
                         var8 = arg0;
@@ -507,7 +507,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.parseStringToURLObject = var3;
-            var3 = function(arg0) { // Original name: parseUrl, environment: var1
+            var3 = function arg0() {
                 _fun9476: for (var _fun9476_ip = 0;;) switch (_fun9476_ip) {
                     case 0:
                         var2 = arg0;
@@ -568,7 +568,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var2.parseUrl = var3;
-                        var1 = function(arg0) { // Original name: stripUrlQueryAndFragment, environment: var1
+                        var1 = function arg0() {
                             var3 = arg0;
                             var2 = var3.split;
                             var1 = /[?#]/;

@@ -69,11 +69,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = function(arg0) { // Environment: var10
         var0 = arg0;
         var _closure2_slot0 = var0;
-        var3 = function(arg0) { // Original name: createResolve, environment: var1
+        var3 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
-            var1 = function(arg0, arg1) { // Original name: resolve, environment: var1
+            var1 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var1 = _closure2_slot0;
                 var0 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.radii = var11;
     var6.spacing = var7;
     var7 = {};
-    var11 = function(arg0) { // Original name: isSemanticColor, environment: var10
+    var11 = function arg0() {
         _fun8219: for (var _fun8219_ip = 0;;) switch (_fun8219_ip) {
             case 0:
                 var2 = arg0;
@@ -187,14 +187,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.isSemanticColor = var11;
-    var11 = function(arg0) { // Original name: getSemanticColorName, environment: var10
+    var11 = function arg0() {
         var1 = _closure1_slot6;
         var0 = arg0;
         var0 = var0[var1];
         return var0;
     };
     var7.getSemanticColorName = var11;
-    var11 = function(arg0, arg1, arg2) { // Original name: resolveSemanticColor, environment: var10
+    var11 = function arg0, arg1, arg2() {
         _fun8221: for (var _fun8221_ip = 0;;) switch (_fun8221_ip) {
             case 0:
                 var5 = arg0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var7.resolveSemanticColor = var11;
-    var11 = function(arg0, arg1, arg2) { // Original name: adjustColorSaturation, environment: var10
+    var11 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.adjustColorSaturation = var11;
-    var10 = function(arg0, arg1, arg2, arg3) { // Original name: adjustColorContrast, environment: var10
+    var10 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 8;

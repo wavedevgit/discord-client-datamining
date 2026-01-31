@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Fragment;
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: BotUserProfileContent, environment: var1
+    var1 = function arg0() {
         _fun61786: for (var _fun61786_ip = 0;;) switch (_fun61786_ip) {
             case 0:
                 var0 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun61786
                 }
             case 555:
-                var28 = function() { // Original name: handleCopyUsername, environment: var35
+                var28 = function() {
                     var3 = _closure2_slot2;
                     var2 = {};
                     var0 = 'COPY_USERNAME';
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.customStatusActivity = var22;
                 var21 = var0 != var21;
                 var10.hasCustomProfileTheme = var21;
-                var21 = function() { // Original name: onPressTruncatedStatus, environment: var35
+                var21 = function() {
                     _fun61791: for (var _fun61791_ip = 0;;) switch (_fun61791_ip) {
                         case 0:
                             var4 = _closure1_slot1;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.displayNameAccessibilityHint = var29;
                 var10.onPressDisplayName = var28;
                 var10.onPressUserTag = var28;
-                var28 = function() { // Original name: handlePressPronouns, environment: var35
+                var28 = function() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var0 = 'PRESS_PRONOUNS';
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var36.name = var40;
                 var36 = var38.bind(var39)(var37, var36);
                 var31.accessibilityHint = var36;
-                var35 = function() { // Original name: onPress, environment: var35
+                var35 = function() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var0 = 'SEND_MESSAGE';

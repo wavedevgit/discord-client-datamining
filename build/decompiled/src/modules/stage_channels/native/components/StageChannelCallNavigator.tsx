@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ModeratorViewOverlay, environment: var1
+    var0 = function arg0() {
         _fun64773: for (var _fun64773_ip = 0;;) switch (_fun64773_ip) {
             case 0:
                 var1 = arg0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var14[var1];
                 var10 = var13.bind(var4)(var6);
                 var7 = var10.useAnimatedStyle;
-                var6 = function() { // Original name: s, environment: var0
+                var6 = function() {
                     _fun64774: for (var _fun64774_ip = 0;;) switch (_fun64774_ip) {
                         case 0:
                             var0 = {};
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: JoinStageOverlay, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.channel;
         var3 = _closure1_slot4;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var8[var0];
         var6 = var12.bind(var3)(var2);
         var5 = var6.useAnimatedStyle;
-        var2 = function() { // Original name: s, environment: var1
+        var2 = function() {
             _fun64780: for (var _fun64780_ip = 0;;) switch (_fun64780_ip) {
                 case 0:
                     var0 = {};
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: StagePromptWrapper, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.channel;
         var1 = _closure1_slot17;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/components/StageChannelCallNavigator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageChannelCallNavigator, environment: var1
+    var1 = function arg0() {
         _fun64785: for (var _fun64785_ip = 0;;) switch (_fun64785_ip) {
             case 0:
                 var0 = arg0;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = {};
                 var19.channel = var23;
                 var19.fullscreenStream = var22;
-                var22 = function() { // Original name: onOpenRTCDebugOverlay, environment: var16
+                var22 = function() {
                     var2 = _closure2_slot5;
                     var1 = undefined;
                     var0 = true;
@@ -847,7 +847,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var17[var13];
                 var14 = var14.bind(var3)(var13);
                 var13 = {};
-                var16 = function() { // Original name: onClose, environment: var16
+                var16 = function() {
                     var2 = _closure2_slot5;
                     var1 = undefined;
                     var0 = false;

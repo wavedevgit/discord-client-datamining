@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1, arg2) { // Original name: BaseSocket, environment: var1
+        var2 = function arg0, arg1, arg2() {
             var3 = arg1;
             var2 = this;
             var5 = _closure1_slot2;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'checkRpcVersion';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun63773: for (var _fun63773_ip = 0;;) switch (_fun63773_ip) {
                 case 0:
                     var4 = arg0;

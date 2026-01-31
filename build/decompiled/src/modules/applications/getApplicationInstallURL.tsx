@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/getApplicationInstallURL.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getActivityLaunchURL, environment: var1
+    var3 = function arg0() {
         _fun62178: for (var _fun62178_ip = 0;;) switch (_fun62178_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getActivityLaunchURL = var3;
-    var1 = function(arg0) { // Original name: getApplicationInstallURL, environment: var1
+    var1 = function arg0() {
         _fun62179: for (var _fun62179_ip = 0;;) switch (_fun62179_ip) {
             case 0:
                 var1 = arg0;

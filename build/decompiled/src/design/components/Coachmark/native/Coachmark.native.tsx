@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: Coachmark, environment: var1
+    var3 = function arg0() {
         _fun57373: for (var _fun57373_ip = 0;;) switch (_fun57373_ip) {
             case 0:
                 var2 = arg0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.style = var23;
                 var32 = true;
                 var12.accessible = var32;
-                var23 = function() { // Original name: onLayout, environment: var4
+                var23 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot11;
                 var1 = _closure1_slot7;
                 var0 = {};
-                var4 = function(arg0) { // Original name: onLayout, environment: var4
+                var4 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var2 = _closure2_slot4;
@@ -692,7 +692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.closeButton = var9;
     var4 = var7.bind(var8)(var4);
     var _closure1_slot14 = var4;
-    var4 = function(arg0) { // Original name: Cursor, environment: var1
+    var4 = function arg0() {
         _fun57379: for (var _fun57379_ip = 0;;) switch (_fun57379_ip) {
             case 0:
                 var0 = arg0;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Coachmark/native/Coachmark.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.Coachmark = var3;
-    var1 = function(arg0) { // Original name: CoachmarkContainer, environment: var1
+    var1 = function arg0() {
         _fun57380: for (var _fun57380_ip = 0;;) switch (_fun57380_ip) {
             case 0:
                 var7 = arg0;

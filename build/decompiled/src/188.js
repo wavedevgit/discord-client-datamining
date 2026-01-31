@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var4.bind(var5)(var1);
     var _closure1_slot0 = var1;
     var1 = {};
-    var4 = function(arg0, arg1, arg2) { // Original name: reportFatalException, environment: var3
+    var4 = function arg0, arg1, arg2() {
         var4 = _closure1_slot0;
         var3 = var4.reportFatalException;
         var2 = arg0;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.reportFatalException = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: reportSoftException, environment: var3
+    var4 = function arg0, arg1, arg2() {
         var4 = _closure1_slot0;
         var3 = var4.reportSoftException;
         var2 = arg0;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.reportSoftException = var4;
-    var4 = function() { // Original name: dismissRedbox, environment: var3
+    var4 = function() {
         _fun2643: for (var _fun2643_ip = 0;;) switch (_fun2643_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.dismissRedbox = var4;
-    var4 = function(arg0) { // Original name: reportException, environment: var3
+    var4 = function arg0() {
         _fun2644: for (var _fun2644_ip = 0;;) switch (_fun2644_ip) {
             case 0:
                 var2 = arg0;

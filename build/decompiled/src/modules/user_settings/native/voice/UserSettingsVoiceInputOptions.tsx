@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: handleInputModePress, environment: var3
+    var1 = function() {
         var10 = _closure1_slot0;
         var11 = _closure1_slot2;
         var0 = 7;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.Q8gkVL;
         var4 = var8.bind(var9)(var4);
         var5.label = var4;
-        var4 = function() { // Original name: onPress, environment: var6
+        var4 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 9;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.cHCEOJ;
         var7 = var8.bind(var9)(var7);
         var5.label = var7;
-        var6 = function() { // Original name: onPress, environment: var6
+        var6 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 9;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_settings/native/voice/UserSettingsVoiceInputOptions.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: UserSettingsVoiceInputOptions, environment: var3
+    var3 = function() {
         _fun84332: for (var _fun84332_ip = 0;;) switch (_fun84332_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var23.bind(var24)(var21);
                 var11.label = var21;
                 var11.value = var19;
-                var21 = function(arg0) { // Original name: onValueChange, environment: var17
+                var21 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 9;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = {};
                 var15.auto = var19;
                 var15.threshold = var18;
-                var17 = function(arg0) { // Original name: onThresholdChange, environment: var17
+                var17 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 9;

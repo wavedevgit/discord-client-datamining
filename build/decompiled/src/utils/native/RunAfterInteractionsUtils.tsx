@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: runAfterInteractions, environment: var4
+    var1 = function arg0() {
         _fun51387: for (var _fun51387_ip = 0;;) switch (_fun51387_ip) {
             case 0:
                 var4 = arguments[1];
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.delay;
                 var0 = var0.bind(var2)();
                 var0 = {};
-                var1 = function() { // Original name: cancel, environment: var1
+                var1 = function() {
                     var2 = _closure2_slot2;
                     var1 = var2.cancel;
                     var1 = var1.bind(var2)();

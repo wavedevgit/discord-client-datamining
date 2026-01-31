@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var6;
     var3 = var3.HELP_CENTER_LINK;
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getPremiumGroupFeaturesTableCardSubheaderString, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun59151: for (var _fun59151_ip = 0;;) switch (_fun59151_ip) {
             case 0:
                 var8 = arg1;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/premium_group/hooks/usePremiumGroupFeaturesTableCardText.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: _default, environment: var1
+    var1 = function arg0, arg1() {
         _fun59152: for (var _fun59152_ip = 0;;) switch (_fun59152_ip) {
             case 0:
                 var1 = arg0;

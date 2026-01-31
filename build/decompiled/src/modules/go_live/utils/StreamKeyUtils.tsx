@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/go_live/utils/StreamKeyUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isStreamKey, environment: var1
+    var3 = function arg0() {
         _fun30804: for (var _fun30804_ip = 0;;) switch (_fun30804_ip) {
             case 0:
                 var4 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStreamKey = var3;
-    var3 = function(arg0) { // Original name: decodeStreamKey, environment: var1
+    var3 = function arg0() {
         _fun30805: for (var _fun30805_ip = 0;;) switch (_fun30805_ip) {
             case 0:
                 var2 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.decodeStreamKey = var3;
-    var1 = function(arg0) { // Original name: encodeStreamKey, environment: var1
+    var1 = function arg0() {
         _fun30806: for (var _fun30806_ip = 0;;) switch (_fun30806_ip) {
             case 0:
                 var0 = arg0;

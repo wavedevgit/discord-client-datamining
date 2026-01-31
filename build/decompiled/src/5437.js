@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var3 = function(arg0) { // Original name: propsAndStyles, environment: var1
+    var3 = function arg0() {
         _fun48351: for (var _fun48351_ip = 0;;) switch (_fun48351_ip) {
             case 0:
                 var5 = arg0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function(arg0) { // Original name: getMarker, environment: var1
+    var0 = function arg0() {
         _fun48352: for (var _fun48352_ip = 0;;) switch (_fun48352_ip) {
             case 0:
                 var4 = arg0;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var4 = function(arg0, arg1) { // Original name: extractProps, environment: var1
+    var4 = function arg0, arg1() {
         _fun48353: for (var _fun48353_ip = 0;;) switch (_fun48353_ip) {
             case 0:
                 var16 = arg0;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var5;
     var2.default = var4;
     var2.propsAndStyles = var3;
-    var3 = function(arg0, arg1) { // Original name: extract, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot5;
         var2 = undefined;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.extract = var3;
-    var1 = function(arg0, arg1) { // Original name: withoutXY, environment: var1
+    var1 = function arg0, arg1() {
         var3 = _closure1_slot7;
         var1 = global;
         var6 = var1.Object;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: BlockedInformationTable, environment: var1
+    var0 = function() {
         var3 = _closure1_slot14;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var8];
     var3 = var9.bind(var0)(var3);
     var7.icon = var3;
-    var3 = function() { // Original name: text, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 13;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.text = var3;
-    var3 = function() { // Original name: subtext, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 13;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var5[var8];
     var8 = var9.bind(var0)(var8);
     var7.icon = var8;
-    var8 = function() { // Original name: text, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 13;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.text = var8;
-    var8 = function() { // Original name: subtext, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 13;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var5[var8];
     var8 = var9.bind(var0)(var8);
     var7.icon = var8;
-    var8 = function() { // Original name: text, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 13;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var7.text = var8;
-    var8 = function() { // Original name: subtext, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 13;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3[2] = var7;
     var _closure1_slot17 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: BlockConfirmationActionSheet, environment: var1
+    var1 = function arg0() {
         _fun82137: for (var _fun82137_ip = 0;;) switch (_fun82137_ip) {
             case 0:
                 var1 = arg0;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var4)(var5);
                 var6 = var5.BottomSheet;
                 var5 = {};
-                var8 = function() { // Original name: onDismiss, environment: var23
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 24;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var28 = var28["8qGQsM"];
                 var28 = var29.bind(var30)(var28);
                 var20.accessibilityLabel = var28;
-                var28 = function() { // Original name: onPress, environment: var23
+                var28 = function() {
                     var3 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 24;
@@ -864,7 +864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25.l4Emac;
                 var25 = var26.bind(var27)(var25);
                 var15.text = var25;
-                var25 = function() { // Original name: onPress, environment: var23
+                var25 = function() {
                     _fun82144: for (var _fun82144_ip = 0;;) switch (_fun82144_ip) {
                         case 0:
                             var3 = _closure2_slot5;
@@ -969,7 +969,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.t;
                 var20 = var19.CpTgBn;
                 var19 = {};
-                var23 = function() { // Original name: articleLink, environment: var23
+                var23 = function() {
                     var2 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 31;

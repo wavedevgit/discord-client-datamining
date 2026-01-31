@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var0)(var2);
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: allSettled, environment: var1
+    var2 = function arg0() {
         _fun28867: for (var _fun28867_ip = 0;;) switch (_fun28867_ip) {
             case 0:
                 var3 = this;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 45: // try_start_0
                             var6 = var4;
                             var5 = var6.then;
-                            var4 = function(arg0) { // Original name: onFulfill, environment: var2
+                            var4 = function arg0() {
                                 var0 = {};
                                 var1 = 'fulfilled';
                                 var0.status = var1;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0.value = var1;
                                 return var0;
                             };
-                            var2 = function(arg0) { // Original name: onReject, environment: var2
+                            var2 = function arg0() {
                                 var0 = {};
                                 var1 = 'rejected';
                                 var0.status = var1;

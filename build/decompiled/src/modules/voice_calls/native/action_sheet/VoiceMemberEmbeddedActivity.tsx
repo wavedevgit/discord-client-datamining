@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: calculateActivityPreviewImageDimensions, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var0 = 32;
         var2 = var1 - var0;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var1 = function(arg0) { // Original name: calculateActivityRowHeight, environment: var3
+    var1 = function arg0() {
         var2 = _closure1_slot16;
         var1 = undefined;
         var0 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_calls/native/action_sheet/VoiceMemberEmbeddedActivity.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: VoiceMemberEmbeddedActivity, environment: var3
+    var3 = function arg0() {
         _fun91583: for (var _fun91583_ip = 0;;) switch (_fun91583_ip) {
             case 0:
                 var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot4 = var4;
                 var _closure2_slot6 = var4;
                 var _closure2_slot7 = var4;
-                var0 = function() { // Original name: handleCanJoin, environment: var25
+                var0 = function() {
                     _fun91584: for (var _fun91584_ip = 0;;) switch (_fun91584_ip) {
                         case 0:
                             var4 = _closure2_slot1;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var3.bind(var4)(var1);
             case 516:
                 var26 = var19.name;
-                var1 = function() { // Original name: onEmbeddedActivityItemPress, environment: var25
+                var1 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 20;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.accessibilityLabel = var5;
                 var5 = _closure1_slot13;
                 var1.androidRippleConfig = var5;
-                var5 = function() { // Original name: onPress, environment: var25
+                var5 = function() {
                     var1 = _closure2_slot7;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.items = var13;
                 var13 = 5;
                 var10.max = var13;
-                var13 = function(arg0, arg1) { // Original name: renderItem, environment: var25
+                var13 = function arg0, arg1() {
                     _fun91591: for (var _fun91591_ip = 0;;) switch (_fun91591_ip) {
                         case 0:
                             var3 = _closure1_slot10;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var21[var19];
                 var17 = var20.bind(var4)(var16);
                 var16 = {};
-                var25 = function() { // Original name: onPress, environment: var25
+                var25 = function() {
                     var1 = _closure2_slot7;
                     var0 = undefined;
                     var1 = var1.bind(var0)();

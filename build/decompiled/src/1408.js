@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: isBuffer, environment: var0
+    var1 = function arg0() {
         _fun16437: for (var _fun16437_ip = 0;;) switch (_fun16437_ip) {
             case 0:
                 var1 = arg0;

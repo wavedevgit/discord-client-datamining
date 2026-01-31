@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsBottomButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InAppReportsBottomButton, environment: var1
+    var1 = function arg0() {
         _fun92603: for (var _fun92603_ip = 0;;) switch (_fun92603_ip) {
             case 0:
                 var0 = arg0;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.bind(var4)(var8);
                 var8 = {};
                 var8.disabled = var18;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot0;
                     var0 = undefined;

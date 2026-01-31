@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/errors/CommonSentryInitUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var2.IGNORE_ANALYTICS_BREADCRUMB_EVENTS = var1;
-    var1 = function(arg0) { // Original name: filterThrottle, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var2 = var1.maxBudgetMinute;
         var _closure2_slot0 = var2;

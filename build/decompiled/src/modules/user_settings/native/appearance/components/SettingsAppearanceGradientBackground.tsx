@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.code = var7;
             var _closure1_slot9 = var3;
             var3 = var6.memo;
-            var1 = function(arg0) { // Original name: SettingsAppearanceGradientBackground, environment: var1
+            var1 = function arg0() {
                 var2 = arg0;
                 var1 = var2.isDimmed;
                 var _closure2_slot0 = var1;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2 = var3.bind(var6)(var1, var2);
-                var1 = function(arg0) { // Original name: useThemeStateTracker, environment: var0
+                var1 = function arg0() {
                     _fun84530: for (var _fun84530_ip = 0;;) switch (_fun84530_ip) {
                         case 0:
                             var7 = arg0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9[var7];
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedProps;
-                var0 = function() { // Original name: P, environment: var0
+                var0 = function() {
                     _fun84534: for (var _fun84534_ip = 0;;) switch (_fun84534_ip) {
                         case 0:
                             var2 = _closure2_slot5;

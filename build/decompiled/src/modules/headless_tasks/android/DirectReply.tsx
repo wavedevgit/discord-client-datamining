@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var0)(var2);
             var2 = var3.awaitStorage;
             var1 = function() { // Environment: var1
-                var1 = function() { // Original name: _sendMessage, environment: var0
+                var1 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot2;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'Storage loaded';
                 var1 = var2.bind(var3)(var1);
                 var2 = _closure2_slot0;
-                var1 = function(arg0) { // Original name: sendMessage, environment: var0
+                var1 = function arg0() {
                     var0 = undefined;
                     var3 = _closure4_slot0;
                     var2 = var3.apply;

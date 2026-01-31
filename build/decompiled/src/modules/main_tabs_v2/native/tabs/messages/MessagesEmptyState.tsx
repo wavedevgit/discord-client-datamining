@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: MessagesEmptyState, environment: var1
+    var1 = function() {
         _fun101787: for (var _fun101787_ip = 0;;) switch (_fun101787_ip) {
             case 0:
                 var1 = _closure1_slot10;

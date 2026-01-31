@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: onPress, environment: var1
+    var0 = function() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: ConnectionsSettingScreen, environment: var1
+    var1 = function() {
         _fun82224: for (var _fun82224_ip = 0;;) switch (_fun82224_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function(arg0) { // Original name: headerRight, environment: var3
+                    var3 = function arg0() {
                         var3 = _closure1_slot4;
                         var7 = _closure1_slot0;
                         var8 = _closure1_slot2;

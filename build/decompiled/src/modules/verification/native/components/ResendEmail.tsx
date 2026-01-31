@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/ResendEmail.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ResendEmail, environment: var1
+    var1 = function() {
         _fun60419: for (var _fun60419_ip = 0;;) switch (_fun60419_ip) {
             case 0:
                 var0 = _closure1_slot12;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.Colors;
                 var11 = var11.BRAND;
                 var6.color = var11;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure2_slot2;
                     var0 = undefined;
                     var1 = true;

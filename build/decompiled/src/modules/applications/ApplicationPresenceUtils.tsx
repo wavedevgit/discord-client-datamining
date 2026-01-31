@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/ApplicationPresenceUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: shouldDisableUserPresenceInChannel, environment: var1
+    var1 = function arg0, arg1() {
         _fun59510: for (var _fun59510_ip = 0;;) switch (_fun59510_ip) {
             case 0:
                 var4 = arg0;

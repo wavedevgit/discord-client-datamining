@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114344: for (var _fun114344_ip = 0;;) switch (_fun114344_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: handlePushedModal, environment: var1
+    var0 = function arg0() {
         _fun114347: for (var _fun114347_ip = 0;;) switch (_fun114347_ip) {
             case 0:
                 var5 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: handlePoppedModal, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: createPushModalHandler, environment: var1
+    var0 = function arg0() {
         var2 = 0;
         var1 = copyRestArgs(var2);
         var _closure2_slot0 = var1;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'center': true
     };
     var3.store = var7;
-    var8 = function() { // Original name: isOpen, environment: var1
+    var8 = function() {
         _fun114351: for (var _fun114351_ip = 0;;) switch (_fun114351_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.isOpen = var8;
-    var8 = function() { // Original name: getComponent, environment: var1
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 16;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'center': true
     };
     var3.store = var7;
-    var7 = function() { // Original name: isOpen, environment: var1
+    var7 = function() {
         var2 = _closure1_slot12;
         var1 = var2.getAction;
         var1 = var1.bind(var2)();
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.isOpen = var7;
-    var7 = function() { // Original name: getComponent, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 17;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: DeprecatedModalManager, environment: var0
+        var2 = function arg0() {
             _fun114356: for (var _fun114356_ip = 0;;) switch (_fun114356_ip) {
                 case 0:
                     var3 = this;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.CONNECTION_OPEN_SUPPLEMENTAL = var7;
                     var3 = var4.bind(var5)(var3);
                     var1.EMAIL_VERIFICATION_MODAL_OPEN = var3;
-                    var3 = function(arg0) { // Original name: USER_REQUIRED_ACTION_UPDATE, environment: var6
+                    var3 = function arg0() {
                         _fun114357: for (var _fun114357_ip = 0;;) switch (_fun114357_ip) {
                             case 0:
                                 var3 = arg0;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var7 = _closure1_slot8;
                     var3.store = var7;
-                    var7 = function() { // Original name: getComponent, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 18;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var7 = _closure1_slot11;
                     var3.store = var7;
-                    var7 = function() { // Original name: getComponent, environment: var6
+                    var7 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 19;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var7 = _closure1_slot10;
                     var3.store = var7;
-                    var6 = function() { // Original name: getComponent, environment: var6
+                    var6 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 20;

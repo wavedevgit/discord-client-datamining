@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: areMemberGroupsHydrated, environment: var1
+    var0 = function arg0() {
         _fun89367: for (var _fun89367_ip = 0;;) switch (_fun89367_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: tryUpdateSubscriptionForHereMention, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun89368: for (var _fun89368_ip = 0;;) switch (_fun89368_ip) {
             case 0:
                 var5 = arg0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/channel_text_area/ChatInputContentCallbacks.tsx';
     var4 = var5.bind(var6)(var4);
     var2.tryUpdateSubscriptionForHereMention = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useHereMentionCallback, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var7 = arg0;
         var6 = arg1;
         var5 = arg2;

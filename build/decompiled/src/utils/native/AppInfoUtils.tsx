@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/native/AppInfoUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getAppMajorVersion, environment: var1
+    var1 = function() {
         _fun112786: for (var _fun112786_ip = 0;;) switch (_fun112786_ip) {
             case 0:
                 var1 = _closure1_slot0;

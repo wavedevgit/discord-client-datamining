@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: getAndroidLightImpactEffect, environment: var1
+    var0 = function() {
         _fun28099: for (var _fun28099_ip = 0;;) switch (_fun28099_ip) {
             case 0:
                 var0 = global;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.HapticFeedbackTypes = var3;
-    var1 = function(arg0) { // Original name: triggerHapticFeedback, environment: var1
+    var1 = function arg0() {
         _fun28100: for (var _fun28100_ip = 0;;) switch (_fun28100_ip) {
             case 0:
                 var2 = arg0;

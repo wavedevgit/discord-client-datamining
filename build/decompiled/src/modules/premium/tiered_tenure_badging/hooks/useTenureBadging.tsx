@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var11;
-    var7 = function() { // Original name: useTieredTenureBadge, environment: var3
+    var7 = function() {
         _fun59398: for (var _fun59398_ip = 0;;) switch (_fun59398_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var7;
-    var5 = function() { // Original name: usePremiumSince, environment: var3
+    var5 = function() {
         _fun59400: for (var _fun59400_ip = 0;;) switch (_fun59400_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'earned';
     var8.EARNED = var1;
     var _closure1_slot8 = var8;
-    var6 = function(arg0) { // Original name: usePremiumSinceForUser, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var6;
-    var4 = function() { // Original name: useTieredTenureEarnedOnDate, environment: var3
+    var4 = function() {
         _fun59405: for (var _fun59405_ip = 0;;) switch (_fun59405_ip) {
             case 0:
                 var0 = _closure1_slot12;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var4;
-    var1 = function(arg0) { // Original name: useTieredTenureBadgeDataForUser, environment: var3
+    var1 = function arg0() {
         _fun59407: for (var _fun59407_ip = 0;;) switch (_fun59407_ip) {
             case 0:
                 var3 = _closure1_slot0;

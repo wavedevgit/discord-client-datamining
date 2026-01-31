@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun95222: for (var _fun95222_ip = 0;;) switch (_fun95222_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun95225: for (var _fun95225_ip = 0;;) switch (_fun95225_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun95227: for (var _fun95227_ip = 0;;) switch (_fun95227_ip) {
             case 0:
                 var3 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: clearAnimationTimer, environment: var4
+    var0 = function arg0() {
         _fun95228: for (var _fun95228_ip = 0;;) switch (_fun95228_ip) {
             case 0:
                 var1 = arg0;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: scheduleTransitionToGentleAmbient, environment: var4
+    var0 = function arg0() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var4 = _closure1_slot16;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: resetAllState, environment: var4
+    var0 = function() {
         _fun95231: for (var _fun95231_ip = 0;;) switch (_fun95231_ip) {
             case 0:
                 var5 = global;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateChannelAnimationState, environment: var4
+    var0 = function arg0, arg1() {
         _fun95232: for (var _fun95232_ip = 0;;) switch (_fun95232_ip) {
             case 0:
                 var3 = arg0;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var6 = function() { // Original name: handleConnectionOpenOrLogout, environment: var4
+    var6 = function() {
         var1 = _closure1_slot18;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: VoiceChannelAnimationStateStoreClass, environment: var5
+        var3 = function() {
             _fun95235: for (var _fun95235_ip = 0;;) switch (_fun95235_ip) {
                 case 0:
                     var3 = this;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot7;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAnimationStyle';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun95237: for (var _fun95237_ip = 0;;) switch (_fun95237_ip) {
                 case 0:
                     var2 = _closure1_slot9;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserCount';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun95238: for (var _fun95238_ip = 0;;) switch (_fun95238_ip) {
                 case 0:
                     var1 = _closure1_slot9;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var12 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleVoiceStateUpdates, environment: var4
+    var9 = function arg0() {
         _fun95239: for (var _fun95239_ip = 0;;) switch (_fun95239_ip) {
             case 0:
                 var0 = arg0;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.VOICE_STATE_UPDATES = var9;
-    var9 = function(arg0) { // Original name: handleChannelSelect, environment: var4
+    var9 = function arg0() {
         _fun95240: for (var _fun95240_ip = 0;;) switch (_fun95240_ip) {
             case 0:
                 var0 = arg0;

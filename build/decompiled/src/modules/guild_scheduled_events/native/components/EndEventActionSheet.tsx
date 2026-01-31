@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/EndEventActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EndEventActionSheet, environment: var1
+    var1 = function arg0() {
         _fun66184: for (var _fun66184_ip = 0;;) switch (_fun66184_ip) {
             case 0:
                 var0 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun66184
                 }
             case 80:
-                var18 = function() { // Original name: handleClose, environment: var11
+                var18 = function() {
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 8;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.mjB9pd;
                 var12 = var13.bind(var14)(var12);
                 var9.text = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 15;

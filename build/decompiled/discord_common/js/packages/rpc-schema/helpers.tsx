@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.RPCCommand = var4;
     var2.RPCEvent = var3;
-    var3 = function(arg0) { // Original name: joiReqObj, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.required;
         var2 = var0.bind(var1)();
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.joiReqObj = var3;
-    var1 = function(arg0) { // Original name: joiEnum, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;

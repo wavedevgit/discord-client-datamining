@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SHARE_EVENT_DETAILS_LINK = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: canUseInviteModal, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun65968: for (var _fun65968_ip = 0;;) switch (_fun65968_ip) {
             case 0:
                 var0 = arg0;

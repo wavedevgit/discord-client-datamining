@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: GuildProgressOverviewView, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var21 = var0.titleStyle;
         var6 = var0.onPress;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_progress/native/components/GuildProgressOverview.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildProgressOverview, environment: var3
+    var3 = function arg0() {
         _fun96600: for (var _fun96600_ip = 0;;) switch (_fun96600_ip) {
             case 0:
                 var1 = arg0;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot8;
                 var0 = {};
                 var0.titleStyle = var9;
-                var9 = function() { // Original name: onPress, environment: var8
+                var9 = function() {
                     _fun96602: for (var _fun96602_ip = 0;;) switch (_fun96602_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.onPress = var9;
-                var8 = function() { // Original name: onLongPress, environment: var8
+                var8 = function() {
                     _fun96603: for (var _fun96603_ip = 0;;) switch (_fun96603_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.PbNxaW;
                             var3 = var5.bind(var6)(var3);
                             var4.label = var3;
-                            var3 = function() { // Original name: onPress, environment: var3
+                            var3 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 7;

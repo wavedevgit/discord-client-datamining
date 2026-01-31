@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var8 = false;
                         var2.showCurrentPlan = var8;
-                        var5 = function(arg0) { // Original name: predicate, environment: var5
+                        var5 = function arg0() {
                             _fun77989: for (var _fun77989_ip = 0;;) switch (_fun77989_ip) {
                                 case 0:
                                     var3 = arg0;

@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.ReflectionBinaryReader = var0;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: ReflectionBinaryReader, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'prepare';
         var0.key = var1;
-        var1 = function() { // Original name: prepare, environment: var4
+        var1 = function() {
             _fun14960: for (var _fun14960_ip = 0;;) switch (_fun14960_ip) {
                 case 0:
                     var1 = this;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'read';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: read, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun14962: for (var _fun14962_ip = 0;;) switch (_fun14962_ip) {
                 case 0:
                     var28 = arg0;
@@ -528,7 +528,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'mapEntry';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: mapEntry, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun14963: for (var _fun14963_ip = 0;;) switch (_fun14963_ip) {
                 case 0:
                     var0 = arg0;
@@ -775,7 +775,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scalar';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: scalar, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun14964: for (var _fun14964_ip = 0;;) switch (_fun14964_ip) {
                 case 0:
                     var1 = arg0;

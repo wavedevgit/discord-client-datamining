@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/MemberVerificationModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberVerificationModal, environment: var1
+    var1 = function arg0() {
         _fun60275: for (var _fun60275_ip = 0;;) switch (_fun60275_ip) {
             case 0:
                 var1 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var9];
                 var10 = var3.bind(var4)(var1);
                 var2 = var10.useAnimatedScrollHandler;
-                var1 = function(arg0) { // Original name: _, environment: var14
+                var1 = function arg0() {
                     var0 = arg0;
                     var0 = var0.contentOffset;
                     var2 = var0.y;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var9];
                 var10 = var3.bind(var4)(var1);
                 var2 = var10.useAnimatedStyle;
-                var1 = function() { // Original name: M, environment: var14
+                var1 = function() {
                     _fun60277: for (var _fun60277_ip = 0;;) switch (_fun60277_ip) {
                         case 0:
                             var0 = {};
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var9];
                 var10 = var3.bind(var4)(var1);
                 var2 = var10.useAnimatedStyle;
-                var1 = function() { // Original name: v, environment: var14
+                var1 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var19.bind(var4)(var12);
                 var12 = {};
                 var12.guild = var17;
-                var17 = function(arg0) { // Original name: onSuccess, environment: var14
+                var17 = function arg0() {
                     _fun60287: for (var _fun60287_ip = 0;;) switch (_fun60287_ip) {
                         case 0:
                             var4 = _closure1_slot6;
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.accessibilityLabel = var15;
                 var15 = var5.closeIconContainer;
                 var12.style = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     _fun60288: for (var _fun60288_ip = 0;;) switch (_fun60288_ip) {
                         case 0:
                             var2 = _closure2_slot1;

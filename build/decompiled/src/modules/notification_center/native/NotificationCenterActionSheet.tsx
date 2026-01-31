@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notification_center/native/NotificationCenterActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         _fun103081: for (var _fun103081_ip = 0;;) switch (_fun103081_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var6.bind(var3)(var11);
                 var13 = var11.ActionSheetSwitchRow;
                 var11 = {};
-                var21 = function() { // Original name: onValueChange, environment: var20
+                var21 = function() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var0 = _closure2_slot0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var6.bind(var3)(var13);
                 var15 = var13.ActionSheetSwitchRow;
                 var13 = {};
-                var20 = function() { // Original name: onValueChange, environment: var20
+                var20 = function() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var0 = _closure2_slot1;

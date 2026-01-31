@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var1 = function(arg0) { // Original name: getDefaultOrientationLockState, environment: var3
+    var1 = function arg0() {
         _fun64606: for (var _fun64606_ip = 0;;) switch (_fun64606_ip) {
             case 0:
                 var2 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/activities/native/getDefaultOrientationLockState.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: setOrientationLockState, environment: var3
+    var3 = function arg0, arg1() {
         _fun64607: for (var _fun64607_ip = 0;;) switch (_fun64607_ip) {
             case 0:
                 var4 = arg0;

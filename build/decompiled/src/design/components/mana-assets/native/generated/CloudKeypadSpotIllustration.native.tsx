@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/mana-assets/native/generated/CloudKeypadSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CloudKeypadSpotIllustration, environment: var1
+    var1 = function arg0() {
         _fun52308: for (var _fun52308_ip = 0;;) switch (_fun52308_ip) {
             case 0:
                 var0 = arg0;

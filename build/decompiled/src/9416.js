@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var1;
     var _closure1_slot0 = var0;
     var1 = function() { // Environment: var3
-        var0 = function(arg0) { // Original name: round, environment: var0
+        var0 = function arg0() {
             var0 = global;
             var2 = var0.Math;
             var1 = var2.round;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0 = undefined;
     var1 = var1.bind(var0)();
-    var3 = function() { // Original name: log, environment: var3
+    var3 = function() {
         var0 = undefined;
         var1 = undefined;
         var2 = global;

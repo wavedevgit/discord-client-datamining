@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var7)();
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: DevToolsGuildPowerupsModal, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 3;
@@ -47,11 +47,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot4;
         var1 = var4.Navigator;
         var0 = {};
-        var5 = function(arg0) { // Original name: screenOptions, environment: var7
+        var5 = function arg0() {
             var0 = arg0;
             var6 = var0.navigation;
             var0 = {};
-            var1 = function(arg0) { // Original name: headerTitle, environment: var1
+            var1 = function arg0() {
                 var2 = arg0;
                 var5 = var2.children;
                 var0 = null;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var9 = 'DevToolsGuildPowerups';
         var4.name = var9;
-        var7 = function() { // Original name: options, environment: var7
+        var7 = function() {
             var0 = {};
             var1 = 'Guild Powerups';
             var0.title = var1;

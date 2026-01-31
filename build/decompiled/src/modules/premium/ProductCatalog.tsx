@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var35 = dependencyMap;
     var _closure1_slot0 = var34;
     var _closure1_slot1 = var35;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun96624: for (var _fun96624_ip = 0;;) switch (_fun96624_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var35[var5];
     var6 = var40.bind(var0)(var4);
     var4 = function(arg0) { // Environment: var1
-        var2 = function(arg0, arg1) { // Original name: ProductCatalogFeature, environment: var0
+        var2 = function arg0, arg1() {
             _fun96628: for (var _fun96628_ip = 0;;) switch (_fun96628_ip) {
                 case 0:
                     var4 = this;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.UPLOAD_LARGE_FILES = var5;
     var2.WARP_PRIVATE_BROWSING_PERK = var4;
     var2.PRODUCT_CATALOG = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: canUserUse, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun96630: for (var _fun96630_ip = 0;;) switch (_fun96630_ip) {
             case 0:
                 var5 = arg0;

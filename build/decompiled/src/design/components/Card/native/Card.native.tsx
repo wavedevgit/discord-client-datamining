@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getCardBackgroundToken, environment: var6
+    var0 = function arg0() {
         _fun44416: for (var _fun44416_ip = 0;;) switch (_fun44416_ip) {
             case 0:
                 var1 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var1 = function(arg0) { // Original name: Card, environment: var6
+    var1 = function arg0() {
         _fun44417: for (var _fun44417_ip = 0;;) switch (_fun44417_ip) {
             case 0:
                 var4 = arg0;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: PressableCard, environment: var6
+    var0 = function arg0() {
         _fun44418: for (var _fun44418_ip = 0;;) switch (_fun44418_ip) {
             case 0:
                 var3 = arg0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun44418
                 }
             case 43:
-                var0 = function(arg0) { // Original name: PressableCardiOS, environment: var1
+                var0 = function arg0() {
                     var6 = arg0;
                     var5 = var6.children;
                     var7 = var6.style;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var13[var16];
                     var4 = var12.bind(var3)(var2);
                     var2 = var4.useAnimatedStyle;
-                    var1 = function() { // Original name: N, environment: var1
+                    var1 = function() {
                         var0 = {};
                         var6 = _closure1_slot0;
                         var7 = _closure1_slot2;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun44418_ip = 65;
                 continue _fun44418;
             case 55:
-                var1 = function(arg0) { // Original name: PressableCardAndroid, environment: var1
+                var1 = function arg0() {
                     var3 = arg0;
                     var5 = var3.children;
                     var8 = var3.start;

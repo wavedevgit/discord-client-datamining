@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var3.payload = var4;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: extractFeFlood, environment: var1
+    var3 = function arg0() {
         _fun48486: for (var _fun48486_ip = 0;;) switch (_fun48486_ip) {
             case 0:
                 var1 = arg0;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.default = var3;
-    var3 = function(arg0) { // Original name: extractFilter, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.x;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.extractFilter = var3;
-    var3 = function(arg0) { // Original name: extractIn, environment: var1
+    var3 = function arg0() {
         _fun48488: for (var _fun48488_ip = 0;;) switch (_fun48488_ip) {
             case 0:
                 var2 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractIn = var3;
-    var3 = function(arg0) { // Original name: extractFeBlend, environment: var1
+    var3 = function arg0() {
         _fun48489: for (var _fun48489_ip = 0;;) switch (_fun48489_ip) {
             case 0:
                 var1 = arg0;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractFeBlend = var3;
-    var3 = function(arg0) { // Original name: extractFeColorMatrix, environment: var1
+    var3 = function arg0() {
         _fun48490: for (var _fun48490_ip = 0;;) switch (_fun48490_ip) {
             case 0:
                 var1 = arg0;
@@ -264,7 +264,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractFeColorMatrix = var3;
-    var3 = function(arg0) { // Original name: extractFeComposite, environment: var1
+    var3 = function arg0() {
         _fun48493: for (var _fun48493_ip = 0;;) switch (_fun48493_ip) {
             case 0:
                 var2 = arg0;
@@ -335,7 +335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractFeComposite = var3;
-    var3 = function(arg0) { // Original name: extractFeGaussianBlur, environment: var1
+    var3 = function arg0() {
         _fun48495: for (var _fun48495_ip = 0;;) switch (_fun48495_ip) {
             case 0:
                 var1 = arg0;
@@ -496,7 +496,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.extractFeGaussianBlur = var3;
-    var1 = function(arg0, arg1) { // Original name: extractFeMerge, environment: var1
+    var1 = function arg0, arg1() {
         _fun48496: for (var _fun48496_ip = 0;;) switch (_fun48496_ip) {
             case 0:
                 var2 = arg0;

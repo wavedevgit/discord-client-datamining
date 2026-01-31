@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.description;
                 var0.description = var6;
                 var0.checked = var5;
-                var4 = function(arg0) { // Original name: onToggle, environment: var4
+                var4 = function arg0() {
                     var2 = _closure2_slot2;
                     var1 = {};
                     var0 = _closure2_slot0;

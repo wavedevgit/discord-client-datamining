@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0, arg1) { // Original name: showErrorCSS, environment: var0
+    var2 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Error;
         var0 = var0.HermesInternal;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.showErrorCSS = var2;
-    var2 = function() { // Original name: SvgCss, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'SvgCss';
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.SvgCss = var2;
-    var2 = function() { // Original name: SvgCssUri, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'SvgCssUri';
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.SvgCssUri = var2;
-    var2 = function() { // Original name: SvgWithCss, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'SvgWithCss';
@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.SvgWithCss = var2;
-    var2 = function() { // Original name: SvgWithCssUri, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'SvgWithCssUri';
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.SvgWithCssUri = var2;
-    var2 = function() { // Original name: inlineStyles, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'inlineStyles';
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.inlineStyles = var2;
-    var2 = function() { // Original name: LocalSvg, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'LocalSvg';
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.LocalSvg = var2;
-    var2 = function() { // Original name: WithLocalSvg, environment: var0
+    var2 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'WithLocalSvg';
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.WithLocalSvg = var2;
-    var0 = function() { // Original name: loadLocalRawResource, environment: var0
+    var0 = function() {
         var3 = _closure1_slot0;
         var0 = undefined;
         var2 = 'loadLocalRawResource';

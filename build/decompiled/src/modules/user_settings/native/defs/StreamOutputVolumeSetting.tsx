@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: getActiveApplicationStream, environment: var7
+    var0 = function() {
         _fun84354: for (var _fun84354_ip = 0;;) switch (_fun84354_ip) {
             case 0:
                 var1 = arguments[0];
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createVolumeSlider;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.parent = var8;
     var8 = 200;
     var1.maximum = var8;
-    var8 = function() { // Original name: useStreamVolumeSettingValue, environment: var7
+    var8 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 4;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onStreamValueSettingValueChange, environment: var7
+    var8 = function arg0() {
         var2 = _closure1_slot6;
         var0 = undefined;
         var2 = var2.bind(var0)();
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onValueChange = var8;
-    var8 = function() { // Original name: useHasStreamVolumeSetting, environment: var7
+    var8 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 4;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.usePredicate = var8;
-    var7 = function() { // Original name: additionalSearchTerms, environment: var7
+    var7 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;
         var1 = 9;

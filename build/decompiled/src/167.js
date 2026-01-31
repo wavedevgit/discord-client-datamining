@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun2479: for (var _fun2479_ip = 0;;) switch (_fun2479_ip) {
             case 0:
                 var3 = arg0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun2480: for (var _fun2480_ip = 0;;) switch (_fun2480_ip) {
             case 0:
             case 2: // try_start_0
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var8 = var3.PerformanceEntry;
     var3 = function(arg0) { // Environment: var1
-        var2 = function() { // Original name: TaskAttributionTiming, environment: var0
+        var2 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.PerformanceEntry;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: PerformanceLongTaskTiming, environment: var5
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'attribution';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -186,13 +186,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'toJSON';
         var4.key = var6;
-        var5 = function() { // Original name: toJSON, environment: var5
+        var5 = function() {
             var0 = this;
             var1 = global;
             var4 = var1.Object;
             var3 = var4.assign;
             var11 = _closure2_slot0;
-            var6 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+            var6 = function arg0, arg1, arg2, arg3() {
                 _fun2489: for (var _fun2489_ip = 0;;) switch (_fun2489_ip) {
                     case 0:
                         var4 = arg0;

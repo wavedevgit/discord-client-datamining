@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = null;
     var _closure1_slot1 = var1;
     var1 = {};
-    var4 = function() { // Original name: getConstants, environment: var3
+    var4 = function() {
         _fun4539: for (var _fun4539_ip = 0;;) switch (_fun4539_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getConstants = var4;
-    var4 = function(arg0) { // Original name: getHeight, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.getHeight;
         var0 = arg0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getHeight = var4;
-    var4 = function(arg0) { // Original name: setNetworkActivityIndicatorVisible, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setNetworkActivityIndicatorVisible;
         var0 = arg0;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setNetworkActivityIndicatorVisible = var4;
-    var4 = function(arg0) { // Original name: addListener, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.addListener;
         var0 = arg0;
@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.addListener = var4;
-    var4 = function(arg0) { // Original name: removeListeners, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.removeListeners;
         var0 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.removeListeners = var4;
-    var4 = function(arg0, arg1) { // Original name: setStyle, environment: var3
+    var4 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = var3.setStyle;
         var1 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setStyle = var4;
-    var3 = function(arg0, arg1) { // Original name: setHidden, environment: var3
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot0;
         var2 = var3.setHidden;
         var1 = arg0;

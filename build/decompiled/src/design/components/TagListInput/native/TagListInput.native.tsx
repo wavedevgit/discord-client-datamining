@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot9 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: TagListInput, environment: var1
+    var1 = function arg0() {
         _fun65635: for (var _fun65635_ip = 0;;) switch (_fun65635_ip) {
             case 0:
                 var1 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.minHeight;
                 var1 = var1 * var2;
                 var18 = var16.bind(var18)(var13, var1);
-                var1 = function(arg0, arg1) { // Original name: useTagListInputState, environment: var20
+                var1 = function arg0, arg1() {
                     var1 = arg1;
                     var _closure3_slot0 = var1;
                     var7 = _closure1_slot4;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = arg0;
                     var5 = function() { // Environment: var0
                         var0 = {};
-                        var2 = function() { // Original name: blur, environment: var1
+                        var2 = function() {
                             _fun65639: for (var _fun65639_ip = 0;;) switch (_fun65639_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.blur = var2;
-                        var2 = function() { // Original name: focus, environment: var1
+                        var2 = function() {
                             _fun65640: for (var _fun65640_ip = 0;;) switch (_fun65640_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.focus = var2;
-                        var2 = function(arg0) { // Original name: setText, environment: var1
+                        var2 = function arg0() {
                             var3 = _closure3_slot5;
                             var2 = undefined;
                             var1 = arg0;
@@ -385,13 +385,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var0.setText = var2;
-                        var2 = function() { // Original name: getText, environment: var1
+                        var2 = function() {
                             var0 = _closure3_slot2;
                             var0 = var0.current;
                             return var0;
                         };
                         var0.getText = var2;
-                        var2 = function() { // Original name: isFocused, environment: var1
+                        var2 = function() {
                             _fun65643: for (var _fun65643_ip = 0;;) switch (_fun65643_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.isFocused = var2;
-                        var2 = function(arg0) { // Original name: measure, environment: var1
+                        var2 = function arg0() {
                             _fun65644: for (var _fun65644_ip = 0;;) switch (_fun65644_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.measure = var2;
-                        var2 = function(arg0) { // Original name: measureInWindow, environment: var1
+                        var2 = function arg0() {
                             _fun65645: for (var _fun65645_ip = 0;;) switch (_fun65645_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var0.measureInWindow = var2;
-                        var1 = function(arg0, arg1, arg2) { // Original name: measureLayout, environment: var1
+                        var1 = function arg0, arg1, arg2() {
                             _fun65646: for (var _fun65646_ip = 0;;) switch (_fun65646_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = {};
                         var3 = _closure3_slot3;
                         var1.hasValue = var3;
-                        var3 = function() { // Original name: clear, environment: var2
+                        var3 = function() {
                             var3 = _closure3_slot5;
                             var2 = undefined;
                             var1 = '';
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var1.clear = var3;
-                        var2 = function(arg0) { // Original name: setTextValue, environment: var2
+                        var2 = function arg0() {
                             var3 = _closure3_slot5;
                             var2 = undefined;
                             var1 = arg0;
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot9;
                     var7 = var8 === var7;
                     var0.selected = var7;
-                    var6 = function(arg0) { // Original name: onPress, environment: var6
+                    var6 = function arg0() {
                         _fun65655: for (var _fun65655_ip = 0;;) switch (_fun65655_ip) {
                             case 0:
                                 var1 = 'select';
@@ -1056,7 +1056,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var34[3] = var35;
                 var17.style = var34;
                 var17.onChangeText = var33;
-                var33 = function(arg0) { // Original name: onKeyPress, environment: var20
+                var33 = function arg0() {
                     _fun65656: for (var _fun65656_ip = 0;;) switch (_fun65656_ip) {
                         case 0:
                             var4 = _closure2_slot11;
@@ -1239,7 +1239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.onKeyPress = var33;
                 var17.onFocus = var32;
                 var17.onBlur = var31;
-                var31 = function() { // Original name: onPressIn, environment: var20
+                var31 = function() {
                     var3 = _closure2_slot11;
                     var0 = undefined;
                     var2 = false;
@@ -1279,7 +1279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.caretHidden = var23;
                 var17.onSubmitEditing = var22;
                 var17.maxFontSizeMultiplier = var21;
-                var20 = function(arg0) { // Original name: onSelectionChange, environment: var20
+                var20 = function arg0() {
                     var1 = _closure2_slot7;
                     var0 = arg0;
                     var0 = var0.nativeEvent;

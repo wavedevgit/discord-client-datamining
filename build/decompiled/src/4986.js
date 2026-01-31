@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var5
+    var0 = function arg0, arg1, arg2() {
         _fun45040: for (var _fun45040_ip = 0;;) switch (_fun45040_ip) {
             case 0:
                 var3 = arg0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun45041: for (var _fun45041_ip = 0;;) switch (_fun45041_ip) {
             case 0:
             case 2: // try_start_0
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot17 = var6;
     var7 = var10.Component;
     var6 = function(arg0) { // Environment: var5
-        var3 = function(arg0) { // Original name: InnerBaseButton, environment: var0
+        var3 = function arg0() {
             var5 = this;
             var2 = _closure1_slot6;
             var4 = _closure2_slot0;
@@ -512,7 +512,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             _fun45050: for (var _fun45050_ip = 0;;) switch (_fun45050_ip) {
                 case 0:
                     var8 = this;
@@ -648,7 +648,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot22 = var6;
     var9 = var10.Component;
     var6 = function(arg0) { // Environment: var5
-        var3 = function(arg0) { // Original name: InnerRectButton, environment: var0
+        var3 = function arg0() {
             var6 = this;
             var0 = _closure1_slot6;
             var5 = _closure2_slot0;
@@ -707,7 +707,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             _fun45056: for (var _fun45056_ip = 0;;) switch (_fun45056_ip) {
                 case 0:
                     var14 = this;
@@ -810,7 +810,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var9.bind(var10)(var6);
     var11 = var10.Component;
     var9 = function(arg0) { // Environment: var5
-        var3 = function(arg0) { // Original name: InnerBorderlessButton, environment: var0
+        var3 = function arg0() {
             var6 = this;
             var0 = _closure1_slot6;
             var5 = _closure2_slot0;
@@ -869,7 +869,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             var8 = this;
             var5 = var8.props;
             var0 = var5.children;

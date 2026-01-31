@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: eulerToQuaternion, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var2 = arg0;
             var1 = arg1;
             var8 = arg2;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: adjustRotationToInterfaceOrientation, environment: var0
+        var0 = function arg0() {
             _fun34790: for (var _fun34790_ip = 0;;) switch (_fun34790_ip) {
                 case 0:
                     var0 = arg0;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot9 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: adjustVectorToInterfaceOrientation, environment: var0
+        var0 = function arg0() {
             _fun34792: for (var _fun34792_ip = 0;;) switch (_fun34792_ip) {
                 case 0:
                     var0 = arg0;
@@ -311,7 +311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useAnimatedSensorTs4(data){const{adjustToInterfaceOrientation,sensorType,SensorType,adjustRotationToInterfaceOrientation,adjustVectorToInterfaceOrientation,sensorData,callMicrotasks}=this.__closure;if(adjustToInterfaceOrientation){if(sensorType===SensorType.ROTATION){data=adjustRotationToInterfaceOrientation(data);}else{data=adjustVectorToInterfaceOrientation(data);}}sensorData.value=data;callMicrotasks();}';
     var3.code = var4;
     var _closure1_slot11 = var3;
-    var1 = function(arg0, arg1) { // Original name: useAnimatedSensor, environment: var1
+    var1 = function arg0, arg1() {
         _fun34793: for (var _fun34793_ip = 0;;) switch (_fun34793_ip) {
             case 0:
                 var6 = arg0;
@@ -444,7 +444,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var8.initializeSensor;
                 var7 = var7.bind(var8)(var6, var5);
                 var0.sensor = var7;
-                var7 = function() { // Original name: unregister, environment: var1
+                var7 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -474,7 +474,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = _closure2_slot2;
                             var3 = var6.bind(var9)(var7, var3);
                             var4.sensor = var3;
-                            var3 = function() { // Original name: unregister, environment: var0
+                            var3 = function() {
                                 var0 = undefined;
                                 return var0;
                             };
@@ -497,7 +497,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var12.bind(var11)(var2);
                             var5 = var6.registerSensor;
                             var4 = _closure2_slot2;
-                            var2 = function(arg0) { // Original name: pnpm_useAnimatedSensorTs4, environment: var0
+                            var2 = function arg0() {
                                 _fun34798: for (var _fun34798_ip = 0;;) switch (_fun34798_ip) {
                                     case 0:
                                         var5 = arg0;

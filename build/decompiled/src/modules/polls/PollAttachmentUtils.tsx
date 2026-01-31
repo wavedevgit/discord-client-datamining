@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _downloadPollGif, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun108393
                         }
                     case 55:
-                        var3 = function(arg0) { // Original name: convertBlobToBase64, environment: var3
+                        var3 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/PollAttachmentUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getFileNameFromGifUrl, environment: var1
+    var3 = function arg0, arg1() {
         _fun108397: for (var _fun108397_ip = 0;;) switch (_fun108397_ip) {
             case 0:
                 var0 = global;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFileNameFromGifUrl = var3;
-    var3 = function(arg0) { // Original name: getFilePathForGif, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot1;
         var0 = '/';
         var1 = var1 + var0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getFilePathForGif = var3;
-    var1 = function() { // Original name: downloadPollGif, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot2;
         var2 = var3.apply;

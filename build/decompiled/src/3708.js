@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1) { // Original name: getShadowNodeWrapperFromRef, environment: var0
+    var0 = function arg0, arg1() {
         _fun33192: for (var _fun33192_ip = 0;;) switch (_fun33192_ip) {
             case 0:
                 var5 = arg0;

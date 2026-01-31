@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun12391: for (var _fun12391_ip = 0;;) switch (_fun12391_ip) {
         case 0:
             var1 = exports;
-            var0 = function(arg0) { // Original name: z, environment: var2
+            var0 = function arg0() {
                 _fun12392: for (var _fun12392_ip = 0;;) switch (_fun12392_ip) {
                     case 0:
                         var0 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot18 = var0;
-            var3 = function(arg0) { // Original name: A, environment: var2
+            var3 = function arg0() {
                 var3 = _closure1_slot18;
                 var2 = undefined;
                 var1 = arg0;

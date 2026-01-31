@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var2](var9);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot2 = var2;
-    var0 = function(arg0) { // Original name: enableSyncToNative, environment: var0
+    var0 = function arg0() {
         _fun12867: for (var _fun12867_ip = 0;;) switch (_fun12867_ip) {
             case 0:
                 var4 = arg0;

@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: GiftPurchaseSKUView, environment: var1
+    var3 = function arg0() {
         _fun86494: for (var _fun86494_ip = 0;;) switch (_fun86494_ip) {
             case 0:
                 var0 = arg0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var1;
                 var8[2] = var7;
                 var7 = function() { // Environment: var2
-                    var1 = function() { // Original name: _loadGoogleSkus, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var1;
-                    var1 = function() { // Original name: loadGoogleSkus, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.bind(var3)(var8);
                 var8 = {};
                 var8.product = var17;
-                var17 = function() { // Original name: onPurchaseComplete, environment: var2
+                var17 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 18;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var8.onPurchaseComplete = var17;
-                var17 = function() { // Original name: onPurchaseError, environment: var2
+                var17 = function() {
                     var2 = _closure1_slot13;
                     var1 = var2.error;
                     var0 = 'Purchase error occurred';
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var8.onPurchaseError = var17;
-                var17 = function() { // Original name: onPurchasePending, environment: var2
+                var17 = function() {
                     var2 = _closure1_slot13;
                     var1 = var2.info;
                     var0 = 'Purchase is pending';
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var1 = var3.bind(var2)(var1);
                     var _closure3_slot0 = var1;
-                    var0 = function() { // Original name: submitGiftPurchase, environment: var0
+                    var0 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: SimpleRequestOTPActionSheet, environment: var1
+    var3 = function arg0() {
         _fun86512: for (var _fun86512_ip = 0;;) switch (_fun86512_ip) {
             case 0:
                 var0 = arg0;
@@ -949,12 +949,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.NativeGiftContextProvider;
                 var1 = {};
                 var1.basePurchaseAnalytics = var7;
-                var7 = function() { // Original name: onClose, environment: var6
+                var7 = function() {
                     var0 = undefined;
                     return var0;
                 };
                 var1.onClose = var7;
-                var6 = function() { // Original name: setCurrentAnalyticsStep, environment: var6
+                var6 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -988,7 +988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/billing/native/otp/SimpleRequestOTPActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot12;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

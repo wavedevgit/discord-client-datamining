@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = metroImportDefault;
     var _closure1_slot0 = var1;
     var _closure1_slot1 = var3;
-    var1 = function(arg0) { // Original name: Video, environment: var0
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 0;

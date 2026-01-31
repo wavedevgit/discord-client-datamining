@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: InviteResolving, environment: var1
+    var0 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: AcceptInviteCardComponent, environment: var1
+    var0 = function arg0() {
         _fun80211: for (var _fun80211_ip = 0;;) switch (_fun80211_ip) {
             case 0:
                 var5 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'ERROR';
     var3[var7] = var6;
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: getInviteState, environment: var1
+    var3 = function arg0() {
         _fun80213: for (var _fun80213_ip = 0;;) switch (_fun80213_ip) {
             case 0:
                 var0 = arg0;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/modals/AcceptInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AcceptInvite, environment: var1
+    var1 = function arg0() {
         _fun80214: for (var _fun80214_ip = 0;;) switch (_fun80214_ip) {
             case 0:
                 var5 = arg0;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var20.t;
                 var21 = var20.ri1ubC;
                 var20 = {};
-                var24 = function(arg0, arg1) { // Original name: usernameHook, environment: var24
+                var24 = function arg0, arg1() {
                     _fun80215: for (var _fun80215_ip = 0;;) switch (_fun80215_ip) {
                         case 0:
                             var4 = _closure1_slot10;

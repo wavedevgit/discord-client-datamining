@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var3 = function(arg0) { // Original name: getMetricSummaryJsonForSpan, environment: var1
+    var3 = function arg0() {
         _fun99086: for (var _fun99086_ip = 0;;) switch (_fun99086_ip) {
             case 0:
                 var7 = undefined;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getMetricSummaryJsonForSpan = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: updateMetricSummaryOnSpan, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         _fun99087: for (var _fun99087_ip = 0;;) switch (_fun99087_ip) {
             case 0:
                 var2 = arg0;

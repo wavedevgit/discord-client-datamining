@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _handleJoinEmbeddedActivityInternal, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/handleJoinEmbeddedActivity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: handleJoinEmbeddedActivity, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var5 = _closure1_slot0;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var4)();
         var0 = function() { // Environment: var0
             var2 = _closure2_slot0;
-            var1 = function() { // Original name: handleJoinEmbeddedActivityInternal, environment: var0
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot10;
                 var2 = var3.apply;

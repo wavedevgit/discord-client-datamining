@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/native/BotPermissions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BotPermissions, environment: var1
+    var1 = function arg0() {
         _fun48140: for (var _fun48140_ip = 0;;) switch (_fun48140_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.Checkbox;
                     var1 = {};
                     var1.checked = var7;
-                    var6 = function(arg0) { // Original name: onToggle, environment: var6
+                    var6 = function arg0() {
                         var3 = _closure2_slot2;
                         var2 = _closure3_slot0;
                         var1 = undefined;

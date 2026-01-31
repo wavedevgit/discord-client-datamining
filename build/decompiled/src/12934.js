@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1) { // Original name: _shouldDropEvent, environment: var1
+    var3 = function arg0, arg1() {
         _fun99598: for (var _fun99598_ip = 0;;) switch (_fun99598_ip) {
             case 0:
                 var7 = arg0;
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var0 = function(arg0, arg1) { // Original name: _isSameStacktrace, environment: var1
+    var0 = function arg0, arg1() {
         _fun99599: for (var _fun99599_ip = 0;;) switch (_fun99599_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: _isSameFingerprint, environment: var1
+    var0 = function arg0, arg1() {
         _fun99600: for (var _fun99600_ip = 0;;) switch (_fun99600_ip) {
             case 0:
                 var1 = undefined;
@@ -328,7 +328,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: _getExceptionFromEvent, environment: var1
+    var0 = function arg0() {
         _fun99601: for (var _fun99601_ip = 0;;) switch (_fun99601_ip) {
             case 0:
                 var1 = arg0;
@@ -368,11 +368,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var5 = var5.bind(var0)(var4);
     var4 = var5.defineIntegration;
-    var1 = function() { // Original name: _dedupeIntegration, environment: var1
+    var1 = function() {
         var0 = {};
         var1 = 'Dedupe';
         var0.name = var1;
-        var1 = function(arg0) { // Original name: processEvent, environment: var1
+        var1 = function arg0() {
             _fun99603: for (var _fun99603_ip = 0;;) switch (_fun99603_ip) {
                 case 0:
                     var1 = arg0;

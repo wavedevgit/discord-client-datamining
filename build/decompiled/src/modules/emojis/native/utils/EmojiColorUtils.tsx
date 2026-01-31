@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _getFromCacheOrFallback2, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var12[var7](var11, var10);
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot2 = var3;
-    var3 = function(arg0) { // Original name: _getEmojiCacheKey, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.name;
         var3 = var0.id;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.ImageManager;
                         var2 = var2.getDominantColors;
                         var3.fallbackFunc = var2;
-                        var2 = function() { // Original name: _getFromCacheOrFallback, environment: var2
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot4;
                             var2 = var3.apply;

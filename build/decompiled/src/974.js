@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function() { // Original name: createLangChainCallbackHandler, environment: var1
+    var1 = function() {
         _fun10031: for (var _fun10031_ip = 0;;) switch (_fun10031_ip) {
             case 0:
                 var3 = undefined;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = new var7[var0](var6);
                 var0 = var0 instanceof Object ? var0 : var2;
                 var _closure2_slot2 = var0;
-                var0 = function(arg0) { // Original name: exitSpan, environment: var1
+                var0 = function arg0() {
                     _fun10032: for (var _fun10032_ip = 0;;) switch (_fun10032_ip) {
                         case 0:
                             var2 = arg0;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.raiseError = var2;
                 var2 = true;
                 var0.awaitHandlers = var2;
-                var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: handleLLMStart, environment: var1
+                var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
                     var0 = arg2;
                     var _closure3_slot0 = var0;
                     var6 = _closure1_slot0;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.handleLLMStart = var2;
-                var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: handleChatModelStart, environment: var1
+                var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
                     var0 = arg2;
                     var _closure3_slot0 = var0;
                     var6 = _closure1_slot0;
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.handleChatModelStart = var2;
-                var2 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: handleLLMEnd, environment: var1
+                var2 = function arg0, arg1, arg2, arg3, arg4() {
                     _fun10037: for (var _fun10037_ip = 0;;) switch (_fun10037_ip) {
                         case 0:
                             var2 = arg1;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleLLMEnd = var2;
-                var2 = function(arg0, arg1) { // Original name: handleLLMError, environment: var1
+                var2 = function arg0, arg1() {
                     _fun10038: for (var _fun10038_ip = 0;;) switch (_fun10038_ip) {
                         case 0:
                             var2 = arg1;
@@ -381,7 +381,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleLLMError = var2;
-                var2 = function(arg0, arg1, arg2, arg3) { // Original name: handleChainStart, environment: var1
+                var2 = function arg0, arg1, arg2, arg3() {
                     _fun10039: for (var _fun10039_ip = 0;;) switch (_fun10039_ip) {
                         case 0:
                             var0 = arg2;
@@ -461,7 +461,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleChainStart = var2;
-                var2 = function(arg0, arg1) { // Original name: handleChainEnd, environment: var1
+                var2 = function arg0, arg1() {
                     _fun10041: for (var _fun10041_ip = 0;;) switch (_fun10041_ip) {
                         case 0:
                             var2 = arg1;
@@ -508,7 +508,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleChainEnd = var2;
-                var2 = function(arg0, arg1) { // Original name: handleChainError, environment: var1
+                var2 = function arg0, arg1() {
                     _fun10042: for (var _fun10042_ip = 0;;) switch (_fun10042_ip) {
                         case 0:
                             var2 = arg1;
@@ -575,7 +575,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleChainError = var2;
-                var2 = function(arg0, arg1, arg2, arg3) { // Original name: handleToolStart, environment: var1
+                var2 = function arg0, arg1, arg2, arg3() {
                     _fun10043: for (var _fun10043_ip = 0;;) switch (_fun10043_ip) {
                         case 0:
                             var0 = arg2;
@@ -654,7 +654,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleToolStart = var2;
-                var2 = function(arg0, arg1) { // Original name: handleToolEnd, environment: var1
+                var2 = function arg0, arg1() {
                     _fun10045: for (var _fun10045_ip = 0;;) switch (_fun10045_ip) {
                         case 0:
                             var2 = arg1;
@@ -701,7 +701,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleToolEnd = var2;
-                var2 = function(arg0, arg1) { // Original name: handleToolError, environment: var1
+                var2 = function arg0, arg1() {
                     _fun10046: for (var _fun10046_ip = 0;;) switch (_fun10046_ip) {
                         case 0:
                             var2 = arg1;
@@ -768,12 +768,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.handleToolError = var2;
-                var2 = function() { // Original name: copy, environment: var1
+                var2 = function() {
                     var0 = _closure2_slot4;
                     return var0;
                 };
                 var0.copy = var2;
-                var2 = function() { // Original name: toJSON, environment: var1
+                var2 = function() {
                     var0 = {
                         'lc': 1,
                         'type': 'not_implemented'
@@ -784,7 +784,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.toJSON = var2;
-                var2 = function() { // Original name: toJSONNotImplemented, environment: var1
+                var2 = function() {
                     var0 = {
                         'lc': 1,
                         'type': 'not_implemented'

@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestDock/QuestDockContextMenuActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestDockContextMenuActionSheet, environment: var1
+    var1 = function arg0() {
         _fun47244: for (var _fun47244_ip = 0;;) switch (_fun47244_ip) {
             case 0:
                 var0 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.text = var17;
                 var12 = var11.bind(var3)(var16, var12);
                 var7.label = var12;
-                var12 = function() { // Original name: onPress, environment: var13
+                var12 = function() {
                     var8 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 12;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.text = var18;
                 var16 = var12.bind(var3)(var17, var16);
                 var9.label = var16;
-                var16 = function() { // Original name: onPress, environment: var13
+                var16 = function() {
                     var8 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 7;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.text = var19;
                 var12 = var16.bind(var3)(var18, var12);
                 var9.label = var12;
-                var12 = function() { // Original name: onPress, environment: var13
+                var12 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 19;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.text = var22;
                 var18 = var16.bind(var3)(var19, var18);
                 var11.label = var18;
-                var18 = function() { // Original name: onPress, environment: var13
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 22;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.text = var21;
                 var17 = var18.bind(var3)(var19, var17);
                 var9.label = var17;
-                var17 = function() { // Original name: onPress, environment: var13
+                var17 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -651,7 +651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.text = var22;
                 var19 = var18.bind(var3)(var21, var19);
                 var11.label = var19;
-                var19 = function() { // Original name: onPress, environment: var13
+                var19 = function() {
                     var2 = _closure2_slot2;
                     var0 = global;
                     var1 = var0.Math;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.text = var22;
                 var19 = var18.bind(var3)(var21, var19);
                 var11.label = var19;
-                var19 = function() { // Original name: onPress, environment: var13
+                var19 = function() {
                     var1 = _closure2_slot4;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -755,7 +755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.text = var22;
                 var19 = var18.bind(var3)(var21, var19);
                 var11.label = var19;
-                var19 = function() { // Original name: onPress, environment: var13
+                var19 = function() {
                     var1 = _closure2_slot3;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.text = var21;
                 var18 = var17.bind(var3)(var19, var18);
                 var12.label = var18;
-                var18 = function() { // Original name: onPress, environment: var13
+                var18 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 32;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.text = var16;
                 var14 = var12.bind(var3)(var15, var14);
                 var10.label = var14;
-                var13 = function() { // Original name: onPress, environment: var13
+                var13 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 33;

@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.MediaEngineHookTypes;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function() { // Original name: getActiveErrors, environment: var3
+    var6 = function() {
         _fun117567: for (var _fun117567_ip = 0;;) switch (_fun117567_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getActiveErrors = var6;
-    var3 = function(arg0) { // Original name: makeErrorContextKey, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.streamKey;
         var3 = var0.mediaSessionId;

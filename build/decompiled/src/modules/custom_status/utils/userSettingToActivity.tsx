@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _activityFromSetting, environment: var1
+    var0 = function arg0, arg1() {
         _fun50423: for (var _fun50423_ip = 0;;) switch (_fun50423_ip) {
             case 0:
                 var7 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/custom_status/utils/userSettingToActivity.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getActivityFromCustomStatus, environment: var1
+    var3 = function arg0() {
         _fun50424: for (var _fun50424_ip = 0;;) switch (_fun50424_ip) {
             case 0:
                 var3 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getActivityFromCustomStatus = var3;
-    var1 = function() { // Original name: useCustomStatusActivity, environment: var1
+    var1 = function() {
         _fun50425: for (var _fun50425_ip = 0;;) switch (_fun50425_ip) {
             case 0:
                 var4 = _closure1_slot0;

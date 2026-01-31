@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new var4[var2](var3);
         var2 = var2 instanceof Object ? var2 : var3;
         var0.lockKeys = var2;
-        var2 = function() { // Original name: shouldDisableSafeAreas, environment: var1
+        var2 = function() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.shouldDisableSafeAreas = var2;
-        var1 = function(arg0) { // Original name: requestSafeAreaDisableLock, environment: var1
+        var1 = function arg0() {
             var0 = arg0;
             var2 = var0.key;
             var _closure3_slot0 = var2;

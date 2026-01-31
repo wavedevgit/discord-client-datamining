@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: getCustomThemesName, environment: var3
+    var0 = function() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var1 = 3;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var4 = function(arg0) { // Original name: useCustomBackgroundGradient, environment: var3
+    var4 = function arg0() {
         _fun28004: for (var _fun28004_ip = 0;;) switch (_fun28004_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var0 = function(arg0) { // Original name: getMobileThemesArrayWithMaybeCustomTheme, environment: var3
+    var0 = function arg0() {
         _fun28005: for (var _fun28005_ip = 0;;) switch (_fun28005_ip) {
             case 0:
                 var3 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var1 = function() { // Original name: useSavedCustomTheme, environment: var3
+    var1 = function() {
         _fun28006: for (var _fun28006_ip = 0;;) switch (_fun28006_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/client_themes/native/MobileThemesUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.useCustomBackgroundGradient = var4;
-    var4 = function() { // Original name: getAllMobileThemes, environment: var3
+    var4 = function() {
         _fun28008: for (var _fun28008_ip = 0;;) switch (_fun28008_ip) {
             case 0:
                 var2 = _closure1_slot10;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAllMobileThemes = var4;
-    var3 = function() { // Original name: useAllMobileThemes, environment: var3
+    var3 = function() {
         var2 = _closure1_slot10;
         var3 = _closure1_slot9;
         var0 = _closure1_slot11;

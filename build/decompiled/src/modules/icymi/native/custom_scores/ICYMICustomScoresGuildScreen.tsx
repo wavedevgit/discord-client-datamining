@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun103553: for (var _fun103553_ip = 0;;) switch (_fun103553_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun103555: for (var _fun103555_ip = 0;;) switch (_fun103555_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: ICYMICustomScoreChannelRow, environment: var1
+    var0 = function arg0() {
         _fun103556: for (var _fun103556_ip = 0;;) switch (_fun103556_ip) {
             case 0:
                 var1 = arg0;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: keyExtractor, environment: var1
+    var0 = function arg0, arg1() {
         _fun103561: for (var _fun103561_ip = 0;;) switch (_fun103561_ip) {
             case 0:
                 var2 = arg0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/custom_scores/ICYMICustomScoresGuildScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMICustomScoresGuildScreen, environment: var1
+    var1 = function arg0() {
         _fun103562: for (var _fun103562_ip = 0;;) switch (_fun103562_ip) {
             case 0:
                 var1 = arg0;

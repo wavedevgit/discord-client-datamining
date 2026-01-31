@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0, arg1) { // Original name: DiscordImagePng, environment: var0
+        var4 = function arg0, arg1() {
             var2 = this;
             var3 = _closure1_slot4;
             var1 = _closure2_slot1;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var2 = 'hasTransparency';
         var5.key = var2;
-        var2 = function() { // Original name: value, environment: var0
+        var2 = function() {
             _fun37832: for (var _fun37832_ip = 0;;) switch (_fun37832_ip) {
                 case 0:
                     var0 = this;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isAnimated';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = this;
             var0 = var0.img;
             var0 = var0.tabs;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isPng8';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun37834: for (var _fun37834_ip = 0;;) switch (_fun37834_ip) {
                 case 0:
                     var1 = this;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var1)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: hasSrgbIccProfile, environment: var0
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getBuffer';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = this;
             var0 = var0.originalBuffer;
             return var0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'create';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun37839: for (var _fun37839_ip = 0;;) switch (_fun37839_ip) {
                 case 0:
                     var3 = arg0;

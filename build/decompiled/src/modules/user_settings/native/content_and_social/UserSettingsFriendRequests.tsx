@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/content_and_social/UserSettingsFriendRequests.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsFriendRequests, environment: var1
+    var1 = function() {
         var15 = _closure1_slot0;
         var16 = _closure1_slot2;
         var0 = 4;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.label = var13;
         var13 = var11.all;
         var7.value = var13;
-        var13 = function(arg0) { // Original name: onValueChange, environment: var10
+        var13 = function arg0() {
             _fun108653: for (var _fun108653_ip = 0;;) switch (_fun108653_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9.label = var14;
         var14 = var11.mutualFriends;
         var9.value = var14;
-        var14 = function(arg0) { // Original name: onValueChange, environment: var10
+        var14 = function arg0() {
             _fun108654: for (var _fun108654_ip = 0;;) switch (_fun108654_ip) {
                 case 0:
                     var1 = _closure1_slot0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.label = var12;
         var11 = var11.mutualGuilds;
         var8.value = var11;
-        var10 = function(arg0) { // Original name: onValueChange, environment: var10
+        var10 = function arg0() {
             _fun108655: for (var _fun108655_ip = 0;;) switch (_fun108655_ip) {
                 case 0:
                     var1 = _closure1_slot0;

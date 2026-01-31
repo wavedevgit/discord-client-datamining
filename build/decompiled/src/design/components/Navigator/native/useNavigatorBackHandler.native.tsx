@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Navigator/native/useNavigatorBackHandler.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useNavigatorBackHandler, environment: var1
+    var1 = function() {
         _fun72656: for (var _fun72656_ip = 0;;) switch (_fun72656_ip) {
             case 0:
                 var1 = arguments[0];
@@ -134,14 +134,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = {};
                                 var5 = true;
                                 var3.preventable = var5;
-                                var5 = function() { // Original name: preventDefault, environment: var1
+                                var5 = function() {
                                     var1 = _closure4_slot0;
                                     var0 = var1.preventDefault;
                                     var0 = var0.bind(var1)();
                                     return var0;
                                 };
                                 var3.preventDefault = var5;
-                                var1 = function() { // Original name: goBack, environment: var1
+                                var1 = function() {
                                     var1 = _closure2_slot1;
                                     var0 = var1.goBack;
                                     var0 = var0.bind(var1)();

@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = 'Object.prototype.toString';
             var2 = var4.bind(var0)(var2);
             var _closure1_slot5 = var2;
-            var2 = function(arg0) { // Original name: isRegex, environment: var1
+            var2 = function arg0() {
                 _fun16399: for (var _fun16399_ip = 0;;) switch (_fun16399_ip) {
                     case 0:
                         var3 = arg0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot2 = var3;
             var3 = {};
             var _closure1_slot3 = var3;
-            var5 = function() { // Original name: throwRegexMarker, environment: var1
+            var5 = function() {
                 var0 = _closure1_slot3;
                 throw var0;
             };
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3.toPrimitive;
             var4[var3] = var5;
         case 151:
-            var2 = function(arg0) { // Original name: isRegex, environment: var1
+            var2 = function arg0() {
                 _fun16398: for (var _fun16398_ip = 0;;) switch (_fun16398_ip) {
                     case 0:
                         var0 = arg0;

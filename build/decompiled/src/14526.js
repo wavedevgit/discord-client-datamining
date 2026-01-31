@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113590: for (var _fun113590_ip = 0;;) switch (_fun113590_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.value = var3;
     var3 = '__esModule';
     var3 = var7.bind(var8)(var2, var3, var6);
-    var3 = function() { // Original name: empty, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: PQueue, environment: var5
+        var3 = function arg0() {
             _fun113595: for (var _fun113595_ip = 0;;) switch (_fun113595_ip) {
                 case 0:
                     var3 = this;
@@ -357,7 +357,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '_doesIntervalAllowAnother';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             _fun113596: for (var _fun113596_ip = 0;;) switch (_fun113596_ip) {
                 case 0:
                     var1 = this;
@@ -380,7 +380,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_doesConcurrentAllowAnother';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             var0 = this;
             var1 = var0._pendingCount;
             var0 = var0._concurrency;
@@ -392,7 +392,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_next';
         var4.key = var7;
-        var7 = function() { // Original name: _next, environment: var5
+        var7 = function() {
             var2 = this;
             var0 = var2._pendingCount;
             var0 = var0 - 1;
@@ -410,7 +410,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_resolvePromises';
         var4.key = var7;
-        var7 = function() { // Original name: _resolvePromises, environment: var5
+        var7 = function() {
             _fun113599: for (var _fun113599_ip = 0;;) switch (_fun113599_ip) {
                 case 0:
                     var2 = this;
@@ -442,7 +442,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_onResumeInterval';
         var4.key = var7;
-        var7 = function() { // Original name: _onResumeInterval, environment: var5
+        var7 = function() {
             var1 = this;
             var0 = var1._onInterval;
             var0 = var0.bind(var1)();
@@ -457,7 +457,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_isIntervalPaused';
         var4.key = var7;
-        var7 = function() { // Original name: _isIntervalPaused, environment: var5
+        var7 = function() {
             _fun113601: for (var _fun113601_ip = 0;;) switch (_fun113601_ip) {
                 case 0:
                     var1 = this;
@@ -521,7 +521,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_tryToStartAnother';
         var4.key = var7;
-        var7 = function() { // Original name: _tryToStartAnother, environment: var5
+        var7 = function() {
             _fun113603: for (var _fun113603_ip = 0;;) switch (_fun113603_ip) {
                 case 0:
                     var1 = this;
@@ -609,7 +609,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_initializeIntervalIfNeeded';
         var4.key = var7;
-        var7 = function() { // Original name: _initializeIntervalIfNeeded, environment: var5
+        var7 = function() {
             _fun113604: for (var _fun113604_ip = 0;;) switch (_fun113604_ip) {
                 case 0:
                     var1 = this;
@@ -658,7 +658,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_onInterval';
         var4.key = var7;
-        var7 = function() { // Original name: _onInterval, environment: var5
+        var7 = function() {
             _fun113606: for (var _fun113606_ip = 0;;) switch (_fun113606_ip) {
                 case 0:
                     var1 = this;
@@ -713,7 +713,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = '_processQueue';
         var4.key = var7;
-        var7 = function() { // Original name: _processQueue, environment: var5
+        var7 = function() {
             _fun113607: for (var _fun113607_ip = 0;;) switch (_fun113607_ip) {
                 case 0:
                     var1 = this;
@@ -740,13 +740,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var7 = 'concurrency';
         var4.key = var7;
-        var7 = function() { // Original name: get, environment: var5
+        var7 = function() {
             var0 = this;
             var0 = var0._concurrency;
             return var0;
         };
         var4.get = var7;
-        var7 = function(arg0) { // Original name: set, environment: var5
+        var7 = function arg0() {
             _fun113609: for (var _fun113609_ip = 0;;) switch (_fun113609_ip) {
                 case 0:
                     var0 = arg0;
@@ -987,7 +987,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 };
                                 var1 = var3.bind(var2)(var1);
                                 var _closure6_slot0 = var1;
-                                var0 = function() { // Original name: run, environment: var0
+                                var0 = function() {
                                     var0 = undefined;
                                     var3 = _closure6_slot0;
                                     var2 = var3.apply;
@@ -1025,7 +1025,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot3 = var6;
-        var6 = function(arg0) { // Original name: add, environment: var5
+        var6 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot3;
             var2 = var3.apply;
@@ -1113,7 +1113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot2 = var6;
-        var6 = function(arg0, arg1) { // Original name: addAll, environment: var5
+        var6 = function arg0, arg1() {
             var0 = undefined;
             var3 = _closure2_slot2;
             var2 = var3.apply;
@@ -1128,7 +1128,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'start';
         var4.key = var6;
-        var6 = function() { // Original name: start, environment: var5
+        var6 = function() {
             _fun113626: for (var _fun113626_ip = 0;;) switch (_fun113626_ip) {
                 case 0:
                     var0 = this;
@@ -1151,7 +1151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'pause';
         var4.key = var6;
-        var6 = function() { // Original name: pause, environment: var5
+        var6 = function() {
             var1 = true;
             var0 = this;
             var0._isPaused = var1;
@@ -1163,7 +1163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'clear';
         var4.key = var6;
-        var6 = function() { // Original name: clear, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1._queueClass;
             var2 = var0.prototype;
@@ -1246,7 +1246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot1 = var6;
-        var6 = function() { // Original name: onEmpty, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -1329,7 +1329,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: onIdle, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -1344,7 +1344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'size';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._queue;
             var0 = var0.size;
@@ -1355,7 +1355,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'sizeBy';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: sizeBy, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var2 = var0._queue;
             var1 = var2.filter;
@@ -1369,7 +1369,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'pending';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._pendingCount;
             return var0;
@@ -1379,7 +1379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'isPaused';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._isPaused;
             return var0;
@@ -1389,13 +1389,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'timeout';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._timeout;
             return var0;
         };
         var4.get = var6;
-        var5 = function(arg0) { // Original name: set, environment: var5
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._timeout = var1;

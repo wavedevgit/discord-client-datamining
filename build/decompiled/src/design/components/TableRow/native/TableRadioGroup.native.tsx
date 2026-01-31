@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/TableRow/native/TableRadioGroup.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.TableRadioGroupContext = var3;
-    var1 = function(arg0) { // Original name: TableRadioGroup, environment: var1
+    var1 = function arg0() {
         _fun48073: for (var _fun48073_ip = 0;;) switch (_fun48073_ip) {
             case 0:
                 var0 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[1] = var12;
                 var2 = function() { // Environment: var6
                     var0 = {};
-                    var2 = function(arg0) { // Original name: setValue, environment: var1
+                    var2 = function arg0() {
                         _fun48075: for (var _fun48075_ip = 0;;) switch (_fun48075_ip) {
                             case 0:
                                 var2 = arg0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.setValue = var2;
-                    var1 = function() { // Original name: getValue, environment: var1
+                    var1 = function() {
                         var0 = _closure2_slot1;
                         return var0;
                     };

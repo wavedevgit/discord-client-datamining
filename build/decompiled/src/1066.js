@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0) { // Original name: serializeFormData, environment: var3
+    var1 = function arg0() {
         var0 = global;
         var2 = var0.URLSearchParams;
         var0 = var2.prototype;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'Module';
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
-    var4 = function(arg0) { // Original name: getBodyString, environment: var3
+    var4 = function arg0() {
         _fun10930: for (var _fun10930_ip = 0;;) switch (_fun10930_ip) {
             case 0:
                 var1 = undefined;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getBodyString = var4;
-    var4 = function() { // Original name: getFetchRequestArgBody, environment: var3
+    var4 = function() {
         _fun10931: for (var _fun10931_ip = 0;;) switch (_fun10931_ip) {
             case 0:
                 var2 = undefined;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getFetchRequestArgBody = var4;
-    var3 = function(arg0) { // Original name: parseXhrResponseHeaders, environment: var3
+    var3 = function arg0() {
         _fun10932: for (var _fun10932_ip = 0;;) switch (_fun10932_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = dependencyMap;
             var _closure1_slot0 = var7;
             var _closure1_slot1 = var11;
-            var0 = function(arg0, arg1, arg2) { // Original name: fromHexReverseArray, environment: var4
+            var0 = function arg0, arg1, arg2() {
                 _fun6237: for (var _fun6237_ip = 0;;) switch (_fun6237_ip) {
                     case 0:
                         var7 = arg0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot11 = var0;
-            var0 = function(arg0) { // Original name: toHexReverseArray, environment: var4
+            var0 = function arg0() {
                 _fun6238: for (var _fun6238_ip = 0;;) switch (_fun6238_ip) {
                     case 0:
                         var6 = arg0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.bind(var0)(var6);
             var _closure1_slot3 = var6;
             var6 = function() { // Environment: var4
-                var4 = function(arg0, arg1) { // Original name: HighLow, environment: var5
+                var4 = function arg0, arg1() {
                     var2 = this;
                     var3 = _closure1_slot2;
                     var1 = _closure2_slot0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'and';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var5
+                var1 = function arg0() {
                     var1 = arg0;
                     var1 = var1.parts;
                     var _closure3_slot0 = var1;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'or';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var5
+                var1 = function arg0() {
                     var1 = arg0;
                     var1 = var1.parts;
                     var _closure3_slot0 = var1;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'xor';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var5
+                var1 = function arg0() {
                     var1 = arg0;
                     var1 = var1.parts;
                     var _closure3_slot0 = var1;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'not';
                 var0.key = var1;
-                var1 = function() { // Original name: value, environment: var5
+                var1 = function() {
                     var2 = _closure2_slot0;
                     var0 = this;
                     var3 = var0.parts;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'equals';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var5
+                var1 = function arg0() {
                     var1 = arg0;
                     var1 = var1.parts;
                     var _closure3_slot0 = var1;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'toString';
                 var0.key = var1;
-                var1 = function() { // Original name: value, environment: var5
+                var1 = function() {
                     _fun6251: for (var _fun6251_ip = 0;;) switch (_fun6251_ip) {
                         case 0:
                             var0 = this;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'toJSON';
                 var0.key = var1;
-                var1 = function() { // Original name: value, environment: var5
+                var1 = function() {
                     var1 = this;
                     var0 = var1.toString;
                     var0 = var0.bind(var1)();
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'fromString';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var5
+                var1 = function arg0() {
                     _fun6254: for (var _fun6254_ip = 0;;) switch (_fun6254_ip) {
                         case 0:
                             var3 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var6 = 'fromBit';
                 var0.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun6255: for (var _fun6255_ip = 0;;) switch (_fun6255_ip) {
                         case 0:
                             var8 = arg0;
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var6 = 'asUintN';
                 var0.key = var6;
-                var5 = function(arg0, arg1) { // Original name: value, environment: var5
+                var5 = function arg0, arg1() {
                     _fun6256: for (var _fun6256_ip = 0;;) switch (_fun6256_ip) {
                         case 0:
                             var8 = arg0;
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.filter = var7;
             var2.invert = var6;
             var2.equals = var5;
-            var5 = function(arg0) { // Original name: combine, environment: var4
+            var5 = function arg0() {
                 _fun6276: for (var _fun6276_ip = 0;;) switch (_fun6276_ip) {
                     case 0:
                         var0 = 0;
@@ -1067,7 +1067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.combine = var5;
-            var5 = function(arg0, arg1) { // Original name: has, environment: var4
+            var5 = function arg0, arg1() {
                 var3 = arg1;
                 var2 = _closure1_slot10;
                 var4 = _closure1_slot7;
@@ -1078,7 +1078,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.has = var5;
-            var5 = function(arg0, arg1) { // Original name: hasAny, environment: var4
+            var5 = function arg0, arg1() {
                 var3 = _closure1_slot10;
                 var5 = _closure1_slot7;
                 var2 = undefined;
@@ -1091,7 +1091,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.hasAny = var5;
-            var5 = function(arg0, arg1) { // Original name: add, environment: var4
+            var5 = function arg0, arg1() {
                 _fun6279: for (var _fun6279_ip = 0;;) switch (_fun6279_ip) {
                     case 0:
                         var4 = arg0;
@@ -1111,7 +1111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.add = var5;
-            var4 = function(arg0, arg1) { // Original name: remove, environment: var4
+            var4 = function arg0, arg1() {
                 _fun6280: for (var _fun6280_ip = 0;;) switch (_fun6280_ip) {
                     case 0:
                         var4 = arg0;

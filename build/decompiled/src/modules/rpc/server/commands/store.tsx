@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: getSubscriptionSkusViaListings, environment: var7
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot11;
         var2 = var3.apply;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _getSubscriptionSkusViaListings, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var14 = function() { // Original name: getSkusHandler, environment: var7
+    var14 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var14;
-    var0 = function() { // Original name: _getSkusHandler, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -525,7 +525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var13 = function(arg0) { // Original name: getEntitlementsHandler, environment: var7
+    var13 = function arg0() {
         _fun98155: for (var _fun98155_ip = 0;;) switch (_fun98155_ip) {
             case 0:
                 var0 = arg0;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13[0] = var12;
     var13[1] = var11;
     var6[var14] = var13;
-    var13 = function(arg0) { // Original name: handler, environment: var7
+    var13 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[0] = var12;
     var9[1] = var11;
     var3[var10] = var9;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot4;

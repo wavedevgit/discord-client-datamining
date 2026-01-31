@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var5 = function(arg0) { // Original name: week, environment: var2
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var3.nextWeek = var4;
     var _closure1_slot1 = var3;
-    var2 = function(arg0, arg1) { // Original name: formatRelative, environment: var2
+    var2 = function arg0, arg1() {
         _fun21938: for (var _fun21938_ip = 0;;) switch (_fun21938_ip) {
             case 0:
                 var1 = _closure1_slot1;

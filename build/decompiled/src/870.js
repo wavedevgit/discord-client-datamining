@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: _notifyEventProcessors, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun9197: for (var _fun9197_ip = 0;;) switch (_fun9197_ip) {
             case 0:
                 var8 = arg0;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0, arg1, arg2) { // Original name: notifyEventProcessors, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun9199: for (var _fun9199_ip = 0;;) switch (_fun9199_ip) {
             case 0:
                 var3 = undefined;

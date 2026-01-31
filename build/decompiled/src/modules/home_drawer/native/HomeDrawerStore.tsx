@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var4.bind(var5)(var3);
         var0.gestureState = var3;
         var0.maxX = var2;
-        var2 = function(arg0) { // Original name: setPanelX, environment: var1
+        var2 = function arg0() {
             _fun100698: for (var _fun100698_ip = 0;;) switch (_fun100698_ip) {
                 case 0:
                     var1 = _closure2_slot1;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.setPanelX = var2;
-        var1 = function(arg0, arg1) { // Original name: updateMaxX, environment: var1
+        var1 = function arg0, arg1() {
             var0 = arg1;
             var1 = arg0;
             var2 = var1.width;

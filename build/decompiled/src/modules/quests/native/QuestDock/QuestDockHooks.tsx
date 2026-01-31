@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestDock/QuestDockHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useQuestDockModeAnimatedReaction, environment: var1
+    var3 = function() {
         var4 = _closure1_slot4;
         var3 = var4.useContext;
         var8 = _closure1_slot0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9[var12];
         var4 = var8.bind(var0)(var2);
         var3 = var4.useAnimatedReaction;
-        var2 = function() { // Original name: o, environment: var1
+        var2 = function() {
             var0 = {};
             var3 = _closure2_slot4;
             var2 = var3.get;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.__workletHash = var6;
         var6 = _closure1_slot15;
         var2.__initData = var6;
-        var1 = function(arg0, arg1) { // Original name: t, environment: var1
+        var1 = function arg0, arg1() {
             _fun46678: for (var _fun46678_ip = 0;;) switch (_fun46678_ip) {
                 case 0:
                     var1 = arg0;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestDockModeAnimatedReaction = var3;
-    var3 = function() { // Original name: useQuestDockExternalOffset, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
         var2 = 11;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestDockExternalOffset = var3;
-    var3 = function() { // Original name: useQuestDockDismissalReset, environment: var1
+    var3 = function() {
         var4 = _closure1_slot4;
         var3 = var4.useContext;
         var5 = _closure1_slot0;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            var4 = function() { // Original name: maybeResetSoftDismissal, environment: var0
+            var4 = function() {
                 _fun46684: for (var _fun46684_ip = 0;;) switch (_fun46684_ip) {
                     case 0:
                         var2 = _closure2_slot1;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestDockDismissalReset = var3;
-    var1 = function(arg0) { // Original name: useActionSheetPressHandler, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;

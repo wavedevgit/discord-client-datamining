@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/hooks/useChannelSafetyWarning.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useChannelSafetyWarning, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = arg1;

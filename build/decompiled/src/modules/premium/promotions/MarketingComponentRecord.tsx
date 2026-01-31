@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun57722: for (var _fun57722_ip = 0;;) switch (_fun57722_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: MarketingComponentRecord, environment: var1
+        var4 = function arg0() {
             _fun57726: for (var _fun57726_ip = 0;;) switch (_fun57726_ip) {
                 case 0:
                     var1 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'createFromServer';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var1 = arg0;
             var0 = global;
             var4 = var0.TextDecoder;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4.bind(var9)(var3);
             var3 = {};
             var3.readUnknownField = var8;
-            var7 = function(arg0) { // Original name: readerFactory, environment: var7
+            var7 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 7;

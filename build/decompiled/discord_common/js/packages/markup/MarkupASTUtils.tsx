@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun44232: for (var _fun44232_ip = 0;;) switch (_fun44232_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: collectAst, environment: var4
+    var0 = function arg0() {
         _fun44235: for (var _fun44235_ip = 0;;) switch (_fun44235_ip) {
             case 0:
                 var3 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: collapseArrays, environment: var4
+    var0 = function arg0, arg1() {
         _fun44237: for (var _fun44237_ip = 0;;) switch (_fun44237_ip) {
             case 0:
                 var3 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Error;
     var3 = var3.bind(var0)(var1);
     var1 = function(arg0) { // Environment: var4
-        var4 = function(arg0) { // Original name: MarkupParserNodeTypeError, environment: var1
+        var4 = function arg0() {
             _fun44239: for (var _fun44239_ip = 0;;) switch (_fun44239_ip) {
                 case 0:
                     var4 = this;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getMessage';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var2 = arg0;
             var1 = var2.join;
             var0 = ', ';
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var6)(var3);
     var3 = 200;
     var2.NUM_MAX_AST_NODES = var3;
-    var3 = function(arg0) { // Original name: astToString, environment: var4
+    var3 = function arg0() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.astToString = var3;
-    var3 = function(arg0, arg1) { // Original name: flattenAst, environment: var4
+    var3 = function arg0, arg1() {
         _fun44242: for (var _fun44242_ip = 0;;) switch (_fun44242_ip) {
             case 0:
                 var1 = arg0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var3;
     var2.flattenAst = var3;
-    var3 = function(arg0) { // Original name: constrainAst, environment: var4
+    var3 = function arg0() {
         _fun44244: for (var _fun44244_ip = 0;;) switch (_fun44244_ip) {
             case 0:
                 var0 = arg0;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var3;
     var2.constrainAst = var3;
-    var3 = function(arg0, arg1) { // Original name: getIndexedAST, environment: var4
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var1 = arg1;

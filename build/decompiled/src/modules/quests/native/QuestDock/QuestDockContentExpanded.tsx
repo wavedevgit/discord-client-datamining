@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: QuestDockContentExpanded, environment: var1
+    var1 = function() {
         _fun83860: for (var _fun83860_ip = 0;;) switch (_fun83860_ip) {
             case 0:
                 var5 = _closure1_slot3;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var8[var1];
                 var2 = var13.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: n, environment: var0
+                var0 = function() {
                     _fun83861: for (var _fun83861_ip = 0;;) switch (_fun83861_ip) {
                         case 0:
                             var0 = {};

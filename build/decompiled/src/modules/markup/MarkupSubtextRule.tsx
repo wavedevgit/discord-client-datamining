@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.order = var6;
     var6 = ['-'];
     var1.requiredFirstCharacters = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: match, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun44105: for (var _fun44105_ip = 0;;) switch (_fun44105_ip) {
             case 0:
                 var5 = arg2;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.match = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: parse, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var0 = {};
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;

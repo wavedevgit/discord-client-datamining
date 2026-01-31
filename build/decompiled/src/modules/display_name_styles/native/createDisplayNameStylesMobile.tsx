@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/createDisplayNameStylesMobile.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: createDisplayNameStylesMobile, environment: var1
+    var1 = function arg0, arg1() {
         _fun92521: for (var _fun92521_ip = 0;;) switch (_fun92521_ip) {
             case 0:
                 var7 = arg0;

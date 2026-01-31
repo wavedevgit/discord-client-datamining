@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EmbeddedActivityBackgroundImageWithOverlay, environment: var1
+    var1 = function arg0() {
         _fun64705: for (var _fun64705_ip = 0;;) switch (_fun64705_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var7.borderRadius = var10;
                 var1.imageStyle = var7;
-                var6 = function() { // Original name: onError, environment: var6
+                var6 = function() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = true;

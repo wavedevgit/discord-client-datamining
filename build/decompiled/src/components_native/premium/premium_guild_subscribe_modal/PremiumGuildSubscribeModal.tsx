@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/premium_guild_subscribe_modal/PremiumGuildSubscribeModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PremiumGuildSubscribeModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -153,14 +153,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 263:
                     var0 = {};
                     var0.initialStack = var1;
-                    var2 = function() { // Original name: getScreens, environment: var1
+                    var2 = function() {
                         var0 = {};
                         var1 = _closure1_slot6;
                         var5 = var1.GUILD_SELECT;
                         var2 = {};
                         var6 = false;
                         var2.headerShown = var6;
-                        var6 = function(arg0) { // Original name: render, environment: var3
+                        var6 = function arg0() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var10.closeApplyBoostModal;
                         var10 = var11.bind(var12)(var10);
                         var2.headerLeft = var10;
-                        var10 = function() { // Original name: headerRight, environment: var3
+                        var10 = function() {
                             _fun77937: for (var _fun77937_ip = 0;;) switch (_fun77937_ip) {
                                 case 0:
                                     var3 = _closure1_slot8;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var4["+CbP2v"];
                                     var4 = var5.bind(var6)(var4);
                                     var0.accessibilityHint = var4;
-                                    var4 = function() { // Original name: onPress, environment: var4
+                                    var4 = function() {
                                         var2 = _closure1_slot0;
                                         var3 = _closure1_slot2;
                                         var0 = 15;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var2.headerRight = var10;
-                        var10 = function(arg0) { // Original name: headerTitle, environment: var3
+                        var10 = function arg0() {
                             _fun77939: for (var _fun77939_ip = 0;;) switch (_fun77939_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var2.headerTitle = var10;
-                        var10 = function(arg0) { // Original name: render, environment: var3
+                        var10 = function arg0() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.VJEVbu;
                         var4 = var5.bind(var6)(var4);
                         var1.headerTitle = var4;
-                        var3 = function(arg0) { // Original name: render, environment: var3
+                        var3 = function arg0() {
                             var3 = _closure1_slot8;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5["13/7kX"];
         var5 = var6.bind(var7)(var5);
         var0.headerBackTitle = var5;
-        var4 = function(arg0) { // Original name: onStateChange, environment: var4
+        var4 = function arg0() {
             _fun77943: for (var _fun77943_ip = 0;;) switch (_fun77943_ip) {
                 case 0:
                     var3 = arg0;

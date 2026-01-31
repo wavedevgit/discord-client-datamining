@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: OverlayMuteButton, environment: var1
+    var0 = function arg0() {
         _fun72979: for (var _fun72979_ip = 0;;) switch (_fun72979_ip) {
             case 0:
                 var0 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: OverlayObscureToggleButton, environment: var1
+    var0 = function arg0() {
         _fun72980: for (var _fun72980_ip = 0;;) switch (_fun72980_ip) {
             case 0:
                 var0 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: MediaModalOverlay, environment: var1
+    var0 = function arg0() {
         _fun72981: for (var _fun72981_ip = 0;;) switch (_fun72981_ip) {
             case 0:
                 var7 = arg0;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/components/overlay/MediaModalOverlay.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaModalOverlayGuard, environment: var1
+    var1 = function arg0() {
         _fun72986: for (var _fun72986_ip = 0;;) switch (_fun72986_ip) {
             case 0:
                 var5 = arg0;

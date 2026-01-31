@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.jsxs;
     var _closure1_slot8 = var1;
     var3 = var5.memo;
-    var1 = function(arg0) { // Original name: CardContainer, environment: var4
+    var1 = function arg0() {
         _fun51350: for (var _fun51350_ip = 0;;) switch (_fun51350_ip) {
             case 0:
                 var1 = arg0;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var45 = var45.next;
                 var0.next = var45;
                 var0.closing = var44;
-                var44 = function() { // Original name: handleOpen, environment: var40
+                var44 = function() {
                     var0 = _closure2_slot8;
                     var0 = var0.descriptor;
                     var3 = var0.route;
@@ -344,7 +344,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.onOpen = var44;
-                var44 = function() { // Original name: handleClose, environment: var40
+                var44 = function() {
                     var0 = _closure2_slot8;
                     var0 = var0.descriptor;
                     var3 = var0.route;
@@ -364,7 +364,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.overlay = var43;
                 var0.overlayEnabled = var42;
                 var0.shadowEnabled = var41;
-                var41 = function(arg0) { // Original name: handleTransition, environment: var40
+                var41 = function arg0() {
                     _fun51358: for (var _fun51358_ip = 0;;) switch (_fun51358_ip) {
                         case 0:
                             var0 = arg0;
@@ -446,7 +446,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.onTransition = var41;
-                var41 = function() { // Original name: handleGestureBegin, environment: var40
+                var41 = function() {
                     var0 = _closure2_slot8;
                     var0 = var0.descriptor;
                     var3 = var0.route;
@@ -460,7 +460,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.onGestureBegin = var41;
-                var41 = function() { // Original name: handleGestureCanceled, environment: var40
+                var41 = function() {
                     var0 = _closure2_slot8;
                     var0 = var0.descriptor;
                     var3 = var0.route;
@@ -474,7 +474,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0.onGestureCanceled = var41;
-                var40 = function() { // Original name: handleGestureEnd, environment: var40
+                var40 = function() {
                     var0 = _closure2_slot8;
                     var0 = var0.descriptor;
                     var0 = var0.route;

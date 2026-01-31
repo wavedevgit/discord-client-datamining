@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var0 = function(arg0) { // Original name: markAsInstrumented, environment: var3
+    var0 = function arg0() {
         _fun9618: for (var _fun9618_ip = 0;;) switch (_fun9618_ip) {
             case 0:
                 var0 = arg0;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: isInstrumented, environment: var3
+    var0 = function arg0() {
         _fun9619: for (var _fun9619_ip = 0;;) switch (_fun9619_ip) {
             case 0:
                 var0 = arg0;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var0;
-    var5 = function(arg0) { // Original name: extractOperation, environment: var3
+    var5 = function arg0() {
         _fun9620: for (var _fun9620_ip = 0;;) switch (_fun9620_ip) {
             case 0:
                 var2 = arg0;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot13 = var5;
-    var1 = function(arg0, arg1) { // Original name: translateFiltersIntoMethods, environment: var3
+    var1 = function arg0, arg1() {
         _fun9621: for (var _fun9621_ip = 0;;) switch (_fun9621_ip) {
             case 0:
                 var2 = arg0;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot14 = var1;
-    var0 = function(arg0) { // Original name: instrumentAuthOperation, environment: var3
+    var0 = function arg0() {
         _fun9622: for (var _fun9622_ip = 0;;) switch (_fun9622_ip) {
             case 0:
                 var3 = arg0;
@@ -316,7 +316,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = global;
                 var2 = var0.Proxy;
                 var0 = {};
-                var1 = function(arg0, arg1, arg2) { // Original name: apply, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     _fun9623: for (var _fun9623_ip = 0;;) switch (_fun9623_ip) {
                         case 0:
                             var1 = arg0;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: instrumentSupabaseClientConstructor, environment: var3
+    var0 = function arg0() {
         _fun9627: for (var _fun9627_ip = 0;;) switch (_fun9627_ip) {
             case 0:
                 var1 = arg0;
@@ -552,7 +552,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.prototype;
                 var9 = var3.from;
                 var3 = {};
-                var5 = function(arg0, arg1, arg2) { // Original name: apply, environment: var5
+                var5 = function arg0, arg1, arg2() {
                     var0 = global;
                     var4 = var0.Reflect;
                     var3 = var4.apply;
@@ -561,12 +561,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = arg2;
                     var0 = var3.bind(var4)(var2, var1, var0);
                     var3 = var0.constructor;
-                    var2 = function(arg0) { // Original name: instrumentPostgRESTQueryBuilder, environment: var1
+                    var2 = function arg0() {
                         _fun9629: for (var _fun9629_ip = 0;;) switch (_fun9629_ip) {
                             case 0:
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var3 = function(arg0) { // Original name: _loop, environment: var0
+                                var3 = function arg0() {
                                     _fun9630: for (var _fun9630_ip = 0;;) switch (_fun9630_ip) {
                                         case 0:
                                             var3 = arg0;
@@ -589,7 +589,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var1.prototype;
                                             var10 = var4[var3];
                                             var4 = {};
-                                            var6 = function(arg0, arg1, arg2) { // Original name: apply, environment: var6
+                                            var6 = function arg0, arg1, arg2() {
                                                 _fun9631: for (var _fun9631_ip = 0;;) switch (_fun9631_ip) {
                                                     case 0:
                                                         var1 = global;
@@ -627,7 +627,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         var1 = var7.bind(var6)(var8, var1);
                                                         var1 = var4.bind(var5)(var1);
                                                     case 140:
-                                                        var1 = function(arg0) { // Original name: instrumentPostgRESTFilterBuilder, environment: var1
+                                                        var1 = function arg0() {
                                                             _fun9632: for (var _fun9632_ip = 0;;) switch (_fun9632_ip) {
                                                                 case 0:
                                                                     var1 = arg0;
@@ -647,7 +647,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                     var3 = var1.prototype;
                                                                     var9 = var3.then;
                                                                     var3 = {};
-                                                                    var5 = function(arg0, arg1, arg2) { // Original name: apply, environment: var5
+                                                                    var5 = function arg0, arg1, arg2() {
                                                                         _fun9633: for (var _fun9633_ip = 0;;) switch (_fun9633_ip) {
                                                                             case 0:
                                                                                 var4 = arg0;
@@ -1330,7 +1330,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot8 = var6;
     var7 = ['select', 'insert', 'upsert', 'update', 'delete'];
     var _closure1_slot9 = var7;
-    var4 = function(arg0) { // Original name: instrumentSupabaseClient, environment: var3
+    var4 = function arg0() {
         _fun9639: for (var _fun9639_ip = 0;;) switch (_fun9639_ip) {
             case 0:
                 var3 = arg0;
@@ -1518,11 +1518,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = function(arg0) { // Environment: var3
         var0 = arg0;
         var2 = var0.supabaseClient;
-        var1 = function(arg0) { // Original name: _supabaseIntegration, environment: var0
+        var1 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = {};
-            var1 = function() { // Original name: setupOnce, environment: var1
+            var1 = function() {
                 var2 = _closure1_slot10;
                 var1 = _closure3_slot0;
                 var0 = undefined;

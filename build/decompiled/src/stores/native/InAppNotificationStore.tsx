@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun69512: for (var _fun69512_ip = 0;;) switch (_fun69512_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var9 = function() { // Original name: handleAlertMessage, environment: var3
+    var9 = function() {
         _fun69515: for (var _fun69515_ip = 0;;) switch (_fun69515_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 30;
                 var10 = var10 * var11;
                 var6.duration = var10;
-                var9 = function() { // Original name: onDismiss, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 30;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var9;
-    var8 = function(arg0) { // Original name: handleEnqueueNotification, environment: var3
+    var8 = function arg0() {
         _fun69517: for (var _fun69517_ip = 0;;) switch (_fun69517_ip) {
             case 0:
                 var0 = arg0;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var8;
-    var0 = function(arg0, arg1, arg2) { // Original name: trackSuppressed, environment: var3
+    var0 = function arg0, arg1, arg2() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 39;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1) { // Original name: trackDismissed, environment: var3
+    var0 = function arg0, arg1() {
         _fun69519: for (var _fun69519_ip = 0;;) switch (_fun69519_ip) {
             case 0:
                 var7 = arg0;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: showNextNotification, environment: var3
+    var0 = function() {
         var2 = _closure1_slot26;
         var0 = var2.tryDrain;
         var0 = var0.bind(var2)();
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: rejectNotifications, environment: var3
+    var0 = function arg0() {
         _fun69521: for (var _fun69521_ip = 0;;) switch (_fun69521_ip) {
             case 0:
                 var4 = arg0;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot23 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot7;
-        var2 = function() { // Original name: AlertDismissalHandler, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot6;
             var1 = _closure2_slot0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'key';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var0 = arg0;
             var1 = var0.guild;
             var0 = var0.channel;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'dismissNotification';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun69525: for (var _fun69525_ip = 0;;) switch (_fun69525_ip) {
                 case 0:
                     var0 = arg0;
@@ -670,7 +670,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'wasRecentlyDismissed';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun69526: for (var _fun69526_ip = 0;;) switch (_fun69526_ip) {
                 case 0:
                     var0 = arg0;
@@ -754,7 +754,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot25 = var1;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot7;
-        var2 = function() { // Original name: NotificationQueue, environment: var4
+        var2 = function() {
             _fun69528: for (var _fun69528_ip = 0;;) switch (_fun69528_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'enqueue';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun69529: for (var _fun69529_ip = 0;;) switch (_fun69529_ip) {
                 case 0:
                     var0 = this;
@@ -809,7 +809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'tryDrain';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.queue;
             var0 = var1.shift;
@@ -821,7 +821,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isFull';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.queue;
             var1 = var1.length;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeAll';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 21;
@@ -870,7 +870,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: InAppNotificationStore, environment: var5
+        var3 = function() {
             _fun69534: for (var _fun69534_ip = 0;;) switch (_fun69534_ip) {
                 case 0:
                     var3 = this;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var11 = var3.waitFor;
             var20 = _closure1_slot9;
@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentNotification';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot25;
             return var0;
         };
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var1.POST_CONNECTION_OPEN = var9;
     var1.GUILD_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleIncomingMessage, environment: var3
+    var9 = function arg0() {
         _fun69537: for (var _fun69537_ip = 0;;) switch (_fun69537_ip) {
             case 0:
                 var0 = arg0;
@@ -1180,7 +1180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.key = var6;
                 var6 = 5000;
                 var5.duration = var6;
-                var6 = function() { // Original name: onDismiss, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -1218,7 +1218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_CREATE = var9;
-    var9 = function(arg0) { // Original name: handleReactionNotification, environment: var3
+    var9 = function arg0() {
         _fun69539: for (var _fun69539_ip = 0;;) switch (_fun69539_ip) {
             case 0:
                 var1 = arg0;
@@ -1486,7 +1486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = 5;
                 var15 = var15 * var16;
                 var7.duration = var15;
-                var14 = function() { // Original name: onDismiss, environment: var14
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -1544,7 +1544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.REACTION_NOTIFICATION_SENT = var9;
-    var9 = function(arg0) { // Original name: handleMessageReminderDue, environment: var3
+    var9 = function arg0() {
         _fun69542: for (var _fun69542_ip = 0;;) switch (_fun69542_ip) {
             case 0:
                 var0 = arg0;
@@ -1613,7 +1613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 10;
                 var6 = var6 * var7;
                 var3.duration = var6;
-                var6 = function() { // Original name: onDismiss, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -1637,7 +1637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_REMINDER_DUE = var9;
-    var9 = function(arg0) { // Original name: handleThreadCreate, environment: var3
+    var9 = function arg0() {
         _fun69544: for (var _fun69544_ip = 0;;) switch (_fun69544_ip) {
             case 0:
                 var0 = arg0;
@@ -1750,7 +1750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.key = var8;
                 var8 = 5000;
                 var7.duration = var8;
-                var8 = function() { // Original name: onDismiss, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -1788,7 +1788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.THREAD_CREATE = var9;
-    var9 = function() { // Original name: handleClearInAppNotification, environment: var3
+    var9 = function() {
         var1 = null;
         _closure1_slot25 = var1;
         var1 = _closure1_slot32;
@@ -1798,13 +1798,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.CLEAR_IN_APP_NOTIFICATION = var9;
     var1.ENQUEUE_IN_APP_NOTIFICATION = var8;
-    var8 = function(arg0) { // Original name: handleChannelSelect, environment: var3
+    var8 = function arg0() {
         _fun69547: for (var _fun69547_ip = 0;;) switch (_fun69547_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channelId;
                 var _closure2_slot0 = var1;
-                var2 = function(arg0) { // Original name: predicate, environment: var0
+                var2 = function arg0() {
                     _fun69548: for (var _fun69548_ip = 0;;) switch (_fun69548_ip) {
                         case 0:
                             var2 = arg0;
@@ -1896,7 +1896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANNEL_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleVoiceChatOpen, environment: var3
+    var8 = function arg0() {
         _fun69549: for (var _fun69549_ip = 0;;) switch (_fun69549_ip) {
             case 0:
                 var1 = arg0;
@@ -1904,7 +1904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var2;
                 var1 = var1.chatOpen;
                 var _closure2_slot1 = var1;
-                var2 = function(arg0) { // Original name: predicate, environment: var0
+                var2 = function arg0() {
                     _fun69550: for (var _fun69550_ip = 0;;) switch (_fun69550_ip) {
                         case 0:
                             var1 = arg0;
@@ -1962,10 +1962,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANNEL_RTC_UPDATE_CHAT_OPEN = var8;
-    var3 = function() { // Original name: handleUserSettingsUpdate, environment: var3
+    var3 = function() {
         _fun69551: for (var _fun69551_ip = 0;;) switch (_fun69551_ip) {
             case 0:
-                var2 = function(arg0) { // Original name: predicate, environment: var0
+                var2 = function arg0() {
                     var0 = arg0;
                     var1 = var0.type;
                     var0 = _closure1_slot21;

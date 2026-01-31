@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun54132: for (var _fun54132_ip = 0;;) switch (_fun54132_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun54134: for (var _fun54134_ip = 0;;) switch (_fun54134_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun54135: for (var _fun54135_ip = 0;;) switch (_fun54135_ip) {
             case 0:
             case 2: // try_start_0
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: tryHydratePendingReply, environment: var3
+    var0 = function arg0() {
         _fun54138: for (var _fun54138_ip = 0;;) switch (_fun54138_ip) {
             case 0:
                 var1 = arg0;
@@ -398,7 +398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PendingReplyStore, environment: var5
+        var3 = function() {
             _fun54140: for (var _fun54140_ip = 0;;) switch (_fun54140_ip) {
                 case 0:
                     var3 = this;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun54141: for (var _fun54141_ip = 0;;) switch (_fun54141_ip) {
                 case 0:
                     var1 = {};
@@ -510,7 +510,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'initialize';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun54142: for (var _fun54142_ip = 0;;) switch (_fun54142_ip) {
                 case 0:
                     var1 = arg0;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingReply';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot10;
             var0 = arg0;
             var0 = var1[var0];
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingReplyActionSource';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot12;
             var0 = arg0;
             var0 = var1[var0];
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleCreatePendingReply, environment: var3
+    var7 = function arg0() {
         _fun54146: for (var _fun54146_ip = 0;;) switch (_fun54146_ip) {
             case 0:
                 var2 = arg0;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CREATE_PENDING_REPLY = var7;
-    var7 = function(arg0) { // Original name: handleCreateShallowPendingReply, environment: var3
+    var7 = function arg0() {
         _fun54147: for (var _fun54147_ip = 0;;) switch (_fun54147_ip) {
             case 0:
                 var1 = arg0;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CREATE_SHALLOW_PENDING_REPLY = var7;
-    var7 = function(arg0) { // Original name: handleSetPendingReplyShouldMention, environment: var3
+    var7 = function arg0() {
         _fun54148: for (var _fun54148_ip = 0;;) switch (_fun54148_ip) {
             case 0:
                 var0 = arg0;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SET_PENDING_REPLY_SHOULD_MENTION = var7;
-    var7 = function(arg0) { // Original name: handleDeletePendingReply, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         var2 = _closure1_slot10;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.DELETE_PENDING_REPLY = var7;
-    var7 = function() { // Original name: handleConnectionOpen, environment: var3
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 8;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function() { // Original name: handleLogout, environment: var3
+    var7 = function() {
         var0 = {};
         _closure1_slot10 = var0;
         var0 = {};
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function(arg0) { // Original name: handleMessageDelete, environment: var3
+    var7 = function arg0() {
         _fun54153: for (var _fun54153_ip = 0;;) switch (_fun54153_ip) {
             case 0:
                 var0 = arg0;
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_DELETE = var7;
-    var7 = function(arg0) { // Original name: handleChannelSelect, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = _closure1_slot16;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CHANNEL_SELECT = var7;
-    var3 = function(arg0) { // Original name: handleLoadMessagesSuccess, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = _closure1_slot16;

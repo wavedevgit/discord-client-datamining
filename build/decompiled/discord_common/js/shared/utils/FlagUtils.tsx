@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var5 = function(arg0, arg1) { // Original name: hasFlag, environment: var1
+    var5 = function arg0, arg1() {
         var1 = arg1;
         var0 = arg0;
         var0 = var0 & var1;
@@ -10,14 +10,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot0 = var5;
-    var4 = function(arg0, arg1) { // Original name: addFlag, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1 | var0;
         return var0;
     };
     var _closure1_slot1 = var4;
-    var3 = function(arg0, arg1) { // Original name: removeFlag, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var1 = ~var0;
         var0 = arg0;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = '../discord_common/js/shared/utils/FlagUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.hasFlag = var5;
-    var5 = function(arg0, arg1) { // Original name: hasAnyFlag, environment: var1
+    var5 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1 & var0;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.hasAnyFlag = var5;
     var2.addFlag = var4;
     var2.removeFlag = var3;
-    var3 = function(arg0, arg1) { // Original name: removeFlags, environment: var1
+    var3 = function arg0, arg1() {
         var5 = 1;
         var3 = copyRestArgs(var5);
         var2 = var3.reduce;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeFlags = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setFlag, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun16189: for (var _fun16189_ip = 0;;) switch (_fun16189_ip) {
             case 0:
                 var4 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setFlag = var3;
-    var1 = function(arg0, arg1) { // Original name: toggleFlag, environment: var1
+    var1 = function arg0, arg1() {
         _fun16190: for (var _fun16190_ip = 0;;) switch (_fun16190_ip) {
             case 0:
                 var4 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun67192: for (var _fun67192_ip = 0;;) switch (_fun67192_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun67195: for (var _fun67195_ip = 0;;) switch (_fun67195_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun67197: for (var _fun67197_ip = 0;;) switch (_fun67197_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1) { // Original name: pruneExpiredNudges, environment: var3
+    var0 = function arg0, arg1() {
         _fun67198: for (var _fun67198_ip = 0;;) switch (_fun67198_ip) {
             case 0:
                 var0 = arg1;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: maybeDismissNudge, environment: var3
+    var0 = function arg0() {
         _fun67200: for (var _fun67200_ip = 0;;) switch (_fun67200_ip) {
             case 0:
                 var3 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: getActiveNudgeChannelIds, environment: var3
+    var0 = function() {
         _fun67201: for (var _fun67201_ip = 0;;) switch (_fun67201_ip) {
             case 0:
                 var0 = new Array(0);
@@ -482,7 +482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: getDMChannelAffinity, environment: var3
+    var0 = function arg0() {
         _fun67202: for (var _fun67202_ip = 0;;) switch (_fun67202_ip) {
             case 0:
                 var1 = arg0;
@@ -554,7 +554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: handleNudgeVisibilityChange, environment: var3
+    var0 = function() {
         _fun67203: for (var _fun67203_ip = 0;;) switch (_fun67203_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -627,7 +627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: handleUserGuildSettingsUpdate, environment: var3
+    var0 = function() {
         _fun67204: for (var _fun67204_ip = 0;;) switch (_fun67204_ip) {
             case 0:
                 var0 = global;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.bind(var0)(var7);
     var8 = var7.PersistedStore;
     var7 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ReplyNudgeStore, environment: var5
+        var3 = function() {
             _fun67206: for (var _fun67206_ip = 0;;) switch (_fun67206_ip) {
                 case 0:
                     var3 = this;
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun67207: for (var _fun67207_ip = 0;;) switch (_fun67207_ip) {
                 case 0:
                     var3 = arg0;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = _closure1_slot18;
             var0.nudgedChannels = var1;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNudgeTimestamp';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun67209: for (var _fun67209_ip = 0;;) switch (_fun67209_ip) {
                 case 0:
                     var3 = arg0;
@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isChannelNudged';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun67210: for (var _fun67210_ip = 0;;) switch (_fun67210_ip) {
                 case 0:
                     var0 = arguments[1];
@@ -1013,7 +1013,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleReplyNudgeSet, environment: var3
+    var8 = function arg0() {
         _fun67211: for (var _fun67211_ip = 0;;) switch (_fun67211_ip) {
             case 0:
                 var1 = arg0;
@@ -1183,7 +1183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.REPLY_NUDGE_SET = var8;
-    var8 = function(arg0) { // Original name: handleReplyNudgeClear, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.channelId;
         var1 = _closure1_slot24;
@@ -1192,7 +1192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.REPLY_NUDGE_CLEAR = var8;
-    var8 = function(arg0) { // Original name: handleMessageCreate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.message;
         var2 = _closure1_slot24;
@@ -1202,7 +1202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.MESSAGE_CREATE = var8;
-    var8 = function(arg0) { // Original name: handleMessageReactionAdd, environment: var3
+    var8 = function arg0() {
         _fun67214: for (var _fun67214_ip = 0;;) switch (_fun67214_ip) {
             case 0:
                 var0 = arg0;
@@ -1225,7 +1225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_REACTION_ADD = var8;
-    var8 = function() { // Original name: handleChannelSelect, environment: var3
+    var8 = function() {
         _fun67215: for (var _fun67215_ip = 0;;) switch (_fun67215_ip) {
             case 0:
                 var2 = _closure1_slot13;
@@ -1246,7 +1246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CHANNEL_SELECT = var8;
-    var8 = function(arg0) { // Original name: handleChannelDelete, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var2 = var0.id;
@@ -1256,7 +1256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CHANNEL_DELETE = var8;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot18 = var0;
         var0 = global;

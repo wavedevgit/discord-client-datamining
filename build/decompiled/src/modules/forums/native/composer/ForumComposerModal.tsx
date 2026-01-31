@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.container = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: clearDraft, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var3 = _closure1_slot1;
         var5 = _closure1_slot3;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/composer/ForumComposerModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumComposerModal, environment: var1
+    var1 = function arg0() {
         _fun73643: for (var _fun73643_ip = 0;;) switch (_fun73643_ip) {
             case 0:
                 var1 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var9 = var11.bind(var16)(var9, var1);
-                var11 = function(arg0) { // Original name: handleClose, environment: var0
+                var11 = function arg0() {
                     _fun73648: for (var _fun73648_ip = 0;;) switch (_fun73648_ip) {
                         case 0:
                             var1 = _closure2_slot4;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         case 288:
                             var2 = {};
-                            var7 = function() { // Original name: onConfirm, environment: var5
+                            var7 = function() {
                                 var2 = _closure1_slot0;
                                 var3 = _closure1_slot3;
                                 var0 = 22;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var2.onConfirm = var7;
-                            var5 = function() { // Original name: onCancel, environment: var5
+                            var5 = function() {
                                 var3 = _closure1_slot0;
                                 var2 = _closure1_slot3;
                                 var0 = 18;

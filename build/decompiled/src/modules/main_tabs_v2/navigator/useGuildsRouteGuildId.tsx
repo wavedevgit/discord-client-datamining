@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useGuildsRouteGuildId, environment: var1
+    var3 = function() {
         _fun100712: for (var _fun100712_ip = 0;;) switch (_fun100712_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function() { // Original name: useGuildsRouteGuildAndChannelId, environment: var1
+    var1 = function() {
         _fun100713: for (var _fun100713_ip = 0;;) switch (_fun100713_ip) {
             case 0:
                 var1 = _closure1_slot0;

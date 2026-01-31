@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: useExperimentOverrideActiveCount, environment: var8
+    var0 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var3 = 4;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.BeakerIcon;
     var1.IconComponent = var9;
-    var9 = function() { // Original name: useExperimentOverrideActiveDescription, environment: var8
+    var9 = function() {
         var1 = _closure1_slot5;
         var3 = undefined;
         var5 = var1.bind(var3)();
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useDescription = var9;
-    var9 = function() { // Original name: useHasExperimentOverrideActive, environment: var8
+    var9 = function() {
         _fun87596: for (var _fun87596_ip = 0;;) switch (_fun87596_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.usePredicate = var9;
-    var8 = function() { // Original name: handleExperimentOverrideActivePress, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;

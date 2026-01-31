@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
     var _closure1_slot0 = var0;
-    var1 = function(arg0, arg1) { // Original name: _setPrototypeOf, environment: var2
+    var1 = function arg0, arg1() {
         _fun258: for (var _fun258_ip = 0;;) switch (_fun258_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: parseBaggageHeader, environment: var4
+    var1 = function arg0() {
         _fun8844: for (var _fun8844_ip = 0;;) switch (_fun8844_ip) {
             case 0:
                 var4 = arg0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0) { // Original name: baggageHeaderToObject, environment: var4
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.split;
         var1 = ',';
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var3 = function(arg0) { // Original name: objectToBaggageHeader, environment: var4
+    var3 = function arg0() {
         _fun8851: for (var _fun8851_ip = 0;;) switch (_fun8851_ip) {
             case 0:
                 var2 = arg0;
@@ -310,7 +310,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'sentry-';
     var2.SENTRY_BAGGAGE_KEY_PREFIX = var6;
     var2.SENTRY_BAGGAGE_KEY_PREFIX_REGEX = var5;
-    var5 = function(arg0) { // Original name: baggageHeaderToDynamicSamplingContext, environment: var4
+    var5 = function arg0() {
         _fun8853: for (var _fun8853_ip = 0;;) switch (_fun8853_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.baggageHeaderToDynamicSamplingContext = var5;
-    var4 = function(arg0) { // Original name: dynamicSamplingContextToSentryBaggageHeader, environment: var4
+    var4 = function arg0() {
         _fun8855: for (var _fun8855_ip = 0;;) switch (_fun8855_ip) {
             case 0:
                 var3 = arg0;

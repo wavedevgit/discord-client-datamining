@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/experiments/QuestLoggingExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getQuestLogger, environment: var1
+    var1 = function() {
         _fun46629: for (var _fun46629_ip = 0;;) switch (_fun46629_ip) {
             case 0:
                 var0 = arguments[0];

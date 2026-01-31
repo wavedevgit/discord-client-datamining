@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
-        var4 = function(arg0) { // Original name: CollectiblesMarketingsRecord, environment: var1
+        var4 = function arg0() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var2 = 'fromServer';
         var0.key = var2;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun42388: for (var _fun42388_ip = 0;;) switch (_fun42388_ip) {
                 case 0:
                     var7 = arg0;

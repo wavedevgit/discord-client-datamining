@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var2.VirtualizedListContext = var3;
-    var3 = function(arg0) { // Original name: VirtualizedListContextResetter, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.children;
         var3 = _closure1_slot2;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.VirtualizedListContextResetter = var3;
-    var3 = function(arg0) { // Original name: VirtualizedListContextProvider, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var3 = var0.value;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.VirtualizedListContextProvider = var3;
-    var1 = function(arg0) { // Original name: VirtualizedListCellContextProvider, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.cellKey;
         var _closure2_slot0 = var7;

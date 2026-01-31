@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: I18nLink, environment: var3
+    var1 = function arg0() {
         _fun112280: for (var _fun112280_ip = 0;;) switch (_fun112280_ip) {
             case 0:
                 var0 = arg0;
@@ -184,13 +184,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'i18n/native/updateRules.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: updateRules, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = {};
         var5 = var0.paragraph;
         var6 = var1;
         var3 = copyDataProperties(var6, var5);
-        var4 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var4 = function arg0, arg1, arg2() {
             var0 = arg2;
             var4 = _closure1_slot4;
             var2 = _closure1_slot1;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var0.strong;
         var6 = var1;
         var4 = copyDataProperties(var6, var5);
-        var4 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var4 = function arg0, arg1, arg2() {
             var0 = arg2;
             var4 = _closure1_slot4;
             var2 = _closure1_slot1;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var0.em;
         var6 = var1;
         var4 = copyDataProperties(var6, var5);
-        var4 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var4 = function arg0, arg1, arg2() {
             var0 = arg2;
             var4 = _closure1_slot4;
             var2 = _closure1_slot1;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var0.u;
         var6 = var1;
         var4 = copyDataProperties(var6, var5);
-        var4 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var4 = function arg0, arg1, arg2() {
             var0 = arg2;
             var4 = _closure1_slot4;
             var2 = _closure1_slot1;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var0.link;
         var6 = var1;
         var4 = copyDataProperties(var6, var5);
-        var2 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var2 = function arg0, arg1, arg2() {
             var0 = arg2;
             var4 = _closure1_slot4;
             var3 = _closure1_slot6;

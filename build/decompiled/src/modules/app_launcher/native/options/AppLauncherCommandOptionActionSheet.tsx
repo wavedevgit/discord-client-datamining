@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherCommandOptionActionSheet, environment: var1
+    var1 = function arg0() {
         _fun105484: for (var _fun105484_ip = 0;;) switch (_fun105484_ip) {
             case 0:
                 var3 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var15.bind(var4)(var14);
                 var15 = var14.ActionSheetCloseButton;
                 var14 = {};
-                var16 = function() { // Original name: onPress, environment: var16
+                var16 = function() {
                     _fun105485: for (var _fun105485_ip = 0;;) switch (_fun105485_ip) {
                         case 0:
                             var2 = _closure1_slot1;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: mapColorToHighlightColor, environment: var1
+    var3 = function arg0() {
         _fun81362: for (var _fun81362_ip = 0;;) switch (_fun81362_ip) {
             case 0:
                 var3 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/ModerationUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.mapColorToHighlightColor = var3;
-    var3 = function(arg0) { // Original name: mapOptionToHighlightedRowOptions, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.mapOptionToHighlightedRowOptions = var3;
-    var3 = function() { // Original name: generateVerificationLevelOptions, environment: var1
+    var3 = function() {
         _fun81365: for (var _fun81365_ip = 0;;) switch (_fun81365_ip) {
             case 0:
                 var0 = arguments[0];
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateVerificationLevelOptions = var3;
-    var3 = function() { // Original name: generateContentFilterHighlightedOptions, environment: var1
+    var3 = function() {
         _fun81366: for (var _fun81366_ip = 0;;) switch (_fun81366_ip) {
             case 0:
                 var3 = arguments[0];
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateContentFilterHighlightedOptions = var3;
-    var3 = function() { // Original name: generateContentFilterOptions, environment: var1
+    var3 = function() {
         _fun81367: for (var _fun81367_ip = 0;;) switch (_fun81367_ip) {
             case 0:
                 var2 = arguments[0];
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateContentFilterOptions = var3;
-    var3 = function() { // Original name: generateDmSpamOptions, environment: var1
+    var3 = function() {
         var1 = {};
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.generateDmSpamOptions = var3;
-    var1 = function() { // Original name: generateExplicitImageOptions, environment: var1
+    var1 = function() {
         var1 = {};
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;

@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.LIKELY_ATO_MORE_TIPS_MODAL_KEY = var3;
     var3 = 'https://discord.com/safety/understanding-and-avoiding-common-scams';
     var2.LEARN_MORE_HC_ARTICLE = var3;
-    var1 = function() { // Original name: getLikelyAtoMoreTips, environment: var1
+    var1 = function() {
         var1 = {};
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;

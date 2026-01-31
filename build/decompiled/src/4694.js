@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.absolute = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot8 = var3;
-    var1 = function(arg0) { // Original name: Screen, environment: var1
+    var1 = function arg0() {
         _fun43566: for (var _fun43566_ip = 0;;) switch (_fun43566_ip) {
             case 0:
                 var0 = arg0;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9.value = var11;
                 var12 = _closure1_slot5;
                 var11 = {};
-                var17 = function(arg0) { // Original name: onLayout, environment: var17
+                var17 = function arg0() {
                     var0 = arg0;
                     var0 = var0.nativeEvent;
                     var0 = var0.layout;

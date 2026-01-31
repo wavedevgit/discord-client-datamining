@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var4;
     var3 = var3.requireNativeComponent;
     var _closure1_slot5 = var3;
-    var3 = function() { // Original name: getNativeComponent, environment: var1
+    var3 = function() {
         _fun65388: for (var _fun65388_ip = 0;;) switch (_fun65388_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot5;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getNativeComponent = var3;
-    var1 = function() { // Original name: getNativeModule, environment: var1
+    var1 = function() {
         _fun65389: for (var _fun65389_ip = 0;;) switch (_fun65389_ip) {
             case 0: // try_start_0
                 var0 = _closure1_slot4;

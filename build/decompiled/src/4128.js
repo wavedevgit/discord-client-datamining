@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: MetadataMissingError, environment: var0
+    var2 = function arg0() {
         _fun37874: for (var _fun37874_ip = 0;;) switch (_fun37874_ip) {
             case 0:
                 var0 = arg0;

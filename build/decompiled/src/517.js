@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = global;
             var13 = var2.Function;
             var _closure1_slot2 = var13;
-            var7 = function(arg0) { // Original name: getEvalledConstructor, environment: var1
+            var7 = function arg0() {
                 _fun6594: for (var _fun6594_ip = 0;;) switch (_fun6594_ip) {
                     case 0:
                         var0 = arg0;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot3 = var7;
-            var12 = function() { // Original name: throwTypeError, environment: var1
+            var12 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 0;
@@ -794,7 +794,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = var10.bind(var0)(var9);
             var8['%Error.prototype%'] = var9;
         case 2077:
-            var8 = function(arg0) { // Original name: doEval, environment: var1
+            var8 = function arg0() {
                 _fun6597: for (var _fun6597_ip = 0;;) switch (_fun6597_ip) {
                     case 0:
                         var2 = arg0;
@@ -1059,7 +1059,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot14 = var2;
             var2 = /\\(\\)?/g;
             var _closure1_slot15 = var2;
-            var2 = function(arg0, arg1) { // Original name: getBaseIntrinsic, environment: var1
+            var2 = function arg0, arg1() {
                 _fun6598: for (var _fun6598_ip = 0;;) switch (_fun6598_ip) {
                     case 0:
                         var4 = arg0;
@@ -1168,7 +1168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot16 = var2;
-            var2 = function(arg0, arg1) { // Original name: GetIntrinsic, environment: var1
+            var2 = function arg0, arg1() {
                 _fun6599: for (var _fun6599_ip = 0;;) switch (_fun6599_ip) {
                     case 0:
                         var26 = arg0;
@@ -1212,7 +1212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun6599
                         }
                     case 98:
-                        var1 = function(arg0) { // Original name: stringToPath, environment: var1
+                        var1 = function arg0() {
                             _fun6600: for (var _fun6600_ip = 0;;) switch (_fun6600_ip) {
                                 case 0:
                                     var6 = arg0;

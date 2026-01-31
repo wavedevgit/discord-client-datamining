@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: useThrottledActionHandler, environment: var3
+    var1 = function() {
         _fun65974: for (var _fun65974_ip = 0;;) switch (_fun65974_ip) {
             case 0:
                 var2 = arguments[0];
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_scheduled_events/native/components/ThrottledButton.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ThrottledButton, environment: var3
+    var3 = function arg0() {
         _fun65980: for (var _fun65980_ip = 0;;) switch (_fun65980_ip) {
             case 0:
                 var4 = arg0;

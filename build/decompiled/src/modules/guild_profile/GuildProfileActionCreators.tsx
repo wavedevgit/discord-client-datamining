@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _fetchGuildTopGames, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_profile/GuildProfileActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getGuildProfile, environment: var1
+    var3 = function arg0, arg1() {
         _fun59643: for (var _fun59643_ip = 0;;) switch (_fun59643_ip) {
             case 0:
                 var9 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGuildProfile = var3;
-    var3 = function(arg0, arg1) { // Original name: saveGuildProfile, environment: var1
+    var3 = function arg0, arg1() {
         _fun59646: for (var _fun59646_ip = 0;;) switch (_fun59646_ip) {
             case 0:
                 var10 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.saveGuildProfile = var3;
-    var3 = function(arg0, arg1) { // Original name: setGuildProfileVisibility, environment: var1
+    var3 = function arg0, arg1() {
         _fun59649: for (var _fun59649_ip = 0;;) switch (_fun59649_ip) {
             case 0:
                 var7 = arg0;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setGuildProfileVisibility = var3;
-    var3 = function() { // Original name: fetchGuildTopGames, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchGuildTopGames = var3;
-    var1 = function(arg0, arg1) { // Original name: trackGuildProfileViewed, environment: var1
+    var1 = function arg0, arg1() {
         var7 = arg0;
         var2 = _closure1_slot5;
         var0 = var2.getSelfMember;

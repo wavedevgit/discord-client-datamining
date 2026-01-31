@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun56029: for (var _fun56029_ip = 0;;) switch (_fun56029_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun56031: for (var _fun56031_ip = 0;;) switch (_fun56031_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var4 = function(arg0, arg1) { // Original name: reactionForId, environment: var5
+    var4 = function arg0, arg1() {
         _fun56032: for (var _fun56032_ip = 0;;) switch (_fun56032_ip) {
             case 0:
                 var8 = arg1;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var4;
-    var0 = function(arg0) { // Original name: transformPollEmoji, environment: var5
+    var0 = function arg0() {
         _fun56033: for (var _fun56033_ip = 0;;) switch (_fun56033_ip) {
             case 0:
                 var3 = arg0;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var3 = function(arg0) { // Original name: isPollMessageDirectlyInteractive, environment: var5
+    var3 = function arg0() {
         _fun56034: for (var _fun56034_ip = 0;;) switch (_fun56034_ip) {
             case 0:
                 var2 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var3;
-    var1 = function(arg0, arg1) { // Original name: computeBasicPollChatData, environment: var5
+    var1 = function arg0, arg1() {
         _fun56035: for (var _fun56035_ip = 0;;) switch (_fun56035_ip) {
             case 0:
                 var21 = arg0;
@@ -874,7 +874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/polls/chat/formatPollMessageChatData.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function(arg0, arg1) { // Original name: formatPollMessageChatData, environment: var5
+    var5 = function arg0, arg1() {
         _fun56037: for (var _fun56037_ip = 0;;) switch (_fun56037_ip) {
             case 0:
                 var5 = arg0;

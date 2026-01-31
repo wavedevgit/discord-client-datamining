@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun53702: for (var _fun53702_ip = 0;;) switch (_fun53702_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun53704: for (var _fun53704_ip = 0;;) switch (_fun53704_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: getElementForType, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var2 = var1.elements;
         var1 = arg1;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: getElementsForType, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg0;
         var2 = var1.elements;
         var1 = 'external_link';
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: hasAnyRemediationElement, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.elements;
         var1 = var2.some;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: NullComponent, environment: var1
+    var0 = function() {
         var0 = null;
         return var0;
     };
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.remediationHeader = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: HeaderView, environment: var1
+    var3 = function arg0() {
         _fun53712: for (var _fun53712_ip = 0;;) switch (_fun53712_ip) {
             case 0:
                 var0 = arg0;
@@ -664,7 +664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var3 = function(arg0) { // Original name: InfoView, environment: var1
+    var3 = function arg0() {
         _fun53714: for (var _fun53714_ip = 0;;) switch (_fun53714_ip) {
             case 0:
                 var0 = arg0;
@@ -753,7 +753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var3;
-    var3 = function(arg0) { // Original name: ChildItem, environment: var1
+    var3 = function arg0() {
         _fun53716: for (var _fun53716_ip = 0;;) switch (_fun53716_ip) {
             case 0:
                 var6 = arg0;
@@ -907,7 +907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var3;
-    var3 = function(arg0) { // Original name: ChildrenView, environment: var1
+    var3 = function arg0() {
         _fun53720: for (var _fun53720_ip = 0;;) switch (_fun53720_ip) {
             case 0:
                 var0 = arg0;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/NodeView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NodeView, environment: var1
+    var1 = function arg0() {
         _fun53722: for (var _fun53722_ip = 0;;) switch (_fun53722_ip) {
             case 0:
                 var18 = arg0;
@@ -1148,7 +1148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun53726
                             }
                         case 28:
-                            var10 = function(arg0, arg1) { // Original name: _loop, environment: var11
+                            var10 = function arg0, arg1() {
                                 _fun53727: for (var _fun53727_ip = 0;;) switch (_fun53727_ip) {
                                     case 0:
                                         var1 = arg0;
@@ -2288,7 +2288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = {};
                 var18.element = var15;
                 var18.state = var16;
-                var23 = function(arg0, arg1) { // Original name: onPress, environment: var8
+                var23 = function arg0, arg1() {
                     _fun53735: for (var _fun53735_ip = 0;;) switch (_fun53735_ip) {
                         case 0:
                             var1 = arg0;
@@ -2394,7 +2394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.button;
                 var5.button = var10;
                 var5.hasError = var9;
-                var8 = function(arg0) { // Original name: onPress, environment: var8
+                var8 = function arg0() {
                     _fun53736: for (var _fun53736_ip = 0;;) switch (_fun53736_ip) {
                         case 0:
                             var0 = arg0;

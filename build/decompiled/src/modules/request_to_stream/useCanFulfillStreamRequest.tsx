@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var1 = function(arg0) { // Original name: canFulfillStreamRequest, environment: var4
+    var1 = function arg0() {
         _fun78340: for (var _fun78340_ip = 0;;) switch (_fun78340_ip) {
             case 0:
                 var8 = arg0;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/request_to_stream/useCanFulfillStreamRequest.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: useCanFulfillStreamRequest, environment: var4
+    var4 = function arg0() {
         _fun78342: for (var _fun78342_ip = 0;;) switch (_fun78342_ip) {
             case 0:
                 var1 = arguments[1];

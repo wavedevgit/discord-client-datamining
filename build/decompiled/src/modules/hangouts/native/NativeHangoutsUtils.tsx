@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/hangouts/native/NativeHangoutsUtils.tsx';
             var3 = var4.bind(var5)(var3);
-            var3 = function(arg0, arg1) { // Original name: preloadAsset, environment: var1
+            var3 = function arg0, arg1() {
                 _fun113773: for (var _fun113773_ip = 0;;) switch (_fun113773_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.preloadAsset = var3;
-            var3 = function() { // Original name: hasActivity, environment: var1
+            var3 = function() {
                 _fun113774: for (var _fun113774_ip = 0;;) switch (_fun113774_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.hasActivity = var3;
-            var3 = function() { // Original name: stopHangoutActivity, environment: var1
+            var3 = function() {
                 _fun113777: for (var _fun113777_ip = 0;;) switch (_fun113777_ip) {
                     case 0:
                         var3 = arguments[0];
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.stopHangoutActivity = var3;
-            var3 = function(arg0) { // Original name: startHangoutActivity, environment: var1
+            var3 = function arg0() {
                 _fun113778: for (var _fun113778_ip = 0;;) switch (_fun113778_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.startHangoutActivity = var3;
-            var1 = function() { // Original name: activitiesAllowed, environment: var1
+            var1 = function() {
                 _fun113779: for (var _fun113779_ip = 0;;) switch (_fun113779_ip) {
                     case 0:
                         var4 = _closure1_slot0;

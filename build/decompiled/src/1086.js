@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var4;
-            var0 = function(arg0) { // Original name: addHTTPTimings, environment: var3
+            var0 = function arg0() {
                 _fun11940: for (var _fun11940_ip = 0;;) switch (_fun11940_ip) {
                     case 0:
                         var5 = arg0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot6 = var0;
-            var1 = function(arg0, arg1) { // Original name: shouldAttachHeaders, environment: var3
+            var1 = function arg0, arg1() {
                 _fun11943: for (var _fun11943_ip = 0;;) switch (_fun11943_ip) {
                     case 0:
                         var2 = arg0;
@@ -223,7 +223,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var _closure1_slot5 = var4;
                 var2.defaultRequestInstrumentationOptions = var4;
-                var3 = function(arg0, arg1) { // Original name: instrumentOutgoingRequests, environment: var3
+                var3 = function arg0,
+                arg1() {
                     _fun11944: for (var _fun11944_ip = 0;;) switch (_fun11944_ip) {
                         case 0:
                             var6 = arg0;
@@ -259,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             };
                         case 117:
                             var _closure2_slot4 = var5;
-                            var5 = function(arg0) { // Original name: shouldAttachHeadersWithTargets, environment: var0
+                            var5 = function arg0() {
                                 var3 = _closure1_slot7;
                                 var2 = _closure2_slot1;
                                 var1 = undefined;
@@ -521,7 +522,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var11 = _closure2_slot6;
                                         var10 = _closure2_slot7;
                                         var9 = _closure2_slot3;
-                                        var2 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: xhrCallback, environment: var0
+                                        var2 = function arg0, arg1, arg2, arg3, arg4, arg5() {
                                             _fun11952: for (var _fun11952_ip = 0;;) switch (_fun11952_ip) {
                                                 case 0:
                                                     var7 = arg0;
@@ -785,7 +786,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 case 694:
                                                     var10 = var1;
                                                 case 697:
-                                                    var5 = function(arg0, arg1, arg2) { // Original name: addTracingHeadersToXhrRequest, environment: var2
+                                                    var5 = function arg0, arg1, arg2() {
                                                         _fun11953: for (var _fun11953_ip = 0;;) switch (_fun11953_ip) {
                                                             case 0:
                                                                 var7 = arg0;

@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var8)(var3);
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: announceActioned, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/components/ActionStatusSubLabel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActionStatusSubLabel, environment: var1
+    var1 = function arg0() {
         _fun103312: for (var _fun103312_ip = 0;;) switch (_fun103312_ip) {
             case 0:
                 var0 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var9 = var20.bind(var3)(var2);
                 var7 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: L, environment: var1
+                var2 = function() {
                     _fun103313: for (var _fun103313_ip = 0;;) switch (_fun103313_ip) {
                         case 0:
                             var5 = _closure2_slot4;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var11 = var20.bind(var3)(var2);
                 var9 = var11.useAnimatedStyle;
-                var2 = function() { // Original name: y, environment: var1
+                var2 = function() {
                     _fun103314: for (var _fun103314_ip = 0;;) switch (_fun103314_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var11 = var20.bind(var3)(var2);
                 var9 = var11.useAnimatedStyle;
-                var2 = function() { // Original name: V, environment: var1
+                var2 = function() {
                     _fun103315: for (var _fun103315_ip = 0;;) switch (_fun103315_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var12 = var20.bind(var3)(var2);
                 var9 = var12.useAnimatedReaction;
-                var2 = function() { // Original name: Y, environment: var1
+                var2 = function() {
                     var1 = _closure2_slot1;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.__workletHash = var15;
                 var15 = _closure1_slot11;
                 var2.__initData = var15;
-                var1 = function(arg0, arg1) { // Original name: v, environment: var1
+                var1 = function arg0, arg1() {
                     _fun103317: for (var _fun103317_ip = 0;;) switch (_fun103317_ip) {
                         case 0:
                             var0 = arg0;

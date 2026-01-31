@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function() { // Original name: useFavoriteGIFs, environment: var1
+    var3 = function() {
         _fun73027: for (var _fun73027_ip = 0;;) switch (_fun73027_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/gif_picker/FavoriteGIFHooks.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useFavoriteGIFs = var3;
-    var3 = function(arg0) { // Original name: useSortedFavoriteGIFs, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot5;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSortedFavoriteGIFs = var3;
-    var3 = function() { // Original name: useShouldShowTooltipOnFavorite, environment: var1
+    var3 = function() {
         _fun73031: for (var _fun73031_ip = 0;;) switch (_fun73031_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldShowTooltipOnFavorite = var3;
-    var1 = function(arg0) { // Original name: useIsFavoriteGIF, environment: var1
+    var1 = function arg0() {
         var1 = _closure1_slot5;
         var0 = undefined;
         var1 = var1.bind(var0)();

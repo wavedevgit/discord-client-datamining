@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var3 = var4.bind(var0)(var3);
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: getYoutubeMeta, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = _closure1_slot0;
@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var4.async;
         var1 = global;
         var5 = var1.Promise;
-        var9 = function(arg0) { // Original name: getYoutubeMeta$, environment: var0
+        var9 = function arg0() {
             _fun85512: for (var _fun85512_ip = 0;;) switch (_fun85512_ip) {
                 case 0:
                     var1 = arg0;

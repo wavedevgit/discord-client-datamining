@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/contact_sync/native/components/ContactSyncSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ContactSyncSettingsActionSheet, environment: var1
+    var1 = function() {
         _fun81529: for (var _fun81529_ip = 0;;) switch (_fun81529_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.text = var15;
                 var9 = var2.bind(var3)(var10, var9);
                 var5.label = var9;
-                var9 = function() { // Original name: onPress, environment: var12
+                var9 = function() {
                     var2 = _closure1_slot5;
                     var0 = _closure2_slot2;
                     var1 = !var0;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.t;
                 var14 = var10.eswIfi;
                 var10 = {};
-                var20 = function(arg0, arg1) { // Original name: learnMoreHook, environment: var12
+                var20 = function arg0, arg1() {
                     var4 = _closure1_slot7;
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot1;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.children = var20;
                 var15 = var2.bind(var3)(var17, var15);
                 var9.subLabel = var15;
-                var15 = function() { // Original name: onPress, environment: var12
+                var15 = function() {
                     var2 = _closure1_slot4;
                     var0 = _closure2_slot0;
                     var1 = !var0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.children = var16;
                 var14 = var2.bind(var3)(var15, var14);
                 var9.subLabel = var14;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure1_slot3;
                     var0 = _closure2_slot1;
                     var1 = !var0;

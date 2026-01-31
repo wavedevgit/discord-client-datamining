@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var5.bind(var6)(var2, var1, var4);
     var1 = {};
-    var4 = function(arg0, arg1) { // Original name: clearDraft, environment: var0
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearDraft = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: saveDraft, environment: var0
+    var4 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.saveDraft = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: changeDraft, environment: var0
+    var4 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.changeDraft = var4;
-    var0 = function(arg0, arg1) { // Original name: changeThreadSettings, environment: var0
+    var0 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

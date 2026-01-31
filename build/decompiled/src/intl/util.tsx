@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: getLanguages, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'intl/util.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: getAvailableLocales, environment: var1
+    var4 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot1;
         var2 = 1;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAvailableLocales = var4;
     var2.getLanguages = var3;
-    var3 = function(arg0, arg1) { // Original name: getNormalizedLocale, environment: var1
+    var3 = function arg0, arg1() {
         _fun13565: for (var _fun13565_ip = 0;;) switch (_fun13565_ip) {
             case 0:
                 var0 = arg0;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getNormalizedLocale = var3;
-    var1 = function(arg0, arg1) { // Original name: useSyncMessages, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

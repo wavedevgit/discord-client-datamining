@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun53847: for (var _fun53847_ip = 0;;) switch (_fun53847_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var8 = function(arg0) { // Original name: handleMessageSendFailedAutomod, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var6 = var0.messageData;
         var5 = var0.errorResponseBody;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = true;
         return var0;
     };
-    var9 = function(arg0) { // Original name: handleLoadMessages, environment: var3
+    var9 = function arg0() {
         _fun53851: for (var _fun53851_ip = 0;;) switch (_fun53851_ip) {
             case 0:
                 var0 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot15 = var1;
     var1 = {};
     var _closure1_slot16 = var1;
-    var1 = function(arg0) { // Original name: removeFailedMessage, environment: var3
+    var1 = function arg0() {
         _fun53854: for (var _fun53854_ip = 0;;) switch (_fun53854_ip) {
             case 0:
                 var2 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildAutomodMessageStore, environment: var5
+        var3 = function() {
             _fun53856: for (var _fun53856_ip = 0;;) switch (_fun53856_ip) {
                 case 0:
                     var3 = this;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun53857: for (var _fun53857_ip = 0;;) switch (_fun53857_ip) {
                 case 0:
                     var0 = arg0;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot13;
             var0.automodFailedMessages = var2;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53859: for (var _fun53859_ip = 0;;) switch (_fun53859_ip) {
                 case 0:
                     var3 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMessagesVersion';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMentionRaidDetected';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53861: for (var _fun53861_ip = 0;;) switch (_fun53861_ip) {
                 case 0:
                     var1 = _closure1_slot15;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastIncidentAlertMessage';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun53862: for (var _fun53862_ip = 0;;) switch (_fun53862_ip) {
                 case 0:
                     var1 = _closure1_slot16;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var10 = function() { // Original name: handleConnectionOpen, environment: var3
+    var10 = function() {
         _fun53863: for (var _fun53863_ip = 0;;) switch (_fun53863_ip) {
             case 0:
                 var0 = global;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CONNECTION_OPEN = var10;
     var1.LOAD_MESSAGES_SUCCESS = var9;
     var1.LOCAL_MESSAGES_LOADED = var9;
-    var9 = function(arg0) { // Original name: handleIncidentAlertMessageCreate, environment: var3
+    var9 = function arg0() {
         _fun53864: for (var _fun53864_ip = 0;;) switch (_fun53864_ip) {
             case 0:
                 var0 = arg0;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.MESSAGE_CREATE = var9;
     var1.MESSAGE_SEND_FAILED_AUTOMOD = var8;
     var1.MESSAGE_EDIT_FAILED_AUTOMOD = var8;
-    var8 = function(arg0) { // Original name: handleMessageNoticeRemove, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.messageId;
         var1 = _closure1_slot17;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.REMOVE_AUTOMOD_MESSAGE_NOTICE = var8;
-    var8 = function(arg0) { // Original name: handleMessageEndEdit, environment: var3
+    var8 = function arg0() {
         _fun53866: for (var _fun53866_ip = 0;;) switch (_fun53866_ip) {
             case 0:
                 var0 = arg0;
@@ -638,7 +638,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_END_EDIT = var8;
-    var8 = function(arg0) { // Original name: handleMentionRaidDetection, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var4 = var0.decisionId;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.AUTO_MODERATION_MENTION_RAID_DETECTION = var8;
-    var3 = function(arg0) { // Original name: handleMentionRaidNoticeDismiss, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var0 = _closure1_slot15;

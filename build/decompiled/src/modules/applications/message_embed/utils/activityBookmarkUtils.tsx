@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/applications/message_embed/utils/activityBookmarkUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: extractActivityBookmarkParams, environment: var1
+    var1 = function arg0() {
         _fun54218: for (var _fun54218_ip = 0;;) switch (_fun54218_ip) {
             case 0:
                 var2 = _closure1_slot0;

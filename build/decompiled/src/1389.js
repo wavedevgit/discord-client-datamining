@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: Yallist, environment: var0
+    var1 = function arg0() {
         _fun16262: for (var _fun16262_ip = 0;;) switch (_fun16262_ip) {
             case 0:
                 var3 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var1;
-    var2 = function(arg0, arg1) { // Original name: push, environment: var0
+    var2 = function arg0, arg1() {
         _fun16264: for (var _fun16264_ip = 0;;) switch (_fun16264_ip) {
             case 0:
                 var1 = arg0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: unshift, environment: var0
+    var2 = function arg0, arg1() {
         _fun16265: for (var _fun16265_ip = 0;;) switch (_fun16265_ip) {
             case 0:
                 var1 = arg0;
@@ -158,7 +158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: Node, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun16266: for (var _fun16266_ip = 0;;) switch (_fun16266_ip) {
             case 0:
                 var3 = arg0;

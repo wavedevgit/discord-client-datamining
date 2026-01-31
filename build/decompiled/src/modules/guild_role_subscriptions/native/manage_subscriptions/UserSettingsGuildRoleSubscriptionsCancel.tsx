@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: WhatYouLose, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.listingId;
         var26 = var0.guild;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: CancelSubscriptionButtonFooter, environment: var1
+    var0 = function arg0() {
         _fun84081: for (var _fun84081_ip = 0;;) switch (_fun84081_ip) {
             case 0:
                 var2 = arg0;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: Content, environment: var1
+    var0 = function arg0() {
         _fun84084: for (var _fun84084_ip = 0;;) switch (_fun84084_ip) {
             case 0:
                 var0 = arg0;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptionsCancel.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserSettingsGuildRoleSubscriptionsCancel, environment: var1
+    var1 = function arg0() {
         _fun84085: for (var _fun84085_ip = 0;;) switch (_fun84085_ip) {
             case 0:
                 var1 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function(arg0) { // Original name: useSyncAutomodRules, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var4 = _closure1_slot4;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2 = {};
         var0.rules = var2;
-        var2 = function(arg0) { // Original name: updateRule, environment: var1
+        var2 = function arg0() {
             _fun115045: for (var _fun115045_ip = 0;;) switch (_fun115045_ip) {
                 case 0:
                     var3 = arg0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.updateRule = var2;
-        var2 = function(arg0, arg1) { // Original name: removeRule, environment: var1
+        var2 = function arg0, arg1() {
             var3 = arg1;
             var0 = arg0;
             var _closure3_slot0 = var0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRuleCountByTriggerType = var4;
     var2.useSyncAutomodRules = var3;
-    var3 = function(arg0) { // Original name: useSyncAutomodRulesEffect, environment: var1
+    var3 = function arg0() {
         var6 = arg0;
         var1 = _closure1_slot9;
         var5 = undefined;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSyncAutomodRulesEffect = var3;
-    var1 = function(arg0) { // Original name: useAutomodRulesList, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot8;

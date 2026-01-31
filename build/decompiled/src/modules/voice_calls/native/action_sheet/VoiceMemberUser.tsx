@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var11.voiceStatusIcon;
             case 511:
                 var15 = {};
-                var0 = function() { // Original name: onPress, environment: var0
+                var0 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1 = var5.bind(var8)(var1);
     var _closure1_slot16 = var1;
-    var1 = function(arg0) { // Original name: StreamingUserRow, environment: var4
+    var1 = function arg0() {
         _fun91599: for (var _fun91599_ip = 0;;) switch (_fun91599_ip) {
             case 0:
                 var7 = arg0;
@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.userId = var12;
                 var12 = true;
                 var9.disableTransition = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     _fun91601: for (var _fun91601_ip = 0;;) switch (_fun91601_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -1089,7 +1089,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var1;
-    var1 = function(arg0) { // Original name: RingButton, environment: var4
+    var1 = function arg0() {
         _fun91602: for (var _fun91602_ip = 0;;) switch (_fun91602_ip) {
             case 0:
                 var0 = arg0;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
                 var2 = var1.PressableOpacity;
                 var1 = {};
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 34;
@@ -1195,7 +1195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var1;
-    var1 = function(arg0) { // Original name: StopRingButton, environment: var4
+    var1 = function arg0() {
         _fun91604: for (var _fun91604_ip = 0;;) switch (_fun91604_ip) {
             case 0:
                 var0 = arg0;
@@ -1228,7 +1228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
                 var2 = var1.PressableOpacity;
                 var1 = {};
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 34;
@@ -1301,7 +1301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot19 = var1;
     var5 = var8.memo;
-    var1 = function(arg0) { // Original name: DisconnectedUserRow, environment: var4
+    var1 = function arg0() {
         _fun91606: for (var _fun91606_ip = 0;;) switch (_fun91606_ip) {
             case 0:
                 var0 = arg0;
@@ -1369,7 +1369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'DisconnectedUserRow';
                 var6 = var6.bind(var12)(var9, var4);
                 var4 = {};
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot2;
                     var1 = _closure2_slot0;
                     var0 = undefined;

@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1, arg2) { // Original name: trackVoicePanelTabOpened, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun111472: for (var _fun111472_ip = 0;;) switch (_fun111472_ip) {
             case 0:
                 var3 = arg0;

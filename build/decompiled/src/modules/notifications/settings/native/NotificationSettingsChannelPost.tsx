@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsChannelPost.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: NotificationSettingsChannelPost, environment: var1
+    var1 = function arg0() {
         _fun69922: for (var _fun69922_ip = 0;;) switch (_fun69922_ip) {
             case 0:
                 var4 = arg0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 279:
                 var6.disabled = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 8;

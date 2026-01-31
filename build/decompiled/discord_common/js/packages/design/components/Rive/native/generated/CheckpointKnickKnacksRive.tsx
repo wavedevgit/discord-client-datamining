@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/design/components/Rive/native/generated/CheckpointKnickKnacksRive.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CheckpointKnickKnacksRive, environment: var1
+    var1 = function arg0() {
         _fun27440: for (var _fun27440_ip = 0;;) switch (_fun27440_ip) {
             case 0:
                 var2 = arg0;

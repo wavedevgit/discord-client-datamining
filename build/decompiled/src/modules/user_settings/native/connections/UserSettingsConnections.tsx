@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = -1;
     var2.ADD_CONNECTIONS_SHEET_SENTINEL = var3;
-    var1 = function(arg0) { // Original name: UserSettingsConnections, environment: var1
+    var1 = function arg0() {
         _fun82232: for (var _fun82232_ip = 0;;) switch (_fun82232_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: SafetyHubViolationsHeader, environment: var1
+    var0 = function arg0() {
         _fun88666: for (var _fun88666_ip = 0;;) switch (_fun88666_ip) {
             case 0:
                 var0 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: EmptyActiveState, environment: var1
+    var0 = function() {
         var0 = _closure1_slot14;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: EmptyExpiredState, environment: var1
+    var0 = function() {
         var0 = _closure1_slot14;
         var3 = undefined;
         var5 = var0.bind(var3)();
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: ClassificationDetail, environment: var1
+    var0 = function arg0() {
         _fun88669: for (var _fun88669_ip = 0;;) switch (_fun88669_ip) {
             case 0:
                 var0 = arg0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var7
                     _fun88670: for (var _fun88670_ip = 0;;) switch (_fun88670_ip) {
                         case 0:
-                            var10 = function(arg0, arg1) { // Original name: hook, environment: var0
+                            var10 = function arg0, arg1() {
                                 var4 = _closure1_slot11;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8[var4];
                 var5 = var5.bind(var3)(var4);
                 var4 = {};
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var3 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 19;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var3 = function(arg0) { // Original name: SafetyHubViolationsContainer, environment: var1
+    var3 = function arg0() {
         _fun88673: for (var _fun88673_ip = 0;;) switch (_fun88673_ip) {
             case 0:
                 var0 = arg0;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot17;
                 var4 = {};
                 var4.status = var13;
-                var8 = function() { // Original name: onClick, environment: var25
+                var8 = function() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = new Array(1);
                 var26[0] = var27;
                 var22.style = var26;
-                var25 = function() { // Original name: onPress, environment: var25
+                var25 = function() {
                     var2 = _closure2_slot4;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.headerTextContainer = var9;
     var4 = var7.bind(var8)(var4);
     var _closure1_slot14 = var4;
-    var4 = function(arg0) { // Original name: RelativeIncidentTime, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var9 = var0.timestamp;
         var0 = _closure1_slot14;
@@ -1253,7 +1253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var4;
-    var4 = function() { // Original name: NewBadge, environment: var1
+    var4 = function() {
         var0 = _closure1_slot14;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -1303,7 +1303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/safety_hub/native/SafetyHubViolationsContainer.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: ConnectedSafetyHubViolationsContainer, environment: var1
+    var1 = function() {
         _fun88685: for (var _fun88685_ip = 0;;) switch (_fun88685_ip) {
             case 0:
                 var0 = _closure1_slot14;

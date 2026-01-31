@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = '../discord_common/js/packages/libdave/package/src/DisplayableCode.ts';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1, arg2) { // Original name: generateDisplayableCode, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun66531: for (var _fun66531_ip = 0;;) switch (_fun66531_ip) {
             case 0:
                 var12 = arg0;

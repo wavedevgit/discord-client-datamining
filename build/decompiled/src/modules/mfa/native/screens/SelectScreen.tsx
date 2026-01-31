@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/screens/SelectScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelectScreen, environment: var1
+    var1 = function arg0() {
         var9 = arg0;
         var _closure2_slot0 = var9;
         var0 = _closure1_slot6;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = function(arg0) { // Environment: var8
             var4 = _closure2_slot0;
             var3 = _closure2_slot1;
-            var2 = function(arg0, arg1, arg2) { // Original name: getOptionButton, environment: var0
+            var2 = function arg0, arg1, arg2() {
                 var0 = arg1;
                 var1 = arg0;
                 var _closure4_slot0 = var1;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.type;
                 var6 = var7[var6];
                 var1.label = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var3 = _closure4_slot2;
                     var2 = var3.push;
                     var1 = _closure4_slot1;

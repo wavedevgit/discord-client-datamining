@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         _fun29041: for (var _fun29041_ip = 0;;) switch (_fun29041_ip) {
             case 0:
                 var0 = this;
-                var2 = function(arg0) { // Original name: capitalize, environment: var1
+                var2 = function arg0() {
                     var0 = global;
                     var2 = var0.String;
                     var1 = undefined;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot7 = var2;
-                var2 = function(arg0) { // Original name: format, environment: var1
+                var2 = function arg0() {
                     _fun29043: for (var _fun29043_ip = 0;;) switch (_fun29043_ip) {
                         case 0:
                             var2 = _closure2_slot13;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot8 = var2;
-                var6 = function(arg0, arg1) { // Original name: forOwn, environment: var1
+                var6 = function arg0, arg1() {
                     _fun29044: for (var _fun29044_ip = 0;;) switch (_fun29044_ip) {
                         case 0:
                             var8 = arg0;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot9 = var6;
-                var2 = function(arg0) { // Original name: getClassOf, environment: var1
+                var2 = function arg0() {
                     _fun29045: for (var _fun29045_ip = 0;;) switch (_fun29045_ip) {
                         case 0:
                             var3 = arg0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot10 = var2;
-                var2 = function(arg0) { // Original name: qualify, environment: var1
+                var2 = function arg0() {
                     var0 = global;
                     var2 = var0.String;
                     var1 = undefined;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot11 = var2;
-                var2 = function(arg0, arg1) { // Original name: reduce, environment: var1
+                var2 = function arg0, arg1() {
                     _fun29047: for (var _fun29047_ip = 0;;) switch (_fun29047_ip) {
                         case 0:
                             var5 = arg0;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot12 = var2;
-                var2 = function(arg0) { // Original name: trim, environment: var1
+                var2 = function arg0() {
                     var0 = global;
                     var2 = var0.String;
                     var1 = undefined;
@@ -343,7 +343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot4 = var3;
                 var0 = var0.toString;
                 var _closure2_slot5 = var0;
-                var3 = function(arg0) { // Original name: parse, environment: var1
+                var3 = function arg0() {
                     _fun29050: for (var _fun29050_ip = 0;;) switch (_fun29050_ip) {
                         case 0:
                             var0 = arg0;
@@ -354,7 +354,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = undefined;
                             var6 = undefined;
                             var5 = undefined;
-                            var46 = function(arg0) { // Original name: getProduct, environment: var4
+                            var46 = function arg0() {
                                 var3 = _closure2_slot12;
                                 var2 = undefined;
                                 var1 = arg0;
@@ -798,7 +798,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var11[7] = var2;
                             var2 = 'Gecko';
                             var11[8] = var2;
-                            var2 = function(arg0) { // Original name: getLayout, environment: var4
+                            var2 = function arg0() {
                                 var3 = _closure2_slot12;
                                 var2 = undefined;
                                 var1 = arg0;
@@ -953,7 +953,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var11[44] = var2;
                             var22 = 'Safari';
                             var11[45] = var22;
-                            var2 = function(arg0) { // Original name: getName, environment: var4
+                            var2 = function arg0() {
                                 var3 = _closure2_slot12;
                                 var2 = undefined;
                                 var1 = arg0;
@@ -1179,7 +1179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 'PlayStation Vita': 1
                             };
                             var14.Sony = var11;
-                            var11 = function(arg0) { // Original name: getManufacturer, environment: var4
+                            var11 = function arg0() {
                                 var3 = _closure2_slot12;
                                 var2 = undefined;
                                 var1 = arg0;
@@ -1299,7 +1299,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var25[27] = var14;
                             var14 = 'Windows ';
                             var25[28] = var14;
-                            var14 = function(arg0) { // Original name: getOS, environment: var4
+                            var14 = function arg0() {
                                 var3 = _closure2_slot12;
                                 var2 = undefined;
                                 var1 = arg0;
@@ -2046,7 +2046,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var44[2] = var29;
                             var29 = '(?:Firefox|Minefield|NetFront)';
                             var44[3] = var29;
-                            var29 = function(arg0) { // Original name: getVersion, environment: var4
+                            var29 = function arg0() {
                                 var3 = _closure2_slot12;
                                 var2 = undefined;
                                 var1 = arg0;
@@ -4513,7 +4513,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var17 = var19[var21];
                         case 9588:
                             var13.version = var17;
-                            var17 = function() { // Original name: toString, environment: var4
+                            var17 = function() {
                                 _fun29063: for (var _fun29063_ip = 0;;) switch (_fun29063_ip) {
                                     case 0:
                                         var2 = this;
@@ -4735,7 +4735,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 'family': null,
                                 'version': null
                             };
-                            var11 = function() { // Original name: toString, environment: var4
+                            var11 = function() {
                                 var0 = 'null';
                                 return var0;
                             };
@@ -4745,7 +4745,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0.os = var9;
                             var7 = _closure2_slot14;
                             var0.parse = var7;
-                            var4 = function() { // Original name: toStringPlatform, environment: var4
+                            var4 = function() {
                                 _fun29065: for (var _fun29065_ip = 0;;) switch (_fun29065_ip) {
                                     case 0:
                                         var0 = this;

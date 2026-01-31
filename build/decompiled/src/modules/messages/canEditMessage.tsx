@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/canEditMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: canEditMessage, environment: var1
+    var1 = function arg0, arg1() {
         _fun77262: for (var _fun77262_ip = 0;;) switch (_fun77262_ip) {
             case 0:
                 var10 = arg0;

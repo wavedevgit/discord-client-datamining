@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createStatic;
     var1 = {};
-    var8 = function() { // Original name: useAppVersionSettingTitle, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 1;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.ClydeIcon;
     var1.IconComponent = var8;
-    var7 = function() { // Original name: useAppVersionSettingTrailing, environment: var7
+    var7 = function() {
         _fun85568: for (var _fun85568_ip = 0;;) switch (_fun85568_ip) {
             case 0:
                 var1 = _closure1_slot0;

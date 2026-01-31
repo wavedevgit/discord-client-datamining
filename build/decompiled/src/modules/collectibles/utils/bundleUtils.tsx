@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: extractBundleItems, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/utils/bundleUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isValidCollectiblesBundle, environment: var1
+    var3 = function arg0() {
         _fun87051: for (var _fun87051_ip = 0;;) switch (_fun87051_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isValidCollectiblesBundle = var3;
-    var1 = function(arg0) { // Original name: bundleContainsNameplates, environment: var1
+    var1 = function arg0() {
         _fun87052: for (var _fun87052_ip = 0;;) switch (_fun87052_ip) {
             case 0:
                 var3 = arg0;

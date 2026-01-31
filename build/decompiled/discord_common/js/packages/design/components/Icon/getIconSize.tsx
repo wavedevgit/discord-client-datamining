@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = '../discord_common/js/packages/design/components/Icon/getIconSize.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: getIconSize, environment: var3
+    var3 = function arg0() {
         _fun103076: for (var _fun103076_ip = 0;;) switch (_fun103076_ip) {
             case 0:
                 var1 = arg0;

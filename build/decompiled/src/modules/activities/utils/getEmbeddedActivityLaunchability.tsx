@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function(arg0) { // Original name: getEmbeddedActivityLaunchability, environment: var1
+    var3 = function arg0() {
         _fun64182: for (var _fun64182_ip = 0;;) switch (_fun64182_ip) {
             case 0:
                 var0 = arg0;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.EmbeddedActivityLaunchability = var4;
     var2.getEmbeddedActivityLaunchability = var3;
-    var3 = function(arg0) { // Original name: getEmbeddedActivityLaunchabilityForChannel, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot9;
         var1 = {};
         var3 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getEmbeddedActivityLaunchabilityForChannel = var3;
-    var3 = function(arg0) { // Original name: useEmbeddedActivityLaunchability, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useEmbeddedActivityLaunchability = var3;
-    var1 = function(arg0) { // Original name: getEmbeddedActivityLaunchabilityLabel, environment: var1
+    var1 = function arg0() {
         _fun64186: for (var _fun64186_ip = 0;;) switch (_fun64186_ip) {
             case 0:
                 var2 = arg0;

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.globalThis;
     var _closure1_slot2 = var2;
     var1.GLOBAL_OBJ = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: getGlobalSingleton, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun58558: for (var _fun58558_ip = 0;;) switch (_fun58558_ip) {
             case 0:
                 var3 = arg0;

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/channel/native/openChannelPicker.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openChannelPicker, environment: var1
+    var1 = function arg0() {
         _fun76638: for (var _fun76638_ip = 0;;) switch (_fun76638_ip) {
             case 0:
                 var4 = arg0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun76638
                 }
             case 34:
-                var10 = function() { // Original name: h, environment: var7
+                var10 = function() {
                     var0 = true;
                     return var0;
                 };

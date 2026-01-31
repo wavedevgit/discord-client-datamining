@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/hooks/useBottomSheetFlashListBottomViewabilityInset.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useBottomSheetFlashListBottomViewabilityInset, environment: var1
+    var1 = function() {
         _fun107699: for (var _fun107699_ip = 0;;) switch (_fun107699_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var12[var9];
                 var5 = var10.bind(var11)(var3);
                 var4 = var5.useAnimatedReaction;
-                var3 = function() { // Original name: l, environment: var0
+                var3 = function() {
                     _fun107702: for (var _fun107702_ip = 0;;) switch (_fun107702_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var7;
                 var7 = _closure1_slot5;
                 var3.__initData = var7;
-                var0 = function(arg0) { // Original name: u, environment: var0
+                var0 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 5;

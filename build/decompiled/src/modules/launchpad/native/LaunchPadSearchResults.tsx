@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: renderItemJSX, environment: var1
+    var0 = function arg0() {
         _fun110051: for (var _fun110051_ip = 0;;) switch (_fun110051_ip) {
             case 0:
                 var0 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: renderSearchResultsSection, environment: var1
+    var0 = function() {
         var3 = _closure1_slot9;
         var2 = _closure1_slot15;
         var1 = {};
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var7)(var3);
     var _closure1_slot15 = var3;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: InitialResultsInner, environment: var1
+    var3 = function arg0() {
         _fun110058: for (var _fun110058_ip = 0;;) switch (_fun110058_ip) {
             case 0:
                 var1 = arg0;
@@ -896,7 +896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var4.bind(var7)(var3);
     var4 = var7.memo;
-    var1 = function(arg0) { // Original name: SearchResultsInner, environment: var1
+    var1 = function arg0() {
         _fun110063: for (var _fun110063_ip = 0;;) switch (_fun110063_ip) {
             case 0:
                 var1 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var11;
             var _closure1_slot1 = var8;
             var _closure1_slot2 = var12;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var10
+            var0 = function arg0, arg1() {
                 _fun60048: for (var _fun60048_ip = 0;;) switch (_fun60048_ip) {
                     case 0:
                         var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot22 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var10
+            var0 = function arg0, arg1() {
                 _fun60050: for (var _fun60050_ip = 0;;) switch (_fun60050_ip) {
                     case 0:
                         var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot23 = var0;
-            var7 = function(arg0) { // Original name: sanitizeFilename, environment: var10
+            var7 = function arg0() {
                 _fun60051: for (var _fun60051_ip = 0;;) switch (_fun60051_ip) {
                     case 0:
                         var0 = arg0;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot24 = var7;
-            var6 = function() { // Original name: getFileData, environment: var10
+            var6 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot26;
                 var2 = var3.apply;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot25 = var6;
-            var0 = function() { // Original name: _getFileData, environment: var10
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot4;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot26 = var0;
-            var5 = function(arg0) { // Original name: getImageData, environment: var10
+            var5 = function arg0() {
                 var2 = _closure1_slot25;
                 var1 = undefined;
                 var0 = arg0;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot27 = var5;
-            var0 = function(arg0) { // Original name: normalizeRunningGame, environment: var10
+            var0 = function arg0() {
                 _fun60057: for (var _fun60057_ip = 0;;) switch (_fun60057_ip) {
                     case 0:
                         var1 = arg0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot28 = var0;
-            var1 = function(arg0, arg1) { // Original name: decideFileExtension, environment: var10
+            var1 = function arg0, arg1() {
                 _fun60058: for (var _fun60058_ip = 0;;) switch (_fun60058_ip) {
                     case 0:
                         var3 = arg1;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var1;
-            var0 = function(arg0) { // Original name: backwardCompatSend, environment: var10
+            var0 = function arg0() {
                 _fun60059: for (var _fun60059_ip = 0;;) switch (_fun60059_ip) {
                     case 0:
                         var1 = arg0;
@@ -856,7 +856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = 'DISCONNECT';
             var3.DISCONNECT = var9;
             var9 = {};
-            var13 = function(arg0) { // Original name: requireModule, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.nativeModules;
                 var1 = var2.requireModule;
@@ -865,7 +865,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.requireModule = var13;
-            var13 = function(arg0) { // Original name: ensureModule, environment: var10
+            var13 = function arg0() {
                 _fun60062: for (var _fun60062_ip = 0;;) switch (_fun60062_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.ensureModule = var13;
-            var14 = function() { // Original name: get canBootstrapNewUpdater, environment: var10
+            var14 = function() {
                 _fun60063: for (var _fun60063_ip = 0;;) switch (_fun60063_ip) {
                     case 0:
                         var0 = _closure1_slot6;
@@ -930,7 +930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var13 = function() { // Original name: getCrashReporterMetadata, environment: var10
+            var13 = function() {
                 var0 = _closure1_slot6;
                 var1 = var0.crashReporter;
                 var0 = var1.getMetadata;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getCrashReporterMetadata = var13;
-            var13 = function(arg0, arg1) { // Original name: getSetting, environment: var10
+            var13 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -986,7 +986,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getSetting = var13;
-            var13 = function() { // Original name: beforeUnload, environment: var10
+            var13 = function() {
                 _fun60068: for (var _fun60068_ip = 0;;) switch (_fun60068_ip) {
                     case 0:
                         var5 = this;
@@ -1117,7 +1117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.beforeUnload = var13;
-            var13 = function(arg0, arg1, arg2, arg3) { // Original name: inputEventRegister, environment: var10
+            var13 = function arg0, arg1, arg2, arg3() {
                 var3 = arg1;
                 var1 = this;
                 var0 = var1.getDiscordUtils;
@@ -1227,7 +1227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.inputEventRegister = var13;
-            var13 = function(arg0) { // Original name: inputEventUnregister, environment: var10
+            var13 = function arg0() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var3 = var0.bind(var1)();
@@ -1241,7 +1241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.inputEventUnregister = var13;
-            var13 = function(arg0) { // Original name: setOnInputEventCallback, environment: var10
+            var13 = function arg0() {
                 _fun60072: for (var _fun60072_ip = 0;;) switch (_fun60072_ip) {
                     case 0:
                         var2 = this;
@@ -1267,7 +1267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setOnInputEventCallback = var13;
-            var13 = function(arg0) { // Original name: setFocused, environment: var10
+            var13 = function arg0() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var2 = var0.bind(var1)();
@@ -1278,7 +1278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setFocused = var13;
-            var13 = function(arg0, arg1, arg2, arg3) { // Original name: setObservedGamesCallback, environment: var10
+            var13 = function arg0, arg1, arg2, arg3() {
                 _fun60074: for (var _fun60074_ip = 0;;) switch (_fun60074_ip) {
                     case 0:
                         var9 = this;
@@ -1331,7 +1331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var2 = var8.bind(var9)(var7);
-                        var1 = function(arg0) { // Original name: normalizeCallback, environment: var5
+                        var1 = function arg0() {
                             var3 = arg0;
                             var2 = _closure2_slot0;
                             var1 = var3.map;
@@ -1396,7 +1396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setObservedGamesCallback = var13;
-            var13 = function(arg0) { // Original name: setGameDetectionCallback, environment: var10
+            var13 = function arg0() {
                 _fun60077: for (var _fun60077_ip = 0;;) switch (_fun60077_ip) {
                     case 0:
                         var2 = this;
@@ -1432,7 +1432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setGameDetectionCallback = var13;
-            var13 = function(arg0) { // Original name: setGameDetectionErrorCallback, environment: var10
+            var13 = function arg0() {
                 _fun60079: for (var _fun60079_ip = 0;;) switch (_fun60079_ip) {
                     case 0:
                         var1 = this;
@@ -1454,7 +1454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setGameDetectionErrorCallback = var13;
-            var13 = function(arg0, arg1) { // Original name: setRobloxSubgameDetectionConfig, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60080: for (var _fun60080_ip = 0;;) switch (_fun60080_ip) {
                     case 0:
                         var1 = this;
@@ -1477,7 +1477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setRobloxSubgameDetectionConfig = var13;
-            var13 = function() { // Original name: checkForRobloxSubgameUpdate, environment: var10
+            var13 = function() {
                 _fun60081: for (var _fun60081_ip = 0;;) switch (_fun60081_ip) {
                     case 0:
                         var1 = this;
@@ -1498,7 +1498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.checkForRobloxSubgameUpdate = var13;
-            var13 = function(arg0) { // Original name: setCandidateGamesCallback, environment: var10
+            var13 = function arg0() {
                 var2 = this;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -1520,7 +1520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setCandidateGamesCallback = var13;
-            var13 = function() { // Original name: clearCandidateGamesCallback, environment: var10
+            var13 = function() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var1 = var0.bind(var1)();
@@ -1530,7 +1530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.clearCandidateGamesCallback = var13;
-            var13 = function(arg0) { // Original name: setGameCandidateOverrides, environment: var10
+            var13 = function arg0() {
                 var4 = arg0;
                 var1 = this;
                 var0 = var1.getDiscordUtils;
@@ -1557,7 +1557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setGameCandidateOverrides = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: setObserverDebugCallback, environment: var10
+            var13 = function arg0, arg1, arg2() {
                 var2 = this;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -1578,7 +1578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setObserverDebugCallback = var13;
-            var13 = function() { // Original name: clearObserverDebugCallback, environment: var10
+            var13 = function() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var5 = var0.bind(var1)();
@@ -1597,7 +1597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.clearObserverDebugCallback = var13;
-            var13 = function() { // Original name: shouldDisplayNotifications, environment: var10
+            var13 = function() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var1 = var0.bind(var1)();
@@ -1606,7 +1606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.shouldDisplayNotifications = var13;
-            var13 = function() { // Original name: getVoiceEngine, environment: var10
+            var13 = function() {
                 _fun60091: for (var _fun60091_ip = 0;;) switch (_fun60091_ip) {
                     case 0:
                         var3 = this;
@@ -1651,7 +1651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getVoiceEngine = var13;
-            var13 = function() { // Original name: getDiscordUtils, environment: var10
+            var13 = function() {
                 _fun60093: for (var _fun60093_ip = 0;;) switch (_fun60093_ip) {
                     case 0:
                         var2 = this;
@@ -1676,7 +1676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getDiscordUtils = var13;
-            var13 = function() { // Original name: isSystemDarkMode, environment: var10
+            var13 = function() {
                 _fun60094: for (var _fun60094_ip = 0;;) switch (_fun60094_ip) {
                     case 0:
                         var3 = this;
@@ -1723,7 +1723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.isSystemDarkMode = var13;
-            var13 = function() { // Original name: getVoiceFilters, environment: var10
+            var13 = function() {
                 var2 = this;
                 var1 = var2.requireModule;
                 var0 = 'discord_voice_filters';
@@ -1731,7 +1731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getVoiceFilters = var13;
-            var13 = function() { // Original name: getGameUtils, environment: var10
+            var13 = function() {
                 var2 = this;
                 var1 = var2.requireModule;
                 var0 = 'discord_game_utils';
@@ -1739,7 +1739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getGameUtils = var13;
-            var13 = function() { // Original name: getCloudSync, environment: var10
+            var13 = function() {
                 var2 = this;
                 var1 = var2.requireModule;
                 var0 = 'discord_cloudsync';
@@ -1747,7 +1747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getCloudSync = var13;
-            var13 = function() { // Original name: getDispatch, environment: var10
+            var13 = function() {
                 var2 = this;
                 var1 = var2.requireModule;
                 var0 = 'discord_dispatch';
@@ -1755,7 +1755,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getDispatch = var13;
-            var13 = function(arg0) { // Original name: setBadge, environment: var10
+            var13 = function arg0() {
                 _fun60099: for (var _fun60099_ip = 0;;) switch (_fun60099_ip) {
                     case 0:
                         var5 = arg0;
@@ -1851,7 +1851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setBadge = var13;
-            var13 = function(arg0) { // Original name: setSystemTrayIcon, environment: var10
+            var13 = function arg0() {
                 _fun60100: for (var _fun60100_ip = 0;;) switch (_fun60100_ip) {
                     case 0:
                         var4 = this;
@@ -1876,7 +1876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setSystemTrayIcon = var13;
-            var13 = function(arg0) { // Original name: setThumbarButtons, environment: var10
+            var13 = function arg0() {
                 _fun60101: for (var _fun60101_ip = 0;;) switch (_fun60101_ip) {
                     case 0:
                         var2 = this;
@@ -1919,7 +1919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setThumbarButtons = var13;
-            var13 = function(arg0) { // Original name: bounceDock, environment: var10
+            var13 = function arg0() {
                 _fun60102: for (var _fun60102_ip = 0;;) switch (_fun60102_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -1993,7 +1993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.bounceDock = var13;
-            var13 = function(arg0) { // Original name: setSystemTrayApplications, environment: var10
+            var13 = function arg0() {
                 _fun60105: for (var _fun60105_ip = 0;;) switch (_fun60105_ip) {
                     case 0:
                         var4 = this;
@@ -2018,7 +2018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setSystemTrayApplications = var13;
-            var14 = function() { // Original name: get architecture, environment: var10
+            var14 = function() {
                 _fun60106: for (var _fun60106_ip = 0;;) switch (_fun60106_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -2047,7 +2047,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var14 = function() { // Original name: get releaseChannel, environment: var10
+            var14 = function() {
                 _fun60107: for (var _fun60107_ip = 0;;) switch (_fun60107_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -2088,7 +2088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var14 = function() { // Original name: get version, environment: var10
+            var14 = function() {
                 var0 = _closure1_slot9;
                 return var0;
             };
@@ -2098,7 +2098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var14 = function() { // Original name: get buildNumber, environment: var10
+            var14 = function() {
                 var0 = _closure1_slot10;
                 return var0;
             };
@@ -2108,7 +2108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var14 = function() { // Original name: get moduleVersions, environment: var10
+            var14 = function() {
                 var0 = _closure1_slot11;
                 return var0;
             };
@@ -2118,7 +2118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var14 = function() { // Original name: get parsedOSRelease, environment: var10
+            var14 = function() {
                 _fun60111: for (var _fun60111_ip = 0;;) switch (_fun60111_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -2164,7 +2164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 set: var0,
                 enumerable: true
             });
-            var13 = function(arg0) { // Original name: copy, environment: var10
+            var13 = function arg0() {
                 _fun60113: for (var _fun60113_ip = 0;;) switch (_fun60113_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -2189,7 +2189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.copy = var13;
-            var13 = function(arg0, arg1) { // Original name: copyImage, environment: var10
+            var13 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -2293,7 +2293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.copyImage = var13;
-            var13 = function(arg0, arg1) { // Original name: copyImageBlob, environment: var10
+            var13 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -2348,7 +2348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.copyImageBlob = var13;
-            var13 = function(arg0, arg1) { // Original name: canSaveImage, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60120: for (var _fun60120_ip = 0;;) switch (_fun60120_ip) {
                     case 0:
                         var5 = arg0;
@@ -2390,7 +2390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.canSaveImage = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: saveImage, environment: var10
+            var13 = function arg0, arg1, arg2() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -2707,7 +2707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.saveImage = var13;
-            var13 = function(arg0, arg1) { // Original name: saveFile, environment: var10
+            var13 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -2844,7 +2844,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.saveFile = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: downloadVoiceFilterFile, environment: var10
+            var13 = function arg0, arg1, arg2() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -2917,7 +2917,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.downloadVoiceFilterFile = var13;
-            var13 = function() { // Original name: stopVoiceFilterDownloads, environment: var10
+            var13 = function() {
                 var0 = _closure1_slot6;
                 var1 = var0.fileManager;
                 var0 = var1.stopVoiceFilterDownloads;
@@ -2926,7 +2926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.stopVoiceFilterDownloads = var13;
-            var13 = function() { // Original name: canCheckVoiceFilterFilesExist, environment: var10
+            var13 = function() {
                 var0 = _closure1_slot6;
                 var0 = var0.fileManager;
                 var0 = var0.checkVoiceFilterFilesExist;
@@ -2936,7 +2936,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.canCheckVoiceFilterFilesExist = var13;
-            var13 = function(arg0) { // Original name: checkVoiceFilterFilesExist, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var2 = _closure1_slot4;
@@ -2981,7 +2981,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.checkVoiceFilterFilesExist = var13;
-            var13 = function(arg0) { // Original name: cleanupUnusedVoiceFilterFiles, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var2 = _closure1_slot4;
@@ -3026,7 +3026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.cleanupUnusedVoiceFilterFiles = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: downloadMLModelFile, environment: var10
+            var13 = function arg0, arg1, arg2() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -3099,7 +3099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.downloadMLModelFile = var13;
-            var13 = function() { // Original name: stopMLModelDownloads, environment: var10
+            var13 = function() {
                 var0 = _closure1_slot6;
                 var1 = var0.fileManager;
                 var0 = var1.stopMLModelDownloads;
@@ -3108,7 +3108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.stopMLModelDownloads = var13;
-            var13 = function() { // Original name: canCheckMLModelFilesExist, environment: var10
+            var13 = function() {
                 var0 = _closure1_slot6;
                 var0 = var0.fileManager;
                 var0 = var0.checkMLModelFilesExist;
@@ -3118,7 +3118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.canCheckMLModelFilesExist = var13;
-            var13 = function(arg0) { // Original name: checkMLModelFilesExist, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var2 = _closure1_slot4;
@@ -3163,7 +3163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.checkMLModelFilesExist = var13;
-            var13 = function(arg0) { // Original name: cleanupUnusedMLModelFiles, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var2 = _closure1_slot4;
@@ -3208,7 +3208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.cleanupUnusedMLModelFiles = var13;
-            var13 = function() { // Original name: canCopyImage, environment: var10
+            var13 = function() {
                 _fun60149: for (var _fun60149_ip = 0;;) switch (_fun60149_ip) {
                     case 0:
                         var4 = arguments[0];
@@ -3276,7 +3276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.canCopyImage = var13;
-            var13 = function() { // Original name: cut, environment: var10
+            var13 = function() {
                 _fun60150: for (var _fun60150_ip = 0;;) switch (_fun60150_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -3300,7 +3300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.cut = var13;
-            var13 = function() { // Original name: paste, environment: var10
+            var13 = function() {
                 _fun60151: for (var _fun60151_ip = 0;;) switch (_fun60151_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -3324,7 +3324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.paste = var13;
-            var13 = function() { // Original name: readClipboard, environment: var10
+            var13 = function() {
                 _fun60152: for (var _fun60152_ip = 0;;) switch (_fun60152_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -3349,7 +3349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.readClipboard = var13;
-            var13 = function() { // Original name: clipboardHasMixedContent, environment: var10
+            var13 = function() {
                 _fun60153: for (var _fun60153_ip = 0;;) switch (_fun60153_ip) {
                     case 0:
                         var1 = _closure1_slot0;
@@ -3396,7 +3396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.clipboardHasMixedContent = var13;
-            var13 = function(arg0, arg1) { // Original name: on, environment: var10
+            var13 = function arg0, arg1() {
                 var0 = _closure1_slot6;
                 var3 = var0.ipc;
                 var2 = var3.on;
@@ -3407,7 +3407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.on = var13;
-            var13 = function(arg0, arg1) { // Original name: invoke, environment: var10
+            var13 = function arg0, arg1() {
                 var4 = 1;
                 var8 = var4;
                 var7 = copyRestArgs(var8);
@@ -3427,7 +3427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.invoke = var13;
-            var13 = function(arg0, arg1) { // Original name: send, environment: var10
+            var13 = function arg0, arg1() {
                 var4 = 1;
                 var8 = var4;
                 var7 = copyRestArgs(var8);
@@ -3448,7 +3448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.send = var13;
-            var13 = function() { // Original name: isIPCReady, environment: var10
+            var13 = function() {
                 _fun60157: for (var _fun60157_ip = 0;;) switch (_fun60157_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -3500,7 +3500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.isIPCReady = var13;
-            var13 = function() { // Original name: waitForIPCReady, environment: var10
+            var13 = function() {
                 _fun60158: for (var _fun60158_ip = 0;;) switch (_fun60158_ip) {
                     case 0:
                         var3 = arguments[0];
@@ -3615,7 +3615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.waitForIPCReady = var13;
-            var13 = function(arg0) { // Original name: flashFrame, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.window;
                 var1 = var2.flashFrame;
@@ -3625,7 +3625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.flashFrame = var13;
-            var13 = function(arg0) { // Original name: webAuthnRegister, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = _closure1_slot6;
@@ -3646,7 +3646,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.webAuthnRegister = var13;
-            var13 = function(arg0) { // Original name: webAuthnAuthenticate, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = _closure1_slot6;
@@ -3667,7 +3667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.webAuthnAuthenticate = var13;
-            var13 = function(arg0) { // Original name: minimize, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.window;
                 var1 = var2.minimize;
@@ -3677,7 +3677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.minimize = var13;
-            var13 = function(arg0) { // Original name: restore, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.window;
                 var1 = var2.restore;
@@ -3687,7 +3687,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.restore = var13;
-            var13 = function(arg0) { // Original name: maximize, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.window;
                 var1 = var2.maximize;
@@ -3697,7 +3697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.maximize = var13;
-            var13 = function(arg0) { // Original name: focus, environment: var10
+            var13 = function arg0() {
                 _fun60170: for (var _fun60170_ip = 0;;) switch (_fun60170_ip) {
                     case 0:
                         var4 = arguments[1];
@@ -3742,7 +3742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.focus = var13;
-            var13 = function() { // Original name: blur, environment: var10
+            var13 = function() {
                 _fun60171: for (var _fun60171_ip = 0;;) switch (_fun60171_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -3782,7 +3782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.blur = var13;
-            var13 = function(arg0) { // Original name: fullscreen, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.window;
                 var1 = var2.fullscreen;
@@ -3792,7 +3792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.fullscreen = var13;
-            var13 = function(arg0) { // Original name: close, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.window;
                 var1 = var2.close;
@@ -3802,7 +3802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.close = var13;
-            var13 = function(arg0, arg1) { // Original name: setAlwaysOnTop, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60174: for (var _fun60174_ip = 0;;) switch (_fun60174_ip) {
                     case 0:
                         var1 = _closure1_slot6;
@@ -3827,7 +3827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setAlwaysOnTop = var13;
-            var13 = function(arg0) { // Original name: isAlwaysOnTop, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var2 = _closure1_slot4;
@@ -3884,7 +3884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.isAlwaysOnTop = var13;
-            var13 = function(arg0) { // Original name: showInactive, environment: var10
+            var13 = function arg0() {
                 _fun60178: for (var _fun60178_ip = 0;;) switch (_fun60178_ip) {
                     case 0:
                         var0 = _closure1_slot6;
@@ -3925,7 +3925,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.showInactive = var13;
-            var13 = function(arg0, arg1) { // Original name: setMinimumSize, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60179: for (var _fun60179_ip = 0;;) switch (_fun60179_ip) {
                     case 0:
                         var0 = _closure1_slot6;
@@ -3965,7 +3965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setMinimumSize = var13;
-            var13 = function(arg0) { // Original name: setTrafficLightPosition, environment: var10
+            var13 = function arg0() {
                 _fun60180: for (var _fun60180_ip = 0;;) switch (_fun60180_ip) {
                     case 0:
                         var4 = this;
@@ -4008,7 +4008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setTrafficLightPosition = var13;
-            var13 = function() { // Original name: purgeMemory, environment: var10
+            var13 = function() {
                 _fun60181: for (var _fun60181_ip = 0;;) switch (_fun60181_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -4032,7 +4032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.purgeMemory = var13;
-            var13 = function(arg0) { // Original name: updateCrashReporter, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.crashReporter;
                 var1 = var2.updateCrashReporter;
@@ -4042,7 +4042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.updateCrashReporter = var13;
-            var13 = function(arg0) { // Original name: triggerJSException, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.crashReporter;
                 var1 = var2.triggerJSException;
@@ -4052,7 +4052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.triggerJSException = var13;
-            var13 = function() { // Original name: flushDNSCache, environment: var10
+            var13 = function() {
                 _fun60184: for (var _fun60184_ip = 0;;) switch (_fun60184_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -4076,7 +4076,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.flushDNSCache = var13;
-            var13 = function(arg0) { // Original name: supportsFeature, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.features;
                 var1 = var2.supports;
@@ -4085,7 +4085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.supportsFeature = var13;
-            var13 = function() { // Original name: getEnableHardwareAcceleration, environment: var10
+            var13 = function() {
                 _fun60186: for (var _fun60186_ip = 0;;) switch (_fun60186_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -4110,7 +4110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getEnableHardwareAcceleration = var13;
-            var13 = function(arg0) { // Original name: setEnableHardwareAcceleration, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.gpuSettings;
                 var1 = var2.setEnableHardwareAcceleration;
@@ -4120,7 +4120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setEnableHardwareAcceleration = var13;
-            var13 = function(arg0) { // Original name: setChromiumSwitches, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.gpuSettings;
                 var1 = var2.setChromiumSwitches;
@@ -4130,7 +4130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setChromiumSwitches = var13;
-            var13 = function(arg0, arg1) { // Original name: setSetting, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60189: for (var _fun60189_ip = 0;;) switch (_fun60189_ip) {
                     case 0:
                         var1 = _closure1_slot6;
@@ -4154,7 +4154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setSetting = var13;
-            var13 = function() { // Original name: getOpenOnStart, environment: var10
+            var13 = function() {
                 var2 = _closure1_slot4;
                 var1 = undefined;
                 var0 = function*() { // Environment: var0
@@ -4233,7 +4233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.getOpenOnStart = var13;
-            var13 = function() { // Original name: getGPUDriverVersions, environment: var10
+            var13 = function() {
                 _fun60193: for (var _fun60193_ip = 0;;) switch (_fun60193_ip) {
                     case 0:
                         var2 = this;
@@ -4279,7 +4279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getGPUDriverVersions = var13;
-            var13 = function(arg0) { // Original name: setZoomFactor, environment: var10
+            var13 = function arg0() {
                 _fun60194: for (var _fun60194_ip = 0;;) switch (_fun60194_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -4307,7 +4307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setZoomFactor = var13;
-            var13 = function(arg0) { // Original name: setBackgroundThrottling, environment: var10
+            var13 = function arg0() {
                 _fun60195: for (var _fun60195_ip = 0;;) switch (_fun60195_ip) {
                     case 0:
                         var2 = arg0;
@@ -4338,7 +4338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setBackgroundThrottling = var13;
-            var13 = function(arg0, arg1) { // Original name: setFocusable, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60196: for (var _fun60196_ip = 0;;) switch (_fun60196_ip) {
                     case 0:
                         var1 = _closure1_slot6;
@@ -4363,7 +4363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setFocusable = var13;
-            var13 = function() { // Original name: pauseFrameEvictor, environment: var10
+            var13 = function() {
                 _fun60197: for (var _fun60197_ip = 0;;) switch (_fun60197_ip) {
                     case 0:
                         var1 = _closure1_slot6;
@@ -4385,7 +4385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.pauseFrameEvictor = var13;
-            var13 = function() { // Original name: unpauseFrameEvictor, environment: var10
+            var13 = function() {
                 _fun60198: for (var _fun60198_ip = 0;;) switch (_fun60198_ip) {
                     case 0:
                         var1 = _closure1_slot6;
@@ -4407,7 +4407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.unpauseFrameEvictor = var13;
-            var13 = function() { // Original name: getPreferredSystemLanguages, environment: var10
+            var13 = function() {
                 _fun60199: for (var _fun60199_ip = 0;;) switch (_fun60199_ip) {
                     case 0:
                         var0 = _closure1_slot6;
@@ -4430,7 +4430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getPreferredSystemLanguages = var13;
-            var13 = function(arg0) { // Original name: getPidFromDesktopSource, environment: var10
+            var13 = function arg0() {
                 _fun60200: for (var _fun60200_ip = 0;;) switch (_fun60200_ip) {
                     case 0:
                         var6 = arg0;
@@ -4549,7 +4549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getPidFromDesktopSource = var13;
-            var13 = function(arg0) { // Original name: getDesktopSourceFromPid, environment: var10
+            var13 = function arg0() {
                 _fun60201: for (var _fun60201_ip = 0;;) switch (_fun60201_ip) {
                     case 0:
                         var2 = arg0;
@@ -4615,7 +4615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getDesktopSourceFromPid = var13;
-            var13 = function(arg0) { // Original name: generateSessionFromPid, environment: var10
+            var13 = function arg0() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var2 = var0.bind(var1)();
@@ -4625,7 +4625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.generateSessionFromPid = var13;
-            var13 = function(arg0) { // Original name: getAudioPid, environment: var10
+            var13 = function arg0() {
                 _fun60203: for (var _fun60203_ip = 0;;) switch (_fun60203_ip) {
                     case 0:
                         var3 = arg0;
@@ -4655,7 +4655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getAudioPid = var13;
-            var13 = function(arg0) { // Original name: setForegroundProcess, environment: var10
+            var13 = function arg0() {
                 _fun60204: for (var _fun60204_ip = 0;;) switch (_fun60204_ip) {
                     case 0:
                         var4 = this;
@@ -4685,7 +4685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setForegroundProcess = var13;
-            var13 = function() { // Original name: getDiscordMemoryUsage, environment: var10
+            var13 = function() {
                 _fun60205: for (var _fun60205_ip = 0;;) switch (_fun60205_ip) {
                     case 0:
                         var1 = this;
@@ -4706,7 +4706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getDiscordMemoryUsage = var13;
-            var13 = function() { // Original name: getDiscordMemoryUsageElectronRenderer, environment: var10
+            var13 = function() {
                 _fun60206: for (var _fun60206_ip = 0;;) switch (_fun60206_ip) {
                     case 0:
                         var1 = this;
@@ -4728,7 +4728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getDiscordMemoryUsageElectronRenderer = var13;
-            var13 = function() { // Original name: getDiscordMemoryPrivateUsageElectronRenderer, environment: var10
+            var13 = function() {
                 _fun60207: for (var _fun60207_ip = 0;;) switch (_fun60207_ip) {
                     case 0:
                         var1 = this;
@@ -4750,7 +4750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getDiscordMemoryPrivateUsageElectronRenderer = var13;
-            var13 = function() { // Original name: getDiscordMemoryUsageElectronProcessTypeDetails, environment: var10
+            var13 = function() {
                 _fun60208: for (var _fun60208_ip = 0;;) switch (_fun60208_ip) {
                     case 0:
                         var1 = this;
@@ -4772,7 +4772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getDiscordMemoryUsageElectronProcessTypeDetails = var13;
-            var13 = function(arg0) { // Original name: enablePerfMemoryHooks, environment: var10
+            var13 = function arg0() {
                 _fun60209: for (var _fun60209_ip = 0;;) switch (_fun60209_ip) {
                     case 0:
                         var1 = this;
@@ -4795,7 +4795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.enablePerfMemoryHooks = var13;
-            var13 = function() { // Original name: disablePerfMemoryHooks, environment: var10
+            var13 = function() {
                 _fun60210: for (var _fun60210_ip = 0;;) switch (_fun60210_ip) {
                     case 0:
                         var1 = this;
@@ -4817,7 +4817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.disablePerfMemoryHooks = var13;
-            var13 = function() { // Original name: getPerfAttributedMemory, environment: var10
+            var13 = function() {
                 _fun60211: for (var _fun60211_ip = 0;;) switch (_fun60211_ip) {
                     case 0:
                         var1 = this;
@@ -4839,7 +4839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getPerfAttributedMemory = var13;
-            var13 = function(arg0) { // Original name: getPerfAttributedMemoryCallstacks, environment: var10
+            var13 = function arg0() {
                 _fun60212: for (var _fun60212_ip = 0;;) switch (_fun60212_ip) {
                     case 0:
                         var1 = this;
@@ -4862,7 +4862,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getPerfAttributedMemoryCallstacks = var13;
-            var13 = function() { // Original name: getPerfAttributedMemoryStats, environment: var10
+            var13 = function() {
                 _fun60213: for (var _fun60213_ip = 0;;) switch (_fun60213_ip) {
                     case 0:
                         var1 = this;
@@ -4884,7 +4884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.getPerfAttributedMemoryStats = var13;
-            var13 = function(arg0) { // Original name: startCPUProfiling, environment: var10
+            var13 = function arg0() {
                 _fun60214: for (var _fun60214_ip = 0;;) switch (_fun60214_ip) {
                     case 0:
                         var1 = this;
@@ -4907,7 +4907,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.startCPUProfiling = var13;
-            var13 = function() { // Original name: stopCPUProfiling, environment: var10
+            var13 = function() {
                 var1 = this;
                 var _closure2_slot0 = var1;
                 var2 = _closure1_slot4;
@@ -4990,7 +4990,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.stopCPUProfiling = var13;
-            var13 = function(arg0) { // Original name: gzipAndBase64Encode, environment: var10
+            var13 = function arg0() {
                 _fun60218: for (var _fun60218_ip = 0;;) switch (_fun60218_ip) {
                     case 0:
                         var1 = this;
@@ -5023,7 +5023,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.gzipAndBase64Encode = var13;
-            var13 = function(arg0) { // Original name: showOpenDialog, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var2 = var0.fileManager;
                 var1 = var2.showOpenDialog;
@@ -5034,7 +5034,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.showOpenDialog = var13;
-            var13 = function() { // Original name: flushStorageData, environment: var10
+            var13 = function() {
                 _fun60220: for (var _fun60220_ip = 0;;) switch (_fun60220_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -5135,7 +5135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.flushStorageData = var13;
-            var13 = function() { // Original name: flushCookies, environment: var10
+            var13 = function() {
                 _fun60223: for (var _fun60223_ip = 0;;) switch (_fun60223_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -5236,7 +5236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.flushCookies = var13;
-            var13 = function(arg0, arg1) { // Original name: setCrashInformation, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60226: for (var _fun60226_ip = 0;;) switch (_fun60226_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -5289,7 +5289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.setCrashInformation = var13;
-            var13 = function() { // Original name: blockDisplaySleep, environment: var10
+            var13 = function() {
                 _fun60227: for (var _fun60227_ip = 0;;) switch (_fun60227_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -5324,7 +5324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.blockDisplaySleep = var13;
-            var13 = function(arg0) { // Original name: unblockDisplaySleep, environment: var10
+            var13 = function arg0() {
                 _fun60228: for (var _fun60228_ip = 0;;) switch (_fun60228_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -5359,7 +5359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.unblockDisplaySleep = var13;
-            var13 = function() { // Original name: cleanupDisplaySleep, environment: var10
+            var13 = function() {
                 _fun60229: for (var _fun60229_ip = 0;;) switch (_fun60229_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -5393,7 +5393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.cleanupDisplaySleep = var13;
-            var13 = function() { // Original name: relaunch, environment: var10
+            var13 = function() {
                 _fun60230: for (var _fun60230_ip = 0;;) switch (_fun60230_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -5428,7 +5428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.relaunch = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: makeChunkedRequest, environment: var10
+            var13 = function arg0, arg1, arg2() {
                 _fun60231: for (var _fun60231_ip = 0;;) switch (_fun60231_ip) {
                     case 0:
                         var7 = arg1;
@@ -5664,7 +5664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.makeChunkedRequest = var13;
-            var13 = function(arg0) { // Original name: submitLiveCrashReport, environment: var10
+            var13 = function arg0() {
                 _fun60234: for (var _fun60234_ip = 0;;) switch (_fun60234_ip) {
                     case 0:
                         var1 = this;
@@ -5726,7 +5726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.submitLiveCrashReport = var13;
-            var13 = function(arg0) { // Original name: crash, environment: var10
+            var13 = function arg0() {
                 _fun60235: for (var _fun60235_ip = 0;;) switch (_fun60235_ip) {
                     case 0:
                         var1 = this;
@@ -5749,7 +5749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.crash = var13;
-            var13 = function(arg0) { // Original name: setApplicationBackgroundColor, environment: var10
+            var13 = function arg0() {
                 var0 = _closure1_slot6;
                 var3 = var0.ipc;
                 var2 = var3.send;
@@ -5760,7 +5760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.setApplicationBackgroundColor = var13;
-            var13 = function() { // Original name: initializeExitHook, environment: var10
+            var13 = function() {
                 _fun60237: for (var _fun60237_ip = 0;;) switch (_fun60237_ip) {
                     case 0:
                         var1 = this;
@@ -5781,7 +5781,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.initializeExitHook = var13;
-            var13 = function() { // Original name: initializeWERHandler, environment: var10
+            var13 = function() {
                 _fun60238: for (var _fun60238_ip = 0;;) switch (_fun60238_ip) {
                     case 0:
                         var1 = this;
@@ -5802,7 +5802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.initializeWERHandler = var13;
-            var13 = function(arg0) { // Original name: pollQueueMetrics, environment: var10
+            var13 = function arg0() {
                 _fun60239: for (var _fun60239_ip = 0;;) switch (_fun60239_ip) {
                     case 0:
                         var1 = this;
@@ -5824,7 +5824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.pollQueueMetrics = var13;
-            var13 = function(arg0) { // Original name: asyncify, environment: var10
+            var13 = function arg0() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = global;
@@ -5848,7 +5848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.asyncify = var13;
-            var13 = function() { // Original name: IsGameDisplayModeUpdateSupported, environment: var10
+            var13 = function() {
                 var1 = this;
                 var0 = var1.getDiscordUtils;
                 var0 = var0.bind(var1)();
@@ -5858,7 +5858,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.IsGameDisplayModeUpdateSupported = var13;
-            var13 = function(arg0) { // Original name: GameDisplayModeUpdate, environment: var10
+            var13 = function arg0() {
                 _fun60243: for (var _fun60243_ip = 0;;) switch (_fun60243_ip) {
                     case 0:
                         var3 = arg0;
@@ -5887,7 +5887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.GameDisplayModeUpdate = var13;
-            var13 = function(arg0) { // Original name: GameDisplayModeIsGameSupported, environment: var10
+            var13 = function arg0() {
                 _fun60244: for (var _fun60244_ip = 0;;) switch (_fun60244_ip) {
                     case 0:
                         var3 = arg0;
@@ -5916,7 +5916,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.GameDisplayModeIsGameSupported = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: GetWindowFullscreenTypeByPid, environment: var10
+            var13 = function arg0, arg1, arg2() {
                 _fun60245: for (var _fun60245_ip = 0;;) switch (_fun60245_ip) {
                     case 0:
                         var6 = arg0;
@@ -5984,7 +5984,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.GetWindowFullscreenTypeByPid = var13;
-            var13 = function(arg0, arg1) { // Original name: GetWindowFullscreenTypeExtraByPid, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60246: for (var _fun60246_ip = 0;;) switch (_fun60246_ip) {
                     case 0:
                         var3 = arg1;
@@ -6025,7 +6025,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.GetWindowFullscreenTypeExtraByPid = var13;
-            var13 = function(arg0, arg1) { // Original name: SetGPUBoostEnabledByPid, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60247: for (var _fun60247_ip = 0;;) switch (_fun60247_ip) {
                     case 0:
                         var1 = this;
@@ -6048,7 +6048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.SetGPUBoostEnabledByPid = var13;
-            var13 = function() { // Original name: IsHardwareAcceleratedGPUSchedulingEnabled, environment: var10
+            var13 = function() {
                 _fun60248: for (var _fun60248_ip = 0;;) switch (_fun60248_ip) {
                     case 0:
                         var1 = this;
@@ -6069,7 +6069,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.IsHardwareAcceleratedGPUSchedulingEnabled = var13;
-            var13 = function(arg0) { // Original name: AcquireGlobalLock, environment: var10
+            var13 = function arg0() {
                 _fun60249: for (var _fun60249_ip = 0;;) switch (_fun60249_ip) {
                     case 0:
                         var1 = this;
@@ -6092,7 +6092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.AcquireGlobalLock = var13;
-            var13 = function(arg0) { // Original name: SetServiceChannel, environment: var10
+            var13 = function arg0() {
                 _fun60250: for (var _fun60250_ip = 0;;) switch (_fun60250_ip) {
                     case 0:
                         var1 = this;
@@ -6114,7 +6114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.SetServiceChannel = var13;
-            var13 = function() { // Original name: IsSystemServiceInstalled, environment: var10
+            var13 = function() {
                 _fun60251: for (var _fun60251_ip = 0;;) switch (_fun60251_ip) {
                     case 0:
                         var1 = this;
@@ -6136,7 +6136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.IsSystemServiceInstalled = var13;
-            var13 = function() { // Original name: CanSystemServiceBeInstalled, environment: var10
+            var13 = function() {
                 _fun60252: for (var _fun60252_ip = 0;;) switch (_fun60252_ip) {
                     case 0:
                         var1 = this;
@@ -6158,7 +6158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.CanSystemServiceBeInstalled = var13;
-            var13 = function() { // Original name: InstallSystemService, environment: var10
+            var13 = function() {
                 _fun60253: for (var _fun60253_ip = 0;;) switch (_fun60253_ip) {
                     case 0:
                         var1 = this;
@@ -6196,7 +6196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.InstallSystemService = var13;
-            var13 = function() { // Original name: DoesSystemServiceHaveUpdate, environment: var10
+            var13 = function() {
                 _fun60254: for (var _fun60254_ip = 0;;) switch (_fun60254_ip) {
                     case 0:
                         var1 = this;
@@ -6234,7 +6234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.DoesSystemServiceHaveUpdate = var13;
-            var13 = function() { // Original name: UpdateSystemService, environment: var10
+            var13 = function() {
                 _fun60255: for (var _fun60255_ip = 0;;) switch (_fun60255_ip) {
                     case 0:
                         var1 = this;
@@ -6272,7 +6272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.UpdateSystemService = var13;
-            var13 = function() { // Original name: UninstallSystemService, environment: var10
+            var13 = function() {
                 _fun60256: for (var _fun60256_ip = 0;;) switch (_fun60256_ip) {
                     case 0:
                         var1 = this;
@@ -6310,7 +6310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.UninstallSystemService = var13;
-            var13 = function(arg0) { // Original name: InputEventServiceSetStatusCallback, environment: var10
+            var13 = function arg0() {
                 _fun60257: for (var _fun60257_ip = 0;;) switch (_fun60257_ip) {
                     case 0:
                         var1 = this;
@@ -6332,7 +6332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.InputEventServiceSetStatusCallback = var13;
-            var13 = function(arg0) { // Original name: InputEventServiceSetAllowed, environment: var10
+            var13 = function arg0() {
                 _fun60258: for (var _fun60258_ip = 0;;) switch (_fun60258_ip) {
                     case 0:
                         var1 = this;
@@ -6355,7 +6355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.InputEventServiceSetAllowed = var13;
-            var13 = function(arg0) { // Original name: ToolServiceSetStatusCallback, environment: var10
+            var13 = function arg0() {
                 _fun60259: for (var _fun60259_ip = 0;;) switch (_fun60259_ip) {
                     case 0:
                         var1 = this;
@@ -6377,7 +6377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.ToolServiceSetStatusCallback = var13;
-            var13 = function(arg0) { // Original name: ToolServiceSetAllowed, environment: var10
+            var13 = function arg0() {
                 _fun60260: for (var _fun60260_ip = 0;;) switch (_fun60260_ip) {
                     case 0:
                         var1 = this;
@@ -6400,7 +6400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.ToolServiceSetAllowed = var13;
-            var13 = function(arg0, arg1) { // Original name: isModuleVersionAtLeast, environment: var10
+            var13 = function arg0, arg1() {
                 _fun60261: for (var _fun60261_ip = 0;;) switch (_fun60261_ip) {
                     case 0:
                         var0 = arg1;
@@ -6508,7 +6508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.isModuleVersionAtLeast = var13;
-            var13 = function(arg0) { // Original name: fetchRiotGamesLiveClientData, environment: var10
+            var13 = function arg0() {
                 _fun60262: for (var _fun60262_ip = 0;;) switch (_fun60262_ip) {
                     case 0:
                         var4 = arguments[1];
@@ -6587,7 +6587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.fetchRiotGamesLiveClientData = var13;
-            var13 = function() { // Original name: appViewed, environment: var10
+            var13 = function() {
                 _fun60263: for (var _fun60263_ip = 0;;) switch (_fun60263_ip) {
                     case 0:
                         var3 = this;
@@ -6612,7 +6612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.appViewed = var13;
-            var13 = function() { // Original name: appFirstRenderAfterReadyPayload, environment: var10
+            var13 = function() {
                 _fun60264: for (var _fun60264_ip = 0;;) switch (_fun60264_ip) {
                     case 0:
                         var3 = this;
@@ -6637,7 +6637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var9.appFirstRenderAfterReadyPayload = var13;
-            var13 = function() { // Original name: appLoaded, environment: var10
+            var13 = function() {
                 var2 = _closure1_slot30;
                 var0 = undefined;
                 var1 = 'APP_LOADED';
@@ -6645,7 +6645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var9.appLoaded = var13;
-            var13 = function() { // Original name: indexLoadedAsync, environment: var10
+            var13 = function() {
                 var2 = _closure1_slot30;
                 var0 = undefined;
                 var1 = 'DISCORD_APP_ASYNC_INDEX_TSX_LOADED';

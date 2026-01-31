@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = global;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: maybeLoadBundle, environment: var1
+    var0 = function arg0, arg1() {
         _fun14182: for (var _fun14182_ip = 0;;) switch (_fun14182_ip) {
             case 0:
                 var4 = arg1;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: asyncRequireImpl, environment: var1
+    var0 = function arg0, arg1() {
         _fun14183: for (var _fun14183_ip = 0;;) switch (_fun14183_ip) {
             case 0:
                 var4 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var2 = arg1;
                 var3 = var3.bind(var0)(var4, var2);
-                var2 = function() { // Original name: importAll, environment: var1
+                var2 = function() {
                     var2 = _closure1_slot1;
                     var1 = var2.importAll;
                     var0 = _closure2_slot0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var2 = function(arg0, arg1, arg2) { // Original name: asyncRequire, environment: var1
+    var2 = function arg0, arg1, arg2() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _asyncRequire, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot2 = var3;
-    var3 = function(arg0, arg1) { // Original name: unstable_importMaybeSync, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot4;
         var2 = undefined;
         var1 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun49398: for (var _fun49398_ip = 0;;) switch (_fun49398_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun49401: for (var _fun49401_ip = 0;;) switch (_fun49401_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun49403: for (var _fun49403_ip = 0;;) switch (_fun49403_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: parseServerPackSticker, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: deriveStickerMetadata, environment: var3
+    var0 = function arg0, arg1() {
         _fun49405: for (var _fun49405_ip = 0;;) switch (_fun49405_ip) {
             case 0:
                 var3 = arg1;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: ingestStickerPack, environment: var3
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun49406: for (var _fun49406_ip = 0;;) switch (_fun49406_ip) {
             case 0:
                 var0 = arg0;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.HOUR;
     var _closure1_slot11 = var1;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: StickersPackStore, environment: var5
+        var3 = function arg0() {
             _fun49408: for (var _fun49408_ip = 0;;) switch (_fun49408_ip) {
                 case 0:
                     var4 = this;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'stateWrapper';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var0 = {};
@@ -655,14 +655,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.packStickersDatabase = var3;
             var2 = var2.premiumPacksDatabase;
             var0.premiumPacksDatabase = var2;
-            var2 = function() { // Original name: markDirty, environment: var1
+            var2 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.markDirty;
                 var0 = var0.bind(var1)();
                 return var0;
             };
             var0.markDirty = var2;
-            var1 = function() { // Original name: clearAllDBs, environment: var1
+            var1 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.clearAllDatabases;
                 var0 = var0.bind(var1)();
@@ -677,7 +677,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingStickerPacks';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasLoadedStickerPacks';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun49416: for (var _fun49416_ip = 0;;) switch (_fun49416_ip) {
                 case 0:
                     var2 = _closure1_slot10;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStickerById';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var2 = var0.packStickerByIdIndex;
             var1 = var2.get;
@@ -727,7 +727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isPremiumPack';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = this;
             var2 = var0.premiumPacksDatabase;
             var1 = var2.get;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStickerPack';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.packsDatabase;
             var1 = var2.get;
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'StickersPackStore';
     var6.displayName = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: LOGOUT, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg1;
         var1 = var0.clearAllDBs;
         var0 = undefined;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function(arg0, arg1) { // Original name: STICKER_PACK_FETCH_SUCCESS, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg1;
         var1 = arg0;
         var11 = var1.pack;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.STICKER_PACK_FETCH_SUCCESS = var7;
-    var7 = function(arg0, arg1) { // Original name: STICKER_PACKS_FETCH_START, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg1;
         var1 = var0.markDirty;
         var0 = true;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.STICKER_PACKS_FETCH_START = var7;
-    var7 = function(arg0, arg1) { // Original name: STICKER_PACKS_FETCH_SUCCESS, environment: var3
+    var7 = function arg0, arg1() {
         _fun49423: for (var _fun49423_ip = 0;;) switch (_fun49423_ip) {
             case 0:
                 var0 = arg1;
@@ -840,7 +840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.STICKER_PACKS_FETCH_SUCCESS = var7;
-    var3 = function(arg0, arg1) { // Original name: PACK_STICKER_FETCH_SUCCESS, environment: var3
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var6 = var0.sticker;
         var0 = arg1;

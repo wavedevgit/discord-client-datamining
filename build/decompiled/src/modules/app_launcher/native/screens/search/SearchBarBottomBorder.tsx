@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: usePinnedSearchBarBottomBorder, environment: var1
+    var1 = function arg0() {
         _fun107694: for (var _fun107694_ip = 0;;) switch (_fun107694_ip) {
             case 0:
                 var1 = arg0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8[var1];
                 var9 = var12.bind(var4)(var7);
                 var7 = var9.useAnimatedStyle;
-                var0 = function() { // Original name: u, environment: var0
+                var0 = function() {
                     _fun107697: for (var _fun107697_ip = 0;;) switch (_fun107697_ip) {
                         case 0:
                             var0 = {};

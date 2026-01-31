@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/shared/renderChannelPressableWrapper.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: renderChannelPressableWrapper, environment: var1
+    var1 = function arg0() {
         _fun110070: for (var _fun110070_ip = 0;;) switch (_fun110070_ip) {
             case 0:
                 var0 = arguments[1];

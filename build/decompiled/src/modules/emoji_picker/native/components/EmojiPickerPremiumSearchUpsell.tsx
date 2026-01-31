@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var8;
-    var4 = function(arg0) { // Original name: useEmojiPickerPremiumSearchUpsellViewed, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var6 = var1.guildId;
         var _closure2_slot0 = var6;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var4;
-    var3 = function(arg0) { // Original name: useEmojiPickerPremiumSearchUpsellClick, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var5 = var1.analyticsLocations;
         var _closure2_slot0 = var5;

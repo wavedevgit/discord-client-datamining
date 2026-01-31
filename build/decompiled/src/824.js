@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var3 = function(arg0) { // Original name: consoleSandbox, environment: var4
+    var3 = function arg0() {
         _fun8756: for (var _fun8756_ip = 0;;) switch (_fun8756_ip) {
             case 0:
                 var0 = arg0;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var5 = function() { // Original name: isEnabled, environment: var4
+    var5 = function() {
         var1 = _closure1_slot6;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var5;
-    var0 = function(arg0) { // Original name: _maybeLog, environment: var4
+    var0 = function arg0() {
         _fun8761: for (var _fun8761_ip = 0;;) switch (_fun8761_ip) {
             case 0:
                 var0 = undefined;
@@ -198,7 +198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function() { // Original name: _getLoggerSettings, environment: var4
+    var0 = function() {
         _fun8763: for (var _fun8763_ip = 0;;) switch (_fun8763_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -250,7 +250,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = {};
     var _closure1_slot2 = var0;
     var2 = {};
-    var6 = function() { // Original name: enable, environment: var4
+    var6 = function() {
         var1 = _closure1_slot6;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.enable = var6;
-    var6 = function() { // Original name: disable, environment: var4
+    var6 = function() {
         var1 = _closure1_slot6;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.disable = var6;
     var2.isEnabled = var5;
-    var5 = function() { // Original name: log, environment: var4
+    var5 = function() {
         _fun8767: for (var _fun8767_ip = 0;;) switch (_fun8767_ip) {
             case 0:
                 var0 = undefined;
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.log = var5;
-    var5 = function() { // Original name: warn, environment: var4
+    var5 = function() {
         _fun8768: for (var _fun8768_ip = 0;;) switch (_fun8768_ip) {
             case 0:
                 var0 = undefined;
@@ -355,7 +355,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.warn = var5;
-    var4 = function() { // Original name: error, environment: var4
+    var4 = function() {
         _fun8769: for (var _fun8769_ip = 0;;) switch (_fun8769_ip) {
             case 0:
                 var0 = undefined;

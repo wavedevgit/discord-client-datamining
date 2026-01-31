@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: getQuestPlacementCombinationKey, environment: var1
+    var0 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: QuestContentImpression, environment: var4
+        var2 = function arg0() {
             _fun47207: for (var _fun47207_ip = 0;;) switch (_fun47207_ip) {
                 case 0:
                     var1 = arg0;
@@ -1348,7 +1348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getId';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0.id;
             return var0;
@@ -1359,7 +1359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getQuestContentPosition';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0.questContentPosition;
             return var0;
@@ -1383,7 +1383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.QuestContentImpression = var4;
     var2.QuestImpressionContext = var3;
-    var1 = function(arg0) { // Original name: QuestContentImpressionTracker, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var14 = var7.visible;

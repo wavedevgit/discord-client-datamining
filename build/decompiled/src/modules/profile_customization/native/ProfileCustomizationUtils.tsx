@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/profile_customization/native/ProfileCustomizationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useEditBannerSource, environment: var1
+    var3 = function arg0() {
         _fun50818: for (var _fun50818_ip = 0;;) switch (_fun50818_ip) {
             case 0:
                 var0 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useEditBannerSource = var3;
-    var3 = function(arg0) { // Original name: useUserProfileBannerBackgroundColor, environment: var1
+    var3 = function arg0() {
         _fun50819: for (var _fun50819_ip = 0;;) switch (_fun50819_ip) {
             case 0:
                 var1 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useUserProfileBannerBackgroundColor = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getAvatarSource, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun50820: for (var _fun50820_ip = 0;;) switch (_fun50820_ip) {
             case 0:
                 var8 = arg0;

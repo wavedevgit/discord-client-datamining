@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: Deque, environment: var2
+    var1 = function arg0() {
         _fun165: for (var _fun165_ip = 0;;) switch (_fun165_ip) {
             case 0:
                 var4 = arg0;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: arrayCopy, environment: var2
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun166: for (var _fun166_ip = 0;;) switch (_fun166_ip) {
             case 0:
                 var5 = arg0;
@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: getCapacity, environment: var2
+    var0 = function arg0() {
         _fun167: for (var _fun167_ip = 0;;) switch (_fun167_ip) {
             case 0:
                 var0 = arg0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$toArray, environment: var2
+    var0 = function() {
         _fun168: for (var _fun168_ip = 0;;) switch (_fun168_ip) {
             case 0:
                 var6 = this;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.toArray = var0;
     var3 = var1.prototype;
-    var0 = function(arg0) { // Original name: Deque$push, environment: var2
+    var0 = function arg0() {
         _fun169: for (var _fun169_ip = 0;;) switch (_fun169_ip) {
             case 0:
                 var6 = this;
@@ -274,7 +274,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.push = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$pop, environment: var2
+    var0 = function() {
         _fun170: for (var _fun170_ip = 0;;) switch (_fun170_ip) {
             case 0:
                 var2 = this;
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.pop = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$shift, environment: var2
+    var0 = function() {
         _fun171: for (var _fun171_ip = 0;;) switch (_fun171_ip) {
             case 0:
                 var2 = this;
@@ -336,7 +336,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.shift = var0;
     var3 = var1.prototype;
-    var0 = function(arg0) { // Original name: Deque$unshift, environment: var2
+    var0 = function arg0() {
         _fun172: for (var _fun172_ip = 0;;) switch (_fun172_ip) {
             case 0:
                 var6 = this;
@@ -449,7 +449,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.unshift = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$peekBack, environment: var2
+    var0 = function() {
         _fun173: for (var _fun173_ip = 0;;) switch (_fun173_ip) {
             case 0:
                 var1 = this;
@@ -476,7 +476,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.peekBack = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$peekFront, environment: var2
+    var0 = function() {
         _fun174: for (var _fun174_ip = 0;;) switch (_fun174_ip) {
             case 0:
                 var1 = this;
@@ -497,7 +497,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.peekFront = var0;
     var3 = var1.prototype;
-    var0 = function(arg0) { // Original name: Deque$get, environment: var2
+    var0 = function arg0() {
         _fun175: for (var _fun175_ip = 0;;) switch (_fun175_ip) {
             case 0:
                 var4 = arg0;
@@ -543,7 +543,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.get = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$isEmpty, environment: var2
+    var0 = function() {
         var0 = this;
         var1 = var0._length;
         var0 = 0;
@@ -552,7 +552,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.isEmpty = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$clear, environment: var2
+    var0 = function() {
         var1 = this;
         var0 = 0;
         var1._length = var0;
@@ -564,7 +564,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.clear = var0;
     var3 = var1.prototype;
-    var0 = function() { // Original name: Deque$toString, environment: var2
+    var0 = function() {
         var1 = this;
         var0 = var1.toArray;
         var1 = var0.bind(var1)();
@@ -610,13 +610,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var7.defineProperty;
     var5 = var1.prototype;
     var4 = {};
-    var3 = function() { // Original name: get, environment: var2
+    var3 = function() {
         var0 = this;
         var0 = var0._length;
         return var0;
     };
     var4.get = var3;
-    var3 = function() { // Original name: set, environment: var2
+    var3 = function() {
         var0 = global;
         var2 = var0.RangeError;
         var0 = var2.prototype;
@@ -635,7 +635,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'length';
     var3 = var6.bind(var7)(var5, var3, var4);
     var4 = var1.prototype;
-    var3 = function() { // Original name: Deque$_makeCapacity, environment: var2
+    var3 = function() {
         _fun181: for (var _fun181_ip = 0;;) switch (_fun181_ip) {
             case 0:
                 var3 = this;
@@ -660,7 +660,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4._makeCapacity = var3;
     var4 = var1.prototype;
-    var3 = function(arg0) { // Original name: Deque$_checkCapacity, environment: var2
+    var3 = function arg0() {
         _fun182: for (var _fun182_ip = 0;;) switch (_fun182_ip) {
             case 0:
                 var2 = this;
@@ -688,7 +688,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4._checkCapacity = var3;
     var4 = var1.prototype;
-    var3 = function(arg0) { // Original name: Deque$_resizeTo, environment: var2
+    var3 = function arg0() {
         _fun183: for (var _fun183_ip = 0;;) switch (_fun183_ip) {
             case 0:
                 var6 = this;

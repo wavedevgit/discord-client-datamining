@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var23;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var24;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun47258: for (var _fun47258_ip = 0;;) switch (_fun47258_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun47260: for (var _fun47260_ip = 0;;) switch (_fun47260_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var21 = function() { // Original name: useQuests, environment: var1
+    var21 = function() {
         _fun47261: for (var _fun47261_ip = 0;;) switch (_fun47261_ip) {
             case 0:
                 var8 = arguments[0];
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var21;
-    var0 = function(arg0, arg1, arg2) { // Original name: defaultSortFn, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun47266: for (var _fun47266_ip = 0;;) switch (_fun47266_ip) {
             case 0:
                 var3 = arg0;
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0, arg1) { // Original name: recentSortFn, environment: var1
+    var0 = function arg0, arg1() {
         var4 = _closure1_slot44;
         var1 = arg0;
         var1 = var1.config;
@@ -861,7 +861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function(arg0, arg1) { // Original name: recentlyEnrolledSortFn, environment: var1
+    var0 = function arg0, arg1() {
         _fun47268: for (var _fun47268_ip = 0;;) switch (_fun47268_ip) {
             case 0:
                 var3 = arg0;
@@ -946,7 +946,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot38 = var0;
-    var0 = function(arg0, arg1) { // Original name: expiringSoonSortFn, environment: var1
+    var0 = function arg0, arg1() {
         var4 = _closure1_slot44;
         var1 = arg0;
         var1 = var1.config;
@@ -961,7 +961,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var0;
-    var0 = function(arg0, arg1) { // Original name: doesQuestPassTaskFilter, environment: var1
+    var0 = function arg0, arg1() {
         _fun47270: for (var _fun47270_ip = 0;;) switch (_fun47270_ip) {
             case 0:
                 var2 = arg0;
@@ -1033,7 +1033,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0, arg1) { // Original name: doesQuestPassRewardFilter, environment: var1
+    var0 = function arg0, arg1() {
         _fun47271: for (var _fun47271_ip = 0;;) switch (_fun47271_ip) {
             case 0:
                 var0 = arg0;
@@ -1110,7 +1110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot41 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: doesQuestPassFilter, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun47272: for (var _fun47272_ip = 0;;) switch (_fun47272_ip) {
             case 0:
                 var4 = arg1;
@@ -1161,7 +1161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot42 = var0;
-    var20 = function(arg0) { // Original name: sortQuests, environment: var1
+    var20 = function arg0() {
         _fun47274: for (var _fun47274_ip = 0;;) switch (_fun47274_ip) {
             case 0:
                 var6 = arg0;
@@ -1191,7 +1191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun47274
                 }
             case 56:
-                var1 = function(arg0, arg1) { // Original name: filterQuests, environment: var0
+                var1 = function arg0, arg1() {
                     _fun47275: for (var _fun47275_ip = 0;;) switch (_fun47275_ip) {
                         case 0:
                             var0 = arg0;
@@ -1326,7 +1326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.getQuestHomeTakeoverConfig;
                 var5 = var5.bind(var6)();
                 var1.takeover = var5;
-                var0 = function(arg0, arg1) { // Original name: prioritizeLiveQuests, environment: var0
+                var0 = function arg0, arg1() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = arg1;
@@ -1383,7 +1383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot43 = var20;
-    var0 = function(arg0, arg1, arg2) { // Original name: sortByDate, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun47280: for (var _fun47280_ip = 0;;) switch (_fun47280_ip) {
             case 0:
                 var3 = arg0;
@@ -1406,7 +1406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot44 = var0;
-    var17 = function() { // Original name: useExpiredQuestsMap, environment: var1
+    var17 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 11;
@@ -1427,7 +1427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot45 = var17;
-    var16 = function(arg0) { // Original name: useIsQuestExpired, environment: var1
+    var16 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -1466,7 +1466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot46 = var16;
-    var15 = function(arg0) { // Original name: useIsQuestProgressingOnDesktop, environment: var1
+    var15 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -1491,7 +1491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot47 = var15;
-    var14 = function(arg0) { // Original name: useIsQuestProgressingOnConsole, environment: var1
+    var14 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot5;
@@ -1514,7 +1514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot48 = var14;
-    var13 = function(arg0) { // Original name: useIsQuestProgressingVideoQuest, environment: var1
+    var13 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -1565,7 +1565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot49 = var13;
-    var12 = function(arg0) { // Original name: useIsQuestProgressing, environment: var1
+    var12 = function arg0() {
         _fun47292: for (var _fun47292_ip = 0;;) switch (_fun47292_ip) {
             case 0:
                 var4 = arg0;
@@ -1594,7 +1594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot50 = var12;
-    var10 = function(arg0) { // Original name: useThirdPartyTaskDetails, environment: var1
+    var10 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot5;
@@ -1617,7 +1617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot51 = var10;
-    var9 = function(arg0) { // Original name: useGetOrFetchApplicationForConsoleQuests, environment: var1
+    var9 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot5;
@@ -1691,7 +1691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot52 = var9;
-    var8 = function() { // Original name: useConnectedAccounts, environment: var1
+    var8 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 11;
@@ -1773,7 +1773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot53 = var8;
-    var5 = function(arg0) { // Original name: useSelectedTaskPlatform, environment: var1
+    var5 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -1818,7 +1818,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot54 = var5;
-    var4 = function(arg0, arg1) { // Original name: useTaskPlatformScreen, environment: var1
+    var4 = function arg0, arg1() {
         _fun47306: for (var _fun47306_ip = 0;;) switch (_fun47306_ip) {
             case 0:
                 var11 = arg0;
@@ -2359,7 +2359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18.SORT = var3;
     var3 = 'filter';
     var18.FILTER = var3;
-    var11 = function(arg0) { // Original name: useQuestTaskDetails, environment: var1
+    var11 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var5 = _closure1_slot5;
@@ -2516,7 +2516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var11;
-    var7 = function(arg0) { // Original name: useWaitingForConsoleConnection, environment: var1
+    var7 = function arg0() {
         _fun47334: for (var _fun47334_ip = 0;;) switch (_fun47334_ip) {
             case 0:
                 var0 = arg0;
@@ -2572,7 +2572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'CLAIMED';
     var6[var22] = var3;
     var _closure1_slot30 = var6;
-    var3 = function() { // Original name: useIsPreviewerOnAnyQuest, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 11;
@@ -2605,7 +2605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var3;
-    var22 = function(arg0, arg1) { // Original name: hasEnrolledTimeLapsed, environment: var1
+    var22 = function arg0, arg1() {
         _fun47338: for (var _fun47338_ip = 0;;) switch (_fun47338_ip) {
             case 0:
                 var3 = arg0;
@@ -2689,7 +2689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.sortQuests = var20;
     var2.QuestTabs = var19;
     var2.QuestQueryParams = var18;
-    var18 = function(arg0) { // Original name: useFilteredQuests, environment: var1
+    var18 = function arg0() {
         _fun47339: for (var _fun47339_ip = 0;;) switch (_fun47339_ip) {
             case 0:
                 var6 = arguments[1];
@@ -2732,7 +2732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var8;
                 var5 = new var13[var10](var12, var11);
                 var8 = var5 instanceof Object ? var5 : var8;
-                var5 = function(arg0, arg1) { // Original name: useAllQuests, environment: var0
+                var5 = function arg0, arg1() {
                     var5 = arg0;
                     var4 = arg1;
                     var _closure3_slot0 = var5;
@@ -2845,7 +2845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var6 = var5.bind(var9)(var4, var6);
-                var0 = function(arg0) { // Original name: useCompletedAndClaimedQuests, environment: var0
+                var0 = function arg0() {
                     var2 = arg0;
                     var _closure3_slot0 = var2;
                     var5 = _closure1_slot5;
@@ -3070,7 +3070,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFilteredQuests = var18;
-    var18 = function() { // Original name: useClaimedQuests, environment: var1
+    var18 = function() {
         var4 = _closure1_slot5;
         var2 = var4.useRef;
         var1 = false;
@@ -3157,7 +3157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useClaimedQuests = var18;
     var2.useExpiredQuestsMap = var17;
     var2.useIsQuestExpired = var16;
-    var16 = function(arg0, arg1, arg2) { // Original name: useIsQuestEligibleForMembersListPopout, environment: var1
+    var16 = function arg0, arg1, arg2() {
         _fun47354: for (var _fun47354_ip = 0;;) switch (_fun47354_ip) {
             case 0:
                 var0 = arg0;
@@ -3330,7 +3330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsQuestEligibleForMembersListPopout = var16;
-    var16 = function(arg0) { // Original name: useQuestFormattedDate, environment: var1
+    var16 = function arg0() {
         _fun47359: for (var _fun47359_ip = 0;;) switch (_fun47359_ip) {
             case 0:
                 var6 = arg0;
@@ -3521,7 +3521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useConnectedConsoleLinkOnClick = var10;
-    var10 = function() { // Original name: useQuestsForSettingsBadge, environment: var1
+    var10 = function() {
         var4 = _closure1_slot35;
         var3 = undefined;
         var2 = {
@@ -3683,7 +3683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useQuestsForSettingsBadge = var10;
     var2.useGetOrFetchApplicationForConsoleQuests = var9;
-    var9 = function(arg0) { // Original name: useQuestForMemberListSocialEntryPoint, environment: var1
+    var9 = function arg0() {
         _fun47366: for (var _fun47366_ip = 0;;) switch (_fun47366_ip) {
             case 0:
                 var8 = arg0;
@@ -3753,7 +3753,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuestForMemberListSocialEntryPoint = var9;
-    var9 = function(arg0) { // Original name: useQuestCollectibles, environment: var1
+    var9 = function arg0() {
         _fun47369: for (var _fun47369_ip = 0;;) switch (_fun47369_ip) {
             case 0:
                 var6 = arg0;
@@ -3805,7 +3805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuestCollectibles = var9;
-    var9 = function(arg0) { // Original name: useQuestPreviewActions, environment: var1
+    var9 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot5;
@@ -3814,7 +3814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var4;
         var0 = function() { // Environment: var0
             var0 = {};
-            var2 = function() { // Original name: handleComplete, environment: var1
+            var2 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 14;
@@ -3827,7 +3827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.handleComplete = var2;
-            var2 = function(arg0) { // Original name: handleProgress, environment: var1
+            var2 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 14;
@@ -3841,7 +3841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.handleProgress = var2;
-            var2 = function() { // Original name: handleResetStatusClick, environment: var1
+            var2 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 14;
@@ -3854,7 +3854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.handleResetStatusClick = var2;
-            var2 = function() { // Original name: handleResetDismissibilityClick, environment: var1
+            var2 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 14;
@@ -3867,7 +3867,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.handleResetDismissibilityClick = var2;
-            var1 = function() { // Original name: handleOverrideDeliveryClick, environment: var1
+            var1 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
                 var0 = 14;
@@ -4259,7 +4259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useQuestHowToHelpArticle = var7;
     var2.QuestProgressState = var6;
-    var6 = function(arg0) { // Original name: useProgressState, environment: var1
+    var6 = function arg0() {
         _fun47385: for (var _fun47385_ip = 0;;) switch (_fun47385_ip) {
             case 0:
                 var6 = arg0;
@@ -4357,7 +4357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useProgressState = var6;
-    var6 = function(arg0) { // Original name: useQuestCompletionDetails, environment: var1
+    var6 = function arg0() {
         _fun47386: for (var _fun47386_ip = 0;;) switch (_fun47386_ip) {
             case 0:
                 var2 = arg0;
@@ -4445,7 +4445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useQuestCompletionDetails = var6;
     var2.useSelectedTaskPlatform = var5;
     var2.useTaskPlatformScreen = var4;
-    var4 = function(arg0) { // Original name: useQuestWarningTips, environment: var1
+    var4 = function arg0() {
         _fun47388: for (var _fun47388_ip = 0;;) switch (_fun47388_ip) {
             case 0:
                 var7 = arg0;
@@ -4655,7 +4655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuestWarningTips = var4;
-    var4 = function(arg0) { // Original name: useQuest, environment: var1
+    var4 = function arg0() {
         _fun47389: for (var _fun47389_ip = 0;;) switch (_fun47389_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -4690,7 +4690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useQuest = var4;
-    var4 = function(arg0) { // Original name: useNonNullableQuest, environment: var1
+    var4 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var5 = _closure1_slot0;
@@ -4728,7 +4728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useNonNullableQuest = var4;
-    var4 = function(arg0) { // Original name: useQuestBarOrDockModeChangeTracking, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var2 = var1.mode;
         var _closure2_slot0 = var2;
@@ -4848,7 +4848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestBarOrDockModeChangeTracking = var4;
-    var4 = function(arg0, arg1) { // Original name: useCosponsoredLogotypeAsset, environment: var1
+    var4 = function arg0, arg1() {
         var2 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var2;
@@ -4950,7 +4950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCosponsoredLogotypeAsset = var4;
-    var4 = function(arg0) { // Original name: useClaimedCollectibleRewardMessage, environment: var1
+    var4 = function arg0() {
         _fun47400: for (var _fun47400_ip = 0;;) switch (_fun47400_ip) {
             case 0:
                 var7 = arg0;
@@ -5123,7 +5123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useClaimedCollectibleRewardMessage = var4;
-    var4 = function(arg0) { // Original name: useLaunchInGameActivityQuest, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 23;
@@ -5325,7 +5325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestsWithPreviewAccess = var3;
-    var3 = function() { // Original name: useQuestHomeFilterOptions, environment: var1
+    var3 = function() {
         var3 = _closure1_slot5;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
@@ -5396,7 +5396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestHomeFilterOptions = var3;
-    var3 = function() { // Original name: useQuestHomeSortOptions, environment: var1
+    var3 = function() {
         var3 = _closure1_slot5;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
@@ -5433,7 +5433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useQuestHomeSortOptions = var3;
-    var3 = function(arg0) { // Original name: useQuestHomeSortingFilteringAnalytics, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.selectedSortMethod;
         var _closure2_slot0 = var2;
@@ -5567,7 +5567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldShowQuestBarOverride = var3;
-    var1 = function() { // Original name: useFetchQuestHomeTakeoverConfig, environment: var1
+    var1 = function() {
         _fun47422: for (var _fun47422_ip = 0;;) switch (_fun47422_ip) {
             case 0:
                 var9 = _closure1_slot0;
@@ -5729,7 +5729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = function() { // Environment: var0
                     _fun47425: for (var _fun47425_ip = 0;;) switch (_fun47425_ip) {
                         case 0:
-                            var1 = function() { // Original name: _fetchTakeover, environment: var0
+                            var1 = function() {
                                 var3 = undefined;
                                 var0 = undefined;
                                 var2 = _closure1_slot3;
@@ -5813,7 +5813,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun47425
                             }
                         case 21:
-                            var1 = function() { // Original name: fetchTakeover, environment: var0
+                            var1 = function() {
                                 var0 = undefined;
                                 var3 = _closure3_slot0;
                                 var2 = var3.apply;
@@ -5836,7 +5836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var10;
                 var0 = function() { // Environment: var0
-                    var1 = function() { // Original name: _loadImages, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -5940,7 +5940,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var1;
-                    var1 = function() { // Original name: loadImages, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;

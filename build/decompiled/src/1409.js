@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun16438
             }
         case 29:
-            var2 = function(arg0, arg1) { // Original name: inherits, environment: var0
+            var2 = function arg0, arg1() {
                 _fun16440: for (var _fun16440_ip = 0;;) switch (_fun16440_ip) {
                     case 0:
                         var1 = arg0;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     case 9:
                         var1.super_ = var2;
-                        var0 = function() { // Original name: TempCtor, environment: var0
+                        var0 = function() {
                             var0 = undefined;
                             return var0;
                         };
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun16438_ip = 53;
             continue _fun16438;
         case 42:
-            var0 = function(arg0, arg1) { // Original name: inherits, environment: var0
+            var0 = function arg0, arg1() {
                 _fun16439: for (var _fun16439_ip = 0;;) switch (_fun16439_ip) {
                     case 0:
                         var1 = arg0;

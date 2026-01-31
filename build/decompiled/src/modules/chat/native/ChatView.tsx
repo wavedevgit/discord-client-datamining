@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatView, environment: var1
+    var1 = function arg0() {
         _fun76669: for (var _fun76669_ip = 0;;) switch (_fun76669_ip) {
             case 0:
                 var1 = arg0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 815:
                 var0 = var1.bind(var3)(var0);
                 _closure2_slot22 = var0;
-                var7 = function() { // Original name: renderMessagesWrapper, environment: var5
+                var7 = function() {
                     _fun76685: for (var _fun76685_ip = 0;;) switch (_fun76685_ip) {
                         case 0:
                             var3 = _closure1_slot10;
@@ -785,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var17.bind(var3)(var16, var11);
             case 971:
                 var4[1] = var8;
-                var8 = function(arg0, arg1) { // Original name: V, environment: var5
+                var8 = function arg0, arg1() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 38;

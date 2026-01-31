@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun42745: for (var _fun42745_ip = 0;;) switch (_fun42745_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun42747: for (var _fun42747_ip = 0;;) switch (_fun42747_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun42748: for (var _fun42748_ip = 0;;) switch (_fun42748_ip) {
             case 0:
             case 2: // try_start_0
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: WidgetStore, environment: var5
+        var3 = function() {
             _fun42752: for (var _fun42752_ip = 0;;) switch (_fun42752_ip) {
                 case 0:
                     var3 = this;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot8;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingWidgets';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSaveablePendingWidgets';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42755: for (var _fun42755_ip = 0;;) switch (_fun42755_ip) {
                 case 0:
                     var2 = _closure1_slot10;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasPendingChanges';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42757: for (var _fun42757_ip = 0;;) switch (_fun42757_ip) {
                 case 0:
                     var0 = _closure1_slot10;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getWidgetUpdates';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42758: for (var _fun42758_ip = 0;;) switch (_fun42758_ip) {
                 case 0:
                     var2 = this;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getChangedWidgets';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.getWidgetUpdates;
             var0 = var0.bind(var1)();
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRemovedWidgets';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.getWidgetUpdates;
             var0 = var0.bind(var1)();
@@ -722,7 +722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasUnsavedChanges';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42763: for (var _fun42763_ip = 0;;) switch (_fun42763_ip) {
                 case 0:
                     var1 = this;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canSaveChanges';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun42764: for (var _fun42764_ip = 0;;) switch (_fun42764_ip) {
                 case 0:
                     var1 = this;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSubmitting';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'suggestedFetchError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'suggestedFetchIsLoading';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -814,7 +814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'suggestedFetchAttempted';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'suggestedGameIds';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -837,7 +837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleSetPendingWidgets, environment: var3
+    var7 = function arg0() {
         _fun42771: for (var _fun42771_ip = 0;;) switch (_fun42771_ip) {
             case 0:
                 var0 = arg0;
@@ -885,14 +885,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WIDGET_PENDING_SET = var7;
-    var7 = function() { // Original name: handleSavePendingWidgetsStart, environment: var3
+    var7 = function() {
         var0 = true;
         _closure1_slot12 = var0;
         var0 = undefined;
         return var0;
     };
     var1.WIDGET_PENDING_SAVE_START = var7;
-    var7 = function() { // Original name: handleSavePendingWidgetsSuccess, environment: var3
+    var7 = function() {
         _fun42773: for (var _fun42773_ip = 0;;) switch (_fun42773_ip) {
             case 0:
                 var0 = false;
@@ -912,14 +912,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.WIDGET_PENDING_SAVE_SUCCESS = var7;
-    var7 = function() { // Original name: handleSavePendingWidgetsFailure, environment: var3
+    var7 = function() {
         var0 = false;
         _closure1_slot12 = var0;
         var0 = undefined;
         return var0;
     };
     var1.WIDGET_PENDING_SAVE_FAILURE = var7;
-    var7 = function(arg0) { // Original name: handleSetSuggestedGameIds, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.suggestedGamesIds;
         var2 = var0.suggestedWishlistGamesIds;
@@ -933,7 +933,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.WIDGET_SUGGESTED_FETCH_SUCCESS = var7;
-    var7 = function() { // Original name: handleSetSuggestedFetchFailure, environment: var3
+    var7 = function() {
         var0 = true;
         _closure1_slot14 = var0;
         var0 = false;
@@ -942,7 +942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.WIDGET_SUGGESTED_FETCH_FAILURE = var7;
-    var7 = function() { // Original name: handleSetSuggestedFetchStart, environment: var3
+    var7 = function() {
         var0 = true;
         _closure1_slot15 = var0;
         var2 = false;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.WIDGET_SUGGESTED_FETCH_START = var7;
-    var7 = function() { // Original name: handleClearPendingWidgets, environment: var3
+    var7 = function() {
         var0 = null;
         _closure1_slot10 = var0;
         _closure1_slot11 = var0;
@@ -960,7 +960,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.WIDGET_PENDING_CLEAR = var7;
-    var3 = function(arg0) { // Original name: handleRemoveApplicationIdFromSuggestedGames, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var1 = var1.applicationId;
         var _closure2_slot0 = var1;

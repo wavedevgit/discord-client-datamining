@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createSafetyPolicyNoticeEmbed, environment: var1
+    var1 = function arg0() {
         _fun92513: for (var _fun92513_ip = 0;;) switch (_fun92513_ip) {
             case 0:
                 var1 = arg0;

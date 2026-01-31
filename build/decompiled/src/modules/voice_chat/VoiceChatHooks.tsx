@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function(arg0) { // Original name: useIsConnectedToVoiceChannelForId, environment: var3
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_chat/VoiceChatHooks.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useIsConnectedToVoiceChannel, environment: var3
+    var3 = function arg0() {
         _fun62674: for (var _fun62674_ip = 0;;) switch (_fun62674_ip) {
             case 0:
                 var3 = arg0;

@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.sticker = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: EmptyStateSticker, environment: var1
+    var3 = function arg0() {
         _fun74406: for (var _fun74406_ip = 0;;) switch (_fun74406_ip) {
             case 0:
                 var0 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stickers/native/StickerPickerEmptyState.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: _default, environment: var1
+    var1 = function() {
         var0 = _closure1_slot13;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var7 = false;
                     var1.accessible = var7;
-                    var6 = function() { // Original name: onLongPress, environment: var6
+                    var6 = function() {
                         var3 = _closure1_slot0;
                         var5 = _closure1_slot2;
                         var0 = 18;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var12[var10];
         var6 = var11.bind(var3)(var5);
         var5 = {};
-        var14 = function() { // Original name: renderIcon, environment: var8
+        var14 = function() {
             var3 = _closure1_slot11;
             var5 = _closure1_slot1;
             var6 = _closure1_slot2;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.size = var10;
         var9 = var9.premiumButton;
         var5.style = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 23;

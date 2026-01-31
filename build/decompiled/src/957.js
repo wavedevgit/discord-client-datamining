@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: getFinalOperationName, environment: var1
+    var3 = function arg0() {
         _fun9853: for (var _fun9853_ip = 0;;) switch (_fun9853_ip) {
             case 0:
                 var6 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = 'Module';
     var4.value = var8;
     var4 = var6.bind(var7)(var2, var5, var4);
-    var4 = function(arg0, arg1) { // Original name: buildMethodPath, environment: var1
+    var4 = function arg0, arg1() {
         _fun9854: for (var _fun9854_ip = 0;;) switch (_fun9854_ip) {
             case 0:
                 var5 = arg0;
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.buildMethodPath = var4;
     var2.getFinalOperationName = var3;
-    var3 = function(arg0) { // Original name: getSpanOperation, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getSpanOperation = var3;
-    var3 = function(arg0) { // Original name: getTruncatedJsonString, environment: var1
+    var3 = function arg0() {
         _fun9856: for (var _fun9856_ip = 0;;) switch (_fun9856_ip) {
             case 0:
                 var2 = arg0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getTruncatedJsonString = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: setTokenUsageAttributes, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun9857: for (var _fun9857_ip = 0;;) switch (_fun9857_ip) {
             case 0:
                 var3 = arg0;

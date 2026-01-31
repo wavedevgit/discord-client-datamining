@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rewards/ProgramRewardsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isInProgramRewardsTreatments, environment: var1
+    var3 = function() {
         _fun95779: for (var _fun95779_ip = 0;;) switch (_fun95779_ip) {
             case 0:
                 var2 = arguments[0];
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isInProgramRewardsTreatments = var3;
-    var3 = function() { // Original name: useIsInProgramRewardsTreatments, environment: var1
+    var3 = function() {
         _fun95780: for (var _fun95780_ip = 0;;) switch (_fun95780_ip) {
             case 0:
                 var2 = arguments[0];
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsInProgramRewardsTreatments = var3;
-    var1 = function(arg0) { // Original name: hasNecessaryPremiumSubscriptionStatus, environment: var1
+    var1 = function arg0() {
         _fun95781: for (var _fun95781_ip = 0;;) switch (_fun95781_ip) {
             case 0:
                 var3 = arg0;

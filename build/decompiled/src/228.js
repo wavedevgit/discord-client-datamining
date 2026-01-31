@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = dependencyMap;
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var7;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var8
+            var0 = function() {
                 _fun3160: for (var _fun3160_ip = 0;;) switch (_fun3160_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot10 = var0;
-            var0 = function(arg0) { // Original name: getSignal, environment: var8
+            var0 = function arg0() {
                 _fun3163: for (var _fun3163_ip = 0;;) switch (_fun3163_ip) {
                     case 0:
                         var0 = arg0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var6.bind(var0)(var2);
             var9 = var2.EventTarget;
             var2 = function(arg0) { // Environment: var8
-                var3 = function() { // Original name: AbortSignal, environment: var0
+                var3 = function() {
                     _fun3165: for (var _fun3165_ip = 0;;) switch (_fun3165_ip) {
                         case 0:
                             var3 = this;
@@ -179,7 +179,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var5 = 'aborted';
                 var4.key = var5;
-                var0 = function() { // Original name: get, environment: var0
+                var0 = function() {
                     _fun3166: for (var _fun3166_ip = 0;;) switch (_fun3166_ip) {
                         case 0:
                             var0 = this;
@@ -286,7 +286,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 371:
             var4 = function() { // Environment: var8
                 var3 = _closure1_slot3;
-                var2 = function() { // Original name: AbortController, environment: var4
+                var2 = function() {
                     var4 = this;
                     var2 = _closure1_slot2;
                     var1 = _closure2_slot0;
@@ -319,7 +319,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'signal';
                 var0.key = var1;
-                var1 = function() { // Original name: get, environment: var4
+                var1 = function() {
                     var2 = _closure1_slot11;
                     var1 = undefined;
                     var0 = this;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'abort';
                 var0.key = var5;
-                var4 = function() { // Original name: abort, environment: var4
+                var4 = function() {
                     _fun3170: for (var _fun3170_ip = 0;;) switch (_fun3170_ip) {
                         case 0:
                             var3 = _closure1_slot11;

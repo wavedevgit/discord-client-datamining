@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var3 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: MonitoringAgent, environment: var4
+        var2 = function() {
             _fun39063: for (var _fun39063_ip = 0;;) switch (_fun39063_ip) {
                 case 0:
                     var4 = this;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_getMetricWithDefaults';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun39066: for (var _fun39066_ip = 0;;) switch (_fun39066_ip) {
                 case 0:
                     var0 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'increment';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun39068: for (var _fun39068_ip = 0;;) switch (_fun39068_ip) {
                 case 0:
                     var1 = arguments[1];
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'distribution';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun39069: for (var _fun39069_ip = 0;;) switch (_fun39069_ip) {
                 case 0:
                     var1 = arguments[2];
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_flush';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun39070: for (var _fun39070_ip = 0;;) switch (_fun39070_ip) {
                 case 0:
                     var1 = this;

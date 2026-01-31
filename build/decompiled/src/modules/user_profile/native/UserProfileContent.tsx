@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: CustomStatusBubble, environment: var3
+    var0 = function arg0() {
         _fun91858: for (var _fun91858_ip = 0;;) switch (_fun91858_ip) {
             case 0:
                 var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: RemoveFriendIconButton, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.user;
         var _closure2_slot0 = var2;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.bind(var3)();
         var0 = var0.newestAnalyticsLocation;
         var _closure2_slot2 = var0;
-        var0 = function() { // Original name: handleConfirm, environment: var4
+        var0 = function() {
             var2 = _closure2_slot1;
             var1 = {};
             var0 = 'REMOVE_FRIEND';
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.cvSt1J;
         var5 = var6.bind(var7)(var5);
         var0.accessibilityLabel = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 26;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: RemoveGameFriendIconButton, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var4 = var1.user;
         var _closure2_slot0 = var4;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var1 = function(arg0) { // Original name: PrimaryInfo, environment: var3
+    var1 = function arg0() {
         _fun91866: for (var _fun91866_ip = 0;;) switch (_fun91866_ip) {
             case 0:
                 var0 = arg0;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var1;
-    var0 = function(arg0) { // Original name: EditSection, environment: var3
+    var0 = function arg0() {
         _fun91869: for (var _fun91869_ip = 0;;) switch (_fun91869_ip) {
             case 0:
                 var0 = arg0;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var18.bind(var19)(var14);
             case 425:
                 var7.text = var8;
-                var8 = function() { // Original name: onPress, environment: var9
+                var8 = function() {
                     var3 = _closure2_slot1;
                     var2 = {};
                     var0 = 'EDIT_PROFILE';
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["PKQB/H"];
                 var10 = var11.bind(var12)(var10);
                 var5.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var3 = _closure2_slot1;
                     var2 = {};
                     var0 = 'EDIT_GUILD_PROFILE';
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.Fragment;
     var _closure1_slot16 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: UserProfileContent, environment: var3
+    var3 = function arg0() {
         _fun91873: for (var _fun91873_ip = 0;;) switch (_fun91873_ip) {
             case 0:
                 var0 = arg0;

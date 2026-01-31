@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var0;
     var0 = '__esModule';
     var0 = var5.bind(var6)(var3, var0, var4);
-    var0 = function(arg0) { // Original name: getRoundingMethod, environment: var1
+    var0 = function arg0() {
         _fun22557: for (var _fun22557_ip = 0;;) switch (_fun22557_ip) {
             case 0:
                 var2 = arg0;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.Math;
     var2 = var2.floor;
     var0.floor = var2;
-    var2 = function(arg0) { // Original name: trunc, environment: var1
+    var2 = function arg0() {
         _fun22558: for (var _fun22558_ip = 0;;) switch (_fun22558_ip) {
             case 0:
                 var3 = arg0;

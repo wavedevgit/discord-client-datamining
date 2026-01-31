@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/media_viewer/native/useMediaViewerSources.tsx';
     var4 = var5.bind(var6)(var4);
     var2.MediaViewerSourcesStore = var3;
-    var3 = function(arg0) { // Original name: setMediaViewerSources, environment: var1
+    var3 = function arg0() {
         _fun70250: for (var _fun70250_ip = 0;;) switch (_fun70250_ip) {
             case 0:
                 var0 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setMediaViewerSources = var3;
-    var3 = function(arg0) { // Original name: removeSpoiler, environment: var1
+    var3 = function arg0() {
         _fun70252: for (var _fun70252_ip = 0;;) switch (_fun70252_ip) {
             case 0:
                 var2 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removeSpoiler = var3;
-    var1 = function(arg0) { // Original name: toggleSpoiler, environment: var1
+    var1 = function arg0() {
         _fun70253: for (var _fun70253_ip = 0;;) switch (_fun70253_ip) {
             case 0:
                 var2 = arg0;

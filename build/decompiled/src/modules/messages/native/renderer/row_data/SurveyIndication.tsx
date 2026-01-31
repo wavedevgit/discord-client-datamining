@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/SurveyIndication.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: createSurveyIndication, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun56131: for (var _fun56131_ip = 0;;) switch (_fun56131_ip) {
             case 0:
                 var8 = arg2;

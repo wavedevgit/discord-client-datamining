@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var4[var1];
         var1 = var2.bind(var3)(var1);
         var0.icon = var1;
-        var1 = function() { // Original name: onPress, environment: var1
+        var1 = function() {
             var4 = _closure1_slot0;
             var3 = _closure1_slot2;
             var0 = 6;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.label = var3;
         var2 = !var2;
         var0.switchValue = var2;
-        var1 = function() { // Original name: onPress, environment: var1
+        var1 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 8;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.videoParticipantsHidden = var3;
-    var3 = function(arg0, arg1) { // Original name: openHideSelfStreamAndVideoConfirmDialog, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot2;
             var1 = 11;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = arg0;
         var2 = !var2;
         var0.switchValue = var2;
-        var1 = function() { // Original name: onPress, environment: var1
+        var1 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var5[var2];
         var2 = var3.bind(var4)(var2);
         var0.icon = var2;
-        var1 = function() { // Original name: onPress, environment: var1
+        var1 = function() {
             _fun68550: for (var _fun68550_ip = 0;;) switch (_fun68550_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var3;
                 var _closure2_slot1 = var5;
                 var _closure2_slot2 = var4;
-                var1 = function() { // Original name: onPress, environment: var0
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun68551
                 }
             case 40:
-                var1 = function() { // Original name: onPress, environment: var0
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun68551_ip = 56;
                 continue _fun68551;
             case 49:
-                var1 = function() { // Original name: onPress, environment: var0
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun68551
                 }
             case 69:
-                var1 = function() { // Original name: onPress, environment: var0
+                var1 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var1 = 16;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var5[var2];
         var2 = var3.bind(var4)(var2);
         var0.icon = var2;
-        var1 = function() { // Original name: onPress, environment: var1
+        var1 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var4[var1];
         var1 = var2.bind(var3)(var1);
         var0.icon = var1;
-        var1 = function() { // Original name: onPress, environment: var1
+        var1 = function() {
             _fun68559: for (var _fun68559_ip = 0;;) switch (_fun68559_ip) {
                 case 0:
                     var2 = _closure1_slot0;

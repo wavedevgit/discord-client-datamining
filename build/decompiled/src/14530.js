@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function(arg0, arg1, arg2) { // Original name: lowerBound, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun113675: for (var _fun113675_ip = 0;;) switch (_fun113675_ip) {
             case 0:
                 var9 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: OtaVerificationActionSheet, environment: var1
+    var0 = function arg0() {
         _fun86202: for (var _fun86202_ip = 0;;) switch (_fun86202_ip) {
             case 0:
                 var0 = arg0;
@@ -384,10 +384,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsOTATestScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsOTATestScreen, environment: var1
+    var1 = function() {
         _fun86204: for (var _fun86204_ip = 0;;) switch (_fun86204_ip) {
             case 0:
-                var0 = function() { // Original name: _verifyFiles, environment: var16
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var11.TableRow;
                 var11 = {};
                 var11.label = var20;
-                var20 = function() { // Original name: onPress, environment: var16
+                var20 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 16;
@@ -790,7 +790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = {};
                 var17 = var19.bind(var3)(var18, var17);
                 var12.icon = var17;
-                var16 = function() { // Original name: verifyFiles, environment: var16
+                var16 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot5;
                     var2 = var3.apply;

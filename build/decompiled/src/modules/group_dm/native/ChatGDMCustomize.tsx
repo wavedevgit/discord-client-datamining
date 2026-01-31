@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16[1] = var27;
                 var12 = function() { // Environment: var2
                     var0 = {};
-                    var2 = function(arg0) { // Original name: makeURL, environment: var1
+                    var2 = function arg0() {
                         _fun72719: for (var _fun72719_ip = 0;;) switch (_fun72719_ip) {
                             case 0:
                                 var1 = _closure1_slot1;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.makeURL = var2;
-                    var1 = function() { // Original name: clear, environment: var1
+                    var1 = function() {
                         _fun72720: for (var _fun72720_ip = 0;;) switch (_fun72720_ip) {
                             case 0:
                                 var2 = _closure2_slot8;

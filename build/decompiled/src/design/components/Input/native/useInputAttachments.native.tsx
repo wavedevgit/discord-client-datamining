@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
-    var5 = function(arg0, arg1) { // Original name: estimateAttachmentWidth, environment: var1
+    var5 = function arg0, arg1() {
         _fun47978: for (var _fun47978_ip = 0;;) switch (_fun47978_ip) {
             case 0:
                 var1 = null;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: renderInputAttachment, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun47979: for (var _fun47979_ip = 0;;) switch (_fun47979_ip) {
             case 0:
                 var4 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0) { // Original name: InputAttachmentContainer, environment: var1
+    var3 = function arg0() {
         _fun47980: for (var _fun47980_ip = 0;;) switch (_fun47980_ip) {
             case 0:
                 var0 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot5;
                 var3 = {};
                 var3.style = var1;
-                var1 = function(arg0) { // Original name: onLayout, environment: var2
+                var1 = function arg0() {
                     var2 = _closure2_slot1;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var3;
                 var9 = var7;
                 var7 = copyDataProperties(var10, var9);
-                var8 = function(arg0) { // Original name: style, environment: var2
+                var8 = function arg0() {
                     _fun47981: for (var _fun47981_ip = 0;;) switch (_fun47981_ip) {
                         case 0:
                             var0 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var7 = 'style';
                 var3[var7] = var8;
-                var7 = function(arg0) { // Original name: onLayout, environment: var2
+                var7 = function arg0() {
                     var2 = _closure2_slot1;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.estimateAttachmentWidth = var5;
     var2.renderInputAttachment = var4;
     var2.InputAttachmentContainer = var3;
-    var1 = function(arg0, arg1) { // Original name: useInputAttachments, environment: var1
+    var1 = function arg0, arg1() {
         _fun47984: for (var _fun47984_ip = 0;;) switch (_fun47984_ip) {
             case 0:
                 var6 = arg0;

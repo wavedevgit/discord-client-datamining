@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var16 = dependencyMap;
     var _closure1_slot0 = var15;
     var _closure1_slot1 = var16;
-    var0 = function(arg0) { // Original name: convertToHandlerTag, environment: var1
+    var0 = function arg0() {
         _fun44780: for (var _fun44780_ip = 0;;) switch (_fun44780_ip) {
             case 0:
                 var2 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: extractValidHandlerTags, environment: var1
+    var0 = function arg0() {
         _fun44781: for (var _fun44781_ip = 0;;) switch (_fun44781_ip) {
             case 0:
                 var8 = arg0;
@@ -198,7 +198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var25 = var11;
     var3 = var26[var12](var25, var24, var23, var22, var21, var20, var19, var18, var17, var16);
     var2.ALLOWED_PROPS = var3;
-    var3 = function(arg0) { // Original name: extractGestureRelations, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.config;
         var4 = _closure1_slot7;
@@ -230,17 +230,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.extractGestureRelations = var3;
-    var3 = function(arg0) { // Original name: checkGestureCallbacksForWorklets, environment: var1
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var2.checkGestureCallbacksForWorklets = var3;
-    var3 = function(arg0) { // Original name: validateDetectorChildren, environment: var1
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var2.validateDetectorChildren = var3;
-    var3 = function() { // Original name: useForceRender, environment: var1
+    var3 = function() {
         var4 = _closure1_slot5;
         var3 = undefined;
         var2 = false;
@@ -270,12 +270,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.useForceRender = var3;
-    var1 = function() { // Original name: useWebEventHandlers, environment: var1
+    var1 = function() {
         _fun44788: for (var _fun44788_ip = 0;;) switch (_fun44788_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = {};
-                var3 = function(arg0) { // Original name: onGestureHandlerEvent, environment: var4
+                var3 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 15;

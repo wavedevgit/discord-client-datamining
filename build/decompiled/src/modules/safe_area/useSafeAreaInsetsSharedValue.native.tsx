@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var4;
     var _closure1_slot3 = var1;
     var1 = function() { // Environment: var3
-        var0 = function() { // Original name: getSafeAreaInsetsWorklet, environment: var0
+        var0 = function() {
             var1 = _closure1_slot2;
             var0 = var1.get;
             var0 = var0.bind(var1)();
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useSafeAreaInsetsSharedValue, environment: var3
+    var3 = function() {
         var0 = _closure1_slot2;
         return var0;
     };

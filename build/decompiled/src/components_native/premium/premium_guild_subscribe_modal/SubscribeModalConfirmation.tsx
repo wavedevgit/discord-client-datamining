@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PendingCancellationWarning, environment: var1
+    var0 = function arg0() {
         _fun78230: for (var _fun78230_ip = 0;;) switch (_fun78230_ip) {
             case 0:
                 var1 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: SubscribeConfirmation, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var15 = var0.guild;
         var11 = var0.isModifyingSubscription;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13.slotCount = var17;
         var13 = var15.bind(var16)(var14, var13);
         var8.text = var13;
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = false;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: TransferConfirmation, environment: var1
+    var0 = function arg0() {
         _fun78235: for (var _fun78235_ip = 0;;) switch (_fun78235_ip) {
             case 0:
                 var0 = arg0;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.slotCount = var19;
                 var15 = var17.bind(var18)(var16, var15);
                 var10.text = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = true;
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/premium_guild_subscribe_modal/SubscribeModalConfirmation.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SubscribeModalConfirmation, environment: var1
+    var1 = function arg0() {
         _fun78239: for (var _fun78239_ip = 0;;) switch (_fun78239_ip) {
             case 0:
                 var1 = arg0;
@@ -1134,7 +1134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var10 = var7.bind(var1)(var6);
                                     var9 = var10.openLazy;
                                     var6 = {};
-                                    var11 = function() { // Original name: importer, environment: var11
+                                    var11 = function() {
                                         var2 = _closure1_slot0;
                                         var0 = _closure1_slot2;
                                         var1 = 30;

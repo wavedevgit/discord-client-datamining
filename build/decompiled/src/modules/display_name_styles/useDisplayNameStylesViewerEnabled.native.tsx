@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/useDisplayNameStylesViewerEnabled.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useDisplayNameStylesViewerEnabled, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var3 = var0.location;
         var2 = _closure1_slot0;

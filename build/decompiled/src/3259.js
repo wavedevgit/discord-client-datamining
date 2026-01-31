@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.Math;
     var1 = var1.max;
     var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: unzip, environment: var0
+    var1 = function arg0() {
         _fun28148: for (var _fun28148_ip = 0;;) switch (_fun28148_ip) {
             case 0:
                 var6 = arg0;

@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var3;
     var3 = /^[a-fA-F0-9]{6}$/;
     var _closure1_slot1 = var3;
-    var1 = function(arg0) { // Original name: processThemeValues, environment: var1
+    var1 = function arg0() {
         _fun51989: for (var _fun51989_ip = 0;;) switch (_fun51989_ip) {
             case 0:
                 var11 = undefined;

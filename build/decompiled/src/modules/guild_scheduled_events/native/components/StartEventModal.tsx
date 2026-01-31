@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: NavigationBar, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.onClose;
         var _closure2_slot0 = var0;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var8.cpT0Cq;
         var8 = var9.bind(var10)(var8);
         var4.accessibilityLabel = var8;
-        var7 = function() { // Original name: onPress, environment: var7
+        var7 = function() {
             var1 = _closure2_slot0;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: StartEventHeader, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.event;
         var0 = _closure1_slot14;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var1 = function(arg0) { // Original name: PreviewEventCard, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.event;
         var1 = _closure1_slot14;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_scheduled_events/native/components/StartEventModal.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: StartEventModal, environment: var3
+    var3 = function arg0() {
         _fun66988: for (var _fun66988_ip = 0;;) switch (_fun66988_ip) {
             case 0:
                 var0 = arg0;
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0[var1];
                 var20 = var0.loading;
                 var24 = var0.error;
-                var7 = function() { // Original name: onCloseModal, environment: var22
+                var7 = function() {
                     _fun66991: for (var _fun66991_ip = 0;;) switch (_fun66991_ip) {
                         case 0:
                             var2 = arguments[0];
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = _closure2_slot0;
                                     var3 = _closure2_slot4;
                                     var2 = {};
-                                    var1 = function() { // Original name: onSuccess, environment: var1
+                                    var1 = function() {
                                         var2 = _closure2_slot7;
                                         var1 = undefined;
                                         var0 = true;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var14.NotificationToggle;
                 var14 = {};
                 var14.sendStartNotification = var23;
-                var22 = function() { // Original name: onToggle, environment: var22
+                var22 = function() {
                     var2 = _closure2_slot5;
                     var0 = undefined;
                     var1 = function(arg0) { // Environment: var1

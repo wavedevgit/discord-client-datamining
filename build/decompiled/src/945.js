@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: wrapMethodHandler, environment: var5
+    var0 = function arg0, arg1() {
         var5 = arg1;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     case 114:
                         var2 = _closure2_slot0;
-                        var1 = function(arg0, arg1, arg2) { // Original name: createWrappedHandler, environment: var1
+                        var1 = function arg0, arg1, arg2() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = arg1;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: createErrorCapturingHandler, environment: var5
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun9798: for (var _fun9798_ip = 0;;) switch (_fun9798_ip) {
             case 0:
                 var7 = arg1;
@@ -271,7 +271,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: captureHandlerError, environment: var5
+    var0 = function arg0, arg1, arg2() {
         _fun9800: for (var _fun9800_ip = 0;;) switch (_fun9800_ip) {
             case 0:
                 var2 = arg0;
@@ -436,7 +436,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var1 = function(arg0) { // Original name: wrapToolHandlers, environment: var5
+    var1 = function arg0() {
         var3 = _closure1_slot3;
         var0 = undefined;
         var2 = arg0;
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var1;
-    var3 = function(arg0) { // Original name: wrapResourceHandlers, environment: var5
+    var3 = function arg0() {
         var3 = _closure1_slot3;
         var0 = undefined;
         var2 = arg0;
@@ -454,7 +454,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var3;
-    var4 = function(arg0) { // Original name: wrapPromptHandlers, environment: var5
+    var4 = function arg0() {
         var3 = _closure1_slot3;
         var0 = undefined;
         var2 = arg0;
@@ -477,7 +477,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = 'Module';
     var6.value = var10;
     var6 = var8.bind(var9)(var2, var7, var6);
-    var5 = function(arg0) { // Original name: wrapAllMCPHandlers, environment: var5
+    var5 = function arg0() {
         var2 = arg0;
         var3 = _closure1_slot6;
         var0 = undefined;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: noop, environment: var0
+    var1 = function() {
         var0 = undefined;
         return var0;
     };

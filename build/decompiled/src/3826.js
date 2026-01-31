@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var6 = function(arg0) { // Original name: buildWorkletsHash, environment: var5
+    var6 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var6;
-    var0 = function(arg0, arg1) { // Original name: areWorkletsEqual, environment: var5
+    var0 = function arg0, arg1() {
         _fun34692: for (var _fun34692_ip = 0;;) switch (_fun34692_ip) {
             case 0:
                 var3 = arg0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = {};
     var1 = "function isAnimated_Pnpm_utilsTs1(prop){const isAnimated_Pnpm_utilsTs1=this._recur;if(Array.isArray(prop)){return prop.some(isAnimated_Pnpm_utilsTs1);}else if(typeof prop==='object'&&prop!==null){if(prop.onFrame!==undefined){return true;}else{return Object.values(prop).some(isAnimated_Pnpm_utilsTs1);}}return false;}";
     var0.code = var1;
-    var4 = function(arg0) { // Original name: isAnimated, environment: var5
+    var4 = function arg0() {
         _fun34694: for (var _fun34694_ip = 0;;) switch (_fun34694_ip) {
             case 0:
                 var3 = arg0;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var1;
     var _closure1_slot3 = var0;
     var1 = function() { // Environment: var5
-        var0 = function(arg0, arg1) { // Original name: shallowEqual, environment: var0
+        var0 = function arg0, arg1() {
             _fun34696: for (var _fun34696_ip = 0;;) switch (_fun34696_ip) {
                 case 0:
                     var4 = arg0;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var7;
     var _closure1_slot4 = var1;
     var1 = function() { // Environment: var5
-        var0 = function(arg0) { // Original name: validateAnimatedStyles, environment: var0
+        var0 = function arg0() {
             _fun34698: for (var _fun34698_ip = 0;;) switch (_fun34698_ip) {
                 case 0:
                     var2 = arg0;
@@ -313,7 +313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1 = var1.bind(var0)();
     var2.buildWorkletsHash = var6;
-    var6 = function(arg0, arg1) { // Original name: buildDependencies, environment: var5
+    var6 = function arg0, arg1() {
         _fun34699: for (var _fun34699_ip = 0;;) switch (_fun34699_ip) {
             case 0:
                 var1 = arg0;
@@ -347,7 +347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.buildDependencies = var6;
-    var5 = function(arg0, arg1) { // Original name: areDependenciesEqual, environment: var5
+    var5 = function arg0, arg1() {
         _fun34701: for (var _fun34701_ip = 0;;) switch (_fun34701_ip) {
             case 0:
                 var10 = arg0;
@@ -362,7 +362,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun34701
                 }
             case 31:
-                var8 = function(arg0, arg1) { // Original name: is, environment: var1
+                var8 = function arg0, arg1() {
                     _fun34702: for (var _fun34702_ip = 0;;) switch (_fun34702_ip) {
                         case 0:
                             var5 = arg0;

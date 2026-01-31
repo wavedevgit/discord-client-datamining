@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: compareUserItems, environment: var1
+    var0 = function arg0, arg1() {
         _fun108657: for (var _fun108657_ip = 0;;) switch (_fun108657_ip) {
             case 0:
                 var2 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/friends/screens/FriendRequestsScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FriendRequestsScreen, environment: var1
+    var1 = function() {
         _fun108658: for (var _fun108658_ip = 0;;) switch (_fun108658_ip) {
             case 0:
                 var0 = _closure1_slot17;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var3)(var1);
                 var4 = var1.analyticsLocations;
                 var _closure2_slot0 = var4;
-                var1 = function() { // Original name: useNotificationCenterAckFriendRequests, environment: var24
+                var1 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 15;
@@ -943,7 +943,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'key': 'spamRequests',
                                 'itemType': 'spamRequests'
                             };
-                            var1 = function() { // Original name: component, environment: var1
+                            var1 = function() {
                                 _fun108689: for (var _fun108689_ip = 0;;) switch (_fun108689_ip) {
                                     case 0:
                                         var3 = _closure1_slot15;
@@ -973,7 +973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var14.bind(var2)(var4);
                                         var10 = var4.TableRow;
                                         var4 = {};
-                                        var13 = function() { // Original name: onPress, environment: var9
+                                        var13 = function() {
                                             var3 = _closure2_slot18;
                                             var2 = var3.navigate;
                                             var1 = {};
@@ -1032,7 +1032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var6 = var10.bind(var2)(var6);
                                         var7 = var6.TableRow;
                                         var6 = {};
-                                        var9 = function() { // Original name: onPress, environment: var9
+                                        var9 = function() {
                                             var3 = _closure2_slot18;
                                             var2 = var3.navigate;
                                             var1 = {};
@@ -1149,7 +1149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var1.pageWidth = var6;
                 var1.defaultIndex = var17;
-                var6 = function(arg0) { // Original name: onSetActiveIndex, environment: var24
+                var6 = function arg0() {
                     _fun108692: for (var _fun108692_ip = 0;;) switch (_fun108692_ip) {
                         case 0:
                             var2 = _closure2_slot16;
@@ -1268,10 +1268,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = {};
                 var25 = var12.clearAll;
                 var22.style = var25;
-                var24 = function() { // Original name: onPress, environment: var24
+                var24 = function() {
                     var0 = _closure2_slot9;
                     var2 = var0.length;
-                    var1 = function(arg0) { // Original name: handleClearAllIncomingRequests, environment: var0
+                    var1 = function arg0() {
                         var3 = _closure1_slot4;
                         var2 = var3.lazy;
                         var0 = function() { // Environment: var0

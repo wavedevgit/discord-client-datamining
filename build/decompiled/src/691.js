@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot0 = var3;
     var _closure1_slot1 = var1;
-    var2 = function(arg0, arg1) { // Original name: memoize, environment: var0
+    var2 = function arg0, arg1() {
         _fun8262: for (var _fun8262_ip = 0;;) switch (_fun8262_ip) {
             case 0:
                 var3 = arg0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun8262
                 }
             case 40:
-                var0 = function() { // Original name: memoized, environment: var1
+                var0 = function() {
                     _fun8263: for (var _fun8263_ip = 0;;) switch (_fun8263_ip) {
                         case 0:
                             var6 = this;

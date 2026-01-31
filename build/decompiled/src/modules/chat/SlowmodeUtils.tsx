@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: canBypassSlowmodeHelper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun54205: for (var _fun54205_ip = 0;;) switch (_fun54205_ip) {
             case 0:
                 var4 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/SlowmodeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: canBypassSlowmode, environment: var1
+    var3 = function arg0, arg1() {
         var4 = _closure1_slot6;
         var3 = _closure1_slot3;
         var2 = undefined;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.canBypassSlowmode = var3;
-    var1 = function(arg0, arg1) { // Original name: useCanBypassSlowmode, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

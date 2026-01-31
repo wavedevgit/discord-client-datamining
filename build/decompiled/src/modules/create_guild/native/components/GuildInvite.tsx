@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SeeMoreFooter, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.openInviteSheet;
         var0 = _closure1_slot21;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: GuildInviteSuggestionRows, environment: var1
+    var0 = function arg0() {
         _fun80157: for (var _fun80157_ip = 0;;) switch (_fun80157_ip) {
             case 0:
                 var0 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot7;
                 var5 = {};
                 var5.data = var14;
-                var14 = function(arg0) { // Original name: renderItem, environment: var8
+                var14 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var5 = var0.index;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var4)(var11, var10);
             case 185:
                 var5.ListFooterComponent = var9;
-                var9 = function() { // Original name: ItemSeparatorComponent, environment: var8
+                var9 = function() {
                     var3 = _closure1_slot19;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.ItemSeparatorComponent = var9;
-                var8 = function(arg0) { // Original name: keyExtractor, environment: var8
+                var8 = function arg0() {
                     var0 = arg0;
                     var0 = var0.item;
                     var0 = var0.id;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/GuildInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildInvite, environment: var1
+    var1 = function arg0() {
         _fun80162: for (var _fun80162_ip = 0;;) switch (_fun80162_ip) {
             case 0:
                 var0 = arg0;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var5 = var7.bind(var8)(var6, var5);
                             var1.headerRight = var5;
-                            var4 = function() { // Original name: headerLeft, environment: var4
+                            var4 = function() {
                                 var0 = null;
                                 return var0;
                             };
@@ -959,7 +959,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13["3XVNyt"];
                 var13 = var16.bind(var20)(var13);
                 var10.accessibilityLabel = var13;
-                var13 = function() { // Original name: onPress, environment: var23
+                var13 = function() {
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 28;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.channel = var26;
                 var16.canEditInvite = var25;
                 var16.callbackActionSheet = var24;
-                var23 = function() { // Original name: onEdit, environment: var23
+                var23 = function() {
                     _fun80175: for (var _fun80175_ip = 0;;) switch (_fun80175_ip) {
                         case 0:
                             var1 = _closure2_slot0;

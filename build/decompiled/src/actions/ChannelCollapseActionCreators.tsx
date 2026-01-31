@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var _closure1_slot2 = var1;
     var1 = {};
-    var5 = function(arg0) { // Original name: update, environment: var3
+    var5 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.update = var5;
-    var3 = function(arg0) { // Original name: toggleCollapseGuild, environment: var3
+    var3 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;

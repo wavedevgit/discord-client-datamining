@@ -3952,7 +3952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var122 = var9;
     var7 = var123[var11](var122, var121, var120, var119, var118);
     var4.baseSetting = var7;
-    var7 = function() { // Original name: isEligible, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -3965,7 +3965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.isEligible = var7;
-    var7 = function() { // Original name: useIsEligible, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -3984,7 +3984,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.GuildActivityStatusRestrictionDefault;
     var8 = var8.OFF;
     var4.ineligibleDefault = var8;
-    var8 = function() { // Original name: eligibleDefault, environment: var1
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -4054,7 +4054,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var122 = var9;
     var8 = var123[var12](var122, var121, var120, var119, var118);
     var4.baseSetting = var8;
-    var8 = function() { // Original name: isEligible, environment: var1
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -4067,7 +4067,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.isEligible = var8;
-    var8 = function() { // Original name: useIsEligible, environment: var1
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 13;
@@ -4085,7 +4085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.GuildActivityStatusRestrictionDefaultV2;
     var7 = var7.ACTIVITY_STATUS_OFF;
     var4.ineligibleDefault = var7;
-    var7 = function() { // Original name: eligibleDefault, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 8;
@@ -4291,7 +4291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var123 = var9;
     var20 = var123[var8](var122, var121, var120, var119, var118);
-    var19 = function(arg0) { // Original name: explicitContentFromProto, environment: var1
+    var19 = function arg0() {
         _fun15408: for (var _fun15408_ip = 0;;) switch (_fun15408_ip) {
             case 0:
                 var0 = arg0;
@@ -4355,7 +4355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var18 = function(arg0) { // Original name: explicitContentToProto, environment: var1
+    var18 = function arg0() {
         _fun15409: for (var _fun15409_ip = 0;;) switch (_fun15409_ip) {
             case 0:
                 var0 = arg0;
@@ -4406,7 +4406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var120 = var19;
     var119 = var18;
     var17 = var123[var5](var122, var121, var120, var119, var118);
-    var16 = function(arg0) { // Original name: goreContentFromProto, environment: var1
+    var16 = function arg0() {
         _fun15410: for (var _fun15410_ip = 0;;) switch (_fun15410_ip) {
             case 0:
                 var0 = arg0;
@@ -4470,7 +4470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var15 = function(arg0) { // Original name: goreContentToProto, environment: var1
+    var15 = function arg0() {
         _fun15411: for (var _fun15411_ip = 0;;) switch (_fun15411_ip) {
             case 0:
                 var0 = arg0;

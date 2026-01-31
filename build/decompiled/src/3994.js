@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var7.bind(var0)(var1);
     var1 = var3.bind(var5)(var1);
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: InnerScreen, environment: var4
+    var1 = function arg0, arg1() {
         _fun37199: for (var _fun37199_ip = 0;;) switch (_fun37199_ip) {
             case 0:
                 var9 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.usePrevious;
                 var0 = var9.activityState;
                 var2 = var1.bind(var2)(var0);
-                var25 = function(arg0) { // Original name: setRef, environment: var4
+                var25 = function arg0() {
                     _fun37201: for (var _fun37201_ip = 0;;) switch (_fun37201_ip) {
                         case 0:
                             var2 = arg0;
@@ -535,7 +535,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 1188:
                 var12.bottom = var14;
                 var6.gestureResponseDistance = var12;
-                var4 = function(arg0) { // Original name: handleRef, environment: var4
+                var4 = function arg0() {
                     _fun37203: for (var _fun37203_ip = 0;;) switch (_fun37203_ip) {
                         case 0:
                             var2 = arg0;

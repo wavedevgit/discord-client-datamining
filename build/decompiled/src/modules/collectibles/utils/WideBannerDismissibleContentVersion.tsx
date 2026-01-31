@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: getWideBannerDismissibleContentVersion, environment: var1
+    var1 = function() {
         _fun96647: for (var _fun96647_ip = 0;;) switch (_fun96647_ip) {
             case 0:
                 var0 = _closure1_slot3;

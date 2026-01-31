@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function(arg0, arg1) { // Original name: getFirstSkemaFieldError, environment: var1
+    var0 = function arg0, arg1() {
         _fun56009: for (var _fun56009_ip = 0;;) switch (_fun56009_ip) {
             case 0:
                 var4 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interactions/SkemaUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getFirstSkemaError, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg0;

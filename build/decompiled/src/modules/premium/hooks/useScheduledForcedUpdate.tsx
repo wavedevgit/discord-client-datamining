@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/hooks/useScheduledForcedUpdate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useScheduledForcedUpdate, environment: var1
+    var1 = function arg0() {
         _fun58029: for (var _fun58029_ip = 0;;) switch (_fun58029_ip) {
             case 0:
                 var0 = arg0;

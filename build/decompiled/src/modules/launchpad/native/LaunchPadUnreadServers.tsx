@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: HistorySeparator, environment: var1
+    var0 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: renderHistorySection, environment: var1
+    var0 = function() {
         var3 = _closure1_slot10;
         var2 = _closure1_slot15;
         var1 = undefined;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.bind(var9)(var6);
     var _closure1_slot12 = var6;
     var8 = var7.memo;
-    var6 = function(arg0) { // Original name: GuildItemInner, environment: var1
+    var6 = function arg0() {
         var1 = arg0;
         var11 = var1.guildId;
         var _closure2_slot0 = var11;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.bind(var7)(var6);
     var _closure1_slot13 = var6;
     var8 = var7.memo;
-    var6 = function(arg0) { // Original name: PrivateChannelItemInner, environment: var1
+    var6 = function arg0() {
         _fun110008: for (var _fun110008_ip = 0;;) switch (_fun110008_ip) {
             case 0:
                 var0 = arg0;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.bind(var7)(var6);
     var _closure1_slot14 = var6;
     var6 = var7.memo;
-    var1 = function(arg0) { // Original name: LaunchPadUnreadServers, environment: var1
+    var1 = function arg0() {
         _fun110013: for (var _fun110013_ip = 0;;) switch (_fun110013_ip) {
             case 0:
                 var2 = arg0;

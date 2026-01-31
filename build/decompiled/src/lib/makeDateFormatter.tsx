@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var0 = function(arg0) { // Original name: makeLongFormatter, environment: var3
+    var0 = function arg0() {
         _fun26944: for (var _fun26944_ip = 0;;) switch (_fun26944_ip) {
             case 0:
                 var4 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: convertMomentValue, environment: var3
+    var0 = function arg0, arg1() {
         _fun26945: for (var _fun26945_ip = 0;;) switch (_fun26945_ip) {
             case 0:
                 var3 = arg1;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: convertMomentOrdinal, environment: var3
+    var0 = function arg0() {
         _fun26949: for (var _fun26949_ip = 0;;) switch (_fun26949_ip) {
             case 0:
                 var0 = arg0;
@@ -251,7 +251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: defaultMeridiem, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun26951: for (var _fun26951_ip = 0;;) switch (_fun26951_ip) {
             case 0:
                 var2 = arg2;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var1 = function() { // Original name: getLocaleData, environment: var3
+    var1 = function() {
         _fun26952: for (var _fun26952_ip = 0;;) switch (_fun26952_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'lib/makeDateFormatter.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: makeFormatter, environment: var3
+    var3 = function arg0, arg1() {
         _fun26953: for (var _fun26953_ip = 0;;) switch (_fun26953_ip) {
             case 0:
                 var3 = arg0;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var119;
                 var _closure2_slot2 = var119;
                 var _closure2_slot3 = var119;
-                var118 = function(arg0) { // Original name: add, environment: var0
+                var118 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = var2.push;
                     var3 = '(';
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     return var0;
                 };
-                var117 = function(arg0) { // Original name: nxt, environment: var0
+                var117 = function arg0() {
                     var3 = _closure2_slot2;
                     var2 = var3.slice;
                     var0 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun26953
                 }
             case 176:
-                var1 = function(arg0, arg1) { // Original name: convertLongDateFormat, environment: var0
+                var1 = function arg0, arg1() {
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     var1 = arg1;

@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEligibleTrialSub = var3;
-    var3 = function() { // Original name: useCurrentPremiumTrialTier, environment: var1
+    var3 = function() {
         _fun55265: for (var _fun55265_ip = 0;;) switch (_fun55265_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCurrentPremiumTrialTier = var3;
-    var1 = function() { // Original name: getPremiumTrialOffer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot9;
         var2 = var3.map;
         var1 = function(arg0) { // Environment: var0

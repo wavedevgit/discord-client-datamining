@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: getThreadChannelIcon, environment: var1
+    var5 = function arg0() {
         _fun44123: for (var _fun44123_ip = 0;;) switch (_fun44123_ip) {
             case 0:
                 var2 = arg0;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var5;
-    var4 = function(arg0, arg1) { // Original name: getChannelIcon, environment: var1
+    var4 = function arg0, arg1() {
         _fun44124: for (var _fun44124_ip = 0;;) switch (_fun44124_ip) {
             case 0:
                 var3 = arg0;
@@ -861,7 +861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0, arg1) { // Original name: getChannelIconComponent, environment: var1
+    var3 = function arg0, arg1() {
         _fun44125: for (var _fun44125_ip = 0;;) switch (_fun44125_ip) {
             case 0:
                 var4 = arg0;
@@ -1743,7 +1743,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'utils/native/ChannelUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.getThreadChannelIcon = var5;
-    var5 = function(arg0) { // Original name: getSimpleChannelIcon, environment: var1
+    var5 = function arg0() {
         _fun44126: for (var _fun44126_ip = 0;;) switch (_fun44126_ip) {
             case 0:
                 var1 = arg0;
@@ -1916,7 +1916,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSimpleChannelIcon = var5;
-    var5 = function(arg0, arg1) { // Original name: getChannelIconWithGuild, environment: var1
+    var5 = function arg0, arg1() {
         _fun44127: for (var _fun44127_ip = 0;;) switch (_fun44127_ip) {
             case 0:
                 var3 = arg0;
@@ -1942,7 +1942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChannelIconWithGuild = var5;
-    var5 = function(arg0) { // Original name: getChannelMentionIcon, environment: var1
+    var5 = function arg0() {
         _fun44128: for (var _fun44128_ip = 0;;) switch (_fun44128_ip) {
             case 0:
                 var1 = arg0;
@@ -2098,7 +2098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelMentionIcon = var5;
     var2.getChannelIcon = var4;
-    var4 = function(arg0, arg1) { // Original name: getChannelIconComponentWithGuild, environment: var1
+    var4 = function arg0, arg1() {
         _fun44129: for (var _fun44129_ip = 0;;) switch (_fun44129_ip) {
             case 0:
                 var3 = arg0;
@@ -2125,7 +2125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelIconComponentWithGuild = var4;
     var2.getChannelIconComponent = var3;
-    var1 = function(arg0) { // Original name: getSimpleChannelIconComponent, environment: var1
+    var1 = function arg0() {
         _fun44130: for (var _fun44130_ip = 0;;) switch (_fun44130_ip) {
             case 0:
                 var2 = arg0;

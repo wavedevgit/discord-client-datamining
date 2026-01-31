@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventSchedule.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildEventSchedule, environment: var1
+    var1 = function arg0() {
         _fun65326: for (var _fun65326_ip = 0;;) switch (_fun65326_ip) {
             case 0:
                 var1 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var18 = var15.startDate;
                 var4.date = var18;
-                var18 = function(arg0) { // Original name: onChange, environment: var14
+                var18 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = {};
                     var4 = _closure2_slot0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var15 = var15.endDate;
                 var6.date = var15;
-                var14 = function(arg0) { // Original name: onChange, environment: var14
+                var14 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = {};
                     var4 = _closure2_slot0;

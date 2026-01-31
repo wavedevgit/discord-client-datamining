@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var0;
             var _closure1_slot1 = var3;
             var _closure1_slot2 = var4;
-            var0 = function(arg0) { // Original name: isPlainJSObject, environment: var5
+            var0 = function arg0() {
                 var0 = global;
                 var3 = var0.Object;
                 var2 = var3.getPrototypeOf;
@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot19 = var0;
-            var0 = function(arg0) { // Original name: freezeObjectInDev, environment: var5
+            var0 = function arg0() {
                 var0 = undefined;
                 return var0;
             };
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.code = var4;
             var _closure1_slot5 = var3;
             var3 = function() { // Environment: var5
-                var0 = function(arg0) { // Original name: isHostObject, environment: var0
+                var0 = function arg0() {
                     var1 = 'REANIMATED_MAGIC_KEY';
                     var0 = arg0;
                     var0 = var1 in var0;
@@ -73,11 +73,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = 'function pnpm_shareablesTs2(){return new Proxy({},{get:function(_,prop){if(prop===\'_isReanimatedSharedValue\'||prop===\'__remoteFunction\'){return false;}throw new ReanimatedError("Trying to access property `"+String(prop)+"` of an object which cannot be sent to the UI runtime.");},set:function(){throw new ReanimatedError(\'Trying to write to an object which cannot be sent to the UI runtime.\');}});}';
             var6.code = var3;
             var3 = {};
-            var4 = function() { // Original name: pnpm_shareablesTs2, environment: var5
+            var4 = function() {
                 var1 = global;
                 var3 = var1.Proxy;
                 var2 = {};
-                var1 = function(arg0, arg1) { // Original name: get, environment: var0
+                var1 = function arg0, arg1() {
                     _fun33201: for (var _fun33201_ip = 0;;) switch (_fun33201_ip) {
                         case 0:
                             var4 = arg1;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var2.get = var1;
-                var0 = function() { // Original name: set, environment: var0
+                var0 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 3;
@@ -172,7 +172,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun33195
             }
         case 226:
-            var4 = function(arg0) { // Original name: makeShareableCloneRecursiveNative, environment: var5
+            var4 = function arg0() {
                 _fun33204: for (var _fun33204_ip = 0;;) switch (_fun33204_ip) {
                     case 0:
                         var3 = arg0;
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun33204_ip = 663;
                         continue _fun33204;
                     case 653:
-                        var9 = function(arg0) { // Original name: cloneArrayBufferView, environment: var5
+                        var9 = function arg0() {
                             var3 = arg0;
                             var6 = var3.buffer;
                             var _closure3_slot0 = var6;
@@ -454,7 +454,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var _closure3_slot1 = var7;
                             var2 = _closure1_slot10;
                             var0 = {};
-                            var4 = function() { // Original name: pnpm_shareablesTs6, environment: var4
+                            var4 = function() {
                                 _fun33214: for (var _fun33214_ip = 0;;) switch (_fun33214_ip) {
                                     case 0:
                                         var4 = _closure1_slot9;
@@ -588,7 +588,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun33204_ip = 770;
                         continue _fun33204;
                     case 760:
-                        var9 = function(arg0) { // Original name: cloneError, environment: var5
+                        var9 = function arg0() {
                             var3 = arg0;
                             var8 = var3.name;
                             var _closure3_slot0 = var8;
@@ -598,7 +598,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var _closure3_slot2 = var6;
                             var2 = _closure1_slot10;
                             var0 = {};
-                            var4 = function() { // Original name: pnpm_shareablesTs5, environment: var4
+                            var4 = function() {
                                 var0 = global;
                                 var0 = var0.Error;
                                 var1 = var0.prototype;
@@ -645,7 +645,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun33204_ip = 782;
                         continue _fun33204;
                     case 772:
-                        var9 = function(arg0) { // Original name: cloneRegExp, environment: var5
+                        var9 = function arg0() {
                             var3 = arg0;
                             var7 = var3.source;
                             var _closure3_slot0 = var7;
@@ -653,7 +653,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var _closure3_slot1 = var6;
                             var2 = _closure1_slot10;
                             var0 = {};
-                            var4 = function() { // Original name: pnpm_shareablesTs4, environment: var4
+                            var4 = function() {
                                 var0 = global;
                                 var3 = var0.RegExp;
                                 var5 = _closure3_slot0;
@@ -878,13 +878,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun33204_ip = 1336;
                         continue _fun33204;
                     case 1326:
-                        var9 = function(arg0) { // Original name: cloneContextObject, environment: var5
+                        var9 = function arg0() {
                             var3 = arg0;
                             var6 = var3.__workletContextObjectFactory;
                             var _closure3_slot0 = var6;
                             var2 = _closure1_slot10;
                             var0 = {};
-                            var4 = function() { // Original name: pnpm_shareablesTs3, environment: var4
+                            var4 = function() {
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
                                 var0 = var1.bind(var0)();
@@ -940,7 +940,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun33204_ip = 1448;
                         continue _fun33204;
                     case 1436:
-                        var5 = function(arg0, arg1, arg2) { // Original name: cloneArray, environment: var5
+                        var5 = function arg0, arg1, arg2() {
                             var8 = arg0;
                             var7 = arg1;
                             var _closure3_slot0 = var7;
@@ -1003,7 +1003,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun33195_ip = 238;
             continue _fun33195;
         case 233:
-            var4 = function(arg0) { // Original name: makeShareableCloneRecursiveWeb, environment: var5
+            var4 = function arg0() {
                 var0 = arg0;
                 return var0;
             };
@@ -1030,7 +1030,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.code = var6;
             var _closure1_slot15 = var3;
             var3 = function() { // Environment: var5
-                var0 = function(arg0) { // Original name: isRemoteFunction, environment: var0
+                var0 = function arg0() {
                     var0 = arg0;
                     var0 = var0.__remoteFunction;
                     var0 = !var0;
@@ -1052,7 +1052,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.code = var6;
             var _closure1_slot17 = var3;
             var3 = function() { // Environment: var5
-                var0 = function(arg0) { // Original name: makeShareableCloneOnUIRecursive, environment: var0
+                var0 = function arg0() {
                     _fun33218: for (var _fun33218_ip = 0;;) switch (_fun33218_ip) {
                         case 0:
                             var0 = arg0;
@@ -1062,7 +1062,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun33218
                             }
                         case 15:
-                            var2 = function(arg0) { // Original name: cloneRecursive, environment: var1
+                            var2 = function arg0() {
                                 _fun33219: for (var _fun33219_ip = 0;;) switch (_fun33219_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -1203,7 +1203,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun33195
             }
         case 379:
-            var1 = function(arg0) { // Original name: makeShareableNative, environment: var5
+            var1 = function arg0() {
                 _fun33221: for (var _fun33221_ip = 0;;) switch (_fun33221_ip) {
                     case 0:
                         var0 = arg0;
@@ -1224,7 +1224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 53:
                         var3 = _closure1_slot10;
                         var2 = {};
-                        var6 = function() { // Original name: pnpm_shareablesTs9, environment: var6
+                        var6 = function() {
                             var0 = _closure2_slot0;
                             return var0;
                         };
@@ -1252,7 +1252,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun33195_ip = 391;
             continue _fun33195;
         case 386:
-            var1 = function(arg0) { // Original name: makeShareableJS, environment: var5
+            var1 = function arg0() {
                 var0 = arg0;
                 return var0;
             };

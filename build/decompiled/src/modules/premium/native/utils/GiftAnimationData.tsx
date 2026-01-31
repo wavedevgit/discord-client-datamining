@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/native/utils/GiftAnimationData.tsx';
     var4 = var5.bind(var6)(var4);
     var2.LottieType = var3;
-    var3 = function(arg0) { // Original name: getLottieType, environment: var1
+    var3 = function arg0() {
         _fun75211: for (var _fun75211_ip = 0;;) switch (_fun75211_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getLottieType = var3;
-    var1 = function(arg0, arg1) { // Original name: getGiftAnimationData, environment: var1
+    var1 = function arg0, arg1() {
         _fun75212: for (var _fun75212_ip = 0;;) switch (_fun75212_ip) {
             case 0:
                 var2 = arg0;

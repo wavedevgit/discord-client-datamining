@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getErrorMessageFromErrorCode, environment: var1
+    var3 = function arg0() {
         _fun114593: for (var _fun114593_ip = 0;;) switch (_fun114593_ip) {
             case 0:
                 var2 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getErrorMessageFromErrorCode = var3;
-    var1 = function(arg0) { // Original name: canSeeVanityUrlSettings, environment: var1
+    var1 = function arg0() {
         _fun114594: for (var _fun114594_ip = 0;;) switch (_fun114594_ip) {
             case 0:
                 var2 = arg0;

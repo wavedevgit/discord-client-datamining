@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: HappeningNowLiveStageContent, environment: var7
+    var1 = function arg0() {
         _fun101594: for (var _fun101594_ip = 0;;) switch (_fun101594_ip) {
             case 0:
                 var0 = arg0;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var1;
-    var0 = function(arg0) { // Original name: getUsersSubtitle, environment: var7
+    var0 = function arg0() {
         _fun101595: for (var _fun101595_ip = 0;;) switch (_fun101595_ip) {
             case 0:
                 var0 = arg0;

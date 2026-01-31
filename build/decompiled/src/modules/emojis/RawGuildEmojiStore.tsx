@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun43762: for (var _fun43762_ip = 0;;) switch (_fun43762_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun43765: for (var _fun43765_ip = 0;;) switch (_fun43765_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun43767: for (var _fun43767_ip = 0;;) switch (_fun43767_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0, arg1) { // Original name: fromServer, environment: var3
+    var0 = function arg0, arg1() {
         _fun43768: for (var _fun43768_ip = 0;;) switch (_fun43768_ip) {
             case 0:
                 var18 = arg0;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var6 = var1.LibdiscoreStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: RawGuildEmojiStore, environment: var5
+        var3 = function arg0() {
             _fun43770: for (var _fun43770_ip = 0;;) switch (_fun43770_ip) {
                 case 0:
                     var3 = this;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'stateWrapper';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0.database;
             return var0;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuildEmojis';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.database;
             var1 = var2.getNullablePartition;
@@ -483,21 +483,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'RawGuildEmojiStore';
     var6.displayName = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: LOGOUT, environment: var3
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.LOGOUT = var7;
-    var7 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC, environment: var3
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.BACKGROUND_SYNC = var7;
-    var7 = function(arg0, arg1) { // Original name: CONNECTION_OPEN, environment: var3
+    var7 = function arg0, arg1() {
         _fun43775: for (var _fun43775_ip = 0;;) switch (_fun43775_ip) {
             case 0:
                 var6 = arg1;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function(arg0, arg1) { // Original name: OVERLAY_INITIALIZE, environment: var3
+    var7 = function arg0, arg1() {
         var2 = arg1;
         var _closure2_slot0 = var2;
         var1 = var2.clear;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.OVERLAY_INITIALIZE = var7;
-    var7 = function(arg0, arg1) { // Original name: CACHED_EMOJIS_LOADED, environment: var3
+    var7 = function arg0, arg1() {
         _fun43778: for (var _fun43778_ip = 0;;) switch (_fun43778_ip) {
             case 0:
                 var8 = arg1;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CACHED_EMOJIS_LOADED = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_CREATE, environment: var3
+    var7 = function arg0, arg1() {
         _fun43779: for (var _fun43779_ip = 0;;) switch (_fun43779_ip) {
             case 0:
                 var0 = arg0;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_CREATE = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_UPDATE, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg0;
         var4 = arg1;
         var3 = var4.setPartition;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_UPDATE = var7;
-    var7 = function(arg0, arg1) { // Original name: GUILD_EMOJIS_UPDATE, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg0;
         var4 = arg1;
         var3 = var4.setPartition;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_EMOJIS_UPDATE = var7;
-    var3 = function(arg0, arg1) { // Original name: GUILD_DELETE, environment: var3
+    var3 = function arg0, arg1() {
         var2 = arg1;
         var1 = var2.removePartition;
         var0 = arg0;

@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var4.bind(var0)(var10);
     var10 = var10.EyeSlashIcon;
     var1.IconComponent = var10;
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 4;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var10;
-    var10 = function() { // Original name: useAccountIgnoredUsersSettingDescription, environment: var8
+    var10 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var1 = 3;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = {};
     var9 = var9.IGNORED_USERS;
     var7.route = var9;
-    var8 = function() { // Original name: getComponent, environment: var8
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;

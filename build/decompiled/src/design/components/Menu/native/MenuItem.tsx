@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var8.bind(var3)(var7, var6);
             case 364:
                 var0.label = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure2_slot0;
                     var0 = undefined;
                     var2 = var2.bind(var0)();

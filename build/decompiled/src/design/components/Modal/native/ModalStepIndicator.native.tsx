@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: StepPill, environment: var1
+    var0 = function arg0() {
         _fun87894: for (var _fun87894_ip = 0;;) switch (_fun87894_ip) {
             case 0:
                 var0 = arg0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0[var4];
                 var7 = var13.bind(var3)(var6);
                 var6 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: T, environment: var2
+                var2 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Modal/native/ModalStepIndicator.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ModalStepIndicator, environment: var1
+    var1 = function arg0() {
         _fun87897: for (var _fun87897_ip = 0;;) switch (_fun87897_ip) {
             case 0:
                 var0 = arg0;

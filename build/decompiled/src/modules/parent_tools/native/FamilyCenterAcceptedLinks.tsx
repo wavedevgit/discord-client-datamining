@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: FamilyCenterAcceptedLinkRow, environment: var1
+    var0 = function arg0() {
         _fun81989: for (var _fun81989_ip = 0;;) switch (_fun81989_ip) {
             case 0:
                 var0 = arg0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.name = var15;
                 var11 = var13.bind(var14)(var12, var11);
                 var5.accessibilityLabel = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterAcceptedLinks.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterAcceptedLinks, environment: var1
+    var1 = function() {
         _fun81991: for (var _fun81991_ip = 0;;) switch (_fun81991_ip) {
             case 0:
                 var0 = _closure1_slot8;

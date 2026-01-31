@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: retryMeasurements, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot4;
         var2 = var3.apply;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot3 = var0;
-    var0 = function() { // Original name: _retryMeasurements, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 93: // try_start_0
                         var9 = var5;
-                        var5 = function(arg0) { // Original name: measure, environment: var4
+                        var5 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tooltip/native/MeasurementUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getMeasurements, environment: var1
+    var1 = function arg0() {
         _fun57366: for (var _fun57366_ip = 0;;) switch (_fun57366_ip) {
             case 0:
                 var1 = arguments[1];

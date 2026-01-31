@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/connections/two_way_link/xbox/XboxLinkLanding.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: XboxLinkLanding, environment: var1
+    var1 = function() {
         var1 = _closure1_slot8;
         var3 = undefined;
         var8 = var1.bind(var3)();

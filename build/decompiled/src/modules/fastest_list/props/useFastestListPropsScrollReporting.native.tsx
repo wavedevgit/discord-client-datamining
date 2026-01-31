@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useFastestListPropsScrollReporting, environment: var1
+    var1 = function arg0, arg1() {
         _fun60988: for (var _fun60988_ip = 0;;) switch (_fun60988_ip) {
             case 0:
                 var2 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.bind(var4)(var1);
                 var3 = var4.useAnimatedScrollHandler;
                 var1 = {};
-                var5 = function(arg0) { // Original name: n, environment: var5
+                var5 = function arg0() {
                     _fun60989: for (var _fun60989_ip = 0;;) switch (_fun60989_ip) {
                         case 0:
                             var2 = _closure2_slot1;

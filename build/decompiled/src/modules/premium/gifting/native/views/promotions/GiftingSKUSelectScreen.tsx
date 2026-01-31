@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/gifting/native/views/promotions/GiftingSKUSelectScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GiftingSKUSelectScreen, environment: var1
+    var1 = function arg0() {
         _fun75148: for (var _fun75148_ip = 0;;) switch (_fun75148_ip) {
             case 0:
                 var1 = arg0;

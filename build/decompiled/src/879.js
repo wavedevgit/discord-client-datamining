@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var1 = function(arg0) { // Original name: metricAttributeToSerializedMetricAttribute, environment: var6
+    var1 = function arg0() {
         _fun9330: for (var _fun9330_ip = 0;;) switch (_fun9330_ip) {
             case 0:
                 var0 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0, arg1, arg2) { // Original name: setMetricAttribute, environment: var6
+    var0 = function arg0, arg1, arg2() {
         _fun9331: for (var _fun9331_ip = 0;;) switch (_fun9331_ip) {
             case 0:
                 var3 = arg0;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var5 = function(arg0, arg1) { // Original name: _INTERNAL_captureSerializedMetric, environment: var6
+    var5 = function arg0, arg1() {
         _fun9332: for (var _fun9332_ip = 0;;) switch (_fun9332_ip) {
             case 0:
                 var4 = arg0;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _enrichMetricAttributes, environment: var6
+    var0 = function arg0, arg1, arg2() {
         _fun9333: for (var _fun9333_ip = 0;;) switch (_fun9333_ip) {
             case 0:
                 var4 = arg0;
@@ -351,7 +351,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var4 = function(arg0, arg1) { // Original name: _INTERNAL_flushMetricsBuffer, environment: var6
+    var4 = function arg0, arg1() {
         _fun9334: for (var _fun9334_ip = 0;;) switch (_fun9334_ip) {
             case 0:
                 var2 = arg0;
@@ -412,7 +412,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0) { // Original name: _INTERNAL_getMetricBuffer, environment: var6
+    var3 = function arg0() {
         var1 = _closure1_slot10;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -422,7 +422,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var3;
-    var0 = function() { // Original name: _getBufferMap, environment: var6
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 10;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = 'Module';
     var7.value = var11;
     var7 = var9.bind(var10)(var2, var8, var7);
-    var6 = function(arg0, arg1) { // Original name: _INTERNAL_captureMetric, environment: var6
+    var6 = function arg0, arg1() {
         _fun9338: for (var _fun9338_ip = 0;;) switch (_fun9338_ip) {
             case 0:
                 var1 = arg1;

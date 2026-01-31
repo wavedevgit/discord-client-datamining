@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.AnalyticEvents;
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: usePomeloFormValidation, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun80878: for (var _fun80878_ip = 0;;) switch (_fun80878_ip) {
             case 0:
                 var0 = arguments[3];

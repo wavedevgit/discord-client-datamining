@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var4 = function(arg0, arg1, arg2) { // Original name: getStringFromDataView, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun37876: for (var _fun37876_ip = 0;;) switch (_fun37876_ip) {
             case 0:
                 var6 = arg0;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var4;
-    var3 = function(arg0) { // Original name: getStringValueFromArray, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var3;
-    var0 = function(arg0, arg1) { // Original name: strRepeat, environment: var1
+    var0 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Array;
         var1 = arg1;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.value = var5;
     var5 = '__esModule';
     var5 = var7.bind(var8)(var2, var5, var6);
-    var5 = function(arg0, arg1, arg2) { // Original name: getDataView, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun37880: for (var _fun37880_ip = 0;;) switch (_fun37880_ip) {
             case 0:
                 var2 = arg0;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.getDataView = var5;
     var2.getStringFromDataView = var4;
-    var4 = function(arg0, arg1) { // Original name: getNullTerminatedStringFromDataView, environment: var1
+    var4 = function arg0, arg1() {
         _fun37881: for (var _fun37881_ip = 0;;) switch (_fun37881_ip) {
             case 0:
                 var6 = arg0;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getNullTerminatedStringFromDataView = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: getUnicodeStringFromDataView, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun37882: for (var _fun37882_ip = 0;;) switch (_fun37882_ip) {
             case 0:
                 var8 = arg0;
@@ -248,7 +248,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getUnicodeStringFromDataView = var4;
-    var4 = function(arg0, arg1) { // Original name: getPascalStringFromDataView, environment: var1
+    var4 = function arg0, arg1() {
         var5 = arg0;
         var2 = arg1;
         var0 = var5.getUint8;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.getPascalStringFromDataView = var4;
     var2.getStringValueFromArray = var3;
-    var3 = function(arg0) { // Original name: getCharacterArray, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = '';
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getCharacterArray = var3;
-    var3 = function() { // Original name: objectAssign, environment: var1
+    var3 = function() {
         _fun37886: for (var _fun37886_ip = 0;;) switch (_fun37886_ip) {
             case 0:
                 var1 = undefined;
@@ -319,7 +319,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.objectAssign = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: deferInit, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var4 = arg0;
         var3 = arg1;
         var _closure2_slot0 = var4;
@@ -336,7 +336,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             'configurable': true,
             'enumerable': true
         };
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             _fun37888: for (var _fun37888_ip = 0;;) switch (_fun37888_ip) {
                 case 0:
                     var1 = _closure2_slot3;
@@ -376,7 +376,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.deferInit = var3;
-    var3 = function(arg0) { // Original name: getBase64Image, environment: var1
+    var3 = function arg0() {
         _fun37889: for (var _fun37889_ip = 0;;) switch (_fun37889_ip) {
             case 0:
                 var4 = arg0;
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getBase64Image = var3;
-    var3 = function(arg0) { // Original name: dataUriToBuffer, environment: var1
+    var3 = function arg0() {
         _fun37891: for (var _fun37891_ip = 0;;) switch (_fun37891_ip) {
             case 0:
                 var3 = arg0;
@@ -626,7 +626,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.dataUriToBuffer = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: padStart, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var4 = _closure1_slot4;
         var2 = var1.length;
@@ -639,7 +639,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.padStart = var3;
-    var3 = function(arg0, arg1) { // Original name: parseFloatRadix, environment: var1
+    var3 = function arg0, arg1() {
         _fun37895: for (var _fun37895_ip = 0;;) switch (_fun37895_ip) {
             case 0:
                 var7 = arg0;
@@ -677,7 +677,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.COMPRESSION_METHOD_NONE = var0;
     var3 = 0;
     var2.COMPRESSION_METHOD_DEFLATE = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: decompress, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun37896: for (var _fun37896_ip = 0;;) switch (_fun37896_ip) {
             case 0:
                 var4 = arg0;

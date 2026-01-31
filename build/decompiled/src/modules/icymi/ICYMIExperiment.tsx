@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
-    var7 = function(arg0) { // Original name: useICYMIEnabled, environment: var3
+    var7 = function arg0() {
         _fun70647: for (var _fun70647_ip = 0;;) switch (_fun70647_ip) {
             case 0:
                 var1 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var7;
-    var6 = function(arg0) { // Original name: getICYMIEnabled, environment: var3
+    var6 = function arg0() {
         _fun70648: for (var _fun70648_ip = 0;;) switch (_fun70648_ip) {
             case 0:
                 var5 = arguments[1];
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getICYMIEnabled = var6;
     var2.ICYMINegativeExperiment = var5;
     var2.ICYMINewConversationSummaryExperiment = var4;
-    var4 = function(arg0) { // Original name: useICYMINewConversationSummaryExperiment, environment: var3
+    var4 = function arg0() {
         _fun70649: for (var _fun70649_ip = 0;;) switch (_fun70649_ip) {
             case 0:
                 var0 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useICYMINewConversationSummaryExperiment = var4;
-    var3 = function(arg0) { // Original name: getICYMINewConversationSummaryExperiment, environment: var3
+    var3 = function arg0() {
         _fun70650: for (var _fun70650_ip = 0;;) switch (_fun70650_ip) {
             case 0:
                 var0 = arg0;

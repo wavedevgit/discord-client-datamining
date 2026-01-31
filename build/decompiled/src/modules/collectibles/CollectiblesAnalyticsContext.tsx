@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = require;
     var2 = exports;
     var7 = dependencyMap;
-    var3 = function() { // Original name: useCollectiblesAnalyticsContext, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = var2.useContext;
         var0 = _closure1_slot2;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.CollectiblesAnalyticsContext = var4;
     var2.useCollectiblesAnalyticsContext = var3;
-    var1 = function(arg0) { // Original name: CollectiblesAnalyticsProvider, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.newValue;
         var _closure2_slot0 = var7;

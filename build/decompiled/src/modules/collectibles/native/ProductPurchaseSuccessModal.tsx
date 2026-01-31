@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var8)(var3);
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: CancelButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.tintColor;
         var _closure2_slot0 = var0;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.HeaderBackButton;
         var0 = {};
         var0.onPress = var5;
-        var4 = function() { // Original name: backImage, environment: var4
+        var4 = function() {
             var3 = _closure1_slot11;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.toHexString;
     var3 = var3.bind(var6)();
     var _closure1_slot21 = var3;
-    var3 = function(arg0) { // Original name: ProductPurchaseGradientBackground, environment: var1
+    var3 = function arg0() {
         _fun75296: for (var _fun75296_ip = 0;;) switch (_fun75296_ip) {
             case 0:
                 var0 = arg0;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ProductPurchaseSuccessModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun75298: for (var _fun75298_ip = 0;;) switch (_fun75298_ip) {
             case 0:
                 var0 = arg0;
@@ -914,7 +914,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var10[var7];
                     var5 = var9.bind(var8)(var2);
                     var3 = var5.useAnimatedStyle;
-                    var2 = function() { // Original name: n, environment: var1
+                    var2 = function() {
                         _fun75305: for (var _fun75305_ip = 0;;) switch (_fun75305_ip) {
                             case 0:
                                 var0 = {};
@@ -977,7 +977,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var10[var7];
                     var5 = var9.bind(var8)(var2);
                     var3 = var5.useAnimatedStyle;
-                    var2 = function() { // Original name: s, environment: var1
+                    var2 = function() {
                         var0 = {};
                         var5 = _closure1_slot0;
                         var6 = _closure1_slot2;
@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var10[var7];
                     var3 = var9.bind(var8)(var2);
                     var2 = var3.useAnimatedStyle;
-                    var1 = function() { // Original name: c, environment: var1
+                    var1 = function() {
                         var0 = {};
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -1278,7 +1278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var16.initialRenderedBalance = var25;
                 var16.balance = var22;
-                var22 = function() { // Original name: onPress, environment: var19
+                var22 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -1538,7 +1538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = {};
                 var17.loading = var21;
                 var17.onPress = var20;
-                var19 = function() { // Original name: text, environment: var19
+                var19 = function() {
                     var3 = _closure1_slot11;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;

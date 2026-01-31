@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113211: for (var _fun113211_ip = 0;;) switch (_fun113211_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: GuildOnboardingHomeManager, environment: var0
+        var2 = function arg0() {
             _fun113215: for (var _fun113215_ip = 0;;) switch (_fun113215_ip) {
                 case 0:
                     var4 = this;
@@ -179,14 +179,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3 instanceof Object ? var3 : var4;
                     var0.onboardingCompleteGuilds = var3;
                     var3 = {};
-                    var4 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var4 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handlePostConnectionOpen;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var3.POST_CONNECTION_OPEN = var4;
-                    var4 = function(arg0) { // Original name: GUILD_MEMBER_UPDATE, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleGuildMemberUpdate;
                         var0 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.GUILD_MEMBER_UPDATE = var4;
-                    var4 = function(arg0) { // Original name: GUILD_DELETE, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleGuildDelete;
                         var0 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.GUILD_DELETE = var4;
-                    var4 = function(arg0) { // Original name: CHANNEL_SELECT, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleChannelSelect;
                         var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.CHANNEL_SELECT = var4;
-                    var4 = function(arg0) { // Original name: MESSAGE_CREATE, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleMessageSend;
                         var0 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.MESSAGE_CREATE = var4;
-                    var4 = function(arg0) { // Original name: THREAD_CREATE, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleThreadCreate;
                         var0 = arg0;

@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useScrollEventsHandlersDefaultTs6({contentOffset:{y:y}},context){const{animatedScrollableState,SCROLLABLE_STATE,scrollTo,scrollableRef,scrollableContentOffsetY,_lockableScrollableContentOffsetY,animatedAnimationState,ANIMATION_STATE,rootScrollableContentOffsetY}=this.__closure;if(animatedScrollableState.value===SCROLLABLE_STATE.LOCKED){var _context$initialConte;const lockPosition=context.shouldLockInitialPosition?(_context$initialConte=context.initialContentOffsetY)!==null&&_context$initialConte!==void 0?_context$initialConte:0:0;scrollTo(scrollableRef,0,lockPosition,false);scrollableContentOffsetY.value=0;_lockableScrollableContentOffsetY.value=0;return;}if(animatedAnimationState.value!==ANIMATION_STATE.RUNNING){scrollableContentOffsetY.value=y;_lockableScrollableContentOffsetY.value=y;rootScrollableContentOffsetY.value=y;}}';
     var2.code = var3;
     var _closure1_slot7 = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: useScrollEventsHandlersDefault, environment: var0
+    var0 = function arg0, arg1, arg2() {
         var8 = arg0;
         var9 = arg1;
         var17 = arg2;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var14[var16];
         var10 = var13.bind(var12)(var0);
         var4 = var10.useAnimatedReaction;
-        var3 = function() { // Original name: pnpm_useScrollEventsHandlersDefaultTs1, environment: var2
+        var3 = function() {
             var0 = _closure2_slot8;
             var0 = var0.value;
             return var0;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3.__workletHash = var0;
         var0 = _closure1_slot2;
         var3.__initData = var0;
-        var0 = function(arg0) { // Original name: pnpm_useScrollEventsHandlersDefaultTs2, environment: var2
+        var0 = function arg0() {
             _fun44635: for (var _fun44635_ip = 0;;) switch (_fun44635_ip) {
                 case 0:
                     var1 = _closure2_slot2;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var14[var16];
         var17 = var13.bind(var12)(var3);
         var10 = var17.useWorkletCallback;
-        var4 = function(arg0, arg1) { // Original name: pnpm_useScrollEventsHandlersDefaultTs3, environment: var2
+        var4 = function arg0, arg1() {
             _fun44636: for (var _fun44636_ip = 0;;) switch (_fun44636_ip) {
                 case 0:
                     var3 = arg1;
@@ -266,7 +266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var14[var16];
         var17 = var13.bind(var12)(var3);
         var10 = var17.useWorkletCallback;
-        var4 = function(arg0, arg1) { // Original name: pnpm_useScrollEventsHandlersDefaultTs4, environment: var2
+        var4 = function arg0, arg1() {
             _fun44637: for (var _fun44637_ip = 0;;) switch (_fun44637_ip) {
                 case 0:
                     var2 = arg1;
@@ -348,7 +348,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var14[var16];
         var17 = var13.bind(var12)(var3);
         var10 = var17.useWorkletCallback;
-        var4 = function(arg0, arg1) { // Original name: pnpm_useScrollEventsHandlersDefaultTs5, environment: var2
+        var4 = function arg0, arg1() {
             _fun44638: for (var _fun44638_ip = 0;;) switch (_fun44638_ip) {
                 case 0:
                     var3 = arg1;
@@ -465,7 +465,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var14[var16];
         var4 = var13.bind(var12)(var3);
         var3 = var4.useWorkletCallback;
-        var2 = function(arg0, arg1) { // Original name: pnpm_useScrollEventsHandlersDefaultTs6, environment: var2
+        var2 = function arg0, arg1() {
             _fun44639: for (var _fun44639_ip = 0;;) switch (_fun44639_ip) {
                 case 0:
                     var4 = arg1;

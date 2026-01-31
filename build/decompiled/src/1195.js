@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.Alert;
     var _closure1_slot3 = var3;
-    var3 = function() { // Original name: isModalSupported, environment: var1
+    var3 = function() {
         _fun13002: for (var _fun13002_ip = 0;;) switch (_fun13002_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isModalSupported = var3;
-    var3 = function() { // Original name: isNativeDriverSupportedForColorAnimations, environment: var1
+    var3 = function() {
         _fun13003: for (var _fun13003_ip = 0;;) switch (_fun13003_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isNativeDriverSupportedForColorAnimations = var3;
-    var3 = function(arg0) { // Original name: isValidEmail, environment: var1
+    var3 = function arg0() {
         var2 = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         var1 = var2.test;
         var0 = arg0;
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isValidEmail = var3;
-    var3 = function(arg0) { // Original name: base64ToUint8Array, environment: var1
+    var3 = function arg0() {
         _fun13005: for (var _fun13005_ip = 0;;) switch (_fun13005_ip) {
             case 0:
                 var0 = global;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.base64ToUint8Array = var3;
-    var1 = function(arg0, arg1) { // Original name: feedbackAlertDialog, environment: var1
+    var1 = function arg0, arg1() {
         _fun13007: for (var _fun13007_ip = 0;;) switch (_fun13007_ip) {
             case 0:
                 var7 = arg0;

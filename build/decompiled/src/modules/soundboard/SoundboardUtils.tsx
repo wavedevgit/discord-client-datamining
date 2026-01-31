@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var6 = function(arg0, arg1) { // Original name: hasPermissionToPlaySound, environment: var1
+    var6 = function arg0, arg1() {
         _fun50594: for (var _fun50594_ip = 0;;) switch (_fun50594_ip) {
             case 0:
                 var1 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: canUseSoundboardSound, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun50595: for (var _fun50595_ip = 0;;) switch (_fun50595_ip) {
             case 0:
                 var2 = arg1;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var5;
-    var4 = function(arg0) { // Original name: canMakeSound, environment: var1
+    var4 = function arg0() {
         _fun50596: for (var _fun50596_ip = 0;;) switch (_fun50596_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var4;
-    var3 = function() { // Original name: hasSetAnyCustomJoinSound, environment: var1
+    var3 = function() {
         _fun50597: for (var _fun50597_ip = 0;;) switch (_fun50597_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var0 = function() { // Original name: _maybePlayCustomJoinSound, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: trackCustomCallSettingsChanged, environment: var1
+    var0 = function arg0() {
         _fun50602: for (var _fun50602_ip = 0;;) switch (_fun50602_ip) {
             case 0:
                 var0 = arg0;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/soundboard/SoundboardUtils.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function() { // Original name: getAmplitudinalSoundboardVolume, environment: var1
+    var7 = function() {
         _fun50603: for (var _fun50603_ip = 0;;) switch (_fun50603_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.hasPermissionToPlaySound = var6;
     var2.canUseSoundboardSound = var5;
     var2.canMakeSound = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: playSound, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var7 = arg0;
         var6 = arg1;
         var2 = _closure1_slot0;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.playSound = var4;
     var2.hasSetAnyCustomJoinSound = var3;
-    var3 = function() { // Original name: maybePlayCustomJoinSound, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.maybePlayCustomJoinSound = var3;
-    var3 = function(arg0) { // Original name: useSoundBoardDismissContentTypes, environment: var1
+    var3 = function arg0() {
         _fun50606: for (var _fun50606_ip = 0;;) switch (_fun50606_ip) {
             case 0:
                 var0 = arg0;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSoundBoardDismissContentTypes = var3;
-    var3 = function(arg0, arg1) { // Original name: removeCustomJoinSound, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var0 = arg1;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeCustomJoinSound = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: updateCustomJoinSound, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var0 = arg1;
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateCustomJoinSound = var3;
-    var3 = function(arg0) { // Original name: trackCustomCallSoundExternallyDeleted, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.location;
         var3 = _closure1_slot1;
@@ -825,7 +825,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackCustomCallSoundExternallyDeleted = var3;
-    var1 = function(arg0) { // Original name: trackSoundFavorited, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.sound;
         var7 = var0.location;

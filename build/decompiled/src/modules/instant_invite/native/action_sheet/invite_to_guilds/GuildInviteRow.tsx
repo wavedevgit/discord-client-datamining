@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2 = var6.bind(var3)(var2);
-                var6 = function() { // Original name: handlePress, environment: var1
+                var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 5;

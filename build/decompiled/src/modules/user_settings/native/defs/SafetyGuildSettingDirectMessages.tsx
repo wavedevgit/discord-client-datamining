@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var9;
-    var9 = function() { // Original name: useTitle, environment: var7
+    var9 = function() {
         _fun88371: for (var _fun88371_ip = 0;;) switch (_fun88371_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTitle = var9;
-    var9 = function() { // Original name: useDescription, environment: var7
+    var9 = function() {
         _fun88372: for (var _fun88372_ip = 0;;) switch (_fun88372_ip) {
             case 0:
                 var0 = _closure1_slot5;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useDescription = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useValue, environment: var7
+    var8 = function() {
         _fun88373: for (var _fun88373_ip = 0;;) switch (_fun88373_ip) {
             case 0:
                 var0 = _closure1_slot5;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onAllowDirectMessagesFromServerMembersValueChange, environment: var7
+    var8 = function arg0() {
         _fun88374: for (var _fun88374_ip = 0;;) switch (_fun88374_ip) {
             case 0:
                 var1 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun88374;
             case 136:
                 var2 = !var1;
-                var1 = function(arg0) { // Original name: showGuildRestrictionModal, environment: var1
+                var1 = function arg0() {
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var6 = _closure1_slot1;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.Colors;
                     var5 = var5.RED;
                     var1.confirmColor = var5;
-                    var5 = function() { // Original name: onConfirm, environment: var4
+                    var5 = function() {
                         _fun88376: for (var _fun88376_ip = 0;;) switch (_fun88376_ip) {
                             case 0:
                                 var3 = _closure1_slot0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.onConfirm = var5;
-                    var4 = function() { // Original name: onCancel, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 6;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useIsDisabled, environment: var7
+    var7 = function() {
         _fun88378: for (var _fun88378_ip = 0;;) switch (_fun88378_ip) {
             case 0:
                 var2 = _closure1_slot0;

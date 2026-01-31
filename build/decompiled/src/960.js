@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var5 = function(arg0) { // Original name: getOperationName, environment: var1
+    var5 = function arg0() {
         _fun9891: for (var _fun9891_ip = 0;;) switch (_fun9891_ip) {
             case 0:
                 var2 = arg0;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var5;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: setTokenUsageAttributes, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun9892: for (var _fun9892_ip = 0;;) switch (_fun9892_ip) {
             case 0:
                 var3 = arg0;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var3;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: setCommonResponseAttributes, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var3 = arg0;
         var11 = arg1;
         var10 = arg2;
@@ -229,7 +229,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = 'Module';
     var6.value = var10;
     var6 = var8.bind(var9)(var2, var7, var6);
-    var6 = function(arg0, arg1, arg2) { // Original name: addChatCompletionAttributes, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun9894: for (var _fun9894_ip = 0;;) switch (_fun9894_ip) {
             case 0:
                 var3 = arg0;
@@ -383,7 +383,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.addChatCompletionAttributes = var6;
-    var6 = function(arg0, arg1) { // Original name: addEmbeddingsAttributes, environment: var1
+    var6 = function arg0, arg1() {
         _fun9899: for (var _fun9899_ip = 0;;) switch (_fun9899_ip) {
             case 0:
                 var4 = arg0;
@@ -426,7 +426,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.addEmbeddingsAttributes = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: addResponsesApiAttributes, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun9900: for (var _fun9900_ip = 0;;) switch (_fun9900_ip) {
             case 0:
                 var3 = arg0;
@@ -560,7 +560,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.addResponsesApiAttributes = var6;
-    var6 = function(arg0, arg1) { // Original name: buildMethodPath, environment: var1
+    var6 = function arg0, arg1() {
         _fun9902: for (var _fun9902_ip = 0;;) switch (_fun9902_ip) {
             case 0:
                 var5 = arg0;
@@ -583,7 +583,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.buildMethodPath = var6;
     var2.getOperationName = var5;
-    var5 = function(arg0) { // Original name: getSpanOperation, environment: var1
+    var5 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;
@@ -596,7 +596,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getSpanOperation = var5;
-    var5 = function(arg0) { // Original name: isChatCompletionChunk, environment: var1
+    var5 = function arg0() {
         _fun9904: for (var _fun9904_ip = 0;;) switch (_fun9904_ip) {
             case 0:
                 var1 = arg0;
@@ -632,7 +632,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isChatCompletionChunk = var5;
-    var5 = function(arg0) { // Original name: isChatCompletionResponse, environment: var1
+    var5 = function arg0() {
         _fun9905: for (var _fun9905_ip = 0;;) switch (_fun9905_ip) {
             case 0:
                 var1 = arg0;
@@ -668,7 +668,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isChatCompletionResponse = var5;
-    var5 = function(arg0) { // Original name: isEmbeddingsResponse, environment: var1
+    var5 = function arg0() {
         _fun9906: for (var _fun9906_ip = 0;;) switch (_fun9906_ip) {
             case 0:
                 var1 = arg0;
@@ -723,7 +723,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isEmbeddingsResponse = var5;
-    var5 = function(arg0) { // Original name: isResponsesApiResponse, environment: var1
+    var5 = function arg0() {
         _fun9907: for (var _fun9907_ip = 0;;) switch (_fun9907_ip) {
             case 0:
                 var1 = arg0;
@@ -759,7 +759,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isResponsesApiResponse = var5;
-    var5 = function(arg0) { // Original name: isResponsesApiStreamEvent, environment: var1
+    var5 = function arg0() {
         _fun9908: for (var _fun9908_ip = 0;;) switch (_fun9908_ip) {
             case 0:
                 var1 = arg0;
@@ -808,7 +808,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isResponsesApiStreamEvent = var5;
     var2.setCommonResponseAttributes = var4;
     var2.setTokenUsageAttributes = var3;
-    var1 = function(arg0) { // Original name: shouldInstrument, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

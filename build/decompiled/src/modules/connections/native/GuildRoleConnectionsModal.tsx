@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             var3 = _closure2_slot0;
             var2 = _closure2_slot1;
-            var1 = function(arg0, arg1) { // Original name: getScreens, environment: var0
+            var1 = function arg0, arg1() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = arg1;
@@ -63,12 +63,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.ghtnss;
                 var3 = var4.bind(var5)(var3);
                 var2.title = var3;
-                var3 = function() { // Original name: headerLeft, environment: var1
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerLeft = var3;
-                var3 = function() { // Original name: headerRight, environment: var1
+                var3 = function() {
                     var3 = _closure1_slot4;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.headerRight = var3;
-                var1 = function() { // Original name: render, environment: var1
+                var1 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

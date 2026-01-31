@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.container = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot10 = var3;
-    var1 = function(arg0) { // Original name: HcaptchaModal, environment: var1
+    var1 = function arg0() {
         _fun112364: for (var _fun112364_ip = 0;;) switch (_fun112364_ip) {
             case 0:
                 var0 = _closure1_slot10;

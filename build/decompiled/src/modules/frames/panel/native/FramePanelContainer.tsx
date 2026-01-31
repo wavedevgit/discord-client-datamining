@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: FramePanelContainer, environment: var1
+    var1 = function() {
         _fun110454: for (var _fun110454_ip = 0;;) switch (_fun110454_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/dismissible_content/native/DismissibleActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DismissibleActionSheet, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var1;
             var9 = var6;
             var6 = copyDataProperties(var10, var9);
-            var7 = function(arg0) { // Original name: markAsDismissed, environment: var6
+            var7 = function arg0() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 2;

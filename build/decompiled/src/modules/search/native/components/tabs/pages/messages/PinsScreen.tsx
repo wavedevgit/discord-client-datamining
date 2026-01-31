@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: InitialPinsScreen, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.searchContext;
         var _closure2_slot0 = var1;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.type = var3;
                         var3 = {};
                         var3.message = var6;
-                        var5 = function(arg0) { // Original name: onPress, environment: var5
+                        var5 = function arg0() {
                             var0 = arg0;
                             var1 = var0.channelId;
                             var0 = var0.messageId;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.messagesContentContainer;
         var0.contentContainerStyle = var9;
         var0.data = var8;
-        var7 = function() { // Original name: onEndReached, environment: var7
+        var7 = function() {
             _fun106858: for (var _fun106858_ip = 0;;) switch (_fun106858_ip) {
                 case 0:
                     var2 = _closure1_slot1;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PinsScreen, environment: var1
+    var1 = function arg0() {
         _fun106859: for (var _fun106859_ip = 0;;) switch (_fun106859_ip) {
             case 0:
                 var0 = arg0;

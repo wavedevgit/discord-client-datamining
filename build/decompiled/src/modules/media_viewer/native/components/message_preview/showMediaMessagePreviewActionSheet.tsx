@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: showMediaMessagePreviewActionSheet, environment: var1
+    var1 = function arg0() {
         _fun73189: for (var _fun73189_ip = 0;;) switch (_fun73189_ip) {
             case 0:
                 var1 = arg0;

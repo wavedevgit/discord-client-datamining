@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileMutuals.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileMutuals, environment: var1
+    var1 = function arg0() {
         _fun91964: for (var _fun91964_ip = 0;;) switch (_fun91964_ip) {
             case 0:
                 var0 = arg0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 216:
                 return var0;
             case 218:
-                var0 = function(arg0) { // Original name: handlePress, environment: var5
+                var0 = function arg0() {
                     var7 = arg0;
                     var4 = _closure2_slot4;
                     var3 = {};
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.section = var7;
                     var2 = _closure2_slot1;
                     var3.guildId = var2;
-                    var2 = function(arg0) { // Original name: onPressMutualFriend, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot4;
                         var1 = {};
                         var0 = 'PRESS_MUTUAL_FRIEND';
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var3.onPressMutualFriend = var2;
-                    var1 = function(arg0) { // Original name: onPressMutualGuild, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure2_slot4;
                         var1 = {};
                         var0 = 'PRESS_MUTUAL_GUILD';
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.style = var4;
                             var4 = 'button';
                             var0.accessibilityRole = var4;
-                            var4 = function() { // Original name: onPress, environment: var10
+                            var4 = function() {
                                 var2 = _closure2_slot9;
                                 var0 = _closure1_slot4;
                                 var1 = var0.MUTUAL_FRIENDS;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.style = var4;
                             var4 = 'button';
                             var0.accessibilityRole = var4;
-                            var4 = function() { // Original name: onPress, environment: var10
+                            var4 = function() {
                                 var2 = _closure2_slot9;
                                 var0 = _closure1_slot4;
                                 var1 = var0.MUTUAL_GUILDS;

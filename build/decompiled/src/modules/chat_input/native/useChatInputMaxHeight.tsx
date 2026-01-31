@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function() { // Original name: getChatInputMaxHeight, environment: var1
+    var3 = function() {
         _fun89281: for (var _fun89281_ip = 0;;) switch (_fun89281_ip) {
             case 0:
                 var6 = _closure1_slot0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/chat_input/native/useChatInputMaxHeight.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useChatInputMaxHeight, environment: var1
+    var4 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot4;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function() { // Environment: var1
-            var3 = function() { // Original name: maybeUpdateMaxHeight, environment: var0
+            var3 = function() {
                 var2 = _closure2_slot1;
                 var0 = undefined;
                 var1 = function(arg0) { // Environment: var1
@@ -173,13 +173,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var4;
-    var4 = function() { // Original name: getChatInputMinHeight, environment: var1
+    var4 = function() {
         var0 = 38;
         return var0;
     };
     var2.getChatInputMinHeight = var4;
     var2.getChatInputMaxHeight = var3;
-    var1 = function(arg0) { // Original name: getChatInputHeightAnimationTiming, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var4 = var0.Math;
         var3 = var4.min;

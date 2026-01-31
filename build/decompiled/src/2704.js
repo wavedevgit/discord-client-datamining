@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var1 = exports;
     var6 = dependencyMap;
-    var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
+    var4 = function arg0() {
         _fun22481: for (var _fun22481_ip = 0;;) switch (_fun22481_ip) {
             case 0:
                 var2 = arg0;
@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: _typeof, environment: var3
+    var0 = function arg0() {
         _fun22482: for (var _fun22482_ip = 0;;) switch (_fun22482_ip) {
             case 0:
                 var1 = global;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun22482
                 }
             case 43:
-                var2 = function(arg0) { // Original name: _typeof, environment: var0
+                var2 = function arg0() {
                     _fun22484: for (var _fun22484_ip = 0;;) switch (_fun22484_ip) {
                         case 0:
                             var1 = arg0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun22482_ip = 55;
                 continue _fun22482;
             case 50:
-                var2 = function(arg0) { // Original name: _typeof, environment: var0
+                var2 = function arg0() {
                     var0 = arg0;
                     var0 = typeof var0;
                     return var0;
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function(arg0) { // Original name: max, environment: var3
+    var0 = function arg0() {
         _fun22485: for (var _fun22485_ip = 0;;) switch (_fun22485_ip) {
             case 0:
                 var4 = arg0;

@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/native/PremiumPlanSelectStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.usePremiumPlanSelectStore = var3;
-    var1 = function(arg0) { // Original name: setIsPurchasing, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;

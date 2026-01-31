@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: stringifyPrimitive, environment: var0
+    var1 = function arg0() {
         _fun16778: for (var _fun16778_ip = 0;;) switch (_fun16778_ip) {
             case 0:
                 var0 = arg0;

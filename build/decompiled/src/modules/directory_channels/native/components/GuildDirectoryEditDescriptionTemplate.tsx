@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryEditDescriptionTemplate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun71364: for (var _fun71364_ip = 0;;) switch (_fun71364_ip) {
             case 0:
                 var1 = arg0;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var20.bind(var21)(var18);
                 var5.title = var18;
                 var5.defaultValue = var13;
-                var18 = function(arg0) { // Original name: onChange, environment: var17
+                var18 = function arg0() {
                     var1 = _closure1_slot7;
                     var0 = var1.dismiss;
                     var0 = var0.bind(var1)();

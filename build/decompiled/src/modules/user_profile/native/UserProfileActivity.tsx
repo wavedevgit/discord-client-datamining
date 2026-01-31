@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: ActivityCardText, environment: var1
+            var0 = function arg0() {
                 _fun62185: for (var _fun62185_ip = 0;;) switch (_fun62185_ip) {
                     case 0:
                         var4 = arg0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot23 = var0;
-            var0 = function(arg0) { // Original name: MaybeLink, environment: var1
+            var0 = function arg0() {
                 _fun62186: for (var _fun62186_ip = 0;;) switch (_fun62186_ip) {
                     case 0:
                         var0 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var6 = 'link';
                         var2.accessibilityRole = var6;
-                        var5 = function() { // Original name: onPress, environment: var5
+                        var5 = function() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot2;
                             var0 = 16;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot24 = var0;
-            var0 = function(arg0) { // Original name: ActivityCardBody, environment: var1
+            var0 = function arg0() {
                 _fun62188: for (var _fun62188_ip = 0;;) switch (_fun62188_ip) {
                     case 0:
                         var0 = arg0;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var15.sjjOk2;
                         var15 = var16.bind(var17)(var15);
                         var6.accessibilityHint = var15;
-                        var15 = function() { // Original name: onPress, environment: var11
+                        var15 = function() {
                             var3 = _closure2_slot2;
                             var2 = {};
                             var0 = 'OPEN_SPOTIFY_ALBUM';
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var21 = var13.details;
                         var18.text = var21;
                         var18.activity = var13;
-                        var21 = function() { // Original name: onPress, environment: var11
+                        var21 = function() {
                             var2 = _closure2_slot2;
                             var1 = {};
                             var0 = 'OPEN_SPOTIFY_TRACK';
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var8 = _closure2_slot0;
                                     var8 = var8.id;
                                     var5.userId = var8;
-                                    var8 = function() { // Original name: onPress, environment: var8
+                                    var8 = function() {
                                         var2 = _closure2_slot2;
                                         var1 = {};
                                         var0 = 'OPEN_SPOTIFY_ARTIST';
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot25 = var0;
-            var0 = function(arg0) { // Original name: ActivityCard, environment: var1
+            var0 = function arg0() {
                 _fun62193: for (var _fun62193_ip = 0;;) switch (_fun62193_ip) {
                     case 0:
                         var0 = arg0;
@@ -1501,7 +1501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = {};
                         var11.channel = var22;
                         var11.isInChannel = var21;
-                        var20 = function(arg0) { // Original name: onAction, environment: var20
+                        var20 = function arg0() {
                             _fun62197: for (var _fun62197_ip = 0;;) switch (_fun62197_ip) {
                                 case 0:
                                     var2 = _closure2_slot5;
@@ -1643,7 +1643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var0;
-            var0 = function(arg0) { // Original name: StreamActivityCard, environment: var1
+            var0 = function arg0() {
                 _fun62199: for (var _fun62199_ip = 0;;) switch (_fun62199_ip) {
                     case 0:
                         var0 = arg0;
@@ -1981,7 +1981,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15.stream = var25;
                         var24 = !var24;
                         var15.disabled = var24;
-                        var23 = function() { // Original name: onPress, environment: var23
+                        var23 = function() {
                             var2 = _closure2_slot4;
                             var1 = {};
                             var0 = 'PRESS_IMAGE';
@@ -2100,7 +2100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot27 = var0;
-            var0 = function(arg0) { // Original name: VoiceCallActivityCard, environment: var1
+            var0 = function arg0() {
                 _fun62207: for (var _fun62207_ip = 0;;) switch (_fun62207_ip) {
                     case 0:
                         var0 = arg0;
@@ -2375,7 +2375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var21 = var21["9C444m"];
                         var21 = var23.bind(var24)(var21);
                         var15.accessibilityHint = var21;
-                        var21 = function() { // Original name: onPress, environment: var20
+                        var21 = function() {
                             var3 = _closure2_slot3;
                             var2 = {};
                             var0 = 'OPEN_VOICE_CHANNEL';
@@ -2483,7 +2483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var21.guildName = var29;
                         var21 = var25.bind(var26)(var22, var21);
                         var17.accessibilityLabel = var21;
-                        var20 = function() { // Original name: onPress, environment: var20
+                        var20 = function() {
                             var3 = _closure2_slot3;
                             var1 = {};
                             var0 = 'OPEN_VOICE_GUILD';
@@ -2832,7 +2832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/user_profile/native/UserProfileActivity.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: UserProfileActivity, environment: var1
+            var1 = function arg0() {
                 _fun62212: for (var _fun62212_ip = 0;;) switch (_fun62212_ip) {
                     case 0:
                         var0 = arg0;
@@ -3004,7 +3004,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var14 = var2.bind(var5)(var1);
                     case 345:
-                        var20 = function(arg0) { // Original name: renderVoiceActivityCard, environment: var11
+                        var20 = function arg0() {
                             _fun62216: for (var _fun62216_ip = 0;;) switch (_fun62216_ip) {
                                 case 0:
                                     var2 = arg0;

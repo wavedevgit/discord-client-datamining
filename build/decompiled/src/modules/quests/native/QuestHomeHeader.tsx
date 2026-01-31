@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/quests/native/QuestHomeHeader.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.headerRight;
         var14 = var0.navigation;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var8.BalanceWidgetPill;
         var8 = {};
         var8.balance = var12;
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             var6 = _closure1_slot1;
             var7 = _closure1_slot2;
             var0 = 14;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var9.WrzJBf;
             var9 = var10.bind(var12)(var9);
             var2.buttonText = var9;
-            var9 = function() { // Original name: onButtonPress, environment: var1
+            var9 = function() {
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
                 var0 = 17;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var8["/g10LC"];
             var8 = var9.bind(var10)(var8);
             var2.buttonText = var8;
-            var8 = function() { // Original name: onButtonPress, environment: var1
+            var8 = function() {
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
                 var0 = 17;

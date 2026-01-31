@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0) { // Original name: _rewardRedemptionInstructionsFromServer, environment: var1
+    var0 = function arg0() {
         _fun46669: for (var _fun46669_ip = 0;;) switch (_fun46669_ip) {
             case 0:
                 var8 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = function(arg0) { // Original name: _questRewardV2FromServer, environment: var1
+    var0 = function arg0() {
         _fun46670: for (var _fun46670_ip = 0;;) switch (_fun46670_ip) {
             case 0:
                 var1 = arg0;

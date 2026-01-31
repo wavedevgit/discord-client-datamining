@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var1 = 'modules/guild_automod/DataUtils.tsx';
     var1 = var4.bind(var5)(var1);
-    var1 = function(arg0) { // Original name: _transformMetadataToCamelCase, environment: var3
+    var1 = function arg0() {
         _fun115103: for (var _fun115103_ip = 0;;) switch (_fun115103_ip) {
             case 0:
                 var4 = arg0;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot2 = var1;
     var2._transformMetadataToCamelCase = var1;
-    var1 = function(arg0) { // Original name: _transformMetadataToSnakeCase, environment: var3
+    var1 = function arg0() {
         _fun115105: for (var _fun115105_ip = 0;;) switch (_fun115105_ip) {
             case 0:
                 var4 = arg0;

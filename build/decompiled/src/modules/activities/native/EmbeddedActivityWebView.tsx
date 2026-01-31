@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var9;
     var _closure1_slot3 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun64635: for (var _fun64635_ip = 0;;) switch (_fun64635_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun64637: for (var _fun64637_ip = 0;;) switch (_fun64637_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: getSafeArea, environment: var4
+    var0 = function arg0, arg1() {
         _fun64638: for (var _fun64638_ip = 0;;) switch (_fun64638_ip) {
             case 0:
                 var3 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var3 = function(arg0) { // Original name: BaseActivityWebView, environment: var4
+    var3 = function arg0() {
         _fun64639: for (var _fun64639_ip = 0;;) switch (_fun64639_ip) {
             case 0:
                 var0 = arg0;
@@ -1186,7 +1186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 12:
                             var1 = ["'self'"];
                             var _closure3_slot0 = var1;
-                            var1 = function(arg0, arg1) { // Original name: parseCsp, environment: var0
+                            var1 = function arg0, arg1() {
                                 _fun64658: for (var _fun64658_ip = 0;;) switch (_fun64658_ip) {
                                     case 0:
                                         var2 = arg1;
@@ -2220,7 +2220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var3;
-    var1 = function() { // Original name: useHasInvalidUrlErrorState, environment: var4
+    var1 = function() {
         var3 = _closure1_slot6;
         var2 = var3.useState;
         var0 = false;
@@ -2332,7 +2332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/activities/native/EmbeddedActivityWebView.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: EmbeddedActivityWebView, environment: var4
+    var4 = function arg0() {
         _fun64676: for (var _fun64676_ip = 0;;) switch (_fun64676_ip) {
             case 0:
                 var3 = arg0;
@@ -2462,7 +2462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot13;
                 var1 = _closure1_slot20;
                 var0 = {};
-                var12 = function() { // Original name: hasFrameId, environment: var11
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 30;
@@ -2474,7 +2474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.hasFrameId = var12;
-                var12 = function() { // Original name: getOrCreateFrameId, environment: var11
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 30;
@@ -2486,7 +2486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.getOrCreateFrameId = var12;
-                var11 = function() { // Original name: releaseFrameId, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 30;

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var2;
-    var0 = function(arg0, arg1, arg2) { // Original name: replaceByteInByteSequence, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun97093: for (var _fun97093_ip = 0;;) switch (_fun97093_ip) {
             case 0:
                 var0 = arg0;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var4 = function(arg0) { // Original name: percentEncode, environment: var1
+    var4 = function arg0() {
         _fun97094: for (var _fun97094_ip = 0;;) switch (_fun97094_ip) {
             case 0:
                 var2 = arg0;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: percentDecode, environment: var1
+    var3 = function arg0() {
         _fun97095: for (var _fun97095_ip = 0;;) switch (_fun97095_ip) {
             case 0:
                 var14 = arg0;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var0 = function(arg0) { // Original name: serializeUrlencodedByte, environment: var1
+    var0 = function arg0() {
         _fun97096: for (var _fun97096_ip = 0;;) switch (_fun97096_ip) {
             case 0:
                 var17 = undefined;
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = {};
     var2.percentEncode = var4;
     var2.percentDecode = var3;
-    var3 = function(arg0) { // Original name: parseUrlencoded, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 1;
@@ -299,7 +299,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var3.from;
         var0 = arg0;
         var1 = var1.bind(var3)(var0);
-        var0 = function(arg0) { // Original name: _parseUrlencoded, environment: var0
+        var0 = function arg0() {
             _fun97098: for (var _fun97098_ip = 0;;) switch (_fun97098_ip) {
                 case 0:
                     var5 = arg0;
@@ -447,7 +447,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.parseUrlencoded = var3;
-    var1 = function(arg0) { // Original name: serializeUrlencoded, environment: var1
+    var1 = function arg0() {
         _fun97099: for (var _fun97099_ip = 0;;) switch (_fun97099_ip) {
             case 0:
                 var2 = arg0;

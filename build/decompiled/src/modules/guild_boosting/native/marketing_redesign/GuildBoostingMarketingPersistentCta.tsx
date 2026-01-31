@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingPersistentCta.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildBoostingMarketingPersistentCta, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = _closure1_slot9;
         var3 = undefined;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var20[var0];
         var4 = var21.bind(var3)(var2);
         var2 = var4.useAnimatedStyle;
-        var1 = function() { // Original name: _, environment: var1
+        var1 = function() {
             _fun77972: for (var _fun77972_ip = 0;;) switch (_fun77972_ip) {
                 case 0:
                     var0 = {};

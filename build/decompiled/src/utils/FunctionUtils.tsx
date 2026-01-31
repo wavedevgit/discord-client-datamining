@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0, arg1) { // Original name: areArraysShallowlyEqual, environment: var1
+    var3 = function arg0, arg1() {
         _fun19006: for (var _fun19006_ip = 0;;) switch (_fun19006_ip) {
             case 0:
                 var3 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/FunctionUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.areArraysShallowlyEqual = var3;
-    var3 = function(arg0) { // Original name: cachedFunction, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = null;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.cachedFunction = var3;
-    var3 = function(arg0) { // Original name: promiseThrottle, environment: var1
+    var3 = function arg0() {
         _fun19009: for (var _fun19009_ip = 0;;) switch (_fun19009_ip) {
             case 0:
                 var1 = arguments[1];
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.promiseThrottle = var3;
-    var3 = function(arg0) { // Original name: clearObject, environment: var1
+    var3 = function arg0() {
         _fun19011: for (var _fun19011_ip = 0;;) switch (_fun19011_ip) {
             case 0:
                 var5 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.clearObject = var3;
-    var1 = function(arg0) { // Original name: isPlainObjectEmpty, environment: var1
+    var1 = function arg0() {
         _fun19012: for (var _fun19012_ip = 0;;) switch (_fun19012_ip) {
             case 0:
                 var3 = arg0;

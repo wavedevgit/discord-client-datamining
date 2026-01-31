@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS;
     var _closure1_slot4 = var1;
     var1 = {};
-    var3 = function(arg0) { // Original name: openDmSettingsUpsellModal, environment: var3
+    var3 = function arg0() {
         _fun112891: for (var _fun112891_ip = 0;;) switch (_fun112891_ip) {
             case 0:
                 var6 = arg0;

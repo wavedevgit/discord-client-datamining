@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var3;
     var _closure1_slot2 = var1;
     var1 = function() { // Environment: var0
-        var0 = function(arg0, arg1) { // Original name: getDrawerSpec, environment: var0
+        var0 = function arg0, arg1() {
             var1 = arg0;
             var0 = arg1;
             var1 = var1 - var0;

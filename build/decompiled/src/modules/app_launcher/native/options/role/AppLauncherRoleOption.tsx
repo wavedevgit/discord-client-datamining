@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/role/AppLauncherRoleOption.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherRoleOption, environment: var1
+    var1 = function arg0() {
         _fun108207: for (var _fun108207_ip = 0;;) switch (_fun108207_ip) {
             case 0:
                 var1 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.name;
             case 307:
                 var0.selectedItemName = var7;
-                var6 = function() { // Original name: onPress, environment: var6
+                var6 = function() {
                     _fun108211: for (var _fun108211_ip = 0;;) switch (_fun108211_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.option = var7;
                             var7 = _closure2_slot4;
                             var1.channel = var7;
-                            var7 = function(arg0) { // Original name: onRolePress, environment: var7
+                            var7 = function arg0() {
                                 var0 = arg0;
                                 var3 = var0.role;
                                 var4 = _closure2_slot8;

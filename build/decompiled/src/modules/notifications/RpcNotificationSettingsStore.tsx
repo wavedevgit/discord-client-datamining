@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun69617: for (var _fun69617_ip = 0;;) switch (_fun69617_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: RpcNotificationSettingsStore, environment: var5
+        var3 = function() {
             _fun69621: for (var _fun69621_ip = 0;;) switch (_fun69621_ip) {
                 case 0:
                     var3 = this;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot5;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'areSlayerNotificationsSuppressed';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun69623: for (var _fun69623_ip = 0;;) switch (_fun69623_ip) {
                 case 0:
                     var4 = _closure1_slot7;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var14 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handleRpcAppDisconnected, environment: var4
+    var9 = function arg0() {
         var1 = _closure1_slot6;
         var0 = arg0;
         var0 = var0.socketId;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.RPC_APP_DISCONNECTED = var9;
-    var4 = function(arg0) { // Original name: handleSetRpcNotificationSettings, environment: var4
+    var4 = function arg0() {
         _fun69625: for (var _fun69625_ip = 0;;) switch (_fun69625_ip) {
             case 0:
                 var0 = arg0;

@@ -84,7 +84,7 @@ var3 = /subscriptions\\/(\d + ) / ;
 var _closure1_slot28 = var3;
 var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                 var _closure1_slot29 = var3;
-                var3 = function(arg0) { // Original name: parseQuery, environment: var1
+                var3 = function arg0() {
                     _fun28107: for (var _fun28107_ip = 0;;) switch (_fun28107_ip) {
                         case 0:
                             var0 = arg0;
@@ -184,7 +184,7 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                 var4 = var5.fileFinishedImporting;
                 var3 = 'utils/native/parseURL.tsx';
                 var3 = var4.bind(var5)(var3);
-                var1 = function(arg0) { // Original name: parseURL, environment: var1
+                var1 = function arg0() {
                     _fun28109: for (var _fun28109_ip = 0;;) switch (_fun28109_ip) {
                         case 0:
                             var26 = arguments[1];
@@ -1075,7 +1075,7 @@ var3 = /games\\/([ ^ \\/]+)\\/updates\\ / ([ ^ \\/]+)/;
                             var34 = var33.channelId;
                             var30 = var33.shareId;
                             var40 = var33.attachmentManifest;
-                            var39 = function(arg0) { // Original name: isValidUUID, environment: var24
+                            var39 = function arg0() {
                                 var2 = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
                                 var1 = var2.test;
                                 var0 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: createLogContainerEnvelopeItem, environment: var0
+    var2 = function arg0() {
         var2 = arg0;
         var1 = {
             'type': 'log',
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
     var1.createLogContainerEnvelopeItem = var2;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: createLogEnvelope, environment: var0
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun9328: for (var _fun9328_ip = 0;;) switch (_fun9328_ip) {
             case 0:
                 var4 = arg1;

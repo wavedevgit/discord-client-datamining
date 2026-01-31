@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var8;
             var _closure1_slot2 = var7;
-            var4 = function(arg0) { // Original name: renderCategoryItem, environment: var1
+            var4 = function arg0() {
                 _fun101995: for (var _fun101995_ip = 0;;) switch (_fun101995_ip) {
                     case 0:
                         var0 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot17 = var4;
-            var0 = function(arg0) { // Original name: renderCollapsibleCategoryItem, environment: var1
+            var0 = function arg0() {
                 _fun101996: for (var _fun101996_ip = 0;;) switch (_fun101996_ip) {
                     case 0:
                         var2 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot18 = var0;
-            var3 = function(arg0, arg1) { // Original name: useCategoryPressEvents, environment: var1
+            var3 = function arg0, arg1() {
                 var5 = arg0;
                 var3 = arg1;
                 var _closure2_slot0 = var5;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.bind(var7)(var5);
             var2.renderCategoryItem = var4;
             var2.useCategoryPressEvents = var3;
-            var3 = function(arg0) { // Original name: CategoryChannel, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var8 = var0.channel;
                 var _closure2_slot0 = var8;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.CategoryChannel = var3;
-            var3 = function(arg0) { // Original name: RecentlyActiveCategory, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var8 = var0.guildId;
                 var _closure2_slot0 = var8;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.RecentlyActiveCategory = var3;
-            var1 = function(arg0) { // Original name: SuggestedCategory, environment: var1
+            var1 = function arg0() {
                 var0 = arg0;
                 var7 = var0.guildId;
                 var _closure2_slot0 = var7;
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.VkKicb;
                     var4 = var8.bind(var9)(var4);
                     var5.label = var4;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 18;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: showRequestFailedAlert, environment: var3
+    var0 = function arg0() {
         _fun72062: for (var _fun72062_ip = 0;;) switch (_fun72062_ip) {
             case 0:
                 var10 = _closure1_slot0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: deleteGameRelationship, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _deleteGameRelationship, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _removeGameFriend, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var2.userId = var6;
                         var2.applicationId = var5;
-                        var5 = function() { // Original name: onSuccess, environment: var5
+                        var5 = function() {
                             var6 = _closure1_slot0;
                             var7 = _closure1_slot2;
                             var0 = 6;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _cancelGameFriendRequest, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var2.userId = var6;
                         var2.applicationId = var5;
-                        var5 = function() { // Original name: onSuccess, environment: var5
+                        var5 = function() {
                             var6 = _closure1_slot0;
                             var7 = _closure1_slot2;
                             var0 = 6;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.RelationshipTypes;
     var _closure1_slot5 = var1;
     var1 = {};
-    var6 = function() { // Original name: removeGameFriend, environment: var3
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.removeGameFriend = var6;
-    var6 = function(arg0) { // Original name: acceptGameFriendRequest, environment: var3
+    var6 = function arg0() {
         var1 = arg0;
         var3 = var1.userId;
         var1 = var1.applicationId;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = _closure1_slot5;
         var1 = var1.FRIEND;
         var2.type = var1;
-        var1 = function() { // Original name: onSuccess, environment: var0
+        var1 = function() {
             var6 = _closure1_slot0;
             var7 = _closure1_slot2;
             var0 = 6;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var2.onSuccess = var1;
-        var1 = function(arg0) { // Original name: addGameRelationship, environment: var0
+        var1 = function arg0() {
             var1 = arg0;
             var8 = var1.userId;
             var7 = var1.applicationId;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.acceptGameFriendRequest = var6;
-    var3 = function() { // Original name: cancelGameFriendRequest, environment: var3
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;

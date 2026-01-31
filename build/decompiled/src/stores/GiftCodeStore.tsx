@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun56371: for (var _fun56371_ip = 0;;) switch (_fun56371_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: updateGiftCode, environment: var3
+    var0 = function arg0() {
         _fun56374: for (var _fun56374_ip = 0;;) switch (_fun56374_ip) {
             case 0:
                 var3 = _closure1_slot8;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: checkGiftCodeExpiry, environment: var3
+    var0 = function arg0() {
         _fun56375: for (var _fun56375_ip = 0;;) switch (_fun56375_ip) {
             case 0:
                 var2 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: resolveMessageGiftCodes, environment: var3
+    var0 = function arg0() {
         _fun56377: for (var _fun56377_ip = 0;;) switch (_fun56377_ip) {
             case 0:
                 var5 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var11 = function(arg0) { // Original name: handleGiftCodeResolve, environment: var3
+    var11 = function arg0() {
         _fun56380: for (var _fun56380_ip = 0;;) switch (_fun56380_ip) {
             case 0:
                 var0 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var11;
-    var10 = function(arg0) { // Original name: handleMessage, environment: var3
+    var10 = function arg0() {
         var0 = arg0;
         var3 = var0.message;
         var2 = _closure1_slot24;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = false;
         return var0;
     };
-    var9 = function(arg0) { // Original name: handleLoadMessages, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var2 = var0.messages;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var6 = function(arg0) { // Original name: handleLoadThreadsSuccess, environment: var3
+    var6 = function arg0() {
         _fun56384: for (var _fun56384_ip = 0;;) switch (_fun56384_ip) {
             case 0:
                 var0 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7.bind(var0)(var1);
     var8 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GiftCodeStore, environment: var5
+        var3 = function() {
             _fun56387: for (var _fun56387_ip = 0;;) switch (_fun56387_ip) {
                 case 0:
                     var3 = this;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'get';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun56388: for (var _fun56388_ip = 0;;) switch (_fun56388_ip) {
                 case 0:
                     var2 = _closure1_slot12;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getError';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun56389: for (var _fun56389_ip = 0;;) switch (_fun56389_ip) {
                 case 0:
                     var2 = arg0;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getForGifterSKUAndPlan';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = arg1;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsResolving';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot13;
             var1 = var2.includes;
             var0 = arg0;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsResolved';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot15;
             var1 = var2.includes;
             var0 = arg0;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsAccepting';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot14;
             var1 = var2.includes;
             var0 = arg0;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserGiftCodesFetchingForSKUAndPlan';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var2 = _closure1_slot16;
             var1 = var2.has;
             var4 = _closure1_slot0;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserGiftCodesLoadedAtForSKUAndPlan';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var1 = _closure1_slot17;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getResolvingCodes';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getResolvedCodes';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAcceptingCodes';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var16 = var7.bind(var0)(var1);
     var1 = {};
-    var12 = function() { // Original name: handleConnectionOpen, environment: var3
+    var12 = function() {
         var1 = _closure1_slot19;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
@@ -820,7 +820,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONNECTION_OPEN = var12;
-    var12 = function(arg0) { // Original name: handleChannelSelect, environment: var3
+    var12 = function arg0() {
         _fun56401: for (var _fun56401_ip = 0;;) switch (_fun56401_ip) {
             case 0:
                 var0 = arg0;
@@ -841,7 +841,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.CHANNEL_SELECT = var12;
     var1.GIFT_CODE_RESOLVE = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeResolveSuccess, environment: var3
+    var11 = function arg0() {
         _fun56402: for (var _fun56402_ip = 0;;) switch (_fun56402_ip) {
             case 0:
                 var0 = arg0;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_RESOLVE_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeResolveFailure, environment: var3
+    var11 = function arg0() {
         _fun56404: for (var _fun56404_ip = 0;;) switch (_fun56404_ip) {
             case 0:
                 var1 = arg0;
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_RESOLVE_FAILURE = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeAccept, environment: var3
+    var11 = function arg0() {
         _fun56406: for (var _fun56406_ip = 0;;) switch (_fun56406_ip) {
             case 0:
                 var0 = arg0;
@@ -952,7 +952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_REDEEM = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeAcceptSuccess, environment: var3
+    var11 = function arg0() {
         _fun56407: for (var _fun56407_ip = 0;;) switch (_fun56407_ip) {
             case 0:
                 var0 = arg0;
@@ -995,7 +995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_REDEEM_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeAcceptFailure, environment: var3
+    var11 = function arg0() {
         _fun56409: for (var _fun56409_ip = 0;;) switch (_fun56409_ip) {
             case 0:
                 var0 = arg0;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_REDEEM_FAILURE = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeRevoke, environment: var3
+    var11 = function arg0() {
         _fun56411: for (var _fun56411_ip = 0;;) switch (_fun56411_ip) {
             case 0:
                 var0 = arg0;
@@ -1105,7 +1105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GIFT_CODE_REVOKE_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodeCreate, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var2 = var0.giftCode;
         var1 = _closure1_slot22;
@@ -1114,7 +1114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GIFT_CODE_CREATE_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodesFetch, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var6 = var0.skuId;
         var5 = var0.subscriptionPlanId;
@@ -1132,7 +1132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GIFT_CODES_FETCH = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodesFetchSuccess, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var3 = var0.giftCodes;
         var5 = var0.skuId;
@@ -1160,7 +1160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GIFT_CODES_FETCH_SUCCESS = var11;
-    var11 = function(arg0) { // Original name: handleGiftCodesFetchFail, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var6 = var0.skuId;
         var5 = var0.subscriptionPlanId;
@@ -1183,7 +1183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.LOCAL_MESSAGES_LOADED = var9;
     var1.LOAD_MESSAGES_SUCCESS = var9;
     var1.LOAD_MESSAGES_AROUND_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleLoadRecentMentions, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.messages;
         var1 = var2.forEach;
@@ -1200,7 +1200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOAD_RECENT_MENTIONS_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleLoadPinnedMessages, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.pins;
         var1 = var2.forEach;
@@ -1218,7 +1218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LOAD_PINNED_MESSAGES_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleSearchMessagesSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.data;
         var1 = var2.forEach;
@@ -1250,7 +1250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SEARCH_MESSAGES_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleGiftCodeUpdate, environment: var3
+    var9 = function arg0() {
         _fun56424: for (var _fun56424_ip = 0;;) switch (_fun56424_ip) {
             case 0:
                 var0 = arg0;
@@ -1284,7 +1284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GIFT_CODE_UPDATE = var9;
     var1.LOAD_THREADS_SUCCESS = var6;
     var1.LOAD_ARCHIVED_THREADS_SUCCESS = var6;
-    var6 = function(arg0) { // Original name: handleLoadForumPosts, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var2 = var0.threads;
         var0 = global;

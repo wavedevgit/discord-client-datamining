@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_profile/native/components/GuildProfileHeader.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildProfileHeader, environment: var3
+    var3 = function arg0() {
         _fun59669: for (var _fun59669_ip = 0;;) switch (_fun59669_ip) {
             case 0:
                 var1 = arg0;

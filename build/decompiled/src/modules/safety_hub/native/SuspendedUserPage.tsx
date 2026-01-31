@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/SuspendedUserPage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SuspendedUserSafetyHubPage, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var18 = var0.bind(var3)();
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var13.cpT0Cq;
         var13 = var15.bind(var16)(var13);
         var8.accessibilityLabel = var13;
-        var13 = function() { // Original name: onPress, environment: var14
+        var13 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 9;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = {};
         var16 = var18.text;
         var12.style = var16;
-        var14 = function() { // Original name: onPress, environment: var14
+        var14 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 12;

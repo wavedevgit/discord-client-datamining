@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/oauth2/native/ErrorResult.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ErrorResult, environment: var1
+    var1 = function arg0() {
         _fun47787: for (var _fun47787_ip = 0;;) switch (_fun47787_ip) {
             case 0:
                 var0 = arg0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.cpT0Cq;
                 var9 = var10.bind(var11)(var9);
                 var6.text = var9;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;

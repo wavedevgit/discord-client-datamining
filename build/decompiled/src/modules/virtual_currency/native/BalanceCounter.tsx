@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function BalanceCounterTsx2(){const{isAnimating,animatedValue,runOnJS,setDisplayValue,setMaxDigits}=this.__closure;if(isAnimating){const roundedValue=Math.round(animatedValue.get());runOnJS(setDisplayValue)(roundedValue);runOnJS(setMaxDigits)(roundedValue.toString().length);}return{};}';
     var3.code = var6;
     var _closure1_slot11 = var3;
-    var1 = function(arg0) { // Original name: BalanceCounter, environment: var1
+    var1 = function arg0() {
         _fun75409: for (var _fun75409_ip = 0;;) switch (_fun75409_ip) {
             case 0:
                 var0 = arg0;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var4 = arg2;
                     var6.duration = var4;
-                    var5 = function() { // Original name: s, environment: var4
+                    var5 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 3;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(0);
                 var20 = var20.bind(var4)(var11, var7);
                 _closure2_slot11 = var20;
-                var7 = function() { // Original name: clearAnimationTimeout, environment: var3
+                var7 = function() {
                     _fun75412: for (var _fun75412_ip = 0;;) switch (_fun75412_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var15[var1];
                 var7 = var16.bind(var4)(var6);
                 var6 = var7.useAnimatedStyle;
-                var3 = function() { // Original name: P, environment: var3
+                var3 = function() {
                     _fun75415: for (var _fun75415_ip = 0;;) switch (_fun75415_ip) {
                         case 0:
                             var1 = _closure2_slot9;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun55628: for (var _fun55628_ip = 0;;) switch (_fun55628_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getStateForGuild, environment: var3
+    var0 = function arg0() {
         _fun55631: for (var _fun55631_ip = 0;;) switch (_fun55631_ip) {
             case 0:
                 var1 = arg0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: recalculateAppliedBoosts, environment: var3
+    var0 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var7 = function(arg0) { // Original name: handleGameServerInstanceCreated, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var8 = var0.gameServer;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         _closure1_slot7 = var1;
         return var0;
     };
-    var0 = function(arg0, arg1) { // Original name: handleGameServerEntitlementsChanged, environment: var3
+    var0 = function arg0, arg1() {
         var3 = arg1;
         var4 = _closure1_slot10;
         var1 = var3.entitlements;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GameServerStore, environment: var5
+        var3 = function() {
             _fun55637: for (var _fun55637_ip = 0;;) switch (_fun55637_ip) {
                 case 0:
                     var3 = this;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getStateForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55639: for (var _fun55639_ip = 0;;) switch (_fun55639_ip) {
                 case 0:
                     var2 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLowestGameCostForGuild';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55640: for (var _fun55640_ip = 0;;) switch (_fun55640_ip) {
                 case 0:
                     var2 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedCatalog';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun55642: for (var _fun55642_ip = 0;;) switch (_fun55642_ip) {
                 case 0:
                     var3 = arg0;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedInstances';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun55643: for (var _fun55643_ip = 0;;) switch (_fun55643_ip) {
                 case 0:
                     var3 = arg0;
@@ -454,14 +454,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var8 = function() { // Original name: handleReset, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot7 = var0;
         var0 = undefined;
         return var0;
     };
     var1.LOGOUT = var8;
-    var8 = function(arg0) { // Original name: handleFetchCatalogSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var6 = var0.catalog;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_SERVER_FETCH_CATALOG_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchInstancesSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var6 = var0.instances;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_SERVER_FETCH_INSTANCES_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchProductSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var7 = var0.skuId;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleUpdateInstanceSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var7 = var0.instance;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_SERVER_UPDATE_INSTANCE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchBoostEntitlementsSuccess, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var7 = var0.unlockedGameServers;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS = var8;
     var1.GAME_SERVER_CREATE = var7;
     var1.GAME_SERVER_UPDATE = var7;
-    var7 = function(arg0) { // Original name: handleGameServerInstanceDeleted, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var4 = var0.guildId;
         var3 = var0.gameServerId;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_SERVER_DELETE = var7;
-    var7 = function(arg0) { // Original name: handleGameServerEntitlementCreated, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var7 = var0.entitlements;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_POWERUP_ENTITLEMENTS_CREATE = var7;
-    var3 = function(arg0) { // Original name: handleGameServerEntitlementDeleted, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var6 = var0.entitlements;

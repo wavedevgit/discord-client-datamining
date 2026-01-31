@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: DomainScreen, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var1 = var1.onClose;
         var _closure2_slot0 = var1;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var1[var4];
         var1 = var1[var2];
         var _closure2_slot4 = var1;
-        var8 = function() { // Original name: verify, environment: var0
+        var8 = function() {
             var3 = _closure2_slot4;
             var0 = undefined;
             var2 = true;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: DNSProofScreen, environment: var1
+    var0 = function arg0() {
         _fun51488: for (var _fun51488_ip = 0;;) switch (_fun51488_ip) {
             case 0:
                 var0 = arg0;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18["13ofGu"];
                 var18 = var19.bind(var20)(var18);
                 var13.text = var18;
-                var18 = function() { // Original name: onPress, environment: var11
+                var18 = function() {
                     var3 = _closure2_slot5;
                     var0 = undefined;
                     var2 = true;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.CkfdNx;
                 var12 = var13.bind(var14)(var12);
                 var8.text = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var3 = _closure2_slot3;
                     var2 = var3.push;
                     var0 = _closure1_slot11;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: HTTPProofScreen, environment: var1
+    var0 = function arg0() {
         _fun51494: for (var _fun51494_ip = 0;;) switch (_fun51494_ip) {
             case 0:
                 var0 = arg0;
@@ -903,7 +903,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18["13ofGu"];
                 var18 = var19.bind(var20)(var18);
                 var13.text = var18;
-                var18 = function() { // Original name: onPress, environment: var11
+                var18 = function() {
                     var3 = _closure2_slot4;
                     var0 = undefined;
                     var2 = true;
@@ -1057,7 +1057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.RhJMVQ;
                 var12 = var13.bind(var14)(var12);
                 var8.text = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var1 = _closure2_slot2;
                     var0 = var1.pop;
                     var0 = var0.bind(var1)();
@@ -1174,7 +1174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/connections/native/DomainVerifyModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DomainVerifyModal, environment: var1
+    var1 = function arg0() {
         _fun51500: for (var _fun51500_ip = 0;;) switch (_fun51500_ip) {
             case 0:
                 var1 = arg0;
@@ -1184,7 +1184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun51500
                 }
             case 14:
-                var12 = function() { // Original name: onClose, environment: var3
+                var12 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -1220,7 +1220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var13.getHeaderBackButton;
                 var11 = var11.bind(var13)(var12);
                 var0.headerLeft = var11;
-                var11 = function() { // Original name: render, environment: var3
+                var11 = function() {
                     var3 = _closure1_slot8;
                     var2 = _closure1_slot12;
                     var1 = {};
@@ -1250,7 +1250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var13.getHeaderBackButton;
                 var11 = var11.bind(var13)(var12);
                 var0.headerLeft = var11;
-                var11 = function(arg0) { // Original name: render, environment: var3
+                var11 = function arg0() {
                     var0 = arg0;
                     var4 = var0.domain;
                     var0 = var0.proof;
@@ -1285,7 +1285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.getHeaderBackButton;
                 var10 = var10.bind(var11)(var12);
                 var0.headerLeft = var10;
-                var3 = function(arg0) { // Original name: render, environment: var3
+                var3 = function arg0() {
                     var0 = arg0;
                     var4 = var0.domain;
                     var0 = var0.proof;

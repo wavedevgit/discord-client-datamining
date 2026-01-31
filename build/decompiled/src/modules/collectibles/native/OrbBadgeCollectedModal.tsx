@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: HeaderRight, environment: var1
+    var0 = function() {
         var1 = _closure1_slot0;
         var5 = _closure1_slot2;
         var2 = 9;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.BalanceWidgetPill;
         var0 = {};
         var0.balance = var4;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var0 = undefined;
             return var0;
         };
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: OrbBadgeCollectedRootScreen, environment: var1
+    var0 = function arg0() {
         _fun87371: for (var _fun87371_ip = 0;;) switch (_fun87371_ip) {
             case 0:
                 var1 = arg0;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'ROOT';
     var3.ROOT = var6;
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1) { // Original name: screens, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'headerRight': null,
             'title': ''
         };
-        var5 = function() { // Original name: render, environment: var4
+        var5 = function() {
             var3 = _closure1_slot6;
             var2 = _closure1_slot12;
             var1 = {};
@@ -474,9 +474,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.render = var5;
-        var4 = function() { // Original name: headerLeft, environment: var4
+        var4 = function() {
             var2 = _closure2_slot0;
-            var1 = function(arg0) { // Original name: HeaderLeft, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var5 = _closure1_slot0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/OrbBadgeCollectedModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: OrbBadgeCollectedModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.modalKey;
         var6 = var0.onPressViewBadge;

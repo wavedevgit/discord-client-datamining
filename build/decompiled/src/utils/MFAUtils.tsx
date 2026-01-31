@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = metroImportDefault;
             var _closure1_slot0 = var0;
             var _closure1_slot1 = var8;
-            var3 = function(arg0) { // Original name: encodeTotpSecret, environment: var1
+            var3 = function arg0() {
                 var3 = arg0;
                 var2 = var3.replace;
                 var1 = /[\s._-]+/g;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.bind(var8)(var6);
             var2.hasCrypto = var5;
             var2.hasWebAuthn = var4;
-            var4 = function() { // Original name: generateTotpSecret, environment: var1
+            var4 = function() {
                 var3 = _closure1_slot2;
                 var2 = var3.getRandomValues;
                 var1 = global;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.generateTotpSecret = var4;
             var2.encodeTotpSecret = var3;
-            var3 = function(arg0, arg1) { // Original name: encodeTotpSecretAsUrl, environment: var1
+            var3 = function arg0, arg1() {
                 _fun60605: for (var _fun60605_ip = 0;;) switch (_fun60605_ip) {
                     case 0:
                         var3 = arguments[2];
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.encodeTotpSecretAsUrl = var3;
-            var1 = function(arg0, arg1) { // Original name: captureWebAuthnException, environment: var1
+            var1 = function arg0, arg1() {
                 _fun60606: for (var _fun60606_ip = 0;;) switch (_fun60606_ip) {
                     case 0:
                         var6 = arg1;

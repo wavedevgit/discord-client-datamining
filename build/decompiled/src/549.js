@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun6645
             }
         case 17:
-            var1 = function(arg0) { // Original name: isNaN, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var0 = var0 != var0;
                 return var0;

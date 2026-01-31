@@ -20,42 +20,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.DCDScreenRecordingManager;
     var _closure1_slot0 = var1;
     var1 = {};
-    var6 = function() { // Original name: requestPermissions, environment: var3
+    var6 = function() {
         var1 = _closure1_slot0;
         var0 = var1.requestPermissions;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.requestPermissions = var6;
-    var6 = function() { // Original name: startRecording, environment: var3
+    var6 = function() {
         var1 = _closure1_slot0;
         var0 = var1.startRecording;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.startRecording = var6;
-    var6 = function() { // Original name: stopRecording, environment: var3
+    var6 = function() {
         var1 = _closure1_slot0;
         var0 = var1.stopRecording;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.stopRecording = var6;
-    var6 = function() { // Original name: isRecording, environment: var3
+    var6 = function() {
         var1 = _closure1_slot0;
         var0 = var1.isRecording;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.isRecording = var6;
-    var6 = function() { // Original name: getLatestRecording, environment: var3
+    var6 = function() {
         var1 = _closure1_slot0;
         var0 = var1.getLatestRecording;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.getLatestRecording = var6;
-    var6 = function(arg0) { // Original name: setRecordingQuality, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = var2.setRecordingQuality;
         var0 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setRecordingQuality = var6;
-    var3 = function() { // Original name: getRecordingQuality, environment: var3
+    var3 = function() {
         var1 = _closure1_slot0;
         var0 = var1.getRecordingQuality;
         var0 = var0.bind(var1)();

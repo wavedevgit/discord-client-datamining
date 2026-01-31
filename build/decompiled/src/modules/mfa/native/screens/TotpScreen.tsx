@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: isValidClipboardCode, environment: var1
+    var0 = function arg0() {
         _fun86338: for (var _fun86338_ip = 0;;) switch (_fun86338_ip) {
             case 0:
                 var3 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/screens/TotpScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TotpScreen, environment: var1
+    var1 = function arg0() {
         _fun86339: for (var _fun86339_ip = 0;;) switch (_fun86339_ip) {
             case 0:
                 var0 = arg0;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var12;
             case 585:
                 var4.loading = var15;
-                var14 = function() { // Original name: onPress, environment: var14
+                var14 = function() {
                     var2 = _closure2_slot6;
                     var1 = _closure2_slot2;
                     var0 = undefined;

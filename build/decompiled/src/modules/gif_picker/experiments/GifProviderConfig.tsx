@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: getGifProviderConfig, environment: var1
+    var3 = function() {
         _fun73085: for (var _fun73085_ip = 0;;) switch (_fun73085_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/gif_picker/experiments/GifProviderConfig.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getGifProviderConfig = var3;
-    var3 = function() { // Original name: getProviderForAPIRequest, environment: var1
+    var3 = function() {
         _fun73086: for (var _fun73086_ip = 0;;) switch (_fun73086_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getProviderForAPIRequest = var3;
-    var1 = function() { // Original name: getExperimentContext, environment: var1
+    var1 = function() {
         _fun73087: for (var _fun73087_ip = 0;;) switch (_fun73087_ip) {
             case 0:
                 var3 = undefined;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var0 = /#|\.prototype\./;
     var _closure1_slot2 = var0;
-    var1 = function(arg0, arg1) { // Original name: isForced, environment: var2
+    var1 = function arg0, arg1() {
         _fun96871: for (var _fun96871_ip = 0;;) switch (_fun96871_ip) {
             case 0:
                 var5 = arg1;

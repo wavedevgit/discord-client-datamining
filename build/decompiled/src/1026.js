@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.bind(var0)(var1);
     var3 = var4.buildFeedbackIntegration;
     var1 = {};
-    var6 = function() { // Original name: getModalIntegration, environment: var5
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.getModalIntegration = var6;
-    var5 = function() { // Original name: getScreenshotIntegration, environment: var5
+    var5 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

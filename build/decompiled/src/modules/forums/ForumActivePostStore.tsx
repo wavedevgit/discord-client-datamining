@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun61289: for (var _fun61289_ip = 0;;) switch (_fun61289_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun61292: for (var _fun61292_ip = 0;;) switch (_fun61292_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun61294: for (var _fun61294_ip = 0;;) switch (_fun61294_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: getLastMessageId, environment: var1
+    var0 = function arg0() {
         _fun61295: for (var _fun61295_ip = 0;;) switch (_fun61295_ip) {
             case 0:
                 var0 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: getSortFunction, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0, arg1) { // Environment: var0
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: resetState, environment: var1
+    var0 = function() {
         var0 = new Array(0);
         _closure1_slot22 = var0;
         var0 = null;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var4 = function() { // Original name: maybeRebuildState, environment: var1
+    var4 = function() {
         _fun61299: for (var _fun61299_ip = 0;;) switch (_fun61299_ip) {
             case 0:
                 var2 = _closure1_slot13;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: rebuildState, environment: var1
+    var0 = function arg0() {
         _fun61300: for (var _fun61300_ip = 0;;) switch (_fun61300_ip) {
             case 0:
                 var6 = arg0;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.filter;
                 var8 = _closure1_slot18;
                 var7 = _closure1_slot20;
-                var3 = function(arg0, arg1) { // Original name: getFilterFunction, environment: var2
+                var3 = function arg0, arg1() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = arg1;
@@ -957,7 +957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ForumActivePostStore, environment: var5
+        var3 = function() {
             _fun61308: for (var _fun61308_ip = 0;;) switch (_fun61308_ip) {
                 case 0:
                     var3 = this;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var7 = this;
             var6 = var7.waitFor;
             var13 = _closure1_slot8;
@@ -1025,7 +1025,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNewThreadCount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -1034,7 +1034,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCanAckThreads';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot23;
             return var0;
         };
@@ -1043,7 +1043,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getThreadIds';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun61312: for (var _fun61312_ip = 0;;) switch (_fun61312_ip) {
                 case 0:
                     var7 = arg0;
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentThreadIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -1127,7 +1127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAndDeleteMostRecentUserCreatedThreadId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             var1 = null;
             _closure1_slot16 = var1;
@@ -1138,7 +1138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFirstNoReplyThreadId';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -1158,7 +1158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.OVERLAY_INITIALIZE = var4;
     var3.GUILD_CREATE = var4;
     var3.CHANNEL_SELECT = var4;
-    var4 = function(arg0) { // Original name: handleChannelDelete, environment: var1
+    var4 = function arg0() {
         _fun61316: for (var _fun61316_ip = 0;;) switch (_fun61316_ip) {
             case 0:
                 var0 = arg0;
@@ -1187,7 +1187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.CHANNEL_DELETE = var4;
-    var4 = function(arg0) { // Original name: handleThreadListSync, environment: var1
+    var4 = function arg0() {
         _fun61317: for (var _fun61317_ip = 0;;) switch (_fun61317_ip) {
             case 0:
                 var0 = arg0;
@@ -1233,7 +1233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.THREAD_LIST_SYNC = var4;
-    var4 = function(arg0) { // Original name: handleThreadCreate, environment: var1
+    var4 = function arg0() {
         _fun61318: for (var _fun61318_ip = 0;;) switch (_fun61318_ip) {
             case 0:
                 var0 = arg0;
@@ -1291,7 +1291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.THREAD_CREATE = var4;
-    var4 = function(arg0) { // Original name: handleThreadUpdate, environment: var1
+    var4 = function arg0() {
         _fun61319: for (var _fun61319_ip = 0;;) switch (_fun61319_ip) {
             case 0:
                 var0 = arg0;
@@ -1375,7 +1375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.THREAD_UPDATE = var4;
-    var4 = function(arg0) { // Original name: handleThreadDelete, environment: var1
+    var4 = function arg0() {
         _fun61320: for (var _fun61320_ip = 0;;) switch (_fun61320_ip) {
             case 0:
                 var0 = arg0;
@@ -1411,7 +1411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.THREAD_DELETE = var4;
-    var4 = function(arg0) { // Original name: handleResortThreads, environment: var1
+    var4 = function arg0() {
         _fun61321: for (var _fun61321_ip = 0;;) switch (_fun61321_ip) {
             case 0:
                 var0 = arg0;
@@ -1441,7 +1441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.RESORT_THREADS = var4;
-    var4 = function(arg0) { // Original name: handleChannelAck, environment: var1
+    var4 = function arg0() {
         _fun61322: for (var _fun61322_ip = 0;;) switch (_fun61322_ip) {
             case 0:
                 var0 = arg0;
@@ -1485,7 +1485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/forums/ForumActivePostStore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: computeThreadIdsSnapshot, environment: var1
+    var1 = function arg0() {
         _fun61323: for (var _fun61323_ip = 0;;) switch (_fun61323_ip) {
             case 0:
                 var3 = _closure1_slot11;

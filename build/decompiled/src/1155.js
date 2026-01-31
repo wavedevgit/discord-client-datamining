@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var8;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: setSpanMeasurement, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var4 = arg0;
         var3 = var4.addEvent;
         var6 = _closure1_slot3;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: createSpanJSON, environment: var1
+    var3 = function arg0() {
         _fun12596: for (var _fun12596_ip = 0;;) switch (_fun12596_ip) {
             case 0:
                 var12 = arg0;
@@ -157,12 +157,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.customTransactionSource = var5;
     var5 = 0.05;
     var2.MARGIN_OF_ERROR_SECONDS = var5;
-    var5 = function() { // Original name: getTimeOriginMilliseconds, environment: var1
+    var5 = function() {
         var0 = _closure1_slot4;
         return var0;
     };
     var2.getTimeOriginMilliseconds = var5;
-    var5 = function(arg0) { // Original name: isNearToNow, environment: var1
+    var5 = function arg0() {
         _fun12598: for (var _fun12598_ip = 0;;) switch (_fun12598_ip) {
             case 0:
                 var4 = arg0;
@@ -193,7 +193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isNearToNow = var5;
-    var5 = function(arg0, arg1) { // Original name: setSpanDurationAsMeasurement, environment: var1
+    var5 = function arg0, arg1() {
         _fun12599: for (var _fun12599_ip = 0;;) switch (_fun12599_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.setSpanDurationAsMeasurement = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: setSpanDurationAsMeasurementOnSpan, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun12600: for (var _fun12600_ip = 0;;) switch (_fun12600_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.setSpanDurationAsMeasurementOnSpan = var5;
     var2.setSpanMeasurement = var4;
-    var4 = function(arg0) { // Original name: getLatestChildSpanEndTimestamp, environment: var1
+    var4 = function arg0() {
         _fun12601: for (var _fun12601_ip = 0;;) switch (_fun12601_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -333,7 +333,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getLatestChildSpanEndTimestamp = var4;
-    var4 = function() { // Original name: getBundleStartTimestampMs, environment: var1
+    var4 = function() {
         _fun12604: for (var _fun12604_ip = 0;;) switch (_fun12604_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -389,7 +389,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.getBundleStartTimestampMs = var4;
     var2.createSpanJSON = var3;
-    var1 = function(arg0, arg1) { // Original name: createChildSpanJSON, environment: var1
+    var1 = function arg0, arg1() {
         _fun12605: for (var _fun12605_ip = 0;;) switch (_fun12605_ip) {
             case 0:
                 var0 = arg0;

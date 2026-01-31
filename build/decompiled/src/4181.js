@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = [6, 7, 99];
     var _closure1_slot2 = var0;
     var0 = {};
-    var2 = function(arg0, arg1, arg2) { // Original name: get, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun38372: for (var _fun38372_ip = 0;;) switch (_fun38372_ip) {
             case 0:
                 var0 = arg1;

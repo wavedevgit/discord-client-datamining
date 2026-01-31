@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var9;
     var _closure1_slot3 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun57453: for (var _fun57453_ip = 0;;) switch (_fun57453_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun57455: for (var _fun57455_ip = 0;;) switch (_fun57455_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var10 = function(arg0) { // Original name: applyAppleReceipt, environment: var1
+    var10 = function arg0() {
         _fun57456: for (var _fun57456_ip = 0;;) switch (_fun57456_ip) {
             case 0:
                 var0 = arg0;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var10;
-    var0 = function() { // Original name: _getTrialOfferSignature, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: handlePurchaseException, environment: var1
+    var0 = function arg0, arg1() {
         _fun57462: for (var _fun57462_ip = 0;;) switch (_fun57462_ip) {
             case 0:
                 var0 = arg0;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: canMakeIAPRequest, environment: var1
+    var0 = function() {
         _fun57463: for (var _fun57463_ip = 0;;) switch (_fun57463_ip) {
             case 0:
                 var1 = _closure1_slot14;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: clearAndMakeIAPRequest, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -760,7 +760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _clearAndMakeIAPRequest, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -999,7 +999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var4 = function(arg0) { // Original name: getIAPJWTRequestData, environment: var1
+    var4 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot32;
         var2 = var3.apply;
@@ -1010,7 +1010,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var4;
-    var0 = function() { // Original name: _getIAPJWTRequestData, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -1049,7 +1049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var7.NetworkActionNames;
                         var7 = var7.APPLE_JWT_TOKEN_CREATE;
                         var5.event = var7;
-                        var6 = function(arg0) { // Original name: properties, environment: var6
+                        var6 = function arg0() {
                             _fun57472: for (var _fun57472_ip = 0;;) switch (_fun57472_ip) {
                                 case 0:
                                     var6 = arg0;
@@ -1255,7 +1255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var3 = function(arg0) { // Original name: updateAppleSubscription, environment: var1
+    var3 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot34;
         var2 = var3.apply;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var3;
-    var0 = function() { // Original name: _updateAppleSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -1307,7 +1307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var7.NetworkActionNames;
                         var7 = var7.APPLE_JWT_TOKEN_CREATE;
                         var5.event = var7;
-                        var6 = function(arg0) { // Original name: properties, environment: var6
+                        var6 = function arg0() {
                             _fun57477: for (var _fun57477_ip = 0;;) switch (_fun57477_ip) {
                                 case 0:
                                     var6 = arg0;
@@ -1395,7 +1395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0, arg1) { // Original name: determineProductId, environment: var1
+    var0 = function arg0, arg1() {
         _fun57478: for (var _fun57478_ip = 0;;) switch (_fun57478_ip) {
             case 0:
                 var3 = arg0;
@@ -1553,7 +1553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: _cancelGenericSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -1706,7 +1706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: isValidCurrency, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;
@@ -1718,7 +1718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var0;
-    var0 = function() { // Original name: _createGenericSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -2052,7 +2052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot38 = var0;
-    var0 = function() { // Original name: _resubscribeGenericSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -2330,7 +2330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var0;
-    var0 = function() { // Original name: _retryPendingPurchases, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -2616,7 +2616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot40 = var0;
-    var0 = function() { // Original name: _mobilePurchaseSKU, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -2784,7 +2784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 465:
                         var28 = var27;
                         var16 = var13;
-                        var11 = function(arg0, arg1) { // Original name: retryPendingPurchases, environment: var11
+                        var11 = function arg0, arg1() {
                             var0 = undefined;
                             var3 = _closure1_slot40;
                             var2 = var3.apply;
@@ -3178,7 +3178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot41 = var0;
-    var0 = function() { // Original name: _migrateToACOM, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot7;
@@ -3379,7 +3379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var7.bind(var0)(var10);
     var10 = var10.fetchIpCountryCode;
     var5.fetchIpCountryCode = var10;
-    var10 = function() { // Original name: init, environment: var1
+    var10 = function() {
         var1 = this;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot7;
@@ -3464,7 +3464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.init = var10;
-    var10 = function() { // Original name: connectGenericIap, environment: var1
+    var10 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -3547,7 +3547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.connectGenericIap = var10;
-    var10 = function() { // Original name: loadGenericProducts, environment: var1
+    var10 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -3839,7 +3839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.loadGenericProducts = var10;
-    var10 = function() { // Original name: disconnectGenericIap, environment: var1
+    var10 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 21;
@@ -3854,7 +3854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.disconnectGenericIap = var10;
-    var10 = function() { // Original name: loadProducts, environment: var1
+    var10 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var0 = function*() { // Environment: var0
@@ -3968,7 +3968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.loadProducts = var10;
-    var10 = function(arg0) { // Original name: createSubscription, environment: var1
+    var10 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot7;
@@ -4160,7 +4160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var33 = var11;
                         var32 = var31;
                         var24 = var12;
-                        var9 = function() { // Original name: getTrialOfferSignature, environment: var16
+                        var9 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot26;
                             var2 = var3.apply;
@@ -4438,7 +4438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var2.bind(var0)(var1);
                             var2 = var3.openLazy;
                             var1 = {};
-                            var4 = function() { // Original name: importer, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot0;
                                 var0 = _closure1_slot3;
                                 var1 = 31;
@@ -4466,7 +4466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var5 = _closure4_slot0;
                                         var4 = 'subscription';
                                         var1[var4] = var5;
-                                        var4 = function() { // Original name: onClose, environment: var0
+                                        var4 = function() {
                                             var1 = _closure8_slot0;
                                             var0 = var1.onClose;
                                             var0 = var0.bind(var1)();
@@ -4617,7 +4617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var5.createSubscription = var10;
-    var10 = function() { // Original name: restoreAndApplyPurchases, environment: var1
+    var10 = function() {
         _fun57527: for (var _fun57527_ip = 0;;) switch (_fun57527_ip) {
             case 0:
                 var2 = arguments[0];
@@ -5305,7 +5305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var5;
     var2.getIAPJWTRequestData = var4;
     var2.updateAppleSubscription = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: cancelGenericSubscription, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = undefined;
         var3 = _closure1_slot36;
         var2 = var3.apply;
@@ -5316,7 +5316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.cancelGenericSubscription = var3;
-    var3 = function(arg0, arg1) { // Original name: createGenericSubscription, environment: var1
+    var3 = function arg0, arg1() {
         var0 = undefined;
         var3 = _closure1_slot38;
         var2 = var3.apply;
@@ -5327,7 +5327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGenericSubscription = var3;
-    var3 = function(arg0, arg1) { // Original name: resubscribeGenericSubscription, environment: var1
+    var3 = function arg0, arg1() {
         var0 = undefined;
         var3 = _closure1_slot39;
         var2 = var3.apply;
@@ -5338,7 +5338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resubscribeGenericSubscription = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: mobilePurchaseSKU, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = undefined;
         var3 = _closure1_slot41;
         var2 = var3.apply;
@@ -5349,7 +5349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.mobilePurchaseSKU = var3;
-    var1 = function() { // Original name: migrateToACOM, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot42;
         var2 = var3.apply;

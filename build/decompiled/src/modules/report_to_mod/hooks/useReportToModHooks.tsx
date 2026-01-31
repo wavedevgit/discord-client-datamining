@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/report_to_mod/hooks/useReportToModHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useIsReportToModEnabled, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsReportToModEnabled = var3;
-    var3 = function(arg0) { // Original name: useReportToModChannelId, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useReportToModChannelId = var3;
-    var3 = function(arg0) { // Original name: useIsModeratorReportOrPostChannel, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsModeratorReportOrPostChannel = var3;
-    var3 = function(arg0) { // Original name: useIsModeratorReportPostChannel, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsModeratorReportPostChannel = var3;
-    var3 = function(arg0) { // Original name: useLoadReportedMessage, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.messageReference;
         var _closure2_slot0 = var4;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useLoadReportedMessage = var3;
-    var1 = function(arg0) { // Original name: loadOriginalAuthorFromSnapshot, environment: var1
+    var1 = function arg0() {
         _fun77882: for (var _fun77882_ip = 0;;) switch (_fun77882_ip) {
             case 0:
                 var2 = arg0;

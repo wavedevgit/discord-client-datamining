@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = dependencyMap;
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var10;
-    var7 = function(arg0, arg1, arg2) { // Original name: formatSingleCurrencyPrice, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun42076: for (var _fun42076_ip = 0;;) switch (_fun42076_ip) {
             case 0:
                 var0 = arg2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var7;
-    var6 = function(arg0, arg1) { // Original name: formatDualPriceForBG, environment: var1
+    var6 = function arg0, arg1() {
         var6 = arg0;
         var4 = arg1;
         var3 = _closure1_slot8;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: formatPrice, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun42078: for (var _fun42078_ip = 0;;) switch (_fun42078_ip) {
             case 0:
                 var4 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: formatRate, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun42079: for (var _fun42079_ip = 0;;) switch (_fun42079_ip) {
             case 0:
                 var4 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0) { // Original name: maybeShortenPrice, environment: var1
+    var3 = function arg0() {
         _fun42080: for (var _fun42080_ip = 0;;) switch (_fun42080_ip) {
             case 0:
                 var4 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.formatDualPriceForBG = var6;
     var2.formatPrice = var5;
     var2.formatRate = var4;
-    var4 = function(arg0, arg1) { // Original name: formatPercent, environment: var1
+    var4 = function arg0, arg1() {
         var0 = global;
         var3 = var0.Intl;
         var2 = var3.NumberFormat;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.formatPercent = var4;
-    var4 = function(arg0) { // Original name: formatSubscriptionPlanRate, environment: var1
+    var4 = function arg0() {
         _fun42082: for (var _fun42082_ip = 0;;) switch (_fun42082_ip) {
             case 0:
                 var0 = arg0;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatSubscriptionPlanRate = var4;
     var2.maybeShortenPrice = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: shortenAndFormatPrice, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var2 = _closure1_slot12;
         var5 = _closure1_slot10;
         var1 = undefined;

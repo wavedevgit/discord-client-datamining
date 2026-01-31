@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'fullScreenGestureEnabled': true
         };
         var4.options = var10;
-        var10 = function() { // Original name: getComponent, environment: var8
+        var10 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 8;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var9 = var9.SEARCH_CHAT_PREVIEW;
         var5.name = var9;
-        var9 = function(arg0) { // Original name: options, environment: var8
+        var9 = function arg0() {
             var0 = arg0;
             var1 = var0.route;
             var _closure3_slot0 = var1;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var4.getRenderBackImage;
             var3 = var3.bind(var4)(var5);
             var0.headerLeft = var3;
-            var2 = function() { // Original name: headerTitle, environment: var2
+            var2 = function() {
                 var3 = _closure1_slot7;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var5.options = var9;
-        var8 = function() { // Original name: getComponent, environment: var8
+        var8 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 11;

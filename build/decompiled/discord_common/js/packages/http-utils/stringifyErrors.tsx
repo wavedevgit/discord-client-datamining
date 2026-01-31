@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var1;
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
-    var1 = function(arg0) { // Original name: stringifyErrors, environment: var0
+    var1 = function arg0() {
         _fun6798: for (var _fun6798_ip = 0;;) switch (_fun6798_ip) {
             case 0:
                 var3 = arg0;

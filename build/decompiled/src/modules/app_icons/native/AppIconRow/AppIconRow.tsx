@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_icons/native/AppIconRow/AppIconRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppIconRow, environment: var1
+    var1 = function arg0() {
         _fun85374: for (var _fun85374_ip = 0;;) switch (_fun85374_ip) {
             case 0:
                 var3 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var3.bind(var5)(var14, var13);
                 var1.icon = var13;
                 var1.label = var12;
-                var12 = function() { // Original name: onLongPress, environment: var11
+                var12 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot2;
                     var0 = undefined;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onLongPress = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot2;
                     var0 = undefined;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: handleConnectionStateUpdated, environment: var3
+    var0 = function arg0() {
         _fun58054: for (var _fun58054_ip = 0;;) switch (_fun58054_ip) {
             case 0:
                 var0 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: handlePurchaseStateUpdated, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.billingResult;
         var4 = var0.isActivePurchase;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: handlePurchaseUpdated, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _handlePurchaseUpdated, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: handleDowngradeCommand, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _handleDowngradeCommand, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         _fun58064_ip = 147;
                         continue _fun58064;
                     case 126:
-                        var2 = function() { // Original name: executePendingDowngrade, environment: var2
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot31;
                             var2 = var3.apply;
@@ -814,7 +814,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _executePendingDowngrade, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1026,7 +1026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: clearPendingDowngrade, environment: var3
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -1042,7 +1042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: fetchAndAlertActiveSubscription, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot34;
         var2 = var3.apply;
@@ -1053,7 +1053,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: _fetchAndAlertActiveSubscription, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1109,7 +1109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var2.bind(var0)(var1);
                             var2 = var3.openLazy;
                             var1 = {};
-                            var4 = function() { // Original name: importer, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot0;
                                 var0 = _closure1_slot2;
                                 var1 = 26;
@@ -1137,7 +1137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var5 = _closure4_slot0;
                                         var4 = 'subscription';
                                         var1[var4] = var5;
-                                        var4 = function() { // Original name: onClose, environment: var0
+                                        var4 = function() {
                                             var1 = _closure8_slot0;
                                             var0 = var1.onClose;
                                             var0 = var0.bind(var1)();
@@ -1216,7 +1216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: handleAppStateUpdated, environment: var3
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot36;
         var2 = var3.apply;
@@ -1227,7 +1227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: _handleAppStateUpdated, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -1432,7 +1432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot24 = var1;
     var1 = {};
     var1.giftInfoOptionsCache = var6;
-    var6 = function() { // Original name: initialize, environment: var3
+    var6 = function() {
         var2 = _closure1_slot18;
         var0 = var2.open;
         var0 = var0.bind(var2)();
@@ -1470,7 +1470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.initialize = var6;
-    var3 = function() { // Original name: terminate, environment: var3
+    var3 = function() {
         _fun58084: for (var _fun58084_ip = 0;;) switch (_fun58084_ip) {
             case 0:
                 var2 = _closure1_slot18;

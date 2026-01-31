@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: useVoiceChannelUsers, environment: var4
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var3;
-    var1 = function(arg0, arg1) { // Original name: formatVoiceActivityTitle, environment: var4
+    var1 = function arg0, arg1() {
         _fun101698: for (var _fun101698_ip = 0;;) switch (_fun101698_ip) {
             case 0:
                 var1 = arg0;

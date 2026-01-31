@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var4 = function(arg0, arg1) { // Original name: getStaffReleasePhase, environment: var6
+    var4 = function arg0, arg1() {
         _fun107306: for (var _fun107306_ip = 0;;) switch (_fun107306_ip) {
             case 0:
                 var0 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0) { // Original name: useActivityAction, environment: var6
+    var3 = function arg0() {
         _fun107308: for (var _fun107308_ip = 0;;) switch (_fun107308_ip) {
             case 0:
                 var0 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var1 = function(arg0) { // Original name: useOnActivityItemSelected, environment: var6
+    var1 = function arg0() {
         _fun107310: for (var _fun107310_ip = 0;;) switch (_fun107310_ip) {
             case 0:
                 var1 = arg0;
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/activities/utils/useActivityShelfItem.tsx';
     var7 = var8.bind(var9)(var7);
-    var6 = function(arg0) { // Original name: useActivityShelfItem, environment: var6
+    var6 = function arg0() {
         _fun107319: for (var _fun107319_ip = 0;;) switch (_fun107319_ip) {
             case 0:
                 var2 = arg0;

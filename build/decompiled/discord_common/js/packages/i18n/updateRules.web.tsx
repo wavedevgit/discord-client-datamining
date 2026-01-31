@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/i18n/updateRules.web.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: updateRules, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var0.paragraph;
         var8 = var1;
         var3 = copyDataProperties(var8, var7);
-        var4 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var4 = function arg0, arg1, arg2() {
             var0 = arg2;
             var4 = _closure1_slot2;
             var3 = {};
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var0.link;
         var8 = var1;
         var4 = copyDataProperties(var8, var7);
-        var2 = function(arg0, arg1, arg2) { // Original name: react, environment: var2
+        var2 = function arg0, arg1, arg2() {
             _fun112277: for (var _fun112277_ip = 0;;) switch (_fun112277_ip) {
                 case 0:
                     var1 = arg0;

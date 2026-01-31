@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0, arg1) { // Original name: isBuiltin, environment: var0
+    var2 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = var2.call;
         var0 = arg0;
@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot1 = var2;
-    var3 = function(arg0) { // Original name: isParameterizedString, environment: var0
+    var3 = function arg0() {
         _fun8777: for (var _fun8777_ip = 0;;) switch (_fun8777_ip) {
             case 0:
                 var2 = arg0;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var2 = function(arg0) { // Original name: isPlainObject, environment: var0
+    var2 = function arg0() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var2;
-    var4 = function(arg0, arg1) { // Original name: isInstanceOf, environment: var0
+    var4 = function arg0, arg1() {
         _fun8779: for (var _fun8779_ip = 0;;) switch (_fun8779_ip) {
             case 0:
                 var1 = arg0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var5.prototype;
     var5 = var5.toString;
     var _closure1_slot0 = var5;
-    var5 = function(arg0) { // Original name: isDOMError, environment: var0
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isDOMError = var5;
-    var5 = function(arg0) { // Original name: isDOMException, environment: var0
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg0;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isDOMException = var5;
-    var5 = function(arg0) { // Original name: isElement, environment: var0
+    var5 = function arg0() {
         _fun8782: for (var _fun8782_ip = 0;;) switch (_fun8782_ip) {
             case 0:
                 var1 = global;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isElement = var5;
-    var5 = function(arg0) { // Original name: isError, environment: var0
+    var5 = function arg0() {
         _fun8783: for (var _fun8783_ip = 0;;) switch (_fun8783_ip) {
             case 0:
                 var3 = arg0;
@@ -174,7 +174,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isError = var5;
-    var5 = function(arg0) { // Original name: isErrorEvent, environment: var0
+    var5 = function arg0() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isErrorEvent = var5;
-    var5 = function(arg0) { // Original name: isEvent, environment: var0
+    var5 = function arg0() {
         _fun8785: for (var _fun8785_ip = 0;;) switch (_fun8785_ip) {
             case 0:
                 var1 = global;
@@ -209,7 +209,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.isInstanceOf = var4;
     var1.isParameterizedString = var3;
     var1.isPlainObject = var2;
-    var2 = function(arg0) { // Original name: isPrimitive, environment: var0
+    var2 = function arg0() {
         _fun8786: for (var _fun8786_ip = 0;;) switch (_fun8786_ip) {
             case 0:
                 var1 = arg0;
@@ -246,7 +246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isPrimitive = var2;
-    var2 = function(arg0) { // Original name: isRegExp, environment: var0
+    var2 = function arg0() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg0;
@@ -255,7 +255,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isRegExp = var2;
-    var2 = function(arg0) { // Original name: isRequest, environment: var0
+    var2 = function arg0() {
         _fun8788: for (var _fun8788_ip = 0;;) switch (_fun8788_ip) {
             case 0:
                 var1 = global;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isRequest = var2;
-    var2 = function(arg0) { // Original name: isString, environment: var0
+    var2 = function arg0() {
         var3 = _closure1_slot1;
         var2 = undefined;
         var1 = arg0;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.isString = var2;
-    var2 = function(arg0) { // Original name: isSyntheticEvent, environment: var0
+    var2 = function arg0() {
         _fun8790: for (var _fun8790_ip = 0;;) switch (_fun8790_ip) {
             case 0:
                 var2 = arg0;
@@ -322,7 +322,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isSyntheticEvent = var2;
-    var2 = function(arg0) { // Original name: isThenable, environment: var0
+    var2 = function arg0() {
         _fun8791: for (var _fun8791_ip = 0;;) switch (_fun8791_ip) {
             case 0:
                 var3 = arg0;
@@ -354,7 +354,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isThenable = var2;
-    var0 = function(arg0) { // Original name: isVueViewModel, environment: var0
+    var0 = function arg0() {
         _fun8792: for (var _fun8792_ip = 0;;) switch (_fun8792_ip) {
             case 0:
                 var2 = arg0;

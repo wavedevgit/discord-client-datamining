@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3.isConcatSpreadable;
         case 49:
             var _closure1_slot2 = var2;
-            var2 = function(arg0) { // Original name: isFlattenable, environment: var1
+            var2 = function arg0() {
                 _fun32743: for (var _fun32743_ip = 0;;) switch (_fun32743_ip) {
                     case 0:
                         var3 = arg0;

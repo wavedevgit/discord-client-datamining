@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var4;
     var _closure1_slot3 = var6;
-    var0 = function(arg0) { // Original name: ContentHeader, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.count;
         var5 = var0.title;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: Separator, environment: var3
+    var0 = function() {
         var1 = _closure1_slot11;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: BenefitShowCase, environment: var3
+    var0 = function arg0() {
         _fun117017: for (var _fun117017_ip = 0;;) switch (_fun117017_ip) {
             case 0:
                 var0 = arg0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: ChannelBenefitShowCase, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var4 = var0.description;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: ViewEntireTemplateFooter, environment: var3
+    var0 = function() {
         var0 = _closure1_slot11;
         var3 = undefined;
         var14 = var0.bind(var3)();
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePreviewCard.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildRoleSubscriptionTierTemplatePreviewCard, environment: var3
+    var3 = function arg0() {
         _fun117020: for (var _fun117020_ip = 0;;) switch (_fun117020_ip) {
             case 0:
                 var0 = arg0;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var8 = var8.contentContainer;
                 var5.style = var8;
-                var8 = function() { // Original name: onPress, environment: var12
+                var8 = function() {
                     var7 = _closure2_slot0;
                     var6 = _closure2_slot1;
                     var1 = _closure2_slot8;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var27.bind(var3)(var8);
                 var10 = var8.GappedList;
                 var8 = {};
-                var12 = function() { // Original name: renderGap, environment: var12
+                var12 = function() {
                     var3 = _closure1_slot9;
                     var2 = _closure1_slot13;
                     var1 = undefined;

@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}';
     var2.code = var3;
     var _closure1_slot2 = var2;
-    var0 = function(arg0) { // Original name: useComposedEventHandler, environment: var0
+    var0 = function arg0() {
         var4 = arg0;
         var10 = {};
         var _closure2_slot0 = var10;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = var9[var2];
         var3 = var7.bind(var3)(var2);
         var2 = var3.useEvent;
-        var1 = function(arg0) { // Original name: pnpm_useComposedEventHandlerTs1, environment: var1
+        var1 = function arg0() {
             _fun34807: for (var _fun34807_ip = 0;;) switch (_fun34807_ip) {
                 case 0:
                     var1 = arg0;

@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.ActivityPanelModes;
     var7 = var7.PANEL;
     var1.mode = var7;
-    var7 = function() { // Original name: setMode, environment: var3
+    var7 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7 = var8.bind(var9)(var7);
     var1.wrapperOffset = var7;
-    var3 = function() { // Original name: useActivityWebViewLock, environment: var3
+    var3 = function() {
         var0 = true;
         return var0;
     };

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun112494: for (var _fun112494_ip = 0;;) switch (_fun112494_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: AcceptInviteManager, environment: var0
+        var2 = function arg0() {
             _fun112498: for (var _fun112498_ip = 0;;) switch (_fun112498_ip) {
                 case 0:
                     var4 = this;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = false;
                     var0._isRegistration = var2;
                     var2 = {};
-                    var3 = function(arg0) { // Original name: DISPLAYED_INVITE_SHOW, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2._handleShowInvite;
                         var0 = arg0;
@@ -150,21 +150,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.DISPLAYED_INVITE_SHOW = var3;
-                    var3 = function() { // Original name: DISPLAYED_INVITE_CLEAR, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1._handleClearInvite;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.DISPLAYED_INVITE_CLEAR = var3;
-                    var3 = function() { // Original name: DEFERRED_INVITE_SHOW, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1._handleShowDeferredInvite;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.DEFERRED_INVITE_SHOW = var3;
-                    var3 = function() { // Original name: REGISTER_SUCCESS, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1._handleRegisterSuccess;
                         var0 = var0.bind(var1)();

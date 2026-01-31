@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0) { // Original name: NativeDispatchError, environment: var1
+        var2 = function arg0() {
             _fun28813: for (var _fun28813_ip = 0;;) switch (_fun28813_ip) {
                 case 0:
                     var1 = arg0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'displayMessage';
         var0.key = var4;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             _fun28814: for (var _fun28814_ip = 0;;) switch (_fun28814_ip) {
                 case 0:
                     var1 = this;

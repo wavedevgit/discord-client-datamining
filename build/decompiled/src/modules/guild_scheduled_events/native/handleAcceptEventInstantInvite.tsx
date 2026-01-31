@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: handleAcceptEventInstantInvite, environment: var1
+    var1 = function arg0() {
         _fun76152: for (var _fun76152_ip = 0;;) switch (_fun76152_ip) {
             case 0:
                 var5 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'Guild Scheduled Event Invite Button Embed';
                 var5.location = var6;
                 var1.context = var5;
-                var4 = function() { // Original name: callback, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 4;

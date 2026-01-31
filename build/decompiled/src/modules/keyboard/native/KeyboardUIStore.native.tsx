@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var6;
-            var0 = function(arg0, arg1, arg2) { // Original name: getCustomKeyboardHeight, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun16935: for (var _fun16935_ip = 0;;) switch (_fun16935_ip) {
                     case 0:
                         var9 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot10 = var0;
-            var0 = function(arg0) { // Original name: getSystemKeyboardHeight, environment: var1
+            var0 = function arg0() {
                 _fun16936: for (var _fun16936_ip = 0;;) switch (_fun16936_ip) {
                     case 0:
                         var0 = arg0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot11 = var0;
-            var0 = function(arg0) { // Original name: updateSystemKeyboardStoreState, environment: var1
+            var0 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var3 = _closure1_slot0;
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'modules/keyboard/native/KeyboardUIStore.native.tsx';
             var4 = var5.bind(var6)(var4);
             var2.default = var3;
-            var3 = function(arg0) { // Original name: setKeyboardType, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var5 = _closure1_slot7;
@@ -783,7 +783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.setKeyboardType = var3;
-            var3 = function(arg0) { // Original name: addKeyboardWillOpenChangedListener, environment: var1
+            var3 = function arg0() {
                 var3 = arg0;
                 var _closure2_slot0 = var3;
                 var2 = _closure1_slot8;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.addKeyboardWillOpenChangedListener = var3;
-            var1 = function(arg0) { // Original name: addKeyboardTypeChangedListener, environment: var1
+            var1 = function arg0() {
                 var3 = arg0;
                 var _closure2_slot0 = var3;
                 var2 = _closure1_slot7;

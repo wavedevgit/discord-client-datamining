@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'http://localhost:8081';
     var3.url = var4;
     var _closure1_slot0 = var3;
-    var1 = function() { // Original name: openInEditor, environment: var1
+    var1 = function() {
         _fun97526: for (var _fun97526_ip = 0;;) switch (_fun97526_ip) {
             case 0:
                 var4 = undefined;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var4.bind(var5)(var0, var3, var2);
                     var _closure3_slot0 = var0;
                     var0 = {};
-                    var1 = function(arg0) { // Original name: onCommand, environment: var1
+                    var1 = function arg0() {
                         _fun97528: for (var _fun97528_ip = 0;;) switch (_fun97528_ip) {
                             case 0:
                                 var0 = arg0;

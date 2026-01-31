@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: TierTemplatesRenderer, environment: var1
+    var0 = function arg0() {
         _fun117000: for (var _fun117000_ip = 0;;) switch (_fun117000_ip) {
             case 0:
                 var1 = arg0;
@@ -66,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot16;
                 var9.paddingRight = var10;
                 var2.contentContainerStyle = var9;
-                var9 = function(arg0) { // Original name: keyExtractor, environment: var8
+                var9 = function arg0() {
                     var0 = arg0;
                     var0 = var0.category;
                     return var0;
                 };
                 var2.keyExtractor = var9;
-                var9 = function() { // Original name: ItemSeparatorComponent, environment: var8
+                var9 = function() {
                     var3 = _closure1_slot14;
                     var2 = _closure1_slot8;
                     var1 = {};
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot16;
                 var9 = var10 + var9;
                 var2.snapToInterval = var9;
-                var8 = function(arg0) { // Original name: renderItem, environment: var8
+                var8 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = _closure1_slot14;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionTierTemplateSelectionComponent, environment: var1
+    var0 = function arg0() {
         _fun117004: for (var _fun117004_ip = 0;;) switch (_fun117004_ip) {
             case 0:
                 var1 = arg0;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.guildId = var5;
                     var4 = _closure2_slot3;
                     var1.groupListingId = var4;
-                    var4 = function() { // Original name: onAfterTierCreation, environment: var4
+                    var4 = function() {
                         var2 = _closure2_slot5;
                         var1 = var2.navigate;
                         var0 = _closure1_slot13;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot5;
                     var2 = var3.setOptions;
                     var1 = {};
-                    var5 = function() { // Original name: headerRight, environment: var0
+                    var5 = function() {
                         var3 = _closure1_slot15;
                         var2 = _closure1_slot7;
                         var1 = {};
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.headerRight = var5;
-                    var0 = function() { // Original name: headerTitle, environment: var0
+                    var0 = function() {
                         var3 = _closure1_slot14;
                         var2 = _closure1_slot8;
                         var1 = undefined;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildSettingsRoleSubscriptionTierTemplateSelection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleSubscriptionTierTemplateSelection, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var3 = _closure1_slot14;
         var1 = _closure1_slot0;

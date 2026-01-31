@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1) { // Original name: trackSearchStart, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var4)(var2, var1);
         return var0;
     };
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: trackSearchResultViewed, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.trackSearchStart = var4;
     var2.trackSearchResultViewed = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: searchSounds, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun50574: for (var _fun50574_ip = 0;;) switch (_fun50574_ip) {
             case 0:
                 var5 = arg0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var3.bind(var4)();
                             var9 = _closure2_slot1;
                             var8 = _closure2_slot2;
-                            var1 = function(arg0, arg1, arg2, arg3) { // Original name: getScore, environment: var1
+                            var1 = function arg0, arg1, arg2, arg3() {
                                 _fun50576: for (var _fun50576_ip = 0;;) switch (_fun50576_ip) {
                                     case 0:
                                         var9 = arg0;

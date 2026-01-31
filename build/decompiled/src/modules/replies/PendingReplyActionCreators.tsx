@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/replies/PendingReplyActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: createPendingReply, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.message;
         var7 = var0.channel;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createPendingReply = var3;
-    var3 = function(arg0) { // Original name: createShallowPendingReply, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.messageId;
         var5 = var0.channel;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createShallowPendingReply = var3;
-    var3 = function(arg0, arg1) { // Original name: setPendingReplyShouldMention, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setPendingReplyShouldMention = var3;
-    var1 = function(arg0) { // Original name: deletePendingReply, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: getCommonErrorContext, environment: var3
+    var1 = function() {
         _fun117538: for (var _fun117538_ip = 0;;) switch (_fun117538_ip) {
             case 0:
                 var0 = {};
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/errors/av_errors/AVErrorContext.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: getVoiceChannelErrorContext, environment: var3
+    var4 = function() {
         _fun117539: for (var _fun117539_ip = 0;;) switch (_fun117539_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getVoiceChannelErrorContext = var4;
-    var3 = function(arg0) { // Original name: getStreamErrorContext, environment: var3
+    var3 = function arg0() {
         _fun117540: for (var _fun117540_ip = 0;;) switch (_fun117540_ip) {
             case 0:
                 var4 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun80832: for (var _fun80832_ip = 0;;) switch (_fun80832_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun80834: for (var _fun80834_ip = 0;;) switch (_fun80834_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var3 = function(arg0, arg1) { // Original name: withoutCharacters, environment: var1
+    var3 = function arg0, arg1() {
         var3 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/pomelo/PomeloUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getUserAvatarURLForPomelo, environment: var1
+    var4 = function arg0() {
         _fun80837: for (var _fun80837_ip = 0;;) switch (_fun80837_ip) {
             case 0:
                 var0 = arg0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getUserAvatarURLForPomelo = var4;
-    var4 = function(arg0) { // Original name: getDefaultPomelo, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDefaultPomelo = var4;
     var2.withoutCharacters = var3;
-    var3 = function(arg0) { // Original name: shouldSkipToEditUsername, environment: var1
+    var3 = function arg0() {
         _fun80839: for (var _fun80839_ip = 0;;) switch (_fun80839_ip) {
             case 0:
                 var0 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldSkipToEditUsername = var3;
-    var3 = function(arg0) { // Original name: formatPomeloForEditing, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = var1.toLowerCase;
         var2 = var0.bind(var1)();
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.formatPomeloForEditing = var3;
-    var3 = function(arg0) { // Original name: getMemberSince, environment: var1
+    var3 = function arg0() {
         _fun80841: for (var _fun80841_ip = 0;;) switch (_fun80841_ip) {
             case 0:
                 var2 = undefined;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMemberSince = var3;
-    var3 = function(arg0) { // Original name: formatUsernameLiveCheckValidation, environment: var1
+    var3 = function arg0() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var1 = 5;
@@ -710,7 +710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.formatUsernameLiveCheckValidation = var3;
-    var1 = function(arg0) { // Original name: getLocalizedForcedUUDate, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var4 = var0.Date;
         var0 = var4.prototype;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guilds_bar/native/utils/isGuildsBarGuildLabelEqual.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: isGuildsBarGuildLabelEqual, environment: var1
+    var1 = function arg0, arg1() {
         _fun100924: for (var _fun100924_ip = 0;;) switch (_fun100924_ip) {
             case 0:
                 var3 = arg0;

@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemRowButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemRowButton, environment: var1
+    var1 = function() {
         var3 = _closure1_slot6;
         var2 = _closure1_slot4;
         var1 = {};
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var18 = var16[var14];
         var18 = var15.bind(var0)(var18);
         var10.icon = var18;
-        var18 = function() { // Original name: onPress, environment: var13
+        var18 = function() {
             var0 = undefined;
             return var0;
         };
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19 = var16[var14];
         var19 = var15.bind(var0)(var19);
         var17.icon = var19;
-        var19 = function() { // Original name: onPress, environment: var13
+        var19 = function() {
             var0 = undefined;
             return var0;
         };
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19 = var16[var14];
         var19 = var15.bind(var0)(var19);
         var17.icon = var19;
-        var19 = function() { // Original name: onPress, environment: var13
+        var19 = function() {
             var0 = undefined;
             return var0;
         };
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19 = var16[var14];
         var19 = var15.bind(var0)(var19);
         var17.icon = var19;
-        var19 = function() { // Original name: onPress, environment: var13
+        var19 = function() {
             var0 = undefined;
             return var0;
         };
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19 = var16[var14];
         var19 = var15.bind(var0)(var19);
         var17.icon = var19;
-        var19 = function() { // Original name: onPress, environment: var13
+        var19 = function() {
             var0 = undefined;
             return var0;
         };
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var19.variant = var21;
         var19 = var7.bind(var0)(var20, var19);
         var17.icon = var19;
-        var19 = function() { // Original name: onPress, environment: var13
+        var19 = function() {
             var0 = undefined;
             return var0;
         };
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var16[var14];
         var14 = var15.bind(var0)(var14);
         var11.icon = var14;
-        var13 = function() { // Original name: onPress, environment: var13
+        var13 = function() {
             var0 = undefined;
             return var0;
         };

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/a11y/native/setAccessibilityFocusPrevious.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: setAccessibilityFocusPrevious, environment: var1
+    var1 = function() {
         _fun92883: for (var _fun92883_ip = 0;;) switch (_fun92883_ip) {
             case 0:
                 var3 = _closure1_slot0;

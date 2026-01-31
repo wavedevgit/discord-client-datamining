@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var0 = function(arg0) { // Original name: _getGraphQLOperation, environment: var3
+    var0 = function arg0() {
         _fun11065: for (var _fun11065_ip = 0;;) switch (_fun11065_ip) {
             case 0:
                 var0 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var4 = function(arg0) { // Original name: getRequestPayloadXhrOrFetch, environment: var3
+    var4 = function arg0() {
         _fun11066: for (var _fun11066_ip = 0;;) switch (_fun11066_ip) {
             case 0:
                 var1 = arg0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var1 = function(arg0) { // Original name: parseGraphQLQuery, environment: var3
+    var1 = function arg0() {
         _fun11067: for (var _fun11067_ip = 0;;) switch (_fun11067_ip) {
             case 0:
                 var4 = arg0;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var5 = function(arg0) { // Original name: getGraphQLRequestPayload, environment: var3
+    var5 = function arg0() {
         _fun11068: for (var _fun11068_ip = 0;;) switch (_fun11068_ip) {
             case 0:
                 var2 = arg0;
@@ -192,16 +192,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var7 = var7.bind(var0)(var6);
     var6 = var7.defineIntegration;
-    var3 = function(arg0) { // Original name: _graphqlClientIntegration, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = {};
         var2 = 'GraphQLClient';
         var0.name = var2;
-        var1 = function(arg0) { // Original name: setup, environment: var1
+        var1 = function arg0() {
             var3 = arg0;
             var2 = _closure2_slot0;
-            var4 = function(arg0, arg1) { // Original name: _updateSpanWithGraphQLData, environment: var1
+            var4 = function arg0, arg1() {
                 var3 = arg0;
                 var1 = arg1;
                 var _closure4_slot0 = var1;
@@ -342,7 +342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var0 = undefined;
             var4 = var4.bind(var0)(var3, var2);
-            var1 = function(arg0, arg1) { // Original name: _updateBreadcrumbWithGraphQLData, environment: var1
+            var1 = function arg0, arg1() {
                 var3 = arg0;
                 var1 = arg1;
                 var _closure4_slot0 = var1;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/hooks/usePlaceholderStyles.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useFullscreenPlaceholderCount, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.placeholderHeight;
         var1 = var0.numColumns;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useFullscreenPlaceholderCount = var3;
-    var1 = function(arg0) { // Original name: usePlaceholderAnimatedStyle, environment: var1
+    var1 = function arg0() {
         var9 = arg0;
         var _closure2_slot0 = var9;
         var7 = _closure1_slot0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var5];
         var2 = var7.bind(var6)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: A, environment: var0
+        var0 = function() {
             _fun105371: for (var _fun105371_ip = 0;;) switch (_fun105371_ip) {
                 case 0:
                     var0 = _closure2_slot1;

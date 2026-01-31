@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.PerkIcons;
     var1 = var1.EMOJI;
     var7.perkIcon = var1;
-    var1 = function() { // Original name: getCopy, environment: var8
+    var1 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var0 = 3;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.PerkIcons;
     var11 = var11.SOUNDBOARD;
     var7.perkIcon = var11;
-    var11 = function() { // Original name: getCopy, environment: var8
+    var11 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var0 = 3;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.PerkIcons;
     var10 = var10.ANIMATED;
     var7.perkIcon = var10;
-    var10 = function() { // Original name: getCopy, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.PerkIcons;
     var10 = var10.AUDIO;
     var7.perkIcon = var10;
-    var10 = function() { // Original name: getCopy, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.PerkIcons;
     var7 = var7.STREAM;
     var10.perkIcon = var7;
-    var7 = function() { // Original name: getCopy, environment: var8
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.PerkIcons;
     var11 = var11.UPLOAD;
     var10.perkIcon = var11;
-    var11 = function() { // Original name: getCopy, environment: var8
+    var11 = function() {
         var8 = _closure1_slot0;
         var9 = _closure1_slot1;
         var4 = 3;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.PerkIcons;
     var11 = var11.CUSTOM_ROLE_ICON;
     var10.perkIcon = var11;
-    var11 = function() { // Original name: getCopy, environment: var8
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.PerkIcons;
     var11 = var11.CUSTOMIZATION;
     var10.perkIcon = var11;
-    var11 = function() { // Original name: getCopy, environment: var8
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.PerkIcons;
     var6 = var6.VANITY;
     var7.perkIcon = var6;
-    var6 = function() { // Original name: getCopy, environment: var8
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.PerkIcons;
     var10 = var10.UPLOAD;
     var7.perkIcon = var10;
-    var10 = function() { // Original name: getCopy, environment: var8
+    var10 = function() {
         var8 = _closure1_slot0;
         var9 = _closure1_slot1;
         var4 = 3;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.PerkIcons;
     var10 = var10.AUDIO;
     var7.perkIcon = var10;
-    var10 = function() { // Original name: getCopy, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.PerkIcons;
     var10 = var10.ANIMATED;
     var7.perkIcon = var10;
-    var10 = function() { // Original name: getCopy, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.PerkIcons;
     var9 = var9.STAGE_VIDEO;
     var7.perkIcon = var9;
-    var8 = function() { // Original name: getCopy, environment: var8
+    var8 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var0 = 3;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: updateSession, environment: var2
+    var0 = function arg0() {
         _fun8946: for (var _fun8946_ip = 0;;) switch (_fun8946_ip) {
             case 0:
                 var2 = arg0;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = function(arg0, arg1) { // Original name: closeSession, environment: var2
+    var3 = function arg0, arg1() {
         _fun8947: for (var _fun8947_ip = 0;;) switch (_fun8947_ip) {
             case 0:
                 var3 = arg0;
@@ -345,7 +345,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.closeSession = var3;
-    var2 = function(arg0) { // Original name: makeSession, environment: var2
+    var2 = function arg0() {
         _fun8948: for (var _fun8948_ip = 0;;) switch (_fun8948_ip) {
             case 0:
                 var3 = arg0;
@@ -375,7 +375,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.sid = var6;
                 var0.timestamp = var5;
                 var0.started = var5;
-                var5 = function() { // Original name: toJSON, environment: var4
+                var5 = function() {
                     _fun8949: for (var _fun8949_ip = 0;;) switch (_fun8949_ip) {
                         case 0:
                             var2 = _closure2_slot0;

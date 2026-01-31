@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var4 = function(arg0) { // Original name: getAuthenticationPath, environment: var1
+    var4 = function arg0() {
         _fun6282: for (var _fun6282_ip = 0;;) switch (_fun6282_ip) {
             case 0:
                 var7 = arguments[1];
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: UnescapedPathParam, environment: var1
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'toString';
         var0.key = var4;
-        var1 = function() { // Original name: value, environment: var1
+        var1 = function() {
             var0 = this;
             var0 = var0.value;
             return var0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = '../discord_common/js/shared/utils/PathUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: getLoginPath, environment: var1
+    var5 = function arg0() {
         _fun6286: for (var _fun6286_ip = 0;;) switch (_fun6286_ip) {
             case 0:
                 var5 = arguments[1];
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getLoginPath = var5;
     var2.getAuthenticationPath = var4;
     var2.UnescapedPathParam = var3;
-    var1 = function(arg0, arg1) { // Original name: wrapPaths, environment: var1
+    var1 = function arg0, arg1() {
         _fun6287: for (var _fun6287_ip = 0;;) switch (_fun6287_ip) {
             case 0:
                 var3 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var0;
                 var0 = {};
                 var _closure2_slot2 = var0;
-                var5 = function() { // Original name: _loop, environment: var6
+                var5 = function() {
                     _fun6288: for (var _fun6288_ip = 0;;) switch (_fun6288_ip) {
                         case 0:
                             var3 = _closure2_slot0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var5 = copyRestArgs(var8);
                                 var2 = _closure3_slot0;
                                 var3 = _closure2_slot1;
-                                var0 = function(arg0, arg1) { // Original name: encodePathArguments, environment: var0
+                                var0 = function arg0, arg1() {
                                     var2 = arg0;
                                     var1 = arg1;
                                     var _closure5_slot0 = var1;

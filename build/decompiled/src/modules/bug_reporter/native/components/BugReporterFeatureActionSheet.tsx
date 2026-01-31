@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.end = var10;
         var9 = var9.name;
         var0.label = var9;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure2_slot1;
             var1 = _closure2_slot0;
             var0 = undefined;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BugReporterFeatureActionSheet, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var9 = var2.features;
         var _closure2_slot0 = var9;

@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.jsx;
     var _closure1_slot3 = var3;
-    var1 = function(arg0) { // Original name: SceneView, environment: var1
+    var1 = function arg0() {
         _fun17439: for (var _fun17439_ip = 0;;) switch (_fun17439_ip) {
             case 0:
                 var2 = arg0;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
             var1 = exports;
-            var0 = function(arg0, arg1) { // Original name: normalizeArray, environment: var2
+            var0 = function arg0, arg1() {
                 _fun58716: for (var _fun58716_ip = 0;;) switch (_fun58716_ip) {
                     case 0:
                         var0 = arg0;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot1 = var0;
-            var0 = function(arg0) { // Original name: splitPath, environment: var2
+            var0 = function arg0() {
                 _fun58717: for (var _fun58717_ip = 0;;) switch (_fun58717_ip) {
                     case 0:
                         var3 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot2 = var0;
-            var0 = function() { // Original name: resolve, environment: var2
+            var0 = function() {
                 _fun58718: for (var _fun58718_ip = 0;;) switch (_fun58718_ip) {
                     case 0:
                         var5 = undefined;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot3 = var0;
-            var3 = function(arg0) { // Original name: trim, environment: var2
+            var3 = function arg0() {
                 _fun58720: for (var _fun58720_ip = 0;;) switch (_fun58720_ip) {
                     case 0:
                         var3 = arg0;
@@ -326,7 +326,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot4 = var3;
-            var3 = function(arg0) { // Original name: normalizePath, environment: var2
+            var3 = function arg0() {
                 _fun58721: for (var _fun58721_ip = 0;;) switch (_fun58721_ip) {
                     case 0:
                         var4 = arg0;
@@ -397,7 +397,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot5 = var3;
-            var4 = function(arg0) { // Original name: isAbsolute, environment: var2
+            var4 = function arg0() {
                 var2 = arg0;
                 var1 = var2.charAt;
                 var0 = 0;
@@ -420,7 +420,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 2
             } | [ ^ \/\\]+?|)(\.[^.\/\\]*|))(?:[\/\\]*)$/;
                 var _closure1_slot0 = var5;
-                var5 = function(arg0, arg1) { // Original name: basename, environment: var2
+                var5 = function arg0, arg1() {
                     _fun58724: for (var _fun58724_ip = 0;;) switch (_fun58724_ip) {
                         case 0:
                             var1 = arg1;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.basename = var5;
-                var5 = function(arg0) { // Original name: dirname, environment: var2
+                var5 = function arg0() {
                     _fun58725: for (var _fun58725_ip = 0;;) switch (_fun58725_ip) {
                         case 0:
                             var2 = _closure1_slot2;
@@ -514,7 +514,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1.dirname = var5;
                 var1.isAbsolute = var4;
-                var4 = function() { // Original name: join, environment: var2
+                var4 = function() {
                     _fun58726: for (var _fun58726_ip = 0;;) switch (_fun58726_ip) {
                         case 0:
                             var2 = undefined;
@@ -557,7 +557,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1.join = var4;
                 var1.normalizePath = var3;
-                var2 = function(arg0, arg1) { // Original name: relative, environment: var2
+                var2 = function arg0, arg1() {
                     _fun58727: for (var _fun58727_ip = 0;;) switch (_fun58727_ip) {
                         case 0:
                             var2 = _closure1_slot3;

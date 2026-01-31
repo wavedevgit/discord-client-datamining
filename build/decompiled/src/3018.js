@@ -3,9 +3,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24390: for (var _fun24390_ip = 0;;) switch (_fun24390_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
-                var6 = function(arg0, arg1, arg2, arg3) { // Original name: translateSingular, environment: var0
+                var6 = function arg0, arg1, arg2, arg3() {
                     _fun24392: for (var _fun24392_ip = 0;;) switch (_fun24392_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot1 = var6;
-                var1 = function(arg0) { // Original name: special, environment: var0
+                var1 = function arg0() {
                     _fun24393: for (var _fun24393_ip = 0;;) switch (_fun24393_ip) {
                         case 0:
                             var3 = arg0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot2 = var1;
-                var1 = function(arg0) { // Original name: forms, environment: var0
+                var1 = function arg0() {
                     var1 = _closure2_slot0;
                     var0 = arg0;
                     var2 = var1[var0];
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot3 = var1;
-                var5 = function(arg0, arg1, arg2, arg3) { // Original name: translate, environment: var0
+                var5 = function arg0, arg1, arg2, arg3() {
                     _fun24395: for (var _fun24395_ip = 0;;) switch (_fun24395_ip) {
                         case 0:
                             var9 = arg0;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'future': 'po %s',
                     'past': 'prieš %s'
                 };
-                var7 = function(arg0, arg1, arg2, arg3) { // Original name: translateSeconds, environment: var0
+                var7 = function arg0, arg1, arg2, arg3() {
                     _fun24396: for (var _fun24396_ip = 0;;) switch (_fun24396_ip) {
                         case 0:
                             var0 = 'kelios sekundės';
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.relativeTime = var4;
                 var4 = /\d{1,2}-oji/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function(arg0) { // Original name: ordinal, environment: var0
+                var0 = function arg0() {
                     var1 = arg0;
                     var0 = '-oji';
                     var0 = var1 + var0;

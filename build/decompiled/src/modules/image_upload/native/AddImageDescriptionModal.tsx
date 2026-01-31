@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AddDescription, environment: var1
+    var0 = function arg0() {
         _fun75624: for (var _fun75624_ip = 0;;) switch (_fun75624_ip) {
             case 0:
                 var1 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot5;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function(arg0) { // Original name: headerRight, environment: var3
+                    var3 = function arg0() {
                         var6 = _closure1_slot0;
                         var7 = _closure1_slot2;
                         var0 = 13;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/image_upload/native/AddImageDescriptionModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddImageDescriptionModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.source;
         var _closure2_slot0 = var1;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5["5S2AK+"];
         var5 = var6.bind(var7)(var5);
         var0.title = var5;
-        var4 = function() { // Original name: render, environment: var4
+        var4 = function() {
             var3 = _closure1_slot10;
             var2 = _closure1_slot13;
             var1 = {};

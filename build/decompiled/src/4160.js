@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: getResourceBlock, environment: var2
+    var0 = function arg0, arg1() {
         _fun38148: for (var _fun38148_ip = 0;;) switch (_fun38148_ip) {
             case 0:
                 var3 = arg0;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: isNaaResourceBlock, environment: var2
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = 1028;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: getBlockPadding, environment: var2
+    var0 = function arg0() {
         _fun38150: for (var _fun38150_ip = 0;;) switch (_fun38150_ip) {
             case 0:
                 var0 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: parseTags, environment: var2
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun38151: for (var _fun38151_ip = 0;;) switch (_fun38151_ip) {
             case 0:
                 var12 = arg0;
@@ -240,7 +240,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: readTag, environment: var2
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun38152: for (var _fun38152_ip = 0;;) switch (_fun38152_ip) {
             case 0:
                 var5 = arg0;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getTagName, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun38153: for (var _fun38153_ip = 0;;) switch (_fun38153_ip) {
             case 0:
                 var5 = arg0;
@@ -454,7 +454,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getTagDescription, environment: var2
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun38154: for (var _fun38154_ip = 0;;) switch (_fun38154_ip) {
             case 0:
                 var4 = arg0;
@@ -528,7 +528,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0, arg1, arg2) { // Original name: read, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun38155: for (var _fun38155_ip = 0;;) switch (_fun38155_ip) {
             case 0:
                 var1 = arg0;

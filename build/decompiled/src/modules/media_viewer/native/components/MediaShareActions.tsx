@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: useMediaShareActions, environment: var3
+    var1 = function arg0() {
         _fun70481: for (var _fun70481_ip = 0;;) switch (_fun70481_ip) {
             case 0:
                 var1 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var4 = var4.sourceURI;
                             var1.href = var4;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 17;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/media_viewer/native/components/MediaShareActions.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: MediaShareActionSheet, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.source;
         var4 = var0.disableDownload;

@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_reanimatedNativeTs2(event){const{handlers,context}=this.__closure;const{onFocusedInputLayoutChanged:onFocusedInputLayoutChanged}=handlers;if(onFocusedInputLayoutChanged&&event.eventName.endsWith("onFocusedInputLayoutChanged")){onFocusedInputLayoutChanged(event,context);}}';
     var2.code = var3;
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1) { // Original name: useAnimatedKeyboardHandler, environment: var0
+    var2 = function arg0, arg1() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var5 = _closure1_slot0;
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = var8[var2];
         var3 = var5.bind(var3)(var2);
         var2 = var3.useEvent;
-        var1 = function(arg0) { // Original name: pnpm_reanimatedNativeTs1, environment: var1
+        var1 = function arg0() {
             _fun68276: for (var _fun68276_ip = 0;;) switch (_fun68276_ip) {
                 case 0:
                     var3 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.useAnimatedKeyboardHandler = var2;
-    var0 = function(arg0, arg1) { // Original name: useFocusedInputLayoutHandler, environment: var0
+    var0 = function arg0, arg1() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var5 = _closure1_slot0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = var8[var2];
         var3 = var5.bind(var3)(var2);
         var2 = var3.useEvent;
-        var1 = function(arg0) { // Original name: pnpm_reanimatedNativeTs2, environment: var1
+        var1 = function arg0() {
             _fun68278: for (var _fun68278_ip = 0;;) switch (_fun68278_ip) {
                 case 0:
                     var3 = arg0;

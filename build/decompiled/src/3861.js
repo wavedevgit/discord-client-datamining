@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function() { // Original name: getUseOfValueInStyleWarning, environment: var0
+    var0 = function() {
         var0 = "It looks like you might be using shared value's .value inside reanimated inline style. If you want a component to update when shared value changes you should use the shared value directly instead of its current state represented by `.value`. See documentation here: https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/glossary/#animations-in-inline-styling";
         return var0;
     };

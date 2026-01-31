@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: ProgressBarMarkerInnerContent, environment: var4
+    var0 = function arg0() {
         _fun78101: for (var _fun78101_ip = 0;;) switch (_fun78101_ip) {
             case 0:
                 var1 = arg0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3[var15];
                 var5 = var5.bind(var4)(var3);
                 var3 = var5.useAnimatedStyle;
-                var2 = function() { // Original name: y, environment: var2
+                var2 = function() {
                     var0 = {};
                     var2 = {};
                     var3 = _closure2_slot0;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingProgressBarMarker.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: ProgressBarMarker, environment: var4
+    var4 = function arg0() {
         _fun78104: for (var _fun78104_ip = 0;;) switch (_fun78104_ip) {
             case 0:
                 var3 = arg0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4[var7];
                 var2 = var2.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: P, environment: var0
+                var0 = function() {
                     var0 = {};
                     var2 = {};
                     var3 = _closure2_slot0;

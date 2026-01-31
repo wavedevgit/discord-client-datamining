@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'RFC3986': 'RFC3986'
     };
     var0 = {};
-    var3 = function(arg0) { // Original name: RFC1738, environment: var2
+    var3 = function arg0() {
         var4 = _closure1_slot0;
         var3 = var4.call;
         var2 = _closure1_slot1;
@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var0.RFC1738 = var3;
-    var2 = function(arg0) { // Original name: RFC3986, environment: var2
+    var2 = function arg0() {
         var0 = global;
         var2 = var0.String;
         var1 = undefined;

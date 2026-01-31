@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/refresh/form/FormIcon.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormIcon, environment: var1
+    var1 = function arg0() {
         _fun44477: for (var _fun44477_ip = 0;;) switch (_fun44477_ip) {
             case 0:
                 var3 = arg0;

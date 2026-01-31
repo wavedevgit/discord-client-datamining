@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: CutoutImage, environment: var1
+    var1 = function arg0() {
         _fun110040: for (var _fun110040_ip = 0;;) switch (_fun110040_ip) {
             case 0:
                 var1 = arg0;

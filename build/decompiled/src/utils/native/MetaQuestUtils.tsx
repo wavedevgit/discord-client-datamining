@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/native/MetaQuestUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isMetaQuest, environment: var1
+    var3 = function() {
         _fun37502: for (var _fun37502_ip = 0;;) switch (_fun37502_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isMetaQuest = var3;
-    var1 = function() { // Original name: isQuestRelease, environment: var1
+    var1 = function() {
         _fun37503: for (var _fun37503_ip = 0;;) switch (_fun37503_ip) {
             case 0:
                 var1 = _closure1_slot2;

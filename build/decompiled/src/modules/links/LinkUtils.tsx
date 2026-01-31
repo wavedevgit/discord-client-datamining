@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
-    var3 = function(arg0) { // Original name: canViewChannel, environment: var1
+    var3 = function arg0() {
         _fun29744: for (var _fun29744_ip = 0;;) switch (_fun29744_ip) {
             case 0:
                 var4 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.CHANNEL_OR_MESSAGES_URL_RE = var5;
     var2.MEDIA_POST_URL_RE = var4;
-    var4 = function(arg0) { // Original name: tryParseChannelPath, environment: var1
+    var4 = function arg0() {
         _fun29746: for (var _fun29746_ip = 0;;) switch (_fun29746_ip) {
             case 0:
                 var9 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.tryParseChannelPath = var4;
-    var4 = function(arg0) { // Original name: tryParseEventDetailsPath, environment: var1
+    var4 = function arg0() {
         _fun29747: for (var _fun29747_ip = 0;;) switch (_fun29747_ip) {
             case 0:
                 var3 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.tryParseEventDetailsPath = var4;
     var2.canViewChannel = var3;
-    var1 = function(arg0) { // Original name: isAccessibleChannelPath, environment: var1
+    var1 = function arg0() {
         _fun29748: for (var _fun29748_ip = 0;;) switch (_fun29748_ip) {
             case 0:
                 var0 = arg0;

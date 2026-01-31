@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var2](var9);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: DynamicallyInjectedByGestureHandler, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         var2 = _closure1_slot0;
         var1 = var2.add;
@@ -28,12 +28,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.DynamicallyInjectedByGestureHandler = var2;
-    var2 = function(arg0) { // Original name: ConditionallyIgnoredEventHandlers, environment: var0
+    var2 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var1.ConditionallyIgnoredEventHandlers = var2;
-    var0 = function(arg0) { // Original name: isIgnored, environment: var0
+    var0 = function arg0() {
         _fun1599: for (var _fun1599_ip = 0;;) switch (_fun1599_ip) {
             case 0:
                 var3 = arg0;

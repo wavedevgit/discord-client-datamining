@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: isMatchingPattern, environment: var0
+    var2 = function arg0, arg1() {
         _fun58538: for (var _fun58538_ip = 0;;) switch (_fun58538_ip) {
             case 0:
                 var4 = arg0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.isMatchingPattern = var2;
-    var2 = function(arg0, arg1) { // Original name: safeJoin, environment: var0
+    var2 = function arg0, arg1() {
         _fun58539: for (var _fun58539_ip = 0;;) switch (_fun58539_ip) {
             case 0:
                 var3 = arg0;
@@ -189,7 +189,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.safeJoin = var2;
-    var2 = function(arg0, arg1) { // Original name: snipLine, environment: var0
+    var2 = function arg0, arg1() {
         _fun58540: for (var _fun58540_ip = 0;;) switch (_fun58540_ip) {
             case 0:
                 var0 = arg0;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.snipLine = var2;
-    var2 = function(arg0) { // Original name: stringMatchesSomePattern, environment: var0
+    var2 = function arg0() {
         _fun58541: for (var _fun58541_ip = 0;;) switch (_fun58541_ip) {
             case 0:
                 var4 = undefined;
@@ -335,7 +335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.stringMatchesSomePattern = var2;
-    var0 = function(arg0) { // Original name: truncate, environment: var0
+    var0 = function arg0() {
         _fun58543: for (var _fun58543_ip = 0;;) switch (_fun58543_ip) {
             case 0:
                 var4 = arg0;

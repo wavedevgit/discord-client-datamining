@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: canInstallApplication, environment: var1
+    var3 = function arg0() {
         _fun62074: for (var _fun62074_ip = 0;;) switch (_fun62074_ip) {
             case 0:
                 var1 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/applications/utils/ApplicationInstallUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.canInstallApplication = var3;
-    var3 = function(arg0) { // Original name: isAppUserInstallable, environment: var1
+    var3 = function arg0() {
         _fun62076: for (var _fun62076_ip = 0;;) switch (_fun62076_ip) {
             case 0:
                 var0 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isAppUserInstallable = var3;
-    var1 = function(arg0) { // Original name: shouldInstallApplicationOnDemand, environment: var1
+    var1 = function arg0() {
         _fun62077: for (var _fun62077_ip = 0;;) switch (_fun62077_ip) {
             case 0:
                 var0 = arg0;

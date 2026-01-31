@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun48991: for (var _fun48991_ip = 0;;) switch (_fun48991_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var8 = function() { // Original name: handleResetAllPending, environment: var3
+    var8 = function() {
         var1 = _closure1_slot25;
         var0 = undefined;
         var1 = var1.bind(var0)();
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var8;
-    var10 = function() { // Original name: handleResetPendingMemberChanges, environment: var3
+    var10 = function() {
         var0 = undefined;
         var _closure1_slot9 = var0;
         var _closure1_slot16 = var0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var10;
-    var9 = function() { // Original name: handleResetPendingProfileChanges, environment: var3
+    var9 = function() {
         var0 = undefined;
         var _closure1_slot13 = var0;
         var _closure1_slot14 = var0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildIdentitySettingsStore, environment: var5
+        var3 = function() {
             _fun48998: for (var _fun48998_ip = 0;;) switch (_fun48998_ip) {
                 case 0:
                     var3 = this;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getFormState';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getErrors';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'showNotice';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun49001: for (var _fun49001_ip = 0;;) switch (_fun49001_ip) {
                 case 0:
                     var0 = _closure1_slot9;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsSubmitDisabled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun49002: for (var _fun49002_ip = 0;;) switch (_fun49002_ip) {
                 case 0:
                     var2 = _closure1_slot14;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingAvatar';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingAvatarDecoration';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot10;
             return var0;
         };
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingProfileEffect';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingBanner';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingBio';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot14;
             return var0;
         };
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingNickname';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingPronouns';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot15;
             return var0;
         };
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingAccentColor';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot16;
             return var0;
         };
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingThemeColors';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot17;
             return var0;
         };
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingNameplate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingDisplayNameStyles';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot18;
             return var0;
         };
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllPending';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var2 = _closure1_slot9;
             var0.pendingAvatar = var2;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getGuild';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSource';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var14 = var6.bind(var0)(var1);
     var1 = {};
-    var11 = function(arg0) { // Original name: handleInit, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var2 = var0.guild;
         var _closure1_slot19 = var2;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_INIT = var11;
-    var11 = function() { // Original name: handleResetFullForm, environment: var3
+    var11 = function() {
         var2 = _closure1_slot24;
         var0 = undefined;
         var2 = var2.bind(var0)();
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM = var11;
-    var11 = function(arg0) { // Original name: handleSetGuild, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var0 = var0.guild;
         _closure1_slot19 = var0;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_GUILD = var11;
-    var11 = function() { // Original name: handleFormSubmit, environment: var3
+    var11 = function() {
         var0 = _closure1_slot8;
         var0 = var0.SUBMITTING;
         _closure1_slot21 = var0;
@@ -504,7 +504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SUBMIT = var11;
-    var11 = function(arg0) { // Original name: handleFormSubmitFailure, environment: var3
+    var11 = function arg0() {
         _fun49021: for (var _fun49021_ip = 0;;) switch (_fun49021_ip) {
             case 0:
                 var2 = _closure1_slot21;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE = var11;
-    var11 = function(arg0) { // Original name: handleProfileUpdateFailure, environment: var3
+    var11 = function arg0() {
         var0 = _closure1_slot8;
         var0 = var0.OPEN;
         _closure1_slot21 = var0;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_PROFILE_UPDATE_FAILURE = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingAvatar, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.avatar;
         _closure1_slot9 = var1;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingCollectiblesItem, environment: var3
+    var11 = function arg0() {
         _fun49024: for (var _fun49024_ip = 0;;) switch (_fun49024_ip) {
             case 0:
                 var0 = arg0;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingDisplayNameStyles, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.displayNameStyles;
         _closure1_slot18 = var1;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingBanner, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.banner;
         _closure1_slot13 = var1;
@@ -632,7 +632,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingBio, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.bio;
         _closure1_slot14 = var1;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingPronouns, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.pronouns;
         _closure1_slot15 = var1;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingNickname, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.nickname;
         _closure1_slot16 = var1;
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME = var11;
-    var11 = function(arg0) { // Original name: handleSetPendingThemeColors, environment: var3
+    var11 = function arg0() {
         var0 = arg0;
         var1 = var0.themeColors;
         _closure1_slot17 = var1;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES = var9;
     var1.GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING = var8;
     var1.GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS = var8;
-    var3 = function() { // Original name: handleClearErrors, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot22 = var0;
         var0 = undefined;

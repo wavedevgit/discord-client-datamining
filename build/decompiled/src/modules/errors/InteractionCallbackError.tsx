@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION = var8;
     var1 = 'ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION';
     var5[var8] = var1;
-    var1 = function(arg0) { // Original name: InteractionCallbackError, environment: var7
+    var1 = function arg0() {
         var2 = this;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;

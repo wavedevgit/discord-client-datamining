@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3[var8] = var7;
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: PremiumPaymentGuildAnimation, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.nextScene;
         var8 = var0.onSceneComplete;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SubscribeModalSuccessAlert, environment: var1
+    var1 = function arg0() {
         _fun78313: for (var _fun78313_ip = 0;;) switch (_fun78313_ip) {
             case 0:
                 var0 = arg0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.YKxJCI;
                 var4 = var9.bind(var11)(var4);
                 var0.confirmText = var4;
-                var4 = function() { // Original name: onConfirm, environment: var6
+                var4 = function() {
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 13;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var4.nextScene = var10;
                 var4.loop = var7;
-                var6 = function(arg0) { // Original name: onSceneComplete, environment: var6
+                var6 = function arg0() {
                     _fun78317: for (var _fun78317_ip = 0;;) switch (_fun78317_ip) {
                         case 0:
                             var2 = arg0;

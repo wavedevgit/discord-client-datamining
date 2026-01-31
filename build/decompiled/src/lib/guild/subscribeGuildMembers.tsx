@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun61794: for (var _fun61794_ip = 0;;) switch (_fun61794_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'lib/guild/subscribeGuildMembers.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: subscribeGuildMembers, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure1_slot10;
                     var7 = var5.Component;
                     var6 = function(arg0) { // Environment: var0
-                        var3 = function(arg0) { // Original name: WrappedComponent, environment: var5
+                        var3 = function arg0() {
                             _fun61800: for (var _fun61800_ip = 0;;) switch (_fun61800_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = {};
                         var0 = 'componentDidUpdate';
                         var4.key = var0;
-                        var0 = function(arg0) { // Original name: value, environment: var5
+                        var0 = function arg0() {
                             _fun61802: for (var _fun61802_ip = 0;;) switch (_fun61802_ip) {
                                 case 0:
                                     var2 = this;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = {};
                         var6 = 'componentWillUnmount';
                         var4.key = var6;
-                        var6 = function() { // Original name: value, environment: var5
+                        var6 = function() {
                             _fun61805: for (var _fun61805_ip = 0;;) switch (_fun61805_ip) {
                                 case 0:
                                     var0 = this;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = {};
                         var6 = 'render';
                         var4.key = var6;
-                        var5 = function() { // Original name: value, environment: var5
+                        var5 = function() {
                             var0 = this;
                             var4 = var0.props;
                             var5 = var4.forwardedRef;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: useSubscribeGuildMembers, environment: var1
+    var1 = function arg0, arg1() {
         var5 = arg0;
         var4 = arg1;
         var _closure2_slot0 = var5;

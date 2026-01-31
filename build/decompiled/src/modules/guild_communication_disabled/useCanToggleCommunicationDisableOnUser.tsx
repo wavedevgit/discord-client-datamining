@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1) { // Original name: canToggleCommunicationDisableOnUser, environment: var3
+    var1 = function arg0, arg1() {
         _fun61718: for (var _fun61718_ip = 0;;) switch (_fun61718_ip) {
             case 0:
                 var1 = arguments[2];
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_communication_disabled/useCanToggleCommunicationDisableOnUser.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useCanToggleCommunicationDisableOnUser, environment: var3
+    var3 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;

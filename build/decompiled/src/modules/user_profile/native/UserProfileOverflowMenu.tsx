@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileOverflowMenu.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileOverflowMenu, environment: var1
+    var1 = function arg0() {
         _fun92020: for (var _fun92020_ip = 0;;) switch (_fun92020_ip) {
             case 0:
                 var0 = arg0;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.GISTta;
                 var27 = var28.bind(var29)(var27);
                 var22.label = var27;
-                var27 = function() { // Original name: action, environment: var7
+                var27 = function() {
                     var3 = _closure2_slot7;
                     var2 = {};
                     var0 = 'PRESS_VIEW_MAIN_PROFILE';
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25.DisZzB;
                 var25 = var26.bind(var27)(var25);
                 var22.label = var25;
-                var25 = function() { // Original name: action, environment: var7
+                var25 = function() {
                     var3 = _closure2_slot7;
                     var2 = {};
                     var0 = 'PRESS_VIEW_SERVER_PROFILE';
@@ -662,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.label = var22;
                 var22 = 'destructive';
                 var18.variant = var22;
-                var22 = function() { // Original name: action, environment: var7
+                var22 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 25;
@@ -717,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var22.bind(var23)(var21);
             case 1524:
                 var18.label = var20;
-                var20 = function() { // Original name: action, environment: var7
+                var20 = function() {
                     var2 = _closure2_slot7;
                     var1 = {};
                     var0 = 'PRESS_SET_FRIEND_NICKNAME';
@@ -781,7 +781,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19["8wXU9B"];
                 var19 = var20.bind(var21)(var19);
                 var14.label = var19;
-                var19 = function() { // Original name: action, environment: var7
+                var19 = function() {
                     _fun92029: for (var _fun92029_ip = 0;;) switch (_fun92029_ip) {
                         case 0:
                             var3 = _closure2_slot7;
@@ -843,7 +843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var19.ytCpKs;
                 var19 = var20.bind(var21)(var19);
                 var14.label = var19;
-                var19 = function() { // Original name: action, environment: var7
+                var19 = function() {
                     _fun92030: for (var _fun92030_ip = 0;;) switch (_fun92030_ip) {
                         case 0:
                             var2 = _closure2_slot7;
@@ -929,7 +929,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.label = var18;
                 var18 = 'destructive';
                 var17.variant = var18;
-                var19 = function() { // Original name: action, environment: var7
+                var19 = function() {
                     _fun92032: for (var _fun92032_ip = 0;;) switch (_fun92032_ip) {
                         case 0:
                             var4 = _closure1_slot1;
@@ -964,7 +964,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var8.id;
                         case 106:
                             var2.channelId = var7;
-                            var7 = function() { // Original name: onSuccess, environment: var7
+                            var7 = function() {
                                 _fun92033: for (var _fun92033_ip = 0;;) switch (_fun92033_ip) {
                                     case 0:
                                         var2 = _closure1_slot1;
@@ -1043,7 +1043,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var22)(var19);
                 var15.label = var19;
                 var15.variant = var18;
-                var19 = function() { // Original name: action, environment: var7
+                var19 = function() {
                     var2 = _closure2_slot7;
                     var1 = {};
                     var0 = 'REPORT';
@@ -1092,7 +1092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var22)(var19);
                 var15.label = var19;
                 var15.variant = var18;
-                var18 = function() { // Original name: action, environment: var7
+                var18 = function() {
                     _fun92034: for (var _fun92034_ip = 0;;) switch (_fun92034_ip) {
                         case 0:
                             var3 = _closure2_slot7;
@@ -1160,7 +1160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.Sd8Ixw;
                 var17 = var18.bind(var19)(var17);
                 var12.label = var17;
-                var17 = function() { // Original name: action, environment: var7
+                var17 = function() {
                     var3 = _closure2_slot7;
                     var2 = {};
                     var0 = 'PRESS_INVITE_TO_SERVER';
@@ -1199,7 +1199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.XyHpKH;
                 var15 = var17.bind(var18)(var15);
                 var12.label = var15;
-                var15 = function() { // Original name: action, environment: var7
+                var15 = function() {
                     _fun92031: for (var _fun92031_ip = 0;;) switch (_fun92031_ip) {
                         case 0:
                             var2 = _closure2_slot7;
@@ -1278,7 +1278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var15.bind(var17)(var14);
             case 2273:
                 var11.label = var13;
-                var13 = function() { // Original name: action, environment: var7
+                var13 = function() {
                     _fun92037: for (var _fun92037_ip = 0;;) switch (_fun92037_ip) {
                         case 0:
                             var3 = _closure2_slot7;
@@ -1398,7 +1398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.y5MwJy;
                 var14 = var15.bind(var17)(var14);
                 var12.label = var14;
-                var14 = function() { // Original name: action, environment: var7
+                var14 = function() {
                     var3 = _closure2_slot7;
                     var2 = {};
                     var0 = 'COPY_USERNAME';
@@ -1462,7 +1462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var13["/AXYnE"];
                 var16 = var14.bind(var15)(var16);
                 var11.label = var16;
-                var16 = function() { // Original name: action, environment: var7
+                var16 = function() {
                     var3 = _closure2_slot7;
                     var2 = {};
                     var0 = 'COPY_USER_ID';
@@ -1496,7 +1496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.QvQeLv;
                 var13 = var14.bind(var15)(var13);
                 var11.label = var13;
-                var13 = function() { // Original name: action, environment: var7
+                var13 = function() {
                     _fun92039: for (var _fun92039_ip = 0;;) switch (_fun92039_ip) {
                         case 0:
                             var4 = new Array(0);
@@ -1516,7 +1516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7.y5MwJy;
                             var7 = var8.bind(var11)(var7);
                             var2.label = var7;
-                            var7 = function() { // Original name: onPress, environment: var5
+                            var7 = function() {
                                 var3 = _closure2_slot7;
                                 var2 = {};
                                 var0 = 'COPY_USERNAME';
@@ -1566,7 +1566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var6["/AXYnE"];
                             var6 = var7.bind(var8)(var6);
                             var2.label = var6;
-                            var6 = function() { // Original name: onPress, environment: var5
+                            var6 = function() {
                                 var3 = _closure2_slot7;
                                 var2 = {};
                                 var0 = 'COPY_USER_ID';
@@ -1616,7 +1616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var8.gERDvM;
                             var8 = var10.bind(var11)(var8);
                             var6.label = var8;
-                            var8 = function() { // Original name: onPress, environment: var5
+                            var8 = function() {
                                 _fun92042: for (var _fun92042_ip = 0;;) switch (_fun92042_ip) {
                                     case 0:
                                         var3 = _closure2_slot7;
@@ -1698,7 +1698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var6.hsNv0R;
                             var6 = var7.bind(var8)(var6);
                             var2.label = var6;
-                            var5 = function() { // Original name: onPress, environment: var5
+                            var5 = function() {
                                 var3 = _closure2_slot7;
                                 var2 = {};
                                 var0 = 'COPY_BANNER_IMAGE_LINK';
@@ -1786,7 +1786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.PHjkRE;
                 var11 = var12.bind(var13)(var11);
                 var3.label = var11;
-                var11 = function() { // Original name: action, environment: var7
+                var11 = function() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 46;
@@ -1838,7 +1838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[0] = var10;
                 var8[1] = var9;
                 var5.items = var8;
-                var7 = function(arg0) { // Original name: children, environment: var7
+                var7 = function arg0() {
                     var2 = arg0;
                     var7 = var2.ref;
                     var0 = null;

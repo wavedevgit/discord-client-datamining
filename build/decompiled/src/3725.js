@@ -11,12 +11,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot0 = var3;
-    var3 = function(arg0) { // Original name: controlEdgeToEdgeValues, environment: var1
+    var3 = function arg0() {
         var0 = undefined;
         return var0;
     };
     var2.controlEdgeToEdgeValues = var3;
-    var1 = function() { // Original name: isEdgeToEdge, environment: var1
+    var1 = function() {
         var0 = _closure1_slot0;
         var2 = var0.TurboModuleRegistry;
         var1 = var2.get;

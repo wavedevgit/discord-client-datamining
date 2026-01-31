@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var9;
             var _closure1_slot2 = var6;
-            var3 = function() { // Original name: getDevice, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.device;
                 return var0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.fileFinishedImporting;
             var4 = 'utils/native/DeviceUtils.tsx';
             var4 = var5.bind(var6)(var4);
-            var4 = function() { // Original name: isIpadOS, environment: var1
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var1 = var0.deviceModel;
                 var0 = 'iPad';
@@ -80,20 +80,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.isIpadOS = var4;
-            var4 = function() { // Original name: isGestureNavigationEnabled, environment: var1
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.isGestureNavigationEnabled;
                 return var0;
             };
             var2.isGestureNavigationEnabled = var4;
-            var4 = function() { // Original name: getSystemVersion, environment: var1
+            var4 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.systemVersion;
                 return var0;
             };
             var2.getSystemVersion = var4;
             var2.getDevice = var3;
-            var3 = function() { // Original name: getDeviceInfo, environment: var1
+            var3 = function() {
                 _fun14205: for (var _fun14205_ip = 0;;) switch (_fun14205_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getDeviceInfo = var3;
-            var3 = function() { // Original name: getDeviceMediaPerformanceClass, environment: var1
+            var3 = function() {
                 _fun14206: for (var _fun14206_ip = 0;;) switch (_fun14206_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -193,43 +193,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getDeviceMediaPerformanceClass = var3;
-            var3 = function() { // Original name: getDeviceModel, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.deviceModel;
                 return var0;
             };
             var2.getDeviceModel = var3;
-            var3 = function() { // Original name: getDeviceBrand, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.deviceBrand;
                 return var0;
             };
             var2.getDeviceBrand = var3;
-            var3 = function() { // Original name: getDeviceProduct, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.deviceProduct;
                 return var0;
             };
             var2.getDeviceProduct = var3;
-            var3 = function() { // Original name: getDeviceManufacturer, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.deviceManufacturer;
                 return var0;
             };
             var2.getDeviceManufacturer = var3;
-            var3 = function() { // Original name: getSmallestScreenWidth, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.smallestScreenWidth;
                 return var0;
             };
             var2.getSmallestScreenWidth = var3;
-            var3 = function() { // Original name: getSocName, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.socName;
                 return var0;
             };
             var2.getSocName = var3;
-            var3 = function() { // Original name: getRamSize, environment: var1
+            var3 = function() {
                 _fun14213: for (var _fun14213_ip = 0;;) switch (_fun14213_ip) {
                     case 0:
                         var0 = _closure1_slot3;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getRamSize = var3;
-            var3 = function() { // Original name: getMaxCpuFreq, environment: var1
+            var3 = function() {
                 _fun14214: for (var _fun14214_ip = 0;;) switch (_fun14214_ip) {
                     case 0:
                         var0 = _closure1_slot3;
@@ -271,13 +271,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getMaxCpuFreq = var3;
-            var3 = function() { // Original name: getTimeZone, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.timeZone;
                 return var0;
             };
             var2.getTimeZone = var3;
-            var1 = function() { // Original name: getIsRunningOnSimulator, environment: var1
+            var1 = function() {
                 var0 = _closure1_slot3;
                 var0 = var0.isRunningOnSimulator;
                 return var0;

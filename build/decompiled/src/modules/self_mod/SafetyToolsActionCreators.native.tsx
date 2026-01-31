@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/SafetyToolsActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: openSafetyToolsActionSheet, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var7 = arg0;
         var1 = _closure1_slot3;
         var0 = undefined;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.warningType = var7;
         var7 = arg1;
         var1.recipientId = var7;
-        var6 = function() { // Original name: onClose, environment: var6
+        var6 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 1;

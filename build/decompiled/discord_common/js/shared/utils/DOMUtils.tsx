@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/shared/utils/DOMUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: isElement, environment: var1
+    var3 = function arg0, arg1() {
         _fun17849: for (var _fun17849_ip = 0;;) switch (_fun17849_ip) {
             case 0:
                 var2 = arg0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isElement = var3;
-    var3 = function(arg0) { // Original name: cssValueToNumber, environment: var1
+    var3 = function arg0() {
         _fun17850: for (var _fun17850_ip = 0;;) switch (_fun17850_ip) {
             case 0:
                 var0 = global;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.cssValueToNumber = var3;
-    var3 = function(arg0) { // Original name: isInputLikeElement, environment: var1
+    var3 = function arg0() {
         _fun17851: for (var _fun17851_ip = 0;;) switch (_fun17851_ip) {
             case 0:
                 var4 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isInputLikeElement = var3;
-    var3 = function(arg0) { // Original name: removeNode, environment: var1
+    var3 = function arg0() {
         _fun17852: for (var _fun17852_ip = 0;;) switch (_fun17852_ip) {
             case 0:
                 var2 = arg0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removeNode = var3;
-    var3 = function(arg0) { // Original name: eventOwnerDocument, environment: var1
+    var3 = function arg0() {
         _fun17853: for (var _fun17853_ip = 0;;) switch (_fun17853_ip) {
             case 0:
                 var0 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.eventOwnerDocument = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: clickedOnVisibleImage, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun17854: for (var _fun17854_ip = 0;;) switch (_fun17854_ip) {
             case 0:
                 var2 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.clickedOnVisibleImage = var3;
-    var3 = function(arg0, arg1) { // Original name: getParentElementByClassName, environment: var1
+    var3 = function arg0, arg1() {
         _fun17855: for (var _fun17855_ip = 0;;) switch (_fun17855_ip) {
             case 0:
                 var3 = arg1;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getParentElementByClassName = var3;
-    var1 = function(arg0, arg1) { // Original name: getParentElementByAttribute, environment: var1
+    var1 = function arg0, arg1() {
         _fun17856: for (var _fun17856_ip = 0;;) switch (_fun17856_ip) {
             case 0:
                 var3 = arg1;

@@ -33,11 +33,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/CountrySelectModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: CountrySelectModal, environment: var1
+    var1 = function() {
         var5 = _closure1_slot3;
         var4 = var5.useMemo;
         var3 = function() { // Environment: var1
-            var1 = function() { // Original name: getScreens, environment: var0
+            var1 = function() {
                 var0 = {};
                 var1 = {};
                 var4 = _closure1_slot0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.pop;
                 var2 = var3.bind(var4)(var2);
                 var1.headerLeft = var2;
-                var2 = function() { // Original name: render, environment: var2
+                var2 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = var1.bind(var2)(var0);
                     var0 = {};
-                    var5 = function() { // Original name: onClose, environment: var4
+                    var5 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 4;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.onClose = var5;
-                    var4 = function(arg0) { // Original name: onCountrySelected, environment: var4
+                    var4 = function arg0() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 6;

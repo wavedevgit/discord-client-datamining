@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var2;
     var2 = {};
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1) { // Original name: addHandler, environment: var0
+    var2 = function arg0, arg1() {
         _fun58596: for (var _fun58596_ip = 0;;) switch (_fun58596_ip) {
             case 0:
                 var1 = arg0;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addHandler = var2;
-    var2 = function(arg0, arg1) { // Original name: maybeInstrument, environment: var0
+    var2 = function arg0, arg1() {
         _fun58597: for (var _fun58597_ip = 0;;) switch (_fun58597_ip) {
             case 0:
                 var2 = arg0;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.maybeInstrument = var2;
-    var2 = function() { // Original name: resetInstrumentationHandlers, environment: var0
+    var2 = function() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.keys;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.resetInstrumentationHandlers = var2;
-    var0 = function(arg0, arg1) { // Original name: triggerHandlers, environment: var0
+    var0 = function arg0, arg1() {
         _fun58600: for (var _fun58600_ip = 0;;) switch (_fun58600_ip) {
             case 0:
                 var1 = arg0;

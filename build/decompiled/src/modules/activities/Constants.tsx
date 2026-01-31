@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_EMBEDDED_ACTIVITY_CONFIG = var5;
     var2.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES = var4;
     var2.SUPPORTED_ACTIVITIES_CHANNEL_TYPES = var3;
-    var3 = function(arg0) { // Original name: getAppIntentScheme, environment: var3
+    var3 = function arg0() {
         _fun29516: for (var _fun29516_ip = 0;;) switch (_fun29516_ip) {
             case 0:
                 var1 = arg0;

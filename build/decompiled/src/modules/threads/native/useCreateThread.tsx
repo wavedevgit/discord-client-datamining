@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/native/useCreateThread.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useCreateThread, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.parentChannel;
         var9 = var0.parentMessageId;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.location = var6;
         var0.onThreadCreated = var5;
         var0.useDefaultThreadName = var4;
-        var3 = function(arg0, arg1, arg2) { // Original name: uploadHandler, environment: var3
+        var3 = function arg0, arg1, arg2() {
             var10 = arg0;
             var7 = arg1;
             var _closure3_slot0 = var10;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var8.THREAD_CREATION;
             var1.location = var8;
             var1.attachmentsToUpload = var7;
-            var6 = function(arg0, arg1, arg2) { // Original name: onAttachmentUploadError, environment: var6
+            var6 = function arg0, arg1, arg2() {
                 _fun73710: for (var _fun73710_ip = 0;;) switch (_fun73710_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useCreateForumPost, environment: var1
+    var1 = function arg0() {
         _fun73711: for (var _fun73711_ip = 0;;) switch (_fun73711_ip) {
             case 0:
                 var0 = arg0;

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportAll;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: accumulateDifferences, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun1601: for (var _fun1601_ip = 0;;) switch (_fun1601_ip) {
             case 0:
                 var17 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0) { // Original name: ifObject, environment: var1
+    var0 = function arg0() {
         _fun1602: for (var _fun1602_ip = 0;;) switch (_fun1602_ip) {
             case 0:
                 var1 = arg0;
@@ -163,7 +163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: validate, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun1603: for (var _fun1603_ip = 0;;) switch (_fun1603_ip) {
             case 0:
                 var2 = arg1;
@@ -217,7 +217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.validate = var3;
-    var1 = function(arg0, arg1) { // Original name: stringifyValidationResult, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg1;
         var5 = var0.differences;
         var0 = global;

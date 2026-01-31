@@ -11,42 +11,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
     var1 = {};
-    var3 = function() { // Original name: hasSearch, environment: var0
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var1.hasSearch = var3;
-    var3 = function() { // Original name: hasUserActivity, environment: var0
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var1.hasUserActivity = var3;
-    var3 = function() { // Original name: clearSearchIndex, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.clearSearchIndex = var3;
-    var3 = function() { // Original name: deleteSearchDomains, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.deleteSearchDomains = var3;
-    var3 = function() { // Original name: deleteSearchItems, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.deleteSearchItems = var3;
-    var3 = function() { // Original name: indexDomains, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.indexDomains = var3;
-    var3 = function() { // Original name: resignActivity, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.resignActivity = var3;
-    var0 = function() { // Original name: setActivity, environment: var0
+    var0 = function() {
         var0 = undefined;
         return var0;
     };

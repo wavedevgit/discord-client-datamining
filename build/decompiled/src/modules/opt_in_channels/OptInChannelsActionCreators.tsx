@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: _persistOptInChannelUpdates2, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var4 = function(arg0, arg1, arg2) { // Original name: bulkOptOutChannels, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun43317: for (var _fun43317_ip = 0;;) switch (_fun43317_ip) {
             case 0:
                 var4 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var4;
-    var3 = function(arg0) { // Original name: dismissGuildNotice, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 15;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var7.bind(var0)(var5);
     var9 = var10.debounce;
     var6 = function(arg0, arg1) { // Environment: var1
-        var3 = function() { // Original name: _persistOptInChannelUpdates, environment: var0
+        var3 = function() {
             var0 = undefined;
             var3 = _closure1_slot10;
             var2 = var3.apply;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/opt_in_channels/OptInChannelsActionCreators.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: setOptInChannel, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun43323: for (var _fun43323_ip = 0;;) switch (_fun43323_ip) {
             case 0:
                 var4 = arg0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setOptInChannel = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: updateOptInChannelsImmediate, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun43324: for (var _fun43324_ip = 0;;) switch (_fun43324_ip) {
             case 0:
                 var3 = arg0;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateOptInChannelsImmediate = var6;
     var2.updateOptInChannelsBatched = var5;
-    var5 = function(arg0, arg1) { // Original name: bulkOptInChannels, environment: var1
+    var5 = function arg0, arg1() {
         _fun43325: for (var _fun43325_ip = 0;;) switch (_fun43325_ip) {
             case 0:
                 var4 = arg0;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.bulkOptInChannels = var5;
     var2.bulkOptOutChannels = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: setGuildOptIn, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun43327: for (var _fun43327_ip = 0;;) switch (_fun43327_ip) {
             case 0:
                 var3 = arg0;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setGuildOptIn = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: setIsFavorite, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         _fun43328: for (var _fun43328_ip = 0;;) switch (_fun43328_ip) {
             case 0:
                 var7 = arg0;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setIsFavorite = var4;
-    var4 = function(arg0, arg1) { // Original name: setMessagesFavorite, environment: var1
+    var4 = function arg0, arg1() {
         var6 = arg0;
         var8 = arg1;
         var2 = _closure1_slot6;
@@ -1160,7 +1160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setMessagesFavorite = var4;
-    var4 = function(arg0, arg1) { // Original name: setAddToMessages, environment: var1
+    var4 = function arg0, arg1() {
         var6 = arg0;
         var8 = arg1;
         var2 = _closure1_slot6;
@@ -1198,7 +1198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setAddToMessages = var4;
-    var4 = function(arg0) { // Original name: enableGuildNotice, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var1 = 15;
@@ -1257,7 +1257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.enableGuildNotice = var4;
     var2.dismissGuildNotice = var3;
-    var3 = function(arg0) { // Original name: clearGuildNotice, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var3 = _closure1_slot11;
         var2 = _closure1_slot6;
@@ -1314,7 +1314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearGuildNotice = var3;
-    var3 = function(arg0, arg1) { // Original name: dimissFavoriteSuggestion, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 10;
@@ -1333,7 +1333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.dimissFavoriteSuggestion = var3;
-    var1 = function(arg0, arg1) { // Original name: setRecentlyActiveCollapsed, environment: var1
+    var1 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 10;

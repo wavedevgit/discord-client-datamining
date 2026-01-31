@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new Array(1);
     var2[0] = var3;
     var _closure1_slot3 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: simpleSubset, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun94164: for (var _fun94164_ip = 0;;) switch (_fun94164_ip) {
             case 0:
                 var15 = arg0;
@@ -956,7 +956,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: higherGT, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun94165: for (var _fun94165_ip = 0;;) switch (_fun94165_ip) {
             case 0:
                 var5 = arg0;
@@ -1014,7 +1014,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: lowerLT, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun94166: for (var _fun94166_ip = 0;;) switch (_fun94166_ip) {
             case 0:
                 var5 = arg0;
@@ -1072,7 +1072,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var2;
-    var2 = function(arg0, arg1) { // Original name: subset, environment: var1
+    var2 = function arg0, arg1() {
         _fun94167: for (var _fun94167_ip = 0;;) switch (_fun94167_ip) {
             case 0:
                 var13 = arg0;

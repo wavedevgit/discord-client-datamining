@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Original name: hue2rgb, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun61681: for (var _fun61681_ip = 0;;) switch (_fun61681_ip) {
             case 0:
                 var2 = arg0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: hslToRgb, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun61682: for (var _fun61682_ip = 0;;) switch (_fun61682_ip) {
             case 0:
                 var7 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var1;
-    var1 = function() { // Original name: call, environment: var0
+    var1 = function() {
         _fun61683: for (var _fun61683_ip = 0;;) switch (_fun61683_ip) {
             case 0:
                 var3 = undefined;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var1;
-    var1 = function() { // Original name: callWithSlashSeparator, environment: var0
+    var1 = function() {
         _fun61684: for (var _fun61684_ip = 0;;) switch (_fun61684_ip) {
             case 0:
                 var3 = undefined;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var1 = function() { // Original name: commaSeparatedCall, environment: var0
+    var1 = function() {
         _fun61685: for (var _fun61685_ip = 0;;) switch (_fun61685_ip) {
             case 0:
                 var3 = undefined;
@@ -267,7 +267,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var1;
-    var1 = function(arg0) { // Original name: parse255, environment: var0
+    var1 = function arg0() {
         _fun61686: for (var _fun61686_ip = 0;;) switch (_fun61686_ip) {
             case 0:
                 var0 = global;
@@ -298,7 +298,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var1;
-    var1 = function(arg0) { // Original name: parse360, environment: var0
+    var1 = function arg0() {
         var0 = global;
         var2 = var0.parseFloat;
         var1 = undefined;
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var1;
-    var1 = function(arg0) { // Original name: parse1, environment: var0
+    var1 = function arg0() {
         _fun61688: for (var _fun61688_ip = 0;;) switch (_fun61688_ip) {
             case 0:
                 var3 = global;
@@ -347,7 +347,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var1;
-    var1 = function(arg0) { // Original name: parsePercentage, environment: var0
+    var1 = function arg0() {
         _fun61689: for (var _fun61689_ip = 0;;) switch (_fun61689_ip) {
             case 0:
                 var0 = global;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var1;
-    var1 = function(arg0) { // Original name: normalizeColor, environment: var0
+    var1 = function arg0() {
         _fun61690: for (var _fun61690_ip = 0;;) switch (_fun61690_ip) {
             case 0:
                 var1 = arg0;

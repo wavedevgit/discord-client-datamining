@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/shared/timeRequire.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: timeRequire, environment: var1
+    var1 = function arg0, arg1() {
         _fun40264: for (var _fun40264_ip = 0;;) switch (_fun40264_ip) {
             case 0:
                 var9 = arg0;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/native/useCreateThreadViewProps.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useCreateThreadViewProps, environment: var1
+    var1 = function arg0() {
         _fun89006: for (var _fun89006_ip = 0;;) switch (_fun89006_ip) {
             case 0:
                 var3 = _closure1_slot1;

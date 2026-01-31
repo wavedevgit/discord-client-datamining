@@ -6,21 +6,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var6 = function(arg0) { // Original name: useIsRavenOnboardingGuild, environment: var1
+    var6 = function arg0() {
         var1 = null;
         var0 = arg0;
         var0 = var1 != var0;
         return var0;
     };
     var _closure1_slot4 = var6;
-    var5 = function(arg0) { // Original name: isRavenOnboardingGuild, environment: var1
+    var5 = function arg0() {
         var1 = null;
         var0 = arg0;
         var0 = var1 != var0;
         return var0;
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0) { // Original name: useIsWhitegloveOnboardingGuild, environment: var1
+    var4 = function arg0() {
         _fun49845: for (var _fun49845_ip = 0;;) switch (_fun49845_ip) {
             case 0:
                 var1 = arg0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: isWhitegloveOnboardingGuild, environment: var1
+    var3 = function arg0() {
         _fun49846: for (var _fun49846_ip = 0;;) switch (_fun49846_ip) {
             case 0:
                 var1 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function() { // Original name: useIsUserInCreatorMonetizationEligibleCountry, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsUserInCreatorMonetizationEligibleCountry = var7;
-    var7 = function() { // Original name: isUserInCreatorMonetizationEligibleCountry, environment: var1
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isRavenOnboardingGuild = var5;
     var2.useIsWhitegloveOnboardingGuild = var4;
     var2.isWhitegloveOnboardingGuild = var3;
-    var3 = function(arg0) { // Original name: useIsExpeditedOnboardingGuild, environment: var1
+    var3 = function arg0() {
         _fun49849: for (var _fun49849_ip = 0;;) switch (_fun49849_ip) {
             case 0:
                 var3 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsExpeditedOnboardingGuild = var3;
-    var3 = function(arg0) { // Original name: isExpeditedMonetizationOnboardingGuild, environment: var1
+    var3 = function arg0() {
         _fun49850: for (var _fun49850_ip = 0;;) switch (_fun49850_ip) {
             case 0:
                 var3 = arg0;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isExpeditedMonetizationOnboardingGuild = var3;
-    var3 = function(arg0) { // Original name: useIsMonetizationWaitlistEnabledForGuild, environment: var1
+    var3 = function arg0() {
         _fun49851: for (var _fun49851_ip = 0;;) switch (_fun49851_ip) {
             case 0:
                 var0 = arg0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsMonetizationWaitlistEnabledForGuild = var3;
-    var3 = function(arg0) { // Original name: isMonetizationWaitlistEnabledForGuild, environment: var1
+    var3 = function arg0() {
         _fun49852: for (var _fun49852_ip = 0;;) switch (_fun49852_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isMonetizationWaitlistEnabledForGuild = var3;
-    var1 = function() { // Original name: isCreatorMonetizationNagActivateEnabled, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/emoji_picker/native/components/data/useEmojiPickerData.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useEmojiPickerData, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var6 = var1.emojiSections;
         var _closure2_slot0 = var6;

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/SafeAreaView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SafeAreaPaddingView, environment: var1
+    var1 = function arg0() {
         _fun43573: for (var _fun43573_ip = 0;;) switch (_fun43573_ip) {
             case 0:
                 var6 = arg0;

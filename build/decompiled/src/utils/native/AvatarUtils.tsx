@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = dependencyMap;
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var9;
-    var3 = function(arg0) { // Original name: ensureAvatarSource, environment: var1
+    var3 = function arg0() {
         _fun16641: for (var _fun16641_ip = 0;;) switch (_fun16641_ip) {
             case 0:
                 var3 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var10.bind(var0)(var7);
     var6.DEFAULT_CHANNEL_ICON = var7;
     var6.ensureAvatarSource = var3;
-    var7 = function() { // Original name: canUseWebp, environment: var1
+    var7 = function() {
         var2 = _closure1_slot3;
         var1 = var2.has;
         var0 = 'webp';
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_AVATARS = var5;
     var2.DEFAULT_PROVISIONAL_AVATARS = var4;
     var2.ensureAvatarSource = var3;
-    var1 = function() { // Original name: getAutomodAvatarURL, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 23;

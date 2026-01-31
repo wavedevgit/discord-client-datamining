@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.detached = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot4 = var3;
-    var1 = function(arg0) { // Original name: ResourceSavingScene, environment: var1
+    var1 = function arg0() {
         _fun43562: for (var _fun43562_ip = 0;;) switch (_fun43562_ip) {
             case 0:
                 var2 = arg0;

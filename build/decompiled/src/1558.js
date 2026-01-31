@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var3 = var4.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: ServerContainer, environment: var1
+    var1 = function arg0, arg1() {
         _fun17539: for (var _fun17539_ip = 0;;) switch (_fun17539_ip) {
             case 0:
                 var1 = arg0;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 54:
                 var1 = {};
-                var0 = function() { // Original name: getCurrentOptions, environment: var0
+                var0 = function() {
                     var0 = _closure2_slot0;
                     var0 = var0.options;
                     return var0;

@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun28969
             }
         case 275:
-            var4 = function(arg0, arg1) { // Original name: setDunder, environment: var5
+            var4 = function arg0, arg1() {
                 _fun28970: for (var _fun28970_ip = 0;;) switch (_fun28970_ip) {
                     case 0:
                         var1 = arg0;

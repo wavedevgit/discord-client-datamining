@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getSearchTabsKey, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.join;
         var0 = '-';
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.SearchTypes;
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: SearchTabsLayoutManager, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = this;
         var _closure2_slot0 = var2;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/components/tabs/hooks/useVisibleSearchTabs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useVisibleSearchTabs, environment: var1
+    var1 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var5 = _closure1_slot5;

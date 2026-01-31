@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: showVoiceChannelBlockedUserWarning, environment: var1
+    var1 = function arg0, arg1() {
         _fun95882: for (var _fun95882_ip = 0;;) switch (_fun95882_ip) {
             case 0:
                 var7 = arg0;

@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var4 = _closure1_slot3;
-        var3 = function() { // Original name: Alert, environment: var1
+        var3 = function() {
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'alert';
         var0.key = var2;
-        var2 = function(arg0, arg1, arg2, arg3) { // Original name: alert, environment: var1
+        var2 = function arg0, arg1, arg2, arg3() {
             _fun3225: for (var _fun3225_ip = 0;;) switch (_fun3225_ip) {
                 case 0:
                     var6 = arg0;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4.buttonPositive = var2;
                 case 270:
                     var3 = var5.showAlert;
-                    var2 = function(arg0) { // Original name: onError, environment: var1
+                    var2 = function arg0() {
                         var0 = global;
                         var2 = var0.console;
                         var1 = var2.warn;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var1.bind(var2)(var0);
                         return var0;
                     };
-                    var1 = function(arg0, arg1) { // Original name: onAction, environment: var1
+                    var1 = function arg0, arg1() {
                         _fun3227: for (var _fun3227_ip = 0;;) switch (_fun3227_ip) {
                             case 0:
                                 var3 = arg0;
@@ -292,7 +292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'prompt';
         var0.key = var5;
-        var1 = function(arg0, arg1, arg2) { // Original name: prompt, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var0 = undefined;
             return var0;
         };

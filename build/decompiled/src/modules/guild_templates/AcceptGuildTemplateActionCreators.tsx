@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot5 = var1;
     var1 = {};
-    var3 = function(arg0, arg1, arg2) { // Original name: acceptGuildTemplate, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var1 = arg1;

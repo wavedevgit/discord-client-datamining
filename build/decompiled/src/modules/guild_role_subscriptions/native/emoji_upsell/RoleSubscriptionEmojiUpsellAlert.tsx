@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/emoji_upsell/RoleSubscriptionEmojiUpsellAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RoleSubscriptionEmojiUpsellAlert, environment: var1
+    var1 = function arg0() {
         _fun73868: for (var _fun73868_ip = 0;;) switch (_fun73868_ip) {
             case 0:
                 var0 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var6 = var2.bind(var6)(var0, var1);
-                var0 = function() { // Original name: handleConfirm, environment: var4
+                var0 = function() {
                     _fun73871: for (var _fun73871_ip = 0;;) switch (_fun73871_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.bind(var12)(var10);
                 var0.cancelText = var10;
                 var0.onClose = var9;
-                var4 = function() { // Original name: renderConfirmButton, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot6;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;

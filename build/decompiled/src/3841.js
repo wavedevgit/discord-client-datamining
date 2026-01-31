@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var3.bind(var0)(var4);
     var3 = var4.runOnUIImmediately;
-    var1 = function() { // Original name: pnpm_FrameCallbackRegistryUITs1, environment: var1
+    var1 = function() {
         var1 = {};
         var2 = global;
         var3 = var2.Map;
@@ -50,14 +50,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1.previousFrameTimestamp = var2;
         var2 = 0;
         var1.nextCallId = var2;
-        var2 = function(arg0) { // Original name: runCallbacks, environment: var0
+        var2 = function arg0() {
             _fun34830: for (var _fun34830_ip = 0;;) switch (_fun34830_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = this;
                     var _closure3_slot0 = var3;
                     var _closure3_slot1 = var1;
-                    var2 = function(arg0) { // Original name: loop, environment: var0
+                    var2 = function arg0() {
                         _fun34831: for (var _fun34831_ip = 0;;) switch (_fun34831_ip) {
                             case 0:
                                 var2 = arg0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var1.runCallbacks = var2;
-        var2 = function(arg0, arg1) { // Original name: registerFrameCallback, environment: var0
+        var2 = function arg0, arg1() {
             var0 = this;
             var3 = var0.frameCallbackRegistry;
             var2 = var3.set;
@@ -198,7 +198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var1.registerFrameCallback = var2;
-        var2 = function(arg0) { // Original name: unregisterFrameCallback, environment: var0
+        var2 = function arg0() {
             var2 = arg0;
             var0 = this;
             var3 = var0.manageStateFrameCallback;
@@ -211,7 +211,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var1.unregisterFrameCallback = var2;
-        var0 = function(arg0, arg1) { // Original name: manageStateFrameCallback, environment: var0
+        var0 = function arg0, arg1() {
             _fun34835: for (var _fun34835_ip = 0;;) switch (_fun34835_ip) {
                 case 0:
                     var3 = arg0;

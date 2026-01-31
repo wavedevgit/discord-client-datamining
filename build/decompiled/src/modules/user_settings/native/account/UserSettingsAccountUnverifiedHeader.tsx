@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: handleOpenEmailVerification, environment: var3
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var1 = function(arg0) { // Original name: getBannerText, environment: var3
+    var1 = function arg0() {
         _fun60863: for (var _fun60863_ip = 0;;) switch (_fun60863_ip) {
             case 0:
                 var2 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_settings/native/account/UserSettingsAccountUnverifiedHeader.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: UserSettingsAccountUnverifiedHeader, environment: var3
+    var3 = function() {
         _fun60864: for (var _fun60864_ip = 0;;) switch (_fun60864_ip) {
             case 0:
                 var0 = _closure1_slot6;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: onMembersLoadFail, environment: var1
+    var0 = function() {
         var6 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 8;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleMembers.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleMembers, environment: var1
+    var1 = function arg0() {
         _fun116035: for (var _fun116035_ip = 0;;) switch (_fun116035_ip) {
             case 0:
                 var2 = arg0;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7.N86XcP;
                             var7 = var8.bind(var9)(var7);
                             var0.confirmText = var7;
-                            var3 = function() { // Original name: onConfirm, environment: var3
+                            var3 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 15;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var10.bind(var3)(var6);
                             var7 = var6.PressableOpacity;
                             var6 = {};
-                            var9 = function() { // Original name: onPress, environment: var9
+                            var9 = function() {
                                 var3 = _closure2_slot5;
                                 var2 = _closure3_slot0;
                                 var1 = var2.roles;

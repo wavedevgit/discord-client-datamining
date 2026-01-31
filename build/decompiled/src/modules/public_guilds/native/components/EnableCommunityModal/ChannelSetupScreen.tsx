@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/native/components/EnableCommunityModal/ChannelSetupScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ChannelSetupScreen, environment: var1
+    var1 = function() {
         _fun116312: for (var _fun116312_ip = 0;;) switch (_fun116312_ip) {
             case 0:
                 var1 = _closure1_slot16;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot3;
                             var1 = var1.bind(var0)();
                             var2.items = var1;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure1_slot1;
                                 var3 = _closure1_slot2;
                                 var0 = 19;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot3;
                             var1 = var1.bind(var0)();
                             var2.items = var1;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure1_slot1;
                                 var3 = _closure1_slot2;
                                 var0 = 19;

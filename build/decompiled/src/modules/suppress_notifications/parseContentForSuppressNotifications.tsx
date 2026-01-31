@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/suppress_notifications/parseContentForSuppressNotifications.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: parseContentForSuppressNotifications, environment: var3
+    var3 = function arg0() {
         _fun49206: for (var _fun49206_ip = 0;;) switch (_fun49206_ip) {
             case 0:
                 var2 = arg0;

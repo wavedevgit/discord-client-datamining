@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var0 = "function pnpm_colorsTs1(value){return typeof value==='object'&&value!==null&&!Array.isArray(value);}";
     var3.code = var0;
-    var0 = function(arg0) { // Original name: pnpm_colorsTs1, environment: var1
+    var0 = function arg0() {
         _fun34032: for (var _fun34032_ip = 0;;) switch (_fun34032_ip) {
             case 0:
                 var3 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.code = var3;
     var _closure1_slot3 = var0;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: PlatformColor, environment: var0
+        var0 = function() {
             _fun34034: for (var _fun34034_ip = 0;;) switch (_fun34034_ip) {
                 case 0:
                     var3 = undefined;
@@ -135,7 +135,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: isPlatformColorObject, environment: var0
+        var0 = function arg0() {
             _fun34036: for (var _fun34036_ip = 0;;) switch (_fun34036_ip) {
                 case 0:
                     var2 = arg0;
@@ -184,7 +184,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: DynamicColorIOS, environment: var0
+        var0 = function arg0() {
             var2 = arg0;
             var0 = {};
             var1 = {};
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: isDynamicColorObjectIOS, environment: var0
+        var0 = function arg0() {
             _fun34040: for (var _fun34040_ip = 0;;) switch (_fun34040_ip) {
                 case 0:
                     var1 = arg0;
@@ -272,7 +272,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = "function pnpm_colorsTs8(){return'DynamicColorIOS is not available on this platform.';}";
     var4.code = var3;
     var7 = {};
-    var3 = function(arg0) { // Original name: pnpm_colorsTs6, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var3 = var0.JSON;
         var2 = var3.stringify;
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.__workletHash = var10;
     var3.__initData = var6;
     var7.invalidColor = var3;
-    var3 = function(arg0) { // Original name: pnpm_colorsTs7, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var3 = var0.JSON;
         var2 = var3.stringify;
@@ -308,7 +308,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.__workletHash = var6;
     var3.__initData = var5;
     var7.invalidProcessedColor = var3;
-    var3 = function() { // Original name: pnpm_colorsTs8, environment: var1
+    var3 = function() {
         var0 = 'DynamicColorIOS is not available on this platform.';
         return var0;
     };
@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: processColorNumber, environment: var0
+        var0 = function arg0() {
             _fun34045: for (var _fun34045_ip = 0;;) switch (_fun34045_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -388,7 +388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: unprocessColorNumber, environment: var0
+        var0 = function arg0() {
             var1 = arg0;
             var0 = 8;
             var4 = var1 << var0;
@@ -431,7 +431,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot15 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: processDynamicColorObjectIOS, environment: var0
+        var0 = function arg0() {
             _fun34049: for (var _fun34049_ip = 0;;) switch (_fun34049_ip) {
                 case 0:
                     var6 = arg0;
@@ -512,7 +512,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot17 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: unprocessDynamicColorObjectIOS, environment: var0
+        var0 = function arg0() {
             _fun34051: for (var _fun34051_ip = 0;;) switch (_fun34051_ip) {
                 case 0:
                     var5 = arg0;
@@ -580,7 +580,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot19 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: processColor, environment: var0
+        var0 = function arg0, arg1() {
             _fun34053: for (var _fun34053_ip = 0;;) switch (_fun34053_ip) {
                 case 0:
                     var3 = arg0;
@@ -753,7 +753,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot21 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: unprocessColor, environment: var0
+        var0 = function arg0() {
             _fun34055: for (var _fun34055_ip = 0;;) switch (_fun34055_ip) {
                 case 0:
                     var2 = arg0;
@@ -873,7 +873,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var10;
     var _closure1_slot23 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: processColorsInProps, environment: var0
+        var0 = function arg0() {
             _fun34057: for (var _fun34057_ip = 0;;) switch (_fun34057_ip) {
                 case 0:
                     var10 = arg0;
@@ -950,7 +950,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10.code = var11;
     var _closure1_slot24 = var10;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: unprocessColorsInProps, environment: var0
+        var0 = function arg0() {
             _fun34060: for (var _fun34060_ip = 0;;) switch (_fun34060_ip) {
                 case 0:
                     var10 = arg0;

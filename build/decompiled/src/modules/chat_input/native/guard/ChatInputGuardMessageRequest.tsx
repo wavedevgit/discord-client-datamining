@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputGuardMessageRequest, environment: var1
+    var1 = function arg0() {
         _fun90539: for (var _fun90539_ip = 0;;) switch (_fun90539_ip) {
             case 0:
                 var1 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.useMessageRequestActions;
                 var1 = {};
                 var1.user = var5;
-                var5 = function() { // Original name: onError, environment: var0
+                var5 = function() {
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 7;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onError = var5;
-                var5 = function() { // Original name: onRejectSuccess, environment: var0
+                var5 = function() {
                     var1 = _closure2_slot1;
                     var0 = var1.pop;
                     var0 = var0.bind(var1)();

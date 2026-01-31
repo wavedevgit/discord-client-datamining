@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: getEnv, environment: var1
+    var3 = function arg0() {
         _fun18017: for (var _fun18017_ip = 0;;) switch (_fun18017_ip) {
             case 0:
                 var1 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user/UserStoreUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: validatePremiumType, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun18018: for (var _fun18018_ip = 0;;) switch (_fun18018_ip) {
             case 0:
                 var0 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validatePremiumType = var4;
     var2.getEnv = var3;
-    var3 = function(arg0) { // Original name: isStaffEnv, environment: var1
+    var3 = function arg0() {
         _fun18019: for (var _fun18019_ip = 0;;) switch (_fun18019_ip) {
             case 0:
                 var4 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStaffEnv = var3;
-    var3 = function(arg0) { // Original name: isStaffEnvRawData, environment: var1
+    var3 = function arg0() {
         _fun18020: for (var _fun18020_ip = 0;;) switch (_fun18020_ip) {
             case 0:
                 var3 = arg0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStaffEnvRawData = var3;
-    var1 = function(arg0) { // Original name: getPremiumTypeFromRawValue, environment: var1
+    var1 = function arg0() {
         _fun18021: for (var _fun18021_ip = 0;;) switch (_fun18021_ip) {
             case 0:
                 var1 = arg0;

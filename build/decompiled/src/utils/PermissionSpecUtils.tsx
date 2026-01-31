@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: getPermissionOptions, environment: var3
+    var0 = function arg0() {
         _fun109107: for (var _fun109107_ip = 0;;) switch (_fun109107_ip) {
             case 0:
                 var9 = arg0;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: conditionalPermissionSpec, environment: var3
+    var0 = function arg0, arg1() {
         _fun109108: for (var _fun109108_ip = 0;;) switch (_fun109108_ip) {
             case 0:
                 var0 = arg0;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.getChannelPermissionSpecMap;
     var _closure1_slot11 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: generateChannelPermissionSpec, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun109109: for (var _fun109109_ip = 0;;) switch (_fun109109_ip) {
             case 0:
                 var3 = arg0;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var17.intl;
                 var19 = var20.format;
                 var17 = {};
-                var22 = function() { // Original name: setUpAutomod, environment: var2
+                var22 = function() {
                     _fun109113: for (var _fun109113_ip = 0;;) switch (_fun109113_ip) {
                         case 0:
                             var0 = _closure2_slot2;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.t;
                 var18 = var17["4Z9Fbb"];
                 var17 = {};
-                var21 = function() { // Original name: setUpAutomod, environment: var2
+                var21 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot3;
                     var0 = 15;
@@ -789,7 +789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.t;
                 var14 = var13["4Z9Fbb"];
                 var13 = {};
-                var19 = function() { // Original name: setUpAutomod, environment: var2
+                var19 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot3;
                     var0 = 15;
@@ -974,7 +974,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.generateChannelPermissionSpec = var6;
-    var6 = function(arg0) { // Original name: generateGuildPermissionSpec, environment: var3
+    var6 = function arg0() {
         _fun109116: for (var _fun109116_ip = 0;;) switch (_fun109116_ip) {
             case 0:
                 var0 = arg0;
@@ -1017,7 +1017,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.id;
                 var0 = var5.bind(var2)(var0);
                 var1 = var1.bind(var4)(var0);
-                var0 = function(arg0, arg1) { // Original name: filterPermissions, environment: var0
+                var0 = function arg0, arg1() {
                     _fun109117: for (var _fun109117_ip = 0;;) switch (_fun109117_ip) {
                         case 0:
                             var3 = arg0;
@@ -1066,7 +1066,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.generateGuildPermissionSpec = var6;
-    var3 = function(arg0) { // Original name: getGuildPermissionSpecMap, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot2;
         var3 = _closure1_slot3;
         var1 = 14;

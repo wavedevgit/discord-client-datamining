@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun94597: for (var _fun94597_ip = 0;;) switch (_fun94597_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.BasicWorkScheduler;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: DispatcherWorkScheduler, environment: var5
+        var3 = function() {
             _fun94601: for (var _fun94601_ip = 0;;) switch (_fun94601_ip) {
                 case 0:
                     var5 = this;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = '_queueIdleCallback';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun94603: for (var _fun94603_ip = 0;;) switch (_fun94603_ip) {
                 case 0:
                     var1 = this;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_clearIdleCallback';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun94605: for (var _fun94605_ip = 0;;) switch (_fun94605_ip) {
                 case 0:
                     var1 = this;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gateway/DispatcherWorkScheduler.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: createDispatcherWorkScheduler, environment: var1
+    var1 = function() {
         var0 = _closure1_slot12;
         var1 = var0.prototype;
         var1 = Object.create(var1, {

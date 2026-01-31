@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24425: for (var _fun24425_ip = 0;;) switch (_fun24425_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: t, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
                 var2 = var3.defineLocale;
                 var1 = {};
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.relativeTime = var0;
                 var0 = /\d{1,2}(e|a)/;
                 var1.dayOfMonthOrdinalParse = var0;
-                var0 = function(arg0) { // Original name: ordinal, environment: var0
+                var0 = function arg0() {
                     _fun24427: for (var _fun24427_ip = 0;;) switch (_fun24427_ip) {
                         case 0:
                             var1 = arg0;

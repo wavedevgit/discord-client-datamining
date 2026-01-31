@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var1 = var1.hasOwnProperty;
     var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: forEach, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun16415: for (var _fun16415_ip = 0;;) switch (_fun16415_ip) {
             case 0:
                 var7 = arg0;

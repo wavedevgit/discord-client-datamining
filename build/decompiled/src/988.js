@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var3 = function(arg0) { // Original name: filenameIsInApp, environment: var0
+    var3 = function arg0() {
         _fun10146: for (var _fun10146_ip = 0;;) switch (_fun10146_ip) {
             case 0:
                 var3 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var2 = function(arg0) { // Original name: node, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = /^\s*[-]{4,}$/;
@@ -391,7 +391,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot3 = var2;
-    var4 = function(arg0) { // Original name: _parseIntOrUndefined, environment: var0
+    var4 = function arg0() {
         _fun10149: for (var _fun10149_ip = 0;;) switch (_fun10149_ip) {
             case 0:
                 var3 = arg0;
@@ -429,7 +429,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6.bind(var7)(var1, var5, var4);
     var1.filenameIsInApp = var3;
     var1.node = var2;
-    var0 = function(arg0) { // Original name: nodeStackLineParser, environment: var0
+    var0 = function arg0() {
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = arg0;

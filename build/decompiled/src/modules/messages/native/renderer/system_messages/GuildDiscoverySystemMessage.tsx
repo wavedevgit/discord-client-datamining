@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: createGuildDiscoveryDisqualifiedSystemMessage, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var7 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGuildDiscoveryDisqualifiedSystemMessage = var3;
-    var3 = function(arg0) { // Original name: createGuildDiscoveryRequalifiedSystemMessage, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var7 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGuildDiscoveryRequalifiedSystemMessage = var3;
-    var3 = function(arg0) { // Original name: createGuildDiscoveryGracePeriodInitialWarningSystemMessage, environment: var1
+    var3 = function arg0() {
         var0 = {};
         var7 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createGuildDiscoveryGracePeriodInitialWarningSystemMessage = var3;
-    var1 = function(arg0) { // Original name: createGuildDiscoveryGracePeriodFinalWarningSystemMessage, environment: var1
+    var1 = function arg0() {
         var0 = {};
         var7 = _closure1_slot0;
         var4 = _closure1_slot2;

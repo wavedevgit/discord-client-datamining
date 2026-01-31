@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113541: for (var _fun113541_ip = 0;;) switch (_fun113541_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: JSWatchdogManager, environment: var5
+        var3 = function arg0() {
             _fun113545: for (var _fun113545_ip = 0;;) switch (_fun113545_ip) {
                 case 0:
                     var4 = this;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0._lastSessionId = var3;
                     var0._pingCompleted = var1;
                     var1 = {};
-                    var3 = function(arg0) { // Original name: APP_STATE_UPDATE, environment: var2
+                    var3 = function arg0() {
                         _fun113546: for (var _fun113546_ip = 0;;) switch (_fun113546_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.APP_STATE_UPDATE = var3;
-                    var2 = function() { // Original name: CONNECTION_OPEN_SUPPLEMENTAL, environment: var2
+                    var2 = function() {
                         _fun113547: for (var _fun113547_ip = 0;;) switch (_fun113547_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleAppStateUpdate';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun113548: for (var _fun113548_ip = 0;;) switch (_fun113548_ip) {
                 case 0:
                     var1 = this;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleConnectionOpenSupplemental';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = global;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot2 = var6;
-        var6 = function() { // Original name: ping, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot2;
             var2 = var3.apply;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot1 = var6;
-        var6 = function() { // Original name: startWatchdog, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -664,7 +664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'stopWatchdog';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = this;
             var3 = _closure1_slot11;
             var1 = var3.info;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'reportStall';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun113559: for (var _fun113559_ip = 0;;) switch (_fun113559_ip) {
                 case 0:
                     var5 = arg0;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: getCurrentSessionId, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

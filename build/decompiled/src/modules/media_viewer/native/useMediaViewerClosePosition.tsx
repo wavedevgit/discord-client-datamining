@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: computeClosePosition, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun76416: for (var _fun76416_ip = 0;;) switch (_fun76416_ip) {
             case 0:
                 var1 = arg1;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/useMediaViewerClosePosition.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useMediaViewerClosePosition, environment: var1
+    var1 = function arg0() {
         _fun76417: for (var _fun76417_ip = 0;;) switch (_fun76417_ip) {
             case 0:
                 var0 = arg0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var14[var11];
                 var8 = var12.bind(var13)(var2);
                 var7 = var8.useAnimatedReaction;
-                var3 = function() { // Original name: h, environment: var1
+                var3 = function() {
                     var1 = _closure2_slot0;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var2;
                 var2 = _closure1_slot6;
                 var3.__initData = var2;
-                var2 = function(arg0) { // Original name: f, environment: var1
+                var2 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 5;

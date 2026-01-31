@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/request_to_stream/native/getRequestToStreamCTAAndIsDisabled.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getRequestToStreamCTAAndIsDisabled, environment: var1
+    var1 = function arg0() {
         _fun92502: for (var _fun92502_ip = 0;;) switch (_fun92502_ip) {
             case 0:
                 var1 = arg0;

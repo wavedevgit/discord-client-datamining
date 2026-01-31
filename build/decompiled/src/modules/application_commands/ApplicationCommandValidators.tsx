@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: validateNumericOptionRange, environment: var6
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun90224: for (var _fun90224_ip = 0;;) switch (_fun90224_ip) {
             case 0:
                 var3 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: localeNumberFormat, environment: var6
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.toLocaleString;
         var4 = _closure1_slot0;
@@ -1242,7 +1242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1[var7] = var3;
-    var3 = function(arg0) { // Original name: isValidRoleMention, environment: var6
+    var3 = function arg0() {
         _fun90237: for (var _fun90237_ip = 0;;) switch (_fun90237_ip) {
             case 0:
                 var2 = arg0;

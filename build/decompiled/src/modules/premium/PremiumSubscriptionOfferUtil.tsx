@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun55237: for (var _fun55237_ip = 0;;) switch (_fun55237_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun55239: for (var _fun55239_ip = 0;;) switch (_fun55239_ip) {
             case 0:
                 var3 = arg0;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var4;
     var3 = var3.PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID;
     var _closure1_slot13 = var3;
-    var3 = function() { // Original name: useHasDiscountApplied, environment: var1
+    var3 = function() {
         _fun55240: for (var _fun55240_ip = 0;;) switch (_fun55240_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/PremiumSubscriptionOfferUtil.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: useIsInPremiumOfferExperience, environment: var1
+    var4 = function() {
         _fun55242: for (var _fun55242_ip = 0;;) switch (_fun55242_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun55245
                 }
             case 117:
-                var4 = function() { // Original name: onFetchComplete, environment: var0
+                var4 = function() {
                     var3 = _closure2_slot0;
                     var0 = undefined;
                     var2 = true;

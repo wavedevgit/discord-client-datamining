@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0, arg1) { // Original name: handleCallbackErrors, environment: var0
+    var0 = function arg0, arg1() {
         _fun9133: for (var _fun9133_ip = 0;;) switch (_fun9133_ip) {
             case 0:
                 var2 = undefined;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var13 = var3;
                 var12 = var1;
                 var11 = var4;
-                var0 = function(arg0, arg1, arg2, arg3) { // Original name: maybeHandlePromiseRejection, environment: var0
+                var0 = function arg0, arg1, arg2, arg3() {
                     _fun9136: for (var _fun9136_ip = 0;;) switch (_fun9136_ip) {
                         case 0:
                             var3 = arg0;

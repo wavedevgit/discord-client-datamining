@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.value = var0;
     var0 = '__esModule';
     var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = function(arg0) { // Original name: CUSTOM_KEYBOARD_HEIGHT_GETTER, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.customKeyboardHeight;
         return var0;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/keyboard/native/useCustomKeyboardHeight.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useCustomKeyboardHeight, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 0;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: getCustomKeyboardHeight, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.MessageSendLocation;
     var _closure1_slot6 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2) { // Original name: sendForward, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.sendForward = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: sendForwards, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var4 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;

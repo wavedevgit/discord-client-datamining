@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.AppState;
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: stallTrackingIntegration, environment: var1
+    var1 = function() {
         _fun12686: for (var _fun12686_ip = 0;;) switch (_fun12686_ip) {
             case 0:
                 var3 = undefined;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'stallCount': 0
                 };
                 var5 = null;
-                var0 = function(arg0) { // Original name: backgroundEventListener, environment: var2
+                var0 = function arg0() {
                     _fun12687: for (var _fun12687_ip = 0;;) switch (_fun12687_ip) {
                         case 0:
                             var1 = 'active';
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.backgroundEventListener = var0;
-                var0 = function() { // Original name: iteration, environment: var2
+                var0 = function() {
                     _fun12688: for (var _fun12688_ip = 0;;) switch (_fun12688_ip) {
                         case 0:
                             var0 = undefined;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1.iteration = var0;
                 var _closure2_slot2 = var1;
-                var0 = function(arg0) { // Original name: _onSpanStart, environment: var2
+                var0 = function arg0() {
                     _fun12689: for (var _fun12689_ip = 0;;) switch (_fun12689_ip) {
                         case 0:
                             var6 = arg0;
@@ -332,7 +332,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot3 = var0;
-                var0 = function(arg0) { // Original name: _onSpanEnd, environment: var2
+                var0 = function arg0() {
                     _fun12690: for (var _fun12690_ip = 0;;) switch (_fun12690_ip) {
                         case 0:
                             var6 = arg0;
@@ -539,7 +539,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot4 = var0;
-                var0 = function(arg0) { // Original name: _onChildSpanEnd, environment: var2
+                var0 = function arg0() {
                     _fun12691: for (var _fun12691_ip = 0;;) switch (_fun12691_ip) {
                         case 0:
                             var4 = arg0;
@@ -568,7 +568,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot5 = var0;
-                var0 = function(arg0, arg1) { // Original name: _markSpanFinish, environment: var2
+                var0 = function arg0, arg1() {
                     _fun12692: for (var _fun12692_ip = 0;;) switch (_fun12692_ip) {
                         case 0:
                             var3 = arg0;
@@ -662,7 +662,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot6 = var0;
-                var0 = function(arg0) { // Original name: _getCurrentStats, environment: var2
+                var0 = function arg0() {
                     _fun12693: for (var _fun12693_ip = 0;;) switch (_fun12693_ip) {
                         case 0:
                             var0 = {};
@@ -722,7 +722,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot7 = var0;
-                var0 = function() { // Original name: _startTracking, environment: var2
+                var0 = function() {
                     _fun12694: for (var _fun12694_ip = 0;;) switch (_fun12694_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -760,7 +760,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot8 = var0;
-                var0 = function() { // Original name: _shouldStopTracking, environment: var2
+                var0 = function() {
                     _fun12695: for (var _fun12695_ip = 0;;) switch (_fun12695_ip) {
                         case 0:
                             var1 = _closure2_slot1;
@@ -800,7 +800,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot9 = var0;
-                var0 = function() { // Original name: _reset, environment: var2
+                var0 = function() {
                     var1 = _closure2_slot2;
                     var2 = 0;
                     var1.stallCount = var2;
@@ -815,7 +815,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot10 = var0;
-                var0 = function() { // Original name: _flushLeakedTransactions, environment: var2
+                var0 = function() {
                     _fun12697: for (var _fun12697_ip = 0;;) switch (_fun12697_ip) {
                         case 0:
                             var0 = undefined;
@@ -904,7 +904,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var3 = 'StallTracking';
                 var0.name = var3;
-                var2 = function(arg0) { // Original name: setup, environment: var2
+                var2 = function arg0() {
                     var3 = arg0;
                     var4 = var3.on;
                     var2 = _closure2_slot3;

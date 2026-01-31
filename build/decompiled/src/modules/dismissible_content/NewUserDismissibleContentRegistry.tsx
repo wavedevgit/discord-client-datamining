@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1) { // Original name: isUserAccountOldEnough, environment: var3
+    var1 = function arg0, arg1() {
         _fun27866: for (var _fun27866_ip = 0;;) switch (_fun27866_ip) {
             case 0:
                 var5 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/dismissible_content/NewUserDismissibleContentRegistry.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useNewUserDismissibleContent, environment: var3
+    var4 = function arg0() {
         _fun27867: for (var _fun27867_ip = 0;;) switch (_fun27867_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useNewUserDismissibleContent = var4;
-    var3 = function(arg0) { // Original name: disableNewUserDismissibleContent, environment: var3
+    var3 = function arg0() {
         _fun27870: for (var _fun27870_ip = 0;;) switch (_fun27870_ip) {
             case 0:
                 var0 = _closure1_slot4;

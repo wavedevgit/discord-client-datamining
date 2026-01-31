@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'function pnpm_BottomSheetRefreshControlAndroidTsx1(){const{animatedScrollableState,SCROLLABLE_STATE}=this.__closure;return{enabled:animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED};}';
     var4.code = var5;
     var _closure1_slot9 = var4;
-    var1 = function(arg0) { // Original name: BottomSheetRefreshControlComponent, environment: var1
+    var1 = function arg0() {
         _fun45419: for (var _fun45419_ip = 0;;) switch (_fun45419_ip) {
             case 0:
                 var5 = arg0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var14[var2];
                 var8 = var13.bind(var4)(var2);
                 var5 = var8.useAnimatedProps;
-                var2 = function() { // Original name: pnpm_BottomSheetRefreshControlAndroidTsx1, environment: var0
+                var2 = function() {
                     var0 = {};
                     var1 = _closure2_slot2;
                     var2 = var1.value;

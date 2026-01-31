@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4 = var6.bind(var3)(var4);
-        var4 = function() { // Original name: useFontScalingData, environment: var2
+        var4 = function() {
             var2 = _closure1_slot6;
             var0 = undefined;
             var2 = var2.bind(var0)();

@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/authorized_apps/UserSettingsAuthedApps.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: _default, environment: var1
+    var3 = function() {
         _fun82074: for (var _fun82074_ip = 0;;) switch (_fun82074_ip) {
             case 0:
                 var0 = _closure1_slot14;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(0);
                 var3 = var12.bind(var10)(var11, var3);
                 var3 = var7.bind(var8)(var3);
-                var7 = function() { // Original name: renderHeader, environment: var6
+                var7 = function() {
                     var3 = _closure1_slot12;
                     var2 = _closure1_slot13;
                     var1 = {};
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var0.application;
                     var8 = var8.name;
                     var1.label = var8;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure1_slot1;
                         var4 = _closure1_slot2;
                         var0 = 20;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.contentContainerStyle = var8;
                 var8 = var7.bind(var4)();
                 var0.ListHeaderComponent = var8;
-                var8 = function(arg0) { // Original name: renderItem, environment: var6
+                var8 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = var0.index;

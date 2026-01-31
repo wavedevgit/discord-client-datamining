@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EffectTile, environment: var1
+    var0 = function arg0() {
         _fun84860: for (var _fun84860_ip = 0;;) switch (_fun84860_ip) {
             case 0:
                 var0 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/DisplayNameStylesEffectPickerSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DisplayNameStylesEffectPickerSheet, environment: var1
+    var1 = function arg0() {
         _fun84861: for (var _fun84861_ip = 0;;) switch (_fun84861_ip) {
             case 0:
                 var0 = arg0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot2;
                     var5 = var4 === var5;
                     var1.selected = var5;
-                    var0 = function() { // Original name: onClick, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot5;
                         var1 = _closure3_slot0;
                         var0 = undefined;

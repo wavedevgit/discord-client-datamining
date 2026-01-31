@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/ParentalControlledUserSettingsDefinitions.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: defineParentalControlledSetting, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun81295: for (var _fun81295_ip = 0;;) switch (_fun81295_ip) {
             case 0:
                 var2 = arguments[4];
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun81295
                 }
             case 51:
-                var2 = function(arg0, arg1) { // Original name: a, environment: var1
+                var2 = function arg0, arg1() {
                     var1 = arg0;
                     var0 = arg1;
                     var0 = var1 === var0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot4 = var2;
                 var _closure2_slot5 = var0;
                 var _closure2_slot6 = var0;
-                var2 = function(arg0) { // Original name: getControlledSetting, environment: var1
+                var2 = function arg0() {
                     _fun81297: for (var _fun81297_ip = 0;;) switch (_fun81297_ip) {
                         case 0:
                             var2 = _closure2_slot2;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.getControlledSetting = var2;
                 _closure2_slot5 = var2;
-                var2 = function(arg0, arg1) { // Original name: S, environment: var1
+                var2 = function arg0, arg1() {
                     _fun81298: for (var _fun81298_ip = 0;;) switch (_fun81298_ip) {
                         case 0:
                             var4 = arg0;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.updateControlledSetting = var2;
-                var1 = function(arg0) { // Original name: useControlledSetting, environment: var1
+                var1 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var5 = _closure1_slot0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.defineParentalControlledSetting = var3;
-    var1 = function(arg0) { // Original name: wrapParentalControlledSettingWithExperimentDefaults, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.baseSetting;
         var _closure2_slot0 = var2;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.onUseDefault;
         var _closure2_slot5 = var0;
         var0 = {};
-        var2 = function(arg0) { // Original name: getControlledSetting, environment: var1
+        var2 = function arg0() {
             _fun81304: for (var _fun81304_ip = 0;;) switch (_fun81304_ip) {
                 case 0:
                     var3 = _closure2_slot0;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.getControlledSetting = var2;
-        var2 = function(arg0) { // Original name: useControlledSetting, environment: var1
+        var2 = function arg0() {
             _fun81305: for (var _fun81305_ip = 0;;) switch (_fun81305_ip) {
                 case 0:
                     var3 = _closure2_slot0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.useControlledSetting = var2;
-        var1 = function(arg0, arg1) { // Original name: updateControlledSetting, environment: var1
+        var1 = function arg0, arg1() {
             var3 = _closure2_slot0;
             var2 = var3.updateControlledSetting;
             var1 = arg0;

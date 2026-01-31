@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaKeyboardBottomSheetActions, environment: var1
+    var1 = function arg0() {
         _fun108474: for (var _fun108474_ip = 0;;) switch (_fun108474_ip) {
             case 0:
                 var1 = arg0;

@@ -1014,7 +1014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var42 = var28.bind(var34)(var23, var21);
                 var _closure2_slot32 = var42;
-                var21 = function(arg0) { // Original name: trackClick, environment: var26
+                var21 = function arg0() {
                     var2 = _closure2_slot6;
                     var1 = {};
                     var3 = _closure2_slot1;
@@ -1031,7 +1031,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var _closure2_slot33 = var21;
-                var21 = function() { // Original name: showQuestBottomSheet, environment: var26
+                var21 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 34;
@@ -1364,7 +1364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.JiosAn;
                             var1 = var4.bind(var5)(var1);
                             var0.text = var1;
-                            var1 = function() { // Original name: onPress, environment: var2
+                            var1 = function() {
                                 var3 = _closure2_slot5;
                                 var2 = var3.log;
                                 var0 = 'Navigating to console connection action sheet';
@@ -1624,7 +1624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.text = var4;
                             var4 = false;
                             var1.disabled = var4;
-                            var4 = function() { // Original name: onPress, environment: var2
+                            var4 = function() {
                                 _fun82816: for (var _fun82816_ip = 0;;) switch (_fun82816_ip) {
                                     case 0:
                                         var2 = _closure2_slot5;
@@ -1750,7 +1750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot23;
                         case 805:
                             var1.loading = var4;
-                            var4 = function() { // Original name: onPress, environment: var2
+                            var4 = function() {
                                 var5 = _closure2_slot33;
                                 var2 = _closure1_slot0;
                                 var3 = _closure1_slot2;
@@ -1806,7 +1806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.text = var4;
                             var3 = _closure2_slot23;
                             var1.loading = var3;
-                            var2 = function() { // Original name: onPress, environment: var2
+                            var2 = function() {
                                 var5 = _closure2_slot33;
                                 var2 = _closure1_slot0;
                                 var3 = _closure1_slot2;
@@ -1952,7 +1952,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 169:
                             var4 = var3["0IUT4Y"];
                             var0 = {};
-                            var9 = function() { // Original name: rewardWithArticleHook, environment: var5
+                            var9 = function() {
                                 var0 = _closure2_slot10;
                                 return var0;
                             };
@@ -1963,7 +1963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 201:
                             var4 = var3.ro1sze;
                             var3 = {};
-                            var9 = function() { // Original name: balanceHook, environment: var5
+                            var9 = function() {
                                 _fun82826: for (var _fun82826_ip = 0;;) switch (_fun82826_ip) {
                                     case 0:
                                         var3 = _closure1_slot15;
@@ -2032,7 +2032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.t;
                             var2 = var1["8Op4c4"];
                             var1 = {};
-                            var5 = function() { // Original name: balanceHook, environment: var5
+                            var5 = function() {
                                 _fun82825: for (var _fun82825_ip = 0;;) switch (_fun82825_ip) {
                                     case 0:
                                         var3 = _closure1_slot15;
@@ -2185,7 +2185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = var22.container;
                 var1.style = var5;
-                var5 = function(arg0) { // Original name: onLayout, environment: var26
+                var5 = function arg0() {
                     _fun82829: for (var _fun82829_ip = 0;;) switch (_fun82829_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -2589,7 +2589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var28.bind(var4)(var22);
                 var23 = var22.Button;
                 var22 = {};
-                var26 = function() { // Original name: onPress, environment: var26
+                var26 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 34;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var10 = dependencyMap;
             var _closure1_slot0 = var11;
             var _closure1_slot1 = var10;
-            var0 = function(arg0, arg1, arg2) { // Original name: clamp, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 var0 = global;
                 var3 = var0.Math;
                 var2 = var3.min;
@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var _closure1_slot5 = var0;
-            var0 = function(arg0) { // Original name: hexDouble, environment: var1
+            var0 = function arg0() {
                 _fun51306: for (var _fun51306_ip = 0;;) switch (_fun51306_ip) {
                     case 0:
                         var0 = global;

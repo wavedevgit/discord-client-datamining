@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var4[var1];
             var6 = var3.bind(var0)(var6);
             var7 = var6.URL;
-            var6 = function(arg0) { // Original name: createObjectURL, environment: var5
+            var6 = function arg0() {
                 _fun96946: for (var _fun96946_ip = 0;;) switch (_fun96946_ip) {
                     case 0:
                         var0 = arg0;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var4[var1];
             var6 = var3.bind(var0)(var6);
             var6 = var6.URL;
-            var5 = function(arg0) { // Original name: revokeObjectURL, environment: var5
+            var5 = function arg0() {
                 var0 = undefined;
                 return var0;
             };

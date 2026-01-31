@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun100864: for (var _fun100864_ip = 0;;) switch (_fun100864_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun100866: for (var _fun100866_ip = 0;;) switch (_fun100866_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: MiniGuildIcon, environment: var3
+    var0 = function arg0() {
         _fun100867: for (var _fun100867_ip = 0;;) switch (_fun100867_ip) {
             case 0:
                 var0 = arg0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: TransitionWrapper, environment: var3
+    var0 = function arg0() {
         _fun100869: for (var _fun100869_ip = 0;;) switch (_fun100869_ip) {
             case 0:
                 var0 = arg0;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5[var14];
                 var8 = var15.bind(var3)(var2);
                 var7 = var8.useAnimatedStyle;
-                var2 = function() { // Original name: o, environment: var1
+                var2 = function() {
                     _fun100870: for (var _fun100870_ip = 0;;) switch (_fun100870_ip) {
                         case 0:
                             var0 = {};
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var5.get;
                             var6 = var2.bind(var5)();
                             var16 = _closure1_slot15;
-                            var2 = function(arg0) { // Original name: e, environment: var2
+                            var2 = function arg0() {
                                 _fun100871: for (var _fun100871_ip = 0;;) switch (_fun100871_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -627,13 +627,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.type;
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderGuildFolderContent, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun100874: for (var _fun100874_ip = 0;;) switch (_fun100874_ip) {
             case 0:
                 var4 = arg0;
@@ -920,7 +920,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.code = var4;
     var _closure1_slot19 = var1;
     var4 = var7.memo;
-    var1 = function(arg0) { // Original name: FolderBGInner, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.folderId;
         var10 = var0.totalItems;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var0.bind(var3)(var1);
         var6 = _closure1_slot3;
         var2 = var6.useCallback;
-        var1 = function(arg0) { // Original name: n, environment: var0
+        var1 = function arg0() {
             var2 = arg0;
             var0 = {};
             var1 = {};
@@ -1025,7 +1025,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var8;
     var _closure1_slot23 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: GuildsBarGuildFolder, environment: var3
+    var3 = function arg0() {
         _fun100878: for (var _fun100878_ip = 0;;) switch (_fun100878_ip) {
             case 0:
                 var0 = arg0;
@@ -1467,7 +1467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15[1] = var8;
                 var8 = function() { // Environment: var2
                     var0 = {};
-                    var1 = function() { // Original name: onPress, environment: var1
+                    var1 = function() {
                         _fun100885: for (var _fun100885_ip = 0;;) switch (_fun100885_ip) {
                             case 0:
                                 var2 = _closure2_slot5;
@@ -1703,7 +1703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var2 = var3.bind(var4)(var2);
                     var0.accessibilityActions = var2;
-                    var1 = function(arg0) { // Original name: onAccessibilityAction, environment: var1
+                    var1 = function arg0() {
                         _fun100890: for (var _fun100890_ip = 0;;) switch (_fun100890_ip) {
                             case 0:
                                 var1 = arg0;
@@ -1761,7 +1761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot12 = var18;
                 var32 = _closure1_slot3;
                 var31 = var32.useCallback;
-                var4 = function(arg0) { // Original name: _, environment: var2
+                var4 = function arg0() {
                     _fun100892: for (var _fun100892_ip = 0;;) switch (_fun100892_ip) {
                         case 0:
                             var2 = arg0;

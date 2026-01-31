@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/FocusModeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useFocusModeEnabled, environment: var1
+    var3 = function() {
         _fun69631: for (var _fun69631_ip = 0;;) switch (_fun69631_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFocusModeEnabled = var3;
-    var3 = function() { // Original name: getFocusModeEnabled, environment: var1
+    var3 = function() {
         _fun69632: for (var _fun69632_ip = 0;;) switch (_fun69632_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFocusModeEnabled = var3;
-    var1 = function(arg0, arg1) { // Original name: setFocusMode, environment: var1
+    var1 = function arg0, arg1() {
         _fun69633: for (var _fun69633_ip = 0;;) switch (_fun69633_ip) {
             case 0:
                 var2 = arg0;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.BddRzS;
                 var5 = var6.bind(var7)(var5);
                 var1.confirmText = var5;
-                var4 = function() { // Original name: onConfirm, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 9;

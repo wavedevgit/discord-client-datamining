@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleTemplate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildSettingsRoleTemplate, environment: var1
+    var1 = function arg0() {
         _fun115818: for (var _fun115818_ip = 0;;) switch (_fun115818_ip) {
             case 0:
                 var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var _closure2_slot4 = var3;
                 var _closure2_slot6 = var3;
-                var22 = function(arg0) { // Original name: updateLevel, environment: var11
+                var22 = function arg0() {
                     _fun115819: for (var _fun115819_ip = 0;;) switch (_fun115819_ip) {
                         case 0:
                             var0 = global;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = var9.container;
                 var0.style = var4;
-                var4 = function(arg0) { // Original name: onLayout, environment: var11
+                var4 = function arg0() {
                     _fun115822: for (var _fun115822_ip = 0;;) switch (_fun115822_ip) {
                         case 0:
                             var0 = arg0;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = var11 === var12;
                     var10.selected = var11;
                     var5.accessibilityState = var10;
-                    var7 = function() { // Original name: onPress, environment: var7
+                    var7 = function() {
                         var2 = _closure2_slot11;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.inactiveSlideOpacity = var15;
                 var14 = var10 - var14;
                 var5.itemWidth = var14;
-                var14 = function(arg0) { // Original name: onBeforeSnapToItem, environment: var11
+                var14 = function arg0() {
                     var2 = _closure2_slot6;
                     var0 = undefined;
                     var1 = arg0;
@@ -488,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 0.9;
                 var5.decelerationRate = var13;
                 var5.ref = var12;
-                var11 = function(arg0) { // Original name: renderItem, environment: var11
+                var11 = function arg0() {
                     _fun115826: for (var _fun115826_ip = 0;;) switch (_fun115826_ip) {
                         case 0:
                             var0 = arg0;
@@ -694,7 +694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var14.mQS8Is;
                             var14 = var15.bind(var16)(var14);
                             var11.text = var14;
-                            var13 = function() { // Original name: onPress, environment: var13
+                            var13 = function() {
                                 _fun115828: for (var _fun115828_ip = 0;;) switch (_fun115828_ip) {
                                     case 0:
                                         var0 = _closure3_slot0;

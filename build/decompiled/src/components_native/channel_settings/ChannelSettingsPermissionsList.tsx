@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot16 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelSettingsPermissionsList, environment: var1
+    var1 = function arg0() {
         _fun109074: for (var _fun109074_ip = 0;;) switch (_fun109074_ip) {
             case 0:
                 var1 = arg0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.permissionOverwrites = var4;
                 var5.guildId = var19;
                 var5.searchQuery = var2;
-                var4 = function(arg0) { // Original name: useGuildMemberData, environment: var0
+                var4 = function arg0() {
                     var1 = arg0;
                     var8 = var1.enabled;
                     var _closure3_slot0 = var8;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.channel = var12;
                 var4.sortedGuildRoles = var7;
                 var4.searchQuery = var2;
-                var2 = function(arg0) { // Original name: useGuildRoleData, environment: var0
+                var2 = function arg0() {
                     var1 = arg0;
                     var7 = var1.enabled;
                     var _closure3_slot0 = var7;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = _closure2_slot4;
                             var4.guildId = var12;
                             var4.userId = var11;
-                            var11 = function() { // Original name: onPress, environment: var6
+                            var11 = function() {
                                 var3 = _closure2_slot8;
                                 var2 = _closure3_slot1;
                                 var4 = _closure1_slot0;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7.colors = var9;
                             var7 = var4.bind(var3)(var8, var7);
                             var1.label = var7;
-                            var6 = function() { // Original name: onPress, environment: var6
+                            var6 = function() {
                                 var3 = _closure2_slot8;
                                 var0 = _closure3_slot0;
                                 var2 = var0.id;

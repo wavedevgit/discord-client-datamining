@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SearchHistoryRemoveIcon, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var6 = var1.searchContext;
         var _closure2_slot0 = var6;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: SearchHistoryTextRow, environment: var1
+    var0 = function arg0() {
         _fun105414: for (var _fun105414_ip = 0;;) switch (_fun105414_ip) {
             case 0:
                 var0 = arg0;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: SearchHistoryGroupDMRow, environment: var1
+    var0 = function arg0() {
         _fun105417: for (var _fun105417_ip = 0;;) switch (_fun105417_ip) {
             case 0:
                 var1 = arg0;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: SearchHistoryDMRow, environment: var1
+    var0 = function arg0() {
         _fun105421: for (var _fun105421_ip = 0;;) switch (_fun105421_ip) {
             case 0:
                 var1 = arg0;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: SearchHistoryGuildVoiceChannelRow, environment: var1
+    var0 = function arg0() {
         _fun105428: for (var _fun105428_ip = 0;;) switch (_fun105428_ip) {
             case 0:
                 var1 = arg0;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: SearchHistoryGuildTextChannelRow, environment: var1
+    var0 = function arg0() {
         _fun105432: for (var _fun105432_ip = 0;;) switch (_fun105432_ip) {
             case 0:
                 var1 = arg0;
@@ -834,7 +834,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1) { // Original name: useClearableSearchHistoryRowProps, environment: var1
+    var0 = function arg0, arg1() {
         var5 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var5;

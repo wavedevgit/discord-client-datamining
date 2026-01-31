@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 138:
             var _closure1_slot4 = var0;
-            var0 = function(arg0, arg1) { // Original name: arrayToObject, environment: var2
+            var0 = function arg0, arg1() {
                 _fun6556: for (var _fun6556_ip = 0;;) switch (_fun6556_ip) {
                     case 0:
                         var4 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot5 = var0;
             var1 = {};
             var1.arrayToObject = var0;
-            var0 = function(arg0, arg1) { // Original name: assignSingleSource, environment: var2
+            var0 = function arg0, arg1() {
                 var3 = arg1;
                 var _closure2_slot0 = var3;
                 var1 = global;
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.assign = var0;
-            var0 = function(arg0, arg1) { // Original name: combine, environment: var2
+            var0 = function arg0, arg1() {
                 var3 = new Array(0);
                 var2 = var3.concat;
                 var1 = arg0;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.combine = var0;
-            var0 = function(arg0) { // Original name: compact, environment: var2
+            var0 = function arg0() {
                 _fun6560: for (var _fun6560_ip = 0;;) switch (_fun6560_ip) {
                     case 0:
                         var0 = arg0;
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.compact = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: decode, environment: var2
+            var0 = function arg0, arg1, arg2() {
                 _fun6561: for (var _fun6561_ip = 0;;) switch (_fun6561_ip) {
                     case 0:
                         var5 = arg0;
@@ -326,7 +326,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.decode = var0;
-            var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: encode, environment: var2
+            var0 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun6562: for (var _fun6562_ip = 0;;) switch (_fun6562_ip) {
                     case 0:
                         var0 = arg0;
@@ -659,7 +659,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.encode = var0;
-            var0 = function(arg0) { // Original name: isBuffer, environment: var2
+            var0 = function arg0() {
                 _fun6564: for (var _fun6564_ip = 0;;) switch (_fun6564_ip) {
                     case 0:
                         var4 = arg0;
@@ -704,7 +704,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.isBuffer = var0;
-            var0 = function(arg0) { // Original name: isRegExp, environment: var2
+            var0 = function arg0() {
                 var0 = global;
                 var0 = var0.Object;
                 var0 = var0.prototype;
@@ -717,7 +717,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.isRegExp = var0;
-            var0 = function(arg0, arg1) { // Original name: maybeMap, environment: var2
+            var0 = function arg0, arg1() {
                 _fun6566: for (var _fun6566_ip = 0;;) switch (_fun6566_ip) {
                     case 0:
                         var6 = arg0;
@@ -758,7 +758,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.maybeMap = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: merge, environment: var2
+            var0 = function arg0, arg1, arg2() {
                 _fun6567: for (var _fun6567_ip = 0;;) switch (_fun6567_ip) {
                     case 0:
                         var0 = arg0;

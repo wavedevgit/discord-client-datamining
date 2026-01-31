@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/PushToTalkLatchingExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getPushToTalkLatchingExperimentConfig, environment: var1
+    var3 = function arg0() {
         _fun68849: for (var _fun68849_ip = 0;;) switch (_fun68849_ip) {
             case 0:
                 var1 = arg0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPushToTalkLatchingExperimentConfig = var3;
-    var1 = function(arg0) { // Original name: usePushToTalkLatchingExperiment, environment: var1
+    var1 = function arg0() {
         _fun68850: for (var _fun68850_ip = 0;;) switch (_fun68850_ip) {
             case 0:
                 var1 = arg0;

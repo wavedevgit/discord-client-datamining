@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/threads/sanitizeThreadName.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: sanitizeThreadName, environment: var1
+    var1 = function arg0, arg1() {
         _fun61326: for (var _fun61326_ip = 0;;) switch (_fun61326_ip) {
             case 0:
                 var2 = arg0;

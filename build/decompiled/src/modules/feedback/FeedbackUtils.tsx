@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: filterOptions, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.filter;
         var1 = function(arg0) { // Environment: var0
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shuffleProblems = var3;
-    var3 = function(arg0) { // Original name: processOptOut, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.feedbackType;
         var _closure2_slot0 = var9;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.processOptOut = var3;
-    var3 = function() { // Original name: getConnectionFeedbackOptions, environment: var1
+    var3 = function() {
         var2 = _closure1_slot13;
         var3 = {};
         var9 = _closure1_slot8;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getConnectionFeedbackOptions = var3;
-    var3 = function(arg0) { // Original name: getAudioFeedbackOptions, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.isMobile;
         var2 = _closure1_slot13;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAudioFeedbackOptions = var3;
-    var3 = function() { // Original name: getVideoFeedbackOptions, environment: var1
+    var3 = function() {
         var2 = _closure1_slot13;
         var3 = {};
         var10 = _closure1_slot5;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getVideoFeedbackOptions = var3;
-    var3 = function() { // Original name: getVideoBackgroundFeedbackOptions, environment: var1
+    var3 = function() {
         var2 = _closure1_slot13;
         var3 = {};
         var10 = _closure1_slot6;
@@ -664,7 +664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getVideoBackgroundFeedbackOptions = var3;
-    var3 = function(arg0) { // Original name: getStreamFeedbackOptions, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.isStreamer;
         var2 = _closure1_slot13;
@@ -995,7 +995,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getStreamFeedbackOptions = var3;
-    var1 = function() { // Original name: getPeopleFeedbackOptions, environment: var1
+    var1 = function() {
         var2 = _closure1_slot13;
         var3 = {};
         var1 = _closure1_slot11;

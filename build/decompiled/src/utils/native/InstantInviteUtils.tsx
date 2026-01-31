@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var25 = dependencyMap;
     var _closure1_slot0 = var24;
     var _closure1_slot1 = var25;
-    var26 = function(arg0, arg1) { // Original name: makeOption, environment: var1
+    var26 = function arg0, arg1() {
         _fun67221: for (var _fun67221_ip = 0;;) switch (_fun67221_ip) {
             case 0:
                 var2 = arg1;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var2 = arg0;
                 var0.value = var2;
-                var4 = function() { // Original name: get label, environment: var1
+                var4 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     set: var3,
                     enumerable: true
                 });
-                var2 = function() { // Original name: get descriptiveLabel, environment: var1
+                var2 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var0 = var1.bind(var0)();

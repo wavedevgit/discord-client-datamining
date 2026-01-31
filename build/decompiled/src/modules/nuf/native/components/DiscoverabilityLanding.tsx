@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf/native/components/DiscoverabilityLanding.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DiscoverabilityLanding, environment: var1
+    var1 = function arg0() {
         _fun80654: for (var _fun80654_ip = 0;;) switch (_fun80654_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -370,7 +370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.t;
                 var19 = var18.QmF5z4;
                 var18 = {};
-                var22 = function(arg0, arg1) { // Original name: learnMoreHook, environment: var11
+                var22 = function arg0, arg1() {
                     var4 = _closure1_slot7;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.PDTjLN;
                 var12 = var13.bind(var14)(var12);
                 var8.text = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var0 = var1.bind(var0)();

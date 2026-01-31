@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var3 = var3.PREMIUM_TIER_2_PLANS;
     var _closure1_slot5 = var3;
-    var5 = function(arg0) { // Original name: getApplePaymentLinkExperimentConfig, environment: var1
+    var5 = function arg0() {
         _fun29750: for (var _fun29750_ip = 0;;) switch (_fun29750_ip) {
             case 0:
                 var0 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var5;
-    var4 = function(arg0) { // Original name: useApplePaymentLinkExperimentConfig, environment: var1
+    var4 = function arg0() {
         _fun29751: for (var _fun29751_ip = 0;;) switch (_fun29751_ip) {
             case 0:
                 var0 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: checkForAPLCustomCheckoutFlow, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun29752: for (var _fun29752_ip = 0;;) switch (_fun29752_ip) {
             case 0:
                 var2 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: getIsInApplePaymentLinkCustomCheckoutFlow, environment: var1
+    var3 = function arg0() {
         _fun29753: for (var _fun29753_ip = 0;;) switch (_fun29753_ip) {
             case 0:
                 var4 = arguments[1];

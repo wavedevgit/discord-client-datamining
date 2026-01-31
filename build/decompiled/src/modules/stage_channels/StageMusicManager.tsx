@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun67621: for (var _fun67621_ip = 0;;) switch (_fun67621_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: checkVoiceStates, environment: var1
+    var0 = function() {
         _fun67624: for (var _fun67624_ip = 0;;) switch (_fun67624_ip) {
             case 0:
                 var2 = _closure1_slot9;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot13 = var3;
-    var7 = function(arg0) { // Original name: convertVolume, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var0 = 400;
         var0 = var1 / var0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var4 = var4.bind(var0)(var3);
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: StageMusicManager, environment: var5
+        var3 = function arg0() {
             _fun67628: for (var _fun67628_ip = 0;;) switch (_fun67628_ip) {
                 case 0:
                     var3 = this;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleVoiceChannelSelect';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun67629: for (var _fun67629_ip = 0;;) switch (_fun67629_ip) {
                 case 0:
                     var0 = arg0;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleLogout';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot16;
             var0 = var2.stop;
             var0 = var0.bind(var2)();
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handlePlay';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun67631: for (var _fun67631_ip = 0;;) switch (_fun67631_ip) {
                 case 0:
                     var0 = arg0;
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMute';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun67632: for (var _fun67632_ip = 0;;) switch (_fun67632_ip) {
                 case 0:
                     var0 = arg0;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleVoiceStateUpdates';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot18;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleSetOutputVolume';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var3 = var0.volume;
             var2 = _closure1_slot16;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleToggleSelfDeaf';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = _closure1_slot18;
             var0 = undefined;
             var1 = var1.bind(var0)();
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/stage_channels/StageMusicManager.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: useShowStageMusicMuteButton, environment: var1
+    var3 = function arg0() {
         _fun67636: for (var _fun67636_ip = 0;;) switch (_fun67636_ip) {
             case 0:
                 var10 = arg0;
@@ -643,7 +643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShowStageMusicMuteButton = var3;
-    var1 = function(arg0) { // Original name: shouldShowStageMusicMuteButton, environment: var1
+    var1 = function arg0() {
         _fun67640: for (var _fun67640_ip = 0;;) switch (_fun67640_ip) {
             case 0:
                 var5 = arg0;

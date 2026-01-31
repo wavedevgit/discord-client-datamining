@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/experiments/ExperimentManager.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: trackExposureToExperiment, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun17808: for (var _fun17808_ip = 0;;) switch (_fun17808_ip) {
             case 0:
                 var5 = arg2;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackExposureToExperiment = var4;
-    var4 = function(arg0) { // Original name: registerUserExperiment, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.id;
         var6 = var0.title;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.registerUserExperiment = var4;
-    var4 = function(arg0) { // Original name: registerGuildExperiment, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.id;
         var6 = var0.title;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.registerGuildExperiment = var4;
     var2.ExperimentSystem = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: overrideBucket, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun17811: for (var _fun17811_ip = 0;;) switch (_fun17811_ip) {
             case 0:
                 var2 = arg0;

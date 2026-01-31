@@ -8,10 +8,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: AddAvatarScreen, environment: var7
+    var0 = function() {
         _fun113839: for (var _fun113839_ip = 0;;) switch (_fun113839_ip) {
             case 0:
-                var0 = function() { // Original name: _handleSelectAvatar, environment: var10
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -318,7 +318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.avatarSource = var19;
                 var19 = var9 != var8;
                 var11.showPendingAvatar = var19;
-                var19 = function() { // Original name: handleSelectAvatar, environment: var10
+                var19 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot4;
                     var2 = var3.apply;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.PDTjLN;
                 var11 = var12.bind(var13)(var11);
                 var5.text = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 23;
@@ -428,11 +428,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var1 = function() { // Original name: AddAvatarModal, environment: var7
+    var1 = function() {
         var4 = _closure1_slot5;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
-            var1 = function() { // Original name: getScreens, environment: var0
+            var1 = function() {
                 var0 = {};
                 var1 = {};
                 var5 = _closure1_slot0;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.ImpressionNames;
                 var3 = var3.AVATAR_UPLOAD;
                 var1.impressionName = var3;
-                var3 = function() { // Original name: headerRight, environment: var2
+                var3 = function() {
                     var3 = _closure1_slot9;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot2;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4["5Wxrcd"];
                     var4 = var5.bind(var6)(var4);
                     var0.text = var4;
-                    var4 = function() { // Original name: onPress, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 23;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.headerRight = var3;
-                var3 = function() { // Original name: headerLeft, environment: var2
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = true;
                 var1.ignoreKeyboard = var3;
                 var1.fullscreen = var3;
-                var2 = function() { // Original name: render, environment: var2
+                var2 = function() {
                     var3 = _closure1_slot9;
                     var2 = _closure1_slot12;
                     var1 = undefined;

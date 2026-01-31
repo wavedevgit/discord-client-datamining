@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Sticky/native/StickyWrapper.native.tsx';
     var4 = var5.bind(var6)(var4);
     var2.StickyContext = var3;
-    var1 = function(arg0) { // Original name: StickyWrapper, environment: var1
+    var1 = function arg0() {
         _fun89011: for (var _fun89011_ip = 0;;) switch (_fun89011_ip) {
             case 0:
                 var1 = arg0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8[var4];
                 var12 = var9.bind(var3)(var2);
                 var9 = var12.useAnimatedStyle;
-                var2 = function() { // Original name: H, environment: var0
+                var2 = function() {
                     _fun89014: for (var _fun89014_ip = 0;;) switch (_fun89014_ip) {
                         case 0:
                             var0 = {

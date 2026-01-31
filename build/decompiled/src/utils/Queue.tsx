@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: Queue, environment: var4
+        var2 = function() {
             _fun67558: for (var _fun67558_ip = 0;;) switch (_fun67558_ip) {
                 case 0:
                     var4 = arguments[0];
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'enqueue';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var1 = function arg0, arg1, arg2() {
             var1 = this;
             var3 = var1.queue;
             var2 = var3.push;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'length';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.queue;
             var0 = var0.length;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_drainIfNecessary';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun67561: for (var _fun67561_ip = 0;;) switch (_fun67561_ip) {
                 case 0:
                     var3 = this;

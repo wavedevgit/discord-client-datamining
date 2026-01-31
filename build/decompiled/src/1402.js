@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var11 = var3.Object;
             var10 = var11.defineProperty;
             var9 = {};
-            var6 = function() { // Original name: get, environment: var1
+            var6 = function() {
                 var0 = _closure1_slot1;
                 throw var0;
             };
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 202:
             var4 = /^\s*class\b/;
             var _closure1_slot4 = var4;
-            var4 = function(arg0) { // Original name: isES6ClassFunction, environment: var1
+            var4 = function arg0() {
                 _fun16419: for (var _fun16419_ip = 0;;) switch (_fun16419_ip) {
                     case 0:
                         var1 = arg0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot5 = var4;
-            var4 = function(arg0) { // Original name: tryFunctionToStr, environment: var1
+            var4 = function arg0() {
                 _fun16420: for (var _fun16420_ip = 0;;) switch (_fun16420_ip) {
                     case 0:
                         var1 = arg0;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4 in var7;
             var4 = !var4;
             var _closure1_slot9 = var4;
-            var4 = function() { // Original name: isDocumentDotAll, environment: var1
+            var4 = function() {
                 var0 = false;
                 return var0;
             };
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun16416
             }
         case 391:
-            var3 = function(arg0) { // Original name: isDocumentDotAll, environment: var1
+            var3 = function arg0() {
                 _fun16422: for (var _fun16422_ip = 0;;) switch (_fun16422_ip) {
                     case 0:
                         var1 = arg0;
@@ -287,7 +287,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun16416
             }
         case 403:
-            var2 = function(arg0) { // Original name: isCallable, environment: var1
+            var2 = function arg0() {
                 _fun16424: for (var _fun16424_ip = 0;;) switch (_fun16424_ip) {
                     case 0:
                         var2 = arg0;
@@ -384,7 +384,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun16416_ip = 415;
             continue _fun16416;
         case 410:
-            var2 = function(arg0) { // Original name: isCallable, environment: var1
+            var2 = function arg0() {
                 _fun16423: for (var _fun16423_ip = 0;;) switch (_fun16423_ip) {
                     case 0:
                         var4 = arg0;

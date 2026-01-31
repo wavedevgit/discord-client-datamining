@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var7)(var4);
     var _closure1_slot13 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: GuildSettingsModalMemberApplications, environment: var3
+    var3 = function arg0() {
         _fun104927: for (var _fun104927_ip = 0;;) switch (_fun104927_ip) {
             case 0:
                 var0 = arg0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun80812: for (var _fun80812_ip = 0;;) switch (_fun80812_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PomeloStore, environment: var5
+        var3 = function() {
             _fun80816: for (var _fun80816_ip = 0;;) switch (_fun80816_ip) {
                 case 0:
                     var3 = this;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'isRateLimited';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun80817: for (var _fun80817_ip = 0;;) switch (_fun80817_ip) {
                 case 0:
                     var0 = _closure1_slot8;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'validate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun80818: for (var _fun80818_ip = 0;;) switch (_fun80818_ip) {
                 case 0:
                     var3 = this;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'registrationUsernameSuggestion';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var0 = var0.suggestions;
             var0 = var0.registration;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'usernameSuggestion';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var0 = var0.suggestions;
             var0 = var0.migration;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'usernameSuggestionLoading';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var0 = var0.suggestions;
             var0 = var0.migration;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isCurrentUsernameInvalid';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             var0 = var0.currentUsernameInvalid;
             return var0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'wasRegistrationSuggestionFetched';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun80823: for (var _fun80823_ip = 0;;) switch (_fun80823_ip) {
                 case 0:
                     var0 = _closure1_slot8;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'wasSuggestionsFetched';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot8;
             var0 = var0.suggestions;
             var0 = var0.migration;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var13 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handlePomeloAttemptSuccess, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.username;
         var4 = var0.taken;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.POMELO_ATTEMPT_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handlePomeloAttemptFailure, environment: var3
+    var7 = function arg0() {
         _fun80826: for (var _fun80826_ip = 0;;) switch (_fun80826_ip) {
             case 0:
                 var0 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.POMELO_ATTEMPT_FAILURE = var7;
-    var7 = function() { // Original name: handlePomeloSuggestionsReset, environment: var3
+    var7 = function() {
         var1 = _closure1_slot8;
         var4 = var1.suggestions;
         var2 = {
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.POMELO_SUGGESTIONS_RESET = var7;
-    var7 = function(arg0) { // Original name: handlePomeloSuggestionsSuccess, environment: var3
+    var7 = function arg0() {
         _fun80828: for (var _fun80828_ip = 0;;) switch (_fun80828_ip) {
             case 0:
                 var0 = arg0;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.POMELO_SUGGESTIONS_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handlePomeloSuggestionsFetch, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.usernameSuggestionLoading;
         var0 = _closure1_slot8;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.POMELO_SUGGESTIONS_FETCH = var7;
-    var3 = function(arg0) { // Original name: handlePomeloRegistrationSuggestionsSuccess, environment: var3
+    var3 = function arg0() {
         _fun80830: for (var _fun80830_ip = 0;;) switch (_fun80830_ip) {
             case 0:
                 var0 = arg0;

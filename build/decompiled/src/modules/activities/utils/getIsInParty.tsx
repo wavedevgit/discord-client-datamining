@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/activities/utils/getIsInParty.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: getIsInParty, environment: var1
+    var1 = function arg0, arg1() {
         _fun92466: for (var _fun92466_ip = 0;;) switch (_fun92466_ip) {
             case 0:
                 var3 = arg0;

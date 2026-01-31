@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: sanitizeDevices, environment: var1
+    var3 = function arg0, arg1() {
         _fun32235: for (var _fun32235_ip = 0;;) switch (_fun32235_ip) {
             case 0:
                 var3 = arg0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = '../discord_common/js/packages/media-engine/native/Devices.tsx';
     var4 = var5.bind(var6)(var4);
     var2.sanitizeDevices = var3;
-    var3 = function() { // Original name: getAudioInputDevices, environment: var1
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAudioInputDevices = var3;
-    var3 = function() { // Original name: getAudioOutputDevices, environment: var1
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAudioOutputDevices = var3;
-    var1 = function() { // Original name: getVideoInputDevices, environment: var1
+    var1 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;

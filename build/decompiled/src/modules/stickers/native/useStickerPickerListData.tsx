@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stickers/native/useStickerPickerListData.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useStickerPickerListData, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var7 = var1.channel;
         var8 = var1.containerWidth;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot3 = var2;
                     var10 = undefined;
                     var _closure3_slot4 = var10;
-                    var9 = function(arg0) { // Original name: pushCategory, environment: var1
+                    var9 = function arg0() {
                         _fun74446: for (var _fun74446_ip = 0;;) switch (_fun74446_ip) {
                             case 0:
                                 var4 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var8 = var11.bind(var12)(var8);
                     var11 = var6.push;
-                    var8 = function(arg0) { // Original name: getSectionHeights, environment: var1
+                    var8 = function arg0() {
                         var2 = arg0;
                         var1 = 0;
                         var _closure4_slot0 = var1;

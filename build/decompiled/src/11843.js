@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun91456: for (var _fun91456_ip = 0;;) switch (_fun91456_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var4;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: DeepLinking, environment: var5
+        var3 = function() {
             _fun91460: for (var _fun91460_ip = 0;;) switch (_fun91460_ip) {
                 case 0:
                     var4 = this;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'push';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: push, environment: var5
+        var0 = function arg0() {
             var3 = arg0;
             var2 = var3.replace;
             var1 = _closure1_slot10;
@@ -260,7 +260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: componentDidMount, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: componentWillUnmount, environment: var5
+        var6 = function() {
             var3 = _closure1_slot8;
             var2 = var3.removeEventListener;
             var0 = this;
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot9;
@@ -303,7 +303,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var0.__HistoryContext;
             var1 = var0.Consumer;
             var0 = {};
-            var4 = function(arg0) { // Original name: children, environment: var4
+            var4 = function arg0() {
                 _fun91468: for (var _fun91468_ip = 0;;) switch (_fun91468_ip) {
                     case 0:
                         var0 = _closure3_slot0;

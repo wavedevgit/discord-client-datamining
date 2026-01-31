@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Navbar, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var11 = var0.onClose;
         var0 = _closure1_slot9;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: SubmitFeedbackScreen, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.feedback;
         var _closure2_slot0 = var1;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var14.bind(var3)(var0);
         var0 = var0.bind(var3)();
         var17 = var0.bottom;
-        var0 = function(arg0) { // Original name: label, environment: var10
+        var0 = function arg0() {
             var3 = _closure1_slot7;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var11.bind(var0)(var5);
                     var8 = var5.FormRow;
                     var5 = {};
-                    var6 = function() { // Original name: onPress, environment: var6
+                    var6 = function() {
                         var2 = _closure2_slot1;
                         var1 = _closure3_slot0;
                         var0 = undefined;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_automod/native/AutomodSubmitFeedbackModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AutomodSubmitFeedbackModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.onCloseModal;
         var _closure2_slot0 = var10;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.onCloseModal = var3;
             var1 = _closure2_slot2;
             var2.feedback = var1;
-            var1 = function(arg0) { // Original name: onChange, environment: var0
+            var1 = function arg0() {
                 var2 = _closure2_slot3;
                 var0 = undefined;
                 var1 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.onChange = var1;
-            var1 = function() { // Original name: onSubmit, environment: var0
+            var1 = function() {
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 18;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.onSubmit = var1;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var2 = var0.onCloseModal;
                 var _closure4_slot0 = var2;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'ignoreKeyboard': true,
                     'title': ''
                 };
-                var3 = function() { // Original name: customNavbar, environment: var1
+                var3 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot10;
                     var1 = {};
@@ -525,12 +525,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2.customNavbar = var3;
-                var3 = function() { // Original name: headerLeft, environment: var1
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
                 var2.headerLeft = var3;
-                var1 = function() { // Original name: render, environment: var1
+                var1 = function() {
                     var3 = _closure1_slot7;
                     var2 = _closure1_slot11;
                     var1 = {};

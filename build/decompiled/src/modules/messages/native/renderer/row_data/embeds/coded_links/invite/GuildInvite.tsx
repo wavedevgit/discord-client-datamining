@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/invite/GuildInvite.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: createResolvingGuildInvite, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot1;
         var9 = _closure1_slot2;
         var0 = 9;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createResolvingGuildInvite = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: createExpiredGuildInvite, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun92304: for (var _fun92304_ip = 0;;) switch (_fun92304_ip) {
             case 0:
                 var11 = arg0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createExpiredGuildInvite = var3;
-    var3 = function(arg0, arg1) { // Original name: createDisabledGuildInvite, environment: var1
+    var3 = function arg0, arg1() {
         _fun92305: for (var _fun92305_ip = 0;;) switch (_fun92305_ip) {
             case 0:
                 var0 = arg0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createDisabledGuildInvite = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: createErroredGuildInvite, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun92306: for (var _fun92306_ip = 0;;) switch (_fun92306_ip) {
             case 0:
                 var7 = arg2;
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createErroredGuildInvite = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: createGuildInvite, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun92307: for (var _fun92307_ip = 0;;) switch (_fun92307_ip) {
             case 0:
                 var3 = arg0;

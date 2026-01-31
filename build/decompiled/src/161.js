@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = metroImportDefault;
             var2 = exports;
             var4 = dependencyMap;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var6
+            var0 = function() {
                 _fun2454: for (var _fun2454_ip = 0;;) switch (_fun2454_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var13.Error;
             var5 = var5.bind(var0)(var1);
             var1 = function(arg0) { // Environment: var6
-                var3 = function(arg0, arg1) { // Original name: DOMException, environment: var5
+                var3 = function arg0, arg1() {
                     _fun2458: for (var _fun2458_ip = 0;;) switch (_fun2458_ip) {
                         case 0:
                             var7 = arg1;
@@ -250,7 +250,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var0 = 'name';
                 var4.key = var0;
-                var0 = function() { // Original name: get, environment: var5
+                var0 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot7;
                     var2 = undefined;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var6 = 'code';
                 var4.key = var6;
-                var5 = function() { // Original name: get, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot5;
                     var1 = _closure1_slot8;
                     var2 = undefined;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var3.bind(var0)(var4);
             var4 = var5.setPlatformObject;
             var3 = {};
-            var6 = function(arg0) { // Original name: clone, environment: var6
+            var6 = function arg0() {
                 var0 = arg0;
                 var3 = _closure1_slot9;
                 var5 = var0.message;

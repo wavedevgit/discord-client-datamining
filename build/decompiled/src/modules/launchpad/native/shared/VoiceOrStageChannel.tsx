@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getStageChannelAccessibilityProps, environment: var1
+    var0 = function arg0() {
         _fun110114: for (var _fun110114_ip = 0;;) switch (_fun110114_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: handleVoiceOrStageChannelConnectPress, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot21;
         var2 = var3.apply;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function() { // Original name: _handleVoiceOrStageChannelConnectPress, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -191,10 +191,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: useVoiceChannelPressEvents, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
-        var3 = function() { // Original name: useVoiceChannelOnPressHandler, environment: var1
+        var3 = function() {
             var3 = _closure1_slot4;
             var2 = var3.useCallback;
             var1 = function() { // Environment: var0
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new Array(0);
     var _closure1_slot17 = var3;
     var7 = var6.memo;
-    var3 = function(arg0) { // Original name: UnmemoedVoiceOrStageChannelBase, environment: var1
+    var3 = function arg0() {
         _fun110129: for (var _fun110129_ip = 0;;) switch (_fun110129_ip) {
             case 0:
                 var1 = arg0;
@@ -1089,7 +1089,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot18 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VoiceOrStageChannel, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.channel;
         var _closure2_slot0 = var7;

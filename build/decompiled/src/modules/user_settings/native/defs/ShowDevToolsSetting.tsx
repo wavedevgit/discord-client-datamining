@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var9);
     var9 = var9.useStaffOrDeveloperSettingPredicate;
     var1.usePredicate = var9;
-    var8 = function() { // Original name: getAdditionalSearchTerms, environment: var8
+    var8 = function() {
         var0 = global;
         var2 = var0.Object;
         var1 = var2.values;

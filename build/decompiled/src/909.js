@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) { // Original name: aggregateExceptionsFromError, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7() {
         _fun9535: for (var _fun9535_ip = 0;;) switch (_fun9535_ip) {
             case 0:
                 var13 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: applyExceptionGroupFieldsForParentException, environment: var1
+    var0 = function arg0, arg1() {
         _fun9537: for (var _fun9537_ip = 0;;) switch (_fun9537_ip) {
             case 0:
                 var1 = arg0;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: applyExceptionGroupFieldsForChildException, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var1 = arg0;
         var0 = global;
         var5 = var0.Object;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: applyAggregateErrorsToEvent, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun9539: for (var _fun9539_ip = 0;;) switch (_fun9539_ip) {
             case 0:
                 var0 = arg4;

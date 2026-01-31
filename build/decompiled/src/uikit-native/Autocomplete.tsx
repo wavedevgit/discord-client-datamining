@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var7;
-    var0 = function(arg0) { // Original name: AutocompleteLabel, environment: var5
+    var0 = function arg0() {
         var1 = _closure1_slot10;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot10 = var4;
     var4 = {};
-    var8 = function(arg0) { // Original name: User, environment: var5
+    var8 = function arg0() {
         _fun89938: for (var _fun89938_ip = 0;;) switch (_fun89938_ip) {
             case 0:
                 var1 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.User = var8;
-    var8 = function(arg0) { // Original name: Global, environment: var5
+    var8 = function arg0() {
         var0 = arg0;
         var11 = var0.text;
         var7 = var0.description;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.Global = var8;
-    var8 = function(arg0) { // Original name: Role, environment: var5
+    var8 = function arg0() {
         _fun89941: for (var _fun89941_ip = 0;;) switch (_fun89941_ip) {
             case 0:
                 var0 = arg0;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.Role = var8;
-    var8 = function(arg0) { // Original name: Channel, environment: var5
+    var8 = function arg0() {
         _fun89942: for (var _fun89942_ip = 0;;) switch (_fun89942_ip) {
             case 0:
                 var0 = arg0;
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.Channel = var8;
-    var8 = function(arg0) { // Original name: Emoji, environment: var5
+    var8 = function arg0() {
         _fun89943: for (var _fun89943_ip = 0;;) switch (_fun89943_ip) {
             case 0:
                 var0 = arg0;
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.Emoji = var8;
-    var8 = function(arg0) { // Original name: EmojiPremiumUpsell, environment: var5
+    var8 = function arg0() {
         var0 = arg0;
         var7 = var0.results;
         var5 = var0.onPress;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.EmojiPremiumUpsell = var8;
-    var8 = function(arg0) { // Original name: Choice, environment: var5
+    var8 = function arg0() {
         var0 = arg0;
         var7 = var0.choice;
         var5 = var0.onPress;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.Choice = var8;
-    var8 = function() { // Original name: ChoiceLoading, environment: var5
+    var8 = function() {
         var0 = _closure1_slot10;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -728,7 +728,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.ChoiceLoading = var8;
-    var8 = function(arg0) { // Original name: Sticker, environment: var5
+    var8 = function arg0() {
         var0 = arg0;
         var8 = var0.sticker;
         var6 = var0.onPress;
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var4.Sticker = var8;
-    var5 = function(arg0) { // Original name: Label, environment: var5
+    var5 = function arg0() {
         var0 = arg0;
         var7 = var0.label;
         var3 = _closure1_slot9;

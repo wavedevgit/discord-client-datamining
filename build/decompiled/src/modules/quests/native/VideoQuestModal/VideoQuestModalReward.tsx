@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VideoQuestModalReward, environment: var1
+    var1 = function arg0() {
         _fun83570: for (var _fun83570_ip = 0;;) switch (_fun83570_ip) {
             case 0:
                 var1 = arg0;

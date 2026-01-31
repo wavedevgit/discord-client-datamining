@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: BaseActivityPanelSystemUIManager, environment: var3
+    var1 = function arg0() {
         _fun110451: for (var _fun110451_ip = 0;;) switch (_fun110451_ip) {
             case 0:
                 var0 = arg0;

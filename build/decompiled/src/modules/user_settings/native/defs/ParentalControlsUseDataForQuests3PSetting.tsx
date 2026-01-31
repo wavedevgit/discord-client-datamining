@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS;
     var1.parent = var9;
-    var9 = function() { // Original name: useDataToSupportQuests3PSettingValue, environment: var8
+    var9 = function() {
         _fun88511: for (var _fun88511_ip = 0;;) switch (_fun88511_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useValue = var9;
-    var9 = function(arg0) { // Original name: onDataToSupportQuests3PSettingValueChange, environment: var8
+    var9 = function arg0() {
         _fun88512: for (var _fun88512_ip = 0;;) switch (_fun88512_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onValueChange = var9;
-    var8 = function() { // Original name: useDataToSupportQuests3PSettingIsDisabled, environment: var8
+    var8 = function() {
         _fun88513: for (var _fun88513_ip = 0;;) switch (_fun88513_ip) {
             case 0:
                 var2 = _closure1_slot0;

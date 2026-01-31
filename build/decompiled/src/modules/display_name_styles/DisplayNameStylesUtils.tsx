@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/DisplayNameStylesUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: generateColorVariants, environment: var1
+    var3 = function arg0() {
         var10 = arg0;
         var2 = _closure1_slot1;
         var0 = _closure1_slot2;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.generateColorVariants = var3;
-    var3 = function(arg0) { // Original name: parseServerDisplayNameStyles, environment: var1
+    var3 = function arg0() {
         _fun18090: for (var _fun18090_ip = 0;;) switch (_fun18090_ip) {
             case 0:
                 var2 = arg0;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.parseServerDisplayNameStyles = var3;
-    var3 = function() { // Original name: generateRandomDisplayNameStyles, environment: var1
+    var3 = function() {
         _fun18091: for (var _fun18091_ip = 0;;) switch (_fun18091_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateRandomDisplayNameStyles = var3;
-    var1 = function(arg0) { // Original name: hasNonLatinLetters, environment: var1
+    var1 = function arg0() {
         _fun18092: for (var _fun18092_ip = 0;;) switch (_fun18092_ip) {
             case 0:
                 var3 = arg0;

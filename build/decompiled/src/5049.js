@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_createBottomSheetScrollableComponentTsx1(){const{preserveScrollMomentum,SCROLLABLE_DECELERATION_RATE_MAPPER,animatedScrollableState,showsVerticalScrollIndicator,SCROLLABLE_STATE}=this.__closure;return{...(preserveScrollMomentum?{}:{decelerationRate:SCROLLABLE_DECELERATION_RATE_MAPPER[animatedScrollableState.value]}),showsVerticalScrollIndicator:showsVerticalScrollIndicator?animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED:showsVerticalScrollIndicator};}';
     var3.code = var4;
     var _closure1_slot9 = var3;
-    var1 = function(arg0, arg1) { // Original name: createBottomSheetScrollableComponent, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var10 = var4[var10];
                     var19 = var1.bind(var3)(var10);
                     var18 = var19.useAnimatedProps;
-                    var13 = function() { // Original name: pnpm_createBottomSheetScrollableComponentTsx1, environment: var5
+                    var13 = function() {
                         _fun45406: for (var _fun45406_ip = 0;;) switch (_fun45406_ip) {
                             case 0:
                                 var0 = global;

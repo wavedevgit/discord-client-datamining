@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/channel_settings/ChannelSettingsInstantInvites.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ConnectedChannelSettingsInstantInvites, environment: var1
+    var1 = function() {
         _fun108930: for (var _fun108930_ip = 0;;) switch (_fun108930_ip) {
             case 0:
                 var1 = _closure1_slot11;

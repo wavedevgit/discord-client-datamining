@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/FormTrialIntervalPicker.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FormTrialIntervalPicker, environment: var1
+    var1 = function arg0() {
         _fun116769: for (var _fun116769_ip = 0;;) switch (_fun116769_ip) {
             case 0:
                 var0 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.bind(var9)(var7);
             case 167:
                 var0.label = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun116770: for (var _fun116770_ip = 0;;) switch (_fun116770_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.title = var1;
                             var1 = _closure2_slot2;
                             var2.items = var1;
-                            var1 = function(arg0) { // Original name: onItemSelect, environment: var1
+                            var1 = function arg0() {
                                 _fun116771: for (var _fun116771_ip = 0;;) switch (_fun116771_ip) {
                                     case 0:
                                         var2 = _closure2_slot1;

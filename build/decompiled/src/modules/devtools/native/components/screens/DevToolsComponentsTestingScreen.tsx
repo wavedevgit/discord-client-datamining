@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Select, environment: var1
+    var0 = function arg0() {
         _fun86785: for (var _fun86785_ip = 0;;) switch (_fun86785_ip) {
             case 0:
                 var0 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = ')';
                 var9 = var11.bind(var10)(var12, var9);
                 var5.text = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = function(arg0) { // Environment: var0
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/devtools/native/components/screens/DevToolsComponentsTestingScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DevToolsComponentsTestingScreen, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var9.bind(var3)(var8);
         var9 = var8.Button;
         var8 = {};
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 17;

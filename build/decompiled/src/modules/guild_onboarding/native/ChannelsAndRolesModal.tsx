@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChannelsAndRolesScreen, environment: var1
+    var0 = function arg0() {
         _fun77396: for (var _fun77396_ip = 0;;) switch (_fun77396_ip) {
             case 0:
                 var1 = arg0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/ChannelsAndRolesModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelsAndRolesModal, environment: var1
+    var1 = function arg0() {
         _fun77400: for (var _fun77400_ip = 0;;) switch (_fun77400_ip) {
             case 0:
                 var0 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.bind(var8)(var6);
             case 200:
                 var0.title = var5;
-                var4 = function() { // Original name: render, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot8;
                     var2 = _closure1_slot11;
                     var1 = {};

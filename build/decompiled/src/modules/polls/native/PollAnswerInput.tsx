@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ImageInput, environment: var1
+    var0 = function arg0() {
         _fun108425: for (var _fun108425_ip = 0;;) switch (_fun108425_ip) {
             case 0:
                 var0 = arg0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/native/PollAnswerInput.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PollAnswerInput, environment: var1
+    var1 = function arg0() {
         _fun108428: for (var _fun108428_ip = 0;;) switch (_fun108428_ip) {
             case 0:
                 var1 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.image;
                 var22 = var0.localCreationAnswerId;
                 var _closure2_slot7 = var22;
-                var19 = function() { // Original name: openExpressionPicker, environment: var15
+                var19 = function() {
                     _fun108429: for (var _fun108429_ip = 0;;) switch (_fun108429_ip) {
                         case 0:
                             var2 = _closure1_slot7;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.openEmojiPickerActionSheet;
                             var0 = {};
                             var0.channel = var4;
-                            var4 = function(arg0) { // Original name: onPressEmoji, environment: var4
+                            var4 = function arg0() {
                                 var3 = _closure2_slot4;
                                 var2 = _closure2_slot1;
                                 var0 = undefined;
@@ -483,7 +483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot8 = var19;
-                var0 = function(arg0) { // Original name: handleSaveAltText, environment: var15
+                var0 = function arg0() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 15;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.localCreationAnswerId = var22;
                 var13.image = var20;
                 var13.openExpressionPicker = var19;
-                var19 = function() { // Original name: openImageInputActionSheet, environment: var15
+                var19 = function() {
                     var4 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 16;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25.NNHVlv;
                 var25 = var26.bind(var27)(var25);
                 var16.placeholder = var25;
-                var25 = function(arg0) { // Original name: onChange, environment: var15
+                var25 = function arg0() {
                     var2 = _closure2_slot3;
                     var1 = {};
                     var3 = arg0;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = _closure1_slot12;
                 var12 = _closure1_slot5;
                 var11 = {};
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     var2 = _closure2_slot5;
                     var1 = _closure2_slot1;
                     var0 = undefined;

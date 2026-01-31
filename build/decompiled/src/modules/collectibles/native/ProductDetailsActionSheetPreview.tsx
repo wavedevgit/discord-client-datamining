@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: BundlePreviewContent, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var10 = var1.product;
         var _closure2_slot0 = var10;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: HomeDrawerDMsRow, environment: var1
+    var0 = function() {
         _fun100974: for (var _fun100974_ip = 0;;) switch (_fun100974_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/home_drawer/native/HomeDrawerDirectMessagesRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: HomeDrawerDMsRowWrapper, environment: var1
+    var1 = function() {
         _fun100976: for (var _fun100976_ip = 0;;) switch (_fun100976_ip) {
             case 0:
                 var2 = _closure1_slot0;

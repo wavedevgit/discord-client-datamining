@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun67138: for (var _fun67138_ip = 0;;) switch (_fun67138_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun67140: for (var _fun67140_ip = 0;;) switch (_fun67140_ip) {
             case 0:
                 var3 = arg0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'CHANNEL';
     var4.CHANNEL = var1;
     var _closure1_slot12 = var4;
-    var1 = function(arg0, arg1) { // Original name: isGuildMember, environment: var3
+    var1 = function arg0, arg1() {
         _fun67141: for (var _fun67141_ip = 0;;) switch (_fun67141_ip) {
             case 0:
                 var4 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var1;
-    var1 = function(arg0) { // Original name: addDmUsers, environment: var3
+    var1 = function arg0() {
         _fun67142: for (var _fun67142_ip = 0;;) switch (_fun67142_ip) {
             case 0:
                 var0 = arg0;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[2] = var5;
     var _closure1_slot16 = var1;
     var5 = {};
-    var10 = function(arg0) { // Original name: getMaxAgeOptionByValue, environment: var3
+    var10 = function arg0() {
         _fun67143: for (var _fun67143_ip = 0;;) switch (_fun67143_ip) {
             case 0:
                 var1 = arg0;
@@ -689,7 +689,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var5.getMaxAgeOptionByValue = var10;
-    var10 = function(arg0) { // Original name: getMaxAgeOptions, environment: var3
+    var10 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -835,7 +835,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.default = var5;
     var2.RowTypes = var4;
-    var4 = function(arg0) { // Original name: generateRowsForQuery, environment: var3
+    var4 = function arg0() {
         _fun67147: for (var _fun67147_ip = 0;;) switch (_fun67147_ip) {
             case 0:
                 var1 = arg0;
@@ -1637,7 +1637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.generateRowsForQuery = var4;
-    var4 = function(arg0, arg1) { // Original name: groupInviteSuggestions, environment: var3
+    var4 = function arg0, arg1() {
         _fun67158: for (var _fun67158_ip = 0;;) switch (_fun67158_ip) {
             case 0:
                 var7 = arg1;
@@ -1721,7 +1721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.groupInviteSuggestions = var4;
-    var4 = function(arg0, arg1) { // Original name: getMostRecentDMedUser, environment: var3
+    var4 = function arg0, arg1() {
         _fun67159: for (var _fun67159_ip = 0;;) switch (_fun67159_ip) {
             case 0:
                 var9 = arg0;
@@ -1836,7 +1836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMostRecentDMedUser = var4;
-    var4 = function(arg0) { // Original name: getUsersAlreadyJoined, environment: var3
+    var4 = function arg0() {
         _fun67160: for (var _fun67160_ip = 0;;) switch (_fun67160_ip) {
             case 0:
                 var1 = arg0;
@@ -1918,7 +1918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getUsersAlreadyJoined = var4;
-    var4 = function(arg0, arg1) { // Original name: maxAgeString, environment: var3
+    var4 = function arg0, arg1() {
         _fun67161: for (var _fun67161_ip = 0;;) switch (_fun67161_ip) {
             case 0:
                 var3 = arg0;
@@ -2086,7 +2086,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.maxAgeString = var4;
-    var3 = function(arg0, arg1) { // Original name: urgentShareMessageString, environment: var3
+    var3 = function arg0, arg1() {
         _fun67162: for (var _fun67162_ip = 0;;) switch (_fun67162_ip) {
             case 0:
                 var2 = arg0;

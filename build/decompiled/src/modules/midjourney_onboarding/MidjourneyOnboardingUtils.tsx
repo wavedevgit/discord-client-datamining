@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function() { // Original name: isMidjourneyOnboardingFlow, environment: var1
+    var3 = function() {
         _fun96207: for (var _fun96207_ip = 0;;) switch (_fun96207_ip) {
             case 0:
                 var0 = arguments[0];
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/midjourney_onboarding/MidjourneyOnboardingUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.isMidjourneyOnboardingFlow = var3;
-    var3 = function() { // Original name: useIsMidjourneyOnboardingFlow, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsMidjourneyOnboardingFlow = var3;
-    var3 = function(arg0) { // Original name: isEligibleForMidjourneyRedirect, environment: var1
+    var3 = function arg0() {
         _fun96210: for (var _fun96210_ip = 0;;) switch (_fun96210_ip) {
             case 0:
                 var1 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEligibleForMidjourneyRedirect = var3;
-    var1 = function(arg0) { // Original name: hasRedirectedToGuild, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 3000;
                     var1 = var5.bind(var4)(var2, var1);
                     var _closure3_slot2 = var1;
-                    var2 = function() { // Original name: handleSelectedGuildUpdate, environment: var3
+                    var2 = function() {
                         _fun96214: for (var _fun96214_ip = 0;;) switch (_fun96214_ip) {
                             case 0:
                                 var1 = _closure1_slot3;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot3 = var2;
-                    var1 = function() { // Original name: cleanup, environment: var3
+                    var1 = function() {
                         var3 = _closure1_slot3;
                         var2 = var3.removeChangeListener;
                         var1 = _closure3_slot3;

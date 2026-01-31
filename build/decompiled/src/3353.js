@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot4 = var3;
             var3 = ['toString', 'toLocaleString', 'valueOf', 'hasOwnProperty', 'isPrototypeOf', 'propertyIsEnumerable', 'constructor'];
             var _closure1_slot5 = var3;
-            var3 = function(arg0) { // Original name: equalsConstructorPrototype, environment: var1
+            var3 = function arg0() {
                 _fun28936: for (var _fun28936_ip = 0;;) switch (_fun28936_ip) {
                     case 0:
                         var2 = arg0;
@@ -169,7 +169,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
         case 382:
             var _closure1_slot7 = var3;
-            var2 = function(arg0) { // Original name: keys, environment: var1
+            var2 = function arg0() {
                 _fun28937: for (var _fun28937_ip = 0;;) switch (_fun28937_ip) {
                     case 0:
                         var6 = arg0;

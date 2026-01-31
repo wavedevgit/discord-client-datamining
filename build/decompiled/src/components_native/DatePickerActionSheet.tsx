@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: closeActionSheet, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: DateRangeError, environment: var1
+    var0 = function arg0() {
         _fun65359: for (var _fun65359_ip = 0;;) switch (_fun65359_ip) {
             case 0:
                 var0 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var0];
                 var6 = var13.bind(var3)(var2);
                 var2 = var6.useAnimatedStyle;
-                var1 = function() { // Original name: S, environment: var1
+                var1 = function() {
                     _fun65361: for (var _fun65361_ip = 0;;) switch (_fun65361_ip) {
                         case 0:
                             var4 = {};
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.actionButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: ActionSheetHeader, environment: var1
+    var3 = function arg0() {
         _fun65362: for (var _fun65362_ip = 0;;) switch (_fun65362_ip) {
             case 0:
                 var0 = arg0;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function DatePickerActionSheetTsx1(){const{STANDARD_EASING,show,withTiming}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:show?200:150};return{opacity:withTiming(show?1:0,animationSettings),maxHeight:withTiming(show?500:0,animationSettings),paddingVertical:withTiming(show?12:0,animationSettings)};}';
     var3.code = var6;
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: ActionSheetFooter, environment: var1
+    var3 = function arg0() {
         _fun65363: for (var _fun65363_ip = 0;;) switch (_fun65363_ip) {
             case 0:
                 var0 = arg0;
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/DatePickerActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun65364: for (var _fun65364_ip = 0;;) switch (_fun65364_ip) {
             case 0:
                 var1 = arg0;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot10 = var3;
                 var _closure2_slot11 = var3;
                 var _closure2_slot12 = var3;
-                var13 = function(arg0) { // Original name: isAboveMin, environment: var0
+                var13 = function arg0() {
                     _fun65365: for (var _fun65365_ip = 0;;) switch (_fun65365_ip) {
                         case 0:
                             var3 = arg0;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot13 = var13;
-                var20 = function(arg0) { // Original name: isBelowMax, environment: var0
+                var20 = function arg0() {
                     _fun65366: for (var _fun65366_ip = 0;;) switch (_fun65366_ip) {
                         case 0:
                             var3 = arg0;

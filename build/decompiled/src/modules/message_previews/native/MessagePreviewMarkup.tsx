@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var0 = function(arg0) { // Original name: getRules, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.layout;
         var12 = var0.color;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var6 = function(arg0) { // Original name: renderASTToReact, environment: var4
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.tree;
         var2 = var0.initialParserState;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var6;
-    var5 = function(arg0) { // Original name: getMessagePreviewASTParser, environment: var4
+    var5 = function arg0() {
         var0 = arg0;
         var6 = var0.layout;
         var5 = var0.color;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var5;
-    var1 = function(arg0) { // Original name: getOrParseMessagePreviewMarkupAST, environment: var4
+    var1 = function arg0() {
         _fun69965: for (var _fun69965_ip = 0;;) switch (_fun69965_ip) {
             case 0:
                 var0 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var9)(var7);
     var2.renderASTToReact = var6;
     var2.getMessagePreviewASTParser = var5;
-    var4 = function(arg0) { // Original name: renderMessagePreviewMarkup, environment: var4
+    var4 = function arg0() {
         _fun69966: for (var _fun69966_ip = 0;;) switch (_fun69966_ip) {
             case 0:
                 var3 = arg0;

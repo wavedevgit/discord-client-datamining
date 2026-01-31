@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: NativeMuteManager, environment: var4
+        var2 = function() {
             var1 = this;
             var _closure3_slot0 = var1;
             var5 = _closure1_slot3;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'nativeMuteChanged';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun93630: for (var _fun93630_ip = 0;;) switch (_fun93630_ip) {
                 case 0:
                     var1 = this;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateNativeMute';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun93631: for (var _fun93631_ip = 0;;) switch (_fun93631_ip) {
                 case 0:
                     var2 = this;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleVoiceChannelSelect';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun93632: for (var _fun93632_ip = 0;;) switch (_fun93632_ip) {
                 case 0:
                     var0 = arg0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: NativeMuteManagerWrapper, environment: var4
+        var2 = function() {
             var3 = _closure1_slot3;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'nativeMuteChanged';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             var2 = _closure1_slot8;
             var1 = var2.nativeMuteChanged;
             var0 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateNativeMute';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var1 = _closure1_slot8;
             var0 = var1.updateNativeMute;
             var0 = var0.bind(var1)();

@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var3 = function() { // Original name: isHermesEnabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isHermesEnabled = var3;
-    var3 = function() { // Original name: isTurboModuleEnabled, environment: var1
+    var3 = function() {
         _fun10308: for (var _fun10308_ip = 0;;) switch (_fun10308_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isTurboModuleEnabled = var3;
-    var3 = function() { // Original name: isFabricEnabled, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isFabricEnabled = var3;
-    var3 = function() { // Original name: getReactNativeVersion, environment: var1
+    var3 = function() {
         _fun10310: for (var _fun10310_ip = 0;;) switch (_fun10310_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getReactNativeVersion = var3;
-    var3 = function() { // Original name: isExpo, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isExpo = var3;
-    var3 = function() { // Original name: isExpoGo, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;
@@ -171,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isExpoGo = var3;
-    var3 = function() { // Original name: getExpoGoVersion, environment: var1
+    var3 = function() {
         _fun10313: for (var _fun10313_ip = 0;;) switch (_fun10313_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -206,7 +206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getExpoGoVersion = var3;
-    var3 = function() { // Original name: getExpoSdkVersion, environment: var1
+    var3 = function() {
         _fun10314: for (var _fun10314_ip = 0;;) switch (_fun10314_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -267,27 +267,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getExpoSdkVersion = var3;
-    var3 = function() { // Original name: isWeb, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isWeb = var3;
-    var3 = function() { // Original name: notWeb, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var2.notWeb = var3;
-    var3 = function() { // Original name: isMobileOs, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var2.isMobileOs = var3;
-    var3 = function() { // Original name: notMobileOs, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.notMobileOs = var3;
-    var3 = function() { // Original name: getHermesVersion, environment: var1
+    var3 = function() {
         _fun10318: for (var _fun10318_ip = 0;;) switch (_fun10318_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -333,12 +333,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getHermesVersion = var3;
-    var3 = function() { // Original name: getDefaultEnvironment, environment: var1
+    var3 = function() {
         var0 = 'production';
         return var0;
     };
     var2.getDefaultEnvironment = var3;
-    var1 = function() { // Original name: isRunningInMetroDevServer, environment: var1
+    var1 = function() {
         _fun10320: for (var _fun10320_ip = 0;;) switch (_fun10320_ip) {
             case 0:
                 var2 = _closure1_slot0;

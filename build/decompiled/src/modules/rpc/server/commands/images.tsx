@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.GET_IMAGE;
     var3 = {};
     var3.scope = var8;
-    var8 = function(arg0) { // Original name: validation, environment: var7
+    var8 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.validation = var8;
-    var7 = function(arg0) { // Original name: handler, environment: var7
+    var7 = function arg0() {
         _fun98001: for (var _fun98001_ip = 0;;) switch (_fun98001_ip) {
             case 0:
                 var0 = arg0;

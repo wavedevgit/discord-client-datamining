@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var8;
             var _closure1_slot1 = var7;
             var _closure1_slot2 = var9;
-            var5 = function(arg0) { // Original name: setBuildOverrideForBranch, environment: var1
+            var5 = function arg0() {
                 var2 = _closure1_slot7;
                 var1 = {};
                 var0 = 'branch';
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot6 = var5;
-            var4 = function() { // Original name: setBuildOverride, environment: var1
+            var4 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot8;
                 var2 = var3.apply;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot7 = var4;
-            var0 = function() { // Original name: _setBuildOverride, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot8 = var0;
-            var3 = function() { // Original name: clearBuildOverride, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot10;
                 var2 = var3.apply;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot9 = var3;
-            var0 = function() { // Original name: _clearBuildOverride, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot10 = var0;
-            var0 = function() { // Original name: _toggleOverride, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot11 = var0;
-            var0 = function() { // Original name: _setBuildOverrideFromLink, environment: var1
+            var0 = function() {
                 var4 = undefined;
                 var0 = undefined;
                 var3 = _closure1_slot3;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.bind(var9)(var7);
             var2.DEVICE_FIELD = var6;
             var2.setBuildOverrideForBranch = var5;
-            var5 = function(arg0) { // Original name: setBuildOverrideForId, environment: var1
+            var5 = function arg0() {
                 var2 = _closure1_slot7;
                 var1 = {};
                 var0 = 'id';
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.setBuildOverrideForId = var5;
             var2.setBuildOverride = var4;
-            var4 = function() { // Original name: refreshBuildOverride, environment: var1
+            var4 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 4;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.refreshBuildOverride = var4;
             var2.clearBuildOverride = var3;
-            var3 = function() { // Original name: toggleOverride, environment: var1
+            var3 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot11;
                 var2 = var3.apply;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.toggleOverride = var3;
-            var1 = function() { // Original name: setBuildOverrideFromLink, environment: var1
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure1_slot12;
                 var2 = var3.apply;

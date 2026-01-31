@@ -1469,7 +1469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = '/channels/@me';
     var12 = var13.bind(var14)(var64, var12);
     var8.ME = var12;
-    var12 = function(arg0, arg1) { // Original name: SETTINGS, environment: var30
+    var12 = function arg0, arg1() {
         _fun6224: for (var _fun6224_ip = 0;;) switch (_fun6224_ip) {
             case 0:
                 var2 = arg1;
@@ -1500,7 +1500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var8.SETTINGS = var12;
-    var12 = function(arg0) { // Original name: CONNECTION, environment: var30
+    var12 = function arg0() {
         var4 = _closure1_slot0;
         var0 = global;
         var0 = var0.HermesInternal;
@@ -1522,7 +1522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = '/login';
     var12 = var13.bind(var14)(var64, var12);
     var8.LOGIN = var12;
-    var12 = function(arg0) { // Original name: LOGIN_WITH_REDIRECT, environment: var30
+    var12 = function arg0() {
         var4 = _closure1_slot0;
         var0 = global;
         var0 = var0.HermesInternal;
@@ -1539,7 +1539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = '/register';
     var12 = var13.bind(var14)(var64, var12);
     var8.REGISTER = var12;
-    var12 = function(arg0) { // Original name: REGISTER_WITH_REDIRECT, environment: var30
+    var12 = function arg0() {
         var4 = _closure1_slot0;
         var0 = global;
         var0 = var0.HermesInternal;
@@ -1556,7 +1556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = '/guilds/create';
     var12 = var13.bind(var14)(var64, var12);
     var8.CREATE_GUILD = var12;
-    var12 = function(arg0) { // Original name: VANITY_INVITE, environment: var30
+    var12 = function arg0() {
         var4 = _closure1_slot1;
         var0 = global;
         var0 = var0.HermesInternal;
@@ -1578,7 +1578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = '/store/browse?type=nitro';
     var12 = var13.bind(var14)(var64, var12);
     var8.BROWSE_NITRO_TITLES = var12;
-    var12 = function(arg0, arg1) { // Original name: SKU_DETAILS, environment: var30
+    var12 = function arg0, arg1() {
         _fun6229: for (var _fun6229_ip = 0;;) switch (_fun6229_ip) {
             case 0:
                 var2 = arg1;
@@ -1611,7 +1611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var8.SKU_DETAILS = var12;
-    var12 = function(arg0, arg1, arg2) { // Original name: MESSAGE, environment: var30
+    var12 = function arg0, arg1, arg2() {
         var0 = global;
         var0 = var0.HermesInternal;
         var5 = var0.concat;
@@ -1626,7 +1626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var8.MESSAGE = var12;
-    var12 = function(arg0, arg1) { // Original name: CHANNEL, environment: var30
+    var12 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -1643,7 +1643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = '/report';
     var12 = var13.bind(var14)(var64, var12);
     var8.REPORT = var12;
-    var12 = function(arg0) { // Original name: QUEST_PREVIEW_TOOL_2, environment: var30
+    var12 = function arg0() {
         var4 = _closure1_slot0;
         var0 = global;
         var0 = var0.HermesInternal;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1) { // Original name: renderTooltipItem, environment: var1
+    var3 = function arg0, arg1() {
         _fun57369: for (var _fun57369_ip = 0;;) switch (_fun57369_ip) {
             case 0:
                 var8 = arg0;

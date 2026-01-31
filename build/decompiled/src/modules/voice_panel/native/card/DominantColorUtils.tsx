@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: getCachedSourceFromURI, environment: var1
+    var4 = function arg0() {
         _fun56637: for (var _fun56637_ip = 0;;) switch (_fun56637_ip) {
             case 0:
                 var3 = arg0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: useDominantRGBFromImage, environment: var1
+    var3 = function arg0() {
         _fun56638: for (var _fun56638_ip = 0;;) switch (_fun56638_ip) {
             case 0:
                 var5 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.getCachedSourceFromURI = var4;
     var2.useDominantRGBFromImage = var3;
-    var1 = function(arg0) { // Original name: useDominantColorFromImage, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot10;
         var1 = undefined;
         var0 = arg0;

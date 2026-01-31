@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'components_native/App.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function() { // Original name: App, environment: var1
+            var1 = function() {
                 var7 = _closure1_slot1;
                 var8 = _closure1_slot2;
                 var1 = 56;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.renderApp;
                 var1 = var2.record;
                 var1 = var1.bind(var2)();
-                var1 = function() { // Original name: useManagers, environment: var0
+                var1 = function() {
                     var3 = _closure1_slot3;
                     var2 = var3.useEffect;
                     var1 = function() { // Environment: var0
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1 = var1.bind(var3)();
-                var1 = function() { // Original name: useAuthenticated, environment: var0
+                var1 = function() {
                     var4 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 53;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1 = var1.bind(var3)();
-                var1 = function() { // Original name: useChannelObfuscationPersistence, environment: var0
+                var1 = function() {
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 57;

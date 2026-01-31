@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var25;
     var _closure1_slot1 = var28;
     var _closure1_slot2 = var26;
-    var24 = function() { // Original name: openImagePickerUnhandled, environment: var15
+    var24 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var24;
-    var0 = function() { // Original name: _openImagePickerUnhandled, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var20 = function() { // Original name: openImagePicker, environment: var15
+    var20 = function() {
         var0 = undefined;
         var3 = _closure1_slot27;
         var2 = var3.apply;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _openImagePicker, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var19 = function() { // Original name: mediaManager, environment: var15
+    var19 = function() {
         var0 = undefined;
         var3 = _closure1_slot29;
         var2 = var3.apply;
@@ -659,7 +659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var19;
-    var0 = function() { // Original name: _mediaManager, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var18 = function() { // Original name: getVideoQuality, environment: var15
+    var18 = function() {
         _fun36955: for (var _fun36955_ip = 0;;) switch (_fun36955_ip) {
             case 0:
                 var1 = _closure1_slot11;
@@ -793,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var18;
-    var17 = function(arg0) { // Original name: resolveModeToVideoQualityForUserWithFeature, environment: var15
+    var17 = function arg0() {
         _fun36956: for (var _fun36956_ip = 0;;) switch (_fun36956_ip) {
             case 0:
                 var2 = arg0;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var17;
-    var16 = function(arg0) { // Original name: resolveModeToVideoQualityForFreeUser, environment: var15
+    var16 = function arg0() {
         _fun36957: for (var _fun36957_ip = 0;;) switch (_fun36957_ip) {
             case 0:
                 var2 = arg0;
@@ -879,7 +879,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var16;
-    var14 = function() { // Original name: getAppDir, environment: var15
+    var14 = function() {
         _fun36958: for (var _fun36958_ip = 0;;) switch (_fun36958_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 throw var0;
         }
     };
-    var13 = function(arg0) { // Original name: getFileInfo, environment: var15
+    var13 = function arg0() {
         _fun36959: for (var _fun36959_ip = 0;;) switch (_fun36959_ip) {
             case 0:
                 var0 = arg0;
@@ -1005,7 +1005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.width = var0;
                 var0 = var7.height;
                 var2.height = var0;
-                var0 = function(arg0) { // Original name: processImageOrFileUpload, environment: var1
+                var0 = function arg0() {
                     var0 = undefined;
                     var3 = _closure1_slot44;
                     var2 = var3.apply;
@@ -1028,7 +1028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.spoiler = var6;
                 var2.description = var5;
                 var2.i = var4;
-                var1 = function(arg0) { // Original name: processVideoUpload, environment: var1
+                var1 = function arg0() {
                     var0 = undefined;
                     var3 = _closure1_slot43;
                     var2 = var3.apply;
@@ -1057,7 +1057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 throw var0;
         }
     };
-    var0 = function(arg0, arg1) { // Original name: isPhotoKitAsset, environment: var15
+    var0 = function arg0, arg1() {
         _fun36962: for (var _fun36962_ip = 0;;) switch (_fun36962_ip) {
             case 0:
                 var2 = arg0;
@@ -1078,7 +1078,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var12 = function(arg0, arg1) { // Original name: shouldForceConvertToJPG, environment: var15
+    var12 = function arg0, arg1() {
         _fun36963: for (var _fun36963_ip = 0;;) switch (_fun36963_ip) {
             case 0:
                 var5 = arg0;
@@ -1132,7 +1132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var12;
-    var11 = function(arg0, arg1, arg2) { // Original name: shouldConvertToJPG, environment: var15
+    var11 = function arg0, arg1, arg2() {
         _fun36964: for (var _fun36964_ip = 0;;) switch (_fun36964_ip) {
             case 0:
                 var8 = arg0;
@@ -1267,7 +1267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var11;
-    var0 = function() { // Original name: _shouldConvertToPNG, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -1388,7 +1388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot36 = var0;
-    var10 = function(arg0) { // Original name: shouldResolveToMediaFilePath, environment: var15
+    var10 = function arg0() {
         _fun36968: for (var _fun36968_ip = 0;;) switch (_fun36968_ip) {
             case 0:
                 var3 = arg0;
@@ -1415,7 +1415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot37 = var10;
-    var9 = function(arg0, arg1) { // Original name: isVideo, environment: var15
+    var9 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -1433,7 +1433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot38 = var9;
-    var8 = function(arg0, arg1) { // Original name: isImage, environment: var15
+    var8 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -1451,7 +1451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot39 = var8;
-    var7 = function(arg0) { // Original name: getType, environment: var15
+    var7 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -1466,7 +1466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.type;
         return var0;
     };
-    var0 = function(arg0) { // Original name: convertVideo, environment: var15
+    var0 = function arg0() {
         _fun36972: for (var _fun36972_ip = 0;;) switch (_fun36972_ip) {
             case 0:
                 var1 = arg0;
@@ -2388,7 +2388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var1 = var3.bind(var2)(var1);
                         var _closure4_slot0 = var1;
-                        var0 = function() { // Original name: findCompatibleConfig, environment: var0
+                        var0 = function() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -2402,7 +2402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0 = undefined;
                     var2 = var2.bind(var0)();
-                    var4 = function(arg0) { // Original name: resolveWithConfig, environment: var1
+                    var4 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = {};
                         var0 = arg0;
@@ -2774,7 +2774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot40 = var0;
-    var0 = function(arg0) { // Original name: buildResolvedUpload, environment: var15
+    var0 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot42;
         var2 = var3.apply;
@@ -2785,7 +2785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot41 = var0;
-    var0 = function() { // Original name: _buildResolvedUpload, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -2926,7 +2926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot42 = var0;
-    var0 = function() { // Original name: _processVideoUpload, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -2976,7 +2976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.CELLULAR;
                         var16 = var3 === var2;
                     case 120:
-                        var2 = function(arg0, arg1) { // Original name: fetchVideoMetadata, environment: var2
+                        var2 = function arg0, arg1() {
                             var0 = undefined;
                             var3 = _closure1_slot46;
                             var2 = var3.apply;
@@ -3162,7 +3162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot43 = var0;
-    var0 = function() { // Original name: _processImageOrFileUpload, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -3482,7 +3482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4.useJpegliEncoder = var17;
                         var4.targetWidth = var6;
                         var4.targetHeight = var2;
-                        var2 = function(arg0) { // Original name: tryConvertImage, environment: var2
+                        var2 = function arg0() {
                             var0 = undefined;
                             var3 = _closure1_slot45;
                             var2 = var3.apply;
@@ -3621,7 +3621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot44 = var0;
-    var0 = function() { // Original name: _tryConvertImage, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -3710,7 +3710,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 213:
                         var8 = var3;
-                        var4 = function() { // Original name: shouldConvertToPNG, environment: var4
+                        var4 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot36;
                             var2 = var3.apply;
@@ -4024,7 +4024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot45 = var0;
-    var0 = function() { // Original name: _fetchVideoMetadata, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -4111,7 +4111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot46 = var0;
-    var6 = function(arg0, arg1, arg2) { // Original name: getCaptionLabel, environment: var15
+    var6 = function arg0, arg1, arg2() {
         _fun37006: for (var _fun37006_ip = 0;;) switch (_fun37006_ip) {
             case 0:
                 var2 = arg2;
@@ -4157,7 +4157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: getImageDimensionsIfMissing, environment: var15
+    var5 = function arg0, arg1, arg2, arg3() {
         var0 = undefined;
         var3 = _closure1_slot47;
         var2 = var3.apply;
@@ -4167,7 +4167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _getImageDimensionsIfMissing, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -4234,7 +4234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var4;
                     case 134: // try_start_0
                         var5 = var2;
-                        var4 = function(arg0) { // Original name: getImageDimensionByUri, environment: var4
+                        var4 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -4378,7 +4378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot47 = var0;
-    var4 = function() { // Original name: isHEVCEncodingSupported, environment: var15
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot48;
         var2 = var3.apply;
@@ -4388,7 +4388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var0 = function() { // Original name: _isHEVCEncodingSupported, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -4444,7 +4444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot48 = var0;
-    var3 = function(arg0) { // Original name: checkVideoEncodingSupport, environment: var15
+    var3 = function arg0() {
         var0 = undefined;
         var3 = _closure1_slot50;
         var2 = var3.apply;
@@ -4455,7 +4455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot49 = var3;
-    var0 = function() { // Original name: _checkVideoEncodingSupport, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -4524,7 +4524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot50 = var0;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: calculateImageQualityMetrics, environment: var15
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         var0 = undefined;
         var3 = _closure1_slot52;
         var2 = var3.apply;
@@ -4535,7 +4535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot51 = var1;
-    var0 = function() { // Original name: _calculateImageQualityMetrics, environment: var15
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -4863,7 +4863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.base64GIFRegex = var21;
     var2.openImagePicker = var20;
     var2.mediaManager = var19;
-    var19 = function() { // Original name: getImageCompressionQuality, environment: var15
+    var19 = function() {
         _fun37026: for (var _fun37026_ip = 0;;) switch (_fun37026_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -4898,7 +4898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getVideoQuality = var18;
     var2.resolveModeToVideoQualityForUserWithFeature = var17;
     var2.resolveModeToVideoQualityForFreeUser = var16;
-    var16 = function(arg0) { // Original name: cancelGetFileInfo, environment: var15
+    var16 = function arg0() {
         var1 = arg0;
         var1 = var1.item;
         var _closure2_slot0 = var1;
@@ -4963,7 +4963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.cancelGetFileInfo = var16;
-    var16 = function(arg0) { // Original name: getFileSize, environment: var15
+    var16 = function arg0() {
         _fun37029: for (var _fun37029_ip = 0;;) switch (_fun37029_ip) {
             case 0:
                 var7 = arg0;
@@ -5036,7 +5036,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getFileSize = var16;
-    var15 = function(arg0) { // Original name: getFileHash, environment: var15
+    var15 = function arg0() {
         _fun37030: for (var _fun37030_ip = 0;;) switch (_fun37030_ip) {
             case 0:
                 var5 = arg0;

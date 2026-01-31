@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function() { // Original name: getRendererProxy, environment: var1
+    var0 = function() {
         _fun2207: for (var _fun2207_ip = 0;;) switch (_fun2207_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var3 = function(arg0) { // Original name: getInstanceHandle, environment: var1
+    var3 = function arg0() {
         var1 = _closure1_slot3;
         var0 = arg0;
         var0 = var0[var1];
@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var _closure1_slot4 = var4;
     var2.getInstanceHandle = var3;
-    var3 = function(arg0, arg1) { // Original name: setInstanceHandle, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot3;
         var1 = arg1;
         var0 = arg0;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setInstanceHandle = var3;
-    var3 = function(arg0) { // Original name: getOwnerDocument, environment: var1
+    var3 = function arg0() {
         _fun2210: for (var _fun2210_ip = 0;;) switch (_fun2210_ip) {
             case 0:
                 var1 = _closure1_slot4;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getOwnerDocument = var3;
-    var3 = function(arg0, arg1) { // Original name: setOwnerDocument, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot4;
         var1 = arg1;
         var0 = arg0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.setOwnerDocument = var3;
-    var3 = function(arg0) { // Original name: getPublicInstanceFromInstanceHandle, environment: var1
+    var3 = function arg0() {
         _fun2212: for (var _fun2212_ip = 0;;) switch (_fun2212_ip) {
             case 0:
                 var3 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getPublicInstanceFromInstanceHandle = var3;
-    var3 = function(arg0) { // Original name: getNativeNodeReference, environment: var1
+    var3 = function arg0() {
         _fun2213: for (var _fun2213_ip = 0;;) switch (_fun2213_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getNativeNodeReference = var3;
-    var3 = function(arg0) { // Original name: getNativeElementReference, environment: var1
+    var3 = function arg0() {
         _fun2214: for (var _fun2214_ip = 0;;) switch (_fun2214_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getNativeElementReference = var3;
-    var1 = function(arg0) { // Original name: getNativeTextReference, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot6;
         var1 = undefined;
         var2 = arg0;

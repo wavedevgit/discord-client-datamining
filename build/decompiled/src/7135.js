@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var4 = function(arg0) { // Original name: consoleSandbox, environment: var0
+    var4 = function arg0() {
         _fun58569: for (var _fun58569_ip = 0;;) switch (_fun58569_ip) {
             case 0:
                 var0 = arg0;
@@ -104,27 +104,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var5;
     var1 = {};
     var _closure1_slot3 = var1;
-    var3 = function() { // Original name: makeLogger, environment: var0
+    var3 = function() {
         _fun58573: for (var _fun58573_ip = 0;;) switch (_fun58573_ip) {
             case 0:
                 var0 = false;
                 var _closure2_slot0 = var0;
                 var0 = {};
-                var2 = function() { // Original name: enable, environment: var1
+                var2 = function() {
                     var0 = true;
                     _closure2_slot0 = var0;
                     var0 = undefined;
                     return var0;
                 };
                 var0.enable = var2;
-                var2 = function() { // Original name: disable, environment: var1
+                var2 = function() {
                     var0 = false;
                     _closure2_slot0 = var0;
                     var0 = undefined;
                     return var0;
                 };
                 var0.disable = var2;
-                var2 = function() { // Original name: isEnabled, environment: var1
+                var2 = function() {
                     var0 = _closure2_slot0;
                     return var0;
                 };

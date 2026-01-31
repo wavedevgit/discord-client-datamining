@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/UserSettingsPremium.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun57432: for (var _fun57432_ip = 0;;) switch (_fun57432_ip) {
             case 0:
                 var1 = arg0;
@@ -777,7 +777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = {};
                 var27 = var7.subscriptionHeader;
                 var22.style = var27;
-                var26 = function() { // Original name: handleLearnMorePremiumGuild, environment: var26
+                var26 = function() {
                     _fun57446: for (var _fun57446_ip = 0;;) switch (_fun57446_ip) {
                         case 0:
                             var2 = _closure2_slot6;

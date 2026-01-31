@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/low_performance_mode/LowPerformanceAndroidDevices.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: isLowPerformanceDevice, environment: var1
+    var1 = function arg0() {
         _fun14180: for (var _fun14180_ip = 0;;) switch (_fun14180_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var12;
-    var9 = function(arg0) { // Original name: useAvailableTags, environment: var1
+    var9 = function arg0() {
         _fun71008: for (var _fun71008_ip = 0;;) switch (_fun71008_ip) {
             case 0:
                 var1 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var9;
-    var8 = function(arg0) { // Original name: useAppliedTags, environment: var1
+    var8 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot28;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var8;
-    var7 = function(arg0) { // Original name: useDefaultReactionEmoji, environment: var1
+    var7 = function arg0() {
         _fun71014: for (var _fun71014_ip = 0;;) switch (_fun71014_ip) {
             case 0:
                 var2 = arg0;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var7;
-    var6 = function(arg0) { // Original name: useVisibleForumTags, environment: var1
+    var6 = function arg0() {
         _fun71016: for (var _fun71016_ip = 0;;) switch (_fun71016_ip) {
             case 0:
                 var5 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var6;
-    var5 = function(arg0) { // Original name: useCanSearchForumPosts, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var5;
-    var4 = function(arg0) { // Original name: useForumSearchState, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var1 = var1.channelId;
         var _closure2_slot0 = var1;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var4;
-    var3 = function(arg0, arg1) { // Original name: useUnreadThreadsCountForParent, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var12.fileFinishedImporting;
     var10 = 'modules/forums/ForumHooks.tsx';
     var10 = var11.bind(var12)(var10);
-    var10 = function(arg0, arg1, arg2, arg3) { // Original name: useLoadForumUnreadCounts, environment: var1
+    var10 = function arg0, arg1, arg2, arg3() {
         var9 = arg0;
         var6 = arg1;
         var7 = arg2;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useLoadForumUnreadCounts = var10;
-    var10 = function(arg0) { // Original name: useExistingPin, environment: var1
+    var10 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -876,7 +876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useExistingPin = var10;
     var2.useAvailableTags = var9;
     var2.useAppliedTags = var8;
-    var8 = function(arg0) { // Original name: useSomeAppliedTags, environment: var1
+    var8 = function arg0() {
         _fun71034: for (var _fun71034_ip = 0;;) switch (_fun71034_ip) {
             case 0:
                 var4 = arguments[1];
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSomeAppliedTags = var8;
-    var8 = function(arg0, arg1) { // Original name: useFacepileUsers, environment: var1
+    var8 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = arg1;
@@ -987,7 +987,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useFacepileUsers = var8;
-    var8 = function(arg0, arg1) { // Original name: useLastActiveTimestamp, environment: var1
+    var8 = function arg0, arg1() {
         _fun71041: for (var _fun71041_ip = 0;;) switch (_fun71041_ip) {
             case 0:
                 var7 = arg0;
@@ -1110,7 +1110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useLastActiveTimestamp = var8;
-    var8 = function(arg0) { // Original name: useMostUsedReaction, environment: var1
+    var8 = function arg0() {
         _fun71045: for (var _fun71045_ip = 0;;) switch (_fun71045_ip) {
             case 0:
                 var1 = arg0;
@@ -1177,7 +1177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMostUsedReaction = var8;
     var2.useDefaultReactionEmoji = var7;
-    var7 = function(arg0) { // Original name: useSomeForumPostReactions, environment: var1
+    var7 = function arg0() {
         _fun71048: for (var _fun71048_ip = 0;;) switch (_fun71048_ip) {
             case 0:
                 var0 = arg0;
@@ -1323,7 +1323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSomeForumPostReactions = var7;
-    var7 = function(arg0) { // Original name: useMaxPossibleForumPostReactions, environment: var1
+    var7 = function arg0() {
         _fun71052: for (var _fun71052_ip = 0;;) switch (_fun71052_ip) {
             case 0:
                 var1 = arg0;
@@ -1494,7 +1494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMaxPossibleForumPostReactions = var7;
-    var7 = function(arg0) { // Original name: useMessageCount, environment: var1
+    var7 = function arg0() {
         _fun71055: for (var _fun71055_ip = 0;;) switch (_fun71055_ip) {
             case 0:
                 var2 = arg0;
@@ -1645,7 +1645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMessageCount = var7;
-    var7 = function(arg0, arg1) { // Original name: useForumPostMessageAuthor, environment: var1
+    var7 = function arg0, arg1() {
         _fun71059: for (var _fun71059_ip = 0;;) switch (_fun71059_ip) {
             case 0:
                 var7 = arg0;
@@ -1800,7 +1800,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useForumPostMessageAuthor = var7;
-    var7 = function(arg0) { // Original name: useForumPostAuthor, environment: var1
+    var7 = function arg0() {
         _fun71062: for (var _fun71062_ip = 0;;) switch (_fun71062_ip) {
             case 0:
                 var6 = arg0;
@@ -1911,7 +1911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useForumPostAuthor = var7;
-    var7 = function(arg0) { // Original name: getForumPostAuthor, environment: var1
+    var7 = function arg0() {
         _fun71066: for (var _fun71066_ip = 0;;) switch (_fun71066_ip) {
             case 0:
                 var4 = arg0;
@@ -1964,7 +1964,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getForumPostAuthor = var7;
-    var7 = function(arg0) { // Original name: useForumPostFirstMessageMarkup, environment: var1
+    var7 = function arg0() {
         _fun71067: for (var _fun71067_ip = 0;;) switch (_fun71067_ip) {
             case 0:
                 var1 = arg0;
@@ -2111,7 +2111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useForumPostFirstMessageMarkup = var7;
-    var7 = function(arg0) { // Original name: useCanManageChannel, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -2137,7 +2137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanManageChannel = var7;
-    var7 = function(arg0) { // Original name: useForumPostReadStates, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -2198,7 +2198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useForumPostReadStates = var7;
-    var7 = function(arg0) { // Original name: useChannelTemplate, environment: var1
+    var7 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var3 = _closure1_slot4;
@@ -2239,7 +2239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useChannelTemplate = var7;
-    var7 = function(arg0) { // Original name: useForumThreadsForChannelList, environment: var1
+    var7 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -2281,7 +2281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useForumThreadsForChannelList = var7;
     var2.useVisibleForumTags = var6;
-    var6 = function(arg0, arg1) { // Original name: useVisibleAppliedForumTags, environment: var1
+    var6 = function arg0, arg1() {
         var4 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var4;
@@ -2376,7 +2376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVisibleAppliedForumTags = var6;
     var2.useCanSearchForumPosts = var5;
-    var5 = function(arg0) { // Original name: useCanViewArchivedPosts, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -2402,7 +2402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanViewArchivedPosts = var5;
-    var5 = function(arg0) { // Original name: useForumSearchQuery, environment: var1
+    var5 = function arg0() {
         var1 = arg0;
         var1 = var1.channelId;
         var _closure2_slot0 = var1;
@@ -2440,7 +2440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useForumSearchQuery = var5;
     var2.useForumSearchState = var4;
-    var4 = function(arg0) { // Original name: useHasForumSearchQuery, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -2466,7 +2466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasForumSearchQuery = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: useAutomaticForumSearch, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun71087: for (var _fun71087_ip = 0;;) switch (_fun71087_ip) {
             case 0:
                 var10 = arg0;
@@ -2713,7 +2713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAutomaticForumSearch = var4;
     var2.useUnreadThreadsCountForParent = var3;
-    var1 = function(arg0) { // Original name: useForumActiveThreadIds, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.channel;
         var _closure2_slot0 = var6;

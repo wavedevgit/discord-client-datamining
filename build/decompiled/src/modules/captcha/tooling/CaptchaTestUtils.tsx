@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var9 = var8.bind(var9)(var3);
     var8 = var9.filter;
-    var3 = function(arg0) { // Original name: isHCaptchaDifficulty, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.value;
         var1 = 'string';

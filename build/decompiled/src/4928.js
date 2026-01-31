@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var0 = global;
     var _closure1_slot0 = var0;
-    var1 = function(arg0, arg1) { // Original name: hasProperty, environment: var3
+    var1 = function arg0, arg1() {
         var0 = global;
         var0 = var0.Object;
         var0 = var0.prototype;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var _closure1_slot2 = var4;
-    var4 = function(arg0) { // Original name: toArray, environment: var3
+    var4 = function arg0() {
         _fun44659: for (var _fun44659_ip = 0;;) switch (_fun44659_ip) {
             case 0:
                 var2 = arg0;
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.toArray = var4;
-    var4 = function(arg0, arg1) { // Original name: withPrevAndCurrent, environment: var3
+    var4 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = [null];
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.withPrevAndCurrent = var4;
     var2.hasProperty = var1;
-    var1 = function() { // Original name: isTestEnv, environment: var3
+    var1 = function() {
         _fun44662: for (var _fun44662_ip = 0;;) switch (_fun44662_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isTestEnv = var1;
-    var1 = function(arg0) { // Original name: tagMessage, environment: var3
+    var1 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.tagMessage = var1;
-    var1 = function() { // Original name: isFabric, environment: var3
+    var1 = function() {
         _fun44664: for (var _fun44664_ip = 0;;) switch (_fun44664_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isFabric = var1;
-    var1 = function() { // Original name: isReact19, environment: var3
+    var1 = function() {
         var0 = _closure1_slot2;
         var2 = var0.version;
         var1 = var2.startsWith;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isReact19 = var1;
-    var1 = function() { // Original name: isRemoteDebuggingEnabled, environment: var3
+    var1 = function() {
         _fun44666: for (var _fun44666_ip = 0;;) switch (_fun44666_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isRemoteDebuggingEnabled = var1;
-    var1 = function(arg0, arg1) { // Original name: deepEqual, environment: var3
+    var1 = function arg0, arg1() {
         _fun44667: for (var _fun44667_ip = 0;;) switch (_fun44667_ip) {
             case 0:
                 var1 = arg0;

@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var3.bind(var2)(var1);
             var2 = var1.default;
             var1 = var2.setGlobalHandler;
-            var0 = function(arg0, arg1) { // Original name: handleError, environment: var0
+            var0 = function arg0, arg1() {
                 _fun2617: for (var _fun2617_ip = 0;;) switch (_fun2617_ip) {
                     case 0:
                         var0 = arg0;

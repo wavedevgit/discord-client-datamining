@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubEmailConnectionWaitlist.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HubEmailConnectionWaitlist, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var17 = var1.school;
         var9 = var1.onClose;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure2_slot1;
             var1 = var2.setOptions;
             var0 = {};
-            var3 = function() { // Original name: headerLeft, environment: var3
+            var3 = function() {
                 var3 = _closure1_slot6;
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;

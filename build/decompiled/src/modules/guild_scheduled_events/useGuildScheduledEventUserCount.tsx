@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useGuildScheduledEventUserCount.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useGuildScheduledEventUserCount, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var6 = arg0;
         var7 = arg1;
         var5 = arg2;

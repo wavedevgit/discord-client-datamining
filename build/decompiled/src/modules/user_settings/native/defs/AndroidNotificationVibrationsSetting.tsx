@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var7
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var10;
     var9 = var9.NOTIFICATIONS;
     var1.parent = var9;
-    var9 = function() { // Original name: useAndroidNotificationVibrationsSettingValue, environment: var7
+    var9 = function() {
         _fun85232: for (var _fun85232_ip = 0;;) switch (_fun85232_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var9;
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useHasAndroidNotificationVibrationsSetting, environment: var7
+    var7 = function() {
         _fun85233: for (var _fun85233_ip = 0;;) switch (_fun85233_ip) {
             case 0:
                 var0 = _closure1_slot2;

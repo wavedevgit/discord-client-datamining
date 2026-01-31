@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FamilyCenterLinkingBannerParentContent, environment: var1
+    var0 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: FamilyCenterLinkingBannerTeenContent, environment: var1
+    var0 = function() {
         var3 = _closure1_slot5;
         var2 = _closure1_slot3;
         var1 = {};
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: FamilyCenterLinkingInstructionsRow, environment: var1
+    var0 = function arg0() {
         _fun81985: for (var _fun81985_ip = 0;;) switch (_fun81985_ip) {
             case 0:
                 var0 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterLinkingBanner.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterLinkingBanner, environment: var1
+    var1 = function() {
         _fun81986: for (var _fun81986_ip = 0;;) switch (_fun81986_ip) {
             case 0:
                 var0 = _closure1_slot7;

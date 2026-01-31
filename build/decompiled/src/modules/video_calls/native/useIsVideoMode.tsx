@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var1 = function() { // Original name: isVideoMode, environment: var3
+    var1 = function() {
         _fun66964: for (var _fun66964_ip = 0;;) switch (_fun66964_ip) {
             case 0:
                 var2 = arguments[0];
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/video_calls/native/useIsVideoMode.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: _default, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 5;

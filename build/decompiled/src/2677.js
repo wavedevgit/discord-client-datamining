@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = dependencyMap;
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
-            var0 = function(arg0) { // Original name: thisWeek, environment: var2
+            var0 = function arg0() {
                 var1 = _closure1_slot3;
                 var0 = arg0;
                 var1 = var1[var0];
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 'nextWeek': null,
                 'other': 'P'
             };
-            var4 = function(arg0, arg1, arg2) { // Original name: lastWeekFormat, environment: var2
+            var4 = function arg0, arg1, arg2() {
                 _fun22157: for (var _fun22157_ip = 0;;) switch (_fun22157_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.lastWeek = var4;
-            var4 = function(arg0, arg1, arg2) { // Original name: nextWeekFormat, environment: var2
+            var4 = function arg0, arg1, arg2() {
                 _fun22158: for (var _fun22158_ip = 0;;) switch (_fun22158_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var3.nextWeek = var4;
             var _closure1_slot4 = var3;
-            var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
+            var2 = function arg0, arg1, arg2, arg3() {
                 _fun22159: for (var _fun22159_ip = 0;;) switch (_fun22159_ip) {
                     case 0:
                         var1 = _closure1_slot4;

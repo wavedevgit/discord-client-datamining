@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'utils/native/FabricUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function() { // Original name: isFabric, environment: var4
+    var4 = function() {
         _fun35049: for (var _fun35049_ip = 0;;) switch (_fun35049_ip) {
             case 0:
                 var1 = _closure1_slot0;

@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var3;
     var3 = {};
     var _closure1_slot1 = var3;
-    var1 = function(arg0) { // Original name: useLazyValue, environment: var1
+    var1 = function arg0() {
         _fun57633: for (var _fun57633_ip = 0;;) switch (_fun57633_ip) {
             case 0:
                 var0 = _closure1_slot0;

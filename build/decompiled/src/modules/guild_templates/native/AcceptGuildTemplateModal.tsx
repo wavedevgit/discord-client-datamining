@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: ConnectedAcceptGuildTemplate, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var13 = var0.code;
         var _closure2_slot0 = var13;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.code = var13;
         var4.guildTemplate = var12;
         var4.name = var11;
-        var11 = function(arg0) { // Original name: setName, environment: var7
+        var11 = function arg0() {
             var2 = _closure2_slot3;
             var1 = undefined;
             var0 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var8 = var9.bind(var3)(var8);
         var4.chooseIcon = var8;
-        var7 = function() { // Original name: createServer, environment: var7
+        var7 = function() {
             _fun78600: for (var _fun78600_ip = 0;;) switch (_fun78600_ip) {
                 case 0:
                     var3 = _closure2_slot1;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_templates/native/AcceptGuildTemplateModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AcceptGuildTemplateModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var5 = var0.code;
         var _closure2_slot0 = var5;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = {};
             var0 = _closure2_slot0;
             var2.code = var0;
-            var1 = function(arg0) { // Original name: getScreens, environment: var0
+            var1 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = {};
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var3 = var4.bind(var5)(var3);
                 var2.headerLeft = var3;
-                var1 = function() { // Original name: render, environment: var1
+                var1 = function() {
                     var3 = _closure1_slot9;
                     var2 = _closure1_slot11;
                     var1 = {};

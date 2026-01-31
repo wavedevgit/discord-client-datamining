@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0) { // Original name: useStoreWithEqualityFn, environment: var3
+    var1 = function arg0() {
         _fun8567: for (var _fun8567_ip = 0;;) switch (_fun8567_ip) {
             case 0:
                 var0 = arg0;
@@ -65,12 +65,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var5.bind(var0)(var4);
     var _closure1_slot2 = var4;
-    var4 = function(arg0) { // Original name: identity, environment: var3
+    var4 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot3 = var4;
-    var4 = function(arg0, arg1) { // Original name: createWithEqualityFnImpl, environment: var3
+    var4 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = arg0;
         var3 = var2.bind(var3)(var1);
         var _closure2_slot1 = var3;
-        var0 = function(arg0) { // Original name: useBoundStoreWithEqualityFn, environment: var0
+        var0 = function arg0() {
             _fun8570: for (var _fun8570_ip = 0;;) switch (_fun8570_ip) {
                 case 0:
                     var4 = undefined;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0, arg1) { // Original name: createWithEqualityFn, environment: var3
+    var3 = function arg0, arg1() {
         _fun8571: for (var _fun8571_ip = 0;;) switch (_fun8571_ip) {
             case 0:
                 var4 = arg0;

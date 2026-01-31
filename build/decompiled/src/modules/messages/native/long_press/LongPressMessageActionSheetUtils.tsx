@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var7 = function(arg0, arg1) { // Original name: getContextBarCancelReason, environment: var1
+    var7 = function arg0, arg1() {
         _fun73593: for (var _fun73593_ip = 0;;) switch (_fun73593_ip) {
             case 0:
                 var2 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var7;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: handleEdit, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun73594: for (var _fun73594_ip = 0;;) switch (_fun73594_ip) {
             case 0:
                 var4 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var6;
-    var0 = function(arg0, arg1) { // Original name: handleConfirmDelete, environment: var1
+    var0 = function arg0, arg1() {
         _fun73595: for (var _fun73595_ip = 0;;) switch (_fun73595_ip) {
             case 0:
                 var5 = arguments[2];
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var5 = function(arg0, arg1) { // Original name: handleCreateThread, environment: var1
+    var5 = function arg0, arg1() {
         _fun73596: for (var _fun73596_ip = 0;;) switch (_fun73596_ip) {
             case 0:
                 var2 = arg0;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var5;
-    var4 = function(arg0, arg1) { // Original name: handleCopyMessageLink, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var6 = arg1;
         var4 = _closure1_slot1;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var4;
-    var0 = function(arg0) { // Original name: getChannelAnalyticsMetadata, environment: var1
+    var0 = function arg0() {
         _fun73598: for (var _fun73598_ip = 0;;) switch (_fun73598_ip) {
             case 0:
                 var2 = arg0;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: handleCopyLink, environment: var1
+    var0 = function arg0() {
         _fun73599: for (var _fun73599_ip = 0;;) switch (_fun73599_ip) {
             case 0:
                 var6 = arg0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var3 = function(arg0) { // Original name: handleCopyId, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 30;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: handleSuppressEmbeds, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun73601: for (var _fun73601_ip = 0;;) switch (_fun73601_ip) {
             case 0:
                 var3 = arg1;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.YEHppG;
                 var5 = var6.bind(var7)(var5);
                 var1.confirmText = var5;
-                var4 = function() { // Original name: onConfirm, environment: var4
+                var4 = function() {
                     var4 = _closure2_slot0;
                     var3 = _closure2_slot1;
                     var2 = _closure1_slot1;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: handleRemoveAttachment, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun73603: for (var _fun73603_ip = 0;;) switch (_fun73603_ip) {
             case 0:
                 var3 = arg1;
@@ -730,13 +730,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.kFwAsa;
                 var5 = var6.bind(var7)(var5);
                 var1.confirmText = var5;
-                var4 = function() { // Original name: onConfirm, environment: var4
+                var4 = function() {
                     var4 = _closure2_slot0;
                     var3 = _closure2_slot1;
                     var0 = _closure2_slot2;
                     var0 = var0.source;
                     var2 = var0.id;
-                    var1 = function(arg0, arg1, arg2) { // Original name: handleConfirmRemoveAttachment, environment: var0
+                    var1 = function arg0, arg1, arg2() {
                         var1 = arg1;
                         var2 = arg2;
                         var _closure4_slot0 = var2;
@@ -854,7 +854,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleCreateThread = var5;
     var2.handleCopyMessageLink = var4;
     var2.handleCopyId = var3;
-    var1 = function(arg0) { // Original name: longPressMessageOptionHandler, environment: var1
+    var1 = function arg0() {
         _fun73607: for (var _fun73607_ip = 0;;) switch (_fun73607_ip) {
             case 0:
                 var0 = arg0;
@@ -1686,7 +1686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.paths;
                 var16 = var16.bind(var0)(var14, var7);
                 var14 = {};
-                var7 = function(arg0) { // Original name: createReminder, environment: var4
+                var7 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 54;
@@ -1707,7 +1707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var14.createReminder = var7;
-                var7 = function() { // Original name: removeReminder, environment: var4
+                var7 = function() {
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 54;
@@ -1752,7 +1752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.paths;
                 var16 = var16.bind(var0)(var14, var7);
                 var14 = {};
-                var7 = function(arg0) { // Original name: createReminder, environment: var4
+                var7 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 54;
@@ -2011,7 +2011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun73607_ip = 5393;
                 continue _fun73607;
             case 3938:
-                var7 = function(arg0) { // Original name: handleSaveVideo, environment: var4
+                var7 = function arg0() {
                     _fun73619: for (var _fun73619_ip = 0;;) switch (_fun73619_ip) {
                         case 0:
                             var2 = arg0;
@@ -2099,7 +2099,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun73607_ip = 5393;
                 continue _fun73607;
             case 3955:
-                var7 = function(arg0, arg1) { // Original name: handleSaveImage, environment: var4
+                var7 = function arg0, arg1() {
                     _fun73616: for (var _fun73616_ip = 0;;) switch (_fun73616_ip) {
                         case 0:
                             var2 = arg0;
@@ -2418,7 +2418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun73607
                 }
             case 4629:
-                var7 = function(arg0, arg1, arg2) { // Original name: handleDelete, environment: var4
+                var7 = function arg0, arg1, arg2() {
                     _fun73614: for (var _fun73614_ip = 0;;) switch (_fun73614_ip) {
                         case 0:
                             var3 = arg1;
@@ -2504,7 +2504,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.p89ACt;
                             var5 = var6.bind(var7)(var5);
                             var1.confirmText = var5;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot21;
                                 var2 = _closure3_slot0;
                                 var0 = _closure3_slot1;
@@ -2555,7 +2555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun73607_ip = 5393;
                 continue _fun73607;
             case 4767:
-                var7 = function(arg0, arg1, arg2) { // Original name: handleUnpin, environment: var4
+                var7 = function arg0, arg1, arg2() {
                     _fun73612: for (var _fun73612_ip = 0;;) switch (_fun73612_ip) {
                         case 0:
                             var3 = arg1;
@@ -2641,7 +2641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.p89ACt;
                             var5 = var6.bind(var7)(var5);
                             var1.confirmText = var5;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 22;
@@ -2664,7 +2664,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun73607_ip = 5393;
                 continue _fun73607;
             case 4786:
-                var7 = function(arg0, arg1, arg2) { // Original name: handlePin, environment: var4
+                var7 = function arg0, arg1, arg2() {
                     _fun73610: for (var _fun73610_ip = 0;;) switch (_fun73610_ip) {
                         case 0:
                             var3 = arg1;
@@ -2750,7 +2750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.p89ACt;
                             var5 = var6.bind(var7)(var5);
                             var1.confirmText = var5;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot1;
                                 var7 = _closure1_slot2;
                                 var0 = 22;
@@ -2790,7 +2790,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun73607_ip = 5393;
                 continue _fun73607;
             case 4805:
-                var4 = function(arg0, arg1, arg2) { // Original name: handlePublish, environment: var4
+                var4 = function arg0, arg1, arg2() {
                     _fun73608: for (var _fun73608_ip = 0;;) switch (_fun73608_ip) {
                         case 0:
                             var11 = arg0;
@@ -2866,7 +2866,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5["cY+Oob"];
                             var5 = var6.bind(var7)(var5);
                             var1.confirmText = var5;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 17;

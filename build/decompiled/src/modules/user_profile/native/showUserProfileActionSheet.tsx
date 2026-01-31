@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var4 = function(arg0) { // Original name: getUserProfileActionSheetKey, environment: var1
+    var4 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var4;
-    var3 = function(arg0) { // Original name: getUserProfileIgnoredSpeedBumpActionSheetKey, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var3;
-    var5 = function(arg0) { // Original name: showUserProfileActionSheet, environment: var1
+    var5 = function arg0() {
         _fun59464: for (var _fun59464_ip = 0;;) switch (_fun59464_ip) {
             case 0:
                 var1 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.default = var5;
     var2.getUserProfileActionSheetKey = var4;
-    var4 = function(arg0) { // Original name: getUserProfileBlockedSpeedBumpActionSheetKey, environment: var1
+    var4 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUserProfileBlockedSpeedBumpActionSheetKey = var4;
     var2.getUserProfileIgnoredSpeedBumpActionSheetKey = var3;
-    var1 = function(arg0) { // Original name: showUserProfileActionSheetPostConnection, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = _closure1_slot4;

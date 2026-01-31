@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun55082: for (var _fun55082_ip = 0;;) switch (_fun55082_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun55085: for (var _fun55085_ip = 0;;) switch (_fun55085_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun55087: for (var _fun55087_ip = 0;;) switch (_fun55087_ip) {
             case 0:
                 var3 = arg0;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: handleReferralTrialResolve, environment: var3
+    var0 = function arg0() {
         var2 = _closure1_slot14;
         var1 = var2.add;
         var0 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var8 = function(arg0) { // Original name: handleLoadMessages, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var2 = var0.messages;
         var1 = var2.forEach;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var0 = function(arg0) { // Original name: resolveUserReferralTrialId, environment: var3
+    var0 = function arg0() {
         _fun55091: for (var _fun55091_ip = 0;;) switch (_fun55091_ip) {
             case 0:
                 var5 = arg0;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot22 = var7;
     var _closure1_slot23 = var7;
     var _closure1_slot24 = var1;
-    var1 = function() { // Original name: emitChanges, environment: var3
+    var1 = function() {
         var0 = true;
         return var0;
     };
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ReferralTrialStore, environment: var5
+        var3 = function() {
             _fun55095: for (var _fun55095_ip = 0;;) switch (_fun55095_ip) {
                 case 0:
                     var3 = this;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var1 = var3.waitFor;
             var4 = _closure1_slot8;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'checkAndFetchReferralsRemaining';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun55097: for (var _fun55097_ip = 0;;) switch (_fun55097_ip) {
                 case 0:
                     var1 = _closure1_slot10;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getReferralsRemaining';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.checkAndFetchReferralsRemaining;
             var0 = var0.bind(var1)();
@@ -651,7 +651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSentUserIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1.checkAndFetchReferralsRemaining;
             var0 = var0.bind(var1)();
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingReferralsRemaining';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRelevantUserTrialOffer';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot16;
             var1 = var2.get;
             var0 = arg0;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isResolving';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot14;
             var1 = var2.has;
             var0 = arg0;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getEligibleUsers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -711,7 +711,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchingEligibleUsers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot20;
             return var0;
         };
@@ -720,7 +720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getNextIndexOfEligibleUsers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot21;
             return var0;
         };
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getIsEligibleToSendReferrals';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot22;
             return var0;
         };
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHasEligibleFriends';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot23;
             return var0;
         };
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRefreshAt';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot24;
             return var0;
         };
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllRelevantReferralTrialOffers';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -771,7 +771,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRecipientStatus';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var15 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: handleReferralTrialOfferUpdate, environment: var3
+    var9 = function arg0() {
         _fun55111: for (var _fun55111_ip = 0;;) switch (_fun55111_ip) {
             case 0:
                 var1 = arg0;
@@ -847,7 +847,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_REFERRAL_TRIAL_OFFER_UPDATE = var9;
-    var9 = function(arg0) { // Original name: handleReferralsRemainingFetchStart, environment: var3
+    var9 = function arg0() {
         _fun55113: for (var _fun55113_ip = 0;;) switch (_fun55113_ip) {
             case 0:
                 var1 = arg0;
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_REFERRALS_REMAINING_FETCH_START = var9;
-    var9 = function(arg0) { // Original name: handleReferralsRemainingFetchSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.referrals_remaining;
         var7 = var0.sent_user_ids;
@@ -902,7 +902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_REFERRALS_REMAINING_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleReferralsRemainingFetchFail, environment: var3
+    var9 = function arg0() {
         _fun55115: for (var _fun55115_ip = 0;;) switch (_fun55115_ip) {
             case 0:
                 var1 = arg0;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_REFERRALS_REMAINING_FETCH_FAIL = var9;
-    var9 = function(arg0) { // Original name: handleCreateReferralSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.userTrialOffer;
         var4 = _closure1_slot0;
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_CREATE_REFERRAL_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleCreateReferralsSuccess, environment: var3
+    var9 = function arg0() {
         _fun55117: for (var _fun55117_ip = 0;;) switch (_fun55117_ip) {
             case 0:
                 var0 = arg0;
@@ -1010,7 +1010,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CREATE_REFERRALS_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleReferralTrialResolveSuccess, environment: var3
+    var9 = function arg0() {
         _fun55118: for (var _fun55118_ip = 0;;) switch (_fun55118_ip) {
             case 0:
                 var0 = arg0;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_REFERRAL_RESOLVE_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleReferralTrialResolveFail, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.userTrialOfferId;
         var3 = _closure1_slot14;
@@ -1052,14 +1052,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.BILLING_REFERRAL_RESOLVE_FAIL = var9;
-    var9 = function() { // Original name: handleReferralsFetchEligibleUsersStart, environment: var3
+    var9 = function() {
         var0 = true;
         _closure1_slot20 = var0;
         var0 = undefined;
         return var0;
     };
     var1.REFERRALS_FETCH_ELIGIBLE_USER_START = var9;
-    var9 = function(arg0) { // Original name: handleReferralsFetchEligibleUsersSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.users;
         var1 = var0.nextIndex;
@@ -1071,7 +1071,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS = var9;
-    var9 = function() { // Original name: handleReferralsFetchEligibleUsersFail, environment: var3
+    var9 = function() {
         var0 = false;
         _closure1_slot20 = var0;
         var0 = undefined;
@@ -1079,7 +1079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.REFERRALS_FETCH_ELIGIBLE_USER_FAIL = var9;
     var1.LOAD_MESSAGES_SUCCESS = var8;
-    var9 = function(arg0) { // Original name: handleMessage, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.message;
         var1 = _closure1_slot30;
@@ -1089,7 +1089,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.MESSAGE_CREATE = var9;
     var1.LOAD_MESSAGES_AROUND_SUCCESS = var8;
-    var3 = function() { // Original name: handleReset, environment: var3
+    var3 = function() {
         var2 = null;
         _closure1_slot10 = var2;
         var0 = global;

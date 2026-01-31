@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/user_profile/native/UserProfileActivityVoiceChannel.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: UserProfileActivityVoiceChannel, environment: var1
+            var1 = function arg0() {
                 _fun62493: for (var _fun62493_ip = 0;;) switch (_fun62493_ip) {
                     case 0:
                         var0 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4.accessibilityRole = var8;
                         var8 = var14.name;
                         var4.accessibilityLabel = var8;
-                        var8 = function() { // Original name: onPress, environment: var10
+                        var8 = function() {
                             var2 = _closure2_slot2;
                             var1 = {};
                             var0 = 'PRESS_VOICE_CHANNEL_ICON';
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var4 = var4.name;
                             var1.content = var4;
-                            var4 = function() { // Original name: icon, environment: var4
+                            var4 = function() {
                                 var3 = _closure1_slot6;
                                 var1 = _closure1_slot1;
                                 var6 = _closure1_slot2;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var11["9C444m"];
                         var11 = var14.bind(var19)(var11);
                         var7.accessibilityHint = var11;
-                        var11 = function() { // Original name: onPress, environment: var10
+                        var11 = function() {
                             var3 = _closure2_slot2;
                             var1 = {};
                             var0 = 'OPEN_VOICE_CHANNEL';
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8.count = var16;
                         var8 = var11.bind(var14)(var9, var8);
                         var5.accessibilityLabel = var8;
-                        var8 = function() { // Original name: onPress, environment: var10
+                        var8 = function() {
                             var3 = _closure2_slot2;
                             var2 = {};
                             var0 = 'PRESS_VOICE_CHANNEL_AVATARS';
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3.users = var2;
                             var1 = _closure2_slot1;
                             var3.channel = var1;
-                            var1 = function(arg0) { // Original name: onPressUser, environment: var1
+                            var1 = function arg0() {
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
                                 var0 = 25;

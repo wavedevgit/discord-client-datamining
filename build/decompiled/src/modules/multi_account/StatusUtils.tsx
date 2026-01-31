@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1) { // Original name: isSameDate, environment: var1
+    var0 = function arg0, arg1() {
         _fun69643: for (var _fun69643_ip = 0;;) switch (_fun69643_ip) {
             case 0:
                 var2 = arg0;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/multi_account/StatusUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getStatusExpiryParts, environment: var1
+    var1 = function arg0() {
         _fun69644: for (var _fun69644_ip = 0;;) switch (_fun69644_ip) {
             case 0:
                 var0 = global;

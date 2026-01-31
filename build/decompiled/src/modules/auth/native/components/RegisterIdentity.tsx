@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: RegisterIdentityBase, environment: var1
+    var0 = function arg0() {
         _fun100273: for (var _fun100273_ip = 0;;) switch (_fun100273_ip) {
             case 0:
                 var1 = arg0;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot7 = var3;
                 var _closure2_slot8 = var3;
                 var _closure2_slot9 = var3;
-                var21 = function() { // Original name: handleSubmit, environment: var0
+                var21 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot10;
                     var2 = var3.apply;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var0, var1);
                     return var0;
                 };
-                var1 = function() { // Original name: _handleSubmit, environment: var0
+                var1 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/RegisterIdentity.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: RegisterIdentity, environment: var1
+    var1 = function() {
         var1 = _closure1_slot16;
         var3 = undefined;
         var10 = var1.bind(var3)();

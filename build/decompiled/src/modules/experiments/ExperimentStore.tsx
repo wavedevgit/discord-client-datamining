@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var9;
             var _closure1_slot2 = var6;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun17649: for (var _fun17649_ip = 0;;) switch (_fun17649_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot35 = var0;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+            var0 = function arg0, arg1() {
                 _fun17652: for (var _fun17652_ip = 0;;) switch (_fun17652_ip) {
                     case 0:
                         var2 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot36 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+            var0 = function arg0, arg1() {
                 _fun17654: for (var _fun17654_ip = 0;;) switch (_fun17654_ip) {
                     case 0:
                         var3 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot37 = var0;
-            var0 = function(arg0) { // Original name: getHash, environment: var1
+            var0 = function arg0() {
                 _fun17655: for (var _fun17655_ip = 0;;) switch (_fun17655_ip) {
                     case 0:
                         var2 = arg0;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot38 = var0;
-            var0 = function(arg0, arg1) { // Original name: isTriggerDebuggingEnabled, environment: var1
+            var0 = function arg0, arg1() {
                 _fun17656: for (var _fun17656_ip = 0;;) switch (_fun17656_ip) {
                     case 0:
                         var0 = arg0;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot39 = var0;
-            var0 = function(arg0) { // Original name: userCanUseExperiments, environment: var1
+            var0 = function arg0() {
                 _fun17657: for (var _fun17657_ip = 0;;) switch (_fun17657_ip) {
                     case 0:
                         var1 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot40 = var0;
-            var0 = function(arg0, arg1, arg2, arg3) { // Original name: getTrackExposureExperimentKey, environment: var1
+            var0 = function arg0, arg1, arg2, arg3() {
                 _fun17658: for (var _fun17658_ip = 0;;) switch (_fun17658_ip) {
                     case 0:
                         var0 = arg1;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot41 = var0;
-            var0 = function(arg0) { // Original name: getTrackExposureExperimentHash, environment: var1
+            var0 = function arg0() {
                 _fun17659: for (var _fun17659_ip = 0;;) switch (_fun17659_ip) {
                     case 0:
                         var0 = arg0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot42 = var0;
-            var0 = function(arg0, arg1) { // Original name: _hasExperimentTrackedExposure, environment: var1
+            var0 = function arg0, arg1() {
                 _fun17660: for (var _fun17660_ip = 0;;) switch (_fun17660_ip) {
                     case 0:
                         var2 = _closure1_slot22;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot43 = var0;
-            var0 = function(arg0) { // Original name: trackExposure, environment: var1
+            var0 = function arg0() {
                 _fun17661: for (var _fun17661_ip = 0;;) switch (_fun17661_ip) {
                     case 0:
                         var0 = arg0;
@@ -951,7 +951,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot44 = var0;
-            var0 = function(arg0) { // Original name: _loadGuildFilter, environment: var1
+            var0 = function arg0() {
                 _fun17662: for (var _fun17662_ip = 0;;) switch (_fun17662_ip) {
                     case 0:
                         var4 = arg0;
@@ -1021,7 +1021,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot45 = var0;
-            var0 = function(arg0) { // Original name: _loadOverrides, environment: var1
+            var0 = function arg0() {
                 _fun17663: for (var _fun17663_ip = 0;;) switch (_fun17663_ip) {
                     case 0:
                         var2 = arg0;
@@ -1078,7 +1078,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot46 = var0;
-            var0 = function(arg0) { // Original name: _loadPopulation, environment: var1
+            var0 = function arg0() {
                 var4 = _closure1_slot8;
                 var3 = undefined;
                 var1 = arg0;
@@ -1161,7 +1161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot47 = var0;
-            var0 = function(arg0) { // Original name: handleLoadedExperiments, environment: var1
+            var0 = function arg0() {
                 _fun17667: for (var _fun17667_ip = 0;;) switch (_fun17667_ip) {
                     case 0:
                         var0 = arg0;
@@ -1341,7 +1341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot48 = var0;
-            var0 = function(arg0) { // Original name: processRawExperiments, environment: var1
+            var0 = function arg0() {
                 _fun17668: for (var _fun17668_ip = 0;;) switch (_fun17668_ip) {
                     case 0:
                         var0 = arg0;
@@ -1915,7 +1915,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot49 = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: computeGuildExperimentBucketFromPopulationsOrNull, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun17672: for (var _fun17672_ip = 0;;) switch (_fun17672_ip) {
                     case 0:
                         var13 = arg0;
@@ -2063,7 +2063,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot50 = var0;
-            var0 = function(arg0, arg1) { // Original name: computeGuildExperimentDescriptor, environment: var1
+            var0 = function arg0, arg1() {
                 _fun17675: for (var _fun17675_ip = 0;;) switch (_fun17675_ip) {
                     case 0:
                         var6 = arg0;
@@ -2328,7 +2328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot51 = var0;
-            var0 = function(arg0) { // Original name: processGuildExperimentPopulationFromCache, environment: var1
+            var0 = function arg0() {
                 _fun17676: for (var _fun17676_ip = 0;;) switch (_fun17676_ip) {
                     case 0:
                         var14 = arg0;
@@ -2425,7 +2425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot52 = var0;
-            var0 = function(arg0) { // Original name: handleOverlayInitialize, environment: var1
+            var0 = function arg0() {
                 _fun17677: for (var _fun17677_ip = 0;;) switch (_fun17677_ip) {
                     case 0:
                         var1 = arg0;
@@ -2485,14 +2485,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot53 = var0;
-            var0 = function() { // Original name: handleFetchFailure, environment: var1
+            var0 = function() {
                 var0 = true;
                 _closure1_slot21 = var0;
                 var0 = undefined;
                 return var0;
             };
             var _closure1_slot54 = var0;
-            var0 = function(arg0) { // Original name: handleLogout, environment: var1
+            var0 = function arg0() {
                 _fun17679: for (var _fun17679_ip = 0;;) switch (_fun17679_ip) {
                     case 0:
                         var0 = arg0;
@@ -2555,7 +2555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot55 = var0;
-            var0 = function() { // Original name: handleLogin, environment: var1
+            var0 = function() {
                 var0 = false;
                 _closure1_slot21 = var0;
                 var0 = {};
@@ -2575,7 +2575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot56 = var0;
-            var0 = function() { // Original name: loadLocalOverrides, environment: var1
+            var0 = function() {
                 _fun17681: for (var _fun17681_ip = 0;;) switch (_fun17681_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -2809,7 +2809,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot57 = var0;
-            var0 = function() { // Original name: saveExperimentOverrides, environment: var1
+            var0 = function() {
                 _fun17682: for (var _fun17682_ip = 0;;) switch (_fun17682_ip) {
                     case 0: // try_start_0
                         var3 = _closure1_slot0;
@@ -2887,7 +2887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot58 = var0;
-            var0 = function(arg0) { // Original name: saveTrackedExposureExperiments, environment: var1
+            var0 = function arg0() {
                 _fun17683: for (var _fun17683_ip = 0;;) switch (_fun17683_ip) {
                     case 0:
                         var4 = arg0;
@@ -2935,7 +2935,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot59 = var0;
-            var0 = function(arg0) { // Original name: handleExperimentOverrideBucket, environment: var1
+            var0 = function arg0() {
                 _fun17684: for (var _fun17684_ip = 0;;) switch (_fun17684_ip) {
                     case 0:
                         var0 = arg0;
@@ -3083,7 +3083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot60 = var0;
-            var0 = function(arg0) { // Original name: handleGuildChange, environment: var1
+            var0 = function arg0() {
                 _fun17685: for (var _fun17685_ip = 0;;) switch (_fun17685_ip) {
                     case 0:
                         var0 = arg0;
@@ -3262,7 +3262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var9.now;
             var3 = var3.bind(var9)();
             var3 = function(arg0) { // Environment: var1
-                var3 = function() { // Original name: ExperimentStore, environment: var5
+                var3 = function() {
                     _fun17688: for (var _fun17688_ip = 0;;) switch (_fun17688_ip) {
                         case 0:
                             var4 = this;
@@ -3335,7 +3335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var0 = 'initialize';
                 var4.key = var0;
-                var0 = function() { // Original name: value, environment: var5
+                var0 = function() {
                     _fun17689: for (var _fun17689_ip = 0;;) switch (_fun17689_ip) {
                         case 0:
                             var2 = this;
@@ -3419,7 +3419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'loadCache';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun17690: for (var _fun17690_ip = 0;;) switch (_fun17690_ip) {
                         case 0:
                             var3 = this;
@@ -3489,7 +3489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'takeSnapshot';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = {};
                     var1 = _closure2_slot0;
                     var1 = var1.LATEST_SNAPSHOT_VERSION;
@@ -3506,7 +3506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hasLoadedExperiments';
                 var4.key = var6;
-                var6 = function() { // Original name: get, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot21;
                     return var0;
                 };
@@ -3515,7 +3515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hasRegisteredExperiment';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var1 = _closure1_slot24;
                     var0 = arg0;
                     var1 = var1[var0];
@@ -3528,7 +3528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getUserExperimentDescriptor';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun17696: for (var _fun17696_ip = 0;;) switch (_fun17696_ip) {
                         case 0:
                             var4 = arg0;
@@ -3566,7 +3566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getGuildExperimentDescriptor';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     _fun17697: for (var _fun17697_ip = 0;;) switch (_fun17697_ip) {
                         case 0:
                             var6 = arg0;
@@ -3624,7 +3624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getUserExperimentBucket';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun17698: for (var _fun17698_ip = 0;;) switch (_fun17698_ip) {
                         case 0:
                             var2 = this;
@@ -3652,7 +3652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getGuildExperimentBucket';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     _fun17699: for (var _fun17699_ip = 0;;) switch (_fun17699_ip) {
                         case 0:
                             var3 = this;
@@ -3681,7 +3681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getAllUserExperimentDescriptors';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot26;
                     return var0;
                 };
@@ -3690,7 +3690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getGuildExperiments';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot27;
                     return var0;
                 };
@@ -3699,7 +3699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getLoadedUserExperiment';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var1 = _closure1_slot26;
                     var3 = _closure1_slot38;
                     var2 = undefined;
@@ -3713,7 +3713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getLoadedGuildExperiment';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     var1 = _closure1_slot27;
                     var3 = _closure1_slot38;
                     var2 = undefined;
@@ -3727,7 +3727,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getRecentExposures';
                 var4.key = var6;
-                var6 = function(arg0, arg1) { // Original name: value, environment: var5
+                var6 = function arg0, arg1() {
                     var1 = global;
                     var2 = var1.HermesInternal;
                     var6 = var2.concat;
@@ -3859,7 +3859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getRegisteredExperiments';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     var0 = _closure1_slot24;
                     return var0;
                 };
@@ -3868,7 +3868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getAllExperimentOverrideDescriptors';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun17708: for (var _fun17708_ip = 0;;) switch (_fun17708_ip) {
                         case 0:
                             var0 = _closure1_slot31;
@@ -3898,7 +3898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getExperimentOverrideDescriptor';
                 var4.key = var6;
-                var6 = function(arg0) { // Original name: value, environment: var5
+                var6 = function arg0() {
                     _fun17709: for (var _fun17709_ip = 0;;) switch (_fun17709_ip) {
                         case 0:
                             var3 = arg0;
@@ -3930,7 +3930,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getAllExperimentAssignments';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun17710: for (var _fun17710_ip = 0;;) switch (_fun17710_ip) {
                         case 0:
                             var0 = {};
@@ -3999,7 +3999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'getSerializedState';
                 var4.key = var6;
-                var6 = function() { // Original name: value, environment: var5
+                var6 = function() {
                     _fun17712: for (var _fun17712_ip = 0;;) switch (_fun17712_ip) {
                         case 0:
                             var2 = {};
@@ -4079,7 +4079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = 'hasExperimentTrackedExposure';
                 var4.key = var6;
-                var5 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+                var5 = function arg0, arg1, arg2, arg3() {
                     var4 = arg1;
                     var3 = _closure1_slot43;
                     var7 = _closure1_slot41;
@@ -4119,7 +4119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = 'modules/experiments/ExperimentStore.tsx';
             var4 = var5.bind(var6)(var4);
             var2.default = var3;
-            var1 = function(arg0) { // Original name: registerExperiment, environment: var1
+            var1 = function arg0() {
                 var0 = arg0;
                 var2 = var0.experimentId;
                 var7 = var0.experimentType;

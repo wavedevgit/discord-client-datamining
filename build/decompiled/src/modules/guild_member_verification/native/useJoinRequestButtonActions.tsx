@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/useJoinRequestButtonActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useJoinRequestButtonActions, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun90825: for (var _fun90825_ip = 0;;) switch (_fun90825_ip) {
             case 0:
                 var10 = arg0;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var8 = var8.WXHcq5;
                                 var8 = var9.bind(var10)(var8);
                                 var5.content = var8;
-                                var8 = function() { // Original name: icon, environment: var8
+                                var8 = function() {
                                     var3 = _closure1_slot8;
                                     var1 = _closure1_slot0;
                                     var6 = _closure1_slot2;

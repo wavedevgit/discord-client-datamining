@@ -2,12 +2,12 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var5 = require;
     var6 = dependencyMap;
-    var4 = function(arg0, arg1) { // Original name: deprecatedPropType, environment: var3
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = 'Use the transform prop instead.';
         var _closure2_slot1 = var1;
-        var0 = function(arg0, arg1, arg2) { // Original name: validate, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun61707: for (var _fun61707_ip = 0;;) switch (_fun61707_ip) {
                 case 0:
                     var7 = arg0;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var10.bind(var11)(var7);
     var7 = var8.bind(var9)(var7);
     var2.transform = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: TransformMatrixPropType, environment: var3
+    var7 = function arg0, arg1, arg2() {
         _fun61708: for (var _fun61708_ip = 0;;) switch (_fun61708_ip) {
             case 0:
                 var1 = arg0;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.transformMatrix = var7;
-    var3 = function(arg0, arg1, arg2) { // Original name: DecomposedMatrixPropType, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun61709: for (var _fun61709_ip = 0;;) switch (_fun61709_ip) {
             case 0:
                 var1 = arg0;

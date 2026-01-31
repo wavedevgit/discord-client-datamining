@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function() { // Original name: useMessagesData, environment: var4
+    var4 = function() {
         _fun101399: for (var _fun101399_ip = 0;;) switch (_fun101399_ip) {
             case 0:
                 var10 = _closure1_slot0;

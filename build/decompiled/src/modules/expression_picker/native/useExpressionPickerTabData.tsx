@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/expression_picker/native/useExpressionPickerTabData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useExpressionPickerTabData, environment: var1
+    var1 = function arg0() {
         _fun73818: for (var _fun73818_ip = 0;;) switch (_fun73818_ip) {
             case 0:
                 var1 = arg0;

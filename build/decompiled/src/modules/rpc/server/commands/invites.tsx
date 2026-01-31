@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[0] = var14;
     var11[var13] = var12;
     var3.scope = var11;
-    var10 = function(arg0) { // Original name: handler, environment: var10
+    var10 = function arg0() {
         var1 = arg0;
         var2 = var1.socket;
         var _closure2_slot0 = var2;

@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/useMaybeAddNewYearsMarketingEasterEggNote.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useMaybeAddNewYearsMarketingEasterEggNote, environment: var1
+    var1 = function arg0() {
         _fun74001: for (var _fun74001_ip = 0;;) switch (_fun74001_ip) {
             case 0:
                 var5 = arg0;

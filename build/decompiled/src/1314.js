@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.typeofJsonValue = var0;
     var2.isJsonObject = var0;
-    var3 = function(arg0) { // Original name: typeofJsonValue, environment: var1
+    var3 = function arg0() {
         _fun14781: for (var _fun14781_ip = 0;;) switch (_fun14781_ip) {
             case 0:
                 var2 = arg0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.typeofJsonValue = var3;
-    var1 = function(arg0) { // Original name: isJsonObject, environment: var1
+    var1 = function arg0() {
         _fun14782: for (var _fun14782_ip = 0;;) switch (_fun14782_ip) {
             case 0:
                 var3 = arg0;

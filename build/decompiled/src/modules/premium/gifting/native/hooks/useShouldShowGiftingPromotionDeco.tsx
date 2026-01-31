@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useShouldShowGiftingPromotionDeco, environment: var1
+    var1 = function arg0() {
         _fun74795: for (var _fun74795_ip = 0;;) switch (_fun74795_ip) {
             case 0:
                 var4 = arg0;

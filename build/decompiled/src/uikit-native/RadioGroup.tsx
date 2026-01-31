@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var13;
     var _closure1_slot1 = var7;
-    var0 = function(arg0) { // Original name: RadioBar, environment: var8
+    var0 = function arg0() {
         _fun58233: for (var _fun58233_ip = 0;;) switch (_fun58233_ip) {
             case 0:
                 var0 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var1 = function(arg0) { // Original name: RadioItem, environment: var8
+    var1 = function arg0() {
         _fun58234: for (var _fun58234_ip = 0;;) switch (_fun58234_ip) {
             case 0:
                 var0 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot8 = var4;
                 var0 = _closure1_slot9;
                 var9 = var0.bind(var4)();
-                var7 = function(arg0) { // Original name: handlePress, environment: var8
+                var7 = function arg0() {
                     _fun58235: for (var _fun58235_ip = 0;;) switch (_fun58235_ip) {
                         case 0:
                             var1 = arg0;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.collapsibleContent = var10;
                 var9 = var9.collapsibleStyle;
                 var5.style = var9;
-                var8 = function(arg0) { // Original name: children, environment: var8
+                var8 = function arg0() {
                     var0 = arg0;
                     var0 = var0.onPress;
                     var _closure3_slot0 = var0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = !var5;
                     var5 = !var5;
                     var1.disabled = var5;
-                    var4 = function(arg0) { // Original name: onPress, environment: var4
+                    var4 = function arg0() {
                         var2 = arg0;
                         var1 = _closure2_slot7;
                         var0 = undefined;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var1;
-    var4 = function(arg0) { // Original name: RadioGroup, environment: var8
+    var4 = function arg0() {
         _fun58238: for (var _fun58238_ip = 0;;) switch (_fun58238_ip) {
             case 0:
                 var0 = arg0;
@@ -678,7 +678,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.collapsibleContainer = var11;
     var3 = var9.bind(var10)(var3);
     var _closure1_slot9 = var3;
-    var3 = function() { // Original name: getOuterStylesFromSize, environment: var8
+    var3 = function() {
         _fun58240: for (var _fun58240_ip = 0;;) switch (_fun58240_ip) {
             case 0:
                 var2 = arguments[0];
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function() { // Original name: getTickStylesFromSize, environment: var8
+    var3 = function() {
         _fun58241: for (var _fun58241_ip = 0;;) switch (_fun58241_ip) {
             case 0:
                 var1 = arguments[0];
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: RadioEmpty, environment: var8
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.size;
         var5 = var0.style;
@@ -746,7 +746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: RadioSelected, environment: var8
+    var3 = function arg0() {
         _fun58243: for (var _fun58243_ip = 0;;) switch (_fun58243_ip) {
             case 0:
                 var0 = arg0;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: RadioIndicator, environment: var8
+    var3 = function arg0() {
         _fun58244: for (var _fun58244_ip = 0;;) switch (_fun58244_ip) {
             case 0:
                 var0 = arg0;

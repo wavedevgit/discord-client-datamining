@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function() { // Original name: openAddFriendModalDeeplink, environment: var3
+    var6 = function() {
         var3 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openAddFriendModalDeeplink = var6;
-    var3 = function(arg0) { // Original name: openAddFriendModal, environment: var3
+    var3 = function arg0() {
         _fun96162: for (var _fun96162_ip = 0;;) switch (_fun96162_ip) {
             case 0:
                 var2 = _closure1_slot3;

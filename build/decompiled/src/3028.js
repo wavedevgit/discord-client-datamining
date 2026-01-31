@@ -3,9 +3,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24435: for (var _fun24435_ip = 0;;) switch (_fun24435_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: _, environment: var0
+            var2 = function arg0() {
                 var3 = arg0;
-                var5 = function(arg0, arg1, arg2) { // Original name: relativeTimeWithPlural, environment: var0
+                var5 = function arg0, arg1, arg2() {
                     _fun24437: for (var _fun24437_ip = 0;;) switch (_fun24437_ip) {
                         case 0:
                             var0 = arg0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                var8 = function(arg0) { // Original name: processHoursFunction, environment: var0
+                var8 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = function() { // Environment: var0
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var6.split;
                 var4 = var4.bind(var6)(var7);
                 var1.monthsShort = var4;
-                var4 = function(arg0, arg1) { // Original name: weekdaysCaseReplace, environment: var0
+                var4 = function arg0, arg1() {
                     _fun24440: for (var _fun24440_ip = 0;;) switch (_fun24440_ip) {
                         case 0:
                             var3 = arg0;
@@ -284,7 +284,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = '[У] dddd [';
                 var6 = var8.bind(var7)(var6);
                 var4.nextWeek = var6;
-                var6 = function() { // Original name: lastWeek, environment: var0
+                var6 = function() {
                     _fun24441: for (var _fun24441_ip = 0;;) switch (_fun24441_ip) {
                         case 0:
                             var2 = this;
@@ -379,7 +379,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.relativeTime = var4;
                 var4 = /ночі|ранку|дня|вечора/;
                 var1.meridiemParse = var4;
-                var4 = function(arg0) { // Original name: isPM, environment: var0
+                var4 = function arg0() {
                     var2 = /^(дня|вечора)$/;
                     var1 = var2.test;
                     var0 = arg0;
@@ -387,7 +387,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.isPM = var4;
-                var4 = function(arg0, arg1, arg2) { // Original name: meridiem, environment: var0
+                var4 = function arg0, arg1, arg2() {
                     _fun24443: for (var _fun24443_ip = 0;;) switch (_fun24443_ip) {
                         case 0:
                             var3 = arg0;
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.meridiem = var4;
                 var4 = /\d{1,2}-(й|го)/;
                 var1.dayOfMonthOrdinalParse = var4;
-                var0 = function(arg0, arg1) { // Original name: ordinal, environment: var0
+                var0 = function arg0, arg1() {
                     _fun24444: for (var _fun24444_ip = 0;;) switch (_fun24444_ip) {
                         case 0:
                             var1 = arg0;

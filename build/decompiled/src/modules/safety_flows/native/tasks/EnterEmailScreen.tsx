@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/tasks/EnterEmailScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: EnterEmailScreen, environment: var1
+    var1 = function() {
         var7 = _closure1_slot0;
         var10 = _closure1_slot2;
         var1 = 3;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.RRBNpv;
         var5 = var6.bind(var11)(var5);
         var0.action = var5;
-        var4 = function() { // Original name: onAction, environment: var4
+        var4 = function() {
             var3 = _closure2_slot0;
             var2 = var3.push;
             var4 = _closure1_slot0;

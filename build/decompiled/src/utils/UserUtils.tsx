@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17 = dependencyMap;
     var _closure1_slot0 = var16;
     var _closure1_slot1 = var17;
-    var0 = function(arg0) { // Original name: present, environment: var6
+    var0 = function arg0() {
         _fun27872: for (var _fun27872_ip = 0;;) switch (_fun27872_ip) {
             case 0:
                 var1 = arg0;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var13 = function(arg0) { // Original name: nameFromUser, environment: var6
+    var13 = function arg0() {
         _fun27873: for (var _fun27873_ip = 0;;) switch (_fun27873_ip) {
             case 0:
                 var1 = arg0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var13;
-    var12 = function(arg0) { // Original name: getName, environment: var6
+    var12 = function arg0() {
         _fun27874: for (var _fun27874_ip = 0;;) switch (_fun27874_ip) {
             case 0:
                 var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var11 = function(arg0) { // Original name: useName, environment: var6
+    var11 = function arg0() {
         _fun27875: for (var _fun27875_ip = 0;;) switch (_fun27875_ip) {
             case 0:
                 var0 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var10 = function(arg0) { // Original name: getGlobalName, environment: var6
+    var10 = function arg0() {
         _fun27877: for (var _fun27877_ip = 0;;) switch (_fun27877_ip) {
             case 0:
                 var1 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var10;
-    var9 = function(arg0) { // Original name: getFormattedName, environment: var6
+    var9 = function arg0() {
         _fun27878: for (var _fun27878_ip = 0;;) switch (_fun27878_ip) {
             case 0:
                 var3 = arg0;
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var8 = function(arg0) { // Original name: humanizeStatus, environment: var6
+    var8 = function arg0() {
         _fun27879: for (var _fun27879_ip = 0;;) switch (_fun27879_ip) {
             case 0:
                 var3 = arg0;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var7 = function(arg0, arg1) { // Original name: accountAgeInRange, environment: var6
+    var7 = function arg0, arg1() {
         _fun27880: for (var _fun27880_ip = 0;;) switch (_fun27880_ip) {
             case 0:
                 var1 = arg0;
@@ -530,7 +530,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var7;
-    var0 = function(arg0, arg1, arg2) { // Original name: presentUserTag, environment: var6
+    var0 = function arg0, arg1, arg2() {
         _fun27881: for (var _fun27881_ip = 0;;) switch (_fun27881_ip) {
             case 0:
                 var1 = arg0;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var5 = function(arg0, arg1) { // Original name: getUserTag, environment: var6
+    var5 = function arg0, arg1() {
         _fun27882: for (var _fun27882_ip = 0;;) switch (_fun27882_ip) {
             case 0:
                 var4 = {};
@@ -694,7 +694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var5;
-    var4 = function(arg0, arg1) { // Original name: useUserTag, environment: var6
+    var4 = function arg0, arg1() {
         var4 = _closure1_slot14;
         var3 = {};
         var8 = _closure1_slot9;
@@ -723,7 +723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var4.bind(var2)(var0, var3, var1);
         return var0;
     };
-    var3 = function(arg0) { // Original name: useDirectMessageRecipient, environment: var6
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var1 = function() { // Original name: getUserIsStaff, environment: var6
+    var1 = function() {
         _fun27887: for (var _fun27887_ip = 0;;) switch (_fun27887_ip) {
             case 0:
                 var1 = _closure1_slot3;
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var14;
     var14 = '???';
     var _closure1_slot7 = var14;
-    var14 = function(arg0) { // Original name: conceal, environment: var6
+    var14 = function arg0() {
         var1 = arg0;
         var0 = 0;
         var3 = var1[var0];
@@ -850,7 +850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = {};
     var14.getName = var12;
     var14.useName = var11;
-    var15 = function(arg0) { // Original name: isNameConcealed, environment: var6
+    var15 = function arg0() {
         _fun27889: for (var _fun27889_ip = 0;;) switch (_fun27889_ip) {
             case 0:
                 var3 = arg0;
@@ -891,7 +891,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getFormattedName = var9;
     var2.humanizeStatus = var8;
     var2.accountAgeInRange = var7;
-    var7 = function(arg0) { // Original name: ageEligibleForPremiumUpsell, environment: var6
+    var7 = function arg0() {
         var3 = _closure1_slot13;
         var2 = undefined;
         var1 = arg0;
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.ageEligibleForPremiumUpsell = var7;
-    var6 = function(arg0) { // Original name: isNewUser, environment: var6
+    var6 = function arg0() {
         var3 = _closure1_slot13;
         var2 = undefined;
         var1 = arg0;

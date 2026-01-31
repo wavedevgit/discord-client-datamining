@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun100832: for (var _fun100832_ip = 0;;) switch (_fun100832_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun100834: for (var _fun100834_ip = 0;;) switch (_fun100834_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: findGuildSectionIndex, environment: var1
+    var0 = function arg0() {
         _fun100835: for (var _fun100835_ip = 0;;) switch (_fun100835_ip) {
             case 0:
                 var15 = arg0;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: isAnchorIdEqual, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun100836: for (var _fun100836_ip = 0;;) switch (_fun100836_ip) {
             case 0:
                 var5 = arg2;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guilds_bar/native/hooks/useGuildsBarProps.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGuildsBarProps, environment: var1
+    var1 = function arg0() {
         _fun100837: for (var _fun100837_ip = 0;;) switch (_fun100837_ip) {
             case 0:
                 var1 = arg0;
@@ -1161,7 +1161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = copyDataProperties(var13, var12);
                             var2 = 'sections';
                             var0[var2] = var3;
-                            var3 = function(arg0) { // Original name: sectionSize, environment: var1
+                            var3 = function arg0() {
                                 _fun100851: for (var _fun100851_ip = 0;;) switch (_fun100851_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -1223,7 +1223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'sectionSize';
                             var0[var2] = var3;
-                            var3 = function(arg0, arg1) { // Original name: itemSize, environment: var1
+                            var3 = function arg0, arg1() {
                                 _fun100852: for (var _fun100852_ip = 0;;) switch (_fun100852_ip) {
                                     case 0:
                                         var0 = {};
@@ -1453,7 +1453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'itemSize';
                             var0[var2] = var3;
-                            var3 = function() { // Original name: footerSize, environment: var1
+                            var3 = function() {
                                 _fun100853: for (var _fun100853_ip = 0;;) switch (_fun100853_ip) {
                                     case 0:
                                         var1 = _closure3_slot0;
@@ -1499,7 +1499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'footerSize';
                             var0[var2] = var3;
-                            var3 = function(arg0) { // Original name: renderSection, environment: var1
+                            var3 = function arg0() {
                                 _fun100854: for (var _fun100854_ip = 0;;) switch (_fun100854_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -1584,7 +1584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'renderSection';
                             var0[var2] = var3;
-                            var3 = function(arg0, arg1) { // Original name: renderItem, environment: var1
+                            var3 = function arg0, arg1() {
                                 _fun100855: for (var _fun100855_ip = 0;;) switch (_fun100855_ip) {
                                     case 0:
                                         var9 = arg0;
@@ -1905,9 +1905,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'renderItem';
                             var0[var2] = var3;
-                            var3 = function() { // Original name: renderFooter, environment: var1
+                            var3 = function() {
                                 var2 = _closure3_slot0;
-                                var1 = function(arg0) { // Original name: renderFooterJSX, environment: var0
+                                var1 = function arg0() {
                                     var6 = arg0;
                                     var3 = _closure1_slot20;
                                     var1 = _closure1_slot1;
@@ -2005,7 +2005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'renderFooter';
                             var0[var2] = var3;
-                            var3 = function(arg0, arg1, arg2) { // Original name: getRecyclerKey, environment: var1
+                            var3 = function arg0, arg1, arg2() {
                                 _fun100859: for (var _fun100859_ip = 0;;) switch (_fun100859_ip) {
                                     case 0:
                                         var2 = arg0;
@@ -2114,7 +2114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'getRecyclerKey';
                             var0[var2] = var3;
-                            var3 = function(arg0) { // Original name: renderAccessory, environment: var1
+                            var3 = function arg0() {
                                 var3 = _closure1_slot20;
                                 var1 = _closure1_slot1;
                                 var2 = _closure1_slot2;
@@ -2130,7 +2130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'renderAccessory';
                             var0[var2] = var3;
-                            var3 = function(arg0, arg1) { // Original name: getAnchorIdFromIndex, environment: var1
+                            var3 = function arg0, arg1() {
                                 _fun100861: for (var _fun100861_ip = 0;;) switch (_fun100861_ip) {
                                     case 0:
                                         var2 = _closure1_slot16;
@@ -2450,7 +2450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var2 = 'getAnchorIdFromIndex';
                             var0[var2] = var3;
-                            var2 = function(arg0) { // Original name: getAnchorIndexFromId, environment: var1
+                            var2 = function arg0() {
                                 _fun100862: for (var _fun100862_ip = 0;;) switch (_fun100862_ip) {
                                     case 0:
                                         var1 = {};

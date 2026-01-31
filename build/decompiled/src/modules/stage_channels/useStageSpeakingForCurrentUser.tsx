@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/useStageSpeakingForCurrentUser.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useIsStageSpeakingDisabledForCurrentUser, environment: var1
+    var3 = function() {
         _fun38766: for (var _fun38766_ip = 0;;) switch (_fun38766_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsStageSpeakingDisabledForCurrentUser = var3;
-    var3 = function() { // Original name: isStageSpeakingDisabledForCurrentUser, environment: var1
+    var3 = function() {
         _fun38767: for (var _fun38767_ip = 0;;) switch (_fun38767_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStageSpeakingDisabledForCurrentUser = var3;
-    var3 = function(arg0) { // Original name: shouldAgeVerifyToSpeakForCurrentUser, environment: var1
+    var3 = function arg0() {
         _fun38768: for (var _fun38768_ip = 0;;) switch (_fun38768_ip) {
             case 0:
                 var6 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldAgeVerifyToSpeakForCurrentUser = var3;
-    var3 = function(arg0) { // Original name: useShouldAgeVerifyToSpeakForCurrentUser, environment: var1
+    var3 = function arg0() {
         _fun38769: for (var _fun38769_ip = 0;;) switch (_fun38769_ip) {
             case 0:
                 var8 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldAgeVerifyToSpeakForCurrentUser = var3;
-    var3 = function(arg0) { // Original name: useShouldShowAgeVerificationPopover, environment: var1
+    var3 = function arg0() {
         _fun38771: for (var _fun38771_ip = 0;;) switch (_fun38771_ip) {
             case 0:
                 var8 = arg0;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldShowAgeVerificationPopover = var3;
-    var1 = function() { // Original name: useShouldShowAgeVerificationForEvent, environment: var1
+    var1 = function() {
         _fun38773: for (var _fun38773_ip = 0;;) switch (_fun38773_ip) {
             case 0:
                 var3 = _closure1_slot0;

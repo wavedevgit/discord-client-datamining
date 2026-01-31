@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'experiments/SwipeToReplyExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useIsMessageSwipeActionsEnabled, environment: var1
+    var1 = function() {
         _fun76968: for (var _fun76968_ip = 0;;) switch (_fun76968_ip) {
             case 0:
                 var2 = _closure1_slot1;

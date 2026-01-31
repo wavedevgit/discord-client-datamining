@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117162: for (var _fun117162_ip = 0;;) switch (_fun117162_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: checkChannelOpened, environment: var1
+    var0 = function() {
         _fun117165: for (var _fun117165_ip = 0;;) switch (_fun117165_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: VoicePanelManager, environment: var0
+        var2 = function arg0() {
             _fun117167: for (var _fun117167_ip = 0;;) switch (_fun117167_ip) {
                 case 0:
                     var4 = this;
@@ -171,14 +171,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 120:
                     var0 = var1.bind(var3)(var4, var0);
                     var1 = {};
-                    var3 = function() { // Original name: VOICE_CHANNEL_SELECT, environment: var2
+                    var3 = function() {
                         var1 = _closure1_slot10;
                         var0 = undefined;
                         var1 = var1.bind(var0)();
                         return var0;
                     };
                     var1.VOICE_CHANNEL_SELECT = var3;
-                    var2 = function() { // Original name: RTC_CONNECTION_STATE, environment: var2
+                    var2 = function() {
                         var1 = _closure1_slot10;
                         var0 = undefined;
                         var1 = var1.bind(var0)();

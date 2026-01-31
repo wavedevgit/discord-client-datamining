@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: sanitizeTagKey, environment: var1
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /[^\w\-.\/]+/gi;
@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: sanitizeTagValue, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot2;
         var1 = undefined;
         var0 = arg0;
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = [',', '\\u{2c}'];
     var3[5] = var4;
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getBucketKey, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.entries;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.getBucketKey = var3;
-    var3 = function(arg0) { // Original name: sanitizeMetricKey, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /[^\w\-.]+/gi;
@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.sanitizeMetricKey = var3;
-    var3 = function(arg0) { // Original name: sanitizeTags, environment: var1
+    var3 = function arg0() {
         _fun99684: for (var _fun99684_ip = 0;;) switch (_fun99684_ip) {
             case 0:
                 var9 = arg0;
@@ -186,7 +186,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.sanitizeTags = var3;
-    var3 = function(arg0) { // Original name: sanitizeUnit, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /[^\w]+/gi;
@@ -195,7 +195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.sanitizeUnit = var3;
-    var3 = function(arg0) { // Original name: serializeMetricBuckets, environment: var1
+    var3 = function arg0() {
         _fun99686: for (var _fun99686_ip = 0;;) switch (_fun99686_ip) {
             case 0:
                 var13 = undefined;
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.serializeMetricBuckets = var3;
-    var1 = function(arg0) { // Original name: simpleHash, environment: var1
+    var1 = function arg0() {
         _fun99688: for (var _fun99688_ip = 0;;) switch (_fun99688_ip) {
             case 0:
                 var6 = arg0;

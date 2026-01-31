@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _maybeFetchGuildDiscoveryCategories, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _fetchMetadataForGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _fetchSlugForGuild, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: _saveGuildMetadata, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/global_discovery_servers/GuildDiscoveryCategoryActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: maybeFetchGuildDiscoveryCategories, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.maybeFetchGuildDiscoveryCategories = var3;
-    var3 = function() { // Original name: fetchMetadataForGuild, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchMetadataForGuild = var3;
-    var3 = function() { // Original name: fetchSlugForGuild, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSlugForGuild = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildPrimaryCategory, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildPrimaryCategory = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildKeywords, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildKeywords = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildEmojiDiscoverabilityEnabled, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildEmojiDiscoverabilityEnabled = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildDiscoveryMetadataIsPublished, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -599,7 +599,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildDiscoveryMetadataIsPublished = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildDiscoveryMetadataAbout, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -618,7 +618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildDiscoveryMetadataAbout = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildDiscoveryMetadataReasonsToJoin, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildDiscoveryMetadataReasonsToJoin = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGuildDiscoveryMetadataSocialLinks, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGuildDiscoveryMetadataSocialLinks = var3;
-    var3 = function() { // Original name: saveGuildMetadata, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.saveGuildMetadata = var3;
-    var3 = function(arg0, arg1) { // Original name: addGuildCategory, environment: var1
+    var3 = function arg0, arg1() {
         var8 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var8;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.addGuildCategory = var3;
-    var1 = function(arg0, arg1) { // Original name: deleteGuildCategory, environment: var1
+    var1 = function arg0, arg1() {
         var8 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var8;

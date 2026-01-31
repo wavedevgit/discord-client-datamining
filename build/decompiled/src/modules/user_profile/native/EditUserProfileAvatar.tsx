@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/EditUserProfileAvatar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditUserProfileAvatar, environment: var1
+    var1 = function arg0() {
         _fun79825: for (var _fun79825_ip = 0;;) switch (_fun79825_ip) {
             case 0:
                 var1 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var9 = _closure2_slot4;
                     var2.showAnimatedAvatarUpsell = var9;
-                    var9 = function() { // Original name: handleRemoveAvatarSelect, environment: var6
+                    var9 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 10;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.handleRemoveAvatarSelect = var9;
                     var9 = _closure2_slot8;
                     var2.handleUploadAvatarSelect = var9;
-                    var9 = function() { // Original name: handleUploadGIFAvatarSelect, environment: var6
+                    var9 = function() {
                         _fun79828: for (var _fun79828_ip = 0;;) switch (_fun79828_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var2.handleUploadGIFAvatarSelect = var9;
-                    var6 = function() { // Original name: handleEditAvatarDecorationSelect, environment: var6
+                    var6 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 15;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var18[var14];
                 var23 = var17.bind(var3)(var2);
                 var13 = var23.useAnimatedStyle;
-                var2 = function() { // Original name: z, environment: var0
+                var2 = function() {
                     var0 = {};
                     var2 = {};
                     var3 = _closure2_slot11;

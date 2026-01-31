@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _shouldRequestFirstMessage, environment: var1
+    var0 = function arg0, arg1() {
         _fun76548: for (var _fun76548_ip = 0;;) switch (_fun76548_ip) {
             case 0:
                 var0 = arg0;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: loadMultipleForumPostData, environment: var1
+    var0 = function arg0, arg1() {
         _fun76549: for (var _fun76549_ip = 0;;) switch (_fun76549_ip) {
             case 0:
                 var3 = arg1;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: loadForumPostData, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _loadForumPostData, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: loadForumPostDataForChannelId, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _loadForumPostDataForChannelId, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: DefaultDict, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot4;
             var1 = _closure2_slot0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'get';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun76561: for (var _fun76561_ip = 0;;) switch (_fun76561_ip) {
                 case 0:
                     var1 = arg0;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'delete';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var1 = var0._set;
             var0 = arg0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasNext';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 8;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'next';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 9;
@@ -490,7 +490,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function() { // Original name: RequestQueue, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot4;
             var3 = _closure2_slot0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'request';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             var0 = this;
             var2 = var0.requested;
             var1 = var2.get;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasRequested';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var0 = this;
             var2 = var0.requested;
             var1 = var2.get;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'finishRequesting';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var2 = arg0;
             var3 = arg1;
             var1 = this;
@@ -589,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRequested';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var2 = var0.requested;
             var1 = var2.get;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getNextBatch';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var0 = global;
             var2 = var0.Array;
             var1 = var2.from;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasNext';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.requested;
             var0 = var1.hasNext;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'next';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.requested;
             var0 = var1.next;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'compact';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun76576: for (var _fun76576_ip = 0;;) switch (_fun76576_ip) {
                 case 0:
                     var2 = arg0;
@@ -695,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/ForumPostDataLoader.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useFirstForumPostMessage, environment: var1
+    var3 = function arg0() {
         _fun76577: for (var _fun76577_ip = 0;;) switch (_fun76577_ip) {
             case 0:
                 var3 = arg0;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 138:
                 var3 = var3.id;
-                var0 = function(arg0, arg1) { // Original name: preloadForumPostDataFrom, environment: var0
+                var0 = function arg0, arg1() {
                     _fun76580: for (var _fun76580_ip = 0;;) switch (_fun76580_ip) {
                         case 0:
                             var3 = arg0;
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useFirstForumPostMessage = var3;
-    var3 = function(arg0, arg1) { // Original name: useMostRecentForumMessage, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -842,7 +842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useMostRecentForumMessage = var3;
-    var1 = function(arg0) { // Original name: preloadForumThreads, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot15;
         var4 = _closure1_slot7;

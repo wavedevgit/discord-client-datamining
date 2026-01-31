@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: _defineProperties, environment: var1
+    var0 = function arg0, arg1() {
         _fun22989: for (var _fun22989_ip = 0;;) switch (_fun22989_ip) {
             case 0:
                 var7 = arg0;
@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.Parser = var0;
     var1 = function() { // Environment: var1
-        var0 = function() { // Original name: Parser, environment: var2
+        var0 = function() {
             _fun22991: for (var _fun22991_ip = 0;;) switch (_fun22991_ip) {
                 case 0:
                     var1 = _closure2_slot0;
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = {};
         var3 = 'run';
         var1.key = var3;
-        var3 = function(arg0, arg1, arg2, arg3) { // Original name: run, environment: var2
+        var3 = function arg0, arg1, arg2, arg3() {
             _fun22992: for (var _fun22992_ip = 0;;) switch (_fun22992_ip) {
                 case 0:
                     var3 = this;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = {};
         var3 = 'validate';
         var1.key = var3;
-        var2 = function(arg0, arg1, arg2) { // Original name: validate, environment: var2
+        var2 = function arg0, arg1, arg2() {
             var0 = true;
             return var0;
         };

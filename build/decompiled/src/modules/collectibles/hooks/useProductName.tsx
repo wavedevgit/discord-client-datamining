@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var3 = function(arg0) { // Original name: useBaseProductName, environment: var1
+    var3 = function arg0() {
         _fun87065: for (var _fun87065_ip = 0;;) switch (_fun87065_ip) {
             case 0:
                 var2 = arg0;

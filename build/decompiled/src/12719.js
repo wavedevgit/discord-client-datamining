@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun97675: for (var _fun97675_ip = 0;;) switch (_fun97675_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 5;
     var3 = var6[var3];
     var4 = var5.bind(var0)(var3);
-    var3 = function(arg0, arg1) { // Original name: _interopRequireWildcard, environment: var1
+    var3 = function arg0, arg1() {
         _fun97678: for (var _fun97678_ip = 0;;) switch (_fun97678_ip) {
             case 0:
                 var3 = arg0;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var4;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: StorybookSwitcher, environment: var0
+        var3 = function arg0() {
             _fun97680: for (var _fun97680_ip = 0;;) switch (_fun97680_ip) {
                 case 0:
                     var2 = arg0;
@@ -300,7 +300,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             _fun97682: for (var _fun97682_ip = 0;;) switch (_fun97682_ip) {
                 case 0:
                     var0 = this;

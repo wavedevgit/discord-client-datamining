@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: roundToNearestPixel, environment: var0
+        var0 = function arg0() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.round;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getQuestDockExpandedHeightLimits, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = {};
             var1 = _closure1_slot2;
             var0.minHeight = var1;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getQuestDockCollapsedWidth, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var1 = global;
             var4 = var1.Math;
             var3 = var4.max;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getQuestDockExpandedWidth, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.min;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var8;
     var _closure1_slot8 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getQuestDockClosedWidth, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.min;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getQuestDockCollapsedWidth = var5;
     var2.getQuestDockExpandedWidth = var4;
     var2.getQuestDockClosedWidth = var3;
-    var1 = function(arg0) { // Original name: isSoftDismissed, environment: var1
+    var1 = function arg0() {
         _fun46713: for (var _fun46713_ip = 0;;) switch (_fun46713_ip) {
             case 0:
                 var2 = arg0;

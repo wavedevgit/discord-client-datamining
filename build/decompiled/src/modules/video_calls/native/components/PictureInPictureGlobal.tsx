@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.participant = var4;
                 var0.channel = var7;
-                var6 = function() { // Original name: onSingleTap, environment: var6
+                var6 = function() {
                     _fun109593: for (var _fun109593_ip = 0;;) switch (_fun109593_ip) {
                         case 0:
                             var2 = _closure1_slot8;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/PictureInPictureGlobal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PictureInPictureGlobal, environment: var1
+    var1 = function arg0() {
         _fun109596: for (var _fun109596_ip = 0;;) switch (_fun109596_ip) {
             case 0:
                 var1 = arg0;
@@ -797,7 +797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var11[var4];
                 var5 = var10.bind(var3)(var1);
                 var2 = var5.useDerivedValue;
-                var1 = function() { // Original name: n, environment: var0
+                var1 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var0 = 34;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var11[var4];
                 var2 = var10.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: o, environment: var0
+                var0 = function() {
                     var0 = {};
                     var8 = _closure1_slot0;
                     var9 = _closure1_slot2;

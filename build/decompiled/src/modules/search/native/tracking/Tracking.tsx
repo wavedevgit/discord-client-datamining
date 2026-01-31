@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: toAnalyticsSearchFilterType, environment: var3
+    var0 = function arg0() {
         _fun71507: for (var _fun71507_ip = 0;;) switch (_fun71507_ip) {
             case 0:
                 var1 = arg0;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AnalyticEvents;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: trackSearchOpened, environment: var3
+    var6 = function arg0() {
         _fun71508: for (var _fun71508_ip = 0;;) switch (_fun71508_ip) {
             case 0:
                 var0 = arg0;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchOpened = var6;
-    var6 = function(arg0) { // Original name: trackSearchStarted, environment: var3
+    var6 = function arg0() {
         _fun71509: for (var _fun71509_ip = 0;;) switch (_fun71509_ip) {
             case 0:
                 var0 = arg0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchStarted = var6;
-    var6 = function(arg0) { // Original name: trackSearchResultClicked, environment: var3
+    var6 = function arg0() {
         _fun71513: for (var _fun71513_ip = 0;;) switch (_fun71513_ip) {
             case 0:
                 var0 = arg0;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchResultClicked = var6;
-    var6 = function(arg0) { // Original name: trackSearchResultReturned, environment: var3
+    var6 = function arg0() {
         _fun71517: for (var _fun71517_ip = 0;;) switch (_fun71517_ip) {
             case 0:
                 var0 = arg0;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchResultReturned = var6;
-    var6 = function(arg0) { // Original name: trackSearchEmptyResult, environment: var3
+    var6 = function arg0() {
         _fun71521: for (var _fun71521_ip = 0;;) switch (_fun71521_ip) {
             case 0:
                 var0 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchEmptyResult = var6;
-    var6 = function(arg0) { // Original name: trackSearchEmptyMessageResult, environment: var3
+    var6 = function arg0() {
         _fun71525: for (var _fun71525_ip = 0;;) switch (_fun71525_ip) {
             case 0:
                 var0 = arg0;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchEmptyMessageResult = var6;
-    var6 = function(arg0) { // Original name: trackSearchClosed, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var3 = var0.searchContext;
         var2 = _closure1_slot1;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackSearchClosed = var6;
-    var6 = function(arg0) { // Original name: trackSearchIndexing, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var7 = var0.searchContext;
         var9 = var0.isHistoricalIndexing;
@@ -803,7 +803,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackSearchIndexing = var6;
-    var6 = function(arg0) { // Original name: trackSearchHistoryClicked, environment: var3
+    var6 = function arg0() {
         _fun71531: for (var _fun71531_ip = 0;;) switch (_fun71531_ip) {
             case 0:
                 var0 = arg0;
@@ -858,7 +858,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSearchHistoryClicked = var6;
-    var6 = function(arg0) { // Original name: trackSuggestedSearchClicked, environment: var3
+    var6 = function arg0() {
         _fun71532: for (var _fun71532_ip = 0;;) switch (_fun71532_ip) {
             case 0:
                 var0 = arg0;
@@ -909,7 +909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.trackSuggestedSearchClicked = var6;
-    var6 = function(arg0) { // Original name: trackSearchFilterAdd, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var10 = var0.searchContext;
         var7 = var0.searchTokenType;
@@ -953,7 +953,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackSearchFilterAdd = var6;
-    var6 = function(arg0) { // Original name: trackSearchFilterRemove, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var10 = var0.searchContext;
         var7 = var0.searchTokenType;
@@ -997,7 +997,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackSearchFilterRemove = var6;
-    var6 = function(arg0) { // Original name: trackSearchTabSelected, environment: var3
+    var6 = function arg0() {
         var0 = arg0;
         var7 = var0.searchContext;
         var6 = _closure1_slot1;
@@ -1035,7 +1035,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.trackSearchTabSelected = var6;
-    var3 = function(arg0) { // Original name: trackSearchJumpToMessage, environment: var3
+    var3 = function arg0() {
         _fun71536: for (var _fun71536_ip = 0;;) switch (_fun71536_ip) {
             case 0:
                 var0 = arg0;

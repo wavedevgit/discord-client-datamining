@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getLowBits, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.mod;
         var0 = 4294967296.0;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getHighBits, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.shiftRight;
         var0 = 32;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: IdGenerator, environment: var1
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 'generate';
         var0.key = var4;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var0 = this;
             var3 = _closure1_slot1;
             var7 = _closure1_slot2;

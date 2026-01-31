@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun54109: for (var _fun54109_ip = 0;;) switch (_fun54109_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var8 = var3.DeviceSettingsStore;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: PoggermodeSettingsStore, environment: var5
+        var3 = function() {
             _fun54113: for (var _fun54113_ip = 0;;) switch (_fun54113_ip) {
                 case 0:
                     var3 = this;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var1 = {};
             var3 = _closure1_slot6;
             var4 = var1;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'settingsVisible';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             var0 = var0.settingsVisible;
             return var0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun54117: for (var _fun54117_ip = 0;;) switch (_fun54117_ip) {
                 case 0:
                     var0 = arguments[0];
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shakeIntensity';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun54118: for (var _fun54118_ip = 0;;) switch (_fun54118_ip) {
                 case 0:
                     var1 = this;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'combosRequiredCount';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun54119: for (var _fun54119_ip = 0;;) switch (_fun54119_ip) {
                 case 0:
                     var1 = this;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'screenshakeEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             var0 = var0.screenshakeEnabled;
             return var0;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'screenshakeEnabledLocations';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             var0 = var0.screenshakeEnabledLocations;
             return var0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'combosEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             var0 = var0.combosEnabled;
             return var0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'comboSoundsEnabled';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot6;
             var0 = var0.comboSoundsEnabled;
             return var0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6[var3];
     var15 = var7.bind(var0)(var3);
     var3 = {};
-    var9 = function(arg0) { // Original name: handlePoggermodeSettingsUpdate, environment: var4
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.settings;
         var1 = {};
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.POGGERMODE_SETTINGS_UPDATE = var9;
-    var4 = function() { // Original name: handlePoggermodeTemporarilyDisabled, environment: var4
+    var4 = function() {
         var0 = true;
         _closure1_slot5 = var0;
         var0 = undefined;

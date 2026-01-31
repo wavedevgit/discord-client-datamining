@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: useTileEntranceAnimatedStyle, environment: var3
+    var1 = function arg0() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var1 = 8;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var1];
         var2 = var7.bind(var6)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: l, environment: var0
+        var0 = function() {
             var0 = {};
             var5 = _closure1_slot0;
             var7 = _closure1_slot2;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var1;
-    var0 = function(arg0) { // Original name: Tile, environment: var3
+    var0 = function arg0() {
         _fun74550: for (var _fun74550_ip = 0;;) switch (_fun74550_ip) {
             case 0:
                 var1 = arg0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.channelId = var4;
                     var4 = _closure2_slot1;
                     var1.onRemove = var4;
-                    var4 = function(arg0) { // Original name: onEdit, environment: var4
+                    var4 = function arg0() {
                         _fun74555: for (var _fun74555_ip = 0;;) switch (_fun74555_ip) {
                             case 0:
                                 var2 = _closure2_slot0;
@@ -1022,7 +1022,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = "function ImageCarouselTsx1(){const{withTiming,animatedStylePropValue,STANDARD_EASING,withSpring}=this.__closure;return{opacity:withTiming(animatedStylePropValue.get(),{duration:300,easing:STANDARD_EASING},'animate-always'),transform:[{scale:withSpring(animatedStylePropValue.get(),{stiffness:80,damping:6,mass:0.3},'animate-always')}]};}";
     var4.code = var8;
     var _closure1_slot14 = var4;
-    var4 = function(arg0) { // Original name: CustomScrollView, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot13;
         var3 = undefined;
         var4 = var2.bind(var3)();

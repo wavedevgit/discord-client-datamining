@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/categories/EmojiPickerCategoriesUnicodeShortcutItem.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EmojiPickerCategoriesUnicodeShortcutItem, environment: var1
+    var1 = function arg0() {
         _fun74086: for (var _fun74086_ip = 0;;) switch (_fun74086_ip) {
             case 0:
                 var1 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var17[var15];
                 var12 = var16.bind(var4)(var2);
                 var11 = var12.useAnimatedReaction;
-                var3 = function() { // Original name: f, environment: var0
+                var3 = function() {
                     var1 = _closure2_slot0;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var2;
                 var2 = _closure1_slot9;
                 var3.__initData = var2;
-                var2 = function(arg0, arg1) { // Original name: b, environment: var0
+                var2 = function arg0, arg1() {
                     _fun74088: for (var _fun74088_ip = 0;;) switch (_fun74088_ip) {
                         case 0:
                             var0 = arg0;

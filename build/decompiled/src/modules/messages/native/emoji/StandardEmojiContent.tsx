@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Emoji, environment: var1
+    var0 = function arg0() {
         _fun73987: for (var _fun73987_ip = 0;;) switch (_fun73987_ip) {
             case 0:
                 var0 = arg0;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/emoji/StandardEmojiContent.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun73988: for (var _fun73988_ip = 0;;) switch (_fun73988_ip) {
             case 0:
                 var0 = arg0;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'destructive';
             case 649:
                 var8.variant = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     _fun73990: for (var _fun73990_ip = 0;;) switch (_fun73990_ip) {
                         case 0:
                             var2 = _closure2_slot2;

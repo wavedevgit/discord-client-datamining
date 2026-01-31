@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/useStageChannelConnectAction.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useStageChannelConnectAction, environment: var1
+    var4 = function arg0() {
         _fun65200: for (var _fun65200_ip = 0;;) switch (_fun65200_ip) {
             case 0:
                 var5 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.ChannelConnectAction = var3;
-    var1 = function(arg0) { // Original name: useStageChannelStartEvent, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var0 = {};
         var2 = _closure1_slot0;

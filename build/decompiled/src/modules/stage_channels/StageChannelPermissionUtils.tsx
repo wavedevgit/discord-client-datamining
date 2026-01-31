@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: createOrUpdateModeratorOverwrite, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun38663: for (var _fun38663_ip = 0;;) switch (_fun38663_ip) {
             case 0:
                 var8 = arg2;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/StageChannelPermissionUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1, arg2) { // Original name: createModeratorOverwrite, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun38664: for (var _fun38664_ip = 0;;) switch (_fun38664_ip) {
             case 0:
                 var4 = arg0;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createModeratorOverwrite = var4;
     var2.createOrUpdateModeratorOverwrite = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: removeModeratorOverwrite, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun38665: for (var _fun38665_ip = 0;;) switch (_fun38665_ip) {
             case 0:
                 var1 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.removeModeratorOverwrite = var3;
-    var3 = function(arg0) { // Original name: isEmptyOverwrite, environment: var1
+    var3 = function arg0() {
         _fun38666: for (var _fun38666_ip = 0;;) switch (_fun38666_ip) {
             case 0:
                 var0 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isEmptyOverwrite = var3;
-    var3 = function(arg0) { // Original name: useCanCreateStageChannelByGuild, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanCreateStageChannelByGuild = var3;
-    var3 = function(arg0) { // Original name: useCanUpdateStageChannelModerators, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanUpdateStageChannelModerators = var3;
-    var3 = function(arg0) { // Original name: useCanModerateRequestToSpeak, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCanModerateRequestToSpeak = var3;
-    var1 = function(arg0) { // Original name: canLurkerListen, environment: var1
+    var1 = function arg0() {
         _fun38673: for (var _fun38673_ip = 0;;) switch (_fun38673_ip) {
             case 0:
                 var6 = arg0;

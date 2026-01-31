@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _getEventException, environment: var1
+    var0 = function arg0, arg1() {
         _fun65171: for (var _fun65171_ip = 0;;) switch (_fun65171_ip) {
             case 0:
                 var3 = arg0;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/useEventException.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: useEventException, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot3;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: getEventException, environment: var1
+    var1 = function arg0, arg1() {
         _fun65175: for (var _fun65175_ip = 0;;) switch (_fun65175_ip) {
             case 0:
                 var3 = _closure1_slot3;

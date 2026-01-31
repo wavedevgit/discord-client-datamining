@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun13906: for (var _fun13906_ip = 0;;) switch (_fun13906_ip) {
             case 0:
             case 2: // try_start_0
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var4 = function(arg0, arg1) { // Original name: formatToMarkdownString, environment: var1
+    var4 = function arg0, arg1() {
         _fun13909: for (var _fun13909_ip = 0;;) switch (_fun13909_ip) {
             case 0:
                 var5 = arg0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.markdownFormatter = var0;
     var2.formatToMarkdownString = var4;
     var3 = {};
-    var7 = function(arg0) { // Original name: $b, environment: var1
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.join;
         var0 = '';
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.$b = var7;
-    var7 = function(arg0) { // Original name: $i, environment: var1
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.join;
         var0 = '';
@@ -144,7 +144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.$i = var7;
-    var7 = function(arg0) { // Original name: $del, environment: var1
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.join;
         var0 = '';
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.$del = var7;
-    var7 = function(arg0) { // Original name: $code, environment: var1
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.join;
         var0 = '';
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.$code = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: $link, environment: var1
+    var7 = function arg0, arg1, arg2() {
         var3 = arg0;
         var4 = _closure1_slot5;
         var2 = undefined;
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3.$link = var7;
-    var7 = function(arg0) { // Original name: $p, environment: var1
+    var7 = function arg0() {
         var2 = arg0;
         var1 = var2.join;
         var0 = '';
@@ -204,7 +204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var5 = var3.StringBuilder;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: MarkdownBuilder, environment: var0
+        var3 = function() {
             _fun13917: for (var _fun13917_ip = 0;;) switch (_fun13917_ip) {
                 case 0:
                     var3 = this;
@@ -254,7 +254,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'pushRichTextTag';
         var4.key = var5;
-        var0 = function(arg0, arg1, arg2) { // Original name: pushRichTextTag, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var1 = this;
             var2 = var1.result;
             var6 = _closure1_slot6;

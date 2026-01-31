@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.MAX_MESSAGES_PER_CHANNEL;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: fetchMessages, environment: var3
+    var6 = function arg0, arg1() {
         var9 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var9;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetchMessages = var6;
-    var3 = function() { // Original name: clearMessages, environment: var3
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;

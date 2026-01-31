@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var1 = dependencyMap;
     var _closure1_slot2 = var1;
-    var1 = function() { // Original name: _get, environment: var2
+    var1 = function() {
         _fun46133: for (var _fun46133_ip = 0;;) switch (_fun46133_ip) {
             case 0:
                 var0 = undefined;

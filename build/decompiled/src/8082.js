@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0) { // Original name: rgb2hex, environment: var1
+    var0 = function arg0() {
         _fun65404: for (var _fun65404_ip = 0;;) switch (_fun65404_ip) {
             case 0:
                 var1 = arg0;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: colorToHex, environment: var1
+    var1 = function arg0() {
         _fun65405: for (var _fun65405_ip = 0;;) switch (_fun65405_ip) {
             case 0:
                 var0 = arg0;
@@ -338,7 +338,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[0] = var5;
                 var2[1] = var4;
                 var2[2] = var1;
-                var1 = function(arg0) { // Original name: hsl2hex, environment: var1
+                var1 = function arg0() {
                     _fun65406: for (var _fun65406_ip = 0;;) switch (_fun65406_ip) {
                         case 0:
                             var4 = arg0;
@@ -366,7 +366,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun65406
                             }
                         case 66:
-                            var10 = function(arg0, arg1, arg2) { // Original name: hue2rgb, environment: var9
+                            var10 = function arg0, arg1, arg2() {
                                 _fun65407: for (var _fun65407_ip = 0;;) switch (_fun65407_ip) {
                                     case 0:
                                         var2 = arg0;

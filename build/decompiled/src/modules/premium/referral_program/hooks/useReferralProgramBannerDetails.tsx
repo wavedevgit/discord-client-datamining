@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 3;
     var2.MAX_REFERRALS_SENT = var3;
-    var1 = function() { // Original name: useReferralProgramBannerDetails, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var6 = _closure1_slot1;
         var2 = 3;

@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/libdiscore/FluxApi.tsx';
     var4 = var5.bind(var6)(var4);
     var2.FLUX_API = var3;
-    var1 = function() { // Original name: hasFluxApi, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var0 = null;
         var0 = var0 != var1;

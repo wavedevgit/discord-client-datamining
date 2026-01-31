@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: InstantInviteDetails, environment: var3
+    var1 = function arg0() {
         _fun72799: for (var _fun72799_ip = 0;;) switch (_fun72799_ip) {
             case 0:
                 var0 = arg0;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_instant_invites/native/InstantInviteCode.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: InstantInviteCode, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var12 = var0.invite;
         var0 = _closure1_slot8;

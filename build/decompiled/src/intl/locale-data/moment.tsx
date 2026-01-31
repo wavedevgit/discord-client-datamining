@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var6.bind(var7)(var2, var1, var5);
     var1 = {};
-    var5 = function() { // Original name: bg, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.bg = var5;
-    var5 = function() { // Original name: cs, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.cs = var5;
-    var5 = function() { // Original name: da, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.da = var5;
-    var5 = function() { // Original name: de, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.de = var5;
-    var5 = function() { // Original name: el, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.el = var5;
-    var5 = function() { // Original name: en-GB, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['en-GB'] = var5;
-    var5 = function() { // Original name: es-ES, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['es-ES'] = var5;
-    var5 = function() { // Original name: es-419, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['es-419'] = var5;
-    var5 = function() { // Original name: fi, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fi = var5;
-    var5 = function() { // Original name: fr, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fr = var5;
-    var5 = function() { // Original name: hr, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.hr = var5;
-    var5 = function() { // Original name: hu, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.hu = var5;
-    var5 = function() { // Original name: it, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.it = var5;
-    var5 = function() { // Original name: ja, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ja = var5;
-    var5 = function() { // Original name: ko, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ko = var5;
-    var5 = function() { // Original name: lt, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.lt = var5;
-    var5 = function() { // Original name: nl, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.nl = var5;
-    var5 = function() { // Original name: no, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.no = var5;
-    var5 = function() { // Original name: pl, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.pl = var5;
-    var5 = function() { // Original name: pt-BR, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['pt-BR'] = var5;
-    var5 = function() { // Original name: ro, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ro = var5;
-    var5 = function() { // Original name: ru, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.ru = var5;
-    var5 = function() { // Original name: sv-SE, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['sv-SE'] = var5;
-    var5 = function() { // Original name: th, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.th = var5;
-    var5 = function() { // Original name: tr, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.tr = var5;
-    var5 = function() { // Original name: uk, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.uk = var5;
-    var5 = function() { // Original name: vi, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.vi = var5;
-    var5 = function() { // Original name: zh-CN, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['zh-CN'] = var5;
-    var5 = function() { // Original name: zh-TW, environment: var0
+    var5 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1['zh-TW'] = var5;
-    var0 = function() { // Original name: hi, environment: var0
+    var0 = function() {
         var2 = _closure1_slot0;
         var0 = _closure1_slot1;
         var1 = 1;

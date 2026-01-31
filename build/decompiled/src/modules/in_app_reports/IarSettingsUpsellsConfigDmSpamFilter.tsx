@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var1);
     var1 = {};
-    var0 = function() { // Original name: getTitle, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getTitle = var0;
-    var0 = function() { // Original name: getDisabledTitle, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.getDisabledTitle = var0;
-    var0 = function() { // Original name: getDescription, environment: var3
+    var0 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.GROUP_DM;
     var6[1] = var7;
     var1.eligibleChannelTypes = var6;
-    var6 = function() { // Original name: onApply, environment: var3
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onApply = var6;
-    var3 = function() { // Original name: predicate, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 3;

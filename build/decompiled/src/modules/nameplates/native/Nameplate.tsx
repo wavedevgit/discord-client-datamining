@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function NameplateTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}';
     var3.code = var6;
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: NameplateInner, environment: var1
+    var3 = function arg0() {
         _fun56741: for (var _fun56741_ip = 0;;) switch (_fun56741_ip) {
             case 0:
                 var2 = arg0;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2[var4];
                 var13 = var1.bind(var3)(var8);
                 var8 = var13.useAnimatedStyle;
-                var0 = function() { // Original name: j, environment: var0
+                var0 = function() {
                     var0 = {};
                     var2 = _closure2_slot1;
                     var1 = var2.get;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nameplates/native/Nameplate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun56745: for (var _fun56745_ip = 0;;) switch (_fun56745_ip) {
             case 0:
                 var3 = arg0;

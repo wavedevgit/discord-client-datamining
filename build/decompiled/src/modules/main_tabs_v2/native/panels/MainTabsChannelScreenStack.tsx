@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getKey, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.String;
         var0 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var7 = var6.memo;
-    var3 = function(arg0) { // Original name: FirstChannelScreen, environment: var1
+    var3 = function arg0() {
         _fun104640: for (var _fun104640_ip = 0;;) switch (_fun104640_ip) {
             case 0:
                 var1 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot16 = var3;
     var7 = var6.memo;
-    var3 = function(arg0) { // Original name: ChannelScreen, environment: var1
+    var3 = function arg0() {
         _fun104642: for (var _fun104642_ip = 0;;) switch (_fun104642_ip) {
             case 0:
                 var1 = arg0;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var8[var22];
                 var28 = var5.bind(var3)(var22);
                 var27 = var28.useAnimatedReaction;
-                var26 = function() { // Original name: p, environment: var0
+                var26 = function() {
                     var1 = _closure2_slot5;
                     var0 = var1.get;
                     var1 = var0.bind(var1)();
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26.__workletHash = var22;
                 var22 = _closure1_slot15;
                 var26.__initData = var22;
-                var22 = function(arg0, arg1) { // Original name: f, environment: var0
+                var22 = function arg0, arg1() {
                     _fun104645: for (var _fun104645_ip = 0;;) switch (_fun104645_ip) {
                         case 0:
                             var2 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot19 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MainTabsChannelScreenStack, environment: var1
+    var1 = function arg0() {
         _fun104648: for (var _fun104648_ip = 0;;) switch (_fun104648_ip) {
             case 0:
                 var0 = arg0;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var23[var7];
                 var20 = var24.bind(var4)(var2);
                 var9 = var20.useAnimatedReaction;
-                var3 = function() { // Original name: M, environment: var1
+                var3 = function() {
                     var2 = _closure2_slot2;
                     var1 = var2.get;
                     var1 = var1.bind(var2)();
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.__workletHash = var2;
                 var2 = _closure1_slot18;
                 var3.__initData = var2;
-                var2 = function(arg0, arg1) { // Original name: F, environment: var1
+                var2 = function arg0, arg1() {
                     _fun104650: for (var _fun104650_ip = 0;;) switch (_fun104650_ip) {
                         case 0:
                             var2 = arg0;

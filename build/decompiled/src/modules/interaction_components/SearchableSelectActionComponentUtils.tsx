@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1) { // Original name: getSnowflakeSelectDefaultValues, environment: var3
+    var1 = function arg0, arg1() {
         _fun56249: for (var _fun56249_ip = 0;;) switch (_fun56249_ip) {
             case 0:
                 var3 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var4 = 1000;
     var2.MIN_REREQUEST_TIME = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: queryMentionables, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun56251: for (var _fun56251_ip = 0;;) switch (_fun56251_ip) {
             case 0:
                 var7 = arg0;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.queryMentionables = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: queryChannels, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun56254: for (var _fun56254_ip = 0;;) switch (_fun56254_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.queryChannels = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: getInitialSnowflakeSelectOptions, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun56256: for (var _fun56256_ip = 0;;) switch (_fun56256_ip) {
             case 0:
                 var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var11;
-    var6 = function(arg0) { // Original name: cleanCode, environment: var3
+    var6 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /[^A-Za-z0-9]/g;
@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var6;
-    var0 = function() { // Original name: _resolveGiftCode, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var5 = function(arg0) { // Original name: getSubscriptionGiftSuccessText, environment: var3
+    var5 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var5;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getErrorMessage, environment: var3
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         _fun28728: for (var _fun28728_ip = 0;;) switch (_fun28728_ip) {
             case 0:
                 var0 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var4;
-    var1 = function(arg0, arg1) { // Original name: getGiftCodeRedeemError, environment: var3
+    var1 = function arg0, arg1() {
         _fun28729: for (var _fun28729_ip = 0;;) switch (_fun28729_ip) {
             case 0:
                 var0 = arg0;
@@ -851,7 +851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'CUSTOM_MESSAGE_EMOJI_SOUNDBOARD';
     var8[var9] = var7;
     var _closure1_slot17 = var8;
-    var7 = function(arg0, arg1) { // Original name: getGiftExperience, environment: var3
+    var7 = function arg0, arg1() {
         _fun28734: for (var _fun28734_ip = 0;;) switch (_fun28734_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.shouldShowCustomGiftExperience = var7;
-    var7 = function(arg0) { // Original name: makeComboId, environment: var3
+    var7 = function arg0() {
         _fun28736: for (var _fun28736_ip = 0;;) switch (_fun28736_ip) {
             case 0:
                 var2 = arguments[1];
@@ -974,7 +974,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.makeComboId = var7;
-    var7 = function(arg0) { // Original name: parseComboId, environment: var3
+    var7 = function arg0() {
         _fun28737: for (var _fun28737_ip = 0;;) switch (_fun28737_ip) {
             case 0:
                 var2 = arg0;
@@ -1163,7 +1163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.findGiftCodes = var6;
-    var6 = function() { // Original name: getGiftCodeURL, environment: var3
+    var6 = function() {
         _fun28740: for (var _fun28740_ip = 0;;) switch (_fun28740_ip) {
             case 0:
                 var6 = arguments[0];
@@ -1213,7 +1213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getGiftCodeURL = var6;
-    var6 = function() { // Original name: resolveGiftCode, environment: var3
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot20;
         var2 = var3.apply;
@@ -1224,7 +1224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resolveGiftCode = var6;
-    var6 = function(arg0, arg1) { // Original name: trackGiftCodeCopy, environment: var3
+    var6 = function arg0, arg1() {
         var6 = _closure1_slot1;
         var7 = _closure1_slot2;
         var0 = 9;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackGiftCodeCopy = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: getStep, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun28743: for (var _fun28743_ip = 0;;) switch (_fun28743_ip) {
             case 0:
                 var2 = arg0;
@@ -1344,7 +1344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getStep = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: getHeaderText, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun28744: for (var _fun28744_ip = 0;;) switch (_fun28744_ip) {
             case 0:
                 var3 = arg0;
@@ -1452,7 +1452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getHeaderText = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: getButtonText, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun28745: for (var _fun28745_ip = 0;;) switch (_fun28745_ip) {
             case 0:
                 var4 = arg0;
@@ -1621,7 +1621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getButtonText = var6;
     var2.getSubscriptionGiftSuccessText = var5;
-    var5 = function(arg0, arg1) { // Original name: getSubscriptionGiftStartHeaderText, environment: var3
+    var5 = function arg0, arg1() {
         _fun28746: for (var _fun28746_ip = 0;;) switch (_fun28746_ip) {
             case 0:
                 var5 = arg0;
@@ -1950,7 +1950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSubscriptionGiftStartHeaderText = var5;
-    var5 = function(arg0) { // Original name: getBodyText, environment: var3
+    var5 = function arg0() {
         _fun28757: for (var _fun28757_ip = 0;;) switch (_fun28757_ip) {
             case 0:
                 var0 = arg0;
@@ -2092,7 +2092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBodyText = var5;
     var2.getErrorMessage = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: firstLibraryApplicationForGiftCode, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun28758: for (var _fun28758_ip = 0;;) switch (_fun28758_ip) {
             case 0:
                 var0 = arg0;
@@ -2146,7 +2146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.firstLibraryApplicationForGiftCode = var4;
-    var4 = function(arg0) { // Original name: processGiftCodeInput, environment: var3
+    var4 = function arg0() {
         _fun28760: for (var _fun28760_ip = 0;;) switch (_fun28760_ip) {
             case 0:
                 var1 = arg0;

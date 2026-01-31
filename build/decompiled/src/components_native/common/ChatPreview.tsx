@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun108899: for (var _fun108899_ip = 0;;) switch (_fun108899_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot23 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ChatPreview, environment: var5
+        var3 = function arg0() {
             _fun108903: for (var _fun108903_ip = 0;;) switch (_fun108903_ip) {
                 case 0:
                     var4 = this;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             _closure5_slot2 = var1;
                                             var0 = true;
                                         case 159:
-                                            var1 = function(arg0) { // Original name: processHiddenMessageRow, environment: var8
+                                            var1 = function arg0() {
                                                 var0 = arg0;
                                                 var _closure6_slot0 = var0;
                                                 var4 = _closure5_slot0;
@@ -1154,7 +1154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun108920: for (var _fun108920_ip = 0;;) switch (_fun108920_ip) {
                 case 0:
                     var1 = this;
@@ -1190,7 +1190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun108921: for (var _fun108921_ip = 0;;) switch (_fun108921_ip) {
                 case 0:
                     var0 = this;
@@ -1223,7 +1223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun108922: for (var _fun108922_ip = 0;;) switch (_fun108922_ip) {
                 case 0:
                     var0 = arg0;
@@ -1289,7 +1289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun108923: for (var _fun108923_ip = 0;;) switch (_fun108923_ip) {
                 case 0:
                     var10 = this;
@@ -1436,7 +1436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/ChatPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChatPreviewConnected, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var0 = var4.channelId;
         var _closure2_slot0 = var0;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: TabLabel, environment: var1
+    var0 = function arg0() {
         _fun104594: for (var _fun104594_ip = 0;;) switch (_fun104594_ip) {
             case 0:
                 var0 = arg0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/utils/getLabelRenderMethod.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: getTabLabelRenderMethod, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0

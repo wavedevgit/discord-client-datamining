@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var11;
-    var0 = function(arg0) { // Original name: countKeys, environment: var1
+    var0 = function arg0() {
         _fun39427: for (var _fun39427_ip = 0;;) switch (_fun39427_ip) {
             case 0:
                 var6 = arg0;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var7 = function(arg0) { // Original name: collectGuildAnalyticsMetadata, environment: var1
+    var7 = function arg0() {
         _fun39428: for (var _fun39428_ip = 0;;) switch (_fun39428_ip) {
             case 0:
                 var11 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var7;
-    var6 = function(arg0, arg1) { // Original name: collectStaticChannelRouteAnalyticsMetadata, environment: var1
+    var6 = function arg0, arg1() {
         var0 = {};
         var1 = arg1;
         var0.channel_static_route = var1;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var6;
-    var5 = function(arg0) { // Original name: collectChannelAnalyticsMetadata, environment: var1
+    var5 = function arg0() {
         _fun39430: for (var _fun39430_ip = 0;;) switch (_fun39430_ip) {
             case 0:
                 var6 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun39430
                 }
             case 37:
-                var7 = function(arg0) { // Original name: isHidden, environment: var1
+                var7 = function arg0() {
                     _fun39431: for (var _fun39431_ip = 0;;) switch (_fun39431_ip) {
                         case 0:
                             var1 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var5;
-    var4 = function(arg0) { // Original name: trackWithMetadata, environment: var1
+    var4 = function arg0() {
         _fun39432: for (var _fun39432_ip = 0;;) switch (_fun39432_ip) {
             case 0:
                 var5 = arg0;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var3 = function(arg0, arg1, arg2) { // Original name: getVoiceStateMetadata, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = {
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var8;
     var2.collectGuildAnalyticsMetadata = var7;
     var2.collectStaticChannelRouteAnalyticsMetadata = var6;
-    var6 = function(arg0) { // Original name: collectChannelAnalyticsMetadataFromId, environment: var1
+    var6 = function arg0() {
         _fun39437: for (var _fun39437_ip = 0;;) switch (_fun39437_ip) {
             case 0:
                 var4 = arg0;
@@ -692,7 +692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.collectChannelAnalyticsMetadataFromId = var6;
     var2.collectChannelAnalyticsMetadata = var5;
-    var5 = function(arg0) { // Original name: collectVoiceAnalyticsMetadata, environment: var1
+    var5 = function arg0() {
         _fun39438: for (var _fun39438_ip = 0;;) switch (_fun39438_ip) {
             case 0:
                 var4 = arg0;
@@ -751,7 +751,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.collectVoiceAnalyticsMetadata = var5;
     var2.trackWithMetadata = var4;
-    var4 = function(arg0) { // Original name: getChannelOpenedMetadata, environment: var1
+    var4 = function arg0() {
         _fun39439: for (var _fun39439_ip = 0;;) switch (_fun39439_ip) {
             case 0:
                 var1 = arg0;
@@ -905,7 +905,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelOpenedMetadata = var4;
     var2.getVoiceStateMetadata = var3;
-    var1 = function(arg0, arg1) { // Original name: getCustomStatusMetadata, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = {};

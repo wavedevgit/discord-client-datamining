@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: useBaseActivityPanelFocusedView, environment: var4
+    var3 = function arg0() {
         _fun110377: for (var _fun110377_ip = 0;;) switch (_fun110377_ip) {
             case 0:
                 var0 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var3;
-    var1 = function(arg0) { // Original name: BaseActivityPanelFocusedView, environment: var4
+    var1 = function arg0() {
         _fun110379: for (var _fun110379_ip = 0;;) switch (_fun110379_ip) {
             case 0:
                 var1 = arg0;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var15[var8];
                 var4 = var6.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: _, environment: var0
+                var1 = function() {
                     _fun110381: for (var _fun110381_ip = 0;;) switch (_fun110381_ip) {
                         case 0:
                             var0 = _closure2_slot7;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var13 = var0.y;
                         case 138:
                             var0 = function() { // Environment: var0
-                                var0 = function() { // Original name: ActivityPanelFocusedViewTsx2, environment: var0
+                                var0 = function() {
                                     _fun110383: for (var _fun110383_ip = 0;;) switch (_fun110383_ip) {
                                         case 0:
                                             var1 = arguments[0];
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var15[var8];
                 var7 = var6.bind(var3)(var2);
                 var4 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: T, environment: var0
+                var2 = function() {
                     _fun110384: for (var _fun110384_ip = 0;;) switch (_fun110384_ip) {
                         case 0:
                             var2 = _closure2_slot8;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var15[var8];
                 var4 = var6.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: A, environment: var0
+                var1 = function() {
                     _fun110386: for (var _fun110386_ip = 0;;) switch (_fun110386_ip) {
                         case 0:
                             var0 = _closure1_slot15;

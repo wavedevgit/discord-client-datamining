@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot9 = var1;
             var1 = function() { // Environment: var3
                 var3 = _closure1_slot4;
-                var2 = function() { // Original name: ProgressTransitionManager, environment: var4
+                var2 = function() {
                     var2 = this;
                     var3 = _closure1_slot3;
                     var1 = _closure2_slot0;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var1 = 'addProgressAnimation';
                 var0.key = var1;
-                var1 = function(arg0, arg1) { // Original name: addProgressAnimation, environment: var4
+                var1 = function arg0, arg1() {
                     var8 = arg0;
                     var7 = arg1;
                     var2 = this;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = undefined;
                     var4 = var4.bind(var0)(var3);
                     var3 = var4.runOnUIImmediately;
-                    var1 = function() { // Original name: pnpm_ProgressTransitionManagerTs1, environment: var1
+                    var1 = function() {
                         var0 = _closure1_slot0;
                         var3 = var0.ProgressTransitionRegister;
                         var2 = var3.addProgressAnimation;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'removeProgressAnimation';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: removeProgressAnimation, environment: var4
+                var5 = function arg0() {
                     _fun34617: for (var _fun34617_ip = 0;;) switch (_fun34617_ip) {
                         case 0:
                             var7 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var5[var2];
                             var3 = var3.bind(var0)(var2);
                             var2 = var3.runOnUIImmediately;
-                            var1 = function() { // Original name: pnpm_ProgressTransitionManagerTs2, environment: var1
+                            var1 = function() {
                                 var0 = _closure1_slot0;
                                 var3 = var0.ProgressTransitionRegister;
                                 var2 = var3.removeProgressAnimation;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'registerEventHandlers';
                 var0.key = var5;
-                var5 = function() { // Original name: registerEventHandlers, environment: var4
+                var5 = function() {
                     _fun34619: for (var _fun34619_ip = 0;;) switch (_fun34619_ip) {
                         case 0:
                             var0 = this;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = undefined;
                             var10 = var5.bind(var4)(var7);
                             var9 = var10.registerEventHandler;
-                            var8 = function(arg0) { // Original name: pnpm_ProgressTransitionManagerTs3, environment: var2
+                            var8 = function arg0() {
                                 _fun34620: for (var _fun34620_ip = 0;;) switch (_fun34620_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7 = var6[var3];
                             var10 = var5.bind(var4)(var7);
                             var9 = var10.registerEventHandler;
-                            var8 = function() { // Original name: pnpm_ProgressTransitionManagerTs4, environment: var2
+                            var8 = function() {
                                 var0 = _closure1_slot0;
                                 var1 = var0.ProgressTransitionRegister;
                                 var0 = var1.onTransitionEnd;
@@ -262,7 +262,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var6[var3];
                             var4 = var5.bind(var4)(var3);
                             var3 = var4.registerEventHandler;
-                            var2 = function() { // Original name: pnpm_ProgressTransitionManagerTs5, environment: var2
+                            var2 = function() {
                                 var0 = _closure1_slot0;
                                 var1 = var0.ProgressTransitionRegister;
                                 var0 = var1.onAndroidFinishTransitioning;
@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var5 = 'unregisterEventHandlers';
                 var0.key = var5;
-                var4 = function() { // Original name: unregisterEventHandlers, environment: var4
+                var4 = function() {
                     _fun34623: for (var _fun34623_ip = 0;;) switch (_fun34623_ip) {
                         case 0:
                             var0 = this;
@@ -391,7 +391,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5.code = var9;
             var _closure1_slot10 = var5;
             var5 = function() { // Environment: var3
-                var0 = function() { // Original name: createProgressTransitionRegister, environment: var0
+                var0 = function() {
                     var0 = global;
                     var2 = var0.Map;
                     var3 = var2.prototype;
@@ -438,7 +438,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0 instanceof Object ? var0 : var2;
                     var _closure3_slot3 = var0;
                     var0 = {};
-                    var2 = function(arg0, arg1) { // Original name: addProgressAnimation, environment: var1
+                    var2 = function arg0, arg1() {
                         _fun34626: for (var _fun34626_ip = 0;;) switch (_fun34626_ip) {
                             case 0:
                                 var3 = arg0;
@@ -464,7 +464,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.addProgressAnimation = var2;
-                    var2 = function(arg0, arg1) { // Original name: removeProgressAnimation, environment: var1
+                    var2 = function arg0, arg1() {
                         _fun34627: for (var _fun34627_ip = 0;;) switch (_fun34627_ip) {
                             case 0:
                                 var2 = arg0;
@@ -493,7 +493,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.removeProgressAnimation = var2;
-                    var2 = function(arg0, arg1) { // Original name: onTransitionStart, environment: var1
+                    var2 = function arg0, arg1() {
                         var3 = arg0;
                         var4 = _closure3_slot1;
                         var2 = var4.set;
@@ -510,7 +510,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.onTransitionStart = var2;
-                    var2 = function(arg0) { // Original name: frame, environment: var1
+                    var2 = function arg0() {
                         _fun34629: for (var _fun34629_ip = 0;;) switch (_fun34629_ip) {
                             case 0:
                                 var4 = arg0;
@@ -558,7 +558,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.frame = var2;
-                    var2 = function() { // Original name: onAndroidFinishTransitioning, environment: var1
+                    var2 = function() {
                         _fun34630: for (var _fun34630_ip = 0;;) switch (_fun34630_ip) {
                             case 0:
                                 var1 = _closure3_slot3;
@@ -578,7 +578,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.onAndroidFinishTransitioning = var2;
-                    var2 = function() { // Original name: onTransitionEnd, environment: var1
+                    var2 = function() {
                         _fun34631: for (var _fun34631_ip = 0;;) switch (_fun34631_ip) {
                             case 0:
                                 var0 = undefined;
@@ -720,7 +720,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var8[var5];
             var8 = var7.bind(var0)(var5);
             var7 = var8.runOnUIImmediately;
-            var5 = function() { // Original name: pnpm_ProgressTransitionManagerTs9, environment: var3
+            var5 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot11;
                 var0 = undefined;
@@ -739,7 +739,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun34612_ip = 399;
             continue _fun34612;
         case 338:
-            var5 = function() { // Original name: maybeThrowError, environment: var3
+            var5 = function() {
                 _fun34632: for (var _fun34632_ip = 0;;) switch (_fun34632_ip) {
                     case 0:
                         var3 = _closure1_slot1;
@@ -780,7 +780,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var6.Proxy;
             var6 = {};
             var6.get = var5;
-            var3 = function() { // Original name: set, environment: var3
+            var3 = function() {
                 var1 = _closure1_slot12;
                 var0 = undefined;
                 var0 = var1.bind(var0)();

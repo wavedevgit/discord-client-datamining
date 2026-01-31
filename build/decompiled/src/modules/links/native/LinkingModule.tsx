@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.NativeModules;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: tryOpenUrlAsUniversalLink, environment: var3
+    var6 = function arg0() {
         _fun27023: for (var _fun27023_ip = 0;;) switch (_fun27023_ip) {
             case 0:
                 var3 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.tryOpenUrlAsUniversalLink = var6;
-    var3 = function(arg0) { // Original name: tryOpenScheme, environment: var3
+    var3 = function arg0() {
         _fun27024: for (var _fun27024_ip = 0;;) switch (_fun27024_ip) {
             case 0:
                 var3 = arg0;

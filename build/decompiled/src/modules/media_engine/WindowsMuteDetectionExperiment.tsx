@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: getWindowsMuteDetectionExperimentConfig, environment: var1
+    var3 = function arg0() {
         _fun94169: for (var _fun94169_ip = 0;;) switch (_fun94169_ip) {
             case 0:
                 var0 = arg0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/media_engine/WindowsMuteDetectionExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getWindowsMuteDetectionExperimentConfig = var3;
-    var1 = function(arg0) { // Original name: useWindowsMuteDetectionExperiment, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var1 = var1.location;
         var _closure2_slot0 = var1;

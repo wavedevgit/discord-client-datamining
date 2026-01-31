@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: escapeRegExp, environment: var1
+    var2 = function arg0() {
         _fun27856: for (var _fun27856_ip = 0;;) switch (_fun27856_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.CAPTCHA_MODAL_KEY;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: showCaptcha, environment: var3
+    var6 = function arg0, arg1() {
         _fun112315: for (var _fun112315_ip = 0;;) switch (_fun112315_ip) {
             case 0:
                 var1 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var1.sitekey = var10;
                 var1.captchaService = var9;
-                var9 = function(arg0, arg1) { // Original name: onCaptchaVerify, environment: var8
+                var9 = function arg0, arg1() {
                     var2 = _closure2_slot0;
                     var1 = {};
                     var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1.onCaptchaVerify = var9;
-                var8 = function() { // Original name: close, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var1 = 3;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.showCaptcha = var6;
-    var6 = function(arg0) { // Original name: showCaptchaAsync, environment: var3
+    var6 = function arg0() {
         _fun112318: for (var _fun112318_ip = 0;;) switch (_fun112318_ip) {
             case 0:
                 var1 = arg0;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.sitekey = var8;
                     var8 = _closure2_slot2;
                     var2.captchaService = var8;
-                    var8 = function(arg0, arg1) { // Original name: onCaptchaVerify, environment: var7
+                    var8 = function arg0, arg1() {
                         var2 = _closure3_slot0;
                         var1 = {};
                         var0 = arg0;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.onCaptchaVerify = var8;
-                    var8 = function(arg0) { // Original name: onReject, environment: var7
+                    var8 = function arg0() {
                         _fun112321: for (var _fun112321_ip = 0;;) switch (_fun112321_ip) {
                             case 0:
                                 var3 = _closure1_slot0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var2.onReject = var8;
-                    var7 = function() { // Original name: close, environment: var7
+                    var7 = function() {
                         var3 = _closure1_slot1;
                         var2 = _closure1_slot2;
                         var1 = 3;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.showCaptchaAsync = var6;
-    var3 = function() { // Original name: useIsCaptchaModalOpen, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 2;

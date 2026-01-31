@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: SectionSeparator, environment: var1
+    var0 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var13 = var0.bind(var3)();
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: BenefitRow, environment: var1
+    var0 = function arg0() {
         _fun117027: for (var _fun117027_ip = 0;;) switch (_fun117027_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: BenefitSection, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.sectionTitle;
         var5 = var0.children;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateFullCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierTemplateFullCard, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var19 = var0.template;
         var15 = var0.guildId;

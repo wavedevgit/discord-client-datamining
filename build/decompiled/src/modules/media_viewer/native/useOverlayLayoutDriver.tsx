@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_viewer/native/useOverlayLayoutDriver.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useOverlayLayoutDriver, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 1;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useOverlayLayoutDriver = var3;
-    var3 = function(arg0) { // Original name: useHeaderLayoutAnimation, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var8 = _closure1_slot0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = undefined;
         var2 = var8.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: o, environment: var0
+        var0 = function() {
             var0 = {};
             var7 = {};
             var4 = _closure1_slot0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHeaderLayoutAnimation = var3;
-    var1 = function(arg0) { // Original name: useFooterLayoutAnimation, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var8 = _closure1_slot0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = undefined;
         var2 = var8.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
-        var0 = function() { // Original name: n, environment: var0
+        var0 = function() {
             var0 = {};
             var7 = {};
             var4 = _closure1_slot0;

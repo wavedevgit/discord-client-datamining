@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var3 = undefined;
             var17 = undefined;
-            var6 = function(arg0, arg1) { // Original name: buf2binstring, environment: var1
+            var6 = function arg0, arg1() {
                 _fun94794: for (var _fun94794_ip = 0;;) switch (_fun94794_ip) {
                     case 0:
                         var5 = arg0;

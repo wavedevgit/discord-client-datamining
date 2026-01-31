@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
-    var5 = function(arg0) { // Original name: extractTimestamp, environment: var3
+    var5 = function arg0() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.floor;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0) { // Original name: fromTimestamp, environment: var3
+    var4 = function arg0() {
         _fun947: for (var _fun947_ip = 0;;) switch (_fun947_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var6;
     var1 = function() { // Environment: var3
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: SnowflakeSequence, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'next';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun950: for (var _fun950_ip = 0;;) switch (_fun950_ip) {
                 case 0:
                     var1 = this;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'willOverflowNext';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var1 = var0.seq;
             var0 = 4095;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'reset';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var1 = 0;
             var0 = this;
             var0.seq = var1;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MAX_SNOWFLAKE_SEQ = var6;
     var2.extractTimestamp = var5;
     var2.fromTimestamp = var4;
-    var4 = function(arg0, arg1) { // Original name: fromTimestampWithSequence, environment: var3
+    var4 = function arg0, arg1() {
         _fun953: for (var _fun953_ip = 0;;) switch (_fun953_ip) {
             case 0:
                 var3 = arg1;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fromTimestampWithSequence = var4;
-    var4 = function(arg0) { // Original name: atPreviousMillisecond, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot6;
         var3 = _closure1_slot5;
         var1 = undefined;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.atPreviousMillisecond = var4;
-    var4 = function(arg0) { // Original name: atNextMillisecond, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot6;
         var3 = _closure1_slot5;
         var1 = undefined;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.atNextMillisecond = var4;
-    var4 = function(arg0) { // Original name: age, environment: var3
+    var4 = function arg0() {
         var0 = global;
         var1 = var0.Date;
         var0 = var1.now;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.age = var4;
-    var4 = function(arg0, arg1) { // Original name: compare, environment: var3
+    var4 = function arg0, arg1() {
         _fun957: for (var _fun957_ip = 0;;) switch (_fun957_ip) {
             case 0:
                 var8 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.compare = var4;
-    var3 = function(arg0) { // Original name: isProbablyAValidSnowflake, environment: var3
+    var3 = function arg0() {
         _fun958: for (var _fun958_ip = 0;;) switch (_fun958_ip) {
             case 0:
                 var2 = arg0;

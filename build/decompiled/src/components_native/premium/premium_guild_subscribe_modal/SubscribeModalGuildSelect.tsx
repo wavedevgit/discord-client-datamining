@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/premium/premium_guild_subscribe_modal/SubscribeModalGuildSelect.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SubscribeModalGuildSelect, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = var1.guildBoostSlots;
         var _closure2_slot0 = var0;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = _closure2_slot3;
             var7 = var9.guildOption;
             var1.style = var7;
-            var6 = function() { // Original name: onPress, environment: var6
+            var6 = function() {
                 var5 = _closure3_slot0;
                 var3 = _closure2_slot4;
                 var2 = var3.replace;

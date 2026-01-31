@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = {};
     var _closure1_slot0 = var2;
-    var0 = function(arg0, arg1) { // Original name: warnOnce, environment: var0
+    var0 = function arg0, arg1() {
         _fun2426: for (var _fun2426_ip = 0;;) switch (_fun2426_ip) {
             case 0:
                 var2 = arg0;

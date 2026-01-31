@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.channels = var3;
         var3 = false;
         var0.isActivityFocused = var3;
-        var3 = function() { // Original name: isVoicePanelFullscreen, environment: var1
+        var3 = function() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.isVoicePanelFullscreen = var3;
-        var3 = function() { // Original name: isAnyVoicePanelOpen, environment: var1
+        var3 = function() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new var5[var2](var4);
         var2 = var2 instanceof Object ? var2 : var3;
         var0.voicePanelsPIP = var2;
-        var2 = function(arg0) { // Original name: openChannel, environment: var1
+        var2 = function arg0() {
             _fun62563: for (var _fun62563_ip = 0;;) switch (_fun62563_ip) {
                 case 0:
                     var6 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.openChannel = var2;
-        var2 = function(arg0) { // Original name: closeChannel, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.closeChannel = var2;
-        var2 = function(arg0) { // Original name: isMounted, environment: var1
+        var2 = function arg0() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.isMounted = var2;
-        var2 = function(arg0) { // Original name: setIsActivityFocused, environment: var1
+        var2 = function arg0() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setIsActivityFocused = var2;
-        var2 = function(arg0, arg1) { // Original name: setChannelPanelFullscreen, environment: var1
+        var2 = function arg0, arg1() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = arg1;
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setChannelPanelFullscreen = var2;
-        var2 = function(arg0, arg1) { // Original name: setChannelPanelOpen, environment: var1
+        var2 = function arg0, arg1() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = arg1;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.setChannelPanelOpen = var2;
-        var2 = function(arg0) { // Original name: isChannelOpen, environment: var1
+        var2 = function arg0() {
             var1 = _closure2_slot1;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.isChannelOpen = var2;
-        var1 = function(arg0, arg1) { // Original name: setChannelPanelPIP, environment: var1
+        var1 = function arg0, arg1() {
             var0 = arg0;
             var _closure3_slot0 = var0;
             var0 = arg1;

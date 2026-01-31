@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 'private_channel_obfuscation';
     var2.PRIVATE_CHANNEL_OBFUSCATION_KEY = var3;
-    var1 = function() { // Original name: getCachedPrivateChannelObfuscation, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

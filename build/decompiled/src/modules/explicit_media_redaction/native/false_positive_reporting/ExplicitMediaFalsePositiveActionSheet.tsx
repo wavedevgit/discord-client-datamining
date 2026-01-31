@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var6;
     var3 = var3.jsxs;
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: ExplicitMediaFalsePositivePreviewEmbed, environment: var1
+    var3 = function arg0() {
         _fun61609: for (var _fun61609_ip = 0;;) switch (_fun61609_ip) {
             case 0:
                 var0 = arg0;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: ExplicitMediaFalsePositivePreviewAttachment, environment: var1
+    var3 = function arg0() {
         _fun61610: for (var _fun61610_ip = 0;;) switch (_fun61610_ip) {
             case 0:
                 var0 = arg0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: ExplicitMediaFalsePositivePreview, environment: var1
+    var3 = function arg0() {
         _fun61611: for (var _fun61611_ip = 0;;) switch (_fun61611_ip) {
             case 0:
                 var0 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaFalsePositiveActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: handleSuccess, environment: var1
+    var3 = function arg0() {
         var6 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 8;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleSuccess = var3;
-    var3 = function() { // Original name: handleError, environment: var1
+    var3 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 13;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleError = var3;
-    var1 = function(arg0) { // Original name: ExplicitMediaFalsePositiveActionSheet, environment: var1
+    var1 = function arg0() {
         _fun61614: for (var _fun61614_ip = 0;;) switch (_fun61614_ip) {
             case 0:
                 var2 = arg0;

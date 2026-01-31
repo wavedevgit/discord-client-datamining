@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createSlider;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.ACCESSIBILITY;
     var1.parent = var8;
-    var8 = function() { // Original name: useTrailing, environment: var7
+    var8 = function() {
         var3 = _closure1_slot5;
         var1 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useTrailing = var8;
-    var7 = function() { // Original name: useContrastSettingProps, environment: var7
+    var7 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0

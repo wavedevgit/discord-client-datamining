@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/native/hooks/useSearchScreenError.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useMessageSearchErrorScreen, environment: var1
+    var3 = function arg0() {
         _fun105699: for (var _fun105699_ip = 0;;) switch (_fun105699_ip) {
             case 0:
                 var1 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useMessageSearchErrorScreen = var3;
-    var1 = function(arg0) { // Original name: useMessageTabCountsErrorText, environment: var1
+    var1 = function arg0() {
         _fun105704: for (var _fun105704_ip = 0;;) switch (_fun105704_ip) {
             case 0:
                 var0 = arg0;

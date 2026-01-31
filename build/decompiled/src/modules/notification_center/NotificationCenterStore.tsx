@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var8
+    var0 = function() {
         _fun100954: for (var _fun100954_ip = 0;;) switch (_fun100954_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var3 = function() { // Original name: handleLoadFinished, environment: var8
+    var3 = function() {
         var2 = _closure1_slot11;
         var1 = false;
         var2.hasNewMentions = var1;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var8
-        var3 = function() { // Original name: NotificationCenterStore, environment: var5
+        var3 = function() {
             _fun100959: for (var _fun100959_ip = 0;;) switch (_fun100959_ip) {
                 case 0:
                     var3 = this;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun100960: for (var _fun100960_ip = 0;;) switch (_fun100960_ip) {
                 case 0:
                     var2 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getTab';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun100962: for (var _fun100962_ip = 0;;) switch (_fun100962_ip) {
                 case 0:
                     var0 = _closure1_slot11;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isLocalItemAcked';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun100963: for (var _fun100963_ip = 0;;) switch (_fun100963_ip) {
                 case 0:
                     var3 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasNewMentions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             var0 = var0.hasNewMentions;
             return var0;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isDataStale';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             var0 = var0.isDataStale;
             return var0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isRefreshing';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             var0 = var0.isRefreshing;
             return var0;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldReload';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             _fun100967: for (var _fun100967_ip = 0;;) switch (_fun100967_ip) {
                 case 0:
                     var0 = _closure1_slot11;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var12 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: handleMessageCreate, environment: var8
+    var9 = function arg0() {
         _fun100968: for (var _fun100968_ip = 0;;) switch (_fun100968_ip) {
             case 0:
                 var0 = arg0;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.MESSAGE_CREATE = var9;
-    var9 = function(arg0) { // Original name: handleSetTab, environment: var8
+    var9 = function arg0() {
         var1 = {};
         var4 = _closure1_slot11;
         var5 = var1;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.NOTIFICATION_CENTER_SET_TAB = var9;
-    var9 = function(arg0) { // Original name: handleAck, environment: var8
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.localIds;
         var1 = var2.forEach;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.NOTIFICATION_CENTER_ITEMS_LOCAL_ACK = var9;
-    var8 = function() { // Original name: handleRefreshData, environment: var8
+    var8 = function() {
         var1 = _closure1_slot11;
         var0 = true;
         var1.isRefreshing = var0;

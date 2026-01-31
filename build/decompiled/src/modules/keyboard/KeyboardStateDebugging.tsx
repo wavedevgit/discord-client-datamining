@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1 = var6.bind(var8)(var7, var1);
     var1 = {};
-    var6 = function(arg0) { // Original name: channelSafeAreaBottomLayoutHeightChanged, environment: var3
+    var6 = function arg0() {
         _fun17597: for (var _fun17597_ip = 0;;) switch (_fun17597_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.channelSafeAreaBottomLayoutHeightChanged = var6;
-    var6 = function(arg0, arg1) { // Original name: channelSafeAreaBottomLayoutHeightMismatch, environment: var3
+    var6 = function arg0, arg1() {
         _fun17598: for (var _fun17598_ip = 0;;) switch (_fun17598_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.channelSafeAreaBottomLayoutHeightMismatch = var6;
-    var6 = function(arg0) { // Original name: keyboardControllerKeyboardWillShow, environment: var3
+    var6 = function arg0() {
         _fun17599: for (var _fun17599_ip = 0;;) switch (_fun17599_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerKeyboardWillShow = var6;
-    var6 = function(arg0) { // Original name: keyboardControllerKeyboardDidShow, environment: var3
+    var6 = function arg0() {
         _fun17600: for (var _fun17600_ip = 0;;) switch (_fun17600_ip) {
             case 0:
                 var1 = arguments[1];
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerKeyboardDidShow = var6;
-    var6 = function(arg0, arg1) { // Original name: keyboardControllerWorkletEvent, environment: var3
+    var6 = function arg0, arg1() {
         _fun17601: for (var _fun17601_ip = 0;;) switch (_fun17601_ip) {
             case 0:
                 var5 = arguments[2];
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerWorkletEvent = var6;
-    var6 = function() { // Original name: keyboardControllerKeyboardWillHide, environment: var3
+    var6 = function() {
         _fun17602: for (var _fun17602_ip = 0;;) switch (_fun17602_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerKeyboardWillHide = var6;
-    var6 = function() { // Original name: keyboardControllerKeyboardDidHide, environment: var3
+    var6 = function() {
         _fun17603: for (var _fun17603_ip = 0;;) switch (_fun17603_ip) {
             case 0:
                 var1 = arguments[0];
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerKeyboardDidHide = var6;
-    var6 = function(arg0, arg1) { // Original name: keyboardControllerMountEvent, environment: var3
+    var6 = function arg0, arg1() {
         _fun17604: for (var _fun17604_ip = 0;;) switch (_fun17604_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerMountEvent = var6;
-    var6 = function(arg0, arg1) { // Original name: keyboardControllerPeriodicHealthCheck, environment: var3
+    var6 = function arg0, arg1() {
         _fun17605: for (var _fun17605_ip = 0;;) switch (_fun17605_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerPeriodicHealthCheck = var6;
-    var6 = function(arg0, arg1) { // Original name: reactNativeKeyboardDidShow, environment: var3
+    var6 = function arg0, arg1() {
         _fun17606: for (var _fun17606_ip = 0;;) switch (_fun17606_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.reactNativeKeyboardDidShow = var6;
-    var6 = function(arg0) { // Original name: reactNativeKeyboardDidHide, environment: var3
+    var6 = function arg0() {
         _fun17607: for (var _fun17607_ip = 0;;) switch (_fun17607_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.reactNativeKeyboardDidHide = var6;
-    var6 = function(arg0, arg1) { // Original name: reactNativePeriodicHealthCheck, environment: var3
+    var6 = function arg0, arg1() {
         _fun17608: for (var _fun17608_ip = 0;;) switch (_fun17608_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.reactNativePeriodicHealthCheck = var6;
-    var3 = function() { // Original name: markPotentialBadState, environment: var3
+    var3 = function() {
         _fun17609: for (var _fun17609_ip = 0;;) switch (_fun17609_ip) {
             case 0:
                 var3 = _closure1_slot0;

@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/hooks/useGeoForUser.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useGeoForUser, environment: var1
+    var1 = function() {
         _fun56485: for (var _fun56485_ip = 0;;) switch (_fun56485_ip) {
             case 0:
                 var6 = _closure1_slot0;

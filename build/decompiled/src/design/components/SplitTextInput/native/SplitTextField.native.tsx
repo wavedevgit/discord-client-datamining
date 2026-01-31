@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.style = var10;
                 var11 = _closure1_slot2;
                 var10 = {};
-                var14 = function(arg0) { // Original name: style, environment: var14
+                var14 = function arg0() {
                     _fun60817: for (var _fun60817_ip = 0;;) switch (_fun60817_ip) {
                         case 0:
                             var0 = arg0;

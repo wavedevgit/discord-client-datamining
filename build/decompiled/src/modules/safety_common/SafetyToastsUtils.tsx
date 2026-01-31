@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_common/SafetyToastsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: getSafetyToastTypeContent, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun51861: for (var _fun51861_ip = 0;;) switch (_fun51861_ip) {
             case 0:
                 var2 = arg0;

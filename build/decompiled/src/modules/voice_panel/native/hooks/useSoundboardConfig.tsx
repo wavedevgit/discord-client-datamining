@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/voice_panel/native/hooks/useSoundboardConfig.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: useSoundboardConfig, environment: var3
+    var3 = function arg0, arg1() {
         _fun110686: for (var _fun110686_ip = 0;;) switch (_fun110686_ip) {
             case 0:
                 var6 = arg0;

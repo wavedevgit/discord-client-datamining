@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/people/hooks/useFriendRequestActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useFriendRequestActions, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.userId;
         var _closure2_slot0 = var6;

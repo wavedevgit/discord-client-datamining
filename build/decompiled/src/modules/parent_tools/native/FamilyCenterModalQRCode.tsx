@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: FamilyCenterModalQRCodeScreen, environment: var1
+    var0 = function() {
         _fun81735: for (var _fun81735_ip = 0;;) switch (_fun81735_ip) {
             case 0:
                 var1 = _closure1_slot12;
@@ -636,11 +636,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/parent_tools/native/FamilyCenterModalQRCode.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FamilyCenterModalQRCode, environment: var1
+    var1 = function() {
         var4 = _closure1_slot4;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
-            var1 = function() { // Original name: getScreens, environment: var0
+            var1 = function() {
                 var0 = {};
                 var1 = {};
                 var3 = true;
@@ -659,12 +659,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.pop;
                 var3 = var4.bind(var5)(var3);
                 var1.headerLeft = var3;
-                var3 = function() { // Original name: headerTitle, environment: var2
+                var3 = function() {
                     var0 = null;
                     return var0;
                 };
                 var1.headerTitle = var3;
-                var2 = function() { // Original name: render, environment: var2
+                var2 = function() {
                     var3 = _closure1_slot10;
                     var2 = _closure1_slot13;
                     var1 = undefined;

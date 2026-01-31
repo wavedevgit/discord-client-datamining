@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var6[var1];
     var1 = var5.bind(var0)(var1);
     var _closure1_slot0 = var1;
-    var1 = function(arg0, arg1) { // Original name: InternetReachability, environment: var4
+    var1 = function arg0, arg1() {
         var2 = this;
         var _closure2_slot0 = var2;
         var4 = _closure1_slot0;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var10 = var3;
             var0 = new var10[var4](var9, var8);
             var6 = var0 instanceof Object ? var0 : var3;
-            var0 = function() { // Original name: cancel, environment: var1
+            var0 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -202,7 +202,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = function(arg0, arg1) { // Environment: var1
                 var1 = arg1;
                 var _closure4_slot0 = var1;
-                var0 = function() { // Original name: cancel, environment: var0
+                var0 = function() {
                     var2 = _closure4_slot0;
                     var1 = undefined;
                     var0 = 'canceled';

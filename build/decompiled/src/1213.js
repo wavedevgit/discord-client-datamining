@@ -30,11 +30,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun13287: for (var _fun13287_ip = 0;;) switch (_fun13287_ip) {
                     case 0:
                         var1 = arg0;
-                        var2 = function() { // Original name: m, environment: var3
+                        var2 = function() {
                             var0 = undefined;
                             return var0;
                         };
-                        var0 = function(arg0, arg1) { // Original name: k, environment: var3
+                        var0 = function arg0, arg1() {
                             _fun13289: for (var _fun13289_ip = 0;;) switch (_fun13289_ip) {
                                 case 0:
                                     var2 = arg0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     throw var0;
                             }
                         };
-                        var4 = function(arg0) { // Original name: q, environment: var3
+                        var4 = function arg0() {
                             _fun13290: for (var _fun13290_ip = 0;;) switch (_fun13290_ip) {
                                 case 0:
                                     var26 = arg0;
@@ -699,7 +699,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             continue _fun13287
                         }
                     case 302:
-                        var4 = function(arg0) { // Original name: u, environment: var3
+                        var4 = function arg0() {
                             _fun13293: for (var _fun13293_ip = 0;;) switch (_fun13293_ip) {
                                 case 0:
                                     var4 = arg0;
@@ -773,7 +773,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _fun13287_ip = 322;
                         continue _fun13287;
                     case 313:
-                        var4 = function(arg0) { // Original name: t, environment: var3
+                        var4 = function arg0() {
                             var0 = arg0;
                             var1 = global;
                             var4 = var1.Buffer;

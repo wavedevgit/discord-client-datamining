@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: appendTransformProps, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         var2 = var0.x;
         var1 = var0.y;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: universal2axis, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun48225: for (var _fun48225_ip = 0;;) switch (_fun48225_ip) {
             case 0:
                 var5 = arg0;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var2;
-    var4 = function(arg0) { // Original name: transformsArrayToProps, environment: var0
+    var4 = function arg0() {
         _fun48226: for (var _fun48226_ip = 0;;) switch (_fun48226_ip) {
             case 0:
                 var3 = arg0;
@@ -239,7 +239,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: props2transform, environment: var0
+    var3 = function arg0() {
         _fun48228: for (var _fun48228_ip = 0;;) switch (_fun48228_ip) {
             case 0:
                 var0 = arg0;
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var3;
-    var2 = function(arg0, arg1) { // Original name: transformToMatrix, environment: var0
+    var2 = function arg0, arg1() {
         _fun48229: for (var _fun48229_ip = 0;;) switch (_fun48229_ip) {
             case 0:
                 var5 = arg0;
@@ -625,7 +625,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6.value = var5;
     var5 = '__esModule';
     var5 = var7.bind(var8)(var1, var5, var6);
-    var5 = function(arg0) { // Original name: extractTransform, environment: var0
+    var5 = function arg0() {
         _fun48230: for (var _fun48230_ip = 0;;) switch (_fun48230_ip) {
             case 0:
                 var4 = arg0;
@@ -725,7 +725,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.transformsArrayToProps = var4;
     var1.props2transform = var3;
     var1.transformToMatrix = var2;
-    var0 = function(arg0) { // Original name: extractTransformSvgView, environment: var0
+    var0 = function arg0() {
         _fun48231: for (var _fun48231_ip = 0;;) switch (_fun48231_ip) {
             case 0:
                 var1 = arg0;

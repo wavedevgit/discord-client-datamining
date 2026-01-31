@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.fileFinishedImporting;
             var5 = 'uikit-native/refresh/form/FormTitle.tsx';
             var5 = var6.bind(var7)(var5);
-            var4 = function(arg0) { // Original name: FormTitle, environment: var4
+            var4 = function arg0() {
                 _fun48029: for (var _fun48029_ip = 0;;) switch (_fun48029_ip) {
                     case 0:
                         var0 = arg0;

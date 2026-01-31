@@ -11,12 +11,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '__esModule';
     var1 = var4.bind(var5)(var2, var1, var3);
     var1 = {};
-    var3 = function() { // Original name: flushDNSCache, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.flushDNSCache = var3;
-    var3 = function() { // Original name: flushCookies, environment: var0
+    var3 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -24,22 +24,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.flushCookies = var3;
-    var3 = function() { // Original name: setApplicationBackgroundColor, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.setApplicationBackgroundColor = var3;
-    var3 = function() { // Original name: setZoomFactor, environment: var0
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var1.setZoomFactor = var3;
-    var3 = function() { // Original name: focus, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.focus = var3;
-    var3 = function() { // Original name: submitLiveCrashReport, environment: var0
+    var3 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -47,22 +47,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.submitLiveCrashReport = var3;
-    var3 = function() { // Original name: getPidFromDesktopSource, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.getPidFromDesktopSource = var3;
-    var3 = function() { // Original name: getAudioPid, environment: var0
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var1.getAudioPid = var3;
-    var3 = function() { // Original name: generateSessionFromPid, environment: var0
+    var3 = function() {
         var0 = '';
         return var0;
     };
     var1.generateSessionFromPid = var3;
-    var0 = function() { // Original name: getAppHardwareAccelerationEnabled, environment: var0
+    var0 = function() {
         var0 = true;
         return var0;
     };

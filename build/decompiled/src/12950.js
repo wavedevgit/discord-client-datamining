@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.data = var5;
     var3.mechanism = var4;
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: trpcMiddleware, environment: var1
+    var1 = function() {
         _fun99725: for (var _fun99725_ip = 0;;) switch (_fun99725_ip) {
             case 0:
                 var4 = undefined;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     _fun99726: for (var _fun99726_ip = 0;;) switch (_fun99726_ip) {
                         case 0:
                             var2 = arg0;
-                            var1 = function(arg0) { // Original name: captureIfError, environment: var0
+                            var1 = function arg0() {
                                 _fun99727: for (var _fun99727_ip = 0;;) switch (_fun99727_ip) {
                                     case 0:
                                         var1 = arg0;

@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardPlaceholder.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: HappeningNowCardPlaceholder, environment: var1
+    var1 = function arg0() {
         _fun101588: for (var _fun101588_ip = 0;;) switch (_fun101588_ip) {
             case 0:
                 var0 = arg0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 23:
                 var0 = _closure1_slot7;
                 var14 = var0.bind(var3)();
-                var1 = function(arg0) { // Original name: useBlinkStyle, environment: var0
+                var1 = function arg0() {
                     var1 = arg0;
                     var11 = var1.duration;
                     var _closure3_slot0 = var11;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = undefined;
                         var3 = var7.bind(var0)(var1);
                         var2 = var3.runOnUI;
-                        var1 = function() { // Original name: t, environment: var1
+                        var1 = function() {
                             var3 = _closure3_slot2;
                             var2 = var3.set;
                             var10 = _closure1_slot0;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var6[var1];
                     var2 = var4.bind(var2)(var1);
                     var1 = var2.useAnimatedStyle;
-                    var0 = function() { // Original name: c, environment: var0
+                    var0 = function() {
                         var0 = {};
                         var2 = _closure3_slot2;
                         var1 = var2.get;

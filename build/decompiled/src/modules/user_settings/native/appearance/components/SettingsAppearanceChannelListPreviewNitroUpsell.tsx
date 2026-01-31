@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SettingsAppearanceChannelListPreviewNitroUpsellComponent, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var6 = var1.theme;
         var _closure2_slot0 = var6;
@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var13[var1];
         var4 = var16.bind(var3)(var1);
         var2 = var4.useAnimatedStyle;
-        var1 = function() { // Original name: l, environment: var0
+        var1 = function() {
             _fun84584: for (var _fun84584_ip = 0;;) switch (_fun84584_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot14 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: animationEntering, environment: var0
+        var0 = function arg0() {
             var0 = {};
             var5 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot17 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: animationExiting, environment: var0
+        var0 = function arg0, arg1() {
             var7 = arg1;
             var _closure3_slot0 = var7;
             var0 = {};
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var9[var3];
             var3 = var8.bind(var4)(var3);
             var12 = var3.springStandard;
-            var3 = function(arg0) { // Original name: s, environment: var2
+            var3 = function arg0() {
                 _fun84590: for (var _fun84590_ip = 0;;) switch (_fun84590_ip) {
                     case 0:
                         var2 = _closure3_slot0;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot20 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: SettingsAppearanceChannelListPreviewNitroUpsell, environment: var1
+    var1 = function arg0() {
         _fun84591: for (var _fun84591_ip = 0;;) switch (_fun84591_ip) {
             case 0:
                 var7 = arg0;

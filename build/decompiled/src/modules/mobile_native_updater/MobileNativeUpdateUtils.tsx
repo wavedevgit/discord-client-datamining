@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _checkForNewerBuild, environment: var3
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var0;
-    var1 = function(arg0) { // Original name: openBuildInstallerUrl, environment: var3
+    var1 = function arg0() {
         _fun87580: for (var _fun87580_ip = 0;;) switch (_fun87580_ip) {
             case 0:
                 var2 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/mobile_native_updater/MobileNativeUpdateUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: checkForNewerBuild, environment: var3
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.checkForNewerBuild = var4;
-    var3 = function(arg0) { // Original name: openBuildInstaller, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot6;
         var0 = arg0;
         var0 = var0.urls;

@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Original name: strictIndexOf, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun39366: for (var _fun39366_ip = 0;;) switch (_fun39366_ip) {
             case 0:
                 var4 = arg0;

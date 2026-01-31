@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/game_server/GameServerActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: fetchGameServerCatalog, environment: var1
+    var3 = function arg0() {
         _fun102202: for (var _fun102202_ip = 0;;) switch (_fun102202_ip) {
             case 0:
                 var7 = arg0;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchGameServerCatalog = var3;
-    var3 = function(arg0) { // Original name: fetchGameServerInstances, environment: var1
+    var3 = function arg0() {
         _fun102207: for (var _fun102207_ip = 0;;) switch (_fun102207_ip) {
             case 0:
                 var7 = arg0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchGameServerInstances = var3;
-    var3 = function(arg0, arg1) { // Original name: fetchGameServerInstructions, environment: var1
+    var3 = function arg0, arg1() {
         var6 = arg1;
         var1 = arg0;
         var _closure2_slot0 = var1;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchGameServerInstructions = var3;
-    var3 = function(arg0, arg1) { // Original name: acceptGameServerToS, environment: var1
+    var3 = function arg0, arg1() {
         _fun102214: for (var _fun102214_ip = 0;;) switch (_fun102214_ip) {
             case 0:
                 var0 = arg0;
@@ -457,7 +457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.acceptGameServerToS = var3;
-    var3 = function() { // Original name: resetGameServerRegionState, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetGameServerRegionState = var3;
-    var3 = function(arg0, arg1) { // Original name: updateGameServerRegionPingState, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGameServerRegionPingState = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: enableGameServerForGuild, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.enableGameServerForGuild = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: updateGameServerForGuild, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateGameServerForGuild = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: disableGameServerForGuild, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -576,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.disableGameServerForGuild = var3;
-    var3 = function(arg0) { // Original name: fetchGameServerRegions, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchGameServerRegions = var3;
-    var1 = function(arg0, arg1) { // Original name: wakeGameServer, environment: var1
+    var1 = function arg0, arg1() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var3 = _closure1_slot0;

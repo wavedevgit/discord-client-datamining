@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = null;
     var _closure1_slot1 = var1;
     var1 = {};
-    var3 = function() { // Original name: getConstants, environment: var3
+    var3 = function() {
         _fun1520: for (var _fun1520_ip = 0;;) switch (_fun1520_ip) {
             case 0:
                 var2 = _closure1_slot1;

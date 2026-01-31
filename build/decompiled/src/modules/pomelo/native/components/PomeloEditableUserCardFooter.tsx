@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.footer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = function(arg0) { // Original name: FooterMessage, environment: var1
+    var3 = function arg0() {
         _fun80947: for (var _fun80947_ip = 0;;) switch (_fun80947_ip) {
             case 0:
                 var0 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/pomelo/native/components/PomeloEditableUserCardFooter.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PomeloEditableUserCardFooter, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.style;
         var8 = var0.validation;

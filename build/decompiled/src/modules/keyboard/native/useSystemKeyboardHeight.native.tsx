@@ -14,13 +14,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.value = var0;
     var0 = '__esModule';
     var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = function(arg0) { // Original name: SYSTEM_KEYBOARD_HEIGHT_GETTER, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.keyboardHeight;
         return var0;
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: SYSTEM_KEYBOARD_HEIGHT_GETTER_IGNORING_KEYBOARD, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.keyboardHeightExcludingSafeAreaInsets;
         return var0;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/keyboard/native/useSystemKeyboardHeight.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useSystemKeyboardHeight, environment: var1
+    var3 = function() {
         _fun17621: for (var _fun17621_ip = 0;;) switch (_fun17621_ip) {
             case 0:
                 var0 = arguments[0];
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function() { // Original name: getSystemKeyboardHeight, environment: var1
+    var1 = function() {
         _fun17622: for (var _fun17622_ip = 0;;) switch (_fun17622_ip) {
             case 0:
                 var0 = arguments[0];

@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5[var0];
         var9 = var8.bind(var3)(var6);
         var8 = var9.useAnimatedStyle;
-        var6 = function() { // Original name: h, environment: var2
+        var6 = function() {
             var0 = {};
             var2 = _closure2_slot1;
             var1 = var2.get;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = arg1;
         var2 = function() { // Environment: var2
             var0 = {};
-            var2 = function() { // Original name: componentDidAppear, environment: var1
+            var2 = function() {
                 var3 = _closure2_slot1;
                 var2 = var3.set;
                 var5 = _closure1_slot0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.componentDidAppear = var2;
-            var2 = function() { // Original name: componentDidEnter, environment: var1
+            var2 = function() {
                 var3 = _closure2_slot1;
                 var2 = var3.set;
                 var5 = _closure1_slot0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.componentDidEnter = var2;
-            var1 = function(arg0) { // Original name: componentWillLeave, environment: var1
+            var1 = function arg0() {
                 var1 = _closure2_slot2;
                 var0 = arg0;
                 var1.current = var0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var4 = _closure2_slot0;
                 var6.duration = var4;
-                var5 = function(arg0) { // Original name: t, environment: var4
+                var5 = function arg0() {
                     _fun80944: for (var _fun80944_ip = 0;;) switch (_fun80944_ip) {
                         case 0:
                             var0 = arg0;

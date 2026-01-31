@@ -5,7 +5,7 @@ var2 = exports;
 var13 = dependencyMap;
 var _closure1_slot0 = var12;
 var _closure1_slot1 = var13;
-var0 = function(arg0, arg1, arg2, arg3) { // Original name: createFrame, environment: var10
+var0 = function arg0, arg1, arg2, arg3() {
     _fun10947: for (var _fun10947_ip = 0;;) switch (_fun10947_ip) {
         case 0:
             var2 = arg1;
@@ -73,7 +73,7 @@ var _closure1_slot5 = var1;
 var1 = /at (.+?) ?\(data:(.+?),/;
 var _closure1_slot6 = var1;
 var8 = [30];
-var1 = function(arg0) { // Original name: chromeStackParserFn, environment: var10
+var1 = function arg0() {
     _fun10948: for (var _fun10948_ip = 0;;) switch (_fun10948_ip) {
         case 0:
             var5 = arg0;
@@ -239,7 +239,7 @@ var _closure1_slot7 = var1;
 var1 = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i;
 var _closure1_slot8 = var1;
 var5 = [50];
-var1 = function(arg0) { // Original name: gecko, environment: var10
+var1 = function arg0() {
     _fun10949: for (var _fun10949_ip = 0;;) switch (_fun10949_ip) {
         case 0:
             var3 = _closure1_slot7;
@@ -360,7 +360,7 @@ var5[1] = var1;
 var1 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:[-a-z]+):.*?):(\d+)(?::(\d+))?\)?\s*$/i;
 var _closure1_slot9 = var1;
 var1 = [40];
-var3 = function(arg0) { // Original name: winjs, environment: var10
+var3 = function arg0() {
     _fun10950: for (var _fun10950_ip = 0;;) switch (_fun10950_ip) {
         case 0:
             var3 = _closure1_slot9;
@@ -418,7 +418,7 @@ var1[1] = var3;
 var3 = / line (\d+).*script (?:in )?(\S+)(?:: in function (\S+))?$/i;
 var _closure1_slot10 = var3;
 var4 = [10];
-var3 = function(arg0) { // Original name: opera10, environment: var10
+var3 = function arg0() {
     _fun10951: for (var _fun10951_ip = 0;;) switch (_fun10951_ip) {
         case 0:
             var3 = _closure1_slot10;
@@ -461,7 +461,7 @@ var4[1] = var3;
 var3 = / line (\d+), column (\d+)\s*(?:in (?:<anonymous function: ([^>]+)>|([^)]+))\(.*\))? in (.*):\s*$/i;
 var _closure1_slot11 = var3;
 var3 = [20];
-var6 = function(arg0) { // Original name: opera11, environment: var10
+var6 = function arg0() {
     _fun10952: for (var _fun10952_ip = 0;;) switch (_fun10952_ip) {
         case 0:
             var3 = _closure1_slot11;
@@ -526,7 +526,7 @@ var9 = var11.apply;
 var6 = var13[var6];
 var6 = var12.bind(var0)(var6);
 var6 = var9.bind(var11)(var6, var7);
-var9 = function(arg0, arg1) { // Original name: extractSafariExtensionDetails, environment: var10
+var9 = function arg0, arg1() {
     _fun10953: for (var _fun10953_ip = 0;;) switch (_fun10953_ip) {
         case 0:
             var6 = arg0;

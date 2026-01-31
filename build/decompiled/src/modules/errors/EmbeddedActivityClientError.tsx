@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.INVALID_CHANNEL = var3;
     var1 = 'INVALID_CHANNEL';
     var5[var3] = var1;
-    var1 = function(arg0, arg1) { // Original name: EmbeddedActivityClientError, environment: var7
+    var1 = function arg0, arg1() {
         var2 = this;
         var3 = _closure1_slot0;
         var1 = _closure1_slot1;

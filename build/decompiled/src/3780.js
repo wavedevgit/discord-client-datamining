@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var4 = function() { // Original name: configureProps, environment: var1
+    var4 = function() {
         _fun33940: for (var _fun33940_ip = 0;;) switch (_fun33940_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var4;
-    var3 = function(arg0) { // Original name: addWhitelistedUIProps, environment: var1
+    var3 = function arg0() {
         _fun33941: for (var _fun33941_ip = 0;;) switch (_fun33941_ip) {
             case 0:
                 var4 = global;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var5;
     var5 = var4.bind(var0)();
     var2.configureProps = var4;
-    var4 = function(arg0) { // Original name: addWhitelistedNativeProps, environment: var1
+    var4 = function arg0() {
         _fun33942: for (var _fun33942_ip = 0;;) switch (_fun33942_ip) {
             case 0:
                 var4 = global;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.addWhitelistedNativeProps = var4;
     var2.addWhitelistedUIProps = var3;
-    var3 = function(arg0) { // Original name: configureReanimatedLogger, environment: var1
+    var3 = function arg0() {
         _fun33943: for (var _fun33943_ip = 0;;) switch (_fun33943_ip) {
             case 0:
                 var2 = arg0;
@@ -241,7 +241,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.configureReanimatedLogger = var3;
-    var1 = function(arg0) { // Original name: adaptViewConfig, environment: var1
+    var1 = function arg0() {
         _fun33944: for (var _fun33944_ip = 0;;) switch (_fun33944_ip) {
             case 0:
                 var0 = arg0;

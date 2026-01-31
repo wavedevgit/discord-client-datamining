@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/privacy_and_safety/showDataPrivacyRateLimitAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: showDataPrivacyRateLimitAlert, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot1;
         var8 = _closure1_slot2;
         var0 = 0;

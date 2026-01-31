@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var1;
     var1 = function() { // Environment: var4
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: ChatManager, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot2;
             var1 = _closure2_slot0;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getPreviousMessages';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0._messages;
             return var0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPreviousRows';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._rows;
             return var0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getBlocked';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77207: for (var _fun77207_ip = 0;;) switch (_fun77207_ip) {
                 case 0:
                     var2 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getIgnored';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77208: for (var _fun77208_ip = 0;;) switch (_fun77208_ip) {
                 case 0:
                     var2 = arg0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = this;
             var0 = null;
             var1._messages = var0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'finishUpdate';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var1 = this;
             var0 = arg0;
             var1._messages = var0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getLastRow';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun77211: for (var _fun77211_ip = 0;;) switch (_fun77211_ip) {
                 case 0:
                     var1 = this;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setup';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77212: for (var _fun77212_ip = 0;;) switch (_fun77212_ip) {
                 case 0:
                     var2 = this;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'determineChangeTypeForUploadProgress';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77213: for (var _fun77213_ip = 0;;) switch (_fun77213_ip) {
                 case 0:
                     var4 = arg0;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'determineChangeTypeForEmbeddedActivity';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77214: for (var _fun77214_ip = 0;;) switch (_fun77214_ip) {
                 case 0:
                     var4 = arg0;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'determineChangeType';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77215: for (var _fun77215_ip = 0;;) switch (_fun77215_ip) {
                 case 0:
                     var0 = arg0;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'createRow';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun77216: for (var _fun77216_ip = 0;;) switch (_fun77216_ip) {
                 case 0:
                     var0 = arg0;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'createChangeset';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun77217: for (var _fun77217_ip = 0;;) switch (_fun77217_ip) {
                 case 0:
                     var2 = this;
@@ -1111,30 +1111,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var1.bind(var0)();
     var1 = {};
-    var7 = function() { // Original name: determineChangeType, environment: var4
+    var7 = function() {
         var0 = _closure1_slot4;
         var0 = var0.NOOP;
         return var0;
     };
     var1.determineChangeType = var7;
-    var7 = function() { // Original name: determineChangeTypeForUploadProgress, environment: var4
+    var7 = function() {
         var0 = _closure1_slot4;
         var0 = var0.NOOP;
         return var0;
     };
     var1.determineChangeTypeForUploadProgress = var7;
-    var7 = function() { // Original name: determineChangeTypeForEmbeddedActivity, environment: var4
+    var7 = function() {
         var0 = _closure1_slot4;
         var0 = var0.NOOP;
         return var0;
     };
     var1.determineChangeTypeForEmbeddedActivity = var7;
-    var7 = function() { // Original name: getBlocked, environment: var4
+    var7 = function() {
         var0 = false;
         return var0;
     };
     var1.getBlocked = var7;
-    var4 = function() { // Original name: getIgnored, environment: var4
+    var4 = function() {
         var0 = false;
         return var0;
     };

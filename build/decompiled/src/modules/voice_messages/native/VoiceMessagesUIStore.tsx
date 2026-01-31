@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.VoiceMessageRecordingStatus = var4;
     var2.useVoiceMessagesUIStore = var3;
-    var3 = function(arg0) { // Original name: setShowRecordingOverlay, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setShowRecordingOverlay = var3;
-    var3 = function(arg0) { // Original name: setVoiceMessageRecordingState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVoiceMessageRecordingState = var3;
-    var3 = function(arg0) { // Original name: setVoiceMessageRecordingId, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVoiceMessageRecordingId = var3;
-    var3 = function(arg0) { // Original name: setVoiceMessageStartTimeMillis, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVoiceMessageStartTimeMillis = var3;
-    var3 = function(arg0) { // Original name: setVoiceMessageAnimationState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVoiceMessageAnimationState = var3;
-    var3 = function(arg0) { // Original name: addVoiceMessageWave, environment: var1
+    var3 = function arg0() {
         _fun89264: for (var _fun89264_ip = 0;;) switch (_fun89264_ip) {
             case 0:
                 var6 = arg0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.addVoiceMessageWave = var3;
-    var3 = function() { // Original name: showVoiceMessagesTooltip, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -286,7 +286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showVoiceMessagesTooltip = var3;
-    var3 = function() { // Original name: hideVoiceMessagesTooltip, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.hideVoiceMessagesTooltip = var3;
-    var3 = function() { // Original name: resetVoiceMessageState, environment: var1
+    var3 = function() {
         _fun89270: for (var _fun89270_ip = 0;;) switch (_fun89270_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.resetVoiceMessageState = var3;
-    var3 = function(arg0) { // Original name: setSavedVoiceMessageUploadData, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setSavedVoiceMessageUploadData = var3;
-    var3 = function(arg0) { // Original name: setIsVoiceMessageButtonMounted, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setIsVoiceMessageButtonMounted = var3;
-    var1 = function(arg0) { // Original name: setIsUsingHoldGesture, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;

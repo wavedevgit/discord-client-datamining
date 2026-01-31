@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/pomelo/native/components/PomeloShiny.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: PomeloShiny, environment: var1
+    var1 = function() {
         var2 = _closure1_slot5;
         var3 = undefined;
         var4 = var2.bind(var3)();
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var10[var8];
         var5 = var7.bind(var3)(var2);
         var2 = var5.useAnimatedStyle;
-        var1 = function() { // Original name: s, environment: var1
+        var1 = function() {
             var0 = {};
             var2 = {};
             var15 = _closure1_slot0;

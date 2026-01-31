@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_account_linking/native/useStartAuthorize.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useStartAuthorize, environment: var1
+    var1 = function arg0() {
         _fun56597: for (var _fun56597_ip = 0;;) switch (_fun56597_ip) {
             case 0:
                 var3 = _closure1_slot0;

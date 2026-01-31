@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var4 = function(arg0) { // Original name: dsnFromString, environment: var1
+    var4 = function arg0() {
         _fun8860: for (var _fun8860_ip = 0;;) switch (_fun8860_ip) {
             case 0:
                 var4 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var4;
-    var0 = function(arg0) { // Original name: dsnFromComponents, environment: var1
+    var0 = function arg0() {
         _fun8862: for (var _fun8862_ip = 0;;) switch (_fun8862_ip) {
             case 0:
                 var1 = arg0;
@@ -193,7 +193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var3 = function(arg0) { // Original name: extractOrgIdFromDsnHost, environment: var1
+    var3 = function arg0() {
         _fun8863: for (var _fun8863_ip = 0;;) switch (_fun8863_ip) {
             case 0:
                 var2 = arg0;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = /^(?:(\w+):)\\/\\ / ( ? : (\w + )( ? ::(\w + ) ? ) ? @)([\w. - ] + )( ? ::(\d + )) ? \\/(.+)/;
     var _closure1_slot4 = var5;
     var2.dsnFromString = var4;
-    var4 = function(arg0) { // Original name: dsnToString, environment: var1
+    var4 = function arg0() {
         _fun8864: for (var _fun8864_ip = 0;;) switch (_fun8864_ip) {
             case 0:
                 var1 = arg0;
@@ -327,7 +327,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.dsnToString = var4;
-    var4 = function(arg0) { // Original name: extractOrgIdFromClient, environment: var1
+    var4 = function arg0() {
         _fun8865: for (var _fun8865_ip = 0;;) switch (_fun8865_ip) {
             case 0:
                 var2 = arg0;
@@ -371,7 +371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.extractOrgIdFromClient = var4;
     var2.extractOrgIdFromDsnHost = var3;
-    var1 = function(arg0) { // Original name: makeDsn, environment: var1
+    var1 = function arg0() {
         _fun8866: for (var _fun8866_ip = 0;;) switch (_fun8866_ip) {
             case 0:
                 var3 = arg0;
@@ -397,7 +397,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun8866
                 }
             case 47:
-                var2 = function(arg0) { // Original name: validateDsn, environment: var1
+                var2 = function arg0() {
                     _fun8867: for (var _fun8867_ip = 0;;) switch (_fun8867_ip) {
                         case 0:
                             var1 = arg0;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/useHighlightedCreatorGuildDetails.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useHighlightedCreatorGuildDetails, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun116465: for (var _fun116465_ip = 0;;) switch (_fun116465_ip) {
             case 0:
                 var14 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 41:
                             var5 = var3.group_listings;
                         case 49:
-                            var3 = function(arg0) { // Original name: getSubscriptionRoleIds, environment: var1
+                            var3 = function arg0() {
                                 _fun116467: for (var _fun116467_ip = 0;;) switch (_fun116467_ip) {
                                     case 0:
                                         var3 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MessageContent, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = var1.thread;
         var1 = var1.message;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.t;
         var8 = var7.M79KAH;
         var7 = {};
-        var12 = function(arg0, arg1) { // Original name: usernameHook, environment: var11
+        var12 = function arg0, arg1() {
             _fun105950: for (var _fun105950_ip = 0;;) switch (_fun105950_ip) {
                 case 0:
                     var4 = _closure1_slot9;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var7.usernameHook = var12;
-        var11 = function(arg0, arg1) { // Original name: messageTextHook, environment: var11
+        var11 = function arg0, arg1() {
             var4 = _closure1_slot9;
             var2 = _closure1_slot0;
             var6 = _closure1_slot2;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: SubstringRow, environment: var1
+    var0 = function arg0() {
         _fun105952: for (var _fun105952_ip = 0;;) switch (_fun105952_ip) {
             case 0:
                 var0 = arg0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: Username, environment: var1
+    var0 = function arg0() {
         _fun105953: for (var _fun105953_ip = 0;;) switch (_fun105953_ip) {
             case 0:
                 var1 = arg0;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.t;
                 var8 = var7.imPXd5;
                 var7 = {};
-                var11 = function(arg0, arg1) { // Original name: usernameHook, environment: var11
+                var11 = function arg0, arg1() {
                     _fun105961: for (var _fun105961_ip = 0;;) switch (_fun105961_ip) {
                         case 0:
                             var4 = _closure1_slot9;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/native/components/ThreadBrowserRowSubtext.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ThreadSubtext, environment: var1
+    var1 = function arg0() {
         _fun105962: for (var _fun105962_ip = 0;;) switch (_fun105962_ip) {
             case 0:
                 var0 = arg0;

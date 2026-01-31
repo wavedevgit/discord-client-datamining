@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.xyears = var4;
     var _closure1_slot2 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun21933: for (var _fun21933_ip = 0;;) switch (_fun21933_ip) {
             case 0:
                 var5 = arg0;

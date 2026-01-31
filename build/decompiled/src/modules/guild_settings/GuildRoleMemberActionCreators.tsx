@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _fetchMemberCountsFromBackend, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _fetchMemberCounts, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun77570
                         }
                     case 31:
-                        var2 = function() { // Original name: fetchMemberCountsFromBackend, environment: var1
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot7;
                             var2 = var3.apply;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/GuildRoleMemberActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: fetchMemberCounts, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchMemberCounts = var3;
-    var1 = function(arg0, arg1) { // Original name: requestMembersForRole, environment: var1
+    var1 = function arg0, arg1() {
         _fun77573: for (var _fun77573_ip = 0;;) switch (_fun77573_ip) {
             case 0:
                 var5 = arg0;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.set;
                 var0 = true;
                 var0 = var6.bind(var7)(var8, var0);
-                var0 = function(arg0, arg1) { // Original name: doRequestMembersForRole, environment: var0
+                var0 = function arg0, arg1() {
                     var7 = arg0;
                     var _closure3_slot0 = var7;
                     var3 = _closure1_slot0;

@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/verification/native/components/ChangeEmailWarning.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChangeEmailWarning, environment: var1
+    var1 = function arg0() {
         _fun60414: for (var _fun60414_ip = 0;;) switch (_fun60414_ip) {
             case 0:
                 var0 = arg0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var16["ETE/oC"];
                 var16 = var17.bind(var18)(var16);
                 var13.text = var16;
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 18;

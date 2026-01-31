@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
-    var6 = function(arg0) { // Original name: getMessage, environment: var1
+    var6 = function arg0() {
         var3 = ['react-native-date-picker is not installed correctly. Make sure you: ', ''];
         var2 = var3.concat;
         var4 = _closure1_slot2;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.nonExpo = var5;
     var3.android = var4;
     var _closure1_slot3 = var3;
-    var1 = function() { // Original name: getInstallationErrorMessage, environment: var1
+    var1 = function() {
         _fun65392: for (var _fun65392_ip = 0;;) switch (_fun65392_ip) {
             case 0: // try_start_0
                 var3 = _closure1_slot0;

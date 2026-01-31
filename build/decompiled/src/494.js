@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var0;
             var0 = dependencyMap;
             var _closure1_slot1 = var0;
-            var0 = function(arg0) { // Original name: unsafeStringify, environment: var2
+            var0 = function arg0() {
                 _fun6413: for (var _fun6413_ip = 0;;) switch (_fun6413_ip) {
                     case 0:
                         var3 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun6412
             }
         case 123:
-            var2 = function(arg0) { // Original name: stringify, environment: var2
+            var2 = function arg0() {
                 _fun6414: for (var _fun6414_ip = 0;;) switch (_fun6414_ip) {
                     case 0:
                         var3 = undefined;

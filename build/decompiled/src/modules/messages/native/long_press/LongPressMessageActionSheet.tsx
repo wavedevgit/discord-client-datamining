@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun77824: for (var _fun77824_ip = 0;;) switch (_fun77824_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun77826: for (var _fun77826_ip = 0;;) switch (_fun77826_ip) {
             case 0:
                 var3 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/long_press/LongPressMessageActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: LongPressMessageActionSheet, environment: var1
+    var1 = function arg0() {
         _fun77827: for (var _fun77827_ip = 0;;) switch (_fun77827_ip) {
             case 0:
                 var0 = arg0;
@@ -881,7 +881,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var14.id;
             case 1313:
                 var61 = var5.bind(var13)(var1);
-                var5 = function(arg0) { // Original name: getProps, environment: var3
+                var5 = function arg0() {
                     var0 = arg0;
                     var7 = var0.arrow;
                     var11 = var0.IconComponent;
@@ -910,7 +910,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var10.bind(var9)(var8, var7);
                     var0.icon = var7;
                     var0.label = var6;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 32;
@@ -949,7 +949,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.disabled = var1;
                     return var0;
                 };
-                var1 = function(arg0) { // Original name: render, environment: var3
+                var1 = function arg0() {
                     _fun77835: for (var _fun77835_ip = 0;;) switch (_fun77835_ip) {
                         case 0:
                             var9 = arg0;

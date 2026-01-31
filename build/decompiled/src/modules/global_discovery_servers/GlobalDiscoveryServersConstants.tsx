@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FEATURED_GUILDS_SEARCH_OPTIONS = var5;
     var2.CategoryId = var4;
     var2.DISCOVERY_SIDEBAR_CATEGORIES = var3;
-    var1 = function() { // Original name: getLanguageOptions, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;

@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'Statsig';
         var0.name = var2;
-        var2 = function(arg0) { // Original name: setup, environment: var1
+        var2 = function arg0() {
             var3 = _closure2_slot0;
             var2 = var3.on;
             var1 = 'gate_evaluation';
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var0.setup = var2;
-        var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 0;

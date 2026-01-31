@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun95826: for (var _fun95826_ip = 0;;) switch (_fun95826_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: handleChannelSelect, environment: var4
+    var0 = function arg0() {
         _fun95829: for (var _fun95829_ip = 0;;) switch (_fun95829_ip) {
             case 0:
                 var0 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: handleAppStateChanged, environment: var4
+    var0 = function arg0() {
         _fun95832: for (var _fun95832_ip = 0;;) switch (_fun95832_ip) {
             case 0:
                 var0 = arg0;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function() { // Original name: isGlobalDismissTimestampInCooldown, environment: var4
+    var0 = function() {
         _fun95833: for (var _fun95833_ip = 0;;) switch (_fun95833_ip) {
             case 0:
                 var2 = _closure1_slot12;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var3 = function(arg0) { // Original name: voiceBlockedWarningInCooldownForUsers, environment: var4
+    var3 = function arg0() {
         _fun95834: for (var _fun95834_ip = 0;;) switch (_fun95834_ip) {
             case 0:
                 var1 = _closure1_slot22;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var3;
-    var1 = function(arg0) { // Original name: userBlockedWarningInCooldown, environment: var4
+    var1 = function arg0() {
         _fun95836: for (var _fun95836_ip = 0;;) switch (_fun95836_ip) {
             case 0:
                 var0 = arguments[1];
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var7[var5];
     var5 = var8.bind(var0)(var5);
     var4 = function(arg0) { // Environment: var4
-        var3 = function(arg0) { // Original name: SharedSpacesWarningManager, environment: var0
+        var3 = function arg0() {
             _fun95838: for (var _fun95838_ip = 0;;) switch (_fun95838_ip) {
                 case 0:
                     var4 = this;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'handleBlockedOrIgnoredUserVoiceChannelJoin';
         var4.key = var5;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun95839: for (var _fun95839_ip = 0;;) switch (_fun95839_ip) {
                 case 0:
                     var5 = arg0;

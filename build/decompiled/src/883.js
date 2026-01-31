@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var0 = function(arg0, arg1, arg2) { // Original name: createClientReportEnvelope, environment: var0
+    var0 = function arg0, arg1, arg2() {
         _fun9358: for (var _fun9358_ip = 0;;) switch (_fun9358_ip) {
             case 0:
                 var5 = arg1;

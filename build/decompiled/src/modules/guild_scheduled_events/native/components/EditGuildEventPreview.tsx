@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var5;
-            var0 = function(arg0) { // Original name: PreviewBody, environment: var1
+            var0 = function arg0() {
                 _fun65898: for (var _fun65898_ip = 0;;) switch (_fun65898_ip) {
                     case 0:
                         var0 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var9.f55NX0;
                         var9 = {};
                         var9.channelName = var14;
-                        var13 = function() { // Original name: channelHook, environment: var13
+                        var13 = function() {
                             _fun65900: for (var _fun65900_ip = 0;;) switch (_fun65900_ip) {
                                 case 0:
                                     var4 = _closure1_slot7;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventPreview.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: EditGuildEventPreview, environment: var1
+            var1 = function arg0() {
                 _fun65901: for (var _fun65901_ip = 0;;) switch (_fun65901_ip) {
                     case 0:
                         var1 = arg0;
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12.text = var17;
                         var17 = 'primary';
                         var12.variant = var17;
-                        var16 = function() { // Original name: onPress, environment: var16
+                        var16 = function() {
                             _fun65903: for (var _fun65903_ip = 0;;) switch (_fun65903_ip) {
                                 case 0:
                                     var0 = _closure2_slot2;
@@ -700,7 +700,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = var1.bind(var2)(var0);
                                     var1 = var2.openLazy;
                                     var0 = {};
-                                    var3 = function() { // Original name: importer, environment: var3
+                                    var3 = function() {
                                         var2 = _closure1_slot0;
                                         var0 = _closure1_slot2;
                                         var1 = 24;

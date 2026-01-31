@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getQuestHomeSortingFilteringPressHandler, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var2 = var1.onSortMethodChange;
         var _closure2_slot0 = var2;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getSortMethodFromSearchParams, environment: var1
+    var0 = function arg0() {
         _fun82721: for (var _fun82721_ip = 0;;) switch (_fun82721_ip) {
             case 0:
                 var1 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: getFiltersFromSearchParams, environment: var1
+    var0 = function arg0() {
         _fun82722: for (var _fun82722_ip = 0;;) switch (_fun82722_ip) {
             case 0:
                 var1 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestHomeSetting.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: QuestHomeSetting, environment: var1
+    var1 = function() {
         var2 = _closure1_slot9;
         var3 = undefined;
         var9 = var2.bind(var3)();
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = {};
             var4 = _closure2_slot9;
             var0.header = var4;
-            var4 = function() { // Original name: headerTitle, environment: var3
+            var4 = function() {
                 var3 = _closure1_slot8;
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var0.headerTitle = var4;
-            var3 = function() { // Original name: headerRight, environment: var3
+            var3 = function() {
                 var0 = _closure2_slot7;
                 return var0;
             };

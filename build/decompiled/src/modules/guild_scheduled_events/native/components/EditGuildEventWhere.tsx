@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditGuildEventWhere, environment: var1
+    var1 = function arg0() {
         _fun65437: for (var _fun65437_ip = 0;;) switch (_fun65437_ip) {
             case 0:
                 var0 = arg0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7.entityType;
                 var9 = var10.bind(var14)(var9);
                 var1.channelType = var9;
-                var9 = function(arg0) { // Original name: onChangeChannel, environment: var13
+                var9 = function arg0() {
                     var3 = _closure2_slot4;
                     var0 = undefined;
                     var2 = null;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10;
             case 454:
                 var0.location = var9;
-                var9 = function(arg0) { // Original name: onChange, environment: var13
+                var9 = function arg0() {
                     var3 = _closure2_slot4;
                     var0 = undefined;
                     var2 = null;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onChange = var9;
-                var9 = function() { // Original name: onFocus, environment: var13
+                var9 = function() {
                     var0 = global;
                     var3 = var0.setTimeout;
                     var0 = undefined;
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.text = var22;
                 var22 = 'primary';
                 var18.variant = var22;
-                var22 = function() { // Original name: onPress, environment: var13
+                var22 = function() {
                     _fun65444: for (var _fun65444_ip = 0;;) switch (_fun65444_ip) {
                         case 0:
                             var3 = _closure1_slot2;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.guild = var16;
                 var16 = var7.entityType;
                 var9.entityType = var16;
-                var16 = function(arg0) { // Original name: onChange, environment: var13
+                var16 = function arg0() {
                     _fun65445: for (var _fun65445_ip = 0;;) switch (_fun65445_ip) {
                         case 0:
                             var6 = arg0;
@@ -647,7 +647,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.t;
                 var10 = var9["K+DH2o"];
                 var9 = {};
-                var13 = function() { // Original name: onClick, environment: var13
+                var13 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot3;
                     var0 = 25;

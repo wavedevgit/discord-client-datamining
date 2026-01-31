@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var12 = dependencyMap;
-    var1 = function(arg0) { // Original name: managePanProps, environment: var0
+    var1 = function arg0() {
         _fun44762: for (var _fun44762_ip = 0;;) switch (_fun44762_ip) {
             case 0:
                 var1 = arg0;

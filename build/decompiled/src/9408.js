@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var25[var1];
                 var23 = var5.bind(var3)(var8);
                 var14 = var23.useDerivedValue;
-                var9 = function() { // Original name: pnpm_CarouselLayoutTsx1, environment: var0
+                var9 = function() {
                     _fun74854: for (var _fun74854_ip = 0;;) switch (_fun74854_ip) {
                         case 0:
                             var2 = _closure2_slot9;
@@ -192,7 +192,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8.defaultIndex = var37;
                 var8.fixedDirection = var36;
                 var8.duration = var32;
-                var32 = function() { // Original name: onScrollEnd, environment: var0
+                var32 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 6;
@@ -206,7 +206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var8.onScrollEnd = var32;
-                var32 = function() { // Original name: onScrollStart, environment: var0
+                var32 = function() {
                     _fun74856: for (var _fun74856_ip = 0;;) switch (_fun74856_ip) {
                         case 0:
                             var0 = _closure2_slot8;
@@ -354,7 +354,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var25[var1];
                 var4 = var5.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: pnpm_CarouselLayoutTsx2, environment: var0
+                var1 = function() {
                     _fun74860: for (var _fun74860_ip = 0;;) switch (_fun74860_ip) {
                         case 0:
                             var0 = {};

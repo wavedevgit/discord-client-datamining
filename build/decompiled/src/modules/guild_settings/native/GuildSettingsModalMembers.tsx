@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun104867: for (var _fun104867_ip = 0;;) switch (_fun104867_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun104869: for (var _fun104869_ip = 0;;) switch (_fun104869_ip) {
             case 0:
                 var3 = arg0;
@@ -473,7 +473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 271:
                 var1.subLabel = var9;
                 var1.disabled = var8;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var3 = _closure2_slot2;
                     var2 = var3.push;
                     var0 = _closure1_slot14;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot20 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GuildSettingsModalMembers, environment: var1
+    var1 = function arg0() {
         _fun104874: for (var _fun104874_ip = 0;;) switch (_fun104874_ip) {
             case 0:
                 var1 = arg0;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     _fun104880: for (var _fun104880_ip = 0;;) switch (_fun104880_ip) {
                         case 0:
                             var0 = new Array(0);
-                            var10 = function(arg0) { // Original name: guildRoleIsFiltered, environment: var1
+                            var10 = function arg0() {
                                 _fun104881: for (var _fun104881_ip = 0;;) switch (_fun104881_ip) {
                                     case 0:
                                         var2 = _closure2_slot5;
@@ -932,7 +932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot1;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerRight, environment: var3
+                    var3 = function() {
                         _fun104884: for (var _fun104884_ip = 0;;) switch (_fun104884_ip) {
                             case 0:
                                 var3 = _closure1_slot15;
@@ -967,7 +967,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var6.bind(var7)(var5);
                             case 97:
                                 var0.items = var4;
-                                var4 = function(arg0) { // Original name: children, environment: var4
+                                var4 = function arg0() {
                                     var2 = arg0;
                                     var5 = var2.ref;
                                     var0 = null;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun30677: for (var _fun30677_ip = 0;;) switch (_fun30677_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: transformCollectiblesItemAssetsFromServer, environment: var1
+    var0 = function arg0() {
         _fun30680: for (var _fun30680_ip = 0;;) switch (_fun30680_ip) {
             case 0:
                 var1 = arg0;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: transformProfileEffectKeyFrameFromServer, environment: var1
+    var0 = function arg0() {
         _fun30681: for (var _fun30681_ip = 0;;) switch (_fun30681_ip) {
             case 0:
                 var2 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: transformCollectiblesItemFromServer, environment: var1
+    var0 = function arg0() {
         _fun30683: for (var _fun30683_ip = 0;;) switch (_fun30683_ip) {
             case 0:
                 var1 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: transformCollectiblesVariantMetadataFromServer, environment: var1
+    var0 = function arg0() {
         _fun30684: for (var _fun30684_ip = 0;;) switch (_fun30684_ip) {
             case 0:
                 var1 = arg0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: transformCollectiblesSKUTenantMetadataFromServer, environment: var1
+    var0 = function arg0() {
         _fun30685: for (var _fun30685_ip = 0;;) switch (_fun30685_ip) {
             case 0:
                 var1 = arg0;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: transformTenantMetadata, environment: var1
+    var0 = function arg0() {
         _fun30686: for (var _fun30686_ip = 0;;) switch (_fun30686_ip) {
             case 0:
                 var1 = arg0;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = ['500428425362931713', '451550535720501248', '471376328319303681', '466696214818193408'];
     var _closure1_slot13 = var6;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: SKURecord, environment: var0
+        var4 = function arg0() {
             _fun30688: for (var _fun30688_ip = 0;;) switch (_fun30688_ip) {
                 case 0:
                     var1 = arg0;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'supportedOperatingSystems';
         var5.key = var1;
-        var1 = function() { // Original name: get, environment: var0
+        var1 = function() {
             _fun30689: for (var _fun30689_ip = 0;;) switch (_fun30689_ip) {
                 case 0:
                     var1 = this;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isOnSale';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             _fun30690: for (var _fun30690_ip = 0;;) switch (_fun30690_ip) {
                 case 0:
                     var1 = this;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isGiftable';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun30691: for (var _fun30691_ip = 0;;) switch (_fun30691_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -697,7 +697,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getPrice';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun30692: for (var _fun30692_ip = 0;;) switch (_fun30692_ip) {
                 case 0:
                     var5 = arguments[0];
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getDisplaySalePercentage';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun30693: for (var _fun30693_ip = 0;;) switch (_fun30693_ip) {
                 case 0:
                     var1 = this;
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'requiresPayment';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             _fun30694: for (var _fun30694_ip = 0;;) switch (_fun30694_ip) {
                 case 0:
                     var0 = this;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isTheGameAwardsWinner';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             var2 = _closure1_slot13;
             var1 = var2.includes;
             var0 = this;
@@ -873,7 +873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'available';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             _fun30696: for (var _fun30696_ip = 0;;) switch (_fun30696_ip) {
                 case 0:
                     var1 = this;
@@ -905,7 +905,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isAvailableForDistribution';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun30697: for (var _fun30697_ip = 0;;) switch (_fun30697_ip) {
                 case 0:
                     var3 = this;
@@ -963,7 +963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isAvailable';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
             var1 = 10;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isPremiumPerk';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun30699: for (var _fun30699_ip = 0;;) switch (_fun30699_ip) {
                 case 0:
                     var3 = this;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'hasFeature';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var0 = this;
             var2 = var0.features;
             var1 = var2.has;
@@ -1042,7 +1042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isPreorder';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun30701: for (var _fun30701_ip = 0;;) switch (_fun30701_ip) {
                 case 0:
                     var1 = this;
@@ -1065,7 +1065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'createFromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun30702: for (var _fun30702_ip = 0;;) switch (_fun30702_ip) {
                 case 0:
                     var1 = arg0;

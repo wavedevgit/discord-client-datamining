@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/notification_center/FriendRequestMoveExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useNumFriendRequestsForBadging, environment: var1
+    var1 = function arg0() {
         _fun100950: for (var _fun100950_ip = 0;;) switch (_fun100950_ip) {
             case 0:
                 var3 = _closure1_slot4;

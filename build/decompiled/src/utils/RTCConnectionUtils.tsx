@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ConnectionStatus;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: getStatus, environment: var3
+    var6 = function arg0() {
         _fun69156: for (var _fun69156_ip = 0;;) switch (_fun69156_ip) {
             case 0:
                 var2 = arg0;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getStatus = var6;
-    var3 = function(arg0) { // Original name: getShortHostname, environment: var3
+    var3 = function arg0() {
         _fun69157: for (var _fun69157_ip = 0;;) switch (_fun69157_ip) {
             case 0:
                 var3 = arg0;

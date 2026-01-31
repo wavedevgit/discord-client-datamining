@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: GuildTemplateResolving, environment: var1
+    var0 = function() {
         var0 = _closure1_slot15;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: GuildTemplateResolved, environment: var1
+    var0 = function arg0() {
         _fun78613: for (var _fun78613_ip = 0;;) switch (_fun78613_ip) {
             case 0:
                 var1 = arg0;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: Channels, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.channels;
         var2 = _closure1_slot15;
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: getChannelIcon, environment: var1
+    var0 = function arg0() {
         _fun78619: for (var _fun78619_ip = 0;;) switch (_fun78619_ip) {
             case 0:
                 var0 = arg0;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: Roles, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var2 = var0.roles;
         var1 = _closure1_slot15;
@@ -931,7 +931,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/modals/AcceptGuildTemplate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AcceptGuildTemplate, environment: var1
+    var1 = function arg0() {
         _fun78622: for (var _fun78622_ip = 0;;) switch (_fun78622_ip) {
             case 0:
                 var0 = arg0;

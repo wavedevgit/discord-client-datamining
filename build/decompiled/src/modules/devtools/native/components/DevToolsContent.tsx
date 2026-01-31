@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: DevToolsContentSortButtons, environment: var3
+    var0 = function arg0() {
         _fun87522: for (var _fun87522_ip = 0;;) switch (_fun87522_ip) {
             case 0:
                 var0 = arg0;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var3)(var4);
                 var7 = var4.PressableOpacity;
                 var4 = {};
-                var5 = function() { // Original name: onPress, environment: var10
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var1 = 14;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var3)(var5);
                 var6 = var5.PressableOpacity;
                 var5 = {};
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var1 = 14;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var7)(var1);
     var _closure1_slot13 = var1;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: DevToolsContent, environment: var3
+    var3 = function arg0() {
         _fun87526: for (var _fun87526_ip = 0;;) switch (_fun87526_ip) {
             case 0:
                 var0 = arg0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var11[var0];
                 var0 = var3.bind(var4)(var0);
                 var8 = var0.bind(var4)();
-                var0 = function() { // Original name: useDevToolsContentSublabels, environment: var5
+                var0 = function() {
                     var6 = _closure1_slot0;
                     var4 = _closure1_slot2;
                     var3 = 9;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var12.bind(var7)(var11, var10);
                         case 248:
                             var4.trailing = var9;
-                            var9 = function() { // Original name: onLongPress, environment: var8
+                            var9 = function() {
                                 _fun87533: for (var _fun87533_ip = 0;;) switch (_fun87533_ip) {
                                     case 0:
                                         var3 = _closure1_slot1;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var4.onLongPress = var9;
-                            var8 = function() { // Original name: onPress, environment: var8
+                            var8 = function() {
                                 _fun87535: for (var _fun87535_ip = 0;;) switch (_fun87535_ip) {
                                     case 0:
                                         var1 = _closure2_slot2;

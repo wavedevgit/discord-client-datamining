@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileActivityBadges.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: TimestampBadge, environment: var1
+    var3 = function arg0() {
         _fun62394: for (var _fun62394_ip = 0;;) switch (_fun62394_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.TimestampBadge = var3;
-    var3 = function(arg0) { // Original name: PartyBadge, environment: var1
+    var3 = function arg0() {
         _fun62395: for (var _fun62395_ip = 0;;) switch (_fun62395_ip) {
             case 0:
                 var0 = arg0;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.PartyBadge = var3;
-    var1 = function(arg0) { // Original name: EpisodeBadge, environment: var1
+    var1 = function arg0() {
         _fun62396: for (var _fun62396_ip = 0;;) switch (_fun62396_ip) {
             case 0:
                 var0 = arg0;

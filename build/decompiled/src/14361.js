@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var4 = 'es';
     var1.locale = var4;
-    var4 = function(arg0, arg1) { // Original name: pluralRuleFunction, environment: var4
+    var4 = function arg0, arg1() {
         _fun112149: for (var _fun112149_ip = 0;;) switch (_fun112149_ip) {
             case 0:
                 var1 = 'other';

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _createGroupFromStore, environment: var6
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot5;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var1 = function(arg0) { // Original name: GuildRoleSubscriptionGroupSetupModal, environment: var6
+    var1 = function arg0() {
         _fun116930: for (var _fun116930_ip = 0;;) switch (_fun116930_ip) {
             case 0:
                 var3 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var15 = _closure2_slot4;
                                     var14 = _closure2_slot5;
                                     var13 = _closure2_slot3;
-                                    var1 = function() { // Original name: createGroupFromStore, environment: var5
+                                    var1 = function() {
                                         var0 = undefined;
                                         var3 = _closure1_slot12;
                                         var2 = var3.apply;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var7 = _closure2_slot6;
                                     var1.editStateId = var7;
                                     var1.groupListingId = var6;
-                                    var5 = function(arg0) { // Original name: onBeforeDispatchNewListing, environment: var5
+                                    var5 = function arg0() {
                                         var2 = _closure2_slot7;
                                         var0 = arg0;
                                         var1 = var0.id;

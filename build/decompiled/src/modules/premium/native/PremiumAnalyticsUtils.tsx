@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: getBaseAnalyticsFields, environment: var1
+    var0 = function arg0() {
         _fun58035: for (var _fun58035_ip = 0;;) switch (_fun58035_ip) {
             case 0:
                 var2 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/premium/native/PremiumAnalyticsUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.PaymentFlowStep = var5;
-    var5 = function(arg0) { // Original name: getBasePurchaseFlowAnalyticsFields, environment: var1
+    var5 = function arg0() {
         _fun58036: for (var _fun58036_ip = 0;;) switch (_fun58036_ip) {
             case 0:
                 var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getBasePurchaseFlowAnalyticsFields = var5;
-    var5 = function(arg0, arg1) { // Original name: getPaymentFlowCompletedAnalyticsFields, environment: var1
+    var5 = function arg0, arg1() {
         var0 = {};
         var2 = arg0;
         var3 = var0;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getPaymentFlowCompletedAnalyticsFields = var5;
-    var5 = function(arg0, arg1) { // Original name: getPaymentFlowStepAnalyticsFields, environment: var1
+    var5 = function arg0, arg1() {
         var0 = {};
         var2 = arg0;
         var3 = var0;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getPaymentFlowStepAnalyticsFields = var5;
-    var5 = function() { // Original name: getNewAnalyticsLoadId, environment: var1
+    var5 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getNewAnalyticsLoadId = var5;
     var2.CancellationFlowSteps = var4;
     var2.STEP_ANALYTICS_NAMES = var3;
-    var3 = function(arg0, arg1) { // Original name: trackPremiumSubscriptionCancellationStarted, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackPremiumSubscriptionCancellationStarted = var3;
-    var1 = function(arg0) { // Original name: trackPremiumSubscriptionCancellationFlowStep, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.fromStep;
         var8 = var0.toStep;

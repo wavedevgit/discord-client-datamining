@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}';
     var3.code = var4;
     var _closure1_slot5 = var3;
-    var1 = function() { // Original name: useAnimatedKeyboard, environment: var1
+    var1 = function() {
         _fun34706: for (var _fun34706_ip = 0;;) switch (_fun34706_ip) {
             case 0:
                 var4 = undefined;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var9[var6];
                 var9 = var8.bind(var4)(var6);
                 var8 = var9.subscribeForKeyboardEvents;
-                var6 = function(arg0, arg1) { // Original name: pnpm_useAnimatedKeyboardTs1, environment: var1
+                var6 = function arg0, arg1() {
                     var1 = _closure2_slot4;
                     var2 = var1.state;
                     var1 = arg0;
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = undefined;
                             var6 = var6.bind(var4)(var5);
                             var5 = var6.subscribeForKeyboardEvents;
-                            var4 = function(arg0, arg1) { // Original name: pnpm_useAnimatedKeyboardTs2, environment: var0
+                            var4 = function arg0, arg1() {
                                 var1 = _closure3_slot0;
                                 var2 = var1.state;
                                 var1 = arg0;

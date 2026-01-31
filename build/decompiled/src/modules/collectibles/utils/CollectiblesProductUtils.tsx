@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var4;
     var3 = var3.PriceSetAssignmentPurchaseTypes;
     var _closure1_slot6 = var3;
-    var6 = function(arg0) { // Original name: getProductOrbPrice, environment: var1
+    var6 = function arg0() {
         _fun42201: for (var _fun42201_ip = 0;;) switch (_fun42201_ip) {
             case 0:
                 var1 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var6;
-    var5 = function(arg0) { // Original name: getProductFiatPrice, environment: var1
+    var5 = function arg0() {
         _fun42203: for (var _fun42203_ip = 0;;) switch (_fun42203_ip) {
             case 0:
                 var0 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0) { // Original name: getHasOrbPrice, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot7;
         var1 = {
             'product': null,
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: getHasNonOrbPrice, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot8;
         var1 = {};
         var0 = arg0;

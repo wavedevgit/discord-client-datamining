@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AddEmojiButton, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var10 = var1.channel;
         var _closure2_slot0 = var10;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: ReactActionSheetBase, environment: var1
+    var0 = function arg0() {
         _fun104261: for (var _fun104261_ip = 0;;) switch (_fun104261_ip) {
             case 0:
                 var0 = arg0;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var6.bind(var2)(var0);
                             var1 = var0.PressableHighlight;
                             var0 = {};
-                            var8 = function() { // Original name: onPress, environment: var7
+                            var8 = function() {
                                 var2 = _closure2_slot11;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.bind(var3)(var1);
                             var2 = var1.PressableHighlight;
                             var1 = {};
-                            var7 = function() { // Original name: onPress, environment: var7
+                            var7 = function() {
                                 var2 = _closure2_slot11;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = _closure1_slot9;
                 var16 = _closure1_slot13;
                 var15 = {};
-                var27 = function() { // Original name: onOpenPicker, environment: var27
+                var27 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 15;
@@ -1088,7 +1088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/content_inventory/ReactActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ReactActionSheet, environment: var1
+    var3 = function arg0() {
         _fun104276: for (var _fun104276_ip = 0;;) switch (_fun104276_ip) {
             case 0:
                 var1 = arg0;

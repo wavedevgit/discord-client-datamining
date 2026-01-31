@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/app_list_view/AppLauncherViewAllScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherViewAllScreen, environment: var1
+    var1 = function arg0() {
         _fun108243: for (var _fun108243_ip = 0;;) switch (_fun108243_ip) {
             case 0:
                 var1 = arg0;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.bind(var3)(var1);
                             var1 = {};
                             var1.application = var0;
-                            var8 = function() { // Original name: onPress, environment: var8
+                            var8 = function() {
                                 var2 = _closure2_slot16;
                                 var1 = {};
                                 var3 = _closure3_slot0;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1.CommandRow;
                             var1 = {};
                             var1.command = var13;
-                            var12 = function() { // Original name: onPressCommand, environment: var12
+                            var12 = function() {
                                 var4 = _closure2_slot17;
                                 var3 = _closure3_slot0;
                                 var2 = _closure3_slot1;
@@ -718,7 +718,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var0 = _closure1_slot7;
                     var1.viewabilityConfig = var0;
-                    var0 = function(arg0) { // Original name: onViewableItemsChanged, environment: var0
+                    var0 = function arg0() {
                         var0 = arg0;
                         var2 = var0.viewableItems;
                         var1 = var2.forEach;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var0 = _closure1_slot7;
                     var1.viewabilityConfig = var0;
-                    var0 = function(arg0) { // Original name: onViewableItemsChanged, environment: var0
+                    var0 = function arg0() {
                         var0 = arg0;
                         var2 = var0.viewableItems;
                         var1 = var2.forEach;
@@ -859,7 +859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.contentContainerStyle = var18;
                 var23 = _closure1_slot10;
                 var2.scrollIndicatorInsets = var23;
-                var23 = function(arg0) { // Original name: keyExtractor, environment: var17
+                var23 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
@@ -911,7 +911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.contentContainerStyle = var18;
                 var18 = _closure1_slot10;
                 var1.scrollIndicatorInsets = var18;
-                var17 = function(arg0) { // Original name: keyExtractor, environment: var17
+                var17 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;

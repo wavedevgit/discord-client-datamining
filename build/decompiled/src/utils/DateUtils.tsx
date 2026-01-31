@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var8;
-    var0 = function(arg0) { // Original name: startOfDay, environment: var1
+    var0 = function arg0() {
         _fun26925: for (var _fun26925_ip = 0;;) switch (_fun26925_ip) {
             case 0:
                 var0 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var5 = function(arg0, arg1) { // Original name: differenceInCalendarDays, environment: var1
+    var5 = function arg0, arg1() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.floor;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var5;
-    var4 = function(arg0, arg1) { // Original name: dateFormat, environment: var1
+    var4 = function arg0, arg1() {
         _fun26927: for (var _fun26927_ip = 0;;) switch (_fun26927_ip) {
             case 0:
                 var3 = arg0;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0) { // Original name: dateStringToMoment, environment: var1
+    var3 = function arg0() {
         _fun26928: for (var _fun26928_ip = 0;;) switch (_fun26928_ip) {
             case 0:
                 var2 = arg0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var0 = function(arg0) { // Original name: toMoment, environment: var1
+    var0 = function arg0() {
         _fun26929: for (var _fun26929_ip = 0;;) switch (_fun26929_ip) {
             case 0:
                 var3 = arg0;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: toDate, environment: var1
+    var0 = function arg0() {
         _fun26930: for (var _fun26930_ip = 0;;) switch (_fun26930_ip) {
             case 0:
                 var2 = arg0;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'utils/DateUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.differenceInCalendarDays = var5;
-    var5 = function(arg0, arg1) { // Original name: differenceInDays, environment: var1
+    var5 = function arg0, arg1() {
         var1 = arg0;
         var2 = arg1;
         var0 = var1.getTime;
@@ -349,7 +349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.differenceInDays = var5;
-    var5 = function(arg0, arg1) { // Original name: isSameHourMoment, environment: var1
+    var5 = function arg0, arg1() {
         _fun26933: for (var _fun26933_ip = 0;;) switch (_fun26933_ip) {
             case 0:
                 var2 = arg0;
@@ -382,7 +382,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSameHourMoment = var5;
-    var5 = function(arg0, arg1) { // Original name: isSameDay, environment: var1
+    var5 = function arg0, arg1() {
         _fun26934: for (var _fun26934_ip = 0;;) switch (_fun26934_ip) {
             case 0:
                 var2 = arg0;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSameDay = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: isWithinInterval, environment: var1
+    var5 = function arg0, arg1, arg2() {
         var3 = arg0;
         var4 = arg1;
         var0 = global;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isWithinInterval = var5;
     var2.dateFormat = var4;
-    var4 = function(arg0) { // Original name: calendarFormat, environment: var1
+    var4 = function arg0() {
         _fun26936: for (var _fun26936_ip = 0;;) switch (_fun26936_ip) {
             case 0:
                 var3 = arg0;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.calendarFormat = var4;
-    var4 = function(arg0) { // Original name: calendarFormatCompact, environment: var1
+    var4 = function arg0() {
         _fun26937: for (var _fun26937_ip = 0;;) switch (_fun26937_ip) {
             case 0:
                 var3 = arg0;
@@ -580,7 +580,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.calendarFormatCompact = var4;
     var2.dateStringToMoment = var3;
-    var3 = function(arg0) { // Original name: accessibilityLabelCalendarFormat, environment: var1
+    var3 = function arg0() {
         _fun26938: for (var _fun26938_ip = 0;;) switch (_fun26938_ip) {
             case 0:
                 var3 = arg0;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.accessibilityLabelCalendarFormat = var3;
-    var3 = function(arg0, arg1) { // Original name: diffAsUnits, environment: var1
+    var3 = function arg0, arg1() {
         _fun26939: for (var _fun26939_ip = 0;;) switch (_fun26939_ip) {
             case 0:
                 var5 = arg0;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.diffAsUnits = var3;
-    var3 = function(arg0, arg1) { // Original name: unitsAsStrings, environment: var1
+    var3 = function arg0, arg1() {
         _fun26941: for (var _fun26941_ip = 0;;) switch (_fun26941_ip) {
             case 0:
                 var5 = arg0;
@@ -839,7 +839,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.unitsAsStrings = var3;
-    var1 = function(arg0) { // Original name: formatDateForDatetimeLocal, environment: var1
+    var1 = function arg0() {
         _fun26942: for (var _fun26942_ip = 0;;) switch (_fun26942_ip) {
             case 0:
                 var3 = arg0;

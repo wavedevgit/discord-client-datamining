@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var4;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0) { // Original name: VideoSpinnerTimer, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var4 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'onSpinnerStarted';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             _fun64471: for (var _fun64471_ip = 0;;) switch (_fun64471_ip) {
                 case 0:
                     var1 = this;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'trackSpinnerDuration';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun64472: for (var _fun64472_ip = 0;;) switch (_fun64472_ip) {
                 case 0:
                     var9 = arg0;

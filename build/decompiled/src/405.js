@@ -46,12 +46,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 136:
             var _closure1_slot2 = var3;
             var1 = {};
-            var5 = function() { // Original name: getConstants, environment: var4
+            var5 = function() {
                 var0 = _closure1_slot2;
                 return var0;
             };
             var1.getConstants = var5;
-            var5 = function(arg0) { // Original name: allowRTL, environment: var4
+            var5 = function arg0() {
                 _fun5790: for (var _fun5790_ip = 0;;) switch (_fun5790_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.allowRTL = var5;
-            var5 = function(arg0) { // Original name: forceRTL, environment: var4
+            var5 = function arg0() {
                 _fun5791: for (var _fun5791_ip = 0;;) switch (_fun5791_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.forceRTL = var5;
-            var4 = function(arg0) { // Original name: swapLeftAndRightInRTL, environment: var4
+            var4 = function arg0() {
                 _fun5792: for (var _fun5792_ip = 0;;) switch (_fun5792_ip) {
                     case 0:
                         var4 = _closure1_slot0;

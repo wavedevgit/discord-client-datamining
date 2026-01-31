@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/dismissible_content/useSelectedDismissibleContentShared.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useSelectedDismissibleContentShared, environment: var1
+    var1 = function arg0, arg1() {
         _fun52177: for (var _fun52177_ip = 0;;) switch (_fun52177_ip) {
             case 0:
                 var5 = arg0;

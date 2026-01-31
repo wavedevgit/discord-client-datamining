@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun56225: for (var _fun56225_ip = 0;;) switch (_fun56225_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Map;
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: LimitedMap, environment: var0
+        var3 = function arg0() {
             _fun56229: for (var _fun56229_ip = 0;;) switch (_fun56229_ip) {
                 case 0:
                     var3 = this;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'set';
         var4.key = var5;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun56230: for (var _fun56230_ip = 0;;) switch (_fun56230_ip) {
                 case 0:
                     var5 = this;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var5)(var0);
                 case 51:
                     var9 = _closure2_slot0;
-                    var3 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
+                    var3 = function arg0, arg1, arg2, arg3() {
                         _fun56231: for (var _fun56231_ip = 0;;) switch (_fun56231_ip) {
                             case 0:
                                 var4 = arg0;

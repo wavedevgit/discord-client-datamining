@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot5;
-        var2 = function(arg0) { // Original name: CellRenderMask, environment: var4
+        var2 = function arg0() {
             _fun4799: for (var _fun4799_ip = 0;;) switch (_fun4799_ip) {
                 case 0:
                     var4 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'enumerateRegions';
         var0.key = var1;
-        var1 = function() { // Original name: enumerateRegions, environment: var4
+        var1 = function() {
             var0 = this;
             var0 = var0._regions;
             return var0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'addCells';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: addCells, environment: var4
+        var5 = function arg0() {
             _fun4801: for (var _fun4801_ip = 0;;) switch (_fun4801_ip) {
                 case 0:
                     var14 = arg0;
@@ -272,7 +272,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'numCells';
         var0.key = var5;
-        var5 = function() { // Original name: numCells, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0._numCells;
             return var0;
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'equals';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: equals, environment: var4
+        var5 = function arg0() {
             _fun4803: for (var _fun4803_ip = 0;;) switch (_fun4803_ip) {
                 case 0:
                     var3 = arg0;
@@ -357,7 +357,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = '_findRegion';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: _findRegion, environment: var4
+        var4 = function arg0() {
             _fun4805: for (var _fun4805_ip = 0;;) switch (_fun4805_ip) {
                 case 0:
                     var6 = arg0;

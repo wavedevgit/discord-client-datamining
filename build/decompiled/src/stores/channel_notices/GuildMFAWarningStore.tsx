@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun96129: for (var _fun96129_ip = 0;;) switch (_fun96129_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var8 = function() { // Original name: handleUserStoreUpdates, environment: var3
+    var8 = function() {
         _fun96132: for (var _fun96132_ip = 0;;) switch (_fun96132_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildMFAWarningStore, environment: var5
+        var3 = function() {
             _fun96134: for (var _fun96134_ip = 0;;) switch (_fun96134_ip) {
                 case 0:
                     var3 = this;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var2 = var3.waitFor;
             var1 = _closure1_slot6;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isVisible';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun96136: for (var _fun96136_ip = 0;;) switch (_fun96136_ip) {
                 case 0:
                     var1 = arg0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var6.bind(var0)(var1);
     var1 = {};
     var1.CONNECTION_OPEN = var8;
-    var3 = function() { // Original name: handleGuildPermissionsUpdate, environment: var3
+    var3 = function() {
         var0 = true;
         return var0;
     };

@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.parseDateTimeSkeleton = var0;
     var3 = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
     var _closure1_slot0 = var3;
-    var1 = function(arg0) { // Original name: parseDateTimeSkeleton, environment: var1
+    var1 = function arg0() {
         var4 = arg0;
         var0 = {};
         var _closure2_slot0 = var0;

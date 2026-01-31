@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun75332: for (var _fun75332_ip = 0;;) switch (_fun75332_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: VirtualCurrencyStore, environment: var5
+        var3 = function() {
             _fun75336: for (var _fun75336_ip = 0;;) switch (_fun75336_ip) {
                 case 0:
                     var4 = this;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = new Array(2);
                     var9[0] = var0;
                     var0 = {};
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_REDEEM_START, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRedeemVirtualCurrencyStart;
                         var0 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_REDEEM_START = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_REDEEM_SUCCESS, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRedeemVirtualCurrencySuccess;
                         var0 = arg0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_REDEEM_SUCCESS = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_REDEEM_FAIL, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRedeemVirtualCurrencyFail;
                         var0 = arg0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_REDEEM_FAIL = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_BALANCE_FETCH, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleBalanceFetch;
                         var0 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_BALANCE_FETCH = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleBalanceFetchSuccess;
                         var0 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleBalanceFetchFail;
                         var0 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_BALANCE_UPDATE, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleBalanceUpdate;
                         var0 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_BALANCE_UPDATE = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOnboardingModalOpen;
                         var0 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleOnboardingModalReset;
                         var0 = arg0;
@@ -168,14 +168,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET = var6;
-                    var6 = function() { // Original name: LOGIN_SUCCESS, environment: var1
+                    var6 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleBalanceStateReset;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var0.LOGIN_SUCCESS = var6;
-                    var6 = function(arg0) { // Original name: VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY, environment: var1
+                    var6 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.setBalancePillOverlay;
                         var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'redeemError';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0._redeemVirtualCurrencyError;
             return var0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isRedeeming';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._isRedeemingVirtualCurrency;
             return var0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'redeemingSkuId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._redeemingSkuId;
             return var0;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'entitlements';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._entitlements;
             return var0;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'balance';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._balance;
             return var0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fetchBalanceError';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._fetchBalanceError;
             return var0;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingBalance';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._isFetchingBalance;
             return var0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'onboardingModalOpenedPrior';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._onboardingModalOpenedPrior;
             return var0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'balancePillOverlay';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._balancePillOverlay;
             return var0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'setBalancePillOverlay';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._balancePillOverlay = var1;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCurrentBalance';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0.balance;
             return var0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleBalanceStateReset';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = null;
             var1._balance = var0;
@@ -362,7 +362,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleBalanceFetch';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun75360: for (var _fun75360_ip = 0;;) switch (_fun75360_ip) {
                 case 0:
                     var1 = arg0;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleBalanceFetchSuccess';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var0 = arg0;
             var0 = var0.balance;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleBalanceFetchFail';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var0 = arg0;
             var0 = var0.error;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleBalanceUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var0 = arg0;
             var1 = var0.balance;
             var0 = this;
@@ -434,7 +434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleRedeemVirtualCurrencyStart';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var0 = arg0;
             var2 = var0.skuId;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleRedeemVirtualCurrencySuccess';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var0 = arg0;
             var0 = var0.entitlements;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleRedeemVirtualCurrencyFail';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = this;
             var0 = arg0;
             var2 = var0.error;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOnboardingModalOpen';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun75367: for (var _fun75367_ip = 0;;) switch (_fun75367_ip) {
                 case 0:
                     var1 = arg0;
@@ -515,7 +515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleOnboardingModalReset';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun75368: for (var _fun75368_ip = 0;;) switch (_fun75368_ip) {
                 case 0:
                     var1 = arg0;

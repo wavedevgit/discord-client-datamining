@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var6;
-    var0 = function(arg0) { // Original name: AppRowLabel, environment: var3
+    var0 = function arg0() {
         _fun107563: for (var _fun107563_ip = 0;;) switch (_fun107563_ip) {
             case 0:
                 var0 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var1 = function(arg0) { // Original name: BaseAppRow, environment: var3
+    var1 = function arg0() {
         _fun107564: for (var _fun107564_ip = 0;;) switch (_fun107564_ip) {
             case 0:
                 var1 = arg0;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var1;
-    var0 = function(arg0) { // Original name: AppRow, environment: var3
+    var0 = function arg0() {
         _fun107566: for (var _fun107566_ip = 0;;) switch (_fun107566_ip) {
             case 0:
                 var0 = arg0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0) { // Original name: ActivityRow, environment: var3
+    var0 = function arg0() {
         _fun107567: for (var _fun107567_ip = 0;;) switch (_fun107567_ip) {
             case 0:
                 var0 = arg0;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function(arg0) { // Original name: ActivityItemTuple, environment: var3
+    var0 = function arg0() {
         _fun107570: for (var _fun107570_ip = 0;;) switch (_fun107570_ip) {
             case 0:
                 var1 = arg0;
@@ -637,7 +637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var0;
-    var0 = function(arg0) { // Original name: ActivityItem, environment: var3
+    var0 = function arg0() {
         _fun107572: for (var _fun107572_ip = 0;;) switch (_fun107572_ip) {
             case 0:
                 var0 = arg0;
@@ -868,7 +868,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var6 = function() { // Original name: onError, environment: var6
+                var6 = function() {
                     var2 = _closure2_slot4;
                     var1 = undefined;
                     var0 = true;
@@ -991,7 +991,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: RecommendationItemTuple, environment: var3
+    var0 = function arg0() {
         _fun107576: for (var _fun107576_ip = 0;;) switch (_fun107576_ip) {
             case 0:
                 var1 = arg0;
@@ -1128,7 +1128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0) { // Original name: RecommendationItem, environment: var3
+    var0 = function arg0() {
         _fun107578: for (var _fun107578_ip = 0;;) switch (_fun107578_ip) {
             case 0:
                 var0 = arg0;
@@ -1257,7 +1257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var5 = function() { // Original name: onError, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = true;
@@ -1379,7 +1379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: Divider, environment: var3
+    var0 = function() {
         var0 = _closure1_slot26;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -1412,7 +1412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: RecommendationSectionHeader, environment: var3
+    var0 = function arg0() {
         _fun107582: for (var _fun107582_ip = 0;;) switch (_fun107582_ip) {
             case 0:
                 var0 = arg0;
@@ -1455,7 +1455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getRecommendationItemsWithViewAll, environment: var3
+    var0 = function arg0, arg1, arg2() {
         _fun107583: for (var _fun107583_ip = 0;;) switch (_fun107583_ip) {
             case 0:
                 var9 = arg0;
@@ -1926,7 +1926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_launcher/native/screens/home/AppLauncherHomeScreen.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AppLauncherHomeScreen, environment: var3
+    var3 = function arg0() {
         _fun107587: for (var _fun107587_ip = 0;;) switch (_fun107587_ip) {
             case 0:
                 var1 = arg0;
@@ -2173,7 +2173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var5.context = var17;
                 var5.entrypoint = var7;
-                var4 = function(arg0) { // Original name: useHomeData, environment: var41
+                var4 = function arg0() {
                     _fun107592: for (var _fun107592_ip = 0;;) switch (_fun107592_ip) {
                         case 0:
                             var1 = arg0;
@@ -2462,7 +2462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 }
                             };
                             var2 = var5.bind(var11)(var2, var3);
-                            var2 = function() { // Original name: useAppCollectionsActiveState, environment: var0
+                            var2 = function() {
                                 _fun107600: for (var _fun107600_ip = 0;;) switch (_fun107600_ip) {
                                     case 0:
                                         var2 = _closure1_slot0;
@@ -2627,7 +2627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = function() { // Environment: var0
                                 _fun107605: for (var _fun107605_ip = 0;;) switch (_fun107605_ip) {
                                     case 0:
-                                        var5 = function(arg0) { // Original name: getTupleItem, environment: var0
+                                        var5 = function arg0() {
                                             var0 = arg0;
                                             var4 = var0.shelfItem1;
                                             var3 = var0.shelfItem2;
@@ -2857,7 +2857,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     case 67:
                                         var2 = {};
                                     case 69:
-                                        var1 = function(arg0) { // Original name: hasCommands, environment: var1
+                                        var1 = function arg0() {
                                             var0 = global;
                                             var2 = var0.Object;
                                             var1 = var2.values;
@@ -3902,7 +3902,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var8[var2];
                             var4 = var4.bind(var3)(var2);
                             var2 = {};
-                            var8 = function() { // Original name: onPress, environment: var1
+                            var8 = function() {
                                 var4 = _closure3_slot0;
                                 var2 = var4.applications;
                                 var1 = var2.map;
@@ -3981,7 +3981,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.isFirstRow = var2;
                             var2 = var5.isLastRow;
                             var4.isLastRow = var2;
-                            var2 = function() { // Original name: onPress, environment: var1
+                            var2 = function() {
                                 var2 = _closure2_slot20;
                                 var1 = {};
                                 var0 = _closure3_slot0;
@@ -4015,7 +4015,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.isFirst = var8;
                             var8 = var5.isLast;
                             var2.isLast = var8;
-                            var8 = function() { // Original name: onPress, environment: var1
+                            var8 = function() {
                                 var2 = _closure2_slot20;
                                 var1 = {};
                                 var0 = _closure3_slot0;
@@ -4052,7 +4052,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var2 = var5.section;
                             var4.section = var2;
-                            var2 = function() { // Original name: onPress, environment: var1
+                            var2 = function() {
                                 var3 = _closure2_slot13;
                                 var0 = _closure3_slot0;
                                 var2 = var0.section;
@@ -4088,7 +4088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.context = var9;
                             var9 = var5.sectionName;
                             var2.sectionName = var9;
-                            var9 = function(arg0, arg1) { // Original name: onPress, environment: var1
+                            var9 = function arg0, arg1() {
                                 var2 = _closure2_slot20;
                                 var1 = {};
                                 var0 = arg0;
@@ -4126,7 +4126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var9.AppLauncherSectionName;
                             var9 = var9.ACTIVITIES;
                             var4.sectionName = var9;
-                            var9 = function(arg0) { // Original name: onPress, environment: var1
+                            var9 = function arg0() {
                                 _fun107624: for (var _fun107624_ip = 0;;) switch (_fun107624_ip) {
                                     case 0:
                                         var2 = _closure2_slot14;
@@ -4202,7 +4202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = {};
                             var8 = var5.section;
                             var2.section = var8;
-                            var1 = function(arg0) { // Original name: onPress, environment: var1
+                            var1 = function arg0() {
                                 var2 = _closure2_slot14;
                                 var1 = {};
                                 var0 = arg0;
@@ -4845,7 +4845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var51 = 'md';
                 var40.size = var51;
                 var40.onChange = var50;
-                var50 = function() { // Original name: onFocus, environment: var41
+                var50 = function() {
                     var2 = _closure2_slot28;
                     var0 = undefined;
                     var2 = var2.bind(var0)();
@@ -4893,7 +4893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33.loading = var46;
                 var33.apps = var45;
                 var33.onAppSelected = var42;
-                var45 = function(arg0, arg1) { // Original name: onCommandSelected, environment: var41
+                var45 = function arg0, arg1() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot3;
                     var0 = 23;
@@ -4932,7 +4932,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var33.onCommandSelected = var45;
-                var45 = function(arg0) { // Original name: onViewAllSelected, environment: var41
+                var45 = function arg0() {
                     _fun107652: for (var _fun107652_ip = 0;;) switch (_fun107652_ip) {
                         case 0:
                             var6 = arg0;
@@ -5085,7 +5085,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var36 = {};
                 var36.items = var43;
                 var36.onAppSelected = var42;
-                var41 = function() { // Original name: onViewAllSelected, environment: var41
+                var41 = function() {
                     _fun107654: for (var _fun107654_ip = 0;;) switch (_fun107654_ip) {
                         case 0:
                             var2 = _closure2_slot19;

@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot7 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: StickerPickerListEmptyState, environment: var1
+    var1 = function arg0() {
         _fun74452: for (var _fun74452_ip = 0;;) switch (_fun74452_ip) {
             case 0:
                 var2 = arg0;

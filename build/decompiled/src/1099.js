@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'LaunchDarkly';
         var0.name = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: processEvent, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 0;
@@ -39,13 +39,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var4.bind(var5)(var1);
-    var3 = function() { // Original name: buildLaunchDarklyFlagUsedHandler, environment: var3
+    var3 = function() {
         var0 = {
             'name': 'sentry-flag-auditor',
             'type': 'flag-used',
             'synchronous': true
         };
-        var1 = function(arg0, arg1, arg2) { // Original name: method, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var4 = arg0;
             var1 = arg1;
             var3 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var11;
-    var5 = function(arg0, arg1, arg2) { // Original name: resolveAsset, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun47062: for (var _fun47062_ip = 0;;) switch (_fun47062_ip) {
             case 0:
                 var4 = arg1;
@@ -38,12 +38,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var0 = function(arg0, arg1) { // Original name: getVideoOrDefaultAsset, environment: var1
+    var0 = function arg0, arg1() {
         var0 = arg1;
         return var0;
     };
     var _closure1_slot11 = var0;
-    var4 = function(arg0, arg1, arg2) { // Original name: buildUrl, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun47064: for (var _fun47064_ip = 0;;) switch (_fun47064_ip) {
             case 0:
                 var0 = arg1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0) { // Original name: getMimetype, environment: var1
+    var3 = function arg0() {
         _fun47065: for (var _fun47065_ip = 0;;) switch (_fun47065_ip) {
             case 0:
                 var3 = arg0;
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var3;
-    var0 = function(arg0) { // Original name: safeMediaProxyDimension, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.min;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ANIMATED_MIMETYPES = var7;
     var2.QuestAssetType = var6;
     var2.resolveAsset = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: getQuestAsset, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun47067: for (var _fun47067_ip = 0;;) switch (_fun47067_ip) {
             case 0:
                 var1 = arg0;
@@ -1006,7 +1006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getQuestAsset = var5;
     var2.buildUrl = var4;
     var2.getMimetype = var3;
-    var3 = function(arg0, arg1) { // Original name: getDevicePixelScaledDimensions, environment: var1
+    var3 = function arg0, arg1() {
         _fun47068: for (var _fun47068_ip = 0;;) switch (_fun47068_ip) {
             case 0:
                 var3 = arg0;
@@ -1041,7 +1041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getDevicePixelScaledDimensions = var3;
-    var3 = function(arg0) { // Original name: getAssetUrlWithMediaProxyQueryParams, environment: var1
+    var3 = function arg0() {
         _fun47069: for (var _fun47069_ip = 0;;) switch (_fun47069_ip) {
             case 0:
                 var0 = arg0;
@@ -1135,7 +1135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAssetUrlWithMediaProxyQueryParams = var3;
-    var1 = function(arg0, arg1) { // Original name: convertVideoToFirstFrameImageWithMediaProxy, environment: var1
+    var1 = function arg0, arg1() {
         _fun47070: for (var _fun47070_ip = 0;;) switch (_fun47070_ip) {
             case 0:
                 var0 = arg0;

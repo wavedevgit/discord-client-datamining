@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/coercePlatformTypeToConsoleType.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: coercePlatformTypeToConsoleType, environment: var1
+    var3 = function arg0() {
         _fun68050: for (var _fun68050_ip = 0;;) switch (_fun68050_ip) {
             case 0:
                 var2 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.coercePlatformTypeToConsoleType = var3;
-    var1 = function(arg0, arg1) { // Original name: coerceConsoleTypeToPlatformType, environment: var1
+    var1 = function arg0, arg1() {
         _fun68051: for (var _fun68051_ip = 0;;) switch (_fun68051_ip) {
             case 0:
                 var3 = arg0;

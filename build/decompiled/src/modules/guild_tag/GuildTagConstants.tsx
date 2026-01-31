@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GUILD_TAG_BADGE_PALETTE_PRESETS = var12;
     var2.GUILD_TAG_BADGE_PRIMARY_DEFAULT = var11;
     var2.GUILD_TAG_BADGE_SECONDARY_DEFAULT = var10;
-    var10 = function() { // Original name: getRandomGuildTagBadgePreset, environment: var8
+    var10 = function() {
         var1 = _closure1_slot1;
         var0 = global;
         var3 = var0.Math;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRandomGuildTagBadgePreset = var10;
     var2.GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS = var9;
-    var8 = function() { // Original name: getRandomGuildTagBadgeKind, environment: var8
+    var8 = function() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.keys;

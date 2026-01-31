@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var6;
-    var3 = function() { // Original name: useSafetyHubClassifications, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot3;
         var2 = 3;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/safety_hub/hooks/useSafetyHubClassifications.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useSafetyHubClassifications = var3;
-    var3 = function(arg0) { // Original name: useSafetyHubClassification, environment: var1
+    var3 = function arg0() {
         _fun79389: for (var _fun79389_ip = 0;;) switch (_fun79389_ip) {
             case 0:
                 var9 = arg0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSafetyHubClassification = var3;
-    var3 = function() { // Original name: useActiveSafetyHubClassifications, environment: var1
+    var3 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var2 = var2.bind(var1)();
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useActiveSafetyHubClassifications = var3;
-    var3 = function() { // Original name: useExpiredSafetyHubClassifications, environment: var1
+    var3 = function() {
         var2 = _closure1_slot7;
         var1 = undefined;
         var2 = var2.bind(var1)();
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useExpiredSafetyHubClassifications = var3;
-    var1 = function() { // Original name: useSafetyHubAppealSignal, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot3;
         var1 = 3;

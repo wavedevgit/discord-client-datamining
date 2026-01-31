@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RegistrationTransitionActionTypes = var5;
     var2.RegistrationSteps = var4;
     var2.RegisterTransitionSteps = var3;
-    var1 = function(arg0) { // Original name: authStateToRegisterTransitionStep, environment: var1
+    var1 = function arg0() {
         _fun100211: for (var _fun100211_ip = 0;;) switch (_fun100211_ip) {
             case 0:
                 var3 = arg0;

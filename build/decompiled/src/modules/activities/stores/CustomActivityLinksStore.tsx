@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun92372: for (var _fun92372_ip = 0;;) switch (_fun92372_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: CustomActivityLinksStore, environment: var0
+        var3 = function() {
             _fun92376: for (var _fun92376_ip = 0;;) switch (_fun92376_ip) {
                 case 0:
                     var3 = this;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'getOne';
         var4.key = var5;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun92377: for (var _fun92377_ip = 0;;) switch (_fun92377_ip) {
                 case 0:
                     var1 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleFetchSuccess, environment: var3
+    var7 = function arg0() {
         _fun92378: for (var _fun92378_ip = 0;;) switch (_fun92378_ip) {
             case 0:
                 var0 = arg0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS = var7;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot6 = var0;
         var0 = undefined;

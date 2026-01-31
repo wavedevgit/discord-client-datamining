@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var1 = function(arg0) { // Original name: hslToRgb, environment: var3
+    var1 = function arg0() {
         _fun27985: for (var _fun27985_ip = 0;;) switch (_fun27985_ip) {
             case 0:
                 var1 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = /^((?:rgb|hsl)a?)\s*\(([^)]*)\)/i;
     var _closure1_slot4 = var4;
     var3 = function() { // Environment: var3
-        var4 = function(arg0, arg1, arg2, arg3) { // Original name: Color, environment: var5
+        var4 = function arg0, arg1, arg2, arg3() {
             var2 = this;
             var3 = _closure1_slot1;
             var1 = _closure2_slot0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'toHexString';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun27989: for (var _fun27989_ip = 0;;) switch (_fun27989_ip) {
                 case 0:
                     var0 = this;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'toHSL';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun27990: for (var _fun27990_ip = 0;;) switch (_fun27990_ip) {
                 case 0:
                     var1 = this;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getRelativeLuminance';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var5
+        var1 = function() {
             _fun27991: for (var _fun27991_ip = 0;;) switch (_fun27991_ip) {
                 case 0:
                     var0 = this;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'parseString';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var5
+        var1 = function arg0() {
             _fun27992: for (var _fun27992_ip = 0;;) switch (_fun27992_ip) {
                 case 0:
                     var3 = arg0;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'parseRgbString';
         var0.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun27993: for (var _fun27993_ip = 0;;) switch (_fun27993_ip) {
                 case 0:
                     var2 = arg0;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'parseHexString';
         var0.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun27994: for (var _fun27994_ip = 0;;) switch (_fun27994_ip) {
                 case 0:
                     var4 = arg0;
@@ -662,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var6 = 'parseColorFnString';
         var0.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun27995: for (var _fun27995_ip = 0;;) switch (_fun27995_ip) {
                 case 0:
                     var4 = arg0;

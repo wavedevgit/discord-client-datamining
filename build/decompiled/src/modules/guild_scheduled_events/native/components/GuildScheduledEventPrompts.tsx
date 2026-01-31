@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: ScheduleEventPrompt, environment: var1
+    var3 = function arg0() {
         _fun65205: for (var _fun65205_ip = 0;;) switch (_fun65205_ip) {
             case 0:
                 var0 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var11 = var6.actionBarCTAContainer;
                 var1.style = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 6;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ScheduleEventPrompt = var3;
-    var1 = function(arg0) { // Original name: StartEventPrompt, environment: var1
+    var1 = function arg0() {
         _fun65207: for (var _fun65207_ip = 0;;) switch (_fun65207_ip) {
             case 0:
                 var0 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var9 = var7.actionBarCTAContainer;
                 var1.style = var9;
-                var8 = function() { // Original name: onPress, environment: var8
+                var8 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 6;

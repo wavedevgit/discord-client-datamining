@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/tracking/Tracking.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: trackForumChannelSeenBatch, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.guildId;
         var8 = var0.channelId;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumChannelSeenBatch = var3;
-    var3 = function(arg0) { // Original name: trackForumSearched, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.guildId;
         var7 = var0.channelId;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumSearched = var3;
-    var3 = function(arg0) { // Original name: trackForumSearchCleared, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var6 = var0.channelId;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumSearchCleared = var3;
-    var3 = function(arg0) { // Original name: trackForumTagFilterClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.guildId;
         var10 = var0.channelId;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumTagFilterClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumCreateNewPostClick, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var6 = var0.channelId;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumCreateNewPostClick = var3;
-    var3 = function(arg0) { // Original name: trackForumCreateNewPostKeybindUsed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var6 = var0.channelId;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumCreateNewPostKeybindUsed = var3;
-    var3 = function(arg0) { // Original name: maybeTrackForumNewPostDraftCreated, environment: var1
+    var3 = function arg0() {
         _fun53277: for (var _fun53277_ip = 0;;) switch (_fun53277_ip) {
             case 0:
                 var0 = arg0;
@@ -467,7 +467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.maybeTrackForumNewPostDraftCreated = var3;
-    var3 = function(arg0) { // Original name: trackForumNewPostCleared, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var6 = var0.channelId;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumNewPostCleared = var3;
-    var3 = function(arg0) { // Original name: trackForumPostCreated, environment: var1
+    var3 = function arg0() {
         _fun53279: for (var _fun53279_ip = 0;;) switch (_fun53279_ip) {
             case 0:
                 var1 = arg0;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var2;
                 var5 = var1.postId;
                 var _closure2_slot2 = var5;
-                var3 = function() { // Original name: _trackForumPostCreated, environment: var0
+                var3 = function() {
                     var2 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 5;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackForumPostCreated = var3;
-    var3 = function(arg0) { // Original name: trackForumScrolled, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var6 = var0.channelId;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumScrolled = var3;
-    var3 = function(arg0) { // Original name: trackForumMorePostsLoaded, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.guildId;
         var10 = var0.channelId;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumMorePostsLoaded = var3;
-    var3 = function(arg0) { // Original name: trackForumPostClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.guildId;
         var8 = var0.channelId;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumPostClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumSortOrderUpdated, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.guildId;
         var10 = var0.channelId;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumSortOrderUpdated = var3;
-    var3 = function(arg0) { // Original name: trackForumLayoutUpdated, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.guildId;
         var7 = var0.channelId;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumLayoutUpdated = var3;
-    var3 = function(arg0) { // Original name: trackForumPostLinkCopied, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.postId;
         var5 = var0.location;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumPostLinkCopied = var3;
-    var3 = function(arg0) { // Original name: trackForumOnboardingClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.onboardingCTA;
         var3 = _closure1_slot1;
@@ -842,7 +842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumOnboardingClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumUpsellModalClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.forumDemoId;
         var3 = _closure1_slot1;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumUpsellModalClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumAddMediaToOriginalPostClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.added;
         var3 = _closure1_slot1;
@@ -878,7 +878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumAddMediaToOriginalPostClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumHelperCardClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.readGuideCta;
         var3 = _closure1_slot1;
@@ -896,7 +896,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumHelperCardClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumChannelMediaUploaderClicked, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.isMobile;
         var3 = _closure1_slot1;
@@ -914,7 +914,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumChannelMediaUploaderClicked = var3;
-    var3 = function() { // Original name: trackForumEnableAutomodClicked, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 5;
@@ -928,7 +928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumEnableAutomodClicked = var3;
-    var3 = function() { // Original name: trackForumPreviewPostClicked, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 5;
@@ -942,7 +942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumPreviewPostClicked = var3;
-    var3 = function(arg0) { // Original name: trackForumPostSidebarViewed, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var2 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -1006,7 +1006,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumPostSidebarViewed = var3;
-    var3 = function(arg0) { // Original name: trackMobileForumComposerOpened, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var7 = var0.guildId;
         var6 = var0.channelId;
@@ -1030,7 +1030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackMobileForumComposerOpened = var3;
-    var3 = function() { // Original name: trackMobileForumComposerDismissed, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 7;
@@ -1047,7 +1047,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackMobileForumComposerDismissed = var3;
-    var3 = function() { // Original name: trackForumUpsellModalViewed, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -1069,7 +1069,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForumUpsellModalViewed = var3;
-    var1 = function(arg0) { // Original name: trackForumCreateNewPostStarted, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var6 = var0.guildId;
         var7 = var0.channelId;

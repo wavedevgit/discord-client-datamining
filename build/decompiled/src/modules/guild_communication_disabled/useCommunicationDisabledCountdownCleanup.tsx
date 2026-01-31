@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_communication_disabled/useCommunicationDisabledCountdownCleanup.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useCommunicationDisabledCountdownCleanup, environment: var1
+    var1 = function arg0() {
         _fun90647: for (var _fun90647_ip = 0;;) switch (_fun90647_ip) {
             case 0:
                 var5 = arg0;

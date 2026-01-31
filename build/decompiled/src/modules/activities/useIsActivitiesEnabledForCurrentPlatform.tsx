@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function() { // Original name: isActivitiesAllowed, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -33,14 +33,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/useIsActivitiesEnabledForCurrentPlatform.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useIsActivitiesEnabledForCurrentPlatform, environment: var1
+    var3 = function() {
         var1 = _closure1_slot2;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var2.useIsActivitiesEnabledForCurrentPlatform = var3;
-    var1 = function() { // Original name: getIsActivitiesEnabledForCurrentPlatform, environment: var1
+    var1 = function() {
         var1 = _closure1_slot2;
         var0 = undefined;
         var0 = var1.bind(var0)();

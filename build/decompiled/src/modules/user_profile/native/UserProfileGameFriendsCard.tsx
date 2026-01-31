@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileGameFriendsCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileGameFriendsCard, environment: var1
+    var1 = function arg0() {
         _fun91929: for (var _fun91929_ip = 0;;) switch (_fun91929_ip) {
             case 0:
                 var0 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var1 = var0.UxpwAh;
                 var0 = {};
-                var7 = function() { // Original name: applications, environment: var9
+                var7 = function() {
                     var2 = _closure2_slot3;
                     var1 = var2.map;
                     var0 = function(arg0) { // Environment: var0
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.applications = var7;
-                var7 = function() { // Original name: applicationNameLast, environment: var9
+                var7 = function() {
                     var3 = _closure1_slot3;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var1 = var0.C98CSN;
                 var0 = {};
-                var10 = function() { // Original name: applicationName, environment: var9
+                var10 = function() {
                     var4 = _closure1_slot3;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.applicationName = var10;
-                var10 = function() { // Original name: applicationName2, environment: var9
+                var10 = function() {
                     var4 = _closure1_slot3;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var1 = var0.wQ6urw;
                 var0 = {};
-                var9 = function() { // Original name: applicationName, environment: var9
+                var9 = function() {
                     var4 = _closure1_slot3;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;

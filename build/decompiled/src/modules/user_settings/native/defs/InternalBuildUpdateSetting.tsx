@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'title': 'Internal Build Update',
         'parent': null
     };
-    var9 = function() { // Original name: InstallNativeUpdateIcon, environment: var8
+    var9 = function() {
         _fun87584: for (var _fun87584_ip = 0;;) switch (_fun87584_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.IconComponent = var9;
-    var9 = function() { // Original name: useInternalBuildUpdateDescription, environment: var8
+    var9 = function() {
         _fun87586: for (var _fun87586_ip = 0;;) switch (_fun87586_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useDescription = var9;
-    var9 = function() { // Original name: useHasInternalBuildUpdateSetting, environment: var8
+    var9 = function() {
         _fun87589: for (var _fun87589_ip = 0;;) switch (_fun87589_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.usePredicate = var9;
-    var8 = function() { // Original name: handleInstallNativeUpdateSettingPress, environment: var8
+    var8 = function() {
         _fun87590: for (var _fun87590_ip = 0;;) switch (_fun87590_ip) {
             case 0:
                 var2 = _closure1_slot4;

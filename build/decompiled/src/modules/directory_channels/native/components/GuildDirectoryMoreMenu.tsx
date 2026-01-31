@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun71315: for (var _fun71315_ip = 0;;) switch (_fun71315_ip) {
             case 0:
                 var0 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.bind(var4)(var8);
                 var8 = var8.PencilIcon;
                 var3.IconComponent = var8;
-                var8 = function() { // Original name: action, environment: var5
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 3;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.IconComponent = var7;
                 var7 = 'destructive';
                 var2.variant = var7;
-                var7 = function() { // Original name: action, environment: var5
+                var7 = function() {
                     var7 = _closure1_slot1;
                     var9 = _closure1_slot3;
                     var0 = 4;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6.guildName = var13;
                     var6 = var11.bind(var12)(var10, var6);
                     var1.body = var6;
-                    var6 = function() { // Original name: onConfirm, environment: var4
+                    var6 = function() {
                         var2 = _closure1_slot2;
                         var1 = _closure1_slot3;
                         var0 = 6;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5["ETE/oC"];
                     var5 = var6.bind(var7)(var5);
                     var1.cancelText = var5;
-                    var4 = function() { // Original name: onCancel, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 4;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.IconComponent = var3;
                 var3 = 'destructive';
                 var0.variant = var3;
-                var3 = function() { // Original name: action, environment: var5
+                var3 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 8;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.ContextMenu;
                 var1 = {};
                 var1.items = var6;
-                var5 = function(arg0) { // Original name: children, environment: var5
+                var5 = function arg0() {
                     var2 = arg0;
                     var7 = var2.ref;
                     var0 = null;

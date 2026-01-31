@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: isHeicFile, environment: var2
+    var3 = function arg0() {
         _fun37943: for (var _fun37943_ip = 0;;) switch (_fun37943_ip) {
             case 0:
                 var2 = arg0;
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.isHeicFile = var3;
-    var2 = function(arg0) { // Original name: findHeicOffsets, environment: var2
+    var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

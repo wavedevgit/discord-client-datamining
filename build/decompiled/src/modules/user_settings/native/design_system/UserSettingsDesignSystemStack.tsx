@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: StackBlock, environment: var1
+    var0 = function() {
         var1 = _closure1_slot6;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemStack.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemStack, environment: var1
+    var1 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var6 = var0.bind(var3)();

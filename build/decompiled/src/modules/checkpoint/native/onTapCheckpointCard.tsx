@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/checkpoint/native/onTapCheckpointCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: onTapCheckpointCard, environment: var1
+    var1 = function arg0() {
         _fun88744: for (var _fun88744_ip = 0;;) switch (_fun88744_ip) {
             case 0:
                 var1 = arg0;

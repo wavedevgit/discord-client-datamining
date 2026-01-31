@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: applySourceContextToFrame, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun11058: for (var _fun11058_ip = 0;;) switch (_fun11058_ip) {
             case 0:
                 var0 = arg0;
@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6[var4];
     var5 = var5.bind(var0)(var4);
     var4 = var5.defineIntegration;
-    var1 = function() { // Original name: _contextLinesIntegration, environment: var1
+    var1 = function() {
         _fun11059: for (var _fun11059_ip = 0;;) switch (_fun11059_ip) {
             case 0:
                 var4 = undefined;
@@ -100,10 +100,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ContextLines';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: processEvent, environment: var1
+                var1 = function arg0() {
                     var0 = arg0;
                     var3 = _closure2_slot0;
-                    var2 = function(arg0, arg1) { // Original name: addSourceContext, environment: var1
+                    var2 = function arg0, arg1() {
                         _fun11061: for (var _fun11061_ip = 0;;) switch (_fun11061_ip) {
                             case 0:
                                 var0 = arg0;

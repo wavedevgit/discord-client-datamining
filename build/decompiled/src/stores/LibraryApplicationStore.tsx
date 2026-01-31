@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun30599: for (var _fun30599_ip = 0;;) switch (_fun30599_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun30602: for (var _fun30602_ip = 0;;) switch (_fun30602_ip) {
             case 0:
                 var2 = arg0;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun30604: for (var _fun30604_ip = 0;;) switch (_fun30604_ip) {
             case 0:
                 var3 = arg0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function() { // Original name: getSavedData, environment: var3
+    var0 = function() {
         _fun30605: for (var _fun30605_ip = 0;;) switch (_fun30605_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: saveActiveLaunchOptionIds, environment: var3
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot3;
         var0 = 8;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: saveActiveLibraryApplicationBranchIds, environment: var3
+    var0 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot3;
         var0 = 8;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: setLibraryApplications, environment: var3
+    var0 = function arg0() {
         _fun30608: for (var _fun30608_ip = 0;;) switch (_fun30608_ip) {
             case 0:
                 var2 = _closure1_slot21;
@@ -400,7 +400,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var8 = function(arg0) { // Original name: handleLibraryApplicationUpdate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.libraryApplication;
         var2 = _closure1_slot9;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var2)(var3);
         return var0;
     };
-    var0 = function(arg0, arg1) { // Original name: _getLibraryApplication, environment: var3
+    var0 = function arg0, arg1() {
         _fun30610: for (var _fun30610_ip = 0;;) switch (_fun30610_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _getAllLibraryApplications, environment: var3
+    var0 = function() {
         var0 = {};
         var3 = _closure1_slot15;
         var4 = var0;
@@ -533,7 +533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.bind(var0)(var7);
     var9 = var7.Store;
     var7 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: LibraryApplicationStore, environment: var5
+        var3 = function() {
             _fun30613: for (var _fun30613_ip = 0;;) switch (_fun30613_ip) {
                 case 0:
                     var3 = this;
@@ -581,7 +581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun30614: for (var _fun30614_ip = 0;;) switch (_fun30614_ip) {
                 case 0:
                     var3 = this;
@@ -641,8 +641,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'libraryApplications';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
-            var2 = function(arg0) { // Original name: getLibraryApplicationsFiltered, environment: var0
+        var6 = function() {
+            var2 = function arg0() {
                 var0 = arg0;
                 var _closure4_slot0 = var0;
                 var2 = _closure1_slot28;
@@ -693,7 +693,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAllLibraryApplications';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = _closure1_slot28;
             var0 = undefined;
             var0 = var1.bind(var0)();
@@ -704,7 +704,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasLibraryApplication';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.keys;
@@ -722,7 +722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasApplication';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun30621: for (var _fun30621_ip = 0;;) switch (_fun30621_ip) {
                 case 0:
                     var1 = arguments[2];
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLibraryApplication';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun30622: for (var _fun30622_ip = 0;;) switch (_fun30622_ip) {
                 case 0:
                     var1 = arguments[2];
@@ -832,7 +832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveLibraryApplication';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun30623: for (var _fun30623_ip = 0;;) switch (_fun30623_ip) {
                 case 0:
                     var14 = arg0;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isUpdatingFlags';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var2 = _closure1_slot16;
             var1 = var2.has;
             var4 = _closure1_slot0;
@@ -969,7 +969,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveLaunchOptionId';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var1 = _closure1_slot18;
             var3 = _closure1_slot0;
             var2 = _closure1_slot3;
@@ -989,7 +989,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'fetched';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot13;
             return var0;
         };
@@ -998,7 +998,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'entitledBranchIds';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var4 = _closure1_slot1;
             var3 = _closure1_slot3;
             var2 = 11;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasRemovedLibraryApplicationThisSession';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot19;
             return var0;
         };
@@ -1049,7 +1049,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'whenInitialized';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = this;
             var1 = arg0;
             var _closure3_slot0 = var1;
@@ -1089,14 +1089,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function() { // Original name: handleLogout, environment: var3
+    var9 = function() {
         var0 = false;
         _closure1_slot13 = var0;
         var0 = undefined;
         return var0;
     };
     var1.LOGOUT = var9;
-    var9 = function(arg0) { // Original name: handleFetchSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var3 = var0.libraryApplications;
         var0 = {};
@@ -1109,7 +1109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LIBRARY_FETCH_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handlePurchaseSuccess, environment: var3
+    var9 = function arg0() {
         var0 = arg0;
         var2 = var0.libraryApplications;
         var1 = _closure1_slot26;
@@ -1118,7 +1118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SKU_PURCHASE_SUCCESS = var9;
-    var9 = function(arg0) { // Original name: handleFlagsUpdateStart, environment: var3
+    var9 = function arg0() {
         _fun30636: for (var _fun30636_ip = 0;;) switch (_fun30636_ip) {
             case 0:
                 var0 = arg0;
@@ -1178,7 +1178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.LIBRARY_APPLICATION_FLAGS_UPDATE_START = var9;
     var1.LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS = var8;
     var1.LIBRARY_APPLICATION_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleActiveLaunchOptionIdUpdate, environment: var3
+    var8 = function arg0() {
         var0 = arg0;
         var7 = var0.applicationId;
         var6 = var0.branchId;
@@ -1198,7 +1198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleActiveBranchUpdate, environment: var3
+    var8 = function arg0() {
         _fun30638: for (var _fun30638_ip = 0;;) switch (_fun30638_ip) {
             case 0:
                 var0 = arg0;
@@ -1223,7 +1223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE = var8;
-    var8 = function(arg0) { // Original name: handleTestModeEnabled, environment: var3
+    var8 = function arg0() {
         _fun30639: for (var _fun30639_ip = 0;;) switch (_fun30639_ip) {
             case 0:
                 var0 = arg0;
@@ -1262,7 +1262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.LIBRARY_APPLICATIONS_TEST_MODE_ENABLED = var8;
-    var3 = function() { // Original name: handleTestModeDisabled, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot15 = var0;
         var0 = undefined;

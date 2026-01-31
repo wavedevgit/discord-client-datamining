@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/premium/powerups/native/GuildPowerupsLevelsSection.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: GuildPowerupsLevelsSection, environment: var1
+            var1 = function arg0() {
                 var0 = arg0;
                 var5 = var0.guildId;
                 var _closure2_slot0 = var5;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 250;
                 var13 = var13 + var14;
                 var5.width = var13;
-                var12 = function(arg0) { // Original name: onConfigurePanGesture, environment: var12
+                var12 = function arg0() {
                     var2 = arg0;
                     var1 = var2.activeOffsetX;
                     var0 = new Array(2);

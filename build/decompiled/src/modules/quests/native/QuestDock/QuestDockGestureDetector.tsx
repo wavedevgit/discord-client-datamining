@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var1 = function() { // Original name: useQuestDockSwipeGesture, environment: var3
+    var1 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useContext;
         var9 = _closure1_slot0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var2.shouldCancelWhenOutside;
             var4 = var1.bind(var2)(var4);
             var2 = var4.onTouchesDown;
-            var1 = function(arg0) { // Original name: I, environment: var0
+            var1 = function arg0() {
                 var4 = arg0;
                 var1 = _closure2_slot9;
                 var0 = var1.set;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__initData = var12;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onTouchesMove;
-            var1 = function(arg0) { // Original name: A, environment: var0
+            var1 = function arg0() {
                 _fun83835: for (var _fun83835_ip = 0;;) switch (_fun83835_ip) {
                     case 0:
                         var1 = arg0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__initData = var12;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onChange;
-            var1 = function(arg0) { // Original name: o, environment: var0
+            var1 = function arg0() {
                 _fun83836: for (var _fun83836_ip = 0;;) switch (_fun83836_ip) {
                     case 0:
                         var0 = arg0;
@@ -877,7 +877,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__initData = var12;
             var2 = var2.bind(var4)(var1);
             var1 = var2.onEnd;
-            var0 = function(arg0) { // Original name: t, environment: var0
+            var0 = function arg0() {
                 _fun83837: for (var _fun83837_ip = 0;;) switch (_fun83837_ip) {
                     case 0:
                         var0 = arg0;
@@ -1119,7 +1119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var10[var7];
         var4 = var9.bind(var8)(var2);
         var3 = var4.useAnimatedReaction;
-        var2 = function() { // Original name: w, environment: var1
+        var2 = function() {
             var0 = {};
             var3 = _closure2_slot1;
             var2 = var3.get;
@@ -1139,7 +1139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.__workletHash = var6;
         var6 = _closure1_slot22;
         var2.__initData = var6;
-        var1 = function(arg0, arg1) { // Original name: Y, environment: var1
+        var1 = function arg0, arg1() {
             _fun83839: for (var _fun83839_ip = 0;;) switch (_fun83839_ip) {
                 case 0:
                     var2 = arg0;
@@ -1318,7 +1318,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var8;
     var _closure1_slot23 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: QuestDockGestureDetector, environment: var3
+    var3 = function arg0() {
         var1 = _closure1_slot24;
         var3 = undefined;
         var4 = var1.bind(var3)();

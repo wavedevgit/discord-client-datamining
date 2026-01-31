@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _handleUploadDebugLogSettingPress, environment: var7
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 12:
                         var3 = undefined;
                         var1 = undefined;
-                        var4 = function() { // Original name: onUploadDebugLogsRequestStart, environment: var2
+                        var4 = function() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot2;
                             var0 = 5;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         _fun85414_ip = 391;
                         continue _fun85414;
                     case 255: // try_end1
-                        var4 = function() { // Original name: onUploadDebugLogsRequestFinish, environment: var2
+                        var4 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot2;
                             var0 = 5;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1.content = var6;
                         var1 = var4.bind(var5)(var1);
                     case 391: // try_end2
-                        var1 = function() { // Original name: onUploadDebugLogsRequestFinish, environment: var2
+                        var1 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot2;
                             var0 = 5;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var3;
                     case 405: // catch_target1 // catch_target2
                         CatchBlockStart(arg_register = 1);
-                        var2 = function() { // Original name: onUploadDebugLogsRequestFinish, environment: var2
+                        var2 = function() {
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot2;
                             var0 = 5;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var8 = function() { // Original name: title, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 10;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var8);
     var8 = var8.CircleInformationIcon;
     var1.IconComponent = var8;
-    var8 = function() { // Original name: handleUploadDebugLogSettingPress, environment: var7
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onPress = var8;
-    var8 = function() { // Original name: useUploadDebugLogsTrailing, environment: var7
+    var8 = function() {
         _fun85432: for (var _fun85432_ip = 0;;) switch (_fun85432_ip) {
             case 0:
                 var0 = _closure1_slot7;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.useTrailing = var8;
-    var7 = function() { // Original name: useIsUploadDebugLogsDisabled, environment: var7
+    var7 = function() {
         var1 = _closure1_slot7;
         var0 = undefined;
         var0 = var1.bind(var0)();

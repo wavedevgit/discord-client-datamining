@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: fetchJoinSecret, environment: var6
+    var0 = function arg0, arg1() {
         _fun42802: for (var _fun42802_ip = 0;;) switch (_fun42802_ip) {
             case 0:
                 var3 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0, arg1) { // Original name: joinWithSecret, environment: var6
+    var3 = function arg0, arg1() {
         var0 = _closure1_slot5;
         var5 = var0.GAME_INVITE_FRAGMENT;
         var0 = global;
@@ -152,22 +152,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.WebBrowserType;
     var _closure1_slot6 = var1;
     var1 = {};
-    var7 = function() { // Original name: addGame, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.addGame = var7;
-    var7 = function() { // Original name: toggleOverlay, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.toggleOverlay = var7;
-    var7 = function() { // Original name: editName, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.editName = var7;
-    var7 = function() { // Original name: identifyGame, environment: var6
+    var7 = function() {
         var0 = global;
         var2 = var0.Promise;
         var1 = var2.reject;
@@ -186,12 +186,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.identifyGame = var7;
-    var7 = function() { // Original name: getDetectableGames, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.getDetectableGames = var7;
-    var7 = function(arg0) { // Original name: getDetectableGamesSupplemental, environment: var6
+    var7 = function arg0() {
         _fun42811: for (var _fun42811_ip = 0;;) switch (_fun42811_ip) {
             case 0:
                 var1 = arguments[1];
@@ -221,22 +221,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getDetectableGamesSupplemental = var7;
-    var7 = function() { // Original name: reportUnverifiedGame, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.reportUnverifiedGame = var7;
-    var7 = function() { // Original name: uploadIcon, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.uploadIcon = var7;
-    var7 = function() { // Original name: deleteEntry, environment: var6
+    var7 = function() {
         var0 = undefined;
         return var0;
     };
     var1.deleteEntry = var7;
-    var7 = function() { // Original name: launch, environment: var6
+    var7 = function() {
         var0 = global;
         var1 = var0.Promise;
         var0 = var1.resolve;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.launch = var7;
-    var6 = function(arg0) { // Original name: join, environment: var6
+    var6 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 91:
                         var6 = _closure2_slot0;
-                        var1 = function(arg0) { // Original name: joinViaDeeplink, environment: var2
+                        var1 = function arg0() {
                             _fun42820: for (var _fun42820_ip = 0;;) switch (_fun42820_ip) {
                                 case 0:
                                     var3 = arg0;

@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.runOnJS;
                 var1 = true;
                 var6 = var2.bind(var3)(var1);
-                var10 = function(arg0) { // Original name: refHandler, environment: var0
+                var10 = function arg0() {
                     _fun45131: for (var _fun45131_ip = 0;;) switch (_fun45131_ip) {
                         case 0:
                             var2 = arg0;

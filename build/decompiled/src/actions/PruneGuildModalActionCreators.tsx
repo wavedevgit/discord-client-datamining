@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.Endpoints;
     var _closure1_slot3 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: updateEstimate, environment: var3
+    var6 = function arg0() {
         _fun104916: for (var _fun104916_ip = 0;;) switch (_fun104916_ip) {
             case 0:
                 var2 = arguments[1];
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateEstimate = var6;
-    var6 = function(arg0) { // Original name: updateEstimateV2, environment: var3
+    var6 = function arg0() {
         _fun104919: for (var _fun104919_ip = 0;;) switch (_fun104919_ip) {
             case 0:
                 var2 = arguments[1];
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateEstimateV2 = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: prune, environment: var3
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;

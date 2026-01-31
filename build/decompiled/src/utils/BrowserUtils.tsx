@@ -6,32 +6,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var14 = metroImportDefault;
             var2 = exports;
             var10 = dependencyMap;
-            var8 = function() { // Original name: getChromeVersion, environment: var1
+            var8 = function() {
                 var0 = _closure1_slot0;
                 return var0;
             };
             var _closure1_slot5 = var8;
-            var7 = function() { // Original name: getElectronVersion, environment: var1
+            var7 = function() {
                 var0 = _closure1_slot1;
                 return var0;
             };
             var _closure1_slot6 = var7;
-            var6 = function() { // Original name: getFirefoxVersion, environment: var1
+            var6 = function() {
                 var0 = _closure1_slot2;
                 return var0;
             };
             var _closure1_slot7 = var6;
-            var5 = function() { // Original name: getEdgeVersion, environment: var1
+            var5 = function() {
                 var0 = _closure1_slot3;
                 return var0;
             };
             var _closure1_slot8 = var5;
-            var4 = function() { // Original name: getSafariVersion, environment: var1
+            var4 = function() {
                 var0 = _closure1_slot4;
                 return var0;
             };
             var _closure1_slot9 = var4;
-            var3 = function() { // Original name: isSafari, environment: var1
+            var3 = function() {
                 _fun29036: for (var _fun29036_ip = 0;;) switch (_fun29036_ip) {
                     case 0:
                         var1 = arguments[0];
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getFirefoxVersion = var6;
             var2.getEdgeVersion = var5;
             var2.getSafariVersion = var4;
-            var4 = function() { // Original name: canUseWebp, environment: var1
+            var4 = function() {
                 _fun29037: for (var _fun29037_ip = 0;;) switch (_fun29037_ip) {
                     case 0:
                         var0 = _closure1_slot5;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.canUseWebp = var4;
             var2.isSafari = var3;
-            var3 = function() { // Original name: isFirefox, environment: var1
+            var3 = function() {
                 _fun29038: for (var _fun29038_ip = 0;;) switch (_fun29038_ip) {
                     case 0:
                         var1 = arguments[0];
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.isFirefox = var3;
-            var1 = function() { // Original name: supportsHEVCAlpha, environment: var1
+            var1 = function() {
                 _fun29039: for (var _fun29039_ip = 0;;) switch (_fun29039_ip) {
                     case 0:
                         var0 = global;

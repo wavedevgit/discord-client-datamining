@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var7[var1];
     var1 = var5.bind(var0)(var1);
     var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Original name: HeaderRecord, environment: var4
+    var1 = function arg0() {
         var2 = arg0;
         var1 = this;
         var4 = _closure1_slot0;

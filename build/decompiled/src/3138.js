@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.RiveRendererAndroid = var4;
     var1.RNRiveErrorType = var3;
     var1.PropertyType = var2;
-    var2 = function(arg0) { // Original name: AutoBind, environment: var0
+    var2 = function arg0() {
         var0 = {};
         var1 = 'autobind';
         var0.type = var1;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.AutoBind = var2;
-    var2 = function(arg0) { // Original name: BindByIndex, environment: var0
+    var2 = function arg0() {
         var0 = {};
         var1 = 'index';
         var0.type = var1;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.BindByIndex = var2;
-    var2 = function(arg0) { // Original name: BindByName, environment: var0
+    var2 = function arg0() {
         var0 = {};
         var1 = 'name';
         var0.type = var1;
@@ -200,7 +200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.BindByName = var2;
-    var0 = function() { // Original name: BindEmpty, environment: var0
+    var0 = function() {
         var0 = {};
         var1 = 'empty';
         var0.type = var1;

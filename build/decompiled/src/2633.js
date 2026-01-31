@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0, arg1, arg2) { // Original name: declension, environment: var2
+    var0 = function arg0, arg1, arg2() {
         _fun22041: for (var _fun22041_ip = 0;;) switch (_fun22041_ip) {
             case 0:
                 var0 = arg0;
@@ -227,7 +227,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
-    var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
+    var2 = function arg0, arg1, arg2() {
         _fun22042: for (var _fun22042_ip = 0;;) switch (_fun22042_ip) {
             case 0:
                 var6 = arg1;

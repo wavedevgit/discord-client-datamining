@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AnalyticEvents;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2) { // Original name: init, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun67284: for (var _fun67284_ip = 0;;) switch (_fun67284_ip) {
             case 0:
                 var1 = arg2;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.init = var6;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: openSettings, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot3;
         var0 = var2.getInviteSettings;
         var9 = var0.bind(var2)();
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.openSettings = var6;
-    var6 = function(arg0) { // Original name: updateSettings, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateSettings = var6;
-    var6 = function() { // Original name: resetSettings, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.resetSettings = var6;
-    var6 = function(arg0, arg1) { // Original name: createInvite, environment: var3
+    var6 = function arg0, arg1() {
         _fun67288: for (var _fun67288_ip = 0;;) switch (_fun67288_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.createInvite = var6;
-    var3 = function() { // Original name: close, environment: var3
+    var3 = function() {
         _fun67291: for (var _fun67291_ip = 0;;) switch (_fun67291_ip) {
             case 0:
                 var1 = _closure1_slot3;

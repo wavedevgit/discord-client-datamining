@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function() { // Original name: hasToStringTagShams, environment: var0
+    var1 = function() {
         _fun16390: for (var _fun16390_ip = 0;;) switch (_fun16390_ip) {
             case 0:
                 var2 = _closure1_slot0;

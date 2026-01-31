@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun117852: for (var _fun117852_ip = 0;;) switch (_fun117852_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateUserIdentities, environment: var4
+    var0 = function arg0, arg1() {
         var3 = arg0;
         var6 = arg1;
         var0 = global;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var4
-        var3 = function() { // Original name: UserApplicationIdentityStore, environment: var5
+        var3 = function() {
             _fun117858: for (var _fun117858_ip = 0;;) switch (_fun117858_ip) {
                 case 0:
                     var3 = this;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getUserIdentities';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun117859: for (var _fun117859_ip = 0;;) switch (_fun117859_ip) {
                 case 0:
                     var2 = _closure1_slot6;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserIdentityByApplication';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun117860: for (var _fun117860_ip = 0;;) switch (_fun117860_ip) {
                 case 0:
                     var2 = _closure1_slot6;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchState';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun117861: for (var _fun117861_ip = 0;;) switch (_fun117861_ip) {
                 case 0:
                     var3 = _closure1_slot7;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isFetchingUser';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = this;
             var1 = var2.getFetchState;
             var0 = arg0;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var11 = var6.bind(var0)(var3);
     var3 = {};
-    var8 = function(arg0) { // Original name: handleFetchUserStart, environment: var4
+    var8 = function arg0() {
         var3 = _closure1_slot7;
         var2 = var3.set;
         var1 = arg0;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_APPLICATION_IDENTITY_FETCH_USER_START = var8;
-    var8 = function(arg0) { // Original name: handleFetchUserSuccess, environment: var4
+    var8 = function arg0() {
         var0 = arg0;
         var5 = _closure1_slot7;
         var4 = var5.set;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchUserFailure, environment: var4
+    var8 = function arg0() {
         var3 = _closure1_slot7;
         var2 = var3.set;
         var1 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE = var8;
-    var4 = function(arg0) { // Original name: handleRemoveIdentity, environment: var4
+    var4 = function arg0() {
         _fun117866: for (var _fun117866_ip = 0;;) switch (_fun117866_ip) {
             case 0:
                 var2 = arg0;

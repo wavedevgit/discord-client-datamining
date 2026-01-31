@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.code = var5;
             var _closure1_slot0 = var4;
             var1 = function() { // Environment: var1
-                var0 = function(arg0) { // Original name: isValidRubberBandConfig, environment: var0
+                var0 = function arg0() {
                     _fun33723: for (var _fun33723_ip = 0;;) switch (_fun33723_ip) {
                         case 0:
                             var1 = arg0;

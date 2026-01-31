@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.arrowRightLine = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot7 = var3;
-    var1 = function(arg0) { // Original name: ArrowComponent, environment: var1
+    var1 = function arg0() {
         _fun68400: for (var _fun68400_ip = 0;;) switch (_fun68400_ip) {
             case 0:
                 var1 = arg0;

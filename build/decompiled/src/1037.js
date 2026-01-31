@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var11[var2](var10);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot3 = var2;
-    var2 = function(arg0) { // Original name: onVisibilityUpdate, environment: var0
+    var2 = function arg0() {
         _fun10758: for (var _fun10758_ip = 0;;) switch (_fun10758_ip) {
             case 0:
                 var2 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var0 = function() { // Original name: getVisibilityWatcher, environment: var0
+    var0 = function() {
         _fun10759: for (var _fun10759_ip = 0;;) switch (_fun10759_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var0, var6, var5);
             case 413:
                 var0 = {};
-                var3 = function() { // Original name: get firstHiddenTime, environment: var1
+                var3 = function() {
                     var0 = _closure1_slot2;
                     return var0;
                 };
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     set: var4,
                     enumerable: true
                 });
-                var1 = function(arg0) { // Original name: onHidden, environment: var1
+                var1 = function arg0() {
                     var2 = _closure1_slot3;
                     var1 = var2.add;
                     var0 = arg0;

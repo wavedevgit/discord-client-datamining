@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/hooks/useIsUserProfileObfuscated.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useIsUserProfileObfuscated, environment: var1
+    var1 = function arg0() {
         _fun61863: for (var _fun61863_ip = 0;;) switch (_fun61863_ip) {
             case 0:
                 var1 = arg0;

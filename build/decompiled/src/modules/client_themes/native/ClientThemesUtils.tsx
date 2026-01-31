@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var12;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var13;
-    var0 = function(arg0, arg1, arg2) { // Original name: getMixWithOpacity, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var3 = arg0;
         var0 = arg1;
         var6 = arg2;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var5 = function(arg0, arg1) { // Original name: getClientThemesGradientColorByPercentage, environment: var1
+    var5 = function arg0, arg1() {
         var1 = arg0;
         var2 = _closure1_slot15;
         var3 = undefined;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var5;
-    var4 = function(arg0) { // Original name: getClientThemesGradientHexColors, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var2 = var0.colors;
         var1 = var2.map;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var4;
-    var0 = function(arg0) { // Original name: getGradientAngle, environment: var1
+    var0 = function arg0() {
         _fun27454: for (var _fun27454_ip = 0;;) switch (_fun27454_ip) {
             case 0:
                 var1 = arg0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: getGradientColorByPercentage, environment: var1
+    var0 = function arg0, arg1() {
         _fun27455: for (var _fun27455_ip = 0;;) switch (_fun27455_ip) {
             case 0:
                 var3 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getBottomColorWithOpacity, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun27457: for (var _fun27457_ip = 0;;) switch (_fun27457_ip) {
             case 0:
                 var2 = arg0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getTopColorWithOpacity, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun27458: for (var _fun27458_ip = 0;;) switch (_fun27458_ip) {
             case 0:
                 var2 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: calculateGradientValueWithOpacity, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun27459: for (var _fun27459_ip = 0;;) switch (_fun27459_ip) {
             case 0:
                 var6 = arg0;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var3 = function(arg0, arg1) { // Original name: getGradientValue, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg0;
         var3 = _closure1_slot20;
         var2 = var4.theme;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'END';
     var7[var11] = var6;
     var _closure1_slot11 = var7;
-    var6 = function(arg0) { // Original name: colorToHex, environment: var1
+    var6 = function arg0() {
         var0 = arg0;
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -658,7 +658,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.colorToHex = var6;
     var2.getClientThemesGradientColorByPercentage = var5;
     var2.getClientThemesGradientHexColors = var4;
-    var4 = function(arg0, arg1) { // Original name: getGradientThemeMetadata, environment: var1
+    var4 = function arg0, arg1() {
         _fun27462: for (var _fun27462_ip = 0;;) switch (_fun27462_ip) {
             case 0:
                 var2 = arg0;
@@ -832,7 +832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGradientThemeMetadata = var4;
     var2.getGradientValue = var3;
-    var3 = function(arg0, arg1) { // Original name: useGradientValue, environment: var1
+    var3 = function arg0, arg1() {
         _fun27464: for (var _fun27464_ip = 0;;) switch (_fun27464_ip) {
             case 0:
                 var5 = arg0;
@@ -1013,7 +1013,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGradientValue = var3;
-    var1 = function() { // Original name: getEmbedBackground, environment: var1
+    var1 = function() {
         _fun27466: for (var _fun27466_ip = 0;;) switch (_fun27466_ip) {
             case 0:
                 var2 = _closure1_slot7;

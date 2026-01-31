@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun25154: for (var _fun25154_ip = 0;;) switch (_fun25154_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun25157: for (var _fun25157_ip = 0;;) switch (_fun25157_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun25159: for (var _fun25159_ip = 0;;) switch (_fun25159_ip) {
             case 0:
                 var3 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var7 = function(arg0) { // Original name: handlePaymentSourceUpdate, environment: var3
+    var7 = function arg0() {
         _fun25160: for (var _fun25160_ip = 0;;) switch (_fun25160_ip) {
             case 0:
                 var0 = arg0;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PaymentSourceStore, environment: var5
+        var3 = function() {
             _fun25162: for (var _fun25162_ip = 0;;) switch (_fun25162_ip) {
                 case 0:
                     var3 = this;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'paymentSources';
         var4.key = var0;
-        var0 = function() { // Original name: get, environment: var5
+        var0 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'paymentSourceIds';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.keys;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'defaultPaymentSourceId';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'defaultPaymentSource';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun25166: for (var _fun25166_ip = 0;;) switch (_fun25166_ip) {
                 case 0:
                     var2 = _closure1_slot7;
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hasFetchedPaymentSources';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDefaultBillingCountryCode';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun25168: for (var _fun25168_ip = 0;;) switch (_fun25168_ip) {
                 case 0:
                     var0 = this;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPaymentSource';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var1 = _closure1_slot6;
             var0 = arg0;
             var0 = var1[var0];
@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.BILLING_PAYMENT_SOURCE_CREATE_SUCCESS = var7;
     var1.BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS = var7;
     var1.BILLING_PAYMENT_SOURCE_FETCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handlePaymentSourceFetch, environment: var3
+    var7 = function arg0() {
         _fun25170: for (var _fun25170_ip = 0;;) switch (_fun25170_ip) {
             case 0:
                 var0 = arg0;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_PAYMENT_SOURCES_FETCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handlePaymentSourceRemove, environment: var3
+    var7 = function arg0() {
         _fun25171: for (var _fun25171_ip = 0;;) switch (_fun25171_ip) {
             case 0:
                 var0 = arg0;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS = var7;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot6 = var0;
         var0 = null;

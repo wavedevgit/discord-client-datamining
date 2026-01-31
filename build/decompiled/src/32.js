@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun1194: for (var _fun1194_ip = 0;;) switch (_fun1194_ip) {
         case 0:
             var2 = exports;
-            var11 = function(arg0, arg1, arg2) { // Original name: Component, environment: var1
+            var11 = function arg0, arg1, arg2() {
                 _fun1195: for (var _fun1195_ip = 0;;) switch (_fun1195_ip) {
                     case 0:
                         var1 = arg2;
@@ -26,11 +26,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            var0 = function() { // Original name: ComponentDummy, environment: var1
+            var0 = function() {
                 var0 = undefined;
                 return var0;
             };
-            var8 = function(arg0, arg1, arg2) { // Original name: PureComponent, environment: var1
+            var8 = function arg0, arg1, arg2() {
                 _fun1197: for (var _fun1197_ip = 0;;) switch (_fun1197_ip) {
                     case 0:
                         var1 = arg2;
@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: ReactElement, environment: var1
+            var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
                 _fun1198: for (var _fun1198_ip = 0;;) switch (_fun1198_ip) {
                     case 0:
                         var1 = arg5;
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot16 = var3;
-            var3 = function(arg0) { // Original name: isValidElement, environment: var1
+            var3 = function arg0() {
                 _fun1199: for (var _fun1199_ip = 0;;) switch (_fun1199_ip) {
                     case 0:
                         var1 = arg0;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot17 = var3;
-            var4 = function(arg0, arg1) { // Original name: getElementKey, environment: var1
+            var4 = function arg0, arg1() {
                 _fun1200: for (var _fun1200_ip = 0;;) switch (_fun1200_ip) {
                     case 0:
                         var1 = arg0;
@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 47:
                         var1 = var1.key;
                         var3 = '' + var1;
-                        var2 = function(arg0) { // Original name: escape, environment: var1
+                        var2 = function arg0() {
                             var3 = arg0;
                             var1 = {
                                 '=': '=0',
@@ -167,12 +167,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot18 = var4;
-            var4 = function() { // Original name: noop$1, environment: var1
+            var4 = function() {
                 var0 = undefined;
                 return var0;
             };
             var _closure1_slot19 = var4;
-            var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: mapIntoArray, environment: var1
+            var4 = function arg0, arg1, arg2, arg3, arg4() {
                 _fun1204: for (var _fun1204_ip = 0;;) switch (_fun1204_ip) {
                     case 0:
                         var11 = arg0;
@@ -383,7 +383,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         throw var7;
                     case 425:
                         var10 = _closure1_slot20;
-                        var7 = function(arg0) { // Original name: resolveThenable, environment: var0
+                        var7 = function arg0() {
                             _fun1206: for (var _fun1206_ip = 0;;) switch (_fun1206_ip) {
                                 case 0:
                                     var0 = arg0;
@@ -682,7 +682,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot20 = var4;
-            var13 = function(arg0, arg1, arg2) { // Original name: mapChildren, environment: var1
+            var13 = function arg0, arg1, arg2() {
                 _fun1209: for (var _fun1209_ip = 0;;) switch (_fun1209_ip) {
                     case 0:
                         var0 = arg0;
@@ -725,7 +725,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot21 = var13;
-            var4 = function(arg0) { // Original name: lazyInitializer, environment: var1
+            var4 = function arg0() {
                 _fun1211: for (var _fun1211_ip = 0;;) switch (_fun1211_ip) {
                     case 0:
                         var0 = arg0;
@@ -832,7 +832,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot22 = var4;
-            var4 = function() { // Original name: noop, environment: var1
+            var4 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -893,22 +893,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4.iterator;
             var _closure1_slot7 = var4;
             var4 = {};
-            var5 = function() { // Original name: isMounted, environment: var1
+            var5 = function() {
                 var0 = false;
                 return var0;
             };
             var4.isMounted = var5;
-            var5 = function() { // Original name: enqueueForceUpdate, environment: var1
+            var5 = function() {
                 var0 = undefined;
                 return var0;
             };
             var4.enqueueForceUpdate = var5;
-            var5 = function() { // Original name: enqueueReplaceState, environment: var1
+            var5 = function() {
                 var0 = undefined;
                 return var0;
             };
             var4.enqueueReplaceState = var5;
-            var5 = function() { // Original name: enqueueSetState, environment: var1
+            var5 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -1144,7 +1144,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot15 = var12;
             var12 = {};
             var12.map = var13;
-            var13 = function(arg0, arg1, arg2) { // Original name: forEach, environment: var1
+            var13 = function arg0, arg1, arg2() {
                 var0 = arg1;
                 var _closure2_slot0 = var0;
                 var4 = _closure1_slot21;
@@ -1166,7 +1166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.forEach = var13;
-            var13 = function(arg0) { // Original name: count, environment: var1
+            var13 = function arg0() {
                 var1 = 0;
                 var _closure2_slot0 = var1;
                 var4 = _closure1_slot21;
@@ -1184,7 +1184,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var12.count = var13;
-            var13 = function(arg0) { // Original name: toArray, environment: var1
+            var13 = function arg0() {
                 _fun1226: for (var _fun1226_ip = 0;;) switch (_fun1226_ip) {
                     case 0:
                         var3 = _closure1_slot21;
@@ -1206,7 +1206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var12.toArray = var13;
-            var13 = function(arg0) { // Original name: only, environment: var1
+            var13 = function arg0() {
                 _fun1228: for (var _fun1228_ip = 0;;) switch (_fun1228_ip) {
                     case 0:
                         var0 = arg0;
@@ -1237,7 +1237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.Suspense = var6;
             var2.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = var5;
             var4 = Object.create(var4);
-            var5 = function(arg0) { // Original name: c, environment: var1
+            var5 = function arg0() {
                 var0 = _closure1_slot12;
                 var2 = var0.H;
                 var1 = var2.useMemoCache;

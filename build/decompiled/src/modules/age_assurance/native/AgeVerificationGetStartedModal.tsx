@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: getInitialRouteName, environment: var1
+    var0 = function arg0, arg1() {
         _fun52082: for (var _fun52082_ip = 0;;) switch (_fun52082_ip) {
             case 0:
                 var1 = _closure1_slot7;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_assurance/native/AgeVerificationGetStartedModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AgeVerificationGetStartedModal, environment: var1
+    var1 = function arg0() {
         _fun52083: for (var _fun52083_ip = 0;;) switch (_fun52083_ip) {
             case 0:
                 var1 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = _closure2_slot0;
                     var9 = _closure2_slot3;
                     var8 = _closure2_slot4;
-                    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: getScreens, environment: var0
+                    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
                         var9 = arg0;
                         var0 = arg1;
                         var _closure4_slot0 = var0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var _closure4_slot3 = var0;
                         var0 = arg5;
                         var _closure4_slot4 = var0;
-                        var6 = function() { // Original name: closeModal, environment: var3
+                        var6 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
                             var0 = 5;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var _closure4_slot5 = var6;
-                        var0 = function() { // Original name: closeModalWithOnComplete, environment: var3
+                        var0 = function() {
                             _fun52088: for (var _fun52088_ip = 0;;) switch (_fun52088_ip) {
                                 case 0:
                                     var2 = _closure4_slot5;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var4 = var9.headerStyle;
                         var2.headerStyle = var4;
-                        var4 = function() { // Original name: headerTitle, environment: var3
+                        var4 = function() {
                             var0 = null;
                             return var0;
                         };
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var11 = var12.bind(var13)(var11);
                         var2.headerLeft = var11;
-                        var11 = function() { // Original name: render, environment: var3
+                        var11 = function() {
                             var3 = _closure1_slot5;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var11 = var9.headerStyle;
                         var2.headerStyle = var11;
-                        var11 = function() { // Original name: headerTitle, environment: var3
+                        var11 = function() {
                             var0 = null;
                             return var0;
                         };
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var12.getHeaderCloseButton;
                         var11 = var11.bind(var12)(var6);
                         var2.headerLeft = var11;
-                        var11 = function() { // Original name: render, environment: var3
+                        var11 = function() {
                             var3 = _closure1_slot5;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = {};
                         var9 = var9.headerStyle;
                         var1.headerStyle = var9;
-                        var9 = function() { // Original name: headerTitle, environment: var3
+                        var9 = function() {
                             var0 = null;
                             return var0;
                         };
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.getHeaderCloseButton;
                         var4 = var4.bind(var5)(var6);
                         var1.headerLeft = var4;
-                        var3 = function() { // Original name: render, environment: var3
+                        var3 = function() {
                             var3 = _closure1_slot5;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;

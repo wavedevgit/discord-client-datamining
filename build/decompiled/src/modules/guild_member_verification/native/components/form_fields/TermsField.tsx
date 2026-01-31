@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/form_fields/TermsField.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TermsField, environment: var1
+    var1 = function arg0() {
         _fun60356: for (var _fun60356_ip = 0;;) switch (_fun60356_ip) {
             case 0:
                 var1 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.children = var15;
                 var13 = var7.bind(var3)(var14, var13);
                 var5.label = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure2_slot0;
                     var0 = _closure2_slot1;
                     var1 = !var0;

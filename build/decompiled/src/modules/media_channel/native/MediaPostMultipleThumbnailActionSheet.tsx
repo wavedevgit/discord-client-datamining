@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/media_channel/native/MediaPostMultipleThumbnailActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MediaPostThumbnailActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.markAsDismissed;
         var _closure2_slot0 = var0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = 0.8;
         var0.backdropOpacity = var4;
-        var4 = function() { // Original name: onDismiss, environment: var12
+        var4 = function() {
             var2 = _closure2_slot0;
             var0 = _closure1_slot4;
             var1 = var0.UNKNOWN;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10.text = var14;
         var13 = var13.button;
         var10.style = var13;
-        var12 = function() { // Original name: onPress, environment: var12
+        var12 = function() {
             var2 = _closure2_slot0;
             var0 = _closure1_slot4;
             var1 = var0.UNKNOWN;

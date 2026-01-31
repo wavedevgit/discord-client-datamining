@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var1 = function() { // Original name: AccountSwitchingSpinnerModal, environment: var6
+    var1 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var4 = var0.bind(var3)();

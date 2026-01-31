@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot7 = var3;
-    var3 = function(arg0) { // Original name: getPartialState, environment: var1
+    var3 = function arg0() {
         _fun17047: for (var _fun17047_ip = 0;;) switch (_fun17047_ip) {
             case 0:
                 var0 = arg0;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot8 = var3;
     var3 = var4.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: BaseNavigationContainer, environment: var1
+    var1 = function arg0, arg1() {
         _fun17049: for (var _fun17049_ip = 0;;) switch (_fun17049_ip) {
             case 0:
                 var1 = arg0;
@@ -558,19 +558,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.dispatch = var7;
                     var7 = _closure2_slot17;
                     var1.resetRoot = var7;
-                    var7 = function() { // Original name: isFocused, environment: var0
+                    var7 = function() {
                         var0 = true;
                         return var0;
                     };
                     var1.isFocused = var7;
                     var7 = _closure2_slot16;
                     var1.canGoBack = var7;
-                    var7 = function() { // Original name: getParent, environment: var0
+                    var7 = function() {
                         var0 = undefined;
                         return var0;
                     };
                     var1.getParent = var7;
-                    var7 = function() { // Original name: getState, environment: var0
+                    var7 = function() {
                         var0 = _closure2_slot31;
                         var0 = var0.current;
                         return var0;
@@ -582,7 +582,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.getCurrentRoute = var7;
                     var6 = _closure2_slot22;
                     var1.getCurrentOptions = var6;
-                    var0 = function() { // Original name: isReady, environment: var0
+                    var0 = function() {
                         var0 = _closure2_slot11;
                         var1 = var0.focus;
                         var0 = 0;

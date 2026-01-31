@@ -25,17 +25,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'utils/GlobalUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: isDiscordFrontendDevelopment, environment: var1
+    var3 = function() {
         var0 = false;
         return var0;
     };
     var2.isDiscordFrontendDevelopment = var3;
-    var3 = function() { // Original name: isDiscordBackendDevelopment, environment: var1
+    var3 = function() {
         var0 = _closure1_slot0;
         return var0;
     };
     var2.isDiscordBackendDevelopment = var3;
-    var3 = function(arg0) { // Original name: assertNever, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var2 = var0.Error;
         var0 = var0.HermesInternal;
@@ -55,14 +55,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var2.assertNever = var3;
-    var3 = function(arg0) { // Original name: isNotNullish, environment: var1
+    var3 = function arg0() {
         var1 = null;
         var0 = arg0;
         var0 = var1 != var0;
         return var0;
     };
     var2.isNotNullish = var3;
-    var3 = function(arg0, arg1) { // Original name: isIn, environment: var1
+    var3 = function arg0, arg1() {
         var2 = arg1;
         var1 = var2.includes;
         var0 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isIn = var3;
-    var1 = function(arg0) { // Original name: isObjectEntryNotNullish, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var0 = 1;
         var1 = var1[var0];

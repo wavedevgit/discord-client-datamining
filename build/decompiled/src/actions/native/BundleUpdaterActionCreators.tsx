@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = false;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: prepareUpdate, environment: var3
+    var6 = function arg0() {
         _fun117937: for (var _fun117937_ip = 0;;) switch (_fun117937_ip) {
             case 0:
                 var0 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4["1SzcG6"];
                 var4 = var5.bind(var6)(var4);
                 var0.cancelText = var4;
-                var4 = function() { // Original name: onConfirm, environment: var4
+                var4 = function() {
                     var0 = _closure1_slot3;
                     var1 = var0.BundleUpdaterManager;
                     var0 = var1.reload;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.prepareUpdate = var6;
-    var3 = function() { // Original name: deferUpdate, environment: var3
+    var3 = function() {
         _fun117939: for (var _fun117939_ip = 0;;) switch (_fun117939_ip) {
             case 0:
                 var1 = _closure1_slot4;

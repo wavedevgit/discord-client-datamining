@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/auth/native/components/utils/usePasswordScore.tsx';
     var4 = var5.bind(var6)(var4);
     var2.PasswordScore = var3;
-    var1 = function(arg0) { // Original name: usePasswordScore, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var5 = _closure1_slot4;

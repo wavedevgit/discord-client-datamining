@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun12921: for (var _fun12921_ip = 0;;) switch (_fun12921_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot10 = var3;
             var5 = var4.Component;
             var4 = function(arg0) { // Environment: var1
-                var3 = function() { // Original name: RNSentryOnDrawReporterNoop, environment: var0
+                var3 = function() {
                     _fun12925: for (var _fun12925_ip = 0;;) switch (_fun12925_ip) {
                         case 0:
                             var3 = this;
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = {};
                 var5 = 'render';
                 var4.key = var5;
-                var0 = function() { // Original name: render, environment: var0
+                var0 = function() {
                     var3 = _closure1_slot7;
                     var2 = var3.createElement;
                     var1 = _closure1_slot8;
@@ -174,7 +174,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4.bind(var0)(var5);
             var _closure1_slot11 = var4;
             var2.nativeComponentExists = var3;
-            var1 = function() { // Original name: getRNSentryOnDrawReporter, environment: var1
+            var1 = function() {
                 _fun12927: for (var _fun12927_ip = 0;;) switch (_fun12927_ip) {
                     case 0:
                         var1 = _closure1_slot9;

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var6 = var4.bind(var0)(var3);
     var3 = var6.createNavigatorFactory;
-    var1 = function(arg0) { // Original name: ChatPanelNativeStackNavigator, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var14 = var3.id;
         var13 = var3.initialRouteName;

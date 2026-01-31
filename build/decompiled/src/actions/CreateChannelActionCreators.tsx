@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ChannelNotificationSettingsFlags;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: createChannel, environment: var3
+    var6 = function arg0() {
         _fun65507: for (var _fun65507_ip = 0;;) switch (_fun65507_ip) {
             case 0:
                 var1 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.NetworkActionNames;
                 var5 = var5.CHANNEL_CREATE;
                 var4.event = var5;
-                var5 = function(arg0) { // Original name: properties, environment: var0
+                var5 = function arg0() {
                     _fun65508: for (var _fun65508_ip = 0;;) switch (_fun65508_ip) {
                         case 0:
                             var4 = arg0;
@@ -302,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.createChannel = var6;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: createRoleSubscriptionTemplateChannel, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         var1 = _closure1_slot1;
         var7 = _closure1_slot2;
         var0 = 4;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.NetworkActionNames;
         var4 = var4.CHANNEL_CREATE;
         var3.event = var4;
-        var4 = function(arg0) { // Original name: properties, environment: var4
+        var4 = function arg0() {
             _fun65512: for (var _fun65512_ip = 0;;) switch (_fun65512_ip) {
                 case 0:
                     var4 = arg0;

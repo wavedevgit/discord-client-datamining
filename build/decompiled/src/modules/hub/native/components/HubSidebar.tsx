@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.row = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: HubItem, environment: var1
+    var3 = function arg0() {
         _fun102163: for (var _fun102163_ip = 0;;) switch (_fun102163_ip) {
             case 0:
                 var0 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/hub/native/components/HubSidebar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun102164: for (var _fun102164_ip = 0;;) switch (_fun102164_ip) {
             case 0:
                 var0 = arg0;
@@ -291,7 +291,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.K50GHd;
                 var12 = var15.bind(var16)(var12);
                 var6.label = var12;
-                var12 = function() { // Original name: handleItemClick, environment: var9
+                var12 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 16;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.emRpdS;
                 var11 = var12.bind(var15)(var11);
                 var6.label = var11;
-                var11 = function() { // Original name: handleItemClick, environment: var9
+                var11 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 18;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.MJQOuJ;
                 var10 = var11.bind(var12)(var10);
                 var6.label = var10;
-                var9 = function() { // Original name: handleItemClick, environment: var9
+                var9 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 20;

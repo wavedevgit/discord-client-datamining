@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var4;
     var3 = var3.useState;
     var _closure1_slot4 = var3;
-    var1 = function() { // Original name: useWindowDimensions, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var4 = undefined;
         var0 = function() { // Environment: var1
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = new Array(1);
         var2[0] = var0;
         var1 = function() { // Environment: var1
-            var3 = function(arg0) { // Original name: handleChange, environment: var0
+            var3 = function arg0() {
                 _fun4919: for (var _fun4919_ip = 0;;) switch (_fun4919_ip) {
                     case 0:
                         var0 = arg0;

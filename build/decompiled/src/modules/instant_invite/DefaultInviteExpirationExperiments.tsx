@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var8;
-    var3 = function(arg0) { // Original name: getDefaultInviteExpiration, environment: var1
+    var3 = function arg0() {
         _fun67261: for (var _fun67261_ip = 0;;) switch (_fun67261_ip) {
             case 0:
                 var0 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_MAX_AGE = var5;
     var2.DefaultInviteExpirationGuildExperiment = var4;
     var2.getDefaultInviteExpiration = var3;
-    var3 = function(arg0) { // Original name: useDefaultInviteExpiration, environment: var1
+    var3 = function arg0() {
         _fun67262: for (var _fun67262_ip = 0;;) switch (_fun67262_ip) {
             case 0:
                 var0 = arg0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useDefaultInviteExpiration = var3;
-    var1 = function(arg0) { // Original name: useMaxAgeOptions, environment: var1
+    var1 = function arg0() {
         _fun67264: for (var _fun67264_ip = 0;;) switch (_fun67264_ip) {
             case 0:
                 var0 = arg0;

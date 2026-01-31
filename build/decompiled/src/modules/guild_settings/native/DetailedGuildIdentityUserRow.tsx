@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var7)(var1);
     var _closure1_slot8 = var1;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: DetailedGuildIdentityUserRow, environment: var3
+    var3 = function arg0() {
         _fun72803: for (var _fun72803_ip = 0;;) switch (_fun72803_ip) {
             case 0:
                 var2 = arg0;

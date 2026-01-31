@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0) { // Original name: isNativeFunction, environment: var0
+    var2 = function arg0() {
         _fun2650: for (var _fun2650_ip = 0;;) switch (_fun2650_ip) {
             case 0:
                 var2 = arg0;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.isNativeFunction = var2;
-    var0 = function(arg0, arg1) { // Original name: hasNativeConstructor, environment: var0
+    var0 = function arg0, arg1() {
         _fun2651: for (var _fun2651_ip = 0;;) switch (_fun2651_ip) {
             case 0:
                 var0 = global;

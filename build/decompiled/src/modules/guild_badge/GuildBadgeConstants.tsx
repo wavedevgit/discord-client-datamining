@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_badge/GuildBadgeConstants.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: getBadgeTooltip, environment: var1
+    var1 = function arg0, arg1() {
         _fun59675: for (var _fun59675_ip = 0;;) switch (_fun59675_ip) {
             case 0:
                 var3 = arg0;

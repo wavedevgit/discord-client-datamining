@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/home/recommendations/RecommendationsBannerCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: RecommendationsBannerCard, environment: var1
+    var1 = function arg0() {
         _fun107677: for (var _fun107677_ip = 0;;) switch (_fun107677_ip) {
             case 0:
                 var1 = arg0;

@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/channel/useSafeAreaBottomKeyboardInfoController.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useSafeAreaBottomKeyboardInfoController, environment: var1
+    var1 = function() {
         _fun88984: for (var _fun88984_ip = 0;;) switch (_fun88984_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var15.bind(var12)(var3);
                 var6 = var7.useKeyboardHandler;
                 var4 = {};
-                var3 = function(arg0) { // Original name: u, environment: var0
+                var3 = function arg0() {
                     _fun88991: for (var _fun88991_ip = 0;;) switch (_fun88991_ip) {
                         case 0:
                             var1 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot5;
                 var3.__initData = var9;
                 var4.onStart = var3;
-                var3 = function(arg0) { // Original name: b, environment: var0
+                var3 = function arg0() {
                     var1 = arg0;
                     var4 = _closure1_slot0;
                     var6 = _closure1_slot2;

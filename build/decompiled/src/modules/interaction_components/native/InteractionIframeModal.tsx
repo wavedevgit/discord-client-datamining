@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/interaction_components/native/InteractionIframeModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InteractionIframeModal, environment: var1
+    var1 = function arg0() {
         _fun113483: for (var _fun113483_ip = 0;;) switch (_fun113483_ip) {
             case 0:
                 var4 = arg0;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
-                var15 = function() { // Original name: onActivityCrash, environment: var6
+                var15 = function() {
                     var2 = _closure2_slot1;
                     var0 = undefined;
                     var1 = true;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11.instance_id;
                 var0.activitySessionId = var13;
                 var0.queryParams = var11;
-                var6 = function() { // Original name: onLoadError, environment: var6
+                var6 = function() {
                     var2 = _closure1_slot1;
                     var8 = _closure1_slot2;
                     var0 = 13;

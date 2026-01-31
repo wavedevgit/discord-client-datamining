@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/share/native/ShareAttachments.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ShareAttachments, environment: var1
+    var1 = function arg0() {
         _fun96416: for (var _fun96416_ip = 0;;) switch (_fun96416_ip) {
             case 0:
                 var0 = arg0;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3[var15];
                 var12 = var5.bind(var4)(var6);
                 var7 = var12.useAnimatedStyle;
-                var6 = function() { // Original name: y, environment: var9
+                var6 = function() {
                     _fun96417: for (var _fun96417_ip = 0;;) switch (_fun96417_ip) {
                         case 0:
                             var0 = {};
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3[var15];
                 var12 = var5.bind(var4)(var6);
                 var7 = var12.useAnimatedStyle;
-                var6 = function() { // Original name: S, environment: var9
+                var6 = function() {
                     _fun96418: for (var _fun96418_ip = 0;;) switch (_fun96418_ip) {
                         case 0:
                             var0 = {};
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3[var15];
                 var6 = var5.bind(var4)(var3);
                 var5 = var6.useAnimatedScrollHandler;
-                var3 = function(arg0) { // Original name: v, environment: var9
+                var3 = function arg0() {
                     var0 = arg0;
                     var4 = _closure2_slot1;
                     var3 = var4.set;

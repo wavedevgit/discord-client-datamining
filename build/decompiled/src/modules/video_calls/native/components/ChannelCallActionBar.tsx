@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var16;
-    var6 = function(arg0) { // Original name: useActionBarSecondButtons, environment: var13
+    var6 = function arg0() {
         _fun67845: for (var _fun67845_ip = 0;;) switch (_fun67845_ip) {
             case 0:
                 var0 = arg0;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var6;
-    var5 = function(arg0) { // Original name: useActionBarSecondButton, environment: var13
+    var5 = function arg0() {
         _fun67846: for (var _fun67846_ip = 0;;) switch (_fun67846_ip) {
             case 0:
                 var0 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var5;
-    var3 = function(arg0) { // Original name: useActionBarPrimaryButtons, environment: var13
+    var3 = function arg0() {
         _fun67847: for (var _fun67847_ip = 0;;) switch (_fun67847_ip) {
             case 0:
                 var1 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var3;
-    var1 = function(arg0) { // Original name: useActionBarPrimaryButton, environment: var13
+    var1 = function arg0() {
         _fun67852: for (var _fun67852_ip = 0;;) switch (_fun67852_ip) {
             case 0:
                 var0 = arg0;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.activityButtonContainer = var9;
     var4 = var7.bind(var8)(var4);
     var _closure1_slot17 = var4;
-    var12 = function(arg0) { // Original name: VideoButton, environment: var13
+    var12 = function arg0() {
         _fun67853: for (var _fun67853_ip = 0;;) switch (_fun67853_ip) {
             case 0:
                 var1 = arg0;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var12;
-    var11 = function(arg0) { // Original name: ScreenshareButton, environment: var13
+    var11 = function arg0() {
         _fun67860: for (var _fun67860_ip = 0;;) switch (_fun67860_ip) {
             case 0:
                 var0 = arg0;
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var11;
-    var10 = function(arg0) { // Original name: AudioRouteButton, environment: var13
+    var10 = function arg0() {
         var0 = arg0;
         var10 = var0.channel;
         var _closure2_slot0 = var10;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.isActive = var7;
         var0.source = var6;
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             var3 = _closure2_slot1;
             var1 = _closure2_slot0;
             var2 = var1.id;
@@ -862,7 +862,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var10;
-    var9 = function(arg0) { // Original name: DisconnectCallButton, environment: var13
+    var9 = function arg0() {
         var0 = arg0;
         var1 = var0.channel;
         var _closure2_slot0 = var1;
@@ -894,7 +894,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.bind(var8)(var6);
         var0.accessibilityLabel = var6;
         var0.isSmallSize = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot3;
             var0 = 18;
@@ -911,7 +911,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var9;
-    var8 = function(arg0) { // Original name: DisconnectStreamButton, environment: var13
+    var8 = function arg0() {
         _fun67866: for (var _fun67866_ip = 0;;) switch (_fun67866_ip) {
             case 0:
                 var0 = arg0;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var9)(var7);
                 var1.accessibilityLabel = var7;
                 var1.isSmallSize = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var3 = _closure1_slot1;
                     var6 = _closure1_slot3;
                     var0 = 27;
@@ -1072,7 +1072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var8;
-    var4 = function(arg0) { // Original name: LeaveActivityButton, environment: var13
+    var4 = function arg0() {
         var0 = arg0;
         var4 = var0.isSmallSize;
         var3 = _closure1_slot14;
@@ -1096,7 +1096,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.k0Aph0;
         var6 = var8.bind(var9)(var6);
         var0.accessibilityLabel = var6;
-        var6 = function() { // Original name: onPress, environment: var6
+        var6 = function() {
             _fun67871: for (var _fun67871_ip = 0;;) switch (_fun67871_ip) {
                 case 0:
                     var2 = _closure1_slot6;
@@ -1180,7 +1180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.fileFinishedImporting;
     var14 = 'modules/video_calls/native/components/ChannelCallActionBar.tsx';
     var14 = var15.bind(var16)(var14);
-    var13 = function(arg0) { // Original name: _default, environment: var13
+    var13 = function arg0() {
         _fun67872: for (var _fun67872_ip = 0;;) switch (_fun67872_ip) {
             case 0:
                 var0 = arg0;

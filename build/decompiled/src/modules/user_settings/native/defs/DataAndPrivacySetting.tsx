@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createRoute;
     var1 = {};
-    var8 = function() { // Original name: title, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var9 = var9.DATA_AND_PRIVACY;
     var8.route = var9;
-    var9 = function() { // Original name: getComponent, environment: var7
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 7;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var8.getComponent = var9;
     var1.screen = var8;
-    var7 = function() { // Original name: usePreNavigationAction, environment: var7
+    var7 = function() {
         var3 = _closure1_slot2;
         var2 = var3.useCallback;
         var1 = function() { // Environment: var0

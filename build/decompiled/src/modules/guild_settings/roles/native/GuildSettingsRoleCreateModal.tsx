@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: logTransitionEvent, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot1;
         var7 = _closure1_slot3;
         var0 = 14;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: useGuildSettingsStoreGuild, environment: var1
+    var0 = function() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot3;
         var0 = 19;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: useGuildSettingsStoreGuildWithRole, environment: var1
+    var0 = function() {
         var9 = _closure1_slot0;
         var6 = _closure1_slot3;
         var8 = 19;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: shouldSkipPermissions, environment: var1
+    var0 = function() {
         _fun115693: for (var _fun115693_ip = 0;;) switch (_fun115693_ip) {
             case 0:
                 var1 = _closure1_slot12;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function() { // Original name: RoleCreateScene, environment: var1
+    var0 = function() {
         _fun115694: for (var _fun115694_ip = 0;;) switch (_fun115694_ip) {
             case 0:
                 var1 = _closure1_slot24;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var5 = var6.bind(var7)(var5);
                     var1.headerLeft = var5;
-                    var4 = function() { // Original name: headerTitle, environment: var4
+                    var4 = function() {
                         var3 = _closure1_slot21;
                         var2 = _closure1_slot27;
                         var1 = {};
@@ -759,7 +759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: RolePermissionTemplate, environment: var1
+    var0 = function() {
         var1 = _closure1_slot24;
         var3 = undefined;
         var9 = var1.bind(var3)();
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var5 = var6.bind(var7)(var5);
             var1.headerLeft = var5;
-            var4 = function() { // Original name: headerTitle, environment: var4
+            var4 = function() {
                 var3 = _closure1_slot21;
                 var2 = _closure1_slot27;
                 var1 = {};
@@ -955,7 +955,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: RoleMembers, environment: var1
+    var0 = function() {
         _fun115709: for (var _fun115709_ip = 0;;) switch (_fun115709_ip) {
             case 0:
                 var1 = _closure1_slot24;
@@ -1014,7 +1014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var4 = var5.bind(var6)(var4);
                     var0.headerLeft = var4;
-                    var3 = function() { // Original name: headerTitle, environment: var3
+                    var3 = function() {
                         var3 = _closure1_slot21;
                         var2 = _closure1_slot27;
                         var1 = {};
@@ -1258,7 +1258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: ModalScene, environment: var1
+    var0 = function arg0() {
         _fun115716: for (var _fun115716_ip = 0;;) switch (_fun115716_ip) {
             case 0:
                 var1 = arg0;
@@ -1806,7 +1806,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var9)(var3);
     var _closure1_slot27 = var3;
-    var3 = function(arg0, arg1) { // Original name: closeModal, environment: var1
+    var3 = function arg0, arg1() {
         var6 = _closure1_slot30;
         var0 = _closure1_slot26;
         var9 = var0.FLOW_DISMISSED;
@@ -1830,7 +1830,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var6.STEP_DISPLAY;
     var7 = {};
     var7.fullscreen = var8;
-    var10 = function() { // Original name: render, environment: var1
+    var10 = function() {
         var3 = _closure1_slot21;
         var2 = _closure1_slot34;
         var1 = undefined;
@@ -1843,7 +1843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var6.STEP_PERMISSIONS;
     var7 = {};
     var7.fullscreen = var8;
-    var10 = function() { // Original name: render, environment: var1
+    var10 = function() {
         var3 = _closure1_slot21;
         var2 = _closure1_slot35;
         var1 = undefined;
@@ -1856,7 +1856,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var6.STEP_MEMBERS;
     var6 = {};
     var6.fullscreen = var8;
-    var8 = function() { // Original name: render, environment: var1
+    var8 = function() {
         var3 = _closure1_slot21;
         var2 = _closure1_slot36;
         var1 = undefined;
@@ -1873,7 +1873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/roles/native/GuildSettingsRoleCreateModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: GuildSettingsRoleCreateModal, environment: var1
+    var1 = function() {
         var1 = _closure1_slot31;
         var3 = undefined;
         var1 = var1.bind(var3)();

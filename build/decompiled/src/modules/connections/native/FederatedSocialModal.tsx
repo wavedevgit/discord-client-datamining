@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/connections/native/FederatedSocialModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: FederatedSocialModal, environment: var1
+    var1 = function arg0() {
         _fun51525: for (var _fun51525_ip = 0;;) switch (_fun51525_ip) {
             case 0:
                 var7 = arg0;
@@ -135,9 +135,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.onClose;
                 var7 = var8.bind(var9)(var7);
                 var2.headerLeft = var7;
-                var6 = function() { // Original name: render, environment: var6
+                var6 = function() {
                     var2 = _closure2_slot0;
-                    var1 = function(arg0) { // Original name: FederatedSocialModalScreen, environment: var0
+                    var1 = function arg0() {
                         _fun51527: for (var _fun51527_ip = 0;;) switch (_fun51527_ip) {
                             case 0:
                                 var1 = arg0;

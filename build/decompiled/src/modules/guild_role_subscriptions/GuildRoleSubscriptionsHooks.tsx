@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var4;
     var _closure1_slot3 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun83927: for (var _fun83927_ip = 0;;) switch (_fun83927_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun83929: for (var _fun83929_ip = 0;;) switch (_fun83929_ip) {
             case 0:
                 var3 = arg0;
@@ -285,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var3 = new Array(0);
     var _closure1_slot10 = var3;
-    var5 = function(arg0) { // Original name: useFetchListingsForGuild, environment: var1
+    var5 = function arg0() {
         _fun83930: for (var _fun83930_ip = 0;;) switch (_fun83930_ip) {
             case 0:
                 var13 = arg0;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0) { // Original name: useSubscriptionListingsForGroup, environment: var1
+    var4 = function arg0() {
         _fun83934: for (var _fun83934_ip = 0;;) switch (_fun83934_ip) {
             case 0:
                 var7 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0) { // Original name: useSubscriptionListingsForGuild, environment: var1
+    var3 = function arg0() {
         _fun83936: for (var _fun83936_ip = 0;;) switch (_fun83936_ip) {
             case 0:
                 var3 = arg0;
@@ -1551,7 +1551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.error = var4;
         var0.submitting = var3;
         var0.publishSubscriptionListing = var2;
-        var1 = function() { // Original name: clearError, environment: var1
+        var1 = function() {
             var2 = _closure2_slot1;
             var1 = undefined;
             var0 = null;

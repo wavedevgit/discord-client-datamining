@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: getScreenshakeLocationName, environment: var1
+    var0 = function arg0() {
         _fun54576: for (var _fun54576_ip = 0;;) switch (_fun54576_ip) {
             case 0:
                 var1 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getConfettiLocationName, environment: var1
+    var0 = function arg0() {
         _fun54577: for (var _fun54577_ip = 0;;) switch (_fun54577_ip) {
             case 0:
                 var1 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: getListOfEnabledLocations, environment: var1
+    var0 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = global;

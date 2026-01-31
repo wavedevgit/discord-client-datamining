@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/integration_settings/native/IntegrationsSettingsEditLinkedLobby.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: EditLinkedLobby, environment: var1
+    var1 = function arg0() {
         _fun109286: for (var _fun109286_ip = 0;;) switch (_fun109286_ip) {
             case 0:
                 var2 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = _closure2_slot5;
                             var7 = var7.username;
                             var2.username = var7;
-                            var7 = function(arg0, arg1) { // Original name: usernameHook, environment: var7
+                            var7 = function arg0, arg1() {
                                 var4 = _closure1_slot6;
                                 var1 = _closure1_slot0;
                                 var2 = _closure1_slot2;

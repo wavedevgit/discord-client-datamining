@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113964: for (var _fun113964_ip = 0;;) switch (_fun113964_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0, arg1) { // Original name: haveNotSeenPromptSince, environment: var1
+    var0 = function arg0, arg1() {
         _fun113967: for (var _fun113967_ip = 0;;) switch (_fun113967_ip) {
             case 0:
                 var4 = arg0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: shouldShowPrompt, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot27;
         var2 = var3.apply;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: _shouldShowPrompt, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: shouldShowReactivationPrompt, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot29;
         var2 = var3.apply;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: _shouldShowReactivationPrompt, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: showPrompt, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun113976: for (var _fun113976_ip = 0;;) switch (_fun113976_ip) {
             case 0:
                 var0 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _logNotificationPermissionStatus, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot32;
         var2 = var3.apply;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: _logNotificationPermissionStatus2, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: NotificationPermissionManager, environment: var0
+        var3 = function arg0() {
             _fun113983: for (var _fun113983_ip = 0;;) switch (_fun113983_ip) {
                 case 0:
                     var5 = this;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = null;
                     var0.previousAppState = var4;
                     var4 = {};
-                    var5 = function(arg0) { // Original name: MESSAGE_CREATE, environment: var1
+                    var5 = function arg0() {
                         var2 = arg0;
                         var1 = _closure3_slot0;
                         var0 = var1.handleMessageCreate;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var4.MESSAGE_CREATE = var5;
-                    var5 = function(arg0) { // Original name: INVITE_ACCEPT_SUCCESS, environment: var1
+                    var5 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleInviteAccept;
                         var0 = arg0;
@@ -569,7 +569,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var4.INVITE_ACCEPT_SUCCESS = var5;
-                    var5 = function(arg0) { // Original name: RELATIONSHIP_ADD, environment: var1
+                    var5 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleSendFriendRequest;
                         var0 = arg0;
@@ -578,7 +578,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var4.RELATIONSHIP_ADD = var5;
-                    var5 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var5 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleConnectionOpen;
                         var0 = var0.bind(var1)();
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var4.POST_CONNECTION_OPEN = var5;
-                    var5 = function(arg0) { // Original name: APP_STATE_UPDATE, environment: var1
+                    var5 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleAppStateUpdate;
                         var0 = arg0;
@@ -1215,7 +1215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'handleMessageCreateForNudge';
         var4.key = var5;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             _fun114009: for (var _fun114009_ip = 0;;) switch (_fun114009_ip) {
                 case 0:
                     var1 = arg0;

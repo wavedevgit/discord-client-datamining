@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var7
+    var0 = function() {
         _fun95787: for (var _fun95787_ip = 0;;) switch (_fun95787_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var7
+    var0 = function arg0, arg1() {
         _fun95790: for (var _fun95790_ip = 0;;) switch (_fun95790_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var7
+    var0 = function arg0, arg1() {
         _fun95792: for (var _fun95792_ip = 0;;) switch (_fun95792_ip) {
             case 0:
                 var3 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var3 = function() { // Original name: reset, environment: var7
+    var3 = function() {
         var0 = {};
         _closure1_slot8 = var0;
         var0 = undefined;
@@ -341,7 +341,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var7
-        var3 = function() { // Original name: ScheduledMessageStore, environment: var5
+        var3 = function() {
             _fun95795: for (var _fun95795_ip = 0;;) switch (_fun95795_ip) {
                 case 0:
                     var3 = this;
@@ -389,7 +389,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getMessagesPendingDeletion';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getScheduledMessagesForInbox';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot6;
             return var0;
         };
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingScheduledMessage';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot8;
             var0 = arg0;
             var0 = var1[var0];
@@ -419,7 +419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'loading';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             var0 = _closure1_slot5;
             return var0;
         };
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var12 = var5.bind(var0)(var1);
     var1 = {};
-    var8 = function(arg0) { // Original name: handleScheduledMessageCreateSuccess, environment: var7
+    var8 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         var4 = var0.scheduledMessageSend;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SCHEDULED_MESSAGES_CREATE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleScheduledMessageUpdateSuccess, environment: var7
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.scheduledMessageSend;
         var1 = {};
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.SCHEDULED_MESSAGES_UPDATE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleScheduledMessageDeleteStart, environment: var7
+    var8 = function arg0() {
         _fun95802: for (var _fun95802_ip = 0;;) switch (_fun95802_ip) {
             case 0:
                 var0 = arg0;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SCHEDULED_MESSAGES_DELETE_START = var8;
-    var8 = function(arg0) { // Original name: handleScheduledMessageDeleteSuccess, environment: var7
+    var8 = function arg0() {
         _fun95803: for (var _fun95803_ip = 0;;) switch (_fun95803_ip) {
             case 0:
                 var0 = arg0;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SCHEDULED_MESSAGES_DELETE_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleScheduledMessageDeleteFailure, environment: var7
+    var8 = function arg0() {
         _fun95804: for (var _fun95804_ip = 0;;) switch (_fun95804_ip) {
             case 0:
                 var0 = arg0;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.SCHEDULED_MESSAGES_DELETE_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleFetchScheduledMessages, environment: var7
+    var8 = function arg0() {
         _fun95805: for (var _fun95805_ip = 0;;) switch (_fun95805_ip) {
             case 0:
                 var1 = arg0;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FETCH_SCHEDULED_MESSAGES = var8;
-    var8 = function(arg0) { // Original name: handleFetchScheduledMessagesSuccess, environment: var7
+    var8 = function arg0() {
         _fun95806: for (var _fun95806_ip = 0;;) switch (_fun95806_ip) {
             case 0:
                 var0 = arg0;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FETCH_SCHEDULED_MESSAGES_SUCCESS = var8;
-    var8 = function(arg0) { // Original name: handleFetchScheduledMessagesFailure, environment: var7
+    var8 = function arg0() {
         _fun95807: for (var _fun95807_ip = 0;;) switch (_fun95807_ip) {
             case 0:
                 var1 = arg0;
@@ -665,7 +665,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FETCH_SCHEDULED_MESSAGES_FAILURE = var8;
-    var8 = function(arg0) { // Original name: handleCreatePendingScheduledMessage, environment: var7
+    var8 = function arg0() {
         var0 = arg0;
         var3 = var0.channelId;
         var4 = var0.scheduledTimestamp;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CREATE_PENDING_SCHEDULED_MESSAGE = var8;
-    var7 = function(arg0) { // Original name: handleDeletePendingScheduledMessage, environment: var7
+    var7 = function arg0() {
         var0 = arg0;
         var1 = var0.channelId;
         var0 = {};

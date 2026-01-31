@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _startContactSyncForDiscoverability, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.nextOnboardingStep = var3;
-    var3 = function() { // Original name: previousOnboardingStep, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.previousOnboardingStep = var3;
-    var3 = function(arg0) { // Original name: transitionToNUFGuildTemplatesModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot1;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.transitionToNUFGuildTemplatesModal = var3;
-    var3 = function(arg0) { // Original name: transitionToHubEmailConnectionModal, environment: var1
+    var3 = function arg0() {
         _fun80467: for (var _fun80467_ip = 0;;) switch (_fun80467_ip) {
             case 0:
                 var1 = arguments[1];
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.bind(var0)(var2);
                 var3 = var4.open;
                 var2 = {};
-                var5 = function(arg0) { // Original name: onCloseExtra, environment: var5
+                var5 = function arg0() {
                     _fun80468: for (var _fun80468_ip = 0;;) switch (_fun80468_ip) {
                         case 0:
                             var1 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transitionToHubEmailConnectionModal = var3;
-    var3 = function() { // Original name: openDiscoverabilityModal, environment: var1
+    var3 = function() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 8;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openDiscoverabilityModal = var3;
-    var3 = function() { // Original name: openInAppEducationActionSheet, environment: var1
+    var3 = function() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 15;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openInAppEducationActionSheet = var3;
-    var3 = function(arg0) { // Original name: closeDiscoverabilityModal, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var0 = 8;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.closeDiscoverabilityModal = var3;
-    var3 = function() { // Original name: startContactSyncForDiscoverability, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.startContactSyncForDiscoverability = var3;
-    var1 = function() { // Original name: toggleDiscoverabilityForUser, environment: var1
+    var1 = function() {
         _fun80475: for (var _fun80475_ip = 0;;) switch (_fun80475_ip) {
             case 0:
                 var1 = _closure1_slot9;

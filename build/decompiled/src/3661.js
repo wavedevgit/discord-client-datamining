@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: baseFlatten, environment: var0
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun32741: for (var _fun32741_ip = 0;;) switch (_fun32741_ip) {
             case 0:
                 var10 = arg0;

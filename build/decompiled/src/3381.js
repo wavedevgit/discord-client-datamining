@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = 'Object.prototype.propertyIsEnumerable';
             var2 = var3.bind(var0)(var2);
             var _closure1_slot4 = var2;
-            var2 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: DefineOwnProperty, environment: var1
+            var2 = function arg0, arg1, arg2, arg3, arg4, arg5() {
                 _fun28990: for (var _fun28990_ip = 0;;) switch (_fun28990_ip) {
                     case 0:
                         var2 = arg3;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var13;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun89656: for (var _fun89656_ip = 0;;) switch (_fun89656_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun89658: for (var _fun89658_ip = 0;;) switch (_fun89658_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var7 = function(arg0) { // Original name: newMemberActionFromServer, environment: var3
+    var7 = function arg0() {
         _fun89659: for (var _fun89659_ip = 0;;) switch (_fun89659_ip) {
             case 0:
                 var2 = arg0;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var7;
-    var6 = function(arg0) { // Original name: resourceChannelFromServer, environment: var3
+    var6 = function arg0() {
         _fun89660: for (var _fun89660_ip = 0;;) switch (_fun89660_ip) {
             case 0:
                 var2 = arg0;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var6;
-    var5 = function(arg0) { // Original name: isWelcomeMessageEmpty, environment: var3
+    var5 = function arg0() {
         _fun89661: for (var _fun89661_ip = 0;;) switch (_fun89661_ip) {
             case 0:
                 var3 = arg0;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var5;
-    var4 = function(arg0) { // Original name: isSettingsEmpty, environment: var3
+    var4 = function arg0() {
         _fun89662: for (var _fun89662_ip = 0;;) switch (_fun89662_ip) {
             case 0:
                 var4 = arg0;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NewMemberActionTypes = var8;
     var2.newMemberActionFromServer = var7;
     var2.resourceChannelFromServer = var6;
-    var6 = function(arg0) { // Original name: settingsFromServer, environment: var3
+    var6 = function arg0() {
         _fun89663: for (var _fun89663_ip = 0;;) switch (_fun89663_ip) {
             case 0:
                 var1 = arg0;
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.settingsFromServer = var6;
-    var6 = function(arg0, arg1) { // Original name: settingsToServer, environment: var3
+    var6 = function arg0, arg1() {
         _fun89666: for (var _fun89666_ip = 0;;) switch (_fun89666_ip) {
             case 0:
                 var1 = arg1;
@@ -940,7 +940,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.actionsFromServer = var6;
     var2.isWelcomeMessageEmpty = var5;
     var2.isSettingsEmpty = var4;
-    var4 = function(arg0) { // Original name: isSettingsValid, environment: var3
+    var4 = function arg0() {
         _fun89672: for (var _fun89672_ip = 0;;) switch (_fun89672_ip) {
             case 0:
                 var0 = arg0;
@@ -1093,7 +1093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSettingsValid = var4;
-    var4 = function(arg0) { // Original name: isChannelValidForResourceChannel, environment: var3
+    var4 = function arg0() {
         _fun89673: for (var _fun89673_ip = 0;;) switch (_fun89673_ip) {
             case 0:
                 var4 = arg0;
@@ -1138,7 +1138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isChannelValidForResourceChannel = var4;
-    var3 = function(arg0) { // Original name: isChannelValidForNewMemberAction, environment: var3
+    var3 = function arg0() {
         _fun89674: for (var _fun89674_ip = 0;;) switch (_fun89674_ip) {
             case 0:
                 var3 = arg0;

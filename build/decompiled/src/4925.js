@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = false;
     var _closure1_slot3 = var2;
-    var2 = function() { // Original name: initialize, environment: var0
+    var2 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 0;
@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.initialize = var2;
-    var0 = function() { // Original name: maybeInitializeFabric, environment: var0
+    var0 = function() {
         _fun44643: for (var _fun44643_ip = 0;;) switch (_fun44643_ip) {
             case 0:
                 var3 = _closure1_slot0;

@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launchpad/native/shared/SimpleGuildContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: SimpleGuildContainer, environment: var1
+    var3 = function arg0() {
         _fun110030: for (var _fun110030_ip = 0;;) switch (_fun110030_ip) {
             case 0:
                 var1 = arg0;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.SimpleGuildContainer = var3;
-    var1 = function(arg0) { // Original name: SimpleGuildContainerAnimated, environment: var1
+    var1 = function arg0() {
         _fun110033: for (var _fun110033_ip = 0;;) switch (_fun110033_ip) {
             case 0:
                 var1 = arg0;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var23[var14];
                 var5 = var28.bind(var4)(var2);
                 var3 = var5.useDerivedValue;
-                var2 = function() { // Original name: V, environment: var0
+                var2 = function() {
                     var0 = _closure2_slot3;
                     return var0;
                 };
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var23[var14];
                 var5 = var28.bind(var4)(var2);
                 var3 = var5.useDerivedValue;
-                var2 = function() { // Original name: z, environment: var0
+                var2 = function() {
                     _fun110035: for (var _fun110035_ip = 0;;) switch (_fun110035_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var23[var14];
                 var5 = var28.bind(var4)(var2);
                 var3 = var5.useAnimatedStyle;
-                var2 = function() { // Original name: H, environment: var0
+                var2 = function() {
                     var0 = {
                         'borderRadius': null,
                         'width': 48,
@@ -736,7 +736,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var23[var14];
                 var5 = var28.bind(var4)(var2);
                 var3 = var5.useAnimatedStyle;
-                var2 = function() { // Original name: j, environment: var0
+                var2 = function() {
                     var0 = {
                         'borderRadius': null,
                         'borderWidth': null,
@@ -804,7 +804,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var23[var14];
                 var3 = var28.bind(var4)(var2);
                 var2 = var3.useAnimatedStyle;
-                var0 = function() { // Original name: M, environment: var0
+                var0 = function() {
                     var0 = {
                         'borderRadius': null,
                         'borderWidth': null,

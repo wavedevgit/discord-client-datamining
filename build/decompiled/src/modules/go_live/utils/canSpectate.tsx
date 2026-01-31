@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/go_live/utils/canSpectate.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: canSpectate, environment: var1
+    var1 = function arg0() {
         var0 = true;
         return var0;
     };

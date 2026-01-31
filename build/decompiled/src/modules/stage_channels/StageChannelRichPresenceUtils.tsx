@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var3 = function(arg0) { // Original name: unpackStageChannelParty, environment: var1
+    var3 = function arg0() {
         _fun50304: for (var _fun50304_ip = 0;;) switch (_fun50304_ip) {
             case 0:
                 var4 = arg0;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/StageChannelRichPresenceUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: packStageChannelPartyId, environment: var1
+    var4 = function arg0, arg1() {
         _fun50305: for (var _fun50305_ip = 0;;) switch (_fun50305_ip) {
             case 0:
                 var0 = arg0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.packStageChannelPartyId = var4;
     var2.unpackStageChannelParty = var3;
-    var3 = function(arg0) { // Original name: isStageActivity, environment: var1
+    var3 = function arg0() {
         _fun50306: for (var _fun50306_ip = 0;;) switch (_fun50306_ip) {
             case 0:
                 var0 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isStageActivity = var3;
-    var1 = function(arg0) { // Original name: shouldShowActivity, environment: var1
+    var1 = function arg0() {
         _fun50307: for (var _fun50307_ip = 0;;) switch (_fun50307_ip) {
             case 0:
                 var3 = _closure1_slot8;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: GuildBadge, environment: var4
+    var3 = function arg0() {
         _fun60320: for (var _fun60320_ip = 0;;) switch (_fun60320_ip) {
             case 0:
                 var5 = arg0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = null;
     var1[var9] = var8;
     var _closure1_slot6 = var1;
-    var1 = function(arg0, arg1) { // Original name: checkGuildForFeature, environment: var4
+    var1 = function arg0, arg1() {
         _fun60321: for (var _fun60321_ip = 0;;) switch (_fun60321_ip) {
             case 0:
                 var2 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var1;
-    var1 = function(arg0, arg1) { // Original name: getGuildBadgeSource, environment: var4
+    var1 = function arg0, arg1() {
         _fun60322: for (var _fun60322_ip = 0;;) switch (_fun60322_ip) {
             case 0:
                 var6 = arg0;

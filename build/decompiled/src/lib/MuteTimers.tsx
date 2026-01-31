@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function() { // Original name: MuteTimers, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'reset';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var1 = this;
             var0 = global;
             var3 = var0.Object;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setTimer';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun24700: for (var _fun24700_ip = 0;;) switch (_fun24700_ip) {
                 case 0:
                     var4 = arg0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearTimer';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun24701: for (var _fun24701_ip = 0;;) switch (_fun24701_ip) {
                 case 0:
                     var1 = arg0;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'lib/MuteTimers.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: computeIsMuted, environment: var1
+    var3 = function arg0() {
         _fun24702: for (var _fun24702_ip = 0;;) switch (_fun24702_ip) {
             case 0:
                 var1 = arg0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.computeIsMuted = var3;
-    var1 = function(arg0) { // Original name: isTemporarilyMuted, environment: var1
+    var1 = function arg0() {
         _fun24703: for (var _fun24703_ip = 0;;) switch (_fun24703_ip) {
             case 0:
                 var1 = arg0;

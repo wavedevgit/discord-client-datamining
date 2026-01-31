@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun91470: for (var _fun91470_ip = 0;;) switch (_fun91470_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot9 = var5;
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: Link, environment: var0
+        var3 = function() {
             _fun91474: for (var _fun91474_ip = 0;;) switch (_fun91474_ip) {
                 case 0:
                     var4 = this;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: render, environment: var0
+        var0 = function() {
             var0 = this;
             var _closure3_slot0 = var0;
             var5 = var0.props;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var0.__HistoryContext;
             var1 = var0.Consumer;
             var0 = {};
-            var4 = function(arg0) { // Original name: children, environment: var4
+            var4 = function arg0() {
                 var1 = arg0;
                 var _closure4_slot0 = var1;
                 var3 = _closure1_slot9;
@@ -257,7 +257,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.assign;
                 var4 = _closure3_slot2;
                 var1 = {};
-                var0 = function(arg0) { // Original name: onPress, environment: var0
+                var0 = function arg0() {
                     var3 = _closure3_slot0;
                     var2 = var3.handlePress;
                     var1 = _closure4_slot0;

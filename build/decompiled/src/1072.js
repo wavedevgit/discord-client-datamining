@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _breadcrumbsIntegration, environment: var1
+    var1 = function() {
         _fun10979: for (var _fun10979_ip = 0;;) switch (_fun10979_ip) {
             case 0:
                 var4 = undefined;
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'Breadcrumbs';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     _fun10980: for (var _fun10980_ip = 0;;) switch (_fun10980_ip) {
                         case 0:
                             var3 = arg0;
@@ -77,10 +77,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = undefined;
                             var5 = var4.bind(var6)(var2);
                             var4 = var5.addConsoleInstrumentationHandler;
-                            var2 = function(arg0) { // Original name: _getConsoleBreadcrumbHandler, environment: var0
+                            var2 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var0 = function(arg0) { // Original name: _consoleBreadcrumb, environment: var0
+                                var0 = function arg0() {
                                     _fun10982: for (var _fun10982_ip = 0;;) switch (_fun10982_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -203,12 +203,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var5.addClickKeypressInstrumentationHandler;
                             var2 = _closure2_slot0;
                             var6 = var2.dom;
-                            var2 = function(arg0, arg1) { // Original name: _getDomBreadcrumbHandler, environment: var0
+                            var2 = function arg0, arg1() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
                                 var1 = arg1;
                                 var _closure4_slot1 = var1;
-                                var0 = function(arg0) { // Original name: _innerDomBreadcrumb, environment: var0
+                                var0 = function arg0() {
                                     _fun10984: for (var _fun10984_ip = 0;;) switch (_fun10984_ip) {
                                         case 0:
                                             var5 = arg0;
@@ -433,10 +433,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = undefined;
                             var5 = var4.bind(var6)(var2);
                             var4 = var5.addXhrInstrumentationHandler;
-                            var2 = function(arg0) { // Original name: _getXhrBreadcrumbHandler, environment: var0
+                            var2 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var0 = function(arg0) { // Original name: _xhrBreadcrumb, environment: var0
+                                var0 = function arg0() {
                                     _fun10986: for (var _fun10986_ip = 0;;) switch (_fun10986_ip) {
                                         case 0:
                                             var10 = arg0;
@@ -537,10 +537,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = undefined;
                             var5 = var4.bind(var6)(var2);
                             var4 = var5.addFetchInstrumentationHandler;
-                            var2 = function(arg0) { // Original name: _getFetchBreadcrumbHandler, environment: var0
+                            var2 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var0 = function(arg0) { // Original name: _fetchBreadcrumb, environment: var0
+                                var0 = function arg0() {
                                     _fun10988: for (var _fun10988_ip = 0;;) switch (_fun10988_ip) {
                                         case 0:
                                             var8 = arg0;
@@ -702,10 +702,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = undefined;
                             var5 = var4.bind(var6)(var2);
                             var4 = var5.addHistoryInstrumentationHandler;
-                            var2 = function(arg0) { // Original name: _getHistoryBreadcrumbHandler, environment: var0
+                            var2 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var0 = function(arg0) { // Original name: _historyBreadcrumb, environment: var0
+                                var0 = function arg0() {
                                     _fun10990: for (var _fun10990_ip = 0;;) switch (_fun10990_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -840,10 +840,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         case 325:
                             var2 = var3.on;
-                            var1 = function(arg0) { // Original name: _getSentryBreadcrumbHandler, environment: var0
+                            var1 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
-                                var0 = function(arg0) { // Original name: addSentryBreadcrumb, environment: var0
+                                var0 = function arg0() {
                                     _fun10992: for (var _fun10992_ip = 0;;) switch (_fun10992_ip) {
                                         case 0:
                                             var5 = arg0;

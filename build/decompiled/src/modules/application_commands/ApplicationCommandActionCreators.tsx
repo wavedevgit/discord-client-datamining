@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0, arg1) { // Original name: updateOptionStates, environment: var1
+    var3 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/application_commands/ApplicationCommandActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: setActiveCommand, environment: var1
+    var4 = function arg0() {
         _fun53487: for (var _fun53487_ip = 0;;) switch (_fun53487_ip) {
             case 0:
                 var0 = arg0;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.setActiveCommand = var4;
-    var4 = function(arg0, arg1) { // Original name: setPreferredCommandId, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setPreferredCommandId = var4;
     var2.updateOptionStates = var3;
-    var3 = function(arg0, arg1) { // Original name: updateOptionValidationStates, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot6;
         var0 = global;
         var2 = var0.Object;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateOptionValidationStates = var3;
-    var3 = function(arg0) { // Original name: updateChannelState, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.channelId;
         var8 = var0.command;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateChannelState = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: updateApplicationGuildCommandPermissions, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateApplicationGuildCommandPermissions = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: performAutocomplete, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun53493: for (var _fun53493_ip = 0;;) switch (_fun53493_ip) {
             case 0:
                 var8 = arg1;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.performAutocomplete = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: fetchCommand, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchCommand = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: fetchCommands, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchCommands = var3;
-    var3 = function(arg0) { // Original name: fetchCommandsForApplication, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.guildId;
         var6 = var0.channelId;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchCommandsForApplication = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: updateRegistry, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 5;
@@ -482,7 +482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateRegistry = var3;
-    var1 = function(arg0, arg1) { // Original name: setAppLauncherActiveCommand, environment: var1
+    var1 = function arg0, arg1() {
         _fun53499: for (var _fun53499_ip = 0;;) switch (_fun53499_ip) {
             case 0:
                 var4 = arg1;

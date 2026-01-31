@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var1 = function(arg0) { // Original name: parseBaggageHeader, environment: var3
+    var1 = function arg0() {
         _fun58798: for (var _fun58798_ip = 0;;) switch (_fun58798_ip) {
             case 0:
                 var4 = arg0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0) { // Original name: baggageHeaderToObject, environment: var3
+    var0 = function arg0() {
         var3 = arg0;
         var2 = var3.split;
         var1 = ',';
@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'sentry-';
     var2.SENTRY_BAGGAGE_KEY_PREFIX = var5;
     var2.SENTRY_BAGGAGE_KEY_PREFIX_REGEX = var4;
-    var4 = function(arg0) { // Original name: baggageHeaderToDynamicSamplingContext, environment: var3
+    var4 = function arg0() {
         _fun58805: for (var _fun58805_ip = 0;;) switch (_fun58805_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.baggageHeaderToDynamicSamplingContext = var4;
-    var3 = function(arg0) { // Original name: dynamicSamplingContextToSentryBaggageHeader, environment: var3
+    var3 = function arg0() {
         _fun58807: for (var _fun58807_ip = 0;;) switch (_fun58807_ip) {
             case 0:
                 var3 = arg0;
@@ -291,7 +291,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1 = {};
                 var2 = var3.bind(var4)(var2, var1);
-                var1 = function(arg0) { // Original name: objectToBaggageHeader, environment: var0
+                var1 = function arg0() {
                     _fun58808: for (var _fun58808_ip = 0;;) switch (_fun58808_ip) {
                         case 0:
                             var2 = arg0;

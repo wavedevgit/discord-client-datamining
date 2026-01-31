@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.right = var0;
     var3.bottom = var0;
     var _closure1_slot0 = var3;
-    var1 = function(arg0, arg1) { // Original name: insetsDiffer, environment: var1
+    var1 = function arg0, arg1() {
         _fun1508: for (var _fun1508_ip = 0;;) switch (_fun1508_ip) {
             case 0:
                 var3 = arg0;

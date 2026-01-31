@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun22092: for (var _fun22092_ip = 0;;) switch (_fun22092_ip) {
         case 0:
             var1 = exports;
-            var0 = function(arg0) { // Original name: thisWeek, environment: var2
+            var0 = function arg0() {
                 _fun22093: for (var _fun22093_ip = 0;;) switch (_fun22093_ip) {
                     case 0:
                         var1 = arg0;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 'nextWeek': null,
                 'other': 'P'
             };
-            var4 = function(arg0, arg1, arg2) { // Original name: lastWeek, environment: var2
+            var4 = function arg0, arg1, arg2() {
                 _fun22094: for (var _fun22094_ip = 0;;) switch (_fun22094_ip) {
                     case 0:
                         var6 = arg0;
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var3.lastWeek = var4;
-            var4 = function(arg0, arg1, arg2) { // Original name: nextWeek, environment: var2
+            var4 = function arg0, arg1, arg2() {
                 _fun22095: for (var _fun22095_ip = 0;;) switch (_fun22095_ip) {
                     case 0:
                         var6 = arg0;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var3.nextWeek = var4;
             var _closure1_slot2 = var3;
-            var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
+            var2 = function arg0, arg1, arg2, arg3() {
                 _fun22096: for (var _fun22096_ip = 0;;) switch (_fun22096_ip) {
                     case 0:
                         var1 = _closure1_slot2;

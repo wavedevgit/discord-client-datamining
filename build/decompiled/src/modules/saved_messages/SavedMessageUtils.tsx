@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _savedMessageJumpToMessage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/saved_messages/SavedMessageUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.DueInStringTypes = var3;
-    var3 = function(arg0) { // Original name: useDueInString, environment: var1
+    var3 = function arg0() {
         _fun75909: for (var _fun75909_ip = 0;;) switch (_fun75909_ip) {
             case 0:
                 var0 = arg0;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useDueInString = var3;
-    var3 = function(arg0) { // Original name: useSavedMessageChannel, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSavedMessageChannel = var3;
-    var1 = function() { // Original name: savedMessageJumpToMessage, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot10;
         var2 = var3.apply;

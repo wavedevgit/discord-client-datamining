@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_profile/native/components/GuildProfileCTA.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildProfileCTA, environment: var1
+    var1 = function arg0() {
         _fun59775: for (var _fun59775_ip = 0;;) switch (_fun59775_ip) {
             case 0:
                 var0 = arg0;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var1;
                 var17 = var4;
                 var8 = copyDataProperties(var18, var17);
-                var8 = function() { // Original name: onPress, environment: var7
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 6;

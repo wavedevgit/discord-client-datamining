@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var19;
-    var0 = function() { // Original name: _deletePaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _updatePaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: _getClientSecret, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function() { // Original name: _getPaymentIntentInfo, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot33 = var0;
-    var16 = function() { // Original name: validatePaymentSourceBillingAddress, environment: var1
+    var16 = function() {
         var0 = undefined;
         var3 = _closure1_slot35;
         var2 = var3.apply;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot34 = var16;
-    var0 = function() { // Original name: _validatePaymentSourceBillingAddress, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot35 = var0;
-    var15 = function(arg0) { // Original name: createAdyenPaymentSourceToken, environment: var1
+    var15 = function arg0() {
         _fun29085: for (var _fun29085_ip = 0;;) switch (_fun29085_ip) {
             case 0:
                 var5 = arg0;
@@ -546,7 +546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot36 = var15;
-    var14 = function() { // Original name: createPaymentSource, environment: var1
+    var14 = function() {
         var0 = undefined;
         var3 = _closure1_slot38;
         var2 = var3.apply;
@@ -557,7 +557,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot37 = var14;
-    var0 = function() { // Original name: _createPaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot38 = var0;
-    var13 = function(arg0) { // Original name: dispatchPaymentElementsConfirmationError, environment: var1
+    var13 = function arg0() {
         _fun29090: for (var _fun29090_ip = 0;;) switch (_fun29090_ip) {
             case 0:
                 var5 = arguments[1];
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot39 = var13;
-    var12 = function(arg0) { // Original name: dispatchConfirmationError, environment: var1
+    var12 = function arg0() {
         _fun29091: for (var _fun29091_ip = 0;;) switch (_fun29091_ip) {
             case 0:
                 var7 = arg0;
@@ -1075,7 +1075,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot40 = var12;
-    var0 = function() { // Original name: _createCardToken, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -1181,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot41 = var0;
-    var0 = function() { // Original name: _confirmEPS, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -1349,7 +1349,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot42 = var0;
-    var0 = function() { // Original name: _confirmIdeal, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -1503,7 +1503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot43 = var0;
-    var0 = function() { // Original name: _confirmPrzelewy, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -1661,7 +1661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot44 = var0;
-    var0 = function() { // Original name: _confirmPaymentElementSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -2116,7 +2116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot45 = var0;
-    var0 = function() { // Original name: _confirmCardPaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -2281,7 +2281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot46 = var0;
-    var0 = function() { // Original name: _createStripePaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -2421,7 +2421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot47 = var0;
-    var0 = function() { // Original name: _createAdyenPrepaidPaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -2491,7 +2491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot48 = var0;
-    var0 = function() { // Original name: _createAdyenVaultablePaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -2766,7 +2766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot49 = var0;
-    var9 = function() { // Original name: createStripePaymentSourceToken, environment: var1
+    var9 = function() {
         var0 = undefined;
         var3 = _closure1_slot51;
         var2 = var3.apply;
@@ -2777,7 +2777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot50 = var9;
-    var0 = function() { // Original name: _createStripePaymentSourceToken, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3135,7 +3135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot51 = var0;
-    var8 = function(arg0) { // Original name: createPaymentSourceToken, environment: var1
+    var8 = function arg0() {
         _fun29125: for (var _fun29125_ip = 0;;) switch (_fun29125_ip) {
             case 0:
                 var4 = arg0;
@@ -3174,7 +3174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot52 = var8;
-    var0 = function() { // Original name: _fetchPaymentSources, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3293,7 +3293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot53 = var0;
-    var0 = function() { // Original name: _fetchPaymentSource, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3387,7 +3387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot54 = var0;
-    var7 = function() { // Original name: fetchPayment, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot56;
         var2 = var3.apply;
@@ -3398,7 +3398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot55 = var7;
-    var0 = function() { // Original name: _fetchPayment, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3471,7 +3471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot56 = var0;
-    var0 = function() { // Original name: _fetchPayments, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3595,7 +3595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot57 = var0;
-    var0 = function() { // Original name: _fetchSubscriptions, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3784,7 +3784,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot58 = var0;
-    var0 = function() { // Original name: _getPerksRelevance, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -3891,7 +3891,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot59 = var0;
-    var0 = function() { // Original name: _getNitroAffinity, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -4012,7 +4012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot60 = var0;
-    var0 = function() { // Original name: _fetchMostRecentSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -4181,7 +4181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot61 = var0;
-    var0 = function() { // Original name: _createSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -4543,7 +4543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot62 = var0;
-    var0 = function() { // Original name: _payInvoiceManually, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -4822,7 +4822,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot63 = var0;
-    var6 = function(arg0, arg1) { // Original name: handleConfirmation, environment: var1
+    var6 = function arg0, arg1() {
         _fun29163: for (var _fun29163_ip = 0;;) switch (_fun29163_ip) {
             case 0:
                 var2 = arg0;
@@ -4843,7 +4843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 39:
                 var5 = var2.payment_id;
-                var3 = function() { // Original name: handleStripeConfirmation, environment: var1
+                var3 = function() {
                     var0 = undefined;
                     var3 = _closure1_slot66;
                     var2 = var3.apply;
@@ -4859,7 +4859,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun29163;
             case 60:
                 var3 = var2.adyen_redirect_url;
-                var2 = function() { // Original name: handleAdyenConfirmation, environment: var1
+                var2 = function() {
                     var0 = undefined;
                     var3 = _closure1_slot65;
                     var2 = var3.apply;
@@ -4876,7 +4876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot64 = var6;
-    var0 = function() { // Original name: _handleAdyenConfirmation, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -4958,7 +4958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot65 = var0;
-    var0 = function() { // Original name: _handleStripeConfirmation, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -4998,7 +4998,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun29171
                         }
                     case 72:
-                        var5 = function() { // Original name: getPaymentIntentInfo, environment: var6
+                        var5 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot33;
                             var2 = var3.apply;
@@ -5041,7 +5041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7.clientSecret = var9;
                         var7.paymentMethodId = var5;
                         var7.paymentSource = var10;
-                        var5 = function() { // Original name: confirmPayments, environment: var6
+                        var5 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot71;
                             var2 = var3.apply;
@@ -5088,7 +5088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8.paymentSource = var10;
                         var8.clientSecret = var9;
                         var8.state = var5;
-                        var6 = function() { // Original name: getStripeRedirect, environment: var6
+                        var6 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot72;
                             var2 = var3.apply;
@@ -5148,7 +5148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot66 = var0;
-    var0 = function() { // Original name: _redirectedPaymentSucceeded, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -5276,7 +5276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot67 = var0;
-    var5 = function() { // Original name: paymentIntentSucceeded, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot69;
         var2 = var3.apply;
@@ -5287,7 +5287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot68 = var5;
-    var0 = function() { // Original name: _paymentIntentSucceeded, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -5332,7 +5332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun29181
                         }
                     case 77:
-                        var3 = function() { // Original name: getClientSecret, environment: var3
+                        var3 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot32;
                             var2 = var3.apply;
@@ -5436,7 +5436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot69 = var0;
-    var0 = function(arg0) { // Original name: performRedirect, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.window;
         var1 = var2.open;
@@ -5446,7 +5446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot70 = var0;
-    var0 = function() { // Original name: _confirmPayments, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -5559,7 +5559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot71 = var0;
-    var0 = function() { // Original name: _getStripeRedirect, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -5885,7 +5885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot72 = var0;
-    var0 = function() { // Original name: _cancelSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -6003,7 +6003,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot73 = var0;
-    var4 = function() { // Original name: updateSubscription, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot75;
         var2 = var3.apply;
@@ -6014,7 +6014,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot74 = var4;
-    var0 = function() { // Original name: _updateSubscription, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -6403,7 +6403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot75 = var0;
-    var0 = function() { // Original name: _voidPendingPayment, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -6466,7 +6466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot76 = var0;
-    var3 = function() { // Original name: popupBridgeState, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot78;
         var2 = var3.apply;
@@ -6477,7 +6477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot77 = var3;
-    var0 = function() { // Original name: _popupBridgeState, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -6554,7 +6554,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot78 = var0;
-    var0 = function() { // Original name: _fetchIpCountryCode, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -6702,7 +6702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot79 = var0;
-    var0 = function() { // Original name: _fetchIpLocation, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -6873,7 +6873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot80 = var0;
-    var0 = function() { // Original name: _redeemReactivationOffer, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot6;
@@ -7093,7 +7093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = new var24[var17](var23, var22);
     var10 = var10 instanceof Object ? var10 : var11;
     var _closure1_slot26 = var10;
-    var10 = function(arg0, arg1, arg2) { // Original name: validateSetupIntentResponse, environment: var1
+    var10 = function arg0, arg1, arg2() {
         _fun29216: for (var _fun29216_ip = 0;;) switch (_fun29216_ip) {
             case 0:
                 var3 = arg0;
@@ -7434,7 +7434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var19.fileFinishedImporting;
     var17 = 'actions/BillingActionCreators.tsx';
     var17 = var18.bind(var19)(var17);
-    var17 = function() { // Original name: deletePaymentSource, environment: var1
+    var17 = function() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -7445,7 +7445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.deletePaymentSource = var17;
-    var17 = function() { // Original name: updatePaymentSource, environment: var1
+    var17 = function() {
         var0 = undefined;
         var3 = _closure1_slot31;
         var2 = var3.apply;
@@ -7461,7 +7461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.createPaymentSource = var14;
     var2.dispatchPaymentElementsConfirmationError = var13;
     var2.dispatchConfirmationError = var12;
-    var12 = function() { // Original name: createCardToken, environment: var1
+    var12 = function() {
         var0 = undefined;
         var3 = _closure1_slot41;
         var2 = var3.apply;
@@ -7472,7 +7472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createCardToken = var12;
-    var12 = function() { // Original name: confirmEPS, environment: var1
+    var12 = function() {
         var0 = undefined;
         var3 = _closure1_slot42;
         var2 = var3.apply;
@@ -7483,7 +7483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.confirmEPS = var12;
-    var12 = function() { // Original name: confirmIdeal, environment: var1
+    var12 = function() {
         var0 = undefined;
         var3 = _closure1_slot43;
         var2 = var3.apply;
@@ -7494,7 +7494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.confirmIdeal = var12;
-    var12 = function() { // Original name: confirmPrzelewy24, environment: var1
+    var12 = function() {
         var0 = undefined;
         var3 = _closure1_slot44;
         var2 = var3.apply;
@@ -7507,7 +7507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.confirmPrzelewy24 = var12;
     var2.submitElementsForPaymentElement = var11;
     var2.createPaymentRequestMethodForPaymentElement = var10;
-    var10 = function() { // Original name: confirmPaymentElementSource, environment: var1
+    var10 = function() {
         var0 = undefined;
         var3 = _closure1_slot45;
         var2 = var3.apply;
@@ -7518,7 +7518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.confirmPaymentElementSource = var10;
-    var10 = function() { // Original name: confirmCardPaymentSource, environment: var1
+    var10 = function() {
         var0 = undefined;
         var3 = _closure1_slot46;
         var2 = var3.apply;
@@ -7529,7 +7529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.confirmCardPaymentSource = var10;
-    var10 = function(arg0, arg1, arg2) { // Original name: createPaymentRequestPaymentSource, environment: var1
+    var10 = function arg0, arg1, arg2() {
         _fun29237: for (var _fun29237_ip = 0;;) switch (_fun29237_ip) {
             case 0:
                 var0 = arg1;
@@ -7568,7 +7568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.createPaymentRequestPaymentSource = var10;
-    var10 = function(arg0, arg1, arg2) { // Original name: createBraintreePaymentSource, environment: var1
+    var10 = function arg0, arg1, arg2() {
         var5 = _closure1_slot37;
         var0 = _closure1_slot13;
         var9 = var0.BRAINTREE;
@@ -7583,7 +7583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createBraintreePaymentSource = var10;
-    var10 = function() { // Original name: createStripePaymentSource, environment: var1
+    var10 = function() {
         var0 = undefined;
         var3 = _closure1_slot47;
         var2 = var3.apply;
@@ -7594,7 +7594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createStripePaymentSource = var10;
-    var10 = function() { // Original name: createAdyenPrepaidPaymentSource, environment: var1
+    var10 = function() {
         var0 = undefined;
         var3 = _closure1_slot48;
         var2 = var3.apply;
@@ -7605,7 +7605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createAdyenPrepaidPaymentSource = var10;
-    var10 = function() { // Original name: createAdyenVaultablePaymentSource, environment: var1
+    var10 = function() {
         var0 = undefined;
         var3 = _closure1_slot49;
         var2 = var3.apply;
@@ -7618,7 +7618,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.createAdyenVaultablePaymentSource = var10;
     var2.createStripePaymentSourceToken = var9;
     var2.createPaymentSourceToken = var8;
-    var8 = function() { // Original name: fetchPaymentSources, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot53;
         var2 = var3.apply;
@@ -7629,7 +7629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchPaymentSources = var8;
-    var8 = function() { // Original name: fetchPaymentSource, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot54;
         var2 = var3.apply;
@@ -7641,7 +7641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchPaymentSource = var8;
     var2.fetchPayment = var7;
-    var7 = function() { // Original name: fetchPayments, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot57;
         var2 = var3.apply;
@@ -7652,7 +7652,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchPayments = var7;
-    var7 = function() { // Original name: fetchSubscriptions, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot58;
         var2 = var3.apply;
@@ -7663,7 +7663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchSubscriptions = var7;
-    var7 = function() { // Original name: getPerksRelevance, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot59;
         var2 = var3.apply;
@@ -7674,7 +7674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getPerksRelevance = var7;
-    var7 = function() { // Original name: getNitroAffinity, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot60;
         var2 = var3.apply;
@@ -7685,7 +7685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getNitroAffinity = var7;
-    var7 = function() { // Original name: fetchMostRecentSubscription, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot61;
         var2 = var3.apply;
@@ -7696,7 +7696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchMostRecentSubscription = var7;
-    var7 = function() { // Original name: createSubscription, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot62;
         var2 = var3.apply;
@@ -7707,7 +7707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.createSubscription = var7;
-    var7 = function() { // Original name: payInvoiceManually, environment: var1
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot63;
         var2 = var3.apply;
@@ -7719,7 +7719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.payInvoiceManually = var7;
     var2.handleConfirmation = var6;
-    var6 = function() { // Original name: redirectedPaymentSucceeded, environment: var1
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot67;
         var2 = var3.apply;
@@ -7731,7 +7731,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.redirectedPaymentSucceeded = var6;
     var2.paymentIntentSucceeded = var5;
-    var5 = function() { // Original name: cancelSubscription, environment: var1
+    var5 = function() {
         var0 = undefined;
         var3 = _closure1_slot73;
         var2 = var3.apply;
@@ -7742,7 +7742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.cancelSubscription = var5;
-    var5 = function(arg0, arg1) { // Original name: deleteRenewalMutation, environment: var1
+    var5 = function arg0, arg1() {
         var6 = arg0;
         var5 = _closure1_slot74;
         var4 = {};
@@ -7774,7 +7774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.deleteRenewalMutation = var5;
     var2.updateSubscription = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: resubscribeToSubscription, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         _fun29254: for (var _fun29254_ip = 0;;) switch (_fun29254_ip) {
             case 0:
                 var7 = arg0;
@@ -7823,7 +7823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.resubscribeToSubscription = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: upgradeSubscription, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         var7 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot3;
@@ -7851,7 +7851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.upgradeSubscription = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: changeSubscriptionCurrency, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = arg1;
         var7 = _closure1_slot74;
         var6 = {};
@@ -7873,7 +7873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.changeSubscriptionCurrency = var4;
-    var4 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: changePaymentSource, environment: var1
+    var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         var1 = arg2;
         var7 = _closure1_slot74;
         var6 = {};
@@ -7897,7 +7897,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.changePaymentSource = var4;
-    var4 = function() { // Original name: clearUpdatePaymentSourceError, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -7912,7 +7912,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearUpdatePaymentSourceError = var4;
-    var4 = function() { // Original name: clearRemovePaymentSourceError, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -7927,7 +7927,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearRemovePaymentSourceError = var4;
-    var4 = function() { // Original name: clearPaymentAuthenticationError, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -7942,7 +7942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearPaymentAuthenticationError = var4;
-    var4 = function() { // Original name: voidPendingPayment, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot76;
         var2 = var3.apply;
@@ -7954,7 +7954,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.voidPendingPayment = var4;
     var2.popupBridgeState = var3;
-    var3 = function(arg0) { // Original name: popupBridgeCallback, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var10 = var1.paymentSourceType;
         var _closure2_slot0 = var10;
@@ -8018,7 +8018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.popupBridgeCallback = var3;
-    var3 = function() { // Original name: fetchIpCountryCode, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot79;
         var2 = var3.apply;
@@ -8029,7 +8029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchIpCountryCode = var3;
-    var3 = function() { // Original name: fetchIpLocation, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot80;
         var2 = var3.apply;
@@ -8040,7 +8040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchIpLocation = var3;
-    var3 = function() { // Original name: resetPaymentIntentId, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -8055,7 +8055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetPaymentIntentId = var3;
-    var3 = function() { // Original name: resetSubscriptionStore, environment: var1
+    var3 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -8070,7 +8070,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.resetSubscriptionStore = var3;
-    var3 = function(arg0) { // Original name: startBrowserCheckout, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot3;
         var0 = 11;
@@ -8087,7 +8087,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.startBrowserCheckout = var3;
-    var1 = function() { // Original name: redeemReactivationOffer, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot81;
         var2 = var3.apply;

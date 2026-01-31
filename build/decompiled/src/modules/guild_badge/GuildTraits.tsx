@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var3 = function(arg0) { // Original name: isPremiumGuild, environment: var1
+    var3 = function arg0() {
         _fun59677: for (var _fun59677_ip = 0;;) switch (_fun59677_ip) {
             case 0:
                 var4 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/guild_badge/GuildTraits.tsx';
     var5 = var6.bind(var7)(var5);
     var2.GuildVisibility = var4;
-    var4 = function(arg0) { // Original name: getGuildTraits, environment: var1
+    var4 = function arg0() {
         _fun59678: for (var _fun59678_ip = 0;;) switch (_fun59678_ip) {
             case 0:
                 var0 = arg0;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildTraits = var4;
     var2.isPremiumGuild = var3;
-    var1 = function(arg0) { // Original name: isDiscoverableGuild, environment: var1
+    var1 = function arg0() {
         _fun59679: for (var _fun59679_ip = 0;;) switch (_fun59679_ip) {
             case 0:
                 var1 = arg0;

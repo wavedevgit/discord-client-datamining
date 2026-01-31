@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun96562: for (var _fun96562_ip = 0;;) switch (_fun96562_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: maybeCreateState, environment: var3
+    var0 = function arg0() {
         _fun96565: for (var _fun96565_ip = 0;;) switch (_fun96565_ip) {
             case 0:
                 var2 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GuildHeaderCountsStore, environment: var5
+        var3 = function() {
             _fun96567: for (var _fun96567_ip = 0;;) switch (_fun96567_ip) {
                 case 0:
                     var3 = this;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun96568: for (var _fun96568_ip = 0;;) switch (_fun96568_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot11;
             return var0;
         };
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveChannelsCount';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun96570: for (var _fun96570_ip = 0;;) switch (_fun96570_ip) {
                 case 0:
                     var1 = _closure1_slot11;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOnlineCount';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun96571: for (var _fun96571_ip = 0;;) switch (_fun96571_ip) {
                 case 0:
                     var1 = _closure1_slot11;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getMemberCount';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun96572: for (var _fun96572_ip = 0;;) switch (_fun96572_ip) {
                 case 0:
                     var1 = _closure1_slot11;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleMemberCount, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = var0.count;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_HEADER_MEMBER_COUNT = var7;
-    var7 = function(arg0) { // Original name: handleOnlineCount, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = var0.count;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GUILD_HEADER_ONLINE_COUNT = var7;
-    var3 = function(arg0) { // Original name: handleActiveChannelsCount, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var3 = var0.guildId;
         var2 = var0.count;

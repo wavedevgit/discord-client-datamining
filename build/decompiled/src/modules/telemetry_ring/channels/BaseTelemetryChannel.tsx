@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0, arg1) { // Original name: BaseTelemetryChannel, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'append';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var4
+        var1 = function arg0, arg1, arg2, arg3() {
             _fun96756: for (var _fun96756_ip = 0;;) switch (_fun96756_ip) {
                 case 0:
                     var1 = arg1;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'snapshot';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var0 = this;
             var5 = var0.native;
             var4 = var5.snapshot;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clearAll';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var1 = var0.native;
             var0 = var1.clear;

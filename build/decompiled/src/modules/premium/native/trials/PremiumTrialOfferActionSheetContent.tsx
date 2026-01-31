@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PremiumTrialOfferActionSheetContent, environment: var1
+    var1 = function arg0() {
         _fun86469: for (var _fun86469_ip = 0;;) switch (_fun86469_ip) {
             case 0:
                 var1 = arg0;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'variant': 'text-md/normal',
                     'color': 'text-link'
                 };
-                var8 = function() { // Original name: onPress, environment: var18
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 23;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.duration = var23;
                 var19 = var21.bind(var22)(var20, var19);
                 var8.text = var19;
-                var18 = function() { // Original name: onPress, environment: var18
+                var18 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var1 = var1.bind(var0)();

@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mobile_web_handoff/native/SimpleLoadingModalUI.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SimpleLoadingModal, environment: var1
+    var1 = function arg0() {
         _fun50551: for (var _fun50551_ip = 0;;) switch (_fun50551_ip) {
             case 0:
                 var2 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun50551
                 }
             case 27:
-                var1 = function() { // Original name: f, environment: var4
+                var1 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun50551
                 }
             case 46:
-                var0 = function() { // Original name: I, environment: var4
+                var0 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun50551
                 }
             case 81:
-                var2 = function() { // Original name: N, environment: var4
+                var2 = function() {
                     var0 = undefined;
                     return var0;
                 };
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'transparent': true,
                     'animationType': 'none'
                 };
-                var5 = function() { // Original name: onShow, environment: var4
+                var5 = function() {
                     _fun50561: for (var _fun50561_ip = 0;;) switch (_fun50561_ip) {
                         case 0:
                             var1 = _closure2_slot5;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var0.onShow = var5;
-                var4 = function() { // Original name: onRequestClose, environment: var4
+                var4 = function() {
                     _fun50562: for (var _fun50562_ip = 0;;) switch (_fun50562_ip) {
                         case 0:
                             var1 = _closure2_slot3;

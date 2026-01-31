@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemNativeSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: getEmojiPickerDataRowItemNativeSection, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun73885: for (var _fun73885_ip = 0;;) switch (_fun73885_ip) {
             case 0:
                 var0 = arg0;

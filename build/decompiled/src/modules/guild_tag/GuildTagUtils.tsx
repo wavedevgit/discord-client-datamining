@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: getUserPrimaryGuild, environment: var1
+    var3 = function arg0() {
         _fun56118: for (var _fun56118_ip = 0;;) switch (_fun56118_ip) {
             case 0:
                 var2 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_tag/GuildTagUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: guildHasTag, environment: var1
+    var4 = function arg0() {
         _fun56119: for (var _fun56119_ip = 0;;) switch (_fun56119_ip) {
             case 0:
                 var2 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.guildHasTag = var4;
-    var4 = function(arg0) { // Original name: guildSupportsTags, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var2 = var0.features;
         var1 = var2.has;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.guildSupportsTags = var4;
-    var4 = function(arg0, arg1) { // Original name: getGuildTagBadgeUrl, environment: var1
+    var4 = function arg0, arg1() {
         _fun56121: for (var _fun56121_ip = 0;;) switch (_fun56121_ip) {
             case 0:
                 var8 = arg1;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildTagBadgeUrl = var4;
     var2.getUserPrimaryGuild = var3;
-    var3 = function(arg0) { // Original name: useUserPrimaryGuild, environment: var1
+    var3 = function arg0() {
         _fun56122: for (var _fun56122_ip = 0;;) switch (_fun56122_ip) {
             case 0:
                 var0 = arg0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useUserPrimaryGuild = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useShouldDisplayGuildTag, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun56124: for (var _fun56124_ip = 0;;) switch (_fun56124_ip) {
             case 0:
                 var9 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldDisplayGuildTag = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: shouldDisplayGuildTag, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun56127: for (var _fun56127_ip = 0;;) switch (_fun56127_ip) {
             case 0:
                 var7 = arg0;

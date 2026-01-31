@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun25356: for (var _fun25356_ip = 0;;) switch (_fun25356_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.OPT_OUT_PRICE_INCREASE = var6;
     var _closure1_slot5 = var3;
     var1 = function(arg0) { // Environment: var1
-        var4 = function(arg0) { // Original name: GooglePlayPriceChangeRecord, environment: var0
+        var4 = function arg0() {
             _fun25360: for (var _fun25360_ip = 0;;) switch (_fun25360_ip) {
                 case 0:
                     var1 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'isPriceIncrease';
         var5.key = var1;
-        var1 = function() { // Original name: get, environment: var0
+        var1 = function() {
             _fun25361: for (var _fun25361_ip = 0;;) switch (_fun25361_ip) {
                 case 0:
                     var2 = this;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isOptOutPriceIncrease';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             var0 = this;
             var1 = var0.priceChangeMode;
             var0 = _closure1_slot5;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isPriceDecrease';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             var0 = this;
             var1 = var0.priceChangeMode;
             var0 = _closure1_slot5;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isInFuture';
         var5.key = var6;
-        var6 = function() { // Original name: get, environment: var0
+        var6 = function() {
             var0 = this;
             var1 = var0.expectedChargeTime;
             var0 = global;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'createFromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             var1 = arg0;
             var2 = _closure2_slot0;
             var0 = {};

@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = [0.1, 0.25];
     var _closure1_slot2 = var2;
     var1.CLSThresholds = var2;
-    var0 = function(arg0) { // Original name: onCLS, environment: var0
+    var0 = function arg0() {
         _fun10745: for (var _fun10745_ip = 0;;) switch (_fun10745_ip) {
             case 0:
                 var0 = undefined;
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var2.LayoutShiftManager;
                             var2 = var9.bind(var11)(var8, var2);
                             var _closure3_slot2 = var2;
-                            var8 = function(arg0) { // Original name: handleEntries, environment: var1
+                            var8 = function arg0() {
                                 _fun10747: for (var _fun10747_ip = 0;;) switch (_fun10747_ip) {
                                     case 0:
                                         var2 = arg0;

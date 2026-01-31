@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: parseMessageEmbedForProps, environment: var1
+    var3 = function arg0() {
         _fun52006: for (var _fun52006_ip = 0;;) switch (_fun52006_ip) {
             case 0:
                 var0 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/safety_hub/SafetyHubUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: getClassificationRelativeIncidentTime, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot1;
         var5 = _closure1_slot2;
         var0 = 4;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getClassificationRelativeIncidentTime = var4;
-    var4 = function(arg0) { // Original name: getAttachmentFilename, environment: var1
+    var4 = function arg0() {
         _fun52010: for (var _fun52010_ip = 0;;) switch (_fun52010_ip) {
             case 0:
                 var1 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAttachmentFilename = var4;
-    var4 = function(arg0) { // Original name: parseMessageForProps, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot9;
         var0 = arg0;
         var1 = var0.embeds;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseMessageForProps = var4;
     var2.parseMessageEmbedForProps = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: mapCtaToNativeData, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun52012: for (var _fun52012_ip = 0;;) switch (_fun52012_ip) {
             case 0:
                 var3 = arg0;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.mapCtaToNativeData = var3;
-    var3 = function(arg0) { // Original name: isFlaggedContentEmpty, environment: var1
+    var3 = function arg0() {
         _fun52013: for (var _fun52013_ip = 0;;) switch (_fun52013_ip) {
             case 0:
                 var2 = arg0;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.capitalizeText = var3;
-    var3 = function(arg0) { // Original name: isGuildClassification, environment: var1
+    var3 = function arg0() {
         _fun52016: for (var _fun52016_ip = 0;;) switch (_fun52016_ip) {
             case 0:
                 var1 = arg0;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRequestReviewErrorFromCode = var3;
-    var3 = function(arg0) { // Original name: getClassificationExpiration, environment: var1
+    var3 = function arg0() {
         _fun52018: for (var _fun52018_ip = 0;;) switch (_fun52018_ip) {
             case 0:
                 var1 = undefined;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsSuspendedUser = var3;
-    var1 = function() { // Original name: isCurrentUserSuspended, environment: var1
+    var1 = function() {
         var1 = _closure1_slot3;
         var0 = var1.getSuspendedUserToken;
         var1 = var0.bind(var1)();

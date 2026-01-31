@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0, arg1, arg2) { // Original name: touchDataToPressEvent, environment: var0
+    var2 = function arg0, arg1, arg2() {
         var1 = arg0;
         var0 = {};
         var2 = var1.id;
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: numberAsInset, environment: var0
+    var2 = function arg0() {
         var1 = arg0;
         var0 = {};
         var0.left = var1;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.numberAsInset = var2;
-    var2 = function(arg0, arg1) { // Original name: addInsets, environment: var0
+    var2 = function arg0, arg1() {
         _fun45193: for (var _fun45193_ip = 0;;) switch (_fun45193_ip) {
             case 0:
                 var1 = arg0;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.addInsets = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: isTouchWithinInset, environment: var0
+    var2 = function arg0, arg1, arg2() {
         _fun45194: for (var _fun45194_ip = 0;;) switch (_fun45194_ip) {
             case 0:
                 var6 = arg0;
@@ -293,7 +293,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isTouchWithinInset = var2;
-    var2 = function(arg0) { // Original name: gestureToPressableEvent, environment: var0
+    var2 = function arg0() {
         var4 = arg0;
         var0 = global;
         var1 = var0.Date;
@@ -343,7 +343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.gestureToPressableEvent = var2;
-    var0 = function(arg0) { // Original name: gestureTouchToPressableEvent, environment: var0
+    var0 = function arg0() {
         _fun45196: for (var _fun45196_ip = 0;;) switch (_fun45196_ip) {
             case 0:
                 var6 = arg0;

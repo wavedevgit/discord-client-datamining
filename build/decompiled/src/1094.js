@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var9;
-    var0 = function(arg0) { // Original name: promisifyRequest, environment: var5
+    var0 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var0;
-    var6 = function(arg0, arg1) { // Original name: createStore, environment: var5
+    var6 = function arg0, arg1() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var6;
-    var0 = function(arg0) { // Original name: keys, environment: var5
+    var0 = function arg0() {
         var1 = arg0;
         var2 = _closure1_slot4;
         var0 = var1.getAllKeys;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot6 = var0;
-    var4 = function(arg0, arg1, arg2) { // Original name: _push, environment: var5
+    var4 = function arg0, arg1, arg2() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg2;
@@ -166,7 +166,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot7 = var4;
-    var1 = function(arg0, arg1, arg2) { // Original name: _unshift, environment: var5
+    var1 = function arg0, arg1, arg2() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg2;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot8 = var1;
-    var3 = function(arg0) { // Original name: _shift, environment: var5
+    var3 = function arg0() {
         var2 = arg0;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
@@ -288,10 +288,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot9 = var3;
-    var0 = function(arg0) { // Original name: createIndexedDbStore, environment: var5
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
-        var0 = function() { // Original name: getStore, environment: var1
+        var0 = function() {
             _fun12030: for (var _fun12030_ip = 0;;) switch (_fun12030_ip) {
                 case 0:
                     var2 = _closure2_slot1;
@@ -406,7 +406,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var3 = var5.bind(var4)(var3);
         var _closure2_slot4 = var3;
-        var3 = function(arg0) { // Original name: push, environment: var1
+        var3 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot4;
             var2 = var3.apply;
@@ -492,7 +492,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var3 = var5.bind(var4)(var3);
         var _closure2_slot3 = var3;
-        var3 = function(arg0) { // Original name: unshift, environment: var1
+        var3 = function arg0() {
             var0 = undefined;
             var3 = _closure2_slot3;
             var2 = var3.apply;
@@ -564,7 +564,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2 = var3.bind(var4)(var2);
         var _closure2_slot2 = var2;
-        var1 = function() { // Original name: shift, environment: var1
+        var1 = function() {
             var0 = undefined;
             var3 = _closure2_slot2;
             var2 = var3.apply;
@@ -597,7 +597,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7.value = var11;
     var7 = var9.bind(var10)(var2, var8, var7);
     var2.createStore = var6;
-    var5 = function() { // Original name: makeBrowserOfflineTransport, environment: var5
+    var5 = function() {
         _fun12040: for (var _fun12040_ip = 0;;) switch (_fun12040_ip) {
             case 0:
                 var2 = undefined;
@@ -633,7 +633,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var2)(var0);
                 var0 = var1.makeOfflineTransport;
                 var1 = var0.bind(var1)(var3);
-                var0 = function(arg0) { // Original name: makeIndexedDbOfflineTransport, environment: var0
+                var0 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = function(arg0) { // Environment: var0

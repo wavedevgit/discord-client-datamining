@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
-    var4 = function(arg0) { // Original name: isAtLeastReact17, environment: var3
+    var4 = function arg0() {
         _fun12358: for (var _fun12358_ip = 0;;) switch (_fun12358_ip) {
             case 0:
                 var2 = arg0;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var1 = function(arg0, arg1) { // Original name: setCause, environment: var3
+    var1 = function arg0, arg1() {
         var1 = global;
         var1 = var1.WeakSet;
         var2 = var1.prototype;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = new var6[var1](var5);
         var1 = var1 instanceof Object ? var1 : var2;
         var _closure2_slot0 = var1;
-        var3 = function(arg0, arg1) { // Original name: recurse, environment: var0
+        var3 = function arg0, arg1() {
             _fun12360: for (var _fun12360_ip = 0;;) switch (_fun12360_ip) {
                 case 0:
                     var1 = arg0;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var1;
-    var5 = function(arg0, arg1, arg2) { // Original name: captureReactException, environment: var3
+    var5 = function arg0, arg1, arg2() {
         _fun12361: for (var _fun12361_ip = 0;;) switch (_fun12361_ip) {
             case 0:
                 var5 = arg0;
@@ -198,7 +198,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var6;
     var2.captureReactException = var5;
     var2.isAtLeastReact17 = var4;
-    var3 = function(arg0) { // Original name: reactErrorHandler, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0, arg1) { // Environment: var0

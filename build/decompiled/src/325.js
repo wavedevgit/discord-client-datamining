@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.useCallback;
     var _closure1_slot2 = var3;
-    var1 = function() { // Original name: useMergeRefs, environment: var1
+    var1 = function() {
         _fun4890: for (var _fun4890_ip = 0;;) switch (_fun4890_ip) {
             case 0:
                 var2 = undefined;

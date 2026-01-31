@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: claimedOutboundPromotionCodeFromServer, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var2 = var1.code;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _fetchClaimedOutboundPromotionCodes, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _claimOutboundPromotion, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var3 = function() { // Original name: getNextUnseenOutboundPromotionId, environment: var1
+    var3 = function() {
         _fun57955: for (var _fun57955_ip = 0;;) switch (_fun57955_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/promotions/PromotionUtils.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0, arg1) { // Original name: getPromotionImageURL, environment: var1
+    var4 = function arg0, arg1() {
         _fun57960: for (var _fun57960_ip = 0;;) switch (_fun57960_ip) {
             case 0:
                 var8 = arg0;
@@ -518,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPromotionImageURL = var4;
-    var4 = function() { // Original name: fetchClaimedOutboundPromotionCodes, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchClaimedOutboundPromotionCodes = var4;
-    var4 = function() { // Original name: claimOutboundPromotion, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.claimOutboundPromotion = var4;
-    var4 = function(arg0, arg1) { // Original name: getOutboundPromotionRedemptionUrl, environment: var1
+    var4 = function arg0, arg1() {
         _fun57963: for (var _fun57963_ip = 0;;) switch (_fun57963_ip) {
             case 0:
                 var1 = arg1;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOutboundPromotionRedemptionUrl = var4;
     var2.getNextUnseenOutboundPromotionId = var3;
-    var3 = function() { // Original name: shouldShowOutboundPromotionNotice, environment: var1
+    var3 = function() {
         _fun57964: for (var _fun57964_ip = 0;;) switch (_fun57964_ip) {
             case 0:
                 var0 = _closure1_slot17;
@@ -620,7 +620,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShowOutboundPromotionNotice = var3;
-    var3 = function(arg0) { // Original name: shouldShowOutboundPromotionOnPlatform, environment: var1
+    var3 = function arg0() {
         _fun57965: for (var _fun57965_ip = 0;;) switch (_fun57965_ip) {
             case 0:
                 var3 = arg0;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShowOutboundPromotionOnPlatform = var3;
-    var3 = function(arg0, arg1) { // Original name: isTrialUserEligibleToSeeOutboundPromotion, environment: var1
+    var3 = function arg0, arg1() {
         _fun57966: for (var _fun57966_ip = 0;;) switch (_fun57966_ip) {
             case 0:
                 var2 = arg0;
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isTrialUserEligibleToSeeOutboundPromotion = var3;
-    var1 = function(arg0) { // Original name: isRecurringPromotion, environment: var1
+    var1 = function arg0() {
         _fun57967: for (var _fun57967_ip = 0;;) switch (_fun57967_ip) {
             case 0:
                 var0 = arg0;

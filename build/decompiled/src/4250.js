@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2) { // Original name: baseUniq, environment: var0
+    var1 = function arg0, arg1, arg2() {
         _fun39360: for (var _fun39360_ip = 0;;) switch (_fun39360_ip) {
             case 0:
                 var11 = arg0;

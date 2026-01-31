@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = 'String.prototype.split';
             var2 = var3.bind(var0)(var2);
             var _closure1_slot3 = var2;
-            var2 = function(arg0) { // Original name: map, environment: var1
+            var2 = function arg0() {
                 _fun28892: for (var _fun28892_ip = 0;;) switch (_fun28892_ip) {
                     case 0:
                         var13 = arg0;

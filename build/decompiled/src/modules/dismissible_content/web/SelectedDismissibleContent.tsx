@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0, arg1) { // Original name: useSelectedDismissibleContent, environment: var1
+    var3 = function arg0, arg1() {
         _fun104567: for (var _fun104567_ip = 0;;) switch (_fun104567_ip) {
             case 0:
                 var4 = arguments[2];
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/dismissible_content/web/SelectedDismissibleContent.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: SelectedDismissibleContent, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var6 = var0.contentTypes;
         var5 = var0.children;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var4;
     var2.useSelectedDismissibleContent = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useSelectedVersionedDismissibleContent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun104569: for (var _fun104569_ip = 0;;) switch (_fun104569_ip) {
             case 0:
                 var4 = arguments[3];
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSelectedVersionedDismissibleContent = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useSelectedTimeRecurringDismissibleContent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun104570: for (var _fun104570_ip = 0;;) switch (_fun104570_ip) {
             case 0:
                 var4 = arguments[3];
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSelectedTimeRecurringDismissibleContent = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useSelectedSnowflakeBoundDismissibleContent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun104571: for (var _fun104571_ip = 0;;) switch (_fun104571_ip) {
             case 0:
                 var4 = arguments[3];
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSelectedSnowflakeBoundDismissibleContent = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: useSelectedSnowflakeBoundGuildDismissibleContent, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun104572: for (var _fun104572_ip = 0;;) switch (_fun104572_ip) {
             case 0:
                 var4 = arguments[4];
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useSelectedSnowflakeBoundGuildDismissibleContent = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: useSelectedSingleUseGuildDismissibleContent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var1 = 3;
@@ -303,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSelectedSingleUseGuildDismissibleContent = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: useSelectedTimeRecurringGuildDismissibleContent, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var1 = 3;
@@ -336,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useSelectedTimeRecurringGuildDismissibleContent = var3;
-    var3 = function(arg0) { // Original name: SelectedVersionedDismissibleContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.contentType;
         var9 = var0.latestVersion;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SelectedVersionedDismissibleContent = var3;
-    var3 = function(arg0) { // Original name: SelectedTimeRecurringDismissibleContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var10 = var0.contentType;
         var9 = var0.timeRecurringConfig;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SelectedTimeRecurringDismissibleContent = var3;
-    var3 = function(arg0) { // Original name: SelectedTimeReccuringSnowflakeBoundDismissibleContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var11 = var0.contentType;
         var13 = var0.newSnowflakeId;
@@ -456,7 +456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SelectedTimeReccuringSnowflakeBoundDismissibleContent = var3;
-    var3 = function(arg0) { // Original name: SelectedSingleUseGuildDismissibleContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var9 = var0.contentTypes;
         var8 = var0.guildId;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.SelectedSingleUseGuildDismissibleContent = var3;
-    var1 = function(arg0) { // Original name: SelectedTimeRecurringGuildDismissibleContent, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.contentType;
         var13 = var0.guildId;

@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/navigator/ICYMINavigator.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ICYMINavigator, environment: var1
+    var1 = function() {
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 2;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot4;
         var1 = var5.Navigator;
         var0 = {};
-        var6 = function() { // Original name: screenOptions, environment: var8
+        var6 = function() {
             var0 = {
                 'headerShown': false,
                 'fullScreenGestureEnabled': true
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5.Screen;
         var4 = {};
         var4.name = var9;
-        var9 = function() { // Original name: getComponent, environment: var8
+        var9 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 3;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var9 = 'notifications-screen';
         var5.name = var9;
-        var8 = function() { // Original name: getComponent, environment: var8
+        var8 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 4;

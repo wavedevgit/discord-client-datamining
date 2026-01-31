@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: OptInChannelBanner, environment: var3
+    var1 = function arg0() {
         _fun89171: for (var _fun89171_ip = 0;;) switch (_fun89171_ip) {
             case 0:
                 var1 = arg0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var1;
-    var0 = function(arg0) { // Original name: ArchivedLockedThreadChatBanner, environment: var3
+    var0 = function arg0() {
         _fun89174: for (var _fun89174_ip = 0;;) switch (_fun89174_ip) {
             case 0:
                 var0 = arg0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["0dvvEi"];
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 13;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: LockedThreadChatBanner, environment: var3
+    var0 = function arg0() {
         _fun89177: for (var _fun89177_ip = 0;;) switch (_fun89177_ip) {
             case 0:
                 var0 = arg0;
@@ -513,7 +513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.zA9d1J;
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 13;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: NewMessagesChatBar, environment: var3
+    var0 = function arg0() {
         _fun89180: for (var _fun89180_ip = 0;;) switch (_fun89180_ip) {
             case 0:
                 var0 = arg0;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.e6RscS;
                 var12 = var15.bind(var16)(var12);
                 var7.accessibilityLabel = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 22;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/messages/native/ChatBanner.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ChatBanner, environment: var3
+    var3 = function arg0() {
         _fun89183: for (var _fun89183_ip = 0;;) switch (_fun89183_ip) {
             case 0:
                 var1 = arg0;

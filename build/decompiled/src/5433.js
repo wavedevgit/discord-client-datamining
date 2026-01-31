@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: peg$SyntaxError, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun48292: for (var _fun48292_ip = 0;;) switch (_fun48292_ip) {
             case 0:
                 var1 = global;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: peg$padEnd, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun48293: for (var _fun48293_ip = 0;;) switch (_fun48293_ip) {
             case 0:
                 var2 = arg0;
@@ -77,10 +77,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = global;
     var4 = var2.Error;
-    var2 = function(arg0, arg1) { // Original name: peg$subclass, environment: var1
+    var2 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var0 = function() { // Original name: C, environment: var0
+        var0 = function() {
             var1 = _closure2_slot0;
             var0 = this;
             var0.constructor = var1;
@@ -275,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 0:
                 var2 = arg0;
                 var4 = arg1;
-                var1 = function(arg0) { // Original name: hex, environment: var0
+                var1 = function arg0() {
                     var2 = arg0;
                     var1 = var2.charCodeAt;
                     var0 = 0;
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot1 = var1;
-                var3 = function(arg0) { // Original name: literalEscape, environment: var0
+                var3 = function arg0() {
                     var4 = arg0;
                     var3 = var4.replace;
                     var2 = /\\/g;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot2 = var3;
-                var1 = function(arg0) { // Original name: classEscape, environment: var0
+                var1 = function arg0() {
                     var4 = arg0;
                     var3 = var4.replace;
                     var2 = /\\/g;
@@ -403,7 +403,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var _closure2_slot3 = var1;
                 var1 = {};
-                var5 = function(arg0) { // Original name: literal, environment: var0
+                var5 = function arg0() {
                     var2 = _closure2_slot2;
                     var0 = arg0;
                     var1 = var0.text;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var1.literal = var5;
-                var5 = function(arg0) { // Original name: _class, environment: var0
+                var5 = function arg0() {
                     _fun48307: for (var _fun48307_ip = 0;;) switch (_fun48307_ip) {
                         case 0:
                             var0 = arg0;
@@ -475,17 +475,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var1.class = var5;
-                var5 = function() { // Original name: any, environment: var0
+                var5 = function() {
                     var0 = 'any character';
                     return var0;
                 };
                 var1.any = var5;
-                var5 = function() { // Original name: end, environment: var0
+                var5 = function() {
                     var0 = 'end of input';
                     return var0;
                 };
                 var1.end = var5;
-                var5 = function(arg0) { // Original name: other, environment: var0
+                var5 = function arg0() {
                     var0 = arg0;
                     var0 = var0.description;
                     return var0;
@@ -493,7 +493,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1.other = var5;
                 var _closure2_slot0 = var1;
                 var1 = var2.map;
-                var0 = function(arg0) { // Original name: describeExpectation, environment: var0
+                var0 = function arg0() {
                     var2 = arg0;
                     var1 = _closure2_slot0;
                     var0 = var2.type;
@@ -611,13 +611,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = ['start'];
     var2.StartRules = var4;
     var2.SyntaxError = var3;
-    var1 = function(arg0, arg1) { // Original name: peg$parse, environment: var1
+    var1 = function arg0, arg1() {
         _fun48312: for (var _fun48312_ip = 0;;) switch (_fun48312_ip) {
             case 0:
                 var4 = arg0;
                 var6 = arg1;
                 var _closure2_slot0 = var4;
-                var11 = function(arg0, arg1) { // Original name: peg$literalExpectation, environment: var1
+                var11 = function arg0, arg1() {
                     var0 = {
                         'type': 'literal',
                         'text': null,
@@ -627,7 +627,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.text = var1;
                     return var0;
                 };
-                var14 = function(arg0, arg1, arg2) { // Original name: peg$classExpectation, environment: var1
+                var14 = function arg0, arg1, arg2() {
                     var0 = {
                         'type': 'class',
                         'parts': null,
@@ -638,7 +638,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.parts = var1;
                     return var0;
                 };
-                var15 = function(arg0) { // Original name: peg$otherExpectation, environment: var1
+                var15 = function arg0() {
                     var0 = {};
                     var1 = 'other';
                     var0.type = var1;
@@ -646,7 +646,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.description = var1;
                     return var0;
                 };
-                var0 = function(arg0) { // Original name: peg$computePosDetails, environment: var1
+                var0 = function arg0() {
                     _fun48316: for (var _fun48316_ip = 0;;) switch (_fun48316_ip) {
                         case 0:
                             var3 = arg0;
@@ -740,7 +740,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot56 = var0;
-                var9 = function(arg0, arg1, arg2) { // Original name: peg$computeLocation, environment: var1
+                var9 = function arg0, arg1, arg2() {
                     _fun48317: for (var _fun48317_ip = 0;;) switch (_fun48317_ip) {
                         case 0:
                             var7 = arg0;
@@ -785,7 +785,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                var7 = function(arg0) { // Original name: peg$fail, environment: var1
+                var7 = function arg0() {
                     _fun48318: for (var _fun48318_ip = 0;;) switch (_fun48318_ip) {
                         case 0:
                             var2 = _closure2_slot50;
@@ -817,7 +817,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot57 = var7;
-                var3 = function() { // Original name: peg$parsestart, environment: var1
+                var3 = function() {
                     _fun48319: for (var _fun48319_ip = 0;;) switch (_fun48319_ip) {
                         case 0:
                             var0 = _closure2_slot55;
@@ -943,7 +943,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                var0 = function() { // Original name: peg$parsefunction, environment: var1
+                var0 = function() {
                     _fun48320: for (var _fun48320_ip = 0;;) switch (_fun48320_ip) {
                         case 0:
                             var0 = _closure2_slot55;
@@ -1529,7 +1529,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun48320
                             }
                         case 1415:
-                            var4 = function() { // Original name: peg$parserotate, environment: var4
+                            var4 = function() {
                                 _fun48321: for (var _fun48321_ip = 0;;) switch (_fun48321_ip) {
                                     case 0:
                                         var0 = _closure2_slot55;
@@ -2050,7 +2050,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot58 = var0;
-                var0 = function() { // Original name: peg$parsespaceOrComma, environment: var1
+                var0 = function() {
                     _fun48322: for (var _fun48322_ip = 0;;) switch (_fun48322_ip) {
                         case 0:
                             var0 = _closure2_slot55;
@@ -2155,7 +2155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot59 = var0;
-                var0 = function() { // Original name: peg$parse_, environment: var1
+                var0 = function() {
                     _fun48323: for (var _fun48323_ip = 0;;) switch (_fun48323_ip) {
                         case 0:
                             var0 = _closure2_slot55;
@@ -2260,7 +2260,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot60 = var0;
-                var0 = function() { // Original name: peg$parseNUM, environment: var1
+                var0 = function() {
                     _fun48324: for (var _fun48324_ip = 0;;) switch (_fun48324_ip) {
                         case 0:
                             var3 = _closure2_slot50;
@@ -2939,7 +2939,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot39 = var12;
                 var0 = var11.bind(var5)(var8, var0);
                 var _closure2_slot40 = var0;
-                var0 = function(arg0, arg1) { // Original name: peg$f0, environment: var1
+                var0 = function arg0, arg1() {
                     _fun48325: for (var _fun48325_ip = 0;;) switch (_fun48325_ip) {
                         case 0:
                             var4 = arg0;
@@ -2999,7 +2999,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot41 = var0;
-                var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) { // Original name: peg$f1, environment: var1
+                var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8() {
                     var0 = {};
                     var1 = new Array(9);
                     var2 = arg0;
@@ -3024,7 +3024,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot42 = var0;
-                var0 = function(arg0, arg1) { // Original name: peg$f2, environment: var1
+                var0 = function arg0, arg1() {
                     _fun48328: for (var _fun48328_ip = 0;;) switch (_fun48328_ip) {
                         case 0:
                             var2 = arg0;
@@ -3051,7 +3051,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot43 = var0;
-                var0 = function(arg0, arg1) { // Original name: peg$f3, environment: var1
+                var0 = function arg0, arg1() {
                     _fun48329: for (var _fun48329_ip = 0;;) switch (_fun48329_ip) {
                         case 0:
                             var2 = arg0;
@@ -3080,7 +3080,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot44 = var0;
-                var0 = function(arg0, arg1) { // Original name: peg$f4, environment: var1
+                var0 = function arg0, arg1() {
                     _fun48330: for (var _fun48330_ip = 0;;) switch (_fun48330_ip) {
                         case 0:
                             var5 = arg0;
@@ -3118,7 +3118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var _closure2_slot45 = var0;
-                var0 = function(arg0, arg1) { // Original name: peg$f5, environment: var1
+                var0 = function arg0, arg1() {
                     var0 = new Array(2);
                     var1 = arg0;
                     var0[0] = var1;
@@ -3127,7 +3127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot46 = var0;
-                var0 = function(arg0) { // Original name: peg$f6, environment: var1
+                var0 = function arg0() {
                     var1 = {};
                     var0 = global;
                     var0 = var0.HermesInternal;
@@ -3142,7 +3142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot47 = var0;
-                var0 = function(arg0) { // Original name: peg$f7, environment: var1
+                var0 = function arg0() {
                     var1 = {};
                     var0 = global;
                     var0 = var0.HermesInternal;
@@ -3157,7 +3157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var _closure2_slot48 = var0;
-                var0 = function() { // Original name: peg$f8, environment: var1
+                var0 = function() {
                     var0 = global;
                     var2 = var0.parseFloat;
                     var4 = _closure2_slot0;

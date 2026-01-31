@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: defaultButtonStyles, environment: var0
+    var2 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = {
@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0.triggerIcon = var1;
         return var0;
     };
-    var3 = function(arg0) { // Original name: defaultStyles, environment: var0
+    var3 = function arg0() {
         var2 = arg0;
         var0 = {};
         var1 = {
@@ -217,7 +217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'bottom': 0
     };
     var1.modalWrapper = var2;
-    var0 = function(arg0) { // Original name: modalSheetContainer, environment: var0
+    var0 = function arg0() {
         var0 = {
             'backgroundColor': null,
             'borderTopLeftRadius': 16,

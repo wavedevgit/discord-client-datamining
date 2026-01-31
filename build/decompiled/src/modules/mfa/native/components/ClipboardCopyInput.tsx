@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/mfa/native/components/ClipboardCopyInput.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ClipboardCopyInput, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var12 = var0.label;
         var11 = var0.placeholder;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             _fun86359: for (var _fun86359_ip = 0;;) switch (_fun86359_ip) {
                 case 0:
-                    var1 = function() { // Original name: _run, environment: var0
+                    var1 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot3;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun86359
                     }
                 case 37:
-                    var1 = function() { // Original name: run, environment: var0
+                    var1 = function() {
                         var0 = undefined;
                         var3 = _closure3_slot0;
                         var2 = var3.apply;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getSoundmojiFromMessage, environment: var3
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         _fun44061: for (var _fun44061_ip = 0;;) switch (_fun44061_ip) {
             case 0:
                 var8 = arg1;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/sounds/soundmoji/utils/getSoundmojiASTFromString.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0, arg1) { // Original name: getSoundmojiASTFromString, environment: var3
+    var3 = function arg0, arg1() {
         _fun44062: for (var _fun44062_ip = 0;;) switch (_fun44062_ip) {
             case 0:
                 var1 = arg0;

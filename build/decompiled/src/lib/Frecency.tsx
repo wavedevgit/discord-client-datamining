@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var3];
     var3 = var5.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: DEFAULT_FRECENCY, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.ceil;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: DEFAULT_WEIGHT, environment: var1
+    var3 = function arg0() {
         _fun31635: for (var _fun31635_ip = 0;;) switch (_fun31635_ip) {
             case 0:
                 var2 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0) { // Original name: Frecency, environment: var4
+        var2 = function arg0() {
             _fun31637: for (var _fun31637_ip = 0;;) switch (_fun31637_ip) {
                 case 0:
                     var3 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'overwriteHistory';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun31638: for (var _fun31638_ip = 0;;) switch (_fun31638_ip) {
                 case 0:
                     var8 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'markDirty';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var1 = true;
             var0 = this;
             var0.dirty = var1;
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDirty';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.dirty;
             return var0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'track';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun31643: for (var _fun31643_ip = 0;;) switch (_fun31643_ip) {
                 case 0:
                     var4 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getEntry';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun31644: for (var _fun31644_ip = 0;;) switch (_fun31644_ip) {
                 case 0:
                     var3 = arg0;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getScore';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun31645: for (var _fun31645_ip = 0;;) switch (_fun31645_ip) {
                 case 0:
                     var2 = this;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getFrecency';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun31646: for (var _fun31646_ip = 0;;) switch (_fun31646_ip) {
                 case 0:
                     var2 = this;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'compute';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun31647: for (var _fun31647_ip = 0;;) switch (_fun31647_ip) {
                 case 0:
                     var4 = this;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'frequently';
         var0.key = var5;
-        var5 = function() { // Original name: get, environment: var4
+        var5 = function() {
             _fun31655: for (var _fun31655_ip = 0;;) switch (_fun31655_ip) {
                 case 0:
                     var0 = this;
@@ -797,7 +797,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.get = var5;
-        var4 = function(arg0) { // Original name: set, environment: var4
+        var4 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0._frequently = var1;

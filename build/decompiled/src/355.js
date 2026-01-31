@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun5223: for (var _fun5223_ip = 0;;) switch (_fun5223_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun5226: for (var _fun5226_ip = 0;;) switch (_fun5226_ip) {
             case 0:
                 var4 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: createNumericInterpolation, environment: var1
+    var0 = function arg0() {
         _fun5228: for (var _fun5228_ip = 0;;) switch (_fun5228_ip) {
             case 0:
                 var1 = arg0;
@@ -349,7 +349,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: mapStringToNumericComponents, environment: var1
+    var0 = function arg0() {
         _fun5230: for (var _fun5230_ip = 0;;) switch (_fun5230_ip) {
             case 0:
                 var7 = arg0;
@@ -528,7 +528,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0, arg1) { // Original name: AnimatedInterpolation, environment: var5
+        var3 = function arg0, arg1() {
             _fun5232: for (var _fun5232_ip = 0;;) switch (_fun5232_ip) {
                 case 0:
                     var1 = arg1;
@@ -578,7 +578,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = '_getInterpolation';
         var4.key = var0;
-        var0 = function() { // Original name: _getInterpolation, environment: var5
+        var0 = function() {
             _fun5233: for (var _fun5233_ip = 0;;) switch (_fun5233_ip) {
                 case 0:
                     var0 = this;
@@ -612,7 +612,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     _fun5233_ip = 92;
                     continue _fun5233;
                 case 72:
-                    var2 = function(arg0) { // Original name: createStringInterpolation, environment: var1
+                    var2 = function arg0() {
                         _fun5234: for (var _fun5234_ip = 0;;) switch (_fun5234_ip) {
                             case 0:
                                 var2 = arg0;
@@ -829,7 +829,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__makeNative';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: __makeNative, environment: var5
+        var6 = function arg0() {
             var3 = arg0;
             var6 = this;
             var1 = var6._parent;
@@ -853,7 +853,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getValue';
         var4.key = var6;
-        var6 = function() { // Original name: __getValue, environment: var5
+        var6 = function() {
             var3 = this;
             var1 = var3._parent;
             var0 = var1.__getValue;
@@ -879,7 +879,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'interpolate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: interpolate, environment: var5
+        var6 = function arg0() {
             var3 = _closure2_slot0;
             var0 = var3.prototype;
             var1 = Object.create(var0, {
@@ -899,7 +899,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__attach';
         var4.key = var6;
-        var6 = function() { // Original name: __attach, environment: var5
+        var6 = function() {
             var5 = this;
             var1 = var5._parent;
             var0 = var1.__addChild;
@@ -921,7 +921,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__detach';
         var4.key = var6;
-        var6 = function() { // Original name: __detach, environment: var5
+        var6 = function() {
             var5 = this;
             var1 = var5._parent;
             var0 = var1.__removeChild;
@@ -943,7 +943,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '__getNativeConfig';
         var4.key = var6;
-        var5 = function() { // Original name: __getNativeConfig, environment: var5
+        var5 = function() {
             _fun5249: for (var _fun5249_ip = 0;;) switch (_fun5249_ip) {
                 case 0:
                     var2 = this;

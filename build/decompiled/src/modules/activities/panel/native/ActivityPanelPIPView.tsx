@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var7;
-    var3 = function() { // Original name: useBaseActivityPanelPIPView, environment: var4
+    var3 = function() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 15;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var3;
-    var1 = function(arg0) { // Original name: BaseActivityPanelPIPView, environment: var4
+    var1 = function arg0() {
         _fun110334: for (var _fun110334_ip = 0;;) switch (_fun110334_ip) {
             case 0:
                 var1 = arg0;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var7];
                 var11 = var5.bind(var3)(var1);
                 var6 = var11.useAnimatedStyle;
-                var1 = function() { // Original name: W, environment: var0
+                var1 = function() {
                     _fun110338: for (var _fun110338_ip = 0;;) switch (_fun110338_ip) {
                         case 0:
                             var1 = _closure2_slot7;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var0;
                         case 362:
                             var0 = function() { // Environment: var0
-                                var0 = function() { // Original name: ActivityPanelPIPViewTsx2, environment: var0
+                                var0 = function() {
                                     _fun110340: for (var _fun110340_ip = 0;;) switch (_fun110340_ip) {
                                         case 0:
                                             var1 = arguments[0];
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var9.bind(var18)(var1, var6);
                 var9 = _closure1_slot3;
                 var6 = var9.useCallback;
-                var1 = function() { // Original name: J, environment: var0
+                var1 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 20;

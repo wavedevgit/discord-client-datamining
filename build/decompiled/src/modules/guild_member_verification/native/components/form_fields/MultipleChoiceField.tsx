@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/form_fields/MultipleChoiceField.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MultipleChoiceField, environment: var1
+    var1 = function arg0() {
         _fun61056: for (var _fun61056_ip = 0;;) switch (_fun61056_ip) {
             case 0:
                 var0 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var11;
             case 213:
                 var5.defaultValue = var9;
-                var9 = function(arg0) { // Original name: onChange, environment: var8
+                var9 = function arg0() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = arg0;

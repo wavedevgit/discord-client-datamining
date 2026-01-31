@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VEVOOPropBlurTintRgba, environment: var1
+    var1 = function() {
         _fun99996: for (var _fun99996_ip = 0;;) switch (_fun99996_ip) {
             case 0:
                 var0 = _closure1_slot11;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.FormSwitch;
                 var6 = {};
                 var6.value = var5;
-                var8 = function(arg0) { // Original name: onValueChange, environment: var4
+                var8 = function arg0() {
                     _fun99999: for (var _fun99999_ip = 0;;) switch (_fun99999_ip) {
                         case 0:
                             var2 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = !var5;
                 var12.disabled = var16;
                 var12.initialValue = var15;
-                var15 = function(arg0) { // Original name: onValueChange, environment: var4
+                var15 = function arg0() {
                     var3 = _closure2_slot5;
                     var2 = _closure2_slot1;
                     var0 = undefined;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.subLabel = var6;
                 var5 = !var5;
                 var0.disabled = var5;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot1;
                     var5 = _closure1_slot2;
                     var0 = 12;
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot1;
                     var3 = var4.bind(var5)(var3);
                     var1.color = var3;
-                    var3 = function(arg0) { // Original name: onSelect, environment: var3
+                    var3 = function arg0() {
                         var3 = _closure2_slot5;
                         var4 = _closure1_slot0;
                         var2 = _closure1_slot2;

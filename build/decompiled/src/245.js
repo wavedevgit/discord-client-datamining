@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10) { // Original name: renderApplication, environment: var1
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10() {
         _fun3294: for (var _fun3294_ip = 0;;) switch (_fun3294_ip) {
             case 0:
                 var18 = arg1;

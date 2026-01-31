@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var3 = function(arg0) { // Original name: isM4A, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isM4A = var0;
     var2.isMP3 = var0;
     var2.isWAV = var0;
-    var4 = function(arg0, arg1) { // Original name: isAAC, environment: var1
+    var4 = function arg0, arg1() {
         _fun37740: for (var _fun37740_ip = 0;;) switch (_fun37740_ip) {
             case 0:
                 var5 = arg1;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isAAC = var4;
-    var4 = function(arg0) { // Original name: isAMR, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isAMR = var4;
-    var4 = function(arg0) { // Original name: isFLAC, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isFLAC = var4;
     var2.isM4A = var3;
-    var3 = function(arg0) { // Original name: isMP3, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isMP3 = var3;
-    var1 = function(arg0) { // Original name: isWAV, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;

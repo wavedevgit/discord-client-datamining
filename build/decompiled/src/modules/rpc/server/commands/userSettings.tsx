@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.OAuth2Scopes;
     var8 = var8.IDENTIFY;
     var3.scope = var8;
-    var7 = function() { // Original name: handler, environment: var7
+    var7 = function() {
         var0 = {};
         var1 = _closure1_slot0;
         var1 = var1.locale;

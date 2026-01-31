@@ -158,7 +158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var18 = var13[var9];
                         var22 = var17.bind(var3)(var18);
                         var21 = var22.useEvent;
-                        var20 = function(arg0) { // Original name: pnpm_ReanimatedNativeStackScreenTsx1, environment: var8
+                        var20 = function arg0() {
                             var0 = arg0;
                             var3 = _closure2_slot2;
                             var2 = var0.progress;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var9 = var13[var9];
                         var17 = var17.bind(var3)(var9);
                         var9 = var17.useEvent;
-                        var8 = function(arg0) { // Original name: pnpm_ReanimatedNativeStackScreenTsx2, environment: var8
+                        var8 = function arg0() {
                             _fun99868: for (var _fun99868_ip = 0;;) switch (_fun99868_ip) {
                                 case 0:
                                     var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: handleNameInputScreenOrSuggestions, environment: var4
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _handleNameInputScreenOrSuggestions, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function() { // Original name: _handlePhoneVerificationComplete, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _startContactSync, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: _bulkAddFriendSuggestions, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var11.BddRzS;
                         var11 = var12.bind(var13)(var11);
                         var3.confirmText = var11;
-                        var11 = function() { // Original name: onConfirm, environment: var5
+                        var11 = function() {
                             var2 = _closure1_slot33;
                             var1 = {};
                             var3 = false;
@@ -749,7 +749,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var6.BddRzS;
                         var6 = var7.bind(var8)(var6);
                         var2.confirmText = var6;
-                        var5 = function() { // Original name: onConfirm, environment: var5
+                        var5 = function() {
                             var2 = _closure1_slot33;
                             var1 = {};
                             var3 = false;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _verifyPhone, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -946,7 +946,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var5 = function(arg0, arg1, arg2) { // Original name: openContactSyncModal, environment: var4
+    var5 = function arg0, arg1, arg2() {
         _fun81448: for (var _fun81448_ip = 0;;) switch (_fun81448_ip) {
             case 0:
                 var6 = arg0;
@@ -1011,7 +1011,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot31 = var5;
-    var3 = function() { // Original name: refreshContactSyncPermissionStatus, environment: var4
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -1032,7 +1032,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var3;
-    var1 = function(arg0) { // Original name: closeContactSyncModal, environment: var4
+    var1 = function arg0() {
         _fun81451: for (var _fun81451_ip = 0;;) switch (_fun81451_ip) {
             case 0:
                 var2 = arg0;
@@ -1062,7 +1062,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun81451
                 }
             case 55:
-                var6 = function() { // Original name: oldCloseContactSyncModal, environment: var1
+                var6 = function() {
                     _fun81454: for (var _fun81454_ip = 0;;) switch (_fun81454_ip) {
                         case 0:
                             var8 = arguments[0];
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun81451_ip = 107;
                 continue _fun81451;
             case 82:
-                var1 = function(arg0) { // Original name: redesignCloseContactSyncModal, environment: var1
+                var1 = function arg0() {
                     _fun81452: for (var _fun81452_ip = 0;;) switch (_fun81452_ip) {
                         case 0:
                             var2 = arguments[1];
@@ -1358,7 +1358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/contact_sync/native/ContactSyncModalActionCreators.tsx';
     var6 = var7.bind(var8)(var6);
-    var6 = function() { // Original name: handlePhoneVerificationComplete, environment: var4
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot27;
         var2 = var3.apply;
@@ -1369,7 +1369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handlePhoneVerificationComplete = var6;
-    var6 = function() { // Original name: startContactSync, environment: var4
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -1380,7 +1380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.startContactSync = var6;
-    var6 = function() { // Original name: bulkAddFriendSuggestions, environment: var4
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot29;
         var2 = var3.apply;
@@ -1391,7 +1391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.bulkAddFriendSuggestions = var6;
-    var6 = function(arg0) { // Original name: goBackToLanding, environment: var4
+    var6 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot0;
         var4 = _closure1_slot2;
@@ -1418,7 +1418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.goBackToLanding = var6;
-    var6 = function(arg0, arg1) { // Original name: submitPhone, environment: var4
+    var6 = function arg0, arg1() {
         var3 = arg1;
         var4 = _closure1_slot9;
         var0 = undefined;
@@ -1443,7 +1443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.submitPhone = var6;
-    var6 = function() { // Original name: verifyPhone, environment: var4
+    var6 = function() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -1454,7 +1454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.verifyPhone = var6;
-    var6 = function(arg0, arg1) { // Original name: verifyPhoneWithPassword, environment: var4
+    var6 = function arg0, arg1() {
         var3 = arg1;
         var4 = _closure1_slot0;
         var7 = _closure1_slot2;
@@ -1479,7 +1479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.verifyPhoneWithPassword = var6;
-    var6 = function() { // Original name: upsellDismissed, environment: var4
+    var6 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 9;
@@ -1493,7 +1493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.upsellDismissed = var6;
     var2.openContactSyncModal = var5;
-    var5 = function() { // Original name: openContactSyncModalOnboarding, environment: var4
+    var5 = function() {
         _fun81464: for (var _fun81464_ip = 0;;) switch (_fun81464_ip) {
             case 0:
                 var1 = arguments[0];
@@ -1611,7 +1611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.openContactSyncModalOnboarding = var5;
-    var4 = function() { // Original name: openContactSyncModalDeeplink, environment: var4
+    var4 = function() {
         var3 = _closure1_slot31;
         var2 = {};
         var0 = 'Deep Link';

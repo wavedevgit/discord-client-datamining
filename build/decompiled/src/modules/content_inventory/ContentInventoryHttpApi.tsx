@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var8;
-    var0 = function() { // Original name: _postTrackToContentInventory, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getMyContentInventory = var5;
     var2.getContentInventoryOutbox = var4;
     var2.deleteContentInventoryEntryHistory = var3;
-    var1 = function() { // Original name: postTrackToContentInventory, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;

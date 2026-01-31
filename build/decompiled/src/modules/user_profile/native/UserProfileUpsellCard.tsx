@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileUpsellCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileUpsellCard, environment: var1
+    var1 = function arg0() {
         _fun79963: for (var _fun79963_ip = 0;;) switch (_fun79963_ip) {
             case 0:
                 var0 = arg0;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.ButtonColors;
                 var11 = var11.GREEN;
                 var8.color = var11;
-                var11 = function() { // Original name: renderIcon, environment: var12
+                var11 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

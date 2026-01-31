@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_calls/native/action_sheet/NUFKrispActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun68577: for (var _fun68577_ip = 0;;) switch (_fun68577_ip) {
             case 0:
                 var0 = arg0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.Colors;
                 var11 = var11.BRAND;
                 var8.color = var11;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var0 = 18;

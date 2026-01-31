@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var1.bind(var0)();
     var _closure1_slot14 = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: handleSyncContacts, environment: var5
+    var1 = function arg0, arg1, arg2() {
         _fun81420: for (var _fun81420_ip = 0;;) switch (_fun81420_ip) {
             case 0:
                 var4 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/contact_sync/native/components/ContactSyncSettings.tsx';
     var6 = var7.bind(var8)(var6);
-    var5 = function() { // Original name: _default, environment: var5
+    var5 = function() {
         _fun81421: for (var _fun81421_ip = 0;;) switch (_fun81421_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var19.bind(var21)(var17);
                 var10.label = var17;
                 var10.value = var16;
-                var16 = function(arg0) { // Original name: onValueChange, environment: var12
+                var16 = function arg0() {
                     var4 = _closure1_slot15;
                     var3 = _closure2_slot0;
                     var2 = _closure2_slot1;
@@ -574,7 +574,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22.label = var24;
                 var22 = var21.bind(var3)(var23, var22);
                 var17.trailing = var22;
-                var22 = function() { // Original name: onPress, environment: var12
+                var22 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 11;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var19.bind(var20)(var16);
                 var8.subLabel = var16;
                 var8.value = var15;
-                var15 = function(arg0) { // Original name: onValueChange, environment: var12
+                var15 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -750,7 +750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var15.bind(var16)(var14);
                 var9.subLabel = var14;
                 var9.value = var13;
-                var12 = function(arg0) { // Original name: onValueChange, environment: var12
+                var12 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 10;

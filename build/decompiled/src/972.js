@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = 'Module';
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function(arg0) { // Original name: isStreamingMethod, environment: var0
+    var2 = function arg0() {
         _fun10015: for (var _fun10015_ip = 0;;) switch (_fun10015_ip) {
             case 0:
                 var3 = arg0;
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isStreamingMethod = var2;
-    var0 = function(arg0) { // Original name: shouldInstrument, environment: var0
+    var0 = function arg0() {
         _fun10016: for (var _fun10016_ip = 0;;) switch (_fun10016_ip) {
             case 0:
                 var5 = arg0;

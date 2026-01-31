@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var3 = function() { // Original name: errorCallback, environment: var0
+    var3 = function() {
         _fun98664: for (var _fun98664_ip = 0;;) switch (_fun98664_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var2;
     var2 = 'sentry_tracingErrorCallback';
     var3.tag = var2;
-    var0 = function() { // Original name: registerSpanErrorInstrumentation, environment: var0
+    var0 = function() {
         _fun98665: for (var _fun98665_ip = 0;;) switch (_fun98665_ip) {
             case 0:
                 var0 = _closure1_slot2;

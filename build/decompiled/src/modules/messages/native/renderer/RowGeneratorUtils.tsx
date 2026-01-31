@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3 instanceof Object ? var3 : var7;
     var _closure1_slot5 = var3;
     var3 = {};
-    var7 = function(arg0, arg1, arg2, arg3) { // Original name: getImageSrc, environment: var4
+    var7 = function arg0, arg1, arg2, arg3() {
         _fun55967: for (var _fun55967_ip = 0;;) switch (_fun55967_ip) {
             case 0:
                 var5 = arg0;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.getImageSrc = var7;
-    var7 = function(arg0) { // Original name: createBackgroundHighlight, environment: var4
+    var7 = function arg0() {
         _fun55968: for (var _fun55968_ip = 0;;) switch (_fun55968_ip) {
             case 0:
                 var0 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.createBackgroundHighlight = var7;
-    var4 = function(arg0, arg1) { // Original name: createSwipeActions, environment: var4
+    var4 = function arg0, arg1() {
         _fun55969: for (var _fun55969_ip = 0;;) switch (_fun55969_ip) {
             case 0:
                 var2 = _closure1_slot3;

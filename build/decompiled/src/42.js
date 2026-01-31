@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
     var _closure1_slot4 = var4;
-    var3 = function(arg0, arg1) { // Original name: get, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = arg1;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4[var0];
     var0 = undefined;
     var4 = var5.bind(var0)(var4);
-    var4 = function(arg0) { // Original name: setRuntimeConfigProvider, environment: var1
+    var4 = function arg0() {
         _fun1291: for (var _fun1291_ip = 0;;) switch (_fun1291_ip) {
             case 0:
                 var1 = _closure1_slot5;
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.setRuntimeConfigProvider = var4;
     var2.get = var3;
-    var3 = function(arg0, arg1) { // Original name: getWithFallback_DEPRECATED, environment: var1
+    var3 = function arg0, arg1() {
         _fun1292: for (var _fun1292_ip = 0;;) switch (_fun1292_ip) {
             case 0:
                 var0 = arg0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun1292
                 }
             case 115:
-                var4 = function(arg0) { // Original name: FallbackNativeComponent, environment: var4
+                var4 = function arg0() {
                     var0 = null;
                     return var0;
                 };
@@ -288,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.getWithFallback_DEPRECATED = var3;
-    var1 = function(arg0) { // Original name: unstable_hasStaticViewConfig, environment: var1
+    var1 = function arg0() {
         _fun1294: for (var _fun1294_ip = 0;;) switch (_fun1294_ip) {
             case 0:
                 var0 = _closure1_slot5;

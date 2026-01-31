@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: isStableVoiceStateEqual, environment: var1
+    var0 = function arg0, arg1() {
         _fun66452: for (var _fun66452_ip = 0;;) switch (_fun66452_ip) {
             case 0:
                 var5 = arg0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var4 = function(arg0, arg1) { // Original name: useStableVoiceParticipant, environment: var1
+    var4 = function arg0, arg1() {
         var7 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var7;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var4;
-    var3 = function(arg0, arg1) { // Original name: useStableVideoState, environment: var1
+    var3 = function arg0, arg1() {
         var5 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var5;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MuteDeafenIconState = var6;
     var2.VideoIconState = var5;
     var2.useStableVoiceParticipant = var4;
-    var4 = function(arg0, arg1) { // Original name: useMuteDeafenIconState, environment: var1
+    var4 = function arg0, arg1() {
         _fun66457: for (var _fun66457_ip = 0;;) switch (_fun66457_ip) {
             case 0:
                 var4 = _closure1_slot8;
@@ -342,7 +342,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMuteDeafenIconState = var4;
     var2.useStableVideoState = var3;
-    var1 = function(arg0, arg1) { // Original name: useVideoIconState, environment: var1
+    var1 = function arg0, arg1() {
         _fun66458: for (var _fun66458_ip = 0;;) switch (_fun66458_ip) {
             case 0:
                 var4 = _closure1_slot9;

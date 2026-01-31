@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var16 = dependencyMap;
     var _closure1_slot0 = var15;
     var _closure1_slot1 = var16;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var14
+    var0 = function arg0, arg1, arg2() {
         _fun28276: for (var _fun28276_ip = 0;;) switch (_fun28276_ip) {
             case 0:
                 var3 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var14
+    var0 = function() {
         _fun28277: for (var _fun28277_ip = 0;;) switch (_fun28277_ip) {
             case 0:
             case 2: // try_start_0
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var15.bind(var0)(var3);
     var4 = var3.MessageType;
     var3 = function(arg0) { // Environment: var14
-        var3 = function() { // Original name: Experiment$Type, environment: var5
+        var3 = function() {
             var4 = this;
             var1 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'created_at',
                 'kind': 'message'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 6;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'edited_at',
                 'kind': 'message'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 6;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'hypothesis',
                 'kind': 'message'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 7;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'tech_spec_link',
                 'kind': 'message'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 7;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'unit_type',
                 'kind': 'enum'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot8;
                 var0 = ['discord_protos.discord_experimentation.v1.Experiment.UnitType'];
                 var0[1] = var1;
@@ -399,7 +399,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'kind': 'message',
                 'repeat': 1
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var0 = _closure1_slot16;
                 return var0;
             };
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'kind': 'message',
                 'repeat': 1
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 8;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'phase',
                 'kind': 'enum'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot15;
                 var0 = ['discord_protos.discord_experimentation.v1.Phase'];
                 var0[1] = var1;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'kind': 'enum',
                 'repeat': 1
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot9;
                 var0 = ['discord_protos.discord_experimentation.v1.Experiment.Surface'];
                 var0[1] = var1;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'exposure_tracking',
                 'kind': 'enum'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot10;
                 var0 = ['discord_protos.discord_experimentation.v1.Experiment.ExposureTracking'];
                 var0[1] = var1;
@@ -482,7 +482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'assignment_mode',
                 'kind': 'enum'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot11;
                 var0 = ['discord_protos.discord_experimentation.v1.Experiment.AssignmentMode'];
                 var0[1] = var1;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'type',
                 'kind': 'enum'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot12;
                 var0 = ['discord_protos.discord_experimentation.v1.Experiment.Type'];
                 var0[1] = var1;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'debug_config',
                 'kind': 'message'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var0 = _closure1_slot18;
                 return var0;
             };
@@ -563,7 +563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'expected_end_date',
                 'kind': 'message'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 6;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'archive_at',
                 'kind': 'message'
             };
-            var6 = function() { // Original name: T, environment: var6
+            var6 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 6;
@@ -613,7 +613,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'create';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun28297: for (var _fun28297_ip = 0;;) switch (_fun28297_ip) {
                 case 0:
                     var4 = arg0;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryRead';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun28298: for (var _fun28298_ip = 0;;) switch (_fun28298_ip) {
                 case 0:
                     var23 = arg0;
@@ -1340,7 +1340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryWrite';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun28299: for (var _fun28299_ip = 0;;) switch (_fun28299_ip) {
                 case 0:
                     var4 = arg0;
@@ -2195,7 +2195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var15.bind(var0)(var3);
     var4 = var3.MessageType;
     var3 = function(arg0) { // Environment: var14
-        var3 = function() { // Original name: Variation$Type, environment: var5
+        var3 = function() {
             var4 = this;
             var1 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -2230,7 +2230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'kind': 'message',
                 'repeat': 1
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var0 = _closure1_slot17;
                 return var0;
             };
@@ -2241,7 +2241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'type',
                 'kind': 'enum'
             };
-            var7 = function() { // Original name: T, environment: var6
+            var7 = function() {
                 var1 = _closure1_slot13;
                 var0 = ['discord_protos.discord_experimentation.v1.Variation.Type'];
                 var0[1] = var1;
@@ -2254,7 +2254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'configuration',
                 'kind': 'message'
             };
-            var6 = function() { // Original name: T, environment: var6
+            var6 = function() {
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = 7;
@@ -2280,7 +2280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'create';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun28305: for (var _fun28305_ip = 0;;) switch (_fun28305_ip) {
                 case 0:
                     var4 = arg0;
@@ -2331,7 +2331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryRead';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun28306: for (var _fun28306_ip = 0;;) switch (_fun28306_ip) {
                 case 0:
                     var21 = arg0;
@@ -2549,7 +2549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryWrite';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun28307: for (var _fun28307_ip = 0;;) switch (_fun28307_ip) {
                 case 0:
                     var4 = arg0;
@@ -2750,7 +2750,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var15.bind(var0)(var3);
     var17 = var3.MessageType;
     var3 = function(arg0) { // Environment: var14
-        var3 = function() { // Original name: Bucket$Type, environment: var5
+        var3 = function() {
             var4 = this;
             var1 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -2777,7 +2777,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'name': 'type',
                 'kind': 'enum'
             };
-            var6 = function() { // Original name: T, environment: var6
+            var6 = function() {
                 var1 = _closure1_slot14;
                 var0 = ['discord_protos.discord_experimentation.v1.Bucket.Type'];
                 var0[1] = var1;
@@ -2799,7 +2799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'create';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun28311: for (var _fun28311_ip = 0;;) switch (_fun28311_ip) {
                 case 0:
                     var4 = arg0;
@@ -2846,7 +2846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryRead';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun28312: for (var _fun28312_ip = 0;;) switch (_fun28312_ip) {
                 case 0:
                     var17 = arg0;
@@ -3005,7 +3005,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryWrite';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun28313: for (var _fun28313_ip = 0;;) switch (_fun28313_ip) {
                 case 0:
                     var4 = arg0;
@@ -3125,7 +3125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var15.bind(var0)(var1);
     var17 = var1.MessageType;
     var1 = function(arg0) { // Environment: var14
-        var3 = function() { // Original name: DebugConfig$Type, environment: var5
+        var3 = function() {
             var4 = this;
             var1 = _closure1_slot3;
             var3 = _closure2_slot0;
@@ -3189,7 +3189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'create';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun28316: for (var _fun28316_ip = 0;;) switch (_fun28316_ip) {
                 case 0:
                     var4 = arg0;
@@ -3239,7 +3239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryRead';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             _fun28317: for (var _fun28317_ip = 0;;) switch (_fun28317_ip) {
                 case 0:
                     var20 = arg0;
@@ -3440,7 +3440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'internalBinaryWrite';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun28318: for (var _fun28318_ip = 0;;) switch (_fun28318_ip) {
                 case 0:
                     var4 = arg0;

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun86993: for (var _fun86993_ip = 0;;) switch (_fun86993_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun86995: for (var _fun86995_ip = 0;;) switch (_fun86995_ip) {
             case 0:
                 var3 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useUsersHavePlayedSocialLayerStorefrontGamesInOutbox, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var5 = var1.userIds;
         var _closure2_slot0 = var5;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useUsersHavePlayedSocialLayerStorefrontGamesInOutbox = var3;
-    var3 = function(arg0) { // Original name: useAreUsersInSocialLayerStorefrontMutualGuilds, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var5 = var1.userIds;
         var _closure2_slot0 = var5;
@@ -464,7 +464,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAreUsersInSocialLayerStorefrontMutualGuilds = var3;
-    var3 = function(arg0) { // Original name: useAreUsersPlayingStorefrontEnabledGames, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var5 = var1.userIds;
         var _closure2_slot0 = var5;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAreUsersPlayingStorefrontEnabledGames = var3;
-    var3 = function(arg0) { // Original name: useHasCurrentUserPlayedSocialLayerStorefrontGames, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var5 = var1.gameIds;
         var _closure2_slot0 = var5;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasCurrentUserPlayedSocialLayerStorefrontGames = var3;
-    var1 = function(arg0) { // Original name: useIsCurrentUserPlayingSocialLayerStorefrontGames, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var5 = var1.gameIds;
         var _closure2_slot0 = var5;

@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot7 = var4;
     var2.GlobalStateContext = var3;
-    var3 = function(arg0) { // Original name: GlobalStateProvider, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var9 = var0.value;
@@ -64,7 +64,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = {};
         var12 = var5.bind(var6)(var2);
         var _closure2_slot1 = var12;
-        var11 = function(arg0, arg1) { // Original name: pnpm_indexTsx1, environment: var1
+        var11 = function arg0, arg1() {
             var2 = _closure2_slot1;
             var0 = global;
             var6 = var0.Object;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var11.__workletHash = var2;
         var2 = _closure1_slot6;
         var11.__initData = var2;
-        var10 = function(arg0) { // Original name: pnpm_indexTsx2, environment: var1
+        var10 = function arg0() {
             var1 = _closure2_slot0;
             var0 = arg0;
             var1.value = var0;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.GlobalStateProvider = var3;
-    var1 = function() { // Original name: useGlobalState, environment: var1
+    var1 = function() {
         _fun74851: for (var _fun74851_ip = 0;;) switch (_fun74851_ip) {
             case 0:
                 var2 = _closure1_slot3;

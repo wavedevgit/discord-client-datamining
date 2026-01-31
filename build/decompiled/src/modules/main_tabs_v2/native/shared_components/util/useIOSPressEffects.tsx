@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/shared_components/util/useIOSPressEffects.tsx';
     var4 = var5.bind(var6)(var4);
     var2.SPRING_CONFIG = var3;
-    var1 = function(arg0) { // Original name: useIOSPressEffects, environment: var1
+    var1 = function arg0() {
         _fun44440: for (var _fun44440_ip = 0;;) switch (_fun44440_ip) {
             case 0:
                 var1 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var13[var10];
                 var5 = var11.bind(var12)(var1);
                 var1 = var5.useAnimatedStyle;
-                var0 = function() { // Original name: S, environment: var0
+                var0 = function() {
                     _fun44444: for (var _fun44444_ip = 0;;) switch (_fun44444_ip) {
                         case 0:
                             var1 = _closure1_slot0;

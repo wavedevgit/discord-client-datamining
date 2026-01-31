@@ -29,11 +29,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _functionToStringIntegration, environment: var1
+    var1 = function() {
         var0 = {};
         var2 = 'FunctionToString';
         var0.name = var2;
-        var2 = function() { // Original name: setupOnce, environment: var1
+        var2 = function() {
             _fun99552: for (var _fun99552_ip = 0;;) switch (_fun99552_ip) {
                 case 0:
                     var0 = global;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.setupOnce = var2;
-        var1 = function(arg0) { // Original name: setup, environment: var1
+        var1 = function arg0() {
             var3 = _closure1_slot3;
             var2 = var3.set;
             var1 = arg0;

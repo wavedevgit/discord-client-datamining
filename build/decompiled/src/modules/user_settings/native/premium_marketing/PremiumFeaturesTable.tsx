@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.priceContainer = var11;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot12 = var6;
-    var6 = function() { // Original name: CheckIcon, environment: var1
+    var6 = function() {
         _fun59125: for (var _fun59125_ip = 0;;) switch (_fun59125_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.icon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot14 = var3;
-    var3 = function() { // Original name: CloseIcon, environment: var1
+    var3 = function() {
         var0 = _closure1_slot14;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: CellText, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var4 = var0.text;
         var3 = _closure1_slot10;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getAccesibilityLabel, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 16;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var3;
-    var3 = function(arg0) { // Original name: Row, environment: var1
+    var3 = function arg0() {
         _fun59129: for (var _fun59129_ip = 0;;) switch (_fun59129_ip) {
             case 0:
                 var0 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 247:
                 var6[1] = var7;
                 var0.style = var6;
-                var4 = function(arg0) { // Original name: onLayout, environment: var4
+                var4 = function arg0() {
                     var2 = _closure2_slot0;
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/PremiumFeaturesTable.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun59131: for (var _fun59131_ip = 0;;) switch (_fun59131_ip) {
             case 0:
                 var0 = arg0;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1) { // Original name: renderTooltipItem, environment: var1
+    var3 = function arg0, arg1() {
         _fun57340: for (var _fun57340_ip = 0;;) switch (_fun57340_ip) {
             case 0:
                 var8 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Tooltip/native/AnimatedTooltip.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AnimatedTooltip, environment: var1
+    var1 = function arg0() {
         _fun57341: for (var _fun57341_ip = 0;;) switch (_fun57341_ip) {
             case 0:
                 var4 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0, arg1) { // Original name: transitionToChannel, environment: var1
+    var4 = function arg0, arg1() {
         _fun35400: for (var _fun35400_ip = 0;;) switch (_fun35400_ip) {
             case 0:
                 var5 = arg1;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: transitionToThreadMessage, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg0;
         var4 = _closure1_slot1;
         var5 = _closure1_slot2;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/routing/transitionToChannel.tsx';
     var5 = var6.bind(var7)(var5);
     var2.transitionToChannel = var4;
-    var4 = function(arg0, arg1) { // Original name: transitionToThread, environment: var1
+    var4 = function arg0, arg1() {
         var1 = arg0;
         var4 = _closure1_slot1;
         var5 = _closure1_slot2;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transitionToThread = var4;
     var2.transitionToThreadMessage = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: tryTransitionToThreadMessage, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun35403: for (var _fun35403_ip = 0;;) switch (_fun35403_ip) {
             case 0:
                 var4 = arg3;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.tryTransitionToThreadMessage = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: transitionToMessage, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun35404: for (var _fun35404_ip = 0;;) switch (_fun35404_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.transitionToMessage = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: transitionToStaticChannelRoute, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 4;

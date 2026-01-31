@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ComponentActions;
     var _closure1_slot6 = var1;
     var1 = {};
-    var6 = function() { // Original name: rebuildRTCActiveChannels, environment: var3
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.rebuildRTCActiveChannels = var6;
-    var6 = function(arg0, arg1) { // Original name: selectParticipant, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.selectParticipant = var6;
-    var6 = function(arg0, arg1) { // Original name: popoutParticipant, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.popoutParticipant = var6;
-    var6 = function(arg0, arg1) { // Original name: returnParticipant, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.returnParticipant = var6;
-    var6 = function(arg0, arg1) { // Original name: updateLayout, environment: var3
+    var6 = function arg0, arg1() {
         _fun62588: for (var _fun62588_ip = 0;;) switch (_fun62588_ip) {
             case 0:
                 var6 = arg0;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateLayout = var6;
-    var6 = function(arg0, arg1) { // Original name: toggleParticipants, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.toggleParticipants = var6;
-    var6 = function(arg0, arg1) { // Original name: toggleParticipantsList, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.toggleParticipantsList = var6;
-    var6 = function(arg0, arg1) { // Original name: toggleVoiceParticipantsHidden, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.toggleVoiceParticipantsHidden = var6;
-    var6 = function(arg0, arg1) { // Original name: updateStageStreamSize, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateStageStreamSize = var6;
-    var6 = function(arg0, arg1) { // Original name: updateStageVideoLimitBoostUpsellDismissed, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.updateStageVideoLimitBoostUpsellDismissed = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: updateChatOpen, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun62594: for (var _fun62594_ip = 0;;) switch (_fun62594_ip) {
             case 0:
                 var8 = arg0;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateChatOpen = var6;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: jumpToVoiceChannelMessage, environment: var3
+    var3 = function arg0, arg1, arg2, arg3() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 2;

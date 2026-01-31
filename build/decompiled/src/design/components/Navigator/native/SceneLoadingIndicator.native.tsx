@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Navigator/native/SceneLoadingIndicator.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: SceneLoadingIndicator, environment: var1
+    var1 = function() {
         var3 = _closure1_slot6;
         var2 = _closure1_slot3;
         var1 = {};

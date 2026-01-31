@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var16;
     var _closure1_slot2 = var12;
-    var0 = function(arg0) { // Original name: getButtonColorsToTextStyles, environment: var10
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var3 = _closure1_slot13;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: getButtonSizesToTextStyles, environment: var10
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var3 = _closure1_slot15;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: getButtonLooksToTextStyles, environment: var10
+    var0 = function arg0() {
         var1 = arg0;
         var0 = {};
         var3 = _closure1_slot12;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: getTextStyles, environment: var10
+    var0 = function arg0, arg1() {
         _fun44326: for (var _fun44326_ip = 0;;) switch (_fun44326_ip) {
             case 0:
                 var0 = arg0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var3 = function(arg0, arg1) { // Original name: getButtonStyles, environment: var10
+    var3 = function arg0, arg1() {
         _fun44327: for (var _fun44327_ip = 0;;) switch (_fun44327_ip) {
             case 0:
                 var0 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var3;
-    var1 = function(arg0) { // Original name: ButtonText, environment: var10
+    var1 = function arg0() {
         _fun44328: for (var _fun44328_ip = 0;;) switch (_fun44328_ip) {
             case 0:
                 var0 = arg0;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var1;
-    var0 = function(arg0) { // Original name: getRedesignVariant, environment: var10
+    var0 = function arg0() {
         _fun44329: for (var _fun44329_ip = 0;;) switch (_fun44329_ip) {
             case 0:
                 var1 = arg0;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: getRedesignSize, environment: var10
+    var0 = function arg0() {
         _fun44330: for (var _fun44330_ip = 0;;) switch (_fun44330_ip) {
             case 0:
                 var1 = arg0;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var9 = function(arg0) { // Original name: Button, environment: var10
+    var9 = function arg0() {
         _fun44331: for (var _fun44331_ip = 0;;) switch (_fun44331_ip) {
             case 0:
                 var2 = arg0;

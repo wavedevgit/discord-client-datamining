@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var8;
     var _closure1_slot3 = var6;
-    var0 = function(arg0) { // Original name: useActivityOrientationState, environment: var3
+    var0 = function arg0() {
         _fun110261: for (var _fun110261_ip = 0;;) switch (_fun110261_ip) {
             case 0:
                 var0 = arg0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var1 = function(arg0) { // Original name: BaseActivityPanelController, environment: var3
+    var1 = function arg0() {
         _fun110265: for (var _fun110265_ip = 0;;) switch (_fun110265_ip) {
             case 0:
                 var1 = arg0;
@@ -501,7 +501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 554:
                 var6.isActivityFocused = var7;
                 var6.isVoicePanelFullscreen = var5;
-                var5 = function(arg0) { // Original name: useSafeAreaLock, environment: var2
+                var5 = function arg0() {
                     var1 = arg0;
                     var6 = var1.isActivityConnected;
                     var _closure3_slot0 = var6;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5 = var5.bind(var3)(var6);
-                var5 = function(arg0) { // Original name: useAppFreeze, environment: var2
+                var5 = function arg0() {
                     var10 = arg0;
                     var _closure3_slot0 = var10;
                     var13 = _closure1_slot0;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var14[var12];
                     var9 = var13.bind(var0)(var3);
                     var8 = var9.useAnimatedReaction;
-                    var4 = function() { // Original name: l, environment: var1
+                    var4 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.get;
                         var0 = var0.bind(var1)();
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4.__workletHash = var3;
                     var3 = _closure1_slot18;
                     var4.__initData = var3;
-                    var3 = function(arg0, arg1) { // Original name: s, environment: var1
+                    var3 = function arg0, arg1() {
                         _fun110274: for (var _fun110274_ip = 0;;) switch (_fun110274_ip) {
                             case 0:
                                 var2 = arg0;
@@ -970,7 +970,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/activities/panel/native/ActivityPanelController.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: ActivityPanelController, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var4 = var1.children;
         var2 = _closure1_slot0;

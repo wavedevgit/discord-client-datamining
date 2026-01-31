@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun7133: for (var _fun7133_ip = 0;;) switch (_fun7133_ip) {
             case 0:
                 var3 = arg0;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun7134: for (var _fun7134_ip = 0;;) switch (_fun7134_ip) {
             case 0:
             case 2: // try_start_0
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getDisplayName, environment: var1
+    var0 = function arg0() {
         _fun7137: for (var _fun7137_ip = 0;;) switch (_fun7137_ip) {
             case 0:
                 var2 = arg0;
@@ -116,13 +116,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: memoizeGetStateFromStores, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var0 = null;
         var _closure2_slot1 = var0;
         var _closure2_slot2 = var0;
-        var2 = function(arg0) { // Original name: getCachedResult, environment: var1
+        var2 = function arg0() {
             _fun7139: for (var _fun7139_ip = 0;;) switch (_fun7139_ip) {
                 case 0:
                     var2 = arg0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure2_slot3 = var2;
-        var0 = function(arg0) { // Original name: memoizedFunction, environment: var1
+        var0 = function arg0() {
             _fun7140: for (var _fun7140_ip = 0;;) switch (_fun7140_ip) {
                 case 0:
                     var4 = arg0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = '../discord_common/js/packages/flux/connectStores.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: connectStores, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun7142: for (var _fun7142_ip = 0;;) switch (_fun7142_ip) {
             case 0:
                 var4 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun7142
                 }
             case 26:
-                var2 = function(arg0, arg1) { // Original name: connectStoresWithoutRef, environment: var1
+                var2 = function arg0, arg1() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = arg1;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot8;
                         var2 = var2.Component;
                         var0 = function(arg0) { // Environment: var0
-                            var3 = function(arg0) { // Original name: FluxContainer, environment: var5
+                            var3 = function arg0() {
                                 var6 = this;
                                 var11 = 0;
                                 var7 = copyRestArgs(var11);
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var0 = 'componentDidMount';
                             var4.key = var0;
-                            var0 = function() { // Original name: value, environment: var5
+                            var0 = function() {
                                 var0 = this;
                                 var2 = var0.listener;
                                 var1 = var2.attach;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var6 = 'componentWillUnmount';
                             var4.key = var6;
-                            var6 = function() { // Original name: value, environment: var5
+                            var6 = function() {
                                 var0 = this;
                                 var2 = var0.listener;
                                 var1 = var2.detach;
@@ -437,7 +437,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var6 = 'render';
                             var4.key = var6;
-                            var5 = function() { // Original name: value, environment: var5
+                            var5 = function() {
                                 var4 = this;
                                 var1 = var4.memoizedGetStateFromStores;
                                 var0 = var4.props;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun7142_ip = 54;
                 continue _fun7142;
             case 41:
-                var2 = function(arg0, arg1) { // Original name: connectStoresWithRef, environment: var1
+                var2 = function arg0, arg1() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var1 = arg1;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = _closure1_slot8;
                         var6 = var5.Component;
                         var2 = function(arg0) { // Environment: var0
-                            var3 = function(arg0) { // Original name: FluxContainer, environment: var5
+                            var3 = function arg0() {
                                 var6 = this;
                                 var11 = 0;
                                 var7 = copyRestArgs(var11);
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var0 = 'componentDidMount';
                             var4.key = var0;
-                            var0 = function() { // Original name: value, environment: var5
+                            var0 = function() {
                                 var0 = this;
                                 var2 = var0.listener;
                                 var1 = var2.attach;
@@ -600,7 +600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var6 = 'componentWillUnmount';
                             var4.key = var6;
-                            var6 = function() { // Original name: value, environment: var5
+                            var6 = function() {
                                 var0 = this;
                                 var2 = var0.listener;
                                 var1 = var2.detach;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = {};
                             var6 = 'render';
                             var4.key = var6;
-                            var5 = function() { // Original name: value, environment: var5
+                            var5 = function() {
                                 var1 = this;
                                 var0 = var1.props;
                                 var5 = var0.forwardedConnectStoresRef;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var11;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun15185: for (var _fun15185_ip = 0;;) switch (_fun15185_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun15187: for (var _fun15187_ip = 0;;) switch (_fun15187_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var7 = function(arg0, arg1) { // Original name: b64ToProto, environment: var1
+    var7 = function arg0, arg1() {
         _fun15188: for (var _fun15188_ip = 0;;) switch (_fun15188_ip) {
             case 0:
                 var1 = arg1;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var7;
-    var6 = function(arg0, arg1) { // Original name: protoToB64, environment: var1
+    var6 = function arg0, arg1() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: mutateUserGuildSettings, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun15190: for (var _fun15190_ip = 0;;) switch (_fun15190_ip) {
             case 0:
                 var0 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: mutateUserGuildSettingsInternal, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun15191: for (var _fun15191_ip = 0;;) switch (_fun15191_ip) {
             case 0:
                 var0 = arg0;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: mutateUserChannelSettingsInternal, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun15192: for (var _fun15192_ip = 0;;) switch (_fun15192_ip) {
             case 0:
                 var0 = arg0;
@@ -453,7 +453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.ZERO_STRING_GUILD_ID;
     var _closure1_slot4 = var8;
     var8 = {};
-    var9 = function(arg0) { // Original name: readerFactory, environment: var1
+    var9 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;
@@ -508,7 +508,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'modules/user_settings/UserSettingsUtils.tsx';
     var9 = var10.bind(var11)(var9);
     var2.BINARY_READ_OPTIONS = var8;
-    var8 = function(arg0, arg1) { // Original name: b64ToProtoWithType, environment: var1
+    var8 = function arg0, arg1() {
         _fun15194: for (var _fun15194_ip = 0;;) switch (_fun15194_ip) {
             case 0:
                 var3 = arg0;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.b64ToProtoWithType = var8;
     var2.b64ToProto = var7;
-    var7 = function(arg0) { // Original name: b64ToPreloadedUserSettingsProto, environment: var1
+    var7 = function arg0() {
         var3 = _closure1_slot9;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.b64ToPreloadedUserSettingsProto = var7;
-    var7 = function(arg0, arg1) { // Original name: protoToB64WithType, environment: var1
+    var7 = function arg0, arg1() {
         var3 = _closure1_slot10;
         var1 = _closure1_slot6;
         var0 = arg0;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.protoToB64WithType = var7;
     var2.protoToB64 = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: mergeTopLevelFields, environment: var1
+    var6 = function arg0, arg1, arg2() {
         _fun15197: for (var _fun15197_ip = 0;;) switch (_fun15197_ip) {
             case 0:
                 var3 = arg0;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.mergeTopLevelFields = var6;
     var2.mutateUserGuildSettings = var5;
     var2.mutateUserGuildSettingsInternal = var4;
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: mutateUserChannelSettings, environment: var1
+    var4 = function arg0, arg1, arg2, arg3() {
         var1 = arg2;
         var _closure2_slot0 = var1;
         var1 = arg3;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.mutateUserChannelSettings = var4;
     var2.mutateUserChannelSettingsInternal = var3;
-    var3 = function(arg0, arg1) { // Original name: runMigrations, environment: var1
+    var3 = function arg0, arg1() {
         _fun15200: for (var _fun15200_ip = 0;;) switch (_fun15200_ip) {
             case 0:
                 var3 = arg0;
@@ -778,7 +778,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.runMigrations = var3;
-    var1 = function(arg0, arg1) { // Original name: serializeUsageHistory, environment: var1
+    var1 = function arg0, arg1() {
         _fun15201: for (var _fun15201_ip = 0;;) switch (_fun15201_ip) {
             case 0:
                 var3 = arg1;

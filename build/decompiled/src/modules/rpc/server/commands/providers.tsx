@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13[0] = var12;
     var11[var14] = var13;
     var6.scope = var11;
-    var11 = function(arg0) { // Original name: validation, environment: var7
+    var11 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var11;
-    var11 = function(arg0) { // Original name: handler, environment: var7
+    var11 = function arg0() {
         _fun98098: for (var _fun98098_ip = 0;;) switch (_fun98098_ip) {
             case 0:
                 var0 = arg0;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot4;
                     var2 = undefined;
                     var1 = function*(arg0, arg1) { // Environment: var0
-                        var1 = function(arg0) { // Original name: handleConnectionsUpdate, environment: var0
+                        var1 = function arg0() {
                             _fun98106: for (var _fun98106_ip = 0;;) switch (_fun98106_ip) {
                                 case 0:
                                     var1 = _closure2_slot2;
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             }
                         };
                         var _closure4_slot0 = var1;
-                        var1 = function() { // Original name: handleConnectionsCallbackError, environment: var0
+                        var1 = function() {
                             var2 = _closure1_slot4;
                             var4 = _closure1_slot1;
                             var3 = _closure1_slot2;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var _closure4_slot1 = var1;
-                        var1 = function() { // Original name: cleanupPromise, environment: var0
+                        var1 = function() {
                             var3 = _closure1_slot1;
                             var5 = _closure1_slot2;
                             var0 = 10;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1 = undefined;
                                     var3 = undefined;
                                     var8 = undefined;
-                                    var10 = function(arg0) { // Original name: handleConnectionsUpdate, environment: var5
+                                    var10 = function arg0() {
                                         _fun98102: for (var _fun98102_ip = 0;;) switch (_fun98102_ip) {
                                             case 0:
                                                 var1 = _closure2_slot2;
@@ -353,7 +353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         }
                                     };
                                     var _closure5_slot2 = var10;
-                                    var9 = function() { // Original name: handleConnectionsCallbackError, environment: var5
+                                    var9 = function() {
                                         var3 = _closure5_slot1;
                                         var5 = _closure1_slot1;
                                         var4 = _closure1_slot2;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         return var0;
                                     };
                                     var _closure5_slot3 = var9;
-                                    var4 = function() { // Original name: cleanupPromise, environment: var5
+                                    var4 = function() {
                                         var3 = _closure1_slot1;
                                         var5 = _closure1_slot2;
                                         var0 = 10;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10[0] = var12;
     var8[var11] = var10;
     var3.scope = var8;
-    var8 = function(arg0) { // Original name: validation, environment: var7
+    var8 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;

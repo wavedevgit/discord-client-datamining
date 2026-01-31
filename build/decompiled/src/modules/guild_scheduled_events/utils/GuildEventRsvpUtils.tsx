@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function(arg0, arg1) { // Original name: getExistingRsvp, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot2;
         var1 = var2.getId;
         var4 = var1.bind(var2)();
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.getExistingRsvp = var4;
     var2.ResponseOptions = var3;
-    var3 = function() { // Original name: getResponseOptions, environment: var1
+    var3 = function() {
         var1 = {};
         var7 = _closure1_slot0;
         var8 = _closure1_slot1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getResponseOptions = var3;
-    var1 = function(arg0) { // Original name: handleRsvp, environment: var1
+    var1 = function arg0() {
         _fun65319: for (var _fun65319_ip = 0;;) switch (_fun65319_ip) {
             case 0:
                 var0 = arg0;

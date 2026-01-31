@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.bind(var0)(var6);
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function() { // Original name: title, environment: var3
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 1;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var6;
-    var6 = function() { // Original name: description, environment: var3
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 1;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.description = var6;
     var6 = false;
     var1.canCreateGuild = var6;
-    var3 = function() { // Original name: useIsGuildSupported, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 2;

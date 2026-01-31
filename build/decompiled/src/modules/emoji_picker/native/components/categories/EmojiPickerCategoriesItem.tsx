@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: EmojiPickerCategoriesItem, environment: var1
+    var1 = function arg0() {
         _fun74067: for (var _fun74067_ip = 0;;) switch (_fun74067_ip) {
             case 0:
                 var1 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6[var7];
                 var9 = var1.bind(var3)(var2);
                 var4 = var9.useAnimatedStyle;
-                var2 = function() { // Original name: k, environment: var0
+                var2 = function() {
                     _fun74068: for (var _fun74068_ip = 0;;) switch (_fun74068_ip) {
                         case 0:
                             var0 = {};

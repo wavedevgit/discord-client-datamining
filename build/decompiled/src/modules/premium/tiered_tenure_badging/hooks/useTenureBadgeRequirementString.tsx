@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var1 = var1.TieredTenureBadge;
     var _closure1_slot2 = var1;
-    var1 = function(arg0, arg1) { // Original name: getTenureBadgeRequirementString, environment: var3
+    var1 = function arg0, arg1() {
         _fun59459: for (var _fun59459_ip = 0;;) switch (_fun59459_ip) {
             case 0:
                 var2 = arg0;

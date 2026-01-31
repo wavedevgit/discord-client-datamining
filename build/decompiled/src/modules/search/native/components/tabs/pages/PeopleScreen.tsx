@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: PeopleScreen, environment: var1
+    var1 = function arg0() {
         _fun105627: for (var _fun105627_ip = 0;;) switch (_fun105627_ip) {
             case 0:
                 var1 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                     var2.section = var6;
                                                     var6 = {};
                                                     var6.channel = var1;
-                                                    var7 = function(arg0) { // Original name: onPress, environment: var4
+                                                    var7 = function arg0() {
                                                         var3 = _closure2_slot8;
                                                         var2 = _closure5_slot0;
                                                         var1 = undefined;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                     var5 = var6;
                                                 case 172:
                                                     var3.nickname = var5;
-                                                    var4 = function(arg0) { // Original name: onPress, environment: var4
+                                                    var4 = function arg0() {
                                                         var3 = _closure2_slot7;
                                                         var2 = _closure5_slot0;
                                                         var1 = undefined;

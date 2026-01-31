@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
-    var1 = function() { // Original name: _consoleLoggingIntegration, environment: var1
+    var1 = function() {
         _fun9816: for (var _fun9816_ip = 0;;) switch (_fun9816_ip) {
             case 0:
                 var4 = undefined;
@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'ConsoleLogs';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: setup, environment: var1
+                var1 = function arg0() {
                     _fun9817: for (var _fun9817_ip = 0;;) switch (_fun9817_ip) {
                         case 0:
                             var2 = arg0;

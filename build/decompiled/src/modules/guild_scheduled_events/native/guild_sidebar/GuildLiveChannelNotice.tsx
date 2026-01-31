@@ -12,7 +12,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var15;
             var _closure1_slot2 = var4;
             var _closure1_slot3 = var8;
-            var0 = function(arg0) { // Original name: UserSummaryRow, environment: var1
+            var0 = function arg0() {
                 _fun101955: for (var _fun101955_ip = 0;;) switch (_fun101955_ip) {
                     case 0:
                         var0 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot26 = var0;
-            var0 = function(arg0) { // Original name: useJoin, environment: var1
+            var0 = function arg0() {
                 var4 = arg0;
                 var _closure2_slot0 = var4;
                 var3 = _closure1_slot4;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot27 = var0;
-            var0 = function(arg0) { // Original name: JoinChannelButton, environment: var1
+            var0 = function arg0() {
                 _fun101959: for (var _fun101959_ip = 0;;) switch (_fun101959_ip) {
                     case 0:
                         var0 = arg0;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot28 = var0;
-            var0 = function(arg0) { // Original name: GuildVoiceEventNotice, environment: var1
+            var0 = function arg0() {
                 _fun101960: for (var _fun101960_ip = 0;;) switch (_fun101960_ip) {
                     case 0:
                         var1 = arg0;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot29 = var0;
-            var0 = function(arg0) { // Original name: GuildExternalEventNotice, environment: var1
+            var0 = function arg0() {
                 _fun101965: for (var _fun101965_ip = 0;;) switch (_fun101965_ip) {
                     case 0:
                         var0 = arg0;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot30 = var0;
-            var0 = function(arg0) { // Original name: SeeDetailButton, environment: var1
+            var0 = function arg0() {
                 var1 = arg0;
                 var7 = var1.guildEvent;
                 var _closure2_slot0 = var7;
@@ -712,7 +712,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot31 = var0;
-            var0 = function(arg0) { // Original name: GuildLiveStageNotice, environment: var1
+            var0 = function arg0() {
                 _fun101968: for (var _fun101968_ip = 0;;) switch (_fun101968_ip) {
                     case 0:
                         var1 = arg0;
@@ -1572,7 +1572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var5;
             var2.LIVE_CHANNEL_NOTICE_MARGIN_TOP = var4;
             var2.LIVE_CHANNEL_NOTICE_MARGIN_BOTTOM = var3;
-            var1 = function(arg0, arg1) { // Original name: getScaledLiveChannelNoticeHeight, environment: var1
+            var1 = function arg0, arg1() {
                 _fun101978: for (var _fun101978_ip = 0;;) switch (_fun101978_ip) {
                     case 0:
                         var11 = arg0;

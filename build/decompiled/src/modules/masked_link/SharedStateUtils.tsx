@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var3 = function(arg0) { // Original name: useUrlParts, environment: var1
+    var3 = function arg0() {
         _fun87457: for (var _fun87457_ip = 0;;) switch (_fun87457_ip) {
             case 0:
                 var4 = arg0;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/masked_link/SharedStateUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.useUrlParts = var3;
-    var1 = function(arg0) { // Original name: useModalState, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var15 = var1.url;
         var _closure2_slot0 = var15;

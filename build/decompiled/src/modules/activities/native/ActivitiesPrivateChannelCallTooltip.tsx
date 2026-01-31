@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivitiesPrivateChannelCallTooltip, environment: var1
+    var1 = function arg0() {
         _fun91412: for (var _fun91412_ip = 0;;) switch (_fun91412_ip) {
             case 0:
                 var0 = arg0;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var10[var0];
                 var4 = var16.bind(var3)(var2);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: u, environment: var1
+                var1 = function() {
                     var0 = {};
                     var2 = {};
                     var12 = _closure1_slot0;

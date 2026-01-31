@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var19;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var20;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun46916: for (var _fun46916_ip = 0;;) switch (_fun46916_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun46918: for (var _fun46918_ip = 0;;) switch (_fun46918_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: getApplicationIdsByTaskTypes, environment: var3
+    var0 = function arg0, arg1() {
         _fun46919: for (var _fun46919_ip = 0;;) switch (_fun46919_ip) {
             case 0:
                 var11 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var17 = function(arg0) { // Original name: hasPlayOnDesktopTask, environment: var3
+    var17 = function arg0() {
         var0 = arg0;
         var0 = var0.quest;
         var0 = var0.config;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var17;
-    var16 = function(arg0) { // Original name: hasPlayActivityTask, environment: var3
+    var16 = function arg0() {
         var0 = arg0;
         var0 = var0.config;
         var0 = var0.taskConfigV2;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var16;
-    var15 = function(arg0) { // Original name: shouldUsePlayOnDesktopTask, environment: var3
+    var15 = function arg0() {
         _fun46922: for (var _fun46922_ip = 0;;) switch (_fun46922_ip) {
             case 0:
                 var1 = arg0;
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var15;
-    var13 = function(arg0) { // Original name: isInGameQuest, environment: var3
+    var13 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var13;
-    var8 = function(arg0) { // Original name: isQuestProgressingOnConsole, environment: var3
+    var8 = function arg0() {
         _fun46925: for (var _fun46925_ip = 0;;) switch (_fun46925_ip) {
             case 0:
                 var3 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var8;
-    var0 = function(arg0) { // Original name: _isPlayOnDesktopTaskType, environment: var3
+    var0 = function arg0() {
         _fun46926: for (var _fun46926_ip = 0;;) switch (_fun46926_ip) {
             case 0:
                 var0 = arg0;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var7 = function(arg0) { // Original name: getDefaultWatchVideoTask, environment: var3
+    var7 = function arg0() {
         _fun46927: for (var _fun46927_ip = 0;;) switch (_fun46927_ip) {
             case 0:
                 var1 = arg0;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var7;
-    var6 = function(arg0) { // Original name: getDefaultInGameTask, environment: var3
+    var6 = function arg0() {
         _fun46928: for (var _fun46928_ip = 0;;) switch (_fun46928_ip) {
             case 0:
                 var0 = arg0;
@@ -631,7 +631,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var6;
-    var5 = function(arg0) { // Original name: getRemainingTaskTime, environment: var3
+    var5 = function arg0() {
         var0 = arg0;
         var2 = _closure1_slot26;
         var1 = var0.targetSeconds;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var5;
-    var4 = function(arg0) { // Original name: parseMinutesAndSecondsFromSeconds, environment: var3
+    var4 = function arg0() {
         var7 = arg0;
         var0 = {};
         var5 = global;
@@ -667,7 +667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var4;
-    var1 = function(arg0, arg1) { // Original name: formatWatchTaskTime, environment: var3
+    var1 = function arg0, arg1() {
         var0 = global;
         var2 = var0.String;
         var6 = undefined;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var9 = var10.bind(var0)(var9);
     var _closure1_slot3 = var9;
-    var14 = function(arg0) { // Original name: hasSomeFirstPartyTasks, environment: var3
+    var14 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
@@ -770,7 +770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9[1] = var18;
     var9 = var14.bind(var0)(var9);
     var _closure1_slot7 = var9;
-    var18 = function(arg0, arg1) { // Original name: hasUnsavedProgress, environment: var3
+    var18 = function arg0, arg1() {
         _fun46935: for (var _fun46935_ip = 0;;) switch (_fun46935_ip) {
             case 0:
                 var1 = arg0;
@@ -842,7 +842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var18;
-    var18 = function(arg0, arg1) { // Original name: _computePercentComplete, environment: var3
+    var18 = function arg0, arg1() {
         _fun46936: for (var _fun46936_ip = 0;;) switch (_fun46936_ip) {
             case 0:
                 var2 = arg0;
@@ -874,7 +874,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var18;
-    var18 = function(arg0, arg1) { // Original name: getTimeSinceLastBeatSeconds, environment: var3
+    var18 = function arg0, arg1() {
         _fun46937: for (var _fun46937_ip = 0;;) switch (_fun46937_ip) {
             case 0:
                 var2 = arg0;
@@ -977,7 +977,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var18;
-    var18 = function(arg0, arg1) { // Original name: getProgressSeconds, environment: var3
+    var18 = function arg0, arg1() {
         _fun46938: for (var _fun46938_ip = 0;;) switch (_fun46938_ip) {
             case 0:
                 var6 = arg0;
@@ -1109,7 +1109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var18;
-    var18 = function(arg0) { // Original name: _getTaskDetailsForType, environment: var3
+    var18 = function arg0() {
         _fun46939: for (var _fun46939_ip = 0;;) switch (_fun46939_ip) {
             case 0:
                 var2 = arg0;
@@ -1269,7 +1269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var18;
-    var18 = function(arg0) { // Original name: _parseFirstPartyTaskType, environment: var3
+    var18 = function arg0() {
         _fun46942: for (var _fun46942_ip = 0;;) switch (_fun46942_ip) {
             case 0:
                 var1 = arg0;
@@ -1301,7 +1301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19 = var20.fileFinishedImporting;
     var18 = 'modules/quests/utils/QuestTaskUtils.tsx';
     var18 = var19.bind(var20)(var18);
-    var18 = function(arg0) { // Original name: getAllApplicationIds, environment: var3
+    var18 = function arg0() {
         _fun46943: for (var _fun46943_ip = 0;;) switch (_fun46943_ip) {
             case 0:
                 var3 = arg0;
@@ -1328,7 +1328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAllApplicationIds = var18;
-    var18 = function(arg0) { // Original name: getDesktopApplicationIds, environment: var3
+    var18 = function arg0() {
         var3 = _closure1_slot16;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
@@ -1345,7 +1345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getDesktopApplicationIds = var18;
-    var18 = function(arg0) { // Original name: getConsoleApplicationId, environment: var3
+    var18 = function arg0() {
         _fun46945: for (var _fun46945_ip = 0;;) switch (_fun46945_ip) {
             case 0:
                 var3 = _closure1_slot16;
@@ -1380,7 +1380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getConsoleApplicationId = var18;
-    var18 = function(arg0) { // Original name: getPlayActivityApplicationId, environment: var3
+    var18 = function arg0() {
         _fun46946: for (var _fun46946_ip = 0;;) switch (_fun46946_ip) {
             case 0:
                 var3 = _closure1_slot16;
@@ -1410,7 +1410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getPlayActivityApplicationId = var18;
-    var18 = function(arg0) { // Original name: getActivityApplicationId, environment: var3
+    var18 = function arg0() {
         _fun46947: for (var _fun46947_ip = 0;;) switch (_fun46947_ip) {
             case 0:
                 var3 = _closure1_slot16;
@@ -1445,7 +1445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getActivityApplicationId = var18;
-    var18 = function(arg0) { // Original name: getStreamingApplicationId, environment: var3
+    var18 = function arg0() {
         _fun46948: for (var _fun46948_ip = 0;;) switch (_fun46948_ip) {
             case 0:
                 var3 = _closure1_slot16;
@@ -1476,7 +1476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStreamingApplicationId = var18;
     var2.hasPlayOnDesktopTask = var17;
-    var17 = function(arg0) { // Original name: hasStreamOnDesktopTask, environment: var3
+    var17 = function arg0() {
         var0 = arg0;
         var0 = var0.quest;
         var0 = var0.config;
@@ -1524,7 +1524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isMobileOnlyQuest = var9;
-    var9 = function(arg0) { // Original name: isConsoleQuest, environment: var3
+    var9 = function arg0() {
         var2 = _closure1_slot4;
         var1 = undefined;
         var0 = arg0;
@@ -1533,7 +1533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isConsoleQuest = var9;
     var2.isQuestProgressingOnConsole = var8;
-    var8 = function(arg0) { // Original name: getQuestTaskTypes, environment: var3
+    var8 = function arg0() {
         var0 = global;
         var2 = var0.Set;
         var3 = var0.Object;
@@ -2012,7 +2012,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getQuestTaskDetails = var7;
     var2.getDefaultInGameTask = var6;
-    var6 = function(arg0) { // Original name: getThirdPartyTaskDetails, environment: var3
+    var6 = function arg0() {
         _fun46956: for (var _fun46956_ip = 0;;) switch (_fun46956_ip) {
             case 0:
                 var2 = arg0;
@@ -2084,7 +2084,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getThirdPartyTaskDetails = var6;
     var2.getRemainingTaskTime = var5;
     var2.parseMinutesAndSecondsFromSeconds = var4;
-    var3 = function(arg0) { // Original name: formatWatchTaskRemainingTime, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot25;
         var3 = undefined;
         var0 = arg0;

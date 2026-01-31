@@ -69,7 +69,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var _closure3_slot0 = var1;
                                     var1 = arg1;
                                     var _closure3_slot1 = var1;
-                                    var1 = function(arg0) { // Original name: fulfilled, environment: var0
+                                    var1 = function arg0() {
                                         _fun12715: for (var _fun12715_ip = 0;;) switch (_fun12715_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot2 = var1;
-                                    var1 = function(arg0) { // Original name: rejected, environment: var0
+                                    var1 = function arg0() {
                                         _fun12716: for (var _fun12716_ip = 0;;) switch (_fun12716_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     };
                                     var _closure3_slot3 = var1;
-                                    var2 = function(arg0) { // Original name: step, environment: var0
+                                    var2 = function arg0() {
                                         _fun12717: for (var _fun12717_ip = 0;;) switch (_fun12717_ip) {
                                             case 0:
                                                 var0 = arg0;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 11:
                                                 var3 = var0.value;
-                                                var2 = function(arg0) { // Original name: adopt, environment: var1
+                                                var2 = function arg0() {
                                                     _fun12718: for (var _fun12718_ip = 0;;) switch (_fun12718_ip) {
                                                         case 0:
                                                             var0 = arg0;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot3 = var3;
             var3 = 'TimeToDisplay';
             var _closure1_slot4 = var3;
-            var4 = function(arg0) { // Original name: isDeadlineExceeded, environment: var1
+            var4 = function arg0() {
                 var1 = arg0;
                 var0 = 30000;
                 var0 = var1 > var0;
@@ -220,13 +220,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var _closure1_slot5 = var4;
             var2.INTEGRATION_NAME = var3;
-            var1 = function() { // Original name: timeToDisplayIntegration, environment: var1
+            var1 = function() {
                 var0 = false;
                 var _closure2_slot0 = var0;
                 var0 = {};
                 var2 = _closure1_slot4;
                 var0.name = var2;
-                var2 = function(arg0) { // Original name: afterAllSetup, environment: var1
+                var2 = function arg0() {
                     _fun12722: for (var _fun12722_ip = 0;;) switch (_fun12722_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -274,7 +274,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.afterAllSetup = var2;
-                var1 = function(arg0) { // Original name: processEvent, environment: var1
+                var1 = function arg0() {
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var2 = _closure1_slot3;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4.transactionStartTimestampSeconds = var5;
                                     var2 = _closure2_slot0;
                                     var4.enableTimeToInitialDisplayForPreloadedRoutes = var2;
-                                    var2 = function(arg0) { // Original name: addTimeToInitialDisplay, environment: var3
+                                    var2 = function arg0() {
                                         var1 = arg0;
                                         var2 = var1.event;
                                         var _closure6_slot1 = var2;
@@ -567,7 +567,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         var7.transactionStartTimestampSeconds = var11;
                                                         var11 = _closure6_slot4;
                                                         var7.enableTimeToInitialDisplayForPreloadedRoutes = var11;
-                                                        var3 = function(arg0) { // Original name: addAutomaticTimeToInitialDisplay, environment: var3
+                                                        var3 = function arg0() {
                                                             var1 = arg0;
                                                             var2 = var1.event;
                                                             var _closure9_slot6 = var2;
@@ -1026,7 +1026,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4.rootSpanId = var6;
                                     var4.transactionStartTimestampSeconds = var5;
                                     var4.ttidSpan = var2;
-                                    var3 = function(arg0) { // Original name: addTimeToFullDisplay, environment: var3
+                                    var3 = function arg0() {
                                         var1 = arg0;
                                         var2 = var1.event;
                                         var _closure6_slot1 = var2;

@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var8 = function() { // Original name: getTitle, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 6;
@@ -43,13 +43,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.createPressable;
     var1 = {};
     var1.title = var8;
-    var8 = function() { // Original name: parent, environment: var7
+    var8 = function() {
         var0 = _closure1_slot2;
         var0 = var0.SENSITIVE_CONTENT_FILTERS;
         return var0;
     };
     var1.parent = var8;
-    var8 = function() { // Original name: useObscuredContentGuildsSettingValue, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 3;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useTrailing = var8;
-    var8 = function() { // Original name: onObscuredContentGuildsOnPress, environment: var7
+    var8 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var0 = 5;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot3;
         var5 = var5.bind(var0)();
         var1.subtitle = var5;
-        var5 = function(arg0) { // Original name: handlePress, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
             var0 = 5;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.onPress = var8;
-    var8 = function() { // Original name: getSearchTerms, environment: var7
+    var8 = function() {
         var5 = _closure1_slot0;
         var6 = _closure1_slot1;
         var1 = 6;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.additionalSearchTerms = var8;
-    var7 = function() { // Original name: useIsDisabled, environment: var7
+    var7 = function() {
         _fun81328: for (var _fun81328_ip = 0;;) switch (_fun81328_ip) {
             case 0:
                 var3 = _closure1_slot0;

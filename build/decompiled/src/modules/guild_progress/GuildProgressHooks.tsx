@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var7 = function(arg0) { // Original name: useGuildChannelCreated, environment: var1
+    var7 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             _fun80109: for (var _fun80109_ip = 0;;) switch (_fun80109_ip) {
                 case 0:
-                    var3 = function(arg0) { // Original name: hasNewChannel, environment: var0
+                    var3 = function arg0() {
                         _fun80110: for (var _fun80110_ip = 0;;) switch (_fun80110_ip) {
                             case 0:
                                 var2 = _closure2_slot0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var7;
-    var6 = function(arg0) { // Original name: useGuildPopulated, environment: var1
+    var6 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var4 = _closure1_slot0;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var6;
-    var5 = function(arg0) { // Original name: useGuildPersonalized, environment: var1
+    var5 = function arg0() {
         _fun80116: for (var _fun80116_ip = 0;;) switch (_fun80116_ip) {
             case 0:
                 var0 = arg0;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var5;
-    var4 = function(arg0) { // Original name: useChannelsMessaged, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var4;
-    var3 = function(arg0) { // Original name: useGuildMessaged, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var4 = _closure1_slot0;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var10.fileFinishedImporting;
     var8 = 'modules/guild_progress/GuildProgressHooks.tsx';
     var8 = var9.bind(var10)(var8);
-    var8 = function(arg0, arg1) { // Original name: usePermissions, environment: var1
+    var8 = function arg0, arg1() {
         var5 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var5;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useGuildPersonalized = var5;
     var2.useChannelsMessaged = var4;
     var2.useGuildMessaged = var3;
-    var1 = function(arg0) { // Original name: useCompletedStates, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var0 = {};
         var4 = _closure1_slot17;

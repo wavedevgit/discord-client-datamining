@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/screens/home/SubmittingOverlay.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SubmittingOverlay, environment: var1
+    var1 = function arg0() {
         _fun107324: for (var _fun107324_ip = 0;;) switch (_fun107324_ip) {
             case 0:
                 var0 = arg0;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6[var0];
                 var7 = var12.bind(var3)(var2);
                 var2 = var7.useAnimatedStyle;
-                var1 = function() { // Original name: S, environment: var1
+                var1 = function() {
                     _fun107325: for (var _fun107325_ip = 0;;) switch (_fun107325_ip) {
                         case 0:
                             var0 = {};

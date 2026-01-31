@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function(arg0, arg1) { // Original name: truncateTextByBytes, environment: var2
+    var0 = function arg0, arg1() {
         _fun9859: for (var _fun9859_ip = 0;;) switch (_fun9859_ip) {
             case 0:
                 var0 = arg0;
@@ -63,7 +63,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: getPartText, environment: var2
+    var0 = function arg0() {
         _fun9860: for (var _fun9860_ip = 0;;) switch (_fun9860_ip) {
             case 0:
                 var1 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: withPartText, environment: var2
+    var0 = function arg0, arg1() {
         _fun9861: for (var _fun9861_ip = 0;;) switch (_fun9861_ip) {
             case 0:
                 var5 = arg0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1) { // Original name: truncateSingleMessage, environment: var2
+    var0 = function arg0, arg1() {
         _fun9862: for (var _fun9862_ip = 0;;) switch (_fun9862_ip) {
             case 0:
                 var6 = arg0;
@@ -206,7 +206,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 _fun9862_ip = 168;
                 continue _fun9862;
             case 153:
-                var3 = function(arg0, arg1) { // Original name: truncatePartsMessage, environment: var2
+                var3 = function arg0, arg1() {
                     _fun9863: for (var _fun9863_ip = 0;;) switch (_fun9863_ip) {
                         case 0:
                             var5 = arg0;
@@ -394,7 +394,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: truncateMessagesByBytes, environment: var2
+    var0 = function arg0, arg1() {
         _fun9865: for (var _fun9865_ip = 0;;) switch (_fun9865_ip) {
             case 0:
                 var0 = arg0;
@@ -502,7 +502,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = function(arg0) { // Original name: utf8Bytes, environment: var2
+    var3 = function arg0() {
         var0 = global;
         var0 = var0.TextEncoder;
         var1 = var0.prototype;
@@ -521,7 +521,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var3;
-    var3 = function(arg0) { // Original name: jsonBytes, environment: var2
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var0 = global;
         var3 = var0.JSON;
@@ -535,7 +535,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var3;
     var3 = 20000;
     var1.DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT = var3;
-    var3 = function(arg0) { // Original name: truncateGenAiMessages, environment: var2
+    var3 = function arg0() {
         var3 = _closure1_slot6;
         var2 = undefined;
         var1 = arg0;
@@ -544,7 +544,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.truncateGenAiMessages = var3;
-    var2 = function(arg0) { // Original name: truncateGenAiStringInput, environment: var2
+    var2 = function arg0() {
         var3 = _closure1_slot2;
         var2 = undefined;
         var1 = arg0;

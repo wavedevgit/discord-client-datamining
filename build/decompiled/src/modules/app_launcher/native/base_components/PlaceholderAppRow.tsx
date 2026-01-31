@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/base_components/PlaceholderAppRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PlaceholderAppRow, environment: var1
+    var1 = function arg0() {
         _fun107674: for (var _fun107674_ip = 0;;) switch (_fun107674_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.subLabelLineClamp = var6;
                 var0.start = var5;
                 var0.end = var4;
-                var4 = function() { // Original name: onPress, environment: var4
+                var4 = function() {
                     var0 = undefined;
                     return var0;
                 };

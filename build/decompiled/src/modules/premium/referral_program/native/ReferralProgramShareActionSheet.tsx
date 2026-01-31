@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.emptyImage = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: mapToUser, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var0 = new Array(2);
         var0[0] = var3;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/referral_program/native/ReferralProgramShareActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: ReferralProgramShareActionSheet, environment: var1
+    var1 = function() {
         _fun92115: for (var _fun92115_ip = 0;;) switch (_fun92115_ip) {
             case 0:
                 var1 = _closure1_slot15;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = var29.RDE0Sc;
                 var29 = var30.bind(var31)(var29);
                 var4.text = var29;
-                var29 = function() { // Original name: onPress, environment: var0
+                var29 = function() {
                     var2 = _closure2_slot15;
                     var1 = global;
                     var3 = var1.Array;

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var3 = function(arg0) { // Original name: setGlobalOptions, environment: var2
+    var3 = function arg0() {
         _fun5051: for (var _fun5051_ip = 0;;) switch (_fun5051_ip) {
             case 0:
                 var4 = arg0;
@@ -66,7 +66,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.setGlobalOptions = var3;
-    var3 = function(arg0) { // Original name: setContext, environment: var2
+    var3 = function arg0() {
         _fun5052: for (var _fun5052_ip = 0;;) switch (_fun5052_ip) {
             case 0:
                 var4 = _closure1_slot1;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.setContext = var3;
-    var3 = function() { // Original name: beginScroll, environment: var2
+    var3 = function() {
         _fun5053: for (var _fun5053_ip = 0;;) switch (_fun5053_ip) {
             case 0:
                 var4 = _closure1_slot1;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var0.beginScroll = var3;
-    var2 = function() { // Original name: endScroll, environment: var2
+    var2 = function() {
         _fun5054: for (var _fun5054_ip = 0;;) switch (_fun5054_ip) {
             case 0:
                 var4 = _closure1_slot1;

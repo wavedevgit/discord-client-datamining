@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun101483: for (var _fun101483_ip = 0;;) switch (_fun101483_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun101485: for (var _fun101485_ip = 0;;) switch (_fun101485_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot35 = var0;
-    var0 = function(arg0) { // Original name: countActiveChannels, environment: var1
+    var0 = function arg0() {
         var2 = arg0;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
@@ -432,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowData.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useHappeningNowData, environment: var1
+    var1 = function arg0, arg1() {
         _fun101488: for (var _fun101488_ip = 0;;) switch (_fun101488_ip) {
             case 0:
                 var19 = arg0;
@@ -1023,7 +1023,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26[0] = var30;
                 var3 = function() { // Environment: var5
                     var2 = _closure2_slot21;
-                    var1 = function(arg0) { // Original name: getHFUFromAffinities, environment: var0
+                    var1 = function arg0() {
                         _fun101506: for (var _fun101506_ip = 0;;) switch (_fun101506_ip) {
                             case 0:
                                 var3 = arg0;
@@ -1256,7 +1256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = function() { // Environment: var0
                         _fun101515: for (var _fun101515_ip = 0;;) switch (_fun101515_ip) {
                             case 0:
-                                var1 = function(arg0, arg1, arg2) { // Original name: addUser, environment: var46
+                                var1 = function arg0, arg1, arg2() {
                                     _fun101516: for (var _fun101516_ip = 0;;) switch (_fun101516_ip) {
                                         case 0:
                                             var2 = arg0;
@@ -2048,7 +2048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             }
                                         case 46:
                                             var4 = var3.channel_id;
-                                            var2 = function(arg0) { // Original name: blockedOrIgnoredUserInVoiceChannel, environment: var1
+                                            var2 = function arg0() {
                                                 _fun101522: for (var _fun101522_ip = 0;;) switch (_fun101522_ip) {
                                                     case 0:
                                                         var5 = arg0;
@@ -3544,7 +3544,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1453:
                 var6 = var10.id;
             case 1458:
-                var5 = function(arg0, arg1, arg2, arg3) { // Original name: useSpammyStoresVersion, environment: var5
+                var5 = function arg0, arg1, arg2, arg3() {
                     var7 = arg0;
                     var6 = arg1;
                     var1 = arg2;

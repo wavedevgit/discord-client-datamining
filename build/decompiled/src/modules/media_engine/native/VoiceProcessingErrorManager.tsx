@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114334: for (var _fun114334_ip = 0;;) switch (_fun114334_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: VoiceProcessingErrorManager, environment: var0
+        var2 = function arg0() {
             _fun114338: for (var _fun114338_ip = 0;;) switch (_fun114338_ip) {
                 case 0:
                     var4 = this;
@@ -121,14 +121,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var2 = {};
-                    var3 = function() { // Original name: MEDIA_ENGINE_NOISE_CANCELLATION_ERROR, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleNoiseCancellationError;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.MEDIA_ENGINE_NOISE_CANCELLATION_ERROR = var3;
-                    var3 = function() { // Original name: MEDIA_ENGINE_VOICE_ACTIVITY_DETECTION_ERROR, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleVoiceActivityDetectionError;
                         var0 = var0.bind(var1)();

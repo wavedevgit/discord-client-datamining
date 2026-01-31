@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var9 = function(arg0) { // Original name: _updateOnboardingResponses, environment: var3
+    var9 = function arg0() {
         _fun43254: for (var _fun43254_ip = 0;;) switch (_fun43254_ip) {
             case 0:
                 var10 = arg0;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ReadStateTypes;
     var _closure1_slot14 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: selectOption, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun43265: for (var _fun43265_ip = 0;;) switch (_fun43265_ip) {
             case 0:
                 var5 = arg1;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 1000;
     var6 = var7.bind(var8)(var9, var6);
     var1.updateOnboardingResponses = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: updateRolesLocal, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun43266: for (var _fun43266_ip = 0;;) switch (_fun43266_ip) {
             case 0:
                 var4 = arg0;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.updateRolesLocal = var6;
-    var6 = function(arg0, arg1) { // Original name: completeOnboarding, environment: var3
+    var6 = function arg0, arg1() {
         _fun43267: for (var _fun43267_ip = 0;;) switch (_fun43267_ip) {
             case 0:
                 var4 = arg0;
@@ -848,7 +848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.completeOnboarding = var6;
-    var6 = function(arg0, arg1) { // Original name: onboardExistingMember, environment: var3
+    var6 = function arg0, arg1() {
         _fun43273: for (var _fun43273_ip = 0;;) switch (_fun43273_ip) {
             case 0:
                 var5 = arg0;
@@ -922,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onboardExistingMember = var6;
-    var6 = function(arg0) { // Original name: finishOnboarding, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.finishOnboarding = var6;
-    var6 = function(arg0, arg1) { // Original name: setUserOnboardingStep, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -958,7 +958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setUserOnboardingStep = var6;
-    var3 = function(arg0) { // Original name: resetOnboarding, environment: var3
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var2 = _closure1_slot3;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun73200: for (var _fun73200_ip = 0;;) switch (_fun73200_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun73202: for (var _fun73202_ip = 0;;) switch (_fun73202_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var6 = function(arg0) { // Original name: getVisibleMessages, environment: var1
+    var6 = function arg0() {
         _fun73203: for (var _fun73203_ip = 0;;) switch (_fun73203_ip) {
             case 0:
                 var0 = arg0;
@@ -410,7 +410,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var6;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: shouldJumpToOriginalPost, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun73204: for (var _fun73204_ip = 0;;) switch (_fun73204_ip) {
             case 0:
                 var1 = arg0;
@@ -446,7 +446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var5;
-    var4 = function(arg0, arg1) { // Original name: recordTimings, environment: var1
+    var4 = function arg0, arg1() {
         _fun73205: for (var _fun73205_ip = 0;;) switch (_fun73205_ip) {
             case 0:
                 var1 = arg1;
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var4;
-    var3 = function(arg0, arg1) { // Original name: getMessage, environment: var1
+    var3 = function arg0, arg1() {
         var4 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var3;
-    var0 = function() { // Original name: _handleTapNavBar, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -769,7 +769,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/messages/native/MessagesUtils.tsx';
     var7 = var8.bind(var9)(var7);
-    var7 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getLongPressSelectedMedia, environment: var1
+    var7 = function arg0, arg1, arg2, arg3, arg4() {
         _fun73214: for (var _fun73214_ip = 0;;) switch (_fun73214_ip) {
             case 0:
                 var8 = arg0;
@@ -919,7 +919,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun73214
                 }
             case 365:
-                var8 = function(arg0, arg1, arg2) { // Original name: getEmbedMedia, environment: var4
+                var8 = function arg0, arg1, arg2() {
                     var0 = {};
                     var1 = 'embed';
                     var0.sourceType = var1;
@@ -1131,7 +1131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getLongPressSelectedMedia = var7;
-    var7 = function(arg0) { // Original name: toObscuredMedia, environment: var1
+    var7 = function arg0() {
         _fun73216: for (var _fun73216_ip = 0;;) switch (_fun73216_ip) {
             case 0:
                 var2 = arg0;
@@ -1185,7 +1185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.toObscuredMedia = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: handleAddOrRemoveReaction, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun73217: for (var _fun73217_ip = 0;;) switch (_fun73217_ip) {
             case 0:
                 var9 = arg0;
@@ -1516,7 +1516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleAddOrRemoveReaction = var7;
-    var7 = function(arg0, arg1) { // Original name: handleToggleFollowForumPost, environment: var1
+    var7 = function arg0, arg1() {
         _fun73218: for (var _fun73218_ip = 0;;) switch (_fun73218_ip) {
             case 0:
                 var4 = arg0;
@@ -1556,7 +1556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleToggleFollowForumPost = var7;
-    var7 = function(arg0, arg1, arg2) { // Original name: handleCopyLinkForumPost, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun73219: for (var _fun73219_ip = 0;;) switch (_fun73219_ip) {
             case 0:
                 var8 = arg1;
@@ -1694,7 +1694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleCopyLinkForumPost = var7;
-    var7 = function(arg0, arg1) { // Original name: findMessageIndex, environment: var1
+    var7 = function arg0, arg1() {
         _fun73220: for (var _fun73220_ip = 0;;) switch (_fun73220_ip) {
             case 0:
                 var3 = arg1;
@@ -1722,7 +1722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.findMessageIndex = var7;
     var2.getVisibleMessages = var6;
     var2.shouldJumpToOriginalPost = var5;
-    var5 = function(arg0) { // Original name: startOrCancelChannelLatestMessagesLoad, environment: var1
+    var5 = function arg0() {
         _fun73221: for (var _fun73221_ip = 0;;) switch (_fun73221_ip) {
             case 0:
                 var0 = arg0;
@@ -1764,7 +1764,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.startOrCancelChannelLatestMessagesLoad = var5;
     var2.recordTimings = var4;
-    var4 = function(arg0, arg1) { // Original name: findMessageIndexInRows, environment: var1
+    var4 = function arg0, arg1() {
         _fun73222: for (var _fun73222_ip = 0;;) switch (_fun73222_ip) {
             case 0:
                 var3 = arg0;
@@ -1791,7 +1791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.findMessageIndexInRows = var4;
     var2.getMessage = var3;
-    var3 = function(arg0, arg1) { // Original name: isLoadingAtTop, environment: var1
+    var3 = function arg0, arg1() {
         _fun73223: for (var _fun73223_ip = 0;;) switch (_fun73223_ip) {
             case 0:
                 var0 = arg1;
@@ -1845,7 +1845,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isLoadingAtTop = var3;
-    var3 = function(arg0, arg1) { // Original name: handleTapTableView, environment: var1
+    var3 = function arg0, arg1() {
         _fun73224: for (var _fun73224_ip = 0;;) switch (_fun73224_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -1891,7 +1891,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleTapTableView = var3;
-    var3 = function(arg0) { // Original name: handleMediaPlayFinishedAnalytics, environment: var1
+    var3 = function arg0() {
         _fun73225: for (var _fun73225_ip = 0;;) switch (_fun73225_ip) {
             case 0:
                 var6 = arg0;
@@ -1950,7 +1950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleMediaPlayFinishedAnalytics = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: scrollToBottom, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73226: for (var _fun73226_ip = 0;;) switch (_fun73226_ip) {
             case 0:
                 var4 = arguments[3];
@@ -1988,7 +1988,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.scrollToBottom = var3;
-    var3 = function(arg0, arg1) { // Original name: scrollToTop, environment: var1
+    var3 = function arg0, arg1() {
         _fun73227: for (var _fun73227_ip = 0;;) switch (_fun73227_ip) {
             case 0:
                 var4 = arguments[2];
@@ -2021,7 +2021,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.scrollToTop = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: scrollToRelativeOffset, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73228: for (var _fun73228_ip = 0;;) switch (_fun73228_ip) {
             case 0:
                 var5 = arguments[3];
@@ -2055,7 +2055,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.scrollToRelativeOffset = var3;
-    var3 = function(arg0, arg1) { // Original name: scrollToTopMessage, environment: var1
+    var3 = function arg0, arg1() {
         _fun73229: for (var _fun73229_ip = 0;;) switch (_fun73229_ip) {
             case 0:
                 var1 = arg1;
@@ -2087,7 +2087,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.scrollToTopMessage = var3;
-    var3 = function(arg0, arg1) { // Original name: canAddNewReactions, environment: var1
+    var3 = function arg0, arg1() {
         _fun73230: for (var _fun73230_ip = 0;;) switch (_fun73230_ip) {
             case 0:
                 var2 = arg0;
@@ -2115,7 +2115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canAddNewReactions = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: loadMoreBefore, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73231: for (var _fun73231_ip = 0;;) switch (_fun73231_ip) {
             case 0:
                 var6 = arg1;
@@ -2167,7 +2167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.loadMoreBefore = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: loadMoreAfter, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73232: for (var _fun73232_ip = 0;;) switch (_fun73232_ip) {
             case 0:
                 var6 = arg1;
@@ -2219,7 +2219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.loadMoreAfter = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: clearRows, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = arg1;
         var3 = {
             'animated': false,
@@ -2258,7 +2258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearRows = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: handleFirstLayout, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = {};
         var0 = arg1;
         var2.firstVisibleMessageRowIndex = var0;
@@ -2282,7 +2282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleFirstLayout = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: handleMessageVisibilityChanged, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = {};
         var0 = arg1;
         var2.firstVisibleMessageRowIndex = var0;
@@ -2306,7 +2306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleMessageVisibilityChanged = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: handleLongPressSticker, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73236: for (var _fun73236_ip = 0;;) switch (_fun73236_ip) {
             case 0:
                 var2 = arg0;
@@ -2353,7 +2353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleLongPressSticker = var3;
-    var3 = function() { // Original name: handleTapNavBar, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -2364,7 +2364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handleTapNavBar = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: jumpToPresent, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun73238: for (var _fun73238_ip = 0;;) switch (_fun73238_ip) {
             case 0:
                 var0 = arg0;
@@ -2434,7 +2434,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.jumpToPresent = var3;
-    var3 = function(arg0) { // Original name: scrollToNewMessages, environment: var1
+    var3 = function arg0() {
         _fun73239: for (var _fun73239_ip = 0;;) switch (_fun73239_ip) {
             case 0:
                 var0 = arg0;
@@ -2605,7 +2605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.scrollToNewMessages = var3;
-    var3 = function(arg0) { // Original name: syncMessageDisplay, environment: var1
+    var3 = function arg0() {
         _fun73240: for (var _fun73240_ip = 0;;) switch (_fun73240_ip) {
             case 0:
                 var4 = arg0;
@@ -2706,12 +2706,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.syncMessageDisplay = var3;
-    var3 = function(arg0) { // Original name: getChatRef, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var2.getChatRef = var3;
-    var3 = function(arg0, arg1) { // Original name: maybeRescrollToMessageId, environment: var1
+    var3 = function arg0, arg1() {
         _fun73243: for (var _fun73243_ip = 0;;) switch (_fun73243_ip) {
             case 0:
                 var3 = arg0;
@@ -2840,7 +2840,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.maybeRescrollToMessageId = var3;
-    var1 = function(arg0) { // Original name: handleVisibleMessagesChange, environment: var1
+    var1 = function arg0() {
         _fun73245: for (var _fun73245_ip = 0;;) switch (_fun73245_ip) {
             case 0:
                 var0 = arg0;

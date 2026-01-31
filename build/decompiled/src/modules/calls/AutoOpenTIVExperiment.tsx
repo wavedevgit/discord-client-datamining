@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/calls/AutoOpenTIVExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var2.AutoOpenTIVExperiment = var3;
-    var1 = function(arg0) { // Original name: useShouldAutoOpenTIV, environment: var1
+    var1 = function arg0() {
         _fun62598: for (var _fun62598_ip = 0;;) switch (_fun62598_ip) {
             case 0:
                 var0 = arg0;

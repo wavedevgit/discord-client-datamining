@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: usePremiumGroupPrimaryName, environment: var1
+    var1 = function() {
         _fun59155: for (var _fun59155_ip = 0;;) switch (_fun59155_ip) {
             case 0:
                 var0 = arguments[0];

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/gateway/GatewayZstdUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: supportsZstd, environment: var1
+    var3 = function() {
         _fun94719: for (var _fun94719_ip = 0;;) switch (_fun94719_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.supportsZstd = var3;
-    var1 = function() { // Original name: createZstdContextWeb, environment: var1
+    var1 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;

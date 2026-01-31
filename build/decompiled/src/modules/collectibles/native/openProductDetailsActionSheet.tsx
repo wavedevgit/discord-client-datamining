@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 'Shop Product Preview';
     var2.PRODUCT_DETAILS_ACTION_SHEET_KEY = var3;
-    var1 = function(arg0) { // Original name: openProductDetailsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun87080: for (var _fun87080_ip = 0;;) switch (_fun87080_ip) {
             case 0:
                 var1 = arg0;

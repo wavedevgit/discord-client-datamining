@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun76172: for (var _fun76172_ip = 0;;) switch (_fun76172_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun76174: for (var _fun76174_ip = 0;;) switch (_fun76174_ip) {
             case 0:
                 var3 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.commandText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot22 = var3;
-    var3 = function(arg0) { // Original name: getCommandOptionComponents, environment: var1
+    var3 = function arg0() {
         _fun76175: for (var _fun76175_ip = 0;;) switch (_fun76175_ip) {
             case 0:
                 var3 = arg0;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun76175
                 }
             case 253:
-                var4 = function(arg0, arg1) { // Original name: getUserComponent, environment: var2
+                var4 = function arg0, arg1() {
                     var8 = arg0;
                     var _closure3_slot0 = var8;
                     var4 = _closure1_slot20;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = arg1;
                     var6 = var6.commandOptionMentionText;
                     var1.style = var6;
-                    var0 = function() { // Original name: onPress, environment: var0
+                    var0 = function() {
                         _fun76178: for (var _fun76178_ip = 0;;) switch (_fun76178_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var4.bind(var3)(var2, var1, var0);
                     return var0;
                 };
-                var17 = function(arg0) { // Original name: getRoleComponent, environment: var2
+                var17 = function arg0() {
                     var4 = _closure1_slot20;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot3;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var4.bind(var3)(var2, var1, var0);
                     return var0;
                 };
-                var15 = function(arg0) { // Original name: getCommandValueText, environment: var2
+                var15 = function arg0() {
                     var4 = _closure1_slot19;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot3;
@@ -992,7 +992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: getCommandCopyText, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun76182: for (var _fun76182_ip = 0;;) switch (_fun76182_ip) {
             case 0:
                 var1 = arg0;
@@ -1376,7 +1376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var3;
-    var3 = function(arg0) { // Original name: CommandContentContainer, environment: var1
+    var3 = function arg0() {
         _fun76185: for (var _fun76185_ip = 0;;) switch (_fun76185_ip) {
             case 0:
                 var2 = arg0;
@@ -1481,7 +1481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.t;
                 var2 = var1["sj/RT9"];
                 var1 = {};
-                var16 = function() { // Original name: userHook, environment: var0
+                var16 = function() {
                     _fun76187: for (var _fun76187_ip = 0;;) switch (_fun76187_ip) {
                         case 0:
                             var4 = _closure1_slot19;
@@ -1522,7 +1522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.userHook = var16;
-                var16 = function() { // Original name: commandHook, environment: var0
+                var16 = function() {
                     _fun76188: for (var _fun76188_ip = 0;;) switch (_fun76188_ip) {
                         case 0:
                             var4 = _closure1_slot19;
@@ -1563,7 +1563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1.commandHook = var16;
-                var16 = function() { // Original name: applicationHook, environment: var0
+                var16 = function() {
                     var4 = _closure1_slot20;
                     var9 = _closure1_slot0;
                     var10 = _closure1_slot3;
@@ -1796,7 +1796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var3;
-    var3 = function(arg0) { // Original name: CommandActionsContainer, environment: var1
+    var3 = function arg0() {
         _fun76192: for (var _fun76192_ip = 0;;) switch (_fun76192_ip) {
             case 0:
                 var0 = arg0;
@@ -2079,7 +2079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["42H+Nb"];
                 var8 = var10.bind(var12)(var8);
                 var2.label = var8;
-                var8 = function() { // Original name: onPress, environment: var9
+                var8 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 16;
@@ -2121,7 +2121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.lNWC7s;
                 var7 = var8.bind(var10)(var7);
                 var1.label = var7;
-                var7 = function() { // Original name: onPress, environment: var9
+                var7 = function() {
                     _fun76198: for (var _fun76198_ip = 0;;) switch (_fun76198_ip) {
                         case 0:
                             var2 = _closure1_slot1;
@@ -2413,7 +2413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ExecutedApplicationCommandPopout.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun76200: for (var _fun76200_ip = 0;;) switch (_fun76200_ip) {
             case 0:
                 var0 = arg0;

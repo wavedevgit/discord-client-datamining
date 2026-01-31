@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding/native/GuildOnboardingCompleted.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildOnboardingCompleted, environment: var1
+    var1 = function arg0() {
         _fun92899: for (var _fun92899_ip = 0;;) switch (_fun92899_ip) {
             case 0:
                 var0 = arg0;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot4;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: headerLeft, environment: var3
+                    var3 = function() {
                         var0 = null;
                         return var0;
                     };
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7[var17];
                 var3 = var8.bind(var4)(var1);
                 var2 = var3.useAnimatedStyle;
-                var1 = function() { // Original name: B, environment: var23
+                var1 = function() {
                     _fun92914: for (var _fun92914_ip = 0;;) switch (_fun92914_ip) {
                         case 0:
                             var9 = _closure1_slot0;

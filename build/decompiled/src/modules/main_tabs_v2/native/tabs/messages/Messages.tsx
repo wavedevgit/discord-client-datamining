@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: Messages, environment: var1
+    var1 = function arg0() {
         _fun101260: for (var _fun101260_ip = 0;;) switch (_fun101260_ip) {
             case 0:
                 var0 = arg0;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25[2] = var12;
                 var16 = function() { // Environment: var2
                     var0 = {};
-                    var2 = function(arg0, arg1, arg2) { // Original name: getComponent, environment: var1
+                    var2 = function arg0, arg1, arg2() {
                         _fun101266: for (var _fun101266_ip = 0;;) switch (_fun101266_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.getComponent = var2;
-                    var1 = function(arg0) { // Original name: getSize, environment: var1
+                    var1 = function arg0() {
                         _fun101267: for (var _fun101267_ip = 0;;) switch (_fun101267_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25[0] = var20;
                 var20 = function() { // Environment: var2
                     var0 = {};
-                    var2 = function() { // Original name: getComponent, environment: var1
+                    var2 = function() {
                         _fun101269: for (var _fun101269_ip = 0;;) switch (_fun101269_ip) {
                             case 0:
                                 var2 = _closure2_slot13;
@@ -680,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.getComponent = var2;
-                    var1 = function() { // Original name: getSize, environment: var1
+                    var1 = function() {
                         _fun101270: for (var _fun101270_ip = 0;;) switch (_fun101270_ip) {
                             case 0:
                                 var3 = _closure2_slot13;
@@ -737,7 +737,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25[0] = var21;
                 var21 = function() { // Environment: var2
                     var0 = {};
-                    var2 = function() { // Original name: getComponent, environment: var1
+                    var2 = function() {
                         _fun101272: for (var _fun101272_ip = 0;;) switch (_fun101272_ip) {
                             case 0:
                                 var1 = _closure2_slot14;
@@ -761,7 +761,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.getComponent = var2;
-                    var1 = function() { // Original name: getSize, environment: var1
+                    var1 = function() {
                         _fun101273: for (var _fun101273_ip = 0;;) switch (_fun101273_ip) {
                             case 0:
                                 var1 = _closure2_slot14;
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var14[var5];
                 var6 = var1.bind(var3)(var5);
                 var5 = var6.useAnimatedScrollHandler;
-                var2 = function(arg0) { // Original name: U, environment: var2
+                var2 = function arg0() {
                     var0 = arg0;
                     var4 = _closure2_slot1;
                     var3 = var4.set;

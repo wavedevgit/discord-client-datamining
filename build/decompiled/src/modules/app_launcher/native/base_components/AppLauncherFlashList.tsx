@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var2)();
                 var2 = var0.entrypoint;
                 var7 = var6.simultaneousHandlers;
-                var0 = function(arg0) { // Original name: useScrollViewComponent, environment: var0
+                var0 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot2;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_launcher/native/base_components/AppLauncherFlashList.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useAppLauncherFlashListProps, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot2;
         var1 = var3.useContext;
         var4 = _closure1_slot0;

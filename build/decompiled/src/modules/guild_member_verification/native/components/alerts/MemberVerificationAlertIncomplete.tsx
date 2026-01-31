@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/alerts/MemberVerificationAlertIncomplete.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberVerificationAlertIncomplete, environment: var1
+    var1 = function arg0() {
         _fun61066: for (var _fun61066_ip = 0;;) switch (_fun61066_ip) {
             case 0:
                 var4 = arg0;

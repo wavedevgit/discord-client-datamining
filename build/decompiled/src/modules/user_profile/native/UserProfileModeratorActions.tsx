@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileModeratorActions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileModeratorActions, environment: var1
+    var1 = function arg0() {
         _fun91747: for (var _fun91747_ip = 0;;) switch (_fun91747_ip) {
             case 0:
                 var0 = arg0;
@@ -685,7 +685,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = var39.bind(var5)(var33);
                 var33 = var33.GroupArrowDownIcon;
                 var35.icon = var33;
-                var33 = function() { // Original name: onPress, environment: var1
+                var33 = function() {
                     var3 = _closure2_slot4;
                     var1 = {};
                     var0 = 'PRESS_REMOVE_FROM_STAGE';
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1295:
                 var30.label = var33;
                 var30.disabled = var3;
-                var3 = function() { // Original name: onPress, environment: var1
+                var3 = function() {
                     _fun91758: for (var _fun91758_ip = 0;;) switch (_fun91758_ip) {
                         case 0:
                             var3 = _closure2_slot4;
@@ -895,7 +895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var33.bind(var5)(var3);
                 var3 = var3.VoiceNormalIcon;
                 var30.icon = var3;
-                var3 = function() { // Original name: onPress, environment: var1
+                var3 = function() {
                     var3 = _closure2_slot4;
                     var2 = {};
                     var0 = 'PRESS_MOVE_TO_CHANNEL';
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.header = var2;
                     var1 = _closure2_slot13;
                     var3.channels = var1;
-                    var1 = function(arg0) { // Original name: onSelect, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 31;
@@ -1028,7 +1028,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var31.bind(var5)(var3);
                 var3 = var3.SettingsIcon;
                 var27.icon = var3;
-                var3 = function() { // Original name: onPress, environment: var1
+                var3 = function() {
                     var2 = _closure2_slot4;
                     var1 = {};
                     var0 = 'PRESS_MANAGE_USER';
@@ -1058,7 +1058,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot8;
                     var6 = var6.id;
                     var1.guildId = var6;
-                    var6 = function() { // Original name: onClose, environment: var5
+                    var6 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 33;
@@ -1072,7 +1072,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onClose = var6;
-                    var5 = function() { // Original name: onRemove, environment: var5
+                    var5 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var0 = 33;
@@ -1181,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var30 = var35.bind(var5)(var30);
                 var30 = var30.StampIcon;
                 var32.icon = var30;
-                var30 = function() { // Original name: onPress, environment: var1
+                var30 = function() {
                     _fun91764: for (var _fun91764_ip = 0;;) switch (_fun91764_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -1288,7 +1288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var30.bind(var5)(var24);
                 var24 = var24.StampIcon;
                 var27.icon = var24;
-                var24 = function() { // Original name: onPress, environment: var1
+                var24 = function() {
                     _fun91765: for (var _fun91765_ip = 0;;) switch (_fun91765_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -1388,7 +1388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var28.bind(var5)(var19);
                 var19 = var19.ClockWarningIcon;
                 var25.icon = var19;
-                var19 = function() { // Original name: onPress, environment: var1
+                var19 = function() {
                     _fun91766: for (var _fun91766_ip = 0;;) switch (_fun91766_ip) {
                         case 0:
                             var2 = _closure2_slot4;
@@ -1525,7 +1525,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var27.MicrophoneSlashIcon;
             case 2599:
                 var24.icon = var19;
-                var19 = function() { // Original name: onPress, environment: var1
+                var19 = function() {
                     var3 = _closure2_slot4;
                     var2 = {};
                     var0 = 'SERVER_MUTE';
@@ -1628,7 +1628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var24.HeadphonesSlashIcon;
             case 2830:
                 var21.icon = var18;
-                var18 = function() { // Original name: onPress, environment: var1
+                var18 = function() {
                     var3 = _closure2_slot4;
                     var2 = {};
                     var0 = 'DEAFEN';
@@ -1722,7 +1722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.icon = var15;
                 var15 = true;
                 var17.isDestructive = var15;
-                var15 = function() { // Original name: onPress, environment: var1
+                var15 = function() {
                     var3 = _closure2_slot4;
                     var2 = {};
                     var0 = 'DISCONNECT';
@@ -1780,7 +1780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16.icon = var14;
                 var14 = true;
                 var16.isDestructive = var14;
-                var14 = function() { // Original name: onPress, environment: var1
+                var14 = function() {
                     var2 = _closure2_slot4;
                     var1 = {};
                     var0 = 'PRESS_KICK_USER';
@@ -1843,7 +1843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.icon = var13;
                 var13 = true;
                 var15.isDestructive = var13;
-                var13 = function() { // Original name: onPress, environment: var1
+                var13 = function() {
                     var2 = _closure2_slot4;
                     var1 = {};
                     var0 = 'PRESS_BAN_USER';
@@ -1937,7 +1937,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var13.bind(var5)(var11);
                 var11 = var11.ThreadMinusIcon;
                 var4.icon = var11;
-                var1 = function() { // Original name: onPress, environment: var1
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot3;
                     var0 = 50;
@@ -1950,7 +1950,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.isForumPost = var5;
                     var4 = _closure2_slot0;
                     var1.user = var4;
-                    var4 = function() { // Original name: onConfirm, environment: var4
+                    var4 = function() {
                         var3 = _closure2_slot4;
                         var2 = {};
                         var0 = 'PRESS_REMOVE_FROM_THREAD';

@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/payments/native/NativeGiftContext.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: NativeGiftContextProvider, environment: var4
+    var4 = function arg0() {
         _fun74659: for (var _fun74659_ip = 0;;) switch (_fun74659_ip) {
             case 0:
                 var0 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.soundEffect = var21;
                 var12.selectedGiftingPromotionReward = var9;
                 var12.premiumType = var25;
-                var7 = function(arg0) { // Original name: useGiftInfoOptions, environment: var1
+                var7 = function arg0() {
                     _fun74662: for (var _fun74662_ip = 0;;) switch (_fun74662_ip) {
                         case 0:
                             var1 = arg0;
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.setPremiumType = var15;
                 var12.setPlanInterval = var14;
                 var12.setError = var2;
-                var6 = function(arg0) { // Original name: useSyncOrderLineItem, environment: var1
+                var6 = function arg0() {
                     _fun74665: for (var _fun74665_ip = 0;;) switch (_fun74665_ip) {
                         case 0:
                             var0 = arg0;
@@ -815,7 +815,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.giftInfoOptions = var32;
                 var6.isPurchasing = var18;
                 var6.setError = var2;
-                var2 = function(arg0) { // Original name: useSyncOrderGiftCustomization, environment: var1
+                var2 = function arg0() {
                     _fun74669: for (var _fun74669_ip = 0;;) switch (_fun74669_ip) {
                         case 0:
                             var0 = arg0;
@@ -966,7 +966,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = function(arg0) { // Environment: var1
                     var0 = arg0;
                     var _closure3_slot0 = var0;
-                    var0 = function(arg0) { // Original name: handleGiftCodeCreate, environment: var1
+                    var0 = function arg0() {
                         _fun74674: for (var _fun74674_ip = 0;;) switch (_fun74674_ip) {
                             case 0:
                                 var3 = _closure1_slot7;
@@ -1218,7 +1218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun74680
                             }
                         case 70:
-                            var8 = function(arg0) { // Original name: handleGPlayUpdatePurchaseAction, environment: var4
+                            var8 = function arg0() {
                                 _fun74681: for (var _fun74681_ip = 0;;) switch (_fun74681_ip) {
                                     case 0:
                                         var3 = arg0;
@@ -1337,7 +1337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var1.onPurchaseComplete = var5;
-                            var4 = function() { // Original name: onPurchaseError, environment: var4
+                            var4 = function() {
                                 var2 = _closure2_slot35;
                                 var1 = _closure3_slot1;
                                 var0 = undefined;

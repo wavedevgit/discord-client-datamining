@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var2;
     var2 = dependencyMap;
     var _closure1_slot2 = var2;
-    var2 = function() { // Original name: getState, environment: var0
+    var2 = function() {
         _fun5986: for (var _fun5986_ip = 0;;) switch (_fun5986_ip) {
             case 0:
                 var1 = _closure1_slot3;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var2;
-    var2 = function(arg0) { // Original name: toColorScheme, environment: var0
+    var2 = function arg0() {
         _fun5988: for (var _fun5988_ip = 0;;) switch (_fun5988_ip) {
             case 0:
                 var0 = arg0;
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() { // Original name: getColorScheme, environment: var0
+    var2 = function() {
         _fun5989: for (var _fun5989_ip = 0;;) switch (_fun5989_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getColorScheme = var2;
-    var2 = function(arg0) { // Original name: setColorScheme, environment: var0
+    var2 = function arg0() {
         _fun5990: for (var _fun5990_ip = 0;;) switch (_fun5990_ip) {
             case 0:
                 var6 = arg0;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.setColorScheme = var2;
-    var0 = function(arg0) { // Original name: addChangeListener, environment: var0
+    var0 = function arg0() {
         var1 = _closure1_slot4;
         var0 = undefined;
         var0 = var1.bind(var0)();

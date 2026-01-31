@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ColorBox, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var13 = var1.hue;
         var _closure2_slot0 = var13;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var8[var11];
         var4 = var12.bind(var3)(var1);
         var2 = var4.useAnimatedReaction;
-        var1 = function() { // Original name: _, environment: var0
+        var1 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 7;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.__workletHash = var5;
         var5 = _closure1_slot9;
         var1.__initData = var5;
-        var0 = function(arg0, arg1) { // Original name: s, environment: var0
+        var0 = function arg0, arg1() {
             _fun79797: for (var _fun79797_ip = 0;;) switch (_fun79797_ip) {
                 case 0:
                     var3 = arg0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/color_picker/SaturationValueColorPicker.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SaturationValueColorPicker, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var19 = var0.hue;
         var _closure2_slot0 = var19;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot7 = var0;
         var4 = var4[var7];
         var _closure2_slot8 = var4;
-        var4 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: useGesture, environment: var2
+        var4 = function arg0, arg1, arg2, arg3, arg4() {
             var2 = arg0;
             var1 = arg1;
             var9 = arg2;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4[3] = var1;
             var4[4] = var7;
             var3 = function() { // Environment: var3
-                var4 = function(arg0) { // Original name: o, environment: var0
+                var4 = function arg0() {
                     var0 = arg0;
                     var11 = var0.x;
                     var6 = var0.y;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.onUpdate;
                 var2 = var1.bind(var2)(var4);
                 var1 = var2.onFinalize;
-                var0 = function() { // Original name: c, environment: var0
+                var0 = function() {
                     _fun79802: for (var _fun79802_ip = 0;;) switch (_fun79802_ip) {
                         case 0:
                             var2 = _closure3_slot4;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var11[var5];
         var10 = var7.bind(var3)(var4);
         var9 = var10.useAnimatedStyle;
-        var4 = function() { // Original name: S, environment: var2
+        var4 = function() {
             var2 = _closure1_slot0;
             var4 = _closure1_slot2;
             var0 = 7;

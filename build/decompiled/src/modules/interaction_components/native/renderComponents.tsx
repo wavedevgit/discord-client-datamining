@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var1 = function(arg0) { // Original name: renderComponents, environment: var6
+    var1 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0, arg1) { // Environment: var0
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var1;
-    var0 = function(arg0, arg1) { // Original name: renderComponent, environment: var6
+    var0 = function arg0, arg1() {
         _fun113408: for (var _fun113408_ip = 0;;) switch (_fun113408_ip) {
             case 0:
                 var6 = arg0;

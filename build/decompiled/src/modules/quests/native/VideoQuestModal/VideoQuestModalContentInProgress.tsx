@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4[var2];
                 var10 = var1.bind(var3)(var5);
                 var9 = var10.useDerivedValue;
-                var5 = function() { // Original name: F, environment: var0
+                var5 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var0 = 12;
@@ -604,7 +604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4[var2];
                 var10 = var1.bind(var3)(var5);
                 var9 = var10.useAnimatedStyle;
-                var5 = function() { // Original name: q, environment: var0
+                var5 = function() {
                     var0 = {};
                     var2 = _closure2_slot4;
                     var1 = var2.get;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4[var2];
                 var10 = var1.bind(var3)(var5);
                 var9 = var10.useAnimatedStyle;
-                var5 = function() { // Original name: G, environment: var0
+                var5 = function() {
                     var0 = {};
                     var2 = _closure2_slot4;
                     var1 = var2.get;
@@ -644,7 +644,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4[var2];
                 var9 = var1.bind(var3)(var2);
                 var5 = var9.useAnimatedProps;
-                var2 = function() { // Original name: j, environment: var0
+                var2 = function() {
                     _fun82927: for (var _fun82927_ip = 0;;) switch (_fun82927_ip) {
                         case 0:
                             var0 = {};
@@ -1796,7 +1796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.VIDEO_MODAL_MOBILE;
                 var9.location = var14;
                 var9.sourceQuestContent = var13;
-                var12 = function(arg0) { // Original name: children, environment: var12
+                var12 = function arg0() {
                     var2 = arg0;
                     var7 = var2.ref;
                     var0 = null;
@@ -1872,7 +1872,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot24 = var3;
     var7 = var6.forwardRef;
-    var3 = function(arg0, arg1) { // Original name: FooterButton, environment: var1
+    var3 = function arg0, arg1() {
         var1 = _closure1_slot24;
         var3 = undefined;
         var4 = var1.bind(var3)();
@@ -1900,7 +1900,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var6)(var3);
     var _closure1_slot25 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: VideoQuestModalContentInProgress, environment: var1
+    var1 = function arg0() {
         _fun82936: for (var _fun82936_ip = 0;;) switch (_fun82936_ip) {
             case 0:
                 var0 = arg0;

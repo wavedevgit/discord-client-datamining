@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: handleTapCommandMention, environment: var4
+    var3 = function arg0() {
         _fun61728: for (var _fun61728_ip = 0;;) switch (_fun61728_ip) {
             case 0:
                 var1 = arg0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.VkKicb;
                 var13 = var17.bind(var18)(var13);
                 var6.confirmText = var13;
-                var13 = function() { // Original name: onConfirm, environment: var0
+                var13 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var3;
-    var1 = function(arg0, arg1) { // Original name: handleLongPressCommandMention, environment: var4
+    var1 = function arg0, arg1() {
         _fun61731: for (var _fun61731_ip = 0;;) switch (_fun61731_ip) {
             case 0:
                 var0 = arg0;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.bind(var0)(var4);
                 var4 = var4.SlashBoxIcon;
                 var2.IconComponent = var4;
-                var4 = function() { // Original name: onPress, environment: var5
+                var4 = function() {
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot2;
                     var0 = 14;
@@ -380,7 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.bind(var0)(var6);
                 var6 = var6.IdIcon;
                 var2.IconComponent = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 14;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/markup/native/MarkupReactCommandRule.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: MarkupReactCommandRule, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var8 = var0.node;
         var _closure2_slot0 = var8;
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.style = var10;
         var10 = 'text-md/bold';
         var0.variant = var10;
-        var10 = function() { // Original name: onPress, environment: var4
+        var10 = function() {
             _fun61735: for (var _fun61735_ip = 0;;) switch (_fun61735_ip) {
                 case 0:
                     var4 = _closure1_slot0;
@@ -545,7 +545,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5;
                 case 138:
                     var1.currentText = var4;
-                    var4 = function(arg0) { // Original name: onOpenCustomKeyboard, environment: var3
+                    var4 = function arg0() {
                         _fun61736: for (var _fun61736_ip = 0;;) switch (_fun61736_ip) {
                             case 0:
                                 var2 = _closure3_slot0;
@@ -566,7 +566,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var1.onOpenCustomKeyboard = var4;
-                    var3 = function() { // Original name: onSetCommand, environment: var3
+                    var3 = function() {
                         _fun61737: for (var _fun61737_ip = 0;;) switch (_fun61737_ip) {
                             case 0:
                                 var3 = _closure1_slot1;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.onPress = var10;
-        var4 = function() { // Original name: onLongPress, environment: var4
+        var4 = function() {
             var3 = _closure1_slot11;
             var0 = _closure2_slot0;
             var2 = var0.commandName;

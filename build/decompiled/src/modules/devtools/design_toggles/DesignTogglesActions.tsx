@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var3 = function(arg0, arg1) { // Original name: toggle, environment: var1
+    var3 = function arg0, arg1() {
         _fun86765: for (var _fun86765_ip = 0;;) switch (_fun86765_ip) {
             case 0:
                 var5 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/devtools/design_toggles/DesignTogglesActions.tsx';
     var4 = var5.bind(var6)(var4);
     var2.toggle = var3;
-    var1 = function() { // Original name: clearAll, environment: var1
+    var1 = function() {
         _fun86766: for (var _fun86766_ip = 0;;) switch (_fun86766_ip) {
             case 0:
                 var1 = _closure1_slot2;

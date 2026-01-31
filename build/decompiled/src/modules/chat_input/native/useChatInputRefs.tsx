@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat_input/native/useChatInputRefs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useChatInputRefs, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var8 = var1.chatInputProps;
         var _closure2_slot0 = var8;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = var3.bind(var4)(var2, var0);
             var _closure3_slot2 = var0;
             var2 = {};
-            var0 = function() { // Original name: backspace, environment: var1
+            var0 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -421,7 +421,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.backspace = var0;
-            var0 = function() { // Original name: blur, environment: var1
+            var0 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.blur = var0;
-            var0 = function() { // Original name: chatInputTrackerRegister, environment: var1
+            var0 = function() {
                 var1 = _closure2_slot10;
                 var0 = var1.register;
                 var0 = var0.bind(var1)();
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.chatInputTrackerRegister = var0;
-            var0 = function() { // Original name: chatInputTrackerUnregister, environment: var1
+            var0 = function() {
                 var1 = _closure2_slot10;
                 var0 = var1.unregister;
                 var0 = var0.bind(var1)();
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.chatInputTrackerUnregister = var0;
-            var0 = function() { // Original name: clearText, environment: var1
+            var0 = function() {
                 _fun89307: for (var _fun89307_ip = 0;;) switch (_fun89307_ip) {
                     case 0:
                         var0 = _closure2_slot15;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.clearText = var0;
-            var0 = function() { // Original name: closeCustomKeyboard, environment: var1
+            var0 = function() {
                 _fun89308: for (var _fun89308_ip = 0;;) switch (_fun89308_ip) {
                     case 0:
                         var4 = _closure1_slot0;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.closeCustomKeyboard = var0;
-            var0 = function() { // Original name: dismissKeyboard, environment: var1
+            var0 = function() {
                 _fun89309: for (var _fun89309_ip = 0;;) switch (_fun89309_ip) {
                     case 0:
                         var2 = _closure1_slot0;
@@ -565,7 +565,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.dismissKeyboard = var0;
-            var0 = function() { // Original name: focus, environment: var1
+            var0 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -579,7 +579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.focus = var0;
-            var0 = function() { // Original name: getApplicationCommandManager, environment: var1
+            var0 = function() {
                 _fun89311: for (var _fun89311_ip = 0;;) switch (_fun89311_ip) {
                     case 0:
                         var0 = _closure2_slot3;
@@ -599,14 +599,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.getApplicationCommandManager = var0;
-            var0 = function() { // Original name: getText, environment: var1
+            var0 = function() {
                 var0 = _closure2_slot13;
                 var0 = var0.current;
                 var0 = var0.text;
                 return var0;
             };
             var2.getText = var0;
-            var0 = function() { // Original name: handleCancelEditing, environment: var1
+            var0 = function() {
                 _fun89313: for (var _fun89313_ip = 0;;) switch (_fun89313_ip) {
                     case 0:
                         var0 = _closure2_slot12;
@@ -682,7 +682,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.handleCancelEditing = var0;
-            var0 = function(arg0) { // Original name: handlePressKey, environment: var1
+            var0 = function arg0() {
                 _fun89314: for (var _fun89314_ip = 0;;) switch (_fun89314_ip) {
                     case 0:
                         var7 = arg0;
@@ -809,11 +809,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.handlePressKey = var0;
-            var0 = function(arg0) { // Original name: handleSaveEditing, environment: var1
+            var0 = function arg0() {
                 _fun89315: for (var _fun89315_ip = 0;;) switch (_fun89315_ip) {
                     case 0:
                         var1 = arg0;
-                        var4 = function(arg0) { // Original name: handleSaveEditing, environment: var0
+                        var4 = function arg0() {
                             _fun89316: for (var _fun89316_ip = 0;;) switch (_fun89316_ip) {
                                 case 0:
                                     var8 = arg0;
@@ -937,7 +937,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.handleSaveEditing = var0;
-            var0 = function() { // Original name: handleSend, environment: var1
+            var0 = function() {
                 _fun89317: for (var _fun89317_ip = 0;;) switch (_fun89317_ip) {
                     case 0:
                         var0 = _closure2_slot14;
@@ -1180,7 +1180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.handleSend = var0;
-            var0 = function(arg0) { // Original name: handleSelectGIF, environment: var1
+            var0 = function arg0() {
                 _fun89321: for (var _fun89321_ip = 0;;) switch (_fun89321_ip) {
                     case 0:
                         var0 = arg0;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.handleSelectGIF = var0;
-            var0 = function(arg0) { // Original name: handleSelectSticker, environment: var1
+            var0 = function arg0() {
                 _fun89322: for (var _fun89322_ip = 0;;) switch (_fun89322_ip) {
                     case 0:
                         var1 = arg0;
@@ -1379,7 +1379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.handleSelectSticker = var0;
-            var0 = function() { // Original name: hideSideActions, environment: var1
+            var0 = function() {
                 _fun89323: for (var _fun89323_ip = 0;;) switch (_fun89323_ip) {
                     case 0:
                         var1 = _closure2_slot2;
@@ -1401,7 +1401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.hideSideActions = var0;
-            var0 = function(arg0) { // Original name: handleTextChanged, environment: var1
+            var0 = function arg0() {
                 var2 = _closure3_slot1;
                 var0 = undefined;
                 var1 = arg0;
@@ -1409,7 +1409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.handleTextChanged = var0;
-            var0 = function(arg0, arg1, arg2) { // Original name: insertText, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun89325: for (var _fun89325_ip = 0;;) switch (_fun89325_ip) {
                     case 0:
                         var7 = arg0;
@@ -1464,14 +1464,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.insertText = var0;
-            var0 = function() { // Original name: isFocused, environment: var1
+            var0 = function() {
                 var0 = _closure2_slot13;
                 var0 = var0.current;
                 var0 = var0.focused;
                 return var0;
             };
             var2.isFocused = var0;
-            var0 = function(arg0) { // Original name: openCustomKeyboard, environment: var1
+            var0 = function arg0() {
                 var0 = _closure2_slot12;
                 var0 = var0.current;
                 var5 = var0.channel;
@@ -1496,7 +1496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.openCustomKeyboard = var0;
-            var0 = function() { // Original name: openSystemKeyboard, environment: var1
+            var0 = function() {
                 _fun89328: for (var _fun89328_ip = 0;;) switch (_fun89328_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -1546,7 +1546,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.openSystemKeyboard = var0;
-            var0 = function(arg0) { // Original name: replaceRange, environment: var1
+            var0 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -1561,7 +1561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.replaceRange = var0;
-            var0 = function(arg0, arg1) { // Original name: setSelectedRange, environment: var1
+            var0 = function arg0, arg1() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -1577,7 +1577,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.setSelectedRange = var0;
-            var0 = function(arg0) { // Original name: setText, environment: var1
+            var0 = function arg0() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 13;
@@ -1592,7 +1592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.setText = var0;
-            var0 = function() { // Original name: showSideActions, environment: var1
+            var0 = function() {
                 _fun89332: for (var _fun89332_ip = 0;;) switch (_fun89332_ip) {
                     case 0:
                         var1 = _closure2_slot2;
@@ -1614,7 +1614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.showSideActions = var0;
-            var0 = function(arg0, arg1) { // Original name: updateNativeTextBlocksThrottled, environment: var1
+            var0 = function arg0, arg1() {
                 var3 = _closure3_slot0;
                 var0 = undefined;
                 var2 = arg0;
@@ -1623,7 +1623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var2.updateNativeTextBlocksThrottled = var0;
-            var0 = function(arg0) { // Original name: updateChatInputContainerHeightDebounced, environment: var1
+            var0 = function arg0() {
                 var2 = _closure3_slot2;
                 var0 = undefined;
                 var1 = arg0;
@@ -1634,7 +1634,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot3 = var2;
             var0 = {};
             var0.chatInputRefObject = var2;
-            var1 = function() { // Original name: chatInputRefObjectCallback, environment: var1
+            var1 = function() {
                 var0 = _closure3_slot3;
                 return var0;
             };

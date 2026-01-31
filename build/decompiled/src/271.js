@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: createPublicRootInstance, environment: var0
+    var2 = function arg0() {
         _fun3382: for (var _fun3382_ip = 0;;) switch (_fun3382_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.createPublicRootInstance = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: createPublicInstance, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun3383: for (var _fun3383_ip = 0;;) switch (_fun3383_ip) {
             case 0:
                 var6 = arg0;
@@ -139,7 +139,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.createPublicInstance = var2;
-    var2 = function(arg0, arg1) { // Original name: createPublicTextInstance, environment: var0
+    var2 = function arg0, arg1() {
         _fun3384: for (var _fun3384_ip = 0;;) switch (_fun3384_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -174,13 +174,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.createPublicTextInstance = var2;
-    var2 = function(arg0) { // Original name: getNativeTagFromPublicInstance, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         var0 = var0.__nativeTag;
         return var0;
     };
     var1.getNativeTagFromPublicInstance = var2;
-    var2 = function(arg0) { // Original name: getNodeFromPublicInstance, environment: var0
+    var2 = function arg0() {
         _fun3386: for (var _fun3386_ip = 0;;) switch (_fun3386_ip) {
             case 0:
                 var1 = arg0;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.getNodeFromPublicInstance = var2;
-    var0 = function(arg0) { // Original name: getInternalInstanceHandleFromPublicInstance, environment: var0
+    var0 = function arg0() {
         _fun3387: for (var _fun3387_ip = 0;;) switch (_fun3387_ip) {
             case 0:
                 var1 = arg0;

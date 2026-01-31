@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var2.Symbol;
         case 43:
             var _closure1_slot2 = var1;
-            var1 = function() { // Original name: hasNativeSymbols, environment: var0
+            var1 = function() {
                 _fun6606: for (var _fun6606_ip = 0;;) switch (_fun6606_ip) {
                     case 0:
                         var0 = _closure1_slot2;

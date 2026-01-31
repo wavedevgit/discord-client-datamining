@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var11;
             var _closure1_slot2 = var5;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+            var0 = function arg0, arg1() {
                 _fun94281: for (var _fun94281_ip = 0;;) switch (_fun94281_ip) {
                     case 0:
                         var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot13 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+            var0 = function arg0, arg1() {
                 _fun94283: for (var _fun94283_ip = 0;;) switch (_fun94283_ip) {
                     case 0:
                         var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot14 = var0;
-            var0 = function(arg0) { // Original name: getAllKeybinds, environment: var3
+            var0 = function arg0() {
                 _fun94284: for (var _fun94284_ip = 0;;) switch (_fun94284_ip) {
                     case 0:
                         var2 = new Array(0);
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot15 = var0;
-            var0 = function(arg0, arg1) { // Original name: wrapBind, environment: var3
+            var0 = function arg0, arg1() {
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = arg1;
@@ -336,10 +336,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var0;
-            var0 = function(arg0) { // Original name: registerBinds, environment: var3
+            var0 = function arg0() {
                 _fun94288: for (var _fun94288_ip = 0;;) switch (_fun94288_ip) {
                     case 0:
-                        var8 = function() { // Original name: _loop, environment: var9
+                        var8 = function() {
                             _fun94289: for (var _fun94289_ip = 0;;) switch (_fun94289_ip) {
                                 case 0:
                                     var0 = _closure2_slot1;
@@ -461,12 +461,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 313:
                                     var8 = _closure2_slot1;
                                     var10 = var8.keydown;
-                                    var8 = function(arg0, arg1) { // Original name: nativeBind, environment: var4
+                                    var8 = function arg0, arg1() {
                                         var4 = 'keydown';
                                         var _closure4_slot0 = var4;
                                         var1 = arg1;
                                         var _closure4_slot1 = var1;
-                                        var3 = function(arg0) { // Original name: wrappedCallback, environment: var0
+                                        var3 = function arg0() {
                                             var3 = arg0;
                                             var2 = _closure4_slot1;
                                             var1 = var3.key;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var12 = var13.bind(var14)(var12);
             var _closure1_slot10 = var12;
-            var12 = function() { // Original name: getKeybindList, environment: var3
+            var12 = function() {
                 var0 = new Array(0);
                 return var0;
             };
@@ -785,14 +785,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.modKey = var8;
             var1.altKey = var7;
             var1.returnKey = var6;
-            var6 = function(arg0) { // Original name: setGetKeybindList, environment: var3
+            var6 = function arg0() {
                 var0 = arg0;
                 _closure1_slot11 = var0;
                 var0 = undefined;
                 return var0;
             };
             var1.setGetKeybindList = var6;
-            var6 = function(arg0) { // Original name: checkDupes, environment: var3
+            var6 = function arg0() {
                 _fun94298: for (var _fun94298_ip = 0;;) switch (_fun94298_ip) {
                     case 0:
                         var0 = global;
@@ -871,14 +871,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.checkDupes = var6;
-            var6 = function(arg0) { // Original name: setLayout, environment: var3
+            var6 = function arg0() {
                 var0 = arg0;
                 _closure1_slot5 = var0;
                 var0 = undefined;
                 return var0;
             };
             var1.setLayout = var6;
-            var6 = function() { // Original name: enable, environment: var3
+            var6 = function() {
                 _fun94300: for (var _fun94300_ip = 0;;) switch (_fun94300_ip) {
                     case 0:
                         var3 = this;
@@ -903,7 +903,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.enable = var6;
-            var6 = function(arg0) { // Original name: enableTemp, environment: var3
+            var6 = function arg0() {
                 var3 = arg0;
                 var4 = _closure1_slot6;
                 var1 = var4.push;
@@ -918,7 +918,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.enableTemp = var6;
-            var6 = function() { // Original name: disableTemp, environment: var3
+            var6 = function() {
                 _fun94302: for (var _fun94302_ip = 0;;) switch (_fun94302_ip) {
                     case 0:
                         var1 = this;
@@ -942,7 +942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.disableTemp = var6;
-            var6 = function() { // Original name: disable, environment: var3
+            var6 = function() {
                 _fun94303: for (var _fun94303_ip = 0;;) switch (_fun94303_ip) {
                     case 0:
                         var1 = _closure1_slot7;
@@ -973,7 +973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.disable = var6;
-            var6 = function(arg0) { // Original name: validateKeybind, environment: var3
+            var6 = function arg0() {
                 _fun94305: for (var _fun94305_ip = 0;;) switch (_fun94305_ip) {
                     case 0:
                         var2 = arg0;
@@ -1001,7 +1001,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.validateKeybind = var6;
-            var3 = function(arg0) { // Original name: hasBind, environment: var3
+            var3 = function arg0() {
                 var4 = arg0;
                 var2 = _closure1_slot15;
                 var1 = _closure1_slot5;

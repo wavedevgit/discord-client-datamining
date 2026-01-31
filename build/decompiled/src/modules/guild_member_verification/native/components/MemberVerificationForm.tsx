@@ -8,13 +8,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useVerificationForm, environment: var1
+    var0 = function arg0() {
         _fun60328: for (var _fun60328_ip = 0;;) switch (_fun60328_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.id;
                 var _closure2_slot0 = var1;
-                var2 = function(arg0) { // Original name: useRequiredVerificationFields, environment: var0
+                var2 = function arg0() {
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     var6 = _closure1_slot0;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var6)(var1, var3);
                 var _closure2_slot3 = var1;
-                var3 = function() { // Original name: getFormFields, environment: var0
+                var3 = function() {
                     _fun60334: for (var _fun60334_ip = 0;;) switch (_fun60334_ip) {
                         case 0:
                             var0 = _closure2_slot3;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/MemberVerificationForm.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberVerificationForm, environment: var1
+    var1 = function arg0() {
         _fun60337: for (var _fun60337_ip = 0;;) switch (_fun60337_ip) {
             case 0:
                 var0 = arg0;
@@ -885,7 +885,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.rulesChannelId;
                 var5.rulesChannelId = var17;
                 var5.formFields = var16;
-                var13 = function(arg0, arg1) { // Original name: onChange, environment: var13
+                var13 = function arg0, arg1() {
                     var6 = arg0;
                     var5 = _closure2_slot4;
                     var4 = var5[var6];

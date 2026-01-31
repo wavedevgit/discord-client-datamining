@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getOutboundVideoStats, environment: var1
+    var0 = function arg0() {
         _fun117612: for (var _fun117612_ip = 0;;) switch (_fun117612_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: getInboundVideoStats, environment: var1
+    var0 = function arg0, arg1() {
         _fun117614: for (var _fun117614_ip = 0;;) switch (_fun117614_ip) {
             case 0:
                 var2 = arg1;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getVideoStats, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun117616: for (var _fun117616_ip = 0;;) switch (_fun117616_ip) {
             case 0:
                 var3 = arg1;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: getLatestOutboundBitrateEstimate, environment: var1
+    var0 = function arg0() {
         _fun117617: for (var _fun117617_ip = 0;;) switch (_fun117617_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: getLatestInboundBitrateEstimate, environment: var1
+    var0 = function arg0() {
         _fun117618: for (var _fun117618_ip = 0;;) switch (_fun117618_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: getCurrentScreenshareCaptureMethod, environment: var1
+    var0 = function arg0() {
         _fun117619: for (var _fun117619_ip = 0;;) switch (_fun117619_ip) {
             case 0:
                 var2 = arg0;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/errors/av_errors/AVErrorAnalytics.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: sendAVErrorAnalyticsEvent, environment: var1
+    var1 = function arg0, arg1() {
         _fun117620: for (var _fun117620_ip = 0;;) switch (_fun117620_ip) {
             case 0:
                 var6 = arg0;

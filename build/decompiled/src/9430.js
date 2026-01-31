@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_PaginationItemTsx2(){const{size,defaultDotSize,dotStyle,activeDotStyle,animValue,index,count,interpolate,Extrapolation,interpolateColor,customReanimatedStyleRef}=this.__closure;var _dotStyle,_activeDotStyle,_animValue,_animValue2,_animValue3,_ref,_ref2,_customReanimatedStyl,_restStyle$transform,_customReanimatedStyl2,_customReanimatedStyl3;const{width=size||defaultDotSize,height=size||defaultDotSize,borderRadius:borderRadius,backgroundColor="#FFF",...restDotStyle}=(_dotStyle=dotStyle)!==null&&_dotStyle!==void 0?_dotStyle:{};const{width:activeWidth=width,height:activeHeight=height,borderRadius:activeBorderRadius,backgroundColor:activeBackgroundColor="#000",...restActiveDotStyle}=(_activeDotStyle=activeDotStyle)!==null&&_activeDotStyle!==void 0?_activeDotStyle:{};let val=Math.abs(((_animValue=animValue)===null||_animValue===void 0?void 0:_animValue.value)-index);if(index===0&&((_animValue2=animValue)===null||_animValue2===void 0?void 0:_animValue2.value)>count-1)val=Math.abs(((_animValue3=animValue)===null||_animValue3===void 0?void 0:_animValue3.value)-count);const inputRange=[0,1,2];const restStyle=(_ref=val===0?restActiveDotStyle:restDotStyle)!==null&&_ref!==void 0?_ref:{};return{width:interpolate(val,inputRange,[activeWidth,width,width],Extrapolation.CLAMP),height:interpolate(val,inputRange,[activeHeight,height,height],Extrapolation.CLAMP),borderRadius:interpolate(val,inputRange,[(_ref2=activeBorderRadius!==null&&activeBorderRadius!==void 0?activeBorderRadius:borderRadius)!==null&&_ref2!==void 0?_ref2:0,borderRadius!==null&&borderRadius!==void 0?borderRadius:0,borderRadius!==null&&borderRadius!==void 0?borderRadius:0],Extrapolation.CLAMP),backgroundColor:interpolateColor(val,inputRange,[activeBackgroundColor,backgroundColor,backgroundColor]),...restStyle,...((_customReanimatedStyl=customReanimatedStyleRef.value)!==null&&_customReanimatedStyl!==void 0?_customReanimatedStyl:{}),transform:[...((_restStyle$transform=restStyle===null||restStyle===void 0?void 0:restStyle.transform)!==null&&_restStyle$transform!==void 0?_restStyle$transform:[]),...((_customReanimatedStyl2=(_customReanimatedStyl3=customReanimatedStyleRef.value)===null||_customReanimatedStyl3===void 0?void 0:_customReanimatedStyl3.transform)!==null&&_customReanimatedStyl2!==void 0?_customReanimatedStyl2:[])]};}';
     var3.code = var4;
     var _closure1_slot10 = var3;
-    var1 = function(arg0) { // Original name: PaginationItem, environment: var1
+    var1 = function arg0() {
         _fun74992: for (var _fun74992_ip = 0;;) switch (_fun74992_ip) {
             case 0:
                 var1 = arg0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = {};
                 var17 = var2.bind(var9)(var1);
                 var _closure2_slot7 = var17;
-                var22 = function(arg0) { // Original name: handleCustomAnimation, environment: var0
+                var22 = function arg0() {
                     _fun74993: for (var _fun74993_ip = 0;;) switch (_fun74993_ip) {
                         case 0:
                             var2 = _closure2_slot7;
@@ -116,7 +116,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var18[var8];
                 var9 = var19.bind(var3)(var1);
                 var2 = var9.useDerivedValue;
-                var1 = function() { // Original name: pnpm_PaginationItemTsx1, environment: var0
+                var1 = function() {
                     _fun74994: for (var _fun74994_ip = 0;;) switch (_fun74994_ip) {
                         case 0:
                             var2 = _closure1_slot0;
@@ -160,7 +160,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var18[var8];
                 var9 = var19.bind(var3)(var1);
                 var2 = var9.useAnimatedStyle;
-                var1 = function() { // Original name: pnpm_PaginationItemTsx2, environment: var0
+                var1 = function() {
                     _fun74995: for (var _fun74995_ip = 0;;) switch (_fun74995_ip) {
                         case 0:
                             var0 = _closure2_slot1;

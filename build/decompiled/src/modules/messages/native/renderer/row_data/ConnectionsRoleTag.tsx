@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/renderer/row_data/ConnectionsRoleTag.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: createConnectionsRoleTag, environment: var1
+    var1 = function arg0() {
         _fun56129: for (var _fun56129_ip = 0;;) switch (_fun56129_ip) {
             case 0:
                 var5 = arg0;

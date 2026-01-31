@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: handlePressJoinActivity, environment: var1
+    var3 = function arg0() {
         _fun63942: for (var _fun63942_ip = 0;;) switch (_fun63942_ip) {
             case 0:
                 var0 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var3;
-    var0 = function() { // Original name: _maybeJoinEmbeddedActivity, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var _closure4_slot6 = var1;
                         var3 = undefined;
                         var _closure4_slot7 = var3;
-                        var1 = function() { // Original name: _handleCanJoin, environment: var6
+                        var1 = function() {
                             var3 = undefined;
                             var0 = undefined;
                             var2 = _closure1_slot3;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7.GuildStore = var9;
                         var7 = var8.bind(var3)(var7);
                         var4.embeddedActivityJoinability = var7;
-                        var6 = function() { // Original name: handleCanJoin, environment: var6
+                        var6 = function() {
                             var0 = undefined;
                             var3 = _closure4_slot8;
                             var2 = var3.apply;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/activities/handlePressJoinActivity.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: maybeJoinEmbeddedActivity, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;

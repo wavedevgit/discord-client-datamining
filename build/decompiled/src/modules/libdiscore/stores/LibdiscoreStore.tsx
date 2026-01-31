@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var7;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun16484: for (var _fun16484_ip = 0;;) switch (_fun16484_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun16487: for (var _fun16487_ip = 0;;) switch (_fun16487_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun16489: for (var _fun16489_ip = 0;;) switch (_fun16489_ip) {
             case 0:
                 var3 = arg0;
@@ -340,14 +340,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = new var13[var5](var12, var11);
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot10 = var3;
-    var3 = function(arg0) { // Original name: identity, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };
     var _closure1_slot11 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot7;
-        var2 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: SecondaryIndexMetadata, environment: var4
+        var2 = function arg0, arg1, arg2, arg3, arg4() {
             var2 = this;
             var3 = _closure1_slot6;
             var1 = _closure2_slot0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'getK1Key';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun16493: for (var _fun16493_ip = 0;;) switch (_fun16493_ip) {
                 case 0:
                     var3 = arg0;
@@ -409,7 +409,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getK2Key';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun16494: for (var _fun16494_ip = 0;;) switch (_fun16494_ip) {
                 case 0:
                     var2 = arg0;
@@ -476,7 +476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot7;
-        var2 = function(arg0, arg1) { // Original name: KVDatabase, environment: var4
+        var2 = function arg0, arg1() {
             var2 = this;
             var3 = _closure1_slot6;
             var1 = _closure2_slot0;
@@ -492,7 +492,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'set';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             var0 = this;
             var4 = var0.kkvDatabase;
             var3 = var4.setRecord;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'get';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0.kkvDatabase;
             var2 = var3.getRecord;
@@ -523,7 +523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'has';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0.kkvDatabase;
             var2 = var3.hasRecord;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getAllRecords';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var2 = var0.kkvDatabase;
             var1 = var2.getPartition;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'remove';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var3 = var0.kkvDatabase;
             var2 = var3.removeRecord;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var3 = var0.kkvDatabase;
             var2 = var3.removePartition;
@@ -583,7 +583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'length';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var2 = var0.kkvDatabase;
             var1 = var2.partitionLength;
@@ -596,7 +596,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'version';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun16504: for (var _fun16504_ip = 0;;) switch (_fun16504_ip) {
                 case 0:
                     var1 = this;
@@ -622,7 +622,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'memoized';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             var0 = this;
             var4 = var0.kkvDatabase;
             var3 = var4.memoizedSinglePartition;
@@ -641,7 +641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var3.bind(var0)();
     var _closure1_slot13 = var4;
     var3 = function() { // Environment: var1
-        var3 = function(arg0) { // Original name: KKVDatabase, environment: var4
+        var3 = function arg0() {
             var2 = this;
             var3 = _closure1_slot6;
             var1 = _closure2_slot0;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'addSecondaryKVIndex';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             var0 = this;
             var3 = _closure2_slot0;
             var12 = var0.nextVersion;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'addSecondaryKKVIndex';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var1 = this;
             var3 = _closure2_slot0;
             var12 = var1.nextVersion;
@@ -740,7 +740,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'intoKV';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16510: for (var _fun16510_ip = 0;;) switch (_fun16510_ip) {
                 case 0:
                     var0 = arg0;
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'version';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.state;
             var0 = var0.version;
@@ -785,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'partitionVersion';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16512: for (var _fun16512_ip = 0;;) switch (_fun16512_ip) {
                 case 0:
                     var2 = this;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasPartition';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var0 = var0.state;
             var1 = var0.root;
@@ -832,7 +832,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'hasRecord';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun16514: for (var _fun16514_ip = 0;;) switch (_fun16514_ip) {
                 case 0:
                     var0 = this;
@@ -861,7 +861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getRecord';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun16515: for (var _fun16515_ip = 0;;) switch (_fun16515_ip) {
                 case 0:
                     var0 = this;
@@ -889,7 +889,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getManyRecords';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun16516: for (var _fun16516_ip = 0;;) switch (_fun16516_ip) {
                 case 0:
                     var0 = this;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPartition';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16517: for (var _fun16517_ip = 0;;) switch (_fun16517_ip) {
                 case 0:
                     var0 = this;
@@ -973,7 +973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getAllPartitions';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.state;
             var0 = var0.root;
@@ -984,7 +984,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getPartitionKeys';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = global;
             var2 = var0.Object;
             var1 = var2.keys;
@@ -999,7 +999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'partitionLength';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16520: for (var _fun16520_ip = 0;;) switch (_fun16520_ip) {
                 case 0:
                     var0 = this;
@@ -1026,7 +1026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'length';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.state;
             var0 = var0.derived;
@@ -1038,7 +1038,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'numPartitions';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.state;
             var0 = var0.derived;
@@ -1050,7 +1050,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getNullablePartition';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16523: for (var _fun16523_ip = 0;;) switch (_fun16523_ip) {
                 case 0:
                     var0 = this;
@@ -1075,7 +1075,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_derivedVersion';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16524: for (var _fun16524_ip = 0;;) switch (_fun16524_ip) {
                 case 0:
                     var3 = arg0;
@@ -1102,7 +1102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'mapPartitions';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16525: for (var _fun16525_ip = 0;;) switch (_fun16525_ip) {
                 case 0:
                     var8 = arg0;
@@ -1135,7 +1135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'memoizedPartition';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun16526: for (var _fun16526_ip = 0;;) switch (_fun16526_ip) {
                 case 0:
                     var5 = arg0;
@@ -1208,7 +1208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'memoizedSinglePartition';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun16528: for (var _fun16528_ip = 0;;) switch (_fun16528_ip) {
                 case 0:
                     var4 = arg1;
@@ -1282,7 +1282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'memoized';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var _closure3_slot0 = var1;
             var1 = arg0;
@@ -1331,7 +1331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emptyState';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var0 = {};
             var1 = {};
@@ -1353,7 +1353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'emptyPartitionState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun16533: for (var _fun16533_ip = 0;;) switch (_fun16533_ip) {
                 case 0:
                     var1 = arg0;
@@ -1385,7 +1385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'clear';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun16534: for (var _fun16534_ip = 0;;) switch (_fun16534_ip) {
                 case 0:
                     var0 = this;
@@ -1423,7 +1423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removePartition';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun16535: for (var _fun16535_ip = 0;;) switch (_fun16535_ip) {
                 case 0:
                     var5 = arg0;
@@ -1486,7 +1486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'removeRecord';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun16536: for (var _fun16536_ip = 0;;) switch (_fun16536_ip) {
                 case 0:
                     var4 = arg0;
@@ -1576,7 +1576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateRecord';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2, arg3, arg4() {
             _fun16537: for (var _fun16537_ip = 0;;) switch (_fun16537_ip) {
                 case 0:
                     var4 = arg0;
@@ -1680,7 +1680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'touchPartition';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun16538: for (var _fun16538_ip = 0;;) switch (_fun16538_ip) {
                 case 0:
                     var1 = arg0;
@@ -1744,7 +1744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setRecord';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun16539: for (var _fun16539_ip = 0;;) switch (_fun16539_ip) {
                 case 0:
                     var2 = arg1;
@@ -1796,7 +1796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setPartition';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun16540: for (var _fun16540_ip = 0;;) switch (_fun16540_ip) {
                 case 0:
                     var5 = arg0;
@@ -1853,7 +1853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateSecondaryIndexes';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun16541: for (var _fun16541_ip = 0;;) switch (_fun16541_ip) {
                 case 0:
                     var17 = arg0;
@@ -2030,7 +2030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var0)(var5);
     var5 = var5.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: LibdiscoreStore, environment: var5
+        var3 = function arg0() {
             _fun16543: for (var _fun16543_ip = 0;;) switch (_fun16543_ip) {
                 case 0:
                     var7 = arg0;
@@ -2065,7 +2065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun16543
                     }
                 case 81:
-                    var12 = function() { // Original name: _loop, environment: var1
+                    var12 = function() {
                         var3 = _closure3_slot0;
                         var2 = _closure3_slot3;
                         var2 = var3[var2];
@@ -2212,7 +2212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getMode';
         var4.key = var0;
-        var0 = function() { // Original name: getMode, environment: var5
+        var0 = function() {
             var0 = this;
             var0 = var0.mode;
             return var0;
@@ -2223,7 +2223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'connectWithLibdiscore';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: connectWithLibdiscore, environment: var5
+        var6 = function arg0() {
             _fun16547: for (var _fun16547_ip = 0;;) switch (_fun16547_ip) {
                 case 0:
                     var3 = arg0;
@@ -2294,7 +2294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'setupDualReadValidation';
         var4.key = var6;
-        var6 = function() { // Original name: setupDualReadValidation, environment: var5
+        var6 = function() {
             var3 = this;
             var _closure3_slot0 = var3;
             var _closure3_slot1 = var3;
@@ -2327,7 +2327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun16550
                         }
                     case 25:
-                        var6 = function() { // Original name: _loop2, environment: var7
+                        var6 = function() {
                             _fun16551: for (var _fun16551_ip = 0;;) switch (_fun16551_ip) {
                                 case 0:
                                     var0 = _closure3_slot1;
@@ -2533,7 +2533,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'addKKVDatabase';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: addKKVDatabase, environment: var5
+        var6 = function arg0, arg1() {
             _fun16553: for (var _fun16553_ip = 0;;) switch (_fun16553_ip) {
                 case 0:
                     var4 = arg0;
@@ -2607,7 +2607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'addKVDatabase';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: addKVDatabase, environment: var5
+        var6 = function arg0, arg1() {
             _fun16554: for (var _fun16554_ip = 0;;) switch (_fun16554_ip) {
                 case 0:
                     var4 = arg0;
@@ -2683,7 +2683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'applyChanges';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: applyChanges, environment: var5
+        var6 = function arg0() {
             _fun16555: for (var _fun16555_ip = 0;;) switch (_fun16555_ip) {
                 case 0:
                     var5 = this;
@@ -2720,7 +2720,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'clearAllDatabases';
         var4.key = var6;
-        var6 = function() { // Original name: clearAllDatabases, environment: var5
+        var6 = function() {
             _fun16556: for (var _fun16556_ip = 0;;) switch (_fun16556_ip) {
                 case 0:
                     var5 = this;
@@ -2747,7 +2747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'markDirty';
         var4.key = var6;
-        var6 = function() { // Original name: markDirty, environment: var5
+        var6 = function() {
             var1 = this;
             var0 = var1._nextVersion;
             var0 = var0 + 1;
@@ -2760,7 +2760,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'executeDatabaseChange';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: executeDatabaseChange, environment: var5
+        var6 = function arg0() {
             _fun16558: for (var _fun16558_ip = 0;;) switch (_fun16558_ip) {
                 case 0:
                     var1 = arg0;
@@ -2958,7 +2958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'nextVersion';
         var4.key = var6;
-        var5 = function() { // Original name: nextVersion, environment: var5
+        var5 = function() {
             var2 = this;
             var0 = var2._nextVersion;
             var0 = parseFloat(var0);

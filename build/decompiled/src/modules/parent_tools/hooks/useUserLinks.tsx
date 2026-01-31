@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: useUserIdsForLinkStatus, environment: var1
+    var5 = function arg0() {
         var4 = arg0;
         var _closure2_slot0 = var4;
         var5 = _closure1_slot0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var5;
-    var3 = function() { // Original name: useActiveLinkUserIds, environment: var1
+    var3 = function() {
         var2 = _closure1_slot14;
         var0 = _closure1_slot11;
         var1 = var0.ACTIVE;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var6;
     var4 = var4.UserLinkType;
     var _closure1_slot12 = var4;
-    var4 = function(arg0) { // Original name: useUsersForLinkStatus, environment: var1
+    var4 = function arg0() {
         var3 = _closure1_slot14;
         var4 = undefined;
         var2 = arg0;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useUserIdsForLinkStatus = var5;
     var2.useUsersForLinkStatus = var4;
     var2.useActiveLinkUserIds = var3;
-    var3 = function() { // Original name: useActiveLinkUsers, environment: var1
+    var3 = function() {
         var2 = _closure1_slot13;
         var0 = _closure1_slot11;
         var1 = var0.ACTIVE;
@@ -232,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasActiveLinks = var3;
-    var3 = function() { // Original name: useHasActiveParentLinks, environment: var1
+    var3 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 4;
@@ -298,7 +298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasActiveParentLinks = var3;
-    var3 = function() { // Original name: useUserQRLinkUrl, environment: var1
+    var3 = function() {
         _fun53794: for (var _fun53794_ip = 0;;) switch (_fun53794_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useUserQRLinkUrl = var3;
-    var3 = function() { // Original name: useHasMaxConnections, environment: var1
+    var3 = function() {
         _fun53797: for (var _fun53797_ip = 0;;) switch (_fun53797_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useHasMaxConnections = var3;
-    var3 = function() { // Original name: usePendingRequestCount, environment: var1
+    var3 = function() {
         _fun53798: for (var _fun53798_ip = 0;;) switch (_fun53798_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.usePendingRequestCount = var3;
-    var3 = function() { // Original name: useAcceptedRequestsCount, environment: var1
+    var3 = function() {
         var1 = _closure1_slot15;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAcceptedRequestsCount = var3;
-    var3 = function(arg0) { // Original name: useActivityWindowTimeStamp, environment: var1
+    var3 = function arg0() {
         _fun53803: for (var _fun53803_ip = 0;;) switch (_fun53803_ip) {
             case 0:
                 var0 = arg0;
@@ -551,7 +551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useActivityWindowTimeStamp = var3;
-    var1 = function(arg0, arg1) { // Original name: useLinkTimestampText, environment: var1
+    var1 = function arg0, arg1() {
         _fun53806: for (var _fun53806_ip = 0;;) switch (_fun53806_ip) {
             case 0:
                 var1 = arg0;

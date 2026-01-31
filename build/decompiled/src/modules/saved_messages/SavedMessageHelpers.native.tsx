@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _addOrUpdateSavedMessage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var4.ZGbTcy;
                                     var4 = var5.bind(var6)(var4);
                                     var1.cancelText = var4;
-                                    var4 = function() { // Original name: onCancel, environment: var4
+                                    var4 = function() {
                                         var2 = _closure1_slot1;
                                         var0 = _closure1_slot2;
                                         var1 = 10;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _removeSavedMessage, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/saved_messages/SavedMessageHelpers.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: addOrUpdateSavedMessage, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -625,7 +625,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.addOrUpdateSavedMessage = var3;
-    var1 = function() { // Original name: removeSavedMessage, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;

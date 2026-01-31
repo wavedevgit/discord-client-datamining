@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: open, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 1;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var0;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: openContextMenu, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun59944: for (var _fun59944_ip = 0;;) switch (_fun59944_ip) {
             case 0:
                 var5 = arg0;
@@ -264,13 +264,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'actions/ContextMenuActionCreators.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function() { // Original name: closeContextMenu, environment: var1
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var2.closeContextMenu = var4;
     var2.openContextMenu = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: openContextMenuLazy, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var4 = _closure1_slot5;
         var0 = undefined;
         var8 = arg0;

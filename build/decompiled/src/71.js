@@ -5,11 +5,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Original name: createStringifySafeWithLimits, environment: var0
+    var1 = function arg0() {
         _fun1451: for (var _fun1451_ip = 0;;) switch (_fun1451_ip) {
             case 0:
                 var1 = arg0;
-                var2 = function(arg0, arg1) { // Original name: replacer, environment: var0
+                var2 = function arg0, arg1() {
                     _fun1452: for (var _fun1452_ip = 0;;) switch (_fun1452_ip) {
                         case 0:
                             var5 = this;
@@ -279,7 +279,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot3 = var1;
                 var1 = new Array(0);
                 var _closure2_slot4 = var1;
-                var0 = function(arg0) { // Original name: stringifySafe, environment: var0
+                var0 = function arg0() {
                     _fun1453: for (var _fun1453_ip = 0;;) switch (_fun1453_ip) {
                         case 0:
                             var2 = arg0;

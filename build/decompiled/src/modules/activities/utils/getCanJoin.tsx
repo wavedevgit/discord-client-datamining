@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/getCanJoin.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getCanJoin, environment: var1
+    var3 = function arg0() {
         _fun92474: for (var _fun92474_ip = 0;;) switch (_fun92474_ip) {
             case 0:
                 var0 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCanJoin = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: getCanSync, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun92475: for (var _fun92475_ip = 0;;) switch (_fun92475_ip) {
             case 0:
                 var7 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: isValidPalette, environment: var1
+    var4 = function arg0() {
         _fun18304: for (var _fun18304_ip = 0;;) switch (_fun18304_ip) {
             case 0:
                 var3 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var0 = function(arg0) { // Original name: isValidHex, environment: var1
+    var0 = function arg0() {
         var2 = /^#([0-9a-fA-F]{6})$/;
         var1 = var2.test;
         var0 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.ThemeTypes;
     var _closure1_slot3 = var3;
-    var3 = function(arg0) { // Original name: getNameplatePalette, environment: var1
+    var3 = function arg0() {
         _fun18306: for (var _fun18306_ip = 0;;) switch (_fun18306_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/nameplates/utils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1) { // Original name: getBackgroundGradientColors, environment: var1
+    var5 = function arg0, arg1() {
         _fun18307: for (var _fun18307_ip = 0;;) switch (_fun18307_ip) {
             case 0:
                 var0 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getBackgroundGradientColors = var5;
     var2.isValidPalette = var4;
     var2.getNameplatePalette = var3;
-    var3 = function(arg0) { // Original name: parseFirstFrame, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
         var1 = 2;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.parseFirstFrame = var3;
-    var3 = function() { // Original name: getNameplateSampleUsers, environment: var1
+    var3 = function() {
         var0 = {};
         var1 = {};
         var6 = _closure1_slot0;

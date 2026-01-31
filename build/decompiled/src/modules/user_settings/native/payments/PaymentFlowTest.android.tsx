@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: TestView, environment: var1
+    var0 = function() {
         _fun86487: for (var _fun86487_ip = 0;;) switch (_fun86487_ip) {
             case 0:
                 var0 = _closure1_slot9;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var21.textInput;
                 var17.containerStyle = var24;
                 var17.value = var13;
-                var24 = function(arg0) { // Original name: onChange, environment: var12
+                var24 = function arg0() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = arg0;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.disabled = var13;
                 var13 = 'Send Gift';
                 var9.text = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     _fun86490: for (var _fun86490_ip = 0;;) switch (_fun86490_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.title = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot9 = var3;
-    var3 = function(arg0) { // Original name: openRequestActionSheet, environment: var1
+    var3 = function arg0() {
         var4 = _closure1_slot1;
         var1 = _closure1_slot2;
         var3 = 13;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: PaymentFlowTest, environment: var1
+    var1 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var8 = var0.bind(var3)();

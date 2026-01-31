@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useGiftCodeErrorMessage, environment: var1
+    var1 = function arg0, arg1() {
         _fun56552: for (var _fun56552_ip = 0;;) switch (_fun56552_ip) {
             case 0:
                 var8 = arg1;

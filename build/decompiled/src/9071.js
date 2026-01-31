@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.row = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot10 = var3;
-    var1 = function(arg0) { // Original name: HeaderConfig, environment: var1
+    var1 = function arg0() {
         _fun72697: for (var _fun72697_ip = 0;;) switch (_fun72697_ip) {
             case 0:
                 var0 = arg0;

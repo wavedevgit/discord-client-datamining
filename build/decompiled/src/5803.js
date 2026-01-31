@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {};
     var10 = 250;
     var1.duration = var10;
-    var10 = function(arg0) { // Original name: easing, environment: var9
+    var10 = function arg0() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.cos;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = {};
     var10 = 200;
     var8.duration = var10;
-    var9 = function(arg0) { // Original name: easing, environment: var9
+    var9 = function arg0() {
         _fun51343: for (var _fun51343_ip = 0;;) switch (_fun51343_ip) {
             case 0:
                 var4 = arg0;

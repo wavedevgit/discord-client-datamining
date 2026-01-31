@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.OAuth2Scopes;
     var10 = var10.RPC;
     var6.scope = var10;
-    var10 = function(arg0) { // Original name: validation, environment: var7
+    var10 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var6.validation = var10;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         _fun97993: for (var _fun97993_ip = 0;;) switch (_fun97993_ip) {
             case 0:
                 var1 = arg0;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.OAuth2Scopes;
     var8 = var8.RPC;
     var3.scope = var8;
-    var7 = function() { // Original name: handler, environment: var7
+    var7 = function() {
         var0 = {};
         var2 = _closure1_slot3;
         var1 = var2.getGuildsArray;

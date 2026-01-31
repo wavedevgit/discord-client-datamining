@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun114124: for (var _fun114124_ip = 0;;) switch (_fun114124_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: scheduleNextNotification, environment: var1
+    var0 = function() {
         _fun114127: for (var _fun114127_ip = 0;;) switch (_fun114127_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var3];
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var2 = function(arg0) { // Original name: MessageRemindersNotificationManager, environment: var0
+        var2 = function arg0() {
             _fun114131: for (var _fun114131_ip = 0;;) switch (_fun114131_ip) {
                 case 0:
                     var4 = this;
@@ -302,21 +302,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var2 = {};
-                    var3 = function() { // Original name: SAVED_MESSAGES_UPDATE, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleUpdates;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.SAVED_MESSAGES_UPDATE = var3;
-                    var3 = function() { // Original name: SAVED_MESSAGE_CREATE, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleUpdates;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.SAVED_MESSAGE_CREATE = var3;
-                    var3 = function() { // Original name: SAVED_MESSAGE_DELETE, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleUpdates;
                         var0 = var0.bind(var1)();

@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.ctaText = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: StreamPreviewContainer, environment: var1
+    var3 = function arg0() {
         _fun69247: for (var _fun69247_ip = 0;;) switch (_fun69247_ip) {
             case 0:
                 var2 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/TouchableStreamPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: VoiceChannelSettingsStreamPreview, environment: var1
+    var1 = function arg0() {
         _fun69254: for (var _fun69254_ip = 0;;) switch (_fun69254_ip) {
             case 0:
                 var5 = arg0;

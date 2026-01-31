@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = 0;
                 var4.pageWidth = var23;
                 var4.defaultIndex = var18;
-                var18 = function(arg0) { // Original name: onSetActiveIndex, environment: var0
+                var18 = function arg0() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var0 = 11;

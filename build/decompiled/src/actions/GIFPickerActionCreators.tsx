@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var9;
-    var6 = function(arg0) { // Original name: trackSearchStart, environment: var1
+    var6 = function arg0() {
         _fun73034: for (var _fun73034_ip = 0;;) switch (_fun73034_ip) {
             case 0:
                 var2 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var6;
-    var5 = function(arg0, arg1) { // Original name: trackSearchResultViewed, environment: var1
+    var5 = function arg0, arg1() {
         _fun73035: for (var _fun73035_ip = 0;;) switch (_fun73035_ip) {
             case 0:
                 var3 = arg0;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var5;
-    var12 = function(arg0, arg1, arg2) { // Original name: doSearchRequest, environment: var1
+    var12 = function arg0, arg1, arg2() {
         var8 = arg0;
         var3 = arg1;
         var6 = arg2;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var12;
-    var4 = function() { // Original name: resetSearch, environment: var1
+    var4 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var4;
-    var3 = function(arg0) { // Original name: gifUrlKey, environment: var1
+    var3 = function arg0() {
         _fun73040: for (var _fun73040_ip = 0;;) switch (_fun73040_ip) {
             case 0:
                 var1 = arg0;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var0 = function(arg0) { // Original name: isProxiedAttachment, environment: var1
+    var0 = function arg0() {
         _fun73041: for (var _fun73041_ip = 0;;) switch (_fun73041_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var9)(var7);
     var2.trackSearchStart = var6;
     var2.trackSearchResultViewed = var5;
-    var5 = function(arg0, arg1) { // Original name: search, environment: var1
+    var5 = function arg0, arg1() {
         _fun73042: for (var _fun73042_ip = 0;;) switch (_fun73042_ip) {
             case 0:
                 var4 = arg0;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.search = var5;
-    var5 = function(arg0) { // Original name: fetchSuggestions, environment: var1
+    var5 = function arg0() {
         _fun73043: for (var _fun73043_ip = 0;;) switch (_fun73043_ip) {
             case 0:
                 var6 = arg0;
@@ -542,7 +542,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchSuggestions = var5;
     var2.resetSearch = var4;
-    var4 = function(arg0) { // Original name: trackSelectGIF, environment: var1
+    var4 = function arg0() {
         _fun73045: for (var _fun73045_ip = 0;;) switch (_fun73045_ip) {
             case 0:
                 var0 = arg0;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackSelectGIF = var4;
-    var4 = function() { // Original name: initializeSearch, environment: var1
+    var4 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
         var0 = 10;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.initializeSearch = var4;
-    var4 = function() { // Original name: fetchTrending, environment: var1
+    var4 = function() {
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;
         var0 = 7;
@@ -734,7 +734,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchTrending = var4;
-    var4 = function(arg0) { // Original name: fetchTrendingGIFs, environment: var1
+    var4 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var0 = global;
@@ -824,7 +824,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchTrendingGIFs = var4;
     var2.gifUrlKey = var3;
-    var3 = function(arg0) { // Original name: addFavoriteGIF, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;
@@ -1135,7 +1135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.addFavoriteGIF = var3;
-    var3 = function(arg0) { // Original name: removeFavoriteGIF, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot0;
@@ -1198,7 +1198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removeFavoriteGIF = var3;
-    var1 = function() { // Original name: fetchTrendingSearchTerms, environment: var1
+    var1 = function() {
         var8 = _closure1_slot0;
         var7 = _closure1_slot2;
         var0 = 7;

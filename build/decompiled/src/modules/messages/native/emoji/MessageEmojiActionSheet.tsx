@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3.content = var8;
             var3 = var6.bind(var7)(var3);
             var _closure1_slot6 = var3;
-            var3 = function(arg0) { // Original name: MessageStandardEmojiActionSheet, environment: var1
+            var3 = function arg0() {
                 var0 = arg0;
                 var9 = var0.emojiNode;
                 var0 = _closure1_slot6;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = true;
                 var0.startExpanded = var5;
-                var4 = function() { // Original name: onDismiss, environment: var4
+                var4 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 8;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot7 = var3;
-            var3 = function(arg0) { // Original name: MessageCustomEmojiActionSheet, environment: var1
+            var3 = function arg0() {
                 _fun73983: for (var _fun73983_ip = 0;;) switch (_fun73983_ip) {
                     case 0:
                         var0 = arg0;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = {};
                         var5 = true;
                         var0.startExpanded = var5;
-                        var4 = function() { // Original name: onDismiss, environment: var4
+                        var4 = function() {
                             var3 = _closure1_slot1;
                             var2 = _closure1_slot2;
                             var0 = 8;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/messages/native/emoji/MessageEmojiActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function(arg0) { // Original name: _default, environment: var1
+            var1 = function arg0() {
                 _fun73985: for (var _fun73985_ip = 0;;) switch (_fun73985_ip) {
                     case 0:
                         var0 = arg0;

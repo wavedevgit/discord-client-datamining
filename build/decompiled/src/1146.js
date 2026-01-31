@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3[var0];
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
-    var3 = function(arg0) { // Original name: reactRouterV6BrowserTracingIntegration, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.reactRouterV6BrowserTracingIntegration = var3;
-    var3 = function(arg0) { // Original name: withSentryReactRouterV6Routing, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.withSentryReactRouterV6Routing = var3;
-    var3 = function(arg0) { // Original name: wrapCreateBrowserRouterV6, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.wrapCreateBrowserRouterV6 = var3;
-    var3 = function(arg0) { // Original name: wrapCreateMemoryRouterV6, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.wrapCreateMemoryRouterV6 = var3;
-    var1 = function(arg0) { // Original name: wrapUseRoutesV6, environment: var1
+    var1 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

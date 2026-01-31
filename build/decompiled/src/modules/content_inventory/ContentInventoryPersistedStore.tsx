@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun88721: for (var _fun88721_ip = 0;;) switch (_fun88721_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun88724: for (var _fun88724_ip = 0;;) switch (_fun88724_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun88726: for (var _fun88726_ip = 0;;) switch (_fun88726_ip) {
             case 0:
                 var3 = arg0;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: updateImpressionCaches, environment: var3
+    var0 = function() {
         _fun88727: for (var _fun88727_ip = 0;;) switch (_fun88727_ip) {
             case 0:
                 var1 = arguments[0];
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ContentInventoryPersistedStore, environment: var5
+        var3 = function() {
             _fun88729: for (var _fun88729_ip = 0;;) switch (_fun88729_ip) {
                 case 0:
                     var3 = this;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun88730: for (var _fun88730_ip = 0;;) switch (_fun88730_ip) {
                 case 0:
                     var2 = arg0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getImpressionCappedItemIds';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var2 = _closure1_slot16;
             var1 = undefined;
             var1 = var2.bind(var1)();
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDebugFastImpressionCappingEnabled';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot12;
             return var0;
         };
@@ -669,7 +669,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'hidden';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             var0 = _closure1_slot7;
             var0 = var0.hidden;
             return var0;
@@ -679,7 +679,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'reset';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = {};
             var0 = new Array(0);
             var1.itemImpressions = var0;
@@ -702,7 +702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var12 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleImpressionsTracked, environment: var3
+    var7 = function arg0() {
         _fun88736: for (var _fun88736_ip = 0;;) switch (_fun88736_ip) {
             case 0:
                 var0 = arg0;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS = var7;
-    var7 = function() { // Original name: handleDebugClearImpressions, environment: var3
+    var7 = function() {
         var2 = _closure1_slot7;
         var1 = new Array(0);
         var2.itemImpressions = var1;
@@ -778,12 +778,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS = var7;
-    var7 = function() { // Original name: handleDebugLogImpressions, environment: var3
+    var7 = function() {
         var0 = false;
         return var0;
     };
     var1.CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS = var7;
-    var7 = function() { // Original name: handleDebugToggleFastImpressionCapping, environment: var3
+    var7 = function() {
         var0 = _closure1_slot12;
         var0 = !var0;
         _closure1_slot12 = var0;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING = var7;
-    var3 = function() { // Original name: handleToggleContentInventoryFeedHidden, environment: var3
+    var3 = function() {
         var1 = _closure1_slot7;
         var0 = var1.hidden;
         var0 = !var0;

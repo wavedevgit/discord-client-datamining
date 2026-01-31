@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var1 = function() { // Original name: useIsHarvestRequestDisabled, environment: var3
+    var1 = function() {
         _fun81661: for (var _fun81661_ip = 0;;) switch (_fun81661_ip) {
             case 0:
                 var7 = _closure1_slot0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var6.bind(var0)(var4);
     var5 = var8.createRoute;
     var4 = {};
-    var11 = function() { // Original name: title, environment: var3
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 11;
@@ -145,10 +145,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.title = var11;
     var9 = var9.DATA_AND_PRIVACY;
     var4.parent = var9;
-    var9 = function() { // Original name: useHarvestRequestSettingTrailing, environment: var3
+    var9 = function() {
         _fun81667: for (var _fun81667_ip = 0;;) switch (_fun81667_ip) {
             case 0:
-                var0 = function() { // Original name: useIsRequestingHarvestState, environment: var0
+                var0 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -182,10 +182,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var4.useTrailing = var9;
-    var9 = function() { // Original name: useRequestYourDataSettingDescription, environment: var3
+    var9 = function() {
         _fun81670: for (var _fun81670_ip = 0;;) switch (_fun81670_ip) {
             case 0:
-                var0 = function() { // Original name: useHarvestRequest, environment: var0
+                var0 = function() {
                     var3 = _closure1_slot7;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -288,7 +288,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4.useDescription = var9;
     var4.useIsDisabled = var1;
-    var9 = function() { // Original name: usePreNavigationAction, environment: var3
+    var9 = function() {
         var2 = _closure1_slot8;
         var1 = undefined;
         var1 = var2.bind(var1)();
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = {};
     var10 = var10.REQUEST_DATA;
     var9.route = var10;
-    var10 = function() { // Original name: getComponent, environment: var3
+    var10 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 14;
@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/user_settings/native/defs/RequestYourDataSetting.tsx';
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
-    var3 = function() { // Original name: fetchHarvestStatus, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var0 = 6;

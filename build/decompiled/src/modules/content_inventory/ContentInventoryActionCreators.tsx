@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.toggleMemberListContentFeedHidden = var3;
-    var3 = function() { // Original name: onGameProfileOpen, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.onGameProfileOpen = var3;
-    var3 = function(arg0) { // Original name: onTapContentInventoryEntryEmbed, environment: var1
+    var3 = function arg0() {
         _fun88718: for (var _fun88718_ip = 0;;) switch (_fun88718_ip) {
             case 0:
                 var0 = arg0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.onTapContentInventoryEntryEmbed = var3;
-    var1 = function() { // Original name: clearDeleteHistoryError, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 6;

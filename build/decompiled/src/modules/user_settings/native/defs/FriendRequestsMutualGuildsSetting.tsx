@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.title = var9;
     var8 = var8.CONTENT_AND_SOCIAL_DISCORD;
     var1.parent = var8;
-    var8 = function() { // Original name: useFriendRequestsMutualGuildsSettingValue, environment: var7
+    var8 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 4;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var8;
-    var8 = function(arg0) { // Original name: onFriendRequestsMutualGuildsSettingValueChange, environment: var7
+    var8 = function arg0() {
         _fun82346: for (var _fun82346_ip = 0;;) switch (_fun82346_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.onValueChange = var8;
-    var7 = function() { // Original name: useIsDisabled, environment: var7
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 3;

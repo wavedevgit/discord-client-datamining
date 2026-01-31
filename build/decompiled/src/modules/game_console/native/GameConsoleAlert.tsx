@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/GameConsoleAlert.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelfDismissibleAlertBody, environment: var1
+    var1 = function arg0() {
         _fun66916: for (var _fun66916_ip = 0;;) switch (_fun66916_ip) {
             case 0:
                 var1 = arg0;

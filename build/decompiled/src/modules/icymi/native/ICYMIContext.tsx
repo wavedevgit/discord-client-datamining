@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var4 = var4.bind(var0)(var3);
     var _closure1_slot3 = var4;
-    var3 = function() { // Original name: useICYMIContextConstructor, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 2;

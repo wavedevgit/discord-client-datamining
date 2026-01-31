@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var1 = function(arg0, arg1) { // Original name: getUnitId, environment: var3
+    var1 = function arg0, arg1() {
         _fun14161: for (var _fun14161_ip = 0;;) switch (_fun14161_ip) {
             case 0:
                 var3 = arg0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var1;
-    var0 = function(arg0, arg1) { // Original name: useUnitId, environment: var3
+    var0 = function arg0, arg1() {
         _fun14162: for (var _fun14162_ip = 0;;) switch (_fun14162_ip) {
             case 0:
                 var5 = arg0;
@@ -174,7 +174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/experiments/apex/ApexExperiment.tsx';
     var6 = var7.bind(var8)(var6);
-    var3 = function(arg0) { // Original name: createApexExperiment, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
         var1 = 3;

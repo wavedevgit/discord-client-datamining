@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: getVoiceStates, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun105831: for (var _fun105831_ip = 0;;) switch (_fun105831_ip) {
             case 0:
                 var0 = arg0;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelsScreen, environment: var1
+    var1 = function arg0() {
         _fun105832: for (var _fun105832_ip = 0;;) switch (_fun105832_ip) {
             case 0:
                 var1 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3.channel = var6;
                                 var5 = var5.lastMessageId;
                                 var3.lastMessageId = var5;
-                                var4 = function(arg0) { // Original name: onPress, environment: var4
+                                var4 = function arg0() {
                                     var3 = _closure2_slot10;
                                     var2 = _closure4_slot0;
                                     var1 = undefined;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.bind(var0)(var2);
                             var4 = _closure2_slot4;
                             var3 = _closure2_slot5;
-                            var2 = function(arg0, arg1) { // Original name: createSorter, environment: var1
+                            var2 = function arg0, arg1() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
                                 var1 = arg1;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var5 = _closure1_slot6;
                                     case 124:
                                         var3.speakerVoiceStates = var5;
-                                        var4 = function(arg0) { // Original name: onPress, environment: var4
+                                        var4 = function arg0() {
                                             var3 = _closure2_slot11;
                                             var2 = _closure4_slot0;
                                             var1 = undefined;

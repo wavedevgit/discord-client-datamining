@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/voice_messages/native/useVoiceMessageTooltip.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useVoiceMessageTooltip, environment: var1
+    var1 = function() {
         var7 = _closure1_slot2;
         var3 = var7.useRef;
         var2 = null;

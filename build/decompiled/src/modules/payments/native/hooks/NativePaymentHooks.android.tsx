@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var9;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var10;
-    var0 = function() { // Original name: notSupported, environment: var8
+    var0 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function() { // Original name: notSupportedReturnVoid, environment: var8
+    var0 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -40,12 +40,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var _closure1_slot10 = var0;
-    var6 = function() { // Original name: useNativeIAPPayments, environment: var8
+    var6 = function() {
         var0 = _closure1_slot8;
         return var0;
     };
     var _closure1_slot11 = var6;
-    var5 = function(arg0, arg1) { // Original name: useGoogleSkuIds, environment: var8
+    var5 = function arg0, arg1() {
         var6 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var6;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3[1] = var2;
         var3[2] = var6;
         var0 = function() { // Environment: var0
-            var1 = function() { // Original name: _fetch, environment: var0
+            var1 = function() {
                 var3 = undefined;
                 var0 = undefined;
                 var2 = _closure1_slot3;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure3_slot0 = var1;
-            var1 = function() { // Original name: fetch, environment: var0
+            var1 = function() {
                 var0 = undefined;
                 var3 = _closure3_slot0;
                 var2 = var3.apply;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.fetchError = var1;
         return var0;
     };
-    var4 = function(arg0) { // Original name: useResubscribeSubscription, environment: var8
+    var4 = function arg0() {
         var0 = {};
         var2 = _closure1_slot9;
         var0.resubscribeSubscription = var2;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.nativePaymentsConnected = var1;
         return var0;
     };
-    var3 = function(arg0, arg1) { // Original name: useCancelSubscription, environment: var8
+    var3 = function arg0, arg1() {
         var0 = {};
         var2 = _closure1_slot9;
         var0.cancelSubscription = var2;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.nativePaymentsConnected = var1;
         return var0;
     };
-    var1 = function(arg0) { // Original name: useCreateSubscription, environment: var8
+    var1 = function arg0() {
         _fun84060: for (var _fun84060_ip = 0;;) switch (_fun84060_ip) {
             case 0:
                 var1 = arg0;

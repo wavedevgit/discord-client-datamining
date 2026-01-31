@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var7[var1];
             var3 = var3.bind(var0)(var1);
             var1 = {};
-            var7 = function() { // Original name: get eventEmitter, environment: var6
+            var7 = function() {
                 _fun16751: for (var _fun16751_ip = 0;;) switch (_fun16751_ip) {
                     case 0:
                         var1 = _closure1_slot3;

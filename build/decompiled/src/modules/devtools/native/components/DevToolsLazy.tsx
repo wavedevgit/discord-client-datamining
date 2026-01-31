@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var7.keyModifierControl;
         case 246:
             var6.modifierFlags = var3;
-            var3 = function() { // Original name: onKeyCommand, environment: var1
+            var3 = function() {
                 var2 = _closure1_slot2;
                 var1 = undefined;
                 var0 = function*() { // Environment: var0
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.fileFinishedImporting;
             var3 = 'modules/devtools/native/components/DevToolsLazy.tsx';
             var3 = var4.bind(var5)(var3);
-            var1 = function() { // Original name: DevToolsLazy, environment: var1
+            var1 = function() {
                 _fun99960: for (var _fun99960_ip = 0;;) switch (_fun99960_ip) {
                     case 0:
                         var5 = _closure1_slot0;

@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var4;
     var1 = var1.jsxs;
     var _closure1_slot11 = var1;
-    var1 = function(arg0) { // Original name: shouldUseHorizontalLabels, environment: var3
+    var1 = function arg0() {
         _fun100550: for (var _fun100550_ip = 0;;) switch (_fun100550_ip) {
             case 0:
                 var0 = arg0;
@@ -156,7 +156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot12 = var1;
-    var1 = function(arg0) { // Original name: getPaddingBottom, environment: var3
+    var1 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.max;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot13 = var1;
-    var1 = function(arg0) { // Original name: getTabBarHeight, environment: var3
+    var1 = function arg0() {
         _fun100553: for (var _fun100553_ip = 0;;) switch (_fun100553_ip) {
             case 0:
                 var6 = arg0;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.content = var7;
     var4 = var5.bind(var6)(var4);
     var _closure1_slot15 = var4;
-    var3 = function(arg0) { // Original name: BottomTabBar, environment: var3
+    var3 = function arg0() {
         _fun100554: for (var _fun100554_ip = 0;;) switch (_fun100554_ip) {
             case 0:
                 var0 = arg0;
@@ -681,7 +681,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = 'none';
             case 889:
                 var0.pointerEvents = var4;
-                var4 = function(arg0) { // Original name: handleLayout, environment: var8
+                var4 = function arg0() {
                     _fun100560: for (var _fun100560_ip = 0;;) switch (_fun100560_ip) {
                         case 0:
                             var0 = arg0;
@@ -845,7 +845,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7.focused = var14;
                             var14 = _closure2_slot17;
                             var7.horizontal = var14;
-                            var14 = function() { // Original name: onPress, environment: var13
+                            var14 = function() {
                                 _fun100563: for (var _fun100563_ip = 0;;) switch (_fun100563_ip) {
                                     case 0:
                                         var3 = _closure2_slot1;
@@ -905,7 +905,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 }
                             };
                             var7.onPress = var14;
-                            var14 = function() { // Original name: onLongPress, environment: var13
+                            var14 = function() {
                                 var2 = _closure2_slot1;
                                 var1 = var2.emit;
                                 var0 = {};

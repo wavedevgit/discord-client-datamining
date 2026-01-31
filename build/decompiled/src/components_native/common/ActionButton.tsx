@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/ActionButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActionButton, environment: var1
+    var1 = function arg0() {
         _fun72551: for (var _fun72551_ip = 0;;) switch (_fun72551_ip) {
             case 0:
                 var8 = arg0;

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot3 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: NotificationsContent, environment: var1
+    var1 = function() {
         var1 = _closure1_slot3;
         var3 = undefined;
         var4 = var1.bind(var3)();

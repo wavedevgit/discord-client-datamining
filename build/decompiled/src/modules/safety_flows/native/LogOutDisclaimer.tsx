@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_flows/native/LogOutDisclaimer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: LogOutDisclaimer, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var8 = _closure1_slot0;
         var10 = _closure1_slot2;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.bind(var2)(var6);
         var7 = var6["0DHxym"];
         var6 = {};
-        var10 = function() { // Original name: handleLogOut, environment: var10
+        var10 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 5;

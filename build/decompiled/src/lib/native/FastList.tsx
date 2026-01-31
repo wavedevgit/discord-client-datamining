@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var5
+    var0 = function() {
         _fun52999: for (var _fun52999_ip = 0;;) switch (_fun52999_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var5
+    var0 = function arg0, arg1() {
         _fun53002: for (var _fun53002_ip = 0;;) switch (_fun53002_ip) {
             case 0:
                 var2 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot33 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var5
+    var0 = function arg0, arg1() {
         _fun53004: for (var _fun53004_ip = 0;;) switch (_fun53004_ip) {
             case 0:
                 var3 = arg0;
@@ -288,17 +288,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var0;
-    var0 = function() { // Original name: renderDefaultEmpty, environment: var5
+    var0 = function() {
         var0 = null;
         return var0;
     };
     var _closure1_slot35 = var0;
-    var0 = function() { // Original name: defaultRecyclerKey, environment: var5
+    var0 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot36 = var0;
-    var0 = function(arg0) { // Original name: getBatchSize, environment: var5
+    var0 = function arg0() {
         var0 = global;
         var2 = var0.Math;
         var1 = var2.ceil;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.SECTION_FOOTER = var3;
     var _closure1_slot20 = var4;
     var3 = function() { // Environment: var5
-        var3 = function(arg0) { // Original name: FastListItemRecycler, environment: var4
+        var3 = function arg0() {
             var3 = arg0;
             var4 = this;
             var _closure3_slot0 = var4;
@@ -442,7 +442,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_itemsForType';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun53011: for (var _fun53011_ip = 0;;) switch (_fun53011_ip) {
                 case 0:
                     var4 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'get';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun53012: for (var _fun53012_ip = 0;;) switch (_fun53012_ip) {
                 case 0:
                     var7 = arg0;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_get';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53013: for (var _fun53013_ip = 0;;) switch (_fun53013_ip) {
                 case 0:
                     var0 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fill';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var _closure3_slot0 = var0;
             var0 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = '_fill';
         var0.key = var5;
-        var4 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var4 = function arg0, arg1, arg2() {
             _fun53016: for (var _fun53016_ip = 0;;) switch (_fun53016_ip) {
                 case 0:
                     var1 = arg1;
@@ -732,7 +732,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3._LAST_KEY = var6;
     var3 = function() { // Environment: var5
         var3 = _closure1_slot10;
-        var2 = function(arg0) { // Original name: FastListComputer, environment: var4
+        var2 = function arg0() {
             var3 = arg0;
             var2 = this;
             var4 = _closure1_slot9;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'updateProps';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: value, environment: var4
+        var1 = function arg0() {
             _fun53020: for (var _fun53020_ip = 0;;) switch (_fun53020_ip) {
                 case 0:
                     var0 = arg0;
@@ -805,7 +805,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setInfo';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53021: for (var _fun53021_ip = 0;;) switch (_fun53021_ip) {
                 case 0:
                     var1 = this;
@@ -838,7 +838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSizeForHeader';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun53022: for (var _fun53022_ip = 0;;) switch (_fun53022_ip) {
                 case 0:
                     var0 = this;
@@ -871,7 +871,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSizeForFooter';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun53023: for (var _fun53023_ip = 0;;) switch (_fun53023_ip) {
                 case 0:
                     var0 = this;
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSizeForSection';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53024: for (var _fun53024_ip = 0;;) switch (_fun53024_ip) {
                 case 0:
                     var0 = this;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSizeForItem';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun53025: for (var _fun53025_ip = 0;;) switch (_fun53025_ip) {
                 case 0:
                     var0 = this;
@@ -965,7 +965,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSizeForSectionFooter';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53026: for (var _fun53026_ip = 0;;) switch (_fun53026_ip) {
                 case 0:
                     var0 = this;
@@ -999,7 +999,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChunk';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53027: for (var _fun53027_ip = 0;;) switch (_fun53027_ip) {
                 case 0:
                     var8 = arg0;
@@ -1101,7 +1101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'compute';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun53028: for (var _fun53028_ip = 0;;) switch (_fun53028_ip) {
                 case 0:
                     var7 = arg0;
@@ -1123,7 +1123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot4 = var11;
                     var _closure3_slot5 = var11;
                     var _closure3_slot6 = var11;
-                    var27 = function(arg0, arg1, arg2, arg3) { // Original name: addInitialSection, environment: var3
+                    var27 = function arg0, arg1, arg2, arg3() {
                         _fun53029: for (var _fun53029_ip = 0;;) switch (_fun53029_ip) {
                             case 0:
                                 var12 = arg0;
@@ -1174,7 +1174,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                         }
                     };
-                    var26 = function(arg0, arg1) { // Original name: isVisible, environment: var3
+                    var26 = function arg0, arg1() {
                         _fun53030: for (var _fun53030_ip = 0;;) switch (_fun53030_ip) {
                             case 0:
                                 var3 = arg0;
@@ -2387,7 +2387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fullCompute';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun53031: for (var _fun53031_ip = 0;;) switch (_fun53031_ip) {
                 case 0:
                     var2 = this;
@@ -2446,7 +2446,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot3 = var3;
                     var2.headerDataCache = var0;
                     var2.footerDataCache = var0;
-                    var8 = function(arg0, arg1, arg2) { // Original name: pushData, environment: var1
+                    var8 = function arg0, arg1, arg2() {
                         _fun53032: for (var _fun53032_ip = 0;;) switch (_fun53032_ip) {
                             case 0:
                                 var9 = arg0;
@@ -2798,7 +2798,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChunkDataFromSectionItem';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun53033: for (var _fun53033_ip = 0;;) switch (_fun53033_ip) {
                 case 0:
                     var9 = arg0;
@@ -2942,7 +2942,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getChunkIndexFromSectionItem';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53034: for (var _fun53034_ip = 0;;) switch (_fun53034_ip) {
                 case 0:
                     var0 = arg0;
@@ -3131,7 +3131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'computeScrollPosition';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun53035: for (var _fun53035_ip = 0;;) switch (_fun53035_ip) {
                 case 0:
                     var11 = arg0;
@@ -3353,7 +3353,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSectionItemFromPosition';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun53036: for (var _fun53036_ip = 0;;) switch (_fun53036_ip) {
                 case 0:
                     var5 = arg0;
@@ -3461,7 +3461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setDisableRecycling';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = arg0;
             var0 = this;
             var0.disableRecycling = var1;
@@ -3473,7 +3473,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getSize';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun53038: for (var _fun53038_ip = 0;;) switch (_fun53038_ip) {
                 case 0:
                     var0 = this;
@@ -3495,7 +3495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDirty';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = this;
             var0 = var0.dirty;
             return var0;
@@ -3513,7 +3513,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.code = var10;
     var _closure1_slot23 = var6;
     var10 = var1.memo;
-    var6 = function(arg0) { // Original name: FastListStickySectionRendererComponent, environment: var5
+    var6 = function arg0() {
         _fun53040: for (var _fun53040_ip = 0;;) switch (_fun53040_ip) {
             case 0:
                 var2 = arg0;
@@ -3600,7 +3600,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var7 = var18.bind(var3)(var2);
                 var2 = var7.useAnimatedStyle;
-                var1 = function() { // Original name: v, environment: var1
+                var1 = function() {
                     _fun53041: for (var _fun53041_ip = 0;;) switch (_fun53041_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -3765,7 +3765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var10.bind(var1)(var6);
     var _closure1_slot24 = var6;
     var10 = var1.memo;
-    var6 = function(arg0) { // Original name: _FastListSectionRenderer, environment: var5
+    var6 = function arg0() {
         _fun53042: for (var _fun53042_ip = 0;;) switch (_fun53042_ip) {
             case 0:
                 var2 = arg0;
@@ -3838,7 +3838,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var10.bind(var1)(var6);
     var _closure1_slot25 = var6;
     var10 = var1.memo;
-    var6 = function(arg0) { // Original name: _FastListSectionFooterRenderer, environment: var5
+    var6 = function arg0() {
         _fun53043: for (var _fun53043_ip = 0;;) switch (_fun53043_ip) {
             case 0:
                 var2 = arg0;
@@ -3908,7 +3908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var10.bind(var1)(var6);
     var _closure1_slot26 = var6;
     var10 = var1.memo;
-    var6 = function(arg0) { // Original name: _FastListItemRenderer, environment: var5
+    var6 = function arg0() {
         _fun53044: for (var _fun53044_ip = 0;;) switch (_fun53044_ip) {
             case 0:
                 var2 = arg0;
@@ -3992,7 +3992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var10.bind(var1)(var6);
     var _closure1_slot27 = var6;
     var10 = var1.memo;
-    var6 = function(arg0) { // Original name: _FastListHeaderFooterRenderer, environment: var5
+    var6 = function arg0() {
         _fun53045: for (var _fun53045_ip = 0;;) switch (_fun53045_ip) {
             case 0:
                 var2 = arg0;
@@ -4064,7 +4064,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var10.bind(var1)(var6);
     var _closure1_slot28 = var6;
     var10 = var1.memo;
-    var6 = function(arg0) { // Original name: _FastListSpacer, environment: var5
+    var6 = function arg0() {
         _fun53046: for (var _fun53046_ip = 0;;) switch (_fun53046_ip) {
             case 0:
                 var0 = arg0;
@@ -4103,7 +4103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot29 = var6;
     var6 = function() { // Environment: var5
         var3 = _closure1_slot10;
-        var2 = function(arg0) { // Original name: FastListScrollAnchor, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot9;
             var1 = _closure2_slot0;
@@ -4119,7 +4119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'hasAnchor';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             var1 = var0.anchorId;
             var0 = null;
@@ -4132,7 +4132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'cleanAnchor';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun53050: for (var _fun53050_ip = 0;;) switch (_fun53050_ip) {
                 case 0:
                     var2 = arguments[0];
@@ -4171,7 +4171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'handleUserScroll';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var2 = this;
             var1 = var2.cleanAnchor;
             var0 = true;
@@ -4184,7 +4184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'setCustomAnchor';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun53052: for (var _fun53052_ip = 0;;) switch (_fun53052_ip) {
                 case 0:
                     var3 = this;
@@ -4216,7 +4216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'findOrUpdateAnchor';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             _fun53053: for (var _fun53053_ip = 0;;) switch (_fun53053_ip) {
                 case 0:
                     var11 = arg0;
@@ -4333,7 +4333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getAnchorIndex';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun53054: for (var _fun53054_ip = 0;;) switch (_fun53054_ip) {
                 case 0:
                     var2 = this;
@@ -4370,7 +4370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot31 = var6;
     var6 = var1.PureComponent;
     var1 = function(arg0) { // Environment: var5
-        var4 = function(arg0) { // Original name: FastList, environment: var0
+        var4 = function arg0() {
             _fun53056: for (var _fun53056_ip = 0;;) switch (_fun53056_ip) {
                 case 0:
                     var3 = this;
@@ -5741,7 +5741,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'computeScrollPosition';
         var5.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var0
+        var1 = function arg0, arg1() {
             var0 = this;
             var0 = var0.state;
             var4 = var0.fastListComputer;
@@ -5758,7 +5758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getInitialState';
         var5.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var0
+        var6 = function arg0, arg1, arg2() {
             _fun53073: for (var _fun53073_ip = 0;;) switch (_fun53073_ip) {
                 case 0:
                     var1 = arg0;
@@ -6001,7 +6001,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentDidMount';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53074: for (var _fun53074_ip = 0;;) switch (_fun53074_ip) {
                 case 0:
                     var2 = this;
@@ -6027,7 +6027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var9[var5];
                     var5 = var6.bind(var0)(var5);
                     var6 = var5.WorkletEventHandler;
-                    var5 = function(arg0) { // Original name: t, environment: var3
+                    var5 = function arg0() {
                         _fun53075: for (var _fun53075_ip = 0;;) switch (_fun53075_ip) {
                             case 0:
                                 var1 = arg0;
@@ -6129,7 +6129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getSnapshotBeforeUpdate';
         var5.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var0
+        var6 = function arg0, arg1() {
             _fun53076: for (var _fun53076_ip = 0;;) switch (_fun53076_ip) {
                 case 0:
                     var3 = arg1;
@@ -6209,7 +6209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentDidUpdate';
         var5.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: value, environment: var0
+        var6 = function arg0, arg1, arg2() {
             _fun53077: for (var _fun53077_ip = 0;;) switch (_fun53077_ip) {
                 case 0:
                     var0 = arg1;
@@ -6306,7 +6306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getViewabilityConfig';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53079: for (var _fun53079_ip = 0;;) switch (_fun53079_ip) {
                 case 0:
                     var0 = this;
@@ -6360,7 +6360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'queueViewabilityChange';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53080: for (var _fun53080_ip = 0;;) switch (_fun53080_ip) {
                 case 0:
                     var1 = this;
@@ -6394,7 +6394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'reset';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53081: for (var _fun53081_ip = 0;;) switch (_fun53081_ip) {
                 case 0:
                     var2 = this;
@@ -6438,7 +6438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'componentWillUnmount';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53082: for (var _fun53082_ip = 0;;) switch (_fun53082_ip) {
                 case 0:
                     var0 = this;
@@ -6487,7 +6487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'anchorScroll';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53083: for (var _fun53083_ip = 0;;) switch (_fun53083_ip) {
                 case 0:
                     var3 = this;
@@ -6561,7 +6561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getSectionItemFromPosition';
         var5.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var0
+        var6 = function arg0, arg1() {
             var0 = this;
             var0 = var0.state;
             var3 = var0.fastListComputer;
@@ -6576,7 +6576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getScrollPositionFromEvent';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             _fun53085: for (var _fun53085_ip = 0;;) switch (_fun53085_ip) {
                 case 0:
                     var0 = this;
@@ -6604,7 +6604,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'restoreScrollPosition';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53086: for (var _fun53086_ip = 0;;) switch (_fun53086_ip) {
                 case 0:
                     var2 = this;
@@ -6726,7 +6726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'computeBlocks';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53088: for (var _fun53088_ip = 0;;) switch (_fun53088_ip) {
                 case 0:
                     var3 = this;
@@ -6850,7 +6850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'renderItems';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53089: for (var _fun53089_ip = 0;;) switch (_fun53089_ip) {
                 case 0:
                     var21 = this;
@@ -7316,7 +7316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isEmpty';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             var0 = this;
             var0 = var0.props;
             var3 = var0.sections;
@@ -7337,7 +7337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'setDisableRecycling';
         var5.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var0
+        var6 = function arg0() {
             var0 = this;
             var0 = var0.state;
             var2 = var0.fastListComputer;
@@ -7352,7 +7352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'render';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun53100: for (var _fun53100_ip = 0;;) switch (_fun53100_ip) {
                 case 0:
                     var7 = this;
@@ -7500,7 +7500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'getDerivedStateFromProps';
         var5.key = var6;
-        var0 = function(arg0, arg1) { // Original name: value, environment: var0
+        var0 = function arg0, arg1() {
             _fun53101: for (var _fun53101_ip = 0;;) switch (_fun53101_ip) {
                 case 0:
                     var4 = arg0;
@@ -7642,7 +7642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'lib/native/FastList.tsx';
     var7 = var8.bind(var9)(var7);
     var2.default = var6;
-    var5 = function(arg0, arg1, arg2) { // Original name: getItemSizeOverrideKey, environment: var5
+    var5 = function arg0, arg1, arg2() {
         var0 = global;
         var0 = var0.HermesInternal;
         var5 = var0.concat;

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = metroImportDefault;
     var2 = exports;
     var10 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun111911: for (var _fun111911_ip = 0;;) switch (_fun111911_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot9 = var7;
     var5 = var5.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: AnimatedCircularProgress, environment: var5
+        var3 = function arg0() {
             _fun111915: for (var _fun111915_ip = 0;;) switch (_fun111915_ip) {
                 case 0:
                     var2 = arg0;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             var1 = this;
             var0 = var1.animate;
             var0 = var0.bind(var1)();
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: componentDidUpdate, environment: var5
+        var6 = function arg0() {
             _fun111918: for (var _fun111918_ip = 0;;) switch (_fun111918_ip) {
                 case 0:
                     var1 = this;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'reAnimate';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2, arg3) { // Original name: reAnimate, environment: var5
+        var6 = function arg0, arg1, arg2, arg3() {
             var3 = this;
             var1 = arg1;
             var _closure3_slot0 = var1;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'animate';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: animate, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun111921: for (var _fun111921_ip = 0;;) switch (_fun111921_ip) {
                 case 0:
                     var8 = arg0;
@@ -322,7 +322,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'animateColor';
         var4.key = var6;
-        var6 = function() { // Original name: animateColor, environment: var5
+        var6 = function() {
             _fun111922: for (var _fun111922_ip = 0;;) switch (_fun111922_ip) {
                 case 0:
                     var5 = this;
@@ -362,7 +362,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             var8 = this;
             var4 = var8.props;
             var0 = var4.fill;

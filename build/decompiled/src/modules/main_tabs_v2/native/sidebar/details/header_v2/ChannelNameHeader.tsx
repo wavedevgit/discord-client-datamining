@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: DirectMessageIcon, environment: var1
+    var0 = function arg0() {
         _fun107011: for (var _fun107011_ip = 0;;) switch (_fun107011_ip) {
             case 0:
                 var1 = arg0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: ChannelNameHeaderContent, environment: var1
+    var0 = function arg0() {
         _fun107014: for (var _fun107014_ip = 0;;) switch (_fun107014_ip) {
             case 0:
                 var1 = arg0;
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: DMChannelNameHeader, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var7 = var1.channel;
         var _closure2_slot0 = var7;
@@ -572,7 +572,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: DefaultChannelNameHeader, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.channel;
         var6 = var0.containerStyle;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.statusStyle = var9;
     var3 = var7.bind(var8)(var3);
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: ThreadParentChannelLink, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.channel;
         var _closure2_slot0 = var1;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var7.YbkB3U;
         var7 = {};
         var7.channelName = var12;
-        var11 = function() { // Original name: channelNameHook, environment: var11
+        var11 = function() {
             var3 = _closure1_slot12;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0) { // Original name: ChannelSubtitle, environment: var1
+    var3 = function arg0() {
         _fun107026: for (var _fun107026_ip = 0;;) switch (_fun107026_ip) {
             case 0:
                 var1 = arg0;
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot17 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChannelNameHeader, environment: var1
+    var1 = function arg0() {
         _fun107028: for (var _fun107028_ip = 0;;) switch (_fun107028_ip) {
             case 0:
                 var0 = arg0;

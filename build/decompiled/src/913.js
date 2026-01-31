@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var3, var0);
     var0 = ['X-Client-IP', 'X-Forwarded-For', 'Fly-Client-IP', 'CF-Connecting-IP', 'Fastly-Client-Ip', 'True-Client-Ip', 'X-Real-IP', 'X-Cluster-Client-IP', 'X-Forwarded', 'Forwarded-For', 'Forwarded', 'X-Vercel-Forwarded-For'];
     var _closure1_slot0 = var0;
-    var2 = function(arg0) { // Original name: getClientIPAddress, environment: var2
+    var2 = function arg0() {
         _fun9561: for (var _fun9561_ip = 0;;) switch (_fun9561_ip) {
             case 0:
                 var1 = arg0;

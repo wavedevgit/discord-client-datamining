@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/native/MobileTrialUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useShouldShowPremiumTrialUserSettingsAvatarBadge, environment: var1
+    var3 = function() {
         _fun57641: for (var _fun57641_ip = 0;;) switch (_fun57641_ip) {
             case 0:
                 var5 = _closure1_slot0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldShowPremiumTrialUserSettingsAvatarBadge = var3;
-    var1 = function() { // Original name: usePremiumTrialOfferPremiumType, environment: var1
+    var1 = function() {
         _fun57642: for (var _fun57642_ip = 0;;) switch (_fun57642_ip) {
             case 0:
                 var2 = _closure1_slot0;

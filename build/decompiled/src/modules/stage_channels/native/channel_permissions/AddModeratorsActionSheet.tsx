@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/native/channel_permissions/AddModeratorsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AddModeratorsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun109021: for (var _fun109021_ip = 0;;) switch (_fun109021_ip) {
             case 0:
                 var0 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.canSkip;
                 var4 = undefined;
                 var _closure2_slot1 = var4;
-                var0 = function() { // Original name: _handleAddModeratorsPressed, environment: var17
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -365,7 +365,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.OYkgVk;
                 var14 = var18.bind(var19)(var14);
                 var7.text = var14;
-                var14 = function() { // Original name: handleAddModeratorsPressed, environment: var17
+                var14 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot2;
                     var2 = var3.apply;
@@ -394,7 +394,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18["5Wxrcd"];
                 var18 = var19.bind(var20)(var18);
                 var14.text = var18;
-                var17 = function() { // Original name: handleSkip, environment: var17
+                var17 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 15;

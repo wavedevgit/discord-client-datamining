@@ -3,11 +3,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     _fun24326: for (var _fun24326_ip = 0;;) switch (_fun24326_ip) {
         case 0:
             var3 = require;
-            var2 = function(arg0) { // Original name: n, environment: var0
+            var2 = function arg0() {
                 _fun24327: for (var _fun24327_ip = 0;;) switch (_fun24327_ip) {
                     case 0:
                         var3 = arg0;
-                        var0 = function(arg0) { // Original name: plural, environment: var5
+                        var0 = function arg0() {
                             _fun24328: for (var _fun24328_ip = 0;;) switch (_fun24328_ip) {
                                 case 0:
                                     var3 = arg0;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var _closure2_slot0 = var0;
-                        var4 = function(arg0, arg1, arg2, arg3) { // Original name: translate, environment: var5
+                        var4 = function arg0, arg1, arg2, arg3() {
                             _fun24329: for (var _fun24329_ip = 0;;) switch (_fun24329_ip) {
                                 case 0:
                                     var6 = arg0;
@@ -521,7 +521,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             'lastWeek': null,
                             'sameElse': 'L'
                         };
-                        var6 = function() { // Original name: nextWeek, environment: var5
+                        var6 = function() {
                             _fun24330: for (var _fun24330_ip = 0;;) switch (_fun24330_ip) {
                                 case 0:
                                     var1 = this;
@@ -592,7 +592,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.nextWeek = var6;
-                        var5 = function() { // Original name: lastWeek, environment: var5
+                        var5 = function() {
                             _fun24331: for (var _fun24331_ip = 0;;) switch (_fun24331_ip) {
                                 case 0:
                                     var1 = this;

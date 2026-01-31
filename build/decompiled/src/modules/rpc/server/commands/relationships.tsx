@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var10
+    var0 = function arg0, arg1() {
         _fun98116: for (var _fun98116_ip = 0;;) switch (_fun98116_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var10
+    var0 = function arg0, arg1() {
         _fun98118: for (var _fun98118_ip = 0;;) switch (_fun98118_ip) {
             case 0:
                 var3 = arg0;
@@ -304,7 +304,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12[0] = var14;
     var11[var13] = var12;
     var3.scope = var11;
-    var10 = function(arg0) { // Original name: handler, environment: var10
+    var10 = function arg0() {
         _fun98119: for (var _fun98119_ip = 0;;) switch (_fun98119_ip) {
             case 0:
                 var12 = arg0;

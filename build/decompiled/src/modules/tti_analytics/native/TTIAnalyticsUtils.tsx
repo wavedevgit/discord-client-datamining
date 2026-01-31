@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun39819: for (var _fun39819_ip = 0;;) switch (_fun39819_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun39821: for (var _fun39821_ip = 0;;) switch (_fun39821_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot26 = var0;
-    var3 = function() { // Original name: getDeviceMetadata, environment: var1
+    var3 = function() {
         _fun39822: for (var _fun39822_ip = 0;;) switch (_fun39822_ip) {
             case 0:
                 var2 = _closure1_slot17;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot27 = var3;
-    var0 = function() { // Original name: getRedesignScreenName, environment: var1
+    var0 = function() {
         _fun39823: for (var _fun39823_ip = 0;;) switch (_fun39823_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0, arg1) { // Original name: sharedProperties, environment: var1
+    var0 = function arg0, arg1() {
         _fun39824: for (var _fun39824_ip = 0;;) switch (_fun39824_ip) {
             case 0:
                 var0 = _closure1_slot4;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _logLegacyAppUiViewed, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -788,7 +788,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: trackAppUIViewed2, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot32;
         var2 = var3.apply;
@@ -799,7 +799,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot31 = var0;
-    var0 = function() { // Original name: _trackAppUIViewed, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -993,7 +993,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var7.bind(var2)(var6);
                         var7 = var8.openLazy;
                         var6 = {};
-                        var9 = function() { // Original name: importer, environment: var3
+                        var9 = function() {
                             var2 = _closure1_slot0;
                             var0 = _closure1_slot2;
                             var1 = 31;
@@ -1083,7 +1083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun39831
                         }
                     case 560:
-                        var3 = function(arg0) { // Original name: logToDevice, environment: var3
+                        var3 = function arg0() {
                             var6 = {};
                             var9 = arg0;
                             var10 = var6;
@@ -1195,7 +1195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot32 = var0;
-    var0 = function(arg0) { // Original name: batchKeys, environment: var1
+    var0 = function arg0() {
         _fun39839: for (var _fun39839_ip = 0;;) switch (_fun39839_ip) {
             case 0:
                 var7 = arg0;
@@ -1370,12 +1370,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/tti_analytics/native/TTIAnalyticsUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.getDeviceMetadata = var3;
-    var3 = function() { // Original name: currentLoadId, environment: var1
+    var3 = function() {
         var0 = _closure1_slot18;
         return var0;
     };
     var2.currentLoadId = var3;
-    var3 = function(arg0) { // Original name: trackAppOpened, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
@@ -1426,7 +1426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackAppOpened = var3;
-    var3 = function() { // Original name: trackAppUIViewed, environment: var1
+    var3 = function() {
         _fun39842: for (var _fun39842_ip = 0;;) switch (_fun39842_ip) {
             case 0:
                 var4 = arguments[0];
@@ -1556,7 +1556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var9 = _closure2_slot1;
                                 var8 = _closure2_slot2;
                                 var7 = _closure2_slot3;
-                                var1 = function() { // Original name: logLegacyAppUiViewed, environment: var1
+                                var1 = function() {
                                     var0 = undefined;
                                     var3 = _closure1_slot30;
                                     var2 = var3.apply;
@@ -1592,7 +1592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var0)(var2);
                 var2 = 1000;
                 var2 = var4.bind(var0)(var3, var2);
-                var1 = function() { // Original name: scheduleTrackAppUiViewed2, environment: var1
+                var1 = function() {
                     _fun39846: for (var _fun39846_ip = 0;;) switch (_fun39846_ip) {
                         case 0:
                             var2 = _closure1_slot23;
@@ -1780,12 +1780,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackAppUIViewed = var3;
-    var3 = function() { // Original name: getLastTrackedAppUiViewed2Properties, environment: var1
+    var3 = function() {
         var0 = _closure1_slot24;
         return var0;
     };
     var2.getLastTrackedAppUiViewed2Properties = var3;
-    var1 = function() { // Original name: trackAppLaunchCompleted, environment: var1
+    var1 = function() {
         _fun39852: for (var _fun39852_ip = 0;;) switch (_fun39852_ip) {
             case 0:
                 var8 = arguments[0];

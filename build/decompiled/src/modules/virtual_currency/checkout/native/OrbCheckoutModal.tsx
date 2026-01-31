@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: OrbCheckoutModalContent, environment: var1
+    var0 = function arg0() {
         _fun86572: for (var _fun86572_ip = 0;;) switch (_fun86572_ip) {
             case 0:
                 var0 = arg0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'MAIN';
     var3.MAIN = var6;
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: OrbCheckoutModalFooter, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.onPress;
         var3 = _closure1_slot12;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: OrbCheckoutModalScreen, environment: var1
+    var3 = function arg0() {
         _fun86574: for (var _fun86574_ip = 0;;) switch (_fun86574_ip) {
             case 0:
                 var1 = arg0;
@@ -614,7 +614,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/virtual_currency/checkout/native/OrbCheckoutModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var11 = var0.skuId;
         var _closure2_slot0 = var11;
@@ -758,7 +758,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var13.bind(var14)(var9);
         var9 = var10.bind(var11)(var9, var12);
         var2.headerLeft = var9;
-        var8 = function() { // Original name: render, environment: var8
+        var8 = function() {
             var3 = _closure1_slot11;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;

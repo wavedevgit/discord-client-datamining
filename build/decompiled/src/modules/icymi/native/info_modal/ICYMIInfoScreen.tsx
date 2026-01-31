@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/info_modal/ICYMIInfoScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ICYMIInfoScreen, environment: var1
+    var1 = function arg0() {
         _fun103614: for (var _fun103614_ip = 0;;) switch (_fun103614_ip) {
             case 0:
                 var0 = arg0;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot1;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function() { // Original name: header, environment: var3
+                    var3 = function() {
                         var0 = null;
                         return var0;
                     };
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7[var9];
                 var9 = var14.bind(var3)(var9);
                 var5.source = var9;
-                var9 = function() { // Original name: onPress, environment: var31
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 14;
@@ -722,7 +722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.t;
                 var28 = var27["jVS/hc"];
                 var27 = {};
-                var31 = function(arg0, arg1) { // Original name: feedbackHook, environment: var31
+                var31 = function arg0, arg1() {
                     var4 = _closure1_slot9;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -735,7 +735,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         'variant': 'text-xs/medium',
                         'color': 'text-link'
                     };
-                    var0 = function() { // Original name: onPress, environment: var0
+                    var0 = function() {
                         var3 = _closure1_slot1;
                         var0 = _closure1_slot2;
                         var2 = 27;

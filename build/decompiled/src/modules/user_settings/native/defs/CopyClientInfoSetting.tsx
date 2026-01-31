@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: getClientInfoString, environment: var9
+    var1 = function arg0() {
         _fun85570: for (var _fun85570_ip = 0;;) switch (_fun85570_ip) {
             case 0:
                 var1 = arg0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var1;
-    var0 = function() { // Original name: getClientInfo, environment: var9
+    var0 = function() {
         _fun85571: for (var _fun85571_ip = 0;;) switch (_fun85571_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: copyToast, environment: var9
+    var0 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot2;
         var0 = 5;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: ClientClientInfoActionSheet, environment: var9
+    var0 = function() {
         _fun85573: for (var _fun85573_ip = 0;;) switch (_fun85573_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var17.bind(var2)();
                 var15 = var15.appVersion;
                 var7.subLabel = var15;
-                var15 = function() { // Original name: onPress, environment: var11
+                var15 = function() {
                     var2 = _closure1_slot10;
                     var1 = _closure1_slot9;
                     var0 = undefined;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17.bind(var2)();
                 var18 = var18.buildNumber;
                 var12.subLabel = var18;
-                var18 = function() { // Original name: onPress, environment: var11
+                var18 = function() {
                     var2 = _closure1_slot10;
                     var1 = _closure1_slot9;
                     var0 = undefined;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17.bind(var2)();
                 var18 = var18.releaseChannel;
                 var12.subLabel = var18;
-                var18 = function() { // Original name: onPress, environment: var11
+                var18 = function() {
                     var2 = _closure1_slot10;
                     var1 = _closure1_slot9;
                     var0 = undefined;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17.bind(var2)();
                 var18 = var18.manifest;
                 var12.subLabel = var18;
-                var18 = function() { // Original name: onPress, environment: var11
+                var18 = function() {
                     var2 = _closure1_slot10;
                     var1 = _closure1_slot9;
                     var0 = undefined;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.bind(var2)();
                 var17 = var17.buildOverride;
                 var12.subLabel = var17;
-                var17 = function() { // Original name: onPress, environment: var11
+                var17 = function() {
                     var2 = _closure1_slot10;
                     var1 = _closure1_slot9;
                     var0 = undefined;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'subLabel': 'Enabled'
                 };
                 var21 = 'Enabled';
-                var19 = function() { // Original name: onPress, environment: var11
+                var19 = function() {
                     var2 = _closure1_slot10;
                     var0 = undefined;
                     var1 = 'React Native New Architecture is enabled.';
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var21;
             case 859:
                 var17.subLabel = var20;
-                var20 = function() { // Original name: onPress, environment: var11
+                var20 = function() {
                     _fun85580: for (var _fun85580_ip = 0;;) switch (_fun85580_ip) {
                         case 0:
                             var2 = _closure1_slot10;
@@ -441,7 +441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12["7dqZ6H"];
                 var12 = var13.bind(var14)(var12);
                 var8.label = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure1_slot9;
                     var0 = undefined;
                     var3 = var2.bind(var0)();
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var5.bind(var0)(var3);
     var4 = var7.createPressable;
     var3 = {};
-    var10 = function() { // Original name: title, environment: var9
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var5.bind(var0)(var10);
     var10 = var10.ClipboardListIcon;
     var3.IconComponent = var10;
-    var9 = function() { // Original name: handleClientInfoPress, environment: var9
+    var9 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 3;

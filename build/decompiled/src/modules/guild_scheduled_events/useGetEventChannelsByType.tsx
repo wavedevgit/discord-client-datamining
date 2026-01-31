@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun65425: for (var _fun65425_ip = 0;;) switch (_fun65425_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun65427: for (var _fun65427_ip = 0;;) switch (_fun65427_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var3 = function(arg0, arg1) { // Original name: getEventChannelsByType, environment: var1
+    var3 = function arg0, arg1() {
         _fun65428: for (var _fun65428_ip = 0;;) switch (_fun65428_ip) {
             case 0:
                 var7 = arg1;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_scheduled_events/useGetEventChannelsByType.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: useCanCreateEventInStageChannel, environment: var1
+    var4 = function arg0() {
         _fun65429: for (var _fun65429_ip = 0;;) switch (_fun65429_ip) {
             case 0:
                 var3 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useCanCreateEventInStageChannel = var4;
-    var4 = function(arg0) { // Original name: useCanCreateEventInVoiceChannel, environment: var1
+    var4 = function arg0() {
         _fun65432: for (var _fun65432_ip = 0;;) switch (_fun65432_ip) {
             case 0:
                 var2 = arg0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanCreateEventInVoiceChannel = var4;
     var2.getEventChannelsByType = var3;
-    var1 = function(arg0, arg1) { // Original name: useGetEventChannelsByType, environment: var1
+    var1 = function arg0, arg1() {
         var6 = arg0;
         var5 = arg1;
         var _closure2_slot0 = var6;

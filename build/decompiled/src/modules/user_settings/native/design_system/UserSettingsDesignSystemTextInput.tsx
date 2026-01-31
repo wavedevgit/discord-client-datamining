@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: Sample, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.children;
         var0 = _closure1_slot8;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: InputUsername, environment: var1
+    var0 = function arg0() {
         _fun87800: for (var _fun87800_ip = 0;;) switch (_fun87800_ip) {
             case 0:
                 var6 = arg0;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.AtIcon;
                 var5 = 'leadingIcon';
                 var0[var5] = var6;
-                var5 = function(arg0) { // Original name: onChange, environment: var4
+                var5 = function arg0() {
                     _fun87801: for (var _fun87801_ip = 0;;) switch (_fun87801_ip) {
                         case 0:
                             var3 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: GhostInputUsername, environment: var1
+    var0 = function arg0() {
         _fun87802: for (var _fun87802_ip = 0;;) switch (_fun87802_ip) {
             case 0:
                 var5 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 169:
                 var5 = 'errorMessage';
                 var0[var5] = var6;
-                var5 = function(arg0) { // Original name: onChange, environment: var4
+                var5 = function arg0() {
                     _fun87803: for (var _fun87803_ip = 0;;) switch (_fun87803_ip) {
                         case 0:
                             var3 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function() { // Original name: GhostInputActionSheet, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var6 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: GhostInputActionSheetLeftAligned, environment: var1
+    var0 = function() {
         var3 = _closure1_slot7;
         var6 = _closure1_slot0;
         var8 = _closure1_slot2;
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: CustomAttachmentExample, environment: var1
+    var0 = function() {
         _fun87806: for (var _fun87806_ip = 0;;) switch (_fun87806_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.label = var7;
                 var0.value = var6;
                 var6 = {};
-                var7 = function() { // Original name: onPress, environment: var4
+                var7 = function() {
                     var2 = _closure2_slot1;
                     var1 = undefined;
                     var0 = 'You pressed the icon';
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var3)(var5);
                 var5 = var5.AtIcon;
                 var0.trailingIcon = var5;
-                var4 = function(arg0) { // Original name: onChange, environment: var4
+                var4 = function arg0() {
                     _fun87808: for (var _fun87808_ip = 0;;) switch (_fun87808_ip) {
                         case 0:
                             var4 = arg0;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemTextInput.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsDesignSystemTextInput, environment: var1
+    var1 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var22.icon = var25;
         var25 = 'Settings';
         var22.accessibilityLabel = var25;
-        var25 = function() { // Original name: onPress, environment: var17
+        var25 = function() {
             var0 = null;
             return var0;
         };
@@ -1017,7 +1017,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16 = var9.bind(var3)(var16);
         var18 = var16.Button;
         var16 = {};
-        var19 = function() { // Original name: onPress, environment: var17
+        var19 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 22;
@@ -1060,7 +1060,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15 = var9.bind(var3)(var15);
         var16 = var15.Button;
         var15 = {};
-        var17 = function() { // Original name: onPress, environment: var17
+        var17 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 22;

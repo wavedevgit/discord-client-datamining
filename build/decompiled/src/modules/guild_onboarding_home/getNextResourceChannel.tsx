@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_onboarding_home/getNextResourceChannel.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getCurrentAndNextResourceChannel, environment: var1
+    var3 = function arg0, arg1() {
         _fun89633: for (var _fun89633_ip = 0;;) switch (_fun89633_ip) {
             case 0:
                 var1 = arg1;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1) { // Original name: usePreviousAndNextResourceChannel, environment: var1
+    var1 = function arg0, arg1() {
         _fun89635: for (var _fun89635_ip = 0;;) switch (_fun89635_ip) {
             case 0:
                 var1 = arg0;

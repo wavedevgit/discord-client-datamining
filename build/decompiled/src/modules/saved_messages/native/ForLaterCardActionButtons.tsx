@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/saved_messages/native/ForLaterCardActionButtons.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForLaterCardActionButtons, environment: var1
+    var1 = function arg0() {
         _fun75917: for (var _fun75917_ip = 0;;) switch (_fun75917_ip) {
             case 0:
                 var0 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.paths;
                             var2 = var5.bind(var6)(var2, var1);
                             var1 = {};
-                            var5 = function(arg0) { // Original name: createReminder, environment: var8
+                            var5 = function arg0() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 7;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.bind(var3)(var8);
                 var8 = var8.ClockIcon;
                 var0.IconComponent = var8;
-                var8 = function() { // Original name: action, environment: var9
+                var8 = function() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = false;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.bind(var3)(var8);
                 var8 = var8.ChatArrowRightIcon;
                 var0.IconComponent = var8;
-                var8 = function() { // Original name: action, environment: var9
+                var8 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.BookmarkIcon;
                 var0.IconComponent = var1;
-                var1 = function() { // Original name: action, environment: var9
+                var1 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 7;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7.bind(var3)(var0);
                 var0 = var0.PencilIcon;
                 var1.IconComponent = var0;
-                var0 = function() { // Original name: action, environment: var9
+                var0 = function() {
                     var2 = _closure2_slot2;
                     var1 = undefined;
                     var0 = true;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var7.bind(var3)(var12);
                 var12 = var12.ChatArrowRightIcon;
                 var1.IconComponent = var12;
-                var12 = function() { // Original name: action, environment: var9
+                var12 = function() {
                     var1 = _closure2_slot1;
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -319,7 +319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.bind(var3)(var2);
                 var2 = var2.BookmarkIcon;
                 var1.IconComponent = var2;
-                var2 = function() { // Original name: action, environment: var9
+                var2 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 7;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.items = var11;
                 var11 = 'handled';
                 var4.keyboardShouldPersistTaps = var11;
-                var11 = function(arg0) { // Original name: children, environment: var9
+                var11 = function arg0() {
                     var2 = arg0;
                     var7 = var2.ref;
                     var0 = null;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var12[var10];
                 var10 = var11.bind(var3)(var10);
                 var6.icon = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var0 = 7;

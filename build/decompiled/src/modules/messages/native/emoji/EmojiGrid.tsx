@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.emojiGridContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot5 = var3;
-    var3 = function(arg0) { // Original name: Emoji, environment: var1
+    var3 = function arg0() {
         _fun74041: for (var _fun74041_ip = 0;;) switch (_fun74041_ip) {
             case 0:
                 var0 = arg0;

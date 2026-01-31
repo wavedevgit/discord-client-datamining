@@ -1,10 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Original name: TreeBase, environment: var0
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
-    var2 = function(arg0) { // Original name: Iterator, environment: var0
+    var2 = function arg0() {
         var1 = this;
         var0 = arg0;
         var1._tree = var0;

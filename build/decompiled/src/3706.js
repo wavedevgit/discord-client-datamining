@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: NativeReanimatedModule, environment: var4
+        var2 = function() {
             _fun33148: for (var _fun33148_ip = 0;;) switch (_fun33148_ip) {
                 case 0:
                     var3 = this;
@@ -164,7 +164,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'scheduleOnUI';
         var0.key = var1;
-        var1 = function(arg0) { // Original name: scheduleOnUI, environment: var4
+        var1 = function arg0() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -182,7 +182,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'executeOnUIRuntimeSync';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: executeOnUIRuntimeSync, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -199,7 +199,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'createWorkletRuntime';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: createWorkletRuntime, environment: var4
+        var5 = function arg0, arg1() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -217,7 +217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scheduleOnRuntime';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: scheduleOnRuntime, environment: var4
+        var5 = function arg0, arg1() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -235,7 +235,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'registerSensor';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: registerSensor, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -256,7 +256,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unregisterSensor';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: unregisterSensor, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -273,7 +273,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'registerEventHandler';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: registerEventHandler, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -292,7 +292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unregisterEventHandler';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: unregisterEventHandler, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -309,7 +309,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getViewProp';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2, arg3) { // Original name: getViewProp, environment: var4
+        var5 = function arg0, arg1, arg2, arg3() {
             _fun33157: for (var _fun33157_ip = 0;;) switch (_fun33157_ip) {
                 case 0:
                     var5 = arg1;
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'configureLayoutAnimationBatch';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: configureLayoutAnimationBatch, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setShouldAnimateExitingForTag';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: setShouldAnimateExitingForTag, environment: var4
+        var5 = function arg0, arg1() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -396,7 +396,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'enableLayoutAnimations';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: enableLayoutAnimations, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -413,7 +413,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'configureProps';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: configureProps, environment: var4
+        var5 = function arg0, arg1() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -431,7 +431,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'subscribeForKeyboardEvents';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: subscribeForKeyboardEvents, environment: var4
+        var5 = function arg0, arg1, arg2() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -450,7 +450,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unsubscribeFromKeyboardEvents';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: unsubscribeFromKeyboardEvents, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -467,7 +467,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'markNodeAsRemovable';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: markNodeAsRemovable, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unmarkNodeAsRemovable';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: unmarkNodeAsRemovable, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -501,7 +501,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setNodeRemovalCallback';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: setNodeRemovalCallback, environment: var4
+        var5 = function arg0() {
             var3 = _closure1_slot5;
             var2 = _closure1_slot7;
             var0 = undefined;
@@ -518,7 +518,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getSettledUpdates';
         var0.key = var5;
-        var4 = function() { // Original name: getSettledUpdates, environment: var4
+        var4 = function() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot7;
             var2 = undefined;
@@ -539,7 +539,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot8 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: DummyReanimatedModuleProxy, environment: var4
+        var2 = function() {
             var3 = _closure1_slot3;
             var2 = _closure2_slot0;
             var0 = undefined;
@@ -551,7 +551,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'scheduleOnUI';
         var0.key = var1;
-        var1 = function() { // Original name: scheduleOnUI, environment: var4
+        var1 = function() {
             var0 = undefined;
             return var0;
         };
@@ -561,7 +561,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'executeOnUIRuntimeSync';
         var0.key = var5;
-        var5 = function() { // Original name: executeOnUIRuntimeSync, environment: var4
+        var5 = function() {
             var0 = null;
             return var0;
         };
@@ -570,7 +570,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'createWorkletRuntime';
         var0.key = var5;
-        var5 = function() { // Original name: createWorkletRuntime, environment: var4
+        var5 = function() {
             var0 = null;
             return var0;
         };
@@ -579,7 +579,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'scheduleOnRuntime';
         var0.key = var5;
-        var5 = function() { // Original name: scheduleOnRuntime, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -588,7 +588,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'configureLayoutAnimationBatch';
         var0.key = var5;
-        var5 = function() { // Original name: configureLayoutAnimationBatch, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -597,7 +597,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setShouldAnimateExitingForTag';
         var0.key = var5;
-        var5 = function() { // Original name: setShouldAnimateExitingForTag, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -606,7 +606,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'enableLayoutAnimations';
         var0.key = var5;
-        var5 = function() { // Original name: enableLayoutAnimations, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -615,7 +615,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'configureProps';
         var0.key = var5;
-        var5 = function() { // Original name: configureProps, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -624,7 +624,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'subscribeForKeyboardEvents';
         var0.key = var5;
-        var5 = function() { // Original name: subscribeForKeyboardEvents, environment: var4
+        var5 = function() {
             var0 = -1;
             return var0;
         };
@@ -633,7 +633,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unsubscribeFromKeyboardEvents';
         var0.key = var5;
-        var5 = function() { // Original name: unsubscribeFromKeyboardEvents, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -642,7 +642,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'markNodeAsRemovable';
         var0.key = var5;
-        var5 = function() { // Original name: markNodeAsRemovable, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -651,7 +651,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unmarkNodeAsRemovable';
         var0.key = var5;
-        var5 = function() { // Original name: unmarkNodeAsRemovable, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -660,7 +660,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'setNodeRemovalCallback';
         var0.key = var5;
-        var5 = function() { // Original name: setNodeRemovalCallback, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -669,7 +669,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'registerSensor';
         var0.key = var5;
-        var5 = function() { // Original name: registerSensor, environment: var4
+        var5 = function() {
             var0 = -1;
             return var0;
         };
@@ -678,7 +678,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unregisterSensor';
         var0.key = var5;
-        var5 = function() { // Original name: unregisterSensor, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -687,7 +687,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'registerEventHandler';
         var0.key = var5;
-        var5 = function() { // Original name: registerEventHandler, environment: var4
+        var5 = function() {
             var0 = -1;
             return var0;
         };
@@ -696,7 +696,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'unregisterEventHandler';
         var0.key = var5;
-        var5 = function() { // Original name: unregisterEventHandler, environment: var4
+        var5 = function() {
             var0 = undefined;
             return var0;
         };
@@ -705,7 +705,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getViewProp';
         var0.key = var5;
-        var5 = function() { // Original name: getViewProp, environment: var4
+        var5 = function() {
             var0 = null;
             return var0;
         };
@@ -714,7 +714,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getSettledUpdates';
         var0.key = var5;
-        var4 = function() { // Original name: getSettledUpdates, environment: var4
+        var4 = function() {
             var0 = new Array(0);
             return var0;
         };
@@ -726,7 +726,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = var3.bind(var0)();
     var _closure1_slot9 = var3;
-    var1 = function() { // Original name: createNativeReanimatedModule, environment: var1
+    var1 = function() {
         var0 = _closure1_slot8;
         var1 = var0.prototype;
         var1 = Object.create(var1, {

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/utils/storeListingToGuildPowerup.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: storeListingToGuildPowerup, environment: var1
+    var1 = function arg0, arg1() {
         _fun78077: for (var _fun78077_ip = 0;;) switch (_fun78077_ip) {
             case 0:
                 var16 = arg0;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/explicit_media_redaction/ExplicitMediaActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: handleSenderFalsePositiveFlow, environment: var1
+    var1 = function arg0, arg1() {
         _fun61592: for (var _fun61592_ip = 0;;) switch (_fun61592_ip) {
             case 0:
                 var7 = arg0;

@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var5 = dependencyMap;
-    var3 = function(arg0, arg1, arg2) { // Original name: getInputRangeFromIndexes, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun75092: for (var _fun75092_ip = 0;;) switch (_fun75092_ip) {
             case 0:
                 var5 = arg0;
@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.bind(var0)(var5);
     var4 = var4.Platform;
     var2.getInputRangeFromIndexes = var3;
-    var3 = function(arg0, arg1) { // Original name: defaultScrollInterpolator, environment: var1
+    var3 = function arg0, arg1() {
         var0 = {};
         var5 = _closure1_slot1;
         var4 = [1, 0];
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.defaultScrollInterpolator = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: defaultAnimatedStyles, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun75094: for (var _fun75094_ip = 0;;) switch (_fun75094_ip) {
             case 0:
                 var6 = arg1;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.defaultAnimatedStyles = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: shiftAnimatedStyles, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun75095: for (var _fun75095_ip = 0;;) switch (_fun75095_ip) {
             case 0:
                 var2 = arg1;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.shiftAnimatedStyles = var3;
-    var3 = function(arg0, arg1) { // Original name: stackScrollInterpolator, environment: var1
+    var3 = function arg0, arg1() {
         var1 = [1, 0];
         var0 = -1;
         var1[2] = var0;
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.stackScrollInterpolator = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: stackAnimatedStyles, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun75097: for (var _fun75097_ip = 0;;) switch (_fun75097_ip) {
             case 0:
                 var7 = arg1;
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3;
             case 74:
                 _closure2_slot0 = var2;
-                var14 = function(arg0, arg1) { // Original name: getTranslateFromScale, environment: var1
+                var14 = function arg0, arg1() {
                     var7 = arg0;
                     var4 = arg1;
                     var0 = 1;
@@ -425,7 +425,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.stackAnimatedStyles = var3;
-    var3 = function(arg0, arg1) { // Original name: tinderScrollInterpolator, environment: var1
+    var3 = function arg0, arg1() {
         var1 = [1, 0];
         var0 = -1;
         var1[2] = var0;
@@ -444,7 +444,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.tinderScrollInterpolator = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: tinderAnimatedStyles, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun75100: for (var _fun75100_ip = 0;;) switch (_fun75100_ip) {
             case 0:
                 var7 = arg1;
@@ -498,7 +498,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2;
             case 93:
                 _closure2_slot0 = var1;
-                var19 = function(arg0, arg1) { // Original name: getMainTranslateFromScale, environment: var0
+                var19 = function arg0, arg1() {
                     var1 = 1;
                     var0 = arg1;
                     var1 = var1 / var0;
@@ -513,7 +513,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = -var0;
                     return var0;
                 };
-                var13 = function(arg0, arg1) { // Original name: getSecondaryTranslateFromScale, environment: var0
+                var13 = function arg0, arg1() {
                     var0 = global;
                     var2 = var0.Math;
                     var1 = var2.round;

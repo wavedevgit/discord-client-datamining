@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var9;
-    var9 = function() { // Original name: useDescription, environment: var7
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 3;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useDescription = var9;
     var8 = var8.VOICE;
     var1.parent = var8;
-    var7 = function() { // Original name: useValue, environment: var7
+    var7 = function() {
         _fun88299: for (var _fun88299_ip = 0;;) switch (_fun88299_ip) {
             case 0:
                 var2 = _closure1_slot0;

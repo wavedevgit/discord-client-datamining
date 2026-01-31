@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: Chained, environment: var4
+        var2 = function arg0() {
             var2 = this;
             var3 = _closure1_slot0;
             var1 = _closure2_slot0;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.Symbol;
         var1 = var1.iterator;
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = this;
             return var0;
         };
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'next';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun40079: for (var _fun40079_ip = 0;;) switch (_fun40079_ip) {
                 case 0:
                     var3 = this;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_database/util/Iterable.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: chain, environment: var1
+    var1 = function arg0() {
         var3 = 0;
         var3 = copyRestArgs(var3);
         var0 = _closure1_slot2;

@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var7.GAME_SERVERS;
     var7 = {};
     var7.boostPrice = var6;
-    var9 = function(arg0) { // Original name: isEnabled, environment: var13
+    var9 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 6;

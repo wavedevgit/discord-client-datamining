@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var4.bind(var0)(var11);
     var11 = var11.activityInstanceConnectedParticipantsScope;
     var3.scope = var11;
-    var10 = function(arg0) { // Original name: handler, environment: var10
+    var10 = function arg0() {
         var0 = arg0;
         var0 = var0.socket;
         var2 = _closure1_slot0;

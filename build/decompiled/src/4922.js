@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_useScrollHandlerTs3(event,context){const{handleOnEndDrag,onScrollEndDrag,runOnJS}=this.__closure;handleOnEndDrag(event,context);if(onScrollEndDrag){runOnJS(onScrollEndDrag)({nativeEvent:event});}}';
     var2.code = var3;
     var _closure1_slot4 = var2;
-    var0 = function() { // Original name: useScrollHandler, environment: var0
+    var0 = function() {
         _fun44628: for (var _fun44628_ip = 0;;) switch (_fun44628_ip) {
             case 0:
                 var19 = undefined;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var18.bind(var19)(var4);
                 var5 = var6.useAnimatedScrollHandler;
                 var4 = {};
-                var16 = function(arg0, arg1) { // Original name: pnpm_useScrollHandlerTs1, environment: var3
+                var16 = function arg0, arg1() {
                     _fun44629: for (var _fun44629_ip = 0;;) switch (_fun44629_ip) {
                         case 0:
                             var3 = arg0;
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var21 = _closure1_slot2;
                 var16.__initData = var21;
                 var4.onScroll = var16;
-                var16 = function(arg0, arg1) { // Original name: pnpm_useScrollHandlerTs2, environment: var3
+                var16 = function arg0, arg1() {
                     _fun44630: for (var _fun44630_ip = 0;;) switch (_fun44630_ip) {
                         case 0:
                             var3 = arg0;
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var21 = _closure1_slot3;
                 var16.__initData = var21;
                 var4.onBeginDrag = var16;
-                var3 = function(arg0, arg1) { // Original name: pnpm_useScrollHandlerTs3, environment: var3
+                var3 = function arg0, arg1() {
                     _fun44631: for (var _fun44631_ip = 0;;) switch (_fun44631_ip) {
                         case 0:
                             var3 = arg0;

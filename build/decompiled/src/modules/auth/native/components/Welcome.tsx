@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: InviteCard, environment: var1
+    var0 = function arg0() {
         _fun100213: for (var _fun100213_ip = 0;;) switch (_fun100213_ip) {
             case 0:
                 var0 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot25 = var0;
-    var0 = function(arg0) { // Original name: GuildTemplateCard, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var12 = var0.guildTemplate;
         var5 = var0.style;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var0 = function(arg0) { // Original name: Centerpiece, environment: var1
+    var0 = function arg0() {
         _fun100215: for (var _fun100215_ip = 0;;) switch (_fun100215_ip) {
             case 0:
                 var0 = arg0;
@@ -642,7 +642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/Welcome.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: Welcome, environment: var1
+    var1 = function() {
         _fun100216: for (var _fun100216_ip = 0;;) switch (_fun100216_ip) {
             case 0:
                 var1 = _closure1_slot23;
@@ -978,7 +978,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'lg',
                     'variant': 'primary-overlay'
                 };
-                var21 = function() { // Original name: handlePressRegister, environment: var22
+                var21 = function() {
                     _fun100226: for (var _fun100226_ip = 0;;) switch (_fun100226_ip) {
                         case 0:
                             var2 = _closure2_slot3;
@@ -1047,7 +1047,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'lg',
                     'variant': 'experimental_welcome-secondary'
                 };
-                var22 = function() { // Original name: handlePressLogin, environment: var22
+                var22 = function() {
                     var3 = _closure2_slot0;
                     var2 = var3.push;
                     var0 = _closure1_slot17;

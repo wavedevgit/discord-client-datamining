@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun4822: for (var _fun4822_ip = 0;;) switch (_fun4822_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: ItemWithSeparator, environment: var1
+    var0 = function arg0() {
         _fun4825: for (var _fun4825_ip = 0;;) switch (_fun4825_ip) {
             case 0:
                 var5 = arg0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var2 = var17.bind(var3)(var2, var6);
                 var6 = {};
-                var2 = function() { // Original name: highlight, environment: var1
+                var2 = function() {
                     _fun4828: for (var _fun4828_ip = 0;;) switch (_fun4828_ip) {
                         case 0:
                             var2 = _closure2_slot8;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var6.highlight = var2;
-                var2 = function() { // Original name: unhighlight, environment: var1
+                var2 = function() {
                     _fun4829: for (var _fun4829_ip = 0;;) switch (_fun4829_ip) {
                         case 0:
                             var2 = _closure2_slot8;
@@ -205,7 +205,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var6.unhighlight = var2;
-                var1 = function(arg0, arg1) { // Original name: updateProps, environment: var1
+                var1 = function arg0, arg1() {
                     _fun4830: for (var _fun4830_ip = 0;;) switch (_fun4830_ip) {
                         case 0:
                             var1 = arg0;
@@ -435,7 +435,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot15 = var4;
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: VirtualizedSectionList, environment: var5
+        var3 = function() {
             _fun4832: for (var _fun4832_ip = 0;;) switch (_fun4832_ip) {
                 case 0:
                     var4 = this;
@@ -940,7 +940,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'scrollToLocation';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: scrollToLocation, environment: var5
+        var0 = function arg0() {
             _fun4843: for (var _fun4843_ip = 0;;) switch (_fun4843_ip) {
                 case 0:
                     var5 = arg0;
@@ -1037,7 +1037,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'getListRef';
         var4.key = var6;
-        var6 = function() { // Original name: getListRef, environment: var5
+        var6 = function() {
             var0 = this;
             var0 = var0._listRef;
             return var0;
@@ -1047,7 +1047,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var6 = function() { // Original name: render, environment: var5
+        var6 = function() {
             _fun4845: for (var _fun4845_ip = 0;;) switch (_fun4845_ip) {
                 case 0:
                     var0 = this;
@@ -1161,7 +1161,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var0.props;
                     var9 = var9.sections;
                     var4.data = var9;
-                    var9 = function(arg0, arg1) { // Original name: getItem, environment: var8
+                    var9 = function arg0, arg1() {
                         var4 = _closure3_slot0;
                         var3 = var4._getItem;
                         var2 = var4.props;
@@ -1171,7 +1171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var4.getItem = var9;
-                    var8 = function() { // Original name: getItemCount, environment: var8
+                    var8 = function() {
                         var0 = _closure3_slot1;
                         return var0;
                     };
@@ -1200,7 +1200,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_getItem';
         var4.key = var6;
-        var6 = function(arg0, arg1, arg2) { // Original name: _getItem, environment: var5
+        var6 = function arg0, arg1, arg2() {
             _fun4848: for (var _fun4848_ip = 0;;) switch (_fun4848_ip) {
                 case 0:
                     var4 = arg0;
@@ -1270,7 +1270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_subExtractor';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _subExtractor, environment: var5
+        var6 = function arg0() {
             _fun4849: for (var _fun4849_ip = 0;;) switch (_fun4849_ip) {
                 case 0:
                     var9 = arg0;
@@ -1417,7 +1417,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_getSeparatorComponent';
         var4.key = var6;
-        var5 = function(arg0, arg1, arg2) { // Original name: _getSeparatorComponent, environment: var5
+        var5 = function arg0, arg1, arg2() {
             _fun4850: for (var _fun4850_ip = 0;;) switch (_fun4850_ip) {
                 case 0:
                     var4 = arg0;

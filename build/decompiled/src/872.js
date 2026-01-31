@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function(arg0) { // Original name: getFilenameToDebugIdMap, environment: var2
+    var0 = function arg0() {
         _fun9225: for (var _fun9225_ip = 0;;) switch (_fun9225_ip) {
             case 0:
                 var0 = arg0;
@@ -98,7 +98,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = {};
                 var _closure1_slot2 = var7;
             case 200:
-                var1 = function(arg0, arg1) { // Original name: processDebugIds, environment: var1
+                var1 = function arg0, arg1() {
                     _fun9226: for (var _fun9226_ip = 0;;) switch (_fun9226_ip) {
                         case 0:
                             var8 = arg1;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var1, var4, var3);
-    var2 = function(arg0, arg1) { // Original name: getDebugImagesForResources, environment: var2
+    var2 = function arg0, arg1() {
         _fun9227: for (var _fun9227_ip = 0;;) switch (_fun9227_ip) {
             case 0:
                 var4 = undefined;

@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun59240: for (var _fun59240_ip = 0;;) switch (_fun59240_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[var7] = var6;
     var _closure1_slot6 = var1;
     var3 = function(arg0) { // Environment: var3
-        var4 = function(arg0) { // Original name: SubscriptionGroupMemberRecord, environment: var0
+        var4 = function arg0() {
             _fun59244: for (var _fun59244_ip = 0;;) switch (_fun59244_ip) {
                 case 0:
                     var1 = arg0;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var1 = 'isPrimary';
         var5.key = var1;
-        var1 = function() { // Original name: value, environment: var0
+        var1 = function() {
             var0 = this;
             var1 = var0.member_type;
             var0 = _closure1_slot6;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isMember';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun59246: for (var _fun59246_ip = 0;;) switch (_fun59246_ip) {
                 case 0:
                     var1 = this;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'isInvited';
         var5.key = var6;
-        var6 = function() { // Original name: value, environment: var0
+        var6 = function() {
             _fun59247: for (var _fun59247_ip = 0;;) switch (_fun59247_ip) {
                 case 0:
                     var1 = this;
@@ -215,7 +215,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = {};
         var6 = 'createFromServer';
         var5.key = var6;
-        var0 = function(arg0) { // Original name: value, environment: var0
+        var0 = function arg0() {
             var2 = _closure2_slot0;
             var0 = var2.prototype;
             var1 = Object.create(var0, {

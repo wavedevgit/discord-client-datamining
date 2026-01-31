@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var11;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var12;
-    var8 = function(arg0, arg1) { // Original name: maybeGetLevelUnlockedPopoutDCF, environment: var1
+    var8 = function arg0, arg1() {
         _fun102238: for (var _fun102238_ip = 0;;) switch (_fun102238_ip) {
             case 0:
                 var9 = arg0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.LEVEL_REACHED;
                 var1.type = var4;
                 var1.powerup = var3;
-                var2 = function(arg0) { // Original name: markAsDismissed, environment: var2
+                var2 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 10;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var8;
-    var7 = function(arg0, arg1, arg2) { // Original name: maybeGetPerkPurchaseablePopoutDCF, environment: var1
+    var7 = function arg0, arg1, arg2() {
         _fun102241: for (var _fun102241_ip = 0;;) switch (_fun102241_ip) {
             case 0:
                 var9 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PERKS_PURCHASABLE;
                 var0.type = var1;
                 var0.powerups = var4;
-                var1 = function(arg0) { // Original name: markAsDismissed, environment: var3
+                var1 = function arg0() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 10;
@@ -386,7 +386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.PERKS_PURCHASABLE;
                 var2.type = var5;
                 var2.powerups = var4;
-                var3 = function(arg0) { // Original name: markAsDismissed, environment: var3
+                var3 = function arg0() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 10;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var7;
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: maybeGetGameServerHostingGuildEligiblePopoutDCF, environment: var1
+    var6 = function arg0, arg1, arg2, arg3() {
         _fun102247: for (var _fun102247_ip = 0;;) switch (_fun102247_ip) {
             case 0:
                 var6 = arg0;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.GuildPowerupNotificationPopoutType;
                 var3 = var3.GAME_SERVER_HOSTING_GUILD_ELIGIBLE;
                 var1.type = var3;
-                var2 = function(arg0) { // Original name: markAsDismissed, environment: var2
+                var2 = function arg0() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 10;
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var6;
-    var5 = function(arg0, arg1) { // Original name: useGuildPowerupNewPerkAvailableCoachmarkVersion, environment: var1
+    var5 = function arg0, arg1() {
         var7 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var7;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: useGuildPowerupsNotificationIndicator, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun102253: for (var _fun102253_ip = 0;;) switch (_fun102253_ip) {
             case 0:
                 var9 = arg0;
@@ -1030,7 +1030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var4;
-    var3 = function(arg0, arg1) { // Original name: useGuildPowerupsChannelListPopout, environment: var1
+    var3 = function arg0, arg1() {
         _fun102256: for (var _fun102256_ip = 0;;) switch (_fun102256_ip) {
             case 0:
                 var22 = arg0;
@@ -1308,7 +1308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = _closure2_slot10;
                             var8 = var3;
                             var4 = copyDataProperties(var8, var7);
-                            var5 = function(arg0) { // Original name: markAsDismissed, environment: var0
+                            var5 = function arg0() {
                                 var3 = arg0;
                                 var2 = _closure2_slot12;
                                 var0 = undefined;
@@ -1411,7 +1411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var3;
-    var9 = function(arg0) { // Original name: useGuildPowerupsNotifications, environment: var1
+    var9 = function arg0() {
         _fun102263: for (var _fun102263_ip = 0;;) switch (_fun102263_ip) {
             case 0:
                 var7 = arg0;
@@ -1581,7 +1581,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useGuildPowerupNewPerkAvailableCoachmarkVersion = var5;
     var2.useGuildPowerupsNotificationIndicator = var4;
     var2.useGuildPowerupsChannelListPopout = var3;
-    var1 = function(arg0) { // Original name: useDismissGuildPowerupsNotifications, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var _closure2_slot0 = var6;
         var4 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: GuildProgressHeader, environment: var3
+    var1 = function arg0() {
         _fun80069: for (var _fun80069_ip = 0;;) switch (_fun80069_ip) {
             case 0:
                 var0 = arg0;
@@ -270,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/guild_progress/native/action_sheet/GuildProgressActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GuildProgressActionSheet, environment: var3
+    var3 = function arg0() {
         _fun80070: for (var _fun80070_ip = 0;;) switch (_fun80070_ip) {
             case 0:
                 var0 = arg0;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var15[var1];
                 var5 = var13.bind(var3)(var2);
                 var2 = {};
-                var8 = function() { // Original name: onPress, environment: var20
+                var8 = function() {
                     _fun80076: for (var _fun80076_ip = 0;;) switch (_fun80076_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -585,7 +585,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var15[var1];
                 var2 = var13.bind(var3)(var1);
                 var1 = {};
-                var11 = function() { // Original name: onPress, environment: var20
+                var11 = function() {
                     _fun80081: for (var _fun80081_ip = 0;;) switch (_fun80081_ip) {
                         case 0:
                             var0 = _closure2_slot1;
@@ -673,7 +673,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 * var22;
                 var0 = var0 / var21;
                 var13 = var2.bind(var5)(var1, var0);
-                var14 = function() { // Original name: handleDismissGuildProgress, environment: var20
+                var14 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 14;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = {};
                 var15.numFinished = var22;
                 var15.total = var21;
-                var20 = function(arg0, arg1) { // Original name: stepsHook, environment: var20
+                var20 = function arg0, arg1() {
                     var4 = _closure1_slot14;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;

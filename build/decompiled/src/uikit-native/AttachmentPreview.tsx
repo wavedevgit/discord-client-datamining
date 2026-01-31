@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: AttachmentIcon, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var7 = var0.fileName;
         var _closure2_slot0 = var7;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var1;
-    var0 = function(arg0) { // Original name: FilenameText, environment: var3
+    var0 = function arg0() {
         _fun70188: for (var _fun70188_ip = 0;;) switch (_fun70188_ip) {
             case 0:
                 var0 = arg0;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: DefaultAttachmentPreview, environment: var3
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.fileName;
         var9 = var0.maxFileWidth;
@@ -495,7 +495,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'uikit-native/AttachmentPreview.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: AttachmentPreview, environment: var3
+    var3 = function arg0() {
         _fun70191: for (var _fun70191_ip = 0;;) switch (_fun70191_ip) {
             case 0:
                 var1 = arg0;

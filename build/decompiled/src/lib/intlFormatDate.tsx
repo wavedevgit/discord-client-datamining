@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: makeIntlFormatter, environment: var1
+    var0 = function arg0, arg1() {
         _fun26961: for (var _fun26961_ip = 0;;) switch (_fun26961_ip) {
             case 0:
                 var1 = arg0;
@@ -54,13 +54,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'lib/intlFormatDate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: makeFormatter, environment: var1
+    var1 = function arg0() {
         _fun26962: for (var _fun26962_ip = 0;;) switch (_fun26962_ip) {
             case 0:
                 var4 = arg0;
                 var0 = _closure1_slot2;
                 var3 = var0.locale;
-                var0 = function(arg0, arg1) { // Original name: tryMakeNativeFormatter, environment: var0
+                var0 = function arg0, arg1() {
                     _fun26963: for (var _fun26963_ip = 0;;) switch (_fun26963_ip) {
                         case 0:
                             var3 = arg0;

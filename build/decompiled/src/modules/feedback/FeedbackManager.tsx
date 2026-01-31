@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun113098: for (var _fun113098_ip = 0;;) switch (_fun113098_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun113101: for (var _fun113101_ip = 0;;) switch (_fun113101_ip) {
             case 0:
                 var2 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun113103: for (var _fun113103_ip = 0;;) switch (_fun113103_ip) {
             case 0:
                 var3 = arg0;
@@ -287,7 +287,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: optOutEligibilityCheck, environment: var3
+    var0 = function arg0() {
         _fun113104: for (var _fun113104_ip = 0;;) switch (_fun113104_ip) {
             case 0:
                 var1 = arg0;
@@ -393,7 +393,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: triggerRateEligibilityCheck, environment: var3
+    var0 = function arg0() {
         var0 = global;
         var1 = var0.Math;
         var0 = var1.random;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: recencyEligibilityCheck, environment: var3
+    var0 = function arg0, arg1() {
         _fun113107: for (var _fun113107_ip = 0;;) switch (_fun113107_ip) {
             case 0:
                 var2 = arg1;
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: groupRecencyEligibilityCheck, environment: var3
+    var0 = function arg0() {
         _fun113109: for (var _fun113109_ip = 0;;) switch (_fun113109_ip) {
             case 0:
                 var5 = arg0;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var19 = function() { // Original name: voiceEligibilityCheck, environment: var3
+    var19 = function() {
         _fun113111: for (var _fun113111_ip = 0;;) switch (_fun113111_ip) {
             case 0:
                 var2 = _closure1_slot8;
@@ -831,7 +831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var9.SEARCH_RESULTS;
     var4[var14] = var12;
     var12 = new Array(1);
-    var14 = function() { // Original name: searchResultsEligibilityCheck, environment: var3
+    var14 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 14;
@@ -873,7 +873,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6[var4];
     var4 = var7.bind(var0)(var4);
     var3 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: FeedbackManager, environment: var0
+        var3 = function arg0() {
             _fun113114: for (var _fun113114_ip = 0;;) switch (_fun113114_ip) {
                 case 0:
                     var5 = this;
@@ -945,7 +945,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 34:
                                 var0 = _closure3_slot0;
                                 var4 = var0.feedbackTypeToShow;
-                                var3 = function(arg0) { // Original name: updateLastFeedbackDate, environment: var1
+                                var3 = function arg0() {
                                     var0 = arg0;
                                     var _closure5_slot0 = var0;
                                     var3 = _closure1_slot0;
@@ -1004,13 +1004,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'possiblyShowFeedbackModal';
         var4.key = var5;
-        var0 = function(arg0, arg1, arg2) { // Original name: value, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun113118: for (var _fun113118_ip = 0;;) switch (_fun113118_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = arg2;
                     var4 = this;
-                    var3 = function(arg0) { // Original name: feedbackTypeIsEligibleToBeShown, environment: var0
+                    var3 = function arg0() {
                         _fun113119: for (var _fun113119_ip = 0;;) switch (_fun113119_ip) {
                             case 0:
                                 var5 = arg0;

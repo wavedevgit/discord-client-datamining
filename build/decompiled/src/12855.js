@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.value = var2;
             var2 = '__esModule';
             var2 = var4.bind(var5)(var1, var2, var3);
-            var2 = function(arg0) { // Original name: getNumberOfUrlSegments, environment: var0
+            var2 = function arg0() {
                 var2 = arg0;
                 var1 = var2.split;
                 var0 = /\\?\\/ / ;
@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var1.getNumberOfUrlSegments = var2;
-            var2 = function(arg0) { // Original name: getSanitizedUrlString, environment: var0
+            var2 = function arg0() {
                 _fun98945: for (var _fun98945_ip = 0;;) switch (_fun98945_ip) {
                     case 0:
                         var0 = arg0;
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var1.getSanitizedUrlString = var2;
-            var2 = function(arg0) { // Original name: parseUrl, environment: var0
+            var2 = function arg0() {
                 _fun98946: for (var _fun98946_ip = 0;;) switch (_fun98946_ip) {
                     case 0:
                         var2 = arg0;
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var1.parseUrl = var2;
-                        var0 = function(arg0) { // Original name: stripUrlQueryAndFragment, environment: var0
+                        var0 = function arg0() {
                             var3 = arg0;
                             var2 = var3.split;
                             var1 = /[?#]/;

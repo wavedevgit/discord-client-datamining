@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun76713: for (var _fun76713_ip = 0;;) switch (_fun76713_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot63 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun76715: for (var _fun76715_ip = 0;;) switch (_fun76715_ip) {
             case 0:
                 var3 = arg0;
@@ -791,7 +791,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 0:
                             var0 = new Array(0);
                             var _closure3_slot0 = var0;
-                            var5 = function(arg0) { // Original name: _loop, environment: var1
+                            var5 = function arg0() {
                                 _fun76728: for (var _fun76728_ip = 0;;) switch (_fun76728_ip) {
                                     case 0:
                                         var4 = arg0;
@@ -3155,7 +3155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2.animated = var10;
                             var2.scrollPosition = var9;
                             var2.focusTargetId = var7;
-                            var7 = function() { // Original name: onComputedScrollToUnread, environment: var1
+                            var7 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 89;
@@ -3386,7 +3386,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     _fun76797: for (var _fun76797_ip = 0;;) switch (_fun76797_ip) {
                         case 0:
                             var0 = {};
-                            var2 = function(arg0) { // Original name: getMessage, environment: var1
+                            var2 = function arg0() {
                                 var1 = arg0;
                                 var _closure4_slot0 = var1;
                                 var3 = _closure1_slot1;
@@ -3453,7 +3453,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot78;
                         case 92:
                             var0.paymentsBlocked = var2;
-                            var2 = function() { // Original name: loadMoreBefore, environment: var1
+                            var2 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 82;
@@ -3476,7 +3476,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0.loadMoreBefore = var2;
-                            var1 = function() { // Original name: loadMoreAfter, environment: var1
+                            var1 = function() {
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
                                 var0 = 82;
@@ -4042,7 +4042,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var39[0] = var16;
                 var16 = function() { // Environment: var0
                     var0 = {};
-                    var2 = function(arg0) { // Original name: handleTapImage, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapImage;
                         var0 = arg0;
@@ -4050,7 +4050,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapImage = var2;
-                    var2 = function(arg0) { // Original name: handleTapChannel, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapChannel;
                         var0 = arg0;
@@ -4058,7 +4058,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapChannel = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressChannel, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressChannel;
                         var0 = arg0;
@@ -4066,7 +4066,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressChannel = var2;
-                    var2 = function(arg0) { // Original name: handleTapAttachmentLink, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapAttachmentLink;
                         var0 = arg0;
@@ -4074,7 +4074,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapAttachmentLink = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressAttachmentLink, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressAttachmentLink;
                         var0 = arg0;
@@ -4082,7 +4082,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressAttachmentLink = var2;
-                    var2 = function(arg0) { // Original name: handleTapCall, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapCall;
                         var0 = arg0;
@@ -4090,7 +4090,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapCall = var2;
-                    var2 = function(arg0) { // Original name: handleTapMention, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapMention;
                         var0 = arg0;
@@ -4098,7 +4098,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapMention = var2;
-                    var2 = function(arg0) { // Original name: handleTapCommandMention, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapCommandMention;
                         var0 = arg0;
@@ -4106,7 +4106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapCommandMention = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressCommandMention, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressCommandMention;
                         var0 = arg0;
@@ -4114,7 +4114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressCommandMention = var2;
-                    var2 = function(arg0) { // Original name: handleTapLink, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapLink;
                         var0 = arg0;
@@ -4122,7 +4122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapLink = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressLink, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressLink;
                         var0 = arg0;
@@ -4130,7 +4130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressLink = var2;
-                    var2 = function(arg0) { // Original name: handleTapReaction, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapReaction;
                         var0 = arg0;
@@ -4138,7 +4138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapReaction = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressReaction, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressReaction;
                         var0 = arg0;
@@ -4146,7 +4146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressReaction = var2;
-                    var2 = function(arg0) { // Original name: handleOpenSticker, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleOpenSticker;
                         var0 = arg0;
@@ -4154,7 +4154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleOpenSticker = var2;
-                    var2 = function(arg0) { // Original name: handleTapAvatar, environment: var1
+                    var2 = function arg0() {
                         var3 = _closure2_slot129;
                         var2 = var3.handleOpenProfile;
                         var4 = _closure1_slot1;
@@ -4171,7 +4171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapAvatar = var2;
-                    var2 = function(arg0) { // Original name: handleTapUsername, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapUsername;
                         var0 = arg0;
@@ -4179,7 +4179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapUsername = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressUsername, environment: var1
+                    var2 = function arg0() {
                         var3 = _closure2_slot129;
                         var2 = var3.handleOpenProfile;
                         var4 = _closure1_slot1;
@@ -4196,7 +4196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressUsername = var2;
-                    var2 = function(arg0) { // Original name: handleTapThreadEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapThreadEmbed;
                         var0 = arg0;
@@ -4204,7 +4204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapThreadEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapReply, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapReply;
                         var0 = arg0;
@@ -4212,7 +4212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapReply = var2;
-                    var2 = function(arg0) { // Original name: handleTapSummary, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSummary;
                         var0 = arg0;
@@ -4220,7 +4220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSummary = var2;
-                    var2 = function(arg0) { // Original name: handleTapSummaryJump, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSummaryJump;
                         var0 = arg0;
@@ -4228,7 +4228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSummaryJump = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressMessage, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressMessage;
                         var0 = arg0;
@@ -4236,7 +4236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressMessage = var2;
-                    var2 = function(arg0) { // Original name: handleInitiateReply, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleInitiateReply;
                         var0 = arg0;
@@ -4244,7 +4244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleInitiateReply = var2;
-                    var2 = function(arg0) { // Original name: handleInitiateEdit, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleInitiateEdit;
                         var0 = arg0;
@@ -4252,7 +4252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleInitiateEdit = var2;
-                    var2 = function(arg0) { // Original name: handleInitiateThread, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleInitiateThread;
                         var0 = arg0;
@@ -4260,7 +4260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleInitiateThread = var2;
-                    var2 = function(arg0) { // Original name: handleTapMessage, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapMessage;
                         var0 = arg0;
@@ -4268,7 +4268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapMessage = var2;
-                    var2 = function(arg0) { // Original name: handleTapSeparator, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSeparator;
                         var0 = arg0;
@@ -4276,7 +4276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSeparator = var2;
-                    var2 = function(arg0) { // Original name: handleDoubleTapMessage, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleDoubleTapMessage;
                         var0 = arg0;
@@ -4284,7 +4284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleDoubleTapMessage = var2;
-                    var2 = function(arg0) { // Original name: handleTapCancelUploadItem, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapCancelUploadItem;
                         var0 = arg0;
@@ -4292,7 +4292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapCancelUploadItem = var2;
-                    var2 = function(arg0) { // Original name: handleTapInviteEmbedAccept, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapInviteEmbedAccept;
                         var0 = arg0;
@@ -4300,7 +4300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapInviteEmbedAccept = var2;
-                    var2 = function(arg0) { // Original name: handleTapInviteEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapInviteEmbed;
                         var0 = arg0;
@@ -4308,7 +4308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapInviteEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapJoinActivity, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapJoinActivity;
                         var0 = arg0;
@@ -4316,7 +4316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapJoinActivity = var2;
-                    var2 = function(arg0) { // Original name: handleTapJoinRichPresence, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapJoinRichPresence;
                         var0 = arg0;
@@ -4324,7 +4324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapJoinRichPresence = var2;
-                    var2 = function(arg0) { // Original name: handleTapGiftCodeEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapGiftCodeEmbed;
                         var0 = arg0;
@@ -4332,7 +4332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapGiftCodeEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapGiftCodeAccept, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapGiftCodeAccept;
                         var0 = arg0;
@@ -4340,7 +4340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapGiftCodeAccept = var2;
-                    var2 = function(arg0) { // Original name: handleTapReferralRedeem, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapReferralRedeem;
                         var0 = arg0;
@@ -4348,7 +4348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapReferralRedeem = var2;
-                    var2 = function(arg0) { // Original name: handleTapEmoji, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapEmoji;
                         var0 = arg0;
@@ -4356,7 +4356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapEmoji = var2;
-                    var2 = function(arg0) { // Original name: handleTapTimestamp, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapTimestamp;
                         var0 = arg0;
@@ -4364,7 +4364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapTimestamp = var2;
-                    var2 = function(arg0) { // Original name: handleTapInlineCode, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapInlineCode;
                         var0 = arg0;
@@ -4372,7 +4372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapInlineCode = var2;
-                    var2 = function(arg0) { // Original name: handleTapRoleIcon, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapRoleIcon;
                         var0 = arg0;
@@ -4380,7 +4380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapRoleIcon = var2;
-                    var2 = function(arg0) { // Original name: handleTapGameIcon, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapGameIcon;
                         var0 = arg0;
@@ -4388,7 +4388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapGameIcon = var2;
-                    var2 = function(arg0) { // Original name: handleTapSuppressNotificationsIcon, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSuppressNotificationsIcon;
                         var0 = arg0;
@@ -4396,7 +4396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSuppressNotificationsIcon = var2;
-                    var2 = function(arg0) { // Original name: handleTapConnectionsRoleTag, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapConnectionsRoleTag;
                         var0 = arg0;
@@ -4404,14 +4404,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapConnectionsRoleTag = var2;
-                    var2 = function() { // Original name: handleTapTimeoutIcon, environment: var1
+                    var2 = function() {
                         var1 = _closure2_slot129;
                         var0 = var1.handleTapTimeoutIcon;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var0.handleTapTimeoutIcon = var2;
-                    var2 = function(arg0) { // Original name: handleTapButtonActionComponent, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapButtonActionComponent;
                         var0 = arg0;
@@ -4419,7 +4419,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapButtonActionComponent = var2;
-                    var2 = function(arg0) { // Original name: handleTapSelectActionComponent, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSelectActionComponent;
                         var0 = arg0;
@@ -4427,7 +4427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSelectActionComponent = var2;
-                    var2 = function(arg0) { // Original name: handleTapWelcomeReply, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapWelcomeReply;
                         var0 = arg0;
@@ -4435,7 +4435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapWelcomeReply = var2;
-                    var2 = function(arg0) { // Original name: handleTapInviteToSpeak, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapInviteToSpeak;
                         var0 = arg0;
@@ -4443,7 +4443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapInviteToSpeak = var2;
-                    var2 = function(arg0) { // Original name: handleTapAutoModerationActions, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapAutoModerationActions;
                         var0 = arg0;
@@ -4451,7 +4451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapAutoModerationActions = var2;
-                    var2 = function(arg0) { // Original name: handleTapAutoModerationFeedback, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapAutoModerationFeedback;
                         var0 = arg0;
@@ -4459,7 +4459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapAutoModerationFeedback = var2;
-                    var2 = function(arg0) { // Original name: handleTapFollowForumPost, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapFollowForumPost;
                         var0 = arg0;
@@ -4467,7 +4467,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapFollowForumPost = var2;
-                    var2 = function(arg0) { // Original name: handleTapShareForumPost, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapShareForumPost;
                         var0 = arg0;
@@ -4475,7 +4475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapShareForumPost = var2;
-                    var2 = function(arg0) { // Original name: handleTapReactionOverflow, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapReactionOverflow;
                         var0 = arg0;
@@ -4483,7 +4483,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapReactionOverflow = var2;
-                    var2 = function(arg0) { // Original name: handleCopyText, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleCopyText;
                         var0 = arg0;
@@ -4491,7 +4491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleCopyText = var2;
-                    var2 = function(arg0) { // Original name: handleTapOpTag, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapOpTag;
                         var0 = arg0;
@@ -4499,7 +4499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapOpTag = var2;
-                    var2 = function(arg0) { // Original name: handleTapTag, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapTag;
                         var0 = arg0;
@@ -4507,7 +4507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapTag = var2;
-                    var2 = function(arg0) { // Original name: handleMediaAttachmentPlaybackStarted, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleMediaAttachmentPlaybackStarted;
                         var0 = arg0;
@@ -4515,7 +4515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleMediaAttachmentPlaybackStarted = var2;
-                    var2 = function(arg0) { // Original name: handleMediaAttachmentPlaybackEnded, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleMediaAttachmentPlaybackEnded;
                         var0 = arg0;
@@ -4523,7 +4523,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleMediaAttachmentPlaybackEnded = var2;
-                    var2 = function(arg0) { // Original name: handlerVoiceMessagePlaybackFailed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleVoiceMessagePlaybackFailed;
                         var0 = arg0;
@@ -4531,7 +4531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handlerVoiceMessagePlaybackFailed = var2;
-                    var2 = function(arg0) { // Original name: handleTapPostPreviewEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapPostPreviewEmbed;
                         var0 = arg0;
@@ -4539,7 +4539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapPostPreviewEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapDismissMediaPostSharePrompt, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapDismissMediaPostSharePrompt;
                         var0 = arg0;
@@ -4547,7 +4547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapDismissMediaPostSharePrompt = var2;
-                    var2 = function(arg0) { // Original name: handleTapChannelPromptButton, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapChannelPromptButton;
                         var0 = arg0;
@@ -4555,7 +4555,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapChannelPromptButton = var2;
-                    var2 = function(arg0) { // Original name: handleTapObscuredMediaLearnMore, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapObscuredMediaLearnMore;
                         var0 = arg0;
@@ -4563,7 +4563,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapObscuredMediaLearnMore = var2;
-                    var2 = function(arg0) { // Original name: handleTapObscuredMediaToggle, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.onTapObscuredMediaToggle;
                         var0 = arg0;
@@ -4571,7 +4571,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapObscuredMediaToggle = var2;
-                    var2 = function(arg0) { // Original name: handleTapSafetyPolicyNoticeEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSafetyPolicyNoticeEmbed;
                         var0 = arg0;
@@ -4579,7 +4579,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSafetyPolicyNoticeEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapSafetySystemNotificationCta, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSafetySystemNotificationCta;
                         var0 = arg0;
@@ -4587,7 +4587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSafetySystemNotificationCta = var2;
-                    var2 = function(arg0) { // Original name: handleTapPollAnswer, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapPollAnswer;
                         var0 = arg0;
@@ -4595,7 +4595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapPollAnswer = var2;
-                    var2 = function(arg0) { // Original name: handleTapPollSubmitVote, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapPollSubmitVote;
                         var0 = arg0;
@@ -4603,7 +4603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapPollSubmitVote = var2;
-                    var2 = function(arg0) { // Original name: handleTapPollAction, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapPollAction;
                         var0 = arg0;
@@ -4611,7 +4611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapPollAction = var2;
-                    var2 = function(arg0) { // Original name: handleLongPressPollImage, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleLongPressPollImage;
                         var0 = arg0;
@@ -4619,7 +4619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleLongPressPollImage = var2;
-                    var2 = function(arg0) { // Original name: handleTapCtaButton, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapCtaButton;
                         var0 = arg0;
@@ -4627,7 +4627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapCtaButton = var2;
-                    var2 = function(arg0) { // Original name: handleMessageAccessibilityAction, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleMessageAccessibilityAction;
                         var0 = arg0;
@@ -4635,7 +4635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleMessageAccessibilityAction = var2;
-                    var2 = function(arg0) { // Original name: handleTapForwardFooter, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapForwardFooter;
                         var0 = arg0;
@@ -4643,7 +4643,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapForwardFooter = var2;
-                    var2 = function(arg0) { // Original name: handleTapInlineForward, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapInlineForward;
                         var0 = arg0;
@@ -4651,7 +4651,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapInlineForward = var2;
-                    var2 = function(arg0) { // Original name: handleTapClanTagChiplet, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapClanTagChiplet;
                         var0 = arg0;
@@ -4659,7 +4659,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapClanTagChiplet = var2;
-                    var2 = function(arg0) { // Original name: handleTapContentInventoryEntryEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapContentInventoryEntryEmbed;
                         var0 = arg0;
@@ -4667,7 +4667,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapContentInventoryEntryEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapCheckpointCard, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapCheckpointCard;
                         var0 = arg0;
@@ -4675,7 +4675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapCheckpointCard = var2;
-                    var2 = function(arg0) { // Original name: handleTapSoundmoji, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapSoundmoji;
                         var0 = arg0;
@@ -4683,7 +4683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSoundmoji = var2;
-                    var2 = function(arg0) { // Original name: handleTapAppMessageEmbed, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapAppMessageEmbed;
                         var0 = arg0;
@@ -4691,7 +4691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapAppMessageEmbed = var2;
-                    var2 = function(arg0) { // Original name: handleTapSharedClientTheme, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleTapPreviewSharedClientTheme;
                         var0 = arg0;
@@ -4699,7 +4699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.handleTapSharedClientTheme = var2;
-                    var1 = function(arg0) { // Original name: handleSharedClientThemeViewed, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure2_slot129;
                         var1 = var2.handleSharedClientThemeViewed;
                         var0 = arg0;
@@ -9783,7 +9783,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.updateRows = var3;
                     var3 = _closure2_slot123;
                     var0.scrollToMessageId = var3;
-                    var3 = function() { // Original name: scrollToBottom, environment: var2
+                    var3 = function() {
                         _fun76903: for (var _fun76903_ip = 0;;) switch (_fun76903_ip) {
                             case 0:
                                 var6 = arguments[0];
@@ -9811,7 +9811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.scrollToBottom = var3;
-                    var3 = function() { // Original name: scrollToTop, environment: var2
+                    var3 = function() {
                         _fun76904: for (var _fun76904_ip = 0;;) switch (_fun76904_ip) {
                             case 0:
                                 var4 = arguments[0];
@@ -9836,7 +9836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.scrollToTop = var3;
-                    var3 = function(arg0) { // Original name: scrollToRelativeOffset, environment: var2
+                    var3 = function arg0() {
                         _fun76905: for (var _fun76905_ip = 0;;) switch (_fun76905_ip) {
                             case 0:
                                 var5 = arguments[1];
@@ -9864,7 +9864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.scrollToRelativeOffset = var3;
-                    var3 = function() { // Original name: scrollToTopMessage, environment: var2
+                    var3 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 82;
@@ -9878,7 +9878,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.scrollToTopMessage = var3;
-                    var3 = function() { // Original name: jumpToPresent, environment: var2
+                    var3 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 82;
@@ -9908,7 +9908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.jumpToPresent = var3;
-                    var3 = function() { // Original name: scrollToNewMessages, environment: var2
+                    var3 = function() {
                         _fun76909: for (var _fun76909_ip = 0;;) switch (_fun76909_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
@@ -9948,7 +9948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0.findMessageIndex = var4;
                                 var3 = _closure2_slot104;
                                 var0.chatRef = var3;
-                                var3 = function() { // Original name: loadMoreBefore, environment: var3
+                                var3 = function() {
                                     var2 = _closure1_slot0;
                                     var1 = _closure1_slot2;
                                     var0 = 82;
@@ -9976,7 +9976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.scrollToNewMessages = var3;
-                    var2 = function() { // Original name: getChatRef, environment: var2
+                    var2 = function() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
                         var0 = 82;
@@ -10030,7 +10030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1.messages = var6;
                                 var6 = _closure2_slot122;
                                 var1.findMessageIndex = var6;
-                                var6 = function() { // Original name: scrollToTop, environment: var6
+                                var6 = function() {
                                     _fun76915: for (var _fun76915_ip = 0;;) switch (_fun76915_ip) {
                                         case 0:
                                             var4 = arguments[0];

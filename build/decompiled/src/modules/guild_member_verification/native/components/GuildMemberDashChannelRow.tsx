@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/GuildMemberDashChannelRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildMemberDashChannelRow, environment: var1
+    var1 = function arg0() {
         _fun102179: for (var _fun102179_ip = 0;;) switch (_fun102179_ip) {
             case 0:
                 var1 = arg0;

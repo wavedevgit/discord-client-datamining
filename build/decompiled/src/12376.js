@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var3 = function(arg0) { // Original name: Inflate, environment: var2
+    var3 = function arg0() {
         _fun94801: for (var _fun94801_ip = 0;;) switch (_fun94801_ip) {
             case 0:
                 var8 = arg0;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var3;
-    var0 = function(arg0, arg1) { // Original name: inflate, environment: var2
+    var0 = function arg0, arg1() {
         _fun94802: for (var _fun94802_ip = 0;;) switch (_fun94802_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -865,7 +865,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.onEnd = var4;
     var1.Inflate = var3;
     var1.inflate = var0;
-    var2 = function(arg0, arg1) { // Original name: inflateRaw, environment: var2
+    var2 = function arg0, arg1() {
         _fun94806: for (var _fun94806_ip = 0;;) switch (_fun94806_ip) {
             case 0:
                 var3 = arg1;

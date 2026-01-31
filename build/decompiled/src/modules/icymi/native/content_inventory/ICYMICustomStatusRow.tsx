@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: UploadPlaceholder, environment: var1
+    var0 = function() {
         var1 = _closure1_slot13;
         var3 = undefined;
         var0 = false;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/icymi/native/content_inventory/ICYMICustomStatusRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GravityCustomStatusEntryRow, environment: var1
+    var1 = function arg0() {
         _fun104289: for (var _fun104289_ip = 0;;) switch (_fun104289_ip) {
             case 0:
                 var0 = arg0;
@@ -1207,7 +1207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var14.bind(var4)(var13);
                 var14 = var13.PressableHighlight;
                 var13 = {};
-                var21 = function(arg0) { // Original name: onLayout, environment: var21
+                var21 = function arg0() {
                     var0 = arg0;
                     var2 = _closure2_slot7;
                     var1 = {};

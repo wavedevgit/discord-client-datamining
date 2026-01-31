@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var8;
-    var4 = function(arg0) { // Original name: useBaseActivityPanelHeaderContent, environment: var5
+    var4 = function arg0() {
         var0 = arg0;
         var14 = var0.landscape;
         var _closure2_slot0 = var14;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var8.bind(var11)(var2, var7);
         var8 = _closure1_slot4;
         var7 = var8.useCallback;
-        var4 = function() { // Original name: c, environment: var4
+        var4 = function() {
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
             var0 = 10;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var4;
-    var3 = function(arg0) { // Original name: BaseActivityPanelContent, environment: var5
+    var3 = function arg0() {
         _fun110398: for (var _fun110398_ip = 0;;) switch (_fun110398_ip) {
             case 0:
                 var0 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var3;
-    var1 = function(arg0) { // Original name: useBaseActivityPanelHeader, environment: var5
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.context;
         var1 = _closure1_slot14;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.code = var10;
     var _closure1_slot15 = var6;
     var10 = var9.memo;
-    var6 = function(arg0) { // Original name: ActivityPanelHeaderContentInner, environment: var5
+    var6 = function arg0() {
         _fun110401: for (var _fun110401_ip = 0;;) switch (_fun110401_ip) {
             case 0:
                 var1 = arg0;

@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var4
+    var0 = function arg0, arg1() {
         _fun75980: for (var _fun75980_ip = 0;;) switch (_fun75980_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var4
+    var0 = function arg0, arg1() {
         _fun75982: for (var _fun75982_ip = 0;;) switch (_fun75982_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: getPollVoteEventProperties, environment: var4
+    var0 = function arg0, arg1() {
         _fun75983: for (var _fun75983_ip = 0;;) switch (_fun75983_ip) {
             case 0:
                 var0 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arraySpread(var8, var7, var6);
                 var _closure2_slot1 = var3;
                 var _closure2_slot2 = var3;
-                var5 = function(arg0) { // Original name: _loop, environment: var1
+                var5 = function arg0() {
                     _fun75984: for (var _fun75984_ip = 0;;) switch (_fun75984_ip) {
                         case 0:
                             var0 = arg0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: showLurkingAlert, environment: var4
+    var0 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5["2m+Sqk"];
         var5 = var6.bind(var7)(var5);
         var1.cancelText = var5;
-        var4 = function() { // Original name: onConfirm, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot3;
             var0 = 14;
@@ -428,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var1 = function(arg0) { // Original name: handleShowVotesForAnswer, environment: var4
+    var1 = function arg0() {
         _fun75988: for (var _fun75988_ip = 0;;) switch (_fun75988_ip) {
             case 0:
                 var0 = arg0;
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var1;
-    var7 = function(arg0) { // Original name: handleUpdateVoteEditingState, environment: var4
+    var7 = function arg0() {
         var0 = arg0;
         var4 = var0.channelId;
         var _closure2_slot0 = var4;
@@ -597,7 +597,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var7;
-    var0 = function(arg0) { // Original name: getCurrentAnswerIds, environment: var4
+    var0 = function arg0() {
         _fun75991: for (var _fun75991_ip = 0;;) switch (_fun75991_ip) {
             case 0:
                 var0 = arg0;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: optimisticallySetAnswers, environment: var4
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot25;
         var2 = var3.apply;
@@ -656,7 +656,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: _optimisticallySetAnswers, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -837,7 +837,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var8 = function() { // Original name: handlePollSubmitVote, environment: var4
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot27;
         var2 = var3.apply;
@@ -848,7 +848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var8;
-    var0 = function() { // Original name: _handlePollSubmitVote, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1266,7 +1266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var0;
-    var0 = function() { // Original name: _handleClearPollVote, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1429,7 +1429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function() { // Original name: _handlePollActionTapped, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1515,7 +1515,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = {};
                         var7.channelId = var6;
                         var7.messageId = var5;
-                        var4 = function(arg0) { // Original name: handleShowVotes, environment: var2
+                        var4 = function arg0() {
                             var0 = arg0;
                             var4 = var0.channelId;
                             var _closure5_slot0 = var4;
@@ -1674,7 +1674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = {};
                         var4.channelId = var6;
                         var4.messageId = var5;
-                        var2 = function() { // Original name: handleClearPollVote, environment: var2
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot28;
                             var2 = var3.apply;
@@ -1735,7 +1735,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot29 = var0;
-    var0 = function() { // Original name: _createPoll, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -1928,7 +1928,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var3;
                         var3 = {};
                         var3.attachmentsToUpload = var12;
-                        var11 = function(arg0, arg1, arg2) { // Original name: onAttachmentUploadError, environment: var11
+                        var11 = function arg0, arg1, arg2() {
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var0 = 26;
@@ -2065,7 +2065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot30 = var0;
-    var0 = function() { // Original name: _endPollEarly, environment: var4
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -2245,7 +2245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.JoinGuildSources;
     var _closure1_slot16 = var3;
     var3 = {};
-    var9 = function(arg0) { // Original name: handlePollAnswerTapped, environment: var4
+    var9 = function arg0() {
         _fun76027: for (var _fun76027_ip = 0;;) switch (_fun76027_ip) {
             case 0:
                 var3 = arg0;
@@ -2540,7 +2540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.handlePollAnswerTapped = var9;
     var3.handlePollSubmitVote = var8;
     var3.handleUpdateVoteEditingState = var7;
-    var7 = function() { // Original name: handlePollActionTapped, environment: var4
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot29;
         var2 = var3.apply;
@@ -2551,7 +2551,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.handlePollActionTapped = var7;
-    var7 = function() { // Original name: createPoll, environment: var4
+    var7 = function() {
         var0 = undefined;
         var3 = _closure1_slot30;
         var2 = var3.apply;
@@ -2562,7 +2562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.createPoll = var7;
-    var4 = function() { // Original name: endPollEarly, environment: var4
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot31;
         var2 = var3.apply;

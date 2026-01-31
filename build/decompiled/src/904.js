@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: winterCGHeadersToDict, environment: var1
+    var3 = function arg0() {
         _fun9498: for (var _fun9498_ip = 0;;) switch (_fun9498_ip) {
             case 0:
                 var2 = arg0;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot2 = var3;
-    var4 = function(arg0) { // Original name: headersToDict, environment: var1
+    var4 = function arg0() {
         _fun9500: for (var _fun9500_ip = 0;;) switch (_fun9500_ip) {
             case 0:
                 var2 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var4;
-    var5 = function(arg0) { // Original name: extractQueryParamsFromUrl, environment: var1
+    var5 = function arg0() {
         _fun9502: for (var _fun9502_ip = 0;;) switch (_fun9502_ip) {
             case 0:
                 var3 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var6;
     var2.extractQueryParamsFromUrl = var5;
     var2.headersToDict = var4;
-    var4 = function(arg0) { // Original name: httpHeadersToSpanAttributes, environment: var1
+    var4 = function arg0() {
         _fun9503: for (var _fun9503_ip = 0;;) switch (_fun9503_ip) {
             case 0:
                 var8 = undefined;
@@ -311,7 +311,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.httpHeadersToSpanAttributes = var4;
-    var4 = function(arg0) { // Original name: httpRequestToRequestData, environment: var1
+    var4 = function arg0() {
         _fun9507: for (var _fun9507_ip = 0;;) switch (_fun9507_ip) {
             case 0:
                 var3 = arg0;
@@ -473,7 +473,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.httpRequestToRequestData = var4;
     var2.winterCGHeadersToDict = var3;
-    var1 = function(arg0) { // Original name: winterCGRequestToRequestData, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var1 = _closure1_slot2;
         var0 = var2.headers;

@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/people/strangers/AcceptFriendRequestModalActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: openAcceptFriendRequestConfirmModal, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.onConfirm;
         var _closure2_slot0 = var1;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.openLazy;
         var1 = {};
-        var4 = function() { // Original name: importer, environment: var4
+        var4 = function() {
             var2 = _closure1_slot0;
             var0 = _closure1_slot2;
             var1 = 6;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var1;
                     var5 = var4;
                     var4 = copyDataProperties(var6, var5);
-                    var4 = function() { // Original name: onCancel, environment: var0
+                    var4 = function() {
                         _fun72090: for (var _fun72090_ip = 0;;) switch (_fun72090_ip) {
                             case 0:
                                 var1 = _closure5_slot0;

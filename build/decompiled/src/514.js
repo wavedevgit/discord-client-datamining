@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.hasOwnProperty;
     var _closure1_slot2 = var2;
     var2 = {};
-    var3 = function(arg0) { // Original name: brackets, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var0 = '[]';
         var0 = var1 + var0;
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.brackets = var3;
     var3 = 'comma';
     var2.comma = var3;
-    var3 = function(arg0, arg1) { // Original name: indices, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var0 = '[';
         var1 = var1 + var0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.indices = var3;
-    var3 = function(arg0) { // Original name: repeat, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -43,7 +43,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.prototype;
     var2 = var2.push;
     var _closure1_slot5 = var2;
-    var2 = function(arg0, arg1) { // Original name: pushToArray, environment: var1
+    var2 = function arg0, arg1() {
         _fun6574: for (var _fun6574_ip = 0;;) switch (_fun6574_ip) {
             case 0:
                 var5 = arg1;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5[var4];
     var2.formatter = var4;
     var2.indices = var3;
-    var4 = function(arg0) { // Original name: serializeDate, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot7;
         var1 = var2.call;
         var0 = arg0;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot8 = var2;
     var2 = {};
     var _closure1_slot9 = var2;
-    var2 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17) { // Original name: stringify, environment: var1
+    var2 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17() {
         _fun6576: for (var _fun6576_ip = 0;;) switch (_fun6576_ip) {
             case 0:
                 var40 = arg0;

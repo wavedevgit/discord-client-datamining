@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun12957: for (var _fun12957_ip = 0;;) switch (_fun12957_ip) {
             case 0:
             case 2: // try_start_0
@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: getTouchedComponentInfo, environment: var1
+    var0 = function arg0, arg1() {
         _fun12960: for (var _fun12960_ip = 0;;) switch (_fun12960_ip) {
             case 0:
                 var0 = arg0;
@@ -119,7 +119,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: getComponentName, environment: var1
+    var0 = function arg0() {
         _fun12961: for (var _fun12961_ip = 0;;) switch (_fun12961_ip) {
             case 0:
                 var2 = arg0;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: getElementName, environment: var1
+    var0 = function arg0() {
         _fun12962: for (var _fun12962_ip = 0;;) switch (_fun12962_ip) {
             case 0:
                 var2 = arg0;
@@ -217,7 +217,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: getFileName, environment: var1
+    var0 = function arg0() {
         _fun12963: for (var _fun12963_ip = 0;;) switch (_fun12963_ip) {
             case 0:
                 var2 = arg0;
@@ -266,7 +266,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: getLabelValue, environment: var1
+    var0 = function arg0, arg1() {
         _fun12964: for (var _fun12964_ip = 0;;) switch (_fun12964_ip) {
             case 0:
                 var2 = arg0;
@@ -387,7 +387,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot14 = var4;
     var4 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: TouchEventBoundary, environment: var5
+        var3 = function() {
             _fun12966: for (var _fun12966_ip = 0;;) switch (_fun12966_ip) {
                 case 0:
                     var3 = this;
@@ -437,7 +437,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             _fun12967: for (var _fun12967_ip = 0;;) switch (_fun12967_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -492,7 +492,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var6 = function() { // Original name: render, environment: var5
+        var6 = function() {
             var0 = this;
             var4 = _closure1_slot8;
             var3 = var4.createElement;
@@ -515,7 +515,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_logTouchEvent';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: _logTouchEvent, environment: var5
+        var6 = function arg0, arg1() {
             _fun12969: for (var _fun12969_ip = 0;;) switch (_fun12969_ip) {
                 case 0:
                     var2 = arg0;
@@ -614,7 +614,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_isNameIgnored';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _isNameIgnored, environment: var5
+        var6 = function arg0() {
             _fun12970: for (var _fun12970_ip = 0;;) switch (_fun12970_ip) {
                 case 0:
                     var1 = this;
@@ -694,7 +694,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_onTouchStart';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: _onTouchStart, environment: var5
+        var6 = function arg0() {
             _fun12972: for (var _fun12972_ip = 0;;) switch (_fun12972_ip) {
                 case 0:
                     var0 = arg0;
@@ -874,7 +874,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = '_pushIfNotIgnored';
         var4.key = var6;
-        var5 = function(arg0, arg1) { // Original name: _pushIfNotIgnored, environment: var5
+        var5 = function arg0, arg1() {
             _fun12974: for (var _fun12974_ip = 0;;) switch (_fun12974_ip) {
                 case 0:
                     var7 = arg0;
@@ -998,12 +998,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.ignoreNames = var5;
     var3.defaultProps = var4;
     var2.TouchEventBoundary = var3;
-    var1 = function(arg0, arg1) { // Original name: withTouchEventBoundary, environment: var1
+    var1 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
         var _closure2_slot1 = var1;
-        var0 = function(arg0) { // Original name: WrappedComponent, environment: var0
+        var0 = function arg0() {
             _fun12976: for (var _fun12976_ip = 0;;) switch (_fun12976_ip) {
                 case 0:
                     var4 = _closure1_slot8;

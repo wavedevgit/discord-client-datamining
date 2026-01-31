@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117196: for (var _fun117196_ip = 0;;) switch (_fun117196_ip) {
             case 0:
             case 2: // try_start_0
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: ClipsManager, environment: var5
+        var3 = function arg0() {
             _fun117200: for (var _fun117200_ip = 0;;) switch (_fun117200_ip) {
                 case 0:
                     var4 = this;
@@ -174,14 +174,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var1 = {};
-                    var3 = function() { // Original name: POST_CONNECTION_OPEN, environment: var2
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handlePostConnectionOpen;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var1.POST_CONNECTION_OPEN = var3;
-                    var3 = function(arg0) { // Original name: RTC_CONNECTION_FLAGS, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRTCConnectionFlags;
                         var0 = arg0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.RTC_CONNECTION_FLAGS = var3;
-                    var3 = function(arg0) { // Original name: RTC_CONNECTION_USERS_MERGED, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRTCUsersUpdate;
                         var0 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.RTC_CONNECTION_USERS_MERGED = var3;
-                    var3 = function(arg0) { // Original name: CLIPS_INIT_FAILURE, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleClipsInitFailure;
                         var0 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.CLIPS_INIT_FAILURE = var3;
-                    var3 = function(arg0) { // Original name: CLIPS_SETTINGS_UPDATE, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.applyNativeClipsSettings;
                         var0 = arg0;
@@ -213,21 +213,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.CLIPS_SETTINGS_UPDATE = var3;
-                    var3 = function() { // Original name: CLIPS_ALLOW_VOICE_RECORDING_UPDATE, environment: var2
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleClipsAllowVoiceRecordingUpdate;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var1.CLIPS_ALLOW_VOICE_RECORDING_UPDATE = var3;
-                    var3 = function() { // Original name: STREAM_START, environment: var2
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.applyNativeClipsSettings;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var1.STREAM_START = var3;
-                    var3 = function(arg0) { // Original name: RUNNING_GAME_TOGGLE_DETECTION, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleClipsInitOnToggleDetection;
                         var0 = arg0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.RUNNING_GAME_TOGGLE_DETECTION = var3;
-                    var3 = function(arg0) { // Original name: RUNNING_GAMES_CHANGE, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleClipsInitOnGamesChange;
                         var0 = arg0;
@@ -243,14 +243,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.RUNNING_GAMES_CHANGE = var3;
-                    var3 = function() { // Original name: CLIPS_RESTART, environment: var2
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.fireClipsInitEvent;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var1.CLIPS_RESTART = var3;
-                    var3 = function(arg0) { // Original name: RTC_CONNECTION_VIDEO, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRTCConnectionVideo;
                         var0 = arg0;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.RTC_CONNECTION_VIDEO = var3;
-                    var2 = function(arg0) { // Original name: RTC_CONNECTION_STATE, environment: var2
+                    var2 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleRTCConnectionState;
                         var0 = arg0;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleRTCConnectionState';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun117213: for (var _fun117213_ip = 0;;) switch (_fun117213_ip) {
                 case 0:
                     var0 = arg0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleRTCUsersUpdate';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun117214: for (var _fun117214_ip = 0;;) switch (_fun117214_ip) {
                 case 0:
                     var0 = arg0;
@@ -425,7 +425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleRTCConnectionFlags';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun117216: for (var _fun117216_ip = 0;;) switch (_fun117216_ip) {
                 case 0:
                     var0 = arg0;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleClipsInitFailure';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var0 = arg0;
             var6 = var0.applicationName;
             var5 = var0.errMsg;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'maybeShowClipsWarning';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun117218: for (var _fun117218_ip = 0;;) switch (_fun117218_ip) {
                 case 0:
                     var6 = arg0;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleClipsAllowVoiceRecordingUpdate';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun117219: for (var _fun117219_ip = 0;;) switch (_fun117219_ip) {
                 case 0:
                     var1 = this;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handlePostConnectionOpen';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun117221: for (var _fun117221_ip = 0;;) switch (_fun117221_ip) {
                 case 0:
                     var2 = this;
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'loadClipsFromStorage';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             var0 = undefined;
             return var0;
         };
@@ -723,7 +723,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleRTCConnectionVideo';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun117224: for (var _fun117224_ip = 0;;) switch (_fun117224_ip) {
                 case 0:
                     var0 = arg0;
@@ -968,7 +968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: classifyHardwareAndTrack, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -983,7 +983,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'classifyHardware';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun117232: for (var _fun117232_ip = 0;;) switch (_fun117232_ip) {
                 case 0:
                     var5 = arg0;
@@ -1110,7 +1110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'applyUserVoiceRecording';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun117235: for (var _fun117235_ip = 0;;) switch (_fun117235_ip) {
                 case 0:
                     var5 = arg0;
@@ -1172,7 +1172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'applyUserSoundboardRecording';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun117236: for (var _fun117236_ip = 0;;) switch (_fun117236_ip) {
                 case 0:
                     var3 = _closure1_slot1;
@@ -1217,7 +1217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'applyStreamRecording';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun117237: for (var _fun117237_ip = 0;;) switch (_fun117237_ip) {
                 case 0:
                     var4 = arg0;
@@ -1303,7 +1303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMessageCreate';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = undefined;
             return var0;
         };
@@ -1312,7 +1312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleRemoteClipTrigger';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = undefined;
             return var0;
         };

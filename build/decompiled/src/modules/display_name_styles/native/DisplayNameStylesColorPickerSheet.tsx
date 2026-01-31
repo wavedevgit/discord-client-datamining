@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/display_name_styles/native/DisplayNameStylesColorPickerSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DisplayNameStylesColorPickerSheet, environment: var1
+    var1 = function arg0() {
         _fun84882: for (var _fun84882_ip = 0;;) switch (_fun84882_ip) {
             case 0:
                 var0 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var3 = _closure2_slot4;
                     var1.color = var3;
-                    var3 = function(arg0) { // Original name: onSelect, environment: var3
+                    var3 = function arg0() {
                         var6 = _closure1_slot0;
                         var3 = _closure1_slot2;
                         var2 = 10;
@@ -438,7 +438,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = _closure1_slot9;
                                 var3 = _closure1_slot6;
                                 var2 = {};
-                                var1 = function() { // Original name: onPress, environment: var1
+                                var1 = function() {
                                     var2 = _closure2_slot7;
                                     var1 = _closure4_slot0;
                                     var0 = undefined;

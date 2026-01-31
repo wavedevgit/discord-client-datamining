@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ViewDebugLogsActionSheetRow, environment: var8
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.icon;
         var5 = var0.title;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.icon = var6;
         var0.label = var5;
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var2 = _closure1_slot1;
             var3 = _closure1_slot2;
             var0 = 2;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var1.Promise;
             var4 = var5.resolve;
             var1 = {};
-            var6 = function() { // Original name: default, environment: var6
+            var6 = function() {
                 var3 = _closure1_slot4;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: ViewDebugLogsActionSheet, environment: var8
+    var0 = function() {
         _fun85594: for (var _fun85594_ip = 0;;) switch (_fun85594_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.title = var11;
                 var11 = 'debugLogs';
                 var7.screenKey = var11;
-                var11 = function() { // Original name: render, environment: var12
+                var11 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.title = var15;
                 var15 = 'startupTiming';
                 var8.screenKey = var15;
-                var15 = function() { // Original name: render, environment: var12
+                var15 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.title = var13;
                 var13 = 'pushNotificationLogs';
                 var9.screenKey = var13;
-                var12 = function() { // Original name: render, environment: var12
+                var12 = function() {
                     var3 = _closure1_slot4;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createPressable;
     var1 = {};
-    var9 = function() { // Original name: title, environment: var8
+    var9 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 8;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.DeveloperMode;
     var9 = var9.useSetting;
     var1.usePredicate = var9;
-    var8 = function() { // Original name: handleViewDebugLogsSettingPress, environment: var8
+    var8 = function() {
         var2 = _closure1_slot3;
         var0 = var2.dismiss;
         var0 = var0.bind(var2)();

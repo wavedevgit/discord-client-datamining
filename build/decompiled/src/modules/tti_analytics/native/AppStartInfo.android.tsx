@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function() { // Original name: getAppUIViewed, environment: var3
+    var6 = function() {
         _fun93312: for (var _fun93312_ip = 0;;) switch (_fun93312_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getAppUIViewed = var6;
-    var6 = function(arg0) { // Original name: getAppStartType, environment: var3
+    var6 = function arg0() {
         _fun93313: for (var _fun93313_ip = 0;;) switch (_fun93313_ip) {
             case 0:
                 var1 = _closure1_slot2;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getAppStartType = var6;
-    var3 = function() { // Original name: getAppStartInfo, environment: var3
+    var3 = function() {
         _fun93314: for (var _fun93314_ip = 0;;) switch (_fun93314_ip) {
             case 0:
                 var7 = this;

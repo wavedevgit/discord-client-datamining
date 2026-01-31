@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = metroImportDefault;
     var2 = exports;
     var7 = dependencyMap;
-    var4 = function(arg0) { // Original name: isRestrictedFromShowingGuildPurchaseEntryPoints, environment: var1
+    var4 = function arg0() {
         _fun24499: for (var _fun24499_ip = 0;;) switch (_fun24499_ip) {
             case 0:
                 var3 = arg0;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0) { // Original name: isRestrictedFromUpdatingCreatorMonetizationSettings, environment: var1
+    var3 = function arg0() {
         _fun24500: for (var _fun24500_ip = 0;;) switch (_fun24500_ip) {
             case 0:
                 var3 = arg0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.isRestrictedFromShowingGuildPurchaseEntryPoints = var4;
-    var4 = function(arg0) { // Original name: shouldHideGuildPurchaseEntryPoints, environment: var1
+    var4 = function arg0() {
         _fun24501: for (var _fun24501_ip = 0;;) switch (_fun24501_ip) {
             case 0:
                 var6 = arg0;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldHideGuildPurchaseEntryPoints = var4;
     var2.isRestrictedFromUpdatingCreatorMonetizationSettings = var3;
-    var3 = function(arg0) { // Original name: shouldRestrictUpdatingCreatorMonetizationSettings, environment: var1
+    var3 = function arg0() {
         _fun24502: for (var _fun24502_ip = 0;;) switch (_fun24502_ip) {
             case 0:
                 var6 = arg0;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldRestrictUpdatingCreatorMonetizationSettings = var3;
-    var1 = function(arg0) { // Original name: isRestrictedFromMonetizationReapplication, environment: var1
+    var1 = function arg0() {
         _fun24503: for (var _fun24503_ip = 0;;) switch (_fun24503_ip) {
             case 0:
                 var3 = arg0;

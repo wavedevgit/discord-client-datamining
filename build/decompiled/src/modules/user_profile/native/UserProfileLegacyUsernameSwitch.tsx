@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileLegacyUsernameSwitch, environment: var1
+    var1 = function arg0() {
         _fun79955: for (var _fun79955_ip = 0;;) switch (_fun79955_ip) {
             case 0:
                 var0 = arg0;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.username = var9;
                 var5 = var7.bind(var8)(var6, var5);
                 var0.subLabel = var5;
-                var4 = function(arg0) { // Original name: onValueChange, environment: var4
+                var4 = function arg0() {
                     _fun79956: for (var _fun79956_ip = 0;;) switch (_fun79956_ip) {
                         case 0:
                             var0 = arg0;

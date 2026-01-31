@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1) { // Original name: getMuteSettingLabel, environment: var1
+    var3 = function arg0, arg1() {
         _fun69809: for (var _fun69809_ip = 0;;) switch (_fun69809_ip) {
             case 0:
                 var3 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMuteSettingLabel = var3;
-    var3 = function(arg0, arg1) { // Original name: getMuteSettingSublabel, environment: var1
+    var3 = function arg0, arg1() {
         _fun69810: for (var _fun69810_ip = 0;;) switch (_fun69810_ip) {
             case 0:
                 var6 = arg0;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMuteSettingSublabel = var3;
-    var3 = function(arg0, arg1) { // Original name: handleUnmutePress, environment: var1
+    var3 = function arg0, arg1() {
         _fun69811: for (var _fun69811_ip = 0;;) switch (_fun69811_ip) {
             case 0:
                 var3 = _closure1_slot4;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleUnmutePress = var3;
-    var3 = function(arg0) { // Original name: handleMuteSettingPress, environment: var1
+    var3 = function arg0() {
         _fun69812: for (var _fun69812_ip = 0;;) switch (_fun69812_ip) {
             case 0:
                 var0 = arg0;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleMuteSettingPress = var3;
-    var3 = function(arg0) { // Original name: getMuteSettings, environment: var1
+    var3 = function arg0() {
         _fun69813: for (var _fun69813_ip = 0;;) switch (_fun69813_ip) {
             case 0:
                 var2 = _closure1_slot4;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMuteSettings = var3;
-    var3 = function(arg0) { // Original name: getMessageNotificationsText, environment: var1
+    var3 = function arg0() {
         _fun69814: for (var _fun69814_ip = 0;;) switch (_fun69814_ip) {
             case 0:
                 var2 = arg0;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getMessageNotificationsText = var3;
-    var1 = function() { // Original name: getMuteOptions, environment: var1
+    var1 = function() {
         var1 = {};
         var7 = _closure1_slot0;
         var8 = _closure1_slot2;

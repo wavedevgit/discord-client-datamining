@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var4 = function() { // Original name: getHighestActiveScreenIndex, environment: var1
+    var4 = function() {
         _fun32958: for (var _fun32958_ip = 0;;) switch (_fun32958_ip) {
             case 0:
                 var9 = arguments[0];
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var4;
-    var0 = function(arg0) { // Original name: getHighestIndexForScreenIndexMap, environment: var1
+    var0 = function arg0() {
         _fun32960: for (var _fun32960_ip = 0;;) switch (_fun32960_ip) {
             case 0:
                 var2 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var0;
-    var3 = function() { // Original name: getBestActiveInput, environment: var1
+    var3 = function() {
         _fun32961: for (var _fun32961_ip = 0;;) switch (_fun32961_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -199,10 +199,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'utils/native/ChatInputUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0, arg1) { // Original name: createInputRefTracker, environment: var1
+    var5 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
-        var0 = function(arg0, arg1, arg2) { // Original name: addRef, environment: var1
+        var0 = function arg0, arg1, arg2() {
             _fun32963: for (var _fun32963_ip = 0;;) switch (_fun32963_ip) {
                 case 0:
                     var4 = arg0;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure2_slot3 = var0;
-        var0 = function(arg0, arg1, arg2) { // Original name: removeRef, environment: var1
+        var0 = function arg0, arg1, arg2() {
             _fun32964: for (var _fun32964_ip = 0;;) switch (_fun32964_ip) {
                 case 0:
                     var4 = arg1;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.current = var2;
         var _closure2_slot2 = var0;
         var0 = {};
-        var2 = function(arg0, arg1) { // Original name: handleRef, environment: var1
+        var2 = function arg0, arg1() {
             _fun32965: for (var _fun32965_ip = 0;;) switch (_fun32965_ip) {
                 case 0:
                     var0 = arg0;
@@ -352,7 +352,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.handleRef = var2;
-        var2 = function() { // Original name: register, environment: var1
+        var2 = function() {
             _fun32966: for (var _fun32966_ip = 0;;) switch (_fun32966_ip) {
                 case 0:
                     var2 = _closure2_slot1;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var0.register = var2;
-        var1 = function() { // Original name: unregister, environment: var1
+        var1 = function() {
             _fun32967: for (var _fun32967_ip = 0;;) switch (_fun32967_ip) {
                 case 0:
                     var2 = _closure2_slot1;
@@ -404,7 +404,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createInputRefTracker = var5;
     var2.getHighestActiveScreenIndex = var4;
-    var4 = function(arg0, arg1) { // Original name: getChatInputRef, environment: var1
+    var4 = function arg0, arg1() {
         _fun32968: for (var _fun32968_ip = 0;;) switch (_fun32968_ip) {
             case 0:
                 var3 = arg0;
@@ -452,7 +452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getChatInputRef = var4;
-    var4 = function(arg0) { // Original name: getBestActiveInputForChannelId, environment: var1
+    var4 = function arg0() {
         _fun32969: for (var _fun32969_ip = 0;;) switch (_fun32969_ip) {
             case 0:
                 var4 = arg0;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBestActiveInputForChannelId = var4;
     var2.getBestActiveInput = var3;
-    var1 = function() { // Original name: dismissKeyboard, environment: var1
+    var1 = function() {
         _fun32970: for (var _fun32970_ip = 0;;) switch (_fun32970_ip) {
             case 0:
                 var3 = _closure1_slot0;

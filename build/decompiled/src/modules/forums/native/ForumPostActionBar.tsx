@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/ForumPostActionBar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun89141: for (var _fun89141_ip = 0;;) switch (_fun89141_ip) {
             case 0:
                 var0 = arg0;
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var11 = var5.bind(var6)(var0, var4);
-                var15 = function() { // Original name: handleFollow, environment: var12
+                var15 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 12;
@@ -502,7 +502,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var16.lastActionButton;
                 var15[1] = var16;
                 var9.style = var15;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     _fun89147: for (var _fun89147_ip = 0;;) switch (_fun89147_ip) {
                         case 0:
                             var2 = _closure2_slot0;

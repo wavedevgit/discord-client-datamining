@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useMaybeFetchCollectiblesCategories, environment: var1
+    var1 = function arg0, arg1() {
         _fun50786: for (var _fun50786_ip = 0;;) switch (_fun50786_ip) {
             case 0:
                 var0 = arg0;

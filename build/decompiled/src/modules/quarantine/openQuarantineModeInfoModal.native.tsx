@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quarantine/openQuarantineModeInfoModal.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: openQuarantineModeInfoModal, environment: var1
+    var1 = function() {
         _fun43130: for (var _fun43130_ip = 0;;) switch (_fun43130_ip) {
             case 0:
                 var2 = _closure1_slot3;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var0)(var1);
                 var2 = var3.openLazy;
                 var1 = {};
-                var4 = function() { // Original name: importer, environment: var4
+                var4 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot2;
                     var1 = 6;

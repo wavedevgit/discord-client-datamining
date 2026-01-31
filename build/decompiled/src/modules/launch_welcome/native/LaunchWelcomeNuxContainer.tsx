@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/launch_welcome/native/LaunchWelcomeNuxContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: LaunchWelcomeNuxContainer, environment: var1
+    var1 = function arg0() {
         _fun104470: for (var _fun104470_ip = 0;;) switch (_fun104470_ip) {
             case 0:
                 var1 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var15];
                 var5 = var17.bind(var3)(var1);
                 var2 = var5.useAnimatedStyle;
-                var1 = function() { // Original name: A, environment: var0
+                var1 = function() {
                     _fun104473: for (var _fun104473_ip = 0;;) switch (_fun104473_ip) {
                         case 0:
                             var0 = {};
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var15];
                 var5 = var17.bind(var3)(var1);
                 var2 = var5.useAnimatedStyle;
-                var1 = function() { // Original name: D, environment: var0
+                var1 = function() {
                     var0 = {};
                     var2 = _closure2_slot4;
                     var1 = var2.get;
@@ -324,7 +324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18[var15];
                 var5 = var17.bind(var3)(var1);
                 var2 = var5.useAnimatedProps;
-                var1 = function() { // Original name: P, environment: var0
+                var1 = function() {
                     _fun104475: for (var _fun104475_ip = 0;;) switch (_fun104475_ip) {
                         case 0:
                             var0 = {};
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun104470
                 }
             case 519:
-                var4 = function() { // Original name: handleDismiss, environment: var0
+                var4 = function() {
                     var2 = _closure2_slot3;
                     var0 = undefined;
                     var1 = false;

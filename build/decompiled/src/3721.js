@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var8;
-    var3 = function() { // Original name: isReducedMotionEnabledInSystem, environment: var4
+    var3 = function() {
         _fun33387: for (var _fun33387_ip = 0;;) switch (_fun33387_ip) {
             case 0:
                 var2 = _closure1_slot1;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var6.makeMutable;
     var5 = var5.bind(var6)(var7);
     var1.uiValue = var5;
-    var5 = function(arg0) { // Original name: setEnabled, environment: var4
+    var5 = function arg0() {
         var1 = arg0;
         var2 = _closure1_slot3;
         var2.jsValue = var1;

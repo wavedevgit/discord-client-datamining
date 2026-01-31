@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot11 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: EmojiPicker, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var17 = var0.bottomSheetRef;
         var16 = var0.bottomSheetIndex;

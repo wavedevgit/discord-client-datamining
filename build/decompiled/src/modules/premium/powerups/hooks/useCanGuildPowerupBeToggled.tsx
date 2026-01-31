@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useCanGuildPowerupBeToggled, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var4 = arg0;
         var6 = arg1;
         var5 = arg2;

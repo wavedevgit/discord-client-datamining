@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun77012: for (var _fun77012_ip = 0;;) switch (_fun77012_ip) {
             case 0:
                 var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun77014: for (var _fun77014_ip = 0;;) switch (_fun77014_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: useMissingActivities, environment: var1
+    var0 = function arg0, arg1() {
         var6 = arg0;
         var2 = arg1;
         var _closure2_slot0 = var6;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = function() { // Environment: var0
             var3 = _closure2_slot0;
             var2 = _closure2_slot1;
-            var1 = function(arg0, arg1) { // Original name: getMessagesWithActivities, environment: var0
+            var1 = function arg0, arg1() {
                 _fun77017: for (var _fun77017_ip = 0;;) switch (_fun77017_ip) {
                     case 0:
                         var3 = arg0;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var3 = _closure2_slot2;
             var2 = _closure2_slot3;
-            var1 = function(arg0, arg1) { // Original name: makeActivitySubscriptions, environment: var0
+            var1 = function arg0, arg1() {
                 _fun77024: for (var _fun77024_ip = 0;;) switch (_fun77024_ip) {
                     case 0:
                         var3 = arg0;
@@ -587,7 +587,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/useSubscribeMissingActivities.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useSubscribeMissingActivities, environment: var1
+    var1 = function arg0, arg1() {
         var4 = _closure1_slot11;
         var5 = undefined;
         var2 = arg0;

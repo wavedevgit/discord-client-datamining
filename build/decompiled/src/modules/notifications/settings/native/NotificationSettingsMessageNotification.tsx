@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: NotificationSettingsMessageNotification, environment: var1
+    var3 = function arg0() {
         _fun69878: for (var _fun69878_ip = 0;;) switch (_fun69878_ip) {
             case 0:
                 var17 = arg0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/notifications/settings/native/NotificationSettingsMessageNotification.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var3 = function(arg0) { // Original name: NotificationSettingsGuildMessageNotification, environment: var1
+    var3 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var5 = var5.notification;
         var1.setting = var5;
-        var4 = function() { // Original name: onCustomize, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.NotificationSettingsGuildMessageNotification = var3;
-    var1 = function(arg0) { // Original name: NotificationSettingsChannelMessageNotification, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var3 = _closure1_slot4;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var5 = var5.notification;
         var1.setting = var5;
-        var4 = function() { // Original name: onCustomize, environment: var4
+        var4 = function() {
             var4 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 11;

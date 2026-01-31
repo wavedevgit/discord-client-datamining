@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var4.toJSON = var3;
         case 107:
-            var1 = function(arg0) { // Original name: serialize, environment: var1
+            var1 = function arg0() {
                 _fun97636: for (var _fun97636_ip = 0;;) switch (_fun97636_ip) {
                     case 0:
                         var4 = undefined;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = global;
                         var3 = var1.JSON;
                         var2 = var3.stringify;
-                        var1 = function(arg0) { // Original name: serializer, environment: var0
+                        var1 = function arg0() {
                             var1 = null;
                             var _closure3_slot0 = var1;
                             var0 = function(arg0, arg1) { // Environment: var0

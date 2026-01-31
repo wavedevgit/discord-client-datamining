@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: canUIRequestGatewaySocket, environment: var3
+    var0 = function() {
         _fun47038: for (var _fun47038_ip = 0;;) switch (_fun47038_ip) {
             case 0:
                 var1 = arguments[0];
@@ -41,21 +41,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.bind(var0)(var6);
     var _closure1_slot2 = var1;
     var1 = {};
-    var6 = function() { // Original name: canUIRequestGatewaySocket, environment: var3
+    var6 = function() {
         var1 = _closure1_slot3;
         var0 = undefined;
         var0 = var1.bind(var0)();
         return var0;
     };
     var1.canUIRequestGatewaySocket = var6;
-    var6 = function() { // Original name: getState, environment: var3
+    var6 = function() {
         var1 = _closure1_slot2;
         var0 = var1.getState;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.getState = var6;
-    var3 = function() { // Original name: useCanUIRequestGatewaySocket, environment: var3
+    var3 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 1;

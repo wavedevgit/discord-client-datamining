@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun109766: for (var _fun109766_ip = 0;;) switch (_fun109766_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var6;
     var6 = null;
     var _closure1_slot10 = var6;
-    var6 = function() { // Original name: onInitializeSync, environment: var1
+    var6 = function() {
         _fun109769: for (var _fun109769_ip = 0;;) switch (_fun109769_ip) {
             case 0:
                 var4 = null;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.bind(var0)(var6);
     var6 = var6.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: GooglePlayPriceChangeStore, environment: var5
+        var3 = function() {
             _fun109771: for (var _fun109771_ip = 0;;) switch (_fun109771_ip) {
                 case 0:
                     var3 = this;
@@ -254,7 +254,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var4 = var2.syncWith;
             var1 = _closure1_slot7;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'shouldShowGooglePlayPriceChange';
         var4.key = var6;
-        var6 = function() { // Original name: get, environment: var5
+        var6 = function() {
             _fun109773: for (var _fun109773_ip = 0;;) switch (_fun109773_ip) {
                 case 0:
                     var3 = _closure1_slot0;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'priceChangeRecord';
         var4.key = var6;
-        var5 = function() { // Original name: get, environment: var5
+        var5 = function() {
             _fun109774: for (var _fun109774_ip = 0;;) switch (_fun109774_ip) {
                 case 0:
                     var3 = _closure1_slot0;

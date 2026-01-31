@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun77029: for (var _fun77029_ip = 0;;) switch (_fun77029_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0, arg1) { // Original name: makeSubscriptionId, environment: var3
+    var0 = function arg0, arg1() {
         var0 = global;
         var0 = var0.HermesInternal;
         var4 = var0.concat;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: _isSubscribed, environment: var3
+    var0 = function arg0() {
         _fun77033: for (var _fun77033_ip = 0;;) switch (_fun77033_ip) {
             case 0:
                 var0 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var8 = function() { // Original name: handleConnectionOpenOrResumed, environment: var3
+    var8 = function() {
         var0 = {};
         _closure1_slot10 = var0;
         var0 = {};
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     });
     var13 = 3000;
-    var12 = function() { // Original name: flush, environment: var3
+    var12 = function() {
         _fun77035: for (var _fun77035_ip = 0;;) switch (_fun77035_ip) {
             case 0:
                 var3 = new Array(0);
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: PresenceSubscriptionsStore, environment: var5
+        var3 = function() {
             _fun77037: for (var _fun77037_ip = 0;;) switch (_fun77037_ip) {
                 case 0:
                     var3 = this;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot8;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'isSubscribed';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var2 = _closure1_slot15;
             var1 = undefined;
             var0 = arg0;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var13 = var6.bind(var0)(var1);
     var1 = {};
-    var9 = function(arg0) { // Original name: handleSubscriptionAdd, environment: var3
+    var9 = function arg0() {
         _fun77040: for (var _fun77040_ip = 0;;) switch (_fun77040_ip) {
             case 0:
                 var0 = arg0;
@@ -433,7 +433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.PRESENCE_SUBSCRIPTIONS_ADD = var9;
     var1.CONNECTION_OPEN = var8;
     var1.CONNECTION_RESUMED = var8;
-    var3 = function() { // Original name: handleLogout, environment: var3
+    var3 = function() {
         var0 = {};
         _closure1_slot10 = var0;
         var0 = {};

@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.ME;
     var _closure1_slot12 = var3;
     var3 = {};
-    var6 = function() { // Original name: short, environment: var1
+    var6 = function() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot2;
         var1 = 9;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.tab = var4;
         var0 = var2.bind(var3)(var1, var0);
         var0 = {};
-        var1 = function() { // Original name: short, environment: var1
+        var1 = function() {
             _fun104605: for (var _fun104605_ip = 0;;) switch (_fun104605_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)(var2);
                 case 230:
                     var0 = {};
-                    var1 = function() { // Original name: long, environment: var1
+                    var1 = function() {
                         var6 = _closure1_slot0;
                         var3 = _closure1_slot2;
                         var2 = 13;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.short = var6;
     var _closure1_slot13 = var3;
     var3 = {};
-    var6 = function() { // Original name: short, environment: var1
+    var6 = function() {
         _fun104607: for (var _fun104607_ip = 0;;) switch (_fun104607_ip) {
             case 0:
                 var1 = _closure1_slot1;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
             case 195:
                 var0 = {};
-                var1 = function() { // Original name: short, environment: var1
+                var1 = function() {
                     _fun104608: for (var _fun104608_ip = 0;;) switch (_fun104608_ip) {
                         case 0:
                             var3 = _closure1_slot1;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/shared_components/tab_bar/useTabBarTabListeners.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useTabBarTabListeners, environment: var1
+    var1 = function() {
         var4 = _closure1_slot0;
         var6 = _closure1_slot2;
         var2 = 23;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var0 = {};
             var1 = {};
-            var3 = function() { // Original name: tabPress, environment: var2
+            var3 = function() {
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot2;
                 var0 = 11;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.tabPress = var3;
-            var3 = function() { // Original name: tabLongPress, environment: var2
+            var3 = function() {
                 var1 = _closure2_slot0;
                 var0 = var1.handleLongPress;
                 var0 = var0.bind(var1)();
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.tabLongPress = var3;
             var0.guilds = var1;
             var1 = {};
-            var3 = function() { // Original name: tabPress, environment: var2
+            var3 = function() {
                 var3 = _closure1_slot1;
                 var4 = _closure1_slot2;
                 var0 = 24;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.tabPress = var3;
             var0.messages = var1;
             var1 = {};
-            var3 = function() { // Original name: tabPress, environment: var2
+            var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 24;
@@ -444,7 +444,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.tabPress = var3;
             var0.notifications = var1;
             var1 = {};
-            var3 = function() { // Original name: tabPress, environment: var2
+            var3 = function() {
                 _fun104615: for (var _fun104615_ip = 0;;) switch (_fun104615_ip) {
                     case 0:
                         var4 = _closure1_slot1;
@@ -516,7 +516,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.tabPress = var3;
             var0.icymi = var1;
             var1 = {};
-            var3 = function() { // Original name: tabPress, environment: var2
+            var3 = function() {
                 var3 = _closure1_slot1;
                 var4 = _closure1_slot2;
                 var0 = 24;
@@ -540,7 +540,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.tabPress = var3;
             var0.happening = var1;
             var1 = {};
-            var3 = function() { // Original name: tabPress, environment: var2
+            var3 = function() {
                 var3 = _closure1_slot1;
                 var4 = _closure1_slot2;
                 var0 = 24;

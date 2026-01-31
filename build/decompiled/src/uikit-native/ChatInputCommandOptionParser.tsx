@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun89954: for (var _fun89954_ip = 0;;) switch (_fun89954_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun89956: for (var _fun89956_ip = 0;;) switch (_fun89956_ip) {
             case 0:
                 var3 = arg0;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74:
                 var2 = var2.preferredOptionValues;
                 var _closure2_slot1 = var2;
-                var8 = function(arg0, arg1, arg2, arg3) { // Original name: optionValueLength, environment: var0
+                var8 = function arg0, arg1, arg2, arg3() {
                     _fun89958: for (var _fun89958_ip = 0;;) switch (_fun89958_ip) {
                         case 0:
                             var8 = arg0;
@@ -780,7 +780,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getTextBeforeFirstOption = var3;
-    var3 = function(arg0, arg1) { // Original name: getEmojiHighlightNodes, environment: var1
+    var3 = function arg0, arg1() {
         _fun89961: for (var _fun89961_ip = 0;;) switch (_fun89961_ip) {
             case 0:
                 var10 = arg0;
@@ -880,16 +880,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEmojiHighlightNodes = var3;
-    var3 = function(arg0, arg1) { // Original name: getUsernameHighlightNodes, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
-        var4 = function(arg0, arg1) { // Original name: processRegex, environment: var1
+        var4 = function arg0, arg1() {
             _fun89963: for (var _fun89963_ip = 0;;) switch (_fun89963_ip) {
                 case 0:
                     var5 = arg0;
                     var0 = arg1;
                     var _closure3_slot0 = var0;
-                    var4 = function() { // Original name: _loop, environment: var6
+                    var4 = function() {
                         _fun89964: for (var _fun89964_ip = 0;;) switch (_fun89964_ip) {
                             case 0:
                                 var2 = _closure3_slot1;
@@ -1048,7 +1048,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun89968
                 }
             case 145:
-                var2 = function() { // Original name: _loop2, environment: var7
+                var2 = function() {
                     _fun89969: for (var _fun89969_ip = 0;;) switch (_fun89969_ip) {
                         case 0:
                             var2 = _closure2_slot1;
@@ -1251,7 +1251,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRoleHighlightNodes = var3;
-    var3 = function(arg0) { // Original name: getSilentHighlightNodes, environment: var1
+    var3 = function arg0() {
         _fun89972: for (var _fun89972_ip = 0;;) switch (_fun89972_ip) {
             case 0:
                 var0 = new Array(0);
@@ -1279,7 +1279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSilentHighlightNodes = var3;
-    var1 = function(arg0, arg1) { // Original name: getChannelHighlightNodes, environment: var1
+    var1 = function arg0, arg1() {
         _fun89973: for (var _fun89973_ip = 0;;) switch (_fun89973_ip) {
             case 0:
                 var0 = arg1;
@@ -1298,7 +1298,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var2;
                 var2 = 0;
                 var _closure2_slot3 = var2;
-                var2 = function() { // Original name: _loop3, environment: var1
+                var2 = function() {
                     _fun89974: for (var _fun89974_ip = 0;;) switch (_fun89974_ip) {
                         case 0:
                             var5 = _closure2_slot0;

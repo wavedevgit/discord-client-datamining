@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/safety/native/TransferOwnership.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TransferOwnership, environment: var1
+    var1 = function arg0() {
         _fun79103: for (var _fun79103_ip = 0;;) switch (_fun79103_ip) {
             case 0:
                 var0 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var _closure2_slot2 = var3;
                 var _closure2_slot3 = var3;
-                var0 = function() { // Original name: _handleTransfer, environment: var14
+                var0 = function() {
                     var3 = undefined;
                     var0 = undefined;
                     var2 = _closure1_slot3;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var20.id;
                 var7 = var1.bind(var24)(var0);
                 var _closure2_slot6 = var7;
-                var19 = function() { // Original name: GuildWithSmallIcon, environment: var14
+                var19 = function() {
                     _fun79109: for (var _fun79109_ip = 0;;) switch (_fun79109_ip) {
                         case 0:
                             var0 = _closure1_slot16;
@@ -550,7 +550,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.getUserTag;
                 var19 = var19.bind(var20)(var24);
                 var13.user = var19;
-                var19 = function() { // Original name: NicknameAKA, environment: var14
+                var19 = function() {
                     _fun79110: for (var _fun79110_ip = 0;;) switch (_fun79110_ip) {
                         case 0:
                             var0 = _closure1_slot16;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.username = var22;
                 var18 = var20.bind(var21)(var19, var18);
                 var10.label = var18;
-                var18 = function() { // Original name: handleConfirmToggle, environment: var14
+                var18 = function() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var1 = function(arg0) { // Environment: var1
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var15 = var15.transferButton;
                 var5.style = var15;
-                var14 = function() { // Original name: handleTransfer, environment: var14
+                var14 = function() {
                     var0 = undefined;
                     var3 = _closure2_slot7;
                     var2 = var3.apply;

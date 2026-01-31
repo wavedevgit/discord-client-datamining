@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: openStageChannel, environment: var1
+    var3 = function arg0() {
         _fun51749: for (var _fun51749_ip = 0;;) switch (_fun51749_ip) {
             case 0:
                 var0 = arg0;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/StageChannelActionCreatorExtras.native.tsx';
     var4 = var5.bind(var6)(var4);
-    var4 = function(arg0) { // Original name: openStageChannelSettings, environment: var1
+    var4 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 2;
@@ -106,12 +106,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openStageChannelSettings = var4;
-    var4 = function() { // Original name: openEndGuildEventConfirmationModal, environment: var1
+    var4 = function() {
         var0 = undefined;
         return var0;
     };
     var2.openEndGuildEventConfirmationModal = var4;
-    var4 = function(arg0) { // Original name: openStageChannelAudienceNoticeModal, environment: var1
+    var4 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 2;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openStageChannelAudienceNoticeModal = var4;
-    var4 = function(arg0, arg1) { // Original name: openStageBlockedUsersSheet, environment: var1
+    var4 = function arg0, arg1() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 2;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openStageBlockedUsersSheet = var4;
-    var4 = function(arg0, arg1) { // Original name: openStageSettingsSheet, environment: var1
+    var4 = function arg0, arg1() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 2;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openStageSettingsSheet = var4;
-    var4 = function(arg0) { // Original name: openEndStageModal, environment: var1
+    var4 = function arg0() {
         var4 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 2;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openEndStageModal = var4;
     var2.openStageChannel = var3;
-    var3 = function(arg0) { // Original name: showPlatformUserProfile, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 12;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showPlatformUserProfile = var3;
-    var3 = function(arg0) { // Original name: shouldShowBlockedUsers, environment: var1
+    var3 = function arg0() {
         _fun51757: for (var _fun51757_ip = 0;;) switch (_fun51757_ip) {
             case 0:
                 var3 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldShowBlockedUsers = var3;
-    var3 = function(arg0, arg1) { // Original name: navigateToStage, environment: var1
+    var3 = function arg0, arg1() {
         _fun51758: for (var _fun51758_ip = 0;;) switch (_fun51758_ip) {
             case 0:
                 var2 = arg0;
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.navigateToStage = var3;
-    var1 = function() { // Original name: showChannelChangeConfirmationAlert, environment: var1
+    var1 = function() {
         var0 = false;
         return var0;
     };

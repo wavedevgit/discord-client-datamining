@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.completeCommandOption = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
-    var3 = function(arg0) { // Original name: ApplicationCommandOptionItem, environment: var1
+    var3 = function arg0() {
         _fun90087: for (var _fun90087_ip = 0;;) switch (_fun90087_ip) {
             case 0:
                 var2 = arg0;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: ApplicationCommandOptionDescription, environment: var1
+    var3 = function arg0() {
         _fun90088: for (var _fun90088_ip = 0;;) switch (_fun90088_ip) {
             case 0:
                 var0 = arg0;
@@ -529,7 +529,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var4 = var5.bind(var6)(var2, var4);
-                var18 = function(arg0) { // Original name: onDescriptionLayout, environment: var1
+                var18 = function arg0() {
                     _fun90091: for (var _fun90091_ip = 0;;) switch (_fun90091_ip) {
                         case 0:
                             var0 = arg0;
@@ -709,7 +709,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/application_commands/native/ApplicationCommandBar.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun90092: for (var _fun90092_ip = 0;;) switch (_fun90092_ip) {
             case 0:
                 var0 = arg0;
@@ -1088,7 +1088,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure1_slot12;
                             var3 = {};
                             var3.option = var1;
-                            var6 = function() { // Original name: onPress, environment: var2
+                            var6 = function() {
                                 _fun90101: for (var _fun90101_ip = 0;;) switch (_fun90101_ip) {
                                     case 0:
                                         var2 = _closure2_slot5;
@@ -1113,7 +1113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var1.name;
                             var6 = var7[var6];
                             var3.optionState = var6;
-                            var2 = function(arg0) { // Original name: onLayout, environment: var2
+                            var2 = function arg0() {
                                 var3 = _closure2_slot14;
                                 var2 = _closure3_slot0;
                                 var1 = undefined;
@@ -1212,7 +1212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure1_slot12;
                             var3 = {};
                             var3.option = var1;
-                            var6 = function() { // Original name: onPress, environment: var2
+                            var6 = function() {
                                 var2 = _closure2_slot5;
                                 var1 = _closure3_slot0;
                                 var0 = undefined;
@@ -1224,7 +1224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var1.name;
                             var6 = var7[var6];
                             var3.optionState = var6;
-                            var2 = function(arg0) { // Original name: onLayout, environment: var2
+                            var2 = function arg0() {
                                 var3 = _closure2_slot14;
                                 var2 = _closure3_slot0;
                                 var1 = undefined;

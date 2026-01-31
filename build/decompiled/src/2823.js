@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var1 = exports;
     var6 = dependencyMap;
-    var4 = function(arg0) { // Original name: _interopRequireDefault, environment: var3
+    var4 = function arg0() {
         _fun22885: for (var _fun22885_ip = 0;;) switch (_fun22885_ip) {
             case 0:
                 var2 = arg0;
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function(arg0) { // Original name: intervalToDuration, environment: var3
+    var0 = function arg0() {
         _fun22886: for (var _fun22886_ip = 0;;) switch (_fun22886_ip) {
             case 0:
                 var0 = arg0;

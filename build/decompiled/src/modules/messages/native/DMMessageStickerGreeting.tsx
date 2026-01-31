@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/DMMessageStickerGreeting.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DMMessageStickerGreeting, environment: var1
+    var1 = function arg0() {
         _fun89596: for (var _fun89596_ip = 0;;) switch (_fun89596_ip) {
             case 0:
                 var0 = arg0;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1 = var10.bind(var11)(var1, var8);
-                var1 = function(arg0) { // Original name: useHandleWavePress, environment: var7
+                var1 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot5;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var6 = _closure3_slot4;
                                     var4 = true;
                                     var4 = var6.bind(var1)(var4);
-                                    var3 = function(arg0) { // Original name: showErrorToast, environment: var4
+                                    var3 = function arg0() {
                                         _fun89605: for (var _fun89605_ip = 0;;) switch (_fun89605_ip) {
                                             case 0:
                                                 var4 = arg0;
@@ -537,7 +537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var13 = var1.bind(var4)(var5);
-                var1 = function() { // Original name: useIsRendered, environment: var7
+                var1 = function() {
                     var4 = _closure1_slot5;
                     var3 = var4.useState;
                     var2 = false;
@@ -575,7 +575,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6[var1];
                 var10 = var3.bind(var4)(var8);
                 var8 = var10.useAnimatedStyle;
-                var7 = function() { // Original name: x, environment: var7
+                var7 = function() {
                     _fun89608: for (var _fun89608_ip = 0;;) switch (_fun89608_ip) {
                         case 0:
                             var1 = _closure2_slot2;
@@ -609,7 +609,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var2 - var0;
                             var3 = var0 + var1;
                         case 61:
-                            var2 = function(arg0) { // Original name: generateAnimationConfig, environment: var0
+                            var2 = function arg0() {
                                 var7 = _closure1_slot0;
                                 var8 = _closure1_slot2;
                                 var0 = 23;

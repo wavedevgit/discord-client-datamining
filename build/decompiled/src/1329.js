@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.setUnknownOneofValue = var0;
     var2.clearOneofValue = var0;
     var2.getSelectedOneofValue = var0;
-    var3 = function(arg0) { // Original name: isOneofGroup, environment: var1
+    var3 = function arg0() {
         _fun14933: for (var _fun14933_ip = 0;;) switch (_fun14933_ip) {
             case 0:
                 var3 = arg0;
@@ -91,14 +91,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isOneofGroup = var3;
-    var3 = function(arg0, arg1) { // Original name: getOneofValue, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var0 = arg1;
         var0 = var1[var0];
         return var0;
     };
     var2.getOneofValue = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setOneofValue, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun14935: for (var _fun14935_ip = 0;;) switch (_fun14935_ip) {
             case 0:
                 var3 = arg0;
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.setOneofValue = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setUnknownOneofValue, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun14936: for (var _fun14936_ip = 0;;) switch (_fun14936_ip) {
             case 0:
                 var3 = arg0;
@@ -162,7 +162,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.setUnknownOneofValue = var3;
-    var3 = function(arg0) { // Original name: clearOneofValue, environment: var1
+    var3 = function arg0() {
         _fun14937: for (var _fun14937_ip = 0;;) switch (_fun14937_ip) {
             case 0:
                 var1 = arg0;
@@ -181,7 +181,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.clearOneofValue = var3;
-    var1 = function(arg0) { // Original name: getSelectedOneofValue, environment: var1
+    var1 = function arg0() {
         _fun14938: for (var _fun14938_ip = 0;;) switch (_fun14938_ip) {
             case 0:
                 var1 = arg0;

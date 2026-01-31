@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot9 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: HeaderGlassBlur, environment: var1
+    var1 = function arg0() {
         _fun90942: for (var _fun90942_ip = 0;;) switch (_fun90942_ip) {
             case 0:
                 var1 = arg0;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var6 = var10.bind(var3)(var2);
                 var4 = var6.useAnimatedStyle;
-                var2 = function() { // Original name: k, environment: var0
+                var2 = function() {
                     _fun90943: for (var _fun90943_ip = 0;;) switch (_fun90943_ip) {
                         case 0:
                             var0 = {};
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var8[var1];
                 var2 = var10.bind(var3)(var1);
                 var1 = var2.useAnimatedProps;
-                var0 = function() { // Original name: p, environment: var0
+                var0 = function() {
                     _fun90944: for (var _fun90944_ip = 0;;) switch (_fun90944_ip) {
                         case 0:
                             var0 = {};

@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getApplicationCommandsIconSource = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: openCommandAttachmentPreview, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun75781: for (var _fun75781_ip = 0;;) switch (_fun75781_ip) {
             case 0:
                 var5 = arg1;
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.disableSpoiler = var5;
                 var5 = arg3;
                 var0.onClose = var5;
-                var4 = function() { // Original name: onRemove, environment: var4
+                var4 = function() {
                     _fun75782: for (var _fun75782_ip = 0;;) switch (_fun75782_ip) {
                         case 0:
                             var3 = _closure1_slot1;

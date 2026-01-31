@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var7.bind(var8)(var3);
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: placeholderRowWidth, environment: var1
+    var3 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.sin;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot10 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: UserPlaceholderRow, environment: var1
+    var1 = function arg0() {
         _fun67308: for (var _fun67308_ip = 0;;) switch (_fun67308_ip) {
             case 0:
                 var2 = arg0;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0[var4];
                 var5 = var5.bind(var3)(var2);
                 var2 = var5.useAnimatedStyle;
-                var1 = function() { // Original name: R, environment: var1
+                var1 = function() {
                     var0 = {};
                     var2 = _closure2_slot0;
                     var1 = var2.get;

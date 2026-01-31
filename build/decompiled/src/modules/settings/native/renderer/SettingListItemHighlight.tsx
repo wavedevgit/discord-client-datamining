@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9[var0];
         var6 = var13.bind(var3)(var2);
         var2 = var6.useAnimatedStyle;
-        var1 = function() { // Original name: _, environment: var1
+        var1 = function() {
             var0 = {};
             var14 = _closure1_slot0;
             var15 = _closure1_slot2;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var6.Easing;
             var6 = var6.ease;
             var7.easing = var6;
-            var6 = function(arg0) { // Original name: t, environment: var6
+            var6 = function arg0() {
                 _fun88555: for (var _fun88555_ip = 0;;) switch (_fun88555_ip) {
                     case 0:
                         var0 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var1 = function() { // Original name: QuestThemePicker, environment: var6
+    var1 = function() {
         var0 = _closure1_slot12;
         var3 = undefined;
         var15 = var0.bind(var3)();
@@ -340,7 +340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot0;
                     var7 = var1.themeOption;
                     var2.style = var7;
-                    var5 = function() { // Original name: onPress, environment: var5
+                    var5 = function() {
                         var2 = _closure2_slot10;
                         var0 = _closure3_slot0;
                         var1 = var0.theme;

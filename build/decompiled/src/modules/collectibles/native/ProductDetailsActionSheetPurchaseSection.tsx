@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.orbsIcon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot13 = var3;
-    var3 = function(arg0) { // Original name: GiftButton, environment: var1
+    var3 = function arg0() {
         _fun87177: for (var _fun87177_ip = 0;;) switch (_fun87177_ip) {
             case 0:
                 var0 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.color = var8;
                 var6 = var2.bind(var3)(var7, var6);
                 var0.icon = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var0 = 12;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var3;
-    var3 = function(arg0) { // Original name: VCButton, environment: var1
+    var3 = function arg0() {
         _fun87179: for (var _fun87179_ip = 0;;) switch (_fun87179_ip) {
             case 0:
                 var0 = arg0;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.skuId = var6;
                     var1 = _closure2_slot5;
                     var2.analyticsLocations = var1;
-                    var1 = function(arg0) { // Original name: onCheckoutSuccess, environment: var1
+                    var1 = function arg0() {
                         _fun87181: for (var _fun87181_ip = 0;;) switch (_fun87181_ip) {
                             case 0:
                                 var0 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var9;
                             case 271:
                                 var4.consumed = var1;
-                                var1 = function() { // Original name: onPressExplorePerks, environment: var6
+                                var1 = function() {
                                     var3 = _closure2_slot4;
                                     var2 = var3.navigate;
                                     var1 = _closure1_slot9;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var4.onPressExplorePerks = var1;
-                                var1 = function() { // Original name: onPressViewCredits, environment: var6
+                                var1 = function() {
                                     var3 = _closure2_slot4;
                                     var2 = var3.navigate;
                                     var1 = _closure1_slot9;
@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = {};
                                 var1 = 'ORB_BADGE_COLLECTED_MODAL';
                                 var2.modalKey = var1;
-                                var6 = function() { // Original name: onPressViewBadge, environment: var6
+                                var6 = function() {
                                     var3 = _closure2_slot4;
                                     var2 = var3.navigate;
                                     var0 = _closure1_slot10;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var14 = var16.amount;
                 var2.orbPrice = var14;
-                var13 = function() { // Original name: orbIconHook, environment: var13
+                var13 = function() {
                     _fun87185: for (var _fun87185_ip = 0;;) switch (_fun87185_ip) {
                         case 0:
                             var4 = _closure1_slot11;
@@ -650,7 +650,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0) { // Original name: PurchaseDisclaimer, environment: var1
+    var3 = function arg0() {
         _fun87186: for (var _fun87186_ip = 0;;) switch (_fun87186_ip) {
             case 0:
                 var0 = arg0;
@@ -719,7 +719,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ProductDetailsActionSheetPurchaseSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun87187: for (var _fun87187_ip = 0;;) switch (_fun87187_ip) {
             case 0:
                 var0 = arg0;
@@ -939,7 +939,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var12[var0];
                 var23 = var13.bind(var3)(var2);
                 var13 = var23.useAnimatedStyle;
-                var2 = function() { // Original name: h, environment: var7
+                var2 = function() {
                     _fun87189: for (var _fun87189_ip = 0;;) switch (_fun87189_ip) {
                         case 0:
                             var0 = {};
@@ -1009,7 +1009,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.paddingBottom = var22;
                 var12[2] = var13;
                 var0.style = var12;
-                var7 = function(arg0) { // Original name: onLayout, environment: var7
+                var7 = function arg0() {
                     _fun87190: for (var _fun87190_ip = 0;;) switch (_fun87190_ip) {
                         case 0:
                             var2 = _closure2_slot1;

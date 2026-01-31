@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/public_guilds/native/components/EnableCommunityModal/FinishingTouchesScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: FinishingTouchesScreen, environment: var1
+    var1 = function() {
         _fun116323: for (var _fun116323_ip = 0;;) switch (_fun116323_ip) {
             case 0:
                 var1 = _closure1_slot0;
@@ -465,7 +465,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var27.t;
                 var28 = var27.K8Eg4P;
                 var27 = {};
-                var32 = function() { // Original name: infoHook, environment: var30
+                var32 = function() {
                     var0 = null;
                     return var0;
                 };
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var26 = var26.t;
                 var27 = var26.v8qCoG;
                 var26 = {};
-                var30 = function() { // Original name: infoHook, environment: var30
+                var30 = function() {
                     var0 = null;
                     return var0;
                 };

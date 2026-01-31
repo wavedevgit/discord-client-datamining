@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CameraPreview, environment: var1
+    var0 = function arg0() {
         _fun62725: for (var _fun62725_ip = 0;;) switch (_fun62725_ip) {
             case 0:
                 var0 = arg0;
@@ -312,7 +312,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var11[var9];
                 var6 = var10.bind(var3)(var0);
                 var2 = var6.useAnimatedStyle;
-                var0 = function() { // Original name: te, environment: var18
+                var0 = function() {
                     var0 = {};
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.L3I0Jr;
                 var0 = var2.bind(var6)(var0);
                 var1.text = var0;
-                var0 = function() { // Original name: handleHidePip, environment: var18
+                var0 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 30;
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[0] = var1;
                 var19 = var0;
             case 1088:
-                var0 = function(arg0) { // Original name: useGesture, environment: var18
+                var0 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var3 = _closure1_slot4;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var2.Tap;
                                 var2 = var1.bind(var2)();
                                 var1 = var2.onTouchesUp;
-                                var0 = function() { // Original name: l, environment: var0
+                                var0 = function() {
                                     _fun62734: for (var _fun62734_ip = 0;;) switch (_fun62734_ip) {
                                         case 0:
                                             var2 = _closure4_slot0;
@@ -612,7 +612,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var22.bind(var3)(var21, var20);
                 var15.trigger = var20;
                 var15.rows = var19;
-                var19 = function() { // Original name: onOpen, environment: var18
+                var19 = function() {
                     _fun62735: for (var _fun62735_ip = 0;;) switch (_fun62735_ip) {
                         case 0:
                             var2 = _closure2_slot15;
@@ -635,7 +635,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var15.onOpen = var19;
-                var18 = function() { // Original name: onClose, environment: var18
+                var18 = function() {
                     var2 = _closure2_slot15;
                     var0 = undefined;
                     var1 = null;
@@ -781,7 +781,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/video_calls/native/components/CameraPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CameraPreviewContainer, environment: var1
+    var1 = function arg0() {
         _fun62737: for (var _fun62737_ip = 0;;) switch (_fun62737_ip) {
             case 0:
                 var1 = arg0;
@@ -1128,7 +1128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 148:
                             var3 = _closure2_slot0;
                             var4 = var3.id;
-                            var3 = function(arg0, arg1) { // Original name: isSmallRoom, environment: var3
+                            var3 = function arg0, arg1() {
                                 _fun62744: for (var _fun62744_ip = 0;;) switch (_fun62744_ip) {
                                     case 0:
                                         var1 = arg1;
@@ -1391,7 +1391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var16 = var17.bind(var18)(var16, var6);
-                var6 = function(arg0, arg1, arg2) { // Original name: useOtherPipParticipant, environment: var0
+                var6 = function arg0, arg1, arg2() {
                     _fun62749: for (var _fun62749_ip = 0;;) switch (_fun62749_ip) {
                         case 0:
                             var0 = arg0;

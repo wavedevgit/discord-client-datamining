@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: InviteErrorBase, environment: var1
+    var0 = function arg0() {
         _fun80316: for (var _fun80316_ip = 0;;) switch (_fun80316_ip) {
             case 0:
                 var1 = arg0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.wcqOoF;
                 var9 = var10.bind(var11)(var9);
                 var5.text = var9;
-                var8 = function() { // Original name: handlePressClose, environment: var8
+                var8 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0) { // Original name: InviteDisabledError, environment: var1
+    var0 = function arg0() {
         _fun80318: for (var _fun80318_ip = 0;;) switch (_fun80318_ip) {
             case 0:
                 var1 = arg0;
@@ -372,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["yD/zkn"];
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: handlePressClose, environment: var9
+                var9 = function() {
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var1 = var1.bind(var0)();
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/modals/InviteError.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: InviteError, environment: var1
+    var1 = function arg0() {
         _fun80320: for (var _fun80320_ip = 0;;) switch (_fun80320_ip) {
             case 0:
                 var1 = arg0;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function(arg0) { // Original name: _iterableToArray, environment: var1
+    var1 = function arg0() {
         _fun1438: for (var _fun1438_ip = 0;;) switch (_fun1438_ip) {
             case 0:
                 var2 = arg0;

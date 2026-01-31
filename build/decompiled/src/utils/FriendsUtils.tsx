@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: validateDiscordTag, environment: var1
+    var4 = function arg0() {
         _fun64429: for (var _fun64429_ip = 0;;) switch (_fun64429_ip) {
             case 0:
                 var11 = arg0;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var4;
-    var3 = function(arg0, arg1) { // Original name: humanizeAbortCode, environment: var1
+    var3 = function arg0, arg1() {
         _fun64430: for (var _fun64430_ip = 0;;) switch (_fun64430_ip) {
             case 0:
                 var2 = arg0;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'utils/FriendsUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.validateDiscordTag = var4;
-    var4 = function(arg0) { // Original name: isValidDiscordTag, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot9;
         var1 = undefined;
         var0 = arg0;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isValidDiscordTag = var4;
     var2.humanizeAbortCode = var3;
-    var1 = function(arg0, arg1) { // Original name: humanizeAbortCodeForA11y, environment: var1
+    var1 = function arg0, arg1() {
         _fun64432: for (var _fun64432_ip = 0;;) switch (_fun64432_ip) {
             case 0:
                 var3 = arg0;

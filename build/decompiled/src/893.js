@@ -23,10 +23,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.MIN_DELAY = var3;
     var3 = 5000;
     var2.START_DELAY = var3;
-    var1 = function(arg0) { // Original name: makeOfflineTransport, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var1 = function() { // Original name: log, environment: var0
+        var1 = function() {
             _fun9424: for (var _fun9424_ip = 0;;) switch (_fun9424_ip) {
                 case 0:
                     var0 = undefined;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 0:
                     var4 = arg0;
                     var _closure3_slot0 = var4;
-                    var0 = function(arg0) { // Original name: flushIn, environment: var1
+                    var0 = function arg0() {
                         _fun9426: for (var _fun9426_ip = 0;;) switch (_fun9426_ip) {
                             case 0:
                                 var0 = _closure3_slot2;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var _closure3_slot5 = var0;
-                    var3 = function() { // Original name: flushWithBackOff, environment: var1
+                    var3 = function() {
                         _fun9430: for (var _fun9430_ip = 0;;) switch (_fun9430_ip) {
                             case 0:
                                 var0 = _closure3_slot2;
@@ -240,7 +240,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var _closure3_slot6 = var3;
-                    var2 = function(arg0) { // Original name: send, environment: var1
+                    var2 = function arg0() {
                         var0 = undefined;
                         var3 = _closure3_slot8;
                         var2 = var3.apply;
@@ -251,7 +251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var _closure3_slot7 = var2;
-                    var0 = function() { // Original name: _send, environment: var1
+                    var0 = function() {
                         var3 = undefined;
                         var0 = undefined;
                         var2 = _closure1_slot2;
@@ -622,7 +622,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 146:
                     var0 = {};
                     var0.send = var2;
-                    var1 = function(arg0) { // Original name: flush, environment: var1
+                    var1 = function arg0() {
                         _fun9435: for (var _fun9435_ip = 0;;) switch (_fun9435_ip) {
                             case 0:
                                 var2 = arg0;

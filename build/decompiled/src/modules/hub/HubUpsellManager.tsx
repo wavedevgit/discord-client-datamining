@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ContentDismissActionType;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: init, environment: var3
+    var6 = function arg0() {
         _fun80446: for (var _fun80446_ip = 0;;) switch (_fun80446_ip) {
             case 0:
                 var0 = arg0;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.init = var6;
-    var3 = function() { // Original name: hideHubUpsell, environment: var3
+    var3 = function() {
         var2 = _closure1_slot0;
         var6 = _closure1_slot2;
         var0 = 9;

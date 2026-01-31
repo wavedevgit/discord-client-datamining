@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/AcceptInviteContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AcceptInviteContainer, environment: var1
+    var1 = function arg0() {
         _fun80186: for (var _fun80186_ip = 0;;) switch (_fun80186_ip) {
             case 0:
                 var3 = arg0;
@@ -654,7 +654,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var10 = 'Accept Invite Page';
                                 var9.location = var10;
                                 var3.context = var9;
-                                var8 = function(arg0) { // Original name: callback, environment: var8
+                                var8 = function arg0() {
                                     var2 = _closure4_slot0;
                                     var0 = undefined;
                                     var1 = arg0;

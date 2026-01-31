@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot14 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaKeyboardList, environment: var1
+    var1 = function arg0() {
         _fun75551: for (var _fun75551_ip = 0;;) switch (_fun75551_ip) {
             case 0:
                 var1 = arg0;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var38[var36];
                 var16 = var37.bind(var4)(var3);
                 var13 = var16.useAnimatedReaction;
-                var7 = function() { // Original name: B, environment: var20
+                var7 = function() {
                     var1 = _closure2_slot20;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.__workletHash = var3;
                 var3 = _closure1_slot13;
                 var7.__initData = var3;
-                var3 = function(arg0, arg1) { // Original name: z, environment: var20
+                var3 = function arg0, arg1() {
                     _fun75559: for (var _fun75559_ip = 0;;) switch (_fun75559_ip) {
                         case 0:
                             var7 = arg0;
@@ -917,7 +917,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var15 === var23;
             case 1253:
                 var0.photosEmpty = var22;
-                var22 = function() { // Original name: onPressCamera, environment: var20
+                var22 = function() {
                     var2 = _closure2_slot2;
                     var0 = _closure1_slot7;
                     var1 = var0.TAKE_A_PHOTO_BUTTON;
@@ -926,7 +926,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.onPressCamera = var22;
-                var20 = function() { // Original name: onPressLimitedPicker, environment: var20
+                var20 = function() {
                     _fun75572: for (var _fun75572_ip = 0;;) switch (_fun75572_ip) {
                         case 0:
                             var0 = _closure1_slot5;

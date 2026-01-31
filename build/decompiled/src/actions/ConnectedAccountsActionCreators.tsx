@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var6 = function(arg0, arg1) { // Original name: callback, environment: var3
+    var6 = function arg0, arg1() {
         _fun40653: for (var _fun40653_ip = 0;;) switch (_fun40653_ip) {
             case 0:
                 var6 = arg0;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1 instanceof Object ? var1 : var7;
     var _closure1_slot9 = var1;
     var1 = {};
-    var7 = function() { // Original name: fetch, environment: var3
+    var7 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot2;
         var1 = 4;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.fetch = var7;
-    var7 = function(arg0) { // Original name: authorize, environment: var3
+    var7 = function arg0() {
         _fun40657: for (var _fun40657_ip = 0;;) switch (_fun40657_ip) {
             case 0:
                 var2 = arguments[1];
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.authorize = var7;
     var1.callback = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: connect, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         _fun40660: for (var _fun40660_ip = 0;;) switch (_fun40660_ip) {
             case 0:
                 var7 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.connect = var6;
-    var6 = function(arg0, arg1) { // Original name: disconnect, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.disconnect = var6;
-    var6 = function(arg0, arg1) { // Original name: refresh, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -479,7 +479,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.refresh = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: setVisibility, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var4 = this;
         var3 = var4.update;
         var2 = {};
@@ -493,7 +493,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setVisibility = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: setMetadataVisibility, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var4 = this;
         var3 = var4.update;
         var2 = {};
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setMetadataVisibility = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: setFriendSync, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var4 = this;
         var3 = var4.update;
         var2 = {};
@@ -519,7 +519,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setFriendSync = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: setShowActivity, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var4 = this;
         var3 = var4.update;
         var2 = {};
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setShowActivity = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: update, environment: var3
+    var6 = function arg0, arg1, arg2() {
         var5 = arg2;
         var1 = _closure1_slot1;
         var8 = _closure1_slot2;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.update = var6;
-    var6 = function(arg0, arg1) { // Original name: joinServer, environment: var3
+    var6 = function arg0, arg1() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var0 = arg1;
@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.joinServer = var6;
-    var6 = function(arg0, arg1) { // Original name: refreshAccessToken, environment: var3
+    var6 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.refreshAccessToken = var6;
-    var6 = function(arg0, arg1) { // Original name: linkDispatchAuthCallback, environment: var3
+    var6 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -807,7 +807,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.linkDispatchAuthCallback = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: completeTwoWayLink, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;
@@ -908,7 +908,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.completeTwoWayLink = var6;
-    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: sessionHandoff, environment: var3
+    var6 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 4;
@@ -941,7 +941,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.sessionHandoff = var6;
-    var3 = function(arg0, arg1) { // Original name: getHandoffStatus, environment: var3
+    var3 = function arg0, arg1() {
         var4 = arg1;
         var1 = global;
         var0 = var1.URLSearchParams;

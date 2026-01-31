@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0, arg1) { // Original name: parseNumericPattern, environment: var0
+    var2 = function arg0, arg1() {
         _fun23016: for (var _fun23016_ip = 0;;) switch (_fun23016_ip) {
             case 0:
                 var4 = arg1;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var3 = function(arg0) { // Original name: dayPeriodEnumToHours, environment: var0
+    var3 = function arg0() {
         _fun23017: for (var _fun23017_ip = 0;;) switch (_fun23017_ip) {
             case 0:
                 var1 = arg0;
@@ -94,7 +94,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.dayPeriodEnumToHours = var3;
-    var3 = function(arg0) { // Original name: isLeapYearIndex, environment: var0
+    var3 = function arg0() {
         _fun23018: for (var _fun23018_ip = 0;;) switch (_fun23018_ip) {
             case 0:
                 var4 = arg0;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.isLeapYearIndex = var3;
-    var3 = function(arg0, arg1) { // Original name: mapValue, environment: var0
+    var3 = function arg0, arg1() {
         _fun23019: for (var _fun23019_ip = 0;;) switch (_fun23019_ip) {
             case 0:
                 var1 = arg0;
@@ -148,7 +148,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.mapValue = var3;
-    var3 = function(arg0, arg1) { // Original name: normalizeTwoDigitYear, environment: var0
+    var3 = function arg0, arg1() {
         _fun23020: for (var _fun23020_ip = 0;;) switch (_fun23020_ip) {
             case 0:
                 var0 = arg0;
@@ -215,7 +215,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.normalizeTwoDigitYear = var3;
-    var3 = function(arg0) { // Original name: parseAnyDigitsSigned, environment: var0
+    var3 = function arg0() {
         var3 = _closure1_slot2;
         var1 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -230,7 +230,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.parseAnyDigitsSigned = var3;
-    var3 = function(arg0, arg1) { // Original name: parseNDigits, environment: var0
+    var3 = function arg0, arg1() {
         _fun23022: for (var _fun23022_ip = 0;;) switch (_fun23022_ip) {
             case 0:
                 var2 = arg0;
@@ -325,7 +325,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.parseNDigits = var3;
-    var3 = function(arg0, arg1) { // Original name: parseNDigitsSigned, environment: var0
+    var3 = function arg0, arg1() {
         _fun23023: for (var _fun23023_ip = 0;;) switch (_fun23023_ip) {
             case 0:
                 var2 = arg0;
@@ -421,7 +421,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.parseNDigitsSigned = var3;
     var1.parseNumericPattern = var2;
-    var0 = function(arg0, arg1) { // Original name: parseTimezonePattern, environment: var0
+    var0 = function arg0, arg1() {
         _fun23024: for (var _fun23024_ip = 0;;) switch (_fun23024_ip) {
             case 0:
                 var3 = arg1;

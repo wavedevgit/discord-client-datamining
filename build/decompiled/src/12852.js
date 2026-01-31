@@ -13,10 +13,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: makePromiseBuffer, environment: var0
+    var0 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
-        var0 = function(arg0) { // Original name: remove, environment: var1
+        var0 = function arg0() {
             _fun98894: for (var _fun98894_ip = 0;;) switch (_fun98894_ip) {
                 case 0:
                     var3 = _closure2_slot1;
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var _closure2_slot1 = var2;
         var0 = {};
         var0.$ = var2;
-        var2 = function(arg0) { // Original name: add, environment: var1
+        var2 = function arg0() {
             _fun98895: for (var _fun98895_ip = 0;;) switch (_fun98895_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.add = var2;
-        var1 = function(arg0) { // Original name: drain, environment: var1
+        var1 = function arg0() {
             var1 = arg0;
             var _closure3_slot0 = var1;
             var3 = _closure1_slot0;

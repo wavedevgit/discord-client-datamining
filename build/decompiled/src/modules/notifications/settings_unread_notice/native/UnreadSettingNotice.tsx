@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings_unread_notice/native/UnreadSettingNotice.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UnreadSettingNoticeConnected, environment: var1
+    var1 = function arg0() {
         var8 = arg0;
         var _closure2_slot0 = var8;
         var0 = _closure1_slot7;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7.accessibilityRole = var13;
         var12 = var12.inlineTextWithIcon;
         var7.style = var12;
-        var10 = function() { // Original name: onPress, environment: var10
+        var10 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var0 = 10;

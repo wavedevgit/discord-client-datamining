@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: fit, environment: var1
+    var5 = function arg0() {
         _fun16838: for (var _fun16838_ip = 0;;) switch (_fun16838_ip) {
             case 0:
                 var1 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var5;
-    var4 = function(arg0, arg1, arg2) { // Original name: getPalette, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun16839: for (var _fun16839_ip = 0;;) switch (_fun16839_ip) {
             case 0:
                 var4 = arg0;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var4;
-    var0 = function() { // Original name: _dataUrlToFile, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var3 = function(arg0) { // Original name: dataUrlToBlob, environment: var1
+    var3 = function arg0() {
         _fun16843: for (var _fun16843_ip = 0;;) switch (_fun16843_ip) {
             case 0:
                 var2 = arg0;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var0 = function() { // Original name: _isPNGAnimated, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.fit = var5;
     var5 = 2000;
     var2.IMAGE_MAX_ZOOM = var5;
-    var5 = function(arg0, arg1) { // Original name: zoomFit, environment: var1
+    var5 = function arg0, arg1() {
         var3 = global;
         var4 = var3.Math;
         var2 = var4.min;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.zoomFit = var5;
-    var5 = function(arg0, arg1, arg2, arg3) { // Original name: zoomScale, environment: var1
+    var5 = function arg0, arg1, arg2, arg3() {
         _fun16852: for (var _fun16852_ip = 0;;) switch (_fun16852_ip) {
             case 0:
                 var3 = arg0;
@@ -779,7 +779,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.zoomScale = var5;
-    var5 = function(arg0) { // Original name: getRatio, environment: var1
+    var5 = function arg0() {
         _fun16853: for (var _fun16853_ip = 0;;) switch (_fun16853_ip) {
             case 0:
                 var3 = arg0;
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getRatio = var5;
-    var5 = function(arg0) { // Original name: getCoverRatio, environment: var1
+    var5 = function arg0() {
         _fun16854: for (var _fun16854_ip = 0;;) switch (_fun16854_ip) {
             case 0:
                 var0 = arg0;
@@ -853,7 +853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getCoverRatio = var5;
-    var5 = function(arg0) { // Original name: hasDimensions, environment: var1
+    var5 = function arg0() {
         _fun16855: for (var _fun16855_ip = 0;;) switch (_fun16855_ip) {
             case 0:
                 var0 = arg0;
@@ -888,7 +888,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasDimensions = var5;
-    var5 = function(arg0) { // Original name: makeCssUrlString, environment: var1
+    var5 = function arg0() {
         _fun16856: for (var _fun16856_ip = 0;;) switch (_fun16856_ip) {
             case 0:
                 var4 = arg0;
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getPaletteForAvatar = var4;
-    var4 = function(arg0) { // Original name: readFileAsBase64, environment: var1
+    var4 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;
@@ -1002,7 +1002,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.readFileAsBase64 = var4;
-    var4 = function(arg0) { // Original name: dataUriFileSize, environment: var1
+    var4 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = ';base64,';
@@ -1027,7 +1027,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.dataUriFileSize = var4;
-    var4 = function() { // Original name: dataUrlToFile, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -1039,7 +1039,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.dataUrlToFile = var4;
     var2.dataUrlToBlob = var3;
-    var3 = function() { // Original name: isPNGAnimated, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot9;
         var2 = var3.apply;
@@ -1050,7 +1050,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isPNGAnimated = var3;
-    var1 = function(arg0) { // Original name: preloadImage, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = global;

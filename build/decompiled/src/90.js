@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
-    var0 = function() { // Original name: getSourceCodeScriptURL, environment: var3
+    var0 = function() {
         _fun1513: for (var _fun1513_ip = 0;;) switch (_fun1513_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var1 = function(arg0) { // Original name: resolveAssetSource, environment: var3
+    var1 = function arg0() {
         _fun1514: for (var _fun1514_ip = 0;;) switch (_fun1514_ip) {
             case 0:
                 var0 = arg0;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure1_slot3 = var4;
             case 161:
                 var14 = _closure1_slot3;
-                var4 = function() { // Original name: getScriptURL, environment: var4
+                var4 = function() {
                     _fun1515: for (var _fun1515_ip = 0;;) switch (_fun1515_ip) {
                         case 0:
                             var1 = _closure1_slot4;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var4 = var4.pickScale;
     var1.pickScale = var4;
-    var4 = function(arg0) { // Original name: setCustomSourceTransformer, environment: var3
+    var4 = function arg0() {
         var1 = new Array(1);
         var0 = arg0;
         var1[0] = var0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.setCustomSourceTransformer = var4;
-    var3 = function(arg0) { // Original name: addCustomSourceTransformer, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot6;
         var1 = var2.push;
         var0 = arg0;

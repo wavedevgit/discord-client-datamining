@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var1 = function(arg0) { // Original name: ICYMIForumThreadRow, environment: var4
+    var1 = function arg0() {
         _fun104350: for (var _fun104350_ip = 0;;) switch (_fun104350_ip) {
             case 0:
                 var1 = arg0;
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/icymi/native/ICYMIForumThreadRow.tsx';
     var5 = var6.bind(var7)(var5);
-    var4 = function(arg0) { // Original name: ForumThreadRowWrapper, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var5 = var0.message;
         var4 = var0.threadChannel;

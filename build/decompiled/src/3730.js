@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.code = var4;
     var _closure1_slot7 = var1;
     var1 = function() { // Environment: var3
-        var0 = function(arg0, arg1) { // Original name: runOnRuntime, environment: var0
+        var0 = function arg0, arg1() {
             _fun33555: for (var _fun33555_ip = 0;;) switch (_fun33555_ip) {
                 case 0:
                     var0 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = var10[var4];
                                 var5 = var5.bind(var7)(var4);
                                 var4 = var5.makeShareableCloneRecursive;
-                                var0 = function() { // Original name: pnpm_runtimesTs4, environment: var0
+                                var0 = function() {
                                     var3 = _closure3_slot1;
                                     var2 = var3.apply;
                                     var1 = _closure4_slot0;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = var10[var4];
                                 var5 = var5.bind(var7)(var4);
                                 var4 = var5.makeShareableCloneOnUIRecursive;
-                                var0 = function() { // Original name: pnpm_runtimesTs3, environment: var0
+                                var0 = function() {
                                     var3 = _closure3_slot1;
                                     var2 = var3.apply;
                                     var1 = _closure4_slot0;
@@ -228,7 +228,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)();
-    var3 = function(arg0, arg1) { // Original name: createWorkletRuntime, environment: var3
+    var3 = function arg0, arg1() {
         var7 = arg1;
         var _closure2_slot0 = var7;
         var1 = global;
@@ -246,7 +246,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var11[var1];
         var4 = var10.bind(var9)(var1);
         var1 = var4.makeShareableCloneRecursive;
-        var0 = function() { // Original name: pnpm_runtimesTs1, environment: var0
+        var0 = function() {
             _fun33561: for (var _fun33561_ip = 0;;) switch (_fun33561_ip) {
                 case 0:
                     var3 = _closure1_slot1;

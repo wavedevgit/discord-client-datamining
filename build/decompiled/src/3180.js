@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var2 = function() { // Original name: emptyFunction, environment: var0
+    var2 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot2 = var2;
-    var1 = function() { // Original name: emptyFunctionWithReset, environment: var0
+    var1 = function() {
         var0 = undefined;
         return var0;
     };
     var _closure1_slot3 = var1;
     var1.resetWarningCache = var2;
     var1 = function() { // Environment: var0
-        var2 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: shim, environment: var0
+        var2 = function arg0, arg1, arg2, arg3, arg4, arg5() {
             _fun27800: for (var _fun27800_ip = 0;;) switch (_fun27800_ip) {
                 case 0:
                     var2 = _closure1_slot0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var _closure2_slot0 = var2;
-        var1 = function() { // Original name: getShim, environment: var0
+        var1 = function() {
             var0 = _closure2_slot0;
             return var0;
         };

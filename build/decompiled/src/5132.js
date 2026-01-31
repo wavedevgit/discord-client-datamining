@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.AutoScroll = var0;
     var1 = function() { // Environment: var1
-        var0 = function() { // Original name: AutoScroll, environment: var1
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var _closure4_slot2 = var3;
                         var _closure4_slot3 = var2;
                         var _closure4_slot4 = var1;
-                        var1 = function() { // Original name: animationLoop, environment: var0
+                        var1 = function() {
                             var0 = global;
                             var2 = var0.requestAnimationFrame;
                             var0 = undefined;

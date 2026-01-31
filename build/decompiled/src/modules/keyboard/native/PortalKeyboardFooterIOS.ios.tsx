@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/keyboard/native/PortalKeyboardFooterIOS.ios.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PortalKeyboardFooterIOS, environment: var1
+    var1 = function arg0() {
         _fun68234: for (var _fun68234_ip = 0;;) switch (_fun68234_ip) {
             case 0:
                 var0 = arg0;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7[var0];
                 var10 = var5.bind(var3)(var8);
                 var9 = var10.useAnimatedStyle;
-                var8 = function() { // Original name: S, environment: var4
+                var8 = function() {
                     _fun68235: for (var _fun68235_ip = 0;;) switch (_fun68235_ip) {
                         case 0:
                             var1 = _closure1_slot0;

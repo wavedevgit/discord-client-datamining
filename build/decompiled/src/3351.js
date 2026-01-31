@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var3.bind(var0)(var1);
             var1 = var1.bind(var0)();
             var _closure1_slot5 = var1;
-            var3 = function(arg0, arg1, arg2, arg3) { // Original name: defineProperty, environment: var2
+            var3 = function arg0, arg1, arg2, arg3() {
                 _fun28927: for (var _fun28927_ip = 0;;) switch (_fun28927_ip) {
                     case 0:
                         var5 = arg0;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot6 = var3;
-            var2 = function(arg0, arg1) { // Original name: defineProperties, environment: var2
+            var2 = function arg0, arg1() {
                 _fun28928: for (var _fun28928_ip = 0;;) switch (_fun28928_ip) {
                     case 0:
                         var8 = arg0;

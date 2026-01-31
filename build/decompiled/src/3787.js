@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = require;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: isWorkletEventHandler, environment: var1
+    var0 = function arg0() {
         _fun34008: for (var _fun34008_ip = 0;;) switch (_fun34008_ip) {
             case 0:
                 var2 = arg0;
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0, arg1) { // Original name: executeForEachEventHandler, environment: var1
+    var0 = function arg0, arg1() {
         _fun34009: for (var _fun34009_ip = 0;;) switch (_fun34009_ip) {
             case 0:
                 var8 = arg0;
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function(arg0, arg1) { // Original name: NativeEventsManager, environment: var4
+        var2 = function arg0, arg1() {
             var4 = this;
             var3 = _closure1_slot2;
             var2 = _closure2_slot0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var1 = 'attachEvents';
         var0.key = var1;
-        var1 = function() { // Original name: attachEvents, environment: var4
+        var1 = function() {
             var5 = this;
             var _closure3_slot0 = var5;
             var3 = _closure1_slot9;
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'detachEvents';
         var0.key = var5;
-        var5 = function() { // Original name: detachEvents, environment: var4
+        var5 = function() {
             var5 = this;
             var _closure3_slot0 = var5;
             var3 = _closure1_slot9;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'updateEvents';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: updateEvents, environment: var4
+        var5 = function arg0() {
             _fun34016: for (var _fun34016_ip = 0;;) switch (_fun34016_ip) {
                 case 0:
                     var6 = arg0;
@@ -351,7 +351,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'getEventViewTag';
         var0.key = var5;
-        var4 = function() { // Original name: getEventViewTag, environment: var4
+        var4 = function() {
             _fun34020: for (var _fun34020_ip = 0;;) switch (_fun34020_ip) {
                 case 0:
                     var9 = this;

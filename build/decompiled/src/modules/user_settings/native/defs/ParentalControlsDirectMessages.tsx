@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var4.bind(var0)(var1);
     var3 = var6.createToggle;
     var1 = {};
-    var10 = function() { // Original name: title, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.title = var10;
-    var10 = function() { // Original name: useDescription, environment: var8
+    var10 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 5;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useDescription = var10;
     var9 = var9.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS;
     var1.parent = var9;
-    var9 = function() { // Original name: useValue, environment: var8
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.useValue = var9;
-    var8 = function(arg0) { // Original name: onAllowDirectMessagesFromServerMembersValueChange, environment: var8
+    var8 = function arg0() {
         _fun88454: for (var _fun88454_ip = 0;;) switch (_fun88454_ip) {
             case 0:
                 var2 = _closure1_slot2;

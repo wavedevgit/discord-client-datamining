@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: setIsOnStartStageScreen, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var2.setIsOnStartStageScreen = var3;
-    var1 = function(arg0) { // Original name: useUpdateIsOnStartStageScreenEffect, environment: var1
+    var1 = function arg0() {
         _fun51764: for (var _fun51764_ip = 0;;) switch (_fun51764_ip) {
             case 0:
                 var3 = arg0;

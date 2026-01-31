@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.inputType = var7;
     var6 = var6.BUILT_IN;
     var3.applicationId = var6;
-    var7 = function() { // Original name: get untranslatedDescription, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 5;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var7 = function() { // Original name: get displayDescription, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 5;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var6 = function(arg0) { // Original name: predicate, environment: var1
+    var6 = function arg0() {
         _fun61251: for (var _fun61251_ip = 0;;) switch (_fun61251_ip) {
             case 0:
                 var0 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3.predicate = var6;
-    var1 = function(arg0, arg1) { // Original name: execute, environment: var1
+    var1 = function arg0, arg1() {
         _fun61252: for (var _fun61252_ip = 0;;) switch (_fun61252_ip) {
             case 0:
                 var0 = arg1;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4["ETE/oC"];
                 var4 = var5.bind(var6)(var4);
                 var0.cancelText = var4;
-                var3 = function() { // Original name: onConfirm, environment: var3
+                var3 = function() {
                     _fun61253: for (var _fun61253_ip = 0;;) switch (_fun61253_ip) {
                         case 0: // try_start_0
                             var2 = _closure1_slot1;

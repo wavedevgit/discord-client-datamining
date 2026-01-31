@@ -15,7 +15,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.code = var3;
     var _closure1_slot0 = var0;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: cheapWorkletShallowEqual, environment: var0
+        var0 = function arg0, arg1() {
             _fun47178: for (var _fun47178_ip = 0;;) switch (_fun47178_ip) {
                 case 0:
                     var8 = arg0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var5;
     var _closure1_slot1 = var4;
     var1 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: cheapWorkletArrayShallowEqual, environment: var0
+        var0 = function arg0, arg1() {
             _fun47180: for (var _fun47180_ip = 0;;) switch (_fun47180_ip) {
                 case 0:
                     var3 = arg0;

@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/create_guild/native/components/CreateGuildContainer.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CreateGuildContainer, environment: var1
+    var1 = function arg0() {
         _fun71455: for (var _fun71455_ip = 0;;) switch (_fun71455_ip) {
             case 0:
                 var4 = arg0;

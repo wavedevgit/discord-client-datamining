@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/native/components/StageViewWithPrompts.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: StageViewWithPrompts, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var14 = var0.title;
         var10 = var0.body;

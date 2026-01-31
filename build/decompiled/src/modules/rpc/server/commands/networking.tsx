@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var3.GET_NETWORKING_CONFIG;
     var6 = {};
     var6.scope = var8;
-    var10 = function() { // Original name: handler, environment: var7
+    var10 = function() {
         var11 = global;
         var3 = var11.Promise;
         var2 = var3.all;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var3.NETWORKING_SYSTEM_METRICS;
     var6 = {};
     var6.scope = var8;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         var1 = arg0;
         var0 = var1.socket;
         var4 = var1.args;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var3.NETWORKING_PEER_METRICS;
     var6 = {};
     var6.scope = var8;
-    var10 = function(arg0) { // Original name: handler, environment: var7
+    var10 = function arg0() {
         var1 = arg0;
         var0 = var1.socket;
         var4 = var1.args;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.NETWORKING_CREATE_TOKEN;
     var3 = {};
     var3.scope = var8;
-    var7 = function() { // Original name: handler, environment: var7
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
         var0 = 2;

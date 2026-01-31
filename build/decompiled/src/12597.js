@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun96795
             }
         case 50:
-            var2 = function(arg0, arg1) { // Original name: getOwnPropertyDescriptor, environment: var1
+            var2 = function arg0, arg1() {
                 _fun96796: for (var _fun96796_ip = 0;;) switch (_fun96796_ip) {
                     case 0:
                         var8 = arg0;

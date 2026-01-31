@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun30977: for (var _fun30977_ip = 0;;) switch (_fun30977_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+    var0 = function arg0, arg1() {
         _fun30980: for (var _fun30980_ip = 0;;) switch (_fun30980_ip) {
             case 0:
                 var2 = arg0;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+    var0 = function arg0, arg1() {
         _fun30982: for (var _fun30982_ip = 0;;) switch (_fun30982_ip) {
             case 0:
                 var3 = arg0;
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.DeviceSettingsStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: GameConsoleStore, environment: var5
+        var3 = function() {
             _fun30984: for (var _fun30984_ip = 0;;) switch (_fun30984_ip) {
                 case 0:
                     var3 = this;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             _fun30985: for (var _fun30985_ip = 0;;) switch (_fun30985_ip) {
                 case 0:
                     var0 = arg0;
@@ -436,7 +436,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getUserAgnosticState';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = {};
             var1 = _closure1_slot11;
             var0.lastSelectedDeviceByPlatform = var1;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDevicesForPlatform';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun30987: for (var _fun30987_ip = 0;;) switch (_fun30987_ip) {
                 case 0:
                     var2 = _closure1_slot10;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getLastSelectedDeviceByPlatform';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var1 = _closure1_slot11;
             var0 = arg0;
             var0 = var1[var0];
@@ -480,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getDevice';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun30989: for (var _fun30989_ip = 0;;) switch (_fun30989_ip) {
                 case 0:
                     var1 = _closure1_slot10;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getFetchingDevices';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = var2.has;
             var0 = arg0;
@@ -517,7 +517,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPendingDeviceCommands';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot9;
             return var0;
         };
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getRemoteSessionId';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var0 = _closure1_slot7;
             return var0;
         };
@@ -535,7 +535,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getAwaitingRemoteSessionInfo';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = _closure1_slot8;
             return var0;
         };
@@ -552,7 +552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var11 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function(arg0) { // Original name: handleRemoteSessionConnect, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var0 = var0.sessionId;
         _closure1_slot7 = var0;
@@ -562,7 +562,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.REMOTE_SESSION_CONNECT = var7;
-    var7 = function() { // Original name: handleRemoteSessionDisconnect, environment: var3
+    var7 = function() {
         var0 = null;
         _closure1_slot7 = var0;
         _closure1_slot8 = var0;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.REMOTE_SESSION_DISCONNECT = var7;
-    var7 = function(arg0) { // Original name: handleWaitForRemoteSession, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var5 = var0.sessionType;
         var4 = var0.nonce;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.WAIT_FOR_REMOTE_SESSION = var7;
-    var7 = function(arg0) { // Original name: handleFetchDevicesStart, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.platform;
         var1 = _closure1_slot12;
@@ -603,7 +603,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_CONSOLE_FETCH_DEVICES_START = var7;
-    var7 = function(arg0) { // Original name: handleFetchDevicesSuccess, environment: var3
+    var7 = function arg0() {
         _fun30998: for (var _fun30998_ip = 0;;) switch (_fun30998_ip) {
             case 0:
                 var0 = arg0;
@@ -653,7 +653,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.GAME_CONSOLE_FETCH_DEVICES_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleFetchDevicesFail, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var2 = var0.platform;
         var1 = _closure1_slot12;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.GAME_CONSOLE_FETCH_DEVICES_FAIL = var7;
-    var3 = function(arg0) { // Original name: handleSelectDevice, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.platform;
         var1 = var0.deviceId;

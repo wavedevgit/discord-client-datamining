@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: isNonEmptyString, environment: var3
+    var0 = function arg0() {
         _fun13147: for (var _fun13147_ip = 0;;) switch (_fun13147_ip) {
             case 0:
                 var1 = arg0;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: updateNativeReporter, environment: var3
+    var0 = function() {
         _fun13148: for (var _fun13148_ip = 0;;) switch (_fun13148_ip) {
             case 0:
                 var3 = arguments[0];
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.initSentry;
     var1 = var1.bind(var6)();
     var1 = {};
-    var6 = function(arg0, arg1, arg2, arg3) { // Original name: setUser, environment: var3
+    var6 = function arg0, arg1, arg2, arg3() {
         var2 = {};
         var0 = arg0;
         var2.id = var0;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setUser = var6;
-    var6 = function() { // Original name: clearUser, environment: var3
+    var6 = function() {
         var3 = _closure1_slot2;
         var2 = _closure1_slot3;
         var0 = 3;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.clearUser = var6;
-    var6 = function(arg0) { // Original name: setTags, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot2;
         var1 = _closure1_slot3;
         var0 = 3;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setTags = var6;
-    var6 = function(arg0) { // Original name: setExtra, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot2;
         var1 = _closure1_slot3;
         var0 = 3;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.setExtra = var6;
-    var6 = function(arg0, arg1) { // Original name: captureException, environment: var3
+    var6 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var5 = _closure1_slot0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.captureException = var6;
-    var6 = function(arg0, arg1) { // Original name: captureCrash, environment: var3
+    var6 = function arg0, arg1() {
         _fun13155: for (var _fun13155_ip = 0;;) switch (_fun13155_ip) {
             case 0:
                 var1 = arg0;
@@ -378,7 +378,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.captureCrash = var6;
-    var6 = function(arg0, arg1) { // Original name: captureMessage, environment: var3
+    var6 = function arg0, arg1() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var5 = _closure1_slot0;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.captureMessage = var6;
-    var6 = function(arg0) { // Original name: addBreadcrumb, environment: var3
+    var6 = function arg0() {
         var2 = arg0;
         var4 = _closure1_slot5;
         var3 = var4.verbose;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.addBreadcrumb = var6;
-    var6 = function(arg0) { // Original name: profiledRootComponent, environment: var3
+    var6 = function arg0() {
         _fun13161: for (var _fun13161_ip = 0;;) switch (_fun13161_ip) {
             case 0:
                 var4 = arg0;
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.profiledRootComponent = var6;
-    var6 = function() { // Original name: crash, environment: var3
+    var6 = function() {
         var0 = _closure1_slot4;
         var1 = var0.CrashReportingManager;
         var0 = var1.crash;
@@ -520,7 +520,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.crash = var6;
-    var6 = function(arg0) { // Original name: markCrashHandled, environment: var3
+    var6 = function arg0() {
         _fun13163: for (var _fun13163_ip = 0;;) switch (_fun13163_ip) {
             case 0:
                 var1 = arg0;
@@ -560,7 +560,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.markCrashHandled = var6;
-    var3 = function() { // Original name: getLastCrashReport, environment: var3
+    var3 = function() {
         var0 = global;
         var2 = var0.Promise;
         var0 = var2.prototype;

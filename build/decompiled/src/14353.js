@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = function(arg0, arg1, arg2) { // Original name: Compiler, environment: var0
+    var5 = function arg0, arg1, arg2() {
         var1 = this;
         var0 = arg0;
         var1.locales = var0;
@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = undefined;
         return var0;
     };
-    var4 = function(arg0) { // Original name: StringFormat, environment: var0
+    var4 = function arg0() {
         var1 = arg0;
         var0 = this;
         var0.id = var1;
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot0 = var4;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: PluralFormat, environment: var0
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = this;
         var0 = arg0;
         var1.id = var0;
@@ -35,7 +35,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot1 = var3;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: PluralOffsetString, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         var1 = this;
         var0 = arg0;
         var1.id = var0;
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var2;
-    var1 = function(arg0, arg1) { // Original name: SelectFormat, environment: var0
+    var1 = function arg0, arg1() {
         var1 = this;
         var0 = arg0;
         var1.id = var0;

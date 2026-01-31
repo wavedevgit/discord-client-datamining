@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'VERIFICATIONS';
     var4[var7] = var3;
     var3 = {};
-    var7 = function() { // Original name: afk_channel_id, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.afk_channel_id = var7;
-    var7 = function() { // Original name: public_updates_channel_id, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.public_updates_channel_id = var7;
-    var7 = function() { // Original name: safety_alerts_channel_id, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.safety_alerts_channel_id = var7;
-    var7 = function() { // Original name: system_channel_id, environment: var1
+    var7 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot1;
         var0 = 0;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MAX_KEYWORD_LENGTH = var5;
     var2.GuildSettingsRoleEditSections = var4;
     var2.ERROR_KEY_TO_LABEL_FUNC = var3;
-    var1 = function(arg0) { // Original name: getSettingsErrorMessage, environment: var1
+    var1 = function arg0() {
         _fun115669: for (var _fun115669_ip = 0;;) switch (_fun115669_ip) {
             case 0:
                 var3 = arg0;

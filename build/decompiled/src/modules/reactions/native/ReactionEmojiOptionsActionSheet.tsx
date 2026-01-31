@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reactions/native/ReactionEmojiOptionsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ReactionEmojiOptionsActionSheet, environment: var1
+    var1 = function arg0() {
         _fun73317: for (var _fun73317_ip = 0;;) switch (_fun73317_ip) {
             case 0:
                 var0 = arg0;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun73323
                             }
                         case 28:
-                            var4 = function() { // Original name: content, environment: var5
+                            var4 = function() {
                                 _fun73324: for (var _fun73324_ip = 0;;) switch (_fun73324_ip) {
                                     case 0:
                                         var3 = _closure1_slot9;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = {};
                             var10 = 'EMOJI_FAVORITED';
                             var6.key = var10;
-                            var10 = function() { // Original name: icon, environment: var5
+                            var10 = function() {
                                 var2 = _closure2_slot8;
                                 var1 = undefined;
                                 var0 = true;
@@ -509,7 +509,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = {};
                             var6 = 'EMOJI_UNFAVORITED';
                             var1.key = var6;
-                            var5 = function() { // Original name: icon, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot8;
                                 var1 = undefined;
                                 var0 = false;

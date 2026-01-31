@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
-    var5 = function(arg0) { // Original name: getApplicationImage, environment: var4
+    var5 = function arg0() {
         _fun62219: for (var _fun62219_ip = 0;;) switch (_fun62219_ip) {
             case 0:
                 var0 = arg0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var5;
-    var3 = function(arg0, arg1) { // Original name: useImageForActivity, environment: var4
+    var3 = function arg0, arg1() {
         _fun62220: for (var _fun62220_ip = 0;;) switch (_fun62220_ip) {
             case 0:
                 var10 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var1 = function(arg0, arg1) { // Original name: useRichImageForActivity, environment: var4
+    var1 = function arg0, arg1() {
         _fun62221: for (var _fun62221_ip = 0;;) switch (_fun62221_ip) {
             case 0:
                 var8 = arg0;
@@ -538,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/content_inventory/ContentInventoryActivityImageUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.getApplicationImage = var5;
-    var4 = function(arg0) { // Original name: useImageForContentEntry, environment: var4
+    var4 = function arg0() {
         _fun62222: for (var _fun62222_ip = 0;;) switch (_fun62222_ip) {
             case 0:
                 var0 = arg0;

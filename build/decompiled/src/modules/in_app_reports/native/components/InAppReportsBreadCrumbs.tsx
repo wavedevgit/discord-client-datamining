@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsBreadCrumbs.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Breadcrumbs, environment: var1
+    var1 = function arg0() {
         _fun92540: for (var _fun92540_ip = 0;;) switch (_fun92540_ip) {
             case 0:
                 var5 = arg0;

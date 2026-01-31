@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: navigateToChannelDetailsScreen, environment: var1
+    var0 = function arg0, arg1, arg2() {
         var3 = arg0;
         var2 = var3.navigate;
         var1 = {};
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot28 = var0;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'search';
     var3.SEARCH = var7;
     var _closure1_slot18 = var3;
-    var3 = function(arg0) { // Original name: MuteButton, environment: var1
+    var3 = function arg0() {
         _fun106988: for (var _fun106988_ip = 0;;) switch (_fun106988_ip) {
             case 0:
                 var0 = arg0;
@@ -294,7 +294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var3;
-    var3 = function(arg0) { // Original name: SearchButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var5 = var0.channelId;
         var _closure2_slot0 = var5;
@@ -397,7 +397,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var3;
-    var3 = function(arg0) { // Original name: SettingsButton, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.channel;
         var _closure2_slot0 = var8;
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var10[var0];
         var11 = var16.bind(var3)(var5);
         var5 = var11.useAnimatedStyle;
-        var2 = function() { // Original name: S, environment: var2
+        var2 = function() {
             _fun106996: for (var _fun106996_ip = 0;;) switch (_fun106996_ip) {
                 case 0:
                     var0 = {};
@@ -595,7 +595,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var17 = var13;
                     var3 = var20[var14](var19, var18, var17, var16, var15);
                     var4.easing = var3;
-                    var3 = function(arg0) { // Original name: n, environment: var3
+                    var3 = function arg0() {
                         _fun106997: for (var _fun106997_ip = 0;;) switch (_fun106997_ip) {
                             case 0:
                                 var0 = arg0;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'function ChannelDetailsNavigationBarTsx4(finished){const{runOnJS,cleanUp}=this.__closure;if(finished)runOnJS(cleanUp)();}';
     var3.code = var7;
     var _closure1_slot26 = var3;
-    var3 = function(arg0) { // Original name: NavigationHeader, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var12 = var0.channel;
         var _closure2_slot0 = var12;
@@ -765,7 +765,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var14[var0];
         var6 = var11.bind(var3)(var2);
         var4 = var6.useAnimatedStyle;
-        var2 = function() { // Original name: S, environment: var1
+        var2 = function() {
             _fun107000: for (var _fun107000_ip = 0;;) switch (_fun107000_ip) {
                 case 0:
                     var0 = {};
@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var12[var3];
                     var3 = var10.bind(var11)(var3);
                     var15 = var3.timingFast;
-                    var3 = function(arg0) { // Original name: n, environment: var3
+                    var3 = function arg0() {
                         _fun107001: for (var _fun107001_ip = 0;;) switch (_fun107001_ip) {
                             case 0:
                                 var0 = arg0;

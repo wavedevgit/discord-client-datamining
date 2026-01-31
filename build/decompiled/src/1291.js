@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: serializeAst, environment: var1
+    var0 = function arg0, arg1() {
         _fun13976: for (var _fun13976_ip = 0;;) switch (_fun13976_ip) {
             case 0:
                 var27 = arg1;
@@ -405,7 +405,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1) { // Original name: serializeAstTag, environment: var1
+    var0 = function arg0, arg1() {
         _fun13977: for (var _fun13977_ip = 0;;) switch (_fun13977_ip) {
             case 0:
                 var3 = arg0;
@@ -577,7 +577,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.InternalIntlMessage = var0;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1) { // Original name: InternalIntlMessage, environment: var1
+        var2 = function arg0, arg1() {
             _fun13979: for (var _fun13979_ip = 0;;) switch (_fun13979_ip) {
                 case 0:
                     var4 = arg0;
@@ -616,7 +616,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var4 = 'reserialize';
         var0.key = var4;
-        var1 = function() { // Original name: reserialize, environment: var1
+        var1 = function() {
             _fun13980: for (var _fun13980_ip = 0;;) switch (_fun13980_ip) {
                 case 0:
                     var0 = this;

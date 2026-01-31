@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun107430: for (var _fun107430_ip = 0;;) switch (_fun107430_ip) {
             case 0:
                 var2 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot0 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun107432: for (var _fun107432_ip = 0;;) switch (_fun107432_ip) {
             case 0:
                 var3 = arg0;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot1 = var0;
-    var0 = function(arg0, arg1) { // Original name: sortGroup, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/queries/ArraySearch.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: queryData, environment: var1
+    var1 = function arg0, arg1() {
         _fun107435: for (var _fun107435_ip = 0;;) switch (_fun107435_ip) {
             case 0:
                 var2 = arg1;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 42:
                 var6 = new Array(0);
             case 46:
-                var4 = function(arg0, arg1) { // Original name: applyFilters, environment: var5
+                var4 = function arg0, arg1() {
                     var2 = arg0;
                     var1 = arg1;
                     var _closure3_slot0 = var1;
@@ -391,7 +391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 120:
                 var6 = new Array(0);
             case 124:
-                var4 = function(arg0, arg1, arg2) { // Original name: applyBucketing, environment: var5
+                var4 = function arg0, arg1, arg2() {
                     _fun107441: for (var _fun107441_ip = 0;;) switch (_fun107441_ip) {
                         case 0:
                             var9 = arg0;
@@ -487,7 +487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 150:
                 var6 = new Array(0);
             case 154:
-                var5 = function(arg0, arg1) { // Original name: applyBucketingSingleIteration, environment: var5
+                var5 = function arg0, arg1() {
                     _fun107439: for (var _fun107439_ip = 0;;) switch (_fun107439_ip) {
                         case 0:
                             var6 = arg1;

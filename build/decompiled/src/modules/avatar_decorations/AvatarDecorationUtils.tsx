@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var4.bind(var7)(var2, var0, var3);
-    var4 = function(arg0) { // Original name: parseAvatarDecorationData, environment: var1
+    var4 = function arg0() {
         _fun17826: for (var _fun17826_ip = 0;;) switch (_fun17826_ip) {
             case 0:
                 var2 = arg0;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot2 = var4;
-    var3 = function(arg0) { // Original name: isAvatarDecorationExpired, environment: var1
+    var3 = function arg0() {
         _fun17827: for (var _fun17827_ip = 0;;) switch (_fun17827_ip) {
             case 0:
                 var1 = arg0;

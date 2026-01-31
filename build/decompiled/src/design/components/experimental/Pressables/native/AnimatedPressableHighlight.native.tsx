@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun44427
             }
         case 191:
-            var1 = function(arg0) { // Original name: AnimatedPressableHighlightiOS, environment: var3
+            var1 = function arg0() {
                 var2 = arg0;
                 var5 = var2.children;
                 var0 = null;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             _fun44427_ip = 203;
             continue _fun44427;
         case 198:
-            var1 = function(arg0) { // Original name: AnimatedPressableHighlightAndroid, environment: var3
+            var1 = function arg0() {
                 _fun44428: for (var _fun44428_ip = 0;;) switch (_fun44428_ip) {
                     case 0:
                         var3 = arg0;

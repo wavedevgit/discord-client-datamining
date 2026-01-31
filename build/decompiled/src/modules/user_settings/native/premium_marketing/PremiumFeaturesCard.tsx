@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.BUY;
     var3.objectType = var6;
     var _closure1_slot20 = var3;
-    var3 = function(arg0) { // Original name: PriceText, environment: var1
+    var3 = function arg0() {
         _fun61539: for (var _fun61539_ip = 0;;) switch (_fun61539_ip) {
             case 0:
                 var1 = arg0;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/premium_marketing/PremiumFeaturesCard.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun61541: for (var _fun61541_ip = 0;;) switch (_fun61541_ip) {
             case 0:
                 var0 = arg0;
@@ -1294,7 +1294,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = !var24;
                 var15.shiny = var24;
                 var15.disabled = var23;
-                var22 = function() { // Original name: onPress, environment: var22
+                var22 = function() {
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 37;

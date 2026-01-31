@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/shared_components/BackIconWithBadge.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() { // Original name: BackIconWithBadgeOnSide, environment: var1
+    var1 = function() {
         _fun103067: for (var _fun103067_ip = 0;;) switch (_fun103067_ip) {
             case 0:
                 var0 = _closure1_slot9;

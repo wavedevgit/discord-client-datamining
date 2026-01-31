@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.Steps = var3;
     var3 = 'Onboarding';
     var2.CONTACT_SYNC_ONBOARDING_LOCATION = var3;
-    var3 = function(arg0) { // Original name: trackFlowStart, environment: var1
+    var3 = function arg0() {
         _fun81469: for (var _fun81469_ip = 0;;) switch (_fun81469_ip) {
             case 0:
                 var0 = arg0;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackFlowStart = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: trackFlowStep, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun81471: for (var _fun81471_ip = 0;;) switch (_fun81471_ip) {
             case 0:
                 var2 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackFlowStep = var3;
-    var1 = function(arg0, arg1) { // Original name: trackFlowEnd, environment: var1
+    var1 = function arg0, arg1() {
         _fun81472: for (var _fun81472_ip = 0;;) switch (_fun81472_ip) {
             case 0:
                 var9 = arg1;

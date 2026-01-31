@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = 25;
     var2.MAX_MESSAGES_ALLOWED_FOR_GREETING = var3;
-    var1 = function(arg0) { // Original name: useShowConvoStarterInDM, environment: var1
+    var1 = function arg0() {
         _fun89611: for (var _fun89611_ip = 0;;) switch (_fun89611_ip) {
             case 0:
                 var6 = arg0;

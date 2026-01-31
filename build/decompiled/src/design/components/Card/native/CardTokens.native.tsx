@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var8;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var9;
-    var10 = function(arg0, arg1) { // Original name: createCardBackgroundToken, environment: var1
+    var10 = function arg0, arg1() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var1 = arg1;

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function() { // Original name: _nonIterableSpread, environment: var1
+    var1 = function() {
         var0 = global;
         var2 = var0.TypeError;
         var0 = var2.prototype;

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var9 = var9.GAME_UPDATE;
     var1.getQueryId = var9;
-    var9 = function(arg0, arg1) { // Original name: get, environment: var8
+    var9 = function arg0, arg1() {
         _fun117995: for (var _fun117995_ip = 0;;) switch (_fun117995_ip) {
             case 0:
                 var4 = arg1;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.get = var9;
-    var9 = function(arg0, arg1) { // Original name: load, environment: var8
+    var9 = function arg0, arg1() {
         _fun117996: for (var _fun117996_ip = 0;;) switch (_fun117996_ip) {
             case 0:
                 var4 = arg0;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.load = var9;
-    var9 = function(arg0, arg1) { // Original name: getIsLoading, environment: var8
+    var9 = function arg0, arg1() {
         _fun117997: for (var _fun117997_ip = 0;;) switch (_fun117997_ip) {
             case 0:
                 var3 = arg1;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.getIsLoading = var9;
-    var8 = function(arg0, arg1) { // Original name: getError, environment: var8
+    var8 = function arg0, arg1() {
         _fun117998: for (var _fun117998_ip = 0;;) switch (_fun117998_ip) {
             case 0:
                 var3 = arg1;

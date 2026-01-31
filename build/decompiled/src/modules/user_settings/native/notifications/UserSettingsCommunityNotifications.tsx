@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/notifications/UserSettingsCommunityNotifications.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsCommunityNotifications, environment: var1
+    var1 = function() {
         _fun85290: for (var _fun85290_ip = 0;;) switch (_fun85290_ip) {
             case 0:
                 var0 = _closure1_slot6;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var12.disableRaidAlertNag;
                     var12 = !var12;
                     var5.value = var12;
-                    var12 = function() { // Original name: onValueChange, environment: var9
+                    var12 = function() {
                         var2 = _closure1_slot0;
                         var6 = _closure1_slot2;
                         var1 = 11;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var10.disableRaidAlertPush;
                     var10 = !var10;
                     var6.value = var10;
-                    var9 = function() { // Original name: onValueChange, environment: var9
+                    var9 = function() {
                         var2 = _closure1_slot0;
                         var6 = _closure1_slot2;
                         var1 = 11;

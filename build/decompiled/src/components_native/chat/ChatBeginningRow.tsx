@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ThreadOwner, environment: var1
+    var0 = function arg0() {
         _fun90680: for (var _fun90680_ip = 0;;) switch (_fun90680_ip) {
             case 0:
                 var0 = arg0;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot55 = var0;
-    var0 = function(arg0) { // Original name: DMSpamButton, environment: var1
+    var0 = function arg0() {
         _fun90684: for (var _fun90684_ip = 0;;) switch (_fun90684_ip) {
             case 0:
                 var2 = arg0;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.HHZmDn;
                 var8 = var11.bind(var12)(var8);
                 var5.text = var8;
-                var8 = function() { // Original name: onPress, environment: var9
+                var8 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 70;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot56 = var0;
-    var0 = function(arg0) { // Original name: ManageAppButton, environment: var1
+    var0 = function arg0() {
         _fun90688: for (var _fun90688_ip = 0;;) switch (_fun90688_ip) {
             case 0:
                 var2 = arg0;
@@ -531,7 +531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9["5S3sQF"];
                 var9 = var10.bind(var11)(var9);
                 var5.text = var9;
-                var9 = function() { // Original name: onPress, environment: var8
+                var9 = function() {
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot2;
                     var0 = 73;
@@ -547,7 +547,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var6 = _closure2_slot0;
                     var2.application = var6;
-                    var11 = function() { // Original name: onDelete, environment: var11
+                    var11 = function() {
                         _fun90691: for (var _fun90691_ip = 0;;) switch (_fun90691_ip) {
                             case 0:
                                 var2 = _closure1_slot1;
@@ -610,7 +610,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5.onPress = var9;
-                var8 = function() { // Original name: renderIcon, environment: var8
+                var8 = function() {
                     var3 = _closure1_slot41;
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot57 = var0;
-    var0 = function(arg0) { // Original name: MuteAppButton, environment: var1
+    var0 = function arg0() {
         _fun90693: for (var _fun90693_ip = 0;;) switch (_fun90693_ip) {
             case 0:
                 var0 = arg0;
@@ -738,7 +738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var11.bind(var12)(var10);
             case 300:
                 var5.text = var9;
-                var9 = function() { // Original name: onPress, environment: var8
+                var9 = function() {
                     _fun90695: for (var _fun90695_ip = 0;;) switch (_fun90695_ip) {
                         case 0:
                             var3 = _closure2_slot2;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3["/6kulz"];
                             var3 = var4.bind(var5)(var3);
                             var0.content = var3;
-                            var3 = function() { // Original name: icon, environment: var3
+                            var3 = function() {
                                 var3 = _closure1_slot41;
                                 var2 = _closure1_slot7;
                                 var1 = {};
@@ -848,7 +848,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var5.onPress = var9;
-                var8 = function() { // Original name: renderIcon, environment: var8
+                var8 = function() {
                     _fun90697: for (var _fun90697_ip = 0;;) switch (_fun90697_ip) {
                         case 0:
                             var3 = _closure1_slot41;
@@ -1264,7 +1264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.appDMButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot44 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowIcon, environment: var1
+    var3 = function arg0() {
         _fun90698: for (var _fun90698_ip = 0;;) switch (_fun90698_ip) {
             case 0:
                 var2 = arg0;
@@ -1398,7 +1398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot45 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowHeader, environment: var1
+    var3 = function arg0() {
         _fun90699: for (var _fun90699_ip = 0;;) switch (_fun90699_ip) {
             case 0:
                 var0 = arg0;
@@ -1531,7 +1531,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot46 = var3;
-    var3 = function(arg0) { // Original name: LinkManageButtons, environment: var1
+    var3 = function arg0() {
         _fun90701: for (var _fun90701_ip = 0;;) switch (_fun90701_ip) {
             case 0:
                 var0 = arg0;
@@ -1584,7 +1584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var11 = 'button';
                 var4.accessibilityRole = var11;
-                var11 = function() { // Original name: onPress, environment: var9
+                var11 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
                     var0 = 37;
@@ -1671,7 +1671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var11 = 'button';
                 var6.accessibilityRole = var11;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 40;
@@ -1746,7 +1746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot47 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowThread, environment: var1
+    var3 = function arg0() {
         _fun90704: for (var _fun90704_ip = 0;;) switch (_fun90704_ip) {
             case 0:
                 var0 = arg0;
@@ -1893,7 +1893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.t;
                 var16 = var15.imPXd5;
                 var15 = {};
-                var19 = function(arg0, arg1) { // Original name: usernameHook, environment: var19
+                var19 = function arg0, arg1() {
                     var4 = _closure1_slot41;
                     var3 = _closure1_slot55;
                     var2 = {};
@@ -1963,7 +1963,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot48 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowGuildNonDefaultChannel, environment: var1
+    var3 = function arg0() {
         _fun90708: for (var _fun90708_ip = 0;;) switch (_fun90708_ip) {
             case 0:
                 var0 = arg0;
@@ -2057,7 +2057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.QuwqjG;
                 var0 = {};
                 var0.channelName = var8;
-                var5 = function() { // Original name: topicHook, environment: var5
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 52;
@@ -2129,7 +2129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot49 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowGuild, environment: var1
+    var3 = function arg0() {
         _fun90710: for (var _fun90710_ip = 0;;) switch (_fun90710_ip) {
             case 0:
                 var1 = arg0;
@@ -2201,7 +2201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot50 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowGuildDefaultChannel, environment: var1
+    var3 = function arg0() {
         _fun90712: for (var _fun90712_ip = 0;;) switch (_fun90712_ip) {
             case 0:
                 var0 = arg0;
@@ -2458,7 +2458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var19[var1];
                 var2 = var16.bind(var3)(var1);
                 var1 = {};
-                var15 = function() { // Original name: onPress, environment: var15
+                var15 = function() {
                     _fun90720: for (var _fun90720_ip = 0;;) switch (_fun90720_ip) {
                         case 0:
                             var0 = _closure2_slot0;
@@ -2696,7 +2696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot51 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowDM, environment: var1
+    var3 = function arg0() {
         _fun90721: for (var _fun90721_ip = 0;;) switch (_fun90721_ip) {
             case 0:
                 var0 = arg0;
@@ -2968,7 +2968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.bind(var4)(var6);
                 var6 = var10.getName;
                 var27 = var6.bind(var10)(var12);
-                var24 = function() { // Original name: handleCopyUserTag, environment: var9
+                var24 = function() {
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var0 = 91;
@@ -3015,7 +3015,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.username = var27;
                 var16 = var6.bind(var10)(var5, var3);
             case 641:
-                var3 = function() { // Original name: handleOpenMutualGuilds, environment: var9
+                var3 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 83;
@@ -3034,7 +3034,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var1 = _closure2_slot3;
                     var2.user = var1;
-                    var1 = function(arg0) { // Original name: onPressMutualGuild, environment: var1
+                    var1 = function arg0() {
                         var3 = _closure1_slot0;
                         var4 = _closure1_slot2;
                         var0 = 93;
@@ -3171,7 +3171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var25 = 'button';
                 var5.accessibilityRole = var25;
-                var18 = function() { // Original name: onPress, environment: var9
+                var18 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 96;
@@ -3494,7 +3494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var1 = var2.bind(var4)(var1, var0);
                             var _closure3_slot0 = var1;
-                            var8 = function() { // Original name: handleAddFriend, environment: var9
+                            var8 = function() {
                                 _fun90736: for (var _fun90736_ip = 0;;) switch (_fun90736_ip) {
                                     case 0:
                                         var1 = _closure3_slot0;
@@ -3694,7 +3694,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var10.Colors;
                             var10 = var10.PRIMARY;
                             var5.color = var10;
-                            var9 = function() { // Original name: onPress, environment: var9
+                            var9 = function() {
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot2;
                                 var0 = 101;
@@ -3811,7 +3811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot52 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowButton, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var9 = var1.title;
         var8 = var1.subtitle;
@@ -3853,7 +3853,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot53 = var3;
-    var3 = function(arg0) { // Original name: ChatBeginningRowGroupDM, environment: var1
+    var3 = function arg0() {
         _fun90739: for (var _fun90739_ip = 0;;) switch (_fun90739_ip) {
             case 0:
                 var1 = arg0;
@@ -4338,7 +4338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/chat/ChatBeginningRow.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun90746: for (var _fun90746_ip = 0;;) switch (_fun90746_ip) {
             case 0:
                 var2 = arg0;

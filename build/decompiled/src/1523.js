@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.PrivateValueStore;
-    var3 = function(arg0) { // Original name: isValidKey, environment: var1
+    var3 = function arg0() {
         _fun17327: for (var _fun17327_ip = 0;;) switch (_fun17327_ip) {
             case 0:
                 var3 = arg0;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot10 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getRouteConfigsFromChildren, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg2;
@@ -404,7 +404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot11 = var3;
-    var1 = function(arg0, arg1) { // Original name: useNavigationBuilder, environment: var1
+    var1 = function arg0, arg1() {
         _fun17330: for (var _fun17330_ip = 0;;) switch (_fun17330_ip) {
             case 0:
                 var16 = arg1;

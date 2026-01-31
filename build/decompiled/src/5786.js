@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var9;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun51146: for (var _fun51146_ip = 0;;) switch (_fun51146_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -107,7 +107,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.options = var9;
     var3 = var5.bind(var7)(var3);
     var _closure1_slot14 = var3;
-    var3 = function(arg0, arg1) { // Original name: getInterpolationIndex, environment: var4
+    var3 = function arg0, arg1() {
         _fun51149: for (var _fun51149_ip = 0;;) switch (_fun51149_ip) {
             case 0:
                 var7 = arg0;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot15 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getIsModal, environment: var4
+    var3 = function arg0, arg1, arg2() {
         _fun51150: for (var _fun51150_ip = 0;;) switch (_fun51150_ip) {
             case 0:
                 var0 = arg2;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot16 = var3;
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: getHeaderHeights, environment: var4
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         var3 = arg0;
         var _closure2_slot0 = var3;
         var1 = arg1;
@@ -303,7 +303,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot17 = var3;
-    var3 = function(arg0, arg1) { // Original name: getDistanceFromOptions, environment: var4
+    var3 = function arg0, arg1() {
         _fun51153: for (var _fun51153_ip = 0;;) switch (_fun51153_ip) {
             case 0:
                 var1 = arg1;
@@ -369,7 +369,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot18 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getProgressFromGesture, environment: var4
+    var3 = function arg0, arg1, arg2() {
         _fun51154: for (var _fun51154_ip = 0;;) switch (_fun51154_ip) {
             case 0:
                 var3 = arg0;
@@ -424,7 +424,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot19 = var3;
     var3 = var1.Component;
     var1 = function(arg0) { // Environment: var4
-        var4 = function(arg0) { // Original name: CardStack, environment: var0
+        var4 = function arg0() {
             _fun51156: for (var _fun51156_ip = 0;;) switch (_fun51156_ip) {
                 case 0:
                     var5 = this;
@@ -648,7 +648,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var1 = 'render';
         var5.key = var1;
-        var1 = function() { // Original name: render, environment: var0
+        var1 = function() {
             _fun51164: for (var _fun51164_ip = 0;;) switch (_fun51164_ip) {
                 case 0:
                     var12 = this;
@@ -1274,7 +1274,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = {};
         var6 = 'getDerivedStateFromProps';
         var5.key = var6;
-        var0 = function(arg0, arg1) { // Original name: getDerivedStateFromProps, environment: var0
+        var0 = function arg0, arg1() {
             _fun51168: for (var _fun51168_ip = 0;;) switch (_fun51168_ip) {
                 case 0:
                     var2 = arg0;

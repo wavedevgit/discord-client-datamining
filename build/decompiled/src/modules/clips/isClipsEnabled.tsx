@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var4 = function() { // Original name: isClipsEnabled, environment: var1
+    var4 = function() {
         _fun93425: for (var _fun93425_ip = 0;;) switch (_fun93425_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var4;
-    var3 = function() { // Original name: useIsClipsEnabled, environment: var1
+    var3 = function() {
         _fun93426: for (var _fun93426_ip = 0;;) switch (_fun93426_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.isClipsEnabled = var4;
     var2.useIsClipsEnabled = var3;
-    var3 = function() { // Original name: isDecoupledClipsEnabled, environment: var1
+    var3 = function() {
         _fun93428: for (var _fun93428_ip = 0;;) switch (_fun93428_ip) {
             case 0:
                 var0 = _closure1_slot3;
@@ -129,7 +129,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isDecoupledClipsEnabled = var3;
-    var1 = function() { // Original name: useIsDecoupledClipsEnabled, environment: var1
+    var1 = function() {
         _fun93429: for (var _fun93429_ip = 0;;) switch (_fun93429_ip) {
             case 0:
                 var0 = _closure1_slot4;

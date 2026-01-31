@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var8 = require;
     var1 = exports;
     var9 = dependencyMap;
-    var3 = function(arg0) { // Original name: _interopRequireDefault, environment: var0
+    var3 = function arg0() {
         _fun22105: for (var _fun22105_ip = 0;;) switch (_fun22105_ip) {
             case 0:
                 var2 = arg0;

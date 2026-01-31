@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useLayoutEffect;
     var _closure1_slot2 = var3;
-    var1 = function(arg0, arg1) { // Original name: useBoundingClientRect, environment: var1
+    var1 = function arg0, arg1() {
         _fun45289: for (var _fun45289_ip = 0;;) switch (_fun45289_ip) {
             case 0:
                 var0 = arg0;

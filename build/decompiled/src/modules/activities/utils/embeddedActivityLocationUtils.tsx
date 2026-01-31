@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/embeddedActivityLocationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getEmbeddedActivityLocationChannelId, environment: var1
+    var3 = function arg0() {
         _fun24489: for (var _fun24489_ip = 0;;) switch (_fun24489_ip) {
             case 0:
                 var1 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getEmbeddedActivityLocationChannelId = var3;
-    var1 = function(arg0) { // Original name: getEmbeddedActivityLocationGuildId, environment: var1
+    var1 = function arg0() {
         _fun24490: for (var _fun24490_ip = 0;;) switch (_fun24490_ip) {
             case 0:
                 var1 = arg0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var11;
-    var8 = function() { // Original name: getReportMenu, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot12;
         var2 = var3.apply;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var8;
-    var0 = function() { // Original name: _getReportMenu, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var0;
-    var0 = function() { // Original name: _getReportMenuForModeratorReport, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _getUnauthenticatedReportMenu, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _submitHeadlessReport, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _verifyUnauthenticatedReport, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _getDsaExperiment, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -534,7 +534,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function() { // Original name: _fetchUrfCapabilities, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function() { // Original name: _submitReportSecondLook, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var7 = function(arg0) { // Original name: getUnauthenticatedReportNameSafely, environment: var1
+    var7 = function arg0() {
         var5 = arg0;
         var0 = var5.name;
         var3 = _closure1_slot1;
@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var7;
-    var6 = function(arg0) { // Original name: getReportNameSafely, environment: var1
+    var6 = function arg0() {
         var5 = arg0;
         var0 = var5.name;
         var3 = _closure1_slot1;
@@ -715,7 +715,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot21 = var6;
-    var5 = function(arg0) { // Original name: getModeratorReportNameSafely, environment: var1
+    var5 = function arg0() {
         var5 = arg0;
         var0 = var5.name;
         var3 = _closure1_slot1;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot22 = var5;
-    var4 = function(arg0) { // Original name: getModeratorReportEndpointSafely, environment: var1
+    var4 = function arg0() {
         _fun53652: for (var _fun53652_ip = 0;;) switch (_fun53652_ip) {
             case 0:
                 var0 = arg0;
@@ -842,7 +842,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var10.bind(var0)(var3);
     var3 = var3.SafetyToastType;
     var _closure1_slot8 = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: genModeratorSubmitdata, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun53653: for (var _fun53653_ip = 0;;) switch (_fun53653_ip) {
             case 0:
                 var4 = arg0;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: genSubmitData, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun53657: for (var _fun53657_ip = 0;;) switch (_fun53657_ip) {
             case 0:
                 var4 = arg0;
@@ -1615,7 +1615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'modules/in_app_reports/ReportUtils.tsx';
     var9 = var10.bind(var11)(var9);
     var2.getReportMenu = var8;
-    var8 = function() { // Original name: getReportMenuForModeratorReport, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot13;
         var2 = var3.apply;
@@ -1626,7 +1626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getReportMenuForModeratorReport = var8;
-    var8 = function() { // Original name: getUnauthenticatedReportMenu, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot14;
         var2 = var3.apply;
@@ -1637,7 +1637,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getUnauthenticatedReportMenu = var8;
-    var8 = function() { // Original name: submitHeadlessReport, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -1648,7 +1648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.submitHeadlessReport = var8;
-    var8 = function(arg0, arg1, arg2) { // Original name: submitReport, environment: var1
+    var8 = function arg0, arg1, arg2() {
         _fun53664: for (var _fun53664_ip = 0;;) switch (_fun53664_ip) {
             case 0:
                 var5 = arg0;
@@ -1702,7 +1702,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun53664_ip = 193;
                 continue _fun53664;
             case 179:
-                var1 = function(arg0, arg1, arg2) { // Original name: submitModeratorReport, environment: var1
+                var1 = function arg0, arg1, arg2() {
                     var7 = arg1;
                     var3 = _closure1_slot9;
                     var6 = undefined;
@@ -1812,7 +1812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.submitReport = var8;
-    var8 = function(arg0, arg1, arg2, arg3) { // Original name: submitUnauthenticatedReport, environment: var1
+    var8 = function arg0, arg1, arg2, arg3() {
         _fun53667: for (var _fun53667_ip = 0;;) switch (_fun53667_ip) {
             case 0:
                 var8 = arg1;
@@ -1861,7 +1861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.submitUnauthenticatedReport = var8;
-    var8 = function(arg0, arg1) { // Original name: sendUnauthenticatedReportPincode, environment: var1
+    var8 = function arg0, arg1() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var1 = _closure1_slot2;
@@ -1887,7 +1887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sendUnauthenticatedReportPincode = var8;
-    var8 = function() { // Original name: verifyUnauthenticatedReport, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot16;
         var2 = var3.apply;
@@ -1898,7 +1898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.verifyUnauthenticatedReport = var8;
-    var8 = function() { // Original name: getDsaExperiment, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot17;
         var2 = var3.apply;
@@ -1909,7 +1909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getDsaExperiment = var8;
-    var8 = function() { // Original name: fetchUrfCapabilities, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot18;
         var2 = var3.apply;
@@ -1920,7 +1920,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.fetchUrfCapabilities = var8;
-    var8 = function() { // Original name: submitReportSecondLook, environment: var1
+    var8 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -1935,7 +1935,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getReportNameSafely = var6;
     var2.getModeratorReportNameSafely = var5;
     var2.getModeratorReportEndpointSafely = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: trackCloseReportModalAnalytics, environment: var1
+    var4 = function arg0, arg1, arg2() {
         _fun53673: for (var _fun53673_ip = 0;;) switch (_fun53673_ip) {
             case 0:
                 var6 = arg0;
@@ -2140,7 +2140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackCloseReportModalAnalytics = var4;
-    var4 = function(arg0, arg1) { // Original name: showInAppReportsFeedbackModal, environment: var1
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 8;
@@ -2160,7 +2160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.showInAppReportsFeedbackModal = var4;
-    var4 = function(arg0, arg1) { // Original name: areRequiredElementsUnfilled, environment: var1
+    var4 = function arg0, arg1() {
         _fun53675: for (var _fun53675_ip = 0;;) switch (_fun53675_ip) {
             case 0:
                 var3 = arg0;
@@ -2441,7 +2441,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.areRequiredElementsUnfilled = var4;
     var2.TrackIarSettingsUpsellsActionType = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: useTrackSettingsUpsellsAction, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var5 = arg0;
         var4 = arg1;
         var6 = arg2;

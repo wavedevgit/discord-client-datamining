@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun12366: for (var _fun12366_ip = 0;;) switch (_fun12366_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot9 = var3;
     var5 = var3.Component;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: Profiler, environment: var5
+        var3 = function arg0() {
             _fun12370: for (var _fun12370_ip = 0;;) switch (_fun12370_ip) {
                 case 0:
                     var4 = this;
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'componentDidMount';
         var4.key = var0;
-        var0 = function() { // Original name: componentDidMount, environment: var5
+        var0 = function() {
             _fun12371: for (var _fun12371_ip = 0;;) switch (_fun12371_ip) {
                 case 0:
                     var0 = this;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'shouldComponentUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: shouldComponentUpdate, environment: var5
+        var6 = function arg0() {
             _fun12372: for (var _fun12372_ip = 0;;) switch (_fun12372_ip) {
                 case 0:
                     var2 = arg0;
@@ -343,7 +343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentDidUpdate';
         var4.key = var6;
-        var6 = function() { // Original name: componentDidUpdate, environment: var5
+        var6 = function() {
             _fun12375: for (var _fun12375_ip = 0;;) switch (_fun12375_ip) {
                 case 0:
                     var1 = this;
@@ -368,7 +368,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'componentWillUnmount';
         var4.key = var6;
-        var6 = function() { // Original name: componentWillUnmount, environment: var5
+        var6 = function() {
             _fun12376: for (var _fun12376_ip = 0;;) switch (_fun12376_ip) {
                 case 0:
                     var2 = this;
@@ -479,7 +479,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'render';
         var4.key = var6;
-        var5 = function() { // Original name: render, environment: var5
+        var5 = function() {
             var0 = this;
             var0 = var0.props;
             var0 = var0.children;
@@ -505,7 +505,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.Profiler = var3;
     var3 = 'unknown';
     var2.UNKNOWN_COMPONENT = var3;
-    var3 = function(arg0) { // Original name: useProfiler, environment: var1
+    var3 = function arg0() {
         _fun12379: for (var _fun12379_ip = 0;;) switch (_fun12379_ip) {
             case 0:
                 var0 = undefined;
@@ -698,7 +698,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.useProfiler = var3;
-    var1 = function(arg0, arg1) { // Original name: withProfiler, environment: var1
+    var1 = function arg0, arg1() {
         _fun12383: for (var _fun12383_ip = 0;;) switch (_fun12383_ip) {
             case 0:
                 var3 = arg0;
@@ -738,7 +738,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = 'unknown';
             case 57:
                 var _closure2_slot2 = var6;
-                var0 = function(arg0) { // Original name: Wrapped, environment: var0
+                var0 = function arg0() {
                     var9 = arg0;
                     var4 = _closure1_slot9;
                     var3 = var4.createElement;

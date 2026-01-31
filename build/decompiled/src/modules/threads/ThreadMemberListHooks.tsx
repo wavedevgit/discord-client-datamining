@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/threads/ThreadMemberListHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useThreadMemberListSections, environment: var1
+    var1 = function arg0, arg1() {
         _fun105813: for (var _fun105813_ip = 0;;) switch (_fun105813_ip) {
             case 0:
                 var4 = arg1;

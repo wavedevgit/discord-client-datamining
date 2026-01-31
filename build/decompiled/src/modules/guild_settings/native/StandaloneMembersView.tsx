@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/native/StandaloneMembersView.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StandaloneMembersView, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.guildId;
         var _closure2_slot0 = var1;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var9 = var10.bind(var11)(var9);
         var1.headerLeft = var9;
-        var9 = function() { // Original name: headerTitle, environment: var6
+        var9 = function() {
             var3 = _closure1_slot4;
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.headerTitle = var9;
-        var9 = function() { // Original name: render, environment: var6
+        var9 = function() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5[var2] = var1;
         var2 = var4.MEMBER_EDIT;
         var1 = {};
-        var9 = function(arg0) { // Original name: render, environment: var6
+        var9 = function arg0() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot0;
             var2 = _closure1_slot2;
@@ -170,12 +170,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5[var2] = var1;
         var2 = var4.MEMBER_KICK;
         var1 = {};
-        var9 = function() { // Original name: headerTitle, environment: var6
+        var9 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var9;
-        var9 = function(arg0) { // Original name: render, environment: var6
+        var9 = function arg0() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;
@@ -199,12 +199,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5[var2] = var1;
         var2 = var4.MEMBER_BAN;
         var1 = {};
-        var9 = function() { // Original name: headerTitle, environment: var6
+        var9 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var9;
-        var6 = function(arg0) { // Original name: render, environment: var6
+        var6 = function arg0() {
             var3 = _closure1_slot4;
             var1 = _closure1_slot1;
             var2 = _closure1_slot2;

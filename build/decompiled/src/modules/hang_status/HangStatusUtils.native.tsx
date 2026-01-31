@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.ActivityTypes;
     var _closure1_slot3 = var3;
-    var3 = function() { // Original name: getTwemojiSystemHangStatuses, environment: var1
+    var3 = function() {
         var0 = {};
         var1 = _closure1_slot2;
         var5 = var1.BRB;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot4 = var3;
-    var4 = function(arg0) { // Original name: getHangStatusOptions, environment: var1
+    var4 = function arg0() {
         _fun61957: for (var _fun61957_ip = 0;;) switch (_fun61957_ip) {
             case 0:
                 var1 = arg0;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1) { // Original name: getHangStatusDetails, environment: var1
+    var3 = function arg0, arg1() {
         _fun61958: for (var _fun61958_ip = 0;;) switch (_fun61958_ip) {
             case 0:
                 var1 = arg1;

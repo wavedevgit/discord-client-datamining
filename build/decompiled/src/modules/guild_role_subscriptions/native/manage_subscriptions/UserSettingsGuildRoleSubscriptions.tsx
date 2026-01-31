@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: GuildRoleSubscriptionsSectionHeader, environment: var1
+    var0 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var9 = var0.bind(var3)();
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: renderSectionHeader, environment: var1
+    var0 = function arg0() {
         _fun83910: for (var _fun83910_ip = 0;;) switch (_fun83910_ip) {
             case 0:
                 var0 = arg0;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function() { // Original name: ItemSeparator, environment: var1
+    var0 = function() {
         var3 = _closure1_slot5;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptions.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: UserSettingsGuildRoleSubscriptions, environment: var1
+    var1 = function() {
         _fun83912: for (var _fun83912_ip = 0;;) switch (_fun83912_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.sections = var9;
                 var9 = false;
                 var5.stickySectionHeadersEnabled = var9;
-                var9 = function(arg0) { // Original name: keyExtractor, environment: var8
+                var9 = function arg0() {
                     var0 = arg0;
                     var0 = var0.id;
                     return var0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.keyExtractor = var9;
                 var9 = _closure1_slot10;
                 var5.renderSectionHeader = var9;
-                var8 = function(arg0) { // Original name: renderItem, environment: var8
+                var8 = function arg0() {
                     var0 = arg0;
                     var4 = var0.item;
                     var3 = _closure1_slot5;

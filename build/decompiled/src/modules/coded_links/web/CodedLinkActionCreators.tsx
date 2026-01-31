@@ -21,12 +21,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var1 = var1.CONFERENCE_MODE_ENABLED;
     var1 = {};
-    var6 = function(arg0, arg1) { // Original name: openNativeAppModal, environment: var3
+    var6 = function arg0, arg1() {
         var0 = undefined;
         return var0;
     };
     var1.openNativeAppModal = var6;
-    var6 = function(arg0) { // Original name: nativeModalOpened, environment: var3
+    var6 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.nativeModalOpened = var6;
-    var3 = function(arg0) { // Original name: nativeModalOpenFailed, environment: var3
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

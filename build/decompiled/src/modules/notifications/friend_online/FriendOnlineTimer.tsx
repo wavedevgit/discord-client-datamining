@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun117283: for (var _fun117283_ip = 0;;) switch (_fun117283_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: getFriendOnlineTimerEnabled, environment: var1
+    var0 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 11;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function() { // Original name: _reportSessionMeaningfullyOnline, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot8;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: isStatusEffectivelyOnline, environment: var1
+    var0 = function arg0() {
         var1 = _closure1_slot12;
         var1 = var1.ONLINE;
         var2 = new Array(2);
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: FriendOnlineTimerManager, environment: var5
+        var3 = function arg0() {
             _fun117292: for (var _fun117292_ip = 0;;) switch (_fun117292_ip) {
                 case 0:
                     var4 = this;
@@ -289,35 +289,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = null;
                     var0.timerId = var2;
                     var2 = {};
-                    var3 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.start;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.POST_CONNECTION_OPEN = var3;
-                    var3 = function() { // Original name: CONNECTION_RESUMED, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.start;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.CONNECTION_RESUMED = var3;
-                    var3 = function() { // Original name: CONNECTION_CLOSED, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.clear;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.CONNECTION_CLOSED = var3;
-                    var3 = function() { // Original name: CONNECTION_INTERRUPTED, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.clear;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var2.CONNECTION_INTERRUPTED = var3;
-                    var3 = function() { // Original name: SELF_PRESENCE_STORE_UPDATE, environment: var1
+                    var3 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.start;
                         var0 = var0.bind(var1)();
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                 continue _fun117299
                                             }
                                         case 63:
-                                            var1 = function() { // Original name: reportSessionMeaningfullyOnline, environment: var1
+                                            var1 = function() {
                                                 var0 = undefined;
                                                 var3 = _closure1_slot17;
                                                 var2 = var3.apply;
@@ -475,7 +475,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = '_initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var0 = undefined;
             return var0;
         };
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_terminate';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = this;
             var0 = var1.clear;
             var0 = var0.bind(var1)();

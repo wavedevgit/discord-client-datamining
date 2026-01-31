@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: ChatInputNotificationNudgeImpl, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.onDismiss;
         var _closure2_slot0 = var0;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var17 = {};
         var12 = 8;
         var17.hitSlop = var12;
-        var12 = function() { // Original name: onPress, environment: var14
+        var12 = function() {
             var6 = _closure1_slot0;
             var7 = _closure1_slot2;
             var0 = 12;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var9.bind(var3)(var5);
         var6 = var5.PressableHighlight;
         var5 = {};
-        var14 = function() { // Original name: onPress, environment: var14
+        var14 = function() {
             _fun90113: for (var _fun90113_ip = 0;;) switch (_fun90113_ip) {
                 case 0:
                     var6 = _closure1_slot0;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat_input/native/accessories/ChatInputNotificationNudge.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChatInputNotificationNudge, environment: var1
+    var1 = function arg0() {
         _fun90115: for (var _fun90115_ip = 0;;) switch (_fun90115_ip) {
             case 0:
                 var0 = arg0;
@@ -556,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot13;
                 var2 = _closure1_slot16;
                 var1 = {};
-                var5 = function() { // Original name: onDismiss, environment: var5
+                var5 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot10;
                     var1 = var0.USER_DISMISS;

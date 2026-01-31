@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: useGuildPowerupRollbackEnabled, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun102290: for (var _fun102290_ip = 0;;) switch (_fun102290_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0, arg1, arg2) { // Original name: isGuildPowerupRollbackEnabled, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun102291: for (var _fun102291_ip = 0;;) switch (_fun102291_ip) {
             case 0:
                 var0 = arg1;

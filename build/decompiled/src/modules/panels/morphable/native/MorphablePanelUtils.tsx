@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot2 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: clamp, environment: var0
+        var0 = function arg0, arg1, arg2() {
             var0 = global;
             var3 = var0.Math;
             var2 = var3.min;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot4 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: calculateXYDiff, environment: var0
+        var0 = function arg0, arg1() {
             _fun110353: for (var _fun110353_ip = 0;;) switch (_fun110353_ip) {
                 case 0:
                     var1 = arg1;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1, arg2) { // Original name: getPIPWindowDimensions, environment: var0
+        var0 = function arg0, arg1, arg2() {
             _fun110355: for (var _fun110355_ip = 0;;) switch (_fun110355_ip) {
                 case 0:
                     var2 = arg0;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: calculatePIPPositionFromVelocity, environment: var0
+        var0 = function arg0() {
             _fun110357: for (var _fun110357_ip = 0;;) switch (_fun110357_ip) {
                 case 0:
                     var0 = arg0;
@@ -414,7 +414,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot8 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: pipXYtoAbsoluteXY, environment: var0
+        var0 = function arg0() {
             var0 = arg0;
             var6 = var0.pipX;
             var3 = var0.pipY;
@@ -454,7 +454,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.code = var10;
     var _closure1_slot10 = var7;
     var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: getClampedPIPPosition, environment: var0
+        var0 = function arg0() {
             _fun110361: for (var _fun110361_ip = 0;;) switch (_fun110361_ip) {
                 case 0:
                     var0 = arg0;

@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var9;
             var5 = var11;
             var _closure1_slot3 = var11;
-            var0 = function(arg0) { // Original name: GestureWrapper, environment: var2
+            var0 = function arg0() {
                 var0 = arg0;
                 var4 = var0.children;
                 var1 = _closure1_slot12;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot15 = var0;
-            var0 = function() { // Original name: handleNavigationOnReady, environment: var2
+            var0 = function() {
                 var3 = _closure1_slot2;
                 var5 = _closure1_slot3;
                 var0 = 12;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot16 = var0;
-            var0 = function(arg0) { // Original name: AppNavigationContainer, environment: var2
+            var0 = function arg0() {
                 var1 = arg0;
                 var4 = var1.children;
                 var2 = _closure1_slot2;
@@ -412,7 +412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot17 = var0;
-            var0 = function(arg0) { // Original name: ShareNavigationContainer, environment: var2
+            var0 = function arg0() {
                 var0 = arg0;
                 var4 = var0.children;
                 var2 = _closure1_slot2;
@@ -440,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var _closure1_slot18 = var0;
-            var0 = function(arg0) { // Original name: AppNavigationContainerOrEmpty, environment: var2
+            var0 = function arg0() {
                 _fun99824: for (var _fun99824_ip = 0;;) switch (_fun99824_ip) {
                     case 0:
                         var0 = arg0;
@@ -592,7 +592,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var5[var3];
             var6 = var6.bind(var0)(var3);
             var3 = var6.profiledRootComponent;
-            var2 = function(arg0) { // Original name: AppContainer, environment: var2
+            var2 = function arg0() {
                 var1 = arg0;
                 var51 = var1.children;
                 var19 = var1.appEntryKey;
@@ -630,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = undefined;
                             var4 = var4.bind(var2)(var3);
                             var3 = var4.runOnUI;
-                            var0 = function() { // Original name: e, environment: var0
+                            var0 = function() {
                                 var1 = _closure1_slot0;
                                 var0 = _closure3_slot0;
                                 var1.RNScreensTurboModule = var0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = new Array(0);
                 var1 = var4.bind(var5)(var2, var1);
-                var0 = function() { // Original name: useManaContextProviderValue, environment: var0
+                var0 = function() {
                     var5 = _closure1_slot1;
                     var7 = _closure1_slot3;
                     var2 = 46;

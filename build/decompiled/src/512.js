@@ -42,7 +42,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.decode;
     var2.decoder = var3;
     var _closure1_slot4 = var2;
-    var2 = function(arg0) { // Original name: interpretNumericEntities, environment: var1
+    var2 = function arg0() {
         var3 = arg0;
         var2 = var3.replace;
         var1 = /&#(\d+);/g;
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot5 = var2;
-    var2 = function(arg0, arg1, arg2) { // Original name: parseArrayValue, environment: var1
+    var2 = function arg0, arg1, arg2() {
         _fun6550: for (var _fun6550_ip = 0;;) switch (_fun6550_ip) {
             case 0:
                 var2 = arg0;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var2;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: parseQueryStringKeys, environment: var1
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun6551: for (var _fun6551_ip = 0;;) switch (_fun6551_ip) {
             case 0:
                 var6 = arg0;
@@ -1096,7 +1096,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     continue _fun6552
                 }
             case 1129:
-                var3 = function(arg0, arg1) { // Original name: parseQueryStringValues, environment: var2
+                var3 = function arg0, arg1() {
                     _fun6553: for (var _fun6553_ip = 0;;) switch (_fun6553_ip) {
                         case 0:
                             var5 = arg0;

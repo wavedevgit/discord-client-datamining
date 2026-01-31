@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/NotificationSettingsMuteBanner.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: NotificationSettingsMuteBanner, environment: var1
+    var3 = function arg0() {
         var8 = arg0;
         var0 = _closure1_slot5;
         var3 = undefined;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.NotificationSettingsMuteBanner = var3;
-    var1 = function(arg0) { // Original name: getMuteBannerSubtitleFromConfig, environment: var1
+    var1 = function arg0() {
         _fun69856: for (var _fun69856_ip = 0;;) switch (_fun69856_ip) {
             case 0:
                 var7 = arg0;

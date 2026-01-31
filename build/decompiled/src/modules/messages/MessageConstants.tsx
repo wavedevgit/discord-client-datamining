@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MessageTagTypes = var5;
     var5 = 209715200;
     var2.DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE = var5;
-    var4 = function(arg0) { // Original name: isChannelStreamMessage, environment: var4
+    var4 = function arg0() {
         var0 = arg0;
         var1 = var0.type;
         var0 = _closure1_slot0;

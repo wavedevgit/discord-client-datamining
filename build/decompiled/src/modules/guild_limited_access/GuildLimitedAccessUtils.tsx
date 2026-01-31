@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_limited_access/GuildLimitedAccessUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: isLimitedAccessErrorCode, environment: var1
+    var1 = function arg0, arg1() {
         _fun112367: for (var _fun112367_ip = 0;;) switch (_fun112367_ip) {
             case 0:
                 var2 = arg1;

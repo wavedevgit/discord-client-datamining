@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var1.Object;
     var3 = var6.freeze;
     var1 = {};
-    var9 = function() { // Original name: get more, environment: var7
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var9 = function() { // Original name: get share, environment: var7
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 2;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var9 = function() { // Original name: get revoke, environment: var7
+    var9 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var8 = function() { // Original name: get copy, environment: var7
+    var8 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 4;

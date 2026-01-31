@@ -13,7 +13,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0, arg1) { // Original name: pickScale, environment: var0
+    var2 = function arg0, arg1() {
         _fun1539: for (var _fun1539_ip = 0;;) switch (_fun1539_ip) {
             case 0:
                 var1 = arg0;
@@ -73,14 +73,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.pickScale = var2;
-    var2 = function(arg0) { // Original name: setUrlCacheBreaker, environment: var0
+    var2 = function arg0() {
         var0 = arg0;
         var _closure1_slot2 = var0;
         var0 = undefined;
         return var0;
     };
     var1.setUrlCacheBreaker = var2;
-    var0 = function() { // Original name: getUrlCacheBreaker, environment: var0
+    var0 = function() {
         _fun1541: for (var _fun1541_ip = 0;;) switch (_fun1541_ip) {
             case 0:
                 var2 = _closure1_slot2;

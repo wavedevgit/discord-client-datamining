@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: SettingsUpsellsTableRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var10 = var0.title;
         var9 = var0.disabledTitle;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.disabledTitle = var9;
         var0.description = var8;
         var0.disabled = var6;
-        var5 = function() { // Original name: onPress, environment: var5
+        var5 = function() {
             var2 = _closure2_slot0;
             var0 = undefined;
             var2 = var2.bind(var0)();
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/in_app_reports/native/components/InAppReportsSettingsUpsellsElement.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SettingsUpsellElement, environment: var1
+    var1 = function arg0() {
         _fun92586: for (var _fun92586_ip = 0;;) switch (_fun92586_ip) {
             case 0:
                 var0 = arg0;
@@ -315,7 +315,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.t;
                 var10 = var9["u7mo+k"];
                 var9 = {};
-                var13 = function() { // Original name: goToSettingsHook, environment: var13
+                var13 = function() {
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
                     var0 = 17;

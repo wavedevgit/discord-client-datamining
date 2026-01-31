@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/feature_gating/useGuildRoleSubscriptionsWaitlistConfig.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useGuildRoleSubscriptionsWaitlistConfig, environment: var1
+    var1 = function arg0() {
         _fun116513: for (var _fun116513_ip = 0;;) switch (_fun116513_ip) {
             case 0:
                 var3 = arg0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.ctaLabel = var5;
                 var5 = true;
                 var0.ctaClickable = var5;
-                var5 = function() { // Original name: onCtaClicked, environment: var1
+                var5 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 5;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 != var3;
                 var0.ctaClickable = var2;
-                var1 = function() { // Original name: onCtaClicked, environment: var1
+                var1 = function() {
                     _fun116514: for (var _fun116514_ip = 0;;) switch (_fun116514_ip) {
                         case 0:
                             var4 = _closure1_slot1;

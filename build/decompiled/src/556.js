@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = function() { // Original name: defaultOptions, environment: var1
+    var0 = function() {
         var0 = {};
         var1 = global;
         var2 = var1.Number;
@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot4 = var0;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: stringify, environment: var1
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun6692: for (var _fun6692_ip = 0;;) switch (_fun6692_ip) {
             case 0:
                 var5 = arg3;
@@ -218,7 +218,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 throw var0;
         }
     };
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: setReplace, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun6693: for (var _fun6693_ip = 0;;) switch (_fun6693_ip) {
             case 0:
                 var8 = arg0;
@@ -281,7 +281,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: decirc, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         _fun6694: for (var _fun6694_ip = 0;;) switch (_fun6694_ip) {
             case 0:
                 var5 = arg0;
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1) { // Original name: compareFunction, environment: var1
+    var0 = function arg0, arg1() {
         _fun6695: for (var _fun6695_ip = 0;;) switch (_fun6695_ip) {
             case 0:
                 var2 = arg0;
@@ -485,7 +485,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: deterministicStringify, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun6696: for (var _fun6696_ip = 0;;) switch (_fun6696_ip) {
             case 0:
                 var5 = arg0;
@@ -700,7 +700,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 throw var0;
         }
     };
-    var3 = function(arg0, arg1, arg2, arg3, arg4, arg5, arg6) { // Original name: deterministicDecirc, environment: var1
+    var3 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
         _fun6697: for (var _fun6697_ip = 0;;) switch (_fun6697_ip) {
             case 0:
                 var6 = arg0;
@@ -944,7 +944,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: replaceGetterValues, environment: var1
+    var3 = function arg0() {
         _fun6698: for (var _fun6698_ip = 0;;) switch (_fun6698_ip) {
             case 0:
                 var1 = arg0;

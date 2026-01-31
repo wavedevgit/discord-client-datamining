@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun53521: for (var _fun53521_ip = 0;;) switch (_fun53521_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var11 = function() { // Original name: handleInit, environment: var3
+    var11 = function() {
         var0 = {};
         _closure1_slot10 = var0;
         var0 = true;
         return var0;
     };
-    var0 = function(arg0) { // Original name: getOrCreateChannelState, environment: var3
+    var0 = function arg0() {
         _fun53525: for (var _fun53525_ip = 0;;) switch (_fun53525_ip) {
             case 0:
                 var1 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var10 = function(arg0) { // Original name: handleSetActiveCommand, environment: var3
+    var10 = function arg0() {
         _fun53526: for (var _fun53526_ip = 0;;) switch (_fun53526_ip) {
             case 0:
                 var0 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var10;
-    var9 = function(arg0) { // Original name: handleSetPreferredCommand, environment: var3
+    var9 = function arg0() {
         _fun53528: for (var _fun53528_ip = 0;;) switch (_fun53528_ip) {
             case 0:
                 var0 = arg0;
@@ -283,7 +283,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var9;
-    var8 = function(arg0) { // Original name: handleUpdateOptionStates, environment: var3
+    var8 = function arg0() {
         _fun53529: for (var _fun53529_ip = 0;;) switch (_fun53529_ip) {
             case 0:
                 var0 = arg0;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var0)(var1);
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ApplicationCommandStore, environment: var5
+        var3 = function() {
             _fun53531: for (var _fun53531_ip = 0;;) switch (_fun53531_ip) {
                 case 0:
                     var3 = this;
@@ -616,7 +616,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var3 = this;
             var1 = var3.waitFor;
             var2 = _closure1_slot8;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveCommand';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -703,7 +703,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveCommandSection';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveOptionName';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -729,7 +729,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getActiveOption';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53537: for (var _fun53537_ip = 0;;) switch (_fun53537_ip) {
                 case 0:
                     var1 = _closure1_slot12;
@@ -782,7 +782,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getPreferredCommandId';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -795,7 +795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOptionStates';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOptionState';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -823,7 +823,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getCommandOrigin';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -836,7 +836,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSource';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = _closure1_slot12;
             var1 = undefined;
             var0 = arg0;
@@ -849,7 +849,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getOption';
         var4.key = var6;
-        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+        var6 = function arg0, arg1() {
             _fun53544: for (var _fun53544_ip = 0;;) switch (_fun53544_ip) {
                 case 0:
                     var0 = arg1;
@@ -893,7 +893,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getState';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             var0 = {};
             var3 = _closure1_slot12;
             var2 = undefined;
@@ -921,7 +921,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.APPLICATION_COMMAND_SET_ACTIVE_COMMAND = var10;
     var1.APPLICATION_COMMAND_SET_PREFERRED_COMMAND = var9;
     var1.APPLICATION_COMMAND_UPDATE_OPTIONS = var8;
-    var3 = function(arg0) { // Original name: handleUpdateChannelState, environment: var3
+    var3 = function arg0() {
         _fun53547: for (var _fun53547_ip = 0;;) switch (_fun53547_ip) {
             case 0:
                 var0 = arg0;

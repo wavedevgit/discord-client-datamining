@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0) { // Original name: round, environment: var1
+    var0 = function arg0() {
         _fun93677: for (var _fun93677_ip = 0;;) switch (_fun93677_ip) {
             case 0:
                 var3 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() { // Original name: NetworkQuality, environment: var4
+        var2 = function() {
             var2 = this;
             var4 = _closure1_slot2;
             var3 = _closure2_slot0;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = '_initStats';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var0 = {};
             var2 = {};
             var0.effectiveConnectionSpeedBuckets = var2;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getStats';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var4 = var0._networkStats;
             var0 = {};
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'incrementNetworkStats';
         var0.key = var5;
-        var4 = function(arg0) { // Original name: value, environment: var4
+        var4 = function arg0() {
             _fun93684: for (var _fun93684_ip = 0;;) switch (_fun93684_ip) {
                 case 0:
                     var1 = arg0;

@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/instant_invite/native/action_sheet/invite_to_guilds/SelectInviteRolesActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SelectInviteRolesActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var9 = var0.assignableRoles;
         var _closure2_slot0 = var9;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11.children = var15;
                     var11 = var3.bind(var0)(var12, var11);
                     var4.label = var11;
-                    var10 = function() { // Original name: onPress, environment: var10
+                    var10 = function() {
                         var2 = _closure2_slot8;
                         var0 = _closure3_slot0;
                         var1 = var0.id;

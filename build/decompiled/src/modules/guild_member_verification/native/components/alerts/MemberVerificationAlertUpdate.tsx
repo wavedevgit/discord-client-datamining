@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MemberVerificationAlertUpdate, environment: var1
+    var1 = function arg0() {
         var5 = arg0;
         var0 = _closure1_slot7;
         var3 = undefined;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.bind(var13)(var6);
         var6 = 'cancelText';
         var0[var6] = var7;
-        var7 = function() { // Original name: onConfirm, environment: var6
+        var7 = function() {
             var3 = _closure1_slot1;
             var2 = _closure1_slot2;
             var1 = 7;

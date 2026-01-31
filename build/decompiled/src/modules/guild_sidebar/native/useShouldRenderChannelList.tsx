@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_sidebar/native/useShouldRenderChannelList.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useShouldRenderChannelList, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var3 = var4.useState;
         var2 = _closure1_slot7;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             _fun102794: for (var _fun102794_ip = 0;;) switch (_fun102794_ip) {
                 case 0:
-                    var8 = function() { // Original name: allowRender, environment: var0
+                    var8 = function() {
                         var2 = true;
                         _closure1_slot7 = var2;
                         var1 = _closure2_slot1;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var _closure3_slot0 = var8;
-                    var6 = function() { // Original name: handleGatewayChange, environment: var0
+                    var6 = function() {
                         _fun102796: for (var _fun102796_ip = 0;;) switch (_fun102796_ip) {
                             case 0:
                                 var1 = _closure1_slot5;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot1 = var6;
-                    var5 = function() { // Original name: handleCacheChange, environment: var0
+                    var5 = function() {
                         _fun102797: for (var _fun102797_ip = 0;;) switch (_fun102797_ip) {
                             case 0:
                                 var1 = _closure1_slot4;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var _closure3_slot2 = var5;
-                    var4 = function() { // Original name: handleNavigationChange, environment: var0
+                    var4 = function() {
                         _fun102798: for (var _fun102798_ip = 0;;) switch (_fun102798_ip) {
                             case 0:
                                 var2 = _closure1_slot0;

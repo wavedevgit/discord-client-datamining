@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun86006: for (var _fun86006_ip = 0;;) switch (_fun86006_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: GameCommunityUpsellManager, environment: var5
+        var3 = function arg0() {
             _fun86010: for (var _fun86010_ip = 0;;) switch (_fun86010_ip) {
                 case 0:
                     var5 = this;
@@ -146,14 +146,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = null;
                     var0.timeout = var3;
                     var3 = {};
-                    var4 = function() { // Original name: POST_CONNECTION_OPEN, environment: var1
+                    var4 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.scheduleGameDetection;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var3.POST_CONNECTION_OPEN = var4;
-                    var4 = function() { // Original name: LOGOUT, environment: var1
+                    var4 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleLogout;
                         var0 = var0.bind(var1)();
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleLogout';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             _fun86014: for (var _fun86014_ip = 0;;) switch (_fun86014_ip) {
                 case 0:
                     var1 = this;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'scheduleGameDetection';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun86015: for (var _fun86015_ip = 0;;) switch (_fun86015_ip) {
                 case 0:
                     var2 = this;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'forceShowUpsell';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun86017: for (var _fun86017_ip = 0;;) switch (_fun86017_ip) {
                 case 0:
                     var1 = this;
@@ -561,7 +561,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: detectAndShowUpsell, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

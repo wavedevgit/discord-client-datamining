@@ -38,11 +38,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activities/utils/native/useHandleOAuthNavigation.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useHandleOAuthNavigation, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
-            var4 = function(arg0) { // Original name: showOAuth2Modal, environment: var0
+            var4 = function arg0() {
                 var4 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var3 = 3;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = arg0;
                 var10 = var1;
                 var6 = copyDataProperties(var10, var9);
-                var7 = function() { // Original name: dismissOAuthModal, environment: var6
+                var7 = function() {
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     var0 = 3;

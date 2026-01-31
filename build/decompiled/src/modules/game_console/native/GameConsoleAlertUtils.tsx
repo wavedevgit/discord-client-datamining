@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.jsx;
     var _closure1_slot7 = var1;
     var1 = {};
-    var6 = function(arg0) { // Original name: maybeShowPTTAlert, environment: var3
+    var6 = function arg0() {
         _fun66910: for (var _fun66910_ip = 0;;) switch (_fun66910_ip) {
             case 0:
                 var3 = _closure1_slot3;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.bL21zs;
                     var5 = var6.bind(var7)(var5);
                     var1.body = var5;
-                    var4 = function() { // Original name: onConfirm, environment: var4
+                    var4 = function() {
                         var4 = _closure1_slot0;
                         var5 = _closure1_slot2;
                         var0 = 5;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.maybeShowPTTAlert = var6;
-    var3 = function(arg0) { // Original name: showSelfDismissableAlert, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.title;
         var12 = var0.body;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.dismissCallback = var8;
         var5 = var7.bind(var0)(var6, var5);
         var1.body = var5;
-        var4 = function() { // Original name: onConfirm, environment: var4
+        var4 = function() {
             _fun66914: for (var _fun66914_ip = 0;;) switch (_fun66914_ip) {
                 case 0:
                     var1 = _closure2_slot0;

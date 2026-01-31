@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: StageChannelUpsell, environment: var1
+    var1 = function arg0() {
         _fun65457: for (var _fun65457_ip = 0;;) switch (_fun65457_ip) {
             case 0:
                 var0 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var16 = var11.Vh7rP7;
                 var11 = {};
-                var19 = function(arg0, arg1) { // Original name: suggestionsHook, environment: var9
+                var19 = function arg0, arg1() {
                     var4 = _closure1_slot10;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10["X/3SyA"];
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var2 = _closure1_slot1;
                     var3 = _closure1_slot2;
                     var1 = 17;
@@ -326,7 +326,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = _closure1_slot9;
                     var9 = var9.GUILD_STAGE_VOICE;
                     var5.channelType = var9;
-                    var9 = function(arg0) { // Original name: onChannelCreated, environment: var4
+                    var9 = function arg0() {
                         _fun65460: for (var _fun65460_ip = 0;;) switch (_fun65460_ip) {
                             case 0:
                                 var2 = _closure1_slot6;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var5.onChannelCreated = var9;
-                    var4 = function() { // Original name: onClose, environment: var4
+                    var4 = function() {
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
                         var0 = 17;

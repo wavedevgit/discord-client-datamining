@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun45017: for (var _fun45017_ip = 0;;) switch (_fun45017_ip) {
             case 0:
                 var3 = arg0;
@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun45018: for (var _fun45018_ip = 0;;) switch (_fun45018_ip) {
             case 0:
             case 2: // try_start_0
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0, arg1) { // Original name: extendRelation, environment: var1
+    var0 = function arg0, arg1() {
         _fun45021: for (var _fun45021_ip = 0;;) switch (_fun45021_ip) {
             case 0:
                 var6 = arg0;
@@ -154,7 +154,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var4 = var3.Gesture;
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ComposedGesture, environment: var5
+        var3 = function() {
             _fun45023: for (var _fun45023_ip = 0;;) switch (_fun45023_ip) {
                 case 0:
                     var3 = this;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var0 = 'prepareSingleGesture';
         var4.key = var0;
-        var0 = function(arg0, arg1, arg2) { // Original name: prepareSingleGesture, environment: var5
+        var0 = function arg0, arg1, arg2() {
             _fun45024: for (var _fun45024_ip = 0;;) switch (_fun45024_ip) {
                 case 0:
                     var2 = arg0;
@@ -269,7 +269,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'prepare';
         var4.key = var6;
-        var6 = function() { // Original name: prepare, environment: var5
+        var6 = function() {
             _fun45025: for (var _fun45025_ip = 0;;) switch (_fun45025_ip) {
                 case 0:
                     var3 = this;
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'initialize';
         var4.key = var6;
-        var6 = function() { // Original name: initialize, environment: var5
+        var6 = function() {
             _fun45026: for (var _fun45026_ip = 0;;) switch (_fun45026_ip) {
                 case 0:
                     var0 = this;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var6 = 'toGestureArray';
         var4.key = var6;
-        var5 = function() { // Original name: toGestureArray, environment: var5
+        var5 = function() {
             var0 = this;
             var2 = var0.gestures;
             var1 = var2.flatMap;
@@ -361,7 +361,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var4 = var3.bind(var0)(var4);
     var3 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: SimultaneousGesture, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -382,7 +382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'prepare';
         var4.key = var5;
-        var0 = function() { // Original name: prepare, environment: var0
+        var0 = function() {
             _fun45031: for (var _fun45031_ip = 0;;) switch (_fun45031_ip) {
                 case 0:
                     var3 = this;
@@ -448,7 +448,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = var3.bind(var0)(var4);
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: ExclusiveGesture, environment: var0
+        var3 = function() {
             var4 = this;
             var3 = undefined;
             var0 = undefined;
@@ -469,7 +469,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = {};
         var5 = 'prepare';
         var4.key = var5;
-        var0 = function() { // Original name: prepare, environment: var0
+        var0 = function() {
             _fun45037: for (var _fun45037_ip = 0;;) switch (_fun45037_ip) {
                 case 0:
                     var4 = this;

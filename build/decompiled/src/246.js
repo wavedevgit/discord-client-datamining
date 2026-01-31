@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1 = var5.bind(var6)(var4, var1);
     var1 = {};
-    var4 = function() { // Original name: exitApp, environment: var3
+    var4 = function() {
         _fun3297: for (var _fun3297_ip = 0;;) switch (_fun3297_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.exitApp = var4;
-    var4 = function(arg0, arg1) { // Original name: addEventListener, environment: var3
+    var4 = function arg0, arg1() {
         _fun3298: for (var _fun3298_ip = 0;;) switch (_fun3298_ip) {
             case 0:
                 var3 = arg1;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.bind(var2)(var3);
             case 51:
                 var0 = {};
-                var1 = function() { // Original name: remove, environment: var1
+                var1 = function() {
                     _fun3299: for (var _fun3299_ip = 0;;) switch (_fun3299_ip) {
                         case 0:
                             var3 = _closure1_slot2;

@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MediaModalOverlayAltTextButton, environment: var1
+    var1 = function arg0() {
         _fun73105: for (var _fun73105_ip = 0;;) switch (_fun73105_ip) {
             case 0:
                 var0 = arg0;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var6 = var6.container;
                 var1.style = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     _fun73106: for (var _fun73106_ip = 0;;) switch (_fun73106_ip) {
                         case 0:
                             var2 = _closure1_slot1;

@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var4;
     var _closure1_slot11 = var3;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: MessagesHeader, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.height;
         var _closure2_slot0 = var1;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var10[var5];
         var9 = var18.bind(var3)(var1);
         var2 = var9.useAnimatedStyle;
-        var1 = function() { // Original name: c, environment: var0
+        var1 = function() {
             _fun101284: for (var _fun101284_ip = 0;;) switch (_fun101284_ip) {
                 case 0:
                     var0 = {};
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getMessagesHeaderHeight, environment: var1
+    var1 = function arg0() {
         var0 = global;
         var3 = var0.Math;
         var2 = var3.min;

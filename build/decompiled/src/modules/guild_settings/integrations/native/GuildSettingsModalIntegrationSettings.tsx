@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun115383: for (var _fun115383_ip = 0;;) switch (_fun115383_ip) {
             case 0:
             case 2: // try_start_0
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: GraceOption, environment: var1
+    var0 = function arg0() {
         _fun115386: for (var _fun115386_ip = 0;;) switch (_fun115386_ip) {
             case 0:
                 var0 = arg0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.text = var18;
                 var15 = var17.bind(var0)(var16, var15);
                 var4.label = var15;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure2_slot0;
                     var1 = var0.value;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: ForceSyncIcon, environment: var1
+    var0 = function arg0() {
         _fun115388: for (var _fun115388_ip = 0;;) switch (_fun115388_ip) {
             case 0:
                 var1 = arg0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: TwitchEmoticonsRow, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var7 = var0.integration;
         var8 = var0.onPress;
@@ -350,7 +350,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot16 = var6;
     var6 = var3.PureComponent;
     var3 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: GuildSettingsModalIntegrationSettings, environment: var0
+        var3 = function arg0() {
             _fun115391: for (var _fun115391_ip = 0;;) switch (_fun115391_ip) {
                 case 0:
                     var4 = this;
@@ -485,7 +485,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var5 = 'render';
         var4.key = var5;
-        var0 = function() { // Original name: value, environment: var0
+        var0 = function() {
             _fun115396: for (var _fun115396_ip = 0;;) switch (_fun115396_ip) {
                 case 0:
                     var24 = this;
@@ -683,7 +683,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.style = var4;
                     var19 = var2.bind(var3)(var1, var0);
                 case 715:
-                    var0 = function() { // Original name: getSubGracePeriodOptions, environment: var14
+                    var0 = function() {
                         var1 = global;
                         var3 = var1.Object;
                         var2 = var3.values;
@@ -899,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var21 = var21["6kpw4i"];
                     var21 = var22.bind(var23)(var21);
                     var18.label = var21;
-                    var21 = function() { // Original name: onPress, environment: var14
+                    var21 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleExpireBehaviorChange;
                         var4 = _closure1_slot0;
@@ -957,7 +957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var22 = var22.fQUQIJ;
                     var22 = var23.bind(var24)(var22);
                     var19.label = var22;
-                    var22 = function() { // Original name: onPress, environment: var14
+                    var22 = function() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleExpireBehaviorChange;
                         var4 = _closure1_slot0;
@@ -1071,7 +1071,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/integrations/native/GuildSettingsModalIntegrationSettings.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ConnectedGuildSettingsModalIntegrationSettings, environment: var1
+    var1 = function arg0() {
         _fun115403: for (var _fun115403_ip = 0;;) switch (_fun115403_ip) {
             case 0:
                 var0 = arg0;

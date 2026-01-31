@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/nuf/native/components/DiscoverabilityActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: DiscoverabilityActionSheet, environment: var1
+    var1 = function() {
         _fun80659: for (var _fun80659_ip = 0;;) switch (_fun80659_ip) {
             case 0:
                 var0 = _closure1_slot10;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.t;
                 var14 = var10.eswIfi;
                 var10 = {};
-                var21 = function(arg0, arg1) { // Original name: learnMoreHook, environment: var21
+                var21 = function arg0, arg1() {
                     var4 = _closure1_slot8;
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot1;

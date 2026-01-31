@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: QuestDockEnrolledHeader, environment: var1
+    var1 = function() {
         var2 = _closure1_slot4;
         var1 = var2.useContext;
         var7 = _closure1_slot1;

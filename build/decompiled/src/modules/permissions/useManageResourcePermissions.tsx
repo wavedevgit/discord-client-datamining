@@ -54,18 +54,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'canManageAllExpressions': false,
         'canManageAllEvents': false
     };
-    var4 = function() { // Original name: canManageGuildExpression, environment: var1
+    var4 = function() {
         var0 = false;
         return var0;
     };
     var3.canManageGuildExpression = var4;
-    var4 = function() { // Original name: canManageGuildEvent, environment: var1
+    var4 = function() {
         var0 = false;
         return var0;
     };
     var3.canManageGuildEvent = var4;
     var _closure1_slot11 = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: canManageResource, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun65182: for (var _fun65182_ip = 0;;) switch (_fun65182_ip) {
             case 0:
                 var5 = arg0;
@@ -186,7 +186,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var3;
-    var3 = function(arg0) { // Original name: attachChannelPermissions, environment: var1
+    var3 = function arg0() {
         _fun65183: for (var _fun65183_ip = 0;;) switch (_fun65183_ip) {
             case 0:
                 var2 = arg0;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.canCreateGuildEvent = var5;
                 var0.canManageAllExpressions = var4;
                 var0.canManageAllEvents = var3;
-                var3 = function(arg0) { // Original name: canManageGuildExpression, environment: var2
+                var3 = function arg0() {
                     var5 = _closure1_slot12;
                     var8 = _closure2_slot4;
                     var7 = _closure2_slot1;
@@ -505,7 +505,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.canManageGuildExpression = var3;
-                var2 = function(arg0) { // Original name: canManageGuildEvent, environment: var2
+                var2 = function arg0() {
                     var5 = _closure1_slot12;
                     var8 = _closure2_slot4;
                     var7 = _closure2_slot3;

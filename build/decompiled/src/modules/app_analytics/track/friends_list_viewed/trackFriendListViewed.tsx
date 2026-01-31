@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_analytics/track/friends_list_viewed/trackFriendListViewed.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: trackFriendsListViewed, environment: var1
+    var1 = function arg0() {
         _fun107145: for (var _fun107145_ip = 0;;) switch (_fun107145_ip) {
             case 0:
                 var0 = arg0;

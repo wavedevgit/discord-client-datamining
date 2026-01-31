@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'hooks/useResettingValue.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1) { // Original name: useResettingValue, environment: var1
+    var1 = function arg0, arg1() {
         var6 = arg0;
         var7 = arg1;
         var _closure2_slot0 = var6;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: calculateStrokeWidth, environment: var1
+    var0 = function arg0, arg1() {
         var1 = 0.04;
         var0 = arg1;
         var1 = var1 * var0;

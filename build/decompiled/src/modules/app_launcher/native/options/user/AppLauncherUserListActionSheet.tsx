@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EmptyStateWithSnowflakeQuery, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.query;
         var0 = var0.onPressRow;
@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = new Array(1);
         var5[0] = var6;
         var0.data = var5;
-        var4 = function(arg0) { // Original name: renderItem, environment: var4
+        var4 = function arg0() {
             var0 = arg0;
             var4 = var0.item;
             var3 = _closure1_slot4;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/options/user/AppLauncherUserListActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: AppLauncherUserListActionSheet, environment: var1
+    var1 = function arg0() {
         _fun108222: for (var _fun108222_ip = 0;;) switch (_fun108222_ip) {
             case 0:
                 var2 = arg0;
@@ -219,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure1_slot6;
                             var1 = {};
                             var1.query = var6;
-                            var5 = function() { // Original name: onPressRow, environment: var5
+                            var5 = function() {
                                 var2 = _closure2_slot3;
                                 var1 = {};
                                 var0 = _closure3_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: useAllVisibleChannels, environment: var1
+    var0 = function arg0() {
         var5 = arg0;
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/stage_channels/useLiveStageChannels.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useLiveStageChannels, environment: var1
+    var3 = function arg0() {
         var7 = arg0;
         var _closure2_slot0 = var7;
         var2 = _closure1_slot6;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var3 = function() { // Original name: getAllLiveStageChannels, environment: var1
+    var3 = function() {
         var1 = _closure1_slot5;
         var0 = var1.getAllStageInstances;
         var3 = var0.bind(var1)();
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getAllLiveStageChannels = var3;
-    var1 = function() { // Original name: useAllLiveStageChannels, environment: var1
+    var1 = function() {
         var2 = _closure1_slot6;
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;

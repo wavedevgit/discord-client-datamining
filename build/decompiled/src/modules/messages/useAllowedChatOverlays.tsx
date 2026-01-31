@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/useAllowedChatOverlays.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useAllowedChatOverlays, environment: var1
+    var1 = function() {
         _fun89190: for (var _fun89190_ip = 0;;) switch (_fun89190_ip) {
             case 0:
                 var4 = _closure1_slot0;

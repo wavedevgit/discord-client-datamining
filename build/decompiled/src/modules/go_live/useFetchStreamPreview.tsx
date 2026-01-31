@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/go_live/useFetchStreamPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2) { // Original name: useFetchStreamPreview, environment: var1
+    var1 = function arg0, arg1, arg2() {
         _fun69277: for (var _fun69277_ip = 0;;) switch (_fun69277_ip) {
             case 0:
                 var10 = arg0;

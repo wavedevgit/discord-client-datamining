@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: KvCacheVersion, environment: var5
+        var2 = function() {
             var2 = this;
             var _closure3_slot0 = var2;
             var4 = _closure1_slot3;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = false;
             var2.hasSuccessfullyConnected = var1;
             var1 = {};
-            var4 = function(arg0, arg1) { // Original name: BACKGROUND_SYNC, environment: var3
+            var4 = function arg0, arg1() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleWrite;
                 var0 = arg1;
@@ -75,14 +75,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var1.BACKGROUND_SYNC = var4;
-            var4 = function() { // Original name: CONNECTION_OPEN, environment: var3
+            var4 = function() {
                 var1 = _closure3_slot0;
                 var0 = var1.handleConnectionOpen;
                 var0 = var0.bind(var1)();
                 return var0;
             };
             var1.CONNECTION_OPEN = var4;
-            var3 = function(arg0, arg1) { // Original name: WRITE_CACHES, environment: var3
+            var3 = function arg0, arg1() {
                 var2 = _closure3_slot0;
                 var1 = var2.handleWrite;
                 var0 = arg1;
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var7.bind(var1)(var0);
         var _closure2_slot1 = var0;
-        var0 = function() { // Original name: okAsync, environment: var5
+        var0 = function() {
             var0 = undefined;
             var3 = _closure2_slot1;
             var2 = var3.apply;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'canUseGuildVersions';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             _fun93246: for (var _fun93246_ip = 0;;) switch (_fun93246_ip) {
                 case 0:
                     var1 = this;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var1)(var6);
         var _closure2_slot0 = var6;
-        var6 = function() { // Original name: doesDatabaseVersionMatchJsConstants, environment: var5
+        var6 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -293,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleClear';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = false;
             var0 = this;
             var0.hasSuccessfullyConnected = var1;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleConnectionOpen';
         var4.key = var6;
-        var6 = function() { // Original name: value, environment: var5
+        var6 = function() {
             var1 = true;
             var0 = this;
             var0.hasSuccessfullyConnected = var1;
@@ -317,7 +317,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleWrite';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var3 = arg0;
             var1 = true;
             var0 = this;
@@ -359,7 +359,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'resetInMemoryState';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var1 = false;
             var0 = this;
             var0.hasSuccessfullyConnected = var1;

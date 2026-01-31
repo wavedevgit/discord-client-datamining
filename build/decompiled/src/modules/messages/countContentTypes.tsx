@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/messages/countContentTypes.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: countContentTypes, environment: var1
+    var1 = function arg0() {
         _fun77871: for (var _fun77871_ip = 0;;) switch (_fun77871_ip) {
             case 0:
                 var0 = arg0;

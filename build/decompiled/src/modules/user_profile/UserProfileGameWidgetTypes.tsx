@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4[3] = var1;
     var _closure1_slot4 = var4;
     var1 = function() { // Environment: var3
-        var3 = function(arg0) { // Original name: BaseGameWidget, environment: var4
+        var3 = function arg0() {
             var0 = arg0;
             var2 = this;
             var4 = var0.id;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'toSubmission';
         var0.key = var1;
-        var1 = function() { // Original name: value, environment: var4
+        var1 = function() {
             var2 = this;
             var0 = {};
             var1 = var2.id;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isDiscardable';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.games;
             var1 = var0.length;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isValid';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun42693: for (var _fun42693_ip = 0;;) switch (_fun42693_ip) {
                 case 0:
                     var1 = this;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'isEqual';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun42694: for (var _fun42694_ip = 0;;) switch (_fun42694_ip) {
                 case 0:
                     var3 = arg0;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getUniqueKey';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = this;
             var0 = var0.type;
             return var0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getProfileAnalyticsOptions';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             var0 = {};
             var1 = this;
             var1 = var1.type;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getProfileEditAnalyticsOptions';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             var0 = {};
             var1 = this;
             var1 = var1.type;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/user_profile/UserProfileGameWidgetTypes.tsx';
     var5 = var6.bind(var7)(var5);
     var2.GAME_WIDGET_TYPES = var4;
-    var4 = function(arg0) { // Original name: isGameWidgetType, environment: var3
+    var4 = function arg0() {
         var2 = _closure1_slot4;
         var1 = var2.includes;
         var0 = arg0;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isGameWidgetType = var4;
-    var3 = function(arg0) { // Original name: isGameWidget, environment: var3
+    var3 = function arg0() {
         var1 = _closure1_slot5;
         var0 = arg0;
         var0 = var0 instanceof var1;

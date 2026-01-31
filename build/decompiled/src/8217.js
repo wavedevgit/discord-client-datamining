@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: pbkdf2Init, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun66609: for (var _fun66609_ip = 0;;) switch (_fun66609_ip) {
             case 0:
                 var8 = arg0;
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: pbkdf2Output, environment: var1
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
         _fun66610: for (var _fun66610_ip = 0;;) switch (_fun66610_ip) {
             case 0:
                 var4 = arg0;
@@ -133,7 +133,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function() { // Original name: _pbkdf2Async, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot2;
@@ -499,7 +499,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var2, var3, var4);
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: pbkdf2, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun66617: for (var _fun66617_ip = 0;;) switch (_fun66617_ip) {
             case 0:
                 var5 = _closure1_slot3;
@@ -641,7 +641,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.pbkdf2 = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: pbkdf2Async, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         var0 = undefined;
         var3 = _closure1_slot5;
         var2 = var3.apply;

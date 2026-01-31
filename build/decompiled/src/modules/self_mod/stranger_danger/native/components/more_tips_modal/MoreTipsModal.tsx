@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: MoreTipsModalScreen, environment: var1
+    var0 = function arg0() {
         _fun89055: for (var _fun89055_ip = 0;;) switch (_fun89055_ip) {
             case 0:
                 var0 = arg0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: getScreens, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var3 = var0.headerStyle;
         var1 = var0.modalKey;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot7 = var0;
         var0 = {};
         var1 = {};
-        var4 = function() { // Original name: headerRight, environment: var2
+        var4 = function() {
             var3 = _closure1_slot8;
             var7 = _closure1_slot0;
             var8 = _closure1_slot2;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = var7.bind(var2)(var0);
             var1 = var0.HeaderActionButton;
             var0 = {};
-            var5 = function() { // Original name: onPress, environment: var5
+            var5 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 12;
@@ -196,18 +196,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1.headerRight = var4;
-        var4 = function() { // Original name: headerTitle, environment: var2
+        var4 = function() {
             var0 = null;
             return var0;
         };
         var1.headerTitle = var4;
-        var4 = function() { // Original name: headerLeft, environment: var2
+        var4 = function() {
             var0 = null;
             return var0;
         };
         var1.headerLeft = var4;
         var1.headerStyle = var3;
-        var2 = function() { // Original name: render, environment: var2
+        var2 = function() {
             var3 = _closure1_slot8;
             var2 = _closure1_slot11;
             var1 = {};
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreTipsModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MoreTipsModal, environment: var1
+    var1 = function arg0() {
         var6 = arg0;
         var13 = var6.channelId;
         var _closure2_slot0 = var13;

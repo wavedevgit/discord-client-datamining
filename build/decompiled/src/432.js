@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var4.bind(var0)(var1);
     var _closure1_slot4 = var1;
     var1 = {};
-    var4 = function(arg0, arg1) { // Original name: showActionSheetWithOptions, environment: var3
+    var4 = function arg0, arg1() {
         _fun5980: for (var _fun5980_ip = 0;;) switch (_fun5980_ip) {
             case 0:
                 var5 = arg0;
@@ -174,7 +174,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.showActionSheetWithOptions = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: showShareActionSheetWithOptions, environment: var3
+    var4 = function arg0, arg1, arg2() {
         _fun5981: for (var _fun5981_ip = 0;;) switch (_fun5981_ip) {
             case 0:
                 var9 = arg0;
@@ -243,7 +243,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.showShareActionSheetWithOptions = var4;
-    var3 = function() { // Original name: dismissActionSheet, environment: var3
+    var3 = function() {
         _fun5982: for (var _fun5982_ip = 0;;) switch (_fun5982_ip) {
             case 0:
                 var4 = _closure1_slot0;

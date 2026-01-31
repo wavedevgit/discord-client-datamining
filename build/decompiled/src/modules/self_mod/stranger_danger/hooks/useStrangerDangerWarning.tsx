@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useStrangerDangerWarning, environment: var1
+    var1 = function arg0() {
         _fun89032: for (var _fun89032_ip = 0;;) switch (_fun89032_ip) {
             case 0:
                 var8 = arg0;

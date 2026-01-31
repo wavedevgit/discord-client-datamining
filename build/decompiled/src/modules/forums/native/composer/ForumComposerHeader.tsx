@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forums/native/composer/ForumComposerHeader.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ForumComposerHeader, environment: var1
+    var1 = function arg0() {
         _fun73771: for (var _fun73771_ip = 0;;) switch (_fun73771_ip) {
             case 0:
                 var0 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var21.bind(var22)(var20);
                 var4.accessibilityLabel = var20;
                 var4.disabled = var12;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var2 = _closure2_slot0;
                     var1 = undefined;
                     var0 = false;

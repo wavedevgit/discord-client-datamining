@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var3.bind(var6)();
             var1 = function() { // Environment: var1
                 var3 = _closure1_slot1;
-                var2 = function() { // Original name: JSONEncoding, environment: var4
+                var2 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure2_slot0;
                     var0 = undefined;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var1 = 'pack';
                 var0.key = var1;
-                var1 = function(arg0) { // Original name: value, environment: var4
+                var1 = function arg0() {
                     var0 = global;
                     var2 = var0.JSON;
                     var1 = var2.stringify;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'unpack';
                 var0.key = var5;
-                var5 = function(arg0) { // Original name: value, environment: var4
+                var5 = function arg0() {
                     _fun94551: for (var _fun94551_ip = 0;;) switch (_fun94551_ip) {
                         case 0:
                             var4 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'getName';
                 var0.key = var5;
-                var5 = function() { // Original name: value, environment: var4
+                var5 = function() {
                     var0 = 'json';
                     return var0;
                 };
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'wantsString';
                 var0.key = var5;
-                var4 = function() { // Original name: value, environment: var4
+                var4 = function() {
                     var0 = true;
                     return var0;
                 };

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: RestrictedAccountRedirect, environment: var1
+    var0 = function() {
         var3 = _closure1_slot9;
         var1 = _closure1_slot1;
         var7 = _closure1_slot2;
@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.t;
         var5 = var5.zqv4nV;
         var0.label = var5;
-        var5 = function() { // Original name: labelHook, environment: var5
+        var5 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
             var0 = 11;

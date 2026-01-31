@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var4.bind(var0)(var3);
         case 69:
             var _closure1_slot2 = var2;
-            var2 = function(arg0, arg1) { // Original name: Call, environment: var1
+            var2 = function arg0, arg1() {
                 _fun29002: for (var _fun29002_ip = 0;;) switch (_fun29002_ip) {
                     case 0:
                         var4 = undefined;

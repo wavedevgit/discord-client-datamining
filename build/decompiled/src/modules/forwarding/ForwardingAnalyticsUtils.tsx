@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/forwarding/ForwardingAnalyticsUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0, arg1, arg2) { // Original name: trackForwardStart, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 3;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForwardStart = var3;
-    var3 = function(arg0) { // Original name: trackForwardCancel, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.channelId;
         var7 = var0.messageId;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForwardCancel = var3;
-    var3 = function(arg0) { // Original name: trackForwardSent, environment: var1
+    var3 = function arg0() {
         _fun70865: for (var _fun70865_ip = 0;;) switch (_fun70865_ip) {
             case 0:
                 var0 = arg0;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackForwardSent = var3;
-    var3 = function(arg0, arg1) { // Original name: trackForwardCopyLink, environment: var1
+    var3 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 3;
@@ -185,7 +185,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackForwardCopyLink = var3;
-    var3 = function() { // Original name: useTrackForwardAddRecipientOnce, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useTrackForwardAddRecipientOnce = var3;
-    var3 = function() { // Original name: useTrackForwardEditSearchOnce, environment: var1
+    var3 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useTrackForwardEditSearchOnce = var3;
-    var1 = function() { // Original name: useTrackForwardEditContextMessageOnce, environment: var1
+    var1 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useMemo;
         var1 = function() { // Environment: var0

@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/pomelo/native/useTransitionAnimation.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function() { // Original name: useTransitionAnimation, environment: var3
+    var3 = function() {
         var6 = _closure1_slot0;
         var7 = _closure1_slot1;
         var3 = 1;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var7[var3];
         var6 = var6.bind(var4)(var3);
         var4 = var6.useAnimatedStyle;
-        var3 = function() { // Original name: o, environment: var1
+        var3 = function() {
             var0 = {};
             var2 = {};
             var4 = _closure2_slot0;

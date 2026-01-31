@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.GuildTemplateStates;
     var _closure1_slot4 = var1;
     var1 = {};
-    var6 = function(arg0, arg1, arg2) { // Original name: messageAuthorActivitiesChanged, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun88787: for (var _fun88787_ip = 0;;) switch (_fun88787_ip) {
             case 0:
                 var1 = arg0;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.messageAuthorActivitiesChanged = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: codedLinksChanged, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun88788: for (var _fun88788_ip = 0;;) switch (_fun88788_ip) {
             case 0:
                 var3 = arg0;
@@ -887,7 +887,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.codedLinksChanged = var6;
-    var6 = function(arg0, arg1, arg2) { // Original name: giftCodesChanged, environment: var3
+    var6 = function arg0, arg1, arg2() {
         _fun88790: for (var _fun88790_ip = 0;;) switch (_fun88790_ip) {
             case 0:
                 var2 = arg0;
@@ -958,7 +958,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.giftCodesChanged = var6;
-    var3 = function(arg0, arg1, arg2) { // Original name: mediaPostPreviewEmbedsChanged, environment: var3
+    var3 = function arg0, arg1, arg2() {
         _fun88792: for (var _fun88792_ip = 0;;) switch (_fun88792_ip) {
             case 0:
                 var0 = arg1;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var6;
     var3 = var3.useState;
     var _closure1_slot4 = var3;
-    var3 = function(arg0) { // Original name: getNextBlockExpiration, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var1 = null;
         var _closure2_slot0 = var1;

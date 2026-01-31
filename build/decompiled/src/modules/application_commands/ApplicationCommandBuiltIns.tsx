@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var0)(var3);
     var3 = var3.MessageSendLocation;
     var _closure1_slot14 = var3;
-    var3 = function(arg0, arg1) { // Original name: getOptionValue, environment: var1
+    var3 = function arg0, arg1() {
         _fun61134: for (var _fun61134_ip = 0;;) switch (_fun61134_ip) {
             case 0:
                 var2 = arg0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.ApplicationCommandSectionType;
     var6 = var6.BUILT_IN;
     var3.type = var6;
-    var6 = function() { // Original name: get name, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.ApplicationCommandSectionType;
     var6 = var6.BUILT_IN;
     var3.type = var6;
-    var6 = function() { // Original name: get name, environment: var1
+    var6 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var12;
     var12 = var11.BUILT_IN;
     var9.applicationId = var12;
-    var15 = function() { // Original name: get untranslatedDescription, environment: var1
+    var15 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var16 = function() { // Original name: get displayDescription, environment: var1
+    var16 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var16 = var16.ApplicationCommandOptionType;
     var16 = var16.STRING;
     var20.type = var16;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: execute, environment: var1
+    var18 = function arg0() {
         _fun61142: for (var _fun61142_ip = 0;;) switch (_fun61142_ip) {
             case 0:
                 var0 = {};
@@ -330,7 +330,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -351,7 +351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -402,7 +402,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -426,7 +426,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: execute, environment: var1
+    var18 = function arg0() {
         _fun61147: for (var _fun61147_ip = 0;;) switch (_fun61147_ip) {
             case 0:
                 var0 = {};
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -549,7 +549,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: execute, environment: var1
+    var18 = function arg0() {
         _fun61152: for (var _fun61152_ip = 0;;) switch (_fun61152_ip) {
             case 0:
                 var0 = {};
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -645,7 +645,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -675,7 +675,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -696,7 +696,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -721,7 +721,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: predicate, environment: var1
+    var18 = function arg0() {
         _fun61157: for (var _fun61157_ip = 0;;) switch (_fun61157_ip) {
             case 0:
                 var0 = arg0;
@@ -767,7 +767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var9.predicate = var18;
-    var18 = function(arg0) { // Original name: execute, environment: var1
+    var18 = function arg0() {
         _fun61158: for (var _fun61158_ip = 0;;) switch (_fun61158_ip) {
             case 0:
                 var0 = {};
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -833,7 +833,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -863,7 +863,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -884,7 +884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -909,7 +909,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: execute, environment: var1
+    var18 = function arg0() {
         _fun61163: for (var _fun61163_ip = 0;;) switch (_fun61163_ip) {
             case 0:
                 var0 = {};
@@ -957,7 +957,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -978,7 +978,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1008,7 +1008,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1029,7 +1029,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1054,7 +1054,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: execute, environment: var1
+    var18 = function arg0() {
         _fun61168: for (var _fun61168_ip = 0;;) switch (_fun61168_ip) {
             case 0:
                 var4 = _closure1_slot15;
@@ -1101,7 +1101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1122,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1152,7 +1152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1173,7 +1173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1197,7 +1197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: predicate, environment: var1
+    var18 = function arg0() {
         _fun61173: for (var _fun61173_ip = 0;;) switch (_fun61173_ip) {
             case 0:
                 var0 = arg0;
@@ -1240,7 +1240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var9.predicate = var18;
-    var18 = function(arg0, arg1) { // Original name: execute, environment: var1
+    var18 = function arg0, arg1() {
         _fun61174: for (var _fun61174_ip = 0;;) switch (_fun61174_ip) {
             case 0:
                 var0 = arg1;
@@ -1319,7 +1319,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1340,7 +1340,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1370,7 +1370,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.STRING;
     var20.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1391,7 +1391,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1424,7 +1424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = var21.ApplicationCommandOptionType;
     var21 = var21.STRING;
     var20.type = var21;
-    var21 = function() { // Original name: get description, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1445,7 +1445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var21 = function() { // Original name: get displayDescription, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1469,7 +1469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var20.required = var13;
     var18[1] = var20;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: predicate, environment: var1
+    var18 = function arg0() {
         _fun61181: for (var _fun61181_ip = 0;;) switch (_fun61181_ip) {
             case 0:
                 var0 = arg0;
@@ -1641,7 +1641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1662,7 +1662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1692,7 +1692,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.USER;
     var19.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1713,7 +1713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1746,7 +1746,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var20 = var20.ApplicationCommandOptionType;
     var20 = var20.STRING;
     var19.type = var20;
-    var20 = function() { // Original name: get description, environment: var1
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1767,7 +1767,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var20 = function() { // Original name: get displayDescription, environment: var1
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1792,7 +1792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19.required = var20;
     var18[1] = var19;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: predicate, environment: var1
+    var18 = function arg0() {
         var0 = arg0;
         var3 = var0.guild;
         var2 = _closure1_slot6;
@@ -1803,7 +1803,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.predicate = var18;
-    var18 = function(arg0, arg1) { // Original name: execute, environment: var1
+    var18 = function arg0, arg1() {
         _fun61192: for (var _fun61192_ip = 0;;) switch (_fun61192_ip) {
             case 0:
                 var7 = arg0;
@@ -2044,7 +2044,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2065,7 +2065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2095,7 +2095,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.USER;
     var19.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2116,7 +2116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2149,7 +2149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = var21.ApplicationCommandOptionType;
     var21 = var21.INTEGER;
     var19.type = var21;
-    var21 = function() { // Original name: get description, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2170,7 +2170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var21 = function() { // Original name: get displayDescription, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2192,7 +2192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         enumerable: true
     });
     var19.required = var13;
-    var21 = function() { // Original name: get choices, environment: var1
+    var21 = function() {
         var1 = {};
         var9 = _closure1_slot0;
         var5 = _closure1_slot2;
@@ -2412,7 +2412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = var21.ApplicationCommandOptionType;
     var21 = var21.STRING;
     var19.type = var21;
-    var21 = function() { // Original name: get description, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2433,7 +2433,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var21 = function() { // Original name: get displayDescription, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2457,7 +2457,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19.required = var20;
     var18[2] = var19;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: predicate, environment: var1
+    var18 = function arg0() {
         var0 = arg0;
         var3 = var0.guild;
         var2 = _closure1_slot6;
@@ -2468,7 +2468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.predicate = var18;
-    var18 = function(arg0, arg1) { // Original name: execute, environment: var1
+    var18 = function arg0, arg1() {
         _fun61208: for (var _fun61208_ip = 0;;) switch (_fun61208_ip) {
             case 0:
                 var7 = arg0;
@@ -2738,7 +2738,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var18;
     var18 = var11.BUILT_IN;
     var9.applicationId = var18;
-    var18 = function() { // Original name: get untranslatedDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2759,7 +2759,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2789,7 +2789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var18.ApplicationCommandOptionType;
     var18 = var18.USER;
     var19.type = var18;
-    var18 = function() { // Original name: get description, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2810,7 +2810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var18 = function() { // Original name: get displayDescription, environment: var1
+    var18 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2843,7 +2843,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = var21.ApplicationCommandOptionType;
     var21 = var21.INTEGER;
     var19.type = var21;
-    var21 = function() { // Original name: get description, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2864,7 +2864,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var21 = function() { // Original name: get displayDescription, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2886,7 +2886,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         enumerable: true
     });
     var19.required = var13;
-    var21 = function() { // Original name: get choices, environment: var1
+    var21 = function() {
         var1 = _closure1_slot13;
         var0 = undefined;
         var2 = var1.bind(var0)();
@@ -2923,7 +2923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var21 = var21.ApplicationCommandOptionType;
     var21 = var21.STRING;
     var19.type = var21;
-    var21 = function() { // Original name: get description, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2944,7 +2944,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var21 = function() { // Original name: get displayDescription, environment: var1
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -2968,7 +2968,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19.required = var20;
     var18[2] = var19;
     var9.options = var18;
-    var18 = function(arg0) { // Original name: predicate, environment: var1
+    var18 = function arg0() {
         var0 = arg0;
         var3 = var0.guild;
         var2 = _closure1_slot6;
@@ -2979,7 +2979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.predicate = var18;
-    var18 = function(arg0, arg1) { // Original name: execute, environment: var1
+    var18 = function arg0, arg1() {
         _fun61225: for (var _fun61225_ip = 0;;) switch (_fun61225_ip) {
             case 0:
                 var7 = arg0;
@@ -3242,7 +3242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.inputType = var17;
     var11 = var11.BUILT_IN;
     var9.applicationId = var11;
-    var11 = function() { // Original name: get untranslatedDescription, environment: var1
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -3263,7 +3263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var11 = function() { // Original name: get displayDescription, environment: var1
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -3293,7 +3293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.ApplicationCommandOptionType;
     var11 = var11.USER;
     var12.type = var11;
-    var11 = function() { // Original name: get description, environment: var1
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -3314,7 +3314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var11 = function() { // Original name: get displayDescription, environment: var1
+    var11 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -3347,7 +3347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var14.ApplicationCommandOptionType;
     var14 = var14.STRING;
     var12.type = var14;
-    var14 = function() { // Original name: get description, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -3368,7 +3368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var14 = function() { // Original name: get displayDescription, environment: var1
+    var14 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -3390,7 +3390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         enumerable: true
     });
     var12.required = var13;
-    var14 = function() { // Original name: get maxLength, environment: var1
+    var14 = function() {
         _fun61237: for (var _fun61237_ip = 0;;) switch (_fun61237_ip) {
             case 0:
                 var2 = _closure1_slot7;
@@ -3425,7 +3425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     });
     var11[1] = var12;
     var9.options = var11;
-    var11 = function(arg0, arg1) { // Original name: execute, environment: var1
+    var11 = function arg0, arg1() {
         _fun61238: for (var _fun61238_ip = 0;;) switch (_fun61238_ip) {
             case 0:
                 var5 = arg0;

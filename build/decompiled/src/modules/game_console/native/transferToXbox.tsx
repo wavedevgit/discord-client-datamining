@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function() { // Original name: _transferToXbox, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var13.bind(var5)(var9);
                         var14 = var15.openLazy;
                         var9 = {};
-                        var16 = function() { // Original name: importer, environment: var16
+                        var16 = function() {
                             var2 = _closure1_slot0;
                             var0 = _closure1_slot3;
                             var1 = 10;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_console/native/transferToXbox.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: transferToXbox, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;

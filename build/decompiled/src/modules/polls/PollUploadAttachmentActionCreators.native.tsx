@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() { // Original name: _handlePollGifAttachmentAdd, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot6 = var0;
-    var0 = function() { // Original name: _removePollUploadAttachment, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot7 = var0;
-    var0 = function() { // Original name: _removeAllPollUploadAttachments, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/polls/PollUploadAttachmentActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: handlePollGifAttachmentAdd, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot6;
         var2 = var3.apply;
@@ -392,12 +392,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.handlePollGifAttachmentAdd = var3;
-    var3 = function() { // Original name: handlePollMediaAttachmentAdd, environment: var1
+    var3 = function() {
         var0 = undefined;
         return var0;
     };
     var2.handlePollMediaAttachmentAdd = var3;
-    var3 = function() { // Original name: removePollUploadAttachment, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot7;
         var2 = var3.apply;
@@ -408,7 +408,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.removePollUploadAttachment = var3;
-    var1 = function() { // Original name: removeAllPollUploadAttachments, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot8;
         var2 = var3.apply;

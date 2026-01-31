@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/experimental/Button/native/CollapsibleFloatingActionButtonState.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useCollapsibleFloatingActionButtonState, environment: var1
+    var3 = function() {
         var0 = {};
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useCollapsibleFloatingActionButtonState = var3;
-    var1 = function(arg0) { // Original name: useCollapsibleFloatingActionButtonScroll, environment: var1
+    var1 = function arg0() {
         _fun57405: for (var _fun57405_ip = 0;;) switch (_fun57405_ip) {
             case 0:
                 var6 = arguments[1];
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot2 = var5;
                 var3 = _closure1_slot2;
                 var2 = var3.useCallback;
-                var1 = function(arg0) { // Original name: s, environment: var1
+                var1 = function arg0() {
                     _fun57406: for (var _fun57406_ip = 0;;) switch (_fun57406_ip) {
                         case 0:
                             var0 = arg0;

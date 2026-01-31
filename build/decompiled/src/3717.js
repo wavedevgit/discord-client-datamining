@@ -7,12 +7,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = dependencyMap;
             var _closure1_slot0 = var5;
             var _closure1_slot1 = var6;
-            var0 = function() { // Original name: checkInvalidReadDuringRender, environment: var4
+            var0 = function() {
                 var0 = undefined;
                 return var0;
             };
             var _closure1_slot13 = var0;
-            var0 = function() { // Original name: checkInvalidWriteDuringRender, environment: var4
+            var0 = function() {
                 var0 = undefined;
                 return var0;
             };
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.code = var5;
             var _closure1_slot3 = var3;
             var3 = function() { // Environment: var4
-                var0 = function(arg0) { // Original name: addCompilerSafeGetAndSet, environment: var0
+                var0 = function arg0() {
                     var4 = arg0;
                     var _closure3_slot0 = var4;
                     var0 = global;
@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         'configurable': false,
                         'enumerable': false
                     };
-                    var5 = function() { // Original name: value, environment: var6
+                    var5 = function() {
                         var0 = _closure3_slot0;
                         var0 = var0.value;
                         return var0;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = function(arg0) { // Environment: var6
                         var0 = arg0;
                         var _closure4_slot0 = var0;
-                        var0 = function(arg0) { // Original name: value, environment: var1
+                        var0 = function arg0() {
                             var0 = undefined;
                             var3 = _closure4_slot0;
                             var2 = var3.apply;
@@ -141,7 +141,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.code = var5;
             var _closure1_slot5 = var3;
             var3 = function() { // Environment: var4
-                var0 = function(arg0) { // Original name: hideInternalValueProp, environment: var0
+                var0 = function arg0() {
                     var0 = global;
                     var4 = var0.Object;
                     var3 = var4.defineProperty;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3.code = var5;
             var _closure1_slot7 = var3;
             var3 = function() { // Environment: var4
-                var0 = function(arg0) { // Original name: makeMutableUI, environment: var0
+                var0 = function arg0() {
                     var0 = global;
                     var0 = var0.Map;
                     var2 = var0.prototype;
@@ -186,11 +186,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = arg0;
                     var _closure3_slot1 = var0;
                     var0 = {};
-                    var4 = function() { // Original name: get value, environment: var1
+                    var4 = function() {
                         var0 = _closure3_slot1;
                         return var0;
                     };
-                    var3 = function(arg0) { // Original name: set value, environment: var1
+                    var3 = function arg0() {
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
                         var0 = 2;
@@ -209,11 +209,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         set: var3,
                         enumerable: true
                     });
-                    var4 = function() { // Original name: get _value, environment: var1
+                    var4 = function() {
                         var0 = _closure3_slot1;
                         return var0;
                     };
-                    var3 = function(arg0) { // Original name: set _value, environment: var1
+                    var3 = function arg0() {
                         var2 = arg0;
                         var _closure4_slot0 = var2;
                         _closure3_slot1 = var2;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         set: var3,
                         enumerable: true
                     });
-                    var2 = function(arg0) { // Original name: modify, environment: var1
+                    var2 = function arg0() {
                         _fun33304: for (var _fun33304_ip = 0;;) switch (_fun33304_ip) {
                             case 0:
                                 var7 = arg0;
@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0.modify = var2;
-                    var2 = function(arg0, arg1) { // Original name: addListener, environment: var1
+                    var2 = function arg0, arg1() {
                         var3 = _closure3_slot0;
                         var2 = var3.set;
                         var1 = arg0;
@@ -295,7 +295,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0.addListener = var2;
-                    var2 = function(arg0) { // Original name: removeListener, environment: var1
+                    var2 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.delete;
                         var0 = arg0;
@@ -359,7 +359,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun33285
             }
         case 269:
-            var1 = function(arg0) { // Original name: makeMutableNative, environment: var4
+            var1 = function arg0() {
                 var10 = arg0;
                 var _closure2_slot0 = var10;
                 var4 = _closure1_slot0;
@@ -370,7 +370,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var4.bind(var2)(var0);
                 var3 = var7.makeShareableCloneRecursive;
                 var0 = {};
-                var8 = function() { // Original name: pnpm_mutablesTs4, environment: var6
+                var8 = function() {
                     var2 = _closure1_slot8;
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -389,7 +389,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.__init = var8;
                 var3 = var3.bind(var7)(var0);
                 var0 = {};
-                var9 = function() { // Original name: get value, environment: var6
+                var9 = function() {
                     var0 = _closure1_slot13;
                     var2 = undefined;
                     var0 = var0.bind(var2)();
@@ -399,7 +399,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var3[var0];
                     var3 = var1.bind(var2)(var0);
                     var1 = var3.executeOnUIRuntimeSync;
-                    var0 = function(arg0) { // Original name: pnpm_mutablesTs5, environment: var0
+                    var0 = function arg0() {
                         var0 = arg0;
                         var0 = var0.value;
                         return var0;
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var8 = function(arg0) { // Original name: set value, environment: var6
+                var8 = function arg0() {
                     var6 = arg0;
                     var _closure3_slot0 = var6;
                     var2 = _closure1_slot14;
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var5[var2];
                     var3 = var3.bind(var0)(var2);
                     var2 = var3.runOnUI;
-                    var1 = function() { // Original name: pnpm_mutablesTs6, environment: var1
+                    var1 = function() {
                         var1 = _closure2_slot1;
                         var0 = _closure3_slot0;
                         var1.value = var0;
@@ -453,7 +453,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     set: var8,
                     enumerable: true
                 });
-                var9 = function() { // Original name: get _value, environment: var6
+                var9 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 5;
@@ -473,7 +473,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0 instanceof Object ? var0 : var1;
                     throw var0;
                 };
-                var8 = function(arg0) { // Original name: set _value, environment: var6
+                var8 = function arg0() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 5;
@@ -499,7 +499,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     set: var8,
                     enumerable: true
                 });
-                var7 = function(arg0) { // Original name: modify, environment: var6
+                var7 = function arg0() {
                     _fun33325: for (var _fun33325_ip = 0;;) switch (_fun33325_ip) {
                         case 0:
                             var7 = arg0;
@@ -532,7 +532,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var5[var2];
                             var3 = var3.bind(var0)(var2);
                             var2 = var3.runOnUI;
-                            var1 = function() { // Original name: pnpm_mutablesTs7, environment: var1
+                            var1 = function() {
                                 var3 = _closure2_slot1;
                                 var2 = var3.modify;
                                 var1 = _closure3_slot0;
@@ -557,7 +557,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var0.modify = var7;
-                var7 = function() { // Original name: addListener, environment: var6
+                var7 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 5;
@@ -578,7 +578,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     throw var0;
                 };
                 var0.addListener = var7;
-                var7 = function() { // Original name: removeListener, environment: var6
+                var7 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var0 = 5;
@@ -617,7 +617,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             _fun33285_ip = 281;
             continue _fun33285;
         case 276:
-            var1 = function(arg0) { // Original name: makeMutableWeb, environment: var4
+            var1 = function arg0() {
                 _fun33307: for (var _fun33307_ip = 0;;) switch (_fun33307_ip) {
                     case 0:
                         var0 = arg0;
@@ -635,14 +635,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var0 instanceof Object ? var0 : var2;
                         var _closure2_slot1 = var0;
                         var0 = {};
-                        var4 = function() { // Original name: get value, environment: var1
+                        var4 = function() {
                             var1 = _closure1_slot13;
                             var0 = undefined;
                             var0 = var1.bind(var0)();
                             var0 = _closure2_slot0;
                             return var0;
                         };
-                        var3 = function(arg0) { // Original name: set value, environment: var1
+                        var3 = function arg0() {
                             var2 = _closure1_slot14;
                             var0 = undefined;
                             var2 = var2.bind(var0)();
@@ -663,11 +663,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             set: var3,
                             enumerable: true
                         });
-                        var4 = function() { // Original name: get _value, environment: var1
+                        var4 = function() {
                             var0 = _closure2_slot0;
                             return var0;
                         };
-                        var3 = function(arg0) { // Original name: set _value, environment: var1
+                        var3 = function arg0() {
                             var2 = arg0;
                             var _closure3_slot0 = var2;
                             _closure2_slot0 = var2;
@@ -690,7 +690,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             set: var3,
                             enumerable: true
                         });
-                        var2 = function(arg0) { // Original name: modify, environment: var1
+                        var2 = function arg0() {
                             _fun33313: for (var _fun33313_ip = 0;;) switch (_fun33313_ip) {
                                 case 0:
                                     var7 = arg0;
@@ -741,7 +741,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         };
                         var0.modify = var2;
-                        var2 = function(arg0, arg1) { // Original name: addListener, environment: var1
+                        var2 = function arg0, arg1() {
                             var3 = _closure2_slot1;
                             var2 = var3.set;
                             var1 = arg0;
@@ -751,7 +751,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                         };
                         var0.addListener = var2;
-                        var2 = function(arg0) { // Original name: removeListener, environment: var1
+                        var2 = function arg0() {
                             var2 = _closure2_slot1;
                             var1 = var2.delete;
                             var0 = arg0;

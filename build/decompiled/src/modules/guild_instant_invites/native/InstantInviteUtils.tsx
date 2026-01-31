@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.bind(var5)(var0);
                 var0 = var0.share;
                 var1.iconSource = var0;
-                var0 = function() { // Original name: action, environment: var2
+                var0 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 6;
@@ -212,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6.bind(var5)(var9);
                 var9 = var9.copy;
                 var1.iconSource = var9;
-                var9 = function() { // Original name: action, environment: var2
+                var9 = function() {
                     _fun72811: for (var _fun72811_ip = 0;;) switch (_fun72811_ip) {
                         case 0:
                             var2 = _closure2_slot3;

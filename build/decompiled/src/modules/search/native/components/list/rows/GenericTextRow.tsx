@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot6 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: GenericTextRow, environment: var1
+    var1 = function arg0() {
         _fun105621: for (var _fun105621_ip = 0;;) switch (_fun105621_ip) {
             case 0:
                 var1 = arg0;

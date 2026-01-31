@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/sidebar/member_list/SwipeToMemberListUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useIsSwipeToMemberListEnabled, environment: var1
+    var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsSwipeToMemberListEnabled = var3;
-    var1 = function() { // Original name: isSwipeToMemberListEnabled, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;

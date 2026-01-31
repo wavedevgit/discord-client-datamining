@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 continue _fun28911
             }
         case 58:
-            var6 = function(arg0) { // Original name: isSymbol, environment: var1
+            var6 = function arg0() {
                 var0 = false;
                 return var0;
             };
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = /^Symbol\(.*\)$/;
             var3 = var4.bind(var0)(var3);
             var _closure1_slot2 = var3;
-            var1 = function(arg0) { // Original name: isSymbol, environment: var1
+            var1 = function arg0() {
                 _fun28912: for (var _fun28912_ip = 0;;) switch (_fun28912_ip) {
                     case 0:
                         var1 = arg0;

@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var _closure1_slot4 = var3;
-    var3 = function(arg0, arg1) { // Original name: getMidpointColor, environment: var1
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var0 = var2.toRgb;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot5 = var3;
-    var3 = function(arg0, arg1) { // Original name: getBackgroundColors, environment: var1
+    var3 = function arg0, arg1() {
         _fun75315: for (var _fun75315_ip = 0;;) switch (_fun75315_ip) {
             case 0:
                 var3 = arg0;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot6 = var3;
-    var3 = function(arg0, arg1) { // Original name: getButtonColors, environment: var1
+    var3 = function arg0, arg1() {
         _fun75316: for (var _fun75316_ip = 0;;) switch (_fun75316_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var3 = function(arg0, arg1) { // Original name: desaturate, environment: var1
+    var3 = function arg0, arg1() {
         var1 = arg0;
         var0 = var1.toHsl;
         var0 = var0.bind(var1)();
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/createUseCollectiblesShopStyles.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var7;
-    var3 = function(arg0) { // Original name: BurstReactionButton, environment: var4
+    var3 = function arg0() {
         _fun76468: for (var _fun76468_ip = 0;;) switch (_fun76468_ip) {
             case 0:
                 var0 = arg0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var1 = function(arg0) { // Original name: ReactionButton, environment: var4
+    var1 = function arg0() {
         _fun76469: for (var _fun76469_ip = 0;;) switch (_fun76469_ip) {
             case 0:
                 var0 = arg0;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var5 = 14;
     var2.DEFAULT_EMOJI_SIZE = var5;
-    var5 = function(arg0) { // Original name: AdditionalReactionCount, environment: var4
+    var5 = function arg0() {
         var0 = arg0;
         var8 = var0.count;
         var2 = var0.threadId;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.AdditionalReactionCount = var5;
-    var5 = function(arg0) { // Original name: AddReactionButton, environment: var4
+    var5 = function arg0() {
         _fun76471: for (var _fun76471_ip = 0;;) switch (_fun76471_ip) {
             case 0:
                 var0 = arg0;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.AddReactionButton = var5;
-    var4 = function(arg0) { // Original name: ForumPostReactionButton, environment: var4
+    var4 = function arg0() {
         _fun76472: for (var _fun76472_ip = 0;;) switch (_fun76472_ip) {
             case 0:
                 var0 = arg0;

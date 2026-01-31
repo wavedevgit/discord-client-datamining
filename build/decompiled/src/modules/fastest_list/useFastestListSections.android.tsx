@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/fastest_list/useFastestListSections.android.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: useFastestListSections, environment: var1
+    var1 = function arg0() {
         _fun60978: for (var _fun60978_ip = 0;;) switch (_fun60978_ip) {
             case 0:
                 var3 = arg0;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 0;
                     var _closure3_slot0 = var0;
                     var0 = {};
-                    var2 = function() { // Original name: getId, environment: var1
+                    var2 = function() {
                         var2 = _closure3_slot0;
                         var0 = global;
                         var0 = var0.HermesInternal;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var0.getId = var2;
-                    var1 = function() { // Original name: incrementId, environment: var1
+                    var1 = function() {
                         var0 = _closure3_slot0;
                         var0 = parseFloat(var0);
                         var1 = var0 + 1;

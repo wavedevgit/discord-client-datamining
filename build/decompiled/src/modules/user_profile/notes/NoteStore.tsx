@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun91793: for (var _fun91793_ip = 0;;) switch (_fun91793_ip) {
             case 0:
             case 2: // try_start_0
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4.bind(var0)(var1);
     var6 = var1.LibdiscoreStore;
     var1 = function(arg0) { // Environment: var3
-        var3 = function(arg0) { // Original name: NoteStore, environment: var5
+        var3 = function arg0() {
             _fun91797: for (var _fun91797_ip = 0;;) switch (_fun91797_ip) {
                 case 0:
                     var3 = this;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'getNote';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var0 = this;
             var2 = var0.database;
             var1 = var2.get;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'stateWrapper';
         var4.key = var6;
-        var5 = function() { // Original name: value, environment: var5
+        var5 = function() {
             var0 = this;
             var0 = var0.database;
             return var0;
@@ -168,21 +168,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'NoteStore';
     var6.displayName = var1;
     var1 = {};
-    var7 = function(arg0, arg1) { // Original name: CONNECTION_OPEN, environment: var3
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function(arg0, arg1) { // Original name: OVERLAY_INITIALIZE, environment: var3
+    var7 = function arg0, arg1() {
         var1 = arg1;
         var0 = var1.clear;
         var0 = var0.bind(var1)();
         return var0;
     };
     var1.OVERLAY_INITIALIZE = var7;
-    var7 = function(arg0, arg1) { // Original name: USER_NOTE_UPDATE, environment: var3
+    var7 = function arg0, arg1() {
         var0 = arg0;
         var4 = arg1;
         var3 = var4.set;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.USER_NOTE_UPDATE = var7;
-    var3 = function(arg0, arg1) { // Original name: USER_NOTE_LOAD_START, environment: var3
+    var3 = function arg0, arg1() {
         var4 = arg1;
         var3 = var4.set;
         var0 = arg0;

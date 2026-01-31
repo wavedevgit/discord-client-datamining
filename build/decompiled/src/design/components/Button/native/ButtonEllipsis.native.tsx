@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: EllipsisCircle, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.variant;
         var8 = var0.size;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6[var0];
         var7 = var7.bind(var3)(var5);
         var5 = var7.useAnimatedStyle;
-        var2 = function() { // Original name: w, environment: var2
+        var2 = function() {
             var0 = {};
             var3 = _closure2_slot1;
             var2 = var3.get;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot7 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: withEllipsisAnimation, environment: var0
+        var0 = function arg0, arg1() {
             var8 = _closure1_slot0;
             var9 = _closure1_slot2;
             var4 = 2;
@@ -306,7 +306,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Button/native/ButtonEllipsis.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Ellipsis, environment: var1
+    var1 = function arg0() {
         var8 = arg0;
         var3 = _closure1_slot4;
         var1 = _closure1_slot1;

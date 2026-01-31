@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: createMinimalMessageRecord, environment: var1
+    var0 = function arg0() {
         _fun36406: for (var _fun36406_ip = 0;;) switch (_fun36406_ip) {
             case 0:
                 var1 = arg0;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var3 = function(arg0) { // Original name: createMessageRecord, environment: var1
+    var3 = function arg0() {
         _fun36407: for (var _fun36407_ip = 0;;) switch (_fun36407_ip) {
             case 0:
                 var6 = arg0;
@@ -602,7 +602,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var3;
-    var0 = function(arg0) { // Original name: transformAttachments, environment: var1
+    var0 = function arg0() {
         _fun36410: for (var _fun36410_ip = 0;;) switch (_fun36410_ip) {
             case 0:
                 var0 = arg0;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0, arg1) { // Original name: transformMessageCall, environment: var1
+    var0 = function arg0, arg1() {
         _fun36412: for (var _fun36412_ip = 0;;) switch (_fun36412_ip) {
             case 0:
                 var3 = arg0;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: transformEmbeds, environment: var1
+    var0 = function arg0() {
         _fun36413: for (var _fun36413_ip = 0;;) switch (_fun36413_ip) {
             case 0:
                 var1 = arg0;
@@ -752,7 +752,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: transformReactions, environment: var1
+    var0 = function arg0, arg1() {
         _fun36415: for (var _fun36415_ip = 0;;) switch (_fun36415_ip) {
             case 0:
                 var5 = arg0;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: transformMessageSnapshots, environment: var1
+    var0 = function arg0() {
         _fun36418: for (var _fun36418_ip = 0;;) switch (_fun36418_ip) {
             case 0:
                 var0 = arg0;
@@ -1043,7 +1043,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/MessageRecordUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.createMessageRecord = var3;
-    var3 = function(arg0, arg1) { // Original name: updateServerMessage, environment: var1
+    var3 = function arg0, arg1() {
         _fun36420: for (var _fun36420_ip = 0;;) switch (_fun36420_ip) {
             case 0:
                 var2 = arg0;
@@ -1081,7 +1081,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateServerMessage = var3;
-    var3 = function(arg0, arg1) { // Original name: updateMessageRecord, environment: var1
+    var3 = function arg0, arg1() {
         _fun36421: for (var _fun36421_ip = 0;;) switch (_fun36421_ip) {
             case 0:
                 var0 = arg0;
@@ -1462,7 +1462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.canEditMessageWithStickers = var3;
-    var1 = function(arg0) { // Original name: hasEphemeralAppearance, environment: var1
+    var1 = function arg0() {
         _fun36424: for (var _fun36424_ip = 0;;) switch (_fun36424_ip) {
             case 0:
                 var2 = arg0;

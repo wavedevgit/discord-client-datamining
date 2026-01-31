@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     });
     var0 = new var2[var1](var1);
-    var1 = function(arg0) { // Original name: warnOnce, environment: var0
+    var1 = function arg0() {
         var0 = undefined;
         return var0;
     };

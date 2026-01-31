@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/WebViewWebmSupportTest.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: isIOSWithWebM, environment: var1
+    var1 = function() {
         _fun36499: for (var _fun36499_ip = 0;;) switch (_fun36499_ip) {
             case 0:
                 var2 = _closure1_slot0;

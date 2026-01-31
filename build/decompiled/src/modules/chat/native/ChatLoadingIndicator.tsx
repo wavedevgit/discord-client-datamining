@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.pulse = var9;
     var3 = var6.bind(var8)(var3);
     var _closure1_slot16 = var3;
-    var3 = function() { // Original name: openLoadingIndicatorDebugBody, environment: var1
+    var3 = function() {
         _fun72123: for (var _fun72123_ip = 0;;) switch (_fun72123_ip) {
             case 0:
                 var2 = _closure1_slot10;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var0)(var1);
                 var1 = var2.openLazy;
                 var0 = {};
-                var3 = function() { // Original name: importer, environment: var3
+                var3 = function() {
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot2;
                     var1 = 15;
@@ -233,7 +233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.messagesCached;
                 var8 = var5.messagesReady;
                 var5 = var5.connected;
-                var7 = function(arg0, arg1, arg2) { // Original name: renderField, environment: var2
+                var7 = function arg0, arg1, arg2() {
                     _fun72129: for (var _fun72129_ip = 0;;) switch (_fun72129_ip) {
                         case 0:
                             var7 = arg1;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/chat/native/ChatLoadingIndicator.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useShouldChannelShowLoadingIndicator, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var3 = _closure1_slot0;
@@ -532,7 +532,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useShouldChannelShowLoadingIndicator = var3;
-    var1 = function() { // Original name: ChannelHeaderLoadingIndicator, environment: var1
+    var1 = function() {
         _fun72135: for (var _fun72135_ip = 0;;) switch (_fun72135_ip) {
             case 0:
                 var1 = _closure1_slot16;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var14[var5];
                 var3 = var13.bind(var4)(var2);
                 var2 = var3.useAnimatedStyle;
-                var0 = function() { // Original name: t, environment: var0
+                var0 = function() {
                     _fun72138: for (var _fun72138_ip = 0;;) switch (_fun72138_ip) {
                         case 0:
                             var0 = _closure2_slot0;

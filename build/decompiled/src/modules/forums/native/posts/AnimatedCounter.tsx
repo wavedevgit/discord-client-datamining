@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getStartPosition, environment: var1
+    var0 = function arg0() {
         _fun76587: for (var _fun76587_ip = 0;;) switch (_fun76587_ip) {
             case 0:
                 var0 = arg0;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: AnimatedCount, environment: var1
+    var0 = function arg0() {
         _fun76588: for (var _fun76588_ip = 0;;) switch (_fun76588_ip) {
             case 0:
                 var0 = arg0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var12[var0];
                 var13 = var5.bind(var3)(var2);
                 var6 = var13.useAnimatedStyle;
-                var2 = function() { // Original name: y, environment: var1
+                var2 = function() {
                     var0 = {};
                     var2 = {};
                     var12 = _closure1_slot0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot6;
                     var5 = var8.bind(var14)(var5, var4, var3);
                     var17 = _closure2_slot3;
-                    var3 = function(arg0) { // Original name: t, environment: var3
+                    var3 = function arg0() {
                         _fun76592: for (var _fun76592_ip = 0;;) switch (_fun76592_ip) {
                             case 0:
                                 var0 = arg0;
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot17 = var0;
-    var0 = function(arg0) { // Original name: AnimatedCounterTransitionGroup, environment: var1
+    var0 = function arg0() {
         var1 = arg0;
         var12 = var1.count;
         var _closure2_slot0 = var12;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var1 = var7.bind(var9)(var1, var4);
-        var1 = function(arg0, arg1) { // Original name: useAnimationContext, environment: var0
+        var1 = function arg0, arg1() {
             var5 = arg0;
             var4 = arg1;
             var _closure3_slot0 = var5;
@@ -593,7 +593,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: BasicCounter, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var5 = var0.count;
         var6 = var0.textStyle;

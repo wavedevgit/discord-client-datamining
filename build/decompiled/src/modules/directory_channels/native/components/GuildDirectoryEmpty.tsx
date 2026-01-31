@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryEmpty.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun91259: for (var _fun91259_ip = 0;;) switch (_fun91259_ip) {
             case 0:
                 var0 = arg0;
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var15 = var13.ctaContainer;
                 var6.style = var15;
-                var15 = function() { // Original name: onPress, environment: var10
+                var15 = function() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
                     var0 = 15;
@@ -278,7 +278,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var13 = var13.ctaContainer;
                 var5.style = var13;
-                var10 = function() { // Original name: onPress, environment: var10
+                var10 = function() {
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
                     var1 = 17;

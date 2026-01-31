@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = dependencyMap;
             var _closure1_slot0 = var6;
             var _closure1_slot1 = var7;
-            var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var3
+            var0 = function arg0, arg1() {
                 _fun17834: for (var _fun17834_ip = 0;;) switch (_fun17834_ip) {
                     case 0:
                         var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot4 = var0;
-            var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var3
+            var0 = function arg0, arg1() {
                 _fun17836: for (var _fun17836_ip = 0;;) switch (_fun17836_ip) {
                     case 0:
                         var3 = arg0;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun17833
             }
         case 161:
-            var1 = function(arg0) { // Original name: fullNormalize, environment: var3
+            var1 = function arg0() {
                 var4 = arg0;
                 var5 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.bind(var0)(var5);
             var5 = var5.cssValueToNumber;
             var2.cssValueToNumber = var5;
-            var5 = function(arg0) { // Original name: upperCaseFirstChar, environment: var3
+            var5 = function arg0() {
                 _fun17842: for (var _fun17842_ip = 0;;) switch (_fun17842_ip) {
                     case 0:
                         var5 = arg0;
@@ -477,7 +477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var2.truncateText = var5;
-            var5 = function(arg0) { // Original name: getAcronym, environment: var3
+            var5 = function arg0() {
                 _fun17844: for (var _fun17844_ip = 0;;) switch (_fun17844_ip) {
                     case 0:
                         var5 = arg0;
@@ -512,7 +512,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getAcronym = var5;
             var2.stripDiacritics = var4;
-            var3 = function(arg0) { // Original name: countGraphemeClusters, environment: var3
+            var3 = function arg0() {
                 _fun17846: for (var _fun17846_ip = 0;;) switch (_fun17846_ip) {
                     case 0:
                         var0 = arg0;

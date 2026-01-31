@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var3 = function() { // Original name: useFetchPurchases, environment: var1
+    var3 = function() {
         _fun50746: for (var _fun50746_ip = 0;;) switch (_fun50746_ip) {
             case 0:
                 var12 = arguments[0];
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var3;
-    var4 = function(arg0, arg1) { // Original name: useFetchCollectiblesCategoriesAndPurchases, environment: var1
+    var4 = function arg0, arg1() {
         _fun50753: for (var _fun50753_ip = 0;;) switch (_fun50753_ip) {
             case 0:
                 var4 = arg0;

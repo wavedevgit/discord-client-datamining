@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot9 = var3;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: EnteringAnimation, environment: var0
+        var0 = function() {
             var0 = {};
             var1 = {};
             var2 = 0;
@@ -167,7 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot11 = var3;
     var3 = function() { // Environment: var1
-        var0 = function() { // Original name: ExitingAnimation, environment: var0
+        var0 = function() {
             var0 = {};
             var1 = {};
             var2 = 1;

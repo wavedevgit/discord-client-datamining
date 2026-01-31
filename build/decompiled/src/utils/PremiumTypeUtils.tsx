@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = require;
     var2 = exports;
     var9 = dependencyMap;
-    var5 = function(arg0, arg1) { // Original name: isPremiumAtLeast, environment: var4
+    var5 = function arg0, arg1() {
         _fun18100: for (var _fun18100_ip = 0;;) switch (_fun18100_ip) {
             case 0:
                 var5 = arg0;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot1 = var5;
-    var3 = function(arg0, arg1) { // Original name: isPremium, environment: var4
+    var3 = function arg0, arg1() {
         _fun18101: for (var _fun18101_ip = 0;;) switch (_fun18101_ip) {
             case 0:
                 var1 = arg0;
@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1 = function(arg0, arg1) { // Original name: isPremiumExactly, environment: var4
+    var1 = function arg0, arg1() {
         _fun18102: for (var _fun18102_ip = 0;;) switch (_fun18102_ip) {
             case 0:
                 var1 = arg0;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var9)(var7);
     var2.default = var6;
     var2.isPremiumAtLeast = var5;
-    var4 = function(arg0, arg1) { // Original name: isPremiumAtMost, environment: var4
+    var4 = function arg0, arg1() {
         _fun18103: for (var _fun18103_ip = 0;;) switch (_fun18103_ip) {
             case 0:
                 var3 = arg0;

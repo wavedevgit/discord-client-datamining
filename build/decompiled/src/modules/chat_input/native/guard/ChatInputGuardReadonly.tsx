@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: sortChannelsByLastMessageId, environment: var1
+    var0 = function arg0, arg1() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var1 = 15;
@@ -86,11 +86,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot12 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputGuardReadonly, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
         var1 = var0.channel;
-        var0 = function(arg0, arg1) { // Original name: useNotice, environment: var0
+        var0 = function arg0, arg1() {
             _fun90669: for (var _fun90669_ip = 0;;) switch (_fun90669_ip) {
                 case 0:
                     var5 = arg0;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.channelName = var9;
                     var1 = var5.bind(var6)(var4, var1);
                     var0.text = var1;
-                    var1 = function() { // Original name: handlePress, environment: var2
+                    var1 = function() {
                         var4 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 13;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4["gHD/nZ"];
                     var4 = var5.bind(var6)(var4);
                     var1.text = var4;
-                    var4 = function() { // Original name: handlePress, environment: var2
+                    var4 = function() {
                         var4 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 13;
@@ -354,7 +354,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.channelName = var7;
                     var3 = var5.bind(var6)(var4, var3);
                     var1.text = var3;
-                    var2 = function() { // Original name: handlePress, environment: var2
+                    var2 = function() {
                         var4 = _closure1_slot1;
                         var3 = _closure1_slot2;
                         var0 = 13;

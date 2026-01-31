@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun78762: for (var _fun78762_ip = 0;;) switch (_fun78762_ip) {
             case 0:
                 var2 = arg0;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun78764: for (var _fun78764_ip = 0;;) switch (_fun78764_ip) {
             case 0:
                 var3 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot4 = var0;
-    var4 = function(arg0) { // Original name: getExperimentDateFromId, environment: var1
+    var4 = function arg0() {
         _fun78765: for (var _fun78765_ip = 0;;) switch (_fun78765_ip) {
             case 0:
                 var2 = _closure1_slot2;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var4;
-    var3 = function(arg0, arg1) { // Original name: matchesDeep, environment: var1
+    var3 = function arg0, arg1() {
         _fun78766: for (var _fun78766_ip = 0;;) switch (_fun78766_ip) {
             case 0:
                 var1 = arg0;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/user_settings/UserSettingsExperimentsUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.getExperimentDateFromId = var4;
-    var4 = function(arg0) { // Original name: getEntries, environment: var1
+    var4 = function arg0() {
         var0 = global;
         var2 = var0.Array;
         var1 = var2.from;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEntries = var4;
     var2.matchesDeep = var3;
-    var3 = function(arg0, arg1) { // Original name: sortEntries, environment: var1
+    var3 = function arg0, arg1() {
         var2 = arg0;
         var1 = arg1;
         var _closure2_slot0 = var1;
@@ -590,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.sortEntries = var3;
-    var1 = function(arg0, arg1) { // Original name: getBestMatches, environment: var1
+    var1 = function arg0, arg1() {
         _fun78771: for (var _fun78771_ip = 0;;) switch (_fun78771_ip) {
             case 0:
                 var0 = arg0;

@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/notifications/settings/native/MuteAppDmActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: MuteAppDMActionSheet, environment: var1
+    var1 = function arg0() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var10 = var0.bind(var3)();
@@ -230,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var14.uAmAiL;
         var14 = var17.bind(var18)(var14);
         var8.text = var14;
-        var14 = function() { // Original name: onPress, environment: var11
+        var14 = function() {
             var2 = _closure1_slot1;
             var8 = _closure1_slot2;
             var0 = 11;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4.EgGpkx;
             var4 = var5.bind(var6)(var4);
             var1.content = var4;
-            var4 = function() { // Original name: icon, environment: var4
+            var4 = function() {
                 var3 = _closure1_slot4;
                 var2 = _closure1_slot3;
                 var1 = {};
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var12.WAI6xu;
         var12 = var13.bind(var14)(var12);
         var9.text = var12;
-        var11 = function() { // Original name: onPress, environment: var11
+        var11 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 13;

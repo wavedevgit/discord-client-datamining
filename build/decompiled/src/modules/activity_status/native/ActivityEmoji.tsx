@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activity_status/native/ActivityEmoji.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ActivityEmoji, environment: var1
+    var1 = function arg0() {
         _fun61977: for (var _fun61977_ip = 0;;) switch (_fun61977_ip) {
             case 0:
                 var1 = arg0;

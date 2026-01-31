@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: renderChat, environment: var3
+    var0 = function arg0() {
         var3 = _closure1_slot7;
         var1 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.code = var8;
     var _closure1_slot13 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: VoicePanelControlsDrawer, environment: var3
+    var3 = function arg0() {
         _fun111640: for (var _fun111640_ip = 0;;) switch (_fun111640_ip) {
             case 0:
                 var0 = arg0;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7[var0];
                 var10 = var18.bind(var3)(var6);
                 var8 = var10.useAnimatedStyle;
-                var6 = function() { // Original name: M, environment: var1
+                var6 = function() {
                     _fun111641: for (var _fun111641_ip = 0;;) switch (_fun111641_ip) {
                         case 0:
                             var0 = {};
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7[var0];
                 var14 = var18.bind(var3)(var8);
                 var12 = var14.useAnimatedReaction;
-                var10 = function() { // Original name: x, environment: var1
+                var10 = function() {
                     var2 = _closure2_slot0;
                     var0 = var2.get;
                     var0 = var0.bind(var2)();
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.__workletHash = var8;
                 var8 = _closure1_slot12;
                 var10.__initData = var8;
-                var8 = function(arg0, arg1) { // Original name: k, environment: var1
+                var8 = function arg0, arg1() {
                     _fun111643: for (var _fun111643_ip = 0;;) switch (_fun111643_ip) {
                         case 0:
                             var5 = arg0;

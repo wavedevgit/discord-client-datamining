@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
-    var0 = function(arg0) { // Original name: ChannelPermissionSyncModule, environment: var1
+    var0 = function arg0() {
         _fun109031: for (var _fun109031_ip = 0;;) switch (_fun109031_ip) {
             case 0:
                 var1 = arg0;
@@ -297,7 +297,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot19 = var0;
-    var0 = function(arg0) { // Original name: CategorySync, environment: var1
+    var0 = function arg0() {
         _fun109036: for (var _fun109036_ip = 0;;) switch (_fun109036_ip) {
             case 0:
                 var0 = arg0;
@@ -332,14 +332,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0) { // Original name: AddPermission, environment: var1
+    var0 = function arg0() {
         _fun109037: for (var _fun109037_ip = 0;;) switch (_fun109037_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.isEditing;
                 var3 = undefined;
                 var _closure2_slot0 = var3;
-                var1 = function(arg0) { // Original name: handleCreatePermissionOverwrite, environment: var11
+                var1 = function arg0() {
                     var3 = _closure2_slot0;
                     var2 = var3.push;
                     var0 = _closure1_slot15;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var17.fVWxvT;
                 var17 = var18.bind(var19)(var17);
                 var7.label = var17;
-                var17 = function() { // Original name: onPress, environment: var11
+                var17 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot14;
                     var1 = var0.ROLE;
@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.riesLt;
                 var12 = var13.bind(var14)(var12);
                 var8.label = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot14;
                     var1 = var0.MEMBER;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0) { // Original name: RoleRow, environment: var1
+    var0 = function arg0() {
         _fun109041: for (var _fun109041_ip = 0;;) switch (_fun109041_ip) {
             case 0:
                 var0 = arg0;
@@ -567,7 +567,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var0 = function(arg0) { // Original name: RoleOverwrites, environment: var1
+    var0 = function arg0() {
         _fun109042: for (var _fun109042_ip = 0;;) switch (_fun109042_ip) {
             case 0:
                 var2 = arg0;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.role = var0;
                     var5 = _closure2_slot1;
                     var2.isEditing = var5;
-                    var5 = function() { // Original name: onSelect, environment: var1
+                    var5 = function() {
                         var2 = _closure2_slot2;
                         var0 = _closure3_slot0;
                         var1 = var0.id;
@@ -699,7 +699,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.onSelect = var5;
-                    var1 = function() { // Original name: onDelete, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot3;
                         var0 = _closure3_slot0;
                         var1 = var0.id;
@@ -722,7 +722,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot23 = var0;
-    var0 = function(arg0) { // Original name: MemberRow, environment: var1
+    var0 = function arg0() {
         _fun109048: for (var _fun109048_ip = 0;;) switch (_fun109048_ip) {
             case 0:
                 var0 = arg0;
@@ -792,7 +792,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot24 = var0;
-    var0 = function(arg0) { // Original name: MemberOverwrites, environment: var1
+    var0 = function arg0() {
         _fun109049: for (var _fun109049_ip = 0;;) switch (_fun109049_ip) {
             case 0:
                 var0 = arg0;
@@ -904,7 +904,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.user = var0;
                     var5 = _closure2_slot1;
                     var2.isEditing = var5;
-                    var5 = function() { // Original name: onSelect, environment: var1
+                    var5 = function() {
                         var2 = _closure2_slot2;
                         var0 = _closure3_slot0;
                         var1 = var0.id;
@@ -913,7 +913,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var2.onSelect = var5;
-                    var1 = function() { // Original name: onDelete, environment: var1
+                    var1 = function() {
                         var2 = _closure2_slot3;
                         var0 = _closure3_slot0;
                         var1 = var0.id;
@@ -1030,7 +1030,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/channel_settings/ChannelSettingsPermissionsOverview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ChannelSettingsPermissionsOverview, environment: var1
+    var1 = function arg0() {
         _fun109056: for (var _fun109056_ip = 0;;) switch (_fun109056_ip) {
             case 0:
                 var0 = arg0;
@@ -1040,7 +1040,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var4;
                 var _closure2_slot5 = var4;
                 var _closure2_slot6 = var4;
-                var0 = function(arg0, arg1) { // Original name: handlePressRow, environment: var9
+                var0 = function arg0, arg1() {
                     _fun109057: for (var _fun109057_ip = 0;;) switch (_fun109057_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -1065,7 +1065,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var _closure2_slot9 = var0;
-                var0 = function(arg0) { // Original name: handleClearPermissionOverwrite, environment: var9
+                var0 = function arg0() {
                     _fun109058: for (var _fun109058_ip = 0;;) switch (_fun109058_ip) {
                         case 0:
                             var7 = arg0;
@@ -1146,7 +1146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.p89ACt;
                             var5 = var6.bind(var7)(var5);
                             var1.confirmText = var5;
-                            var4 = function() { // Original name: onConfirm, environment: var4
+                            var4 = function() {
                                 var4 = _closure3_slot0;
                                 var2 = _closure1_slot1;
                                 var1 = _closure1_slot3;
@@ -1356,7 +1356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot1;
                     var1 = var2.setOptions;
                     var0 = {};
-                    var3 = function(arg0) { // Original name: headerRight, environment: var3
+                    var3 = function arg0() {
                         _fun109068: for (var _fun109068_ip = 0;;) switch (_fun109068_ip) {
                             case 0:
                                 var3 = _closure1_slot16;
@@ -1452,7 +1452,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.guild = var13;
                 var7.channel = var11;
                 var7.isEditing = var10;
-                var13 = function(arg0) { // Original name: onSelectRow, environment: var9
+                var13 = function arg0() {
                     var3 = _closure2_slot9;
                     var0 = _closure1_slot14;
                     var2 = var0.ROLE;
@@ -1462,7 +1462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var7.onSelectRow = var13;
-                var13 = function(arg0) { // Original name: onDeleteRow, environment: var9
+                var13 = function arg0() {
                     var2 = _closure2_slot10;
                     var0 = undefined;
                     var1 = arg0;
@@ -1477,7 +1477,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var6.channel = var11;
                 var6.isEditing = var10;
-                var10 = function(arg0) { // Original name: onSelectRow, environment: var9
+                var10 = function arg0() {
                     var3 = _closure2_slot9;
                     var0 = _closure1_slot14;
                     var2 = var0.MEMBER;
@@ -1487,7 +1487,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var6.onSelectRow = var10;
-                var9 = function(arg0) { // Original name: onDeleteRow, environment: var9
+                var9 = function arg0() {
                     var2 = _closure2_slot10;
                     var0 = undefined;
                     var1 = arg0;

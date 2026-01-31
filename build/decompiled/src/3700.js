@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: NativeWorklets, environment: var1
+        var2 = function() {
             _fun33132: for (var _fun33132_ip = 0;;) switch (_fun33132_ip) {
                 case 0:
                     var3 = this;
@@ -124,7 +124,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var4 = 'makeShareableClone';
         var0.key = var4;
-        var1 = function(arg0, arg1, arg2) { // Original name: makeShareableClone, environment: var1
+        var1 = function arg0, arg1, arg2() {
             var3 = _closure1_slot5;
             var1 = _closure1_slot6;
             var2 = undefined;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3 = var3.bind(var0)();
     var _closure1_slot7 = var3;
-    var1 = function() { // Original name: createNativeWorkletsModule, environment: var1
+    var1 = function() {
         var0 = _closure1_slot7;
         var1 = var0.prototype;
         var1 = Object.create(var1, {

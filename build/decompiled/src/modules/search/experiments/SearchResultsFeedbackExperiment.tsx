@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/experiments/SearchResultsFeedbackExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useIsSearchResultsFeedbackExperimentEnabled, environment: var1
+    var3 = function arg0() {
         _fun113135: for (var _fun113135_ip = 0;;) switch (_fun113135_ip) {
             case 0:
                 var1 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsSearchResultsFeedbackExperimentEnabled = var3;
-    var1 = function(arg0) { // Original name: getIsSearchResultsFeedbackExperimentEnabled, environment: var1
+    var1 = function arg0() {
         _fun113136: for (var _fun113136_ip = 0;;) switch (_fun113136_ip) {
             case 0:
                 var1 = arg0;

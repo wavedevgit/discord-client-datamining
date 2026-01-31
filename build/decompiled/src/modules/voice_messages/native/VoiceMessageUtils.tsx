@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: generateBase64EncodedWaveform, environment: var1
+    var4 = function arg0() {
         _fun90470: for (var _fun90470_ip = 0;;) switch (_fun90470_ip) {
             case 0:
                 var5 = arg0;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var4;
-    var0 = function() { // Original name: _startAudioRecording, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var0;
-    var0 = function() { // Original name: resetAudioRecording, environment: var1
+    var0 = function() {
         var2 = _closure1_slot4;
         var0 = var2.getMediaEngine;
         var5 = var0.bind(var2)();
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot24 = var0;
-    var0 = function() { // Original name: stopAndGetAudioRecording, environment: var1
+    var0 = function() {
         var2 = _closure1_slot8;
         var3 = undefined;
         var4 = null;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot25 = var0;
-    var0 = function() { // Original name: _endAudioRecording, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -385,7 +385,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot26 = var0;
-    var3 = function() { // Original name: stopAndCacheAudioRecording, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot28;
         var2 = var3.apply;
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot27 = var3;
-    var0 = function() { // Original name: _stopAndCacheAudioRecording, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/voice_messages/native/VoiceMessageUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.generateBase64EncodedWaveform = var4;
-    var4 = function() { // Original name: startAudioRecording, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot23;
         var2 = var3.apply;
@@ -605,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.startAudioRecording = var4;
-    var4 = function() { // Original name: endAudioRecording, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot26;
         var2 = var3.apply;
@@ -617,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.endAudioRecording = var4;
     var2.stopAndCacheAudioRecording = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: emitVoiceMessageRecorded, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun90490: for (var _fun90490_ip = 0;;) switch (_fun90490_ip) {
             case 0:
                 var6 = arg2;
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.emitVoiceMessageRecorded = var3;
-    var1 = function() { // Original name: triggerHaptic, environment: var1
+    var1 = function() {
         _fun90491: for (var _fun90491_ip = 0;;) switch (_fun90491_ip) {
             case 0:
                 var5 = _closure1_slot0;

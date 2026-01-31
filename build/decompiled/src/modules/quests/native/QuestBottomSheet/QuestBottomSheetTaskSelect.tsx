@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/quests/native/QuestBottomSheet/QuestBottomSheetTaskSelect.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: QuestBottomSheetTaskSelect, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.onTaskSelect;
         var _closure2_slot0 = var0;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11["QXc01+"];
         var11 = var14.bind(var15)(var11);
         var4.label = var11;
-        var11 = function() { // Original name: onPress, environment: var8
+        var11 = function() {
             _fun83667: for (var _fun83667_ip = 0;;) switch (_fun83667_ip) {
                 case 0:
                     var2 = _closure2_slot0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9["8lAfuB"];
         var9 = var10.bind(var11)(var9);
         var5.label = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             _fun83668: for (var _fun83668_ip = 0;;) switch (_fun83668_ip) {
                 case 0:
                     var2 = _closure2_slot0;

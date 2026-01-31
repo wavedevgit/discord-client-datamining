@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot4 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: MessageFailedToSendNotification, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.notification;
         var3 = _closure1_slot3;

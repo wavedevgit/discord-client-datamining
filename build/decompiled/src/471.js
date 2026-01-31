@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.useRef;
     var _closure1_slot2 = var3;
-    var1 = function(arg0, arg1) { // Original name: useAnimatedValue, environment: var1
+    var1 = function arg0, arg1() {
         _fun6150: for (var _fun6150_ip = 0;;) switch (_fun6150_ip) {
             case 0:
                 var0 = _closure1_slot2;

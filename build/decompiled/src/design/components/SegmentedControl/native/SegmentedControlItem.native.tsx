@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/SegmentedControl/native/SegmentedControlItem.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: SegmentedControlItem, environment: var1
+    var1 = function arg0() {
         _fun66108: for (var _fun66108_ip = 0;;) switch (_fun66108_ip) {
             case 0:
                 var2 = arg0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12[var1];
                 var2 = var9.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: y, environment: var0
+                var0 = function() {
                     _fun66110: for (var _fun66110_ip = 0;;) switch (_fun66110_ip) {
                         case 0:
                             var1 = _closure2_slot3;

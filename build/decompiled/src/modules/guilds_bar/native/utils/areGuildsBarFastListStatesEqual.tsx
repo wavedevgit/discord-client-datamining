@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guilds_bar/native/utils/areGuildsBarFastListStatesEqual.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1) { // Original name: areGuildsBarFastListStatesEqual, environment: var1
+    var1 = function arg0, arg1() {
         var0 = arg0;
         var1 = var0.version;
         var0 = arg1;

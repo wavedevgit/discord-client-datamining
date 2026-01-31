@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/directory_channels/native/components/GuildDirectoryAddModal.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: GuildDirectoryAddModal, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var4 = _closure1_slot1;
@@ -99,12 +99,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var12.close;
             var12 = var13.bind(var14)(var12);
             var4.headerLeft = var12;
-            var12 = function() { // Original name: headerTitle, environment: var5
+            var12 = function() {
                 var0 = null;
                 return var0;
             };
             var4.headerTitle = var12;
-            var12 = function(arg0) { // Original name: render, environment: var5
+            var12 = function arg0() {
                 var3 = _closure1_slot4;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -129,12 +129,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var12.ImpressionNames;
             var12 = var12.HUB_CREATE_GUILD_CUSTOMIZE;
             var4.impressionName = var12;
-            var12 = function() { // Original name: headerTitle, environment: var5
+            var12 = function() {
                 var0 = null;
                 return var0;
             };
             var4.headerTitle = var12;
-            var12 = function(arg0) { // Original name: render, environment: var5
+            var12 = function arg0() {
                 var3 = _closure1_slot4;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -159,12 +159,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var12.ImpressionNames;
             var12 = var12.HUB_CREATE_GUILD_TEMPLATE;
             var4.impressionName = var12;
-            var12 = function() { // Original name: headerTitle, environment: var5
+            var12 = function() {
                 var0 = null;
                 return var0;
             };
             var4.headerTitle = var12;
-            var12 = function(arg0) { // Original name: render, environment: var5
+            var12 = function arg0() {
                 var3 = _closure1_slot4;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2[var11] = var4;
             var4 = var3.CREATE;
             var3 = {};
-            var11 = function() { // Original name: headerTitle, environment: var5
+            var11 = function() {
                 var0 = null;
                 return var0;
             };
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var6.ImpressionNames;
             var6 = var6.HUB_CREATE_GUILD_CUSTOMIZE;
             var3.impressionName = var6;
-            var5 = function(arg0) { // Original name: render, environment: var5
+            var5 = function arg0() {
                 var3 = _closure1_slot4;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -242,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: GuildDirectoryAddModalScreen, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.children;
         var1 = _closure1_slot5;

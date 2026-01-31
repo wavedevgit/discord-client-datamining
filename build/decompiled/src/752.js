@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: equalArrays, environment: var0
+    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
         _fun8377: for (var _fun8377_ip = 0;;) switch (_fun8377_ip) {
             case 0:
                 var2 = arg0;

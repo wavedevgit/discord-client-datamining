@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: trackImpression, environment: var3
+    var1 = function arg0() {
         _fun46340: for (var _fun46340_ip = 0;;) switch (_fun46340_ip) {
             case 0:
                 var4 = arg0;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/app_analytics/useTrackImpression.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useTrackImpression, environment: var3
+    var3 = function arg0() {
         _fun46342: for (var _fun46342_ip = 0;;) switch (_fun46342_ip) {
             case 0:
                 var2 = arguments[1];
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.useRef;
                 var4 = var4.bind(var3)(var0);
                 _closure2_slot4 = var4;
-                var4 = function() { // Original name: trackImpressionEffect, environment: var1
+                var4 = function() {
                     _fun46343: for (var _fun46343_ip = 0;;) switch (_fun46343_ip) {
                         case 0:
                             var3 = _closure1_slot1;

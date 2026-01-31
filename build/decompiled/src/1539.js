@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.jsx;
     var _closure1_slot1 = var3;
-    var3 = function(arg0) { // Original name: NavigationContent, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var2 = var0.render;
         var1 = var0.children;
@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: useComponent, environment: var1
+    var1 = function arg0() {
         var3 = arg0;
         var2 = _closure1_slot0;
         var1 = var2.useRef;

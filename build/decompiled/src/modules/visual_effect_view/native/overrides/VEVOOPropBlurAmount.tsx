@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot8 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: VEVOOPropBlurAmount, environment: var1
+    var1 = function() {
         _fun99989: for (var _fun99989_ip = 0;;) switch (_fun99989_ip) {
             case 0:
                 var0 = _closure1_slot8;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var6.FormSwitch;
                 var6 = {};
                 var6.value = var4;
-                var12 = function(arg0) { // Original name: onValueChange, environment: var12
+                var12 = function arg0() {
                     _fun99991: for (var _fun99991_ip = 0;;) switch (_fun99991_ip) {
                         case 0:
                             var4 = arg0;

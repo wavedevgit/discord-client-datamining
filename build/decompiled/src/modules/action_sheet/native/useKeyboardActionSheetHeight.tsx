@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var3;
-    var0 = function(arg0, arg1, arg2) { // Original name: computeKeyboardActionSheetHeight, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun87406: for (var _fun87406_ip = 0;;) switch (_fun87406_ip) {
             case 0:
                 var2 = arg2;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/action_sheet/native/useKeyboardActionSheetHeight.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useKeyboardActionSheetHeight, environment: var1
+    var3 = function() {
         var4 = _closure1_slot3;
         var5 = _closure1_slot1;
         var6 = _closure1_slot2;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.default = var3;
-    var1 = function() { // Original name: getKeyboardActionSheetHeight, environment: var1
+    var1 = function() {
         var4 = _closure1_slot3;
         var5 = _closure1_slot0;
         var6 = _closure1_slot2;

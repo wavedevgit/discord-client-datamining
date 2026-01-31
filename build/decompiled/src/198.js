@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = new var10[var2](var9);
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot0 = var2;
-    var2 = function(arg0) { // Original name: register, environment: var0
+    var2 = function arg0() {
         _fun2829: for (var _fun2829_ip = 0;;) switch (_fun2829_ip) {
             case 0:
                 var3 = arg0;
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.register = var2;
-    var2 = function(arg0) { // Original name: unregister, environment: var0
+    var2 = function arg0() {
         _fun2830: for (var _fun2830_ip = 0;;) switch (_fun2830_ip) {
             case 0:
                 var2 = arg0;
@@ -86,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var1.unregister = var2;
-    var0 = function(arg0) { // Original name: has, environment: var0
+    var0 = function arg0() {
         _fun2831: for (var _fun2831_ip = 0;;) switch (_fun2831_ip) {
             case 0:
                 var2 = _closure1_slot0;

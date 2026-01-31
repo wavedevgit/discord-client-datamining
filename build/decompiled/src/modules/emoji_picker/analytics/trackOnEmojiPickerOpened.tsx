@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var3 = function(arg0) { // Original name: trackOnEmojiPickerOpened, environment: var1
+    var3 = function arg0() {
         _fun73824: for (var _fun73824_ip = 0;;) switch (_fun73824_ip) {
             case 0:
                 var0 = arg0;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: useTrackOnEmojiPickerOpenedForReactions, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot3;
         var2 = var3.useRef;
         var1 = arg0;

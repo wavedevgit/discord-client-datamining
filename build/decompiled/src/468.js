@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.BOTTOM = var5;
     var4 = var4.CENTER;
     var1.CENTER = var4;
-    var4 = function(arg0, arg1) { // Original name: show, environment: var3
+    var4 = function arg0, arg1() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.show = var4;
-    var4 = function(arg0, arg1, arg2) { // Original name: showWithGravity, environment: var3
+    var4 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1.showWithGravity = var4;
-    var3 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: showWithGravityAndOffset, environment: var3
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;

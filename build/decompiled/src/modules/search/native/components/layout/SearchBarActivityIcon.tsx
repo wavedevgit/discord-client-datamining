@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot15 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: SearchBarActivityIcon, environment: var1
+    var1 = function arg0() {
         _fun105111: for (var _fun105111_ip = 0;;) switch (_fun105111_ip) {
             case 0:
                 var1 = arg0;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12[var5];
                 var4 = var11.bind(var3)(var1);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: x, environment: var0
+                var1 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12[var5];
                 var2 = var11.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
-                var0 = function() { // Original name: M, environment: var0
+                var0 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;

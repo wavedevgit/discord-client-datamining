@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/dm_settings_upsell/native/DmSettingsUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: DmSettingsUpsellActionSheet, environment: var1
+    var1 = function arg0() {
         _fun112894: for (var _fun112894_ip = 0;;) switch (_fun112894_ip) {
             case 0:
                 var0 = arg0;
@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var17 = 'lg';
                 var10.size = var17;
-                var17 = function() { // Original name: onPress, environment: var15
+                var17 = function() {
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;
                     var0 = 15;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'lg',
                     'variant': 'secondary'
                 };
-                var14 = function() { // Original name: onPress, environment: var15
+                var14 = function() {
                     var3 = _closure1_slot1;
                     var5 = _closure1_slot2;
                     var0 = 19;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var12 = var11.IzZxXW;
                 var11 = {};
-                var15 = function() { // Original name: onClick, environment: var15
+                var15 = function() {
                     var3 = _closure1_slot1;
                     var6 = _closure1_slot2;
                     var0 = 19;

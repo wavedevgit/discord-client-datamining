@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var2;
             var _closure1_slot1 = var5;
             var _closure1_slot2 = var6;
-            var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
+            var0 = function arg0, arg1, arg2() {
                 _fun97290: for (var _fun97290_ip = 0;;) switch (_fun97290_ip) {
                     case 0:
                         var3 = arg0;
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot11 = var0;
-            var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+            var0 = function() {
                 _fun97291: for (var _fun97291_ip = 0;;) switch (_fun97291_ip) {
                     case 0:
                     case 2: // try_start_0
@@ -77,7 +77,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
-                        var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                        var1 = function() {
                             var0 = _closure2_slot0;
                             var0 = !var0;
                             var0 = !var0;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var3.Error;
             var6 = var4.bind(var0)(var5);
             var5 = function(arg0) { // Environment: var1
-                var2 = function() { // Original name: TypeMismatchError, environment: var0
+                var2 = function() {
                     var4 = this;
                     var3 = undefined;
                     var0 = undefined;
@@ -149,7 +149,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3.Error;
             var4 = var4.bind(var0)(var3);
             var3 = function(arg0) { // Environment: var1
-                var2 = function() { // Original name: QuotaExceededError, environment: var0
+                var2 = function() {
                     var4 = this;
                     var3 = undefined;
                     var0 = undefined;
@@ -193,7 +193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         case 264:
             var2 = var2.crypto;
-            var1 = function(arg0) { // Original name: getRandomValues, environment: var1
+            var1 = function arg0() {
                 _fun97298: for (var _fun97298_ip = 0;;) switch (_fun97298_ip) {
                     case 0:
                         var0 = arg0;

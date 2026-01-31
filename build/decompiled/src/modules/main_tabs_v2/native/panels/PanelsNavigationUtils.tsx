@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: convertPortraitToLandscapeScreens, environment: var1
+    var3 = function() {
         _fun100615: for (var _fun100615_ip = 0;;) switch (_fun100615_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.convertPortraitToLandscapeScreens = var3;
-    var1 = function() { // Original name: convertLandscapeToPortraitScreens, environment: var1
+    var1 = function() {
         _fun100616: for (var _fun100616_ip = 0;;) switch (_fun100616_ip) {
             case 0:
                 var3 = _closure1_slot0;

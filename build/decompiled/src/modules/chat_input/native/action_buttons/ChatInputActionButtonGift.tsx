@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var7.bind(var8)(var3);
     var _closure1_slot13 = var3;
     var3 = var6.memo;
-    var1 = function(arg0) { // Original name: ChatInputActionButtonGift, environment: var1
+    var1 = function arg0() {
         _fun90383: for (var _fun90383_ip = 0;;) switch (_fun90383_ip) {
             case 0:
                 var0 = arg0;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var23.bind(var3)(var22);
                 var22 = var22.GiftIcon;
                 var16.IconComponent = var22;
-                var22 = function(arg0) { // Original name: onPress, environment: var14
+                var22 = function arg0() {
                     _fun90390: for (var _fun90390_ip = 0;;) switch (_fun90390_ip) {
                         case 0:
                             var1 = _closure2_slot6;
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.disabled = var18;
                 var4.active = var15;
                 var4.loop = var15;
-                var14 = function(arg0) { // Original name: onPress, environment: var14
+                var14 = function arg0() {
                     var4 = _closure2_slot5;
                     var0 = _closure1_slot10;
                     var3 = var0.TAKE_ACTION;

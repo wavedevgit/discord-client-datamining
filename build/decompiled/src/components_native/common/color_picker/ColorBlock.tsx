@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = {};
                 var15.selected = var6;
                 var1.accessibilityState = var15;
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot0;
                     var0 = undefined;

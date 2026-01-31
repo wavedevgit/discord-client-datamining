@@ -4,7 +4,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = metroImportDefault;
     var2 = exports;
     var4 = dependencyMap;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
+    var0 = function() {
         _fun53301: for (var _fun53301_ip = 0;;) switch (_fun53301_ip) {
             case 0:
             case 2: // try_start_0
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0) { // Original name: isForumLikeChannel, environment: var3
+    var0 = function arg0() {
         _fun53304: for (var _fun53304_ip = 0;;) switch (_fun53304_ip) {
             case 0:
                 var2 = _closure1_slot5;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var0 = function(arg0) { // Original name: getOrCreateSearchState, environment: var3
+    var0 = function arg0() {
         _fun53305: for (var _fun53305_ip = 0;;) switch (_fun53305_ip) {
             case 0:
                 var2 = arg0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var6 = var1.Store;
     var1 = function(arg0) { // Environment: var3
-        var3 = function() { // Original name: ForumSearchStore, environment: var5
+        var3 = function() {
             _fun53307: for (var _fun53307_ip = 0;;) switch (_fun53307_ip) {
                 case 0:
                     var3 = this;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var2 = this;
             var1 = var2.waitFor;
             var0 = _closure1_slot5;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSearchQuery';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53309: for (var _fun53309_ip = 0;;) switch (_fun53309_ip) {
                 case 0:
                     var1 = _closure1_slot6;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSearchLoading';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53310: for (var _fun53310_ip = 0;;) switch (_fun53310_ip) {
                 case 0:
                     var1 = _closure1_slot6;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getSearchResults';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun53311: for (var _fun53311_ip = 0;;) switch (_fun53311_ip) {
                 case 0:
                     var1 = _closure1_slot6;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'getHasSearchResults';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun53312: for (var _fun53312_ip = 0;;) switch (_fun53312_ip) {
                 case 0:
                     var1 = _closure1_slot6;
@@ -315,14 +315,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4[var1];
     var10 = var5.bind(var0)(var1);
     var1 = {};
-    var7 = function() { // Original name: handleConnectionOpen, environment: var3
+    var7 = function() {
         var0 = {};
         _closure1_slot6 = var0;
         var0 = undefined;
         return var0;
     };
     var1.CONNECTION_OPEN = var7;
-    var7 = function(arg0) { // Original name: handleThreadDelete, environment: var3
+    var7 = function arg0() {
         _fun53314: for (var _fun53314_ip = 0;;) switch (_fun53314_ip) {
             case 0:
                 var0 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.THREAD_DELETE = var7;
-    var7 = function(arg0) { // Original name: handleChannelDelete, environment: var3
+    var7 = function arg0() {
         var0 = arg0;
         var0 = var0.channel;
         var1 = _closure1_slot6;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.CHANNEL_DELETE = var7;
-    var7 = function(arg0) { // Original name: handleForumSearchQueryUpdated, environment: var3
+    var7 = function arg0() {
         _fun53317: for (var _fun53317_ip = 0;;) switch (_fun53317_ip) {
             case 0:
                 var0 = arg0;
@@ -418,7 +418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FORUM_SEARCH_QUERY_UPDATED = var7;
-    var7 = function(arg0) { // Original name: handleForumSearchStart, environment: var3
+    var7 = function arg0() {
         _fun53318: for (var _fun53318_ip = 0;;) switch (_fun53318_ip) {
             case 0:
                 var0 = arg0;
@@ -448,7 +448,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FORUM_SEARCH_START = var7;
-    var7 = function(arg0) { // Original name: handleForumSearchSuccess, environment: var3
+    var7 = function arg0() {
         _fun53319: for (var _fun53319_ip = 0;;) switch (_fun53319_ip) {
             case 0:
                 var0 = arg0;
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FORUM_SEARCH_SUCCESS = var7;
-    var7 = function(arg0) { // Original name: handleForumSearchFailure, environment: var3
+    var7 = function arg0() {
         _fun53320: for (var _fun53320_ip = 0;;) switch (_fun53320_ip) {
             case 0:
                 var0 = arg0;
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.FORUM_SEARCH_FAILURE = var7;
-    var3 = function(arg0) { // Original name: handleForumSearchClear, environment: var3
+    var3 = function arg0() {
         _fun53321: for (var _fun53321_ip = 0;;) switch (_fun53321_ip) {
             case 0:
                 var0 = arg0;

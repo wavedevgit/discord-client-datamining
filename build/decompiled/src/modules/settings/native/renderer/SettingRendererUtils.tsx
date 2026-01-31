@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
-    var4 = function(arg0) { // Original name: transformSettingTitle, environment: var1
+    var4 = function arg0() {
         _fun79675: for (var _fun79675_ip = 0;;) switch (_fun79675_ip) {
             case 0:
                 var2 = arg0;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var4;
-    var3 = function(arg0) { // Original name: getSettingTitle, environment: var1
+    var3 = function arg0() {
         var8 = arg0;
         var3 = _closure1_slot0;
         var5 = _closure1_slot2;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot8 = var3;
-    var0 = function(arg0) { // Original name: getSearchResultIconComponent, environment: var1
+    var0 = function arg0() {
         _fun79677: for (var _fun79677_ip = 0;;) switch (_fun79677_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot9 = var0;
-    var0 = function(arg0) { // Original name: isSupportedSearchResultSettingData, environment: var1
+    var0 = function arg0() {
         var2 = _closure1_slot5;
         var1 = var2.has;
         var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.fileFinishedImporting;
     var5 = 'modules/settings/native/renderer/SettingRendererUtils.tsx';
     var5 = var6.bind(var7)(var5);
-    var5 = function(arg0) { // Original name: onRouteSettingOnPress, environment: var1
+    var5 = function arg0() {
         _fun79679: for (var _fun79679_ip = 0;;) switch (_fun79679_ip) {
             case 0:
                 var1 = arg0;
@@ -146,10 +146,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.screen;
                 var _closure2_slot1 = var2;
                 var2 = var1.preNavigationAction;
-                var1 = function() { // Original name: goToScreen, environment: var0
+                var1 = function() {
                     _fun79680: for (var _fun79680_ip = 0;;) switch (_fun79680_ip) {
                         case 0:
-                            var3 = function() { // Original name: onPress, environment: var1
+                            var3 = function() {
                                 var2 = _closure1_slot1;
                                 var5 = _closure1_slot2;
                                 var0 = 2;
@@ -256,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.onRouteSettingOnPress = var5;
     var2.transformSettingTitle = var4;
     var2.getSettingTitle = var3;
-    var3 = function() { // Original name: getSettingSearchableTitles, environment: var1
+    var3 = function() {
         var0 = global;
         var3 = var0.Object;
         var2 = var3.entries;
@@ -376,7 +376,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSettingSearchableTitles = var3;
-    var3 = function() { // Original name: getSettingScreens, environment: var1
+    var3 = function() {
         var0 = new Array(0);
         var _closure2_slot0 = var0;
         var2 = global;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSettingScreens = var3;
-    var3 = function(arg0, arg1) { // Original name: toSettingListItems, environment: var1
+    var3 = function arg0, arg1() {
         var0 = arg1;
         var _closure2_slot0 = var0;
         var0 = new Array(0);
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.toSettingListItems = var3;
-    var3 = function(arg0) { // Original name: getSettingListSearchResultItems, environment: var1
+    var3 = function arg0() {
         var3 = arg0;
         var4 = new Array(0);
         var _closure2_slot0 = var4;
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.getSettingListSearchResultItems = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: getScoredSettingListSearchResultItems, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun79695: for (var _fun79695_ip = 0;;) switch (_fun79695_ip) {
             case 0:
                 var7 = arg0;
@@ -1061,7 +1061,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getScoredSettingListSearchResultItems = var3;
-    var1 = function(arg0, arg1) { // Original name: getInitialScrollIndex, environment: var1
+    var1 = function arg0, arg1() {
         _fun79702: for (var _fun79702_ip = 0;;) switch (_fun79702_ip) {
             case 0:
                 var2 = arg1;

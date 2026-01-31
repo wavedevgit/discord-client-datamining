@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2) { // Original name: trackRoundtrip, environment: var1
+    var0 = function arg0, arg1, arg2() {
         _fun47019: for (var _fun47019_ip = 0;;) switch (_fun47019_ip) {
             case 0:
                 var5 = arg0;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function() { // Original name: QuestDecisionRoundtripTracker, environment: var4
+        var2 = function() {
             var2 = this;
             var3 = _closure1_slot3;
             var1 = _closure2_slot0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'recordQuestRequestAttempt';
         var0.key = var1;
-        var1 = function(arg0, arg1) { // Original name: value, environment: var4
+        var1 = function arg0, arg1() {
             _fun47022: for (var _fun47022_ip = 0;;) switch (_fun47022_ip) {
                 case 0:
                     var6 = arg0;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'recordQuestRequestApiResponse';
         var0.key = var5;
-        var4 = function(arg0, arg1) { // Original name: value, environment: var4
+        var4 = function arg0, arg1() {
             _fun47024: for (var _fun47024_ip = 0;;) switch (_fun47024_ip) {
                 case 0:
                     var3 = arg0;
@@ -417,12 +417,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var10;
                 case 189:
                     var11 = var7.previousAdDecision;
-                    var10 = function(arg0, arg1) { // Original name: computeTransitionCase, environment: var10
+                    var10 = function arg0, arg1() {
                         _fun47025: for (var _fun47025_ip = 0;;) switch (_fun47025_ip) {
                             case 0:
                                 var5 = arg0;
                                 var1 = arg1;
-                                var0 = function(arg0) { // Original name: getState, environment: var0
+                                var0 = function arg0() {
                                     _fun47026: for (var _fun47026_ip = 0;;) switch (_fun47026_ip) {
                                         case 0:
                                             var1 = arg0;

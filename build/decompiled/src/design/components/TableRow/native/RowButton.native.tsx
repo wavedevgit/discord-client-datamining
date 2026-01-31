@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var1 = function(arg0) { // Original name: RowButton, environment: var6
+    var1 = function arg0() {
         _fun47868: for (var _fun47868_ip = 0;;) switch (_fun47868_ip) {
             case 0:
                 var4 = arg0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var0 = function(arg0) { // Original name: RowButtonWrapper, environment: var6
+    var0 = function arg0() {
         _fun47869: for (var _fun47869_ip = 0;;) switch (_fun47869_ip) {
             case 0:
                 var3 = arg0;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'end': true
                 };
                 var4.onPress = var12;
-                var12 = function(arg0) { // Original name: onPressIn, environment: var10
+                var12 = function arg0() {
                     _fun47872: for (var _fun47872_ip = 0;;) switch (_fun47872_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var4.onPressIn = var12;
-                var10 = function(arg0) { // Original name: onPressOut, environment: var10
+                var10 = function arg0() {
                     _fun47873: for (var _fun47873_ip = 0;;) switch (_fun47873_ip) {
                         case 0:
                             var1 = _closure2_slot0;

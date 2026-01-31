@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: isEmpty, environment: var1
+    var0 = function arg0, arg1() {
         _fun66850: for (var _fun66850_ip = 0;;) switch (_fun66850_ip) {
             case 0:
                 var4 = arg0;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/rtc/hooks/useIsEmptyRTCConnection.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useIsStreamRTCConnectionEmpty, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var3 = _closure1_slot0;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIsStreamRTCConnectionEmpty = var3;
-    var1 = function() { // Original name: useIsCallRTCConnectionEmpty, environment: var1
+    var1 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var1 = 3;

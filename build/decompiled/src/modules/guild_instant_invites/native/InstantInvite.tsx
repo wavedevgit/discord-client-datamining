@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var17.ContextMenu;
                 var17 = {};
                 var17.items = var23;
-                var22 = function(arg0) { // Original name: children, environment: var22
+                var22 = function arg0() {
                     var2 = arg0;
                     var5 = var2.ref;
                     var0 = null;
@@ -344,7 +344,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_instant_invites/native/InstantInvite.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function(arg0) { // Original name: LinkedChannelInvite, environment: var1
+    var1 = function arg0() {
         _fun72773: for (var _fun72773_ip = 0;;) switch (_fun72773_ip) {
             case 0:
                 var0 = arg0;
@@ -503,7 +503,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var8.bind(var4)(var0);
                     var0 = var0.ArrowSmallRightIcon;
                     var1.IconComponent = var0;
-                    var0 = function() { // Original name: action, environment: var0
+                    var0 = function() {
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
                         var0 = 11;
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var16.ContextMenu;
                 var16 = {};
                 var16.items = var19;
-                var18 = function(arg0) { // Original name: children, environment: var18
+                var18 = function arg0() {
                     var2 = arg0;
                     var5 = var2.ref;
                     var0 = null;

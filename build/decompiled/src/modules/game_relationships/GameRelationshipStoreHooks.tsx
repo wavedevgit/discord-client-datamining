@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var0 = function(arg0, arg1) { // Original name: useGameRelationshipsForUserByType, environment: var1
+    var0 = function arg0, arg1() {
         var2 = arg0;
         var10 = arg1;
         var _closure2_slot0 = var2;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/game_relationships/GameRelationshipStoreHooks.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useGameRelationshipsByType, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var8 = _closure1_slot0;
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGameRelationshipsByType = var3;
-    var3 = function(arg0) { // Original name: useGameFriendsForUser, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot5;
         var0 = _closure1_slot4;
         var2 = var0.FRIEND;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGameFriendsForUser = var3;
-    var3 = function(arg0) { // Original name: useIncomingGameRelationshipsForUser, environment: var1
+    var3 = function arg0() {
         var3 = _closure1_slot5;
         var0 = _closure1_slot4;
         var2 = var0.PENDING_INCOMING;
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useIncomingGameRelationshipsForUser = var3;
-    var3 = function(arg0) { // Original name: useHasGameRelationshipsForUser, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var8 = _closure1_slot0;
@@ -194,7 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useHasGameRelationshipsForUser = var3;
-    var1 = function(arg0, arg1) { // Original name: useHasGameRelationshipsForUserByType, environment: var1
+    var1 = function arg0, arg1() {
         var2 = arg0;
         var10 = arg1;
         var _closure2_slot0 = var2;

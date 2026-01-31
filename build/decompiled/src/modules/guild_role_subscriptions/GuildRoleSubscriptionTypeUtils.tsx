@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/GuildRoleSubscriptionTypeUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: getBenefitKey, environment: var1
+    var3 = function arg0() {
         _fun84194: for (var _fun84194_ip = 0;;) switch (_fun84194_ip) {
             case 0:
                 var1 = arg0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getBenefitKey = var3;
-    var3 = function(arg0) { // Original name: formatPlanInterval, environment: var1
+    var3 = function arg0() {
         _fun84195: for (var _fun84195_ip = 0;;) switch (_fun84195_ip) {
             case 0:
                 var0 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.formatPlanInterval = var3;
-    var3 = function(arg0) { // Original name: formatPlanIntervalDuration, environment: var1
+    var3 = function arg0() {
         _fun84196: for (var _fun84196_ip = 0;;) switch (_fun84196_ip) {
             case 0:
                 var0 = arg0;
@@ -253,7 +253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.formatPlanIntervalDuration = var3;
-    var3 = function(arg0) { // Original name: isChannelBenefit, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var1 = var0.ref_type;
         var0 = _closure1_slot2;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isChannelBenefit = var3;
-    var1 = function(arg0) { // Original name: isIntangibleBenefit, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var1 = var0.ref_type;
         var0 = _closure1_slot2;

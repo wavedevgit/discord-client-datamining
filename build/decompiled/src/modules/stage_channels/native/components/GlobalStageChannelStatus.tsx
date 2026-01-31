@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var7;
     var _closure1_slot3 = var6;
-    var0 = function(arg0, arg1) { // Original name: getText, environment: var3
+    var0 = function arg0, arg1() {
         _fun68682: for (var _fun68682_ip = 0;;) switch (_fun68682_ip) {
             case 0:
                 var6 = arg0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var1 = function(arg0) { // Original name: StageChannelRaiseHandAck, environment: var3
+    var1 = function arg0() {
         _fun68683: for (var _fun68683_ip = 0;;) switch (_fun68683_ip) {
             case 0:
                 var0 = arg0;
@@ -460,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.Looks;
                 var21 = var21.OUTLINED;
                 var9.look = var21;
-                var17 = function() { // Original name: onPress, environment: var17
+                var17 = function() {
                     _fun68690: for (var _fun68690_ip = 0;;) switch (_fun68690_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -763,7 +763,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/native/components/GlobalStageChannelStatus.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: GlobalStageChannelStatus, environment: var3
+    var3 = function arg0() {
         _fun68691: for (var _fun68691_ip = 0;;) switch (_fun68691_ip) {
             case 0:
                 var0 = arg0;

@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/guild_onboarding/LandingAssetUtils.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0, arg1, arg2) { // Original name: replaceFlagIconAndFlagColor, environment: var1
+    var1 = function arg0, arg1, arg2() {
         var0 = arg0;
         var _closure2_slot0 = var0;
         var2 = arg2;

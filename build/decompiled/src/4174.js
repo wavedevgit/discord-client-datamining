@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var0;
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getImageNumberValue, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun38316: for (var _fun38316_ip = 0;;) switch (_fun38316_ip) {
             case 0:
                 var6 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot4 = var0;
-    var0 = function(arg0) { // Original name: getImageFlags, environment: var3
+    var0 = function arg0() {
         _fun38317: for (var _fun38317_ip = 0;;) switch (_fun38317_ip) {
             case 0:
                 var3 = arg0;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getImageFormat, environment: var3
+    var0 = function arg0() {
         _fun38318: for (var _fun38318_ip = 0;;) switch (_fun38318_ip) {
             case 0:
                 var1 = arg0;
@@ -171,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getImageType, environment: var3
+    var0 = function arg0() {
         _fun38319: for (var _fun38319_ip = 0;;) switch (_fun38319_ip) {
             case 0:
                 var1 = 16777215;
@@ -201,7 +201,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getImageOffset, environment: var3
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun38320: for (var _fun38320_ip = 0;;) switch (_fun38320_ip) {
             case 0:
                 var3 = arg0;
@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function(arg0, arg1, arg2) { // Original name: read, environment: var3
+    var2 = function arg0, arg1, arg2() {
         var5 = arg0;
         var4 = arg1;
         var2 = _closure1_slot1;
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var13 = var4;
         var11 = var2;
         var0 = var16[var7](var15, var14, var13, var12, var11, var10, var9);
-        var1 = function(arg0, arg1, arg2, arg3) { // Original name: addMpfImages, environment: var1
+        var1 = function arg0, arg1, arg2, arg3() {
             _fun38322: for (var _fun38322_ip = 0;;) switch (_fun38322_ip) {
                 case 0:
                     var16 = arg0;

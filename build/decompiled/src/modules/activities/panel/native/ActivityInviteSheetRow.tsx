@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2[var6];
                 var6 = var11.bind(var3)(var6);
                 var17 = var6.bind(var3)(var28);
-                var6 = function() { // Original name: handlePress, environment: var0
+                var6 = function() {
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot2;
                     var0 = undefined;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'importantForAccessibility': 'no-hide-descendants',
                     'accessibilityElementsHidden': true
                 };
-                var18 = function(arg0) { // Original name: onPress, environment: var0
+                var18 = function arg0() {
                     _fun110440: for (var _fun110440_ip = 0;;) switch (_fun110440_ip) {
                         case 0:
                             var1 = arg0;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16[0] = var17;
                 var1 = var16;
             case 1214:
-                var4 = function(arg0) { // Original name: I, environment: var0
+                var4 = function arg0() {
                     _fun110441: for (var _fun110441_ip = 0;;) switch (_fun110441_ip) {
                         case 0:
                             var0 = arg0;

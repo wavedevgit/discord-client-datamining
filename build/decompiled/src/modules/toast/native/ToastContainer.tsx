@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AnimatedToast, environment: var1
+    var0 = function arg0() {
         _fun46410: for (var _fun46410_ip = 0;;) switch (_fun46410_ip) {
             case 0:
                 var1 = arg0;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var20[var1];
                 var14 = var21.bind(var4)(var12);
                 var13 = var14.useAnimatedStyle;
-                var12 = function() { // Original name: p, environment: var7
+                var12 = function() {
                     _fun46412: for (var _fun46412_ip = 0;;) switch (_fun46412_ip) {
                         case 0:
                             var0 = _closure2_slot11;
@@ -245,7 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var12.bind(var13)(var5);
                             var7 = var8.withSpring;
                             var18 = _closure1_slot11;
-                            var5 = function(arg0) { // Original name: t, environment: var5
+                            var5 = function arg0() {
                                 _fun46413: for (var _fun46413_ip = 0;;) switch (_fun46413_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[0] = var13;
                 var11[1] = var12;
                 var1.style = var11;
-                var7 = function(arg0) { // Original name: onLayout, environment: var7
+                var7 = function arg0() {
                     var2 = _closure2_slot3;
                     var1 = var2.set;
                     var0 = arg0;
@@ -500,7 +500,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: renderItem, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot6;
         var3 = _closure1_slot14;
         var2 = {};
@@ -516,13 +516,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getItemKey, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var0 = var0.key;
         return var0;
     };
     var _closure1_slot16 = var0;
-    var0 = function(arg0) { // Original name: wrapChildren, environment: var1
+    var0 = function arg0() {
         var3 = _closure1_slot6;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;

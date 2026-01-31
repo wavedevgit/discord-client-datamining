@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: GuildServerSubscriberCount, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var9 = var0.subscriberCount;
         var5 = var0.style;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0) { // Original name: CreatorGuildCard, environment: var1
+    var0 = function arg0() {
         _fun116458: for (var _fun116458_ip = 0;;) switch (_fun116458_ip) {
             case 0:
                 var0 = arg0;
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.emoji = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
-    var3 = function(arg0) { // Original name: renderItem, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var0 = var0.item;
         var3 = _closure1_slot6;
@@ -681,7 +681,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/welcome/CreatorHighlightSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: CreatorHighlightSection, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.highlightedCreators;
         var3 = _closure1_slot6;
@@ -690,7 +690,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.data = var4;
         var4 = true;
         var1.horizontal = var4;
-        var4 = function(arg0) { // Original name: keyExtractor, environment: var4
+        var4 = function arg0() {
             var0 = arg0;
             var0 = var0.guild_id;
             return var0;

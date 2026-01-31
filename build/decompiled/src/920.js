@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
-    var3 = function(arg0) { // Original name: generateIteratee, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var2 = var1.isBrowser;
         var _closure2_slot0 = var2;
@@ -235,7 +235,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var2 = 'RewriteFrames';
                 var0.name = var2;
-                var1 = function(arg0) { // Original name: processEvent, environment: var1
+                var1 = function arg0() {
                     _fun9600: for (var _fun9600_ip = 0;;) switch (_fun9600_ip) {
                         case 0:
                             var3 = arg0;
@@ -258,7 +258,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 continue _fun9600
                             }
                         case 47:
-                            var2 = function(arg0) { // Original name: _processExceptionsEvent, environment: var1
+                            var2 = function arg0() {
                                 _fun9601: for (var _fun9601_ip = 0;;) switch (_fun9601_ip) {
                                     case 0:
                                         var0 = arg0;

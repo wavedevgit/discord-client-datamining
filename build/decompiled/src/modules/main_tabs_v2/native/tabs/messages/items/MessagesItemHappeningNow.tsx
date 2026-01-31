@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var8.bind(var9)(var4);
     var _closure1_slot5 = var4;
     var4 = var7.memo;
-    var3 = function(arg0) { // Original name: MessagesItemHappeningNow, environment: var3
+    var3 = function arg0() {
         var0 = arg0;
         var6 = var0.listRef;
         var3 = _closure1_slot3;

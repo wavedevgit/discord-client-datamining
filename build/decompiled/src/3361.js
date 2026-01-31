@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: mod, environment: var0
+    var1 = function arg0, arg1() {
         _fun28952: for (var _fun28952_ip = 0;;) switch (_fun28952_ip) {
             case 0:
                 var4 = arg1;

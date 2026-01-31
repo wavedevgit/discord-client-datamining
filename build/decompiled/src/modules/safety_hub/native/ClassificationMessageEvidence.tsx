@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/safety_hub/native/ClassificationMessageEvidence.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ClassificationEvidence, environment: var1
+    var1 = function arg0() {
         _fun79443: for (var _fun79443_ip = 0;;) switch (_fun79443_ip) {
             case 0:
                 var0 = arg0;
@@ -543,7 +543,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = function(arg0) { // Environment: var0
                         var3 = arg0;
                         var _closure4_slot0 = var3;
-                        var2 = function(arg0) { // Original name: getImageAttachmentDimensions, environment: var0
+                        var2 = function arg0() {
                             var1 = arg0;
                             var _closure5_slot0 = var1;
                             var1 = global;
@@ -796,7 +796,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.url;
                     var5.uri = var6;
                     var1.source = var5;
-                    var5 = function(arg0) { // Original name: onLoad, environment: var0
+                    var5 = function arg0() {
                         var0 = arg0;
                         var _closure4_slot0 = var0;
                         var4 = _closure2_slot4;
@@ -831,7 +831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.onLoad = var5;
-                    var0 = function() { // Original name: onError, environment: var0
+                    var0 = function() {
                         var2 = _closure2_slot8;
                         var1 = undefined;
                         var0 = function(arg0) { // Environment: var0

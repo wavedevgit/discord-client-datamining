@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: processColorElement, environment: var0
+    var2 = function arg0() {
         _fun1510: for (var _fun1510_ip = 0;;) switch (_fun1510_ip) {
             case 0:
                 var5 = arg0;
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: processColorArray, environment: var0
+    var0 = function arg0() {
         _fun1511: for (var _fun1511_ip = 0;;) switch (_fun1511_ip) {
             case 0:
                 var3 = arg0;

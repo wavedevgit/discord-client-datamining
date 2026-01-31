@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
-    var1 = function(arg0) { // Original name: convertToNormalizedObject, environment: var1
+    var1 = function arg0() {
         _fun10347: for (var _fun10347_ip = 0;;) switch (_fun10347_ip) {
             case 0:
                 var2 = _closure1_slot0;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: getBlurAmount, environment: var1
+    var0 = function arg0() {
         _fun37342: for (var _fun37342_ip = 0;;) switch (_fun37342_ip) {
             case 0:
                 var1 = arg0;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/Backdrop/native/Backdrop.native.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: Backdrop, environment: var1
+    var1 = function arg0() {
         _fun37343: for (var _fun37343_ip = 0;;) switch (_fun37343_ip) {
             case 0:
                 var1 = arg0;

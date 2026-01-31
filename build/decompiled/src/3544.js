@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
-    var2 = function(arg0) { // Original name: SetCache, environment: var0
+    var2 = function arg0() {
         _fun31586: for (var _fun31586_ip = 0;;) switch (_fun31586_ip) {
             case 0:
                 var4 = arg0;

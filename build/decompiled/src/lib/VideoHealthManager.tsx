@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot4;
-        var2 = function(arg0, arg1, arg2, arg3) { // Original name: VideoHealthManager, environment: var4
+        var2 = function arg0, arg1, arg2, arg3() {
             var6 = arg0;
             var11 = arg3;
             var4 = this;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var1 = 'calculateFps';
         var0.key = var1;
-        var1 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var1 = function arg0, arg1, arg2() {
             _fun93913: for (var _fun93913_ip = 0;;) switch (_fun93913_ip) {
                 case 0:
                     var2 = arg0;
@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'updateFps';
         var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var4
+        var5 = function arg0, arg1, arg2() {
             _fun93914: for (var _fun93914_ip = 0;;) switch (_fun93914_ip) {
                 case 0:
                     var2 = arg0;
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'startReenableBackoffTimer';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun93916: for (var _fun93916_ip = 0;;) switch (_fun93916_ip) {
                 case 0:
                     var2 = arg0;
@@ -482,7 +482,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'queueReenable';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var1 = this;
             var3 = var1.enableQueue;
             var2 = var3.push;
@@ -498,7 +498,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'tryReenableQueue';
         var0.key = var5;
-        var5 = function() { // Original name: value, environment: var4
+        var5 = function() {
             _fun93919: for (var _fun93919_ip = 0;;) switch (_fun93919_ip) {
                 case 0:
                     var3 = this;
@@ -559,7 +559,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'reenableVideo';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun93920: for (var _fun93920_ip = 0;;) switch (_fun93920_ip) {
                 case 0:
                     var4 = arg0;
@@ -611,7 +611,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'elapsedSeconds';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: value, environment: var4
+        var5 = function arg0, arg1() {
             var1 = arg0;
             var0 = arg1;
             var1 = var1 - var0;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'stateCleanupBeforeEnable';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var2 = arg0;
             var0 = this;
             var4 = var0.logger;
@@ -648,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'getCurrentVideoToggleState';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             var0 = this;
             var1 = var0.currentVideoAutoToggleState;
             var0 = arg0;
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'createUser';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun93924: for (var _fun93924_ip = 0;;) switch (_fun93924_ip) {
                 case 0:
                     var2 = arg0;
@@ -706,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'deleteUser';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: value, environment: var4
+        var5 = function arg0() {
             _fun93925: for (var _fun93925_ip = 0;;) switch (_fun93925_ip) {
                 case 0:
                     var2 = arg0;
@@ -756,7 +756,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'disable';
         var0.key = var5;
-        var4 = function() { // Original name: value, environment: var4
+        var4 = function() {
             _fun93926: for (var _fun93926_ip = 0;;) switch (_fun93926_ip) {
                 case 0:
                     var5 = this;

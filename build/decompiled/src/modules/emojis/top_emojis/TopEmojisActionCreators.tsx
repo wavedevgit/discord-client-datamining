@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/emojis/top_emojis/TopEmojisActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: fetchTopEmojis, environment: var1
+    var3 = function arg0() {
         _fun57230: for (var _fun57230_ip = 0;;) switch (_fun57230_ip) {
             case 0:
                 var7 = arg0;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.fetchTopEmojis = var3;
-    var3 = function(arg0, arg1) { // Original name: updateNewlyAddedLastSeen, environment: var1
+    var3 = function arg0, arg1() {
         _fun57235: for (var _fun57235_ip = 0;;) switch (_fun57235_ip) {
             case 0:
                 var5 = arg0;
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.updateNewlyAddedLastSeen = var3;
-    var1 = function(arg0, arg1) { // Original name: updateNewlyAddedEmojiSeenAcknowledged, environment: var1
+    var1 = function arg0, arg1() {
         _fun57236: for (var _fun57236_ip = 0;;) switch (_fun57236_ip) {
             case 0:
                 var4 = arg0;

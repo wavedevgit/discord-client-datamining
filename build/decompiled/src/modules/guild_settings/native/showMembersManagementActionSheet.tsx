@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_settings/native/showMembersManagementActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: showMembersManagementActionSheet, environment: var1
+    var3 = function arg0() {
         _fun104893: for (var _fun104893_ip = 0;;) switch (_fun104893_ip) {
             case 0:
                 var0 = arg0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.pEasFX;
                 var3 = var4.bind(var6)(var3);
                 var2.label = var3;
-                var3 = function() { // Original name: onPress, environment: var5
+                var3 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 3;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6["2mIlKQ"];
                 var6 = var7.bind(var8)(var6);
                 var2.label = var6;
-                var5 = function() { // Original name: onPress, environment: var5
+                var5 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 3;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: getMembersManagementActions, environment: var1
+    var1 = function arg0() {
         _fun104896: for (var _fun104896_ip = 0;;) switch (_fun104896_ip) {
             case 0:
                 var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.pEasFX;
                 var0 = var2.bind(var5)(var0);
                 var1.label = var0;
-                var0 = function() { // Original name: action, environment: var3
+                var0 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 3;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4["2mIlKQ"];
                 var4 = var5.bind(var6)(var4);
                 var1.label = var4;
-                var3 = function() { // Original name: action, environment: var3
+                var3 = function() {
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot3;
                     var0 = 3;

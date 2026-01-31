@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'components_native/common/TouchableBackground.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: TouchableBackground, environment: var1
+    var1 = function arg0() {
         _fun89867: for (var _fun89867_ip = 0;;) switch (_fun89867_ip) {
             case 0:
                 var5 = arg0;

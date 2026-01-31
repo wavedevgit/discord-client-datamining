@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'actions/RTCDebugActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: open, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
         var1 = 1;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.open = var3;
-    var3 = function() { // Original name: close, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.close = var3;
-    var3 = function() { // Original name: openReplay, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.openReplay = var3;
-    var3 = function(arg0) { // Original name: setSection, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setSection = var3;
-    var3 = function(arg0) { // Original name: setShouldRecordNextConnection, environment: var1
+    var3 = function arg0() {
         var4 = arg0;
         var2 = _closure1_slot0;
         var3 = _closure1_slot1;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setShouldRecordNextConnection = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: setSimulcastDebugOverride, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setSimulcastDebugOverride = var3;
-    var1 = function() { // Original name: chooseReplayPath, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;

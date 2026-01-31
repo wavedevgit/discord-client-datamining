@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: getStatusSource, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun50903: for (var _fun50903_ip = 0;;) switch (_fun50903_ip) {
             case 0:
                 var2 = arg0;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'uikit-native/status/Status.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: Status, environment: var1
+    var3 = function arg0() {
         _fun50905: for (var _fun50905_ip = 0;;) switch (_fun50905_ip) {
             case 0:
                 var0 = arg0;
@@ -401,7 +401,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.default = var3;
-    var1 = function(arg0) { // Original name: StatusWithTyping, environment: var1
+    var1 = function arg0() {
         _fun50906: for (var _fun50906_ip = 0;;) switch (_fun50906_ip) {
             case 0:
                 var0 = arg0;
@@ -541,7 +541,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var24[var9];
                 var7 = var25.bind(var3)(var2);
                 var4 = var7.useAnimatedStyle;
-                var2 = function() { // Original name: f, environment: var1
+                var2 = function() {
                     _fun50907: for (var _fun50907_ip = 0;;) switch (_fun50907_ip) {
                         case 0:
                             var2 = _closure2_slot0;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0[var9];
                 var4 = var19.bind(var3)(var2);
                 var2 = var4.useAnimatedStyle;
-                var1 = function() { // Original name: O, environment: var1
+                var1 = function() {
                     var0 = {};
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot2;

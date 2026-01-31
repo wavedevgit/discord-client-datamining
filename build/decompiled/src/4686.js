@@ -58,7 +58,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = null;
             var3 = var3 != var4;
             var _closure1_slot4 = var3;
-            var1 = function(arg0) { // Original name: MaskedView, environment: var1
+            var1 = function arg0() {
                 _fun43549: for (var _fun43549_ip = 0;;) switch (_fun43549_ip) {
                     case 0:
                         var5 = arg0;

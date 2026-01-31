@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.liveTag = var9;
     var1 = var4.bind(var7)(var1);
     var _closure1_slot13 = var1;
-    var1 = function(arg0) { // Original name: StreamTextOverlay, environment: var3
+    var1 = function arg0() {
         _fun64256: for (var _fun64256_ip = 0;;) switch (_fun64256_ip) {
             case 0:
                 var0 = arg0;
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.resizeMode = var19;
                 var7.streamId = var18;
                 var7.gestureEnabled = var17;
-                var16 = function() { // Original name: renderTag, environment: var16
+                var16 = function() {
                     var3 = _closure1_slot10;
                     var1 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -564,7 +564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/video_calls/native/components/StreamTile.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: _default, environment: var3
+    var3 = function arg0() {
         _fun64261: for (var _fun64261_ip = 0;;) switch (_fun64261_ip) {
             case 0:
                 var2 = arg0;

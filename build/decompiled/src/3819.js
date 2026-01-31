@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var0 = function() { // Original name: getCurrentReactOwner, environment: var1
+    var0 = function() {
         _fun34672: for (var _fun34672_ip = 0;;) switch (_fun34672_ip) {
             case 0:
                 var0 = _closure1_slot2;
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.isReact19;
     var3 = var3.bind(var4)();
     var _closure1_slot4 = var3;
-    var3 = function() { // Original name: isReactRendering, environment: var1
+    var3 = function() {
         var1 = _closure1_slot5;
         var0 = undefined;
         var0 = var1.bind(var0)();
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.isReactRendering = var3;
-    var3 = function() { // Original name: isFirstReactRender, environment: var1
+    var3 = function() {
         _fun34674: for (var _fun34674_ip = 0;;) switch (_fun34674_ip) {
             case 0:
                 var1 = _closure1_slot5;
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var2.isFirstReactRender = var3;
-    var1 = function(arg0) { // Original name: componentWithRef, environment: var1
+    var1 = function arg0() {
         _fun34675: for (var _fun34675_ip = 0;;) switch (_fun34675_ip) {
             case 0:
                 var3 = arg0;

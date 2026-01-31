@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: baseReduce, environment: var0
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
         var1 = arg1;
         var _closure2_slot0 = var1;
         var1 = arg2;

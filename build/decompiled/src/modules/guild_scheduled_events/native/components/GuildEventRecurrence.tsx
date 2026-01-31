@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventRecurrence.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GuildEventRecurrence, environment: var1
+    var1 = function arg0() {
         _fun66158: for (var _fun66158_ip = 0;;) switch (_fun66158_ip) {
             case 0:
                 var0 = arg0;
@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
                 var2 = var1.PressableOpacity;
                 var1 = {};
-                var5 = function(arg0) { // Original name: onPress, environment: var14
+                var5 = function arg0() {
                     _fun66162: for (var _fun66162_ip = 0;;) switch (_fun66162_ip) {
                         case 0:
                             var1 = arg0;
@@ -383,7 +383,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var16.HIgA5a;
                 var16 = var17.bind(var19)(var16);
                 var10.accessibilityLabel = var16;
-                var14 = function(arg0) { // Original name: onPress, environment: var14
+                var14 = function arg0() {
                     _fun66163: for (var _fun66163_ip = 0;;) switch (_fun66163_ip) {
                         case 0:
                             var1 = arg0;

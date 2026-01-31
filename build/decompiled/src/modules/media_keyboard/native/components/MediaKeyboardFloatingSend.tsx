@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot12 = var3;
     var3 = var6.forwardRef;
-    var1 = function(arg0, arg1) { // Original name: MediaKeyboardFloatingSendInner, environment: var1
+    var1 = function arg0, arg1() {
         _fun108463: for (var _fun108463_ip = 0;;) switch (_fun108463_ip) {
             case 0:
                 var1 = arg0;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.animatedIndex = var10;
                 var1.channelId = var7;
                 var1.draftType = var0;
-                var0 = function(arg0) { // Original name: useSendVisibleSharedValue, environment: var2
+                var0 = function arg0() {
                     var0 = arg0;
                     var9 = var0.animatedIndex;
                     var _closure3_slot0 = var9;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var6[var2];
                     var4 = var4.bind(var3)(var2);
                     var3 = var4.useAnimatedReaction;
-                    var2 = function() { // Original name: c, environment: var1
+                    var2 = function() {
                         _fun108466: for (var _fun108466_ip = 0;;) switch (_fun108466_ip) {
                             case 0:
                                 var2 = _closure3_slot0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.__workletHash = var6;
                     var6 = _closure1_slot9;
                     var2.__initData = var6;
-                    var1 = function(arg0) { // Original name: l, environment: var1
+                    var1 = function arg0() {
                         var2 = _closure3_slot4;
                         var1 = var2.set;
                         var0 = arg0;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var0];
                 var14 = var11.bind(var3)(var1);
                 var13 = var14.useAnimatedStyle;
-                var7 = function() { // Original name: I, environment: var2
+                var7 = function() {
                     _fun108468: for (var _fun108468_ip = 0;;) switch (_fun108468_ip) {
                         case 0:
                             var0 = {};
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10[var0];
                 var14 = var11.bind(var3)(var7);
                 var11 = var14.useAnimatedProps;
-                var7 = function() { // Original name: V, environment: var2
+                var7 = function() {
                     _fun108469: for (var _fun108469_ip = 0;;) switch (_fun108469_ip) {
                         case 0:
                             var0 = {};

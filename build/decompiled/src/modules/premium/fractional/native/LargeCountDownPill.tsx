@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/premium/fractional/native/LargeCountDownPill.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: LargeCountDownPill, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var14 = var0.countdownText;
         var0 = _closure1_slot7;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot5;
         var1 = _closure1_slot3;
         var0 = {};
-        var4 = function() { // Original name: onPress, environment: var4
+        var4 = function() {
             var5 = _closure1_slot1;
             var6 = _closure1_slot2;
             var0 = 4;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4["Mv4E/M"];
             var4 = var7.bind(var8)(var4);
             var1.content = var4;
-            var4 = function() { // Original name: icon, environment: var4
+            var4 = function() {
                 var3 = _closure1_slot5;
                 var1 = _closure1_slot0;
                 var6 = _closure1_slot2;

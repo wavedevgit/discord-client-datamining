@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/GuildJoinRequestAnalyticUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: trackMemberApplicationViewed, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.guildId;
         var6 = var0.applicationUserId;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackMemberApplicationViewed = var3;
-    var3 = function(arg0) { // Original name: trackMemberApplicationAction, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         var8 = var0.guildId;
         var7 = var0.actionType;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.trackMemberApplicationAction = var3;
-    var3 = function(arg0) { // Original name: trackMemberApplicationInterviewMessage, environment: var1
+    var3 = function arg0() {
         _fun55053: for (var _fun55053_ip = 0;;) switch (_fun55053_ip) {
             case 0:
                 var0 = arg0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.trackMemberApplicationInterviewMessage = var3;
-    var1 = function(arg0) { // Original name: trackMemberVerificationApplicationViewed, environment: var1
+    var1 = function arg0() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
         var0 = 3;

@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_boosting/native/GuildBoostingSubscribeButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: _default, environment: var1
+    var1 = function arg0() {
         _fun77979: for (var _fun77979_ip = 0;;) switch (_fun77979_ip) {
             case 0:
                 var0 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.loading = var10;
                 var10 = 'primary';
                 var4.variant = var10;
-                var9 = function() { // Original name: onPress, environment: var9
+                var9 = function() {
                     var1 = _closure2_slot13;
                     var0 = undefined;
                     var0 = var1.bind(var0)();

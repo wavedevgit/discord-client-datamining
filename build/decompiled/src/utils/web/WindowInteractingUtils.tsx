@@ -23,19 +23,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var3 = ['click', 'mousedown', 'mouseup', 'keydown', 'keyup', 'keypress', 'contextmenu'];
     var2.INTERACTION_EVENTS = var3;
-    var3 = function() { // Original name: getCurrentlyInteractingWindowId, environment: var1
+    var3 = function() {
         var0 = _closure1_slot0;
         return var0;
     };
     var2.getCurrentlyInteractingWindowId = var3;
-    var3 = function(arg0) { // Original name: setCurrentlyInteractingWindowId, environment: var1
+    var3 = function arg0() {
         var0 = arg0;
         _closure1_slot0 = var0;
         var0 = undefined;
         return var0;
     };
     var2.setCurrentlyInteractingWindowId = var3;
-    var1 = function(arg0) { // Original name: clearCurrentlyInteractingWindowId, environment: var1
+    var1 = function arg0() {
         _fun59973: for (var _fun59973_ip = 0;;) switch (_fun59973_ip) {
             case 0:
                 var2 = _closure1_slot0;

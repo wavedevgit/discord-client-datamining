@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var3 = var3.GuildFeatures;
     var _closure1_slot5 = var3;
-    var3 = function() { // Original name: useUserSafetySettingsSelectedGuildId, environment: var1
+    var3 = function() {
         var1 = _closure1_slot4;
         var0 = undefined;
         var0 = var1.bind(var0)();

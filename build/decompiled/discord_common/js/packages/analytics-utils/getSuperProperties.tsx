@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var7;
             var _closure1_slot1 = var18;
             var _closure1_slot2 = var8;
-            var0 = function() { // Original name: isMetaQuestRuntime, environment: var1
+            var0 = function() {
                 _fun7325: for (var _fun7325_ip = 0;;) switch (_fun7325_ip) {
                     case 0:
                         var1 = _closure1_slot0;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot7 = var0;
-            var5 = function() { // Original name: getOS, environment: var1
+            var5 = function() {
                 _fun7326: for (var _fun7326_ip = 0;;) switch (_fun7326_ip) {
                     case 0:
                         var0 = global;
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot8 = var5;
-            var4 = function() { // Original name: getDevice, environment: var1
+            var4 = function() {
                 _fun7327: for (var _fun7327_ip = 0;;) switch (_fun7327_ip) {
                     case 0:
                         var0 = global;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot9 = var4;
-            var0 = function() { // Original name: getDeviceProperties, environment: var1
+            var0 = function() {
                 _fun7328: for (var _fun7328_ip = 0;;) switch (_fun7328_ip) {
                     case 0:
                         var4 = undefined;
@@ -222,7 +222,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var _closure1_slot10 = var0;
-            var3 = function(arg0) { // Original name: extendSuperProperties, environment: var1
+            var3 = function arg0() {
                 var0 = {};
                 var5 = _closure1_slot3;
                 var6 = var0;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 continue _fun7324
             }
         case 714: // try_start_0
-            var6 = function() { // Original name: getCachedSuperProperties, environment: var1
+            var6 = function() {
                 _fun7330: for (var _fun7330_ip = 0;;) switch (_fun7330_ip) {
                     case 0:
                         var1 = _closure1_slot0;
@@ -527,7 +527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun7330
                         }
                     case 220:
-                        var6 = function(arg0, arg1) { // Original name: suffixObjectKeys, environment: var0
+                        var6 = function arg0, arg1() {
                             var4 = arg0;
                             var _closure3_slot0 = var4;
                             var0 = '_current';
@@ -730,7 +730,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.bind(var8)(var6);
             var2.getOS = var5;
             var2.getDevice = var4;
-            var4 = function(arg0) { // Original name: getCampaignParams, environment: var1
+            var4 = function arg0() {
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = {};
@@ -830,12 +830,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.getCampaignParams = var4;
             var2.extendSuperProperties = var3;
-            var3 = function() { // Original name: getSuperProperties, environment: var1
+            var3 = function() {
                 var0 = _closure1_slot3;
                 return var0;
             };
             var2.getSuperProperties = var3;
-            var1 = function() { // Original name: getSuperPropertiesBase64, environment: var1
+            var1 = function() {
                 var0 = _closure1_slot4;
                 return var0;
             };

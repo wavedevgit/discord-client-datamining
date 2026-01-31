@@ -1024,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.handleDisconnect = var5;
             var2.audioDeviceToIconMap = var4;
-            var4 = function(arg0) { // Original name: getAudioDeviceToDisplayText, environment: var1
+            var4 = function arg0() {
                 _fun66212: for (var _fun66212_ip = 0;;) switch (_fun66212_ip) {
                     case 0:
                         var0 = arg0;

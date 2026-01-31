@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Original name: stackHas, environment: var0
+    var1 = function arg0() {
         var0 = this;
         var2 = var0.__data__;
         var1 = var2.has;

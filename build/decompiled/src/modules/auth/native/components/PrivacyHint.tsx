@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: PrivacyPolicyDescription, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var4 = var0.style;
         var3 = _closure1_slot8;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot11 = var0;
-    var0 = function(arg0) { // Original name: PrivacyPolicyCheckbox, environment: var1
+    var0 = function arg0() {
         _fun100476: for (var _fun100476_ip = 0;;) switch (_fun100476_ip) {
             case 0:
                 var0 = arg0;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/auth/native/components/PrivacyHint.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: PrivacyHint, environment: var1
+    var1 = function arg0() {
         _fun100477: for (var _fun100477_ip = 0;;) switch (_fun100477_ip) {
             case 0:
                 var0 = arg0;

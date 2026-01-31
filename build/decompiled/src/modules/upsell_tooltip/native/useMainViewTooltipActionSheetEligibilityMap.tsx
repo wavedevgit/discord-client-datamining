@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/upsell_tooltip/native/useMainViewTooltipActionSheetEligibilityMap.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: useMainViewTooltipActionSheetMap, environment: var1
+    var1 = function() {
         _fun110192: for (var _fun110192_ip = 0;;) switch (_fun110192_ip) {
             case 0:
                 var7 = _closure1_slot0;

@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = 60;
             var4.fps = var7;
             var _closure1_slot4 = var4;
-            var7 = function(arg0) { // Original name: getStylesFromObject, environment: var1
+            var7 = function arg0() {
                 _fun34926: for (var _fun34926_ip = 0;;) switch (_fun34926_ip) {
                     case 0:
                         var4 = arg0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot5 = var7;
-            var7 = function(arg0) { // Original name: getCurrentStyle, environment: var1
+            var7 = function arg0() {
                 _fun34928: for (var _fun34928_ip = 0;;) switch (_fun34928_ip) {
                     case 0:
                         var3 = arg0;
@@ -216,7 +216,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot6 = var7;
-            var7 = function(arg0, arg1) { // Original name: checkEqual, environment: var1
+            var7 = function arg0, arg1() {
                 _fun34930: for (var _fun34930_ip = 0;;) switch (_fun34930_ip) {
                     case 0:
                         var5 = arg0;
@@ -319,7 +319,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot7 = var7;
-            var7 = function(arg0, arg1) { // Original name: compareAndFormatDifferences, environment: var1
+            var7 = function arg0, arg1() {
                 _fun34931: for (var _fun34931_ip = 0;;) switch (_fun34931_ip) {
                     case 0:
                         var8 = arg0;
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var4.bind(var5)(var0);
                         var _closure2_slot2 = var0;
                         var0 = {};
-                        var4 = function() { // Original name: message, environment: var2
+                        var4 = function() {
                             var11 = _closure2_slot1;
                             var9 = _closure2_slot0;
                             var7 = _closure2_slot2;
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     case 393:
                         var0 = {};
-                        var2 = function() { // Original name: message, environment: var2
+                        var2 = function() {
                             var0 = 'ok';
                             return var0;
                         };
@@ -494,7 +494,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var _closure1_slot8 = var7;
-            var7 = function(arg0, arg1) { // Original name: compareProps, environment: var1
+            var7 = function arg0, arg1() {
                 _fun34935: for (var _fun34935_ip = 0;;) switch (_fun34935_ip) {
                     case 0:
                         var0 = arg0;
@@ -553,7 +553,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     case 138:
                         var0 = {};
-                        var1 = function() { // Original name: message, environment: var1
+                        var1 = function() {
                             var0 = "Component doesn't have props.";
                             return var0;
                         };
@@ -603,7 +603,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
         case 203:
             var _closure1_slot11 = var3;
-            var3 = function(arg0) { // Original name: withReanimatedTimer, environment: var1
+            var3 = function arg0() {
                 var1 = global;
                 var3 = var1.console;
                 var2 = var3.warn;
@@ -624,7 +624,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.withReanimatedTimer = var3;
-            var3 = function() { // Original name: advanceAnimationByTime, environment: var1
+            var3 = function() {
                 _fun34939: for (var _fun34939_ip = 0;;) switch (_fun34939_ip) {
                     case 0:
                         var0 = undefined;
@@ -663,7 +663,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.advanceAnimationByTime = var3;
-            var3 = function(arg0) { // Original name: advanceAnimationByFrame, environment: var1
+            var3 = function arg0() {
                 var0 = global;
                 var3 = var0.console;
                 var2 = var3.warn;
@@ -682,7 +682,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var2.advanceAnimationByFrame = var3;
-            var3 = function() { // Original name: setUpTests, environment: var1
+            var3 = function() {
                 _fun34941: for (var _fun34941_ip = 0;;) switch (_fun34941_ip) {
                     case 0:
                         var0 = undefined;
@@ -748,7 +748,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _closure1_slot10 = var1;
                         var2 = var3.extend;
                         var1 = {};
-                        var5 = function(arg0, arg1) { // Original name: toHaveAnimatedProps, environment: var4
+                        var5 = function arg0, arg1() {
                             var3 = _closure1_slot9;
                             var2 = undefined;
                             var1 = arg0;
@@ -760,7 +760,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var2.bind(var3)(var1);
                         var2 = var3.extend;
                         var1 = {};
-                        var4 = function(arg0, arg1) { // Original name: toHaveAnimatedStyle, environment: var4
+                        var4 = function arg0, arg1() {
                             _fun34943: for (var _fun34943_ip = 0;;) switch (_fun34943_ip) {
                                 case 0:
                                     var4 = undefined;
@@ -784,7 +784,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 case 26:
                                     var3 = arguments[var0];
                                 case 30:
-                                    var2 = function(arg0, arg1, arg2) { // Original name: compareStyle, environment: var0
+                                    var2 = function arg0, arg1, arg2() {
                                         _fun34944: for (var _fun34944_ip = 0;;) switch (_fun34944_ip) {
                                             case 0:
                                                 var2 = arg0;
@@ -796,7 +796,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 }
                                             case 16:
                                                 var0 = {};
-                                                var1 = function() { // Original name: message, environment: var1
+                                                var1 = function() {
                                                     var0 = "Component doesn't have a style.";
                                                     return var0;
                                                 };
@@ -828,7 +828,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var2.setUpTests = var3;
-            var1 = function(arg0) { // Original name: getAnimatedStyle, environment: var1
+            var1 = function arg0() {
                 var2 = _closure1_slot6;
                 var1 = undefined;
                 var0 = arg0;

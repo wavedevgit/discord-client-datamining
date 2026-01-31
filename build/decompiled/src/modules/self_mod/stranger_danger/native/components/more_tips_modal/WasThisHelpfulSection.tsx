@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/self_mod/stranger_danger/native/components/more_tips_modal/WasThisHelpfulSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: WasThisHelpfulSection, environment: var1
+    var1 = function arg0() {
         _fun89066: for (var _fun89066_ip = 0;;) switch (_fun89066_ip) {
             case 0:
                 var0 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[1] = var15;
                 var6.style = var9;
                 var6.disabled = var18;
-                var9 = function() { // Original name: onPress, environment: var12
+                var9 = function() {
                     var3 = _closure2_slot5;
                     var1 = _closure1_slot7;
                     var2 = var1.UPVOTE;
@@ -463,7 +463,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16[1] = var17;
                 var7.style = var16;
                 var7.disabled = var13;
-                var12 = function() { // Original name: onPress, environment: var12
+                var12 = function() {
                     var3 = _closure2_slot5;
                     var1 = _closure1_slot7;
                     var2 = var1.DOWNVOTE;

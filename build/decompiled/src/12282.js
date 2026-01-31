@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot4 = var2;
     var1 = function() { // Environment: var1
-        var4 = function(arg0, arg1) { // Original name: Comparator, environment: var1
+        var4 = function arg0, arg1() {
             _fun94077: for (var _fun94077_ip = 0;;) switch (_fun94077_ip) {
                 case 0:
                     var0 = arg0;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var2 = 'parse';
         var0.key = var2;
-        var2 = function(arg0) { // Original name: parse, environment: var1
+        var2 = function arg0() {
             _fun94078: for (var _fun94078_ip = 0;;) switch (_fun94078_ip) {
                 case 0:
                     var7 = arg0;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'toString';
         var0.key = var5;
-        var5 = function() { // Original name: toString, environment: var1
+        var5 = function() {
             var0 = this;
             var0 = var0.value;
             return var0;
@@ -234,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'test';
         var0.key = var5;
-        var5 = function(arg0) { // Original name: test, environment: var1
+        var5 = function arg0() {
             _fun94080: for (var _fun94080_ip = 0;;) switch (_fun94080_ip) {
                 case 0:
                     var7 = arg0;
@@ -315,7 +315,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'intersects';
         var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: intersects, environment: var1
+        var5 = function arg0, arg1() {
             _fun94081: for (var _fun94081_ip = 0;;) switch (_fun94081_ip) {
                 case 0:
                     var3 = arg0;
@@ -641,7 +641,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = {};
         var5 = 'ANY';
         var0.key = var5;
-        var1 = function() { // Original name: get, environment: var1
+        var1 = function() {
             var0 = _closure1_slot4;
             return var0;
         };

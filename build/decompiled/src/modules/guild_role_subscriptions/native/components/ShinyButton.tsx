@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/native/components/ShinyButton.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: ShinyButton, environment: var1
+    var1 = function arg0() {
         var2 = arg0;
         var9 = var2.style;
         var7 = var2.loading;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.style = var8;
         var0.loading = var7;
         var0.disabled = var6;
-        var5 = function() { // Original name: renderIcon, environment: var5
+        var5 = function() {
             _fun73877: for (var _fun73877_ip = 0;;) switch (_fun73877_ip) {
                 case 0:
                     var1 = _closure2_slot0;

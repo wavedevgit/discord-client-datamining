@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/native/MessageImpressionAnalyticsHelpers.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: useShouldTrackAnnouncementMessageViews, environment: var1
+    var3 = function arg0() {
         _fun73425: for (var _fun73425_ip = 0;;) switch (_fun73425_ip) {
             case 0:
                 var0 = arg0;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShouldTrackAnnouncementMessageViews = var3;
-    var3 = function(arg0) { // Original name: useShouldTrackRichPresenceInviteEmbedViews, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var5 = var1.messages;
         var _closure2_slot0 = var5;
@@ -246,7 +246,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useShouldTrackRichPresenceInviteEmbedViews = var3;
-    var3 = function(arg0, arg1, arg2, arg3) { // Original name: handleAnnouncementMessageViewTracking, environment: var1
+    var3 = function arg0, arg1, arg2, arg3() {
         _fun73431: for (var _fun73431_ip = 0;;) switch (_fun73431_ip) {
             case 0:
                 var3 = arg0;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.handleAnnouncementMessageViewTracking = var3;
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: handleRichPresenceInviteEmbedViewTracking, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun73433: for (var _fun73433_ip = 0;;) switch (_fun73433_ip) {
             case 0:
                 var3 = arg0;

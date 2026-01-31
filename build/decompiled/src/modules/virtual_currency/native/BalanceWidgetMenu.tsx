@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
-    var0 = function(arg0) { // Original name: BalanceWidgetMenu, environment: var3
+    var0 = function arg0() {
         var1 = arg0;
         var6 = var1.style;
         var5 = _closure1_slot0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var9.WrzJBf;
             var9 = var10.bind(var12)(var9);
             var2.buttonText = var9;
-            var9 = function() { // Original name: onButtonPress, environment: var1
+            var9 = function() {
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
                 var0 = 12;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var8.SymzJC;
             var8 = var9.bind(var10)(var8);
             var2.buttonText = var8;
-            var8 = function() { // Original name: onButtonPress, environment: var1
+            var8 = function() {
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
                 var0 = 12;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var4;
     var1 = var1.jsxs;
     var _closure1_slot11 = var1;
-    var1 = function(arg0) { // Original name: BalanceWidget, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.onPress;
         var6 = var0.style;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var1;
-    var1 = function(arg0) { // Original name: OrbsOnboardingMenuDismissibleContent, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var0 = var0.style;
         var _closure2_slot0 = var0;
@@ -356,7 +356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot8;
         var5 = var5.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
         var0.groupName = var5;
-        var4 = function(arg0) { // Original name: children, environment: var4
+        var4 = function arg0() {
             _fun86559: for (var _fun86559_ip = 0;;) switch (_fun86559_ip) {
                 case 0:
                     var1 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     return var1;
                 case 66:
-                    var7 = function() { // Original name: handleOnboardingPress, environment: var0
+                    var7 = function() {
                         var2 = _closure3_slot0;
                         var0 = _closure1_slot7;
                         var1 = var0.TAKE_ACTION;
@@ -468,7 +468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/virtual_currency/native/BalanceWidgetMenu.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: BalanceWidgetMenuWrapper, environment: var3
+    var3 = function arg0() {
         _fun86561: for (var _fun86561_ip = 0;;) switch (_fun86561_ip) {
             case 0:
                 var6 = arg0;
@@ -526,7 +526,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot10;
                 var2 = _closure1_slot12;
                 var1 = {};
-                var7 = function() { // Original name: onPress, environment: var7
+                var7 = function() {
                     var0 = undefined;
                     return var0;
                 };

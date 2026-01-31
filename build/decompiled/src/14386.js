@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function(arg0) { // Original name: isDateFormatOnly, environment: var1
+    var0 = function arg0() {
         _fun112247: for (var _fun112247_ip = 0;;) switch (_fun112247_ip) {
             case 0:
                 var4 = arg0;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: isTimeFormatOnly, environment: var1
+    var0 = function arg0() {
         _fun112248: for (var _fun112248_ip = 0;;) switch (_fun112248_ip) {
             case 0:
                 var4 = arg0;
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: createDateTimeFormat, environment: var1
+    var0 = function arg0() {
         _fun112249: for (var _fun112249_ip = 0;;) switch (_fun112249_ip) {
             case 0:
                 var5 = arg0;
@@ -399,11 +399,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot7 = var0;
     var2.createDateTimeFormat = var0;
-    var0 = function(arg0) { // Original name: createDateTimeFormats, environment: var1
+    var0 = function arg0() {
         _fun112252: for (var _fun112252_ip = 0;;) switch (_fun112252_ip) {
             case 0:
                 var0 = arg0;
-                var11 = function(arg0, arg1) { // Original name: expandFormat, environment: var1
+                var11 = function arg0, arg1() {
                     _fun112253: for (var _fun112253_ip = 0;;) switch (_fun112253_ip) {
                         case 0:
                             var4 = arg0;

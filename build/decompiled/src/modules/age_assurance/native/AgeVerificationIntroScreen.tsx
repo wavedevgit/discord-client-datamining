@@ -143,7 +143,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/age_assurance/native/AgeVerificationIntroScreen.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: GetStartedScreen, environment: var1
+    var1 = function arg0() {
         _fun52113: for (var _fun52113_ip = 0;;) switch (_fun52113_ip) {
             case 0:
                 var0 = arg0;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.t;
                 var22 = var21["L+FgkZ"];
                 var21 = {};
-                var25 = function() { // Original name: handleOnHelpUrlHook, environment: var14
+                var25 = function() {
                     var5 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 20;
@@ -430,7 +430,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.t;
                 var19 = var18.pJAxgQ;
                 var18 = {};
-                var22 = function() { // Original name: handleOnRequestHook, environment: var14
+                var22 = function() {
                     var3 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var0 = 20;

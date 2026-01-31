@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var8;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun50118: for (var _fun50118_ip = 0;;) switch (_fun50118_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun50120: for (var _fun50120_ip = 0;;) switch (_fun50120_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: updateAssets, environment: var1
+    var0 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _updateAssets, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -338,7 +338,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function(arg0) { // Original name: getApplicationAssetsMap, environment: var1
+    var0 = function arg0() {
         _fun50125: for (var _fun50125_ip = 0;;) switch (_fun50125_ip) {
             case 0:
                 var3 = arg0;
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot16 = var0;
-    var5 = function(arg0, arg1) { // Original name: getAssetFromImageURL, environment: var1
+    var5 = function arg0, arg1() {
         _fun50126: for (var _fun50126_ip = 0;;) switch (_fun50126_ip) {
             case 0:
                 var5 = arg0;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot17 = var5;
-    var4 = function() { // Original name: getAssets, environment: var1
+    var4 = function() {
         var0 = undefined;
         var3 = _closure1_slot19;
         var2 = var3.apply;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot18 = var4;
-    var0 = function() { // Original name: _getAssets, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot19 = var0;
-    var0 = function() { // Original name: _resolveExternalAssets, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -606,7 +606,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot20 = var0;
-    var0 = function(arg0, arg1) { // Original name: updateUrlAssetIds, environment: var1
+    var0 = function arg0, arg1() {
         _fun50135: for (var _fun50135_ip = 0;;) switch (_fun50135_ip) {
             case 0:
                 var0 = arg0;
@@ -724,7 +724,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot21 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: updateNonUrlAssetIds, environment: var1
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun50137: for (var _fun50137_ip = 0;;) switch (_fun50137_ip) {
             case 0:
                 var12 = arg0;
@@ -816,7 +816,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot22 = var0;
-    var3 = function() { // Original name: fetchAssetIds, environment: var1
+    var3 = function() {
         var0 = undefined;
         var3 = _closure1_slot24;
         var2 = var3.apply;
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot23 = var3;
-    var0 = function() { // Original name: _fetchAssetIds, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -924,7 +924,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun50141
                         }
                     case 134:
-                        var2 = function() { // Original name: resolveExternalAssets, environment: var10
+                        var2 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot20;
                             var2 = var3.apply;
@@ -1094,7 +1094,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = {};
     var11 = var9.SPOTIFY;
     var10 = {};
-    var12 = function(arg0) { // Original name: deserialize, environment: var1
+    var12 = function arg0() {
         var0 = global;
         var3 = var0.encodeURIComponent;
         var2 = undefined;
@@ -1108,7 +1108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.deserialize = var12;
-    var12 = function(arg0) { // Original name: serialize, environment: var1
+    var12 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = 'https://i.scdn.co/image/';
@@ -1121,7 +1121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6[var11] = var10;
     var11 = var9.TWITCH;
     var10 = {};
-    var12 = function(arg0, arg1) { // Original name: deserialize, environment: var1
+    var12 = function arg0, arg1() {
         var2 = arg1;
         var0 = global;
         var4 = var0.encodeURIComponent;
@@ -1142,7 +1142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.deserialize = var12;
-    var12 = function(arg0) { // Original name: serialize, environment: var1
+    var12 = function arg0() {
         _fun50148: for (var _fun50148_ip = 0;;) switch (_fun50148_ip) {
             case 0:
                 var2 = arg0;
@@ -1166,7 +1166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6[var11] = var10;
     var10 = var9.YOUTUBE;
     var9 = {};
-    var11 = function(arg0) { // Original name: deserialize, environment: var1
+    var11 = function arg0() {
         var0 = global;
         var3 = var0.encodeURIComponent;
         var2 = undefined;
@@ -1180,7 +1180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var9.deserialize = var11;
-    var11 = function(arg0) { // Original name: serialize, environment: var1
+    var11 = function arg0() {
         _fun50150: for (var _fun50150_ip = 0;;) switch (_fun50150_ip) {
             case 0:
                 var2 = arg0;
@@ -1203,7 +1203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.serialize = var11;
     var6[var10] = var9;
     var10 = {};
-    var9 = function(arg0) { // Original name: deserialize, environment: var1
+    var9 = function arg0() {
         _fun50151: for (var _fun50151_ip = 0;;) switch (_fun50151_ip) {
             case 0:
                 var4 = arg0;
@@ -1303,7 +1303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var10.deserialize = var9;
-    var9 = function(arg0) { // Original name: serialize, environment: var1
+    var9 = function arg0() {
         var0 = arg0;
         return var0;
     };
@@ -1320,7 +1320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'utils/ApplicationAssetUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var2.getAssetFromImageURL = var5;
-    var5 = function(arg0, arg1, arg2) { // Original name: getAssetImage, environment: var1
+    var5 = function arg0, arg1, arg2() {
         _fun50153: for (var _fun50153_ip = 0;;) switch (_fun50153_ip) {
             case 0:
                 var16 = arg0;
@@ -1539,7 +1539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getAssetImage = var5;
     var2.getAssets = var4;
     var2.fetchAssetIds = var3;
-    var1 = function(arg0, arg1) { // Original name: getAssetIds, environment: var1
+    var1 = function arg0, arg1() {
         _fun50154: for (var _fun50154_ip = 0;;) switch (_fun50154_ip) {
             case 0:
                 var4 = arg1;

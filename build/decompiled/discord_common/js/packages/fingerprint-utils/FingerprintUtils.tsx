@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var3 = function(arg0) { // Original name: extractId, environment: var1
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.split;
         var0 = '.';
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = '../discord_common/js/packages/fingerprint-utils/FingerprintUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var2.extractId = var3;
-    var1 = function(arg0) { // Original name: maybeExtractId, environment: var1
+    var1 = function arg0() {
         _fun6406: for (var _fun6406_ip = 0;;) switch (_fun6406_ip) {
             case 0:
                 var3 = arg0;

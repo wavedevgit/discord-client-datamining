@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3 = var5.bind(var6)(var4, var3);
-    var1 = function() { // Original name: useWindowDimensions, environment: var1
+    var1 = function() {
         var3 = _closure1_slot4;
         var0 = _closure1_slot5;
         var4 = undefined;

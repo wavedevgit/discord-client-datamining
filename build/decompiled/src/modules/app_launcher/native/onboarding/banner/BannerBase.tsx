@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/app_launcher/native/onboarding/banner/BannerBase.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: BannerBase, environment: var1
+    var1 = function arg0() {
         _fun107327: for (var _fun107327_ip = 0;;) switch (_fun107327_ip) {
             case 0:
                 var0 = arg0;
@@ -228,7 +228,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5[var0];
                 var8 = var20.bind(var3)(var2);
                 var7 = var8.useAnimatedStyle;
-                var2 = function() { // Original name: _, environment: var4
+                var2 = function() {
                     _fun107329: for (var _fun107329_ip = 0;;) switch (_fun107329_ip) {
                         case 0:
                             var0 = {};
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var8;
                 var5[2] = var7;
                 var0.style = var5;
-                var4 = function(arg0) { // Original name: onLayout, environment: var4
+                var4 = function arg0() {
                     _fun107330: for (var _fun107330_ip = 0;;) switch (_fun107330_ip) {
                         case 0:
                             var0 = arg0;

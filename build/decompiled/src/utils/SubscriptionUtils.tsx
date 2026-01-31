@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun56556: for (var _fun56556_ip = 0;;) switch (_fun56556_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot10 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun56558: for (var _fun56558_ip = 0;;) switch (_fun56558_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot11 = var0;
-    var4 = function(arg0) { // Original name: getSubscriptionPlans, environment: var1
+    var4 = function arg0() {
         var0 = arg0;
         var2 = var0.items;
         var1 = var2.map;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot12 = var4;
-    var3 = function(arg0, arg1, arg2) { // Original name: subscriptionCanSwitchImmediately, environment: var1
+    var3 = function arg0, arg1, arg2() {
         _fun56561: for (var _fun56561_ip = 0;;) switch (_fun56561_ip) {
             case 0:
                 var0 = arg0;
@@ -379,7 +379,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'utils/SubscriptionUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var2.getSubscriptionPlans = var4;
-    var4 = function(arg0) { // Original name: getSubscriptionSKUs, environment: var1
+    var4 = function arg0() {
         var2 = _closure1_slot12;
         var1 = undefined;
         var0 = arg0;
@@ -395,7 +395,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSubscriptionSKUs = var4;
     var2.subscriptionCanSwitchImmediately = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: subscriptionCanDowngrade, environment: var1
+    var3 = function arg0, arg1, arg2() {
         var4 = _closure1_slot13;
         var3 = undefined;
         var2 = arg0;
@@ -406,7 +406,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.subscriptionCanDowngrade = var3;
-    var3 = function(arg0, arg1) { // Original name: getOrFetchSubscriptionPlan, environment: var1
+    var3 = function arg0, arg1() {
         _fun56565: for (var _fun56565_ip = 0;;) switch (_fun56565_ip) {
             case 0:
                 var9 = arg0;
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getOrFetchSubscriptionPlan = var3;
-    var3 = function(arg0, arg1) { // Original name: useGetOrFetchSubscriptionPlan, environment: var1
+    var3 = function arg0, arg1() {
         var7 = arg0;
         var6 = arg1;
         var _closure2_slot0 = var7;
@@ -588,7 +588,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useGetOrFetchSubscriptionPlan = var3;
-    var3 = function(arg0) { // Original name: getSubscriptionPauseDurations, environment: var1
+    var3 = function arg0() {
         _fun56569: for (var _fun56569_ip = 0;;) switch (_fun56569_ip) {
             case 0:
                 var2 = arg0;
@@ -701,7 +701,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getSubscriptionPauseDurations = var3;
-    var1 = function(arg0) { // Original name: didBeginPurchaseFlowOnFractionalPremium, environment: var1
+    var1 = function arg0() {
         _fun56571: for (var _fun56571_ip = 0;;) switch (_fun56571_ip) {
             case 0:
                 var3 = arg0;

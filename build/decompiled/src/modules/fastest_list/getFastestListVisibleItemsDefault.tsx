@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.fileFinishedImporting;
     var1 = 'modules/fastest_list/getFastestListVisibleItemsDefault.tsx';
     var1 = var3.bind(var4)(var1);
-    var1 = function(arg0) { // Original name: getFastestListVisibleItemsDefault, environment: var1
+    var1 = function arg0() {
         _fun61001: for (var _fun61001_ip = 0;;) switch (_fun61001_ip) {
             case 0:
                 var0 = arg0;

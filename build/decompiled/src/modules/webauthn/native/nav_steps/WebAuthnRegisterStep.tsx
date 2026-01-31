@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: AndroidPasskeyRadioGroup, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var8 = var0.authenticatorSelection;
         var1 = var0.onChange;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.radioItem;
         var0.style = var11;
         var0.options = var10;
-        var9 = function(arg0) { // Original name: onChange, environment: var9
+        var9 = function arg0() {
             var0 = arg0;
             var2 = var0.value;
             var1 = _closure2_slot0;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/webauthn/native/nav_steps/WebAuthnRegisterStep.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() { // Original name: WebAuthnRegisterStep, environment: var1
+    var1 = function() {
         _fun60697: for (var _fun60697_ip = 0;;) switch (_fun60697_ip) {
             case 0:
                 var4 = _closure1_slot0;
@@ -455,7 +455,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.text = var13;
                 var8.disabled = var12;
                 var8.loading = var12;
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot5;
                     var1 = _closure2_slot6;
                     var0 = undefined;

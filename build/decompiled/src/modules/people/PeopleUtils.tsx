@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
-    var6 = function(arg0) { // Original name: acceptFriendRequest, environment: var3
+    var6 = function arg0() {
         _fun72049: for (var _fun72049_ip = 0;;) switch (_fun72049_ip) {
             case 0:
                 var0 = arg0;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot5 = var6;
-    var0 = function(arg0, arg1) { // Original name: handleFriendRequestAcceptError, environment: var3
+    var0 = function arg0, arg1() {
         _fun72050: for (var _fun72050_ip = 0;;) switch (_fun72050_ip) {
             case 0:
                 var0 = arg0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.bind(var4)(var2);
                 var3 = var4.openAcceptFriendRequestConfirmModal;
                 var2 = {};
-                var6 = function() { // Original name: onConfirm, environment: var5
+                var6 = function() {
                     _fun72051: for (var _fun72051_ip = 0;;) switch (_fun72051_ip) {
                         case 0:
                             var4 = _closure1_slot5;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2.onConfirm = var6;
-                var5 = function() { // Original name: onCancel, environment: var5
+                var5 = function() {
                     _fun72052: for (var _fun72052_ip = 0;;) switch (_fun72052_ip) {
                         case 0:
                             var1 = _closure2_slot0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.AbortCodes;
     var _closure1_slot4 = var1;
     var1 = {};
-    var7 = function(arg0) { // Original name: removeFriend, environment: var3
+    var7 = function arg0() {
         _fun72053: for (var _fun72053_ip = 0;;) switch (_fun72053_ip) {
             case 0:
                 var0 = arg0;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.removeFriend = var7;
-    var7 = function(arg0) { // Original name: cancelFriendRequest, environment: var3
+    var7 = function arg0() {
         _fun72054: for (var _fun72054_ip = 0;;) switch (_fun72054_ip) {
             case 0:
                 var0 = arg0;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.cancelFriendRequest = var7;
     var1.acceptFriendRequest = var6;
-    var3 = function(arg0) { // Original name: maybeConfirmFriendRequestAccept, environment: var3
+    var3 = function arg0() {
         _fun72055: for (var _fun72055_ip = 0;;) switch (_fun72055_ip) {
             case 0:
                 var1 = arg0;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.bind(var3)(var2);
                 var7 = var8.openAcceptFriendRequestConfirmModal;
                 var2 = {};
-                var9 = function() { // Original name: onConfirm, environment: var0
+                var9 = function() {
                     _fun72057: for (var _fun72057_ip = 0;;) switch (_fun72057_ip) {
                         case 0:
                             var3 = _closure1_slot5;
@@ -472,7 +472,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var2.onConfirm = var9;
-                var9 = function() { // Original name: onCancel, environment: var0
+                var9 = function() {
                     _fun72058: for (var _fun72058_ip = 0;;) switch (_fun72058_ip) {
                         case 0:
                             var2 = _closure2_slot4;

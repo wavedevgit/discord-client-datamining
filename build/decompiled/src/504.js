@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function(arg0, arg1, arg2, arg3) { // Original name: f, environment: var0
+    var2 = function arg0, arg1, arg2, arg3() {
         _fun6438: for (var _fun6438_ip = 0;;) switch (_fun6438_ip) {
             case 0:
                 var4 = arg0;
@@ -54,7 +54,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var _closure1_slot0 = var2;
-    var2 = function(arg0, arg1) { // Original name: ROTL, environment: var0
+    var2 = function arg0, arg1() {
         var2 = arg0;
         var3 = arg1;
         var1 = var2 << var3;
@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0) { // Original name: sha1, environment: var0
+    var0 = function arg0() {
         _fun6440: for (var _fun6440_ip = 0;;) switch (_fun6440_ip) {
             case 0:
                 var5 = arg0;

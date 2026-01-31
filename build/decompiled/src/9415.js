@@ -43,12 +43,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 'function pnpm_useCarouselControllerTsx5(opts={}){const{canSliding,loop,index,dataInfo,size,overscrollEnabled,containerSize,onScrollStart,currentFixedPage,handlerOffset,scrollWithTiming}=this.__closure;var _onScrollStart;const{count=1,animated=true,onFinished:onFinished}=opts;if(!canSliding())return;if(!loop&&index.value>=dataInfo.length-1)return;const visibleContentWidth=(dataInfo.length-index.value)*size;if(!overscrollEnabled&&!(visibleContentWidth>containerSize.value.width)){return;}(_onScrollStart=onScrollStart)===null||_onScrollStart===void 0||_onScrollStart();const nextPage=currentFixedPage()+count;index.value=nextPage;if(animated){handlerOffset.value=scrollWithTiming(-nextPage*size,onFinished);}else{handlerOffset.value=-nextPage*size;onFinished===null||onFinished===void 0||onFinished();}}';
     var3.code = var4;
     var _closure1_slot8 = var3;
-    var1 = function(arg0) { // Original name: useCarouselController, environment: var1
+    var1 = function arg0() {
         _fun74888: for (var _fun74888_ip = 0;;) switch (_fun74888_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
-                var28 = function(arg0) { // Original name: setSharedIndex, environment: var2
+                var28 = function arg0() {
                     var1 = _closure2_slot13;
                     var0 = arg0;
                     var1.current = var0;
@@ -193,7 +193,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var25[var22];
                 var17 = var23.bind(var24)(var6);
                 var11 = var17.useAnimatedReaction;
-                var8 = function() { // Original name: pnpm_useCarouselControllerTsx1, environment: var2
+                var8 = function() {
                     _fun74892: for (var _fun74892_ip = 0;;) switch (_fun74892_ip) {
                         case 0:
                             var0 = _closure2_slot4;
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8.__workletHash = var6;
                 var6 = _closure1_slot4;
                 var8.__initData = var6;
-                var7 = function(arg0) { // Original name: pnpm_useCarouselControllerTsx2, environment: var2
+                var7 = function arg0() {
                     var0 = arg0;
                     var3 = var0.i;
                     var2 = var0.newSharedIndexValue;
@@ -412,12 +412,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var7.bind(var9)(var0, var6);
                 var _closure2_slot18 = var8;
                 var7 = var9.useCallback;
-                var6 = function(arg0, arg1) { // Original name: pnpm_useCarouselControllerTsx3, environment: var2
+                var6 = function arg0, arg1() {
                     _fun74898: for (var _fun74898_ip = 0;;) switch (_fun74898_ip) {
                         case 0:
                             var7 = arg1;
                             var _closure3_slot0 = var7;
-                            var3 = function(arg0) { // Original name: pnpm_useCarouselControllerTsx4, environment: var0
+                            var3 = function arg0() {
                                 _fun74899: for (var _fun74899_ip = 0;;) switch (_fun74899_ip) {
                                     case 0:
                                         var0 = arg0;
@@ -534,7 +534,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var7.bind(var9)(var6, var0);
                 var _closure2_slot19 = var0;
                 var7 = var9.useCallback;
-                var6 = function() { // Original name: pnpm_useCarouselControllerTsx5, environment: var2
+                var6 = function() {
                     _fun74900: for (var _fun74900_ip = 0;;) switch (_fun74900_ip) {
                         case 0:
                             var0 = undefined;
@@ -1074,7 +1074,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.prev = var5;
                 var0.scrollTo = var4;
                 var0.getCurrentIndex = var3;
-                var2 = function() { // Original name: getSharedIndex, environment: var2
+                var2 = function() {
                     var0 = _closure2_slot13;
                     var0 = var0.current;
                     return var0;

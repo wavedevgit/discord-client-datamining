@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
-    var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var4
+    var0 = function arg0, arg1, arg2() {
         _fun42262: for (var _fun42262_ip = 0;;) switch (_fun42262_ip) {
             case 0:
                 var3 = arg0;
@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+    var0 = function() {
         _fun42263: for (var _fun42263_ip = 0;;) switch (_fun42263_ip) {
             case 0:
             case 2: // try_start_0
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var4
+    var0 = function arg0, arg1, arg2, arg3() {
         _fun42266: for (var _fun42266_ip = 0;;) switch (_fun42266_ip) {
             case 0:
                 var4 = arg0;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.PREMIUM_TYPE_NONE;
     var _closure1_slot11 = var1;
     var1 = function(arg0) { // Environment: var4
-        var4 = function(arg0) { // Original name: CollectiblesProductRecord, environment: var1
+        var4 = function arg0() {
             var1 = arg0;
             var5 = this;
             var2 = _closure1_slot2;
@@ -241,7 +241,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fromServer';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             _fun42270: for (var _fun42270_ip = 0;;) switch (_fun42270_ip) {
                 case 0:
                     var2 = arg0;
@@ -381,7 +381,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var1.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var4
-        var4 = function(arg0) { // Original name: CollectiblesVariantProductRecord, environment: var1
+        var4 = function arg0() {
             var1 = arg0;
             var5 = this;
             var2 = _closure1_slot2;
@@ -411,7 +411,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var5 = 'fromServer';
         var0.key = var5;
-        var1 = function(arg0) { // Original name: value, environment: var1
+        var1 = function arg0() {
             var2 = arg0;
             var6 = var2.base_variant_name;
             var5 = var2.base_variant_sku_id;

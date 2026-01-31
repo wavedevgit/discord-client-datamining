@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun62360: for (var _fun62360_ip = 0;;) switch (_fun62360_ip) {
             case 0:
                 var2 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun62362: for (var _fun62362_ip = 0;;) switch (_fun62362_ip) {
             case 0:
                 var3 = arg0;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function(arg0) { // Original name: asString, environment: var1
+    var0 = function arg0() {
         _fun62363: for (var _fun62363_ip = 0;;) switch (_fun62363_ip) {
             case 0:
                 var0 = arg0;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function() { // Original name: _getSpotifyMetadataFromActivity, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot3;
@@ -478,7 +478,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/spotify/SpotifyUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: isSpotifyPlayable, environment: var1
+    var3 = function arg0() {
         _fun62367: for (var _fun62367_ip = 0;;) switch (_fun62367_ip) {
             case 0:
                 var1 = arg0;
@@ -499,7 +499,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSpotifyPlayable = var3;
-    var3 = function() { // Original name: ensureSpotifyPlayable, environment: var1
+    var3 = function() {
         _fun62368: for (var _fun62368_ip = 0;;) switch (_fun62368_ip) {
             case 0:
                 var2 = _closure1_slot6;
@@ -607,10 +607,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var3 = var6.bind(var0)(var3, var5);
                     var _closure3_slot2 = var3;
-                    var5 = function() { // Original name: onSpotifyStoreChange, environment: var2
+                    var5 = function() {
                         _fun62371: for (var _fun62371_ip = 0;;) switch (_fun62371_ip) {
                             case 0:
-                                var4 = function(arg0, arg1) { // Original name: _loop, environment: var0
+                                var4 = function arg0, arg1() {
                                     _fun62372: for (var _fun62372_ip = 0;;) switch (_fun62372_ip) {
                                         case 0:
                                             var1 = arg0;
@@ -748,7 +748,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ensureSpotifyPlayable = var3;
-    var3 = function() { // Original name: isSpotifyPremium, environment: var1
+    var3 = function() {
         _fun62375: for (var _fun62375_ip = 0;;) switch (_fun62375_ip) {
             case 0:
                 var1 = _closure1_slot6;
@@ -768,7 +768,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isSpotifyPremium = var3;
-    var3 = function() { // Original name: ensureSpotifyPremium, environment: var1
+    var3 = function() {
         _fun62376: for (var _fun62376_ip = 0;;) switch (_fun62376_ip) {
             case 0:
                 var3 = _closure1_slot6;
@@ -860,7 +860,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.ensureSpotifyPremium = var3;
-    var1 = function() { // Original name: getSpotifyMetadataFromActivity, environment: var1
+    var1 = function() {
         var0 = undefined;
         var3 = _closure1_slot15;
         var2 = var3.apply;

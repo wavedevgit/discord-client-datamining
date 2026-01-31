@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/UserProfileBanner.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: UserProfileBanner, environment: var1
+    var1 = function arg0() {
         _fun56977: for (var _fun56977_ip = 0;;) switch (_fun56977_ip) {
             case 0:
                 var1 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var0);
                 var0 = var1.isAnimatedImageURL;
                 var7 = var0.bind(var1)(var2);
-                var5 = function() { // Original name: renderBanner, environment: var11
+                var5 = function() {
                     _fun56978: for (var _fun56978_ip = 0;;) switch (_fun56978_ip) {
                         case 0:
                             var4 = _closure1_slot7;
@@ -358,7 +358,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var14.bind(var3)(var4);
                 var6 = var4.PressableOpacity;
                 var4 = {};
-                var11 = function() { // Original name: onPress, environment: var11
+                var11 = function() {
                     var2 = _closure2_slot7;
                     var0 = _closure2_slot6;
                     var1 = !var0;

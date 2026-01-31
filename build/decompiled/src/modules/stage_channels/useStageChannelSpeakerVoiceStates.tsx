@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
-    var1 = function(arg0) { // Original name: transformParticipantToSortedVoiceState, environment: var3
+    var1 = function arg0() {
         var0 = arg0;
         var4 = var0.voiceState;
         var3 = var0.userNick;
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/stage_channels/useStageChannelSpeakerVoiceStates.tsx';
     var4 = var5.bind(var6)(var4);
-    var3 = function(arg0) { // Original name: useStageChannelSpeakerVoiceStates, environment: var3
+    var3 = function arg0() {
         var2 = arg0;
         var _closure2_slot0 = var2;
         var8 = _closure1_slot0;

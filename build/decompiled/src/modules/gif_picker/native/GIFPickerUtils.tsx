@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = /(https?:\\/\\ / )( ? !media( ? : \d + ) ? \.)( ? : [ ^ .] + \.) * giphy\.com / ;
     var _closure1_slot5 = var3; var3 = /(tenor\.com)/;
     var _closure1_slot6 = var3; var3 = /-(?:.(?!-))+$/;
-    var _closure1_slot7 = var3; var3 = function(arg0, arg1) { // Original name: transformFavoriteGifUrl, environment: var1
+    var _closure1_slot7 = var3; var3 = function arg0, arg1() {
         _fun74116: for (var _fun74116_ip = 0;;) switch (_fun74116_ip) {
             case 0:
                 var3 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot8 = var3; var3 = 6; var3 = var5[var3]; var5 = var4.bind(var0)(var3); var4 = var5.fileFinishedImporting; var3 = 'modules/gif_picker/native/GIFPickerUtils.tsx'; var3 = var4.bind(var5)(var3); var3 = 56; var2.GIF_HEADER_HEIGHT = var3; var1 = function() { // Original name: useFavoriteGIFsMobile, environment: var1
+    var _closure1_slot8 = var3; var3 = 6; var3 = var5[var3]; var5 = var4.bind(var0)(var3); var4 = var5.fileFinishedImporting; var3 = 'modules/gif_picker/native/GIFPickerUtils.tsx'; var3 = var4.bind(var5)(var3); var3 = 56; var2.GIF_HEADER_HEIGHT = var3; var1 = function() {
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
         var2 = 4;

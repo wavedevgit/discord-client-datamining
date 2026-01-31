@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun113312: for (var _fun113312_ip = 0;;) switch (_fun113312_ip) {
             case 0:
             case 2: // try_start_0
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        var3 = function(arg0) { // Original name: MessageSessionMetadataManager, environment: var5
+        var3 = function arg0() {
             _fun113316: for (var _fun113316_ip = 0;;) switch (_fun113316_ip) {
                 case 0:
                     var4 = this;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var1 = {};
-                    var3 = function(arg0) { // Original name: MESSAGE_CREATE, environment: var2
+                    var3 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleMessageCreate;
                         var0 = arg0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1.MESSAGE_CREATE = var3;
-                    var2 = function(arg0) { // Original name: MESSAGE_UPDATE, environment: var2
+                    var2 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleMessageUpdate;
                         var0 = arg0;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'handleMessageCreate';
         var4.key = var0;
-        var0 = function(arg0) { // Original name: value, environment: var5
+        var0 = function arg0() {
             var2 = this;
             var0 = arg0;
             var1 = var0.message;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = 'handleMessageUpdate';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             var2 = this;
             var0 = arg0;
             var1 = var0.message;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_getAuthorizedApplicationIds';
         var4.key = var6;
-        var6 = function(arg0) { // Original name: value, environment: var5
+        var6 = function arg0() {
             _fun113321: for (var _fun113321_ip = 0;;) switch (_fun113321_ip) {
                 case 0:
                     var0 = arg0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var6 = '_trackIfSessionMetadataExists';
         var4.key = var6;
-        var5 = function(arg0) { // Original name: value, environment: var5
+        var5 = function arg0() {
             _fun113322: for (var _fun113322_ip = 0;;) switch (_fun113322_ip) {
                 case 0:
                     var4 = arg0;

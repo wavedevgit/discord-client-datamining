@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/poggermode/PoggermodeActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Original name: updatePoggermodeSettings, environment: var1
+    var3 = function arg0() {
         var1 = arg0;
         var3 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updatePoggermodeSettings = var3;
-    var3 = function(arg0) { // Original name: updateCombo, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.updateCombo = var3;
-    var3 = function(arg0) { // Original name: clearMessageCombo, environment: var1
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 3;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.clearMessageCombo = var3;
-    var1 = function(arg0, arg1) { // Original name: updateComboOnMessageSend, environment: var1
+    var1 = function arg0, arg1() {
         _fun54539: for (var _fun54539_ip = 0;;) switch (_fun54539_ip) {
             case 0:
                 var6 = arg0;

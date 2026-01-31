@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
-    var0 = function(arg0, arg1) { // Original name: getIOSBlurEffect, environment: var3
+    var0 = function arg0, arg1() {
         _fun37347: for (var _fun37347_ip = 0;;) switch (_fun37347_ip) {
             case 0:
                 var3 = arg0;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: getAndroidBlurAmount, environment: var3
+    var0 = function arg0, arg1() {
         _fun37348: for (var _fun37348_ip = 0;;) switch (_fun37348_ip) {
             case 0:
                 var0 = arg1;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot8 = var0;
-    var1 = function(arg0) { // Original name: isBlurDisabled, environment: var3
+    var1 = function arg0() {
         _fun37349: for (var _fun37349_ip = 0;;) switch (_fun37349_ip) {
             case 0:
                 var0 = arg0;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.bind(var8)();
     var _closure1_slot6 = var4;
     var4 = var7.forwardRef;
-    var3 = function(arg0, arg1) { // Original name: VisualEffectView, environment: var3
+    var3 = function arg0, arg1() {
         _fun37350: for (var _fun37350_ip = 0;;) switch (_fun37350_ip) {
             case 0:
                 var5 = arg0;

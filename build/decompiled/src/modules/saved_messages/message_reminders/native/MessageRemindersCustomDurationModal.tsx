@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 1;
                 var1 = var4[var1];
                 var _closure2_slot3 = var1;
-                var1 = function(arg0) { // Original name: handleOpenDatePicker, environment: var20
+                var1 = function arg0() {
                     _fun75955: for (var _fun75955_ip = 0;;) switch (_fun75955_ip) {
                         case 0:
                             var6 = arg0;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.VKsXpY;
                 var8 = var14.bind(var15)(var8);
                 var6.title = var8;
-                var8 = function() { // Original name: headerTitle, environment: var20
+                var8 = function() {
                     var3 = _closure1_slot7;
                     var7 = _closure1_slot0;
                     var8 = _closure1_slot3;
@@ -308,7 +308,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.getHeaderCloseButton;
                 var8 = var8.bind(var10)(var11);
                 var6.headerLeft = var8;
-                var8 = function() { // Original name: headerRight, environment: var20
+                var8 = function() {
                     var3 = _closure1_slot7;
                     var9 = _closure1_slot0;
                     var10 = _closure1_slot3;
@@ -403,7 +403,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = {};
                 var17.text = var25;
                 var10.accessibilityValue = var17;
-                var17 = function() { // Original name: onPress, environment: var20
+                var17 = function() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var1 = 'date';
@@ -470,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = {};
                 var21.text = var16;
                 var11.accessibilityValue = var21;
-                var20 = function() { // Original name: onPress, environment: var20
+                var20 = function() {
                     var2 = _closure2_slot4;
                     var0 = undefined;
                     var1 = 'time';

@@ -35,14 +35,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.container = var6;
     var3 = var4.bind(var5)(var3);
     var _closure1_slot3 = var3;
-    var1 = function(arg0, arg1) { // Original name: gestureHandlerRootHOC, environment: var1
+    var1 = function arg0, arg1() {
         _fun44684: for (var _fun44684_ip = 0;;) switch (_fun44684_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
                 var1 = arg1;
                 var _closure2_slot1 = var1;
-                var0 = function(arg0) { // Original name: Wrapper, environment: var0
+                var0 = function arg0() {
                     var3 = _closure1_slot2;
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot1;

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function(arg0) { // Original name: CollectiblesShopGiftPurchaseSection, environment: var1
+    var0 = function arg0() {
         var0 = arg0;
         var6 = var0.product;
         var14 = var0.isPurchaseDisabled;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.product = var6;
         var0.analyticsLocations = var2;
-        var2 = function() { // Original name: onPurchaseComplete, environment: var8
+        var2 = function() {
             var4 = _closure2_slot3;
             var0 = _closure1_slot12;
             var3 = var0.SUCCEEDED;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var4.bind(var0)(var3);
             var6 = var7.openLazy;
             var3 = {};
-            var8 = function() { // Original name: importer, environment: var8
+            var8 = function() {
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot2;
                 var1 = 14;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onPurchaseComplete = var2;
-        var2 = function() { // Original name: onPurchaseError, environment: var8
+        var2 = function() {
             var4 = _closure2_slot3;
             var0 = _closure1_slot12;
             var3 = var0.FAILED;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onPurchaseError = var2;
-        var2 = function() { // Original name: onPurchasePending, environment: var8
+        var2 = function() {
             var0 = undefined;
             return var0;
         };
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var9.ouo4FK;
         var9 = var10.bind(var11)(var9);
         var5.text = var9;
-        var8 = function() { // Original name: onPress, environment: var8
+        var8 = function() {
             var3 = _closure2_slot3;
             var0 = _closure1_slot12;
             var2 = var0.PURCHASING;
@@ -390,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/CollectiblesShopGiftPurchaseSection.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0) { // Original name: WrappedCollectiblesShopGiftPurchaseSection, environment: var1
+    var1 = function arg0() {
         var0 = arg0;
         var10 = var0.product;
         var9 = var0.isPurchaseDisabled;

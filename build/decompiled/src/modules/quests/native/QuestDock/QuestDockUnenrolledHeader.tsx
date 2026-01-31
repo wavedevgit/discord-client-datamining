@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot16 = var3;
     var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: questDockHeaderLayoutAnimation, environment: var0
+        var0 = function arg0() {
             var2 = arg0;
             var0 = {};
             var1 = {};
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var7;
     var _closure1_slot22 = var3;
     var3 = var6.memo;
-    var1 = function() { // Original name: QuestDockUnenrolledHeader, environment: var1
+    var1 = function() {
         _fun83848: for (var _fun83848_ip = 0;;) switch (_fun83848_ip) {
             case 0:
                 var10 = _closure1_slot3;
@@ -331,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var14[var4];
                 var7 = var1.bind(var3)(var5);
                 var6 = var7.useAnimatedStyle;
-                var5 = function() { // Original name: _, environment: var0
+                var5 = function() {
                     _fun83850: for (var _fun83850_ip = 0;;) switch (_fun83850_ip) {
                         case 0:
                             var0 = {};
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var14[var4];
                 var11 = var1.bind(var3)(var6);
                 var7 = var11.useAnimatedStyle;
-                var6 = function() { // Original name: c, environment: var0
+                var6 = function() {
                     _fun83851: for (var _fun83851_ip = 0;;) switch (_fun83851_ip) {
                         case 0:
                             var0 = {};
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var14[var4];
                 var11 = var1.bind(var3)(var6);
                 var7 = var11.useAnimatedStyle;
-                var6 = function() { // Original name: l, environment: var0
+                var6 = function() {
                     _fun83852: for (var _fun83852_ip = 0;;) switch (_fun83852_ip) {
                         case 0:
                             var0 = {};
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var14[var4];
                 var11 = var1.bind(var3)(var6);
                 var7 = var11.useAnimatedProps;
-                var6 = function() { // Original name: Q, environment: var0
+                var6 = function() {
                     _fun83853: for (var _fun83853_ip = 0;;) switch (_fun83853_ip) {
                         case 0:
                             var0 = {};
@@ -619,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var14[var4];
                 var6 = var1.bind(var3)(var4);
                 var4 = var6.useAnimatedStyle;
-                var0 = function() { // Original name: I, environment: var0
+                var0 = function() {
                     _fun83854: for (var _fun83854_ip = 0;;) switch (_fun83854_ip) {
                         case 0:
                             var0 = {};

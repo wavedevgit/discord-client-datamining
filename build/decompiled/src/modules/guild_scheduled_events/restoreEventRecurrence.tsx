@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_scheduled_events/restoreEventRecurrence.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function(arg0, arg1, arg2, arg3) { // Original name: restoreEventRecurrence, environment: var1
+    var1 = function arg0, arg1, arg2, arg3() {
         _fun67568: for (var _fun67568_ip = 0;;) switch (_fun67568_ip) {
             case 0:
                 var0 = arg0;

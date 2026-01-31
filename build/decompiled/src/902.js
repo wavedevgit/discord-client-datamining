@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Module';
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function(arg0) { // Original name: getTraceMetaTags, environment: var1
+    var1 = function arg0() {
         _fun9489: for (var _fun9489_ip = 0;;) switch (_fun9489_ip) {
             case 0:
                 var2 = arg0;

@@ -35,17 +35,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_role_subscriptions/GuildRoleSubscriptionsExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function() { // Original name: useGuildEligibleForRoleSubscriptions, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var2.useGuildEligibleForRoleSubscriptions = var3;
-    var3 = function() { // Original name: isGuildEligibleForRoleSubscriptions, environment: var1
+    var3 = function() {
         var0 = true;
         return var0;
     };
     var2.isGuildEligibleForRoleSubscriptions = var3;
-    var3 = function(arg0) { // Original name: useRoleSubscriptionMaxTiersExperiment, environment: var1
+    var3 = function arg0() {
         _fun49830: for (var _fun49830_ip = 0;;) switch (_fun49830_ip) {
             case 0:
                 var3 = arg0;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.hasEnabledMonetization = var3;
-    var3 = function(arg0) { // Original name: useGuildEligibleForRoleSubscriptionsMobileTeamSetup, environment: var1
+    var3 = function arg0() {
         _fun49833: for (var _fun49833_ip = 0;;) switch (_fun49833_ip) {
             case 0:
                 var3 = arg0;
@@ -158,7 +158,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildEligibleForRoleSubscriptionsMobileTeamSetup = var3;
-    var3 = function(arg0) { // Original name: isGuildEligibleForTierTemplates, environment: var1
+    var3 = function arg0() {
         _fun49834: for (var _fun49834_ip = 0;;) switch (_fun49834_ip) {
             case 0:
                 var0 = arg0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.isGuildEligibleForTierTemplates = var3;
-    var3 = function(arg0) { // Original name: useGuildEligibleForTierTemplates, environment: var1
+    var3 = function arg0() {
         _fun49835: for (var _fun49835_ip = 0;;) switch (_fun49835_ip) {
             case 0:
                 var0 = arg0;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useGuildEligibleForTierTemplates = var3;
-    var3 = function(arg0) { // Original name: useShowCreatorPortalLinkForTierTemplates, environment: var1
+    var3 = function arg0() {
         _fun49836: for (var _fun49836_ip = 0;;) switch (_fun49836_ip) {
             case 0:
                 var0 = arg0;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useShowCreatorPortalLinkForTierTemplates = var3;
-    var3 = function() { // Original name: isUserEligibleForTierTemplates, environment: var1
+    var3 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.isUserEligibleForTierTemplates = var3;
-    var1 = function() { // Original name: useUserEligibleForTierTemplates, environment: var1
+    var1 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 1;

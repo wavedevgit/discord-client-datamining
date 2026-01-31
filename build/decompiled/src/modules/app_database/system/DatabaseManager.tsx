@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportAll;
     var _closure1_slot2 = var0;
     var _closure1_slot3 = var5;
-    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+    var0 = function arg0, arg1() {
         _fun18723: for (var _fun18723_ip = 0;;) switch (_fun18723_ip) {
             case 0:
                 var2 = arg0;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot12 = var0;
-    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+    var0 = function arg0, arg1() {
         _fun18725: for (var _fun18725_ip = 0;;) switch (_fun18725_ip) {
             case 0:
                 var3 = arg0;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot13 = var0;
-    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+    var0 = function() {
         _fun18726: for (var _fun18726_ip = 0;;) switch (_fun18726_ip) {
             case 0:
             case 2: // try_start_0
@@ -277,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
-                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot14 = var0;
-    var0 = function(arg0) { // Original name: _databaseName, environment: var1
+    var0 = function arg0() {
         var0 = global;
         var0 = var0.HermesInternal;
         var2 = var0.concat;
@@ -300,7 +300,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot15 = var0;
-    var0 = function() { // Original name: _trySpeculativelyOpenDatabaseAsync, environment: var1
+    var0 = function() {
         var4 = undefined;
         var0 = undefined;
         var3 = _closure1_slot4;
@@ -431,7 +431,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
-        var3 = function() { // Original name: DatabaseManager, environment: var5
+        var3 = function() {
             _fun18734: for (var _fun18734_ip = 0;;) switch (_fun18734_ip) {
                 case 0:
                     var4 = this;
@@ -447,7 +447,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = new Array(3);
                     var9[0] = var6;
                     var6 = {};
-                    var8 = function(arg0) { // Original name: CLEAR_CACHES, environment: var1
+                    var8 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.handleClearCaches;
                         var0 = arg0;
@@ -455,21 +455,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.CLEAR_CACHES = var8;
-                    var8 = function() { // Original name: CONNECTION_CLOSED, environment: var1
+                    var8 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleAuthenticationStoreChanged;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var6.CONNECTION_CLOSED = var8;
-                    var8 = function() { // Original name: CONNECTION_OPEN, environment: var1
+                    var8 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleConnectionOpen;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
                     var6.CONNECTION_OPEN = var8;
-                    var8 = function() { // Original name: LOGOUT, environment: var1
+                    var8 = function() {
                         var1 = _closure3_slot0;
                         var0 = var1.handleAuthenticationStoreChanged;
                         var0 = var0.bind(var1)();
@@ -536,7 +536,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var0 = 'initialize';
         var4.key = var0;
-        var0 = function() { // Original name: value, environment: var5
+        var0 = function() {
             var4 = this;
             var _closure3_slot0 = var4;
             var2 = var4.waitFor;
@@ -570,7 +570,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'databaseName';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             var2 = _closure1_slot15;
             var1 = undefined;
             var0 = arg0;
@@ -582,7 +582,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'database';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun18742: for (var _fun18742_ip = 0;;) switch (_fun18742_ip) {
                 case 0:
                     var4 = arg0;
@@ -615,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'carefullyOpenDatabase';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun18743: for (var _fun18743_ip = 0;;) switch (_fun18743_ip) {
                 case 0:
                     var2 = arg0;
@@ -640,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         continue _fun18743
                     }
                 case 43:
-                    var3 = function(arg0) { // Original name: tryOpenDatabase, environment: var0
+                    var3 = function arg0() {
                         _fun18744: for (var _fun18744_ip = 0;;) switch (_fun18744_ip) {
                             case 0:
                                 var2 = _closure1_slot15;
@@ -739,7 +739,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'replaceDisableAllDatabases';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun18746: for (var _fun18746_ip = 0;;) switch (_fun18746_ip) {
                 case 0:
                     var6 = arg0;
@@ -808,7 +808,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'remove';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun18747: for (var _fun18747_ip = 0;;) switch (_fun18747_ip) {
                 case 0:
                     var3 = arg0;
@@ -851,7 +851,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleClearCaches';
         var4.key = var7;
-        var7 = function(arg0) { // Original name: value, environment: var5
+        var7 = function arg0() {
             _fun18748: for (var _fun18748_ip = 0;;) switch (_fun18748_ip) {
                 case 0:
                     var0 = arg0;
@@ -883,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleConnectionOpen';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun18749: for (var _fun18749_ip = 0;;) switch (_fun18749_ip) {
                 case 0:
                     var3 = this;
@@ -938,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var7 = 'handleAuthenticationStoreChanged';
         var4.key = var7;
-        var7 = function() { // Original name: value, environment: var5
+        var7 = function() {
             _fun18750: for (var _fun18750_ip = 0;;) switch (_fun18750_ip) {
                 case 0:
                     var0 = this;
@@ -1026,7 +1026,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             continue _fun18752
                         }
                     case 37:
-                        var3 = function() { // Original name: trySpeculativelyOpenDatabaseAsync, environment: var1
+                        var3 = function() {
                             var0 = undefined;
                             var3 = _closure1_slot16;
                             var2 = var3.apply;
@@ -1120,7 +1120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var6 = var7.bind(var2)(var6);
         var _closure2_slot0 = var6;
-        var5 = function() { // Original name: carefullySpeculativelyOpen, environment: var5
+        var5 = function() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;

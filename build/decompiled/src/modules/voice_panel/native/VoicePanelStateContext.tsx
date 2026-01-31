@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11.pushToTalk = var10;
     var11 = var15.bind(var16)(var11);
     var1.controlsSpecs = var11;
-    var11 = function() { // Original name: dismissPanel, environment: var8
+    var11 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = null;
     var15 = var15.bind(var16)(var11);
     var1.focused = var15;
-    var15 = function() { // Original name: generateStateLocker, environment: var8
+    var15 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.generateStateLocker = var15;
     var1.guildId = var0;
-    var15 = function() { // Original name: hideControls, environment: var8
+    var15 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.pipAvoidanceSpecs = var9;
     var9 = {};
     var9.current = var11;
-    var13 = function() { // Original name: getTag, environment: var8
+    var13 = function() {
         var0 = 0;
         return var0;
     };
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var13.createFakeSharedValue;
     var9 = var9.bind(var13)(var14);
     var1.scrollPosition = var9;
-    var9 = function() { // Original name: setControlsMode, environment: var8
+    var9 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var1.setControlsMode = var9;
-    var9 = function() { // Original name: setFocused, environment: var8
+    var9 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var1.setFocused = var9;
-    var9 = function() { // Original name: setIsFocusedVideoZoomed, environment: var8
+    var9 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var1.setIsFocusedVideoZoomed = var9;
-    var9 = function() { // Original name: setMode, environment: var8
+    var9 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -268,7 +268,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var1.setMode = var9;
-    var9 = function() { // Original name: setShowFloatingCTA, environment: var8
+    var9 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         throw var0;
     };
     var1.setShowFloatingCTA = var9;
-    var8 = function() { // Original name: showControls, environment: var8
+    var8 = function() {
         var0 = global;
         var2 = var0.Error;
         var0 = var2.prototype;
